@@ -1,0 +1,93 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import { Sankey, SankeyLink, SankeyNode } from '../../src';
+
+<Meta title="Docs|Chart Types/Sankey Plot" />
+
+# Sankey Chart
+
+---
+<br />
+<Story id="charts-sankey--simple" />
+<br />
+
+Sankey diagrams are a specific type of flow diagram, in which the width of the
+arrows is shown proportionally to the flow quantity. They are typically used to
+visualize energy or material or cost transfers between processes. They can also visualize
+the energy accounts or material flow accounts on a community level. Sankey diagrams put a
+visual emphasis on the major transfers or flows within a system. They are helpful in
+locating dominant contributions to an overall flow.
+
+## Quick Start
+
+```jsx
+import { Sankey, SankeyNode, SankeyLink } from 'reaviz';
+
+const MyChart = () => (
+  <Sankey
+    height={300}
+    width={500}
+    nodes={[
+      <SankeyNode title="A1" id="1" />,
+      <SankeyNode title="A2" id="2" />,
+      <SankeyNode title="B1" id="3" />,
+      <SankeyNode title="B2" id="4" />
+    ]}
+    links={[
+      <SankeyLink source="1" target="3" value="8" gradient={false} />,
+      <SankeyLink source="2" target="4" value="4" gradient={false} />,
+      <SankeyLink source="1" target="4" value="2" gradient={false} />
+    ]}
+  />
+);
+```
+
+As default, the Sankey chart shows the link/flow with gradation based on
+the given colorScheme. You can turn off the gradation by passing `false`
+to SankeyLink component's `gradient` property (e.g. `gradient={false}`).
+
+To render, the `nodes` and `links` of the Sankey
+component are required and `colorScheme` is optianal but is recommended to spacify
+to make Sankeys easier to interpret.
+
+For the `nodes`, you can pass the node's name through `title` property of SankeyNode.
+
+For the edges, SankeyLink's `source`, `target`, and `value`
+properties are all required. For `source` and `target`, you can use
+the index of the nodes' array or the node's `id` if it's assigned.
+
+## API
+### [Sankey](https://github.com/jask-oss/reaviz/blob/master/src/Sankey/Sankey.tsx)
+<Props of={Sankey} />
+
+### [SankeyLink](https://github.com/jask-oss/reaviz/blob/master/src/Sankey/SankeyLink/SankeyLink.tsx)
+<Props of={SankeyLink} />
+
+### [SankeyNode](https://github.com/jask-oss/reaviz/blob/master/src/Sankey/SankeyNode/SankeyNode.tsx)
+<Props of={SankeyNode} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { Sankey, SankeyNode, SankeyLink } from 'reaviz';
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <Sankey
+      height={300}
+      width={500}
+      nodes={[
+        <SankeyNode title="A1" id="1" />,
+        <SankeyNode title="A2" id="2" />,
+        <SankeyNode title="B1" id="3" />,
+        <SankeyNode title="B2" id="4" />
+      ]}
+      links={[
+        <SankeyLink source="1" target="3" value="8" gradient={false} />,
+        <SankeyLink source="2" target="4" value="4" gradient={false} />,
+        <SankeyLink source="1" target="4" value="2" gradient={false} />
+      ]}
+    />
+  </div>
+);
+```

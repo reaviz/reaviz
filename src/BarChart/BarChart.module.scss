@@ -1,0 +1,12 @@
+.barChart {
+  overflow: visible;
+
+  &.stackedNormalized,
+  &.stacked,
+  &.marimekko {
+    :global(.bar) {
+      stroke: var(--color-background);
+      stroke-width: 0.2;
+    }
+  }
+}

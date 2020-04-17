@@ -1,0 +1,10 @@
+.link {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.5;
+  transition: opacity 100ms ease-in-out;
+}
+
+.inactive {
+  opacity: 0.7;
+}

@@ -1,0 +1,8 @@
+.node {
+  transition: opacity 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.inactive {
+  opacity: 0.2;
+}

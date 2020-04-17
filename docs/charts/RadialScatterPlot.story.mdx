@@ -1,0 +1,50 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import { RadialScatterPlot, RadialScatterSeries, RadialScatterPoint } from '../../src';
+
+<Meta title="Docs|Chart Types/Radial Scatter Plot" />
+
+# Radial Scatter Plot
+
+---
+<br />
+<Story id="charts-scatter-plot-radial--simple" />
+<br />
+
+A Radial or Circular Scatter Plot is used for displaying the circular data, which involves the
+wrapping of the usual scatter plot around a circle. Each point in the chart is centered at
+the middle of the group period with the length of the bar proportional to the frequency in the group.
+
+Types supported by reaviz:
+
+- Scatter
+- Bubble
+
+## Quick Start
+To create a Radial Scatter Plot, use import the `RadialScatterPlot` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { RadialScatterPlot } from 'reaviz';
+
+const MyChart = () => (
+  <RadialScatterPlot
+    height={300}
+    width={300}
+    data={[
+      { key: new Date('11/29/2019'), data: 13 },
+      { key: new Date('11/30/2019'), data: 13 },
+      { key: new Date('12/1/2019'), data: 13 },
+    ]}
+  />
+);
+```
+
+## API
+### [RadialScatterPlot](https://github.com/jask-oss/reaviz/blob/master/src/RadialScatterPlot/RadialScatterPlot.tsx)
+<Props of={RadialScatterPlot} />
+
+### [RadialScatterSeries](https://github.com/jask-oss/reaviz/blob/master/src/RadialScatterPlot/RadialScatterSeries/RadialScatterSeries.tsx)
+<Props of={RadialScatterSeries} />
+
+### [RadialScatterPoint](https://github.com/jask-oss/reaviz/blob/master/src/RadialScatterPlot/RadialScatterSeries/RadialScatterPoint.tsx)
+<Props of={RadialScatterPoint} />

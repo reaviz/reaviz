@@ -1,0 +1,108 @@
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta title="Docs|Getting Started/Data Shapes" />
+
+# Data Shapes
+The majority of the chart's in REAVIZ have a `data` property that they
+use to render off of. This data shape comes is a generic `ChartDataShape` that
+implements two different formats depending on the chart.
+
+- `ChartShallowDataShape`: Single-series charts like a simple Bar Chart or Area Chart.
+- `ChartNestedDataShape`: Multi-series charts like Stacked Area, Grouped Bar Charts, etc.
+
+Each of the data types define a `key` and `data` property. Depending on the type
+the `data` property might be a raw data type or a nested shape. This raw Data
+type is called `ChartDataTypes`:
+
+```js
+type ChartDataTypes = number | string | Date | bigInt.BigInteger;
+```
+
+Reference: [src/common/data/types.ts](https://github.com/jask-oss/reaviz/blob/master/src/common/data/types.ts).
+
+## `ChartShallowDataShape`
+The shallow data shape is used for single-series charts.
+
+```js
+interface ChartShallowDataShape {
+  // The key for the data point. Typically this might be a x-axis value.
+  key: ChartDataTypes;
+
+  // The data to render. Typically this might be a y-axis value.
+  data: ChartDataTypes;
+
+  // Additional metadata to pass to be used for tooltips/etc
+  metadata?: any;
+}
+```
+
+If we were to implement this in a `BarChart` it might look something like this:
+
+```js
+const data = [
+  { key: 'DLP', data: 13 },
+  { key: 'SIEM', data: 2 },
+  { key: 'Endpoint', data: 7 }
+]
+```
+
+<br />
+<Story id="charts-bar-chart-vertical-single-series--simple" />
+<br />
+
+## `ChartNestedDataShape`
+The shallow data shape is used for multi-series charts. Unlike the `ChartShallowDataShape`
+the `data` attribute on the type is a nested `ChartShallowDataShape<ChartDataTypes>[]`.
+
+```js
+export interface ChartNestedDataShape {
+  // The key for the data point. Typically used as the x-axis value.
+  key: ChartDataTypes;
+
+  // A series of data to render. Typically used as the x+y axis values.
+  data: ChartShallowDataShape<ChartDataTypes>[];
+
+  // Additional metadata to pass to be used for tooltips/etc
+  metadata?: any;
+}
+```
+
+If we were to implement this in a `BarChart` it might look something like:
+
+```js
+const data = [
+  {
+    key: 'Lateral Movement',
+    data: [
+      {
+        key: 'XML',
+        data: 100
+      },
+      {
+        key: 'JSON',
+        data: 120
+      }
+    ]
+  },
+  {
+    key: 'Discovery',
+    data: [
+      {
+        key: 'XML',
+        data: 100
+      },
+      {
+        key: 'JSON',
+        data: 120
+      }
+    ]
+  }
+]
+```
+
+In this example, our x-axis would show `Lateral Movement` and `Discovery` and then
+a group of bar would contain `XML` and `JSON` with their respective values.
+
+<br />
+<Story id="charts-bar-chart-vertical-multi-series--simple" />
+<br />

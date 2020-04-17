@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  overflow: auto;
+
+  &.horizontal {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &.vertical {
+    flex-direction: column;
+  }
+}

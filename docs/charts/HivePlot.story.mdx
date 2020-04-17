@@ -1,0 +1,84 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import { HivePlot } from '../../src';
+
+<Meta title="Docs|Chart Types/Hive Plot" />
+
+# Hive Plot
+
+---
+<br />
+<Story id="charts-hive-plot--mini" />
+<br />
+
+The hive plot is a rational visualization method for drawing networks. Nodes are mapped
+to and positioned on radially distributed linear axes — this mapping is based on network
+structural properties. Edges are drawn as curved links. Simple and interpretable.
+
+
+## Quick Start
+
+```jsx
+import { HivePlot } from 'reaviz';
+
+const nodes = [
+  {
+    x: 0,
+    y: 0.6,
+    value: '6',
+    count: 2
+  },
+  {
+    x: 1,
+    y: 0.05555555555555555,
+    value: 'Threat Intelligence',
+    count: 2
+  },
+  {
+    x: 2,
+    y: 0.725925925925926,
+    value: '2018-06-07T10:32:06',
+    count: 1
+  },
+  …
+];
+
+const MyChart = () => (
+  <HivePlot
+    height={350}
+    width={350}
+    axis={[
+      { label: 'Severity', attribute: 'severity' },
+      { label: 'Stage', attribute: 'category' },
+      { label: 'Time', attribute: 'timestamp' }
+    ]}
+    nodes={nodes}
+    links={[
+      {
+      color: '#1764ff',
+      source: nodes[0],
+      target: nodes[1]
+      },
+      {
+        color: '#1764ff',
+        source: nodes[1],
+        target: nodes[2]
+      },
+      {
+        color: '#1764ff',
+        source: nodes[2],
+        target: nodes[0]
+      },
+      {
+        color: '#73e4fc',
+        source: nodes[3],
+        target: nodes[4]
+      },
+      …
+    ]}
+  />
+);
+```
+
+## API
+### [HivePlot](https://github.com/jask-oss/reaviz/blob/master/src/HivePlot/HivePlot.tsx)
+<Props of={HivePlot} />

@@ -1,0 +1,28 @@
+.label {
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: var(--color-on-background);
+}
+
+.value {
+  font-size: 13px;
+  color: var(--color-on-background);
+  opacity: 0.7;
+}
+
+.subValue {
+  display: block;
+  text-align: left;
+  padding: 3px 5px;
+
+  .subValueColor {
+    width: 5px;
+    height: 15px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+
+  .subValueName {
+    margin-right: 5px;
+  }
+}

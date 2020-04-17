@@ -1,0 +1,9 @@
+.slice {
+  fill: var(--color-primary);
+}
+
+.unsliced {
+  fill: var(--color-background);
+  opacity: 0.5;
+  pointer-events: none;
+}

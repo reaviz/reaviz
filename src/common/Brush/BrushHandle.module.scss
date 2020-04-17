@@ -1,0 +1,16 @@
+.handle {
+  fill: var(--color-background);
+  stroke: var(--color-primary);
+}
+
+.dragging {
+  fill: var(--color-surface);
+}
+
+.dot {
+  fill: var(--color-on-background);
+}
+
+.line {
+  stroke: var(--color-primary);
+}

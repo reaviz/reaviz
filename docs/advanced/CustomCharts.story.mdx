@@ -1,0 +1,54 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Docs|Advanced/Custom Charts" />
+
+# Custom Charts
+
+Many chart types allow you to pass `JSX` elements in the props; this allows you
+to customize every aspect of each element. Additionally, you can mix charts
+together to make combination charts like a `AreaChart` and `BarChart`.
+
+## Customizing Charts
+
+```jsx
+import { AreaChart } from 'reaviz';
+
+const MyChart = () => (
+  <AreaChart
+    id="area"
+    data={[]}
+    xScale={areaXScale}
+    yScale={areaYScale}
+    height={500}
+    width={500}
+  />
+);
+```
+
+## Mixed Chart types
+
+```jsx
+import { AreaSeries, BarSeries, ChartContainer } from 'reaviz';
+
+const MyChart = () => (
+  <ChartContainer>
+    <AreaSeries
+      id="area"
+      data={[]}
+      xScale={areaXScale}
+      yScale={areaYScale}
+      height={500}
+      width={500}
+    />
+    <BarSeries
+      id="bar"
+      data={[]}
+      height={500}
+      width={500}
+      data={data}
+      xScale={xScale}
+      yScale={yScale}
+    />
+  </ChartContainer>
+);
+```

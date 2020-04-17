@@ -1,0 +1,86 @@
+import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import { PieChart, PieArcSeries, PieArcLabel, PieArc } from '../../src';
+
+<Meta title="Docs|Chart Types/Pie Chart" />
+
+# Pie Chart
+
+---
+<br />
+<Story id="charts-pie-chart-pie--simple" />
+<br />
+
+A pie chart is divided into sectors, illustrating numerical proportion.
+In a pie chart, the arc length of each sector (and consequently its central angle and area),
+is proportional to the quantity it represents. While it is named for its resemblance to a pie
+which has been sliced, there are variations on the way it can be presented.
+
+Types supported by reaviz:
+
+- Pie
+- Donut
+
+## Quick Start
+To create a Bar chart, use import the `PieChart` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { PieChart } from 'reaviz';
+
+const MyChart = () => (
+  <PieChart
+    height={300}
+    width={300}
+    data={[
+      { key: 'Bacon', data: 13 },
+      { key: 'Eggs', data: 13 },
+      { key: 'Cheese', data: 13 },
+    ]}
+  />
+);
+```
+
+## API
+### [PieChart](https://github.com/jask-oss/reaviz/blob/master/src/PieChart/PieChart.tsx)
+<Props of={PieChart} />
+
+### [PieArcSeries](https://github.com/jask-oss/reaviz/blob/master/src/PieChart/PieArcSeries/PieArcSeries.tsx)
+<Props of={PieArcSeries} />
+
+### [PieArcLabel](https://github.com/jask-oss/reaviz/blob/master/src/PieChart/PieArcSeries/PieArcLabel.tsx)
+<Props of={PieArcLabel} />
+
+### [PieArc](https://github.com/jask-oss/reaviz/blob/master/src/PieChart/PieArcSeries/PieArc/PieArc.tsx)
+<Props of={PieArc} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { PieChart } from 'reaviz';
+
+export const data = [
+  {
+    key: 'Phishing Attack',
+    data: 10
+  },
+  {
+    key: 'IDS',
+    data: 14
+  },
+  {
+    key: 'Malware',
+    data: 5
+  },
+  {
+    key: 'DLP',
+    data: 18
+  }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <PieChart width={250} height={250} data={data} />
+  </div>
+);
+```

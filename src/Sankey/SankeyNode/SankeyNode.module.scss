@@ -1,0 +1,22 @@
+.node {
+  transition: opacity 100ms ease-in-out, fill-opacity 100ms ease-in-out;
+}
+
+.tooltip {
+  text-align: center;
+  padding: 0 8px;
+  pointer-events: none;
+
+  .tooltipLabel {
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+
+  .tooltipValue {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }
+}

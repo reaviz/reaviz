@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  height: 100%;
+
+  &.vertical {
+    flex-direction: column;
+    max-width: 55px;
+
+    .start,
+    .end {
+      text-align: center;
+      padding: 5px 0;
+      width: 100%;
+    }
+
+    .gradient {
+      width: 25px;
+      margin: 0 auto;
+    }
+  }
+
+  &.horizontal {
+    flex-direction: row-reverse;
+
+    .start,
+    .end {
+      max-width: 20%;
+    }
+
+    .start {
+      text-align: right;
+      padding-left: 5px;
+    }
+
+    .end {
+      text-align: left;
+      padding-right: 5px;
+    }
+  }
+
+  .gradient {
+    flex: 1;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  .start,
+  .end {
+    color: var(--color-on-primary);
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,51 @@
+.entry {
+  display: flex;
+  color: var(--color-on-primary);
+  padding: 8px;
+  will-change: transparency;
+  transition: opacity 150ms ease-in;
+
+  &.vertical {
+    flex-direction: column;
+    text-align: center;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &.horizontal {
+    align-items: center;
+    flex-direction: row;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    .label {
+      margin-left: 8px;
+    }
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}

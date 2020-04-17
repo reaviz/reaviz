@@ -1,0 +1,9 @@
+.rounded {
+  &.vertical {
+    clip-path: inset(0 0 0 0 round 2px 2px 0 0);
+  }
+
+  &.horizontal {
+    clip-path: inset(0 0 0 0 round 0 2px 2px 0);
+  }
+}

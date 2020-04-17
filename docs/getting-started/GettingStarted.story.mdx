@@ -1,0 +1,70 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Docs|Getting Started/Quick Start" />
+
+# Getting Started
+
+## Installing
+
+You can install REAVIZ with [NPM](https://www.npmjs.com/package/reaviz) or Yarn.
+
+- NPM: `npm install reaviz --save`
+- YARN: `yarn add reaviz`
+
+#### Development Builds
+Our continuous integration server runs all tests on every commit to master and
+if they pass it will publish a new development build to NPM and tag it with the `@dev` tag.
+This means that if you want the bleeding edge of `reaviz` you can simply do:
+
+```bash
+yarn add reaviz@dev
+```
+
+This will install the version currently tagged as `@dev`. Your `package.json` file will be
+locked to that specific version.
+
+```js
+{
+  "dependencies": {
+    "reaviz": "3.0.0-dev-master.a0d076d"
+  }
+}
+```
+
+If you later want to again update to the bleeding edge, you will have to run the above command again.
+
+## Configuration
+
+To customize various elements in the charts,
+we use [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables).
+This gives you fine grain control over the styles
+that is native to the browser. The color variables are:
+
+- `--color-background`
+- `--color-on-background`
+- `--color-layer-transparent`
+- `--color-surface`
+- `--color-primary`
+- `--color-on-primary`
+
+These names are based on the Google Material design spec. These variables
+are not setup when you install the project automatically but if you want
+some sensible defaults here is what we use in the Storybook demo:
+
+```html
+<style>
+  body {
+    --color-background:#22272b;
+    --color-on-background:#fff;
+    --color-layer-transparent:rgba(0,5,11,0.9);
+    --color-surface:#2c343a;
+    --color-primary:#67c2e4;
+    --color-on-primary:#fff;
+    --color-on-surface: #fff;
+  }
+</style>
+```
+
+## Compatibility
+
+REAVIZ is compatible with React v16+ and works with ReactDOM. React Native is not supported at this time.

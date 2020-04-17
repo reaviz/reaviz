@@ -1,0 +1,23 @@
+.link {
+  fill: none;
+  transition: stroke-opacity 100ms ease-in-out, stroke 100ms ease-in-out;
+  mix-blend-mode: screen;
+}
+
+.tooltip {
+  text-align: center;
+  pointer-events: none;
+
+  .tooltipLabel {
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+
+  .tooltipValue {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+  }
+}
