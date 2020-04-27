@@ -9,7 +9,7 @@ const theme = create({
   base: 'dark',
   brandImage: ReavizLogo,
   brandTitle: 'REAVIZ',
-  url: 'https://github.com/jask-oss/reaviz'
+  url: 'https://github.com/reaviz/reaviz'
 });
 
 // Customize the UI a bit

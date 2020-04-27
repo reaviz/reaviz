@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "Data Visualization using React and D3.js",
   "scripts": {
     "start": "start-storybook -p 9010 -s public",
@@ -24,7 +24,7 @@
   "typings": "dist/src/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jask-oss/reaviz.git"
+    "url": "git+https://github.com/reaviz/reaviz.git"
   },
   "files": [
     "dist"
@@ -56,12 +56,11 @@
     "calendar-heatmap",
     "legends"
   ],
-  "author": "JASK",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jask-oss/reaviz/issues"
+    "url": "https://github.com/reaviz/reaviz/issues"
   },
-  "homepage": "https://github.com/jask-oss/reaviz#readme",
+  "homepage": "https://github.com/reaviz/reaviz#readme",
   "dependencies": {
     "big-integer": "1.6.48",
     "calculate-size": "^1.1.1",

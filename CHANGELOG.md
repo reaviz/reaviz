@@ -132,8 +132,8 @@
 - [Chore] Start adding new docs
 
 # 5.0.2 - 10/3/19
-- [Fix] Fix Map causing app crash [Issue #94](https://github.com/jask-oss/reaviz/issues/94)
-- [Fix] Fix Reaviz giving missing declaration file error after version update [Issue #95](https://github.com/jask-oss/reaviz/issues/95)
+- [Fix] Fix Map causing app crash [Issue #94](https://github.com/reaviz/reaviz/issues/94)
+- [Fix] Fix Reaviz giving missing declaration file error after version update [Issue #95](https://github.com/reaviz/reaviz/issues/95)
   
 # 5.0.1 - 10/3/19
 - [Chore] Update depedencies
@@ -380,9 +380,9 @@
 - [Feature] Add ability to change legend label orientation
 - [Feature] Add non-zero offset data for bar charts
 - [Feature] Add non-zero offset data for area charts
-- [BREAKING] Add `grouped` type to Bar/Area chart types for multi-series data points - [Migration](https://github.com/jask-oss/reaviz/pull/48)
-- [BREAKING] Refactor Gradient API - [Migration](https://github.com/jask-oss/reaviz/pull/39)
-- [BREAKING] Refactor Pattern API to Masks - [Migration](https://github.com/jask-oss/reaviz/pull/47)
+- [BREAKING] Add `grouped` type to Bar/Area chart types for multi-series data points - [Migration](https://github.com/reaviz/reaviz/pull/48)
+- [BREAKING] Refactor Gradient API - [Migration](https://github.com/reaviz/reaviz/pull/39)
+- [BREAKING] Refactor Pattern API to Masks - [Migration](https://github.com/reaviz/reaviz/pull/47)
 - [Fix] Fix a bug with gradient LinearAxisLines not working in Firefox #40
 - [Fix] Implements custom tweening for radial bar chart because of errors
 - [Fix] Abstracts tick methods and uses in radial axis
