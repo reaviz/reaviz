@@ -1,34 +1,31 @@
-import React, { PureComponent } from 'react';
+import React, { FC, useMemo } from 'react';
 
 export interface LinearAxisTickLineProps {
-  height: number;
-  width: number;
   orientation: 'horizontal' | 'vertical';
   size: number;
   strokeColor?: string;
   strokeWidth: number;
   position: 'start' | 'end' | 'center';
-  className?: any;
+  className?: string;
 }
 
-export class LinearAxisTickLine extends PureComponent<LinearAxisTickLineProps> {
-  static defaultProps: Partial<LinearAxisTickLineProps> = {
-    strokeColor: '#8F979F',
-    strokeWidth: 1,
-    size: 5
-  };
-
-  positionTick() {
-    const { size, position, orientation } = this.props;
+export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
+  className,
+  position,
+  orientation,
+  strokeColor = '#8F979F',
+  strokeWidth = 1,
+  size = 5
+}) => {
+  const path = useMemo(() => {
     const isVertical = orientation === 'vertical';
-    const tickSize = size || 0;
     const start =
       position === 'start'
-        ? tickSize * -1
+        ? size * -1
         : position === 'center'
-        ? tickSize * -0.5
+        ? size * -0.5
         : 0;
-    const end = start + tickSize;
+    const end = start + size;
 
     return {
       x1: isVertical ? end : 0,
@@ -36,19 +33,14 @@ export class LinearAxisTickLine extends PureComponent<LinearAxisTickLineProps> {
       y1: isVertical ? 0 : start,
       y2: isVertical ? 0 : end
     };
-  }
+  }, [orientation, size, position]);
 
-  render() {
-    const { strokeColor, strokeWidth, className } = this.props;
-    const path = this.positionTick();
-
-    return (
-      <line
-        className={className}
-        strokeWidth={strokeWidth}
-        stroke={strokeColor}
-        {...path}
-      />
-    );
-  }
-}
+  return (
+    <line
+      className={className}
+      strokeWidth={strokeWidth}
+      stroke={strokeColor}
+      {...path}
+    />
+  );
+};

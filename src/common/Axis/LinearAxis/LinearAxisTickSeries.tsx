@@ -177,7 +177,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
   }
 
   render() {
-    const { label, line, height, width, orientation } = this.props;
+    const { label, line, orientation } = this.props;
     const ticks = this.getTicks();
     const angle = this.getRotationAngle(ticks);
 
@@ -188,8 +188,6 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
             {line && (
               <CloneElement<LinearAxisTickLineProps>
                 element={line}
-                height={height}
-                width={width}
                 orientation={orientation}
               />
             )}
