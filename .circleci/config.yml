@@ -92,7 +92,7 @@ jobs:
     steps:
       - *checkout_code
       - *attach_workspace
-      - run: yarn chromatic --project-token=d5ql53y3nwr
+      - run: yarn chromatic
 
   publish_storybook:
     <<: *job_defaults
