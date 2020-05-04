@@ -5,13 +5,13 @@ import { MarkLine, MarkLineProps } from '../../common/MarkLine';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape
+  ChartInternalShallowDataShape,
 } from '../../common/data';
 import { CloneElement } from '../../common/utils/children';
 import {
   TooltipArea,
   TooltipAreaProps,
-  TooltipAreaEvent
+  TooltipAreaEvent,
 } from '../../common/Tooltip';
 import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '../../common/utils/interpolation';
@@ -126,7 +126,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
     area: <Area />,
     markLine: <MarkLine />,
     tooltip: <TooltipArea />,
-    symbols: <PointSeries />
+    symbols: <PointSeries />,
   };
 
   state: AreaSeriesState = {};
@@ -134,7 +134,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
   getColor(point, index) {
     const { colorScheme, data } = this.props;
     const { activeValues } = this.state;
-    const key = Array.isArray(point) ? point[0].key : point.key;
+    const key = Array.isArray(point) ? point[0].key : point?.key;
 
     return getColor({
       data,
@@ -142,21 +142,21 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
       active: activeValues,
       point,
       index,
-      key
+      key,
     });
   }
 
   onValueEnter(event: TooltipAreaEvent) {
     this.setState({
       activePoint: event.pointX,
-      activeValues: event.value
+      activeValues: event.value,
     });
   }
 
   onValueLeave() {
     this.setState({
       activePoint: undefined,
-      activeValues: undefined
+      activeValues: undefined,
     });
   }
 
@@ -169,7 +169,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
       area,
       line,
       interpolation,
-      animated
+      animated,
     } = this.props;
 
     return (
@@ -214,7 +214,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
       height,
       width,
       animated,
-      area
+      area,
     } = this.props;
     const { activeValues } = this.state;
 
@@ -306,7 +306,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
       tooltip,
       xScale,
       yScale,
-      type
+      type,
     } = this.props;
     const isMulti =
       type === 'grouped' || type === 'stacked' || type === 'stackedNormalized';
