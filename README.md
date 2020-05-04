@@ -152,3 +152,6 @@ to publish the repo to git you can run:
 
 - `yarn version --new-version x.x.x` to bump the version
 - `git push --follow-tags`
+
+## 🔗 Credits
+This repo is the community lead fork of [https://github.com/jask-oss/reaviz](https://github.com/jask-oss/reaviz).
