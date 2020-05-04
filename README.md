@@ -31,8 +31,7 @@ creating charts without sacrificing customization ability. Check it out.
 
 - Checkout the [demos](https://reaviz.io)
 - Learn more in the [docs](https://reaviz.io?path=/docs/docs-intro--page)
-- Try it yourself on [CodeSandbox](https://codesandbox.io/embed/m7rl2z1989)
-- Explore the library on [Chroma](https://www.chromaui.com/library?appId=5dd3f59029fc8300200421a3)
+- Explore the library on [Chroma](https://www.chromatic.com/library?appId=5eb04da4d1d2d10022dc9c73)
 - Learn about updates from the [changelog](CHANGELOG.md)
 
 ## ✨ Features
