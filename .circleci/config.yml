@@ -92,7 +92,7 @@ jobs:
     steps:
       - *checkout_code
       - *attach_workspace
-      - run: npx chroma publish
+      - run: yarn chromatic --project-token=d5ql53y3nwr
 
   publish_storybook:
     <<: *job_defaults
@@ -141,28 +141,4 @@ workflows:
           requires:
             - build_storybook
             - build_package
-            - test
-      - publish_storybook:
-          filters:
-            branches:
-              only:
-                - master
-          requires:
-            - test
-      - publish_dev_npm:
-          filters:
-            branches:
-              only:
-                - master
-            tags:
-              ignore: /.*/
-          requires:
-            - test
-      - publish_prod_npm:
-          filters:
-            branches:
-              ignore: /.*/
-            tags:
-              only: /^v.*/
-          requires:
             - test
