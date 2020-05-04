@@ -1,3 +1,6 @@
+# 8.1.3 - 5/4/20
+- [Fix] Fix empty area charts blowing up
+
 # 8.1.0 - 4/2/20
 - [Feature] Add ability to use categorical scales with radial area/line chart
 - [Fix] Fix non-zero errors in linear bar charts

@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "8.1.2",
+  "version": "8.1.3",
   "description": "Data Visualization using React and D3.js",
   "scripts": {
     "start": "start-storybook -p 9010 -s public",
