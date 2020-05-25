@@ -153,4 +153,4 @@ to publish the repo to git you can run:
 - `git push --follow-tags`
 
 ## 🔗 Credits
-This repo is the community lead fork of [https://github.com/jask-oss/reaviz](https://github.com/jask-oss/reaviz).
+This repo is the community led fork of [https://github.com/jask-oss/reaviz](https://github.com/jask-oss/reaviz).
