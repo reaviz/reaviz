@@ -2827,7 +2827,7 @@
   resolved "https://registry.yarnpkg.com/@popmotion/easing/-/easing-1.0.2.tgz#17d925c45b4bf44189e5a38038d149df42d8c0b4"
   integrity sha512-IkdW0TNmRnWTeWI7aGQIVDbKXPWHVEYdGgd5ZR4SH/Ty/61p63jCjrPxX1XrR7IGkl08bjhJROStD7j+RKgoIw==
 
-"@popmotion/popcorn@^0.4.2", "@popmotion/popcorn@^0.4.4":
+"@popmotion/popcorn@^0.4.2":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@popmotion/popcorn/-/popcorn-0.4.4.tgz#a5f906fccdff84526e3fcb892712d7d8a98d6adc"
   integrity sha512-jYO/8319fKoNLMlY4ZJPiPu8Ea8occYwRZhxpaNn/kZsK4QG2E7XFlXZMJBsTWDw7I1i0uaqyC4zn1nwEezLzg==
@@ -8033,7 +8033,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@2.1.0:
+framer-motion@2.1.0, framer-motion@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.1.0.tgz#46d9d3de42dd5bee4ca85b911ec41720677a71f5"
   integrity sha512-vjwUBHhmeDJ7N6PfblcWDVYi4Izq61Tg9r8OFtEhXI4iIdwhASzfZbURFuBs+9gxITd3pHKs41JkjzeqWNk6xw==
@@ -8048,23 +8048,7 @@ framer-motion@2.1.0:
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
-framer-motion@^1.10.3:
-  version "1.10.3"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-1.10.3.tgz#d58a57ccb0ccc3317d0fc3abc4da2b3e4227bd43"
-  integrity sha512-VooCzGWg7brSO4Gc0YwpY5AadJe4OPS74ZyOlOHWll5rMXCoOc6Ia3uDQ6RfOJlwCP/D9TQuRGtboyJiVXjVcw==
-  dependencies:
-    "@popmotion/easing" "^1.0.2"
-    "@popmotion/popcorn" "^0.4.2"
-    framesync "^4.0.4"
-    hey-listen "^1.0.8"
-    popmotion "9.0.0-beta-8"
-    style-value-types "^3.1.6"
-    stylefire "^7.0.2"
-    tslib "^1.10.0"
-  optionalDependencies:
-    "@emotion/is-prop-valid" "^0.8.2"
-
-framesync@^4.0.0, framesync@^4.0.1, framesync@^4.0.4:
+framesync@^4.0.1, framesync@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/framesync/-/framesync-4.0.4.tgz#79c42c0118f26821c078570db0ff81fb863516a2"
   integrity sha512-mdP0WvVHe0/qA62KG2LFUAOiWLng5GLpscRlwzBxu2VXOp6B8hNs5C5XlFigsMgrfDrr2YbqTsgdWZTc4RXRMQ==
@@ -13848,13 +13832,13 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rdk@4.0.21:
-  version "4.0.21"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-4.0.21.tgz#7166ca4a99ede07d3d1e31f0315b1b6fbcafa341"
-  integrity sha512-f9/Ms7fDMrdaEBXmFj0TBhdmmb+R8BYK4VJn1XlqkWXbP26H0T7cb2u6JkekogdptgJ/rvi+YDn9atQet0AXQw==
+rdk@4.0.22:
+  version "4.0.22"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-4.0.22.tgz#3cc5cfa1ae346e6e1b34ae02164d0bf7b703db60"
+  integrity sha512-wD1NGaLuLvFTZQin18Wfheys7klpJ9+jYnO6RyFVcJiRQq2atpaY79aj6yDduaY5v70Tg98yxNyq6cP3UiVzDA==
   dependencies:
     classnames "^2.2.6"
-    framer-motion "^1.10.3"
+    framer-motion "^2.1.0"
     popper.js "^1.16.1"
     react-scrolllock "^5.0.1"
 
@@ -15944,17 +15928,6 @@ style-value-types@^3.1.6, style-value-types@^3.1.7:
   integrity sha512-jPaG5HcAPs3vetSwOJozrBXxuHo9tjZVnbRyBjxqb00c2saIoeuBJc1/2MtvB8eRZy41u/BBDH0CpfzWixftKg==
   dependencies:
     hey-listen "^1.0.8"
-    tslib "^1.10.0"
-
-stylefire@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/stylefire/-/stylefire-7.0.2.tgz#874a82dd2bcada39c13e75e0c67b70009e06f556"
-  integrity sha512-LFIBP6fIA+EMqLSvM4V6zLa+O/iAcHoNJVuXkkZ5G8+T+Pd3KaQLqgxrpkeo1bwWQHqzgab8U3V3gudO231fZA==
-  dependencies:
-    "@popmotion/popcorn" "^0.4.4"
-    framesync "^4.0.0"
-    hey-listen "^1.0.8"
-    style-value-types "^3.1.7"
     tslib "^1.10.0"
 
 stylehacks@^4.0.0:

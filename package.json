@@ -80,7 +80,7 @@
     "is-equal": "1.6.0",
     "memoize-bind": "^1.0.3",
     "memoize-one": "^5.1.1",
-    "rdk": "4.0.21",
+    "rdk": "4.0.22",
     "react-countup": "^4.3.3",
     "react-sizeme": "^2.6.12",
     "transformation-matrix": "^2.2.0"
