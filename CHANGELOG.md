@@ -1,3 +1,6 @@
+# 8.1.4 - 6/19/20
+- [Chore] Upgrade to latest deps
+
 # 8.1.3 - 5/4/20
 - [Fix] Fix empty area charts blowing up
 

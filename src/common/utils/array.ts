@@ -4,7 +4,7 @@ type AccessorCallback = (data: any) => any;
  * Given a dataset and a list of accessors, returns a unique collection.
  */
 export function uniqueBy<T = any>(data: T[], ...accessors: AccessorCallback[]) {
-  const result = [] as any;
+  const result: any[] = [];
 
   const ittr = (arr: T[], depth: number) => {
     for (const a of arr) {
