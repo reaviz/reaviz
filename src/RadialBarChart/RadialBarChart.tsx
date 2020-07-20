@@ -57,7 +57,7 @@ export class RadialBarChart extends Component<RadialBarChartProps> {
       const data = buildShallowChartData(
         preData
       ) as ChartInternalShallowDataShape[];
-      const xDomain = uniqueBy<ChartInternalShallowDataShape>(data, d => d.x);
+      const xDomain = uniqueBy(data, d => d.x);
       const yDomain = getYDomain({ data, scaled: false });
 
       const xScale = scaleBand()

@@ -53,7 +53,7 @@ export class SequentialLegend extends PureComponent<SequentialLegendProps> {
 
     // Get the extent from the data passed
     const [end, start] = extent(
-      uniqueBy<ChartDataShape>(data, d => d.data, d => d.data)
+      uniqueBy(data, d => d.data, d => d.data)
     );
 
     // Get direction
