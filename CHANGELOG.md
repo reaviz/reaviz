@@ -1,4 +1,11 @@
-# 8.1.4 - 6/19/20
+# 8.1.6 - 6/20/20
+- [Bug] Fix bar chart sort not animating
+- [Bug] Fix type issues post upgrade of deps
+- [Bug] Fix guide bar bug related to motion upgrade
+- [Bug] Fix heatmap bug related to motion upgrade
+- [Bug] Fix sankey bug related to motion upgrade
+
+# 8.1.4/5 - 6/19/20
 - [Chore] Upgrade to latest deps
 
 # 8.1.3 - 5/4/20
