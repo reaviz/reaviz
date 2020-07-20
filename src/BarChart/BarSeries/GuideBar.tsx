@@ -12,16 +12,20 @@ export const GuideBar: FC<Partial<GuideBarProps>> = ({
   fill = '#eee',
   opacity = 0.15,
   ...rest
-}) => (
-  <motion.rect
-    {...rest}
-    fill={fill}
-    pointerEvents="none"
-    initial="hidden"
-    animate={active ? 'visible' : 'hidden'}
-    variants={{
-      hidden: { opacity: 0 },
-      visible: { opacity }
-    }}
-  />
-);
+}) => {
+  const { x, y, ...other } = rest;
+
+  return (
+    <motion.rect
+      {...other}
+      fill={fill}
+      pointerEvents="none"
+      initial="hidden"
+      animate={active ? 'visible' : 'hidden'}
+      variants={{
+        hidden: { opacity: 0, attrX: x, attrY: y },
+        visible: { opacity, attrX: x, attrY: y }
+      }}
+    />
+  );
+};

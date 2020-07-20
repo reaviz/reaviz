@@ -234,7 +234,7 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
     // Histograms dont have keys
     let key = barIndex.toString();
     if (data.key) {
-      key = `${data.key!.toString()}-${groupIndex}-${barIndex}`;
+      key = `${data.key!.toString()}-${groupIndex}`;
     }
 
     let barElements = Array.isArray(bar) ? bar[barIndex] : bar;

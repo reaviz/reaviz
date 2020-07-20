@@ -584,8 +584,6 @@ export class Bar extends Component<BarProps, BarState> {
       <CloneElement<GuideBarProps>
         element={guide}
         {...coords}
-        x={coords.x}
-        width={coords.width}
         active={active}
       />
     );

@@ -185,6 +185,8 @@ export class HeatmapCell extends Component<HeatmapCellProps, HeatmapCellState> {
       data,
       cursor,
       fill,
+      x,
+      y,
       ...rest
     } = this.props;
     const { active } = this.state;
@@ -196,7 +198,7 @@ export class HeatmapCell extends Component<HeatmapCellProps, HeatmapCellState> {
 
     return (
       <Fragment>
-        <g ref={this.rect}>
+        <motion.g ref={this.rect} x={x} y={y}>
           <motion.rect
             {...rest}
             fill={fill}
@@ -217,7 +219,7 @@ export class HeatmapCell extends Component<HeatmapCellProps, HeatmapCellState> {
             onMouseLeave={bind(this.onMouseLeave, this)}
             onClick={bind(this.onMouseClick, this)}
           />
-        </g>
+        </motion.g>
         {tooltip && !tooltip.props.disabled && !isTransparent && (
           <CloneElement<ChartTooltipProps>
             element={tooltip}
