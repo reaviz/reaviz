@@ -12,8 +12,8 @@ import bind from 'memoize-bind';
 import { CloneElement } from '../utils/children';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
-import isEqual from 'is-equal';
 import memoize from 'memoize-one';
+import isEqual from 'react-fast-compare';
 
 export interface TooltipAreaProps {
   /**

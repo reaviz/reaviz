@@ -1,3 +1,7 @@
+# 8.1.7 - 6/21/20
+- [Perf] Improve isEqual by moving to react-fast-compare
+- [Chore] Upgrade transformation-matrix
+
 # 8.1.6 - 6/20/20
 - [Bug] Fix bar chart sort not animating
 - [Bug] Fix type issues post upgrade of deps

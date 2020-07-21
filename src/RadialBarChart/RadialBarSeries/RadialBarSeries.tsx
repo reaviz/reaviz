@@ -9,7 +9,7 @@ import {
   TooltipAreaEvent,
   ChartTooltip
 } from '../../common/Tooltip';
-import isEqual from 'is-equal';
+import isEqual from 'react-fast-compare';
 
 export interface RadialBarSeriesProps {
   /**

@@ -14,7 +14,7 @@ import {
   fromDefinition,
   transform
 } from 'transformation-matrix';
-import isEqual from 'is-equal';
+import isEqual from 'react-fast-compare';
 
 export interface ZoomPanEvent {
   scale: number;

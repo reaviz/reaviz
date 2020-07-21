@@ -7,7 +7,7 @@ import {
   ScatterPointProps
 } from '../../ScatterPlot';
 import css from './PointSeries.module.scss';
-import isEqual from 'is-equal';
+import isEqual from 'react-fast-compare';
 
 export interface PointSeriesProps {
   animated: boolean;
