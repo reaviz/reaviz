@@ -1,3 +1,7 @@
+# 8.1.8 - 6/23/20
+- [Bug] Fix docs not having styling
+- [Chore] Upgrade framer-motion
+
 # 8.1.7 - 6/21/20
 - [Perf] Improve isEqual by moving to react-fast-compare
 - [Chore] Upgrade transformation-matrix
