@@ -18,9 +18,6 @@
   <a href="https://bundlephobia.com/result?p=reaviz">
     <img src="https://badgen.net/bundlephobia/minzip/reaviz">
   </a>
-  <a href="https://bundlephobia.com/result?p=reaviz">
-    <img src="https://badgen.net/bundlephobia/minzip/reaviz">
-  </a>
 </p>
 
 ---
