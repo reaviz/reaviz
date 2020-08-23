@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import bind from 'memoize-bind';
-import { Dimensions, getDimension, Margins } from '../utils/dimensions';
-import { ResizeEvent, ResizeContainer } from './ResizeContainer';
+import React, { FC, useCallback, useState, useMemo } from 'react';
+import { Dimensions, Margins, getDimension } from '../utils/dimensions';
+import useDimensions from 'react-cool-dimensions';
+import { useId } from 'rdk';
 import { LinearAxisDimensionChanged } from '../Axis';
-
-let chartId = 0;
 
 export interface ChartProps {
   /**
@@ -70,103 +68,36 @@ export interface ChartContainerProps extends ChartProps {
   children: (props: ChartContainerChildProps) => any;
 }
 
-export interface ChartContainerChildProps extends ChartContainerState {
-  updateAxes: (e) => void;
-}
-
-export interface ChartContainerState extends Dimensions {
+export interface ChartContainerChildProps extends Dimensions {
   id: string;
   chartSized?: boolean;
   yAxisSized?: boolean;
   xAxisSized?: boolean;
+  updateAxes: (orientation: 'horizontal' | 'vertical', event: LinearAxisDimensionChanged) => void;
 }
 
-interface UpdateSizeProps {
-  chartSized?: boolean;
-  xAxisSized?: boolean;
-  yAxisSized?: boolean;
-  yOffset?: number;
-  xOffset?: number;
-  height?: number;
-  width?: number;
-}
+export const ChartContainer: FC<ChartContainerProps> = ({
+  className,
+  children,
+  center,
+  centerX,
+  centerY,
+  style,
+  margins,
+  xAxisVisible,
+  yAxisVisible,
+  id,
+  ...rest
+}) => {
+  const curId = id || useId();
+  const [xAxisSized, setXAxisSized] = useState<boolean>(false);
+  const [yAxisSized, setYAxisSized] = useState<boolean>(false);
+  const [xOffset, setYOffset] = useState<number>(0);
+  const [yOffset, setXOffset] = useState<number>(0);
+  const { ref, width, height } = useDimensions<HTMLDivElement>();
 
-export class ChartContainer extends Component<
-  ChartContainerProps,
-  ChartContainerState
-> {
-  static defaultProps: Partial<ChartContainerProps> = {
-    margins: 10
-  };
-
-  constructor(props: ChartContainerProps) {
-    super(props);
-
-    const { margins, height, width } = props;
-    this.state = {
-      id: (chartId++).toString(),
-      ...getDimension({
-        margins,
-        height,
-        width,
-        yOffset: 0,
-        xOffset: 0
-      })
-    };
-  }
-
-  componentDidUpdate(nextProps: ChartContainerProps) {
-    const { height, width } = this.props;
-    if (width !== nextProps.width || height !== nextProps.height) {
-      this.updateSize({
-        height: nextProps.height,
-        width: nextProps.width
-      });
-    }
-  }
-
-  onResize(event: ResizeEvent) {
-    this.updateSize({
-      ...event,
-      chartSized: true
-    });
-  }
-
-  updateAxes(
-    orientation: 'horizontal' | 'vertical',
-    event: LinearAxisDimensionChanged
-  ) {
-    const propToken =
-      orientation === 'horizontal' ? 'xAxisSized' : 'yAxisSized';
-
-    this.updateSize({
-      yOffset: event.height,
-      xOffset: event.width,
-      [propToken]: true
-    });
-  }
-
-  updateSize(props: UpdateSizeProps) {
-    this.setState(prev => ({
-      chartSized: props.chartSized || prev.chartSized,
-      // TODO: @amcdnl refactor this be x0Offset/x1Offset/etc
-      xAxisSized: props.xAxisSized || prev.xAxisSized,
-      yAxisSized: props.yAxisSized || prev.yAxisSized,
-      ...getDimension({
-        margins: this.props.margins,
-        height: props.height || prev.height,
-        width: props.width || prev.width,
-        yOffset: props.yOffset || prev.yOffset,
-        xOffset: props.xOffset || prev.xOffset
-      })
-    }));
-  }
-
-  getChartSized() {
-    const { height, width, xAxisVisible, yAxisVisible } = this.props;
-    const { xAxisSized, yAxisSized, chartSized } = this.state;
-
-    if ((!height || !width) && !chartSized) {
+  const chartSized = useMemo(() => {
+    if ((!height || !width)) {
       return false;
     }
 
@@ -180,42 +111,72 @@ export class ChartContainer extends Component<
     }
 
     return true;
-  }
+  }, [height, width, xAxisSized, xAxisVisible, yAxisVisible, yAxisSized]);
 
-  render() {
-    const { className, children, center, centerX, centerY, style } = this.props;
-    const { xMargin, yMargin, width, height } = this.state;
-    const id = this.props.id || this.state.id;
-    const chartSized = this.getChartSized();
-    const childProps: ChartContainerChildProps = {
-      ...this.state,
-      chartSized,
-      id,
-      updateAxes: bind(this.updateAxes, this)
-    };
+  const onUpdateAxes = useCallback((
+    orientation: 'horizontal' | 'vertical',
+    event: LinearAxisDimensionChanged
+  ) => {
+    if (orientation === 'horizontal') {
+      setXAxisSized(true);
+    } else {
+      setYAxisSized(true);
+    }
 
-    const translateX = center || centerX ? width / 2 : xMargin;
-    const translateY = center || centerY ? height / 2 : yMargin;
+    if (event.height) {
+      setYOffset(event.height);
+    }
 
-    return (
-      <ResizeContainer
-        onSize={bind(this.onResize, this)}
-        height={this.props.height}
-        width={this.props.width}
-      >
-        {height && width && (
-          <svg
-            width={width}
-            height={height}
-            className={className}
-            style={style}
-          >
-            <g transform={`translate(${translateX}, ${translateY})`}>
-              {children(childProps)}
-            </g>
-          </svg>
-        )}
-      </ResizeContainer>
-    );
-  }
-}
+    if (event.width) {
+      setXOffset(event.width);
+    }
+  }, []);
+
+  const childProps: ChartContainerChildProps = useMemo(() => ({
+    chartSized,
+    id: curId,
+    updateAxes: onUpdateAxes,
+    yAxisSized,
+    xAxisSized,
+    ...getDimension({
+      margins,
+      height,
+      width,
+      yOffset,
+      xOffset
+    })
+  }), [
+    chartSized,
+    id,
+    onUpdateAxes,
+    yAxisSized,
+    xAxisSized,
+    margins,
+    height,
+    width,
+    yOffset,
+    xOffset
+  ]);
+
+  const translateX = center || centerX ? width / 2 : childProps.xMargin;
+  const translateY = center || centerY ? height / 2 : childProps.yMargin;
+  const styleHeight = rest.height || '100%';
+  const styleWidth = rest.width || '100%';
+
+  return (
+    <div ref={ref} style={{ height: styleHeight, width: styleWidth }}>
+      {height && width && (
+        <svg
+          width={width}
+          height={height}
+          className={className}
+          style={style}
+        >
+          <g transform={`translate(${translateX}, ${translateY})`}>
+            {children(childProps)}
+          </g>
+        </svg>
+      )}
+    </div>
+  );
+};

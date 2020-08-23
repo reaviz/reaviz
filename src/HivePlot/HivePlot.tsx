@@ -4,7 +4,6 @@ import { scaleOrdinal, scaleLinear, scalePoint } from 'd3-scale';
 import { range } from 'd3-array';
 import { Tooltip } from '../common/Tooltip';
 import { Placement } from 'rdk';
-import { ResizeContainer } from '../common/containers/ResizeContainer';
 import { HiveNode } from './HiveNode';
 import { HiveAxis } from './HiveAxis';
 import { HiveLink } from './HiveLink';
@@ -12,6 +11,7 @@ import { HiveLabel } from './HiveLabel';
 import { HiveTooltip } from './HiveTooltip';
 import { Node, Link, Axis } from './types';
 import classNames from 'classnames';
+import { ChartContainer } from '../common/containers';
 
 interface NodeEventData {
   nativeEvent: any;
@@ -265,23 +265,6 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     };
   }
 
-  onSize({ height, width }) {
-    this.setState(prev => ({
-      height: height || prev.height,
-      width: width || prev.width
-    }));
-  }
-
-  getDimensions() {
-    const height = this.props.height || this.state.height || 0;
-    const width = this.props.width || this.state.width || 0;
-
-    return {
-      height,
-      width
-    };
-  }
-
   renderAxis({ angle, radius, axisColor, outerRadius }) {
     const { axis, label } = this.props;
 
@@ -406,9 +389,9 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     );
   }
 
-  render() {
+  renderChart({ height, width }) {
     const { innerRadius, axis, colorScheme, label, className } = this.props;
-    const { height, width } = this.getDimensions();
+
     const data = this.prepareData({
       dimension: Math.min(height, width),
       innerRadius,
@@ -418,31 +401,34 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     });
 
     return (
-      <ResizeContainer
-        onSize={bind(this.onSize, this)}
+      <Fragment>
+        <svg
+          width={width}
+          height={height}
+          className={classNames(className)}
+        >
+          <g
+            transform={`translate(${width / 2}, ${height / 2 +
+              innerRadius})`}
+          >
+            {this.renderAxis(data)}
+            {this.renderLinks(data)}
+            {this.renderNodes(data)}
+          </g>
+        </svg>
+        {this.renderTooltip()}
+      </Fragment>
+    );
+  }
+
+  render() {
+    return (
+      <ChartContainer
         height={this.props.height}
         width={this.props.width}
       >
-        {height && width && (
-          <Fragment>
-            <svg
-              width={width}
-              height={height}
-              className={classNames(className)}
-            >
-              <g
-                transform={`translate(${width / 2}, ${height / 2 +
-                  innerRadius})`}
-              >
-                {this.renderAxis(data)}
-                {this.renderLinks(data)}
-                {this.renderNodes(data)}
-              </g>
-            </svg>
-            {this.renderTooltip()}
-          </Fragment>
-        )}
-      </ResizeContainer>
+        {this.renderChart.bind(this)}
+      </ChartContainer>
     );
   }
 }

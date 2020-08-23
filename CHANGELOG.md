@@ -1,3 +1,7 @@
+# 8.2.0 - 8/23/20
+- [Fix] Remove sizeme since its using deprecated APIs
+- [Chore] Updated RDK
+
 # 8.1.8 - 6/23/20
 - [Bug] Fix docs not having styling
 - [Chore] Upgrade framer-motion

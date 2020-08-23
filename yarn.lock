@@ -13802,10 +13802,10 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rdk@4.0.22:
-  version "4.0.22"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-4.0.22.tgz#3cc5cfa1ae346e6e1b34ae02164d0bf7b703db60"
-  integrity sha512-wD1NGaLuLvFTZQin18Wfheys7klpJ9+jYnO6RyFVcJiRQq2atpaY79aj6yDduaY5v70Tg98yxNyq6cP3UiVzDA==
+rdk@4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-4.1.3.tgz#b9afd7ab32404dbc644b2e4708d4b903de1ae13e"
+  integrity sha512-T6HtLNbraAK/W+ZyAlCvtBVpiWDXIMNOSuWVIPT/4xr55ziCY/GszJS2XW7OF16hF/dN4JlVWfLIDfGaMJlD2w==
   dependencies:
     classnames "^2.2.6"
     framer-motion "^2.1.0"
@@ -13830,6 +13830,11 @@ react-color@^2.17.0:
     prop-types "^15.5.10"
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
+
+react-cool-dimensions@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/react-cool-dimensions/-/react-cool-dimensions-1.1.3.tgz#a6e0b06afe001646c2fc113b78d269d400cc669a"
+  integrity sha512-yzQ5THN4tm58yVbMMMObcuaEfLsVSIsgt3DSsvyGI2JdFoqry8AJdInqJouXxPBiKKVvJSDPLktS1CK0rPT23w==
 
 react-countup@^4.3.3:
   version "4.3.3"
@@ -14044,7 +14049,7 @@ react-select@^3.0.8:
     react-input-autosize "^2.2.2"
     react-transition-group "^4.3.0"
 
-react-sizeme@^2.6.12, react-sizeme@^2.6.7:
+react-sizeme@^2.6.7:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/react-sizeme/-/react-sizeme-2.6.12.tgz#ed207be5476f4a85bf364e92042520499455453e"
   integrity sha512-tL4sCgfmvapYRZ1FO2VmBmjPVzzqgHA7kI8lSJ6JS6L78jXFNRdOZFpXyK6P1NBZvKPPCZxReNgzZNUajAerZw==
