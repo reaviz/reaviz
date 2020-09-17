@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { sankeyLinkHorizontal } from 'd3-sankey';
 import { CloneElement } from '../../common/utils/children';
 import { formatValue } from '../../common/utils/formatting';
-import { Tooltip, TooltipProps } from '../../common/Tooltip';
+import { Tooltip, TooltipProps } from 'realayers';
 import { NodeExtra, Node, Link, DEFAULT_COLOR } from '../utils';
 import css from './SankeyLink.module.scss';
 

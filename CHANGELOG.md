@@ -1,3 +1,6 @@
+# 8.3.0 - 9/16/20
+- [Chore] Move Tooltip to shared library called realayers
+
 # 8.2.0 - 8/23/20
 - [Fix] Remove sizeme since its using deprecated APIs
 - [Chore] Updated RDK

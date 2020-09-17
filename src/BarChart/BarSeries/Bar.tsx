@@ -686,7 +686,7 @@ export class Bar extends Component<BarProps, BarState> {
             reference={this.rect}
             color={color}
             value={tooltipData}
-            placement={tooltip.props.placement || placement}
+            placement={(tooltip.props as any).placement || placement}
             data={data}
           />
         )}

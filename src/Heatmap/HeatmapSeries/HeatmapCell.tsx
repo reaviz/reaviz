@@ -220,11 +220,11 @@ export class HeatmapCell extends Component<HeatmapCellProps, HeatmapCellState> {
             onClick={bind(this.onMouseClick, this)}
           />
         </motion.g>
-        {tooltip && !tooltip.props.disabled && !isTransparent && (
+        {tooltip && !(tooltip.props as any).disabled && !isTransparent && (
           <CloneElement<ChartTooltipProps>
             element={tooltip}
             visible={!!active}
-            modifiers={tooltip.props.modifiers || modifiers}
+            modifiers={(tooltip.props as any).modifiers || modifiers}
             reference={this.rect}
             value={this.getTooltipData()}
           />

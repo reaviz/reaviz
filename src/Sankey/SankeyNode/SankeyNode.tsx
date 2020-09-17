@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ChartInternalDataTypes } from '../../common/data';
 import { CloneElement } from '../../common/utils/children';
 import { formatValue } from '../../common/utils/formatting';
-import { Tooltip, TooltipProps } from '../../common/Tooltip';
+import { Tooltip, TooltipProps } from 'realayers';
 import { SankeyLabel, SankeyLabelProps } from '../SankeyLabel';
 import { Node, DEFAULT_COLOR } from '../utils';
 import css from './SankeyNode.module.scss';

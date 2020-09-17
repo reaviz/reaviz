@@ -1,5 +1,5 @@
 import React, { cloneElement, FC } from 'react';
-import { Tooltip, TooltipProps } from './Tooltip';
+import { Tooltip, TooltipProps } from 'realayers';
 import { TooltipTemplate } from './TooltipTemplate';
 
 export interface ChartTooltipProps extends TooltipProps {
