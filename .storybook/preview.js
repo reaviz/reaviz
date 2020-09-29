@@ -9,10 +9,10 @@ export const parameters = {
           return -1;
         }
 
-        return 0;
+        return a - b;
       }
 
-      return 1;
+      return a - b;
     }
   },
   docs: {
