@@ -338,7 +338,7 @@ storiesOf('Charts/Line/Gridlines', module)
     />
   ));
 
-storiesOf('Charts|Line/Circle Series', module)
+storiesOf('Charts/Line/Circle Series', module)
   .add('On', () => (
     <LineChart
       width={350}
