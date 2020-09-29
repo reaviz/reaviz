@@ -1,3 +1,9 @@
+# 9.0.0 - 9/29/20
+- [BREAKING] Rename CSS variables to be more specific
+- [Bug] Fix flashing 0 on load
+- [Bug] Fix broken bar chart brust story
+- [Chore] Upgrade depedencies
+
 # 8.3.0 - 9/16/20
 - [Chore] Move Tooltip to shared library called realayers
 

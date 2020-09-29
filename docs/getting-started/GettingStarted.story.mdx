@@ -42,10 +42,10 @@ that is native to the browser. The color variables are:
 
 - `--color-background`
 - `--color-on-background`
-- `--color-layer-transparent`
-- `--color-surface`
-- `--color-primary`
-- `--color-on-primary`
+- `--color-tooltip`
+- `--color-on-tooltip`
+- `--color-handle`
+- `--color-handle-drag`
 
 These names are based on the Google Material design spec. These variables
 are not setup when you install the project automatically but if you want
@@ -54,13 +54,14 @@ some sensible defaults here is what we use in the Storybook demo:
 ```html
 <style>
   body {
-    --color-background:#22272b;
+    --color-background: rgb(51, 51, 51);
     --color-on-background:#fff;
-    --color-layer-transparent:rgba(0,5,11,0.9);
-    --color-surface:#2c343a;
-    --color-primary:#67c2e4;
-    --color-on-primary:#fff;
-    --color-on-surface: #fff;
+
+    --color-tooltip: rgba(0,5,11,0.9);
+    --color-on-tooltip: #fff;
+
+    --color-handle: #67c2e4;
+    --color-handle-drag: #2c343a;
   }
 </style>
 ```
