@@ -4,7 +4,14 @@ module.exports = {
     '../docs/**/*.story.mdx'
   ],
   addons: [
-    '@storybook/addon-docs/preset',
-    '@storybook/preset-scss'
+    {
+      name: '@storybook/preset-scss',
+      options: {
+        cssLoaderOptions: {
+          modules: true
+        }
+      }
+    },
+    '@storybook/addon-docs/preset'
   ]
 };

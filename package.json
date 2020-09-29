@@ -91,7 +91,7 @@
     "commitMessage": "deploy storybook [ci skip]"
   },
   "peerDependencies": {
-    "framer-motion": "2.7.6",
+    "framer-motion": "^2.7.6",
     "react": ">=16",
     "react-dom": ">=16"
   },
@@ -114,6 +114,7 @@
     "@storybook/addon-google-analytics": "6.0.22",
     "@storybook/addon-knobs": "6.0.22",
     "@storybook/addons": "6.0.22",
+    "framer-motion": "^2.7.6",
     "@storybook/preset-scss": "^1.0.2",
     "@storybook/react": "6.0.22",
     "@storybook/storybook-deployer": "^2.8.6",
