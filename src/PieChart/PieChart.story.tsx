@@ -6,7 +6,7 @@ import { PieArcSeries } from './PieArcSeries';
 import { number, object, text, select } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 
-storiesOf('Charts|Pie Chart/Pie', module)
+storiesOf('Charts/Pie Chart/Pie', module)
   .add(
     'Simple',
     () => {
@@ -66,7 +66,7 @@ storiesOf('Charts|Pie Chart/Pie', module)
     </div>
   ));
 
-storiesOf('Charts|Pie Chart/Donut', module)
+storiesOf('Charts/Pie Chart/Donut', module)
   .add(
     'Simple',
     () => {

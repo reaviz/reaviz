@@ -16,7 +16,7 @@ import {
   LinearXAxisTickLabel
 } from './LinearXAxis';
 
-storiesOf('Charts|Axis/Linear', module)
+storiesOf('Charts/Axis/Linear', module)
   .add('Center Axes', () => {
     const data = [...largeSignalChartData].splice(0, 50);
     return (

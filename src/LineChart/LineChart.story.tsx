@@ -47,7 +47,7 @@ const prettyData = (() => {
   return data;
 })();
 
-storiesOf('Charts|Line/Single Series', module)
+storiesOf('Charts/Line/Single Series', module)
   .add(
     'Simple',
     () => {
@@ -154,7 +154,7 @@ storiesOf('Charts|Line/Single Series', module)
   ))
   .add('Live Updating', () => <LiveUpdatingStory />);
 
-storiesOf('Charts|Line/Multi Series', module)
+storiesOf('Charts/Line/Multi Series', module)
   .add(
     'Simple',
     () => {
@@ -312,7 +312,7 @@ storiesOf('Charts|Line/Multi Series', module)
     { options: { showPanel: true } }
   );
 
-storiesOf('Charts|Line/Gridlines', module)
+storiesOf('Charts/Line/Gridlines', module)
   .add('All Axes', () => (
     <LineChart
       width={350}

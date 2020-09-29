@@ -9,7 +9,7 @@ import geojson from 'world-atlas/countries-110m.json';
 // to filter and disect on specific shapes
 const worldData = feature(geojson as any, geojson.objects.countries as any);
 
-storiesOf('Charts|Map', module)
+storiesOf('Charts/Map', module)
   .add('Simple', () => <Map data={worldData} height={350} width={500} />)
   .add('Autosize', () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>

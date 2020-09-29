@@ -16,7 +16,7 @@ import {
   RadialAxisTickLine
 } from '../common/Axis/RadialAxis';
 
-storiesOf('Charts|Scatter Plot/Radial', module)
+storiesOf('Charts/Scatter Plot/Radial', module)
   .add(
     'Simple',
     () => {

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { DiscreteLegend } from './DiscreteLegend';
 import { DiscreteLegendEntry } from './DiscreteLegendEntry';
 
-storiesOf('Charts|Legend/Discrete/Vertical', module).add('Simple', () => (
+storiesOf('Charts/Legend/Discrete/Vertical', module).add('Simple', () => (
   <DiscreteLegend
     style={{ width: '200px' }}
     entries={[
@@ -15,7 +15,7 @@ storiesOf('Charts|Legend/Discrete/Vertical', module).add('Simple', () => (
   />
 ));
 
-storiesOf('Charts|Legend/Discrete/Horizontal', module)
+storiesOf('Charts/Legend/Discrete/Horizontal', module)
   .add('Simple', () => (
     <DiscreteLegend
       orientation="horizontal"

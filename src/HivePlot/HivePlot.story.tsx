@@ -4,7 +4,7 @@ import { HivePlot } from './HivePlot';
 import { nodes, links } from '../../demo';
 import { range } from 'd3-array';
 
-storiesOf('Charts|Hive Plot', module)
+storiesOf('Charts/Hive Plot', module)
   .add('Mini', () => (
     <HivePlot
       height={250}

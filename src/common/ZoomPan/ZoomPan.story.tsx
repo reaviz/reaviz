@@ -13,7 +13,7 @@ import {
 } from '../Axis';
 import { useState } from '@storybook/addons';
 
-storiesOf('Charts|Zoom Pan', module)
+storiesOf('Charts/Zoom Pan', module)
   .add('Line', () => (
     <LineChart
       width={450}

@@ -13,7 +13,7 @@ import { AreaSparklineChart } from './AreaSparklineChart';
 import { BarSparklineChart } from './BarSparklineChart';
 import { SonarChart } from './SonarChart';
 
-storiesOf('Charts|Sparkline', module)
+storiesOf('Charts/Sparkline', module)
   .add('Line', () => (
     <SparklineChart width={200} height={55} data={medDateData} />
   ))

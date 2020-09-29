@@ -26,7 +26,7 @@ import { Tooltip } from 'realayers';
 import { GridlineSeries, Gridline, GridStripe } from '../Gridline';
 import { ChartZoomPan } from '../ZoomPan';
 
-storiesOf('Charts|Brush', module)
+storiesOf('Charts/Brush', module)
   .add('Line', () => (
     <LineChart
       width={450}

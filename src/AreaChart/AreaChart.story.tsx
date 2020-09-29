@@ -41,7 +41,7 @@ import { ChartDataShape } from '../common/data';
 import { schemes } from '../common/color';
 import { getYScale, getXScale } from '../common/scales';
 
-storiesOf('Charts|Area Chart/Single Series', module)
+storiesOf('Charts/Area Chart/Single Series', module)
   .add(
     'Simple',
     () => {
@@ -155,7 +155,7 @@ storiesOf('Charts|Area Chart/Single Series', module)
     <AreaChart width={350} height={250} data={singleDateBigIntData} />
   ));
 
-storiesOf('Charts|Area Chart/Multi Series', module)
+storiesOf('Charts/Area Chart/Multi Series', module)
   .add(
     'Simple',
     () => {
@@ -247,7 +247,7 @@ storiesOf('Charts|Area Chart/Multi Series', module)
     { options: { showPanel: true } }
   );
 
-storiesOf('Charts|Area Chart/Gridlines', module)
+storiesOf('Charts/Area Chart/Gridlines', module)
   .add('All Axes', () => (
     <AreaChart
       width={350}
@@ -273,7 +273,7 @@ storiesOf('Charts|Area Chart/Gridlines', module)
     />
   ));
 
-storiesOf('Charts|Area Chart/Circle Series', module)
+storiesOf('Charts/Area Chart/Circle Series', module)
   .add('On', () => (
     <AreaChart
       width={350}
@@ -351,7 +351,7 @@ storiesOf('Charts|Area Chart/Circle Series', module)
     />
   ));
 
-storiesOf('Charts|Area Chart/Axis', module)
+storiesOf('Charts/Area Chart/Axis', module)
   .add('Top + Bottom Axis', () => {
     const scale = getXScale({
       type: 'category',

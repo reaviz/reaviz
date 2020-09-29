@@ -15,7 +15,7 @@ import {
 import { schemes } from '../common/color';
 import { RadialGradient } from '../common/Gradient';
 
-storiesOf('Charts|Area Chart/Radial', module)
+storiesOf('Charts/Area Chart/Radial', module)
   .add(
     'Simple',
     () => {

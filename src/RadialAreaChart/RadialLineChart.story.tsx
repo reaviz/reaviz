@@ -14,7 +14,7 @@ import {
 } from '../common/Axis';
 import { schemes } from '../common/color';
 
-storiesOf('Charts|Line/Radial', module).add(
+storiesOf('Charts/Line/Radial', module).add(
   'Simple',
   () => {
     const innerRadius = number('Inner Radius', 0.1);

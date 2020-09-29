@@ -23,7 +23,7 @@ const Icon = ({ fill }) => (
   </svg>
 );
 
-storiesOf('Charts|Gauge/Linear/Single-Series', module)
+storiesOf('Charts/Gauge/Linear/Single-Series', module)
   .add('Simple', () => (
     <div style={{ textAlign: 'center' }}>
       <h2 style={{ color: 'white', margin: 0 }}>Risk Score</h2>
@@ -71,7 +71,7 @@ storiesOf('Charts|Gauge/Linear/Single-Series', module)
     </div>
   ));
 
-storiesOf('Charts|Gauge/Linear/Multi-Series', module)
+storiesOf('Charts/Gauge/Linear/Multi-Series', module)
   .add('Simple', () => (
     <div style={{ width: '465px', textAlign: 'center' }}>
       <h2 style={{ color: 'white', margin: 0 }}>MIRTE Attack</h2>
