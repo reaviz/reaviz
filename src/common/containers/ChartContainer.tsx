@@ -165,7 +165,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
 
   return (
     <div ref={ref} style={{ height: styleHeight, width: styleWidth }}>
-      {height && width && (
+      {height > 0 && width > 0 && (
         <svg
           width={width}
           height={height}

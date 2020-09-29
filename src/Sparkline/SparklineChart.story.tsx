@@ -21,7 +21,7 @@ storiesOf('Charts|Sparkline', module)
     <AreaSparklineChart width={200} height={85} data={singleDateData} />
   ))
   .add('Bar', () => (
-    <BarSparklineChart width={200} height={55} data={smallDateData} />
+    <BarSparklineChart width={200} height={35} data={smallDateData} />
   ))
   .add('Sonar', () => <SonarChart width={300} height={50} data={sonarData} />)
   .add('Sonar Empties', () => (

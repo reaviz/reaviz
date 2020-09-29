@@ -20,7 +20,7 @@ import { TooltipArea } from '../Tooltip';
 import { ChartBrush } from './ChartBrush';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../ScatterPlot';
 import { timeDay } from 'd3-time';
-import { BarChart, BarSeries } from '../../BarChart';
+import { BarChart, BarSeries, HistogramBarSeries } from '../../BarChart';
 import { range } from 'd3-array';
 import { Tooltip } from 'realayers';
 import { GridlineSeries, Gridline, GridStripe } from '../Gridline';
@@ -85,7 +85,7 @@ storiesOf('Charts|Brush', module)
     return (
       <BarChart
         width={450}
-        height={85}
+        height={45}
         brush={<ChartBrush disabled={false} />}
         data={barData}
         gridlines={null}
@@ -98,16 +98,14 @@ storiesOf('Charts|Brush', module)
         xAxis={
           <LinearXAxis
             type="time"
-            roundDomains={true}
             tickSeries={
               <LinearXAxisTickSeries
-                interval={timeDay}
                 label={<LinearXAxisTickLabel rotation={false} />}
               />
             }
           />
         }
-        series={<BarSeries tooltip={null} />}
+        series={<HistogramBarSeries tooltip={null} binSize={60 * 60 * 24 * 1000} />}
       />
     );
   })
