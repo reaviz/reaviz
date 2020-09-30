@@ -53,3 +53,14 @@ storiesOf('Charts/Venn Diagram', module)
       ]}
     />
   ))
+  .add('Autosize', () => (
+    <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
+      <VennDiagram
+        data={[
+          { key: ['A'], data: 12 },
+          { key: ['B'], data: 12 },
+          { key: ['A', 'B'], data: 2 },
+        ]}
+      />
+    </div>
+  ));
