@@ -17,6 +17,11 @@ export interface VennArcProps {
   fill: string;
 
   /**
+   * Stroke for the arc.
+   */
+  stroke: string;
+
+  /**
    * The internal data object built by venn.js
    */
   data: IVennLayout<any>;
@@ -50,6 +55,11 @@ export interface VennArcProps {
    * Cursor for the arc hover.
    */
   cursor?: string;
+
+  /**
+   * Stroke on the arc.
+   */
+  strokeWidth?: number;
 }
 
 export const VennArc: FC<Partial<VennArcProps>> = ({
@@ -57,6 +67,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   fill,
   disabled,
   animated,
+  stroke,
+  strokeWidth = 5,
   cursor = 'initial',
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
@@ -100,10 +112,12 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       <motion.path
         ref={arcRef}
         fill={fill}
+        strokeWidth={strokeWidth}
+        stroke={stroke}
         transition={transition}
         d={d}
-        initial={{ opacity: 0.5 }}
-        animate={{ opacity: active ? 0.7 : 0.5 }}
+        initial={{ opacity: 0.6 }}
+        animate={{ opacity: active ? 0.7 : 0.6 }}
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>

@@ -5,6 +5,7 @@ import { VennArc, VennArcProps } from './VennArc';
 import { VennLabel, VennLabelProps } from './VennLabel';
 import { motion } from 'framer-motion';
 import { CloneElement } from '../common/utils';
+import chroma from 'chroma-js';
 
 export interface VennSeriesProps {
   /**
@@ -58,6 +59,8 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         index
       });
 
+      const stroke = chroma(fill).darken(.5);
+
       return (
         <motion.g
           key={d.data.sets.toString()}
@@ -69,6 +72,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             element={arc}
             data={d}
             fill={fill}
+            stroke={stroke}
             disabled={disabled}
             animated={animated}
           />
