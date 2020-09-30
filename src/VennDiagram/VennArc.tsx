@@ -48,6 +48,16 @@ export interface VennArcProps {
   strokeWidth?: number;
 
   /**
+   * Opacity on initial state.
+   */
+  initialOpacity?: number;
+
+  /**
+   * Opacity on active state.
+   */
+  activeOpacity?: number;
+
+  /**
    * Tooltip element.
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
@@ -81,6 +91,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   stroke,
   mask,
   id,
+  initialOpacity = 0.6,
+  activeOpacity = 0.7,
   strokeWidth = 3,
   cursor = 'initial',
   tooltip = <ChartTooltip />,
@@ -130,8 +142,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         stroke={stroke}
         transition={transition}
         d={d}
-        initial={{ opacity: 0.6 }}
-        animate={{ opacity: active ? 0.7 : 0.6 }}
+        initial={{ opacity: initialOpacity }}
+        animate={{ opacity: active ? activeOpacity : initialOpacity }}
       />
       {mask && (
         <Fragment>

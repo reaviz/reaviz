@@ -57,11 +57,10 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
   const renderSection = useCallback(
     (d: IVennLayout<any>, index: number) => {
-      const point = { key: d.data.sets, value: d.data.size };
       const fill = getColor({
         data,
         colorScheme,
-        point,
+        point: d.data,
         index
       });
 

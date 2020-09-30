@@ -40,7 +40,11 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   disabled,
   series = <VennSeries />
 }) => {
-  const normalized = data.map((d) => ({ sets: d.key, size: d.data }));
+  const normalized = data.map((d) => ({
+    key: d.key.join('|'),
+    sets: d.key,
+    size: d.data
+  }));
 
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
