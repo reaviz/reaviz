@@ -82,6 +82,7 @@ Chart types include:
   - Standard
   - Year Calendar
   - Month Calendar
+- Venn Diagram
 
 Additional features:
 
