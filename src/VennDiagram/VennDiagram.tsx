@@ -50,7 +50,8 @@ export const VennDiagram: FC<VennDiagramProps> = ({
     (containerProps: ChartContainerChildProps) => {
       const layoutData = layout(normalized, {
         height: containerProps.height,
-        width: containerProps.width
+        width: containerProps.width,
+        symmetricalTextCentre: true
       });
 
       return (

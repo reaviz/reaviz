@@ -70,7 +70,7 @@ storiesOf('Charts/Venn Diagram', module)
     <VennDiagram
       height={300}
       width={300}
-      series={<VennSeries arc={<VennArc mask={<Stripes />} strokeWidth={1} />} />}
+      series={<VennSeries arc={<VennArc mask={<Stripes />} strokeWidth={1} initialOpacity={.9} activeOpacity={1} />} />}
       data={[
         { key: ['A'], data: 12 },
         { key: ['B'], data: 12 },
