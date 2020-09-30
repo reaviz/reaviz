@@ -4,12 +4,14 @@ import { calculateDimensions } from '../common/utils';
 
 export interface VennLabelProps {
   data: IVennLayout<any>;
-  fontSize: number;
-  fontFamily: string;
+  fontSize?: number;
+  fontFamily?: string;
+  fill?: string;
 }
 
 export const VennLabel: FC<VennLabelProps> = ({
   data,
+  fill = '#000',
   fontSize = 11,
   fontFamily = 'sans-serif',
 }) => {
@@ -21,7 +23,7 @@ export const VennLabel: FC<VennLabelProps> = ({
   const y = data.text.y + halfHeight;
 
   return (
-    <text x={x} y={y} style={{ pointerEvents: 'none' }}>
+    <text x={x} y={y} style={{ pointerEvents: 'none' }} fill={fill}>
       {key}
     </text>
   );
