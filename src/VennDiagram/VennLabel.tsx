@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { calculateDimensions } from '../common/utils';
+import { motion } from 'framer-motion';
 
 export interface VennLabelProps {
   /**
@@ -22,10 +23,16 @@ export interface VennLabelProps {
    * Fill of the text.
    */
   fill?: string;
+
+  /**
+   * Whether the chart is animated or not.
+   */
+  animated?: boolean;
 }
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
+  animated = true,
   fill = '#000',
   fontSize = 11,
   fontFamily = 'sans-serif'
@@ -36,10 +43,21 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const halfWidth = size.width / 2;
   const x = data.text.x - halfWidth;
   const y = data.text.y + halfHeight;
+  const pos: any = {
+    attrX: x,
+    attrY: y
+  };
+  const transition = animated ? {} : { delay: 0, type: false };
 
   return (
-    <text x={x} y={y} style={{ pointerEvents: 'none', fontFamily, fontSize }} fill={fill}>
+    <motion.text
+      style={{ pointerEvents: 'none', fontFamily, fontSize }}
+      fill={fill}
+      initial={pos}
+      animate={pos}
+      transition={transition}
+    >
       {key}
-    </text>
+    </motion.text>
   );
 };

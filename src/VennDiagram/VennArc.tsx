@@ -2,8 +2,15 @@ import React, { FC, useRef, ReactElement, useState } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from '../common/utils';
+import { motion } from 'framer-motion';
+import { useInterpolate } from './useInterpolate';
 
 export interface VennArcProps {
+  /**
+   * Whether the chart is animated or not.
+   */
+  animated?: boolean;
+
   /**
    * Fill color for the arc.
    */
@@ -38,12 +45,19 @@ export interface VennArcProps {
    * Event for when the arc has mouse leave.
    */
   onMouseLeave: (event) => void;
+
+  /**
+   * Cursor for the arc hover.
+   */
+  cursor?: string;
 }
 
 export const VennArc: FC<Partial<VennArcProps>> = ({
   data,
   fill,
   disabled,
+  animated,
+  cursor = 'initial',
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
@@ -51,9 +65,11 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
 }) => {
   const arcRef = useRef<any | null>(null);
   const [active, setActive] = useState<boolean>(false);
+  const { transition, d } = useInterpolate({ animated, data });
 
   return (
     <g
+      style={{ cursor }}
       onMouseEnter={(event) => {
         if (!disabled) {
           setActive(true);
@@ -81,7 +97,14 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         }
       }}
     >
-      <path ref={arcRef} opacity={0.5} d={data.path} fill={fill} />
+      <motion.path
+        ref={arcRef}
+        fill={fill}
+        transition={transition}
+        d={d}
+        initial={{ opacity: 0.5 }}
+        animate={{ opacity: active ? 0.7 : 0.5 }}
+      />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}

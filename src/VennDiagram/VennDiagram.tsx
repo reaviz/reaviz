@@ -50,7 +50,11 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       });
 
       return (
-        <CloneElement<VennSeriesProps> element={series} data={layoutData} disabled={disabled} />
+        <CloneElement<VennSeriesProps>
+          element={series}
+          data={layoutData}
+          disabled={disabled}
+        />
       );
     },
     [normalized, series]

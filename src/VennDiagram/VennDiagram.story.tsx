@@ -1,19 +1,30 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { VennDiagram } from './VennDiagram';
+import { number, object, text, select } from '@storybook/addon-knobs';
+import { schemes } from '../common/color';
+import { VennSeries } from './VennSeries';
 
 storiesOf('Charts/Venn Diagram', module)
-  .add('Simple', () => (
-    <VennDiagram
-      height={300}
-      width={300}
-      data={[
-        { key: ['A'], data: 12 },
-        { key: ['B'], data: 12 },
-        { key: ['A', 'B'], data: 2 }
-      ]}
-    />
-  ))
+  .add('Simple', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', [
+      { key: ['A'], data: 12 },
+      { key: ['B'], data: 12 },
+      { key: ['A', 'B'], data: 2 }
+    ]);
+
+    return (
+      <VennDiagram
+        height={height}
+        width={width}
+        data={data}
+        series={<VennSeries colorScheme={color} />}
+      />
+    );
+  })
   .add('Large Offsets', () => (
     <VennDiagram
       height={300}
@@ -50,6 +61,18 @@ storiesOf('Charts/Venn Diagram', module)
         { key: ['B'], data: 12 },
         { key: ['C'], data: 13 },
         { key: ['D'], data: 22 }
+      ]}
+    />
+  ))
+  .add('No Animation', () => (
+    <VennDiagram
+      height={300}
+      width={300}
+      series={<VennSeries animated={false} />}
+      data={[
+        { key: ['A'], data: 12 },
+        { key: ['B'], data: 12 },
+        { key: ['A', 'B'], data: 2 }
       ]}
     />
   ))

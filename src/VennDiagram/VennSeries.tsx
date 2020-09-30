@@ -65,8 +65,18 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           animate={{ opacity: 1, scale: 1 }}
           transition={transition}
         >
-          <CloneElement<VennArcProps> element={arc} data={d} fill={fill} disabled={disabled} />
-          <CloneElement<VennLabelProps> element={label} data={d} />
+          <CloneElement<VennArcProps>
+            element={arc}
+            data={d}
+            fill={fill}
+            disabled={disabled}
+            animated={animated}
+          />
+          <CloneElement<VennLabelProps>
+            element={label}
+            data={d}
+            animated={animated}
+          />
         </motion.g>
       );
     },
