@@ -13,14 +13,14 @@ export interface VennArcProps {
   onMouseLeave?: (e) => void;
 }
 
-export const VennArc: FC<VennArcProps> = ({
+export const VennArc: FC<Partial<VennArcProps>> = ({
   data,
   fill,
   disabled,
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
+  onMouseLeave = () => undefined
 }) => {
   const arcRef = useRef<any | null>(null);
   const [active, setActive] = useState<boolean>(false);
@@ -32,7 +32,7 @@ export const VennArc: FC<VennArcProps> = ({
           setActive(true);
           onMouseEnter({
             value: data.data,
-            nativeEvent: event,
+            nativeEvent: event
           });
         }
       }}
@@ -41,7 +41,7 @@ export const VennArc: FC<VennArcProps> = ({
           setActive(false);
           onMouseLeave({
             value: data.data,
-            nativeEvent: event,
+            nativeEvent: event
           });
         }
       }}
@@ -49,17 +49,12 @@ export const VennArc: FC<VennArcProps> = ({
         if (!disabled) {
           onClick({
             value: data.data,
-            nativeEvent: event,
+            nativeEvent: event
           });
         }
       }}
     >
-      <path
-        ref={arcRef}
-        opacity={.5}
-        d={data.path}
-        fill={fill}
-      />
+      <path ref={arcRef} opacity={0.5} d={data.path} fill={fill} />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}

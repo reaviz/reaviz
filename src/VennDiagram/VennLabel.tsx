@@ -9,11 +9,11 @@ export interface VennLabelProps {
   fill?: string;
 }
 
-export const VennLabel: FC<VennLabelProps> = ({
+export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
   fill = '#000',
   fontSize = 11,
-  fontFamily = 'sans-serif',
+  fontFamily = 'sans-serif'
 }) => {
   const key = data.data.sets.join(' | ');
   const size = calculateDimensions(key, fontFamily, fontSize);

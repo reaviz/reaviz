@@ -1,21 +1,25 @@
-import React, { FC, Fragment, useCallback } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { getColor } from '../common/color';
-import { VennArc } from './VennArc';
-import { VennLabel } from './VennLabel';
+import { VennArc, VennArcProps } from './VennArc';
+import { VennLabel, VennLabelProps } from './VennLabel';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION } from '../common/Motion';
+import { CloneElement } from '../common/utils';
 
 export interface VennSeriesProps {
   data: IVennLayout<any>[];
   colorScheme?: string;
   animated?: boolean;
+  label?: ReactElement<VennLabelProps, typeof VennLabel> | null;
+  arc?: ReactElement<VennArcProps, typeof VennArc> | null;
 }
 
-export const VennSeries: FC<VennSeriesProps> = ({
+export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   data,
   animated = true,
   colorScheme = 'cybertron',
+  arc = <VennArc />,
+  label = <VennLabel />
 }) => {
   const transition = animated ? {} : { type: false, delay: 0 };
 
@@ -26,7 +30,7 @@ export const VennSeries: FC<VennSeriesProps> = ({
         data,
         colorScheme,
         point,
-        index,
+        index
       });
 
       return (
@@ -36,8 +40,8 @@ export const VennSeries: FC<VennSeriesProps> = ({
           animate={{ opacity: 1, scale: 1 }}
           transition={transition}
         >
-          <VennArc data={d} fill={fill} />
-          <VennLabel data={d} />
+          <CloneElement<VennArcProps> element={arc} data={d} fill={fill} />
+          <CloneElement<VennLabelProps> element={label} data={d} />
         </motion.g>
       );
     },

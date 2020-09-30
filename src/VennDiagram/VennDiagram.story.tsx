@@ -10,7 +10,7 @@ storiesOf('Charts/Venn Diagram', module)
       data={[
         { key: ['A'], data: 12 },
         { key: ['B'], data: 12 },
-        { key: ['A', 'B'], data: 2 },
+        { key: ['A', 'B'], data: 2 }
       ]}
     />
   ))
@@ -21,7 +21,7 @@ storiesOf('Charts/Venn Diagram', module)
       data={[
         { key: ['A'], data: 50 },
         { key: ['B'], data: 12 },
-        { key: ['A', 'B'], data: 5 },
+        { key: ['A', 'B'], data: 5 }
       ]}
     />
   ))
@@ -37,7 +37,7 @@ storiesOf('Charts/Venn Diagram', module)
         { key: ['D', 'C'], data: 7 },
         { key: ['B', 'C', 'D'], data: 11 },
         { key: ['A', 'B'], data: 3 },
-        { key: ['A', 'B', 'C'], data: 5 },
+        { key: ['A', 'B', 'C'], data: 5 }
       ]}
     />
   ))
@@ -49,7 +49,7 @@ storiesOf('Charts/Venn Diagram', module)
         { key: ['A'], data: 22 },
         { key: ['B'], data: 12 },
         { key: ['C'], data: 13 },
-        { key: ['D'], data: 22 },
+        { key: ['D'], data: 22 }
       ]}
     />
   ))
@@ -59,7 +59,7 @@ storiesOf('Charts/Venn Diagram', module)
         data={[
           { key: ['A'], data: 12 },
           { key: ['B'], data: 12 },
-          { key: ['A', 'B'], data: 2 },
+          { key: ['A', 'B'], data: 2 }
         ]}
       />
     </div>

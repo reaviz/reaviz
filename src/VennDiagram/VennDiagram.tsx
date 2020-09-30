@@ -1,11 +1,12 @@
-import React, { FC, Fragment, useCallback } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback } from 'react';
 import {
   ChartContainer,
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '../common/containers';
 import { layout } from '@upsetjs/venn.js';
-import { VennSeries } from './VennSeries';
+import { VennSeries, VennSeriesProps } from './VennSeries';
+import { CloneElement } from '../common/utils';
 
 export interface VennDiagramData {
   key: string[];
@@ -14,6 +15,7 @@ export interface VennDiagramData {
 
 export interface VennDiagramProps extends ChartProps {
   data: VennDiagramData[];
+  series?: ReactElement<VennSeriesProps, typeof VennSeries> | null;
 }
 
 export const VennDiagram: FC<VennDiagramProps> = ({
@@ -23,6 +25,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   margins,
   className,
   data,
+  series = <VennSeries />
 }) => {
   const normalized = data.map((d) => ({ sets: d.key, size: d.data }));
 
@@ -30,12 +33,14 @@ export const VennDiagram: FC<VennDiagramProps> = ({
     (containerProps: ChartContainerChildProps) => {
       const layoutData = layout(normalized, {
         height: containerProps.height,
-        width: containerProps.width,
+        width: containerProps.width
       });
 
-      return <VennSeries data={layoutData} />;
+      return (
+        <CloneElement<VennSeriesProps> element={series} data={layoutData} />
+      );
     },
-    [normalized]
+    [normalized, series]
   );
 
   return (
