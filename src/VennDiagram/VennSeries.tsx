@@ -63,7 +63,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         point: d.data,
         index
       });
-
+      const arcFill = arc.props.fill || fill;
       const stroke = chroma(fill).darken(.5);
 
       return (
@@ -76,7 +76,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           <CloneElement<VennArcProps>
             element={arc}
             data={d}
-            fill={fill}
+            fill={arcFill}
             id={id}
             stroke={stroke}
             disabled={disabled}

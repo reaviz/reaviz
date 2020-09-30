@@ -78,6 +78,18 @@ storiesOf('Charts/Venn Diagram', module)
       ]}
     />
   ))
+  .add('No Fill', () => (
+    <VennDiagram
+      height={300}
+      width={300}
+      series={<VennSeries arc={<VennArc strokeWidth={5} fill="transparent" />} />}
+      data={[
+        { key: ['A'], data: 12 },
+        { key: ['B'], data: 12 },
+        { key: ['A', 'B'], data: 2 }
+      ]}
+    />
+  ))
   .add('No Animation', () => (
     <VennDiagram
       height={300}
