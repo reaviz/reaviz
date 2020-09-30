@@ -1,4 +1,4 @@
-import { Meta, Story, Props } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../src';
 
 <Meta title="Docs/Chart Types/Scatter Plot" />
@@ -7,7 +7,9 @@ import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../src';
 
 ---
 <br />
-<Story id="charts-scatter-plot-linear--simple" />
+<div className="doc-story">
+  <Story id="charts-scatter-plot-linear--simple" />
+</div>
 <br />
 
 A scatter plot is a type of mathematical diagram using Cartesian coordinates to
@@ -42,13 +44,13 @@ const MyChart = () => (
 
 ## API
 ### [ScatterPlot](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterPlot.tsx)
-<Props of={ScatterPlot} />
+<ArgsTable of={ScatterPlot} />
 
 ### [ScatterSeries](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterSeries/ScatterSeries.tsx)
-<Props of={ScatterSeries} />
+<ArgsTable of={ScatterSeries} />
 
 ### [ScatterPoint](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterSeries/ScatterPoint.tsx)
-<Props of={ScatterPoint} />
+<ArgsTable of={ScatterPoint} />
 
 ## Demo
 
