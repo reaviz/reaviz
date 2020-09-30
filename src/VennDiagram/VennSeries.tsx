@@ -9,6 +9,11 @@ import chroma from 'chroma-js';
 
 export interface VennSeriesProps {
   /**
+   * Id set by the parent.
+   */
+  id: string;
+
+  /**
    * The internal data object built by venn.js
    */
   data: IVennLayout<any>[];
@@ -41,8 +46,9 @@ export interface VennSeriesProps {
 
 export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   data,
+  id,
   animated = true,
-  disabled,
+  disabled = false,
   colorScheme = 'cybertron',
   arc = <VennArc />,
   label = <VennLabel />
@@ -72,6 +78,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             element={arc}
             data={d}
             fill={fill}
+            id={id}
             stroke={stroke}
             disabled={disabled}
             animated={animated}

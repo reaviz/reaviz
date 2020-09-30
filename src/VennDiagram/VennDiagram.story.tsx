@@ -4,6 +4,8 @@ import { VennDiagram } from './VennDiagram';
 import { number, object, text, select } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 import { VennSeries } from './VennSeries';
+import { VennArc } from './VennArc';
+import { Stripes } from '../common/Mask';
 
 storiesOf('Charts/Venn Diagram', module)
   .add('Simple', () => {
@@ -61,6 +63,18 @@ storiesOf('Charts/Venn Diagram', module)
         { key: ['B'], data: 12 },
         { key: ['C'], data: 13 },
         { key: ['D'], data: 22 }
+      ]}
+    />
+  ))
+  .add('Mask', () => (
+    <VennDiagram
+      height={300}
+      width={300}
+      series={<VennSeries arc={<VennArc mask={<Stripes />} strokeWidth={1} />} />}
+      data={[
+        { key: ['A'], data: 12 },
+        { key: ['B'], data: 12 },
+        { key: ['A', 'B'], data: 2 }
       ]}
     />
   ))

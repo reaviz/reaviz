@@ -54,6 +54,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
           element={series}
           data={layoutData}
           disabled={disabled}
+          id={containerProps.id}
         />
       );
     },

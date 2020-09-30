@@ -1,11 +1,17 @@
-import React, { FC, useRef, ReactElement, useState } from 'react';
+import React, { FC, useRef, ReactElement, useState, Fragment } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from '../common/utils';
 import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
+import { Mask, MaskProps } from '../common/Mask';
 
 export interface VennArcProps {
+  /**
+   * Id set by the parent.
+   */
+  id: string;
+
   /**
    * Whether the chart is animated or not.
    */
@@ -32,9 +38,24 @@ export interface VennArcProps {
   disabled?: boolean;
 
   /**
+   * Cursor for the arc hover.
+   */
+  cursor?: string;
+
+  /**
+   * Stroke on the arc.
+   */
+  strokeWidth?: number;
+
+  /**
    * Tooltip element.
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
+
+  /**
+   * Mask element for the arc.
+   */
+  mask: ReactElement<MaskProps, typeof Mask> | null;
 
   /**
    * Event for when the arc is clicked.
@@ -50,16 +71,6 @@ export interface VennArcProps {
    * Event for when the arc has mouse leave.
    */
   onMouseLeave: (event) => void;
-
-  /**
-   * Cursor for the arc hover.
-   */
-  cursor?: string;
-
-  /**
-   * Stroke on the arc.
-   */
-  strokeWidth?: number;
 }
 
 export const VennArc: FC<Partial<VennArcProps>> = ({
@@ -68,7 +79,9 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   disabled,
   animated,
   stroke,
-  strokeWidth = 5,
+  mask,
+  id,
+  strokeWidth = 3,
   cursor = 'initial',
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
@@ -78,6 +91,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const arcRef = useRef<any | null>(null);
   const [active, setActive] = useState<boolean>(false);
   const { transition, d } = useInterpolate({ animated, data });
+  const arcFill = mask ? `url(#mask-pattern-${id})` : fill;
 
   return (
     <g
@@ -111,7 +125,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
     >
       <motion.path
         ref={arcRef}
-        fill={fill}
+        fill={arcFill}
         strokeWidth={strokeWidth}
         stroke={stroke}
         transition={transition}
@@ -119,6 +133,16 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         initial={{ opacity: 0.6 }}
         animate={{ opacity: active ? 0.7 : 0.6 }}
       />
+      {mask && (
+        <Fragment>
+          <Mask id={`mask-${id}`} fill={`url(#gradient-${id})`} />
+          <CloneElement<MaskProps>
+            element={mask}
+            id={`mask-pattern-${id}`}
+            fill={stroke}
+          />
+        </Fragment>
+      )}
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
