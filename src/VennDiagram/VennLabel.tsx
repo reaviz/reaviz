@@ -21,7 +21,7 @@ export const VennLabel: FC<VennLabelProps> = ({
   const y = data.text.y + halfHeight;
 
   return (
-    <text x={x} y={y}>
+    <text x={x} y={y} style={{ pointerEvents: 'none' }}>
       {key}
     </text>
   );
