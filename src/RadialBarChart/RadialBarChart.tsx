@@ -2,7 +2,7 @@ import React, { Component, Fragment, ReactElement } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
-  buildShallowChartData,
+  buildShallowChartData
 } from '../common/data';
 import { scaleBand } from 'd3-scale';
 import { getYDomain } from '../common/utils/domains';
@@ -10,7 +10,7 @@ import { RadialBarSeries, RadialBarSeriesProps } from './RadialBarSeries';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps,
+  ChartContainerChildProps
 } from '../common/containers';
 import { CloneElement } from '../common/utils/children';
 import { RadialAxis, RadialAxisProps } from '../common/Axis/RadialAxis';
@@ -45,7 +45,7 @@ export class RadialBarChart extends Component<RadialBarChartProps> {
     innerRadius: 0.1,
     margins: 75,
     axis: <RadialAxis />,
-    series: <RadialBarSeries />,
+    series: <RadialBarSeries />
   };
 
   getScales = memoize(
@@ -69,7 +69,7 @@ export class RadialBarChart extends Component<RadialBarChartProps> {
       return {
         xScale,
         yScale,
-        data,
+        data
       };
     }
   );

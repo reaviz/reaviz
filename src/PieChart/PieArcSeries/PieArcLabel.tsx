@@ -24,7 +24,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
     fontFill: '#8F979F',
     fontSize: 11,
     fontFamily: 'sans-serif',
-    padding: '.35em',
+    padding: '.35em'
   };
 
   render() {
@@ -37,7 +37,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
       fontFill,
       format,
       fontFamily,
-      position,
+      position
     } = this.props;
 
     const text = format ? format(data.data) : formatValue(data.data.key);
@@ -58,7 +58,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{
-          duration: 0.1,
+          duration: 0.1
         }}
       >
         <title>{text}</title>
@@ -70,7 +70,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
           textAnchor={textAnchor}
           style={{
             shapeRendering: 'crispEdges',
-            transform: `translate3d(${posX}px,${posY}px, 0)`,
+            transform: `translate3d(${posX}px,${posY}px, 0)`
           }}
         >
           {text}

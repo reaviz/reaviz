@@ -6,5 +6,5 @@ import chroma from 'chroma-js';
  */
 export const schemes = {
   cybertron: chroma.scale(['#2d60e8', '#26efb5']).correctLightness().colors(8),
-  ...chroma.brewer,
+  ...chroma.brewer
 };

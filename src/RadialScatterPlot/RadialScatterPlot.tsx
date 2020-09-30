@@ -2,18 +2,18 @@ import React, { Component, Fragment, ReactElement } from 'react';
 import {
   ChartShallowDataShape,
   buildShallowChartData,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '../common/data';
 import { scaleTime } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
 import {
   RadialScatterSeries,
-  RadialScatterSeriesProps,
+  RadialScatterSeriesProps
 } from './RadialScatterSeries';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps,
+  ChartContainerChildProps
 } from '../common/containers';
 import { CloneElement } from '../common/utils/children';
 import { RadialAxisProps, RadialAxis } from '../common/Axis/RadialAxis';
@@ -47,7 +47,7 @@ export class RadialScatterPlot extends Component<RadialScatterPlotProps> {
     innerRadius: 80,
     margins: 75,
     axis: <RadialAxis />,
-    series: <RadialScatterSeries />,
+    series: <RadialScatterSeries />
   };
 
   getScales = memoize(
@@ -72,7 +72,7 @@ export class RadialScatterPlot extends Component<RadialScatterPlotProps> {
       return {
         yScale,
         xScale,
-        data,
+        data
       };
     }
   );

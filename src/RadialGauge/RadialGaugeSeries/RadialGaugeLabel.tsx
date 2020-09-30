@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import {
   ChartShallowDataShape,
-  ChartInternalDataTypes,
+  ChartInternalDataTypes
 } from '../../common/data';
 import { formatValue } from '../../common/utils/formatting';
 import css from './RadialGaugeLabel.module.scss';
@@ -31,7 +31,7 @@ export interface RadialGaugeLabelProps {
 
 export class RadialGaugeLabel extends PureComponent<RadialGaugeLabelProps> {
   static defaultProps: Partial<RadialGaugeLabelProps> = {
-    onClick: () => undefined,
+    onClick: () => undefined
   };
 
   render() {

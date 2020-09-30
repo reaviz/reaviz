@@ -104,7 +104,7 @@ export class RadialBar extends Component<RadialBarProps> {
     guide: <RadialGuideBar />,
     onClick: () => undefined,
     onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined,
+    onMouseLeave: () => undefined
   };
 
   previousEnter: any;
@@ -123,7 +123,7 @@ export class RadialBar extends Component<RadialBarProps> {
     const { onMouseEnter, data } = this.props;
     onMouseEnter({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   }
 
@@ -131,7 +131,7 @@ export class RadialBar extends Component<RadialBarProps> {
     const { onMouseLeave, data } = this.props;
     onMouseLeave({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   }
 
@@ -140,7 +140,7 @@ export class RadialBar extends Component<RadialBarProps> {
 
     onClick({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   }
 
@@ -193,12 +193,12 @@ export class RadialBar extends Component<RadialBarProps> {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: (index / barCount) * 0.5,
+        delay: (index / barCount) * 0.5
       };
     } else {
       return {
         type: false,
-        delay: 0,
+        delay: 0
       };
     }
   }
@@ -218,12 +218,12 @@ export class RadialBar extends Component<RadialBarProps> {
     const [yStart, yEnd] = yScale.domain();
     const exit = {
       ...data,
-      y: yStart,
+      y: yStart
     };
 
     const guidePath = this.getArc({
       ...data,
-      y: yEnd,
+      y: yEnd
     }) as string;
 
     return (
@@ -240,7 +240,7 @@ export class RadialBar extends Component<RadialBarProps> {
           custom={{
             enter: data,
             exit,
-            previousEnter,
+            previousEnter
           }}
           transition={transition}
           fill={fill}

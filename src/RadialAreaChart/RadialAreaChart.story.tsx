@@ -10,7 +10,7 @@ import {
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisArcSeries,
-  RadialAxisTickLine,
+  RadialAxisTickLine
 } from '../common/Axis';
 import { schemes } from '../common/color';
 import { RadialGradient } from '../common/Gradient';
@@ -31,7 +31,7 @@ storiesOf('Charts/Area Chart/Radial', module)
         'Tick Position',
         {
           inside: 'inside',
-          outside: 'outside',
+          outside: 'outside'
         },
         'inside'
       );
@@ -39,7 +39,7 @@ storiesOf('Charts/Area Chart/Radial', module)
         'Interpolation',
         {
           linear: 'linear',
-          smooth: 'smooth',
+          smooth: 'smooth'
         },
         'smooth'
       );

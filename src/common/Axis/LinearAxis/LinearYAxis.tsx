@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import {
   LinearAxisTickLabelProps,
-  LinearAxisTickLabel,
+  LinearAxisTickLabel
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLineProps,
-  LinearAxisTickLine,
+  LinearAxisTickLine
 } from './LinearAxisTickLine';
 import {
   LinearAxisTickSeriesProps,
-  LinearAxisTickSeries,
+  LinearAxisTickSeries
 } from './LinearAxisTickSeries';
 import { LinearAxisProps, LinearAxis } from './LinearAxis';
 
@@ -18,7 +18,7 @@ export class LinearYAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     ...LinearAxisTickLabel.defaultProps,
     rotation: false,
     position: 'start',
-    align: 'center',
+    align: 'center'
   };
 
   render() {
@@ -29,7 +29,7 @@ export class LinearYAxisTickLabel extends Component<LinearAxisTickLabelProps> {
 export class LinearYAxisTickLine extends Component<LinearAxisTickLineProps> {
   static defaultProps: Partial<LinearAxisTickLineProps> = {
     ...LinearAxisTickLine.defaultProps,
-    position: 'start',
+    position: 'start'
   };
 
   render() {
@@ -44,7 +44,7 @@ export class LinearYAxisTickSeries extends Component<
     ...LinearAxisTickSeries.defaultProps,
     tickSize: 30,
     line: <LinearYAxisTickLine />,
-    label: <LinearYAxisTickLabel />,
+    label: <LinearYAxisTickLabel />
   };
 
   render() {
@@ -60,7 +60,7 @@ export class LinearYAxis extends Component<LinearAxisProps> {
     roundDomains: false,
     type: 'value',
     position: 'start',
-    tickSeries: <LinearYAxisTickSeries />,
+    tickSeries: <LinearYAxisTickSeries />
   };
 
   render() {

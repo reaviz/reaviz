@@ -56,7 +56,7 @@ function parseMargins(margins?: Margins) {
     top,
     right,
     bottom,
-    left,
+    left
   };
 }
 
@@ -74,7 +74,7 @@ function calculateMarginOffsets(
 
   return {
     height: newHeight,
-    width: newWidth,
+    width: newWidth
   };
 }
 
@@ -86,7 +86,7 @@ export function getDimension({
   yOffset,
   height,
   width,
-  margins,
+  margins
 }: DimensionParameter | any): Dimensions {
   const parsedMargins = parseMargins(margins);
   const marginDims = calculateMarginOffsets(height, width, parsedMargins);
@@ -101,6 +101,6 @@ export function getDimension({
     chartWidth,
     chartHeight,
     xMargin: xOffset + parsedMargins.left,
-    yMargin: parsedMargins.top,
+    yMargin: parsedMargins.top
   };
 }

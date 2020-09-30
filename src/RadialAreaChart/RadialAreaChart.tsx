@@ -2,14 +2,14 @@ import React, { Fragment, ReactElement, FC, useCallback } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
-  buildShallowChartData,
+  buildShallowChartData
 } from '../common/data';
 import { scaleTime, scaleBand } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps,
+  ChartContainerChildProps
 } from '../common/containers';
 import { CloneElement } from '../common/utils/children';
 import { RadialAreaSeries, RadialAreaSeriesProps } from './RadialAreaSeries';
@@ -48,7 +48,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   innerRadius = 0.1,
   series = <RadialAreaSeries />,
   axis = <RadialAxis />,
-  margins = 75,
+  margins = 75
 }) => {
   const getScales = useCallback(
     (
@@ -83,7 +83,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       return {
         yScale,
         xScale,
-        result: d,
+        result: d
       };
     },
     []

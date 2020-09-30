@@ -4,12 +4,12 @@ import {
   sankeyLeft,
   sankeyRight,
   sankeyCenter,
-  sankeyJustify,
+  sankeyJustify
 } from 'd3-sankey';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps,
+  ChartContainerChildProps
 } from '../common/containers/ChartContainer';
 import { CloneElement } from '../common/utils/children';
 
@@ -23,7 +23,7 @@ const JUSTIFICATION = {
   justify: sankeyJustify,
   center: sankeyCenter,
   left: sankeyLeft,
-  right: sankeyRight,
+  right: sankeyRight
 };
 
 type Justification = 'justify' | 'center' | 'left' | 'right';
@@ -76,7 +76,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
     animated: true,
     justification: 'justify',
     nodeWidth: 15,
-    nodePadding: 10,
+    nodePadding: 10
   };
 
   state: SankeyState = { activeNodes: [], activeLinks: [] };
@@ -89,7 +89,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
         data: nodes,
         colorScheme,
         point: nodes[index],
-        index,
+        index
       });
     } else {
       return node.props.color;
@@ -216,19 +216,19 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
     const nodesCopy: Node[] = this.props.nodes.map((node, index) => ({
       id: node.props.id,
       title: node.props.title,
-      color: this.getNodeColor(node, index),
+      color: this.getNodeColor(node, index)
     }));
 
     const linksCopy: Link[] = this.props.links.map((link) => ({
       source: link.props.source,
       target: link.props.target,
-      value: link.props.value,
+      value: link.props.value
     }));
 
     const sankeyChart = sankey()
       .extent([
         [1, 1],
-        [chartWidth, chartHeight],
+        [chartWidth, chartHeight]
       ])
       .nodeWidth(nodeWidth)
       .nodePadding(nodePadding)
@@ -237,7 +237,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
 
     const { nodes, links } = sankeyChart({
       nodes: nodesCopy,
-      links: linksCopy,
+      links: linksCopy
     });
 
     return (

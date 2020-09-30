@@ -7,7 +7,7 @@ import {
   LinearYAxisTickSeries,
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel,
+  LinearXAxisTickLabel
 } from '../common/Axis';
 import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
 import { ChartTooltip } from '../common/Tooltip';
@@ -16,7 +16,7 @@ import {
   buildDataScales,
   CalendarView,
   addWeeksToDate,
-  weekDays,
+  weekDays
 } from './calendarUtils';
 import memoize from 'memoize-one';
 
@@ -63,7 +63,7 @@ export class CalendarHeatmap extends Component<CalendarHeatmapProps> {
           />
         }
       />
-    ),
+    )
   };
 
   getDataDomains = memoize(

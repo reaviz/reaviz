@@ -63,6 +63,6 @@ export function CloneElement<T = any>({
     ...element.props,
     ...newProps,
     children,
-    ref,
+    ref
   });
 }

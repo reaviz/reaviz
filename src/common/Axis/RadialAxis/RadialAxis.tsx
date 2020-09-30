@@ -1,11 +1,11 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import {
   RadialAxisTickSeries,
-  RadialAxisTickSeriesProps,
+  RadialAxisTickSeriesProps
 } from './RadialAxisTickSeries';
 import {
   RadialAxisArcSeries,
-  RadialAxisArcSeriesProps,
+  RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
 import { CloneElement } from '../../utils/children';
 
@@ -30,7 +30,7 @@ export class RadialAxis extends Component<RadialAxisProps, {}> {
     innerRadius: 10,
     type: 'value',
     arcs: <RadialAxisArcSeries />,
-    ticks: <RadialAxisTickSeries />,
+    ticks: <RadialAxisTickSeries />
   };
 
   render() {
@@ -41,7 +41,7 @@ export class RadialAxis extends Component<RadialAxisProps, {}> {
       height,
       width,
       innerRadius,
-      type,
+      type
     } = this.props;
     const outerRadius = Math.min(height, width) / 2;
 

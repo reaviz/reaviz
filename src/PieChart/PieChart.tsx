@@ -2,7 +2,7 @@ import React, { Component, ReactElement } from 'react';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps,
+  ChartContainerChildProps
 } from '../common/containers/ChartContainer';
 import { ChartDataShape } from '../common/data';
 import classNames from 'classnames';
@@ -47,7 +47,7 @@ export class PieChart extends Component<PieChartProps> {
         arcWidth={0.25}
         displayAllLabels={false}
       />
-    ),
+    )
   };
 
   getData = memoize((data: ChartDataShape[], explode: boolean) => {

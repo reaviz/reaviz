@@ -3,7 +3,7 @@ import { BarSeriesProps, BarSeries } from './BarSeries';
 import {
   ChartTooltip,
   TooltipTemplate,
-  TooltipArea,
+  TooltipArea
 } from '../../common/Tooltip';
 import { formatValue } from '../../common/utils/formatting';
 import { schemes } from '../../common/color';
@@ -18,13 +18,13 @@ export class HistogramBarSeries extends Component<BarSeriesProps> {
           <ChartTooltip
             followCursor={true}
             modifiers={{
-              offset: '5px, 5px',
+              offset: '5px, 5px'
             }}
             content={(point, color) => {
               const data = {
                 ...point,
                 x: `${formatValue(point.x0)} - ${formatValue(point.x1)}`,
-                value: point.y,
+                value: point.y
               };
 
               return <TooltipTemplate value={data} color={color} />;
@@ -32,7 +32,7 @@ export class HistogramBarSeries extends Component<BarSeriesProps> {
           />
         }
       />
-    ),
+    )
   };
 
   render() {

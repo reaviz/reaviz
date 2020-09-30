@@ -1,11 +1,11 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import {
   LinearAxisTickLabel,
-  LinearAxisTickLabelProps,
+  LinearAxisTickLabelProps
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLine,
-  LinearAxisTickLineProps,
+  LinearAxisTickLineProps
 } from './LinearAxisTickLine';
 import { formatValue } from '../../utils/formatting';
 import { getTicks, getMaxTicks } from '../../utils/ticks';
@@ -46,7 +46,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
   static defaultProps: Partial<LinearAxisTickSeriesProps> = {
     line: <LinearAxisTickLine />,
     label: <LinearAxisTickLabel />,
-    tickSize: 30,
+    tickSize: 30
   };
 
   /**
@@ -171,7 +171,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
             ? 'center'
             : scaledTick < midpoint
             ? 'start'
-            : 'end',
+            : 'end'
       };
     });
   }

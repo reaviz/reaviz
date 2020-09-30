@@ -93,15 +93,15 @@ export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
         followCursor={true}
         modifiers={{
           offset: {
-            offset: '0, 5px',
-          },
+            offset: '0, 5px'
+          }
         }}
       />
     ),
     width: 0,
     onClick: () => undefined,
     onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined,
+    onMouseLeave: () => undefined
   };
 
   link = createRef<SVGPathElement>();
@@ -148,7 +148,7 @@ export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
       index,
       opacity,
       style,
-      onClick,
+      onClick
     } = this.props;
     const enterProps = this.getEnter();
     const exitProps = this.getExit();
@@ -163,7 +163,7 @@ export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
           animate={enterProps}
           exit={exitProps}
           transition={{
-            duration: 0.5,
+            duration: 0.5
           }}
           stroke={this.getStroke()}
           strokeOpacity={opacity(active, disabled)}

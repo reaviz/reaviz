@@ -4,13 +4,13 @@ import {
   ChartShallowDataShape,
   ChartNestedDataShape,
   ChartInternalShallowDataShape,
-  ChartDataTypes,
+  ChartDataTypes
 } from './types';
 import {
   getMaxBigIntegerForNested,
   getMaxBigIntegerForShallow,
   normalizeValue,
-  normalizeValueForFormatting,
+  normalizeValueForFormatting
 } from './bigInteger';
 import bigInt from 'big-integer';
 
@@ -61,7 +61,7 @@ export function buildNestedChartData(
         result.push({
           key,
           metadata: point.metadata,
-          data: [],
+          data: []
         });
 
         idx = result.length - 1;
@@ -87,7 +87,7 @@ export function buildNestedChartData(
         x1: x,
         y,
         y0: isVertical ? 0 : y,
-        y1: y,
+        y1: y
       });
     }
   }
@@ -142,7 +142,7 @@ export function buildShallowChartData(
       k0: normalizeValue(point.key, maxBigInteger),
       k1: normalizeValue(k1, maxBigInteger),
       v0: normalizeValue(isTuple ? point.data[0] : 0, maxBigInteger),
-      v1: normalizeValue(isTuple ? point.data[1] : point.data, maxBigInteger),
+      v1: normalizeValue(isTuple ? point.data[1] : point.data, maxBigInteger)
     };
 
     const xProp = isVertical ? 'k' : 'v';
@@ -158,7 +158,7 @@ export function buildShallowChartData(
       x1: props[`${xProp}1`],
       y: props[`${yProp}1`],
       y0: props[`${yProp}0`],
-      y1: props[`${yProp}1`],
+      y1: props[`${yProp}1`]
     });
   }
 

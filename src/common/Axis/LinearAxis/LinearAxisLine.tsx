@@ -25,11 +25,11 @@ export class LinearAxisLine extends Component<
 > {
   static defaultProps: Partial<LinearAxisLineProps> = {
     strokeColor: '#8F979F',
-    strokeWidth: 1,
+    strokeWidth: 1
   };
 
   state: LinearAxisLineState = {
-    id: (axisLineId++).toString(),
+    id: (axisLineId++).toString()
   };
 
   render() {
@@ -38,7 +38,7 @@ export class LinearAxisLine extends Component<
       strokeGradient,
       scale,
       orientation,
-      className,
+      className
     } = this.props;
     const { id } = this.state;
     const [range0, range1] = scale.range();

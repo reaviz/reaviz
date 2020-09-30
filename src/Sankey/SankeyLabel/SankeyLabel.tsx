@@ -23,7 +23,7 @@ export class SankeyLabel extends Component<SankeyLabelProps> {
     fill: '#fff',
     location: 'outside', // TODO: implement for inside
     opacity: (active) => (active ? 1 : 0.5),
-    visible: true,
+    visible: true
   };
 
   render() {
@@ -35,14 +35,14 @@ export class SankeyLabel extends Component<SankeyLabelProps> {
       node,
       opacity,
       padding,
-      visible,
+      visible
     } = this.props;
 
     const nodePositions = {
       x0: node && node.x0 ? node.x0 : 0,
       y0: node && node.y0 ? node.y0 : 0,
       x1: node && node.x1 ? node.x1 : 0,
-      y1: node && node.y1 ? node.y1 : 0,
+      y1: node && node.y1 ? node.y1 : 0
     };
     const width = chartWidth || 0;
     const showRightSide = nodePositions.x0 < width / 2;

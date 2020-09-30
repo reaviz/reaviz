@@ -150,8 +150,8 @@ export const ChartContainer: FC<ChartContainerProps> = ({
         height,
         width,
         yOffset,
-        xOffset,
-      }),
+        xOffset
+      })
     }),
     [
       chartSized,
@@ -163,7 +163,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
       height,
       width,
       yOffset,
-      xOffset,
+      xOffset
     ]
   );
 

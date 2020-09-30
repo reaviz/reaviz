@@ -4,7 +4,7 @@ import {
   AreaChartProps,
   AreaSeries,
   Line,
-  AreaSeriesProps,
+  AreaSeriesProps
 } from '../AreaChart';
 
 export type LineChartProps = AreaChartProps;
@@ -13,7 +13,7 @@ export class LineSeries extends Component<AreaSeriesProps> {
   static defaultProps: Partial<AreaSeriesProps> = {
     ...AreaSeries.defaultProps,
     area: null,
-    line: <Line strokeWidth={3} />,
+    line: <Line strokeWidth={3} />
   };
 
   render() {
@@ -24,7 +24,7 @@ export class LineSeries extends Component<AreaSeriesProps> {
 export class LineChart extends Component<LineChartProps> {
   static defaultProps: Partial<LineChartProps> = {
     ...AreaChart.defaultProps,
-    series: <LineSeries />,
+    series: <LineSeries />
   };
 
   render() {

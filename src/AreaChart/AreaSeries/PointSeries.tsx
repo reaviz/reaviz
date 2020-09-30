@@ -4,7 +4,7 @@ import { CloneElement } from '../../common/utils';
 import {
   ScatterPoint,
   ScatterSeries,
-  ScatterPointProps,
+  ScatterPointProps
 } from '../../ScatterPlot';
 import css from './PointSeries.module.scss';
 import isEqual from 'react-fast-compare';
@@ -27,7 +27,7 @@ export interface PointSeriesProps {
 export class PointSeries extends Component<PointSeriesProps> {
   static defaultProps: Partial<PointSeriesProps> = {
     show: 'hover',
-    point: <ScatterPoint />,
+    point: <ScatterPoint />
   };
 
   isVisible(point: ChartInternalShallowDataShape, index: number) {
@@ -63,7 +63,7 @@ export class PointSeries extends Component<PointSeriesProps> {
       color,
       height,
       width,
-      id,
+      id
     } = this.props;
 
     return (

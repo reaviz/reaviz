@@ -12,7 +12,7 @@ export const RadialGuideBar: FC<Partial<RadialGuideBarProps>> = ({
   active,
   path,
   fill = '#eee',
-  opacity = 0.2,
+  opacity = 0.2
 }) => (
   <motion.path
     d={path}
@@ -22,7 +22,7 @@ export const RadialGuideBar: FC<Partial<RadialGuideBarProps>> = ({
     animate={active ? 'visible' : 'hidden'}
     variants={{
       hidden: { opacity: 0 },
-      visible: { opacity },
+      visible: { opacity }
     }}
   />
 );

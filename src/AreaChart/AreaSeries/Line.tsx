@@ -2,16 +2,16 @@ import React, { createRef, Fragment, PureComponent } from 'react';
 import { line } from 'd3-shape';
 import {
   interpolate,
-  InterpolationTypes,
+  InterpolationTypes
 } from '../../common/utils/interpolation';
 import {
   ChartInternalDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '../../common/data';
 import { calculateShowStroke } from '../../common/utils/stroke';
 import {
   constructFunctionProps,
-  PropFunctionTypes,
+  PropFunctionTypes
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 
@@ -84,7 +84,7 @@ interface LineState {
 export class Line extends PureComponent<LineProps, LineState> {
   static defaultProps: Partial<LineProps> = {
     showZeroStroke: true,
-    strokeWidth: 3,
+    strokeWidth: 3
   };
 
   state: LineState = {};
@@ -93,7 +93,7 @@ export class Line extends PureComponent<LineProps, LineState> {
   componentDidMount() {
     if (this.ghostPathRef.current) {
       this.setState({
-        pathLength: this.ghostPathRef.current!.getTotalLength(),
+        pathLength: this.ghostPathRef.current!.getTotalLength()
       });
     }
   }
@@ -105,7 +105,7 @@ export class Line extends PureComponent<LineProps, LineState> {
         prevProps.width !== this.props.width)
     ) {
       this.setState({
-        pathLength: this.ghostPathRef.current!.getTotalLength(),
+        pathLength: this.ghostPathRef.current!.getTotalLength()
       });
     }
   }
@@ -130,7 +130,7 @@ export class Line extends PureComponent<LineProps, LineState> {
       x1: xScale(item.x) - xScale(item.x1),
       y: yScale(item.y),
       y0: yScale(item.y0),
-      y1: yScale(item.y1),
+      y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
   }
 
@@ -147,7 +147,7 @@ export class Line extends PureComponent<LineProps, LineState> {
     return {
       d: linePath === null ? undefined : linePath,
       strokeDashoffset: 0,
-      strokeDasharray: strokeDasharray,
+      strokeDasharray: strokeDasharray
     };
   }
 
@@ -163,7 +163,7 @@ export class Line extends PureComponent<LineProps, LineState> {
         x1: 0,
         y: maxY,
         y1: maxY,
-        y0: maxY,
+        y0: maxY
       })) as ChartInternalShallowDataShape[];
     } else {
       coords = this.getCoords();
@@ -181,7 +181,7 @@ export class Line extends PureComponent<LineProps, LineState> {
     return {
       d: linePath === null ? undefined : linePath,
       strokeDasharray,
-      strokeDashoffset,
+      strokeDashoffset
     };
   }
 
@@ -191,12 +191,12 @@ export class Line extends PureComponent<LineProps, LineState> {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: hasArea ? 0 : index * 0.05,
+        delay: hasArea ? 0 : index * 0.05
       };
     } else {
       return {
         type: false,
-        delay: 0,
+        delay: 0
       };
     }
   }
@@ -224,7 +224,7 @@ export class Line extends PureComponent<LineProps, LineState> {
             transition={transition}
             custom={{
               enter,
-              exit,
+              exit
             }}
           />
         )}

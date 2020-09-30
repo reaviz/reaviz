@@ -8,7 +8,7 @@ export function getGroupScale({
   dimension,
   padding,
   data,
-  direction = 'vertical',
+  direction = 'vertical'
 }) {
   const domain = uniqueBy(data, (d) => d.key);
   const spacing = domain.length / (dimension / padding + 1);

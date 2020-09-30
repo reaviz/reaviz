@@ -4,7 +4,7 @@ import {
   AreaChartProps,
   AreaSeries,
   Area,
-  Line,
+  Line
 } from '../AreaChart';
 import { ChartShallowDataShape } from '../common/data';
 import { PointSeries } from '../AreaChart';
@@ -12,7 +12,7 @@ import {
   LinearYAxisTickSeries,
   LinearYAxis,
   LinearXAxis,
-  LinearXAxisTickSeries,
+  LinearXAxisTickSeries
 } from '../common/Axis/LinearAxis';
 import { GradientStop, Gradient } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
@@ -36,7 +36,7 @@ export class AreaSparklineChart extends Component<AreaSparklineChartProps, {}> {
               <Gradient
                 stops={[
                   <GradientStop offset="10%" stopOpacity={0} key="start" />,
-                  <GradientStop offset="80%" stopOpacity={1} key="stop" />,
+                  <GradientStop offset="80%" stopOpacity={1} key="stop" />
                 ]}
               />
             }
@@ -60,7 +60,7 @@ export class AreaSparklineChart extends Component<AreaSparklineChartProps, {}> {
         axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
-    ),
+    )
   };
 
   render() {

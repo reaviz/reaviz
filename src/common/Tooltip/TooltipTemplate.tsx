@@ -35,7 +35,7 @@ interface TooltipTemplateProps {
 export const TooltipTemplate: FC<TooltipTemplateProps> = ({
   value,
   color,
-  className,
+  className
 }) => {
   if (!value) {
     return null;

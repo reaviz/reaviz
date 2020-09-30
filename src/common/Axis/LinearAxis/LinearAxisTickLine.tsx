@@ -15,7 +15,7 @@ export class LinearAxisTickLine extends PureComponent<LinearAxisTickLineProps> {
   static defaultProps: Partial<LinearAxisTickLineProps> = {
     strokeColor: '#8F979F',
     strokeWidth: 1,
-    size: 5,
+    size: 5
   };
 
   positionTick() {
@@ -34,7 +34,7 @@ export class LinearAxisTickLine extends PureComponent<LinearAxisTickLineProps> {
       x1: isVertical ? end : 0,
       x2: isVertical ? start : 0,
       y1: isVertical ? 0 : start,
-      y2: isVertical ? 0 : end,
+      y2: isVertical ? 0 : end
     };
   }
 

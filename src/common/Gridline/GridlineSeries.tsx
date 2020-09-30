@@ -54,7 +54,7 @@ export interface GridlineSeriesProps {
 export class GridlineSeries extends Component<GridlineSeriesProps> {
   static defaultProps: Partial<GridlineSeriesProps> = {
     line: <Gridline />,
-    stripe: null,
+    stripe: null
   };
 
   getGridlines() {
@@ -74,7 +74,7 @@ export class GridlineSeries extends Component<GridlineSeriesProps> {
         xAxis.type,
         getMaxTicks(xAxis.tickSeries.props.tickSize, width),
         xAxis.tickSeries.props.interval
-      ),
+      )
     };
   }
 

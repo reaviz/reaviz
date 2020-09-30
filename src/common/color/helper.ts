@@ -50,12 +50,12 @@ export const getColor = (props: Partial<ColorHelperProps>) => {
     isMultiSeries,
     domain,
     key,
-    scale,
+    scale
   } = {
     attribute: 'key',
     isMultiSeries: false,
     scale: scaleOrdinal,
-    ...props,
+    ...props
   };
 
   if (typeof colorScheme === 'string' && schemes[colorScheme]) {

@@ -1,7 +1,7 @@
 import React, { Component, ReactElement } from 'react';
 import {
   LinearAxisTickLine,
-  LinearAxisTickLineProps,
+  LinearAxisTickLineProps
 } from './LinearAxisTickLine';
 
 export interface LinearAxisTickLabelProps {
@@ -30,7 +30,7 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     fontFamily: 'sans-serif',
     rotation: true,
     padding: 0,
-    align: 'center',
+    align: 'center'
   };
 
   getAlign() {
@@ -76,7 +76,7 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
       typeof padding === 'number'
         ? {
             fromAxis: padding as number,
-            alongAxis: padding as number,
+            alongAxis: padding as number
           }
         : (padding as { fromAxis: number; alongAxis: number });
 
@@ -100,7 +100,7 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     const horz = orientation === 'horizontal';
     return {
       [horz ? 'x' : 'y']: offset2,
-      [horz ? 'y' : 'x']: offset1,
+      [horz ? 'y' : 'x']: offset1
     };
   }
 
@@ -143,7 +143,7 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     return {
       transform,
       textAnchor: this.props.textAnchor || textAnchor,
-      alignmentBaseline,
+      alignmentBaseline
     };
   }
 
@@ -154,7 +154,7 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
       fullText,
       fontSize,
       fontFamily,
-      className,
+      className
     } = this.props;
     const { x, y } = this.getOffset();
     const textPosition = this.getTextPosition();

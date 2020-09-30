@@ -7,14 +7,14 @@ import moment from 'moment';
 import {
   RadialAxisTickSeries,
   RadialAxisTick,
-  RadialAxisTickLabel,
+  RadialAxisTickLabel
 } from './RadialAxisTickSeries';
 
 const xScale = (() => {
   const date = moment().subtract(1, 'day').startOf('day');
 
   const data = range(13).map((i) => ({
-    key: date.clone().add(i, 'hour').toDate(),
+    key: date.clone().add(i, 'hour').toDate()
   }));
 
   const domain = extent<{ key: Date }, Date>(data, (d) => d.key) as Date[];

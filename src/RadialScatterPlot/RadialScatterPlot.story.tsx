@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import {
   medDateData,
   largeSignalChartData,
-  medSignalChartData,
+  medSignalChartData
 } from '../../demo';
 import { number, boolean, object, color, select } from '@storybook/addon-knobs';
 import { RadialScatterPlot } from './RadialScatterPlot';
@@ -13,7 +13,7 @@ import {
   RadialAxisTickSeries,
   RadialAxisArcSeries,
   RadialAxisTick,
-  RadialAxisTickLine,
+  RadialAxisTickLine
 } from '../common/Axis/RadialAxis';
 
 storiesOf('Charts/Scatter Plot/Radial', module)
@@ -30,7 +30,7 @@ storiesOf('Charts/Scatter Plot/Radial', module)
         'Tick Position',
         {
           inside: 'inside',
-          outside: 'outside',
+          outside: 'outside'
         },
         'inside'
       );
@@ -80,7 +80,7 @@ storiesOf('Charts/Scatter Plot/Radial', module)
         'Tick Position',
         {
           inside: 'inside',
-          outside: 'outside',
+          outside: 'outside'
         },
         'inside'
       );
@@ -135,7 +135,7 @@ storiesOf('Charts/Scatter Plot/Radial', module)
         'Tick Position',
         {
           inside: 'inside',
-          outside: 'outside',
+          outside: 'outside'
         },
         'inside'
       );
@@ -163,7 +163,7 @@ storiesOf('Charts/Scatter Plot/Radial', module)
                           style={{
                             fill,
                             stroke: '#FF004D',
-                            strokeWidth: 5,
+                            strokeWidth: 5
                           }}
                         />
                       </g>

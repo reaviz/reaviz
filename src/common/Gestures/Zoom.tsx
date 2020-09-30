@@ -2,7 +2,7 @@ import React, { Component, createRef } from 'react';
 import { toggleTextSelection } from '../utils/selection';
 import {
   getPointFromMatrix,
-  isZoomLevelGoingOutOfBounds,
+  isZoomLevelGoingOutOfBounds
 } from '../utils/position';
 import { getTouchPoints } from './pinchUtils';
 import {
@@ -11,7 +11,7 @@ import {
   transform,
   translate,
   applyToPoint,
-  inverse,
+  inverse
 } from 'transformation-matrix';
 
 interface ZoomGestureProps {
@@ -44,7 +44,7 @@ export class Zoom extends Component<ZoomGestureProps> {
     scale: 1,
     scaleFactor: 0.1,
     minZoom: 1,
-    maxZoom: 10,
+    maxZoom: 10
   };
 
   firstTouch: any;
@@ -60,7 +60,7 @@ export class Zoom extends Component<ZoomGestureProps> {
     if (!disabled && ref) {
       if (!disableMouseWheel) {
         ref.addEventListener('mousewheel', this.onMouseWheel, {
-          passive: false,
+          passive: false
         });
       }
 
@@ -95,7 +95,7 @@ export class Zoom extends Component<ZoomGestureProps> {
       {
         d: matrix.a,
         scaleFactorMin: minZoom,
-        scaleFactorMax: maxZoom,
+        scaleFactorMax: maxZoom
       },
       step
     );
@@ -116,7 +116,7 @@ export class Zoom extends Component<ZoomGestureProps> {
           scale: newMatrix.a,
           x: newMatrix.e,
           y: newMatrix.f,
-          nativeEvent,
+          nativeEvent
         });
       });
     }
@@ -129,7 +129,7 @@ export class Zoom extends Component<ZoomGestureProps> {
       disableMouseWheel,
       requireZoomModifier,
       matrix,
-      onZoomEnd,
+      onZoomEnd
     } = this.props;
 
     if (disableMouseWheel) {
@@ -181,7 +181,7 @@ export class Zoom extends Component<ZoomGestureProps> {
 
       const point = applyToPoint(inverse(this.props.matrix), {
         x: this.firstTouch.midpoint.x,
-        y: this.firstTouch.midpoint.y,
+        y: this.firstTouch.midpoint.y
       }) as { x: number; y: number };
 
       if (point.x && point.y) {

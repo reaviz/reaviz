@@ -5,7 +5,7 @@ import { StackedNormalizedAreaSeries } from './AreaSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
+  LinearYAxisTickLabel
 } from '../common/Axis/LinearAxis';
 
 interface StackedNormalizedAreaChartProps extends AreaChartProps {
@@ -32,7 +32,7 @@ export class StackedNormalizedAreaChart extends Component<
           />
         }
       />
-    ),
+    )
   };
 
   render() {

@@ -3,7 +3,7 @@ import { BarSeries, BarSeriesProps } from '../BarChart';
 import { LinearGaugeBar, LinearGaugeBarProps } from './LinearGaugeBar';
 import {
   LinearGaugeOuterBar,
-  LinearGaugeOuterBarProps,
+  LinearGaugeOuterBarProps
 } from './LinearGaugeOuterBar';
 import { CloneElement } from '../common/utils';
 
@@ -36,7 +36,7 @@ export interface LinearGaugeSeriesProps extends Omit<BarSeriesProps, 'bar'> {
 
 const defaultProps: Partial<LinearGaugeSeriesProps> = {
   outerBar: <LinearGaugeOuterBar />,
-  bar: <LinearGaugeBar />,
+  bar: <LinearGaugeBar />
 };
 
 export const LinearGaugeSeries: FC<Partial<LinearGaugeSeriesProps>> = ({

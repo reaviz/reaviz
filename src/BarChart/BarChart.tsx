@@ -6,7 +6,7 @@ import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis,
+  LinearAxis
 } from '../common/Axis';
 import { BarSeries, BarSeriesProps } from './BarSeries';
 import {
@@ -18,7 +18,7 @@ import {
   ChartShallowDataShape,
   buildNestedChartData,
   buildShallowChartData,
-  StackTypes,
+  StackTypes
 } from '../common/data';
 import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
 import {
@@ -27,14 +27,14 @@ import {
   getGroupScale,
   getInnerScale,
   getMarimekkoScale,
-  getMarimekkoGroupScale,
+  getMarimekkoGroupScale
 } from '../common/scales';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
 import css from './BarChart.module.scss';
 import {
   ChartContainer,
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '../common/containers/ChartContainer';
 import bind from 'memoize-bind';
 import { CloneElement } from '../common/utils/children';
@@ -88,7 +88,7 @@ export class BarChart extends Component<BarChartProps> {
     yAxis: <LinearYAxis type="value" />,
     series: <BarSeries />,
     gridlines: <GridlineSeries />,
-    brush: null,
+    brush: null
   };
 
   getScalesAndData(chartHeight: number, chartWidth: number) {
@@ -212,12 +212,12 @@ export class BarChart extends Component<BarChartProps> {
       width,
       padding: series.props.padding,
       data,
-      valueScale: keyScale,
+      valueScale: keyScale
     });
 
     return {
       keyScale,
-      groupScale,
+      groupScale
     };
   }
 
@@ -230,19 +230,19 @@ export class BarChart extends Component<BarChartProps> {
       dimension: isVertical ? width : height,
       direction: layout,
       padding: groupPadding,
-      data,
+      data
     });
 
     const keyScale = getInnerScale({
       groupScale: groupScale,
       padding: series.props.padding,
       data,
-      prop: isVertical ? 'x' : 'y',
+      prop: isVertical ? 'x' : 'y'
     });
 
     return {
       groupScale,
-      keyScale,
+      keyScale
     };
   }
 
@@ -257,7 +257,7 @@ export class BarChart extends Component<BarChartProps> {
       padding: series.props.padding,
       domain: axis.props.domain,
       isMultiSeries,
-      isDiverging: this.getIsDiverging(),
+      isDiverging: this.getIsDiverging()
     });
   }
 
@@ -272,7 +272,7 @@ export class BarChart extends Component<BarChartProps> {
       data,
       domain: axis.props.domain,
       isMultiSeries,
-      isDiverging: this.getIsDiverging(),
+      isDiverging: this.getIsDiverging()
     });
   }
 
@@ -284,7 +284,7 @@ export class BarChart extends Component<BarChartProps> {
       yAxis,
       brush,
       gridlines,
-      secondaryAxis,
+      secondaryAxis
     } = this.props;
     const { xScale, xScale1, yScale, data } = this.getScalesAndData(
       chartHeight,
@@ -373,7 +373,7 @@ export class BarChart extends Component<BarChartProps> {
       className,
       series,
       xAxis,
-      yAxis,
+      yAxis
     } = this.props;
 
     return (

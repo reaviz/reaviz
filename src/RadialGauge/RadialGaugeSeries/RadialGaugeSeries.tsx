@@ -5,7 +5,7 @@ import { RadialGaugeArcProps, RadialGaugeArc } from './RadialGaugeArc';
 import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
 import {
   RadialGaugeValueLabel,
-  RadialGaugeValueLabelProps,
+  RadialGaugeValueLabelProps
 } from './RadialGaugeValueLabel';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { range, min } from 'd3-array';
@@ -89,7 +89,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
     valueLabel: <RadialGaugeValueLabel />,
     colorScheme: ['#00ECB1'],
     padding: 10,
-    minGaugeWidth: 50,
+    minGaugeWidth: 50
   };
 
   getWidths() {
@@ -118,7 +118,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
       xScale,
       yScale,
       width: xScale.bandwidth(),
-      height: yScale.bandwidth(),
+      height: yScale.bandwidth()
     };
   }
 
@@ -141,7 +141,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
       label,
       valueLabel,
       padding,
-      colorScheme,
+      colorScheme
     } = this.props;
 
     const dataEndAngle = scale(point.data as number);
@@ -150,7 +150,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
     const outerRadius =
       (min([
         width - padding,
-        height - baselineLabelHeight - padding,
+        height - baselineLabelHeight - padding
       ]) as number) /
         2 -
       10;
@@ -185,7 +185,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
             data,
             colorScheme,
             point,
-            index,
+            index
           })}
         />
         {valueLabel && (

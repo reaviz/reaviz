@@ -7,7 +7,7 @@ import { ScatterPointProps } from '../../ScatterPlot';
 export class StackedAreaSeries extends Component<AreaSeriesProps, {}> {
   static defaultProps: Partial<AreaSeriesProps> = {
     ...AreaSeries.defaultProps,
-    type: 'stacked',
+    type: 'stacked'
   };
 
   render() {

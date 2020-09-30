@@ -19,7 +19,7 @@ export class RadialAxisTickSeries extends Component<RadialAxisTickSeriesProps> {
   static defaultProps: Partial<RadialAxisTickSeriesProps> = {
     count: 12,
     type: 'time',
-    tick: <RadialAxisTick />,
+    tick: <RadialAxisTick />
   };
 
   render() {
@@ -31,7 +31,7 @@ export class RadialAxisTickSeries extends Component<RadialAxisTickSeriesProps> {
       tickValues,
       innerRadius,
       interval,
-      type,
+      type
     } = this.props;
     const ticks = getTicks(scale, tickValues, type, count, interval || count);
 

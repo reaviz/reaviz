@@ -54,7 +54,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   data,
   interpolation,
   strokeWidth = 2,
-  animated = true,
+  animated = true
 }) => {
   const getPath = useCallback(
     (preData: ChartInternalShallowDataShape[]) => {
@@ -77,7 +77,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
         ? { ...DEFAULT_TRANSITION }
         : {
             type: false,
-            delay: 0,
+            delay: 0
           },
     [animated]
   );
@@ -87,7 +87,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   const enter = useMemo(
     () => ({
       d: getPath(data!),
-      opacity: 1,
+      opacity: 1
     }),
     [data, getPath]
   );
@@ -96,7 +96,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
     const [yStart] = yScale.domain();
     return {
       d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
-      opacity: 0,
+      opacity: 0
     };
   }, [data, yScale, getPath]);
 
@@ -104,7 +104,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
     <MotionPath
       custom={{
         enter,
-        exit,
+        exit
       }}
       transition={transition}
       className={className}

@@ -74,7 +74,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   xScale,
   innerRadius,
   interpolation,
-  gradient = <RadialGradient />,
+  gradient = <RadialGradient />
 }) => {
   const transition = useMemo(
     () =>
@@ -82,7 +82,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
         ? { ...DEFAULT_TRANSITION }
         : {
             type: false,
-            delay: 0,
+            delay: 0
           },
     [animated]
   );
@@ -117,7 +117,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   const enter = useMemo(
     () => ({
       d: getPath(data!),
-      opacity: 1,
+      opacity: 1
     }),
     [data, getPath]
   );
@@ -126,7 +126,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
     const [yStart] = yScale.domain();
     return {
       d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
-      opacity: 0,
+      opacity: 0
     };
   }, [data, getPath, yScale]);
 
@@ -137,7 +137,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       <MotionPath
         custom={{
           enter,
-          exit,
+          exit
         }}
         transition={transition}
         pointerEvents="none"

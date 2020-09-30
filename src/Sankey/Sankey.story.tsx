@@ -8,7 +8,7 @@ import {
   sankeyNodes,
   sankeyLinks,
   simpleSankeyNodes,
-  simpleSankeyLinks,
+  simpleSankeyLinks
 } from '../../demo';
 import { select, object, number } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
@@ -25,7 +25,7 @@ const colorScheme = chroma
     '55BF3B',
     'DF5353',
     '7798BF',
-    'aaeeee',
+    'aaeeee'
   ])
   .mode('lch')
   .colors(sankeyNodes.length);
@@ -98,7 +98,7 @@ storiesOf('Charts/Sankey', module)
           Left: 'left',
           Center: 'center',
           Right: 'right',
-          Justified: 'justify',
+          Justified: 'justify'
         },
         'left'
       );
@@ -125,7 +125,7 @@ let filtered = false;
 const DemoStory = () => {
   const [state, setState] = useState({
     nodes: [...simpleSankeyNodes],
-    links: [...simpleSankeyLinks],
+    links: [...simpleSankeyLinks]
   });
 
   const onClick = (node) => {
@@ -135,7 +135,7 @@ const DemoStory = () => {
       filtered = false;
       setState({
         nodes: simpleSankeyNodes,
-        links: simpleSankeyLinks,
+        links: simpleSankeyLinks
       });
     } else {
       filtered = true;
@@ -144,9 +144,9 @@ const DemoStory = () => {
           node,
           ...links
             .filter((n) => n.source === node.id)
-            .map((n) => simpleSankeyNodes.find((nn) => nn.id === n.target)),
+            .map((n) => simpleSankeyNodes.find((nn) => nn.id === n.target))
         ],
-        links: links.filter((l) => l.source === node.id),
+        links: links.filter((l) => l.source === node.id)
       });
     }
   };

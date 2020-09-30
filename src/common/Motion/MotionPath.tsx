@@ -9,7 +9,7 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
   const spring = useSpring(prevPath, {
     ...DEFAULT_TRANSITION,
     from: 0,
-    to: 1,
+    to: 1
   });
 
   useEffect(() => {

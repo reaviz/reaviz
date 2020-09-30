@@ -90,7 +90,7 @@ export const getPositionForTarget = ({ target, clientX, clientY }) => {
   const { top, left } = target.getBoundingClientRect();
   return {
     x: clientX - left - target.clientLeft,
-    y: clientY - top - target.clientTop,
+    y: clientY - top - target.clientTop
   };
 };
 
@@ -119,7 +119,7 @@ export const getPointFromMatrix = (event, matrix) => {
 export const getLimitMatrix = (height: number, width: number, matrix) =>
   applyToPoints(matrix, [
     { x: 0, y: 0 },
-    { x: width, y: height },
+    { x: width, y: height }
   ]);
 
 /**

@@ -4,7 +4,7 @@ import React, {
   FC,
   useRef,
   useMemo,
-  useEffect,
+  useEffect
 } from 'react';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../../../common/Tooltip';
@@ -36,14 +36,14 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
   onClick = () => undefined,
   onMouseEnter = () => undefined,
   onMouseLeave = () => undefined,
-  tooltip = <ChartTooltip />,
+  tooltip = <ChartTooltip />
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
   const prevEnter = useRef<any | null>(null);
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(() => (active ? chroma(color).brighten(0.5) : color), [
     color,
-    active,
+    active
   ]);
 
   const exit = useMemo(() => {
@@ -53,7 +53,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
     return {
       ...data,
       startAngle,
-      endAngle,
+      endAngle
     };
   }, [data, animated]);
 
@@ -62,7 +62,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
       animated
         ? { ...DEFAULT_TRANSITION }
         : {
-            delay: 0,
+            delay: 0
           },
     [animated]
   );
@@ -78,7 +78,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
   const spring = useSpring(prevPath, {
     ...DEFAULT_TRANSITION,
     from: 0,
-    to: 1,
+    to: 1
   });
 
   useEffect(() => {
@@ -101,7 +101,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
             setActive(true);
             onMouseEnter({
               value: data.data,
-              nativeEvent: event,
+              nativeEvent: event
             });
           }
         }}
@@ -110,7 +110,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
             setActive(false);
             onMouseLeave({
               value: data.data,
-              nativeEvent: event,
+              nativeEvent: event
             });
           }
         }}
@@ -118,7 +118,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
           if (!disabled) {
             onClick({
               value: data.data,
-              nativeEvent: event,
+              nativeEvent: event
             });
           }
         }}

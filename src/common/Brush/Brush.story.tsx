@@ -6,7 +6,7 @@ import {
   randomNumber,
   generateDate,
   signalStageData,
-  signalStages,
+  signalStages
 } from '../../../demo';
 import {
   LinearXAxis,
@@ -14,7 +14,7 @@ import {
   LinearXAxisTickLabel,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
+  LinearYAxisTickLabel
 } from '../Axis';
 import { TooltipArea } from '../Tooltip';
 import { ChartBrush } from './ChartBrush';
@@ -78,7 +78,7 @@ storiesOf('Charts/Brush', module)
       .filter(() => randomNumber(1, 2) % 2)
       .map((i) => ({
         key: generateDate(randomNumber(i - 2, i + 2)),
-        data: randomNumber(1, 10),
+        data: randomNumber(1, 10)
       }))
       .sort((a, b) => (a > b ? -1 : a < b ? 1 : 0));
 
@@ -119,8 +119,8 @@ storiesOf('Charts/Brush', module)
           key: generateDate(i),
           data: 1,
           metadata: {
-            severity: randomNumber(1, 10),
-          },
+            severity: randomNumber(1, 10)
+          }
         };
       })
       .reverse();
@@ -147,7 +147,7 @@ storiesOf('Charts/Brush', module)
                         style={{
                           fill: 'rgba(206, 0, 62, .7)',
                           stroke: '#FF004D',
-                          strokeWidth: 5,
+                          strokeWidth: 5
                         }}
                       />
                     </g>
@@ -192,7 +192,7 @@ storiesOf('Charts/Brush', module)
           disabled={false}
           domain={[
             largeDateData[largeDateData.length / 2].key,
-            largeDateData[largeDateData.length - 1].key,
+            largeDateData[largeDateData.length - 1].key
           ]}
         />
       }
@@ -216,7 +216,7 @@ storiesOf('Charts/Brush', module)
 class ZoomBrushStory extends Component {
   state = {
     domain: undefined,
-    brushing: false,
+    brushing: false
   };
   timeout: any;
 
@@ -226,7 +226,7 @@ class ZoomBrushStory extends Component {
 
     this.setState({
       domain,
-      brushing: true,
+      brushing: true
     });
   };
 
@@ -234,7 +234,7 @@ class ZoomBrushStory extends Component {
     const { brushing, domain } = this.state;
     const brushData = signalStageData.map((d) => ({
       ...d,
-      data: 1,
+      data: 1
     }));
 
     return (

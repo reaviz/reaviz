@@ -21,6 +21,6 @@ export function buildBins(
     x1: bin.x1 as ChartInternalDataTypes,
     y: bin.length,
     y0: 0,
-    y1: bin.length,
+    y1: bin.length
   }));
 }

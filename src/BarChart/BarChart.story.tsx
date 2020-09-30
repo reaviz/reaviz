@@ -16,7 +16,7 @@ import {
   durationCategoryData,
   binnedDateData,
   binnedDatePositiveOnly,
-  binnedDateNegativeOnly,
+  binnedDateNegativeOnly
 } from '../../demo';
 import chroma from 'chroma-js';
 import { timeWeek } from 'd3-time';
@@ -30,7 +30,7 @@ import {
   RangeLines,
   BarLabel,
   GuideBar,
-  HistogramBarSeries,
+  HistogramBarSeries
 } from './BarSeries';
 import { GridlineSeries, Gridline } from '../common/Gridline';
 import {
@@ -39,7 +39,7 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearXAxisTickLabel,
-  LinearYAxisTickLabel,
+  LinearYAxisTickLabel
 } from '../common/Axis/LinearAxis';
 import { Stripes } from '../common/Mask';
 import { Gradient, GradientStop } from '../common/Gradient';
@@ -93,7 +93,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
                 if (data.key === 'DLP') {
                   console.log('Style callback...', data);
                   return {
-                    fill: 'blue',
+                    fill: 'blue'
                   };
                 }
               }}
@@ -150,7 +150,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
         {
           top: 'top',
           center: 'center',
-          bottom: 'bottom',
+          bottom: 'bottom'
         },
         'top'
       );
@@ -202,7 +202,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           height: '250px',
           border: 'solid 1px green',
           margin: '25px',
-          display: 'inline-block',
+          display: 'inline-block'
         }}
       >
         <BarChart data={categoryData} />
@@ -360,7 +360,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       ) : null;
@@ -406,7 +406,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
             { start: '#d7b5d8', end: '#980043' },
             { start: '#fbb4b9', end: '#7a0177' },
             { start: '#c2e699', end: '#006837' },
-            { start: '#a1dab4', end: '#253494' },
+            { start: '#a1dab4', end: '#253494' }
           ].map((gradient) => (
             <Bar
               rounded={false}
@@ -422,7 +422,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
                       offset="100%"
                       key="stop"
                       color={gradient.end}
-                    />,
+                    />
                   ]}
                 />
               }
@@ -447,7 +447,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
         {
           'Opened/Closed': binnedDateData,
           'Opened Only': binnedDatePositiveOnly,
-          'Closed Only': binnedDateNegativeOnly,
+          'Closed Only': binnedDateNegativeOnly
         },
         binnedDateData as any
       );
@@ -467,7 +467,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       ) : null;
@@ -476,7 +476,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-            <GradientStop offset="90%" stopOpacity={0.1} key="start" />,
+            <GradientStop offset="90%" stopOpacity={0.1} key="start" />
           ]}
         />
       ) : null;
@@ -511,7 +511,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
                   rounded={rounded}
                   gradient={gradientBottom}
                   rangeLines={rangelines}
-                />,
+                />
               ]}
               type="stackedDiverging"
               colorScheme={chroma
@@ -560,7 +560,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       ) : null;
@@ -612,7 +612,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       ) : null;
@@ -718,7 +718,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
         {
           top: 'top',
           center: 'center',
-          bottom: 'bottom',
+          bottom: 'bottom'
         },
         'top'
       );
@@ -872,7 +872,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Multi Series', module)
         {
           'Opened/Closed': binnedDateData,
           'Opened Only': binnedDatePositiveOnly,
-          'Closed Only': binnedDateNegativeOnly,
+          'Closed Only': binnedDateNegativeOnly
         },
         binnedDateData as any
       );
@@ -950,7 +950,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Multi Series', module)
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
                   ]}
                 />
               }
@@ -998,16 +998,16 @@ storiesOf('Charts/Bar Chart/Axis', module)
         {
           key: 'Closed',
           data: 0,
-          x: 'Closed',
+          x: 'Closed'
         },
         {
           key: 'Opened',
           data: 0,
-          x: 'Opened',
-        },
+          x: 'Opened'
+        }
       ],
       isMultiSeries: false,
-      isDiverging: true,
+      isDiverging: true
     });
 
     return (
@@ -1034,11 +1034,7 @@ storiesOf('Charts/Bar Chart/Axis', module)
                         stopOpacity={0.25}
                         key="start"
                       />,
-                      <GradientStop
-                        offset="90%"
-                        stopOpacity={0.7}
-                        key="stop"
-                      />,
+                      <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
                     ]}
                   />
                 }
@@ -1055,12 +1051,12 @@ storiesOf('Charts/Bar Chart/Axis', module)
                         offset="90%"
                         stopOpacity={0.25}
                         key="start"
-                      />,
+                      />
                     ]}
                   />
                 }
                 rangeLines={<RangeLines position="top" strokeWidth={3} />}
-              />,
+              />
             ]}
           />
         }
@@ -1093,7 +1089,7 @@ storiesOf('Charts/Bar Chart/Axis', module)
                 label={<LinearYAxisTickLabel padding={20} position="start" />}
               />
             }
-          />,
+          />
         ]}
         yAxis={
           <LinearXAxis
@@ -1114,16 +1110,16 @@ storiesOf('Charts/Bar Chart/Axis', module)
         {
           key: 'Closed',
           data: 0,
-          y: 'Closed',
+          y: 'Closed'
         },
         {
           key: 'Opened',
           data: 0,
-          y: 'Opened',
-        },
+          y: 'Opened'
+        }
       ],
       isMultiSeries: false,
-      isDiverging: true,
+      isDiverging: true
     });
 
     return (
@@ -1149,11 +1145,7 @@ storiesOf('Charts/Bar Chart/Axis', module)
                         stopOpacity={0.25}
                         key="start"
                       />,
-                      <GradientStop
-                        offset="90%"
-                        stopOpacity={0.7}
-                        key="stop"
-                      />,
+                      <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
                     ]}
                   />
                 }
@@ -1170,12 +1162,12 @@ storiesOf('Charts/Bar Chart/Axis', module)
                         offset="90%"
                         stopOpacity={0.25}
                         key="start"
-                      />,
+                      />
                     ]}
                   />
                 }
                 rangeLines={<RangeLines position="top" strokeWidth={3} />}
-              />,
+              />
             ]}
           />
         }
@@ -1224,7 +1216,7 @@ storiesOf('Charts/Bar Chart/Axis', module)
                 }
               />
             }
-          />,
+          />
         ]}
       />
     );

@@ -52,7 +52,7 @@ export class Gridline extends PureComponent<GridlineProps> {
   static defaultProps: Partial<GridlineProps> = {
     strokeWidth: 1,
     direction: 'all',
-    strokeColor: 'rgba(153, 153, 153, 0.5)',
+    strokeColor: 'rgba(153, 153, 153, 0.5)'
   };
 
   getCoords() {
@@ -64,7 +64,7 @@ export class Gridline extends PureComponent<GridlineProps> {
       scale,
       strokeWidth,
       strokeColor,
-      strokeDasharray,
+      strokeDasharray
     } = this.props;
     const pos = scale(data);
 
@@ -77,7 +77,7 @@ export class Gridline extends PureComponent<GridlineProps> {
         fill: 'none',
         stroke: strokeColor,
         strokeDasharray,
-        strokeWidth,
+        strokeWidth
       };
     } else {
       return {
@@ -88,7 +88,7 @@ export class Gridline extends PureComponent<GridlineProps> {
         fill: 'none',
         stroke: strokeColor,
         strokeDasharray,
-        strokeWidth,
+        strokeWidth
       };
     }
   }

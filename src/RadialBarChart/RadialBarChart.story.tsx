@@ -9,7 +9,7 @@ import {
   RadialAxisArcSeries,
   RadialAxisTickSeries,
   RadialAxisTick,
-  RadialAxisTickLine,
+  RadialAxisTickLine
 } from '../common/Axis/RadialAxis';
 import { schemes } from '../common/color';
 
@@ -28,7 +28,7 @@ storiesOf('Charts/Bar Chart/Radial', module)
         'Tick Position',
         {
           inside: 'inside',
-          outside: 'outside',
+          outside: 'outside'
         },
         'inside'
       );

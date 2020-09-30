@@ -2,7 +2,7 @@ import { scaleLinear, scaleTime, scaleBand } from 'd3-scale';
 import { getXDomain, getYDomain } from '../utils/domains';
 import {
   ChartInternalShallowDataShape,
-  ChartInternalNestedDataShape,
+  ChartInternalNestedDataShape
 } from '../data';
 import { uniqueBy } from '../utils/array';
 
@@ -31,7 +31,7 @@ export function getXScale({
   padding,
   scaled,
   isMultiSeries = false,
-  isDiverging = false,
+  isDiverging = false
 }: ScaleConfig) {
   let scale;
 
@@ -73,7 +73,7 @@ export function getYScale({
   scaled = false,
   padding = 0,
   isMultiSeries = false,
-  isDiverging = false,
+  isDiverging = false
 }: ScaleConfig) {
   let scale;
 

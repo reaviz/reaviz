@@ -2,7 +2,7 @@ import React, { useCallback, ReactElement, FC } from 'react';
 import {
   RadialScatterSeries,
   RadialScatterPoint,
-  RadialScatterPointProps,
+  RadialScatterPointProps
 } from '../../RadialScatterPlot';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from '../../common/utils';
@@ -58,7 +58,7 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
   color,
   activeValues,
   show = 'hover',
-  point = <RadialScatterPoint />,
+  point = <RadialScatterPoint />
 }) => {
   const isVisible = useCallback(
     (point: ChartInternalShallowDataShape, index: number) => {

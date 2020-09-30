@@ -16,8 +16,8 @@ export interface MapMarkerProps {
 // Set padding modifier for the tooltips
 const modifiers = {
   offset: {
-    offset: '0, 3px',
-  },
+    offset: '0, 3px'
+  }
 };
 
 export const MapMarker: FC<Partial<MapMarkerProps>> = ({
@@ -26,7 +26,7 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
   tooltip,
   cx,
   cy,
-  onClick = () => undefined,
+  onClick = () => undefined
 }) => {
   const ref = useRef<SVGCircleElement | null>(null);
   const [active, setActive] = useState<boolean>(false);
@@ -36,14 +36,14 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
       <motion.circle
         initial={{
           opacity: 0,
-          scale: 0.02,
+          scale: 0.02
         }}
         animate={{
           opacity: 1,
-          scale: 1,
+          scale: 1
         }}
         transition={{
-          delay: index! * 0.3,
+          delay: index! * 0.3
         }}
         ref={ref}
         className={css.marker}

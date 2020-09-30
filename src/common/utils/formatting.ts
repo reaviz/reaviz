@@ -26,7 +26,7 @@ const options = {
   month: 'numeric',
   day: 'numeric',
   hour12: true,
-  formatMatcher: 'best fit',
+  formatMatcher: 'best fit'
 };
 
 /**

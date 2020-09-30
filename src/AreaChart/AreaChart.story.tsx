@@ -10,7 +10,7 @@ import {
   singleDateBigIntData,
   randomNumber,
   nonZeroDateData,
-  longMultiDateData,
+  longMultiDateData
 } from '../../demo';
 import { AreaChart } from './AreaChart';
 import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
@@ -22,7 +22,7 @@ import {
   Line,
   StackedAreaSeries,
   StackedNormalizedAreaSeries,
-  PointSeries,
+  PointSeries
 } from './AreaSeries';
 import { GridlineSeries, Gridline } from '../common/Gridline';
 import {
@@ -31,7 +31,7 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel,
+  LinearXAxisTickLabel
 } from '../common/Axis/LinearAxis';
 import { ScatterPoint } from '../ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
@@ -54,7 +54,7 @@ storiesOf('Charts/Area Chart/Single Series', module)
         {
           linear: 'linear',
           step: 'step',
-          smooth: 'smooth',
+          smooth: 'smooth'
         },
         'linear'
       );
@@ -91,7 +91,7 @@ storiesOf('Charts/Area Chart/Single Series', module)
                 <Gradient
                   stops={[
                     <GradientStop offset="10%" stopOpacity={0} />,
-                    <GradientStop offset="80%" stopOpacity={1} />,
+                    <GradientStop offset="80%" stopOpacity={1} />
                   ]}
                 />
               }
@@ -144,7 +144,7 @@ storiesOf('Charts/Area Chart/Single Series', module)
           height: '250px',
           border: 'solid 1px green',
           margin: '25px',
-          display: 'inline-block',
+          display: 'inline-block'
         }}
       >
         <AreaChart data={singleDateData} />
@@ -335,7 +335,7 @@ storiesOf('Charts/Area Chart/Circle Series', module)
                         style={{
                           fill: 'lime',
                           stroke: 'purple',
-                          strokeWidth: 1.5,
+                          strokeWidth: 1.5
                         }}
                       />
                     );
@@ -358,14 +358,14 @@ storiesOf('Charts/Area Chart/Axis', module)
         {
           key: 'Before',
           data: 0,
-          x: 'Before',
+          x: 'Before'
         },
         {
           key: 'After',
           data: 0,
-          x: 'After',
-        },
-      ],
+          x: 'After'
+        }
+      ]
     });
 
     return (
@@ -401,7 +401,7 @@ storiesOf('Charts/Area Chart/Axis', module)
                 label={<LinearXAxisTickLabel padding={20} position="start" />}
               />
             }
-          />,
+          />
         ]}
         yAxis={<LinearYAxis type="value" axisLine={null} />}
       />
@@ -415,14 +415,14 @@ storiesOf('Charts/Area Chart/Axis', module)
         {
           key: 'Low',
           data: 0,
-          y: 'Low',
+          y: 'Low'
         },
         {
           key: 'High',
           data: 0,
-          y: 'High',
-        },
-      ],
+          y: 'High'
+        }
+      ]
     });
 
     return (
@@ -462,7 +462,7 @@ storiesOf('Charts/Area Chart/Axis', module)
                 }
               />
             }
-          />,
+          />
         ]}
         xAxis={<LinearXAxis type="time" axisLine={null} />}
       />

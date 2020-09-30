@@ -80,7 +80,7 @@ export class RangeLines extends Component<RangeLinesProps> {
   static defaultProps: Partial<RangeLinesProps> = {
     position: 'top',
     strokeWidth: 1,
-    layout: 'vertical',
+    layout: 'vertical'
   };
 
   getIsVertical() {
@@ -122,7 +122,7 @@ export class RangeLines extends Component<RangeLinesProps> {
     return {
       x: newX,
       y: newY,
-      opacity: 1,
+      opacity: 1
     };
   }
 
@@ -160,7 +160,7 @@ export class RangeLines extends Component<RangeLinesProps> {
     return {
       y: newY,
       x: newX,
-      opacity: 0,
+      opacity: 0
     };
   }
 
@@ -177,7 +177,7 @@ export class RangeLines extends Component<RangeLinesProps> {
 
     return {
       width: isVertical ? width : rangeLineHeight,
-      height: isVertical ? rangeLineHeight : height,
+      height: isVertical ? rangeLineHeight : height
     };
   }
 
@@ -208,7 +208,7 @@ export class RangeLines extends Component<RangeLinesProps> {
     const initial = {
       ...exitProps,
       attrX: exitProps.x,
-      attrY: exitProps.y,
+      attrY: exitProps.y
     };
 
     delete initial.x;
@@ -217,7 +217,7 @@ export class RangeLines extends Component<RangeLinesProps> {
     const animate = {
       ...enterProps,
       attrX: enterProps.x,
-      attrY: enterProps.y,
+      attrY: enterProps.y
     };
 
     delete animate.x;
@@ -234,7 +234,7 @@ export class RangeLines extends Component<RangeLinesProps> {
         exit={initial}
         transition={{
           ...DEFAULT_TRANSITION,
-          delay,
+          delay
         }}
       />
     );

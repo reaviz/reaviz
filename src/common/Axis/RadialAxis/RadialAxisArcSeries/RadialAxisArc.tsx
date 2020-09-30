@@ -10,7 +10,7 @@ export interface RadialAxisArcProps {
 export class RadialAxisArc extends Component<RadialAxisArcProps> {
   static defaultProps: Partial<RadialAxisArcProps> = {
     stroke: '#71808d',
-    strokeDasharray: '1,4',
+    strokeDasharray: '1,4'
   };
 
   render() {

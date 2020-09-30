@@ -100,14 +100,14 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
         followCursor={true}
         modifiers={{
           offset: {
-            offset: '0, 5px',
-          },
+            offset: '0, 5px'
+          }
         }}
       />
     ),
     onClick: () => undefined,
     onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined,
+    onMouseLeave: () => undefined
   };
 
   state: SankeyNodeState = {};
@@ -125,7 +125,7 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
       x0,
       x1,
       y0,
-      y1,
+      y1
     } = this.props;
 
     return {
@@ -139,7 +139,7 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
       x0,
       x1,
       y0,
-      y1,
+      y1
     };
   }
 
@@ -167,7 +167,7 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
       x1,
       y0,
       y1,
-      onClick,
+      onClick
     } = this.props;
     const nodeWidth = width || (x1 && x0 && x1 - x0 > 0 ? x1 - x0 : 0);
     const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
@@ -183,16 +183,16 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
           height={nodeHeight}
           fill={color}
           initial={{
-            opacity: 0,
+            opacity: 0
           }}
           animate={{
-            opacity: 1,
+            opacity: 1
           }}
           exit={{
-            opacity: 0,
+            opacity: 0
           }}
           transition={{
-            duration: 0.1,
+            duration: 0.1
           }}
           onClick={onClick}
           onMouseEnter={bind(this.onMouseEnter, this)}

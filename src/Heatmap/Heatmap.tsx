@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps,
+  ChartContainerChildProps
 } from '../common/containers/ChartContainer';
 import { ChartNestedDataShape, buildNestedChartData } from '../common/data';
 import { CloneElement } from '../common/utils/children';
@@ -17,7 +17,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
   LinearXAxisTickLabel,
-  LinearAxis,
+  LinearAxis
 } from '../common/Axis';
 import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
@@ -78,7 +78,7 @@ export class Heatmap extends Component<HeatmapProps> {
           />
         }
       />
-    ),
+    )
   };
 
   getScalesData(chartHeight: number, chartWidth: number) {
@@ -109,7 +109,7 @@ export class Heatmap extends Component<HeatmapProps> {
     return {
       yScale,
       xScale,
-      data,
+      data
     };
   }
 

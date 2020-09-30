@@ -13,7 +13,7 @@ export interface RadialAxisArcSeriesProps {
 export class RadialAxisArcSeries extends Component<RadialAxisArcSeriesProps> {
   static defaultProps: Partial<RadialAxisArcSeriesProps> = {
     count: 12,
-    arc: <RadialAxisArc />,
+    arc: <RadialAxisArc />
   };
 
   render() {

@@ -35,7 +35,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     displayAllLabels: false,
     arcWidth: 0.25,
     label: <PieArcLabel />,
-    arc: <PieArc />,
+    arc: <PieArc />
   };
 
   calculateRadius() {
@@ -46,7 +46,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
 
     return {
       outerRadius,
-      innerRadius,
+      innerRadius
     };
   }
 
@@ -170,7 +170,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
                 data: this.props.data,
                 colorScheme: this.props.colorScheme,
                 point: arcData.data,
-                index,
+                index
               })}
             />
           </Fragment>

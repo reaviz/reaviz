@@ -14,7 +14,7 @@ export class HiveTooltip extends Component<HiveTooltipProps, {}> {
     const {
       axis,
       nodes,
-      node: { x, value },
+      node: { x, value }
     } = this.props;
     const { label } = axis[x];
     const count = nodes.filter((n) => n.value === value).length;

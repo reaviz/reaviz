@@ -21,7 +21,7 @@ export class HiveLink extends Component<HiveLinkProps, {}> {
 
     return {
       angle: hive.angle((d) => angle(d.x)),
-      radius: hive.radius((d) => radius(d.y)),
+      radius: hive.radius((d) => radius(d.y))
     };
   }
 
@@ -33,7 +33,7 @@ export class HiveLink extends Component<HiveLinkProps, {}> {
     return (
       <path
         className={classNames(css.link, {
-          [css.inactive]: !active,
+          [css.inactive]: !active
         })}
         d={`${angle(link)} ${radius(link)}`}
         stroke={stroke}

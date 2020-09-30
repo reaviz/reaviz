@@ -30,7 +30,7 @@ storiesOf('Charts/Map', module)
           coordinates={[-58.3816, -34.6037]}
           tooltip="Somewhere Else"
         />,
-        <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />,
+        <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />
       ]}
     />
   ));

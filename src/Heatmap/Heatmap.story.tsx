@@ -8,7 +8,7 @@ import {
   janHeatMapData,
   febHeatMapData,
   marchHeatMapData,
-  heatmapCalendarOffsetData,
+  heatmapCalendarOffsetData
 } from '../../demo';
 import { SequentialLegend } from '../common/legends/SequentialLegend/SequentialLegend';
 import { number, object, select } from '@storybook/addon-knobs';
@@ -18,7 +18,7 @@ import { getYScale } from '../common/scales';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
+  LinearYAxisTickLabel
 } from '../common/Axis';
 
 storiesOf('Charts/Heatmap/Simple', module)
@@ -58,14 +58,14 @@ storiesOf('Charts/Heatmap/Simple', module)
         {
           key: 'Before',
           data: 0,
-          y: 'Before',
+          y: 'Before'
         },
         {
           key: 'After',
           data: 0,
-          y: 'After',
-        },
-      ],
+          y: 'After'
+        }
+      ]
     });
 
     return (
@@ -86,7 +86,7 @@ storiesOf('Charts/Heatmap/Simple', module)
                 label={<LinearYAxisTickLabel padding={10} position="end" />}
               />
             }
-          />,
+          />
         ]}
       />
     );

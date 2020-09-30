@@ -8,7 +8,7 @@ import {
   largeSignalChartData,
   medSignalChartData,
   signalStageData,
-  signalStages,
+  signalStages
 } from '../../demo/signals';
 import { randomNumber, singleDateData } from '../../demo';
 import { range } from 'd3-array';
@@ -20,7 +20,7 @@ import {
   LinearYAxisTickLabel,
   LinearXAxis,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel,
+  LinearXAxisTickLabel
 } from '../common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '../common/color';
@@ -91,7 +91,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
             height: '250px',
             border: 'solid 1px green',
             margin: '25px',
-            display: 'inline-block',
+            display: 'inline-block'
           }}
         >
           <ScatterPlot data={medSignalChartData} />
@@ -122,7 +122,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
                     style={{
                       fill: 'lime',
                       stroke: 'purple',
-                      strokeWidth: 1.5,
+                      strokeWidth: 1.5
                     }}
                   />
                 );
@@ -162,16 +162,16 @@ storiesOf('Charts/Scatter Plot/Axis', module)
         {
           key: 'Before',
           data: 0,
-          x: 'Before',
+          x: 'Before'
         },
         {
           key: 'After',
           data: 0,
-          x: 'After',
-        },
+          x: 'After'
+        }
       ],
       isMultiSeries: false,
-      isDiverging: true,
+      isDiverging: true
     });
 
     return (
@@ -207,7 +207,7 @@ storiesOf('Charts/Scatter Plot/Axis', module)
                 label={<LinearXAxisTickLabel padding={20} position="start" />}
               />
             }
-          />,
+          />
         ]}
         yAxis={<LinearYAxis type="value" axisLine={null} />}
       />
@@ -221,16 +221,16 @@ storiesOf('Charts/Scatter Plot/Axis', module)
         {
           key: 'Low',
           data: 0,
-          y: 'Low',
+          y: 'Low'
         },
         {
           key: 'High',
           data: 0,
-          y: 'High',
-        },
+          y: 'High'
+        }
       ],
       isMultiSeries: false,
-      isDiverging: true,
+      isDiverging: true
     });
 
     return (
@@ -270,7 +270,7 @@ storiesOf('Charts/Scatter Plot/Axis', module)
                 }
               />
             }
-          />,
+          />
         ]}
         xAxis={<LinearXAxis type="time" axisLine={null} />}
       />

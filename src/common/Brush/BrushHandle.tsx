@@ -19,12 +19,12 @@ export class BrushHandle extends PureComponent<
   BrushHandleState
 > {
   state: BrushHandleState = {
-    isDragging: false,
+    isDragging: false
   };
 
   onMoveStart() {
     this.setState({
-      isDragging: true,
+      isDragging: true
     });
   }
 
@@ -34,7 +34,7 @@ export class BrushHandle extends PureComponent<
 
   onMoveEnd() {
     this.setState({
-      isDragging: false,
+      isDragging: false
     });
   }
 

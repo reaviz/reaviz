@@ -24,7 +24,7 @@ export const getMarimekkoGroupScale = ({
   data,
   width,
   valueScale,
-  padding,
+  padding
 }: MariemkoScaleData) => {
   const domain = uniqueBy<ChartInternalNestedDataShape>(data, (d) => d.key);
   const barCount = data.length;

@@ -3,12 +3,12 @@ import {
   ChartNestedDataShape,
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from './types';
 import {
   getMaxBigIntegerForNested,
   normalizeValue,
-  normalizeValueForFormatting,
+  normalizeValueForFormatting
 } from './bigInteger';
 import { uniqueBy } from '../../common/utils/array';
 
@@ -42,7 +42,7 @@ function transformDataToStack(data) {
       if (idx === -1) {
         result.push({
           x: value.key,
-          formattedValues: {},
+          formattedValues: {}
         });
 
         idx = result.length - 1;
@@ -81,13 +81,13 @@ function transformStackToData(stackData): ChartInternalNestedDataShape[] {
         y: y1 - y0,
         y0,
         y1,
-        value: point.data.formattedValues[category.key],
+        value: point.data.formattedValues[category.key]
       });
     }
 
     result.push({
       key: category.key,
-      data: series,
+      data: series
     });
   }
 

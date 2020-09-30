@@ -9,7 +9,7 @@ import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
 import {
   TooltipAreaProps,
   TooltipArea,
-  TooltipAreaEvent,
+  TooltipAreaEvent
 } from '../../common/Tooltip';
 import bind from 'memoize-bind';
 
@@ -108,7 +108,7 @@ export class RadialAreaSeries extends Component<
     area: <RadialArea />,
     line: <RadialLine />,
     symbols: <RadialPointSeries />,
-    tooltip: <TooltipArea />,
+    tooltip: <TooltipArea />
   };
 
   state: RadialAreaSeriesState = {};
@@ -119,19 +119,19 @@ export class RadialAreaSeries extends Component<
       colorScheme,
       data,
       index,
-      point,
+      point
     });
   }
 
   onValueEnter(event: TooltipAreaEvent) {
     this.setState({
-      activeValues: event.value,
+      activeValues: event.value
     });
   }
 
   onValueLeave() {
     this.setState({
-      activeValues: undefined,
+      activeValues: undefined
     });
   }
 
@@ -145,7 +145,7 @@ export class RadialAreaSeries extends Component<
       interpolation,
       animated,
       innerRadius,
-      outerRadius,
+      outerRadius
     } = this.props;
 
     return (
@@ -215,7 +215,7 @@ export class RadialAreaSeries extends Component<
       width,
       height,
       innerRadius,
-      outerRadius,
+      outerRadius
     } = this.props;
 
     return (

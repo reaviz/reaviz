@@ -30,7 +30,7 @@ export interface ChartZoomPanProps {
 
 export class ChartZoomPan extends Component<ChartZoomPanProps> {
   static defaultProps: Partial<ChartZoomPanProps> = {
-    onZoomPan: () => undefined,
+    onZoomPan: () => undefined
   };
 
   onZoomPan(event: ZoomPanEvent) {
@@ -43,7 +43,7 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
         width: width,
         type: axisType,
         roundDomains,
-        data,
+        data
       });
 
       const newScale = scale.copy().domain(
@@ -55,7 +55,7 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
 
       onZoomPan!({
         domain: newScale.domain(),
-        isZoomed: event.scale !== 1,
+        isZoomed: event.scale !== 1
       });
     }
   }
@@ -63,7 +63,7 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
   getOffset() {
     let zoomOffset = {
       scale: undefined,
-      x: undefined,
+      x: undefined
     } as any;
 
     const {
@@ -72,7 +72,7 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
       width,
       data,
       axisType,
-      roundDomains,
+      roundDomains
     } = this.props;
 
     if (!disabled && domain) {
@@ -80,7 +80,7 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
         width,
         type: axisType,
         roundDomains,
-        data,
+        data
       });
 
       let offset = xScale(domain[0]);
@@ -92,7 +92,7 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
 
       zoomOffset = {
         scale: scale,
-        x: -offset,
+        x: -offset
       };
     }
 

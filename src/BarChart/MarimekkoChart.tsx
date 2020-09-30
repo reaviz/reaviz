@@ -7,7 +7,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
+  LinearYAxisTickLabel
 } from '../common/Axis/LinearAxis';
 
 interface MarimekkoChartProps extends BarChartProps {

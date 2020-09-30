@@ -34,7 +34,7 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
     disabled: false,
     height: 0,
     width: 0,
-    onBrushChange: () => undefined,
+    onBrushChange: () => undefined
   };
 
   ref: any;
@@ -46,7 +46,7 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
       isSlicing: false,
       isPanning: false,
       start: props.start || 0,
-      end: props.end || props.width,
+      end: props.end || props.width
     };
   }
 
@@ -68,7 +68,7 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
 
       if (startUpdated || endUpdated) {
         this.setState({
-          ...this.ensurePositionInBounds(start, end),
+          ...this.ensurePositionInBounds(start, end)
         });
       }
     }
@@ -94,7 +94,7 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
     const eventObj = {
       target: this.ref,
       clientX: event.clientX,
-      clientY: event.clientY,
+      clientY: event.clientY
     };
 
     return getPositionForTarget(eventObj);
@@ -137,7 +137,7 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
 
     this.setState({
       isSlicing: true,
-      initial: positions.x,
+      initial: positions.x
     });
   }
 
@@ -152,27 +152,27 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
       if (onBrushChange) {
         onBrushChange({
           start,
-          end,
+          end
         });
       }
 
       return {
         start,
-        end,
+        end
       };
     });
   }
 
   onMoveEnd() {
     this.setState({
-      isSlicing: false,
+      isSlicing: false
     });
   }
 
   onMoveCancel() {
     const val = {
       start: 0,
-      end: this.props.width,
+      end: this.props.width
     };
 
     this.setState(val);
@@ -207,7 +207,7 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
         <g
           style={{
             pointerEvents: isSlicing ? 'none' : 'auto',
-            cursor: disabled ? '' : 'crosshair',
+            cursor: disabled ? '' : 'crosshair'
           }}
         >
           {children}

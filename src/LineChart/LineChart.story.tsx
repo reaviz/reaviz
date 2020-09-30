@@ -10,7 +10,7 @@ import {
   singleDateData,
   largeDateData,
   randomNumber,
-  longMultiDateData,
+  longMultiDateData
 } from '../../demo';
 import { LineChart, LineSeries } from './LineChart';
 import {
@@ -18,7 +18,7 @@ import {
   StackedNormalizedAreaChart,
   StackedAreaSeries,
   Line,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from '../AreaChart';
 import { GridlineSeries, Gridline } from '../common/Gridline';
 import { PointSeries } from '../AreaChart';
@@ -26,7 +26,7 @@ import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxisTickSeries,
-  LinearYAxis,
+  LinearYAxis
 } from '../common/Axis/LinearAxis';
 import { ScatterPoint } from '../ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
@@ -39,7 +39,7 @@ const prettyData = (() => {
     for (let j = 0; j < 100; j++) {
       series.push({
         key: j,
-        data: (i / 10 + 1) * Math.sin((Math.PI * (i + j)) / 50),
+        data: (i / 10 + 1) * Math.sin((Math.PI * (i + j)) / 50)
       });
     }
     data.push({ key: i, data: series });
@@ -60,7 +60,7 @@ storiesOf('Charts/Line/Single Series', module)
         {
           linear: 'linear',
           step: 'step',
-          smooth: 'smooth',
+          smooth: 'smooth'
         },
         'linear'
       );
@@ -120,7 +120,7 @@ storiesOf('Charts/Line/Single Series', module)
         {
           linear: 'linear',
           step: 'step',
-          smooth: 'smooth',
+          smooth: 'smooth'
         },
         'linear'
       );
@@ -230,7 +230,7 @@ storiesOf('Charts/Line/Multi Series', module)
                 ) {
                   console.log('Style callback...', data);
                   return {
-                    strokeDasharray: '5',
+                    strokeDasharray: '5'
                   };
                 }
               }}
@@ -400,7 +400,7 @@ storiesOf('Charts/Line/Circle Series', module)
                         style={{
                           fill: 'lime',
                           stroke: 'purple',
-                          strokeWidth: 1.5,
+                          strokeWidth: 1.5
                         }}
                       />
                     );
@@ -428,8 +428,8 @@ const LiveUpdatingStory = () => {
           key: moment()
             .add(++offset, 'day')
             .toDate(),
-          data: randomNumber(1, 20),
-        },
+          data: randomNumber(1, 20)
+        }
       ];
 
       setData(newData);

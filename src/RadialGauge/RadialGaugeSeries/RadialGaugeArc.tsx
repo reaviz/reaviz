@@ -75,7 +75,7 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
     onClick: () => undefined,
     onMouseEnter: () => undefined,
     onMouseLeave: () => undefined,
-    tooltip: <ChartTooltip />,
+    tooltip: <ChartTooltip />
   };
 
   getPaths() {
@@ -98,9 +98,9 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
         startAngle,
         endAngle,
         // Data must be passed
-        data: data || {},
+        data: data || {}
       },
-      innerArc,
+      innerArc
     };
   }
 
@@ -112,7 +112,7 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
       tooltip,
       onClick,
       onMouseEnter,
-      onMouseLeave,
+      onMouseLeave
     } = this.props;
     const data = this.getPaths();
 

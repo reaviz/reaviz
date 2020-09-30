@@ -116,7 +116,7 @@ storiesOf('Charts/Pie Chart/Donut', module)
             width: '350px',
             alignItems: 'center',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'center'
           }}
         >
           <div style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -154,7 +154,7 @@ const LiveUpdatingStory = () => {
       const updateIndex = randomNumber(0, data.length - 1);
       newData[updateIndex] = {
         ...newData[updateIndex],
-        data: randomNumber(10, 100),
+        data: randomNumber(10, 100)
       };
 
       idx++;
