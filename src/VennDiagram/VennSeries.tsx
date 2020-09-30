@@ -1,22 +1,47 @@
 import React, { FC, Fragment, ReactElement, useCallback } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
-import { getColor } from '../common/color';
+import { ColorSchemeType, getColor } from '../common/color';
 import { VennArc, VennArcProps } from './VennArc';
 import { VennLabel, VennLabelProps } from './VennLabel';
 import { motion } from 'framer-motion';
 import { CloneElement } from '../common/utils';
 
 export interface VennSeriesProps {
+  /**
+   * The internal data object built by venn.js
+   */
   data: IVennLayout<any>[];
-  colorScheme?: string;
+
+  /**
+   * Color scheme for the chart.
+   */
+  colorScheme: ColorSchemeType;
+
+  /**
+   * Whether the chart is disabled.
+   */
+  disabled?: boolean;
+
+  /**
+   * Whether the chart is animated or not.
+   */
   animated?: boolean;
+
+  /**
+   * Label element.
+   */
   label?: ReactElement<VennLabelProps, typeof VennLabel> | null;
+
+  /**
+   * Arc element.
+   */
   arc?: ReactElement<VennArcProps, typeof VennArc> | null;
 }
 
 export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   data,
   animated = true,
+  disabled,
   colorScheme = 'cybertron',
   arc = <VennArc />,
   label = <VennLabel />
@@ -40,7 +65,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           animate={{ opacity: 1, scale: 1 }}
           transition={transition}
         >
-          <CloneElement<VennArcProps> element={arc} data={d} fill={fill} />
+          <CloneElement<VennArcProps> element={arc} data={d} fill={fill} disabled={disabled} />
           <CloneElement<VennLabelProps> element={label} data={d} />
         </motion.g>
       );

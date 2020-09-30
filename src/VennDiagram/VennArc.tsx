@@ -4,13 +4,40 @@ import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from '../common/utils';
 
 export interface VennArcProps {
+  /**
+   * Fill color for the arc.
+   */
   fill: string;
+
+  /**
+   * The internal data object built by venn.js
+   */
   data: IVennLayout<any>;
+
+  /**
+   * Whether the chart is disabled.
+   */
   disabled?: boolean;
+
+  /**
+   * Tooltip element.
+   */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
-  onClick?: (e) => void;
-  onMouseEnter?: (e) => void;
-  onMouseLeave?: (e) => void;
+
+  /**
+   * Event for when the arc is clicked.
+   */
+  onClick: (event) => void;
+
+  /**
+   * Event for when the arc has mouse enter.
+   */
+  onMouseEnter: (event) => void;
+
+  /**
+   * Event for when the arc has mouse leave.
+   */
+  onMouseLeave: (event) => void;
 }
 
 export const VennArc: FC<Partial<VennArcProps>> = ({

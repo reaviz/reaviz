@@ -3,9 +3,24 @@ import { IVennLayout } from '@upsetjs/venn.js';
 import { calculateDimensions } from '../common/utils';
 
 export interface VennLabelProps {
+  /**
+   * The internal data object built by venn.js
+   */
   data: IVennLayout<any>;
+
+  /**
+   * Font size of the text.
+   */
   fontSize?: number;
+
+  /**
+   * Font family of the text.
+   */
   fontFamily?: string;
+
+  /**
+   * Fill of the text.
+   */
   fill?: string;
 }
 
@@ -23,7 +38,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const y = data.text.y + halfHeight;
 
   return (
-    <text x={x} y={y} style={{ pointerEvents: 'none' }} fill={fill}>
+    <text x={x} y={y} style={{ pointerEvents: 'none', fontFamily, fontSize }} fill={fill}>
       {key}
     </text>
   );

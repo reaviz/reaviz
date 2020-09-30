@@ -14,8 +14,20 @@ export interface VennDiagramData {
 }
 
 export interface VennDiagramProps extends ChartProps {
+  /**
+   * Data the chart will receive to render.
+   */
   data: VennDiagramData[];
+
+  /**
+   * The series component that renders the arc and label components.
+   */
   series?: ReactElement<VennSeriesProps, typeof VennSeries> | null;
+
+  /**
+   * Whether the chart is disabled.
+   */
+  disabled?: boolean;
 }
 
 export const VennDiagram: FC<VennDiagramProps> = ({
@@ -25,6 +37,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   margins,
   className,
   data,
+  disabled,
   series = <VennSeries />
 }) => {
   const normalized = data.map((d) => ({ sets: d.key, size: d.data }));
@@ -37,7 +50,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       });
 
       return (
-        <CloneElement<VennSeriesProps> element={series} data={layoutData} />
+        <CloneElement<VennSeriesProps> element={series} data={layoutData} disabled={disabled} />
       );
     },
     [normalized, series]

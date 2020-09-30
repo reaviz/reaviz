@@ -1,5 +1,6 @@
 # 9.0.0 - 9/29/20
 - [BREAKING] Rename CSS variables to be more specific
+- [Feature] Venn Diagram
 - [Bug] Fix flashing 0 on load
 - [Bug] Fix broken bar chart brust story
 - [Chore] Upgrade depedencies
