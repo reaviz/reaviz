@@ -3,6 +3,8 @@ const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 const codesandbox = require('remark-codesandbox');
 const reavizCodesandboxTemplatePackageJSON = require('../docs/tools/templates/reaviz-codesandbox-template/package.json');
 
+window.STORYBOOK_GA_ID = 'UA-104197992-2';
+
 module.exports = {
   stories: [
     '../src/**/*.story.tsx',
@@ -17,6 +19,7 @@ module.exports = {
         }
       }
     },
+    '@storybook/addon-google-analytics',
     '@storybook/addon-knobs',
     '@storybook/addon-docs/preset'
   ],
