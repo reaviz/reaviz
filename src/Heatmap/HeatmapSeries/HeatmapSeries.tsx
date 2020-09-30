@@ -61,13 +61,19 @@ export class HeatmapSeries extends Component<HeatmapSeriesProps> {
     animated: true,
     emptyColor: 'rgba(200,200,200,0.08)',
     colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
-    cell: <HeatmapCell />
+    cell: <HeatmapCell />,
   };
 
   getValueScale = memoize((data, colorScheme, emptyColor) => {
-    const valueDomain = extent(uniqueBy(data, d => d.data, d => d.value));
+    const valueDomain = extent(
+      uniqueBy(
+        data,
+        (d) => d.data,
+        (d) => d.value
+      )
+    );
 
-    return point => {
+    return (point) => {
       // For 0 values, lets show a placeholder fill
       if (point === undefined || point === null) {
         return emptyColor;
@@ -77,7 +83,7 @@ export class HeatmapSeries extends Component<HeatmapSeriesProps> {
         scale: scaleQuantile,
         domain: valueDomain,
         key: point,
-        colorScheme
+        colorScheme,
       });
     };
   });
@@ -90,7 +96,7 @@ export class HeatmapSeries extends Component<HeatmapSeriesProps> {
     valueScale,
     width,
     height,
-    cellCount
+    cellCount,
   }) {
     const { xScale, yScale, id, animated, cell: cellElement } = this.props;
 
@@ -135,7 +141,7 @@ export class HeatmapSeries extends Component<HeatmapSeriesProps> {
               row,
               cell,
               rowIndex,
-              cellIndex
+              cellIndex,
             })
           )
         )}

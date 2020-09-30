@@ -45,7 +45,7 @@ export interface GridStripeProps {
 
 export class GridStripe extends PureComponent<GridStripeProps> {
   static defaultProps: Partial<GridStripeProps> = {
-    fill: '#2a3138'
+    fill: '#2a3138',
   };
 
   getCoords() {
@@ -60,7 +60,7 @@ export class GridStripe extends PureComponent<GridStripeProps> {
         x: pos,
         height: height,
         width: dim,
-        fill: stripeFill
+        fill: stripeFill,
       };
     } else {
       return {
@@ -68,7 +68,7 @@ export class GridStripe extends PureComponent<GridStripeProps> {
         x: 0,
         height: dim,
         width,
-        fill: stripeFill
+        fill: stripeFill,
       };
     }
   }

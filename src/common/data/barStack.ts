@@ -3,7 +3,7 @@ import { ChartNestedDataShape, ChartInternalNestedDataShape } from './types';
 import {
   getMaxBigIntegerForNested,
   normalizeValue,
-  normalizeValueForFormatting
+  normalizeValueForFormatting,
 } from './bigInteger';
 import { uniqueBy } from '../../common/utils/array';
 
@@ -29,7 +29,7 @@ function transformDataToStack(data: ChartNestedDataShape[]) {
 
   for (const category of data) {
     for (const value of category.data) {
-      let idx = result.findIndex(r => {
+      let idx = result.findIndex((r) => {
         if (r.x instanceof Date && category.key instanceof Date) {
           return r.x.getTime() === category.key.getTime();
         }
@@ -40,7 +40,7 @@ function transformDataToStack(data: ChartNestedDataShape[]) {
         result.push({
           metadata: category.metadata,
           x: category.key,
-          formattedValues: {}
+          formattedValues: {},
         });
 
         idx = result.length - 1;
@@ -75,7 +75,7 @@ function transformStackToData(
     for (const point of category) {
       const key = point.data.x;
 
-      let idx = result.findIndex(r => {
+      let idx = result.findIndex((r) => {
         if (r.key instanceof Date && key instanceof Date) {
           return r.key.getTime() === key.getTime();
         }
@@ -85,7 +85,7 @@ function transformStackToData(
       if (idx === -1) {
         result.push({
           key,
-          data: []
+          data: [],
         });
 
         idx = result.length - 1;
@@ -104,7 +104,7 @@ function transformStackToData(
         y: isVertical ? y : categoryKey,
         y0: isVertical ? y0 : categoryKey,
         y1: isVertical ? y1 : categoryKey,
-        value: point.data.formattedValues[categoryKey]
+        value: point.data.formattedValues[categoryKey],
       });
     }
   }
@@ -122,8 +122,8 @@ export function buildBarStackData(
 ) {
   const keys = uniqueBy<ChartNestedDataShape>(
     data,
-    d => d.data,
-    d => d.key
+    (d) => d.data,
+    (d) => d.key
   );
   const stackData = transformDataToStack(data);
 

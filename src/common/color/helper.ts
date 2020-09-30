@@ -50,12 +50,12 @@ export const getColor = (props: Partial<ColorHelperProps>) => {
     isMultiSeries,
     domain,
     key,
-    scale
+    scale,
   } = {
     attribute: 'key',
     isMultiSeries: false,
     scale: scaleOrdinal,
-    ...props
+    ...props,
   };
 
   if (typeof colorScheme === 'string' && schemes[colorScheme]) {
@@ -65,7 +65,7 @@ export const getColor = (props: Partial<ColorHelperProps>) => {
   if (Array.isArray(colorScheme)) {
     if (!domain) {
       if (isMultiSeries && Array.isArray(data)) {
-        const maxIdx = maxIndex(data, d => d.data.length);
+        const maxIdx = maxIndex(data, (d) => d.data.length);
         const maxVal = data[maxIdx];
         data = maxVal.data;
       }

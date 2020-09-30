@@ -18,7 +18,7 @@ export const getRadialYScale = (
     .range([innerRadius * innerRadius, outerRadius * outerRadius])
     .domain(domain);
 
-  const yScale = Object.assign(d => Math.sqrt(y(d)), y);
+  const yScale = Object.assign((d) => Math.sqrt(y(d)), y);
 
   return yScale;
 };

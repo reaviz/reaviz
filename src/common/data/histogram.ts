@@ -16,11 +16,11 @@ export function buildBins(
 
   const bins = layout(data as any);
 
-  return bins.map(bin => ({
+  return bins.map((bin) => ({
     x0: bin.x0 as ChartInternalDataTypes,
     x1: bin.x1 as ChartInternalDataTypes,
     y: bin.length,
     y0: 0,
-    y1: bin.length
+    y1: bin.length,
   }));
 }

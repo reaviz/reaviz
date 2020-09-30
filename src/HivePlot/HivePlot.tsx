@@ -77,7 +77,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     links: [],
     label: {
       show: true,
-      padding: 10
+      padding: 10,
     },
     activeIds: [],
     onNodeClick: () => undefined,
@@ -88,12 +88,12 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     tooltip: {
       show: true,
       placement: 'top',
-      formatter: attr => attr.value
+      formatter: (attr) => attr.value,
     },
     colorScheme: {
       axis: ['#b1b2b6'],
-      domain: ['#b1b2b6']
-    }
+      domain: ['#b1b2b6'],
+    },
   };
 
   state: HivePlotState = {};
@@ -127,15 +127,15 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
               accumulator[`link-${i}`] = true;
             }
             return accumulator;
-          }, {})
-        }
+          }, {}),
+        },
       });
     }
 
     onNodeMouseOver({
       nativeEvent: event,
       node,
-      links: this.getLinksForNode(node)
+      links: this.getLinksForNode(node),
     });
   }
 
@@ -144,14 +144,14 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     if (!disabled) {
       this.setState({
         tooltipReference: event.target,
-        linkTooltipData: link
+        linkTooltipData: link,
       });
       this.activateLink(link);
     }
 
     onLinkMouseOver({
       nativeEvent: event,
-      link
+      link,
     });
   }
 
@@ -159,12 +159,12 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     const { nodes, links } = this.props;
     const activeLinkIndex = links.indexOf(link);
     const activeLinksMap = {
-      [`link-${activeLinkIndex}`]: true
+      [`link-${activeLinkIndex}`]: true,
     };
 
     const activeLinks = [
       link,
-      ...this.activateAdjacentLinks(links, link.target, activeLinksMap)
+      ...this.activateAdjacentLinks(links, link.target, activeLinksMap),
     ];
     this.setState({
       active: {
@@ -177,8 +177,8 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
             }
           }
           return accumulator;
-        }, {})
-      }
+        }, {}),
+      },
     });
   }
 
@@ -206,7 +206,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     onNodeMouseOut({
       nativeEvent: event,
       node,
-      links: this.getLinksForNode(node)
+      links: this.getLinksForNode(node),
     });
   }
 
@@ -215,7 +215,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
     this.resetActive();
     onLinkMouseOut({
       nativeEvent: event,
-      link
+      link,
     });
   }
 
@@ -226,7 +226,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
       onNodeClick({
         nativeEvent: event,
         node,
-        links: this.getLinksForNode(node)
+        links: this.getLinksForNode(node),
       });
     }
   }
@@ -234,7 +234,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
   getLinksForNode(node: Node): Link[] {
     const { links } = this.props;
     return links.filter(
-      link =>
+      (link) =>
         link.source.value === node.value || link.target.value === node.value
     );
   }
@@ -244,7 +244,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
       active: undefined,
       linkTooltipData: undefined,
       nodeTooltipData: undefined,
-      tooltipReference: undefined
+      tooltipReference: undefined,
     });
   }
 
@@ -261,7 +261,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
       radius: scaleLinear().range([innerRadius, outerRadius]),
       axisColor: scaleOrdinal(colorScheme.axis).domain(range(20) as any),
       domainColor: scaleOrdinal(colorScheme.domain).domain(range(20) as any),
-      outerRadius
+      outerRadius,
     };
   }
 
@@ -366,7 +366,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
       active,
       tooltipReference,
       linkTooltipData: link,
-      nodeTooltipData: node
+      nodeTooltipData: node,
     } = this.state;
 
     const { formatter, placement, show } = tooltip;
@@ -397,20 +397,13 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
       innerRadius,
       colorScheme,
       axis,
-      label
+      label,
     });
 
     return (
       <Fragment>
-        <svg
-          width={width}
-          height={height}
-          className={classNames(className)}
-        >
-          <g
-            transform={`translate(${width / 2}, ${height / 2 +
-              innerRadius})`}
-          >
+        <svg width={width} height={height} className={classNames(className)}>
+          <g transform={`translate(${width / 2}, ${height / 2 + innerRadius})`}>
             {this.renderAxis(data)}
             {this.renderLinks(data)}
             {this.renderNodes(data)}
@@ -423,10 +416,7 @@ export class HivePlot extends Component<HivePlotProps, HivePlotState> {
 
   render() {
     return (
-      <ChartContainer
-        height={this.props.height}
-        width={this.props.width}
-      >
+      <ChartContainer height={this.props.height} width={this.props.width}>
         {this.renderChart.bind(this)}
       </ChartContainer>
     );

@@ -9,7 +9,7 @@ import { TooltipArea } from '../Tooltip';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
 } from '../Axis';
 import { useState } from '@storybook/addons';
 
@@ -78,7 +78,7 @@ storiesOf('Charts/Zoom Pan', module)
           point={
             <ScatterPoint
               color="rgba(174, 52, 255, .5)"
-              size={v => v.metadata.severity + 5}
+              size={(v) => v.metadata.severity + 5}
             />
           }
         />
@@ -90,16 +90,22 @@ storiesOf('Charts/Zoom Pan', module)
     <GenericZoomPanStory modifier={true} />
   ))
   .add('Default Zoom', () => {
-    const [domain, setDomain] = useState<[any, any]>([largeDateData[5].key, largeDateData[25].key]);
+    const [domain, setDomain] = useState<[any, any]>([
+      largeDateData[5].key,
+      largeDateData[25].key,
+    ]);
     return (
       <LineChart
         width={450}
         height={300}
         data={largeDateData}
         zoomPan={
-          <ChartZoomPan domain={domain} onZoomPan={({ domain }) => {
-            setDomain(domain);
-          }} />
+          <ChartZoomPan
+            domain={domain}
+            onZoomPan={({ domain }) => {
+              setDomain(domain);
+            }}
+          />
         }
         series={
           <LineSeries
@@ -126,7 +132,7 @@ const GenericZoomPanStory: FC<any> = ({ modifier }) => {
   const [{ scale, x, y }, setState] = React.useState({
     scale: 1,
     x: 0,
-    y: 0
+    y: 0,
   });
 
   return (
@@ -143,7 +149,7 @@ const GenericZoomPanStory: FC<any> = ({ modifier }) => {
           x={x}
           y={y}
           requireZoomModifier={modifier}
-          onZoomPan={e => setState(e)}
+          onZoomPan={(e) => setState(e)}
         >
           <g transform={`translate(${x}, ${y}) scale(${scale})`}>
             <circle cx="50" cy="100" r="10" fill="blue" />

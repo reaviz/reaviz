@@ -7,7 +7,7 @@ import {
   LinearYAxisTickSeries,
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
 } from '../common/Axis';
 import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
 import { ChartTooltip } from '../common/Tooltip';
@@ -16,7 +16,7 @@ import {
   buildDataScales,
   CalendarView,
   addWeeksToDate,
-  weekDays
+  weekDays,
 } from './calendarUtils';
 import memoize from 'memoize-one';
 
@@ -53,7 +53,7 @@ export class CalendarHeatmap extends Component<CalendarHeatmapProps> {
           <HeatmapCell
             tooltip={
               <ChartTooltip
-                content={d =>
+                content={(d) =>
                   `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
                     d.data.value
                   )}`
@@ -63,7 +63,7 @@ export class CalendarHeatmap extends Component<CalendarHeatmapProps> {
           />
         }
       />
-    )
+    ),
   };
 
   getDataDomains = memoize(
@@ -82,10 +82,10 @@ export class CalendarHeatmap extends Component<CalendarHeatmapProps> {
     const xTickValues = view === 'year' ? undefined : [1];
 
     // Get the yAxis label formatting based on view type
-    const yAxisLabelFormat = view === 'year' ? d => weekDays[d] : () => null;
+    const yAxisLabelFormat = view === 'year' ? (d) => weekDays[d] : () => null;
 
     // Format the xAxis label for the start + n week
-    const xAxisLabelFormat = d =>
+    const xAxisLabelFormat = (d) =>
       addWeeksToDate(start, d).toLocaleString('default', { month: 'long' });
 
     return (

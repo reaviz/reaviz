@@ -2,7 +2,7 @@ import React, { useCallback, ReactElement, FC } from 'react';
 import {
   RadialScatterSeries,
   RadialScatterPoint,
-  RadialScatterPointProps
+  RadialScatterPointProps,
 } from '../../RadialScatterPlot';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from '../../common/utils';
@@ -58,29 +58,33 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
   color,
   activeValues,
   show = 'hover',
-  point = <RadialScatterPoint />
+  point = <RadialScatterPoint />,
 }) => {
-  const isVisible = useCallback((point: ChartInternalShallowDataShape, index: number) => {
-    const isActive = activeValues && point && isEqual(activeValues.x, point.x);
+  const isVisible = useCallback(
+    (point: ChartInternalShallowDataShape, index: number) => {
+      const isActive =
+        activeValues && point && isEqual(activeValues.x, point.x);
 
-    if (show === 'hover') {
-      return isActive;
-    } else if (show === 'first') {
-      if (activeValues) {
+      if (show === 'hover') {
         return isActive;
-      } else {
-        return index === 0;
+      } else if (show === 'first') {
+        if (activeValues) {
+          return isActive;
+        } else {
+          return index === 0;
+        }
+      } else if (show === 'last') {
+        if (activeValues) {
+          return isActive;
+        } else {
+          return index === data!.length - 1;
+        }
       }
-    } else if (show === 'last') {
-      if (activeValues) {
-        return isActive;
-      } else {
-        return index === data!.length - 1;
-      }
-    }
 
-    return show;
-  }, [data, activeValues, point, show]);
+      return show;
+    },
+    [data, activeValues, point, show]
+  );
 
   return (
     <RadialScatterSeries
@@ -98,4 +102,4 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
       }
     />
   );
-}
+};

@@ -5,7 +5,7 @@ import {
   ChartDataTypes,
   ChartInternalDataShape,
   ChartInternalShallowDataShape,
-  ChartInternalNestedDataShape
+  ChartInternalNestedDataShape,
 } from '../data';
 import { getPositionForTarget, getClosestPoint } from '../utils/position';
 import bind from 'memoize-bind';
@@ -122,7 +122,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
     tooltip: <ChartTooltip />,
     inverse: true,
     onValueEnter: () => undefined,
-    onValueLeave: () => undefined
+    onValueLeave: () => undefined,
   };
 
   prevX: number | undefined;
@@ -159,7 +159,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
       data,
       isRadial,
       isHorizontal,
-      placement
+      placement,
     } = this.props;
     const { value } = this.state;
     const transformed = this.transformData(data);
@@ -181,7 +181,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
       target: target,
       // Manually pass the x/y from the event
       clientX: event.clientX,
-      clientY: event.clientY
+      clientY: event.clientY,
     });
 
     // Need to flip scales/coords if we are a horz layout
@@ -248,7 +248,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
         visible: true,
         value: newValue,
         offsetX,
-        offsetY
+        offsetY,
       });
 
       onValueEnter({
@@ -258,7 +258,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
         pointX,
         offsetX,
         offsetY,
-        nativeEvent: event
+        nativeEvent: event,
       });
     }
   }
@@ -269,7 +269,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
 
     this.setState({
       value: undefined,
-      visible: false
+      visible: false,
     });
 
     this.props.onValueLeave();
@@ -282,7 +282,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
       width: 4,
       height: 4,
       top: offsetY,
-      left: offsetX
+      left: offsetX,
     };
   }
 
@@ -296,7 +296,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
         if (Array.isArray(seriesPoint.data)) {
           for (const nestedPoint of seriesPoint.data) {
             const right = nestedPoint.x;
-            let idx = result.findIndex(r => {
+            let idx = result.findIndex((r) => {
               const left = r.x;
               if (left instanceof Date && right instanceof Date) {
                 return left.getTime() === right.getTime();
@@ -307,7 +307,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
             if (idx === -1) {
               result.push({
                 x: nestedPoint.x,
-                data: []
+                data: [],
               });
 
               idx = result.length - 1;
@@ -330,11 +330,11 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
           result.push({
             ...nestedPoint,
             x: nestedPoint.key,
-            data: nestedPoint.data.map(d => ({
+            data: nestedPoint.data.map((d) => ({
               ...d,
               key: !isHorizontal ? d.x : d.y,
-              value: !isHorizontal ? d.y : d.x
-            }))
+              value: !isHorizontal ? d.y : d.x,
+            })),
           });
         } else {
           const shallowPoint = point as ChartInternalShallowDataShape;
@@ -345,7 +345,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
             y:
               shallowPoint.value === undefined
                 ? shallowPoint.y
-                : shallowPoint.value
+                : shallowPoint.value,
           });
         }
       }
@@ -364,7 +364,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
       innerRadius,
       outerRadius,
       startAngle: 180,
-      endAngle: Math.PI / 2
+      endAngle: Math.PI / 2,
     });
 
     return (
@@ -410,8 +410,8 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
               placement={placement}
               modifiers={{
                 offset: {
-                  offset: '0, 15px'
-                }
+                  offset: '0, 15px',
+                },
               }}
               reference={this.getTooltipReference()}
               color={color}

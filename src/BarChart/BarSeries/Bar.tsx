@@ -10,7 +10,7 @@ import { CloneElement } from '../../common/utils/children';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
   constructFunctionProps,
-  PropFunctionTypes
+  PropFunctionTypes,
 } from '../../common/utils/functions';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
@@ -218,7 +218,7 @@ export class Bar extends Component<BarProps, BarState> {
     onClick: () => undefined,
     onMouseEnter: () => undefined,
     onMouseLeave: () => undefined,
-    onMouseMove: () => undefined
+    onMouseMove: () => undefined,
   };
 
   state: BarState = {};
@@ -245,7 +245,7 @@ export class Bar extends Component<BarProps, BarState> {
       x: newX,
       y: newY,
       height: newHeight,
-      width: newWidth
+      width: newWidth,
     };
   }
 
@@ -349,7 +349,7 @@ export class Bar extends Component<BarProps, BarState> {
         x: xCoords.offset,
         width: xCoords.size,
         y: yCoords.offset,
-        height: yCoords.size
+        height: yCoords.size,
       };
     } else {
       const yCoords = this.getKeyCoords(
@@ -367,7 +367,7 @@ export class Bar extends Component<BarProps, BarState> {
         x: xCoords.offset,
         width: xCoords.size,
         y: yCoords.offset,
-        height: yCoords.size
+        height: yCoords.size,
       };
     }
   }
@@ -397,7 +397,7 @@ export class Bar extends Component<BarProps, BarState> {
 
     onMouseEnter({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -411,7 +411,7 @@ export class Bar extends Component<BarProps, BarState> {
 
     onMouseLeave({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -419,7 +419,7 @@ export class Bar extends Component<BarProps, BarState> {
     const { onClick, data } = this.props;
     onClick({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -460,7 +460,7 @@ export class Bar extends Component<BarProps, BarState> {
 
     return {
       y: data.y,
-      x
+      x,
     };
   }
 
@@ -477,12 +477,12 @@ export class Bar extends Component<BarProps, BarState> {
 
       return {
         ...DEFAULT_TRANSITION,
-        delay: delay
+        delay: delay,
       };
     } else {
       return {
         type: false,
-        delay: 0
+        delay: 0,
       };
     }
   }
@@ -501,7 +501,7 @@ export class Bar extends Component<BarProps, BarState> {
       ...initialExit,
       attrX: initialExit.x,
       attrY: initialExit.y,
-      fill
+      fill,
     };
 
     delete initial.x;
@@ -511,7 +511,7 @@ export class Bar extends Component<BarProps, BarState> {
       ...coords,
       attrX: coords.x,
       attrY: coords.y,
-      fill
+      fill,
     };
 
     delete animate.x;
@@ -524,7 +524,7 @@ export class Bar extends Component<BarProps, BarState> {
             {
               [css.rounded]: rounded,
               [css.vertical]: isVertical,
-              [css.horizontal]: !isVertical
+              [css.horizontal]: !isVertical,
             },
             extras.className
           )}
@@ -577,7 +577,7 @@ export class Bar extends Component<BarProps, BarState> {
     const coords = this.getCoords({
       ...data,
       [attr]: endPoint,
-      [`${attr}${attrStart}`]: startPoint
+      [`${attr}${attrStart}`]: startPoint,
     });
 
     return (
@@ -607,15 +607,13 @@ export class Bar extends Component<BarProps, BarState> {
       tooltip,
       layout,
       mask,
-      label
+      label,
     } = this.props;
     const active = tooltip ? this.state.active : this.props.active;
     const stroke = color(data, barIndex);
     const coords = this.getCoords(data);
     const currentColorShade = active
-      ? chroma(stroke)
-          .brighten(activeBrightness)
-          .hex()
+      ? chroma(stroke).brighten(activeBrightness).hex()
       : stroke;
     const rangeLineColor = (rangeLines && rangeLines.props.color) || stroke;
     const rangeLineColorShade = active

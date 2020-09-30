@@ -5,13 +5,13 @@ import { applyToPoint, inverse, applyToPoints } from 'transformation-matrix';
  * Add ability to calculate scale band position.
  * Reference: https://stackoverflow.com/questions/38633082/d3-getting-invert-value-of-band-scales
  */
-const scaleBandInvert = scale => {
+const scaleBandInvert = (scale) => {
   const domain = scale.domain();
   const paddingOuter = scale(domain[0]);
   const eachBand = scale.step();
   const [, end] = scale.range();
 
-  return offset => {
+  return (offset) => {
     let index = Math.floor((offset - paddingOuter) / eachBand);
 
     // Handle horizontal charts...
@@ -69,7 +69,7 @@ export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
 /**
  * Given an event, get the parent svg element;
  */
-export const getParentSVG = event => {
+export const getParentSVG = (event) => {
   // set node to targets owner svg
   let node = event.target.ownerSVGElement;
 
@@ -90,7 +90,7 @@ export const getPositionForTarget = ({ target, clientX, clientY }) => {
   const { top, left } = target.getBoundingClientRect();
   return {
     x: clientX - left - target.clientLeft,
-    y: clientY - top - target.clientTop
+    y: clientY - top - target.clientTop,
   };
 };
 
@@ -119,7 +119,7 @@ export const getPointFromMatrix = (event, matrix) => {
 export const getLimitMatrix = (height: number, width: number, matrix) =>
   applyToPoints(matrix, [
     { x: 0, y: 0 },
-    { x: width, y: height }
+    { x: width, y: height },
   ]);
 
 /**

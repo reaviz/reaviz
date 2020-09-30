@@ -22,9 +22,15 @@ storiesOf('Charts/Map', module)
       height={350}
       width={500}
       markers={[
-        <MapMarker coordinates={[-122.490402, 37.786453]} tooltip="Somewhere" />,
-        <MapMarker coordinates={[-58.3816, -34.6037]} tooltip="Somewhere Else" />,
-        <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />
+        <MapMarker
+          coordinates={[-122.490402, 37.786453]}
+          tooltip="Somewhere"
+        />,
+        <MapMarker
+          coordinates={[-58.3816, -34.6037]}
+          tooltip="Somewhere Else"
+        />,
+        <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />,
       ]}
     />
   ));

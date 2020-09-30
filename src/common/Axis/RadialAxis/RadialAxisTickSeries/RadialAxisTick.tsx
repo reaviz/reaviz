@@ -1,11 +1,11 @@
 import React, { Component, ReactElement } from 'react';
 import {
   RadialAxisTickLineProps,
-  RadialAxisTickLine
+  RadialAxisTickLine,
 } from './RadialAxisTickLine';
 import {
   RadialAxisTickLabelProps,
-  RadialAxisTickLabel
+  RadialAxisTickLabel,
 } from './RadialAxisTickLabel';
 import { CloneElement } from '../../../utils/children';
 
@@ -28,7 +28,7 @@ export class RadialAxisTick extends Component<RadialAxisTickProps> {
     outerRadius: 0,
     padding: 0,
     line: <RadialAxisTickLine />,
-    label: <RadialAxisTickLabel />
+    label: <RadialAxisTickLabel />,
   };
 
   render() {
@@ -40,12 +40,13 @@ export class RadialAxisTick extends Component<RadialAxisTickProps> {
       data,
       index,
       padding,
-      innerRadius
+      innerRadius,
     } = this.props;
     const point = scale(data);
     const rotation = (point * 180) / Math.PI - 90;
-    const transform = `rotate(${rotation}) translate(${outerRadius +
-      padding},0)`;
+    const transform = `rotate(${rotation}) translate(${
+      outerRadius + padding
+    },0)`;
     const lineSize = line ? line.props.size : 0;
 
     return (

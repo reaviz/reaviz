@@ -4,7 +4,7 @@ import {
   ChartDataTypes,
   ChartInternalDataTypes,
   ChartNestedDataShape,
-  ChartShallowDataShape
+  ChartShallowDataShape,
 } from './types';
 
 export function normalizeValue(

@@ -3,12 +3,9 @@ import classNames from 'classnames';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps
+  ChartContainerChildProps,
 } from '../common/containers/ChartContainer';
-import {
-  ChartNestedDataShape,
-  buildNestedChartData
-} from '../common/data';
+import { ChartNestedDataShape, buildNestedChartData } from '../common/data';
 import { CloneElement } from '../common/utils/children';
 import bind from 'memoize-bind';
 import {
@@ -20,7 +17,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
   LinearXAxisTickLabel,
-  LinearAxis
+  LinearAxis,
 } from '../common/Axis';
 import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
@@ -81,7 +78,7 @@ export class Heatmap extends Component<HeatmapProps> {
           />
         }
       />
-    )
+    ),
   };
 
   getScalesData(chartHeight: number, chartWidth: number) {
@@ -89,9 +86,7 @@ export class Heatmap extends Component<HeatmapProps> {
 
     const data = buildNestedChartData(prevData);
 
-    const xDomain: any =
-      xAxis.props.domain ||
-      uniqueBy(data, d => d.key);
+    const xDomain: any = xAxis.props.domain || uniqueBy(data, (d) => d.key);
 
     const xScale = scaleBand()
       .range([0, chartWidth])
@@ -100,7 +95,11 @@ export class Heatmap extends Component<HeatmapProps> {
 
     const yDomain: any =
       yAxis.props.domain ||
-      uniqueBy(data, d => d.data, d => d.x);
+      uniqueBy(
+        data,
+        (d) => d.data,
+        (d) => d.x
+      );
 
     const yScale = scaleBand()
       .domain(yDomain)
@@ -110,7 +109,7 @@ export class Heatmap extends Component<HeatmapProps> {
     return {
       yScale,
       xScale,
-      data
+      data,
     };
   }
 
@@ -172,7 +171,7 @@ export class Heatmap extends Component<HeatmapProps> {
         yAxisVisible={isAxisVisible(yAxis.props)}
         className={classNames(className)}
       >
-        {props => this.renderChart(props)}
+        {(props) => this.renderChart(props)}
       </ChartContainer>
     );
   }

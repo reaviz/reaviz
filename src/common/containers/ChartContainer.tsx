@@ -73,7 +73,10 @@ export interface ChartContainerChildProps extends Dimensions {
   chartSized?: boolean;
   yAxisSized?: boolean;
   xAxisSized?: boolean;
-  updateAxes: (orientation: 'horizontal' | 'vertical', event: LinearAxisDimensionChanged) => void;
+  updateAxes: (
+    orientation: 'horizontal' | 'vertical',
+    event: LinearAxisDimensionChanged
+  ) => void;
 }
 
 export const ChartContainer: FC<ChartContainerProps> = ({
@@ -97,7 +100,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const { ref, width, height } = useDimensions<HTMLDivElement>();
 
   const chartSized = useMemo(() => {
-    if ((!height || !width)) {
+    if (!height || !width) {
       return false;
     }
 
@@ -113,50 +116,56 @@ export const ChartContainer: FC<ChartContainerProps> = ({
     return true;
   }, [height, width, xAxisSized, xAxisVisible, yAxisVisible, yAxisSized]);
 
-  const onUpdateAxes = useCallback((
-    orientation: 'horizontal' | 'vertical',
-    event: LinearAxisDimensionChanged
-  ) => {
-    if (orientation === 'horizontal') {
-      setXAxisSized(true);
-    } else {
-      setYAxisSized(true);
-    }
+  const onUpdateAxes = useCallback(
+    (
+      orientation: 'horizontal' | 'vertical',
+      event: LinearAxisDimensionChanged
+    ) => {
+      if (orientation === 'horizontal') {
+        setXAxisSized(true);
+      } else {
+        setYAxisSized(true);
+      }
 
-    if (event.height) {
-      setYOffset(event.height);
-    }
+      if (event.height) {
+        setYOffset(event.height);
+      }
 
-    if (event.width) {
-      setXOffset(event.width);
-    }
-  }, []);
+      if (event.width) {
+        setXOffset(event.width);
+      }
+    },
+    []
+  );
 
-  const childProps: ChartContainerChildProps = useMemo(() => ({
-    chartSized,
-    id: curId,
-    updateAxes: onUpdateAxes,
-    yAxisSized,
-    xAxisSized,
-    ...getDimension({
+  const childProps: ChartContainerChildProps = useMemo(
+    () => ({
+      chartSized,
+      id: curId,
+      updateAxes: onUpdateAxes,
+      yAxisSized,
+      xAxisSized,
+      ...getDimension({
+        margins,
+        height,
+        width,
+        yOffset,
+        xOffset,
+      }),
+    }),
+    [
+      chartSized,
+      id,
+      onUpdateAxes,
+      yAxisSized,
+      xAxisSized,
       margins,
       height,
       width,
       yOffset,
-      xOffset
-    })
-  }), [
-    chartSized,
-    id,
-    onUpdateAxes,
-    yAxisSized,
-    xAxisSized,
-    margins,
-    height,
-    width,
-    yOffset,
-    xOffset
-  ]);
+      xOffset,
+    ]
+  );
 
   const translateX = center || centerX ? width / 2 : childProps.xMargin;
   const translateY = center || centerY ? height / 2 : childProps.yMargin;
@@ -166,12 +175,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   return (
     <div ref={ref} style={{ height: styleHeight, width: styleWidth }}>
       {height > 0 && width > 0 && (
-        <svg
-          width={width}
-          height={height}
-          className={className}
-          style={style}
-        >
+        <svg width={width} height={height} className={className} style={style}>
           <g transform={`translate(${translateX}, ${translateY})`}>
             {children(childProps)}
           </g>

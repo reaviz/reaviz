@@ -75,7 +75,7 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
     onClick: () => undefined,
     onMouseEnter: () => undefined,
     onMouseLeave: () => undefined,
-    tooltip: <ChartTooltip />
+    tooltip: <ChartTooltip />,
   };
 
   getPaths() {
@@ -91,18 +91,16 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
     const newOuterRad = outerRadius + delta;
 
     // Create the arc fn to pass to the pie arc
-    const innerArc = arc()
-      .innerRadius(newInnerRad)
-      .outerRadius(newOuterRad);
+    const innerArc = arc().innerRadius(newInnerRad).outerRadius(newOuterRad);
 
     return {
       data: {
         startAngle,
         endAngle,
         // Data must be passed
-        data: data || {}
+        data: data || {},
       },
-      innerArc
+      innerArc,
     };
   }
 
@@ -114,7 +112,7 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
       tooltip,
       onClick,
       onMouseEnter,
-      onMouseLeave
+      onMouseLeave,
     } = this.props;
     const data = this.getPaths();
 

@@ -3,7 +3,7 @@ import { geoMercator, geoPath, GeoProjection, GeoPath } from 'd3-geo';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps
+  ChartContainerChildProps,
 } from '../common/containers/ChartContainer';
 import { CloneElement } from '../common/utils/children';
 import { MapMarkerProps, MapMarker } from './MapMarker';
@@ -25,13 +25,11 @@ export const Map: FC<MapProps> = ({
   className,
   markers,
   data,
-  fill = 'rgba(255, 255, 255, 0.3)'
+  fill = 'rgba(255, 255, 255, 0.3)',
 }) => {
   const getProjection = useCallback(
     ({ chartWidth, chartHeight }: ChartContainerChildProps) =>
-      geoMercator()
-        .fitSize([chartWidth, chartHeight], data)
-        .center([0, 35]),
+      geoMercator().fitSize([chartWidth, chartHeight], data).center([0, 35]),
     [data]
   );
 
@@ -82,10 +80,10 @@ export const Map: FC<MapProps> = ({
       return (
         <motion.g
           initial={{
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
-            opacity: 1
+            opacity: 1,
           }}
         >
           {data.features.map((point, index) =>
@@ -113,7 +111,7 @@ export const Map: FC<MapProps> = ({
       yAxisVisible={false}
       className={className}
     >
-      {props => renderChart(props)}
+      {(props) => renderChart(props)}
     </ChartContainer>
   );
 };

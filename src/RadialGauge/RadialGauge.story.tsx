@@ -20,8 +20,8 @@ storiesOf('Charts/Gauge/Radial', module)
       const data = object('Data', [
         {
           key: 'Austin, TX',
-          data: 24
-        }
+          data: 24,
+        },
       ]);
 
       return (
@@ -50,10 +50,10 @@ storiesOf('Charts/Gauge/Radial', module)
         '#CE003E',
         '#DF8D03',
         '#00ECB1',
-        '#9FA9B1'
+        '#9FA9B1',
       ]);
       const data = object('Data', categoryData);
-      const maxValue = max(data, d => d.data as number);
+      const maxValue = max(data, (d) => d.data as number);
 
       return (
         <RadialGauge

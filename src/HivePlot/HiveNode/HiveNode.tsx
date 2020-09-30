@@ -27,7 +27,7 @@ export class HiveNode extends Component<HiveNodeProps, {}> {
       onMouseOver,
       onMouseOut,
       active,
-      disabled
+      disabled,
     } = this.props;
 
     // If the size exists on the node, use it to specify the node size.
@@ -40,7 +40,7 @@ export class HiveNode extends Component<HiveNodeProps, {}> {
     return (
       <circle
         className={classNames(css.node, {
-          [css.inactive]: !active
+          [css.inactive]: !active,
         })}
         transform={`rotate(${getDegrees(angle(node.x))})`}
         cx={radius(node.y)}

@@ -24,24 +24,24 @@ export const getMarimekkoGroupScale = ({
   data,
   width,
   valueScale,
-  padding
+  padding,
 }: MariemkoScaleData) => {
-  const domain = uniqueBy<ChartInternalNestedDataShape>(data, d => d.key);
+  const domain = uniqueBy<ChartInternalNestedDataShape>(data, (d) => d.key);
   const barCount = data.length;
   const widthMinusPadding = width - padding * (barCount - 1);
   const xMultiplier = widthMinusPadding / width;
 
   // Given a data series, find the x0/x1 for it.
-  const getXRange = series => {
+  const getXRange = (series) => {
     const [val] = series.data;
     const x0 = valueScale(val.x0);
     const x1 = valueScale(val.x1);
     return { x0, x1 };
   };
 
-  const scale: any = arg => {
+  const scale: any = (arg) => {
     let result = 0;
-    const index = data.findIndex(d => d.key === arg);
+    const index = data.findIndex((d) => d.key === arg);
     const series = data[index];
 
     if (series && series.data && series.data.length) {

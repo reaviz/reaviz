@@ -2,7 +2,7 @@ import { scaleLinear, scaleTime, scaleBand } from 'd3-scale';
 import { getXDomain, getYDomain } from '../utils/domains';
 import {
   ChartInternalShallowDataShape,
-  ChartInternalNestedDataShape
+  ChartInternalNestedDataShape,
 } from '../data';
 import { uniqueBy } from '../utils/array';
 
@@ -31,7 +31,7 @@ export function getXScale({
   padding,
   scaled,
   isMultiSeries = false,
-  isDiverging = false
+  isDiverging = false,
 }: ScaleConfig) {
   let scale;
 
@@ -46,9 +46,9 @@ export function getXScale({
   } else {
     if (!domain) {
       if (isMultiSeries) {
-        domain = uniqueBy<ChartInternalShallowDataShape>(data, d => d.key);
+        domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.key);
       } else {
-        domain = uniqueBy<ChartInternalShallowDataShape>(data, d => d.x);
+        domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.x);
       }
     }
 
@@ -73,7 +73,7 @@ export function getYScale({
   scaled = false,
   padding = 0,
   isMultiSeries = false,
-  isDiverging = false
+  isDiverging = false,
 }: ScaleConfig) {
   let scale;
 
@@ -84,9 +84,12 @@ export function getYScale({
   } else {
     if (!domain) {
       if (isMultiSeries) {
-        domain = uniqueBy<ChartInternalNestedDataShape>(data as [], d => d.key);
+        domain = uniqueBy<ChartInternalNestedDataShape>(
+          data as [],
+          (d) => d.key
+        );
       } else {
-        domain = uniqueBy<ChartInternalShallowDataShape>(data, d => d.y);
+        domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.y);
       }
     }
 

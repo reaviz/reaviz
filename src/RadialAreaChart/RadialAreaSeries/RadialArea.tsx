@@ -74,47 +74,59 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   xScale,
   innerRadius,
   interpolation,
-  gradient = <RadialGradient />
+  gradient = <RadialGradient />,
 }) => {
-  const transition = useMemo(() =>
-    animated ?
-      { ...DEFAULT_TRANSITION } :
-      {
-        type: false,
-        delay: 0
-      }, [animated]);
+  const transition = useMemo(
+    () =>
+      animated
+        ? { ...DEFAULT_TRANSITION }
+        : {
+            type: false,
+            delay: 0,
+          },
+    [animated]
+  );
 
-  const getFill = useCallback((c: string) => {
-    if (!gradient) {
-      return c;
-    }
+  const getFill = useCallback(
+    (c: string) => {
+      if (!gradient) {
+        return c;
+      }
 
-    return `url(#${id}-gradient)`;
-  }, [id, gradient]);
+      return `url(#${id}-gradient)`;
+    },
+    [id, gradient]
+  );
 
-  const getPath = useCallback((d: ChartInternalShallowDataShape[]) => {
-    const curve =
-      interpolation === 'smooth' ? curveCardinalClosed : curveLinearClosed;
+  const getPath = useCallback(
+    (d: ChartInternalShallowDataShape[]) => {
+      const curve =
+        interpolation === 'smooth' ? curveCardinalClosed : curveLinearClosed;
 
-    const radialFn = radialArea()
-      .angle((dd: any) => xScale(dd.x))
-      .innerRadius(_ => innerRadius!)
-      .outerRadius((d: any) => yScale(d.y))
-      .curve(curve);
+      const radialFn = radialArea()
+        .angle((dd: any) => xScale(dd.x))
+        .innerRadius((_) => innerRadius!)
+        .outerRadius((d: any) => yScale(d.y))
+        .curve(curve);
 
-    return radialFn(d as any);
-  }, [xScale, yScale, interpolation, innerRadius]);
+      return radialFn(d as any);
+    },
+    [xScale, yScale, interpolation, innerRadius]
+  );
 
-  const enter = useMemo(() => ({
-    d: getPath(data!),
-    opacity: 1
-  }), [data, getPath]);
+  const enter = useMemo(
+    () => ({
+      d: getPath(data!),
+      opacity: 1,
+    }),
+    [data, getPath]
+  );
 
   const exit = useMemo(() => {
     const [yStart] = yScale.domain();
     return {
-      d: getPath(data!.map(d => ({ ...d, y: yStart }))),
-      opacity: 0
+      d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
+      opacity: 0,
     };
   }, [data, getPath, yScale]);
 
@@ -125,7 +137,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       <MotionPath
         custom={{
           enter,
-          exit
+          exit,
         }}
         transition={transition}
         pointerEvents="none"
@@ -142,4 +154,4 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       )}
     </Fragment>
   );
-}
+};

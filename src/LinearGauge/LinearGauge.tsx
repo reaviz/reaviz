@@ -2,14 +2,14 @@ import React, { Component, Fragment, ReactElement } from 'react';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps
+  ChartContainerChildProps,
 } from '../common/containers';
 import {
   ChartShallowDataShape,
   buildBarStackData,
   ChartInternalNestedDataShape,
   buildShallowChartData,
-  ChartNestedDataShape
+  ChartNestedDataShape,
 } from '../common/data';
 import { getXScale, getYScale } from '../common/scales';
 import { CloneElement } from '../common/utils';
@@ -41,7 +41,7 @@ export class LinearGauge extends Component<LinearGaugeProps> {
   static defaultProps: Partial<LinearGaugeProps> = {
     minValue: 0,
     maxValue: 100,
-    series: <LinearGaugeSeries />
+    series: <LinearGaugeSeries />,
   };
 
   getData(data: ChartShallowDataShape | ChartShallowDataShape[]) {
@@ -50,8 +50,8 @@ export class LinearGauge extends Component<LinearGaugeProps> {
         [
           {
             key: 'default',
-            data
-          }
+            data,
+          },
         ] as ChartNestedDataShape[],
         'expand',
         'horizontal'
@@ -76,19 +76,19 @@ export class LinearGauge extends Component<LinearGaugeProps> {
       type: 'value',
       data,
       domain,
-      isMultiSeries
+      isMultiSeries,
     });
 
     const valueScale = getYScale({
       type: 'category',
       height,
       data,
-      isMultiSeries
+      isMultiSeries,
     });
 
     return {
       keyScale,
-      valueScale
+      valueScale,
     };
   }
 
@@ -96,7 +96,7 @@ export class LinearGauge extends Component<LinearGaugeProps> {
     chartHeight,
     chartWidth,
     id,
-    chartSized
+    chartSized,
   }: ChartContainerChildProps) {
     const { series, data, minValue, maxValue } = this.props;
     const isMultiSeries = Array.isArray(data);
@@ -142,7 +142,7 @@ export class LinearGauge extends Component<LinearGaugeProps> {
         margins={margins}
         className={className}
       >
-        {props => this.renderChart(props)}
+        {(props) => this.renderChart(props)}
       </ChartContainer>
     );
   }

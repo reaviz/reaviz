@@ -13,7 +13,7 @@ export interface RadialAxisArcSeriesProps {
 export class RadialAxisArcSeries extends Component<RadialAxisArcSeriesProps> {
   static defaultProps: Partial<RadialAxisArcSeriesProps> = {
     count: 12,
-    arc: <RadialAxisArc />
+    arc: <RadialAxisArc />,
   };
 
   render() {
@@ -27,7 +27,7 @@ export class RadialAxisArcSeries extends Component<RadialAxisArcSeriesProps> {
 
     return (
       <Fragment>
-        {arcs.map(d => (
+        {arcs.map((d) => (
           <CloneElement<RadialAxisArcProps>
             element={arc}
             key={d}

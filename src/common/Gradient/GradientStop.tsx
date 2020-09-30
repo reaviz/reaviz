@@ -8,7 +8,7 @@ export interface GradientStopProps {
 
 export class GradientStop extends PureComponent<GradientStopProps> {
   static defaultProps: Partial<GradientStopProps> = {
-    stopOpacity: 1
+    stopOpacity: 1,
   };
 
   render() {

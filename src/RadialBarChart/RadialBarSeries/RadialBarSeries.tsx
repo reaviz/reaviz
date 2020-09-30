@@ -7,7 +7,7 @@ import {
   TooltipAreaProps,
   TooltipArea,
   TooltipAreaEvent,
-  ChartTooltip
+  ChartTooltip,
 } from '../../common/Tooltip';
 import isEqual from 'react-fast-compare';
 
@@ -85,20 +85,20 @@ export class RadialBarSeries extends Component<
     colorScheme: schemes.cybertron[0],
     tooltip: <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
     bar: <RadialBar />,
-    animated: true
+    animated: true,
   };
 
   state: RadialBarSeriesState = {};
 
   onValueEnter(event: TooltipAreaEvent) {
     this.setState({
-      activeValues: event.value
+      activeValues: event.value,
     });
   }
 
   onValueLeave() {
     this.setState({
-      activeValues: undefined
+      activeValues: undefined,
     });
   }
 
@@ -111,7 +111,7 @@ export class RadialBarSeries extends Component<
       id,
       data,
       animated,
-      colorScheme
+      colorScheme,
     } = this.props;
     const { activeValues } = this.state;
     const active = activeValues && data && isEqual(activeValues.x, point.x);
@@ -127,7 +127,7 @@ export class RadialBarSeries extends Component<
           active={active}
           yScale={yScale}
           innerRadius={innerRadius}
-          color={point => getColor({ data, point, index: 0, colorScheme })}
+          color={(point) => getColor({ data, point, index: 0, colorScheme })}
           barCount={data.length}
           animated={animated}
         />
@@ -146,7 +146,7 @@ export class RadialBarSeries extends Component<
       height,
       width,
       tooltip,
-      colorScheme
+      colorScheme,
     } = this.props;
 
     return (

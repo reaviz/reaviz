@@ -54,40 +54,49 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   data,
   interpolation,
   strokeWidth = 2,
-  animated = true
+  animated = true,
 }) => {
-  const getPath = useCallback((preData: ChartInternalShallowDataShape[]) => {
-    const curve =
-      interpolation === 'smooth' ? curveCardinalClosed : curveLinearClosed;
+  const getPath = useCallback(
+    (preData: ChartInternalShallowDataShape[]) => {
+      const curve =
+        interpolation === 'smooth' ? curveCardinalClosed : curveLinearClosed;
 
-    const radialFn = radialLine()
-      .angle((d: any) => xScale(d.x))
-      .radius((d: any) => yScale(d.y))
-      .curve(curve);
+      const radialFn = radialLine()
+        .angle((d: any) => xScale(d.x))
+        .radius((d: any) => yScale(d.y))
+        .curve(curve);
 
-    return radialFn(preData as any);
-  }, [xScale, yScale, interpolation]);
+      return radialFn(preData as any);
+    },
+    [xScale, yScale, interpolation]
+  );
 
-  const transition = useMemo(() =>
-    animated ?
-      { ...DEFAULT_TRANSITION } :
-      {
-        type: false,
-        delay: 0
-      }, [animated]);
+  const transition = useMemo(
+    () =>
+      animated
+        ? { ...DEFAULT_TRANSITION }
+        : {
+            type: false,
+            delay: 0,
+          },
+    [animated]
+  );
 
   const fill = color(data, 0);
 
-  const enter = useMemo(() => ({
-    d: getPath(data!),
-    opacity: 1
-  }), [data, getPath]);
+  const enter = useMemo(
+    () => ({
+      d: getPath(data!),
+      opacity: 1,
+    }),
+    [data, getPath]
+  );
 
   const exit = useMemo(() => {
     const [yStart] = yScale.domain();
     return {
-      d: getPath(data!.map(d => ({ ...d, y: yStart }))),
-      opacity: 0
+      d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
+      opacity: 0,
     };
   }, [data, yScale, getPath]);
 
@@ -95,7 +104,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
     <MotionPath
       custom={{
         enter,
-        exit
+        exit,
       }}
       transition={transition}
       className={className}
@@ -105,4 +114,4 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
       strokeWidth={strokeWidth}
     />
   );
-}
+};

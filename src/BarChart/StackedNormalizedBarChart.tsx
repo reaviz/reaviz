@@ -5,7 +5,7 @@ import { StackedNormalizedBarSeries } from './BarSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
 } from '../common/Axis/LinearAxis';
 
 interface StackedNormalizedBarChartProps extends BarChartProps {
@@ -24,7 +24,7 @@ export const StackedNormalizedBarChart: FC<Partial<
           label={
             <LinearYAxisTickLabel
               rotation={false}
-              format={data => `${data * 100}%`}
+              format={(data) => `${data * 100}%`}
             />
           }
         />

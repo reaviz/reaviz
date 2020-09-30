@@ -5,7 +5,7 @@ import {
   LinearXAxis,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickSeries
+  LinearXAxisTickSeries,
 } from '../common/Axis';
 import { BarSeries } from '../BarChart';
 import { schemes } from '../common/color';
@@ -31,7 +31,7 @@ export class BarSparklineChart extends Component<BarSparklineChartProps> {
         axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
-    )
+    ),
   };
 
   render() {

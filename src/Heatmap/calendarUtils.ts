@@ -40,7 +40,7 @@ export const buildDataScales = (
   // Get the most recent date to get the range from
   // From the end date, lets find the start year/month of that
   // From that start year/month, lets find the end year/month for our bounds
-  const startDate = min(rawData, d => d.key);
+  const startDate = min(rawData, (d) => d.key);
   const start = getFirstOfMonth(startDate);
   const endDomain = view === 'year' ? 53 : 5;
   const end = addWeeksToDate(start, endDomain);
@@ -56,13 +56,13 @@ export const buildDataScales = (
   // and turn them into something our chart can read
   const dates = rawData
     .filter(
-      d =>
+      (d) =>
         (d.key as Date).getTime() > start.getTime() ||
         (d.key as Date).getTime() < end.getTime()
     )
-    .map(d => ({
+    .map((d) => ({
       key: getStartOfDay(d.key as Date),
-      data: d.data
+      data: d.data,
     }));
 
   // Find the first day of the duration and subtract the delta
@@ -74,11 +74,11 @@ export const buildDataScales = (
   for (let week = 0; week < xDomainRange; week++) {
     const row = {
       key: week,
-      data: [] as any
+      data: [] as any,
     };
 
     for (let day = 0; day <= 6; day++) {
-      const dayValue = dates.find(d => d.key.getTime() === curDate.getTime());
+      const dayValue = dates.find((d) => d.key.getTime() === curDate.getTime());
 
       row.data.push({
         key: day,
@@ -86,8 +86,8 @@ export const buildDataScales = (
         metadata: {
           date: new Date(curDate.getTime()),
           start: start,
-          end: end
-        }
+          end: end,
+        },
       });
 
       curDate.setDate(curDate.getDate() + 1);
@@ -100,6 +100,6 @@ export const buildDataScales = (
     data: rows,
     yDomain,
     xDomain,
-    start
+    start,
   };
 };

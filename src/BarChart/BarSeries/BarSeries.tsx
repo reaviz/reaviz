@@ -4,7 +4,7 @@ import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
-  Direction
+  Direction,
 } from '../../common/data';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { CloneElement } from '../../common/utils/children';
@@ -12,7 +12,7 @@ import {
   TooltipAreaProps,
   TooltipArea,
   ChartTooltip,
-  TooltipAreaEvent
+  TooltipAreaEvent,
 } from '../../common/Tooltip';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
@@ -120,7 +120,7 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
           <ChartTooltip
             followCursor={true}
             modifiers={{
-              offset: '5px, 5px'
+              offset: '5px, 5px',
             }}
           />
         }
@@ -128,7 +128,7 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
     ),
     colorScheme: 'cybertron',
     bar: <Bar />,
-    layout: 'vertical'
+    layout: 'vertical',
   };
 
   state: BarSeriesState = {};
@@ -191,7 +191,7 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
       index,
       data,
       isMultiSeries,
-      attribute: key
+      attribute: key,
     });
   }
 
@@ -214,7 +214,7 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
       isCategorical,
       layout,
       type,
-      id
+      id,
     } = this.props;
     const { activeValues } = this.state;
     const active = activeValues && activeValues.x === data.key;
@@ -286,13 +286,13 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
 
   onValueEnter(event: TooltipAreaEvent) {
     this.setState({
-      activeValues: event.value
+      activeValues: event.value,
     });
   }
 
   onValueLeave() {
     this.setState({
-      activeValues: undefined
+      activeValues: undefined,
     });
   }
 

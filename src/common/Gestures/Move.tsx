@@ -21,7 +21,7 @@ export class Move extends Component<MoveProps> {
     onMoveStart: () => undefined,
     onMove: () => undefined,
     onMoveEnd: () => undefined,
-    onMoveCancel: () => undefined
+    onMoveCancel: () => undefined,
   };
 
   started = false;
@@ -77,7 +77,7 @@ export class Move extends Component<MoveProps> {
     const { clientX, clientY } = event.touches[0];
     return {
       clientX,
-      clientY
+      clientY,
     };
   }
 
@@ -99,7 +99,7 @@ export class Move extends Component<MoveProps> {
     window.addEventListener('mouseup', this.onMouseUp);
   }
 
-  onMouseMove = event => {
+  onMouseMove = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
@@ -117,7 +117,7 @@ export class Move extends Component<MoveProps> {
 
       this.props.onMoveStart({
         nativeEvent: event,
-        type: 'mouse'
+        type: 'mouse',
       });
     } else {
       this.rqf = requestAnimationFrame(() => {
@@ -125,13 +125,13 @@ export class Move extends Component<MoveProps> {
           nativeEvent: event,
           type: 'mouse',
           x: movementX,
-          y: movementY
+          y: movementY,
         });
       });
     }
   };
 
-  onMouseUp = event => {
+  onMouseUp = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
@@ -140,12 +140,12 @@ export class Move extends Component<MoveProps> {
     if (this.started) {
       this.props.onMoveEnd({
         nativeEvent: event,
-        type: 'mouse'
+        type: 'mouse',
       });
     } else {
       this.props.onMoveCancel({
         nativeEvent: event,
-        type: 'mouse'
+        type: 'mouse',
       });
     }
   };
@@ -195,9 +195,9 @@ export class Move extends Component<MoveProps> {
         nativeEvent: {
           ...event,
           clientX,
-          clientY
+          clientY,
         },
-        type: 'touch'
+        type: 'touch',
       });
     } else {
       this.rqf = requestAnimationFrame(() => {
@@ -206,11 +206,11 @@ export class Move extends Component<MoveProps> {
           nativeEvent: {
             ...event,
             clientX,
-            clientY
+            clientY,
           },
           type: 'touch',
           x: deltaX,
-          y: deltaY
+          y: deltaY,
         });
       });
     }
@@ -227,12 +227,12 @@ export class Move extends Component<MoveProps> {
     if (this.started) {
       this.props.onMoveEnd({
         nativeEvent: event,
-        type: 'touch'
+        type: 'touch',
       });
     } else {
       this.props.onMoveCancel({
         nativeEvent: event,
-        type: 'touch'
+        type: 'touch',
       });
     }
   };
@@ -241,18 +241,18 @@ export class Move extends Component<MoveProps> {
     return Children.map(this.props.children, (child: any) =>
       cloneElement(child, {
         ...child.props,
-        onMouseDown: e => {
+        onMouseDown: (e) => {
           this.onMouseDown(e);
           if (child.props.onMouseDown) {
             child.props.onMouseDown(e);
           }
         },
-        onTouchStart: e => {
+        onTouchStart: (e) => {
           this.onTouchStart(e);
           if (child.props.onTouchStart) {
             child.props.onTouchStart(e);
           }
-        }
+        },
       })
     );
   }

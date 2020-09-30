@@ -14,8 +14,8 @@ export class Gradient extends Component<GradientProps> {
     direction: 'vertical',
     stops: [
       <GradientStop offset="0%" stopOpacity={0.3} key="start" />,
-      <GradientStop offset="80%" stopOpacity={1} key="stop" />
-    ]
+      <GradientStop offset="80%" stopOpacity={1} key="stop" />,
+    ],
   };
 
   getDirection() {
@@ -24,14 +24,14 @@ export class Gradient extends Component<GradientProps> {
         x1: '10%',
         x2: '10%',
         y1: '100%',
-        y2: '0%'
+        y2: '0%',
       };
     } else {
       return {
         y1: '0%',
         y2: '0%',
         x1: '0%',
-        x2: '100%'
+        x2: '100%',
       };
     }
   }

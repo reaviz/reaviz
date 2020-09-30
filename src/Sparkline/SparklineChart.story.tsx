@@ -6,7 +6,7 @@ import {
   medDateData,
   smallDateData,
   sonarData,
-  sonarDataEmpties
+  sonarDataEmpties,
 } from '../../demo';
 import { SparklineChart } from './SparklineChart';
 import { AreaSparklineChart } from './AreaSparklineChart';

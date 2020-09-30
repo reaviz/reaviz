@@ -23,8 +23,8 @@ export interface PieArcSeriesProps {
 }
 
 const factor = 1.2;
-const midAngle = d => d.startAngle + (d.endAngle - d.startAngle) / 2;
-const labelVisible = arc => arc.endAngle - arc.startAngle > Math.PI / 30;
+const midAngle = (d) => d.startAngle + (d.endAngle - d.startAngle) / 2;
+const labelVisible = (arc) => arc.endAngle - arc.startAngle > Math.PI / 30;
 
 export class PieArcSeries extends Component<PieArcSeriesProps> {
   static defaultProps: Partial<PieArcSeriesProps> = {
@@ -35,7 +35,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     displayAllLabels: false,
     arcWidth: 0.25,
     label: <PieArcLabel />,
-    arc: <PieArc />
+    arc: <PieArc />,
   };
 
   calculateRadius() {
@@ -46,20 +46,20 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
 
     return {
       outerRadius,
-      innerRadius
+      innerRadius,
     };
   }
 
   shouldDisplayLabel(arcData) {
-    const { displayAllLabels } = this.props
+    const { displayAllLabels } = this.props;
 
-    return displayAllLabels || labelVisible(arcData)
+    return displayAllLabels || labelVisible(arcData);
   }
 
   calculateLabelPositions(outerArc, outerRadius) {
     const { label, data } = this.props;
 
-    const positions = data.map(d => {
+    const positions = data.map((d) => {
       const pos = outerArc.centroid(d);
       pos[0] = factor * outerRadius * (midAngle(d) < Math.PI ? 1 : -1);
       return pos;
@@ -100,11 +100,9 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
   }
 
   innerArc(innerRadius: number, outerRadius: number) {
-    return point => {
+    return (point) => {
       const newOuter = this.calculateOuterRadius(outerRadius, point);
-      return arc()
-        .innerRadius(innerRadius)
-        .outerRadius(newOuter)(point);
+      return arc().innerRadius(innerRadius).outerRadius(newOuter)(point);
     };
   }
 
@@ -115,7 +113,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
       return outerRadius;
     }
 
-    const maxVal = max(data, d => d.value);
+    const maxVal = max(data, (d) => d.value);
 
     let newOuter = outerRadius;
     if (explode && data !== undefined) {
@@ -126,7 +124,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
   }
 
   centroid(innerRadius: number, outerRadius: number) {
-    return data => {
+    return (data) => {
       const newOuter = this.calculateOuterRadius(outerRadius, data);
 
       return arc()
@@ -172,7 +170,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
                 data: this.props.data,
                 colorScheme: this.props.colorScheme,
                 point: arcData.data,
-                index
+                index,
               })}
             />
           </Fragment>

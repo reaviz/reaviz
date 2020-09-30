@@ -5,14 +5,14 @@ import {
   PanMoveEvent,
   PanStartEvent,
   PanEndEvent,
-  PanCancelEvent
+  PanCancelEvent,
 } from '../Gestures/Pan';
 import { Zoom, ZoomEvent } from '../Gestures/Zoom';
 import {
   identity,
   fromObject,
   fromDefinition,
-  transform
+  transform,
 } from 'transformation-matrix';
 import isEqual from 'react-fast-compare';
 
@@ -74,7 +74,7 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
     onPanEnd: () => undefined,
     onPanCancel: () => undefined,
     onZoom: () => undefined,
-    onZoomEnd: () => undefined
+    onZoomEnd: () => undefined,
   };
 
   static getDerivedStateFromProps(props: ZoomPanProps, state: ZoomPanState) {
@@ -82,13 +82,13 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
     const matrix = transform(
       (fromDefinition as any)([
         { type: 'translate', tx: props.x, ty: props.y },
-        { type: 'scale', sx: props.scale, sy: props.scale }
+        { type: 'scale', sx: props.scale, sy: props.scale },
       ])
     );
 
     if (!isEqual(matrix, state.matrix)) {
       return {
-        matrix
+        matrix,
       };
     }
 
@@ -100,12 +100,12 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
   state: ZoomPanState = {
     isZooming: false,
     isPanning: false,
-    matrix: identity()
+    matrix: identity(),
   };
 
   onPanStart(event: PanStartEvent) {
     this.setState({
-      isPanning: true
+      isPanning: true,
     });
 
     this.props.onPanStart(event);
@@ -117,7 +117,7 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
       x: event.x,
       y: event.y,
       type: 'pan',
-      nativeEvent: event.nativeEvent
+      nativeEvent: event.nativeEvent,
     });
 
     this.props.onPanMove(event);
@@ -134,7 +134,7 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
       y: event.y,
       scale: event.scale,
       nativeEvent: event.nativeEvent,
-      type: 'zoom'
+      type: 'zoom',
     });
 
     this.props.onZoom(event);
@@ -142,7 +142,7 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
 
   onZoomEnd() {
     this.setState({
-      isZooming: false
+      isZooming: false,
     });
 
     this.props.onZoomEnd();
@@ -166,7 +166,7 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
       zoomStep,
       onPanCancel,
       requireZoomModifier,
-      globalPanning
+      globalPanning,
     } = this.props;
     const { isZooming, isPanning } = this.state;
     const cursor = pannable ? 'move' : 'auto';
@@ -217,7 +217,7 @@ export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
           <g
             style={{
               pointerEvents: selection,
-              userSelect: selection
+              userSelect: selection,
             }}
           >
             {children}

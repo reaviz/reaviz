@@ -7,13 +7,13 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLine,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
 } from './LinearYAxis';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearXAxisTickLine,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
 } from './LinearXAxis';
 
 storiesOf('Charts/Axis/Linear', module)

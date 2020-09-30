@@ -3,10 +3,10 @@
  * Original: https://github.com/d3/d3-plugins/tree/master/hive
  */
 export function hiveLayout() {
-  let source = d => d.source;
-  let target = d => d.target;
-  let angle: any = d => d.angle;
-  let startRadius: any = d => d.radius;
+  let source = (d) => d.source;
+  let target = (d) => d.target;
+  let angle: any = (d) => d.angle;
+  let startRadius: any = (d) => d.radius;
   let endRadius = startRadius;
   const arcOffset = -Math.PI / 2;
 
@@ -100,7 +100,7 @@ export function hiveLayout() {
     return { r0, r1, a };
   };
 
-  link.source = s => {
+  link.source = (s) => {
     if (!s) {
       return source;
     }
@@ -108,7 +108,7 @@ export function hiveLayout() {
     return link;
   };
 
-  link.target = t => {
+  link.target = (t) => {
     if (!t) {
       return target;
     }
@@ -116,7 +116,7 @@ export function hiveLayout() {
     return link;
   };
 
-  link.angle = a => {
+  link.angle = (a) => {
     if (!a) {
       return angle;
     }
@@ -124,7 +124,7 @@ export function hiveLayout() {
     return link;
   };
 
-  link.radius = r => {
+  link.radius = (r) => {
     if (!r) {
       return startRadius;
     }
@@ -132,7 +132,7 @@ export function hiveLayout() {
     return link;
   };
 
-  link.startRadius = r => {
+  link.startRadius = (r) => {
     if (!r) {
       return startRadius;
     }
@@ -140,7 +140,7 @@ export function hiveLayout() {
     return link;
   };
 
-  link.endRadius = r => {
+  link.endRadius = (r) => {
     if (!r) {
       return endRadius;
     }

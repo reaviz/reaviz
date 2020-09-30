@@ -6,7 +6,7 @@ import {
   randomNumber,
   generateDate,
   signalStageData,
-  signalStages
+  signalStages,
 } from '../../../demo';
 import {
   LinearXAxis,
@@ -14,7 +14,7 @@ import {
   LinearXAxisTickLabel,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
 } from '../Axis';
 import { TooltipArea } from '../Tooltip';
 import { ChartBrush } from './ChartBrush';
@@ -76,9 +76,9 @@ storiesOf('Charts/Brush', module)
   .add('Bar', () => {
     const barData = range(50)
       .filter(() => randomNumber(1, 2) % 2)
-      .map(i => ({
+      .map((i) => ({
         key: generateDate(randomNumber(i - 2, i + 2)),
-        data: randomNumber(1, 10)
+        data: randomNumber(1, 10),
       }))
       .sort((a, b) => (a > b ? -1 : a < b ? 1 : 0));
 
@@ -105,20 +105,22 @@ storiesOf('Charts/Brush', module)
             }
           />
         }
-        series={<HistogramBarSeries tooltip={null} binSize={60 * 60 * 24 * 1000} />}
+        series={
+          <HistogramBarSeries tooltip={null} binSize={60 * 60 * 24 * 1000} />
+        }
       />
     );
   })
   .add('Bubble', () => {
     const data = range(20)
       .filter(() => randomNumber(1, 10) % 2)
-      .map(i => {
+      .map((i) => {
         return {
           key: generateDate(i),
           data: 1,
           metadata: {
-            severity: randomNumber(1, 10)
-          }
+            severity: randomNumber(1, 10),
+          },
         };
       })
       .reverse();
@@ -134,7 +136,7 @@ storiesOf('Charts/Brush', module)
             point={
               <ScatterPoint
                 tooltip={<TooltipArea disabled={true} />}
-                symbol={d => {
+                symbol={(d) => {
                   const scale = d.metadata.severity / 50;
                   const size = scale * 100;
                   return (
@@ -145,7 +147,7 @@ storiesOf('Charts/Brush', module)
                         style={{
                           fill: 'rgba(206, 0, 62, .7)',
                           stroke: '#FF004D',
-                          strokeWidth: 5
+                          strokeWidth: 5,
                         }}
                       />
                     </g>
@@ -190,7 +192,7 @@ storiesOf('Charts/Brush', module)
           disabled={false}
           domain={[
             largeDateData[largeDateData.length / 2].key,
-            largeDateData[largeDateData.length - 1].key
+            largeDateData[largeDateData.length - 1].key,
           ]}
         />
       }
@@ -214,7 +216,7 @@ storiesOf('Charts/Brush', module)
 class ZoomBrushStory extends Component {
   state = {
     domain: undefined,
-    brushing: false
+    brushing: false,
   };
   timeout: any;
 
@@ -224,15 +226,15 @@ class ZoomBrushStory extends Component {
 
     this.setState({
       domain,
-      brushing: true
+      brushing: true,
     });
   };
 
   render() {
     const { brushing, domain } = this.state;
-    const brushData = signalStageData.map(d => ({
+    const brushData = signalStageData.map((d) => ({
       ...d,
-      data: 1
+      data: 1,
     }));
 
     return (
@@ -289,7 +291,7 @@ class ZoomBrushStory extends Component {
                 point={
                   <ScatterPoint
                     tooltip={<Tooltip disabled={true} />}
-                    size={d => {
+                    size={(d) => {
                       return d.metadata.severity + 5;
                     }}
                   />

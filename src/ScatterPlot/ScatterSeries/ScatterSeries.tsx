@@ -70,33 +70,36 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   point = <ScatterPoint />,
   ...rest
 }) => {
-  const renderPoint = useCallback((pointData: ChartInternalShallowDataShape, index: number) => {
-    let pointId;
-    if (pointData.id) {
-      pointId = pointData.id;
-    }
+  const renderPoint = useCallback(
+    (pointData: ChartInternalShallowDataShape, index: number) => {
+      let pointId;
+      if (pointData.id) {
+        pointId = pointData.id;
+      }
 
-    const key = pointId || index;
-    const active =
-      !(activeIds && activeIds.length) || activeIds.includes(pointId);
+      const key = pointId || index;
+      const active =
+        !(activeIds && activeIds.length) || activeIds.includes(pointId);
 
-    const visible = point.props.visible;
-    if (visible && !visible(pointData, index)) {
-      return <Fragment key={key} />;
-    }
+      const visible = point.props.visible;
+      if (visible && !visible(pointData, index)) {
+        return <Fragment key={key} />;
+      }
 
-    return (
-      <CloneElement<ScatterPointProps>
-        element={point}
-        key={key}
-        {...rest}
-        id={id}
-        data={pointData}
-        index={index}
-        active={active}
-      />
-    );
-  }, [point, id, rest, activeIds]);
+      return (
+        <CloneElement<ScatterPointProps>
+          element={point}
+          key={key}
+          {...rest}
+          id={id}
+          data={pointData}
+          index={index}
+          active={active}
+        />
+      );
+    },
+    [point, id, rest, activeIds]
+  );
 
   return (
     <Fragment>
@@ -110,9 +113,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
           />
         </clipPath>
       </defs>
-      <g clipPath={`url(#${id}-path)`}>
-        {data!.map(renderPoint)}
-      </g>
+      <g clipPath={`url(#${id}-path)`}>{data!.map(renderPoint)}</g>
     </Fragment>
   );
-}
+};

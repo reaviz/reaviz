@@ -29,5 +29,5 @@ export const constructFunctionProps = (
   data: any
 ) => ({
   className: functionProps('className', props.className, data),
-  style: functionProps('style', props.style, data)
+  style: functionProps('style', props.style, data),
 });

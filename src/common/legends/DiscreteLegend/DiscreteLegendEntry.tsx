@@ -3,7 +3,7 @@ import css from './DiscreteLegendEntry.module.scss';
 import classNames from 'classnames';
 import {
   DiscreteLegendSymbol,
-  DiscreteLegendSymbolProps
+  DiscreteLegendSymbolProps,
 } from './DiscreteLegendSymbol';
 import { CloneElement } from '../../utils/children';
 
@@ -67,7 +67,7 @@ export class DiscreteLegendEntry extends Component<DiscreteLegendEntryProps> {
     orientation: 'horizontal',
     onMouseEnter: () => undefined,
     onMouseLeave: () => undefined,
-    onClick: () => undefined
+    onClick: () => undefined,
   };
 
   render() {
@@ -80,11 +80,11 @@ export class DiscreteLegendEntry extends Component<DiscreteLegendEntryProps> {
       color,
       style,
       onClick,
-      orientation
+      orientation,
     } = this.props;
     const className = classNames(css.entry, this.props.className, {
       [css.vertical]: orientation === 'vertical',
-      [css.horizontal]: orientation === 'horizontal'
+      [css.horizontal]: orientation === 'horizontal',
     });
 
     return (

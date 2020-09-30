@@ -10,12 +10,12 @@ export const calculateDimensions = (
   if (typeof document === 'undefined') {
     return {
       width: text.length * 8,
-      height: 25
+      height: 25,
     };
   }
 
   return calculateSize(text, {
     font: fontFamily,
-    fontSize: `${fontSize}px`
+    fontSize: `${fontSize}px`,
   });
 };

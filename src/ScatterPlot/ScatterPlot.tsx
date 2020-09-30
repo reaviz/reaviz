@@ -4,14 +4,14 @@ import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
   buildShallowChartData,
-  ChartDataTypes
+  ChartDataTypes,
 } from '../common/data';
 import {
   isAxisVisible,
   LinearAxisProps,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
 } from '../common/Axis';
 import bind from 'memoize-bind';
 import { getYScale, getXScale } from '../common/scales';
@@ -20,14 +20,14 @@ import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
-  ChartZoomPan
+  ChartZoomPan,
 } from '../common/ZoomPan';
 import css from './ScatterPlot.module.scss';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps
+  ChartContainerChildProps,
 } from '../common/containers/ChartContainer';
 import { CloneElement } from '../common/utils/children';
 import memoize from 'memoize-one';
@@ -89,7 +89,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
     series: <ScatterSeries />,
     gridlines: <GridlineSeries />,
     brush: null,
-    zoomPan: null
+    zoomPan: null,
   };
 
   static getDerivedStateFromProps(
@@ -101,7 +101,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
       if (!state.zoomControlled && zoom.domain !== state.zoomDomain) {
         return {
           zoomDomain: zoom.domain,
-          isZoomed: !!zoom.domain
+          isZoomed: !!zoom.domain,
         };
       }
     }
@@ -120,11 +120,11 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
     this.state = {
       isZoomed: !!zoom.domain,
       zoomDomain: zoom.domain,
-      zoomControlled
+      zoomControlled,
     };
   }
 
-  getData = memoize(data => {
+  getData = memoize((data) => {
     return buildShallowChartData(data) as ChartInternalShallowDataShape[];
   });
 
@@ -141,7 +141,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
       type: yAxis.props.type,
       height: chartHeight,
       data,
-      domain: yAxis.props.domain
+      domain: yAxis.props.domain,
     });
 
     const xScale = getXScale({
@@ -149,13 +149,13 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
       type: xAxis.props.type,
       roundDomains: xAxis.props.roundDomains,
       data,
-      domain: zoomDomain || xAxis.props.domain
+      domain: zoomDomain || xAxis.props.domain,
     });
 
     return {
       data,
       yScale,
-      xScale
+      xScale,
     };
   }
 
@@ -164,7 +164,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
       this.setState({
         zoomDomain: event.domain,
         isZoomed: event.isZoomed,
-        preventAnimation: true
+        preventAnimation: true,
       });
 
       clearTimeout(this.timeout);
@@ -184,7 +184,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
       gridlines,
       brush,
       zoomPan,
-      secondaryAxis
+      secondaryAxis,
     } = this.props;
     const { isZoomed, zoomDomain, preventAnimation } = this.state;
     const data = this.getData(this.props.data);
@@ -276,7 +276,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
         yAxisVisible={isAxisVisible(yAxis.props)}
         className={classNames(css.scatterPlot, className)}
       >
-        {props => this.renderChart(props)}
+        {(props) => this.renderChart(props)}
       </ChartContainer>
     );
   }

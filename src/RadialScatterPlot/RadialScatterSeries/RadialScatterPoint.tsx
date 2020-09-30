@@ -3,7 +3,7 @@ import React, {
   ReactNode,
   createRef,
   Fragment,
-  ReactElement
+  ReactElement,
 } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { radialLine } from 'd3-shape';
@@ -118,12 +118,12 @@ export class RadialScatterPoint extends Component<
     active: true,
     onClick: () => undefined,
     onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined
+    onMouseLeave: () => undefined,
   };
 
   ref = createRef<SVGGElement>();
   state: RadialScatterPointState = {
-    hovered: false
+    hovered: false,
   };
 
   onMouseEnter(event: MouseEvent) {
@@ -132,7 +132,7 @@ export class RadialScatterPoint extends Component<
     const { onMouseEnter, data } = this.props;
     onMouseEnter({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -142,7 +142,7 @@ export class RadialScatterPoint extends Component<
     const { onMouseLeave, data } = this.props;
     onMouseLeave({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -150,7 +150,7 @@ export class RadialScatterPoint extends Component<
     const { onClick, data } = this.props;
     onClick({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -166,14 +166,11 @@ export class RadialScatterPoint extends Component<
     const path = fn([data] as any);
 
     if (path) {
-      const [translateX, translateY] = path
-        .slice(1)
-        .slice(0, -1)
-        .split(',');
+      const [translateX, translateY] = path.slice(1).slice(0, -1).split(',');
 
       return {
         translateX: parseFloat(translateX),
-        translateY: parseFloat(translateY)
+        translateY: parseFloat(translateY),
       };
     }
   }
@@ -184,12 +181,12 @@ export class RadialScatterPoint extends Component<
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: index * 0.005
+        delay: index * 0.005,
       };
     } else {
       return {
         type: false,
-        delay: 0
+        delay: 0,
       };
     }
   }
@@ -204,7 +201,7 @@ export class RadialScatterPoint extends Component<
       active,
       tooltip,
       yScale,
-      className
+      className,
     } = this.props;
     const { hovered } = this.state;
 
@@ -228,7 +225,7 @@ export class RadialScatterPoint extends Component<
           onMouseLeave={bind(this.onMouseLeave, this)}
           onClick={bind(this.onClick, this)}
           className={classNames(className, {
-            [css.inactive]: !active
+            [css.inactive]: !active,
           })}
         >
           {symbol && symbol(data)}

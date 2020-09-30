@@ -12,7 +12,7 @@ export class RadialAxisTickLine extends PureComponent<RadialAxisTickLineProps> {
   static defaultProps: Partial<RadialAxisTickLineProps> = {
     stroke: 'rgba(113, 128, 141, .5)',
     size: 10,
-    position: 'inside'
+    position: 'inside',
   };
 
   render() {

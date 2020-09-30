@@ -2,7 +2,7 @@ import React, { Component, Fragment, ReactElement } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import {
   RadialScatterPoint,
-  RadialScatterPointProps
+  RadialScatterPointProps,
 } from './RadialScatterPoint';
 import { CloneElement } from '../../common/utils/children';
 import bind from 'memoize-bind';
@@ -54,18 +54,18 @@ export class RadialScatterSeries extends Component<
 > {
   static defaultProps: Partial<RadialScatterSeriesProps> = {
     point: <RadialScatterPoint />,
-    animated: true
+    animated: true,
   };
 
   state: RadialScatterSeriesState = {
-    activeIds: []
+    activeIds: [],
   };
 
   onMouseEnter({ value }) {
     // Only perform this on unmanaged activations
     if (!this.props.activeIds) {
       this.setState({
-        activeIds: [value.id]
+        activeIds: [value.id],
       });
     }
   }
@@ -74,7 +74,7 @@ export class RadialScatterSeries extends Component<
     // Only perform this on unmanaged activations
     if (!this.props.activeIds) {
       this.setState({
-        activeIds: []
+        activeIds: [],
       });
     }
   }

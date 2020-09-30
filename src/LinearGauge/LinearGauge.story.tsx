@@ -71,27 +71,26 @@ storiesOf('Charts/Gauge/Linear/Single-Series', module)
     </div>
   ));
 
-storiesOf('Charts/Gauge/Linear/Multi-Series', module)
-  .add('Simple', () => (
-    <div style={{ width: '465px', textAlign: 'center' }}>
-      <h2 style={{ color: 'white', margin: 0 }}>MIRTE Attack</h2>
-      <LinearGauge
-        height={30}
-        data={mitreData}
-        series={<LinearGaugeSeries colorScheme={colorScheme} />}
-      />
-      <DiscreteLegend
-        orientation="horizontal"
-        entries={mitreData.map((v, i) => (
-          <DiscreteLegendEntry
-            key={v.key}
-            style={{ padding: '0 3px' }}
-            symbol={<Icon fill={colorScheme[i]} />}
-            label={`${v.data}`}
-            color={colorScheme[i]}
-            orientation="horizontal"
-          />
-        ))}
-      />
-    </div>
-  ));
+storiesOf('Charts/Gauge/Linear/Multi-Series', module).add('Simple', () => (
+  <div style={{ width: '465px', textAlign: 'center' }}>
+    <h2 style={{ color: 'white', margin: 0 }}>MIRTE Attack</h2>
+    <LinearGauge
+      height={30}
+      data={mitreData}
+      series={<LinearGaugeSeries colorScheme={colorScheme} />}
+    />
+    <DiscreteLegend
+      orientation="horizontal"
+      entries={mitreData.map((v, i) => (
+        <DiscreteLegendEntry
+          key={v.key}
+          style={{ padding: '0 3px' }}
+          symbol={<Icon fill={colorScheme[i]} />}
+          label={`${v.data}`}
+          color={colorScheme[i]}
+          orientation="horizontal"
+        />
+      ))}
+    />
+  </div>
+));

@@ -9,12 +9,12 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
   const spring = useSpring(prevPath, {
     ...DEFAULT_TRANSITION,
     from: 0,
-    to: 1
+    to: 1,
   });
 
   useEffect(() => {
     const interpolator = interpolate(prevPath.get(), custom.enter.d);
-    const unsub = spring.onChange(v => d.set(interpolator(v)));
+    const unsub = spring.onChange((v) => d.set(interpolator(v)));
     prevPath.set(custom.enter.d);
     return unsub;
   });

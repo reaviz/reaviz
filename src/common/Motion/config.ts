@@ -1,5 +1,5 @@
 export const DEFAULT_TRANSITION = {
   type: 'spring',
   velocity: 10,
-  damping: 50
+  damping: 50,
 };

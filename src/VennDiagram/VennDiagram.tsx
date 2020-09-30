@@ -1,5 +1,9 @@
 import React, { FC, Fragment, useCallback } from 'react';
-import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
+import {
+  ChartContainer,
+  ChartContainerChildProps,
+  ChartProps,
+} from '../common/containers';
 import { layout } from '@upsetjs/venn.js';
 import { VennSeries } from './VennSeries';
 
@@ -13,18 +17,26 @@ export interface VennDiagramProps extends ChartProps {
 }
 
 export const VennDiagram: FC<VennDiagramProps> = ({
-  id, width, height, margins, className, data,
+  id,
+  width,
+  height,
+  margins,
+  className,
+  data,
 }) => {
-  const normalized = data.map(d => ({ sets: d.key, size: d.data }));
+  const normalized = data.map((d) => ({ sets: d.key, size: d.data }));
 
-  const renderChart = useCallback((containerProps: ChartContainerChildProps) => {
-    const layoutData = layout(normalized, {
-      height: containerProps.height,
-      width: containerProps.width
-    });
+  const renderChart = useCallback(
+    (containerProps: ChartContainerChildProps) => {
+      const layoutData = layout(normalized, {
+        height: containerProps.height,
+        width: containerProps.width,
+      });
 
-    return <VennSeries data={layoutData} />;
-  }, [normalized]);
+      return <VennSeries data={layoutData} />;
+    },
+    [normalized]
+  );
 
   return (
     <ChartContainer
@@ -37,7 +49,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       center={false}
       className={className}
     >
-      {props => renderChart(props)}
+      {(props) => renderChart(props)}
     </ChartContainer>
   );
-}
+};

@@ -19,12 +19,12 @@ export class BrushHandle extends PureComponent<
   BrushHandleState
 > {
   state: BrushHandleState = {
-    isDragging: false
+    isDragging: false,
   };
 
   onMoveStart() {
     this.setState({
-      isDragging: true
+      isDragging: true,
     });
   }
 
@@ -34,7 +34,7 @@ export class BrushHandle extends PureComponent<
 
   onMoveEnd() {
     this.setState({
-      isDragging: false
+      isDragging: false,
     });
   }
 
@@ -63,7 +63,7 @@ export class BrushHandle extends PureComponent<
             transform={`translate(-1, ${height / 2 - 10})`}
             style={{ pointerEvents: 'none' }}
           >
-            {range(5).map(i => (
+            {range(5).map((i) => (
               <circle cy={i * 5} cx="5" r=".5" key={i} className={css.dot} />
             ))}
           </g>

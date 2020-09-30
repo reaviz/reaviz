@@ -37,7 +37,7 @@ export interface SequentialLegendProps {
 export class SequentialLegend extends PureComponent<SequentialLegendProps> {
   static defaultProps: Partial<SequentialLegendProps> = {
     colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
-    orientation: 'vertical'
+    orientation: 'vertical',
   };
 
   render() {
@@ -53,7 +53,11 @@ export class SequentialLegend extends PureComponent<SequentialLegendProps> {
 
     // Get the extent from the data passed
     const [end, start] = extent(
-      uniqueBy(data, d => d.data, d => d.data)
+      uniqueBy(
+        data,
+        (d) => d.data,
+        (d) => d.data
+      )
     );
 
     // Get direction
@@ -64,14 +68,14 @@ export class SequentialLegend extends PureComponent<SequentialLegendProps> {
         style={style}
         className={classNames(css.container, className, {
           [css.vertical]: orientation === 'vertical',
-          [css.horizontal]: orientation === 'horizontal'
+          [css.horizontal]: orientation === 'horizontal',
         })}
       >
         <div className={css.start}>{formatValue(start)}</div>
         <div
           className={css.gradient}
           style={{
-            background: `linear-gradient(${gradientDir}${color})`
+            background: `linear-gradient(${gradientDir}${color})`,
           }}
         />
         <div className={css.end}>{formatValue(end)}</div>

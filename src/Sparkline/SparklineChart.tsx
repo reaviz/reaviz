@@ -7,7 +7,7 @@ import {
   LinearXAxis,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickSeries
+  LinearXAxisTickSeries,
 } from '../common/Axis/LinearAxis';
 
 export interface SparklineChartProps extends LineChartProps {
@@ -41,7 +41,7 @@ export class SparklineChart extends Component<SparklineChartProps, {}> {
         axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
-    )
+    ),
   };
 
   render() {

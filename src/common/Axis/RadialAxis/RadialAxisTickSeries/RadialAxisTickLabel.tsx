@@ -25,7 +25,7 @@ export class RadialAxisTickLabel extends PureComponent<
     fontSize: 11,
     padding: 15,
     fontFamily: 'sans-serif',
-    autoRotate: true
+    autoRotate: true,
   };
 
   getPosition() {
@@ -61,7 +61,7 @@ export class RadialAxisTickLabel extends PureComponent<
 
     return {
       transform,
-      textAnchor
+      textAnchor,
     };
   }
 
@@ -73,7 +73,7 @@ export class RadialAxisTickLabel extends PureComponent<
       fontSize,
       format,
       lineSize,
-      index
+      index,
     } = this.props;
     const text = format ? format(data, index) : formatValue(data);
     const { transform, textAnchor } = this.getPosition();

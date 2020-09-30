@@ -12,7 +12,7 @@ storiesOf('Charts/Hive Plot', module)
       axis={[
         { label: 'Severity', attribute: 'severity' },
         { label: 'Stage', attribute: 'category' },
-        { label: 'Time', attribute: 'timestamp' }
+        { label: 'Time', attribute: 'timestamp' },
       ]}
       label={{ show: false }}
       disabled={true}
@@ -27,7 +27,7 @@ storiesOf('Charts/Hive Plot', module)
       axis={[
         { label: 'Severity', attribute: 'severity' },
         { label: 'Stage', attribute: 'category' },
-        { label: 'Time', attribute: 'timestamp' }
+        { label: 'Time', attribute: 'timestamp' },
       ]}
       nodes={nodes}
       links={links}
@@ -39,7 +39,7 @@ storiesOf('Charts/Hive Plot', module)
         axis={[
           { label: 'Severity', attribute: 'severity' },
           { label: 'Stage', attribute: 'category' },
-          { label: 'Time', attribute: 'timestamp' }
+          { label: 'Time', attribute: 'timestamp' },
         ]}
         nodes={nodes}
         links={links}
@@ -47,7 +47,7 @@ storiesOf('Charts/Hive Plot', module)
     </div>
   ))
   .add('Performance', () =>
-    range(20).map(i => (
+    range(20).map((i) => (
       <div
         key={i}
         style={{
@@ -55,14 +55,14 @@ storiesOf('Charts/Hive Plot', module)
           height: '250px',
           border: 'solid 1px green',
           margin: '25px',
-          display: 'inline-block'
+          display: 'inline-block',
         }}
       >
         <HivePlot
           axis={[
             { label: 'Severity', attribute: 'severity' },
             { label: 'Stage', attribute: 'category' },
-            { label: 'Time', attribute: 'timestamp' }
+            { label: 'Time', attribute: 'timestamp' },
           ]}
           height={250}
           width={250}

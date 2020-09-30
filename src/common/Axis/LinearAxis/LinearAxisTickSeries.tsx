@@ -1,11 +1,11 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import {
   LinearAxisTickLabel,
-  LinearAxisTickLabelProps
+  LinearAxisTickLabelProps,
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLine,
-  LinearAxisTickLineProps
+  LinearAxisTickLineProps,
 } from './LinearAxisTickLine';
 import { formatValue } from '../../utils/formatting';
 import { getTicks, getMaxTicks } from '../../utils/ticks';
@@ -46,7 +46,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
   static defaultProps: Partial<LinearAxisTickSeriesProps> = {
     line: <LinearAxisTickLine />,
     label: <LinearAxisTickLabel />,
-    tickSize: 30
+    tickSize: 30,
   };
 
   /**
@@ -61,9 +61,9 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
         offset = Math.round(offset);
       }
 
-      return d => +scale(d) + offset;
+      return (d) => +scale(d) + offset;
     } else {
-      return d => +scale(d);
+      return (d) => +scale(d);
     }
   }
 
@@ -100,7 +100,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
 
     const label = this.props.label.props;
     const dimension = this.getDimension();
-    const maxTicksLength = max(ticks, tick => tick.width);
+    const maxTicksLength = max(ticks, (tick) => tick.width);
     let angle = 0;
 
     if (label.rotation) {
@@ -131,7 +131,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
     } else if (scale.tickFormat) {
       return scale.tickFormat.apply(scale, [5]);
     } else {
-      return v => formatValue(v);
+      return (v) => formatValue(v);
     }
   }
 
@@ -148,7 +148,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
     const format = this.getLabelFormat();
     const midpoint = dimension / 2;
 
-    return ticks.map(tick => {
+    return ticks.map((tick) => {
       const fullText = format(tick);
       const scaledTick = adjustedScale(tick);
       const position = this.getPosition(scaledTick);
@@ -171,7 +171,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
             ? 'center'
             : scaledTick < midpoint
             ? 'start'
-            : 'end'
+            : 'end',
       };
     });
   }

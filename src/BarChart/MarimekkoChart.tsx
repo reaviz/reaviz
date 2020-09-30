@@ -7,7 +7,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
 } from '../common/Axis/LinearAxis';
 
 interface MarimekkoChartProps extends BarChartProps {
@@ -30,7 +30,7 @@ export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = ({
           label={
             <LinearYAxisTickLabel
               rotation={false}
-              format={data => `${data * 100}%`}
+              format={(data) => `${data * 100}%`}
             />
           }
         />

@@ -10,7 +10,7 @@ storiesOf('Charts/Legend/Discrete/Vertical', module).add('Simple', () => (
       <DiscreteLegendEntry label="DLP" color="green" />,
       <DiscreteLegendEntry label="SIEM" color="blue" />,
       <DiscreteLegendEntry label="AWS" color="yellow" />,
-      <DiscreteLegendEntry label="AD" color="purple" />
+      <DiscreteLegendEntry label="AD" color="purple" />,
     ]}
   />
 ));
@@ -23,7 +23,7 @@ storiesOf('Charts/Legend/Discrete/Horizontal', module)
         <DiscreteLegendEntry label="DLP" color="green" />,
         <DiscreteLegendEntry label="SIEM" color="blue" />,
         <DiscreteLegendEntry label="AWS" color="yellow" />,
-        <DiscreteLegendEntry label="AD" color="purple" />
+        <DiscreteLegendEntry label="AD" color="purple" />,
       ]}
     />
   ))
@@ -46,7 +46,11 @@ storiesOf('Charts/Legend/Discrete/Horizontal', module)
           color="yellow"
           orientation="vertical"
         />,
-        <DiscreteLegendEntry label="AD" color="purple" orientation="vertical" />
+        <DiscreteLegendEntry
+          label="AD"
+          color="purple"
+          orientation="vertical"
+        />,
       ]}
     />
   ));

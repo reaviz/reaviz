@@ -3,7 +3,7 @@
  */
 export const getMidpoint = (pointA, pointB) => ({
   x: (pointA.x + pointB.x) / 2,
-  y: (pointA.y + pointB.y) / 2
+  y: (pointA.y + pointB.y) / 2,
 });
 
 /**
@@ -20,9 +20,9 @@ export const getDistanceBetweenPoints = (pointA, pointB) =>
 export function getTouchPoints(event, node) {
   const { left, top } = node.getBoundingClientRect();
 
-  const [pointA, pointB] = [...event.touches].map(touch => ({
+  const [pointA, pointB] = [...event.touches].map((touch) => ({
     x: touch.clientX - Math.round(left),
-    y: touch.clientY - Math.round(top)
+    y: touch.clientY - Math.round(top),
   }));
 
   const distance = getDistanceBetweenPoints(pointA, pointB);
@@ -32,6 +32,6 @@ export function getTouchPoints(event, node) {
     pointA,
     pointB,
     distance,
-    midpoint
+    midpoint,
   };
 }

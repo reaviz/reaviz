@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { CloneElement } from '../../utils/children';
 import {
   DiscreteLegendEntryProps,
-  DiscreteLegendEntry
+  DiscreteLegendEntry,
 } from './DiscreteLegendEntry';
 import css from './DiscreteLegend.module.scss';
 
@@ -31,14 +31,14 @@ export interface DiscreteLegendProps {
 
 export class DiscreteLegend extends Component<DiscreteLegendProps> {
   static defaultProps: Partial<DiscreteLegendProps> = {
-    orientation: 'vertical'
+    orientation: 'vertical',
   };
 
   render() {
     const { entries, orientation, style } = this.props;
     const className = classNames(css.container, this.props.className, {
       [css.horizontal]: orientation === 'horizontal',
-      [css.vertical]: orientation === 'vertical'
+      [css.vertical]: orientation === 'vertical',
     });
 
     return (

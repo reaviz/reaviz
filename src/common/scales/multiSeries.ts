@@ -8,9 +8,9 @@ export function getGroupScale({
   dimension,
   padding,
   data,
-  direction = 'vertical'
+  direction = 'vertical',
 }) {
-  const domain = uniqueBy(data, d => d.key);
+  const domain = uniqueBy(data, (d) => d.key);
   const spacing = domain.length / (dimension / padding + 1);
   const range = direction === 'vertical' ? [0, dimension] : [dimension, 0];
 
@@ -26,7 +26,11 @@ export function getGroupScale({
  */
 export function getInnerScale({ groupScale, padding, data, prop = 'x' }) {
   const dimension = groupScale.bandwidth();
-  const domain = uniqueBy(data, d => d.data, d => d[prop]);
+  const domain = uniqueBy(
+    data,
+    (d) => d.data,
+    (d) => d[prop]
+  );
   const spacing = domain.length / (dimension / padding + 1);
 
   return scaleBand()

@@ -9,7 +9,7 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   const spring = useSpring(prevPath, {
     ...DEFAULT_TRANSITION,
     from: 0,
-    to: 1
+    to: 1,
   });
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
       ? custom.previousEnter.y
       : prevPath.get().y;
     const interpolator = interpolate(from, custom.enter.y);
-    const unsub = spring.onChange(v =>
+    const unsub = spring.onChange((v) =>
       d.set(arc({ ...custom.enter, y: interpolator(v) }))
     );
     prevPath.set(custom.enter);

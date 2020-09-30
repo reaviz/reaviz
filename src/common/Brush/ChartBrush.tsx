@@ -43,7 +43,7 @@ export class ChartBrush extends Component<ChartBrushProps, {}> {
       }
 
       onBrushChange({
-        domain
+        domain,
       });
     }
   }

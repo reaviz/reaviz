@@ -10,7 +10,7 @@ import {
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisArcSeries,
-  RadialAxisTickLine
+  RadialAxisTickLine,
 } from '../common/Axis';
 import { schemes } from '../common/color';
 import { RadialGradient } from '../common/Gradient';
@@ -31,7 +31,7 @@ storiesOf('Charts/Area Chart/Radial', module)
         'Tick Position',
         {
           inside: 'inside',
-          outside: 'outside'
+          outside: 'outside',
         },
         'inside'
       );
@@ -39,7 +39,7 @@ storiesOf('Charts/Area Chart/Radial', module)
         'Interpolation',
         {
           linear: 'linear',
-          smooth: 'smooth'
+          smooth: 'smooth',
         },
         'smooth'
       );
@@ -81,7 +81,12 @@ storiesOf('Charts/Area Chart/Radial', module)
     { options: { showPanel: true } }
   )
   .add('Categorical Data', () => (
-    <RadialAreaChart data={categoryData} height={300} width={300} axis={<RadialAxis type="category" />} />
+    <RadialAreaChart
+      data={categoryData}
+      height={300}
+      width={300}
+      axis={<RadialAxis type="category" />}
+    />
   ))
   .add('Resizable', () => (
     <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>

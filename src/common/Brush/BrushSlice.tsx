@@ -26,7 +26,7 @@ export class BrushSlice extends PureComponent<
   BrushSliceState
 > {
   state: BrushSliceState = {
-    isDragging: false
+    isDragging: false,
   };
 
   onMoveStart() {
@@ -35,7 +35,7 @@ export class BrushSlice extends PureComponent<
 
     if (!hasNoSlice) {
       this.setState({
-        isDragging: true
+        isDragging: true,
       });
     }
   }
@@ -49,14 +49,14 @@ export class BrushSlice extends PureComponent<
     if (start >= 0 && end <= width) {
       onBrushChange({
         start,
-        end
+        end,
       });
     }
   }
 
   onMoveEnd() {
     this.setState({
-      isDragging: false
+      isDragging: false,
     });
   }
 
@@ -69,7 +69,7 @@ export class BrushSlice extends PureComponent<
 
     onBrushChange({
       start,
-      end
+      end,
     });
   }
 
@@ -103,7 +103,7 @@ export class BrushSlice extends PureComponent<
               style={{
                 cursor: isDragging ? 'grabbing' : 'grab',
                 opacity: hasNoSlice ? 0 : 0.1,
-                pointerEvents: !hasNoSlice ? 'initial' : 'none'
+                pointerEvents: !hasNoSlice ? 'initial' : 'none',
               }}
             />
           </Move>

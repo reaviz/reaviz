@@ -6,13 +6,13 @@ import { min, max } from 'd3-array';
 export function extent(data: any[], attr: string): number[] {
   const accessor = (val, fn) => {
     if (Array.isArray(val.data)) {
-      return fn(val.data, vv => vv[attr]);
+      return fn(val.data, (vv) => vv[attr]);
     }
     return val[attr];
   };
 
-  const minVal = min(data, d => accessor(d, min));
-  const maxVal = max(data, d => accessor(d, max));
+  const minVal = min(data, (d) => accessor(d, min));
+  const maxVal = max(data, (d) => accessor(d, max));
 
   return [minVal, maxVal];
 }
@@ -23,7 +23,7 @@ export function extent(data: any[], attr: string): number[] {
 export function getYDomain({
   data,
   scaled = false,
-  isDiverging = false
+  isDiverging = false,
 }): number[] {
   const [startY, endY] = extent(data, 'y');
   const [startY1, endY1] = extent(data, 'y1');
@@ -52,7 +52,7 @@ export function getYDomain({
 export function getXDomain({
   data,
   scaled = false,
-  isDiverging = false
+  isDiverging = false,
 }): number[] {
   const startX0 = extent(data, 'x0')[0];
   const endX1 = extent(data, 'x1')[1];

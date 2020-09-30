@@ -11,7 +11,7 @@ export interface MarkLineProps {
 export class MarkLine extends PureComponent<MarkLineProps> {
   static defaultProps: Partial<MarkLineProps> = {
     strokeWidth: 1,
-    strokeColor: '#eee'
+    strokeColor: '#eee',
   };
 
   render() {

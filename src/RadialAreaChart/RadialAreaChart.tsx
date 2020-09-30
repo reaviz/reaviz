@@ -2,14 +2,14 @@ import React, { Fragment, ReactElement, FC, useCallback } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
-  buildShallowChartData
+  buildShallowChartData,
 } from '../common/data';
 import { scaleTime, scaleBand } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps
+  ChartContainerChildProps,
 } from '../common/containers';
 import { CloneElement } from '../common/utils/children';
 import { RadialAreaSeries, RadialAreaSeriesProps } from './RadialAreaSeries';
@@ -48,9 +48,9 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   innerRadius = 0.1,
   series = <RadialAreaSeries />,
   axis = <RadialAxis />,
-  margins = 75
+  margins = 75,
 }) => {
-  const getScales = useCallback((
+  const getScales = useCallback(
     (
       preData: ChartShallowDataShape[],
       outerRadius: number,
@@ -64,7 +64,10 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
 
       let xScale;
       if (axis?.props.type === 'category') {
-        const xDomain = uniqueBy<ChartInternalShallowDataShape>(d, dd => dd.x);
+        const xDomain = uniqueBy<ChartInternalShallowDataShape>(
+          d,
+          (dd) => dd.x
+        );
         xScale = scaleBand()
           .range([0, 2 * Math.PI])
           .domain(xDomain as any[]);
@@ -80,45 +83,49 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       return {
         yScale,
         xScale,
-        result: d
+        result: d,
       };
-    }
-  ), []);
+    },
+    []
+  );
 
-  const renderChart = useCallback((containerProps: ChartContainerChildProps) => {
-    const { chartWidth, chartHeight, id } = containerProps;
-    const outerRadius = Math.min(chartWidth, chartHeight) / 2;
-    const { yScale, xScale, result } = getScales(
-      data!,
-      outerRadius,
-      innerRadius
-    );
+  const renderChart = useCallback(
+    (containerProps: ChartContainerChildProps) => {
+      const { chartWidth, chartHeight, id } = containerProps;
+      const outerRadius = Math.min(chartWidth, chartHeight) / 2;
+      const { yScale, xScale, result } = getScales(
+        data!,
+        outerRadius,
+        innerRadius
+      );
 
-    return (
-      <Fragment>
-        {axis && (
-          <CloneElement<RadialAxisProps>
-            element={axis}
+      return (
+        <Fragment>
+          {axis && (
+            <CloneElement<RadialAxisProps>
+              element={axis}
+              xScale={xScale}
+              height={chartHeight}
+              width={chartWidth}
+              innerRadius={innerRadius}
+            />
+          )}
+          <CloneElement<RadialAreaSeriesProps>
+            element={series}
+            id={id}
+            data={result}
             xScale={xScale}
+            yScale={yScale}
             height={chartHeight}
             width={chartWidth}
+            outerRadius={outerRadius}
             innerRadius={innerRadius}
           />
-        )}
-        <CloneElement<RadialAreaSeriesProps>
-          element={series}
-          id={id}
-          data={result}
-          xScale={xScale}
-          yScale={yScale}
-          height={chartHeight}
-          width={chartWidth}
-          outerRadius={outerRadius}
-          innerRadius={innerRadius}
-        />
-      </Fragment>
-    );
-  }, [data, series, id, innerRadius, axis]);
+        </Fragment>
+      );
+    },
+    [data, series, id, innerRadius, axis]
+  );
 
   return (
     <ChartContainer
@@ -134,4 +141,4 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-}
+};

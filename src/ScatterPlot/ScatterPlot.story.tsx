@@ -8,7 +8,7 @@ import {
   largeSignalChartData,
   medSignalChartData,
   signalStageData,
-  signalStages
+  signalStages,
 } from '../../demo/signals';
 import { randomNumber, singleDateData } from '../../demo';
 import { range } from 'd3-array';
@@ -20,7 +20,7 @@ import {
   LinearYAxisTickLabel,
   LinearXAxis,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
 } from '../common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '../common/color';
@@ -83,7 +83,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
   ))
   .add('Performance', () => (
     <Fragment>
-      {range(15).map(i => (
+      {range(15).map((i) => (
         <div
           key={i}
           style={{
@@ -91,7 +91,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
             height: '250px',
             border: 'solid 1px green',
             margin: '25px',
-            display: 'inline-block'
+            display: 'inline-block',
           }}
         >
           <ScatterPlot data={medSignalChartData} />
@@ -114,9 +114,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
           point={
             <ScatterPoint
               symbol={() => {
-                const d = symbol()
-                  .type(symbolStar)
-                  .size(175)();
+                const d = symbol().type(symbolStar).size(175)();
 
                 return (
                   <path
@@ -124,7 +122,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
                     style={{
                       fill: 'lime',
                       stroke: 'purple',
-                      strokeWidth: 1.5
+                      strokeWidth: 1.5,
                     }}
                   />
                 );
@@ -146,7 +144,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
           point={
             <ScatterPoint
               color="rgba(45, 96, 232, .8)"
-              size={v => v.metadata.severity + 5}
+              size={(v) => v.metadata.severity + 5}
             />
           }
         />
@@ -164,16 +162,16 @@ storiesOf('Charts/Scatter Plot/Axis', module)
         {
           key: 'Before',
           data: 0,
-          x: 'Before'
+          x: 'Before',
         },
         {
           key: 'After',
           data: 0,
-          x: 'After'
-        }
+          x: 'After',
+        },
       ],
       isMultiSeries: false,
-      isDiverging: true
+      isDiverging: true,
     });
 
     return (
@@ -209,7 +207,7 @@ storiesOf('Charts/Scatter Plot/Axis', module)
                 label={<LinearXAxisTickLabel padding={20} position="start" />}
               />
             }
-          />
+          />,
         ]}
         yAxis={<LinearYAxis type="value" axisLine={null} />}
       />
@@ -223,16 +221,16 @@ storiesOf('Charts/Scatter Plot/Axis', module)
         {
           key: 'Low',
           data: 0,
-          y: 'Low'
+          y: 'Low',
         },
         {
           key: 'High',
           data: 0,
-          y: 'High'
-        }
+          y: 'High',
+        },
       ],
       isMultiSeries: false,
-      isDiverging: true
+      isDiverging: true,
     });
 
     return (
@@ -272,7 +270,7 @@ storiesOf('Charts/Scatter Plot/Axis', module)
                 }
               />
             }
-          />
+          />,
         ]}
         xAxis={<LinearXAxis type="time" axisLine={null} />}
       />
@@ -280,10 +278,10 @@ storiesOf('Charts/Scatter Plot/Axis', module)
   });
 
 const BubbleChartLiveUpdate = () => {
-  const [data, setData] = useState(largeSignalChartData.map(d => ({ ...d })));
+  const [data, setData] = useState(largeSignalChartData.map((d) => ({ ...d })));
 
   const updateData = () => {
-    const d = data.map(item => {
+    const d = data.map((item) => {
       item.data = randomNumber(1, 100);
       return { ...item };
     });
@@ -303,7 +301,7 @@ const BubbleChartLiveUpdate = () => {
             point={
               <ScatterPoint
                 color="rgba(45, 96, 232, .8)"
-                size={v => {
+                size={(v) => {
                   return v.metadata.severity + 5;
                 }}
               />

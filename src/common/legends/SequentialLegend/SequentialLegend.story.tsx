@@ -12,7 +12,10 @@ storiesOf('Charts/Legend/Sequential/Vertical', module)
   .add('Long Text', () => (
     <div style={{ height: '250px' }}>
       <SequentialLegend
-        data={[{ key: 'Foo', data: 50000000 }, { key: 'Bar', data: 0 }]}
+        data={[
+          { key: 'Foo', data: 50000000 },
+          { key: 'Bar', data: 0 },
+        ]}
       />
     </div>
   ))
@@ -35,7 +38,10 @@ storiesOf('Charts/Legend/Sequential/Horizontal', module)
     <div style={{ width: '250px' }}>
       <SequentialLegend
         orientation="horizontal"
-        data={[{ key: 'Foo', data: 50000000 }, { key: 'Bar', data: 0 }]}
+        data={[
+          { key: 'Foo', data: 50000000 },
+          { key: 'Bar', data: 0 },
+        ]}
       />
     </div>
   ))

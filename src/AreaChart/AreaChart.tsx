@@ -7,7 +7,7 @@ import {
   LinearAxisProps,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
 } from '../common/Axis/LinearAxis';
 import { getXScale, getYScale } from '../common/scales';
 import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
@@ -19,19 +19,19 @@ import {
   buildStackData,
   buildShallowChartData,
   ChartShallowDataShape,
-  buildNestedChartData
+  buildNestedChartData,
 } from '../common/data';
 import css from './AreaChart.module.scss';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
-  ChartZoomPan
+  ChartZoomPan,
 } from '../common/ZoomPan';
 import {
   ChartContainerChildProps,
   ChartContainer,
-  ChartProps
+  ChartProps,
 } from '../common/containers/ChartContainer';
 import { CloneElement } from '../common/utils/children';
 import memoize from 'memoize-one';
@@ -93,7 +93,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
     series: <AreaSeries />,
     gridlines: <GridlineSeries />,
     brush: null,
-    zoomPan: null
+    zoomPan: null,
   };
 
   static getDerivedStateFromProps(
@@ -105,7 +105,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
       if (!state.zoomControlled && zoom.domain !== state.zoomDomain) {
         return {
           zoomDomain: zoom.domain,
-          isZoomed: !!zoom.domain
+          isZoomed: !!zoom.domain,
         };
       }
     }
@@ -124,7 +124,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
     this.state = {
       zoomDomain: zoom.domain,
       isZoomed: !!zoom.domain,
-      zoomControlled
+      zoomControlled,
     };
   }
 
@@ -156,7 +156,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
       roundDomains: xAxis.props.roundDomains,
       data,
       domain: zoomDomain || xAxis.props.domain,
-      isMultiSeries
+      isMultiSeries,
     });
 
     const yScale = getYScale({
@@ -165,7 +165,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
       height: chartHeight,
       data,
       domain: yAxis.props.domain,
-      isMultiSeries
+      isMultiSeries,
     });
 
     return { xScale, yScale };
@@ -176,7 +176,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
       this.setState({
         zoomDomain: event.domain,
         isZoomed: event.isZoomed,
-        preventAnimation: true
+        preventAnimation: true,
       });
 
       clearTimeout(this.timeout);
@@ -196,7 +196,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
       gridlines,
       brush,
       zoomPan,
-      secondaryAxis
+      secondaryAxis,
     } = this.props;
     const { zoomDomain, preventAnimation, isZoomed } = this.state;
 
@@ -295,7 +295,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
       height,
       margins,
       className,
-      series
+      series,
     } = this.props;
 
     return (
@@ -308,7 +308,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
         yAxisVisible={isAxisVisible(yAxis.props)}
         className={classNames(css.areaChart, className, series.type)}
       >
-        {props => this.renderChart(props)}
+        {(props) => this.renderChart(props)}
       </ChartContainer>
     );
   }

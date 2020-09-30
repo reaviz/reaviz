@@ -54,7 +54,7 @@ export class Pan extends Component<PanProps> {
     onPanStart: () => undefined,
     onPanMove: () => undefined,
     onPanEnd: () => undefined,
-    onPanCancel: () => undefined
+    onPanCancel: () => undefined,
   };
 
   prevXPosition: number = 0;
@@ -67,10 +67,10 @@ export class Pan extends Component<PanProps> {
   componentDidMount() {
     if (this.childRef.current) {
       this.childRef.current.addEventListener('mousedown', this.onMouseDown, {
-        passive: false
+        passive: false,
       });
       this.childRef.current.addEventListener('touchstart', this.onTouchStart, {
-        passive: false
+        passive: false,
       });
     }
   }
@@ -109,7 +109,7 @@ export class Pan extends Component<PanProps> {
   onPanStart(nativeEvent, source: 'mouse' | 'touch') {
     this.props.onPanStart({
       nativeEvent,
-      source
+      source,
     });
   }
 
@@ -118,7 +118,7 @@ export class Pan extends Component<PanProps> {
       source,
       nativeEvent,
       x,
-      y
+      y,
     });
   }
 
@@ -127,7 +127,7 @@ export class Pan extends Component<PanProps> {
 
     onPanEnd({
       nativeEvent,
-      source
+      source,
     });
   }
 
@@ -213,7 +213,7 @@ export class Pan extends Component<PanProps> {
     } else {
       this.props.onPanCancel({
         nativeEvent: event,
-        source: 'mouse'
+        source: 'mouse',
       });
     }
   };
@@ -285,7 +285,7 @@ export class Pan extends Component<PanProps> {
     } else {
       this.props.onPanCancel({
         nativeEvent: event,
-        source: 'touch'
+        source: 'touch',
       });
     }
   };

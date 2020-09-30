@@ -4,16 +4,16 @@ import { Gradient, GradientProps } from '../../common/Gradient';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
   interpolate,
-  InterpolationTypes
+  InterpolationTypes,
 } from '../../common/utils/interpolation';
 import {
   ChartInternalDataShape,
-  ChartInternalShallowDataShape
+  ChartInternalShallowDataShape,
 } from '../../common/data';
 import { CloneElement } from '../../common/utils/children';
 import {
   constructFunctionProps,
-  PropFunctionTypes
+  PropFunctionTypes,
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 
@@ -72,7 +72,7 @@ export interface AreaProps extends PropFunctionTypes {
 export class Area extends Component<AreaProps> {
   static defaultProps: Partial<AreaProps> = {
     gradient: <Gradient />,
-    interpolation: 'linear'
+    interpolation: 'linear',
   };
 
   getAreaPath(data: ChartInternalShallowDataShape[]) {
@@ -95,7 +95,7 @@ export class Area extends Component<AreaProps> {
       x1: xScale(item.x) - xScale(item.x1),
       y: yScale(item.y),
       y0: yScale(item.y0),
-      y1: yScale(item.y1)
+      y1: yScale(item.y1),
     })) as ChartInternalShallowDataShape[];
   }
 
@@ -103,7 +103,7 @@ export class Area extends Component<AreaProps> {
     const areaPath = this.getAreaPath(coords);
 
     return {
-      d: areaPath === null ? undefined : areaPath
+      d: areaPath === null ? undefined : areaPath,
     };
   }
 
@@ -115,13 +115,13 @@ export class Area extends Component<AreaProps> {
       x1: 0,
       y: 0,
       y1: maxY,
-      y0: maxY
+      y0: maxY,
     })) as ChartInternalShallowDataShape[];
 
     const areaPath = this.getAreaPath(coords);
 
     return {
-      d: areaPath === null ? undefined : areaPath
+      d: areaPath === null ? undefined : areaPath,
     };
   }
 
@@ -145,12 +145,12 @@ export class Area extends Component<AreaProps> {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: index * 0.05
+        delay: index * 0.05,
       };
     } else {
       return {
         type: false,
-        delay: 0
+        delay: 0,
       };
     }
   }
@@ -173,7 +173,7 @@ export class Area extends Component<AreaProps> {
         transition={transition}
         custom={{
           enter,
-          exit
+          exit,
         }}
       />
     );

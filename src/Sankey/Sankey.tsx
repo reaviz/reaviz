@@ -4,12 +4,12 @@ import {
   sankeyLeft,
   sankeyRight,
   sankeyCenter,
-  sankeyJustify
+  sankeyJustify,
 } from 'd3-sankey';
 import {
   ChartProps,
   ChartContainer,
-  ChartContainerChildProps
+  ChartContainerChildProps,
 } from '../common/containers/ChartContainer';
 import { CloneElement } from '../common/utils/children';
 
@@ -23,7 +23,7 @@ const JUSTIFICATION = {
   justify: sankeyJustify,
   center: sankeyCenter,
   left: sankeyLeft,
-  right: sankeyRight
+  right: sankeyRight,
 };
 
 type Justification = 'justify' | 'center' | 'left' | 'right';
@@ -76,7 +76,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
     animated: true,
     justification: 'justify',
     nodeWidth: 15,
-    nodePadding: 10
+    nodePadding: 10,
   };
 
   state: SankeyState = { activeNodes: [], activeLinks: [] };
@@ -89,7 +89,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
         data: nodes,
         colorScheme,
         point: nodes[index],
-        index
+        index,
       });
     } else {
       return node.props.color;
@@ -102,7 +102,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
 
     if (node.sourceLinks) {
       activeLinks.push(...node.sourceLinks);
-      node.sourceLinks.forEach(sourceLink => {
+      node.sourceLinks.forEach((sourceLink) => {
         const sourceLinkTarget = sourceLink.target as Node;
         if (sourceLinkTarget.index !== node.index) {
           activeNodes.push(sourceLinkTarget);
@@ -112,7 +112,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
 
     if (node.targetLinks) {
       activeLinks.push(...node.targetLinks);
-      node.targetLinks.forEach(targetLink => {
+      node.targetLinks.forEach((targetLink) => {
         const targetLinkSource = targetLink.source as Node;
         if (targetLinkSource.index !== node.index) {
           activeNodes.push(targetLinkSource);
@@ -142,7 +142,9 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
   ) {
     const { animated } = this.props;
     const { activeNodes } = this.state;
-    const active = activeNodes.some(node => node.index === computedNode.index);
+    const active = activeNodes.some(
+      (node) => node.index === computedNode.index
+    );
     const disabled = activeNodes.length > 0 && !active;
 
     return (
@@ -163,7 +165,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
   renderNodes(nodes: Node[], chartWidth: number) {
     const nodeMap = new Map<string, NodeElement>();
     this.props.nodes.forEach(
-      node => node && nodeMap.set(node.props.title, node)
+      (node) => node && nodeMap.set(node.props.title, node)
     );
 
     nodes.sort((a, b) => {
@@ -187,7 +189,9 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
   renderLink(computedLink: Link, index: number, chartId: string) {
     const { animated, links } = this.props;
     const { activeLinks } = this.state;
-    const active = activeLinks.some(link => link.index === computedLink.index);
+    const active = activeLinks.some(
+      (link) => link.index === computedLink.index
+    );
     const disabled = activeLinks.length > 0 && !active;
 
     return (
@@ -212,17 +216,20 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
     const nodesCopy: Node[] = this.props.nodes.map((node, index) => ({
       id: node.props.id,
       title: node.props.title,
-      color: this.getNodeColor(node, index)
+      color: this.getNodeColor(node, index),
     }));
 
-    const linksCopy: Link[] = this.props.links.map(link => ({
+    const linksCopy: Link[] = this.props.links.map((link) => ({
       source: link.props.source,
       target: link.props.target,
-      value: link.props.value
+      value: link.props.value,
     }));
 
     const sankeyChart = sankey()
-      .extent([[1, 1], [chartWidth, chartHeight]])
+      .extent([
+        [1, 1],
+        [chartWidth, chartHeight],
+      ])
       .nodeWidth(nodeWidth)
       .nodePadding(nodePadding)
       .nodeAlign(JUSTIFICATION[justification])
@@ -230,7 +237,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
 
     const { nodes, links } = sankeyChart({
       nodes: nodesCopy,
-      links: linksCopy
+      links: linksCopy,
     });
 
     return (
@@ -256,7 +263,7 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
         margins={margins}
         className={className}
       >
-        {props => this.renderChart(props)}
+        {(props) => this.renderChart(props)}
       </ChartContainer>
     );
   }

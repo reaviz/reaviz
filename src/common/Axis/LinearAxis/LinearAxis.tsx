@@ -1,7 +1,7 @@
 import React, { Component, createRef, ReactElement } from 'react';
 import {
   LinearAxisTickSeries,
-  LinearAxisTickSeriesProps
+  LinearAxisTickSeriesProps,
 } from './LinearAxisTickSeries';
 import { ChartDataTypes } from '../../data';
 import { CloneElement } from '../../utils/children';
@@ -41,7 +41,7 @@ export class LinearAxis extends Component<LinearAxisProps, LinearAxisState> {
     tickSeries: <LinearAxisTickSeries />,
     scaled: false,
     roundDomains: false,
-    onDimensionsChange: () => undefined
+    onDimensionsChange: () => undefined,
   };
 
   ref = createRef<SVGGElement>();
@@ -51,7 +51,7 @@ export class LinearAxis extends Component<LinearAxisProps, LinearAxisState> {
 
     this.state = {
       height: props.height,
-      width: props.width
+      width: props.width,
     };
   }
 
@@ -120,7 +120,7 @@ export class LinearAxis extends Component<LinearAxisProps, LinearAxisState> {
       width,
       orientation,
       axisLine,
-      tickSeries
+      tickSeries,
     } = this.props;
     const { translateX, translateY } = this.getPosition();
 

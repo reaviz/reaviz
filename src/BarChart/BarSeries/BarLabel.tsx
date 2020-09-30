@@ -103,7 +103,7 @@ export class BarLabel extends PureComponent<BarLabelProps> {
     fontSize: 13,
     padding: 5,
     fontFamily: 'sans-serif',
-    fill: '#000'
+    fill: '#000',
   };
 
   getIsVertical() {
@@ -151,7 +151,7 @@ export class BarLabel extends PureComponent<BarLabelProps> {
     return {
       translateX: newX,
       translateY: newY,
-      opacity: 1
+      opacity: 1,
     };
   }
 
@@ -193,7 +193,7 @@ export class BarLabel extends PureComponent<BarLabelProps> {
     return {
       translateY: newY,
       translateX: newX,
-      opacity: 0
+      opacity: 0,
     };
   }
 
@@ -226,7 +226,7 @@ export class BarLabel extends PureComponent<BarLabelProps> {
         exit={exitProps}
         transition={{
           ...DEFAULT_TRANSITION,
-          delay
+          delay,
         }}
         fontSize={fontSize}
         fontFamily={fontFamily}

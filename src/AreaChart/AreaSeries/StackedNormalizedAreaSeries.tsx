@@ -4,7 +4,7 @@ import { formatValue } from '../../common/utils/formatting';
 import {
   TooltipTemplate,
   TooltipArea,
-  ChartTooltip
+  ChartTooltip,
 } from '../../common/Tooltip';
 import { CloneElement } from '../../common/utils/children';
 import { PointSeriesProps } from './PointSeries';
@@ -25,12 +25,12 @@ export class StackedNormalizedAreaSeries extends Component<AreaSeriesProps> {
 
               const value = {
                 ...series,
-                data: series.data.map(d => ({
+                data: series.data.map((d) => ({
                   ...d,
                   value: `${formatValue(d.value)} ∙ ${formatValue(
                     Math.floor((d.y1 - d.y0) * 100)
-                  )}%`
-                }))
+                  )}%`,
+                })),
               };
 
               return <TooltipTemplate color={color} value={value} />;
@@ -38,7 +38,7 @@ export class StackedNormalizedAreaSeries extends Component<AreaSeriesProps> {
           />
         }
       />
-    )
+    ),
   };
 
   render() {

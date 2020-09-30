@@ -21,7 +21,7 @@ const DURATION_TICK_STEPS = [
   60 * 60 * 6, // 6 h
   60 * 60 * 8, // 8 h
   60 * 60 * 12, // 12 h
-  ONE_DAY // 24 h
+  ONE_DAY, // 24 h
 ];
 
 /**

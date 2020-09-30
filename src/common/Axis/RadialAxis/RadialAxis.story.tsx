@@ -7,22 +7,17 @@ import moment from 'moment';
 import {
   RadialAxisTickSeries,
   RadialAxisTick,
-  RadialAxisTickLabel
+  RadialAxisTickLabel,
 } from './RadialAxisTickSeries';
 
 const xScale = (() => {
-  const date = moment()
-    .subtract(1, 'day')
-    .startOf('day');
+  const date = moment().subtract(1, 'day').startOf('day');
 
-  const data = range(13).map(i => ({
-    key: date
-      .clone()
-      .add(i, 'hour')
-      .toDate()
+  const data = range(13).map((i) => ({
+    key: date.clone().add(i, 'hour').toDate(),
   }));
 
-  const domain = extent<{ key: Date }, Date>(data, d => d.key) as Date[];
+  const domain = extent<{ key: Date }, Date>(data, (d) => d.key) as Date[];
 
   const xScale = scaleTime()
     .range([0, 2 * Math.PI])
@@ -46,7 +41,7 @@ storiesOf('Charts/Axis/Radial', module).add('Simple', () => (
                 <RadialAxisTick
                   label={
                     <RadialAxisTickLabel
-                      format={d => moment(d).format('h a')}
+                      format={(d) => moment(d).format('h a')}
                     />
                   }
                 />

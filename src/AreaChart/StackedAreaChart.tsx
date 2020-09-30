@@ -9,7 +9,7 @@ interface StackedAreaChartProps extends AreaChartProps {
 
 export class StackedAreaChart extends Component<StackedAreaChartProps, {}> {
   static defaultProps: Partial<StackedAreaChartProps> = {
-    series: <StackedAreaSeries />
+    series: <StackedAreaSeries />,
   };
 
   render() {
