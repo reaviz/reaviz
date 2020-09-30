@@ -17,6 +17,7 @@ module.exports = {
         }
       }
     },
+    '@storybook/addon-knobs',
     '@storybook/addon-docs/preset'
   ],
   webpackFinal: (config) => {
