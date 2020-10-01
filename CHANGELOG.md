@@ -1,3 +1,7 @@
+# 9.0.1 - 10/1/20
+- [Feature] Enable text wrapping on venn diagram
+- [Bug] Fix text overlap on venn diagram
+
 # 9.0.0 - 9/29/20
 - [BREAKING] Rename CSS variables to be more specific
 - [Feature] Venn Diagram
