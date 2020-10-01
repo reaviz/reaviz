@@ -2,8 +2,14 @@ import React, { FC } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { calculateDimensions } from '../common/utils';
 import { motion } from 'framer-motion';
+import { wrapText } from './wrapText';
 
 export interface VennLabelProps {
+  /**
+   * Should wrap text or not.
+   */
+  wrap?: boolean;
+
   /**
    * The internal data object built by venn.js
    */
@@ -32,11 +38,17 @@ export interface VennLabelProps {
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
+  wrap = true,
   animated = true,
   fill = '#000',
   fontSize = 11,
   fontFamily = 'sans-serif'
 }) => {
+  // If the text area is very large, then lets just skip showing the label
+  if (!data.arcs?.[0]?.large) {
+    return null;
+  }
+
   const key = data.data.sets.join(' | ');
   const size = calculateDimensions(key, fontFamily, fontSize);
   const halfHeight = size.height / 2;
@@ -48,6 +60,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     attrY: y
   };
   const transition = animated ? {} : { delay: 0, type: false };
+  const text = wrap ? wrapText({ key, data, fontFamily, size, fontSize }) : key;
 
   return (
     <motion.text
@@ -56,8 +69,9 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
       initial={pos}
       animate={pos}
       transition={transition}
+      textAnchor="middle"
     >
-      {key}
+      {text}
     </motion.text>
   );
 };
