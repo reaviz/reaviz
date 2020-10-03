@@ -4,10 +4,7 @@ const codesandbox = require('remark-codesandbox');
 const reavizCodesandboxTemplatePackageJSON = require('../docs/tools/templates/reaviz-codesandbox-template/package.json');
 
 module.exports = {
-  stories: [
-    '../src/**/*.story.tsx',
-    '../docs/**/*.story.mdx'
-  ],
+  stories: ['../src/**/*.story.tsx', '../docs/**/*.story.mdx'],
   addons: [
     {
       name: '@storybook/preset-scss',
@@ -22,67 +19,50 @@ module.exports = {
     '@storybook/addon-docs/preset'
   ],
   webpackFinal: (config) => {
-    /*
-    config.module.rules.push({
-      test: /\.story\.mdx$/,
-      exclude: [/node_modules/],
-      include: [
-        resolve(__dirname, '../src'),
-        resolve(__dirname, '../docs'),
-        resolve(__dirname, '../demo')
-      ],
-      use: [
-        {
-          loader: 'babel-loader',
-          options: {
-            plugins: ['@babel/plugin-transform-react-jsx']
+    const mdxRule = config.module.rules.find((rule) =>
+      rule.test.test('.story.mdx')
+    );
+
+    const {
+      options: { remarkPlugins }
+    } = mdxRule.use.find(
+      ({ loader }) => loader === require.resolve('@mdx-js/loader')
+    );
+
+    remarkPlugins.push([
+      codesandbox,
+      {
+        mode: 'iframe',
+        query: {
+          fontsize: 14
+        },
+        customTemplates: {
+          reaviz: {
+            extends: `file:${resolve(
+              __dirname,
+              '../docs/tools/templates/reaviz-codesandbox-template'
+            )}`,
+            entry: 'src/App.js'
+          },
+          'reaviz-map': {
+            extends: 'reaviz',
+            files: {
+              'package.json': {
+                content: {
+                  ...reavizCodesandboxTemplatePackageJSON,
+                  dependencies: {
+                    ...reavizCodesandboxTemplatePackageJSON.dependencies,
+                    'topojson-client': 'latest',
+                    'world-atlas': 'latest'
+                  }
+                }
+              }
+            }
           }
         },
-        {
-          loader: '@mdx-js/loader',
-          options: {
-            compilers: [createCompiler({})],
-            remarkPlugins: [
-              [
-                codesandbox,
-                {
-                  mode: 'iframe',
-                  query: {
-                    fontsize: 14
-                  },
-                  customTemplates: {
-                    reaviz: {
-                      extends: `file:${resolve(
-                        __dirname,
-                        '../docs/tools/templates/reaviz-codesandbox-template'
-                      )}`,
-                      entry: 'src/App.js'
-                    },
-                    'reaviz-map': {
-                      extends: 'reaviz',
-                      files: {
-                        'package.json': {
-                          content: {
-                            ...reavizCodesandboxTemplatePackageJSON,
-                            dependencies: {
-                              ...reavizCodesandboxTemplatePackageJSON.dependencies,
-                              'topojson-client': 'latest',
-                              'world-atlas': 'latest'
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  autoDeploy: true
-                }
-              ]
-            ]
-          }
-        }
-      ]
-    });
-    */
+        autoDeploy: true
+      }
+    ]);
 
     return config;
   }
