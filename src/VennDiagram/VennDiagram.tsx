@@ -7,13 +7,26 @@ import {
 import { layout } from '@upsetjs/venn.js';
 import { VennSeries, VennSeriesProps } from './VennSeries';
 import { CloneElement } from '../common/utils';
+import { eulerLayout } from './eulerLayout';
 
 export interface VennDiagramData {
+  /**
+   * List of Keys for the data.
+   */
   key: string[];
+
+  /**
+   * Size of the data keys.
+   */
   data: number;
 }
 
 export interface VennDiagramProps extends ChartProps {
+  /**
+   * Type of the chart.
+   */
+  type?: 'venn' | 'euler';
+
   /**
    * Data the chart will receive to render.
    */
@@ -32,6 +45,7 @@ export interface VennDiagramProps extends ChartProps {
 
 export const VennDiagram: FC<VennDiagramProps> = ({
   id,
+  type = 'venn',
   width,
   height,
   margins,
@@ -48,10 +62,22 @@ export const VennDiagram: FC<VennDiagramProps> = ({
 
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
-      const layoutData = layout(normalized, {
-        height: containerProps.height,
-        width: containerProps.width
-      });
+      let layoutData;
+      if (type === 'venn') {
+        layoutData = layout(normalized, {
+          height: containerProps.height,
+          width: containerProps.width
+        });
+      } else {
+        layoutData = eulerLayout(normalized, {
+          height: containerProps.height,
+          width: containerProps.width,
+          x: 0,
+          y: 0
+        });
+      }
+
+      console.log(type, layoutData)
 
       return (
         <CloneElement<VennSeriesProps>
@@ -62,7 +88,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
         />
       );
     },
-    [normalized, series]
+    [normalized, series, type]
   );
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { VennDiagram } from './VennDiagram';
-import { number, object, text, select } from '@storybook/addon-knobs';
+import { number, object, text, select, boolean } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
@@ -24,6 +24,27 @@ storiesOf('Charts/Venn Diagram', module)
         width={width}
         data={data}
         series={<VennSeries colorScheme={color} />}
+      />
+    );
+  })
+  .add('Euler', () => {
+    const type = boolean('Euler', true);
+    const data = object('Data', [
+      { key: ['Information'], data: 6 },
+      { key: ['Things That Overlap'], data: 6 },
+      { key: ['Circles'], data: 6 },
+      { key: ['Information', 'Things That Overlap'], data: 2, label: 'Redundancy' },
+      { key: ['Information', 'Circles'], data: 2, label: 'Pie Charts' },
+      { key: ['Things That Overlap', 'Circles'], data: 2, label: 'Eclipses' },
+      { key: ['Information', 'Things That Overlap', 'Circles'], data: 2, label: 'Venn Diagrams' }
+    ]);
+
+    return (
+      <VennDiagram
+        type={type ? 'euler' : 'venn'}
+        height={450}
+        width={450}
+        data={data}
       />
     );
   })

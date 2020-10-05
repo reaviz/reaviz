@@ -2,7 +2,7 @@ import React from 'react';
 import { calculateDimensions } from '../common/utils';
 
 export function wrapText({ key, data, size, fontFamily, fontSize }) {
-  const width = data.circles[0].radius;
+  const width = data?.circles?.[0]?.radius;
 
   if (size.width > width) {
     const words = key.split(/\s+/);
