@@ -1,3 +1,7 @@
+# 9.0.2 - 10/5/20
+- [Fix] Fix tooltip not moving with window scroll
+- [Chore] Upgrade depedencies
+
 # 9.0.1 - 10/1/20
 - [Feature] Enable text wrapping on venn diagram
 - [Bug] Fix text overlap on venn diagram
