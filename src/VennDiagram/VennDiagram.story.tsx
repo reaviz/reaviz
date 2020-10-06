@@ -6,11 +6,13 @@ import { schemes } from '../common/color';
 import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
 import { Stripes } from '../common/Mask';
+import { VennLabel } from './VennLabel';
 
 storiesOf('Charts/Venn Diagram', module)
   .add('Simple', () => {
     const height = number('Height', 450);
     const width = number('Width', 450);
+    const showAll = boolean('Show All Labels', false);
     const color = select('Color Scheme', schemes, 'cybertron');
     const data = object('Data', [
       { key: ['A'], data: 12 },
@@ -23,7 +25,7 @@ storiesOf('Charts/Venn Diagram', module)
         height={height}
         width={width}
         data={data}
-        series={<VennSeries colorScheme={color} />}
+        series={<VennSeries colorScheme={color} label={<VennLabel showAll={showAll} />} />}
       />
     );
   })
