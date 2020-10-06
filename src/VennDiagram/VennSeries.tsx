@@ -55,7 +55,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 }) => {
   const transition = animated ? {} : { type: false, delay: 0 };
 
-  const renderSection = useCallback(
+  const renderArc = useCallback(
     (d: IVennLayout<any>, index: number) => {
       const fill = getColor({
         data,
@@ -82,16 +82,32 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             disabled={disabled}
             animated={animated}
           />
-          <CloneElement<VennLabelProps>
-            element={label}
-            data={d}
-            animated={animated}
-          />
+
         </motion.g>
       );
     },
-    [colorScheme, data]
+    [colorScheme, data, arc, animated]
   );
 
-  return <Fragment>{data.map(renderSection)}</Fragment>;
+  const renderLabel = useCallback((d: IVennLayout<any>) => (
+    <motion.g
+      key={d.data.sets.toString()}
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={transition}
+    >
+      <CloneElement<VennLabelProps>
+        element={label}
+        data={d}
+        animated={animated}
+      />
+    </motion.g>
+  ), [label, animated]);
+
+  return (
+    <Fragment>
+      {data.map(renderArc)}
+      {data.map(renderLabel)}
+    </Fragment>
+  );
 };

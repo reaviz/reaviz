@@ -34,7 +34,7 @@ export function wrapText({ key, data, size, fontFamily, fontSize }) {
     return rows.map((r, i) => (
       <tspan
         key={i}
-        dominant-baseline="alphabetic"
+        dominantBaseline="alphabetic"
         style={{ baselineShift: '0%' }}
         dy={i * size.height}
         x={data.text.x}
