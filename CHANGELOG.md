@@ -1,4 +1,7 @@
-# Master
+# 9.1.0 - 10/6/20
+- [Feature] Euler Diagrams
+- [Feature] Add show all labels for Venns
+- [Fix] Make text labels always on top in Venns
 - [Fix] Improve animation speed
 
 # 9.0.2 - 10/5/20
