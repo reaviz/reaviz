@@ -32,13 +32,9 @@ storiesOf('Charts/Venn Diagram', module)
   .add('Euler', () => {
     const type = boolean('Euler', true);
     const data = object('Data', [
-      { key: ['Information'], data: 6 },
-      { key: ['Things That Overlap'], data: 6 },
-      { key: ['Circles'], data: 6 },
-      { key: ['Information', 'Things That Overlap'], data: 2, label: 'Redundancy' },
-      { key: ['Information', 'Circles'], data: 2, label: 'Pie Charts' },
-      { key: ['Things That Overlap', 'Circles'], data: 2, label: 'Eclipses' },
-      { key: ['Information', 'Things That Overlap', 'Circles'], data: 2, label: 'Venn Diagrams' }
+      { key: ['A'], data: 4 },
+      { key: ['B'], data: 1 },
+      { key: ['A', 'B'], data: 1 }
     ]);
 
     return (

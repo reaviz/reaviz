@@ -7,7 +7,6 @@ import {
 import { layout } from '@upsetjs/venn.js';
 import { VennSeries, VennSeriesProps } from './VennSeries';
 import { CloneElement } from '../common/utils';
-import { eulerLayout } from './eulerLayout';
 
 export interface VennDiagramData {
   /**
@@ -62,20 +61,11 @@ export const VennDiagram: FC<VennDiagramProps> = ({
 
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
-      let layoutData;
-      if (type === 'venn') {
-        layoutData = layout(normalized, {
-          height: containerProps.height,
-          width: containerProps.width
-        });
-      } else {
-        layoutData = eulerLayout(normalized, {
-          height: containerProps.height,
-          width: containerProps.width,
-          x: 0,
-          y: 0
-        });
-      }
+      const layoutData = layout(normalized, {
+        height: containerProps.height,
+        width: containerProps.width,
+        distinct: type !== 'euler'
+      });
 
       console.log(type, layoutData)
 
