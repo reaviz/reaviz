@@ -6,6 +6,11 @@ import { wrapText } from './wrapText';
 
 export interface VennLabelProps {
   /**
+   * Show all labels or just the large ones. Default false.
+   */
+  showAll?: boolean;
+
+  /**
    * Should wrap text or not.
    */
   wrap?: boolean;
@@ -38,6 +43,7 @@ export interface VennLabelProps {
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
+  showAll = false,
   wrap = true,
   animated = true,
   fill = '#000',
@@ -45,7 +51,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   fontFamily = 'sans-serif'
 }) => {
   // If the text area is very large, then lets just skip showing the label
-  if (!data.arcs?.[0]?.large) {
+  if (!showAll && !data.arcs?.[0]?.large) {
     return null;
   }
 
