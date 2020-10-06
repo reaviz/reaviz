@@ -67,8 +67,6 @@ export const VennDiagram: FC<VennDiagramProps> = ({
         distinct: type !== 'euler'
       });
 
-      console.log(type, layoutData)
-
       return (
         <CloneElement<VennSeriesProps>
           element={series}

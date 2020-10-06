@@ -1,4 +1,4 @@
-# 9.1.0 - 10/6/20
+# 9.1.1 - 10/6/20
 - [Feature] Euler Diagrams
 - [Feature] Add show all labels for Venns
 - [Fix] Make text labels always on top in Venns
