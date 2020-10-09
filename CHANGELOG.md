@@ -1,3 +1,7 @@
+# Master
+- [Fix] Fix sankey diagram links
+- [Chore] Upgrade depedencies
+
 # 9.1.1 - 10/6/20
 - [Feature] Euler Diagrams
 - [Feature] Add show all labels for Venns
