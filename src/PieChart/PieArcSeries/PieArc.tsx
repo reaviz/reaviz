@@ -7,11 +7,10 @@ import React, {
   useEffect
 } from 'react';
 import chroma from 'chroma-js';
-import { ChartTooltip, ChartTooltipProps } from '../../../common/Tooltip';
-import { CloneElement } from '../../../common/utils/children';
-import { DEFAULT_TRANSITION } from '../../../common/Motion';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
-import { interpolate } from 'd3-interpolate';
+import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
+import { CloneElement } from '../../common/utils/children';
+import { motion } from 'framer-motion';
+import { useInterpolate } from './useInterpolate';
 
 export interface PieArcProps {
   data: any;
@@ -39,55 +38,12 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
   tooltip = <ChartTooltip />
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
-  const prevEnter = useRef<any | null>(null);
+  const { transition, d } = useInterpolate({ animated, innerArc, data });
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(() => (active ? chroma(color).brighten(0.5) : color), [
     color,
     active
   ]);
-
-  const exit = useMemo(() => {
-    const startAngle = data.startAngle;
-    const endAngle = animated ? startAngle : data.endAngle;
-
-    return {
-      ...data,
-      startAngle,
-      endAngle
-    };
-  }, [data, animated]);
-
-  const transition = useMemo(
-    () =>
-      animated
-        ? { ...DEFAULT_TRANSITION }
-        : {
-            delay: 0
-          },
-    [animated]
-  );
-
-  // Cache the previous for transition use later
-  const previousEnter = prevEnter.current
-    ? { ...prevEnter.current }
-    : undefined;
-  prevEnter.current = { ...data };
-
-  const d = useMotionValue('');
-  const prevPath = useMotionValue(exit);
-  const spring = useSpring(prevPath, {
-    ...DEFAULT_TRANSITION,
-    from: 0,
-    to: 1
-  });
-
-  useEffect(() => {
-    const from = previousEnter || prevPath.get();
-    const interpolator = interpolate(from, data);
-    const unsub = spring.onChange((v) => d.set(innerArc(interpolator(v))));
-    prevPath.set(data);
-    return unsub;
-  }, [innerArc, data]);
 
   return (
     <g ref={arcRef}>
