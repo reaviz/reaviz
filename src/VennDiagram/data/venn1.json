@@ -1,0 +1,16 @@
+{
+  "sets": [{ "cx": 0, "cy": 0, "r": 5, "text": { "x": 3.5, "y": -4 }, "align": "start", "verticalAlign": "bottom" }],
+  "intersections": [
+    {
+      "sets": [0],
+      "x1": 0,
+      "y1": 5,
+      "arcs": [
+        { "mode": "i", "ref": 0, "x2": 0, "y2": -5, "sweep": false, "large": false },
+        { "mode": "i", "ref": 0, "x2": 0, "y2": 5, "sweep": false, "large": false }
+      ],
+      "text": { "x": 0, "y": 0 }
+    }
+  ],
+  "bb": { "x": -5, "y": -5, "width": 10, "height": 10 }
+}

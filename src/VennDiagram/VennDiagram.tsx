@@ -7,6 +7,7 @@ import {
 import { layout } from '@upsetjs/venn.js';
 import { VennSeries, VennSeriesProps } from './VennSeries';
 import { CloneElement } from '../common/utils';
+import { starEulerLayout } from './starEuler';
 
 export interface VennDiagramData {
   /**
@@ -24,7 +25,7 @@ export interface VennDiagramProps extends ChartProps {
   /**
    * Type of the chart.
    */
-  type?: 'venn' | 'euler';
+  type?: 'venn' | 'euler' | 'starEuler';
 
   /**
    * Data the chart will receive to render.
@@ -61,11 +62,25 @@ export const VennDiagram: FC<VennDiagramProps> = ({
 
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
-      const layoutData = layout(normalized, {
-        height: containerProps.height,
-        width: containerProps.width,
-        distinct: type !== 'euler'
-      });
+      let layoutData;
+      if (type === 'starEuler') {
+        const starData = starEulerLayout(normalized, {
+          height: containerProps.height,
+          width: containerProps.width,
+          x: 0,
+          y: 0
+        });
+
+        layoutData = starData.intersections;
+
+        console.log('here', starData)
+      } else {
+        layoutData = layout(normalized, {
+          height: containerProps.height,
+          width: containerProps.width,
+          distinct: type !== 'euler'
+        });
+      }
 
       return (
         <CloneElement<VennSeriesProps>

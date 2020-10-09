@@ -46,6 +46,25 @@ storiesOf('Charts/Venn Diagram', module)
       />
     );
   })
+  .add('Star Euler', () => {
+    const data = object('Data', [
+      { key: ['A'], data: 4 },
+      { key: ['B'], data: 1 },
+      { key: ['C'], data: 1 },
+      { key: ['D'], data: 1 },
+      { key: ['E'], data: 1 },
+      { key: ['A', 'B', 'C'], data: 1 }
+    ]);
+
+    return (
+      <VennDiagram
+        type="starEuler"
+        height={450}
+        width={450}
+        data={data}
+      />
+    );
+  })
   .add('Large Offsets', () => (
     <VennDiagram
       height={450}
