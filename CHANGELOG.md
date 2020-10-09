@@ -1,5 +1,7 @@
-# Master
+# 9.1.2 - 10/9/20
 - [Fix] Fix sankey diagram links
+- [Fix] Improve error handling of venn diagram
+- [Chore] Refactor pie arc code
 - [Chore] Upgrade depedencies
 
 # 9.1.1 - 10/6/20
