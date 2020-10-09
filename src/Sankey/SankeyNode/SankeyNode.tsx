@@ -173,7 +173,7 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
     const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
 
     return (
-      <motion.g ref={this.rect} x={x0} y={y0}>
+      <motion.g ref={this.rect}>
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}
           className={classNames(css.node, className)}
@@ -183,13 +183,19 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
           height={nodeHeight}
           fill={color}
           initial={{
-            opacity: 0
+            opacity: 0,
+            attrX: x0,
+            attrY: y0
           }}
           animate={{
-            opacity: 1
+            opacity: 1,
+            attrX: x0,
+            attrY: y0
           }}
           exit={{
-            opacity: 0
+            opacity: 0,
+            attrX: x0,
+            attrY: y0
           }}
           transition={{
             duration: 0.1
