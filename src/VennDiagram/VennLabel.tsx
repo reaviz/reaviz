@@ -55,7 +55,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     return null;
   }
 
-  const key = data.data.sets.join(' | ');
+  const key = data.data?.sets?.join(' | ');
   const size = calculateDimensions(key, fontFamily, fontSize);
   const halfHeight = size.height / 2;
   const halfWidth = size.width / 2;

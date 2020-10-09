@@ -160,7 +160,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           element={tooltip}
           visible={!!active}
           reference={arcRef}
-          value={{ y: data.data.size, x: data.data.sets.join(' | ') }}
+          value={{ y: data.data.size, x: data.data?.sets?.join(' | ') }}
         />
       )}
     </g>
