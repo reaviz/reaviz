@@ -184,7 +184,7 @@ export function generateArcSlicePath(
 
 
 export function starEulerLayout(data, bb: IBoundingBox) {
-  const sets = 4; // sets: number
+  const sets = data.filter(d => d.key.length === 1).length;
 
   const lookup = [venn0, venn1, venn2, venn3, venn4, venn5];
   const r = lookup[Math.min(lookup.length - 1, sets)];
