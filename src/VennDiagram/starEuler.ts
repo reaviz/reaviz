@@ -194,50 +194,48 @@ export function starEulerLayout(data, bb: IBoundingBox) {
   const mx = (v: number) => x + f * v;
   const my = (v: number) => y + f * v;
 
-  return {
-    sets: r.sets.map((c) =>
-      Object.assign(
-        {},
-        c,
-        {
-          cx: mx(c.cx),
-          cy: my(c.cy),
-          text: {
-            x: mx(c.text.x),
-            y: my(c.text.y),
-          },
-        },
-        isEllipse(c)
-          ? {
-              rx: c.rx * f,
-              ry: c.ry * f,
-            }
-          : {
-              r: c.r * f,
-            }
-      )
-    ),
-    intersections: r.intersections.map((c) => ({
+  const dataSets = r.sets.map(c => ({
+    ...c,
+    ...{
+      cx: mx(c.cx),
+      cy: my(c.cy),
       text: {
         x: mx(c.text.x),
         y: my(c.text.y),
       },
-      x1: mx(c.x1),
-      y1: my(c.y1),
-      sets: c.sets,
-      data: [],
-      arcs: c.arcs.map((a) => {
-        const result = {
-          ...a,
-          x2: mx(a.x2),
-          y2: my(a.y2),
-          path: null
+    },
+    ...(isEllipse(c)
+      ? {
+          rx: c.rx * f,
+          ry: c.ry * f,
         }
+      : {
+          r: c.r * f,
+        }
+    )
+  }));
 
-        result.path = generateArcSlicePath(a, c.arcs)
+  const intersections = r.intersections.map((c, i) => ({
+    text: {
+      x: mx(c.text.x),
+      y: my(c.text.y),
+    },
+    x1: mx(c.x1),
+    y1: my(c.y1),
+    sets: dataSets, // c.sets,
+    data: [], // data[i],
+    arcs: c.arcs.map(a => ({
+      ...a,
+      x2: mx(a.x2),
+      y2: my(a.y2)
+    }))
+  }));
 
-        return result;
-      }),
-    })),
+  return {
+    sets: dataSets,
+    intersections: intersections.map(i => ({
+      ...i,
+      path: generateArcSlicePath(i, i.sets)
+    }))
   };
 }
