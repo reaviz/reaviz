@@ -1,21 +1,24 @@
 import React, { Component, ReactElement } from 'react';
+import classNames from 'classnames';
+import type { PieArcDatum } from 'd3-shape';
+import { pie } from 'd3-shape';
+import memoize from 'memoize-one';
+import { CloneElement } from 'rdk';
 import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { ChartDataShape } from '../common/data';
-import classNames from 'classnames';
-import { pie } from 'd3-shape';
+import type { ChartShallowDataShape } from '../common/data';
 import { PieArcSeries, PieArcSeriesProps } from './PieArcSeries';
-import { CloneElement } from 'rdk';
-import memoize from 'memoize-one';
 
-interface PieChartProps extends ChartProps {
+export type ArcData = PieArcDatum<ChartShallowDataShape>;
+
+export interface PieChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
-  data: ChartDataShape[];
+  data: ChartShallowDataShape[];
 
   /**
    * Whether the chart is disabled.
@@ -39,27 +42,24 @@ export class PieChart extends Component<PieChartProps> {
     displayAllLabels: false,
     data: [],
     margins: 10,
-    series: (
-      <PieArcSeries
-        animated={true}
-        doughnut={false}
-        innerRadius={0}
-        arcWidth={0.25}
-        displayAllLabels={false}
-      />
-    )
+    series: <PieArcSeries />
   };
 
-  getData = memoize((data: ChartDataShape[], explode: boolean) => {
-    const pieLayout = pie().value((d: any) => d.data);
+  getData = memoize(
+    (data: ChartShallowDataShape[], explode: boolean): ArcData[] => {
+      const pieLayout = pie<
+        void,
+        ChartShallowDataShape
+      >().value((d: ChartShallowDataShape) => Number(d.data));
 
-    // Explode sort doesn't work right...
-    if (!explode) {
-      pieLayout.sort(null);
+      // Explode sort doesn't work right...
+      if (!explode) {
+        pieLayout.sort(null);
+      }
+
+      return pieLayout(data);
     }
-
-    return pieLayout(data as any);
-  });
+  );
 
   renderChart(containerProps: ChartContainerChildProps) {
     const { chartWidth, chartHeight } = containerProps;
