@@ -14,6 +14,8 @@ function isEllipse(d) {
   return typeof d.rx === 'number';
 }
 
+const lookup = [venn0, venn1, venn2, venn3, venn4, venn5];
+
 export function generateArcSlicePath(
   s: any,
   refs: any[],
@@ -37,7 +39,6 @@ export function starEulerLayout(data, bb: IBoundingBox) {
   const uniqueSets = data.filter(d => d.sets.length === 1);
   const setCount = uniqueSets.length;
 
-  const lookup = [venn0, venn1, venn2, venn3, venn4, venn5];
   const r = lookup[Math.min(lookup.length - 1, setCount)];
   const f = Math.min(bb.width / r.bb.width, bb.height / r.bb.height);
   const x = f * -r.bb.x + (bb.width - f * r.bb.width) / 2 + 0;
