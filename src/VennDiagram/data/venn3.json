@@ -1,0 +1,87 @@
+{
+  "sets": [
+    { "cx": -3.464, "cy": -2, "r": 5, "text": { "x": -7, "y": -6 }, "align": "end" },
+    { "cx": 3.464, "cy": -2, "r": 5, "text": { "x": 7, "y": -6 }, "align": "start" },
+    { "cx": 0, "cy": 4, "r": 5, "text": { "x": 4, "y": 7.5 }, "align": "start", "verticalAlign": "top" }
+  ],
+  "intersections": [
+    {
+      "sets": [0],
+      "x1": -4.855,
+      "y1": 2.803,
+      "arcs": [
+        { "mode": "o", "ref": 2, "x2": -1.39, "y2": -0.803, "sweep": true, "large": false },
+        { "mode": "o", "ref": 1, "x2": 0, "y2": -5.606, "sweep": true, "large": false },
+        { "mode": "i", "ref": 0, "x2": -4.855, "y2": 2.803, "sweep": false, "large": true }
+      ],
+      "text": { "x": -4.216, "y": -2.434 }
+    },
+    {
+      "sets": [1],
+      "x1": 0,
+      "y1": -5.606,
+      "arcs": [
+        { "mode": "o", "ref": 0, "x2": 1.39, "y2": -0.803, "sweep": true, "large": false },
+        { "mode": "o", "ref": 2, "x2": 4.855, "y2": 2.803, "sweep": true, "large": false },
+        { "mode": "i", "ref": 1, "x2": 0, "y2": -5.606, "sweep": false, "large": true }
+      ],
+      "text": { "x": 4.216, "y": -2.434 }
+    },
+    {
+      "sets": [2],
+      "x1": -4.855,
+      "y1": 2.803,
+      "arcs": [
+        { "mode": "o", "ref": 0, "x2": 0, "y2": 1.606, "sweep": false, "large": false },
+        { "mode": "o", "ref": 1, "x2": 4.855, "y2": 2.803, "sweep": false, "large": false },
+        { "mode": "i", "ref": 2, "x2": -4.855, "y2": 2.803, "sweep": true, "large": true }
+      ],
+      "text": { "x": 0, "y": 4.869 }
+    },
+    {
+      "sets": [0, 1],
+      "x1": 0,
+      "y1": -5.606,
+      "arcs": [
+        { "mode": "i", "ref": 1, "x2": -1.39, "y2": -0.803, "sweep": false, "large": false },
+        { "mode": "o", "ref": 2, "x2": 1.39, "y2": -0.803, "sweep": true, "large": false },
+        { "mode": "i", "ref": 0, "x2": 0, "y2": -5.606, "sweep": false, "large": false }
+      ],
+      "text": { "x": 0, "y": -2.404 }
+    },
+    {
+      "sets": [0, 2],
+      "x1": -4.855,
+      "y1": 2.803,
+      "arcs": [
+        { "mode": "i", "ref": 2, "x2": -1.39, "y2": -0.803, "sweep": true, "large": false },
+        { "mode": "o", "ref": 1, "x2": 0, "y2": 1.606, "sweep": false, "large": false },
+        { "mode": "i", "ref": 0, "x2": -4.855, "y2": 2.803, "sweep": true, "large": false }
+      ],
+      "text": { "x": -2.082, "y": 1.202 }
+    },
+    {
+      "sets": [1, 2],
+      "x1": 4.855,
+      "y1": 2.803,
+      "arcs": [
+        { "mode": "i", "ref": 2, "x2": 1.39, "y2": -0.803, "sweep": false, "large": false },
+        { "mode": "o", "ref": 0, "x2": 0, "y2": 1.606, "sweep": true, "large": false },
+        { "mode": "i", "ref": 1, "x2": 4.855, "y2": 2.803, "sweep": false, "large": false }
+      ],
+      "text": { "x": 2.082, "y": 1.202 }
+    },
+    {
+      "sets": [0, 1, 2],
+      "x1": 1.39,
+      "y1": -0.803,
+      "arcs": [
+        { "mode": "i", "ref": 0, "x2": 0, "y2": 1.606, "sweep": true, "large": false },
+        { "mode": "i", "ref": 1, "x2": -1.39, "y2": -0.803, "sweep": true, "large": false },
+        { "mode": "i", "ref": 2, "x2": 1.39, "y2": -0.803, "sweep": true, "large": false }
+      ],
+      "text": { "x": 0, "y": 0 }
+    }
+  ],
+  "bb": { "x": -8.464, "y": -7, "width": 16.928, "height": 16 }
+}
