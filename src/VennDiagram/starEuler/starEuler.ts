@@ -1,9 +1,9 @@
-import venn0 from './data/venn0.json';
-import venn1 from './data/venn1.json';
-import venn2 from './data/venn2.json';
-import venn3 from './data/venn3.json';
-import venn4 from './data/venn4.json';
-import venn5 from './data/venn5.json';
+import venn0 from './venn0.json';
+import venn1 from './venn1.json';
+import venn2 from './venn2.json';
+import venn3 from './venn3.json';
+import venn4 from './venn4.json';
+import venn5 from './venn5.json';
 
 export interface IBoundingBox {
   width: number;

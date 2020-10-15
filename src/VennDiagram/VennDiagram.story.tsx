@@ -48,16 +48,18 @@ storiesOf('Charts/Venn Diagram', module)
     );
   })
   .add('Star Euler', () => {
+    const showValues = boolean('Show Values', false);
     const data = object('Data', [
       { key: ['Soccer'], data: 2 },
       { key: ['Tennis'], data: 0 },
       { key: ['Volleyball'], data: 1 },
       { key: ['Basketball'], data: 1 },
       { key: ['Football'], data: 1 },
+      { key: ['Football', 'Soccer'], data: 1 },
       { key: ['Soccer', 'Tennis'], data: 1 },
       { key: ['Soccer', 'Volleyball'], data: 0 },
       { key: ['Tennis', 'Volleyball'], data: 1 },
-      { key: ['Soccer', 'Tennis', 'Volleyball'], data: 1 },
+      { key: ['Soccer', 'Tennis', 'Volleyball'], data: 1 }
     ]);
 
     return (
@@ -69,7 +71,7 @@ storiesOf('Charts/Venn Diagram', module)
         series={
           <VennSeries
             colorScheme={['#00CCCC']}
-            label={<VennLabel labelType="value" showAll={true} />}
+            label={<VennLabel labelType={showValues ? 'value' : 'key'} showAll={true} />}
           />
         }
       />
