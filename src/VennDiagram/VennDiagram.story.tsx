@@ -48,12 +48,15 @@ storiesOf('Charts/Venn Diagram', module)
   })
   .add('Star Euler', () => {
     const data = object('Data', [
-      { key: ['A'], data: 4 },
-      { key: ['B'], data: 1 },
-      { key: ['C'], data: 1 },
-      { key: ['D'], data: 1 },
-      { key: ['E'], data: 1 },
-      { key: ['A', 'B', 'C'], data: 1 }
+      { key: ['Soccer'], data: 2 },
+      { key: ['Tennis'], data: 0 },
+      { key: ['Volleyball'], data: 1 },
+      { key: ['Basketball'], data: 1 },
+      { key: ['Football'], data: 1 },
+      { key: ['Soccer', 'Tennis'], data: 1 },
+      { key: ['Soccer', 'Volleyball'], data: 0 },
+      { key: ['Tennis', 'Volleyball'], data: 1 },
+      { key: ['Soccer', 'Tennis', 'Volleyball'], data: 1 },
     ]);
 
     return (
@@ -62,7 +65,8 @@ storiesOf('Charts/Venn Diagram', module)
         height={450}
         width={450}
         data={data}
-      />
+        series={<VennSeries colorScheme={['#1EA7FD']} />}
+        />
     );
   })
   .add('Large Offsets', () => (

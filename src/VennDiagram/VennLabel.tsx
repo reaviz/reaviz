@@ -51,7 +51,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   fontFamily = 'sans-serif'
 }) => {
   // If the text area is very large, then lets just skip showing the label
-  if (!showAll && !data.arcs?.[0]?.large) {
+  if (!showAll && !data.arcs?.filter(a => a.large).length) {
     return null;
   }
 

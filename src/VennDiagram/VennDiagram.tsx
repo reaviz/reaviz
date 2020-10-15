@@ -64,16 +64,10 @@ export const VennDiagram: FC<VennDiagramProps> = ({
     (containerProps: ChartContainerChildProps) => {
       let layoutData;
       if (type === 'starEuler') {
-        const starData = starEulerLayout(normalized, {
+        layoutData = starEulerLayout(normalized, {
           height: containerProps.height,
-          width: containerProps.width,
-          x: 0,
-          y: 0
+          width: containerProps.width
         });
-
-        layoutData = starData.intersections;
-
-        console.log('here', starData)
       } else {
         layoutData = layout(normalized, {
           height: containerProps.height,

@@ -68,7 +68,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
       return (
         <motion.g
-          key={d.data?.sets?.toString()}
+          key={d.data?.key}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={transition}
@@ -91,7 +91,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
   const renderLabel = useCallback((d: IVennLayout<any>) => (
     <motion.g
-      key={d.data?.sets?.toString()}
+      key={d.data?.key}
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={transition}
