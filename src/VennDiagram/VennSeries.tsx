@@ -64,7 +64,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         index
       });
       const arcFill = arc.props.fill || fill;
-      const stroke = chroma(fill).darken(.5);
+      const stroke = arc.props.stroke || chroma(fill).darken(.5);
 
       return (
         <motion.g

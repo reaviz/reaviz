@@ -1,4 +1,7 @@
-# 9.2.0 - 10/9/20
+# 9.2.1 - 10/15/20
+- [Fix] Fix stroke not passing through on arc of venn diagram
+
+# 9.2.0 - 10/15/20
 - [Feature] Star Euler Diagram
 - [Feature] Add Venn Diagram Label Value Type
 
