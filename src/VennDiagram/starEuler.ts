@@ -74,7 +74,7 @@ export function starEulerLayout(data, bb: IBoundingBox) {
     x1: mx(c.x1),
     y1: my(c.y1),
     sets: dataSets,
-    data: data[i] || { key: i, sets: ['NA'], value: 0 },
+    data: data[i] || { key: i, sets: ['NA'], size: 0 },
     arcs: c.arcs.map(a => ({
       ...a,
       x2: mx(a.x2),

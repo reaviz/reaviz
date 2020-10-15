@@ -13,6 +13,7 @@ storiesOf('Charts/Venn Diagram', module)
     const height = number('Height', 450);
     const width = number('Width', 450);
     const showAll = boolean('Show All Labels', false);
+    const showValues = boolean('Show Values', false);
     const color = select('Color Scheme', schemes, 'cybertron');
     const data = object('Data', [
       { key: ['A'], data: 12 },
@@ -25,7 +26,7 @@ storiesOf('Charts/Venn Diagram', module)
         height={height}
         width={width}
         data={data}
-        series={<VennSeries colorScheme={color} label={<VennLabel showAll={showAll} />} />}
+        series={<VennSeries colorScheme={color} label={<VennLabel showAll={showAll} labelType={showValues ? 'value' : 'key'} />} />}
       />
     );
   })
@@ -65,8 +66,13 @@ storiesOf('Charts/Venn Diagram', module)
         height={450}
         width={450}
         data={data}
-        series={<VennSeries colorScheme={['#1EA7FD']} />}
-        />
+        series={
+          <VennSeries
+            colorScheme={['#00CCCC']}
+            label={<VennLabel labelType="value" showAll={true} />}
+          />
+        }
+      />
     );
   })
   .add('Large Offsets', () => (

@@ -11,6 +11,11 @@ export interface VennLabelProps {
   showAll?: boolean;
 
   /**
+   * The label type to show.
+   */
+  labelType: 'key' | 'value';
+
+  /**
    * Should wrap text or not.
    */
   wrap?: boolean;
@@ -43,6 +48,7 @@ export interface VennLabelProps {
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
+  labelType = 'key',
   showAll = false,
   wrap = true,
   animated = true,
@@ -55,7 +61,10 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     return null;
   }
 
-  const key = data.data?.sets?.join(' | ');
+  const key = labelType === 'key' ?
+    data.data?.sets?.join(' | ') :
+    data.data.size;
+
   const size = calculateDimensions(key, fontFamily, fontSize);
   const halfHeight = size.height / 2;
   const halfWidth = size.width / 2;
