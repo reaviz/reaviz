@@ -1,3 +1,7 @@
+# 9.2.0 - 10/9/20
+- [Feature] Star Euler Diagram
+- [Feature] Add Venn Diagram Label Value Type
+
 # 9.1.2 - 10/9/20
 - [Fix] Fix sankey diagram links
 - [Fix] Improve error handling of venn diagram

@@ -6,6 +6,7 @@ import postcss from 'rollup-plugin-postcss-modules';
 import autoprefixer from 'autoprefixer';
 import commonjs from 'rollup-plugin-commonjs';
 import pkg from './package.json';
+import json from '@rollup/plugin-json';
 
 export default [
   {
@@ -49,6 +50,7 @@ export default [
           '**/*.story.tsx'
         ]
       }),
+      json(),
       resolve(),
       commonjs(),
       sourceMaps()
