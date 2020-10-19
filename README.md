@@ -83,7 +83,9 @@ Chart types include:
   - Year Calendar
   - Month Calendar
 - Venn Diagram
-- Euler Diagram
+  - Standard
+  - Euler
+  - Fixed Euler
 
 Additional features:
 
