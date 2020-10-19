@@ -54,10 +54,8 @@ storiesOf('Charts/Venn Diagram', module)
       { key: ['Tennis'], data: 0 },
       { key: ['Volleyball'], data: 1 },
       { key: ['Basketball'], data: 1 },
-      { key: ['Football'], data: 1 },
-      { key: ['Football', 'Soccer'], data: 1 },
-      { key: ['Soccer', 'Tennis'], data: 1 },
       { key: ['Soccer', 'Volleyball'], data: 0 },
+      { key: ['Soccer', 'Tennis'], data: 1 },
       { key: ['Tennis', 'Volleyball'], data: 1 },
       { key: ['Soccer', 'Tennis', 'Volleyball'], data: 1 }
     ]);

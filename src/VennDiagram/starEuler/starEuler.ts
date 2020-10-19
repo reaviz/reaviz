@@ -10,12 +10,34 @@ export interface IBoundingBox {
   height: number;
 }
 
+const shapes = [venn0, venn1, venn2, venn3, venn4, venn5];
+
 function isEllipse(d) {
   return typeof d.rx === 'number';
 }
 
-const lookup = [venn0, venn1, venn2, venn3, venn4, venn5];
+/**
+ * Generate all combinations of a given array.
+ * Reference: https://stackoverflow.com/questions/5752002/find-all-possible-subset-combos-in-an-array
+ */
+function combinations(array: string[]) {
+  return (new Array(1 << array.length) as any).fill().map(
+    (_e1, i) => array.filter((e2, j) => i & 1 << j));
+}
 
+/**
+ * Given a array set, lookup the data.
+ */
+function lookup(combo: string[], data: any[]) {
+  const key = combo.join('|')
+  const found = data.find(d => d.key === key);
+  return found || { key, sets: ['NA'], size: 0 }
+}
+
+/**
+ * Generate the arc slice path.
+ * Reference: https://github.com/upsetjs/chartjs-chart-venn/blob/master/src/model/generate.ts#L4
+ */
 export function generateArcSlicePath(
   s: any,
   refs: any[],
@@ -24,8 +46,9 @@ export function generateArcSlicePath(
   if (s.path) {
     return s.path;
   }
+
   return `M ${s.x1 - p},${s.y1 - p} ${s.arcs
-    .map((arc) => {
+    .map(arc => {
       const ref = refs[arc.ref];
       const rx = isEllipse(ref) ? ref.rx : ref.r;
       const ry = isEllipse(ref) ? ref.ry : ref.r;
@@ -35,18 +58,28 @@ export function generateArcSlicePath(
     .join(' ')}`;
 }
 
-export function starEulerLayout(data, bb: IBoundingBox) {
+/**
+ * Generate the star euler layout.
+ * Adapted from: https://github.com/upsetjs/chartjs-chart-venn
+ */
+export function starEulerLayout(data: any[], bb: IBoundingBox) {
   const uniqueSets = data.filter(d => d.sets.length === 1);
   const setCount = uniqueSets.length;
 
-  const r = lookup[Math.min(lookup.length - 1, setCount)];
-  const f = Math.min(bb.width / r.bb.width, bb.height / r.bb.height);
-  const x = f * -r.bb.x + (bb.width - f * r.bb.width) / 2 + 0;
-  const y = f * -r.bb.y + (bb.height - f * r.bb.height) / 2 + 0;
+  const shape = shapes[Math.min(shapes.length - 1, setCount)];
+  const f = Math.min(bb.width / shape.bb.width, bb.height / shape.bb.height);
+  const x = f * -shape.bb.x + (bb.width - f * shape.bb.width) / 2 + 0;
+  const y = f * -shape.bb.y + (bb.height - f * shape.bb.height) / 2 + 0;
   const mx = (v: number) => x + f * v;
   const my = (v: number) => y + f * v;
 
-  const dataSets = r.sets.map(c => ({
+  const sets = combinations(uniqueSets.map(u => u.key))
+    .sort((a, b) => uniqueSets.indexOf(a[0]) - uniqueSets.indexOf(b[0]))
+    .sort((a, b) => a.length - b.length);
+
+  const setCombos = sets.splice(1, sets.length);
+
+  const dataSets = shape.sets.map(c => ({
     ...c,
     ...{
       cx: mx(c.cx),
@@ -67,7 +100,7 @@ export function starEulerLayout(data, bb: IBoundingBox) {
     )
   }));
 
-  const intersections = r.intersections.map((c, i) => ({
+  const intersections = shape.intersections.map((c, i) => ({
     text: {
       x: mx(c.text.x),
       y: my(c.text.y),
@@ -75,7 +108,7 @@ export function starEulerLayout(data, bb: IBoundingBox) {
     x1: mx(c.x1),
     y1: my(c.y1),
     sets: dataSets,
-    data: data[i] || { key: i, sets: ['NA'], size: 0 },
+    data: lookup(setCombos[i], data),
     arcs: c.arcs.map(a => ({
       ...a,
       x2: mx(a.x2),
