@@ -48,7 +48,7 @@ storiesOf('Charts/Venn Diagram', module)
     );
   })
   .add('Star Euler', () => {
-    const showValues = boolean('Show Values', false);
+    const showValues = boolean('Show Values', true);
     const data = object('Data', [
       { key: ['Soccer'], data: 2 },
       { key: ['Tennis'], data: 0 },

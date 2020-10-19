@@ -31,7 +31,7 @@ function combinations(array: string[]) {
 function lookup(combo: string[], data: any[]) {
   const key = combo.join('|')
   const found = data.find(d => d.key === key);
-  return found || { key, sets: ['NA'], size: 0 }
+  return found || { key, sets: combo, size: 0 }
 }
 
 /**
