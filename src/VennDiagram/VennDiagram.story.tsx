@@ -189,6 +189,11 @@ storiesOf('Charts/Venn Diagram', module)
         { key: ['D', 'A'], data: 1 },
         { key: ['D', 'A', 'B'], data: 1 }
       ]}
+      series={
+        <VennSeries
+          colorScheme={['#2d60e8']}
+        />
+      }
     />
   ))
   .add('No Intersections', () => (
