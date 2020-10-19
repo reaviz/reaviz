@@ -1,3 +1,6 @@
+# 9.2.3 - 10/19/20
+= [Enhancement] Star euler non-matches now show value
+
 # 9.2.2 - 10/19/20
 - [Fix] Fix star euler not applying data correctly to layout
 
