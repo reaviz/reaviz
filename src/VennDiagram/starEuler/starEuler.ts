@@ -22,14 +22,14 @@ function isEllipse(d) {
  */
 function combinations(array: string[]) {
   return (new Array(1 << array.length) as any).fill().map(
-    (_e1, i) => array.filter((e2, j) => i & 1 << j));
+    (_e1, i) => array.filter((_e2, j) => i & 1 << j));
 }
 
 /**
  * Given a array set, lookup the data.
  */
 function lookup(combo: string[], data: any[]) {
-  const key = combo.join('|')
+  const key = combo.sort().join('|')
   const found = data.find(d => d.key === key);
   return found || { key, sets: combo, size: 0 }
 }
@@ -63,8 +63,35 @@ export function generateArcSlicePath(
  * Adapted from: https://github.com/upsetjs/chartjs-chart-venn
  */
 export function starEulerLayout(data: any[], bb: IBoundingBox) {
-  const uniqueSets = data.filter(d => d.sets.length === 1);
+  // Collect all unique sets and sort by size
+  const uniqueSets = data
+    .filter(d => d.sets.length === 1)
+    .sort((a, b) => b.size - a.size);
+
+  // reshape the data key so they will match combos
+  const keyedData = data.map(d => ({
+    ...d,
+    key: d.sets.sort().join('|')
+  }));
+
+  // Map our unique sets and get len
+  const uniqueSetKeys = uniqueSets.map(u => u.key);
   const setCount = uniqueSets.length;
+
+  // Build all combos and return 1+ combos
+  const sets: any[] = combinations(uniqueSetKeys);
+  const filteredSets = sets.slice(1, sets.length);
+
+  // Sort the combos based on the unique set size
+  const sortedSet = [];
+  for (const name of uniqueSetKeys) {
+    sortedSet.push(
+      ...filteredSets.filter(s => s[0] === name)
+    );
+  }
+
+  // Sort the sorted set based on set len
+  const resultSet = sortedSet.slice().sort((a, b) => a.length - b.length);
 
   const shape = shapes[Math.min(shapes.length - 1, setCount)];
   const f = Math.min(bb.width / shape.bb.width, bb.height / shape.bb.height);
@@ -73,13 +100,7 @@ export function starEulerLayout(data: any[], bb: IBoundingBox) {
   const mx = (v: number) => x + f * v;
   const my = (v: number) => y + f * v;
 
-  const sets = combinations(uniqueSets.map(u => u.key))
-    .sort((a, b) => uniqueSets.indexOf(a[0]) - uniqueSets.indexOf(b[0]))
-    .sort((a, b) => a.length - b.length);
-
-  const setCombos = sets.splice(1, sets.length);
-
-  const dataSets = shape.sets.map(c => ({
+  const shapeSets = shape.sets.map(c => ({
     ...c,
     ...{
       cx: mx(c.cx),
@@ -107,8 +128,8 @@ export function starEulerLayout(data: any[], bb: IBoundingBox) {
     },
     x1: mx(c.x1),
     y1: my(c.y1),
-    sets: dataSets,
-    data: lookup(setCombos[i], data),
+    sets: shapeSets,
+    data: lookup(resultSet[i], keyedData),
     arcs: c.arcs.map(a => ({
       ...a,
       x2: mx(a.x2),
