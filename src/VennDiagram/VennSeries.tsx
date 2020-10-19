@@ -64,7 +64,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         index
       });
       const arcFill = arc.props.fill || fill;
-      const stroke = arc.props.stroke || chroma(fill).darken(.5);
+      const arcStroke = arc.props.stroke || chroma(arcFill).darken(.5).hex();
 
       return (
         <motion.g
@@ -75,14 +75,13 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         >
           <CloneElement<VennArcProps>
             element={arc}
+            id={`arc-${id}-${index}`}
             data={d}
             fill={arcFill}
-            id={id}
-            stroke={stroke}
+            stroke={arcStroke}
             disabled={disabled}
             animated={animated}
           />
-
         </motion.g>
       );
     },
