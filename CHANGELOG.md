@@ -1,3 +1,6 @@
+# 9.2.6 - 10/19/20
+- [Fix] Improve label position in venns
+
 # 9.2.5 - 10/19/20
 - [Feature] Add gradient to venns
 - [Fix] Improve active opacity on venns
