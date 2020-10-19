@@ -5,6 +5,7 @@ import { CloneElement } from '../common/utils';
 import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '../common/Mask';
+import { Gradient, GradientProps } from '../common/Gradient';
 
 export interface VennArcProps {
   /**
@@ -68,6 +69,11 @@ export interface VennArcProps {
   mask: ReactElement<MaskProps, typeof Mask> | null;
 
   /**
+   * Gradient shades for the arc.
+   */
+  gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
    * Event for when the arc is clicked.
    */
   onClick: (event) => void;
@@ -92,9 +98,10 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   mask,
   id,
   initialOpacity = 0.6,
-  activeOpacity = 0.7,
+  activeOpacity = 0.8,
   strokeWidth = 3,
   cursor = 'initial',
+  gradient = <Gradient />,
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
@@ -103,7 +110,9 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const arcRef = useRef<any | null>(null);
   const [active, setActive] = useState<boolean>(false);
   const { transition, d } = useInterpolate({ animated, data });
-  const arcFill = mask ? `url(#mask-pattern-${id})` : fill;
+  const arcFill = gradient && !mask ?
+    `url(#gradient-${id})` :
+      mask ? `url(#mask-pattern-${id})` : fill;
 
   return (
     <g
@@ -142,8 +151,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         stroke={stroke}
         transition={transition}
         d={d}
-        initial={{ opacity: initialOpacity }}
-        animate={{ opacity: active ? activeOpacity : initialOpacity }}
+        opacity={initialOpacity}
+        whileHover={{ opacity: activeOpacity }}
       />
       {mask && (
         <Fragment>
@@ -151,9 +160,16 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           <CloneElement<MaskProps>
             element={mask}
             id={`mask-pattern-${id}`}
-            fill={stroke}
+            fill={fill}
           />
         </Fragment>
+      )}
+      {gradient && (
+        <CloneElement<GradientProps>
+          element={gradient}
+          id={`gradient-${id}`}
+          color={fill}
+        />
       )}
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
