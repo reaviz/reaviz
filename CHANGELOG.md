@@ -1,3 +1,6 @@
+# 9.2.4 - 10/19/20
+= [Fix] Fix star euler with complex data
+
 # 9.2.3 - 10/19/20
 = [Enhancement] Star euler non-matches now show value
 
