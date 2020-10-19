@@ -1,3 +1,7 @@
+# 9.2.7 - 10/19/20
+- [Fix] Gradients not showing correct colors in venn arc
+- [Chore] Move gradient to fc
+
 # 9.2.6 - 10/19/20
 - [Fix] Improve label position in venns
 
