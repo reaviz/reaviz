@@ -1,3 +1,7 @@
+# 9.2.5 - 10/19/20
+- [Feature] Add gradient to venns
+- [Fix] Improve active opacity on venns
+
 # 9.2.4 - 10/19/20
 = [Fix] Fix star euler with complex data
 
