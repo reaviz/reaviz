@@ -110,9 +110,12 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const arcRef = useRef<any | null>(null);
   const [active, setActive] = useState<boolean>(false);
   const { transition, d } = useInterpolate({ animated, data });
-  const arcFill = gradient && !mask ?
-    `url(#gradient-${id})` :
-      mask ? `url(#mask-pattern-${id})` : fill;
+  const arcFill =
+    gradient && !mask
+      ? `url(#gradient-${id})`
+      : mask
+      ? `url(#mask-pattern-${id})`
+      : fill;
 
   return (
     <g

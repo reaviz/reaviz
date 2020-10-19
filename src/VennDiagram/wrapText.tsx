@@ -21,7 +21,6 @@ export function wrapText({ key, data, fontFamily, fontSize }) {
       if (sum + wordWidth < width) {
         sum += wordWidth;
         curText = `${curText} ${word}`;
-
       } else {
         rows.push(curText);
         sum = 0;
@@ -29,7 +28,7 @@ export function wrapText({ key, data, fontFamily, fontSize }) {
       }
 
       if (words.length === lineNum) {
-        rows.push(curText)
+        rows.push(curText);
       }
     }
 

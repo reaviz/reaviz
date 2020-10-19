@@ -18,17 +18,20 @@ export const Gradient: FC<Partial<GradientProps>> = ({
     <GradientStop offset="80%" stopOpacity={1} key="stop" />
   ]
 }) => {
-  const pos = direction === 'vertical' ? {
-    x1: '10%',
-    x2: '10%',
-    y1: '100%',
-    y2: '0%'
-  } : {
-    y1: '0%',
-    y2: '0%',
-    x1: '0%',
-    x2: '100%'
-  };
+  const pos =
+    direction === 'vertical'
+      ? {
+          x1: '10%',
+          x2: '10%',
+          y1: '100%',
+          y2: '0%'
+        }
+      : {
+          y1: '0%',
+          y2: '0%',
+          x1: '0%',
+          x2: '100%'
+        };
 
   return (
     <linearGradient spreadMethod="pad" id={id} {...pos}>
@@ -41,4 +44,4 @@ export const Gradient: FC<Partial<GradientProps>> = ({
       ))}
     </linearGradient>
   );
-}
+};

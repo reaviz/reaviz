@@ -26,7 +26,17 @@ storiesOf('Charts/Venn Diagram', module)
         height={height}
         width={width}
         data={data}
-        series={<VennSeries colorScheme={color} label={<VennLabel showAll={showAll} labelType={showValues ? 'value' : 'key'} />} />}
+        series={
+          <VennSeries
+            colorScheme={color}
+            label={
+              <VennLabel
+                showAll={showAll}
+                labelType={showValues ? 'value' : 'key'}
+              />
+            }
+          />
+        }
       />
     );
   })
@@ -49,140 +59,76 @@ storiesOf('Charts/Venn Diagram', module)
   })
   .add('Star Euler', () => {
     const showValues = boolean('Show Values', true);
-    const data = object('Data',
-    [
+    const data = object('Data', [
       {
-        "key": [
-          "manageengine",
-          "meraki"
-        ],
-        "data": 150
+        key: ['manageengine', 'meraki'],
+        data: 150
       },
       {
-        "key": [
-          "manageengine",
-          "active directory",
-          "sophos",
-          "meraki"
-        ],
-        "data": 91
+        key: ['manageengine', 'active directory', 'sophos', 'meraki'],
+        data: 91
       },
       {
-        "key": [
-          "manageengine"
-        ],
-        "data": 202
+        key: ['manageengine'],
+        data: 202
       },
       {
-        "key": [
-          "sophos"
-        ],
-        "data": 219
+        key: ['sophos'],
+        data: 219
       },
       {
-        "key": [
-          "manageengine",
-          "active directory",
-          "meraki"
-        ],
-        "data": 95
+        key: ['manageengine', 'active directory', 'meraki'],
+        data: 95
       },
       {
-        "key": [
-          "manageengine",
-          "sophos"
-        ],
-        "data": 175
+        key: ['manageengine', 'sophos'],
+        data: 175
       },
       {
-        "key": [
-          "manageengine",
-          "sophos",
-          "meraki"
-        ],
-        "data": 140
+        key: ['manageengine', 'sophos', 'meraki'],
+        data: 140
       },
       {
-        "key": [
-          "active directory",
-          "sophos"
-        ],
-        "data": 113
+        key: ['active directory', 'sophos'],
+        data: 113
       },
       {
-        "key": [
-          "sophos",
-          "meraki"
-        ],
-        "data": 150
+        key: ['sophos', 'meraki'],
+        data: 150
       },
       {
-        "key": [
-          "gsuite"
-        ],
-        "data": 449
+        key: ['gsuite'],
+        data: 449
       },
       {
-        "key": [
-          "gsuite",
-          "meraki"
-        ],
-        "data": 189
+        key: ['gsuite', 'meraki'],
+        data: 189
       },
       {
-        "key": [
-          "meraki"
-        ],
-        "data": 850
+        key: ['meraki'],
+        data: 850
       },
       {
-        "key": [
-          "manageengine",
-          "active directory"
-        ],
-        "data": 109
+        key: ['manageengine', 'active directory'],
+        data: 109
       },
       {
-        "key": [
-          "active directory"
-        ],
-        "data": 224
+        key: ['active directory'],
+        data: 224
       },
       {
-        "key": [
-          "active directory",
-          "meraki"
-        ],
-        "data": 98
+        key: ['active directory', 'meraki'],
+        data: 98
       },
       {
-        "key": [
-          "active directory",
-          "sophos",
-          "meraki"
-        ],
-        "data": 94
+        key: ['active directory', 'sophos', 'meraki'],
+        data: 94
       },
       {
-        "key": [
-          "manageengine",
-          "active directory",
-          "sophos"
-        ],
-        "data": 103
+        key: ['manageengine', 'active directory', 'sophos'],
+        data: 103
       }
-    ]
-    /*[
-        { key: ['Soccer'], data: 2 },
-        { key: ['Tennis'], data: 0 },
-        { key: ['Volleyball'], data: 1 },
-        { key: ['Basketball'], data: 1 },
-        { key: ['Soccer', 'Volleyball'], data: 0 },
-        { key: ['Soccer', 'Tennis'], data: 1 },
-        { key: ['Tennis', 'Volleyball'], data: 1 },
-        { key: ['Soccer', 'Tennis', 'Volleyball'], data: 1 }
-      ]
-    */);
+    ]);
 
     return (
       <VennDiagram
@@ -193,7 +139,12 @@ storiesOf('Charts/Venn Diagram', module)
         series={
           <VennSeries
             colorScheme={['#00CCCC']}
-            label={<VennLabel labelType={showValues ? 'value' : 'key'} showAll={true} />}
+            label={
+              <VennLabel
+                labelType={showValues ? 'value' : 'key'}
+                showAll={true}
+              />
+            }
           />
         }
       />
@@ -226,17 +177,17 @@ storiesOf('Charts/Venn Diagram', module)
       height={450}
       width={450}
       data={[
-        { "key": ["A"], "data": 12 },
-        { "key": ["B"], "data": 12 },
-        { "key": ["C"], "data": 12 },
-        { "key": ["D"], "data": 12 },
-        { "key": ["A", "B"], "data": 2 },
-        { "key": ["B", "C"], "data": 2 },
-        { "key": ["A", "C"], "data": 5 },
-        { "key": ["A", "B", "C"], "data": 10 },
-        { "key": ["B", "D"], "data": 1 },
-        { "key": ["D", "A"], "data": 1 },
-        { "key": ["D", "A", "B"], "data": 1 }
+        { key: ['A'], data: 12 },
+        { key: ['B'], data: 12 },
+        { key: ['C'], data: 12 },
+        { key: ['D'], data: 12 },
+        { key: ['A', 'B'], data: 2 },
+        { key: ['B', 'C'], data: 2 },
+        { key: ['A', 'C'], data: 5 },
+        { key: ['A', 'B', 'C'], data: 10 },
+        { key: ['B', 'D'], data: 1 },
+        { key: ['D', 'A'], data: 1 },
+        { key: ['D', 'A', 'B'], data: 1 }
       ]}
     />
   ))
@@ -256,7 +207,18 @@ storiesOf('Charts/Venn Diagram', module)
     <VennDiagram
       height={450}
       width={450}
-      series={<VennSeries arc={<VennArc mask={<Stripes />} strokeWidth={1} initialOpacity={.9} activeOpacity={1} />} />}
+      series={
+        <VennSeries
+          arc={
+            <VennArc
+              mask={<Stripes />}
+              strokeWidth={1}
+              initialOpacity={0.9}
+              activeOpacity={1}
+            />
+          }
+        />
+      }
       data={[
         { key: ['A'], data: 12 },
         { key: ['B'], data: 12 },
@@ -268,7 +230,9 @@ storiesOf('Charts/Venn Diagram', module)
     <VennDiagram
       height={450}
       width={450}
-      series={<VennSeries arc={<VennArc strokeWidth={5} fill="transparent" />} />}
+      series={
+        <VennSeries arc={<VennArc strokeWidth={5} fill="transparent" />} />
+      }
       data={[
         { key: ['A'], data: 12 },
         { key: ['B'], data: 12 },

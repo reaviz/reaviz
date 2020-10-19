@@ -56,13 +56,12 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   fontFamily = 'sans-serif'
 }) => {
   // If the text area is very large, then lets just skip showing the label
-  if (!showAll && !data.arcs?.filter(a => a.large).length) {
+  if (!showAll && !data.arcs?.filter((a) => a.large).length) {
     return null;
   }
 
-  const key = labelType === 'key' ?
-    data.data?.sets?.join(' | ') :
-    data.data.size;
+  const key =
+    labelType === 'key' ? data.data?.sets?.join(' | ') : data.data.size;
 
   const x = data.text.x;
   const y = data.text.y;

@@ -64,7 +64,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         index
       });
       const arcFill = arc.props.fill || fill;
-      const arcStroke = arc.props.stroke || chroma(arcFill).darken(.5).hex();
+      const arcStroke = arc.props.stroke || chroma(arcFill).darken(0.5).hex();
 
       return (
         <motion.g
@@ -88,20 +88,23 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
     [colorScheme, data, arc, animated]
   );
 
-  const renderLabel = useCallback((d: IVennLayout<any>) => (
-    <motion.g
-      key={d.data?.key}
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={transition}
-    >
-      <CloneElement<VennLabelProps>
-        element={label}
-        data={d}
-        animated={animated}
-      />
-    </motion.g>
-  ), [label, animated]);
+  const renderLabel = useCallback(
+    (d: IVennLayout<any>) => (
+      <motion.g
+        key={d.data?.key}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={transition}
+      >
+        <CloneElement<VennLabelProps>
+          element={label}
+          data={d}
+          animated={animated}
+        />
+      </motion.g>
+    ),
+    [label, animated]
+  );
 
   return (
     <Fragment>
