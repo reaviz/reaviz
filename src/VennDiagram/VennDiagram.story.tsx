@@ -7,6 +7,7 @@ import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
 import { Stripes } from '../common/Mask';
 import { VennLabel } from './VennLabel';
+import { Gradient } from '../common/Gradient';
 
 storiesOf('Charts/Venn Diagram', module)
   .add('Simple', () => {
@@ -59,6 +60,7 @@ storiesOf('Charts/Venn Diagram', module)
   })
   .add('Star Euler', () => {
     const showValues = boolean('Show Values', true);
+    const gradient = boolean('Gradient', false);
     const data = object('Data', [
       {
         key: ['manageengine', 'meraki'],
@@ -139,6 +141,11 @@ storiesOf('Charts/Venn Diagram', module)
         series={
           <VennSeries
             colorScheme={['#00CCCC']}
+            arc={
+              <VennArc
+                gradient={gradient ? <Gradient /> : null}
+              />
+            }
             label={
               <VennLabel
                 labelType={showValues ? 'value' : 'key'}
