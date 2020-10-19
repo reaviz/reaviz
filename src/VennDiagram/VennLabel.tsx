@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
-import { calculateDimensions } from '../common/utils';
 import { motion } from 'framer-motion';
 import { wrapText } from './wrapText';
 
@@ -65,17 +64,15 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     data.data?.sets?.join(' | ') :
     data.data.size;
 
-  const size = calculateDimensions(key, fontFamily, fontSize);
-  const halfHeight = size.height / 2;
-  const halfWidth = size.width / 2;
-  const x = data.text.x - halfWidth;
-  const y = data.text.y + halfHeight;
+  const x = data.text.x;
+  const y = data.text.y;
   const pos: any = {
     attrX: x,
     attrY: y
   };
+
   const transition = animated ? {} : { delay: 0, type: false };
-  const text = wrap ? wrapText({ key, data, fontFamily, size, fontSize }) : key;
+  const text = wrap ? wrapText({ key, data, fontFamily, fontSize }) : key;
 
   return (
     <motion.text

@@ -1,7 +1,9 @@
 import React from 'react';
 import { calculateDimensions } from '../common/utils';
 
-export function wrapText({ key, data, size, fontFamily, fontSize }) {
+export function wrapText({ key, data, fontFamily, fontSize }) {
+  const size = calculateDimensions(key, fontFamily, fontSize);
+
   const width = data?.circles?.[0]?.radius;
 
   if (size.width > width) {
