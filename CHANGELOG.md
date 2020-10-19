@@ -1,3 +1,6 @@
+# 9.2.2 - 10/19/20
+- [Fix] Fix star euler not applying data correctly to layout
+
 # 9.2.1 - 10/15/20
 - [Fix] Fix stroke not passing through on arc of venn diagram
 
