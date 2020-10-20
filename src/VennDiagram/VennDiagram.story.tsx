@@ -132,12 +132,14 @@ storiesOf('Charts/Venn Diagram', module)
       }
     ]);
 
+    const next = data.filter(d => !d.key.includes('sophos'));
+
     return (
       <VennDiagram
         type="starEuler"
         height={450}
         width={450}
-        data={data}
+        data={next}
         series={
           <VennSeries
             colorScheme={['#00CCCC']}
