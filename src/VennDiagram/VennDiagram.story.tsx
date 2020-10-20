@@ -72,10 +72,10 @@ storiesOf('Charts/Venn Diagram', module)
   .add('Star Euler', () => {
     const showValues = boolean('Show Value Labels', true);
     const size = boolean('Show 5', true);
-    const strokeWidth = number('Stroke Width', 3);
-    const fill = color('Fill', '#00CCCC');
+    const strokeWidth = number('Stroke Width', 1);
+    const fill = color('Fill', '#868686');
     const stroke = color('Stroke', '#fff');
-    const gradient = boolean('Gradient', false);
+    const gradient = boolean('Gradient', true);
     const data = object('Data', [
       {
         key: ['manageengine', 'meraki'],
