@@ -10,8 +10,19 @@ export interface BoundingBox {
   height: number;
 }
 
+// Static shapes for rendering
 const shapes = [venn0, venn1, venn2, venn3, venn4, venn5];
 
+/**
+ * Sort helper.
+ * Reference: https://stackoverflow.com/a/64449554/1288340
+ */
+const upto = (limit) => Array.from({ length: limit }, (_, i) => i);
+
+/**
+ * Detect ellipse.
+ * Reference: https://github.com/upsetjs/chartjs-chart-venn/blob/master/src/model/generate.ts#L4
+ */
 function isEllipse(d) {
   return typeof d.rx === 'number';
 }
@@ -30,10 +41,13 @@ function combinations(array: string[]) {
  * Given a array set, lookup the data.
  */
 function lookup(combo: string[], data: any[]) {
-  const key = combo.sort().join('|');
-  const found = data.find((d) => d.key === key);
-  const size = found?.size || 0;
-  return { key, sets: combo, size: size, value: size };
+  const key = combo.join('|');
+  const found = data.find(d => d.key === key);
+  return {
+    key,
+    sets: combo,
+    size: found?.size || 0
+  };
 }
 
 /**
@@ -45,34 +59,40 @@ function buildData(data: any[]) {
     .filter((d) => d.sets.length === 1)
     .sort((a, b) => b.size - a.size);
 
-  // reshape the data key so they will match combos
-  const keyedData = data.map((d) => ({
-    ...d,
-    key: d.sets.sort().join('|')
-  }));
-
-  // Map our unique sets and get len
+  // Map our unique sets
   const uniqueSetKeys = uniqueSets.map((u) => u.key);
 
   // Build all combos and return 1+ combos
   const sets: any[] = combinations(uniqueSetKeys);
   const filteredSets = sets.slice(1, sets.length);
 
-  // Sort the combos based on the unique set size
-  const sortedSet = [];
-  for (const name of uniqueSetKeys) {
-    sortedSet.push(...filteredSets.filter((s) => s[0] === name));
-  }
+  // Sort the child sets based on the parent
+  const result = filteredSets.map(d =>
+    [...d].sort((a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b)));
 
-  // Sort the sorted set based on set len
-  const resultSet = sortedSet.slice().sort((a, b) => a.length - b.length);
+  // Sort the data based on index of keys and length
+  // Reference: https://stackoverflow.com/a/64449554/1288340
+  result.sort((a, b) => (
+    a.length - b.length || upto(a.length).reduce((diff, i) => (
+      diff || uniqueSetKeys.indexOf(a[i]) - uniqueSetKeys.indexOf(b[i])
+    ), 0)
+  ));
 
-  // Get the unique sets count
-  const setCount = uniqueSets.length;
+  // reshape the data key so they will match combos
+  const keyedData = data.map(d => {
+    const sets = [...d.sets].sort((a, b) =>
+      uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b));
+
+    return {
+      ...d,
+      sets,
+      key: sets.join('|')
+    }
+  });
 
   return {
-    uniqueCount: setCount,
-    data: resultSet.map(r => lookup(r, keyedData))
+    uniqueCount: uniqueSets.length,
+    data: result.map(r => lookup(r, keyedData))
   };
 }
 
@@ -106,7 +126,7 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
   const mx = (v: number) => x + f * v;
   const my = (v: number) => y + f * v;
 
-  const shapeSets = shape.sets.map((c) => ({
+  const shapeSets = shape.sets.map(c => ({
     ...c,
     ...{
       cx: mx(c.cx),
@@ -134,7 +154,7 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
     x1: mx(c.x1),
     y1: my(c.y1),
     data: data[i],
-    arcs: c.arcs.map((a) => ({
+    arcs: c.arcs.map(a => ({
       ...a,
       x2: mx(a.x2),
       y2: my(a.y2)

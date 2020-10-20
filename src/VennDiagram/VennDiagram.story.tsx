@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { VennDiagram } from './VennDiagram';
-import { number, object, text, select, boolean } from '@storybook/addon-knobs';
+import { number, object, color, select, boolean } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
@@ -15,7 +15,11 @@ storiesOf('Charts/Venn Diagram', module)
     const width = number('Width', 450);
     const showAll = boolean('Show All Labels', false);
     const showValues = boolean('Show Values', false);
-    const color = select('Color Scheme', schemes, 'cybertron');
+    const scheme = select('Color Scheme', schemes, 'cybertron');
+    const strokeWidth = number('Stroke Width', 3);
+    const stroke = color('Stroke', schemes.cybertron[0]);
+    const gradient = boolean('Gradient', false);
+
     const data = object('Data', [
       { key: ['A'], data: 12 },
       { key: ['B'], data: 12 },
@@ -29,11 +33,18 @@ storiesOf('Charts/Venn Diagram', module)
         data={data}
         series={
           <VennSeries
-            colorScheme={color}
+            colorScheme={scheme}
+            arc={
+              <VennArc
+                strokeWidth={strokeWidth}
+                stroke={stroke}
+                gradient={gradient ? <Gradient /> : null}
+              />
+            }
             label={
               <VennLabel
-                showAll={showAll}
                 labelType={showValues ? 'value' : 'key'}
+                showAll={showAll}
               />
             }
           />
@@ -59,8 +70,11 @@ storiesOf('Charts/Venn Diagram', module)
     );
   })
   .add('Star Euler', () => {
-    const showValues = boolean('Show Values', true);
+    const showValues = boolean('Show Value Labels', true);
     const size = boolean('Show 5', true);
+    const strokeWidth = number('Stroke Width', 3);
+    const fill = color('Fill', '#00CCCC');
+    const stroke = color('Stroke', '#fff');
     const gradient = boolean('Gradient', false);
     const data = object('Data', [
       {
@@ -143,9 +157,11 @@ storiesOf('Charts/Venn Diagram', module)
         data={next}
         series={
           <VennSeries
-            colorScheme={['#00CCCC']}
+            colorScheme={[fill]}
             arc={
               <VennArc
+                strokeWidth={strokeWidth}
+                stroke={stroke}
                 gradient={gradient ? <Gradient /> : null}
               />
             }

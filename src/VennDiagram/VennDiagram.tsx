@@ -54,14 +54,14 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   disabled,
   series = <VennSeries />
 }) => {
-  const normalized = data.map((d) => ({
-    key: d.key.join('|'),
-    sets: d.key,
-    size: d.data
-  }));
-
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
+      const normalized = data.map((d) => ({
+        key: d.key.join('|'),
+        sets: d.key,
+        size: d.data
+      }));
+
       let layoutData;
       if (type === 'starEuler') {
         layoutData = starEulerLayout(normalized, {
@@ -85,7 +85,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
         />
       );
     },
-    [normalized, series, type]
+    [data, series, type]
   );
 
   return (
