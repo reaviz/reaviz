@@ -9,6 +9,11 @@ import { Gradient, GradientProps } from '../common/Gradient';
 
 export interface VennArcProps {
   /**
+   * Whether the shape is active or not.
+   */
+  active?: boolean;
+
+  /**
    * Id set by the parent.
    */
   id: string;
@@ -97,6 +102,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   stroke,
   mask,
   id,
+  active = false,
   initialOpacity = 0.6,
   activeOpacity = 0.8,
   strokeWidth = 3,
@@ -107,8 +113,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   onMouseEnter = () => undefined,
   onMouseLeave = () => undefined
 }) => {
+  const [internalActive, setInternalActive] = useState<boolean>(false);
   const arcRef = useRef<any | null>(null);
-  const [active, setActive] = useState<boolean>(false);
   const { transition, d } = useInterpolate({ animated, data });
   const arcFill =
     gradient && !mask
@@ -123,7 +129,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       style={{ cursor }}
       onMouseEnter={(event) => {
         if (!disabled) {
-          setActive(true);
+          setInternalActive(true);
           onMouseEnter({
             value: data.data,
             nativeEvent: event
@@ -132,7 +138,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       }}
       onMouseLeave={(event) => {
         if (!disabled) {
-          setActive(false);
+          setInternalActive(false);
           onMouseLeave({
             value: data.data,
             nativeEvent: event
@@ -155,8 +161,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         stroke={stroke}
         transition={transition}
         d={d}
-        opacity={initialOpacity}
-        whileHover={{ opacity: activeOpacity }}
+        initial={{ opacity: initialOpacity }}
+        animate={{ opacity: active ? activeOpacity : initialOpacity }}
       />
       {mask && (
         <Fragment>
@@ -178,7 +184,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
-          visible={!!active}
+          visible={!!internalActive}
           reference={arcRef}
           value={{ y: data.data.size, x: data.data?.sets?.join(' | ') }}
         />

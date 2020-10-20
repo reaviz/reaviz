@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactElement, useCallback } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback, useState } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ColorSchemeType, getColor } from '../common/color';
 import { VennArc, VennArcProps } from './VennArc';
@@ -54,6 +54,15 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   label = <VennLabel />
 }) => {
   const transition = animated ? {} : { type: false, delay: 0 };
+  const [actives, setActives] = useState<string[]>([]);
+
+  const onActivate = useCallback((point: string) => {
+    setActives(
+      data
+        .filter(d => d.data?.key.indexOf(point) > -1)
+        .map(d => d.data?.key)
+    );
+  }, [data]);
 
   const renderArc = useCallback(
     (d: IVennLayout<any>, index: number) => {
@@ -63,8 +72,11 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         point: d.data,
         index
       });
+
       const arcFill = arc.props.fill || fill;
-      const arcStroke = arc.props.stroke || chroma(arcFill).darken(0.5).hex();
+      const active = actives.includes(d.data?.key);
+      const arcStroke = arc.props.stroke ||
+        chroma(arcFill).darken(active ? 0.8 : 0.5).hex();
 
       return (
         <motion.g
@@ -81,11 +93,14 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             stroke={arcStroke}
             disabled={disabled}
             animated={animated}
+            active={active}
+            onMouseEnter={() => onActivate(d.data?.key)}
+            onMouseLeave={() => setActives([])}
           />
         </motion.g>
       );
     },
-    [colorScheme, data, arc, animated]
+    [colorScheme, data, arc, animated, actives, onActivate]
   );
 
   const renderLabel = useCallback(
