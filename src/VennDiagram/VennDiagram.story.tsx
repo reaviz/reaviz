@@ -60,6 +60,7 @@ storiesOf('Charts/Venn Diagram', module)
   })
   .add('Star Euler', () => {
     const showValues = boolean('Show Values', true);
+    const size = boolean('Show 5', true);
     const gradient = boolean('Gradient', false);
     const data = object('Data', [
       {
@@ -132,7 +133,7 @@ storiesOf('Charts/Venn Diagram', module)
       }
     ]);
 
-    const next = data.filter(d => !d.key.includes('sophos'));
+    const next = size ? data : data.filter(d => !d.key.includes('sophos'));
 
     return (
       <VennDiagram
