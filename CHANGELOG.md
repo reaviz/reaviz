@@ -1,3 +1,8 @@
+# 9.2.8 - 10/20/20
+- [Feature] Improve storybook stories for venn/euler
+- [Feature] Hover on slice selects all similar slices
+- [Fix] Fix star euler not laying out data correctly
+
 # 9.2.7 - 10/19/20
 - [Fix] Gradients not showing correct colors in venn arc
 - [Chore] Move gradient to fc
