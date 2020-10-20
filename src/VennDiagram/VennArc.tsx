@@ -119,6 +119,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
 
   return (
     <g
+      title={data.data.key}
       style={{ cursor }}
       onMouseEnter={(event) => {
         if (!disabled) {
