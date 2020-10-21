@@ -1,3 +1,6 @@
+# 9.2.11 - 10/21/20
+- [Fix] Fix missing export of new label type
+
 # 9.2.10 - 10/21/20
 - [Feature] Add outer labels to star euler
 - [Chore] Upgrade depedencies
