@@ -1,3 +1,7 @@
+# 9.2.10 - 10/21/20
+- [Feature] Add outer labels to star euler
+- [Chore] Upgrade depedencies
+
 # 9.2.9 - 10/21/20
 - [Feature] Improve active/inactive/initial state options for venns
 - [Chore] More FC migrations
