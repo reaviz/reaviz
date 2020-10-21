@@ -46,7 +46,6 @@ export interface VennLabelProps {
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
-  showOuterLabel = true,
   labelType = 'key',
   showAll = false,
   wrap = true,
