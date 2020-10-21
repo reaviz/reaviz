@@ -14,11 +14,6 @@ export interface VennLabelProps {
   labelType: 'key' | 'value';
 
   /**
-   * Whether to show the outer labels or not in star euler.
-   */
-  showOuterLabel?: boolean;
-
-  /**
    * Should wrap text or not.
    */
   wrap?: boolean;
@@ -72,41 +67,21 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const text = wrap ? wrapText({ key, data, fontFamily, fontSize }) : key;
 
   return (
-    <Fragment>
-      <motion.text
-        style={{ pointerEvents: 'none', fontFamily, fontSize }}
-        fill={fill}
-        initial={{
-          attrX: data.text.x,
-          attrY: data.text.y
-        } as any}
-        animate={{
-          attrX: data.text.x,
-          attrY: data.text.y
-        } as any}
-        transition={transition}
-        textAnchor="middle"
-      >
-        {text}
-      </motion.text>
-      {data.set && showOuterLabel && (
-        <motion.text
-          fill={fill}
-          textAnchor={data.set.align === 'middle' ? 'center' : data.set.align}
-          alignmentBaseline={data.set.verticalAlign}
-          initial={{
-            attrX: data.set.text.x,
-            attrY: data.set.text.y
-          } as any}
-          animate={{
-            attrX: data.set.text.x,
-            attrY: data.set.text.y
-          } as any}
-          transition={transition}
-        >
-          {data.set.data.key}
-        </motion.text>
-      )}
-    </Fragment>
+    <motion.text
+      style={{ pointerEvents: 'none', fontFamily, fontSize }}
+      fill={fill}
+      initial={{
+        attrX: data.text.x,
+        attrY: data.text.y
+      } as any}
+      animate={{
+        attrX: data.text.x,
+        attrY: data.text.y
+      } as any}
+      transition={transition}
+      textAnchor="middle"
+    >
+      {text}
+    </motion.text>
   );
 };

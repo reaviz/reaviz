@@ -8,6 +8,7 @@ import { VennArc } from './VennArc';
 import { Stripes } from '../common/Mask';
 import { VennLabel } from './VennLabel';
 import { Gradient } from '../common/Gradient';
+import { VennOuterLabel } from './VennOuterLabel';
 
 storiesOf('Charts/Venn Diagram', module)
   .add('Simple', () => {
@@ -170,8 +171,10 @@ storiesOf('Charts/Venn Diagram', module)
               <VennLabel
                 labelType={showValues ? 'value' : 'key'}
                 showAll={true}
-                showOuterLabel={showOuterLabel}
               />
+            }
+            outerLabel={
+              showOuterLabel ? <VennOuterLabel /> : null
             }
           />
         }

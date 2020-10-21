@@ -6,6 +6,7 @@ import { VennLabel, VennLabelProps } from './VennLabel';
 import { motion } from 'framer-motion';
 import { CloneElement } from '../common/utils';
 import chroma from 'chroma-js';
+import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
 
 export interface VennSeriesProps {
   /**
@@ -39,6 +40,11 @@ export interface VennSeriesProps {
   label?: ReactElement<VennLabelProps, typeof VennLabel> | null;
 
   /**
+   * Label element.
+   */
+  outerLabel?: ReactElement<VennOuterLabelProps, typeof VennOuterLabel> | null;
+
+  /**
    * Arc element.
    */
   arc?: ReactElement<VennArcProps, typeof VennArc> | null;
@@ -50,6 +56,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   animated = true,
   disabled = false,
   colorScheme = 'cybertron',
+  outerLabel = <VennOuterLabel />,
   arc = <VennArc />,
   label = <VennLabel />
 }) => {
@@ -106,7 +113,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   );
 
   const renderLabel = useCallback(
-    (d: IVennLayout<any>) => (
+    (d: IVennLayout<any> & { set?: any }) => (
       <motion.g
         key={d.data?.key}
         initial={{ opacity: 0, scale: 0 }}
@@ -118,9 +125,16 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           data={d}
           animated={animated}
         />
+        {d.set && outerLabel && (
+          <CloneElement<VennLabelProps>
+            element={outerLabel}
+            data={d}
+            animated={animated}
+          />
+        )}
       </motion.g>
     ),
-    [label, animated]
+    [label, outerLabel, animated]
   );
 
   return (
