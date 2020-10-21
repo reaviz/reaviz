@@ -74,7 +74,9 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       });
 
       const arcFill = arc.props.fill || fill;
-      const active = actives.includes(d.data?.key);
+      const active = actives.includes(d.data?.key) ||
+        (actives.length > 0 ? null : false);
+
       const arcStroke = arc.props.stroke ||
         chroma(arcFill).darken(active ? 0.8 : 0.5).hex();
 

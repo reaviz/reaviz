@@ -11,7 +11,7 @@ export interface VennArcProps {
   /**
    * Whether the shape is active or not.
    */
-  active?: boolean;
+  active?: boolean | null;
 
   /**
    * Id set by the parent.
@@ -54,14 +54,19 @@ export interface VennArcProps {
   strokeWidth?: number;
 
   /**
-   * Opacity on initial state.
+   * Initial style of arc.
    */
-  initialOpacity?: number;
+  initialStyle?: any;
 
   /**
-   * Opacity on active state.
+   * Active style of arc.
    */
-  activeOpacity?: number;
+  activeStyle?: any;
+
+  /**
+   * Inactive style of arc.
+   */
+  inactiveStyle?: any;
 
   /**
    * Tooltip element.
@@ -103,8 +108,9 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   mask,
   id,
   active = false,
-  initialOpacity = 0.6,
-  activeOpacity = 0.8,
+  inactiveStyle = { opacity: 0.3 },
+  activeStyle = { opacity: 0.8 },
+  initialStyle = { opacity: 0.6 },
   strokeWidth = 3,
   cursor = 'initial',
   gradient = <Gradient />,
@@ -116,6 +122,9 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const arcRef = useRef<any | null>(null);
   const { transition, d } = useInterpolate({ animated, data });
+  const currentStyle = active ? activeStyle :
+    active === null ? inactiveStyle : initialStyle;
+
   const arcFill =
     gradient && !mask
       ? `url(#gradient-${id})`
@@ -161,8 +170,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         stroke={stroke}
         transition={transition}
         d={d}
-        initial={{ opacity: initialOpacity }}
-        animate={{ opacity: active ? activeOpacity : initialOpacity }}
+        initial={initialStyle}
+        animate={currentStyle}
       />
       {mask && (
         <Fragment>
