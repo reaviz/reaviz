@@ -1,5 +1,4 @@
-import React, { FC } from 'react';
-import { IVennLayout } from '@upsetjs/venn.js';
+import React, { FC, Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { wrapText } from './wrapText';
 
@@ -15,6 +14,11 @@ export interface VennLabelProps {
   labelType: 'key' | 'value';
 
   /**
+   * Whether to show the outer labels or not in star euler.
+   */
+  showOuterLabel?: boolean;
+
+  /**
    * Should wrap text or not.
    */
   wrap?: boolean;
@@ -22,7 +26,7 @@ export interface VennLabelProps {
   /**
    * The internal data object built by venn.js
    */
-  data: IVennLayout<any>;
+  data: any;
 
   /**
    * Font size of the text.
@@ -47,6 +51,7 @@ export interface VennLabelProps {
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
+  showOuterLabel = true,
   labelType = 'key',
   showAll = false,
   wrap = true,
@@ -63,26 +68,45 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const key =
     labelType === 'key' ? data.data?.sets?.join(' | ') : data.data.size;
 
-  const x = data.text.x;
-  const y = data.text.y;
-  const pos: any = {
-    attrX: x,
-    attrY: y
-  };
-
   const transition = animated ? {} : { delay: 0, type: false };
   const text = wrap ? wrapText({ key, data, fontFamily, fontSize }) : key;
 
   return (
-    <motion.text
-      style={{ pointerEvents: 'none', fontFamily, fontSize }}
-      fill={fill}
-      initial={pos}
-      animate={pos}
-      transition={transition}
-      textAnchor="middle"
-    >
-      {text}
-    </motion.text>
+    <Fragment>
+      <motion.text
+        style={{ pointerEvents: 'none', fontFamily, fontSize }}
+        fill={fill}
+        initial={{
+          attrX: data.text.x,
+          attrY: data.text.y
+        } as any}
+        animate={{
+          attrX: data.text.x,
+          attrY: data.text.y
+        } as any}
+        transition={transition}
+        textAnchor="middle"
+      >
+        {text}
+      </motion.text>
+      {data.set && showOuterLabel && (
+        <motion.text
+          fill={fill}
+          textAnchor={data.set.align === 'middle' ? 'center' : data.set.align}
+          alignmentBaseline={data.set.verticalAlign}
+          initial={{
+            attrX: data.set.text.x,
+            attrY: data.set.text.y
+          } as any}
+          animate={{
+            attrX: data.set.text.x,
+            attrY: data.set.text.y
+          } as any}
+          transition={transition}
+        >
+          {data.set.data.key}
+        </motion.text>
+      )}
+    </Fragment>
   );
 };

@@ -126,14 +126,15 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
   const mx = (v: number) => x + f * v;
   const my = (v: number) => y + f * v;
 
-  const shapeSets = shape.sets.map(c => ({
+  const shapeSets = shape.sets.map((c, i) => ({
     ...c,
     ...{
+      data: data[i],
       cx: mx(c.cx),
       cy: my(c.cy),
       text: {
         x: mx(c.text.x),
-        y: my(c.text.y)
+        y: my(c.text.y),
       }
     },
     ...(isEllipse(c)
@@ -154,6 +155,7 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
     x1: mx(c.x1),
     y1: my(c.y1),
     data: data[i],
+    set: shapeSets[i],
     arcs: c.arcs.map(a => ({
       ...a,
       x2: mx(a.x2),

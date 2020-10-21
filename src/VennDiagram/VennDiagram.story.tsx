@@ -72,6 +72,7 @@ storiesOf('Charts/Venn Diagram', module)
   .add('Star Euler', () => {
     const showValues = boolean('Show Value Labels', true);
     const size = boolean('Show 5', true);
+    const showOuterLabel = boolean('Show Outer Label', true);
     const strokeWidth = number('Stroke Width', 1);
     const fill = color('Fill', '#868686');
     const stroke = color('Stroke', '#fff');
@@ -169,6 +170,7 @@ storiesOf('Charts/Venn Diagram', module)
               <VennLabel
                 labelType={showValues ? 'value' : 'key'}
                 showAll={true}
+                showOuterLabel={showOuterLabel}
               />
             }
           />

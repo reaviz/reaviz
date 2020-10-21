@@ -56,6 +56,8 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   const transition = animated ? {} : { type: false, delay: 0 };
   const [actives, setActives] = useState<string[]>([]);
 
+  console.log('here', data);
+
   const onActivate = useCallback((point: string) => {
     setActives(
       data
