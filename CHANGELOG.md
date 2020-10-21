@@ -1,3 +1,7 @@
+# 9.2.9 - 10/21/20
+- [Feature] Improve active/inactive/initial state options for venns
+- [Chore] More FC migrations
+
 # 9.2.8 - 10/20/20
 - [Feature] Improve storybook stories for venn/euler
 - [Feature] Hover on slice selects all similar slices
