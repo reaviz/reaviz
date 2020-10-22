@@ -35,11 +35,9 @@ jobs:
         run: yarn build-storybook
 
       - name: Test
-        uses: mattallty/jest-github-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: IgnusG/jest-report-action@v2.3.3
         with:
-          coverage-comment: false
+          access-token: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Create Release Pull Request or Publish to npm
       #  uses: changesets/action@master
