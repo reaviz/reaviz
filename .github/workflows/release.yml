@@ -1,0 +1,34 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: github.repository == 'reaviz/reaviz'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          version: 12.x
+
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Build Storybook
+        run: yarn build-storybook
+
+      - name: Copy Domain
+        run: yarn copy
+
+      - name: Publish Storybook to GH Pages
+        run: yarn storybook:ci
+
+      - name: Publish Chromatic
+        run: yarn chromatic
