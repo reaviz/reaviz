@@ -7,6 +7,7 @@ import autoprefixer from 'autoprefixer';
 import commonjs from 'rollup-plugin-commonjs';
 import pkg from './package.json';
 import json from '@rollup/plugin-json';
+import bundleSize from 'rollup-plugin-bundle-size';
 
 export default [
   {
@@ -53,7 +54,8 @@ export default [
       json(),
       resolve(),
       commonjs(),
-      sourceMaps()
+      sourceMaps(),
+      bundleSize()
     ]
   }
 ];

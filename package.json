@@ -14,7 +14,8 @@
     "publish:tag": "node .circleci/publish-tag-builds.js",
     "test": "jest --env=jsdom",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
-    "chromatic": "chromatic --project-token=d5ql53y3nwr --exit-zero-on-changes"
+    "chromatic": "chromatic --project-token=d5ql53y3nwr --exit-zero-on-changes",
+    "release": "release-it"
   },
   "source": "src/index.ts",
   "main": "dist/index.cjs.js",
@@ -147,8 +148,10 @@
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.13.1",
+    "release-it": "^14.2.0",
     "remark-codesandbox": "^0.9.0",
     "rollup": "^2.29.0",
+    "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
