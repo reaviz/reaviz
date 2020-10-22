@@ -3,8 +3,8 @@
   <br />
   Data visualization library for React based on D3js
   <br /><br />
-  <a href="https://circleci.com/gh/reaviz/reaviz">
-    <img src="https://circleci.com/gh/reaviz/reaviz.svg?style=svg" />
+  <a href="https://github.com/reaviz/reaviz/workflows/build/">
+    <img src="https://github.com/reaviz/reaviz/workflows/build/badge.svg?branch=master" />
   </a>
   <a href="https://npm.im/reaviz">
     <img src="https://img.shields.io/npm/v/reaviz.svg" />
