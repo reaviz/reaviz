@@ -35,7 +35,11 @@ jobs:
         run: yarn build-storybook
 
       - name: Test
-        run: yarn test -- --runInBand --no-cache --coverage
+        uses: mattallty/jest-github-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          coverage-comment: false
 
       # - name: Create Release Pull Request or Publish to npm
       #  uses: changesets/action@master
