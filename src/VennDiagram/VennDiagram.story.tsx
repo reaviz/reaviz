@@ -76,6 +76,8 @@ storiesOf('Charts/Venn Diagram', module)
     const showOuterLabel = boolean('Show Outer Label', true);
     const strokeWidth = number('Stroke Width', 1);
     const fill = color('Fill', '#868686');
+    const labelFill = color('Label Fill', '#fff');
+    const outerLabelFill = color('Outer Label Fill', '#fff');
     const stroke = color('Stroke', '#fff');
     const gradient = boolean('Gradient', true);
     const data = object('Data', [
@@ -149,7 +151,7 @@ storiesOf('Charts/Venn Diagram', module)
       }
     ]);
 
-    const next = size ? data : data.filter(d => !d.key.includes('sophos'));
+    const next = size ? data : data.filter((d) => !d.key.includes('sophos'));
 
     return (
       <VennDiagram
@@ -171,10 +173,11 @@ storiesOf('Charts/Venn Diagram', module)
               <VennLabel
                 labelType={showValues ? 'value' : 'key'}
                 showAll={true}
+                fill={labelFill}
               />
             }
             outerLabel={
-              showOuterLabel ? <VennOuterLabel /> : null
+              showOuterLabel ? <VennOuterLabel fill={outerLabelFill} /> : null
             }
           />
         }
@@ -220,11 +223,7 @@ storiesOf('Charts/Venn Diagram', module)
         { key: ['D', 'A'], data: 1 },
         { key: ['D', 'A', 'B'], data: 1 }
       ]}
-      series={
-        <VennSeries
-          colorScheme={['#2d60e8']}
-        />
-      }
+      series={<VennSeries colorScheme={['#2d60e8']} />}
     />
   ))
   .add('No Intersections', () => (
