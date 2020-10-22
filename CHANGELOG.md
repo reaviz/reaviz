@@ -1,3 +1,8 @@
+# 9.3.0 - 10/22/20
+- [Feature] Add custom colors for venn strokes
+- [Feature] Custom label formatting for venn labels
+- [Chore] Github Actions > CircleCI
+
 # 9.2.11 - 10/21/20
 - [Fix] Fix missing export of new label type
 
