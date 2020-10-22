@@ -62,8 +62,11 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 }) => {
   const transition = animated ? {} : { type: false, delay: 0 };
   const [actives, setActives] = useState<string[]>([]);
+  const [hovered, setHovered] = useState<string | null>(null);
 
   const onActivate = useCallback((point: string) => {
+    setHovered(point);
+
     setActives(
       data
         .filter(d => d.data?.key.indexOf(point) > -1)
@@ -73,6 +76,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
   const renderArc = useCallback(
     (d: IVennLayout<any>, index: number) => {
+      // Get the colors of the fill
       const fill = getColor({
         data,
         colorScheme,
@@ -81,11 +85,19 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       });
 
       const arcFill = arc.props.fill || fill;
-      const active = actives.includes(d.data?.key) ||
+
+      // Get the state of the arc
+      const isHovered = hovered === d?.data?.key;
+      const isActive = actives.includes(d.data?.key) ||
         (actives.length > 0 ? null : false);
 
-      const arcStroke = arc.props.stroke ||
-        chroma(arcFill).darken(active ? 0.8 : 0.5).hex();
+      // Get the colors for the stroke
+      const stroke = typeof arc.props.stroke === 'function' ?
+        arc.props.stroke(data, index, isActive, isHovered) :
+        arc.props.stroke;
+
+      const arcStroke = stroke ||
+        chroma(arcFill).darken(isActive ? 0.8 : 0.5).hex();
 
       return (
         <motion.g
@@ -102,14 +114,17 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             stroke={arcStroke}
             disabled={disabled}
             animated={animated}
-            active={active}
+            active={isActive}
             onMouseEnter={() => onActivate(d.data?.key)}
-            onMouseLeave={() => setActives([])}
+            onMouseLeave={() => {
+              setActives([]);
+              setHovered(null);
+            }}
           />
         </motion.g>
       );
     },
-    [colorScheme, data, arc, animated, actives, onActivate]
+    [colorScheme, data, arc, animated, hovered, actives, onActivate]
   );
 
   const renderLabel = useCallback(

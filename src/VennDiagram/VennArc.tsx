@@ -31,7 +31,7 @@ export interface VennArcProps {
   /**
    * Stroke for the arc.
    */
-  stroke: string;
+  stroke?: string | ((data: IVennLayout<any>, index: number, isActive: boolean | null, isHovered: boolean | null) => string);
 
   /**
    * The internal data object built by venn.js
@@ -167,7 +167,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         ref={arcRef}
         fill={arcFill}
         strokeWidth={strokeWidth}
-        stroke={stroke}
+        stroke={stroke as string}
         transition={transition}
         d={d}
         initial={initialStyle}
