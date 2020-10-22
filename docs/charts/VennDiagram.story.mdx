@@ -1,5 +1,5 @@
 import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
-import { VennDiagram, VennSeries, VennArc, VennLabel } from '../../src';
+import { VennDiagram, VennSeries, VennArc, VennLabel, VennOuterLabel } from '../../src';
 
 <Meta title="Docs/Chart Types/Venn Diagram" />
 
@@ -12,6 +12,11 @@ import { VennDiagram, VennSeries, VennArc, VennLabel } from '../../src';
 
 A Venn diagram or set diagram is a diagram that shows all possible logical relations
 between a finite collection of sets.
+
+The chart supports 3 layout types:
+- Venn
+- Euler
+- Star Euler
 
 ## Quick Start
 To create a venn diagram, import the `VennDiagram` and give it `data`. The chart
@@ -49,3 +54,25 @@ of relationships.
 
 ### [VennLabel](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennLabel.tsx)
 <ArgsTable of={VennLabel} />
+
+### [VennOuterLabel](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennOuterLabel.tsx)
+<ArgsTable of={VennOuterLabel} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { VennDiagram } from 'reaviz';
+
+export const data = [
+  { key: ['A'], data: 12 },
+  { key: ['B'], data: 12 },
+  { key: ['A', 'B'], data: 2 }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <VennDiagram width={450} height={450} data={data} />
+  </div>
+);
+```
