@@ -8,6 +8,7 @@ pkg/
 .rpt2_cache/
 dist/
 storybook-static/
+junit.xml
 
 # Runtime data
 pids
