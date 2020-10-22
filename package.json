@@ -13,6 +13,7 @@
     "lint:fix": "eslint --ext js,ts,tsx --fix src",
     "test": "jest --env=jsdom",
     "test:ci": "jest --env=jsdom --collectCoverage=true --reporters=default --reporters=jest-junit",
+    "ts:check": "tsc --noEmit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
     "chromatic": "chromatic --project-token=d5ql53y3nwr --exit-zero-on-changes"
   },
