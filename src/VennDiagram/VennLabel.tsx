@@ -42,10 +42,16 @@ export interface VennLabelProps {
    * Whether the chart is animated or not.
    */
   animated?: boolean;
+
+  /**
+   * Format label.
+   */
+  format?: (data) => any;
 }
 
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
+  format,
   labelType = 'key',
   showAll = false,
   wrap = true,
@@ -80,7 +86,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
       transition={transition}
       textAnchor="middle"
     >
-      {text}
+      {format ? format(data) : text}
     </motion.text>
   );
 };

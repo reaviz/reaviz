@@ -26,16 +26,23 @@ export interface VennOuterLabelProps {
    * Whether the chart is animated or not.
    */
   animated?: boolean;
+
+  /**
+   * Format label.
+   */
+  format?: (data) => any;
 }
 
 export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   data,
+  format,
   animated = true,
   fill = '#000',
   fontSize = 14,
   fontFamily = 'sans-serif'
 }) => {
   const transition = animated ? {} : { delay: 0, type: false };
+  const text = data.set.data.key;
 
   return (
     <motion.text
@@ -53,7 +60,7 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
       } as any}
       transition={transition}
     >
-      {data.set.data.key}
+      {format ? format(data) : text}
     </motion.text>
   );
 };
