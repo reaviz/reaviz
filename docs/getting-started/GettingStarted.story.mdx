@@ -11,28 +11,6 @@ You can install REAVIZ with [NPM](https://www.npmjs.com/package/reaviz) or Yarn.
 - NPM: `npm install reaviz --save`
 - YARN: `yarn add reaviz`
 
-#### Development Builds
-Our continuous integration server runs all tests on every commit to master and
-if they pass it will publish a new development build to NPM and tag it with the `@dev` tag.
-This means that if you want the bleeding edge of `reaviz` you can simply do:
-
-```bash
-yarn add reaviz@dev
-```
-
-This will install the version currently tagged as `@dev`. Your `package.json` file will be
-locked to that specific version.
-
-```js
-{
-  "dependencies": {
-    "reaviz": "3.0.0-dev-master.a0d076d"
-  }
-}
-```
-
-If you later want to again update to the bleeding edge, you will have to run the above command again.
-
 ## Configuration
 
 To customize various elements in the charts,
