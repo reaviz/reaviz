@@ -12,7 +12,8 @@
     "build": "rollup -c",
     "publish:dev": "node .circleci/publish-dev-builds.js",
     "publish:tag": "node .circleci/publish-tag-builds.js",
-    "test": "jest --env=jsdom --collectCoverage=true --reporters=default --reporters=jest-junit",
+    "test": "jest --env=jsdom",
+    "test:ci": "jest --env=jsdom --collectCoverage=true --reporters=default --reporters=jest-junit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
     "chromatic": "chromatic --project-token=d5ql53y3nwr --exit-zero-on-changes",
     "release": "release-it"

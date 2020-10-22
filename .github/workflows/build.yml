@@ -13,9 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository == 'reaviz/reaviz'
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
@@ -35,6 +34,9 @@ jobs:
         run: yarn build-storybook
 
       - name: Test
+        run: yarn test:ci
+
+      - name: Report Test
         uses: IgnusG/jest-report-action@v2.3.3
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
