@@ -88,4 +88,4 @@ export const Gridline: FC<Partial<GridlineProps>> = ({
       fill="none"
     />
   );
-}
+};

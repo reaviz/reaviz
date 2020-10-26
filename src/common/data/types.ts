@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 export type ChartDataTypes = ChartInternalDataTypes | bigInt.BigInteger;
 
 export type ChartInternalDataTypes = number | string | Date;

@@ -50,12 +50,12 @@ export function CloneElement<T = any>({
   // Tricky logic around functional vs class components
   const ref = childRef
     ? (node) => {
-        if (typeof childRef === 'function') {
-          childRef(node);
-        } else if (ref) {
-          childRef.current = node;
-        }
+      if (typeof childRef === 'function') {
+        childRef(node);
+      } else if (ref) {
+        childRef.current = node;
       }
+    }
     : undefined;
 
   const newProps = getProjectedProps(rest);

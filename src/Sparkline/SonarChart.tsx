@@ -55,6 +55,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
         }
         bar={[
           <Bar
+            key="first"
             rounded={false}
             width={1}
             rangeLines={null}
@@ -69,6 +70,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
             }
           />,
           <Bar
+            key="second"
             rounded={false}
             width={1}
             rangeLines={null}

@@ -75,14 +75,18 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     <motion.text
       style={{ pointerEvents: 'none', fontFamily, fontSize }}
       fill={fill}
-      initial={{
-        attrX: data.text.x,
-        attrY: data.text.y
-      } as any}
-      animate={{
-        attrX: data.text.x,
-        attrY: data.text.y
-      } as any}
+      initial={
+        {
+          attrX: data.text.x,
+          attrY: data.text.y
+        } as any
+      }
+      animate={
+        {
+          attrX: data.text.x,
+          attrY: data.text.y
+        } as any
+      }
       transition={transition}
       textAnchor="middle"
     >

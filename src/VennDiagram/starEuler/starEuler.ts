@@ -42,7 +42,7 @@ function combinations(array: string[]) {
  */
 function lookup(combo: string[], data: any[]) {
   const key = combo.join('|');
-  const found = data.find(d => d.key === key);
+  const found = data.find((d) => d.key === key);
   return {
     key,
     sets: combo,
@@ -67,32 +67,38 @@ function buildData(data: any[]) {
   const filteredSets = sets.slice(1, sets.length);
 
   // Sort the child sets based on the parent
-  const result = filteredSets.map(d =>
-    [...d].sort((a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b)));
+  const result = filteredSets.map((d) =>
+    [...d].sort((a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b))
+  );
 
   // Sort the data based on index of keys and length
   // Reference: https://stackoverflow.com/a/64449554/1288340
-  result.sort((a, b) => (
-    a.length - b.length || upto(a.length).reduce((diff, i) => (
-      diff || uniqueSetKeys.indexOf(a[i]) - uniqueSetKeys.indexOf(b[i])
-    ), 0)
-  ));
+  result.sort(
+    (a, b) =>
+      a.length - b.length ||
+      upto(a.length).reduce(
+        (diff, i) =>
+          diff || uniqueSetKeys.indexOf(a[i]) - uniqueSetKeys.indexOf(b[i]),
+        0
+      )
+  );
 
   // reshape the data key so they will match combos
-  const keyedData = data.map(d => {
-    const sets = [...d.sets].sort((a, b) =>
-      uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b));
+  const keyedData = data.map((d) => {
+    const sets = [...d.sets].sort(
+      (a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b)
+    );
 
     return {
       ...d,
       sets,
       key: sets.join('|')
-    }
+    };
   });
 
   return {
     uniqueCount: uniqueSets.length,
-    data: result.map(r => lookup(r, keyedData))
+    data: result.map((r) => lookup(r, keyedData))
   };
 }
 
@@ -107,9 +113,9 @@ export function generateArcSlicePath(s: any, refs: any[]) {
       const rx = isEllipse(ref) ? ref.rx : ref.r;
       const ry = isEllipse(ref) ? ref.ry : ref.r;
       const rot = isEllipse(ref) ? ref.rotation : 0;
-      return `A ${rx} ${ry} ${rot} ${arc.large ? 1 : 0} ${
-        arc.sweep ? 1 : 0
-      } ${arc.x2} ${arc.y2}`;
+      return `A ${rx} ${ry} ${rot} ${arc.large ? 1 : 0} ${arc.sweep ? 1 : 0} ${
+        arc.x2
+      } ${arc.y2}`;
     })
     .join(' ')}`;
 }
@@ -134,17 +140,17 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
       cy: my(c.cy),
       text: {
         x: mx(c.text.x),
-        y: my(c.text.y),
+        y: my(c.text.y)
       }
     },
     ...(isEllipse(c)
       ? {
-          rx: c.rx * f,
-          ry: c.ry * f
-        }
+        rx: c.rx * f,
+        ry: c.ry * f
+      }
       : {
-          r: c.r * f
-        })
+        r: c.r * f
+      })
   }));
 
   const intersections = shape.intersections.map((c, i) => ({
@@ -156,7 +162,7 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
     y1: my(c.y1),
     data: data[i],
     set: shapeSets[i],
-    arcs: c.arcs.map(a => ({
+    arcs: c.arcs.map((a) => ({
       ...a,
       x2: mx(a.x2),
       y2: my(a.y2)

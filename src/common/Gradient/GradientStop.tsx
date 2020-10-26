@@ -9,7 +9,5 @@ export interface GradientStopProps {
 export const GradientStop: FC<Partial<GradientStopProps>> = ({
   color,
   offset,
-  stopOpacity = 1,
-}) => (
-  <stop offset={offset} stopOpacity={stopOpacity} stopColor={color} />
-);
+  stopOpacity = 1
+}) => <stop offset={offset} stopOpacity={stopOpacity} stopColor={color} />;

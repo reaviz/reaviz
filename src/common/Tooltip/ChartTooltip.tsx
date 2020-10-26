@@ -46,10 +46,10 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
       return typeof content === 'function'
         ? content(data || value, color)
         : cloneElement(content, {
-            ...content.props,
-            value,
-            color
-          });
+          ...content.props,
+          value,
+          color
+        });
     }}
   />
 );

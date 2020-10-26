@@ -77,4 +77,4 @@ export const GridStripe: FC<Partial<GridStripeProps>> = ({
   }, [scale, data, index, height, width, fill, position]);
 
   return <rect className={css.gridStripe} {...coords} />;
-}
+};

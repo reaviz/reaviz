@@ -115,6 +115,7 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
     super(props);
 
     const zoom = props.zoomPan ? props.zoomPan.props : { domain: undefined };
+    // eslint-disable-next-line no-prototype-builtins
     const zoomControlled = !zoom.hasOwnProperty('domain');
 
     this.state = {

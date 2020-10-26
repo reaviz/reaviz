@@ -107,7 +107,7 @@ export class BrushSlice extends PureComponent<
               }}
             />
           </Move>
-          <g transform={`translate(-4, 0)`}>
+          <g transform={'translate(-4, 0)'}>
             <BrushHandle
               height={height}
               onHandleDrag={bind(this.onHandleDrag, this, 'start')}

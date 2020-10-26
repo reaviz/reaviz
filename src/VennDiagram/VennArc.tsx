@@ -31,7 +31,14 @@ export interface VennArcProps {
   /**
    * Stroke for the arc.
    */
-  stroke?: string | ((data: IVennLayout<any>, index: number, isActive: boolean | null, isHovered: boolean | null) => string);
+  stroke?:
+    | string
+    | ((
+        data: IVennLayout<any>,
+        index: number,
+        isActive: boolean | null,
+        isHovered: boolean | null
+      ) => string);
 
   /**
    * The internal data object built by venn.js
@@ -122,15 +129,18 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const arcRef = useRef<any | null>(null);
   const { transition, d } = useInterpolate({ animated, data });
-  const currentStyle = active ? activeStyle :
-    active === null ? inactiveStyle : initialStyle;
+  const currentStyle = active
+    ? activeStyle
+    : active === null
+      ? inactiveStyle
+      : initialStyle;
 
   const arcFill =
     gradient && !mask
       ? `url(#gradient-${id})`
       : mask
-      ? `url(#mask-pattern-${id})`
-      : fill;
+        ? `url(#mask-pattern-${id})`
+        : fill;
 
   return (
     <g

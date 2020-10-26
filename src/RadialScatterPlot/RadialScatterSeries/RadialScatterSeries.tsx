@@ -87,7 +87,7 @@ export class RadialScatterSeries extends Component<
       dataId = data.id;
     } else {
       console.warn(
-        `No 'id' property provided for scatter point; provide one via 'id'.`
+        'No \'id\' property provided for scatter point; provide one via \'id\'.'
       );
     }
 

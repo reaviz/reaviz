@@ -119,6 +119,7 @@ export class AreaChart extends Component<AreaChartProps, AreaChartState> {
     super(props);
 
     const zoom: any = props.zoomPan ? props.zoomPan.props : {};
+    // eslint-disable-next-line no-prototype-builtins
     const zoomControlled = !zoom.hasOwnProperty('domain');
 
     this.state = {

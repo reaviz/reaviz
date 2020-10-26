@@ -1,4 +1,10 @@
-import React, { FC, Fragment, ReactElement, useCallback, useState } from 'react';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useCallback,
+  useState
+} from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ColorSchemeType, getColor } from '../common/color';
 import { VennArc, VennArcProps } from './VennArc';
@@ -64,15 +70,18 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   const [actives, setActives] = useState<string[]>([]);
   const [hovered, setHovered] = useState<string | null>(null);
 
-  const onActivate = useCallback((point: string) => {
-    setHovered(point);
+  const onActivate = useCallback(
+    (point: string) => {
+      setHovered(point);
 
-    setActives(
-      data
-        .filter(d => d.data?.key.indexOf(point) > -1)
-        .map(d => d.data?.key)
-    );
-  }, [data]);
+      setActives(
+        data
+          .filter((d) => d.data?.key.indexOf(point) > -1)
+          .map((d) => d.data?.key)
+      );
+    },
+    [data]
+  );
 
   const renderArc = useCallback(
     (d: IVennLayout<any>, index: number) => {
@@ -88,16 +97,20 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
       // Get the state of the arc
       const isHovered = hovered === d?.data?.key;
-      const isActive = actives.includes(d.data?.key) ||
-        (actives.length > 0 ? null : false);
+      const isActive =
+        actives.includes(d.data?.key) || (actives.length > 0 ? null : false);
 
       // Get the colors for the stroke
-      const stroke = typeof arc.props.stroke === 'function' ?
-        arc.props.stroke(data, index, isActive, isHovered) :
-        arc.props.stroke;
+      const stroke =
+        typeof arc.props.stroke === 'function'
+          ? arc.props.stroke(data, index, isActive, isHovered)
+          : arc.props.stroke;
 
-      const arcStroke = stroke ||
-        chroma(arcFill).darken(isActive ? 0.8 : 0.5).hex();
+      const arcStroke =
+        stroke ||
+        chroma(arcFill)
+          .darken(isActive ? 0.8 : 0.5)
+          .hex();
 
       return (
         <motion.g
