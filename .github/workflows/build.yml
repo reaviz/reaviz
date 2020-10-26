@@ -34,16 +34,3 @@ jobs:
 
       - name: Test
         run: yarn test:ci
-
-      - name: Report Test
-        uses: IgnusG/jest-report-action@v2.3.3
-        with:
-          access-token: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Create Release Pull Request or Publish to npm
-      #  uses: changesets/action@master
-      #  with:
-      #    publish: yarn release
-      #  env:
-      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
