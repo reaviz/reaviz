@@ -147,7 +147,9 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     const innerArc = this.innerArc(innerRadius, outerRadius);
     const outerArc = this.outerArc(outerRadius);
     const positions = this.calculateLabelPositions(outerArc, outerRadius);
-    const centroid = this.centroid(innerRadius, outerRadius);
+    // this is a minimal distance that we want label polyline to extend from pie
+    // till the first time we will change line direction
+    const centroid = this.centroid(outerRadius + 4, outerRadius + 4);
 
     return (
       <Fragment>
