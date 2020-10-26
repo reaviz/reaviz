@@ -1,5 +1,7 @@
 # Master
 - [Fix] Improve polyline coords calculation for PieArcLabel #12
+- [Chore] Tweak default GridStripe default color to match better
+- [Chore] FC Migrations ( Gridline, GridStripe )
 
 # 9.3.0 - 10/22/20
 - [Feature] Add custom colors for venn strokes
