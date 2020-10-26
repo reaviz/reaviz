@@ -53,9 +53,20 @@ storiesOf('Charts/Pie Chart/Pie', module)
       data={browserData}
     />
   ))
-  .add('Label Overlap', () => (
-    <PieChart width={350} height={250} data={browserData} />
-  ))
+  .add('Label Overlap', () => {
+    const labelsCount = number('Labels count', 32);
+
+    return (
+      <PieChart
+        width={350}
+        height={250}
+        data={[...Array(labelsCount)].map((_, index) => ({
+          key: index + 1,
+          data: 1
+        }))}
+      />
+    );
+  })
   .add('Display All Labels', () => (
     <PieChart
       width={350}
