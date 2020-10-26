@@ -1,3 +1,6 @@
+# Master
+- [Fix] Improve polyline coords calculation for PieArcLabel #12
+
 # 9.3.0 - 10/22/20
 - [Feature] Add custom colors for venn strokes
 - [Feature] Custom label formatting for venn labels
