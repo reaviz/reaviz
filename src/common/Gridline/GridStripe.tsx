@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { FC, useMemo } from 'react';
 import css from './GridStripe.module.scss';
 
 export interface GridStripeProps {
@@ -43,13 +43,16 @@ export interface GridStripeProps {
   index: number;
 }
 
-export class GridStripe extends PureComponent<GridStripeProps> {
-  static defaultProps: Partial<GridStripeProps> = {
-    fill: '#2a3138'
-  };
-
-  getCoords() {
-    const { position, data, height, width, scale, fill, index } = this.props;
+export const GridStripe: FC<Partial<GridStripeProps>> = ({
+  fill = '#393c3e',
+  position,
+  data,
+  height,
+  width,
+  scale,
+  index
+}) => {
+  const coords = useMemo(() => {
     const pos = scale(data);
     const stripeFill = index % 2 ? 'none' : fill;
     const dim = scale.bandwidth();
@@ -71,10 +74,7 @@ export class GridStripe extends PureComponent<GridStripeProps> {
         fill: stripeFill
       };
     }
-  }
+  }, [scale, data, index, height, width, fill, position]);
 
-  render() {
-    const coords = this.getCoords();
-    return <rect className={css.gridStripe} {...coords} />;
-  }
+  return <rect className={css.gridStripe} {...coords} />;
 }

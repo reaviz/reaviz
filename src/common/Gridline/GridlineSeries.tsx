@@ -53,7 +53,7 @@ export interface GridlineSeriesProps {
 
 export class GridlineSeries extends Component<GridlineSeriesProps> {
   static defaultProps: Partial<GridlineSeriesProps> = {
-    line: <Gridline />,
+    line: <Gridline direction="all" />,
     stripe: null
   };
 

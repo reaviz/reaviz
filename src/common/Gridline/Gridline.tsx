@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { FC, useMemo } from 'react';
 import css from './Gridline.module.scss';
 
 export interface GridlineProps {
@@ -48,24 +48,17 @@ export interface GridlineProps {
   strokeDasharray: string;
 }
 
-export class Gridline extends PureComponent<GridlineProps> {
-  static defaultProps: Partial<GridlineProps> = {
-    strokeWidth: 1,
-    direction: 'all',
-    strokeColor: 'rgba(153, 153, 153, 0.5)'
-  };
-
-  getCoords() {
-    const {
-      direction,
-      data,
-      height,
-      width,
-      scale,
-      strokeWidth,
-      strokeColor,
-      strokeDasharray
-    } = this.props;
+export const Gridline: FC<Partial<GridlineProps>> = ({
+  strokeWidth = 1,
+  direction = 'all',
+  strokeColor = 'rgba(153, 153, 153, 0.5)',
+  data,
+  height,
+  width,
+  scale,
+  strokeDasharray
+}) => {
+  const coords = useMemo(() => {
     const pos = scale(data);
 
     if (direction === 'x') {
@@ -73,28 +66,26 @@ export class Gridline extends PureComponent<GridlineProps> {
         x1: pos,
         x2: pos,
         y1: 0,
-        y2: height,
-        fill: 'none',
-        stroke: strokeColor,
-        strokeDasharray,
-        strokeWidth
+        y2: height
       };
     } else {
       return {
         y1: pos,
         y2: pos,
         x1: 0,
-        x2: width,
-        fill: 'none',
-        stroke: strokeColor,
-        strokeDasharray,
-        strokeWidth
+        x2: width
       };
     }
-  }
+  }, [direction, data, height, width, scale]);
 
-  render() {
-    const coords = this.getCoords();
-    return <line className={css.gridLine} {...coords} />;
-  }
+  return (
+    <line
+      {...coords}
+      className={css.gridLine}
+      strokeDasharray={strokeDasharray}
+      strokeWidth={strokeWidth}
+      stroke={strokeColor}
+      fill="none"
+    />
+  );
 }
