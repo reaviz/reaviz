@@ -1,16 +1,28 @@
 import theme from './theme';
 
+const order = [
+  'intro-',
+  'getting-started-',
+  'chart-types-',
+  'advanced-',
+  'docs-',
+  'charts-'
+];
+
 export const parameters = {
   layout: 'centered',
   options: {
     storySort: (a, b) => {
-      if (a[0].includes('docs-')) {
-        if (a[0].includes('intro-')) {
-          return -1;
-        }
+      const aName = a[0];
+      const bName = b[0];
+
+      if (aName.includes('docs-') || bName.includes('docs-')) {
+        const aIdx = order.findIndex(i => aName.indexOf(i) > -1);
+        const bIdx = order.findIndex(i => bName.indexOf(i) > -1);
+        return aIdx - bIdx;
       }
 
-      return a - b;
+      return aName < bName ? -1 : 1;
     }
   },
   docs: {

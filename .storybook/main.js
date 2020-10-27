@@ -1,10 +1,9 @@
 const { resolve } = require('path');
-const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 const codesandbox = require('remark-codesandbox');
 const reavizCodesandboxTemplatePackageJSON = require('../docs/tools/templates/reaviz-codesandbox-template/package.json');
 
 module.exports = {
-  stories: ['../src/**/*.story.tsx', '../docs/**/*.story.mdx'],
+  stories: ['../docs/**/*.story.mdx', '../src/**/*.story.tsx'],
   addons: [
     {
       name: '@storybook/preset-scss',
