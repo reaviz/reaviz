@@ -109,18 +109,13 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
   calculateOuterRadius(outerRadius, point) {
     const { explode, data } = this.props;
 
-    if (!explode) {
+    if (!explode || data === undefined) {
       return outerRadius;
     }
 
     const maxVal = max(data, (d) => d.value);
 
-    let newOuter = outerRadius;
-    if (explode && data !== undefined) {
-      newOuter = (outerRadius * point.value) / maxVal;
-    }
-
-    return newOuter;
+    return (outerRadius * point.value) / maxVal;
   }
 
   centroid(innerRadius: number, outerRadius: number) {
@@ -147,9 +142,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     const innerArc = this.innerArc(innerRadius, outerRadius);
     const outerArc = this.outerArc(outerRadius);
     const positions = this.calculateLabelPositions(outerArc, outerRadius);
-    // this is a minimal distance that we want label polyline to extend from pie
-    // till the first time we will change line direction
-    const centroid = this.centroid(outerRadius + 4, outerRadius + 4);
+    const centroid = this.centroid(innerRadius, outerRadius);
 
     return (
       <Fragment>
@@ -160,6 +153,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
                 element={label}
                 data={arcData}
                 centroid={centroid}
+                outerRadius={outerRadius}
                 position={positions[index]}
               />
             )}

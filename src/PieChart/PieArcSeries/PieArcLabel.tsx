@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
-import { formatValue } from '../../common/utils/formatting';
 import { motion } from 'framer-motion';
+import { arc } from 'd3-shape';
+import { formatValue } from '../../common/utils/formatting';
+import { findBreakPoint } from './findBreakPoint';
 
 export interface PieArcLabelProps {
   data: any;
@@ -8,6 +10,7 @@ export interface PieArcLabelProps {
   format?: (v) => any;
   fontFill: string;
   fontSize: number;
+  outerRadius: number;
   fontFamily: string;
   lineStroke: string;
   padding: string;
@@ -37,38 +40,23 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
       fontFill,
       format,
       fontFamily,
-      position
+      position,
+      outerRadius
     } = this.props;
 
     const text = format ? format(data.data) : formatValue(data.data.key);
     const textAnchor = getTextAnchor(data);
     const [posX, posY] = position;
+    const startPoint = centroid(data);
+    // we want to have at least some pixels of straight line (margin)
+    // from pie section till we start to change line direction
+    const minRadius = outerRadius + 4;
 
-    const innerPoint = centroid(data);
-
-    let breakPoint = [0, 0];
-    // whether we should create breakpoint near pie or near label
-    const breakPointCondition =
-      (posY - innerPoint[1]) * Math.sign(innerPoint[1]) > 0;
-
-    if (breakPointCondition) {
-      // extend the line starting from innerPoint till the posY
-      let scale = Math.abs(posY / innerPoint[1]) || 1;
-      const minScale = 1;
-      const maxScale = Math.abs(posX / innerPoint[0]) || 1;
-
-      scale = Math.max(Math.min(maxScale, scale), minScale);
-
-      breakPoint = [innerPoint[0] * scale, posY];
-    } else {
-      let scale = 0.85;
-      const minScale = Math.abs(innerPoint[0] / posX) || 1;
-      const maxScale = 1;
-
-      scale = Math.max(Math.min(maxScale, scale), minScale);
-
-      breakPoint = [posX * scale, innerPoint[1]];
-    }
+    const innerPoint = arc()
+      .innerRadius(minRadius)
+      .outerRadius(minRadius)
+      .centroid(data);
+    const breakPoint = findBreakPoint(innerPoint, position);
 
     return (
       <motion.g
@@ -96,7 +84,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
         <polyline
           fill="none"
           stroke={lineStroke}
-          points={`0,0,${[innerPoint]},${breakPoint},${position}`}
+          points={`${startPoint},${innerPoint},${breakPoint},${position}`}
         />
       </motion.g>
     );
