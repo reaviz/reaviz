@@ -1,5 +1,5 @@
 import { Meta, Story, ArgsTable, Preview } from '@storybook/addon-docs/blocks';
-import { TooltipArea, Tooltip } from '../../src';
+import { TooltipArea, ChartTooltip } from '../../src';
 
 <Meta title="Docs/Advanced/Tooltips" />
 
@@ -56,7 +56,7 @@ the `tooltip` property passing its own `content`.
 #### [TooltipArea](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/TooltipArea.tsx)
 <ArgsTable of={TooltipArea} />
 
-## Tooltip
+## ChartTooltip
 The tooltip component is used for simple position relative to a element. This is ideal
 for most charts.
 
@@ -80,5 +80,41 @@ The Calendar Heatmap is a good example of custom tooltip:
 In this example above, the component overrides the tooltip to format the date for a Calendar format.
 
 ### API
-#### [Tooltip](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/Tooltip.tsx)
-<ArgsTable of={Tooltip} />
+#### [Tooltip](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/ChartTooltip.tsx)
+<ArgsTable of={ChartTooltip} />
+
+## Custom Tooltips
+You can also override tooltips and handle them yourself manually. Below is an example
+of overriding the `onMouseEnter` and `onMouseLeave` in the `VennDiagram` component to
+handle displaying what would be in the tooltip in a custom panel below the chart.
+
+```jsx
+const Venn = () => {
+  const [active, setActive] = useState<any | null>(null);
+
+  return (
+    <>
+      <VennDiagram
+        type="starEuler"
+        data={data}
+        height={275}
+        series={
+          <VennSeries
+            arc={
+              <VennArc
+                onMouseEnter={({ value }) => {
+                  setActive(`${value.sets.join(' & ')} - ${value.size.toLocaleString()}`);
+                }}
+                onMouseLeave={() => setActive(null)}
+              />
+            }
+          />
+        }
+      />
+      {active !== null && (
+        <p>{active}</p>
+      )}
+    </>
+  );
+};
+```
