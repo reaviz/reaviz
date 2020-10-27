@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { motion } from 'framer-motion';
+import { arc } from 'd3-shape';
 import { formatValue } from '../../common/utils/formatting';
 import { findBreakPoint } from './findBreakPoint';
 
@@ -9,6 +10,7 @@ export interface PieArcLabelProps {
   format?: (v) => any;
   fontFill: string;
   fontSize: number;
+  outerRadius: number;
   fontFamily: string;
   lineStroke: string;
   padding: string;
@@ -38,15 +40,22 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
       fontFill,
       format,
       fontFamily,
-      position
+      position,
+      outerRadius
     } = this.props;
 
     const text = format ? format(data.data) : formatValue(data.data.key);
     const textAnchor = getTextAnchor(data);
     const [posX, posY] = position;
+    const startPoint = centroid(data);
+    // we want to have at least some pixels of straight line (margin)
+    // from pie section till we start to change line direction
+    const minRadius = outerRadius + 4;
 
-    const innerPoint = centroid(data);
-
+    const innerPoint = arc()
+      .innerRadius(minRadius)
+      .outerRadius(minRadius)
+      .centroid(data);
     const breakPoint = findBreakPoint(innerPoint, position);
 
     return (
@@ -75,7 +84,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
         <polyline
           fill="none"
           stroke={lineStroke}
-          points={`0,0,${[innerPoint]},${breakPoint},${position}`}
+          points={`${startPoint},${innerPoint},${breakPoint},${position}`}
         />
       </motion.g>
     );
