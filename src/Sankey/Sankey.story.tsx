@@ -59,9 +59,7 @@ storiesOf('Charts/Sankey', module)
           ))}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Filtering', () => <DemoStory />)
   .add('Multilevels', () => (
     <Sankey
@@ -117,9 +115,7 @@ storiesOf('Charts/Sankey', module)
           ))}
         />
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 let filtered = false;
 const DemoStory = () => {

@@ -74,9 +74,7 @@ storiesOf('Charts/Line/Radial', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Categorical Data', () => (
     <RadialAreaChart
       data={categoryData}

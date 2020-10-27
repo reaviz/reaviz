@@ -46,9 +46,7 @@ storiesOf('Charts/Scatter Plot/Linear', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Categorical Axis', () => (
     <ScatterPlot
       height={400}

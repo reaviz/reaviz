@@ -38,9 +38,7 @@ storiesOf('Charts/Heatmap/Simple', module)
           series={<HeatmapSeries colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Basic + Legend', () => (
     <div style={{ display: 'flex', height: '250px' }}>
       <Heatmap height={250} width={400} data={heatmapSimpleData} />
@@ -101,9 +99,7 @@ storiesOf('Charts/Heatmap/Calendar', module)
       const data = object('Data', heatmapCalendarData);
 
       return <CalendarHeatmap height={height} width={width} data={data} />;
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Year Calendar w/ March Start',
     () => {
@@ -112,9 +108,7 @@ storiesOf('Charts/Heatmap/Calendar', module)
       const data = object('Data', heatmapCalendarOffsetData);
 
       return <CalendarHeatmap height={height} width={width} data={data} />;
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Month Calendar',
     () => {
@@ -130,9 +124,7 @@ storiesOf('Charts/Heatmap/Calendar', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Multi Month Calendar', () => (
     <div style={{ display: 'flex' }}>
       <CalendarHeatmap

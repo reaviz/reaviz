@@ -36,9 +36,7 @@ storiesOf('Charts/Gauge/Radial', module)
           series={<RadialGaugeSeries colorScheme={[colorScheme]} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Multi',
     () => {
@@ -67,9 +65,7 @@ storiesOf('Charts/Gauge/Radial', module)
           series={<RadialGaugeSeries colorScheme={colorScheme} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Multi-line', () => (
     <RadialGauge
       data={categoryData}

@@ -80,9 +80,7 @@ storiesOf('Charts/Line/Single Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('No Animation', () => (
     <LineChart
       width={350}
@@ -137,9 +135,7 @@ storiesOf('Charts/Line/Single Series', module)
           xAxis={<LinearXAxis type="time" />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Dynamic Colors', () => (
     <LineChart
       width={350}
@@ -178,9 +174,7 @@ storiesOf('Charts/Line/Multi Series', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Large Data', () => (
     <LineChart
       width={400}
@@ -282,9 +276,7 @@ storiesOf('Charts/Line/Multi Series', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Stacked Normalized',
     () => {
@@ -308,9 +300,7 @@ storiesOf('Charts/Line/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 storiesOf('Charts/Line/Gridlines', module)
   .add('All Axes', () => (

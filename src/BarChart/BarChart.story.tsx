@@ -75,9 +75,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Custom Style', () => (
     <BarChart
       width={350}
@@ -119,9 +117,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           series={<BarSeries colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Mask', () => (
     <BarChart
       width={350}
@@ -168,9 +164,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Custom Bar Width',
     () => {
@@ -184,9 +178,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           data={categoryData}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Live Updating', () => <LiveDataDemo />)
   .add('Autosize', () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
@@ -233,9 +225,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           series={<BarSeries type="waterfall" colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Non-Zero',
     () => {
@@ -249,9 +239,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           series={<BarSeries colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 storiesOf('Charts/Bar Chart/Vertical/Histogram', module)
   .add(
@@ -274,9 +262,7 @@ storiesOf('Charts/Bar Chart/Vertical/Histogram', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Numbers',
     () => {
@@ -292,9 +278,7 @@ storiesOf('Charts/Bar Chart/Vertical/Histogram', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
   .add(
@@ -337,9 +321,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Stacked',
     () => {
@@ -391,9 +373,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Stacked Custom Style', () => (
     <StackedBarChart
       width={350}
@@ -539,9 +519,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Stacked Normalized',
     () => {
@@ -591,9 +569,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Marimekko',
     () => {
@@ -644,9 +620,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
   .add(
@@ -685,9 +659,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Large Dataset', () => (
     <BarChart
       height={350}
@@ -744,9 +716,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Autosize', () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
       <BarChart
@@ -913,9 +883,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Multi Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Stacked Normalized', () => (
     <StackedNormalizedBarChart
       width={500}

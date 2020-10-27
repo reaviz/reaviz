@@ -74,9 +74,7 @@ storiesOf('Charts/Area Chart/Single Series', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Masks', () => (
     <AreaChart
       width={350}
@@ -172,9 +170,7 @@ storiesOf('Charts/Area Chart/Multi Series', module)
           series={<AreaSeries type="grouped" colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Large Dataset',
     () => {
@@ -191,9 +187,7 @@ storiesOf('Charts/Area Chart/Multi Series', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Live Updating', () => <LiveUpdatingStory />)
   .add('Custom Colors', () => (
     <AreaChart
@@ -224,9 +218,7 @@ storiesOf('Charts/Area Chart/Multi Series', module)
           data={data}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Stacked Normalized',
     () => {
@@ -243,9 +235,7 @@ storiesOf('Charts/Area Chart/Multi Series', module)
           series={<StackedNormalizedAreaSeries colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 storiesOf('Charts/Area Chart/Gridlines', module)
   .add('All Axes', () => (

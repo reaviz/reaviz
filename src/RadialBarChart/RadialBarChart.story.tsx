@@ -68,9 +68,7 @@ storiesOf('Charts/Bar Chart/Radial', module)
           }
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Resizable', () => (
     <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
       <RadialBarChart data={largeCategoryData} innerRadius={10} />

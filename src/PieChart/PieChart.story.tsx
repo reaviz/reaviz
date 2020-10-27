@@ -23,9 +23,7 @@ storiesOf('Charts/Pie Chart/Pie', module)
           series={<PieArcSeries colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add(
     'Explode',
     () => {
@@ -42,9 +40,7 @@ storiesOf('Charts/Pie Chart/Pie', module)
           series={<PieArcSeries explode={true} colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('No Animation', () => (
     <PieChart
       width={350}
@@ -99,9 +95,7 @@ storiesOf('Charts/Pie Chart/Donut', module)
           series={<PieArcSeries doughnut={true} colorScheme={color} />}
         />
       );
-    },
-    { options: { showPanel: true } }
-  )
+    })
   .add('Labels', () => (
     <PieChart
       width={350}
@@ -149,9 +143,7 @@ storiesOf('Charts/Pie Chart/Donut', module)
           </h2>
         </div>
       );
-    },
-    { options: { showPanel: true } }
-  );
+    });
 
 const LiveUpdatingStory = () => {
   const [data, setData] = useState([...categoryData]);
