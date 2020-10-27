@@ -1,3 +1,6 @@
+# 9.3.2 - 10/27/20
+- [Fix] Fix pie chart label lines #14
+
 # 9.3.1 - 10/27/20
 - [Fix] Improve arc/text positioning on active in venn diagram
 - [Fix] Improve polyline coords calculation for PieArcLabel #12
