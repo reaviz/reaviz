@@ -1,4 +1,5 @@
-# Master
+# 9.3.1 - 10/27/20
+- [Fix] Improve arc/text positioning on active in venn diagram
 - [Fix] Improve polyline coords calculation for PieArcLabel #12
 - [Chore] Tweak default GridStripe default color to match better
 - [Chore] FC Migrations ( Gridline, GridStripe )
