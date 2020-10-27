@@ -4,6 +4,16 @@ import { wrapText } from './wrapText';
 
 export interface VennLabelProps {
   /**
+   * Whether the shape is active or not.
+   */
+  active?: boolean | null;
+
+  /**
+   * Set by the parent element.
+   */
+  id?: string;
+
+  /**
    * Show all labels or just the large ones. Default false.
    */
   showAll?: boolean;
@@ -52,6 +62,8 @@ export interface VennLabelProps {
 export const VennLabel: FC<Partial<VennLabelProps>> = ({
   data,
   format,
+  id,
+  active,
   labelType = 'key',
   showAll = false,
   wrap = true,
@@ -73,18 +85,21 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
 
   return (
     <motion.text
+      id={`${id}-text`}
       style={{ pointerEvents: 'none', fontFamily, fontSize }}
       fill={fill}
       initial={
         {
           attrX: data.text.x,
-          attrY: data.text.y
+          attrY: data.text.y,
+          opacity: 1
         } as any
       }
       animate={
         {
           attrX: data.text.x,
-          attrY: data.text.y
+          attrY: data.text.y,
+          opacity: active === null ? .3 : 1
         } as any
       }
       transition={transition}

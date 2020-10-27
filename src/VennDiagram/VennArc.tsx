@@ -176,6 +176,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       <motion.path
         ref={arcRef}
         fill={arcFill}
+        id={`${id}-arc`}
         strokeWidth={strokeWidth}
         stroke={stroke as string}
         transition={transition}

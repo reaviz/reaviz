@@ -84,7 +84,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   );
 
   const renderArc = useCallback(
-    (d: IVennLayout<any>, index: number) => {
+    (d: IVennLayout<any> & { set?: any }, index: number) => {
       // Get the colors of the fill
       const fill = getColor({
         data,
@@ -121,7 +121,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         >
           <CloneElement<VennArcProps>
             element={arc}
-            id={`arc-${id}-${index}`}
+            id={`${id}-${d?.data?.key}`}
             data={d}
             fill={arcFill}
             stroke={arcStroke}
@@ -134,41 +134,53 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
               setHovered(null);
             }}
           />
+          <CloneElement<VennLabelProps>
+            element={label}
+            data={d}
+            id={`${id}-${d?.data?.key}`}
+            active={isActive}
+            animated={animated}
+          />
+          {d.set && outerLabel && (
+            <CloneElement<VennLabelProps>
+              element={outerLabel}
+              data={d}
+              animated={animated}
+            />
+          )}
         </motion.g>
       );
     },
-    [colorScheme, data, arc, animated, hovered, actives, onActivate]
-  );
-
-  const renderLabel = useCallback(
-    (d: IVennLayout<any> & { set?: any }) => (
-      <motion.g
-        key={d.data?.key}
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={transition}
-      >
-        <CloneElement<VennLabelProps>
-          element={label}
-          data={d}
-          animated={animated}
-        />
-        {d.set && outerLabel && (
-          <CloneElement<VennLabelProps>
-            element={outerLabel}
-            data={d}
-            animated={animated}
-          />
-        )}
-      </motion.g>
-    ),
-    [label, outerLabel, animated]
+    [colorScheme, data, arc, animated, label, outerLabel, hovered, actives, onActivate]
   );
 
   return (
     <Fragment>
       {data.map(renderArc)}
-      {data.map(renderLabel)}
+      {actives.length > 0 && (
+        <Fragment>
+          {actives.map(a => (
+            <use
+              key={a}
+              xlinkHref={`#${id}-${a}-arc`}
+              style={{ pointerEvents: 'none' }}
+            />
+          ))}
+        </Fragment>
+      )}
+      {hovered !== null && (
+        <use
+          xlinkHref={`#${id}-${hovered}-arc`}
+          style={{ pointerEvents: 'none' }}
+        />
+      )}
+      {data.map((d, index) => (
+        <use
+          key={index}
+          xlinkHref={`#${id}-${d.data?.key}-text`}
+          style={{ pointerEvents: 'none' }}
+        />
+      ))}
     </Fragment>
   );
 };
