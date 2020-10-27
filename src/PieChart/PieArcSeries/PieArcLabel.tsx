@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
-import { formatValue } from '../../common/utils/formatting';
 import { motion } from 'framer-motion';
+import { formatValue } from '../../common/utils/formatting';
+import { findBreakPoint } from './findBreakPoint';
 
 export interface PieArcLabelProps {
   data: any;
@@ -46,29 +47,7 @@ export class PieArcLabel extends PureComponent<PieArcLabelProps> {
 
     const innerPoint = centroid(data);
 
-    let breakPoint = [0, 0];
-    // whether we should create breakpoint near pie or near label
-    const breakPointCondition =
-      (posY - innerPoint[1]) * Math.sign(innerPoint[1]) > 0;
-
-    if (breakPointCondition) {
-      // extend the line starting from innerPoint till the posY
-      let scale = Math.abs(posY / innerPoint[1]) || 1;
-      const minScale = 1;
-      const maxScale = Math.abs(posX / innerPoint[0]) || 1;
-
-      scale = Math.max(Math.min(maxScale, scale), minScale);
-
-      breakPoint = [innerPoint[0] * scale, posY];
-    } else {
-      let scale = 0.85;
-      const minScale = Math.abs(innerPoint[0] / posX) || 1;
-      const maxScale = 1;
-
-      scale = Math.max(Math.min(maxScale, scale), minScale);
-
-      breakPoint = [posX * scale, innerPoint[1]];
-    }
+    const breakPoint = findBreakPoint(innerPoint, position);
 
     return (
       <motion.g
