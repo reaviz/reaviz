@@ -16,7 +16,8 @@ module.exports = {
     },
     '@storybook/addon-google-analytics',
     '@storybook/addon-knobs',
-    '@storybook/addon-docs/preset'
+    '@storybook/addon-docs/preset',
+    '@storybook/addon-storysource'
   ],
   webpackFinal: (config) => {
     const mdxRule = config.module.rules.find((rule) =>
