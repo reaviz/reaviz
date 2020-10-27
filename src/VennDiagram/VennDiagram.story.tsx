@@ -223,7 +223,7 @@ storiesOf('Charts/Venn Diagram', module)
       height={450}
       width={450}
       series={
-        <VennSeries arc={<VennArc strokeWidth={5} fill="transparent" />} />
+        <VennSeries arc={<VennArc strokeWidth={5} fill="transparent" stroke={schemes.cybertron[0]} />} />
       }
       data={[
         { key: ['A'], data: 12 },
