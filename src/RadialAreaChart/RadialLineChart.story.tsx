@@ -14,7 +14,7 @@ import {
 } from '../common/Axis';
 import { schemes } from '../common/color';
 
-storiesOf('Charts/Line/Radial', module)
+storiesOf('Charts/Line Chart/Radial', module)
   .add(
     'Simple',
     () => {
