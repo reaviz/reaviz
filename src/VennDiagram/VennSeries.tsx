@@ -21,6 +21,11 @@ export interface VennSeriesProps {
   id: string;
 
   /**
+   * Active managed selections.
+   */
+  selections?: string[];
+
+  /**
    * The internal data object built by venn.js
    */
   data: IVennLayout<any>[];
@@ -59,6 +64,7 @@ export interface VennSeriesProps {
 export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   data,
   id,
+  selections,
   animated = true,
   disabled = false,
   colorScheme = 'cybertron',
@@ -95,10 +101,13 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
       const arcFill = arc.props.fill || fill;
 
+      const key = d?.data?.key;
+      const isSelected = selections?.includes(key);
+
       // Get the state of the arc
-      const isHovered = hovered === d?.data?.key;
+      const isHovered = hovered === key || isSelected;
       const isActive =
-        actives.includes(d.data?.key) || (actives.length > 0 ? null : false);
+        actives.includes(key) || (actives.length > 0 ? null : false) || isSelected;
 
       // Get the colors for the stroke
       const stroke =

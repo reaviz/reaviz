@@ -114,6 +114,42 @@ storiesOf('Charts/Venn Diagram', module)
       />
     );
   })
+  .add('Selections', () => {
+    const selections = object('Selections', [
+      'A|B',
+      'B'
+    ]);
+    const data = object('Data', [
+      { key: ['A'], data: 4 },
+      { key: ['B'], data: 1 },
+      { key: ['A', 'B'], data: 1 }
+    ]);
+
+    return (
+      <VennDiagram
+        height={450}
+        width={450}
+        data={data}
+        series={
+          <VennSeries
+            selections={selections}
+            arc={
+              <VennArc
+                stroke={(_data, _index, active, hovered) => {
+                  if (hovered) {
+                    return 'blue';
+                  } else if (active) {
+                    return 'green';
+                  }
+                  return 'white';
+                }}
+              />
+            }
+          />
+        }
+      />
+    );
+  })
   .add('Custom Colors', () => (
     <VennDiagram
       height={450}
