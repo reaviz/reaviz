@@ -161,7 +161,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         </motion.g>
       );
     },
-    [colorScheme, data, arc, animated, label, outerLabel, hovered, actives, onActivate]
+    [colorScheme, data, arc, animated, label, outerLabel, hovered, selections, actives, onActivate]
   );
 
   const topArcs = useMemo(() => {
