@@ -3,7 +3,8 @@ import React, {
   Fragment,
   ReactElement,
   useCallback,
-  useState
+  useState,
+  useMemo
 } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ColorSchemeType, getColor } from '../common/color';
@@ -163,10 +164,28 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
     [colorScheme, data, arc, animated, label, outerLabel, hovered, actives, onActivate]
   );
 
+  const topArcs = useMemo(() => {
+    const result = [];
+
+    if (actives.length > 0) {
+      result.push(...actives);
+    }
+
+    if (selections?.length) {
+      result.push(...selections);
+    }
+
+    if (hovered) {
+      result.push(hovered);
+    }
+
+    return result;
+  }, [hovered, actives, selections]);
+
   return (
     <Fragment>
       {data.map(renderArc)}
-      {actives.length > 0 && (
+      {topArcs.length > 0 && (
         <Fragment>
           {actives.map(a => (
             <use
@@ -176,12 +195,6 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             />
           ))}
         </Fragment>
-      )}
-      {hovered !== null && (
-        <use
-          xlinkHref={`#${id}-${hovered}-arc`}
-          style={{ pointerEvents: 'none' }}
-        />
       )}
       {data.map((d, index) => (
         <use
