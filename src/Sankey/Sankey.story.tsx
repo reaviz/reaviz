@@ -32,7 +32,7 @@ const colorScheme = chroma
 
 const onNodeClick = (title: string) => window.alert(`${title} is clicked`);
 
-storiesOf('Charts/Sankey', module)
+storiesOf('Charts/Sankey Plot', module)
   .add(
     'Simple',
     () => {

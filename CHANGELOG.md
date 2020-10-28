@@ -1,3 +1,6 @@
+# 9.3.4 - 10/28/20
+- [Fix] Improve venn arc layering
+
 # 9.3.3 - 10/28/20
 - [Feature] Add ability to pass managed selection states
 
