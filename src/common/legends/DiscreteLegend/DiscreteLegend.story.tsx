@@ -15,7 +15,7 @@ storiesOf('Utils/Legend/Discrete/Vertical', module).add('Simple', () => (
   />
 ));
 
-storiesOf('Charts/Legend/Discrete/Horizontal', module)
+storiesOf('Utils/Legend/Discrete/Horizontal', module)
   .add('Simple', () => (
     <DiscreteLegend
       orientation="horizontal"

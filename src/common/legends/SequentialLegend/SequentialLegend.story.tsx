@@ -28,7 +28,7 @@ storiesOf('Utils/Legend/Sequential/Vertical', module)
     </div>
   ));
 
-storiesOf('Charts/Legend/Sequential/Horizontal', module)
+storiesOf('Utils/Legend/Sequential/Horizontal', module)
   .add('Simple', () => (
     <div style={{ width: '250px' }}>
       <SequentialLegend data={heatmapSimpleData} orientation="horizontal" />
