@@ -172,7 +172,9 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
     }
 
     if (selections?.length) {
-      result.push(...selections);
+      result.push(...selections.filter(s =>
+        !actives.includes(s) && s !== hovered
+      ));
     }
 
     if (hovered) {
