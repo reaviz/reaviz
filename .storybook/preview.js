@@ -6,7 +6,8 @@ const order = [
   'chart-types-',
   'advanced-',
   'docs-',
-  'charts-'
+  'charts-',
+  'utils-'
 ];
 
 export const parameters = {

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { SequentialLegend } from './SequentialLegend';
 import { heatmapSimpleData } from '../../../../demo';
 
-storiesOf('Charts/Legend/Sequential/Vertical', module)
+storiesOf('Utils/Legend/Sequential/Vertical', module)
   .add('Simple', () => (
     <div style={{ height: '250px' }}>
       <SequentialLegend data={heatmapSimpleData} />

@@ -26,7 +26,7 @@ const xScale = (() => {
   return xScale;
 })();
 
-storiesOf('Charts/Axis/Radial', module).add('Simple', () => (
+storiesOf('Utils/Axis/Radial', module).add('Simple', () => (
   <div style={{ padding: '10px' }}>
     <svg width={600} height={600}>
       <g transform="translate(300, 300)">
