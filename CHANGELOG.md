@@ -1,3 +1,6 @@
+# 9.3.3 - 10/28/20
+- [Feature] Add ability to pass managed selection states
+
 # 9.3.2 - 10/27/20
 - [Fix] Fix pie chart label lines #14
 
