@@ -185,17 +185,13 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   return (
     <Fragment>
       {data.map(renderArc)}
-      {topArcs.length > 0 && (
-        <Fragment>
-          {actives.map(a => (
-            <use
-              key={a}
-              xlinkHref={`#${id}-${a}-arc`}
-              style={{ pointerEvents: 'none' }}
-            />
-          ))}
-        </Fragment>
-      )}
+      {topArcs.length > 0 && topArcs.map(a => (
+        <use
+          key={a}
+          xlinkHref={`#${id}-${a}-arc`}
+          style={{ pointerEvents: 'none' }}
+        />
+      ))}
       {data.map((d, index) => (
         <use
           key={index}
