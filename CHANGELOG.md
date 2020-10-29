@@ -1,3 +1,7 @@
+# 9.3.8 - 10/29/20
+- [Fix] Improve venn arc animations
+- [Fix] Fix duplicate keys for selections in venn arcs
+
 # 9.3.4/5/6/7 - 10/28/20
 - [Fix] Improve venn arc layering
 
