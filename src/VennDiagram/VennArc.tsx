@@ -51,11 +51,6 @@ export interface VennArcProps {
   disabled?: boolean;
 
   /**
-   * Cursor for the arc hover.
-   */
-  cursor?: string;
-
-  /**
    * Stroke on the arc.
    */
   strokeWidth?: number;
@@ -74,6 +69,11 @@ export interface VennArcProps {
    * Inactive style of arc.
    */
   inactiveStyle?: any;
+
+  /**
+   * CSS Styles for the arc.
+   */
+  style?: any;
 
   /**
    * Tooltip element.
@@ -115,11 +115,11 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   mask,
   id,
   active = false,
+  style,
   inactiveStyle = { opacity: 0.3 },
   activeStyle = { opacity: 0.8 },
   initialStyle = { opacity: 0.6 },
   strokeWidth = 3,
-  cursor = 'initial',
   gradient = <Gradient />,
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
@@ -145,7 +145,6 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   return (
     <g
       title={data.data.key}
-      style={{ cursor }}
       onMouseEnter={(event) => {
         if (!disabled) {
           setInternalActive(true);
@@ -183,6 +182,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         d={d}
         initial={initialStyle}
         animate={currentStyle}
+        style={style}
       />
       {mask && (
         <Fragment>

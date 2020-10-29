@@ -9,6 +9,10 @@ import { Stripes } from '../common/Mask';
 import { VennLabel } from './VennLabel';
 import { Gradient } from '../common/Gradient';
 import { VennOuterLabel } from './VennOuterLabel';
+import { symbol, symbolStar } from 'd3-shape';
+
+// Make a static star path for demos
+const starPath = symbol().type(symbolStar).size(50)();
 
 storiesOf('Charts/Venn Diagram', module)
   .add('Simple', () => {
@@ -114,6 +118,54 @@ storiesOf('Charts/Venn Diagram', module)
       />
     );
   })
+  .add('Label Icons', () => (
+    <VennDiagram
+      type="starEuler"
+      height={450}
+      width={450}
+      data={eulerData}
+      series={
+        <VennSeries
+          colorScheme={['#eee']}
+          label={
+            <VennLabel
+              labelType="value"
+              showAll={true}
+            />
+          }
+          outerLabel={
+            <VennOuterLabel
+              format={(data) => {
+                // set some static height/width expectations
+                const height = 50;
+                const width = 50;
+
+                // Calculate some offsets based on size of your element
+                const offsetX = data.set.align !== 'start' ? -width / 2 : 0;
+                const offsetY = data.set.verticalAlign !== 'top' ? -height / 2 : 0;
+
+                // Pass a foreign object
+                return (
+                  <foreignObject height={height} width={width} x={offsetX} y={offsetY}>
+                    <svg height={height} width={width} viewBox="-7 -7 25 25">
+                      <path
+                        d={starPath}
+                        style={{
+                          fill: 'lime',
+                          stroke: 'purple',
+                          strokeWidth: 1.5
+                        }}
+                      />
+                    </svg>
+                  </foreignObject>
+                );
+              }}
+            />
+          }
+        />
+      }
+    />
+  ))
   .add('Selections', () => {
     const selections = object('Selections', [
       'A|B',
