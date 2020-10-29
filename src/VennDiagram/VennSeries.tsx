@@ -123,12 +123,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           .hex();
 
       return (
-        <motion.g
-          key={d.data?.key}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={transition}
-        >
+        <Fragment key={d.data?.key}>
           <CloneElement<VennArcProps>
             element={arc}
             id={`${id}-${d?.data?.key}`}
@@ -158,7 +153,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
               animated={animated}
             />
           )}
-        </motion.g>
+        </Fragment>
       );
     },
     [colorScheme, data, arc, animated, label, outerLabel, hovered, selections, actives, onActivate]
@@ -168,7 +163,9 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
     const result = [];
 
     if (actives.length > 0) {
-      result.push(...actives);
+      result.push(...actives.filter(s =>
+        s !== hovered
+      ));
     }
 
     if (selections?.length) {
@@ -185,7 +182,11 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   }, [hovered, actives, selections]);
 
   return (
-    <Fragment>
+    <motion.g
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={transition}
+    >
       {data.map(renderArc)}
       {topArcs.length > 0 && topArcs.map(a => (
         <use
@@ -201,6 +202,6 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           style={{ pointerEvents: 'none' }}
         />
       ))}
-    </Fragment>
+    </motion.g>
   );
 };
