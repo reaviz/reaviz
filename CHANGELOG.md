@@ -1,3 +1,6 @@
+# 9.3.9 - 10/29/20
+- [Feature] Add ability to pass elements as labels for outer labels of venn arc
+
 # 9.3.8 - 10/29/20
 - [Fix] Improve venn arc animations
 - [Fix] Fix duplicate keys for selections in venn arcs
