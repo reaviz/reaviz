@@ -3,6 +3,7 @@ import theme from './theme';
 const order = [
   'intro-',
   'getting-started-',
+  'quick-start-',
   'chart-types-',
   'docs-utils-',
   'advanced-',
