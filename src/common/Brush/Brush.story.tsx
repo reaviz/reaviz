@@ -19,8 +19,7 @@ import {
 import { TooltipArea } from '../Tooltip';
 import { ChartBrush } from './ChartBrush';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../ScatterPlot';
-import { timeDay } from 'd3-time';
-import { BarChart, BarSeries, HistogramBarSeries } from '../../BarChart';
+import { BarChart, HistogramBarSeries } from '../../BarChart';
 import { range } from 'd3-array';
 import { Tooltip } from 'realayers';
 import { GridlineSeries, Gridline, GridStripe } from '../Gridline';

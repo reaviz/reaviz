@@ -4,6 +4,7 @@ const order = [
   'intro-',
   'getting-started-',
   'chart-types-',
+  'docs-utils-',
   'advanced-',
   'docs-',
   'charts-',
