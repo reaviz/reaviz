@@ -5,7 +5,7 @@ import { range } from 'd3-array';
 import { Move } from '../Gestures/Move';
 import css from './BrushHandle.module.scss';
 
-interface BrushHandleProps {
+export interface BrushHandleProps {
   height: number;
   onHandleDrag: (deltaX: number) => void;
 }
