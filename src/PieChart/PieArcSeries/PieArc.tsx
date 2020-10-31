@@ -47,6 +47,7 @@ export const PieArc: FC<PieArcProps> = ({
   return (
     <g ref={arcRef}>
       <motion.path
+        role="graphics-symbol"
         transition={transition}
         d={d}
         style={{ cursor }}

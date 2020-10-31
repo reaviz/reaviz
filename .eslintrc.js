@@ -1,3 +1,4 @@
+/* eslint-env node */
 module.exports = {
   'env': {
     'browser': true,
@@ -20,6 +21,14 @@ module.exports = {
   'plugins': [
     'react',
     '@typescript-eslint'
+  ],
+  overrides: [
+    {
+      files: ['*.test.*'],
+      env: {
+        jest: true,
+      }
+    }
   ],
   'rules': {
     'no-unused-vars': [0],
