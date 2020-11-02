@@ -43,6 +43,7 @@ function combinations(array: string[]) {
 function lookup(combo: string[], data: any[]) {
   const key = combo.join('|');
   const found = data.find((d) => d.key === key);
+
   return {
     key,
     sets: combo,
@@ -88,17 +89,18 @@ function buildData(data: any[]) {
     const sets = [...d.sets].sort(
       (a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b)
     );
+    const key = sets.join('|');
 
     return {
-      ...d,
+      size: d.size,
       sets,
-      key: sets.join('|')
+      key
     };
   });
 
   return {
     uniqueCount: uniqueSets.length,
-    data: result.map((r) => lookup(r, keyedData))
+    data: result.map(r => lookup(r, keyedData))
   };
 }
 

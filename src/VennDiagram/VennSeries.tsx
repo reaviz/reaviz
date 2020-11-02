@@ -102,7 +102,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
       const arcFill = arc.props.fill || fill;
 
-      const key = d?.data?.key;
+      const key = d?.data?.key.replace(' ', '');
       const isSelected = selections?.includes(key);
 
       // Get the state of the arc
@@ -123,17 +123,17 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           .hex();
 
       return (
-        <Fragment key={d.data?.key}>
+        <Fragment key={key}>
           <CloneElement<VennArcProps>
             element={arc}
-            id={`${id}-${d?.data?.key}`}
+            id={`${id}-${key}`}
             data={d}
             fill={arcFill}
             stroke={arcStroke}
             disabled={disabled}
             animated={animated}
             active={isActive}
-            onMouseEnter={() => onActivate(d.data?.key)}
+            onMouseEnter={() => onActivate(key)}
             onMouseLeave={() => {
               setActives([]);
               setHovered(null);
@@ -142,7 +142,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           <CloneElement<VennLabelProps>
             element={label}
             data={d}
-            id={`${id}-${d?.data?.key}`}
+            id={`${id}-${key}`}
             active={isActive}
             animated={animated}
           />
