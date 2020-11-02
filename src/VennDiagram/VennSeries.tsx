@@ -15,6 +15,8 @@ import { CloneElement } from '../common/utils';
 import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
 
+const getSafeKey = (d) => d.data?.key?.replace(' ', '');
+
 export interface VennSeriesProps {
   /**
    * Id set by the parent.
@@ -102,13 +104,13 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
       const arcFill = arc.props.fill || fill;
 
-      const key = d?.data?.key.replace(' ', '');
+      const key = d?.data?.key;
+      const safeKey = getSafeKey(d);
       const isSelected = selections?.includes(key);
 
       // Get the state of the arc
       const isHovered = hovered === key || isSelected;
-      const isActive =
-        actives.includes(key) || (actives.length > 0 ? null : false) || isSelected;
+      const isActive = isSelected || actives.includes(key) || (actives.length > 0 ? null : false);
 
       // Get the colors for the stroke
       const stroke =
@@ -123,10 +125,10 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           .hex();
 
       return (
-        <Fragment key={key}>
+        <Fragment key={safeKey}>
           <CloneElement<VennArcProps>
             element={arc}
-            id={`${id}-${key}`}
+            id={`${id}-${safeKey}`}
             data={d}
             fill={arcFill}
             stroke={arcStroke}
@@ -142,7 +144,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
           <CloneElement<VennLabelProps>
             element={label}
             data={d}
-            id={`${id}-${key}`}
+            id={`${id}-${safeKey}`}
             active={isActive}
             animated={animated}
           />
@@ -198,7 +200,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       {data.map((d, index) => (
         <use
           key={index}
-          xlinkHref={`#${id}-${d.data?.key}-text`}
+          xlinkHref={`#${id}-${getSafeKey(d)}-text`}
           style={{ pointerEvents: 'none' }}
         />
       ))}
