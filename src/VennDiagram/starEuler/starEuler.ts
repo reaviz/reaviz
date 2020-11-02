@@ -143,7 +143,13 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
       text: {
         x: mx(c.text.x),
         y: my(c.text.y)
-      }
+      },
+      ...(c.icon ? {
+        icon: {
+          x: mx(c.icon.x),
+          y: my(c.icon.y)
+        }} : {}
+      )
     },
     ...(isEllipse(c)
       ? {

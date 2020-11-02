@@ -7,6 +7,7 @@
       "ry": 5,
       "rotation": 0,
       "text": { "x": 2.25, "y": -5 },
+      "icon": { "x": 0, "y": -6.3 },
       "align": "start",
       "verticalAlign": "bottom"
     },
@@ -17,6 +18,7 @@
       "ry": 5,
       "rotation": 72,
       "text": { "x": 4.5, "y": 1.5 },
+      "icon": { "x": 6.2, "y": -1.9 },
       "align": "start",
       "verticalAlign": "top"
     },
@@ -26,6 +28,7 @@
       "rx": 2.5,
       "ry": 5,
       "rotation": 144,
+      "icon": { "x": 3, "y": 6 },
       "text": { "x": 4, "y": 4 },
       "align": "start",
       "verticalAlign": "bottom"
@@ -36,6 +39,7 @@
       "rx": 2.5,
       "ry": 5,
       "rotation": 216,
+      "icon": { "x": -4.5, "y": 5.1 },
       "text": { "x": -4.7, "y": 2 },
       "align": "end",
       "verticalAlign": "bottom"
@@ -46,6 +50,7 @@
       "rx": 2.5,
       "ry": 5,
       "rotation": 288,
+      "icon": { "x": -6, "y": -2 },
       "text": { "x": -4, "y": -3.6 },
       "align": "end",
       "verticalAlign": "bottom"

@@ -46,18 +46,19 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
 
   const label = format ? format(data) : text;
   const isElement = isValidElement(label);
+  const showIcon = isElement && data.set.icon;
 
   // TODO: framer-motion doesn't seem to like the translates on the g
   // initial={pos} animate={pos}
   const pos = {
-    translateX: `${data.set.text.x}px`,
-    translateY: `${data.set.text.y}px`
+    x: showIcon ? data.set.icon.x : data.set.text.x,
+    y: showIcon ? data.set.icon.y : data.set.text.y
   };
 
   return (
     <Fragment>
       {isElement ? (
-        <g style={{ transform: `translate(${pos.translateX}, ${pos.translateY})` }}>
+        <g style={{ transform: `translate(${pos.x}px, ${pos.y}px)` }}>
           {label}
         </g>
       ) : (
@@ -67,12 +68,12 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
           textAnchor={data.set.align === 'middle' ? 'center' : data.set.align}
           alignmentBaseline={data.set.verticalAlign}
           initial={{
-            attrX: data.set.text.x,
-            attrY: data.set.text.y
+            attrX: pos.x,
+            attrY: pos.y
           } as any}
           animate={{
-            attrX: data.set.text.x,
-            attrY: data.set.text.y
+            attrX: pos.x,
+            attrY: pos.y
           } as any}
           transition={transition}
         >
