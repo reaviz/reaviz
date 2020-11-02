@@ -81,9 +81,9 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       animated
         ? { ...DEFAULT_TRANSITION }
         : {
-          type: false,
-          delay: 0
-        },
+            type: false,
+            delay: 0
+          },
     [animated]
   );
 

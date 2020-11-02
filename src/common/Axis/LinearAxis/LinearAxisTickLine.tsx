@@ -26,8 +26,8 @@ export class LinearAxisTickLine extends PureComponent<LinearAxisTickLineProps> {
       position === 'start'
         ? tickSize * -1
         : position === 'center'
-          ? tickSize * -0.5
-          : 0;
+        ? tickSize * -0.5
+        : 0;
     const end = start + tickSize;
 
     return {

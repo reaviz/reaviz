@@ -7,40 +7,36 @@ import { number, object, text, select } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 
 storiesOf('Charts/Pie Chart/Pie', module)
-  .add(
-    'Simple',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 350);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', categoryData);
+  .add('Simple', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', categoryData);
 
-      return (
-        <PieChart
-          width={width}
-          height={height}
-          data={data}
-          series={<PieArcSeries colorScheme={color} />}
-        />
-      );
-    })
-  .add(
-    'Explode',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 350);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', categoryData);
+    return (
+      <PieChart
+        width={width}
+        height={height}
+        data={data}
+        series={<PieArcSeries colorScheme={color} />}
+      />
+    );
+  })
+  .add('Explode', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', categoryData);
 
-      return (
-        <PieChart
-          width={height}
-          height={width}
-          data={data}
-          series={<PieArcSeries explode={true} colorScheme={color} />}
-        />
-      );
-    })
+    return (
+      <PieChart
+        width={height}
+        height={width}
+        data={data}
+        series={<PieArcSeries explode={true} colorScheme={color} />}
+      />
+    );
+  })
   .add('No Animation', () => (
     <PieChart
       width={350}
@@ -79,23 +75,21 @@ storiesOf('Charts/Pie Chart/Pie', module)
   ));
 
 storiesOf('Charts/Pie Chart/Donut', module)
-  .add(
-    'Simple',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 350);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', categoryData);
+  .add('Simple', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', categoryData);
 
-      return (
-        <PieChart
-          width={width}
-          height={height}
-          data={data}
-          series={<PieArcSeries doughnut={true} colorScheme={color} />}
-        />
-      );
-    })
+    return (
+      <PieChart
+        width={width}
+        height={height}
+        data={data}
+        series={<PieArcSeries doughnut={true} colorScheme={color} />}
+      />
+    );
+  })
   .add('Labels', () => (
     <PieChart
       width={350}
@@ -104,46 +98,40 @@ storiesOf('Charts/Pie Chart/Donut', module)
       series={<PieArcSeries doughnut={true} />}
     />
   ))
-  .add(
-    'Inner Label',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 350);
-      const words = text('Label', 'Attacks');
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', categoryData);
+  .add('Inner Label', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const words = text('Label', 'Attacks');
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', categoryData);
 
-      return (
-        <div
-          style={{
-            position: 'relative',
-            height: '250px',
-            width: '350px',
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'center'
-          }}
-        >
-          <div style={{ position: 'absolute', top: 0, left: 0 }}>
-            <PieChart
-              width={width}
-              height={height}
-              data={data}
-              series={
-                <PieArcSeries
-                  doughnut={true}
-                  label={null}
-                  colorScheme={color}
-                />
-              }
-            />
-          </div>
-          <h2 style={{ margin: '0 5px', padding: 0, color: 'white' }}>
-            {data.length} {words}
-          </h2>
+    return (
+      <div
+        style={{
+          position: 'relative',
+          height: '250px',
+          width: '350px',
+          alignItems: 'center',
+          display: 'flex',
+          justifyContent: 'center'
+        }}
+      >
+        <div style={{ position: 'absolute', top: 0, left: 0 }}>
+          <PieChart
+            width={width}
+            height={height}
+            data={data}
+            series={
+              <PieArcSeries doughnut={true} label={null} colorScheme={color} />
+            }
+          />
         </div>
-      );
-    });
+        <h2 style={{ margin: '0 5px', padding: 0, color: 'white' }}>
+          {data.length} {words}
+        </h2>
+      </div>
+    );
+  });
 
 const LiveUpdatingStory = () => {
   const [data, setData] = useState([...categoryData]);

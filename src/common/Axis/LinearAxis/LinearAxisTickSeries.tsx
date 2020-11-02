@@ -155,10 +155,10 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
       const text = ellipsize(fullText, 18);
       const size = label
         ? calculateDimensions(
-          text,
-          label.props.fontFamily,
-          label.props.fontSize.toString()
-        )
+            text,
+            label.props.fontFamily,
+            label.props.fontSize.toString()
+          )
         : {};
 
       return {
@@ -170,8 +170,8 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
           scaledTick === midpoint
             ? 'center'
             : scaledTick < midpoint
-              ? 'start'
-              : 'end'
+            ? 'start'
+            : 'end'
       };
     });
   }

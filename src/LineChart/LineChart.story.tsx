@@ -48,39 +48,37 @@ const prettyData = (() => {
 })();
 
 storiesOf('Charts/Line Chart/Single Series', module)
-  .add(
-    'Simple',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 350);
-      const lineStroke = number('Stroke Width', 4);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const interpolation = select(
-        'Interpolation',
-        {
-          linear: 'linear',
-          step: 'step',
-          smooth: 'smooth'
-        },
-        'linear'
-      );
-      const data = object('Data', singleDateData);
+  .add('Simple', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const lineStroke = number('Stroke Width', 4);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const interpolation = select(
+      'Interpolation',
+      {
+        linear: 'linear',
+        step: 'step',
+        smooth: 'smooth'
+      },
+      'linear'
+    );
+    const data = object('Data', singleDateData);
 
-      return (
-        <LineChart
-          width={width}
-          height={height}
-          data={data}
-          series={
-            <LineSeries
-              interpolation={interpolation}
-              colorScheme={color}
-              line={<Line strokeWidth={lineStroke} />}
-            />
-          }
-        />
-      );
-    })
+    return (
+      <LineChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <LineSeries
+            interpolation={interpolation}
+            colorScheme={color}
+            line={<Line strokeWidth={lineStroke} />}
+          />
+        }
+      />
+    );
+  })
   .add('No Animation', () => (
     <LineChart
       width={350}
@@ -107,35 +105,33 @@ storiesOf('Charts/Line Chart/Single Series', module)
       }
     />
   ))
-  .add(
-    'Large Dataset',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 400);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const interpolation = select(
-        'Interpolation',
-        {
-          linear: 'linear',
-          step: 'step',
-          smooth: 'smooth'
-        },
-        'linear'
-      );
-      const data = object('Data', largeDateData);
+  .add('Large Dataset', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 400);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const interpolation = select(
+      'Interpolation',
+      {
+        linear: 'linear',
+        step: 'step',
+        smooth: 'smooth'
+      },
+      'linear'
+    );
+    const data = object('Data', largeDateData);
 
-      return (
-        <LineChart
-          width={width}
-          height={height}
-          data={data}
-          series={
-            <LineSeries colorScheme={color} interpolation={interpolation} />
-          }
-          xAxis={<LinearXAxis type="time" />}
-        />
-      );
-    })
+    return (
+      <LineChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <LineSeries colorScheme={color} interpolation={interpolation} />
+        }
+        xAxis={<LinearXAxis type="time" />}
+      />
+    );
+  })
   .add('Dynamic Colors', () => (
     <LineChart
       width={350}
@@ -151,30 +147,28 @@ storiesOf('Charts/Line Chart/Single Series', module)
   .add('Live Updating', () => <LiveUpdatingStory />);
 
 storiesOf('Charts/Line Chart/Multi Series', module)
-  .add(
-    'Simple',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 550);
-      const lineStroke = number('Stroke Width', 4);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', multiDateData);
+  .add('Simple', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 550);
+    const lineStroke = number('Stroke Width', 4);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', multiDateData);
 
-      return (
-        <LineChart
-          width={width}
-          height={height}
-          series={
-            <LineSeries
-              type="grouped"
-              line={<Line strokeWidth={lineStroke} />}
-              colorScheme={color}
-            />
-          }
-          data={data}
-        />
-      );
-    })
+    return (
+      <LineChart
+        width={width}
+        height={height}
+        series={
+          <LineSeries
+            type="grouped"
+            line={<Line strokeWidth={lineStroke} />}
+            colorScheme={color}
+          />
+        }
+        data={data}
+      />
+    );
+  })
   .add('Large Data', () => (
     <LineChart
       width={400}
@@ -253,54 +247,50 @@ storiesOf('Charts/Line Chart/Multi Series', module)
       data={longMultiDateData}
     />
   ))
-  .add(
-    'Stacked',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 550);
-      const lineStroke = number('Stroke Width', 4);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', multiDateData);
+  .add('Stacked', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 550);
+    const lineStroke = number('Stroke Width', 4);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', multiDateData);
 
-      return (
-        <StackedAreaChart
-          width={width}
-          height={height}
-          series={
-            <StackedAreaSeries
-              colorScheme={color}
-              area={null}
-              line={<Line strokeWidth={lineStroke} />}
-            />
-          }
-          data={data}
-        />
-      );
-    })
-  .add(
-    'Stacked Normalized',
-    () => {
-      const height = number('Height', 250);
-      const width = number('Width', 550);
-      const lineStroke = number('Stroke Width', 4);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', multiDateData);
+    return (
+      <StackedAreaChart
+        width={width}
+        height={height}
+        series={
+          <StackedAreaSeries
+            colorScheme={color}
+            area={null}
+            line={<Line strokeWidth={lineStroke} />}
+          />
+        }
+        data={data}
+      />
+    );
+  })
+  .add('Stacked Normalized', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 550);
+    const lineStroke = number('Stroke Width', 4);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', multiDateData);
 
-      return (
-        <StackedNormalizedAreaChart
-          width={width}
-          height={height}
-          data={data}
-          series={
-            <StackedNormalizedAreaSeries
-              colorScheme={color}
-              area={null}
-              line={<Line strokeWidth={lineStroke} />}
-            />
-          }
-        />
-      );
-    });
+    return (
+      <StackedNormalizedAreaChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <StackedNormalizedAreaSeries
+            colorScheme={color}
+            area={null}
+            line={<Line strokeWidth={lineStroke} />}
+          />
+        }
+      />
+    );
+  });
 
 storiesOf('Charts/Line Chart/Gridlines', module)
   .add('All Axes', () => (

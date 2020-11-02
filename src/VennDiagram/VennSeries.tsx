@@ -110,7 +110,10 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
       // Get the state of the arc
       const isHovered = hovered === key || isSelected;
-      const isActive = isSelected || actives.includes(key) || (actives.length > 0 ? null : false);
+      const isActive =
+        isSelected ||
+        actives.includes(key) ||
+        (actives.length > 0 ? null : false);
 
       // Get the colors for the stroke
       const stroke =
@@ -158,22 +161,31 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         </Fragment>
       );
     },
-    [colorScheme, data, arc, animated, label, outerLabel, hovered, selections, actives, onActivate]
+    [
+      colorScheme,
+      data,
+      arc,
+      animated,
+      label,
+      outerLabel,
+      hovered,
+      selections,
+      actives,
+      onActivate
+    ]
   );
 
   const topArcs = useMemo(() => {
     const result = [];
 
     if (actives.length > 0) {
-      result.push(...actives.filter(s =>
-        s !== hovered
-      ));
+      result.push(...actives.filter((s) => s !== hovered));
     }
 
     if (selections?.length) {
-      result.push(...selections.filter(s =>
-        !actives.includes(s) && s !== hovered
-      ));
+      result.push(
+        ...selections.filter((s) => !actives.includes(s) && s !== hovered)
+      );
     }
 
     if (hovered) {
@@ -190,13 +202,14 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       transition={transition}
     >
       {data.map(renderArc)}
-      {topArcs.length > 0 && topArcs.map(a => (
-        <use
-          key={a}
-          xlinkHref={`#${id}-${a}-arc`}
-          style={{ pointerEvents: 'none' }}
-        />
-      ))}
+      {topArcs.length > 0 &&
+        topArcs.map((a) => (
+          <use
+            key={a}
+            xlinkHref={`#${id}-${a}-arc`}
+            style={{ pointerEvents: 'none' }}
+          />
+        ))}
       {data.map((d, index) => (
         <use
           key={index}

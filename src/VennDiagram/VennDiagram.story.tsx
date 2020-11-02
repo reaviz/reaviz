@@ -127,12 +127,7 @@ storiesOf('Charts/Venn Diagram', module)
       series={
         <VennSeries
           colorScheme={['#eee']}
-          label={
-            <VennLabel
-              labelType="value"
-              showAll={true}
-            />
-          }
+          label={<VennLabel labelType="value" showAll={true} />}
           outerLabel={
             <VennOuterLabel
               format={(data) => {
@@ -142,11 +137,17 @@ storiesOf('Charts/Venn Diagram', module)
 
                 // Calculate some offsets based on size of your element
                 const offsetX = data.set.align !== 'start' ? -width / 2 : 0;
-                const offsetY = data.set.verticalAlign !== 'top' ? -height / 2 : 0;
+                const offsetY =
+                  data.set.verticalAlign !== 'top' ? -height / 2 : 0;
 
                 // Pass a foreign object
                 return (
-                  <foreignObject height={height} width={width} x={offsetX} y={offsetY}>
+                  <foreignObject
+                    height={height}
+                    width={width}
+                    x={offsetX}
+                    y={offsetY}
+                  >
                     <svg height={height} width={width} viewBox="-7 -7 25 25">
                       <path
                         d={starPath}
@@ -167,10 +168,7 @@ storiesOf('Charts/Venn Diagram', module)
     />
   ))
   .add('Selections', () => {
-    const selections = object('Selections', [
-      'A|B',
-      'B'
-    ]);
+    const selections = object('Selections', ['A|B', 'B']);
     const data = object('Data', [
       { key: ['A'], data: 4 },
       { key: ['B'], data: 1 },
@@ -311,7 +309,15 @@ storiesOf('Charts/Venn Diagram', module)
       height={450}
       width={450}
       series={
-        <VennSeries arc={<VennArc strokeWidth={5} fill="transparent" stroke={schemes.cybertron[0]} />} />
+        <VennSeries
+          arc={
+            <VennArc
+              strokeWidth={5}
+              fill="transparent"
+              stroke={schemes.cybertron[0]}
+            />
+          }
+        />
       }
       data={[
         { key: ['A'], data: 12 },

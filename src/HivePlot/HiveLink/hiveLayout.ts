@@ -95,8 +95,8 @@ export function hiveLayout() {
       startRadius === endRadius
         ? r0
         : +(typeof endRadius === 'function'
-          ? endRadius.call(thiz, n, i)
-          : endRadius);
+            ? endRadius.call(thiz, n, i)
+            : endRadius);
     return { r0, r1, a };
   };
 

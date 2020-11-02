@@ -67,14 +67,18 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
           style={{ pointerEvents: 'none', fontFamily, fontSize }}
           textAnchor={data.set.align === 'middle' ? 'center' : data.set.align}
           alignmentBaseline={data.set.verticalAlign}
-          initial={{
-            attrX: pos.x,
-            attrY: pos.y
-          } as any}
-          animate={{
-            attrX: pos.x,
-            attrY: pos.y
-          } as any}
+          initial={
+            {
+              attrX: pos.x,
+              attrY: pos.y
+            } as any
+          }
+          animate={
+            {
+              attrX: pos.x,
+              attrY: pos.y
+            } as any
+          }
           transition={transition}
         >
           {label}

@@ -100,7 +100,7 @@ function buildData(data: any[]) {
 
   return {
     uniqueCount: uniqueSets.length,
-    data: result.map(r => lookup(r, keyedData))
+    data: result.map((r) => lookup(r, keyedData))
   };
 }
 
@@ -144,21 +144,23 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
         x: mx(c.text.x),
         y: my(c.text.y)
       },
-      ...(c.icon ? {
-        icon: {
-          x: mx(c.icon.x),
-          y: my(c.icon.y)
-        }} : {}
-      )
+      ...(c.icon
+        ? {
+            icon: {
+              x: mx(c.icon.x),
+              y: my(c.icon.y)
+            }
+          }
+        : {})
     },
     ...(isEllipse(c)
       ? {
-        rx: c.rx * f,
-        ry: c.ry * f
-      }
+          rx: c.rx * f,
+          ry: c.ry * f
+        }
       : {
-        r: c.r * f
-      })
+          r: c.r * f
+        })
   }));
 
   const intersections = shape.intersections.map((c, i) => ({

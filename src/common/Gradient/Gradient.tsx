@@ -21,17 +21,17 @@ export const Gradient: FC<Partial<GradientProps>> = ({
   const pos =
     direction === 'vertical'
       ? {
-        x1: '10%',
-        x2: '10%',
-        y1: '100%',
-        y2: '0%'
-      }
+          x1: '10%',
+          x2: '10%',
+          y1: '100%',
+          y2: '0%'
+        }
       : {
-        y1: '0%',
-        y2: '0%',
-        x1: '0%',
-        x2: '100%'
-      };
+          y1: '0%',
+          y2: '0%',
+          x1: '0%',
+          x2: '100%'
+        };
 
   return (
     <linearGradient spreadMethod="pad" id={id} {...pos}>

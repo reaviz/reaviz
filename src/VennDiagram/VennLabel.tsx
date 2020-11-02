@@ -99,7 +99,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
         {
           attrX: data.text.x,
           attrY: data.text.y,
-          opacity: active === null ? .3 : 1
+          opacity: active === null ? 0.3 : 1
         } as any
       }
       transition={transition}

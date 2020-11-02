@@ -75,9 +75,9 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     const adjustedPadding =
       typeof padding === 'number'
         ? {
-          fromAxis: padding as number,
-          alongAxis: padding as number
-        }
+            fromAxis: padding as number,
+            alongAxis: padding as number
+          }
         : (padding as { fromAxis: number; alongAxis: number });
 
     const spacing = this.getTickLineSpacing();
@@ -85,8 +85,8 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
       position === 'start'
         ? spacing[0] - adjustedPadding.fromAxis
         : position === 'end'
-          ? spacing[1] + adjustedPadding.fromAxis
-          : 0;
+        ? spacing[1] + adjustedPadding.fromAxis
+        : 0;
 
     const align = this.getAlign();
     let offset2 = rotation === true ? -5 : 0;
@@ -94,8 +94,8 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
       align === 'center'
         ? 0
         : align === 'start'
-          ? -adjustedPadding.alongAxis
-          : adjustedPadding.alongAxis;
+        ? -adjustedPadding.alongAxis
+        : adjustedPadding.alongAxis;
 
     const horz = orientation === 'horizontal';
     return {
@@ -128,8 +128,8 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
           align === 'center'
             ? 'middle'
             : align === 'start'
-              ? 'baseline'
-              : 'hanging';
+            ? 'baseline'
+            : 'hanging';
         if (position === 'start') {
           textAnchor = 'end';
         } else if (position === 'end') {

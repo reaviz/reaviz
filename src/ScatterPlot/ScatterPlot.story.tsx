@@ -27,26 +27,24 @@ import { schemes } from '../common/color';
 import { getYScale, getXScale } from '../common/scales';
 
 storiesOf('Charts/Scatter Plot/Linear', module)
-  .add(
-    'Simple',
-    () => {
-      const height = number('Height', 400);
-      const width = number('Width', 750);
-      const size = number('Size', 4);
-      const fill = color('Color', schemes.cybertron[0]);
-      const data = object('Data', medSignalChartData);
+  .add('Simple', () => {
+    const height = number('Height', 400);
+    const width = number('Width', 750);
+    const size = number('Size', 4);
+    const fill = color('Color', schemes.cybertron[0]);
+    const data = object('Data', medSignalChartData);
 
-      return (
-        <ScatterPlot
-          height={height}
-          width={width}
-          data={data}
-          series={
-            <ScatterSeries point={<ScatterPoint color={fill} size={size} />} />
-          }
-        />
-      );
-    })
+    return (
+      <ScatterPlot
+        height={height}
+        width={width}
+        data={data}
+        series={
+          <ScatterSeries point={<ScatterPoint color={fill} size={size} />} />
+        }
+      />
+    );
+  })
   .add('Categorical Axis', () => (
     <ScatterPlot
       height={400}

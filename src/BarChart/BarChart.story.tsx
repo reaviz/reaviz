@@ -48,34 +48,32 @@ import { getXScale, getYScale } from '../common/scales';
 import { HistogramBarChart } from './HistogramBarChart';
 
 storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
-  .add(
-    'Simple',
-    () => {
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const hasGradient = boolean('Gradient', true);
-      const hasGuideBar = boolean('Guide Bar', true);
-      const rounded = boolean('Rounded', true);
-      const padding = number('Padding', 0.1);
-      const height = number('Height', 350);
-      const width = number('Width', 400);
-      const gradient = hasGradient ? Bar.defaultProps.gradient : null;
-      const guide = hasGuideBar ? <GuideBar /> : null;
+  .add('Simple', () => {
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const hasGradient = boolean('Gradient', true);
+    const hasGuideBar = boolean('Guide Bar', true);
+    const rounded = boolean('Rounded', true);
+    const padding = number('Padding', 0.1);
+    const height = number('Height', 350);
+    const width = number('Width', 400);
+    const gradient = hasGradient ? Bar.defaultProps.gradient : null;
+    const guide = hasGuideBar ? <GuideBar /> : null;
 
-      return (
-        <BarChart
-          width={width}
-          height={height}
-          data={categoryData}
-          series={
-            <BarSeries
-              colorScheme={color}
-              padding={padding}
-              bar={<Bar rounded={rounded} gradient={gradient} guide={guide} />}
-            />
-          }
-        />
-      );
-    })
+    return (
+      <BarChart
+        width={width}
+        height={height}
+        data={categoryData}
+        series={
+          <BarSeries
+            colorScheme={color}
+            padding={padding}
+            bar={<Bar rounded={rounded} gradient={gradient} guide={guide} />}
+          />
+        }
+      />
+    );
+  })
   .add('Custom Style', () => (
     <BarChart
       width={350}
@@ -101,23 +99,21 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
       }
     />
   ))
-  .add(
-    'Large Dataset',
-    () => {
-      const height = number('Height', 350);
-      const width = number('Width', 350);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', largeCategoryData);
+  .add('Large Dataset', () => {
+    const height = number('Height', 350);
+    const width = number('Width', 350);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', largeCategoryData);
 
-      return (
-        <BarChart
-          width={width}
-          height={height}
-          data={data}
-          series={<BarSeries colorScheme={color} />}
-        />
-      );
-    })
+    return (
+      <BarChart
+        width={width}
+        height={height}
+        data={data}
+        series={<BarSeries colorScheme={color} />}
+      />
+    );
+  })
   .add('Mask', () => (
     <BarChart
       width={350}
@@ -138,47 +134,43 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
       }
     />
   ))
-  .add(
-    'Labels',
-    () => {
-      const position = select(
-        'Position',
-        {
-          top: 'top',
-          center: 'center',
-          bottom: 'bottom'
-        },
-        'top'
-      );
-      const fill = color('Color', '');
+  .add('Labels', () => {
+    const position = select(
+      'Position',
+      {
+        top: 'top',
+        center: 'center',
+        bottom: 'bottom'
+      },
+      'top'
+    );
+    const fill = color('Color', '');
 
-      return (
-        <BarChart
-          width={350}
-          height={250}
-          data={categoryData}
-          series={
-            <BarSeries
-              bar={<Bar label={<BarLabel fill={fill} position={position} />} />}
-            />
-          }
-        />
-      );
-    })
-  .add(
-    'Custom Bar Width',
-    () => {
-      const barWidth = number('Bar Width', 5);
+    return (
+      <BarChart
+        width={350}
+        height={250}
+        data={categoryData}
+        series={
+          <BarSeries
+            bar={<Bar label={<BarLabel fill={fill} position={position} />} />}
+          />
+        }
+      />
+    );
+  })
+  .add('Custom Bar Width', () => {
+    const barWidth = number('Bar Width', 5);
 
-      return (
-        <BarChart
-          width={350}
-          height={250}
-          series={<BarSeries bar={<Bar width={barWidth} />} />}
-          data={categoryData}
-        />
-      );
-    })
+    return (
+      <BarChart
+        width={350}
+        height={250}
+        series={<BarSeries bar={<Bar width={barWidth} />} />}
+        data={categoryData}
+      />
+    );
+  })
   .add('Live Updating', () => <LiveDataDemo />)
   .add('Autosize', () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
@@ -209,171 +201,159 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
       series={<BarSeries animated={false} />}
     />
   ))
-  .add(
-    'Waterfall',
-    () => {
-      const height = number('Height', 350);
-      const width = number('Width', 350);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', categoryData);
+  .add('Waterfall', () => {
+    const height = number('Height', 350);
+    const width = number('Width', 350);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', categoryData);
 
-      return (
-        <BarChart
-          width={width}
-          height={height}
-          data={data}
-          series={<BarSeries type="waterfall" colorScheme={color} />}
-        />
-      );
-    })
-  .add(
-    'Non-Zero',
-    () => {
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', nonZeroCategoryData);
-      return (
-        <BarChart
-          width={350}
-          height={250}
-          data={data}
-          series={<BarSeries colorScheme={color} />}
-        />
-      );
-    });
+    return (
+      <BarChart
+        width={width}
+        height={height}
+        data={data}
+        series={<BarSeries type="waterfall" colorScheme={color} />}
+      />
+    );
+  })
+  .add('Non-Zero', () => {
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', nonZeroCategoryData);
+    return (
+      <BarChart
+        width={350}
+        height={250}
+        data={data}
+        series={<BarSeries colorScheme={color} />}
+      />
+    );
+  });
 
 storiesOf('Charts/Bar Chart/Vertical/Histogram', module)
-  .add(
-    'Dates',
-    () => {
-      const binSize = number('Bin Size', 60 * 60 * 24 * 1000);
-      const data = object('Data', medDateData);
+  .add('Dates', () => {
+    const binSize = number('Bin Size', 60 * 60 * 24 * 1000);
+    const data = object('Data', medDateData);
 
-      return (
-        <HistogramBarChart
-          width={350}
-          height={250}
-          xAxis={
-            <LinearXAxis
-              type="time"
-              tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
-            />
-          }
-          series={<HistogramBarSeries binSize={binSize} />}
-          data={data}
-        />
-      );
-    })
-  .add(
-    'Numbers',
-    () => {
-      const binSize = number('Bin Size', 1);
-      const data = object('Data', histogramNumberData);
+    return (
+      <HistogramBarChart
+        width={350}
+        height={250}
+        xAxis={
+          <LinearXAxis
+            type="time"
+            tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
+          />
+        }
+        series={<HistogramBarSeries binSize={binSize} />}
+        data={data}
+      />
+    );
+  })
+  .add('Numbers', () => {
+    const binSize = number('Bin Size', 1);
+    const data = object('Data', histogramNumberData);
 
-      return (
-        <HistogramBarChart
-          width={350}
-          height={250}
-          xAxis={<LinearXAxis type="value" />}
-          series={<HistogramBarSeries binSize={binSize} />}
-          data={data}
-        />
-      );
-    });
+    return (
+      <HistogramBarChart
+        width={350}
+        height={250}
+        xAxis={<LinearXAxis type="value" />}
+        series={<HistogramBarSeries binSize={binSize} />}
+        data={data}
+      />
+    );
+  });
 
 storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
-  .add(
-    'Simple',
-    () => {
-      const height = number('Height', 350);
-      const width = number('Width', 350);
-      const rangeWidth = number('Rangeline', 3);
-      const hasGradient = boolean('Gradient', true);
-      const hasRangelines = boolean('Rangelines', false);
-      const rounded = boolean('Rounded', true);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const hasGuideBar = boolean('Guide Bar', false);
-      const guide = hasGuideBar ? <GuideBar /> : null;
+  .add('Simple', () => {
+    const height = number('Height', 350);
+    const width = number('Width', 350);
+    const rangeWidth = number('Rangeline', 3);
+    const hasGradient = boolean('Gradient', true);
+    const hasRangelines = boolean('Rangelines', false);
+    const rounded = boolean('Rounded', true);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const hasGuideBar = boolean('Guide Bar', false);
+    const guide = hasGuideBar ? <GuideBar /> : null;
 
-      const gradient = hasGradient ? <Gradient /> : null;
-      const rangelines = hasRangelines ? (
-        <RangeLines position="top" strokeWidth={rangeWidth} />
-      ) : null;
+    const gradient = hasGradient ? <Gradient /> : null;
+    const rangelines = hasRangelines ? (
+      <RangeLines position="top" strokeWidth={rangeWidth} />
+    ) : null;
 
-      return (
-        <BarChart
-          width={width}
-          height={height}
-          data={multiCategory}
-          series={
-            <BarSeries
-              type="grouped"
-              bar={
-                <Bar
-                  rounded={rounded}
-                  gradient={gradient}
-                  rangeLines={rangelines}
-                  guide={guide}
-                />
-              }
-              colorScheme={color}
-              padding={0.8}
-            />
-          }
-        />
-      );
-    })
-  .add(
-    'Stacked',
-    () => {
-      const rx = number('rx', 0);
-      const ry = number('ry', 0);
-      const height = number('Height', 350);
-      const width = number('Width', 350);
-      const rangeWidth = number('Rangeline', 3);
-      const hasGradient = boolean('Gradient', true);
-      const hasRangelines = boolean('Rangelines', true);
-      const rounded = boolean('Rounded', false);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const hasGuideBar = boolean('Guide Bar', false);
-      const data = object('Data', multiCategory);
+    return (
+      <BarChart
+        width={width}
+        height={height}
+        data={multiCategory}
+        series={
+          <BarSeries
+            type="grouped"
+            bar={
+              <Bar
+                rounded={rounded}
+                gradient={gradient}
+                rangeLines={rangelines}
+                guide={guide}
+              />
+            }
+            colorScheme={color}
+            padding={0.8}
+          />
+        }
+      />
+    );
+  })
+  .add('Stacked', () => {
+    const rx = number('rx', 0);
+    const ry = number('ry', 0);
+    const height = number('Height', 350);
+    const width = number('Width', 350);
+    const rangeWidth = number('Rangeline', 3);
+    const hasGradient = boolean('Gradient', true);
+    const hasRangelines = boolean('Rangelines', true);
+    const rounded = boolean('Rounded', false);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const hasGuideBar = boolean('Guide Bar', false);
+    const data = object('Data', multiCategory);
 
-      const guide = hasGuideBar ? <GuideBar /> : null;
-      const gradient = hasGradient ? (
-        <Gradient
-          stops={[
-            <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
-          ]}
-        />
-      ) : null;
+    const guide = hasGuideBar ? <GuideBar /> : null;
+    const gradient = hasGradient ? (
+      <Gradient
+        stops={[
+          <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
+          <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+        ]}
+      />
+    ) : null;
 
-      const rangelines = hasRangelines ? (
-        <RangeLines position="top" strokeWidth={rangeWidth} />
-      ) : null;
+    const rangelines = hasRangelines ? (
+      <RangeLines position="top" strokeWidth={rangeWidth} />
+    ) : null;
 
-      return (
-        <StackedBarChart
-          width={width}
-          height={height}
-          data={data}
-          series={
-            <StackedBarSeries
-              bar={
-                <Bar
-                  rx={rx}
-                  ry={ry}
-                  rounded={rounded}
-                  gradient={gradient}
-                  rangeLines={rangelines}
-                  guide={guide}
-                />
-              }
-              colorScheme={color}
-            />
-          }
-        />
-      );
-    })
+    return (
+      <StackedBarChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <StackedBarSeries
+            bar={
+              <Bar
+                rx={rx}
+                ry={ry}
+                rounded={rounded}
+                gradient={gradient}
+                rangeLines={rangelines}
+                guide={guide}
+              />
+            }
+            colorScheme={color}
+          />
+        }
+      />
+    );
+  })
   .add('Stacked Custom Style', () => (
     <StackedBarChart
       width={350}
@@ -419,247 +399,239 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
       }
     />
   ))
-  .add(
-    'Stacked Diverging',
-    () => {
-      const data = select(
-        'Example Data',
-        {
-          'Opened/Closed': binnedDateData,
-          'Opened Only': binnedDatePositiveOnly,
-          'Closed Only': binnedDateNegativeOnly
-        },
-        binnedDateData as any
-      );
+  .add('Stacked Diverging', () => {
+    const data = select(
+      'Example Data',
+      {
+        'Opened/Closed': binnedDateData,
+        'Opened Only': binnedDatePositiveOnly,
+        'Closed Only': binnedDateNegativeOnly
+      },
+      binnedDateData as any
+    );
 
-      const rx = number('rx', 0);
-      const ry = number('ry', 0);
-      const height = number('Height', 250);
-      const width = number('Width', 400);
-      const rangeWidth = number('Rangeline', 3);
-      const hasGradient = boolean('Gradient', true);
-      const hasRangelines = boolean('Rangelines', true);
-      const rounded = boolean('Rounded', false);
-      const hasGuideBar = boolean('Guide Bar', false);
-      const guide = hasGuideBar ? <GuideBar /> : null;
+    const rx = number('rx', 0);
+    const ry = number('ry', 0);
+    const height = number('Height', 250);
+    const width = number('Width', 400);
+    const rangeWidth = number('Rangeline', 3);
+    const hasGradient = boolean('Gradient', true);
+    const hasRangelines = boolean('Rangelines', true);
+    const rounded = boolean('Rounded', false);
+    const hasGuideBar = boolean('Guide Bar', false);
+    const guide = hasGuideBar ? <GuideBar /> : null;
 
-      const gradientBottom = hasGradient ? (
-        <Gradient
-          stops={[
-            <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
-          ]}
-        />
-      ) : null;
+    const gradientBottom = hasGradient ? (
+      <Gradient
+        stops={[
+          <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
+          <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+        ]}
+      />
+    ) : null;
 
-      const gradientTop = hasGradient ? (
-        <Gradient
-          stops={[
-            <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-            <GradientStop offset="90%" stopOpacity={0.1} key="start" />
-          ]}
-        />
-      ) : null;
+    const gradientTop = hasGradient ? (
+      <Gradient
+        stops={[
+          <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
+          <GradientStop offset="90%" stopOpacity={0.1} key="start" />
+        ]}
+      />
+    ) : null;
 
-      const rangelines = hasRangelines ? (
-        <RangeLines position="top" strokeWidth={rangeWidth} />
-      ) : null;
+    const rangelines = hasRangelines ? (
+      <RangeLines position="top" strokeWidth={rangeWidth} />
+    ) : null;
 
-      return (
-        <StackedBarChart
-          style={{ filter: 'drop-shadow(0 0 10px 2px white)' }}
-          width={width}
-          height={height}
-          margins={0}
-          data={data}
-          gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
-          series={
-            <StackedBarSeries
-              bar={[
-                <Bar
-                  rx={rx}
-                  ry={ry}
-                  guide={guide}
-                  rounded={rounded}
-                  gradient={gradientTop}
-                  rangeLines={rangelines}
-                />,
-                <Bar
-                  rx={rx}
-                  ry={ry}
-                  guide={guide}
-                  rounded={rounded}
-                  gradient={gradientBottom}
-                  rangeLines={rangelines}
-                />
-              ]}
-              type="stackedDiverging"
-              colorScheme={chroma
-                .scale(['ACB7C9', '418AD7'])
-                .colors(data[0].data.length)}
-            />
-          }
-          yAxis={
-            <LinearYAxis
-              roundDomains={true}
-              tickSeries={
-                <LinearYAxisTickSeries
-                  line={null}
-                  label={<LinearYAxisTickLabel padding={5} />}
-                />
-              }
-            />
-          }
-          xAxis={
-            <LinearXAxis
-              type="category"
-              position="center"
-              tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-            />
-          }
-        />
-      );
-    })
-  .add(
-    'Stacked Normalized',
-    () => {
-      const rx = number('rx', 0);
-      const ry = number('ry', 0);
-      const height = number('Height', 350);
-      const width = number('Width', 350);
-      const rangeWidth = number('Rangeline', 3);
-      const hasGradient = boolean('Gradient', true);
-      const hasRangelines = boolean('Rangelines', true);
-      const rounded = boolean('Rounded', false);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', multiCategory);
+    return (
+      <StackedBarChart
+        style={{ filter: 'drop-shadow(0 0 10px 2px white)' }}
+        width={width}
+        height={height}
+        margins={0}
+        data={data}
+        gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
+        series={
+          <StackedBarSeries
+            bar={[
+              <Bar
+                rx={rx}
+                ry={ry}
+                guide={guide}
+                rounded={rounded}
+                gradient={gradientTop}
+                rangeLines={rangelines}
+              />,
+              <Bar
+                rx={rx}
+                ry={ry}
+                guide={guide}
+                rounded={rounded}
+                gradient={gradientBottom}
+                rangeLines={rangelines}
+              />
+            ]}
+            type="stackedDiverging"
+            colorScheme={chroma
+              .scale(['ACB7C9', '418AD7'])
+              .colors(data[0].data.length)}
+          />
+        }
+        yAxis={
+          <LinearYAxis
+            roundDomains={true}
+            tickSeries={
+              <LinearYAxisTickSeries
+                line={null}
+                label={<LinearYAxisTickLabel padding={5} />}
+              />
+            }
+          />
+        }
+        xAxis={
+          <LinearXAxis
+            type="category"
+            position="center"
+            tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
+          />
+        }
+      />
+    );
+  })
+  .add('Stacked Normalized', () => {
+    const rx = number('rx', 0);
+    const ry = number('ry', 0);
+    const height = number('Height', 350);
+    const width = number('Width', 350);
+    const rangeWidth = number('Rangeline', 3);
+    const hasGradient = boolean('Gradient', true);
+    const hasRangelines = boolean('Rangelines', true);
+    const rounded = boolean('Rounded', false);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', multiCategory);
 
-      const gradient = hasGradient ? (
-        <Gradient
-          stops={[
-            <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
-          ]}
-        />
-      ) : null;
+    const gradient = hasGradient ? (
+      <Gradient
+        stops={[
+          <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
+          <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+        ]}
+      />
+    ) : null;
 
-      const rangelines = hasRangelines ? (
-        <RangeLines position="top" strokeWidth={rangeWidth} />
-      ) : null;
+    const rangelines = hasRangelines ? (
+      <RangeLines position="top" strokeWidth={rangeWidth} />
+    ) : null;
 
-      return (
-        <StackedNormalizedBarChart
-          width={width}
-          height={height}
-          data={data}
-          series={
-            <StackedNormalizedBarSeries
-              bar={
-                <Bar
-                  key="stacked-normalized-bar"
-                  rx={rx}
-                  ry={ry}
-                  rounded={rounded}
-                  gradient={gradient}
-                  rangeLines={rangelines}
-                />
-              }
-              colorScheme={color}
-            />
-          }
-        />
-      );
-    })
-  .add(
-    'Marimekko',
-    () => {
-      const rx = number('rx', 0);
-      const ry = number('ry', 0);
-      const height = number('Height', 350);
-      const width = number('Width', 350);
-      const rangeWidth = number('Rangeline', 3);
-      const hasGradient = boolean('Gradient', true);
-      const hasRangelines = boolean('Rangelines', true);
-      const rounded = boolean('Rounded', false);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const data = object('Data', multiCategory);
+    return (
+      <StackedNormalizedBarChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <StackedNormalizedBarSeries
+            bar={
+              <Bar
+                key="stacked-normalized-bar"
+                rx={rx}
+                ry={ry}
+                rounded={rounded}
+                gradient={gradient}
+                rangeLines={rangelines}
+              />
+            }
+            colorScheme={color}
+          />
+        }
+      />
+    );
+  })
+  .add('Marimekko', () => {
+    const rx = number('rx', 0);
+    const ry = number('ry', 0);
+    const height = number('Height', 350);
+    const width = number('Width', 350);
+    const rangeWidth = number('Rangeline', 3);
+    const hasGradient = boolean('Gradient', true);
+    const hasRangelines = boolean('Rangelines', true);
+    const rounded = boolean('Rounded', false);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', multiCategory);
 
-      const gradient = hasGradient ? (
-        <Gradient
-          stops={[
-            <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
-          ]}
-        />
-      ) : null;
+    const gradient = hasGradient ? (
+      <Gradient
+        stops={[
+          <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
+          <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+        ]}
+      />
+    ) : null;
 
-      const rangelines = hasRangelines ? (
-        <RangeLines position="top" strokeWidth={rangeWidth} />
-      ) : null;
+    const rangelines = hasRangelines ? (
+      <RangeLines position="top" strokeWidth={rangeWidth} />
+    ) : null;
 
-      return (
-        <MarimekkoChart
-          width={width}
-          height={height}
-          data={data}
-          series={
-            <MarimekkoBarSeries
-              bar={
-                <Bar
-                  key="marimekko-bar"
-                  rx={rx}
-                  ry={ry}
-                  rounded={rounded}
-                  padding={10}
-                  gradient={gradient}
-                  rangeLines={rangelines}
-                />
-              }
-              colorScheme={color}
-            />
-          }
-        />
-      );
-    });
+    return (
+      <MarimekkoChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <MarimekkoBarSeries
+            bar={
+              <Bar
+                key="marimekko-bar"
+                rx={rx}
+                ry={ry}
+                rounded={rounded}
+                padding={10}
+                gradient={gradient}
+                rangeLines={rangelines}
+              />
+            }
+            colorScheme={color}
+          />
+        }
+      />
+    );
+  });
 
 storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
-  .add(
-    'Simple',
-    () => {
-      const hasGradient = boolean('Gradient', true);
-      const rounded = boolean('Rounded', true);
-      const padding = number('Padding', 0.1);
-      const height = number('Height', 350);
-      const width = number('Width', 500);
-      const color = select('Color Scheme', schemes, 'cybertron');
-      const hasGuideBar = boolean('Guide Bar', false);
-      const guide = hasGuideBar ? <GuideBar /> : null;
-      const data = object('Data', categoryData);
-      const gradient = hasGradient ? Bar.defaultProps.gradient : null;
+  .add('Simple', () => {
+    const hasGradient = boolean('Gradient', true);
+    const rounded = boolean('Rounded', true);
+    const padding = number('Padding', 0.1);
+    const height = number('Height', 350);
+    const width = number('Width', 500);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const hasGuideBar = boolean('Guide Bar', false);
+    const guide = hasGuideBar ? <GuideBar /> : null;
+    const data = object('Data', categoryData);
+    const gradient = hasGradient ? Bar.defaultProps.gradient : null;
 
-      return (
-        <BarChart
-          width={width}
-          height={height}
-          data={data}
-          xAxis={<LinearXAxis type="value" />}
-          yAxis={
-            <LinearYAxis
-              type="category"
-              tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-            />
-          }
-          series={
-            <BarSeries
-              colorScheme={color}
-              layout="horizontal"
-              padding={padding}
-              bar={<Bar rounded={rounded} gradient={gradient} guide={guide} />}
-            />
-          }
-        />
-      );
-    })
+    return (
+      <BarChart
+        width={width}
+        height={height}
+        data={data}
+        xAxis={<LinearXAxis type="value" />}
+        yAxis={
+          <LinearYAxis
+            type="category"
+            tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+          />
+        }
+        series={
+          <BarSeries
+            colorScheme={color}
+            layout="horizontal"
+            padding={padding}
+            bar={<Bar rounded={rounded} gradient={gradient} guide={guide} />}
+          />
+        }
+      />
+    );
+  })
   .add('Large Dataset', () => (
     <BarChart
       height={350}
@@ -682,41 +654,39 @@ storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
       }
     />
   ))
-  .add(
-    'Labels',
-    () => {
-      const position = select(
-        'Position',
-        {
-          top: 'top',
-          center: 'center',
-          bottom: 'bottom'
-        },
-        'top'
-      );
-      const fill = color('Color', '');
+  .add('Labels', () => {
+    const position = select(
+      'Position',
+      {
+        top: 'top',
+        center: 'center',
+        bottom: 'bottom'
+      },
+      'top'
+    );
+    const fill = color('Color', '');
 
-      return (
-        <BarChart
-          width={350}
-          height={250}
-          data={categoryData}
-          xAxis={<LinearXAxis type="value" />}
-          yAxis={
-            <LinearYAxis
-              type="category"
-              tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-            />
-          }
-          series={
-            <BarSeries
-              layout="horizontal"
-              bar={<Bar label={<BarLabel fill={fill} position={position} />} />}
-            />
-          }
-        />
-      );
-    })
+    return (
+      <BarChart
+        width={350}
+        height={250}
+        data={categoryData}
+        xAxis={<LinearXAxis type="value" />}
+        yAxis={
+          <LinearYAxis
+            type="category"
+            tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+          />
+        }
+        series={
+          <BarSeries
+            layout="horizontal"
+            bar={<Bar label={<BarLabel fill={fill} position={position} />} />}
+          />
+        }
+      />
+    );
+  })
   .add('Autosize', () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
       <BarChart
@@ -834,56 +804,54 @@ storiesOf('Charts/Bar Chart/Horizontal/Multi Series', module)
       }
     />
   ))
-  .add(
-    'Stacked Diverging',
-    () => {
-      const data = select(
-        'data',
-        {
-          'Opened/Closed': binnedDateData,
-          'Opened Only': binnedDatePositiveOnly,
-          'Closed Only': binnedDateNegativeOnly
-        },
-        binnedDateData as any
-      );
+  .add('Stacked Diverging', () => {
+    const data = select(
+      'data',
+      {
+        'Opened/Closed': binnedDateData,
+        'Opened Only': binnedDatePositiveOnly,
+        'Closed Only': binnedDateNegativeOnly
+      },
+      binnedDateData as any
+    );
 
-      return (
-        <StackedBarChart
-          width={400}
-          height={250}
-          data={data}
-          gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
-          series={
-            <StackedBarSeries
-              layout="horizontal"
-              type="stackedDiverging"
-              colorScheme={chroma
-                .scale(['ACB7C9', '418AD7'])
-                .colors(data[0].data.length)}
-            />
-          }
-          yAxis={
-            <LinearYAxis
-              type="category"
-              position="center"
-              tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-            />
-          }
-          xAxis={
-            <LinearXAxis
-              roundDomains={true}
-              type="value"
-              tickSeries={
-                <LinearXAxisTickSeries
-                  line={null}
-                  label={<LinearXAxisTickLabel padding={5} />}
-                />
-              }
-            />
-          }
-        />
-      );
-    })
+    return (
+      <StackedBarChart
+        width={400}
+        height={250}
+        data={data}
+        gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
+        series={
+          <StackedBarSeries
+            layout="horizontal"
+            type="stackedDiverging"
+            colorScheme={chroma
+              .scale(['ACB7C9', '418AD7'])
+              .colors(data[0].data.length)}
+          />
+        }
+        yAxis={
+          <LinearYAxis
+            type="category"
+            position="center"
+            tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
+          />
+        }
+        xAxis={
+          <LinearXAxis
+            roundDomains={true}
+            type="value"
+            tickSeries={
+              <LinearXAxisTickSeries
+                line={null}
+                label={<LinearXAxisTickLabel padding={5} />}
+              />
+            }
+          />
+        }
+      />
+    );
+  })
   .add('Stacked Normalized', () => (
     <StackedNormalizedBarChart
       width={500}
