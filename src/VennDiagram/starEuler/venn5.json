@@ -28,7 +28,7 @@
       "rx": 2.5,
       "ry": 5,
       "rotation": 144,
-      "icon": { "x": 3, "y": 6 },
+      "icon": { "x": 3.2, "y": 6 },
       "text": { "x": 4, "y": 4 },
       "align": "start",
       "verticalAlign": "bottom"
@@ -39,7 +39,7 @@
       "rx": 2.5,
       "ry": 5,
       "rotation": 216,
-      "icon": { "x": -4.5, "y": 5.1 },
+      "icon": { "x": -4.4, "y": 5.2 },
       "text": { "x": -4.7, "y": 2 },
       "align": "end",
       "verticalAlign": "bottom"
