@@ -86,7 +86,7 @@
     "react-cool-dimensions": "^1.1.8",
     "react-countup": "^4.3.3",
     "react-fast-compare": "^3.2.0",
-    "realayers": "^2.2.0",
+    "realayers": "^2.2.1",
     "transformation-matrix": "^2.5.0"
   },
   "storybook-deployer": {
