@@ -1,4 +1,11 @@
-# 9.3.10/9.3.11
+# 9.3.12 - 11/2/20
+- [Fix] Fix selections in venn not working correctly
+- [Fix] Invalid keys being passed to arcs
+
+# 9.3.11 - 11/2/20
+- [Fix] Improve label icon positions in arc
+
+# 9.3.10 - 11/2/20
 - [Feature] Improve venn labels on star euler
 - [Fix] Fix venn not matching w/ labels w/ spaces
 - [Chore] Upgrade realayers
