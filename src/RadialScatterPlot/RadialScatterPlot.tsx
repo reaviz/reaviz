@@ -15,7 +15,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import { RadialAxisProps, RadialAxis } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
 import memoize from 'memoize-one';

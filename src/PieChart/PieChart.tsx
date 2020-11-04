@@ -8,7 +8,7 @@ import { ChartDataShape } from '../common/data';
 import classNames from 'classnames';
 import { pie } from 'd3-shape';
 import { PieArcSeries, PieArcSeriesProps } from './PieArcSeries';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import memoize from 'memoize-one';
 
 interface PieChartProps extends ChartProps {

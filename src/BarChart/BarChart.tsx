@@ -37,7 +37,7 @@ import {
   ChartProps
 } from '../common/containers/ChartContainer';
 import bind from 'memoize-bind';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 
 export interface BarChartProps extends ChartProps {
   /**

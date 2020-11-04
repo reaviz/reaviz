@@ -29,7 +29,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import memoize from 'memoize-one';
 
 interface ScatterPlotProps extends ChartProps {

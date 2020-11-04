@@ -1,6 +1,6 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import { RadialAxisTick, RadialAxisTickProps } from './RadialAxisTick';
-import { CloneElement } from '../../../utils/children';
+import { CloneElement } from 'rdk';
 import { getTicks } from '../../../utils/ticks';
 import { TimeInterval } from 'd3-time';
 

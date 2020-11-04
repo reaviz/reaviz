@@ -7,7 +7,7 @@ import {
   Direction
 } from '../../common/data';
 import { getColor, ColorSchemeType } from '../../common/color';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import {
   TooltipAreaProps,
   TooltipArea,

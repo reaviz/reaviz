@@ -4,7 +4,7 @@ import {
   RadialScatterPoint,
   RadialScatterPointProps
 } from './RadialScatterPoint';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import bind from 'memoize-bind';
 
 export interface RadialScatterSeriesProps {

@@ -1,6 +1,6 @@
 import React, { Component, ReactElement } from 'react';
 import classNames from 'classnames';
-import { CloneElement } from '../../utils/children';
+import { CloneElement } from 'rdk';
 import {
   DiscreteLegendEntryProps,
   DiscreteLegendEntry

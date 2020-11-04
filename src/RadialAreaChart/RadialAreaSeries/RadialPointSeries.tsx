@@ -5,7 +5,7 @@ import {
   RadialScatterPointProps
 } from '../../RadialScatterPlot';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { CloneElement } from '../../common/utils';
+import { CloneElement } from 'rdk';
 import isEqual from 'react-fast-compare';
 
 export interface RadialPointSeriesProps {

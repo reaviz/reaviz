@@ -33,7 +33,7 @@ import {
   ChartContainer,
   ChartProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import memoize from 'memoize-one';
 
 export interface AreaChartProps extends ChartProps {

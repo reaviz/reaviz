@@ -6,7 +6,7 @@ import {
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
 import { ChartNestedDataShape, buildNestedChartData } from '../common/data';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import bind from 'memoize-bind';
 import {
   isAxisVisible,

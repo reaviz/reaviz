@@ -5,7 +5,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import { MapMarkerProps, MapMarker } from './MapMarker';
 import { motion } from 'framer-motion';
 

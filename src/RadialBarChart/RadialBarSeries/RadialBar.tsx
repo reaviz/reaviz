@@ -8,7 +8,7 @@ import { path } from 'd3-path';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { MotionBar } from './MotionBar';
 import { RadialGuideBar, RadialGuideBarProps } from './RadialGuideBar';
-import { CloneElement } from '../../common/utils';
+import { CloneElement } from 'rdk';
 
 export interface RadialBarProps {
   /**

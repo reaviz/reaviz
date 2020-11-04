@@ -6,7 +6,7 @@ import {
 } from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
 import { scaleLinear } from 'd3-scale';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import { RadialGaugeSeriesProps, RadialGaugeSeries } from './RadialGaugeSeries';
 
 export interface RadialGaugeProps extends ChartProps {

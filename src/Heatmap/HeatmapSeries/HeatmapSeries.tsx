@@ -3,7 +3,7 @@ import { HeatmapCell, HeatmapCellProps } from './HeatmapCell';
 import { scaleQuantile } from 'd3-scale';
 import { uniqueBy } from '../../common/utils/array';
 import { extent, sum } from 'd3-array';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import memoize from 'memoize-one';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { ChartInternalNestedDataShape } from '../../common/data';

@@ -5,7 +5,7 @@ import {
   LinearGaugeOuterBar,
   LinearGaugeOuterBarProps
 } from './LinearGaugeOuterBar';
-import { CloneElement } from '../common/utils';
+import { CloneElement } from 'rdk';
 
 export interface LinearGaugeSeriesProps extends Omit<BarSeriesProps, 'bar'> {
   /**

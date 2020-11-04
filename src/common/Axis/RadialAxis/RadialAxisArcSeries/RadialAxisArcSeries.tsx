@@ -1,6 +1,6 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import { RadialAxisArc, RadialAxisArcProps } from './RadialAxisArc';
-import { CloneElement } from '../../../utils/children';
+import { CloneElement } from 'rdk';
 import { scaleLinear } from 'd3-scale';
 
 export interface RadialAxisArcSeriesProps {

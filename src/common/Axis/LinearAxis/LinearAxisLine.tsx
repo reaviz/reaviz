@@ -1,6 +1,6 @@
 import React, { Fragment, Component, ReactElement } from 'react';
 import { GradientProps, Gradient } from '../../Gradient';
-import { CloneElement } from '../../utils';
+import { CloneElement } from 'rdk';
 
 export interface LinearAxisLineProps {
   height: number;

@@ -6,7 +6,7 @@ import {
 } from '../common/containers';
 import { layout } from '@upsetjs/venn.js';
 import { VennSeries, VennSeriesProps } from './VennSeries';
-import { CloneElement } from '../common/utils';
+import { CloneElement } from 'rdk';
 import { starEulerLayout } from './starEuler';
 
 export interface VennDiagramData {

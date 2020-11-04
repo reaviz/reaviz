@@ -7,7 +7,7 @@ import {
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
 } from '../../common/data';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import {
   TooltipArea,
   TooltipAreaProps,

@@ -3,7 +3,7 @@ import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { ChartInternalDataTypes } from '../../common/data';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'realayers';
 import { SankeyLabel, SankeyLabelProps } from '../SankeyLabel';

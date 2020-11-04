@@ -12,7 +12,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 import { RadialAxis, RadialAxisProps } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
 import { uniqueBy } from '../common/utils/array';

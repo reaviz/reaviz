@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
 

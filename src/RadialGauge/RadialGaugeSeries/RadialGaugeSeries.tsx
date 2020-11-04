@@ -1,6 +1,6 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import { ChartShallowDataShape } from '../../common/data';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { RadialGaugeArcProps, RadialGaugeArc } from './RadialGaugeArc';
 import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
 import {

@@ -1,7 +1,7 @@
 import React, { Component, ReactElement } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { getColor, ColorSchemeType, schemes } from '../../common/color';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';

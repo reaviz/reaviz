@@ -9,7 +9,7 @@ import {
 } from '../data';
 import { getPositionForTarget, getClosestPoint } from '../utils/position';
 import bind from 'memoize-bind';
-import { CloneElement } from '../utils/children';
+import { CloneElement } from 'rdk';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
 import memoize from 'memoize-one';

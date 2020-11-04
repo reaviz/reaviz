@@ -4,7 +4,7 @@ import {
   LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
 import { ChartDataTypes } from '../../data';
-import { CloneElement } from '../../utils/children';
+import { CloneElement } from 'rdk';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
 
 export interface LinearAxisDimensionChanged {

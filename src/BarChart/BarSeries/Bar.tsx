@@ -6,7 +6,7 @@ import { ChartInternalShallowDataShape, Direction } from '../../common/data';
 import { RangeLinesProps, RangeLines } from './RangeLines';
 import bind from 'memoize-bind';
 import css from './Bar.module.scss';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
   constructFunctionProps,

@@ -1,7 +1,7 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
 import {
   TooltipAreaProps,

@@ -2,7 +2,7 @@ import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { radialArea, curveCardinalClosed, curveLinearClosed } from 'd3-shape';
 import { RadialGradient, RadialGradientProps } from '../../common/Gradient';
-import { CloneElement } from '../../common/utils';
+import { CloneElement } from 'rdk';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 

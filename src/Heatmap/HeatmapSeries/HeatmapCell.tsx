@@ -1,6 +1,6 @@
 import React, { Component, Fragment, createRef, ReactElement } from 'react';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import bind from 'memoize-bind';
 import {
   constructFunctionProps,

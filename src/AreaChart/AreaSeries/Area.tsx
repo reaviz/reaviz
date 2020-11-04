@@ -10,7 +10,7 @@ import {
   ChartInternalDataShape,
   ChartInternalShallowDataShape
 } from '../../common/data';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import {
   constructFunctionProps,
   PropFunctionTypes

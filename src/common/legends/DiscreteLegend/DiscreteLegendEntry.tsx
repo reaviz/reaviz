@@ -5,7 +5,7 @@ import {
   DiscreteLegendSymbol,
   DiscreteLegendSymbolProps
 } from './DiscreteLegendSymbol';
-import { CloneElement } from '../../utils/children';
+import { CloneElement } from 'rdk';
 
 export interface DiscreteLegendEntryProps {
   /**

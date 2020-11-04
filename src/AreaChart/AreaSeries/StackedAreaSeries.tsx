@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AreaSeriesProps, AreaSeries } from './AreaSeries';
-import { CloneElement } from '../../common/utils';
+import { CloneElement } from 'rdk';
 import { PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '../../ScatterPlot';
 

@@ -10,7 +10,7 @@ import { radialLine } from 'd3-shape';
 import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import css from './RadialScatterPoint.module.scss';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';

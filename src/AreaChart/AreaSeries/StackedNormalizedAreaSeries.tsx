@@ -6,7 +6,7 @@ import {
   TooltipArea,
   ChartTooltip
 } from '../../common/Tooltip';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '../../ScatterPlot';
 

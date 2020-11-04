@@ -11,7 +11,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from '../common/utils/children';
+import { CloneElement } from 'rdk';
 
 import { getColor, ColorSchemeType } from '../common/color';
 import { SankeyNodeProps, SankeyNode } from './SankeyNode';

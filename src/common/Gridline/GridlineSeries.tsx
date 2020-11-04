@@ -1,7 +1,7 @@
 import React, { Fragment, Component, ReactElement } from 'react';
 import { Gridline, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '../utils/ticks';
-import { CloneElement } from '../utils/children';
+import { CloneElement } from 'rdk';
 import { LinearAxisProps } from '../Axis';
 import { GridStripeProps, GridStripe } from './GridStripe';
 

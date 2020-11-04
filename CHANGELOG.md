@@ -1,3 +1,6 @@
+# 9.3.13 - 11/4/20
+- [Chore] Upgrade rdk and use clone element from rdk
+
 # 9.3.12 - 11/2/20
 - [Fix] Fix selections in venn not working correctly
 - [Fix] Invalid keys being passed to arcs

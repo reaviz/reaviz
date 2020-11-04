@@ -11,7 +11,7 @@ import { ColorSchemeType, getColor } from '../common/color';
 import { VennArc, VennArcProps } from './VennArc';
 import { VennLabel, VennLabelProps } from './VennLabel';
 import { motion } from 'framer-motion';
-import { CloneElement } from '../common/utils';
+import { CloneElement } from 'rdk';
 import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
 

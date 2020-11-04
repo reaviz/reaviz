@@ -1,6 +1,6 @@
 import React, { Component, ReactElement } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { CloneElement } from '../../common/utils';
+import { CloneElement } from 'rdk';
 import {
   ScatterPoint,
   ScatterSeries,

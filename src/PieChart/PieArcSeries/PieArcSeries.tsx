@@ -2,7 +2,7 @@ import React, { Component, Fragment, ReactElement } from 'react';
 import { PieArc, PieArcProps } from './PieArc';
 import { arc } from 'd3-shape';
 import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { max } from 'd3-array';
 

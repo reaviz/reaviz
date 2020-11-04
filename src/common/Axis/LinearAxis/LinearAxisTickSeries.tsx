@@ -10,7 +10,7 @@ import {
 import { formatValue } from '../../utils/formatting';
 import { getTicks, getMaxTicks } from '../../utils/ticks';
 import { TimeInterval } from 'd3-time';
-import { CloneElement } from '../../utils/children';
+import { CloneElement } from 'rdk';
 import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';

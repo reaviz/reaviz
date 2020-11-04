@@ -10,7 +10,7 @@ import React, {
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import classNames from 'classnames';
-import { CloneElement } from '../../common/utils/children';
+import { CloneElement } from 'rdk';
 import {
   constructFunctionProps,
   PropFunctionTypes

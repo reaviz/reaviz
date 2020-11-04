@@ -7,7 +7,7 @@ import {
   RadialAxisArcSeries,
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
-import { CloneElement } from '../../utils/children';
+import { CloneElement } from 'rdk';
 
 export interface RadialAxisProps {
   height: number;
