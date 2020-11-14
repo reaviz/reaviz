@@ -12518,10 +12518,10 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-realayers@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/realayers/-/realayers-2.2.1.tgz#ebf2541e87568677be885b090aa97cfc08f6cc5a"
-  integrity sha512-NLhfDS/IOsMxP8uTwqEGDxXvi9jAvJ6XSZdmNR9fAAPR97Fybe+2QovX3mOjcNTF+yI2LgQUxnNb6JY5JF5Wbg==
+realayers@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/realayers/-/realayers-2.2.6.tgz#bbb39d919d5106941f492cbdc135c8bb0ff9cd9d"
+  integrity sha512-GYI/7mfQ4dZkotTv7b4kkcVRsM52vhfiNWr+Ybv0t6RZURjBDajqAK2GSLmIxEjua7swgIFygdQI+K0nmjlWig==
   dependencies:
     classnames "^2.2.6"
     focus-trap-react "^8.1.0"
