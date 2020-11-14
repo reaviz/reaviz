@@ -1,3 +1,6 @@
+# 9.3.14 - 11/14/20
+- [Fix] Upgrade RDK for tooltip pointer events fix
+
 # 9.3.13 - 11/4/20
 - [Chore] Upgrade rdk and use clone element from rdk
 
