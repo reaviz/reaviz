@@ -10,6 +10,9 @@ dist/
 storybook-static/
 junit.xml
 
+# IDE settings
+.idea
+
 # Runtime data
 pids
 *.pid
