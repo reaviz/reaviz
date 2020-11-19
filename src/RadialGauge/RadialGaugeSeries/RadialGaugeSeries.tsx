@@ -1,21 +1,18 @@
-import React, { cloneElement, ReactElement } from 'react';
+import React, { cloneElement, FC, ReactElement } from 'react';
 
 import { range, min } from 'd3-array';
 import { scaleBand } from 'd3-scale';
 
 import { ChartShallowDataShape } from '../../common/data';
 import { ColorSchemeType, getColor } from '../../common/color';
-
+import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
+import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
 import {
-  RadialGaugeArc,
-  RadialGaugeArcProps,
-  RadialGaugeLabel,
-  RadialGaugeLabelProps,
   RadialGaugeValueLabel,
   RadialGaugeValueLabelProps
-} from '.';
+} from './RadialGaugeValueLabel';
 
-interface RadialGaugeSeriesProps {
+export interface RadialGaugeSeriesProps {
   /**
    * Data to render set bby `RadialGauge` component.
    */
@@ -85,7 +82,7 @@ interface RadialGaugeSeriesProps {
   minGaugeWidth: number;
 }
 
-function RadialGaugeSeries({
+export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   data,
   scale,
   startAngle,
@@ -98,7 +95,7 @@ function RadialGaugeSeries({
   padding = 10,
   minGaugeWidth = 50,
   ...props
-}: Partial<RadialGaugeSeriesProps>) {
+}: Partial<RadialGaugeSeriesProps>) => {
   function getWidths() {
     let rows = 1;
     let columns = data.length;
@@ -161,11 +158,7 @@ function RadialGaugeSeries({
         key={point.key.toLocaleString()}
       >
         {outerArc &&
-          cloneElement(outerArc, {
-            outerRadius,
-            startAngle,
-            endAngle
-          })}
+          cloneElement(outerArc, { outerRadius, startAngle, endAngle })}
 
         {innerArc &&
           cloneElement(innerArc, {
@@ -181,16 +174,9 @@ function RadialGaugeSeries({
             })
           })}
 
-        {valueLabel &&
-          cloneElement(valueLabel, {
-            data: point
-          })}
+        {valueLabel && cloneElement(valueLabel, { data: point })}
 
-        {label &&
-          cloneElement(label, {
-            data: point,
-            offset: labelOffset
-          })}
+        {label && cloneElement(label, { data: point, offset: labelOffset })}
       </g>
     );
   }
@@ -199,11 +185,9 @@ function RadialGaugeSeries({
 
   return (
     <>
-      {data.map((d, i) => {
-        return renderGauge(d, i, columns, height, width, xScale, yScale);
-      })}
+      {data.map((d, i) =>
+        renderGauge(d, i, columns, height, width, xScale, yScale)
+      )}
     </>
   );
-}
-
-export { RadialGaugeSeries, RadialGaugeSeriesProps };
+};

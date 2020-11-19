@@ -1,4 +1,4 @@
-import React, { cloneElement, ReactElement } from 'react';
+import React, { cloneElement, FC, ReactElement } from 'react';
 
 import { scaleLinear } from 'd3-scale';
 
@@ -39,7 +39,7 @@ export interface RadialGaugeProps extends ChartProps {
   series: ReactElement<RadialGaugeSeriesProps, typeof RadialGaugeSeries>;
 }
 
-function RadialGauge({
+export const RadialGauge: FC<RadialGaugeProps> = ({
   id,
   width,
   height,
@@ -51,7 +51,7 @@ function RadialGauge({
   startAngle = 0,
   endAngle = Math.PI * 2,
   series = <RadialGaugeSeries />
-}: RadialGaugeProps) {
+}: RadialGaugeProps) => {
   const scale = scaleLinear()
     .domain([minValue, maxValue])
     .range([startAngle, endAngle]);
@@ -78,6 +78,4 @@ function RadialGauge({
       }}
     </ChartContainer>
   );
-}
-
-export { RadialGauge };
+};
