@@ -18,7 +18,7 @@
   <a href="https://bundlephobia.com/result?p=reaviz">
     <img src="https://badgen.net/bundlephobia/minzip/reaviz">
   </a>
-  <a href="https://discord.gg/Jt4YBq5e">
+  <a href="https://discord.gg/tt8wGExq35">
     <img src="https://img.shields.io/discord/773948315037073409?label=discord">
   </a>
 </p>
