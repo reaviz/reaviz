@@ -1,10 +1,11 @@
 import React, { Component, Fragment, ReactElement } from 'react';
 import { max } from 'd3-array';
 import { arc } from 'd3-shape';
+import { CloneElement } from 'rdk';
+import memoize from 'memoize-one';
 import type { ArcData } from '../PieChart';
 import { PieArc, PieArcProps } from './PieArc';
 import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
-import { CloneElement } from 'rdk';
 import { getColor, ColorSchemeType } from '../../common/color';
 
 export interface PieArcSeriesProps {
@@ -80,60 +81,62 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
    * @param outerRadius - an outerRadius of the pie
    * @param minDistance - minimal vertical distance between adjacent labels
    */
-  calculateLabelPositions(
-    data: ArcData[],
-    outerRadius: number,
-    minDistance: number
-  ): Array<[number, number] | null> {
-    const outerArcRadius = outerRadius * factor;
-    const outerArc = arc<any, ArcData>()
-      .innerRadius(outerArcRadius)
-      .outerRadius(outerArcRadius);
+  calculateLabelPositions = memoize(
+    (
+      data: ArcData[],
+      outerRadius: number,
+      minDistance: number
+    ): Array<[number, number] | null> => {
+      const outerArcRadius = outerRadius * factor;
+      const outerArc = arc<any, ArcData>()
+        .innerRadius(outerArcRadius)
+        .outerRadius(outerArcRadius);
 
-    const positions: Array<[number, number] | null> = data.map((d) => {
-      if (!this.shouldDisplayLabel(d)) {
-        return null;
-      }
+      const positions: Array<[number, number] | null> = data.map((d) => {
+        if (!this.shouldDisplayLabel(d)) {
+          return null;
+        }
 
-      const pos = outerArc.centroid(d);
+        const pos = outerArc.centroid(d);
 
-      // reposition the labels to the left/right from outerArc centroid
-      // so that all labels won't collide with pie
-      // when we will vertically reposition them
-      pos[0] = outerArcRadius * (midAngle(d) < Math.PI ? 1 : -1);
+        // reposition the labels to the left/right from outerArc centroid
+        // so that all labels won't collide with pie
+        // when we will vertically reposition them
+        pos[0] = outerArcRadius * (midAngle(d) < Math.PI ? 1 : -1);
 
-      return pos;
-    });
+        return pos;
+      });
 
-    for (let i = 0; i < data.length - 1; i++) {
-      if (!positions[i]) {
-        continue;
-      }
-
-      const [aPosX, aPosY] = positions[i];
-
-      for (let j = i + 1; j < data.length; j++) {
-        if (!positions[j]) {
+      for (let i = 0; i < data.length - 1; i++) {
+        if (!positions[i]) {
           continue;
         }
 
-        const [bPosX, bPosY] = positions[j];
+        const [aPosX, aPosY] = positions[i];
 
-        // if they're on the same side (both with - or + sign)
-        if (bPosX * aPosX > 0) {
-          // if they're overlapping
-          const overlap = minDistance - Math.abs(bPosY - aPosY);
+        for (let j = i + 1; j < data.length; j++) {
+          if (!positions[j]) {
+            continue;
+          }
 
-          if (overlap > 0) {
-            // push the second up or down
-            positions[j][1] += Math.sign(bPosX) * overlap;
+          const [bPosX, bPosY] = positions[j];
+
+          // if they're on the same side (both with - or + sign)
+          if (bPosX * aPosX > 0) {
+            // if they're overlapping
+            const overlap = minDistance - Math.abs(bPosY - aPosY);
+
+            if (overlap > 0) {
+              // push the second up or down
+              positions[j][1] += Math.sign(bPosX) * overlap;
+            }
           }
         }
       }
-    }
 
-    return positions;
-  }
+      return positions;
+    }
+  );
 
   innerArc(innerRadius: number, outerRadius: number) {
     return (point: ArcData) => {
