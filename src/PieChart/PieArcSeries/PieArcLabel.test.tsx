@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { PieArcLabel } from './PieArcLabel';
-import type { ArcData } from '../PieChart';
+import { ArcData } from '../PieChart';
 
 const data: ArcData = {
   data: {

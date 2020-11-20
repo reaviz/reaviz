@@ -3,7 +3,7 @@ import { max } from 'd3-array';
 import { arc } from 'd3-shape';
 import { CloneElement } from 'rdk';
 import memoize from 'memoize-one';
-import type { ArcData } from '../PieChart';
+import { ArcData } from '../PieChart';
 import { PieArc, PieArcProps } from './PieArc';
 import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
 import { getColor, ColorSchemeType } from '../../common/color';

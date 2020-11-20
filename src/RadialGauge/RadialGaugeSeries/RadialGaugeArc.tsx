@@ -1,7 +1,6 @@
 import React, { Component, ReactElement } from 'react';
 import { arc } from 'd3-shape';
-import type { ArcData, PieArcProps } from '../../PieChart';
-import { PieArc } from '../../PieChart';
+import { PieArc, ArcData, PieArcProps } from '../../PieChart';
 import { ChartShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 
