@@ -159,7 +159,6 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
       >
         {outerArc &&
           cloneElement(outerArc, { outerRadius, startAngle, endAngle })}
-
         {innerArc &&
           cloneElement(innerArc, {
             outerRadius,
@@ -173,9 +172,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
               index
             })
           })}
-
         {valueLabel && cloneElement(valueLabel, { data: point })}
-
         {label && cloneElement(label, { data: point, offset: labelOffset })}
       </g>
     );
