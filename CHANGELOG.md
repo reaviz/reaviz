@@ -1,3 +1,6 @@
+# 9.4.1 - 11/20/20
+- [Fix] Fix missing exports #19
+
 # 9.4.0 - 11/20/20
 - [Feature] Pie Chart Icons #10
 - [Feature] Stacked Radial Gauge #18
