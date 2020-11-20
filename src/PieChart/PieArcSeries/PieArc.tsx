@@ -2,7 +2,7 @@ import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
 import { CloneElement } from 'rdk';
-import type { ArcData } from '../PieChart';
+import { ArcData } from '../PieChart';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { useInterpolate } from './useInterpolate';
 
