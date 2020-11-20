@@ -1,3 +1,5 @@
+# 9.4.2 - 11/20/20
+- [Fix] Fix type issues
 # 9.4.1 - 11/20/20
 - [Fix] Fix missing exports #19
 
