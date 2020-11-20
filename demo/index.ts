@@ -10,3 +10,4 @@ export * from './sankey';
 export * from './signals';
 export * from './sonar';
 export * from './utils';
+export * as icons from './icons';

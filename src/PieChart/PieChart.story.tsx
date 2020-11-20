@@ -1,10 +1,11 @@
 import React, { useState, Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
+import { number, object, text, select, boolean } from '@storybook/addon-knobs';
 import { PieChart } from './PieChart';
-import { categoryData, randomNumber, browserData } from '../../demo';
-import { PieArcSeries } from './PieArcSeries';
-import { number, object, text, select } from '@storybook/addon-knobs';
+import { categoryData, randomNumber, browserData, icons } from '../../demo';
+import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { schemes } from '../common/color';
+import { ChartShallowDataShape } from '../common/data';
 
 storiesOf('Charts/Pie Chart/Pie', module)
   .add('Simple', () => {
@@ -45,6 +46,159 @@ storiesOf('Charts/Pie Chart/Pie', module)
       data={browserData}
     />
   ))
+  .add('HTML Labels', () => {
+    const showIconsWithText = boolean('Show icons with text', false);
+    const height = number('Height', 400);
+    const width = number('Width', 400);
+    const color = select('Color Scheme', schemes, 'cybertron');
+
+    interface ChartDataItem extends ChartShallowDataShape<number> {
+      key: string;
+      metadata: {
+        description: string;
+        Icon?: React.ComponentType;
+      };
+    }
+
+    const data: ChartDataItem[] = [
+      {
+        key: 'Chrome',
+        data: 25000,
+        metadata: {
+          description: 'Chrome description',
+          Icon: icons.Chrome
+        }
+      },
+      {
+        key: 'Safari',
+        data: 2000,
+        metadata: {
+          description: 'Safari description',
+          Icon: icons.Safari
+        }
+      },
+      {
+        key: 'FireFox',
+        data: 2000,
+        metadata: {
+          description: 'FireFox description',
+          Icon: icons.FireFox
+        }
+      },
+      {
+        key: 'Edge',
+        data: 2000,
+        metadata: {
+          description: 'Edge description',
+          Icon: icons.Edge
+        }
+      },
+      {
+        key: 'Github',
+        data: 2000,
+        metadata: {
+          description: 'Github description',
+          Icon: icons.Github
+        }
+      },
+      {
+        key: 'ReactJs',
+        data: 2000,
+        metadata: {
+          description: 'React with really really long description',
+          Icon: icons.ReactJs
+        }
+      },
+      {
+        key: 'Android',
+        data: 2000,
+        metadata: {
+          description: 'Android description',
+          Icon: icons.Android
+        }
+      },
+      {
+        key: 'Apple',
+        data: 2000,
+        metadata: {
+          description: 'Apple description',
+          Icon: icons.Apple
+        }
+      },
+      {
+        key: 'Ubuntu',
+        data: 2000,
+        metadata: {
+          description: 'Ubuntu description',
+          Icon: icons.Ubuntu
+        }
+      },
+      {
+        key: 'Windows',
+        data: 2000,
+        metadata: {
+          description: 'Windows description',
+          Icon: icons.Windows
+        }
+      },
+      {
+        key: 'Other',
+        data: 500,
+        metadata: {
+          description: 'Other item, that should not have label'
+        }
+      }
+    ];
+
+    return (
+      <div
+        style={{
+          width,
+          height,
+          overflow: 'hidden'
+        }}
+      >
+        <PieChart
+          width={width}
+          height={height}
+          data={data}
+          series={
+            <PieArcSeries
+              colorScheme={color}
+              label={
+                <PieArcLabel
+                  width={showIconsWithText ? 120 : 32}
+                  height={24}
+                  format={({
+                    key,
+                    data,
+                    metadata,
+                    textAnchor
+                  }: ChartDataItem & { textAnchor: 'start' | 'end' }) => (
+                    <ArcLabel
+                      key={key}
+                      title={key}
+                      data={data}
+                      description={metadata.description}
+                      icon={metadata.Icon ? <metadata.Icon /> : null}
+                      textAnchor={textAnchor}
+                      showText={showIconsWithText}
+                    />
+                  )}
+                />
+              }
+              arc={
+                <PieArc
+                  tooltip={showIconsWithText ? null : undefined}
+                  cursor="pointer"
+                />
+              }
+            />
+          }
+        />
+      </div>
+    );
+  })
   .add('Label Overlap', () => {
     const labelsCount = number('Labels count', 32);
 
@@ -162,3 +316,64 @@ const LiveUpdatingStory = () => {
     </Fragment>
   );
 };
+
+const ArcLabel = React.memo(function ArcLabel({
+  title,
+  description,
+  data,
+  icon,
+  textAnchor,
+  showText
+}: {
+  title: string;
+  description: string;
+  data: number; // the chart data value we labeling
+  icon: React.ReactElement | null;
+  textAnchor: 'start' | 'end';
+  showText: boolean;
+}) {
+  const iconContainer = (
+    <div
+      style={{
+        [textAnchor === 'start' ? 'marginRight' : 'marginLeft']: showText
+          ? '4px'
+          : 0,
+        width: '24px',
+        height: '24px',
+        fill: '#fff',
+        flexShrink: 0
+      }}
+    >
+      {icon}
+    </div>
+  );
+
+  const ellipsis: React.CSSProperties = {
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
+    overflow: 'hidden'
+  };
+
+  return (
+    <div
+      style={{
+        margin: '0 4px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: `flex-${textAnchor}`,
+        lineHeight: 1,
+        height: '24px',
+        textAlign: textAnchor === 'start' ? 'left' : 'right'
+      }}
+    >
+      {textAnchor === 'start' && iconContainer}
+      <div style={{ minWidth: 0 }}>
+        <div style={ellipsis}>
+          {title} - {data}
+        </div>
+        <div style={ellipsis}>{description}</div>
+      </div>
+      {textAnchor === 'end' && iconContainer}
+    </div>
+  );
+});

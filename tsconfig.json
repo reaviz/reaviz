@@ -6,7 +6,6 @@
     "lib": ["es2017", "dom"],
     "typeRoots": ["./types", "./node_modules/@types"],
     "jsx": "react",
-    "baseUrl": "./src",
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationDir": "./dist",

@@ -1,31 +1,30 @@
-import React, {
-  ReactElement,
-  useState,
-  FC,
-  useRef,
-  useMemo,
-  useEffect
-} from 'react';
+import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
-import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
-import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
+import { CloneElement } from 'rdk';
+import type { ArcData } from '../PieChart';
+import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { useInterpolate } from './useInterpolate';
 
+export interface PieArcMouseEvent {
+  value: ArcData['data'];
+  nativeEvent: React.MouseEvent<SVGPathElement>;
+}
+
 export interface PieArcProps {
-  data: any;
-  innerArc: any;
-  color: any;
+  data?: ArcData;
+  innerArc?: (data: ArcData) => string | null;
+  color?: string;
   animated?: boolean;
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
   cursor?: string;
   disabled?: boolean;
-  onClick?: (e) => void;
-  onMouseEnter?: (e) => void;
-  onMouseLeave?: (e) => void;
+  onClick?: (e: PieArcMouseEvent) => void;
+  onMouseEnter?: (e: PieArcMouseEvent) => void;
+  onMouseLeave?: (e: PieArcMouseEvent) => void;
 }
 
-export const PieArc: FC<Partial<PieArcProps>> = ({
+export const PieArc: FC<PieArcProps> = ({
   color,
   data,
   innerArc,
@@ -48,6 +47,7 @@ export const PieArc: FC<Partial<PieArcProps>> = ({
   return (
     <g ref={arcRef}>
       <motion.path
+        role="graphics-symbol"
         transition={transition}
         d={d}
         style={{ cursor }}

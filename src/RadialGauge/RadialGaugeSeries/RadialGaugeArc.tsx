@@ -1,5 +1,6 @@
 import React, { Component, ReactElement } from 'react';
 import { arc } from 'd3-shape';
+import type { ArcData, PieArcProps } from '../../PieChart';
 import { PieArc } from '../../PieChart';
 import { ChartShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
@@ -78,7 +79,7 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
     tooltip: <ChartTooltip />
   };
 
-  getPaths() {
+  getPaths(): Pick<PieArcProps, 'data' | 'innerArc'> {
     const { outerRadius, startAngle, endAngle, width, data } = this.props;
 
     // Calculate the inner rad based on the width
@@ -91,13 +92,15 @@ export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
     const newOuterRad = outerRadius + delta;
 
     // Create the arc fn to pass to the pie arc
-    const innerArc = arc().innerRadius(newInnerRad).outerRadius(newOuterRad);
+    const innerArc = arc<ArcData>()
+      .innerRadius(newInnerRad)
+      .outerRadius(newOuterRad);
 
     return {
       data: {
         startAngle,
         endAngle,
-        // Data must be passed
+        // @ts-ignore Data must be passed
         data: data || {}
       },
       innerArc

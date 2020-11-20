@@ -72,7 +72,7 @@ export const TooltipTemplate: FC<TooltipTemplateProps> = ({
   const isMultiple = Array.isArray((value as any).data);
 
   return (
-    <div className={className}>
+    <div className={className} role="tooltip">
       <div className={css.label}>{formatValue(value!.x)}</div>
       <div className={css.value}>
         {isMultiple && renderMultiple(value as MultipleTooltipValues)}
