@@ -1,10 +1,7 @@
 import React, { cloneElement, FC, ReactElement } from 'react';
-
 import { scaleLinear } from 'd3-scale';
-
 import { ChartContainer, ChartProps } from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
-
 import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
 
 export interface RadialGaugeProps extends ChartProps {
@@ -66,16 +63,16 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
       yAxisVisible={false}
       className={className}
     >
-      {(props) => {
-        return cloneElement(series, {
+      {(props) =>
+        cloneElement(series, {
           scale,
           data,
           startAngle,
           endAngle,
           width: props.width,
           height: props.height
-        });
-      }}
+        })
+      }
     </ChartContainer>
   );
 };

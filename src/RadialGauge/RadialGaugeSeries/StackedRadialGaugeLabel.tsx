@@ -19,26 +19,24 @@ export interface StackedRadialGaugeLabelProps {
   yOffset?: number;
 }
 
-export const StackedRadialGaugeLabel: FC<Partial<
-  StackedRadialGaugeLabelProps
->> = ({
+export const StackedRadialGaugeLabel: FC<
+  Partial<StackedRadialGaugeLabelProps>
+> = ({
   label,
   className,
   yOffset = 0
-}: Partial<StackedRadialGaugeLabelProps>) => {
-  return (
-    <>
-      {label && (
-        <text
-          x="0"
-          y={yOffset}
-          textAnchor="middle"
-          alignmentBaseline="middle"
-          className={classNames(className, css.stackedValueLabel)}
-        >
-          {label}
-        </text>
-      )}
-    </>
-  );
-};
+}: Partial<StackedRadialGaugeLabelProps>) => (
+  <>
+    {label && (
+      <text
+        x="0"
+        y={yOffset}
+        textAnchor="middle"
+        alignmentBaseline="middle"
+        className={classNames(className, css.stackedValueLabel)}
+      >
+        {label}
+      </text>
+    )}
+  </>
+);
