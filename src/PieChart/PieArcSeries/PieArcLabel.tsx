@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import { motion } from 'framer-motion';
 import { arc } from 'd3-shape';
-import type { ArcData } from '../PieChart';
-import type { ChartInternalDataTypes } from '../../common/data/types';
+import { ArcData } from '../PieChart';
+import { ChartInternalDataTypes } from '../../common/data/types';
 import { formatValue } from '../../common/utils/formatting';
 import { findBreakPoint } from './findBreakPoint';
 

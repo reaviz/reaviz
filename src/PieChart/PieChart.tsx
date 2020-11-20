@@ -1,7 +1,6 @@
 import React, { Component, ReactElement } from 'react';
 import classNames from 'classnames';
-import type { PieArcDatum } from 'd3-shape';
-import { pie } from 'd3-shape';
+import { pie, PieArcDatum } from 'd3-shape';
 import memoize from 'memoize-one';
 import { CloneElement } from 'rdk';
 import {
@@ -9,7 +8,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import type { ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '../common/data';
 import { PieArcSeries, PieArcSeriesProps } from './PieArcSeries';
 
 export type ArcData = PieArcDatum<ChartShallowDataShape>;
