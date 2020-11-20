@@ -66,16 +66,16 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
       yAxisVisible={false}
       className={className}
     >
-      {(props) => {
-        return cloneElement(series, {
+      {(props) =>
+        cloneElement(series, {
           scale,
           data,
           startAngle,
           endAngle,
           width: props.width,
           height: props.height
-        });
-      }}
+        })
+      }
     </ChartContainer>
   );
 };
