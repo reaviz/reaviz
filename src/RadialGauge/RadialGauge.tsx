@@ -1,10 +1,7 @@
 import React, { cloneElement, FC, ReactElement } from 'react';
-
 import { scaleLinear } from 'd3-scale';
-
 import { ChartContainer, ChartProps } from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
-
 import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
 
 export interface RadialGaugeProps extends ChartProps {

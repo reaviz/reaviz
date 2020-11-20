@@ -1,3 +1,7 @@
+# 9.4.0 - 11/20/20
+- [Feature] Pie Chart Icons #10
+- [Feature] Stacked Radial Gauge #18
+
 # 9.3.14 - 11/14/20
 - [Fix] Upgrade RDK for tooltip pointer events fix
 
