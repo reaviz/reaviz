@@ -1,15 +1,16 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { cloneElement, FC, ReactElement } from 'react';
+
+import { range, min } from 'd3-array';
+import { scaleBand } from 'd3-scale';
+
 import { ChartShallowDataShape } from '../../common/data';
-import { CloneElement } from 'rdk';
-import { RadialGaugeArcProps, RadialGaugeArc } from './RadialGaugeArc';
+import { ColorSchemeType, getColor } from '../../common/color';
+import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
 import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
 import {
   RadialGaugeValueLabel,
   RadialGaugeValueLabelProps
 } from './RadialGaugeValueLabel';
-import { getColor, ColorSchemeType } from '../../common/color';
-import { range, min } from 'd3-array';
-import { scaleBand } from 'd3-scale';
 
 export interface RadialGaugeSeriesProps {
   /**
@@ -76,30 +77,31 @@ export interface RadialGaugeSeriesProps {
   > | null;
 
   /**
-   * Min width for a guage. Only applicable in multi-series gauges.
+   * Min width for a gauge. Only applicable in multi-series gauges.
    */
   minGaugeWidth: number;
 }
 
-export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
-  static defaultProps: Partial<RadialGaugeSeriesProps> = {
-    outerArc: <RadialGaugeArc disabled={true} />,
-    innerArc: <RadialGaugeArc width={10} animated={true} />,
-    label: <RadialGaugeLabel />,
-    valueLabel: <RadialGaugeValueLabel />,
-    colorScheme: ['#00ECB1'],
-    padding: 10,
-    minGaugeWidth: 50
-  };
-
-  getWidths() {
-    const { data, width, height, minGaugeWidth } = this.props;
-
+export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
+  data,
+  scale,
+  startAngle,
+  endAngle,
+  outerArc = <RadialGaugeArc disabled={true} />,
+  innerArc = <RadialGaugeArc width={10} animated={true} />,
+  label = <RadialGaugeLabel />,
+  valueLabel = <RadialGaugeValueLabel />,
+  colorScheme = ['#00ECB1'],
+  padding = 10,
+  minGaugeWidth = 50,
+  ...props
+}: Partial<RadialGaugeSeriesProps>) => {
+  function getWidths() {
     let rows = 1;
     let columns = data.length;
 
-    if (width / data.length < minGaugeWidth) {
-      while (width / columns < minGaugeWidth) {
+    if (props.width / data.length < minGaugeWidth) {
+      while (props.width / columns < minGaugeWidth) {
         rows += 1;
         columns = Math.ceil(data.length / rows);
       }
@@ -107,11 +109,11 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
 
     const xScale: any = scaleBand();
     xScale.domain(range(columns));
-    xScale.rangeRound([0, width], 0.1);
+    xScale.rangeRound([0, props.width], 0.1);
 
     const yScale: any = scaleBand();
     yScale.domain(range(rows));
-    yScale.rangeRound([0, height], 0.1);
+    yScale.rangeRound([0, props.height], 0.1);
 
     return {
       columns,
@@ -122,7 +124,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
     };
   }
 
-  renderGauge(
+  function renderGauge(
     point: ChartShallowDataShape,
     index: number,
     columns: number,
@@ -131,19 +133,6 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
     xScale,
     yScale
   ) {
-    const {
-      scale,
-      innerArc,
-      outerArc,
-      startAngle,
-      data,
-      endAngle,
-      label,
-      valueLabel,
-      padding,
-      colorScheme
-    } = this.props;
-
     const dataEndAngle = scale(point.data as number);
 
     const baselineLabelHeight = 20;
@@ -154,6 +143,7 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
       ]) as number) /
         2 -
       10;
+
     const labelOffset = height / 2 - baselineLabelHeight;
 
     const x = xScale(index % columns);
@@ -167,54 +157,34 @@ export class RadialGaugeSeries extends Component<RadialGaugeSeriesProps> {
         transform={`translate(${xOffset}, ${yOffset})`}
         key={point.key.toLocaleString()}
       >
-        {outerArc && (
-          <CloneElement<RadialGaugeArcProps>
-            element={outerArc}
-            outerRadius={outerRadius}
-            startAngle={startAngle}
-            endAngle={endAngle}
-          />
-        )}
-        <CloneElement<RadialGaugeArcProps>
-          element={innerArc}
-          outerRadius={outerRadius}
-          startAngle={startAngle}
-          endAngle={dataEndAngle}
-          data={point}
-          color={getColor({
-            data,
-            colorScheme,
-            point,
-            index
+        {outerArc &&
+          cloneElement(outerArc, { outerRadius, startAngle, endAngle })}
+        {innerArc &&
+          cloneElement(innerArc, {
+            outerRadius,
+            startAngle,
+            endAngle: dataEndAngle,
+            data: point,
+            color: getColor({
+              data,
+              colorScheme,
+              point,
+              index
+            })
           })}
-        />
-        {valueLabel && (
-          <CloneElement<RadialGaugeLabelProps>
-            element={valueLabel}
-            data={point}
-          />
-        )}
-        {label && (
-          <CloneElement<RadialGaugeLabelProps>
-            element={label}
-            data={point}
-            offset={labelOffset}
-          />
-        )}
+        {valueLabel && cloneElement(valueLabel, { data: point })}
+        {label && cloneElement(label, { data: point, offset: labelOffset })}
       </g>
     );
   }
 
-  render() {
-    const { data } = this.props;
-    const { columns, width, height, xScale, yScale } = this.getWidths();
+  const { columns, width, height, xScale, yScale } = getWidths();
 
-    return (
-      <Fragment>
-        {data.map((d, i) =>
-          this.renderGauge(d, i, columns, height, width, xScale, yScale)
-        )}
-      </Fragment>
-    );
-  }
-}
+  return (
+    <>
+      {data.map((d, i) =>
+        renderGauge(d, i, columns, height, width, xScale, yScale)
+      )}
+    </>
+  );
+};

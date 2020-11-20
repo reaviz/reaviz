@@ -1,13 +1,11 @@
-import React, { Component, ReactElement } from 'react';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '../common/containers';
-import { ChartShallowDataShape } from '../common/data';
+import React, { cloneElement, FC, ReactElement } from 'react';
+
 import { scaleLinear } from 'd3-scale';
-import { CloneElement } from 'rdk';
-import { RadialGaugeSeriesProps, RadialGaugeSeries } from './RadialGaugeSeries';
+
+import { ChartContainer, ChartProps } from '../common/containers';
+import { ChartShallowDataShape } from '../common/data';
+
+import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
 
 export interface RadialGaugeProps extends ChartProps {
   /**
@@ -18,81 +16,66 @@ export interface RadialGaugeProps extends ChartProps {
   /**
    * Min value to scale on.
    */
-  minValue: number;
+  minValue?: number;
 
   /**
    * Max value to scale on.
    */
-  maxValue: number;
+  maxValue?: number;
 
   /**
    * Start angle for the first value.
    */
-  startAngle: number;
+  startAngle?: number;
 
   /**
    * End angle for the last value.
    */
-  endAngle: number;
+  endAngle?: number;
 
   /**
    * Gauge series component to render.
    */
-  series: ReactElement<RadialGaugeSeriesProps, typeof RadialGaugeSeries>;
+  series?: ReactElement<RadialGaugeSeriesProps, typeof RadialGaugeSeries>;
 }
 
-export class RadialGauge extends Component<RadialGaugeProps> {
-  static defaultProps: Partial<RadialGaugeProps> = {
-    minValue: 0,
-    maxValue: 100,
-    startAngle: 0,
-    endAngle: Math.PI * 2,
-    series: <RadialGaugeSeries />
-  };
+export const RadialGauge: FC<RadialGaugeProps> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  data,
+  minValue = 0,
+  maxValue = 100,
+  startAngle = 0,
+  endAngle = Math.PI * 2,
+  series = <RadialGaugeSeries />
+}: RadialGaugeProps) => {
+  const scale = scaleLinear()
+    .domain([minValue, maxValue])
+    .range([startAngle, endAngle]);
 
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { chartWidth, chartHeight } = containerProps;
-    const {
-      startAngle,
-      endAngle,
-      minValue,
-      maxValue,
-      data,
-      series
-    } = this.props;
-
-    const scale = scaleLinear()
-      .domain([minValue, maxValue])
-      .range([startAngle, endAngle]);
-
-    return (
-      <CloneElement<RadialGaugeSeriesProps>
-        element={series}
-        scale={scale}
-        data={data}
-        startAngle={startAngle}
-        endAngle={endAngle}
-        width={chartWidth}
-        height={chartHeight}
-      />
-    );
-  }
-
-  render() {
-    const { id, width, height, margins, className } = this.props;
-
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={false}
-        yAxisVisible={false}
-        className={className}
-      >
-        {this.renderChart.bind(this)}
-      </ChartContainer>
-    );
-  }
-}
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={false}
+      yAxisVisible={false}
+      className={className}
+    >
+      {(props) => {
+        return cloneElement(series, {
+          scale,
+          data,
+          startAngle,
+          endAngle,
+          width: props.width,
+          height: props.height
+        });
+      }}
+    </ChartContainer>
+  );
+};
