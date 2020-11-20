@@ -36,7 +36,7 @@ export interface RadialGaugeProps extends ChartProps {
   /**
    * Gauge series component to render.
    */
-  series: ReactElement<RadialGaugeSeriesProps, typeof RadialGaugeSeries>;
+  series?: ReactElement<RadialGaugeSeriesProps, typeof RadialGaugeSeries>;
 }
 
 export const RadialGauge: FC<RadialGaugeProps> = ({
