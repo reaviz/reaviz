@@ -244,6 +244,32 @@ storiesOf('Charts/Pie Chart/Donut', module)
       />
     );
   })
+  .add('Rounded and spaced', () => {
+    const height = number('Height', 250);
+    const width = number('Width', 350);
+    const padAngle = number('Pad Angle', 0.02);
+    const padRadius = number('Pad Radius', 200);
+    const cornerRadius = number('Corner Radius', 4);
+    const color = select('Color Scheme', schemes, 'cybertron');
+    const data = object('Data', categoryData);
+
+    return (
+      <PieChart
+        width={width}
+        height={height}
+        data={data}
+        series={
+          <PieArcSeries
+            cornerRadius={cornerRadius}
+            padAngle={padAngle}
+            padRadius={padRadius}
+            doughnut={true}
+            colorScheme={color}
+          />
+        }
+      />
+    );
+  })
   .add('Labels', () => (
     <PieChart
       width={350}

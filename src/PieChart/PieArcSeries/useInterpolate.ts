@@ -3,7 +3,7 @@ import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 
-export const useInterpolate = ({ data, animated, innerArc }) => {
+export const useInterpolate = ({ data, animated, arc }) => {
   const prevEnter = useRef<any | null>(null);
 
   const exit = useMemo(() => {
@@ -22,8 +22,8 @@ export const useInterpolate = ({ data, animated, innerArc }) => {
       animated
         ? { ...DEFAULT_TRANSITION }
         : {
-            delay: 0
-          },
+          delay: 0
+        },
     [animated]
   );
 
@@ -44,10 +44,10 @@ export const useInterpolate = ({ data, animated, innerArc }) => {
   useEffect(() => {
     const from = previousEnter || prevPath.get();
     const interpolator = interpolate(from, data);
-    const unsub = spring.onChange((v) => d.set(innerArc(interpolator(v))));
+    const unsub = spring.onChange((v) => d.set(arc(interpolator(v))));
     prevPath.set(data);
     return unsub;
-  }, [innerArc, data]);
+  }, [arc, data]);
 
   return {
     d,

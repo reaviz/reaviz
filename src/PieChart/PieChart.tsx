@@ -1,13 +1,13 @@
-import React, { Component, ReactElement } from 'react';
+import React, { FC, ReactElement, useMemo } from 'react';
 import classNames from 'classnames';
-import { pie, PieArcDatum } from 'd3-shape';
-import memoize from 'memoize-one';
+import { PieArcDatum } from 'd3-shape';
+import { pie } from 'd3-shape';
 import { CloneElement } from 'rdk';
 import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers/ChartContainer';
+} from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
 import { PieArcSeries, PieArcSeriesProps } from './PieArcSeries';
 
@@ -35,63 +35,52 @@ export interface PieChartProps extends ChartProps {
   series: ReactElement<PieArcSeriesProps, typeof PieArcSeries>;
 }
 
-export class PieChart extends Component<PieChartProps> {
-  static defaultProps: PieChartProps = {
-    disabled: false,
-    displayAllLabels: false,
-    data: [],
-    margins: 10,
-    series: <PieArcSeries />
-  };
+export const PieChart: FC<PieChartProps> = ({
+  id,
+  width,
+  height,
+  className,
+  displayAllLabels = false,
+  data,
+  margins = 10,
+  series = <PieArcSeries />
+}) => {
+  const getData = useMemo(() => {
+    const pieLayout = pie<
+      void,
+      ChartShallowDataShape
+    >().value((d: ChartShallowDataShape) => Number(d.data));
 
-  getData = memoize(
-    (data: ChartShallowDataShape[], explode: boolean): ArcData[] => {
-      const pieLayout = pie<
-        void,
-        ChartShallowDataShape
-      >().value((d: ChartShallowDataShape) => Number(d.data));
-
-      // Explode sort doesn't work right...
-      if (!explode) {
-        pieLayout.sort(null);
-      }
-
-      return pieLayout(data);
+    // Explode sort doesn't work right...
+    if (!series.props.explode) {
+      pieLayout.sort(null);
     }
+
+    return pieLayout(data);
+  }, [data, series]);
+
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={false}
+      yAxisVisible={false}
+      center={true}
+      className={classNames(className)}
+    >
+      {({ chartWidth, chartHeight }: ChartContainerChildProps) => {
+        return (
+          <CloneElement<PieArcSeriesProps>
+            element={series}
+            data={getData}
+            height={chartHeight}
+            width={chartWidth}
+            displayAllLabels={displayAllLabels}
+          />
+        );
+      }}
+    </ChartContainer>
   );
-
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { chartWidth, chartHeight } = containerProps;
-    const { series, displayAllLabels } = this.props;
-    const data = this.getData(this.props.data, this.props.series.props.explode);
-
-    return (
-      <CloneElement<PieArcSeriesProps>
-        element={series}
-        data={data}
-        height={chartHeight}
-        width={chartWidth}
-        displayAllLabels={displayAllLabels}
-      />
-    );
-  }
-
-  render() {
-    const { id, width, height, margins, className } = this.props;
-
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={false}
-        yAxisVisible={false}
-        center={true}
-        className={classNames(className)}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+};

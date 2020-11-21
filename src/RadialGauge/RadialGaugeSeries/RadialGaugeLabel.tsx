@@ -3,7 +3,7 @@ import {
   ChartShallowDataShape,
   ChartInternalDataTypes
 } from '../../common/data';
-import { formatValue } from '../../common/utils/formatting';
+import { formatValue } from '../../common/utils';
 import css from './RadialGaugeLabel.module.scss';
 import classNames from 'classnames';
 
@@ -40,10 +40,11 @@ export class RadialGaugeLabel extends PureComponent<RadialGaugeLabelProps> {
 
     return (
       <text
-        dy="1.23em"
         x="0"
         y={offset}
         textAnchor="middle"
+        // This is only valid when placed below the chart
+        alignmentBaseline={'text-after-edge'}
         onClick={(nativeEvent) => onClick({ data, nativeEvent })}
         className={classNames(className, css.valueLabel)}
       >

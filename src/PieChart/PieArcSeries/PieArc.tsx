@@ -12,8 +12,8 @@ export interface PieArcMouseEvent {
 }
 
 export interface PieArcProps {
+  arc?: (data: ArcData) => string | null;
   data?: ArcData;
-  innerArc?: (data: ArcData) => string | null;
   color?: string;
   animated?: boolean;
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
@@ -27,7 +27,7 @@ export interface PieArcProps {
 export const PieArc: FC<PieArcProps> = ({
   color,
   data,
-  innerArc,
+  arc,
   cursor = 'initial',
   animated = true,
   disabled = false,
@@ -37,7 +37,7 @@ export const PieArc: FC<PieArcProps> = ({
   tooltip = <ChartTooltip />
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
-  const { transition, d } = useInterpolate({ animated, innerArc, data });
+  const { transition, d } = useInterpolate({ animated, arc, data });
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(() => (active ? chroma(color).brighten(0.5) : color), [
     color,

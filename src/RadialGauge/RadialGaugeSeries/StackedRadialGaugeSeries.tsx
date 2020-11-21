@@ -23,22 +23,22 @@ export interface StackedRadialGaugeSeriesProps {
   scale: any;
 
   /**
-   * Start angle set bby `RadialGauge` component.
+   * Start angle set by `RadialGauge` component.
    */
   startAngle: number;
 
   /**
-   * Start angle set bby `RadialGauge` component.
+   * Start angle set by `RadialGauge` component.
    */
   endAngle: number;
 
   /**
-   * Width set bby `RadialGauge` component.
+   * Width set by `RadialGauge` component.
    */
   width: number;
 
   /**
-   * Height set bby `RadialGauge` component.
+   * Height set by `RadialGauge` component.
    */
   height: number;
 
@@ -76,9 +76,9 @@ export interface StackedRadialGaugeSeriesProps {
   arcPadding: number;
 }
 
-export const StackedRadialGaugeSeries: FC<Partial<
-  StackedRadialGaugeSeriesProps
->> = ({
+export const StackedRadialGaugeSeries: FC<
+  Partial<StackedRadialGaugeSeriesProps>
+> = ({
   data,
   width,
   height,
@@ -107,19 +107,22 @@ export const StackedRadialGaugeSeries: FC<Partial<
   ) {
     const dataEndAngle = scale(point.data as number);
 
+    const outerRadius = rAxis(index);
+    const innerRadius = outerRadius - rAxis.bandwidth();
+
     return (
       <g key={point.key.toLocaleString()}>
         {outerArc &&
           cloneElement(outerArc, {
-            outerRadius: rAxis(index),
-            width: rAxis.bandwidth(),
+            outerRadius,
+            innerRadius,
             startAngle,
             endAngle
           })}
         {innerArc &&
           cloneElement(innerArc, {
-            outerRadius: rAxis(index),
-            width: rAxis.bandwidth(),
+            outerRadius,
+            innerRadius,
             startAngle,
             endAngle: dataEndAngle,
             data: point,
