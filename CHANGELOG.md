@@ -1,3 +1,5 @@
+# 9.5.0 - 11/23/20
+- [Feature] Custom arcs in pie charts #22
 # 9.4.3 - 11/20/20
 - [Fix] Fix type issues
 
