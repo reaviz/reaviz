@@ -36,17 +36,17 @@ export interface RadialGaugeArcProps {
   color: any;
 
   /**
-   * Corner Radius set by the `RadialGaugeSeries` components.
+   * Corner Radius of the arcs, see https://github.com/d3/d3-shape#arc_cornerRadius
    */
   cornerRadius?: number;
 
   /**
-   * Pad Angle set by the `RadialGaugeSeries` components.
+   * Pad Angle between adjacent arcs, see https://github.com/d3/d3-shape#arc_padAngle
    */
   padAngle?: number;
 
   /**
-   * Pad Radius set by the `RadialGaugeSeries` components.
+   * Pad Radius between adjacent arcs, see https://github.com/d3/d3-shape#arc_padRadius
    */
   padRadius?: number;
 
