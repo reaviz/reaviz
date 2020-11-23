@@ -1,12 +1,23 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { RadialGauge } from './RadialGauge';
-import { number, object, color, array, text } from '@storybook/addon-knobs';
+import {
+  number,
+  object,
+  color,
+  array,
+  text,
+  boolean
+} from '@storybook/addon-knobs';
 import { categoryData } from '../../demo';
-import { RadialGaugeSeries } from './RadialGaugeSeries';
+import {
+  RadialGaugeArc,
+  RadialGaugeSeries,
+  StackedRadialGaugeLabel,
+  StackedRadialGaugeSeries
+} from './RadialGaugeSeries';
+
 import { max } from 'd3-array';
-import { StackedRadialGaugeSeries } from './RadialGaugeSeries/StackedRadialGaugeSeries';
-import { StackedRadialGaugeLabel } from './RadialGaugeSeries/StackedRadialGaugeLabel';
 
 storiesOf('Charts/Gauge/Radial', module)
   .add('Single', () => {
@@ -14,6 +25,7 @@ storiesOf('Charts/Gauge/Radial', module)
     const endAngle = number('End Angle', Math.PI * 2);
     const minValue = number('Min Value', 0);
     const maxValue = number('Max Value', 100);
+    const arcWidth = number('Arc width', 10);
     const height = number('Height', 300);
     const width = number('Width', 300);
     const colorScheme = color('Color', '#418AD7');
@@ -33,7 +45,40 @@ storiesOf('Charts/Gauge/Radial', module)
         width={width}
         minValue={minValue}
         maxValue={maxValue}
-        series={<RadialGaugeSeries colorScheme={[colorScheme]} />}
+        series={
+          <RadialGaugeSeries arcWidth={arcWidth} colorScheme={[colorScheme]} />
+        }
+      />
+    );
+  })
+  .add('Custom Arc', () => {
+    const arcWidth = number('Arc width', 25);
+    const arcCornerRadius = number('Arc corner radius', 12.5);
+
+    const colorScheme = color('Color', '#38e52c');
+    const animateOuterArc = boolean('Animate background arc', false);
+    const data = object('Data', [
+      {
+        key: 'Austin, TX',
+        data: 24
+      }
+    ]);
+
+    return (
+      <RadialGauge
+        data={data}
+        height={300}
+        width={300}
+        series={
+          <RadialGaugeSeries
+            outerArc={
+              <RadialGaugeArc disabled={true} animated={animateOuterArc} />
+            }
+            innerArc={<RadialGaugeArc cornerRadius={arcCornerRadius} />}
+            arcWidth={arcWidth}
+            colorScheme={[colorScheme]}
+          />
+        }
       />
     );
   })

@@ -14,32 +14,37 @@ import {
 
 export interface RadialGaugeSeriesProps {
   /**
-   * Data to render set bby `RadialGauge` component.
+   * Data to render set by `RadialGauge` component.
    */
   data: ChartShallowDataShape[];
 
   /**
-   * D3 scale function set bby `RadialGauge` component.
+   * D3 scale function set by `RadialGauge` component.
    */
   scale: any;
 
   /**
-   * Start angle set bby `RadialGauge` component.
+   * Start angle set by `RadialGauge` component.
    */
   startAngle: number;
 
   /**
-   * Start angle set bby `RadialGauge` component.
+   * Start angle set by `RadialGauge` component.
    */
   endAngle: number;
 
   /**
-   * Width set bby `RadialGauge` component.
+   * The "thickness" of the arcs
+   */
+  arcWidth?: number;
+
+  /**
+   * Width set by `RadialGauge` component.
    */
   width: number;
 
   /**
-   * Height set bby `RadialGauge` component.
+   * Height set by `RadialGauge` component.
    */
   height: number;
 
@@ -87,12 +92,13 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   scale,
   startAngle,
   endAngle,
+  arcWidth = 10,
   outerArc = <RadialGaugeArc disabled={true} />,
-  innerArc = <RadialGaugeArc width={10} animated={true} />,
+  innerArc = <RadialGaugeArc animated={true} />,
   label = <RadialGaugeLabel />,
   valueLabel = <RadialGaugeValueLabel />,
   colorScheme = ['#00ECB1'],
-  padding = 10,
+  padding = 20,
   minGaugeWidth = 50,
   ...props
 }: Partial<RadialGaugeSeriesProps>) => {
@@ -135,22 +141,18 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   ) {
     const dataEndAngle = scale(point.data as number);
 
-    const baselineLabelHeight = 20;
     const outerRadius =
-      (min([
-        width - padding,
-        height - baselineLabelHeight - padding
-      ]) as number) /
-        2 -
-      10;
+      (min([width - padding * 2, height - padding * 2]) as number) / 2;
 
-    const labelOffset = height / 2 - baselineLabelHeight;
+    const innerRadius = outerRadius - arcWidth;
+
+    const labelOffset = height / 2;
 
     const x = xScale(index % columns);
     const y = yScale(Math.floor(index / columns));
 
     const xOffset = x + (width - padding) / 2;
-    const yOffset = y + (height - baselineLabelHeight) / 2;
+    const yOffset = y + height / 2;
 
     return (
       <g
@@ -158,10 +160,16 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
         key={point.key.toLocaleString()}
       >
         {outerArc &&
-          cloneElement(outerArc, { outerRadius, startAngle, endAngle })}
+          cloneElement(outerArc, {
+            outerRadius,
+            innerRadius,
+            startAngle,
+            endAngle
+          })}
         {innerArc &&
           cloneElement(innerArc, {
             outerRadius,
+            innerRadius,
             startAngle,
             endAngle: dataEndAngle,
             data: point,

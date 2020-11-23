@@ -9,18 +9,84 @@ import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
 import { getColor, ColorSchemeType } from '../../common/color';
 
 export interface PieArcSeriesProps {
+  /**
+   * Animated set by the `PieArc` components.
+   */
   animated: boolean;
+
+  /**
+   * Outer radius set by the parent component.
+   */
   outerRadius: number;
+
+  /**
+   * Inner radius set by the parent component.
+   */
   innerRadius: number;
+
+  /**
+   * Pad Angle between adjacent arcs, see https://github.com/d3/d3-shape#arc_padAngle
+   */
+  padAngle: number;
+
+  /**
+   * Pad Radius between adjacent arcs, see https://github.com/d3/d3-shape#arc_padRadius
+   */
+  padRadius: number;
+
+  /**
+   * Corner Radius of the arcs, see https://github.com/d3/d3-shape#arc_cornerRadius
+   */
+  cornerRadius: number;
+
+  /**
+   * Data set by the parent component.
+   */
   data: ArcData[];
+
+  /**
+   * Width of the arc
+   */
   arcWidth: number;
+
+  /**
+   * Doughnut, render as a donut shape
+   */
   doughnut: boolean;
+
+  /**
+   * Explode: OuterRadius will be adjusted by the data property
+   */
   explode: boolean;
+
+  /**
+   * Display all labels shows labels even if there is little space
+   */
   displayAllLabels: boolean;
+
+  /**
+   * Label component
+   */
   label?: ReactElement<PieArcLabelProps, typeof PieArcLabel> | null;
+
+  /**
+   * Arc Component
+   */
   arc: ReactElement<PieArcProps, typeof PieArc>;
+
+  /**
+   * Color scheme
+   */
   colorScheme: ColorSchemeType;
+
+  /**
+   * Height set by the parent component
+   */
   height: number;
+
+  /**
+   * Width set by the parent component
+   */
   width: number;
 }
 
@@ -34,6 +100,9 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     animated: true,
     colorScheme: 'cybertron',
     innerRadius: 0,
+    cornerRadius: 0,
+    padAngle: 0,
+    padRadius: 0,
     explode: false,
     displayAllLabels: false,
     arcWidth: 0.25,
@@ -85,12 +154,18 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     (
       data: ArcData[],
       outerRadius: number,
-      minDistance: number
+      minDistance: number,
+      cornerRadius: number,
+      padAngle: number,
+      padRadius: number
     ): Array<[number, number] | null> => {
       const outerArcRadius = outerRadius * factor;
       const outerArc = arc<any, ArcData>()
         .innerRadius(outerArcRadius)
-        .outerRadius(outerArcRadius);
+        .outerRadius(outerArcRadius)
+        .cornerRadius(cornerRadius)
+        .padAngle(padAngle)
+        .padRadius(padRadius);
 
       const positions: Array<[number, number] | null> = data.map((d) => {
         if (!this.shouldDisplayLabel(d)) {
@@ -138,13 +213,22 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     }
   );
 
-  innerArc(innerRadius: number, outerRadius: number) {
+  innerArc(
+    innerRadius: number,
+    outerRadius: number,
+    cornerRadius: number,
+    padAngle: number,
+    padRadius
+  ) {
     return (point: ArcData) => {
       const newOuter = this.calculateOuterRadius(outerRadius, point);
 
-      return arc<any, ArcData>().innerRadius(innerRadius).outerRadius(newOuter)(
-        point
-      );
+      return arc<any, ArcData>()
+        .innerRadius(innerRadius)
+        .outerRadius(newOuter)
+        .cornerRadius(cornerRadius)
+        .padRadius(padRadius)
+        .padAngle(padAngle)(point);
     };
   }
 
@@ -172,16 +256,33 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
   }
 
   render() {
-    const { animated, label, arc, data } = this.props;
+    const {
+      animated,
+      cornerRadius,
+      padAngle,
+      padRadius,
+      label,
+      arc,
+      data
+    } = this.props;
 
     const { outerRadius, innerRadius, labelWidth } = this.calculateRadius();
-    const innerArc = this.innerArc(innerRadius, outerRadius);
+    const innerArc = this.innerArc(
+      innerRadius,
+      outerRadius,
+      cornerRadius,
+      padAngle,
+      padRadius
+    );
     const positions = label
       ? this.calculateLabelPositions(
         data,
         outerRadius,
         // 4 is for vertical margins between labels
-        label.props.height + 4
+        label.props.height + 4,
+        cornerRadius,
+        padAngle,
+        padRadius
       )
       : [];
     const centroid = this.centroid(innerRadius, outerRadius);
@@ -204,7 +305,7 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
               element={arc}
               data={arcData}
               animated={animated}
-              innerArc={innerArc}
+              arc={innerArc}
               color={getColor({
                 data: this.props.data,
                 colorScheme: this.props.colorScheme,

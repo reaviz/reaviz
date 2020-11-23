@@ -12,22 +12,65 @@ export interface PieArcMouseEvent {
 }
 
 export interface PieArcProps {
+  /**
+   * The arc generator function returning an arc path
+   * @param data
+   */
+  arc?: (data: ArcData) => string | null;
+
+  /**
+   * Data is the datum passed to the arc generator function
+   */
   data?: ArcData;
-  innerArc?: (data: ArcData) => string | null;
+
+  /**
+   * Color
+   */
   color?: string;
+
+  /**
+   * Animate
+   */
   animated?: boolean;
+
+  /**
+   * Tooltip component
+   */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
+
+  /**
+   * The cursor type used when hovering
+   */
   cursor?: string;
+
+  /**
+   * Disable the arc
+   */
   disabled?: boolean;
+
+  /**
+   * OnClick event handler
+   * @param e Click event
+   */
   onClick?: (e: PieArcMouseEvent) => void;
+
+  /**
+   * MouseEnter event handler
+   * @param e MouseEnter event
+   */
   onMouseEnter?: (e: PieArcMouseEvent) => void;
+
+  /**
+   * MouseLeave event handler
+   * @param e MouseLeave event
+   */
   onMouseLeave?: (e: PieArcMouseEvent) => void;
 }
 
 export const PieArc: FC<PieArcProps> = ({
   color,
   data,
-  innerArc,
+  arc,
   cursor = 'initial',
   animated = true,
   disabled = false,
@@ -37,7 +80,7 @@ export const PieArc: FC<PieArcProps> = ({
   tooltip = <ChartTooltip />
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
-  const { transition, d } = useInterpolate({ animated, innerArc, data });
+  const { transition, d } = useInterpolate({ animated, arc, data });
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(() => (active ? chroma(color).brighten(0.5) : color), [
     color,

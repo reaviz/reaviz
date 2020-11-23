@@ -188,7 +188,7 @@
       ".(ts|tsx)": "ts-jest"
     },
     "testMatch": [
-      "<rootDir>/src/**/?(*.)(spec|test).ts?(x)"
+      "<rootDir>/src/**/*(*.)@(spec|test).[t]s?(x)"
     ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy"

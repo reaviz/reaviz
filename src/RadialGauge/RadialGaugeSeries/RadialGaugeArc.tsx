@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { FC, ReactElement, useMemo } from 'react';
 import { arc } from 'd3-shape';
 import { PieArc, ArcData, PieArcProps } from '../../PieChart';
 import { ChartShallowDataShape } from '../../common/data';
@@ -6,34 +6,49 @@ import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 
 export interface RadialGaugeArcProps {
   /**
-   * Data set by the `RadialGaugeSeries` component.
+   * Data set by the `RadialGaugeSeries` components.
    */
   data?: ChartShallowDataShape;
 
   /**
-   * Start angle set by the `RadialGaugeSeries` component.
+   * Start angle set by the `RadialGaugeSeries` components.
    */
   startAngle: number;
 
   /**
-   * End angle set by the `RadialGaugeSeries` component.
+   * End angle set by the `RadialGaugeSeries` components.
    */
   endAngle: number;
 
   /**
-   * Outer radius set by the `RadialGaugeSeries` component.
+   * Inner radius set by the `RadialGaugeSeries` components.
+   */
+  innerRadius: number;
+
+  /**
+   * Outer radius set by the `RadialGaugeSeries` components.
    */
   outerRadius: number;
 
   /**
-   * Color set by the `RadialGaugeSeries` component.
+   * Color set by the `RadialGaugeSeries` components.
    */
   color: any;
 
   /**
-   * Width set by the `RadialGaugeSeries` component.
+   * Corner Radius of the arcs, see https://github.com/d3/d3-shape#arc_cornerRadius
    */
-  width: number;
+  cornerRadius?: number;
+
+  /**
+   * Pad Angle between adjacent arcs, see https://github.com/d3/d3-shape#arc_padAngle
+   */
+  padAngle?: number;
+
+  /**
+   * Pad Radius between adjacent arcs, see https://github.com/d3/d3-shape#arc_padRadius
+   */
+  padRadius?: number;
 
   /**
    * Animation set by the `RadialGaugeSeries` component.
@@ -66,69 +81,53 @@ export interface RadialGaugeArcProps {
   onMouseLeave: (event) => void;
 }
 
-export class RadialGaugeArc extends Component<RadialGaugeArcProps> {
-  static defaultProps: Partial<RadialGaugeArcProps> = {
-    width: 5,
-    color: '#353d44',
-    animated: true,
-    disabled: false,
-    onClick: () => undefined,
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined,
-    tooltip: <ChartTooltip />
+export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
+  data,
+  startAngle,
+  endAngle,
+  innerRadius,
+  outerRadius,
+  cornerRadius = 0,
+  padAngle = 0,
+  padRadius = 0,
+  color = '#353d44',
+  animated = true,
+  disabled = false,
+  onClick = () => undefined,
+  onMouseEnter = () => undefined,
+  onMouseLeave = () => undefined,
+  tooltip = <ChartTooltip />
+}: Partial<RadialGaugeArcProps>) => {
+  /**
+   * This function will generate the arcs
+   * https://github.com/d3/d3-shape#arcs
+   */
+  const arcGenerator = useMemo(() => {
+    return arc<ArcData>()
+      .innerRadius(innerRadius)
+      .outerRadius(outerRadius)
+      .cornerRadius(cornerRadius);
+  }, [innerRadius, outerRadius, cornerRadius, padAngle, padRadius]);
+
+  const arcData: ArcData = {
+    // @ts-ignore Data must be passed
+    data: data || {},
+    startAngle,
+    endAngle,
+    padAngle
   };
 
-  getPaths(): Pick<PieArcProps, 'data' | 'innerArc'> {
-    const { outerRadius, startAngle, endAngle, width, data } = this.props;
-
-    // Calculate the inner rad based on the width
-    // and the outer rad which is height/width / 2
-    const innerRadius = outerRadius - width;
-
-    // Center arcs so inner/outer align nicely
-    const delta = (outerRadius - innerRadius) / 2;
-    const newInnerRad = innerRadius + delta;
-    const newOuterRad = outerRadius + delta;
-
-    // Create the arc fn to pass to the pie arc
-    const innerArc = arc<ArcData>()
-      .innerRadius(newInnerRad)
-      .outerRadius(newOuterRad);
-
-    return {
-      data: {
-        startAngle,
-        endAngle,
-        // @ts-ignore Data must be passed
-        data: data || {}
-      },
-      innerArc
-    };
-  }
-
-  render() {
-    const {
-      color,
-      animated,
-      disabled,
-      tooltip,
-      onClick,
-      onMouseEnter,
-      onMouseLeave
-    } = this.props;
-    const data = this.getPaths();
-
-    return (
-      <PieArc
-        {...data}
-        animated={animated}
-        color={color}
-        disabled={disabled}
-        tooltip={tooltip}
-        onClick={onClick}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      />
-    );
-  }
-}
+  return (
+    <PieArc
+      arc={arcGenerator}
+      data={arcData}
+      animated={animated}
+      color={color}
+      disabled={disabled}
+      tooltip={tooltip}
+      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    />
+  );
+};

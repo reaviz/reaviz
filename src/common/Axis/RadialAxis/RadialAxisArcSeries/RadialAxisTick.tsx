@@ -2,11 +2,11 @@ import React, { Component, ReactElement } from 'react';
 import {
   RadialAxisTickLineProps,
   RadialAxisTickLine
-} from './RadialAxisTickLine';
+} from '../RadialAxisTickSeries';
 import {
   RadialAxisTickLabelProps,
   RadialAxisTickLabel
-} from './RadialAxisTickLabel';
+} from '../RadialAxisTickSeries';
 import { CloneElement } from 'rdk';
 
 export interface RadialAxisTickProps {
