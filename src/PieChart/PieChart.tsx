@@ -41,7 +41,7 @@ export const PieChart: FC<PieChartProps> = ({
   height,
   className,
   displayAllLabels = false,
-  data,
+  data = [],
   margins = 10,
   series = <PieArcSeries />
 }) => {
