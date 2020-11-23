@@ -17,7 +17,7 @@ export interface PieChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
-  data: ChartShallowDataShape[];
+  data?: ChartShallowDataShape[];
 
   /**
    * Whether the chart is disabled.
@@ -32,7 +32,7 @@ export interface PieChartProps extends ChartProps {
   /**
    * The series component that renders the arc components.
    */
-  series: ReactElement<PieArcSeriesProps, typeof PieArcSeries>;
+  series?: ReactElement<PieArcSeriesProps, typeof PieArcSeries>;
 }
 
 export const PieChart: FC<PieChartProps> = ({
