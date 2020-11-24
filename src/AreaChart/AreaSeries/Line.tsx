@@ -102,7 +102,9 @@ export class Line extends PureComponent<LineProps, LineState> {
     if (
       this.ghostPathRef.current &&
       (prevProps.data !== this.props.data ||
-        prevProps.width !== this.props.width)
+        prevProps.width !== this.props.width ||
+        prevProps.xScale !== this.props.xScale ||
+        prevProps.yScale !== this.props.yScale)
     ) {
       this.setState({
         pathLength: this.ghostPathRef.current!.getTotalLength()
