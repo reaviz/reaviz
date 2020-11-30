@@ -121,7 +121,7 @@ Additional features:
 - Range Lines
 - SSR
 
-If you are looking for node-based graphs, checkout [reaflow](ttps://reaflow.dev).
+If you are looking for node-based graphs, checkout [reaflow](https://reaflow.dev).
 
 ## 📦 Install
 
