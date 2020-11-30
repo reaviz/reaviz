@@ -1,3 +1,6 @@
+# 9.5.1 - 11/30/20
+- [Fix] Chart renders incorrectly when using StackedAreaChart with brush and zoom #21
+
 # 9.5.0 - 11/23/20
 - [Feature] Custom arcs in pie charts #22
 # 9.4.3 - 11/20/20
