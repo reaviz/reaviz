@@ -28,7 +28,7 @@
 REAVIZ is a modular chart component library that leverages
 React natively for rendering the components while using D3js under the
 hood for calculations. The library provides an easy way to get started
-creating charts without sacrificing customization ability. Check it out.
+creating charts without sacrificing customization ability.
 
 ## 🚀 Quick Links
 
@@ -74,12 +74,13 @@ Chart types include:
 - Pie Chart
   - Standard
   - Exploded
-- Donut Chart
+  - Donut Chart
 - Sankey chart
 - Hive Plot
 - Gauge
   - Radial
   - Linear
+  - Stacked Radial
 - Map Chart
 - Heatmap
   - Standard
@@ -119,6 +120,8 @@ Additional features:
 - Bar Guidelines
 - Range Lines
 - SSR
+
+If you are looking for node-based graphs, checkout [reaflow](ttps://reaflow.dev).
 
 ## 📦 Install
 
