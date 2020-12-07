@@ -48,54 +48,55 @@ export interface BarChartProps extends ChartProps {
   /**
    * The series component that renders the bar components.
    */
-  series: ReactElement<BarSeriesProps, typeof BarSeries>;
+  series?: ReactElement<BarSeriesProps, typeof BarSeries>;
 
   /**
    * The linear axis component for the Y Axis of the chart.
    */
-  yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  yAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The linear axis component for the X Axis of the chart.
    */
-  xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  xAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The chart's background gridlines component.
    */
-  gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
+  gridlines?: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 
   /**
    * The chart's brush component.
    */
-  brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
+  brush?: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
 
   /**
    * Any secondary axis components. Useful for multi-axis charts.
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
-
-export class BarChart extends Component<BarChartProps> {
-  static defaultProps: Partial<BarChartProps> = {
-    data: [],
-    xAxis: (
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      />
-    ),
-    yAxis: <LinearYAxis type="value" />,
-    series: <BarSeries />,
-    gridlines: <GridlineSeries />,
-    brush: null
-  };
-
-  getScalesAndData(chartHeight: number, chartWidth: number) {
-    const { yAxis, xAxis, series } = this.props;
-
+export const BarChart: React.FC<BarChartProps> = ({
+  data = [],
+  xAxis = (
+    <LinearXAxis
+      type="category"
+      tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+    />
+  ),
+  yAxis = <LinearYAxis type="value" />,
+  series = <BarSeries />,
+  secondaryAxis,
+  gridlines = <GridlineSeries />,
+  brush = null,
+  id,
+  width,
+  height,
+  margins,
+  className
+}) => {
+  const getScalesAndData = (chartHeight: number, chartWidth: number) => {
     const { type, layout } = series.props;
-    const isVertical = this.getIsVertical();
+    const isVertical = getIsVertical();
     const isMarimekko = type === 'marimekko';
     const isGrouped = type === 'grouped';
     const isStacked =
@@ -104,7 +105,7 @@ export class BarChart extends Component<BarChartProps> {
       type === 'stackedDiverging';
     const isMultiSeries = isGrouped || isStacked;
 
-    let data;
+    let tmpData;
     if (isStacked) {
       let distroType: StackTypes = 'default';
       if (type === 'stackedNormalized') {
@@ -113,30 +114,30 @@ export class BarChart extends Component<BarChartProps> {
         distroType = 'diverging';
       }
 
-      data = buildBarStackData(
-        this.props.data as ChartNestedDataShape[],
+      tmpData = buildBarStackData(
+        data as ChartNestedDataShape[],
         distroType,
         layout
       );
     } else if (type === 'waterfall') {
-      data = buildWaterfall(
-        this.props.data as ChartShallowDataShape[],
+      tmpData = buildWaterfall(
+        data as ChartShallowDataShape[],
         layout,
-        this.props.series.props.binSize
+        series.props.binSize
       );
     } else if (isMarimekko) {
-      data = buildMarimekkoData(this.props.data as ChartNestedDataShape[]);
+      tmpData = buildMarimekkoData(data as ChartNestedDataShape[]);
     } else if (isGrouped) {
-      data = buildNestedChartData(
-        this.props.data as ChartNestedDataShape[],
+      tmpData = buildNestedChartData(
+        data as ChartNestedDataShape[],
         false,
         layout
       );
     } else {
-      data = buildShallowChartData(
-        this.props.data as ChartShallowDataShape[],
+      tmpData = buildShallowChartData(
+        data as ChartShallowDataShape[],
         layout,
-        this.props.series.props.binSize
+        series.props.binSize
       );
     }
 
@@ -146,66 +147,59 @@ export class BarChart extends Component<BarChartProps> {
 
     if (isVertical) {
       if (isGrouped) {
-        const { keyScale, groupScale } = this.getMultiGroupScales(
-          data,
+        const { keyScale, groupScale } = getMultiGroupScales(
+          tmpData,
           chartHeight,
           chartWidth
         );
         xScale = groupScale;
         xScale1 = keyScale;
       } else if (isMarimekko) {
-        const { keyScale, groupScale } = this.getMarimekkoGroupScales(
-          data,
+        const { keyScale, groupScale } = getMarimekkoGroupScales(
+          tmpData,
           xAxis,
           chartWidth
         );
         xScale = groupScale;
         xScale1 = keyScale;
       } else {
-        xScale = this.getKeyScale(data, xAxis, isMultiSeries, chartWidth);
+        xScale = getKeyScale(tmpData, xAxis, isMultiSeries, chartWidth);
       }
 
-      yScale = this.getValueScale(data, yAxis, isMultiSeries, chartHeight);
+      yScale = getValueScale(tmpData, yAxis, isMultiSeries, chartHeight);
     } else {
       if (isGrouped) {
-        const { keyScale, groupScale } = this.getMultiGroupScales(
-          data,
+        const { keyScale, groupScale } = getMultiGroupScales(
+          tmpData,
           chartHeight,
           chartWidth
         );
         yScale = groupScale;
         xScale1 = keyScale;
-        xScale = this.getKeyScale(data, xAxis, isMultiSeries, chartWidth);
+        xScale = getKeyScale(tmpData, xAxis, isMultiSeries, chartWidth);
       } else if (isMarimekko) {
         throw new Error(
           'Marimekko is currently not supported for horizontal layouts'
         );
       } else {
-        xScale = this.getKeyScale(data, xAxis, isMultiSeries, chartWidth);
-        yScale = this.getValueScale(data, yAxis, isMultiSeries, chartHeight);
+        xScale = getKeyScale(tmpData, xAxis, isMultiSeries, chartWidth);
+        yScale = getValueScale(tmpData, yAxis, isMultiSeries, chartHeight);
       }
     }
 
-    return { xScale, xScale1, yScale, data };
-  }
+    return { xScale, xScale1, yScale, data: tmpData };
+  };
 
-  getKeyAxis() {
-    const { yAxis, xAxis } = this.props;
-    const isVertical = this.getIsVertical();
+  const getKeyAxis = () => {
+    const isVertical = getIsVertical();
     return isVertical ? xAxis : yAxis;
-  }
+  };
 
-  getIsDiverging() {
-    return this.props.series.props.type === 'stackedDiverging';
-  }
+  const getIsDiverging = () => series.props.type === 'stackedDiverging';
 
-  getIsVertical() {
-    return this.props.series.props.layout === 'vertical';
-  }
+  const getIsVertical = () => series.props.layout === 'vertical';
 
-  getMarimekkoGroupScales(data, axis, width: number) {
-    const { series } = this.props;
-
+  const getMarimekkoGroupScales = (data, axis, width: number) => {
     const keyScale = getMarimekkoScale(width, axis.props.roundDomains);
 
     const groupScale = getMarimekkoGroupScale({
@@ -219,11 +213,10 @@ export class BarChart extends Component<BarChartProps> {
       keyScale,
       groupScale
     };
-  }
+  };
 
-  getMultiGroupScales(data, height: number, width: number) {
-    const { series } = this.props;
-    const isVertical = this.getIsVertical();
+  const getMultiGroupScales = (data, height: number, width: number) => {
+    const isVertical = getIsVertical();
     const { groupPadding, layout } = series.props;
 
     const groupScale = getGroupScale({
@@ -244,11 +237,9 @@ export class BarChart extends Component<BarChartProps> {
       groupScale,
       keyScale
     };
-  }
+  };
 
-  getKeyScale(data, axis, isMultiSeries: boolean, width: number) {
-    const { series } = this.props;
-
+  const getKeyScale = (data, axis, isMultiSeries: boolean, width: number) => {
     return getXScale({
       width,
       type: axis.props.type,
@@ -257,13 +248,16 @@ export class BarChart extends Component<BarChartProps> {
       padding: series.props.padding,
       domain: axis.props.domain,
       isMultiSeries,
-      isDiverging: this.getIsDiverging()
+      isDiverging: getIsDiverging()
     });
-  }
+  };
 
-  getValueScale(data, axis, isMultiSeries: boolean, height: number) {
-    const { series } = this.props;
-
+  const getValueScale = (
+    data,
+    axis,
+    isMultiSeries: boolean,
+    height: number
+  ) => {
     return getYScale({
       roundDomains: axis.props.roundDomains,
       padding: series.props.padding,
@@ -272,27 +266,20 @@ export class BarChart extends Component<BarChartProps> {
       data,
       domain: axis.props.domain,
       isMultiSeries,
-      isDiverging: this.getIsDiverging()
+      isDiverging: getIsDiverging()
     });
-  }
+  };
 
-  renderChart(containerProps: ChartContainerChildProps) {
+  const renderChart = (containerProps: ChartContainerChildProps) => {
     const { chartHeight, chartWidth, id, updateAxes } = containerProps;
-    const {
-      series,
-      xAxis,
-      yAxis,
-      brush,
-      gridlines,
-      secondaryAxis
-    } = this.props;
-    const { xScale, xScale1, yScale, data } = this.getScalesAndData(
+
+    const { xScale, xScale1, yScale, data } = getScalesAndData(
       chartHeight,
       chartWidth
     );
 
-    const isVertical = this.getIsVertical();
-    const keyAxis = this.getKeyAxis();
+    const isVertical = getIsVertical();
+    const keyAxis = getKeyAxis();
     const isCategorical = keyAxis.props.type === 'category';
 
     return (
@@ -362,32 +349,19 @@ export class BarChart extends Component<BarChartProps> {
         )}
       </Fragment>
     );
-  }
+  };
 
-  render() {
-    const {
-      id,
-      width,
-      height,
-      margins,
-      className,
-      series,
-      xAxis,
-      yAxis
-    } = this.props;
-
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={isAxisVisible(xAxis.props)}
-        yAxisVisible={isAxisVisible(yAxis.props)}
-        className={classNames(css.barChart, className, css[series.props.type])}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={isAxisVisible(xAxis.props)}
+      yAxisVisible={isAxisVisible(yAxis.props)}
+      className={classNames(css.barChart, className, css[series.props.type])}
+    >
+      {(props) => renderChart(props)}
+    </ChartContainer>
+  );
+};
