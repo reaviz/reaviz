@@ -1,4 +1,4 @@
-import React, { Fragment, Component, ReactElement } from 'react';
+import React, { Fragment, Component, ReactElement, FC } from 'react';
 import classNames from 'classnames';
 import {
   isAxisVisible,
@@ -48,34 +48,34 @@ export interface BarChartProps extends ChartProps {
   /**
    * The series component that renders the bar components.
    */
-  series?: ReactElement<BarSeriesProps, typeof BarSeries>;
+  series: ReactElement<BarSeriesProps, typeof BarSeries>;
 
   /**
    * The linear axis component for the Y Axis of the chart.
    */
-  yAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The linear axis component for the X Axis of the chart.
    */
-  xAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The chart's background gridlines component.
    */
-  gridlines?: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
+  gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 
   /**
    * The chart's brush component.
    */
-  brush?: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
+  brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
 
   /**
    * Any secondary axis components. Useful for multi-axis charts.
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
-export const BarChart: React.FC<BarChartProps> = ({
+export const BarChart: FC<BarChartProps> = ({
   data = [],
   xAxis = (
     <LinearXAxis
