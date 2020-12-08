@@ -31,17 +31,5 @@ export const StackedNormalizedBarChart: FC<
       }
     />
   ),
-  data,
-  xAxis,
-  brush,
-  gridlines
-}) => (
-  <BarChart
-    series={series}
-    data={data}
-    yAxis={yAxis}
-    xAxis={xAxis}
-    brush={brush}
-    gridlines={gridlines}
-  />
-);
+  ...rest
+}) => <BarChart {...rest} series={series} />;

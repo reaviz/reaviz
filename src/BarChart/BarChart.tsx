@@ -75,7 +75,7 @@ export interface BarChartProps extends ChartProps {
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
-export const BarChart: FC<BarChartProps> = ({
+export const BarChart: FC<Partial<BarChartProps>> = ({
   data = [],
   xAxis = (
     <LinearXAxis
