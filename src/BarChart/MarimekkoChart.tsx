@@ -37,5 +37,16 @@ export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = ({
       }
     />
   ),
-  ...rest
-}) => <BarChart {...rest} series={series} xAxis={xAxis} yAxis={yAxis} />;
+  data,
+  brush,
+  gridlines
+}) => (
+  <BarChart
+    series={series}
+    data={data}
+    yAxis={yAxis}
+    xAxis={xAxis}
+    brush={brush}
+    gridlines={gridlines}
+  />
+);
