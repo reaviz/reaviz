@@ -1,4 +1,4 @@
-import React, { Fragment, Component, ReactElement } from 'react';
+import React, { Fragment, ReactElement, FC } from 'react';
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
 import { MarkLine, MarkLineProps } from '../../common/MarkLine';
@@ -15,8 +15,10 @@ import {
 } from '../../common/Tooltip';
 import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '../../common/utils/interpolation';
-import { getColor, ColorSchemeType } from '../../common/color';
-import bind from 'memoize-bind';
+import {
+  getColor as getColorCommon,
+  ColorSchemeType
+} from '../../common/color';
 
 export type AreaChartTypes =
   | 'standard'
@@ -116,27 +118,43 @@ interface AreaSeriesState {
 const PADDING = 25;
 const HALF_PADDING = PADDING / 2;
 
-export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
-  static defaultProps: Partial<AreaSeriesProps> = {
-    colorScheme: 'cybertron',
-    animated: true,
-    interpolation: 'linear',
-    type: 'standard',
-    line: <Line />,
-    area: <Area />,
-    markLine: <MarkLine />,
-    tooltip: <TooltipArea />,
-    symbols: <PointSeries />
-  };
+// export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
+//   static defaultProps: Partial<AreaSeriesProps> = {
+//     colorScheme: 'cybertron',
+//     animated: true,
+//     interpolation: 'linear',
+//     type: 'standard',
+//     line: <Line />,
+//     area: <Area />,
+//     markLine: <MarkLine />,
+//     tooltip: <TooltipArea />,
+//     symbols: <PointSeries />
+//   };
+export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
+  colorScheme = 'cybertron',
+  animated = true,
+  interpolation = 'linear',
+  type = 'standard',
+  line = <Line />,
+  area = <Area />,
+  markLine = <MarkLine />,
+  tooltip = <TooltipArea />,
+  symbols = <PointSeries />,
+  data,
+  height,
+  id,
+  width,
+  isZoomed,
+  xScale,
+  yScale
+}) => {
+  const [areaState, setAreaState] = React.useState<AreaSeriesState>({});
 
-  state: AreaSeriesState = {};
-
-  getColor(point, index) {
-    const { colorScheme, data } = this.props;
-    const { activeValues } = this.state;
+  const getColor = (point, index: number) => {
+    const { activeValues } = areaState;
     const key = Array.isArray(point) ? point[0].key : point?.key;
 
-    return getColor({
+    return getColorCommon({
       data,
       colorScheme,
       active: activeValues,
@@ -144,34 +162,23 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
       index,
       key
     });
-  }
+  };
 
-  onValueEnter(event: TooltipAreaEvent) {
-    this.setState({
+  const onValueEnter = (event: TooltipAreaEvent) => {
+    setAreaState({
       activePoint: event.pointX,
       activeValues: event.value
     });
-  }
+  };
 
-  onValueLeave() {
-    this.setState({
+  const onValueLeave = () => {
+    setAreaState({
       activePoint: undefined,
       activeValues: undefined
     });
-  }
+  };
 
-  renderArea(data: ChartInternalShallowDataShape[], index = 0) {
-    const {
-      id,
-      width,
-      xScale,
-      yScale,
-      area,
-      line,
-      interpolation,
-      animated
-    } = this.props;
-
+  const renderArea = (data: ChartInternalShallowDataShape[], index = 0) => {
     return (
       <Fragment>
         {line && (
@@ -185,7 +192,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
             hasArea={area !== null}
             animated={animated}
             interpolation={interpolation}
-            color={this.getColor.bind(this)}
+            color={getColor(data, index)}
           />
         )}
         {area && (
@@ -198,25 +205,15 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
             index={index}
             animated={animated}
             interpolation={interpolation}
-            color={this.getColor.bind(this)}
+            color={getColor(data, index)}
           />
         )}
       </Fragment>
     );
-  }
+  };
 
-  renderSymbols(data: ChartInternalShallowDataShape[], index = 0) {
-    const {
-      xScale,
-      yScale,
-      symbols,
-      id,
-      height,
-      width,
-      animated,
-      area
-    } = this.props;
-    const { activeValues } = this.state;
+  const renderSymbols = (data: ChartInternalShallowDataShape[], index = 0) => {
+    const { activeValues } = areaState;
 
     const visible = symbols !== null;
     const activeSymbols =
@@ -240,16 +237,15 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
             index={index}
             data={data}
             animated={isAnimated}
-            color={() => this.getColor(data, index)}
+            color={() => getColor(data, index)}
           />
         )}
       </Fragment>
     );
-  }
+  };
 
-  renderMarkLine() {
-    const { height, markLine } = this.props;
-    const { activePoint, activeValues } = this.state;
+  const renderMarkLine = () => {
+    const { activePoint, activeValues } = areaState;
 
     return (
       <Fragment>
@@ -262,86 +258,72 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
         )}
       </Fragment>
     );
-  }
+  };
 
-  renderSingleSeries(data: ChartInternalShallowDataShape[]) {
+  const renderSingleSeries = (data: ChartInternalShallowDataShape[]) => {
     return (
       <Fragment>
-        {this.renderArea(data)}
-        {this.renderMarkLine()}
-        {this.renderSymbols(data)}
+        {renderArea(data)}
+        {renderMarkLine()}
+        {renderSymbols(data)}
       </Fragment>
     );
-  }
+  };
 
-  renderMultiSeries(data: ChartInternalNestedDataShape[]) {
+  const renderMultiSeries = (data: ChartInternalNestedDataShape[]) => {
     return (
       <Fragment>
         {data
           .map((point, index) => (
             <Fragment key={`${point.key!.toString()}`}>
-              {this.renderArea(point.data, index)}
+              {renderArea(point.data, index)}
             </Fragment>
           ))
           .reverse()}
-        {this.renderMarkLine()}
+        {renderMarkLine()}
         {data
           .map((point, index) => (
             <Fragment key={`${point.key!.toString()}`}>
-              {this.renderSymbols(point.data, index)}
+              {renderSymbols(point.data, index)}
             </Fragment>
           ))
           .reverse()}
       </Fragment>
     );
-  }
+  };
 
-  render() {
-    const {
-      data,
-      height,
-      id,
-      width,
-      isZoomed,
-      tooltip,
-      xScale,
-      yScale,
-      type
-    } = this.props;
-    const isMulti =
-      type === 'grouped' || type === 'stacked' || type === 'stackedNormalized';
+  const isMulti =
+    type === 'grouped' || type === 'stacked' || type === 'stackedNormalized';
 
-    return (
-      <Fragment>
-        <defs>
-          <clipPath id={`${id}-path`}>
-            <rect
-              width={isZoomed ? width : width + PADDING}
-              height={height + PADDING}
-              x={isZoomed ? 0 : -HALF_PADDING}
-              y={-HALF_PADDING}
-            />
-          </clipPath>
-        </defs>
-        <CloneElement<TooltipAreaProps>
-          element={tooltip}
-          xScale={xScale}
-          yScale={yScale}
-          data={data}
-          height={height}
-          width={width}
-          color={this.getColor.bind(this)}
-          onValueEnter={bind(this.onValueEnter, this)}
-          onValueLeave={bind(this.onValueLeave, this)}
-        >
-          <g clipPath={`url(#${id}-path)`}>
-            {isMulti &&
-              this.renderMultiSeries(data as ChartInternalNestedDataShape[])}
-            {!isMulti &&
-              this.renderSingleSeries(data as ChartInternalShallowDataShape[])}
-          </g>
-        </CloneElement>
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <defs>
+        <clipPath id={`${id}-path`}>
+          <rect
+            width={isZoomed ? width : width + PADDING}
+            height={height + PADDING}
+            x={isZoomed ? 0 : -HALF_PADDING}
+            y={-HALF_PADDING}
+          />
+        </clipPath>
+      </defs>
+      <CloneElement<TooltipAreaProps>
+        element={tooltip}
+        xScale={xScale}
+        yScale={yScale}
+        data={data}
+        height={height}
+        width={width}
+        color={getColor(data, 0)}
+        onValueEnter={(e: TooltipAreaEvent) => onValueEnter(e)}
+        onValueLeave={() => onValueLeave()}
+      >
+        <g clipPath={`url(#${id}-path)`}>
+          {isMulti && renderMultiSeries(data as ChartInternalNestedDataShape[])}
+          {!isMulti &&
+            renderSingleSeries(data as ChartInternalShallowDataShape[])}
+        </g>
+      </CloneElement>
+    </Fragment>
+  );
+};
