@@ -1,4 +1,10 @@
-import React, { createRef, Fragment, PureComponent } from 'react';
+import React, {
+  createRef,
+  Fragment,
+  PureComponent,
+  FC,
+  useEffect
+} from 'react';
 import { line } from 'd3-shape';
 import {
   interpolate,
@@ -77,44 +83,34 @@ export interface LineProps extends PropFunctionTypes {
   hasArea: boolean;
 }
 
-interface LineState {
-  pathLength?: number;
-}
+export const Line: FC<Partial<LineProps>> = ({
+  showZeroStroke = true,
+  strokeWidth = 3,
+  interpolation,
+  data,
+  xScale,
+  yScale,
+  width,
+  hasArea,
+  animated,
+  color,
+  index,
+  style,
+  className
+}) => {
+  const [pathLength, setPathLength] = React.useState<number>(null);
+  const ghostPathRef = createRef<SVGPathElement>();
 
-export class Line extends PureComponent<LineProps, LineState> {
-  static defaultProps: Partial<LineProps> = {
-    showZeroStroke: true,
-    strokeWidth: 3
-  };
-
-  state: LineState = {};
-  ghostPathRef = createRef<SVGPathElement>();
-
-  componentDidMount() {
-    if (this.ghostPathRef.current) {
-      this.setState({
-        pathLength: this.ghostPathRef.current!.getTotalLength()
-      });
+  useEffect(() => {
+    if (ghostPathRef.current) {
+      setPathLength(ghostPathRef.current?.getTotalLength());
     }
-  }
+  }, []);
+  useEffect(() => {
+    setPathLength(ghostPathRef.current?.getTotalLength());
+  }, [data, width, xScale, yScale]);
 
-  componentDidUpdate(prevProps: LineProps) {
-    if (
-      this.ghostPathRef.current &&
-      (prevProps.data !== this.props.data ||
-        prevProps.width !== this.props.width ||
-        prevProps.xScale !== this.props.xScale ||
-        prevProps.yScale !== this.props.yScale)
-    ) {
-      this.setState({
-        pathLength: this.ghostPathRef.current!.getTotalLength()
-      });
-    }
-  }
-
-  getLinePath(data: ChartInternalShallowDataShape[]) {
-    const { showZeroStroke, interpolation } = this.props;
-
+  const getLinePath = (data: ChartInternalShallowDataShape[]) => {
     const fn = line()
       .x((d: any) => d.x)
       .y((d: any) => d.y1)
@@ -122,11 +118,9 @@ export class Line extends PureComponent<LineProps, LineState> {
       .curve(interpolate(interpolation));
 
     return fn(data as any);
-  }
+  };
 
-  getCoords() {
-    const { data, xScale, yScale } = this.props;
-
+  const getCoords = () => {
     return data.map((item: any) => ({
       x: xScale(item.x),
       x1: xScale(item.x) - xScale(item.x1),
@@ -134,12 +128,10 @@ export class Line extends PureComponent<LineProps, LineState> {
       y0: yScale(item.y0),
       y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
-  }
+  };
 
-  getLineEnter(coords: ChartInternalShallowDataShape[]) {
-    const { hasArea } = this.props;
-    const { pathLength } = this.state;
-    const linePath = this.getLinePath(coords);
+  const getLineEnter = (coords: ChartInternalShallowDataShape[]) => {
+    const linePath = getLinePath(coords);
 
     let strokeDasharray = '';
     if (!hasArea && pathLength !== undefined) {
@@ -151,13 +143,10 @@ export class Line extends PureComponent<LineProps, LineState> {
       strokeDashoffset: 0,
       strokeDasharray: strokeDasharray
     };
-  }
+  };
 
-  getLineExit() {
-    const { hasArea, yScale, xScale, data } = this.props;
-    const { pathLength } = this.state;
-
-    let coords;
+  const getLineExit = () => {
+    let coords: any;
     if (hasArea) {
       const maxY = Math.max(...yScale.range());
       coords = data.map((item: any) => ({
@@ -168,10 +157,10 @@ export class Line extends PureComponent<LineProps, LineState> {
         y0: maxY
       })) as ChartInternalShallowDataShape[];
     } else {
-      coords = this.getCoords();
+      coords = getCoords();
     }
 
-    const linePath = this.getLinePath(coords);
+    const linePath = getLinePath(coords);
 
     let strokeDasharray = '';
     let strokeDashoffset = 0;
@@ -185,11 +174,9 @@ export class Line extends PureComponent<LineProps, LineState> {
       strokeDasharray,
       strokeDashoffset
     };
-  }
+  };
 
-  getTransition() {
-    const { animated, index, hasArea } = this.props;
-
+  const getTransition = () => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
@@ -201,44 +188,35 @@ export class Line extends PureComponent<LineProps, LineState> {
         delay: 0
       };
     }
-  }
+  };
 
-  render() {
-    const { data, color, index, strokeWidth, hasArea } = this.props;
-    const { pathLength } = this.state;
-    const coords = this.getCoords();
-    const stroke = color(data, index);
-    const enter = this.getLineEnter(coords);
-    const exit = this.getLineExit();
-    const extras = constructFunctionProps(this.props, data);
-    const transition = this.getTransition();
-    const showLine = hasArea || pathLength !== undefined;
+  const coords = getCoords();
+  const stroke = color(data, index);
+  const enter = getLineEnter(coords);
+  const exit = getLineExit();
+  const extras = constructFunctionProps({ style, className }, data);
+  const transition = getTransition();
+  const showLine = hasArea || pathLength !== undefined;
 
-    return (
-      <Fragment>
-        {showLine && (
-          <MotionPath
-            {...extras}
-            pointerEvents="none"
-            stroke={stroke}
-            strokeWidth={strokeWidth}
-            fill="none"
-            transition={transition}
-            custom={{
-              enter,
-              exit
-            }}
-          />
-        )}
-        {!hasArea && (
-          <path
-            opacity="0"
-            d={enter.d}
-            ref={this.ghostPathRef}
-            pointerEvents="none"
-          />
-        )}
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      {showLine && (
+        <MotionPath
+          {...extras}
+          pointerEvents="none"
+          stroke={stroke}
+          strokeWidth={strokeWidth}
+          fill="none"
+          transition={transition}
+          custom={{
+            enter,
+            exit
+          }}
+        />
+      )}
+      {!hasArea && (
+        <path opacity="0" d={enter.d} ref={ghostPathRef} pointerEvents="none" />
+      )}
+    </Fragment>
+  );
+};
