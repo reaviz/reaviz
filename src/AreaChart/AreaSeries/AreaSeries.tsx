@@ -1,4 +1,4 @@
-import React, { Fragment, ReactElement, FC } from 'react';
+import React, { Fragment, ReactElement, FC, useCallback } from 'react';
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
 import { MarkLine, MarkLineProps } from '../../common/MarkLine';
@@ -148,7 +148,13 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   xScale,
   yScale
 }) => {
-  const [areaState, setAreaState] = React.useState<AreaSeriesState>({});
+  const initialAreaState: AreaSeriesState = {
+    activePoint: undefined,
+    activeValues: undefined
+  };
+  const [areaState, setAreaState] = React.useState<AreaSeriesState>(
+    initialAreaState
+  );
 
   const getColor = (point, index: number) => {
     const { activeValues } = areaState;
@@ -172,79 +178,82 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   };
 
   const onValueLeave = () => {
-    setAreaState({
-      activePoint: undefined,
-      activeValues: undefined
-    });
+    setAreaState(initialAreaState);
   };
 
-  const renderArea = (data: ChartInternalShallowDataShape[], index = 0) => {
-    return (
-      <Fragment>
-        {line && (
-          <CloneElement<LineProps>
-            element={line}
-            xScale={xScale}
-            yScale={yScale}
-            data={data}
-            width={width}
-            index={index}
-            hasArea={area !== null}
-            animated={animated}
-            interpolation={interpolation}
-            color={getColor(data, index)}
-          />
-        )}
-        {area && (
-          <CloneElement<AreaProps>
-            element={area}
-            id={`${id}-area-${index}`}
-            xScale={xScale}
-            yScale={yScale}
-            data={data}
-            index={index}
-            animated={animated}
-            interpolation={interpolation}
-            color={getColor(data, index)}
-          />
-        )}
-      </Fragment>
-    );
-  };
+  const renderArea = useCallback(
+    (data: ChartInternalShallowDataShape[], index = 0) => {
+      return (
+        <Fragment>
+          {line && (
+            <CloneElement<LineProps>
+              element={line}
+              xScale={xScale}
+              yScale={yScale}
+              data={data}
+              width={width}
+              index={index}
+              hasArea={area !== null}
+              animated={animated}
+              interpolation={interpolation}
+              color={getColor}
+            />
+          )}
+          {area && (
+            <CloneElement<AreaProps>
+              element={area}
+              id={`${id}-area-${index}`}
+              xScale={xScale}
+              yScale={yScale}
+              data={data}
+              index={index}
+              animated={animated}
+              interpolation={interpolation}
+              color={getColor}
+            />
+          )}
+        </Fragment>
+      );
+    },
+    [line, xScale, yScale, data, width, animated, interpolation]
+  );
 
-  const renderSymbols = (data: ChartInternalShallowDataShape[], index = 0) => {
-    const { activeValues } = areaState;
+  const renderSymbols = useCallback(
+    (data: ChartInternalShallowDataShape[], index = 0) => {
+      const { activeValues } = areaState;
 
-    const visible = symbols !== null;
-    const activeSymbols =
-      (symbols && symbols.props.activeValues) || activeValues;
+      const visible = symbols !== null;
+      const activeSymbols =
+        (symbols && symbols.props.activeValues) || activeValues;
 
-    // Animations are only valid for Area
-    const isAnimated = area !== undefined && animated && !activeSymbols;
+      // Animations are only valid for Area
+      const isAnimated = area !== undefined && animated && !activeSymbols;
 
-    return (
-      <Fragment>
-        {visible && (
-          <CloneElement<PointSeriesProps>
-            element={symbols}
-            key={`point-series-${id}`}
-            id={id}
-            height={height}
-            width={width}
-            activeValues={activeSymbols}
-            xScale={xScale}
-            yScale={yScale}
-            index={index}
-            data={data}
-            animated={isAnimated}
-            color={() => getColor(data, index)}
-          />
-        )}
-      </Fragment>
-    );
-  };
+      return (
+        <Fragment>
+          {visible && (
+            <CloneElement<PointSeriesProps>
+              element={symbols}
+              key={`point-series-${id}`}
+              id={id}
+              height={height}
+              width={width}
+              activeValues={activeSymbols}
+              xScale={xScale}
+              yScale={yScale}
+              index={index}
+              data={data}
+              animated={isAnimated}
+              color={() => getColor(data, index)}
+            />
+          )}
+        </Fragment>
+      );
+    },
+    [data, areaState, symbols, height, width, xScale, yScale]
+  );
 
-  const renderMarkLine = () => {
+  const renderMarkLine = useCallback(() => {
     const { activePoint, activeValues } = areaState;
 
     return (
@@ -258,39 +267,45 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         )}
       </Fragment>
     );
-  };
+  }, [areaState, markLine, height]);
 
-  const renderSingleSeries = (data: ChartInternalShallowDataShape[]) => {
-    return (
-      <Fragment>
-        {renderArea(data)}
-        {renderMarkLine()}
-        {renderSymbols(data)}
-      </Fragment>
-    );
-  };
+  const renderSingleSeries = useCallback(
+    (data: ChartInternalShallowDataShape[]) => {
+      return (
+        <Fragment>
+          {renderArea(data)}
+          {renderMarkLine()}
+          {renderSymbols(data)}
+        </Fragment>
+      );
+    },
+    [data]
+  );
 
-  const renderMultiSeries = (data: ChartInternalNestedDataShape[]) => {
-    return (
-      <Fragment>
-        {data
-          .map((point, index) => (
-            <Fragment key={`${point.key!.toString()}`}>
-              {renderArea(point.data, index)}
-            </Fragment>
-          ))
-          .reverse()}
-        {renderMarkLine()}
-        {data
-          .map((point, index) => (
-            <Fragment key={`${point.key!.toString()}`}>
-              {renderSymbols(point.data, index)}
-            </Fragment>
-          ))
-          .reverse()}
-      </Fragment>
-    );
-  };
+  const renderMultiSeries = useCallback(
+    (data: ChartInternalNestedDataShape[]) => {
+      return (
+        <Fragment>
+          {data
+            .map((point, index) => (
+              <Fragment key={`${point.key!.toString()}`}>
+                {renderArea(point.data, index)}
+              </Fragment>
+            ))
+            .reverse()}
+          {renderMarkLine()}
+          {data
+            .map((point, index) => (
+              <Fragment key={`${point.key!.toString()}`}>
+                {renderSymbols(point.data, index)}
+              </Fragment>
+            ))
+            .reverse()}
+        </Fragment>
+      );
+    },
+    [data]
+  );
 
   const isMulti =
     type === 'grouped' || type === 'stacked' || type === 'stackedNormalized';
@@ -314,7 +329,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         data={data}
         height={height}
         width={width}
-        color={getColor(data, 0)}
+        color={getColor}
         onValueEnter={(e: TooltipAreaEvent) => onValueEnter(e)}
         onValueLeave={() => onValueLeave()}
       >
