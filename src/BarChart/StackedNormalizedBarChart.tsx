@@ -32,4 +32,8 @@ export const StackedNormalizedBarChart: FC<
     />
   ),
   ...rest
-}) => <BarChart {...rest} series={series} />;
+}) => {
+  console.log('=================');
+  console.log(rest);
+  return <BarChart {...rest} series={series} />;
+};

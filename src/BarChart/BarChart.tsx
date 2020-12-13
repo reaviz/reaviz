@@ -1,4 +1,4 @@
-import React, { Fragment, Component, ReactElement, FC } from 'react';
+import React, { Fragment, useCallback, ReactElement, FC } from 'react';
 import classNames from 'classnames';
 import {
   isAxisVisible,
@@ -270,86 +270,89 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
     });
   };
 
-  const renderChart = (containerProps: ChartContainerChildProps) => {
-    const { chartHeight, chartWidth, id, updateAxes } = containerProps;
+  const renderChart = useCallback(
+    (containerProps: ChartContainerChildProps) => {
+      const { chartHeight, chartWidth, id, updateAxes } = containerProps;
 
-    const { xScale, xScale1, yScale, data } = getScalesAndData(
-      chartHeight,
-      chartWidth
-    );
+      const { xScale, xScale1, yScale, data } = getScalesAndData(
+        chartHeight,
+        chartWidth
+      );
 
-    const isVertical = getIsVertical();
-    const keyAxis = getKeyAxis();
-    const isCategorical = keyAxis.props.type === 'category';
+      const isVertical = getIsVertical();
+      const keyAxis = getKeyAxis();
+      const isCategorical = keyAxis.props.type === 'category';
 
-    return (
-      <Fragment>
-        {containerProps.chartSized && gridlines && (
-          <CloneElement<GridlineSeriesProps>
-            element={gridlines}
-            height={chartHeight}
-            width={chartWidth}
-            yScale={yScale}
-            xScale={xScale}
-            yAxis={yAxis.props}
-            xAxis={xAxis.props}
-          />
-        )}
-        <CloneElement<LinearAxisProps>
-          element={xAxis}
-          height={chartHeight}
-          width={chartWidth}
-          scale={xScale}
-          onDimensionsChange={bind(
-            updateAxes,
-            this,
-            isVertical ? 'horizontal' : 'vertical'
-          )}
-        />
-        <CloneElement<LinearAxisProps>
-          element={yAxis}
-          height={chartHeight}
-          width={chartWidth}
-          scale={yScale}
-          onDimensionsChange={bind(
-            updateAxes,
-            this,
-            isVertical ? 'vertical' : 'horizontal'
-          )}
-        />
-        {secondaryAxis &&
-          secondaryAxis.map((axis, i) => (
-            <CloneElement<LinearAxisProps>
-              key={i}
-              element={axis}
+      return (
+        <Fragment>
+          {containerProps.chartSized && gridlines && (
+            <CloneElement<GridlineSeriesProps>
+              element={gridlines}
               height={chartHeight}
               width={chartWidth}
-              onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+              yScale={yScale}
+              xScale={xScale}
+              yAxis={yAxis.props}
+              xAxis={xAxis.props}
             />
-          ))}
-        {containerProps.chartSized && (
-          <CloneElement<ChartBrushProps>
-            element={brush}
+          )}
+          <CloneElement<LinearAxisProps>
+            element={xAxis}
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
-          >
-            <CloneElement<BarSeriesProps>
-              element={series}
-              id={`bar-series-${id}`}
-              data={data}
+            onDimensionsChange={bind(
+              updateAxes,
+              this,
+              isVertical ? 'horizontal' : 'vertical'
+            )}
+          />
+          <CloneElement<LinearAxisProps>
+            element={yAxis}
+            height={chartHeight}
+            width={chartWidth}
+            scale={yScale}
+            onDimensionsChange={bind(
+              updateAxes,
+              this,
+              isVertical ? 'vertical' : 'horizontal'
+            )}
+          />
+          {secondaryAxis &&
+            secondaryAxis.map((axis, i) => (
+              <CloneElement<LinearAxisProps>
+                key={i}
+                element={axis}
+                height={chartHeight}
+                width={chartWidth}
+                onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+              />
+            ))}
+          {containerProps.chartSized && (
+            <CloneElement<ChartBrushProps>
+              element={brush}
               height={chartHeight}
               width={chartWidth}
-              isCategorical={isCategorical}
-              xScale={xScale}
-              xScale1={xScale1}
-              yScale={yScale}
-            />
-          </CloneElement>
-        )}
-      </Fragment>
-    );
-  };
+              scale={xScale}
+            >
+              <CloneElement<BarSeriesProps>
+                element={series}
+                id={`bar-series-${id}`}
+                data={data}
+                height={chartHeight}
+                width={chartWidth}
+                isCategorical={isCategorical}
+                xScale={xScale}
+                xScale1={xScale1}
+                yScale={yScale}
+              />
+            </CloneElement>
+          )}
+        </Fragment>
+      );
+    },
+    []
+  );
 
   return (
     <ChartContainer
@@ -361,7 +364,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       yAxisVisible={isAxisVisible(yAxis.props)}
       className={classNames(css.barChart, className, css[series.props.type])}
     >
-      {(props) => renderChart(props)}
+      {renderChart}
     </ChartContainer>
   );
 };
