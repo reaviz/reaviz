@@ -1,4 +1,4 @@
-import React, { Fragment, FC, ReactElement, useCallback } from 'react';
+import React, { Fragment, FC, ReactElement, useCallback, useMemo } from 'react';
 import { area } from 'd3-shape';
 import { Gradient, GradientProps } from '../../common/Gradient';
 import { Mask, MaskProps } from '../../common/Mask';
@@ -92,7 +92,7 @@ export const Area: FC<Partial<AreaProps>> = ({
     return fn(shallowData as any);
   };
 
-  const getCoords = () => {
+  const coords = useMemo(() => {
     return data.map((item: any) => ({
       x: xScale(item.x),
       x1: xScale(item.x) - xScale(item.x1),
@@ -100,7 +100,7 @@ export const Area: FC<Partial<AreaProps>> = ({
       y0: yScale(item.y0),
       y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
-  };
+  }, [data]);
 
   const getAreaEnter = (coords: ChartInternalShallowDataShape[]) => {
     const areaPath = getAreaPath(coords);
@@ -178,7 +178,6 @@ export const Area: FC<Partial<AreaProps>> = ({
     },
     [style, className, id, mask, data]
   );
-  const coords = getCoords();
   const stroke = color(data, index);
 
   return (
