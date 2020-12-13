@@ -119,27 +119,27 @@ const PADDING = 25;
 const HALF_PADDING = PADDING / 2;
 
 // export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
-//   static defaultProps: Partial<AreaSeriesProps> = {
-//     colorScheme: 'cybertron',
-//     animated: true,
-//     interpolation: 'linear',
-//     type: 'standard',
-//     line: <Line />,
-//     area: <Area />,
-//     markLine: <MarkLine />,
-//     tooltip: <TooltipArea />,
-//     symbols: <PointSeries />
-//   };
+export const AriaSeriesDefaultProps: Partial<AreaSeriesProps> = {
+  colorScheme: 'cybertron',
+  animated: true,
+  interpolation: 'linear',
+  type: 'standard',
+  line: <Line />,
+  area: <Area />,
+  markLine: <MarkLine />,
+  tooltip: <TooltipArea />,
+  symbols: <PointSeries />
+};
 export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
-  colorScheme = 'cybertron',
-  animated = true,
-  interpolation = 'linear',
-  type = 'standard',
-  line = <Line />,
-  area = <Area />,
-  markLine = <MarkLine />,
-  tooltip = <TooltipArea />,
-  symbols = <PointSeries />,
+  colorScheme = AriaSeriesDefaultProps.colorScheme,
+  animated = AriaSeriesDefaultProps.animated,
+  interpolation = AriaSeriesDefaultProps.interpolation,
+  type = AriaSeriesDefaultProps.type,
+  line = AriaSeriesDefaultProps.line,
+  area = AriaSeriesDefaultProps.area,
+  markLine = AriaSeriesDefaultProps.markLine,
+  tooltip = AriaSeriesDefaultProps.tooltip,
+  symbols = AriaSeriesDefaultProps.symbols,
   data,
   height,
   id,

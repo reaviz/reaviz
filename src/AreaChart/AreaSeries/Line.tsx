@@ -121,7 +121,7 @@ export const Line: FC<Partial<LineProps>> = ({
   };
 
   const getCoords = () => {
-    return data.map((item: any) => ({
+    return data?.map((item: any) => ({
       x: xScale(item.x),
       x1: xScale(item.x) - xScale(item.x1),
       y: yScale(item.y),
