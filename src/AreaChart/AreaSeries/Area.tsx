@@ -82,14 +82,14 @@ export const Area: FC<Partial<AreaProps>> = ({
   xScale,
   yScale
 }) => {
-  const getAreaPath = (data: ChartInternalShallowDataShape[]) => {
+  const getAreaPath = (shallowData: ChartInternalShallowDataShape[]) => {
     const fn = area()
       .x((d: any) => d.x)
       .y0((d: any) => d.y0)
       .y1((d: any) => d.y1)
       .curve(interpolate(interpolation));
 
-    return fn(data as any);
+    return fn(shallowData as any);
   };
 
   const getCoords = () => {

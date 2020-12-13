@@ -1,4 +1,10 @@
-import React, { Fragment, ReactElement, FC, useCallback } from 'react';
+import React, {
+  Fragment,
+  ReactElement,
+  FC,
+  useCallback,
+  useState
+} from 'react';
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
 import { MarkLine, MarkLineProps } from '../../common/MarkLine';
@@ -117,19 +123,10 @@ interface AreaSeriesState {
 // and we want to add a little bit of padding to prevent clipping
 const PADDING = 25;
 const HALF_PADDING = PADDING / 2;
-
-// export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
-//   static defaultProps: Partial<AreaSeriesProps> = {
-//     colorScheme: 'cybertron',
-//     animated: true,
-//     interpolation: 'linear',
-//     type: 'standard',
-//     line: <Line />,
-//     area: <Area />,
-//     markLine: <MarkLine />,
-//     tooltip: <TooltipArea />,
-//     symbols: <PointSeries />
-//   };
+const initialAreaState: AreaSeriesState = {
+  activePoint: undefined,
+  activeValues: undefined
+};
 export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   colorScheme = 'cybertron',
   animated = true,
@@ -148,13 +145,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   xScale,
   yScale
 }) => {
-  const initialAreaState: AreaSeriesState = {
-    activePoint: undefined,
-    activeValues: undefined
-  };
-  const [areaState, setAreaState] = React.useState<AreaSeriesState>(
-    initialAreaState
-  );
+  const [areaState, setAreaState] = useState<AreaSeriesState>(initialAreaState);
 
   const getColor = (point, index: number) => {
     const { activeValues } = areaState;
@@ -182,7 +173,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   };
 
   const renderArea = useCallback(
-    (data: ChartInternalShallowDataShape[], index = 0) => {
+    (shallowData: ChartInternalShallowDataShape[], index = 0) => {
       return (
         <Fragment>
           {line && (
@@ -190,7 +181,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               element={line}
               xScale={xScale}
               yScale={yScale}
-              data={data}
+              data={shallowData}
               width={width}
               index={index}
               hasArea={area !== null}
@@ -205,7 +196,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               id={`${id}-area-${index}`}
               xScale={xScale}
               yScale={yScale}
-              data={data}
+              data={shallowData}
               index={index}
               animated={animated}
               interpolation={interpolation}
@@ -215,11 +206,11 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         </Fragment>
       );
     },
-    [line, xScale, yScale, data, width, animated, interpolation]
+    [line, xScale, yScale, width, animated, interpolation]
   );
 
   const renderSymbols = useCallback(
-    (data: ChartInternalShallowDataShape[], index = 0) => {
+    (shallowData: ChartInternalShallowDataShape[], index = 0) => {
       const { activeValues } = areaState;
 
       const visible = symbols !== null;
@@ -242,7 +233,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               xScale={xScale}
               yScale={yScale}
               index={index}
-              data={data}
+              data={shallowData}
               animated={isAnimated}
               color={() => getColor(data, index)}
             />
@@ -270,12 +261,12 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   }, [areaState, markLine, height]);
 
   const renderSingleSeries = useCallback(
-    (data: ChartInternalShallowDataShape[]) => {
+    (shallowData: ChartInternalShallowDataShape[]) => {
       return (
         <Fragment>
-          {renderArea(data)}
+          {renderArea(shallowData)}
           {renderMarkLine()}
-          {renderSymbols(data)}
+          {renderSymbols(shallowData)}
         </Fragment>
       );
     },
@@ -283,10 +274,10 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   );
 
   const renderMultiSeries = useCallback(
-    (data: ChartInternalNestedDataShape[]) => {
+    (nestedData: ChartInternalNestedDataShape[]) => {
       return (
         <Fragment>
-          {data
+          {nestedData
             .map((point, index) => (
               <Fragment key={`${point.key!.toString()}`}>
                 {renderArea(point.data, index)}
@@ -294,7 +285,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             ))
             .reverse()}
           {renderMarkLine()}
-          {data
+          {nestedData
             .map((point, index) => (
               <Fragment key={`${point.key!.toString()}`}>
                 {renderSymbols(point.data, index)}

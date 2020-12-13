@@ -1,10 +1,4 @@
-import React, {
-  createRef,
-  Fragment,
-  PureComponent,
-  FC,
-  useEffect
-} from 'react';
+import React, { createRef, Fragment, FC, useEffect } from 'react';
 import { line } from 'd3-shape';
 import {
   interpolate,
@@ -98,7 +92,7 @@ export const Line: FC<Partial<LineProps>> = ({
   style,
   className
 }) => {
-  const [pathLength, setPathLength] = React.useState<number>(null);
+  const [pathLength, setPathLength] = React.useState<number | null>(null);
   const ghostPathRef = createRef<SVGPathElement>();
 
   useEffect(() => {
