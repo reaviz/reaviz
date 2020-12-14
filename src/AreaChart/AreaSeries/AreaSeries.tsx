@@ -235,13 +235,13 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               index={index}
               data={shallowData}
               animated={isAnimated}
-              color={() => getColor(data, index)}
+              color={() => getColor(shallowData, index)}
             />
           )}
         </Fragment>
       );
     },
-    [data, areaState, symbols, height, width, xScale, yScale]
+    [areaState, symbols, height, width, xScale, yScale]
   );
 
   const renderMarkLine = useCallback(() => {
@@ -270,7 +270,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         </Fragment>
       );
     },
-    [data]
+    []
   );
 
   const renderMultiSeries = useCallback(
@@ -295,7 +295,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         </Fragment>
       );
     },
-    [data]
+    []
   );
 
   const isMulti =
