@@ -1,4 +1,4 @@
-import React, { createRef, Fragment, FC, useEffect } from 'react';
+import React, { Fragment, FC, useEffect, useRef } from 'react';
 import { line } from 'd3-shape';
 import {
   interpolate,
@@ -93,7 +93,7 @@ export const Line: FC<Partial<LineProps>> = ({
   className
 }) => {
   const [pathLength, setPathLength] = React.useState<number | null>(null);
-  const ghostPathRef = createRef<SVGPathElement>();
+  const ghostPathRef = useRef<SVGPathElement | null>(null);
 
   useEffect(() => {
     if (ghostPathRef.current) {
