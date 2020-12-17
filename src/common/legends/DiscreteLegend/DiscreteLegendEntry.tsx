@@ -1,11 +1,11 @@
 import React, { Component, ReactNode, ReactElement } from 'react';
-import css from './DiscreteLegendEntry.module.scss';
 import classNames from 'classnames';
 import {
   DiscreteLegendSymbol,
   DiscreteLegendSymbolProps
 } from './DiscreteLegendSymbol';
 import { CloneElement } from 'rdk';
+import css from './DiscreteLegendEntry.module.css';
 
 export interface DiscreteLegendEntryProps {
   /**

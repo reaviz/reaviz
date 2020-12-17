@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import css from './MarkLine.module.scss';
+import css from './MarkLine.module.css';
 
 export interface MarkLineProps {
   height: number;

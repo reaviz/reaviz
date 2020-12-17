@@ -5,7 +5,7 @@ import {
   DiscreteLegendEntryProps,
   DiscreteLegendEntry
 } from './DiscreteLegendEntry';
-import css from './DiscreteLegend.module.scss';
+import css from './DiscreteLegend.module.css';
 
 export interface DiscreteLegendProps {
   /**

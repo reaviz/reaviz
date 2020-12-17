@@ -30,7 +30,7 @@ import {
   getMarimekkoGroupScale
 } from '../common/scales';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
-import css from './BarChart.module.scss';
+import css from './BarChart.module.css';
 import {
   ChartContainer,
   ChartContainerChildProps,

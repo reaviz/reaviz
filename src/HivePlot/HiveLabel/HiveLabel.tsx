@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import css from './HiveLabel.module.scss';
+import css from './HiveLabel.module.css';
 
 const degrees = (radians: number) => {
   const res = (radians / Math.PI) * 180;

@@ -1,8 +1,6 @@
 import React, { cloneElement, FC, ReactElement } from 'react';
-
 import { range } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-
 import { ChartShallowDataShape } from '../../common/data';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';

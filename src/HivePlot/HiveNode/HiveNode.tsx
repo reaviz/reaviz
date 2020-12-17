@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Node } from '../types';
-import css from './HiveNode.module.scss';
 import { getDegrees } from '../../common/utils/math';
+import css from './HiveNode.module.css';
 
 interface HiveNodeProps {
   angle: (...args: any[]) => any;

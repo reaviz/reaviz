@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Axis, Node } from '../types';
 import { formatValue } from '../../common/utils/formatting';
-import css from './HiveTooltip.module.scss';
+import css from './HiveTooltip.module.css';
 
 interface HiveTooltipProps {
   axis: Axis[];

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
 import { Node } from '../utils';
-import css from './SankeyLabel.module.scss';
+import css from './SankeyLabel.module.css';
 
 export type Location = 'inside' | 'outside';
 

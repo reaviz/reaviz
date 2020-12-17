@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import classNames from 'classnames';
-import css from './StackedRadialGaugeValueLabel.module.scss';
+import css from './StackedRadialGaugeValueLabel.module.css';
 
 export interface StackedRadialGaugeLabelProps {
   /**

@@ -21,7 +21,7 @@ import {
   ChartShallowDataShape,
   buildNestedChartData
 } from '../common/data';
-import css from './AreaChart.module.scss';
+import css from './AreaChart.module.css';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
 import {
   ZoomPanChangeEvent,

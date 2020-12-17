@@ -1,6 +1,6 @@
 import React, { FC, ReactElement, useMemo } from 'react';
 import { arc } from 'd3-shape';
-import { PieArc, ArcData, PieArcProps } from '../../PieChart';
+import { PieArc, ArcData } from '../../PieChart';
 import { ChartShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 

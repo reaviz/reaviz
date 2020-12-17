@@ -11,10 +11,10 @@ import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { CloneElement } from 'rdk';
-import css from './RadialScatterPoint.module.scss';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes } from '../../common/color';
+import css from './RadialScatterPoint.module.css';
 
 export interface RadialScatterPointProps {
   /**

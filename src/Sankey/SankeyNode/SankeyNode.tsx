@@ -8,7 +8,7 @@ import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'realayers';
 import { SankeyLabel, SankeyLabelProps } from '../SankeyLabel';
 import { Node, DEFAULT_COLOR } from '../utils';
-import css from './SankeyNode.module.scss';
+import css from './SankeyNode.module.css';
 
 export interface SankeyNodeProps extends Node {
   /**

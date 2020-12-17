@@ -4,8 +4,8 @@ import {
   ChartInternalDataTypes
 } from '../../common/data';
 import { formatValue } from '../../common/utils';
-import css from './RadialGaugeLabel.module.scss';
 import classNames from 'classnames';
+import css from './RadialGaugeLabel.module.css';
 
 export interface RadialGaugeLabelProps {
   /**

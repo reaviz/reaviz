@@ -15,10 +15,10 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '../../common/utils/functions';
-import css from './ScatterPoint.module.scss';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes, getColor, ColorSchemeType } from '../../common/color';
+import css from './ScatterPoint.module.css';
 
 export type ScatterPointProps = {
   /**

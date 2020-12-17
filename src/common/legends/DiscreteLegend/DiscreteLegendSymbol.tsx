@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import css from './DiscreteLegendSymbol.module.scss';
 import classNames from 'classnames';
+import css from './DiscreteLegendSymbol.module.css';
 
 export interface DiscreteLegendSymbolProps {
   /**

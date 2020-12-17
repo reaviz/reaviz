@@ -1,5 +1,5 @@
 import React, { FC, useMemo } from 'react';
-import css from './Gridline.module.scss';
+import css from './Gridline.module.css';
 
 export interface GridlineProps {
   /**

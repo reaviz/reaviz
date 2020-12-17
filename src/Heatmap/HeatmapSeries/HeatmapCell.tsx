@@ -7,11 +7,11 @@ import {
   PropFunctionTypes
 } from '../../common/utils/functions';
 import chroma from 'chroma-js';
-import css from './HeatmapCell.module.scss';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { ChartInternalShallowDataShape } from '../../common/data';
+import css from './HeatmapCell.module.css';
 
 export type HeatmapCellProps = {
   /**

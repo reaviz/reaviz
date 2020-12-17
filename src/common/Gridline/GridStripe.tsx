@@ -1,5 +1,5 @@
 import React, { FC, useMemo } from 'react';
-import css from './GridStripe.module.scss';
+import css from './GridStripe.module.css';
 
 export interface GridStripeProps {
   /**

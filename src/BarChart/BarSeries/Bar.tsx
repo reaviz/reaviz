@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import { ChartInternalShallowDataShape, Direction } from '../../common/data';
 import { RangeLinesProps, RangeLines } from './RangeLines';
 import bind from 'memoize-bind';
-import css from './Bar.module.scss';
 import { CloneElement } from 'rdk';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
@@ -18,6 +17,7 @@ import { BarLabelProps, BarLabel } from './BarLabel';
 import { formatValue } from '../../common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '../../common/Tooltip';
+import css from './Bar.module.css';
 
 export type BarType =
   | 'standard'

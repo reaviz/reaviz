@@ -7,7 +7,7 @@ import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'realayers';
 import { NodeExtra, Node, Link, DEFAULT_COLOR } from '../utils';
-import css from './SankeyLink.module.scss';
+import css from './SankeyLink.module.css';
 
 export interface SankeyLinkProps extends Link {
   /**

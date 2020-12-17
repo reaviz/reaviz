@@ -1,7 +1,7 @@
 import React, { Fragment, useRef, useState, FC } from 'react';
 import { Tooltip } from 'realayers';
 import { motion } from 'framer-motion';
-import css from './MapMarker.module.scss';
+import css from './MapMarker.module.css';
 
 export interface MapMarkerProps {
   coordinates: [number, number];

@@ -22,7 +22,6 @@ import {
   ChartZoomPanProps,
   ChartZoomPan
 } from '../common/ZoomPan';
-import css from './ScatterPlot.module.scss';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
 import {
   ChartProps,
@@ -31,6 +30,7 @@ import {
 } from '../common/containers/ChartContainer';
 import { CloneElement } from 'rdk';
 import memoize from 'memoize-one';
+import css from './ScatterPlot.module.css';
 
 interface ScatterPlotProps extends ChartProps {
   /**

@@ -5,14 +5,7 @@ const reavizCodesandboxTemplatePackageJSON = require('../docs/tools/templates/re
 module.exports = {
   stories: ['../docs/**/*.story.mdx', '../src/**/*.story.tsx'],
   addons: [
-    {
-      name: '@storybook/preset-scss',
-      options: {
-        cssLoaderOptions: {
-          modules: true
-        }
-      }
-    },
+    'storybook-css-modules-preset',
     '@storybook/addon-google-analytics',
     '@storybook/addon-knobs',
     '@storybook/addon-docs/preset',

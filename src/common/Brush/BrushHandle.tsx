@@ -3,7 +3,7 @@ import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { range } from 'd3-array';
 import { Move } from '../Gestures/Move';
-import css from './BrushHandle.module.scss';
+import css from './BrushHandle.module.css';
 
 export interface BrushHandleProps {
   height: number;

@@ -1,8 +1,8 @@
 import React, { PureComponent, Fragment } from 'react';
 import bind from 'memoize-bind';
 import { BrushHandle } from './BrushHandle';
-import css from './BrushSlice.module.scss';
 import { Move } from '../Gestures/Move';
+import css from './BrushSlice.module.css';
 
 export interface BrushChangeEvent {
   start?: number;
