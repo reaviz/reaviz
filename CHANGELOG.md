@@ -1,3 +1,7 @@
+# 9.5.2 - 11/30/20
+- [Chore] Upgrade realayers and rdk
+- [Chore] Nuke scss
+
 # 9.5.1 - 11/30/20
 - [Fix] Chart renders incorrectly when using StackedAreaChart with brush and zoom #21
 
