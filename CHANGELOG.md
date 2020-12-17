@@ -1,4 +1,7 @@
-# 9.5.2 - 11/30/20
+# 9.5.3 - 12/17/2020
+- [Chore] Upgrade realayers and rdk
+
+# 9.5.2 - 12/17/2020
 - [Chore] Upgrade realayers and rdk
 - [Chore] Nuke scss
 

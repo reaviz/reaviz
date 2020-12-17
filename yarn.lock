@@ -12778,10 +12778,10 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rdk@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-5.0.1.tgz#12d156602c27dc3e2f30f3e1da211d5a69ecf3f6"
-  integrity sha512-sRN4n0gKM8vU5XHTVZhL2sUKiHrsK3mOQeeUxSxuTrEzg/tYW6cfJ+C/hK3dMsc1OW4HRb3tOq7TeEIbb45XaQ==
+rdk@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-5.0.2.tgz#2d05f168e5f6ba5335986e14f09172181853cc01"
+  integrity sha512-Ix9lQHK/7073nE9oYolhnMYdZE5sWBHD8j6ucFliqff4c38cJ4cENvxLYAxdqCw4xIXw6AZIQVcxgwTBcyc5dQ==
   dependencies:
     classnames "^2.2.6"
     framer-motion "^2.7.7"
@@ -13120,14 +13120,14 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-realayers@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/realayers/-/realayers-2.3.2.tgz#0c434f4d7b85448aa6ab32538876d5757f52a546"
-  integrity sha512-XErUbXit996kHFu4536IJeIDFdIe9ev6+K0mt7GBPm27i8OqvU8H300Z4fBMC9/6yWUUPnhBr9BAbfJTR+pMLg==
+realayers@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/realayers/-/realayers-2.3.3.tgz#9e550b7e8ffc6adbe0bbd2aba66a8a24d599070c"
+  integrity sha512-24gsRGIe8dygOk4NDmWbJ1U1X4tqlnC24dbdSjrhjimdA4zghuwyc0/2bUB/Wyj54dXTwqn5Q8DbKyHppSCwfA==
   dependencies:
     classnames "^2.2.6"
     focus-trap-react "^8.1.0"
-    rdk "^5.0.1"
+    rdk "^5.0.2"
 
 rechoir@^0.6.2:
   version "0.6.2"
