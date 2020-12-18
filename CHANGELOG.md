@@ -1,3 +1,7 @@
+# 9.5.5 - 12/18/2020
+- [chore] Upgrade deps
+- [chore] Cleanup deps
+
 # 9.5.3 - 12/17/2020
 - [Chore] Upgrade realayers and rdk
 
