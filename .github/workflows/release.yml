@@ -38,6 +38,8 @@ jobs:
 
       - name: Publish Chromatic
         run: yarn chromatic
+        with:
+          fetch-depth: 0
 
       # - name: Create Release Pull Request or Publish to npm
       #  uses: changesets/action@master
