@@ -7,7 +7,7 @@ const getFirstOfMonth = (date: Date) =>
   new Date(date.getFullYear(), date.getMonth(), 1);
 
 export const addWeeksToDate = (date: Date, weeks: number) => {
-  let d = new Date(date.getTime());
+  const d = new Date(date.getTime());
   d.setDate(d.getDate() + weeks * 7);
   return d;
 };
@@ -82,7 +82,7 @@ export const buildDataScales = (
 
       row.data.push({
         key: day,
-        data: dayValue ? dayValue.data : undefined,
+        data: dayValue?.data ?? undefined,
         metadata: {
           date: new Date(curDate.getTime()),
           start: start,

@@ -1,6 +1,6 @@
-export const cell: string
+export const cell: string;
 interface Namespace {
-	"cell": string,
+  cell: string;
 }
-declare const heatmapCellModule: Namespace
-export default heatmapCellModule
+declare const heatmapCellModule: Namespace;
+export default heatmapCellModule;
