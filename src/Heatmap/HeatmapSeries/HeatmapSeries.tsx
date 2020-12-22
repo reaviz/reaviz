@@ -120,7 +120,6 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
       />
     );
   };
-
   const valueScale = getValueScale();
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
