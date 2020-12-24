@@ -117,52 +117,52 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
     [data, xAxis, series]
   );
 
-  const renderChart = useCallback(
-    (containerProps: ChartContainerChildProps) => {
-      const { chartWidth, chartHeight, updateAxes, id } = containerProps;
-      const { xScale, yScale, data: scalesData } = getScalesData(
-        chartHeight,
-        chartWidth
-      );
+  const renderChart = (containerProps: ChartContainerChildProps) => {
+    const { chartWidth, chartHeight, updateAxes, id } = containerProps;
+    const { xScale, yScale, data: scalesData } = getScalesData(
+      chartHeight,
+      chartWidth
+    );
 
-      return (
-        <Fragment>
-          <CloneElement<LinearAxisProps>
-            element={xAxis}
-            height={chartHeight}
-            width={chartWidth}
-            scale={xScale}
-            onDimensionsChange={bind(updateAxes, this, 'horizontal')}
-          />
-          <CloneElement<LinearAxisProps>
-            element={yAxis}
-            height={chartHeight}
-            width={chartWidth}
-            scale={yScale}
-            onDimensionsChange={bind(updateAxes, this, 'vertical')}
-          />
-          {secondaryAxis &&
-            secondaryAxis.map((axis, i) => (
-              <CloneElement<LinearAxisProps>
-                key={i}
-                element={axis}
-                height={chartHeight}
-                width={chartWidth}
-                onDimensionsChange={bind(updateAxes, this, 'horizontal')}
-              />
-            ))}
-          <CloneElement<HeatmapSeriesProps>
-            element={series}
-            id={`heat-series-${id}`}
-            data={scalesData}
-            xScale={xScale}
-            yScale={yScale}
-          />
-        </Fragment>
-      );
-    },
-    [secondaryAxis, data, id, series]
-  );
+    return (
+      <Fragment>
+        <CloneElement<LinearAxisProps>
+          element={xAxis}
+          height={chartHeight}
+          width={chartWidth}
+          scale={xScale}
+          onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+        />
+        <CloneElement<LinearAxisProps>
+          element={yAxis}
+          height={chartHeight}
+          width={chartWidth}
+          scale={yScale}
+          onDimensionsChange={bind(updateAxes, this, 'vertical')}
+        />
+        {secondaryAxis &&
+          secondaryAxis.map((axis, i) => (
+            <CloneElement<LinearAxisProps>
+              key={i}
+              element={axis}
+              height={chartHeight}
+              width={chartWidth}
+              onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+            />
+          ))}
+        <CloneElement<HeatmapSeriesProps>
+          element={series}
+          id={`heat-series-${id}`}
+          data={scalesData}
+          xScale={xScale}
+          yScale={yScale}
+        />
+      </Fragment>
+    );
+  };
+  //   ,
+  //   [secondaryAxis, data, id, series]
+  // );
 
   return (
     <ChartContainer
@@ -174,7 +174,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       yAxisVisible={isAxisVisible(yAxis.props)}
       className={classNames(className)}
     >
-      {(props) => renderChart(props)}
+      {renderChart}
     </ChartContainer>
   );
 };
