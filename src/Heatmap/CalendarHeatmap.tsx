@@ -1,4 +1,4 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC, useCallback, useMemo } from 'react';
 import { ChartShallowDataShape } from '../common/data';
 import { Heatmap, HeatmapProps } from './Heatmap';
 import {
@@ -40,6 +40,10 @@ export interface CalendarHeatmapProps extends Omit<HeatmapProps, 'data'> {
    */
   view: CalendarView;
 }
+// Format the xAxis label for the start + n week
+const xAxisLabelFormat = (start: Date) => (weeks: number) =>
+  addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' });
+
 export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   view = 'year',
   series = (
@@ -64,22 +68,15 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   data,
   ...rest
 }) => {
-  const getDataDomains = useCallback(() => buildDataScales(data, view), [
-    data,
-    view
-  ]);
+  const dataDomains = useMemo(() => buildDataScales(data, view), [data, view]);
 
-  const { data: domainData, yDomain, xDomain, start } = getDataDomains();
+  const { data: domainData, yDomain, xDomain, start } = dataDomains;
 
   // For month, only pass 1 tick value
   const xTickValues = view === 'year' ? undefined : [1];
 
   // Get the yAxis label formatting based on view type
   const yAxisLabelFormat = view === 'year' ? (d) => weekDays[d] : () => null;
-
-  // Format the xAxis label for the start + n week
-  const xAxisLabelFormat = (d) =>
-    addWeeksToDate(start, d).toLocaleString('default', { month: 'long' });
 
   return (
     <Heatmap
@@ -114,7 +111,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
                 <LinearXAxisTickLabel
                   padding={5}
                   align="end"
-                  format={xAxisLabelFormat}
+                  format={xAxisLabelFormat(start)}
                 />
               }
             />

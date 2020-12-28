@@ -114,7 +114,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         data: nestedData
       };
     },
-    [data, xAxis, series]
+    [data, xAxis, yAxis, series]
   );
 
   const renderChart = (containerProps: ChartContainerChildProps) => {
@@ -160,9 +160,6 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       </Fragment>
     );
   };
-  //   ,
-  //   [secondaryAxis, data, id, series]
-  // );
 
   return (
     <ChartContainer
