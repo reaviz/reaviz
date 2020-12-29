@@ -90,7 +90,7 @@ storiesOf('Utils/Zoom Pan', module)
     <GenericZoomPanStory modifier={true} />
   ))
   .add('Default Zoom', () => {
-    const [domain, setDomain] = useState<[any, any]>([
+    const [domain, setDomain] = React.useState<[any, any]>([
       largeDateData[5].key,
       largeDateData[25].key
     ]);
