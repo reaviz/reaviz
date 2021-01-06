@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FC, useMemo } from 'react';
 import css from './HiveLabel.module.css';
 
 const degrees = (radians: number) => {
@@ -16,22 +16,24 @@ interface HiveLabelProps {
   outerRadius: number;
   angle: (...args: any[]) => any;
 }
+export const HiveLabel: FC<Partial<HiveLabelProps>> = ({
+  index,
+  text,
+  angle,
+  outerRadius,
+  label
+}) => {
+  const transform = useMemo(() => degrees(angle(index)), [angle, index]);
 
-export class HiveLabel extends Component<HiveLabelProps, {}> {
-  render() {
-    const { index, text, angle, outerRadius, label } = this.props;
-    const transform = degrees(angle(index));
-
-    return (
-      <text
-        dy={translate(transform, outerRadius, label.padding)}
-        className={css.label}
-        strokeWidth="0.01"
-        textAnchor="middle"
-        transform={`rotate(${transform})`}
-      >
-        {text}
-      </text>
-    );
-  }
-}
+  return (
+    <text
+      dy={translate(transform, outerRadius, label.padding)}
+      className={css.label}
+      strokeWidth="0.01"
+      textAnchor="middle"
+      transform={`rotate(${transform})`}
+    >
+      {text}
+    </text>
+  );
+};

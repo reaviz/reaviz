@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FC, useMemo } from 'react';
 import { Axis, Node } from '../types';
 import { formatValue } from '../../common/utils/formatting';
 import css from './HiveTooltip.module.css';
@@ -9,23 +9,23 @@ interface HiveTooltipProps {
   nodes: Node[];
 }
 
-export class HiveTooltip extends Component<HiveTooltipProps, {}> {
-  render() {
-    const {
-      axis,
-      nodes,
-      node: { x, value }
-    } = this.props;
-    const { label } = axis[x];
-    const count = nodes.filter((n) => n.value === value).length;
+export const HiveTooltip: FC<Partial<HiveTooltipProps>> = ({
+  axis,
+  nodes,
+  node: { x, value }
+}) => {
+  const { label } = axis[x];
+  const count = useMemo(() => nodes.filter((n) => n.value === value).length, [
+    nodes,
+    value
+  ]);
 
-    return (
-      <div>
-        <div className={css.label}>
-          {label} - {formatValue(value)}
-        </div>
-        <div className={css.value}>{formatValue(count)} Total</div>
+  return (
+    <div>
+      <div className={css.label}>
+        {label} - {formatValue(value)}
       </div>
-    );
-  }
-}
+      <div className={css.value}>{formatValue(count)} Total</div>
+    </div>
+  );
+};
