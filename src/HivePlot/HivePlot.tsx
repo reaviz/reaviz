@@ -264,10 +264,8 @@
 //       outerRadius
 //     };
 //   }
-
 //   renderAxis({ angle, radius, axisColor, outerRadius }) {
 //     const { axis, label } = this.props;
-
 //     return (
 //       <Fragment>
 //         {axis.map((a, i) => (
@@ -390,6 +388,7 @@
 //   }
 
 //   renderChart({ height, width }) {
+//     console.log('height, width', height, width);
 //     const { innerRadius, axis, colorScheme, label, className } = this.props;
 
 //     const data = this.prepareData({
@@ -415,8 +414,6 @@
 //   }
 
 //   render() {
-//     console.log(this.props);
-//     console.log(this);
 //     return (
 //       <ChartContainer height={this.props.height} width={this.props.width}>
 //         {this.renderChart.bind(this)}
@@ -429,6 +426,7 @@ import { scaleOrdinal, scaleLinear, scalePoint } from 'd3-scale';
 import { range } from 'd3-array';
 import { Tooltip } from 'realayers';
 import { Placement } from 'rdk';
+import useDimensions from 'react-cool-dimensions';
 import { HiveNode } from './HiveNode';
 import { HiveAxis } from './HiveAxis';
 import { HiveLink } from './HiveLink';
@@ -519,6 +517,11 @@ export const HivePlot: FC<Partial<HivePlotProps>> = ({
   const [nodeTooltipData, setNodeTooltipData] = useState<Node | null>(null);
   const [linkTooltipData, setLinkTooltipData] = useState<Link | null>(null);
   const [active, setActive] = useState<{ [k: string]: boolean } | null>(null);
+  const {
+    ref,
+    width: _width,
+    height: _height
+  } = useDimensions<HTMLDivElement>();
   const onNodeMouseOverLocal = useCallback(
     (node: Node, event: MouseEvent) => {
       if (!disabled) {
@@ -841,7 +844,12 @@ export const HivePlot: FC<Partial<HivePlotProps>> = ({
     });
     return (
       <Fragment>
-        <svg width={width} height={height} className={classNames(className)}>
+        <svg
+          width={_width}
+          height={_height}
+          className={classNames(className)}
+          id="yohay"
+        >
           <g transform={`translate(${width / 2}, ${height / 2 + innerRadius})`}>
             {renderAxis(data)}
             {renderLinks(data)}
@@ -851,9 +859,9 @@ export const HivePlot: FC<Partial<HivePlotProps>> = ({
         {renderTooltip()}
       </Fragment>
     );
-  }, [innerRadius, axis, colorScheme, label, className, height, width]);
+  }, [innerRadius, axis, colorScheme, label, className, _height, _width]);
   return (
-    <ChartContainer height={height} width={width}>
+    <ChartContainer height={height} width={width} ref={ref}>
       {renderChart}
     </ChartContainer>
   );
