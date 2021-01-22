@@ -1,4 +1,7 @@
-# 9.5.5 - 12/18/2020
+# 9.5.5 - 1/22/21
+- [chore] Fix peer depedency issue with framer-motion
+
+# 9.5.4 - 12/18/2020
 - [chore] Upgrade deps
 - [chore] Cleanup deps
 
