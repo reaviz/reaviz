@@ -1,7 +1,14 @@
-import React, { Component, Fragment, createRef, ReactElement } from 'react';
+import React, {
+  FC,
+  Fragment,
+  MouseEvent,
+  ReactElement,
+  useMemo,
+  useState,
+  useRef
+} from 'react';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { CloneElement } from 'rdk';
-import bind from 'memoize-bind';
 import {
   constructFunctionProps,
   PropFunctionTypes
@@ -106,62 +113,61 @@ const modifiers = {
   }
 };
 
-export class HeatmapCell extends Component<HeatmapCellProps, HeatmapCellState> {
-  static defaultProps: Partial<HeatmapCellProps> = {
-    rx: 2,
-    ry: 2,
-    cursor: 'auto',
-    tooltip: <ChartTooltip />,
-    onClick: () => undefined,
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined
-  };
+export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
+  rx = 2,
+  ry = 2,
+  cursor = 'auto',
+  tooltip = <ChartTooltip />,
+  onClick = () => undefined,
+  onMouseEnter = () => undefined,
+  onMouseLeave = () => undefined,
+  data,
+  animated,
+  cellIndex,
+  cellCount,
+  fill,
+  x,
+  y,
+  style,
+  className,
+  ...rest
+}) => {
+  const [active, setActive] = useState(false);
+  const rect = useRef<SVGRectElement | null>(null);
 
-  state: HeatmapCellState = {};
-  rect = createRef<SVGRectElement>();
-
-  onMouseEnter(event: MouseEvent) {
-    this.setState({ active: true });
-
-    const { onMouseEnter, data } = this.props;
+  const onMouseEnterWrapper = (event: MouseEvent) => {
+    setActive(true);
     onMouseEnter({
       value: data,
       nativeEvent: event
     });
-  }
+  };
 
-  onMouseLeave(event: MouseEvent) {
-    this.setState({ active: false });
+  const onMouseLeaveWrapper = (event: MouseEvent) => {
+    setActive(false);
 
-    const { onMouseLeave, data } = this.props;
     onMouseLeave({
       value: data,
       nativeEvent: event
     });
-  }
+  };
 
-  onMouseClick(event: MouseEvent) {
-    const { onClick, data } = this.props;
-
+  const onMouseClick = (event: MouseEvent) => {
     onClick({
       value: data,
       nativeEvent: event
     });
-  }
-
-  getTooltipData() {
-    const { data } = this.props;
-
-    return {
+  };
+  const tooltipData = useMemo(
+    () => ({
       y: data.value,
       x: `${data.key} ∙ ${data.x}`,
       data
-    };
-  }
+    }),
+    [data]
+  );
 
-  getTransition() {
-    const { animated, cellIndex, cellCount } = this.props;
-
+  const transition = useMemo(() => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
@@ -173,63 +179,45 @@ export class HeatmapCell extends Component<HeatmapCellProps, HeatmapCellState> {
         delay: 0
       };
     }
-  }
+  }, [animated, cellIndex, cellCount]);
 
-  render() {
-    const {
-      tooltip,
-      onMouseEnter,
-      onMouseLeave,
-      onClick,
-      cellIndex,
-      data,
-      cursor,
-      fill,
-      x,
-      y,
-      ...rest
-    } = this.props;
-    const { active } = this.state;
+  const extras = constructFunctionProps({ style, className }, data);
+  const isTransparent = fill === 'transparent';
+  const stroke = active && !isTransparent ? chroma(fill).brighten(1) : fill;
 
-    const extras = constructFunctionProps(this.props, data);
-    const isTransparent = fill === 'transparent';
-    const stroke = active && !isTransparent ? chroma(fill).brighten(1) : fill;
-    const transition = this.getTransition();
-
-    return (
-      <Fragment>
-        <motion.g ref={this.rect} x={x} y={y}>
-          <motion.rect
-            {...rest}
-            fill={fill}
-            stroke={stroke}
-            style={{ ...extras.style, cursor }}
-            className={classNames(css.cell, extras.className)}
-            initial={{
-              opacity: 0
-            }}
-            animate={{
-              opacity: 1
-            }}
-            exit={{
-              opacity: 0
-            }}
-            transition={transition}
-            onMouseEnter={bind(this.onMouseEnter, this)}
-            onMouseLeave={bind(this.onMouseLeave, this)}
-            onClick={bind(this.onMouseClick, this)}
-          />
-        </motion.g>
-        {tooltip && !(tooltip.props as any).disabled && !isTransparent && (
-          <CloneElement<ChartTooltipProps>
-            element={tooltip}
-            visible={!!active}
-            modifiers={(tooltip.props as any).modifiers || modifiers}
-            reference={this.rect}
-            value={this.getTooltipData()}
-          />
-        )}
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <motion.g ref={rect} x={x} y={y}>
+        <motion.rect
+          {...rest}
+          fill={fill}
+          stroke={stroke}
+          style={{ ...extras.style, cursor }}
+          className={classNames(css.cell, extras.className)}
+          initial={{
+            opacity: 0
+          }}
+          animate={{
+            opacity: 1
+          }}
+          exit={{
+            opacity: 0
+          }}
+          transition={transition}
+          onMouseEnter={onMouseEnterWrapper}
+          onMouseLeave={onMouseLeaveWrapper}
+          onClick={onMouseClick}
+        />
+      </motion.g>
+      {tooltip && !(tooltip.props as any).disabled && !isTransparent && (
+        <CloneElement<ChartTooltipProps>
+          element={tooltip}
+          visible={active}
+          modifiers={(tooltip.props as any).modifiers || modifiers}
+          reference={rect}
+          value={tooltipData}
+        />
+      )}
+    </Fragment>
+  );
+};

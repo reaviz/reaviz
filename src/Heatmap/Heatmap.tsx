@@ -1,4 +1,4 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { useCallback, Fragment, ReactElement, FC, useMemo } from 'react';
 import classNames from 'classnames';
 import {
   ChartProps,
@@ -49,74 +49,77 @@ export interface HeatmapProps extends ChartProps {
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
+export const Heatmap: FC<Partial<HeatmapProps>> = ({
+  data = [],
+  margins = 10,
+  series = <HeatmapSeries />,
+  yAxis = (
+    <LinearYAxis
+      type="category"
+      axisLine={null}
+      tickSeries={
+        <LinearYAxisTickSeries
+          line={null}
+          label={<LinearYAxisTickLabel padding={5} />}
+        />
+      }
+    />
+  ),
+  xAxis = (
+    <LinearXAxis
+      type="category"
+      axisLine={null}
+      tickSeries={
+        <LinearXAxisTickSeries
+          line={null}
+          label={<LinearXAxisTickLabel padding={5} />}
+        />
+      }
+    />
+  ),
+  secondaryAxis,
+  id,
+  width,
+  height,
+  className
+}) => {
+  const getScalesData = useCallback(
+    (chartHeight: number, chartWidth: number) => {
+      const nestedData = buildNestedChartData(data);
 
-export class Heatmap extends Component<HeatmapProps> {
-  static defaultProps: Partial<HeatmapProps> = {
-    data: [],
-    margins: 10,
-    series: <HeatmapSeries />,
-    yAxis: (
-      <LinearYAxis
-        type="category"
-        axisLine={null}
-        tickSeries={
-          <LinearYAxisTickSeries
-            line={null}
-            label={<LinearYAxisTickLabel padding={5} />}
-          />
-        }
-      />
-    ),
-    xAxis: (
-      <LinearXAxis
-        type="category"
-        axisLine={null}
-        tickSeries={
-          <LinearXAxisTickSeries
-            line={null}
-            label={<LinearXAxisTickLabel padding={5} />}
-          />
-        }
-      />
-    )
-  };
+      const xDomain: any =
+        xAxis.props.domain || uniqueBy(nestedData, (d) => d.key);
 
-  getScalesData(chartHeight: number, chartWidth: number) {
-    const { xAxis, yAxis, series, data: prevData } = this.props;
+      const xScale = scaleBand()
+        .range([0, chartWidth])
+        .domain(xDomain)
+        .paddingInner(series.props.padding);
 
-    const data = buildNestedChartData(prevData);
+      const yDomain: any =
+        yAxis.props.domain ||
+        uniqueBy(
+          nestedData,
+          (d) => d.data,
+          (d) => d.x
+        );
 
-    const xDomain: any = xAxis.props.domain || uniqueBy(data, (d) => d.key);
+      const yScale = scaleBand()
+        .domain(yDomain)
+        .range([chartHeight, 0])
+        .paddingInner(series.props.padding);
 
-    const xScale = scaleBand()
-      .range([0, chartWidth])
-      .domain(xDomain)
-      .paddingInner(series.props.padding);
+      return {
+        yScale,
+        xScale,
+        data: nestedData
+      };
+    },
+    [data, xAxis, yAxis, series]
+  );
 
-    const yDomain: any =
-      yAxis.props.domain ||
-      uniqueBy(
-        data,
-        (d) => d.data,
-        (d) => d.x
-      );
-
-    const yScale = scaleBand()
-      .domain(yDomain)
-      .range([chartHeight, 0])
-      .paddingInner(series.props.padding);
-
-    return {
-      yScale,
-      xScale,
-      data
-    };
-  }
-
-  renderChart(containerProps: ChartContainerChildProps) {
+  const renderChart = (containerProps: ChartContainerChildProps) => {
     const { chartWidth, chartHeight, updateAxes, id } = containerProps;
-    const { yAxis, xAxis, series, secondaryAxis } = this.props;
-    const { xScale, yScale, data } = this.getScalesData(
+    const { xScale, yScale, data: scalesData } = getScalesData(
       chartHeight,
       chartWidth
     );
@@ -150,29 +153,25 @@ export class Heatmap extends Component<HeatmapProps> {
         <CloneElement<HeatmapSeriesProps>
           element={series}
           id={`heat-series-${id}`}
-          data={data}
+          data={scalesData}
           xScale={xScale}
           yScale={yScale}
         />
       </Fragment>
     );
-  }
+  };
 
-  render() {
-    const { id, width, height, margins, className, xAxis, yAxis } = this.props;
-
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={isAxisVisible(xAxis.props)}
-        yAxisVisible={isAxisVisible(yAxis.props)}
-        className={classNames(className)}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={isAxisVisible(xAxis.props)}
+      yAxisVisible={isAxisVisible(yAxis.props)}
+      className={classNames(className)}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
