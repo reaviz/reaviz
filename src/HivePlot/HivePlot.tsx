@@ -517,11 +517,6 @@ export const HivePlot: FC<Partial<HivePlotProps>> = ({
   const [nodeTooltipData, setNodeTooltipData] = useState<Node | null>(null);
   const [linkTooltipData, setLinkTooltipData] = useState<Link | null>(null);
   const [active, setActive] = useState<{ [k: string]: boolean } | null>(null);
-  const {
-    ref,
-    width: _width,
-    height: _height
-  } = useDimensions<HTMLDivElement>();
   const onNodeMouseOverLocal = useCallback(
     (node: Node, event: MouseEvent) => {
       if (!disabled) {
@@ -834,34 +829,40 @@ export const HivePlot: FC<Partial<HivePlotProps>> = ({
     nodeTooltipData
   ]);
 
-  const renderChart = useCallback(() => {
-    const data = prepareData({
-      dimension: Math.min(height, width),
-      innerRadius,
-      colorScheme,
-      axis,
-      label
-    });
-    return (
-      <Fragment>
-        <svg
-          width={_width}
-          height={_height}
-          className={classNames(className)}
-          id="yohay"
-        >
-          <g transform={`translate(${width / 2}, ${height / 2 + innerRadius})`}>
-            {renderAxis(data)}
-            {renderLinks(data)}
-            {renderNodes(data)}
-          </g>
-        </svg>
-        {renderTooltip()}
-      </Fragment>
-    );
-  }, [innerRadius, axis, colorScheme, label, className, _height, _width]);
+  const renderChart = useCallback(
+    ({ height: containerHeight, width: containerWidth }) => {
+      const data = prepareData({
+        dimension: Math.min(containerHeight, containerWidth),
+        innerRadius,
+        colorScheme,
+        axis,
+        label
+      });
+      return (
+        <Fragment>
+          <svg
+            width={containerWidth}
+            height={containerHeight}
+            className={classNames(className)}
+          >
+            <g
+              transform={`translate(${containerWidth / 2}, ${
+                containerHeight / 2 + innerRadius
+              })`}
+            >
+              {renderAxis(data)}
+              {renderLinks(data)}
+              {renderNodes(data)}
+            </g>
+          </svg>
+          {renderTooltip()}
+        </Fragment>
+      );
+    },
+    [innerRadius, axis, colorScheme, label, className]
+  );
   return (
-    <ChartContainer height={height} width={width} ref={ref}>
+    <ChartContainer height={height} width={width}>
       {renderChart}
     </ChartContainer>
   );

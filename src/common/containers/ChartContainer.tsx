@@ -175,13 +175,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   return (
     <div ref={ref} style={{ height: styleHeight, width: styleWidth }}>
       {height > 0 && width > 0 && (
-        <svg
-          width={width}
-          height={height}
-          className={className}
-          style={style}
-          id={'yohay-svg'}
-        >
+        <svg width={width} height={height} className={className} style={style}>
           <g transform={`translate(${translateX}, ${translateY})`}>
             {children(childProps)}
           </g>
