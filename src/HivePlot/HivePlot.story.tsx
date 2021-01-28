@@ -33,7 +33,7 @@ storiesOf('Charts/Hive Plot', module)
       links={links}
     />
   ))
-  .add('Autosize', () => (
+  .add('AutoSize', () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
       <HivePlot
         axis={[

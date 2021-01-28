@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FC, useMemo } from 'react';
 import classNames from 'classnames';
 import { hiveLayout } from './hiveLayout';
 import { Link } from '../types';
@@ -13,33 +13,39 @@ interface HiveLinkProps {
   onMouseOver: (...args: any[]) => any;
   onMouseOut: (...args: any[]) => any;
 }
-
-export class HiveLink extends Component<HiveLinkProps, {}> {
-  prepareData() {
-    const { angle, radius } = this.props;
+export const HiveLink: FC<Partial<HiveLinkProps>> = ({
+  angle,
+  radius,
+  link,
+  color,
+  active,
+  onMouseOver,
+  onMouseOut
+}) => {
+  const prepareData = () => {
     const hive = hiveLayout();
 
     return {
-      angle: hive.angle((d) => angle(d.x)),
-      radius: hive.radius((d) => radius(d.y))
+      hiveAngle: hive.angle((d) => angle(d.x)),
+      hiveRadius: hive.radius((d) => radius(d.y))
     };
-  }
+  };
 
-  render() {
-    const { link, color, active, onMouseOver, onMouseOut } = this.props;
-    const { angle, radius } = this.prepareData();
-    const stroke = typeof color === 'string' ? color : color(link.source.x);
+  const { hiveAngle, hiveRadius } = useMemo(() => prepareData(), [
+    angle,
+    radius
+  ]);
+  const stroke = typeof color === 'string' ? color : color(link.source.x);
 
-    return (
-      <path
-        className={classNames(css.link, {
-          [css.inactive]: !active
-        })}
-        d={`${angle(link)} ${radius(link)}`}
-        stroke={stroke}
-        onMouseOver={onMouseOver}
-        onMouseOut={onMouseOut}
-      />
-    );
-  }
-}
+  return (
+    <path
+      className={classNames(css.link, {
+        [css.inactive]: !active
+      })}
+      d={`${hiveAngle(link)} ${hiveRadius(link)}`}
+      stroke={stroke}
+      onMouseOver={onMouseOver}
+      onMouseOut={onMouseOut}
+    />
+  );
+};
