@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useMemo } from 'react';
+import React, { FC, useMemo } from 'react';
 import { ChartShallowDataShape } from '../common/data';
 import { Heatmap, HeatmapProps } from './Heatmap';
 import {
