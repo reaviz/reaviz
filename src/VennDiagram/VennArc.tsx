@@ -132,15 +132,15 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const currentStyle = active
     ? activeStyle
     : active === null
-    ? inactiveStyle
-    : initialStyle;
+      ? inactiveStyle
+      : initialStyle;
 
   const arcFill =
     gradient && !mask
       ? `url(#gradient-${id})`
       : mask
-      ? `url(#mask-pattern-${id})`
-      : fill;
+        ? `url(#mask-pattern-${id})`
+        : fill;
 
   return (
     <g

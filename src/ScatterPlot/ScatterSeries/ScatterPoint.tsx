@@ -144,13 +144,13 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
     () =>
       animated
         ? {
-            ...DEFAULT_TRANSITION,
-            delay: index! * 0.005
-          }
+          ...DEFAULT_TRANSITION,
+          delay: index! * 0.005
+        }
         : {
-            type: false,
-            delay: 0
-          },
+          type: false,
+          delay: 0
+        },
     [index, animated]
   );
 

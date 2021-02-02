@@ -146,21 +146,21 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
       },
       ...(c.icon
         ? {
-            icon: {
-              x: mx(c.icon.x),
-              y: my(c.icon.y)
-            }
+          icon: {
+            x: mx(c.icon.x),
+            y: my(c.icon.y)
           }
+        }
         : {})
     },
     ...(isEllipse(c)
       ? {
-          rx: c.rx * f,
-          ry: c.ry * f
-        }
+        rx: c.rx * f,
+        ry: c.ry * f
+      }
       : {
-          r: c.r * f
-        })
+        r: c.r * f
+      })
   }));
 
   const intersections = shape.intersections.map((c, i) => ({

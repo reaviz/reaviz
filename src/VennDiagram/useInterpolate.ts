@@ -7,9 +7,9 @@ export const useInterpolate = ({ data, animated }) => {
   const transition = animated
     ? { ...DEFAULT_TRANSITION }
     : {
-        delay: 0,
-        type: false
-      };
+      delay: 0,
+      type: false
+    };
 
   const d = useMotionValue(data.path);
   const prevPath = useMotionValue(data.path);

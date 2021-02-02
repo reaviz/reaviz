@@ -102,8 +102,8 @@ export class RangeLines extends Component<RangeLinesProps> {
         ? 'bottom'
         : position
       : data.x0 < 0 && isTop
-      ? 'bottom'
-      : position;
+        ? 'bottom'
+        : position;
 
     if (isVertical) {
       if (direction === 'top') {

@@ -276,14 +276,14 @@ export class PieArcSeries extends Component<PieArcSeriesProps> {
     );
     const positions = label
       ? this.calculateLabelPositions(
-          data,
-          outerRadius,
-          // 4 is for vertical margins between labels
-          label.props.height + 4,
-          cornerRadius,
-          padAngle,
-          padRadius
-        )
+        data,
+        outerRadius,
+        // 4 is for vertical margins between labels
+        label.props.height + 4,
+        cornerRadius,
+        padAngle,
+        padRadius
+      )
       : [];
     const centroid = this.centroid(innerRadius, outerRadius);
 
