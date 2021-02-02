@@ -1,5 +1,4 @@
-import React, { useCallback, Fragment, ReactElement, FC, useMemo } from 'react';
-import classNames from 'classnames';
+import React, { useCallback, Fragment, ReactElement, FC } from 'react';
 import {
   ChartProps,
   ChartContainer,
@@ -7,7 +6,6 @@ import {
 } from '../common/containers/ChartContainer';
 import { ChartNestedDataShape, buildNestedChartData } from '../common/data';
 import { CloneElement } from 'rdk';
-import bind from 'memoize-bind';
 import {
   isAxisVisible,
   LinearAxisProps,
@@ -131,14 +129,14 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
           height={chartHeight}
           width={chartWidth}
           scale={xScale}
-          onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+          onDimensionsChange={event => updateAxes('horizontal', event)}
         />
         <CloneElement<LinearAxisProps>
           element={yAxis}
           height={chartHeight}
           width={chartWidth}
           scale={yScale}
-          onDimensionsChange={bind(updateAxes, this, 'vertical')}
+          onDimensionsChange={event => updateAxes('vertical', event)}
         />
         {secondaryAxis &&
           secondaryAxis.map((axis, i) => (
@@ -147,7 +145,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
               element={axis}
               height={chartHeight}
               width={chartWidth}
-              onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+              onDimensionsChange={event => updateAxes('horizontal', event)}
             />
           ))}
         <CloneElement<HeatmapSeriesProps>
@@ -169,7 +167,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       margins={margins}
       xAxisVisible={isAxisVisible(xAxis.props)}
       yAxisVisible={isAxisVisible(yAxis.props)}
-      className={classNames(className)}
+      className={className}
     >
       {renderChart}
     </ChartContainer>
