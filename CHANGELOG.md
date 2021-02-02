@@ -1,3 +1,10 @@
+# 10.0.0
+- [breaking] remove rounded corners from bar chart
+- [fix] fix bar chart render issues
+- [chore] migrate hivepolot to fc
+- [chore] fix heatmap type issue
+- [chore] update depedencies
+
 # 9.5.5 - 1/22/21
 - [chore] Fix peer depedency issue with framer-motion
 
