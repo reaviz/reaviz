@@ -42,7 +42,6 @@ export class MarimekkoBarSeries extends Component<BarSeriesProps> {
     ),
     bar: (
       <Bar
-        rounded={false}
         padding={10}
         gradient={
           <Gradient

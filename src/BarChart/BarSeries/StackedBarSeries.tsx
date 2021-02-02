@@ -10,7 +10,6 @@ export class StackedBarSeries extends Component<BarSeriesProps> {
     type: 'stacked',
     bar: (
       <Bar
-        rounded={false}
         gradient={
           <Gradient
             stops={[

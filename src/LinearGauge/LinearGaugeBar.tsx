@@ -7,7 +7,6 @@ export type LinearGaugeBarProps = BarProps;
 export const LinearGaugeBar: FC<Partial<LinearGaugeBarProps>> = (props) => (
   <Bar
     {...props}
-    rounded={false}
     tooltip={
       <ChartTooltip
         placement="top"

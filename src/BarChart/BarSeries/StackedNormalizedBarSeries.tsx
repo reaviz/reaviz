@@ -42,7 +42,6 @@ export class StackedNormalizedBarSeries extends Component<BarSeriesProps> {
     ),
     bar: (
       <Bar
-        rounded={false}
         gradient={
           <Gradient
             stops={[

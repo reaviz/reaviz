@@ -17,7 +17,6 @@ import { BarLabelProps, BarLabel } from './BarLabel';
 import { formatValue } from '../../common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '../../common/Tooltip';
-import css from './Bar.module.css';
 
 export type BarType =
   | 'standard'
@@ -99,11 +98,6 @@ export type BarProps = {
    * Color callback for the bar.
    */
   color: any;
-
-  /**
-   * Whether the bar is rounded or not.
-   */
-  rounded: boolean;
 
   /**
    * Cursor for the bar element.
@@ -205,7 +199,6 @@ interface BarState {
 export class Bar extends Component<BarProps, BarState> {
   static defaultProps: Partial<BarProps> = {
     activeBrightness: 0.5,
-    rounded: true,
     rx: 0,
     ry: 0,
     cursor: 'auto',
@@ -488,7 +481,7 @@ export class Bar extends Component<BarProps, BarState> {
   }
 
   renderBar(currentColorShade: string, coords: BarCoordinates, index: number) {
-    const { rounded, cursor, mask, id, data, rx, ry, onMouseMove } = this.props;
+    const { cursor, mask, id, data, rx, ry, onMouseMove } = this.props;
     const maskPath = mask ? `url(#mask-${id})` : '';
     const fill = this.getFill(currentColorShade);
     const initialExit = this.getExit(coords);
@@ -521,11 +514,6 @@ export class Bar extends Component<BarProps, BarState> {
       <g ref={this.rect}>
         <motion.rect
           className={classNames(
-            {
-              [css.rounded]: rounded,
-              [css.vertical]: isVertical,
-              [css.horizontal]: !isVertical
-            },
             extras.className
           )}
           style={{ ...extras.style, cursor }}

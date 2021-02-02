@@ -52,7 +52,6 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
     const color = select('Color Scheme', schemes, 'cybertron');
     const hasGradient = boolean('Gradient', true);
     const hasGuideBar = boolean('Guide Bar', true);
-    const rounded = boolean('Rounded', true);
     const padding = number('Padding', 0.1);
     const height = number('Height', 350);
     const width = number('Width', 400);
@@ -68,7 +67,7 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           <BarSeries
             colorScheme={color}
             padding={padding}
-            bar={<Bar rounded={rounded} gradient={gradient} guide={guide} />}
+            bar={<Bar gradient={gradient} guide={guide} />}
           />
         }
       />
@@ -84,7 +83,6 @@ storiesOf('Charts/Bar Chart/Vertical/Single Series', module)
           bar={
             <Bar
               gradient={null}
-              rounded={false}
               style={(data) => {
                 if (data.key === 'DLP') {
                   console.log('Style callback...', data);
@@ -271,7 +269,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
     const rangeWidth = number('Rangeline', 3);
     const hasGradient = boolean('Gradient', true);
     const hasRangelines = boolean('Rangelines', false);
-    const rounded = boolean('Rounded', true);
     const color = select('Color Scheme', schemes, 'cybertron');
     const hasGuideBar = boolean('Guide Bar', false);
     const guide = hasGuideBar ? <GuideBar /> : null;
@@ -291,7 +288,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
             type="grouped"
             bar={
               <Bar
-                rounded={rounded}
                 gradient={gradient}
                 rangeLines={rangelines}
                 guide={guide}
@@ -312,7 +308,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
     const rangeWidth = number('Rangeline', 3);
     const hasGradient = boolean('Gradient', true);
     const hasRangelines = boolean('Rangelines', true);
-    const rounded = boolean('Rounded', false);
     const color = select('Color Scheme', schemes, 'cybertron');
     const hasGuideBar = boolean('Guide Bar', false);
     const data = object('Data', multiCategory);
@@ -342,7 +337,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
               <Bar
                 rx={rx}
                 ry={ry}
-                rounded={rounded}
                 gradient={gradient}
                 rangeLines={rangelines}
                 guide={guide}
@@ -369,7 +363,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
             { start: '#a1dab4', end: '#253494' }
           ].map((gradient) => (
             <Bar
-              rounded={false}
               gradient={
                 <Gradient
                   stops={[
@@ -417,7 +410,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
     const rangeWidth = number('Rangeline', 3);
     const hasGradient = boolean('Gradient', true);
     const hasRangelines = boolean('Rangelines', true);
-    const rounded = boolean('Rounded', false);
     const hasGuideBar = boolean('Guide Bar', false);
     const guide = hasGuideBar ? <GuideBar /> : null;
 
@@ -458,7 +450,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
                 rx={rx}
                 ry={ry}
                 guide={guide}
-                rounded={rounded}
                 gradient={gradientTop}
                 rangeLines={rangelines}
               />,
@@ -466,7 +457,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
                 rx={rx}
                 ry={ry}
                 guide={guide}
-                rounded={rounded}
                 gradient={gradientBottom}
                 rangeLines={rangelines}
               />
@@ -506,7 +496,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
     const rangeWidth = number('Rangeline', 3);
     const hasGradient = boolean('Gradient', true);
     const hasRangelines = boolean('Rangelines', true);
-    const rounded = boolean('Rounded', false);
     const color = select('Color Scheme', schemes, 'cybertron');
     const data = object('Data', multiCategory);
 
@@ -535,7 +524,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
                 key="stacked-normalized-bar"
                 rx={rx}
                 ry={ry}
-                rounded={rounded}
                 gradient={gradient}
                 rangeLines={rangelines}
               />
@@ -554,7 +542,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
     const rangeWidth = number('Rangeline', 3);
     const hasGradient = boolean('Gradient', true);
     const hasRangelines = boolean('Rangelines', true);
-    const rounded = boolean('Rounded', false);
     const color = select('Color Scheme', schemes, 'cybertron');
     const data = object('Data', multiCategory);
 
@@ -583,7 +570,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
                 key="marimekko-bar"
                 rx={rx}
                 ry={ry}
-                rounded={rounded}
                 padding={10}
                 gradient={gradient}
                 rangeLines={rangelines}
@@ -599,7 +585,6 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
 storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
   .add('Simple', () => {
     const hasGradient = boolean('Gradient', true);
-    const rounded = boolean('Rounded', true);
     const padding = number('Padding', 0.1);
     const height = number('Height', 350);
     const width = number('Width', 500);
@@ -626,7 +611,7 @@ storiesOf('Charts/Bar Chart/Horizontal/Single Series', module)
             colorScheme={color}
             layout="horizontal"
             padding={padding}
-            bar={<Bar rounded={rounded} gradient={gradient} guide={guide} />}
+            bar={<Bar gradient={gradient} guide={guide} />}
           />
         }
       />
@@ -890,7 +875,6 @@ storiesOf('Charts/Bar Chart/Horizontal/Multi Series', module)
                   ]}
                 />
               }
-              rounded={false}
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
             />
           }
@@ -960,7 +944,6 @@ storiesOf('Charts/Bar Chart/Axis', module)
             colorScheme={['#ACB7C9', '#418AD7']}
             bar={[
               <Bar
-                rounded={false}
                 width={10}
                 gradient={
                   <Gradient
@@ -977,7 +960,6 @@ storiesOf('Charts/Bar Chart/Axis', module)
                 rangeLines={<RangeLines position="top" strokeWidth={3} />}
               />,
               <Bar
-                rounded={false}
                 width={10}
                 gradient={
                   <Gradient
@@ -1071,7 +1053,6 @@ storiesOf('Charts/Bar Chart/Axis', module)
             colorScheme={['#ACB7C9', '#418AD7']}
             bar={[
               <Bar
-                rounded={false}
                 width={25}
                 gradient={
                   <Gradient
@@ -1088,7 +1069,6 @@ storiesOf('Charts/Bar Chart/Axis', module)
                 rangeLines={<RangeLines position="top" strokeWidth={3} />}
               />,
               <Bar
-                rounded={false}
                 width={25}
                 gradient={
                   <Gradient
