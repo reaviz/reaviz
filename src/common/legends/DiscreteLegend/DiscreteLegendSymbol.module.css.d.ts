@@ -1,6 +1,6 @@
-export const symbol: string
+export const symbol: string;
 interface Namespace {
-	"symbol": string,
+  symbol: string;
 }
-declare const discreteLegendSymbolModule: Namespace
-export default discreteLegendSymbolModule
+declare const discreteLegendSymbolModule: Namespace;
+export default discreteLegendSymbolModule;

@@ -1,6 +1,6 @@
-export const axis: string
+export const axis: string;
 interface Namespace {
-	"axis": string,
+  axis: string;
 }
-declare const hiveAxisModule: Namespace
-export default hiveAxisModule
+declare const hiveAxisModule: Namespace;
+export default hiveAxisModule;

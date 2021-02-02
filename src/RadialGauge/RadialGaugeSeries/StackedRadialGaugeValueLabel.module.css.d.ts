@@ -1,6 +1,6 @@
-export const stackedValueLabel: string
+export const stackedValueLabel: string;
 interface Namespace {
-	"stackedValueLabel": string,
+  stackedValueLabel: string;
 }
-declare const stackedRadialGaugeValueLabelModule: Namespace
-export default stackedRadialGaugeValueLabelModule
+declare const stackedRadialGaugeValueLabelModule: Namespace;
+export default stackedRadialGaugeValueLabelModule;

@@ -37,9 +37,7 @@ export class LinearXAxisTickLine extends Component<LinearAxisTickLineProps> {
   }
 }
 
-export class LinearXAxisTickSeries extends Component<
-  LinearAxisTickSeriesProps
-> {
+export class LinearXAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
   static defaultProps: Partial<LinearAxisTickSeriesProps> = {
     ...LinearAxisTickSeries.defaultProps,
     tickSize: 75,

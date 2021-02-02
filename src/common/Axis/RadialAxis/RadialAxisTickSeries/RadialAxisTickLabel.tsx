@@ -17,9 +17,7 @@ export interface RadialAxisTickLabelProps {
   format?: (value: any, index: number) => any | string;
 }
 
-export class RadialAxisTickLabel extends PureComponent<
-  RadialAxisTickLabelProps
-> {
+export class RadialAxisTickLabel extends PureComponent<RadialAxisTickLabelProps> {
   static defaultProps: Partial<RadialAxisTickLabelProps> = {
     fill: '#71808d',
     fontSize: 11,

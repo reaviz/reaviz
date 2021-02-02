@@ -1,6 +1,6 @@
-export const gridLine: string
+export const gridLine: string;
 interface Namespace {
-	"gridLine": string,
+  gridLine: string;
 }
-declare const gridlineModule: Namespace
-export default gridlineModule
+declare const gridlineModule: Namespace;
+export default gridlineModule;

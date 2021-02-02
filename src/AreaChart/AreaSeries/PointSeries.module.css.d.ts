@@ -1,6 +1,6 @@
-export const point: string
+export const point: string;
 interface Namespace {
-	"point": string,
+  point: string;
 }
-declare const pointSeriesModule: Namespace
-export default pointSeriesModule
+declare const pointSeriesModule: Namespace;
+export default pointSeriesModule;

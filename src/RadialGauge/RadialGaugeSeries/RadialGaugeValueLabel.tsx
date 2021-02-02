@@ -16,9 +16,7 @@ export interface RadialGaugeValueLabelProps {
   className?: any;
 }
 
-export class RadialGaugeValueLabel extends PureComponent<
-  RadialGaugeValueLabelProps
-> {
+export class RadialGaugeValueLabel extends PureComponent<RadialGaugeValueLabelProps> {
   static defaultProps: Partial<RadialGaugeValueLabelProps> = {};
 
   render() {

@@ -1,6 +1,6 @@
-export const label: string
+export const label: string;
 interface Namespace {
-	"label": string,
+  label: string;
 }
-declare const hiveLabelModule: Namespace
-export default hiveLabelModule
+declare const hiveLabelModule: Namespace;
+export default hiveLabelModule;

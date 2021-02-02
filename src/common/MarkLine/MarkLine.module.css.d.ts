@@ -1,6 +1,6 @@
-export const markLine: string
+export const markLine: string;
 interface Namespace {
-	"markLine": string,
+  markLine: string;
 }
-declare const markLineModule: Namespace
-export default markLineModule
+declare const markLineModule: Namespace;
+export default markLineModule;

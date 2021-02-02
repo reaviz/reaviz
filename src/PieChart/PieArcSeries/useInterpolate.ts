@@ -22,8 +22,8 @@ export const useInterpolate = ({ data, animated, arc }) => {
       animated
         ? { ...DEFAULT_TRANSITION }
         : {
-          delay: 0
-        },
+            delay: 0
+          },
     [animated]
   );
 

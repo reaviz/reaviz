@@ -129,14 +129,14 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
           height={chartHeight}
           width={chartWidth}
           scale={xScale}
-          onDimensionsChange={event => updateAxes('horizontal', event)}
+          onDimensionsChange={(event) => updateAxes('horizontal', event)}
         />
         <CloneElement<LinearAxisProps>
           element={yAxis}
           height={chartHeight}
           width={chartWidth}
           scale={yScale}
-          onDimensionsChange={event => updateAxes('vertical', event)}
+          onDimensionsChange={(event) => updateAxes('vertical', event)}
         />
         {secondaryAxis &&
           secondaryAxis.map((axis, i) => (
@@ -145,7 +145,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
               element={axis}
               height={chartHeight}
               width={chartWidth}
-              onDimensionsChange={event => updateAxes('horizontal', event)}
+              onDimensionsChange={(event) => updateAxes('horizontal', event)}
             />
           ))}
         <CloneElement<HeatmapSeriesProps>

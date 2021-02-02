@@ -1,6 +1,6 @@
-export const scatterPlot: string
+export const scatterPlot: string;
 interface Namespace {
-	"scatterPlot": string,
+  scatterPlot: string;
 }
-declare const scatterPlotModule: Namespace
-export default scatterPlotModule
+declare const scatterPlotModule: Namespace;
+export default scatterPlotModule;

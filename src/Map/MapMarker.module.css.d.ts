@@ -1,6 +1,6 @@
-export const marker: string
+export const marker: string;
 interface Namespace {
-	"marker": string,
+  marker: string;
 }
-declare const mapMarkerModule: Namespace
-export default mapMarkerModule
+declare const mapMarkerModule: Namespace;
+export default mapMarkerModule;

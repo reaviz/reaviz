@@ -12,9 +12,9 @@ interface StackedNormalizedBarChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
 }
 
-export const StackedNormalizedBarChart: FC<Partial<
-  StackedNormalizedBarChartProps
->> = ({
+export const StackedNormalizedBarChart: FC<
+  Partial<StackedNormalizedBarChartProps>
+> = ({
   series = <StackedNormalizedBarSeries />,
   yAxis = (
     <LinearYAxis

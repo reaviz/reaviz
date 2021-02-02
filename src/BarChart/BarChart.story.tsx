@@ -287,11 +287,7 @@ storiesOf('Charts/Bar Chart/Vertical/Multi Series', module)
           <BarSeries
             type="grouped"
             bar={
-              <Bar
-                gradient={gradient}
-                rangeLines={rangelines}
-                guide={guide}
-              />
+              <Bar gradient={gradient} rangeLines={rangelines} guide={guide} />
             }
             colorScheme={color}
             padding={0.8}

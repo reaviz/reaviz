@@ -1,8 +1,8 @@
-export const node: string
-export const inactive: string
+export const node: string;
+export const inactive: string;
 interface Namespace {
-	"node": string,
-	"inactive": string,
+  node: string;
+  inactive: string;
 }
-declare const hiveNodeModule: Namespace
-export default hiveNodeModule
+declare const hiveNodeModule: Namespace;
+export default hiveNodeModule;

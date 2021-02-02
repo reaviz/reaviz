@@ -1,6 +1,6 @@
-export const inactive: string
+export const inactive: string;
 interface Namespace {
-	"inactive": string,
+  inactive: string;
 }
-declare const radialScatterPointModule: Namespace
-export default radialScatterPointModule
+declare const radialScatterPointModule: Namespace;
+export default radialScatterPointModule;

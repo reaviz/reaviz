@@ -1,6 +1,6 @@
-export const valueLabel: string
+export const valueLabel: string;
 interface Namespace {
-	"valueLabel": string,
+  valueLabel: string;
 }
-declare const radialGaugeValueLabelModule: Namespace
-export default radialGaugeValueLabelModule
+declare const radialGaugeValueLabelModule: Namespace;
+export default radialGaugeValueLabelModule;

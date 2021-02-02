@@ -14,9 +14,7 @@ export interface DiscreteLegendSymbolProps {
   className?: any;
 }
 
-export class DiscreteLegendSymbol extends PureComponent<
-  DiscreteLegendSymbolProps
-> {
+export class DiscreteLegendSymbol extends PureComponent<DiscreteLegendSymbolProps> {
   static defaultProps: Partial<DiscreteLegendSymbolProps> = {};
 
   render() {

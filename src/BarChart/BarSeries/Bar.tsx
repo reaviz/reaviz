@@ -513,9 +513,7 @@ export class Bar extends Component<BarProps, BarState> {
     return (
       <g ref={this.rect}>
         <motion.rect
-          className={classNames(
-            extras.className
-          )}
+          className={classNames(extras.className)}
           style={{ ...extras.style, cursor }}
           mask={maskPath}
           rx={rx}
