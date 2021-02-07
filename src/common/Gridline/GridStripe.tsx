@@ -57,23 +57,19 @@ export const GridStripe: FC<Partial<GridStripeProps>> = ({
     const stripeFill = index % 2 ? 'none' : fill;
     const dim = scale.bandwidth();
 
-    if (position === 'vertical') {
-      return {
+    return position === 'vertical' ? {
         y: 0,
         x: pos,
         height: height,
         width: dim,
         fill: stripeFill
-      };
-    } else {
-      return {
+      } : {
         y: pos,
         x: 0,
         height: dim,
         width,
         fill: stripeFill
       };
-    }
   }, [scale, data, index, height, width, fill, position]);
 
   return <rect className={css.gridStripe} {...coords} />;

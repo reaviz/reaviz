@@ -167,11 +167,7 @@ export class TooltipArea extends Component<TooltipAreaProps, TooltipAreaState> {
     // Get our default placement
     let newPlacement = placement;
     if (!placement) {
-      if (isHorizontal) {
-        newPlacement = 'right';
-      } else {
-        newPlacement = 'top';
-      }
+      newPlacement = isHorizontal ? 'right' : 'top';
     }
 
     // Get the path container element

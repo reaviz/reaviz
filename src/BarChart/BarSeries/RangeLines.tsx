@@ -106,17 +106,9 @@ export class RangeLines extends Component<RangeLinesProps> {
         : position;
 
     if (isVertical) {
-      if (direction === 'top') {
-        newY = y;
-      } else {
-        newY = y + height - rangeLineHeight;
-      }
+      newY = direction === 'top' ? y : y + height - rangeLineHeight;
     } else {
-      if (direction === 'top') {
-        newX = x + width - rangeLineHeight;
-      } else {
-        newX = x;
-      }
+      newX = direction === 'top' ? x + width - rangeLineHeight : x;
     }
 
     return {
@@ -135,18 +127,10 @@ export class RangeLines extends Component<RangeLinesProps> {
 
     if (isVertical) {
       const maxY = Math.max(...scale.range());
-      if (position === 'top') {
-        newY = maxY;
-      } else {
-        newY = maxY + height - rangeLineHeight;
-      }
+      newY = position === 'top' ? maxY : maxY + height - rangeLineHeight;
     } else {
       const minX = Math.min(...scale.range());
-      if (position === 'top') {
-        newX = minX;
-      } else {
-        newX = minX + width - rangeLineHeight;
-      }
+      newX = position === 'top' ? minX : minX + width - rangeLineHeight;
     }
 
     if (type === 'stackedDiverging') {
@@ -186,11 +170,7 @@ export class RangeLines extends Component<RangeLinesProps> {
 
     let delay = 0;
     if (animated) {
-      if (layout === 'vertical') {
-        return (index / barCount) * 0.5;
-      } else {
-        return ((barCount - index) / barCount) * 0.5;
-      }
+      return layout === 'vertical' ? (index / barCount) * 0.5 : ((barCount - index) / barCount) * 0.5;
     }
 
     return delay;

@@ -462,11 +462,7 @@ export class Bar extends Component<BarProps, BarState> {
 
     if (animated) {
       let delay = 0;
-      if (layout === 'vertical') {
-        delay = (index / barCount) * 0.5;
-      } else {
-        delay = ((barCount - index) / barCount) * 0.5;
-      }
+      delay = layout === 'vertical' ? (index / barCount) * 0.5 : ((barCount - index) / barCount) * 0.5;
 
       return {
         ...DEFAULT_TRANSITION,

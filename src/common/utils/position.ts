@@ -55,11 +55,7 @@ export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
     let prop;
 
     // Of course the Marimekko is a pain...
-    if (scale.mariemkoInvert) {
-      prop = scale.mariemkoInvert(pos);
-    } else {
-      prop = scaleBandInvert(scale)(pos);
-    }
+    prop = scale.mariemkoInvert ? scale.mariemkoInvert(pos) : scaleBandInvert(scale)(pos);
 
     const idx = domain.indexOf(prop);
     return data[idx];

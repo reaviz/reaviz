@@ -61,21 +61,17 @@ export const Gridline: FC<Partial<GridlineProps>> = ({
   const coords = useMemo(() => {
     const pos = scale(data);
 
-    if (direction === 'x') {
-      return {
+    return direction === 'x' ? {
         x1: pos,
         x2: pos,
         y1: 0,
         y2: height
-      };
-    } else {
-      return {
+      } : {
         y1: pos,
         y2: pos,
         x1: 0,
         x2: width
       };
-    }
   }, [direction, data, height, width, scale]);
 
   return (

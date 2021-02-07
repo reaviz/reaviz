@@ -140,17 +140,13 @@ export const Area: FC<Partial<AreaProps>> = ({
   };
 
   const getTransition = () => {
-    if (animated) {
-      return {
+    return animated ? {
         ...DEFAULT_TRANSITION,
         delay: index * 0.05
-      };
-    } else {
-      return {
+      } : {
         type: false,
         delay: 0
       };
-    }
   };
 
   const renderArea = useCallback(

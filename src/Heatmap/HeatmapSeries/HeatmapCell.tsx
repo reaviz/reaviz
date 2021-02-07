@@ -168,17 +168,13 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   );
 
   const transition = useMemo(() => {
-    if (animated) {
-      return {
+    return animated ? {
         ...DEFAULT_TRANSITION,
         delay: (cellIndex / cellCount) * 0.005
-      };
-    } else {
-      return {
+      } : {
         type: false,
         delay: 0
       };
-    }
   }, [animated, cellIndex, cellCount]);
 
   const extras = constructFunctionProps({ style, className }, data);

@@ -164,20 +164,12 @@ export class BarLabel extends PureComponent<BarLabelProps> {
 
     if (isVertical) {
       const maxY = Math.max(...scale.range());
-      if (position === 'top') {
-        newY = maxY;
-      } else {
-        newY = maxY + height + padding;
-      }
+      newY = position === 'top' ? maxY : maxY + height + padding;
 
       newX = newX + width / 2;
     } else {
       const minX = Math.min(...scale.range());
-      if (position === 'top') {
-        newX = minX;
-      } else {
-        newX = minX + width + padding;
-      }
+      newX = position === 'top' ? minX : minX + width + padding;
 
       newY = newY + height / 2;
     }
@@ -202,11 +194,7 @@ export class BarLabel extends PureComponent<BarLabelProps> {
 
     let delay = 0;
     if (animated) {
-      if (layout === 'vertical') {
-        return (index / barCount) * 0.5;
-      } else {
-        return ((barCount - index) / barCount) * 0.5;
-      }
+      return layout === 'vertical' ? (index / barCount) * 0.5 : ((barCount - index) / barCount) * 0.5;
     }
 
     return delay;

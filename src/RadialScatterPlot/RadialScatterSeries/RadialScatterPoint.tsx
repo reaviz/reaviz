@@ -178,17 +178,13 @@ export class RadialScatterPoint extends Component<
   getTransition() {
     const { animated, index } = this.props;
 
-    if (animated) {
-      return {
+    return animated ? {
         ...DEFAULT_TRANSITION,
         delay: index * 0.005
-      };
-    } else {
-      return {
+      } : {
         type: false,
         delay: 0
       };
-    }
   }
 
   render() {

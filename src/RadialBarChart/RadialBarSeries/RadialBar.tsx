@@ -190,17 +190,13 @@ export class RadialBar extends Component<RadialBarProps> {
   getTransition() {
     const { animated, barCount, index } = this.props;
 
-    if (animated) {
-      return {
+    return animated ? {
         ...DEFAULT_TRANSITION,
         delay: (index / barCount) * 0.5
-      };
-    } else {
-      return {
+      } : {
         type: false,
         delay: 0
       };
-    }
   }
 
   renderBar(color: string) {

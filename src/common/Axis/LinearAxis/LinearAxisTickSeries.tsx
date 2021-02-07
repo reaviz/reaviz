@@ -73,11 +73,7 @@ export class LinearAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
   getPosition(scaledTick: number) {
     const { orientation } = this.props;
 
-    if (orientation === 'horizontal') {
-      return { x: scaledTick, y: 0 };
-    } else {
-      return { x: 0, y: scaledTick };
-    }
+    return orientation === 'horizontal' ? { x: scaledTick, y: 0 } : { x: 0, y: scaledTick };
   }
 
   /**

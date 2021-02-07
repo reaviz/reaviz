@@ -45,8 +45,7 @@ export class LinearGauge extends Component<LinearGaugeProps> {
   };
 
   getData(data: ChartShallowDataShape | ChartShallowDataShape[]) {
-    if (Array.isArray(data)) {
-      return buildBarStackData(
+    return Array.isArray(data) ? buildBarStackData(
         [
           {
             key: 'default',
@@ -55,10 +54,7 @@ export class LinearGauge extends Component<LinearGaugeProps> {
         ] as ChartNestedDataShape[],
         'expand',
         'horizontal'
-      );
-    } else {
-      return buildShallowChartData([data], 'horizontal');
-    }
+      ) : buildShallowChartData([data], 'horizontal');
   }
 
   getScales(

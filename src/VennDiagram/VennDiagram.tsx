@@ -63,18 +63,14 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       }));
 
       let layoutData;
-      if (type === 'starEuler') {
-        layoutData = starEulerLayout(normalized, {
+      layoutData = type === 'starEuler' ? starEulerLayout(normalized, {
           height: containerProps.height,
           width: containerProps.width
-        });
-      } else {
-        layoutData = layout(normalized, {
+        }) : layout(normalized, {
           height: containerProps.height,
           width: containerProps.width,
           distinct: type !== 'euler'
         });
-      }
 
       return (
         <CloneElement<VennSeriesProps>

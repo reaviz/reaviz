@@ -68,17 +68,9 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
       if (show === 'hover') {
         return isActive;
       } else if (show === 'first') {
-        if (activeValues) {
-          return isActive;
-        } else {
-          return index === 0;
-        }
+        return activeValues ? isActive : index === 0;
       } else if (show === 'last') {
-        if (activeValues) {
-          return isActive;
-        } else {
-          return index === data!.length - 1;
-        }
+        return activeValues ? isActive : index === data!.length - 1;
       }
 
       return show;

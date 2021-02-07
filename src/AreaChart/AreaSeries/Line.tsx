@@ -171,17 +171,13 @@ export const Line: FC<Partial<LineProps>> = ({
   };
 
   const getTransition = () => {
-    if (animated) {
-      return {
+    return animated ? {
         ...DEFAULT_TRANSITION,
         delay: hasArea ? 0 : index * 0.05
-      };
-    } else {
-      return {
+      } : {
         type: false,
         delay: 0
       };
-    }
   };
 
   const coords = getCoords();

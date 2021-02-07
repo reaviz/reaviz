@@ -84,16 +84,12 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
   getNodeColor(node: NodeElement, index: any) {
     const { colorScheme, nodes } = this.props;
 
-    if (colorScheme) {
-      return getColor({
+    return colorScheme ? getColor({
         data: nodes,
         colorScheme,
         point: nodes[index],
         index
-      });
-    } else {
-      return node.props.color;
-    }
+      }) : node.props.color;
   }
 
   onNodeActive(node: Node) {

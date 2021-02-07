@@ -173,11 +173,7 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
 
     let key = 'key';
     if (isMultiSeries) {
-      if (layout === 'vertical') {
-        key = 'x';
-      } else {
-        key = 'y';
-      }
+      key = layout === 'vertical' ? 'x' : 'y';
     }
 
     // histograms...

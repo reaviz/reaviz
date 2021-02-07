@@ -36,20 +36,12 @@ export function getXScale({
   let scale;
 
   if (type === 'time' || type === 'duration' || type === 'value') {
-    if (type === 'time') {
-      scale = scaleTime().rangeRound([0, width!]);
-    } else {
-      scale = scaleLinear().rangeRound([0, width!]);
-    }
+    scale = type === 'time' ? scaleTime().rangeRound([0, width!]) : scaleLinear().rangeRound([0, width!]);
 
     scale = scale.domain(domain || getXDomain({ data, scaled, isDiverging }));
   } else {
     if (!domain) {
-      if (isMultiSeries) {
-        domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.key);
-      } else {
-        domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.x);
-      }
+      domain = isMultiSeries ? uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.key) : uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.x);
     }
 
     scale = scaleBand()
@@ -83,14 +75,10 @@ export function getYScale({
       .domain(domain || getYDomain({ data, scaled, isDiverging }));
   } else {
     if (!domain) {
-      if (isMultiSeries) {
-        domain = uniqueBy<ChartInternalNestedDataShape>(
+      domain = isMultiSeries ? uniqueBy<ChartInternalNestedDataShape>(
           data as [],
           (d) => d.key
-        );
-      } else {
-        domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.y);
-      }
+        ) : uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.y);
     }
 
     scale = scaleBand()
