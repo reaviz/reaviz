@@ -1,4 +1,4 @@
-import React, { Component, ReactElement, FC } from 'react';
+import React, { Component, ReactElement } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from 'rdk';
 import {
@@ -24,20 +24,14 @@ export interface PointSeriesProps {
   index: number;
 }
 
-export const PointSeries: FC<Partial<PointSeriesProps>> = ({
-  show = 'hover',
-  point = <ScatterPoint />,
-  activeValues,
-  data,
-  xScale,
-  yScale,
-  animated,
-  color,
-  height,
-  width,
-  id
-}) => {
-  const isVisible = (point: ChartInternalShallowDataShape, index: number) => {
+export class PointSeries extends Component<PointSeriesProps> {
+  static defaultProps: Partial<PointSeriesProps> = {
+    show: 'hover',
+    point: <ScatterPoint />
+  };
+
+  isVisible(point: ChartInternalShallowDataShape, index: number) {
+    const { show, activeValues, data } = this.props;
     const isActive = activeValues && point && isEqual(activeValues.x, point.x);
 
     if (show === 'hover') {
@@ -55,28 +49,43 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = ({
         return index === data.length - 1;
       }
     }
-    return show;
-  };
 
-  return (
-    <ScatterSeries
-      height={height}
-      width={width}
-      id={id}
-      animated={animated}
-      data={data}
-      xScale={xScale}
-      yScale={yScale}
-      point={
-        <CloneElement<ScatterPointProps>
-          element={point}
-          color={color}
-          className={css.point}
-          size={4}
-          tooltip={null}
-          visible={isVisible}
-        />
-      }
-    />
-  );
-};
+    return show;
+  }
+
+  render() {
+    const {
+      data,
+      xScale,
+      yScale,
+      animated,
+      point,
+      color,
+      height,
+      width,
+      id
+    } = this.props;
+
+    return (
+      <ScatterSeries
+        height={height}
+        width={width}
+        id={id}
+        animated={animated}
+        data={data}
+        xScale={xScale}
+        yScale={yScale}
+        point={
+          <CloneElement<ScatterPointProps>
+            element={point}
+            color={color}
+            className={css.point}
+            size={4}
+            tooltip={null}
+            visible={this.isVisible.bind(this)}
+          />
+        }
+      />
+    );
+  }
+}
