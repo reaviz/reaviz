@@ -1,3 +1,6 @@
+# 10.1.0
+- [chore] upgrade realayer/rdk/deps
+
 # 10.0.0
 - [breaking] remove rounded corners from bar chart
 - [fix] fix bar chart render issues

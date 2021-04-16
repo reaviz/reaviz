@@ -187,11 +187,13 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
 
   return (
     <Fragment>
-      <motion.g ref={rect} x={x} y={y}>
+      <g ref={rect}>
         <motion.rect
           {...rest}
           fill={fill}
           stroke={stroke}
+          x={x}
+          y={y}
           style={{ ...extras.style, cursor }}
           className={classNames(css.cell, extras.className)}
           initial={{
@@ -208,7 +210,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
           onMouseLeave={onMouseLeaveWrapper}
           onClick={onMouseClick}
         />
-      </motion.g>
+      </g>
       {tooltip && !(tooltip.props as any).disabled && !isTransparent && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
