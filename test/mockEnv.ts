@@ -9,6 +9,9 @@ class ResizeObserver {
   disconnect() {
     // do nothing
   }
+  unobserve() {
+    // do nothing
+  }
 }
 
 window['ResizeObserver'] = ResizeObserver;
