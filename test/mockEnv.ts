@@ -1,18 +1,6 @@
 import '@testing-library/jest-dom';
+import { ResizeObserver } from '@juggle/resize-observer';
 
-// very simple mock for Resize Observer
-// needed for `react-cool-dimensions` package
-class ResizeObserver {
-  observe() {
-    // do nothing
-  }
-  disconnect() {
-    // do nothing
-  }
-  unobserve() {
-    // do nothing
-  }
+if (!('ResizeObserver' in window)) {
+  window.ResizeObserver = ResizeObserver;
 }
-
-window['ResizeObserver'] = ResizeObserver;
-window['ResizeObserverEntry'] = () => {};
