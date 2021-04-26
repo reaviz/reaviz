@@ -1,5 +1,4 @@
 import { hierarchy, pack } from 'd3-hierarchy';
-import { motion } from 'framer-motion';
 import { CloneElement } from 'rdk';
 import React, { FC, ReactElement, useCallback } from 'react';
 import { ChartContainer, ChartContainerChildProps, ChartProps, ChartShallowDataShape } from '../common';
@@ -38,12 +37,12 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
     return bubble(root).leaves();
   }, [data]);
 
-  const renderChart = useCallback(({ chartWidth, chartHeight }: ChartContainerChildProps) => {
+  const renderChart = useCallback(({ chartWidth, chartHeight, ...rest }: ChartContainerChildProps) => {
     const circles = getData(chartWidth, chartHeight);
     return (
       <CloneElement<BubbleSeriesProps>
         element={series}
-        id={`${id}-series`}
+        id={`${rest.id}-series`}
         data={circles}
       />
     );

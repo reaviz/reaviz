@@ -72,12 +72,14 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
         <CloneElement<BubbleProps>
           element={bubble}
           id={`${id}-bubble`}
+          animated={animated}
           data={item}
           fill={fill}
         />
         <CloneElement<BubbleLabelProps>
           element={label}
           id={`${id}-label`}
+          animated={animated}
           data={item}
         />
       </motion.g>

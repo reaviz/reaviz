@@ -21,6 +21,11 @@ export interface BubbleProps {
   fill: string;
 
   /**
+   * Whether the chart is animated or not.
+   */
+   animated?: boolean;
+
+  /**
    * Tooltip element.
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
@@ -42,6 +47,7 @@ export interface BubbleProps {
 }
 
 export const Bubble: FC<Partial<BubbleProps>> = ({
+  id,
   data,
   fill,
   onClick,
@@ -55,8 +61,14 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   return (
     <Fragment>
       <motion.circle
+        id={`${id}-bubble`}
         ref={bubbleRef}
         fill={fill}
+        initial={{
+          r: data.r,
+          cx: data.x,
+          cy: data.y
+        }}
         animate={{
           r: data.r,
           cx: data.x,
