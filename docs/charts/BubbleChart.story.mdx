@@ -1,0 +1,71 @@
+import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { AreaChart, AreaSeries, Area, Line, PointSeries } from '../../src';
+import { BubbleChart, BubbleSeries, Bubble, BubbleLabel } from '../../src';
+
+<Meta title="Docs/Chart Types/Bubble Chart" />
+
+# Bubble Chart
+
+---
+<br />
+<div className="doc-story">
+<Story id="charts-bubble-chart--simple" />
+</div>
+<br />
+
+## Quick Start
+To create a bubble chart, use import the `BubbleChart` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { BubbleChart } from 'reaviz';
+
+const MyChart = () => (
+  <BubbleChart
+    height={300}
+    width={300}
+    data={[
+      { key: 'AWS', data: 13 },
+      { key: 'SendGrid', data: 2 },
+      { key: 'Okta', data: 15 }
+    ]}
+  />
+);
+```
+
+## API
+### [BubbleChart](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/BubbleChart.tsx)
+<ArgsTable of={BubbleChart} />
+
+### [BubbleSeries](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/BubbleSeries.tsx)
+<ArgsTable of={BubbleSeries} />
+
+### [Bubble](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/Bubble.tsx)
+<ArgsTable of={Bubble} />
+
+### [BubbleLabel](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/BubbleLabel.tsx)
+<ArgsTable of={BubbleLabel} />
+
+## Demo
+
+```js codesandbox=reaviz
+import React from 'react';
+import { BubbleChart } from 'reaviz';
+
+const data = [
+  { key: 'AWS', data: 100 },
+  { key: 'SendGrid', data: 45 },
+  { key: 'Okta', data: 75 },
+  { key: 'Twillo', data: 25 }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <BubbleChart
+      data={data}
+      height={450}
+      width={450}
+    />
+  </div>
+);
+```

@@ -1,3 +1,6 @@
+# 10.2.1
+- [fix] fix missing export
+
 # 10.2.0
 - [feature] bubble chart
 
