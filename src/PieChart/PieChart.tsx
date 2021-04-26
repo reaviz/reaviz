@@ -70,17 +70,15 @@ export const PieChart: FC<PieChartProps> = ({
       center={true}
       className={classNames(className)}
     >
-      {({ chartWidth, chartHeight }: ChartContainerChildProps) => {
-        return (
-          <CloneElement<PieArcSeriesProps>
-            element={series}
-            data={getData}
-            height={chartHeight}
-            width={chartWidth}
-            displayAllLabels={displayAllLabels}
-          />
-        );
-      }}
+      {({ chartWidth, chartHeight }: ChartContainerChildProps) => (
+        <CloneElement<PieArcSeriesProps>
+          element={series}
+          data={getData}
+          height={chartHeight}
+          width={chartWidth}
+          displayAllLabels={displayAllLabels}
+        />
+      )}
     </ChartContainer>
   );
 };
