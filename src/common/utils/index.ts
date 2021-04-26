@@ -11,3 +11,4 @@ export * from './math';
 export * from './functions';
 export * from './array';
 export * from './size';
+export * from './wrapText';

@@ -1,10 +1,8 @@
 import React from 'react';
-import { calculateDimensions } from '../common/utils';
+import { calculateDimensions } from './size';
 
-export function wrapText({ key, data, fontFamily, fontSize }) {
+export function wrapText({ key, x = 0 , width, fontFamily, fontSize }) {
   const size = calculateDimensions(key, fontFamily, fontSize);
-
-  const width = data?.circles?.[0]?.radius;
 
   if (size.width > width) {
     const words = key.split(/\s+/);
@@ -37,8 +35,8 @@ export function wrapText({ key, data, fontFamily, fontSize }) {
         key={i}
         dominantBaseline="alphabetic"
         style={{ baselineShift: '0%' }}
-        dy={i * size.height}
-        x={data.text.x}
+        dy={i > 0 ? size.height : -size.height / 2}
+        x={x}
       >
         {r}
       </tspan>
