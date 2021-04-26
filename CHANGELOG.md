@@ -1,3 +1,6 @@
+# 10.2.0
+- [feature] bubble chart
+
 # 10.1.0
 - [chore] upgrade realayer/rdk/deps
 

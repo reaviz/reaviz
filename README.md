@@ -65,9 +65,6 @@ Chart types include:
   - Stacked Normalized
   - Radial
   - Sparklines
-- Bubble Chart
-  - Linear
-  - Radial
 - Scatter Chart
   - Linear
   - Radial
@@ -90,6 +87,7 @@ Chart types include:
   - Standard
   - Euler
   - Fixed Euler
+- Bubble Chart
 
 Additional features:
 
