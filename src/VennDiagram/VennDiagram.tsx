@@ -99,7 +99,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       center={false}
       className={className}
     >
-      {(props) => renderChart(props)}
+      {renderChart}
     </ChartContainer>
   );
 };

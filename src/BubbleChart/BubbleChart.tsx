@@ -1,13 +1,20 @@
 import { hierarchy, pack } from 'd3-hierarchy';
 import { motion } from 'framer-motion';
-import React, { FC, useCallback } from 'react';
+import { CloneElement } from 'rdk';
+import React, { FC, ReactElement, useCallback } from 'react';
 import { ChartContainer, ChartContainerChildProps, ChartProps, ChartShallowDataShape } from '../common';
+import { BubbleSeries, BubbleSeriesProps } from './BubbleSeries';
 
 export interface BubbleChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
   data: ChartShallowDataShape[];
+
+  /**
+   * The series component that renders the arc components.
+   */
+   series?: ReactElement<BubbleSeriesProps, typeof BubbleSeries>;
 }
 
 export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
@@ -16,10 +23,10 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
   width,
   height,
   className,
-  margins = 10
+  margins = 10,
+  series = <BubbleSeries />
 }) => {
-
-  const aggregatedData = useCallback((cw: number, ch: number) => {
+  const getData = useCallback((cw: number, ch: number) => {
     const bubble = pack()
       .size([cw, ch])
       .padding(3);
@@ -28,50 +35,19 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
       .sum(d => d.data)
       .sort((a, b) => b.data - a.data);
 
-    const circles = bubble(root).leaves();
-
-    console.log('cir', circles);
-
-    return circles;
+    return bubble(root).leaves();
   }, [data]);
 
-  const renderChart = ({ chartWidth, chartHeight }: ChartContainerChildProps) => {
-    const circles = aggregatedData(chartWidth, chartHeight);
-
+  const renderChart = useCallback(({ chartWidth, chartHeight }: ChartContainerChildProps) => {
+    const circles = getData(chartWidth, chartHeight);
     return (
-      <g>
-        {circles.map(c => (
-          <motion.g
-            key={(c.data as any).key}
-            initial={{
-              scale: .5,
-              opacity: 0
-            }}
-            animate={{
-              scale: 1,
-              opacity: 1
-            }}
-          >
-            <circle
-              r={c.r}
-              stroke="black"
-              cx={c.x}
-              cy={c.y}
-              fillOpacity={.8}
-              fill="red"
-            />
-            <text
-              x={c.x}
-              y={c.y}
-              textAnchor="middle"
-            >
-              {(c.data as any).key}
-            </text>
-          </motion.g>
-        ))}
-      </g>
+      <CloneElement<BubbleSeriesProps>
+        element={series}
+        id={`${id}-series`}
+        data={circles}
+      />
     );
-  };
+  }, [series, getData, id]);
 
   return (
     <ChartContainer

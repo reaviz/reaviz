@@ -2,6 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { BubbleChart } from './BubbleChart';
 import { ChartShallowDataShape } from '../common/data';
+import { number, object, select } from '@storybook/addon-knobs';
+import { schemes } from '../common/color';
+import { BubbleSeries } from './BubbleSeries';
 
 const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },
@@ -11,10 +14,22 @@ const simpleData: ChartShallowDataShape[] = [
 ];
 
 storiesOf('Charts/Bubble Chart', module)
-  .add('Simple', () => (
-    <BubbleChart
-      data={simpleData}
-      height={500}
-      width={500}
-    />
-  ));
+  .add('Simple', () => {
+    const height = number('Height', 450);
+    const width = number('Width', 450);
+    const data = object('Data', simpleData);
+    const scheme = select('Color Scheme', schemes, 'cybertron');
+
+    return (
+      <BubbleChart
+        data={data}
+        height={height}
+        width={width}
+        series={
+          <BubbleSeries
+            colorScheme={scheme}
+          />
+        }
+      />
+    );
+});
