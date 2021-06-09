@@ -1,3 +1,6 @@
+# 10.2.2
+- [chore] upgrade realayer/rdk/deps
+
 # 10.2.1
 - [fix] fix missing export
 

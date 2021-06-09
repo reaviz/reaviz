@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "10.2.1",
+  "version": "10.2.2",
   "description": "Data Visualization using React and D3.js",
   "scripts": {
     "start": "start-storybook -p 9010 -s public",
@@ -85,11 +85,11 @@
     "human-format": "^0.11.0",
     "memoize-bind": "^1.0.3",
     "memoize-one": "^5.1.1",
-    "rdk": "^5.1.0",
+    "rdk": "^5.1.2",
     "react-cool-dimensions": "^1.2.0",
     "react-countup": "^4.3.3",
     "react-fast-compare": "^3.2.0",
-    "realayers": "^2.4.0",
+    "realayers": "^2.4.1",
     "transformation-matrix": "^2.6.0"
   },
   "storybook-deployer": {
