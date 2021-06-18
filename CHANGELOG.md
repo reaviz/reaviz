@@ -1,3 +1,6 @@
+# 10.3.0 - 6/18/21
+- [feature] add gradient/mask to bubble chart
+
 # 10.2.2
 - [chore] upgrade realayer/rdk/deps
 
