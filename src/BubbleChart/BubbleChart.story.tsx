@@ -2,11 +2,14 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { BubbleChart } from './BubbleChart';
 import { ChartShallowDataShape } from '../common/data';
-import { number, object, select } from '@storybook/addon-knobs';
+import { boolean, number, object, select } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 import { BubbleSeries } from './BubbleSeries';
 import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
+import { Bubble } from './Bubble';
+import { Gradient } from '../common/Gradient';
+import { Stripes } from '../common/Mask';
 
 const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },
@@ -21,6 +24,8 @@ storiesOf('Charts/Bubble Chart', module)
     const width = number('Width', 450);
     const data = object('Data', simpleData);
     const scheme = select('Color Scheme', schemes, 'cybertron');
+    const gradient = boolean('Gradient', false);
+    const mask = boolean('Mask', false);
 
     return (
       <BubbleChart
@@ -30,6 +35,12 @@ storiesOf('Charts/Bubble Chart', module)
         series={
           <BubbleSeries
             colorScheme={scheme}
+            bubble={
+              <Bubble
+                mask={mask ? <Stripes /> : null}
+                gradient={gradient ? <Gradient /> : null}
+              />
+            }
           />
         }
       />
@@ -42,13 +53,7 @@ storiesOf('Charts/Bubble Chart', module)
       { key: 'Short Name', data: 25 }
     ];
 
-    return (
-      <BubbleChart
-        data={longData}
-        height={450}
-        width={450}
-      />
-    );
+    return <BubbleChart data={longData} height={450} width={450} />;
   })
   .add('No Animation', () => (
     <BubbleChart
@@ -59,37 +64,23 @@ storiesOf('Charts/Bubble Chart', module)
     />
   ))
   .add('Varying Sizes', () => {
-    const longData: ChartShallowDataShape[] = range(15).map(o => ({
+    const longData: ChartShallowDataShape[] = range(15).map((o) => ({
       key: `${o}`,
       data: randomNumber(1, 500)
     }));
 
-    return (
-      <BubbleChart
-        data={longData}
-        height={450}
-        width={450}
-      />
-    );
+    return <BubbleChart data={longData} height={450} width={450} />;
   })
   .add('100 Bubbles', () => {
-    const longData: ChartShallowDataShape[] = range(100).map(o => ({
+    const longData: ChartShallowDataShape[] = range(100).map((o) => ({
       key: `${o + 1}`,
       data: 1
     }));
 
-    return (
-      <BubbleChart
-        data={longData}
-        height={450}
-        width={450}
-      />
-    );
+    return <BubbleChart data={longData} height={450} width={450} />;
   })
   .add('Autosize', () => (
     <div style={{ width: '70vw', height: '70vh', border: 'solid 1px red' }}>
-      <BubbleChart
-        data={simpleData}
-      />
+      <BubbleChart data={simpleData} />
     </div>
   ));

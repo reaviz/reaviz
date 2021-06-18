@@ -3,6 +3,8 @@ import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
+import { Gradient, GradientProps } from '../common/Gradient';
+import { Mask, MaskProps } from '../common/Mask';
 
 export interface BubbleProps {
   /**
@@ -23,12 +25,22 @@ export interface BubbleProps {
   /**
    * Whether the chart is animated or not.
    */
-   animated?: boolean;
+  animated?: boolean;
 
   /**
    * Tooltip element.
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
+
+  /**
+   * Mask element for the arc.
+   */
+  mask: ReactElement<MaskProps, typeof Mask> | null;
+
+  /**
+   * Gradient shades for the arc.
+   */
+  gradient: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
    * Event for when the arc is clicked.
@@ -50,6 +62,8 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   id,
   data,
   fill,
+  mask,
+  gradient,
   onClick,
   onMouseEnter,
   onMouseLeave,
@@ -58,12 +72,19 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);
 
+  const arcFill =
+    gradient && !mask
+      ? `url(#gradient-${id})`
+      : mask
+        ? `url(#mask-pattern-${id})`
+        : fill;
+
   return (
     <Fragment>
       <motion.circle
         id={`${id}-bubble`}
         ref={bubbleRef}
-        fill={fill}
+        fill={arcFill}
         initial={{
           r: data.r,
           cx: data.x,
@@ -75,15 +96,32 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
           cy: data.y
         }}
         onClick={onClick}
-        onMouseEnter={event => {
+        onMouseEnter={(event) => {
           setInternalActive(true);
           onMouseEnter?.(event);
         }}
-        onMouseLeave={event => {
+        onMouseLeave={(event) => {
           setInternalActive(false);
           onMouseLeave?.(event);
         }}
       />
+      {mask && (
+        <Fragment>
+          <Mask id={`mask-${id}`} fill={`url(#gradient-${id})`} />
+          <CloneElement<MaskProps>
+            element={mask}
+            id={`mask-pattern-${id}`}
+            fill={fill}
+          />
+        </Fragment>
+      )}
+      {gradient && (
+        <CloneElement<GradientProps>
+          element={gradient}
+          id={`gradient-${id}`}
+          color={fill}
+        />
+      )}
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
