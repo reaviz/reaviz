@@ -1,12 +1,12 @@
 import React from 'react';
 import { calculateDimensions } from './size';
 
-export function wrapText({ key, x = 0 , width, fontFamily, fontSize }) {
+export function wrapText({ key, x = 0, width, fontFamily, fontSize }) {
   const size = calculateDimensions(key, fontFamily, fontSize);
+  const words = key.split(/\s+/);
 
-  if (size.width > width) {
-    const words = key.split(/\s+/);
-    const rows = [];
+  if (words.length > 1 && size.width > width) {
+    let rows = [];
     let sum = 0;
     let curText = '';
     let lineNum = 0;
@@ -43,5 +43,15 @@ export function wrapText({ key, x = 0 , width, fontFamily, fontSize }) {
     ));
   }
 
-  return key;
+  // NOTE: 5px seems to magic number for making it center
+  return (
+    <tspan
+      dominantBaseline="alphabetic"
+      style={{ baselineShift: '0%' }}
+      dy={(size.height / 2) - 5}
+      x={x}
+    >
+      {key}
+    </tspan>
+  );
 }
