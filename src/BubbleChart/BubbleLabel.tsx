@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, isValidElement } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { motion } from 'framer-motion';
 import { wrapText } from '../common/utils/wrapText';
@@ -32,45 +32,67 @@ export interface BubbleLabelProps {
   /**
    * Should wrap text or not.
    */
-   wrap?: boolean;
+  wrap?: boolean;
 
   /**
    * Whether the chart is animated or not.
    */
   animated?: boolean;
+
+  /**
+   * Format label.
+   */
+  format?: (data) => any;
 }
 
 export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   id,
   data,
+  format,
   wrap = true,
   fill = '#000',
   fontSize = 14,
   fontFamily = 'sans-serif'
 }) => {
-  const text = wrap ? wrapText({
-    key: data.data.key,
-    fontFamily,
-    fontSize,
-    width: data.r
-  }) : data.data.key;
+  let isElement = false;
+  let label;
+
+  if (format) {
+    label = format(data);
+    isElement = isValidElement(label);
+  }
+
+  if (!isElement) {
+    const text = wrap ? wrapText({
+      key: data.data.key,
+      fontFamily,
+      fontSize,
+      width: data.r
+    }) : data.data.key;
+
+    return (
+      <motion.text
+        initial={{
+          x: data.x,
+          y: data.y
+        }}
+        animate={{
+          x: data.x,
+          y: data.y
+        }}
+        id={`${id}-text`}
+        style={{ pointerEvents: 'none', fontFamily, fontSize }}
+        fill={fill}
+        textAnchor="middle"
+      >
+        {text}
+      </motion.text>
+    );
+  }
 
   return (
-    <motion.text
-      initial={{
-        x: data.x,
-        y: data.y
-      }}
-      animate={{
-        x: data.x,
-        y: data.y
-      }}
-      id={`${id}-text`}
-      style={{ pointerEvents: 'none', fontFamily, fontSize }}
-      fill={fill}
-      textAnchor="middle"
-    >
-      {text}
-    </motion.text>
+    <g style={{ transform: `translate(${data.x}px, ${data.y}px)` }}>
+      {label}
+    </g>
   );
 };

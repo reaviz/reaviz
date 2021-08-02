@@ -10,6 +10,12 @@ import { randomNumber } from '../../demo';
 import { Bubble } from './Bubble';
 import { Gradient } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
+import { BubbleLabel } from './BubbleLabel';
+
+import oktaLogo from '../../demo/okta.png';
+import awsLogo from '../../demo/aws.png';
+import twilloLogo from '../../demo/twillo.svg';
+import sendgridLogo from '../../demo/sendgrid.png';
 
 const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },
@@ -46,6 +52,43 @@ storiesOf('Charts/Bubble Chart', module)
       />
     );
   })
+  .add('Icons', () => (
+    <BubbleChart
+      data={simpleData}
+      height={450}
+      width={450}
+      series={
+        <BubbleSeries
+          label={
+            <BubbleLabel
+              format={data => {
+                const logos = {
+                  'AWS': awsLogo,
+                  'SendGrid': sendgridLogo,
+                  'Okta': oktaLogo,
+                  'Twillo': twilloLogo
+                };
+
+                return (
+                  <g>
+                    <foreignObject
+                      height={45}
+                      width={45}
+                      x={-45 / 2}
+                      y={-45 / 2}
+                    >
+                      <img src={logos[data.data.key]} width={45} />
+                    </foreignObject>
+                    <text dy={35} textAnchor="middle">{data.data.key}</text>
+                  </g>
+                );
+              }}
+            />
+          }
+        />
+      }
+    />
+  ))
   .add('Long Text', () => {
     const longData: ChartShallowDataShape[] = [
       { key: 'Department of Curtains and Interior Design', data: 100 },
