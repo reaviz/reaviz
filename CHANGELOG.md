@@ -1,3 +1,6 @@
+# 10.4.0 - 8/9/21
+- [feature] add ability to customize bubble chart labels
+
 # 10.3.1 - 7/9/21
 - [chore] update rdk/realayers
 
