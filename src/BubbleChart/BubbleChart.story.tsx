@@ -12,10 +12,10 @@ import { Gradient } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
 import { BubbleLabel } from './BubbleLabel';
 
-import oktaLogo from '../../demo/okta.png';
-import awsLogo from '../../demo/aws.png';
+import oktaLogo from '../../demo/okta.svg';
+import awsLogo from '../../demo/aws.svg';
 import twilloLogo from '../../demo/twillo.svg';
-import sendgridLogo from '../../demo/sendgrid.png';
+import sendgridLogo from '../../demo/sendgrid.svg';
 
 const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },
@@ -72,12 +72,12 @@ storiesOf('Charts/Bubble Chart', module)
                 return (
                   <g>
                     <foreignObject
-                      height={45}
-                      width={45}
-                      x={-45 / 2}
-                      y={-45 / 2}
+                      height={40}
+                      width={40}
+                      x={-40 / 2}
+                      y={-50 / 2}
                     >
-                      <img src={logos[data.data.key]} width={45} />
+                      <img src={logos[data.data.key]} width={40} height={40} />
                     </foreignObject>
                     <text dy={35} textAnchor="middle">{data.data.key}</text>
                   </g>
