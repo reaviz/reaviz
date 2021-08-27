@@ -30,6 +30,8 @@ React natively for rendering the components while using D3js under the
 hood for calculations. The library provides an easy way to get started
 creating charts without sacrificing customization ability.
 
+If you are looking for node-based graphs, checkout [reaflow](https://reaflow.dev).
+
 ## 🚀 Quick Links
 
 - Checkout the [demos](https://reaviz.io)
@@ -118,8 +120,6 @@ Additional features:
 - Bar Guidelines
 - Range Lines
 - SSR
-
-If you are looking for node-based graphs, checkout [reaflow](https://reaflow.dev).
 
 ## 📦 Install
 
