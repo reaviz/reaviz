@@ -1,3 +1,7 @@
+# 10.4.1 - 9/8/21
+- [chore] upgrade deps
+- [chore] refactor heatmap series to FC
+
 # 10.4.0 - 8/9/21
 - [feature] add ability to customize bubble chart labels
 - [fix] improve alignment of bubbles

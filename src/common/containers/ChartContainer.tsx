@@ -97,7 +97,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const [yAxisSized, setYAxisSized] = useState<boolean>(false);
   const [xOffset, setYOffset] = useState<number>(0);
   const [yOffset, setXOffset] = useState<number>(0);
-  const { ref, width, height } = useDimensions<HTMLDivElement>();
+  const { observe, width, height } = useDimensions<HTMLDivElement>();
 
   const chartSized = useMemo(() => {
     if (!height || !width) {
@@ -173,7 +173,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const styleWidth = rest.width || '100%';
 
   return (
-    <div ref={ref} style={{ height: styleHeight, width: styleWidth }}>
+    <div ref={observe} style={{ height: styleHeight, width: styleWidth }}>
       {height > 0 && width > 0 && (
         <svg width={width} height={height} className={className} style={style}>
           <g transform={`translate(${translateX}, ${translateY})`}>
