@@ -21,6 +21,9 @@
   <a href="https://discord.gg/tt8wGExq35">
     <img src="https://img.shields.io/discord/773948315037073409?label=discord">
   </a>
+  <a href="https://opencollective.com/reaviz">
+    <img alt="Open Collective backers and sponsors" src="https://img.shields.io/opencollective/all/reaviz?label=backers">
+  </a>
 </p>
 
 ---
