@@ -40,6 +40,7 @@ export interface CalendarHeatmapProps extends Omit<HeatmapProps, 'data'> {
    */
   view: CalendarView;
 }
+
 // Format the xAxis label for the start + n week
 const xAxisLabelFormat = (start: Date) => (weeks: number) =>
   addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' });
@@ -49,7 +50,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   series = (
     <HeatmapSeries
       padding={0.3}
-      emptyColor={'transparent'}
+      emptyColor="transparent"
       cell={
         <HeatmapCell
           tooltip={
@@ -68,9 +69,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   data,
   ...rest
 }) => {
-  const dataDomains = useMemo(() => buildDataScales(data, view), [data, view]);
-
-  const { data: domainData, yDomain, xDomain, start } = dataDomains;
+  const { data: domainData, yDomain, xDomain, start } = useMemo(() => buildDataScales(data, view), [data, view]);
 
   // For month, only pass 1 tick value
   const xTickValues = view === 'year' ? undefined : [1];

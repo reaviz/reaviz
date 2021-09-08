@@ -47,10 +47,11 @@ export interface HeatmapProps extends ChartProps {
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
+
 export const Heatmap: FC<Partial<HeatmapProps>> = ({
   data = [],
   margins = 10,
-  series = <HeatmapSeries />,
+  series = <HeatmapSeries padding={0.1} />,
   yAxis = (
     <LinearYAxis
       type="category"
@@ -91,7 +92,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       const xScale = scaleBand()
         .range([0, chartWidth])
         .domain(xDomain)
-        .paddingInner(series.props.padding);
+        .paddingInner(series.props.padding || 0.1);
 
       const yDomain: any =
         yAxis.props.domain ||
@@ -104,7 +105,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       const yScale = scaleBand()
         .domain(yDomain)
         .range([chartHeight, 0])
-        .paddingInner(series.props.padding);
+        .paddingInner(series.props.padding || 0.1);
 
       return {
         yScale,
