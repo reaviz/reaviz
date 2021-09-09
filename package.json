@@ -11,8 +11,8 @@
     "build": "rollup -c",
     "lint": "eslint --ext js,ts,tsx",
     "lint:fix": "eslint --ext js,ts,tsx --fix src",
-    "test": "jest --env=jsdom",
-    "test:ci": "jest --env=jsdom --collectCoverage=true --reporters=default --reporters=jest-junit",
+    "test": "jest",
+    "test:ci": "jest -collectCoverage=true --reporters=default --reporters=jest-junit",
     "ts:check": "tsc --noEmit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
     "chromatic": "chromatic --project-token=d5ql53y3nwr --exit-zero-on-changes"
@@ -125,13 +125,13 @@
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "@types/topojson-client": "^3.1.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.2",
-    "@typescript-eslint/parser": "^4.14.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "autoprefixer": "^9.8.5",
     "chromatic": "^5.9.2",
-    "eslint": "^7.19.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.25.1",
     "husky": "^4.3.8",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.1",
@@ -141,7 +141,7 @@
     "moment": "^2.29.1",
     "postcss-nested": "^4",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.2.0",
+    "prettier": "^2.4.0",
     "react": "^17.0.2",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^17.0.2",
@@ -162,8 +162,10 @@
     "world-atlas": "^2.0.2"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "collectCoverageFrom": [
-      "src/**/*.{ts,tsx}"
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
     ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/.storybook/",
@@ -172,7 +174,7 @@
       "<rootDir>/node_modules/"
     ],
     "transform": {
-      ".(ts|tsx|js|jsx)": "ts-jest"
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "ts-jest"
     },
     "testMatch": [
       "<rootDir>/src/**/*(*.)@(spec|test).[t]s?(x)"
@@ -181,7 +183,7 @@
       "\\.(css|scss)$": "identity-obj-proxy"
     },
     "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$"
+      "<rootDir>/node_modules/(?!d3-array|d3-shape|d3-path|internmap|d3-interpolate|d3-scale|d3-format|d3-time).+\\.js$"
     ],
     "reporters": [
       "default",
