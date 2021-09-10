@@ -295,7 +295,10 @@ export class Bar extends Component<BarProps, BarState> {
       size = Math.max(delta - 1, 0);
     }
 
-    return { offset, size };
+    return {
+      offset: isNaN(offset) ? 0 : offset,
+      size: isNaN(size) ? 0 : size
+    };
   }
 
   getValueCoords(v0, v1, scale) {
@@ -303,8 +306,12 @@ export class Bar extends Component<BarProps, BarState> {
     const c1 = scale(v1);
     const size = Math.abs(c0 - c1);
     const minSize = Math.max(this.props.minHeight || 0, size);
+    const offset = Math.min(c0, c1);
 
-    return { offset: Math.min(c0, c1), size: minSize };
+    return {
+      offset: isNaN(offset) ? 0 : offset,
+      size: isNaN(minSize) ? 0 : minSize
+    };
   }
 
   getIsVertical() {
