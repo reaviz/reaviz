@@ -1,3 +1,6 @@
+# 10.4.2 - 9/10/21
+- [fix] bar charts throw `95640Error: <rect> attribute height: Expected length, "NaNpx".`
+
 # 10.4.1 - 9/8/21
 - [chore] upgrade deps
 - [chore] refactor heatmap series to FC
