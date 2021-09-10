@@ -1,3 +1,9 @@
+# 10.4.4 - 9/10/21
+- [chore] revert esnext build target
+
+# 10.4.3 - 9/10/21
+- [chore] npm outage retry
+
 # 10.4.2 - 9/10/21
 - [fix] bar charts throw `95640Error: <rect> attribute height: Expected length, "NaNpx".`
 
