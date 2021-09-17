@@ -134,7 +134,7 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
   getColor(point, index) {
     const { colorScheme, data } = this.props;
     const { activeValues } = this.state;
-    const key = Array.isArray(point) ? point[0].key : point?.key;
+    const key = Array.isArray(point) ? point?.[0]?.key : point?.key;
 
     return getColor({
       data,
@@ -161,16 +161,8 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
   }
 
   renderArea(data: ChartInternalShallowDataShape[], index = 0) {
-    const {
-      id,
-      width,
-      xScale,
-      yScale,
-      area,
-      line,
-      interpolation,
-      animated
-    } = this.props;
+    const { id, width, xScale, yScale, area, line, interpolation, animated } =
+      this.props;
 
     return (
       <Fragment>
@@ -206,16 +198,8 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
   }
 
   renderSymbols(data: ChartInternalShallowDataShape[], index = 0) {
-    const {
-      xScale,
-      yScale,
-      symbols,
-      id,
-      height,
-      width,
-      animated,
-      area
-    } = this.props;
+    const { xScale, yScale, symbols, id, height, width, animated, area } =
+      this.props;
     const { activeValues } = this.state;
 
     const visible = symbols !== null;
@@ -297,17 +281,8 @@ export class AreaSeries extends Component<AreaSeriesProps, AreaSeriesState> {
   }
 
   render() {
-    const {
-      data,
-      height,
-      id,
-      width,
-      isZoomed,
-      tooltip,
-      xScale,
-      yScale,
-      type
-    } = this.props;
+    const { data, height, id, width, isZoomed, tooltip, xScale, yScale, type } =
+      this.props;
     const isMulti =
       type === 'grouped' || type === 'stacked' || type === 'stackedNormalized';
 
