@@ -1,3 +1,8 @@
+# 11.0.0 - 9/17/21
+- [BREAKING] 10.4.1 introduced d3-* modules with have ESM. You now need to have ESM module compilation. See https://github.com/reaviz/reaviz/issues/48
+- [fix] fix venn diagram number label errors
+- [fix] fix area series empty array errors
+
 # 10.4.4 - 9/10/21
 - [chore] revert esnext build target
 
