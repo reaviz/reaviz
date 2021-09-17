@@ -3,7 +3,7 @@ import { calculateDimensions } from './size';
 
 export function wrapText({ key, x = 0, width, fontFamily, fontSize }) {
   const size = calculateDimensions(key, fontFamily, fontSize);
-  const words = key.split(/\s+/);
+  const words = key.toString().split(/\s+/);
 
   if (words.length > 1 && size.width > width) {
     let rows = [];
@@ -48,7 +48,7 @@ export function wrapText({ key, x = 0, width, fontFamily, fontSize }) {
     <tspan
       dominantBaseline="alphabetic"
       style={{ baselineShift: '0%' }}
-      dy={(size.height / 2) - 5}
+      dy={size.height / 2 - 5}
       x={x}
     >
       {key}
