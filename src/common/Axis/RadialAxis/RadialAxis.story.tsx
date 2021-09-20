@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { RadialAxis } from './RadialAxis';
 import { scaleTime } from 'd3-scale';
 import { extent, range } from 'd3-array';
@@ -26,7 +25,11 @@ const xScale = (() => {
   return xScale;
 })();
 
-storiesOf('Utils/Axis/Radial', module).add('Simple', () => (
+export default {
+  title: 'Utils/Axis/Radial'
+};
+
+export const Simple = () => (
   <div style={{ padding: '10px' }}>
     <svg width={600} height={600}>
       <g transform="translate(300, 300)">
@@ -52,4 +55,4 @@ storiesOf('Utils/Axis/Radial', module).add('Simple', () => (
       </g>
     </svg>
   </div>
-));
+);

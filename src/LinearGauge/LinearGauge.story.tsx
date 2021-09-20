@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { LinearGauge } from './LinearGauge';
 import { DiscreteLegend, DiscreteLegendEntry } from '../common/legends';
 import { mitreData } from '../../demo';
@@ -23,8 +22,11 @@ const Icon = ({ fill }) => (
   </svg>
 );
 
-storiesOf('Charts/Gauge/Linear/Single-Series', module)
-  .add('Simple', () => (
+export default {
+  title: 'Charts/Gauge/Linear/Single-Series',
+};
+
+export const Simple = () => (
     <div style={{ textAlign: 'center' }}>
       <h2 style={{ color: 'white', margin: 0 }}>Risk Score</h2>
       <LinearGauge
@@ -33,8 +35,9 @@ storiesOf('Charts/Gauge/Linear/Single-Series', module)
         data={{ key: 'Risk Score', data: 80 }}
       />
     </div>
-  ))
-  .add('Non-Zero Start', () => (
+  );
+
+export const NonZeroStart = () => (
     <div style={{ textAlign: 'center' }}>
       <LinearGauge
         height={30}
@@ -42,8 +45,13 @@ storiesOf('Charts/Gauge/Linear/Single-Series', module)
         data={{ key: 'Risk Score', data: [15, 80] }}
       />
     </div>
-  ))
-  .add('Multiple Gauges', () => (
+  );
+
+NonZeroStart.story = {
+  name: 'Non-Zero Start',
+};
+
+export const MultipleGauges = () => (
     <div style={{ textAlign: 'center' }}>
       <LinearGauge
         height={15}
@@ -69,9 +77,13 @@ storiesOf('Charts/Gauge/Linear/Single-Series', module)
         data={{ key: 'Step 4', data: [55, 100] }}
       />
     </div>
-  ));
+  );
 
-storiesOf('Charts/Gauge/Linear/Multi-Series', module).add('Simple', () => (
+export default {
+  title: 'Charts/Gauge/Linear/Multi-Series',
+};
+
+export const _Simple = () => (
   <div style={{ width: '465px', textAlign: 'center' }}>
     <h2 style={{ color: 'white', margin: 0 }}>MIRTE Attack</h2>
     <LinearGauge
@@ -93,4 +105,4 @@ storiesOf('Charts/Gauge/Linear/Multi-Series', module).add('Simple', () => (
       ))}
     />
   </div>
-));
+);

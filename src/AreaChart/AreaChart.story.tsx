@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import { storiesOf } from '@storybook/react';
 import chroma from 'chroma-js';
 import { timeDay } from 'd3-time';
 import { object, number, select } from '@storybook/addon-knobs';
@@ -41,8 +40,11 @@ import { ChartDataShape } from '../common/data';
 import { schemes } from '../common/color';
 import { getYScale, getXScale } from '../common/scales';
 
-storiesOf('Charts/Area Chart/Single Series', module)
-  .add('Simple', () => {
+export default {
+  title: 'Charts/Area Chart/Single Series',
+};
+
+export const Simple = () => {
     const height = number('Height', 250);
     const width = number('Width', 350);
     const lineStroke = number('Stroke Width', 4);
@@ -72,8 +74,9 @@ storiesOf('Charts/Area Chart/Single Series', module)
         }
       />
     );
-  })
-  .add('Masks', () => (
+  };
+
+export const Masks = () => (
     <AreaChart
       width={350}
       height={250}
@@ -97,23 +100,30 @@ storiesOf('Charts/Area Chart/Single Series', module)
         />
       }
     />
-  ))
-  .add('No Animation', () => (
+  );
+
+export const NoAnimation = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       series={<AreaSeries animated={false} />}
     />
-  ))
-  .add('Non-Zero', () => (
+  );
+
+export const NonZero = () => (
     <AreaChart
       width={350}
       height={250}
       data={nonZeroDateData as ChartDataShape[]}
     />
-  ))
-  .add('Interval', () => (
+  );
+
+NonZero.story = {
+  name: 'Non-Zero',
+};
+
+export const Interval = () => (
     <AreaChart
       width={350}
       height={250}
@@ -125,13 +135,15 @@ storiesOf('Charts/Area Chart/Single Series', module)
         />
       }
     />
-  ))
-  .add('Autosize', () => (
+  );
+
+export const Autosize = () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
       <AreaChart data={singleDateData} />
     </div>
-  ))
-  .add('Performance', () =>
+  );
+
+export const Performance = () =>
     range(15).map((i) => (
       <div
         key={i}
@@ -145,14 +157,17 @@ storiesOf('Charts/Area Chart/Single Series', module)
       >
         <AreaChart data={singleDateData} />
       </div>
-    ))
-  )
-  .add('Big Int', () => (
-    <AreaChart width={350} height={250} data={singleDateBigIntData} />
-  ));
+    ));
 
-storiesOf('Charts/Area Chart/Multi Series', module)
-  .add('Simple', () => {
+export const BigInt = () => (
+    <AreaChart width={350} height={250} data={singleDateBigIntData} />
+  );
+
+export default {
+  title: 'Charts/Area Chart/Multi Series',
+};
+
+export const _Simple = () => {
     const height = number('Height', 350);
     const width = number('Width', 550);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -166,8 +181,9 @@ storiesOf('Charts/Area Chart/Multi Series', module)
         series={<AreaSeries type="grouped" colorScheme={color} />}
       />
     );
-  })
-  .add('Large Dataset', () => {
+  };
+
+export const LargeDataset = () => {
     const height = number('Height', 350);
     const width = number('Width', 550);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -181,9 +197,11 @@ storiesOf('Charts/Area Chart/Multi Series', module)
         data={data}
       />
     );
-  })
-  .add('Live Updating', () => <LiveUpdatingStory />)
-  .add('Custom Colors', () => (
+  };
+
+export const LiveUpdating = () => <LiveUpdatingStory />;
+
+export const CustomColors = () => (
     <AreaChart
       width={550}
       height={350}
@@ -195,8 +213,9 @@ storiesOf('Charts/Area Chart/Multi Series', module)
       }
       data={multiDateData}
     />
-  ))
-  .add('Stacked', () => {
+  );
+
+export const Stacked = () => {
     const height = number('Height', 350);
     const width = number('Width', 550);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -210,8 +229,9 @@ storiesOf('Charts/Area Chart/Multi Series', module)
         data={data}
       />
     );
-  })
-  .add('Stacked Normalized', () => {
+  };
+
+export const StackedNormalized = () => {
     const height = number('Height', 350);
     const width = number('Width', 550);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -225,76 +245,97 @@ storiesOf('Charts/Area Chart/Multi Series', module)
         series={<StackedNormalizedAreaSeries colorScheme={color} />}
       />
     );
-  });
+  };
 
-storiesOf('Charts/Area Chart/Gridlines', module)
-  .add('All Axes', () => (
+export default {
+  title: 'Charts/Area Chart/Gridlines',
+};
+
+export const AllAxes = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       gridlines={<GridlineSeries line={<Gridline direction="all" />} />}
     />
-  ))
-  .add('X-Axis', () => (
+  );
+
+export const XAxis = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
     />
-  ))
-  .add('Y-Axis', () => (
+  );
+
+XAxis.story = {
+  name: 'X-Axis',
+};
+
+export const YAxis = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
     />
-  ));
+  );
 
-storiesOf('Charts/Area Chart/Circle Series', module)
-  .add('On', () => (
+YAxis.story = {
+  name: 'Y-Axis',
+};
+
+export default {
+  title: 'Charts/Area Chart/Circle Series',
+};
+
+export const On = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       series={<AreaSeries symbols={<PointSeries show={true} />} />}
     />
-  ))
-  .add('Off', () => (
+  );
+
+export const Off = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       series={<AreaSeries symbols={null} />}
     />
-  ))
-  .add('On Hover', () => (
+  );
+
+export const OnHover = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       series={<AreaSeries symbols={<PointSeries show="hover" />} />}
     />
-  ))
-  .add('Only First', () => (
+  );
+
+export const OnlyFirst = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       series={<AreaSeries symbols={<PointSeries show="first" />} />}
     />
-  ))
-  .add('Only Last', () => (
+  );
+
+export const OnlyLast = () => (
     <AreaChart
       width={350}
       height={250}
       data={singleDateData}
       series={<AreaSeries symbols={<PointSeries show="last" />} />}
     />
-  ))
-  .add('Shapes', () => (
+  );
+
+export const Shapes = () => (
     <AreaChart
       width={350}
       height={250}
@@ -327,10 +368,13 @@ storiesOf('Charts/Area Chart/Circle Series', module)
         />
       }
     />
-  ));
+  );
 
-storiesOf('Charts/Area Chart/Axis', module)
-  .add('Top + Bottom Axis', () => {
+export default {
+  title: 'Charts/Area Chart/Axis',
+};
+
+export const TopBottomAxis = () => {
     const scale = getXScale({
       type: 'category',
       width: 450,
@@ -386,8 +430,13 @@ storiesOf('Charts/Area Chart/Axis', module)
         yAxis={<LinearYAxis type="value" axisLine={null} />}
       />
     );
-  })
-  .add('Left + Right Axis', () => {
+  };
+
+TopBottomAxis.story = {
+  name: 'Top + Bottom Axis',
+};
+
+export const LeftRightAxis = () => {
     const scale = getYScale({
       type: 'category',
       height: 200,
@@ -447,7 +496,11 @@ storiesOf('Charts/Area Chart/Axis', module)
         xAxis={<LinearXAxis type="time" axisLine={null} />}
       />
     );
-  });
+  };
+
+LeftRightAxis.story = {
+  name: 'Left + Right Axis',
+};
 
 const LiveUpdatingStory = () => {
   const [data, setData] = useState(multiDateData.map((d) => ({ ...d })));

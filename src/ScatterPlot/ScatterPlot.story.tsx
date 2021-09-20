@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import { storiesOf } from '@storybook/react';
 import { object, color, number } from '@storybook/addon-knobs';
 
 import { ScatterPlot } from './ScatterPlot';
@@ -26,8 +25,11 @@ import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '../common/color';
 import { getYScale, getXScale } from '../common/scales';
 
-storiesOf('Charts/Scatter Plot/Linear', module)
-  .add('Simple', () => {
+export default {
+  title: 'Charts/Scatter Plot/Linear',
+};
+
+export const Simple = () => {
     const height = number('Height', 400);
     const width = number('Width', 750);
     const size = number('Size', 4);
@@ -44,8 +46,9 @@ storiesOf('Charts/Scatter Plot/Linear', module)
         }
       />
     );
-  })
-  .add('Categorical Axis', () => (
+  };
+
+export const CategoricalAxis = () => (
     <ScatterPlot
       height={400}
       width={750}
@@ -68,16 +71,18 @@ storiesOf('Charts/Scatter Plot/Linear', module)
         />
       }
     />
-  ))
-  .add('No Animation', () => (
+  );
+
+export const NoAnimation = () => (
     <ScatterPlot
       height={400}
       width={750}
       data={medSignalChartData}
       series={<ScatterSeries animated={false} />}
     />
-  ))
-  .add('Performance', () => (
+  );
+
+export const Performance = () => (
     <Fragment>
       {range(15).map((i) => (
         <div
@@ -94,13 +99,15 @@ storiesOf('Charts/Scatter Plot/Linear', module)
         </div>
       ))}
     </Fragment>
-  ))
-  .add('Autosize', () => (
+  );
+
+export const Autosize = () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
       <ScatterPlot data={medSignalChartData} />
     </div>
-  ))
-  .add('Symbols', () => (
+  );
+
+export const Symbols = () => (
     <ScatterPlot
       height={400}
       width={750}
@@ -128,8 +135,9 @@ storiesOf('Charts/Scatter Plot/Linear', module)
         />
       }
     />
-  ))
-  .add('Bubble', () => (
+  );
+
+export const Bubble = () => (
     <ScatterPlot
       height={400}
       width={750}
@@ -146,11 +154,15 @@ storiesOf('Charts/Scatter Plot/Linear', module)
         />
       }
     />
-  ))
-  .add('Live Update', () => <BubbleChartLiveUpdate />);
+  );
 
-storiesOf('Charts/Scatter Plot/Axis', module)
-  .add('Top + Bottom Axis', () => {
+export const LiveUpdate = () => <BubbleChartLiveUpdate />;
+
+export default {
+  title: 'Charts/Scatter Plot/Axis',
+};
+
+export const TopBottomAxis = () => {
     const scale = getXScale({
       type: 'category',
       width: 450,
@@ -208,8 +220,13 @@ storiesOf('Charts/Scatter Plot/Axis', module)
         yAxis={<LinearYAxis type="value" axisLine={null} />}
       />
     );
-  })
-  .add('Left + Right Axis', () => {
+  };
+
+TopBottomAxis.story = {
+  name: 'Top + Bottom Axis',
+};
+
+export const LeftRightAxis = () => {
     const scale = getYScale({
       type: 'category',
       height: 200,
@@ -271,7 +288,11 @@ storiesOf('Charts/Scatter Plot/Axis', module)
         xAxis={<LinearXAxis type="time" axisLine={null} />}
       />
     );
-  });
+  };
+
+LeftRightAxis.story = {
+  name: 'Left + Right Axis',
+};
 
 const BubbleChartLiveUpdate = () => {
   const [data, setData] = useState(largeSignalChartData.map((d) => ({ ...d })));

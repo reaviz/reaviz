@@ -1,9 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { DiscreteLegend } from './DiscreteLegend';
 import { DiscreteLegendEntry } from './DiscreteLegendEntry';
 
-storiesOf('Utils/Legend/Discrete/Vertical', module).add('Simple', () => (
+export default {
+  title: 'Utils/Legend/Discrete/Vertical',
+};
+
+export const Simple = () => (
   <DiscreteLegend
     style={{ width: '200px' }}
     entries={[
@@ -13,10 +16,13 @@ storiesOf('Utils/Legend/Discrete/Vertical', module).add('Simple', () => (
       <DiscreteLegendEntry label="AD" color="purple" />
     ]}
   />
-));
+);
 
-storiesOf('Utils/Legend/Discrete/Horizontal', module)
-  .add('Simple', () => (
+export default {
+  title: 'Utils/Legend/Discrete/Horizontal',
+};
+
+export const _Simple = () => (
     <DiscreteLegend
       orientation="horizontal"
       entries={[
@@ -26,8 +32,9 @@ storiesOf('Utils/Legend/Discrete/Horizontal', module)
         <DiscreteLegendEntry label="AD" color="purple" />
       ]}
     />
-  ))
-  .add('Labels Verticals', () => (
+  );
+
+export const LabelsVerticals = () => (
     <DiscreteLegend
       orientation="horizontal"
       entries={[
@@ -49,4 +56,4 @@ storiesOf('Utils/Legend/Discrete/Horizontal', module)
         <DiscreteLegendEntry label="AD" color="purple" orientation="vertical" />
       ]}
     />
-  ));
+  );

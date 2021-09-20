@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from 'react';
-import { storiesOf } from '@storybook/react';
 import { number, object, text, select, boolean } from '@storybook/addon-knobs';
 import { PieChart } from './PieChart';
 import { categoryData, randomNumber, browserData, icons } from '../../demo';
@@ -7,8 +6,11 @@ import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { schemes } from '../common/color';
 import { ChartShallowDataShape } from '../common/data';
 
-storiesOf('Charts/Pie Chart/Pie', module)
-  .add('Simple', () => {
+export default {
+  title: 'Charts/Pie Chart/Pie',
+};
+
+export const Simple = () => {
     const height = number('Height', 250);
     const width = number('Width', 350);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -22,8 +24,9 @@ storiesOf('Charts/Pie Chart/Pie', module)
         series={<PieArcSeries colorScheme={color} />}
       />
     );
-  })
-  .add('Explode', () => {
+  };
+
+export const Explode = () => {
     const height = number('Height', 250);
     const width = number('Width', 350);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -37,16 +40,18 @@ storiesOf('Charts/Pie Chart/Pie', module)
         series={<PieArcSeries explode={true} colorScheme={color} />}
       />
     );
-  })
-  .add('No Animation', () => (
+  };
+
+export const NoAnimation = () => (
     <PieChart
       width={350}
       height={250}
       series={<PieArcSeries animated={false} />}
       data={browserData}
     />
-  ))
-  .add('HTML Labels', () => {
+  );
+
+export const HtmlLabels = () => {
     const showIconsWithText = boolean('Show icons with text', false);
     const height = number('Height', 400);
     const width = number('Width', 400);
@@ -198,8 +203,13 @@ storiesOf('Charts/Pie Chart/Pie', module)
         />
       </div>
     );
-  })
-  .add('Label Overlap', () => {
+  };
+
+HtmlLabels.story = {
+  name: 'HTML Labels',
+};
+
+export const LabelOverlap = () => {
     const labelsCount = number('Labels count', 32);
 
     return (
@@ -212,24 +222,30 @@ storiesOf('Charts/Pie Chart/Pie', module)
         }))}
       />
     );
-  })
-  .add('Display All Labels', () => (
+  };
+
+export const DisplayAllLabels = () => (
     <PieChart
       width={350}
       height={250}
       data={browserData}
       displayAllLabels={true}
     />
-  ))
-  .add('Live Updating', () => <LiveUpdatingStory />)
-  .add('Autosize', () => (
+  );
+
+export const LiveUpdating = () => <LiveUpdatingStory />;
+
+export const Autosize = () => (
     <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
       <PieChart data={categoryData} />
     </div>
-  ));
+  );
 
-storiesOf('Charts/Pie Chart/Donut', module)
-  .add('Simple', () => {
+export default {
+  title: 'Charts/Pie Chart/Donut',
+};
+
+export const _Simple = () => {
     const height = number('Height', 250);
     const width = number('Width', 350);
     const color = select('Color Scheme', schemes, 'cybertron');
@@ -243,8 +259,9 @@ storiesOf('Charts/Pie Chart/Donut', module)
         series={<PieArcSeries doughnut={true} colorScheme={color} />}
       />
     );
-  })
-  .add('Rounded and spaced', () => {
+  };
+
+export const RoundedAndSpaced = () => {
     const height = number('Height', 250);
     const width = number('Width', 350);
     const padAngle = number('Pad Angle', 0.02);
@@ -269,16 +286,22 @@ storiesOf('Charts/Pie Chart/Donut', module)
         }
       />
     );
-  })
-  .add('Labels', () => (
+  };
+
+RoundedAndSpaced.story = {
+  name: 'Rounded and spaced',
+};
+
+export const Labels = () => (
     <PieChart
       width={350}
       height={250}
       data={categoryData}
       series={<PieArcSeries doughnut={true} />}
     />
-  ))
-  .add('Inner Label', () => {
+  );
+
+export const InnerLabel = () => {
     const height = number('Height', 250);
     const width = number('Width', 350);
     const words = text('Label', 'Attacks');
@@ -311,7 +334,7 @@ storiesOf('Charts/Pie Chart/Donut', module)
         </h2>
       </div>
     );
-  });
+  };
 
 const LiveUpdatingStory = () => {
   const [data, setData] = useState([...categoryData]);
