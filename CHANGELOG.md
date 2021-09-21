@@ -1,3 +1,6 @@
+# 11.0.2 - 9/21/21
+- [chore] update rdk and realayers
+
 # 11.0.1 - 9/21/21
 - [chore] update realayers for better tooltips
 - [chore] csf storybook conversion
