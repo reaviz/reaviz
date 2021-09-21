@@ -23,63 +23,6 @@ const Icon = ({ fill }) => (
 );
 
 export default {
-  title: 'Charts/Gauge/Linear/Single-Series',
-};
-
-export const Simple = () => (
-    <div style={{ textAlign: 'center' }}>
-      <h2 style={{ color: 'white', margin: 0 }}>Risk Score</h2>
-      <LinearGauge
-        height={30}
-        width={300}
-        data={{ key: 'Risk Score', data: 80 }}
-      />
-    </div>
-  );
-
-export const NonZeroStart = () => (
-    <div style={{ textAlign: 'center' }}>
-      <LinearGauge
-        height={30}
-        width={300}
-        data={{ key: 'Risk Score', data: [15, 80] }}
-      />
-    </div>
-  );
-
-NonZeroStart.story = {
-  name: 'Non-Zero Start',
-};
-
-export const MultipleGauges = () => (
-    <div style={{ textAlign: 'center' }}>
-      <LinearGauge
-        height={15}
-        width={300}
-        data={{ key: 'Step 1', data: [0, 15] }}
-      />
-      <br />
-      <LinearGauge
-        height={15}
-        width={300}
-        data={{ key: 'Step 2', data: [15, 50] }}
-      />
-      <br />
-      <LinearGauge
-        height={15}
-        width={300}
-        data={{ key: 'Step 3', data: [50, 55] }}
-      />
-      <br />
-      <LinearGauge
-        height={15}
-        width={300}
-        data={{ key: 'Step 4', data: [55, 100] }}
-      />
-    </div>
-  );
-
-export default {
   title: 'Charts/Gauge/Linear/Multi-Series',
 };
 

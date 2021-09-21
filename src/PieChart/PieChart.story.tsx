@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import { number, object, text, select, boolean } from '@storybook/addon-knobs';
+import { number, object, select, boolean } from '@storybook/addon-knobs';
 import { PieChart } from './PieChart';
 import { categoryData, randomNumber, browserData, icons } from '../../demo';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
@@ -240,101 +240,6 @@ export const Autosize = () => (
       <PieChart data={categoryData} />
     </div>
   );
-
-export default {
-  title: 'Charts/Pie Chart/Donut',
-};
-
-export const _Simple = () => {
-    const height = number('Height', 250);
-    const width = number('Width', 350);
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', categoryData);
-
-    return (
-      <PieChart
-        width={width}
-        height={height}
-        data={data}
-        series={<PieArcSeries doughnut={true} colorScheme={color} />}
-      />
-    );
-  };
-
-export const RoundedAndSpaced = () => {
-    const height = number('Height', 250);
-    const width = number('Width', 350);
-    const padAngle = number('Pad Angle', 0.02);
-    const padRadius = number('Pad Radius', 200);
-    const cornerRadius = number('Corner Radius', 4);
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', categoryData);
-
-    return (
-      <PieChart
-        width={width}
-        height={height}
-        data={data}
-        series={
-          <PieArcSeries
-            cornerRadius={cornerRadius}
-            padAngle={padAngle}
-            padRadius={padRadius}
-            doughnut={true}
-            colorScheme={color}
-          />
-        }
-      />
-    );
-  };
-
-RoundedAndSpaced.story = {
-  name: 'Rounded and spaced',
-};
-
-export const Labels = () => (
-    <PieChart
-      width={350}
-      height={250}
-      data={categoryData}
-      series={<PieArcSeries doughnut={true} />}
-    />
-  );
-
-export const InnerLabel = () => {
-    const height = number('Height', 250);
-    const width = number('Width', 350);
-    const words = text('Label', 'Attacks');
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', categoryData);
-
-    return (
-      <div
-        style={{
-          position: 'relative',
-          height: '250px',
-          width: '350px',
-          alignItems: 'center',
-          display: 'flex',
-          justifyContent: 'center'
-        }}
-      >
-        <div style={{ position: 'absolute', top: 0, left: 0 }}>
-          <PieChart
-            width={width}
-            height={height}
-            data={data}
-            series={
-              <PieArcSeries doughnut={true} label={null} colorScheme={color} />
-            }
-          />
-        </div>
-        <h2 style={{ margin: '0 5px', padding: 0, color: 'white' }}>
-          {data.length} {words}
-        </h2>
-      </div>
-    );
-  };
 
 const LiveUpdatingStory = () => {
   const [data, setData] = useState([...categoryData]);
