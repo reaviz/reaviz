@@ -1,3 +1,7 @@
+# 11.0.1 - 9/21/21
+- [chore] update realayers for better tooltips
+- [chore] csf storybook conversion
+
 # 11.0.0 - 9/17/21
 - [BREAKING] 10.4.1 introduced d3-* modules with have ESM. You now need to have ESM module compilation. See https://github.com/reaviz/reaviz/issues/48
 - [fix] fix venn diagram number label errors
