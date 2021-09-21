@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { storiesOf } from '@storybook/react';
 import { largeDateData, largeSignalChartData } from '../../../demo';
 import { LineChart, LineSeries } from '../../LineChart';
 import { ChartZoomPan, ZoomPan } from '../ZoomPan';
@@ -13,18 +12,118 @@ import {
 } from '../Axis';
 import { useState } from '@storybook/addons';
 
-storiesOf('Utils/Zoom Pan', module)
-  .add('Line', () => (
+export default {
+  title: 'Utils/Zoom Pan'
+};
+
+export const Line = () => (
+  <LineChart
+    width={450}
+    height={300}
+    data={largeDateData}
+    zoomPan={<ChartZoomPan />}
+    series={
+      <LineSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+    }
+    xAxis={
+      <LinearXAxis
+        type="time"
+        tickSeries={
+          <LinearXAxisTickSeries
+            label={<LinearXAxisTickLabel rotation={false} />}
+          />
+        }
+      />
+    }
+  />
+);
+
+export const Area = () => (
+  <AreaChart
+    width={350}
+    height={250}
+    data={largeDateData}
+    zoomPan={<ChartZoomPan />}
+    series={
+      <AreaSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+    }
+    xAxis={
+      <LinearXAxis
+        type="time"
+        tickSeries={
+          <LinearXAxisTickSeries
+            label={<LinearXAxisTickLabel rotation={false} />}
+          />
+        }
+      />
+    }
+  />
+);
+
+export const Scatter = () => (
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={largeSignalChartData}
+    margins={20}
+    zoomPan={<ChartZoomPan />}
+    xAxis={
+      <LinearXAxis
+        type="time"
+        tickSeries={
+          <LinearXAxisTickSeries
+            label={<LinearXAxisTickLabel rotation={false} />}
+          />
+        }
+      />
+    }
+    series={
+      <ScatterSeries
+        point={
+          <ScatterPoint
+            color="rgba(174, 52, 255, .5)"
+            size={(v) => v.metadata.severity + 5}
+          />
+        }
+      />
+    }
+  />
+);
+
+export const GenericZoomPan = () => <GenericZoomPanStory />;
+
+export const GenericZoomPanWModifier = () => (
+  <GenericZoomPanStory modifier={true} />
+);
+
+GenericZoomPanWModifier.story = {
+  name: 'Generic Zoom Pan w/ Modifier'
+};
+
+export const DefaultZoom = () => {
+  const [domain, setDomain] = React.useState<[any, any]>([
+    largeDateData[5].key,
+    largeDateData[25].key
+  ]);
+  return (
     <LineChart
       width={450}
       height={300}
       data={largeDateData}
-      zoomPan={<ChartZoomPan />}
+      zoomPan={
+        <ChartZoomPan
+          domain={domain}
+          onZoomPan={({ domain }) => {
+            setDomain(domain);
+          }}
+        />
+      }
       series={
         <LineSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
       }
       xAxis={
         <LinearXAxis
+          domain={domain}
           type="time"
           tickSeries={
             <LinearXAxisTickSeries
@@ -34,99 +133,8 @@ storiesOf('Utils/Zoom Pan', module)
         />
       }
     />
-  ))
-  .add('Area', () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={largeDateData}
-      zoomPan={<ChartZoomPan />}
-      series={
-        <AreaSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
-      }
-      xAxis={
-        <LinearXAxis
-          type="time"
-          tickSeries={
-            <LinearXAxisTickSeries
-              label={<LinearXAxisTickLabel rotation={false} />}
-            />
-          }
-        />
-      }
-    />
-  ))
-  .add('Scatter', () => (
-    <ScatterPlot
-      height={400}
-      width={750}
-      data={largeSignalChartData}
-      margins={20}
-      zoomPan={<ChartZoomPan />}
-      xAxis={
-        <LinearXAxis
-          type="time"
-          tickSeries={
-            <LinearXAxisTickSeries
-              label={<LinearXAxisTickLabel rotation={false} />}
-            />
-          }
-        />
-      }
-      series={
-        <ScatterSeries
-          point={
-            <ScatterPoint
-              color="rgba(174, 52, 255, .5)"
-              size={(v) => v.metadata.severity + 5}
-            />
-          }
-        />
-      }
-    />
-  ))
-  .add('Generic Zoom Pan', () => <GenericZoomPanStory />)
-  .add('Generic Zoom Pan w/ Modifier', () => (
-    <GenericZoomPanStory modifier={true} />
-  ))
-  .add('Default Zoom', () => {
-    const [domain, setDomain] = React.useState<[any, any]>([
-      largeDateData[5].key,
-      largeDateData[25].key
-    ]);
-    return (
-      <LineChart
-        width={450}
-        height={300}
-        data={largeDateData}
-        zoomPan={
-          <ChartZoomPan
-            domain={domain}
-            onZoomPan={({ domain }) => {
-              setDomain(domain);
-            }}
-          />
-        }
-        series={
-          <LineSeries
-            tooltip={<TooltipArea disabled={true} />}
-            markLine={null}
-          />
-        }
-        xAxis={
-          <LinearXAxis
-            domain={domain}
-            type="time"
-            tickSeries={
-              <LinearXAxisTickSeries
-                label={<LinearXAxisTickLabel rotation={false} />}
-              />
-            }
-          />
-        }
-      />
-    );
-  });
+  );
+};
 
 const GenericZoomPanStory: FC<any> = ({ modifier }) => {
   const [{ scale, x, y }, setState] = React.useState({

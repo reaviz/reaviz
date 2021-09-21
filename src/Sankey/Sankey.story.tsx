@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import chroma from 'chroma-js';
-import { storiesOf } from '@storybook/react';
 import { Sankey } from './Sankey';
 import { SankeyNode } from './SankeyNode';
 import { SankeyLink } from './SankeyLink';
@@ -32,38 +31,56 @@ const colorScheme = chroma
 
 const onNodeClick = (title: string) => window.alert(`${title} is clicked`);
 
-storiesOf('Charts/Sankey Plot', module)
-  .add('Simple', () => {
-    const height = number('Height', 300);
-    const width = number('Width', 550);
-    const color = select('Color Scheme', schemes, 'Spectral');
-    const nodes = object('Nodes', simpleSankeyNodes);
-    const links = object('Links', simpleSankeyLinks);
+export default {
+  title: 'Charts/Sankey Plot'
+};
 
-    return (
-      <Sankey
-        colorScheme={color}
-        height={height}
-        width={width}
-        nodes={nodes.map((node, i) => (
-          <SankeyNode
-            key={`node-${i}`}
-            {...node}
-            onClick={() => onNodeClick(node.title)}
-          />
-        ))}
-        links={links.map((link, i) => (
-          <SankeyLink key={`link-${i}`} {...link} />
-        ))}
-      />
-    );
-  })
-  .add('Filtering', () => <DemoStory />)
-  .add('Multilevels', () => (
+export const Simple = () => {
+  const height = number('Height', 300);
+  const width = number('Width', 550);
+  const color = select('Color Scheme', schemes, 'Spectral');
+  const nodes = object('Nodes', simpleSankeyNodes);
+  const links = object('Links', simpleSankeyLinks);
+
+  return (
+    <Sankey
+      colorScheme={color}
+      height={height}
+      width={width}
+      nodes={nodes.map((node, i) => (
+        <SankeyNode
+          key={`node-${i}`}
+          {...node}
+          onClick={() => onNodeClick(node.title)}
+        />
+      ))}
+      links={links.map((link, i) => (
+        <SankeyLink key={`link-${i}`} {...link} />
+      ))}
+    />
+  );
+};
+
+export const Filtering = () => <DemoStory />;
+
+export const Multilevels = () => (
+  <Sankey
+    colorScheme={colorScheme}
+    height={600}
+    width={964}
+    nodes={sankeyNodes.map((node, i) => (
+      <SankeyNode key={`node-${i}`} {...node} />
+    ))}
+    links={sankeyLinks.map((link, i) => (
+      <SankeyLink key={`link-${i}`} {...link} />
+    ))}
+  />
+);
+
+export const Autosize = () => (
+  <div style={{ width: '80vw', height: '65vh', border: 'solid 1px red' }}>
     <Sankey
       colorScheme={colorScheme}
-      height={600}
-      width={964}
       nodes={sankeyNodes.map((node, i) => (
         <SankeyNode key={`node-${i}`} {...node} />
       ))}
@@ -71,47 +88,36 @@ storiesOf('Charts/Sankey Plot', module)
         <SankeyLink key={`link-${i}`} {...link} />
       ))}
     />
-  ))
-  .add('Autosize', () => (
-    <div style={{ width: '80vw', height: '65vh', border: 'solid 1px red' }}>
-      <Sankey
-        colorScheme={colorScheme}
-        nodes={sankeyNodes.map((node, i) => (
-          <SankeyNode key={`node-${i}`} {...node} />
-        ))}
-        links={sankeyLinks.map((link, i) => (
-          <SankeyLink key={`link-${i}`} {...link} />
-        ))}
-      />
-    </div>
-  ))
-  .add('Justification', () => {
-    const justification = select(
-      'Alignments',
-      {
-        Left: 'left',
-        Center: 'center',
-        Right: 'right',
-        Justified: 'justify'
-      },
-      'left'
-    );
+  </div>
+);
 
-    return (
-      <Sankey
-        colorScheme={colorScheme}
-        height={600}
-        width={964}
-        justification={justification}
-        nodes={sankeyNodes.map((node, i) => (
-          <SankeyNode key={`node-${i}`} {...node} />
-        ))}
-        links={sankeyLinks.map((link, i) => (
-          <SankeyLink key={`link-${i}`} {...link} />
-        ))}
-      />
-    );
-  });
+export const Justification = () => {
+  const justification = select(
+    'Alignments',
+    {
+      Left: 'left',
+      Center: 'center',
+      Right: 'right',
+      Justified: 'justify'
+    },
+    'left'
+  );
+
+  return (
+    <Sankey
+      colorScheme={colorScheme}
+      height={600}
+      width={964}
+      justification={justification}
+      nodes={sankeyNodes.map((node, i) => (
+        <SankeyNode key={`node-${i}`} {...node} />
+      ))}
+      links={sankeyLinks.map((link, i) => (
+        <SankeyLink key={`link-${i}`} {...link} />
+      ))}
+    />
+  );
+};
 
 let filtered = false;
 const DemoStory = () => {

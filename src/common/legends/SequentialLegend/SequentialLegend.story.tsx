@@ -1,15 +1,18 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { SequentialLegend } from './SequentialLegend';
 import { heatmapSimpleData } from '../../../../demo';
 
-storiesOf('Utils/Legend/Sequential/Vertical', module)
-  .add('Simple', () => (
+export default {
+  title: 'Utils/Legend/Sequential/Vertical',
+};
+
+export const Simple = () => (
     <div style={{ height: '250px' }}>
       <SequentialLegend data={heatmapSimpleData} />
     </div>
-  ))
-  .add('Long Text', () => (
+  );
+
+export const LongText = () => (
     <div style={{ height: '250px' }}>
       <SequentialLegend
         data={[
@@ -18,23 +21,28 @@ storiesOf('Utils/Legend/Sequential/Vertical', module)
         ]}
       />
     </div>
-  ))
-  .add('Custom Colors', () => (
+  );
+
+export const CustomColors = () => (
     <div style={{ height: '250px' }}>
       <SequentialLegend
         data={heatmapSimpleData}
         colorScheme={['rgb(255, 248, 225)', 'rgb(255, 111, 0)']}
       />
     </div>
-  ));
+  );
 
-storiesOf('Utils/Legend/Sequential/Horizontal', module)
-  .add('Simple', () => (
+export default {
+  title: 'Utils/Legend/Sequential/Horizontal',
+};
+
+export const _Simple = () => (
     <div style={{ width: '250px' }}>
       <SequentialLegend data={heatmapSimpleData} orientation="horizontal" />
     </div>
-  ))
-  .add('Long Text', () => (
+  );
+
+export const _LongText = () => (
     <div style={{ width: '250px' }}>
       <SequentialLegend
         orientation="horizontal"
@@ -44,8 +52,9 @@ storiesOf('Utils/Legend/Sequential/Horizontal', module)
         ]}
       />
     </div>
-  ))
-  .add('Custom Colors', () => (
+  );
+
+export const _CustomColors = () => (
     <div style={{ width: '250px' }}>
       <SequentialLegend
         data={heatmapSimpleData}
@@ -53,4 +62,4 @@ storiesOf('Utils/Legend/Sequential/Horizontal', module)
         colorScheme={['rgb(255, 248, 225)', 'rgb(255, 111, 0)']}
       />
     </div>
-  ));
+  );

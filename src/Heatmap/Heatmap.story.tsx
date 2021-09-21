@@ -1,14 +1,7 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { Heatmap } from './Heatmap';
-import { CalendarHeatmap } from './CalendarHeatmap';
 import {
-  heatmapSimpleData,
-  heatmapCalendarData,
-  janHeatMapData,
-  febHeatMapData,
-  marchHeatMapData,
-  heatmapCalendarOffsetData
+  heatmapSimpleData
 } from '../../demo';
 import { SequentialLegend } from '../common/legends/SequentialLegend/SequentialLegend';
 import { number, object, select } from '@storybook/addon-knobs';
@@ -21,8 +14,11 @@ import {
   LinearYAxisTickLabel
 } from '../common/Axis';
 
-storiesOf('Charts/Heatmap/Simple', module)
-  .add('Basic', () => {
+export default {
+  title: 'Charts/Heatmap/Simple',
+};
+
+export const Basic = () => {
     const height = number('Height', 250);
     const width = number('Width', 400);
     const color = select('Color Scheme', schemes, 'OrRd');
@@ -36,8 +32,9 @@ storiesOf('Charts/Heatmap/Simple', module)
         series={<HeatmapSeries colorScheme={color} />}
       />
     );
-  })
-  .add('Basic + Legend', () => (
+  };
+
+export const BasicLegend = () => (
     <div style={{ display: 'flex', height: '250px' }}>
       <Heatmap height={250} width={400} data={heatmapSimpleData} />
       <SequentialLegend
@@ -45,8 +42,13 @@ storiesOf('Charts/Heatmap/Simple', module)
         style={{ height: '165px', marginLeft: '10px' }}
       />
     </div>
-  ))
-  .add('Multi Axis', () => {
+  );
+
+BasicLegend.story = {
+  name: 'Basic + Legend',
+};
+
+export const MultiAxis = () => {
     const scale = getYScale({
       type: 'category',
       height: 190,
@@ -86,51 +88,4 @@ storiesOf('Charts/Heatmap/Simple', module)
         ]}
       />
     );
-  });
-
-storiesOf('Charts/Heatmap/Calendar', module)
-  .add('Year Calendar', () => {
-    const height = number('Height', 115);
-    const width = number('Width', 715);
-    const data = object('Data', heatmapCalendarData);
-
-    return <CalendarHeatmap height={height} width={width} data={data} />;
-  })
-  .add('Year Calendar w/ March Start', () => {
-    const height = number('Height', 115);
-    const width = number('Width', 715);
-    const data = object('Data', heatmapCalendarOffsetData);
-
-    return <CalendarHeatmap height={height} width={width} data={data} />;
-  })
-  .add('Month Calendar', () => {
-    const height = number('Height', 115);
-    const width = number('Width', 100);
-    const data = object('Data', janHeatMapData);
-
-    return (
-      <CalendarHeatmap height={height} width={width} view="month" data={data} />
-    );
-  })
-  .add('Multi Month Calendar', () => (
-    <div style={{ display: 'flex' }}>
-      <CalendarHeatmap
-        height={115}
-        width={100}
-        view="month"
-        data={janHeatMapData}
-      />
-      <CalendarHeatmap
-        height={115}
-        width={100}
-        view="month"
-        data={febHeatMapData}
-      />
-      <CalendarHeatmap
-        height={115}
-        width={100}
-        view="month"
-        data={marchHeatMapData}
-      />
-    </div>
-  ));
+  };
