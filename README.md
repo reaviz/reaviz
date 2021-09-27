@@ -1,7 +1,7 @@
 <p align="center">
   <img width="650" src="docs/assets/logo.png">
   <br />
-  Data visualization library for React based on D3js
+  Data visualization library for React
   <br /><br />
   <a href="https://github.com/reaviz/reaviz/workflows/build/">
     <img src="https://github.com/reaviz/reaviz/workflows/build/badge.svg?branch=master" />
