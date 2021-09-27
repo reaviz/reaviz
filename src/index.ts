@@ -16,3 +16,4 @@ export * from './Heatmap';
 export * from './LinearGauge';
 export * from './VennDiagram';
 export * from './BubbleChart';
+export * from './VennDiagram';
