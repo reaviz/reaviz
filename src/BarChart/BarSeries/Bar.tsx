@@ -492,7 +492,6 @@ export class Bar extends Component<BarProps, BarState> {
     const maskPath = mask ? `url(#mask-${id})` : '';
     const fill = this.getFill(currentColorShade);
     const initialExit = this.getExit(coords);
-    const isVertical = this.getIsVertical();
     const extras = constructFunctionProps(this.props, data);
     const transition = this.getTransition(index);
 
