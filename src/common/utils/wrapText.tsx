@@ -1,13 +1,26 @@
 import React from 'react';
 import { calculateDimensions } from './size';
 
-export function wrapText({ key, x = 0, width, fontFamily, fontSize }) {
+export interface WrapTextInputs {
+  key: string;
+  x?: any;
+  y?: number;
+  paddingY?: number;
+  paddingX?: number;
+  width: number;
+  height?: number;
+  fontFamily: string;
+  fontSize: number;
+}
+
+export function wrapText({ key, x = 0, y = 0, paddingY, paddingX, width, height, fontFamily, fontSize }: WrapTextInputs) {
   const size = calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);
 
   if (words.length > 1 && size.width > width) {
     let rows = [];
-    let sum = 0;
+    let sumWidth = 0;
+    let sumHeight = 0;
     let curText = '';
     let lineNum = 0;
 
@@ -16,18 +29,28 @@ export function wrapText({ key, x = 0, width, fontFamily, fontSize }) {
       const wordWidth = wordSize.width;
 
       lineNum++;
-      if (sum + wordWidth < width) {
-        sum += wordWidth;
+      if (sumWidth + wordWidth < width) {
+        sumWidth += wordWidth;
+        sumHeight += wordSize.height;
         curText = `${curText} ${word}`;
       } else {
         rows.push(curText);
-        sum = 0;
+        sumWidth += wordSize.width;
+        sumHeight += wordSize.height;
         curText = word;
       }
 
       if (words.length === lineNum) {
         rows.push(curText);
       }
+    }
+
+    if (height && (sumHeight + paddingY) >= height) {
+      return null;
+    }
+
+    if (width && (sumWidth + paddingX) >= width) {
+      return null;
     }
 
     return rows.map((r, i) => (
@@ -41,6 +64,14 @@ export function wrapText({ key, x = 0, width, fontFamily, fontSize }) {
         {r}
       </tspan>
     ));
+  }
+
+  if (height && (size.height + paddingY) >= height) {
+    return null;
+  }
+
+  if (width && (size.width + paddingX) >= width) {
+    return null;
   }
 
   // NOTE: 5px seems to magic number for making it center
