@@ -4,8 +4,8 @@ import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor } from '../common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
 import { TreeMapRect, TreeMapRectProps } from './TreeMapRect';
-import chroma from 'chroma-js';
 import invert from 'invert-color';
+import chroma from 'chroma-js';
 
 export interface TreeMapSeriesProps {
   /**
@@ -28,8 +28,14 @@ export interface TreeMapSeriesProps {
    */
   colorScheme: ColorSchemeType;
 
+  /**
+   * Rect element to be rendered.
+   */
   rect?: ReactElement<TreeMapRectProps, typeof TreeMapRect>;
 
+  /**
+   * Label element to be rendered.
+   */
   label?: ReactElement<TreeMapLabelProps, typeof TreeMapLabel>;
 }
 
@@ -52,7 +58,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
     });
 
     const textFill = fill
-      ? invert(fill, true)
+      ? invert(chroma(fill).darken(0.5).hex(), true)
       : 'white';
 
     return (

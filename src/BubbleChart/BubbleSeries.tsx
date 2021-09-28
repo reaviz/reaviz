@@ -5,6 +5,8 @@ import { ColorSchemeType, getColor } from '../common/color';
 import { Bubble, BubbleProps } from './Bubble';
 import { BubbleLabel, BubbleLabelProps } from './BubbleLabel';
 import { CloneElement } from 'rdk';
+import invert from 'invert-color';
+import chroma from 'chroma-js';
 
 export interface BubbleSeriesProps {
   /**
@@ -56,6 +58,10 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
       index
     });
 
+    const textFill = fill
+      ? invert(chroma(fill).darken(0.5).hex(), true)
+      : 'white';
+
     return (
       <motion.g
         key={(item.data as any).key}
@@ -81,6 +87,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
           id={`${id}-label`}
           animated={animated}
           data={item}
+          fill={textFill}
         />
       </motion.g>
     );

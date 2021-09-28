@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 import { CloneElement } from 'rdk';
 import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
+import invert from 'invert-color';
 
 const getSafeKey = (d) => d.data?.key?.replace(' ', '');
 
@@ -102,6 +103,10 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         index
       });
 
+      const textFill = fill
+        ? invert(chroma(fill).darken(0.5).hex(), true)
+        : 'white';
+
       const arcFill = arc.props.fill || fill;
 
       const key = d?.data?.key;
@@ -150,6 +155,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
             id={`${id}-${safeKey}`}
             active={isActive}
             animated={animated}
+            fill={textFill}
           />
           {d.set && outerLabel && (
             <CloneElement<VennLabelProps>
