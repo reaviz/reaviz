@@ -1,11 +1,11 @@
+import React, { FC, Fragment, ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import { CloneElement } from 'rdk';
-import React, { FC, Fragment, ReactElement } from 'react';
 import { ColorSchemeType, getColor } from '../common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
 import { TreeMapRect, TreeMapRectProps } from './TreeMapRect';
-
-
+import chroma from 'chroma-js';
+import invert from 'invert-color';
 
 export interface TreeMapSeriesProps {
   /**
@@ -51,6 +51,8 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       index
     });
 
+    const textFill = invert(fill, true);
+
     return (
       <motion.g
         key={item.data.key}
@@ -79,6 +81,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
           element={label}
           id={`${id}-label`}
           data={item}
+          fill={textFill}
         />
       </motion.g>
     );

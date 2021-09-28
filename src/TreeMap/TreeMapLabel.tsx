@@ -42,14 +42,15 @@ export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
   fontSize = 14,
   fontFamily = 'sans-serif'
 }) => {
-  // TODO: Maybe make this count up...?
-  const key = `${data.data.key} - ${formatValue(data.data.data)}`;
-
+  const key = data.data.key;
   const text = wrap ? wrapText({
     key,
     fontFamily,
     fontSize,
-    width: data.x1 - data.x0
+    paddingX: 10,
+    paddingY: 10,
+    width: data.x1 - data.x0,
+    height: data.y1 - data.y0
   }) : key;
 
   return (
