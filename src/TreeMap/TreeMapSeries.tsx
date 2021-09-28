@@ -6,6 +6,7 @@ import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
 import { TreeMapRect, TreeMapRectProps } from './TreeMapRect';
 import invert from 'invert-color';
 import chroma from 'chroma-js';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 export interface TreeMapSeriesProps {
   /**
@@ -47,7 +48,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   rect = <TreeMapRect />,
   label = <TreeMapLabel />
 }) => {
-  const transition = animated ? {} : { type: false, delay: 0 };
+  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
   const renderItem = (item: any, index: number) => {
     const fill = getColor({

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 export interface TreeMapRectProps {
 
@@ -64,7 +65,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const rectRef = useRef<any | null>(null);
-  const transition = animated ? {} : { type: false, delay: 0 };
+  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   const currentFill = internalActive
     ? chroma(fill).darken(0.8).hex()
     : fill;
