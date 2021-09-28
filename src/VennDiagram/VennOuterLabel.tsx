@@ -1,5 +1,6 @@
 import React, { FC, Fragment, isValidElement } from 'react';
 import { motion } from 'framer-motion';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 export interface VennOuterLabelProps {
   /**
@@ -41,7 +42,7 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   fontSize = 14,
   fontFamily = 'sans-serif'
 }) => {
-  const transition = animated ? {} : { delay: 0, type: false };
+  const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
   const text = data.set.data.key;
 
   const label = format ? format(data) : text;

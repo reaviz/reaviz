@@ -15,6 +15,7 @@ import { CloneElement } from 'rdk';
 import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
 import invert from 'invert-color';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 const getSafeKey = (d) => d.data?.key?.replace(' ', '');
 
@@ -76,7 +77,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   arc = <VennArc />,
   label = <VennLabel />
 }) => {
-  const transition = animated ? {} : { type: false, delay: 0 };
+  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   const [actives, setActives] = useState<string[]>([]);
   const [hovered, setHovered] = useState<string | null>(null);
 
