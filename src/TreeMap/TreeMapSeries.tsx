@@ -51,8 +51,6 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       index
     });
 
-    console.log('here', item)
-
     return (
       <motion.g
         key={item.data.key}

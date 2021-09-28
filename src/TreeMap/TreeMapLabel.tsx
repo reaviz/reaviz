@@ -1,4 +1,6 @@
 import React, { FC } from 'react';
+import { wrapText } from '../common/utils';
+import { formatValue } from '../common/utils/formatting';
 
 export interface TreeMapLabelProps {
   /**
@@ -25,26 +27,40 @@ export interface TreeMapLabelProps {
   * Fill of the text.
   */
   fill?: string;
+
+  /**
+   * Should wrap text or not.
+   */
+   wrap?: boolean;
 }
 
 export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
   id,
   data,
   fill = '#FFF',
+  wrap = true,
   fontSize = 14,
   fontFamily = 'sans-serif'
 }) => {
+  // TODO: Maybe make this count up...?
+  const key = `${data.data.key} - ${formatValue(data.data.data)}`;
+
+  const text = wrap ? wrapText({
+    key,
+    fontFamily,
+    fontSize,
+    width: data.x1 - data.x0
+  }) : key;
 
   return (
-    <text
-      id={`${id}-text`}
-      style={{ pointerEvents: 'none', fontFamily, fontSize }}
-      fill={fill}
-      textAnchor="middle"
-      x={15}
-      y={15}
-    >
-      {data.data.key} - ${data.data.data}
-    </text>
+    <g style={{ transform: 'translate(10px, 15px)' }}>
+      <text
+        id={`${id}-text`}
+        style={{ pointerEvents: 'none', fontFamily, fontSize }}
+        fill={fill}
+      >
+        {text}
+      </text>
+    </g>
   );
 };
