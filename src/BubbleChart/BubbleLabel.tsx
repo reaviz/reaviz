@@ -2,6 +2,7 @@ import React, { FC, isValidElement } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { motion } from 'framer-motion';
 import { wrapText } from '../common/utils/wrapText';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 export interface BubbleLabelProps {
   /**
@@ -52,8 +53,10 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   wrap = true,
   fill = '#000',
   fontSize = 14,
-  fontFamily = 'sans-serif'
+  fontFamily = 'sans-serif',
+  animated
 }) => {
+  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   let isElement = false;
   let label;
 
@@ -80,6 +83,7 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
           x: data.x,
           y: data.y
         }}
+        transition={transition}
         id={`${id}-text`}
         style={{ pointerEvents: 'none', fontFamily, fontSize }}
         fill={fill}

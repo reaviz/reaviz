@@ -7,6 +7,7 @@ import { BubbleLabel, BubbleLabelProps } from './BubbleLabel';
 import { CloneElement } from 'rdk';
 import invert from 'invert-color';
 import chroma from 'chroma-js';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 export interface BubbleSeriesProps {
   /**
@@ -48,7 +49,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   bubble = <Bubble />,
   label = <BubbleLabel />
 }) => {
-  const transition = animated ? {} : { type: false, delay: 0 };
+  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
   const renderBubble = (item, index) => {
     const fill = getColor({

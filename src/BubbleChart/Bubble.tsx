@@ -5,6 +5,7 @@ import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
 import { Gradient, GradientProps } from '../common/Gradient';
 import { Mask, MaskProps } from '../common/Mask';
+import { DEFAULT_TRANSITION } from '../common/Motion';
 
 export interface BubbleProps {
   /**
@@ -67,10 +68,12 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
+  animated,
   tooltip = <ChartTooltip />
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);
+  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
   const arcFill =
     gradient && !mask
@@ -95,6 +98,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
           cx: data.x,
           cy: data.y
         }}
+        transition={transition}
         onClick={onClick}
         onMouseEnter={(event) => {
           setInternalActive(true);
