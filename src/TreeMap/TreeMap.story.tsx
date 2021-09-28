@@ -6,7 +6,7 @@ import { TreeMapRect } from './TreeMapRect';
 import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
 import { schemes } from '../common/color';
-import { select } from '@storybook/addon-knobs';
+import { number, object, select } from '@storybook/addon-knobs';
 
 export default {
   title: 'Charts/TreeMap',
@@ -21,12 +21,15 @@ const simpleData: ChartShallowDataShape[] = [
 
 export const Simple = () => {
   const scheme = select('Color Scheme', schemes, 'cybertron');
+  const height = number('Height', 450);
+  const width = number('Width', 450);
+  const data = object('Data', simpleData);
 
   return (
     <TreeMap
-      height={400}
-      width={400}
-      data={simpleData}
+      height={height}
+      width={width}
+      data={data}
       series={<TreeMapSeries colorScheme={scheme} />}
     />
   );
