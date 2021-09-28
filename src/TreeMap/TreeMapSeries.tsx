@@ -51,7 +51,9 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       index
     });
 
-    const textFill = invert(fill, true);
+    const textFill = fill
+      ? invert(fill, true)
+      : 'white';
 
     return (
       <motion.g

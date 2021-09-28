@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "11.0.3",
+  "version": "11.1.0",
   "description": "Data Visualization using React and D3.js",
   "scripts": {
     "start": "start-storybook -p 9010 -s public",
@@ -60,7 +60,8 @@
     "legends",
     "venn",
     "euler",
-    "venn-diagram"
+    "venn-diagram",
+    "treemap"
   ],
   "license": "Apache-2.0",
   "bugs": {

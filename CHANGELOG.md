@@ -1,3 +1,7 @@
+# 11.1.0
+- [feature] treemap chart
+- [improvement] enhance wrap text fn to account for height + paddings
+
 # 11.0.3 - 9/22/21
 - [chore] update rdk and realayers
 
