@@ -1,3 +1,13 @@
+# 11.1.1
+- [improvement] add color inversion to Venn and Bubble charts
+- [fix] handle non-hex colors better in inversion
+- [fix] darken colors just a bit to try and normalize to same color
+- [fix] apply default transition to bubble chart
+- [fix] apply default transition to treemap chart
+- [fix] fix bubble label and arc not getting animated props
+- [fix] apply default transition to venn diagram
+- [docs] add components to storybook CSF docs
+
 # 11.1.0
 - [feature] treemap chart
 - [improvement] enhance wrap text fn to account for height + paddings
