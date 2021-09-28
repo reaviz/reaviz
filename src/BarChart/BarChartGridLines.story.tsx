@@ -4,9 +4,22 @@ import {
   categoryData
 } from '../../demo';
 import { GridlineSeries, Gridline } from '../common/Gridline';
+import { Bar, BarLabel, BarSeries, GuideBar, HistogramBarSeries, MarimekkoBarSeries, RangeLines, StackedBarSeries, StackedNormalizedBarSeries } from './BarSeries';
 
 export default {
   title: 'Charts/Bar Chart/Gridlines',
+  component: BarChart,
+  subcomponents: {
+    BarSeries,
+    StackedBarSeries,
+    StackedNormalizedBarSeries,
+    MarimekkoBarSeries,
+    RangeLines,
+    Bar,
+    BarLabel,
+    GuideBar,
+    HistogramBarSeries
+  }
 };
 
 export const AllAxes = () => (

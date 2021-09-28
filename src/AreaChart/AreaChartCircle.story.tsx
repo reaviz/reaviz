@@ -4,14 +4,27 @@ import {
 } from '../../demo';
 import { AreaChart } from './AreaChart';
 import {
+  Area,
   AreaSeries,
-  PointSeries
+  Line,
+  PointSeries,
+  StackedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 import { ScatterPoint } from '../ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 
 export default {
   title: 'Charts/Area Chart/Circle Series',
+  component: AreaChart,
+  subcomponents: {
+    AreaSeries,
+    Area,
+    Line,
+    PointSeries,
+    StackedAreaSeries,
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const On = () => (

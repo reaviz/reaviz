@@ -19,6 +19,11 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Line Chart/Single Series',
+  component: LineChart,
+  subcomponents: {
+    LineSeries,
+    Line
+  }
 };
 
 export const Simple = () => {

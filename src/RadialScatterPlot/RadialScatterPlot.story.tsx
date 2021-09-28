@@ -16,7 +16,12 @@ import {
 } from '../common/Axis/RadialAxis';
 
 export default {
-  title: 'Charts/Scatter Plot/Radial'
+  title: 'Charts/Scatter Plot/Radial',
+  component: RadialScatterPlot,
+  subcomponents: {
+    RadialScatterSeries,
+    RadialScatterPoint
+  }
 };
 
 export const Simple = () => {

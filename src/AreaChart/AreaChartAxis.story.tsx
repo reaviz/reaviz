@@ -7,7 +7,12 @@ import {
 } from '../../demo';
 import { AreaChart } from './AreaChart';
 import {
-  AreaSeries
+  Area,
+  AreaSeries,
+  Line,
+  PointSeries,
+  StackedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 import {
   LinearXAxis,
@@ -21,6 +26,15 @@ import { getYScale, getXScale } from '../common/scales';
 
 export default {
   title: 'Charts/Area Chart/Axis',
+  component: AreaChart,
+  subcomponents: {
+    AreaSeries,
+    Area,
+    Line,
+    PointSeries,
+    StackedAreaSeries,
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const TopBottomAxis = () => {

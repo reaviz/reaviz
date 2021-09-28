@@ -2,11 +2,17 @@ import React, { useState, Fragment } from 'react';
 import { number, object, text, select } from '@storybook/addon-knobs';
 import { PieChart } from './PieChart';
 import { categoryData, randomNumber } from '../../demo';
-import { PieArcSeries } from './PieArcSeries';
+import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Pie Chart/Donut',
+  component: PieChart,
+  subcomponents: {
+    PieArc,
+    PieArcLabel,
+    PieArcSeries
+  }
 };
 
 export const Simple = () => {

@@ -6,7 +6,15 @@ import {
 } from '../../demo';
 import { timeWeek } from 'd3-time';
 import {
-  HistogramBarSeries
+  Bar,
+  BarLabel,
+  BarSeries,
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 import {
   LinearXAxis,
@@ -16,6 +24,18 @@ import { HistogramBarChart } from './HistogramBarChart';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Histogram',
+  component: HistogramBarChart,
+  subcomponents: {
+    BarSeries,
+    StackedBarSeries,
+    StackedNormalizedBarSeries,
+    MarimekkoBarSeries,
+    RangeLines,
+    Bar,
+    BarLabel,
+    GuideBar,
+    HistogramBarSeries
+  }
 };
 
 export const Dates = () => {

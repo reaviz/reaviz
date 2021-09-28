@@ -8,19 +8,35 @@ import {
   nonZeroCategoryData
 } from '../../demo';
 import chroma from 'chroma-js';
-import { timeWeek } from 'd3-time';
 import { range } from 'd3-array';
 import {
   BarSeries,
   Bar,
   BarLabel,
-  GuideBar
+  GuideBar,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries,
+  MarimekkoBarSeries,
+  HistogramBarSeries
 } from './BarSeries';
 import { Stripes } from '../common/Mask';
 import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Single Series',
+  component: BarChart,
+  subcomponents: {
+    BarSeries,
+    StackedBarSeries,
+    StackedNormalizedBarSeries,
+    MarimekkoBarSeries,
+    RangeLines,
+    Bar,
+    BarLabel,
+    GuideBar,
+    HistogramBarSeries
+  }
 };
 
 export const Simple = () => {

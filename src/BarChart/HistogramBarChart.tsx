@@ -3,7 +3,7 @@ import { ChartShallowDataShape } from '../common/data';
 import { BarChartProps, BarChart } from './BarChart';
 import { HistogramBarSeries } from './BarSeries';
 
-interface HistogramBarChartProps extends BarChartProps {
+export interface HistogramBarChartProps extends BarChartProps {
   data: ChartShallowDataShape[];
 }
 

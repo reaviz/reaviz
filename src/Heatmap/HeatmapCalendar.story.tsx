@@ -8,9 +8,15 @@ import {
   heatmapCalendarOffsetData
 } from '../../demo';
 import { number, object } from '@storybook/addon-knobs';
+import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 
 export default {
   title: 'Charts/Heatmap/Calendar',
+  component: CalendarHeatmap,
+  subcomponents: {
+    HeatmapSeries,
+    HeatmapCell
+  }
 };
 
 export const YearCalendar = () => {

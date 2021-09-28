@@ -10,7 +10,10 @@ import { AreaChart } from './AreaChart';
 import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
 import { StackedAreaChart } from './StackedAreaChart';
 import {
+  Area,
   AreaSeries,
+  Line,
+  PointSeries,
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
@@ -18,6 +21,15 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Area Chart/Multi Series',
+  component: AreaChart,
+  subcomponents: {
+    AreaSeries,
+    Area,
+    Line,
+    PointSeries,
+    StackedAreaSeries,
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const Simple = () => {

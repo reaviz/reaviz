@@ -9,7 +9,11 @@ import geojson from 'world-atlas/countries-110m.json';
 const worldData = feature(geojson as any, geojson.objects.countries as any);
 
 export default {
-  title: 'Charts/Map'
+  title: 'Charts/Map',
+  component: Map as any,
+  subcomponents: {
+    MapMarker
+  }
 };
 
 export const Simple = () => <Map data={worldData} height={350} width={500} />;

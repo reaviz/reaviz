@@ -22,6 +22,11 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Scatter Plot/Linear',
+  component: ScatterPlot,
+  subcomponents: {
+    ScatterSeries,
+    ScatterPoint
+  }
 };
 
 export const Simple = () => {

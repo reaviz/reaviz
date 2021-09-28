@@ -12,7 +12,12 @@ import {
   BarSeries,
   Bar,
   BarLabel,
-  GuideBar
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 import {
   LinearXAxis,
@@ -25,6 +30,18 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Bar Chart/Horizontal/Single Series',
+  component: BarChart,
+  subcomponents: {
+    BarSeries,
+    StackedBarSeries,
+    StackedNormalizedBarSeries,
+    MarimekkoBarSeries,
+    RangeLines,
+    Bar,
+    BarLabel,
+    GuideBar,
+    HistogramBarSeries
+  }
 };
 
 export const Simple = () => {

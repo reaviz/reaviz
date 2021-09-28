@@ -4,9 +4,19 @@ import {
 } from '../../demo';
 import { AreaChart } from './AreaChart';
 import { GridlineSeries, Gridline } from '../common/Gridline';
+import { Area, AreaSeries, Line, PointSeries, StackedAreaSeries, StackedNormalizedAreaSeries } from './AreaSeries';
 
 export default {
   title: 'Charts/Area Chart/Gridlines',
+  component: AreaChart,
+  subcomponents: {
+    AreaSeries,
+    Area,
+    Line,
+    PointSeries,
+    StackedAreaSeries,
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const AllAxes = () => (

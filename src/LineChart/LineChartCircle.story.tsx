@@ -9,6 +9,10 @@ import { symbol, symbolStar } from 'd3-shape';
 
 export default {
   title: 'Charts/Line Chart/Circle Series',
+  component: LineChart,
+  subcomponents: {
+    LineSeries
+  }
 };
 
 export const On = () => (

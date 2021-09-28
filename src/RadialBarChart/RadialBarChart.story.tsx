@@ -13,7 +13,13 @@ import {
 import { schemes } from '../common/color';
 
 export default {
-  title: 'Charts/Bar Chart/Radial'
+  title: 'Charts/Bar Chart/Radial',
+  component: RadialBarChart,
+  subcomponents: {
+    RadialBarSeries,
+    RadialBar,
+    RadialGuideBar
+  }
 };
 
 export const Simple = () => {

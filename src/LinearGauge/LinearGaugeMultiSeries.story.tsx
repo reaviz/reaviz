@@ -4,6 +4,8 @@ import { DiscreteLegend, DiscreteLegendEntry } from '../common/legends';
 import { mitreData } from '../../demo';
 import { LinearGaugeSeries } from './LinearGaugeSeries';
 import chroma from 'chroma-js';
+import { LinearGaugeBar } from './LinearGaugeBar';
+import { LinearGaugeOuterBar } from './LinearGaugeOuterBar';
 
 const colorScheme = chroma
   .scale(['#FF9C02', '#870000'])
@@ -24,6 +26,13 @@ const Icon = ({ fill }) => (
 
 export default {
   title: 'Charts/Gauge/Linear/Multi-Series',
+  component: LinearGauge,
+  subcomponents: {
+    LinearGaugeSeries,
+    LinearGauge,
+    LinearGaugeBar,
+    LinearGaugeOuterBar
+  }
 };
 
 export const _Simple = () => (

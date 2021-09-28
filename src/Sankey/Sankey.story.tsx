@@ -11,6 +11,7 @@ import {
 } from '../../demo';
 import { select, object, number } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
+import { SankeyLabel } from './SankeyLabel';
 
 const colorScheme = chroma
   .scale([
@@ -32,7 +33,13 @@ const colorScheme = chroma
 const onNodeClick = (title: string) => window.alert(`${title} is clicked`);
 
 export default {
-  title: 'Charts/Sankey Plot'
+  title: 'Charts/Sankey Plot',
+  component: Sankey,
+  subcomponents: {
+    SankeyNode,
+    SankeyLink,
+    SankeyLabel
+  }
 };
 
 export const Simple = () => {

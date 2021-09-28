@@ -1,9 +1,10 @@
 import React from 'react';
 import { LinearGauge } from './LinearGauge';
-import { DiscreteLegend, DiscreteLegendEntry } from '../common/legends';
 import { mitreData } from '../../demo';
 import { LinearGaugeSeries } from './LinearGaugeSeries';
 import chroma from 'chroma-js';
+import { LinearGaugeBar } from './LinearGaugeBar';
+import { LinearGaugeOuterBar } from './LinearGaugeOuterBar';
 
 const colorScheme = chroma
   .scale(['#FF9C02', '#870000'])
@@ -24,6 +25,13 @@ const Icon = ({ fill }) => (
 
 export default {
   title: 'Charts/Gauge/Linear/Single-Series',
+  component: LinearGauge,
+  subcomponents: {
+    LinearGaugeSeries,
+    LinearGauge,
+    LinearGaugeBar,
+    LinearGaugeOuterBar
+  }
 };
 
 export const Simple = () => (

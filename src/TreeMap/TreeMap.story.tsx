@@ -7,9 +7,16 @@ import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
 import { schemes } from '../common/color';
 import { number, object, select } from '@storybook/addon-knobs';
+import { TreeMapLabel } from './TreeMapLabel';
 
 export default {
   title: 'Charts/TreeMap',
+  component: TreeMap,
+  subcomponents: {
+    TreeMapSeries,
+    TreeMapRect,
+    TreeMapLabel
+  }
 };
 
 const simpleData: ChartShallowDataShape[] = [

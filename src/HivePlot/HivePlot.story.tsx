@@ -4,7 +4,8 @@ import { nodes, links } from '../../demo';
 import { range } from 'd3-array';
 
 export default {
-  title: 'Charts/Hive Plot'
+  title: 'Charts/Hive Plot',
+  component: HivePlot
 };
 
 export const Mini = () => (

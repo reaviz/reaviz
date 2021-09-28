@@ -7,6 +7,7 @@ import { GridlineSeries, Gridline } from '../common/Gridline';
 
 export default {
   title: 'Charts/Line Chart/Gridlines',
+  component: LineChart
 };
 
 export const AllAxes = () => (

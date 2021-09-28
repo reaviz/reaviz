@@ -5,7 +5,7 @@ import {
 } from '../../demo';
 import { SequentialLegend } from '../common/legends/SequentialLegend/SequentialLegend';
 import { number, object, select } from '@storybook/addon-knobs';
-import { HeatmapSeries } from './HeatmapSeries';
+import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 import { schemes } from '../common/color';
 import { getYScale } from '../common/scales';
 import {
@@ -16,6 +16,11 @@ import {
 
 export default {
   title: 'Charts/Heatmap/Simple',
+  component: Heatmap,
+  subcomponents: {
+    HeatmapSeries,
+    HeatmapCell
+  }
 };
 
 export const Basic = () => {

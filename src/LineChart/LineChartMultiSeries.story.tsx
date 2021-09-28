@@ -23,6 +23,15 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Line Chart/Multi Series',
+  component: LineChart,
+  subcomponents: {
+    LineSeries,
+    Line,
+    StackedAreaChart,
+    StackedNormalizedAreaChart,
+    StackedAreaSeries,
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const _Simple = () => {

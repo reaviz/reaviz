@@ -11,7 +11,10 @@ import { range } from 'd3-array';
 import {
   AreaSeries,
   Area,
-  Line
+  Line,
+  PointSeries,
+  StackedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 import {
   LinearXAxis,
@@ -24,6 +27,15 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Area Chart/Single Series',
+  component: AreaChart,
+  subcomponents: {
+    AreaSeries,
+    Area,
+    Line,
+    PointSeries,
+    StackedAreaSeries,
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const Simple = () => {

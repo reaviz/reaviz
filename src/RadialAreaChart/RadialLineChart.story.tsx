@@ -1,7 +1,7 @@
 import React from 'react';
 import { RadialAreaChart } from './RadialAreaChart';
 import { medDateData, categoryData } from '../../demo';
-import { RadialAreaSeries } from './RadialAreaSeries';
+import { RadialArea, RadialAreaSeries, RadialLine, RadialPointSeries } from './RadialAreaSeries';
 import { number, boolean, object, select } from '@storybook/addon-knobs';
 import {
   RadialAxis,
@@ -14,7 +14,14 @@ import {
 import { schemes } from '../common/color';
 
 export default {
-  title: 'Charts/Line Chart/Radial'
+  title: 'Charts/Line Chart/Radial',
+  component: RadialAreaChart,
+  subcomponents: {
+    RadialAreaSeries,
+    RadialArea,
+    RadialLine,
+    RadialPointSeries
+  }
 };
 
 export const Simple = () => {

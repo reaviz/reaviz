@@ -8,6 +8,12 @@ import { ChartShallowDataShape } from '../common/data';
 
 export default {
   title: 'Charts/Pie Chart/Pie',
+  component: PieChart,
+  subcomponents: {
+    PieArc,
+    PieArcLabel,
+    PieArcSeries
+  }
 };
 
 export const Simple = () => {

@@ -17,6 +17,11 @@ import { getYScale, getXScale } from '../common/scales';
 
 export default {
   title: 'Charts/Scatter Plot/Axis',
+  component: ScatterPlot,
+  subcomponents: {
+    ScatterSeries,
+    ScatterPoint
+  }
 };
 
 export const TopBottomAxis = () => {

@@ -18,7 +18,9 @@ import {
   StackedNormalizedBarSeries,
   MarimekkoBarSeries,
   RangeLines,
-  GuideBar
+  GuideBar,
+  BarLabel,
+  HistogramBarSeries
 } from './BarSeries';
 import { GridlineSeries, Gridline } from '../common/Gridline';
 import {
@@ -33,6 +35,18 @@ import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Multi Series',
+  component: BarChart,
+  subcomponents: {
+    BarSeries,
+    StackedBarSeries,
+    StackedNormalizedBarSeries,
+    MarimekkoBarSeries,
+    RangeLines,
+    Bar,
+    BarLabel,
+    GuideBar,
+    HistogramBarSeries
+  }
 };
 
 export const _Simple = () => {

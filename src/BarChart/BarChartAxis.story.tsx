@@ -6,7 +6,13 @@ import {
 import {
   Bar,
   StackedBarSeries,
-  RangeLines
+  RangeLines,
+  BarSeries,
+  StackedNormalizedBarSeries,
+  BarLabel,
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries
 } from './BarSeries';
 import { GridlineSeries, Gridline } from '../common/Gridline';
 import {
@@ -18,9 +24,22 @@ import {
 } from '../common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '../common/Gradient';
 import { getXScale, getYScale } from '../common/scales';
+import { BarChart } from './BarChart';
 
 export default {
   title: 'Charts/Bar Chart/Axis',
+  component: BarChart,
+  subcomponents: {
+    BarSeries,
+    StackedBarSeries,
+    StackedNormalizedBarSeries,
+    MarimekkoBarSeries,
+    RangeLines,
+    Bar,
+    BarLabel,
+    GuideBar,
+    HistogramBarSeries
+  }
 };
 
 export const TopBottomAxis = () => {

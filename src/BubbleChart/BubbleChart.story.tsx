@@ -24,7 +24,13 @@ const simpleData: ChartShallowDataShape[] = [
 ];
 
 export default {
-  title: 'Charts/Bubble Chart'
+  title: 'Charts/Bubble Chart',
+  component: BubbleChart,
+  subcomponents: {
+    BubbleSeries,
+    BubbleLabel,
+    Bubble
+  }
 };
 
 export const Simple = () => {
