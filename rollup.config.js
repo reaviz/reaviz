@@ -55,7 +55,9 @@ export default [
         ]
       }),
       json(),
-      resolve(),
+      resolve({
+        browser: true
+      }),
       commonjs(),
       sourceMaps(),
       bundleSize()

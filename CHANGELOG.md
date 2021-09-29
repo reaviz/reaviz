@@ -1,4 +1,7 @@
-# 11.1.1
+# Master
+- [chore] update deps
+
+# 11.1.1- 9/28/21
 - [improvement] add color inversion to Venn and Bubble charts
 - [fix] handle non-hex colors better in inversion
 - [fix] darken colors just a bit to try and normalize to same color
@@ -8,7 +11,7 @@
 - [fix] apply default transition to venn diagram
 - [docs] add components to storybook CSF docs
 
-# 11.1.0
+# 11.1.0 - 9/27/21
 - [feature] treemap chart
 - [improvement] enhance wrap text fn to account for height + paddings
 
