@@ -93,6 +93,7 @@ Chart types include:
   - Euler
   - Fixed Euler
 - Bubble Chart
+- Treemap
 
 Additional features:
 
