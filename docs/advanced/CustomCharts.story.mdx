@@ -12,13 +12,10 @@ Almost all of the chart types allow you to pass `JSX` elements in the props; thi
 to customize every aspect of each element. Additionally, you can mix charts and their child components
 together to make combination charts.
 
-## Example Combination Chart
+## Radar Chart Example
 The Radar chart was the primary driver behind creating REAVIZ. This chart combines
-an area chart, bar chart and scatter chart. This chart is more than just pretty, it served as a central element
-for cyber-security analysts to identify trends and threats. For more information on the chart and design
-itself, checkout: [From Dashboard to HUD: How JASK reimagined the security analyst user experience](https://medium.com/@harlanelam/from-dashboard-to-hud-how-jask-reimagined-the-security-analyst-user-experience-fcbe69ffab29)
-by the amazing designer [Harlan Elam](https://dribbble.com/harlanelam). The chart rebuilt and modified slightly from
-Harlan's original design for legal reasons.
+multiple chart types to create a new visualization. Its a great example of how to leverage
+various chart internal components to create new chart types.
 
 <div style={{ background: '#06133B', display: 'flex', justifyContent: 'center', padding: 50 }}>
   <Radar
@@ -28,17 +25,28 @@ Harlan's original design for legal reasons.
   />
 </div>
 
+This chart is more than just pretty, it served as a central element for cyber-security analysts to
+identify trends and threats. For more information on the chart and design
+itself, checkout: [From Dashboard to HUD: How JASK reimagined the security analyst user experience](https://medium.com/@harlanelam/from-dashboard-to-hud-how-jask-reimagined-the-security-analyst-user-experience-fcbe69ffab29)
+by the amazing designer [Harlan Elam](https://dribbble.com/harlanelam). The chart was rewritten
+and visually tweaked from Harlan's original design for demonstration purposes.
+
+### Breaking it Down
 Before we start with the code, let's break this chart down to its core elements.
 
 ![breakdown](https://raw.githubusercontent.com/reaviz/reaviz/master/docs/advanced/breakdown.png)
 
-While the chart looks pretty intense, its actually pretty simple as you can see.
+While the chart looks pretty intense, its actually not that crazy. The chart is made up of 3 different
+chart types: scatter, bar, and area. Additionally there is some decorative elements that are pretty simple
+svg lines.
 
-Let's take a minute to walk through the [code](https://github.com/reaviz/reaviz/blob/master/docs/advanced/Radar.tsx) for this chart now
-we understand the general structure of the chart.
+### Code Tutorial
+Now that we understand the general structure of the chart type, we can walk through the [code](https://github.com/reaviz/reaviz/blob/master/docs/advanced/Radar.tsx)
+for this chart now.
 
-The chart starts with the `ChartContainer` component. This component deals with measuring sizes and creating the root
-svg element for us.
+All of the charts in REAVIZ start with the `ChartContainer` component. This component deals
+with measuring sizes and creating the root svg element for us. Below is a minimal example
+of how to configure the `ChartContainer` component.
 
 ```jsx
 <ChartContainer
@@ -68,7 +76,7 @@ svg element for us.
 </ChartContainer>
 ```
 
-Inside the `ChartContainer` component, we have a callback that gives
+Inside the `ChartContainer` component, there is a callback that gives
 us the chart dimensions. We use this to calculate the radius of the chart
 and then tee up the `RadarBarChart`, `RadarAreaChart` and `RadarScatterPlot` along
 with a few visual components for axises and decoration.
@@ -90,6 +98,8 @@ const RadarBarChart = ({
     false
   );
 
+  // The `RadialBarSeries` is a internal component used by the `RadialBarChart`.
+  // These components are exposed so you can compose them in ways like this.
   return (
     <RadialBarSeries
       id="radar-bars"
@@ -124,7 +134,7 @@ This function is relatively simple and used in all the child chart components:
 
 ```ts
 export const buildScale = (
-  initialData,
+  initialData = [],
   outerRad = 0,
   innerRad = 0,
   isTime = false,
@@ -132,6 +142,8 @@ export const buildScale = (
 ) => {
   const data = buildShallowChartData(initialData);
 
+  // If we are dealing with time, we need to use the `scaleTime`
+  // scale provided by d3, otherwise lets use the `scaleBand`.
   let xScale;
   if (isTime) {
     xDomain = (xDomain || extent(data, 'x'));
@@ -156,8 +168,10 @@ render positions:
 
 ```ts
 export const getRadius = (startIdx, endIdx, rad) => {
+  // Leveraging the d3 `scaleLinear` to determine the radius.
   const scale = scaleLinear().domain([0, ARC_COUNT]).range([INNER_RADIUS, rad]);
   const arcs = scale.ticks(ARC_COUNT);
+
   return {
     innerRadius: scale(arcs[startIdx]),
     outerRadius: scale(arcs[endIdx])
@@ -165,7 +179,7 @@ export const getRadius = (startIdx, endIdx, rad) => {
 };
 ```
 
-These function is mainly leveraging the `d3-scale` library to build the scales
+These function are mainly leveraging the `d3-scale` library to build the scales
 and data all the charts expect.
 
 The next chart in the series is `RadarAreaChart`.
@@ -274,6 +288,7 @@ const RadarScatterPlot = ({
 The `RadarScatterPlot` uses a custom callback to render a triange symbol ( d3-shape code ).
 We use the value of the point to determine the size of the symbol.
 
+### Wrapping Up
 And thats it! This example shows you how you can mix and match
 various different charts to build truley unique visualizations.
 You can see all the code [here](https://github.com/reaviz/reaviz/blob/master/docs/advanced/Radar.tsx).
