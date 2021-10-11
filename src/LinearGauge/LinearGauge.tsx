@@ -1,4 +1,4 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { Component, FC, Fragment, ReactElement } from 'react';
 import {
   ChartProps,
   ChartContainer,
@@ -37,31 +37,35 @@ export interface LinearGaugeProps extends ChartProps {
   maxValue: number;
 }
 
-export class LinearGauge extends Component<LinearGaugeProps> {
-  static defaultProps: Partial<LinearGaugeProps> = {
-    minValue: 0,
-    maxValue: 100,
-    series: <LinearGaugeSeries />
-  };
-
-  getData(data: ChartShallowDataShape | ChartShallowDataShape[]) {
-    if (Array.isArray(data)) {
+export const LinearGauge: FC<LinearGaugeProps> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  series,
+  data,
+  minValue,
+  maxValue
+}) => {
+  function getData(d: ChartShallowDataShape | ChartShallowDataShape[]) {
+    if (Array.isArray(d)) {
       return buildBarStackData(
         [
           {
             key: 'default',
-            data
+            data: d
           }
         ] as ChartNestedDataShape[],
         'expand',
         'horizontal'
       );
     } else {
-      return buildShallowChartData([data], 'horizontal');
+      return buildShallowChartData([d], 'horizontal');
     }
   }
 
-  getScales(
+  function getScales(
     isMultiSeries: boolean,
     data: ChartInternalNestedDataShape[],
     width: number,
@@ -92,17 +96,16 @@ export class LinearGauge extends Component<LinearGaugeProps> {
     };
   }
 
-  renderChart({
+  function renderChart({
     chartHeight,
     chartWidth,
     id,
     chartSized
   }: ChartContainerChildProps) {
-    const { series, data, minValue, maxValue } = this.props;
     const isMultiSeries = Array.isArray(data);
     const type = isMultiSeries ? 'stackedNormalized' : 'standard';
-    const transformedData = this.getData(data) as any;
-    const { keyScale, valueScale } = this.getScales(
+    const transformedData = getData(data) as any;
+    const { keyScale, valueScale } = getScales(
       isMultiSeries,
       transformedData,
       chartWidth,
@@ -131,19 +134,21 @@ export class LinearGauge extends Component<LinearGaugeProps> {
     );
   }
 
-  render() {
-    const { id, width, height, margins, className } = this.props;
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      className={className}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
 
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        className={className}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+LinearGauge.defaultProps = {
+  minValue: 0,
+  maxValue: 100,
+  series: <LinearGaugeSeries />
+};
