@@ -40,10 +40,10 @@ export const PieChart: FC<PieChartProps> = ({
   width,
   height,
   className,
-  displayAllLabels = false,
+  displayAllLabels,
   data = [],
-  margins = 10,
-  series = <PieArcSeries />
+  margins,
+  series
 }) => {
   const getData = useMemo(() => {
     const pieLayout = pie<
@@ -81,4 +81,9 @@ export const PieChart: FC<PieChartProps> = ({
       )}
     </ChartContainer>
   );
+};
+
+PieChart.defaultProps = {
+  margins: 10,
+  series: <PieArcSeries />
 };

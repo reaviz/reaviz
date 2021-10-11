@@ -71,13 +71,13 @@ export const PieArc: FC<PieArcProps> = ({
   color,
   data,
   arc,
-  cursor = 'initial',
-  animated = true,
-  disabled = false,
-  onClick = () => undefined,
-  onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
-  tooltip = <ChartTooltip />
+  cursor,
+  animated,
+  disabled,
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
+  tooltip
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
   const { transition, d } = useInterpolate({ animated, arc, data });
@@ -132,4 +132,14 @@ export const PieArc: FC<PieArcProps> = ({
       )}
     </g>
   );
+};
+
+PieArc.defaultProps = {
+  cursor: 'initial',
+  animated: true,
+  disabled: false,
+  onClick: () => undefined,
+  onMouseEnter: () => undefined,
+  onMouseLeave: () => undefined,
+  tooltip: <ChartTooltip />
 };

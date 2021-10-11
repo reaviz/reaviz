@@ -1,5 +1,6 @@
 # Master
 - [chore] update deps
+- [chore] migrate piechart to fc
 
 # 11.1.1- 9/28/21
 - [improvement] add color inversion to Venn and Bubble charts
