@@ -46,26 +46,8 @@ const xAxisLabelFormat = (start: Date) => (weeks: number) =>
   addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' });
 
 export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
-  view = 'year',
-  series = (
-    <HeatmapSeries
-      padding={0.3}
-      emptyColor="transparent"
-      cell={
-        <HeatmapCell
-          tooltip={
-            <ChartTooltip
-              content={(d) =>
-                `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
-                  d.data.value
-                )}`
-              }
-            />
-          }
-        />
-      }
-    />
-  ),
+  view,
+  series,
   data,
   ...rest
 }) => {
@@ -119,4 +101,27 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
       }
     />
   );
+};
+
+CalendarHeatmap.defaultProps = {
+  view: 'year',
+  series: (
+    <HeatmapSeries
+      padding={0.3}
+      emptyColor="transparent"
+      cell={
+        <HeatmapCell
+          tooltip={
+            <ChartTooltip
+              content={(d) =>
+                `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
+                  d.data.value
+                )}`
+              }
+            />
+          }
+        />
+      }
+    />
+  )
 };

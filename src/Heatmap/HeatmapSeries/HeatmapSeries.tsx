@@ -79,11 +79,10 @@ const getValueScale = (data, colorScheme, emptyColor) => {
 };
 
 export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
-  padding = 0.1,
-  animated = true,
-  emptyColor = 'rgba(200,200,200,0.08)',
-  colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'],
-  cell: cellElement = <HeatmapCell />,
+  animated,
+  emptyColor,
+  colorScheme,
+  cell: cellElement,
   xScale,
   yScale,
   data,
@@ -142,4 +141,12 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
       )}
     </Fragment>
   );
+};
+
+HeatmapSeries.defaultProps = {
+  padding: 0.1,
+  animated: true,
+  emptyColor: 'rgba(200,200,200,0.08)',
+  colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
+  cell: <HeatmapCell />,
 };

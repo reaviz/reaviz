@@ -114,13 +114,13 @@ const modifiers = {
 };
 
 export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
-  rx = 2,
-  ry = 2,
-  cursor = 'auto',
-  tooltip = <ChartTooltip />,
-  onClick = () => undefined,
-  onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
+  rx,
+  ry,
+  cursor,
+  tooltip,
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
   data,
   animated,
   cellIndex,
@@ -222,4 +222,14 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       )}
     </Fragment>
   );
+};
+
+HeatmapCell.defaultProps = {
+  rx: 2,
+  ry: 2,
+  cursor: 'auto',
+  tooltip: <ChartTooltip />,
+  onClick: () => undefined,
+  onMouseEnter: () => undefined,
+  onMouseLeave: () => undefined,
 };

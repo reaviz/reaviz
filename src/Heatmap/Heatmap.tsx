@@ -49,33 +49,11 @@ export interface HeatmapProps extends ChartProps {
 }
 
 export const Heatmap: FC<Partial<HeatmapProps>> = ({
-  data = [],
-  margins = 10,
-  series = <HeatmapSeries padding={0.1} />,
-  yAxis = (
-    <LinearYAxis
-      type="category"
-      axisLine={null}
-      tickSeries={
-        <LinearYAxisTickSeries
-          line={null}
-          label={<LinearYAxisTickLabel padding={5} />}
-        />
-      }
-    />
-  ),
-  xAxis = (
-    <LinearXAxis
-      type="category"
-      axisLine={null}
-      tickSeries={
-        <LinearXAxisTickSeries
-          line={null}
-          label={<LinearXAxisTickLabel padding={5} />}
-        />
-      }
-    />
-  ),
+  data,
+  margins,
+  series,
+  yAxis,
+  xAxis,
   secondaryAxis,
   id,
   width,
@@ -173,4 +151,34 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       {renderChart}
     </ChartContainer>
   );
+};
+
+Heatmap.defaultProps = {
+  data: [],
+  margins: 10,
+  series: <HeatmapSeries padding={0.1} />,
+  yAxis: (
+    <LinearYAxis
+      type="category"
+      axisLine={null}
+      tickSeries={
+        <LinearYAxisTickSeries
+          line={null}
+          label={<LinearYAxisTickLabel padding={5} />}
+        />
+      }
+    />
+  ),
+  xAxis: (
+    <LinearXAxis
+      type="category"
+      axisLine={null}
+      tickSeries={
+        <LinearXAxisTickSeries
+          line={null}
+          label={<LinearXAxisTickLabel padding={5} />}
+        />
+      }
+    />
+  )
 };
