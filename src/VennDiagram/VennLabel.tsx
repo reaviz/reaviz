@@ -65,13 +65,13 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   format,
   id,
   active,
-  labelType = 'key',
-  showAll = false,
-  wrap = true,
-  animated = true,
-  fill = '#000',
-  fontSize = 11,
-  fontFamily = 'sans-serif'
+  labelType,
+  showAll,
+  wrap,
+  animated,
+  fill,
+  fontSize,
+  fontFamily
 }) => {
   // If the text area is very large, then lets just skip showing the label
   if (!showAll && !data.arcs?.filter((a) => a.large).length) {
@@ -116,4 +116,14 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
       {format ? format(data) : text}
     </motion.text>
   );
+};
+
+VennLabel.defaultProps = {
+  labelType: 'key',
+  showAll: false,
+  wrap: true,
+  animated: true,
+  fill: '#000',
+  fontSize: 11,
+  fontFamily: 'sans-serif'
 };

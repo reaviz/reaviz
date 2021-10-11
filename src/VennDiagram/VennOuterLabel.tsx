@@ -37,10 +37,10 @@ export interface VennOuterLabelProps {
 export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   data,
   format,
-  animated = true,
-  fill = '#000',
-  fontSize = 14,
-  fontFamily = 'sans-serif'
+  animated,
+  fill,
+  fontSize,
+  fontFamily
 }) => {
   const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
   const text = data.set.data.key;
@@ -87,4 +87,11 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
       )}
     </Fragment>
   );
+};
+
+VennOuterLabel.defaultProps = {
+  animated: true,
+  fill: '#000',
+  fontSize: 14,
+  fontFamily: 'sans-serif'
 };

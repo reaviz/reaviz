@@ -45,14 +45,14 @@ export interface VennDiagramProps extends ChartProps {
 
 export const VennDiagram: FC<VennDiagramProps> = ({
   id,
-  type = 'venn',
+  type,
   width,
   height,
   margins,
   className,
   data,
   disabled,
-  series = <VennSeries />
+  series
 }) => {
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
@@ -102,4 +102,9 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       {renderChart}
     </ChartContainer>
   );
+};
+
+VennDiagram.defaultProps = {
+  type: 'venn',
+  series: <VennSeries />
 };
