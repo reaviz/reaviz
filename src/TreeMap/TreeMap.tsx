@@ -23,8 +23,8 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
   width,
   height,
   className,
-  margins = 0,
-  series = <TreeMapSeries />
+  margins,
+  series
 }) => {
   const getData = useCallback((cw: number, ch: number) => {
     const root = hierarchy<any>({ children: data })
@@ -65,4 +65,9 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
       {renderChart}
     </ChartContainer>
   );
+};
+
+TreeMap.defaultProps = {
+  margins: 0,
+  series: <TreeMapSeries />
 };

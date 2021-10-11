@@ -57,8 +57,8 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
   data,
   fill,
   animated,
-  cursor = 'pointer',
-  tooltip = <ChartTooltip />,
+  cursor,
+  tooltip,
   onMouseEnter,
   onMouseLeave,
   onClick
@@ -108,4 +108,9 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
       )}
     </Fragment>
   );
+};
+
+TreeMapRect.defaultProps = {
+  cursor: 'pointer',
+  tooltip: <ChartTooltip />
 };

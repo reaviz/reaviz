@@ -5,6 +5,7 @@
 - [chore] migrate Radial Gauge to fc
 - [chore] migrate Venn Diagram default props
 - [chore] migrate Heatmap default props
+- [chore] migrate TreeMap default props
 
 # 11.1.1- 9/28/21
 - [improvement] add color inversion to Venn and Bubble charts
