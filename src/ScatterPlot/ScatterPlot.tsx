@@ -1,4 +1,4 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement, useState, useRef, useCallback, useMemo } from 'react';
 import classNames from 'classnames';
 import {
   ChartShallowDataShape,
@@ -13,7 +13,6 @@ import {
   LinearYAxis,
   LinearAxis
 } from '../common/Axis';
-import bind from 'memoize-bind';
 import { getYScale, getXScale } from '../common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
 import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
@@ -29,7 +28,6 @@ import {
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
 import { CloneElement } from 'rdk';
-import memoize from 'memoize-one';
 import css from './ScatterPlot.module.css';
 
 interface ScatterPlotProps extends ChartProps {
@@ -74,74 +72,39 @@ interface ScatterPlotProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-interface ScatterPlotState {
-  zoomDomain?: [ChartDataTypes, ChartDataTypes];
-  isZoomed?: boolean;
-  preventAnimation?: boolean;
-  zoomControlled: boolean;
-}
+export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  series,
+  xAxis,
+  yAxis,
+  data,
+  gridlines,
+  brush,
+  zoomPan,
+  secondaryAxis
+}) => {
+  // eslint-disable-next-line no-prototype-builtins
+  const zoomControlled = useMemo(() => !zoomPan?.props?.domain?.hasOwnProperty('domain'), [zoomPan]);
 
-export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
-  static defaultProps: Partial<ScatterPlotProps> = {
-    data: [],
-    xAxis: <LinearXAxis type="time" />,
-    yAxis: <LinearYAxis type="value" />,
-    series: <ScatterSeries />,
-    gridlines: <GridlineSeries />,
-    brush: null,
-    zoomPan: null
-  };
+  const timeout = useRef<any | null>(null);
+  const [preventAnimation, setPreventAnimation] = useState<boolean>(false);
+  const [zoomDomain, setZoomDomain] = useState<[ChartDataTypes, ChartDataTypes] | null>(null);
+  const [isZoomed, setIsZoomed] = useState<boolean>(false);
+  const aggregatedData = useMemo(() => buildShallowChartData(data), [data]);
 
-  static getDerivedStateFromProps(
-    props: ScatterPlotProps,
-    state: ScatterPlotState
-  ) {
-    if (props.zoomPan) {
-      const zoom = props.zoomPan.props;
-      if (!state.zoomControlled && zoom.domain !== state.zoomDomain) {
-        return {
-          zoomDomain: zoom.domain,
-          isZoomed: !!zoom.domain
-        };
-      }
-    }
-
-    return null;
-  }
-
-  timeout: any;
-
-  constructor(props: ScatterPlotProps) {
-    super(props);
-
-    const zoom = props.zoomPan ? props.zoomPan.props : { domain: undefined };
-    // eslint-disable-next-line no-prototype-builtins
-    const zoomControlled = !zoom.hasOwnProperty('domain');
-
-    this.state = {
-      isZoomed: !!zoom.domain,
-      zoomDomain: zoom.domain,
-      zoomControlled
-    };
-  }
-
-  getData = memoize((data) => {
-    return buildShallowChartData(data) as ChartInternalShallowDataShape[];
-  });
-
-  getScales(
-    data: ChartInternalShallowDataShape[],
+  const getScales = useCallback((
     chartHeight: number,
     chartWidth: number
-  ) {
-    const { xAxis, yAxis } = this.props;
-    const { zoomDomain } = this.state;
-
+  ) => {
     const yScale = getYScale({
       roundDomains: yAxis.props.roundDomains,
       type: yAxis.props.type,
       height: chartHeight,
-      data,
+      data: aggregatedData,
       domain: yAxis.props.domain
     });
 
@@ -149,52 +112,37 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
       width: chartWidth,
       type: xAxis.props.type,
       roundDomains: xAxis.props.roundDomains,
-      data,
+      data: aggregatedData,
       domain: zoomDomain || xAxis.props.domain
     });
 
     return {
-      data,
       yScale,
       xScale
     };
-  }
+  }, [yAxis, xAxis, aggregatedData, zoomDomain]);
 
-  onZoomPan(event: ZoomPanChangeEvent) {
-    if (this.state.zoomControlled) {
-      this.setState({
-        zoomDomain: event.domain,
-        isZoomed: event.isZoomed,
-        preventAnimation: true
-      });
+  const onZoomPan = useCallback((event: ZoomPanChangeEvent) => {
+    if (zoomControlled) {
+      setPreventAnimation(true);
+      setZoomDomain(event.domain);
+      setIsZoomed(event.isZoomed);
 
-      clearTimeout(this.timeout);
-      this.timeout = setTimeout(
-        () => this.setState({ preventAnimation: false }),
+      clearTimeout(timeout.current);
+      timeout.current = setTimeout(
+        () => setPreventAnimation(true),
         500
       );
     }
-  }
+  }, [zoomControlled]);
 
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { chartHeight, chartWidth, id, updateAxes } = containerProps;
-    const {
-      series,
-      xAxis,
-      yAxis,
-      gridlines,
-      brush,
-      zoomPan,
-      secondaryAxis
-    } = this.props;
-    const { isZoomed, zoomDomain, preventAnimation } = this.state;
-    const data = this.getData(this.props.data);
-    const { yScale, xScale } = this.getScales(data, chartHeight, chartWidth);
+  const renderChart = useCallback(({ chartHeight, chartWidth, id, updateAxes, chartSized } : ChartContainerChildProps) => {
+    const { yScale, xScale } = getScales(chartHeight, chartWidth);
     const animated = preventAnimation === true ? false : series.props.animated;
 
     return (
       <Fragment>
-        {containerProps.chartSized && gridlines && (
+        {chartSized && gridlines && (
           <CloneElement<GridlineSeriesProps>
             element={gridlines}
             height={chartHeight}
@@ -210,14 +158,14 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
           height={chartHeight}
           width={chartWidth}
           scale={xScale}
-          onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+          onDimensionsChange={e => updateAxes('horizontal', e)}
         />
         <CloneElement<LinearAxisProps>
           element={yAxis}
           height={chartHeight}
           width={chartWidth}
           scale={yScale}
-          onDimensionsChange={bind(updateAxes, this, 'vertical')}
+          onDimensionsChange={e => updateAxes('vertical', e)}
         />
         {secondaryAxis &&
           secondaryAxis.map((axis, i) => (
@@ -226,10 +174,10 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
               element={axis}
               height={chartHeight}
               width={chartWidth}
-              onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+              onDimensionsChange={e => updateAxes('horizontal', e)}
             />
           ))}
-        {containerProps.chartSized && (
+        {chartSized && (
           <CloneElement<ChartBrushProps>
             element={brush}
             height={chartHeight}
@@ -238,18 +186,18 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
           >
             <CloneElement<ChartZoomPanProps>
               element={zoomPan}
-              onZoomPan={bind(this.onZoomPan, this)}
+              onZoomPan={onZoomPan}
               height={chartHeight}
               width={chartWidth}
               axisType={xAxis.props.type}
               roundDomains={xAxis.props.roundDomains}
-              data={data}
+              data={aggregatedData}
               domain={zoomDomain}
             >
               <CloneElement<ScatterSeriesProps>
                 element={series}
                 id={`area-series-${id}`}
-                data={data}
+                data={aggregatedData}
                 height={chartHeight}
                 width={chartWidth}
                 yScale={yScale}
@@ -262,23 +210,29 @@ export class ScatterPlot extends Component<ScatterPlotProps, ScatterPlotState> {
         )}
       </Fragment>
     );
-  }
+  }, [getScales, onZoomPan, aggregatedData, brush, zoomPan, series, secondaryAxis, xAxis, yAxis, zoomDomain, isZoomed, preventAnimation]);
 
-  render() {
-    const { xAxis, yAxis, id, width, height, margins, className } = this.props;
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={isAxisVisible(xAxis.props)}
+      yAxisVisible={isAxisVisible(yAxis.props)}
+      className={classNames(css.scatterPlot, className)}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
 
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={isAxisVisible(xAxis.props)}
-        yAxisVisible={isAxisVisible(yAxis.props)}
-        className={classNames(css.scatterPlot, className)}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+ScatterPlot.defaultProps = {
+  data: [],
+  xAxis: <LinearXAxis type="time" />,
+  yAxis: <LinearYAxis type="value" />,
+  series: <ScatterSeries />,
+  gridlines: <GridlineSeries />,
+  brush: null,
+  zoomPan: null
+};

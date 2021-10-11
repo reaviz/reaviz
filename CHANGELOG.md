@@ -1,5 +1,6 @@
 # Master
 - [chore] update deps
+- [chore] migrate Scatter Plot to fc
 - [chore] migrate Pie Chart to fc
 - [chore] migrate Linear Gauge to fc
 - [chore] migrate Radial Gauge to fc

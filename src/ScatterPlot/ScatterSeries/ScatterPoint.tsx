@@ -114,15 +114,15 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   data,
   xScale,
   yScale,
-  active = true,
-  tooltip = <ChartTooltip />,
-  cursor = 'pointer',
-  size = 4,
-  color = schemes.cybertron[0],
-  animated = true,
-  onClick = () => undefined,
-  onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
+  active,
+  tooltip,
+  cursor,
+  size,
+  color,
+  animated,
+  onClick,
+  onMouseEnter ,
+  onMouseLeave,
   ...rest
 }) => {
   const rectRef = useRef<any | null>(null);
@@ -265,4 +265,16 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
       )}
     </Fragment>
   );
+};
+
+ScatterPoint.defaultProps = {
+  active: true,
+  toolti:  <ChartTooltip />,
+  cursor: 'pointer',
+  size: 4,
+  color: schemes.cybertron[0],
+  animated: true,
+  onClick: () => undefined,
+  onMouseEnter: () => undefined,
+  onMouseLeave: () => undefined
 };
