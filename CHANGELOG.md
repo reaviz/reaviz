@@ -2,6 +2,7 @@
 - [chore] update deps
 - [chore] migrate Pie Chart to fc
 - [chore] migrate Linear Gauge to fc
+- [chore] migrate Radial Gauge to fc
 - [chore] migrate Venn Diagram default props
 - [chore] migrate Heatmap default props
 

@@ -25,7 +25,7 @@ export const StackedRadialGaugeLabel: FC<
   label,
   className,
   yOffset = 0
-}: Partial<StackedRadialGaugeLabelProps>) => (
+}) => (
   <>
     {label && (
       <text

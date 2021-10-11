@@ -83,13 +83,13 @@ export const StackedRadialGaugeSeries: FC<
   scale,
   startAngle,
   endAngle,
-  outerArc = <RadialGaugeArc disabled={true} />,
-  innerArc = <RadialGaugeArc animated={true} />,
-  label = <StackedRadialGaugeLabel />,
-  colorScheme = ['#00ECB1'],
-  fillFactor = 0.2,
-  arcPadding = 0.15
-}: Partial<StackedRadialGaugeSeriesProps>) => {
+  outerArc,
+  innerArc,
+  label,
+  colorScheme,
+  fillFactor,
+  arcPadding
+}) => {
   const radius = Math.min(width, height) / 2;
   const innerRadius = radius * (1 - Math.min(fillFactor, 1));
 
@@ -143,4 +143,13 @@ export const StackedRadialGaugeSeries: FC<
       </g>
     </>
   );
+};
+
+StackedRadialGaugeSeries.defaultProps = {
+  outerArc: <RadialGaugeArc disabled={true} />,
+  innerArc: <RadialGaugeArc animated={true} />,
+  label: <StackedRadialGaugeLabel />,
+  colorScheme: ['#00ECB1'],
+  fillFactor: 0.2,
+  arcPadding: 0.15
 };

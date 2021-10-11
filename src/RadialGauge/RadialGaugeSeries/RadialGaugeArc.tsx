@@ -87,16 +87,16 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   endAngle,
   innerRadius,
   outerRadius,
-  cornerRadius = 0,
-  padAngle = 0,
-  padRadius = 0,
-  color = '#353d44',
-  animated = true,
-  disabled = false,
-  onClick = () => undefined,
-  onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
-  tooltip = <ChartTooltip />
+  cornerRadius,
+  padAngle,
+  padRadius,
+  color,
+  animated,
+  disabled,
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
+  tooltip
 }: Partial<RadialGaugeArcProps>) => {
   /**
    * This function will generate the arcs
@@ -130,4 +130,17 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       onMouseLeave={onMouseLeave}
     />
   );
+};
+
+RadialGaugeArc.defaultProps = {
+  cornerRadius: 0,
+  padAngle: 0,
+  padRadius: 0,
+  color: '#353d44',
+  animated: true,
+  disabled: false,
+  onClick: () => undefined,
+  onMouseEnter: () => undefined,
+  onMouseLeave: () => undefined,
+  tooltip: <ChartTooltip />
 };

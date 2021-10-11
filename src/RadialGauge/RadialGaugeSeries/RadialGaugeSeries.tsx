@@ -1,4 +1,4 @@
-import React, { cloneElement, FC, ReactElement } from 'react';
+import React, { cloneElement, FC, Fragment, ReactElement } from 'react';
 import { range, min } from 'd3-array';
 import { scaleBand } from 'd3-scale';
 import { ChartShallowDataShape } from '../../common/data';
@@ -91,15 +91,15 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   startAngle,
   endAngle,
   arcWidth = 10,
-  outerArc = <RadialGaugeArc disabled={true} />,
-  innerArc = <RadialGaugeArc animated={true} />,
-  label = <RadialGaugeLabel />,
-  valueLabel = <RadialGaugeValueLabel />,
-  colorScheme = ['#00ECB1'],
-  padding = 20,
-  minGaugeWidth = 50,
+  outerArc,
+  innerArc,
+  label,
+  valueLabel,
+  colorScheme,
+  padding,
+  minGaugeWidth,
   ...props
-}: Partial<RadialGaugeSeriesProps>) => {
+}) => {
   function getWidths() {
     let rows = 1;
     let columns = data.length;
@@ -187,10 +187,19 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   const { columns, width, height, xScale, yScale } = getWidths();
 
   return (
-    <>
-      {data.map((d, i) =>
-        renderGauge(d, i, columns, height, width, xScale, yScale)
-      )}
-    </>
+    <Fragment>
+      {data.map((d, i) => renderGauge(d, i, columns, height, width, xScale, yScale))}
+    </Fragment>
   );
+};
+
+RadialGaugeSeries.defaultProps = {
+  arcWidth: 10,
+  outerArc: <RadialGaugeArc disabled={true} />,
+  innerArc: <RadialGaugeArc animated={true} />,
+  label: <RadialGaugeLabel />,
+  valueLabel: <RadialGaugeValueLabel />,
+  colorScheme: ['#00ECB1'],
+  padding: 20,
+  minGaugeWidth: 50,
 };

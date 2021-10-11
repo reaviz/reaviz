@@ -1,4 +1,4 @@
-import React, { Component, FC, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement } from 'react';
 import {
   ChartProps,
   ChartContainer,
@@ -37,7 +37,7 @@ export interface LinearGaugeProps extends ChartProps {
   maxValue: number;
 }
 
-export const LinearGauge: FC<LinearGaugeProps> = ({
+export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
   id,
   width,
   height,
