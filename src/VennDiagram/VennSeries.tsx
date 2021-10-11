@@ -124,6 +124,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       // Get the colors for the stroke
       const stroke =
         typeof arc.props.stroke === 'function'
+          // @ts-ignore
           ? arc.props.stroke(data, index, isActive, isHovered)
           : arc.props.stroke;
 
