@@ -1,11 +1,10 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { useState, FC, Fragment, ReactElement, useEffect, useCallback } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import {
   RadialScatterPoint,
   RadialScatterPointProps
 } from './RadialScatterPoint';
 import { CloneElement } from 'rdk';
-import bind from 'memoize-bind';
 
 export interface RadialScatterSeriesProps {
   /**
@@ -44,47 +43,38 @@ export interface RadialScatterSeriesProps {
   activeIds?: string[];
 }
 
-interface RadialScatterSeriesState {
-  activeIds: string[];
-}
+export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
+  data,
+  point,
+  xScale,
+  yScale,
+  animated,
+  activeIds
+}) => {
+  const [internalActiveIds, setInternalActiveIds] = useState<string[] | null>(activeIds);
 
-export class RadialScatterSeries extends Component<
-  RadialScatterSeriesProps,
-  RadialScatterSeriesState
-> {
-  static defaultProps: Partial<RadialScatterSeriesProps> = {
-    point: <RadialScatterPoint />,
-    animated: true
-  };
+  useEffect(() => {
+    setInternalActiveIds(activeIds || []);
+  }, [activeIds]);
 
-  state: RadialScatterSeriesState = {
-    activeIds: []
-  };
-
-  onMouseEnter({ value }) {
+  const onMouseEnter = useCallback(({ value }) => {
     // Only perform this on unmanaged activations
-    if (!this.props.activeIds) {
-      this.setState({
-        activeIds: [value.id]
-      });
+    if (!activeIds) {
+      setInternalActiveIds([value.id]);
     }
-  }
+  }, []);
 
-  onMouseLeave() {
+  const onMouseLeave = useCallback(() => {
     // Only perform this on unmanaged activations
-    if (!this.props.activeIds) {
-      this.setState({
-        activeIds: []
-      });
+    if (!activeIds) {
+      setInternalActiveIds([]);
     }
-  }
+  }, []);
 
-  renderPoint(data: ChartInternalShallowDataShape, index: number) {
-    const { point, xScale, yScale, animated } = this.props;
-
+  const renderPoint = useCallback((d: ChartInternalShallowDataShape, index: number) => {
     let dataId;
-    if (data.id) {
-      dataId = data.id;
+    if (d.id) {
+      dataId = d.id;
     } else {
       console.warn(
         'No \'id\' property provided for scatter point; provide one via \'id\'.'
@@ -92,12 +82,11 @@ export class RadialScatterSeries extends Component<
     }
 
     const key = dataId || index;
-    const activeIds = this.props.activeIds || this.state.activeIds;
     const active =
-      !(activeIds && activeIds.length) || activeIds.includes(dataId);
+      !(internalActiveIds && internalActiveIds.length) || internalActiveIds.includes(dataId);
 
     const visible = point.props.visible;
-    if (visible && !visible(data, index)) {
+    if (visible && !visible(d, index)) {
       return <Fragment key={key} />;
     }
 
@@ -105,21 +94,22 @@ export class RadialScatterSeries extends Component<
       <CloneElement<RadialScatterPointProps>
         element={point}
         key={key}
-        data={data}
+        data={d}
         index={index}
         active={active}
         xScale={xScale}
         yScale={yScale}
         animated={animated}
-        onMouseEnter={bind(this.onMouseEnter, this)}
-        onMouseLeave={bind(this.onMouseLeave, this)}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
       />
     );
-  }
+  }, [point, internalActiveIds, xScale, yScale, animated, onMouseEnter, onMouseLeave]);
 
-  render() {
-    const { data } = this.props;
+  return <Fragment>{data.map(renderPoint)}</Fragment>;
+};
 
-    return <Fragment>{data.map((d, i) => this.renderPoint(d, i))}</Fragment>;
-  }
-}
+RadialScatterSeries.defaultProps = {
+  point: <RadialScatterPoint />,
+  animated: true
+};

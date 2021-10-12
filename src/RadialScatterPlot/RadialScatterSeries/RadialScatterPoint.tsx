@@ -1,13 +1,13 @@
 import React, {
-  Component,
   ReactNode,
-  createRef,
+  useRef,
   Fragment,
-  ReactElement
+  ReactElement,
+  FC,
+  useState
 } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { radialLine } from 'd3-shape';
-import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -103,60 +103,47 @@ export interface RadialScatterPointProps {
   onMouseLeave: (event) => void;
 }
 
-interface RadialScatterPointState {
-  hovered: boolean;
-}
+export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
+  size,
+  data,
+  color,
+  index,
+  symbol,
+  active,
+  tooltip,
+  yScale,
+  xScale,
+  animated,
+  className,
+  ...rest
+}) => {
+  const ref = useRef<any>(null);
+  const [hovered, setHovered] = useState<boolean>(false);
 
-export class RadialScatterPoint extends Component<
-  RadialScatterPointProps,
-  RadialScatterPointState
-> {
-  static defaultProps: Partial<RadialScatterPointProps> = {
-    size: 3,
-    color: schemes.cybertron[0],
-    tooltip: <ChartTooltip />,
-    active: true,
-    onClick: () => undefined,
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined
-  };
-
-  ref = createRef<SVGGElement>();
-  state: RadialScatterPointState = {
-    hovered: false
-  };
-
-  onMouseEnter(event: MouseEvent) {
-    this.setState({ hovered: true });
-
-    const { onMouseEnter, data } = this.props;
-    onMouseEnter({
+  function onMouseEnter(event: React.MouseEvent) {
+    setHovered(true);
+    rest.onMouseEnter({
       value: data,
       nativeEvent: event
     });
   }
 
-  onMouseLeave(event: MouseEvent) {
-    this.setState({ hovered: false });
-
-    const { onMouseLeave, data } = this.props;
-    onMouseLeave({
+  function onMouseLeave(event: React.MouseEvent) {
+    setHovered(false);
+    rest.onMouseLeave({
       value: data,
       nativeEvent: event
     });
   }
 
-  onClick(event: MouseEvent) {
-    const { onClick, data } = this.props;
-    onClick({
+  function onClick(event: React.MouseEvent) {
+    rest.onClick({
       value: data,
       nativeEvent: event
     });
   }
 
-  getTranslate(data: ChartInternalShallowDataShape) {
-    const { xScale, yScale } = this.props;
-
+  function getTranslate(data: ChartInternalShallowDataShape) {
     const fn = radialLine()
       .radius((d: any) => yScale(d.y))
       .angle((d: any) => xScale(d.x));
@@ -175,9 +162,7 @@ export class RadialScatterPoint extends Component<
     }
   }
 
-  getTransition() {
-    const { animated, index } = this.props;
-
+  function getTransition() {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
@@ -191,55 +176,50 @@ export class RadialScatterPoint extends Component<
     }
   }
 
-  render() {
-    const {
-      size,
-      data,
-      color,
-      index,
-      symbol,
-      active,
-      tooltip,
-      yScale,
-      className
-    } = this.props;
-    const { hovered } = this.state;
+  const fill = typeof color === 'function' ? color(data, index) : color;
+  const transform = getTranslate(data);
+  const sizeVal = typeof size === 'function' ? size(data) : size;
+  const transition = getTransition();
 
-    const fill = typeof color === 'function' ? color(data, index) : color;
-    const transform = this.getTranslate(data);
-    const sizeVal = typeof size === 'function' ? size(data) : size;
-    const transition = this.getTransition();
+  const [yStart] = yScale.domain();
+  const exitTransform = getTranslate({ ...data, y: yStart });
 
-    const [yStart] = yScale.domain();
-    const exitTransform = this.getTranslate({ ...data, y: yStart });
+  return (
+    <Fragment>
+      <motion.g
+        initial={{ ...exitTransform, opacity: 0 }}
+        animate={{ ...transform, opacity: 1 }}
+        exit={{ ...exitTransform, opacity: 0 }}
+        transition={transition}
+        ref={ref}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        onClick={onClick}
+        className={classNames(className, {
+          [css.inactive]: !active
+        })}
+      >
+        {symbol && symbol(data)}
+        {!symbol && <circle r={sizeVal} fill={fill} />}
+      </motion.g>
+      {tooltip && (
+        <CloneElement<ChartTooltipProps>
+          element={tooltip}
+          visible={hovered}
+          reference={ref}
+          value={data}
+        />
+      )}
+    </Fragment>
+  );
+};
 
-    return (
-      <Fragment>
-        <motion.g
-          initial={{ ...exitTransform, opacity: 0 }}
-          animate={{ ...transform, opacity: 1 }}
-          exit={{ ...exitTransform, opacity: 0 }}
-          transition={transition}
-          ref={this.ref}
-          onMouseEnter={bind(this.onMouseEnter, this)}
-          onMouseLeave={bind(this.onMouseLeave, this)}
-          onClick={bind(this.onClick, this)}
-          className={classNames(className, {
-            [css.inactive]: !active
-          })}
-        >
-          {symbol && symbol(data)}
-          {!symbol && <circle r={sizeVal} fill={fill} />}
-        </motion.g>
-        {tooltip && (
-          <CloneElement<ChartTooltipProps>
-            element={tooltip}
-            visible={hovered}
-            reference={this.ref}
-            value={data}
-          />
-        )}
-      </Fragment>
-    );
-  }
-}
+RadialScatterPoint.defaultProps = {
+  size: 3,
+  color: schemes.cybertron[0],
+  tooltip: <ChartTooltip />,
+  active: true,
+  onClick: () => undefined,
+  onMouseEnter: () => undefined,
+  onMouseLeave: () => undefined
+};

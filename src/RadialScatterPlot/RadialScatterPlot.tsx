@@ -1,4 +1,4 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { FC, useCallback, Fragment, ReactElement } from 'react';
 import {
   ChartShallowDataShape,
   buildShallowChartData,
@@ -18,7 +18,6 @@ import {
 import { CloneElement } from 'rdk';
 import { RadialAxisProps, RadialAxis } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
-import memoize from 'memoize-one';
 
 export interface RadialScatterPlotProps extends ChartProps {
   /**
@@ -42,47 +41,45 @@ export interface RadialScatterPlotProps extends ChartProps {
   innerRadius: number;
 }
 
-export class RadialScatterPlot extends Component<RadialScatterPlotProps> {
-  static defaultProps: Partial<RadialScatterPlotProps> = {
-    innerRadius: 80,
-    margins: 75,
-    axis: <RadialAxis />,
-    series: <RadialScatterSeries />
-  };
-
-  getScales = memoize(
+export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  innerRadius,
+  series,
+  axis,
+  data
+}) => {
+  const getScales = useCallback((
     (
-      preData: ChartShallowDataShape[],
-      outerRadius: number,
-      innerRadius: number
+      aggregatedData: ChartInternalShallowDataShape[],
+      outer: number,
+      inner: number
     ) => {
-      const data = buildShallowChartData(
-        preData
-      ) as ChartInternalShallowDataShape[];
-
-      const yDomain = getYDomain({ data, scaled: false });
-      const xDomain = getXDomain({ data });
+      const yDomain = getYDomain({ data: aggregatedData, scaled: false });
+      const xDomain = getXDomain({ data: aggregatedData });
 
       const xScale = scaleTime()
         .range([0, 2 * Math.PI])
         .domain(xDomain);
 
-      const yScale = getRadialYScale(innerRadius, outerRadius, yDomain);
+      const yScale = getRadialYScale(inner, outer, yDomain);
 
       return {
         yScale,
-        xScale,
-        data
+        xScale
       };
     }
-  );
+  ), []);
 
-  renderChart(containerProps: ChartContainerChildProps) {
+  const renderChart = useCallback((containerProps: ChartContainerChildProps) => {
     const { chartWidth, chartHeight, id } = containerProps;
-    const { innerRadius, series, axis } = this.props;
     const outerRadius = Math.min(chartWidth, chartHeight) / 2;
-    const { yScale, xScale, data } = this.getScales(
-      this.props.data,
+    const aggregatedData = buildShallowChartData(data);
+    const { yScale, xScale } = getScales(
+      aggregatedData,
       outerRadius,
       innerRadius
     );
@@ -101,30 +98,26 @@ export class RadialScatterPlot extends Component<RadialScatterPlotProps> {
         <CloneElement<RadialScatterSeriesProps>
           element={series}
           id={id}
-          data={data}
+          data={aggregatedData}
           xScale={xScale}
           yScale={yScale}
         />
       </Fragment>
     );
-  }
+  }, [data, getScales, innerRadius, series, axis]);
 
-  render() {
-    const { id, width, height, margins, className } = this.props;
-
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={false}
-        yAxisVisible={false}
-        center={true}
-        className={className}
-      >
-        {this.renderChart.bind(this)}
-      </ChartContainer>
-    );
-  }
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={false}
+      yAxisVisible={false}
+      center={true}
+      className={className}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
 }
