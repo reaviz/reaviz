@@ -30,7 +30,7 @@ export interface ChartTooltipProps extends TooltipProps {
 }
 
 export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
-  content = <TooltipTemplate />,
+  content,
   value,
   data,
   color,
@@ -53,3 +53,7 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
     }}
   />
 );
+
+ChartTooltip.defaultProps = {
+  content: <TooltipTemplate />,
+};

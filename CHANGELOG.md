@@ -9,6 +9,9 @@
 - [chore] migrate Heatmap default props
 - [chore] migrate TreeMap default props
 - [chore] migrate Sparkline to default props
+- [chore] migrate ChartTooltip to default props
+- [chore] migrate Mask to fc
+- [chore] migrate Stripes to fc
 
 # 11.1.1- 9/28/21
 - [improvement] add color inversion to Venn and Bubble charts
