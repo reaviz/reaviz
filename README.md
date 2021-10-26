@@ -159,7 +159,8 @@ If you want to run REAVIZ locally, its super easy!
 - `yarn start`
 - Browser opens to Storybook page
 
-to publish the repo to git you can run:
+## ❤️ Contributors
 
-- `yarn version --new-version x.x.x` to bump the version
-- `git push --follow-tags`
+Thanks to all our contributors!
+
+<a href="https://github.com/reaviz/reaviz/graphs/contributors"><img src="https://opencollective.com/reaviz/contributors.svg?width=890" /></a>
