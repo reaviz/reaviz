@@ -1,5 +1,6 @@
-# Master
+# 11.1.2 - 11/3/21
 - [chore] update deps
+- [fix] revert countup es modules
 - [chore] migrate Radial Scatter Plot to fc
 - [chore] migrate Scatter Plot to fc
 - [chore] migrate Pie Chart to fc
