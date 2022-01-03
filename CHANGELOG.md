@@ -1,3 +1,18 @@
+# 12.0.0 - 1/3/21
+- [BREAKING] CSS Variable updates for Tooltip. `--color-on-tooltip` is used instead of `--color-on-background`.
+- [BREAKING] CSS variable updates for Brush. Updated CSS variables for brush.
+
+```
+--color-handle-fill: #2c343a;
+--color-handle-stroke: #67c2e4;
+--color-handle-drag-fill: transparent;
+--color-handle-dots: #67c2e4;
+--color-handle-line: #67c2e4;
+```
+
+- [chore] migrate `BarChart` to fc
+- [chore] add hook eslint rules
+
 # 11.1.2 - 11/3/21
 - [chore] update deps
 - [fix] revert countup es modules
