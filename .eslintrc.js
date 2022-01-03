@@ -4,12 +4,7 @@ module.exports = {
     'browser': true,
     'es2021': true
   },
-  'extends': [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'prettier'
-    // 'plugin:@typescript-eslint/recommended'
-  ],
+  'extends': ["eslint:recommended", "plugin:react/recommended", "prettier", "plugin:storybook/recommended"],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
     'ecmaFeatures': {
@@ -18,36 +13,19 @@ module.exports = {
     'ecmaVersion': 12,
     'sourceType': 'module'
   },
-  'plugins': [
-    'react',
-    '@typescript-eslint'
-  ],
-  overrides: [
-    {
-      files: ['*.test.*'],
-      env: {
-        jest: true,
-      }
+  'plugins': ['react', '@typescript-eslint'],
+  overrides: [{
+    files: ['*.test.*'],
+    env: {
+      jest: true
     }
-  ],
+  }],
   'rules': {
     'no-unused-vars': [0],
-    'indent': [
-      'error',
-      2
-    ],
+    'indent': ['error', 2],
     'react/prop-types': [0],
-    'linebreak-style': [
-      'error',
-      'unix'
-    ],
-    'quotes': [
-      'error',
-      'single'
-    ],
-    'semi': [
-      'error',
-      'always'
-    ]
+    'linebreak-style': ['error', 'unix'],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always']
   }
 };
