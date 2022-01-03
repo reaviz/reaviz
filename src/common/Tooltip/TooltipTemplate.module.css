@@ -1,12 +1,12 @@
 .label {
   font-size: 16px;
   margin-bottom: 3px;
-  color: var(--color-on-background);
+  color: var(--color-on-tooltip);
 }
 
 .value {
   font-size: 13px;
-  color: var(--color-on-background);
+  color: var(--color-on-tooltip);
   opacity: 0.7;
 }
 

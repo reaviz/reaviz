@@ -1,16 +1,16 @@
 .handle {
-  fill: var(--color-background);
-  stroke: var(--color-handle);
+  fill: var(--color-handle-fill);
+  stroke: var(--color-handle-stroke);
 }
 
 .dragging {
-  fill: var(--color-handle-drag);
+  fill: var(--color-handle-drag-fill);
 }
 
 .dot {
-  fill: var(--color-on-background);
+  fill: var(--color-handle-dots);
 }
 
 .line {
-  stroke: var(--color-handle);
+  stroke: var(--color-handle-line);
 }
