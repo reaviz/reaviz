@@ -1,4 +1,11 @@
-import React, { Fragment, Component, ReactElement } from 'react';
+import React, {
+  Fragment,
+  Component,
+  ReactElement,
+  FC,
+  useMemo,
+  useCallback
+} from 'react';
 import classNames from 'classnames';
 import {
   isAxisVisible,
@@ -76,318 +83,356 @@ export interface BarChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-export class BarChart extends Component<BarChartProps> {
-  static defaultProps: Partial<BarChartProps> = {
-    data: [],
-    xAxis: (
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      />
-    ),
-    yAxis: <LinearYAxis type="value" />,
-    series: <BarSeries />,
-    gridlines: <GridlineSeries />,
-    brush: null
-  };
+export const BarChart: FC<Partial<BarChartProps>> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  data,
+  xAxis,
+  yAxis,
+  series,
+  brush,
+  gridlines,
+  secondaryAxis
+}) => {
+  const isVertical = useMemo(
+    () => series.props.layout === 'vertical',
+    [series]
+  );
+  const keyAxis = useMemo(
+    () => (isVertical ? xAxis : yAxis),
+    [yAxis, xAxis, isVertical]
+  );
+  const isDiverging = useMemo(
+    () => series.props.type === 'stackedDiverging',
+    [series.props.type]
+  );
 
-  getScalesAndData(chartHeight: number, chartWidth: number) {
-    const { yAxis, xAxis, series } = this.props;
+  const getMarimekkoGroupScales = useCallback(
+    (aggregatedData, axis, width: number) => {
+      const keyScale = getMarimekkoScale(width, axis.props.roundDomains);
 
-    const { type, layout } = series.props;
-    const isVertical = this.getIsVertical();
-    const isMarimekko = type === 'marimekko';
-    const isGrouped = type === 'grouped';
-    const isStacked =
-      type === 'stacked' ||
-      type === 'stackedNormalized' ||
-      type === 'stackedDiverging';
-    const isMultiSeries = isGrouped || isStacked;
+      const groupScale = getMarimekkoGroupScale({
+        width,
+        padding: series.props.padding,
+        data: aggregatedData,
+        valueScale: keyScale
+      });
 
-    let data;
-    if (isStacked) {
-      let distroType: StackTypes = 'default';
-      if (type === 'stackedNormalized') {
-        distroType = 'expand';
-      } else if (type === 'stackedDiverging') {
-        distroType = 'diverging';
-      }
+      return {
+        keyScale,
+        groupScale
+      };
+    },
+    [series.props.padding]
+  );
 
-      data = buildBarStackData(
-        this.props.data as ChartNestedDataShape[],
-        distroType,
-        layout
-      );
-    } else if (type === 'waterfall') {
-      data = buildWaterfall(
-        this.props.data as ChartShallowDataShape[],
-        layout,
-        this.props.series.props.binSize
-      );
-    } else if (isMarimekko) {
-      data = buildMarimekkoData(this.props.data as ChartNestedDataShape[]);
-    } else if (isGrouped) {
-      data = buildNestedChartData(
-        this.props.data as ChartNestedDataShape[],
-        false,
-        layout
-      );
-    } else {
-      data = buildShallowChartData(
-        this.props.data as ChartShallowDataShape[],
-        layout,
-        this.props.series.props.binSize
-      );
-    }
+  const getMultiGroupScales = useCallback(
+    (aggregatedData, height: number, width: number) => {
+      const { groupPadding, layout } = series.props;
 
-    let yScale;
-    let xScale;
-    let xScale1;
+      const groupScale = getGroupScale({
+        dimension: isVertical ? width : height,
+        direction: layout,
+        padding: groupPadding,
+        data: aggregatedData
+      });
 
-    if (isVertical) {
-      if (isGrouped) {
-        const { keyScale, groupScale } = this.getMultiGroupScales(
-          data,
-          chartHeight,
-          chartWidth
+      const keyScale = getInnerScale({
+        groupScale: groupScale,
+        padding: series.props.padding,
+        data: aggregatedData,
+        prop: isVertical ? 'x' : 'y'
+      });
+
+      return {
+        groupScale,
+        keyScale
+      };
+    },
+    [isVertical, series.props]
+  );
+
+  const getKeyScale = useCallback(
+    (aggregatedData, axis, isMultiSeries: boolean, width: number) => {
+      return getXScale({
+        width,
+        type: axis.props.type,
+        roundDomains: axis.props.roundDomains,
+        data: aggregatedData,
+        padding: series.props.padding,
+        domain: axis.props.domain,
+        isMultiSeries,
+        isDiverging
+      });
+    },
+    [isDiverging, series]
+  );
+
+  const getValueScale = useCallback(
+    (aggregatedData, axis, isMultiSeries: boolean, height: number) => {
+      return getYScale({
+        roundDomains: axis.props.roundDomains,
+        padding: series.props.padding,
+        type: axis.props.type,
+        height,
+        data: aggregatedData,
+        domain: axis.props.domain,
+        isMultiSeries,
+        isDiverging
+      });
+    },
+    [isDiverging, series]
+  );
+
+  const getScalesAndData = useCallback(
+    (chartHeight: number, chartWidth: number) => {
+      const { type, layout } = series.props;
+      const isMarimekko = type === 'marimekko';
+      const isGrouped = type === 'grouped';
+      const isStacked =
+        type === 'stacked' ||
+        type === 'stackedNormalized' ||
+        type === 'stackedDiverging';
+      const isMultiSeries = isGrouped || isStacked;
+
+      let aggregatedData;
+      if (isStacked) {
+        let distroType: StackTypes = 'default';
+        if (type === 'stackedNormalized') {
+          distroType = 'expand';
+        } else if (type === 'stackedDiverging') {
+          distroType = 'diverging';
+        }
+
+        aggregatedData = buildBarStackData(
+          data as ChartNestedDataShape[],
+          distroType,
+          layout
         );
-        xScale = groupScale;
-        xScale1 = keyScale;
+      } else if (type === 'waterfall') {
+        aggregatedData = buildWaterfall(
+          data as ChartShallowDataShape[],
+          layout,
+          series.props.binSize
+        );
       } else if (isMarimekko) {
-        const { keyScale, groupScale } = this.getMarimekkoGroupScales(
-          data,
-          xAxis,
-          chartWidth
-        );
-        xScale = groupScale;
-        xScale1 = keyScale;
-      } else {
-        xScale = this.getKeyScale(data, xAxis, isMultiSeries, chartWidth);
-      }
-
-      yScale = this.getValueScale(data, yAxis, isMultiSeries, chartHeight);
-    } else {
-      if (isGrouped) {
-        const { keyScale, groupScale } = this.getMultiGroupScales(
-          data,
-          chartHeight,
-          chartWidth
-        );
-        yScale = groupScale;
-        xScale1 = keyScale;
-        xScale = this.getKeyScale(data, xAxis, isMultiSeries, chartWidth);
-      } else if (isMarimekko) {
-        throw new Error(
-          'Marimekko is currently not supported for horizontal layouts'
+        aggregatedData = buildMarimekkoData(data as ChartNestedDataShape[]);
+      } else if (isGrouped) {
+        aggregatedData = buildNestedChartData(
+          data as ChartNestedDataShape[],
+          false,
+          layout
         );
       } else {
-        xScale = this.getKeyScale(data, xAxis, isMultiSeries, chartWidth);
-        yScale = this.getValueScale(data, yAxis, isMultiSeries, chartHeight);
+        aggregatedData = buildShallowChartData(
+          data as ChartShallowDataShape[],
+          layout,
+          series.props.binSize
+        );
       }
-    }
 
-    return { xScale, xScale1, yScale, data };
-  }
+      let yScale;
+      let xScale;
+      let xScale1;
 
-  getKeyAxis() {
-    const { yAxis, xAxis } = this.props;
-    const isVertical = this.getIsVertical();
-    return isVertical ? xAxis : yAxis;
-  }
+      if (isVertical) {
+        if (isGrouped) {
+          const { keyScale, groupScale } = getMultiGroupScales(
+            aggregatedData,
+            chartHeight,
+            chartWidth
+          );
+          xScale = groupScale;
+          xScale1 = keyScale;
+        } else if (isMarimekko) {
+          const { keyScale, groupScale } = getMarimekkoGroupScales(
+            aggregatedData,
+            xAxis,
+            chartWidth
+          );
+          xScale = groupScale;
+          xScale1 = keyScale;
+        } else {
+          xScale = getKeyScale(
+            aggregatedData,
+            xAxis,
+            isMultiSeries,
+            chartWidth
+          );
+        }
 
-  getIsDiverging() {
-    return this.props.series.props.type === 'stackedDiverging';
-  }
+        yScale = getValueScale(
+          aggregatedData,
+          yAxis,
+          isMultiSeries,
+          chartHeight
+        );
+      } else {
+        if (isGrouped) {
+          const { keyScale, groupScale } = getMultiGroupScales(
+            aggregatedData,
+            chartHeight,
+            chartWidth
+          );
+          yScale = groupScale;
+          xScale1 = keyScale;
+          xScale = getKeyScale(
+            aggregatedData,
+            xAxis,
+            isMultiSeries,
+            chartWidth
+          );
+        } else if (isMarimekko) {
+          throw new Error(
+            'Marimekko is currently not supported for horizontal layouts'
+          );
+        } else {
+          xScale = getKeyScale(
+            aggregatedData,
+            xAxis,
+            isMultiSeries,
+            chartWidth
+          );
+          yScale = getValueScale(
+            aggregatedData,
+            yAxis,
+            isMultiSeries,
+            chartHeight
+          );
+        }
+      }
 
-  getIsVertical() {
-    return this.props.series.props.layout === 'vertical';
-  }
-
-  getMarimekkoGroupScales(data, axis, width: number) {
-    const { series } = this.props;
-
-    const keyScale = getMarimekkoScale(width, axis.props.roundDomains);
-
-    const groupScale = getMarimekkoGroupScale({
-      width,
-      padding: series.props.padding,
+      return { xScale, xScale1, yScale, aggregatedData };
+    },
+    [
+      getKeyScale,
       data,
-      valueScale: keyScale
-    });
-
-    return {
-      keyScale,
-      groupScale
-    };
-  }
-
-  getMultiGroupScales(data, height: number, width: number) {
-    const { series } = this.props;
-    const isVertical = this.getIsVertical();
-    const { groupPadding, layout } = series.props;
-
-    const groupScale = getGroupScale({
-      dimension: isVertical ? width : height,
-      direction: layout,
-      padding: groupPadding,
-      data
-    });
-
-    const keyScale = getInnerScale({
-      groupScale: groupScale,
-      padding: series.props.padding,
-      data,
-      prop: isVertical ? 'x' : 'y'
-    });
-
-    return {
-      groupScale,
-      keyScale
-    };
-  }
-
-  getKeyScale(data, axis, isMultiSeries: boolean, width: number) {
-    const { series } = this.props;
-
-    return getXScale({
-      width,
-      type: axis.props.type,
-      roundDomains: axis.props.roundDomains,
-      data,
-      padding: series.props.padding,
-      domain: axis.props.domain,
-      isMultiSeries,
-      isDiverging: this.getIsDiverging()
-    });
-  }
-
-  getValueScale(data, axis, isMultiSeries: boolean, height: number) {
-    const { series } = this.props;
-
-    return getYScale({
-      roundDomains: axis.props.roundDomains,
-      padding: series.props.padding,
-      type: axis.props.type,
-      height,
-      data,
-      domain: axis.props.domain,
-      isMultiSeries,
-      isDiverging: this.getIsDiverging()
-    });
-  }
-
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { chartHeight, chartWidth, id, updateAxes } = containerProps;
-    const {
-      series,
+      getMarimekkoGroupScales,
+      getMultiGroupScales,
+      getValueScale,
+      isVertical,
+      series.props,
       xAxis,
-      yAxis,
-      brush,
-      gridlines,
-      secondaryAxis
-    } = this.props;
-    const { xScale, xScale1, yScale, data } = this.getScalesAndData(
-      chartHeight,
-      chartWidth
-    );
+      yAxis
+    ]
+  );
 
-    const isVertical = this.getIsVertical();
-    const keyAxis = this.getKeyAxis();
-    const isCategorical = keyAxis.props.type === 'category';
+  const renderChart = useCallback(
+    (containerProps: ChartContainerChildProps) => {
+      const { chartHeight, chartWidth, id, updateAxes, chartSized } =
+        containerProps;
+      const { xScale, xScale1, yScale, aggregatedData } = getScalesAndData(
+        chartHeight,
+        chartWidth
+      );
 
-    return (
-      <Fragment>
-        {containerProps.chartSized && gridlines && (
-          <CloneElement<GridlineSeriesProps>
-            element={gridlines}
-            height={chartHeight}
-            width={chartWidth}
-            yScale={yScale}
-            xScale={xScale}
-            yAxis={yAxis.props}
-            xAxis={xAxis.props}
-          />
-        )}
-        <CloneElement<LinearAxisProps>
-          element={xAxis}
-          height={chartHeight}
-          width={chartWidth}
-          scale={xScale}
-          onDimensionsChange={bind(
-            updateAxes,
-            this,
-            isVertical ? 'horizontal' : 'vertical'
-          )}
-        />
-        <CloneElement<LinearAxisProps>
-          element={yAxis}
-          height={chartHeight}
-          width={chartWidth}
-          scale={yScale}
-          onDimensionsChange={bind(
-            updateAxes,
-            this,
-            isVertical ? 'vertical' : 'horizontal'
-          )}
-        />
-        {secondaryAxis &&
-          secondaryAxis.map((axis, i) => (
-            <CloneElement<LinearAxisProps>
-              key={i}
-              element={axis}
+      const isCategorical = keyAxis.props.type === 'category';
+
+      return (
+        <Fragment>
+          {chartSized && gridlines && (
+            <CloneElement<GridlineSeriesProps>
+              element={gridlines}
               height={chartHeight}
               width={chartWidth}
-              onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+              yScale={yScale}
+              xScale={xScale}
+              yAxis={yAxis.props}
+              xAxis={xAxis.props}
             />
-          ))}
-        {containerProps.chartSized && (
-          <CloneElement<ChartBrushProps>
-            element={brush}
+          )}
+          <CloneElement<LinearAxisProps>
+            element={xAxis}
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
-          >
-            <CloneElement<BarSeriesProps>
-              element={series}
-              id={`bar-series-${id}`}
-              data={data}
+            onDimensionsChange={(event) =>
+              updateAxes(isVertical ? 'horizontal' : 'vertical', event)
+            }
+          />
+          <CloneElement<LinearAxisProps>
+            element={yAxis}
+            height={chartHeight}
+            width={chartWidth}
+            scale={yScale}
+            onDimensionsChange={(event) =>
+              updateAxes(isVertical ? 'vertical' : 'horizontal', event)
+            }
+          />
+          {secondaryAxis &&
+            secondaryAxis.map((axis, i) => (
+              <CloneElement<LinearAxisProps>
+                key={i}
+                element={axis}
+                height={chartHeight}
+                width={chartWidth}
+                onDimensionsChange={(event) => updateAxes('horizontal', event)}
+              />
+            ))}
+          {chartSized && (
+            <CloneElement<ChartBrushProps>
+              element={brush}
               height={chartHeight}
               width={chartWidth}
-              isCategorical={isCategorical}
-              xScale={xScale}
-              xScale1={xScale1}
-              yScale={yScale}
-            />
-          </CloneElement>
-        )}
-      </Fragment>
-    );
-  }
-
-  render() {
-    const {
-      id,
-      width,
-      height,
-      margins,
-      className,
+              scale={xScale}
+            >
+              <CloneElement<BarSeriesProps>
+                element={series}
+                id={`bar-series-${id}`}
+                data={aggregatedData}
+                height={chartHeight}
+                width={chartWidth}
+                isCategorical={isCategorical}
+                xScale={xScale}
+                xScale1={xScale1}
+                yScale={yScale}
+              />
+            </CloneElement>
+          )}
+        </Fragment>
+      );
+    },
+    [
+      brush,
+      getScalesAndData,
+      gridlines,
+      isVertical,
+      keyAxis,
+      secondaryAxis,
       series,
       xAxis,
       yAxis
-    } = this.props;
+    ]
+  );
 
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={isAxisVisible(xAxis.props)}
-        yAxisVisible={isAxisVisible(yAxis.props)}
-        className={classNames(css.barChart, className, css[series.props.type])}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={isAxisVisible(xAxis.props)}
+      yAxisVisible={isAxisVisible(yAxis.props)}
+      className={classNames(css.barChart, className, css[series.props.type])}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
+
+BarChart.defaultProps = {
+  data: [],
+  xAxis: (
+    <LinearXAxis
+      type="category"
+      tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+    />
+  ),
+  yAxis: <LinearYAxis type="value" />,
+  series: <BarSeries />,
+  gridlines: <GridlineSeries />,
+  brush: null
+};

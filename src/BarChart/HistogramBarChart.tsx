@@ -7,7 +7,10 @@ export interface HistogramBarChartProps extends BarChartProps {
   data: ChartShallowDataShape[];
 }
 
-export const HistogramBarChart: FC<Partial<HistogramBarChartProps>> = ({
-  series = <HistogramBarSeries />,
-  ...rest
-}) => <BarChart {...rest} series={series} />;
+export const HistogramBarChart: FC<Partial<HistogramBarChartProps>> = (
+  props
+) => <BarChart {...props} />;
+
+HistogramBarChart.defaultProps = {
+  series: <HistogramBarSeries />
+};

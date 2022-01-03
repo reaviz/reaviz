@@ -14,9 +14,11 @@ interface StackedNormalizedBarChartProps extends BarChartProps {
 
 export const StackedNormalizedBarChart: FC<
   Partial<StackedNormalizedBarChartProps>
-> = ({
-  series = <StackedNormalizedBarSeries />,
-  yAxis = (
+> = (props) => <BarChart {...props} />;
+
+StackedNormalizedBarChart.defaultProps = {
+  series: <StackedNormalizedBarSeries />,
+  yAxis: (
     <LinearYAxis
       type="value"
       tickSeries={
@@ -30,6 +32,5 @@ export const StackedNormalizedBarChart: FC<
         />
       }
     />
-  ),
-  ...rest
-}) => <BarChart {...rest} series={series} yAxis={yAxis} />;
+  )
+};

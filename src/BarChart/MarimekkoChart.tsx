@@ -14,15 +14,19 @@ interface MarimekkoChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
 }
 
-export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = ({
-  series = <MarimekkoBarSeries />,
-  xAxis = (
+export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = (props) => (
+  <BarChart {...props} />
+);
+
+MarimekkoChart.defaultProps = {
+  series: <MarimekkoBarSeries />,
+  xAxis: (
     <LinearXAxis
       type="category"
       tickSeries={<LinearXAxisTickSeries tickSize={15} />}
     />
   ),
-  yAxis = (
+  yAxis: (
     <LinearYAxis
       type="value"
       tickSeries={
@@ -36,6 +40,5 @@ export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = ({
         />
       }
     />
-  ),
-  ...rest
-}) => <BarChart {...rest} series={series} xAxis={xAxis} yAxis={yAxis} />;
+  )
+};

@@ -7,7 +7,10 @@ interface StackedBarChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
 }
 
-export const StackedBarChart: FC<Partial<StackedBarChartProps>> = ({
-  series = <StackedBarSeries />,
-  ...rest
-}) => <BarChart {...rest} series={series} />;
+export const StackedBarChart: FC<Partial<StackedBarChartProps>> = (props) => (
+  <BarChart {...props} />
+);
+
+StackedBarChart.defaultProps = {
+  series: <StackedBarSeries />
+};

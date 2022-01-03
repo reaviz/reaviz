@@ -51,9 +51,8 @@ function transformDataToStack(data: ChartNestedDataShape[]) {
         maxBigInteger
       );
 
-      result[idx].formattedValues[
-        value.key as string
-      ] = normalizeValueForFormatting(value.data);
+      result[idx].formattedValues[value.key as string] =
+        normalizeValueForFormatting(value.data);
     }
   }
 
@@ -116,7 +115,7 @@ function transformStackToData(
  * Builds a stack dataset from the standard data format.
  */
 export function buildBarStackData(
-  data: ChartNestedDataShape[],
+  data: ChartNestedDataShape[] = [],
   offset: StackTypes = 'default',
   direction = 'vertical'
 ) {

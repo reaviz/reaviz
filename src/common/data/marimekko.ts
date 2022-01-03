@@ -5,7 +5,7 @@ import { buildBarStackData } from './barStack';
  * Builds a stack dataset from the standard data format.
  */
 export function buildMarimekkoData(
-  data: ChartNestedDataShape[]
+  data: ChartNestedDataShape[] = []
 ): ChartInternalNestedDataShape[] {
   const result = buildBarStackData(data, 'expand');
   const sums = {};
