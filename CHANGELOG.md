@@ -1,3 +1,6 @@
+# 12.1.0 - 1/4/21
+- [chore] migrate bar chart components to fc
+
 # 12.0.0 - 1/3/21
 - [BREAKING] CSS Variable updates for Tooltip. `--color-on-tooltip` is used instead of `--color-on-background`.
 - [BREAKING] CSS variable updates for Brush. Updated CSS variables for brush.
