@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FC, useMemo } from 'react';
 import { ChartInternalShallowDataShape, Direction } from '../../common/data';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
@@ -76,21 +76,37 @@ export interface RangeLinesProps {
   type: BarType;
 }
 
-export class RangeLines extends Component<RangeLinesProps> {
-  static defaultProps: Partial<RangeLinesProps> = {
-    position: 'top',
-    strokeWidth: 1,
-    layout: 'vertical'
-  };
+export const RangeLines: FC<Partial<RangeLinesProps>> = ({
+  layout,
+  color,
+  x,
+  y,
+  scale,
+  type,
+  height,
+  position,
+  strokeWidth,
+  width,
+  animated,
+  index,
+  barCount,
+  data
+}) => {
+  const isVertical = useMemo(() => layout === 'vertical', [layout]);
+  const rangeLineHeight = useMemo(
+    () => Math.min(strokeWidth, isVertical ? height : width),
+    [height, isVertical, strokeWidth, width]
+  );
 
-  getIsVertical() {
-    return this.props.layout === 'vertical';
-  }
+  const [newWidth, newHeight] = useMemo(
+    () => [
+      isVertical ? width : rangeLineHeight,
+      isVertical ? rangeLineHeight : height
+    ],
+    [height, isVertical, rangeLineHeight, width]
+  );
 
-  getEnter(rangeLineHeight: number) {
-    const { x, y, height, position, width, data } = this.props;
-
-    const isVertical = this.getIsVertical();
+  const enterProps = useMemo(() => {
     let newY = y;
     let newX = x;
 
@@ -124,12 +140,19 @@ export class RangeLines extends Component<RangeLinesProps> {
       y: newY,
       opacity: 1
     };
-  }
+  }, [
+    data.x0,
+    data.y,
+    height,
+    isVertical,
+    position,
+    rangeLineHeight,
+    width,
+    x,
+    y
+  ]);
 
-  getExit(rangeLineHeight: number) {
-    const { x, scale, height, width, y, position, type } = this.props;
-
-    const isVertical = this.getIsVertical();
+  const exitProps = useMemo(() => {
     let newY = y;
     let newX = x;
 
@@ -162,28 +185,9 @@ export class RangeLines extends Component<RangeLinesProps> {
       x: newX,
       opacity: 0
     };
-  }
+  }, [height, isVertical, position, rangeLineHeight, scale, type, width, x, y]);
 
-  getLineHeight() {
-    const { height, width, strokeWidth } = this.props;
-    const isVertical = this.getIsVertical();
-
-    return Math.min(strokeWidth, isVertical ? height : width);
-  }
-
-  getHeightWidth(rangeLineHeight: number) {
-    const { height, width } = this.props;
-    const isVertical = this.getIsVertical();
-
-    return {
-      width: isVertical ? width : rangeLineHeight,
-      height: isVertical ? rangeLineHeight : height
-    };
-  }
-
-  getDelay() {
-    const { animated, index, barCount, layout } = this.props;
-
+  const delay = useMemo(() => {
     let delay = 0;
     if (animated) {
       if (layout === 'vertical') {
@@ -194,49 +198,54 @@ export class RangeLines extends Component<RangeLinesProps> {
     }
 
     return delay;
-  }
+  }, [animated, barCount, index, layout]);
 
-  render() {
-    const { color } = this.props;
-    const rangeLineHeight = this.getLineHeight();
-    const enterProps = this.getEnter(rangeLineHeight);
-    const exitProps = this.getExit(rangeLineHeight);
-    const { height, width } = this.getHeightWidth(rangeLineHeight);
-    const delay = this.getDelay();
-
-    // UGH: https://github.com/framer/motion/issues/384
-    const initial = {
+  // UGH: https://github.com/framer/motion/issues/384
+  const initial = useMemo(() => {
+    const r = {
       ...exitProps,
       attrX: exitProps.x,
       attrY: exitProps.y
     };
 
-    delete initial.x;
-    delete initial.y;
+    delete r.x;
+    delete r.y;
 
-    const animate = {
+    return r;
+  }, [exitProps]);
+
+  const animate = useMemo(() => {
+    const r = {
       ...enterProps,
       attrX: enterProps.x,
       attrY: enterProps.y
     };
 
-    delete animate.x;
-    delete animate.y;
+    delete r.x;
+    delete r.y;
 
-    return (
-      <motion.rect
-        pointerEvents="none"
-        fill={color}
-        width={width}
-        height={height}
-        initial={initial}
-        animate={animate}
-        exit={initial}
-        transition={{
-          ...DEFAULT_TRANSITION,
-          delay
-        }}
-      />
-    );
-  }
-}
+    return r;
+  }, [enterProps]);
+
+  return (
+    <motion.rect
+      pointerEvents="none"
+      fill={color}
+      width={newWidth}
+      height={newHeight}
+      initial={initial}
+      animate={animate}
+      exit={initial}
+      transition={{
+        ...DEFAULT_TRANSITION,
+        delay
+      }}
+    />
+  );
+};
+
+RangeLines.defaultProps = {
+  position: 'top',
+  strokeWidth: 1,
+  layout: 'vertical'
+};

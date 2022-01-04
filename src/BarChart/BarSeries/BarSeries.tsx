@@ -1,4 +1,12 @@
-import React, { Fragment, Component, ReactElement, createRef } from 'react';
+import React, {
+  Fragment,
+  ReactElement,
+  useMemo,
+  useRef,
+  FC,
+  useState,
+  useCallback
+} from 'react';
 import { Bar, BarProps, BarType } from './Bar';
 import {
   ChartInternalDataShape,
@@ -108,35 +116,28 @@ interface BarSeriesState {
   activeValues?: any;
 }
 
-export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
-  static defaultProps: Partial<BarSeriesProps> = {
-    type: 'standard',
-    padding: 0.1,
-    groupPadding: 16,
-    animated: true,
-    tooltip: (
-      <TooltipArea
-        tooltip={
-          <ChartTooltip
-            followCursor={true}
-            modifiers={{
-              offset: '5px, 5px'
-            }}
-          />
-        }
-      />
-    ),
-    colorScheme: 'cybertron',
-    bar: <Bar />,
-    layout: 'vertical'
-  };
+export const BarSeries: FC<Partial<BarSeriesProps>> = ({
+  data,
+  tooltip,
+  xScale,
+  yScale,
+  height,
+  width,
+  colorScheme,
+  xScale1,
+  bar,
+  padding,
+  animated,
+  isCategorical,
+  layout,
+  type,
+  id
+}) => {
+  const ref = useRef<TooltipArea | null>(null);
+  const [activeValues, setActiveValues] = useState<any | null>(null);
+  const isVertical = useMemo(() => layout === 'vertical', [layout]);
 
-  state: BarSeriesState = {};
-  ref = createRef<TooltipArea>();
-
-  getIsMulti() {
-    const { type } = this.props;
-
+  const isMultiSeries = useMemo(() => {
     return (
       type === 'grouped' ||
       type === 'stacked' ||
@@ -144,196 +145,207 @@ export class BarSeries extends Component<BarSeriesProps, BarSeriesState> {
       type === 'stackedNormalized' ||
       type === 'stackedDiverging'
     );
-  }
+  }, [type]);
 
-  /**
-   * Get the translation for the bar group.
-   */
-  getTransform(data: ChartInternalNestedDataShape) {
-    const { xScale, yScale, type, layout } = this.props;
-
-    let xPos = 0;
-    let yPos = 0;
-    if (type !== 'marimekko') {
-      if (layout === 'vertical') {
-        const val = xScale(data.key);
-        xPos = val;
-      } else {
-        const val = yScale(data.key);
-        yPos = val;
+  const getTransform = useCallback(
+    (data: ChartInternalNestedDataShape) => {
+      let xPos = 0;
+      let yPos = 0;
+      if (type !== 'marimekko') {
+        if (layout === 'vertical') {
+          const val = xScale(data.key);
+          xPos = val;
+        } else {
+          const val = yScale(data.key);
+          yPos = val;
+        }
       }
-    }
 
-    return `translate(${xPos}, ${yPos})`;
-  }
+      return `translate(${xPos}, ${yPos})`;
+    },
+    [layout, type, xScale, yScale]
+  );
 
-  getColor(point, index) {
-    const { colorScheme, data, layout } = this.props;
-    const isMultiSeries = this.getIsMulti();
-
-    let key = 'key';
-    if (isMultiSeries) {
-      if (layout === 'vertical') {
-        key = 'x';
-      } else {
-        key = 'y';
+  const getBarColor = useCallback(
+    (point, index: number) => {
+      let key = 'key';
+      if (isMultiSeries) {
+        if (layout === 'vertical') {
+          key = 'x';
+        } else {
+          key = 'y';
+        }
       }
-    }
 
-    // histograms...
-    if (point[key] === undefined) {
-      key = 'x0';
-    }
+      // histograms...
+      if (point[key] === undefined) {
+        key = 'x0';
+      }
 
-    return getColor({
-      colorScheme,
-      point,
-      index,
-      data,
-      isMultiSeries,
-      attribute: key
-    });
-  }
+      return getColor({
+        colorScheme,
+        point,
+        index,
+        data,
+        isMultiSeries,
+        attribute: key
+      });
+    },
+    [colorScheme, data, isMultiSeries, layout]
+  );
 
-  onMouseMove(event) {
+  const onMouseMove = useCallback((event) => {
     // Manuallly call mouse move so we don't have to kill bar pointer events
-    this.ref.current?.onMouseMove(event);
-  }
+    ref.current?.onMouseMove(event);
+  }, []);
 
-  renderBar(
-    data: ChartInternalShallowDataShape,
-    barIndex: number,
-    barCount: number,
-    groupIndex?: number
-  ) {
-    const {
-      xScale1,
-      bar,
-      padding,
-      animated,
-      isCategorical,
-      layout,
-      type,
-      id
-    } = this.props;
-    const { activeValues } = this.state;
-    const active = activeValues && activeValues.x === data.key;
+  const onValueEnter = useCallback((event: TooltipAreaEvent) => {
+    setActiveValues(event.value);
+  }, []);
 
-    const isVertical = layout === 'vertical';
-    let yScale = this.props.yScale;
-    let xScale = this.props.xScale;
+  const onValueLeave = useCallback(() => {
+    setActiveValues(null);
+  }, []);
 
-    if (xScale1) {
-      if (isVertical) {
-        xScale = xScale1;
-      } else {
-        yScale = xScale1;
+  const renderBar = useCallback(
+    (
+      data: ChartInternalShallowDataShape,
+      barIndex: number,
+      barCount: number,
+      groupIndex?: number
+    ) => {
+      const active = activeValues && activeValues.x === data.key;
+
+      let newYScale = yScale;
+      let newXScale = xScale;
+
+      if (xScale1) {
+        if (isVertical) {
+          newXScale = xScale1;
+        } else {
+          newYScale = xScale1;
+        }
       }
-    }
 
-    // Histograms dont have keys
-    let key = barIndex.toString();
-    if (data.key) {
-      key = `${data.key!.toString()}-${groupIndex}`;
-    }
+      // Histograms dont have keys
+      let key = barIndex.toString();
+      if (data.key) {
+        key = `${data.key!.toString()}-${groupIndex}`;
+      }
 
-    let barElements = Array.isArray(bar) ? bar[barIndex] : bar;
-    if (!bar) {
-      barElements = <Bar />;
-    }
+      let barElements = Array.isArray(bar) ? bar[barIndex] : bar;
+      if (!bar) {
+        barElements = <Bar />;
+      }
 
-    return (
-      <Fragment key={key}>
-        <CloneElement<BarProps>
-          element={barElements}
-          id={`${id}-bar-${groupIndex}-${barIndex}`}
-          animated={animated}
-          active={active}
-          xScale={xScale}
-          xScale1={xScale1}
-          yScale={yScale}
-          padding={padding}
-          barCount={barCount}
-          groupIndex={groupIndex}
-          barIndex={barIndex}
-          data={data}
-          isCategorical={isCategorical}
-          color={this.getColor.bind(this)}
-          layout={layout}
-          type={type}
-          onMouseMove={this.onMouseMove.bind(this)}
-        />
-      </Fragment>
-    );
-  }
+      return (
+        <Fragment key={key}>
+          <CloneElement<BarProps>
+            element={barElements}
+            id={`${id}-bar-${groupIndex}-${barIndex}`}
+            animated={animated}
+            active={active}
+            xScale={newXScale}
+            xScale1={xScale1}
+            yScale={newYScale}
+            padding={padding}
+            barCount={barCount}
+            groupIndex={groupIndex}
+            barIndex={barIndex}
+            data={data}
+            isCategorical={isCategorical}
+            color={getBarColor}
+            layout={layout}
+            type={type}
+            onMouseMove={onMouseMove}
+          />
+        </Fragment>
+      );
+    },
+    [
+      activeValues,
+      animated,
+      bar,
+      getBarColor,
+      id,
+      isCategorical,
+      isVertical,
+      layout,
+      onMouseMove,
+      padding,
+      type,
+      xScale,
+      xScale1,
+      yScale
+    ]
+  );
 
-  /**
-   * Get the bar group.
-   */
-  renderBarGroup(
-    data: ChartInternalShallowDataShape[],
-    barCount: number,
-    groupIndex?: number
-  ) {
-    return (
-      <Fragment>
-        {data.map((barData, barIndex) =>
-          this.renderBar(barData, barIndex, barCount, groupIndex)
-        )}
-      </Fragment>
-    );
-  }
-
-  onValueEnter(event: TooltipAreaEvent) {
-    this.setState({
-      activeValues: event.value
-    });
-  }
-
-  onValueLeave() {
-    this.setState({
-      activeValues: undefined
-    });
-  }
-
-  render() {
-    const { data, tooltip, xScale, yScale, height, width, layout } = this.props;
-    const isMulti = this.getIsMulti();
-
-    return (
-      <CloneElement<TooltipAreaProps>
-        element={tooltip}
-        childRef={this.ref}
-        xScale={xScale}
-        yScale={yScale}
-        data={data}
-        height={height}
-        width={width}
-        inverse={false}
-        isHorizontal={layout === 'horizontal'}
-        color={this.getColor.bind(this)}
-        onValueEnter={this.onValueEnter.bind(this)}
-        onValueLeave={this.onValueLeave.bind(this)}
-      >
-        {isMulti &&
-          (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
-            <g
-              transform={this.getTransform(groupData)}
-              key={`bar-group-${index}`}
-            >
-              {this.renderBarGroup(
-                groupData.data as ChartInternalShallowDataShape[],
-                data.length,
-                index
-              )}
-            </g>
-          ))}
-        {!isMulti &&
-          this.renderBarGroup(
-            data as ChartInternalShallowDataShape[],
-            data.length
+  const renderBarGroup = useCallback(
+    (
+      data: ChartInternalShallowDataShape[],
+      barCount: number,
+      groupIndex?: number
+    ) => {
+      return (
+        <Fragment>
+          {data.map((barData, barIndex) =>
+            renderBar(barData, barIndex, barCount, groupIndex)
           )}
-      </CloneElement>
-    );
-  }
-}
+        </Fragment>
+      );
+    },
+    [renderBar]
+  );
+
+  return (
+    <CloneElement<TooltipAreaProps>
+      element={tooltip}
+      childRef={ref}
+      xScale={xScale}
+      yScale={yScale}
+      data={data}
+      height={height}
+      width={width}
+      inverse={false}
+      isHorizontal={layout === 'horizontal'}
+      color={getBarColor}
+      onValueEnter={onValueEnter}
+      onValueLeave={onValueLeave}
+    >
+      {isMultiSeries &&
+        (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
+          <g transform={getTransform(groupData)} key={`bar-group-${index}`}>
+            {renderBarGroup(
+              groupData.data as ChartInternalShallowDataShape[],
+              data.length,
+              index
+            )}
+          </g>
+        ))}
+      {!isMultiSeries &&
+        renderBarGroup(data as ChartInternalShallowDataShape[], data.length)}
+    </CloneElement>
+  );
+};
+
+BarSeries.defaultProps = {
+  type: 'standard',
+  padding: 0.1,
+  groupPadding: 16,
+  animated: true,
+  tooltip: (
+    <TooltipArea
+      tooltip={
+        <ChartTooltip
+          followCursor={true}
+          modifiers={{
+            offset: '5px, 5px'
+          }}
+        />
+      }
+    />
+  ),
+  colorScheme: 'cybertron',
+  bar: <Bar />,
+  layout: 'vertical'
+};

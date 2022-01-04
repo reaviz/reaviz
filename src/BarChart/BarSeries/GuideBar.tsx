@@ -9,7 +9,6 @@ export interface GuideBarProps extends SVGRect {
 
 export const GuideBar: FC<Partial<GuideBarProps>> = ({
   active,
-  fill = '#eee',
   opacity = 0.15,
   ...rest
 }) => {
@@ -18,7 +17,6 @@ export const GuideBar: FC<Partial<GuideBarProps>> = ({
   return (
     <motion.rect
       {...other}
-      fill={fill}
       pointerEvents="none"
       initial="hidden"
       animate={active ? 'visible' : 'hidden'}
@@ -28,4 +26,9 @@ export const GuideBar: FC<Partial<GuideBarProps>> = ({
       }}
     />
   );
+};
+
+GuideBar.defaultProps = {
+  fill: '#eee',
+  opacity: 0.15
 };

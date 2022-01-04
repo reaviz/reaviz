@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { FC, PureComponent, useMemo } from 'react';
 import { ChartInternalShallowDataShape, Direction } from '../../common/data';
 import { BarType } from './Bar';
 import { motion } from 'framer-motion';
@@ -96,24 +96,30 @@ export interface BarLabelProps {
   className?: any;
 }
 
-export class BarLabel extends PureComponent<BarLabelProps> {
-  static defaultProps: Partial<BarLabelProps> = {
-    position: 'top',
-    layout: 'vertical',
-    fontSize: 13,
-    padding: 5,
-    fontFamily: 'sans-serif',
-    fill: '#000'
-  };
+export const BarLabel: FC<BarLabelProps> = ({
+  fontSize,
+  fontFamily,
+  fill,
+  layout,
+  className,
+  text,
+  x,
+  y,
+  height,
+  position,
+  width,
+  data,
+  padding,
+  scale,
+  type,
+  animated,
+  index,
+  barCount
+}) => {
+  const isVertical = useMemo(() => layout === 'vertical', [layout]);
+  const textAnchor = isVertical ? 'middle' : 'start';
 
-  getIsVertical() {
-    return this.props.layout === 'vertical';
-  }
-
-  getEnter() {
-    const { x, y, height, position, width, data, padding } = this.props;
-
-    const isVertical = this.getIsVertical();
+  const enterProps = useMemo(() => {
     let newY = y;
     let newX = x;
 
@@ -153,12 +159,9 @@ export class BarLabel extends PureComponent<BarLabelProps> {
       translateY: newY,
       opacity: 1
     };
-  }
+  }, [data.x0, data.y, height, isVertical, padding, position, width, x, y]);
 
-  getExit() {
-    const { x, scale, height, width, y, position, type, padding } = this.props;
-
-    const isVertical = this.getIsVertical();
+  const exitProps = useMemo(() => {
     let newY = y;
     let newX = x;
 
@@ -195,11 +198,9 @@ export class BarLabel extends PureComponent<BarLabelProps> {
       translateX: newX,
       opacity: 0
     };
-  }
+  }, [height, isVertical, padding, position, scale, type, width, x, y]);
 
-  getDelay() {
-    const { animated, index, barCount, layout } = this.props;
-
+  const delay = useMemo(() => {
     let delay = 0;
     if (animated) {
       if (layout === 'vertical') {
@@ -210,31 +211,32 @@ export class BarLabel extends PureComponent<BarLabelProps> {
     }
 
     return delay;
-  }
+  }, [animated, barCount, index, layout]);
 
-  render() {
-    const { fontSize, fontFamily, fill, className, text } = this.props;
-    const enterProps = this.getEnter();
-    const exitProps = this.getExit();
-    const delay = this.getDelay();
-    const textAnchor = this.getIsVertical() ? 'middle' : 'start';
+  return (
+    <motion.g
+      initial={exitProps}
+      animate={enterProps}
+      exit={exitProps}
+      transition={{
+        ...DEFAULT_TRANSITION,
+        delay
+      }}
+      fontSize={fontSize}
+      fontFamily={fontFamily}
+    >
+      <text fill={fill} className={className} textAnchor={textAnchor}>
+        {text}
+      </text>
+    </motion.g>
+  );
+};
 
-    return (
-      <motion.g
-        initial={exitProps}
-        animate={enterProps}
-        exit={exitProps}
-        transition={{
-          ...DEFAULT_TRANSITION,
-          delay
-        }}
-        fontSize={fontSize}
-        fontFamily={fontFamily}
-      >
-        <text fill={fill} className={className} textAnchor={textAnchor}>
-          {text}
-        </text>
-      </motion.g>
-    );
-  }
-}
+BarLabel.defaultProps = {
+  position: 'top',
+  layout: 'vertical',
+  fontSize: 13,
+  padding: 5,
+  fontFamily: 'sans-serif',
+  fill: '#000'
+};
