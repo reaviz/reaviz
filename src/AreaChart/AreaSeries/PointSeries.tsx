@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { FC, ReactElement, useCallback } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from 'rdk';
 import {
@@ -24,68 +24,69 @@ export interface PointSeriesProps {
   index: number;
 }
 
-export class PointSeries extends Component<PointSeriesProps> {
-  static defaultProps: Partial<PointSeriesProps> = {
-    show: 'hover',
-    point: <ScatterPoint />
-  };
+export const PointSeries: FC<Partial<PointSeriesProps>> = ({
+  data,
+  xScale,
+  yScale,
+  animated,
+  point,
+  color,
+  height,
+  width,
+  id,
+  activeValues,
+  show
+}) => {
+  const getIsVisible = useCallback(
+    (point: ChartInternalShallowDataShape, index: number) => {
+      const isActive =
+        activeValues && point && isEqual(activeValues.x, point.x);
 
-  isVisible(point: ChartInternalShallowDataShape, index: number) {
-    const { show, activeValues, data } = this.props;
-    const isActive = activeValues && point && isEqual(activeValues.x, point.x);
-
-    if (show === 'hover') {
-      return isActive;
-    } else if (show === 'first') {
-      if (activeValues) {
+      if (show === 'hover') {
         return isActive;
-      } else {
-        return index === 0;
-      }
-    } else if (show === 'last') {
-      if (activeValues) {
-        return isActive;
-      } else {
-        return index === data.length - 1;
-      }
-    }
-
-    return show;
-  }
-
-  render() {
-    const {
-      data,
-      xScale,
-      yScale,
-      animated,
-      point,
-      color,
-      height,
-      width,
-      id
-    } = this.props;
-
-    return (
-      <ScatterSeries
-        height={height}
-        width={width}
-        id={id}
-        animated={animated}
-        data={data}
-        xScale={xScale}
-        yScale={yScale}
-        point={
-          <CloneElement<ScatterPointProps>
-            element={point}
-            color={color}
-            className={css.point}
-            size={4}
-            tooltip={null}
-            visible={this.isVisible.bind(this)}
-          />
+      } else if (show === 'first') {
+        if (activeValues) {
+          return isActive;
+        } else {
+          return index === 0;
         }
-      />
-    );
-  }
-}
+      } else if (show === 'last') {
+        if (activeValues) {
+          return isActive;
+        } else {
+          return index === data.length - 1;
+        }
+      }
+
+      return show;
+    },
+    [activeValues, data.length, show]
+  );
+
+  return (
+    <ScatterSeries
+      height={height}
+      width={width}
+      id={id}
+      animated={animated}
+      data={data}
+      xScale={xScale}
+      yScale={yScale}
+      point={
+        <CloneElement<ScatterPointProps>
+          element={point}
+          color={color}
+          className={css.point}
+          size={4}
+          tooltip={null}
+          visible={getIsVisible}
+        />
+      }
+    />
+  );
+};
+
+PointSeries.defaultProps = {
+  show: 'hover',
+  point: <ScatterPoint />
+};

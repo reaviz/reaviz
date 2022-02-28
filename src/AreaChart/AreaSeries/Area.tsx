@@ -1,4 +1,4 @@
-import React, { Fragment, Component, ReactElement } from 'react';
+import React, { Fragment, useMemo, ReactElement, FC, useCallback } from 'react';
 import { area } from 'd3-shape';
 import { Gradient, GradientProps } from '../../common/Gradient';
 import { Mask, MaskProps } from '../../common/Mask';
@@ -69,27 +69,22 @@ export interface AreaProps extends PropFunctionTypes {
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 }
 
-export class Area extends Component<AreaProps> {
-  static defaultProps: Partial<AreaProps> = {
-    gradient: <Gradient />,
-    interpolation: 'linear'
-  };
+export const Area: FC<Partial<AreaProps>> = ({
+  id,
+  gradient,
+  mask,
+  data,
+  color,
+  index,
+  xScale,
+  yScale,
+  animated,
+  interpolation,
+  ...rest
+}) => {
+  const stroke = color(data, index);
 
-  getAreaPath(data: ChartInternalShallowDataShape[]) {
-    const { interpolation } = this.props;
-
-    const fn = area()
-      .x((d: any) => d.x)
-      .y0((d: any) => d.y0)
-      .y1((d: any) => d.y1)
-      .curve(interpolate(interpolation));
-
-    return fn(data as any);
-  }
-
-  getCoords() {
-    const { data, xScale, yScale } = this.props;
-
+  const coords = useMemo(() => {
     return data.map((item: any) => ({
       x: xScale(item.x),
       x1: xScale(item.x) - xScale(item.x1),
@@ -97,18 +92,30 @@ export class Area extends Component<AreaProps> {
       y0: yScale(item.y0),
       y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
-  }
+  }, [data, xScale, yScale]);
 
-  getAreaEnter(coords: ChartInternalShallowDataShape[]) {
-    const areaPath = this.getAreaPath(coords);
+  const getAreaPath = useCallback(
+    (d: ChartInternalShallowDataShape[]) => {
+      const fn = area()
+        .x((d: any) => d.x)
+        .y0((d: any) => d.y0)
+        .y1((d: any) => d.y1)
+        .curve(interpolate(interpolation));
+
+      return fn(d as any);
+    },
+    [interpolation]
+  );
+
+  const enter = useMemo(() => {
+    const areaPath = getAreaPath(coords);
 
     return {
       d: areaPath === null ? undefined : areaPath
     };
-  }
+  }, [coords, getAreaPath]);
 
-  getAreaExit() {
-    const { yScale, data, xScale } = this.props;
+  const exit = useMemo(() => {
     const maxY = Math.max(...yScale.range());
     const coords = data.map((item: any) => ({
       x: xScale(item.x),
@@ -118,16 +125,14 @@ export class Area extends Component<AreaProps> {
       y0: maxY
     })) as ChartInternalShallowDataShape[];
 
-    const areaPath = this.getAreaPath(coords);
+    const areaPath = getAreaPath(coords);
 
     return {
       d: areaPath === null ? undefined : areaPath
     };
-  }
+  }, [data, getAreaPath, xScale, yScale]);
 
-  getFill() {
-    const { mask, id, gradient } = this.props;
-
+  const fill = useMemo(() => {
     if (mask) {
       return `url(#mask-pattern-${id})`;
     } else {
@@ -137,11 +142,9 @@ export class Area extends Component<AreaProps> {
 
       return '';
     }
-  }
+  }, [gradient, id, mask]);
 
-  getTransition() {
-    const { animated, index } = this.props;
-
+  const transition = useMemo(() => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
@@ -153,16 +156,11 @@ export class Area extends Component<AreaProps> {
         delay: 0
       };
     }
-  }
+  }, [animated, index]);
 
-  renderArea(coords: ChartInternalShallowDataShape[]) {
-    const { mask, id, data } = this.props;
-    const fill = this.getFill();
+  const renderArea = useCallback(() => {
     const maskPath = mask ? `url(#mask-${id})` : '';
-    const enter = this.getAreaEnter(coords);
-    const exit = this.getAreaExit();
-    const extras = constructFunctionProps(this.props, data);
-    const transition = this.getTransition();
+    const extras = constructFunctionProps(rest, data);
 
     return (
       <MotionPath
@@ -177,34 +175,33 @@ export class Area extends Component<AreaProps> {
         }}
       />
     );
-  }
+  }, [data, enter, exit, fill, id, mask, rest, transition]);
 
-  render() {
-    const { id, gradient, mask, data, color, index } = this.props;
-    const coords = this.getCoords();
-    const stroke = color(data, index);
-
-    return (
-      <Fragment>
-        {this.renderArea(coords)}
-        {mask && (
-          <Fragment>
-            <Mask id={`mask-${id}`} fill={`url(#gradient-${id})`} />
-            <CloneElement<MaskProps>
-              element={mask}
-              id={`mask-pattern-${id}`}
-              fill={stroke}
-            />
-          </Fragment>
-        )}
-        {gradient && (
-          <CloneElement<GradientProps>
-            element={gradient}
-            id={`gradient-${id}`}
-            color={stroke}
+  return (
+    <Fragment>
+      {renderArea()}
+      {mask && (
+        <Fragment>
+          <Mask id={`mask-${id}`} fill={`url(#gradient-${id})`} />
+          <CloneElement<MaskProps>
+            element={mask}
+            id={`mask-pattern-${id}`}
+            fill={stroke}
           />
-        )}
-      </Fragment>
-    );
-  }
-}
+        </Fragment>
+      )}
+      {gradient && (
+        <CloneElement<GradientProps>
+          element={gradient}
+          id={`gradient-${id}`}
+          color={stroke}
+        />
+      )}
+    </Fragment>
+  );
+};
+
+Area.defaultProps = {
+  gradient: <Gradient />,
+  interpolation: 'linear'
+};

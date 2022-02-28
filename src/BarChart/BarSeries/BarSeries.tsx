@@ -112,10 +112,6 @@ export interface BarSeriesProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea> | null;
 }
 
-interface BarSeriesState {
-  activeValues?: any;
-}
-
 export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   data,
   tooltip,

@@ -1,7 +1,15 @@
-import React, { Fragment, Component, ReactElement } from 'react';
+import React, {
+  Fragment,
+  useEffect,
+  ReactElement,
+  FC,
+  useCallback,
+  useMemo,
+  useState,
+  useRef
+} from 'react';
 import classNames from 'classnames';
-import bind from 'memoize-bind';
-import { AreaSeries, AreaChartTypes, AreaSeriesProps } from './AreaSeries';
+import { AreaSeries, AreaSeriesProps } from './AreaSeries';
 import {
   isAxisVisible,
   LinearAxisProps,
@@ -13,9 +21,7 @@ import { getXScale, getYScale } from '../common/scales';
 import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
 import {
   ChartDataShape,
-  ChartInternalDataShape,
   ChartNestedDataShape,
-  ChartDataTypes,
   buildStackData,
   buildShallowChartData,
   ChartShallowDataShape,
@@ -34,7 +40,6 @@ import {
   ChartProps
 } from '../common/containers/ChartContainer';
 import { CloneElement } from 'rdk';
-import memoize from 'memoize-one';
 
 export interface AreaChartProps extends ChartProps {
   /**
@@ -78,239 +83,229 @@ export interface AreaChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-interface AreaChartState {
-  zoomDomain?: [ChartDataTypes, ChartDataTypes];
-  preventAnimation?: boolean;
-  isZoomed: boolean;
-  zoomControlled: boolean;
-}
+export const AreaChart: FC<Partial<AreaChartProps>> = ({
+  xAxis,
+  yAxis,
+  id,
+  data,
+  width,
+  height,
+  margins,
+  className,
+  series,
+  gridlines,
+  brush,
+  zoomPan,
+  secondaryAxis
+}) => {
+  const zoom: any = zoomPan ? zoomPan.props : {};
+  const [zoomDomain, setZoomDomain] = useState<any>(zoom.domain);
+  const [preventAnimation, setPreventAnimation] = useState<boolean>(false);
+  const [isZoomed, setIsZoomed] = useState<boolean>(!!zoom.domain);
+  // eslint-disable-next-line
+  const [zoomControlled] = useState<boolean>(!zoom.hasOwnProperty('domain'));
 
-export class AreaChart extends Component<AreaChartProps, AreaChartState> {
-  static defaultProps: Partial<AreaChartProps> = {
-    data: [],
-    xAxis: <LinearXAxis type="time" />,
-    yAxis: <LinearYAxis type="value" />,
-    series: <AreaSeries />,
-    gridlines: <GridlineSeries />,
-    brush: null,
-    zoomPan: null
-  };
+  const timeoutRef = useRef<any | null>(null);
 
-  static getDerivedStateFromProps(
-    props: AreaChartProps,
-    state: AreaChartState
-  ) {
-    if (props.zoomPan) {
-      const zoom = props.zoomPan.props;
-      if (!state.zoomControlled && zoom.domain !== state.zoomDomain) {
-        return {
-          zoomDomain: zoom.domain,
-          isZoomed: !!zoom.domain
-        };
+  const seriesType = series.props.type;
+  const isMultiSeries =
+    seriesType === 'stacked' ||
+    seriesType === 'stackedNormalized' ||
+    seriesType === 'grouped';
+
+  const animated = preventAnimation === true ? false : series.props.animated;
+
+  useEffect(() => {
+    if (zoomPan) {
+      const zoom = zoomPan.props;
+      if (!zoomControlled && zoom.domain !== zoomDomain) {
+        setZoomDomain(zoom.domain);
+        setIsZoomed(!!zoom.domain);
       }
     }
+  }, [zoomControlled, zoomDomain, zoomPan]);
 
-    return null;
-  }
-
-  timeout: any;
-
-  constructor(props: AreaChartProps) {
-    super(props);
-
-    const zoom: any = props.zoomPan ? props.zoomPan.props : {};
-    // eslint-disable-next-line no-prototype-builtins
-    const zoomControlled = !zoom.hasOwnProperty('domain');
-
-    this.state = {
-      zoomDomain: zoom.domain,
-      isZoomed: !!zoom.domain,
-      zoomControlled
-    };
-  }
-
-  getData = memoize((data: ChartDataShape[], type: AreaChartTypes) => {
-    if (type === 'stacked' || type === 'stackedNormalized') {
+  const aggregatedData = useMemo(() => {
+    if (seriesType === 'stacked' || seriesType === 'stackedNormalized') {
       return buildStackData(
         data as ChartNestedDataShape[],
-        type === 'stackedNormalized'
+        seriesType === 'stackedNormalized'
       );
-    } else if (type === 'grouped') {
+    } else if (seriesType === 'grouped') {
       return buildNestedChartData(data as ChartNestedDataShape[], true);
     } else {
       return buildShallowChartData(data as ChartShallowDataShape[]);
     }
-  });
+  }, [data, seriesType]);
 
-  getScales(
-    data: ChartInternalDataShape[],
-    chartWidth: number,
-    chartHeight: number,
-    isMultiSeries: boolean
-  ) {
-    const { zoomDomain } = this.state;
-    const { yAxis, xAxis } = this.props;
-
-    const xScale = getXScale({
-      width: chartWidth,
-      type: xAxis.props.type,
-      roundDomains: xAxis.props.roundDomains,
-      data,
-      domain: zoomDomain || xAxis.props.domain,
-      isMultiSeries
-    });
-
-    const yScale = getYScale({
-      roundDomains: yAxis.props.roundDomains,
-      type: yAxis.props.type,
-      height: chartHeight,
-      data,
-      domain: yAxis.props.domain,
-      isMultiSeries
-    });
-
-    return { xScale, yScale };
-  }
-
-  onZoomPan(event: ZoomPanChangeEvent) {
-    if (this.state.zoomControlled) {
-      this.setState({
-        zoomDomain: event.domain,
-        isZoomed: event.isZoomed,
-        preventAnimation: true
+  const getScales = useCallback(
+    (chartWidth: number, chartHeight: number) => {
+      const xScale = getXScale({
+        width: chartWidth,
+        type: xAxis.props.type,
+        roundDomains: xAxis.props.roundDomains,
+        data: aggregatedData,
+        domain: zoomDomain || xAxis.props.domain,
+        isMultiSeries
       });
 
-      clearTimeout(this.timeout);
-      this.timeout = setTimeout(
-        () => this.setState({ preventAnimation: false }),
-        500
-      );
-    }
-  }
+      const yScale = getYScale({
+        roundDomains: yAxis.props.roundDomains,
+        type: yAxis.props.type,
+        height: chartHeight,
+        data: aggregatedData,
+        domain: yAxis.props.domain,
+        isMultiSeries
+      });
 
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { chartHeight, chartWidth, id, updateAxes } = containerProps;
-    const {
-      series,
-      yAxis,
-      xAxis,
-      gridlines,
-      brush,
-      zoomPan,
-      secondaryAxis
-    } = this.props;
-    const { zoomDomain, preventAnimation, isZoomed } = this.state;
+      return { xScale, yScale };
+    },
+    [
+      aggregatedData,
+      isMultiSeries,
+      xAxis.props.domain,
+      xAxis.props.roundDomains,
+      xAxis.props.type,
+      yAxis.props.domain,
+      yAxis.props.roundDomains,
+      yAxis.props.type,
+      zoomDomain
+    ]
+  );
 
-    const seriesType = series.props.type;
-    const isMultiSeries =
-      seriesType === 'stacked' ||
-      seriesType === 'stackedNormalized' ||
-      seriesType === 'grouped';
-    const data = this.getData(this.props.data, seriesType);
-    const { xScale, yScale } = this.getScales(
-      data,
-      chartWidth,
+  const onZoomPan = useCallback(
+    (event: ZoomPanChangeEvent) => {
+      if (zoomControlled) {
+        setZoomDomain(event.domain);
+        setIsZoomed(event.isZoomed);
+        setPreventAnimation(true);
+
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = setTimeout(() => setPreventAnimation(false));
+      }
+    },
+    [zoomControlled]
+  );
+
+  const renderChart = useCallback(
+    ({
       chartHeight,
-      isMultiSeries
-    );
-    const animated = preventAnimation === true ? false : series.props.animated;
+      chartWidth,
+      id,
+      updateAxes,
+      chartSized
+    }: ChartContainerChildProps) => {
+      const { xScale, yScale } = getScales(chartWidth, chartHeight);
 
-    return (
-      <Fragment>
-        {containerProps.chartSized && gridlines && (
-          <CloneElement<GridlineSeriesProps>
-            element={gridlines}
-            height={chartHeight}
-            width={chartWidth}
-            yScale={yScale}
-            xScale={xScale}
-            yAxis={yAxis.props}
-            xAxis={xAxis.props}
-          />
-        )}
-        <CloneElement<LinearAxisProps>
-          element={xAxis}
-          height={chartHeight}
-          width={chartWidth}
-          scale={xScale}
-          onDimensionsChange={bind(updateAxes, this, 'horizontal')}
-        />
-        <CloneElement<LinearAxisProps>
-          element={yAxis}
-          height={chartHeight}
-          width={chartWidth}
-          scale={yScale}
-          onDimensionsChange={bind(updateAxes, this, 'vertical')}
-        />
-        {secondaryAxis &&
-          secondaryAxis.map((axis, i) => (
-            <CloneElement<LinearAxisProps>
-              key={i}
-              element={axis}
+      return (
+        <Fragment>
+          {chartSized && gridlines && (
+            <CloneElement<GridlineSeriesProps>
+              element={gridlines}
               height={chartHeight}
               width={chartWidth}
-              onDimensionsChange={bind(updateAxes, this, 'horizontal')}
+              yScale={yScale}
+              xScale={xScale}
+              yAxis={yAxis.props}
+              xAxis={xAxis.props}
             />
-          ))}
-        {containerProps.chartSized && (
-          <CloneElement<ChartBrushProps>
-            element={brush}
+          )}
+          <CloneElement<LinearAxisProps>
+            element={xAxis}
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
-          >
-            <CloneElement<ChartZoomPanProps>
-              element={zoomPan}
-              onZoomPan={bind(this.onZoomPan, this)}
-              height={chartHeight}
-              width={chartWidth}
-              axisType={xAxis.props.type}
-              roundDomains={xAxis.props.roundDomains}
-              data={data}
-              domain={zoomDomain}
-            >
-              <CloneElement<AreaSeriesProps>
-                element={series}
-                id={`area-series-${id}`}
-                data={data}
+            onDimensionsChange={(event) => updateAxes('horizontal', event)}
+          />
+          <CloneElement<LinearAxisProps>
+            element={yAxis}
+            height={chartHeight}
+            width={chartWidth}
+            scale={yScale}
+            onDimensionsChange={(event) => updateAxes('vertical', event)}
+          />
+          {secondaryAxis &&
+            secondaryAxis.map((axis, i) => (
+              <CloneElement<LinearAxisProps>
+                key={i}
+                element={axis}
                 height={chartHeight}
                 width={chartWidth}
-                yScale={yScale}
-                xScale={xScale}
-                isZoomed={isZoomed}
-                animated={animated}
+                onDimensionsChange={(event) => updateAxes('horizontal', event)}
               />
+            ))}
+          {chartSized && (
+            <CloneElement<ChartBrushProps>
+              element={brush}
+              height={chartHeight}
+              width={chartWidth}
+              scale={xScale}
+            >
+              <CloneElement<ChartZoomPanProps>
+                element={zoomPan}
+                onZoomPan={onZoomPan}
+                height={chartHeight}
+                width={chartWidth}
+                axisType={xAxis.props.type}
+                roundDomains={xAxis.props.roundDomains}
+                data={aggregatedData}
+                domain={zoomDomain}
+              >
+                <CloneElement<AreaSeriesProps>
+                  element={series}
+                  id={`area-series-${id}`}
+                  data={aggregatedData}
+                  height={chartHeight}
+                  width={chartWidth}
+                  yScale={yScale}
+                  xScale={xScale}
+                  isZoomed={isZoomed}
+                  animated={animated}
+                />
+              </CloneElement>
             </CloneElement>
-          </CloneElement>
-        )}
-      </Fragment>
-    );
-  }
-
-  render() {
-    const {
+          )}
+        </Fragment>
+      );
+    },
+    [
+      aggregatedData,
+      animated,
+      brush,
+      getScales,
+      gridlines,
+      isZoomed,
+      onZoomPan,
+      secondaryAxis,
+      series,
       xAxis,
       yAxis,
-      id,
-      width,
-      height,
-      margins,
-      className,
-      series
-    } = this.props;
+      zoomDomain,
+      zoomPan
+    ]
+  );
 
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={isAxisVisible(xAxis.props)}
-        yAxisVisible={isAxisVisible(yAxis.props)}
-        className={classNames(css.areaChart, className, series.type)}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={isAxisVisible(xAxis.props)}
+      yAxisVisible={isAxisVisible(yAxis.props)}
+      className={classNames(css.areaChart, className, series.type)}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
+
+AreaChart.defaultProps = {
+  data: [],
+  xAxis: <LinearXAxis type="time" />,
+  yAxis: <LinearYAxis type="value" />,
+  series: <AreaSeries />,
+  gridlines: <GridlineSeries />,
+  brush: null,
+  zoomPan: null
+};

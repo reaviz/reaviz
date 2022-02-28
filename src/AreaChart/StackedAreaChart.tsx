@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FC } from 'react';
 import { AreaChart, AreaChartProps } from './AreaChart';
 import { ChartNestedDataShape } from '../common/data';
 import { StackedAreaSeries } from './AreaSeries';
@@ -7,12 +7,10 @@ interface StackedAreaChartProps extends AreaChartProps {
   data: ChartNestedDataShape[];
 }
 
-export class StackedAreaChart extends Component<StackedAreaChartProps, {}> {
-  static defaultProps: Partial<StackedAreaChartProps> = {
-    series: <StackedAreaSeries />
-  };
+export const StackedAreaChart: FC<Partial<StackedAreaChartProps>> = (props) => (
+  <AreaChart {...props} />
+);
 
-  render() {
-    return <AreaChart {...this.props} />;
-  }
-}
+StackedAreaChart.defaultProps = {
+  series: <StackedAreaSeries />
+};
