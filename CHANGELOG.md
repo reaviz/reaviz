@@ -1,3 +1,7 @@
+# 12.2.0 - 2/28/22
+- [chore] migrate line components to fc
+- [chore] migreate area components to fc
+
 # 12.1.0 - 1/4/21
 - [chore] migrate bar chart components to fc
 
