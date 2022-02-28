@@ -1,4 +1,12 @@
-import React, { createRef, Fragment, PureComponent } from 'react';
+import React, {
+  FC,
+  Fragment,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState
+} from 'react';
 import { line } from 'd3-shape';
 import {
   interpolate,
@@ -77,119 +85,43 @@ export interface LineProps extends PropFunctionTypes {
   hasArea: boolean;
 }
 
-interface LineState {
-  pathLength?: number;
-}
+export const Line: FC<Partial<LineProps>> = ({
+  width,
+  data,
+  color,
+  index,
+  strokeWidth,
+  hasArea,
+  animated,
+  yScale,
+  xScale,
+  showZeroStroke,
+  interpolation,
+  ...rest
+}) => {
+  const [pathLength, setPathLength] = useState<number | null>(null);
+  const ghostPathRef = useRef<SVGPathElement | null>(null);
 
-export class Line extends PureComponent<LineProps, LineState> {
-  static defaultProps: Partial<LineProps> = {
-    showZeroStroke: true,
-    strokeWidth: 3
-  };
-
-  state: LineState = {};
-  ghostPathRef = createRef<SVGPathElement>();
-
-  componentDidMount() {
-    if (this.ghostPathRef.current) {
-      this.setState({
-        pathLength: this.ghostPathRef.current!.getTotalLength()
-      });
+  useEffect(() => {
+    if (ghostPathRef.current) {
+      setPathLength(ghostPathRef.current.getTotalLength());
     }
-  }
+  }, [data, xScale, yScale, width]);
 
-  componentDidUpdate(prevProps: LineProps) {
-    if (
-      this.ghostPathRef.current &&
-      (prevProps.data !== this.props.data ||
-        prevProps.width !== this.props.width ||
-        prevProps.xScale !== this.props.xScale ||
-        prevProps.yScale !== this.props.yScale)
-    ) {
-      this.setState({
-        pathLength: this.ghostPathRef.current!.getTotalLength()
-      });
-    }
-  }
+  const getLinePath = useCallback(
+    (point: ChartInternalShallowDataShape[]) => {
+      const fn = line()
+        .x((d: any) => d.x)
+        .y((d: any) => d.y1)
+        .defined((d: any) => showZeroStroke || calculateShowStroke(d, point))
+        .curve(interpolate(interpolation));
 
-  getLinePath(data: ChartInternalShallowDataShape[]) {
-    const { showZeroStroke, interpolation } = this.props;
+      return fn(point as any);
+    },
+    [interpolation, showZeroStroke]
+  );
 
-    const fn = line()
-      .x((d: any) => d.x)
-      .y((d: any) => d.y1)
-      .defined((d: any) => showZeroStroke || calculateShowStroke(d, data))
-      .curve(interpolate(interpolation));
-
-    return fn(data as any);
-  }
-
-  getCoords() {
-    const { data, xScale, yScale } = this.props;
-
-    return data.map((item: any) => ({
-      x: xScale(item.x),
-      x1: xScale(item.x) - xScale(item.x1),
-      y: yScale(item.y),
-      y0: yScale(item.y0),
-      y1: yScale(item.y1)
-    })) as ChartInternalShallowDataShape[];
-  }
-
-  getLineEnter(coords: ChartInternalShallowDataShape[]) {
-    const { hasArea } = this.props;
-    const { pathLength } = this.state;
-    const linePath = this.getLinePath(coords);
-
-    let strokeDasharray = '';
-    if (!hasArea && pathLength !== undefined) {
-      strokeDasharray = `${pathLength} ${pathLength}`;
-    }
-
-    return {
-      d: linePath === null ? undefined : linePath,
-      strokeDashoffset: 0,
-      strokeDasharray: strokeDasharray
-    };
-  }
-
-  getLineExit() {
-    const { hasArea, yScale, xScale, data } = this.props;
-    const { pathLength } = this.state;
-
-    let coords;
-    if (hasArea) {
-      const maxY = Math.max(...yScale.range());
-      coords = data.map((item: any) => ({
-        x: xScale(item.x),
-        x1: 0,
-        y: maxY,
-        y1: maxY,
-        y0: maxY
-      })) as ChartInternalShallowDataShape[];
-    } else {
-      coords = this.getCoords();
-    }
-
-    const linePath = this.getLinePath(coords);
-
-    let strokeDasharray = '';
-    let strokeDashoffset = 0;
-    if (!hasArea && pathLength !== undefined) {
-      strokeDasharray = `${pathLength} ${pathLength}`;
-      strokeDashoffset = pathLength;
-    }
-
-    return {
-      d: linePath === null ? undefined : linePath,
-      strokeDasharray,
-      strokeDashoffset
-    };
-  }
-
-  getTransition() {
-    const { animated, index, hasArea } = this.props;
-
+  const transition = useMemo(() => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
@@ -201,44 +133,90 @@ export class Line extends PureComponent<LineProps, LineState> {
         delay: 0
       };
     }
-  }
+  }, [animated, hasArea, index]);
 
-  render() {
-    const { data, color, index, strokeWidth, hasArea } = this.props;
-    const { pathLength } = this.state;
-    const coords = this.getCoords();
-    const stroke = color(data, index);
-    const enter = this.getLineEnter(coords);
-    const exit = this.getLineExit();
-    const extras = constructFunctionProps(this.props, data);
-    const transition = this.getTransition();
-    const showLine = hasArea || pathLength !== undefined;
+  const coords = useMemo(() => {
+    return data.map((item: any) => ({
+      x: xScale(item.x),
+      x1: xScale(item.x) - xScale(item.x1),
+      y: yScale(item.y),
+      y0: yScale(item.y0),
+      y1: yScale(item.y1)
+    })) as ChartInternalShallowDataShape[];
+  }, [data, xScale, yScale]);
 
-    return (
-      <Fragment>
-        {showLine && (
-          <MotionPath
-            {...extras}
-            pointerEvents="none"
-            stroke={stroke}
-            strokeWidth={strokeWidth}
-            fill="none"
-            transition={transition}
-            custom={{
-              enter,
-              exit
-            }}
-          />
-        )}
-        {!hasArea && (
-          <path
-            opacity="0"
-            d={enter.d}
-            ref={this.ghostPathRef}
-            pointerEvents="none"
-          />
-        )}
-      </Fragment>
-    );
-  }
-}
+  const enter = useMemo(() => {
+    const linePath = getLinePath(coords);
+
+    let strokeDasharray = '';
+    if (!hasArea && pathLength !== null) {
+      strokeDasharray = `${pathLength} ${pathLength}`;
+    }
+
+    return {
+      d: linePath === null ? undefined : linePath,
+      strokeDashoffset: 0,
+      strokeDasharray: strokeDasharray
+    };
+  }, [coords, getLinePath, hasArea, pathLength]);
+
+  const exit = useMemo(() => {
+    let newCoords = coords;
+    if (hasArea) {
+      const maxY = Math.max(...yScale.range());
+      newCoords = data.map((item: any) => ({
+        x: xScale(item.x),
+        x1: 0,
+        y: maxY,
+        y1: maxY,
+        y0: maxY
+      })) as ChartInternalShallowDataShape[];
+    }
+
+    const linePath = getLinePath(newCoords);
+
+    let strokeDasharray = '';
+    let strokeDashoffset = 0;
+    if (!hasArea && pathLength !== null) {
+      strokeDasharray = `${pathLength} ${pathLength}`;
+      strokeDashoffset = pathLength;
+    }
+
+    return {
+      d: linePath === null ? undefined : linePath,
+      strokeDasharray,
+      strokeDashoffset
+    };
+  }, [coords, data, getLinePath, hasArea, pathLength, xScale, yScale]);
+
+  const stroke = color(data, index);
+  const extras = constructFunctionProps(rest, data);
+  const showLine = hasArea || pathLength !== null;
+
+  return (
+    <Fragment>
+      {showLine && (
+        <MotionPath
+          {...extras}
+          pointerEvents="none"
+          stroke={stroke}
+          strokeWidth={strokeWidth}
+          fill="none"
+          transition={transition}
+          custom={{
+            enter,
+            exit
+          }}
+        />
+      )}
+      {!hasArea && (
+        <path opacity="0" d={enter.d} ref={ghostPathRef} pointerEvents="none" />
+      )}
+    </Fragment>
+  );
+};
+
+Line.defaultProps = {
+  showZeroStroke: true,
+  strokeWidth: 3
+};

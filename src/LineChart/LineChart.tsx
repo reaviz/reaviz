@@ -1,33 +1,14 @@
-import React, { Component } from 'react';
-import {
-  AreaChart,
-  AreaChartProps,
-  AreaSeries,
-  Line,
-  AreaSeriesProps
-} from '../AreaChart';
+import React, { FC } from 'react';
+import { AreaChart, AreaChartProps } from '../AreaChart';
+import { LineSeries } from './LineSeries';
 
 export type LineChartProps = AreaChartProps;
 
-export class LineSeries extends Component<AreaSeriesProps> {
-  static defaultProps: Partial<AreaSeriesProps> = {
-    ...AreaSeries.defaultProps,
-    area: null,
-    line: <Line strokeWidth={3} />
-  };
+export const LineChart: FC<Partial<LineChartProps>> = (props) => (
+  <AreaChart {...props} />
+);
 
-  render() {
-    return <AreaSeries {...this.props} />;
-  }
-}
-
-export class LineChart extends Component<LineChartProps> {
-  static defaultProps: Partial<LineChartProps> = {
-    ...AreaChart.defaultProps,
-    series: <LineSeries />
-  };
-
-  render() {
-    return <AreaChart {...this.props} />;
-  }
-}
+LineChart.defaultProps = {
+  ...AreaChart.defaultProps,
+  series: <LineSeries />
+};

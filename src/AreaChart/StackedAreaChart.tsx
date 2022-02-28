@@ -3,7 +3,7 @@ import { AreaChart, AreaChartProps } from './AreaChart';
 import { ChartNestedDataShape } from '../common/data';
 import { StackedAreaSeries } from './AreaSeries';
 
-interface StackedAreaChartProps extends AreaChartProps {
+export interface StackedAreaChartProps extends AreaChartProps {
   data: ChartNestedDataShape[];
 }
 
