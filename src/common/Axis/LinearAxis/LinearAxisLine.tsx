@@ -35,6 +35,7 @@ export class LinearAxisLine extends Component<
   render() {
     const {
       strokeColor,
+      strokeWidth,
       strokeGradient,
       scale,
       orientation,
@@ -52,7 +53,7 @@ export class LinearAxisLine extends Component<
           x2={orientation === 'vertical' ? 0.00001 : range1}
           y1={orientation === 'vertical' ? range0 : 0}
           y2={orientation === 'vertical' ? range1 : 0.00001}
-          strokeWidth={1}
+          strokeWidth={strokeWidth}
           stroke={strokeGradient ? `url(#axis-gradient-${id})` : strokeColor}
         />
         {strokeGradient && (
