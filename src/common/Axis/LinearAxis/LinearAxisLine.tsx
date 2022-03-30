@@ -13,7 +13,7 @@ export interface LinearAxisLineProps {
   className?: any;
 }
 
-export const LinearAxisLine: FC<LinearAxisLineProps> = ({
+export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
   strokeColor,
   strokeWidth,
   strokeGradient,
