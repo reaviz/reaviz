@@ -1,3 +1,7 @@
+# 12.2.1 - 3/30/22
+- [fix] use strokeWidth prop for line element #68
+- [chore] migrate LinearAxisLine to FC
+
 # 12.2.0 - 2/28/22
 - [chore] migrate line components to fc
 - [chore] migreate area components to fc
