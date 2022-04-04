@@ -1,3 +1,7 @@
+# 13.0.0 - 4/4/22
+- [chore] upgrade react
+- [chore] upgrade framer-motion
+
 # 12.2.1 - 3/30/22
 - [fix] use strokeWidth prop for line element #68
 - [chore] migrate LinearAxisLine to FC

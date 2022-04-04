@@ -2,7 +2,7 @@ import React, { FC, Fragment, ReactElement, useRef, useState } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { Gradient, GradientProps } from '../common/Gradient';
 import { Mask, MaskProps } from '../common/Mask';
 import { DEFAULT_TRANSITION } from '../common/Motion';

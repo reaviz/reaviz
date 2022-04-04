@@ -18,7 +18,7 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '../../common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { BarLabelProps, BarLabel } from './BarLabel';
 import { formatValue } from '../../common/utils/formatting';

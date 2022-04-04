@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ColorSchemeType, getColor } from '../common/color';
 import { Bubble, BubbleProps } from './Bubble';
@@ -67,7 +67,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
       <motion.g
         key={(item.data as any).key}
         initial={{
-          scale: .5,
+          scale: 0.5,
           opacity: 0
         }}
         animate={{
@@ -94,9 +94,5 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
     );
   };
 
-  return (
-    <Fragment>
-      {data.map(renderBubble)}
-    </Fragment>
-  );
+  return <Fragment>{data.map(renderBubble)}</Fragment>;
 };

@@ -10,7 +10,7 @@ import { IVennLayout } from '@upsetjs/venn.js';
 import { ColorSchemeType, getColor } from '../common/color';
 import { VennArc, VennArcProps } from './VennArc';
 import { VennLabel, VennLabelProps } from './VennLabel';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { CloneElement } from 'rdk';
 import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
@@ -124,8 +124,8 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       // Get the colors for the stroke
       const stroke =
         typeof arc.props.stroke === 'function'
-          // @ts-ignore
-          ? arc.props.stroke(data, index, isActive, isHovered)
+          ? // @ts-ignore
+          arc.props.stroke(data, index, isActive, isHovered)
           : arc.props.stroke;
 
       const arcStroke =

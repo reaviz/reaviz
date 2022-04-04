@@ -1,6 +1,6 @@
 import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { CloneElement } from 'rdk';
 import { ArcData } from '../PieChart';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
@@ -82,10 +82,10 @@ export const PieArc: FC<PieArcProps> = ({
   const arcRef = useRef<SVGPathElement | null>(null);
   const { transition, d } = useInterpolate({ animated, arc, data });
   const [active, setActive] = useState<boolean>(false);
-  const fill = useMemo(() => (active ? chroma(color).brighten(0.5) : color), [
-    color,
-    active
-  ]);
+  const fill = useMemo(
+    () => (active ? chroma(color).brighten(0.5) : color),
+    [color, active]
+  );
 
   return (
     <g ref={arcRef}>

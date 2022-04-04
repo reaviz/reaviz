@@ -1,6 +1,6 @@
 import React, { FC, isValidElement } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { wrapText } from '../common/utils/wrapText';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 
@@ -21,13 +21,13 @@ export interface BubbleLabelProps {
   fontSize?: number;
 
   /**
-  * Font family of the text.
-  */
+   * Font family of the text.
+   */
   fontFamily?: string;
 
   /**
-  * Fill of the text.
-  */
+   * Fill of the text.
+   */
   fill?: string;
 
   /**
@@ -66,12 +66,14 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   }
 
   if (!isElement) {
-    const text = wrap ? wrapText({
-      key: data.data.key,
-      fontFamily,
-      fontSize,
-      width: data.r
-    }) : data.data.key;
+    const text = wrap
+      ? wrapText({
+        key: data.data.key,
+        fontFamily,
+        fontSize,
+        width: data.r
+      })
+      : data.data.key;
 
     return (
       <motion.text
@@ -95,8 +97,6 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   }
 
   return (
-    <g style={{ transform: `translate(${data.x}px, ${data.y}px)` }}>
-      {label}
-    </g>
+    <g style={{ transform: `translate(${data.x}px, ${data.y}px)` }}>{label}</g>
   );
 };

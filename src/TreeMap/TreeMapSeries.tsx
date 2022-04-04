@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor } from '../common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
@@ -66,7 +66,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       <motion.g
         key={item.data.key}
         initial={{
-          scale: .5,
+          scale: 0.5,
           opacity: 0,
           x: item.x0,
           y: item.y0
@@ -96,11 +96,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
     );
   };
 
-  return (
-    <Fragment>
-      {data.map((d, index) => renderItem(d, index))}
-    </Fragment>
-  );
+  return <Fragment>{data.map((d, index) => renderItem(d, index))}</Fragment>;
 };
 
 TreeMapSeries.defaultProps = {

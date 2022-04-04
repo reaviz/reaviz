@@ -15,7 +15,7 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '../../common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes, getColor, ColorSchemeType } from '../../common/color';
 import css from './ScatterPoint.module.css';
@@ -121,24 +121,24 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   color,
   animated,
   onClick,
-  onMouseEnter ,
+  onMouseEnter,
   onMouseLeave,
   ...rest
 }) => {
   const rectRef = useRef<any | null>(null);
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);
-  const extras = useMemo(() => constructFunctionProps(rest, data), [
-    rest,
-    data
-  ]);
-  const r = useMemo(() => (typeof size === 'function' ? size(data!) : size), [
-    size,
-    data
-  ]);
-  const renderedSymbol = useMemo(() => (symbol ? symbol(data!) : null), [
-    data,
-    symbol
-  ]);
+  const extras = useMemo(
+    () => constructFunctionProps(rest, data),
+    [rest, data]
+  );
+  const r = useMemo(
+    () => (typeof size === 'function' ? size(data!) : size),
+    [size, data]
+  );
+  const renderedSymbol = useMemo(
+    () => (symbol ? symbol(data!) : null),
+    [data, symbol]
+  );
 
   const transitionProps = useMemo(
     () =>
@@ -269,7 +269,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
 
 ScatterPoint.defaultProps = {
   active: true,
-  toolti:  <ChartTooltip />,
+  toolti: <ChartTooltip />,
   cursor: 'pointer',
   size: 4,
   color: schemes.cybertron[0],

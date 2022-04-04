@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { wrapText } from '../common/utils/wrapText';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 
@@ -84,7 +84,8 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
   const text = wrap
     ? wrapText({
-      key, x: data.text.x,
+      key,
+      x: data.text.x,
       fontFamily,
       fontSize,
       width: data?.circles?.[0]?.radius

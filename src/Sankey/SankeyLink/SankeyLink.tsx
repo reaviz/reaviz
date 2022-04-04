@@ -1,7 +1,7 @@
 import React, { Component, Fragment, createRef, ReactElement } from 'react';
 import bind from 'memoize-bind';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 import { sankeyLinkHorizontal } from 'd3-sankey';
 import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
@@ -141,15 +141,8 @@ export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
   }
 
   renderLink() {
-    const {
-      active,
-      className,
-      disabled,
-      index,
-      opacity,
-      style,
-      onClick
-    } = this.props;
+    const { active, className, disabled, index, opacity, style, onClick } =
+      this.props;
     const enterProps = this.getEnter();
     const exitProps = this.getExit();
 
