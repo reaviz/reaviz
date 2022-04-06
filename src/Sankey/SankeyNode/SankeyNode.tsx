@@ -1,7 +1,7 @@
 import React, { Component, Fragment, createRef, ReactElement } from 'react';
 import bind from 'memoize-bind';
 import classNames from 'classnames';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 import { ChartInternalDataTypes } from '../../common/data';
 import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';

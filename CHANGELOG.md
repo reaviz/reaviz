@@ -1,3 +1,7 @@
+# 13.0.1 - 4/6/22
+- [chore] fix framer-motion imports
+- [chore] bump rdk/realayers
+
 # 13.0.0 - 4/4/22
 - [chore] upgrade react
 - [chore] upgrade framer-motion

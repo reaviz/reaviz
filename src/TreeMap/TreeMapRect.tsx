@@ -1,5 +1,5 @@
 import React, { FC, ReactElement, useRef, useState, Fragment } from 'react';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';

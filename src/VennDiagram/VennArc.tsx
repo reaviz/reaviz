@@ -2,7 +2,7 @@ import React, { FC, useRef, ReactElement, useState, Fragment } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '../common/Mask';
 import { Gradient, GradientProps } from '../common/Gradient';

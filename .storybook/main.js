@@ -22,6 +22,12 @@ module.exports = {
       ({ loader }) => loader === require.resolve('@mdx-js/loader')
     );
 
+    config.module.rules.push({
+      type: 'javascript/auto',
+      test: /\.mjs$/,
+      include: /node_modules/
+    });
+
     remarkPlugins.push([
       codesandbox,
       {

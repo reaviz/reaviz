@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 
 export interface RadialGuideBarProps {
   active: boolean;

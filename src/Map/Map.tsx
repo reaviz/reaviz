@@ -7,7 +7,7 @@ import {
 } from '../common/containers/ChartContainer';
 import { CloneElement } from 'rdk';
 import { MapMarkerProps, MapMarker } from './MapMarker';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 
 type MarkerElement = ReactElement<MapMarkerProps, typeof MapMarker>;
 

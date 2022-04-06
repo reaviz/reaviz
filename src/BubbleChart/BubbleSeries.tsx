@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ColorSchemeType, getColor } from '../common/color';
 import { Bubble, BubbleProps } from './Bubble';

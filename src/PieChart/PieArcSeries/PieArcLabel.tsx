@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion/dist/framer-motion';
+import { motion } from 'framer-motion';
 import { arc } from 'd3-shape';
 import { ArcData } from '../PieChart';
 import { ChartInternalDataTypes } from '../../common/data/types';
