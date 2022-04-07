@@ -1,3 +1,6 @@
+# 13.0.3 - 4/7/22
+- [fix] improve legend padding and migrate to fc
+
 # 13.0.2 - 4/7/22
 - [fix] improve radial gauge padding issues
 
