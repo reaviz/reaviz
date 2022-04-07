@@ -89,7 +89,6 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   outerRadius,
   cornerRadius,
   padAngle,
-  padRadius,
   color,
   animated,
   disabled,
@@ -107,7 +106,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       .innerRadius(innerRadius)
       .outerRadius(outerRadius)
       .cornerRadius(cornerRadius);
-  }, [innerRadius, outerRadius, cornerRadius, padAngle, padRadius]);
+  }, [innerRadius, outerRadius, cornerRadius]);
 
   const arcData: ArcData = {
     // @ts-ignore Data must be passed

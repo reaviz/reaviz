@@ -1,4 +1,4 @@
-import React, { cloneElement, FC, ReactElement } from 'react';
+import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { range } from 'd3-array';
 import { scaleBand } from 'd3-scale';
 import { ChartShallowDataShape } from '../../common/data';
@@ -93,52 +93,50 @@ export const StackedRadialGaugeSeries: FC<
   const radius = Math.min(width, height) / 2;
   const innerRadius = radius * (1 - Math.min(fillFactor, 1));
 
-  const rAxis = scaleBand();
-  rAxis.domain(range(data.length));
-  rAxis.range([innerRadius, radius]);
-  rAxis.paddingInner(arcPadding);
+  const rAxis = scaleBand()
+    .domain(range(data.length))
+    .range([innerRadius, radius])
+    .paddingInner(arcPadding);
 
-  function renderStackedGauges(
-    point: ChartShallowDataShape,
-    index: number,
-    rAxis
-  ) {
-    const dataEndAngle = scale(point.data as number);
+  const renderStackedGauges = useCallback(
+    (point: ChartShallowDataShape, index: number) => {
+      const dataEndAngle = scale(point.data as number);
+      const outerRadius = rAxis(index as any);
+      const innerRadius = outerRadius - rAxis.bandwidth();
 
-    const outerRadius = rAxis(index);
-    const innerRadius = outerRadius - rAxis.bandwidth();
-
-    return (
-      <g key={point.key.toLocaleString()}>
-        {outerArc &&
-          cloneElement(outerArc, {
-            outerRadius,
-            innerRadius,
-            startAngle,
-            endAngle
-          })}
-        {innerArc &&
-          cloneElement(innerArc, {
-            outerRadius,
-            innerRadius,
-            startAngle,
-            endAngle: dataEndAngle,
-            data: point,
-            color: getColor({
-              data,
-              colorScheme,
-              point,
-              index
-            })
-          })}
-      </g>
-    );
-  }
+      return (
+        <g key={point.key.toLocaleString()}>
+          {outerArc &&
+            cloneElement(outerArc, {
+              outerRadius,
+              innerRadius,
+              startAngle,
+              endAngle
+            })}
+          {innerArc &&
+            cloneElement(innerArc, {
+              outerRadius,
+              innerRadius,
+              startAngle,
+              endAngle: dataEndAngle,
+              data: point,
+              color: getColor({
+                data,
+                colorScheme,
+                point,
+                index
+              })
+            })}
+        </g>
+      );
+    },
+    [rAxis, colorScheme, data, endAngle, innerArc, outerArc, scale, startAngle]
+  );
 
   return (
     <>
       <g transform={`translate(${width / 2}, ${height / 2})`}>
-        {data.map((d, i) => renderStackedGauges(d, i, rAxis))}
+        {data.map(renderStackedGauges)}
         {label}
       </g>
     </>
@@ -146,7 +144,7 @@ export const StackedRadialGaugeSeries: FC<
 };
 
 StackedRadialGaugeSeries.defaultProps = {
-  outerArc: <RadialGaugeArc disabled={true} />,
+  outerArc: <RadialGaugeArc disabled={true} animated={false} />,
   innerArc: <RadialGaugeArc animated={true} />,
   label: <StackedRadialGaugeLabel />,
   colorScheme: ['#00ECB1'],

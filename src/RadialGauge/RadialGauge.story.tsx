@@ -118,7 +118,7 @@ export const MultiLine = () => (
   <RadialGauge
     data={categoryData}
     width={350}
-    height={450}
+    height={350}
     series={<RadialGaugeSeries minGaugeWidth={150} />}
   />
 );
@@ -180,7 +180,14 @@ export const Stacked = () => {
 };
 
 export const Autosize = () => (
-  <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <RadialGauge data={categoryData} />
+  <div style={{ width: 250, height: 250, border: 'solid 1px red' }}>
+    <RadialGauge
+      data={[
+        {
+          key: 'Austin, TX',
+          data: 24
+        }
+      ]}
+    />
   </div>
 );
