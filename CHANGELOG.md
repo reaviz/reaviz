@@ -1,3 +1,6 @@
+# 13.0.2 - 4/7/22
+- [fix] improve radial gauge padding issues
+
 # 13.0.1 - 4/6/22
 - [chore] fix framer-motion imports
 - [chore] bump rdk/realayers
