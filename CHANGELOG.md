@@ -1,3 +1,6 @@
+# 13.0.4 - 4/7/22
+- [fix] lock calculate-size due to errors
+
 # 13.0.3 - 4/7/22
 - [fix] improve legend padding and migrate to fc
 
