@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { FC, ReactElement } from 'react';
 import classNames from 'classnames';
 import { CloneElement } from 'rdk';
 import {
@@ -11,12 +11,12 @@ export interface DiscreteLegendProps {
   /**
    * CSS Class name.
    */
-  className?: any;
+  className?: string;
 
   /**
    * CSS Styles.
    */
-  style?: any;
+  style?: React.CSSProperties;
 
   /**
    * Orientation of the legend.
@@ -29,27 +29,29 @@ export interface DiscreteLegendProps {
   entries: ReactElement<DiscreteLegendEntryProps, typeof DiscreteLegendEntry>[];
 }
 
-export class DiscreteLegend extends Component<DiscreteLegendProps> {
-  static defaultProps: Partial<DiscreteLegendProps> = {
-    orientation: 'vertical'
-  };
-
-  render() {
-    const { entries, orientation, style } = this.props;
-    const className = classNames(css.container, this.props.className, {
+export const DiscreteLegend: FC<Partial<DiscreteLegendProps>> = ({
+  entries,
+  orientation,
+  style,
+  className
+}) => (
+  <div
+    className={classNames(css.container, className, {
       [css.horizontal]: orientation === 'horizontal',
       [css.vertical]: orientation === 'vertical'
-    });
+    })}
+    style={style}
+  >
+    {entries.map((entry, index) => (
+      <CloneElement<DiscreteLegendEntryProps>
+        element={entry}
+        key={`dle-${index}`}
+        orientation={orientation}
+      />
+    ))}
+  </div>
+);
 
-    return (
-      <div className={className} style={style}>
-        {entries.map((entry, index) => (
-          <CloneElement<DiscreteLegendEntryProps>
-            element={entry}
-            key={`dle-${index}`}
-          />
-        ))}
-      </div>
-    );
-  }
-}
+DiscreteLegend.defaultProps = {
+  orientation: 'vertical'
+};

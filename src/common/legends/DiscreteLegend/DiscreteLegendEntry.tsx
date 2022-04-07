@@ -1,4 +1,4 @@
-import React, { Component, ReactNode, ReactElement } from 'react';
+import React, { Component, ReactNode, ReactElement, FC } from 'react';
 import classNames from 'classnames';
 import {
   DiscreteLegendSymbol,
@@ -28,12 +28,12 @@ export interface DiscreteLegendEntryProps {
   /**
    * CSS Styles.
    */
-  style?: any;
+  style?: React.CSSProperties;
 
   /**
    * CSS Class names.
    */
-  className?: any;
+  className?: string;
 
   /**
    * HTML Title Attribute.
@@ -61,47 +61,35 @@ export interface DiscreteLegendEntryProps {
   onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-export class DiscreteLegendEntry extends Component<DiscreteLegendEntryProps> {
-  static defaultProps: Partial<DiscreteLegendEntryProps> = {
-    symbol: <DiscreteLegendSymbol />,
-    orientation: 'horizontal',
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined,
-    onClick: () => undefined
-  };
-
-  render() {
-    const {
-      label,
-      symbol,
-      onMouseEnter,
-      onMouseLeave,
-      title,
-      color,
-      style,
-      onClick,
-      orientation
-    } = this.props;
-    const className = classNames(css.entry, this.props.className, {
+export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = ({
+  label,
+  symbol,
+  title,
+  className,
+  color,
+  style,
+  orientation,
+  onMouseEnter,
+  onMouseLeave,
+  onClick
+}) => (
+  <div
+    title={title}
+    className={classNames(css.entry, className, {
       [css.vertical]: orientation === 'vertical',
       [css.horizontal]: orientation === 'horizontal'
-    });
+    })}
+    onClick={onClick}
+    onMouseEnter={onMouseEnter}
+    onMouseLeave={onMouseLeave}
+    style={style}
+  >
+    <CloneElement<DiscreteLegendSymbolProps> element={symbol} color={color} />
+    <span className={css.label}>{label}</span>
+  </div>
+);
 
-    return (
-      <div
-        title={title}
-        className={className}
-        onClick={onClick}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        style={style}
-      >
-        <CloneElement<DiscreteLegendSymbolProps>
-          element={symbol}
-          color={color}
-        />
-        <span className={css.label}>{label}</span>
-      </div>
-    );
-  }
-}
+DiscreteLegendEntry.defaultProps = {
+  symbol: <DiscreteLegendSymbol />,
+  orientation: 'horizontal'
+};

@@ -6,8 +6,8 @@
   transition: opacity 150ms ease-in;
 
   &.vertical {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
 
     &:first-child {
       padding-top: 0;
@@ -15,6 +15,10 @@
 
     &:last-child {
       padding-bottom: 0;
+    }
+
+    .label {
+      margin-left: 8px;
     }
 
     svg {
