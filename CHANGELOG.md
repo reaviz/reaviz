@@ -1,3 +1,8 @@
+# 13.0.5 - 4/11/22
+- [chore] migrate gridlines to fc
+- [feature] add classname to grid stripe and grid line
+- [fix] move dash array to prop vs css
+
 # 13.0.4 - 4/7/22
 - [fix] lock calculate-size due to errors
 
