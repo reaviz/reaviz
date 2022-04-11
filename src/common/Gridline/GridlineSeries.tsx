@@ -1,4 +1,4 @@
-import React, { Fragment, Component, ReactElement } from 'react';
+import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
 import { Gridline, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '../utils/ticks';
 import { CloneElement } from 'rdk';
@@ -51,15 +51,40 @@ export interface GridlineSeriesProps {
   stripe: GridStripeElement | null;
 }
 
-export class GridlineSeries extends Component<GridlineSeriesProps> {
-  static defaultProps: Partial<GridlineSeriesProps> = {
-    line: <Gridline direction="all" />,
-    stripe: null
-  };
+export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
+  line,
+  stripe,
+  yScale,
+  xScale,
+  yAxis,
+  xAxis,
+  height,
+  width
+}) => {
+  const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
+    direction === 'all' || direction === 'y';
+  const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
+    direction === 'all' || direction === 'x';
 
-  getGridlines() {
-    const { yScale, xScale, yAxis, xAxis, height, width } = this.props;
+  const getSkipIndex = useCallback(
+    (direction: 'x' | 'y') => {
+      if (
+        (direction === 'x' &&
+          yAxis.axisLine !== null &&
+          yAxis.position === 'start') ||
+        (direction === 'y' &&
+          xAxis.axisLine !== null &&
+          xAxis.position === 'end')
+      ) {
+        return 0;
+      }
 
+      return null;
+    },
+    [xAxis, yAxis]
+  );
+
+  const { yAxisGrid, xAxisGrid } = useMemo(() => {
     return {
       yAxisGrid: getTicks(
         yScale,
@@ -76,85 +101,60 @@ export class GridlineSeries extends Component<GridlineSeriesProps> {
         xAxis.tickSeries.props.interval
       )
     };
-  }
+  }, [height, width, xAxis, yAxis, yScale, xScale]);
 
-  renderSeries(
-    yAxisGrid,
-    xAxisGrid,
-    element: GridElement,
-    type: 'line' | 'stripe'
-  ) {
-    const { xScale, yScale } = this.props;
+  const renderGroup = useCallback(
+    (
+      element: GridElement,
+      grid,
+      scale,
+      direction: 'x' | 'y',
+      type: 'line' | 'stripe'
+    ) => {
+      const skipIdx = getSkipIndex(direction);
 
-    return (
-      <Fragment>
-        {this.shouldRenderY(element.props.direction) &&
-          this.renderGroup(element, yAxisGrid, yScale, 'y', type)}
-        {this.shouldRenderX(element.props.direction) &&
-          this.renderGroup(element, xAxisGrid, xScale, 'x', type)}
-      </Fragment>
-    );
-  }
+      return grid.map((point, index) => (
+        <Fragment key={`${type}-${direction}-${index}`}>
+          {index !== skipIdx && (
+            <CloneElement<GridlineProps | GridStripeProps>
+              element={element}
+              index={index}
+              scale={scale}
+              data={point}
+              height={height}
+              width={width}
+              direction={direction}
+            />
+          )}
+        </Fragment>
+      ));
+    },
+    [getSkipIndex, height, width]
+  );
 
-  shouldRenderY(direction: 'all' | 'x' | 'y') {
-    return direction === 'all' || direction === 'y';
-  }
+  const renderSeries = useCallback(
+    (yAxisGrid, xAxisGrid, element: GridElement, type: 'line' | 'stripe') => {
+      return (
+        <Fragment>
+          {shouldRenderY(element.props.direction) &&
+            renderGroup(element, yAxisGrid, yScale, 'y', type)}
+          {shouldRenderX(element.props.direction) &&
+            renderGroup(element, xAxisGrid, xScale, 'x', type)}
+        </Fragment>
+      );
+    },
+    [renderGroup, xScale, yScale]
+  );
 
-  shouldRenderX(direction: 'all' | 'x' | 'y') {
-    return direction === 'all' || direction === 'x';
-  }
+  return (
+    <g style={{ pointerEvents: 'none' }}>
+      {line && renderSeries(yAxisGrid, xAxisGrid, line, 'line')}
+      {stripe && renderSeries(yAxisGrid, xAxisGrid, stripe, 'stripe')}
+    </g>
+  );
+};
 
-  getSkipIndex(direction: 'x' | 'y') {
-    const { yAxis, xAxis } = this.props;
-
-    if (
-      (direction === 'x' &&
-        yAxis.axisLine !== null &&
-        yAxis.position === 'start') ||
-      (direction === 'y' && xAxis.axisLine !== null && xAxis.position === 'end')
-    ) {
-      return 0;
-    }
-
-    return null;
-  }
-
-  renderGroup(
-    element: GridElement,
-    grid,
-    scale,
-    direction: 'x' | 'y',
-    type: 'line' | 'stripe'
-  ) {
-    const { height, width } = this.props;
-    const skipIdx = this.getSkipIndex(direction);
-
-    return grid.map((point, index) => (
-      <Fragment key={`${type}-${direction}-${index}`}>
-        {index !== skipIdx && (
-          <CloneElement<GridlineProps | GridStripeProps>
-            element={element}
-            index={index}
-            scale={scale}
-            data={point}
-            height={height}
-            width={width}
-            direction={direction}
-          />
-        )}
-      </Fragment>
-    ));
-  }
-
-  render() {
-    const { line, stripe } = this.props;
-    const { yAxisGrid, xAxisGrid } = this.getGridlines();
-
-    return (
-      <g style={{ pointerEvents: 'none' }}>
-        {line && this.renderSeries(yAxisGrid, xAxisGrid, line, 'line')}
-        {stripe && this.renderSeries(yAxisGrid, xAxisGrid, stripe, 'stripe')}
-      </g>
-    );
-  }
-}
+GridlineSeries.defaultProps = {
+  line: <Gridline direction="all" />,
+  stripe: null
+};

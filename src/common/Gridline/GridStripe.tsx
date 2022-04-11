@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { FC, useMemo } from 'react';
 import css from './GridStripe.module.css';
 
@@ -6,6 +7,11 @@ export interface GridStripeProps {
    * Position set by the `GridlineSeries`.
    */
   position: 'horizontal' | 'vertical';
+
+  /**
+   * CSS Classname to apply.
+   */
+  className?: string;
 
   /**
    * Stripe fill color.
@@ -44,7 +50,8 @@ export interface GridStripeProps {
 }
 
 export const GridStripe: FC<Partial<GridStripeProps>> = ({
-  fill = '#393c3e',
+  fill,
+  className,
   position,
   data,
   height,
@@ -76,5 +83,9 @@ export const GridStripe: FC<Partial<GridStripeProps>> = ({
     }
   }, [scale, data, index, height, width, fill, position]);
 
-  return <rect className={css.gridStripe} {...coords} />;
+  return <rect className={classNames(css.gridStripe, className)} {...coords} />;
+};
+
+GridStripe.defaultProps = {
+  fill: '#393c3e'
 };

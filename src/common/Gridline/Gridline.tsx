@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React, { FC, useMemo } from 'react';
 import css from './Gridline.module.css';
 
@@ -11,6 +12,11 @@ export interface GridlineProps {
    * Width of the line set by the `GridlineSeries`.
    */
   width: number;
+
+  /**
+   * CSS Classname to apply.
+   */
+  className?: string;
 
   /**
    * Direction set by the `GridlineSeries`.
@@ -49,9 +55,10 @@ export interface GridlineProps {
 }
 
 export const Gridline: FC<Partial<GridlineProps>> = ({
-  strokeWidth = 1,
-  direction = 'all',
-  strokeColor = 'rgba(153, 153, 153, 0.5)',
+  strokeWidth,
+  direction,
+  className,
+  strokeColor,
   data,
   height,
   width,
@@ -81,11 +88,18 @@ export const Gridline: FC<Partial<GridlineProps>> = ({
   return (
     <line
       {...coords}
-      className={css.gridLine}
+      className={classNames(css.gridLine, className)}
       strokeDasharray={strokeDasharray}
       strokeWidth={strokeWidth}
       stroke={strokeColor}
       fill="none"
     />
   );
+};
+
+Gridline.defaultProps = {
+  strokeWidth: 1,
+  strokeDasharray: '2 5',
+  direction: 'all',
+  strokeColor: 'rgba(153, 153, 153, 0.5)'
 };

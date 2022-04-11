@@ -1,5 +1,4 @@
 .gridLine {
-  stroke-dasharray: 2 5;
   shape-rendering: crispEdges;
   pointer-events: none;
 }
