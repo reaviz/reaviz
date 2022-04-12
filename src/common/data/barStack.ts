@@ -46,6 +46,8 @@ function transformDataToStack(data: ChartNestedDataShape[]) {
         idx = result.length - 1;
       }
 
+      result[idx].metadata = value.metadata;
+
       result[idx][value.key as string] = normalizeValue(
         value.data,
         maxBigInteger
