@@ -34,11 +34,6 @@ export interface LinearGaugeSeriesProps extends Omit<BarSeriesProps, 'bar'> {
   outerBar: ReactElement<LinearGaugeOuterBarProps, typeof LinearGaugeOuterBar>;
 }
 
-const defaultProps: Partial<LinearGaugeSeriesProps> = {
-  outerBar: <LinearGaugeOuterBar />,
-  bar: <LinearGaugeBar />
-};
-
 export const LinearGaugeSeries: FC<Partial<LinearGaugeSeriesProps>> = ({
   height,
   width,
@@ -48,9 +43,9 @@ export const LinearGaugeSeries: FC<Partial<LinearGaugeSeriesProps>> = ({
   ...rest
 }) => (
   <Fragment>
-    {!isMultiSeries && (
+    {!isMultiSeries && outerBar && (
       <CloneElement<LinearGaugeOuterBarProps>
-        element={outerBar || defaultProps.outerBar}
+        element={outerBar}
         height={height}
         width={width}
       />
@@ -59,11 +54,12 @@ export const LinearGaugeSeries: FC<Partial<LinearGaugeSeriesProps>> = ({
       {...rest}
       layout="horizontal"
       tooltip={null}
-      bar={
-        <CloneElement<LinearGaugeOuterBarProps>
-          element={bar || defaultProps.bar}
-        />
-      }
+      bar={<CloneElement<LinearGaugeOuterBarProps> element={bar} />}
     />
   </Fragment>
 );
+
+LinearGaugeSeries.defaultProps = {
+  outerBar: <LinearGaugeOuterBar />,
+  bar: <LinearGaugeBar />
+};

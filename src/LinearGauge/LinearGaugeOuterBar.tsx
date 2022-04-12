@@ -25,8 +25,12 @@ export const LinearGaugeOuterBar: FC<Partial<LinearGaugeOuterBarProps>> = ({
 }) => (
   <rect
     {...rest}
-    fill={fill || '#484848'}
+    fill={fill}
     width={Math.max(width!, 0)}
     height={Math.max(height!, 0)}
   />
 );
+
+LinearGaugeOuterBar.defaultProps = {
+  fill: '#484848'
+};
