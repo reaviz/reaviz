@@ -1,3 +1,6 @@
+# 13.0.7 - 4/12/22
+- [fix] fix metadata not transposed to stack data
+
 # 13.0.6 - 4/12/22
 - [fix] linear gauge outer bar not nullable
 
