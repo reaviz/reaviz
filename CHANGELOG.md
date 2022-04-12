@@ -1,3 +1,6 @@
+# 13.0.6 - 4/12/22
+- [fix] linear gauge outer bar not nullable
+
 # 13.0.5 - 4/11/22
 - [chore] migrate gridlines to fc
 - [feature] add classname to grid stripe and grid line
