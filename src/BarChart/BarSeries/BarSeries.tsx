@@ -226,7 +226,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
       // Histograms dont have keys
       let key = barIndex.toString();
       if (data.key) {
-        key = `${data.key!.toString()}-${groupIndex}`;
+        key = `${data.key!.toString()}-${groupIndex}-${data.x}`;
       }
 
       let barElements = Array.isArray(bar) ? bar[barIndex] : bar;
