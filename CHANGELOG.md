@@ -1,3 +1,9 @@
+# 13.0.8 - 4/13/22
+- [fix] fix multi dimensional bar charts throwing dupe key
+- [chore] improve linear gauge memo usage
+- [chore] update framer-motion
+- [chore] fix issue with circle offset going in circles 😂
+
 # 13.0.7 - 4/12/22
 - [fix] fix metadata not transposed to stack data
 
