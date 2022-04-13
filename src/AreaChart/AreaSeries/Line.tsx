@@ -193,6 +193,12 @@ export const Line: FC<Partial<LineProps>> = ({
   const extras = constructFunctionProps(rest, data);
   const showLine = hasArea || pathLength !== null;
 
+  // framer-motion freaks out when these are added for area
+  if (hasArea) {
+    delete enter.strokeDashoffset;
+    delete exit.strokeDashoffset;
+  }
+
   return (
     <Fragment>
       {showLine && (
