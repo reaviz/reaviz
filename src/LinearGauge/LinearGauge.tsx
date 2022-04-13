@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
 import {
   ChartProps,
   ChartContainer,
@@ -48,91 +48,91 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
   minValue,
   maxValue
 }) => {
-  function getData(d: ChartShallowDataShape | ChartShallowDataShape[]) {
-    if (Array.isArray(d)) {
+  const transformedData = useMemo(() => {
+    if (Array.isArray(data)) {
       return buildBarStackData(
         [
           {
             key: 'default',
-            data: d
+            data
           }
         ] as ChartNestedDataShape[],
         'expand',
         'horizontal'
       );
     } else {
-      return buildShallowChartData([d], 'horizontal');
+      return buildShallowChartData([data], 'horizontal');
     }
-  }
+  }, [data]);
 
-  function getScales(
-    isMultiSeries: boolean,
-    data: ChartInternalNestedDataShape[],
-    width: number,
-    height: number,
-    minValue: number,
-    maxValue: number
-  ) {
-    const domain = !isMultiSeries ? [minValue, maxValue] : undefined;
+  const getScales = useCallback(
+    (
+      isMultiSeries: boolean,
+      data: ChartInternalNestedDataShape[],
+      width: number,
+      height: number,
+      minValue: number,
+      maxValue: number
+    ) => {
+      const domain = !isMultiSeries ? [minValue, maxValue] : undefined;
 
-    const keyScale = getXScale({
-      width,
-      type: 'value',
-      data,
-      domain,
-      isMultiSeries
-    });
+      const keyScale = getXScale({
+        width,
+        type: 'value',
+        data,
+        domain,
+        isMultiSeries
+      });
 
-    const valueScale = getYScale({
-      type: 'category',
-      height,
-      data,
-      isMultiSeries
-    });
+      const valueScale = getYScale({
+        type: 'category',
+        height,
+        data,
+        isMultiSeries
+      });
 
-    return {
-      keyScale,
-      valueScale
-    };
-  }
+      return {
+        keyScale,
+        valueScale
+      };
+    },
+    []
+  );
 
-  function renderChart({
-    chartHeight,
-    chartWidth,
-    id,
-    chartSized
-  }: ChartContainerChildProps) {
-    const isMultiSeries = Array.isArray(data);
-    const type = isMultiSeries ? 'stackedNormalized' : 'standard';
-    const transformedData = getData(data) as any;
-    const { keyScale, valueScale } = getScales(
-      isMultiSeries,
-      transformedData,
-      chartWidth,
-      chartHeight,
-      minValue,
-      maxValue
-    );
+  const renderChart = useCallback(
+    ({ chartHeight, chartWidth, id, chartSized }: ChartContainerChildProps) => {
+      const isMultiSeries = Array.isArray(data);
+      const type = isMultiSeries ? 'stackedNormalized' : 'standard';
+      const { keyScale, valueScale } = getScales(
+        isMultiSeries,
+        transformedData as ChartInternalNestedDataShape[],
+        chartWidth,
+        chartHeight,
+        minValue,
+        maxValue
+      );
 
-    return (
-      <Fragment>
-        {chartSized && (
-          <CloneElement<LinearGaugeSeriesProps>
-            element={series}
-            id={`linear-gauge-series-${id}`}
-            data={transformedData}
-            isCategorical={true}
-            xScale={keyScale}
-            yScale={valueScale}
-            type={type}
-            height={chartHeight}
-            width={chartWidth}
-            isMultiSeries={isMultiSeries}
-          />
-        )}
-      </Fragment>
-    );
-  }
+      return (
+        <Fragment>
+          {chartSized && (
+            <CloneElement<LinearGaugeSeriesProps>
+              element={series}
+              id={`linear-gauge-series-${id}`}
+              data={transformedData}
+              isCategorical={true}
+              xScale={keyScale}
+              yScale={valueScale}
+              type={type}
+              height={chartHeight}
+              width={chartWidth}
+              isMultiSeries={isMultiSeries}
+            />
+          )}
+        </Fragment>
+      );
+    },
+    [data, getScales, maxValue, minValue, series, transformedData]
+  );
 
   return (
     <ChartContainer
