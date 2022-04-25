@@ -1,3 +1,6 @@
+# 13.0.9 - 4/25/22
+- [fix] Area graph with single value fills available area #69
+
 # 13.0.8 - 4/13/22
 - [fix] fix multi dimensional bar charts throwing dupe key
 - [chore] improve linear gauge memo usage
