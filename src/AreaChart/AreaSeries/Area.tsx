@@ -54,6 +54,11 @@ export interface AreaProps extends PropFunctionTypes {
   index: number;
 
   /**
+   * Total number of areas in the series. Set internally by `AreaSeries`.
+   */
+  total: number;
+
+  /**
    * Whether to animate the enter/update/exit. Set internally by `AreaSeries`.
    */
   animated: boolean;
@@ -76,6 +81,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   data,
   color,
   index,
+  total,
   xScale,
   yScale,
   animated,
@@ -96,6 +102,19 @@ export const Area: FC<Partial<AreaProps>> = ({
 
   const getAreaPath = useCallback(
     (d: ChartInternalShallowDataShape[]) => {
+      // If the input data is a single value and this is the only
+      // area in a series, fill the available space with an area:
+      if (d.length === 1 && total === 1) {
+        const [point] = d;
+        // Assume the single data point's `x` value
+        // is the middle of the graph:
+        const midpoint = point.x as number;
+        d = [{ ...point }, { ...point }];
+        const [start, end] = d;
+        start.x = 0;
+        end.x = midpoint * 2;
+      }
+
       const fn = area()
         .x((d: any) => d.x)
         .y0((d: any) => d.y0)
@@ -104,7 +123,7 @@ export const Area: FC<Partial<AreaProps>> = ({
 
       return fn(d as any);
     },
-    [interpolation]
+    [interpolation, total]
   );
 
   const enter = useMemo(() => {

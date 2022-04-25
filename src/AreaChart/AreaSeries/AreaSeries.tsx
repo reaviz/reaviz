@@ -167,7 +167,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   );
 
   const renderArea = useCallback(
-    (data: ChartInternalShallowDataShape[], index = 0) => {
+    (data: ChartInternalShallowDataShape[], index = 0, total = 1) => {
       return (
         <Fragment>
           {line && (
@@ -192,6 +192,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               yScale={yScale}
               data={data}
               index={index}
+              total={total}
               animated={animated}
               interpolation={interpolation}
               color={getPointColor}
@@ -291,7 +292,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           {data
             .map((point, index) => (
               <Fragment key={`${point.key!.toString()}`}>
-                {renderArea(point.data, index)}
+                {renderArea(point.data, index, data.length)}
               </Fragment>
             ))
             .reverse()}
