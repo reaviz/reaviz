@@ -1,3 +1,6 @@
+# 13.0.10 - 5/9/22
+- [fix] fix rounding bug in svg bars - https://github.com/framer/motion/issues/1513
+
 # 13.0.9 - 4/25/22
 - [fix] Area graph with single value fills available area #69
 
