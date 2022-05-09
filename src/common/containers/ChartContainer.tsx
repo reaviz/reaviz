@@ -92,7 +92,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   id,
   ...rest
 }) => {
-  const curId = id || useId();
+  const curId = useId(id);
   const [xAxisSized, setXAxisSized] = useState<boolean>(false);
   const [yAxisSized, setYAxisSized] = useState<boolean>(false);
   const [xOffset, setYOffset] = useState<number>(0);
@@ -155,7 +155,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
     }),
     [
       chartSized,
-      id,
+      curId,
       onUpdateAxes,
       yAxisSized,
       xAxisSized,
@@ -169,8 +169,10 @@ export const ChartContainer: FC<ChartContainerProps> = ({
 
   const translateX = center || centerX ? width / 2 : childProps.xMargin;
   const translateY = center || centerY ? height / 2 : childProps.yMargin;
-  const styleHeight = rest.height || '100%';
-  const styleWidth = rest.width || '100%';
+  const styleHeight =
+    rest.height !== undefined && rest.height !== null ? rest.height : '100%';
+  const styleWidth =
+    rest.width !== undefined && rest.width !== null ? rest.width : '100%';
 
   return (
     <div ref={observe} style={{ height: styleHeight, width: styleWidth }}>
