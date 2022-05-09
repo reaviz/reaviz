@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LinearGauge } from './LinearGauge';
 import { LinearGaugeSeries } from './LinearGaugeSeries';
 import { LinearGaugeBar } from './LinearGaugeBar';
@@ -25,6 +25,21 @@ export const Simple = () => (
     />
   </div>
 );
+
+export const AutoSize = () => {
+  const [width, setWidth] = useState(300);
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <div style={{ width, padding: 5, border: 'solid 1px red' }}>
+        <LinearGauge height={20} data={{ key: 'Risk Score', data: 80 }} />
+      </div>
+      <br />
+      <button type="button" onClick={() => setWidth(width === 300 ? 150 : 300)}>
+        Update Size
+      </button>
+    </div>
+  );
+};
 
 export const NonZeroStart = () => (
   <div style={{ textAlign: 'center' }}>
