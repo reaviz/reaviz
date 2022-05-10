@@ -1,3 +1,6 @@
+# 13.0.11 - 5/10/22
+- [chore] bump rdk / realayers
+
 # 13.0.10 - 5/9/22
 - [fix] fix rounding bug in svg bars - https://github.com/framer/motion/issues/1513
 
