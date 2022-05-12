@@ -1,3 +1,6 @@
+# 13.1.1 - 5/12/22
+- [feature] add classname to count
+
 # 13.1.0 - 5/12/22
 - [feature] add new count component and remove countup
 

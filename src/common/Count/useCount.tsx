@@ -1,7 +1,7 @@
 import { animate } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
-export interface CountProps {
+export interface CountInputs {
   /**
    * Number to animate to
    */
@@ -48,7 +48,7 @@ export const useCount = ({
   delay,
   decimalPlaces,
   format
-}: CountProps) => {
+}: CountInputs) => {
   const nodeRef = useRef<any | null>(null);
 
   from = from || COUNT_DEFAULTS.from;

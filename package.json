@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "13.1.0",
+  "version": "13.1.1",
   "description": "Data Visualization using React",
   "scripts": {
     "start": "start-storybook -p 9010 -s public",

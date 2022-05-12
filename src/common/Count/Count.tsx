@@ -1,9 +1,13 @@
 import React, { FC } from 'react';
-import { CountProps, useCount } from './useCount';
+import { CountInputs, useCount } from './useCount';
 
-export const Count: FC<CountProps> = (props) => {
-  const ref = useCount(props);
-  return <span ref={ref} />;
+export interface CountProps extends CountInputs {
+  className?: string;
+}
+
+export const Count: FC<CountProps> = ({ className, ...rest }) => {
+  const ref = useCount(rest);
+  return <span ref={ref} className={className} />;
 };
 
 Count.defaultProps = {
