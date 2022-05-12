@@ -13,3 +13,4 @@ export * from './utils';
 export * from './ZoomPan';
 export * from './Motion';
 export * from './color';
+export * from './Count';

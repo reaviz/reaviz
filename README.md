@@ -125,6 +125,7 @@ Additional features:
 - Auto Sizing
 - Bar Guidelines
 - Range Lines
+- Animated Counts
 - SSR
 
 ## 📦 Install

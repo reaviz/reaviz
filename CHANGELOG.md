@@ -1,3 +1,6 @@
+# 13.1.0 - 5/12/22
+- [feature] add new count component and remove countup
+
 # 13.0.11 - 5/10/22
 - [chore] bump rdk / realayers
 
