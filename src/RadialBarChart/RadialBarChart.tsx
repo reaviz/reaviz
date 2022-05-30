@@ -1,4 +1,4 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, { useCallback, FC, Fragment, ReactElement } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
@@ -16,7 +16,6 @@ import { CloneElement } from 'rdk';
 import { RadialAxis, RadialAxisProps } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
 import { uniqueBy } from '../common/utils/array';
-import memoize from 'memoize-one';
 
 export interface RadialBarChartProps extends ChartProps {
   /**
@@ -40,25 +39,29 @@ export interface RadialBarChartProps extends ChartProps {
   innerRadius: number;
 }
 
-export class RadialBarChart extends Component<RadialBarChartProps> {
-  static defaultProps: Partial<RadialBarChartProps> = {
-    innerRadius: 0.1,
-    margins: 75,
-    axis: <RadialAxis />,
-    series: <RadialBarSeries />
-  };
-
-  getScales = memoize(
+export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  containerClassName,
+  data,
+  innerRadius,
+  series,
+  axis
+}) => {
+  const getScales = useCallback(
     (
       preData: ChartShallowDataShape[],
       innerRadius: number,
       outerRadius: number
     ) => {
-      const data = buildShallowChartData(
+      const newData = buildShallowChartData(
         preData
       ) as ChartInternalShallowDataShape[];
-      const xDomain = uniqueBy(data, (d) => d.x);
-      const yDomain = getYDomain({ data, scaled: false });
+      const xDomain = uniqueBy(newData, (d) => d.x);
+      const yDomain = getYDomain({ data: newData, scaled: false });
 
       const xScale = scaleBand()
         .range([0, 2 * Math.PI])
@@ -69,63 +72,69 @@ export class RadialBarChart extends Component<RadialBarChartProps> {
       return {
         xScale,
         yScale,
-        data
+        newData
       };
-    }
+    },
+    []
   );
 
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { chartWidth, chartHeight, id } = containerProps;
-    const { innerRadius, series, axis } = this.props;
-    const outerRadius = Math.min(chartWidth, chartHeight) / 2;
-    const { yScale, xScale, data } = this.getScales(
-      this.props.data,
-      innerRadius,
-      outerRadius
-    );
+  const renderChart = useCallback(
+    ({ chartWidth, chartHeight, id }: ChartContainerChildProps) => {
+      const outerRadius = Math.min(chartWidth, chartHeight) / 2;
+      const { yScale, xScale, newData } = getScales(
+        data,
+        innerRadius,
+        outerRadius
+      );
 
-    return (
-      <Fragment>
-        {axis && (
-          <CloneElement<RadialAxisProps>
-            element={axis}
-            xScale={xScale}
+      return (
+        <Fragment>
+          {axis && (
+            <CloneElement<RadialAxisProps>
+              element={axis}
+              xScale={xScale}
+              height={chartHeight}
+              width={chartWidth}
+              innerRadius={innerRadius}
+            />
+          )}
+          <CloneElement<RadialBarSeriesProps>
+            element={series}
+            id={id}
+            data={newData}
             height={chartHeight}
             width={chartWidth}
+            xScale={xScale}
+            yScale={yScale}
             innerRadius={innerRadius}
+            outerRadius={outerRadius}
           />
-        )}
-        <CloneElement<RadialBarSeriesProps>
-          element={series}
-          id={id}
-          data={data}
-          height={chartHeight}
-          width={chartWidth}
-          xScale={xScale}
-          yScale={yScale}
-          innerRadius={innerRadius}
-          outerRadius={outerRadius}
-        />
-      </Fragment>
-    );
-  }
+        </Fragment>
+      );
+    },
+    [axis, data, getScales, innerRadius, series]
+  );
 
-  render() {
-    const { id, width, height, margins, className } = this.props;
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      height={height}
+      margins={margins}
+      xAxisVisible={false}
+      yAxisVisible={false}
+      center={true}
+      className={className}
+      containerClassName={containerClassName}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
 
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        height={height}
-        margins={margins}
-        xAxisVisible={false}
-        yAxisVisible={false}
-        center={true}
-        className={className}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+RadialBarChart.defaultProps = {
+  innerRadius: 0.1,
+  margins: 75,
+  axis: <RadialAxis />,
+  series: <RadialBarSeries />
+};

@@ -253,12 +253,14 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
   }
 
   render() {
-    const { id, width, height, margins, className } = this.props;
+    const { id, width, height, margins, className, containerClassName } =
+      this.props;
 
     return (
       <ChartContainer
         id={id}
         width={width}
+        containerClassName={containerClassName}
         height={height}
         margins={margins}
         className={className}

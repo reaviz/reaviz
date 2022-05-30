@@ -74,7 +74,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   xScale,
   innerRadius,
   interpolation,
-  gradient = <RadialGradient />
+  gradient
 }) => {
   const transition = useMemo(
     () =>
@@ -154,4 +154,8 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       )}
     </Fragment>
   );
+};
+
+RadialArea.defaultProps = {
+  gradient: <RadialGradient />
 };

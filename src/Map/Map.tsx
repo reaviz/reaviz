@@ -23,9 +23,10 @@ export const Map: FC<MapProps> = ({
   height,
   margins,
   className,
+  containerClassName,
   markers,
   data,
-  fill = 'rgba(255, 255, 255, 0.3)'
+  fill
 }) => {
   const getProjection = useCallback(
     ({ chartWidth, chartHeight }: ChartContainerChildProps) =>
@@ -98,7 +99,7 @@ export const Map: FC<MapProps> = ({
         </motion.g>
       );
     },
-    [data, markers]
+    [data, getProjection, markers, renderCountry, renderMarker]
   );
 
   return (
@@ -107,6 +108,7 @@ export const Map: FC<MapProps> = ({
       width={width}
       height={height}
       margins={margins}
+      containerClassName={containerClassName}
       xAxisVisible={false}
       yAxisVisible={false}
       className={className}
@@ -114,4 +116,8 @@ export const Map: FC<MapProps> = ({
       {(props) => renderChart(props)}
     </ChartContainer>
   );
+};
+
+Map.defaultProps = {
+  fill: 'rgba(255, 255, 255, 0.3)'
 };

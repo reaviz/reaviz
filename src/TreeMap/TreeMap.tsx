@@ -22,8 +22,9 @@ export interface TreeMapProps extends ChartProps {
 }
 
 export const TreeMap: FC<Partial<TreeMapProps>> = ({
-  data = [],
+  data,
   id,
+  containerClassName,
   width,
   height,
   className,
@@ -67,6 +68,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
       id={id}
       width={width}
       height={height}
+      containerClassName={containerClassName}
       margins={margins}
       xAxisVisible={false}
       yAxisVisible={false}
@@ -79,5 +81,6 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
 
 TreeMap.defaultProps = {
   margins: 0,
-  series: <TreeMapSeries />
+  series: <TreeMapSeries />,
+  data: []
 };

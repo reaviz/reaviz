@@ -45,10 +45,11 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   height,
   className,
   data,
-  innerRadius = 0.1,
-  series = <RadialAreaSeries />,
-  axis = <RadialAxis />,
-  margins = 75
+  containerClassName,
+  innerRadius,
+  series,
+  axis,
+  margins
 }) => {
   const getScales = useCallback(
     (
@@ -86,7 +87,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
         result: d
       };
     },
-    []
+    [axis?.props.type]
   );
 
   const renderChart = useCallback(
@@ -124,7 +125,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
         </Fragment>
       );
     },
-    [data, series, id, innerRadius, axis]
+    [getScales, data, innerRadius, axis, series]
   );
 
   return (
@@ -132,6 +133,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       id={id}
       width={width}
       height={height}
+      containerClassName={containerClassName}
       margins={margins}
       xAxisVisible={false}
       yAxisVisible={false}
@@ -141,4 +143,11 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
+};
+
+RadialAreaChart.defaultProps = {
+  innerRadius: 0.1,
+  series: <RadialAreaSeries />,
+  axis: <RadialAxis />,
+  margins: 75
 };

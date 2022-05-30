@@ -1,4 +1,10 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useState,
+  useCallback
+} from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
 import { CloneElement } from 'rdk';
@@ -6,7 +12,6 @@ import { ColorSchemeType, getColor, schemes } from '../../common/color';
 import {
   TooltipAreaProps,
   TooltipArea,
-  TooltipAreaEvent,
   ChartTooltip
 } from '../../common/Tooltip';
 import isEqual from 'react-fast-compare';
@@ -73,101 +78,80 @@ export interface RadialBarSeriesProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
-interface RadialBarSeriesState {
-  activeValues?: any;
-}
+export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
+  data,
+  id,
+  innerRadius,
+  outerRadius,
+  xScale,
+  yScale,
+  height,
+  width,
+  tooltip,
+  colorScheme,
+  bar,
+  animated
+}) => {
+  const [activeValues, setActiveValues] = useState<any | null>(null);
 
-export class RadialBarSeries extends Component<
-  RadialBarSeriesProps,
-  RadialBarSeriesState
-> {
-  static defaultProps: Partial<RadialBarSeriesProps> = {
-    colorScheme: schemes.cybertron[0],
-    tooltip: <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
-    bar: <RadialBar />,
-    animated: true
-  };
+  const renderBar = useCallback(
+    (point: ChartInternalShallowDataShape, index: number) => {
+      const active = activeValues && data && isEqual(activeValues.x, point.x);
 
-  state: RadialBarSeriesState = {};
-
-  onValueEnter(event: TooltipAreaEvent) {
-    this.setState({
-      activeValues: event.value
-    });
-  }
-
-  onValueLeave() {
-    this.setState({
-      activeValues: undefined
-    });
-  }
-
-  renderBar(point: ChartInternalShallowDataShape, index: number) {
-    const {
-      innerRadius,
-      xScale,
-      yScale,
-      bar,
-      id,
-      data,
+      return (
+        <Fragment key={index}>
+          <CloneElement<RadialBarProps>
+            element={bar}
+            id={`radialbar-${id}-${index}`}
+            index={index}
+            data={point}
+            xScale={xScale}
+            active={active}
+            yScale={yScale}
+            innerRadius={innerRadius}
+            color={(point) => getColor({ data, point, index: 0, colorScheme })}
+            barCount={data.length}
+            animated={animated}
+          />
+        </Fragment>
+      );
+    },
+    [
+      activeValues,
       animated,
-      colorScheme
-    } = this.props;
-    const { activeValues } = this.state;
-    const active = activeValues && data && isEqual(activeValues.x, point.x);
-
-    return (
-      <Fragment key={index}>
-        <CloneElement<RadialBarProps>
-          element={bar}
-          id={`radialbar-${id}-${index}`}
-          index={index}
-          data={point}
-          xScale={xScale}
-          active={active}
-          yScale={yScale}
-          innerRadius={innerRadius}
-          color={(point) => getColor({ data, point, index: 0, colorScheme })}
-          barCount={data.length}
-          animated={animated}
-        />
-      </Fragment>
-    );
-  }
-
-  render() {
-    const {
+      bar,
+      colorScheme,
       data,
       id,
       innerRadius,
-      outerRadius,
       xScale,
-      yScale,
-      height,
-      width,
-      tooltip,
-      colorScheme
-    } = this.props;
+      yScale
+    ]
+  );
 
-    return (
-      <CloneElement<TooltipAreaProps>
-        element={tooltip}
-        xScale={xScale}
-        yScale={yScale}
-        data={data}
-        height={height}
-        width={width}
-        isRadial={true}
-        innerRadius={innerRadius}
-        outerRadius={outerRadius}
-        onValueEnter={this.onValueEnter.bind(this)}
-        onValueLeave={this.onValueLeave.bind(this)}
-        color={(point, index) => getColor({ data, point, index, colorScheme })}
-      >
-        <g clipPath={`url(#${id}-path)`}>
-          {data.map(this.renderBar.bind(this))}
-        </g>
-      </CloneElement>
-    );
-  }
-}
+  return (
+    <CloneElement<TooltipAreaProps>
+      element={tooltip}
+      xScale={xScale}
+      yScale={yScale}
+      data={data}
+      height={height}
+      width={width}
+      isRadial={true}
+      innerRadius={innerRadius}
+      outerRadius={outerRadius}
+      onValueEnter={(event) => setActiveValues(event.value)}
+      onValueLeave={() => setActiveValues(null)}
+      color={(point, index) => getColor({ data, point, index, colorScheme })}
+    >
+      <g clipPath={`url(#${id}-path)`}>{data.map(renderBar)}</g>
+    </CloneElement>
+  );
+};
+
+RadialBarSeries.defaultProps = {
+  colorScheme: schemes.cybertron[0],
+  tooltip: <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
+  bar: <RadialBar />,
+  animated: true
+};

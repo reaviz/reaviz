@@ -1,4 +1,12 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, {
+  Component,
+  FC,
+  Fragment,
+  ReactElement,
+  useCallback,
+  useMemo,
+  useRef
+} from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { arc } from 'd3-shape';
 import { Gradient } from '../../common/Gradient';
@@ -97,98 +105,31 @@ export interface RadialBarProps {
   onMouseLeave: (event) => void;
 }
 
-export class RadialBar extends Component<RadialBarProps> {
-  static defaultProps: Partial<RadialBarProps> = {
-    gradient: true,
-    curved: false,
-    guide: <RadialGuideBar />,
-    onClick: () => undefined,
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined
-  };
+export const RadialBar: FC<Partial<RadialBarProps>> = ({
+  animated,
+  innerRadius,
+  xScale,
+  yScale,
+  curved,
+  id,
+  gradient,
+  barCount,
+  className,
+  data,
+  active,
+  guide,
+  index,
+  color,
+  onClick,
+  onMouseEnter,
+  onMouseLeave
+}) => {
+  const previousEnter = useRef<any | null>(null);
+  const fill = color(data, index);
+  const currentColorShade = active ? chroma(fill).brighten(0.5) : fill;
 
-  previousEnter: any;
-
-  getFill(color: string) {
-    const { id, gradient } = this.props;
-
-    if (!gradient) {
-      return color;
-    }
-
-    return `url(#${id}-gradient)`;
-  }
-
-  onMouseEnter(event: MouseEvent) {
-    const { onMouseEnter, data } = this.props;
-    onMouseEnter({
-      value: data,
-      nativeEvent: event
-    });
-  }
-
-  onMouseLeave(event: MouseEvent) {
-    const { onMouseLeave, data } = this.props;
-    onMouseLeave({
-      value: data,
-      nativeEvent: event
-    });
-  }
-
-  onMouseClick(event: MouseEvent) {
-    const { onClick, data } = this.props;
-
-    onClick({
-      value: data,
-      nativeEvent: event
-    });
-  }
-
-  getArc(data: ChartInternalShallowDataShape) {
-    const { innerRadius, xScale, yScale, curved } = this.props;
-
-    const outerRadius = yScale(data.y);
-
-    if (curved) {
-      const startAngle = xScale(data.x);
-      const endAngle = startAngle + xScale.bandwidth();
-
-      const arcFn = arc()
-        .innerRadius(innerRadius)
-        .outerRadius(outerRadius)
-        .startAngle(startAngle)
-        .endAngle(endAngle)
-        .padAngle(0.01)
-        .padRadius(innerRadius);
-
-      return arcFn(data as any);
-    } else {
-      const startAngle = xScale(data.x) - Math.PI * 0.5;
-      const endAngle = startAngle + xScale.bandwidth();
-
-      const innerAngleDistance = endAngle - startAngle;
-      const arcLength = innerRadius * innerAngleDistance;
-      const outerAngleDistance = arcLength / outerRadius;
-      const halfAngleDistanceDelta =
-        (innerAngleDistance - outerAngleDistance) / 2;
-
-      const pathFn = path();
-      pathFn.arc(0, 0, innerRadius, startAngle, endAngle);
-      pathFn.arc(
-        0,
-        0,
-        outerRadius,
-        endAngle - halfAngleDistanceDelta,
-        startAngle + halfAngleDistanceDelta,
-        true
-      );
-
-      return pathFn.toString();
-    }
-  }
-
-  getTransition() {
-    const { animated, barCount, index } = this.props;
+  const transition = useMemo(() => {
+    // const { animated, barCount, index } = this.props;
 
     if (animated) {
       return {
@@ -201,70 +142,153 @@ export class RadialBar extends Component<RadialBarProps> {
         delay: 0
       };
     }
-  }
+  }, [animated, barCount, index]);
 
-  renderBar(color: string) {
-    const { className, data, yScale, active, guide } = this.props;
+  const getFill = useCallback(
+    (color: string) => {
+      if (!gradient) {
+        return color;
+      }
 
-    const fill = this.getFill(color);
-    const transition = this.getTransition();
+      return `url(#${id}-gradient)`;
+    },
+    [gradient, id]
+  );
 
-    // Track previous props
-    const previousEnter = this.previousEnter
-      ? { ...this.previousEnter }
-      : undefined;
-    this.previousEnter = { ...data };
+  const getArc = useCallback(
+    (data: ChartInternalShallowDataShape) => {
+      const outerRadius = yScale(data.y);
 
-    const [yStart, yEnd] = yScale.domain();
-    const exit = {
-      ...data,
-      y: yStart
-    };
+      if (curved) {
+        const startAngle = xScale(data.x);
+        const endAngle = startAngle + xScale.bandwidth();
 
-    const guidePath = this.getArc({
-      ...data,
-      y: yEnd
-    }) as string;
+        const arcFn = arc()
+          .innerRadius(innerRadius)
+          .outerRadius(outerRadius)
+          .startAngle(startAngle)
+          .endAngle(endAngle)
+          .padAngle(0.01)
+          .padRadius(innerRadius);
 
-    return (
-      <Fragment>
-        {guide && (
-          <CloneElement<RadialGuideBarProps>
-            element={guide}
-            active={active}
-            path={guidePath}
+        return arcFn(data as any);
+      } else {
+        const startAngle = xScale(data.x) - Math.PI * 0.5;
+        const endAngle = startAngle + xScale.bandwidth();
+
+        const innerAngleDistance = endAngle - startAngle;
+        const arcLength = innerRadius * innerAngleDistance;
+        const outerAngleDistance = arcLength / outerRadius;
+        const halfAngleDistanceDelta =
+          (innerAngleDistance - outerAngleDistance) / 2;
+
+        const pathFn = path();
+        pathFn.arc(0, 0, innerRadius, startAngle, endAngle);
+        pathFn.arc(
+          0,
+          0,
+          outerRadius,
+          endAngle - halfAngleDistanceDelta,
+          startAngle + halfAngleDistanceDelta,
+          true
+        );
+
+        return pathFn.toString();
+      }
+    },
+    [curved, innerRadius, xScale, yScale]
+  );
+
+  const renderBar = useCallback(
+    (color: string) => {
+      const fill = getFill(color);
+
+      // Track previous props
+      const prev = previousEnter.current
+        ? { ...previousEnter.current }
+        : undefined;
+      previousEnter.current = { ...data };
+
+      const [yStart, yEnd] = yScale.domain();
+      const exit = {
+        ...data,
+        y: yStart
+      };
+
+      const guidePath = getArc({
+        ...data,
+        y: yEnd
+      }) as string;
+
+      return (
+        <Fragment>
+          {guide && (
+            <CloneElement<RadialGuideBarProps>
+              element={guide}
+              active={active}
+              path={guidePath}
+            />
+          )}
+          <MotionBar
+            arc={getArc}
+            custom={{
+              enter: data,
+              exit,
+              previousEnter: prev
+            }}
+            transition={transition}
+            fill={fill}
+            className={className}
+            onMouseEnter={(event) =>
+              onMouseEnter({
+                value: data,
+                nativeEvent: event
+              })
+            }
+            onMouseLeave={(event) =>
+              onMouseLeave({
+                value: data,
+                nativeEvent: event
+              })
+            }
+            onClick={(event) =>
+              onClick({
+                value: data,
+                nativeEvent: event
+              })
+            }
           />
-        )}
-        <MotionBar
-          arc={this.getArc.bind(this)}
-          custom={{
-            enter: data,
-            exit,
-            previousEnter
-          }}
-          transition={transition}
-          fill={fill}
-          className={className}
-          onMouseEnter={bind(this.onMouseEnter, this)}
-          onMouseLeave={bind(this.onMouseLeave, this)}
-          onClick={bind(this.onMouseClick, this)}
-        />
-      </Fragment>
-    );
-  }
+        </Fragment>
+      );
+    },
+    [
+      active,
+      className,
+      data,
+      getArc,
+      getFill,
+      guide,
+      onClick,
+      onMouseEnter,
+      onMouseLeave,
+      transition,
+      yScale
+    ]
+  );
 
-  render() {
-    const { data, index, color, gradient, id, active } = this.props;
-    const fill = color(data, index);
-    const currentColorShade = active ? chroma(fill).brighten(0.5) : fill;
+  return (
+    <Fragment>
+      {renderBar(currentColorShade)}
+      {gradient && <Gradient id={`${id}-gradient`} color={currentColorShade} />}
+    </Fragment>
+  );
+};
 
-    return (
-      <Fragment>
-        {this.renderBar(currentColorShade)}
-        {gradient && (
-          <Gradient id={`${id}-gradient`} color={currentColorShade} />
-        )}
-      </Fragment>
-    );
-  }
-}
+RadialBar.defaultProps = {
+  gradient: true,
+  curved: false,
+  guide: <RadialGuideBar />,
+  onClick: () => undefined,
+  onMouseEnter: () => undefined,
+  onMouseLeave: () => undefined
+};

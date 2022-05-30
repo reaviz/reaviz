@@ -43,6 +43,7 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
   height,
   margins,
   className,
+  containerClassName,
   series,
   data,
   minValue,
@@ -141,6 +142,7 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
       height={height}
       margins={margins}
       className={className}
+      containerClassName={containerClassName}
     >
       {renderChart}
     </ChartContainer>

@@ -57,8 +57,8 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
   animated,
   color,
   activeValues,
-  show = 'hover',
-  point = <RadialScatterPoint />
+  show,
+  point
 }) => {
   const isVisible = useCallback(
     (point: ChartInternalShallowDataShape, index: number) => {
@@ -83,7 +83,7 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
 
       return show;
     },
-    [data, activeValues, point, show]
+    [data, activeValues, show]
   );
 
   return (
@@ -102,4 +102,9 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
       }
     />
   );
+};
+
+RadialPointSeries.defaultProps = {
+  show: 'hover',
+  point: <RadialScatterPoint />
 };

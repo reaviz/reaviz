@@ -92,6 +92,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
   height,
   margins,
   className,
+  containerClassName,
   series,
   gridlines,
   brush,
@@ -291,6 +292,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       width={width}
       height={height}
       margins={margins}
+      containerClassName={containerClassName}
       xAxisVisible={isAxisVisible(xAxis.props)}
       yAxisVisible={isAxisVisible(yAxis.props)}
       className={classNames(css.areaChart, className, series.type)}

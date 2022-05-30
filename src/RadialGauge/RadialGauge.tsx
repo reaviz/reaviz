@@ -47,7 +47,8 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
   maxValue,
   startAngle,
   endAngle,
-  series
+  series,
+  containerClassName
 }) => {
   const scale = scaleLinear()
     .domain([minValue, maxValue])
@@ -62,6 +63,7 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
       xAxisVisible={false}
       yAxisVisible={false}
       className={className}
+      containerClassName={containerClassName}
     >
       {(props) =>
         cloneElement(series, {

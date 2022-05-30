@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { FC, ReactElement, useCallback, useState } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { getColor, ColorSchemeType, schemes } from '../../common/color';
 import { CloneElement } from 'rdk';
@@ -6,12 +6,7 @@ import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
-import {
-  TooltipAreaProps,
-  TooltipArea,
-  TooltipAreaEvent
-} from '../../common/Tooltip';
-import bind from 'memoize-bind';
+import { TooltipAreaProps, TooltipArea } from '../../common/Tooltip';
 
 export interface RadialAreaSeriesProps {
   /**
@@ -93,97 +88,82 @@ export interface RadialAreaSeriesProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
-interface RadialAreaSeriesState {
-  activeValues?: any;
-}
+export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
+  area,
+  line,
+  symbols,
+  tooltip,
+  xScale,
+  yScale,
+  data,
+  id,
+  animated,
+  width,
+  height,
+  innerRadius,
+  outerRadius,
+  colorScheme,
+  interpolation
+}) => {
+  const [activeValues, setActiveValues] = useState<any | null>(null);
 
-export class RadialAreaSeries extends Component<
-  RadialAreaSeriesProps,
-  RadialAreaSeriesState
-> {
-  static defaultProps: Partial<RadialAreaSeriesProps> = {
-    colorScheme: schemes.cybertron[0],
-    interpolation: 'smooth',
-    animated: true,
-    area: <RadialArea />,
-    line: <RadialLine />,
-    symbols: <RadialPointSeries />,
-    tooltip: <TooltipArea />
-  };
+  const getColorForPoint = useCallback(
+    (point: ChartInternalShallowDataShape, index: number) => {
+      return getColor({
+        colorScheme,
+        data,
+        index,
+        point
+      });
+    },
+    [colorScheme, data]
+  );
 
-  state: RadialAreaSeriesState = {};
-
-  getColor(point: ChartInternalShallowDataShape, index: number) {
-    const { colorScheme, data } = this.props;
-    return getColor({
-      colorScheme,
-      data,
-      index,
-      point
-    });
-  }
-
-  onValueEnter(event: TooltipAreaEvent) {
-    this.setState({
-      activeValues: event.value
-    });
-  }
-
-  onValueLeave() {
-    this.setState({
-      activeValues: undefined
-    });
-  }
-
-  renderArea() {
-    const {
-      area,
-      id,
-      xScale,
-      yScale,
-      data,
-      interpolation,
-      animated,
-      innerRadius,
-      outerRadius
-    } = this.props;
-
-    return (
+  const renderArea = useCallback(
+    () => (
       <CloneElement<RadialAreaProps>
         element={area}
         id={`${id}-radial-area`}
         xScale={xScale}
         yScale={yScale}
         animated={animated}
-        color={this.getColor.bind(this)}
+        color={getColorForPoint}
         data={data}
         interpolation={interpolation}
         outerRadius={outerRadius}
         innerRadius={innerRadius}
       />
-    );
-  }
+    ),
+    [
+      animated,
+      area,
+      data,
+      getColorForPoint,
+      id,
+      innerRadius,
+      interpolation,
+      outerRadius,
+      xScale,
+      yScale
+    ]
+  );
 
-  renderLine() {
-    const { line, xScale, yScale, data, animated, interpolation } = this.props;
-
-    return (
+  const renderLine = useCallback(
+    () => (
       <CloneElement<RadialLineProps>
         element={line}
         xScale={xScale}
         yScale={yScale}
         animated={animated}
         interpolation={interpolation}
-        color={this.getColor.bind(this)}
+        color={getColorForPoint}
         data={data}
       />
-    );
-  }
+    ),
+    [animated, data, getColorForPoint, interpolation, line, xScale, yScale]
+  );
 
-  renderSymbols() {
-    const { xScale, yScale, animated, area, symbols, data } = this.props;
-    const { activeValues } = this.state;
-
+  const renderSymbols = useCallback(() => {
     // Animations are only valid for Area
     const activeSymbols =
       (symbols && symbols.props.activeValues) || activeValues;
@@ -197,48 +177,50 @@ export class RadialAreaSeries extends Component<
         yScale={yScale}
         data={data}
         animated={isAnimated}
-        color={this.getColor.bind(this)}
+        color={getColorForPoint}
       />
     );
-  }
+  }, [
+    activeValues,
+    animated,
+    area,
+    data,
+    getColorForPoint,
+    symbols,
+    xScale,
+    yScale
+  ]);
 
-  render() {
-    const {
-      area,
-      line,
-      symbols,
-      tooltip,
-      xScale,
-      yScale,
-      data,
-      id,
-      width,
-      height,
-      innerRadius,
-      outerRadius
-    } = this.props;
+  return (
+    <CloneElement<TooltipAreaProps>
+      element={tooltip}
+      xScale={xScale}
+      yScale={yScale}
+      data={data}
+      height={height}
+      width={width}
+      isRadial={true}
+      innerRadius={innerRadius}
+      outerRadius={outerRadius}
+      color={getColorForPoint}
+      onValueEnter={(event) => setActiveValues(event.value)}
+      onValueLeave={() => setActiveValues(null)}
+    >
+      <g clipPath={`url(#${id}-path)`}>
+        {area && renderArea()}
+        {line && renderLine()}
+        {symbols && renderSymbols()}
+      </g>
+    </CloneElement>
+  );
+};
 
-    return (
-      <CloneElement<TooltipAreaProps>
-        element={tooltip}
-        xScale={xScale}
-        yScale={yScale}
-        data={data}
-        height={height}
-        width={width}
-        isRadial={true}
-        innerRadius={innerRadius}
-        outerRadius={outerRadius}
-        color={this.getColor.bind(this)}
-        onValueEnter={bind(this.onValueEnter, this)}
-        onValueLeave={bind(this.onValueLeave, this)}
-      >
-        <g clipPath={`url(#${id}-path)`}>
-          {area && this.renderArea()}
-          {line && this.renderLine()}
-          {symbols && this.renderSymbols()}
-        </g>
-      </CloneElement>
-    );
-  }
-}
+RadialAreaSeries.defaultProps = {
+  colorScheme: schemes.cybertron[0],
+  interpolation: 'smooth',
+  animated: true,
+  area: <RadialArea />,
+  line: <RadialLine />,
+  symbols: <RadialPointSeries />,
+  tooltip: <TooltipArea />
+};

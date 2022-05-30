@@ -50,6 +50,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   height,
   margins,
   className,
+  containerClassName,
   data,
   disabled,
   series
@@ -85,7 +86,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
         />
       );
     },
-    [data, series, type]
+    [data, disabled, series, type]
   );
 
   return (
@@ -94,6 +95,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       width={width}
       height={height}
       margins={margins}
+      containerClassName={containerClassName}
       xAxisVisible={false}
       yAxisVisible={false}
       center={false}

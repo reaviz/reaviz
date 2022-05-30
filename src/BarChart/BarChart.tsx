@@ -94,7 +94,8 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   series,
   brush,
   gridlines,
-  secondaryAxis
+  secondaryAxis,
+  containerClassName
 }) => {
   const isVertical = useMemo(
     () => series.props.layout === 'vertical',
@@ -413,6 +414,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       width={width}
       height={height}
       margins={margins}
+      containerClassName={containerClassName}
       xAxisVisible={isAxisVisible(xAxis.props)}
       yAxisVisible={isAxisVisible(yAxis.props)}
       className={classNames(css.barChart, className, css[series.props.type])}

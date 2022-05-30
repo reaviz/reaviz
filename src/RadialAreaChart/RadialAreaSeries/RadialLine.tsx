@@ -43,7 +43,7 @@ export interface RadialLineProps {
   /**
    * CSS classes to apply.
    */
-  className?: any;
+  className?: string;
 }
 
 export const RadialLine: FC<Partial<RadialLineProps>> = ({
@@ -53,8 +53,8 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   color,
   data,
   interpolation,
-  strokeWidth = 2,
-  animated = true
+  strokeWidth,
+  animated
 }) => {
   const getPath = useCallback(
     (preData: ChartInternalShallowDataShape[]) => {
@@ -114,4 +114,9 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
       strokeWidth={strokeWidth}
     />
   );
+};
+
+RadialLine.defaultProps = {
+  strokeWidth: 2,
+  animated: true
 };

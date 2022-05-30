@@ -47,12 +47,13 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
   height,
   margins,
   className,
+  containerClassName,
   innerRadius,
   series,
   axis,
   data
 }) => {
-  const getScales = useCallback((
+  const getScales = useCallback(
     (
       aggregatedData: ChartInternalShallowDataShape[],
       outer: number,
@@ -71,44 +72,49 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
         yScale,
         xScale
       };
-    }
-  ), []);
+    },
+    []
+  );
 
-  const renderChart = useCallback((containerProps: ChartContainerChildProps) => {
-    const { chartWidth, chartHeight, id } = containerProps;
-    const outerRadius = Math.min(chartWidth, chartHeight) / 2;
-    const aggregatedData = buildShallowChartData(data);
-    const { yScale, xScale } = getScales(
-      aggregatedData,
-      outerRadius,
-      innerRadius
-    );
+  const renderChart = useCallback(
+    (containerProps: ChartContainerChildProps) => {
+      const { chartWidth, chartHeight, id } = containerProps;
+      const outerRadius = Math.min(chartWidth, chartHeight) / 2;
+      const aggregatedData = buildShallowChartData(data);
+      const { yScale, xScale } = getScales(
+        aggregatedData,
+        outerRadius,
+        innerRadius
+      );
 
-    return (
-      <Fragment>
-        {axis && (
-          <CloneElement<RadialAxisProps>
-            element={axis}
+      return (
+        <Fragment>
+          {axis && (
+            <CloneElement<RadialAxisProps>
+              element={axis}
+              xScale={xScale}
+              height={chartHeight}
+              width={chartWidth}
+              innerRadius={innerRadius}
+            />
+          )}
+          <CloneElement<RadialScatterSeriesProps>
+            element={series}
+            id={id}
+            data={aggregatedData}
             xScale={xScale}
-            height={chartHeight}
-            width={chartWidth}
-            innerRadius={innerRadius}
+            yScale={yScale}
           />
-        )}
-        <CloneElement<RadialScatterSeriesProps>
-          element={series}
-          id={id}
-          data={aggregatedData}
-          xScale={xScale}
-          yScale={yScale}
-        />
-      </Fragment>
-    );
-  }, [data, getScales, innerRadius, series, axis]);
+        </Fragment>
+      );
+    },
+    [data, getScales, innerRadius, series, axis]
+  );
 
   return (
     <ChartContainer
       id={id}
+      containerClassName={containerClassName}
       width={width}
       height={height}
       margins={margins}
@@ -120,4 +126,4 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-}
+};

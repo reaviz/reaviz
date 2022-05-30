@@ -58,7 +58,8 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   id,
   width,
   height,
-  className
+  className,
+  containerClassName
 }) => {
   const getScalesData = useCallback(
     (chartHeight: number, chartWidth: number) => {
@@ -96,10 +97,11 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
 
   const renderChart = (containerProps: ChartContainerChildProps) => {
     const { chartWidth, chartHeight, updateAxes, id } = containerProps;
-    const { xScale, yScale, data: scalesData } = getScalesData(
-      chartHeight,
-      chartWidth
-    );
+    const {
+      xScale,
+      yScale,
+      data: scalesData
+    } = getScalesData(chartHeight, chartWidth);
 
     return (
       <Fragment>
@@ -144,6 +146,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       width={width}
       height={height}
       margins={margins}
+      containerClassName={containerClassName}
       xAxisVisible={isAxisVisible(xAxis.props)}
       yAxisVisible={isAxisVisible(yAxis.props)}
       className={className}
