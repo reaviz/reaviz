@@ -28,12 +28,17 @@ export interface ChartProps {
   /**
    * Classnames for the chart.
    */
-  className?: any;
+  className?: string;
+
+  /**
+   * Classnames for the chart.
+   */
+  containerClassName?: string;
 
   /**
    * Additional css styles.
    */
-  style?: any;
+  style?: React.StyleHTMLAttributes<SVGAElement>;
 
   /**
    * Center the chart. Used mainly internally.
@@ -87,6 +92,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   centerY,
   style,
   margins,
+  containerClassName,
   xAxisVisible,
   yAxisVisible,
   id,
@@ -169,13 +175,18 @@ export const ChartContainer: FC<ChartContainerProps> = ({
 
   const translateX = center || centerX ? width / 2 : childProps.xMargin;
   const translateY = center || centerY ? height / 2 : childProps.yMargin;
+
   const styleHeight =
     rest.height !== undefined && rest.height !== null ? rest.height : '100%';
   const styleWidth =
     rest.width !== undefined && rest.width !== null ? rest.width : '100%';
 
   return (
-    <div ref={observe} style={{ height: styleHeight, width: styleWidth }}>
+    <div
+      ref={observe}
+      style={{ height: styleHeight, width: styleWidth }}
+      className={containerClassName}
+    >
       {height > 0 && width > 0 && (
         <svg width={width} height={height} className={className} style={style}>
           <g transform={`translate(${translateX}, ${translateY})`}>
