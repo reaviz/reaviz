@@ -1,3 +1,7 @@
+# 13.1.2 - 5/30/22
+- [feature] add ability to pass className to chart container
+- [chore] improve style and classname types for chart container
+
 # 13.1.1 - 5/12/22
 - [feature] add classname to count
 
