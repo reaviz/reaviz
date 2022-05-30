@@ -1,3 +1,7 @@
+# 13.1.3- 5/30/22
+- [fix] passdown container classname
+- [chore] migrate radial bar chart to fc
+
 # 13.1.2 - 5/30/22
 - [feature] add ability to pass className to chart container
 - [chore] improve style and classname types for chart container
