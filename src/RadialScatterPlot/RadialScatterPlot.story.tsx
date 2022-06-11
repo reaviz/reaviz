@@ -191,8 +191,52 @@ export const Symbols = () => {
   );
 };
 
-export const Resizable = () => (
-  <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
-    <RadialScatterPlot data={medDateData} />
-  </div>
-);
+export const Resizable = () => {
+  const innerRadius = number('Inner Radius', 10);
+  const animated = boolean('Animated', true);
+  const fill = color('Fill', 'rgba(45, 96, 232, .6)');
+  const size = number('Size', 5);
+  const tickCount = number('Tick Count', 5);
+  const arcCount = number('Arc Count', 10);
+  const tickPosition = select(
+    'Tick Position',
+    {
+      inside: 'inside',
+      outside: 'outside'
+    },
+    'inside'
+  );
+  const data = object('Data', largeSignalChartData);
+  
+  return (
+    <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
+      <RadialScatterPlot
+        height={210}
+        width={210}
+        data={data}
+        innerRadius={innerRadius}
+        series={
+          <RadialScatterSeries
+            animated={animated}
+            point={<RadialScatterPoint size={size} color={fill} />}
+          />
+        }
+        axis={
+          <RadialAxis
+            ticks={
+              <RadialAxisTickSeries
+                count={tickCount}
+                tick={
+                  <RadialAxisTick
+                    line={<RadialAxisTickLine position={tickPosition} />}
+                  />
+                }
+              />
+            }
+            arcs={<RadialAxisArcSeries count={arcCount} />}
+          />
+        }
+    />
+    </div>
+  )
+};
