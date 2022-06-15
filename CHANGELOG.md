@@ -1,3 +1,8 @@
+# 13.1.4- 6/15/22
+- [improvement] add ability to pass fill to radial gauge arc
+- [improvement] make radial gauge arc outer component for easier use
+- [chore] cleanup radial gauge folder structure
+
 # 13.1.3- 5/30/22
 - [fix] passdown container classname
 - [chore] migrate radial bar chart to fc
