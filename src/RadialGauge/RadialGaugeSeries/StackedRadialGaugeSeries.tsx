@@ -5,9 +5,9 @@ import { ChartShallowDataShape } from '../../common/data';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
 import {
-  StackedRadialGaugeLabel,
-  StackedRadialGaugeLabelProps
-} from './StackedRadialGaugeLabel';
+  StackedRadialGaugeValueLabel,
+  StackedRadialGaugeValueLabelProps
+} from './StackedRadialGaugeValueLabel';
 
 export interface StackedRadialGaugeSeriesProps {
   /**
@@ -59,8 +59,8 @@ export interface StackedRadialGaugeSeriesProps {
    * Label component.
    */
   label: ReactElement<
-    StackedRadialGaugeLabelProps,
-    typeof StackedRadialGaugeLabel
+    StackedRadialGaugeValueLabelProps,
+    typeof StackedRadialGaugeValueLabel
   > | null;
 
   /**
@@ -146,7 +146,7 @@ export const StackedRadialGaugeSeries: FC<
 StackedRadialGaugeSeries.defaultProps = {
   outerArc: <RadialGaugeArc disabled={true} animated={false} />,
   innerArc: <RadialGaugeArc animated={true} />,
-  label: <StackedRadialGaugeLabel />,
+  label: <StackedRadialGaugeValueLabel />,
   colorScheme: ['#00ECB1'],
   fillFactor: 0.2,
   arcPadding: 0.15

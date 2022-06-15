@@ -12,7 +12,7 @@ import { categoryData } from '../../demo';
 import {
   RadialGaugeArc,
   RadialGaugeSeries,
-  StackedRadialGaugeLabel,
+  StackedRadialGaugeValueLabel,
   StackedRadialGaugeSeries
 } from './RadialGaugeSeries';
 
@@ -123,10 +123,6 @@ export const MultiLine = () => (
   />
 );
 
-MultiLine.story = {
-  name: 'Multi-line'
-};
-
 export const Stacked = () => {
   const data = object('Data', categoryData);
 
@@ -172,7 +168,7 @@ export const Stacked = () => {
           arcPadding={arcPadding}
           fillFactor={fillFactor}
           colorScheme={colorScheme}
-          label={<StackedRadialGaugeLabel label={label} />}
+          label={<StackedRadialGaugeValueLabel label={label} />}
         />
       }
     />

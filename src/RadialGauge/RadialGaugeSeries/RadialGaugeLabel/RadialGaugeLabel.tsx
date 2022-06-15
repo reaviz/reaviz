@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalDataTypes
-} from '../../common/data';
-import { formatValue } from '../../common/utils';
+} from '../../../common/data';
+import { formatValue } from '../../../common/utils';
 import classNames from 'classnames';
 import css from './RadialGaugeLabel.module.css';
 
