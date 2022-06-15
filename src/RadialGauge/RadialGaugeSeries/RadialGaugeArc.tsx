@@ -61,6 +61,11 @@ export interface RadialGaugeArcProps {
   disabled: boolean;
 
   /**
+   * Fill the arc.
+   */
+  fill?: string;
+
+  /**
    * Tooltip component.
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
@@ -92,6 +97,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   color,
   animated,
   disabled,
+  fill,
   onClick,
   onMouseEnter,
   onMouseLeave,
@@ -117,17 +123,20 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   };
 
   return (
-    <PieArc
-      arc={arcGenerator}
-      data={arcData}
-      animated={animated}
-      color={color}
-      disabled={disabled}
-      tooltip={tooltip}
-      onClick={onClick}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-    />
+    <g>
+      {fill && <circle fill={fill} r={outerRadius} />}
+      <PieArc
+        arc={arcGenerator}
+        data={arcData}
+        animated={animated}
+        color={color}
+        disabled={disabled}
+        tooltip={tooltip}
+        onClick={onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
+    </g>
   );
 };
 

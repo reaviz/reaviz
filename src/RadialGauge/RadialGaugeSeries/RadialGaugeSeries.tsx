@@ -16,6 +16,7 @@ import {
   RadialGaugeValueLabel,
   RadialGaugeValueLabelProps
 } from './RadialGaugeValueLabel';
+import { RadialGaugeOuterArc } from './RadialGaugeOuterArc';
 
 export interface RadialGaugeSeriesProps {
   /**
@@ -208,8 +209,8 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
 
 RadialGaugeSeries.defaultProps = {
   arcWidth: 5,
-  outerArc: <RadialGaugeArc disabled={true} animated={false} />,
-  innerArc: <RadialGaugeArc animated={true} />,
+  outerArc: <RadialGaugeOuterArc />,
+  innerArc: <RadialGaugeArc />,
   label: <RadialGaugeLabel />,
   valueLabel: <RadialGaugeValueLabel />,
   colorScheme: ['#00ECB1'],

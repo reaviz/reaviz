@@ -54,6 +54,24 @@ export const Single = () => {
   );
 };
 
+export const FilledArc = () => (
+  <RadialGauge
+    data={[
+      {
+        key: 'Austin, TX',
+        data: 24
+      }
+    ]}
+    width={350}
+    height={350}
+    series={
+      <RadialGaugeSeries
+        outerArc={<RadialGaugeArc fill="gray" animated={false} />}
+      />
+    }
+  />
+);
+
 export const CustomArc = () => {
   const arcWidth = number('Arc width', 25);
   const arcCornerRadius = number('Arc corner radius', 12.5);
