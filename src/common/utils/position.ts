@@ -1,5 +1,8 @@
+
 import { bisector } from 'd3-array';
 import { applyToPoint, inverse, applyToPoints } from 'transformation-matrix';
+
+type PointObjectNotation = { x: number; y: number };
 
 /**
  * Add ability to calculate scale band position.
@@ -97,7 +100,7 @@ export const getPositionForTarget = ({ target, clientX, clientY }) => {
 /**
  * Gets the point from q given matrix.
  */
-export const getPointFromMatrix = (event, matrix) => {
+export const getPointFromMatrix = (event, matrix) : PointObjectNotation => {
   const parent = getParentSVG(event);
 
   if (!parent) {
@@ -116,7 +119,7 @@ export const getPointFromMatrix = (event, matrix) => {
 /**
  * Get the start/end matrix.
  */
-export const getLimitMatrix = (height: number, width: number, matrix) =>
+export const getLimitMatrix = (height: number, width: number, matrix) : PointObjectNotation[] =>
   applyToPoints(matrix, [
     { x: 0, y: 0 },
     { x: width, y: height }
