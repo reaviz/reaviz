@@ -1,3 +1,6 @@
+# 13.1.5 - 7/20/22
+- [fix] fix transform-matrix nested type build error #79
+
 # 13.1.4- 6/15/22
 - [improvement] add ability to pass fill to radial gauge arc
 - [improvement] make radial gauge arc outer component for easier use
