@@ -92,7 +92,7 @@
     "rdk": "^6.0.2",
     "react-cool-dimensions": "^2.0.7",
     "react-fast-compare": "^3.2.0",
-    "realayers": "^3.0.3",
+    "realayers": "^3.0.7",
     "transformation-matrix": "^2.9.0"
   },
   "storybook-deployer": {

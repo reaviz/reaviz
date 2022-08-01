@@ -13576,10 +13576,10 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-realayers@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/realayers/-/realayers-3.0.3.tgz#5d82c012bb72f7302f659e23b9c02fcd40efda8a"
-  integrity sha512-YW8zfY6PSAU9tc3GBCHWVDqdhQU610o9MNnH7AMwEn+2ACSiOx2G9eJUbqoE1btaWes0vdmGSBM/ZWeH+ukn/w==
+realayers@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/realayers/-/realayers-3.0.7.tgz#36e684128ba2f3d29c612ca98e66bfdcfc5f8450"
+  integrity sha512-lHsOqgU2kypiEq2xkeFCSB9vU7xiwI+VVyfZiljoNmOPW0HjVGpTuCtzUSn7KBqXHuhz/StRLUIQskD4Vp5NaQ==
   dependencies:
     classnames "^2.3.1"
     create-global-state-hook "^0.0.2"
