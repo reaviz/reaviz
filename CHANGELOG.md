@@ -1,3 +1,10 @@
+# 13.1.6 - 8/1/22
+- [fix] fix `BarLabel` props not partial
+- [fix] remove knobs from heatmap stories due to errors
+- [fix] fix rx/ry not being passed to heatmap cells
+- [style] update padding from 0.1 to 0.3 on heatmaps
+- [chore] upgrade realayers
+
 # 13.1.5 - 7/20/22
 - [fix] fix transform-matrix nested type build error #79
 
