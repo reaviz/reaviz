@@ -7,7 +7,6 @@ import {
   marchHeatMapData,
   heatmapCalendarOffsetData
 } from '../../demo';
-import { number, object } from '@storybook/addon-knobs';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 
 export default {
@@ -19,55 +18,42 @@ export default {
   }
 };
 
-export const YearCalendar = () => {
-    const height = number('Height', 115);
-    const width = number('Width', 715);
-    const data = object('Data', heatmapCalendarData);
+export const YearCalendar = () => (
+  <CalendarHeatmap height={115} width={715} data={heatmapCalendarData} />
+);
 
-    return <CalendarHeatmap height={height} width={width} data={data} />;
-  };
+export const YearCalendarMarchStart = () => (
+  <CalendarHeatmap height={115} width={715} data={heatmapCalendarOffsetData} />
+);
 
-export const YearCalendarWMarchStart = () => {
-    const height = number('Height', 115);
-    const width = number('Width', 715);
-    const data = object('Data', heatmapCalendarOffsetData);
-
-    return <CalendarHeatmap height={height} width={width} data={data} />;
-  };
-
-YearCalendarWMarchStart.story = {
-  name: 'Year Calendar w/ March Start',
-};
-
-export const MonthCalendar = () => {
-    const height = number('Height', 115);
-    const width = number('Width', 100);
-    const data = object('Data', janHeatMapData);
-
-    return (
-      <CalendarHeatmap height={height} width={width} view="month" data={data} />
-    );
-  };
+export const MonthCalendar = () => (
+  <CalendarHeatmap
+    height={115}
+    width={100}
+    view="month"
+    data={janHeatMapData}
+  />
+);
 
 export const MultiMonthCalendar = () => (
-    <div style={{ display: 'flex' }}>
-      <CalendarHeatmap
-        height={115}
-        width={100}
-        view="month"
-        data={janHeatMapData}
-      />
-      <CalendarHeatmap
-        height={115}
-        width={100}
-        view="month"
-        data={febHeatMapData}
-      />
-      <CalendarHeatmap
-        height={115}
-        width={100}
-        view="month"
-        data={marchHeatMapData}
-      />
-    </div>
-  );
+  <div style={{ display: 'flex' }}>
+    <CalendarHeatmap
+      height={115}
+      width={100}
+      view="month"
+      data={janHeatMapData}
+    />
+    <CalendarHeatmap
+      height={115}
+      width={100}
+      view="month"
+      data={febHeatMapData}
+    />
+    <CalendarHeatmap
+      height={115}
+      width={100}
+      view="month"
+      data={marchHeatMapData}
+    />
+  </div>
+);
