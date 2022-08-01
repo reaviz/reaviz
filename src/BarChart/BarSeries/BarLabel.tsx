@@ -96,7 +96,7 @@ export interface BarLabelProps {
   className?: any;
 }
 
-export const BarLabel: FC<BarLabelProps> = ({
+export const BarLabel: FC<Partial<BarLabelProps>> = ({
   fontSize,
   fontFamily,
   fill,
