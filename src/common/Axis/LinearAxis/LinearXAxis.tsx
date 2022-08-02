@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { FC } from 'react';
 import {
   LinearAxisTickLabelProps,
   LinearAxisTickLabel
@@ -13,55 +13,43 @@ import {
 } from './LinearAxisTickSeries';
 import { LinearAxisProps, LinearAxis } from './LinearAxis';
 
-export class LinearXAxisTickLabel extends Component<LinearAxisTickLabelProps> {
-  static defaultProps: Partial<LinearAxisTickLabelProps> = {
-    ...LinearAxisTickLabel.defaultProps,
-    rotation: true,
-    position: 'end',
-    align: 'center'
-  };
+export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
+  props
+) => <LinearAxisTickLabel {...props} />;
+LinearXAxisTickLabel.defaultProps = {
+  ...LinearAxisTickLabel.defaultProps,
+  rotation: true,
+  position: 'end',
+  align: 'center'
+};
 
-  render() {
-    return <LinearAxisTickLabel {...this.props} />;
-  }
-}
+export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
+  props
+) => <LinearAxisTickLine {...props} />;
+LinearXAxisTickLine.defaultProps = {
+  ...LinearAxisTickLine.defaultProps,
+  position: 'end'
+};
 
-export class LinearXAxisTickLine extends Component<LinearAxisTickLineProps> {
-  static defaultProps: Partial<LinearAxisTickLineProps> = {
-    ...LinearAxisTickLine.defaultProps,
-    position: 'end'
-  };
+export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
+  props
+) => <LinearAxisTickSeries {...props} />;
+LinearXAxisTickSeries.defaultProps = {
+  ...LinearAxisTickSeries.defaultProps,
+  tickSize: 75,
+  line: <LinearXAxisTickLine />,
+  label: <LinearXAxisTickLabel />
+};
 
-  render() {
-    return <LinearAxisTickLine {...this.props} />;
-  }
-}
-
-export class LinearXAxisTickSeries extends Component<LinearAxisTickSeriesProps> {
-  static defaultProps: Partial<LinearAxisTickSeriesProps> = {
-    ...LinearAxisTickSeries.defaultProps,
-    tickSize: 75,
-    line: <LinearXAxisTickLine />,
-    label: <LinearXAxisTickLabel />
-  };
-
-  render() {
-    return <LinearAxisTickSeries {...this.props} />;
-  }
-}
-
-export class LinearXAxis extends Component<LinearAxisProps> {
-  static defaultProps: Partial<LinearAxisProps> = {
-    ...LinearAxis.defaultProps,
-    position: 'end',
-    roundDomains: false,
-    scaled: false,
-    type: 'value',
-    orientation: 'horizontal',
-    tickSeries: <LinearXAxisTickSeries />
-  };
-
-  render() {
-    return <LinearAxis {...this.props} />;
-  }
-}
+export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => (
+  <LinearAxis {...props} />
+);
+LinearXAxis.defaultProps = {
+  ...LinearAxis.defaultProps,
+  position: 'end',
+  roundDomains: false,
+  scaled: false,
+  type: 'value',
+  orientation: 'horizontal',
+  tickSeries: <LinearXAxisTickSeries />
+};
