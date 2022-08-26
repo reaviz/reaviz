@@ -37,9 +37,17 @@ export class ChartBrush extends Component<ChartBrushProps, {}> {
         event.end !== undefined &&
         (event.start !== 0 || event.end !== width)
       ) {
-        const start = scale.invert(event.start);
-        const end = scale.invert(event.end);
-        domain = [start, end];
+        if (scale.invert) {
+          const start = scale.invert(event.start);
+          const end = scale.invert(event.end);
+          domain = [start, end];
+        } else {
+          // invert scaleBend
+          const band = scale.step();
+          const start = Math.floor(event.start / band);
+          const end = Math.floor(event.end / band);
+          domain = [scale.domain()[start], scale.domain()[end]];
+        }
       }
 
       onBrushChange({
