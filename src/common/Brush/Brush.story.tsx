@@ -80,6 +80,7 @@ export const Bar = () => {
   const barData = range(50)
     .filter(() => randomNumber(1, 2) % 2)
     .map((i) => ({
+      id: i,
       key: generateDate(randomNumber(i - 2, i + 2)),
       data: randomNumber(1, 10)
     }))
@@ -89,7 +90,12 @@ export const Bar = () => {
     <BarChart
       width={450}
       height={45}
-      brush={<ChartBrush disabled={false} />}
+      brush={
+        <ChartBrush
+          disabled={false}
+          onBrushChange={({ domain }) => console.log(domain)}
+        />
+      }
       data={barData}
       gridlines={null}
       yAxis={
@@ -100,7 +106,7 @@ export const Bar = () => {
       }
       xAxis={
         <LinearXAxis
-          type="time"
+          type="category"
           tickSeries={
             <LinearXAxisTickSeries
               label={<LinearXAxisTickLabel rotation={false} />}
