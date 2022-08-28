@@ -1,3 +1,6 @@
+# 13.1.7 - 8/28/22
+- [fix] Fix bar chart brush on categorical scales #83
+
 # 13.1.6 - 8/1/22
 - [fix] fix `BarLabel` props not partial
 - [fix] remove knobs from heatmap stories due to errors
