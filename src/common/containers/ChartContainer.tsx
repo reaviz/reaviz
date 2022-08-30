@@ -101,8 +101,8 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const curId = useId(id);
   const [xAxisSized, setXAxisSized] = useState<boolean>(false);
   const [yAxisSized, setYAxisSized] = useState<boolean>(false);
-  const [xOffset, setYOffset] = useState<number>(0);
-  const [yOffset, setXOffset] = useState<number>(0);
+  const [xOffset, setXOffset] = useState<number>(0);
+  const [yOffset, setYOffset] = useState<number>(0);
   const { observe, width, height } = useDimensions<HTMLDivElement>();
 
   const chartSized = useMemo(() => {
