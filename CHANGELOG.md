@@ -1,3 +1,6 @@
+# 13.1.8 - 8/30/22
+- [fix] Fix the x and y offset for chartContainer #84 
+
 # 13.1.7 - 8/28/22
 - [fix] Fix bar chart brush on categorical scales #83
 
