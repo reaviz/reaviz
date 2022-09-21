@@ -47,11 +47,15 @@ const xAxisLabelFormat = (start: Date) => (weeks: number) =>
 
 export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   view,
-  series,
   data,
   ...rest
 }) => {
-  const { data: domainData, yDomain, xDomain, start } = useMemo(() => buildDataScales(data, view), [data, view]);
+  const {
+    data: domainData,
+    yDomain,
+    xDomain,
+    start
+  } = useMemo(() => buildDataScales(data, view), [data, view]);
 
   // For month, only pass 1 tick value
   const xTickValues = view === 'year' ? undefined : [1];
