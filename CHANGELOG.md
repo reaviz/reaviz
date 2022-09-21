@@ -1,3 +1,6 @@
+# 13.1.8 - 9/21/22
+- [fix] Fix CalendarHeatmap series prop not passed into Heatmap #85
+
 # 13.1.8 - 8/30/22
 - [fix] Fix the x and y offset for chartContainer #84 
 
