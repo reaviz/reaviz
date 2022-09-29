@@ -13294,10 +13294,10 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rdk@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.0.2.tgz#3dc4f57d6df1d8232555313855157070726ead6b"
-  integrity sha512-Q3nlhqboFdoigCCHIUZFDzAlRY6dTCfOi4zPuELLcbqUZ8cqFE6HK7KREBRqIo2WPmGrCmf+FW299j/0LAvJIA==
+rdk@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.0.4.tgz#e61e1e9996acbb8a0b3348dd8ad75d8942980254"
+  integrity sha512-iAFFwufWZYc3uVN/BTWIRsVSHppH/BTlo7fnOLdibtV0SdWOtzZ/+nVQwRasEflPzKG+fUDCCbP53ywecVhRiA==
   dependencies:
     classnames "^2.3.1"
     popper.js "^1.16.1"
@@ -13576,15 +13576,15 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
-realayers@^3.0.7:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/realayers/-/realayers-3.0.7.tgz#36e684128ba2f3d29c612ca98e66bfdcfc5f8450"
-  integrity sha512-lHsOqgU2kypiEq2xkeFCSB9vU7xiwI+VVyfZiljoNmOPW0HjVGpTuCtzUSn7KBqXHuhz/StRLUIQskD4Vp5NaQ==
+realayers@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/realayers/-/realayers-3.0.11.tgz#64ff23133034a368b3bb036d505dd6166c92e0dd"
+  integrity sha512-YcaIBJAHKxSrD+pTuOfuMIAkzzY2a/PTPiThO16QW76ZnJIc33gNApQPYlD3SHetxqbqsqrcZ1TI7AqLl/G89g==
   dependencies:
     classnames "^2.3.1"
     create-global-state-hook "^0.0.2"
     focus-trap-react "^8.7.1"
-    rdk "^6.0.2"
+    rdk "^6.0.4"
 
 rechoir@^0.6.2:
   version "0.6.2"

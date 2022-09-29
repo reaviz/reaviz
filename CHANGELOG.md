@@ -1,4 +1,8 @@
-# 13.1.8 - 9/21/22
+# 13.1.10 - 9/29/22
+- [fix] Fix esm import #87
+- [chore] upgrade rdk/realayers
+
+# 13.1.9 - 9/21/22
 - [fix] Fix CalendarHeatmap series prop not passed into Heatmap #85
 
 # 13.1.8 - 8/30/22
