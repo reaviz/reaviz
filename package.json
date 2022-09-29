@@ -19,6 +19,7 @@
   },
   "source": "src/index.ts",
   "main": "dist/index.cjs.js",
+  "exports": "./dist/index.esm.js",
   "module": "dist/index.esm.js",
   "browser": "dist/index.js",
   "style": "dist/index.css",
