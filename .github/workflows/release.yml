@@ -38,8 +38,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish Chromatic
-        run: yarn chromatic
+      # - name: Publish Chromatic
+      #  run: yarn chromatic
 
       # - name: Create Release Pull Request or Publish to npm
       #  uses: changesets/action@master
