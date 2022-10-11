@@ -51,7 +51,31 @@ export const NoAnimation = () => (
   />
 );
 
-export const _20Items = () => <TreeMap data={twentyItems} height={600} width={600} />;
+const longLabelData: ChartShallowDataShape[] = [
+  { key: 'Short text', data: 100 },
+  { key: 'Another short text', data: 45 },
+  {
+    key: "This is a test of very long text that should not fit in a rectangle's width.",
+    data: 75
+  },
+  {
+    key: "This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.",
+    data: 25
+  }
+];
+
+export const LongText = () => (
+  <TreeMap
+    height={400}
+    width={400}
+    series={<TreeMapSeries />}
+    data={longLabelData}
+  />
+);
+
+export const _20Items = () => (
+  <TreeMap data={twentyItems} height={600} width={600} />
+);
 
 export const _100Items = () => {
   const longData: ChartShallowDataShape[] = range(100).map((o) => ({
@@ -71,7 +95,7 @@ export const Events = () => (
       <TreeMapSeries
         rect={
           <TreeMapRect
-           onMouseEnter={(event, data) => {
+            onMouseEnter={(event, data) => {
               console.log('onMouseEnter', event, data);
             }}
             onMouseLeave={(event, data) => {
@@ -90,203 +114,203 @@ export const Events = () => (
 
 const twentyItems = [
   {
-      "key": "Item 1",
-      "data": 3
+    key: 'Item 1',
+    data: 3
   },
   {
-      "key": "Item 2",
-      "data": 12
+    key: 'Item 2',
+    data: 12
   },
   {
-      "key": "Item 3",
-      "data": 11
+    key: 'Item 3',
+    data: 11
   },
   {
-      "key": "Item 4",
-      "data": 13
+    key: 'Item 4',
+    data: 13
   },
   {
-      "key": "Item 5",
-      "data": 12
+    key: 'Item 5',
+    data: 12
   },
   {
-      "key": "Item 6",
-      "data": 8
+    key: 'Item 6',
+    data: 8
   },
   {
-      "key": "Item 7",
-      "data": 10
+    key: 'Item 7',
+    data: 10
   },
   {
-      "key": "Item 8",
-      "data": 17
+    key: 'Item 8',
+    data: 17
   },
   {
-      "key": "Item 9",
-      "data": 2
+    key: 'Item 9',
+    data: 2
   },
   {
-      "key": "Item 10",
-      "data": 4
+    key: 'Item 10',
+    data: 4
   },
   {
-      "key": "Item 11",
-      "data": 0
+    key: 'Item 11',
+    data: 0
   },
   {
-      "key": "Item 12",
-      "data": 15
+    key: 'Item 12',
+    data: 15
   },
   {
-      "key": "Item 13",
-      "data": 12
+    key: 'Item 13',
+    data: 12
   },
   {
-      "key": "Item 14",
-      "data": 5
+    key: 'Item 14',
+    data: 5
   },
   {
-      "key": "Item 15",
-      "data": 12
+    key: 'Item 15',
+    data: 12
   },
   {
-      "key": "Item 16",
-      "data": 1
+    key: 'Item 16',
+    data: 1
   },
   {
-      "key": "Item 17",
-      "data": 7
+    key: 'Item 17',
+    data: 7
   },
   {
-      "key": "Item 18",
-      "data": 7
+    key: 'Item 18',
+    data: 7
   },
   {
-      "key": "Item 19",
-      "data": 12
+    key: 'Item 19',
+    data: 12
   },
   {
-      "key": "Item 20",
-      "data": 1
+    key: 'Item 20',
+    data: 1
   },
   {
-      "key": "Item 21",
-      "data": 5
+    key: 'Item 21',
+    data: 5
   },
   {
-      "key": "Item 22",
-      "data": 0
+    key: 'Item 22',
+    data: 0
   },
   {
-      "key": "Item 23",
-      "data": 1
+    key: 'Item 23',
+    data: 1
   },
   {
-      "key": "Item 24",
-      "data": 0
+    key: 'Item 24',
+    data: 0
   },
   {
-      "key": "Item 25",
-      "data": 11
+    key: 'Item 25',
+    data: 11
   },
   {
-      "key": "Item 26",
-      "data": 17
+    key: 'Item 26',
+    data: 17
   },
   {
-      "key": "Item 27",
-      "data": 17
+    key: 'Item 27',
+    data: 17
   },
   {
-      "key": "Item 28",
-      "data": 11
+    key: 'Item 28',
+    data: 11
   },
   {
-      "key": "Item 29",
-      "data": 8
+    key: 'Item 29',
+    data: 8
   },
   {
-      "key": "Item 30",
-      "data": 7
+    key: 'Item 30',
+    data: 7
   },
   {
-      "key": "Item 31",
-      "data": 13
+    key: 'Item 31',
+    data: 13
   },
   {
-      "key": "Item 32",
-      "data": 7
+    key: 'Item 32',
+    data: 7
   },
   {
-      "key": "Item 33",
-      "data": 3
+    key: 'Item 33',
+    data: 3
   },
   {
-      "key": "Item 34",
-      "data": 9
+    key: 'Item 34',
+    data: 9
   },
   {
-      "key": "Item 35",
-      "data": 16
+    key: 'Item 35',
+    data: 16
   },
   {
-      "key": "Item 36",
-      "data": 11
+    key: 'Item 36',
+    data: 11
   },
   {
-      "key": "Item 37",
-      "data": 8
+    key: 'Item 37',
+    data: 8
   },
   {
-      "key": "Item 38",
-      "data": 12
+    key: 'Item 38',
+    data: 12
   },
   {
-      "key": "Item 39",
-      "data": 7
+    key: 'Item 39',
+    data: 7
   },
   {
-      "key": "Item 40",
-      "data": 4
+    key: 'Item 40',
+    data: 4
   },
   {
-      "key": "Item 41",
-      "data": 5
+    key: 'Item 41',
+    data: 5
   },
   {
-      "key": "Item 42",
-      "data": 11
+    key: 'Item 42',
+    data: 11
   },
   {
-      "key": "Item 43",
-      "data": 17
+    key: 'Item 43',
+    data: 17
   },
   {
-      "key": "Item 44",
-      "data": 11
+    key: 'Item 44',
+    data: 11
   },
   {
-      "key": "Item 45",
-      "data": 1
+    key: 'Item 45',
+    data: 1
   },
   {
-      "key": "Item 46",
-      "data": 10
+    key: 'Item 46',
+    data: 10
   },
   {
-      "key": "Item 47",
-      "data": 10
+    key: 'Item 47',
+    data: 10
   },
   {
-      "key": "Item 48",
-      "data": 12
+    key: 'Item 48',
+    data: 12
   },
   {
-      "key": "Item 49",
-      "data": 3
+    key: 'Item 49',
+    data: 3
   },
   {
-      "key": "Item 50",
-      "data": 14
+    key: 'Item 50',
+    data: 14
   }
 ];

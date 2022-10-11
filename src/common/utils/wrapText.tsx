@@ -13,43 +13,51 @@ export interface WrapTextInputs {
   fontSize: number;
 }
 
-export function wrapText({ key, x = 0, y = 0, paddingY, paddingX, width, height, fontFamily, fontSize }: WrapTextInputs) {
+export function wrapText({
+  key,
+  x = 0,
+  y = 0,
+  paddingY,
+  paddingX,
+  width,
+  height,
+  fontFamily,
+  fontSize
+}: WrapTextInputs) {
   const size = calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);
 
   if (words.length > 1 && size.width > width) {
     let rows = [];
-    let sumWidth = 0;
-    let sumHeight = 0;
+    let maxWidth = 0;
+    let maxHeight = 0;
     let curText = '';
-    let lineNum = 0;
+    let currWidth = 0;
+    let nextText = '';
+    let nextWidth = 0;
 
     for (const word of words) {
-      const wordSize = calculateDimensions(word, fontFamily, fontSize);
-      const wordWidth = wordSize.width;
+      nextText = curText === '' ? word : `${curText} ${word}`;
+      nextWidth = calculateDimensions(nextText, fontFamily, fontSize).width;
 
-      lineNum++;
-      if (sumWidth + wordWidth < width) {
-        sumWidth += wordWidth;
-        sumHeight += wordSize.height;
-        curText = `${curText} ${word}`;
+      if (nextWidth <= width - (paddingX ? 2 * paddingX : 0)) {
+        curText = nextText;
+        currWidth = nextWidth;
       } else {
         rows.push(curText);
-        sumWidth += wordSize.width;
-        sumHeight += wordSize.height;
+        maxWidth = Math.max(maxWidth, currWidth);
         curText = word;
-      }
-
-      if (words.length === lineNum) {
-        rows.push(curText);
+        currWidth = calculateDimensions(curText, fontFamily, fontSize).width;
       }
     }
+    rows.push(curText);
+    maxHeight = rows.length * size.height;
 
-    if (height && (sumHeight + paddingY) >= height) {
+    if (height && maxHeight >= height - (paddingY ? 2 * paddingY : 0)) {
       return null;
     }
 
-    if (width && (sumWidth + paddingX) >= width) {
+    if (width && maxWidth >= width - (paddingX ? 2 * paddingX : 0)) {
       return null;
     }
 
@@ -58,7 +66,13 @@ export function wrapText({ key, x = 0, y = 0, paddingY, paddingX, width, height,
         key={i}
         dominantBaseline="alphabetic"
         style={{ baselineShift: '0%' }}
-        dy={i > 0 ? size.height : -size.height / 2}
+        dy={
+          i > 0
+            ? size.height
+            : height
+              ? size.height / 2 - 5
+              : -maxHeight / 2 + size.height
+        }
         x={x}
       >
         {r}
@@ -66,11 +80,11 @@ export function wrapText({ key, x = 0, y = 0, paddingY, paddingX, width, height,
     ));
   }
 
-  if (height && (size.height + paddingY) >= height) {
+  if (height && size.height + paddingY >= height) {
     return null;
   }
 
-  if (width && (size.width + paddingX) >= width) {
+  if (width && size.width + paddingX >= width) {
     return null;
   }
 
