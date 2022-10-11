@@ -1,4 +1,4 @@
-import calculateSize from './calculate-size';
+import calculateSize from 'calculate-size';
 
 export const calculateDimensions = (
   text: string,
