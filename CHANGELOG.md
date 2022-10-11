@@ -1,3 +1,7 @@
+# 13.1.12 - 10/11/22
+- [fix] revert esm fix #89 
+- [chore] upgrade storybook
+
 # 13.1.11 - 10/11/22
 - [fix] Fix esm output #89
 - [fix] improve wrapText() and added a treemap example with long label texts #91
