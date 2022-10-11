@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "13.1.10",
+  "version": "13.1.11",
   "description": "Data Visualization using React",
   "type": "module",
   "scripts": {

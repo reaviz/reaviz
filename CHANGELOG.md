@@ -1,3 +1,7 @@
+# 13.1.11 - 10/11/22
+- [fix] Fix esm output #89
+- [fix] improve `wrapText()` and added a treemap example with long label texts #91
+
 # 13.1.10 - 9/29/22
 - [fix] Fix esm import #87
 - [chore] upgrade rdk/realayers
