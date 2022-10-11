@@ -1,6 +1,6 @@
 import React, { FC, useCallback, useState, useMemo } from 'react';
 import { Dimensions, Margins, getDimension } from '../utils/dimensions';
-import useDimensions from 'react-cool-dimensions';
+import useDimensions from 'react-cool-dimensions/dist/index.esm';
 import { useId } from 'rdk';
 import { LinearAxisDimensionChanged } from '../Axis';
 
