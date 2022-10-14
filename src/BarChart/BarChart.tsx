@@ -330,6 +330,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       );
 
       const isCategorical = keyAxis.props.type === 'category';
+      const disableBrush = aggregatedData.length <= 1;
 
       return (
         <Fragment>
@@ -374,6 +375,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>
+              disabled={disableBrush}
               element={brush}
               height={chartHeight}
               width={chartWidth}

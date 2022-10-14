@@ -162,6 +162,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       const { yScale, xScale } = getScales(chartHeight, chartWidth);
       const animated =
         preventAnimation === true ? false : series.props.animated;
+      const disableBrush = aggregatedData.length <= 1;
 
       return (
         <Fragment>
@@ -202,6 +203,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>
+              disabled={disableBrush}
               element={brush}
               height={chartHeight}
               width={chartWidth}

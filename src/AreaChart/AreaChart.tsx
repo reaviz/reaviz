@@ -197,6 +197,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       chartSized
     }: ChartContainerChildProps) => {
       const { xScale, yScale } = getScales(chartWidth, chartHeight);
+      const disableBrush = aggregatedData.length <= 1;
 
       return (
         <Fragment>
@@ -237,6 +238,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>
+              disabled={disableBrush}
               element={brush}
               height={chartHeight}
               width={chartWidth}
