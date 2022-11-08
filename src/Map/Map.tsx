@@ -4,8 +4,7 @@ import {
   geoPath,
   GeoProjection,
   GeoPath,
-  geoMercator,
-  geoGraticule
+  geoMercator
 } from 'd3-geo';
 import {
   ChartProps,
@@ -22,6 +21,9 @@ interface MapProps extends ChartProps {
   markers?: MarkerElement[];
   data: any;
   fill?: string;
+  /**
+   * Determines how the map transforms spherical geometry to planar geometry
+   */
   projection?: 'mercator' | 'natural-earth';
 }
 
