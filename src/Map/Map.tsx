@@ -1,5 +1,12 @@
 import React, { Fragment, ReactElement, FC, useCallback } from 'react';
-import { geoMercator, geoPath, GeoProjection, GeoPath } from 'd3-geo';
+import {
+  geoNaturalEarth1,
+  geoPath,
+  GeoProjection,
+  GeoPath,
+  geoMercator,
+  geoGraticule
+} from 'd3-geo';
 import {
   ChartProps,
   ChartContainer,
@@ -15,6 +22,7 @@ interface MapProps extends ChartProps {
   markers?: MarkerElement[];
   data: any;
   fill?: string;
+  projection?: 'mercator' | 'natural-earth';
 }
 
 export const Map: FC<MapProps> = ({
@@ -26,12 +34,21 @@ export const Map: FC<MapProps> = ({
   containerClassName,
   markers,
   data,
-  fill
+  fill,
+  projection = 'mercator'
 }) => {
   const getProjection = useCallback(
-    ({ chartWidth, chartHeight }: ChartContainerChildProps) =>
-      geoMercator().fitSize([chartWidth, chartHeight], data).center([0, 35]),
-    [data]
+    ({ chartWidth, chartHeight }: ChartContainerChildProps) => {
+      if (projection === 'natural-earth') {
+        return geoNaturalEarth1()
+          .fitSize([chartWidth, chartHeight], data)
+          .center([0, 0]);
+      }
+      return geoMercator()
+        .fitSize([chartWidth, chartHeight], data)
+        .center([0, 35]);
+    },
+    [data, projection]
   );
 
   const renderMarker = useCallback(
@@ -75,8 +92,8 @@ export const Map: FC<MapProps> = ({
         return null;
       }
 
-      const projection = getProjection(containerProps);
-      const path = geoPath().projection(projection);
+      const geoProjection = getProjection(containerProps);
+      const path = geoPath().projection(geoProjection);
 
       return (
         <motion.g
@@ -93,7 +110,7 @@ export const Map: FC<MapProps> = ({
           {markers &&
             markers.map((marker, index) => (
               <Fragment key={`marker-${index}`}>
-                {renderMarker(marker, index, projection)}
+                {renderMarker(marker, index, geoProjection)}
               </Fragment>
             ))}
         </motion.g>

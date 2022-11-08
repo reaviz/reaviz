@@ -18,6 +18,10 @@ export default {
 
 export const Simple = () => <Map data={worldData} height={350} width={500} />;
 
+export const NaturalEarthProjection = () => (
+  <Map data={worldData} height={350} width={500} projection="natural-earth" />
+);
+
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
     <Map data={worldData} />
