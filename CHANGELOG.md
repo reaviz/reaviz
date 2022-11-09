@@ -1,3 +1,6 @@
+# 13.1.14 - 11/08/22
+- [improvement] add ability to pass natural-earth projection to map #90
+
 # 13.1.13 - 10/14/22
 - [fix] Disabled based on aggregated data #93
 - [fix] fix storybook mdxjs failing
