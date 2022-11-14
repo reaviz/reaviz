@@ -10,6 +10,8 @@ import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import css from './BarListSeries.module.css';
 
+export type BarListLabelPosition = 'none' | 'start' | 'end' | 'bottom';
+
 export interface BarListSeriesProps {
   /**
    * Data for the chart.
@@ -20,6 +22,11 @@ export interface BarListSeriesProps {
    * Color scheme for the chart.
    */
   colorScheme?: ColorSchemeType;
+
+  /**
+   * Label position for the item.
+   */
+  labelPosition?: BarListLabelPosition;
 
   /**
    * The bar item class name.
@@ -70,6 +77,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   outerBarClassName,
   valueClassName,
   barClassName,
+  labelPosition,
   onItemClick,
   onItemMouseEnter,
   onItemMouseLeave
@@ -105,7 +113,11 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
           key={d.key as string}
           role="listitem"
           className={classNames(css.item, itemClassName, {
-            [css.clickable]: onItemClick
+            [css.clickable]: onItemClick,
+            [css.labelBottom]: labelPosition === 'bottom',
+            [css.labelStart]: labelPosition === 'start',
+            [css.labelEnd]: labelPosition === 'end',
+            [css.labelNone]: labelPosition === 'none'
           })}
           onMouseEnter={() => onItemMouseEnter?.(d)}
           onMouseLeave={() => onItemMouseLeave?.(d)}
@@ -115,7 +127,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             {d.key as string}
           </label>
           {renderBar(d, i)}
-          <label className={valueClassName}>
+          <label className={classNames(css.valueLabel, valueClassName)}>
             <small>{formatValue(d.metadata.value)}</small>
           </label>
         </div>
@@ -125,5 +137,6 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
 };
 
 BarListSeries.defaultProps = {
-  colorScheme: 'cybertron'
+  colorScheme: 'cybertron',
+  labelPosition: 'bottom'
 };
