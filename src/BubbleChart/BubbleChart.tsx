@@ -1,6 +1,6 @@
+import React, { FC, ReactElement, useCallback } from 'react';
 import { hierarchy, pack } from 'd3-hierarchy';
 import { CloneElement } from 'rdk';
-import React, { FC, ReactElement, useCallback } from 'react';
 import {
   ChartContainer,
   ChartContainerChildProps,
@@ -22,14 +22,14 @@ export interface BubbleChartProps extends ChartProps {
 }
 
 export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
-  data = [],
+  data,
   id,
   width,
   height,
   className,
   containerClassName,
-  margins = 10,
-  series = <BubbleSeries />
+  margins,
+  series
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -73,4 +73,10 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
+};
+
+BubbleChart.defaultProps = {
+  data: [],
+  margins: 10,
+  series: <BubbleSeries />
 };
