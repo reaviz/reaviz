@@ -1,3 +1,6 @@
+# 13.2.0 - 11/14/22
+- [feature] bar list component
+
 # 13.1.14 - 11/08/22
 - [improvement] add ability to pass natural-earth projection to map #90
 
