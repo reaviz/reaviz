@@ -1,0 +1,20 @@
+.item {
+  margin-bottom: 5px;
+
+  &.clickable {
+    cursor: pointer;
+  }
+
+  label {
+    cursor: inherit;
+  }
+
+  .outerBar {
+    width: 100%;
+  }
+
+  .bar {
+    margin: 1px 0;
+    height: 5px;
+  }
+}

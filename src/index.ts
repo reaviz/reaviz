@@ -18,3 +18,4 @@ export * from './VennDiagram';
 export * from './BubbleChart';
 export * from './VennDiagram';
 export * from './TreeMap';
+export * from './BarList';
