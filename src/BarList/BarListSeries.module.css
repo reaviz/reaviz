@@ -13,7 +13,7 @@
   }
 
   &.labelEnd {
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 1fr 20px;
     grid-template-areas:
       'label label'
       'bar value-label';
