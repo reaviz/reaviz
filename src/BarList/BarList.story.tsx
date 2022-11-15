@@ -78,6 +78,13 @@ export const Events = () => (
 
 export const Format = () => (
   <>
+    <style>
+      {`
+        .value {
+          width: 40px;
+        }
+      `}
+    </style>
     <BarList
       style={{ width: 350 }}
       data={[
@@ -90,8 +97,8 @@ export const Format = () => (
         <BarListSeries
           valueFormat={(data) => `${data}%`}
           onItemClick={(d) => alert(`Clicked ${d.key}`)}
-          outerBarClassName="outer"
           labelPosition="end"
+          valueClassName="value"
         />
       }
     />
