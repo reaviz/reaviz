@@ -1,3 +1,6 @@
+# 13.2.1 - 11/15/22
+- [feature] bar list label improvements and formatting
+
 # 13.2.0 - 11/14/22
 - [feature] bar list component
 
