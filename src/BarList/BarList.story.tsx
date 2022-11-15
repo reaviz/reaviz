@@ -48,6 +48,7 @@ export const Styling = () => (
           barClassName="bar"
           outerBarClassName="outer"
           valueClassName="value"
+          labelPosition="end"
         />
       }
     />
@@ -68,6 +69,29 @@ export const Events = () => (
         <BarListSeries
           onItemClick={(d) => alert(`Clicked ${d.key}`)}
           outerBarClassName="outer"
+          labelPosition="end"
+        />
+      }
+    />
+  </>
+);
+
+export const Format = () => (
+  <>
+    <BarList
+      style={{ width: 350 }}
+      data={[
+        { key: 'Vulnerability Patch', data: 50 },
+        { key: 'Critical Failure', data: 25 },
+        { key: 'Physical Intrusion', data: 5 },
+        { key: 'Phishing Attempts', data: 100 }
+      ]}
+      series={
+        <BarListSeries
+          valueFormat={(data) => `${data}%`}
+          onItemClick={(d) => alert(`Clicked ${d.key}`)}
+          outerBarClassName="outer"
+          labelPosition="end"
         />
       }
     />
