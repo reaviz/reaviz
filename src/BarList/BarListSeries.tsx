@@ -1,5 +1,6 @@
 import React, { FC, useCallback } from 'react';
 import {
+  ChartInternalDataTypes,
   ChartShallowDataShape,
   ColorSchemeType,
   DEFAULT_TRANSITION,
@@ -54,6 +55,11 @@ export interface BarListSeriesProps {
   outerBarClassName?: string;
 
   /**
+   * Custom value format
+   */
+  valueFormat?: (data: ChartInternalDataTypes, index: number) => string;
+
+  /**
    * Item was clicked.
    */
   onItemClick?: (data: ChartShallowDataShape) => void;
@@ -77,7 +83,8 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   outerBarClassName,
   valueClassName,
   barClassName,
-  labelPosition,
+  labelPosition = 'none',
+  valueFormat,
   onItemClick,
   onItemMouseEnter,
   onItemMouseLeave
@@ -128,7 +135,11 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
           </label>
           {renderBar(d, i)}
           <label className={classNames(css.valueLabel, valueClassName)}>
-            <small>{formatValue(d.metadata.value)}</small>
+            <small>
+              {valueFormat
+                ? valueFormat(d.metadata.value, i)
+                : formatValue(d.metadata.value)}
+            </small>
           </label>
         </div>
       ))}
@@ -138,5 +149,5 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
 
 BarListSeries.defaultProps = {
   colorScheme: 'cybertron',
-  labelPosition: 'bottom'
+  labelPosition: 'none'
 };

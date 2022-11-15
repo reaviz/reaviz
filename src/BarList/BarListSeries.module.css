@@ -2,32 +2,35 @@
   margin-bottom: 5px;
   align-items: center;
   display: grid;
-  align-items: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 3px;
 
   &.labelStart {
-    grid-template-columns: 2fr;
-    grid-template-rows: 1fr auto;
-    grid-column-gap: 5px;
-    grid-row-gap: 0;
+    grid-template-columns: 20px 1fr;
     grid-template-areas:
       'label label'
       'value-label bar';
   }
 
   &.labelEnd {
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-column-gap: 5px;
-    grid-row-gap: 0;
+    grid-template-columns: 1fr 50px;
     grid-template-areas:
       'label label'
       'bar value-label';
   }
-
+  &.labelBottom {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'label'
+      'bar'
+      'value-label';
+  }
   &.labelNone {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'label'
+      'bar';
+
     .valueLabel {
       display: none;
     }
@@ -47,17 +50,17 @@
   }
 
   .valueLabel {
-    grid-area: value-Label;
+    grid-area: value-label;
+    line-height: 6px;
   }
 
   .outerBar {
     grid-area: bar;
     width: 100%;
-    height: 5px;
+    height: 7px;
   }
 
   .bar {
-    margin: 1px 0;
-    height: inherit;
+    height: 5px;
   }
 }
