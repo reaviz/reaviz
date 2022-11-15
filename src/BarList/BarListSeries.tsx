@@ -115,34 +115,39 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
 
   return (
     <>
-      {data.map((d, i) => (
-        <div
-          key={d.key as string}
-          role="listitem"
-          className={classNames(css.item, itemClassName, {
-            [css.clickable]: onItemClick,
-            [css.labelBottom]: labelPosition === 'bottom',
-            [css.labelStart]: labelPosition === 'start',
-            [css.labelEnd]: labelPosition === 'end',
-            [css.labelNone]: labelPosition === 'none'
-          })}
-          onMouseEnter={() => onItemMouseEnter?.(d)}
-          onMouseLeave={() => onItemMouseLeave?.(d)}
-          onClick={() => onItemClick?.(d)}
-        >
-          <label className={classNames(css.label, labelClassName)}>
-            {d.key as string}
-          </label>
-          {renderBar(d, i)}
-          <label className={classNames(css.valueLabel, valueClassName)}>
-            <small>
-              {valueFormat
-                ? valueFormat(d.metadata.value, i)
-                : formatValue(d.metadata.value)}
-            </small>
-          </label>
-        </div>
-      ))}
+      {data.map((d, i) => {
+        const valueLabel = valueFormat
+          ? valueFormat(d.metadata.value, i)
+          : formatValue(d.metadata.value);
+
+        return (
+          <div
+            key={d.key as string}
+            role="listitem"
+            className={classNames(css.item, itemClassName, {
+              [css.clickable]: onItemClick,
+              [css.labelBottom]: labelPosition === 'bottom',
+              [css.labelStart]: labelPosition === 'start',
+              [css.labelEnd]: labelPosition === 'end',
+              [css.labelNone]: labelPosition === 'none'
+            })}
+            onMouseEnter={() => onItemMouseEnter?.(d)}
+            onMouseLeave={() => onItemMouseLeave?.(d)}
+            onClick={() => onItemClick?.(d)}
+          >
+            <label className={classNames(css.label, labelClassName)}>
+              {d.key as string}
+            </label>
+            {renderBar(d, i)}
+            <label
+              title={valueLabel}
+              className={classNames(css.valueLabel, valueClassName)}
+            >
+              <small>{valueLabel}</small>
+            </label>
+          </div>
+        );
+      })}
     </>
   );
 };

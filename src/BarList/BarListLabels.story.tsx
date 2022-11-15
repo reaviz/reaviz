@@ -58,3 +58,29 @@ export const None = () => (
     series={<BarListSeries labelPosition="none" />}
   />
 );
+
+export const LongValueStart = () => (
+  <BarList
+    style={{ width: 350 }}
+    data={[
+      { key: 'Vulnerability Patch', data: 5000 },
+      { key: 'Critical Failure', data: 50000 },
+      { key: 'Physical Intrusion', data: 500000 },
+      { key: 'Phishing Attempts', data: 5000000 }
+    ]}
+    series={<BarListSeries labelPosition="start" />}
+  />
+);
+
+export const LongValueEnd = () => (
+  <BarList
+    style={{ width: 350 }}
+    data={[
+      { key: 'Vulnerability Patch', data: 5000 },
+      { key: 'Critical Failure', data: 50000 },
+      { key: 'Physical Intrusion', data: 500000 },
+      { key: 'Phishing Attempts', data: 5000000 }
+    ]}
+    series={<BarListSeries labelPosition="end" />}
+  />
+);
