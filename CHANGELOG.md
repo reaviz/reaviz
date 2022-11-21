@@ -1,3 +1,8 @@
+# 13.3.0 - 11/21/22
+- [chore] upgrade framer-motion
+- [chore] upgrade rdk
+- [chore] upgrade realayers
+
 # 13.2.1 - 11/15/22
 - [feature] bar list label improvements and formatting
 
