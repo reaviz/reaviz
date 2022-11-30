@@ -1,3 +1,6 @@
+# 13.3.2 - 11/30/22
+- [fix] ignore onMoveStart and onMove if brush is disabled #100
+
 # 13.3.1 - 11/30/22
 - [fix] fix disabled brush crashing when clicking on bar #99
 
