@@ -1,3 +1,6 @@
+# 13.3.1 - 11/30/22
+- [fix] fix disabled brush crashing when clicking on bar #99
+
 # 13.3.0 - 11/21/22
 - [chore] upgrade framer-motion
 - [chore] upgrade rdk
