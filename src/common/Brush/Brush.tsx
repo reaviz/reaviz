@@ -211,7 +211,9 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
           }}
         >
           {children}
-          {!disabled && (
+          {disabled ? (
+            <rect ref={(ref) => (this.ref = ref)} />
+          ) : (
             <Fragment>
               <rect
                 ref={(ref) => (this.ref = ref)}
