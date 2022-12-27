@@ -133,34 +133,42 @@ export class Brush extends PureComponent<BrushProps, BrushState> {
   }
 
   onMoveStart(event) {
-    const positions = this.getPositionsForPanEvent(event.nativeEvent);
+    const { disabled } = this.props;
 
-    this.setState({
-      isSlicing: true,
-      initial: positions.x
-    });
+    if (!disabled) {
+      const positions = this.getPositionsForPanEvent(event.nativeEvent);
+
+      this.setState({
+        isSlicing: true,
+        initial: positions.x
+      });
+    }
   }
 
   onMove(event) {
-    this.setState((prev) => {
-      const { onBrushChange } = this.props;
+    const { disabled } = this.props;
 
-      // Use setState callback so we can get the true previous value
-      // rather than the bulk updated value react will trigger
-      const { start, end } = this.getStartEnd(event.nativeEvent, prev);
+    if (!disabled) {
+      this.setState((prev) => {
+        const { onBrushChange } = this.props;
 
-      if (onBrushChange) {
-        onBrushChange({
+        // Use setState callback so we can get the true previous value
+        // rather than the bulk updated value react will trigger
+        const { start, end } = this.getStartEnd(event.nativeEvent, prev);
+
+        if (onBrushChange) {
+          onBrushChange({
+            start,
+            end
+          });
+        }
+
+        return {
           start,
           end
-        });
-      }
-
-      return {
-        start,
-        end
-      };
-    });
+        };
+      });
+    }
   }
 
   onMoveEnd() {

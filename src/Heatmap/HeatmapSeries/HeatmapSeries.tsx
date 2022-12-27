@@ -2,7 +2,7 @@ import React, { FC, ReactElement, Fragment } from 'react';
 import { HeatmapCell, HeatmapCellProps } from './HeatmapCell';
 import { scaleQuantile } from 'd3-scale';
 import { uniqueBy } from '../../common/utils/array';
-import { extent, sum } from 'd3-array';
+import { extent } from 'd3-array';
 import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { ChartInternalNestedDataShape } from '../../common/data';
@@ -91,7 +91,7 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   const valueScale = getValueScale(data, colorScheme, emptyColor);
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
-  const cellCount = sum([...yScale.domain(), ...xScale.domain()]);
+  const cellCount = [...yScale.domain(), ...xScale.domain()].length;
 
   const renderCell = ({
     row,
@@ -148,5 +148,5 @@ HeatmapSeries.defaultProps = {
   animated: true,
   emptyColor: 'rgba(200,200,200,0.08)',
   colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
-  cell: <HeatmapCell />,
+  cell: <HeatmapCell />
 };

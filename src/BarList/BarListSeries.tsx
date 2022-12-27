@@ -1,5 +1,6 @@
 import React, { FC, useCallback } from 'react';
 import {
+  ChartInternalDataTypes,
   ChartShallowDataShape,
   ColorSchemeType,
   DEFAULT_TRANSITION,
@@ -9,6 +10,8 @@ import {
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import css from './BarListSeries.module.css';
+
+export type BarListLabelPosition = 'none' | 'start' | 'end' | 'bottom';
 
 export interface BarListSeriesProps {
   /**
@@ -20,6 +23,11 @@ export interface BarListSeriesProps {
    * Color scheme for the chart.
    */
   colorScheme?: ColorSchemeType;
+
+  /**
+   * Label position for the item.
+   */
+  labelPosition?: BarListLabelPosition;
 
   /**
    * The bar item class name.
@@ -47,6 +55,11 @@ export interface BarListSeriesProps {
   outerBarClassName?: string;
 
   /**
+   * Custom value format
+   */
+  valueFormat?: (data: ChartInternalDataTypes, index: number) => string;
+
+  /**
    * Item was clicked.
    */
   onItemClick?: (data: ChartShallowDataShape) => void;
@@ -70,6 +83,8 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   outerBarClassName,
   valueClassName,
   barClassName,
+  labelPosition = 'none',
+  valueFormat,
   onItemClick,
   onItemMouseEnter,
   onItemMouseLeave
@@ -100,30 +115,44 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
 
   return (
     <>
-      {data.map((d, i) => (
-        <div
-          key={d.key as string}
-          role="listitem"
-          className={classNames(css.item, itemClassName, {
-            [css.clickable]: onItemClick
-          })}
-          onMouseEnter={() => onItemMouseEnter?.(d)}
-          onMouseLeave={() => onItemMouseLeave?.(d)}
-          onClick={() => onItemClick?.(d)}
-        >
-          <label className={classNames(css.label, labelClassName)}>
-            {d.key as string}
-          </label>
-          {renderBar(d, i)}
-          <label className={valueClassName}>
-            <small>{formatValue(d.metadata.value)}</small>
-          </label>
-        </div>
-      ))}
+      {data.map((d, i) => {
+        const valueLabel = valueFormat
+          ? valueFormat(d.metadata.value, i)
+          : formatValue(d.metadata.value);
+
+        return (
+          <div
+            key={d.key as string}
+            role="listitem"
+            className={classNames(css.item, itemClassName, {
+              [css.clickable]: onItemClick,
+              [css.labelBottom]: labelPosition === 'bottom',
+              [css.labelStart]: labelPosition === 'start',
+              [css.labelEnd]: labelPosition === 'end',
+              [css.labelNone]: labelPosition === 'none'
+            })}
+            onMouseEnter={() => onItemMouseEnter?.(d)}
+            onMouseLeave={() => onItemMouseLeave?.(d)}
+            onClick={() => onItemClick?.(d)}
+          >
+            <label className={classNames(css.label, labelClassName)}>
+              {d.key as string}
+            </label>
+            {renderBar(d, i)}
+            <label
+              title={valueLabel}
+              className={classNames(css.valueLabel, valueClassName)}
+            >
+              <small>{valueLabel}</small>
+            </label>
+          </div>
+        );
+      })}
     </>
   );
 };
 
 BarListSeries.defaultProps = {
-  colorScheme: 'cybertron'
+  colorScheme: 'cybertron',
+  labelPosition: 'none'
 };

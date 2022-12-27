@@ -1,3 +1,17 @@
+# 13.3.2 - 11/30/22
+- [fix] ignore onMoveStart and onMove if brush is disabled #100
+
+# 13.3.1 - 11/30/22
+- [fix] fix disabled brush crashing when clicking on bar #99
+
+# 13.3.0 - 11/21/22
+- [chore] upgrade framer-motion
+- [chore] upgrade rdk
+- [chore] upgrade realayers
+
+# 13.2.1 - 11/15/22
+- [feature] bar list label improvements and formatting
+
 # 13.2.0 - 11/14/22
 - [feature] bar list component
 
