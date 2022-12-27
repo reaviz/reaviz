@@ -44,8 +44,8 @@ export class ChartBrush extends Component<ChartBrushProps, {}> {
         } else {
           // invert scaleBend
           const band = scale.step();
-          const start = Math.floor(event.start / band);
-          const end = Math.floor(event.end / band);
+          const start = event.start / band;
+          const end = event.end / band;
           domain = [scale.domain()[start], scale.domain()[end]];
         }
       }
