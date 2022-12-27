@@ -66,24 +66,6 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'x';
 
-  const getSkipIndex = useCallback(
-    (direction: 'x' | 'y') => {
-      if (
-        (direction === 'x' &&
-          yAxis.axisLine !== null &&
-          yAxis.position === 'start') ||
-        (direction === 'y' &&
-          xAxis.axisLine !== null &&
-          xAxis.position === 'end')
-      ) {
-        return 0;
-      }
-
-      return null;
-    },
-    [xAxis, yAxis]
-  );
-
   const { yAxisGrid, xAxisGrid } = useMemo(() => {
     return {
       yAxisGrid: getTicks(
@@ -111,25 +93,21 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
       direction: 'x' | 'y',
       type: 'line' | 'stripe'
     ) => {
-      const skipIdx = getSkipIndex(direction);
-
       return grid.map((point, index) => (
         <Fragment key={`${type}-${direction}-${index}`}>
-          {index !== skipIdx && (
-            <CloneElement<GridlineProps | GridStripeProps>
-              element={element}
-              index={index}
-              scale={scale}
-              data={point}
-              height={height}
-              width={width}
-              direction={direction}
-            />
-          )}
+          <CloneElement<GridlineProps | GridStripeProps>
+            element={element}
+            index={index}
+            scale={scale}
+            data={point}
+            height={height}
+            width={width}
+            direction={direction}
+          />
         </Fragment>
       ));
     },
-    [getSkipIndex, height, width]
+    [height, width]
   );
 
   const renderSeries = useCallback(
