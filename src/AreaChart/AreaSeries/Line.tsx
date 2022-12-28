@@ -148,17 +148,12 @@ export const Line: FC<Partial<LineProps>> = ({
   const enter = useMemo(() => {
     const linePath = getLinePath(coords);
 
-    let strokeDasharray = '';
-    if (!hasArea && pathLength !== null) {
-      strokeDasharray = `${pathLength} ${pathLength}`;
-    }
-
     return {
       d: linePath === null ? undefined : linePath,
       strokeDashoffset: 0,
-      strokeDasharray: strokeDasharray
+      strokeDasharray: ''
     };
-  }, [coords, getLinePath, hasArea, pathLength]);
+  }, [coords, getLinePath]);
 
   const exit = useMemo(() => {
     let newCoords = coords;
