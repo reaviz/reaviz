@@ -151,14 +151,16 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
               setHovered(null);
             }}
           />
-          <CloneElement<VennLabelProps>
-            element={label}
-            data={d}
-            id={`${id}-${safeKey}`}
-            active={isActive}
-            animated={animated}
-            fill={textFill}
-          />
+          {label && (
+            <CloneElement<VennLabelProps>
+              element={label}
+              data={d}
+              id={`${id}-${safeKey}`}
+              active={isActive}
+              animated={animated}
+              fill={textFill}
+            />
+          )}
           {d.set && outerLabel && (
             <CloneElement<VennLabelProps>
               element={outerLabel}
@@ -170,15 +172,17 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       );
     },
     [
-      colorScheme,
       data,
+      colorScheme,
       arc,
+      selections,
+      hovered,
+      actives,
+      id,
+      disabled,
       animated,
       label,
       outerLabel,
-      hovered,
-      selections,
-      actives,
       onActivate
     ]
   );

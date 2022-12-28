@@ -347,6 +347,18 @@ export const NoFill = () => (
   />
 );
 
+export const NoLabel = () => (
+  <VennDiagram
+    height={450}
+    width={450}
+    series={<VennSeries label={null} arc={<VennArc strokeWidth={5} />} />}
+    data={[
+      { key: ['A'], data: 12 },
+      { key: ['B'], data: 12 }
+    ]}
+  />
+);
+
 export const NoAnimation = () => (
   <VennDiagram
     height={450}
