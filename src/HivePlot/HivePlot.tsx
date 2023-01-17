@@ -1,7 +1,7 @@
 import React, { Fragment, useCallback, FC, useState } from 'react';
 import { scaleOrdinal, scaleLinear, scalePoint } from 'd3-scale';
 import { range } from 'd3-array';
-import { Tooltip } from 'realayers';
+import { Tooltip } from 'reablocks';
 import { Placement } from 'rdk';
 import { HiveNode } from './HiveNode';
 import { HiveAxis } from './HiveAxis';

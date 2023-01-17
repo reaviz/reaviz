@@ -1729,6 +1729,16 @@
     "@motionone/utils" "^10.14.0"
     tslib "^2.3.1"
 
+"@motionone/animation@^10.15.1":
+  version "10.15.1"
+  resolved "https://registry.yarnpkg.com/@motionone/animation/-/animation-10.15.1.tgz#4a85596c31cbc5100ae8eb8b34c459fb0ccf6807"
+  integrity sha512-mZcJxLjHor+bhcPuIFErMDNyrdb2vJur8lSfMCsuCB4UyV8ILZLvK+t+pg56erv8ud9xQGK/1OGPt10agPrCyQ==
+  dependencies:
+    "@motionone/easing" "^10.15.1"
+    "@motionone/types" "^10.15.1"
+    "@motionone/utils" "^10.15.1"
+    tslib "^2.3.1"
+
 "@motionone/dom@10.13.1":
   version "10.13.1"
   resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.13.1.tgz#fc29ea5d12538f21b211b3168e502cfc07a24882"
@@ -1741,12 +1751,32 @@
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
+"@motionone/dom@^10.15.3":
+  version "10.15.5"
+  resolved "https://registry.yarnpkg.com/@motionone/dom/-/dom-10.15.5.tgz#4af18f8136d85c2fc997cac98121c969f6731802"
+  integrity sha512-Xc5avlgyh3xukU9tydh9+8mB8+2zAq+WlLsC3eEIp7Ax7DnXgY7Bj/iv0a4X2R9z9ZFZiaXK3BO0xMYHKbAAdA==
+  dependencies:
+    "@motionone/animation" "^10.15.1"
+    "@motionone/generators" "^10.15.1"
+    "@motionone/types" "^10.15.1"
+    "@motionone/utils" "^10.15.1"
+    hey-listen "^1.0.8"
+    tslib "^2.3.1"
+
 "@motionone/easing@^10.14.0":
   version "10.14.0"
   resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.14.0.tgz#d8154b7f71491414f3cdee23bd3838d763fffd00"
   integrity sha512-2vUBdH9uWTlRbuErhcsMmt1jvMTTqvGmn9fHq8FleFDXBlHFs5jZzHJT9iw+4kR1h6a4SZQuCf72b9ji92qNYA==
   dependencies:
     "@motionone/utils" "^10.14.0"
+    tslib "^2.3.1"
+
+"@motionone/easing@^10.15.1":
+  version "10.15.1"
+  resolved "https://registry.yarnpkg.com/@motionone/easing/-/easing-10.15.1.tgz#95cf3adaef34da6deebb83940d8143ede3deb693"
+  integrity sha512-6hIHBSV+ZVehf9dcKZLT7p5PEKHGhDwky2k8RKkmOvUoYP3S+dXsKupyZpqx5apjd9f+php4vXk4LuS+ADsrWw==
+  dependencies:
+    "@motionone/utils" "^10.15.1"
     tslib "^2.3.1"
 
 "@motionone/generators@^10.13.1":
@@ -1758,10 +1788,24 @@
     "@motionone/utils" "^10.14.0"
     tslib "^2.3.1"
 
+"@motionone/generators@^10.15.1":
+  version "10.15.1"
+  resolved "https://registry.yarnpkg.com/@motionone/generators/-/generators-10.15.1.tgz#dc6abb11139d1bafe758a41c134d4c753a9b871c"
+  integrity sha512-67HLsvHJbw6cIbLA/o+gsm7h+6D4Sn7AUrB/GPxvujse1cGZ38F5H7DzoH7PhX+sjvtDnt2IhFYF2Zp1QTMKWQ==
+  dependencies:
+    "@motionone/types" "^10.15.1"
+    "@motionone/utils" "^10.15.1"
+    tslib "^2.3.1"
+
 "@motionone/types@^10.13.0", "@motionone/types@^10.14.0":
   version "10.14.0"
   resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.14.0.tgz#148c34f3270b175397e49c3058b33fab405c21e3"
   integrity sha512-3bNWyYBHtVd27KncnJLhksMFQ5o2MSdk1cA/IZqsHtA9DnRM1SYgN01CTcJ8Iw8pCXF5Ocp34tyAjY7WRpOJJQ==
+
+"@motionone/types@^10.15.1":
+  version "10.15.1"
+  resolved "https://registry.yarnpkg.com/@motionone/types/-/types-10.15.1.tgz#89441b54285012795cbba8612cbaa0fa420db3eb"
+  integrity sha512-iIUd/EgUsRZGrvW0jqdst8st7zKTzS9EsKkP+6c6n4MPZoQHwiHuVtTQLD6Kp0bsBLhNzKIBlHXponn/SDT4hA==
 
 "@motionone/utils@^10.13.1", "@motionone/utils@^10.14.0":
   version "10.14.0"
@@ -1769,6 +1813,15 @@
   integrity sha512-sLWBLPzRqkxmOTRzSaD3LFQXCPHvDzyHJ1a3VP9PRzBxyVd2pv51/gMOsdAcxQ9n+MIeGJnxzXBYplUHKj4jkw==
   dependencies:
     "@motionone/types" "^10.14.0"
+    hey-listen "^1.0.8"
+    tslib "^2.3.1"
+
+"@motionone/utils@^10.15.1":
+  version "10.15.1"
+  resolved "https://registry.yarnpkg.com/@motionone/utils/-/utils-10.15.1.tgz#6b5f51bde75be88b5411e084310299050368a438"
+  integrity sha512-p0YncgU+iklvYr/Dq4NobTRdAPv9PveRDUXabPEeOjBLSO/1FNB2phNTZxOxpi1/GZwYpAoECEa0Wam+nsmhSw==
+  dependencies:
+    "@motionone/types" "^10.15.1"
     hey-listen "^1.0.8"
     tslib "^2.3.1"
 
@@ -1843,6 +1896,11 @@
     invariant "^2.2.3"
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
+
+"@reaviz/react-use-fuzzy@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@reaviz/react-use-fuzzy/-/react-use-fuzzy-1.0.2.tgz#e0188ba32944ec6e75616c2c8b836a689f7cbdc6"
+  integrity sha512-+r+j3NNBXeZB8IqKtCHkXQeGjm02EAbQ24a4xqnUzORJV6NKFkg4YYUWFafyCsqRtt+E/DtxpapXvN2+STM2Ag==
 
 "@remix-run/router@1.0.2":
   version "1.0.2"
@@ -5389,6 +5447,11 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+coverup@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/coverup/-/coverup-0.1.1.tgz#e0a417e1f9a752a61630e4a14b9e75220896f382"
+  integrity sha512-Q2Fs0v3M4eMNfj0TGaFb4Oh0yuaQj9EhQbEKtFhD3Tm4HZt1Zn7TrBKX14gVEO9aeWP8KnF2/qrh7fr/rvbcXw==
+
 cp-file@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/cp-file/-/cp-file-7.0.0.tgz#b9454cfd07fe3b974ab9ea0e5f29655791a9b8cd"
@@ -6337,6 +6400,11 @@ ellipsize@^0.2.0:
   integrity sha512-InJhblLPZbBjw3N49knOWonfprgKPLKGySmG6bGHi7WsD5OkXIIlLkU4AguROmaMZ0v1BRdo267wEc0Pexw8ww==
   dependencies:
     tape "^4.9.0"
+
+ellipsize@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/ellipsize/-/ellipsize-0.5.1.tgz#2ac8bba69b2190d629cc5065a9c2bf28d99f237e"
+  integrity sha512-0jEAyuIRU6U8MN0S5yUqIrkK/AQWkChh642N3zQuGV57s9bsUWYLc0jJOoDIUkZ2sbEL3ySq8xfq71BvG4q3hw==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -7411,6 +7479,17 @@ framer-motion@^7.6.7:
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
+framer-motion@^8.4.5:
+  version "8.4.5"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-8.4.5.tgz#2e9668f797a85c925e4f0db19a0b3924a6177f31"
+  integrity sha512-308CJfCcDZcDxddqpA/kvG3NiD9lCLnST/ILKQ7s+8ecZTXaB0P+JphhyujZBuZ6ucJumz8GCqzvWvkpd/PMDQ==
+  dependencies:
+    "@motionone/dom" "^10.15.3"
+    hey-listen "^1.0.8"
+    tslib "^2.4.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 framesync@6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/framesync/-/framesync-6.1.2.tgz#755eff2fb5b8f3b4d2b266dd18121b300aefea27"
@@ -7549,6 +7628,11 @@ fuse.js@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-3.6.1.tgz#7de85fdd6e1b3377c23ce010892656385fd9b10c"
   integrity sha512-hT9yh/tiinkmirKrlv4KWOjztdoZo1mx9Qh4KvWqC7isoXwdUY3PNWUxceF4/qO9R6riA2C29jdTOeQOIROjgw==
+
+fuse.js@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.6.2.tgz#fe463fed4b98c0226ac3da2856a415576dc9a111"
+  integrity sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==
 
 gauge@^3.0.0:
   version "3.0.2"
@@ -8077,6 +8161,11 @@ hey-listen@^1.0.8:
   resolved "https://registry.yarnpkg.com/hey-listen/-/hey-listen-1.0.8.tgz#8e59561ff724908de1aa924ed6ecc84a56a9aa68"
   integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
+highlight-words-core@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/highlight-words-core/-/highlight-words-core-1.2.2.tgz#1eff6d7d9f0a22f155042a00791237791b1eeaaa"
+  integrity sha512-BXUKIkUuh6cmmxzi5OIbUJxrG8OAk2MqoL1DtO3Wo9D2faJg2ph5ntyuQeLqaHJmzER6H5tllCDA9ZnNe9BVGg==
+
 highlight.js@^10.1.1:
   version "10.7.3"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
@@ -8268,6 +8357,11 @@ human-format@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/human-format/-/human-format-0.11.0.tgz#bfc85a6e135f9a9292d641a38e979ed9f82557e9"
   integrity sha512-g4UtoBnhfitCjkGjjiOlY8tkmArIcrstBa5adihxSJwSde1A7iQzvrNLB5ceX89FHXzYi9yTi04t3m82J/XIag==
+
+human-format@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/human-format/-/human-format-1.0.0.tgz#bb5ecc618062581f0442769529c553367507e8fe"
+  integrity sha512-ZfSxF/LHVDb5Un52AguYkZArbiuMbJQwpOpZ0MBuj3pYDmLt7pkCEws9L8xKbgnaKrfMgGd6qc+PHBbKO97AaA==
 
 human-signals@^1.1.1:
   version "1.1.1"
@@ -10274,6 +10368,11 @@ memoize-bind@^1.0.3:
   dependencies:
     memoize-weak "^1.0.0"
 
+memoize-one@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.1.0.tgz#a2387c58c03fff27ca390c31b764a79addf3f906"
+  integrity sha512-2GApq0yI/b22J2j9rhbrAlsHb0Qcz+7yWxeLG8h+95sl1XPUgeLimQSOdur4Vw7cUhrBHwaUZxWFZueojqNRzA==
+
 memoize-one@^5.0.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.1.1.tgz#047b6e3199b508eaec03504de71229b8eb1d75c0"
@@ -11513,6 +11612,11 @@ please-upgrade-node@^3.2.0:
   dependencies:
     semver-compare "^1.0.0"
 
+pluralize@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
+  integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
+
 pnp-webpack-plugin@1.6.4:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/pnp-webpack-plugin/-/pnp-webpack-plugin-1.6.4.tgz#c9711ac4dc48a685dabafc86f8b6dd9f8df84149"
@@ -12642,15 +12746,36 @@ rdk@^6.1.0:
     popper.js "^1.16.1"
     react-scrolllock "^5.0.1"
 
-rdk@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.2.0.tgz#b15d2667ca235e255e2bc5034e3d13111145b361"
-  integrity sha512-d7TVSUUPjtyvTGjubsStXvaiaZUhdoE7yiPrVlbkXZoBILUkXsPaWOrb57P14YRZr8XuPkcxJUxPVuJs0i1AYQ==
+rdk@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.3.0.tgz#d7cf982f78fed1a8086696baed28ad9bf07e4375"
+  integrity sha512-u//N3r938L/c26Lu441iaovbZPZC28yLg7xMAcfFPZv9SC419+YwRbhukrpkonIg+feltwfE5tN3UFUdcL59Uw==
   dependencies:
     classnames "^2.3.1"
-    framer-motion "^7.6.7"
+    framer-motion "^8.4.5"
     popper.js "^1.16.1"
     react-scrolllock "^5.0.1"
+
+reablocks@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.2.0.tgz#7e7db156d83eb5b002f7b2b6f976f0e62cbafe00"
+  integrity sha512-z58CRathcxNPKPByeCF/dtUVgTk3vOmDwXdwvRwpSkUpApRNwOuZoi611+z7YmbR3viEH0YcbuEiSsiw6naREA==
+  dependencies:
+    "@reaviz/react-use-fuzzy" "^1.0.2"
+    chroma-js "^2.4.2"
+    classnames "^2.3.1"
+    coverup "^0.1.1"
+    create-global-state-hook "^0.0.2"
+    ellipsize "^0.5.1"
+    focus-trap-react "^8.7.1"
+    framer-motion "^7.6.7"
+    fuse.js "^6.6.2"
+    human-format "^1.0.0"
+    pluralize "^8.0.0"
+    rdk "^6.1.0"
+    react-fast-compare "^3.2.0"
+    react-highlight-words "^0.17.0"
+    react-input-autosize "^3.0.0"
 
 react-colorful@^5.1.2:
   version "5.4.0"
@@ -12740,6 +12865,15 @@ react-helmet-async@^1.0.7:
     prop-types "^15.7.2"
     react-fast-compare "^3.2.0"
     shallowequal "^1.1.0"
+
+react-highlight-words@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/react-highlight-words/-/react-highlight-words-0.17.0.tgz#e79a559a2de301548339d7216264d6cd0f1eed6f"
+  integrity sha512-uX1Qh5IGjnLuJT0Zok234QDwRC8h4hcVMnB99Cb7aquB1NlPPDiWKm0XpSZOTdSactvnClCk8LOmVlP+75dgHA==
+  dependencies:
+    highlight-words-core "^1.2.0"
+    memoize-one "^4.0.0"
+    prop-types "^15.5.8"
 
 react-input-autosize@^3.0.0:
   version "3.0.0"
@@ -12924,17 +13058,6 @@ readdirp@~3.5.0:
   integrity sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==
   dependencies:
     picomatch "^2.2.1"
-
-realayers@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/realayers/-/realayers-3.1.0.tgz#6e71b102d7a584429a59affafc95e95bae56082f"
-  integrity sha512-Y/LDCnC04cB2an4Nrxm9ZXWucxvr+OwCMGFB+BpDCqJzvA6rxB6MPiWRGu6mlfFHdxBJ7FS4xz6Uuq/cY+M9IA==
-  dependencies:
-    classnames "^2.3.1"
-    create-global-state-hook "^0.0.2"
-    focus-trap-react "^8.7.1"
-    framer-motion "^7.6.7"
-    rdk "^6.1.0"
 
 rechoir@^0.6.2:
   version "0.6.2"
@@ -14853,7 +14976,7 @@ tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
-tslib@^2.3.1:
+tslib@^2.3.1, tslib@^2.4.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.1.tgz#0d0bfbaac2880b91e22df0768e55be9753a5b17e"
   integrity sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==

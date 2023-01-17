@@ -1,3 +1,42 @@
+# 14.0.0 
+- [BREAKING] rename CSS variables to align with other standards
+- [chore] migrate from realayers to reablocks
+
+To migrate to 14.x, you will need to rename your CSS variables. Here is
+what they look like today:
+
+```css
+--color-background: rgb(51, 51, 51);
+--color-on-background:#fff;
+
+--color-tooltip:rgba(0,5,11,0.9);
+--color-on-tooltip: #fff;
+
+--color-handle-fill: #2c343a;
+--color-handle-stroke: #67c2e4;
+--color-handle-drag-fill: transparent;
+--color-handle-dots: #67c2e4;
+--color-handle-line: #67c2e4;
+```
+
+Here is what they need to be renamed to:
+
+```css
+--tooltip-background: rgba(0,5,11,0.9);
+--tooltip-color: #fff;
+--tooltip-border-radius: 5px;
+--tooltip-spacing: 5px;
+
+--chart-background: rgb(51, 51, 51);
+--chart-color: #fff;
+
+--chart-handle-fill: #2c343a;
+--chart-handle-stroke: #67c2e4;
+--chart-handle-drag-fill: transparent;
+--chart-handle-dots: #67c2e4;
+--chart-handle-line: #67c2e4;
+```
+
 # 13.3.2 - 11/30/22
 - [fix] ignore onMoveStart and onMove if brush is disabled #100
 

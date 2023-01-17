@@ -1,5 +1,5 @@
 import React, { Fragment, useRef, useState, FC } from 'react';
-import { Tooltip } from 'realayers';
+import { Tooltip } from 'reablocks';
 import { motion } from 'framer-motion';
 import css from './MapMarker.module.css';
 

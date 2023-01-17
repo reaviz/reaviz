@@ -20,7 +20,7 @@ import { ChartBrush } from './ChartBrush';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../ScatterPlot';
 import { BarChart, HistogramBarSeries } from '../../BarChart';
 import { range } from 'd3-array';
-import { Tooltip } from 'realayers';
+import { Tooltip } from 'reablocks';
 import { GridlineSeries, Gridline, GridStripe } from '../Gridline';
 import { ChartZoomPan } from '../ZoomPan';
 

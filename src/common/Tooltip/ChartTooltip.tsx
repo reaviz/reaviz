@@ -1,5 +1,5 @@
 import React, { cloneElement, FC } from 'react';
-import { Tooltip, TooltipProps } from 'realayers';
+import { Tooltip, TooltipProps } from 'reablocks';
 import { TooltipTemplate } from './TooltipTemplate';
 
 export interface ChartTooltipProps extends TooltipProps {
@@ -55,5 +55,5 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
 );
 
 ChartTooltip.defaultProps = {
-  content: <TooltipTemplate />,
+  content: <TooltipTemplate />
 };
