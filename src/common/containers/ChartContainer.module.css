@@ -1,0 +1,29 @@
+.container {
+  /** Old mappings - to be removed in next major */
+  --color-background: rgb(51, 51, 51);
+  --color-on-background: #fff;
+
+  --color-tooltip: rgba(0, 5, 11, 0.9);
+  --color-on-tooltip: #fff;
+
+  --color-handle-fill: #2c343a;
+  --color-handle-stroke: #67c2e4;
+  --color-handle-drag-fill: transparent;
+  --color-handle-dots: #67c2e4;
+  --color-handle-line: #67c2e4;
+
+  /** New mappings */
+  --tooltip-background: var(--color-tooltip);
+  --tooltip-color: var(--color-on-tooltip);
+  --tooltip-border-radius: 5px;
+  --tooltip-spacing: 5px;
+
+  --chart-background: var(--color-background);
+  --chart-color: var(--color-on-background);
+
+  --chart-handle-fill: var(--color-handle-fill);
+  --chart-handle-stroke: var(--color-handle-stroke);
+  --chart-handle-drag-fill: var(--color-handle-drag-fill);
+  --chart-handle-dots: var(--color-handle-dots);
+  --chart-handle-line: var(--color-handle-line);
+}

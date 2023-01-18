@@ -1,7 +1,8 @@
 # 14.0.0 
 - [BREAKING] removed hive plot
-- [BREAKING] rename CSS variables to align with other standards
+- [BREAKING] rename CSS variables to align with other standards ( deprecated but will be removed in next major release )
 - [chore] migrate from realayers to reablocks
+- [chore] upgraded framer-motion to v8
 
 To migrate to 14.x, you will need to rename your CSS variables. Here is
 what they look like today:
