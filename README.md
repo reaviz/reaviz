@@ -80,7 +80,6 @@ Chart types include:
   - Exploded
   - Donut Chart
 - Sankey chart
-- Hive Plot
 - Gauge
   - Radial
   - Linear

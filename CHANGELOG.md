@@ -1,4 +1,5 @@
 # 14.0.0 
+- [BREAKING] removed hive plot
 - [BREAKING] rename CSS variables to align with other standards
 - [chore] migrate from realayers to reablocks
 

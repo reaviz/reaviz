@@ -1,7 +1,6 @@
 export * from './common';
 export * from './AreaChart';
 export * from './BarChart';
-export * from './HivePlot';
 export * from './LineChart';
 export * from './Map';
 export * from './PieChart';
