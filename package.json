@@ -85,7 +85,7 @@
     "d3-shape": "^3.0.1",
     "d3-time": "^3.0.0",
     "ellipsize": "^0.2.0",
-    "framer-motion": "^8.4.5",
+    "framer-motion": "^8.4.7",
     "human-format": "^0.11.0",
     "invert-color": "^2.0.0",
     "memoize-bind": "^1.0.3",

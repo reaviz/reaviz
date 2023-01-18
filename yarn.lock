@@ -7490,6 +7490,17 @@ framer-motion@^8.4.5:
   optionalDependencies:
     "@emotion/is-prop-valid" "^0.8.2"
 
+framer-motion@^8.4.7:
+  version "8.4.7"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-8.4.7.tgz#82c1f614b82a02c3f14cc52dd1214f2aba98fa28"
+  integrity sha512-+uQRQ4bC4hCyrfxM0xQ/AP+O7g0iNG65MoKzdc2gLU9FDm19wWrafCYPunyP7HYLMQxjoiJh1fKUCxpfyQo6Mg==
+  dependencies:
+    "@motionone/dom" "^10.15.3"
+    hey-listen "^1.0.8"
+    tslib "^2.4.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 framesync@6.1.2:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/framesync/-/framesync-6.1.2.tgz#755eff2fb5b8f3b4d2b266dd18121b300aefea27"
