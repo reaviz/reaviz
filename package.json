@@ -6,7 +6,6 @@
     "start": "start-storybook -p 9010 -s public",
     "build-storybook": "build-storybook -s public",
     "storybook:build": "build-storybook -s public",
-    "storybook:deploy": "storybook-to-ghpages --existing-output-dir=storybook-static",
     "copy": "cp CNAME storybook-static/",
     "build": "rollup -c",
     "lint": "eslint --ext js,ts,tsx",
@@ -49,7 +48,6 @@
     "line-chart",
     "pie-chart",
     "sankey",
-    "hive-plot",
     "gauge",
     "donut-chart",
     "pan",
@@ -96,11 +94,6 @@
     "reablocks": "^3.2.0",
     "transformation-matrix": "^2.9.0"
   },
-  "storybook-deployer": {
-    "gitUsername": "amcdnl",
-    "gitEmail": "amcdaniel2@gmail.com",
-    "commitMessage": "deploy storybook [ci skip]"
-  },
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
@@ -115,7 +108,6 @@
     "@storybook/addon-storysource": "6.4.20",
     "@storybook/addons": "6.4.20",
     "@storybook/react": "6.4.20",
-    "@storybook/storybook-deployer": "^2.8.12",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/classnames": "^2.3.1",
