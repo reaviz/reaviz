@@ -7440,6 +7440,17 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
+framer-motion@8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-8.5.0.tgz#700cc132f7b22b1627d0031a4ae8d169998a9613"
+  integrity sha512-z5hQvIa+9uFcA2aFmT+6XsUfuVPl9Y1uhs5yntxU1Q0E6hm4wDRpvFlB/yYN/cdfXUctf/1Q1Rep/dqOipz8sg==
+  dependencies:
+    "@motionone/dom" "^10.15.3"
+    hey-listen "^1.0.8"
+    tslib "^2.4.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
 framer-motion@^7.6.7:
   version "7.6.7"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-7.6.7.tgz#4ab0f33d0b77b4fe2289ce8b7c5cf6448d84f23d"
@@ -7458,17 +7469,6 @@ framer-motion@^8.4.5:
   version "8.4.5"
   resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-8.4.5.tgz#2e9668f797a85c925e4f0db19a0b3924a6177f31"
   integrity sha512-308CJfCcDZcDxddqpA/kvG3NiD9lCLnST/ILKQ7s+8ecZTXaB0P+JphhyujZBuZ6ucJumz8GCqzvWvkpd/PMDQ==
-  dependencies:
-    "@motionone/dom" "^10.15.3"
-    hey-listen "^1.0.8"
-    tslib "^2.4.0"
-  optionalDependencies:
-    "@emotion/is-prop-valid" "^0.8.2"
-
-framer-motion@^8.4.7:
-  version "8.4.7"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-8.4.7.tgz#82c1f614b82a02c3f14cc52dd1214f2aba98fa28"
-  integrity sha512-+uQRQ4bC4hCyrfxM0xQ/AP+O7g0iNG65MoKzdc2gLU9FDm19wWrafCYPunyP7HYLMQxjoiJh1fKUCxpfyQo6Mg==
   dependencies:
     "@motionone/dom" "^10.15.3"
     hey-listen "^1.0.8"
