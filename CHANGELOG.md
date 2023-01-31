@@ -1,4 +1,7 @@
-# 14.0.0 
+# 14.0.1 - 1/31/23
+- [chore] upgrade reablocks
+
+# 14.0.0 - 1/31/23
 - [BREAKING] removed hive plot
 - [BREAKING] rename CSS variables to align with other standards ( deprecated but will be removed in next major release )
 - [chore] migrate from realayers to reablocks
