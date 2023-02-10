@@ -2,7 +2,12 @@ import React, { Fragment, useState } from 'react';
 import { timeDay } from 'd3-time';
 import moment from 'moment';
 import { object, number, select } from '@storybook/addon-knobs';
-import { singleDateData, largeDateData, randomNumber } from '../../demo';
+import {
+  singleDateData,
+  largeDateData,
+  randomNumber,
+  verticalMarkerDateData
+} from '../../demo';
 import { LineChart } from './LineChart';
 import { Line } from '../AreaChart';
 import { LinearXAxisTickSeries, LinearXAxis } from '../common/Axis/LinearAxis';
@@ -151,3 +156,13 @@ const LiveUpdatingStory = () => {
     </Fragment>
   );
 };
+
+export const VerticalMarker = () => (
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    markerData={verticalMarkerDateData}
+    series={<LineSeries interpolation={'smooth'} />}
+  />
+);

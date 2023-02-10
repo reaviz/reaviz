@@ -22,6 +22,7 @@ import {
   PropFunctionTypes
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
+import { getAprroximateYForGivenX } from '../../common/utils/position';
 
 export interface LineProps extends PropFunctionTypes {
   /**
@@ -83,6 +84,16 @@ export interface LineProps extends PropFunctionTypes {
    * Internal property to identify if there is a area or not.
    */
   hasArea: boolean;
+
+  /**
+   * Parsed data shape for Markers. Set internally by `AreaChart`.
+   */
+  markerData: ChartInternalDataShape[];
+
+  /**
+   * Callback function for Path ref, used to update marker values
+   */
+  onPathCreated: any;
 }
 
 export const Line: FC<Partial<LineProps>> = ({
@@ -97,6 +108,8 @@ export const Line: FC<Partial<LineProps>> = ({
   xScale,
   showZeroStroke,
   interpolation,
+  onPathCreated,
+  markerData,
   ...rest
 }) => {
   const [pathLength, setPathLength] = useState<number | null>(null);
@@ -144,6 +157,33 @@ export const Line: FC<Partial<LineProps>> = ({
       y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
   }, [data, xScale, yScale]);
+
+  if (ghostPathRef.current && onPathCreated) {
+    onPathCreated(
+      markerData
+        .map((item: any) => ({
+          ...item,
+          value: yScale.invert(
+            getAprroximateYForGivenX(xScale(item.x), ghostPathRef.current, 0.01)
+          ),
+          y: yScale.invert(
+            getAprroximateYForGivenX(xScale(item.x), ghostPathRef.current, 0.01)
+          ),
+          y0: yScale.invert(
+            getAprroximateYForGivenX(xScale(item.x), ghostPathRef.current, 0.01)
+          ),
+          y1: yScale.invert(
+            getAprroximateYForGivenX(xScale(item.x), ghostPathRef.current, 0.01)
+          )
+        }))
+        .filter((point) => {
+          const scaledX = xScale(point.x);
+          return (
+            coords[0].x <= scaledX && scaledX <= coords[coords.length - 1].x
+          );
+        })
+    );
+  }
 
   const enter = useMemo(() => {
     const linePath = getLinePath(coords);

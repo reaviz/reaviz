@@ -1,4 +1,3 @@
-
 import { bisector } from 'd3-array';
 import { applyToPoint, inverse, applyToPoints } from 'transformation-matrix';
 
@@ -100,7 +99,7 @@ export const getPositionForTarget = ({ target, clientX, clientY }) => {
 /**
  * Gets the point from q given matrix.
  */
-export const getPointFromMatrix = (event, matrix) : PointObjectNotation => {
+export const getPointFromMatrix = (event, matrix): PointObjectNotation => {
   const parent = getParentSVG(event);
 
   if (!parent) {
@@ -119,7 +118,11 @@ export const getPointFromMatrix = (event, matrix) : PointObjectNotation => {
 /**
  * Get the start/end matrix.
  */
-export const getLimitMatrix = (height: number, width: number, matrix) : PointObjectNotation[] =>
+export const getLimitMatrix = (
+  height: number,
+  width: number,
+  matrix
+): PointObjectNotation[] =>
   applyToPoints(matrix, [
     { x: 0, y: 0 },
     { x: width, y: height }
@@ -164,4 +167,35 @@ export const isZoomLevelGoingOutOfBounds = (value, scaleFactor: number) => {
   const a = lessThanScaleFactorMin(value, scaleFactor) && scaleFactor < 1;
   const b = moreThanScaleFactorMax(value, scaleFactor) && scaleFactor > 1;
   return a || b;
+};
+
+/**
+ * Get approximate Y value for given X value from a SVG line path
+ * Reference: https://stackoverflow.com/questions/11503151/in-d3-how-to-get-the-interpolated-line-data-from-a-svg-line
+ */
+export const getAprroximateYForGivenX = (
+  x: number,
+  path: SVGPathElement,
+  error: number
+) => {
+  // Tune these parameters for better accuracy
+  const MAX_BISECTION_ITERATIONS = 50;
+  error = error || 0.01;
+
+  let totalLength = path.getTotalLength();
+  let startLength = 0;
+  let middlePoint = path.getPointAtLength((totalLength + startLength) / 2);
+  let numBisectionIterations = 0;
+
+  // Binary Search
+  while (x < middlePoint.x - error || x > middlePoint.x + error) {
+    middlePoint = path.getPointAtLength((totalLength + startLength) / 2);
+    if (x < middlePoint.x) {
+      totalLength = (startLength + totalLength) / 2;
+    } else {
+      startLength = (startLength + totalLength) / 2;
+    }
+    if (MAX_BISECTION_ITERATIONS < ++numBisectionIterations) break;
+  }
+  return middlePoint.y;
 };

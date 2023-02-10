@@ -796,6 +796,12 @@ export const singleDateData = [
   { id: '3', key: new Date('2020-02-29T08:00:00.000Z'), data: 10 }
 ];
 
+export const verticalMarkerDateData = [
+  { id: '4', key: new Date('2020-02-19T08:00:00.000Z'), data: null },
+  { id: '5', key: new Date('2020-02-23T08:00:00.000Z'), data: null },
+  { id: '6', key: new Date('2020-03-01T08:00:00.000Z'), data: null },
+];
+
 // export const multiDateData = [
 //   {
 //     key: 'Threat Intel',

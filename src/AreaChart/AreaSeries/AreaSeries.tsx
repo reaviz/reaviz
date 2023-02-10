@@ -109,6 +109,16 @@ export interface AreaSeriesProps {
    * Whether the chart has been zoomed or not. Set internally by `AreaChart`.
    */
   isZoomed: boolean;
+
+  /**
+   * Parsed data shape for Markers. Set internally by `AreaChart`.
+   */
+  markerData: ChartInternalDataShape[];
+
+  /**
+   * Symbols used to show marker points.
+   */
+  markerSymbols: ReactElement<PointSeriesProps, typeof PointSeries> | null;
 }
 
 // For area charts, often symbols exceed the area
@@ -132,10 +142,16 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   area,
   interpolation,
   line,
-  colorScheme
+  colorScheme,
+  markerData,
+  markerSymbols
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const [activePoint, setActivePoint] = useState<any | null>(null);
+  const [markerPoints, setMarkerPoints] = useState<
+    ChartInternalDataShape[] | null
+  >(markerData);
+  let isMarkerPointsUpdated = false;
 
   const onValueEnter = useCallback((event: TooltipAreaEvent) => {
     setActivePoint(event.pointX);
@@ -166,6 +182,19 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     [activeValues, colorScheme, data]
   );
 
+  const updateMarkerData = (
+    updatedMarkerData: ChartInternalShallowDataShape[]
+  ) => {
+    // TODO: Find a better way to handle this
+    if (
+      !isMarkerPointsUpdated &&
+      markerPoints.some((point: ChartInternalShallowDataShape) => !point.y)
+    ) {
+      isMarkerPointsUpdated = true;
+      setMarkerPoints(updatedMarkerData);
+    }
+  };
+
   const renderArea = useCallback(
     (data: ChartInternalShallowDataShape[], index = 0, total = 1) => {
       return (
@@ -182,6 +211,8 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               animated={animated}
               interpolation={interpolation}
               color={getPointColor}
+              markerData={markerPoints}
+              onPathCreated={updateMarkerData}
             />
           )}
           {area && (
@@ -210,7 +241,9 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
       line,
       width,
       xScale,
-      yScale
+      yScale,
+      markerPoints,
+      updateMarkerData
     ]
   );
 
@@ -258,6 +291,52 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     ]
   );
 
+  const renderMarkerSymbols = useCallback(
+    (markerData: ChartInternalShallowDataShape[], index = 0) => {
+      const visible = markerSymbols !== null;
+
+      const activeSymbols =
+        (markerSymbols && markerSymbols.props.activeValues) || activeValues;
+
+      // Animations are only valid for Area
+      const isAnimated = area !== undefined && animated && !activeSymbols;
+
+      return (
+        <Fragment>
+          {visible && (
+            <CloneElement<PointSeriesProps>
+              element={markerSymbols}
+              key={`point-series-${id}`}
+              id={id}
+              height={height}
+              width={width}
+              activeValues={activeSymbols}
+              xScale={xScale}
+              yScale={yScale}
+              index={index}
+              data={markerPoints as ChartInternalShallowDataShape[]}
+              animated={isAnimated}
+              color={() => getPointColor(markerPoints, index)}
+            />
+          )}
+        </Fragment>
+      );
+    },
+    [
+      activeValues,
+      animated,
+      area,
+      getPointColor,
+      height,
+      id,
+      width,
+      xScale,
+      yScale,
+      markerPoints,
+      markerSymbols
+    ]
+  );
+
   const renderMarkLine = useCallback(() => {
     return (
       <Fragment>
@@ -279,10 +358,21 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           {renderArea(data)}
           {renderMarkLine()}
           {renderSymbols(data)}
+          {!area &&
+            renderMarkerSymbols(
+              markerPoints as ChartInternalShallowDataShape[]
+            )}
         </Fragment>
       );
     },
-    [renderArea, renderMarkLine, renderSymbols]
+    [
+      renderArea,
+      renderMarkLine,
+      renderSymbols,
+      renderMarkerSymbols,
+      area,
+      markerPoints
+    ]
   );
 
   const renderMultiSeries = useCallback(
@@ -326,7 +416,14 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         element={tooltip}
         xScale={xScale}
         yScale={yScale}
-        data={data}
+        data={data
+          .concat(markerPoints)
+          .sort(
+            (
+              pointA: ChartInternalShallowDataShape,
+              pointB: ChartInternalShallowDataShape
+            ) => xScale(pointA.x) - xScale(pointB.x)
+          )}
         height={height}
         width={width}
         color={getColor}

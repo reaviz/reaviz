@@ -81,6 +81,11 @@ export interface AreaChartProps extends ChartProps {
    * Any secondary axis components. Useful for multi-axis charts.
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+
+  /**
+   * Markers Data the chart will receive to render.
+   */
+  markerData: ChartDataShape[];
 }
 
 export const AreaChart: FC<Partial<AreaChartProps>> = ({
@@ -97,7 +102,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
   gridlines,
   brush,
   zoomPan,
-  secondaryAxis
+  secondaryAxis,
+  markerData
 }) => {
   const zoom: any = zoomPan ? zoomPan.props : {};
   const [zoomDomain, setZoomDomain] = useState<any>(zoom.domain);
@@ -138,6 +144,20 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       return buildShallowChartData(data as ChartShallowDataShape[]);
     }
   }, [data, seriesType]);
+
+  const aggregatedMarkerData = useMemo(() => {
+    // TODO: Check Marker behavior with stacked series
+    if (seriesType === 'stacked' || seriesType === 'stackedNormalized') {
+      return buildStackData(
+        markerData as ChartNestedDataShape[],
+        seriesType === 'stackedNormalized'
+      );
+    } else if (seriesType === 'grouped') {
+      return buildNestedChartData(markerData as ChartNestedDataShape[], true);
+    } else {
+      return buildShallowChartData(markerData as ChartShallowDataShape[]);
+    }
+  }, [markerData, seriesType]);
 
   const getScales = useCallback(
     (chartWidth: number, chartHeight: number) => {
@@ -264,6 +284,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
                   xScale={xScale}
                   isZoomed={isZoomed}
                   animated={animated}
+                  markerData={aggregatedMarkerData}
                 />
               </CloneElement>
             </CloneElement>
@@ -284,7 +305,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       xAxis,
       yAxis,
       zoomDomain,
-      zoomPan
+      zoomPan,
+      aggregatedMarkerData
     ]
   );
 
@@ -311,5 +333,6 @@ AreaChart.defaultProps = {
   series: <AreaSeries />,
   gridlines: <GridlineSeries />,
   brush: null,
-  zoomPan: null
+  zoomPan: null,
+  markerData: []
 };
