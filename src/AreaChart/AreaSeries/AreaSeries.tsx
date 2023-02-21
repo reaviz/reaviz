@@ -329,7 +329,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
         data={data}
         height={height}
         width={width}
-        color={getColor}
+        color={getPointColor}
         onValueEnter={onValueEnter}
         onValueLeave={onValueLeave}
       >
