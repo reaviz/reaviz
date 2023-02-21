@@ -1,3 +1,6 @@
+# 14.0.3 - 2/20/23
+- [fix] Tooltip missing colors in Line/Area Series #113
+
 # 14.0.1/14.0.2 - 1/31/23
 - [chore] upgrade reablocks
 
