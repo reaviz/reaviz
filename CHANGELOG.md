@@ -1,3 +1,6 @@
+# 14.0.4 - 3/19/23
+- [improvement] add bar list label positioning
+
 # 14.0.3 - 2/20/23
 - [fix] Tooltip missing colors in Line/Area Series #113
 
