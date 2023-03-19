@@ -28,6 +28,11 @@ export interface BarListProps {
   data: ChartShallowDataShape[];
 
   /**
+   * Sort direction of the data.
+   */
+  sortDirection?: 'asc' | 'desc' | 'none';
+
+  /**
    * Series to render.
    */
   series?: ReactElement<BarListSeriesProps, typeof BarList>;
@@ -37,6 +42,7 @@ export const BarList: FC<BarListProps> = ({
   data,
   id,
   className,
+  sortDirection,
   style,
   series
 }) => {
@@ -55,8 +61,14 @@ export const BarList: FC<BarListProps> = ({
       }
     }));
 
-    return mashed.sort((a, b) => b.data - a.data);
-  }, [data]);
+    if (sortDirection === 'asc') {
+      mashed.sort((a, b) => a.data - b.data);
+    } else if (sortDirection === 'desc') {
+      mashed.sort((a, b) => b.data - a.data);
+    }
+
+    return mashed;
+  }, [data, sortDirection]);
 
   return (
     <motion.section
@@ -86,5 +98,6 @@ export const BarList: FC<BarListProps> = ({
 
 BarList.defaultProps = {
   data: [],
+  sortDirection: 'desc',
   series: <BarListSeries />
 };

@@ -60,9 +60,14 @@ export interface BarListSeriesProps {
   outerBarClassName?: string;
 
   /**
+   * Custom label format.
+   */
+  labelFormat?: (data: ChartInternalDataTypes, index: number) => any;
+
+  /**
    * Custom value format
    */
-  valueFormat?: (data: ChartInternalDataTypes, index: number) => string;
+  valueFormat?: (data: ChartInternalDataTypes, index: number) => any;
 
   /**
    * Item was clicked.
@@ -87,6 +92,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   labelClassName,
   outerBarClassName,
   valueClassName,
+  labelFormat,
   barClassName,
   labelPosition,
   valuePosition,
@@ -122,6 +128,8 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   return (
     <>
       {data.map((d, i) => {
+        const label = labelFormat ? labelFormat(d.key as any, i) : d.key;
+
         const valueLabel = valueFormat
           ? valueFormat(d.metadata.value, i)
           : formatValue(d.metadata.value);
@@ -147,7 +155,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             onClick={() => onItemClick?.(d)}
           >
             <label className={classNames(css.label, labelClassName)}>
-              {d.key as string}
+              {label}
             </label>
             {renderBar(d, i)}
             <label

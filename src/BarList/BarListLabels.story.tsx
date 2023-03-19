@@ -89,10 +89,10 @@ export const ValueEnd = () => (
   <BarList
     style={{ width: 350 }}
     data={[
-      { key: 'Vulnerability Patch', data: 50 },
-      { key: 'Critical Failure', data: 25 },
+      { key: 'Vulnerability Patch', data: 100 },
+      { key: 'Critical Failure', data: 55 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 200 }
     ]}
     series={<BarListSeries valuePosition="end" />}
   />
