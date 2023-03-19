@@ -48,7 +48,7 @@ export const Styling = () => (
           barClassName="bar"
           outerBarClassName="outer"
           valueClassName="value"
-          labelPosition="end"
+          valuePosition="end"
         />
       }
     />
@@ -69,7 +69,7 @@ export const Events = () => (
         <BarListSeries
           onItemClick={(d) => alert(`Clicked ${d.key}`)}
           outerBarClassName="outer"
-          labelPosition="end"
+          valuePosition="end"
         />
       }
     />
@@ -97,7 +97,7 @@ export const Format = () => (
         <BarListSeries
           valueFormat={(data) => `${data}%`}
           onItemClick={(d) => alert(`Clicked ${d.key}`)}
-          labelPosition="end"
+          valuePosition="end"
           valueClassName="value"
         />
       }

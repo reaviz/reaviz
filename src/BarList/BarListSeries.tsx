@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import css from './BarListSeries.module.css';
 
-export type BarListLabelPosition = 'none' | 'start' | 'end' | 'bottom';
+export type BarListLabelPosition = 'none' | 'top' | 'start' | 'end' | 'bottom';
 
 export interface BarListSeriesProps {
   /**
@@ -25,9 +25,14 @@ export interface BarListSeriesProps {
   colorScheme?: ColorSchemeType;
 
   /**
-   * Label position for the item.
+   * The label position.
    */
   labelPosition?: BarListLabelPosition;
+
+  /**
+   * The value position.
+   */
+  valuePosition?: BarListLabelPosition;
 
   /**
    * The bar item class name.
@@ -83,7 +88,8 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   outerBarClassName,
   valueClassName,
   barClassName,
-  labelPosition = 'none',
+  labelPosition,
+  valuePosition,
   valueFormat,
   onItemClick,
   onItemMouseEnter,
@@ -126,7 +132,12 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             role="listitem"
             className={classNames(css.item, itemClassName, {
               [css.clickable]: onItemClick,
+              [css.valueBottom]: valuePosition === 'bottom',
+              [css.valueStart]: valuePosition === 'start',
+              [css.valueEnd]: valuePosition === 'end',
+              [css.valueNone]: valuePosition === 'none',
               [css.labelBottom]: labelPosition === 'bottom',
+              [css.labelTop]: labelPosition === 'top',
               [css.labelStart]: labelPosition === 'start',
               [css.labelEnd]: labelPosition === 'end',
               [css.labelNone]: labelPosition === 'none'
@@ -154,5 +165,6 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
 
 BarListSeries.defaultProps = {
   colorScheme: 'cybertron',
-  labelPosition: 'none'
+  labelPosition: 'top',
+  valuePosition: 'none'
 };

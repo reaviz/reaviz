@@ -6,33 +6,71 @@
   grid-row-gap: 3px;
 
   &.labelStart {
-    grid-template-columns: 50px 1fr;
-    grid-template-areas:
-      'label label'
-      'value-label bar';
+    &.valueEnd {
+      grid-template-columns: 2fr 2fr 1fr;
+      grid-template-areas: 'label bar value-label';
+    }
+  }
+
+  &.labelBottom {
+    &.valueEnd {
+      grid-template-columns: 1fr 50px;
+      grid-template-areas:
+        'bar value-label'
+        'label label';
+    }
+  }
+
+  &.labelNone {
+    .label {
+      display: none;
+    }
+
+    &.valueEnd {
+      grid-template-columns: 1fr 50px;
+      grid-template-areas: 'bar value-label';
+    }
   }
 
   &.labelEnd {
-    grid-template-columns: 1fr 50px;
-    grid-template-areas:
-      'label label'
-      'bar value-label';
+    &.valueStart {
+      grid-template-columns: 50px 1fr 1fr;
+      grid-template-areas: 'value-label bar label';
+    }
   }
-  &.labelBottom {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'label'
-      'bar'
-      'value-label';
-  }
-  &.labelNone {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'label'
-      'bar';
 
-    .valueLabel {
-      display: none;
+  &.labelTop {
+    &.valueStart {
+      grid-template-columns: 50px 1fr;
+      grid-template-areas:
+        'label label'
+        'value-label bar';
+    }
+
+    &.valueEnd {
+      grid-template-columns: 1fr 50px;
+      grid-template-areas:
+        'label label'
+        'bar value-label';
+    }
+
+    &.valueBottom {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'label'
+        'bar'
+        'value-label';
+    }
+
+    &.valueNone {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'label'
+        'bar';
+
+      .valueLabel {
+        display: none;
+      }
     }
   }
 
