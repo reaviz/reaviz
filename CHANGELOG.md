@@ -1,3 +1,7 @@
+# 14.0.5 - 3/19/23
+- [improvement] add bar list sorting
+- [improvement] add bar list label formatting
+
 # 14.0.4 - 3/19/23
 - [improvement] add bar list label positioning
 

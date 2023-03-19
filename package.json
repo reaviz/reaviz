@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "14.0.4",
+  "version": "14.0.5",
   "description": "Data Visualization using React",
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9010 -s public",
