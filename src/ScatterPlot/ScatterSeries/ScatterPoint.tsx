@@ -269,7 +269,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
 
 ScatterPoint.defaultProps = {
   active: true,
-  toolti: <ChartTooltip />,
+  tooltip: <ChartTooltip />,
   cursor: 'pointer',
   size: 4,
   color: schemes.cybertron[0],
