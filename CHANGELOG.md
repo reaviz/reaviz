@@ -1,3 +1,6 @@
+# 14.0.6 - 3/22/23
+- [fix] Bar List All zeros #114
+
 # 14.0.5 - 3/19/23
 - [improvement] add bar list sorting
 - [improvement] add bar list label formatting
