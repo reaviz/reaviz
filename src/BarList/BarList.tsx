@@ -1,10 +1,10 @@
-import React, { FC, ReactElement, useMemo } from 'react';
-import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
+import { scaleLinear } from 'd3-scale';
+import { motion } from 'framer-motion';
+import { CloneElement, useId } from 'rdk';
+import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '../common';
 import { BarListSeries, BarListSeriesProps } from './BarListSeries';
-import { CloneElement, useId } from 'rdk';
-import { motion } from 'framer-motion';
 
 export interface BarListProps {
   /**
@@ -50,7 +50,8 @@ export const BarList: FC<BarListProps> = ({
 
   const mashedData = useMemo(() => {
     const maxVal = max(data, (d) => d.data);
-    const groupScale = scaleLinear().domain([0, maxVal]).rangeRound([0, 100]);
+    const domainVal = maxVal == 0 ? [0] : [0, maxVal];
+    const groupScale = scaleLinear().domain(domainVal).rangeRound([0, 100]);
 
     const mashed = data.map((d) => ({
       ...d,
