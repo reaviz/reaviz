@@ -1,4 +1,3 @@
-import React from 'react';
 import { BarList } from './BarList';
 import { BarListSeries } from './BarListSeries';
 
@@ -99,6 +98,42 @@ export const Format = () => (
           onItemClick={(d) => alert(`Clicked ${d.key}`)}
           valuePosition="end"
           valueClassName="value"
+        />
+      }
+    />
+  </>
+);
+
+export const Empty = () => (
+  <>
+    <style>
+      {`
+        .bar {
+          border-radius: 5px;
+        }
+        .outer {
+          background: rgba(0, 0, 0, .2);
+          border-radius: 5px;
+        }
+        .value {
+          opacity: .5;
+        }
+      `}
+    </style>
+    <BarList
+      style={{ width: 350 }}
+      data={[
+        { key: 'Vulnerability Patch', data: 0 },
+        { key: 'Critical Failure', data: 0 },
+        { key: 'Physical Intrusion', data: 0 },
+        { key: 'Phishing Attempts', data: 0 }
+      ]}
+      series={
+        <BarListSeries
+          barClassName="bar"
+          outerBarClassName="outer"
+          valueClassName="value"
+          valuePosition="end"
         />
       }
     />
