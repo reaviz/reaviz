@@ -1,3 +1,6 @@
+# 14.0.10 - 4/10/23
+- [improvement] add ability to use link colors on links
+
 # 14.0.9 - 4/10/23
 - [improvement] added ability to set node label position
 - [chore] convert sankey to fc
