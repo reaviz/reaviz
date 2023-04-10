@@ -128,8 +128,8 @@ export const Justification = () => {
   );
 };
 
-let filtered = false;
 const DemoStory = () => {
+  const [filtered, setFiltered] = useState(false);
   const [state, setState] = useState({
     nodes: [...simpleSankeyNodes],
     links: [...simpleSankeyLinks]
@@ -139,13 +139,13 @@ const DemoStory = () => {
     const { links } = state;
 
     if (filtered) {
-      filtered = false;
+      setFiltered(false);
       setState({
         nodes: simpleSankeyNodes,
         links: simpleSankeyLinks
       });
     } else {
-      filtered = true;
+      setFiltered(true);
       setState({
         nodes: [
           node,
