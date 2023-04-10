@@ -1,3 +1,6 @@
+# 14.0.7 - 4/10/23
+- [fix] upgrade rdk/reablocks
+
 # 14.0.6 - 3/22/23
 - [fix] Bar List All zeros #114
 
