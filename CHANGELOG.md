@@ -1,6 +1,9 @@
+# 14.0.9 - 4/10/23
+- [improvement] added ability to set node label position
+- [chore] convert sankey to fc
+
 # 14.0.8 - 4/10/23
 - [fix] fix sankey tooltip not accepting null
-- [chore] convert sankey node to fc
 
 # 14.0.7 - 4/10/23
 - [fix] upgrade rdk/reablocks
