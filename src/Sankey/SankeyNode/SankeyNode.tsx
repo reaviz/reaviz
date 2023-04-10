@@ -130,15 +130,25 @@ export const SankeyNode: FC<SankeyNodeProps> = ({
     y0,
     y1
   };
+  const nodeWidth = width || (x1 && x0 && x1 - x0 > 0 ? x1 - x0 : 0);
+  const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
 
   const [hovered, setHovered] = useState<boolean>(false);
   const rectRef = useRef<SVGRectElement | null>(null);
 
-  const renderNode = useCallback(() => {
-    const nodeWidth = width || (x1 && x0 && x1 - x0 > 0 ? x1 - x0 : 0);
-    const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
-
+  const renderTooltipContent = useCallback(() => {
     return (
+      <div className={css.tooltip}>
+        <div className={css.tooltipLabel}>{title}</div>
+        <div className={css.tooltipValue}>
+          {formatValue(value as ChartInternalDataTypes)}
+        </div>
+      </div>
+    );
+  }, [title, value]);
+
+  return (
+    <Fragment>
       <motion.g ref={rectRef}>
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}
@@ -177,23 +187,6 @@ export const SankeyNode: FC<SankeyNodeProps> = ({
           }}
         />
       </motion.g>
-    );
-  }, []);
-
-  const renderTooltipContent = useCallback(() => {
-    return (
-      <div className={css.tooltip}>
-        <div className={css.tooltipLabel}>{title}</div>
-        <div className={css.tooltipValue}>
-          {formatValue(value as ChartInternalDataTypes)}
-        </div>
-      </div>
-    );
-  }, [title, value]);
-
-  return (
-    <Fragment>
-      {renderNode()}
       {showLabel && (
         <CloneElement<SankeyLabelProps>
           active={active}
