@@ -115,8 +115,16 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   }, [index, source, target, value, width, y0, y1]);
 
   const stroke = useMemo(() => {
-    return gradient ? `url(#${chartId}-gradient-${index})` : color;
-  }, [chartId, color, gradient, index]);
+    if (gradient) {
+      return `url(#${chartId}-gradient-${index})`;
+    } else if (color) {
+      return color;
+    } else if (linkSource.color) {
+      return linkSource.color;
+    }
+
+    return DEFAULT_COLOR;
+  }, [chartId, gradient, index, color, linkSource.color]);
 
   const enterProps = useMemo(() => {
     const path = sankeyLinkHorizontal();
@@ -194,7 +202,6 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
 SankeyLink.defaultProps = {
   active: false,
   animated: true,
-  color: DEFAULT_COLOR,
   disabled: false,
   gradient: true,
   opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
