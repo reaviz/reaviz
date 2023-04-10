@@ -53,7 +53,7 @@ export interface SankeyLinkProps extends Link {
   /**
    * Tooltip element.
    */
-  tooltip: ReactElement<TooltipProps, typeof Tooltip>;
+  tooltip?: ReactElement<TooltipProps, typeof Tooltip>;
 
   /**
    * Width of the link. Set internally by `Sankey`.
@@ -63,17 +63,17 @@ export interface SankeyLinkProps extends Link {
   /**
    * Event for when the link is clicked.
    */
-  onClick: (event: React.MouseEvent<SVGPathElement>) => void;
+  onClick?: (event: React.MouseEvent<SVGPathElement>) => void;
 
   /**
    * Event for when the link has mouse enter.
    */
-  onMouseEnter: (event: React.MouseEvent<SVGPathElement>) => void;
+  onMouseEnter?: (event: React.MouseEvent<SVGPathElement>) => void;
 
   /**
    * Event for when the link has mouse leave.
    */
-  onMouseLeave: (event: React.MouseEvent<SVGPathElement>) => void;
+  onMouseLeave?: (event: React.MouseEvent<SVGPathElement>) => void;
 }
 
 interface SankeyLinkState {
@@ -200,7 +200,7 @@ export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
           </linearGradient>
         )}
         {this.renderLink()}
-        {!tooltip.props.disabled && (
+        {!tooltip?.props?.disabled && (
           <CloneElement<TooltipProps>
             content={this.renderTooltipContent.bind(this)}
             element={tooltip}

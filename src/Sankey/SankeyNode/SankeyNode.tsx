@@ -1,4 +1,13 @@
-import React, { Component, Fragment, createRef, ReactElement } from 'react';
+import React, {
+  Component,
+  Fragment,
+  createRef,
+  ReactElement,
+  useCallback,
+  FC,
+  useState,
+  useRef
+} from 'react';
 import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
@@ -59,7 +68,7 @@ export interface SankeyNodeProps extends Node {
   /**
    * Tooltip element.
    */
-  tooltip: ReactElement<TooltipProps, typeof Tooltip>;
+  tooltip?: ReactElement<TooltipProps, typeof Tooltip>;
 
   /**
    * Width of the node. Set internally by `Sankey`.
@@ -69,111 +78,68 @@ export interface SankeyNodeProps extends Node {
   /**
    * Event for when the node is clicked.
    */
-  onClick: (event: React.MouseEvent<SVGRectElement>) => void;
+  onClick?: (event: React.MouseEvent<SVGRectElement>) => void;
 
   /**
    * Event for when the node has mouse enter.
    */
-  onMouseEnter: (event: React.MouseEvent<SVGRectElement>) => void;
+  onMouseEnter?: (event: React.MouseEvent<SVGRectElement>) => void;
 
   /**
    * Event for when the node has mouse leave.
    */
-  onMouseLeave: (event: React.MouseEvent<SVGRectElement>) => void;
+  onMouseLeave?: (event: React.MouseEvent<SVGRectElement>) => void;
 }
 
-interface SankeyNodeState {
-  hovered?: boolean;
-}
-
-export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
-  static defaultProps: Partial<SankeyNodeProps> = {
-    active: false,
-    animated: true,
-    color: DEFAULT_COLOR,
-    disabled: false,
-    label: <SankeyLabel />,
-    opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
-    showLabel: true,
-    tooltip: (
-      <Tooltip
-        followCursor={true}
-        modifiers={{
-          offset: {
-            offset: '0, 5px'
-          }
-        }}
-      />
-    ),
-    onClick: () => undefined,
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined
+export const SankeyNode: FC<SankeyNodeProps> = ({
+  active,
+  chartWidth,
+  label,
+  tooltip,
+  showLabel,
+  title,
+  value,
+  className,
+  color,
+  disabled,
+  index,
+  opacity,
+  style,
+  width,
+  x0,
+  x1,
+  y0,
+  y1,
+  id,
+  sourceLinks,
+  targetLinks,
+  onClick,
+  onMouseEnter,
+  onMouseLeave
+}) => {
+  const node = {
+    id,
+    title,
+    color,
+    sourceLinks,
+    targetLinks,
+    value,
+    index,
+    x0,
+    x1,
+    y0,
+    y1
   };
 
-  state: SankeyNodeState = {};
-  rect = createRef<SVGRectElement>();
+  const [hovered, setHovered] = useState<boolean>(false);
+  const rectRef = useRef<SVGRectElement | null>(null);
 
-  getNode() {
-    const {
-      id,
-      title,
-      color,
-      sourceLinks,
-      targetLinks,
-      value,
-      index,
-      x0,
-      x1,
-      y0,
-      y1
-    } = this.props;
-
-    return {
-      id,
-      title,
-      color,
-      sourceLinks,
-      targetLinks,
-      value,
-      index,
-      x0,
-      x1,
-      y0,
-      y1
-    };
-  }
-
-  onMouseEnter(event: React.MouseEvent<SVGRectElement>) {
-    this.setState({ hovered: true });
-    this.props.onMouseEnter(event);
-  }
-
-  onMouseLeave(event: React.MouseEvent<SVGRectElement>) {
-    this.setState({ hovered: false });
-    this.props.onMouseLeave(event);
-  }
-
-  renderNode() {
-    const {
-      active,
-      className,
-      color,
-      disabled,
-      index,
-      opacity,
-      style,
-      width,
-      x0,
-      x1,
-      y0,
-      y1,
-      onClick
-    } = this.props;
+  const renderNode = useCallback(() => {
     const nodeWidth = width || (x1 && x0 && x1 - x0 > 0 ? x1 - x0 : 0);
     const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
 
     return (
-      <motion.g ref={this.rect}>
+      <motion.g ref={rectRef}>
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}
           className={classNames(css.node, className)}
@@ -201,16 +167,20 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
             duration: 0.1
           }}
           onClick={onClick}
-          onMouseEnter={bind(this.onMouseEnter, this)}
-          onMouseLeave={bind(this.onMouseLeave, this)}
+          onMouseEnter={(event) => {
+            setHovered(true);
+            onMouseEnter?.(event);
+          }}
+          onMouseLeave={(event) => {
+            setHovered(false);
+            onMouseLeave?.(event);
+          }}
         />
       </motion.g>
     );
-  }
+  }, []);
 
-  renderTooltipContent() {
-    const { title, value } = this.props;
-
+  const renderTooltipContent = useCallback(() => {
     return (
       <div className={css.tooltip}>
         <div className={css.tooltipLabel}>{title}</div>
@@ -219,31 +189,47 @@ export class SankeyNode extends Component<SankeyNodeProps, SankeyNodeState> {
         </div>
       </div>
     );
-  }
+  }, [title, value]);
 
-  render() {
-    const { active, chartWidth, label, tooltip, showLabel } = this.props;
+  return (
+    <Fragment>
+      {renderNode()}
+      {showLabel && (
+        <CloneElement<SankeyLabelProps>
+          active={active}
+          element={label}
+          chartWidth={chartWidth}
+          node={node}
+        />
+      )}
+      {!tooltip?.props?.disabled && (
+        <CloneElement<TooltipProps>
+          content={renderTooltipContent}
+          element={tooltip}
+          visible={hovered}
+          reference={rectRef}
+        />
+      )}
+    </Fragment>
+  );
+};
 
-    return (
-      <Fragment>
-        {this.renderNode()}
-        {showLabel && (
-          <CloneElement<SankeyLabelProps>
-            active={active}
-            element={label}
-            chartWidth={chartWidth}
-            node={this.getNode()}
-          />
-        )}
-        {!tooltip.props.disabled && (
-          <CloneElement<TooltipProps>
-            content={this.renderTooltipContent.bind(this)}
-            element={tooltip}
-            visible={this.state.hovered}
-            reference={this.rect}
-          />
-        )}
-      </Fragment>
-    );
-  }
-}
+SankeyNode.defaultProps = {
+  active: false,
+  animated: true,
+  color: DEFAULT_COLOR,
+  disabled: false,
+  label: <SankeyLabel />,
+  opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
+  showLabel: true,
+  tooltip: (
+    <Tooltip
+      followCursor={true}
+      modifiers={{
+        offset: {
+          offset: '0, 5px'
+        }
+      }}
+    />
+  )
+};
