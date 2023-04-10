@@ -88,7 +88,7 @@ export interface SankeyNodeProps extends Node {
   onMouseLeave?: (event: React.MouseEvent<SVGRectElement>) => void;
 }
 
-export const SankeyNode: FC<SankeyNodeProps> = ({
+export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   active,
   chartWidth,
   label,

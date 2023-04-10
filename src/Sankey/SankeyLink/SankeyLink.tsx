@@ -83,7 +83,7 @@ export interface SankeyLinkProps extends Link {
   onMouseLeave?: (event: React.MouseEvent<SVGPathElement>) => void;
 }
 
-export const SankeyLink: FC<SankeyLinkProps> = ({
+export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   gradient,
   index,
   source,
