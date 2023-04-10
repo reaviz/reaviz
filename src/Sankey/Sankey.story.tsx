@@ -54,10 +54,12 @@ export const Simple = () => {
       colorScheme={color}
       height={height}
       width={width}
+      nodeWidth={5}
       nodes={nodes.map((node, i) => (
         <SankeyNode
           key={`node-${i}`}
           {...node}
+          label={<SankeyLabel location="outside" />}
           onClick={() => onNodeClick(node.title)}
         />
       ))}

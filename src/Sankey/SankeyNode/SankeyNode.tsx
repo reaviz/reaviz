@@ -189,6 +189,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           active={active}
           element={label}
           chartWidth={chartWidth}
+          nodeWidth={nodeWidth}
           node={node}
         />
       )}
