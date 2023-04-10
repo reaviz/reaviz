@@ -1,4 +1,11 @@
-import React, { Component, Fragment, ReactElement } from 'react';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useCallback,
+  useMemo,
+  useState
+} from 'react';
 import {
   sankey,
   sankeyLeft,
@@ -11,13 +18,12 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from 'rdk';
+import { CloneElement, useId } from 'rdk';
 
 import { getColor, ColorSchemeType } from '../common/color';
 import { SankeyNodeProps, SankeyNode } from './SankeyNode';
 import { SankeyLinkProps, SankeyLink } from './SankeyLink';
 import { Node, Link } from './utils';
-import bind from 'memoize-bind';
 
 const JUSTIFICATION = {
   justify: sankeyJustify,
@@ -33,27 +39,27 @@ export interface SankeyProps extends ChartProps {
   /**
    * Whether to animate the enter/update/exit. Set internally by `SankeyNode` and `SankeyLink`.
    */
-  animated: boolean;
+  animated?: boolean;
 
   /**
    * Color scheme for the nodes. Set internally by `SankeyNode`.
    */
-  colorScheme: ColorSchemeType;
+  colorScheme?: ColorSchemeType;
 
   /**
    * The node alignment method.
    */
-  justification: Justification;
+  justification?: Justification;
 
   /**
    * Width of the node.
    */
-  nodeWidth: number;
+  nodeWidth?: number;
 
   /**
    * Vertical padding between nodes in the same column.
    */
-  nodePadding: number;
+  nodePadding?: number;
 
   /**
    * Nodes that are rendered.
@@ -66,37 +72,42 @@ export interface SankeyProps extends ChartProps {
   links: ReactElement<SankeyLinkProps, typeof SankeyLink>[];
 }
 
-interface SankeyState {
-  activeNodes: Node[];
-  activeLinks: Link[];
-}
+export const Sankey: FC<SankeyProps> = ({
+  width,
+  height,
+  margins,
+  className,
+  animated,
+  links,
+  justification,
+  nodeWidth,
+  nodePadding,
+  colorScheme,
+  nodes,
+  containerClassName,
+  ...rest
+}) => {
+  const id = useId(rest.id);
+  const [activeNodes, setActiveNodes] = useState<Node[]>([]);
+  const [activeLinks, setActiveLinks] = useState<Link[]>([]);
 
-export class Sankey extends Component<SankeyProps, SankeyState> {
-  static defaultProps: Partial<SankeyProps> = {
-    animated: true,
-    justification: 'justify',
-    nodeWidth: 15,
-    nodePadding: 10
-  };
+  const getNodeColor = useCallback(
+    (node: NodeElement, index: any) => {
+      if (colorScheme) {
+        return getColor({
+          data: nodes,
+          colorScheme,
+          point: nodes[index],
+          index
+        });
+      } else {
+        return node.props.color;
+      }
+    },
+    [colorScheme, nodes]
+  );
 
-  state: SankeyState = { activeNodes: [], activeLinks: [] };
-
-  getNodeColor(node: NodeElement, index: any) {
-    const { colorScheme, nodes } = this.props;
-
-    if (colorScheme) {
-      return getColor({
-        data: nodes,
-        colorScheme,
-        point: nodes[index],
-        index
-      });
-    } else {
-      return node.props.color;
-    }
-  }
-
-  onNodeActive(node: Node) {
+  const onNodeActive = useCallback((node: Node) => {
     const activeNodes: Node[] = [node];
     const activeLinks: Link[] = [];
 
@@ -120,153 +131,169 @@ export class Sankey extends Component<SankeyProps, SankeyState> {
       });
     }
 
-    this.setState({ activeNodes, activeLinks });
-  }
+    setActiveNodes(activeNodes);
+    setActiveLinks(activeLinks);
+  }, []);
 
-  onLinkActive(link: Link) {
+  const onLinkActive = useCallback((link: Link) => {
     const activeNodes: Node[] = [link.source as Node, link.target as Node];
     const activeLinks: Link[] = [link];
 
-    this.setState({ activeNodes, activeLinks });
-  }
+    setActiveNodes(activeNodes);
+    setActiveLinks(activeLinks);
+  }, []);
 
-  onInactive() {
-    this.setState({ activeNodes: [], activeLinks: [] });
-  }
+  const onInactive = useCallback(() => {
+    setActiveNodes([]);
+    setActiveLinks([]);
+  }, []);
 
-  renderNode(
-    computedNode: Node,
-    index: number,
-    chartWidth: number,
-    node?: NodeElement
-  ) {
-    const { animated } = this.props;
-    const { activeNodes } = this.state;
-    const active = activeNodes.some(
-      (node) => node.index === computedNode.index
-    );
-    const disabled = activeNodes.length > 0 && !active;
-
-    return (
-      <CloneElement<SankeyNodeProps>
-        element={node}
-        key={`node-${index}`}
-        active={active}
-        animated={animated}
-        disabled={disabled}
-        chartWidth={chartWidth}
-        onMouseEnter={bind(this.onNodeActive, this, computedNode)}
-        onMouseLeave={bind(this.onInactive, this, computedNode)}
-        {...computedNode}
-      />
-    );
-  }
-
-  renderNodes(nodes: Node[], chartWidth: number) {
+  const nodeMap = useMemo(() => {
+    // Not sure what this is for
     const nodeMap = new Map<string, NodeElement>();
-    this.props.nodes.forEach(
-      (node) => node && nodeMap.set(node.props.title, node)
-    );
+    nodes.forEach((node: any) => node && nodeMap.set(node.props.title, node));
 
-    nodes.sort((a, b) => {
+    return nodeMap;
+  }, [nodes]);
+
+  const renderNode = useCallback(
+    (
+      computedNode: Node,
+      index: number,
+      chartWidth: number,
+      node?: NodeElement
+    ) => {
+      const active = activeNodes.some(
+        (node) => node.index === computedNode.index
+      );
+      const disabled = activeNodes.length > 0 && !active;
+
+      return (
+        <CloneElement<SankeyNodeProps>
+          element={node}
+          key={`node-${index}`}
+          active={active}
+          animated={animated}
+          disabled={disabled}
+          chartWidth={chartWidth}
+          onMouseEnter={() => onNodeActive(computedNode)}
+          onMouseLeave={() => onInactive()}
+          {...computedNode}
+        />
+      );
+    },
+    [activeNodes, animated, onInactive, onNodeActive]
+  );
+
+  const renderLink = useCallback(
+    (computedLink: Link, index: number) => {
+      const active = activeLinks.some(
+        (link) => link.index === computedLink.index
+      );
+      const disabled = activeLinks.length > 0 && !active;
+
+      return (
+        <CloneElement<SankeyLinkProps>
+          element={links[index]}
+          active={active}
+          animated={animated}
+          key={`link-${index}`}
+          chartId={`sankey-${id}`}
+          disabled={disabled}
+          {...computedLink}
+          onMouseEnter={() => onLinkActive(computedLink)}
+          onMouseLeave={() => onInactive()}
+        />
+      );
+    },
+    [activeLinks, id, animated, links, onInactive, onLinkActive]
+  );
+
+  const getNodesAndLinks = useCallback(
+    (chartWidth: number, chartHeight: number) => {
+      const sankeyChart = sankey()
+        .extent([
+          [1, 1],
+          [chartWidth, chartHeight]
+        ])
+        .nodeWidth(nodeWidth)
+        .nodePadding(nodePadding)
+        .nodeAlign(JUSTIFICATION[justification])
+        .nodeId((node: any) => node.id || node.index);
+
+      const nodesCopy: any = nodes.map((node, index) => ({
+        id: node.props.id,
+        title: node.props.title,
+        color: getNodeColor(node, index)
+      }));
+
+      const linksCopy = links.map((link) => ({
+        source: link.props.source,
+        target: link.props.target,
+        value: link.props.value
+      }));
+
+      const { nodes: sankeyNodes, links: sankeyLinks } = sankeyChart({
+        nodes: nodesCopy,
+        links: linksCopy
+      });
+
+      /*
+    // NOTE: Not sure what this is doing
+    sankeyNodes.sort((a, b) => {
       const aX0 = a && a.x0 ? a.x0 : 0;
       const aY0 = a && a.y0 ? a.y0 : 0;
       const bX0 = b && b.x0 ? b.x0 : 0;
       const bY0 = b && b.y0 ? b.y0 : 0;
-
       return aX0 - bX0 || aY0 - bY0;
     });
+    */
 
-    return (
-      <Fragment>
-        {nodes.map((node, index) =>
-          this.renderNode(node, index, chartWidth, nodeMap.get(node.title))
-        )}
-      </Fragment>
-    );
-  }
+      return { sankeyNodes, sankeyLinks };
+    },
+    [getNodeColor, justification, links, nodePadding, nodeWidth, nodes]
+  );
 
-  renderLink(computedLink: Link, index: number, chartId: string) {
-    const { animated, links } = this.props;
-    const { activeLinks } = this.state;
-    const active = activeLinks.some(
-      (link) => link.index === computedLink.index
-    );
-    const disabled = activeLinks.length > 0 && !active;
+  const renderChart = useCallback(
+    ({ id, chartWidth, chartHeight, chartSized }: ChartContainerChildProps) => {
+      if (!chartSized) {
+        return null;
+      }
 
-    return (
-      <CloneElement<SankeyLinkProps>
-        element={links[index]}
-        active={active}
-        animated={animated}
-        key={`link-${index}`}
-        chartId={chartId}
-        disabled={disabled}
-        {...computedLink}
-        onMouseEnter={bind(this.onLinkActive, this, computedLink)}
-        onMouseLeave={bind(this.onInactive, this, computedLink)}
-      />
-    );
-  }
+      const { sankeyNodes, sankeyLinks } = getNodesAndLinks(
+        chartWidth,
+        chartHeight
+      );
 
-  renderChart(containerProps: ChartContainerChildProps) {
-    const { id, chartWidth, chartHeight } = containerProps;
-    const { justification, nodeWidth, nodePadding } = this.props;
-
-    const nodesCopy: Node[] = this.props.nodes.map((node, index) => ({
-      id: node.props.id,
-      title: node.props.title,
-      color: this.getNodeColor(node, index)
-    }));
-
-    const linksCopy: Link[] = this.props.links.map((link) => ({
-      source: link.props.source,
-      target: link.props.target,
-      value: link.props.value
-    }));
-
-    const sankeyChart = sankey()
-      .extent([
-        [1, 1],
-        [chartWidth, chartHeight]
-      ])
-      .nodeWidth(nodeWidth)
-      .nodePadding(nodePadding)
-      .nodeAlign(JUSTIFICATION[justification])
-      .nodeId((node: any) => node.id || node.index);
-
-    const { nodes, links } = sankeyChart({
-      nodes: nodesCopy,
-      links: linksCopy
-    });
-
-    return (
-      containerProps.chartSized && (
+      return (
         <Fragment key="group">
-          {links.map((link, index) =>
-            this.renderLink(link as Link, index, `sankey-${id}`)
+          {sankeyLinks.map((link, index) => renderLink(link as Link, index))}
+          {sankeyNodes.map((node: Node, index) =>
+            renderNode(node, index, chartWidth, nodeMap.get(node.title))
           )}
-          {this.renderNodes(nodes as Node[], chartWidth)}
         </Fragment>
-      )
-    );
-  }
+      );
+    },
+    [getNodesAndLinks, nodeMap, renderLink, renderNode]
+  );
 
-  render() {
-    const { id, width, height, margins, className, containerClassName } =
-      this.props;
+  return (
+    <ChartContainer
+      id={id}
+      width={width}
+      containerClassName={containerClassName}
+      height={height}
+      margins={margins}
+      className={className}
+    >
+      {renderChart}
+    </ChartContainer>
+  );
+};
 
-    return (
-      <ChartContainer
-        id={id}
-        width={width}
-        containerClassName={containerClassName}
-        height={height}
-        margins={margins}
-        className={className}
-      >
-        {(props) => this.renderChart(props)}
-      </ChartContainer>
-    );
-  }
-}
+Sankey.defaultProps = {
+  animated: true,
+  justification: 'justify',
+  nodeWidth: 15,
+  nodePadding: 10
+};

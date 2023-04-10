@@ -1,14 +1,11 @@
 import React, {
-  Component,
   Fragment,
-  createRef,
   ReactElement,
   useCallback,
   FC,
   useState,
   useRef
 } from 'react';
-import bind from 'memoize-bind';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { ChartInternalDataTypes } from '../../common/data';

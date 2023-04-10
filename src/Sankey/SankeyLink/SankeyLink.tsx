@@ -1,5 +1,12 @@
-import React, { Component, Fragment, createRef, ReactElement } from 'react';
-import bind from 'memoize-bind';
+import React, {
+  Fragment,
+  ReactElement,
+  useCallback,
+  useState,
+  useMemo,
+  useRef,
+  FC
+} from 'react';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { sankeyLinkHorizontal } from 'd3-sankey';
@@ -76,78 +83,79 @@ export interface SankeyLinkProps extends Link {
   onMouseLeave?: (event: React.MouseEvent<SVGPathElement>) => void;
 }
 
-interface SankeyLinkState {
-  hovered?: boolean;
-}
+export const SankeyLink: FC<SankeyLinkProps> = ({
+  gradient,
+  index,
+  source,
+  target,
+  tooltip,
+  chartId,
+  value,
+  active,
+  className,
+  disabled,
+  opacity,
+  style,
+  width,
+  color,
+  y0,
+  y1,
+  onClick,
+  onMouseEnter,
+  onMouseLeave
+}) => {
+  const linkSource = source as Node;
+  const linkTarget = target as Node;
 
-export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
-  static defaultProps: Partial<SankeyLinkProps> = {
-    active: false,
-    animated: true,
-    color: DEFAULT_COLOR,
-    disabled: false,
-    gradient: true,
-    opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
-    tooltip: (
-      <Tooltip
-        followCursor={true}
-        modifiers={{
-          offset: {
-            offset: '0, 5px'
-          }
-        }}
-      />
-    ),
-    width: 0,
-    onClick: () => undefined,
-    onMouseEnter: () => undefined,
-    onMouseLeave: () => undefined
-  };
+  const [hovered, setHovered] = useState<boolean>(false);
+  const linkRef = useRef<SVGPathElement | null>(null);
 
-  link = createRef<SVGPathElement>();
-  state: SankeyLinkState = {};
-
-  getEnter() {
-    const path = sankeyLinkHorizontal();
-    const d = path(this.getLink()) as string;
-    const strokeWidth = Math.max(1, this.props.width);
-    return { d, strokeWidth };
-  }
-
-  getExit() {
-    const path = sankeyLinkHorizontal();
-    const d = path({ ...this.getLink(), width: 0 }) as string;
-    return { d, strokeWidth: 0 };
-  }
-
-  getLink() {
-    const { index, value, y0, y1, source, target, width } = this.props;
+  const getLink = useCallback(() => {
     return { index, y0, y1, value, width, source, target };
-  }
+  }, [index, source, target, value, width, y0, y1]);
 
-  getStroke() {
-    const { color, index, gradient, chartId } = this.props;
+  const stroke = useMemo(() => {
     return gradient ? `url(#${chartId}-gradient-${index})` : color;
-  }
+  }, [chartId, color, gradient, index]);
 
-  onMouseEnter(event: React.MouseEvent<SVGPathElement>) {
-    this.setState({ hovered: true });
-    this.props.onMouseEnter(event);
-  }
+  const enterProps = useMemo(() => {
+    const path = sankeyLinkHorizontal();
+    const d = path(getLink()) as string;
+    const strokeWidth = Math.max(1, width);
+    return { d, strokeWidth };
+  }, [getLink, width]);
 
-  onMouseLeave(event: React.MouseEvent<SVGPathElement>) {
-    this.setState({ hovered: false });
-    this.props.onMouseLeave(event);
-  }
+  const exitProps = useMemo(() => {
+    const path = sankeyLinkHorizontal();
+    const d = path({ ...getLink(), width: 0 }) as string;
+    return { d, strokeWidth: 0 };
+  }, [getLink]);
 
-  renderLink() {
-    const { active, className, disabled, index, opacity, style, onClick } =
-      this.props;
-    const enterProps = this.getEnter();
-    const exitProps = this.getExit();
-
+  const renderTooltipContent = useCallback(() => {
     return (
-      <g ref={this.link}>
+      <div className={css.tooltip}>
+        <div className={css.tooltipLabel}>
+          {`${(source as NodeExtra).title} → ${(target as NodeExtra).title}`}
+        </div>
+        <div className={css.tooltipValue}>{formatValue(value)}</div>
+      </div>
+    );
+  }, [source, target, value]);
+
+  return (
+    <Fragment>
+      {gradient && (
+        <linearGradient
+          id={`${chartId}-gradient-${index}`}
+          gradientUnits="userSpaceOnUse"
+          x1={linkSource.x1}
+          x2={linkTarget.x0}
+        >
+          <stop offset="0%" stopColor={linkSource.color} />
+          <stop offset="100%" stopColor={linkTarget.color} />
+        </linearGradient>
+      )}
+      <g ref={linkRef}>
         <motion.path
           key={`sankey-link-${enterProps.d}-${index}`}
           className={classNames(css.link, className)}
@@ -158,57 +166,47 @@ export class SankeyLink extends Component<SankeyLinkProps, SankeyLinkState> {
           transition={{
             duration: 0.5
           }}
-          stroke={this.getStroke()}
+          stroke={stroke}
           strokeOpacity={opacity(active, disabled)}
           onClick={onClick}
-          onMouseEnter={bind(this.onMouseEnter, this)}
-          onMouseLeave={bind(this.onMouseLeave, this)}
+          onMouseEnter={(event: React.MouseEvent<SVGPathElement>) => {
+            setHovered(true);
+            onMouseEnter?.(event);
+          }}
+          onMouseLeave={(event: React.MouseEvent<SVGPathElement>) => {
+            setHovered(false);
+            onMouseLeave?.(event);
+          }}
         />
       </g>
-    );
-  }
+      {!tooltip?.props?.disabled && (
+        <CloneElement<TooltipProps>
+          content={renderTooltipContent}
+          element={tooltip}
+          visible={hovered}
+          reference={linkRef}
+        />
+      )}
+    </Fragment>
+  );
+};
 
-  renderTooltipContent() {
-    const { source, target, value } = this.props;
-
-    return (
-      <div className={css.tooltip}>
-        <div className={css.tooltipLabel}>
-          {`${(source as NodeExtra).title} → ${(target as NodeExtra).title}`}
-        </div>
-        <div className={css.tooltipValue}>{formatValue(value)}</div>
-      </div>
-    );
-  }
-
-  render() {
-    const { gradient, index, source, target, tooltip, chartId } = this.props;
-    const linkSource = source as Node;
-    const linkTarget = target as Node;
-
-    return (
-      <Fragment>
-        {gradient && (
-          <linearGradient
-            id={`${chartId}-gradient-${index}`}
-            gradientUnits="userSpaceOnUse"
-            x1={linkSource.x1}
-            x2={linkTarget.x0}
-          >
-            <stop offset="0%" stopColor={linkSource.color} />
-            <stop offset="100%" stopColor={linkTarget.color} />
-          </linearGradient>
-        )}
-        {this.renderLink()}
-        {!tooltip?.props?.disabled && (
-          <CloneElement<TooltipProps>
-            content={this.renderTooltipContent.bind(this)}
-            element={tooltip}
-            visible={this.state.hovered}
-            reference={this.link}
-          />
-        )}
-      </Fragment>
-    );
-  }
-}
+SankeyLink.defaultProps = {
+  active: false,
+  animated: true,
+  color: DEFAULT_COLOR,
+  disabled: false,
+  gradient: true,
+  opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
+  tooltip: (
+    <Tooltip
+      followCursor={true}
+      modifiers={{
+        offset: {
+          offset: '0, 5px'
+        }
+      }}
+    />
+  ),
+  width: 0
+};
