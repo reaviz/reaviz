@@ -1,3 +1,8 @@
+# 14.0.12 - 4/11/23
+- [fix] fix sankey labels not highlighting correctly
+- [fix] improve sankey highlighting
+- [chore] export sankey types better
+
 # 14.0.11 - 4/11/23
 - [improvement] sankey opacity on initial render fix
 - [chore] upgrade reablocks
