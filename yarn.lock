@@ -12576,10 +12576,10 @@ rdk@^6.4.2:
     framer-motion "7.8.0"
     popper.js "^1.16.1"
 
-reablocks@^3.6.11:
-  version "3.6.11"
-  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.6.11.tgz#350574e481150b9a84831ccd2ec3ef1ec812777d"
-  integrity sha512-Zh7gy0OSj7MYMbzx6SeJPnudkTCR64Z4/5D/JRVFRW3TGt6Z9ePv8rZWMC6zxPCkRL9zulD+TXq41N6PUH3i7g==
+reablocks@^3.6.14:
+  version "3.6.14"
+  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.6.14.tgz#8565e7fdb277c0205381f2ae970fbf4be08c45d9"
+  integrity sha512-6O9hk9UrT66al4exmOSAiOA5Oq6Uh8gHa8yGtQLoXh89tHPMIx+qlRidUyE45rwojneyLGRlLmosD4b3+ztUXw==
   dependencies:
     "@reaviz/react-use-fuzzy" "^1.0.2"
     chroma-js "^2.4.2"

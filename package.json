@@ -88,7 +88,7 @@
     "memoize-bind": "^1.0.3",
     "memoize-one": "^5.2.1",
     "rdk": "^6.4.2",
-    "reablocks": "^3.6.11",
+    "reablocks": "^3.6.14",
     "react-cool-dimensions": "^2.0.7",
     "react-fast-compare": "^3.2.1",
     "transformation-matrix": "^2.9.0"
