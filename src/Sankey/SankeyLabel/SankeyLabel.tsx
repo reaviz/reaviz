@@ -32,7 +32,7 @@ export interface SankeyLabelProps {
   fill: string;
 
   /**
-   * Label location.
+   * Label position.
    */
   position?: SankeyLabelPosition;
 
@@ -72,7 +72,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   disabled,
   fill,
   node,
-  location,
+  position,
   opacity,
   padding,
   visible
@@ -89,7 +89,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   const y = (y1 + y0) / 2;
 
   let textAnchor = showRightSide ? 'start' : 'end';
-  if (location === 'outside') {
+  if (position === 'outside') {
     textAnchor = showRightSide ? 'end' : 'start';
     x = showRightSide ? x1 - paddedWidth : x0 + paddedWidth;
   }
@@ -117,7 +117,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
 SankeyLabel.defaultProps = {
   active: false,
   fill: '#fff',
-  location: 'inside',
+  position: 'inside',
   opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   visible: true
 };
