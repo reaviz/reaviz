@@ -119,12 +119,10 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
       return `url(#${chartId}-gradient-${index})`;
     } else if (color) {
       return color;
-    } else if (linkSource.color) {
-      return linkSource.color;
     }
 
     return DEFAULT_COLOR;
-  }, [chartId, gradient, index, color, linkSource.color]);
+  }, [chartId, gradient, index, color]);
 
   const enterProps = useMemo(() => {
     const path = sankeyLinkHorizontal();
@@ -204,7 +202,8 @@ SankeyLink.defaultProps = {
   animated: true,
   disabled: false,
   gradient: true,
-  opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
+  opacity: (active, disabled) =>
+    active || !disabled ? 1 : disabled ? 0.2 : 0.9,
   tooltip: (
     <Tooltip
       followCursor={true}

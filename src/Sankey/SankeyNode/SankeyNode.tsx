@@ -211,7 +211,8 @@ SankeyNode.defaultProps = {
   color: DEFAULT_COLOR,
   disabled: false,
   label: <SankeyLabel />,
-  opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
+  opacity: (active, disabled) =>
+    active || !disabled ? 1 : disabled ? 0.2 : 0.9,
   showLabel: true,
   tooltip: (
     <Tooltip
