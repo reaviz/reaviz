@@ -32,8 +32,11 @@ const JUSTIFICATION = {
   right: sankeyRight
 };
 
-type Justification = 'justify' | 'center' | 'left' | 'right';
-type NodeElement = ReactElement<SankeyNodeProps, typeof SankeyNode>;
+export type Justification = 'justify' | 'center' | 'left' | 'right';
+
+export type NodeElement = ReactElement<SankeyNodeProps, typeof SankeyNode>;
+
+export type LinkElement = ReactElement<SankeyLinkProps, typeof SankeyLink>;
 
 export interface SankeyProps extends ChartProps {
   /**
@@ -69,7 +72,7 @@ export interface SankeyProps extends ChartProps {
   /**
    * Links that are rendered.
    */
-  links: ReactElement<SankeyLinkProps, typeof SankeyLink>[];
+  links: LinkElement[];
 }
 
 export const Sankey: FC<SankeyProps> = ({

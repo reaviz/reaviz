@@ -53,14 +53,9 @@ export interface SankeyNodeProps extends Node {
   opacity: (active: boolean, disabled: boolean) => number;
 
   /**
-   * Whether to show the label or not.
-   */
-  showLabel: boolean;
-
-  /**
    * CSS styles to apply.
    */
-  style?: object;
+  style?: React.StyleHTMLAttributes<SVGRectElement>;
 
   /**
    * Tooltip element.
@@ -93,7 +88,6 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   chartWidth,
   label,
   tooltip,
-  showLabel,
   title,
   value,
   className,
@@ -184,10 +178,11 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           }}
         />
       </motion.g>
-      {showLabel && (
+      {label !== null && (
         <CloneElement<SankeyLabelProps>
           active={active}
           element={label}
+          disabled={disabled}
           chartWidth={chartWidth}
           nodeWidth={nodeWidth}
           node={node}
@@ -211,9 +206,7 @@ SankeyNode.defaultProps = {
   color: DEFAULT_COLOR,
   disabled: false,
   label: <SankeyLabel />,
-  opacity: (active, disabled) =>
-    active || !disabled ? 1 : disabled ? 0.2 : 0.9,
-  showLabel: true,
+  opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   tooltip: (
     <Tooltip
       followCursor={true}

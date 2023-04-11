@@ -3,13 +3,18 @@ import classNames from 'classnames';
 import { Node } from '../utils';
 import css from './SankeyLabel.module.css';
 
-export type Location = 'inside' | 'outside';
+export type SankeyLabelPosition = 'inside' | 'outside';
 
 export interface SankeyLabelProps {
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
    */
   active: boolean;
+
+  /**
+   * Whether the label is disabled. Set internally by `Sankey`.
+   */
+  disabled: boolean;
 
   /**
    * Width of the chart. Set internally by `Sankey`.
@@ -29,7 +34,7 @@ export interface SankeyLabelProps {
   /**
    * Label location.
    */
-  location: Location;
+  position?: SankeyLabelPosition;
 
   /**
    * Node data. Set internally by `Sankey`.
@@ -39,7 +44,7 @@ export interface SankeyLabelProps {
   /**
    * Opacity callback. Used internally by `Sankey`.
    */
-  opacity: (active: boolean) => number;
+  opacity: (active: boolean, disabled: boolean) => number;
 
   /**
    * Padding between the label and the node.
@@ -64,6 +69,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   chartWidth,
   className,
   nodeWidth,
+  disabled,
   fill,
   node,
   location,
@@ -100,7 +106,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
       dy="0.35em"
       textAnchor={textAnchor}
       fill={fill}
-      opacity={opacity(active)}
+      opacity={opacity(active, disabled)}
       style={{ padding }}
     >
       {node.title}
@@ -111,7 +117,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
 SankeyLabel.defaultProps = {
   active: false,
   fill: '#fff',
-  location: 'inside' as Location,
-  opacity: (active) => (active ? 1 : 0.5),
+  location: 'inside',
+  opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   visible: true
 };
