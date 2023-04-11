@@ -59,7 +59,7 @@ export const Simple = () => {
         <SankeyNode
           key={`node-${i}`}
           {...node}
-          label={<SankeyLabel location="outside" />}
+          label={<SankeyLabel position="outside" />}
           onClick={() => onNodeClick(node.title)}
         />
       ))}
