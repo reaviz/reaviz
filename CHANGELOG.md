@@ -1,3 +1,7 @@
+# 14.0.11 - 4/11/23
+- [improvement] sankey opacity on initial render fix
+- [chore] upgrade reablocks
+
 # 14.0.10 - 4/10/23
 - [improvement] add ability to use link colors on links
 
