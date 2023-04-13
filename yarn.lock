@@ -4912,6 +4912,11 @@ classnames@*, classnames@^2.2.6, classnames@^2.3.1:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
 
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
@@ -12566,20 +12571,20 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rdk@^6.4.2:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.4.2.tgz#928ec2f2c7d3e3d243543025ad982e4fad91f156"
-  integrity sha512-hBlqPzESSyyqF7S/sQcLtqyGJnexYWxcTsurI4BZrmqQ3Q9CPAwygvFgYKw4ncDn6cmuCLcQoKgNpRUs2Tj/rA==
+rdk@>=6.4.3:
+  version "6.4.3"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.4.3.tgz#b4756342b7e829bf9772da3ad9ff011b22fbeb78"
+  integrity sha512-G2f/f+Xrxid9HaGoHX3DQUmpdN0XL3+xr4cRJGSjOL2xkXhHujTPCZbivO2/LckJZnrBssECyKlqWjrs182Flg==
   dependencies:
     body-scroll-lock "^4.0.0-beta.0"
-    classnames "^2.3.1"
+    classnames "^2.3.2"
     framer-motion "7.8.0"
     popper.js "^1.16.1"
 
-reablocks@^3.6.14:
-  version "3.6.14"
-  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.6.14.tgz#8565e7fdb277c0205381f2ae970fbf4be08c45d9"
-  integrity sha512-6O9hk9UrT66al4exmOSAiOA5Oq6Uh8gHa8yGtQLoXh89tHPMIx+qlRidUyE45rwojneyLGRlLmosD4b3+ztUXw==
+reablocks@>=3.6.15:
+  version "3.6.15"
+  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.6.15.tgz#df90e03c2b52f59d29f3c3be9ddffcd6ff3fd9e4"
+  integrity sha512-H23w0DWdzk2JHVzPZUC0tuza050hEbzCbwwMxKWqeYk0JmwKbyL4qQTA3BB7r3U+kj0nNojjYZwiyVQ2X7M0aQ==
   dependencies:
     "@reaviz/react-use-fuzzy" "^1.0.2"
     chroma-js "^2.4.2"
@@ -12593,7 +12598,7 @@ reablocks@^3.6.14:
     fuse.js "^6.6.2"
     human-format "^1.0.0"
     pluralize "^8.0.0"
-    rdk "^6.4.2"
+    rdk ">=6.4.3"
     react-fast-compare "^3.2.1"
     react-highlight-words "^0.17.0"
     react-input-autosize "^3.0.0"
