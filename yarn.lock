@@ -12571,20 +12571,20 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-rdk@>=6.4.3:
-  version "6.4.3"
-  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.4.3.tgz#b4756342b7e829bf9772da3ad9ff011b22fbeb78"
-  integrity sha512-G2f/f+Xrxid9HaGoHX3DQUmpdN0XL3+xr4cRJGSjOL2xkXhHujTPCZbivO2/LckJZnrBssECyKlqWjrs182Flg==
+rdk@>=6.4.4:
+  version "6.4.4"
+  resolved "https://registry.yarnpkg.com/rdk/-/rdk-6.4.4.tgz#6cfba22a5a801075ab56c9f9e9e61b09435b2bcd"
+  integrity sha512-8ix2MSQxPP9cElSfPRt3bmAIgSPC/sN164YJD/R22Kbo+GFEbVYnfJUggbUTHYodt7TCEV/BV/gFUPl12A4dGg==
   dependencies:
     body-scroll-lock "^4.0.0-beta.0"
     classnames "^2.3.2"
     framer-motion "7.8.0"
     popper.js "^1.16.1"
 
-reablocks@>=3.6.15:
-  version "3.6.15"
-  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.6.15.tgz#df90e03c2b52f59d29f3c3be9ddffcd6ff3fd9e4"
-  integrity sha512-H23w0DWdzk2JHVzPZUC0tuza050hEbzCbwwMxKWqeYk0JmwKbyL4qQTA3BB7r3U+kj0nNojjYZwiyVQ2X7M0aQ==
+reablocks@>=3.6.17:
+  version "3.6.17"
+  resolved "https://registry.yarnpkg.com/reablocks/-/reablocks-3.6.17.tgz#0768542d9d34d698a8de83062d5583cee2269e14"
+  integrity sha512-WtY4WCJN0gSA3NzK76Yd+T0pK4CIKSK66HiSOHmaOLEUl3H5vvoEY86l13sWm1GxEHfYYDxMPTux5lJhwGcDjQ==
   dependencies:
     "@reaviz/react-use-fuzzy" "^1.0.2"
     chroma-js "^2.4.2"
@@ -12598,7 +12598,7 @@ reablocks@>=3.6.15:
     fuse.js "^6.6.2"
     human-format "^1.0.0"
     pluralize "^8.0.0"
-    rdk ">=6.4.3"
+    rdk ">=6.4.4"
     react-fast-compare "^3.2.1"
     react-highlight-words "^0.17.0"
     react-input-autosize "^3.0.0"
