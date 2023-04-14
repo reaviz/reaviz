@@ -297,7 +297,11 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       containerClassName={containerClassName}
       xAxisVisible={isAxisVisible(xAxis.props)}
       yAxisVisible={isAxisVisible(yAxis.props)}
-      className={classNames(css.areaChart, className, series.type)}
+      className={classNames(
+        css.areaChart,
+        className,
+        series.type as unknown as string
+      )}
     >
       {renderChart}
     </ChartContainer>
