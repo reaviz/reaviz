@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "14.0.14",
+  "version": "14.0.15",
   "description": "Data Visualization using React",
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9010 -s public",
@@ -71,7 +71,7 @@
     "big-integer": "1.6.49",
     "calculate-size": "1.1.1",
     "chroma-js": "^2.4.2",
-    "classnames": "^2.2.6",
+    "classnames": "^2.3.2",
     "d3-array": "^3.0.4",
     "d3-format": "^3.0.1",
     "d3-geo": "^3.0.1",
@@ -88,7 +88,7 @@
     "memoize-bind": "^1.0.3",
     "memoize-one": "^5.2.1",
     "rdk": ">=6.4.4",
-    "reablocks": ">=3.6.17",
+    "reablocks": ">=3.6.20",
     "react-cool-dimensions": "^2.0.7",
     "react-fast-compare": "^3.2.1",
     "transformation-matrix": "^2.9.0"
@@ -138,9 +138,9 @@
     "postcss-nested": "^4",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.6.2",
-    "react": "^18.1.0",
+    "react": "^18.2.0",
     "react-docgen-typescript-loader": "^3.7.2",
-    "react-dom": "^18.1.0",
+    "react-dom": "^18.2.0",
     "remark-codesandbox": "^0.10.0",
     "rollup": "^2.38.4",
     "rollup-plugin-bundle-size": "^1.0.3",
