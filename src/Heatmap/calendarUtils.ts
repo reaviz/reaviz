@@ -40,7 +40,7 @@ export const buildDataScales = (
   // Get the most recent date to get the range from
   // From the end date, lets find the start year/month of that
   // From that start year/month, lets find the end year/month for our bounds
-  const startDate = min(rawData, (d) => d.key);
+  const startDate = min(rawData, (d) => d.key) || new Date();
   const start = getFirstOfMonth(startDate);
   const endDomain = view === 'year' ? 53 : 5;
   const end = addWeeksToDate(start, endDomain);
