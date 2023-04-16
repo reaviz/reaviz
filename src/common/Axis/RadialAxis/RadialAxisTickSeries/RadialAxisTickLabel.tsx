@@ -1,34 +1,79 @@
-import React, { PureComponent } from 'react';
+import React, { FC, useMemo } from 'react';
 import { formatValue } from '../../../utils/formatting';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
 
 export interface RadialAxisTickLabelProps {
+  /**
+   * Data to render.
+   */
   data: any;
+
+  /**
+   * Size of the line.
+   */
   lineSize: number;
+
+  /**
+   * Color of the text.
+   */
   fill: string;
+
+  /**
+   * Font size of the text.
+   */
   fontSize: number;
+
+  /**
+   * Rotation of the text.
+   */
   rotation: number;
+
+  /**
+   * Font family of the text.
+   */
   fontFamily: string;
+
+  /**
+   * Index of the tick.
+   */
   index: number;
+
+  /**
+   * Padding of the tick.
+   */
   padding: number;
+
+  /**
+   * Point of the tick.
+   */
   point: any;
+
+  /**
+   * Auto rotate the text.
+   */
   autoRotate: boolean;
+
+  /**
+   * Format of the label.
+   */
   format?: (value: any, index: number) => any | string;
 }
 
-export class RadialAxisTickLabel extends PureComponent<RadialAxisTickLabelProps> {
-  static defaultProps: Partial<RadialAxisTickLabelProps> = {
-    fill: '#71808d',
-    fontSize: 11,
-    padding: 15,
-    fontFamily: 'sans-serif',
-    autoRotate: true
-  };
-
-  getPosition() {
-    const { point, autoRotate, rotation, padding } = this.props;
-
+export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
+  point,
+  autoRotate,
+  rotation,
+  padding,
+  data,
+  fill,
+  fontFamily,
+  fontSize,
+  format,
+  lineSize,
+  index
+}) => {
+  const { transform, textAnchor } = useMemo(() => {
     let textAnchor;
     let transform;
 
@@ -61,35 +106,31 @@ export class RadialAxisTickLabel extends PureComponent<RadialAxisTickLabelProps>
       transform,
       textAnchor
     };
-  }
+  }, [autoRotate, padding, point, rotation]);
 
-  render() {
-    const {
-      data,
-      fill,
-      fontFamily,
-      fontSize,
-      format,
-      lineSize,
-      index
-    } = this.props;
-    const text = format ? format(data, index) : formatValue(data);
-    const { transform, textAnchor } = this.getPosition();
+  const text = format ? format(data, index) : formatValue(data);
 
-    return (
-      <g transform={transform}>
-        <title>{text}</title>
-        <text
-          dy="0.35em"
-          x={lineSize + 5}
-          textAnchor={textAnchor}
-          fill={fill}
-          fontFamily={fontFamily}
-          fontSize={fontSize}
-        >
-          {text}
-        </text>
-      </g>
-    );
-  }
-}
+  return (
+    <g transform={transform}>
+      <title>{text}</title>
+      <text
+        dy="0.35em"
+        x={lineSize + 5}
+        textAnchor={textAnchor}
+        fill={fill}
+        fontFamily={fontFamily}
+        fontSize={fontSize}
+      >
+        {text}
+      </text>
+    </g>
+  );
+};
+
+RadialAxisTickLabel.defaultProps = {
+  fill: '#71808d',
+  fontSize: 11,
+  padding: 15,
+  fontFamily: 'sans-serif',
+  autoRotate: true
+};

@@ -1,5 +1,14 @@
-import React, { FC, ReactElement, useCallback, useState } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useCallback,
+  useState
+} from 'react';
+import {
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape
+} from '../../common/data';
 import { getColor, ColorSchemeType, schemes } from '../../common/color';
 import { CloneElement } from 'rdk';
 import { RadialAreaProps, RadialArea } from './RadialArea';
@@ -8,11 +17,18 @@ import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
 import { TooltipAreaProps, TooltipArea } from '../../common/Tooltip';
 
+export type RadialPointSeriesType = 'standard' | 'grouped';
+
 export interface RadialAreaSeriesProps {
   /**
    * Parsed data shape. Set internally by `RadialAreaChart`.
    */
   data: ChartInternalShallowDataShape[];
+
+  /**
+   * The type of the chart.
+   */
+  type?: RadialPointSeriesType;
 
   /**
    * Color scheme for the series.
@@ -102,94 +118,129 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   height,
   innerRadius,
   outerRadius,
+  type,
   colorScheme,
   interpolation
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
+  const isMulti = type === 'grouped';
 
   const getColorForPoint = useCallback(
     (point: ChartInternalShallowDataShape, index: number) => {
+      const key = Array.isArray(point) ? point?.[0]?.key : point?.key;
+
       return getColor({
         colorScheme,
         data,
         index,
-        point
+        point,
+        key
       });
     },
     [colorScheme, data]
   );
 
   const renderArea = useCallback(
-    () => (
-      <CloneElement<RadialAreaProps>
-        element={area}
-        id={`${id}-radial-area`}
-        xScale={xScale}
-        yScale={yScale}
-        animated={animated}
-        color={getColorForPoint}
-        data={data}
-        interpolation={interpolation}
-        outerRadius={outerRadius}
-        innerRadius={innerRadius}
-      />
+    (point: ChartInternalShallowDataShape[], index = 0) => (
+      <>
+        {area && (
+          <CloneElement<RadialAreaProps>
+            element={area}
+            id={`${id}-radial-area-${index}`}
+            xScale={xScale}
+            yScale={yScale}
+            animated={animated}
+            color={getColorForPoint}
+            index={index}
+            data={point}
+            interpolation={interpolation}
+            outerRadius={outerRadius}
+            innerRadius={innerRadius}
+          />
+        )}
+        {line && (
+          <CloneElement<RadialLineProps>
+            element={line}
+            xScale={xScale}
+            yScale={yScale}
+            hasArea={area !== null}
+            index={index}
+            animated={animated}
+            interpolation={interpolation}
+            color={getColorForPoint}
+            data={point}
+          />
+        )}
+      </>
     ),
     [
       animated,
       area,
-      data,
       getColorForPoint,
       id,
       innerRadius,
       interpolation,
+      line,
       outerRadius,
       xScale,
       yScale
     ]
   );
 
-  const renderLine = useCallback(
-    () => (
-      <CloneElement<RadialLineProps>
-        element={line}
-        xScale={xScale}
-        yScale={yScale}
-        animated={animated}
-        interpolation={interpolation}
-        color={getColorForPoint}
-        data={data}
-      />
-    ),
-    [animated, data, getColorForPoint, interpolation, line, xScale, yScale]
+  const renderSymbols = useCallback(
+    (data: ChartInternalShallowDataShape[], index = 0) => {
+      // Animations are only valid for Area
+      const activeSymbols =
+        (symbols && symbols.props.activeValues) || activeValues;
+      const isAnimated = area !== undefined && animated && !activeSymbols;
+
+      return (
+        <CloneElement<RadialPointSeriesProps>
+          element={symbols}
+          activeValues={activeValues}
+          xScale={xScale}
+          index={index}
+          yScale={yScale}
+          data={data}
+          animated={isAnimated}
+          color={getColorForPoint}
+        />
+      );
+    },
+    [activeValues, animated, area, getColorForPoint, symbols, xScale, yScale]
   );
 
-  const renderSymbols = useCallback(() => {
-    // Animations are only valid for Area
-    const activeSymbols =
-      (symbols && symbols.props.activeValues) || activeValues;
-    const isAnimated = area !== undefined && animated && !activeSymbols;
+  const renderSingleSeries = useCallback(
+    (points: ChartInternalShallowDataShape[]) => (
+      <Fragment>
+        {renderArea(points)}
+        {symbols && renderSymbols(points)}
+      </Fragment>
+    ),
+    [renderArea, renderSymbols, symbols]
+  );
 
-    return (
-      <CloneElement<RadialPointSeriesProps>
-        element={symbols}
-        activeValues={activeValues}
-        xScale={xScale}
-        yScale={yScale}
-        data={data}
-        animated={isAnimated}
-        color={getColorForPoint}
-      />
-    );
-  }, [
-    activeValues,
-    animated,
-    area,
-    data,
-    getColorForPoint,
-    symbols,
-    xScale,
-    yScale
-  ]);
+  const renderMultiSeries = useCallback(
+    (points: ChartInternalNestedDataShape[]) => (
+      <Fragment>
+        {points
+          .map((point, index) => (
+            <Fragment key={`${point.key!.toString()}`}>
+              {renderArea(point.data, index)}
+            </Fragment>
+          ))
+          .reverse()}
+        {points
+          .map((point, index) => (
+            <Fragment key={`${point.key!.toString()}`}>
+              {renderSymbols(point.data, index)}
+            </Fragment>
+          ))
+          .reverse()}
+      </Fragment>
+    ),
+    [renderArea, renderSymbols]
+  );
 
   return (
     <CloneElement<TooltipAreaProps>
@@ -207,17 +258,19 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
       onValueLeave={() => setActiveValues(null)}
     >
       <g clipPath={`url(#${id}-path)`}>
-        {area && renderArea()}
-        {line && renderLine()}
-        {symbols && renderSymbols()}
+        {isMulti &&
+          renderMultiSeries(data as unknown as ChartInternalNestedDataShape[])}
+        {!isMulti &&
+          renderSingleSeries(data as ChartInternalShallowDataShape[])}
       </g>
     </CloneElement>
   );
 };
 
 RadialAreaSeries.defaultProps = {
-  colorScheme: schemes.cybertron[0],
+  colorScheme: schemes.cybertron,
   interpolation: 'smooth',
+  type: 'standard',
   animated: true,
   area: <RadialArea />,
   line: <RadialLine />,

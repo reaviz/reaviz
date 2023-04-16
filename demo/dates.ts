@@ -11,7 +11,6 @@ export const generateData = (count, minVal = 1, maxVal = 50) =>
     }))
     .reverse();
 
-// generateData(100);
 export const largeDateData = [
   {
     id: '100',
@@ -515,7 +514,6 @@ export const largeDateData = [
   }
 ];
 
-// generateData(50);
 export const medDateData = [
   {
     id: '50',
@@ -769,7 +767,6 @@ export const medDateData = [
   }
 ];
 
-// generateData(15);
 export const smallDateData = [
   { id: '15', key: new Date('2020-02-17T08:00:00.000Z'), data: 4 },
   { id: '14', key: new Date('2020-02-18T08:00:00.000Z'), data: 16 },
@@ -788,7 +785,6 @@ export const smallDateData = [
   { id: '1', key: new Date('2020-03-02T08:00:00.000Z'), data: 50 }
 ];
 
-// generateDateData() from sonar.ts
 export const singleDateData = [
   { id: '0', key: new Date('2020-02-17T08:00:00.000Z'), data: 10 },
   { id: '1', key: new Date('2020-02-21T08:00:00.000Z'), data: 18 },
@@ -796,20 +792,6 @@ export const singleDateData = [
   { id: '3', key: new Date('2020-02-29T08:00:00.000Z'), data: 10 }
 ];
 
-// export const multiDateData = [
-//   {
-//     key: 'Threat Intel',
-//     data: generateDateData()
-//   },
-//   {
-//     key: 'DLP',
-//     data: generateDateData()
-//   },
-//   {
-//     key: 'Syslog',
-//     data: generateDateData()
-//   }
-// ];
 export const multiDateData = [
   {
     key: 'Threat Intel',
@@ -888,24 +870,6 @@ export const multiDateData = [
   }
 ];
 
-// export const nonZeroDateData = [
-//   {
-//     key: generateDate(14),
-//     data: [5, 10]
-//   },
-//   {
-//     key: generateDate(10),
-//     data: [8, 14]
-//   },
-//   {
-//     key: generateDate(5),
-//     data: [5, 6]
-//   },
-//   {
-//     key: generateDate(2),
-//     data: [10, 18]
-//   }
-// ];
 export const nonZeroDateData = [
   { key: new Date('2020-02-17T08:00:00.000Z'), data: [5, 10] },
   { key: new Date('2020-02-21T08:00:00.000Z'), data: [8, 14] },
@@ -913,24 +877,6 @@ export const nonZeroDateData = [
   { key: new Date('2020-02-29T08:00:00.000Z'), data: [10, 18] }
 ];
 
-// export const singleDateBigIntData = [
-//   {
-//     key: generateDate(14),
-//     data: bigInt(98476124342)
-//   },
-//   {
-//     key: generateDate(10),
-//     data: bigInt(76129235932)
-//   },
-//   {
-//     key: generateDate(5),
-//     data: bigInt(60812341342)
-//   },
-//   {
-//     key: generateDate(2),
-//     data: bigInt(76129235932)
-//   }
-// ];
 export const singleDateBigIntData = [
   {
     key: new Date('2020-02-17T08:00:00.000Z'),

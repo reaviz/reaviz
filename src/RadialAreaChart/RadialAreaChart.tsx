@@ -1,8 +1,11 @@
 import React, { Fragment, ReactElement, FC, useCallback } from 'react';
 import {
-  ChartShallowDataShape,
   ChartInternalShallowDataShape,
-  buildShallowChartData
+  buildShallowChartData,
+  ChartDataShape,
+  buildNestedChartData,
+  ChartNestedDataShape,
+  ChartShallowDataShape
 } from '../common/data';
 import { scaleTime, scaleBand } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
@@ -21,7 +24,7 @@ export interface RadialAreaChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
-  data: ChartShallowDataShape[];
+  data: ChartDataShape[];
 
   /**
    * The series component that renders the area components.
@@ -51,34 +54,55 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   axis,
   margins
 }) => {
-  const getScales = useCallback(
-    (
-      preData: ChartShallowDataShape[],
-      outerRadius: number,
-      innerRadius: number
-    ) => {
-      const d = buildShallowChartData(
-        preData
-      ) as ChartInternalShallowDataShape[];
-
-      const yDomain = getYDomain({ data: d, scaled: false });
-
+  const getXScale = useCallback(
+    (points) => {
       let xScale;
       if (axis?.props.type === 'category') {
-        const xDomain = uniqueBy<ChartInternalShallowDataShape>(
-          d,
-          (dd) => dd.x
-        );
+        const isMultiSeries = series.props.type === 'grouped';
+
+        let xDomain;
+        if (isMultiSeries) {
+          xDomain = uniqueBy<ChartInternalShallowDataShape>(
+            points,
+            (dd) => dd.data,
+            (dd) => dd.x
+          );
+        } else {
+          xDomain = uniqueBy<ChartInternalShallowDataShape>(
+            points,
+            (dd) => dd.x
+          );
+        }
+
         xScale = scaleBand()
           .range([0, 2 * Math.PI])
           .domain(xDomain as any[]);
       } else {
-        const xDomain = getXDomain({ data: d });
+        const xDomain = getXDomain({ data: points });
+
         xScale = scaleTime()
           .range([0, 2 * Math.PI])
           .domain(xDomain);
       }
 
+      return xScale;
+    },
+    [axis?.props.type, series.props.type]
+  );
+
+  const getScales = useCallback(
+    (preData: ChartDataShape[], outerRadius: number, innerRadius: number) => {
+      const isMultiSeries = series.props.type === 'grouped';
+
+      let d;
+      if (isMultiSeries) {
+        d = buildNestedChartData(preData as ChartNestedDataShape[], true);
+      } else {
+        d = buildShallowChartData(preData as ChartShallowDataShape[]);
+      }
+
+      const xScale = getXScale(d);
+      const yDomain = getYDomain({ data: d, scaled: false });
       const yScale = getRadialYScale(innerRadius, outerRadius, yDomain);
 
       return {
@@ -87,7 +111,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
         result: d
       };
     },
-    [axis?.props.type]
+    [getXScale, series.props.type]
   );
 
   const renderChart = useCallback(

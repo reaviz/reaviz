@@ -1,7 +1,12 @@
 import React from 'react';
 import { RadialAreaChart } from './RadialAreaChart';
-import { medDateData, categoryData } from '../../demo';
-import { RadialAreaSeries, RadialArea, RadialLine, RadialPointSeries } from './RadialAreaSeries';
+import { medDateData, categoryData, multiCategory } from '../../demo';
+import {
+  RadialAreaSeries,
+  RadialArea,
+  RadialLine,
+  RadialPointSeries
+} from './RadialAreaSeries';
 import { number, boolean, object, select } from '@storybook/addon-knobs';
 import {
   RadialAxis,
@@ -12,7 +17,7 @@ import {
   RadialAxisTickLine
 } from '../common/Axis';
 import { schemes } from '../common/color';
-import { RadialGradient } from '../common/Gradient';
+import { GradientStop, RadialGradient } from '../common/Gradient';
 
 export default {
   title: 'Charts/Area Chart/Radial',
@@ -54,8 +59,8 @@ export const Simple = () => {
 
   return (
     <RadialAreaChart
-      height={450}
-      width={450}
+      height={500}
+      width={500}
       data={data}
       innerRadius={innerRadius}
       series={
@@ -89,8 +94,8 @@ export const Simple = () => {
 export const CategoricalData = () => (
   <RadialAreaChart
     data={categoryData}
-    height={300}
-    width={300}
+    height={500}
+    width={500}
     axis={<RadialAxis type="category" />}
   />
 );
@@ -99,4 +104,30 @@ export const Resizable = () => (
   <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
     <RadialAreaChart data={medDateData} />
   </div>
+);
+
+export const MultiSeries = () => (
+  <RadialAreaChart
+    data={multiCategory}
+    height={500}
+    width={500}
+    series={
+      <RadialAreaSeries
+        type="grouped"
+        area={
+          <RadialArea
+            gradient={
+              <RadialGradient
+                stops={[
+                  <GradientStop offset="0%" stopOpacity={0.1} key="start" />,
+                  <GradientStop offset="80%" stopOpacity={0.3} key="stop" />
+                ]}
+              />
+            }
+          />
+        }
+      />
+    }
+    axis={<RadialAxis type="category" />}
+  />
 );

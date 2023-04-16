@@ -1,7 +1,12 @@
 import React from 'react';
 import { RadialAreaChart } from './RadialAreaChart';
-import { medDateData, categoryData } from '../../demo';
-import { RadialArea, RadialAreaSeries, RadialLine, RadialPointSeries } from './RadialAreaSeries';
+import { medDateData, categoryData, multiCategory } from '../../demo';
+import {
+  RadialArea,
+  RadialAreaSeries,
+  RadialLine,
+  RadialPointSeries
+} from './RadialAreaSeries';
 import { number, boolean, object, select } from '@storybook/addon-knobs';
 import {
   RadialAxis,
@@ -9,7 +14,8 @@ import {
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisArcSeries,
-  RadialAxisTickLine
+  RadialAxisTickLine,
+  RadialAxisArcLine
 } from '../common/Axis';
 import { schemes } from '../common/color';
 
@@ -38,7 +44,7 @@ export const Simple = () => {
     },
     'outside'
   );
-  const arcCount = number('Arc Count', 10);
+  const arcCount = number('Arc Count', 5);
   const interpolation = select(
     'Interpolation',
     {
@@ -51,8 +57,8 @@ export const Simple = () => {
 
   return (
     <RadialAreaChart
-      height={450}
-      width={450}
+      height={500}
+      width={500}
       data={data}
       innerRadius={innerRadius}
       series={
@@ -86,9 +92,46 @@ export const Simple = () => {
 export const CategoricalData = () => (
   <RadialAreaChart
     data={categoryData}
-    height={300}
-    width={300}
+    height={500}
+    width={500}
     series={<RadialAreaSeries area={null} />}
     axis={<RadialAxis type="category" />}
+  />
+);
+
+export const MultiSeries = () => (
+  <RadialAreaChart
+    data={multiCategory}
+    height={500}
+    width={500}
+    series={<RadialAreaSeries area={null} type="grouped" />}
+    axis={<RadialAxis type="category" />}
+  />
+);
+
+export const Spider = () => (
+  <RadialAreaChart
+    data={multiCategory}
+    height={500}
+    width={500}
+    series={
+      <RadialAreaSeries
+        area={null}
+        type="grouped"
+        symbols={<RadialPointSeries show />}
+      />
+    }
+    axis={
+      <RadialAxis
+        type="category"
+        arcs={
+          <RadialAxisArcSeries
+            count={5}
+            arc={null}
+            line={<RadialAxisArcLine />}
+          />
+        }
+      />
+    }
   />
 );
