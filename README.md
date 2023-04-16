@@ -96,6 +96,8 @@ Chart types include:
 - Bubble Chart
 - Treemap
 - Bar List
+- Meter
+- Spider / Radar
 
 Additional features:
 

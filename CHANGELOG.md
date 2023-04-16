@@ -1,3 +1,6 @@
+# 14.2.0 - 4/16/23
+- [feature] Meter #117
+
 # 14.1.0 - 4/16/23
 - [feature] Radar Chart #116
 
