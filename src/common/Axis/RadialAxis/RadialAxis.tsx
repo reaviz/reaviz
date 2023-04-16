@@ -8,6 +8,7 @@ import {
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
 import { CloneElement } from 'rdk';
+import { getTicks } from '../../utils';
 
 export interface RadialAxisProps {
   /**
@@ -63,6 +64,17 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
 }) => {
   const outerRadius = Math.min(height, width) / 2;
 
+  // TODO: This is a hack to get the ticks in the parent
+  // component. This is because the ticks are needed
+  // for the arcs's lines.
+  const tickValues = getTicks(
+    xScale,
+    ticks.props.tickValues,
+    type,
+    ticks.props.count,
+    ticks.props.interval || ticks.props.count
+  );
+
   return (
     <Fragment>
       {arcs && (
@@ -70,6 +82,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
           element={arcs}
           outerRadius={outerRadius}
           innerRadius={innerRadius}
+          tickValues={tickValues}
         />
       )}
       {ticks && (

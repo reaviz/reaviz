@@ -14,7 +14,8 @@ import {
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisArcSeries,
-  RadialAxisTickLine
+  RadialAxisTickLine,
+  RadialAxisArcLine
 } from '../common/Axis';
 import { schemes } from '../common/color';
 
@@ -105,5 +106,32 @@ export const MultiSeries = () => (
     width={500}
     series={<RadialAreaSeries area={null} type="grouped" />}
     axis={<RadialAxis type="category" />}
+  />
+);
+
+export const Spider = () => (
+  <RadialAreaChart
+    data={multiCategory}
+    height={500}
+    width={500}
+    series={
+      <RadialAreaSeries
+        area={null}
+        type="grouped"
+        symbols={<RadialPointSeries show />}
+      />
+    }
+    axis={
+      <RadialAxis
+        type="category"
+        arcs={
+          <RadialAxisArcSeries
+            count={5}
+            arc={null}
+            line={<RadialAxisArcLine />}
+          />
+        }
+      />
+    }
   />
 );
