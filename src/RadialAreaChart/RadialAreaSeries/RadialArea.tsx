@@ -55,7 +55,12 @@ export interface RadialAreaProps {
   /**
    * CSS classes to apply.
    */
-  className?: any;
+  className?: string;
+
+  /**
+   * Index of the area in the series. Set internally by `RadialAreaSeries`.
+   */
+  index: number;
 
   /**
    * Gradient to apply to the area.
@@ -70,6 +75,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   yScale,
   color,
   animated,
+  index,
   outerRadius,
   xScale,
   innerRadius,
@@ -79,12 +85,15 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   const transition = useMemo(
     () =>
       animated
-        ? { ...DEFAULT_TRANSITION }
+        ? {
+          ...DEFAULT_TRANSITION,
+          delay: index * 0.05
+        }
         : {
           type: false,
           delay: 0
         },
-    [animated]
+    [animated, index]
   );
 
   const getFill = useCallback(

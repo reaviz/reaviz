@@ -20,6 +20,11 @@ export interface RadialPointSeriesProps {
   color: any;
 
   /**
+   * Index of the area in the series. Set internally by `RadialAreaSeries`.
+   */
+  index: number;
+
+  /**
    * Active values set by parent.
    */
   activeValues?: any;
@@ -106,5 +111,6 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
 
 RadialPointSeries.defaultProps = {
   show: 'hover',
+  type: 'standard',
   point: <RadialScatterPoint />
 };

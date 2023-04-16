@@ -36,6 +36,11 @@ export interface RadialLineProps {
   interpolation: RadialInterpolationTypes;
 
   /**
+   * Index of the area in the series. Set internally by `RadialAreaSeries`.
+   */
+  index: number;
+
+  /**
    * Stroke width of the line.
    */
   strokeWidth: number;
@@ -44,18 +49,27 @@ export interface RadialLineProps {
    * CSS classes to apply.
    */
   className?: string;
+
+  /**
+   * Internal property to identify if there is a area or not.
+   */
+  hasArea: boolean;
 }
 
 export const RadialLine: FC<Partial<RadialLineProps>> = ({
   xScale,
   yScale,
   className,
+  index,
+  hasArea,
   color,
   data,
   interpolation,
   strokeWidth,
   animated
 }) => {
+  const fill = color(data, index);
+
   const getPath = useCallback(
     (preData: ChartInternalShallowDataShape[]) => {
       const curve =
@@ -74,15 +88,16 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   const transition = useMemo(
     () =>
       animated
-        ? { ...DEFAULT_TRANSITION }
+        ? {
+          ...DEFAULT_TRANSITION,
+          delay: hasArea ? 0 : index * 0.05
+        }
         : {
           type: false,
           delay: 0
         },
-    [animated]
+    [animated, index, hasArea]
   );
-
-  const fill = color(data, 0);
 
   const enter = useMemo(
     () => ({
