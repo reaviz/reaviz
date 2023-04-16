@@ -1,3 +1,6 @@
+# 14.1.0 - 4/16/23
+- [feature] Radar Chart #116
+
 # 14.0.16- 4/14/23
 - [fix] CalendarHeatMap crashing with empty data #115
 
