@@ -1,3 +1,6 @@
+# 14.2.1 - 4/16/23
+- [feature] add shortcut method for Radar Chart #116
+
 # 14.2.0 - 4/16/23
 - [feature] Meter #117
 
