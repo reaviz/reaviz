@@ -8,7 +8,7 @@ import {
   LinearYAxisTickLabel
 } from '../common/Axis/LinearAxis';
 
-interface StackedNormalizedBarChartProps extends BarChartProps {
+export interface StackedNormalizedBarChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
 }
 

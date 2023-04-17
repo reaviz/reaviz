@@ -3,7 +3,7 @@ import { BarChart, BarChartProps } from './BarChart';
 import { ChartNestedDataShape } from '../common/data';
 import { StackedBarSeries } from './BarSeries';
 
-interface StackedBarChartProps extends BarChartProps {
+export interface StackedBarChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
 }
 

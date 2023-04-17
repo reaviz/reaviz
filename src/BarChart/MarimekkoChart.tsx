@@ -10,7 +10,7 @@ import {
   LinearYAxisTickLabel
 } from '../common/Axis/LinearAxis';
 
-interface MarimekkoChartProps extends BarChartProps {
+export interface MarimekkoChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
 }
 
