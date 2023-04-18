@@ -60,7 +60,7 @@ export interface SankeyLinkProps extends Link {
   /**
    * Tooltip element.
    */
-  tooltip?: ReactElement<TooltipProps, typeof Tooltip>;
+  tooltip?: ReactElement<TooltipProps, typeof Tooltip> | null;
 
   /**
    * Width of the link. Set internally by `Sankey`.

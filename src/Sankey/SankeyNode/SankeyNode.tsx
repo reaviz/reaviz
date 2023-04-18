@@ -60,7 +60,7 @@ export interface SankeyNodeProps extends Node {
   /**
    * Tooltip element.
    */
-  tooltip?: ReactElement<TooltipProps, typeof Tooltip>;
+  tooltip?: ReactElement<TooltipProps, typeof Tooltip> | null;
 
   /**
    * Width of the node. Set internally by `Sankey`.
