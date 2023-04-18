@@ -1,3 +1,6 @@
+# 14.2.2 - 4/18/23
+- [fix] improve sankey tooltip type
+
 # 14.2.1 - 4/16/23
 - [feature] add shortcut method for Radar Chart #116
 
