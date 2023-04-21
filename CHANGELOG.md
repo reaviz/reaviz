@@ -1,3 +1,6 @@
+# 14.2.3 - 4/21/23
+- [fix] improve types for sankey nodes/links
+
 # 14.2.2 - 4/18/23
 - [fix] improve sankey tooltip type
 
