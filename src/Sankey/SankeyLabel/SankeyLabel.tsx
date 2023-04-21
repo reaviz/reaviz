@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import classNames from 'classnames';
-import { Node } from '../utils';
+import { SankeyNodeExtra } from '../utils';
 import css from './SankeyLabel.module.css';
 
 export type SankeyLabelPosition = 'inside' | 'outside';
@@ -39,7 +39,7 @@ export interface SankeyLabelProps {
   /**
    * Node data. Set internally by `Sankey`.
    */
-  node?: Node;
+  node?: SankeyNodeExtra;
 
   /**
    * Opacity callback. Used internally by `Sankey`.

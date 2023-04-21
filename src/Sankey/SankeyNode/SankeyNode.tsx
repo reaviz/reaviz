@@ -13,10 +13,10 @@ import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
 import { SankeyLabel, SankeyLabelProps } from '../SankeyLabel';
-import { Node, DEFAULT_COLOR } from '../utils';
+import { SankeyNodeExtra, DEFAULT_COLOR } from '../utils';
 import css from './SankeyNode.module.css';
 
-export interface SankeyNodeProps extends Node {
+export interface SankeyNodeProps extends SankeyNodeExtra {
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
    */

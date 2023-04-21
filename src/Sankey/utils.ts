@@ -24,8 +24,8 @@ export interface LinkExtra {
   color?: string;
 }
 
-export type Node = SankeyNode<NodeExtra, LinkExtra>;
+export type SankeyNodeExtra = SankeyNode<NodeExtra, LinkExtra>;
 
-export type Link = SankeyLink<NodeExtra, LinkExtra>;
+export type SankeyLinkExtra = SankeyLink<NodeExtra, LinkExtra>;
 
 export const DEFAULT_COLOR = 'rgba(255, 255, 255, 0.2)';

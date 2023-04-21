@@ -13,10 +13,15 @@ import { sankeyLinkHorizontal } from 'd3-sankey';
 import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
-import { NodeExtra, Node, Link, DEFAULT_COLOR } from '../utils';
+import {
+  NodeExtra,
+  SankeyNodeExtra,
+  SankeyLinkExtra,
+  DEFAULT_COLOR
+} from '../utils';
 import css from './SankeyLink.module.css';
 
-export interface SankeyLinkProps extends Link {
+export interface SankeyLinkProps extends SankeyLinkExtra {
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
    */
@@ -104,8 +109,8 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   onMouseEnter,
   onMouseLeave
 }) => {
-  const linkSource = source as Node;
-  const linkTarget = target as Node;
+  const linkSource = source as SankeyNodeExtra;
+  const linkTarget = target as SankeyNodeExtra;
 
   const [hovered, setHovered] = useState<boolean>(false);
   const linkRef = useRef<SVGPathElement | null>(null);

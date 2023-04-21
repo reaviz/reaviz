@@ -23,7 +23,7 @@ import { CloneElement, useId } from 'rdk';
 import { getColor, ColorSchemeType } from '../common/color';
 import { SankeyNodeProps, SankeyNode } from './SankeyNode';
 import { SankeyLinkProps, SankeyLink } from './SankeyLink';
-import { Node, Link } from './utils';
+import { SankeyNodeExtra, SankeyLinkExtra } from './utils';
 
 const JUSTIFICATION = {
   justify: sankeyJustify,
@@ -91,8 +91,8 @@ export const Sankey: FC<SankeyProps> = ({
   ...rest
 }) => {
   const id = useId(rest.id);
-  const [activeNodes, setActiveNodes] = useState<Node[]>([]);
-  const [activeLinks, setActiveLinks] = useState<Link[]>([]);
+  const [activeNodes, setActiveNodes] = useState<SankeyNodeExtra[]>([]);
+  const [activeLinks, setActiveLinks] = useState<SankeyLinkExtra[]>([]);
 
   const getNodeColor = useCallback(
     (node: NodeElement, index: any) => {
@@ -110,14 +110,14 @@ export const Sankey: FC<SankeyProps> = ({
     [colorScheme, nodes]
   );
 
-  const onNodeActive = useCallback((node: Node) => {
-    const activeNodes: Node[] = [node];
-    const activeLinks: Link[] = [];
+  const onNodeActive = useCallback((node: SankeyNodeExtra) => {
+    const activeNodes: SankeyNodeExtra[] = [node];
+    const activeLinks: SankeyLinkExtra[] = [];
 
     if (node.sourceLinks) {
       activeLinks.push(...node.sourceLinks);
       node.sourceLinks.forEach((sourceLink) => {
-        const sourceLinkTarget = sourceLink.target as Node;
+        const sourceLinkTarget = sourceLink.target as SankeyNodeExtra;
         if (sourceLinkTarget.index !== node.index) {
           activeNodes.push(sourceLinkTarget);
         }
@@ -127,7 +127,7 @@ export const Sankey: FC<SankeyProps> = ({
     if (node.targetLinks) {
       activeLinks.push(...node.targetLinks);
       node.targetLinks.forEach((targetLink) => {
-        const targetLinkSource = targetLink.source as Node;
+        const targetLinkSource = targetLink.source as SankeyNodeExtra;
         if (targetLinkSource.index !== node.index) {
           activeNodes.push(targetLinkSource);
         }
@@ -138,9 +138,12 @@ export const Sankey: FC<SankeyProps> = ({
     setActiveLinks(activeLinks);
   }, []);
 
-  const onLinkActive = useCallback((link: Link) => {
-    const activeNodes: Node[] = [link.source as Node, link.target as Node];
-    const activeLinks: Link[] = [link];
+  const onLinkActive = useCallback((link: SankeyLinkExtra) => {
+    const activeNodes: SankeyNodeExtra[] = [
+      link.source as SankeyNodeExtra,
+      link.target as SankeyNodeExtra
+    ];
+    const activeLinks: SankeyLinkExtra[] = [link];
 
     setActiveNodes(activeNodes);
     setActiveLinks(activeLinks);
@@ -161,7 +164,7 @@ export const Sankey: FC<SankeyProps> = ({
 
   const renderNode = useCallback(
     (
-      computedNode: Node,
+      computedNode: SankeyNodeExtra,
       index: number,
       chartWidth: number,
       node?: NodeElement
@@ -189,7 +192,7 @@ export const Sankey: FC<SankeyProps> = ({
   );
 
   const renderLink = useCallback(
-    (computedLink: Link, index: number) => {
+    (computedLink: SankeyLinkExtra, index: number) => {
       const active = activeLinks.some(
         (link) => link.index === computedLink.index
       );
@@ -270,8 +273,10 @@ export const Sankey: FC<SankeyProps> = ({
 
       return (
         <Fragment key="group">
-          {sankeyLinks.map((link, index) => renderLink(link as Link, index))}
-          {sankeyNodes.map((node: Node, index) =>
+          {sankeyLinks.map((link, index) =>
+            renderLink(link as SankeyLinkExtra, index)
+          )}
+          {sankeyNodes.map((node: SankeyNodeExtra, index) =>
             renderNode(node, index, chartWidth, nodeMap.get(node.title))
           )}
         </Fragment>
