@@ -1,3 +1,6 @@
+# 14.2.4 - 4/21/23
+- [feature] add `format` callback to sankey labels
+
 # 14.2.3 - 4/21/23
 - [fix] improve types for sankey nodes/links
 
