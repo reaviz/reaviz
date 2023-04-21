@@ -23,6 +23,11 @@ import css from './SankeyLink.module.css';
 
 export interface SankeyLinkProps extends SankeyLinkExtra {
   /**
+   * Color of the link.
+   */
+  color?: string;
+
+  /**
    * Whether the element is active or not. Set internally by `Sankey`.
    */
   active: boolean;

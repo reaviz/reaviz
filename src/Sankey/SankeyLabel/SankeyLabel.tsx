@@ -5,6 +5,13 @@ import css from './SankeyLabel.module.css';
 
 export type SankeyLabelPosition = 'inside' | 'outside';
 
+export interface SankeyLabelFormatProps {
+  x: number;
+  y: number;
+  textAnchor: string;
+  node: SankeyNodeExtra;
+}
+
 export interface SankeyLabelProps {
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
@@ -60,6 +67,11 @@ export interface SankeyLabelProps {
    * Width of the node set by the 'Sankey'.
    */
   nodeWidth: number;
+
+  /**
+   * Custom formatting for the label.
+   */
+  format?: (value: SankeyLabelFormatProps) => string;
 }
 
 const LABEL_PADDING = 5;
@@ -71,6 +83,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   nodeWidth,
   disabled,
   fill,
+  format,
   node,
   position,
   opacity,
@@ -109,7 +122,9 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
       opacity={opacity(active, disabled)}
       style={{ padding }}
     >
-      {node.title}
+      {typeof format === 'function'
+        ? format({ x, y, textAnchor, node })
+        : node.title}
     </text>
   );
 };

@@ -18,6 +18,21 @@ import css from './SankeyNode.module.css';
 
 export interface SankeyNodeProps extends SankeyNodeExtra {
   /**
+   * ID of the node. If not provided, the node's index will be used.
+   */
+  id?: string;
+
+  /**
+   * Title of the node.
+   */
+  title: string;
+
+  /**
+   * Color of the node.
+   */
+  color?: string;
+
+  /**
    * Whether the element is active or not. Set internally by `Sankey`.
    */
   active: boolean;
