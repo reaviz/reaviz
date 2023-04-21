@@ -71,7 +71,7 @@ export interface SankeyLabelProps {
   /**
    * Custom formatting for the label.
    */
-  format?: (value: SankeyLabelFormatProps) => string;
+  format?: (value: SankeyLabelFormatProps) => any;
 }
 
 const LABEL_PADDING = 5;
