@@ -1,3 +1,6 @@
+# 14.2.5 - 4/21/23
+- [fix] fix format type
+
 # 14.2.4 - 4/21/23
 - [feature] add `format` callback to sankey labels
 
