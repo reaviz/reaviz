@@ -1,0 +1,5 @@
+.marker {
+  pointer-events: none;
+  stroke-dasharray: 4, 4;
+  stroke-linecap: round;
+}

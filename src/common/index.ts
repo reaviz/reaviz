@@ -6,6 +6,7 @@ export * from './Gestures';
 export * from './legends';
 export * from './Gridline';
 export * from './MarkLine';
+export * from './Marker';
 export * from './Gradient';
 export * from './Mask';
 export * from './Tooltip';

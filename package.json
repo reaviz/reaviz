@@ -3,8 +3,8 @@
   "version": "14.2.5",
   "description": "Data Visualization using React",
   "scripts": {
-    "start": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9010 -s public",
-    "build-storybook": "export NODE_OPTIONS=--openssl-legacy-provider && build-storybook -s public",
+    "start": "set  NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9010 -s public",
+    "build-storybook": "set  NODE_OPTIONS=--openssl-legacy-provider && build-storybook -s public",
     "copy": "cp CNAME storybook-static/",
     "build": "rollup -c",
     "lint": "eslint --ext js,ts,tsx",
