@@ -1,3 +1,7 @@
+# 14.3.0 - 4/27/23
+- [feature] add `useChart` hook for accessing chart props
+- [fix] export scales
+
 # 14.2.5 - 4/21/23
 - [fix] fix format type
 
