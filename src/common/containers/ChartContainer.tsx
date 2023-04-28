@@ -1,9 +1,10 @@
 import React, { FC, useCallback, useState, useMemo } from 'react';
-import { Dimensions, Margins, getDimension } from '../utils/dimensions';
+import { Margins, getDimension } from '../utils/dimensions';
 import useDimensions from 'react-cool-dimensions';
 import { useId } from 'rdk';
 import { LinearAxisDimensionChanged } from '../Axis';
 import classNames from 'classnames';
+import { ChartContextProps, ChartProvider } from './ChartContext';
 import css from './ChartContainer.module.css';
 
 export interface ChartProps {
@@ -40,7 +41,7 @@ export interface ChartProps {
   /**
    * Additional css styles.
    */
-  style?: React.StyleHTMLAttributes<SVGAElement>;
+  style?: React.StyleHTMLAttributes<SVGSVGElement>;
 
   /**
    * Center the chart. Used mainly internally.
@@ -75,16 +76,7 @@ export interface ChartContainerProps extends ChartProps {
   children: (props: ChartContainerChildProps) => any;
 }
 
-export interface ChartContainerChildProps extends Dimensions {
-  id: string;
-  chartSized?: boolean;
-  yAxisSized?: boolean;
-  xAxisSized?: boolean;
-  updateAxes: (
-    orientation: 'horizontal' | 'vertical',
-    event: LinearAxisDimensionChanged
-  ) => void;
-}
+export type ChartContainerChildProps = ChartContextProps;
 
 export const ChartContainer: FC<ChartContainerProps> = ({
   className,
@@ -189,13 +181,20 @@ export const ChartContainer: FC<ChartContainerProps> = ({
       style={{ height: styleHeight, width: styleWidth }}
       className={classNames(containerClassName, css.container)}
     >
-      {height > 0 && width > 0 && (
-        <svg width={width} height={height} className={className} style={style}>
-          <g transform={`translate(${translateX}, ${translateY})`}>
-            {children(childProps)}
-          </g>
-        </svg>
-      )}
+      <ChartProvider value={childProps}>
+        {height > 0 && width > 0 && (
+          <svg
+            width={width}
+            height={height}
+            className={className}
+            style={style}
+          >
+            <g transform={`translate(${translateX}, ${translateY})`}>
+              {children(childProps)}
+            </g>
+          </svg>
+        )}
+      </ChartProvider>
     </div>
   );
 };
