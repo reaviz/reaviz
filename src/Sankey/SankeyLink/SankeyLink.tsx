@@ -20,6 +20,7 @@ import {
   DEFAULT_COLOR
 } from '../utils';
 import css from './SankeyLink.module.css';
+import { useHoverIntent } from '../../common/utils/useHoverIntent';
 
 export interface SankeyLinkProps extends SankeyLinkExtra {
   /**
@@ -158,6 +159,17 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
     );
   }, [source, target, value]);
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      setHovered(true);
+      onMouseEnter?.(event as any);
+    },
+    onPointerOut: (event) => {
+      setHovered(false);
+      onMouseLeave?.(event as any);
+    }
+  });
+
   return (
     <Fragment>
       {gradient && (
@@ -185,14 +197,8 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           stroke={stroke}
           strokeOpacity={opacity(active, disabled)}
           onClick={onClick}
-          onMouseEnter={(event: React.MouseEvent<SVGPathElement>) => {
-            setHovered(true);
-            onMouseEnter?.(event);
-          }}
-          onMouseLeave={(event: React.MouseEvent<SVGPathElement>) => {
-            setHovered(false);
-            onMouseLeave?.(event);
-          }}
+          onPointerOver={pointerOver}
+          onPointerOut={pointerOut}
         />
       </g>
       {!tooltip?.props?.disabled && (

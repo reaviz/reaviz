@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Gradient, GradientProps } from '../common/Gradient';
 import { Mask, MaskProps } from '../common/Mask';
 import { DEFAULT_TRANSITION } from '../common/Motion';
+import { useHoverIntent } from '../common/utils/useHoverIntent';
 
 export interface BubbleProps {
   /**
@@ -75,6 +76,17 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   const bubbleRef = useRef<any | null>(null);
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      setInternalActive(true);
+      onMouseEnter?.(event);
+    },
+    onPointerOut: (event) => {
+      setInternalActive(false);
+      onMouseLeave?.(event);
+    }
+  });
+
   const arcFill =
     gradient && !mask
       ? `url(#gradient-${id})`
@@ -100,14 +112,8 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         }}
         transition={transition}
         onClick={onClick}
-        onMouseEnter={(event) => {
-          setInternalActive(true);
-          onMouseEnter?.(event);
-        }}
-        onMouseLeave={(event) => {
-          setInternalActive(false);
-          onMouseLeave?.(event);
-        }}
+        onPointerOver={pointerOver}
+        onPointerOut={pointerOut}
       />
       {mask && (
         <Fragment>

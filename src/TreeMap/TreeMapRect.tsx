@@ -4,6 +4,7 @@ import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
 import { DEFAULT_TRANSITION } from '../common/Motion';
+import { useHoverIntent } from '../common/utils/useHoverIntent';
 
 export interface TreeMapRectProps {
   /**
@@ -67,6 +68,17 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   const currentFill = internalActive ? chroma(fill).darken(0.8).hex() : fill;
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      setInternalActive(true);
+      onMouseEnter?.(event, data);
+    },
+    onPointerOut: (event) => {
+      setInternalActive(false);
+      onMouseLeave?.(event, data);
+    }
+  });
+
   return (
     <Fragment>
       <motion.rect
@@ -86,14 +98,8 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         onClick={(event) => {
           onClick?.(event, data);
         }}
-        onMouseEnter={(event) => {
-          setInternalActive(true);
-          onMouseEnter?.(event, data);
-        }}
-        onMouseLeave={(event) => {
-          setInternalActive(false);
-          onMouseLeave?.(event, data);
-        }}
+        onPointerOver={pointerOver}
+        onPointerOut={pointerOut}
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>

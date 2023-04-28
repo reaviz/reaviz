@@ -15,6 +15,7 @@ import { Tooltip, TooltipProps } from 'reablocks';
 import { SankeyLabel, SankeyLabelProps } from '../SankeyLabel';
 import { SankeyNodeExtra, DEFAULT_COLOR } from '../utils';
 import css from './SankeyNode.module.css';
+import { useHoverIntent } from '../../common/utils/useHoverIntent';
 
 export interface SankeyNodeProps extends SankeyNodeExtra {
   /**
@@ -153,6 +154,17 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
     );
   }, [title, value]);
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      setHovered(true);
+      onMouseEnter?.(event);
+    },
+    onPointerOut: (event) => {
+      setHovered(false);
+      onMouseLeave?.(event);
+    }
+  });
+
   return (
     <Fragment>
       <motion.g ref={rectRef}>
@@ -183,14 +195,8 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
             duration: 0.1
           }}
           onClick={onClick}
-          onMouseEnter={(event) => {
-            setHovered(true);
-            onMouseEnter?.(event);
-          }}
-          onMouseLeave={(event) => {
-            setHovered(false);
-            onMouseLeave?.(event);
-          }}
+          onPointerOver={pointerOver}
+          onPointerOut={pointerOut}
         />
       </motion.g>
       {label !== null && (

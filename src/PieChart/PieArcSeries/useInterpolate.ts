@@ -47,7 +47,7 @@ export const useInterpolate = ({ data, animated, arc }) => {
     const unsub = spring.onChange((v) => d.set(arc(interpolator(v))));
     prevPath.set(data);
     return unsub;
-  }, [arc, data]);
+  }, [arc, d, data, prevPath, previousEnter, spring]);
 
   return {
     d,

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '../common/Mask';
 import { Gradient, GradientProps } from '../common/Gradient';
+import { useHoverIntent } from '../common/utils/useHoverIntent';
 
 export interface VennArcProps {
   /**
@@ -142,27 +143,32 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         ? `url(#mask-pattern-${id})`
         : fill;
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      if (!disabled) {
+        setInternalActive(true);
+        onMouseEnter({
+          value: data.data,
+          nativeEvent: event
+        });
+      }
+    },
+    onPointerOut: (event) => {
+      if (!disabled) {
+        setInternalActive(false);
+        onMouseLeave({
+          value: data.data,
+          nativeEvent: event
+        });
+      }
+    }
+  });
+
   return (
     <g
       title={data.data.key}
-      onMouseEnter={(event) => {
-        if (!disabled) {
-          setInternalActive(true);
-          onMouseEnter({
-            value: data.data,
-            nativeEvent: event
-          });
-        }
-      }}
-      onMouseLeave={(event) => {
-        if (!disabled) {
-          setInternalActive(false);
-          onMouseLeave({
-            value: data.data,
-            nativeEvent: event
-          });
-        }
-      }}
+      onPointerOver={pointerOver}
+      onPointerOut={pointerOut}
       onClick={(event) => {
         if (!disabled) {
           onClick({

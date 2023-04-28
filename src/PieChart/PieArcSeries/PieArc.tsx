@@ -5,6 +5,7 @@ import { CloneElement } from 'rdk';
 import { ArcData } from '../PieChart';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { useInterpolate } from './useInterpolate';
+import { useHoverIntent } from '../../common/utils/useHoverIntent';
 
 export interface PieArcMouseEvent {
   value: ArcData['data'];
@@ -87,6 +88,27 @@ export const PieArc: FC<PieArcProps> = ({
     [color, active]
   );
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      if (!disabled) {
+        setActive(true);
+        onMouseEnter({
+          value: data.data,
+          nativeEvent: event as any
+        });
+      }
+    },
+    onPointerOut: (event) => {
+      if (!disabled) {
+        setActive(false);
+        onMouseLeave({
+          value: data.data,
+          nativeEvent: event as any
+        });
+      }
+    }
+  });
+
   return (
     <g ref={arcRef}>
       <motion.path
@@ -95,24 +117,8 @@ export const PieArc: FC<PieArcProps> = ({
         d={d}
         style={{ cursor }}
         fill={fill}
-        onMouseEnter={(event) => {
-          if (!disabled) {
-            setActive(true);
-            onMouseEnter({
-              value: data.data,
-              nativeEvent: event
-            });
-          }
-        }}
-        onMouseLeave={(event) => {
-          if (!disabled) {
-            setActive(false);
-            onMouseLeave({
-              value: data.data,
-              nativeEvent: event
-            });
-          }
-        }}
+        onPointerOver={pointerOver}
+        onPointerOut={pointerOut}
         onClick={(event) => {
           if (!disabled) {
             onClick({
@@ -122,7 +128,7 @@ export const PieArc: FC<PieArcProps> = ({
           }
         }}
       />
-      {tooltip && !tooltip.props.disabled && (
+      {!tooltip?.props?.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
           visible={!!active}

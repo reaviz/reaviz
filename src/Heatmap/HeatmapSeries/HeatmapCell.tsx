@@ -19,6 +19,7 @@ import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import css from './HeatmapCell.module.css';
+import { useHoverIntent } from '../../common/utils/useHoverIntent';
 
 export type HeatmapCellProps = {
   /**
@@ -135,22 +136,22 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   const [active, setActive] = useState(false);
   const rect = useRef<SVGRectElement | null>(null);
 
-  const onMouseEnterWrapper = (event: MouseEvent) => {
-    setActive(true);
-    onMouseEnter({
-      value: data,
-      nativeEvent: event
-    });
-  };
-
-  const onMouseLeaveWrapper = (event: MouseEvent) => {
-    setActive(false);
-
-    onMouseLeave({
-      value: data,
-      nativeEvent: event
-    });
-  };
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      setActive(true);
+      onMouseEnter({
+        value: data,
+        nativeEvent: event
+      });
+    },
+    onPointerOut: (event) => {
+      setActive(false);
+      onMouseLeave({
+        value: data,
+        nativeEvent: event
+      });
+    }
+  });
 
   const onMouseClick = (event: MouseEvent) => {
     onClick({
@@ -158,6 +159,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       nativeEvent: event
     });
   };
+
   const tooltipData = useMemo(
     () => ({
       y: data.value,
@@ -208,8 +210,8 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             opacity: 0
           }}
           transition={transition}
-          onMouseEnter={onMouseEnterWrapper}
-          onMouseLeave={onMouseLeaveWrapper}
+          onPointerOver={pointerOver}
+          onPointerOut={pointerOut}
           onClick={onMouseClick}
         />
       </g>
