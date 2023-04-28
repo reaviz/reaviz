@@ -114,10 +114,10 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
     // need to reverse the type...
     const isTop = position === 'top';
     const direction = isVertical
-      ? data.y < 0 && isTop
+      ? (data.y as number) < 0 && isTop
         ? 'bottom'
         : position
-      : data.x0 < 0 && isTop
+      : (data.x0 as number) < 0 && isTop
         ? 'bottom'
         : position;
 

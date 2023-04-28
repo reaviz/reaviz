@@ -480,7 +480,7 @@ export const Bar: FC<Partial<BarProps>> = ({
 
     // Stacked diverging negative numbers
     // in horizontal layouts need to pull x0
-    if (data.x0 < 0) {
+    if ((data.x0 as number) < 0) {
       x = data.x0;
     }
 
@@ -614,7 +614,9 @@ export const Bar: FC<Partial<BarProps>> = ({
     const attrStart = type === 'stackedDiverging' ? '0' : '1';
     const endPoint = type === 'stackedDiverging' ? start : end;
     const startPoint =
-      type === 'stackedDiverging' && data[attr]! > 0 ? end : endPoint;
+      type === 'stackedDiverging' && (data[attr]! as number) > 0
+        ? end
+        : endPoint;
 
     const coords = getCoords({
       ...data,
