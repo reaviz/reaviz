@@ -14,3 +14,4 @@ export * from './ZoomPan';
 export * from './Motion';
 export * from './color';
 export * from './Count';
+export * from './scales';
