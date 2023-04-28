@@ -157,11 +157,11 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {
       setHovered(true);
-      onMouseEnter?.(event);
+      onMouseEnter?.(event as any);
     },
     onPointerOut: (event) => {
       setHovered(false);
-      onMouseLeave?.(event);
+      onMouseLeave?.(event as any);
     }
   });
 

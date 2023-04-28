@@ -1,3 +1,7 @@
+# 14.3.1 - 4/27/23
+- [fix] add hover intent for venn/sankey/pie/heatmap/bubble
+- [fix] fix pie chart hover jumping
+
 # 14.3.0 - 4/27/23
 - [feature] add `useChart` hook for accessing chart props
 - [fix] export scales
