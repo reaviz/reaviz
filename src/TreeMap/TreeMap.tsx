@@ -4,7 +4,7 @@ import {
   ChartContainerChildProps,
   ChartProps
 } from '../common/containers/ChartContainer';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartNestedDataShape, ChartShallowDataShape } from '../common/data';
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy';
 import { TreeMapSeries, TreeMapSeriesProps } from './TreeMapSeries';
 import { CloneElement } from 'rdk';
@@ -13,7 +13,7 @@ export interface TreeMapProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
-  data: ChartShallowDataShape[];
+  data: ChartShallowDataShape[] | ChartNestedDataShape[];
 
   /**
    * The series component that renders the components.
@@ -33,7 +33,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
-      const root = hierarchy<any>({ children: data })
+      const root = hierarchy<any>({ data: data }, (d) => d.data)
         .sum((d) => d.data)
         .sort((a, b) => b.data - a.data);
 
@@ -41,9 +41,24 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
         .size([cw, ch])
         .tile(treemapSquarify)
         .round(true)
-        .padding(1);
+        .paddingInner(1)
+        .paddingOuter(25);
 
-      return t(root).leaves();
+      const tree = t(root);
+      const nodes = [];
+
+      const getAllNodes = (node) => {
+        if (node?.parent) {
+          // Don't add root node
+          nodes.push(node);
+        }
+        for (let child of node?.children || []) {
+          getAllNodes(child);
+        }
+      };
+
+      getAllNodes(tree);
+      return nodes;
     },
     [data]
   );

@@ -1,4 +1,11 @@
-import React, { FC, ReactElement, useRef, useState, Fragment } from 'react';
+import React, {
+  FC,
+  ReactElement,
+  useRef,
+  useState,
+  Fragment,
+  useMemo
+} from 'react';
 import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
@@ -79,6 +86,16 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
     }
   });
 
+  const tooltipLabel = useMemo(() => {
+    const getKey = (node): string[] => {
+      if (!node.parent) {
+        return [];
+      }
+      return [...getKey(node.parent), node.data.key];
+    };
+    return getKey(data).join(' -> ');
+  }, [data]);
+
   return (
     <Fragment>
       <motion.rect
@@ -106,7 +123,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
           element={tooltip}
           visible={!!internalActive}
           reference={rectRef}
-          value={{ y: data.data.data, x: data.data.key }}
+          value={{ y: data.value, x: tooltipLabel }}
         />
       )}
     </Fragment>

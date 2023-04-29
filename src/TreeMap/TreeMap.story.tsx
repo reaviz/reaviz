@@ -1,6 +1,6 @@
 import React from 'react';
 import { TreeMapSeries } from './TreeMapSeries';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartNestedDataShape, ChartShallowDataShape } from '../common/data';
 import { TreeMap } from './TreeMap';
 import { TreeMapRect } from './TreeMapRect';
 import { range } from 'd3-array';
@@ -314,3 +314,49 @@ const twentyItems = [
     data: 14
   }
 ];
+
+const nestedData: ChartNestedDataShape[] = [
+  {
+    key: 'Windows',
+    data: [
+      { key: 'WinXP', data: 15 },
+      { key: 'Win10', data: 20 },
+      { key: 'Win7', data: 50 },
+      { key: 'WinVista', data: 10 },
+      { key: 'Win98', data: 5 }
+    ]
+  },
+  {
+    key: 'MacOS',
+    data: [
+      { key: 'Sierra', data: 20 },
+      { key: 'Catalina', data: 30 },
+      { key: 'BigSur', data: 40 },
+      { key: 'Ventura', data: 60 }
+    ]
+  },
+  {
+    key: 'Linux',
+    data: [
+      { key: 'Ubuntu', data: 70 },
+      { key: 'Fedora', data: 60 },
+      { key: 'CentOS', data: 50 }
+    ]
+  }
+];
+
+export const Nested = () => {
+  const scheme = select('Color Scheme', schemes, 'cybertron');
+  const height = number('Height', 450);
+  const width = number('Width', 450);
+  const data = object('Data', nestedData);
+
+  return (
+    <TreeMap
+      height={height}
+      width={width}
+      data={data}
+      series={<TreeMapSeries colorScheme={scheme} />}
+    />
+  );
+};
