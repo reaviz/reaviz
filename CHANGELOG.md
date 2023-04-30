@@ -1,3 +1,6 @@
+# 14.4.0 - 4/30/23
+- [feature] Nested Tree map #119
+
 # 14.3.1 - 4/27/23
 - [fix] add hover intent for venn/sankey/pie/heatmap/bubble
 - [fix] fix pie chart hover jumping
