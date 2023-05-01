@@ -1,3 +1,7 @@
+# 14.4.2 - 5/1/23
+- [fix] fix wrapping in treemap not working as expected
+- [fix] fix treemap dupe ids
+
 # 14.4.1 - 5/1/23
 - [feature] add label positions to treemap
 - [feature] add padding options to treemap
