@@ -1,3 +1,7 @@
+# 14.4.1 - 5/1/23
+- [feature] add label positions to treemap
+- [feature] add padding options to treemap
+
 # 14.4.0 - 4/30/23
 - [feature] Nested Tree map #119
 
