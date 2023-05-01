@@ -74,10 +74,14 @@ const longLabelData: ChartShallowDataShape[] = [
 ];
 
 export const LongText = () => (
+  <TreeMap height={400} width={400} data={longLabelData} />
+);
+
+export const NoWrap = () => (
   <TreeMap
     height={400}
     width={400}
-    series={<TreeMapSeries />}
+    series={<TreeMapSeries label={<TreeMapLabel wrap={false} />} />}
     data={longLabelData}
   />
 );

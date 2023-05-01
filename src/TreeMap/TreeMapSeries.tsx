@@ -81,14 +81,14 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       >
         <CloneElement<TreeMapRectProps>
           element={rect}
-          id={`${id}-rect`}
+          id={`${id}-${item.data.key}-rect`}
           animated={animated}
           data={item}
           fill={fill}
         />
         <CloneElement<TreeMapLabelProps>
           element={label}
-          id={`${id}-label`}
+          id={`${id}-${item.data.key}-label`}
           data={item}
           fill={textFill}
         />

@@ -90,7 +90,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
         <CloneElement<TreeMapSeriesProps>
           element={series}
           {...rest}
-          id={`${id}-series`}
+          id={`${id || rest.id}-series`}
           data={datas}
         />
       );

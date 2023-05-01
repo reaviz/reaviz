@@ -10,6 +10,7 @@ export interface WrapTextInputs {
   height?: number;
   fontFamily: string;
   fontSize: number;
+  wrap?: boolean;
   size?: {
     width: number;
     height: number;
@@ -21,6 +22,7 @@ export function wrapText({
   x = 0,
   size,
   paddingY,
+  wrap = true,
   paddingX,
   width,
   height,
@@ -62,6 +64,10 @@ export function wrapText({
 
     if (width && maxWidth >= width - (paddingX ? 2 * paddingX : 0)) {
       return null;
+    }
+
+    if (!wrap && rows.length > 1) {
+      return rows[0];
     }
 
     return rows.map((r, i) => (
