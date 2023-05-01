@@ -19,12 +19,31 @@ export interface TreeMapProps extends ChartProps {
    * The series component that renders the components.
    */
   series?: ReactElement<TreeMapSeriesProps, typeof TreeMapSeries>;
+
+  /**
+   * Inner padding for the treemap. Defaults to 5.
+   */
+  paddingInner?: number;
+
+  /**
+   * Outer padding for the treemap. Defaults to 5.
+   */
+  paddingOuter?: number;
+
+  /**
+   * Padding top for the treemap. This is used for the title
+   * spacing in nested situations. Defaults to 30.
+   */
+  paddingTop?: number;
 }
 
 export const TreeMap: FC<Partial<TreeMapProps>> = ({
   data,
   id,
   containerClassName,
+  paddingInner,
+  paddingTop,
+  paddingOuter,
   width,
   height,
   className,
@@ -41,8 +60,9 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
         .size([cw, ch])
         .tile(treemapSquarify)
         .round(true)
-        .paddingInner(1)
-        .paddingOuter(25);
+        .paddingInner(paddingInner)
+        .paddingOuter(paddingOuter)
+        .paddingTop(paddingTop);
 
       const tree = t(root);
       const nodes = [];
@@ -60,7 +80,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
       getAllNodes(tree);
       return nodes;
     },
-    [data]
+    [data, paddingInner, paddingOuter, paddingTop]
   );
 
   const renderChart = useCallback(
@@ -96,6 +116,9 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
 
 TreeMap.defaultProps = {
   margins: 0,
+  paddingInner: 5,
+  paddingOuter: 5,
+  paddingTop: 30,
   series: <TreeMapSeries />,
   data: []
 };

@@ -42,6 +42,15 @@ export const Simple = () => {
   );
 };
 
+export const LabelPosition = () => (
+  <TreeMap
+    height={400}
+    width={400}
+    series={<TreeMapSeries label={<TreeMapLabel placement="middle" />} />}
+    data={simpleData}
+  />
+);
+
 export const NoAnimation = () => (
   <TreeMap
     height={400}

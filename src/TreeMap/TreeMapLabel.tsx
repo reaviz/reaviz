@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { wrapText } from '../common/utils';
+import { calculateDimensions, wrapText } from '../common/utils';
 import { formatValue } from '../common/utils/formatting';
 
 export interface TreeMapLabelProps {
@@ -16,22 +16,27 @@ export interface TreeMapLabelProps {
   /**
    * Font size of the text.
    */
-   fontSize?: number;
+  fontSize?: number;
 
-   /**
+  /**
    * Font family of the text.
    */
-   fontFamily?: string;
+  fontFamily?: string;
 
- /**
-  * Fill of the text.
-  */
+  /**
+   * Fill of the text.
+   */
   fill?: string;
 
   /**
    * Should wrap text or not.
    */
-   wrap?: boolean;
+  wrap?: boolean;
+
+  /**
+   * Placement of the text.
+   */
+  placement?: 'start' | 'middle' | 'end';
 }
 
 export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
@@ -39,22 +44,34 @@ export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
   data,
   fill,
   wrap,
+  placement,
   fontSize,
   fontFamily
 }) => {
   const key = data.data.key;
-  const text = wrap ? wrapText({
-    key,
-    fontFamily,
-    fontSize,
-    paddingX: 10,
-    paddingY: 10,
-    width: data.x1 - data.x0,
-    height: data.y1 - data.y0
-  }) : key;
+  const width = data.x1 - data.x0;
+  const size = calculateDimensions(key, fontFamily, fontSize);
+  const text = wrap
+    ? wrapText({
+      key,
+      fontFamily,
+      fontSize,
+      paddingX: 10,
+      paddingY: 10,
+      width,
+      height: data.y1 - data.y0
+    })
+    : key;
+
+  const offsetX =
+    placement === 'start'
+      ? 10
+      : placement === 'middle'
+        ? (width - size.width) / 2
+        : width - size.width - 10;
 
   return (
-    <g style={{ transform: 'translate(10px, 15px)' }}>
+    <g style={{ transform: `translate(${offsetX}px, 15px)` }}>
       <text
         id={`${id}-text`}
         style={{ pointerEvents: 'none', fontFamily, fontSize }}
@@ -70,5 +87,6 @@ TreeMapLabel.defaultProps = {
   fill: '#FFF',
   wrap: true,
   fontSize: 14,
-  fontFamily: 'sans-serif'
+  fontFamily: 'sans-serif',
+  placement: 'start'
 };

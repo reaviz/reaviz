@@ -4,19 +4,22 @@ import { calculateDimensions } from './size';
 export interface WrapTextInputs {
   key: string;
   x?: any;
-  y?: number;
   paddingY?: number;
   paddingX?: number;
   width: number;
   height?: number;
   fontFamily: string;
   fontSize: number;
+  size?: {
+    width: number;
+    height: number;
+  };
 }
 
 export function wrapText({
   key,
   x = 0,
-  y = 0,
+  size,
   paddingY,
   paddingX,
   width,
@@ -24,7 +27,7 @@ export function wrapText({
   fontFamily,
   fontSize
 }: WrapTextInputs) {
-  const size = calculateDimensions(key, fontFamily, fontSize);
+  size = size || calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);
 
   if (words.length > 1 && size.width > width) {
