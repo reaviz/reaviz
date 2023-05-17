@@ -89,10 +89,10 @@ export const getParentSVG = (event) => {
  * Given an event, get the relative X/Y position for a target.
  */
 export const getPositionForTarget = ({ target, clientX, clientY }) => {
-  const { top, left } = target.getBoundingClientRect();
+  const rect = target.getBoundingClientRect();
   return {
-    x: clientX - left - target.clientLeft,
-    y: clientY - top - target.clientTop
+    x: clientX - (rect?.left || 0) - target.clientLeft,
+    y: clientY - (rect?.top || 0) - target.clientTop
   };
 };
 
