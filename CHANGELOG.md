@@ -1,4 +1,7 @@
 # 14.4.3 - 5/17/23
+- [fix] fix textcontent check in count
+
+# 14.4.3 - 5/17/23
 - [fix] add null check to `useCount` hook
 - [feature] add prefix/suffix to Count component
 
