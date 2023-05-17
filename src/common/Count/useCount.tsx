@@ -31,6 +31,16 @@ export interface CountInputs {
    * Number of decimal places. Defaults 0.
    */
   decimalPlaces?: number;
+
+  /**
+   * Prefix the number with a string or number.
+   */
+  prefix?: string | number;
+
+  /**
+   * Suffix the number with a string or number.
+   */
+  suffix?: string | number;
 }
 
 export const COUNT_DEFAULTS = {
@@ -46,6 +56,8 @@ export const useCount = ({
   to,
   duration,
   delay,
+  prefix,
+  suffix,
   decimalPlaces,
   format
 }: CountInputs) => {
@@ -75,12 +87,21 @@ export const useCount = ({
           formatted = formatted.toLocaleString();
         }
 
-        node.textContent = formatted as string;
+        if (node?.textContent) {
+          if (prefix) {
+            formatted = `${prefix}${formatted}`;
+          }
+          if (suffix) {
+            formatted = `${formatted}${suffix}`;
+          }
+
+          node.textContent = formatted as string;
+        }
       }
     });
 
     return () => controls.stop();
-  }, [from, to, duration, delay, decimalPlaces, format]);
+  }, [from, to, duration, delay, decimalPlaces, format, prefix, suffix]);
 
   return nodeRef;
 };
