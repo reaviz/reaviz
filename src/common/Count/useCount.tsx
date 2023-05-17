@@ -87,7 +87,7 @@ export const useCount = ({
           formatted = formatted.toLocaleString();
         }
 
-        if (node?.textContent) {
+        if (node) {
           if (prefix) {
             formatted = `${prefix}${formatted}`;
           }
