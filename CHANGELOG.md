@@ -1,4 +1,7 @@
-# 14.4.3 - 5/17/23
+# 14.4.5 - 5/17/23
+- [fix] better handle undefined rects
+
+# 14.4.4 - 5/17/23
 - [fix] fix textcontent check in count
 
 # 14.4.3 - 5/17/23
