@@ -1,3 +1,7 @@
+# 14.4.3 - 5/17/23
+- [fix] add null check to `useCount` hook
+- [feature] add prefix/suffix to Count component
+
 # 14.4.2 - 5/1/23
 - [fix] fix wrapping in treemap not working as expected
 - [fix] fix treemap dupe ids
