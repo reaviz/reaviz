@@ -1,10 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
-import {
-  multiDateData,
-  singleDateData,
-  randomNumber
-} from '../../demo';
+import { multiDateData, singleDateData, randomNumber } from '../../demo';
 import { AreaChart } from './AreaChart';
 import {
   Area,
@@ -23,6 +19,7 @@ import {
   LinearXAxisTickLabel
 } from '../common/Axis/LinearAxis';
 import { getYScale, getXScale } from '../common/scales';
+import { MarkLineY } from '../common';
 
 export default {
   title: 'Charts/Area Chart/Axis',
@@ -38,131 +35,206 @@ export default {
 };
 
 export const TopBottomAxis = () => {
-    const scale = getXScale({
-      type: 'category',
-      width: 450,
-      data: [
-        {
-          key: 'Before',
-          data: 0,
-          x: 'Before'
-        },
-        {
-          key: 'After',
-          data: 0,
-          x: 'After'
-        }
-      ]
-    });
+  const scale = getXScale({
+    type: 'category',
+    width: 450,
+    data: [
+      {
+        key: 'Before',
+        data: 0,
+        x: 'Before'
+      },
+      {
+        key: 'After',
+        data: 0,
+        x: 'After'
+      }
+    ]
+  });
 
-    return (
-      <AreaChart
-        width={450}
-        height={200}
-        margins={0}
-        data={singleDateData}
-        xAxis={
-          <LinearXAxis
-            type="time"
-            orientation="horizontal"
-            position="end"
-            axisLine={null}
-            tickSeries={
-              <LinearXAxisTickSeries
-                line={null}
-                label={<LinearXAxisTickLabel padding={5} position="end" />}
-              />
-            }
-          />
-        }
-        secondaryAxis={[
-          <LinearXAxis
-            type="category"
-            orientation="horizontal"
-            position="start"
-            scale={scale}
-            axisLine={null}
-            tickSeries={
-              <LinearXAxisTickSeries
-                line={null}
-                label={<LinearXAxisTickLabel padding={20} position="start" />}
-              />
-            }
-          />
-        ]}
-        yAxis={<LinearYAxis type="value" axisLine={null} />}
-      />
-    );
-  };
+  return (
+    <AreaChart
+      width={450}
+      height={200}
+      margins={0}
+      data={singleDateData}
+      xAxis={
+        <LinearXAxis
+          type="time"
+          orientation="horizontal"
+          position="end"
+          axisLine={null}
+          tickSeries={
+            <LinearXAxisTickSeries
+              line={null}
+              label={<LinearXAxisTickLabel padding={5} position="end" />}
+            />
+          }
+        />
+      }
+      secondaryAxis={[
+        <LinearXAxis
+          type="category"
+          orientation="horizontal"
+          position="start"
+          scale={scale}
+          axisLine={null}
+          tickSeries={
+            <LinearXAxisTickSeries
+              line={null}
+              label={<LinearXAxisTickLabel padding={20} position="start" />}
+            />
+          }
+        />
+      ]}
+      yAxis={<LinearYAxis type="value" axisLine={null} />}
+    />
+  );
+};
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis',
+  name: 'Top + Bottom Axis'
 };
 
 export const LeftRightAxis = () => {
-    const scale = getYScale({
-      type: 'category',
-      height: 200,
-      data: [
-        {
-          key: 'Low',
-          data: 0,
-          y: 'Low'
-        },
-        {
-          key: 'High',
-          data: 0,
-          y: 'High'
-        }
-      ]
-    });
+  const scale = getYScale({
+    type: 'category',
+    height: 200,
+    data: [
+      {
+        key: 'Low',
+        data: 0,
+        y: 'Low'
+      },
+      {
+        key: 'High',
+        data: 0,
+        y: 'High'
+      }
+    ]
+  });
 
-    return (
-      <AreaChart
-        width={450}
-        height={200}
-        margins={0}
-        data={singleDateData}
-        yAxis={
-          <LinearYAxis
-            position="end"
-            axisLine={null}
-            tickSeries={
-              <LinearYAxisTickSeries
-                line={null}
-                label={<LinearYAxisTickLabel padding={5} position="end" />}
-              />
-            }
-          />
-        }
-        secondaryAxis={[
-          <LinearYAxis
-            type="category"
-            position="start"
-            axisLine={null}
-            scale={scale}
-            tickSeries={
-              <LinearYAxisTickSeries
-                line={null}
-                label={
-                  <LinearYAxisTickLabel
-                    padding={20}
-                    position="start"
-                    rotation={270}
-                    align="start"
-                  />
-                }
-              />
-            }
-          />
-        ]}
-        xAxis={<LinearXAxis type="time" axisLine={null} />}
-      />
-    );
-  };
+  return (
+    <AreaChart
+      width={450}
+      height={200}
+      margins={0}
+      data={singleDateData}
+      yAxis={
+        <LinearYAxis
+          position="end"
+          axisLine={null}
+          tickSeries={
+            <LinearYAxisTickSeries
+              line={null}
+              label={<LinearYAxisTickLabel padding={5} position="end" />}
+            />
+          }
+        />
+      }
+      secondaryAxis={[
+        <LinearYAxis
+          type="category"
+          position="start"
+          axisLine={null}
+          scale={scale}
+          tickSeries={
+            <LinearYAxisTickSeries
+              line={null}
+              label={
+                <LinearYAxisTickLabel
+                  padding={20}
+                  position="start"
+                  rotation={270}
+                  align="start"
+                />
+              }
+            />
+          }
+        />
+      ]}
+      xAxis={<LinearXAxis type="time" axisLine={null} />}
+    />
+  );
+};
 
 LeftRightAxis.story = {
-  name: 'Left + Right Axis',
+  name: 'Left + Right Axis'
+};
+
+export const LeftRightAxisShowMarkLineY = () => {
+  const scale = getYScale({
+    type: 'category',
+    height: 200,
+    data: [
+      {
+        key: 'Low',
+        data: 0,
+        y: 'Low'
+      },
+      {
+        key: 'High',
+        data: 0,
+        y: 'High'
+      }
+    ]
+  });
+
+  return (
+    <AreaChart
+      width={450}
+      height={200}
+      margins={0}
+      data={singleDateData}
+      yAxis={
+        <LinearYAxis
+          position="end"
+          axisLine={null}
+          tickSeries={
+            <LinearYAxisTickSeries
+              line={null}
+              label={<LinearYAxisTickLabel padding={5} position="end" />}
+            />
+          }
+        />
+      }
+      secondaryAxis={[
+        <LinearYAxis
+          type="category"
+          position="start"
+          axisLine={null}
+          scale={scale}
+          tickSeries={
+            <LinearYAxisTickSeries
+              line={null}
+              label={
+                <LinearYAxisTickLabel
+                  padding={20}
+                  position="start"
+                  rotation={270}
+                  align="start"
+                />
+              }
+            />
+          }
+        />
+      ]}
+      xAxis={<LinearXAxis type="time" axisLine={null} />}
+      markLineY={
+        <MarkLineY
+          height={234}
+          pointY={104}
+          width={333}
+          text="Goal 300k"
+          color="white"
+        />
+      }
+    />
+  );
+};
+
+LeftRightAxisShowMarkLineY.story = {
+  name: 'Left + Right Axis + Mark Line Y'
 };
 
 const LiveUpdatingStory = () => {

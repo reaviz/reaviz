@@ -29,6 +29,7 @@ import {
 } from '../common/data';
 import css from './AreaChart.module.css';
 import { ChartBrushProps, ChartBrush } from '../common/Brush';
+import { MarkLineY, MarkLineYProps } from '../common/MarkLineY';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
@@ -68,6 +69,11 @@ export interface AreaChartProps extends ChartProps {
   gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 
   /**
+   * MarklineY for the chart.
+   */
+  markLineY: ReactElement<MarkLineYProps, typeof MarkLineY> | null;
+
+  /**
    * The chart's brush component.
    */
   brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
@@ -93,6 +99,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
   margins,
   className,
   containerClassName,
+  markLineY,
   series,
   gridlines,
   brush,
@@ -203,6 +210,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
         <Fragment>
           {chartSized && gridlines && (
             <CloneElement<GridlineSeriesProps>
+              markLineY={markLineY}
               element={gridlines}
               height={chartHeight}
               width={chartWidth}
@@ -278,6 +286,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       getScales,
       gridlines,
       isZoomed,
+      markLineY,
       onZoomPan,
       secondaryAxis,
       series,
@@ -314,6 +323,7 @@ AreaChart.defaultProps = {
   yAxis: <LinearYAxis type="value" />,
   series: <AreaSeries />,
   gridlines: <GridlineSeries />,
+  markLineY: <MarkLineY />,
   brush: null,
   zoomPan: null
 };

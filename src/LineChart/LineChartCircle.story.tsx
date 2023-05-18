@@ -5,6 +5,7 @@ import { PointSeries } from '../AreaChart';
 import { ScatterPoint } from '../ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 import { LineSeries } from './LineSeries';
+import { MarkLineY } from '../common';
 
 export default {
   title: 'Charts/Line Chart/Circle Series',
@@ -20,6 +21,28 @@ export const On = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show={true} />} />}
+  />
+);
+
+export const OnWithMarkLineY = () => (
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <LineSeries
+        symbols={<PointSeries show={true} />}
+        markLineY={
+          <MarkLineY
+            height={234}
+            pointY={104}
+            width={333}
+            text="Goal 700k"
+            color="white"
+          />
+        }
+      />
+    }
   />
 );
 

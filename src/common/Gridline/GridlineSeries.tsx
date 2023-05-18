@@ -4,6 +4,7 @@ import { getTicks, getMaxTicks } from '../utils/ticks';
 import { CloneElement } from 'rdk';
 import { LinearAxisProps } from '../Axis';
 import { GridStripeProps, GridStripe } from './GridStripe';
+import { MarkLineY, MarkLineYProps } from '../MarkLineY';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
@@ -31,6 +32,11 @@ export interface GridlineSeriesProps {
   xAxis: LinearAxisProps;
 
   /**
+   * MarklineY for the chart.
+   */
+  markLineY: ReactElement<MarkLineYProps, typeof MarkLineY> | null;
+
+  /**
    * Height of the chart.
    */
   height: number;
@@ -54,6 +60,7 @@ export interface GridlineSeriesProps {
 export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   line,
   stripe,
+  markLineY,
   yScale,
   xScale,
   yAxis,
@@ -84,6 +91,22 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
       )
     };
   }, [height, width, xAxis, yAxis, yScale, xScale]);
+
+  const renderMarkLineY = useCallback(() => {
+    if (!markLineY?.props?.pointY) return;
+
+    return (
+      <Fragment>
+        {markLineY && (
+          <CloneElement<MarkLineYProps>
+            element={markLineY}
+            height={height}
+            width={width}
+          />
+        )}
+      </Fragment>
+    );
+  }, [height, markLineY, width]);
 
   const renderGroup = useCallback(
     (
@@ -118,10 +141,11 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
             renderGroup(element, yAxisGrid, yScale, 'y', type)}
           {shouldRenderX(element.props.direction) &&
             renderGroup(element, xAxisGrid, xScale, 'x', type)}
+          {renderMarkLineY()}
         </Fragment>
       );
     },
-    [renderGroup, xScale, yScale]
+    [renderGroup, renderMarkLineY, xScale, yScale]
   );
 
   return (
@@ -134,5 +158,6 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
 
 GridlineSeries.defaultProps = {
   line: <Gridline direction="all" />,
+  markLineY: <MarkLineY />,
   stripe: null
 };

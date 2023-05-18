@@ -8,6 +8,7 @@ import React, {
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
 import { MarkLine, MarkLineProps } from '../../common/MarkLine';
+import { MarkLineY, MarkLineYProps } from '../../common/MarkLineY';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
@@ -86,6 +87,11 @@ export interface AreaSeriesProps {
   markLine: ReactElement<MarkLineProps, typeof MarkLine> | null;
 
   /**
+   * MarklineY for the chart.
+   */
+  markLineY: ReactElement<MarkLineYProps, typeof MarkLineY> | null;
+
+  /**
    * Symbols used to show points.
    */
   symbols: ReactElement<PointSeriesProps, typeof PointSeries> | null;
@@ -127,6 +133,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   yScale,
   type,
   markLine,
+  markLineY,
   symbols,
   animated,
   area,
@@ -258,6 +265,22 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     ]
   );
 
+  const renderMarkLineY = useCallback(() => {
+    if (!markLineY?.props?.pointY) return;
+
+    return (
+      <Fragment>
+        {markLineY && (
+          <CloneElement<MarkLineYProps>
+            element={markLineY}
+            height={height}
+            width={width}
+          />
+        )}
+      </Fragment>
+    );
+  }, [height, markLineY, width]);
+
   const renderMarkLine = useCallback(() => {
     return (
       <Fragment>
@@ -279,10 +302,11 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           {renderArea(data)}
           {renderMarkLine()}
           {renderSymbols(data)}
+          {renderMarkLineY()}
         </Fragment>
       );
     },
-    [renderArea, renderMarkLine, renderSymbols]
+    [renderArea, renderMarkLine, renderMarkLineY, renderSymbols]
   );
 
   const renderMultiSeries = useCallback(
@@ -304,10 +328,11 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               </Fragment>
             ))
             .reverse()}
+          {renderMarkLineY()}
         </Fragment>
       );
     },
-    [renderArea, renderMarkLine, renderSymbols]
+    [renderArea, renderMarkLine, renderMarkLineY, renderSymbols]
   );
 
   return (
@@ -351,6 +376,7 @@ AreaSeries.defaultProps = {
   line: <Line />,
   area: <Area />,
   markLine: <MarkLine />,
+  markLineY: <MarkLineY />,
   tooltip: <TooltipArea />,
   symbols: <PointSeries />
 };

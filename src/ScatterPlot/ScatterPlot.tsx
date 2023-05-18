@@ -24,6 +24,7 @@ import {
 import { getYScale, getXScale } from '../common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
 import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
+import { MarkLineY, MarkLineYProps } from '../common/MarkLineY';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
@@ -65,6 +66,11 @@ interface ScatterPlotProps extends ChartProps {
   gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 
   /**
+   * MarklineY for the chart.
+   */
+  markLineY: ReactElement<MarkLineYProps, typeof MarkLineY> | null;
+
+  /**
    * The chart's brush component.
    */
   brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
@@ -92,6 +98,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   data,
   gridlines,
   containerClassName,
+  markLineY,
   brush,
   zoomPan,
   secondaryAxis
@@ -168,6 +175,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         <Fragment>
           {chartSized && gridlines && (
             <CloneElement<GridlineSeriesProps>
+              markLineY={markLineY}
               element={gridlines}
               height={chartHeight}
               width={chartWidth}
@@ -241,6 +249,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       preventAnimation,
       series,
       gridlines,
+      markLineY,
       yAxis,
       xAxis,
       secondaryAxis,
@@ -275,6 +284,7 @@ ScatterPlot.defaultProps = {
   yAxis: <LinearYAxis type="value" />,
   series: <ScatterSeries />,
   gridlines: <GridlineSeries />,
+  markLineY: <MarkLineY />,
   brush: null,
   zoomPan: null
 };
