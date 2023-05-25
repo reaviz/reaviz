@@ -1,0 +1,5 @@
+.stackedSupportingLabel {
+  font-size: 12px;
+  font-weight: 400;
+  fill: var(--color-on-background);
+}
