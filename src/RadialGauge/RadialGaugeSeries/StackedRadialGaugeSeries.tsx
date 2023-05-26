@@ -8,6 +8,10 @@ import {
   StackedRadialGaugeValueLabel,
   StackedRadialGaugeValueLabelProps
 } from './StackedRadialGaugeValueLabel';
+import {
+  StackedRadialGaugeDescriptionLabel,
+  StackedRadialGaugeDescriptionLabelProps
+} from './StackedRadialGaugeDescriptionLabel';
 
 export interface StackedRadialGaugeSeriesProps {
   /**
@@ -64,6 +68,14 @@ export interface StackedRadialGaugeSeriesProps {
   > | null;
 
   /**
+   * Description label component.
+   */
+    descriptionLabel: ReactElement<
+    StackedRadialGaugeDescriptionLabelProps,
+    typeof StackedRadialGaugeDescriptionLabel
+  > | null;
+
+  /**
    * A factor from 0 to 1 determining how much of the Gauge should be filled with arcs
    */
   fillFactor: number;
@@ -86,6 +98,7 @@ export const StackedRadialGaugeSeries: FC<
   outerArc,
   innerArc,
   label,
+  descriptionLabel,
   colorScheme,
   fillFactor,
   arcPadding
@@ -137,6 +150,7 @@ export const StackedRadialGaugeSeries: FC<
     <>
       <g transform={`translate(${width / 2}, ${height / 2})`}>
         {data.map(renderStackedGauges)}
+        {descriptionLabel}
         {label}
       </g>
     </>
