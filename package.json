@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "14.4.5",
+  "version": "14.5.0",
   "description": "Data Visualization using React",
   "scripts": {
     "start": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 9010 -s public",
@@ -88,7 +88,7 @@
     "memoize-bind": "^1.0.3",
     "memoize-one": "^5.2.1",
     "rdk": ">=6.4.4",
-    "reablocks": ">=3.6.20",
+    "reablocks": ">=4.3.4",
     "react-cool-dimensions": "^2.0.7",
     "react-fast-compare": "^3.2.1",
     "transformation-matrix": "^2.9.0"

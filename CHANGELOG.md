@@ -1,3 +1,6 @@
+# 14.5.0 - 5/26/23
+- [feature] Add optional supporting text field for Stacked Gauge #122
+
 # 14.4.5 - 5/17/23
 - [fix] better handle undefined rects
 
