@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import classNames from 'classnames';
-import css from './StackedRadialGaugeSupportingLabel.module.css';
+import css from './StackedRadialGaugeDescriptionLabel.module.css';
 
-export interface StackedRadialGaugeSupportingLabelProps {
+export interface StackedRadialGaugeDescriptionLabelProps {
   /**
    * A label shown at the center
    */
@@ -19,8 +19,8 @@ export interface StackedRadialGaugeSupportingLabelProps {
   yOffset?: number;
 }
 
-export const StackedRadialGaugeSupportingLabel: FC<
-  Partial<StackedRadialGaugeSupportingLabelProps>
+export const StackedRadialGaugeDescriptionLabel: FC<
+  Partial<StackedRadialGaugeDescriptionLabelProps>
 > = ({ label, className, yOffset }) => (
   <>
     {label && (
@@ -29,7 +29,7 @@ export const StackedRadialGaugeSupportingLabel: FC<
         y={yOffset - 20}
         textAnchor="middle"
         alignmentBaseline="middle"
-        className={classNames(className, css.stackedSupportingLabel)}
+        className={classNames(className, css.stackedDescriptionLabel)}
       >
         {label}
       </text>
@@ -37,6 +37,6 @@ export const StackedRadialGaugeSupportingLabel: FC<
   </>
 );
 
-StackedRadialGaugeSupportingLabel.defaultProps = {
+StackedRadialGaugeDescriptionLabel.defaultProps = {
   yOffset: 0
 };

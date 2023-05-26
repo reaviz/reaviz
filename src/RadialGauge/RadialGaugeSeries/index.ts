@@ -4,5 +4,5 @@ export * from './RadialGaugeLabel';
 export * from './RadialGaugeValueLabel';
 export * from './StackedRadialGaugeSeries';
 export * from './StackedRadialGaugeValueLabel';
-export * from './StackedRadialGaugeSupportingLabel';
+export * from './StackedRadialGaugeDescriptionLabel';
 export * from './RadialGaugeOuterArc';

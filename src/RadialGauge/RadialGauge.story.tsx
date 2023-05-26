@@ -14,7 +14,7 @@ import {
   RadialGaugeSeries,
   StackedRadialGaugeValueLabel,
   StackedRadialGaugeSeries,
-  StackedRadialGaugeSupportingLabel
+  StackedRadialGaugeDescriptionLabel
 } from './RadialGaugeSeries';
 
 import { max } from 'd3-array';
@@ -173,7 +173,7 @@ export const Stacked = () => {
 
   const label = text('Label', 'Security Threats');
 
-  const supportingLabel = text('Supporting Label', 'Last 12 months');
+  const descriptionLabel = text('Description Label', 'Last 12 months');
 
   return (
     <RadialGauge
@@ -190,7 +190,7 @@ export const Stacked = () => {
           fillFactor={fillFactor}
           colorScheme={colorScheme}
           label={<StackedRadialGaugeValueLabel label={label} />}
-          supportingLabel={<StackedRadialGaugeSupportingLabel label={supportingLabel} />}
+          descriptionLabel={<StackedRadialGaugeDescriptionLabel label={descriptionLabel} />}
         />
       }
     />
