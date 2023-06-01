@@ -24,9 +24,9 @@ vi.mock('framer-motion', async () => {
 const color = 'green';
 const data = pie<any>().value((d) => d.data)([{ key: 'foo', data: 1 }]);
 
-describe.skip('mouse events', () => {
+describe('mouse events', () => {
   it('should handle click', () => {
-    const onClick = jest.fn();
+    const onClick = vi.fn();
 
     render(
       <svg>
@@ -48,8 +48,8 @@ describe.skip('mouse events', () => {
     });
   });
 
-  it('should handle mouseEnter', () => {
-    const onMouseEnter = jest.fn();
+  it.skip('should handle mouseEnter', () => {
+    const onMouseEnter = vi.fn();
 
     render(
       <svg>
@@ -72,8 +72,8 @@ describe.skip('mouse events', () => {
     });
   });
 
-  it('should handle mouseLeave', () => {
-    const onMouseLeave = jest.fn();
+  it.skip('should handle mouseLeave', () => {
+    const onMouseLeave = vi.fn();
 
     render(
       <svg>
@@ -97,9 +97,9 @@ describe.skip('mouse events', () => {
   });
 
   it('should not handle mouse event when disabled', () => {
-    const onClick = jest.fn();
-    const onMouseLeave = jest.fn();
-    const onMouseEnter = jest.fn();
+    const onClick = vi.fn();
+    const onMouseLeave = vi.fn();
+    const onMouseEnter = vi.fn();
 
     render(
       <svg>
@@ -126,8 +126,8 @@ describe.skip('mouse events', () => {
   });
 });
 
-describe.skip('tooltip', () => {
-  it('should toggle tooltip on mouse enter/leave', () => {
+describe('tooltip', () => {
+  it.skip('should toggle tooltip on mouse enter/leave', () => {
     render(
       <svg>
         <PieArc data={data[0]} animated={false} color={color} />
@@ -143,7 +143,7 @@ describe.skip('tooltip', () => {
     // expect(screen.queryByRole('tooltip')).not.toBeInTheDocument();
   });
 
-  it('should not render tooltip if it is disabled', () => {
+  it.skip('should not render tooltip if it is disabled', () => {
     render(
       <svg>
         <PieArc
