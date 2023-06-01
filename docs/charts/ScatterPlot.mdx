@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../src';
+import * as ScatterPlotLinearStory from '../../src/ScatterPlot/ScatterPlotLinear.story';
 
 <Meta title="Docs/Chart Types/Scatter Plot" />
 
@@ -8,7 +9,7 @@ import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../src';
 ---
 <br />
 <div className="doc-story">
-  <Story id="charts-scatter-plot-linear--simple" />
+  <Canvas sourceState="shown" of={ScatterPlotLinearStory.Simple} />
 </div>
 <br />
 
@@ -44,13 +45,13 @@ const MyChart = () => (
 
 ## API
 ### [ScatterPlot](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterPlot.tsx)
-<ArgsTable of={ScatterPlot} />
+<ArgTypes of={ScatterPlot} />
 
 ### [ScatterSeries](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterSeries/ScatterSeries.tsx)
-<ArgsTable of={ScatterSeries} />
+<ArgTypes of={ScatterSeries} />
 
 ### [ScatterPoint](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterSeries/ScatterPoint.tsx)
-<ArgsTable of={ScatterPoint} />
+<ArgTypes of={ScatterPoint} />
 
 ## Demo
 

@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { RadialAreaChart, RadialAreaSeries, RadialArea, RadialPointSeries, RadialLine } from '../../src';
+import * as RadialAreaChartStory from '../../src/RadialAreaChart/RadialAreaChart.story';
 
 <Meta title="Docs/Chart Types/Radial Area Chart" />
 
@@ -8,7 +9,7 @@ import { RadialAreaChart, RadialAreaSeries, RadialArea, RadialPointSeries, Radia
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-area-chart-radial--simple" />
+  <Canvas sourceState="shown" of={RadialAreaChartStory.Simple} />
 </div>
 <br />
 
@@ -39,16 +40,16 @@ const MyChart = () => (
 
 ## API
 ### [RadialAreaChart](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaChart.tsx)
-<ArgsTable of={RadialAreaChart} />
+<ArgTypes of={RadialAreaChart} />
 
 ### [RadialAreaSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialAreaSeries.tsx)
-<ArgsTable of={RadialAreaSeries} />
+<ArgTypes of={RadialAreaSeries} />
 
 ### [RadialArea](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialArea.tsx)
-<ArgsTable of={RadialArea} />
+<ArgTypes of={RadialArea} />
 
 ### [RadialLine](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialLine.tsx)
-<ArgsTable of={RadialLine} />
+<ArgTypes of={RadialLine} />
 
 ### [RadialPointSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialPointSeries.tsx)
-<ArgsTable of={RadialPointSeries} />
+<ArgTypes of={RadialPointSeries} />

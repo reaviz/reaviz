@@ -1,4 +1,6 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas } from '@storybook/addon-docs';
+import * as BarChartVerticalStories from '../../src/BarChart/BarChartVertical.story';
+import * as BarChartVerticalMultiSeriesStories from '../../src/BarChart/BarChartVerticalMultiSeries.story';
 
 <Meta title="Docs/Getting Started/Data Shapes" />
 
@@ -47,7 +49,7 @@ const data = [
 ```
 
 <br />
-<Story id="charts-bar-chart-vertical-single-series--simple" />
+<Canvas of={BarChartVerticalStories.Simple} />
 <br />
 
 ## `ChartNestedDataShape`
@@ -104,5 +106,5 @@ In this example, our x-axis would show `Lateral Movement` and `Discovery` and th
 a group of bar would contain `XML` and `JSON` with their respective values.
 
 <br />
-<Story id="charts-bar-chart-vertical-multi-series--simple" />
+<Canvas of={BarChartVerticalMultiSeriesStories.Simple} />
 <br />

@@ -1,5 +1,7 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { AreaChart, AreaSeries, Area, Line, PointSeries } from '../../src';
+
+import * as AreaChartSingleSeriesStories from '../../src/AreaChart/AreaChartSingleSeries.story'
 
 <Meta title="Docs/Chart Types/Area Chart" />
 
@@ -8,7 +10,7 @@ import { AreaChart, AreaSeries, Area, Line, PointSeries } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-area-chart-single-series--simple" />
+  <Canvas sourceState="shown" of={AreaChartSingleSeriesStories.Simple} />
 </div>
 <br />
 
@@ -48,19 +50,19 @@ const MyChart = () => (
 
 ## API
 ### [AreaChart](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaChart.tsx)
-<ArgsTable of={AreaChart} />
+<ArgTypes of={AreaChart} />
 
 ### [AreaSeries](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaSeries/AreaSeries.tsx)
-<ArgsTable of={AreaSeries} />
+<ArgTypes of={AreaSeries} />
 
 ### [Area](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaSeries/Area.tsx)
-<ArgsTable of={Area} />
+<ArgTypes of={Area} />
 
 ### [Line](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaSeries/Line.tsx)
-<ArgsTable of={Line} />
+<ArgTypes of={Line} />
 
 ### [PointSeries](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaSeries/PointSeries.tsx)
-<ArgsTable of={PointSeries} />
+<ArgTypes of={PointSeries} />
 
 ## Demo
 

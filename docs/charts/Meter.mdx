@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { Meter, MeterColumn } from '../../src';
+import * as MeterStory from '../../src/Meter/Meter.story';
 
 <Meta title="Docs/Chart Types/Meter" />
 
@@ -8,7 +9,7 @@ import { Meter, MeterColumn } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-meter--basic" />
+  <Canvas sourceState="shown" of={MeterStory.Basic} />
 </div>
 
 Component for values from 0 to 100 broken into sections.
@@ -26,7 +27,7 @@ const MyChart = () => (
 
 ## API
 ### [Meter](https://github.com/reaviz/reaviz/blob/master/src/Meter/Meter.tsx)
-<ArgsTable of={Meter} />
+<ArgTypes of={Meter} />
 
 ### [MeterColumn](https://github.com/reaviz/reaviz/blob/master/src/Meter/MeterColumn.tsx)
-<ArgsTable of={MeterColumn} />
+<ArgTypes of={MeterColumn} />

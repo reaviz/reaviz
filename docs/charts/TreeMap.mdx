@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { TreeMap, TreeMapSeries, TreeMapLabel, TreeMapRect } from '../../src';
+import * as TreeMapStory from '../../src/TreeMap/TreeMap.story';
 
 <Meta title="Docs/Chart Types/TreeMap" />
 
@@ -8,7 +9,7 @@ import { TreeMap, TreeMapSeries, TreeMapLabel, TreeMapRect } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-treemap--simple" />
+  <Canvas sourceState="shown" of={TreeMapStory.Simple} />
 </div>
 <br />
 
@@ -41,16 +42,16 @@ const MyChart = () => (
 
 ## API
 ### [TreeMap](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMap.tsx)
-<ArgsTable of={TreeMap} />
+<ArgTypes of={TreeMap} />
 
 ### [TreeMapSeries](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMapSeries.tsx)
-<ArgsTable of={TreeMapSeries} />
+<ArgTypes of={TreeMapSeries} />
 
 ### [TreeMapLabel](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMapLabel.tsx)
-<ArgsTable of={TreeMapLabel} />
+<ArgTypes of={TreeMapLabel} />
 
 ### [TreeMapRect](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMapRect.tsx)
-<ArgsTable of={TreeMapRect} />
+<ArgTypes of={TreeMapRect} />
 
 ## Demo
 

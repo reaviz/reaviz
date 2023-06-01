@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { PieChart, PieArcSeries, PieArcLabel, PieArc } from '../../src';
+import * as PieChartStory from '../../src/PieChart/PieChart.story';
 
 <Meta title="Docs/Chart Types/Pie Chart" />
 
@@ -8,7 +9,7 @@ import { PieChart, PieArcSeries, PieArcLabel, PieArc } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-pie-chart-pie--simple" />
+  <Canvas sourceState="shown" of={PieChartStory.Simple} />
 </div>
 <br />
 
@@ -44,16 +45,16 @@ const MyChart = () => (
 
 ## API
 ### [PieChart](https://github.com/reaviz/reaviz/blob/master/src/PieChart/PieChart.tsx)
-<ArgsTable of={PieChart} />
+<ArgTypes of={PieChart} />
 
 ### [PieArcSeries](https://github.com/reaviz/reaviz/blob/master/src/PieChart/PieArcSeries/PieArcSeries.tsx)
-<ArgsTable of={PieArcSeries} />
+<ArgTypes of={PieArcSeries} />
 
 ### [PieArcLabel](https://github.com/reaviz/reaviz/blob/master/src/PieChart/PieArcSeries/PieArcLabel.tsx)
-<ArgsTable of={PieArcLabel} />
+<ArgTypes of={PieArcLabel} />
 
 ### [PieArc](https://github.com/reaviz/reaviz/blob/master/src/PieChart/PieArcSeries/PieArc/PieArc.tsx)
-<ArgsTable of={PieArc} />
+<ArgTypes of={PieArc} />
 
 ## Demo
 

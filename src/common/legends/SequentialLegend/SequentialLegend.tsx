@@ -5,6 +5,7 @@ import chroma from 'chroma-js';
 import { uniqueBy } from '../../../common/utils/array';
 import { extent } from 'd3-array';
 import { formatValue } from '../../utils/formatting';
+
 import css from './SequentialLegend.module.css';
 
 export interface SequentialLegendProps {

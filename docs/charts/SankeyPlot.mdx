@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { Sankey, SankeyLink, SankeyNode } from '../../src';
+import * as SankeyStory from '../../src/Sankey/Sankey.story';
 
 <Meta title="Docs/Chart Types/Sankey Plot" />
 
@@ -8,7 +9,7 @@ import { Sankey, SankeyLink, SankeyNode } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-sankey-plot--simple" />
+  <Canvas sourceState="shown" of={SankeyStory.Simple} />
 </div>
 <br />
 
@@ -59,13 +60,13 @@ the index of the nodes' array or the node's `id` if it's assigned.
 
 ## API
 ### [Sankey](https://github.com/reaviz/reaviz/blob/master/src/Sankey/Sankey.tsx)
-<ArgsTable of={Sankey} />
+<ArgTypes of={Sankey} />
 
 ### [SankeyLink](https://github.com/reaviz/reaviz/blob/master/src/Sankey/SankeyLink/SankeyLink.tsx)
-<ArgsTable of={SankeyLink} />
+<ArgTypes of={SankeyLink} />
 
 ### [SankeyNode](https://github.com/reaviz/reaviz/blob/master/src/Sankey/SankeyNode/SankeyNode.tsx)
-<ArgsTable of={SankeyNode} />
+<ArgTypes of={SankeyNode} />
 
 ## Demo
 

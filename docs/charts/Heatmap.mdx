@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { Heatmap, HeatmapSeries, HeatmapCell, CalendarHeatmap } from '../../src';
+import * as HeatmapStory from '../../src/Heatmap/Heatmap.story';
 
 <Meta title="Docs/Chart Types/Heatmap" />
 
@@ -8,7 +9,7 @@ import { Heatmap, HeatmapSeries, HeatmapCell, CalendarHeatmap } from '../../src'
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-heatmap-simple--basic" />
+  <Canvas sourceState="shown" of={HeatmapStory.Basic} />
 </div>
 <br />
 
@@ -81,16 +82,16 @@ const MyChart = () => (
 
 ## API
 ### [Heatmap](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/Heatmap.tsx)
-<ArgsTable of={Heatmap} />
+<ArgTypes of={Heatmap} />
 
 ### [CalendarHeatmap](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/CalendarHeatmap.tsx)
-<ArgsTable of={CalendarHeatmap} />
+<ArgTypes of={CalendarHeatmap} />
 
 ### [HeatmapSeries](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/HeatmapSeries/HeatmapSeries.tsx)
-<ArgsTable of={HeatmapSeries} />
+<ArgTypes of={HeatmapSeries} />
 
 ### [HeatmapCell](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/HeatmapSeries/HeatmapCell.tsx)
-<ArgsTable of={HeatmapCell} />
+<ArgTypes of={HeatmapCell} />
 
 ## Demo
 

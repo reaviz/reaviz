@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { LinearGauge, LinearGaugeBar, LinearGaugeSeries, LinearGaugeOuterBar } from '../../src';
+import * as LinearGaugeSingleSeriesStory from '../../src/LinearGauge/LinearGaugeSingleSeries.story';
 
 <Meta title="Docs/Chart Types/Linear Gauge" />
 
@@ -8,7 +9,7 @@ import { LinearGauge, LinearGaugeBar, LinearGaugeSeries, LinearGaugeOuterBar } f
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-gauge-linear-single-series--simple" />
+  <Canvas sourceState="shown" of={LinearGaugeSingleSeriesStory.Simple} />
 </div>
 <br />
 
@@ -40,13 +41,13 @@ distribute the values across them.
 
 ## API
 ### [LinearGauge](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGauge.tsx)
-<ArgsTable of={LinearGauge} />
+<ArgTypes of={LinearGauge} />
 
 ### [LinearGaugeSeries](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGaugeSeries.tsx)
-<ArgsTable of={LinearGaugeSeries} />
+<ArgTypes of={LinearGaugeSeries} />
 
 ### [LinearGaugeBar](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGaugeBar.tsx)
-<ArgsTable of={LinearGaugeBar} />
+<ArgTypes of={LinearGaugeBar} />
 
 ### [LinearGaugeOuterBar](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGaugeOuterBar.tsx)
-<ArgsTable of={LinearGaugeOuterBar} />
+<ArgTypes of={LinearGaugeOuterBar} />

@@ -1,6 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
-import { AreaChart, AreaSeries, Area, Line, PointSeries } from '../../src';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { BubbleChart, BubbleSeries, Bubble, BubbleLabel } from '../../src';
+import * as BubbleChartStory from '../../src/BubbleChart/BubbleChart.story';
 
 <Meta title="Docs/Chart Types/Bubble Chart" />
 
@@ -9,7 +9,7 @@ import { BubbleChart, BubbleSeries, Bubble, BubbleLabel } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-bubble-chart--simple" />
+  <Canvas sourceState="shown" sourceState="shown" of={BubbleChartStory.Simple} />
 </div>
 <br />
 
@@ -35,16 +35,16 @@ const MyChart = () => (
 
 ## API
 ### [BubbleChart](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/BubbleChart.tsx)
-<ArgsTable of={BubbleChart} />
+<ArgTypes of={BubbleChart} />
 
 ### [BubbleSeries](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/BubbleSeries.tsx)
-<ArgsTable of={BubbleSeries} />
+<ArgTypes of={BubbleSeries} />
 
 ### [Bubble](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/Bubble.tsx)
-<ArgsTable of={Bubble} />
+<ArgTypes of={Bubble} />
 
 ### [BubbleLabel](https://github.com/reaviz/reaviz/blob/master/src/BubbleChart/BubbleLabel.tsx)
-<ArgsTable of={BubbleLabel} />
+<ArgTypes of={BubbleLabel} />
 
 ## Demo
 

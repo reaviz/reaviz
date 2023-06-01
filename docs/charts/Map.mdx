@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { Map, MapMarker } from '../../src';
+import * as MapStory from '../../src/Map/Map.story';
 
 <Meta title="Docs/Chart Types/Map" />
 
@@ -8,7 +9,7 @@ import { Map, MapMarker } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-map--simple" />
+  <Canvas sourceState="shown" of={MapStory.Simple} />
 </div>
 
 A Choropleth Map is a thematic map in which areas are shaded or patterned in proportion to
@@ -52,10 +53,10 @@ a tooltip can be defined on hover.
 
 ## API
 ### [Map](https://github.com/reaviz/reaviz/blob/master/src/Map/Map.tsx)
-<ArgsTable of={Map} />
+<ArgTypes of={Map} />
 
 ### [MapMarker](https://github.com/reaviz/reaviz/blob/master/src/Map/MapMarker.tsx)
-<ArgsTable of={MapMarker} />
+<ArgTypes of={MapMarker} />
 
 ## Demo
 

@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { BarList, BarListSeries } from '../../src';
+import * as BarListStory from '../../src/BarList/BarList.story';
 
 <Meta title="Docs/Chart Types/Bar List" />
 
@@ -8,7 +9,7 @@ import { BarList, BarListSeries } from '../../src';
 ---
 <br />
 <div className="doc-story">
-  <Story id="charts-bar-list--simple" />
+  <Canvas sourceState="shown" of={BarListStory.Simple} />
 </div>
 <br />
 
@@ -34,10 +35,10 @@ const MyChart = () => (
 
 ## API
 ### [BarList](https://github.com/reaviz/reaviz/blob/master/src/BarList/BarList.tsx)
-<ArgsTable of={BarList} />
+<ArgTypes of={BarList} />
 
 ### [BarListSeries](https://github.com/reaviz/reaviz/blob/master/src/BarList/BarListSeries.tsx)
-<ArgsTable of={BarListSeries} />
+<ArgTypes of={BarListSeries} />
 
 ## Demo
 

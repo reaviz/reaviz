@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { BarChart, BarSeries, Bar, RangeLines, BarLabel } from '../../src';
+import * as BarChartVerticalStory from '../../src/BarChart/BarChartVertical.story';
 
 <Meta title="Docs/Chart Types/Bar Chart" />
 
@@ -8,7 +9,7 @@ import { BarChart, BarSeries, Bar, RangeLines, BarLabel } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-bar-chart-vertical-single-series--simple" />
+  <Canvas sourceState="shown" of={BarChartVerticalStory.Simple} />
 </div>
 <br />
 
@@ -55,19 +56,19 @@ const MyChart = () => (
 
 ## API
 ### [BarChart](https://github.com/reaviz/reaviz/blob/master/src/BarChart/BarChart.tsx)
-<ArgsTable of={BarChart} />
+<ArgTypes of={BarChart} />
 
 ### [BarSeries](https://github.com/reaviz/reaviz/blob/master/src/BarChart/BarSeries/BarSeries.tsx)
-<ArgsTable of={BarSeries} />
+<ArgTypes of={BarSeries} />
 
 ### [Bar](https://github.com/reaviz/reaviz/blob/master/src/BarChart/BarSeries/Bar.tsx)
-<ArgsTable of={Bar} />
+<ArgTypes of={Bar} />
 
 ### [RangeLines](https://github.com/reaviz/reaviz/blob/master/src/BarChart/BarSeries/RangeLines.tsx)
-<ArgsTable of={RangeLines} />
+<ArgTypes of={RangeLines} />
 
 ### [BarLabel](https://github.com/reaviz/reaviz/blob/master/src/BarChart/BarSeries/BarLabel.tsx)
-<ArgsTable of={BarLabel} />
+<ArgTypes of={BarLabel} />
 
 ## Demo
 

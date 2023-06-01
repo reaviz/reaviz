@@ -1,4 +1,4 @@
-import { Meta, Story, ArgsTable, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, ArgTypes } from '@storybook/addon-docs/blocks';
 import { TooltipArea, ChartTooltip } from '../../src';
 
 <Meta title="Docs/Utils/Tooltips" />
@@ -54,7 +54,7 @@ the `tooltip` property passing its own `content`.
 
 ### API
 #### [TooltipArea](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/TooltipArea.tsx)
-<ArgsTable of={TooltipArea} />
+<ArgTypes of={TooltipArea} />
 
 ## ChartTooltip
 The tooltip component is used for simple position relative to a element. This is ideal
@@ -81,7 +81,7 @@ In this example above, the component overrides the tooltip to format the date fo
 
 ### API
 #### [Tooltip](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/ChartTooltip.tsx)
-<ArgsTable of={ChartTooltip} />
+<ArgTypes of={ChartTooltip} />
 
 ## Custom Tooltips
 You can also override tooltips and handle them yourself manually. Below is an example

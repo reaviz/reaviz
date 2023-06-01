@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { RadarChart } from '../../src';
+import * as RadarChartStory from '../../src/RadarChart/RadarChart.story';
 
 <Meta title="Docs/Chart Types/Radar" />
 
@@ -8,7 +9,7 @@ import { RadarChart } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-radar-chart--filled" />
+  <Canvas sourceState="shown" of={RadarChartStory.Filled} />
 </div>
 
 
@@ -68,4 +69,4 @@ const MyChart = () => (
 ## API
 
 ### [RadarChart](https://github.com/reaviz/reaviz/blob/master/src/RadarChart/RadarChart.tsx)
-<ArgsTable of={RadarChart} />
+<ArgTypes of={RadarChart} />

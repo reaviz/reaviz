@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { RadialBarChart, RadialBarSeries, RadialBar } from '../../src';
+import * as RadialBarChartStory from '../../src/RadialBarChart/RadialBarChart.story';
 
 <Meta title="Docs/Chart Types/Radial Bar Chart" />
 
@@ -8,7 +9,7 @@ import { RadialBarChart, RadialBarSeries, RadialBar } from '../../src';
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-bar-chart-radial--simple" />
+  <Canvas sourceState="shown" of={RadialBarChartStory.Simple} />
 </div>
 <br />
 
@@ -38,10 +39,10 @@ const MyChart = () => (
 
 ## API
 ### [RadialBarChart](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaChart.tsx)
-<ArgsTable of={RadialBarChart} />
+<ArgTypes of={RadialBarChart} />
 
 ### [RadialBarSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialBarSeries/RadialBarSeries.tsx)
-<ArgsTable of={RadialBarSeries} />
+<ArgTypes of={RadialBarSeries} />
 
 ### [RadialBar](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialBarSeries/RadialBar.tsx)
-<ArgsTable of={RadialBar} />
+<ArgTypes of={RadialBar} />

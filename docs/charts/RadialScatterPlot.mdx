@@ -1,5 +1,6 @@
-import { Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
 import { RadialScatterPlot, RadialScatterSeries, RadialScatterPoint } from '../../src';
+import * as RadialScatterPlotStory from '../../src/RadialScatterPlot/RadialScatterPlot.story';
 
 <Meta title="Docs/Chart Types/Radial Scatter Plot" />
 
@@ -8,7 +9,7 @@ import { RadialScatterPlot, RadialScatterSeries, RadialScatterPoint } from '../.
 ---
 <br />
 <div className="doc-story">
-<Story id="charts-scatter-plot-radial--simple" />
+  <Canvas sourceState="shown" of={RadialScatterPlotStory.Simple} />
 </div>
 <br />
 
@@ -43,10 +44,10 @@ const MyChart = () => (
 
 ## API
 ### [RadialScatterPlot](https://github.com/reaviz/reaviz/blob/master/src/RadialScatterPlot/RadialScatterPlot.tsx)
-<ArgsTable of={RadialScatterPlot} />
+<ArgTypes of={RadialScatterPlot} />
 
 ### [RadialScatterSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialScatterPlot/RadialScatterSeries/RadialScatterSeries.tsx)
-<ArgsTable of={RadialScatterSeries} />
+<ArgTypes of={RadialScatterSeries} />
 
 ### [RadialScatterPoint](https://github.com/reaviz/reaviz/blob/master/src/RadialScatterPlot/RadialScatterSeries/RadialScatterPoint.tsx)
-<ArgsTable of={RadialScatterPoint} />
+<ArgTypes of={RadialScatterPoint} />

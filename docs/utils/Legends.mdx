@@ -1,5 +1,7 @@
-import { Meta, Story, ArgsTable, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, ArgTypes, Canvas } from '@storybook/addon-docs/blocks';
 import { DiscreteLegend, DiscreteLegendEntry, DiscreteLegendSymbol, SequentialLegend } from '../../src';
+import * as DiscreteLegendVerticalStories from '../../src/common/legends/DiscreteLegend/DiscreteLegendVertical.story'
+import * as DiscreteLegendHorizontalStories from '../../src/common/legends/DiscreteLegend/DiscreteLegendHorizontal.story'
 
 <Meta title="Docs/Utils/Legends" />
 
@@ -20,29 +22,25 @@ The discrete legend is useful for categorical charts such as bar charts.
 This legend supports supports both vertical and horizontal layout. Below is a simple example of a
 discrete legend that has four different labels.
 
-<Preview withSource="open">
-  <Story id="utils-legend-discrete-vertical--simple" />
-</Preview>
+<Canvas sourceState="shown" of={DiscreteLegendVerticalStories.Simple} />
 
 ### API
 #### [DiscreteLegend](https://github.com/reaviz/reaviz/blob/master/src/common/legends/DiscreteLegend/DiscreteLegend.tsx)
-<ArgsTable of={DiscreteLegend} />
+<ArgTypes of={DiscreteLegend} />
 
 #### [DiscreteLegendEntry](https://github.com/reaviz/reaviz/blob/master/src/common/legends/DiscreteLegend/DiscreteLegendEntry.tsx)
-<ArgsTable of={DiscreteLegendEntry} />
+<ArgTypes of={DiscreteLegendEntry} />
 
 #### [DiscreteLegendSymbol](https://github.com/reaviz/reaviz/blob/master/src/common/legends/DiscreteLegend/DiscreteLegendSymbol.tsx)
-<ArgsTable of={DiscreteLegendSymbol} />
+<ArgTypes of={DiscreteLegendSymbol} />
 
 ## Sequential Legend
 The sequential legend is useful for categorical charts such as heatmaps.
 This legend supports supports both vertical and horizontal layout. Below is a simple
 example of a sequential legend:
 
-<Preview withSource="open">
-  <Story id="utils-legend-sequential-horizontal--simple" />
-</Preview>
+<Canvas sourceState="shown" of={DiscreteLegendHorizontalStories._Simple} />
 
 ### API
 #### [SequentialLegend](https://github.com/reaviz/reaviz/blob/master/src/common/legends/SequentialLegend/SequentialLegend.tsx)
-<ArgsTable of={SequentialLegend} />
+<ArgTypes of={SequentialLegend} />
