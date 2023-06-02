@@ -21,8 +21,12 @@
   "main": "./dist/reaviz.umd.cjs",
   "module": "./dist/reaviz.js",
   "source": "src/index.ts",
-  "exports": "./dist/index.esm.js",
-  "browser": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/reaviz.js",
+      "require": "./dist/reaviz.umd.cjs"
+    }
+  },  "browser": "dist/index.js",
   "style": "dist/index.css",
   "typings": "dist/src/index.d.ts",
   "repository": {
