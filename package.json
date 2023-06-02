@@ -26,7 +26,8 @@
       "import": "./dist/reaviz.js",
       "require": "./dist/reaviz.umd.cjs"
     }
-  },  "browser": "dist/index.js",
+  },
+  "browser": "dist/index.js",
   "style": "dist/index.css",
   "typings": "dist/src/index.d.ts",
   "repository": {
@@ -141,6 +142,7 @@
     "eslint-plugin-storybook": "^0.5.7",
     "husky": "^8.0.0",
     "identity-obj-proxy": "^3.0.0",
+    "jsdom": "^22.1.0",
     "lint-staged": "^13.2.2",
     "moment": "^2.29.1",
     "postcss-nested": "^6.0.1",
