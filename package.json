@@ -122,7 +122,6 @@
     "@types/d3-scale": "^4.0.2",
     "@types/d3-shape": "^3.0.2",
     "@types/d3-time": "^3.0.0",
-    "@types/jest": "^27.4.0",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "@types/topojson-client": "^3.1.0",
@@ -161,50 +160,6 @@
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.31.4",
     "world-atlas": "^2.0.2"
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
-    ],
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/.storybook/",
-      "<rootDir>/storybook-static/",
-      "<rootDir>/dist/",
-      "<rootDir>/node_modules/"
-    ],
-    "transform": {
-      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "ts-jest"
-    },
-    "testMatch": [
-      "<rootDir>/src/**/*(*.)@(spec|test).[t]s?(x)"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "identity-obj-proxy"
-    },
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!d3-array|d3-shape|d3-path|internmap|d3-interpolate|d3-scale|d3-format|d3-time).+\\.js$"
-    ],
-    "reporters": [
-      "default",
-      [
-        "jest-junit",
-        {
-          "outputDirectory": "./coverage"
-        }
-      ]
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json"
-    ],
-    "watchPlugins": [],
-    "setupFilesAfterEnv": [
-      "./test/mockEnv.ts"
-    ]
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
