@@ -1,3 +1,8 @@
+# 14.6.0 - 6/5/23
+- [chore] migrate to vite library
+- [chore] upgrade storybook
+- [chore] upgrade major dep
+
 # 14.5.0 - 5/26/23
 - [feature] Add optional supporting text field for Stacked Gauge #122
 
