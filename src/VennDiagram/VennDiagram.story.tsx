@@ -1,6 +1,5 @@
 import React from 'react';
 import { VennDiagram } from './VennDiagram';
-import { number, object, color, select, boolean } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
