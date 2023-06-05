@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from 'react';
-import { object, color, number } from '@storybook/addon-knobs';
 import { ScatterPlot } from './ScatterPlot';
 import {
   signalChartData,
@@ -29,132 +28,124 @@ export default {
   }
 };
 
-export const Simple = () => {
-    const height = number('Height', 400);
-    const width = number('Width', 750);
-    const size = number('Size', 4);
-    const fill = color('Color', schemes.cybertron[0]);
-    const data = object('Data', medSignalChartData);
-
-    return (
-      <ScatterPlot
-        height={height}
-        width={width}
-        data={data}
-        series={
-          <ScatterSeries point={<ScatterPoint color={fill} size={size} />} />
-        }
-      />
-    );
-  };
+export const Simple = () => (
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={medSignalChartData}
+    series={
+      <ScatterSeries point={<ScatterPoint color={schemes.cybertron[0]} size={4} />} />
+    }
+  />
+);
 
 export const CategoricalAxis = () => (
-    <ScatterPlot
-      height={400}
-      width={750}
-      data={signalStageData}
-      yAxis={
-        <LinearYAxis
-          type="category"
-          domain={signalStages as any}
-          tickSeries={
-            <LinearYAxisTickSeries
-              label={<LinearYAxisTickLabel rotation={false} />}
-            />
-          }
-        />
-      }
-      gridlines={
-        <GridlineSeries
-          line={<Gridline direction="y" />}
-          stripe={<GridStripe direction="y" />}
-        />
-      }
-    />
-  );
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={signalStageData}
+    yAxis={
+      <LinearYAxis
+        type="category"
+        domain={signalStages as any}
+        tickSeries={
+          <LinearYAxisTickSeries
+            label={<LinearYAxisTickLabel rotation={false} />}
+          />
+        }
+      />
+    }
+    gridlines={
+      <GridlineSeries
+        line={<Gridline direction="y" />}
+        stripe={<GridStripe direction="y" />}
+      />
+    }
+  />
+);
 
 export const NoAnimation = () => (
-    <ScatterPlot
-      height={400}
-      width={750}
-      data={medSignalChartData}
-      series={<ScatterSeries animated={false} />}
-    />
-  );
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={medSignalChartData}
+    series={<ScatterSeries animated={false} />}
+  />
+);
 
 export const Performance = () => (
-    <Fragment>
-      {range(15).map((i) => (
-        <div
-          key={i}
-          style={{
-            width: '250px',
-            height: '250px',
-            border: 'solid 1px green',
-            margin: '25px',
-            display: 'inline-block'
-          }}
-        >
-          <ScatterPlot data={medSignalChartData} />
-        </div>
-      ))}
-    </Fragment>
-  );
+  <Fragment>
+    {range(15).map((i) => (
+      <div
+        key={i}
+        style={{
+          width: '250px',
+          height: '250px',
+          border: 'solid 1px green',
+          margin: '25px',
+          display: 'inline-block'
+        }}
+      >
+        <ScatterPlot data={medSignalChartData} />
+      </div>
+    ))}
+  </Fragment>
+);
 
 export const Autosize = () => (
-    <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-      <ScatterPlot data={medSignalChartData} />
-    </div>
-  );
+  <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
+    <ScatterPlot data={medSignalChartData} />
+  </div>
+);
 
 export const Symbols = () => (
-    <ScatterPlot
-      height={400}
-      width={750}
-      data={signalChartData}
-      series={
-        <ScatterSeries
-          point={
-            <ScatterPoint
-              symbol={() => {
-                const d = symbol().type(symbolStar).size(175)();
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={signalChartData}
+    series={
+      <ScatterSeries
+        point={
+          <ScatterPoint
+            symbol={() => {
+              const d = symbol().type(symbolStar).size(175)();
 
-                return (
-                  <path
-                    d={d!}
-                    style={{
-                      fill: 'lime',
-                      stroke: 'purple',
-                      strokeWidth: 1.5
-                    }}
-                  />
-                );
-              }}
-            />
-          }
-        />
-      }
-    />
-  );
+              return (
+                <path
+                  d={d!}
+                  style={{
+                    fill: 'lime',
+                    stroke: 'purple',
+                    strokeWidth: 1.5
+                  }}
+                />
+              );
+            }}
+          />
+        }
+      />
+    }
+  />
+);
 
 export const Bubble = () => (
-    <ScatterPlot
-      height={400}
-      width={750}
-      data={largeSignalChartData}
-      margins={20}
-      series={
-        <ScatterSeries
-          point={
-            <ScatterPoint
-              color="rgba(45, 96, 232, .8)"
-              size={(v) => v.metadata.severity + 5}
-            />
-          }
-        />
-      }
-    />
-  );
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={largeSignalChartData}
+    margins={20}
+    series={
+      <ScatterSeries
+        point={
+          <ScatterPoint
+            color="rgba(45, 96, 232, .8)"
+            size={(v) => v.metadata.severity + 5}
+          />
+        }
+      />
+    }
+  />
+);
 
 export const LiveUpdate = () => <BubbleChartLiveUpdate />;
 
