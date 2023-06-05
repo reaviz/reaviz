@@ -31,10 +31,11 @@ jobs:
 
       - name: Publish Storybook to GH Pages
         if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: storybook-static
+          jekyll: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

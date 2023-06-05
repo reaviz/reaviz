@@ -1,0 +1,64 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { BarList, BarListSeries } from '../../src';
+import * as BarListStory from '../../src/BarList/BarList.story';
+
+<Meta title="Docs/Chart Types/Bar List" />
+
+# Bar List
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={BarListStory.Simple} />
+</div>
+<br />
+
+Horizontal bars with a label.
+
+## Quick Start
+To create a Bar List, use import the `BarList` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { BarList } from 'reaviz';
+
+const MyChart = () => (
+  <BarList
+    data={[
+      { key: 'DLP', data: 13 },
+      { key: 'SIEM', data: 2 },
+      { key: 'Endpoint', data: 7 }
+    ]}
+  />
+);
+```
+
+## API
+### [BarList](https://github.com/reaviz/reaviz/blob/master/src/BarList/BarList.tsx)
+<ArgTypes of={BarList} />
+
+### [BarListSeries](https://github.com/reaviz/reaviz/blob/master/src/BarList/BarListSeries.tsx)
+<ArgTypes of={BarListSeries} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { BarList } from 'reaviz';
+
+export const data = [
+  { key: 'Vulnerability Patch', data: 50 },
+  { key: 'Critical Failure', data: 25 },
+  { key: 'Physical Intrusion', data: 5 },
+  { key: 'Phishing Attempts', data: 100 }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <BarList
+      style={{ width: 350 }}
+      data={data}
+    />
+  </div>
+);
+```

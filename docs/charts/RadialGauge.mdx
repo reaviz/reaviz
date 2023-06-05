@@ -1,0 +1,69 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import {
+  RadialGauge,
+  RadialGaugeSeries,
+  RadialGaugeArc,
+  RadialGaugeLabel,
+  RadialGaugeValueLabel,
+  StackedRadialGaugeSeries,
+  StackedRadialGaugeValueLabel,
+  StackedRadialGaugeDescriptionLabel
+} from '../../src';
+import * as RadialGaugeStory from '../../src/RadialGauge/RadialGauge.story';
+
+<Meta title="Docs/Chart Types/Radial Gauge" />
+
+# Radial Gauge
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={RadialGaugeStory.Single} />
+</div>
+<br />
+
+Radial Gauge uses a radial scale to display a specific data point using a dial over a radial scale with defined limits.
+
+## Quick Start
+To create a Radial Gauge, use import the `RadialGauge` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { RadialGauge } from 'reaviz';
+
+const MyChart = () => (
+  <RadialGauge
+    height={300}
+    width={300}
+    data={[{ key: 'Austin, TX', data: 24 }]}
+  />
+);
+```
+
+In this example, we only pass one data object, however, we can pass multiples and it will
+distribute the values across them.
+
+## API
+### [RadialGauge](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGauge.tsx)
+<ArgTypes of={RadialGauge} />
+
+### [RadialGaugeSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGaugeSeries/RadialGaugeSeries.tsx)
+<ArgTypes of={RadialGaugeSeries} />
+
+### [StackedRadialGaugeSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/StackedRadialGaugeSeries.tsx)
+<ArgTypes of={StackedRadialGaugeSeries} />
+
+### [RadialGaugeArc](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGaugeSeries/RadialGaugeArc.tsx)
+<ArgTypes of={RadialGaugeArc} />
+
+### [RadialGaugeLabel](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGaugeSeries/RadialGaugeLabel.tsx)
+<ArgTypes of={RadialGaugeLabel} />
+
+### [StackedRadialGaugeValueLabel](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGaugeSeries/StackedRadialGaugeValueLabel.tsx)
+<ArgTypes of={StackedRadialGaugeValueLabel} />
+
+### [StackedRadialGaugeDescriptionLabel](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGaugeSeries/StackedRadialGaugeDescriptionLabel.tsx)
+<ArgTypes of={StackedRadialGaugeDescriptionLabel} />
+
+### [RadialGaugeValueLabel](https://github.com/reaviz/reaviz/blob/master/src/RadialGauge/RadialGaugeSeries/RadialGaugeValueLabel.tsx)
+<ArgTypes of={RadialGaugeValueLabel} />

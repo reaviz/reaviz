@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { Component, PropsWithChildren, createRef } from 'react';
 import { toggleTextSelection } from '../utils/selection';
 import {
   getPointFromMatrix,
@@ -14,7 +14,7 @@ import {
   inverse
 } from 'transformation-matrix';
 
-interface ZoomGestureProps {
+interface ZoomGestureProps extends PropsWithChildren {
   disabled?: boolean;
   maxZoom: number;
   minZoom: number;

@@ -1,0 +1,219 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { Heatmap, HeatmapSeries, HeatmapCell, CalendarHeatmap } from '../../src';
+import * as HeatmapStory from '../../src/Heatmap/Heatmap.story';
+
+<Meta title="Docs/Chart Types/Heatmap" />
+
+# Heatmap
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={HeatmapStory.Basic} />
+</div>
+<br />
+
+A heat map is a data visualization type where the individual values
+contained in a matrix through variations in coloring. The term “Heat map” was
+originally introduced by software designer Cormac Kinney in 1991 to describe a 2D
+display depicting real time financial market information even though similar
+visualizations have existed for over a century.
+
+Heat maps are useful for visualizing variance across multiple
+variables to display patterns in correlations.
+
+Types supported by reaviz:
+
+- Heatmap
+- Calendar Heatmap
+
+## Quick Start
+To create a Heatmap, use import the `Heatmap` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { Heatmap } from 'reaviz';
+
+const data = [
+  {
+    key: 'Lateral Movement',
+    data: [
+      {
+        key: 'XML',
+        data: 0
+      },
+      {
+        key: 'JSON',
+        data: 120
+      },
+      {
+        key: 'HTTPS',
+        data: 150
+      }
+    ]
+  },
+  {
+    key: 'Discovery',
+    data: [
+      {
+        key: 'XML',
+        data: 100
+      },
+      {
+        key: 'JSON',
+        data: 34
+      },
+      {
+        key: 'HTTPS',
+        data: 0
+      }
+    ]
+  }
+];
+
+const MyChart = () => (
+  <Heatmap
+    height={350}
+    width={350}
+    data={data}
+  />
+);
+```
+
+## API
+### [Heatmap](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/Heatmap.tsx)
+<ArgTypes of={Heatmap} />
+
+### [CalendarHeatmap](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/CalendarHeatmap.tsx)
+<ArgTypes of={CalendarHeatmap} />
+
+### [HeatmapSeries](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/HeatmapSeries/HeatmapSeries.tsx)
+<ArgTypes of={HeatmapSeries} />
+
+### [HeatmapCell](https://github.com/reaviz/reaviz/blob/master/src/Heatmap/HeatmapSeries/HeatmapCell.tsx)
+<ArgTypes of={HeatmapCell} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { Heatmap } from 'reaviz';
+
+const data = [
+  {
+    key: 'Lateral Movement',
+    data: [
+      {
+        key: 'XML',
+        data: 0
+      },
+      {
+        key: 'JSON',
+        data: 120
+      },
+      {
+        key: 'HTTPS',
+        data: 150
+      },
+      {
+        key: 'SSH',
+        data: 112
+      }
+    ]
+  },
+  {
+    key: 'Discovery',
+    data: [
+      {
+        key: 'XML',
+        data: 100
+      },
+      {
+        key: 'JSON',
+        data: 34
+      },
+      {
+        key: 'HTTPS',
+        data: 0
+      },
+      {
+        key: 'SSH',
+        data: 111
+      }
+    ]
+  },
+  {
+    key: 'Exploitation',
+    data: [
+      {
+        key: 'XML',
+        data: 70
+      },
+      {
+        key: 'JSON',
+        data: 1
+      },
+      {
+        key: 'HTTPS',
+        data: 110
+      },
+      {
+        key: 'SSH',
+        data: 115
+      }
+    ]
+  },
+  {
+    key: 'Threat Intelligence',
+    data: [
+      {
+        key: 'XML',
+        data: 1
+      },
+      {
+        key: 'JSON',
+        data: 120
+      },
+      {
+        key: 'HTTPS',
+        data: 200
+      },
+      {
+        key: 'SSH',
+        data: 160
+      }
+    ]
+  },
+  {
+    key: 'Breach',
+    data: [
+      {
+        key: 'XML',
+        data: 5
+      },
+      {
+        key: 'JSON',
+        data: 10
+      },
+      {
+        key: 'HTTPS',
+        data: 152
+      },
+      {
+        key: 'SSH',
+        data: 20
+      }
+    ]
+  }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <Heatmap
+      height={250}
+      width={400}
+      data={data}
+    />
+  </div>
+);
+```

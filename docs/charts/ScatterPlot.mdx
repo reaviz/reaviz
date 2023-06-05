@@ -1,0 +1,86 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../src';
+import * as ScatterPlotLinearStory from '../../src/ScatterPlot/ScatterPlotLinear.story';
+
+<Meta title="Docs/Chart Types/Scatter Plot" />
+
+# Scatter Plot
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={ScatterPlotLinearStory.Simple} />
+</div>
+<br />
+
+A scatter plot is a type of mathematical diagram using Cartesian coordinates to
+display values for two variables for a set of data. The data is displayed as a collection
+of points, each having the value of one variable determining the position on the horizontal
+axis and the value of the other variable determining the position on the vertical axis.
+
+Types supported by reaviz:
+
+- Scatter
+- Bubble
+
+## Quick Start
+To create a Bar chart, use import the `ScatterPlot` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { ScatterPlot } from 'reaviz';
+
+const MyChart = () => (
+  <ScatterPlot
+    height={300}
+    width={300}
+    data={[
+      { key: new Date('11/29/2019'), data: 13 },
+      { key: new Date('11/30/2019'), data: 13 },
+      { key: new Date('12/1/2019'), data: 13 },
+    ]}
+  />
+);
+```
+
+## API
+### [ScatterPlot](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterPlot.tsx)
+<ArgTypes of={ScatterPlot} />
+
+### [ScatterSeries](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterSeries/ScatterSeries.tsx)
+<ArgTypes of={ScatterSeries} />
+
+### [ScatterPoint](https://github.com/reaviz/reaviz/blob/master/src/ScatterPlot/ScatterSeries/ScatterPoint.tsx)
+<ArgTypes of={ScatterPoint} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { ScatterPlot } from 'reaviz';
+
+export const data = [
+  {
+    key: new Date('11/29/2019'),
+    data: 10
+  },
+  {
+    key: new Date('11/30/2019'),
+    data: 14
+  },
+  {
+    key: new Date('12/01/2019'),
+    data: 5
+  },
+  {
+    key: new Date('12/02/2019'),
+    data: 18
+  }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <ScatterPlot width={350} height={250} data={data} />
+  </div>
+);
+```

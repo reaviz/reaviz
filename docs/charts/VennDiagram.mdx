@@ -1,0 +1,79 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { VennDiagram, VennSeries, VennArc, VennLabel, VennOuterLabel } from '../../src';
+import * as VennDiagramStory from '../../src/VennDiagram/VennDiagram.story';
+
+<Meta title="Docs/Chart Types/Venn Diagram" />
+
+# Venn Diagram
+
+---
+<div className="doc-story">
+  <Canvas sourceState="shown" of={VennDiagramStory.Simple} />
+</div>
+
+A Venn diagram or set diagram is a diagram that shows all possible logical relations
+between a finite collection of sets.
+
+The chart supports 3 layout types:
+- Venn
+- Euler
+- Star Euler
+
+## Quick Start
+To create a venn diagram, import the `VennDiagram` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { VennDiagram } from 'reaviz';
+
+const MyChart = () => (
+  <VennDiagram
+    height={300}
+    width={300}
+    data={[
+      { key: ['A'], data: 12 },
+      { key: ['B'], data: 12 },
+      { key: ['A', 'B'], data: 2 }
+    ]}
+  />
+);
+```
+
+One important aspect to realize here is the `key` property
+is a array of intersections. It can have one to N number
+of relationships.
+
+## API
+### [VennDiagram](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennDiagram.tsx)
+<ArgTypes of={VennDiagram} />
+
+### [VennSeries](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennSeries.tsx)
+<ArgTypes of={VennSeries} />
+
+### [VennArc](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennArc.tsx)
+<ArgTypes of={VennArc} />
+
+### [VennLabel](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennLabel.tsx)
+<ArgTypes of={VennLabel} />
+
+### [VennOuterLabel](https://github.com/reaviz/reaviz/blob/master/src/VennDiagram/VennOuterLabel.tsx)
+<ArgTypes of={VennOuterLabel} />
+
+## Demo
+
+```jsx codesandbox=reaviz
+import React from 'react';
+import { VennDiagram } from 'reaviz';
+
+export const data = [
+  { key: ['A'], data: 12 },
+  { key: ['B'], data: 12 },
+  { key: ['A', 'B'], data: 2 }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <VennDiagram width={450} height={450} data={data} />
+  </div>
+);
+```

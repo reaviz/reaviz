@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react';
+import React, { Component, PropsWithChildren, createRef } from 'react';
 import bind from 'memoize-bind';
 import {
   Pan,
@@ -24,7 +24,7 @@ export interface ZoomPanEvent {
   nativeEvent: any;
 }
 
-export interface ZoomPanProps {
+export interface ZoomPanProps extends PropsWithChildren {
   height: number;
   width: number;
   scale: number;

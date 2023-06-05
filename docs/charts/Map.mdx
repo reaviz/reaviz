@@ -1,0 +1,85 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { Map, MapMarker } from '../../src';
+import * as MapStory from '../../src/Map/Map.story';
+
+<Meta title="Docs/Chart Types/Map" />
+
+# Map
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={MapStory.Simple} />
+</div>
+
+A Choropleth Map is a thematic map in which areas are shaded or patterned in proportion to
+the measurement of the statistical variable being displayed on the map, such as population
+density or per-capita income. The choropleth map provides an easy way to visualize how a measurement
+varies across a geographic area or it shows the level of variability within a region.
+
+## Quick Start
+To get started with the map chart, you need to add some extra depedencies to your application:
+
+- `topojson-client`
+- `world-atlas`
+
+Making these extra make it the bundle smaller and gives you more control of what data
+you import into your chart.
+
+```jsx
+import { Map, MapMarker } from 'reaviz';
+import { feature } from 'topojson-client';
+import geojson from 'world-atlas/countries-110m.json';
+
+const worldData = feature(geojson, geojson.objects.countries);
+
+const MyChart = () => (
+  <Map
+    data={worldData}
+    height={350}
+    width={500}
+    markers={[
+      <MapMarker coordinates={[-122.490402, 37.786453]} />,
+      <MapMarker coordinates={[-58.3816, -34.6037]} />,
+      <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />
+    ]}
+  />
+);
+```
+
+In the above example, we can pass an array of `MapMarkers` which
+contain longitude and latitude coordinates for the location. Optionally,
+a tooltip can be defined on hover.
+
+## API
+### [Map](https://github.com/reaviz/reaviz/blob/master/src/Map/Map.tsx)
+<ArgTypes of={Map} />
+
+### [MapMarker](https://github.com/reaviz/reaviz/blob/master/src/Map/MapMarker.tsx)
+<ArgTypes of={MapMarker} />
+
+## Demo
+
+```jsx codesandbox=reaviz-map
+import React from 'react';
+import { Map, MapMarker } from 'reaviz';
+import { feature } from 'topojson-client';
+import geojson from 'world-atlas/countries-110m.json';
+
+const worldData = feature(geojson, geojson.objects.countries);
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <Map
+      data={worldData}
+      height={350}
+      width={500}
+      markers={[
+        <MapMarker coordinates={[-122.490402, 37.786453]} />,
+        <MapMarker coordinates={[-58.3816, -34.6037]} />,
+        <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />
+      ]}
+    />
+  </div>
+);
+```

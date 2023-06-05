@@ -1,0 +1,48 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { RadialBarChart, RadialBarSeries, RadialBar } from '../../src';
+import * as RadialBarChartStory from '../../src/RadialBarChart/RadialBarChart.story';
+
+<Meta title="Docs/Chart Types/Radial Bar Chart" />
+
+# Radial Bar Chart
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={RadialBarChartStory.Simple} />
+</div>
+<br />
+
+A Radial or Circular Bar Chart is used for displaying the circular data, which involves the
+wrapping of the usual bar chart or histogram around a circle. Each bar in the chart is centered at
+the middle of the group period with the length of the bar proportional to the frequency in the group.
+
+## Quick Start
+To create a Radial Bar chart, use import the `RadialBarChart` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { RadialBarChart } from 'reaviz';
+
+const MyChart = () => (
+  <RadialBarChart
+    height={300}
+    width={300}
+    data={[
+      { key: new Date('11/29/2019'), data: 3 },
+      { key: new Date('11/30/2019'), data: 11 },
+      { key: new Date('12/1/2019'), data: 6 }
+    ]}
+  />
+);
+```
+
+## API
+### [RadialBarChart](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaChart.tsx)
+<ArgTypes of={RadialBarChart} />
+
+### [RadialBarSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialBarSeries/RadialBarSeries.tsx)
+<ArgTypes of={RadialBarSeries} />
+
+### [RadialBar](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialBarSeries/RadialBar.tsx)
+<ArgTypes of={RadialBar} />

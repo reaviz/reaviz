@@ -1,6 +1,5 @@
 import React from 'react';
 import { VennDiagram } from './VennDiagram';
-import { number, object, color, select, boolean } from '@storybook/addon-knobs';
 import { schemes } from '../common/color';
 import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
@@ -24,111 +23,78 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const height = number('Height', 450);
-  const width = number('Width', 450);
-  const showAll = boolean('Show All Labels', false);
-  const showValues = boolean('Show Values', false);
-  const scheme = select('Color Scheme', schemes, 'cybertron');
-  const strokeWidth = number('Stroke Width', 3);
-  const stroke = color('Stroke', schemes.cybertron[0]);
-  const gradient = boolean('Gradient', false);
+export const Simple = () => (
+  <VennDiagram
+    height={450}
+    width={450}
+    data={[
+      { key: ['A'], data: 12 },
+      { key: ['B'], data: 12 },
+      { key: ['A', 'B'], data: 2 }
+    ]}
+    series={
+      <VennSeries
+        colorScheme="cybertron"
+        arc={
+          <VennArc
+            strokeWidth={3}
+            gradient={<Gradient />}
+          />
+        }
+        label={
+          <VennLabel
+            labelType="key"
+            showAll={false}
+          />
+        }
+      />
+    }
+  />
+);
 
-  const data = object('Data', [
-    { key: ['A'], data: 12 },
-    { key: ['B'], data: 12 },
-    { key: ['A', 'B'], data: 2 }
-  ]);
+export const Euler = () => (
+  <VennDiagram
+    type="euler"
+    height={450}
+    width={450}
+    data={[
+      { key: ['A'], data: 4 },
+      { key: ['B'], data: 1 },
+      { key: ['A', 'B'], data: 1 }
+    ]}
+  />
+);
 
-  return (
-    <VennDiagram
-      height={height}
-      width={width}
-      data={data}
-      series={
-        <VennSeries
-          colorScheme={scheme}
-          arc={
-            <VennArc
-              strokeWidth={strokeWidth}
-              stroke={stroke}
-              gradient={gradient ? <Gradient /> : null}
-            />
-          }
-          label={
-            <VennLabel
-              labelType={showValues ? 'value' : 'key'}
-              showAll={showAll}
-            />
-          }
-        />
-      }
-    />
-  );
-};
-
-export const Euler = () => {
-  const type = boolean('Euler', true);
-  const data = object('Data', [
-    { key: ['A'], data: 4 },
-    { key: ['B'], data: 1 },
-    { key: ['A', 'B'], data: 1 }
-  ]);
-
-  return (
-    <VennDiagram
-      type={type ? 'euler' : 'venn'}
-      height={450}
-      width={450}
-      data={data}
-    />
-  );
-};
-
-export const StarEuler = () => {
-  const showValues = boolean('Show Value Labels', true);
-  const size = boolean('Show 5', true);
-  const showOuterLabel = boolean('Show Outer Label', true);
-  const strokeWidth = number('Stroke Width', 1);
-  const fill = color('Fill', '#868686');
-  const labelFill = color('Label Fill', '#fff');
-  const outerLabelFill = color('Outer Label Fill', '#fff');
-  const stroke = color('Stroke', '#fff');
-  const gradient = boolean('Gradient', true);
-  const data = object('Data', eulerData);
-  const next = size ? data : data.filter((d) => !d.key.includes('sophos'));
-
-  return (
+export const StarEuler = () => (
     <VennDiagram
       type="starEuler"
       height={450}
       width={450}
-      data={next}
+      data={eulerData}
       series={
         <VennSeries
-          colorScheme={[fill]}
+          colorScheme={['#868686']}
           arc={
             <VennArc
-              strokeWidth={strokeWidth}
-              stroke={stroke}
-              gradient={gradient ? <Gradient /> : null}
+              strokeWidth={1}
+              stroke={'#fff'}
+              gradient={<Gradient />}
             />
           }
           label={
             <VennLabel
-              labelType={showValues ? 'value' : 'key'}
+              labelType={'value'}
               showAll={true}
-              fill={labelFill}
+              fill={'#fff'}
             />
           }
           outerLabel={
-            showOuterLabel ? <VennOuterLabel fill={outerLabelFill} /> : null
+            <VennOuterLabel fill={'#fff'} />
           }
         />
       }
     />
   );
-};
 
 export const LabelIcons = () => (
   <VennDiagram
@@ -180,39 +146,34 @@ export const LabelIcons = () => (
   />
 );
 
-export const Selections = () => {
-  const selections = object('Selections', ['A|B', 'B']);
-  const data = object('Data', [
-    { key: ['A'], data: 4 },
-    { key: ['B'], data: 1 },
-    { key: ['A', 'B'], data: 1 }
-  ]);
-
-  return (
-    <VennDiagram
-      height={450}
-      width={450}
-      data={data}
-      series={
-        <VennSeries
-          selections={selections}
-          arc={
-            <VennArc
-              stroke={(_data, _index, active, hovered) => {
-                if (hovered) {
-                  return 'blue';
-                } else if (active) {
-                  return 'green';
-                }
-                return 'white';
-              }}
-            />
-          }
-        />
-      }
-    />
-  );
-};
+export const Selections = () => (
+  <VennDiagram
+    height={450}
+    width={450}
+    data={[
+      { key: ['A'], data: 4 },
+      { key: ['B'], data: 1 },
+      { key: ['A', 'B'], data: 1 }
+    ]}
+    series={
+      <VennSeries
+        selections={['A|B', 'B']}
+        arc={
+          <VennArc
+            stroke={(_data, _index, active, hovered) => {
+              if (hovered) {
+                return 'blue';
+              } else if (active) {
+                return 'green';
+              }
+              return 'white';
+            }}
+          />
+        }
+      />
+    }
+  />
+);
 
 export const CustomColors = () => (
   <VennDiagram

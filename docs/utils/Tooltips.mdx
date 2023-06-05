@@ -1,0 +1,120 @@
+import { Meta, ArgTypes } from '@storybook/addon-docs/blocks';
+import { TooltipArea, ChartTooltip } from '../../src';
+
+<Meta title="Docs/Utils/Tooltips" />
+
+# Tooltips
+
+---
+
+REAVIZ has two types of tooltips:
+
+- `TooltipArea` - Tooltip positioning based on position calculations of data.
+- `Tooltip` - Tooltip positioning based on element anchors.
+
+## Tooltip Area
+The tooltip area component is useful for when:
+
+- Dealing with multi-series charts (bar/line/area)
+- Dealing with time series data (line/area)
+- Dealing with difficult to hit points (small bar chart lines)
+
+### Example
+The Sonar Chart is a good example of a custom tooltip area:
+
+```jsx
+<StackedBarSeries
+  type="stackedDiverging"
+  tooltip={
+    <TooltipArea
+      tooltip={
+        <ChartTooltip
+          followCursor={true}
+          modifiers={{
+            offset: '5px, 5px'
+          }}
+          content={(data, color) => (
+            <TooltipTemplate
+              color={color}
+              value={{
+                x: formatValue(data.x),
+                y: `${formatValue(Math.abs(data.data[0].y))}`
+              }}
+            />
+          )}
+        />
+      }
+    />
+  }
+/>
+```
+
+In the example above, the component recieves a custom `TooltipArea` where it overrides
+the `tooltip` property passing its own `content`.
+
+### API
+#### [TooltipArea](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/TooltipArea.tsx)
+<ArgTypes of={TooltipArea} />
+
+## ChartTooltip
+The tooltip component is used for simple position relative to a element. This is ideal
+for most charts.
+
+### Example
+The Calendar Heatmap is a good example of custom tooltip:
+
+```jsx
+<HeatmapCell
+  tooltip={
+    <ChartTooltip
+      content={d =>
+        `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
+          d.data.value
+        )}`
+      }
+    />
+  }
+/>
+```
+
+In this example above, the component overrides the tooltip to format the date for a Calendar format.
+
+### API
+#### [Tooltip](https://github.com/reaviz/reaviz/blob/master/src/common/Tooltip/ChartTooltip.tsx)
+<ArgTypes of={ChartTooltip} />
+
+## Custom Tooltips
+You can also override tooltips and handle them yourself manually. Below is an example
+of overriding the `onMouseEnter` and `onMouseLeave` in the `VennDiagram` component to
+handle displaying what would be in the tooltip in a custom panel below the chart.
+
+```jsx
+const Venn = () => {
+  const [active, setActive] = useState<any | null>(null);
+
+  return (
+    <>
+      <VennDiagram
+        type="starEuler"
+        data={data}
+        height={275}
+        series={
+          <VennSeries
+            arc={
+              <VennArc
+                onMouseEnter={({ value }) => {
+                  setActive(`${value.sets.join(' & ')} - ${value.size.toLocaleString()}`);
+                }}
+                onMouseLeave={() => setActive(null)}
+              />
+            }
+          />
+        }
+      />
+      {active !== null && (
+        <p>{active}</p>
+      )}
+    </>
+  );
+};
+```

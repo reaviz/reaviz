@@ -1,0 +1,33 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { Meter, MeterColumn } from '../../src';
+import * as MeterStory from '../../src/Meter/Meter.story';
+
+<Meta title="Docs/Chart Types/Meter" />
+
+# Meter
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={MeterStory.Basic} />
+</div>
+
+Component for values from 0 to 100 broken into sections.
+
+## Quick Start
+To create a meter, use import the `Meter` and give it `value` point.
+
+```jsx
+import { PieChart } from 'reaviz';
+
+const MyChart = () => (
+  <Meter value={50} />
+);
+```
+
+## API
+### [Meter](https://github.com/reaviz/reaviz/blob/master/src/Meter/Meter.tsx)
+<ArgTypes of={Meter} />
+
+### [MeterColumn](https://github.com/reaviz/reaviz/blob/master/src/Meter/MeterColumn.tsx)
+<ArgTypes of={MeterColumn} />

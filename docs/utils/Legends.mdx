@@ -1,0 +1,46 @@
+import { Meta, ArgTypes, Canvas } from '@storybook/addon-docs/blocks';
+import { DiscreteLegend, DiscreteLegendEntry, DiscreteLegendSymbol, SequentialLegend } from '../../src';
+import * as DiscreteLegendVerticalStories from '../../src/common/legends/DiscreteLegend/DiscreteLegendVertical.story'
+import * as DiscreteLegendHorizontalStories from '../../src/common/legends/DiscreteLegend/DiscreteLegendHorizontal.story'
+
+<Meta title="Docs/Utils/Legends" />
+
+# Legends
+
+---
+
+REAVIZ supports two different types of legends:
+
+- Discrete
+- Sequential
+
+Out of the box, none of the charts include legends because we want to
+keep the library as modular as possible.
+
+## Discrete Legend
+The discrete legend is useful for categorical charts such as bar charts.
+This legend supports supports both vertical and horizontal layout. Below is a simple example of a
+discrete legend that has four different labels.
+
+<Canvas sourceState="shown" of={DiscreteLegendVerticalStories.Simple} />
+
+### API
+#### [DiscreteLegend](https://github.com/reaviz/reaviz/blob/master/src/common/legends/DiscreteLegend/DiscreteLegend.tsx)
+<ArgTypes of={DiscreteLegend} />
+
+#### [DiscreteLegendEntry](https://github.com/reaviz/reaviz/blob/master/src/common/legends/DiscreteLegend/DiscreteLegendEntry.tsx)
+<ArgTypes of={DiscreteLegendEntry} />
+
+#### [DiscreteLegendSymbol](https://github.com/reaviz/reaviz/blob/master/src/common/legends/DiscreteLegend/DiscreteLegendSymbol.tsx)
+<ArgTypes of={DiscreteLegendSymbol} />
+
+## Sequential Legend
+The sequential legend is useful for categorical charts such as heatmaps.
+This legend supports supports both vertical and horizontal layout. Below is a simple
+example of a sequential legend:
+
+<Canvas sourceState="shown" of={DiscreteLegendHorizontalStories._Simple} />
+
+### API
+#### [SequentialLegend](https://github.com/reaviz/reaviz/blob/master/src/common/legends/SequentialLegend/SequentialLegend.tsx)
+<ArgTypes of={SequentialLegend} />

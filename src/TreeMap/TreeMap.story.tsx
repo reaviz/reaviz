@@ -6,7 +6,6 @@ import { TreeMapRect } from './TreeMapRect';
 import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
 import { schemes } from '../common/color';
-import { number, object, select } from '@storybook/addon-knobs';
 import { TreeMapLabel } from './TreeMapLabel';
 
 export default {
@@ -26,21 +25,14 @@ const simpleData: ChartShallowDataShape[] = [
   { key: 'Twillo', data: 25 }
 ];
 
-export const Simple = () => {
-  const scheme = select('Color Scheme', schemes, 'cybertron');
-  const height = number('Height', 450);
-  const width = number('Width', 450);
-  const data = object('Data', simpleData);
-
-  return (
-    <TreeMap
-      height={height}
-      width={width}
-      data={data}
-      series={<TreeMapSeries colorScheme={scheme} />}
-    />
-  );
-};
+export const Simple = () => (
+  <TreeMap
+    height={450}
+    width={450}
+    data={simpleData}
+    series={<TreeMapSeries colorScheme="cybertron" />}
+  />
+);
 
 export const LabelPosition = () => (
   <TreeMap
@@ -358,18 +350,11 @@ const nestedData: ChartNestedDataShape[] = [
   }
 ];
 
-export const Nested = () => {
-  const scheme = select('Color Scheme', schemes, 'cybertron');
-  const height = number('Height', 450);
-  const width = number('Width', 450);
-  const data = object('Data', nestedData);
-
-  return (
-    <TreeMap
-      height={height}
-      width={width}
-      data={data}
-      series={<TreeMapSeries colorScheme={scheme} />}
-    />
-  );
-};
+export const Nested = () => (
+  <TreeMap
+    height={450}
+    width={450}
+    data={nestedData}
+    series={<TreeMapSeries colorScheme="cybertron" />}
+  />
+);

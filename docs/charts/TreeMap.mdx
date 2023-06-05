@@ -1,0 +1,74 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { TreeMap, TreeMapSeries, TreeMapLabel, TreeMapRect } from '../../src';
+import * as TreeMapStory from '../../src/TreeMap/TreeMap.story';
+
+<Meta title="Docs/Chart Types/TreeMap" />
+
+# TreeMap
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={TreeMapStory.Simple} />
+</div>
+<br />
+
+Treemaps display hierarchical data as a set of nested rectangles.
+Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles
+representing sub-branches. A leaf node’s rectangle has an area proportional to a specified
+dimension on the data and often colored to show a separate dimension of the data.
+
+
+## Quick Start
+To create a treemap chart, use import the `TreeMap` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { TreeMap } from 'reaviz';
+
+const MyChart = () => (
+  <TreeMap
+    height={400}
+    width={400}
+    data={[
+      { key: 'AWS', data: 100 },
+      { key: 'SendGrid', data: 45 },
+      { key: 'Okta', data: 75 },
+      { key: 'Twillo', data: 25 }
+    ]}
+  />
+);
+```
+
+## API
+### [TreeMap](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMap.tsx)
+<ArgTypes of={TreeMap} />
+
+### [TreeMapSeries](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMapSeries.tsx)
+<ArgTypes of={TreeMapSeries} />
+
+### [TreeMapLabel](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMapLabel.tsx)
+<ArgTypes of={TreeMapLabel} />
+
+### [TreeMapRect](https://github.com/reaviz/reaviz/blob/master/src/TreeMap/TreeMapRect.tsx)
+<ArgTypes of={TreeMapRect} />
+
+## Demo
+
+```js codesandbox=reaviz
+import React from 'react';
+import { TreeMap } from 'reaviz';
+
+const data = [
+  { key: 'AWS', data: 100 },
+  { key: 'SendGrid', data: 45 },
+  { key: 'Okta', data: 75 },
+  { key: 'Twillo', data: 25 }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <TreeMap width={400} height={400} data={data} />
+  </div>
+);
+```

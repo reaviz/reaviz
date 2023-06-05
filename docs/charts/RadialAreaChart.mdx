@@ -1,0 +1,55 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { RadialAreaChart, RadialAreaSeries, RadialArea, RadialPointSeries, RadialLine } from '../../src';
+import * as RadialAreaChartStory from '../../src/RadialAreaChart/RadialAreaChart.story';
+
+<Meta title="Docs/Chart Types/Radial Area Chart" />
+
+# Radial Area Chart
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={RadialAreaChartStory.Simple} />
+</div>
+<br />
+
+Radial Area Chart is a variation of Area Chart. An area chart displays graphically quantitive data.
+It is based on the line chart. The area between axis and line are commonly emphasized with colors, textures and hatchings.
+Whereas area charts are used to represent cumulated totals using numbers or percentages over time, Radial Area Chart can
+be also used to display categories instead.
+
+## Quick Start
+To create a Radial Area chart, use import the `RadialAreaChart` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { RadialAreaChart } from 'reaviz';
+
+const MyChart = () => (
+  <RadialAreaChart
+    height={300}
+    width={300}
+    data={[
+      { key: new Date('11/29/2019'), data: 3 },
+      { key: new Date('11/30/2019'), data: 11 },
+      { key: new Date('12/1/2019'), data: 6 }
+    ]}
+  />
+);
+```
+
+## API
+### [RadialAreaChart](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaChart.tsx)
+<ArgTypes of={RadialAreaChart} />
+
+### [RadialAreaSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialAreaSeries.tsx)
+<ArgTypes of={RadialAreaSeries} />
+
+### [RadialArea](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialArea.tsx)
+<ArgTypes of={RadialArea} />
+
+### [RadialLine](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialLine.tsx)
+<ArgTypes of={RadialLine} />
+
+### [RadialPointSeries](https://github.com/reaviz/reaviz/blob/master/src/RadialAreaChart/RadialAreaSeries/RadialPointSeries.tsx)
+<ArgTypes of={RadialPointSeries} />

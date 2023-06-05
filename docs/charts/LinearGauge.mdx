@@ -1,0 +1,53 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { LinearGauge, LinearGaugeBar, LinearGaugeSeries, LinearGaugeOuterBar } from '../../src';
+import * as LinearGaugeSingleSeriesStory from '../../src/LinearGauge/LinearGaugeSingleSeries.story';
+
+<Meta title="Docs/Chart Types/Linear Gauge" />
+
+# Linear Gauge
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={LinearGaugeSingleSeriesStory.Simple} />
+</div>
+<br />
+
+Linear Gauge uses a linear scale to display a specific data point using a dial over a linear scale with defined limits.
+
+REAVIZ supports:
+
+- Single-series gauges
+- Multi-series gauges
+
+## Quick Start
+To create a Linear Gauge, use import the `LinearGauge` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { LinearGauge } from 'reaviz';
+
+const MyChart = () => (
+  <LinearGauge
+    height={300}
+    width={300}
+    data={{ key: 'Risk Score', data: 24 }}
+  />
+);
+```
+
+In this example, we only pass one data object, however, we can pass multiples and it will
+distribute the values across them.
+
+## API
+### [LinearGauge](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGauge.tsx)
+<ArgTypes of={LinearGauge} />
+
+### [LinearGaugeSeries](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGaugeSeries.tsx)
+<ArgTypes of={LinearGaugeSeries} />
+
+### [LinearGaugeBar](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGaugeBar.tsx)
+<ArgTypes of={LinearGaugeBar} />
+
+### [LinearGaugeOuterBar](https://github.com/reaviz/reaviz/blob/master/src/LinearGauge/LinearGaugeOuterBar.tsx)
+<ArgTypes of={LinearGaugeOuterBar} />

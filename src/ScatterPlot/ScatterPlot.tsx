@@ -10,7 +10,6 @@ import React, {
 import classNames from 'classnames';
 import {
   ChartShallowDataShape,
-  ChartInternalShallowDataShape,
   buildShallowChartData,
   ChartDataTypes
 } from '../common/data';
@@ -38,7 +37,7 @@ import {
 import { CloneElement } from 'rdk';
 import css from './ScatterPlot.module.css';
 
-interface ScatterPlotProps extends ChartProps {
+export interface ScatterPlotProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
