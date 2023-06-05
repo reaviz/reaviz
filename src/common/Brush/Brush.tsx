@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent, Fragment, PropsWithChildren } from 'react';
 import bind from 'memoize-bind';
 import { getPositionForTarget } from '../utils/position';
 import { BrushSlice, BrushChangeEvent } from './BrushSlice';
@@ -12,7 +12,7 @@ export interface BrushConfiguration {
   onBrushChange?: (e) => void;
 }
 
-export interface BrushProps {
+export interface BrushProps extends PropsWithChildren {
   height: number;
   width: number;
   disabled?: boolean;

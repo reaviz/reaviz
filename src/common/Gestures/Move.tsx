@@ -1,7 +1,7 @@
-import React, { Component, Children, cloneElement } from 'react';
+import React, { Component, Children, cloneElement, PropsWithChildren } from 'react';
 import { toggleTextSelection } from '../utils/selection';
 
-interface MoveProps {
+interface MoveProps extends PropsWithChildren {
   cursor?: string;
   disabled?: boolean;
   preventRightClick: boolean;

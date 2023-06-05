@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropsWithChildren } from 'react';
 import bind from 'memoize-bind';
 import { ZoomPan, ZoomPanEvent } from './ZoomPan';
 import { ChartInternalDataShape, ChartDataTypes } from '../data';
@@ -9,7 +9,7 @@ export interface ZoomPanChangeEvent {
   isZoomed: boolean;
 }
 
-export interface ChartZoomPanProps {
+export interface ChartZoomPanProps extends PropsWithChildren {
   data: ChartInternalDataShape[];
   domain?: [ChartDataTypes, ChartDataTypes];
   axisType: 'value' | 'time' | 'category' | 'duration';
