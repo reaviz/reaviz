@@ -1,5 +1,4 @@
 import React from 'react';
-import { number, object } from '@storybook/addon-knobs';
 import {
   medDateData,
   histogramNumberData
@@ -38,37 +37,27 @@ export default {
   }
 };
 
-export const Dates = () => {
-    const binSize = number('Bin Size', 60 * 60 * 24 * 1000);
-    const data = object('Data', medDateData);
+export const Dates = () => (
+    <HistogramBarChart
+      width={350}
+      height={250}
+      xAxis={
+        <LinearXAxis
+          type="time"
+          tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
+        />
+      }
+      series={<HistogramBarSeries binSize={60 * 60 * 24 * 1000} />}
+      data={medDateData}
+    />
+  );
 
-    return (
-      <HistogramBarChart
-        width={350}
-        height={250}
-        xAxis={
-          <LinearXAxis
-            type="time"
-            tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
-          />
-        }
-        series={<HistogramBarSeries binSize={binSize} />}
-        data={data}
-      />
-    );
-  };
-
-export const Numbers = () => {
-    const binSize = number('Bin Size', 1);
-    const data = object('Data', histogramNumberData);
-
-    return (
-      <HistogramBarChart
-        width={350}
-        height={250}
-        xAxis={<LinearXAxis type="value" />}
-        series={<HistogramBarSeries binSize={binSize} />}
-        data={data}
-      />
-    );
-  };
+export const Numbers = () => (
+    <HistogramBarChart
+      width={350}
+      height={250}
+      xAxis={<LinearXAxis type="value" />}
+      series={<HistogramBarSeries binSize={1} />}
+      data={histogramNumberData}
+    />
+  );
