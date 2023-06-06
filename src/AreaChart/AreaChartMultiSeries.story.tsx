@@ -1,11 +1,6 @@
 import { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
-import { object, number, select } from '@storybook/addon-knobs';
-import { 
-  multiDateData, 
-  randomNumber, 
-  longMultiDateData 
-} from '../../demo';
+import { multiDateData, randomNumber, longMultiDateData } from '../../demo';
 import { AreaChart } from './AreaChart';
 import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
 import { StackedAreaChart } from './StackedAreaChart';
@@ -17,7 +12,6 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
-import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Area Chart/Multi Series',
@@ -85,7 +79,7 @@ export const StackedNormalized = () => (
 );
 
 const LiveUpdatingStory = () => {
-  const [data, setData] = useState(multiDateData.map((d) => ({ ...d })));
+  const [data, setData] = useState(multiDateData.map(d => ({ ...d })));
 
   const updateData = () => {
     const newData = [...data];
