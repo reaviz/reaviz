@@ -1,6 +1,4 @@
-import React from 'react';
 import { timeDay } from 'd3-time';
-import { object, number, select } from '@storybook/addon-knobs';
 import {
   singleDateData,
   singleDateBigIntData,
@@ -20,7 +18,6 @@ import { LinearXAxis, LinearXAxisTickSeries } from '../common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
 import { ChartDataShape } from '../common/data';
-import { schemes } from '../common/color';
 
 export default {
   title: 'Charts/Area Chart/Single Series',
@@ -35,37 +32,20 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const height = number('Height', 250);
-  const width = number('Width', 350);
-  const lineStroke = number('Stroke Width', 4);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const interpolation = select(
-    'Interpolation',
-    {
-      linear: 'linear',
-      step: 'step',
-      smooth: 'smooth'
-    },
-    'linear'
-  );
-  const data = object('Data', singleDateData);
-
-  return (
-    <AreaChart
-      width={width}
-      height={height}
-      data={data}
-      series={
-        <AreaSeries
-          interpolation={interpolation}
-          colorScheme={color}
-          line={<Line strokeWidth={lineStroke} />}
-        />
-      }
-    />
-  );
-};
+export const Simple = () => (
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <AreaSeries
+        interpolation="linear"
+        colorScheme="cybertron"
+        line={<Line strokeWidth={4} />}
+      />
+    }
+  />
+);
 
 export const Masks = () => (
   <AreaChart

@@ -1,10 +1,10 @@
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
 import { object, number, select } from '@storybook/addon-knobs';
-import {
-  multiDateData,
-  randomNumber,
-  longMultiDateData
+import { 
+  multiDateData, 
+  randomNumber, 
+  longMultiDateData 
 } from '../../demo';
 import { AreaChart } from './AreaChart';
 import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
@@ -32,85 +32,57 @@ export default {
   }
 };
 
-export const Simple = () => {
-    const height = number('Height', 350);
-    const width = number('Width', 550);
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', multiDateData);
+export const Simple = () => (
+  <AreaChart
+    width={550}
+    height={350}
+    data={multiDateData}
+    series={<AreaSeries type="grouped" colorScheme="cybertron" />}
+  />
+);
 
-    return (
-      <AreaChart
-        width={width}
-        height={height}
-        data={data}
-        series={<AreaSeries type="grouped" colorScheme={color} />}
-      />
-    );
-  };
-
-export const LargeDataset = () => {
-    const height = number('Height', 350);
-    const width = number('Width', 550);
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', longMultiDateData);
-
-    return (
-      <AreaChart
-        width={width}
-        height={height}
-        series={<AreaSeries type="grouped" colorScheme={color} />}
-        data={data}
-      />
-    );
-  };
+export const LargeDataset = () => (
+  <AreaChart
+    width={550}
+    height={350}
+    series={<AreaSeries type="grouped" colorScheme="cybertron" />}
+    data={longMultiDateData}
+  />
+);
 
 export const LiveUpdating = () => <LiveUpdatingStory />;
 
 export const CustomColors = () => (
-    <AreaChart
-      width={550}
-      height={350}
-      series={
-        <AreaSeries
-          type="grouped"
-          colorScheme={(_data, index) => (index % 2 ? 'blue' : 'green')}
-        />
-      }
-      data={multiDateData}
-    />
-  );
-
-export const Stacked = () => {
-    const height = number('Height', 350);
-    const width = number('Width', 550);
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', multiDateData);
-
-    return (
-      <StackedAreaChart
-        width={width}
-        height={height}
-        series={<StackedAreaSeries colorScheme={color} />}
-        data={data}
+  <AreaChart
+    width={550}
+    height={350}
+    series={
+      <AreaSeries
+        type="grouped"
+        colorScheme={(_data, index) => (index % 2 ? 'blue' : 'green')}
       />
-    );
-  };
+    }
+    data={multiDateData}
+  />
+);
 
-export const StackedNormalized = () => {
-    const height = number('Height', 350);
-    const width = number('Width', 550);
-    const color = select('Color Scheme', schemes, 'cybertron');
-    const data = object('Data', multiDateData);
+export const Stacked = () => (
+  <StackedAreaChart
+    width={550}
+    height={350}
+    series={<StackedAreaSeries colorScheme="cybertron" />}
+    data={multiDateData}
+  />
+);
 
-    return (
-      <StackedNormalizedAreaChart
-        width={width}
-        height={height}
-        data={data}
-        series={<StackedNormalizedAreaSeries colorScheme={color} />}
-      />
-    );
-  };
+export const StackedNormalized = () => (
+  <StackedNormalizedAreaChart
+    width={550}
+    height={350}
+    data={multiDateData}
+    series={<StackedNormalizedAreaSeries colorScheme="cybertron" />}
+  />
+);
 
 const LiveUpdatingStory = () => {
   const [data, setData] = useState(multiDateData.map((d) => ({ ...d })));

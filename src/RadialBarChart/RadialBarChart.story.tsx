@@ -1,7 +1,5 @@
-import React from 'react';
 import { RadialBarChart } from './RadialBarChart';
 import { largeCategoryData, medDateData } from '../../demo';
-import { number, boolean, object, select } from '@storybook/addon-knobs';
 import { RadialBarSeries, RadialBar, RadialGuideBar } from './RadialBarSeries';
 import {
   RadialAxis,
@@ -22,57 +20,67 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const innerRadius = number('Inner Radius', 50);
-  const curved = boolean('Curved', false);
-  const hasGradient = boolean('Gradient', true);
-  const animated = boolean('Animated', true);
-  const hasGuide = boolean('Show Guide', true);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const arcCount = number('Arc Count', 10);
-  const tickPosition = select(
-    'Tick Position',
-    {
-      inside: 'inside',
-      outside: 'outside'
-    },
-    'inside'
-  );
-  const data = object('Data', medDateData);
-  const gradient = hasGradient ? RadialBar.defaultProps.gradient : false;
-  const colorScheme = schemes[color][0];
-  const guide = hasGuide ? <RadialGuideBar /> : null;
+export const Simple = () => (
+  <RadialBarChart
+    height={450}
+    width={450}
+    innerRadius={50}
+    data={medDateData}
+    series={
+      <RadialBarSeries
+        animated
+        colorScheme={schemes['cybertron'][0]}
+        bar={<RadialBar curved={false} gradient={false} guide={null} />}
+      />
+    }
+    axis={
+      <RadialAxis
+        ticks={
+          <RadialAxisTickSeries
+            tick={
+              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+            }
+          />
+        }
+        arcs={<RadialAxisArcSeries count={10} />}
+      />
+    }
+  />
+);
 
-  return (
-    <RadialBarChart
-      height={450}
-      width={450}
-      innerRadius={innerRadius}
-      data={data}
-      series={
-        <RadialBarSeries
-          animated={animated}
-          colorScheme={colorScheme}
-          bar={<RadialBar curved={curved} gradient={gradient} guide={guide} />}
-        />
-      }
-      axis={
-        <RadialAxis
-          ticks={
-            <RadialAxisTickSeries
-              tick={
-                <RadialAxisTick
-                  line={<RadialAxisTickLine position={tickPosition} />}
-                />
-              }
-            />
-          }
-          arcs={<RadialAxisArcSeries count={arcCount} />}
-        />
-      }
-    />
-  );
-};
+export const Gradient = () => (
+  <RadialBarChart
+    height={450}
+    width={450}
+    innerRadius={50}
+    data={medDateData}
+    series={
+      <RadialBarSeries
+        animated
+        colorScheme={schemes['cybertron'][0]}
+        bar={
+          <RadialBar
+            curved={false}
+            gradient={RadialBar.defaultProps.gradient}
+            guide={<RadialGuideBar />}
+          />
+        }
+      />
+    }
+    axis={
+      <RadialAxis
+        ticks={
+          <RadialAxisTickSeries
+            tick={
+              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+            }
+          />
+        }
+        arcs={<RadialAxisArcSeries count={10} />}
+      />
+    }
+  />
+);
 
 export const Resizable = () => (
   <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>

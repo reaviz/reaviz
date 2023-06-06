@@ -1,13 +1,10 @@
-import React from 'react';
 import { BubbleChart } from './BubbleChart';
 import { ChartShallowDataShape } from '../common/data';
-import { boolean, number, object, select } from '@storybook/addon-knobs';
-import { schemes } from '../common/color';
 import { BubbleSeries } from './BubbleSeries';
 import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
 import { Bubble } from './Bubble';
-import { Gradient } from '../common/Gradient';
+import { Gradient as GradientBG } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
 import { BubbleLabel } from './BubbleLabel';
 
@@ -33,33 +30,42 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const height = number('Height', 450);
-  const width = number('Width', 450);
-  const data = object('Data', simpleData);
-  const scheme = select('Color Scheme', schemes, 'cybertron');
-  const gradient = boolean('Gradient', false);
-  const mask = boolean('Mask', false);
+export const Simple = () => (
+  <BubbleChart
+    data={simpleData}
+    height={450}
+    width={450}
+    series={<BubbleSeries colorScheme="cybertron" />}
+  />
+);
 
-  return (
-    <BubbleChart
-      data={data}
-      height={height}
-      width={width}
-      series={
-        <BubbleSeries
-          colorScheme={scheme}
-          bubble={
-            <Bubble
-              mask={mask ? <Stripes /> : null}
-              gradient={gradient ? <Gradient /> : null}
-            />
-          }
-        />
-      }
-    />
-  );
-};
+export const Mask = () => (
+  <BubbleChart
+    data={simpleData}
+    height={450}
+    width={450}
+    series={
+      <BubbleSeries
+        colorScheme="cybertron"
+        bubble={<Bubble mask={<Stripes />} />}
+      />
+    }
+  />
+);
+
+export const Gradient = () => (
+  <BubbleChart
+    data={simpleData}
+    height={450}
+    width={450}
+    series={
+      <BubbleSeries
+        colorScheme="cybertron"
+        bubble={<Bubble gradient={<GradientBG />} />}
+      />
+    }
+  />
+);
 
 export const Icons = () => (
   <BubbleChart

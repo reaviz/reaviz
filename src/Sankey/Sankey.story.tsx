@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import chroma from 'chroma-js';
 import { Sankey } from './Sankey';
 import { SankeyNode } from './SankeyNode';
@@ -9,8 +9,6 @@ import {
   simpleSankeyNodes,
   simpleSankeyLinks
 } from '../../demo';
-import { select, object, number } from '@storybook/addon-knobs';
-import { schemes } from '../common/color';
 import { SankeyLabel } from './SankeyLabel';
 
 const colorScheme = chroma
@@ -42,33 +40,25 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const height = number('Height', 300);
-  const width = number('Width', 550);
-  const color = select('Color Scheme', schemes, 'Spectral');
-  const nodes = object('Nodes', simpleSankeyNodes);
-  const links = object('Links', simpleSankeyLinks);
-
-  return (
-    <Sankey
-      colorScheme={color}
-      height={height}
-      width={width}
-      nodeWidth={5}
-      nodes={nodes.map((node, i) => (
-        <SankeyNode
-          key={`node-${i}`}
-          {...node}
-          label={<SankeyLabel position="outside" />}
-          onClick={() => onNodeClick(node.title)}
-        />
-      ))}
-      links={links.map((link, i) => (
-        <SankeyLink key={`link-${i}`} {...link} />
-      ))}
-    />
-  );
-};
+export const Simple = () => (
+  <Sankey
+    colorScheme="Spectral"
+    height={300}
+    width={550}
+    nodeWidth={5}
+    nodes={simpleSankeyNodes.map((node, i) => (
+      <SankeyNode
+        key={`node-${i}`}
+        {...node}
+        label={<SankeyLabel position="outside" />}
+        onClick={() => onNodeClick(node.title)}
+      />
+    ))}
+    links={simpleSankeyLinks.map((link, i) => (
+      <SankeyLink key={`link-${i}`} {...link} />
+    ))}
+  />
+);
 
 export const Filtering = () => <DemoStory />;
 
@@ -100,33 +90,20 @@ export const Autosize = () => (
   </div>
 );
 
-export const Justification = () => {
-  const justification = select(
-    'Alignments',
-    {
-      Left: 'left',
-      Center: 'center',
-      Right: 'right',
-      Justified: 'justify'
-    },
-    'left'
-  );
-
-  return (
-    <Sankey
-      colorScheme={colorScheme}
-      height={600}
-      width={964}
-      justification={justification}
-      nodes={sankeyNodes.map((node, i) => (
-        <SankeyNode key={`node-${i}`} {...node} />
-      ))}
-      links={sankeyLinks.map((link, i) => (
-        <SankeyLink key={`link-${i}`} {...link} />
-      ))}
-    />
-  );
-};
+export const Justification = () => (
+  <Sankey
+    colorScheme={colorScheme}
+    height={600}
+    width={964}
+    justification="left"
+    nodes={sankeyNodes.map((node, i) => (
+      <SankeyNode key={`node-${i}`} {...node} />
+    ))}
+    links={sankeyLinks.map((link, i) => (
+      <SankeyLink key={`link-${i}`} {...link} />
+    ))}
+  />
+);
 
 const DemoStory = () => {
   const [filtered, setFiltered] = useState(false);
