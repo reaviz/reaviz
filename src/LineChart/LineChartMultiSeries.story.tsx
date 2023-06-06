@@ -1,5 +1,3 @@
-import React from 'react';
-import { object, number, select } from '@storybook/addon-knobs';
 import chroma from 'chroma-js';
 import { multiDateData, longMultiDateData } from '../../demo';
 import { LineChart } from './LineChart';
@@ -16,7 +14,6 @@ import {
   LinearYAxisTickSeries,
   LinearYAxis
 } from '../common/Axis/LinearAxis';
-import { schemes } from '../common/color';
 import { LineSeries } from './LineSeries';
 
 export default {
@@ -32,28 +29,20 @@ export default {
   }
 };
 
-export const _Simple = () => {
-  const height = number('Height', 250);
-  const width = number('Width', 550);
-  const lineStroke = number('Stroke Width', 4);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const data = object('Data', multiDateData);
-
-  return (
-    <LineChart
-      width={width}
-      height={height}
-      series={
-        <LineSeries
-          type="grouped"
-          line={<Line strokeWidth={lineStroke} />}
-          colorScheme={color}
-        />
-      }
-      data={data}
-    />
-  );
-};
+export const _Simple = () => (
+  <LineChart
+    width={550}
+    height={250}
+    series={
+      <LineSeries
+        type="grouped"
+        line={<Line strokeWidth={4} />}
+        colorScheme="cybertron"
+      />
+    }
+    data={multiDateData}
+  />
+);
 
 export const LargeData = () => (
   <LineChart
@@ -96,7 +85,7 @@ export const CustomLineStyles = () => (
         line={
           <Line
             strokeWidth={3}
-            style={(data) => {
+            style={data => {
               if (
                 data &&
                 data.length &&
@@ -136,51 +125,35 @@ export const _LargeDataset = () => (
   />
 );
 
-export const Stacked = () => {
-  const height = number('Height', 250);
-  const width = number('Width', 550);
-  const lineStroke = number('Stroke Width', 4);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const data = object('Data', multiDateData);
+export const Stacked = () => (
+  <StackedAreaChart
+    width={550}
+    height={250}
+    series={
+      <StackedAreaSeries
+        colorScheme="cybertron"
+        area={null}
+        line={<Line strokeWidth={4} />}
+      />
+    }
+    data={multiDateData}
+  />
+);
 
-  return (
-    <StackedAreaChart
-      width={width}
-      height={height}
-      series={
-        <StackedAreaSeries
-          colorScheme={color}
-          area={null}
-          line={<Line strokeWidth={lineStroke} />}
-        />
-      }
-      data={data}
-    />
-  );
-};
-
-export const StackedNormalized = () => {
-  const height = number('Height', 250);
-  const width = number('Width', 550);
-  const lineStroke = number('Stroke Width', 4);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const data = object('Data', multiDateData);
-
-  return (
-    <StackedNormalizedAreaChart
-      width={width}
-      height={height}
-      data={data}
-      series={
-        <StackedNormalizedAreaSeries
-          colorScheme={color}
-          area={null}
-          line={<Line strokeWidth={lineStroke} />}
-        />
-      }
-    />
-  );
-};
+export const StackedNormalized = () => (
+  <StackedNormalizedAreaChart
+    width={550}
+    height={250}
+    data={multiDateData}
+    series={
+      <StackedNormalizedAreaSeries
+        colorScheme="cybertron"
+        area={null}
+        line={<Line strokeWidth={4} />}
+      />
+    }
+  />
+);
 
 const prettyData = (() => {
   const data: any[] = [];

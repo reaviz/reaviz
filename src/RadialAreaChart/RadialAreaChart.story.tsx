@@ -1,4 +1,3 @@
-import React from 'react';
 import { RadialAreaChart } from './RadialAreaChart';
 import { medDateData, categoryData, multiCategory } from '../../demo';
 import {
@@ -7,7 +6,6 @@ import {
   RadialLine,
   RadialPointSeries
 } from './RadialAreaSeries';
-import { number, boolean, object, select } from '@storybook/addon-knobs';
 import {
   RadialAxis,
   RadialAxisTickSeries,
@@ -16,7 +14,6 @@ import {
   RadialAxisArcSeries,
   RadialAxisTickLine
 } from '../common/Axis';
-import { schemes } from '../common/color';
 import { GradientStop, RadialGradient } from '../common/Gradient';
 
 export default {
@@ -30,66 +27,38 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const innerRadius = number('Inner Radius', 0.1);
-  const animated = boolean('Animated', true);
-  const hasGradient = boolean('Gradient', true);
-  const autoRotate = boolean('Auto Rotate Labels', true);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const gradient = hasGradient ? <RadialGradient /> : null;
-  const tickCount = number('Tick Count', 5);
-  const arcCount = number('Arc Count', 10);
-  const tickPosition = select(
-    'Tick Position',
-    {
-      inside: 'inside',
-      outside: 'outside'
-    },
-    'inside'
-  );
-  const interpolation = select(
-    'Interpolation',
-    {
-      linear: 'linear',
-      smooth: 'smooth'
-    },
-    'smooth'
-  );
-  const data = object('Data', medDateData);
-
-  return (
-    <RadialAreaChart
-      height={500}
-      width={500}
-      data={data}
-      innerRadius={innerRadius}
-      series={
-        <RadialAreaSeries
-          colorScheme={color}
-          animated={animated}
-          interpolation={interpolation}
-          area={<RadialArea gradient={gradient} />}
-        />
-      }
-      axis={
-        <RadialAxis
-          arcs={<RadialAxisArcSeries count={arcCount} />}
-          ticks={
-            <RadialAxisTickSeries
-              count={tickCount}
-              tick={
-                <RadialAxisTick
-                  line={<RadialAxisTickLine position={tickPosition} />}
-                  label={<RadialAxisTickLabel autoRotate={autoRotate} />}
-                />
-              }
-            />
-          }
-        />
-      }
-    />
-  );
-};
+export const Simple = () => (
+  <RadialAreaChart
+    height={500}
+    width={500}
+    data={medDateData}
+    innerRadius={0.1}
+    series={
+      <RadialAreaSeries
+        colorScheme="cybertron"
+        animated
+        interpolation="smooth"
+        area={<RadialArea gradient={<RadialGradient />} />}
+      />
+    }
+    axis={
+      <RadialAxis
+        arcs={<RadialAxisArcSeries count={10} />}
+        ticks={
+          <RadialAxisTickSeries
+            count={5}
+            tick={
+              <RadialAxisTick
+                line={<RadialAxisTickLine position="inside" />}
+                label={<RadialAxisTickLabel autoRotate />}
+              />
+            }
+          />
+        }
+      />
+    }
+  />
+);
 
 export const CategoricalData = () => (
   <RadialAreaChart

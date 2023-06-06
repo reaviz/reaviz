@@ -1,12 +1,10 @@
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import { timeDay } from 'd3-time';
 import moment from 'moment';
-import { object, number, select } from '@storybook/addon-knobs';
 import { singleDateData, largeDateData, randomNumber } from '../../demo';
 import { LineChart } from './LineChart';
 import { Line } from '../AreaChart';
 import { LinearXAxisTickSeries, LinearXAxis } from '../common/Axis/LinearAxis';
-import { schemes } from '../common/color';
 import { LineSeries } from './LineSeries';
 
 export default {
@@ -18,37 +16,20 @@ export default {
   }
 };
 
-export const Simple = () => {
-  const height = number('Height', 250);
-  const width = number('Width', 350);
-  const lineStroke = number('Stroke Width', 4);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const interpolation = select(
-    'Interpolation',
-    {
-      linear: 'linear',
-      step: 'step',
-      smooth: 'smooth'
-    },
-    'linear'
-  );
-  const data = object('Data', singleDateData);
-
-  return (
-    <LineChart
-      width={width}
-      height={height}
-      data={data}
-      series={
-        <LineSeries
-          interpolation={interpolation}
-          colorScheme={color}
-          line={<Line strokeWidth={lineStroke} />}
-        />
-      }
-    />
-  );
-};
+export const Simple = () => (
+  <LineChart
+    width={250}
+    height={250}
+    data={singleDateData}
+    series={
+      <LineSeries
+        interpolation="linear"
+        colorScheme="cybertron"
+        line={<Line strokeWidth={4} />}
+      />
+    }
+  />
+);
 
 export const NoAnimation = () => (
   <LineChart
@@ -79,31 +60,15 @@ export const Interval = () => (
   />
 );
 
-export const LargeDataset = () => {
-  const height = number('Height', 250);
-  const width = number('Width', 400);
-  const color = select('Color Scheme', schemes, 'cybertron');
-  const interpolation = select(
-    'Interpolation',
-    {
-      linear: 'linear',
-      step: 'step',
-      smooth: 'smooth'
-    },
-    'linear'
-  );
-  const data = object('Data', largeDateData);
-
-  return (
-    <LineChart
-      width={width}
-      height={height}
-      data={data}
-      series={<LineSeries colorScheme={color} interpolation={interpolation} />}
-      xAxis={<LinearXAxis type="time" />}
-    />
-  );
-};
+export const LargeDataset = () => (
+  <LineChart
+    width={400}
+    height={250}
+    data={largeDateData}
+    series={<LineSeries colorScheme="cybertron" interpolation="linear" />}
+    xAxis={<LinearXAxis type="time" />}
+  />
+);
 
 export const DynamicColors = () => (
   <LineChart
