@@ -1,3 +1,7 @@
+# 14.6.1 - 6/57/23
+- [fix] fix exports
+- [chore] upgrade some deps
+
 # 14.6.0 - 6/5/23
 - [chore] migrate to vite library
 - [chore] upgrade storybook
