@@ -14,7 +14,8 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
 
   useEffect(() => {
     const interpolator = interpolate(prevPath.get(), custom.enter.d);
-    const unsub = spring.onChange((v) => d.set(interpolator(v)));
+    const unsub = spring.onChange(v => d.set(interpolator(v)));
+    // TODO: this is causing the animation to run REALLY fast on init
     prevPath.set(custom.enter.d);
     return unsub;
   });
