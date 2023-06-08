@@ -5,6 +5,7 @@ import {
   RadialScatterPointProps
 } from './RadialScatterPoint';
 import { CloneElement } from 'rdk';
+import { identifier } from 'safe-identifier';
 
 export interface RadialScatterSeriesProps {
   /**
@@ -62,14 +63,14 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
     if (!activeIds) {
       setInternalActiveIds([value.id]);
     }
-  }, []);
+  }, [activeIds]);
 
   const onMouseLeave = useCallback(() => {
     // Only perform this on unmanaged activations
     if (!activeIds) {
       setInternalActiveIds([]);
     }
-  }, []);
+  }, [activeIds]);
 
   const renderPoint = useCallback((d: ChartInternalShallowDataShape, index: number) => {
     let dataId;
@@ -81,7 +82,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
       );
     }
 
-    const key = dataId || index;
+    const key = identifier(`${dataId || index}`);
     const active =
       !(internalActiveIds && internalActiveIds.length) || internalActiveIds.includes(dataId);
 

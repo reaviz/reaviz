@@ -18,6 +18,7 @@ import {
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes, getColor, ColorSchemeType } from '../../common/color';
+import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
 
 export type ScatterPointProps = {
@@ -204,7 +205,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
       >
         {symbol ? (
           <motion.g
-            key={`symbol-${id}-${data!.id!}`}
+            key={`symbol-${id}-${identifier(`${data!.id}`)}`}
             {...extras}
             initial={{
               translateX: exitProps.x,
@@ -227,7 +228,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
           </motion.g>
         ) : (
           <motion.circle
-            key={`symbol-${id}-${data!.id!}`}
+            key={`symbol-${id}-${identifier(`${data!.id}`)}`}
             className={extras.className}
             style={{ ...extras.style, cursor }}
             initial={{

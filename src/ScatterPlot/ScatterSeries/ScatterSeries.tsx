@@ -2,6 +2,7 @@ import React, { useCallback, Fragment, ReactElement, FC } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from 'rdk';
 import { ScatterPoint, ScatterPointProps } from './ScatterPoint';
+import { identifier } from 'safe-identifier';
 
 export interface ScatterSeriesProps {
   /**
@@ -77,7 +78,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         pointId = pointData.id;
       }
 
-      const key = pointId || index;
+      const key = identifier(`${pointId || index}`);
       const active =
         !(activeIds && activeIds.length) || activeIds.includes(pointId);
 

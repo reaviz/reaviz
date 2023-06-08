@@ -22,6 +22,7 @@ import {
 import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '../../common/utils/interpolation';
 import { getColor, ColorSchemeType } from '../../common/color';
+import { identifier } from 'safe-identifier';
 
 export type AreaChartTypes =
   | 'standard'
@@ -167,40 +168,38 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   );
 
   const renderArea = useCallback(
-    (data: ChartInternalShallowDataShape[], index = 0, total = 1) => {
-      return (
-        <Fragment>
-          {line && (
-            <CloneElement<LineProps>
-              element={line}
-              xScale={xScale}
-              yScale={yScale}
-              data={data}
-              width={width}
-              index={index}
-              hasArea={area !== null}
-              animated={animated}
-              interpolation={interpolation}
-              color={getPointColor}
-            />
-          )}
-          {area && (
-            <CloneElement<AreaProps>
-              element={area}
-              id={`${id}-area-${index}`}
-              xScale={xScale}
-              yScale={yScale}
-              data={data}
-              index={index}
-              total={total}
-              animated={animated}
-              interpolation={interpolation}
-              color={getPointColor}
-            />
-          )}
-        </Fragment>
-      );
-    },
+    (data: ChartInternalShallowDataShape[], index = 0, total = 1) => (
+      <Fragment>
+        {line && (
+          <CloneElement<LineProps>
+            element={line}
+            xScale={xScale}
+            yScale={yScale}
+            data={data}
+            width={width}
+            index={index}
+            hasArea={area !== null}
+            animated={animated}
+            interpolation={interpolation}
+            color={getPointColor}
+          />
+        )}
+        {area && (
+          <CloneElement<AreaProps>
+            element={area}
+            id={`${id}-area-${index}`}
+            xScale={xScale}
+            yScale={yScale}
+            data={data}
+            index={index}
+            total={total}
+            animated={animated}
+            interpolation={interpolation}
+            color={getPointColor}
+          />
+        )}
+      </Fragment>
+    ),
     [
       animated,
       area,
@@ -273,40 +272,36 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   }, [activePoint, activeValues, height, markLine]);
 
   const renderSingleSeries = useCallback(
-    (data: ChartInternalShallowDataShape[]) => {
-      return (
-        <Fragment>
-          {renderArea(data)}
-          {renderMarkLine()}
-          {renderSymbols(data)}
-        </Fragment>
-      );
-    },
+    (data: ChartInternalShallowDataShape[]) => (
+      <Fragment>
+        {renderArea(data)}
+        {renderMarkLine()}
+        {renderSymbols(data)}
+      </Fragment>
+    ),
     [renderArea, renderMarkLine, renderSymbols]
   );
 
   const renderMultiSeries = useCallback(
-    (data: ChartInternalNestedDataShape[]) => {
-      return (
-        <Fragment>
-          {data
-            .map((point, index) => (
-              <Fragment key={`${point.key!.toString()}`}>
-                {renderArea(point.data, index, data.length)}
-              </Fragment>
-            ))
-            .reverse()}
-          {renderMarkLine()}
-          {data
-            .map((point, index) => (
-              <Fragment key={`${point.key!.toString()}`}>
-                {renderSymbols(point.data, index)}
-              </Fragment>
-            ))
-            .reverse()}
-        </Fragment>
-      );
-    },
+    (data: ChartInternalNestedDataShape[]) => (
+      <Fragment>
+        {data
+          .map((point, index) => (
+            <Fragment key={identifier(`${point.key}`)}>
+              {renderArea(point.data, index, data.length)}
+            </Fragment>
+          ))
+          .reverse()}
+        {renderMarkLine()}
+        {data
+          .map((point, index) => (
+            <Fragment key={identifier(`${point.key}`)}>
+              {renderSymbols(point.data, index)}
+            </Fragment>
+          ))
+          .reverse()}
+      </Fragment>
+    ),
     [renderArea, renderMarkLine, renderSymbols]
   );
 
