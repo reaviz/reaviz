@@ -1,22 +1,26 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC, ReactElement, useCallback } from 'react';
 import { ChartContainer, ChartContainerChildProps, ChartProps, ChartShallowDataShape } from '../common';
 import { scaleLinear } from 'd3-scale';
-import { area, line } from 'd3-shape';
-import { useId } from 'rdk';
-import { motion } from 'framer-motion';
+import { max, extent } from 'd3-array';
+import { CloneElement, useId } from 'rdk';
+import { FunnelArc, FunnelArcProps } from './FunnelArc';
 
 export interface FunnelChartProps extends ChartProps {
+  /**
+   * Chart shape used to render the funnel.
+   */
   data: ChartShallowDataShape[];
-}
 
-interface Point {
-  x: number;
-  y: number;
+  /**
+   * The arc component that renders funnel shape.
+   */
+  arc: ReactElement<FunnelArcProps, typeof FunnelArc>;
 }
 
 export const FunnelChart: FC<FunnelChartProps> = ({
   data,
   width,
+  arc,
   margins,
   height,
   className,
@@ -27,30 +31,20 @@ export const FunnelChart: FC<FunnelChartProps> = ({
 
   // Calculate the funnel data on mount and when data changes
   const getScales = useCallback(({ chartWidth, chartHeight }) => {
-    // Setup the y scale
     const yScale = scaleLinear()
-      .domain([0, data.length])
-      .range([0, height]);
+      .domain([-max(data,
+        ({ data }) => data), max(data, ({ data }) => data)])
+      .nice()
+      .range([chartHeight - 10, 10]);
 
-    // Create a point list
-    const points: Point[][] = data.map((d, i) => {
-      const upperWidth = i > 0 ? (data[i - 1].data / data[0].data) * width * 0.5 : width * 0.5;
-      const lowerWidth = (d.data / data[0].data) * width * 0.5;
+    const xScale = scaleLinear()
+      .domain(extent(data, (_d, i) => i))
+      .range([10, chartWidth - 10]);
 
-      return [
-        { x: width * 0.5 - upperWidth, y: yScale(i) },
-        { x: width * 0.5 + upperWidth, y: yScale(i) },
-        { x: width * 0.5 + lowerWidth, y: yScale(i + 1) },
-        { x: width * 0.5 - lowerWidth, y: yScale(i + 1) }
-      ];
-    });
-
-    // Create polygons from points
-    const newPolygons = points.map(pointGroup =>
-      pointGroup.reduce((acc, point) => acc + `${point.x},${point.y} `, '')
-    );
-
-    return { internalData: newPaths };
+    return {
+      yScale,
+      xScale
+    };
   }, [data]);
 
   const renderChart = useCallback(
@@ -59,24 +53,20 @@ export const FunnelChart: FC<FunnelChartProps> = ({
         return null;
       }
 
-      const { internalData } = getScales({ chartHeight, chartWidth });
+      const { xScale, yScale } = getScales({ chartHeight, chartWidth });
 
       return (
         <>
-          {internalData.map(d => (
-            <motion.path
-              key={d}
-              d={d}
-              fill="#69b3a2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-            />
-          ))}
-
+          <CloneElement<FunnelArcProps>
+            element={arc}
+            id={id}
+            data={data}
+            xScale={xScale}
+            yScale={yScale}
+          />
         </>
       );
-    }, [getScales]);
+    }, [getScales, data, arc]);
 
   return (
     <ChartContainer
@@ -93,5 +83,5 @@ export const FunnelChart: FC<FunnelChartProps> = ({
 };
 
 FunnelChart.defaultProps = {
-
+  arc: <FunnelArc />
 };

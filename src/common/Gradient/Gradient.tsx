@@ -12,11 +12,8 @@ export interface GradientProps {
 export const Gradient: FC<Partial<GradientProps>> = ({
   id,
   color,
-  direction = 'vertical',
-  stops = [
-    <GradientStop offset="0%" stopOpacity={0.3} key="start" />,
-    <GradientStop offset="80%" stopOpacity={1} key="stop" />
-  ]
+  direction,
+  stops
 }) => {
   const pos =
     direction === 'vertical'
@@ -44,4 +41,12 @@ export const Gradient: FC<Partial<GradientProps>> = ({
       ))}
     </linearGradient>
   );
+};
+
+Gradient.defaultProps = {
+  direction: 'vertical',
+  stops: [
+    <GradientStop offset="0%" stopOpacity={0.3} key="start" />,
+    <GradientStop offset="80%" stopOpacity={1} key="stop" />
+  ]
 };
