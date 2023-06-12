@@ -1,7 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { ChartShallowDataShape } from '../common/data';
-import { motion } from 'framer-motion';
-import { area, curveCardinal } from 'd3-shape';
+import { area } from 'd3-shape';
 import { InterpolationTypes, interpolate } from '../common/utils';
 import { ColorSchemeType, getColor, schemes } from '../common/color';
 import { Gradient, GradientProps, GradientStop } from '../common/Gradient';
@@ -53,6 +52,9 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   colorScheme,
   gradient
 }) => {
+  // Note: Need to append the last section
+  const internalData = [...data, data[data.length - 1]];
+
   const areaGenerator = area()
     .curve(interpolate(interpolation))
     .x((_d, i) => xScale(i))
@@ -76,13 +78,13 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
 
   return (
     <>
-      <motion.path
-        d={areaGenerator(data as any[])}
+      <path
+        d={areaGenerator(internalData as any[])}
         fill={fillTop}
         stroke="none"
       />
-      <motion.path
-        d={areaMirrorGenerator(data as any[])}
+      <path
+        d={areaMirrorGenerator(internalData as any[])}
         fill={fillBottom}
         stroke="none"
       />

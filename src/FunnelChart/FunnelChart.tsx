@@ -1,9 +1,10 @@
-import React, { FC, ReactElement, useCallback } from 'react';
+import React, { FC, ReactElement, useCallback, useMemo } from 'react';
 import { ChartContainer, ChartContainerChildProps, ChartProps, ChartShallowDataShape } from '../common';
 import { scaleLinear } from 'd3-scale';
 import { max, extent } from 'd3-array';
 import { CloneElement, useId } from 'rdk';
 import { FunnelArc, FunnelArcProps } from './FunnelArc';
+import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -14,13 +15,19 @@ export interface FunnelChartProps extends ChartProps {
   /**
    * The arc component that renders funnel shape.
    */
-  arc: ReactElement<FunnelArcProps, typeof FunnelArc>;
+  arc?: ReactElement<FunnelArcProps, typeof FunnelArc>;
+
+  /**
+   * The axis component that renders the funnel axis.
+   */
+  axis?: ReactElement<FunnelAxisProps, typeof FunnelAxis>;
 }
 
 export const FunnelChart: FC<FunnelChartProps> = ({
   data,
   width,
   arc,
+  axis,
   margins,
   height,
   className,
@@ -35,11 +42,11 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       .domain([-max(data,
         ({ data }) => data), max(data, ({ data }) => data)])
       .nice()
-      .range([chartHeight - 10, 10]);
+      .range([chartHeight, 0]);
 
     const xScale = scaleLinear()
-      .domain(extent(data, (_d, i) => i))
-      .range([10, chartWidth - 10]);
+      .domain([0, data.length])
+      .range([0, chartWidth]);
 
     return {
       yScale,
@@ -64,9 +71,15 @@ export const FunnelChart: FC<FunnelChartProps> = ({
             xScale={xScale}
             yScale={yScale}
           />
+          <CloneElement<FunnelAxisProps>
+            element={axis}
+            data={data}
+            xScale={xScale}
+            yScale={yScale}
+          />
         </>
       );
-    }, [getScales, data, arc]);
+    }, [getScales, data, arc, axis]);
 
   return (
     <ChartContainer
@@ -83,5 +96,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
 };
 
 FunnelChart.defaultProps = {
-  arc: <FunnelArc />
+  margins: 0,
+  arc: <FunnelArc />,
+  axis: <FunnelAxis />
 };
