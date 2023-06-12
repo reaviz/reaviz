@@ -1,4 +1,7 @@
-# 14.6.1 - 6/57/23
+# 14.7.0 - 6/12/23
+- [feature] funnel chart
+
+# 14.6.1 - 6/7/23
 - [fix] fix exports
 - [chore] upgrade some deps
 
