@@ -98,6 +98,7 @@ Chart types include:
 - Bar List
 - Meter
 - Spider / Radar
+- Funnel Chart
 
 Additional features:
 

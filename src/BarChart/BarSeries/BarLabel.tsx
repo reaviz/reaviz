@@ -1,4 +1,4 @@
-import React, { FC, PureComponent, useMemo } from 'react';
+import React, { FC, useMemo } from 'react';
 import { ChartInternalShallowDataShape, Direction } from '../../common/data';
 import { BarType } from './Bar';
 import { motion } from 'framer-motion';

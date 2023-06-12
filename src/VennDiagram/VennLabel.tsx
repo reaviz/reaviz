@@ -95,8 +95,10 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   return (
     <motion.text
       id={`${id}-text`}
-      style={{ pointerEvents: 'none', fontFamily, fontSize }}
       fill={fill}
+      pointerEvents="none"
+      fontFamily={fontFamily}
+      fontSize={fontSize}
       initial={
         {
           attrX: data.text.x,
