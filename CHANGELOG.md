@@ -1,3 +1,6 @@
+# 14.7.1 - 6/13/23
+- [chore] improving funnel imports
+
 # 14.7.0 - 6/12/23
 - [feature] funnel chart
 
