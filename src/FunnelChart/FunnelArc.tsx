@@ -77,7 +77,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   const fillBottom = gradient ? `url(#gradient-${id}-bottom)` : fillColor;
 
   return (
-    <>
+    <g pointerEvents="none">
       <path
         d={areaGenerator(internalData as any[])}
         fill={fillTop}
@@ -102,7 +102,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
           />
         </>
       )}
-    </>
+    </g>
   );
 };
 
