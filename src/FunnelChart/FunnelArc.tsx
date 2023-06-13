@@ -5,6 +5,7 @@ import { InterpolationTypes, interpolate } from '../common/utils';
 import { ColorSchemeType, getColor, schemes } from '../common/color';
 import { Gradient, GradientProps, GradientStop } from '../common/Gradient';
 import { CloneElement } from 'rdk';
+import { TooltipArea, TooltipAreaProps } from '../common/Tooltip';
 
 export interface FunnelArcProps {
   /**
@@ -41,6 +42,11 @@ export interface FunnelArcProps {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * Tooltip for the chart area.
+   */
+  tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
 export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
@@ -50,7 +56,8 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   yScale,
   interpolation,
   colorScheme,
-  gradient
+  gradient,
+  tooltip
 }) => {
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
@@ -73,36 +80,53 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
     key: 0
   });
 
-  const fillTop = gradient ? `url(#gradient-${id}-top)` : fillColor;
-  const fillBottom = gradient ? `url(#gradient-${id}-bottom)` : fillColor;
+  const fillTop = gradient
+    ? `url(#gradient-${id}-top)`
+    : fillColor;
+
+  const fillBottom = gradient
+    ? `url(#gradient-${id}-bottom)`
+    : fillColor;
+
+  const [height] = yScale.range();
+  const [_, width] = xScale.range();
 
   return (
-    <g pointerEvents="none">
-      <path
-        d={areaGenerator(internalData as any[])}
-        fill={fillTop}
-        stroke="none"
-      />
-      <path
-        d={areaMirrorGenerator(internalData as any[])}
-        fill={fillBottom}
-        stroke="none"
-      />
-      {gradient && (
-        <>
-          <CloneElement<GradientProps>
-            element={gradient}
-            id={`gradient-${id}-top`}
-            color={fillColor}
-          />
-          <CloneElement<GradientProps>
-            element={gradient}
-            id={`gradient-${id}-bottom`}
-            color={fillColor}
-          />
-        </>
-      )}
-    </g>
+    <CloneElement<TooltipAreaProps>
+      element={tooltip}
+      xScale={xScale}
+      yScale={yScale}
+      data={data as any}
+      height={height}
+      width={width}
+    >
+      <g pointerEvents="none">
+        <path
+          d={areaGenerator(internalData as any[])}
+          fill={fillTop}
+          stroke="none"
+        />
+        <path
+          d={areaMirrorGenerator(internalData as any[])}
+          fill={fillBottom}
+          stroke="none"
+        />
+        {gradient && (
+          <>
+            <CloneElement<GradientProps>
+              element={gradient}
+              id={`gradient-${id}-top`}
+              color={fillColor}
+            />
+            <CloneElement<GradientProps>
+              element={gradient}
+              id={`gradient-${id}-bottom`}
+              color={fillColor}
+            />
+          </>
+        )}
+      </g>
+    </CloneElement>
   );
 };
 
@@ -118,5 +142,6 @@ FunnelArc.defaultProps = {
   ),
   interpolation: 'smooth',
   colorScheme: schemes.cybertron[0],
-  animated: true
+  animated: true,
+  tooltip: <TooltipArea />
 };

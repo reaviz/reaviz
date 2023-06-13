@@ -49,7 +49,15 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       .domain([0, data.length])
       .range([0, chartWidth]);
 
+    const transformedData = data.map((d, i) => ({
+      ...d,
+      key: d.key,
+      x: xScale(i),
+      y: 0
+    }));
+
     return {
+      transformedData,
       yScale,
       xScale
     };
@@ -61,26 +69,26 @@ export const FunnelChart: FC<FunnelChartProps> = ({
         return null;
       }
 
-      const { xScale, yScale } = getScales({ chartHeight, chartWidth });
+      const { xScale, yScale, transformedData } = getScales({ chartHeight, chartWidth });
 
       return (
         <>
           <CloneElement<FunnelArcProps>
             element={arc}
             id={id}
-            data={data}
+            data={transformedData}
             xScale={xScale}
             yScale={yScale}
           />
           <CloneElement<FunnelAxisProps>
             element={axis}
-            data={data}
+            data={transformedData}
             xScale={xScale}
             yScale={yScale}
           />
         </>
       );
-    }, [getScales, data, arc, axis]);
+    }, [getScales, arc, axis]);
 
   return (
     <ChartContainer
