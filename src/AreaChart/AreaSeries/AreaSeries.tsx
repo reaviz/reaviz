@@ -257,19 +257,17 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     ]
   );
 
-  const renderMarkLine = useCallback(() => {
-    return (
-      <Fragment>
-        {activeValues && markLine && (
-          <CloneElement<MarkLineProps>
-            element={markLine}
-            height={height}
-            pointX={activePoint}
-          />
-        )}
-      </Fragment>
-    );
-  }, [activePoint, activeValues, height, markLine]);
+  const renderMarkLine = useCallback(() => (
+    <>
+      {activeValues && markLine && (
+        <CloneElement<MarkLineProps>
+          element={markLine}
+          height={height}
+          pointX={activePoint}
+        />
+      )}
+    </>
+  ), [activePoint, activeValues, height, markLine]);
 
   const renderSingleSeries = useCallback(
     (data: ChartInternalShallowDataShape[]) => (
