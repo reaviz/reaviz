@@ -44,6 +44,7 @@ export const FunnelAxisLine: FC<Partial<FunnelAxisLineProps>> = ({
       y2={height}
       stroke={strokeColor}
       strokeWidth={strokeWidth}
+      pointerEvents="none"
     />
   );
 };
