@@ -1,10 +1,11 @@
-import React, { FC, ReactElement, useCallback, useMemo } from 'react';
-import { ChartContainer, ChartContainerChildProps, ChartProps, ChartShallowDataShape } from '../common';
+import React, { FC, ReactElement, useCallback } from 'react';
 import { scaleLinear } from 'd3-scale';
-import { max, extent } from 'd3-array';
+import { max } from 'd3-array';
 import { CloneElement, useId } from 'rdk';
 import { FunnelArc, FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
+import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
+import { ChartShallowDataShape } from '../common/data';
 
 export interface FunnelChartProps extends ChartProps {
   /**

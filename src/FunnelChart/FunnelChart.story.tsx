@@ -1,10 +1,17 @@
 import { FunnelArc } from './FunnelArc';
+import { FunnelAxis, FunnelAxisLabel, FunnelAxisLine } from './FunnelAxis';
 import { FunnelChart, FunnelChartProps } from './FunnelChart';
 import { Story, Meta } from '@storybook/react';
 
 export default {
   title: 'Charts/Funnel Chart',
-  component: FunnelChart
+  component: FunnelChart,
+  subcomponents: {
+    FunnelArc,
+    FunnelAxis,
+    FunnelAxisLabel,
+    FunnelAxisLine
+  }
 }  as Meta;
 
 const Template: Story<FunnelChartProps> =

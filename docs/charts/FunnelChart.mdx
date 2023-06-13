@@ -1,10 +1,10 @@
 import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
-import { FunnelChart, FunnelArc, FunnelAxis, FunnelAxisLabel } from '../../src';
+import { FunnelChart, FunnelArc, FunnelAxis, FunnelAxisLabel, FunnelAxisLine } from '../../src';
 import * as FunnelChartStory from '../../src/FunnelChart/FunnelChart.story';
 
-<Meta title="Docs/Chart Types/Funnel" />
+<Meta title="Docs/Chart Types/Funnel Chart" />
 
-# Funnel
+# Funnel Chart
 
 ---
 <br />
@@ -54,8 +54,11 @@ const MyChart = () => (
 ### [FunnelArc](https://github.com/reaviz/reaviz/blob/master/src/FunnelChart/FunnelArc.tsx)
 <ArgTypes of={FunnelArc} />
 
-### [FunnelAxis](https://github.com/reaviz/reaviz/blob/master/src/FunnelChart/FunnelAxis.tsx)
+### [FunnelAxis](https://github.com/reaviz/reaviz/blob/master/src/FunnelChart/FunnelAxis/FunnelAxis.tsx)
 <ArgTypes of={FunnelAxis} />
 
-### [FunnelAxisLabel](https://github.com/reaviz/reaviz/blob/master/src/FunnelChart/FunnelAxisLabel.tsx)
+### [FunnelAxisLabel](https://github.com/reaviz/reaviz/blob/master/src/FunnelChart/FunnelAxis/FunnelAxisLabel.tsx)
 <ArgTypes of={FunnelAxisLabel} />
+
+### [FunnelAxisLine](https://github.com/reaviz/reaviz/blob/master/src/FunnelChart/FunnelAxis/FunnelAxisLine.tsx)
+<ArgTypes of={FunnelAxisLine} />

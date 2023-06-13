@@ -1,8 +1,9 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { ChartShallowDataShape } from '../common';
+import { ChartShallowDataShape } from '../../common/data';
 import { range } from 'd3-array';
 import { FunnelAxisLabel, FunnelAxisLabelProps } from './FunnelAxisLabel';
 import { CloneElement } from 'rdk';
+import { FunnelAxisLine, FunnelAxisLineProps } from './FunnelAxisLine';
 
 export interface FunnelAxisProps {
   /**
@@ -21,14 +22,9 @@ export interface FunnelAxisProps {
   yScale: any;
 
   /**
-   * Color of the axis lines.
+   * The funnel axis line.
    */
-  strokeColor: string;
-
-  /**
-   * Width of the axis lines.
-   */
-  strokeWidth: number;
+  line?: ReactElement<FunnelAxisLineProps, typeof FunnelAxisLine> | null;
 
   /**
    * Label component for the axis.
@@ -38,27 +34,25 @@ export interface FunnelAxisProps {
 
 export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
   data,
-  strokeColor,
-  strokeWidth,
   xScale,
   yScale,
+  line,
   label
 }) => {
   const lines = range(0, data.length);
-  const [height] = yScale.range();
 
   return (
     <>
       {lines.map(index => (
         <Fragment key={index}>
-          <line
-            x1={xScale(index)}
-            y1={0}
-            x2={xScale(index)}
-            y2={height}
-            stroke={strokeColor}
-            strokeWidth={strokeWidth}
-          />
+          {line && (
+            <CloneElement<FunnelAxisLineProps>
+              element={line}
+              index={index}
+              xScale={xScale}
+              yScale={yScale}
+            />
+          )}
           {label && (
             <CloneElement<FunnelAxisLabelProps>
               element={label}
@@ -75,7 +69,6 @@ export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
 };
 
 FunnelAxis.defaultProps = {
-  strokeColor: '#333',
-  strokeWidth: 2,
-  label: <FunnelAxisLabel />
+  label: <FunnelAxisLabel />,
+  line: <FunnelAxisLine />
 };

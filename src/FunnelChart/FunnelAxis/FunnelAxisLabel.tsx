@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { ChartShallowDataShape, calculateDimensions, formatValue } from '../common';
+import { ChartShallowDataShape } from '../../common/data';
+import { calculateDimensions, formatValue } from '../../common/utils';
 
 export interface FunnelAxisLabelProps {
   /**
