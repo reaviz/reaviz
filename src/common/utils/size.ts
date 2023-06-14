@@ -1,15 +1,15 @@
-export interface Dimensions {
+export interface TextDimensions {
   height: number;
   width: number;
 }
 
-const cache: { [key: string]: Dimensions } = {};
+const cache: { [key: string]: TextDimensions } = {};
 
 export const calculateDimensions = (
   text: string,
   fontFamily: string,
   fontSize: string | number
-): Dimensions => {
+): TextDimensions => {
   const key = `${text}_${fontFamily}_${fontSize}`;
 
   // Check if we have a cache hit
