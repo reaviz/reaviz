@@ -19,9 +19,11 @@ export const calculateDimensions = (
 
   // If we are in a Node.js environment
   if (typeof window === 'undefined' || typeof document === 'undefined') {
+    const height = parseInt(typeof fontSize === 'string' ? fontSize : fontSize.toString(), 10);
     const dimensions = {
-      height: text.length,
-      width: text.length
+      height,
+      // 8 is an approximation of the width of a character
+      width: text.length * 8
     };
 
     cache[key] = dimensions;
@@ -29,26 +31,35 @@ export const calculateDimensions = (
     return dimensions;
   }
 
-  // Create a canvas element and get the context
-  const canvas = document.createElement('canvas');
-  const context = canvas.getContext('2d');
+  // Create a temporary div element
+  const element = document.createElement('div');
 
-  if (!context) {
-    throw new Error('Failed to get canvas context');
-  }
+  // Set up the style so the size can be measured
+  element.style.fontFamily = fontFamily;
+  element.style.fontSize = typeof fontSize === 'string' ? fontSize : `${fontSize}px`;
+  element.style.position = 'absolute';
+  element.style.left = '-9999px';
+  element.style.whiteSpace = 'nowrap';
+  element.style.height = 'auto';
+  element.style.fontWeight = 'normal';
+  element.style.lineHeight = 'normal';
+  element.style.width = 'auto';
+  element.style.wordBreak = 'normal';
 
-  // Set the font settings
-  context.font = `${fontSize} ${fontFamily}`;
+  // Add the text to the div
+  element.textContent = text;
 
-  // Measure the text
-  const metrics = context.measureText(text);
+  // Add the div to the body
+  document.body.appendChild(element);
 
-  // Calculate height using the font size
-  const height = parseInt(typeof fontSize === 'string' ? fontSize : fontSize.toString(), 10);
+  // Measure the div
   const dimensions = {
-    height,
-    width: metrics.width
+    height: element.offsetHeight,
+    width: element.offsetWidth
   };
+
+  // Remove the div from the body
+  document.body.removeChild(element);
 
   // Store the result in the cache for future calls
   cache[key] = dimensions;
