@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "14.7.1",
+  "version": "14.7.2",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "vite build --mode library",
@@ -18,18 +18,18 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "main": "./dist/reaviz.umd.cjs",
-  "module": "./dist/reaviz.js",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "source": "src/index.ts",
   "exports": {
     ".": {
-      "import": "./dist/reaviz.js",
-      "require": "./dist/reaviz.umd.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "browser": "dist/index.js",
-  "style": "dist/index.css",
-  "typings": "dist/src/index.d.ts",
+  "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reaviz/reaviz.git"

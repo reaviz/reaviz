@@ -33,10 +33,11 @@ export default defineConfig(({ mode }) =>
       build: {
         minify: false,
         sourcemap: true,
+        copyPublicDir: false,
         lib: {
           entry: resolve('src', 'index.ts'),
           name: 'reaviz',
-          fileName: 'reaviz'
+          fileName: 'index'
         },
         rollupOptions: {
           plugins: [

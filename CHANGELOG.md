@@ -1,3 +1,6 @@
+# 14.7.2 - 6/14/23
+- [chore] improve build output
+
 # 14.7.1 - 6/13/23
 - [chore] improving funnel imports
 
