@@ -1,3 +1,6 @@
+# 14.7.4 - 6/14/23
+- [chore] change calculateSize from canvas to dom measuring
+
 # 14.7.3 - 6/14/23
 - [chore] rewrite calculateSize for webpack :()
 
