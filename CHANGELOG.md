@@ -1,3 +1,6 @@
+# 14.7.3 - 6/14/23
+- [chore] rewrite calculateSize for webpack :()
+
 # 14.7.2 - 6/14/23
 - [chore] improve build output
 
