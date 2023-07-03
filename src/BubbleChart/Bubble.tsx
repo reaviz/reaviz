@@ -7,6 +7,7 @@ import { Gradient, GradientProps } from '../common/Gradient';
 import { Mask, MaskProps } from '../common/Mask';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
+import { Glow, GlowProps } from '../common/Glow';
 
 export interface BubbleProps {
   /**
@@ -40,6 +41,11 @@ export interface BubbleProps {
   mask: ReactElement<MaskProps, typeof Mask> | null;
 
   /**
+   * Glow element for the point.
+   */
+  glow?: ReactElement<GlowProps, typeof Glow> | null;
+
+  /**
    * Gradient shades for the arc.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
@@ -66,6 +72,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   fill,
   mask,
   gradient,
+  glow,
   onClick,
   onMouseEnter,
   onMouseLeave,
@@ -94,12 +101,17 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         ? `url(#mask-pattern-${id})`
         : fill;
 
+  const glowStyles = glow ? {
+    filter: `drop-shadow(${glow.props.x}px ${glow.props.y}px ${glow.props.blur}px ${glow.props.color})`
+  } : {};
+
   return (
     <Fragment>
       <motion.circle
         id={`${id}-bubble`}
         ref={bubbleRef}
         fill={arcFill}
+        style={{ ...glowStyles }}
         initial={{
           r: data.r,
           cx: data.x,

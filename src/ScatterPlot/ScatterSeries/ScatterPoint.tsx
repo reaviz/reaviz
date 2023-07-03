@@ -5,7 +5,8 @@ import React, {
   useState,
   FC,
   useRef,
-  useMemo
+  useMemo,
+  useCallback
 } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
@@ -20,6 +21,7 @@ import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes, getColor, ColorSchemeType } from '../../common/color';
 import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
+import { Glow, GlowProps } from '../../common/Glow';
 
 export type ScatterPointProps = {
   /**
@@ -83,6 +85,11 @@ export type ScatterPointProps = {
   id: string;
 
   /**
+   * Glow element for the point.
+   */
+  glow?: ReactElement<GlowProps, typeof Glow> | null;
+
+  /**
    * Symbol element to render.
    */
   symbol?: (data: ChartInternalShallowDataShape) => ReactNode;
@@ -119,6 +126,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   tooltip,
   cursor,
   size,
+  glow,
   color,
   animated,
   onClick,
@@ -166,6 +174,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
       x: xScale(data!.x),
       y: cy
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, yScale]);
 
   const exitProps = useMemo(() => {
@@ -174,6 +183,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
       y: yScale(yStartDomain),
       x: xScale(data!.x)
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, yScale]);
 
   const fill = useMemo(
@@ -186,10 +196,18 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
     [data, color, index]
   );
 
+  const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
+  const glowStyles = glow ? {
+    filter: `drop-shadow(${glow.props.x}px ${glow.props.y}px ${glow.props.blur}px ${glow.props.color})`
+  } : {};
+
   return (
     <Fragment>
       <g
         ref={rectRef}
+        className={classNames({
+          [css.inactive]: !active
+        })}
         onMouseEnter={() => {
           setTooltipVisible(true);
           onMouseEnter(data!);
@@ -199,13 +217,10 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
           onMouseLeave(data!);
         }}
         onClick={() => onClick(data!)}
-        className={classNames({
-          [css.inactive]: !active
-        })}
       >
         {symbol ? (
           <motion.g
-            key={`symbol-${id}-${identifier(`${data!.id}`)}`}
+            key={key}
             {...extras}
             initial={{
               translateX: exitProps.x,
@@ -228,13 +243,17 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
           </motion.g>
         ) : (
           <motion.circle
-            key={`symbol-${id}-${identifier(`${data!.id}`)}`}
+            key={key}
             className={extras.className}
-            style={{ ...extras.style, cursor }}
+            style={{
+              ...extras.style,
+              ...glowStyles,
+              cursor
+            }}
+            fill={fill}
             initial={{
               cx: exitProps.x,
               cy: exitProps.y,
-              fill,
               r,
               opacity: 0
             }}
@@ -242,13 +261,11 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
               cx: enterProps.x,
               cy: enterProps.y,
               opacity: 1,
-              fill,
               r
             }}
             exit={{
               cx: exitProps.x,
               cy: exitProps.y,
-              fill,
               r,
               opacity: 0
             }}

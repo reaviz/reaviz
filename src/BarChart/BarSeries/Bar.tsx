@@ -24,6 +24,7 @@ import { BarLabelProps, BarLabel } from './BarLabel';
 import { formatValue } from '../../common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '../../common/Tooltip';
+import { Glow, GlowProps } from '../../common/Glow';
 
 export type BarType =
   | 'standard'
@@ -172,6 +173,11 @@ export type BarProps = {
   minHeight?: number;
 
   /**
+   * Glow element for the point.
+   */
+  glow?: ReactElement<GlowProps, typeof Glow> | null;
+
+  /**
    * Event for when the bar is clicked.
    */
   onClick: (event) => void;
@@ -208,6 +214,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   color,
   yScale,
   barCount,
+  glow,
   xScale,
   groupIndex,
   minHeight,
@@ -237,6 +244,10 @@ export const Bar: FC<Partial<BarProps>> = ({
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rect = useRef<SVGGElement | null>(null);
   const [internalActive, setInternalActive] = useState<boolean>(active);
+
+  const glowStyles = glow ? {
+    filter: `drop-shadow(${glow.props.x}px ${glow.props.y}px ${glow.props.blur}px ${glow.props.color})`
+  } : {};
 
   const calculateLinearScalePadding = useCallback(
     (scale, offset: number, size: number) => {
@@ -551,11 +562,15 @@ export const Bar: FC<Partial<BarProps>> = ({
       delete animate.x;
       delete animate.y;
 
+      const glowStyles = glow ? {
+        filter: `drop-shadow(${glow.props.x}px ${glow.props.y}px ${glow.props.blur}px ${glow.props.color})`
+      } : {};
+
       return (
         <g ref={rect}>
           <motion.rect
             className={classNames(extras.className)}
-            style={{ ...extras.style, cursor }}
+            style={{ ...extras.style, ...glowStyles, cursor }}
             mask={maskPath}
             rx={rx}
             ry={ry}
