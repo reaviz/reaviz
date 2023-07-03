@@ -25,8 +25,8 @@ Basic.args = {
     { key: 'Visited Site', data: 1000 },
     { key: 'Added to Cart', data: 900 },
     { key: 'Initiated Checkout', data: 600 },
-    { key: 'Purchased', data: 400 },
-  ],
+    { key: 'Purchased', data: 400 }
+  ]
 };
 
 export const LargeDataset = Template.bind({});
@@ -41,7 +41,7 @@ LargeDataset.args = {
     { key: 'Subscribed', data: 5000 },
     { key: 'Became a Member', data: 3000 },
     { key: 'Upgraded to Premium', data: 1000 },
-    { key: 'Became a VIP', data: 900 },
+    { key: 'Became a VIP', data: 900 }
   ]
 };
 
@@ -55,7 +55,7 @@ export const Interpolation = () => (
       { key: 'Visited Site', data: 1000 },
       { key: 'Added to Cart', data: 900 },
       { key: 'Initiated Checkout', data: 600 },
-      { key: 'Purchased', data: 400 },
+      { key: 'Purchased', data: 400 }
     ]}
   />
 );
@@ -64,11 +64,31 @@ export const Autosize = () => (
   <div style={{ width: '90vw', height: '90vh', border: 'solid 1px red' }}>
     <FunnelChart
       data={[
-      { key: 'Visited Site', data: 1000 },
-      { key: 'Added to Cart', data: 900 },
-      { key: 'Initiated Checkout', data: 600 },
-      { key: 'Purchased', data: 400 },
+        { key: 'Visited Site', data: 1000 },
+        { key: 'Added to Cart', data: 900 },
+        { key: 'Initiated Checkout', data: 600 },
+        { key: 'Purchased', data: 400 }
       ]}
     />
   </div>
+);
+
+export const Layered = () => (
+  <FunnelChart
+    height={400}
+    width={800}
+    data={[
+      { key: 'Visited Site', data: 1000 },
+      { key: 'Added to Cart', data: 900 },
+      { key: 'Initiated Checkout', data: 600 },
+      { key: 'Purchased', data: 400 }
+    ]}
+    arc={
+      <FunnelArc
+        variant="layered"
+        colorScheme={['#013027', '#047662', '#06B899']}
+        gradient={null}
+      />
+    }
+  />
 );

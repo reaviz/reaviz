@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { ChartShallowDataShape } from '../../common/data';
 import { calculateDimensions, formatValue } from '../../common/utils';
+import { motion } from 'framer-motion';
 
 export interface FunnelAxisLabelProps {
   /**
@@ -74,7 +75,11 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
   }
 
   return (
-    <g transform={`translate(${x}, ${y})`}>
+    <motion.g
+      transform={`translate(${x}, ${y})`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <text
         pointerEvents="none"
         fill={fill}
@@ -96,7 +101,7 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
       >
         {label}
       </text>
-    </g>
+    </motion.g>
   );
 };
 

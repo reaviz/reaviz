@@ -40,8 +40,10 @@ export const FunnelChart: FC<FunnelChartProps> = ({
   // Calculate the funnel data on mount and when data changes
   const getScales = useCallback(({ chartWidth, chartHeight }) => {
     const yScale = scaleLinear()
-      .domain([-max(data,
-        ({ data }) => data), max(data, ({ data }) => data)])
+      .domain([
+        -max(data, ({ data }) => data),
+        max(data, ({ data }) => data)
+      ])
       .nice()
       .range([chartHeight, 0]);
 
@@ -55,32 +57,60 @@ export const FunnelChart: FC<FunnelChartProps> = ({
     };
   }, [data]);
 
+  const getDatas = useCallback(({ chartWidth, chartHeight }) => {
+    // The 'layered' variant is actually just a series of funnel charts
+    // laid on top of each other to create the effect of a layered funnel.
+    if (arc.props.variant === 'layered') {
+      const offset = chartHeight / 4;
+      const halfOffset = offset / 2;
+
+      return {
+        halfOffset,
+        datas: [
+          { data, ...getScales({ chartHeight: chartHeight, chartWidth }) },
+          { data, ...getScales({ chartHeight: chartHeight - offset, chartWidth }) },
+          { data, ...getScales({ chartHeight: chartHeight - (offset * 2), chartWidth }) },
+        ]
+      };
+    } else {
+      return {
+        halfOffset: 0,
+        datas: [
+          { data, ...getScales({ chartHeight: chartHeight, chartWidth }) }
+        ]
+      };
+    }
+  }, [data, arc, getScales]);
+
   const renderChart = useCallback(
     ({ id, chartWidth, chartHeight, chartSized }: ChartContainerChildProps) => {
       if (!chartSized) {
         return null;
       }
 
-      const { xScale, yScale } = getScales({ chartHeight, chartWidth });
+      const { datas, halfOffset } = getDatas({ chartHeight, chartWidth });
 
       return (
         <>
-          <CloneElement<FunnelArcProps>
-            element={arc}
-            id={id}
-            data={data}
-            xScale={xScale}
-            yScale={yScale}
-          />
+          {datas.map((d, i) => (
+            <g key={i} style={{ transform: `translate(0, ${i * halfOffset}px)` }}>
+              <CloneElement<FunnelArcProps>
+                element={arc}
+                {...d}
+                id={id}
+                index={i}
+              />
+            </g>
+          ))}
           <CloneElement<FunnelAxisProps>
             element={axis}
             data={data}
-            xScale={xScale}
-            yScale={yScale}
+            xScale={datas[0].xScale}
+            yScale={datas[0].yScale}
           />
         </>
       );
-    }, [getScales, data, arc, axis]);
+    }, [getDatas, axis, data, arc]);
 
   return (
     <ChartContainer

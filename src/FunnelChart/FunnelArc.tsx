@@ -5,6 +5,7 @@ import { InterpolationTypes, interpolate } from '../common/utils';
 import { ColorSchemeType, getColor, schemes } from '../common/color';
 import { Gradient, GradientProps, GradientStop } from '../common/Gradient';
 import { CloneElement } from 'rdk';
+import { motion } from 'framer-motion';
 
 export interface FunnelArcProps {
   /**
@@ -16,6 +17,21 @@ export interface FunnelArcProps {
    * Data to render the funnel. Set internally by `FunnelChart`.
    */
   data: ChartShallowDataShape[];
+
+  /**
+   * Opacity of the funnel arc.
+   */
+  opacity?: number;
+
+  /**
+   * Index of the funnel arc. Set internally by `FunnelChart`.
+   */
+  index?: number;
+
+  /**
+   * The chart funnel style to use.
+   */
+  variant?: 'default' | 'layered';
 
   /**
    * xScale for the funnel. Set internally by `FunnelChart`.
@@ -47,6 +63,9 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   data,
   id,
   xScale,
+  opacity,
+  index,
+  variant,
   yScale,
   interpolation,
   colorScheme,
@@ -69,8 +88,9 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
 
   const fillColor = getColor({
     data,
+    domain: [0, 1, 2, 3],
     colorScheme,
-    key: 0
+    key: index
   });
 
   const fillTop = gradient ? `url(#gradient-${id}-top)` : fillColor;
@@ -78,15 +98,27 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
 
   return (
     <g pointerEvents="none">
-      <path
+      <motion.path
         d={areaGenerator(internalData as any[])}
         fill={fillTop}
         stroke="none"
+        initial={{
+          opacity: 0
+        }}
+        animate={{
+          opacity
+        }}
       />
-      <path
+      <motion.path
         d={areaMirrorGenerator(internalData as any[])}
         fill={fillBottom}
         stroke="none"
+        initial={{
+          opacity: 0
+        }}
+        animate={{
+          opacity
+        }}
       />
       {gradient && (
         <>
@@ -118,5 +150,7 @@ FunnelArc.defaultProps = {
   ),
   interpolation: 'smooth',
   colorScheme: schemes.cybertron[0],
-  animated: true
+  animated: true,
+  variant: 'default',
+  opacity: 1
 };

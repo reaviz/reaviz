@@ -45,7 +45,7 @@ export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
     <>
       {lines.map(index => (
         <Fragment key={index}>
-          {line && (
+          {line && index !== 0 && (
             <CloneElement<FunnelAxisLineProps>
               element={line}
               index={index}
