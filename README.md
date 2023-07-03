@@ -15,9 +15,6 @@
   <a href="https://github.com/reaviz/reaviz/blob/master/LICENSE">
     <img src="https://badgen.now.sh/badge/license/apache2" />
   </a>
-  <a href="https://bundlephobia.com/result?p=reaviz">
-    <img src="https://badgen.net/bundlephobia/minzip/reaviz">
-  </a>
   <a href="https://discord.gg/tt8wGExq35">
     <img src="https://img.shields.io/discord/773948315037073409?label=discord">
   </a>
