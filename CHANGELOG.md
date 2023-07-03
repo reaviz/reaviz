@@ -1,3 +1,7 @@
+# 14.8.0 - 7/3/23
+- [feature] Glow filters for Bar, Scatter and Bubble
+- [chore] Improve docs on gradient/masks
+
 # 14.7.4 - 6/14/23
 - [chore] change calculateSize from canvas to dom measuring
 
