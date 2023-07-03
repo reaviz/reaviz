@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { MaskProps } from './Mask';
 
-interface StripesProps extends MaskProps {
+export interface StripesProps extends MaskProps {
   id?: string;
   fill?: string;
 }
