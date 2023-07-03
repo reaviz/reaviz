@@ -1,6 +1,12 @@
+# 14.9.0 - 7/3/23
+- [feature] add `layered` as `variant` for Funnel Charts
+- [feature] opacity animation on funnel charts
+- [fix] hide first axis line on funnel charts
+
 # 14.8.0 - 7/3/23
 - [feature] Glow filters for Bar, Scatter and Bubble
 - [chore] Improve docs on gradient/masks
+- [chore] update deps
 
 # 14.7.4 - 6/14/23
 - [chore] change calculateSize from canvas to dom measuring
