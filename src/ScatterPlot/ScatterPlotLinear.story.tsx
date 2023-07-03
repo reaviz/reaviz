@@ -139,7 +139,7 @@ export const Bubble = () => (
         point={
           <ScatterPoint
             color="rgba(45, 96, 232, .8)"
-            size={(v) => v.metadata.severity + 5}
+            size={v => v.metadata.severity + 5}
           />
         }
       />
