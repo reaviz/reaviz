@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "14.9.0",
+  "version": "14.9.1",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "vite build --mode library",
@@ -17,10 +17,10 @@
     "prepare": "husky install"
   },
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
-  "source": "src/index.ts",
+  "source": "./src/index.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -175,10 +175,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "jest-junit": {
-    "suiteNameTemplate": "{filepath}",
-    "classNameTemplate": "{classname}",
-    "titleTemplate": "{title}"
   }
 }
