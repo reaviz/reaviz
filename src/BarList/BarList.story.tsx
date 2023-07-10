@@ -75,10 +75,17 @@ export const Events = () => (
   </>
 );
 
-export const Format = () => (
+export const PercentageFormat = () => (
   <>
     <style>
       {`
+        .bar {
+          border-radius: 5px;
+        }
+        .outer {
+          background: rgba(0, 0, 0, .2);
+          border-radius: 5px;
+        }
         .value {
           width: 40px;
         }
@@ -90,7 +97,7 @@ export const Format = () => (
         { key: 'Vulnerability Patch', data: 50 },
         { key: 'Critical Failure', data: 25 },
         { key: 'Physical Intrusion', data: 5 },
-        { key: 'Phishing Attempts', data: 100 }
+        { key: 'Phishing Attempts', data: 85 }
       ]}
       series={
         <BarListSeries
@@ -98,8 +105,11 @@ export const Format = () => (
           onItemClick={(d) => alert(`Clicked ${d.key}`)}
           valuePosition="end"
           valueClassName="value"
+          barClassName="bar"
+          outerBarClassName="outer"
         />
       }
+      type='percent'
     />
   </>
 );

@@ -36,6 +36,12 @@ export interface BarListProps {
    * Series to render.
    */
   series?: ReactElement<BarListSeriesProps, typeof BarList>;
+
+  /**
+   * Whether the values are percentages or absolute values.
+   * In the latter case, the chart would be relative
+   */
+  type?: 'percent' | 'count'
 }
 
 export const BarList: FC<BarListProps> = ({
@@ -44,12 +50,13 @@ export const BarList: FC<BarListProps> = ({
   className,
   sortDirection,
   style,
-  series
+  series,
+  type
 }) => {
   const curId = useId(id);
 
   const mashedData = useMemo(() => {
-    const maxVal = max(data, (d) => d.data);
+    const maxVal = type === 'count' ? max(data, (d) => d.data) : 100;
     const domainVal = maxVal == 0 ? [0] : [0, maxVal];
     const groupScale = scaleLinear().domain(domainVal).rangeRound([0, 100]);
 
@@ -100,5 +107,6 @@ export const BarList: FC<BarListProps> = ({
 BarList.defaultProps = {
   data: [],
   sortDirection: 'desc',
-  series: <BarListSeries />
+  series: <BarListSeries />,
+  type: 'count'
 };
