@@ -1,3 +1,9 @@
+# 14.9.2 - 7/10/23
+- [feature] Barlist support for percentage values #131
+
+# 14.9.1 - 7/3/23
+- [fix] fix typescript exports
+
 # 14.9.0 - 7/3/23
 - [feature] add `layered` as `variant` for Funnel Charts
 - [feature] opacity animation on funnel charts
