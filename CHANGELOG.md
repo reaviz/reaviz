@@ -1,3 +1,6 @@
+# 14.9.3 - 7/12/23
+- [fix] Calculate TreeMapLabel width based on nowrap value #132
+
 # 14.9.2 - 7/10/23
 - [feature] Barlist support for percentage values #131
 
