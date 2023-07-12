@@ -50,7 +50,6 @@ export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
 }) => {
   const key = data.data.key;
   const width = data.x1 - data.x0;
-  const size = calculateDimensions(key, fontFamily, fontSize);
   const text = wrapText({
     key,
     fontFamily,
@@ -61,6 +60,7 @@ export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
     width,
     height: data.y1 - data.y0
   });
+  const size = calculateDimensions(wrap ? key : text, fontFamily, fontSize);
 
   const offsetX =
     placement === 'start'
