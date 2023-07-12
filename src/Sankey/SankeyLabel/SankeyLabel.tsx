@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import classNames from 'classnames';
 import { SankeyNodeExtra } from '../utils';
 import css from './SankeyLabel.module.css';
+import ellipsize from 'ellipsize';
 
 export type SankeyLabelPosition = 'inside' | 'outside';
 
@@ -39,9 +40,17 @@ export interface SankeyLabelProps {
   fill: string;
 
   /**
-   * Label position.
+   * Label position. Set internally by `Sankey`.
    */
   position?: SankeyLabelPosition;
+
+   /**
+   * Percentage of total width occupied by labels on 
+   * either side of the graph inside the container.
+   * Used for auto-ellipsizing labels
+   * Set internally by `Sankey`.
+   */
+   labelPadding?: number;
 
   /**
    * Node data. Set internally by `Sankey`.
@@ -72,9 +81,15 @@ export interface SankeyLabelProps {
    * Custom formatting for the label.
    */
   format?: (value: SankeyLabelFormatProps) => any;
+
+  /**
+   * 
+   */
+  ellipsis?: number | 'none' | 'auto'
 }
 
 const LABEL_PADDING = 5;
+const LABEL_TRUNCATE_LENGTH = 10;
 
 export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   active,
@@ -88,7 +103,9 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   position,
   opacity,
   padding,
-  visible
+  visible,
+  ellipsis,
+  labelPadding
 }) => {
   const x0 = node?.x0 || 0;
   const x1 = node?.x1 || 0;
@@ -111,6 +128,17 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
     return null;
   }
 
+  let truncatedTitle = '';
+  if (ellipsis === 'auto') {
+    // This math somehow works for now!
+    const avaialableWidth = showRightSide ? x: width-x;
+    truncatedTitle = ellipsize(node.title, Math.min(LABEL_TRUNCATE_LENGTH, avaialableWidth/(labelPadding*100)));
+  } else if (ellipsis === 'none') {
+    truncatedTitle = node.title;
+  } else {
+    truncatedTitle = ellipsize(node.title, ellipsis);
+  }
+
   return (
     <text
       className={classNames(css.label, className)}
@@ -124,7 +152,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
     >
       {typeof format === 'function'
         ? format({ x, y, textAnchor, node })
-        : node.title}
+        : truncatedTitle}
     </text>
   );
 };
@@ -134,5 +162,6 @@ SankeyLabel.defaultProps = {
   fill: '#fff',
   position: 'inside',
   opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
-  visible: true
+  visible: true,
+  ellipsis: 'auto'
 };

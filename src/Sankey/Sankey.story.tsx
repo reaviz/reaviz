@@ -46,11 +46,12 @@ export const Simple = () => (
     height={300}
     width={550}
     nodeWidth={5}
+    labelPosition="outside"
     nodes={simpleSankeyNodes.map((node, i) => (
       <SankeyNode
         key={`node-${i}`}
         {...node}
-        label={<SankeyLabel position="outside" />}
+        label={<SankeyLabel />}
         onClick={() => onNodeClick(node.title)}
       />
     ))}
@@ -58,6 +59,76 @@ export const Simple = () => (
       <SankeyLink key={`link-${i}`} {...link} />
     ))}
   />
+);
+
+export const LabelsInsideContainer = () => (
+  <div style={{ border: 'solid 1px red' }}>
+    <Sankey
+      height={300}
+      width={550}
+      colorScheme="Spectral"
+      labelPosition="outside"
+      labelPaddingPercent={0.1}
+      nodes={simpleSankeyNodes.map((node, i) => (
+        <SankeyNode
+          key={`node-${i}`}
+          {...node}
+          label={<SankeyLabel ellipsis='none' />}
+          onClick={() => onNodeClick(node.title)}
+        />
+      ))}
+      links={simpleSankeyLinks.map((link, i) => (
+        <SankeyLink key={`link-${i}`} {...link} />
+      ))}
+  />
+  </div>
+);
+
+export const LabelsOutsideContainer = () => (
+  <div style={{ border: 'solid 1px red' }}>
+    <Sankey
+      height={300}
+      width={550}
+      colorScheme="Spectral"
+      labelPosition="outside"
+      labelPaddingPercent={0}
+      nodes={simpleSankeyNodes.map((node, i) => (
+        <SankeyNode
+          key={`node-${i}`}
+          {...node}
+          label={<SankeyLabel ellipsis='none' />}
+          onClick={() => onNodeClick(node.title)}
+        />
+      ))}
+      links={simpleSankeyLinks.map((link, i) => (
+        <SankeyLink key={`link-${i}`} {...link} />
+      ))}
+  />
+  </div>
+);
+
+export const FitLongLabels = () => (
+  <div style={{ border: 'solid 1px red' }}>
+    <Sankey
+      height={300}
+      width={550}
+      colorScheme="Spectral"
+      labelPosition="outside"
+      labelPaddingPercent={0.1}
+      nodes={simpleSankeyNodes.map((node, i) => (
+        <SankeyNode
+          key={`node-${i}`}
+          {...node}
+          title={node?.title.repeat(5)}
+          label={<SankeyLabel ellipsis='auto' />}
+          onClick={() => onNodeClick(node.title)}
+        />
+      ))}
+      links={simpleSankeyLinks.map((link, i) => (
+        <SankeyLink key={`link-${i}`} {...link} />
+      ))}
+  />
+  </div>
 );
 
 export const Filtering = () => <DemoStory />;
