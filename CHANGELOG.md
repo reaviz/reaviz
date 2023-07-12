@@ -1,3 +1,6 @@
+# 14.9.4 - 7/12/23
+- [fix] TreepMapLabel: Update nowrap label width #134
+
 # 14.9.3 - 7/12/23
 - [fix] Calculate TreeMapLabel width based on nowrap value #132
 
