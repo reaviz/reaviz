@@ -83,7 +83,8 @@ export interface SankeyLabelProps {
   format?: (value: SankeyLabelFormatProps) => any;
 
   /**
-   * 
+   * Specify the number of characters at which the text would be ellipsized.
+   * Defaults to 'auto' based on available width and max cut-off at `LABEL_TRUNCATE_LENGTH=10`
    */
   ellipsis?: number | 'none' | 'auto'
 }
