@@ -23,7 +23,7 @@ import { CloneElement, useId } from 'rdk';
 import { getColor, ColorSchemeType } from '../common/color';
 import { SankeyNodeProps, SankeyNode } from './SankeyNode';
 import { SankeyLinkProps, SankeyLink } from './SankeyLink';
-import { SankeyNodeExtra, SankeyLinkExtra } from './utils';
+import { SankeyNodeExtra, SankeyLinkExtra, LABEL_PADDING_PERCENT } from './utils';
 import { SankeyLabelPosition } from './SankeyLabel';
 
 const JUSTIFICATION = {
@@ -71,14 +71,6 @@ export interface SankeyProps extends ChartProps {
   labelPosition?: SankeyLabelPosition;
 
   /**
-   * Percentage of total width occupied by labels on 
-   * either side of the graph inside the container.
-   * Should be between (0, 1), excluding extreme values.
-   * Useful only when labels are outside the chart - `labelPosition = 'outside'`
-   */
-  labelPaddingPercent?: number;
-
-  /**
    * Nodes that are rendered.
    */
   nodes: NodeElement[];
@@ -100,7 +92,6 @@ export const Sankey: FC<SankeyProps> = ({
   nodeWidth,
   nodePadding,
   labelPosition,
-  labelPaddingPercent,
   colorScheme,
   nodes,
   containerClassName,
@@ -189,7 +180,7 @@ export const Sankey: FC<SankeyProps> = ({
         (node) => node.index === computedNode.index
       );
       const disabled = activeNodes.length > 0 && !active;
-      const labelPadding = labelPosition === 'outside' ? labelPaddingPercent : 0;      
+      const labelPadding = labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;      
 
       return (
         <CloneElement<SankeyNodeProps>
@@ -207,7 +198,7 @@ export const Sankey: FC<SankeyProps> = ({
         />
       );
     },
-    [activeNodes, animated, onInactive, onNodeActive, labelPosition, labelPaddingPercent]
+    [activeNodes, animated, onInactive, onNodeActive, labelPosition]
   );
 
   const renderLink = useCallback(
@@ -237,7 +228,7 @@ export const Sankey: FC<SankeyProps> = ({
   const getNodesAndLinks = useCallback(
     (chartWidth: number, chartHeight: number) => {
 
-      const labelPadding = labelPosition === 'outside' ? labelPaddingPercent : 0;
+      const labelPadding = labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;
       const padding = labelPadding * chartWidth;
 
       const sankeyChart = sankey()
@@ -280,7 +271,7 @@ export const Sankey: FC<SankeyProps> = ({
 
       return { sankeyNodes, sankeyLinks };
     },
-    [getNodeColor, justification, links, nodePadding, nodeWidth, nodes, labelPosition, labelPaddingPercent]
+    [getNodeColor, justification, links, nodePadding, nodeWidth, nodes, labelPosition]
   );
 
   const renderChart = useCallback(
@@ -328,5 +319,4 @@ Sankey.defaultProps = {
   nodeWidth: 15,
   nodePadding: 10,
   nodePosition: 'inside',
-  labelPaddingPercent: 0.075
 };

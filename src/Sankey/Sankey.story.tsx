@@ -68,30 +68,6 @@ export const LabelsInsideContainer = () => (
       width={550}
       colorScheme="Spectral"
       labelPosition="outside"
-      labelPaddingPercent={0.1}
-      nodes={simpleSankeyNodes.map((node, i) => (
-        <SankeyNode
-          key={`node-${i}`}
-          {...node}
-          label={<SankeyLabel ellipsis='none' />}
-          onClick={() => onNodeClick(node.title)}
-        />
-      ))}
-      links={simpleSankeyLinks.map((link, i) => (
-        <SankeyLink key={`link-${i}`} {...link} />
-      ))}
-  />
-  </div>
-);
-
-export const LabelsOutsideContainer = () => (
-  <div style={{ border: 'solid 1px red' }}>
-    <Sankey
-      height={300}
-      width={550}
-      colorScheme="Spectral"
-      labelPosition="outside"
-      labelPaddingPercent={0}
       nodes={simpleSankeyNodes.map((node, i) => (
         <SankeyNode
           key={`node-${i}`}
@@ -114,7 +90,6 @@ export const FitLongLabels = () => (
       width={550}
       colorScheme="Spectral"
       labelPosition="outside"
-      labelPaddingPercent={0.1}
       nodes={simpleSankeyNodes.map((node, i) => (
         <SankeyNode
           key={`node-${i}`}
