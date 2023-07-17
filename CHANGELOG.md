@@ -1,3 +1,6 @@
+# 14.9.5 - 7/17/23
+- [fix] Sankey: labels should fit within the total width #133
+
 # 14.9.4 - 7/12/23
 - [fix] TreepMapLabel: Update nowrap label width #134
 
