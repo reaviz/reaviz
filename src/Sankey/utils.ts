@@ -29,3 +29,5 @@ export type SankeyNodeExtra = SankeyNode<NodeExtra, LinkExtra>;
 export type SankeyLinkExtra = SankeyLink<NodeExtra, LinkExtra>;
 
 export const DEFAULT_COLOR = 'rgba(255, 255, 255, 0.2)';
+
+export const LABEL_PADDING_PERCENT = 0.1;

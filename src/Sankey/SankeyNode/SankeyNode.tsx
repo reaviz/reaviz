@@ -12,7 +12,7 @@ import { ChartInternalDataTypes } from '../../common/data';
 import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
-import { SankeyLabel, SankeyLabelProps } from '../SankeyLabel';
+import { SankeyLabel, SankeyLabelPosition, SankeyLabelProps } from '../SankeyLabel';
 import { SankeyNodeExtra, DEFAULT_COLOR } from '../utils';
 import css from './SankeyNode.module.css';
 import { useHoverIntent } from '../../common/utils/useHoverIntent';
@@ -64,6 +64,18 @@ export interface SankeyNodeProps extends SankeyNodeExtra {
   label: ReactElement<SankeyLabelProps, typeof SankeyLabel>;
 
   /**
+   * Label position. Set internally by `Sankey`.
+   */
+  labelPosition?: SankeyLabelPosition;
+
+  /**
+   * Percentage of total width occupied by labels on 
+   * either side of the graph inside the container.
+   * Set internally by `Sankey`.
+   */
+  labelPadding?: number;
+
+  /**
    * Opacity callback for the node.
    */
   opacity: (active: boolean, disabled: boolean) => number;
@@ -103,6 +115,8 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   active,
   chartWidth,
   label,
+  labelPosition,
+  labelPadding,
   tooltip,
   title,
   value,
@@ -207,6 +221,8 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           chartWidth={chartWidth}
           nodeWidth={nodeWidth}
           node={node}
+          position={labelPosition}
+          labelPadding={labelPadding}
         />
       )}
       {!tooltip?.props?.disabled && (
