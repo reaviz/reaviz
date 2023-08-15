@@ -20,19 +20,19 @@ jobs:
       - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
-          version: 18.x
+          node-version: 18.x
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
       - name: Lint
-        run: yarn lint
+        run: npm run lint
 
       - name: Build Prod
-        run: yarn build
+        run: npm run build
 
       - name: Build Storybook
-        run: yarn build-storybook
+        run: npm run build-storybook
 
       - name: Test
-        run: yarn test:ci
+        run: npm run test:ci

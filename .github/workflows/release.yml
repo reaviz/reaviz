@@ -18,16 +18,16 @@ jobs:
       - name: Use Node.js 18.x
         uses: actions/setup-node@v1
         with:
-          version: 18.x
+          node-version: 18.x
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
 
       - name: Build Storybook
-        run: yarn build-storybook
+        run: npm run build-storybook
 
       - name: Copy Domain
-        run: yarn copy
+        run: npm run copy
 
       - name: Publish Storybook to GH Pages
         if: success()
@@ -40,12 +40,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Publish Chromatic
-      #  run: yarn chromatic
+      #  run: npm run chromatic
 
       # - name: Create Release Pull Request or Publish to npm
       #  uses: changesets/action@master
       #  with:
-      #    publish: yarn release
+      #    publish: npm run release
       #  env:
       #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #    NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
