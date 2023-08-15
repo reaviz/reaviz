@@ -1,3 +1,7 @@
+# 14.9.6 - 8/15/23
+- [chore] upgrade dpes
+- [chore] move to npm over yarn
+
 # 14.9.5 - 7/17/23
 - [fix] Sankey: labels should fit within the total width #133
 
