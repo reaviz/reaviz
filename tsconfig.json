@@ -26,9 +26,13 @@
     "suppressExcessPropertyErrors": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "5.0",
+    "types": [
+      "node",
+      "vite/client",
+      "vitest/globals"
+    ]
   },
-  "types": ["node"],
   "include": ["src/**/*", "demo/**/*"],
   "exclude": ["node_modules", "dist"]
 }
