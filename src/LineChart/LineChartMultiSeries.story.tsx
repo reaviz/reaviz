@@ -6,7 +6,8 @@ import {
   StackedNormalizedAreaChart,
   StackedAreaSeries,
   Line,
-  StackedNormalizedAreaSeries
+  StackedNormalizedAreaSeries,
+  PointSeries
 } from '../AreaChart';
 import {
   LinearXAxisTickSeries,
@@ -15,6 +16,7 @@ import {
   LinearYAxis
 } from '../common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
+import { ScatterPoint } from '../ScatterPlot';
 
 export default {
   title: 'Charts/Line Chart/Multi Series',
@@ -38,6 +40,33 @@ export const _Simple = () => (
         type="grouped"
         line={<Line strokeWidth={4} />}
         colorScheme="cybertron"
+      />
+    }
+    data={multiDateData}
+  />
+);
+
+export const Clicked = () => (
+  <LineChart
+    width={550}
+    height={250}
+    series={
+      <LineSeries
+        type="grouped"
+        line={<Line strokeWidth={4} />}
+        colorScheme="cybertron"
+        symbols={
+          <PointSeries
+            point={
+              <ScatterPoint
+                visible={(data, index) => true}
+                onClick={(data) => {
+                  console.log('Clicked node:' + JSON.stringify(data));
+                }}
+              />
+            }
+          />
+        }
       />
     }
     data={multiDateData}
