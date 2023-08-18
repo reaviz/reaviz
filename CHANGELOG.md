@@ -1,3 +1,6 @@
+# 14.9.7 - 8/18/23
+- [improvement] add node sort option to sankey #47
+
 # 14.9.6 - 8/15/23
 - [chore] upgrade dpes
 - [chore] move to npm over yarn
