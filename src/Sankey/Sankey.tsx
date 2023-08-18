@@ -84,7 +84,7 @@ export interface SankeyProps extends ChartProps {
    *
    * Reference: https://github.com/d3/d3-sankey#sankey_nodeSort
    */
-  nodeSort: (a: any, b: any) => number;
+  nodeSort?: (a: any, b: any) => number;
 
   /**
    * Nodes that are rendered.
