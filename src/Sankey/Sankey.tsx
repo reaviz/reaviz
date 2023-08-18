@@ -71,6 +71,22 @@ export interface SankeyProps extends ChartProps {
   labelPosition?: SankeyLabelPosition;
 
   /**
+   * Sort function for the nodes.
+   *
+   * If sort is specified, sets the node sort method and returns this Sankey generator.
+   * If sort is not specified, returns the current node sort method, which defaults
+   * to undefined, indicating that vertical order of nodes within each column will
+   * be determined automatically by the layout. If sort is null, the order is fixed
+   * by the input. Otherwise, the specified sort function determines the order;
+   * the function is passed two nodes, and must return a value less than 0 if the
+   * first node should be above the second, and a value greater than 0 if the second
+   * node should be above the first, or 0 if the order is not specified.
+   *
+   * Reference: https://github.com/d3/d3-sankey#sankey_nodeSort
+   */
+  nodeSort: (a: any, b: any) => number;
+
+  /**
    * Nodes that are rendered.
    */
   nodes: NodeElement[];
@@ -92,6 +108,7 @@ export const Sankey: FC<SankeyProps> = ({
   nodeWidth,
   nodePadding,
   labelPosition,
+  nodeSort,
   colorScheme,
   nodes,
   containerClassName,
@@ -180,7 +197,7 @@ export const Sankey: FC<SankeyProps> = ({
         (node) => node.index === computedNode.index
       );
       const disabled = activeNodes.length > 0 && !active;
-      const labelPadding = labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;      
+      const labelPadding = labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;
 
       return (
         <CloneElement<SankeyNodeProps>
@@ -238,6 +255,7 @@ export const Sankey: FC<SankeyProps> = ({
         ])
         .nodeWidth(nodeWidth)
         .nodePadding(nodePadding)
+        .nodeSort(nodeSort)
         .nodeAlign(JUSTIFICATION[justification])
         .nodeId((node: any) => node.id || node.index);
 
@@ -259,19 +277,19 @@ export const Sankey: FC<SankeyProps> = ({
       });
 
       /*
-    // NOTE: Not sure what this is doing
-    sankeyNodes.sort((a, b) => {
-      const aX0 = a && a.x0 ? a.x0 : 0;
-      const aY0 = a && a.y0 ? a.y0 : 0;
-      const bX0 = b && b.x0 ? b.x0 : 0;
-      const bY0 = b && b.y0 ? b.y0 : 0;
-      return aX0 - bX0 || aY0 - bY0;
-    });
-    */
+      // NOTE: Not sure what this is doing
+      sankeyNodes.sort((a, b) => {
+        const aX0 = a && a.x0 ? a.x0 : 0;
+        const aY0 = a && a.y0 ? a.y0 : 0;
+        const bX0 = b && b.x0 ? b.x0 : 0;
+        const bY0 = b && b.y0 ? b.y0 : 0;
+        return aX0 - bX0 || aY0 - bY0;
+      });
+      */
 
       return { sankeyNodes, sankeyLinks };
     },
-    [getNodeColor, justification, links, nodePadding, nodeWidth, nodes, labelPosition]
+    [getNodeColor, nodeSort, justification, links, nodePadding, nodeWidth, nodes, labelPosition]
   );
 
   const renderChart = useCallback(
