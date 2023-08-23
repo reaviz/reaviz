@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useMemo } from 'react';
 import classNames from 'classnames';
 import { ChartDataShape } from '../../../common/data';
 import chroma from 'chroma-js';
@@ -45,13 +45,13 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({ className, style, 
     .join(',');
 
   // Get the extent from the data passed
-  const [end, start] = extent(
+  const [end, start] = useMemo(() => extent(
     uniqueBy(
       data,
       (d) => d.data,
       (d) => d.data
     )
-  );
+  ), [data]);
 
   // Get direction
   const gradientDir = orientation === 'vertical' ? '' : 'to left,';

@@ -1,4 +1,4 @@
-import React, { PropsWithChildren, FC, useRef, useState, useEffect } from 'react';
+import React, { PropsWithChildren, FC, useRef, useState, useEffect, useCallback } from 'react';
 import bind from 'memoize-bind';
 import {
   Pan,
@@ -94,12 +94,12 @@ export const ZoomPan: FC<ZoomPanProps> = ({
   }, [x, y, scale, matrix]);
 
 
-  const onPanStartHandler = (event: PanStartEvent) => {
+  const onPanStartHandler = useCallback((event: PanStartEvent) => {
     setIsPanning(true);
     onPanStart(event);
-  };
+  }, [onPanStart]);
 
-  const onPanMoveHandler = (event: PanMoveEvent) => {
+  const onPanMoveHandler =  useCallback((event: PanMoveEvent) => {
     onZoomPan({
       scale: scale,
       x: event.x,
@@ -109,14 +109,14 @@ export const ZoomPan: FC<ZoomPanProps> = ({
     });
 
     onPanMove(event);
-  };
+  }, [onPanMove, onZoomPan, scale]);
 
-  const onPanEndHandler = (event: PanEndEvent) => {
+  const onPanEndHandler =  useCallback((event: PanEndEvent) => {
     setIsPanning(false);
     onPanEnd(event);
-  };
+  }, [onPanEnd]);
 
-  const onZoomHandler = (event: ZoomEvent) => {
+  const onZoomHandler =  useCallback((event: ZoomEvent) => {
     onZoomPan({
       x: event.x,
       y: event.y,
@@ -125,12 +125,12 @@ export const ZoomPan: FC<ZoomPanProps> = ({
       type: 'zoom'
     });
     onZoom(event);
-  };
+  }, [onZoom, onZoomPan]);
 
-  const onZoomEndHandler = () => {
+  const onZoomEndHandler =  useCallback(() => {
     setIsZooming(false);
     onZoomEnd();
-  };
+  }, [onZoomEnd]);
 
   const cursor = pannable ? 'move' : 'auto';
   const selection = isZooming || isPanning ? 'none' : 'auto';
