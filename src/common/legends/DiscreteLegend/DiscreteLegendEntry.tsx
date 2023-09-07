@@ -1,4 +1,4 @@
-import React, { Component, ReactNode, ReactElement, FC } from 'react';
+import React, { ReactNode, ReactElement, FC } from 'react';
 import classNames from 'classnames';
 import {
   DiscreteLegendSymbol,

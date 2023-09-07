@@ -1,5 +1,4 @@
 import React, { Fragment, useState, FC, useCallback } from 'react';
-import bind from 'memoize-bind';
 import { BrushHandle } from './BrushHandle';
 import { Move } from '../Gestures/Move';
 import css from './BrushSlice.module.css';
@@ -70,9 +69,9 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
       <g transform={`translate(${start}, 0)`}>
         <Move
           cursor="grabbing"
-          onMoveStart={bind(onMoveStart)}
-          onMove={bind(onMove)}
-          onMoveEnd={bind(onMoveEnd)}
+          onMoveStart={onMoveStart}
+          onMove={onMove}
+          onMoveEnd={onMoveEnd}
         >
           <rect
             className={css.slice}

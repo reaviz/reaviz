@@ -1,5 +1,4 @@
 import React, { FC, PropsWithChildren, useCallback } from 'react';
-import bind from 'memoize-bind';
 import { BrushConfiguration, Brush } from './Brush';
 import { BrushChangeEvent } from './BrushSlice';
 
@@ -58,7 +57,7 @@ export const ChartBrush: FC<Partial<ChartBrushProps>> = (props) => {
     <Brush
       {...props}
       {...getBrushOffset()}
-      onBrushChange={bind(onBrushChangeHandler)}
+      onBrushChange={onBrushChangeHandler}
     >
       {children}
     </Brush>
