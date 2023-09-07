@@ -92,3 +92,10 @@ export const LinearAxis = (props: LinearAxisProps) => {
     </g>
   );
 };
+
+LinearAxis.defaultProps = {
+  scaled: false,
+  roundDomains: false,
+  axisLine: <LinearAxisLine />,
+  onDimensionsChange: () => undefined
+};
