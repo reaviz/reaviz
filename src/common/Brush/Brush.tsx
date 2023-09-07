@@ -9,7 +9,7 @@ export interface BrushConfiguration {
   disabled?: boolean;
   fill?: string;
   domain?: [ChartDataTypes, ChartDataTypes];
-  onBrushChange?: (e: BrushChangeEvent) => void;
+  onBrushChange?: (e) => void;
 }
 
 interface BrushProps extends PropsWithChildren {
