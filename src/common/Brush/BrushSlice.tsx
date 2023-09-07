@@ -35,7 +35,7 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
     const startUpdated = start + x;
     const endUpdated = end + x;
 
-    if (start >= 0 && end <= width) {
+    if (startUpdated >= 0 && endUpdated <= width) {
       onBrushChange({
         start: startUpdated,
         end: endUpdated
