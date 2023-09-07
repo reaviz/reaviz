@@ -43,10 +43,6 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
     }
   }, [start, end, width, onBrushChange]);
 
-  const onMoveEnd = useCallback(() => {
-    setIsDragging(false);
-  }, []);
-
   const onHandleDrag = useCallback((direction: 'start' | 'end', deltaX: number) => {
     const startUpdated = direction === 'start' ? start + deltaX : start;
     const endUpdated = direction !== 'start' ? end + deltaX : end;
@@ -71,7 +67,7 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
           cursor="grabbing"
           onMoveStart={onMoveStart}
           onMove={onMove}
-          onMoveEnd={onMoveEnd}
+          onMoveEnd={() => setIsDragging(false)}
         >
           <rect
             className={css.slice}
