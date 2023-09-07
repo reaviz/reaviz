@@ -11,12 +11,11 @@ export interface LinearAxisTickLineProps {
   className?: any;
 }
 
-export const LinearAxisTickLine = ({ height, width, orientation, size = 5, strokeColor = '#8F979F', strokeWidth = 1, position, className }: LinearAxisTickLineProps) => {
+export const LinearAxisTickLine = ({ height, width, orientation, size = 3, strokeColor = '#8F979F', strokeWidth = 1, position = 'center', className }: LinearAxisTickLineProps) => {
   function positionTick() {
     const isVertical = orientation === 'vertical';
-    const tickSize = size || 0;
-    const start = position === 'start' ? tickSize * -1 : position === 'center' ? tickSize * -0.5 : 0;
-    const end = start + tickSize;
+    const start = position === 'start' ? size * -1 : position === 'center' ? size * -0.5 : 0;
+    const end = start + size;
 
     return {
       x1: isVertical ? end : 0,

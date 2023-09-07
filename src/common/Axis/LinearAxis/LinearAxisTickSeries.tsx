@@ -139,7 +139,7 @@ export const LinearAxisTickSeries = (props: LinearAxisTickSeriesProps) => {
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
       const text = ellipsize(fullText, 18);
-      const size = label ? calculateDimensions(text, label.props.fontFamily, label.props.fontSize?.toString()) : {};
+      const size = label ? calculateDimensions(text, label.props.fontFamily ?? 'sans serif', (label.props.fontSize ?? 12).toString()) : {};
 
       return {
         ...position,
@@ -160,7 +160,7 @@ export const LinearAxisTickSeries = (props: LinearAxisTickSeriesProps) => {
       {ticks.map((tick, i) => (
         <g key={i} transform={`translate(${tick.x}, ${tick.y})`}>
           {line && <CloneElement<LinearAxisTickLineProps> element={line} height={height} width={width} orientation={orientation} />}
-          {label && <CloneElement<LinearAxisTickLabelProps> element={label} text={tick.text} fullText={tick.fullText} half={tick.half} angle={angle} orientation={orientation} line={line!} />}
+          {label && <CloneElement<LinearAxisTickLabelProps> padding={5} element={label} text={tick.text} fullText={tick.fullText} half={tick.half} angle={angle} orientation={orientation} line={line!} />}
         </g>
       ))}
     </Fragment>

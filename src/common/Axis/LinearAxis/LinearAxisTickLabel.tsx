@@ -13,14 +13,14 @@ export interface LinearAxisTickLabelProps {
   fontSize?: number;
   fontFamily: string;
   rotation: boolean | number;
-  padding: number | { fromAxis: number; alongAxis: number };
+  padding?: number | { fromAxis: number; alongAxis: number };
   textAnchor?: 'start' | 'end' | 'middle';
   position: 'start' | 'end' | 'center';
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
   className?: any;
 }
 
-export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, line, format, fill = '#8F979F', fontSize = 11, fontFamily = 'sans-serif', rotation = true, padding = 0, textAnchor, position, align = 'center', className }: LinearAxisTickLabelProps) => {
+export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, line, format, fill = '#8F979F', fontSize = 11, fontFamily = 'sans-serif', rotation = true, padding = 5, textAnchor, position, align = 'center', className }: LinearAxisTickLabelProps) => {
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';
@@ -37,13 +37,14 @@ export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, 
     return align;
   }
 
+  // bug in this function - spacing is NA
   function getTickLineSpacing() {
     if (!line) {
       return [0, 0];
     }
 
-    const size = line.props.size;
-    const position = line.props.position;
+    const size = line.props.size ?? 3;
+    const position = line.props.position ?? 'center';
 
     if (position === 'start') {
       return [size * -1, 0];
@@ -54,9 +55,8 @@ export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, 
     }
   }
 
-  // bug in this function
   function getOffset() {
-    const adjustedPadding = typeof padding === 'number' ? { fromAxis: padding as number, alongAxis: padding as number } : (padding as { fromAxis: number; alongAxis: number });
+    const adjustedPadding = typeof padding === 'number' ? { fromAxis: padding, alongAxis: padding } : padding;
 
     const spacing = getTickLineSpacing();
     const offset1 = position === 'start' ? spacing[0] - adjustedPadding.fromAxis : position === 'end' ? spacing[1] + adjustedPadding.fromAxis : 0;
@@ -66,6 +66,7 @@ export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, 
     offset2 += align === 'center' ? 0 : align === 'start' ? -adjustedPadding.alongAxis : adjustedPadding.alongAxis;
 
     const horz = orientation === 'horizontal';
+
     return {
       [horz ? 'x' : 'y']: offset2,
       [horz ? 'y' : 'x']: offset1
@@ -110,8 +111,6 @@ export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, 
 
   const { x, y } = getOffset();
   const textPosition = getTextPosition();
-
-  console.log(getOffset());
 
   return (
     <g transform={`translate(${x}, ${y})`} fontSize={fontSize} fontFamily={fontFamily}>
