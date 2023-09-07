@@ -49,7 +49,7 @@ export interface ZoomPanProps extends PropsWithChildren {
   onPanCancel: (event: PanCancelEvent) => void;
 }
 
-export const ZoomPan: FC<ZoomPanProps> = ({
+export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
   height,
   width,
   children,
