@@ -33,3 +33,8 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({ strokeColor =
     </Fragment>
   );
 };
+
+LinearAxisLine.defaultProps = {
+  strokeColor: '#8F979F',
+  strokeWidth: 1
+};

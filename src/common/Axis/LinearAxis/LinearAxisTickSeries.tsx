@@ -112,9 +112,7 @@ export const LinearAxisTickSeries = (props: LinearAxisTickSeriesProps) => {
   function getLabelFormat(): (label: string) => string {
     const { label, scale } = props;
 
-    if (label && label.props.format) {
-      return label.props.format;
-    } else if (scale.tickFormat) {
+    if (scale.tickFormat) {
       return scale.tickFormat.apply(scale, [5]);
     } else {
       return (v) => formatValue(v);
@@ -165,4 +163,10 @@ export const LinearAxisTickSeries = (props: LinearAxisTickSeriesProps) => {
       ))}
     </Fragment>
   );
+};
+
+LinearAxisTickSeries.defaultProps = {
+  line: <LinearAxisTickLine height={10} width={10} orientation="horizontal" position="center" />,
+  label: <LinearAxisTickLabel line={<LinearAxisTickLine orientation="horizontal" position="center" height={5} width={5} />} text="" fullText="" angle={0} orientation="horizontal" half="start" position="center" />,
+  tickSize: 30
 };

@@ -4,14 +4,14 @@ export interface LinearAxisTickLineProps {
   height: number;
   width: number;
   orientation: 'horizontal' | 'vertical';
-  size?: number;
+  size: number;
   strokeColor?: string;
-  strokeWidth?: number;
+  strokeWidth: number;
   position: 'start' | 'end' | 'center';
   className?: any;
 }
 
-export const LinearAxisTickLine = ({ height, width, orientation, size = 3, strokeColor = '#8F979F', strokeWidth = 1, position = 'center', className }: LinearAxisTickLineProps) => {
+export const LinearAxisTickLine = ({ orientation, size = 3, strokeColor = '#8F979F', strokeWidth = 1, position = 'center', className }: LinearAxisTickLineProps) => {
   function positionTick() {
     const isVertical = orientation === 'vertical';
     const start = position === 'start' ? size * -1 : position === 'center' ? size * -0.5 : 0;
@@ -28,4 +28,10 @@ export const LinearAxisTickLine = ({ height, width, orientation, size = 3, strok
   const path = positionTick();
 
   return <line className={className} strokeWidth={strokeWidth} stroke={strokeColor} {...path} />;
+};
+
+LinearAxisTickLine.defaultProps = {
+  strokeColor: '#8F979F',
+  strokeWidth: 1,
+  size: 5
 };

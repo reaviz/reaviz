@@ -10,17 +10,17 @@ export interface LinearAxisTickLabelProps {
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
   format?: (v) => any;
   fill: string;
-  fontSize?: number;
+  fontSize: number;
   fontFamily: string;
   rotation: boolean | number;
-  padding?: number | { fromAxis: number; alongAxis: number };
+  padding: number | { fromAxis: number; alongAxis: number };
   textAnchor?: 'start' | 'end' | 'middle';
   position: 'start' | 'end' | 'center';
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
   className?: any;
 }
 
-export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, line, format, fill = '#8F979F', fontSize = 11, fontFamily = 'sans-serif', rotation = true, padding = 5, textAnchor, position, align = 'center', className }: LinearAxisTickLabelProps) => {
+export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, line, fill = '#8F979F', fontSize = 11, fontFamily = 'sans-serif', rotation = true, padding = 5, textAnchor, position, align = 'center', className }: LinearAxisTickLabelProps) => {
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';
@@ -120,4 +120,13 @@ export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, 
       </text>
     </g>
   );
+};
+
+LinearAxisTickLabel.defaultProps = {
+  fill: '#8F979F',
+  fontSize: 11,
+  fontFamily: 'sans-serif',
+  rotation: true,
+  padding: 0,
+  align: 'center'
 };
