@@ -129,7 +129,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   type,
   id
 }) => {
-  const ref = useRef<TooltipArea | null>(null);
+  const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
 
