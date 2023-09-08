@@ -15,9 +15,9 @@ export interface LinearAxisProps {
   domain?: ChartDataTypes[];
   scaled?: boolean;
   roundDomains?: boolean;
-  type: 'value' | 'time' | 'category' | 'duration';
-  position: 'start' | 'end' | 'center';
-  tickSeries: ReactElement<LinearAxisTickSeriesProps, typeof LinearAxisTickSeries>;
+  type?: 'value' | 'time' | 'category' | 'duration';
+  position?: 'start' | 'end' | 'center';
+  tickSeries?: ReactElement<LinearAxisTickSeriesProps, typeof LinearAxisTickSeries>;
   axisLine?: ReactElement<LinearAxisLineProps, typeof LinearAxisLine> | null;
   scale?: any;
   orientation?: 'horizontal' | 'vertical';

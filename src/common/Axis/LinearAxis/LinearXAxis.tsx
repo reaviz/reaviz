@@ -26,7 +26,7 @@ LinearXAxisTickSeries.defaultProps = {
   label: <LinearXAxisTickLabel />
 };
 
-export const LinearXAxis: FC<LinearAxisProps> = (props) => <LinearAxis {...props} />;
+export const LinearXAxis: FC<LinearAxisProps> = (props) => <LinearAxis tickSeries={<LinearXAxisTickSeries />} orientation="horizontal" type="value" position="end" roundDomains={false} scaled={false} {...props} />;
 LinearXAxis.defaultProps = {
   ...LinearAxis.defaultProps,
   position: 'end',
