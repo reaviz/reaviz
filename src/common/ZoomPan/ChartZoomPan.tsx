@@ -1,5 +1,4 @@
-import React, { Component, PropsWithChildren } from 'react';
-import bind from 'memoize-bind';
+import React, { FC, PropsWithChildren, useCallback, useMemo } from 'react';
 import { ZoomPan, ZoomPanEvent } from './ZoomPan';
 import { ChartInternalDataShape, ChartDataTypes } from '../data';
 import { getXScale } from '../scales';
@@ -28,13 +27,19 @@ export interface ChartZoomPanProps extends PropsWithChildren {
   onZoomPan?: (event: ZoomPanChangeEvent) => void;
 }
 
-export class ChartZoomPan extends Component<ChartZoomPanProps> {
-  static defaultProps: Partial<ChartZoomPanProps> = {
-    onZoomPan: () => undefined
-  };
-
-  onZoomPan(event: ZoomPanEvent) {
-    const { width, data, axisType, roundDomains, onZoomPan } = this.props;
+export const ChartZoomPan: FC<Partial<ChartZoomPanProps>> = ({
+  data,
+  height,
+  children,
+  disabled,
+  domain,
+  width,
+  axisType,
+  roundDomains,
+  onZoomPan,
+  ...rest
+}) => {
+  const onZoomPanHandler = useCallback((event: ZoomPanEvent) => {
     const can =
       event.type === 'zoom' || (event.type === 'pan' && event.scale > 1);
 
@@ -58,22 +63,13 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
         isZoomed: event.scale !== 1
       });
     }
-  }
+  }, [axisType, data, onZoomPan, roundDomains, width]);
 
-  getOffset() {
+  const zoomOffset = useMemo(() => {
     let zoomOffset = {
       scale: undefined,
       x: undefined
     } as any;
-
-    const {
-      disabled,
-      domain,
-      width,
-      data,
-      axisType,
-      roundDomains
-    } = this.props;
 
     if (!disabled && domain) {
       const xScale: any = getXScale({
@@ -97,24 +93,23 @@ export class ChartZoomPan extends Component<ChartZoomPanProps> {
     }
 
     return zoomOffset;
-  }
+  }, [axisType, data, disabled, domain, roundDomains, width]);
 
-  render() {
-    const { data, height, children, width, onZoomPan, ...rest } = this.props;
-    const { scale, x } = this.getOffset();
+  return (
+    <ZoomPan
+      {...rest}
+      scale={zoomOffset.scale}
+      x={zoomOffset.x}
+      height={height}
+      width={width}
+      pannable={zoomOffset.scale > 1}
+      onZoomPan={onZoomPanHandler}
+    >
+      {children}
+    </ZoomPan>
+  );
+};
 
-    return (
-      <ZoomPan
-        {...rest}
-        scale={scale}
-        x={x}
-        height={height}
-        width={width}
-        pannable={scale > 1}
-        onZoomPan={bind(this.onZoomPan, this)}
-      >
-        {children}
-      </ZoomPan>
-    );
-  }
-}
+ChartZoomPan.defaultProps = {
+  onZoomPan: () => undefined,
+};
