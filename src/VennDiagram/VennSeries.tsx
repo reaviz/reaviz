@@ -16,8 +16,8 @@ import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
 import invert from 'invert-color';
 import { DEFAULT_TRANSITION } from '../common/Motion';
+import { identifier } from 'safe-identifier';
 
-const getSafeKey = (d) => d.data?.key?.replace(' ', '');
 
 export interface VennSeriesProps {
   /**
@@ -111,7 +111,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       const arcFill = arc.props.fill || fill;
 
       const key = d?.data?.key;
-      const safeKey = getSafeKey(d);
+      const safeKey = identifier(d.data?.key);
       const isSelected = selections?.includes(key);
 
       // Get the state of the arc
@@ -225,7 +225,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       {data.map((d, index) => (
         <use
           key={index}
-          xlinkHref={`#${id}-${getSafeKey(d)}-text`}
+          xlinkHref={`#${id}-${identifier(d.data?.key)}-text`}
           style={{ pointerEvents: 'none' }}
         />
       ))}

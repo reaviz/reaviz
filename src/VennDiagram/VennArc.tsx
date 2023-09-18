@@ -147,7 +147,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
     onPointerOver: (event) => {
       if (!disabled) {
         setInternalActive(true);
-        onMouseEnter({
+        onMouseEnter?.({
           value: data.data,
           nativeEvent: event
         });
@@ -156,7 +156,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
     onPointerOut: (event) => {
       if (!disabled) {
         setInternalActive(false);
-        onMouseLeave({
+        onMouseLeave?.({
           value: data.data,
           nativeEvent: event
         });
@@ -171,7 +171,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       onPointerOut={pointerOut}
       onClick={(event) => {
         if (!disabled) {
-          onClick({
+          onClick?.({
             value: data.data,
             nativeEvent: event
           });
