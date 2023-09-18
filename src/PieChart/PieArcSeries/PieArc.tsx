@@ -1,4 +1,4 @@
-import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
+import React, { ReactElement, useState, FC, useRef, useMemo, useCallback } from 'react';
 import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
 import { CloneElement } from 'rdk';
@@ -6,6 +6,7 @@ import { ArcData } from '../PieChart';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { useInterpolate } from './useInterpolate';
 import { useHoverIntent } from '../../common/utils/useHoverIntent';
+import { Gradient, GradientProps } from '../../common/Gradient';
 
 export interface PieArcMouseEvent {
   value: ArcData['data'];
@@ -13,6 +14,11 @@ export interface PieArcMouseEvent {
 }
 
 export interface PieArcProps {
+  /**
+   * Unique id for arc
+   */
+  id?: string;
+
   /**
    * The arc generator function returning an arc path
    * @param data
@@ -50,6 +56,11 @@ export interface PieArcProps {
   disabled?: boolean;
 
   /**
+   * Gradient shades for the bar.
+   */
+  gradient?: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
    * OnClick event handler
    * @param e Click event
    */
@@ -69,11 +80,14 @@ export interface PieArcProps {
 }
 
 export const PieArc: FC<PieArcProps> = ({
+  id,
   color,
   data,
   arc,
   cursor,
   animated,
+  mask,
+  gradient,
   disabled,
   onClick,
   onMouseEnter,
@@ -92,7 +106,7 @@ export const PieArc: FC<PieArcProps> = ({
     onPointerOver: (event) => {
       if (!disabled) {
         setActive(true);
-        onMouseEnter({
+        onMouseEnter?.({
           value: data.data,
           nativeEvent: event as any
         });
@@ -101,13 +115,24 @@ export const PieArc: FC<PieArcProps> = ({
     onPointerOut: (event) => {
       if (!disabled) {
         setActive(false);
-        onMouseLeave({
+        onMouseLeave?.({
           value: data.data,
           nativeEvent: event as any
         });
       }
     }
   });
+
+  const internalFill = useMemo(
+    () => {
+      if (gradient) {
+        return `url(#gradient-${id})`;
+      }
+
+      return color;
+    },
+    [gradient, id, color]
+  );
 
   return (
     <g ref={arcRef}>
@@ -116,18 +141,26 @@ export const PieArc: FC<PieArcProps> = ({
         transition={transition}
         d={d}
         style={{ cursor }}
-        fill={fill}
+        fill={internalFill}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
-        onClick={(event) => {
+        onClick={event => {
           if (!disabled) {
-            onClick({
+            onClick?.({
               value: data.data,
               nativeEvent: event
             });
           }
         }}
       />
+      {gradient && (
+        <CloneElement<GradientProps>
+          element={gradient}
+          id={`gradient-${id}`}
+          direction="horizontal"
+          color={fill}
+        />
+      )}
       {!tooltip?.props?.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
@@ -144,8 +177,5 @@ PieArc.defaultProps = {
   cursor: 'initial',
   animated: true,
   disabled: false,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined,
   tooltip: <ChartTooltip />
 };

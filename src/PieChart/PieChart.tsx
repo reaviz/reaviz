@@ -1,8 +1,8 @@
-import React, { FC, ReactElement, useMemo } from 'react';
+import React, { FC, ReactElement, useCallback, useMemo } from 'react';
 import classNames from 'classnames';
 import { PieArcDatum } from 'd3-shape';
 import { pie } from 'd3-shape';
-import { CloneElement } from 'rdk';
+import { CloneElement, useId } from 'rdk';
 import {
   ChartProps,
   ChartContainer,
@@ -46,7 +46,9 @@ export const PieChart: FC<PieChartProps> = ({
   margins,
   series
 }) => {
-  const getData = useMemo(() => {
+  const newId = useId(id);
+
+  const internalData = useMemo(() => {
     const pieLayout = pie<void, ChartShallowDataShape>().value(
       (d: ChartShallowDataShape) => Number(d.data)
     );
@@ -58,6 +60,19 @@ export const PieChart: FC<PieChartProps> = ({
 
     return pieLayout(data);
   }, [data, series]);
+
+  const renderSeries = useCallback(({ chartWidth, chartHeight }: ChartContainerChildProps) => {
+    return (
+      <CloneElement<PieArcSeriesProps>
+        element={series}
+        id={newId}
+        data={internalData}
+        height={chartHeight}
+        width={chartWidth}
+        displayAllLabels={displayAllLabels}
+      />
+    );
+  }, [displayAllLabels, internalData, newId, series]);
 
   return (
     <ChartContainer
@@ -71,15 +86,7 @@ export const PieChart: FC<PieChartProps> = ({
       center={true}
       className={classNames(className)}
     >
-      {({ chartWidth, chartHeight }: ChartContainerChildProps) => (
-        <CloneElement<PieArcSeriesProps>
-          element={series}
-          data={getData}
-          height={chartHeight}
-          width={chartWidth}
-          displayAllLabels={displayAllLabels}
-        />
-      )}
+      {renderSeries}
     </ChartContainer>
   );
 };

@@ -17,8 +17,14 @@ import {
   RadialGaugeValueLabelProps
 } from './RadialGaugeValueLabel';
 import { RadialGaugeOuterArc } from './RadialGaugeOuterArc';
+import { identifier } from 'safe-identifier';
 
 export interface RadialGaugeSeriesProps {
+  /**
+   * Unique id for the series.
+   */
+  id?: string;
+
   /**
    * Data to render set by `RadialGauge` component.
    */
@@ -104,6 +110,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   label,
   valueLabel,
   colorScheme,
+  id,
   padding,
   minGaugeWidth,
   ...props
@@ -152,14 +159,16 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
 
       const xOffset = x + width / 2;
       const yOffset = y + height / 2;
+      const key = identifier(point.key?.toLocaleString());
 
       return (
         <g
+          key={key}
           transform={`translate(${xOffset}, ${yOffset})`}
-          key={point.key.toLocaleString()}
         >
           {outerArc &&
             cloneElement(outerArc, {
+              id,
               outerRadius,
               innerRadius,
               startAngle,
@@ -167,6 +176,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
             })}
           {innerArc &&
             cloneElement(innerArc, {
+              id,
               outerRadius,
               innerRadius,
               startAngle,
@@ -185,6 +195,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
       );
     },
     [
+      id,
       arcWidth,
       colorScheme,
       columns,

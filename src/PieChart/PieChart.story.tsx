@@ -3,6 +3,7 @@ import { PieChart } from './PieChart';
 import { categoryData, randomNumber, browserData, icons } from '../../demo';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { ChartShallowDataShape } from '../common/data';
+import { Gradient } from '../common/Gradient';
 
 export default {
   title: 'Charts/Pie Chart/Pie',
@@ -248,6 +249,19 @@ export const DisplayAllLabels = () => (
     height={250}
     data={browserData}
     displayAllLabels={true}
+  />
+);
+
+export const WithGradient = () => (
+  <PieChart
+    width={350}
+    height={250}
+    data={browserData}
+    series={
+      <PieArcSeries
+        arc={<PieArc gradient={<Gradient />} />}
+      />
+    }
   />
 );
 

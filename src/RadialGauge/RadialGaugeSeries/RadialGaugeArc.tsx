@@ -3,6 +3,8 @@ import { arc } from 'd3-shape';
 import { PieArc, ArcData } from '../../PieChart';
 import { ChartShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
+import { Gradient, GradientProps } from '../../common/Gradient';
+import { Mask, MaskProps } from '../../common/Mask';
 
 export interface RadialGaugeArcProps {
   /**
@@ -66,6 +68,11 @@ export interface RadialGaugeArcProps {
   fill?: string;
 
   /**
+   * Gradient shades for the bar.
+   */
+  gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
    * Tooltip component.
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
@@ -88,6 +95,7 @@ export interface RadialGaugeArcProps {
 
 export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   data,
+  gradient,
   startAngle,
   endAngle,
   innerRadius,
@@ -130,6 +138,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
         data={arcData}
         animated={animated}
         color={color}
+        gradient={gradient}
         disabled={disabled}
         tooltip={tooltip}
         onClick={onClick}
@@ -147,8 +156,5 @@ RadialGaugeArc.defaultProps = {
   color: '#353d44',
   animated: true,
   disabled: false,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined,
   tooltip: <ChartTooltip />
 };

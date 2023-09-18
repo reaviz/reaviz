@@ -2,6 +2,8 @@ import React, { useState, Fragment } from 'react';
 import { PieChart } from './PieChart';
 import { categoryData, randomNumber } from '../../demo';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
+import { Gradient } from '../common/Gradient';
+import { Mask } from '../common/Mask';
 
 export default {
   title: 'Charts/Pie Chart/Donut',
@@ -19,6 +21,24 @@ export const Simple = () => (
     height={250}
     data={categoryData}
     series={<PieArcSeries doughnut={true} colorScheme="cybertron" />}
+  />
+);
+
+export const WithGradient = () => (
+  <PieChart
+    width={350}
+    height={250}
+    data={categoryData}
+    series={<PieArcSeries doughnut={true} colorScheme="cybertron" arc={<PieArc gradient={<Gradient />} />} />}
+  />
+);
+
+export const WithMask = () => (
+  <PieChart
+    width={350}
+    height={250}
+    data={categoryData}
+    series={<PieArcSeries doughnut={true} colorScheme="cybertron" arc={<PieArc gradient={<Gradient />} mask={<Mask />} />} />}
   />
 );
 

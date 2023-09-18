@@ -7,7 +7,7 @@ import {
   StackedRadialGaugeSeries,
   StackedRadialGaugeDescriptionLabel
 } from './RadialGaugeSeries';
-
+import { Gradient } from '../common/Gradient';
 import { max } from 'd3-array';
 
 export default {
@@ -137,4 +137,23 @@ export const Autosize = () => (
       ]}
     />
   </div>
+);
+
+export const WithGradient = () => (
+  <RadialGauge
+    height={300}
+    width={700}
+    data={[
+      {
+        key: 'Austin, TX',
+        data: 24
+      }
+    ]}
+    series={
+      <RadialGaugeSeries
+        arcWidth={15}
+        innerArc={<RadialGaugeArc cornerRadius={12.5} gradient={<Gradient />} />}
+      />
+    }
+  />
 );

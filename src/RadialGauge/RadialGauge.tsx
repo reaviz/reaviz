@@ -3,6 +3,7 @@ import { scaleLinear } from 'd3-scale';
 import { ChartContainer, ChartContextProps, ChartProps } from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
 import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
+import { useId } from 'rdk';
 
 export interface RadialGaugeProps extends ChartProps {
   /**
@@ -50,22 +51,23 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
   series,
   containerClassName
 }) => {
+  const newId = useId(id);
 
-
-  const renderSeries = useCallback(({ height, width }: ChartContextProps) => {
+  const renderSeries = useCallback(({ chartHeight, chartWidth }: ChartContextProps) => {
     const scale = scaleLinear()
       .domain([minValue, maxValue])
       .range([startAngle, endAngle]);
 
     return cloneElement(series, {
+      id: newId,
       scale,
       data,
       startAngle,
       endAngle,
-      width,
-      height
+      width: chartWidth,
+      height: chartHeight
     });
-  }, [data, endAngle, maxValue, minValue, series, startAngle]);
+  }, [data, endAngle, maxValue, minValue, series, startAngle, newId]);
 
   return (
     <ChartContainer

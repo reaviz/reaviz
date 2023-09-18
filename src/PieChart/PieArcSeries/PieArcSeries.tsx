@@ -1,12 +1,18 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback } from 'react';
 import { CloneElement } from 'rdk';
 import { ArcData } from '../PieChart';
 import { PieArc, PieArcProps } from './PieArc';
 import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { calculateCentroid, calculateInnerArc, calculateLabelPositions, calculateRadius } from './radiusUtils';
+import { identifier } from 'safe-identifier';
 
 export interface PieArcSeriesProps {
+  /**
+   * Unique id for the series.
+   */
+  id?: string;
+
   /**
    * Animated set by the `PieArc` components.
    */
@@ -97,6 +103,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
   displayAllLabels,
   height,
   explode,
+  id,
   animated,
   cornerRadius,
   padAngle,
@@ -104,7 +111,13 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
   arc,
   data
 }) => {
-  const { outerRadius, innerRadius, labelWidth } = calculateRadius(height, width, label, arcWidth, doughnut);
+  const { outerRadius, innerRadius, labelWidth } = calculateRadius(
+    height,
+    width,
+    label,
+    arcWidth,
+    doughnut
+  );
 
   const innerArc = calculateInnerArc(
     data,
@@ -131,35 +144,44 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
 
   const centroid = calculateCentroid(data, innerRadius, outerRadius, explode);
 
-  return (
-    <Fragment>
-      {data.map((arcData, index) => (
-        <Fragment key={arcData.data.key.toString()}>
-          {positions[index] && (
-            <CloneElement<PieArcLabelProps>
-              element={label}
-              data={arcData}
-              centroid={centroid}
-              outerRadius={outerRadius}
-              width={labelWidth}
-              position={positions[index]}
-            />
-          )}
-          <CloneElement<PieArcProps>
-            element={arc}
+  function renderItem(arcData: ArcData, index: number) {
+    const safeKey = identifier(arcData.data.key.toString());
+    const color = getColor({
+      data,
+      colorScheme,
+      point: arcData.data,
+      index
+    });
+
+    return (
+      <Fragment key={safeKey}>
+        {positions[index] && (
+          <CloneElement<PieArcLabelProps>
+            id={id}
+            element={label}
             data={arcData}
-            animated={animated}
-            arc={innerArc}
-            color={getColor({
-              data,
-              colorScheme,
-              point: arcData.data,
-              index
-            })}
+            centroid={centroid}
+            outerRadius={outerRadius}
+            width={labelWidth}
+            position={positions[index]}
           />
-        </Fragment>
-      ))}
-    </Fragment>
+        )}
+        <CloneElement<PieArcProps>
+          element={arc}
+          id={`${id}-arc-${safeKey}`}
+          data={arcData}
+          animated={animated}
+          arc={innerArc}
+          color={color}
+        />
+      </Fragment>
+    );
+  }
+
+  return (
+    <>
+      {data.map(renderItem)}
+    </>
   );
 };
 
