@@ -33,15 +33,6 @@ export const WithGradient = () => (
   />
 );
 
-export const WithMask = () => (
-  <PieChart
-    width={350}
-    height={250}
-    data={categoryData}
-    series={<PieArcSeries doughnut={true} colorScheme="cybertron" arc={<PieArc gradient={<Gradient />} mask={<Mask />} />} />}
-  />
-);
-
 export const RoundedAndSpaced = () => (
   <PieChart
     width={350}
