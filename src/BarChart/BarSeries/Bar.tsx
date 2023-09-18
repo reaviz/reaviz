@@ -180,22 +180,22 @@ export type BarProps = {
   /**
    * Event for when the bar is clicked.
    */
-  onClick: (event) => void;
+  onClick?: (event) => void;
 
   /**
    * Event for when the bar has mouse enter.
    */
-  onMouseEnter: (event) => void;
+  onMouseEnter?: (event) => void;
 
   /**
    * Event for when the bar has mouse leave.
    */
-  onMouseLeave: (event) => void;
+  onMouseLeave?: (event) => void;
 
   /**
    * Event for when a bar has mouse move.
    */
-  onMouseMove: (event) => void;
+  onMouseMove?: (event) => void;
 } & PropFunctionTypes;
 
 interface BarCoordinates {
@@ -437,7 +437,7 @@ export const Bar: FC<Partial<BarProps>> = ({
         setInternalActive(true);
       }
 
-      onMouseEnter({
+      onMouseEnter?.({
         value: data,
         nativeEvent: event
       });
@@ -452,7 +452,7 @@ export const Bar: FC<Partial<BarProps>> = ({
         setInternalActive(false);
       }
 
-      onMouseLeave({
+      onMouseLeave?.({
         value: data,
         nativeEvent: event
       });
@@ -462,7 +462,7 @@ export const Bar: FC<Partial<BarProps>> = ({
 
   const onMouseClick = useCallback(
     (event) => {
-      onClick({
+      onClick?.({
         value: data,
         nativeEvent: event
       });
@@ -593,6 +593,7 @@ export const Bar: FC<Partial<BarProps>> = ({
       getExit,
       getFill,
       getTransition,
+      glow,
       id,
       mask,
       onMouseClick,
@@ -749,9 +750,5 @@ Bar.defaultProps = {
   tooltip: null,
   layout: 'vertical',
   guide: null,
-  gradient: <Gradient />,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined,
-  onMouseMove: () => undefined
+  gradient: <Gradient />
 };
