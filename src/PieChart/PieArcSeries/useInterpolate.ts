@@ -28,9 +28,11 @@ export const useInterpolate = ({ data, animated, arc }) => {
   );
 
   // Cache the previous for transition use later
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const previousEnter = prevEnter.current
     ? { ...prevEnter.current }
     : undefined;
+
   prevEnter.current = { ...data };
 
   const d = useMotionValue('');
