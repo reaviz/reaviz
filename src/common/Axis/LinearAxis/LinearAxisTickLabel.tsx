@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { LinearAxisTickLine, LinearAxisTickLineProps } from './LinearAxisTickLine';
 
 export interface LinearAxisTickLabelProps {
@@ -127,6 +127,6 @@ LinearAxisTickLabel.defaultProps = {
   fontSize: 11,
   fontFamily: 'sans-serif',
   rotation: true,
-  padding: 0,
+  padding: 5,
   align: 'center'
 };
