@@ -1,6 +1,6 @@
-import React, { cloneElement, FC, ReactElement } from 'react';
+import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { scaleLinear } from 'd3-scale';
-import { ChartContainer, ChartProps } from '../common/containers';
+import { ChartContainer, ChartContextProps, ChartProps } from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
 import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
 
@@ -50,9 +50,22 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
   series,
   containerClassName
 }) => {
-  const scale = scaleLinear()
-    .domain([minValue, maxValue])
-    .range([startAngle, endAngle]);
+
+
+  const renderSeries = useCallback(({ height, width }: ChartContextProps) => {
+    const scale = scaleLinear()
+      .domain([minValue, maxValue])
+      .range([startAngle, endAngle]);
+
+    return cloneElement(series, {
+      scale,
+      data,
+      startAngle,
+      endAngle,
+      width,
+      height
+    });
+  }, [data, endAngle, maxValue, minValue, series, startAngle]);
 
   return (
     <ChartContainer
@@ -65,16 +78,7 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
       className={className}
       containerClassName={containerClassName}
     >
-      {(props) =>
-        cloneElement(series, {
-          scale,
-          data,
-          startAngle,
-          endAngle,
-          width: props.width,
-          height: props.height
-        })
-      }
+      {renderSeries}
     </ChartContainer>
   );
 };
