@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC, useMemo } from 'react';
 
 export interface LinearAxisTickLineProps {
   height: number;
@@ -11,11 +11,25 @@ export interface LinearAxisTickLineProps {
   className?: any;
 }
 
-export const LinearAxisTickLine = ({ orientation, size = 3, strokeColor = '#8F979F', strokeWidth = 1, position = 'center', className }: LinearAxisTickLineProps) => {
-  function positionTick() {
+export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
+  size,
+  position,
+  orientation,
+  strokeColor,
+  strokeWidth,
+  className
+}) => {
+
+  const path = useMemo(() => {
     const isVertical = orientation === 'vertical';
-    const start = position === 'start' ? size * -1 : position === 'center' ? size * -0.5 : 0;
-    const end = start + size;
+    const tickSize = size || 0;
+    const start =
+      position === 'start'
+        ? tickSize * -1
+        : position === 'center'
+          ? tickSize * -0.5
+          : 0;
+    const end = start + tickSize;
 
     return {
       x1: isVertical ? end : 0,
@@ -23,11 +37,16 @@ export const LinearAxisTickLine = ({ orientation, size = 3, strokeColor = '#8F97
       y1: isVertical ? 0 : start,
       y2: isVertical ? 0 : end
     };
-  }
+  }, [orientation, position, size]);
 
-  const path = positionTick();
-
-  return <line className={className} strokeWidth={strokeWidth} stroke={strokeColor} {...path} />;
+  return (
+    <line
+      className={className}
+      strokeWidth={strokeWidth}
+      stroke={strokeColor}
+      {...path}
+    />
+  );
 };
 
 LinearAxisTickLine.defaultProps = {

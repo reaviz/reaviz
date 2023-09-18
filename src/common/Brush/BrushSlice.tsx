@@ -1,5 +1,4 @@
-import React, { PureComponent, Fragment } from 'react';
-import bind from 'memoize-bind';
+import React, { Fragment, useState, FC, useCallback } from 'react';
 import { BrushHandle } from './BrushHandle';
 import { Move } from '../Gestures/Move';
 import css from './BrushSlice.module.css';
@@ -17,110 +16,85 @@ interface BrushSliceProps {
   onBrushChange: (event: BrushChangeEvent) => void;
 }
 
-interface BrushSliceState {
-  isDragging: boolean;
-}
+export const BrushSlice: FC<BrushSliceProps> = (props) => {
+  const { height, start, end, width, onBrushChange, } = props;
+  const [isDragging, setIsDragging] = useState(false);
+  const sliceWidth = Math.max(end - start, 0);
+  const endSliceWidth = Math.max(width - end, 0);
+  const hasNoSlice = start === 0 && end === width;
 
-export class BrushSlice extends PureComponent<
-  BrushSliceProps,
-  BrushSliceState
-> {
-  state: BrushSliceState = {
-    isDragging: false
-  };
-
-  onMoveStart() {
-    const { start, end, width } = this.props;
+  const onMoveStart = useCallback(() =>  {
     const hasNoSlice = start === 0 && end === width;
 
     if (!hasNoSlice) {
-      this.setState({
-        isDragging: true
-      });
+      setIsDragging(true);
     }
-  }
+  }, [end, start, width]);
 
-  onMove({ x }) {
-    const { onBrushChange, width } = this.props;
-    let { start, end } = this.props;
-    start = start + x;
-    end = end + x;
+  const onMove = useCallback(({ x }) => {
+    const startUpdated = start + x;
+    const endUpdated = end + x;
 
-    if (start >= 0 && end <= width) {
+    if (startUpdated >= 0 && endUpdated <= width) {
       onBrushChange({
-        start,
-        end
+        start: startUpdated,
+        end: endUpdated
       });
     }
-  }
+  }, [start, end, width, onBrushChange]);
 
-  onMoveEnd() {
-    this.setState({
-      isDragging: false
-    });
-  }
-
-  onHandleDrag(direction: 'start' | 'end', deltaX: number) {
-    const { onBrushChange } = this.props;
-    let { start, end } = this.props;
-
-    start = direction === 'start' ? start + deltaX : start;
-    end = direction !== 'start' ? end + deltaX : end;
+  const onHandleDrag = useCallback((direction: 'start' | 'end', deltaX: number) => {
+    const startUpdated = direction === 'start' ? start + deltaX : start;
+    const endUpdated = direction !== 'start' ? end + deltaX : end;
 
     onBrushChange({
-      start,
-      end
+      start: startUpdated,
+      end: endUpdated
     });
-  }
+  }, [end, onBrushChange, start]);
 
-  render() {
-    const { height, start, end, width } = this.props;
-    const { isDragging } = this.state;
-    const sliceWidth = Math.max(end - start, 0);
-    const endSliceWidth = Math.max(width - end, 0);
-    const hasNoSlice = start === 0 && end === width;
-
-    return (
-      <Fragment>
-        <rect className={css.unsliced} height={height} width={start} />
-        <rect
-          transform={`translate(${end}, 0)`}
-          className={css.unsliced}
-          height={height}
-          width={endSliceWidth}
-        />
-        <g transform={`translate(${start}, 0)`}>
-          <Move
-            cursor="grabbing"
-            onMoveStart={bind(this.onMoveStart, this)}
-            onMove={bind(this.onMove, this)}
-            onMoveEnd={bind(this.onMoveEnd, this)}
-          >
-            <rect
-              className={css.slice}
-              height={height}
-              width={sliceWidth}
-              style={{
-                cursor: isDragging ? 'grabbing' : 'grab',
-                opacity: hasNoSlice ? 0 : 0.1,
-                pointerEvents: !hasNoSlice ? 'initial' : 'none'
-              }}
-            />
-          </Move>
-          <g transform={'translate(-4, 0)'}>
-            <BrushHandle
-              height={height}
-              onHandleDrag={bind(this.onHandleDrag, this, 'start')}
-            />
-          </g>
-          <g transform={`translate(${sliceWidth - 5}, 0)`}>
-            <BrushHandle
-              height={height}
-              onHandleDrag={bind(this.onHandleDrag, this, 'end')}
-            />
-          </g>
+  return (
+    <Fragment>
+      <rect className={css.unsliced} height={height} width={start} />
+      <rect
+        transform={`translate(${end}, 0)`}
+        className={css.unsliced}
+        height={height}
+        width={endSliceWidth}
+      />
+      <g transform={`translate(${start}, 0)`}>
+        <Move
+          cursor="grabbing"
+          onMoveStart={onMoveStart}
+          onMove={onMove}
+          onMoveEnd={() => setIsDragging(false)}
+        >
+          <rect
+            className={css.slice}
+            height={height}
+            width={sliceWidth}
+            style={{
+              cursor: isDragging ? 'grabbing' : 'grab',
+              opacity: hasNoSlice ? 0 : 0.1,
+              pointerEvents: !hasNoSlice ? 'initial' : 'none'
+            }}
+          />
+        </Move>
+        <g transform={'translate(-4, 0)'}>
+          <BrushHandle
+            height={height}
+            onHandleDrag={(deltaX) => onHandleDrag('start', deltaX)}
+          />
         </g>
-      </Fragment>
-    );
-  }
-}
+        <g transform={`translate(${sliceWidth - 5}, 0)`}>
+          <BrushHandle
+            height={height}
+            onHandleDrag={(deltaX) => onHandleDrag('end', deltaX)}
+          />
+        </g>
+      </g>
+    </Fragment>
+  );
+};
+
+BrushSlice.defaultProps = {};

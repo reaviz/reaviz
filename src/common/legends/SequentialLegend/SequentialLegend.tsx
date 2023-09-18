@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { FC, useMemo } from 'react';
 import classNames from 'classnames';
 import { ChartDataShape } from '../../../common/data';
 import chroma from 'chroma-js';
@@ -32,55 +32,51 @@ export interface SequentialLegendProps {
   /**
    * Color scheme for the scale.
    */
-  colorScheme: string[];
+  colorScheme?: string[];
 }
 
-export class SequentialLegend extends PureComponent<SequentialLegendProps> {
-  static defaultProps: Partial<SequentialLegendProps> = {
-    colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
-    orientation: 'vertical'
-  };
+export const SequentialLegend: FC<SequentialLegendProps> = ({ className, style, data, colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'], orientation = 'orientation' }) => {
+  // Generate the color gradient
+  const color = chroma
+    .scale(colorScheme)
+    .colors(10)
+    .reverse()
+    .map((c, i) => `${c} ${i * 10}%`)
+    .join(',');
 
-  render() {
-    const { orientation, className, style, colorScheme, data } = this.props;
+  // Get the extent from the data passed
+  const [end, start] = useMemo(() => extent(
+    uniqueBy(
+      data,
+      (d) => d.data,
+      (d) => d.data
+    )
+  ), [data]);
 
-    // Generate the color gradient
-    const color = chroma
-      .scale(colorScheme)
-      .colors(10)
-      .reverse()
-      .map((c, i) => `${c} ${i * 10}%`)
-      .join(',');
+  // Get direction
+  const gradientDir = orientation === 'vertical' ? '' : 'to left,';
 
-    // Get the extent from the data passed
-    const [end, start] = extent(
-      uniqueBy(
-        data,
-        (d) => d.data,
-        (d) => d.data
-      )
-    );
-
-    // Get direction
-    const gradientDir = orientation === 'vertical' ? '' : 'to left,';
-
-    return (
+  return (
+    <div
+      style={style}
+      className={classNames(css.container, className, {
+        [css.vertical]: orientation === 'vertical',
+        [css.horizontal]: orientation === 'horizontal'
+      })}
+    >
+      <div className={css.start}>{formatValue(start)}</div>
       <div
-        style={style}
-        className={classNames(css.container, className, {
-          [css.vertical]: orientation === 'vertical',
-          [css.horizontal]: orientation === 'horizontal'
-        })}
-      >
-        <div className={css.start}>{formatValue(start)}</div>
-        <div
-          className={css.gradient}
-          style={{
-            background: `linear-gradient(${gradientDir}${color})`
-          }}
-        />
-        <div className={css.end}>{formatValue(end)}</div>
-      </div>
-    );
-  }
-}
+        className={css.gradient}
+        style={{
+          background: `linear-gradient(${gradientDir}${color})`
+        }}
+      />
+      <div className={css.end}>{formatValue(end)}</div>
+    </div>
+  );
+};
+
+SequentialLegend.defaultProps = {
+  colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
+  orientation: 'vertical'
+};

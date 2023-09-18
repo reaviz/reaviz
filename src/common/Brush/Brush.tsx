@@ -1,4 +1,4 @@
-import React, { PureComponent, Fragment, PropsWithChildren } from 'react';
+import React, { useState, useEffect, useRef, FC, PropsWithChildren, useCallback } from 'react';
 import bind from 'memoize-bind';
 import { getPositionForTarget } from '../utils/position';
 import { BrushSlice, BrushChangeEvent } from './BrushSlice';
@@ -12,7 +12,7 @@ export interface BrushConfiguration {
   onBrushChange?: (e) => void;
 }
 
-export interface BrushProps extends PropsWithChildren {
+interface BrushProps extends PropsWithChildren {
   height: number;
   width: number;
   disabled?: boolean;
@@ -22,224 +22,179 @@ export interface BrushProps extends PropsWithChildren {
 }
 
 interface BrushState {
-  isSlicing: boolean;
-  isPanning: boolean;
   start?: number;
   end?: number;
-  initial?: number;
 }
 
-export class Brush extends PureComponent<BrushProps, BrushState> {
-  static defaultProps: Partial<BrushProps> = {
-    disabled: false,
-    height: 0,
-    width: 0,
-    onBrushChange: () => undefined
-  };
+export const Brush: FC<Partial<BrushProps>> = (props) => {
+  const { children, disabled, height, width, start: startProp, end: endProp, onBrushChange } = props;
+  const [isSlicing, setIsSlicing] = useState(false);
+  const [initial, setInitial] = useState<number>();
+  const [range, setRange] = useState<BrushState>({
+    start: props.start || 0,
+    end: props.end || props.width,
+  });
+  const { start, end } = range;
 
-  ref: any;
+  const ref = useRef<any>();
 
-  constructor(props: BrushProps) {
-    super(props);
-
-    this.state = {
-      isSlicing: false,
-      isPanning: false,
-      start: props.start || 0,
-      end: props.end || props.width
-    };
-  }
-
-  componentDidUpdate(prevProps: BrushProps) {
-    // If no brush is defined and width updates, update the offset of the end handle.
-    if (
-      prevProps.width !== this.props.width &&
-      this.state.end === prevProps.width
-    ) {
-      this.setState({ end: this.props.width });
-    }
-
-    // Don't update if we are doing the slicing
-    if (!this.state.isSlicing && !this.state.isPanning) {
-      const { start, end } = this.props;
-      const startUpdated =
-        start !== prevProps.start && start !== this.state.start;
-      const endUpdated = end !== prevProps.end && end !== this.state.end;
-
-      if (startUpdated || endUpdated) {
-        this.setState({
-          ...this.ensurePositionInBounds(start, end)
-        });
-      }
-    }
-  }
-
-  getStartEnd(event, state: BrushState = this.state) {
-    const { x } = this.getPositionsForPanEvent(event);
-
-    let start;
-    let end;
-    if (x < state.initial!) {
-      start = x;
-      end = state.initial;
-    } else {
-      start = state.initial;
-      end = x;
-    }
-
-    return this.ensurePositionInBounds(start, end, state);
-  }
-
-  getPositionsForPanEvent(event) {
-    const eventObj = {
-      target: this.ref,
-      clientX: event.clientX,
-      clientY: event.clientY
-    };
-
-    return getPositionForTarget(eventObj);
-  }
-
-  ensurePositionInBounds(
+  const ensurePositionInBounds = useCallback((
     newStart?: number,
     newEnd?: number,
-    state: BrushState = this.state
-  ) {
-    const { width } = this.props;
-    let start = newStart;
-    let end = newEnd;
+  ) => {
+    let startUpdated = newStart;
+    let endUpdated = newEnd;
 
-    if (start === undefined || start <= 0) {
-      start = 0;
+    if (startUpdated === undefined || startUpdated <= 0) {
+      startUpdated = 0;
     }
 
     if (end === undefined) {
-      end = width;
+      endUpdated = width;
     }
 
-    if (start > end) {
-      start = state.start!;
+    if (startUpdated > endUpdated) {
+      startUpdated = start;
     }
 
-    if (end < start) {
-      end = state.end!;
+    if (endUpdated < startUpdated) {
+      endUpdated = end;
     }
 
-    if (end >= width) {
-      end = width;
+    if (endUpdated >= width) {
+      endUpdated = width;
     }
 
-    return { start, end };
-  }
+    return { start: startUpdated, end: endUpdated };
+  }, [end, start, width]);
 
-  onMoveStart(event) {
-    const { disabled } = this.props;
-
-    if (!disabled) {
-      const positions = this.getPositionsForPanEvent(event.nativeEvent);
-
-      this.setState({
-        isSlicing: true,
-        initial: positions.x
-      });
-    }
-  }
-
-  onMove(event) {
-    const { disabled } = this.props;
-
-    if (!disabled) {
-      this.setState((prev) => {
-        const { onBrushChange } = this.props;
-
-        // Use setState callback so we can get the true previous value
-        // rather than the bulk updated value react will trigger
-        const { start, end } = this.getStartEnd(event.nativeEvent, prev);
-
-        if (onBrushChange) {
-          onBrushChange({
-            start,
-            end
-          });
-        }
-
-        return {
-          start,
-          end
-        };
-      });
-    }
-  }
-
-  onMoveEnd() {
-    this.setState({
-      isSlicing: false
-    });
-  }
-
-  onMoveCancel() {
-    const val = {
-      start: 0,
-      end: this.props.width
+  const getPositionsForPanEvent = useCallback((event: any) => {
+    const eventObj = {
+      target: ref.current,
+      clientX: event.clientX,
+      clientY: event.clientY,
     };
 
-    this.setState(val);
+    return getPositionForTarget(eventObj);
+  }, []);
 
-    if (this.props.onBrushChange) {
-      this.props.onBrushChange(val);
+  const getStartEnd = useCallback((event: any) => {
+    const { x } = getPositionsForPanEvent(event);
+
+    if (x < initial) {
+      return ensurePositionInBounds(x, initial);
+    } else {
+      return ensurePositionInBounds(initial, x);
     }
-  }
+  }, [ensurePositionInBounds, getPositionsForPanEvent, initial]);
 
-  onSliceChange(event: BrushChangeEvent) {
-    const val = this.ensurePositionInBounds(event.start, event.end);
+  const onMoveStart = useCallback((event: any) => {
+    if (!disabled) {
+      const positions = getPositionsForPanEvent(event.nativeEvent);
 
-    this.setState(val);
-
-    if (this.props.onBrushChange) {
-      this.props.onBrushChange(val);
+      setIsSlicing(true);
+      setInitial(positions.x);
     }
-  }
+  }, [disabled, getPositionsForPanEvent]);
 
-  render() {
-    const { children, disabled, height, width } = this.props;
-    const { isSlicing, start, end } = this.state;
+  const onMove = useCallback((event: any) => {
+    if (!disabled) {
+      const { start, end } = getStartEnd(event.nativeEvent);
 
-    return (
-      <Move
-        cursor="crosshair"
-        onMoveStart={bind(this.onMoveStart, this)}
-        onMove={bind(this.onMove, this)}
-        onMoveEnd={bind(this.onMoveEnd, this)}
-        onMoveCancel={bind(this.onMoveCancel, this)}
+      if (onBrushChange) {
+        onBrushChange({
+          start,
+          end,
+        });
+      }
+
+      setRange({start, end});
+    }
+  }, [disabled, getStartEnd, onBrushChange]);
+
+  const onMoveEnd = useCallback(() => {
+    setIsSlicing(false);
+  }, []);
+
+  const onMoveCancel = useCallback(() => {
+    const val = {
+      start: 0,
+      end: width,
+    };
+
+    setRange(val);
+
+    if (onBrushChange) {
+      onBrushChange(val);
+    }
+  }, [onBrushChange, width]);
+
+  const onSliceChange = useCallback((event: BrushChangeEvent) => {
+    const val = ensurePositionInBounds(event.start, event.end);
+
+    setRange((state) => ({...state, ...val}));
+
+    if (onBrushChange) {
+      onBrushChange(val);
+    }
+  }, [ensurePositionInBounds, onBrushChange]);
+
+  useEffect(() => {
+    if (end === width) {
+      setRange((prev) => ({
+        ...prev,
+        end: width,
+      }));
+    }
+  }, [end, width]);
+
+  useEffect(() => {
+    // Don't update if we are doing the slicing
+    if (!isSlicing) {
+      const startUpdated = startProp !== start;
+      const endUpdated = endProp !== end;
+
+      if (startUpdated || endUpdated) {
+        setRange(ensurePositionInBounds(start, end));
+      }
+    }
+  }, [end, endProp, ensurePositionInBounds, isSlicing, start, startProp]);
+
+  return (
+    <Move
+      cursor="crosshair"
+      onMoveStart={bind(onMoveStart, this)}
+      onMove={bind(onMove, this)}
+      onMoveEnd={bind(onMoveEnd, this)}
+      onMoveCancel={bind(onMoveCancel, this)}
+    >
+      <g
+        style={{
+          pointerEvents: isSlicing ? 'none' : 'auto',
+          cursor: disabled ? '' : 'crosshair',
+        }}
       >
-        <g
-          style={{
-            pointerEvents: isSlicing ? 'none' : 'auto',
-            cursor: disabled ? '' : 'crosshair'
-          }}
-        >
-          {children}
-          {!disabled && (
-            <Fragment>
-              <rect
-                ref={(ref) => (this.ref = ref)}
+        {children}
+        {!disabled && (
+          <>
+            <rect
+              ref={ref}
+              height={height}
+              width={width}
+              opacity={0}
+            />
+            {start !== undefined && end !== undefined && (
+              <BrushSlice
+                start={start}
+                end={end}
                 height={height}
                 width={width}
-                opacity={0}
+                onBrushChange={bind(onSliceChange, this)}
               />
-              {start !== undefined && end !== undefined && (
-                <BrushSlice
-                  start={start}
-                  end={end}
-                  height={height}
-                  width={width}
-                  onBrushChange={bind(this.onSliceChange, this)}
-                />
-              )}
-            </Fragment>
-          )}
-        </g>
-      </Move>
-    );
-  }
-}
+            )}
+          </>
+        )}
+      </g>
+    </Move>
+  );
+};

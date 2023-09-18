@@ -1,4 +1,4 @@
-import React, { Component, PropsWithChildren, createRef } from 'react';
+import React, { PropsWithChildren, FC, useRef, useState, useEffect, useCallback } from 'react';
 import bind from 'memoize-bind';
 import {
   Pan,
@@ -49,181 +49,164 @@ export interface ZoomPanProps extends PropsWithChildren {
   onPanCancel: (event: PanCancelEvent) => void;
 }
 
-interface ZoomPanState {
-  isZooming: boolean;
-  isPanning: boolean;
-  matrix: any;
-}
+export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
+  height,
+  width,
+  children,
+  disabled,
+  pannable,
+  maxZoom,
+  minZoom,
+  zoomable,
+  scale,
+  x,
+  y,
+  disableMouseWheel,
+  constrain,
+  zoomStep,
+  onPanCancel,
+  requireZoomModifier,
+  globalPanning,
+  onPanStart,
+  onZoomPan,
+  onPanMove,
+  onPanEnd,
+  onZoom,
+  onZoomEnd
+}) =>  {
+  const zoomRef = useRef<Zoom>();
+  const panRef = useRef<Pan>();
+  const [isZooming, setIsZooming] = useState<boolean>();
+  const [isPanning, setIsPanning] = useState<boolean>();
+  const [matrix, setMatrix] = useState<any>(identity());
 
-export class ZoomPan extends Component<ZoomPanProps, ZoomPanState> {
-  static defaultProps: Partial<ZoomPanProps> = {
-    maxZoom: 10,
-    minZoom: 0,
-    zoomStep: 0.1,
-    pannable: true,
-    zoomable: true,
-    constrain: true,
-    height: 0,
-    width: 0,
-    x: 0,
-    y: 0,
-    scale: 1,
-    globalPanning: true,
-    onPanStart: () => undefined,
-    onPanMove: () => undefined,
-    onPanEnd: () => undefined,
-    onPanCancel: () => undefined,
-    onZoom: () => undefined,
-    onZoomEnd: () => undefined
-  };
-
-  static getDerivedStateFromProps(props: ZoomPanProps, state: ZoomPanState) {
-    // TODO: the types in the library don't seem to be correct...
-    const matrix = transform(
-      (fromDefinition as any)([
-        { type: 'translate', tx: props.x, ty: props.y },
-        { type: 'scale', sx: props.scale, sy: props.scale }
+  useEffect(() => {
+    const newMatrix = transform(
+      fromDefinition([
+        { type: 'translate', tx: x, ty: y },
+        { type: 'scale', sx: scale, sy: scale },
       ])
     );
 
-    if (!isEqual(matrix, state.matrix)) {
-      return {
-        matrix
-      };
+    if (!isEqual(newMatrix, matrix)) {
+      setMatrix(newMatrix);
     }
+  }, [x, y, scale, matrix]);
 
-    return null;
-  }
 
-  zoomRef = createRef<Zoom>();
-  panRef = createRef<Pan>();
-  state: ZoomPanState = {
-    isZooming: false,
-    isPanning: false,
-    matrix: identity()
-  };
+  const onPanStartHandler = useCallback((event: PanStartEvent) => {
+    setIsPanning(true);
+    onPanStart(event);
+  }, [onPanStart]);
 
-  onPanStart(event: PanStartEvent) {
-    this.setState({
-      isPanning: true
-    });
-
-    this.props.onPanStart(event);
-  }
-
-  onPanMove(event: PanMoveEvent) {
-    this.props.onZoomPan({
-      scale: this.props.scale,
+  const onPanMoveHandler =  useCallback((event: PanMoveEvent) => {
+    onZoomPan({
+      scale: scale,
       x: event.x,
       y: event.y,
       type: 'pan',
       nativeEvent: event.nativeEvent
     });
 
-    this.props.onPanMove(event);
-  }
+    onPanMove(event);
+  }, [onPanMove, onZoomPan, scale]);
 
-  onPanEnd(event: PanEndEvent) {
-    this.setState({ isPanning: false });
-    this.props.onPanEnd(event);
-  }
+  const onPanEndHandler =  useCallback((event: PanEndEvent) => {
+    setIsPanning(false);
+    onPanEnd(event);
+  }, [onPanEnd]);
 
-  onZoom(event: ZoomEvent) {
-    this.props.onZoomPan({
+  const onZoomHandler =  useCallback((event: ZoomEvent) => {
+    onZoomPan({
       x: event.x,
       y: event.y,
       scale: event.scale,
       nativeEvent: event.nativeEvent,
       type: 'zoom'
     });
+    onZoom(event);
+  }, [onZoom, onZoomPan]);
 
-    this.props.onZoom(event);
-  }
+  const onZoomEndHandler =  useCallback(() => {
+    setIsZooming(false);
+    onZoomEnd();
+  }, [onZoomEnd]);
 
-  onZoomEnd() {
-    this.setState({
-      isZooming: false
-    });
+  const cursor = pannable ? 'move' : 'auto';
+  const selection = isZooming || isPanning ? 'none' : 'auto';
+  const matrixObj = fromObject(matrix);
 
-    this.props.onZoomEnd();
-  }
-
-  render() {
-    const {
-      height,
-      width,
-      children,
-      disabled,
-      pannable,
-      maxZoom,
-      minZoom,
-      zoomable,
-      scale,
-      x,
-      y,
-      disableMouseWheel,
-      constrain,
-      zoomStep,
-      onPanCancel,
-      requireZoomModifier,
-      globalPanning
-    } = this.props;
-    const { isZooming, isPanning } = this.state;
-    const cursor = pannable ? 'move' : 'auto';
-    const selection = isZooming || isPanning ? 'none' : 'auto';
-    const matrix = fromObject(this.state.matrix);
-
-    return (
-      <Pan
+  return (
+    <Pan
+      x={x}
+      y={y}
+      scale={scale}
+      matrix={matrixObj}
+      constrain={constrain}
+      height={height}
+      width={width}
+      disabled={!pannable || disabled}
+      ref={panRef}
+      globalPanning={globalPanning}
+      onPanStart={bind(onPanStartHandler)}
+      onPanMove={bind(onPanMoveHandler)}
+      onPanEnd={bind(onPanEndHandler)}
+      onPanCancel={onPanCancel}
+    >
+      <Zoom
+        ref={zoomRef}
+        disabled={!zoomable || disabled}
+        scaleFactor={zoomStep}
+        disableMouseWheel={disableMouseWheel}
+        maxZoom={maxZoom}
+        minZoom={minZoom}
+        scale={scale}
         x={x}
         y={y}
-        scale={scale}
+        style={{ cursor }}
+        requireZoomModifier={requireZoomModifier}
         matrix={matrix}
-        constrain={constrain}
-        height={height}
-        width={width}
-        disabled={!pannable || disabled}
-        ref={this.panRef}
-        globalPanning={globalPanning}
-        onPanStart={bind(this.onPanStart, this)}
-        onPanMove={bind(this.onPanMove, this)}
-        onPanEnd={bind(this.onPanEnd, this)}
-        onPanCancel={onPanCancel}
+        onZoom={bind(onZoomHandler)}
+        onZoomEnd={bind(onZoomEndHandler)}
       >
-        <Zoom
-          ref={this.zoomRef}
-          disabled={!zoomable || disabled}
-          scaleFactor={zoomStep}
-          disableMouseWheel={disableMouseWheel}
-          maxZoom={maxZoom}
-          minZoom={minZoom}
-          scale={scale}
-          x={x}
-          y={y}
-          style={{ cursor }}
-          requireZoomModifier={requireZoomModifier}
-          matrix={matrix}
-          onZoom={bind(this.onZoom, this)}
-          onZoomEnd={bind(this.onZoomEnd, this)}
+        {!disabled && (
+          <rect
+            height={height}
+            width={width}
+            opacity={0}
+            className="pan-container"
+          />
+        )}
+        <g
+          style={{
+            pointerEvents: selection,
+            userSelect: selection
+          }}
         >
-          {!disabled && (
-            <rect
-              height={height}
-              width={width}
-              opacity={0}
-              className="pan-container"
-            />
-          )}
-          <g
-            style={{
-              pointerEvents: selection,
-              userSelect: selection
-            }}
-          >
-            {children}
-          </g>
-        </Zoom>
-      </Pan>
-    );
-  }
-}
+          {children}
+        </g>
+      </Zoom>
+    </Pan>
+  );
+};
+
+ZoomPan.defaultProps = {
+  maxZoom: 10,
+  minZoom: 0,
+  zoomStep: 0.1,
+  pannable: true,
+  zoomable: true,
+  constrain: true,
+  height: 0,
+  width: 0,
+  x: 0,
+  y: 0,
+  scale: 1,
+  globalPanning: true,
+  onPanStart: () => undefined,
+  onPanMove: () => undefined,
+  onPanEnd: () => undefined,
+  onPanCancel: () => undefined,
+  onZoom: () => undefined,
+  onZoomEnd: () => undefined
+};
