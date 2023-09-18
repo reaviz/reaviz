@@ -1,8 +1,5 @@
 import React, { Component, ReactElement } from 'react';
-import {
-  LinearAxisTickLine,
-  LinearAxisTickLineProps
-} from './LinearAxisTickLine';
+import { LinearAxisTickLine, LinearAxisTickLineProps } from './LinearAxisTickLine';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -23,19 +20,8 @@ export interface LinearAxisTickLabelProps {
   className?: any;
 }
 
-export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
-  static defaultProps: Partial<LinearAxisTickLabelProps> = {
-    fill: '#8F979F',
-    fontSize: 11,
-    fontFamily: 'sans-serif',
-    rotation: true,
-    padding: 0,
-    align: 'center'
-  };
-
-  getAlign() {
-    const { align, half } = this.props;
-
+export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, line, fill = '#8F979F', fontSize = 11, fontFamily = 'sans-serif', rotation = true, padding = 5, textAnchor, position, align = 'center', className }: LinearAxisTickLabelProps) => {
+  function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';
     }
@@ -51,14 +37,14 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     return align;
   }
 
-  getTickLineSpacing() {
-    const { line } = this.props;
+  // bug in this function - spacing is NA
+  function getTickLineSpacing() {
     if (!line) {
       return [0, 0];
     }
 
-    const size = line.props.size;
-    const position = line.props.position;
+    const size = line.props.size ?? 3;
+    const position = line.props.position ?? 'center';
 
     if (position === 'start') {
       return [size * -1, 0];
@@ -69,107 +55,78 @@ export class LinearAxisTickLabel extends Component<LinearAxisTickLabelProps> {
     }
   }
 
-  getOffset() {
-    const { padding, position, rotation, orientation } = this.props;
+  function getOffset() {
+    const adjustedPadding = typeof padding === 'number' ? { fromAxis: padding, alongAxis: padding } : padding;
 
-    const adjustedPadding =
-      typeof padding === 'number'
-        ? {
-          fromAxis: padding as number,
-          alongAxis: padding as number
-        }
-        : (padding as { fromAxis: number; alongAxis: number });
+    const spacing = getTickLineSpacing();
+    const offset1 = position === 'start' ? spacing[0] - adjustedPadding.fromAxis : position === 'end' ? spacing[1] + adjustedPadding.fromAxis : 0;
 
-    const spacing = this.getTickLineSpacing();
-    const offset1 =
-      position === 'start'
-        ? spacing[0] - adjustedPadding.fromAxis
-        : position === 'end'
-          ? spacing[1] + adjustedPadding.fromAxis
-          : 0;
-
-    const align = this.getAlign();
+    const align = getAlign();
     let offset2 = rotation === true ? -5 : 0;
-    offset2 +=
-      align === 'center'
-        ? 0
-        : align === 'start'
-          ? -adjustedPadding.alongAxis
-          : adjustedPadding.alongAxis;
+    offset2 += align === 'center' ? 0 : align === 'start' ? -adjustedPadding.alongAxis : adjustedPadding.alongAxis;
 
     const horz = orientation === 'horizontal';
+
     return {
       [horz ? 'x' : 'y']: offset2,
       [horz ? 'y' : 'x']: offset1
     };
   }
 
-  getTextPosition() {
-    const { angle, orientation, position } = this.props;
+  function getTextPosition() {
     let transform = '';
-    let textAnchor = '';
+    let newtextAnchor = '';
     let alignmentBaseline = 'middle' as 'middle' | 'baseline' | 'hanging';
 
     if (angle !== 0) {
       transform = `rotate(${angle})`;
-      textAnchor = 'end';
+      newtextAnchor = 'end';
     } else {
-      const align = this.getAlign();
+      const align = getAlign();
       if (orientation === 'horizontal') {
-        textAnchor =
-          align === 'center' ? 'middle' : align === 'start' ? 'end' : 'start';
+        newtextAnchor = align === 'center' ? 'middle' : align === 'start' ? 'end' : 'start';
         if (position === 'start') {
           alignmentBaseline = 'baseline';
         } else if (position === 'end') {
           alignmentBaseline = 'hanging';
         }
       } else {
-        alignmentBaseline =
-          align === 'center'
-            ? 'middle'
-            : align === 'start'
-              ? 'baseline'
-              : 'hanging';
+        alignmentBaseline = align === 'center' ? 'middle' : align === 'start' ? 'baseline' : 'hanging';
         if (position === 'start') {
-          textAnchor = 'end';
+          newtextAnchor = 'end';
         } else if (position === 'end') {
-          textAnchor = 'start';
+          newtextAnchor = 'start';
         } else {
-          textAnchor = 'middle';
+          newtextAnchor = 'middle';
         }
       }
     }
 
     return {
       transform,
-      textAnchor: this.props.textAnchor || textAnchor,
+      textAnchor: textAnchor || newtextAnchor,
       alignmentBaseline
     };
   }
 
-  render() {
-    const {
-      fill,
-      text,
-      fullText,
-      fontSize,
-      fontFamily,
-      className
-    } = this.props;
-    const { x, y } = this.getOffset();
-    const textPosition = this.getTextPosition();
+  const { x, y } = getOffset();
+  const textPosition = getTextPosition();
 
-    return (
-      <g
-        transform={`translate(${x}, ${y})`}
-        fontSize={fontSize}
-        fontFamily={fontFamily}
-      >
-        <title>{fullText}</title>
-        <text {...textPosition} fill={fill} className={className}>
-          {text}
-        </text>
-      </g>
-    );
-  }
-}
+  return (
+    <g transform={`translate(${x}, ${y})`} fontSize={fontSize} fontFamily={fontFamily}>
+      <title>{fullText}</title>
+      <text {...textPosition} fill={fill} className={className}>
+        {text}
+      </text>
+    </g>
+  );
+};
+
+LinearAxisTickLabel.defaultProps = {
+  fill: '#8F979F',
+  fontSize: 11,
+  fontFamily: 'sans-serif',
+  rotation: true,
+  padding: 0,
+  align: 'center'
+};

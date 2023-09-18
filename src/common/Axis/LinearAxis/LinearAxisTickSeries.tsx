@@ -205,8 +205,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
 };
 
 LinearAxisTickSeries.defaultProps = {
-  line: <LinearAxisTickLine />,
-  label: <LinearAxisTickLabel />,
+  line: <LinearAxisTickLine height={10} width={10} orientation="horizontal" position="center" />,
+  label: <LinearAxisTickLabel line={<LinearAxisTickLine orientation="horizontal" position="center" height={5} width={5} />} text="" fullText="" angle={0} orientation="horizontal" half="start" position="center" />,
   tickSize: 30
 };
-
