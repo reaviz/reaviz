@@ -1,5 +1,10 @@
-# 14.9.8 - 9/7/23
+# 14.10.0 - 9/18/23
+- [feature] add gradient to pie, donut and radial gauge
+- [fix] fix padding on axis #140
+- [chore] more fc conversions #138 #137
+- [chore] upgrade storybook
 
+# 14.9.8 - 9/7/23
 - [chore] convert linear axis to fc
 
 # 14.9.7 - 8/18/23
