@@ -1,11 +1,8 @@
-import React, { Component, createRef, ReactElement } from 'react';
-import {
-  LinearAxisTickSeries,
-  LinearAxisTickSeriesProps
-} from './LinearAxisTickSeries';
-import { ChartDataTypes } from '../../data';
 import { CloneElement } from 'rdk';
+import React, { ReactElement, createRef, useCallback, useEffect, useState } from 'react';
+import { ChartDataTypes } from '../../data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
+import { LinearAxisTickSeries, LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
 
 export interface LinearAxisDimensionChanged {
   height?: number;
@@ -13,21 +10,18 @@ export interface LinearAxisDimensionChanged {
 }
 
 export interface LinearAxisProps {
+  height?: number;
+  width?: number;
   domain?: ChartDataTypes[];
   scaled?: boolean;
   roundDomains?: boolean;
-  type: 'value' | 'time' | 'category' | 'duration';
-  position: 'start' | 'end' | 'center';
-  tickSeries: ReactElement<
-    LinearAxisTickSeriesProps,
-    typeof LinearAxisTickSeries
-  >;
-  axisLine: ReactElement<LinearAxisLineProps, typeof LinearAxisLine> | null;
-  height: number;
-  width: number;
-  scale: any;
-  orientation: 'horizontal' | 'vertical';
-  onDimensionsChange: (event: LinearAxisDimensionChanged) => void;
+  type?: 'value' | 'time' | 'category' | 'duration';
+  position?: 'start' | 'end' | 'center';
+  tickSeries?: ReactElement<LinearAxisTickSeriesProps, typeof LinearAxisTickSeries>;
+  axisLine?: ReactElement<LinearAxisLineProps, typeof LinearAxisLine> | null;
+  scale?: any;
+  orientation?: 'horizontal' | 'vertical';
+  onDimensionsChange?: (event: LinearAxisDimensionChanged) => void;
 }
 
 interface LinearAxisState {
@@ -35,68 +29,44 @@ interface LinearAxisState {
   width?: number;
 }
 
-export class LinearAxis extends Component<LinearAxisProps, LinearAxisState> {
-  static defaultProps: Partial<LinearAxisProps> = {
-    axisLine: <LinearAxisLine />,
-    tickSeries: <LinearAxisTickSeries />,
-    scaled: false,
-    roundDomains: false,
-    onDimensionsChange: () => undefined
-  };
+export const LinearAxis = (props: LinearAxisProps) => {
+  const { domain, scaled = false, roundDomains = false, type, position, tickSeries, axisLine = <LinearAxisLine />, height, width, scale, orientation, onDimensionsChange = () => undefined } = props;
 
-  ref = createRef<SVGGElement>();
+  const initialDimensions = { height: height, width: width };
 
-  constructor(props: LinearAxisProps) {
-    super(props);
+  const containerRef = createRef<SVGGElement>();
 
-    this.state = {
-      height: props.height,
-      width: props.width
-    };
-  }
+  const [dimensions, setDimensions] = useState<LinearAxisState>(initialDimensions);
 
-  componentDidMount() {
-    this.updateDimensions();
-  }
-
-  componentDidUpdate(prevProps: LinearAxisProps) {
-    const { height, width, scale } = this.props;
-    if (
-      width !== prevProps.width ||
-      height !== prevProps.height ||
-      scale !== prevProps.scale
-    ) {
-      this.updateDimensions();
-    }
-  }
-
-  updateDimensions() {
-    const { onDimensionsChange, orientation, position } = this.props;
+  const updateDimensions = useCallback(() => {
     const shouldOffset = position !== 'center';
 
     let height;
     let width;
     if (shouldOffset) {
-      const dims = this.ref.current!.getBoundingClientRect();
+      const dims = containerRef.current!.getBoundingClientRect();
       width = Math.floor(dims.width);
       height = Math.floor(dims.height);
     }
 
     if (orientation === 'vertical') {
-      if (this.state.width !== width) {
-        this.setState({ width });
+      if (dimensions.width !== width) {
+        setDimensions({ ...dimensions, width: width });
         onDimensionsChange({ width });
       }
     } else {
-      if (this.state.height !== height) {
-        this.setState({ height });
+      if (dimensions.height !== height) {
+        setDimensions({ ...dimensions, height: height });
         onDimensionsChange({ height });
       }
     }
-  }
+  }, [containerRef, dimensions, onDimensionsChange, orientation, position]);
 
-  getPosition() {
-    const { position, width, height, orientation } = this.props;
+  useEffect(() => {
+    updateDimensions();
+  }, [updateDimensions, height, width, scale]);
+
+  function getPosition() {
     let translateY = 0;
     let translateX = 0;
 
@@ -113,39 +83,19 @@ export class LinearAxis extends Component<LinearAxisProps, LinearAxisState> {
     return { translateX, translateY };
   }
 
-  render() {
-    const {
-      scale,
-      height,
-      width,
-      orientation,
-      axisLine,
-      tickSeries
-    } = this.props;
-    const { translateX, translateY } = this.getPosition();
+  const { translateX, translateY } = getPosition();
 
-    return (
-      <g transform={`translate(${translateX}, ${translateY})`} ref={this.ref}>
-        {axisLine && (
-          <CloneElement<LinearAxisLineProps>
-            element={axisLine}
-            height={height}
-            width={width}
-            scale={scale}
-            orientation={orientation}
-          />
-        )}
-        {(tickSeries.props.line || tickSeries.props.label) && (
-          <CloneElement<LinearAxisTickSeriesProps>
-            element={tickSeries}
-            height={height}
-            width={width}
-            scale={scale}
-            orientation={orientation}
-            axis={this.props}
-          />
-        )}
-      </g>
-    );
-  }
-}
+  return (
+    <g transform={`translate(${translateX}, ${translateY})`} ref={containerRef}>
+      {axisLine && <CloneElement<LinearAxisLineProps> element={axisLine} height={height} width={width} scale={scale} orientation={orientation} />}
+      {(tickSeries.props.line || tickSeries.props.label) && <CloneElement<LinearAxisTickSeriesProps> element={tickSeries} height={height} width={width} scale={scale} orientation={orientation} axis={props} />}
+    </g>
+  );
+};
+
+LinearAxis.defaultProps = {
+  scaled: false,
+  roundDomains: false,
+  axisLine: <LinearAxisLine />,
+  onDimensionsChange: () => undefined
+};

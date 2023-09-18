@@ -62,6 +62,7 @@ export const CustomLabelRotation = () => (
     data={categoryData}
     xAxis={
       <LinearXAxis
+        position="end"
         type="category"
         tickSeries={
           <LinearXAxisTickSeries

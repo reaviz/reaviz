@@ -1,21 +1,10 @@
 import React, { FC } from 'react';
-import {
-  LinearAxisTickLabelProps,
-  LinearAxisTickLabel
-} from './LinearAxisTickLabel';
-import {
-  LinearAxisTickLineProps,
-  LinearAxisTickLine
-} from './LinearAxisTickLine';
-import {
-  LinearAxisTickSeriesProps,
-  LinearAxisTickSeries
-} from './LinearAxisTickSeries';
+import { LinearAxisTickLabelProps, LinearAxisTickLabel } from './LinearAxisTickLabel';
+import { LinearAxisTickLineProps, LinearAxisTickLine } from './LinearAxisTickLine';
+import { LinearAxisTickSeriesProps, LinearAxisTickSeries } from './LinearAxisTickSeries';
 import { LinearAxisProps, LinearAxis } from './LinearAxis';
 
-export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
-  props
-) => <LinearAxisTickLabel {...props} />;
+export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (props) => <LinearAxisTickLabel line={<LinearAxisTickLine orientation="vertical" position="center" height={5} width={5} />} text="" fullText="" angle={0} orientation="horizontal" position="end" half="start" {...props} />;
 LinearXAxisTickLabel.defaultProps = {
   ...LinearAxisTickLabel.defaultProps,
   rotation: true,
@@ -23,17 +12,13 @@ LinearXAxisTickLabel.defaultProps = {
   align: 'center'
 };
 
-export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
-  props
-) => <LinearAxisTickLine {...props} />;
+export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (props) => <LinearAxisTickLine height={10} width={10} orientation="vertical" position="start" {...props} />;
 LinearXAxisTickLine.defaultProps = {
   ...LinearAxisTickLine.defaultProps,
   position: 'end'
 };
 
-export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
-  props
-) => <LinearAxisTickSeries {...props} />;
+export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (props) => <LinearAxisTickSeries scale={props.scale} height={2} width={10} axis={props.axis} tickValues={props.tickValues} orientation="horizontal" {...props} />;
 LinearXAxisTickSeries.defaultProps = {
   ...LinearAxisTickSeries.defaultProps,
   tickSize: 75,
@@ -41,9 +26,7 @@ LinearXAxisTickSeries.defaultProps = {
   label: <LinearXAxisTickLabel />
 };
 
-export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => (
-  <LinearAxis {...props} />
-);
+export const LinearXAxis: FC<LinearAxisProps> = (props) => <LinearAxis tickSeries={<LinearXAxisTickSeries />} orientation="horizontal" type="value" position="end" roundDomains={false} scaled={false} {...props} />;
 LinearXAxis.defaultProps = {
   ...LinearAxis.defaultProps,
   position: 'end',
@@ -53,3 +36,5 @@ LinearXAxis.defaultProps = {
   orientation: 'horizontal',
   tickSeries: <LinearXAxisTickSeries />
 };
+
+// type="category" tickSeries={<LinearXAxisTickSeries label={<LinearXAxisTickLabel rotation={-90} />

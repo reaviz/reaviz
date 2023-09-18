@@ -13,14 +13,7 @@ export interface LinearAxisLineProps {
   className?: any;
 }
 
-export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
-  strokeColor,
-  strokeWidth,
-  strokeGradient,
-  scale,
-  orientation,
-  className
-}) => {
+export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({ strokeColor = '#8F979F', strokeWidth = 1, strokeGradient, scale, orientation, className }) => {
   const id = useId();
   const [range0, range1] = scale.range();
 
@@ -36,12 +29,7 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
         strokeWidth={strokeWidth}
         stroke={strokeGradient ? `url(#axis-gradient-${id})` : strokeColor}
       />
-      {strokeGradient && (
-        <CloneElement<GradientProps>
-          element={strokeGradient}
-          id={`axis-gradient-${id}`}
-        />
-      )}
+      {strokeGradient && <CloneElement<GradientProps> element={strokeGradient} id={`axis-gradient-${id}`} />}
     </Fragment>
   );
 };
