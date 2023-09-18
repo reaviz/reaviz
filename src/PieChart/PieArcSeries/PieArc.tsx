@@ -86,7 +86,6 @@ export const PieArc: FC<PieArcProps> = ({
   arc,
   cursor,
   animated,
-  mask,
   gradient,
   disabled,
   onClick,
