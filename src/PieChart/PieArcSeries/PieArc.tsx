@@ -1,4 +1,4 @@
-import React, { ReactElement, useState, FC, useRef, useMemo, useCallback } from 'react';
+import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
 import { CloneElement } from 'rdk';
@@ -80,7 +80,6 @@ export interface PieArcProps {
 }
 
 export const PieArc: FC<PieArcProps> = ({
-  id,
   color,
   data,
   arc,
@@ -125,12 +124,12 @@ export const PieArc: FC<PieArcProps> = ({
   const internalFill = useMemo(
     () => {
       if (gradient) {
-        return `url(#gradient-${id})`;
+        return `url(#gradient-${fill})`;
       }
 
       return color;
     },
-    [gradient, id, color]
+    [gradient, fill, color]
   );
 
   return (
@@ -155,7 +154,7 @@ export const PieArc: FC<PieArcProps> = ({
       {gradient && (
         <CloneElement<GradientProps>
           element={gradient}
-          id={`gradient-${id}`}
+          id={`gradient-${fill}`}
           direction="horizontal"
           color={fill}
         />
