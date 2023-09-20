@@ -1,3 +1,7 @@
+# 14.10.1 - 9/20/23
+- [fix] fix errors related to types with fc conversion
+- [fix] fix ids not being passed down for gauges 
+
 # 14.10.0 - 9/18/23
 - [feature] add gradient to pie, donut and radial gauge
 - [fix] fix padding on axis #140
