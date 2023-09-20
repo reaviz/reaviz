@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { FC, ReactElement } from 'react';
 import { LinearAxisTickLine, LinearAxisTickLineProps } from './LinearAxisTickLine';
 
 export interface LinearAxisTickLabelProps {
@@ -17,10 +17,26 @@ export interface LinearAxisTickLabelProps {
   textAnchor?: 'start' | 'end' | 'middle';
   position: 'start' | 'end' | 'center';
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
-  className?: any;
+  className?: string;
 }
 
-export const LinearAxisTickLabel = ({ text, fullText, angle, orientation, half, line, fill = '#8F979F', fontSize = 11, fontFamily = 'sans-serif', rotation = true, padding = 5, textAnchor, position, align = 'center', className }: LinearAxisTickLabelProps) => {
+export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
+  text,
+  fullText,
+  angle,
+  orientation,
+  half,
+  line,
+  textAnchor,
+  position,
+  className,
+  fill,
+  fontSize,
+  fontFamily,
+  rotation,
+  padding,
+  align
+}) => {
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';

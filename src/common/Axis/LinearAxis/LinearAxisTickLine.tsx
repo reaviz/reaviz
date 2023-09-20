@@ -8,7 +8,7 @@ export interface LinearAxisTickLineProps {
   strokeColor?: string;
   strokeWidth: number;
   position: 'start' | 'end' | 'center';
-  className?: any;
+  className?: string;
 }
 
 export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
@@ -19,7 +19,6 @@ export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
   strokeWidth,
   className
 }) => {
-
   const path = useMemo(() => {
     const isVertical = orientation === 'vertical';
     const tickSize = size || 0;

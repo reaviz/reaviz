@@ -1,5 +1,5 @@
 import { CloneElement } from 'rdk';
-import React, { ReactElement, createRef, useCallback, useEffect, useState } from 'react';
+import React, { FC, ReactElement, createRef, useCallback, useEffect, useState } from 'react';
 import { ChartDataTypes } from '../../data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
 import { LinearAxisTickSeries, LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
@@ -29,14 +29,20 @@ interface LinearAxisState {
   width?: number;
 }
 
-export const LinearAxis = (props: LinearAxisProps) => {
-  const { domain, scaled = false, roundDomains = false, type, position, tickSeries, axisLine = <LinearAxisLine />, height, width, scale, orientation, onDimensionsChange = () => undefined } = props;
-
-  const initialDimensions = { height: height, width: width };
+export const LinearAxis: FC<Partial<LinearAxisProps>> = props => {
+  const {
+    position,
+    tickSeries,
+    axisLine,
+    height,
+    width,
+    scale,
+    orientation,
+    onDimensionsChange
+  } = props;
 
   const containerRef = createRef<SVGGElement>();
-
-  const [dimensions, setDimensions] = useState<LinearAxisState>(initialDimensions);
+  const [dimensions, setDimensions] = useState<LinearAxisState>({ height: height, width: width });
 
   const updateDimensions = useCallback(() => {
     const shouldOffset = position !== 'center';
@@ -87,8 +93,25 @@ export const LinearAxis = (props: LinearAxisProps) => {
 
   return (
     <g transform={`translate(${translateX}, ${translateY})`} ref={containerRef}>
-      {axisLine && <CloneElement<LinearAxisLineProps> element={axisLine} height={height} width={width} scale={scale} orientation={orientation} />}
-      {(tickSeries.props.line || tickSeries.props.label) && <CloneElement<LinearAxisTickSeriesProps> element={tickSeries} height={height} width={width} scale={scale} orientation={orientation} axis={props} />}
+      {axisLine && (
+        <CloneElement<LinearAxisLineProps>
+          element={axisLine}
+          height={height}
+          width={width}
+          scale={scale}
+          orientation={orientation}
+        />
+      )}
+      {(tickSeries.props.line || tickSeries.props.label) && (
+        <CloneElement<LinearAxisTickSeriesProps>
+          element={tickSeries}
+          height={height}
+          width={width}
+          scale={scale}
+          orientation={orientation}
+          axis={props}
+        />
+      )}
     </g>
   );
 };

@@ -10,10 +10,17 @@ export interface LinearAxisLineProps {
   strokeGradient: ReactElement<GradientProps, typeof Gradient> | null;
   scale: any;
   orientation: 'horizontal' | 'vertical';
-  className?: any;
+  className?: string;
 }
 
-export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({ strokeColor = '#8F979F', strokeWidth = 1, strokeGradient, scale, orientation, className }) => {
+export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
+  strokeColor,
+  strokeWidth,
+  strokeGradient,
+  scale,
+  orientation,
+  className
+}) => {
   const id = useId();
   const [range0, range1] = scale.range();
 
