@@ -168,7 +168,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
         >
           {outerArc &&
             cloneElement(outerArc, {
-              id,
+              id: `${id}-${key}-outer`,
               outerRadius,
               innerRadius,
               startAngle,
@@ -176,7 +176,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
             })}
           {innerArc &&
             cloneElement(innerArc, {
-              id,
+              id: `${id}-${key}-inner`,
               outerRadius,
               innerRadius,
               startAngle,
