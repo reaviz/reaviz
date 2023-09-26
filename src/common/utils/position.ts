@@ -1,5 +1,5 @@
 import { bisector } from 'd3-array';
-import { applyToPoint, inverse, applyToPoints } from 'transformation-matrix';
+import { applyToPoint, applyToPoints, inverse } from 'transformation-matrix';
 
 type PointObjectNotation = { x: number; y: number };
 
@@ -28,6 +28,8 @@ const scaleBandInvert = (scale, isPointScale=false) => {
 
 /**
  * Given a point position, get the closes data point in the dataset.
+ * @param isPointScale Set to true if the scale being used is scalePoint (https://www.d3indepth.com/scales/#scalepoint)
+ *                      as it's slightly different from scaleBand (https://www.d3indepth.com/scales/#scaleband)
  */
 export const getClosestPoint = (pos: number, scale, data, attr = 'x', isPointScale=false) => {
   if (scale.invert) {
