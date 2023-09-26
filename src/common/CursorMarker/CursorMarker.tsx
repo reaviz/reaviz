@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
-import css from './MarkLine.module.css';
+import css from './CursorMarker.module.css';
 
-export interface MarkLineProps {
+export interface CursorMarkerProps {
   height: number;
   pointX?: number;
   strokeColor: string;
   strokeWidth: number;
 }
 
-export const MarkLine: FC<Partial<MarkLineProps>> = ({
+export const CursorMarker: FC<Partial<CursorMarkerProps>> = ({
   pointX,
   height,
   strokeWidth = 1,
@@ -22,6 +22,6 @@ export const MarkLine: FC<Partial<MarkLineProps>> = ({
     y2={height}
     x1={pointX}
     x2={pointX}
-    className={css.markLine}
+    className={css.cursorMarker}
   />
 );

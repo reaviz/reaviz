@@ -14,7 +14,9 @@ export interface SparklineChartProps extends LineChartProps {
   data: ChartShallowDataShape[];
 }
 
-export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => <LineChart {...props} />;
+export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => (
+  <LineChart {...props} />
+);
 
 SparklineChart.defaultProps = {
   gridlines: null,
@@ -22,7 +24,7 @@ SparklineChart.defaultProps = {
     <AreaSeries
       symbols={<PointSeries show="hover" />}
       interpolation="smooth"
-      markLine={null}
+      cursorMarker={null}
       area={null}
       line={<Line strokeWidth={2} />}
     />

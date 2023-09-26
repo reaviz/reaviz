@@ -23,7 +23,10 @@ export const Line = () => (
     data={largeDateData}
     zoomPan={<ChartZoomPan />}
     series={
-      <LineSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+      <LineSeries
+        tooltip={<TooltipArea disabled={true} />}
+        cursorMarker={null}
+      />
     }
     xAxis={
       <LinearXAxis
@@ -45,7 +48,10 @@ export const Area = () => (
     data={largeDateData}
     zoomPan={<ChartZoomPan />}
     series={
-      <AreaSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+      <AreaSeries
+        tooltip={<TooltipArea disabled={true} />}
+        cursorMarker={null}
+      />
     }
     xAxis={
       <LinearXAxis
@@ -119,7 +125,10 @@ export const DefaultZoom = () => {
         />
       }
       series={
-        <LineSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+        <LineSeries
+          tooltip={<TooltipArea disabled={true} />}
+          cursorMarker={null}
+        />
       }
       xAxis={
         <LinearXAxis

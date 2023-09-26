@@ -21,7 +21,9 @@ export interface AreaSparklineChartProps extends AreaChartProps {
   data: ChartShallowDataShape[];
 }
 
-export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (props) => <AreaChart {...props} />;
+export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
+  props
+) => <AreaChart {...props} />;
 
 AreaSparklineChart.defaultProps = {
   gridlines: null,
@@ -29,7 +31,7 @@ AreaSparklineChart.defaultProps = {
     <AreaSeries
       symbols={<PointSeries show="hover" />}
       interpolation="smooth"
-      markLine={null}
+      cursorMarker={null}
       area={
         <Area
           mask={<Stripes />}

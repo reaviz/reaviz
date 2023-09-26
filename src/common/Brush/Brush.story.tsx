@@ -35,7 +35,10 @@ export const Line = () => (
     data={largeDateData}
     brush={<ChartBrush disabled={false} />}
     series={
-      <LineSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+      <LineSeries
+        tooltip={<TooltipArea disabled={true} />}
+        cursorMarker={null}
+      />
     }
     xAxis={
       <LinearXAxis
@@ -208,7 +211,10 @@ export const DefaultSelection = () => (
       />
     }
     series={
-      <LineSeries tooltip={<TooltipArea disabled={true} />} markLine={null} />
+      <LineSeries
+        tooltip={<TooltipArea disabled={true} />}
+        cursorMarker={null}
+      />
     }
     xAxis={
       <LinearXAxis

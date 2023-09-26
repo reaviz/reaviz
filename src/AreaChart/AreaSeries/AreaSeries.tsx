@@ -7,7 +7,7 @@ import React, {
 } from 'react';
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
-import { MarkLine, MarkLineProps } from '../../common/MarkLine';
+import { CursorMarker, CursorMarkerProps } from '../../common/CursorMarker';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
@@ -82,9 +82,9 @@ export interface AreaSeriesProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 
   /**
-   * Markline for the chart.
+   * CursorMarker for the chart.
    */
-  markLine: ReactElement<MarkLineProps, typeof MarkLine> | null;
+  cursorMarker: ReactElement<CursorMarkerProps, typeof CursorMarker> | null;
 
   /**
    * Symbols used to show points.
@@ -127,7 +127,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   xScale,
   yScale,
   type,
-  markLine,
+  cursorMarker,
   symbols,
   animated,
   area,
@@ -257,27 +257,30 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     ]
   );
 
-  const renderMarkLine = useCallback(() => (
-    <>
-      {activeValues && markLine && (
-        <CloneElement<MarkLineProps>
-          element={markLine}
-          height={height}
-          pointX={activePoint}
-        />
-      )}
-    </>
-  ), [activePoint, activeValues, height, markLine]);
+  const renderCursorMarker = useCallback(
+    () => (
+      <>
+        {activeValues && cursorMarker && (
+          <CloneElement<CursorMarkerProps>
+            element={cursorMarker}
+            height={height}
+            pointX={activePoint}
+          />
+        )}
+      </>
+    ),
+    [activePoint, activeValues, height, cursorMarker]
+  );
 
   const renderSingleSeries = useCallback(
     (data: ChartInternalShallowDataShape[]) => (
       <Fragment>
         {renderArea(data)}
-        {renderMarkLine()}
+        {renderCursorMarker()}
         {renderSymbols(data)}
       </Fragment>
     ),
-    [renderArea, renderMarkLine, renderSymbols]
+    [renderArea, renderCursorMarker, renderSymbols]
   );
 
   const renderMultiSeries = useCallback(
@@ -290,7 +293,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             </Fragment>
           ))
           .reverse()}
-        {renderMarkLine()}
+        {renderCursorMarker()}
         {data
           .map((point, index) => (
             <Fragment key={identifier(`${point.key}`)}>
@@ -300,7 +303,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           .reverse()}
       </Fragment>
     ),
-    [renderArea, renderMarkLine, renderSymbols]
+    [renderArea, renderCursorMarker, renderSymbols]
   );
 
   return (
@@ -343,7 +346,7 @@ AreaSeries.defaultProps = {
   type: 'standard',
   line: <Line />,
   area: <Area />,
-  markLine: <MarkLine />,
+  cursorMarker: <CursorMarker />,
   tooltip: <TooltipArea />,
   symbols: <PointSeries />
 };
