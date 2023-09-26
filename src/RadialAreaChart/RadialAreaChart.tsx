@@ -7,7 +7,7 @@ import {
   ChartNestedDataShape,
   ChartShallowDataShape
 } from '../common/data';
-import { scaleTime, scaleBand } from 'd3-scale';
+import { scaleTime, scaleBand, scalePoint } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
 import {
   ChartProps,
@@ -40,6 +40,12 @@ export interface RadialAreaChartProps extends ChartProps {
    * The inner radius for the chart center.
    */
   axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
+
+  /**
+   * Whether to render a semicircle or a full circle
+   * Renders a full circle by default
+   */
+  isSemiCircle?: boolean;
 }
 
 export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
@@ -52,10 +58,12 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   innerRadius,
   series,
   axis,
-  margins
+  margins,
+  isSemiCircle
 }) => {
   const getXScale = useCallback(
     (points) => {
+      const maxXScaleRange = isSemiCircle ? Math.PI : 2 * Math.PI;
       let xScale;
       if (axis?.props.type === 'category') {
         const isMultiSeries = series.props.type === 'grouped';
@@ -74,20 +82,29 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
           );
         }
 
-        xScale = scaleBand()
-          .range([0, 2 * Math.PI])
-          .domain(xDomain as any[]);
+        if (isSemiCircle) {
+          // scaleBand() excludes the end value from the band:
+          //  https://www.d3indepth.com/scales/#scaleband
+          xScale = scalePoint()
+            .range([0, maxXScaleRange])
+            .domain(xDomain as any[]);
+        } else {
+          xScale = scaleBand()
+            .range([0, maxXScaleRange])
+            .domain(xDomain as any[]);
+        }
+
       } else {
         const xDomain = getXDomain({ data: points });
 
         xScale = scaleTime()
-          .range([0, 2 * Math.PI])
+          .range([0, maxXScaleRange])
           .domain(xDomain);
       }
 
       return xScale;
     },
-    [axis?.props.type, series.props.type]
+    [axis?.props.type, isSemiCircle, series.props.type]
   );
 
   const getScales = useCallback(
@@ -133,6 +150,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
               height={chartHeight}
               width={chartWidth}
               innerRadius={innerRadius}
+              isSemiCircle={isSemiCircle}
             />
           )}
           <CloneElement<RadialAreaSeriesProps>
@@ -145,11 +163,12 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
             width={chartWidth}
             outerRadius={outerRadius}
             innerRadius={innerRadius}
+            isSemiCircle={isSemiCircle}
           />
         </Fragment>
       );
     },
-    [getScales, data, innerRadius, axis, series]
+    [getScales, data, innerRadius, axis, isSemiCircle, series]
   );
 
   return (
@@ -173,5 +192,6 @@ RadialAreaChart.defaultProps = {
   innerRadius: 0.1,
   series: <RadialAreaSeries />,
   axis: <RadialAxis />,
-  margins: 75
+  margins: 75,
+  isSemiCircle: false
 };

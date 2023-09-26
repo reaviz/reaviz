@@ -44,6 +44,12 @@ export interface RadialAxisTickSeriesProps {
    * Tick element to render.
    */
   tick: ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
+
+  /**
+   * Whether to render a semicircle or a full circle
+   * Renders a full circle by default
+   */
+  isSemiCircle?: boolean;
 }
 
 export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
@@ -54,7 +60,8 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   tickValues,
   innerRadius,
   interval,
-  type
+  type,
+  isSemiCircle
 }) => {
   const ticks = getTicks(scale, tickValues, type, count, interval || count);
 
@@ -69,6 +76,7 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
           data={data}
           innerRadius={innerRadius}
           outerRadius={outerRadius}
+          isSemiCircle={isSemiCircle}
         />
       ))}
     </Fragment>
@@ -78,5 +86,6 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
 RadialAxisTickSeries.defaultProps = {
   count: 12,
   type: 'time',
-  tick: <RadialAxisTick />
+  tick: <RadialAxisTick />,
+  isSemiCircle: false
 };

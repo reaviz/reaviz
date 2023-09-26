@@ -52,6 +52,12 @@ export interface RadialAxisTickProps {
     RadialAxisTickLabelProps,
     typeof RadialAxisTickLabel
   > | null;
+
+   /**
+   * Whether to render a semicircle or a full circle
+   * Renders a full circle by default
+   */
+   isSemiCircle?: boolean;
 }
 
 export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
@@ -62,10 +68,12 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
   data,
   index,
   padding,
-  innerRadius
+  innerRadius,
+  isSemiCircle
 }) => {
   const point = scale(data);
-  const rotation = (point * 180) / Math.PI - 90;
+  const rotationFactor = isSemiCircle ? 2 : 1;
+  const rotation = (point * 180) / Math.PI - (rotationFactor*90);
   const transform = `rotate(${rotation}) translate(${outerRadius + padding},0)`;
   const lineSize = line ? line.props.size : 0;
 
@@ -86,6 +94,8 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
+          isSemiCircle={isSemiCircle}
+          autoRotate={false}
         />
       )}
     </g>
@@ -96,5 +106,6 @@ RadialAxisTick.defaultProps = {
   outerRadius: 0,
   padding: 0,
   line: <RadialAxisTickLine />,
-  label: <RadialAxisTickLabel />
+  label: <RadialAxisTickLabel />,
+  isSemiCircle: false
 };

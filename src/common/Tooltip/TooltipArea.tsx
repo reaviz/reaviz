@@ -98,6 +98,12 @@ export interface TooltipAreaProps {
    * Whether the layout is horizontal or not.
    */
   isHorizontal: boolean;
+
+  /**
+   * Whether the radial area is a semicircle or a full circle
+   * Renders a full circle by default
+   */
+  isSemiCircle?: boolean;
 }
 
 interface TooltipDataShape {
@@ -124,7 +130,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   innerRadius,
   outerRadius,
   placement: placementProp,
-  onValueLeave
+  onValueLeave,
+  isSemiCircle
 }, _) => {
   const [visible, setVisible] = useState<boolean>();
   const [placement, setPlacement] = useState<Placement>();
@@ -134,12 +141,13 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   const [prevX, setPrevX] = useState<number>();
   const [prevY, setPrevY] = useState<number>();
   const ref = useRef<SVGRectElement | SVGPathElement | any>();
+  const rotationFactor = isSemiCircle ? 1 : 0.5;
 
   const getXCoord = useCallback((x: number, y: number) => {
     // If the shape is radial, we need to convert the X coords to a radial format.
     if (isRadial) {
       const outerRadius = Math.min(width, height) / 2;
-      let rad = Math.atan2(y - outerRadius, x - outerRadius) + Math.PI / 2;
+      let rad = Math.atan2(y - outerRadius, x - outerRadius) + (rotationFactor * Math.PI);
 
       // TODO: Figure out what the 'correct' way to do this is...
       if (rad < 0) {
@@ -150,7 +158,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     }
 
     return x;
-  }, [height, isRadial, width]);
+  }, [height, isRadial, rotationFactor, width]);
 
   const transformData = useCallback((series: ChartInternalDataShape[]) => {
     const result: TooltipDataShape[] = [];
@@ -256,7 +264,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = getClosestPoint(coord, keyScale, transformed);
+    const newValue = getClosestPoint(coord, keyScale, transformed, 'x', isSemiCircle);
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -291,8 +299,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       if (isRadial) {
         // If its radial, we need to convert the coords to radial format
         const outerRadius = Math.min(width, height) / 2;
-        offsetX = pointY * Math.cos(pointX - Math.PI / 2) + outerRadius;
-        offsetY = pointY * Math.sin(pointX - Math.PI / 2) + outerRadius;
+        offsetX = pointY * Math.cos(pointX - (rotationFactor * Math.PI)) + outerRadius;
+        offsetY = pointY * Math.sin(pointX - (rotationFactor * Math.PI)) + outerRadius;
       } else {
         offsetX = pointX;
         offsetY = pointY;
@@ -318,7 +326,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         nativeEvent: event
       });
     }
-  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, transformData, value, width, xScale, yScale]);
+  }, [data, getXCoord, height, isHorizontal, isRadial, isSemiCircle, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
 
   const onMouseLeave = useCallback(() => {
     setPrevX(undefined);
@@ -344,12 +352,15 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     const d = arc()({
       innerRadius: innerRadiusNew,
       outerRadius: outerRadiusNew,
-      startAngle: 180,
-      endAngle: Math.PI / 2
+      startAngle: isSemiCircle ? 0.5 * Math.PI : 0,
+      endAngle: isSemiCircle ? 1.5 * Math.PI :  2*Math.PI
     });
+
+    const transform = `rotate(${isSemiCircle ? 180 : 0})`;
 
     return (
       <path
+        transform={transform}
         d={d!}
         opacity="0"
         cursor="auto"
@@ -357,7 +368,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         onMouseMove={onMouseMove}
       />
     );
-  }, [height, innerRadius, onMouseMove, outerRadius, width]);
+  }, [height, innerRadius, isSemiCircle, onMouseMove, outerRadius, width]);
 
   const renderLinear = useCallback(() => {
     return (
@@ -404,5 +415,6 @@ TooltipArea.defaultProps = {
   tooltip: <ChartTooltip />,
   inverse: true,
   onValueEnter: () => undefined,
-  onValueLeave: () => undefined
+  onValueLeave: () => undefined,
+  isSemiCircle: false
 };

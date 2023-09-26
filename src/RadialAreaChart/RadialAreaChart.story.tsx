@@ -100,3 +100,65 @@ export const MultiSeries = () => (
     axis={<RadialAxis type="category" />}
   />
 );
+
+export const SemiCircle = () => (
+  <RadialAreaChart
+    height={500}
+    width={500}
+    data={medDateData}
+    innerRadius={0.1}
+    series={
+      <RadialAreaSeries
+        colorScheme="cybertron"
+        animated
+        interpolation="smooth"
+        area={<RadialArea gradient={<RadialGradient />} />}
+      />
+    }
+    axis={
+      <RadialAxis
+        arcs={<RadialAxisArcSeries count={10} />}
+        ticks={
+          <RadialAxisTickSeries
+            count={5}
+            tick={
+              <RadialAxisTick
+                line={<RadialAxisTickLine position="inside" />}
+                label={<RadialAxisTickLabel autoRotate />}
+              />
+            }
+          />
+        }
+      />
+    }
+    isSemiCircle={true}
+  />
+);
+
+export const SemiCircleMultiSeries = () => (
+  <RadialAreaChart
+    data={multiCategory}
+    height={500}
+    width={500}
+    series={
+      <RadialAreaSeries
+        type="grouped"
+        interpolation="linear"
+        area={
+          <RadialArea
+            gradient={
+              <RadialGradient
+                stops={[
+                  <GradientStop offset="0%" stopOpacity={0.1} key="start" />,
+                  <GradientStop offset="80%" stopOpacity={0.3} key="stop" />
+                ]}
+              />
+            }
+          />
+        }
+      />
+    }
+    axis={<RadialAxis type="category" />}
+    isSemiCircle={true}
+  />
+);

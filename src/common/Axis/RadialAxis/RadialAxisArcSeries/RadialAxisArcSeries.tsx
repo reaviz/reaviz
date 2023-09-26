@@ -35,6 +35,12 @@ export interface RadialAxisArcSeriesProps {
    * Calculated tick values by the Radial Axis.
    */
   tickValues?: any[];
+
+  /**
+   * Whether to render a semicircle or a full circle
+   * Renders a full circle by default
+   */
+  isSemiCircle?: boolean;
 }
 
 export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
@@ -43,7 +49,8 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
   outerRadius,
   line,
   arc,
-  tickValues
+  tickValues,
+  isSemiCircle
 }) => {
   const scale = scaleLinear()
     .domain([0, count])
@@ -80,6 +87,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
               key={d}
               index={d}
               scale={scale}
+              isSemiCircle={isSemiCircle}
             />
           ))}
         </>
@@ -91,5 +99,6 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
 RadialAxisArcSeries.defaultProps = {
   type: 'arc',
   count: 12,
-  arc: <RadialAxisArc />
+  arc: <RadialAxisArc />,
+  isSemiCircle: false
 };

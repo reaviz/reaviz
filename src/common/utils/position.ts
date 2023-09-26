@@ -7,14 +7,15 @@ type PointObjectNotation = { x: number; y: number };
  * Add ability to calculate scale band position.
  * Reference: https://stackoverflow.com/questions/38633082/d3-getting-invert-value-of-band-scales
  */
-const scaleBandInvert = (scale) => {
+const scaleBandInvert = (scale, isPointScale=false) => {
   const domain = scale.domain();
   const paddingOuter = scale(domain[0]);
   const eachBand = scale.step();
   const [, end] = scale.range();
 
   return (offset) => {
-    let index = Math.floor((offset - paddingOuter) / eachBand);
+    const band = (offset - paddingOuter) / eachBand;
+    let index = isPointScale ? Math.round(band): Math.floor(band);
 
     // Handle horizontal charts...
     if (end === 0) {
@@ -28,7 +29,7 @@ const scaleBandInvert = (scale) => {
 /**
  * Given a point position, get the closes data point in the dataset.
  */
-export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
+export const getClosestPoint = (pos: number, scale, data, attr = 'x', isPointScale=false) => {
   if (scale.invert) {
     const domain = scale.invert(pos);
 
@@ -60,7 +61,7 @@ export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
     if (scale.mariemkoInvert) {
       prop = scale.mariemkoInvert(pos);
     } else {
-      prop = scaleBandInvert(scale)(pos);
+      prop = scaleBandInvert(scale, isPointScale)(pos);
     }
 
     const idx = domain.indexOf(prop);

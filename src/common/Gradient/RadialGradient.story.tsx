@@ -26,3 +26,19 @@ export const Simple = () => (
     }
   />
 );
+
+export const SemiCirlce = () => (
+  <RadialAreaChart
+    data={categoryData}
+    height={500}
+    width={500}
+    axis={<RadialAxis type="category" />}
+    series={
+      <RadialAreaSeries
+        area={<RadialArea gradient={<RadialGradient />} />}
+        interpolation="linear"
+      />
+    }
+    isSemiCircle={true}
+  />
+);

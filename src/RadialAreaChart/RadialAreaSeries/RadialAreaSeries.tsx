@@ -102,6 +102,12 @@ export interface RadialAreaSeriesProps {
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
+
+  /**
+   * Whether to render a semicircle or a full circle
+   * Renders a full circle by default
+   */
+  isSemiCircle?: boolean;
 }
 
 export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
@@ -120,7 +126,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   outerRadius,
   type,
   colorScheme,
-  interpolation
+  interpolation,
+  isSemiCircle
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
@@ -242,6 +249,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
     [renderArea, renderSymbols]
   );
 
+  const transform = `rotate(${isSemiCircle ? -90 : 0})`;
+
   return (
     <CloneElement<TooltipAreaProps>
       element={tooltip}
@@ -256,8 +265,9 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
       color={getColorForPoint}
       onValueEnter={(event) => setActiveValues(event.value)}
       onValueLeave={() => setActiveValues(null)}
+      isSemiCircle={isSemiCircle}
     >
-      <g clipPath={`url(#${id}-path)`}>
+      <g clipPath={`url(#${id}-path)`} transform={transform}>
         {isMulti &&
           renderMultiSeries(data as unknown as ChartInternalNestedDataShape[])}
         {!isMulti &&
@@ -275,5 +285,6 @@ RadialAreaSeries.defaultProps = {
   area: <RadialArea />,
   line: <RadialLine />,
   symbols: <RadialPointSeries />,
-  tooltip: <TooltipArea />
+  tooltip: <TooltipArea />,
+  isSemiCircle: false
 };
