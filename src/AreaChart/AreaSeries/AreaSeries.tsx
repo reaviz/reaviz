@@ -23,8 +23,7 @@ import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '../../common/utils/interpolation';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { identifier } from 'safe-identifier';
-import { Marker, MarkerProps } from '../../common';
-import { MarkerLabel } from '../../common/MarkerLabel';
+import { Marker, MarkerProps } from '../../common/Marker';
 
 export type AreaChartTypes =
   | 'standard'
@@ -288,14 +287,12 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             <CloneElement<MarkerProps>
               key={`marker-${i}`}
               element={marker}
-              yScale={yScale}
-              value={100}
               width={width}
             />
           ))}
       </>
     ),
-    [markers, width, yScale]
+    [markers, width]
   );
 
   const renderSingleSeries = useCallback(

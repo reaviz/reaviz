@@ -34,6 +34,7 @@ export default {
   }
 };
 
+/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <AreaChart
     width={350}
@@ -49,7 +50,7 @@ export const Simple = () => (
             value={50}
             color="blue"
             label={
-              <MarkerLabel color="white" position="center" text="Goal 900k" />
+              <MarkerLabel color="white" position="center" text="Test Label" />
             }
           />
         ]}
@@ -72,7 +73,7 @@ export const Simple = () => (
           value={50}
           color="blue"
           label={
-            <MarkerLabel color="white" position="center" text="Goal 900k" />
+            <MarkerLabel color="white" position="center" text="Test Label" />
           }
         />
       ]}

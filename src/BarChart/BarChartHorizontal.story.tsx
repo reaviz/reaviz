@@ -1,9 +1,20 @@
 import React from 'react';
 import { BarChart } from './BarChart';
 import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
-import { LinearXAxis, LinearXAxisTickSeries, LinearYAxis, LinearYAxisTickSeries, LinearXAxisTickLabel } from '../common/Axis/LinearAxis';
+import {
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries,
+  LinearXAxisTickLabel
+} from '../common/Axis/LinearAxis';
 import chroma from 'chroma-js';
-import { categoryData, largeCategoryData, nonZeroCategoryData, durationCategoryData } from '../../demo';
+import {
+  categoryData,
+  largeCategoryData,
+  nonZeroCategoryData,
+  durationCategoryData
+} from '../../demo';
 import {
   HistogramBarSeries,
   MarimekkoBarSeries,
@@ -11,6 +22,8 @@ import {
   StackedBarSeries,
   StackedNormalizedBarSeries
 } from './BarSeries';
+import { Marker } from '../common/Marker';
+import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Bar Chart/Horizontal/Single Series',
@@ -30,6 +43,7 @@ export default {
 
 const data = categoryData;
 
+/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <BarChart
     width={500}
@@ -48,11 +62,22 @@ export const Simple = () => (
         layout="horizontal"
         padding={0.1}
         bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+        markers={[
+          <Marker
+            value={200}
+            color="blue"
+            horizontal
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />
+        ]}
       />
     }
   />
 );
 
+/* Modified currently to test multiple Markers, will undo once Markers are set */
 export const LargeDataset = () => (
   <BarChart
     height={350}
@@ -71,6 +96,24 @@ export const LargeDataset = () => (
         colorScheme={chroma
           .scale(['ACB7C9', '418AD7'])
           .colors(largeCategoryData.length)}
+        markers={[
+          <Marker
+            value={200}
+            color="blue"
+            horizontal
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />,
+          <Marker
+            value={100}
+            color="blue"
+            horizontal
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />
+        ]}
       />
     }
   />
@@ -171,5 +214,5 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };

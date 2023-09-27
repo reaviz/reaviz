@@ -1,11 +1,17 @@
 import React, { Fragment, useState } from 'react';
 import { BarChart } from './BarChart';
-import { categoryData, largeCategoryData, nonZeroCategoryData } from '../../demo';
+import {
+  categoryData,
+  largeCategoryData,
+  nonZeroCategoryData
+} from '../../demo';
 import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
 import { schemes } from '../common/color';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '../common/Mask';
+import { Marker } from '../common/Marker';
+import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Single Series',
@@ -18,6 +24,7 @@ export default {
   }
 };
 
+/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <BarChart
     width={400}
@@ -28,6 +35,15 @@ export const Simple = () => (
         colorScheme={schemes[0]}
         padding={0.1}
         bar={<Bar />}
+        markers={[
+          <Marker
+            value={50}
+            color="blue"
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />
+        ]}
       />
     }
   />
@@ -93,11 +109,7 @@ export const Labels = () => (
     width={350}
     height={250}
     data={categoryData}
-    series={
-      <BarSeries
-        bar={<Bar label={<BarLabel position={'top'} />} />}
-      />
-    }
+    series={<BarSeries bar={<Bar label={<BarLabel position={'top'} />} />} />}
   />
 );
 
@@ -162,7 +174,7 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };
 
 const LiveDataDemo = () => {

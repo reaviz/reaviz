@@ -20,17 +20,22 @@ export interface MarkerProps {
   strokeWidth: number;
 
   /**
-   * Width of the chart. Set internally by Parent.
+   * Width of the chart. Set internally by Graph.
    */
   width: number;
 
   /**
-   * D3 scale for Y Axis. Set internally by Parent.
+   * Width of the chart. Set internally by Graph.
+   */
+  height?: number;
+
+  /**
+   * D3 scale for Y Axis. Set internally by Graph.
    */
   yScale: number;
 
   /**
-   * Parsed data shape. Set internally by Parent.
+   * Parsed data shape. Set internally by Graph.
    */
   data: ChartInternalDataShape[];
 
@@ -38,6 +43,11 @@ export interface MarkerProps {
    * Marker Label for the Marker.
    */
   label?: ReactElement<MarkerLabelProps, typeof MarkerLabel> | string | null;
+
+  /**
+   * Changing direction of the marker to match horizontal graphs. Set internally by Graph.
+   */
+  horizontal?: boolean;
 }
 
 export const Marker: FC<Partial<MarkerProps>> = ({
@@ -45,7 +55,9 @@ export const Marker: FC<Partial<MarkerProps>> = ({
   strokeWidth = 1,
   color = '#eee',
   width,
-  label
+  label,
+  horizontal,
+  height
 }) => {
   const renderMarkerLabel = useCallback(
     () => (
@@ -53,7 +65,7 @@ export const Marker: FC<Partial<MarkerProps>> = ({
         {label && (
           <CloneElement<MarkerLabelProps>
             element={label}
-            y={value}
+            height={value}
             width={width}
           />
         )}
@@ -62,17 +74,23 @@ export const Marker: FC<Partial<MarkerProps>> = ({
     [label, width, value]
   );
 
+  const directionProps = {
+    x1: horizontal ? value : 0,
+    x2: horizontal ? value : width,
+    y1: horizontal ? 0 : value,
+    y2: horizontal ? height : value
+  };
+
+  console.log(value);
+
   return (
     <svg>
       <g dominantBaseline="central" height={10}>
         <line
           stroke={color}
           strokeWidth={strokeWidth}
-          y1={value}
           vectorEffect="non-scaling-stroke"
-          y2={value}
-          x1="0"
-          x2={width}
+          {...directionProps}
         />
         {renderMarkerLabel()}
       </g>

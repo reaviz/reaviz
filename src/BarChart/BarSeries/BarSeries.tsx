@@ -22,6 +22,7 @@ import {
   ChartTooltip,
   TooltipAreaEvent
 } from '../../common/Tooltip';
+import { Marker, MarkerProps } from '../../common/Marker';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 
@@ -110,6 +111,11 @@ export interface BarSeriesProps {
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea> | null;
+
+  /**
+   * Markers for the chart area.
+   */
+  markers: ReactElement<MarkerProps, typeof Marker>[] | null;
 }
 
 export const BarSeries: FC<Partial<BarSeriesProps>> = ({
@@ -127,7 +133,8 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   isCategorical,
   layout,
   type,
-  id
+  id,
+  markers
 }) => {
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
@@ -293,6 +300,24 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
     [renderBar]
   );
 
+  const renderMarkers = useCallback(
+    () => (
+      <>
+        {markers &&
+          markers.map((marker, i) => (
+            <CloneElement<MarkerProps>
+              key={`marker-${i}`}
+              element={marker}
+              yScale={yScale}
+              width={width}
+              height={height}
+            />
+          ))}
+      </>
+    ),
+    [markers, width, height, yScale]
+  );
+
   return (
     <CloneElement<TooltipAreaProps>
       element={tooltip}
@@ -320,6 +345,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
         ))}
       {!isMultiSeries &&
         renderBarGroup(data as ChartInternalShallowDataShape[], data.length)}
+      {renderMarkers()}
     </CloneElement>
   );
 };

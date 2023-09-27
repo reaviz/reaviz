@@ -9,7 +9,7 @@ export interface MarkerLabelProps {
   /**
    * Height for positioning. set internally by `Marker`.
    */
-  y: number;
+  height: number;
 
   /**
    * Color of the label.
@@ -28,20 +28,22 @@ export interface MarkerLabelProps {
 }
 
 export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
-  y,
+  height,
   width,
   color = '#eee',
   position = 'center',
   text
 }) => {
   const getPosition = useCallback(() => {
-    if (position === 'top') return y - 10;
-    if (position === 'below') return y + 10;
-    return y;
-  }, [position, y]);
+    let y = height;
+    let x = width - 70;
+    if (position === 'top') y = height - 10;
+    if (position === 'below') y = height + 10;
+    return { x, y };
+  }, [position, height, width]);
 
   return (
-    <text y={getPosition()} x={width - 70} fill={color}>
+    <text {...getPosition()} fill={color}>
       {text}
     </text>
   );
