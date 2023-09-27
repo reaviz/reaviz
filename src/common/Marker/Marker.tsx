@@ -82,8 +82,6 @@ export const Marker: FC<Partial<MarkerProps>> = ({
     y2: horizontal ? height : value
   };
 
-  console.log(value);
-
   return (
     <svg>
       <g dominantBaseline="central">
