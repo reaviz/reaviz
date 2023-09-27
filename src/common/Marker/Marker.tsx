@@ -67,11 +67,12 @@ export const Marker: FC<Partial<MarkerProps>> = ({
             element={label}
             height={value}
             width={width}
+            horizontal={horizontal}
           />
         )}
       </>
     ),
-    [label, width, value]
+    [label, width, value, horizontal]
   );
 
   const directionProps = {

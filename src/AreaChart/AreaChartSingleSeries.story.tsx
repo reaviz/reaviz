@@ -81,6 +81,7 @@ export const Simple = () => (
   }
 />;
 
+/* Modified currently to test multiple Markers, will undo once Markers are set */
 export const Masks = () => (
   <AreaChart
     width={350}
@@ -102,6 +103,22 @@ export const Masks = () => (
           />
         }
         line={<Line strokeWidth={3} />}
+        markers={[
+          <Marker
+            value={50}
+            color="blue"
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />,
+          <Marker
+            value={100}
+            color="red"
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />
+        ]}
       />
     }
   />

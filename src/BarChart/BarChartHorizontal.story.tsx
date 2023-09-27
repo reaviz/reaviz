@@ -98,7 +98,7 @@ export const LargeDataset = () => (
           .colors(largeCategoryData.length)}
         markers={[
           <Marker
-            value={200}
+            value={300}
             color="blue"
             horizontal
             label={
@@ -106,8 +106,8 @@ export const LargeDataset = () => (
             }
           />,
           <Marker
-            value={100}
-            color="blue"
+            value={200}
+            color="red"
             horizontal
             label={
               <MarkerLabel color="white" position="center" text="Test Label" />

@@ -2,12 +2,12 @@ import React, { FC, useCallback } from 'react';
 
 export interface MarkerLabelProps {
   /**
-   * Width for positioning. set internally by `Marker`.
+   * Width for positioning. Set internally by `Marker`.
    */
   width: number;
 
   /**
-   * Height for positioning. set internally by `Marker`.
+   * Height for positioning. Set internally by `Marker`.
    */
   height: number;
 
@@ -25,6 +25,11 @@ export interface MarkerLabelProps {
    * Label text.
    */
   text: string;
+
+  /**
+   * Set text to align with y-axis. Set internally by `Marker`.
+   */
+  horizontal: boolean;
 }
 
 export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
@@ -32,6 +37,7 @@ export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
   width,
   color = '#eee',
   position = 'center',
+  horizontal,
   text
 }) => {
   const getPosition = useCallback(() => {
@@ -39,8 +45,14 @@ export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
     let x = width - 70;
     if (position === 'top') y = height - 10;
     if (position === 'below') y = height + 10;
+    if (horizontal) {
+      x = height;
+      y = width - 80;
+      if (position === 'top') y = height - 10;
+      if (position === 'below') y = height + 10;
+    }
     return { x, y };
-  }, [position, height, width]);
+  }, [position, height, width, horizontal]);
 
   return (
     <text {...getPosition()} fill={color}>
