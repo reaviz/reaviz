@@ -86,7 +86,7 @@ export const Marker: FC<Partial<MarkerProps>> = ({
 
   return (
     <svg>
-      <g dominantBaseline="central" height={10}>
+      <g dominantBaseline="central">
         <line
           stroke={color}
           strokeWidth={strokeWidth}
