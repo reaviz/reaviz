@@ -3,6 +3,7 @@ import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from 'rdk';
 import { ScatterPoint, ScatterPointProps } from './ScatterPoint';
 import { identifier } from 'safe-identifier';
+import { Marker, MarkerProps } from '../../common/Marker';
 
 export interface ScatterSeriesProps {
   /**
@@ -54,6 +55,11 @@ export interface ScatterSeriesProps {
    * Active element ids to highlight.
    */
   activeIds?: string[];
+
+  /**
+   * Markers for the chart.
+   */
+  markers: ReactElement<MarkerProps, typeof Marker>[] | null;
 }
 
 // For bubble charts, often symbols exceed the area
@@ -69,6 +75,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   isZoomed,
   activeIds,
   point,
+  markers,
   ...rest
 }) => {
   const renderPoint = useCallback(
@@ -102,6 +109,22 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
     [point, id, rest, activeIds]
   );
 
+  const renderMarkers = useCallback(
+    () => (
+      <>
+        {markers &&
+          markers.map((marker, i) => (
+            <CloneElement<MarkerProps>
+              key={`marker-${i}`}
+              element={marker}
+              width={width}
+            />
+          ))}
+      </>
+    ),
+    [markers, width]
+  );
+
   return (
     <Fragment>
       <defs>
@@ -115,6 +138,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         </clipPath>
       </defs>
       <g clipPath={`url(#${id}-path)`}>{data!.map(renderPoint)}</g>
+      {renderMarkers()}
     </Fragment>
   );
 };

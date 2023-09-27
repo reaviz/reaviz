@@ -6,6 +6,8 @@ import { LineChart } from './LineChart';
 import { Line } from '../AreaChart';
 import { LinearXAxisTickSeries, LinearXAxis } from '../common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
+import { Marker } from '../common/Marker';
+import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Line Chart/Single Series',
@@ -16,6 +18,7 @@ export default {
   }
 };
 
+/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <LineChart
     width={250}
@@ -26,6 +29,15 @@ export const Simple = () => (
         interpolation="linear"
         colorScheme="cybertron"
         line={<Line strokeWidth={4} />}
+        markers={[
+          <Marker
+            value={50}
+            color="blue"
+            label={
+              <MarkerLabel color="white" position="center" text="Test Label" />
+            }
+          />
+        ]}
       />
     }
   />
@@ -96,9 +108,7 @@ const LiveUpdatingStory = () => {
         ...data,
         {
           id: randomNumber(1, 10000),
-          key: moment('2020-02-29T08:00:00.000Z')
-            .add(++offset, 'day')
-            .toDate(),
+          key: moment('2020-02-29T08:00:00.000Z').add(++offset, 'day').toDate(),
           data: randomNumber(1, 20)
         }
       ];
