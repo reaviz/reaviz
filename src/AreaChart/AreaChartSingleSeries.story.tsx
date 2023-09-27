@@ -18,6 +18,8 @@ import { LinearXAxis, LinearXAxisTickSeries } from '../common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
 import { ChartDataShape } from '../common/data';
+import { Marker } from '../common';
+import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Area Chart/Single Series',
@@ -42,10 +44,41 @@ export const Simple = () => (
         interpolation="linear"
         colorScheme="cybertron"
         line={<Line strokeWidth={4} />}
+        markers={[
+          <Marker
+            value={50}
+            color="blue"
+            label={
+              <MarkerLabel color="white" position="center" text="Goal 900k" />
+            }
+          />
+        ]}
       />
     }
   />
 );
+
+<AreaChart
+  width={350}
+  height={250}
+  data={singleDateData}
+  series={
+    <AreaSeries
+      interpolation="linear"
+      colorScheme="cybertron"
+      line={<Line strokeWidth={4} />}
+      markers={[
+        <Marker
+          value={50}
+          color="blue"
+          label={
+            <MarkerLabel color="white" position="center" text="Goal 900k" />
+          }
+        />
+      ]}
+    />
+  }
+/>;
 
 export const Masks = () => (
   <AreaChart

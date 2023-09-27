@@ -23,6 +23,8 @@ import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '../../common/utils/interpolation';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { identifier } from 'safe-identifier';
+import { Marker, MarkerProps } from '../../common';
+import { MarkerLabel } from '../../common/MarkerLabel';
 
 export type AreaChartTypes =
   | 'standard'
@@ -87,6 +89,11 @@ export interface AreaSeriesProps {
   cursorMarker: ReactElement<CursorMarkerProps, typeof CursorMarker> | null;
 
   /**
+   * Markers for the chart.
+   */
+  markers: ReactElement<MarkerProps, typeof Marker>[] | null;
+
+  /**
    * Symbols used to show points.
    */
   symbols: ReactElement<PointSeriesProps, typeof PointSeries> | null;
@@ -128,6 +135,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   yScale,
   type,
   cursorMarker,
+  markers,
   symbols,
   animated,
   area,
@@ -272,15 +280,34 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     [activePoint, activeValues, height, cursorMarker]
   );
 
+  const renderMarkers = useCallback(
+    () => (
+      <>
+        {markers &&
+          markers.map((marker, i) => (
+            <CloneElement<MarkerProps>
+              key={`marker-${i}`}
+              element={marker}
+              yScale={yScale}
+              value={100}
+              width={width}
+            />
+          ))}
+      </>
+    ),
+    [markers, width, yScale]
+  );
+
   const renderSingleSeries = useCallback(
     (data: ChartInternalShallowDataShape[]) => (
       <Fragment>
         {renderArea(data)}
         {renderCursorMarker()}
+        {renderMarkers()}
         {renderSymbols(data)}
       </Fragment>
     ),
-    [renderArea, renderCursorMarker, renderSymbols]
+    [renderArea, renderCursorMarker, renderSymbols, renderMarkers]
   );
 
   const renderMultiSeries = useCallback(
@@ -294,6 +321,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           ))
           .reverse()}
         {renderCursorMarker()}
+        {renderMarkers()}
         {data
           .map((point, index) => (
             <Fragment key={identifier(`${point.key}`)}>
@@ -303,7 +331,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           .reverse()}
       </Fragment>
     ),
-    [renderArea, renderCursorMarker, renderSymbols]
+    [renderArea, renderCursorMarker, renderSymbols, renderMarkers]
   );
 
   return (
