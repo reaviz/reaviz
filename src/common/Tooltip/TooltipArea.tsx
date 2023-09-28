@@ -12,6 +12,7 @@ import { CloneElement } from 'rdk';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
 import isEqual from 'react-fast-compare';
+import { scaleLinear } from 'd3-scale';
 
 export interface TooltipAreaProps {
   /**
@@ -100,10 +101,14 @@ export interface TooltipAreaProps {
   isHorizontal: boolean;
 
   /**
-   * Whether the radial area is a semicircle or a full circle
-   * Renders a full circle by default
+   * Start angle for the first value.
    */
-  isSemiCircle?: boolean;
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 interface TooltipDataShape {
@@ -131,7 +136,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   outerRadius,
   placement: placementProp,
   onValueLeave,
-  isSemiCircle
+  startAngle,
+  endAngle
 }, _) => {
   const [visible, setVisible] = useState<boolean>();
   const [placement, setPlacement] = useState<Placement>();
@@ -141,24 +147,37 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   const [prevX, setPrevX] = useState<number>();
   const [prevY, setPrevY] = useState<number>();
   const ref = useRef<SVGRectElement | SVGPathElement | any>();
-  const rotationFactor = isSemiCircle ? 1 : 0.5;
+  const fullCircleref = useRef<SVGRectElement | SVGPathElement | any>();
+  const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
+  
+  const range = Math.abs(endAngle - startAngle);
+
+  
+  const rotationFactor = 0.5;
 
   const getXCoord = useCallback((x: number, y: number) => {
     // If the shape is radial, we need to convert the X coords to a radial format.
     if (isRadial) {
       const outerRadius = Math.min(width, height) / 2;
-      let rad = Math.atan2(y - outerRadius, x - outerRadius) + (rotationFactor * Math.PI);
+      let rad = Math.atan2(y - outerRadius, x - outerRadius) + (rotationFactor * Math.PI);   
+
+      // Align it with the expected start angle
+      rad = (rad - startAngle) % (2 * Math.PI);
 
       // TODO: Figure out what the 'correct' way to do this is...
       if (rad < 0) {
         rad += Math.PI * 2;
       }
 
+      // convert to given range
+      const scale = scaleLinear().domain([0, range]).range([startAngle, endAngle]);
+      rad = scale(rad);
+
       return rad;
     }
 
     return x;
-  }, [height, isRadial, rotationFactor, width]);
+  }, [endAngle, height, isRadial, range, startAngle, width]);
 
   const transformData = useCallback((series: ChartInternalDataShape[]) => {
     const result: TooltipDataShape[] = [];
@@ -241,7 +260,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     }
 
     // Get the path container element
-    let target = ref.current;
+    // Note that we are using the dummy 'full' circle for alignment
+    let target = fullCircleref.current;
 
     const { y, x } = getPositionForTarget({
       target: target,
@@ -264,7 +284,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = getClosestPoint(coord, keyScale, transformed, 'x', isSemiCircle);
+    const newValue = getClosestPoint(coord, keyScale, transformed, 'x', !isFullCircle);
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -326,7 +346,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         nativeEvent: event
       });
     }
-  }, [data, getXCoord, height, isHorizontal, isRadial, isSemiCircle, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
+  }, [data, getXCoord, height, isFullCircle, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
 
   const onMouseLeave = useCallback(() => {
     setPrevX(undefined);
@@ -352,23 +372,41 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     const d = arc()({
       innerRadius: innerRadiusNew,
       outerRadius: outerRadiusNew,
-      startAngle: isSemiCircle ? 0.5 * Math.PI : 0,
-      endAngle: isSemiCircle ? 1.5 * Math.PI :  2*Math.PI
+      startAngle: isFullCircle ? 0 : startAngle,
+      endAngle: isFullCircle ?  2 * Math.PI: endAngle
     });
 
-    const transform = `rotate(${isSemiCircle ? 180 : 0})`;
+
+    // This is a dummuy full circle in the background as we need the
+    // full circle to get the coordinates right from getBoundingClientRect()
+    // If we don't use a full circle the bounding circle could be of any dimension and
+    // the logic in getPositionForTarget() wouldn't work
+    const fullCircle = arc()({
+      innerRadius: innerRadiusNew,
+      outerRadius: outerRadiusNew,
+      startAngle: 0,
+      endAngle: 2 * Math.PI
+    });
+
 
     return (
-      <path
-        transform={transform}
-        d={d!}
-        opacity="0"
-        cursor="auto"
-        ref={ref}
-        onMouseMove={onMouseMove}
-      />
+      <>
+        <path
+          d={fullCircle!}
+          opacity="0"
+          cursor="auto"
+          ref={fullCircleref}
+        />
+        <path
+          d={d!}
+          opacity="0"
+          cursor="auto"
+          ref={ref}
+          onMouseMove={onMouseMove}
+        />
+      </>
     );
-  }, [height, innerRadius, isSemiCircle, onMouseMove, outerRadius, width]);
+  }, [endAngle, height, innerRadius, isFullCircle, onMouseMove, outerRadius, startAngle, width]);
 
   const renderLinear = useCallback(() => {
     return (
@@ -416,5 +454,6 @@ TooltipArea.defaultProps = {
   inverse: true,
   onValueEnter: () => undefined,
   onValueLeave: () => undefined,
-  isSemiCircle: false
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

@@ -1,3 +1,4 @@
+import { arc } from 'd3-shape';
 import React, { FC } from 'react';
 
 export interface RadialAxisArcProps {
@@ -22,10 +23,14 @@ export interface RadialAxisArcProps {
   strokeDasharray: ((index: number) => string) | string;
 
   /**
-   * Whether to render a semicircle or a full circle
-   * Renders a full circle by default
+   * Start angle for the first value.
    */
-  isSemiCircle?: boolean;
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
@@ -33,7 +38,8 @@ export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
   stroke,
   strokeDasharray,
   scale,
-  isSemiCircle
+  startAngle,
+  endAngle
 }) => {
   const r = scale(index);
   const strokeColor = typeof stroke === 'string' ? stroke : stroke(index);
@@ -41,11 +47,26 @@ export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
     typeof strokeDasharray === 'string'
       ? strokeDasharray
       : strokeDasharray(index);
-  const d = `M 0 0 h ${r} A ${r} ${r} 0 1 0 -${r} 0 z`;
+
+  const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
+
+  const x = arc()({
+    innerRadius: r,
+    outerRadius: r,
+    startAngle: startAngle,
+    endAngle: endAngle
+  });
+
+  // Path calculation for intermediate angles
+  const REGEX = /(-?\d+\.?\d*,-?\d+\.?\d*A-?\d+\.?\d*,-?\d+\.?\d*)/gm;
+  const matches = x.match(REGEX);
+  const start = matches?.[0]?.split('A', 2)?.[0];
+  const end = matches?.[1]?.split('A', 2)?.[0];
+  const d = x + ` M ${start} L 0,0 M ${end} L 0,0`;
 
   return (
     <>
-      {!isSemiCircle ? 
+      {isFullCircle ? 
         <circle
           fill="none"
           strokeDasharray={strokeDash}
@@ -69,5 +90,6 @@ export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
 RadialAxisArc.defaultProps = {
   stroke: '#71808d',
   strokeDasharray: '1,4',
-  isSemiCircle: false
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

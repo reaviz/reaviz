@@ -60,10 +60,14 @@ export interface RadialAxisTickLabelProps {
   format?: (value: any, index: number) => any | string;
 
   /**
-   * Whether to render a semicircle or a full circle
-   * Renders a full circle by default
+   * Start angle for the first value.
    */
-  isSemiCircle?: boolean;
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
@@ -78,12 +82,18 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   format,
   lineSize,
   index,
-  isSemiCircle
+  startAngle,
+  endAngle
 }) => {
+ 
+  const range = Math.abs(endAngle - startAngle);
+  const isFullCircle = Math.abs(range) >= 2 * Math.PI;
+  const rotationFactor = isFullCircle || (range < Math.PI) ? 1 : (Math.PI/range);
+
   const { transform, textAnchor } = useMemo(() => {
     let textAnchor;
     let transform;
-    const rotationFactor = isSemiCircle ? 2 : 1;
+
     if (autoRotate) {
       const l = point >= Math.PI;
       const r = point < (rotationFactor * Math.PI);
@@ -102,7 +112,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
 
       transform = `rotate(${(rotationFactor*90) - rad2deg(point)}, ${rotationFactor*padding}, 0)`;
     } else {
-      const shouldRotate = rotation && (isSemiCircle ? rotation < -100 : rotation > 100);
+      const shouldRotate = rotation && (rotation > 100 || rotation < -100 );
       const rotate = shouldRotate ? 180 : 0;
       const translate = shouldRotate ? -30 : 0;
       textAnchor = shouldRotate ? 'end' : 'start';
@@ -113,7 +123,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
       transform,
       textAnchor
     };
-  }, [autoRotate, isSemiCircle, padding, point, rotation]);
+  }, [autoRotate, padding, point, rotation, rotationFactor]);
 
   const text = format ? format(data, index) : formatValue(data);
 
@@ -140,5 +150,6 @@ RadialAxisTickLabel.defaultProps = {
   padding: 15,
   fontFamily: 'sans-serif',
   autoRotate: true,
-  isSemiCircle: false
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

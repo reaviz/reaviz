@@ -53,10 +53,14 @@ export interface RadialAxisProps {
   > | null;
 
   /**
-   * Whether to render a semicircle or a full circle
-   * Renders a full circle by default
+   * Start angle for the first value.
    */
-  isSemiCircle?: boolean;
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
@@ -67,7 +71,8 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
   width,
   innerRadius,
   type,
-  isSemiCircle
+  startAngle,
+  endAngle
 }) => {
   const outerRadius = Math.min(height, width) / 2;
 
@@ -90,7 +95,8 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
           outerRadius={outerRadius}
           innerRadius={innerRadius}
           tickValues={tickValues}
-          isSemiCircle={isSemiCircle}
+          startAngle={startAngle}
+          endAngle={endAngle}
         />
       )}
       {ticks && (
@@ -100,7 +106,8 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
           type={type}
           innerRadius={innerRadius}
           outerRadius={outerRadius}
-          isSemiCircle={isSemiCircle}
+          startAngle={startAngle}
+          endAngle={endAngle}
         />
       )}
     </Fragment>
@@ -112,5 +119,6 @@ RadialAxis.defaultProps = {
   type: 'value',
   arcs: <RadialAxisArcSeries />,
   ticks: <RadialAxisTickSeries />,
-  isSemiCircle: false
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

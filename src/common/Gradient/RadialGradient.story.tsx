@@ -39,6 +39,7 @@ export const SemiCirlce = () => (
         interpolation="linear"
       />
     }
-    isSemiCircle={true}
+    startAngle={-0.5 * Math.PI}
+    endAngle={0.5 * Math.PI}
   />
 );

@@ -109,7 +109,8 @@ export const SemiCircle = () => (
         }
       />
     }
-    isSemiCircle={true}
+    startAngle={-0.5 * Math.PI}
+    endAngle={0.5 * Math.PI}
   />
 );
 
@@ -120,6 +121,7 @@ export const SemiCircleMultiSeries = () => (
     width={500}
     series={<RadialAreaSeries area={null} type="grouped" interpolation="linear" />}
     axis={<RadialAxis type="category" />}
-    isSemiCircle={true}
+    startAngle={-0.5 * Math.PI}
+    endAngle={0.5 * Math.PI}
   />
 );
