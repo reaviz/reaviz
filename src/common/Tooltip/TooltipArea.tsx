@@ -378,8 +378,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
 
 
     // This is a dummuy full circle in the background as we need the
-    // full circle to get the coordinates right from getBoundingClientRect()
-    // If we don't use a full circle the bounding circle could be of any dimension and
+    // full circle to get the coordinates right from getBoundingClientRect().
+    // If we don't use a full circle, then the bounding rectangle could be of any dimension and
     // the logic in getPositionForTarget() wouldn't work
     const fullCircle = arc()({
       innerRadius: innerRadiusNew,
