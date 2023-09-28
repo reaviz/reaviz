@@ -22,8 +22,6 @@ import {
   StackedBarSeries,
   StackedNormalizedBarSeries
 } from './BarSeries';
-import { Marker } from '../common/Marker';
-import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Bar Chart/Horizontal/Single Series',
@@ -43,7 +41,6 @@ export default {
 
 const data = categoryData;
 
-/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <BarChart
     width={500}
@@ -62,22 +59,11 @@ export const Simple = () => (
         layout="horizontal"
         padding={0.1}
         bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
-        markers={[
-          <Marker
-            value={200}
-            color="blue"
-            horizontal
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
       />
     }
   />
 );
 
-/* Modified currently to test multiple Markers, will undo once Markers are set */
 export const LargeDataset = () => (
   <BarChart
     height={350}
@@ -96,24 +82,6 @@ export const LargeDataset = () => (
         colorScheme={chroma
           .scale(['ACB7C9', '418AD7'])
           .colors(largeCategoryData.length)}
-        markers={[
-          <Marker
-            value={300}
-            color="blue"
-            horizontal
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />,
-          <Marker
-            value={200}
-            color="red"
-            horizontal
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
       />
     }
   />

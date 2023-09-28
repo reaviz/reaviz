@@ -18,8 +18,6 @@ import { LinearXAxis, LinearXAxisTickSeries } from '../common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '../common/Gradient';
 import { Stripes } from '../common/Mask';
 import { ChartDataShape } from '../common/data';
-import { Marker } from '../common';
-import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Area Chart/Single Series',
@@ -34,7 +32,6 @@ export default {
   }
 };
 
-/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <AreaChart
     width={350}
@@ -45,43 +42,11 @@ export const Simple = () => (
         interpolation="linear"
         colorScheme="cybertron"
         line={<Line strokeWidth={4} />}
-        markers={[
-          <Marker
-            value={50}
-            color="blue"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
       />
     }
   />
 );
 
-<AreaChart
-  width={350}
-  height={250}
-  data={singleDateData}
-  series={
-    <AreaSeries
-      interpolation="linear"
-      colorScheme="cybertron"
-      line={<Line strokeWidth={4} />}
-      markers={[
-        <Marker
-          value={50}
-          color="blue"
-          label={
-            <MarkerLabel color="white" position="center" text="Test Label" />
-          }
-        />
-      ]}
-    />
-  }
-/>;
-
-/* Modified currently to test multiple Markers, will undo once Markers are set */
 export const Masks = () => (
   <AreaChart
     width={350}
@@ -103,22 +68,6 @@ export const Masks = () => (
           />
         }
         line={<Line strokeWidth={3} />}
-        markers={[
-          <Marker
-            value={50}
-            color="blue"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />,
-          <Marker
-            value={100}
-            color="red"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
       />
     }
   />

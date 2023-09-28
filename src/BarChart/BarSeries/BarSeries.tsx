@@ -309,13 +309,14 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
               key={`marker-${i}`}
               element={marker}
               yScale={yScale}
+              xScale={xScale}
               width={width}
               height={height}
             />
           ))}
       </>
     ),
-    [markers, width, height, yScale]
+    [markers, width, height, xScale, yScale]
   );
 
   return (

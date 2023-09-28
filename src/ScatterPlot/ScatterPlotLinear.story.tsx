@@ -18,8 +18,6 @@ import {
 } from '../common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '../common/color';
-import { Marker } from '../common/Marker';
-import { MarkerLabel } from '../common/MarkerLabel';
 
 export default {
   title: 'Charts/Scatter Plot/Linear',
@@ -30,7 +28,6 @@ export default {
   }
 };
 
-/* Modified currently to test Markers, will undo once Markers are set */
 export const Simple = () => (
   <ScatterPlot
     height={400}
@@ -39,15 +36,6 @@ export const Simple = () => (
     series={
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
-        markers={[
-          <Marker
-            value={50}
-            color="blue"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
       />
     }
   />
@@ -78,33 +66,12 @@ export const CategoricalAxis = () => (
   />
 );
 
-/* Modified currently to test multiple Markers, will undo once Markers are set */
 export const NoAnimation = () => (
   <ScatterPlot
     height={400}
     width={750}
     data={medSignalChartData}
-    series={
-      <ScatterSeries
-        animated={false}
-        markers={[
-          <Marker
-            value={50}
-            color="blue"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />,
-          <Marker
-            value={100}
-            color="red"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
-      />
-    }
+    series={<ScatterSeries animated={false} />}
   />
 );
 

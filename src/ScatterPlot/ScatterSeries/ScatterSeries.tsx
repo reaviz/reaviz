@@ -76,6 +76,8 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   activeIds,
   point,
   markers,
+  xScale,
+  yScale,
   ...rest
 }) => {
   const renderPoint = useCallback(
@@ -99,6 +101,8 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
           element={point}
           key={key}
           {...rest}
+          xScale={xScale}
+          yScale={yScale}
           id={id}
           data={pointData}
           index={index}
@@ -106,7 +110,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         />
       );
     },
-    [point, id, rest, activeIds]
+    [point, id, rest, activeIds, xScale, yScale]
   );
 
   const renderMarkers = useCallback(
@@ -118,11 +122,13 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
               key={`marker-${i}`}
               element={marker}
               width={width}
+              xScale={xScale}
+              yScale={yScale}
             />
           ))}
       </>
     ),
-    [markers, width]
+    [markers, width, xScale, yScale]
   );
 
   return (

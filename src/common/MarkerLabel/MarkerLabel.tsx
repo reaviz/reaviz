@@ -30,6 +30,16 @@ export interface MarkerLabelProps {
    * Set text to align with y-axis. Set internally by `Marker`.
    */
   horizontal: boolean;
+
+  /**
+   * D3 scale for X Axis. Set internally by Marker.
+   */
+  xScale: any;
+
+  /**
+   * D3 scale for Y Axis. Set internally by Marker.
+   */
+  yScale: any;
 }
 
 export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
@@ -38,21 +48,23 @@ export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
   color = '#eee',
   position = 'center',
   horizontal,
-  text
+  text,
+  xScale,
+  yScale
 }) => {
   const getPosition = useCallback(() => {
-    let y = height;
+    let y = yScale(height);
     let x = width - 70;
-    if (position === 'top') y = height - 10;
-    if (position === 'below') y = height + 10;
+    if (position === 'top') y = yScale(height) - 10;
+    if (position === 'below') y = yScale(height) + 10;
     if (horizontal) {
-      x = height;
+      x = xScale(height);
       y = width - 80;
-      if (position === 'top') y = height - 10;
-      if (position === 'below') y = height + 10;
+      if (position === 'top') y = xScale(height) - 10;
+      if (position === 'below') y = xScale(height) + 10;
     }
     return { x, y };
-  }, [position, height, width, horizontal]);
+  }, [position, height, width, horizontal, yScale, xScale]);
 
   return (
     <text {...getPosition()} fill={color}>
