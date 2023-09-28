@@ -44,6 +44,16 @@ export interface RadialAxisTickSeriesProps {
    * Tick element to render.
    */
   tick: ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
@@ -54,7 +64,9 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   tickValues,
   innerRadius,
   interval,
-  type
+  type,
+  startAngle,
+  endAngle
 }) => {
   const ticks = getTicks(scale, tickValues, type, count, interval || count);
 
@@ -69,6 +81,8 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
           data={data}
           innerRadius={innerRadius}
           outerRadius={outerRadius}
+          startAngle={startAngle}
+          endAngle={endAngle}
         />
       ))}
     </Fragment>
@@ -78,5 +92,7 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
 RadialAxisTickSeries.defaultProps = {
   count: 12,
   type: 'time',
-  tick: <RadialAxisTick />
+  tick: <RadialAxisTick />,
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

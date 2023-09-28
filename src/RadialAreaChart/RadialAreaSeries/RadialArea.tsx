@@ -1,6 +1,6 @@
 import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { radialArea, curveCardinalClosed, curveLinearClosed } from 'd3-shape';
+import { radialArea, curveCardinalClosed, curveLinearClosed, curveCardinal, curveLinear } from 'd3-shape';
 import { RadialGradient, RadialGradientProps } from '../../common/Gradient';
 import { CloneElement } from 'rdk';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
@@ -66,6 +66,11 @@ export interface RadialAreaProps {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<RadialGradientProps, typeof RadialGradient> | null;
+
+  /**
+   * Whether the curve should be closed. Set to true by deafult
+   */
+  isClosedCurve: boolean;
 }
 
 export const RadialArea: FC<Partial<RadialAreaProps>> = ({
@@ -80,7 +85,8 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   xScale,
   innerRadius,
   interpolation,
-  gradient
+  gradient,
+  isClosedCurve
 }) => {
   const transition = useMemo(
     () =>
@@ -110,7 +116,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   const getPath = useCallback(
     (d: ChartInternalShallowDataShape[]) => {
       const curve =
-        interpolation === 'smooth' ? curveCardinalClosed : curveLinearClosed;
+        interpolation === 'smooth' ? (isClosedCurve ? curveCardinalClosed : curveCardinal) : isClosedCurve ? curveLinearClosed : curveLinear;
 
       const radialFn = radialArea()
         .angle((dd: any) => xScale(dd.x))
@@ -120,7 +126,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
 
       return radialFn(d as any);
     },
-    [xScale, yScale, interpolation, innerRadius]
+    [interpolation, isClosedCurve, xScale, innerRadius, yScale]
   );
 
   const enter = useMemo(
@@ -166,5 +172,6 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
 };
 
 RadialArea.defaultProps = {
-  gradient: <RadialGradient />
+  gradient: <RadialGradient />,
+  isClosedCurve: true
 };

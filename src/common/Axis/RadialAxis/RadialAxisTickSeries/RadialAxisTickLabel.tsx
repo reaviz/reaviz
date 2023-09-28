@@ -58,6 +58,16 @@ export interface RadialAxisTickLabelProps {
    * Format of the label.
    */
   format?: (value: any, index: number) => any | string;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
@@ -71,20 +81,27 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   fontSize,
   format,
   lineSize,
-  index
+  index,
+  startAngle,
+  endAngle
 }) => {
+ 
+  const range = Math.abs(endAngle - startAngle);
+  const isFullCircle = Math.abs(range) >= 2 * Math.PI;
+  const rotationFactor = isFullCircle || (range < Math.PI) ? 1 : (Math.PI/range);
+
   const { transform, textAnchor } = useMemo(() => {
     let textAnchor;
     let transform;
 
     if (autoRotate) {
       const l = point >= Math.PI;
-      const r = point < 2 * Math.PI;
+      const r = point < (rotationFactor * Math.PI);
 
       // TODO: This centers the text, determine better way later
       if (
-        (rotation >= 85 && rotation <= 95) ||
-        (rotation <= -85 && rotation >= -95)
+        (rotation >= (85/rotationFactor) && rotation <= (95/rotationFactor)) ||
+        (rotation <= (-85/rotationFactor) && rotation >= (-95/rotationFactor))
       ) {
         textAnchor = 'middle';
       } else if (l && r) {
@@ -93,9 +110,9 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         textAnchor = 'start';
       }
 
-      transform = `rotate(${90 - rad2deg(point)}, ${padding}, 0)`;
+      transform = `rotate(${(rotationFactor*90) - rad2deg(point)}, ${rotationFactor*padding}, 0)`;
     } else {
-      const shouldRotate = rotation > 100 && rotation;
+      const shouldRotate = rotation && (rotation > 100 || rotation < -100 );
       const rotate = shouldRotate ? 180 : 0;
       const translate = shouldRotate ? -30 : 0;
       textAnchor = shouldRotate ? 'end' : 'start';
@@ -106,7 +123,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
       transform,
       textAnchor
     };
-  }, [autoRotate, padding, point, rotation]);
+  }, [autoRotate, padding, point, rotation, rotationFactor]);
 
   const text = format ? format(data, index) : formatValue(data);
 
@@ -132,5 +149,7 @@ RadialAxisTickLabel.defaultProps = {
   fontSize: 11,
   padding: 15,
   fontFamily: 'sans-serif',
-  autoRotate: true
+  autoRotate: true,
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

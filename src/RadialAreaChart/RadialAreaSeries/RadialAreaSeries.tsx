@@ -102,6 +102,21 @@ export interface RadialAreaSeriesProps {
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
+
+  /**
+   * Whether the curve should be closed. Set to true by deafult
+   */
+  isClosedCurve: boolean;
 }
 
 export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
@@ -120,7 +135,10 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   outerRadius,
   type,
   colorScheme,
-  interpolation
+  interpolation,
+  startAngle,
+  endAngle,
+  isClosedCurve
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
@@ -156,6 +174,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             interpolation={interpolation}
             outerRadius={outerRadius}
             innerRadius={innerRadius}
+            isClosedCurve={isClosedCurve}
           />
         )}
         {line && (
@@ -169,22 +188,12 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             interpolation={interpolation}
             color={getColorForPoint}
             data={point}
+            isClosedCurve={isClosedCurve}
           />
         )}
       </>
     ),
-    [
-      animated,
-      area,
-      getColorForPoint,
-      id,
-      innerRadius,
-      interpolation,
-      line,
-      outerRadius,
-      xScale,
-      yScale
-    ]
+    [animated, area, getColorForPoint, id, innerRadius, interpolation, isClosedCurve, line, outerRadius, xScale, yScale]
   );
 
   const renderSymbols = useCallback(
@@ -242,6 +251,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
     [renderArea, renderSymbols]
   );
 
+
   return (
     <CloneElement<TooltipAreaProps>
       element={tooltip}
@@ -256,6 +266,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
       color={getColorForPoint}
       onValueEnter={(event) => setActiveValues(event.value)}
       onValueLeave={() => setActiveValues(null)}
+      startAngle={startAngle}
+      endAngle={endAngle}
     >
       <g clipPath={`url(#${id}-path)`}>
         {isMulti &&
@@ -275,5 +287,8 @@ RadialAreaSeries.defaultProps = {
   area: <RadialArea />,
   line: <RadialLine />,
   symbols: <RadialPointSeries />,
-  tooltip: <TooltipArea />
+  tooltip: <TooltipArea />,
+  startAngle: 0,
+  endAngle: 2 * Math.PI,
+  isClosedCurve: true
 };

@@ -35,6 +35,16 @@ export interface RadialAxisArcSeriesProps {
    * Calculated tick values by the Radial Axis.
    */
   tickValues?: any[];
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
@@ -43,7 +53,9 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
   outerRadius,
   line,
   arc,
-  tickValues
+  tickValues,
+  startAngle,
+  endAngle
 }) => {
   const scale = scaleLinear()
     .domain([0, count])
@@ -80,6 +92,8 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
               key={d}
               index={d}
               scale={scale}
+              startAngle={startAngle}
+              endAngle={endAngle}
             />
           ))}
         </>
@@ -91,5 +105,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
 RadialAxisArcSeries.defaultProps = {
   type: 'arc',
   count: 12,
-  arc: <RadialAxisArc />
+  arc: <RadialAxisArc />,
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

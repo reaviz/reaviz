@@ -51,6 +51,16 @@ export interface RadialAxisProps {
     RadialAxisTickSeriesProps,
     typeof RadialAxisTickSeries
   > | null;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
@@ -60,7 +70,9 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
   height,
   width,
   innerRadius,
-  type
+  type,
+  startAngle,
+  endAngle
 }) => {
   const outerRadius = Math.min(height, width) / 2;
 
@@ -83,6 +95,8 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
           outerRadius={outerRadius}
           innerRadius={innerRadius}
           tickValues={tickValues}
+          startAngle={startAngle}
+          endAngle={endAngle}
         />
       )}
       {ticks && (
@@ -92,6 +106,8 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
           type={type}
           innerRadius={innerRadius}
           outerRadius={outerRadius}
+          startAngle={startAngle}
+          endAngle={endAngle}
         />
       )}
     </Fragment>
@@ -102,5 +118,7 @@ RadialAxis.defaultProps = {
   innerRadius: 10,
   type: 'value',
   arcs: <RadialAxisArcSeries />,
-  ticks: <RadialAxisTickSeries />
+  ticks: <RadialAxisTickSeries />,
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

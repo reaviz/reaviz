@@ -7,7 +7,7 @@ import {
   ChartNestedDataShape,
   ChartShallowDataShape
 } from '../common/data';
-import { scaleTime, scaleBand } from 'd3-scale';
+import { scaleTime, scaleBand, scalePoint } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
 import {
   ChartProps,
@@ -40,6 +40,22 @@ export interface RadialAreaChartProps extends ChartProps {
    * The inner radius for the chart center.
    */
   axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
+
+  /**
+   * Whether the curve should be closed. Set to true by deafult
+   */
+  isClosedCurve?: boolean;
+
 }
 
 export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
@@ -52,10 +68,14 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   innerRadius,
   series,
   axis,
-  margins
+  margins,
+  startAngle,
+  endAngle,
+  isClosedCurve
 }) => {
   const getXScale = useCallback(
     (points) => {
+      const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
       let xScale;
       if (axis?.props.type === 'category') {
         const isMultiSeries = series.props.type === 'grouped';
@@ -74,20 +94,29 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
           );
         }
 
-        xScale = scaleBand()
-          .range([0, 2 * Math.PI])
-          .domain(xDomain as any[]);
+        if (isFullCircle) {
+          xScale = scaleBand()
+            .range([0, 2 * Math.PI])
+            .domain(xDomain as any[]);
+        } else {
+          // scaleBand() excludes the end value from the band:
+          //  https://www.d3indepth.com/scales/#scaleband
+          xScale = scalePoint()
+            .range([startAngle, endAngle])
+            .domain(xDomain as any[]);
+        }
+
       } else {
         const xDomain = getXDomain({ data: points });
 
         xScale = scaleTime()
-          .range([0, 2 * Math.PI])
+          .range([startAngle, endAngle])
           .domain(xDomain);
       }
 
       return xScale;
     },
-    [axis?.props.type, series.props.type]
+    [axis?.props.type, endAngle, series.props.type, startAngle]
   );
 
   const getScales = useCallback(
@@ -133,6 +162,8 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
               height={chartHeight}
               width={chartWidth}
               innerRadius={innerRadius}
+              startAngle={startAngle}
+              endAngle={endAngle}
             />
           )}
           <CloneElement<RadialAreaSeriesProps>
@@ -145,11 +176,14 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
             width={chartWidth}
             outerRadius={outerRadius}
             innerRadius={innerRadius}
+            startAngle={startAngle}
+            endAngle={endAngle}
+            isClosedCurve={isClosedCurve}
           />
         </Fragment>
       );
     },
-    [getScales, data, innerRadius, axis, series]
+    [getScales, data, innerRadius, axis, startAngle, endAngle, series, isClosedCurve]
   );
 
   return (
@@ -173,5 +207,8 @@ RadialAreaChart.defaultProps = {
   innerRadius: 0.1,
   series: <RadialAreaSeries />,
   axis: <RadialAxis />,
-  margins: 75
+  margins: 75,
+  startAngle: 0,
+  endAngle: 2 * Math.PI,
+  isClosedCurve: true
 };
