@@ -2,7 +2,6 @@ import React, { FC, ReactElement, useCallback } from 'react';
 import { MarkerLabel, MarkerLabelProps } from '../MarkerLabel';
 import { CloneElement } from 'rdk';
 import { ChartInternalDataShape } from '../data';
-import { LineProps } from '../../AreaChart';
 
 export interface MarkerProps {
   /**
