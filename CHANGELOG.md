@@ -1,3 +1,7 @@
+# 14.11.0 - 9/28/23
+- [feature] Generic Radial chart for all start and end angles with open/closed curve options #144
+- [chore] upgrade reablocks
+
 # 14.10.1 - 9/20/23
 - [fix] fix errors related to types with fc conversion
 - [fix] fix ids not being passed down for gauges 
