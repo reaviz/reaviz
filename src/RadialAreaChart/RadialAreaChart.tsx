@@ -54,7 +54,7 @@ export interface RadialAreaChartProps extends ChartProps {
   /**
    * Whether the curve should be closed. Set to true by deafult
    */
-  isClosedCurve: boolean;
+  isClosedCurve?: boolean;
 
 }
 
