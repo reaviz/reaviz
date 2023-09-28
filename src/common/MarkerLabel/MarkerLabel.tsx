@@ -19,7 +19,12 @@ export interface MarkerLabelProps {
   /**
    * Position of the label with respect to `Marker` height.
    */
-  position: string;
+  position: 'center' | 'above' | 'below';
+
+  /**
+   * Offset label with respect to `Marker` position.
+   */
+  offset: number;
 
   /**
    * Label text.
@@ -29,7 +34,7 @@ export interface MarkerLabelProps {
   /**
    * Set text to align with y-axis. Set internally by `Marker`.
    */
-  horizontal: boolean;
+  vertical?: boolean;
 
   /**
    * D3 scale for X Axis. Set internally by Marker.
@@ -47,24 +52,25 @@ export const MarkerLabel: FC<Partial<MarkerLabelProps>> = ({
   width,
   color = '#eee',
   position = 'center',
-  horizontal,
+  vertical,
   text,
   xScale,
-  yScale
+  yScale,
+  offset
 }) => {
   const getPosition = useCallback(() => {
     let y = yScale(height);
     let x = width - 70;
-    if (position === 'top') y = yScale(height) - 10;
-    if (position === 'below') y = yScale(height) + 10;
-    if (horizontal) {
+    if (position === 'above') y = yScale(height) - offset;
+    if (position === 'below') y = yScale(height) + offset;
+    if (vertical) {
       x = xScale(height);
       y = width - 80;
-      if (position === 'top') y = xScale(height) - 10;
-      if (position === 'below') y = xScale(height) + 10;
+      if (position === 'above') y = xScale(height) - offset;
+      if (position === 'below') y = xScale(height) + offset;
     }
     return { x, y };
-  }, [position, height, width, horizontal, yScale, xScale]);
+  }, [position, height, width, vertical, yScale, xScale, offset]);
 
   return (
     <text {...getPosition()} fill={color}>

@@ -17,8 +17,6 @@ import {
 } from '../common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
-import { Marker } from '../common/Marker';
-import { MarkerLabel } from '../common/MarkerLabel/MarkerLabel';
 
 export default {
   title: 'Charts/Line Chart/Multi Series',
@@ -42,22 +40,6 @@ export const _Simple = () => (
         type="grouped"
         line={<Line strokeWidth={4} />}
         colorScheme="cybertron"
-        markers={[
-          <Marker
-            value={50}
-            color="blue"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />,
-          <Marker
-            value={100}
-            color="red"
-            label={
-              <MarkerLabel color="white" position="center" text="Test Label" />
-            }
-          />
-        ]}
       />
     }
     data={multiDateData}

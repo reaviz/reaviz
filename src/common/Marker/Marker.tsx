@@ -40,9 +40,9 @@ export interface MarkerProps {
   label?: ReactElement<MarkerLabelProps, typeof MarkerLabel> | string | null;
 
   /**
-   * Changing direction of the marker to match horizontal graphs. Set internally by Chart.
+   * Changing direction of the marker, vertical being down-up, default is left-right horizontal. Set internally by Chart.
    */
-  horizontal?: boolean;
+  vertical?: boolean;
 
   /**
    * D3 scale for X Axis. Set internally by Chart.
@@ -61,9 +61,8 @@ export const Marker: FC<Partial<MarkerProps>> = ({
   color = '#eee',
   width,
   label,
-  horizontal,
+  vertical,
   height,
-  data,
   yScale,
   xScale
 }) => {
@@ -77,19 +76,19 @@ export const Marker: FC<Partial<MarkerProps>> = ({
             yScale={yScale}
             xScale={xScale}
             width={width}
-            horizontal={horizontal}
+            vertical={vertical}
           />
         )}
       </>
     ),
-    [label, width, value, horizontal, xScale, yScale]
+    [label, width, value, vertical, xScale, yScale]
   );
 
   const directionProps = {
-    x1: horizontal ? xScale(value) : 0,
-    x2: horizontal ? xScale(value) : width,
-    y1: horizontal ? 0 : yScale(value),
-    y2: horizontal ? height : yScale(value)
+    x1: vertical ? xScale(value) : 0,
+    x2: vertical ? xScale(value) : width,
+    y1: vertical ? 0 : yScale(value),
+    y2: vertical ? height : yScale(value)
   };
 
   return (
