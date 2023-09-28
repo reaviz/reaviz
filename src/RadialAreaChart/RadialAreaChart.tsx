@@ -51,6 +51,11 @@ export interface RadialAreaChartProps extends ChartProps {
    */
   endAngle?: number;
 
+  /**
+   * Whether the curve should be closed. Set to true by deafult
+   */
+  isClosedCurve: boolean;
+
 }
 
 export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
@@ -65,7 +70,8 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   axis,
   margins,
   startAngle,
-  endAngle
+  endAngle,
+  isClosedCurve
 }) => {
   const getXScale = useCallback(
     (points) => {
@@ -172,11 +178,12 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
             innerRadius={innerRadius}
             startAngle={startAngle}
             endAngle={endAngle}
+            isClosedCurve={isClosedCurve}
           />
         </Fragment>
       );
     },
-    [getScales, data, innerRadius, axis, startAngle, endAngle, series]
+    [getScales, data, innerRadius, axis, startAngle, endAngle, series, isClosedCurve]
   );
 
   return (
@@ -202,5 +209,6 @@ RadialAreaChart.defaultProps = {
   axis: <RadialAxis />,
   margins: 75,
   startAngle: 0,
-  endAngle: 2 * Math.PI
+  endAngle: 2 * Math.PI,
+  isClosedCurve: true
 };

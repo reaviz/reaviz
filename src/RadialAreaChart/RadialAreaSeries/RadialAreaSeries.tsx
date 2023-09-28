@@ -112,6 +112,11 @@ export interface RadialAreaSeriesProps {
    * End angle for the last value.
    */
   endAngle?: number;
+
+  /**
+   * Whether the curve should be closed. Set to true by deafult
+   */
+  isClosedCurve: boolean;
 }
 
 export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
@@ -132,7 +137,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   colorScheme,
   interpolation,
   startAngle,
-  endAngle
+  endAngle,
+  isClosedCurve
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
@@ -168,6 +174,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             interpolation={interpolation}
             outerRadius={outerRadius}
             innerRadius={innerRadius}
+            isClosedCurve={isClosedCurve}
           />
         )}
         {line && (
@@ -181,22 +188,12 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             interpolation={interpolation}
             color={getColorForPoint}
             data={point}
+            isClosedCurve={isClosedCurve}
           />
         )}
       </>
     ),
-    [
-      animated,
-      area,
-      getColorForPoint,
-      id,
-      innerRadius,
-      interpolation,
-      line,
-      outerRadius,
-      xScale,
-      yScale
-    ]
+    [animated, area, getColorForPoint, id, innerRadius, interpolation, isClosedCurve, line, outerRadius, xScale, yScale]
   );
 
   const renderSymbols = useCallback(
@@ -292,5 +289,6 @@ RadialAreaSeries.defaultProps = {
   symbols: <RadialPointSeries />,
   tooltip: <TooltipArea />,
   startAngle: 0,
-  endAngle: 2 * Math.PI
+  endAngle: 2 * Math.PI,
+  isClosedCurve: true
 };

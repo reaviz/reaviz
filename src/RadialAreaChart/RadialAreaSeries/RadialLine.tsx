@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, FC } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { radialLine, curveCardinalClosed, curveLinearClosed } from 'd3-shape';
+import { radialLine, curveCardinalClosed, curveLinearClosed, curveCardinal, curveLinear } from 'd3-shape';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 
@@ -54,6 +54,11 @@ export interface RadialLineProps {
    * Internal property to identify if there is a area or not.
    */
   hasArea: boolean;
+  
+  /**
+   * Whether the curve should be closed. Set to true by deafult
+   */
+  isClosedCurve: boolean;
 }
 
 export const RadialLine: FC<Partial<RadialLineProps>> = ({
@@ -66,14 +71,15 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   data,
   interpolation,
   strokeWidth,
-  animated
+  animated,
+  isClosedCurve
 }) => {
   const fill = color(data, index);
 
   const getPath = useCallback(
     (preData: ChartInternalShallowDataShape[]) => {
       const curve =
-        interpolation === 'smooth' ? curveCardinalClosed : curveLinearClosed;
+        interpolation === 'smooth' ? (isClosedCurve ? curveCardinalClosed : curveCardinal) : isClosedCurve ? curveLinearClosed : curveLinear;
 
       const radialFn = radialLine()
         .angle((d: any) => xScale(d.x))
@@ -82,7 +88,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
 
       return radialFn(preData as any);
     },
-    [xScale, yScale, interpolation]
+    [interpolation, isClosedCurve, xScale, yScale]
   );
 
   const transition = useMemo(
@@ -133,5 +139,6 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
 
 RadialLine.defaultProps = {
   strokeWidth: 2,
-  animated: true
+  animated: true,
+  isClosedCurve: true
 };

@@ -197,10 +197,11 @@ export const QuarterCircle = () => (
     }
     startAngle={0}
     endAngle={0.5 * Math.PI}
+    isClosedCurve={false}
   />
 );
 
-export const QuarterMultiSeries = () => (
+export const QuarterCircleMultiSeries = () => (
   <RadialAreaChart
     data={multiCategory}
     height={500}
@@ -226,6 +227,7 @@ export const QuarterMultiSeries = () => (
     axis={<RadialAxis type="category" />}
     startAngle={0}
     endAngle={0.5 * Math.PI}
+    isClosedCurve={false}
   />
 );
 
@@ -261,6 +263,7 @@ export const CustomCircle = () => (
     }
     startAngle={-Math.PI}
     endAngle={0.5 * Math.PI}
+    isClosedCurve={false}
   />
 );
 
@@ -296,10 +299,47 @@ export const CustomCircle2 = () => (
     }
     startAngle={-Math.PI}
     endAngle={-0.25 * Math.PI}
+    isClosedCurve={false}
   />
 );
 
 export const CustomCircle3 = () => (
+  <RadialAreaChart
+    height={500}
+    width={500}
+    data={medDateData}
+    innerRadius={0.1}
+    series={
+      <RadialAreaSeries
+        colorScheme="cybertron"
+        animated
+        interpolation="smooth"
+        area={<RadialArea gradient={<RadialGradient />} />}
+      />
+    }
+    axis={
+      <RadialAxis
+        arcs={<RadialAxisArcSeries count={10} />}
+        ticks={
+          <RadialAxisTickSeries
+            count={5}
+            tick={
+              <RadialAxisTick
+                line={<RadialAxisTickLine position="inside" />}
+                label={<RadialAxisTickLabel autoRotate />}
+              />
+            }
+          />
+        }
+      />
+    }
+    startAngle={-0.75 * Math.PI}
+    endAngle={0.75 * Math.PI}
+    isClosedCurve={false}
+  />
+);
+
+export const CustomCircle4 = () => (
   <RadialAreaChart
     height={500}
     width={500}
@@ -329,7 +369,8 @@ export const CustomCircle3 = () => (
         }
       />
     }
-    startAngle={-0.75 * Math.PI}
-    endAngle={0.75 * Math.PI}
+    startAngle={-0.25 * Math.PI}
+    endAngle={0.25 * Math.PI}
+    isClosedCurve={false}
   />
 );
