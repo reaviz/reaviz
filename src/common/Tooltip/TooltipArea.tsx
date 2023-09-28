@@ -149,17 +149,17 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   const ref = useRef<SVGRectElement | SVGPathElement | any>();
   const fullCircleref = useRef<SVGRectElement | SVGPathElement | any>(null);
   const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
-  
+
   const range = Math.abs(endAngle - startAngle);
 
-  
+
   const rotationFactor = 0.5;
 
   const getXCoord = useCallback((x: number, y: number) => {
     // If the shape is radial, we need to convert the X coords to a radial format.
     if (isRadial) {
       const outerRadius = Math.min(width, height) / 2;
-      let rad = Math.atan2(y - outerRadius, x - outerRadius) + (rotationFactor * Math.PI);   
+      let rad = Math.atan2(y - outerRadius, x - outerRadius) + (rotationFactor * Math.PI);
 
       // Align it with the expected start angle
       rad = (rad - startAngle) % (2 * Math.PI);
@@ -261,7 +261,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
 
     // Get the path container element
     // Note that we are using the dummy 'full' circle for alignment
-    let target = fullCircleref.current;
+    let target = fullCircleref.current || ref.current;
 
     const { y, x } = getPositionForTarget({
       target: target,

@@ -1,3 +1,6 @@
+# 14.11.1 - 9/28/23
+- [fix] Fix null tooltip ref #144
+
 # 14.11.0 - 9/28/23
 - [feature] Generic Radial chart for all start and end angles with open/closed curve options #144
 - [chore] upgrade reablocks
