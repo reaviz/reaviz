@@ -288,11 +288,13 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
               key={`marker-${i}`}
               element={marker}
               width={width}
+              yScale={yScale}
+              xScale={xScale}
             />
           ))}
       </>
     ),
-    [markers, width]
+    [markers, width, xScale, yScale]
   );
 
   const renderSingleSeries = useCallback(
