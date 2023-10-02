@@ -1,6 +1,6 @@
 import React, { Fragment, useMemo, ReactElement, FC, useCallback, useState } from 'react';
 import { area } from 'd3-shape';
-import { pointer } from 'd3-selection'
+import { pointer } from 'd3-selection';
 import { Gradient, GradientProps } from '../../common/Gradient';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
@@ -97,7 +97,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   ...rest
 }) => {
   const stroke = color(data, index);
-  const [segmentAreaPath, setSegmentAreaPath] = useState<string | null>(null)
+  const [segmentAreaPath, setSegmentAreaPath] = useState<string | null>(null);
 
   const coords = useMemo(() => {
     return data.map((item: any) => ({
@@ -138,18 +138,20 @@ export const Area: FC<Partial<AreaProps>> = ({
   const getSegmentAreaPath = useCallback((mousePosition: [x: number, y: number]) => {
     const [x] = mousePosition;
 
+    // Get the two chart coords that the current mouse position is between
     const highlightedSegmentCoords = coords.reduce((acc, curr, index) => {
       if ((curr.x as number) <= x && (coords[index + 1].x as number) >= x) {
-        acc.push(curr, coords[index + 1])
+        acc.push(curr, coords[index + 1]);
       }
 
-      return acc
-    }, [])
+      return acc;
+    }, []);
 
-    const segmentAreaPath = getAreaPath(highlightedSegmentCoords)
+    // Create an area path with the two coords to be displayed on top of the chart
+    const segmentAreaPath = getAreaPath(highlightedSegmentCoords);
 
-    return segmentAreaPath === null ? undefined : segmentAreaPath
-  }, [coords])
+    return segmentAreaPath === null ? undefined : segmentAreaPath;
+  }, [coords, getAreaPath]);
 
   const enter = useMemo(() => {
     const areaPath = getAreaPath(coords);
@@ -212,13 +214,13 @@ export const Area: FC<Partial<AreaProps>> = ({
         pointerEvents="none"
         {...(segment ? {
           onMouseMove: (e: MouseEvent) => {
-            const newSegmentAreaPath = getSegmentAreaPath(pointer(e))
+            const newSegmentAreaPath = getSegmentAreaPath(pointer(e));
             if (newSegmentAreaPath !== segmentAreaPath) {
-              setSegmentAreaPath(newSegmentAreaPath)
+              setSegmentAreaPath(newSegmentAreaPath);
             }
           },
-          onMouseLeave: () => { setSegmentAreaPath(undefined) },
-          pointerEvents: "auto"
+          onMouseLeave: () => { setSegmentAreaPath(undefined); },
+          pointerEvents: 'auto'
         } : {})}
         mask={maskPath}
         fill={fill}
@@ -229,7 +231,7 @@ export const Area: FC<Partial<AreaProps>> = ({
         }}
       />
     );
-  }, [data, enter, exit, fill, id, mask, rest, transition]);
+  }, [data, enter, exit, fill, id, mask, rest, transition, getSegmentAreaPath, segment, segmentAreaPath]);
 
   return (
     <Fragment>

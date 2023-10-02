@@ -16,4 +16,4 @@ export * from './color';
 export * from './Count';
 export * from './scales';
 export * from './Glow';
-export * from './Segment'
+export * from './Segment';
