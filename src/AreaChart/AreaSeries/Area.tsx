@@ -97,7 +97,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   ...rest
 }) => {
   const stroke = color(data, index);
-  const [segmentAreaPath, setSegmentAreaPath] = useState<string>()
+  const [segmentAreaPath, setSegmentAreaPath] = useState<string | null>(null)
 
   const coords = useMemo(() => {
     return data.map((item: any) => ({
