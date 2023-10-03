@@ -1,3 +1,6 @@
+# 14.12.0 - 10/3/23
+- [feature] Custom angles in Radial Bar Chart #147
+
 # 14.11.1 - 9/28/23
 - [fix] Fix null tooltip ref #144
 
