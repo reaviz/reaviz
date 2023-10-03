@@ -76,6 +76,16 @@ export interface RadialBarSeriesProps {
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
@@ -90,7 +100,9 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   tooltip,
   colorScheme,
   bar,
-  animated
+  animated,
+  startAngle,
+  endAngle
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
 
@@ -112,21 +124,13 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             color={(point) => getColor({ data, point, index: 0, colorScheme })}
             barCount={data.length}
             animated={animated}
+            startAngle={startAngle}
+            endAngle={endAngle}
           />
         </Fragment>
       );
     },
-    [
-      activeValues,
-      animated,
-      bar,
-      colorScheme,
-      data,
-      id,
-      innerRadius,
-      xScale,
-      yScale
-    ]
+    [activeValues, animated, bar, colorScheme, data, endAngle, id, innerRadius, startAngle, xScale, yScale]
   );
 
   return (
@@ -143,6 +147,8 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       onValueEnter={(event) => setActiveValues(event.value)}
       onValueLeave={() => setActiveValues(null)}
       color={(point, index) => getColor({ data, point, index, colorScheme })}
+      startAngle={startAngle}
+      endAngle={endAngle}
     >
       <g clipPath={`url(#${id}-path)`}>{data.map(renderBar)}</g>
     </CloneElement>
@@ -153,5 +159,7 @@ RadialBarSeries.defaultProps = {
   colorScheme: schemes.cybertron[0],
   tooltip: <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
   bar: <RadialBar />,
-  animated: true
+  animated: true,
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };

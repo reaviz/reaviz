@@ -37,6 +37,16 @@ export interface RadialBarChartProps extends ChartProps {
    * The inner radius for the chart center.
    */
   innerRadius: number;
+
+  /**
+   * Start angle for the first value.
+   */
+  startAngle?: number;
+
+  /**
+   * End angle for the last value.
+   */
+  endAngle?: number;
 }
 
 export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
@@ -49,7 +59,9 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   data,
   innerRadius,
   series,
-  axis
+  axis,
+  startAngle,
+  endAngle
 }) => {
   const getScales = useCallback(
     (
@@ -64,7 +76,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
       const yDomain = getYDomain({ data: newData, scaled: false });
 
       const xScale = scaleBand()
-        .range([0, 2 * Math.PI])
+        .range([startAngle, endAngle])
         .domain(xDomain as any[]);
 
       const yScale = getRadialYScale(innerRadius, outerRadius, yDomain);
@@ -75,7 +87,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
         newData
       };
     },
-    []
+    [endAngle, startAngle]
   );
 
   const renderChart = useCallback(
@@ -96,6 +108,8 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
               height={chartHeight}
               width={chartWidth}
               innerRadius={innerRadius}
+              startAngle={startAngle}
+              endAngle={endAngle}
             />
           )}
           <CloneElement<RadialBarSeriesProps>
@@ -108,11 +122,13 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
             yScale={yScale}
             innerRadius={innerRadius}
             outerRadius={outerRadius}
+            startAngle={startAngle}
+            endAngle={endAngle}
           />
         </Fragment>
       );
     },
-    [axis, data, getScales, innerRadius, series]
+    [axis, data, endAngle, getScales, innerRadius, series, startAngle]
   );
 
   return (
@@ -136,5 +152,7 @@ RadialBarChart.defaultProps = {
   innerRadius: 0.1,
   margins: 75,
   axis: <RadialAxis />,
-  series: <RadialBarSeries />
+  series: <RadialBarSeries />,
+  startAngle: 0,
+  endAngle: 2 * Math.PI
 };
