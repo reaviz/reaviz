@@ -1,3 +1,6 @@
+# 14.13.0 - 10/4/23
+- [feature] Multiseries support in Radial Bar Charts #148
+
 # 14.12.0 - 10/3/23
 - [feature] Custom angles in Radial Bar Chart #147
 
