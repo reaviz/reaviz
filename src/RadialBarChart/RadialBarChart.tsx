@@ -2,9 +2,12 @@ import React, { useCallback, FC, Fragment, ReactElement } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
-  buildShallowChartData
+  buildShallowChartData,
+  ChartDataShape,
+  buildNestedChartData,
+  ChartNestedDataShape
 } from '../common/data';
-import { scaleBand } from 'd3-scale';
+import { scaleBand, scalePoint } from 'd3-scale';
 import { getYDomain } from '../common/utils/domains';
 import { RadialBarSeries, RadialBarSeriesProps } from './RadialBarSeries';
 import {
@@ -21,7 +24,7 @@ export interface RadialBarChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
-  data: ChartShallowDataShape[];
+  data: ChartDataShape[];
 
   /**
    * The series component that renders the bar components.
@@ -63,23 +66,73 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   startAngle,
   endAngle
 }) => {
+
+  const getXScale = useCallback(
+    (points) => {
+      const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
+      let xScale;
+      if (axis?.props.type === 'category') {
+        const isMultiSeries = series.props.type === 'grouped';
+
+        let xDomain;
+        if (isMultiSeries) {
+          xDomain = uniqueBy<ChartInternalShallowDataShape>(
+            points,
+            (dd) => dd.data,
+            (dd) => dd.x
+          );
+        } else {
+          xDomain = uniqueBy<ChartInternalShallowDataShape>(
+            points,
+            (dd) => dd.x
+          );
+        }
+
+        if (isFullCircle) {
+          xScale = scaleBand()
+            .range([0, 2 * Math.PI])
+            .domain(xDomain as any[]);
+        } else {
+          // scaleBand() excludes the end value from the band:
+          //  https://www.d3indepth.com/scales/#scaleband
+          xScale = scalePoint()
+            .range([startAngle, endAngle])
+            .domain(xDomain as any[]);
+        }
+
+      } else {
+        const xDomain = uniqueBy(points, (d) => d.x);
+
+        xScale = scaleBand()
+          .range([startAngle, endAngle])
+          .domain(xDomain as any[]);
+
+      }
+
+      return xScale;
+    },
+    [axis?.props.type, endAngle, series.props.type, startAngle]
+  );
+
   const getScales = useCallback(
     (
-      preData: ChartShallowDataShape[],
+      preData: ChartDataShape[],
       innerRadius: number,
       outerRadius: number
     ) => {
-      const newData = buildShallowChartData(
-        preData
-      ) as ChartInternalShallowDataShape[];
-      const xDomain = uniqueBy(newData, (d) => d.x);
+      const isMultiSeries = series.props.type === 'grouped';
+      let newData;
+      if (isMultiSeries) {
+        newData = buildNestedChartData(preData as ChartNestedDataShape[], true);
+      } else {
+        newData = buildShallowChartData(preData as ChartShallowDataShape[]);
+      }
+      
       const yDomain = getYDomain({ data: newData, scaled: false });
 
-      const xScale = scaleBand()
-        .range([startAngle, endAngle])
-        .domain(xDomain as any[]);
-
       const yScale = getRadialYScale(innerRadius, outerRadius, yDomain);
+
+      const xScale = getXScale(newData);      
 
       return {
         xScale,
@@ -87,7 +140,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
         newData
       };
     },
-    [endAngle, startAngle]
+    [getXScale, series.props.type]
   );
 
   const renderChart = useCallback(
