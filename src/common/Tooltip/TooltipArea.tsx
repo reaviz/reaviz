@@ -7,7 +7,7 @@ import {
   ChartInternalShallowDataShape,
   ChartInternalNestedDataShape
 } from '../data';
-import { getPositionForTarget, getClosestPoint } from '../utils/position';
+import { getPositionForTarget, getClosestPoint, getSelectedSegment } from '../utils/position';
 import { CloneElement } from 'rdk';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
@@ -64,6 +64,11 @@ export interface TooltipAreaProps {
    * Whether the area is radial or not.
    */
   isRadial?: boolean;
+
+  /**
+   * Whether the area is continous or not.
+   */
+  isContinous?: boolean;
 
   /**
    * Inner-radius to set the positioning by. Set internally.
@@ -125,6 +130,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   disabled,
   color,
   isRadial,
+  isContinous,
   width,
   height,
   xScale,
@@ -284,7 +290,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = getClosestPoint(coord, keyScale, transformed, 'x');
+    const newValue = isContinous ? getSelectedSegment(coord, transformed, 'x') : getClosestPoint(coord, keyScale, transformed, 'x')
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -450,6 +456,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
 
 TooltipArea.defaultProps = {
   isRadial: false,
+  isContinous: false,
   tooltip: <ChartTooltip />,
   inverse: true,
   onValueEnter: () => undefined,

@@ -6,6 +6,7 @@ import { ColorSchemeType, getColor, schemes } from '../common/color';
 import { Gradient, GradientProps, GradientStop } from '../common/Gradient';
 import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
+import { ChartTooltip, TooltipArea, TooltipAreaProps, TooltipTemplate } from '../common/Tooltip';
 
 export interface FunnelArcProps {
   /**
@@ -57,6 +58,11 @@ export interface FunnelArcProps {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * Tooltip for the chart area.
+   */
+  tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
 export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
@@ -69,7 +75,8 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   yScale,
   interpolation,
   colorScheme,
-  gradient
+  gradient,
+  tooltip
 }) => {
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
@@ -96,45 +103,72 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   const fillTop = gradient ? `url(#gradient-${id}-top)` : fillColor;
   const fillBottom = gradient ? `url(#gradient-${id}-bottom)` : fillColor;
 
+  const [height] = yScale.range();
+  const [_, width] = xScale.range();
+
   return (
-    <g pointerEvents="none">
-      <motion.path
-        d={areaGenerator(internalData as any[])}
-        fill={fillTop}
-        stroke="none"
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity
-        }}
-      />
-      <motion.path
-        d={areaMirrorGenerator(internalData as any[])}
-        fill={fillBottom}
-        stroke="none"
-        initial={{
-          opacity: 0
-        }}
-        animate={{
-          opacity
-        }}
-      />
-      {gradient && (
-        <>
-          <CloneElement<GradientProps>
-            element={gradient}
-            id={`gradient-${id}-top`}
-            color={fillColor}
-          />
-          <CloneElement<GradientProps>
-            element={gradient}
-            id={`gradient-${id}-bottom`}
-            color={fillColor}
-          />
-        </>
-      )}
-    </g>
+    <CloneElement<TooltipAreaProps>
+      element={tooltip}
+      xScale={xScale}
+      yScale={yScale}
+      data={data as any}
+      height={height}
+      width={width}
+      isContinous={true}
+      tooltip={
+        <ChartTooltip
+          followCursor
+          content={(data, color) => {
+            const value = {
+              x: data.key,
+              y: data.data,
+              value: data.data,
+            };
+
+            return <TooltipTemplate value={value} color={color} />;
+          }}
+        />
+      }
+    >
+      <g pointerEvents="none">
+        <motion.path
+          d={areaGenerator(internalData as any[])}
+          fill={fillTop}
+          stroke="none"
+          initial={{
+            opacity: 0
+          }}
+          animate={{
+            opacity
+          }}
+        />
+        <motion.path
+          d={areaMirrorGenerator(internalData as any[])}
+          fill={fillBottom}
+          stroke="none"
+          initial={{
+            opacity: 0
+          }}
+          animate={{
+            opacity
+          }}
+        />
+        {gradient && (
+          <>
+            <CloneElement<GradientProps>
+              element={gradient}
+              id={`gradient-${id}-top`}
+              color={fillColor}
+            />
+            <CloneElement<GradientProps>
+              element={gradient}
+              id={`gradient-${id}-bottom`}
+              color={fillColor}
+            />
+          </>
+        )}
+      </g>
+    </CloneElement>
   );
 };
 
@@ -152,5 +186,6 @@ FunnelArc.defaultProps = {
   colorScheme: schemes.cybertron[0],
   animated: true,
   variant: 'default',
-  opacity: 1
+  opacity: 1,
+  tooltip: null
 };

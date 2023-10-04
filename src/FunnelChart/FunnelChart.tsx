@@ -51,7 +51,15 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       .domain([0, data.length])
       .range([0, chartWidth]);
 
+    const transformedData = data.map((d, i) => ({
+      ...d,
+      key: d.key,
+      x: xScale(i),
+      y: 0
+    }));
+
     return {
+      data: transformedData,
       yScale,
       xScale
     };
