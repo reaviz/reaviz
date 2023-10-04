@@ -3,9 +3,10 @@ import React, {
   Fragment,
   ReactElement,
   useState,
-  useCallback
+  useCallback,
+  useMemo
 } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { ChartInternalDataShape, ChartInternalNestedDataShape, ChartInternalShallowDataShape } from '../../common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
 import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
@@ -16,11 +17,12 @@ import {
 } from '../../common/Tooltip';
 import isEqual from 'react-fast-compare';
 
+export type RadialBarSeriesType = 'standard' | 'grouped';
 export interface RadialBarSeriesProps {
   /**
    * Parsed data shape. Set internally by `RadialBarChart`.
    */
-  data: ChartInternalShallowDataShape[];
+  data: ChartInternalDataShape[];
 
   /**
    * Color scheme for the series.
@@ -86,6 +88,11 @@ export interface RadialBarSeriesProps {
    * End angle for the last value.
    */
   endAngle?: number;
+
+  /**
+   * The type of the chart.
+   */
+  type?: RadialBarSeriesType;
 }
 
 export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
@@ -102,12 +109,15 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   bar,
   animated,
   startAngle,
-  endAngle
+  endAngle,
+  type
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
+  const isMultiSeries = useMemo(() => (type === 'grouped'), [type]);
 
   const renderBar = useCallback(
-    (point: ChartInternalShallowDataShape, index: number) => {
+    (point: ChartInternalShallowDataShape, innerBarCount: number, index: number, barCount: number,
+      groupIndex?: number) => {
       const active = activeValues && data && isEqual(activeValues.x, point.x);
 
       return (
@@ -122,7 +132,9 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             yScale={yScale}
             innerRadius={innerRadius}
             color={(point) => getColor({ data, point, index: 0, colorScheme })}
-            barCount={data.length}
+            barCount={barCount}
+            innerBarCount={innerBarCount}
+            groupIndex={groupIndex}
             animated={animated}
             startAngle={startAngle}
             endAngle={endAngle}
@@ -131,6 +143,25 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       );
     },
     [activeValues, animated, bar, colorScheme, data, endAngle, id, innerRadius, startAngle, xScale, yScale]
+  );
+
+  const renderBarGroup = useCallback(
+    (
+      data: ChartInternalShallowDataShape[],
+      innerBarCount: number,
+      barCount: number,
+      groupIndex?: number
+    ) => {
+
+      return (
+        <Fragment>
+          {data.map((barData, barIndex) =>
+            renderBar(barData, innerBarCount, barIndex, barCount, groupIndex)
+          )}
+        </Fragment>
+      );
+    },
+    [renderBar]
   );
 
   return (
@@ -150,7 +181,20 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       startAngle={startAngle}
       endAngle={endAngle}
     >
-      <g clipPath={`url(#${id}-path)`}>{data.map(renderBar)}</g>
+      {isMultiSeries ?
+        (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
+          <g key={`bar-group-${index}`}>
+            {renderBarGroup(
+              groupData.data as ChartInternalShallowDataShape[],
+              data.length,
+              groupData.data.length,
+              index
+            )}
+          </g>
+        ))
+        :
+        renderBarGroup(data as ChartInternalShallowDataShape[], 1, data.length)
+      }
     </CloneElement>
   );
 };
@@ -161,5 +205,6 @@ RadialBarSeries.defaultProps = {
   bar: <RadialBar />,
   animated: true,
   startAngle: 0,
-  endAngle: 2 * Math.PI
+  endAngle: 2 * Math.PI,
+  type: 'standard'
 };

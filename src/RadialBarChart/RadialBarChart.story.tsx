@@ -1,5 +1,5 @@
 import { RadialBarChart } from './RadialBarChart';
-import { largeCategoryData, medDateData } from '../../demo';
+import { largeCategoryData, medDateData, multiCategory } from '../../demo';
 import { RadialBarSeries, RadialBar, RadialGuideBar } from './RadialBarSeries';
 import {
   RadialAxis,
@@ -86,4 +86,35 @@ export const Resizable = () => (
   <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
     <RadialBarChart data={largeCategoryData} innerRadius={10} />
   </div>
+);
+
+
+export const MultiSeries = () => (
+  <RadialBarChart
+    height={450}
+    width={450}
+    innerRadius={50}
+    data={multiCategory}
+    series={
+      <RadialBarSeries
+        type='grouped'
+        animated
+        colorScheme="cybertron"
+        bar={<RadialBar curved={false} gradient={false} guide={null} />}
+      />
+    }
+    axis={
+      <RadialAxis
+        type='category'
+        ticks={
+          <RadialAxisTickSeries
+            tick={
+              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+            }
+          />
+        }
+        arcs={<RadialAxisArcSeries count={10} />}
+      />
+    }
+  />
 );

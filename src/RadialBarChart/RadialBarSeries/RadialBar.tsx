@@ -17,6 +17,7 @@ import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { MotionBar } from './MotionBar';
 import { RadialGuideBar, RadialGuideBarProps } from './RadialGuideBar';
 import { CloneElement } from 'rdk';
+import { scaleBand, scaleLinear } from 'd3-scale';
 
 export interface RadialBarProps {
   /**
@@ -70,6 +71,16 @@ export interface RadialBarProps {
   barCount: number;
 
   /**
+   * Total number of nested bars inside each group. Set internally by `RadialBarSeries`.
+   */
+  innerBarCount: number;
+
+  /**
+   * Index of the group. Set internally by `BarSeries`.
+   */
+  groupIndex?: number;
+
+  /**
    * CSS classes to apply.
    */
   className?: any;
@@ -114,6 +125,8 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   id,
   gradient,
   barCount,
+  innerBarCount,
+  groupIndex,
   className,
   data,
   active,
@@ -173,30 +186,67 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
 
         return arcFn(data as any);
       } else {
-        const startAngle = xScale(data.x) - Math.PI * 0.5;
-        const endAngle = startAngle + xScale.bandwidth();
+
+        const isMultiSeries = groupIndex !== undefined;
+        const xScaleDomain = xScale.domain();
+        const xScaleRange = xScale.range();
+        const isFullCircle = Math.abs(xScaleRange[1] - xScaleRange[0]) >= 2 * Math.PI;
+
+        let xScaleBandwidth, rotateMid, startAngle, endAngle;
+        if (isFullCircle) {
+          xScaleBandwidth = xScale.bandwidth();
+
+          // Align groups centrally about the label axis
+          rotateMid = isMultiSeries && xScaleBandwidth ? xScaleBandwidth/2 : 0;
+          startAngle = xScale(data.x) - (Math.PI * 0.5) - rotateMid;
+          endAngle = startAngle + xScaleBandwidth;
+
+        } else {
+          xScaleBandwidth = scaleBand().domain(xScaleDomain).range(xScaleRange).bandwidth();
+          rotateMid = isMultiSeries && xScaleBandwidth ? xScaleBandwidth/2 : 0;
+
+          if (index === 0) {
+            // Squeeze in the first group aligning the first bar in the group with the start margin
+            startAngle = xScale(data.x) - (Math.PI * 0.5);
+            endAngle = startAngle + xScaleBandwidth - rotateMid;
+          } else if (index === barCount-1) {
+            // Squeeze in the last group aligning the last bar in the group with the end margin
+            endAngle = xScaleRange[1] - (Math.PI * 0.5);
+            startAngle = endAngle - xScaleBandwidth + rotateMid;
+          } else {
+            // Other groups are center aligned with the label axis
+            startAngle = xScale(data.x) - (Math.PI * 0.5) - rotateMid;
+            endAngle = startAngle + xScaleBandwidth;
+          }          
+        }
 
         const innerAngleDistance = endAngle - startAngle;
         const arcLength = innerRadius * innerAngleDistance;
         const outerAngleDistance = arcLength / outerRadius;
-        const halfAngleDistanceDelta =
-          (innerAngleDistance - outerAngleDistance) / 2;
+        const halfAngleDistanceDelta = (innerAngleDistance - outerAngleDistance) / 2;
+
+
+        const innerDiff = innerAngleDistance/innerBarCount;
+        const innerStart = isMultiSeries ? startAngle + (groupIndex * innerDiff) : startAngle;
+        const innerEnd = isMultiSeries ? innerStart + innerDiff : endAngle;
+        const outerDiff = outerAngleDistance/innerBarCount;
+        const halfAngleDiffDistanceDelta = isMultiSeries ? (innerDiff - outerDiff) / 2 : halfAngleDistanceDelta;
 
         const pathFn = path();
-        pathFn.arc(0, 0, innerRadius, startAngle, endAngle);
+        pathFn.arc(0, 0, innerRadius, innerStart, innerEnd);
         pathFn.arc(
           0,
           0,
           outerRadius,
-          endAngle - halfAngleDistanceDelta,
-          startAngle + halfAngleDistanceDelta,
+          innerEnd - halfAngleDiffDistanceDelta,
+          innerStart + halfAngleDiffDistanceDelta,
           true
         );
 
         return pathFn.toString();
       }
     },
-    [curved, innerRadius, xScale, yScale]
+    [barCount, curved, groupIndex, index, innerBarCount, innerRadius, xScale, yScale]
   );
 
   const renderBar = useCallback(

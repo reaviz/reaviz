@@ -284,7 +284,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = getClosestPoint(coord, keyScale, transformed, 'x', !isFullCircle);
+    const newValue = getClosestPoint(coord, keyScale, transformed, 'x');
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -346,7 +346,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         nativeEvent: event
       });
     }
-  }, [data, getXCoord, height, isFullCircle, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
+  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
 
   const onMouseLeave = useCallback(() => {
     setPrevX(undefined);
