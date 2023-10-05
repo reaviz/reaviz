@@ -62,7 +62,6 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       ...d,
       key: d.key,
       x: xScale(i),
-      y: 0
     }));
 
     return {
