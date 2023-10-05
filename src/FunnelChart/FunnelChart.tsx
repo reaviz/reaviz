@@ -5,7 +5,7 @@ import { CloneElement, useId } from 'rdk';
 import { FunnelArc, FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartInternalDataTypes, ChartShallowDataShape } from '../common/data';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -22,6 +22,11 @@ export interface FunnelChartProps extends ChartProps {
    * The axis component that renders the funnel axis.
    */
   axis?: ReactElement<FunnelAxisProps, typeof FunnelAxis>;
+
+  /**
+   * Click handler for returning a segment's data.
+   */
+  onClick?: (segment: { key: ChartInternalDataTypes, data: ChartInternalDataTypes }) => void
 }
 
 export const FunnelChart: FC<FunnelChartProps> = ({
@@ -33,6 +38,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
   height,
   className,
   containerClassName,
+  onClick,
   ...rest
 }) => {
   const id = useId(rest.id);
@@ -107,6 +113,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
                 {...d}
                 id={id}
                 index={i}
+                onClick={onClick}
               />
             </g>
           ))}

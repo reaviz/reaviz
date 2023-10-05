@@ -1,10 +1,10 @@
-import React, { FC, ReactElement } from 'react';
-import { ChartShallowDataShape } from '../common/data';
+import React, { FC, MouseEvent, ReactElement, useCallback, useRef, useState } from 'react';
+import { ChartInternalDataTypes, ChartShallowDataShape } from '../common/data';
 import { area } from 'd3-shape';
-import { InterpolationTypes, interpolate } from '../common/utils';
+import { InterpolationTypes, getPositionForTarget, getSelectedSegment, interpolate } from '../common/utils';
 import { ColorSchemeType, getColor, schemes } from '../common/color';
 import { Gradient, GradientProps, GradientStop } from '../common/Gradient';
-import { CloneElement } from 'rdk';
+import { CloneElement, useCursor } from 'rdk';
 import { motion } from 'framer-motion';
 import { ChartTooltip, TooltipArea, TooltipAreaProps, TooltipTemplate } from '../common/Tooltip';
 
@@ -63,6 +63,11 @@ export interface FunnelArcProps {
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
+
+  /**
+   * Click handler for returning a segment's data. Set internally by `FunnelChart`
+   */
+  onClick?: (segment: { key: ChartInternalDataTypes, data: ChartInternalDataTypes }) => void
 }
 
 export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
@@ -76,8 +81,13 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   interpolation,
   colorScheme,
   gradient,
-  tooltip
+  tooltip,
+  onClick,
 }) => {
+  const [isHovering, setIsHovering] = useState(false)
+  const ref = useRef();
+  useCursor(isHovering, onClick ? 'pointer' : "auto", "auto")
+
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
 
@@ -106,6 +116,15 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   const [height] = yScale.range();
   const [_, width] = xScale.range();
 
+  const onMouseDown = useCallback((e: MouseEvent<SVGGElement>) => {
+    const { clientX, clientY } = e
+    const position = getPositionForTarget({ target: ref.current, clientX, clientY })
+    const segment = getSelectedSegment(position.x, data, 'x')
+    if (typeof onClick === 'function') {
+      onClick({ key: segment.key, data: segment.data })
+    }
+  }, [data, ref.current, onClick])
+
   return (
     <CloneElement<TooltipAreaProps>
       element={tooltip}
@@ -130,7 +149,12 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
         />
       }
     >
-      <g pointerEvents="none">
+      <g
+        ref={ref}
+        onMouseDown={onMouseDown}
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         <motion.path
           d={areaGenerator(internalData as any[])}
           fill={fillTop}
