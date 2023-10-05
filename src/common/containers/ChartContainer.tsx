@@ -180,6 +180,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
       ref={observe}
       style={{ height: styleHeight, width: styleWidth }}
       className={classNames(containerClassName, css.container)}
+      {...rest}
     >
       <ChartProvider value={childProps}>
         {height > 0 && width > 0 && (

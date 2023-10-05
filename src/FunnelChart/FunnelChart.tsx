@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, useCallback } from 'react';
+import React, { FC, MouseEvent, ReactElement, useCallback } from 'react';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
 import { CloneElement, useId } from 'rdk';
@@ -6,6 +6,7 @@ import { FunnelArc, FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
 import { ChartInternalDataTypes, ChartShallowDataShape } from '../common/data';
+import { getPositionForTarget, getSelectedSegment } from '../common';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -26,7 +27,7 @@ export interface FunnelChartProps extends ChartProps {
   /**
    * Click handler for returning a segment's data.
    */
-  onClick?: (segment: { key: ChartInternalDataTypes, data: ChartInternalDataTypes }) => void
+  onClick?: (event: { value: { key: ChartInternalDataTypes, data: ChartShallowDataShape[] }, nativeEvent: MouseEvent }) => void
 }
 
 export const FunnelChart: FC<FunnelChartProps> = ({
@@ -96,6 +97,15 @@ export const FunnelChart: FC<FunnelChartProps> = ({
     }
   }, [data, arc, getScales]);
 
+  const handleOnClick = useCallback((e: MouseEvent, data) => {
+    if (typeof onClick === 'function') {
+      const { clientX, clientY } = e;
+      const position = getPositionForTarget({ target: e.target, clientX, clientY });
+      const segment = getSelectedSegment(position.x, data, 'x');
+      onClick({ value: { key: segment.key, data: segment.data }, nativeEvent: e });
+    }
+  }, [onClick]);
+
   const renderChart = useCallback(
     ({ id, chartWidth, chartHeight, chartSized }: ChartContainerChildProps) => {
       if (!chartSized) {
@@ -113,7 +123,6 @@ export const FunnelChart: FC<FunnelChartProps> = ({
                 {...d}
                 id={id}
                 index={i}
-                onClick={onClick}
               />
             </g>
           ))}
@@ -135,9 +144,10 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       margins={margins}
       containerClassName={containerClassName}
       className={className}
+      onClick={(e: MouseEvent) => handleOnClick(e, getDatas({ chartHeight: height, chartWidth: width }).datas[0].data)}
     >
       {renderChart}
-    </ChartContainer>
+    </ChartContainer >
   );
 };
 
