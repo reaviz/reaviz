@@ -26,12 +26,12 @@ const scaleBandInvert = (scale) => {
   };
 };
 
-export const getSelectedSegment = (position: number, data, positionCoord = "x") => {
+export const getSelectedSegment = (position: number, data, positionCoord = 'x') => {
   // return the item in data that the mouse position is hovering on
   return data.find((item, i) =>
     item[positionCoord] <= position && (data[i + 1]?.[positionCoord] > position || data[i + 1] === undefined)
   );
-}
+};
 
 export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
   if (scale.invert) {

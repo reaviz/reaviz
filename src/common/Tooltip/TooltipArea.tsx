@@ -290,7 +290,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = isContinous ? getSelectedSegment(coord, transformed, 'x') : getClosestPoint(coord, keyScale, transformed, 'x')
+    const newValue = isContinous ? getSelectedSegment(coord, transformed, 'x') : getClosestPoint(coord, keyScale, transformed, 'x');
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -352,7 +352,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         nativeEvent: event
       });
     }
-  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
+  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale, isContinous]);
 
   const onMouseLeave = useCallback(() => {
     setPrevX(undefined);
@@ -379,7 +379,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       innerRadius: innerRadiusNew,
       outerRadius: outerRadiusNew,
       startAngle: isFullCircle ? 0 : startAngle,
-      endAngle: isFullCircle ?  2 * Math.PI: endAngle
+      endAngle: isFullCircle ? 2 * Math.PI : endAngle
     });
 
 
