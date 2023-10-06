@@ -26,19 +26,15 @@ const scaleBandInvert = (scale) => {
   };
 };
 
-export const getSelectedSegment = (position: number, data, positionCoord = 'x') => {
-  // return the item in data that the mouse position is hovering on
-  return data.find((item, i) =>
-    item[positionCoord] <= position && (data[i + 1]?.[positionCoord] > position || data[i + 1] === undefined)
-  );
-};
-
 export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
   if (scale.invert) {
     const domain = scale.invert(pos);
 
     // Select the index
-    const bisect = bisector((d: any) => d[attr]).right;
+    const bisect = bisector((d: any) => {
+      // add 1 to an index so it's the upper limit of a domain
+      return attr === 'i' ? d[attr] + 1 : d[attr];
+    }).right;
     const index = bisect(data, domain);
 
     // Determine min index

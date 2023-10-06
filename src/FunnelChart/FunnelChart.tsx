@@ -6,7 +6,7 @@ import { FunnelArc, FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
 import { ChartInternalDataTypes, ChartShallowDataShape } from '../common/data';
-import { getPositionForTarget, getSelectedSegment } from '../common';
+import { getClosestPoint, getPositionForTarget } from '../common';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -62,6 +62,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       ...d,
       key: d.key,
       x: xScale(i),
+      i
     }));
 
     return {
@@ -96,12 +97,13 @@ export const FunnelChart: FC<FunnelChartProps> = ({
     }
   }, [data, arc, getScales]);
 
-  const handleOnClick = useCallback((e: MouseEvent, data) => {
+  const handleOnClick = useCallback((e: MouseEvent, chartData) => {
     if (typeof onClick === 'function') {
+      const { xScale, data } = chartData;
       const { clientX, clientY } = e;
       const position = getPositionForTarget({ target: e.target, clientX, clientY });
-      const segment = getSelectedSegment(position.x, data, 'x');
-      onClick({ value: { key: segment.key, data: segment.data }, nativeEvent: e });
+      const value = getClosestPoint(position.x, xScale, data, 'i');
+      onClick({ value: { key: value.key, data: value.data }, nativeEvent: e });
     }
   }, [onClick]);
 
@@ -143,7 +145,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       margins={margins}
       containerClassName={containerClassName}
       className={className}
-      onClick={(e: MouseEvent) => handleOnClick(e, getDatas({ chartHeight: height, chartWidth: width }).datas[0].data)}
+      onClick={(e: MouseEvent) => handleOnClick(e, getDatas({ chartHeight: height, chartWidth: width }).datas[0])}
     >
       {renderChart}
     </ChartContainer >

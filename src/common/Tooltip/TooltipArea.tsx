@@ -7,7 +7,7 @@ import {
   ChartInternalShallowDataShape,
   ChartInternalNestedDataShape
 } from '../data';
-import { getPositionForTarget, getClosestPoint, getSelectedSegment } from '../utils/position';
+import { getPositionForTarget, getClosestPoint } from '../utils/position';
 import { CloneElement } from 'rdk';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
@@ -66,11 +66,6 @@ export interface TooltipAreaProps {
   isRadial?: boolean;
 
   /**
-   * Whether the area is continous or not.
-   */
-  isContinous?: boolean;
-
-  /**
    * Inner-radius to set the positioning by. Set internally.
    */
   innerRadius?: number;
@@ -120,6 +115,7 @@ interface TooltipDataShape {
   x?: ChartDataTypes;
   y?: ChartDataTypes;
   data?: ChartDataTypes | Array<ChartDataTypes | ChartInternalShallowDataShape>;
+  i?: ChartDataTypes
 }
 
 // eslint-disable-next-line react/display-name
@@ -130,7 +126,6 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   disabled,
   color,
   isRadial,
-  isContinous,
   width,
   height,
   xScale,
@@ -280,6 +275,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     let keyScale;
     let valueScale;
     let coord;
+    let attr = 'x';
     if (isHorizontal) {
       keyScale = yScale;
       valueScale = xScale;
@@ -290,7 +286,12 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = isContinous ? getSelectedSegment(coord, transformed, 'x') : getClosestPoint(coord, keyScale, transformed, 'x');
+    // If an index value exists in the data, use that to grab closest point
+    if (transformed[0].i !== undefined) {
+      attr = 'i';
+    }
+
+    const newValue = getClosestPoint(coord, keyScale, transformed, attr);
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -352,7 +353,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         nativeEvent: event
       });
     }
-  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale, isContinous]);
+  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
 
   const onMouseLeave = useCallback(() => {
     setPrevX(undefined);
@@ -456,7 +457,6 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
 
 TooltipArea.defaultProps = {
   isRadial: false,
-  isContinous: false,
   tooltip: <ChartTooltip />,
   inverse: true,
   onValueEnter: () => undefined,
