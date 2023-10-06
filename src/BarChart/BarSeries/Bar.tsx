@@ -25,6 +25,7 @@ import { formatValue } from '../../common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '../../common/Tooltip';
 import { Glow, GlowProps } from '../../common/Glow';
+import { ClickEvent } from '../../common/types';
 
 export type BarType =
   | 'standard'
@@ -180,7 +181,7 @@ export type BarProps = {
   /**
    * Event for when the bar is clicked.
    */
-  onClick?: (event) => void;
+  onClick?: (event: ClickEvent) => void;
 
   /**
    * Event for when the bar has mouse enter.

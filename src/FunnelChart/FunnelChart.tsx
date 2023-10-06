@@ -7,6 +7,7 @@ import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
 import { ChartInternalDataTypes, ChartShallowDataShape } from '../common/data';
 import { getClosestPoint, getPositionForTarget } from '../common';
+import { ClickEvent } from '../common/types';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -27,7 +28,7 @@ export interface FunnelChartProps extends ChartProps {
   /**
    * Click handler for returning a segment's data.
    */
-  onClick?: (event: { value: { key: ChartInternalDataTypes, data: ChartShallowDataShape[] }, nativeEvent: MouseEvent }) => void
+  onClick?: (event: ClickEvent) => void
 }
 
 export const FunnelChart: FC<FunnelChartProps> = ({
