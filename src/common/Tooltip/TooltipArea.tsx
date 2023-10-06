@@ -115,7 +115,7 @@ interface TooltipDataShape {
   x?: ChartDataTypes;
   y?: ChartDataTypes;
   data?: ChartDataTypes | Array<ChartDataTypes | ChartInternalShallowDataShape>;
-  i?: ChartDataTypes
+  i?: number
 }
 
 // eslint-disable-next-line react/display-name
@@ -287,7 +287,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     }
 
     // If an index value exists in the data, use that to grab closest point
-    if (transformed[0].i !== undefined) {
+    if (typeof transformed[0].i === 'number') {
       attr = 'i';
     }
 
