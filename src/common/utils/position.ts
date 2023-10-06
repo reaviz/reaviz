@@ -14,8 +14,9 @@ const scaleBandInvert = (scale) => {
   const [, end] = scale.range();
 
   return (offset) => {
-    const band = (offset - paddingOuter) / eachBand;
-    let index = Math.round(band) % domain.length;
+    // keep the band from going outside the domain length
+    let band = Math.min((offset - paddingOuter) / eachBand, domain.length - 0.01);
+    let index = Math.floor(band) % domain.length;
 
     // Handle horizontal charts...
     if (end === 0) {
