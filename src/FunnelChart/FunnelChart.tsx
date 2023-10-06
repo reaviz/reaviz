@@ -101,8 +101,8 @@ export const FunnelChart: FC<FunnelChartProps> = ({
   const handleOnClick = useCallback((e: MouseEvent, chartData) => {
     if (typeof onClick === 'function') {
       const { xScale, data } = chartData;
-      const { clientX, clientY } = e;
-      const position = getPositionForTarget({ target: e.target, clientX, clientY });
+      const { clientX, clientY, target } = e;
+      const position = getPositionForTarget({ target, clientX, clientY });
       const value = getClosestPoint(position.x, xScale, data, 'i');
       onClick({ value: { key: value.key, data: value.data }, nativeEvent: e });
     }
