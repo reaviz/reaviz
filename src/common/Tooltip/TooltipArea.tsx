@@ -1,4 +1,4 @@
-import React, { Fragment, ReactElement, useState, useRef, useCallback, useMemo, forwardRef } from 'react';
+import React, { Fragment, ReactElement, useState, useRef, useCallback, useMemo, forwardRef, useImperativeHandle } from 'react';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
 import { Placement } from 'rdk';
 import {
@@ -138,8 +138,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   placement: placementProp,
   onValueLeave,
   startAngle,
-  endAngle
-}, _) => {
+  endAngle,
+}, childRef) => {
   const [visible, setVisible] = useState<boolean>();
   const [placement, setPlacement] = useState<Placement>();
   const [value, setValue] = useState<any>();
@@ -365,6 +365,12 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     onValueLeave();
   }, [onValueLeave]);
 
+  useImperativeHandle(childRef, () => ({
+    triggerMouseMove(e: React.MouseEvent) {
+      onMouseMove(e);
+    }
+  }));
+
   const tooltipReference = useMemo(() => ({
     width: 4,
     height: 4,
@@ -432,7 +438,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     <Fragment>
       {disabled && children}
       {!disabled && (
-        <g onMouseLeave={onMouseLeave}>
+        <g onMouseLeave={onMouseLeave} ref={childRef}>
           {isRadial && renderRadial()}
           {!isRadial && renderLinear()}
           <CloneElement<ChartTooltipProps>
