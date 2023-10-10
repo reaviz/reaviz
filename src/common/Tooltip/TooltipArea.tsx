@@ -291,7 +291,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       attr = 'i';
     }
 
-    const newValue = getClosestPoint(coord, keyScale, transformed, attr);
+    // Get the closest point to the mouse and use rounding for radial charts
+    const newValue = getClosestPoint(coord, keyScale, transformed, attr, isRadial);
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
