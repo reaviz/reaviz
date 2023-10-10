@@ -17,6 +17,11 @@ const scaleBandInvert = (scale, round = false) => {
     // Keep the band from going outside the domain length
     let band = Math.min((offset - paddingOuter) / eachBand, domain.length - 0.01);
 
+    // Catch negative band values from horizontal charts exceeding domain length
+    if (band < 0 && Math.abs(band) > domain.length - 1) {
+      band = Math.floor(Math.abs(band)) * -1;
+    }
+
     // Round to the closest index OR take the floor value
     let index = round ? Math.round(band) % domain.length : Math.floor(band) % domain.length;
 
