@@ -1,11 +1,11 @@
-import React, { FC, MouseEvent, ReactElement, useCallback } from 'react';
+import React, { FC, MouseEvent, ReactElement, useCallback, useMemo, useState } from 'react';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
 import { CloneElement, useId } from 'rdk';
 import { FunnelArc, FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
-import { ChartInternalDataTypes, ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '../common/data';
 import { getClosestPoint, getPositionForTarget } from '../common';
 import { ClickEvent } from '../common/types';
 
@@ -43,6 +43,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
   onClick,
   ...rest
 }) => {
+  const [chartDimesions, setChartDimensions] = useState({ chartHeight: null, chartWidth: null });
   const id = useId(rest.id);
 
   // Calculate the funnel data on mount and when data changes
@@ -98,6 +99,12 @@ export const FunnelChart: FC<FunnelChartProps> = ({
     }
   }, [data, arc, getScales]);
 
+  const chartData = useMemo(() => {
+    const { chartHeight, chartWidth } = chartDimesions;
+    const { datas } = getDatas({ chartHeight, chartWidth });
+    return datas[0];
+  }, [chartDimesions, getDatas]);
+
   const handleOnClick = useCallback((e: MouseEvent, chartData) => {
     if (typeof onClick === 'function') {
       const { xScale, data } = chartData;
@@ -146,9 +153,17 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       margins={margins}
       containerClassName={containerClassName}
       className={className}
-      onClick={(e: MouseEvent) => handleOnClick(e, getDatas({ chartHeight: height, chartWidth: width }).datas[0])}
+      onClick={(e: MouseEvent) => handleOnClick(e, chartData)}
     >
-      {renderChart}
+      {(props) => {
+        const { chartHeight, chartWidth } = props;
+
+        if (chartDimesions.chartHeight !== chartHeight || chartDimesions.chartWidth !== chartWidth) {
+          setChartDimensions({ chartHeight, chartWidth });
+        }
+
+        return renderChart(props);
+      }}
     </ChartContainer>
   );
 };
