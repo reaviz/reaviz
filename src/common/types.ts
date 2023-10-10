@@ -10,6 +10,6 @@ export type Invisible<T> = { show: false } & Partial<T>;
 export type Shown<T> = Visible<T> | Invisible<T>;
 
 export interface ClickEvent { 
-  value: ChartInternalDataShape, 
-  nativeEvent: MouseEvent 
+  value: ChartInternalDataShape;
+  nativeEvent: MouseEvent;
 }

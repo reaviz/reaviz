@@ -138,7 +138,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   placement: placementProp,
   onValueLeave,
   startAngle,
-  endAngle,
+  endAngle
 }, childRef) => {
   const [visible, setVisible] = useState<boolean>();
   const [placement, setPlacement] = useState<Placement>();

@@ -149,7 +149,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       onClick={(e: MouseEvent) => handleOnClick(e, getDatas({ chartHeight: height, chartWidth: width }).datas[0])}
     >
       {renderChart}
-    </ChartContainer >
+    </ChartContainer>
   );
 };
 
