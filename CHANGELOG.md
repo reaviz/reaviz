@@ -1,3 +1,10 @@
+# 14.14.0 - 10/11/23
+- [feature] funnel chart tooltips #149
+- [feature] funnel chart click event handler #149
+- [fix] fix area chart animation too fast #151
+- [fix] fix radial bar chart animation too fast #151
+- [fix] increase default inner radius on radial bar charts #153
+
 # 14.13.0 - 10/4/23
 - [feature] Multiseries support in Radial Bar Charts #148
 
