@@ -202,7 +202,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
 };
 
 RadialBarChart.defaultProps = {
-  innerRadius: 0.1,
+  innerRadius: 10,
   margins: 75,
   axis: <RadialAxis />,
   series: <RadialBarSeries />,

@@ -178,7 +178,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     }
 
     return x;
-  }, [endAngle, height, isRadial, range, startAngle, width]);
+  }, [endAngle, height, isRadial, outerRadius, range, startAngle, width]);
 
   const transformData = useCallback((series: ChartInternalDataShape[]) => {
     const result: TooltipDataShape[] = [];
