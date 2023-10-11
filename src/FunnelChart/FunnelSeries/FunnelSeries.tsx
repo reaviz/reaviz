@@ -55,18 +55,18 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   onSegmentClick,
 }) => {
   // Calculate the funnel data on mount and when data changes
-  const getScales = useCallback(({ chartWidth, chartHeight }) => {
+  const getScales = useCallback((height: number, width: number) => {
     const yScale = scaleLinear()
       .domain([
         -max(data, ({ data }) => data),
         max(data, ({ data }) => data)
       ])
       .nice()
-      .range([chartHeight, 0]);
+      .range([height, 0]);
 
     const xScale = scaleLinear()
       .domain([0, data.length])
-      .range([0, chartWidth]);
+      .range([0, width]);
 
     const transformedData = data.map((d, i) => ({
       ...d,
@@ -82,35 +82,30 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
     };
   }, [data]);
 
-
-  const getDatas = useCallback(({ chartWidth, chartHeight }) => {
+  const { datas, halfOffset } = useMemo(() => {
     // The 'layered' variant is actually just a series of funnel charts
     // laid on top of each other to create the effect of a layered funnel.
     if (arc.props.variant === 'layered') {
-      const offset = chartHeight / 4;
+      const offset = height / 4;
       const halfOffset = offset / 2;
 
       return {
         halfOffset,
         datas: [
-          { data, ...getScales({ chartHeight: chartHeight, chartWidth }) },
-          { data, ...getScales({ chartHeight: chartHeight - offset, chartWidth }) },
-          { data, ...getScales({ chartHeight: chartHeight - (offset * 2), chartWidth }) },
+          { data, ...getScales(height, width) },
+          { data, ...getScales(height - offset, width) },
+          { data, ...getScales(height - (offset * 2), width) }
         ]
       };
     } else {
       return {
         halfOffset: 0,
         datas: [
-          { data, ...getScales({ chartHeight: chartHeight, chartWidth }) }
+          { data, ...getScales(height, width) }
         ]
       };
     }
-  }, [data, arc, getScales]);
-
-  const { datas, halfOffset } = useMemo(() => {
-    return getDatas({ chartHeight: height, chartWidth: width });
-  }, [getDatas, height, width]);
+  }, [data, arc, height, width, getScales]);
 
   const handleSegmentClick = useCallback((e: MouseEvent) => {
     if (onSegmentClick) {
@@ -118,14 +113,22 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
       const { clientX, clientY, target } = e;
       const position = getPositionForTarget({ target, clientX, clientY });
       const value = getClosestPoint(position.x, xScale, data, 'i');
-      onSegmentClick({ value: { key: value.key, data: value.data }, nativeEvent: e });
+
+      onSegmentClick({
+        value: { key: value.key, data: value.data },
+        nativeEvent: e
+      });
     }
   }, [datas, onSegmentClick]);
 
   return (
     <>
       {datas.map((d, i) => (
-        <g key={i} style={{ transform: `translate(0, ${i * halfOffset}px)` }} onClick={handleSegmentClick}>
+        <g
+          key={i}
+          style={{ transform: `translate(0, ${i * halfOffset}px)` }}
+          onClick={handleSegmentClick}
+        >
           <CloneElement<FunnelArcProps>
             element={arc}
             {...d}
