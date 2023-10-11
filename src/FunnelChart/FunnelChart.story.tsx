@@ -9,7 +9,8 @@ export default {
     FunnelArc,
     FunnelAxis,
     FunnelAxisLabel,
-    FunnelAxisLine
+    FunnelAxisLine,
+    FunnelSeries
   }
 }  as Meta;
 
