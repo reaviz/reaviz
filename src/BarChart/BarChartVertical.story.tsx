@@ -110,7 +110,45 @@ export const CustomBarWidth = () => (
   />
 );
 
-export const LiveUpdating = () => <LiveDataDemo />;
+export const LiveUpdating = () => {
+  const [data, setData] = useState([...largeCategoryData]);
+
+  const updateData = () => {
+    const updateCount = Math.floor(Math.random() * 4) + 1;
+    const newData = [...data];
+
+    let idx = 0;
+    while (idx <= updateCount) {
+      const updateIndex = Math.floor(Math.random() * data.length);
+      newData[updateIndex].data = Math.floor(Math.random() * 91) + 10;
+      idx++;
+    }
+
+    setData(newData);
+  };
+
+  const sortData = () => {
+    setData([...data].reverse());
+  };
+
+  return (
+    <Fragment>
+      <BarChart
+        width={350}
+        height={350}
+        data={data}
+        series={
+          <BarSeries
+            colorScheme={chroma.scale(['ACB7C9', '418AD7']).colors(data.length)}
+          />
+        }
+      />
+      <br />
+      <button onClick={updateData}>Update</button>
+      <button onClick={sortData}>Sort</button>
+    </Fragment>
+  );
+};
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
@@ -163,44 +201,4 @@ export const NonZero = () => (
 
 NonZero.story = {
   name: 'Non-Zero',
-};
-
-const LiveDataDemo = () => {
-  const [data, setData] = useState([...largeCategoryData]);
-
-  const updateData = () => {
-    const updateCount = Math.floor(Math.random() * 4) + 1;
-    const newData = [...data];
-
-    let idx = 0;
-    while (idx <= updateCount) {
-      const updateIndex = Math.floor(Math.random() * data.length);
-      newData[updateIndex].data = Math.floor(Math.random() * 91) + 10;
-      idx++;
-    }
-
-    setData(newData);
-  };
-
-  const sortData = () => {
-    setData([...data].reverse());
-  };
-
-  return (
-    <Fragment>
-      <BarChart
-        width={350}
-        height={350}
-        data={data}
-        series={
-          <BarSeries
-            colorScheme={chroma.scale(['ACB7C9', '418AD7']).colors(data.length)}
-          />
-        }
-      />
-      <br />
-      <button onClick={updateData}>Update</button>
-      <button onClick={sortData}>Sort</button>
-    </Fragment>
-  );
 };

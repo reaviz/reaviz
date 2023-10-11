@@ -127,12 +127,12 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
       } else {
         newData = buildShallowChartData(preData as ChartShallowDataShape[]);
       }
-      
+
       const yDomain = getYDomain({ data: newData, scaled: false });
 
       const yScale = getRadialYScale(innerRadius, outerRadius, yDomain);
 
-      const xScale = getXScale(newData);      
+      const xScale = getXScale(newData);
 
       return {
         xScale,
