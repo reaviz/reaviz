@@ -71,11 +71,6 @@ export interface ChartContainerProps extends ChartProps {
   yAxisVisible?: boolean;
 
   /**
-   * Internal callback function for recieving chart dimension updates.
-   */
-  onChartDimensionsChanged?: (dimensions: { chartHeight: number; chartWidth: number }) => void;
-
-  /**
    * Children elements to recieve the calculated props.
    */
   children: (props: ChartContainerChildProps) => any;
