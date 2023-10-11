@@ -159,8 +159,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   const getXCoord = useCallback((x: number, y: number) => {
     // If the shape is radial, we need to convert the X coords to a radial format.
     if (isRadial) {
-      const outerRadius = Math.min(width, height) / 2;
-      let rad = Math.atan2(y - outerRadius, x - outerRadius) + (rotationFactor * Math.PI);
+      const outerRadiusNew = outerRadius || (Math.min(width, height) / 2);
+      let rad = Math.atan2(y - outerRadiusNew, x - outerRadiusNew) + (rotationFactor * Math.PI);
 
       // Align it with the expected start angle
       rad = (rad - startAngle) % (2 * Math.PI);
