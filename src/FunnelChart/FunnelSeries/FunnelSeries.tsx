@@ -15,6 +15,11 @@ export interface FunnelSeriesProps {
   data: ChartShallowDataShape[];
 
   /**
+   * Id of the funnel chart. Set internally by `FunnelChart`.
+   */
+  id: string;
+
+  /**
    * The arc component that renders the funnel shape.
    */
   arc: React.ReactElement<FunnelArcProps, typeof FunnelArc>;
@@ -42,6 +47,7 @@ export interface FunnelSeriesProps {
 
 export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   data,
+  id,
   arc,
   axis,
   height,
@@ -123,7 +129,7 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
           <CloneElement<FunnelArcProps>
             element={arc}
             {...d}
-            id={i.toString()}
+            id={`${id}-arc-${i}`}
             index={i}
           />
         </g>

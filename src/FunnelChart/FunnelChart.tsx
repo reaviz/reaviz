@@ -28,7 +28,6 @@ export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
 }) => {
   const id = useId(rest.id);
 
-
   const renderChart = useCallback(
     ({ id, chartWidth, chartHeight, chartSized }: ChartContainerChildProps) => {
       if (!chartSized) {
@@ -38,6 +37,7 @@ export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
       return (
         <CloneElement<FunnelSeriesProps>
           element={series}
+          id={`funnel-series-${id}`}
           data={data}
           height={chartHeight}
           width={chartWidth}
