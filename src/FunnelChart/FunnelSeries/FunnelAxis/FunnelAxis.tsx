@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { ChartShallowDataShape } from '../../common/data';
+import { ChartShallowDataShape } from '../../../common/data';
 import { range } from 'd3-array';
 import { FunnelAxisLabel, FunnelAxisLabelProps } from './FunnelAxisLabel';
 import { CloneElement } from 'rdk';

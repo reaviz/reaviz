@@ -1,8 +1,6 @@
 import { TooltipArea } from '../common';
-import { FunnelArc } from './FunnelArc';
-import { FunnelAxis, FunnelAxisLabel, FunnelAxisLine } from './FunnelAxis';
-import { FunnelChart, FunnelChartProps } from './FunnelChart';
 import { Story, Meta } from '@storybook/react';
+import { FunnelSeries, FunnelChart, FunnelChartProps, FunnelAxis, FunnelAxisLabel, FunnelAxisLine, FunnelArc } from './';
 
 export default {
   title: 'Charts/Funnel Chart',
@@ -45,14 +43,18 @@ LargeDataset.args = {
     { key: 'Became a VIP', data: 900 }
   ],
   arc: <FunnelArc tooltip={<TooltipArea />} />,
-  onClick: (e) => console.log(e)
+  series:
+    <FunnelSeries
+      arc={<FunnelArc tooltip={<TooltipArea />} />}
+      onSegmentClick={(e) => console.log(e)}
+    />,
 };
 
 export const Interpolation = () => (
   <FunnelChart
     height={300}
     width={500}
-    arc={<FunnelArc interpolation="step" />}
+    series={<FunnelSeries arc={<FunnelArc interpolation='step'/>} />}
     interpolation="curveBasis"
     data={[
       { key: 'Visited Site', data: 1000 },
@@ -86,11 +88,15 @@ export const Layered = () => (
       { key: 'Initiated Checkout', data: 600 },
       { key: 'Purchased', data: 400 }
     ]}
-    arc={
-      <FunnelArc
-        variant="layered"
-        colorScheme={['#013027', '#047662', '#06B899']}
-        gradient={null}
+    series={
+      <FunnelSeries
+        arc={
+          <FunnelArc
+            variant="layered"
+            colorScheme={['#013027', '#047662', '#06B899']}
+            gradient={null}
+          />
+        }
       />
     }
   />
