@@ -9,6 +9,7 @@ import {
   RadialAxisTickLine
 } from '../common/Axis/RadialAxis';
 import { schemes } from '../common/color';
+import { useState } from 'react';
 
 export default {
   title: 'Charts/Bar Chart/Radial',
@@ -88,6 +89,41 @@ export const Resizable = () => (
   </div>
 );
 
+export const LiveUpdating = () => {
+  const [data, setData] = useState([...largeCategoryData]);
+
+  const updateData = () => {
+    const updateCount = Math.floor(Math.random() * 4) + 1;
+    const newData = [...data];
+
+    let idx = 0;
+    while (idx <= updateCount) {
+      const updateIndex = Math.floor(Math.random() * data.length);
+      newData[updateIndex].data = Math.floor(Math.random() * 91) + 10;
+      idx++;
+    }
+
+    setData(newData);
+  };
+
+  const sortData = () => {
+    setData([...data].reverse());
+  };
+
+  return (
+    <>
+      <RadialBarChart
+        width={450}
+        height={450}
+        innerRadius={50}
+        data={data}
+      />
+      <br />
+      <button onClick={updateData}>Update</button>
+      <button onClick={sortData}>Sort</button>
+    </>
+  );
+};
 
 export const MultiSeries = () => (
   <RadialBarChart
