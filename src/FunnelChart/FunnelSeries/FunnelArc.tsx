@@ -1,12 +1,12 @@
 import React, { FC, ReactElement } from 'react';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '../../common/data';
 import { area } from 'd3-shape';
-import { InterpolationTypes, interpolate } from '../common/utils';
-import { ColorSchemeType, getColor, schemes } from '../common/color';
-import { Gradient, GradientProps, GradientStop } from '../common/Gradient';
+import { InterpolationTypes, interpolate } from '../../common/utils';
+import { ColorSchemeType, getColor, schemes } from '../../common/color';
+import { Gradient, GradientProps, GradientStop } from '../../common/Gradient';
 import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
-import { ChartTooltip, TooltipArea, TooltipAreaProps, TooltipTemplate } from '../common/Tooltip';
+import { ChartTooltip, TooltipArea, TooltipAreaProps, TooltipTemplate } from '../../common/Tooltip';
 
 export interface FunnelArcProps {
   /**
