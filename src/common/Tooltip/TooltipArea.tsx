@@ -1,4 +1,4 @@
-import React, { Fragment, ReactElement, useState, useRef, useCallback, useMemo, forwardRef } from 'react';
+import React, { Fragment, ReactElement, useState, useRef, useCallback, useMemo, forwardRef, useImperativeHandle } from 'react';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
 import { Placement } from 'rdk';
 import {
@@ -115,6 +115,7 @@ interface TooltipDataShape {
   x?: ChartDataTypes;
   y?: ChartDataTypes;
   data?: ChartDataTypes | Array<ChartDataTypes | ChartInternalShallowDataShape>;
+  i?: number
 }
 
 // eslint-disable-next-line react/display-name
@@ -138,7 +139,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   onValueLeave,
   startAngle,
   endAngle
-}, _) => {
+}, childRef) => {
   const [visible, setVisible] = useState<boolean>();
   const [placement, setPlacement] = useState<Placement>();
   const [value, setValue] = useState<any>();
@@ -274,6 +275,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     let keyScale;
     let valueScale;
     let coord;
+    let attr = 'x';
     if (isHorizontal) {
       keyScale = yScale;
       valueScale = xScale;
@@ -284,7 +286,13 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       valueScale = yScale;
     }
 
-    const newValue = getClosestPoint(coord, keyScale, transformed, 'x');
+    // If an index value exists in the data, use that to grab closest point
+    if (typeof transformed[0].i === 'number') {
+      attr = 'i';
+    }
+
+    // Get the closest point to the mouse and use rounding for radial charts
+    const newValue = getClosestPoint(coord, keyScale, transformed, attr, isRadial);
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -358,6 +366,12 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     onValueLeave();
   }, [onValueLeave]);
 
+  useImperativeHandle(childRef, () => ({
+    triggerMouseMove(e: React.MouseEvent) {
+      onMouseMove(e);
+    }
+  }));
+
   const tooltipReference = useMemo(() => ({
     width: 4,
     height: 4,
@@ -373,7 +387,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       innerRadius: innerRadiusNew,
       outerRadius: outerRadiusNew,
       startAngle: isFullCircle ? 0 : startAngle,
-      endAngle: isFullCircle ?  2 * Math.PI: endAngle
+      endAngle: isFullCircle ? 2 * Math.PI : endAngle
     });
 
 
@@ -425,7 +439,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
     <Fragment>
       {disabled && children}
       {!disabled && (
-        <g onMouseLeave={onMouseLeave}>
+        <g onMouseLeave={onMouseLeave} ref={childRef}>
           {isRadial && renderRadial()}
           {!isRadial && renderLinear()}
           <CloneElement<ChartTooltipProps>

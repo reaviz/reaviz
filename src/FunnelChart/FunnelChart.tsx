@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, useCallback } from 'react';
+import React, { FC, MouseEvent, ReactElement, useCallback, useMemo, useState } from 'react';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
 import { CloneElement, useId } from 'rdk';
@@ -6,6 +6,8 @@ import { FunnelArc, FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
+import { getClosestPoint, getPositionForTarget } from '../common';
+import { ClickEvent } from '../common/types';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -22,6 +24,11 @@ export interface FunnelChartProps extends ChartProps {
    * The axis component that renders the funnel axis.
    */
   axis?: ReactElement<FunnelAxisProps, typeof FunnelAxis>;
+
+  /**
+   * Click handler for returning a segment's data.
+   */
+  onClick?: (event: ClickEvent) => void
 }
 
 export const FunnelChart: FC<FunnelChartProps> = ({
@@ -33,8 +40,10 @@ export const FunnelChart: FC<FunnelChartProps> = ({
   height,
   className,
   containerClassName,
+  onClick,
   ...rest
 }) => {
+  const [chartDimesions, setChartDimensions] = useState({ chartHeight: null, chartWidth: null });
   const id = useId(rest.id);
 
   // Calculate the funnel data on mount and when data changes
@@ -51,7 +60,15 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       .domain([0, data.length])
       .range([0, chartWidth]);
 
+    const transformedData = data.map((d, i) => ({
+      ...d,
+      key: d.key,
+      x: xScale(i),
+      i
+    }));
+
     return {
+      data: transformedData,
       yScale,
       xScale
     };
@@ -81,6 +98,22 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       };
     }
   }, [data, arc, getScales]);
+
+  const chartData = useMemo(() => {
+    const { chartHeight, chartWidth } = chartDimesions;
+    const { datas } = getDatas({ chartHeight, chartWidth });
+    return datas[0];
+  }, [chartDimesions, getDatas]);
+
+  const handleOnClick = useCallback((e: MouseEvent, chartData) => {
+    if (typeof onClick === 'function') {
+      const { xScale, data } = chartData;
+      const { clientX, clientY, target } = e;
+      const position = getPositionForTarget({ target, clientX, clientY });
+      const value = getClosestPoint(position.x, xScale, data, 'i');
+      onClick({ value: { key: value.key, data: value.data }, nativeEvent: e });
+    }
+  }, [onClick]);
 
   const renderChart = useCallback(
     ({ id, chartWidth, chartHeight, chartSized }: ChartContainerChildProps) => {
@@ -120,8 +153,17 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       margins={margins}
       containerClassName={containerClassName}
       className={className}
+      onClick={(e: MouseEvent) => handleOnClick(e, chartData)}
     >
-      {renderChart}
+      {(props) => {
+        const { chartHeight, chartWidth } = props;
+
+        if (chartDimesions.chartHeight !== chartHeight || chartDimesions.chartWidth !== chartWidth) {
+          setChartDimensions({ chartHeight, chartWidth });
+        }
+
+        return renderChart(props);
+      }}
     </ChartContainer>
   );
 };

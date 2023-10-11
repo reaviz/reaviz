@@ -7,15 +7,23 @@ type PointObjectNotation = { x: number; y: number };
  * Add ability to calculate scale band position.
  * Reference: https://stackoverflow.com/questions/38633082/d3-getting-invert-value-of-band-scales
  */
-const scaleBandInvert = (scale) => {
+const scaleBandInvert = (scale, round = false) => {
   const domain = scale.domain();
   const paddingOuter = scale(domain[0]);
   const eachBand = scale.step();
   const [, end] = scale.range();
 
   return (offset) => {
-    const band = (offset - paddingOuter) / eachBand;
-    let index = Math.round(band) % domain.length;
+    // Keep the band from going outside the domain length
+    let band = Math.min((offset - paddingOuter) / eachBand, domain.length - 0.01);
+
+    // Catch negative band values from horizontal charts exceeding domain length
+    if (band < 0 && Math.abs(band) > domain.length - 1) {
+      band = Math.floor(Math.abs(band)) * -1;
+    }
+
+    // Round to the closest index OR take the floor value
+    let index = round ? Math.round(band) % domain.length : Math.floor(band) % domain.length;
 
     // Handle horizontal charts...
     if (end === 0) {
@@ -26,12 +34,15 @@ const scaleBandInvert = (scale) => {
   };
 };
 
-export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
+export const getClosestPoint = (pos: number, scale, data, attr = 'x', round = false) => {
   if (scale.invert) {
     const domain = scale.invert(pos);
 
     // Select the index
-    const bisect = bisector((d: any) => d[attr]).right;
+    const bisect = bisector((d: any) => {
+      // add 1 to an index so it's the upper limit of a domain
+      return attr === 'i' ? d[attr] + 1 : d[attr];
+    }).right;
     const index = bisect(data, domain);
 
     // Determine min index
@@ -58,7 +69,7 @@ export const getClosestPoint = (pos: number, scale, data, attr = 'x') => {
     if (scale.mariemkoInvert) {
       prop = scale.mariemkoInvert(pos);
     } else {
-      prop = scaleBandInvert(scale)(pos);
+      prop = scaleBandInvert(scale, round)(pos);
     }
 
     const idx = domain.indexOf(prop);

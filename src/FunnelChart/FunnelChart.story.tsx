@@ -1,3 +1,4 @@
+import { TooltipArea } from '../common';
 import { FunnelArc } from './FunnelArc';
 import { FunnelAxis, FunnelAxisLabel, FunnelAxisLine } from './FunnelAxis';
 import { FunnelChart, FunnelChartProps } from './FunnelChart';
@@ -42,7 +43,9 @@ LargeDataset.args = {
     { key: 'Became a Member', data: 3000 },
     { key: 'Upgraded to Premium', data: 1000 },
     { key: 'Became a VIP', data: 900 }
-  ]
+  ],
+  arc: <FunnelArc tooltip={<TooltipArea />} />,
+  onClick: (e) => console.log(e)
 };
 
 export const Interpolation = () => (

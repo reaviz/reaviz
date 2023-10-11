@@ -192,7 +192,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
 
   const onMouseMove = useCallback((event) => {
     // Manuallly call mouse move so we don't have to kill bar pointer events
-    ref.current?.onMouseMove(event);
+    ref.current?.triggerMouseMove(event);
   }, []);
 
   const onValueEnter = useCallback((event: TooltipAreaEvent) => {
