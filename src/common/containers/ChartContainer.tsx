@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useState, useMemo } from 'react';
+import React, { FC, useCallback, useState, useMemo, useEffect } from 'react';
 import { Margins, getDimension } from '../utils/dimensions';
 import useDimensions from 'react-cool-dimensions';
 import { useId } from 'rdk';
@@ -71,6 +71,11 @@ export interface ChartContainerProps extends ChartProps {
   yAxisVisible?: boolean;
 
   /**
+   * Internal callback function for recieving chart dimension updates.
+   */
+  onChartDimensionsChanged?: (dimensions: { chartHeight: number; chartWidth: number }) => void;
+
+  /**
    * Children elements to recieve the calculated props.
    */
   children: (props: ChartContainerChildProps) => any;
@@ -90,6 +95,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   xAxisVisible,
   yAxisVisible,
   id,
+  onChartDimensionsChanged,
   ...rest
 }) => {
   const curId = useId(id);
@@ -174,6 +180,12 @@ export const ChartContainer: FC<ChartContainerProps> = ({
     rest.height !== undefined && rest.height !== null ? rest.height : '100%';
   const styleWidth =
     rest.width !== undefined && rest.width !== null ? rest.width : '100%';
+
+  useEffect(() => {
+    if (onChartDimensionsChanged) {
+      onChartDimensionsChanged({ chartHeight: childProps.chartHeight, chartWidth: childProps.chartWidth });
+    }
+  }, [childProps.chartHeight, childProps.chartWidth, onChartDimensionsChanged]);
 
   return (
     <div

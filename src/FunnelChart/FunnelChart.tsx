@@ -1,4 +1,4 @@
-import React, { FC, MouseEvent, ReactElement, useCallback, useMemo, useState } from 'react';
+import React, { FC, MouseEvent, ReactElement, useCallback, useState } from 'react';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
 import { CloneElement, useId } from 'rdk';
@@ -43,7 +43,7 @@ export const FunnelChart: FC<FunnelChartProps> = ({
   onClick,
   ...rest
 }) => {
-  const [chartDimesions, setChartDimensions] = useState({ chartHeight: null, chartWidth: null });
+  const [chartData, setChartData] = useState(null);
   const id = useId(rest.id);
 
   // Calculate the funnel data on mount and when data changes
@@ -99,11 +99,11 @@ export const FunnelChart: FC<FunnelChartProps> = ({
     }
   }, [data, arc, getScales]);
 
-  const chartData = useMemo(() => {
-    const { chartHeight, chartWidth } = chartDimesions;
+  const handleChartDimensionsChanged = useCallback(({ chartHeight, chartWidth }) => {
     const { datas } = getDatas({ chartHeight, chartWidth });
-    return datas[0];
-  }, [chartDimesions, getDatas]);
+    setChartData(datas[0]);
+  }
+  , [getDatas]);
 
   const handleOnClick = useCallback((e: MouseEvent, chartData) => {
     if (typeof onClick === 'function') {
@@ -154,16 +154,9 @@ export const FunnelChart: FC<FunnelChartProps> = ({
       containerClassName={containerClassName}
       className={className}
       onClick={(e: MouseEvent) => handleOnClick(e, chartData)}
+      onChartDimensionsChanged={handleChartDimensionsChanged}
     >
-      {(props) => {
-        const { chartHeight, chartWidth } = props;
-
-        if (chartDimesions.chartHeight !== chartHeight || chartDimesions.chartWidth !== chartWidth) {
-          setChartDimensions({ chartHeight, chartWidth });
-        }
-
-        return renderChart(props);
-      }}
+      {renderChart}
     </ChartContainer>
   );
 };
