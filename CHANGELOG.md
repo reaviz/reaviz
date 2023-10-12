@@ -1,3 +1,7 @@
+# 14.14.2 = 10/12/23
+- [fix] Get FunnelChart click to work without a tooltip #155
+- [fix] radial tick callback fix #156
+
 # 14.14.1 = 10/12/23
 - [feature] Radial Axis Tick Series: Callback with index for tick element #154
 
