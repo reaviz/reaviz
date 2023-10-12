@@ -43,7 +43,6 @@ LargeDataset.args = {
     { key: 'Upgraded to Premium', data: 1000 },
     { key: 'Became a VIP', data: 900 }
   ],
-  arc: <FunnelArc tooltip={<TooltipArea />} />,
   series:
     <FunnelSeries
       arc={<FunnelArc tooltip={<TooltipArea />} />}
