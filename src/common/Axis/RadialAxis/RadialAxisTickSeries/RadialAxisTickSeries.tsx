@@ -4,6 +4,10 @@ import { CloneElement } from 'rdk';
 import { getTicks } from '../../../utils/ticks';
 import { TimeInterval } from 'd3-time';
 
+export interface TickCallback {
+  index?: number;
+}
+
 export interface RadialAxisTickSeriesProps {
   /**
    * Scale to use for the tick.
@@ -43,7 +47,7 @@ export interface RadialAxisTickSeriesProps {
   /**
    * Tick element to render.
    */
-  tick: ((index: number) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>) | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
+  tick: ((tick: TickCallback) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>) | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
 
   /**
    * Start angle for the first value.
