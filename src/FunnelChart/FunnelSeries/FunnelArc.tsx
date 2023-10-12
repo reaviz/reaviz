@@ -129,7 +129,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
         />
       }
     >
-      <g pointerEvents="none">
+      <g pointerEvents={tooltip ? "none" : "auto"}>
         <motion.path
           d={areaGenerator(internalData as any[])}
           fill={fillTop}
