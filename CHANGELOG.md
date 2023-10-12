@@ -1,3 +1,6 @@
+# 14.14.1 = 10/12/23
+- [feature] Radial Axis Tick Series: Callback with index for tick element #154
+
 # 14.14.0 - 10/11/23
 - [feature] funnel chart tooltips #149
 - [feature] funnel chart click event handler #149
