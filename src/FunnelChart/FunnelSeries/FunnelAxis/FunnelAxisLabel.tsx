@@ -48,6 +48,21 @@ export interface FunnelAxisLabelProps {
    * yScale for the funnel. Set internally by `FunnelAxis`.
    */
   yScale: any;
+
+  /**
+   * Positioning for the labels.
+   */
+  position?: 'top' | 'center' | 'bottom';
+
+  /**
+   * Whether to show the value of the data.
+   */
+  showValue?: boolean;
+
+  /**
+   * Whether to always show the label or not.
+   */
+  alwaysShowLabel?: boolean;
 }
 
 export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
@@ -59,38 +74,56 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
   padding,
   fontSize,
   fill,
-  className
+  className,
+  position,
+  showValue,
+  alwaysShowLabel
 }) => {
   const x = xScale(index) + padding;
   const [height] = yScale.range();
   const y = height / 2 + padding;
   const label = data.key as string;
   const nextOffset = xScale(index + 1);
-  const width = (nextOffset ? nextOffset - xScale(index): 0) - padding;
+  const width = (nextOffset ? nextOffset - xScale(index) : 0) - padding;
   const size = calculateDimensions(label, fontFamily, fontSize);
 
   // If the labels don't fit, just hide them
-  if (size.width > width) {
+  if (!alwaysShowLabel && size.width > width) {
     return null;
+  }
+
+  let transform: string;
+  switch (position) {
+  case 'top':
+    transform = `translate(${x}, ${fontSize * 3})`; // fontSize * 3 is to account for the total height of the label
+    break;
+  case 'center':
+    transform = `translate(${x}, ${y})`;
+    break;
+  case 'bottom':
+    transform = `translate(${x}, ${height - padding})`;
+    break;
   }
 
   return (
     <motion.g
-      transform={`translate(${x}, ${y})`}
+      transform={transform}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <text
-        pointerEvents="none"
-        fill={fill}
-        y={-(fontSize + padding)}
-        className={className}
-        dominantBaseline="middle"
-        fontFamily={fontFamily}
-        fontSize={fontSize * 2}
-      >
-        {formatValue(data.data as any)}
-      </text>
+      {showValue && (
+        <text
+          pointerEvents="none"
+          fill={fill}
+          y={-(fontSize + padding)}
+          className={className}
+          dominantBaseline="middle"
+          fontFamily={fontFamily}
+          fontSize={fontSize * 2}
+        >
+          {formatValue(data.data as any)}
+        </text>
+      )}
       <text
         pointerEvents="none"
         fill={fill}
@@ -99,7 +132,12 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
         fontFamily={fontFamily}
         fontSize={fontSize}
       >
-        {label}
+        {/* text wrapping isn't supported with svg's, so this split allows user to pass in a label with line breaks */}
+        {label.split('\n').map((line, index) => (
+          <tspan key={index} x="0" dy={`${index === 0 ? 0 : 1}em`}>
+            {line}
+          </tspan>
+        ))}
       </text>
     </motion.g>
   );
@@ -109,5 +147,8 @@ FunnelAxisLabel.defaultProps = {
   fontSize: 13,
   padding: 10,
   fontFamily: 'sans-serif',
-  fill: '#fff'
+  fill: '#fff',
+  position: 'center',
+  showValue: true,
+  alwaysShowLabel: false
 };
