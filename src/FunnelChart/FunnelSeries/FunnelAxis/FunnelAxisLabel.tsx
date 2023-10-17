@@ -115,7 +115,7 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
     case 'bottom':
       {
         // If the text is wrapping, we need to account for the height of all the lines
-        const textWrapHeight = text.length
+        const textWrapHeight = text?.length
           ? text.slice(1).reduce((acc, curr) => acc + curr.props.dy, 0) // Don't include first line's dy in order to align properly
           : 0;
         transform = `translate(${x}, ${height - padding - textWrapHeight})`;
