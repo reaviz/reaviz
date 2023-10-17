@@ -1,3 +1,6 @@
+# 14.14.3 - 10/17/23
+- [feature] Add positioning and conditional display to FunnelChart labels #157
+
 # 14.14.2 = 10/12/23
 - [fix] Get FunnelChart click to work without a tooltip #155
 - [fix] radial tick callback fix #156
