@@ -1,3 +1,6 @@
+# 14.14.4 - 10/17/23
+- [fix] long FunnelChart labels crashing UI #158
+
 # 14.14.3 - 10/17/23
 - [feature] Add positioning and conditional display to FunnelChart labels #157
 
