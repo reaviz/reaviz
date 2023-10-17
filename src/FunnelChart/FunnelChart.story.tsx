@@ -101,3 +101,40 @@ export const Layered = () => (
     }
   />
 );
+
+export const LabelPosition = () => (
+  <FunnelChart
+    height={300}
+    width={500}
+    series={
+      <FunnelSeries
+        axis={<FunnelAxis label={<FunnelAxisLabel position="bottom" />} />}
+      />
+    }
+    data={[
+      { key: 'Visited Site', data: 1000 },
+      { key: 'Added to Cart', data: 900 },
+      { key: 'Initiated Checkout', data: 600 },
+      { key: 'Purchased', data: 400 }
+    ]}
+  />
+);
+
+export const NoValue = () => (
+  <FunnelChart
+    height={300}
+    width={500}
+    series={
+      <FunnelSeries
+        arc={<FunnelArc tooltip={<TooltipArea />} />}
+        axis={<FunnelAxis label={<FunnelAxisLabel showValue={false} />} />}
+      />
+    }
+    data={[
+      { key: 'Visited Site', data: 1000 },
+      { key: 'Added to Cart', data: 900 },
+      { key: 'Initiated Checkout', data: 600 },
+      { key: 'Purchased', data: 400 }
+    ]}
+  />
+);

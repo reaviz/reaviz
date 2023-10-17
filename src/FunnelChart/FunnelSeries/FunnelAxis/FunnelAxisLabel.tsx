@@ -1,6 +1,10 @@
-import React, { FC } from 'react';
+import React, { FC, useCallback } from 'react';
 import { ChartShallowDataShape } from '../../../common/data';
-import { calculateDimensions, formatValue } from '../../../common/utils';
+import {
+  calculateDimensions,
+  formatValue,
+  wrapText
+} from '../../../common/utils';
 import { motion } from 'framer-motion';
 
 export interface FunnelAxisLabelProps {
@@ -48,6 +52,22 @@ export interface FunnelAxisLabelProps {
    * yScale for the funnel. Set internally by `FunnelAxis`.
    */
   yScale: any;
+
+  /**
+   * Positioning of the label.
+   */
+  position?: 'top' | 'middle' | 'bottom';
+
+  /**
+   * Whether to show the value of the data.
+   * Defaults to `true`.
+   */
+  showValue?: boolean;
+
+  /**
+   * Visibility of the label.
+   */
+  labelVisibility?: 'auto' | 'always';
 }
 
 export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
@@ -59,38 +79,77 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
   padding,
   fontSize,
   fill,
-  className
+  className,
+  position,
+  showValue,
+  labelVisibility
 }) => {
   const x = xScale(index) + padding;
   const [height] = yScale.range();
   const y = height / 2 + padding;
   const label = data.key as string;
   const nextOffset = xScale(index + 1);
-  const width = (nextOffset ? nextOffset - xScale(index): 0) - padding;
+  const width = (nextOffset ? nextOffset - xScale(index) : 0) - padding;
   const size = calculateDimensions(label, fontFamily, fontSize);
+  const text = wrapText({
+    key: label,
+    size,
+    paddingY: padding,
+    paddingX: padding,
+    width,
+    height,
+    fontFamily,
+    fontSize
+  });
+
+  const getTransformString = useCallback(() => {
+    let transform: string;
+
+    switch (position) {
+    case 'top':
+      transform = `translate(${x}, ${fontSize * 3})`; // fontSize * 3 is to account for the total height of the label
+      break;
+    case 'middle':
+      transform = `translate(${x}, ${y})`;
+      break;
+    case 'bottom':
+      {
+        // If the text is wrapping, we need to account for the height of all the lines
+        const textWrapHeight = text.length
+          ? text.slice(1).reduce((acc, curr) => acc + curr.props.dy, 0) // Don't include first line's dy in order to align properly
+          : 0;
+        transform = `translate(${x}, ${height - padding - textWrapHeight})`;
+      }
+      break;
+    }
+
+    return transform;
+  }, [position, x, fontSize, y, text, height, padding]);
 
   // If the labels don't fit, just hide them
-  if (size.width > width) {
+  if (labelVisibility !== 'always' && size.width > width) {
     return null;
   }
 
   return (
     <motion.g
-      transform={`translate(${x}, ${y})`}
+      transform={getTransformString()}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <text
-        pointerEvents="none"
-        fill={fill}
-        y={-(fontSize + padding)}
-        className={className}
-        dominantBaseline="middle"
-        fontFamily={fontFamily}
-        fontSize={fontSize * 2}
-      >
-        {formatValue(data.data as any)}
-      </text>
+      {showValue && (
+        <text
+          pointerEvents="none"
+          fill={fill}
+          y={-(fontSize + padding)}
+          className={className}
+          dominantBaseline="middle"
+          fontFamily={fontFamily}
+          fontSize={fontSize * 2}
+        >
+          {formatValue(data.data as any)}
+        </text>
+      )}
       <text
         pointerEvents="none"
         fill={fill}
@@ -99,7 +158,7 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
         fontFamily={fontFamily}
         fontSize={fontSize}
       >
-        {label}
+        {text}
       </text>
     </motion.g>
   );
@@ -109,5 +168,8 @@ FunnelAxisLabel.defaultProps = {
   fontSize: 13,
   padding: 10,
   fontFamily: 'sans-serif',
-  fill: '#fff'
+  fill: '#fff',
+  position: 'middle',
+  showValue: true,
+  labelVisibility: 'auto'
 };
