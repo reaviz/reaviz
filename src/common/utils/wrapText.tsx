@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { calculateDimensions } from './size';
 
 export interface WrapTextInputs {
@@ -30,7 +30,7 @@ export function wrapText({
   fontFamily,
   fontSize,
   visibility = 'auto'
-}: WrapTextInputs) {
+}: WrapTextInputs): ReactElement | ReactElement[] | null {
   size = size || calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);
 
