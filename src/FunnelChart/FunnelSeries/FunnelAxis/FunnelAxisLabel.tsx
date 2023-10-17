@@ -99,7 +99,8 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
     width,
     height,
     fontFamily,
-    fontSize
+    fontSize,
+    visibility: labelVisibility
   });
 
   const getTransformString = useCallback(() => {
