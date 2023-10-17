@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { calculateDimensions } from './size';
 
 export interface WrapTextInputs {
@@ -15,6 +15,7 @@ export interface WrapTextInputs {
     width: number;
     height: number;
   };
+  visibility?: 'auto' | 'always';
 }
 
 export function wrapText({
@@ -27,8 +28,9 @@ export function wrapText({
   width,
   height,
   fontFamily,
-  fontSize
-}: WrapTextInputs) {
+  fontSize,
+  visibility = 'auto'
+}: WrapTextInputs): ReactElement | ReactElement[] | null {
   size = size || calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);
 
@@ -58,12 +60,14 @@ export function wrapText({
     rows.push(curText);
     maxHeight = rows.length * size.height;
 
-    if (height && maxHeight >= height - (paddingY ? 2 * paddingY : 0)) {
-      return null;
-    }
+    if (visibility !== 'always') {
+      if (height && maxHeight >= height - (paddingY ? 2 * paddingY : 0)) {
+        return null;
+      }
 
-    if (width && maxWidth >= width - (paddingX ? 2 * paddingX : 0)) {
-      return null;
+      if (width && maxWidth >= width - (paddingX ? 2 * paddingX : 0)) {
+        return null;
+      }
     }
 
     if (!wrap && rows.length > 1) {
@@ -89,12 +93,14 @@ export function wrapText({
     ));
   }
 
-  if (height && size.height + paddingY >= height) {
-    return null;
-  }
+  if (visibility !== 'always') {
+    if (height && size.height + paddingY >= height) {
+      return null;
+    }
 
-  if (width && size.width + paddingX >= width) {
-    return null;
+    if (width && size.width + paddingX >= width) {
+      return null;
+    }
   }
 
   // NOTE: 5px seems to magic number for making it center
