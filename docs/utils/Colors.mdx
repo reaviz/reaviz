@@ -1,0 +1,21 @@
+import { Meta, ArgTypes } from '@storybook/addon-docs/blocks';
+import { schemes } from '../../src';
+import { ColorPaletteBlocks } from 'reablocks';
+
+<Meta title="Docs/Utils/Colors" />
+
+# Colors
+
+---
+
+Out of the box, reaviz has a variety of color
+schemes that can be used to style your charts.
+We have created a few custom themes and also added
+all of the [ColorBrewer](https://colorbrewer2.org/) palletes.
+
+{Object.keys(schemes).map(name => (
+  <>
+    <ColorPaletteBlocks name={name} colors={schemes[name]} showNames={false} />
+    <br />
+  </>
+))}

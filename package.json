@@ -95,7 +95,7 @@
     "memoize-bind": "^1.0.3",
     "memoize-one": "^6.0.0",
     "rdk": ">=6.4.4",
-    "reablocks": "^5.4.0",
+    "reablocks": "^5.5.8",
     "react-cool-dimensions": "^3.0.1",
     "react-fast-compare": "^3.2.1",
     "safe-identifier": "^0.4.2",
