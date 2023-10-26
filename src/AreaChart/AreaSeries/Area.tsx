@@ -1,5 +1,6 @@
-import React, { Fragment, useMemo, ReactElement, FC, useCallback } from 'react';
+import React, { Fragment, useMemo, ReactElement, FC, useCallback, useState } from 'react';
 import { area } from 'd3-shape';
+import { pointer } from 'd3-selection';
 import { Gradient, GradientProps } from '../../common/Gradient';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
@@ -16,6 +17,7 @@ import {
   PropFunctionTypes
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
+import { Segment, SegmentProps } from '../../common/Segment';
 
 export interface AreaProps extends PropFunctionTypes {
   /**
@@ -72,6 +74,11 @@ export interface AreaProps extends PropFunctionTypes {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * Highlighted chart segment to display on mouse hover of the area.
+   */
+  segment: ReactElement<SegmentProps, typeof Segment> | null;
 }
 
 export const Area: FC<Partial<AreaProps>> = ({
@@ -86,9 +93,11 @@ export const Area: FC<Partial<AreaProps>> = ({
   yScale,
   animated,
   interpolation,
+  segment,
   ...rest
 }) => {
   const stroke = color(data, index);
+  const [segmentAreaPath, setSegmentAreaPath] = useState<string | null>(null);
 
   const coords = useMemo(() => {
     return data.map((item: any) => ({
@@ -125,6 +134,24 @@ export const Area: FC<Partial<AreaProps>> = ({
     },
     [interpolation, total]
   );
+
+  const getSegmentAreaPath = useCallback((mousePosition: [x: number, y: number]) => {
+    const [x] = mousePosition;
+
+    // Get the two chart coords that the current mouse position is between
+    const highlightedSegmentCoords = coords.reduce((acc, curr, index) => {
+      if ((curr.x as number) <= x && (coords[index + 1].x as number) >= x) {
+        acc.push(curr, coords[index + 1]);
+      }
+
+      return acc;
+    }, []);
+
+    // Create an area path with the two coords to be displayed on top of the chart
+    const segmentAreaPath = getAreaPath(highlightedSegmentCoords);
+
+    return segmentAreaPath === null ? undefined : segmentAreaPath;
+  }, [coords, getAreaPath]);
 
   const enter = useMemo(() => {
     const areaPath = getAreaPath(coords);
@@ -185,6 +212,16 @@ export const Area: FC<Partial<AreaProps>> = ({
       <MotionPath
         {...extras}
         pointerEvents="none"
+        {...(segment ? {
+          onMouseMove: (e: MouseEvent) => {
+            const newSegmentAreaPath = getSegmentAreaPath(pointer(e));
+            if (newSegmentAreaPath !== segmentAreaPath) {
+              setSegmentAreaPath(newSegmentAreaPath);
+            }
+          },
+          onMouseLeave: () => { setSegmentAreaPath(undefined); },
+          pointerEvents: 'auto'
+        } : {})}
         mask={maskPath}
         fill={fill}
         transition={transition}
@@ -194,11 +231,17 @@ export const Area: FC<Partial<AreaProps>> = ({
         }}
       />
     );
-  }, [data, enter, exit, fill, id, mask, rest, transition]);
+  }, [data, enter, exit, fill, id, mask, rest, transition, getSegmentAreaPath, segment, segmentAreaPath]);
 
   return (
     <Fragment>
       {renderArea()}
+      {segment && (
+        <CloneElement<SegmentProps>
+          element={segment}
+          areaPath={segmentAreaPath}
+        />
+      )}
       {mask && (
         <Fragment>
           <Mask id={`mask-${id}`} fill={`url(#gradient-${id})`} />
