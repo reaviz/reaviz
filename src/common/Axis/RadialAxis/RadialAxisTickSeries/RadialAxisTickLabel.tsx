@@ -58,16 +58,6 @@ export interface RadialAxisTickLabelProps {
    * Format of the label.
    */
   format?: (value: any, index: number) => any | string;
-
-  /**
-   * Start angle for the first value.
-   */
-  startAngle?: number;
-
-  /**
-   * End angle for the last value.
-   */
-  endAngle?: number;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
@@ -81,14 +71,8 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   fontSize,
   format,
   lineSize,
-  index,
-  startAngle,
-  endAngle
+  index
 }) => {
-  const range = Math.abs(endAngle - startAngle);
-  const isFullCircle = Math.abs(range) >= 2 * Math.PI;
-  const rotationFactor = isFullCircle || range < Math.PI ? 1 : Math.PI / range;
-
   const { transform, textAnchor } = useMemo(() => {
     let textAnchor;
     let transform;
@@ -96,24 +80,22 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
     if (autoRotate) {
       // TODO: This centers the text, determine better way later
       if (
-        (rotation >= 85 / rotationFactor && rotation <= 95 / rotationFactor) ||
-        (rotation <= -85 / rotationFactor && rotation >= -95 / rotationFactor) || 
-        (rotation >= 265 / rotationFactor && rotation <= 275 / rotationFactor) ||
-        (rotation <= -265 / rotationFactor && rotation >= -275 / rotationFactor)
+        (rotation >= 85 && rotation <= 95) ||
+        (rotation <= -85 && rotation >= -95) ||
+        (rotation >= 265 && rotation <= 275) ||
+        (rotation <= -265 && rotation >= -275)
       ) {
         textAnchor = 'middle';
       } else if (
-        (rotation < -85 / rotationFactor && rotation > -265 / rotationFactor) ||
-        (rotation > 95 / rotationFactor && rotation < 265 / rotationFactor)
+        (rotation < -85 && rotation > -265) ||
+        (rotation > 95 && rotation < 265)
       ) {
         textAnchor = 'end';
       } else {
         textAnchor = 'start';
       }
 
-      transform = `rotate(${rotationFactor * 90 - rad2deg(point)}, ${
-        rotationFactor * padding
-      }, 0)`;
+      transform = `rotate(${90 - rad2deg(point)}, ${padding}, 0)`;
     } else {
       const shouldRotate = rotation && (rotation > 100 || rotation < -100);
       const rotate = shouldRotate ? 180 : 0;
