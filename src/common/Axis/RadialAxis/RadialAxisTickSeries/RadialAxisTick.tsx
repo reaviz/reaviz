@@ -53,7 +53,7 @@ export interface RadialAxisTickProps {
     typeof RadialAxisTickLabel
   > | null;
 
-   /**
+  /**
    * Start angle for the first value.
    */
   startAngle?: number;
@@ -77,7 +77,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
   endAngle
 }) => {
   const point = scale(data);
-  
+
   const rotation = (point * 180) / Math.PI - 90;
   const transform = `rotate(${rotation}) translate(${outerRadius + padding},0)`;
   const lineSize = line ? line.props.size : 0;
@@ -99,7 +99,6 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
-          autoRotate={false}
           startAngle={startAngle}
           endAngle={endAngle}
         />

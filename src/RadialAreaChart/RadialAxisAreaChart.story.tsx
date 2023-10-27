@@ -300,3 +300,39 @@ export const CustomCircle4 = () => (
     isClosedCurve={false}
   />
 );
+
+export const NoAutoRotateLabels = () => (
+  <RadialAreaChart
+    height={500}
+    width={500}
+    data={medDateData}
+    innerRadius={0.1}
+    series={
+      <RadialAreaSeries
+        colorScheme="cybertron"
+        animated
+        interpolation="linear"
+        area={<RadialArea gradient={<RadialGradient />} />}
+      />
+    }
+    axis={
+      <RadialAxis
+        arcs={<RadialAxisArcSeries count={10} />}
+        ticks={
+          <RadialAxisTickSeries
+            count={5}
+            tick={
+              <RadialAxisTick
+                line={<RadialAxisTickLine position="inside" />}
+                label={<RadialAxisTickLabel autoRotate={false} />}
+              />
+            }
+          />
+        }
+      />
+    }
+    startAngle={0}
+    endAngle={0.5 * Math.PI}
+    isClosedCurve={false}
+  />
+);
