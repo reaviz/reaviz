@@ -1,8 +1,10 @@
+import moment from 'moment';
 import { medDateData, multiCategory } from '../../demo';
 import {
   RadialAxis,
   RadialAxisArcSeries,
   RadialAxisTick,
+  RadialAxisTickLabel,
   RadialAxisTickLine,
   RadialAxisTickSeries
 } from '../common/Axis/RadialAxis';
@@ -68,7 +70,14 @@ export const Quarter = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick
+                line={<RadialAxisTickLine position="inside" />}
+                label={
+                  <RadialAxisTickLabel
+                    format={(f) => moment(new Date(f)).format('M/D')}
+                  />
+                }
+              />
             }
           />
         }
@@ -98,15 +107,22 @@ export const Custom = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick
+                line={<RadialAxisTickLine position="inside" />}
+                label={
+                  <RadialAxisTickLabel
+                    format={(f) => moment(new Date(f)).format('M/D')}
+                  />
+                }
+              />
             }
           />
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
     }
-    startAngle={-0.25 * Math.PI}
-    endAngle={0.25 * Math.PI}
+    startAngle={-0.4 * Math.PI}
+    endAngle={0.4 * Math.PI}
   />
 );
 
@@ -118,7 +134,7 @@ export const SemiCircleMultiSeries = () => (
     data={multiCategory}
     series={
       <RadialBarSeries
-        type='grouped'
+        type="grouped"
         animated
         colorScheme="cybertron"
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
@@ -126,7 +142,7 @@ export const SemiCircleMultiSeries = () => (
     }
     axis={
       <RadialAxis
-        type='category'
+        type="category"
         ticks={
           <RadialAxisTickSeries
             tick={
@@ -150,7 +166,7 @@ export const QuarterCircleMultiSeries = () => (
     data={multiCategory}
     series={
       <RadialBarSeries
-        type='grouped'
+        type="grouped"
         animated
         colorScheme="cybertron"
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
@@ -158,7 +174,7 @@ export const QuarterCircleMultiSeries = () => (
     }
     axis={
       <RadialAxis
-        type='category'
+        type="category"
         ticks={
           <RadialAxisTickSeries
             tick={
@@ -182,7 +198,7 @@ export const CustomCircle1MultiSeries = () => (
     data={multiCategory}
     series={
       <RadialBarSeries
-        type='grouped'
+        type="grouped"
         animated
         colorScheme="cybertron"
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
@@ -190,7 +206,7 @@ export const CustomCircle1MultiSeries = () => (
     }
     axis={
       <RadialAxis
-        type='category'
+        type="category"
         ticks={
           <RadialAxisTickSeries
             tick={
@@ -214,7 +230,7 @@ export const CustomCircle2MultiSeries = () => (
     data={multiCategory}
     series={
       <RadialBarSeries
-        type='grouped'
+        type="grouped"
         animated
         colorScheme="cybertron"
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
@@ -222,7 +238,7 @@ export const CustomCircle2MultiSeries = () => (
     }
     axis={
       <RadialAxis
-        type='category'
+        type="category"
         ticks={
           <RadialAxisTickSeries
             tick={
