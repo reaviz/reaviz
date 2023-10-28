@@ -1,3 +1,6 @@
+# 14.14.5 - 10/27/23
+- [fix] fix RadialChartAxisLabel autoRotate and alignment logic
+
 # 14.14.4 - 10/17/23
 - [fix] long FunnelChart labels crashing UI #158
 
