@@ -1,0 +1,85 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { LineChart, LineSeries} from '../../src';
+
+import * as LineChartSingleSeriesStories from '../../src/LineChart/LineChartSingleSeries.story.tsx'
+
+<Meta title="Docs/Chart Types/Line Chart" />
+# Line Chart
+---
+
+<div className="doc-story">
+  <Canvas sourceState="shown" of={LineChartSingleSeriesStories.Simple} />
+</div>
+
+A Line chart depicts data using points connected by lines, emphasizing trends and changes over a continuous set of values,
+typically along an x-axis and a y-axis.
+
+- Shows trends, changes, or relationships over time or continuous data points.
+- Ideal for visualizing data sets with many data points and identifying patterns or trends.
+- Offers a clear representation of fluctuating data or comparisons between multiple sets.
+- Allows easy interpretation of data points and their relationships through the line's path.
+
+Types supported by reaviz:
+- Single Series
+- Multi Series
+- Radial
+
+## Quick Start
+To create a line chart, use import the `LineChart` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { LineChart } from 'reaviz';
+
+const MyChart = () => (
+  <LineChart
+    height={300}
+    width={300}
+    data={[
+      { key: new Date('11/29/2019'), data: 13 },
+      { key: new Date('11/30/2019'), data: 13 },
+      { key: new Date('12/1/2019'), data: 13 },
+    ]}
+  />
+);
+```
+
+## API
+### [LineChart](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaChart.tsx)
+<ArgTypes of={LineChart} />
+
+### [LineSeries](https://github.com/reaviz/reaviz/blob/master/src/AreaChart/AreaSeries/AreaSeries.tsx)
+<ArgTypes of={LineSeries} />
+
+
+## Demo
+
+```js codesandbox=reaviz
+import React from 'react';
+import { LineChart } from 'reaviz';
+
+export const data = [
+  {
+    key: new Date('11/29/2019'),
+    data: 10
+  },
+  {
+    key: new Date('11/30/2019'),
+    data: 14
+  },
+  {
+    key: new Date('12/01/2019'),
+    data: 5
+  },
+  {
+    key: new Date('12/02/2019'),
+    data: 18
+  }
+];
+
+export default () => (
+  <div style={{ margin: '55px', textAlign: 'center' }}>
+    <LineChart width={350} height={250} data={data} />
+  </div>
+);
+```

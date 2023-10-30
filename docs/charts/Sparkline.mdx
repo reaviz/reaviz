@@ -1,0 +1,74 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { SparklineChart, SonarChart, BarSparklineChart, AreaSparklineChart } from '../../src';
+import * as SparklineStory from '../../src/Sparkline/SparklineChart.story';
+
+<Meta title="Docs/Chart Types/Sparkline" />
+
+# Sparkline
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={SparklineStory.Line} />
+</div>
+
+**Sparkline:**
+A Sparkline is a small, condensed, and simplified line chart, providing a snapshot of data trends within a compact space without axes or labels.
+
+- Offers a concise visualization of data trends or variations within a small area, often within text or tables.
+- Designed for quick and immediate data trend comprehension without specific data points or labels.
+- Ideal for presenting patterns, changes, or trends at a glance within limited space.
+- Doesn't contain axes or labels, emphasizing the trend's visual representation in a minimalist format.
+
+Types supported in reaviz:
+- Line
+- Area
+- Bar
+- Sonar
+
+## Quick Start
+To create a Sparkline, import the chart of your choice `SparklineChart`, `AreaSparklineChart`, `BarSparklineChart` or `SonarChart` and
+provide th data. The chart will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { SparklineChart } from 'reaviz';
+
+const MyChart = () => (
+  <SparklineChart data={[
+  {
+    id: '50',
+    key: new Date('2020-01-13T08:00:00.000Z'),
+    data: 16
+  },
+  {
+    id: '49',
+    key: new Date('2020-01-14T08:00:00.000Z'),
+    data: 44
+  },
+  {
+    id: '48',
+    key: new Date('2020-01-15T08:00:00.000Z'),
+    data: 12
+  },
+  {
+    id: '47',
+    key: new Date('2020-01-16T08:00:00.000Z'),
+    data: 26
+  },
+  {
+    id: '46',
+    key: new Date('2020-01-17T08:00:00.000Z'),
+    data: 41
+  }]}/>
+);
+```
+
+## API
+### [Sparkline Chart](https://github.com/reaviz/reaviz/blob/master/src/SparklineChart/SparklineChart.tsx)
+<ArgTypes of={SparklineChart} />
+### [Sonar Chart](https://github.com/reaviz/reaviz/blob/master/src/SonarChart/SonarChart.tsx)
+<ArgTypes of={SonarChart} />
+### [BarSparkline Chart](https://github.com/reaviz/reaviz/blob/master/src/BarSparklineChart/BarSparklineChart.tsx)
+<ArgTypes of={BarSparklineChart} />
+### [AreaSparkline Chart](https://github.com/reaviz/reaviz/blob/master/src/AreaSparklineChart/AreaSparklineChart.tsx)
+<ArgTypes of={AreaSparklineChart} />
