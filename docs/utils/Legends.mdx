@@ -1,7 +1,7 @@
 import { Meta, ArgTypes, Canvas } from '@storybook/addon-docs/blocks';
 import { DiscreteLegend, DiscreteLegendEntry, DiscreteLegendSymbol, SequentialLegend } from '../../src';
 import * as DiscreteLegendVerticalStories from '../../src/common/legends/DiscreteLegend/DiscreteLegendVertical.story'
-import * as DiscreteLegendHorizontalStories from '../../src/common/legends/DiscreteLegend/DiscreteLegendHorizontal.story'
+import * as SequentialLegendHorizontalStories from '../../src/common/legends/SequentialLegend/SequentialLegendHorizontal.story'
 
 <Meta title="Docs/Utils/Legends" />
 
@@ -39,7 +39,7 @@ The sequential legend is useful for categorical charts such as heatmaps.
 This legend supports supports both vertical and horizontal layout. Below is a simple
 example of a sequential legend:
 
-<Canvas sourceState="shown" of={DiscreteLegendHorizontalStories._Simple} />
+<Canvas sourceState="shown" of={SequentialLegendHorizontalStories.Simple} />
 
 ### API
 #### [SequentialLegend](https://github.com/reaviz/reaviz/blob/master/src/common/legends/SequentialLegend/SequentialLegend.tsx)
