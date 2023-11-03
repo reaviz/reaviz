@@ -17,7 +17,7 @@ import { motion } from 'framer-motion';
 
 type MarkerElement = ReactElement<MapMarkerProps, typeof MapMarker>;
 
-interface MapProps extends ChartProps {
+export interface MapProps extends ChartProps {
   markers?: MarkerElement[];
   data: any;
   fill?: string;
