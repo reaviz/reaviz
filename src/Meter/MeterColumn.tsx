@@ -60,7 +60,7 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
   activeFill,
   inActiveFill
 }) => {
-  const isActive = scale(index) <= value;
+  const isActive = scale(index) <= scale(value);
   const fill = isActive ? activeFill : inActiveFill;
   const transition = animated
     ? {
