@@ -28,7 +28,7 @@ export interface RadialGaugeSeriesProps {
   /**
    * Data to render set by `RadialGauge` component.
    */
-  data: ChartDataShape[];
+  data: ChartShallowDataShape[];
 
   /**
    * D3 scale function set by `RadialGauge` component.
