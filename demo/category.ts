@@ -26,6 +26,30 @@ export const categoryData = [
   }
 ];
 
+export const categoryDataStackedArcs = [
+  {
+    key: 'Third Party',
+    data: 40,
+  },
+  {
+    key: 'Phishing Attack',
+    data: [
+      {
+        key: 'Malware',
+        data: 10
+      },
+      {
+        key: 'DLP',
+        data: 16
+      },
+    ],
+  },
+  {
+    key: 'IDS',
+    data: 26,
+  },
+];
+
 export const durationCategoryData = [
   {
     key: 'Phishing Attack',

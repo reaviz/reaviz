@@ -1,9 +1,17 @@
 import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { range } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-import { ChartShallowDataShape } from '../../common/data';
+import {
+  ChartDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape
+} from '../../common/data';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
+import {
+  RadialGaugeStackedArc,
+  RadialGaugeStackedArcProps
+} from './RadialGaugeStackedArc';
 import {
   StackedRadialGaugeValueLabel,
   StackedRadialGaugeValueLabelProps
@@ -17,7 +25,7 @@ export interface StackedRadialGaugeSeriesProps {
   /**
    * Data to render set by `RadialGauge` component.
    */
-  data: ChartShallowDataShape[];
+  data: ChartDataShape[];
 
   /**
    * D3 scale function set by `RadialGauge` component.
@@ -55,6 +63,14 @@ export interface StackedRadialGaugeSeriesProps {
   innerArc: ReactElement<RadialGaugeArcProps, typeof RadialGaugeArc>;
 
   /**
+   * Stacked Arc component.
+   */
+  stackedInnerArc: ReactElement<
+    RadialGaugeStackedArcProps,
+    typeof RadialGaugeStackedArc
+  >;
+
+  /**
    * Outer arc component. This is the 'fill' element.
    */
   outerArc: ReactElement<RadialGaugeArcProps, typeof RadialGaugeArc> | null;
@@ -70,7 +86,7 @@ export interface StackedRadialGaugeSeriesProps {
   /**
    * Description label component.
    */
-    descriptionLabel: ReactElement<
+  descriptionLabel: ReactElement<
     StackedRadialGaugeDescriptionLabelProps,
     typeof StackedRadialGaugeDescriptionLabel
   > | null;
@@ -86,6 +102,12 @@ export interface StackedRadialGaugeSeriesProps {
   arcPadding: number;
 }
 
+const isChartNestedData = (
+  point: ChartDataShape
+): point is ChartNestedDataShape => {
+  return Array.isArray(point.data);
+};
+
 export const StackedRadialGaugeSeries: FC<
   Partial<StackedRadialGaugeSeriesProps>
 > = ({
@@ -97,6 +119,7 @@ export const StackedRadialGaugeSeries: FC<
   endAngle,
   outerArc,
   innerArc,
+  stackedInnerArc,
   label,
   descriptionLabel,
   colorScheme,
@@ -111,39 +134,85 @@ export const StackedRadialGaugeSeries: FC<
     .range([innerRadius, radius])
     .paddingInner(arcPadding);
 
+  const renderOuterArc = useCallback(
+    (outerRadius: number, innerRadius: number) => {
+      return (
+        outerArc &&
+        cloneElement(outerArc, {
+          outerRadius,
+          innerRadius,
+          startAngle,
+          endAngle
+        })
+      );
+    },
+    [outerArc, startAngle, endAngle]
+  );
+
+  const renderInnerArc = useCallback(
+    (
+      outerRadius: number,
+      innerRadius: number,
+      dataEndAngle: number,
+      point: ChartShallowDataShape,
+      index: number
+    ) => {
+      const color = getColor({ data, colorScheme, point, index });
+
+      return (
+        innerArc &&
+        cloneElement(innerArc, {
+          outerRadius,
+          innerRadius,
+          startAngle,
+          endAngle: dataEndAngle,
+          data: point,
+          color
+        })
+      );
+    },
+    [innerArc, startAngle, data, colorScheme]
+  );
+
+  const renderStackedArc = useCallback(
+    (outerRadius: number, innerRadius: number, point: ChartNestedDataShape) => {
+      return (
+        <>
+          {stackedInnerArc &&
+            cloneElement(stackedInnerArc, {
+              outerRadius,
+              innerRadius,
+              colorScheme,
+              scale,
+              data: point
+            })}
+        </>
+      );
+    },
+    [stackedInnerArc, colorScheme, scale]
+  );
+
   const renderStackedGauges = useCallback(
-    (point: ChartShallowDataShape, index: number) => {
-      const dataEndAngle = scale(point.data as number);
+    (point: ChartDataShape, index: number) => {
       const outerRadius = rAxis(index as any);
       const innerRadius = outerRadius - rAxis.bandwidth();
 
       return (
         <g key={point.key.toLocaleString()}>
-          {outerArc &&
-            cloneElement(outerArc, {
+          {renderOuterArc(outerRadius, innerRadius)}
+          {isChartNestedData(point)
+            ? renderStackedArc(outerRadius, innerRadius, point)
+            : renderInnerArc(
               outerRadius,
               innerRadius,
-              startAngle,
-              endAngle
-            })}
-          {innerArc &&
-            cloneElement(innerArc, {
-              outerRadius,
-              innerRadius,
-              startAngle,
-              endAngle: dataEndAngle,
-              data: point,
-              color: getColor({
-                data,
-                colorScheme,
-                point,
-                index
-              })
-            })}
+              scale(point.data),
+              point,
+              index
+            )}
         </g>
       );
     },
-    [rAxis, colorScheme, data, endAngle, innerArc, outerArc, scale, startAngle]
+    [rAxis, renderOuterArc, renderStackedArc, renderInnerArc, scale]
   );
 
   return (
@@ -160,6 +229,7 @@ export const StackedRadialGaugeSeries: FC<
 StackedRadialGaugeSeries.defaultProps = {
   outerArc: <RadialGaugeArc disabled={true} animated={false} />,
   innerArc: <RadialGaugeArc animated={true} />,
+  stackedInnerArc: <RadialGaugeStackedArc animated={true} />,
   label: <StackedRadialGaugeValueLabel />,
   colorScheme: ['#00ECB1'],
   fillFactor: 0.2,

@@ -1,7 +1,11 @@
 import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { scaleLinear } from 'd3-scale';
-import { ChartContainer, ChartContextProps, ChartProps } from '../common/containers';
-import { ChartShallowDataShape } from '../common/data';
+import {
+  ChartContainer,
+  ChartContextProps,
+  ChartProps
+} from '../common/containers';
+import { ChartDataShape } from '../common/data';
 import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
 import { useId } from 'rdk';
 
@@ -9,7 +13,7 @@ export interface RadialGaugeProps extends ChartProps {
   /**
    * Data the chart will receive to render.
    */
-  data: ChartShallowDataShape[];
+  data: ChartDataShape[];
 
   /**
    * Min value to scale on.

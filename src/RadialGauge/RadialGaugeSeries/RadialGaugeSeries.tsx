@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import { range, min } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-import { ChartShallowDataShape } from '../../common/data';
+import { ChartDataShape, ChartShallowDataShape } from '../../common/data';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
 import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
@@ -28,7 +28,7 @@ export interface RadialGaugeSeriesProps {
   /**
    * Data to render set by `RadialGauge` component.
    */
-  data: ChartShallowDataShape[];
+  data: ChartDataShape[];
 
   /**
    * D3 scale function set by `RadialGauge` component.

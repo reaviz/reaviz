@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, JSX } from 'react';
 import classNames from 'classnames';
 import css from './StackedRadialGaugeDescriptionLabel.module.css';
 
@@ -6,7 +6,7 @@ export interface StackedRadialGaugeDescriptionLabelProps {
   /**
    * A label shown at the center
    */
-  label: string;
+  label: string | JSX.Element;
 
   /**
    * A class name to apply
