@@ -6,7 +6,12 @@ import {
   ChartProps
 } from '../common/containers';
 import { ChartDataShape } from '../common/data';
-import { RadialGaugeSeries, RadialGaugeSeriesProps } from './RadialGaugeSeries';
+import {
+  RadialGaugeSeries,
+  RadialGaugeSeriesProps,
+  StackedRadialGaugeSeries,
+  StackedRadialGaugeSeriesProps
+} from './RadialGaugeSeries';
 import { useId } from 'rdk';
 
 export interface RadialGaugeProps extends ChartProps {
@@ -38,7 +43,10 @@ export interface RadialGaugeProps extends ChartProps {
   /**
    * Gauge series component to render.
    */
-  series?: ReactElement<RadialGaugeSeriesProps, typeof RadialGaugeSeries>;
+  series?: ReactElement<
+    RadialGaugeSeriesProps | StackedRadialGaugeSeriesProps,
+    typeof RadialGaugeSeries | typeof StackedRadialGaugeSeries
+  >;
 }
 
 export const RadialGauge: FC<RadialGaugeProps> = ({
