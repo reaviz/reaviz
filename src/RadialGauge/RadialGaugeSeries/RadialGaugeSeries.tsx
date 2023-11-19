@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import { range, min } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-import { ChartDataShape, ChartShallowDataShape } from '../../common/data';
+import { ChartShallowDataShape } from '../../common/data';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
 import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
