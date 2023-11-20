@@ -183,13 +183,14 @@ export const StackedRadialGaugeSeries: FC<
               outerRadius,
               innerRadius,
               colorScheme,
+              startAngle,
               scale,
               data: point
             })}
         </>
       );
     },
-    [stackedInnerArc, colorScheme, scale]
+    [stackedInnerArc, colorScheme, startAngle, scale]
   );
 
   const renderStackedGauges = useCallback(

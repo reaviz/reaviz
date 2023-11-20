@@ -13,7 +13,7 @@ import { RadialGaugeArcProps } from './RadialGaugeArc';
 
 export type RadialGaugeStackedArcProps = Omit<
   RadialGaugeArcProps,
-  'startAngle' | 'endAngle' | 'data' | 'color'
+  'endAngle' | 'data' | 'color'
 > & {
   /**
    * Data set by the `StackedRadialGaugeSeries` components.
@@ -39,6 +39,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
   outerRadius,
   cornerRadius,
   padAngle,
+  startAngle,
   colorScheme,
   ...restProps
 }) => {
@@ -50,7 +51,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
   }, [innerRadius, outerRadius, cornerRadius]);
 
   const stackedArcs = useMemo(() => {
-    let prevEndAngle = 0;
+    let prevEndAngle = startAngle;
 
     function renderArc(
       point: ChartShallowDataShape,
@@ -92,7 +93,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
     }
 
     return data.data.map(renderArc);
-  }, [arcGenerator, colorScheme, data, padAngle, restProps, scale]);
+  }, [arcGenerator, colorScheme, data, padAngle, restProps, scale, startAngle]);
 
   return <g key={id}>{stackedArcs}</g>;
 };
