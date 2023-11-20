@@ -177,7 +177,12 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
   }
 
   const descriptionElement = (
-    <>
+    <text
+      x="0"
+      y={-20}
+      textAnchor="middle"
+      alignmentBaseline="middle"
+    >
       <tspan x="0" fontSize={16} fontWeight={700} fill={'#E9E9E9'}>
         Hours Complete
       </tspan>
@@ -190,7 +195,7 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
         </tspan>
         from last week
       </tspan>
-    </>
+    </text>
   );
 
   return (
@@ -207,9 +212,7 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
           arcPadding={0.5}
           fillFactor={0.3}
           colorScheme={colorSchema}
-          descriptionLabel={
-            <StackedRadialGaugeDescriptionLabel label={descriptionElement} />
-          }
+          descriptionLabel={descriptionElement}
         />
       }
     />
