@@ -58,14 +58,14 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
       index: number
     ): JSX.Element {
       const value = point.data as number;
-      const startAngle = prevEndAngle;
-      const endAngle = startAngle + scale(value);
-      prevEndAngle = endAngle;
+      const startArcAngle = prevEndAngle;
+      const endArcAngle = startArcAngle + scale(value) - startAngle;
+      prevEndAngle = endArcAngle;
 
       const arcData: ArcData = {
         data: point,
-        startAngle,
-        endAngle,
+        startAngle: startArcAngle,
+        endAngle: endArcAngle,
         padAngle,
         value,
         index
