@@ -137,8 +137,14 @@ interface GaugeStackedTemplateProps {
   colorSchemaType: 'handlerFn' | 'array' | 'string';
 }
 
-const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
-  const calculatedMaxValue = max(args.data, (d) => {
+const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
+  width,
+  height,
+  data,
+  maxValue,
+  colorSchemaType,
+}) => {
+  const calculatedMaxValue = max(data, (d) => {
     const dataValue = d.data;
     if (Array.isArray(dataValue)) {
       return dataValue.reduce((acc: number, curr) => acc + curr.data, 0);
@@ -165,7 +171,7 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
   const colorSchemeArr: string[] = ['#c42656', '#03df2f', '#6747b4', '#ccd016'];
 
   let colorSchema: ColorSchemeType;
-  switch (args.colorSchemaType) {
+  switch (colorSchemaType) {
     case 'handlerFn':
       colorSchema = colorSchemeHandler;
       break;
@@ -177,20 +183,15 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
   }
 
   const descriptionElement = (
-    <text
-      x="0"
-      y={-20}
-      textAnchor="middle"
-      alignmentBaseline="middle"
-    >
-      <tspan x="0" fontSize={16} fontWeight={700} fill={'#E9E9E9'}>
+    <text x="0" y={-20} textAnchor="middle" alignmentBaseline="middle">
+      <tspan x="0" fontSize={16} fontWeight={700} fill="#E9E9E9">
         Hours Complete
       </tspan>
-      <tspan x="0" dy="1.2em" fontSize={32} fontWeight={800} fill={'#FFFFFF'}>
+      <tspan x="0" dy="1.2em" fontSize={32} fontWeight={800} fill="#FFFFFF">
         67%
       </tspan>
-      <tspan x="0" dy="1.5em" fontSize={14} fill={'#c2b0e7'}>
-        <tspan fontWeight="bold" fill={'#00E5AF'}>
+      <tspan x="0" dy="1.5em" fontSize={14} fill="#c2b0e7">
+        <tspan fontWeight="bold" fill="#00E5AF">
           ↑ 4%
         </tspan>
         from last week
@@ -200,13 +201,13 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = (args) => {
 
   return (
     <RadialGauge
-      data={args.data}
+      data={data}
       startAngle={0}
       endAngle={Math.PI * 2}
-      height={args.height}
-      width={args.width}
+      height={height}
+      width={width}
       minValue={0}
-      maxValue={args.maxValue || calculatedMaxValue}
+      maxValue={maxValue || calculatedMaxValue}
       series={
         <StackedRadialGaugeSeries
           arcPadding={0.5}
