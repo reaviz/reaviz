@@ -1,5 +1,5 @@
 import { RadialGauge } from './RadialGauge';
-import { categoryData } from '../../demo';
+import { categoryData, categoryDataStackedArcs } from '../../demo';
 import {
   RadialGaugeArc,
   RadialGaugeSeries,
@@ -9,6 +9,9 @@ import {
 } from './RadialGaugeSeries';
 import { Gradient } from '../common/Gradient';
 import { max } from 'd3-array';
+import { ChartDataShape, ColorSchemeType } from '../common';
+import React from 'react';
+import { StoryFn } from '@storybook/react';
 
 export default {
   title: 'Charts/Gauge/Radial'
@@ -72,7 +75,7 @@ export const CustomArc = () => (
 );
 
 export const Multi = () => {
-  const maxValue = max(categoryData, d => d.data as number);
+  const maxValue = max(categoryData, (d) => d.data as number);
   const colorScheme: string[] = ['#CE003E', '#DF8D03', '#00ECB1', '#9FA9B1'];
 
   return (
@@ -124,6 +127,120 @@ export const Stacked = () => {
       }
     />
   );
+};
+
+interface GaugeStackedTemplateProps {
+  width: number;
+  height: number;
+  data: ChartDataShape[];
+  maxValue?: number;
+  colorSchemaType: 'handlerFn' | 'array' | 'string';
+}
+
+const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
+  width,
+  height,
+  data,
+  maxValue,
+  colorSchemaType,
+}) => {
+  const calculatedMaxValue = max(data, (d) => {
+    const dataValue = d.data;
+    if (Array.isArray(dataValue)) {
+      return dataValue.reduce((acc: number, curr) => acc + curr.data, 0);
+    }
+
+    return dataValue;
+  });
+
+  const defaultColor = '#948d62';
+  const customColorScheme: Record<string, string> = {
+    'Third Party': '#DF8D03',
+    Malware: '#993FFF',
+    DLP: '#D9C0FF',
+    IDS: '#00FFC7'
+  };
+  const colorSchemeHandler = (data: ChartDataShape) => {
+    const key = data.key;
+    if (typeof key === 'string' && customColorScheme[key]) {
+      return customColorScheme[key];
+    }
+
+    return defaultColor;
+  };
+  const colorSchemeArr: string[] = ['#c42656', '#03df2f', '#6747b4', '#ccd016'];
+
+  let colorSchema: ColorSchemeType;
+  switch (colorSchemaType) {
+    case 'handlerFn':
+      colorSchema = colorSchemeHandler;
+      break;
+    case 'array':
+      colorSchema = colorSchemeArr;
+      break;
+    default:
+      colorSchema = defaultColor;
+  }
+
+  const descriptionElement = (
+    <text x="0" y={-20} textAnchor="middle" alignmentBaseline="middle">
+      <tspan x="0" fontSize={16} fontWeight={700} fill="#E9E9E9">
+        Hours Complete
+      </tspan>
+      <tspan x="0" dy="1.2em" fontSize={32} fontWeight={800} fill="#FFFFFF">
+        67%
+      </tspan>
+      <tspan x="0" dy="1.5em" fontSize={14} fill="#c2b0e7">
+        <tspan fontWeight="bold" fill="#00E5AF">
+          ↑ 4%
+        </tspan>
+        from last week
+      </tspan>
+    </text>
+  );
+
+  return (
+    <RadialGauge
+      data={data}
+      startAngle={0}
+      endAngle={Math.PI * 2}
+      height={height}
+      width={width}
+      minValue={0}
+      maxValue={maxValue || calculatedMaxValue}
+      series={
+        <StackedRadialGaugeSeries
+          arcPadding={0.5}
+          fillFactor={0.3}
+          colorScheme={colorSchema}
+          descriptionLabel={descriptionElement}
+        />
+      }
+    />
+  );
+};
+
+export const GaugeStacked = GaugeStackedTemplate.bind({});
+GaugeStacked.args = {
+  width: 700,
+  height: 300,
+  data: categoryDataStackedArcs,
+  maxValue: undefined,
+  colorSchemaType: 'handlerFn'
+};
+GaugeStacked.argTypes = {
+  width: { control: { type: 'number', min: 300, max: 700, step: 10 } },
+  height: { control: { type: 'number', min: 300, max: 700, step: 10 } },
+  data: {
+    type: 'object'
+  },
+  maxValue: {
+    type: 'number'
+  },
+  colorSchemaType: {
+    control: 'inline-radio',
+    options: ['handlerFn', 'array', 'string']
+  }
 };
 
 export const Autosize = () => (

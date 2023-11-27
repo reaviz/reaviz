@@ -127,17 +127,16 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       .cornerRadius(cornerRadius);
   }, [innerRadius, outerRadius, cornerRadius]);
 
-  const arcData: ArcData = {
-    // @ts-ignore Data must be passed
-    data: data || {},
-    startAngle,
-    endAngle,
-    padAngle
-  };
+  const arcElement = useMemo(() => {
+    const arcData: ArcData = {
+      // @ts-ignore Data must be passed
+      data: data || {},
+      startAngle,
+      endAngle,
+      padAngle
+    };
 
-  return (
-    <g>
-      {fill && <circle fill={fill} r={outerRadius} />}
+    return (
       <PieArc
         id={id}
         arc={arcGenerator}
@@ -151,6 +150,28 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       />
+    );
+  }, [
+    id,
+    arcGenerator,
+    startAngle,
+    endAngle,
+    padAngle,
+    data,
+    animated,
+    color,
+    gradient,
+    disabled,
+    tooltip,
+    onClick,
+    onMouseEnter,
+    onMouseLeave
+  ]);
+
+  return (
+    <g>
+      {fill && <circle fill={fill} r={outerRadius} />}
+      {arcElement}
     </g>
   );
 };
