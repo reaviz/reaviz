@@ -1,3 +1,6 @@
+# 14.15.0 - 11/27/23
+- [feature] Add ability to build Stacked arcs for StackedRadialGaugeSeries #169
+
 # 14.14.5 - 10/27/23
 - [fix] fix RadialChartAxisLabel autoRotate and alignment logic
 
