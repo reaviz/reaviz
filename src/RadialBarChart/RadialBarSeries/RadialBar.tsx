@@ -114,6 +114,11 @@ export interface RadialBarProps {
    * Event for when the symbol has mouse leave.
    */
   onMouseLeave: (event) => void;
+
+  /**
+   * Whether the chart is currently animating or not. Set internally by `RadialBarSeries`.
+   */
+  setIsAnimating: (isAnimating: boolean) => void;
 }
 
 export const RadialBar: FC<Partial<RadialBarProps>> = ({
@@ -135,7 +140,8 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   color,
   onClick,
   onMouseEnter,
-  onMouseLeave
+  onMouseLeave,
+  setIsAnimating
 }) => {
   const previousEnter = useRef<any | null>(null);
   const fill = color(data, index);
@@ -246,7 +252,16 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
         return pathFn.toString();
       }
     },
-    [barCount, curved, groupIndex, index, innerBarCount, innerRadius, xScale, yScale]
+    [
+      barCount,
+      curved,
+      groupIndex,
+      index,
+      innerBarCount,
+      innerRadius,
+      xScale,
+      yScale
+    ]
   );
 
   const renderBar = useCallback(
@@ -307,6 +322,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
                 nativeEvent: event
               })
             }
+            setIsAnimating={setIsAnimating}
           />
         </Fragment>
       );
@@ -321,6 +337,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       onClick,
       onMouseEnter,
       onMouseLeave,
+      setIsAnimating,
       transition,
       yScale
     ]

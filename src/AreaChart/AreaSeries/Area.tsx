@@ -72,6 +72,11 @@ export interface AreaProps extends PropFunctionTypes {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * Whether the chart is currently animating or not. Set internally by `AreaSeries`.
+   */
+  setIsAnimating: (isAnimating: boolean) => void;
 }
 
 export const Area: FC<Partial<AreaProps>> = ({
@@ -86,6 +91,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   yScale,
   animated,
   interpolation,
+  setIsAnimating,
   ...rest
 }) => {
   const stroke = color(data, index);
@@ -192,9 +198,10 @@ export const Area: FC<Partial<AreaProps>> = ({
           enter,
           exit
         }}
+        setIsAnimating={setIsAnimating}
       />
     );
-  }, [data, enter, exit, fill, id, mask, rest, transition]);
+  }, [data, enter, exit, fill, id, mask, rest, setIsAnimating, transition]);
 
   return (
     <Fragment>
