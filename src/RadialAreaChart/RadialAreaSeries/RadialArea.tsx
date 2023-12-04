@@ -1,6 +1,12 @@
 import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { radialArea, curveCardinalClosed, curveLinearClosed, curveCardinal, curveLinear } from 'd3-shape';
+import {
+  radialArea,
+  curveCardinalClosed,
+  curveLinearClosed,
+  curveCardinal,
+  curveLinear
+} from 'd3-shape';
 import { RadialGradient, RadialGradientProps } from '../../common/Gradient';
 import { CloneElement } from 'rdk';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
@@ -71,6 +77,11 @@ export interface RadialAreaProps {
    * Whether the curve should be closed. Set to true by deafult
    */
   isClosedCurve: boolean;
+
+  /**
+   * Whether the chart is currently animating or not. Set internally by `RadialAreaSeries`.
+   */
+  setIsAnimating: (isAnimating: boolean) => void;
 }
 
 export const RadialArea: FC<Partial<RadialAreaProps>> = ({
@@ -86,7 +97,8 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   innerRadius,
   interpolation,
   gradient,
-  isClosedCurve
+  isClosedCurve,
+  setIsAnimating
 }) => {
   const transition = useMemo(
     () =>
@@ -158,6 +170,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
         pointerEvents="none"
         className={className}
         fill={getFill(color)}
+        setIsAnimating={setIsAnimating}
       />
       {gradient && (
         <CloneElement<RadialGradientProps>

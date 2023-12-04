@@ -1,6 +1,12 @@
 import React, { useCallback, useMemo, FC } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { radialLine, curveCardinalClosed, curveLinearClosed, curveCardinal, curveLinear } from 'd3-shape';
+import {
+  radialLine,
+  curveCardinalClosed,
+  curveLinearClosed,
+  curveCardinal,
+  curveLinear
+} from 'd3-shape';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 
@@ -54,11 +60,16 @@ export interface RadialLineProps {
    * Internal property to identify if there is a area or not.
    */
   hasArea: boolean;
-  
+
   /**
    * Whether the curve should be closed. Set to true by deafult
    */
   isClosedCurve: boolean;
+
+  /**
+   * Whether the chart is currently animating or not. Set internally by `RadialAreaSeries`.
+   */
+  setIsAnimating: (isAnimating: boolean) => void;
 }
 
 export const RadialLine: FC<Partial<RadialLineProps>> = ({
@@ -72,7 +83,8 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   interpolation,
   strokeWidth,
   animated,
-  isClosedCurve
+  isClosedCurve,
+  setIsAnimating
 }) => {
   const fill = color(data, index);
 
@@ -133,6 +145,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
       stroke={fill}
       fill="none"
       strokeWidth={strokeWidth}
+      setIsAnimating={setIsAnimating}
     />
   );
 };
