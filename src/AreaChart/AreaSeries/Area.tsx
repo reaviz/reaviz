@@ -72,6 +72,11 @@ export interface AreaProps extends PropFunctionTypes {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * A callback function that is invoked when the animation of the chart finishes. Set internally by `AreaSeries`.
+   */
+  onAnimationFinished: () => void;
 }
 
 export const Area: FC<Partial<AreaProps>> = ({
@@ -86,6 +91,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   yScale,
   animated,
   interpolation,
+  onAnimationFinished,
   ...rest
 }) => {
   const stroke = color(data, index);
@@ -192,9 +198,20 @@ export const Area: FC<Partial<AreaProps>> = ({
           enter,
           exit
         }}
+        onAnimationFinished={onAnimationFinished}
       />
     );
-  }, [data, enter, exit, fill, id, mask, rest, transition]);
+  }, [
+    data,
+    enter,
+    exit,
+    fill,
+    id,
+    mask,
+    rest,
+    onAnimationFinished,
+    transition
+  ]);
 
   return (
     <Fragment>

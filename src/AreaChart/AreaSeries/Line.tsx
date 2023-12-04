@@ -83,6 +83,11 @@ export interface LineProps extends PropFunctionTypes {
    * Internal property to identify if there is a area or not.
    */
   hasArea: boolean;
+
+  /**
+   * A callback function that is invoked when the animation of the chart finishes. Set internally by `AreaSeries`.
+   */
+  onAnimationFinished: () => void;
 }
 
 export const Line: FC<Partial<LineProps>> = ({
@@ -97,6 +102,7 @@ export const Line: FC<Partial<LineProps>> = ({
   xScale,
   showZeroStroke,
   interpolation,
+  onAnimationFinished,
   ...rest
 }) => {
   const [pathLength, setPathLength] = useState<number | null>(null);
@@ -213,6 +219,7 @@ export const Line: FC<Partial<LineProps>> = ({
             enter,
             exit
           }}
+          onAnimationFinished={onAnimationFinished}
         />
       )}
       {!hasArea && (
