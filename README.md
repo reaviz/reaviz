@@ -30,6 +30,9 @@ React natively for rendering the components while using D3js under the
 hood for calculations. The library provides an easy way to get started
 creating charts without sacrificing customization ability.
 
+Checkout Unify Viz, our premium offering 300+ Figma and React professionally designed data visualization
+components. [Learn more →](https://unifyviz.com)
+
 If you are looking for workflow/diagram graphs, checkout [reaflow](https://reaflow.dev).
 
 If you are looking for webgl-based network graphs, checkout [reagraph](https://reagraph.dev).
