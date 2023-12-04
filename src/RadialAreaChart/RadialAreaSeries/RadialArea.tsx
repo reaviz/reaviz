@@ -1,12 +1,6 @@
 import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import {
-  radialArea,
-  curveCardinalClosed,
-  curveLinearClosed,
-  curveCardinal,
-  curveLinear
-} from 'd3-shape';
+import { radialArea, curveCardinalClosed, curveLinearClosed, curveCardinal, curveLinear } from 'd3-shape';
 import { RadialGradient, RadialGradientProps } from '../../common/Gradient';
 import { CloneElement } from 'rdk';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
@@ -77,11 +71,6 @@ export interface RadialAreaProps {
    * Whether the curve should be closed. Set to true by deafult
    */
   isClosedCurve: boolean;
-
-  /**
-   * A callback function that is invoked when the animation of the chart finishes. Set internally by `RadialAreaSeries`.
-   */
-  onAnimationFinished: () => void;
 }
 
 export const RadialArea: FC<Partial<RadialAreaProps>> = ({
@@ -97,8 +86,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   innerRadius,
   interpolation,
   gradient,
-  isClosedCurve,
-  onAnimationFinished
+  isClosedCurve
 }) => {
   const transition = useMemo(
     () =>
@@ -170,7 +158,6 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
         pointerEvents="none"
         className={className}
         fill={getFill(color)}
-        onAnimationFinished={onAnimationFinished}
       />
       {gradient && (
         <CloneElement<RadialGradientProps>

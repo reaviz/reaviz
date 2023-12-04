@@ -1,26 +1,32 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from './config';
 
-export const MotionPath = ({
-  custom,
-  transition,
-  onAnimationFinished,
-  ...rest
-}) => {
+export const MotionPath = ({ custom, transition, ...rest }) => {
   const d = useMotionValue(custom.exit.d);
-  const prevPathRef = useRef(custom.exit.d);
-  const spring = useSpring(useMotionValue(prevPathRef.current), {
+  const prevPath = useMotionValue(custom.exit.d);
+  const spring = useSpring(prevPath, {
     ...DEFAULT_TRANSITION,
     from: 0,
     to: 1
   });
+  const [done, setDone] = useState<boolean>(false);
+  const prevRef = useRef(custom.enter.d);
 
   useEffect(() => {
-    const interpolator = interpolate(prevPathRef.current, custom.enter.d);
+    if (done) {
+      prevPath.set(prevRef.current);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [done]);
 
-    const unsub = spring.onChange((v) => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    const interpolator = interpolate(prevPath.get(), custom.enter.d);
+    setDone(false);
+
+    const unsub = spring.onChange(v => {
       d.set(interpolator(v));
 
       // NOTE: This is tricky logic ( Also refer to MotionBar.tsx ) ...
@@ -28,8 +34,8 @@ export const MotionPath = ({
       //  - Must not animate when other props change ( tooltip hover )
       //  - Must animate from prev to new position on updates ( live updates )
       if (v === 1) {
-        prevPathRef.current = custom.enter.d;
-        onAnimationFinished();
+        prevRef.current = custom.enter.d;
+        setDone(true);
       }
     });
 
