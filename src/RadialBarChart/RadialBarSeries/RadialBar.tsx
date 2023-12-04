@@ -116,9 +116,9 @@ export interface RadialBarProps {
   onMouseLeave: (event) => void;
 
   /**
-   * Whether the chart is currently animating or not. Set internally by `RadialBarSeries`.
+   * A callback function that is invoked when the animation of the chart finishes. Set internally by `RadialBarSeries`.
    */
-  setIsAnimating: (isAnimating: boolean) => void;
+  onAnimationFinished: () => void;
 }
 
 export const RadialBar: FC<Partial<RadialBarProps>> = ({
@@ -141,7 +141,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  setIsAnimating
+  onAnimationFinished
 }) => {
   const previousEnter = useRef<any | null>(null);
   const fill = color(data, index);
@@ -322,7 +322,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
                 nativeEvent: event
               })
             }
-            setIsAnimating={setIsAnimating}
+            onAnimationFinished={onAnimationFinished}
           />
         </Fragment>
       );
@@ -337,7 +337,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       onClick,
       onMouseEnter,
       onMouseLeave,
-      setIsAnimating,
+      onAnimationFinished,
       transition,
       yScale
     ]

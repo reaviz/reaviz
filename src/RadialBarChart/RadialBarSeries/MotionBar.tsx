@@ -7,7 +7,7 @@ export const MotionBar = ({
   custom,
   transition,
   arc,
-  setIsAnimating,
+  onAnimationFinished,
   ...rest
 }) => {
   const d = useMotionValue('');
@@ -31,7 +31,7 @@ export const MotionBar = ({
       //  - Must animate from prev to new position on updates ( live updates )
       if (v === 1) {
         prevPathRef.current = custom.enter;
-        setIsAnimating(false);
+        onAnimationFinished();
       }
     });
 

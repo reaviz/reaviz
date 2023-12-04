@@ -156,7 +156,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             animated={animated}
             startAngle={startAngle}
             endAngle={endAngle}
-            setIsAnimating={setIsAnimating}
+            onAnimationFinished={() => setIsAnimating(false)}
           />
         </Fragment>
       );

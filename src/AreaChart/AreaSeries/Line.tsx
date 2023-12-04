@@ -85,9 +85,9 @@ export interface LineProps extends PropFunctionTypes {
   hasArea: boolean;
 
   /**
-   * Whether the chart is currently animating or not. Set internally by `AreaSeries`.
+   * A callback function that is invoked when the animation of the chart finishes. Set internally by `AreaSeries`.
    */
-  setIsAnimating: (isAnimating: boolean) => void;
+  onAnimationFinished: () => void;
 }
 
 export const Line: FC<Partial<LineProps>> = ({
@@ -102,7 +102,7 @@ export const Line: FC<Partial<LineProps>> = ({
   xScale,
   showZeroStroke,
   interpolation,
-  setIsAnimating,
+  onAnimationFinished,
   ...rest
 }) => {
   const [pathLength, setPathLength] = useState<number | null>(null);
@@ -219,7 +219,7 @@ export const Line: FC<Partial<LineProps>> = ({
             enter,
             exit
           }}
-          setIsAnimating={setIsAnimating}
+          onAnimationFinished={onAnimationFinished}
         />
       )}
       {!hasArea && (

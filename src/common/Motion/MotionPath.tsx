@@ -3,7 +3,12 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from './config';
 
-export const MotionPath = ({ custom, transition, setIsAnimating, ...rest }) => {
+export const MotionPath = ({
+  custom,
+  transition,
+  onAnimationFinished,
+  ...rest
+}) => {
   const d = useMotionValue(custom.exit.d);
   const prevPathRef = useRef(custom.exit.d);
   const spring = useSpring(useMotionValue(prevPathRef.current), {
@@ -24,7 +29,7 @@ export const MotionPath = ({ custom, transition, setIsAnimating, ...rest }) => {
       //  - Must animate from prev to new position on updates ( live updates )
       if (v === 1) {
         prevPathRef.current = custom.enter.d;
-        setIsAnimating(false);
+        onAnimationFinished();
       }
     });
 

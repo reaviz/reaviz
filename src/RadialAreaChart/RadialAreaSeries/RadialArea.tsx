@@ -79,9 +79,9 @@ export interface RadialAreaProps {
   isClosedCurve: boolean;
 
   /**
-   * Whether the chart is currently animating or not. Set internally by `RadialAreaSeries`.
+   * A callback function that is invoked when the animation of the chart finishes. Set internally by `RadialAreaSeries`.
    */
-  setIsAnimating: (isAnimating: boolean) => void;
+  onAnimationFinished: () => void;
 }
 
 export const RadialArea: FC<Partial<RadialAreaProps>> = ({
@@ -98,7 +98,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   interpolation,
   gradient,
   isClosedCurve,
-  setIsAnimating
+  onAnimationFinished
 }) => {
   const transition = useMemo(
     () =>
@@ -170,7 +170,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
         pointerEvents="none"
         className={className}
         fill={getFill(color)}
-        setIsAnimating={setIsAnimating}
+        onAnimationFinished={onAnimationFinished}
       />
       {gradient && (
         <CloneElement<RadialGradientProps>

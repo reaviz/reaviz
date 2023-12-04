@@ -191,7 +191,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             animated={animated}
             interpolation={interpolation}
             color={getPointColor}
-            setIsAnimating={setIsAnimating}
+            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
         {area && (
@@ -206,7 +206,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             animated={animated}
             interpolation={interpolation}
             color={getPointColor}
-            setIsAnimating={setIsAnimating}
+            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
       </Fragment>

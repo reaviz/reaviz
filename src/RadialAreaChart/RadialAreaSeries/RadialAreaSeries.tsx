@@ -190,7 +190,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             outerRadius={outerRadius}
             innerRadius={innerRadius}
             isClosedCurve={isClosedCurve}
-            setIsAnimating={setIsAnimating}
+            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
         {line && (
@@ -205,7 +205,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             color={getColorForPoint}
             data={point}
             isClosedCurve={isClosedCurve}
-            setIsAnimating={setIsAnimating}
+            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
       </>

@@ -67,9 +67,9 @@ export interface RadialLineProps {
   isClosedCurve: boolean;
 
   /**
-   * Whether the chart is currently animating or not. Set internally by `RadialAreaSeries`.
+   * A callback function that is invoked when the animation of the chart finishes. Set internally by `RadialAreaSeries`.
    */
-  setIsAnimating: (isAnimating: boolean) => void;
+  onAnimationFinished: () => void;
 }
 
 export const RadialLine: FC<Partial<RadialLineProps>> = ({
@@ -84,7 +84,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   strokeWidth,
   animated,
   isClosedCurve,
-  setIsAnimating
+  onAnimationFinished
 }) => {
   const fill = color(data, index);
 
@@ -145,7 +145,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
       stroke={fill}
       fill="none"
       strokeWidth={strokeWidth}
-      setIsAnimating={setIsAnimating}
+      onAnimationFinished={onAnimationFinished}
     />
   );
 };
