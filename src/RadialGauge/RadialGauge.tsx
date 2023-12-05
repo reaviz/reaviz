@@ -28,7 +28,7 @@ export interface RadialGaugeProps extends ChartProps {
   /**
    * Max value to scale on.
    */
-  maxValue?: number;
+  maxValue?: number | number[];
 
   /**
    * Start angle for the first value.
@@ -66,9 +66,17 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
   const newId = useId(id);
 
   const renderSeries = useCallback(({ chartHeight, chartWidth }: ChartContextProps) => {
-    const scale = scaleLinear()
-      .domain([minValue, maxValue])
-      .range([startAngle, endAngle]);
+    let scale;
+
+    if (Array.isArray(maxValue)) {
+      scale = maxValue.map((max) => scaleLinear()
+        .domain([minValue, max])
+        .range([startAngle, endAngle]));
+    } else {
+      scale = scaleLinear()
+        .domain([minValue, maxValue])
+        .range([startAngle, endAngle]);
+    }
 
     return cloneElement(series, {
       id: newId,
