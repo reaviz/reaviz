@@ -4,14 +4,9 @@ import React, {
   ReactElement,
   useState,
   useCallback,
-  useMemo,
-  useEffect
+  useMemo
 } from 'react';
-import {
-  ChartInternalDataShape,
-  ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape
-} from '../../common/data';
+import { ChartInternalDataShape, ChartInternalNestedDataShape, ChartInternalShallowDataShape } from '../../common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
 import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
@@ -118,20 +113,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   type
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
-  const isMultiSeries = useMemo(() => type === 'grouped', [type]);
-  const [isAnimating, setIsAnimating] = useState<boolean>(animated);
-
-  const onValueEnter = (e) => {
-    if (!isAnimating) {
-      setActiveValues(e.value);
-    }
-  };
-
-  const onValueLeave = () => {
-    if (!isAnimating) {
-      setActiveValues(null);
-    }
-  };
+  const isMultiSeries = useMemo(() => (type === 'grouped'), [type]);
 
   const renderBar = useCallback(
     (point: ChartInternalShallowDataShape, innerBarCount: number, index: number, barCount: number,
@@ -156,24 +138,11 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             animated={animated}
             startAngle={startAngle}
             endAngle={endAngle}
-            onAnimationFinished={() => setIsAnimating(false)}
           />
         </Fragment>
       );
     },
-    [
-      activeValues,
-      animated,
-      bar,
-      colorScheme,
-      data,
-      endAngle,
-      id,
-      innerRadius,
-      startAngle,
-      xScale,
-      yScale
-    ]
+    [activeValues, animated, bar, colorScheme, data, endAngle, id, innerRadius, startAngle, xScale, yScale]
   );
 
   const renderBarGroup = useCallback(
@@ -183,6 +152,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       barCount: number,
       groupIndex?: number
     ) => {
+
       return (
         <Fragment>
           {data.map((barData, barIndex) =>
@@ -193,10 +163,6 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
     },
     [renderBar]
   );
-
-  useEffect(() => {
-    setIsAnimating(animated);
-  }, [animated, data]);
 
   return (
     <CloneElement<TooltipAreaProps>
@@ -209,8 +175,8 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       isRadial={true}
       innerRadius={innerRadius}
       outerRadius={outerRadius}
-      onValueEnter={onValueEnter}
-      onValueLeave={onValueLeave}
+      onValueEnter={(event) => setActiveValues(event.value)}
+      onValueLeave={() => setActiveValues(null)}
       color={(point, index) => getColor({ data, point, index, colorScheme })}
       startAngle={startAngle}
       endAngle={endAngle}

@@ -3,38 +3,30 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from './config';
 
-export const MotionPath = ({
-  custom,
-  transition,
-  onAnimationFinished,
-  ...rest
-}) => {
+export const MotionPath = ({ custom, transition, ...rest }) => {
   const d = useMotionValue(custom.exit.d);
-  const prevPathRef = useRef(custom.exit.d);
-  const spring = useSpring(useMotionValue(prevPathRef.current), {
+  const spring = useSpring(0, {
     ...DEFAULT_TRANSITION,
     from: 0,
     to: 1
   });
 
   useEffect(() => {
-    const interpolator = interpolate(prevPathRef.current, custom.enter.d);
+    spring.set(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    let interpolator = interpolate(d.get(), custom.enter.d);
+
+    spring.set(1);
 
     const unsub = spring.onChange((v) => {
       d.set(interpolator(v));
-
-      // NOTE: This is tricky logic ( Also refer to MotionBar.tsx ) ...
-      //  - Must animate in only once ( renders )
-      //  - Must not animate when other props change ( tooltip hover )
-      //  - Must animate from prev to new position on updates ( live updates )
-      if (v === 1) {
-        prevPathRef.current = custom.enter.d;
-        onAnimationFinished();
-      }
     });
 
     return unsub;
-  });
+  }, [custom.enter.d, custom.exit.d, d, spring]);
 
   const { d: enterD, ...enterRest } = custom.enter;
   const { d: exitD, ...exitRest } = custom.exit;

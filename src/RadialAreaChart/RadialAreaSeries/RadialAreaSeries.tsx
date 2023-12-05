@@ -3,7 +3,6 @@ import React, {
   Fragment,
   ReactElement,
   useCallback,
-  useEffect,
   useState
 } from 'react';
 import {
@@ -142,20 +141,6 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   isClosedCurve
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
-  const [isAnimating, setIsAnimating] = useState<boolean>(animated);
-
-  const onValueEnter = (e) => {
-    if (!isAnimating) {
-      setActiveValues(e.value);
-    }
-  };
-
-  const onValueLeave = () => {
-    if (!isAnimating) {
-      setActiveValues(null);
-    }
-  };
-
   const isMulti = type === 'grouped';
 
   const getColorForPoint = useCallback(
@@ -190,7 +175,6 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             outerRadius={outerRadius}
             innerRadius={innerRadius}
             isClosedCurve={isClosedCurve}
-            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
         {line && (
@@ -205,24 +189,11 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             color={getColorForPoint}
             data={point}
             isClosedCurve={isClosedCurve}
-            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
       </>
     ),
-    [
-      animated,
-      area,
-      getColorForPoint,
-      id,
-      innerRadius,
-      interpolation,
-      isClosedCurve,
-      line,
-      outerRadius,
-      xScale,
-      yScale
-    ]
+    [animated, area, getColorForPoint, id, innerRadius, interpolation, isClosedCurve, line, outerRadius, xScale, yScale]
   );
 
   const renderSymbols = useCallback(
@@ -280,9 +251,6 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
     [renderArea, renderSymbols]
   );
 
-  useEffect(() => {
-    setIsAnimating(animated);
-  }, [animated, data]);
 
   return (
     <CloneElement<TooltipAreaProps>
@@ -296,8 +264,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
       innerRadius={innerRadius}
       outerRadius={outerRadius}
       color={getColorForPoint}
-      onValueEnter={onValueEnter}
-      onValueLeave={onValueLeave}
+      onValueEnter={(event) => setActiveValues(event.value)}
+      onValueLeave={() => setActiveValues(null)}
       startAngle={startAngle}
       endAngle={endAngle}
     >

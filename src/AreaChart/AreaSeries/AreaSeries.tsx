@@ -3,8 +3,7 @@ import React, {
   ReactElement,
   FC,
   useCallback,
-  useState,
-  useEffect
+  useState
 } from 'react';
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
@@ -138,24 +137,16 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const [activePoint, setActivePoint] = useState<any | null>(null);
-  const [isAnimating, setIsAnimating] = useState<boolean>(animated);
 
-  const onValueEnter = useCallback(
-    (event: TooltipAreaEvent) => {
-      if (!isAnimating) {
-        setActivePoint(event.pointX);
-        setActiveValues(event.value);
-      }
-    },
-    [isAnimating]
-  );
+  const onValueEnter = useCallback((event: TooltipAreaEvent) => {
+    setActivePoint(event.pointX);
+    setActiveValues(event.value);
+  }, []);
 
   const onValueLeave = useCallback(() => {
-    if (!isAnimating) {
-      setActivePoint(undefined);
-      setActiveValues(undefined);
-    }
-  }, [isAnimating]);
+    setActivePoint(undefined);
+    setActiveValues(undefined);
+  }, []);
 
   const isMulti =
     type === 'grouped' || type === 'stacked' || type === 'stackedNormalized';
@@ -191,7 +182,6 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             animated={animated}
             interpolation={interpolation}
             color={getPointColor}
-            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
         {area && (
@@ -206,7 +196,6 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             animated={animated}
             interpolation={interpolation}
             color={getPointColor}
-            onAnimationFinished={() => setIsAnimating(false)}
           />
         )}
       </Fragment>
@@ -313,10 +302,6 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     ),
     [renderArea, renderMarkLine, renderSymbols]
   );
-
-  useEffect(() => {
-    setIsAnimating(animated);
-  }, [animated, data]);
 
   return (
     <Fragment>

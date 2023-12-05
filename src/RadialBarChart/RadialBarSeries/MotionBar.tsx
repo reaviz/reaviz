@@ -1,42 +1,34 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 
-export const MotionBar = ({
-  custom,
-  transition,
-  arc,
-  onAnimationFinished,
-  ...rest
-}) => {
+export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   const d = useMotionValue('');
-  const prevPathRef = useRef(custom.exit);
-  const spring = useSpring(useMotionValue(prevPathRef.current), {
+  const currentYRef = useRef(custom.exit.y);
+  const spring = useSpring(0, {
     ...DEFAULT_TRANSITION,
     from: 0,
     to: 1
   });
 
   useEffect(() => {
-    const from = prevPathRef.current;
-    const interpolator = interpolate(from?.y, custom.enter.y);
+    spring.set(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const interpolator = interpolate(currentYRef.current, custom.enter.y);
+
+    spring.set(1);
 
     const unsub = spring.onChange((v) => {
-      d.set(arc({ ...custom.enter, y: interpolator(v) }));
-
-      // NOTE: This is tricky logic ( Also refer to MotionPath.tsx ) ...
-      //  - Must animate in only once ( renders )
-      //  - Must not animate when other props change ( tooltip hover )
-      //  - Must animate from prev to new position on updates ( live updates )
-      if (v === 1) {
-        prevPathRef.current = custom.enter;
-        onAnimationFinished();
-      }
+      currentYRef.current = interpolator(v);
+      d.set(arc({ ...custom.enter, y: currentYRef.current }));
     });
 
     return unsub;
-  });
+  }, [arc, custom.enter, d, spring]);
 
   const { d: enterD, ...enterRest } = custom.enter;
   const { d: exitD, ...exitRest } = custom.exit;
