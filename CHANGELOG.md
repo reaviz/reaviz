@@ -1,3 +1,6 @@
+# 14.15.1 - 12/5/23
+- [fix] Fix jittering chart animations when updating data quickly #171
+
 # 14.15.0 - 11/27/23
 - [feature] Add ability to build Stacked arcs for StackedRadialGaugeSeries #169
 
