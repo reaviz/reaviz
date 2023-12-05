@@ -17,13 +17,11 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
   }, []);
 
   useEffect(() => {
-    console.log(d.get());
     let interpolator = interpolate(d.get(), custom.enter.d);
 
     spring.set(1);
 
     const unsub = spring.onChange((v) => {
-      console.log(v);
       d.set(interpolator(v));
     });
 
