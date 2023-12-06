@@ -102,7 +102,6 @@ export const MultiLine = () => (
 );
 
 export const Stacked = () => {
-  const maxValue = max(categoryData, (d) => d.data as number);
   const colorScheme: string[] = ['#CE003E', '#DF8D03', '#00ECB1', '#9FA9B1'];
 
   return (
@@ -113,7 +112,7 @@ export const Stacked = () => {
       height={300}
       width={700}
       minValue={0}
-      maxValue={maxValue}
+      maxValue={[10, 20, 30, 40]}
       series={
         <StackedRadialGaugeSeries
           arcPadding={0.1}
@@ -133,7 +132,6 @@ interface GaugeStackedTemplateProps {
   width: number;
   height: number;
   data: ChartDataShape[];
-  maxValue?: number;
   colorSchemaType: 'handlerFn' | 'array' | 'string';
 }
 
@@ -141,18 +139,8 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
   width,
   height,
   data,
-  maxValue,
   colorSchemaType,
 }) => {
-  const calculatedMaxValue = max(data, (d) => {
-    const dataValue = d.data;
-    if (Array.isArray(dataValue)) {
-      return dataValue.reduce((acc: number, curr) => acc + curr.data, 0);
-    }
-
-    return dataValue;
-  });
-
   const defaultColor = '#948d62';
   const customColorScheme: Record<string, string> = {
     'Third Party': '#DF8D03',
@@ -207,7 +195,7 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
       height={height}
       width={width}
       minValue={0}
-      maxValue={maxValue || calculatedMaxValue}
+      maxValue={[50, 26, 100]}
       series={
         <StackedRadialGaugeSeries
           arcPadding={0.5}

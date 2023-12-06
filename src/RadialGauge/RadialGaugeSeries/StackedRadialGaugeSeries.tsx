@@ -175,7 +175,7 @@ export const StackedRadialGaugeSeries: FC<
   );
 
   const renderStackedArc = useCallback(
-    (outerRadius: number, innerRadius: number, point: ChartNestedDataShape) => {
+    (outerRadius: number, innerRadius: number, point: ChartNestedDataShape, index: number) => {
       return (
         <>
           {stackedInnerArc &&
@@ -184,7 +184,7 @@ export const StackedRadialGaugeSeries: FC<
               innerRadius,
               colorScheme,
               startAngle,
-              scale,
+              scale: scale?.[index] ?? scale?.[index] ?? scale,
               data: point
             })}
         </>
@@ -202,11 +202,11 @@ export const StackedRadialGaugeSeries: FC<
         <g key={point.key.toLocaleString()}>
           {renderOuterArc(outerRadius, innerRadius)}
           {isChartNestedData(point)
-            ? renderStackedArc(outerRadius, innerRadius, point)
+            ? renderStackedArc(outerRadius, innerRadius, point, index)
             : renderInnerArc(
               outerRadius,
               innerRadius,
-              scale(point.data),
+              scale?.[index]?.(point.data) ?? scale?.[0]?.(point.data) ?? scale(point.data),
               point,
               index
             )}
