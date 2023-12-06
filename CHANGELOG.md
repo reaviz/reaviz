@@ -1,3 +1,6 @@
+# 14.15.2 - 12/6/23
+- [feature] RadialGauge min/max value array support #172 
+
 # 14.15.1 - 12/5/23
 - [fix] Fix jittering chart animations when updating data quickly #171
 
