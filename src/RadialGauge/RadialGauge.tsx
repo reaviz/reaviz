@@ -23,7 +23,7 @@ export interface RadialGaugeProps extends ChartProps {
   /**
    * Min value to scale on.
    */
-  minValue?: number;
+  minValue?: number | number[];
 
   /**
    * Max value to scale on.
@@ -69,8 +69,12 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
     let scale;
 
     if (Array.isArray(maxValue)) {
-      scale = maxValue.map((max) => scaleLinear()
-        .domain([minValue, max])
+      scale = maxValue.map((max, index) => scaleLinear()
+        .domain([minValue?.[index] ?? minValue?.[0] ?? minValue, max])
+        .range([startAngle, endAngle]));
+    } else if (Array.isArray(minValue)) {
+      scale = minValue.map((min, index) => scaleLinear()
+        .domain([min, maxValue?.[index] ?? maxValue?.[0] ?? maxValue])
         .range([startAngle, endAngle]));
     } else {
       scale = scaleLinear()
