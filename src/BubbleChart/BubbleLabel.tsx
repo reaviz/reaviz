@@ -103,7 +103,6 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
 
 BubbleLabel.defaultProps = {
   wrap: true,
-  fill: '#000',
   fontSize: 14,
   fontFamily: 'sans-serif'
 };
