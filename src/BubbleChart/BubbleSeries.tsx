@@ -78,14 +78,14 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
       >
         <CloneElement<BubbleProps>
           element={bubble}
-          id={`${id}-${index}-bubble`}
+          id={`${id}-${item.data.key}-bubble`}
           animated={animated}
           data={item}
           fill={fill}
         />
         <CloneElement<BubbleLabelProps>
           element={label}
-          id={`${id}-${index}-label`}
+          id={`${id}-${item.data.key}-label`}
           animated={animated}
           data={item}
           fill={textFill}
