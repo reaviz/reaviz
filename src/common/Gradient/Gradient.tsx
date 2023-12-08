@@ -6,7 +6,7 @@ export interface GradientProps {
   id: string;
   stops: ReactElement<GradientStopProps, typeof GradientStop>[];
   color?: string;
-  direction: 'vertical' | 'horizontal';
+  direction: 'vertical' | 'horizontal' | 'radial';
 }
 
 export const Gradient: FC<Partial<GradientProps>> = ({
@@ -15,6 +15,20 @@ export const Gradient: FC<Partial<GradientProps>> = ({
   direction,
   stops
 }) => {
+  if (direction === 'radial') {
+    return (
+      <radialGradient id={id}>
+        {stops.map((stop, index) => (
+          <CloneElement<GradientStopProps>
+            element={stop}
+            key={`gradient-${index}`}
+            color={stop.props.color || color}
+          />
+        ))}
+      </radialGradient>
+    );
+  }
+
   const pos =
     direction === 'vertical'
       ? {
