@@ -1,4 +1,7 @@
-# 14.15.3 - 12/6/23
+# 14.15.4 - 12/8/23
+- [fix] Fix bubble chart styling props
+  
+# 14.15.3 - 12/8/23
 - [feature] Add radial gradients #173
   
 # 14.15.2 - 12/6/23
