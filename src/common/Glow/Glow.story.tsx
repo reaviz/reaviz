@@ -1,5 +1,3 @@
-import React from 'react';
-import { Glow } from './Glow';
 import { ScatterPlot, ScatterPoint, ScatterSeries } from '../../ScatterPlot';
 import { categoryData, largeSignalChartData } from '../../../demo';
 import { Bar, BarChart, BarSeries } from '../../BarChart';
@@ -7,8 +5,7 @@ import { Bubble, BubbleChart, BubbleSeries } from '../../BubbleChart';
 import { ChartShallowDataShape } from '../data';
 
 export default {
-  title: 'Utils/Glow',
-  component: Glow
+  title: 'Utils/Glow'
 };
 
 export const ScatterGlow = () => (
@@ -20,9 +17,9 @@ export const ScatterGlow = () => (
       <ScatterSeries
         point={
           <ScatterPoint
-            glow={<Glow color="#5D25EE" />}
+            glow={{ color: '#5D25EE' }}
             color="rgba(172, 115, 255, .8)"
-            size={v => v.metadata.severity + 5}
+            size={(v) => v.metadata.severity + 5}
           />
         }
       />
@@ -39,7 +36,7 @@ export const BarGlow = () => (
       <BarSeries
         colorScheme="#5D25EE"
         padding={0.1}
-        bar={<Bar width={10} glow={<Glow blur={10} color="#5D25EE" />} />}
+        bar={<Bar width={10} glow={{ color: '#5D25EE', blur: 10 }} />}
       />
     }
   />
@@ -60,7 +57,7 @@ export const BubbleGlow = () => (
     series={
       <BubbleSeries
         colorScheme="#5D25EE"
-        bubble={<Bubble glow={<Glow blur={10} color="#5D25EE" />} />}
+        bubble={<Bubble glow={{ color: '#5D25EE', blur: 10 }} />}
       />
     }
   />
