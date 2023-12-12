@@ -18,7 +18,6 @@ import invert from 'invert-color';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 import { identifier } from 'safe-identifier';
 
-
 export interface VennSeriesProps {
   /**
    * Id set by the parent.
@@ -121,12 +120,19 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         actives.includes(key) ||
         (actives.length > 0 ? null : false);
 
-      // Get the colors for the stroke
-      const stroke =
-        typeof arc.props.stroke === 'function'
-          ? // @ts-ignore
-          arc.props.stroke(data, index, isActive, isHovered)
-          : arc.props.stroke;
+      const getStrokeColor = () => {
+        if (typeof arc.props.stroke === 'function') {
+          return arc.props.stroke(data, index, isActive, isHovered);
+        }
+        if (arc.props.stroke !== undefined) {
+          return arc.props.stroke;
+        }
+
+        // fallback to fill (determined by colorScheme) if stroke is undefined
+        return fill;
+      };
+
+      const stroke = getStrokeColor();
 
       const arcStroke =
         stroke ||

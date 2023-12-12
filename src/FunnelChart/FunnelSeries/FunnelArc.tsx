@@ -144,7 +144,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
     >
       <g
         pointerEvents={tooltip ? 'none' : 'auto'}
-        style={generateGlowStyles(glow)}
+        style={generateGlowStyles({ glow })}
       >
         <motion.path
           d={areaGenerator(internalData as any[])}

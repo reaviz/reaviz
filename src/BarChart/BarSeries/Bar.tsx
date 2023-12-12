@@ -564,7 +564,7 @@ export const Bar: FC<Partial<BarProps>> = ({
         <g ref={rect}>
           <motion.rect
             className={classNames(extras.className)}
-            style={{ ...extras.style, ...generateGlowStyles(glow), cursor }}
+            style={{ ...extras.style, ...generateGlowStyles({ glow }), cursor }}
             mask={maskPath}
             rx={rx}
             ry={ry}
