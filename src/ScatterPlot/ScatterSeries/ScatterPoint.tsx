@@ -5,8 +5,7 @@ import React, {
   useState,
   FC,
   useRef,
-  useMemo,
-  useCallback
+  useMemo
 } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
@@ -21,7 +20,8 @@ import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes, getColor, ColorSchemeType } from '../../common/color';
 import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
-import { Glow, GlowProps } from '../../common/Glow';
+import { Glow } from '../../common/Glow';
+import { generateGlowStyles } from '../../common/Glow/utils';
 
 export type ScatterPointProps = {
   /**
@@ -85,9 +85,9 @@ export type ScatterPointProps = {
   id: string;
 
   /**
-   * Glow element for the point.
+   * Glow styling for the point.
    */
-  glow?: ReactElement<GlowProps, typeof Glow> | null;
+  glow?: Glow;
 
   /**
    * Symbol element to render.
@@ -153,13 +153,13 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: index! * 0.005
-        }
+            ...DEFAULT_TRANSITION,
+            delay: index! * 0.005
+          }
         : {
-          type: false,
-          delay: 0
-        },
+            type: false,
+            delay: 0
+          },
     [index, animated]
   );
 
@@ -174,7 +174,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
       x: xScale(data!.x),
       y: cy
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, yScale]);
 
   const exitProps = useMemo(() => {
@@ -183,7 +183,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
       y: yScale(yStartDomain),
       x: xScale(data!.x)
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, yScale]);
 
   const fill = useMemo(
@@ -197,9 +197,6 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   );
 
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
-  const glowStyles = glow ? {
-    filter: `drop-shadow(${glow.props.x}px ${glow.props.y}px ${glow.props.blur}px ${glow.props.color})`
-  } : {};
 
   return (
     <Fragment>
@@ -247,7 +244,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
             className={extras.className}
             style={{
               ...extras.style,
-              ...glowStyles,
+              ...generateGlowStyles(glow),
               cursor
             }}
             fill={fill}

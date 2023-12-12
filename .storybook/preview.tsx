@@ -1,5 +1,6 @@
 import theme from './theme';
 import { Preview } from '@storybook/react';
+import formatCode from './utils/formatCode';
 
 const preview: Preview = {
   parameters: {
@@ -7,6 +8,9 @@ const preview: Preview = {
     controls: { hideNoControlsWarning: true },
     actions: { argTypesRegex: '^on.*' },
     docs: {
+      source: {
+        transform: (src) => formatCode(src)
+      },
       theme
     },
     options: {

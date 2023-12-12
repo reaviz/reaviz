@@ -7,7 +7,8 @@ import { Gradient, GradientProps } from '../common/Gradient';
 import { Mask, MaskProps } from '../common/Mask';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
-import { Glow, GlowProps } from '../common/Glow';
+import { Glow } from '../common/Glow';
+import { generateGlowStyles } from '../common/Glow/utils';
 
 export interface BubbleProps {
   /**
@@ -36,32 +37,32 @@ export interface BubbleProps {
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 
   /**
-   * Mask element for the arc.
+   * Mask element for the bubble.
    */
   mask: ReactElement<MaskProps, typeof Mask> | null;
 
   /**
-   * Glow element for the point.
+   * Glow styling for the bubble.
    */
-  glow?: ReactElement<GlowProps, typeof Glow> | null;
+  glow?: Glow;
 
   /**
-   * Gradient shades for the arc.
+   * Gradient shades for the bubble.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
-   * Event for when the arc is clicked.
+   * Event for when the bubble is clicked.
    */
   onClick?: (event) => void;
 
   /**
-   * Event for when the arc has mouse enter.
+   * Event for when the mouse enters bubble.
    */
   onMouseEnter?: (event) => void;
 
   /**
-   * Event for when the arc has mouse leave.
+   * Event for when the mouse leaves the bubble.
    */
   onMouseLeave?: (event) => void;
 }
@@ -98,12 +99,8 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
     gradient && !mask
       ? `url(#gradient-${id})`
       : mask
-        ? `url(#mask-pattern-${id})`
-        : fill;
-
-  const glowStyles = glow ? {
-    filter: `drop-shadow(${glow.props.x}px ${glow.props.y}px ${glow.props.blur}px ${glow.props.color})`
-  } : {};
+      ? `url(#mask-pattern-${id})`
+      : fill;
 
   return (
     <Fragment>
@@ -111,7 +108,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         id={`${id}-bubble`}
         ref={bubbleRef}
         fill={arcFill}
-        style={{ ...glowStyles }}
+        style={generateGlowStyles(glow)}
         initial={{
           r: data.r,
           cx: data.x,

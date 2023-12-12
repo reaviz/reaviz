@@ -1,0 +1,43 @@
+import { Meta, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import * as GlowStories from '../../src/common/Glow/Glow.story.tsx'
+
+<Meta title="Docs/Utils/Glow" />
+
+# Glow
+
+---
+
+Add a glow to various charts. This is passed as a prop at the level of the component rendered within the series.
+For example, if you want to add a glow to a bar chart, you would add the glow prop to the `Bar` component.
+
+## Usage
+
+<Canvas of={GlowStories.BarGlow} /> 
+<Canvas of={GlowStories.ScatterGlow} />
+<Canvas of={GlowStories.BubbleGlow} />
+
+## API
+
+```ts
+interface Glow {
+  /**
+   * The color of the glow.
+   */
+  color?: string;
+
+  /**
+   * The x offset of the glow.
+   */
+  x?: number;
+
+  /**
+   * The y offset of the glow.
+   */
+  y?: number;
+
+  /**
+   * The blur radius of the glow.
+   */
+  blur?: number;
+}
+```

@@ -6,7 +6,14 @@ import { ColorSchemeType, getColor, schemes } from '../../common/color';
 import { Gradient, GradientProps, GradientStop } from '../../common/Gradient';
 import { CloneElement } from 'rdk';
 import { motion } from 'framer-motion';
-import { ChartTooltip, TooltipArea, TooltipAreaProps, TooltipTemplate } from '../../common/Tooltip';
+import {
+  ChartTooltip,
+  TooltipArea,
+  TooltipAreaProps,
+  TooltipTemplate
+} from '../../common/Tooltip';
+import { Glow } from '../../common';
+import { generateGlowStyles } from '../../common/Glow/utils';
 
 export interface FunnelArcProps {
   /**
@@ -60,6 +67,11 @@ export interface FunnelArcProps {
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
+   * Glow styling for the arc.
+   */
+  glow?: Glow;
+
+  /**
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
@@ -76,7 +88,8 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   interpolation,
   colorScheme,
   gradient,
-  tooltip,
+  glow,
+  tooltip
 }) => {
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
@@ -129,7 +142,10 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
         />
       }
     >
-      <g pointerEvents={tooltip ? "none" : "auto"}>
+      <g
+        pointerEvents={tooltip ? 'none' : 'auto'}
+        style={generateGlowStyles(glow)}
+      >
         <motion.path
           d={areaGenerator(internalData as any[])}
           fill={fillTop}
@@ -177,7 +193,7 @@ FunnelArc.defaultProps = {
       direction="horizontal"
       stops={[
         <GradientStop offset="0%" stopOpacity={1} key="stop" />,
-        <GradientStop offset="80%" stopOpacity={0.5} key="start" />,
+        <GradientStop offset="80%" stopOpacity={0.5} key="start" />
       ]}
     />
   ),
