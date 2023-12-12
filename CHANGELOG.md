@@ -1,3 +1,6 @@
+# 15.1.0 - 12/12/23
+- [feature] Add venn diagram glow #176
+
 # 15.0.0 - 12/12/23
 - [BREAKING] Add funnel chart glow #175
 
