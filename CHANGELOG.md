@@ -1,3 +1,6 @@
+# 15.1.1 - 12/12/23
+- [fix] Fix venn diagram label fill #177
+
 # 15.1.0 - 12/12/23
 - [feature] Add venn diagram glow #176
 
