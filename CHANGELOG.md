@@ -1,5 +1,10 @@
+# 15.0.0 - 12/12/23
+- [BREAKING] Add funnel chart glow #175
+
+To migrate to 15.x you will need to replace all usage of the `Glow` component with the `Glow` interface. See the updated API documentation in storybook for more details.
+
 # 14.15.4 - 12/8/23
-- [fix] Fix bubble chart styling props
+- [fix] Fix bubble chart styling props #174
   
 # 14.15.3 - 12/8/23
 - [feature] Add radial gradients #173
