@@ -108,7 +108,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         id={`${id}-bubble`}
         ref={bubbleRef}
         fill={arcFill}
-        style={generateGlowStyles(glow)}
+        style={generateGlowStyles({ glow })}
         initial={{
           r: data.r,
           cx: data.x,

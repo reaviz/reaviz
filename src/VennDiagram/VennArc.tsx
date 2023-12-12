@@ -7,6 +7,8 @@ import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '../common/Mask';
 import { Gradient, GradientProps } from '../common/Gradient';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
+import { Glow } from '../common';
+import { generateGlowStyles } from '../common/Glow/utils';
 
 export interface VennArcProps {
   /**
@@ -35,7 +37,7 @@ export interface VennArcProps {
   stroke?:
     | string
     | ((
-        data: IVennLayout<any>,
+        data: IVennLayout<any>[],
         index: number,
         isActive: boolean | null,
         isHovered: boolean | null
@@ -92,6 +94,11 @@ export interface VennArcProps {
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
+   * Glow styling for the arc.
+   */
+  glow: Glow;
+
+  /**
    * Event for when the arc is clicked.
    */
   onClick: (event) => void;
@@ -122,6 +129,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   initialStyle,
   strokeWidth,
   gradient,
+  glow,
   tooltip,
   onClick,
   onMouseEnter,
@@ -133,15 +141,15 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   const currentStyle = active
     ? activeStyle
     : active === null
-      ? inactiveStyle
-      : initialStyle;
+    ? inactiveStyle
+    : initialStyle;
 
   const arcFill =
     gradient && !mask
       ? `url(#gradient-${id})`
       : mask
-        ? `url(#mask-pattern-${id})`
-        : fill;
+      ? `url(#mask-pattern-${id})`
+      : fill;
 
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {
@@ -188,7 +196,13 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         d={d}
         initial={initialStyle}
         animate={currentStyle}
-        style={style}
+        style={{
+          ...style,
+          ...generateGlowStyles({
+            glow,
+            colorSchemeColor: typeof stroke === 'string' ? stroke : null
+          })
+        }}
       />
       {mask && (
         <Fragment>

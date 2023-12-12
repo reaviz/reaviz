@@ -244,7 +244,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
             className={extras.className}
             style={{
               ...extras.style,
-              ...generateGlowStyles(glow),
+              ...generateGlowStyles({ glow }),
               cursor
             }}
             fill={fill}
