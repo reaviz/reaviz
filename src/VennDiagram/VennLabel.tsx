@@ -126,7 +126,6 @@ VennLabel.defaultProps = {
   showAll: false,
   wrap: true,
   animated: true,
-  fill: '#000',
   fontSize: 11,
   fontFamily: 'sans-serif'
 };
