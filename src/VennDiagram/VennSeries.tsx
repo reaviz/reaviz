@@ -165,6 +165,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
               active={isActive}
               animated={animated}
               fill={textFill}
+              {...label.props}
             />
           )}
           {d.set && outerLabel && (
