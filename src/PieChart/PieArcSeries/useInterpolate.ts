@@ -4,8 +4,6 @@ import { useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 
 export const useInterpolate = ({ data, animated, arc }) => {
-  const prevEnter = useRef<any | null>(null);
-
   const exit = useMemo(() => {
     const startAngle = data.startAngle;
     const endAngle = animated ? startAngle : data.endAngle;
@@ -27,29 +25,23 @@ export const useInterpolate = ({ data, animated, arc }) => {
     [animated]
   );
 
-  // Cache the previous for transition use later
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const previousEnter = prevEnter.current
-    ? { ...prevEnter.current }
-    : undefined;
-
-  prevEnter.current = { ...data };
-
-  const d = useMotionValue('');
-  const prevPath = useMotionValue(exit);
-  const spring = useSpring(prevPath, {
+  const d = useMotionValue(exit);
+  const spring = useSpring(0, {
     ...DEFAULT_TRANSITION,
     from: 0,
     to: 1
   });
 
   useEffect(() => {
-    const from = previousEnter || prevPath.get();
-    const interpolator = interpolate(from, data);
-    const unsub = spring.onChange((v) => d.set(arc(interpolator(v))));
-    prevPath.set(data);
-    return unsub;
-  }, [arc, d, data, prevPath, previousEnter, spring]);
+    spring.set(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const interpolator = interpolate(d.get(), data);
+    spring.set(1);
+    return spring.onChange(v => d.set(arc(interpolator(v))));
+  }, [arc, d, data, spring]);
 
   return {
     d,

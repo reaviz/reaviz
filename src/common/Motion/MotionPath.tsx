@@ -17,15 +17,9 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
   }, []);
 
   useEffect(() => {
-    let interpolator = interpolate(d.get(), custom.enter.d);
-
+    const interpolator = interpolate(d.get(), custom.enter.d);
     spring.set(1);
-
-    const unsub = spring.onChange((v) => {
-      d.set(interpolator(v));
-    });
-
-    return unsub;
+    return spring.onChange(v => d.set(interpolator(v)));
   }, [custom.enter.d, custom.exit.d, d, spring]);
 
   const { d: enterD, ...enterRest } = custom.enter;
