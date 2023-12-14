@@ -18,7 +18,7 @@ export default {
 
 export const Simple = () => (
   <LineChart
-    width={250}
+    width={350}
     height={250}
     data={singleDateData}
     series={
