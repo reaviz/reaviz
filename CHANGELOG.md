@@ -1,3 +1,9 @@
+# 15.2.0 - 12/14/23
+- [chore] upgrade framer-motion to latest
+- [fix] fix pie chart initial animation
+- [fix] fix radial bar chart delay
+- [fix] fix animation jumping issue
+
 # 15.1.1 - 12/12/23
 - [fix] Fix venn diagram label fill #177
 
