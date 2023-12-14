@@ -83,7 +83,7 @@ export interface RadialBarProps {
   /**
    * CSS classes to apply.
    */
-  className?: any;
+  className?: string;
 
   /**
    * Whether the bar is curved or not.
@@ -142,12 +142,10 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   const currentColorShade = active ? chroma(fill).brighten(0.5) : fill;
 
   const transition = useMemo(() => {
-    // const { animated, barCount, index } = this.props;
-
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: (index / barCount) * 0.5
+        delay: (index / barCount) * 0.9
       };
     } else {
       return {
@@ -186,13 +184,15 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
 
         return arcFn(data as any);
       } else {
-
         const isMultiSeries = groupIndex !== undefined;
         const xScaleDomain = xScale.domain();
         const xScaleRange = xScale.range();
         const isFullCircle = Math.abs(xScaleRange[1] - xScaleRange[0]) >= 2 * Math.PI;
 
-        let xScaleBandwidth, rotateMid, startAngle, endAngle;
+        let xScaleBandwidth;
+        let rotateMid;
+        let startAngle;
+        let endAngle;
         if (isFullCircle) {
           xScaleBandwidth = xScale.bandwidth();
 
@@ -217,14 +217,13 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
             // Other groups are center aligned with the label axis
             startAngle = xScale(data.x) - (Math.PI * 0.5) - rotateMid;
             endAngle = startAngle + xScaleBandwidth;
-          }          
+          }
         }
 
         const innerAngleDistance = endAngle - startAngle;
         const arcLength = innerRadius * innerAngleDistance;
         const outerAngleDistance = arcLength / outerRadius;
         const halfAngleDistanceDelta = (innerAngleDistance - outerAngleDistance) / 2;
-
 
         const innerDiff = innerAngleDistance/innerBarCount;
         const innerStart = isMultiSeries ? startAngle + (groupIndex * innerDiff) : startAngle;
@@ -290,19 +289,19 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
             fill={fill}
             className={className}
             onMouseEnter={(event) =>
-              onMouseEnter({
+              onMouseEnter?.({
                 value: data,
                 nativeEvent: event
               })
             }
             onMouseLeave={(event) =>
-              onMouseLeave({
+              onMouseLeave?.({
                 value: data,
                 nativeEvent: event
               })
             }
             onClick={(event) =>
-              onClick({
+              onClick?.({
                 value: data,
                 nativeEvent: event
               })
