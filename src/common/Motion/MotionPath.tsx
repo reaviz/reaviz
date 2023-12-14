@@ -1,25 +1,18 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from './config';
 
 export const MotionPath = ({ custom, transition, ...rest }) => {
   const d = useMotionValue(custom.exit.d);
-  const spring = useSpring(0, {
-    ...DEFAULT_TRANSITION,
-    from: 0,
-    to: 1
-  });
-
-  useEffect(() => {
-    spring.set(1);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const spring = useSpring(0, { ...DEFAULT_TRANSITION });
 
   useEffect(() => {
     const interpolator = interpolate(d.get(), custom.enter.d);
-    spring.set(1);
-    return spring.onChange(v => d.set(interpolator(v)));
+    const prevSpring = spring.get();
+    spring.set(prevSpring + 1);
+
+    return spring.onChange((v) => d.set(interpolator(v - prevSpring)));
   }, [custom.enter.d, custom.exit.d, d, spring]);
 
   const { d: enterD, ...enterRest } = custom.enter;

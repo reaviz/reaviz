@@ -7,22 +7,20 @@ export const useInterpolate = ({ data, animated }) => {
   const transition = animated
     ? { ...DEFAULT_TRANSITION }
     : {
-      delay: 0,
-      type: false
-    };
+        delay: 0,
+        type: false
+      };
 
   const d = useMotionValue(data.path);
-  const prevPath = useMotionValue(data.path);
-  const spring = useSpring(prevPath, {
-    from: 0,
-    to: 1
-  });
+  const spring = useSpring(0, { stiffness: 300, damping: 30 });
 
   useEffect(() => {
-    const interpolator = interpolate(prevPath.get(), data.path);
-    spring.onChange((v) => d.set(interpolator(v)));
-    prevPath.set(data.path);
-  });
+    const interpolator = interpolate(d.get(), data.path);
+    const prevSpring = spring.get();
+    spring.set(1 + prevSpring);
+
+    return spring.onChange((v) => d.set(interpolator(v - prevSpring)));
+  }, [d, data.path, spring]);
 
   return { transition, d };
 };

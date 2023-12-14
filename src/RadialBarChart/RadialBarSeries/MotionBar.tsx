@@ -8,26 +8,26 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   const currentYRef = useRef(custom.exit.y);
   const spring = useSpring(0, {
     ...DEFAULT_TRANSITION,
-    delay: transition.delay,
-    from: 0,
-    to: 1
+    delay: transition.delay
   });
 
   useEffect(() => {
-    spring.set(1);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
     const interpolator = interpolate(currentYRef.current, custom.enter.y);
+    const prevSpring = spring.get();
 
-    spring.set(1);
+    if (transition?.delay) {
+      setTimeout(() => {
+        spring.set(prevSpring + 1);
+      }, transition.delay * 1000);
+    } else {
+      spring.set(prevSpring + 1);
+    }
 
     return spring.onChange((v) => {
-      currentYRef.current = interpolator(v);
+      currentYRef.current = interpolator(v - prevSpring);
       d.set(arc({ ...custom.enter, y: currentYRef.current }));
     });
-  }, [arc, custom.enter, d, spring]);
+  }, [arc, custom.enter, d, spring, transition.delay]);
 
   const { d: enterD, ...enterRest } = custom.enter;
   const { d: exitD, ...exitRest } = custom.exit;
