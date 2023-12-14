@@ -6,10 +6,7 @@ import { DEFAULT_TRANSITION } from '../../common/Motion';
 export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   const d = useMotionValue('');
   const currentYRef = useRef(custom.exit.y);
-  const spring = useSpring(0, {
-    ...DEFAULT_TRANSITION,
-    delay: transition.delay
-  });
+  const spring = useSpring(0, DEFAULT_TRANSITION);
 
   useEffect(() => {
     const interpolator = interpolate(currentYRef.current, custom.enter.y);

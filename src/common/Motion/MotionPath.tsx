@@ -5,7 +5,7 @@ import { DEFAULT_TRANSITION } from './config';
 
 export const MotionPath = ({ custom, transition, ...rest }) => {
   const d = useMotionValue(custom.exit.d);
-  const spring = useSpring(0, { ...DEFAULT_TRANSITION });
+  const spring = useSpring(0, DEFAULT_TRANSITION);
 
   useEffect(() => {
     const interpolator = interpolate(d.get(), custom.enter.d);
