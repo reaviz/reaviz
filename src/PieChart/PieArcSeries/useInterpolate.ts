@@ -4,8 +4,6 @@ import { useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
 
 export const useInterpolate = ({ data, animated, arc }) => {
-  const prevEnter = useRef<any | null>(null);
-
   const exit = useMemo(() => {
     const startAngle = data.startAngle;
     const endAngle = animated ? startAngle : data.endAngle;
@@ -17,42 +15,36 @@ export const useInterpolate = ({ data, animated, arc }) => {
     };
   }, [data, animated]);
 
-  const transition = useMemo(
-    () =>
-      animated
-        ? { ...DEFAULT_TRANSITION }
-        : {
-          delay: 0
-        },
-    [animated]
-  );
+  const prevData = useRef(exit);
+  const d = useMotionValue(exit);
+  const spring = useSpring(0, DEFAULT_TRANSITION);
 
-  // Cache the previous for transition use later
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const previousEnter = prevEnter.current
-    ? { ...prevEnter.current }
-    : undefined;
+  // delay the initial animation by 100ms
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      spring.set(1);
+    }, 100);
 
-  prevEnter.current = { ...data };
-
-  const d = useMotionValue('');
-  const prevPath = useMotionValue(exit);
-  const spring = useSpring(prevPath, {
-    ...DEFAULT_TRANSITION,
-    from: 0,
-    to: 1
-  });
+    return () => clearTimeout(timeoutId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
-    const from = previousEnter || prevPath.get();
-    const interpolator = interpolate(from, data);
-    const unsub = spring.onChange((v) => d.set(arc(interpolator(v))));
-    prevPath.set(data);
-    return unsub;
-  }, [arc, d, data, prevPath, previousEnter, spring]);
+    const interpolator = interpolate(prevData.current, data);
+    const prevSpring = spring.get();
 
-  return {
-    d,
-    transition
-  };
+    // only increment spring here if it's for an update, not the initial render
+    if (spring.get() >= 1) {
+      spring.set(prevSpring + 1);
+    }
+
+    return spring.onChange((v) => {
+      const newData = interpolator(v - prevSpring);
+      prevData.current = newData;
+
+      d.set(arc(newData));
+    });
+  }, [arc, d, data, exit, spring]);
+
+  return d;
 };

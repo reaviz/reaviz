@@ -94,7 +94,7 @@ export const PieArc: FC<PieArcProps> = ({
   tooltip
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
-  const { transition, d } = useInterpolate({ animated, arc, data });
+  const d = useInterpolate({ animated, arc, data });
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(
     () => (active ? chroma(color).brighten(0.5) : color),
@@ -137,7 +137,6 @@ export const PieArc: FC<PieArcProps> = ({
     <g ref={arcRef}>
       <motion.path
         role="graphics-symbol"
-        transition={transition}
         d={d}
         style={{ cursor }}
         fill={internalFill}
