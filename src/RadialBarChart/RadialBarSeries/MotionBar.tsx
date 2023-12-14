@@ -14,19 +14,27 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   useEffect(() => {
     const interpolator = interpolate(currentYRef.current, custom.enter.y);
     const prevSpring = spring.get();
+    let timeoutId;
 
     if (transition?.delay) {
-      setTimeout(() => {
+      timeoutId = setTimeout(() => {
         spring.set(prevSpring + 1);
       }, transition.delay * 1000);
     } else {
       spring.set(prevSpring + 1);
     }
 
-    return spring.onChange((v) => {
+    const unsubscribe = spring.onChange((v) => {
       currentYRef.current = interpolator(v - prevSpring);
       d.set(arc({ ...custom.enter, y: currentYRef.current }));
     });
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      unsubscribe();
+    };
   }, [arc, custom.enter, d, spring, transition.delay]);
 
   const { d: enterD, ...enterRest } = custom.enter;

@@ -21,9 +21,11 @@ export const useInterpolate = ({ data, animated, arc }) => {
 
   // delay the initial animation by 100ms
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       spring.set(1);
     }, 100);
+
+    return () => clearTimeout(timeoutId);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
