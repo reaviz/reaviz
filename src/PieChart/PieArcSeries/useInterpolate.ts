@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo } from 'react';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
@@ -18,7 +18,9 @@ export const useInterpolate = ({ data, animated, arc }) => {
   const transition = useMemo(
     () =>
       animated
-        ? { ...DEFAULT_TRANSITION }
+        ? {
+          ...DEFAULT_TRANSITION
+        }
         : {
           delay: 0
         },
@@ -28,6 +30,8 @@ export const useInterpolate = ({ data, animated, arc }) => {
   const d = useMotionValue(exit);
   const spring = useSpring(0, {
     ...DEFAULT_TRANSITION,
+    // Small timeout for initial animation
+    delay: 100,
     from: 0,
     to: 1
   });
