@@ -8,6 +8,7 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   const currentYRef = useRef(custom.exit.y);
   const spring = useSpring(0, {
     ...DEFAULT_TRANSITION,
+    delay: transition.delay,
     from: 0,
     to: 1
   });
@@ -22,12 +23,10 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
 
     spring.set(1);
 
-    const unsub = spring.onChange((v) => {
+    return spring.onChange((v) => {
       currentYRef.current = interpolator(v);
       d.set(arc({ ...custom.enter, y: currentYRef.current }));
     });
-
-    return unsub;
   }, [arc, custom.enter, d, spring]);
 
   const { d: enterD, ...enterRest } = custom.enter;
