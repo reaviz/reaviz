@@ -1,3 +1,6 @@
+# 15.2.1 - 12/15/23
+- [chore] upgrade reablocks and rdk
+
 # 15.2.0 - 12/14/23
 - [chore] upgrade framer-motion to latest
 - [fix] fix pie chart initial animation
