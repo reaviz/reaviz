@@ -6,6 +6,16 @@ import { extent } from 'd3-array';
 import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor } from '../../common/color';
 import { ChartInternalNestedDataShape } from '../../common/data';
+import { Glow } from '../../common';
+import { generateGlowStyles } from '../../common/Glow/utils';
+
+export type HeatmapColorSchemeItem = {
+  fill: string;
+  stroke?: string;
+  glow?: Glow;
+};
+
+export type HeatmapColorScheme = HeatmapColorSchemeItem[];
 
 export interface HeatmapSeriesProps {
   /**
@@ -36,7 +46,7 @@ export interface HeatmapSeriesProps {
   /**
    * Color scheme for the chart.
    */
-  colorScheme: ColorSchemeType;
+  colorScheme: ColorSchemeType | HeatmapColorScheme;
 
   /**
    * Color for the empty cell of the chart.
@@ -54,7 +64,7 @@ export interface HeatmapSeriesProps {
   cell: ReactElement<HeatmapCellProps, typeof HeatmapCell>;
 }
 
-const getValueScale = (data, colorScheme, emptyColor) => {
+const getValueScale = (data, colorScheme: ColorSchemeType, emptyColor) => {
   const valueDomain = extent(
     uniqueBy(
       data,
@@ -78,6 +88,61 @@ const getValueScale = (data, colorScheme, emptyColor) => {
   };
 };
 
+const buildColorSchemeFromHeatmapScheme = (
+  colorScheme: ColorSchemeType | HeatmapColorScheme,
+  colorSchemeProperty: keyof HeatmapColorSchemeItem
+): ColorSchemeType => {
+  if (!Array.isArray(colorScheme)) {
+    return colorScheme;
+  }
+
+  const newColorScheme = colorScheme.map(
+    (schemeItem: string | HeatmapColorSchemeItem) => {
+      if (colorSchemeProperty === 'glow') {
+        return generateGlowStyles({ glow: schemeItem?.[colorSchemeProperty] })
+          ?.filter;
+      } else if (typeof schemeItem === 'object') {
+        return schemeItem?.[colorSchemeProperty] || schemeItem?.fill; // use fill if no stroke in the color scheme
+      }
+
+      return schemeItem;
+    }
+  );
+
+  return newColorScheme;
+};
+
+const getHeatmapValueScales = (
+  data,
+  colorScheme: ColorSchemeType | HeatmapColorScheme,
+  emptyColor: string
+) => {
+  const getColorSchemeForProperty = (
+    colorSchemeProperty: keyof HeatmapColorSchemeItem
+  ) =>
+    Array.isArray(colorScheme)
+      ? buildColorSchemeFromHeatmapScheme(colorScheme, colorSchemeProperty)
+      : colorScheme;
+
+  return {
+    fillValueScale: getValueScale(
+      data,
+      getColorSchemeForProperty('fill'),
+      emptyColor
+    ),
+    strokeValueScale: getValueScale(
+      data,
+      getColorSchemeForProperty('stroke'),
+      emptyColor
+    ),
+    glowValueScale: getValueScale(
+      data,
+      getColorSchemeForProperty('glow'),
+      emptyColor
+    )
+  };
+};
+
 export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   animated,
   emptyColor,
@@ -88,7 +153,9 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   data,
   id
 }) => {
-  const valueScale = getValueScale(data, colorScheme, emptyColor);
+  const { fillValueScale, strokeValueScale, glowValueScale } =
+    getHeatmapValueScales(data, colorScheme, emptyColor);
+
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
   const cellCount = [...yScale.domain(), ...xScale.domain()].length;
@@ -104,7 +171,9 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   }) => {
     const x = xScale(row.key);
     const y = yScale(cell.x);
-    const fill = valueScale(cell.value);
+    const fill = fillValueScale(cell.value);
+    const stroke = strokeValueScale(cell.value);
+    const glowFilter = glowValueScale(cell.value);
 
     return (
       <CloneElement<HeatmapCellProps>
@@ -116,6 +185,8 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
         x={x}
         y={y}
         fill={fill}
+        stroke={stroke}
+        filter={glowFilter}
         width={width}
         height={height}
         data={cell}
@@ -130,7 +201,6 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
           renderCell({
             height,
             width,
-            valueScale,
             cellCount,
             row,
             cell,

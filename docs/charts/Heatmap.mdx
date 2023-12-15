@@ -27,6 +27,8 @@ Types supported by reaviz:
 - Heatmap
 - Calendar Heatmap
 
+`HeatmapSeries` can take a color scheme that specifies the fill, stroke, and glow for different cells
+
 ## Quick Start
 To create a Heatmap, use import the `Heatmap` and give it `data`. The chart
 will automatically configure itself with the default options exposed via `props`.
@@ -78,6 +80,25 @@ const MyChart = () => (
     data={data}
   />
 );
+```
+
+## Color Schemes
+In addition to standard color schemes, `HeatmapSeries` also accepts a color scheme that specifies the fill, stroke, and glow for different cells.
+
+```jsx
+type HeatmapColorSchemeItem = {
+  fill: string;
+  stroke: string;
+  glow: string;
+};
+
+type HeatmapColorScheme = HeatmapColorSchemeItem[];
+
+colorScheme: HeatmapColorScheme = {
+  fill: '#FFFFFF',
+  stroke: '#FFFFFF',
+  glow: '#FFFFFF'
+}
 ```
 
 ## API

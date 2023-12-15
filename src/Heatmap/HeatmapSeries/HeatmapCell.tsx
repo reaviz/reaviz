@@ -68,6 +68,16 @@ export type HeatmapCellProps = {
   fill: string;
 
   /**
+   * Stroke color set by `HeatmapSeries`.
+   */
+  stroke: string;
+
+  /**
+   * CSS filter styling set by `HeatmapSeries`. Used for glow effect.
+   */
+  filter: string;
+
+  /**
    * Data object set by `Heatmap`.
    */
   data: ChartInternalShallowDataShape;
@@ -127,6 +137,8 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   cellIndex,
   cellCount,
   fill,
+  stroke,
+  filter,
   x,
   y,
   style,
@@ -185,7 +197,8 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
 
   const extras = constructFunctionProps({ style, className }, data);
   const isTransparent = fill === 'transparent';
-  const stroke = active && !isTransparent ? chroma(fill).brighten(1) : fill;
+  const appliedStroke =
+    active && !isTransparent ? chroma(stroke).brighten(1) : stroke;
 
   return (
     <Fragment>
@@ -193,12 +206,12 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
         <motion.rect
           {...rest}
           fill={fill}
-          stroke={stroke}
+          stroke={appliedStroke}
           x={x}
           y={y}
           rx={rx}
           ry={ry}
-          style={{ ...extras.style, cursor }}
+          style={{ ...extras.style, cursor, filter }}
           className={classNames(css.cell, extras.className)}
           initial={{
             opacity: 0
