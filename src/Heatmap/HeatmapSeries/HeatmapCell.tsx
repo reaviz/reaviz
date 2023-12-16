@@ -198,7 +198,9 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   const extras = constructFunctionProps({ style, className }, data);
   const isTransparent = fill === 'transparent';
   const appliedStroke =
-    active && !isTransparent ? chroma(stroke).brighten(1) : stroke;
+    active && !isTransparent
+      ? chroma(stroke || fill).brighten(1)
+      : stroke || fill;
 
   return (
     <Fragment>
@@ -211,7 +213,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
           y={y}
           rx={rx}
           ry={ry}
-          style={{ ...extras.style, cursor, filter }}
+          style={{ ...extras.style, cursor }}
           className={classNames(css.cell, extras.className)}
           initial={{
             opacity: 0
