@@ -85,7 +85,10 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   }) => {
     const x = xScale(row.key);
     const y = yScale(cell.x);
-    const colorSchemeStyles = getColorSchemeStyles(cell.value, valueScales);
+    const { fill, stroke, filter } = getColorSchemeStyles(
+      cell.value,
+      valueScales
+    );
 
     return (
       <CloneElement<HeatmapCellProps>
@@ -96,12 +99,12 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
         cellCount={cellCount}
         x={x}
         y={y}
-        fill={colorSchemeStyles?.fill}
-        stroke={colorSchemeStyles?.stroke}
+        fill={fill}
+        stroke={stroke}
         width={width}
         height={height}
         data={cell}
-        style={{ ...colorSchemeStyles }}
+        style={{ filter }}
       />
     );
   };

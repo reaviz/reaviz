@@ -73,11 +73,6 @@ export type HeatmapCellProps = {
   stroke: string;
 
   /**
-   * CSS filter styling set by `HeatmapSeries`. Used for glow effect.
-   */
-  filter: string;
-
-  /**
    * Data object set by `Heatmap`.
    */
   data: ChartInternalShallowDataShape;
@@ -138,7 +133,6 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   cellCount,
   fill,
   stroke,
-  filter,
   x,
   y,
   style,
