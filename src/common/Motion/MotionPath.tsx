@@ -12,7 +12,7 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
     const prevSpring = spring.get();
     spring.set(prevSpring + 1);
 
-    return spring.onChange((v) => d.set(interpolator(v - prevSpring)));
+    return spring.on('change', (v) => d.set(interpolator(v - prevSpring)));
   }, [custom.enter.d, custom.exit.d, d, spring]);
 
   const { d: enterD, ...enterRest } = custom.enter;
