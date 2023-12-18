@@ -5,9 +5,10 @@ import { uniqueBy } from '../utils';
 
 export type ColorSchemeType =
   | ((data, index: number, active?: any[]) => string)
-  | Partial<CSSStyleDeclaration>[]
   | string[]
   | string;
+
+export type ColorSchemeStyleArray = Partial<CSSStyleDeclaration>[];
 
 type ColorHelperProps = {
   colorScheme: ColorSchemeType;
@@ -23,6 +24,12 @@ type ColorHelperProps = {
 };
 
 type ColorSchemeValueScale = (point: any) => string;
+
+function isColorSchemeStyleArray(
+  colorScheme: any
+): colorScheme is ColorSchemeStyleArray {
+  return Array.isArray(colorScheme) && typeof colorScheme[0] === 'object';
+}
 
 /**
  * Given a point, get the key attributes for it.
@@ -91,7 +98,7 @@ export const getColor = (props: Partial<ColorHelperProps>) => {
  * This function creates a value scale that maps data points to colors or CSS styles.
  *
  * @param {Array} data - The data used to create the scale.
- * @param {ColorSchemeType} colorScheme - The color scheme used to generate the scale. This can be an array of colors or an array of css styles objects.
+ * @param {ColorSchemeType} colorScheme - The color scheme used to generate the scale.
  * @param {string} emptyColor - The color used for data points with no value.
  *
  * @returns {ColorSchemeValueScale} A function that takes a data point and returns a color or CSS style based on the data point's value.
@@ -129,7 +136,7 @@ const getValueScale = (
  * This function generates a style object for a given data point based on a map of value scales.
  *
  * @param {any} point - The data point for which to generate the style object.
- * @param {Map<string, ColorSchemeValueScale>} valueScales - A map where each key is a property name and each value is a function that takes a data point and returns a color or CSS style.
+ * @param {Map<string, ColorSchemeValueScale>} valueScales - A map where each key is a property name and each value is a function that takes a data point and returns a CSS style.
  *
  * @returns {Partial<CSSStyleDeclaration>} A style object where each key is a property name and each value is a color or CSS style based on the value of the data point for that property.
  */
@@ -144,37 +151,26 @@ export const getColorSchemeStyles = (
 /**
  * This function retrieves a color scheme for a specific property from a given color scheme.
  *
- * @param {ColorSchemeType} colorScheme - The color scheme used to generate the scale. This can be an array of colors or an array of objects where each object maps a property to a color.
- * @param {string} colorSchemeProperty - The property for which to retrieve the color scheme.
+ * @param {ColorSchemeStyleArray} colorScheme - The color scheme used to generate the scale.
+ * @param {string} colorSchemeProperty - The property for which to retrieve the new color scheme.
  *
  * @returns {ColorSchemeType} A color scheme for the specified property.
  */
 const getColorSchemeForProperty = (
-  colorScheme: ColorSchemeType,
+  colorScheme: ColorSchemeStyleArray,
   colorSchemeProperty: string
-): ColorSchemeType => {
-  if (!Array.isArray(colorScheme)) {
-    return colorScheme;
-  }
-
-  const newColorScheme = colorScheme.map(
-    (schemeItem: string | Partial<CSSStyleDeclaration>) => {
-      if (typeof schemeItem === 'object') {
-        return schemeItem?.[colorSchemeProperty];
-      }
-
-      return schemeItem;
-    }
+): ColorSchemeType =>
+  colorScheme.map(
+    (schemeItem: Partial<CSSStyleDeclaration>) =>
+      schemeItem?.[colorSchemeProperty]
   );
-  return newColorScheme;
-};
 
 /**
  * This function creates a map of value scales for different properties based on a provided color scheme.
  * Each value scale is a function that takes a data point and returns a css style value based on that point.
  *
  * @param {Array} data - The data used to create the scales.
- * @param {ColorSchemeType} colorScheme - The color scheme used to generate the scales. This can be an array of colors or an array of objects where each object contains a set of css styles.
+ * @param {ColorSchemeType | ColorSchemeStyleArray} colorScheme - The color scheme used to generate the scales. This can be an array of colors or an array of objects where each object contains a set of css styles.
  * @param {string} emptyColor - The color used for data points with no value.
  *
  * @returns {Map<string, ColorSchemeValueScale>} A map where each key is a property name and each value is a function that takes a data point and returns a value for the property.
@@ -183,18 +179,15 @@ const getColorSchemeForProperty = (
  */
 export const createColorSchemeValueScales = (
   data,
-  colorScheme: ColorSchemeType,
+  colorScheme: ColorSchemeType | ColorSchemeStyleArray,
   emptyColor: string
 ): Map<string, ColorSchemeValueScale> => {
   const valueScales = new Map<string, ColorSchemeValueScale>();
 
-  const isColorSchemeObjectArray =
-    Array.isArray(colorScheme) && typeof colorScheme[0] === 'object';
-
-  if (isColorSchemeObjectArray) {
-    const colorSchemeProperties = isColorSchemeObjectArray
-      ? [...new Set(colorScheme.flatMap(Object.keys))]
-      : [];
+  if (isColorSchemeStyleArray(colorScheme)) {
+    const colorSchemeProperties = [
+      ...new Set(colorScheme.flatMap(Object.keys))
+    ];
 
     colorSchemeProperties.forEach((key) => {
       const valueScale = getValueScale(

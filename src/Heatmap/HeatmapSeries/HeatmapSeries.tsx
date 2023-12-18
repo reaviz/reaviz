@@ -4,6 +4,7 @@ import { CloneElement } from 'rdk';
 import { ColorSchemeType } from '../../common/color';
 import { ChartInternalNestedDataShape } from '../../common/data';
 import {
+  ColorSchemeStyleArray,
   createColorSchemeValueScales,
   getColorSchemeStyles
 } from '../../common/color/helper';
@@ -37,7 +38,7 @@ export interface HeatmapSeriesProps {
   /**
    * Color scheme for the chart.
    */
-  colorScheme: ColorSchemeType;
+  colorScheme: ColorSchemeType | ColorSchemeStyleArray;
 
   /**
    * Color for the empty cell of the chart.
