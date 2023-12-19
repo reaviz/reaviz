@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CalendarHeatmap } from './CalendarHeatmap';
 import {
   heatmapCalendarData,
@@ -8,6 +8,7 @@ import {
   heatmapCalendarOffsetData
 } from '../../demo';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
+import { ChartTooltip, formatValue } from '../common';
 
 export default {
   title: 'Charts/Heatmap/Calendar',
@@ -57,3 +58,49 @@ export const MultiMonthCalendar = () => (
     />
   </div>
 );
+
+export const SelectCell = () => {
+
+  const [activePoints, setActivePoints] = useState<any | null>(null);
+
+  return (
+    <>
+      <CalendarHeatmap
+        height={115}
+        width={100}
+        data={janHeatMapData}
+        view="month"
+        series={
+          <HeatmapSeries
+            padding={0.3}
+            colorScheme={(data, index, active) => (
+              data.metadata.date.valueOf() === active?.[0]?.metadata.date.valueOf() ? "red" : "blue"
+            )}
+            selectedValues={activePoints}
+            cell={
+              <HeatmapCell
+                tooltip={
+                  <ChartTooltip
+                    content={(d) =>
+                      `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
+                        d.data.value
+                      )}`
+                    }
+                  />
+                }
+                onClick={(e) => {
+                  if (activePoints?.[0]?.metadata.date.valueOf() === e.value?.metadata.date.valueOf()) {
+                    setActivePoints(null);
+                  } else {
+                    setActivePoints([e.value]);
+                  }
+                }}
+              />
+            }
+          />
+        }
+      />
+      <div>Selected Date:{activePoints?.[0]?.metadata.date.toDateString()}</div>
+    </>
+  );
+}

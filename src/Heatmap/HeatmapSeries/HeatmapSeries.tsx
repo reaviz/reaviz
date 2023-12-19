@@ -52,9 +52,14 @@ export interface HeatmapSeriesProps {
    * Cell component that will be rendered.
    */
   cell: ReactElement<HeatmapCellProps, typeof HeatmapCell>;
+
+  /**
+   * Selected cell(s) in active state
+   */
+  selectedValues?: any;
 }
 
-const getValueScale = (data, colorScheme, emptyColor) => {
+const getValueScale = (data, colorScheme, emptyColor, selectedValues) => {
   const valueDomain = extent(
     uniqueBy(
       data,
@@ -65,15 +70,17 @@ const getValueScale = (data, colorScheme, emptyColor) => {
 
   return (point) => {
     // For 0 values, lets show a placeholder fill
-    if (point === undefined || point === null) {
+    if (point.value === undefined || point.value === null) {
       return emptyColor;
     }
 
     return getColor({
       scale: scaleQuantile,
       domain: valueDomain,
-      key: point,
-      colorScheme
+      key: point.value,
+      colorScheme,
+      point,
+      active: selectedValues
     });
   };
 };
@@ -86,9 +93,10 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   xScale,
   yScale,
   data,
-  id
+  id,
+  selectedValues
 }) => {
-  const valueScale = getValueScale(data, colorScheme, emptyColor);
+  const valueScale = getValueScale(data, colorScheme, emptyColor, selectedValues);
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
   const cellCount = [...yScale.domain(), ...xScale.domain()].length;
@@ -104,7 +112,7 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   }) => {
     const x = xScale(row.key);
     const y = yScale(cell.x);
-    const fill = valueScale(cell.value);
+    const fill = valueScale(cell);
 
     return (
       <CloneElement<HeatmapCellProps>
