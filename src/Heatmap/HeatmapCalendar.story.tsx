@@ -64,7 +64,7 @@ export const SelectCell = () => {
   const [activePoints, setActivePoints] = useState<any | null>(null);
 
   return (
-    <>
+    <div style={{width:'300px'}}>
       <CalendarHeatmap
         height={115}
         width={100}
@@ -101,6 +101,6 @@ export const SelectCell = () => {
         }
       />
       <div>Selected Date:{activePoints?.[0]?.metadata.date.toDateString()}</div>
-    </>
+    </div>
   );
 }

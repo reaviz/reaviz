@@ -68,6 +68,11 @@ export type HeatmapCellProps = {
   fill: string;
 
   /**
+   * Stroke color set by `HeatmapSeries`.
+   */
+  stroke: string;
+
+  /**
    * Data object set by `Heatmap`.
    */
   data: ChartInternalShallowDataShape;
@@ -127,6 +132,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   cellIndex,
   cellCount,
   fill,
+  stroke,
   x,
   y,
   style,
@@ -185,7 +191,10 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
 
   const extras = constructFunctionProps({ style, className }, data);
   const isTransparent = fill === 'transparent';
-  const stroke = active && !isTransparent ? chroma(fill).brighten(1) : fill;
+  const appliedStroke =
+    active && !isTransparent
+      ? chroma(stroke || fill).brighten(1)
+      : stroke || fill;
 
   return (
     <Fragment>
@@ -193,7 +202,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
         <motion.rect
           {...rest}
           fill={fill}
-          stroke={stroke}
+          stroke={appliedStroke}
           x={x}
           y={y}
           rx={rx}

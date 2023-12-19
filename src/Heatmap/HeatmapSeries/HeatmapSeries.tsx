@@ -1,11 +1,13 @@
 import React, { FC, ReactElement, Fragment } from 'react';
 import { HeatmapCell, HeatmapCellProps } from './HeatmapCell';
-import { scaleQuantile } from 'd3-scale';
-import { uniqueBy } from '../../common/utils/array';
-import { extent } from 'd3-array';
 import { CloneElement } from 'rdk';
-import { ColorSchemeType, getColor } from '../../common/color';
+import { ColorSchemeType } from '../../common/color';
 import { ChartInternalNestedDataShape } from '../../common/data';
+import {
+  ColorSchemeStyleArray,
+  createColorSchemeValueScales,
+  getColorSchemeStyles
+} from '../../common/color/helper';
 
 export interface HeatmapSeriesProps {
   /**
@@ -36,7 +38,7 @@ export interface HeatmapSeriesProps {
   /**
    * Color scheme for the chart.
    */
-  colorScheme: ColorSchemeType;
+  colorScheme: ColorSchemeType | ColorSchemeStyleArray;
 
   /**
    * Color for the empty cell of the chart.
@@ -59,32 +61,6 @@ export interface HeatmapSeriesProps {
   selectedValues?: any;
 }
 
-const getValueScale = (data, colorScheme, emptyColor, selectedValues) => {
-  const valueDomain = extent(
-    uniqueBy(
-      data,
-      (d) => d.data,
-      (d) => d.value
-    )
-  );
-
-  return (point) => {
-    // For 0 values, lets show a placeholder fill
-    if (point.value === undefined || point.value === null) {
-      return emptyColor;
-    }
-
-    return getColor({
-      scale: scaleQuantile,
-      domain: valueDomain,
-      key: point.value,
-      colorScheme,
-      point,
-      active: selectedValues
-    });
-  };
-};
-
 export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   animated,
   emptyColor,
@@ -96,7 +72,12 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   id,
   selectedValues
 }) => {
-  const valueScale = getValueScale(data, colorScheme, emptyColor, selectedValues);
+  const valueScales = createColorSchemeValueScales(
+    data,
+    colorScheme,
+    emptyColor,
+    selectedValues
+  );
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
   const cellCount = [...yScale.domain(), ...xScale.domain()].length;
@@ -112,7 +93,10 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   }) => {
     const x = xScale(row.key);
     const y = yScale(cell.x);
-    const fill = valueScale(cell);
+    const { fill, stroke, filter } = getColorSchemeStyles(
+      cell,
+      valueScales
+    );
 
     return (
       <CloneElement<HeatmapCellProps>
@@ -124,9 +108,11 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
         x={x}
         y={y}
         fill={fill}
+        stroke={stroke}
         width={width}
         height={height}
         data={cell}
+        style={{ filter }}
       />
     );
   };
@@ -138,7 +124,6 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
           renderCell({
             height,
             width,
-            valueScale,
             cellCount,
             row,
             cell,

@@ -19,26 +19,13 @@ export const useInterpolate = ({ data, animated, arc }) => {
   const d = useMotionValue(exit);
   const spring = useSpring(0, DEFAULT_TRANSITION);
 
-  // delay the initial animation by 100ms
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      spring.set(1);
-    }, 100);
-
-    return () => clearTimeout(timeoutId);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   useEffect(() => {
     const interpolator = interpolate(prevData.current, data);
     const prevSpring = spring.get();
 
-    // only increment spring here if it's for an update, not the initial render
-    if (spring.get() >= 1) {
-      spring.set(prevSpring + 1);
-    }
+    spring.set(prevSpring + 1);
 
-    return spring.onChange((v) => {
+    return spring.on('change', (v) => {
       const newData = interpolator(v - prevSpring);
       prevData.current = newData;
 
