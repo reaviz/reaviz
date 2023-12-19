@@ -1,3 +1,7 @@
+# 15.3.0 - 12/19/23
+- [fix] Fix pie chart animation #180
+- [feature] Add stroke and glow to Heatmaps #179
+
 # 15.2.1 - 12/15/23
 - [chore] upgrade reablocks and rdk
 
