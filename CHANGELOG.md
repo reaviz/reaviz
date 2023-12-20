@@ -1,3 +1,6 @@
+# 15.4.0 - 12/20/23
+- [feature] Heatmap: Add colorScheme callback function support #181
+
 # 15.3.0 - 12/19/23
 - [fix] Fix pie chart animation #180
 - [feature] Add stroke and glow to Heatmaps #179
