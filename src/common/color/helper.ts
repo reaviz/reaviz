@@ -100,7 +100,7 @@ export const getColor = (props: Partial<ColorHelperProps>) => {
  * @param {Array} data - The data used to create the scale.
  * @param {ColorSchemeType} colorScheme - The color scheme used to generate the scale.
  * @param {string} emptyColor - The color used for data points with no value.
- * @param {any} selectedValues - Selected values in active state
+ * @param {any} selections - Selected values in active state
  *
  * @returns {ColorSchemeValueScale} A function that takes a data point and returns a color or CSS style based on the data point's value.
  */
@@ -108,7 +108,7 @@ const getValueScale = (
   data,
   colorScheme: ColorSchemeType,
   emptyColor: string,
-  selectedValues
+  selections: any
 ): ColorSchemeValueScale => {
   const valueDomain = extent(
     uniqueBy(
@@ -120,7 +120,7 @@ const getValueScale = (
 
   return (point) => {
     // For 0 values, lets show a placeholder fill
-    if (point.value === undefined || point.value === null) {
+    if (point?.value === undefined || point?.value === null) {
       return emptyColor;
     }
 
@@ -131,7 +131,7 @@ const getValueScale = (
       key: point.value,
       colorScheme,
       point,
-      active: selectedValues
+      active: selections
     });
   };
 };
@@ -176,7 +176,7 @@ const getColorSchemeForProperty = (
  * @param {Array} data - The data used to create the scales.
  * @param {ColorSchemeType | ColorSchemeStyleArray} colorScheme - The color scheme used to generate the scales. This can be an array of colors or an array of objects where each object contains a set of css styles.
  * @param {string} emptyColor - The color used for data points with no value.
- * @param {any} selectedValues - Selected values in active state
+ * @param {any} selections - Selected values in active state
  *
  * @returns {Map<string, ColorSchemeValueScale>} A map where each key is a property name and each value is a function that takes a data point and returns a value for the property.
  *
@@ -186,7 +186,7 @@ export const createColorSchemeValueScales = (
   data,
   colorScheme: ColorSchemeType | ColorSchemeStyleArray,
   emptyColor: string,
-  selectedValues
+  selections: any
 ): Map<string, ColorSchemeValueScale> => {
   const valueScales = new Map<string, ColorSchemeValueScale>();
 
@@ -200,12 +200,12 @@ export const createColorSchemeValueScales = (
         data,
         getColorSchemeForProperty(colorScheme, key),
         emptyColor,
-        selectedValues
+        selections
       );
       valueScales.set(key, valueScale);
     });
   } else {
-    valueScales.set('fill', getValueScale(data, colorScheme, emptyColor, selectedValues));
+    valueScales.set('fill', getValueScale(data, colorScheme, emptyColor, selections));
   }
 
   return valueScales;

@@ -76,7 +76,7 @@ export const SelectCell = () => {
             colorScheme={(data, index, active) => (
               data.metadata.date.valueOf() === active?.[0]?.metadata.date.valueOf() ? "red" : "blue"
             )}
-            selectedValues={activePoints}
+            selections={activePoints}
             cell={
               <HeatmapCell
                 tooltip={

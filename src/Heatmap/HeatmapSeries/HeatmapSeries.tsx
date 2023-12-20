@@ -58,7 +58,7 @@ export interface HeatmapSeriesProps {
   /**
    * Selected cell(s) in active state
    */
-  selectedValues?: any;
+  selections?: any;
 }
 
 export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
@@ -70,13 +70,13 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   yScale,
   data,
   id,
-  selectedValues
+  selections
 }) => {
   const valueScales = createColorSchemeValueScales(
     data,
     colorScheme,
     emptyColor,
-    selectedValues
+    selections
   );
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
