@@ -54,6 +54,11 @@ export interface HeatmapSeriesProps {
    * Cell component that will be rendered.
    */
   cell: ReactElement<HeatmapCellProps, typeof HeatmapCell>;
+
+  /**
+   * Selected cell(s) in active state
+   */
+  selections?: any;
 }
 
 export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
@@ -64,12 +69,14 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   xScale,
   yScale,
   data,
-  id
+  id,
+  selections
 }) => {
   const valueScales = createColorSchemeValueScales(
     data,
     colorScheme,
-    emptyColor
+    emptyColor,
+    selections
   );
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
@@ -87,7 +94,7 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
     const x = xScale(row.key);
     const y = yScale(cell.x);
     const { fill, stroke, filter } = getColorSchemeStyles(
-      cell.value,
+      cell,
       valueScales
     );
 
