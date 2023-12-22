@@ -19,7 +19,7 @@ export const useInterpolate = ({ data, animated }) => {
     const prevSpring = spring.get();
     spring.set(1 + prevSpring);
 
-    return spring.onChange((v) => d.set(interpolator(v - prevSpring)));
+    return spring.on('change', (v) => d.set(interpolator(v - prevSpring)));
   }, [d, data.path, spring]);
 
   return { transition, d };
