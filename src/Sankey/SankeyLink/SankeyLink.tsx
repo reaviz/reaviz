@@ -170,6 +170,8 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
     }
   });
 
+  const ariaLabelData = useMemo(() => (`${(source as NodeExtra).title} → ${(target as NodeExtra).title}: ${formatValue(value)}`), [source, target, value]);
+
   return (
     <Fragment>
       {gradient && (
@@ -199,6 +201,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           onClick={onClick}
           onPointerOver={pointerOver}
           onPointerOut={pointerOut}
+          aria-label={ariaLabelData}
         />
       </g>
       {!tooltip?.props?.disabled && (

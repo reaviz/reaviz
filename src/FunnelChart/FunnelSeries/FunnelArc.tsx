@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '../../common/data';
 import { area } from 'd3-shape';
 import { InterpolationTypes, interpolate } from '../../common/utils';
@@ -119,6 +119,8 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   const [height] = yScale.range();
   const [_, width] = xScale.range();
 
+  const ariaLabelData = useMemo(() => (data?.map(row => (`${row?.key}: ${row?.data}`)).join(', ')), [data]);
+
   return (
     <CloneElement<TooltipAreaProps>
       element={tooltip}
@@ -145,6 +147,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
       <g
         pointerEvents={tooltip ? 'none' : 'auto'}
         style={generateGlowStyles({ glow })}
+        aria-label={ariaLabelData}
       >
         <motion.path
           d={areaGenerator(internalData as any[])}

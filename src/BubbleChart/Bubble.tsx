@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactElement, useRef, useState } from 'react';
+import React, { FC, Fragment, ReactElement, useMemo, useRef, useState } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -102,6 +102,8 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
       ? `url(#mask-pattern-${id})`
       : fill;
 
+  const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]) ;
+
   return (
     <Fragment>
       <motion.circle
@@ -123,6 +125,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onClick={onClick}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
+        aria-label={JSON.stringify(tooltipData)}
       />
       {mask && (
         <Fragment>
@@ -146,7 +149,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
           element={tooltip}
           visible={!!internalActive}
           reference={bubbleRef}
-          value={{ y: data.data.data, x: data.data.key }}
+          value={tooltipData}
         />
       )}
     </Fragment>

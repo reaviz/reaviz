@@ -133,8 +133,10 @@ export const PieArc: FC<PieArcProps> = ({
     [gradient, id, color]
   );
 
+  const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]);
+
   return (
-    <g ref={arcRef}>
+    <g ref={arcRef} aria-label={JSON.stringify(tooltipData)}>
       <motion.path
         role="graphics-symbol"
         d={d}
@@ -164,7 +166,7 @@ export const PieArc: FC<PieArcProps> = ({
           element={tooltip}
           visible={!!active}
           reference={arcRef}
-          value={{ y: data.data.data, x: data.data.key }}
+          value={tooltipData}
         />
       )}
     </g>

@@ -154,7 +154,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             onMouseLeave={() => onItemMouseLeave?.(d)}
             onClick={() => onItemClick?.(d)}
           >
-            <label className={classNames(css.label, labelClassName)}>
+            <label title={label} className={classNames(css.label, labelClassName)}>
               {label}
             </label>
             {renderBar(d, i)}

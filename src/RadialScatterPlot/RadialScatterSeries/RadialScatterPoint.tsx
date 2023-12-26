@@ -4,7 +4,8 @@ import React, {
   Fragment,
   ReactElement,
   FC,
-  useState
+  useState,
+  useMemo
 } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { radialLine } from 'd3-shape';
@@ -184,6 +185,8 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
   const [yStart] = yScale.domain();
   const exitTransform = getTranslate({ ...data, y: yStart });
 
+  const ariaLabelData = useMemo(() => (JSON.stringify(data)), [data]);
+
   return (
     <Fragment>
       <motion.g
@@ -198,6 +201,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         className={classNames(className, {
           [css.inactive]: !active
         })}
+        aria-label={ariaLabelData}
       >
         {symbol && symbol(data)}
         {!symbol && <circle r={sizeVal} fill={fill} />}

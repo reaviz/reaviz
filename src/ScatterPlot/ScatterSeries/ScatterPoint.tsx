@@ -198,6 +198,8 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
 
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
 
+  const ariaLabelData = useMemo(() => (JSON.stringify(data)), [data]);
+
   return (
     <Fragment>
       <g
@@ -214,6 +216,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
           onMouseLeave(data!);
         }}
         onClick={() => onClick(data!)}
+        aria-label={ariaLabelData}
       >
         {symbol ? (
           <motion.g

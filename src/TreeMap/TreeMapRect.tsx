@@ -96,6 +96,8 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
     return getKey(data).join(' -> ');
   }, [data]);
 
+  const tooltipData = useMemo(() => ({ y: data.value, x: tooltipLabel }), [data, tooltipLabel]);
+
   return (
     <Fragment>
       <motion.rect
@@ -117,13 +119,14 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         }}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
+        aria-label={JSON.stringify(tooltipData)}
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
           visible={!!internalActive}
           reference={rectRef}
-          value={{ y: data.value, x: tooltipLabel }}
+          value={tooltipData}
         />
       )}
     </Fragment>

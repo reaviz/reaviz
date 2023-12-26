@@ -1,4 +1,4 @@
-import React, { FC, useRef, ReactElement, useState, Fragment } from 'react';
+import React, { FC, useRef, ReactElement, useState, Fragment, useMemo } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -172,6 +172,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
     }
   });
 
+  const tooltipData = useMemo(() => ({ y: data.data.size, x: data.data?.sets?.join(' | ') }), [data]);
+
   return (
     <g
       title={data.data.key}
@@ -185,6 +187,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           });
         }
       }}
+      aria-label={JSON.stringify(tooltipData)}
     >
       <motion.path
         ref={arcRef}
@@ -226,7 +229,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           element={tooltip}
           visible={!!internalActive}
           reference={arcRef}
-          value={{ y: data.data.size, x: data.data?.sets?.join(' | ') }}
+          value={tooltipData}
         />
       )}
     </g>
