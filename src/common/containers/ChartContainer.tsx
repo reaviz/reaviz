@@ -189,6 +189,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
             height={height}
             className={className}
             style={style}
+            tabIndex={0}
           >
             <g transform={`translate(${translateX}, ${translateY})`}>
               {children(childProps)}
