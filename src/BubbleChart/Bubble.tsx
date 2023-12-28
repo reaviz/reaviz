@@ -9,6 +9,7 @@ import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
 import { Glow } from '../common/Glow';
 import { generateGlowStyles } from '../common/Glow/utils';
+import { getAriaLabel } from '../common';
 
 export interface BubbleProps {
   /**
@@ -126,7 +127,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
-        aria-label={JSON.stringify(tooltipData)}
+        aria-label={getAriaLabel(tooltipData)}
       />
       {mask && (
         <Fragment>

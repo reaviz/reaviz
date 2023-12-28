@@ -21,7 +21,7 @@ import {
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { BarLabelProps, BarLabel } from './BarLabel';
-import { formatValue } from '../../common/utils/formatting';
+import { formatValue, getAriaLabel } from '../../common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '../../common/Tooltip';
 import { Glow } from '../../common/Glow';
@@ -577,7 +577,7 @@ export const Bar: FC<Partial<BarProps>> = ({
             onClick={onMouseClick}
             onMouseMove={onMouseMove}
             tabIndex={0}
-            aria-label={JSON.stringify(tooltipData)}
+            aria-label={getAriaLabel(tooltipData)}
           />
         </g>
       );

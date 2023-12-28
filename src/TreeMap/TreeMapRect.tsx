@@ -12,6 +12,7 @@ import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
+import { getAriaLabel } from '../common';
 
 export interface TreeMapRectProps {
   /**
@@ -120,7 +121,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
-        aria-label={JSON.stringify(tooltipData)}
+        aria-label={getAriaLabel(tooltipData)}
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>

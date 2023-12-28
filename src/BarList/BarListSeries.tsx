@@ -5,6 +5,7 @@ import {
   ColorSchemeType,
   DEFAULT_TRANSITION,
   formatValue,
+  getAriaLabel,
   getColor
 } from '../common';
 import { motion } from 'framer-motion';
@@ -119,6 +120,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             animate={{ width: `${item.data}%` }}
             style={{ background: fill }}
             tabIndex={0}
+            aria-label={getAriaLabel(item)}
           />
         </div>
       );

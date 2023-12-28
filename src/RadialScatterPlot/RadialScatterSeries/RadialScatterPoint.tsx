@@ -16,6 +16,7 @@ import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes } from '../../common/color';
 import css from './RadialScatterPoint.module.css';
+import { getAriaLabel } from '../../common';
 
 export interface RadialScatterPointProps {
   /**
@@ -185,7 +186,6 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
   const [yStart] = yScale.domain();
   const exitTransform = getTranslate({ ...data, y: yStart });
 
-  const ariaLabelData = useMemo(() => (JSON.stringify(data)), [data]);
 
   return (
     <Fragment>
@@ -202,7 +202,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
           [css.inactive]: !active
         })}
         tabIndex={0}
-        aria-label={ariaLabelData}
+        aria-label={getAriaLabel(data)}
       >
         {symbol && symbol(data)}
         {!symbol && <circle r={sizeVal} fill={fill} />}

@@ -1,7 +1,7 @@
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '../../common/data';
 import { area } from 'd3-shape';
-import { InterpolationTypes, interpolate } from '../../common/utils';
+import { InterpolationTypes, getAriaLabel, interpolate } from '../../common/utils';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
 import { Gradient, GradientProps, GradientStop } from '../../common/Gradient';
 import { CloneElement } from 'rdk';
@@ -119,7 +119,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   const [height] = yScale.range();
   const [_, width] = xScale.range();
 
-  const ariaLabelData = useMemo(() => (data?.map(row => (`${row?.key}: ${row?.data}`)).join(', ')), [data]);
+  const ariaLabelData = useMemo(() => (data?.map(row => (getAriaLabel(row))).join(', ')), [data]);
 
   return (
     <CloneElement<TooltipAreaProps>

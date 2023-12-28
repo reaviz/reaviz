@@ -7,7 +7,7 @@ import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '../common/Mask';
 import { Gradient, GradientProps } from '../common/Gradient';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
-import { Glow } from '../common';
+import { Glow, getAriaLabel } from '../common';
 import { generateGlowStyles } from '../common/Glow/utils';
 
 export interface VennArcProps {
@@ -188,7 +188,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         }
       }}
       tabIndex={0}
-      aria-label={JSON.stringify(tooltipData)}
+      aria-label={getAriaLabel(tooltipData)}
     >
       <motion.path
         ref={arcRef}

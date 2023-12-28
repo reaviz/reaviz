@@ -7,6 +7,7 @@ import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { useInterpolate } from './useInterpolate';
 import { useHoverIntent } from '../../common/utils/useHoverIntent';
 import { Gradient, GradientProps } from '../../common/Gradient';
+import { getAriaLabel } from '../../common';
 
 export interface PieArcMouseEvent {
   value: ArcData['data'];
@@ -136,7 +137,7 @@ export const PieArc: FC<PieArcProps> = ({
   const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]);
 
   return (
-    <g ref={arcRef} tabIndex={0} aria-label={JSON.stringify(tooltipData)}>
+    <g ref={arcRef} tabIndex={0} aria-label={getAriaLabel(tooltipData)}>
       <motion.path
         role="graphics-symbol"
         d={d}

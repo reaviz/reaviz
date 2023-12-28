@@ -22,6 +22,7 @@ import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
 import { Glow } from '../../common/Glow';
 import { generateGlowStyles } from '../../common/Glow/utils';
+import { getAriaLabel } from '../../common';
 
 export type ScatterPointProps = {
   /**
@@ -198,8 +199,6 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
 
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
 
-  const ariaLabelData = useMemo(() => (JSON.stringify(data)), [data]);
-
   return (
     <Fragment>
       <g
@@ -217,7 +216,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
         }}
         onClick={() => onClick(data!)}
         tabIndex={0}
-        aria-label={ariaLabelData}
+        aria-label={getAriaLabel(data)}
       >
         {symbol ? (
           <motion.g

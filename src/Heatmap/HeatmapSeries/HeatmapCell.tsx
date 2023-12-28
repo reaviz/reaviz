@@ -20,6 +20,7 @@ import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import css from './HeatmapCell.module.css';
 import { useHoverIntent } from '../../common/utils/useHoverIntent';
+import { getAriaLabel } from '../../common';
 
 export type HeatmapCellProps = {
   /**
@@ -223,7 +224,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
           onPointerOut={pointerOut}
           onClick={onMouseClick}
           tabIndex={0}
-          aria-label={JSON.stringify(tooltipData)}
+          aria-label={getAriaLabel({...tooltipData, data: null})}
         />
       </g>
       {tooltip && !(tooltip.props as any).disabled && !isTransparent && (

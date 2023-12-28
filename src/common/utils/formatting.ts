@@ -45,3 +45,9 @@ export function formatValue(value: ChartInternalDataTypes): string {
 
   return 'No value';
 }
+
+export function getAriaLabel(datapoint) {
+  const key = datapoint?.key || datapoint?.x;
+  const value = datapoint?.data || datapoint?.y;
+  return `${key}: ${formatValue(value)}`;
+}
