@@ -214,6 +214,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
           onMouseLeave(data!);
         }}
         onClick={() => onClick(data!)}
+        tabIndex={0}
       >
         {symbol ? (
           <motion.g

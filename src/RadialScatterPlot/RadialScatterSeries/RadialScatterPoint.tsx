@@ -198,6 +198,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         className={classNames(className, {
           [css.inactive]: !active
         })}
+        tabIndex={0}
       >
         {symbol && symbol(data)}
         {!symbol && <circle r={sizeVal} fill={fill} />}

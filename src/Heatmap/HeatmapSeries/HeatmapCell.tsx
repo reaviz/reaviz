@@ -222,6 +222,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
           onPointerOver={pointerOver}
           onPointerOut={pointerOut}
           onClick={onMouseClick}
+          tabIndex={0}
         />
       </g>
       {tooltip && !(tooltip.props as any).disabled && !isTransparent && (

@@ -123,6 +123,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onClick={onClick}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
+        tabIndex={0}
       />
       {mask && (
         <Fragment>
