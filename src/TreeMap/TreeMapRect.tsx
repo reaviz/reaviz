@@ -117,6 +117,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         }}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
+        tabIndex={0}
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>

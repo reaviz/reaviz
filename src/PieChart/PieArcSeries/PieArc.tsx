@@ -134,7 +134,7 @@ export const PieArc: FC<PieArcProps> = ({
   );
 
   return (
-    <g ref={arcRef}>
+    <g ref={arcRef} tabIndex={0}>
       <motion.path
         role="graphics-symbol"
         d={d}

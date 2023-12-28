@@ -118,6 +118,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             initial={{ width: '0%' }}
             animate={{ width: `${item.data}%` }}
             style={{ background: fill }}
+            tabIndex={0}
           />
         </div>
       );

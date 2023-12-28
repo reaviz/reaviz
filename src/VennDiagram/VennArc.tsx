@@ -185,6 +185,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           });
         }
       }}
+      tabIndex={0}
     >
       <motion.path
         ref={arcRef}
