@@ -202,6 +202,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           onPointerOver={pointerOver}
           onPointerOut={pointerOut}
           aria-label={ariaLabelData}
+          role="graphics-document"
         />
       </g>
       {!tooltip?.props?.disabled && (

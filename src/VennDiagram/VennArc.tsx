@@ -189,6 +189,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       }}
       tabIndex={0}
       aria-label={getAriaLabel(tooltipData)}
+      role="graphics-document"
     >
       <motion.path
         ref={arcRef}

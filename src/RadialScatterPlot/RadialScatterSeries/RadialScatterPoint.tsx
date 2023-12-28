@@ -203,6 +203,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         })}
         tabIndex={0}
         aria-label={getAriaLabel(data)}
+        role="graphics-document"
       >
         {symbol && symbol(data)}
         {!symbol && <circle r={sizeVal} fill={fill} />}

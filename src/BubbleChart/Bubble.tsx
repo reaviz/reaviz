@@ -128,6 +128,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onPointerOut={pointerOut}
         tabIndex={0}
         aria-label={getAriaLabel(tooltipData)}
+        role="graphics-document"
       />
       {mask && (
         <Fragment>

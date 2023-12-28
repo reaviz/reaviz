@@ -225,6 +225,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
           onClick={onMouseClick}
           tabIndex={0}
           aria-label={getAriaLabel({...tooltipData, data: null})}
+          role="graphics-document"
         />
       </g>
       {tooltip && !(tooltip.props as any).disabled && !isTransparent && (

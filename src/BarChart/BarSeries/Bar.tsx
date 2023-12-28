@@ -578,6 +578,7 @@ export const Bar: FC<Partial<BarProps>> = ({
             onMouseMove={onMouseMove}
             tabIndex={0}
             aria-label={getAriaLabel(tooltipData)}
+            role="graphics-document"
           />
         </g>
       );

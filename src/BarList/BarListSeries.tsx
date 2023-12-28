@@ -121,6 +121,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             style={{ background: fill }}
             tabIndex={0}
             aria-label={getAriaLabel(item)}
+            role="graphics-document"
           />
         </div>
       );

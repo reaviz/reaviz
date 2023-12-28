@@ -55,6 +55,7 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
         onClick={onClick}
         tabIndex={0}
         aria-label={typeof tooltip === 'string' ? tooltip: 'map marker'}
+        role="graphics-document"
       />
       {tooltip && (
         <Tooltip
