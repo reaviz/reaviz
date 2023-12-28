@@ -53,6 +53,7 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
         onMouseEnter={() => setActive(true)}
         onMouseLeave={() => setActive(false)}
         onClick={onClick}
+        tabIndex={0}
         aria-label={typeof tooltip === 'string' ? tooltip: 'map marker'}
       />
       {tooltip && (

@@ -119,6 +119,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         }}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
+        tabIndex={0}
         aria-label={JSON.stringify(tooltipData)}
       />
       {tooltip && !tooltip.props.disabled && (

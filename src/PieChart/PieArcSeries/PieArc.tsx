@@ -136,7 +136,7 @@ export const PieArc: FC<PieArcProps> = ({
   const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]);
 
   return (
-    <g ref={arcRef} aria-label={JSON.stringify(tooltipData)}>
+    <g ref={arcRef} tabIndex={0} aria-label={JSON.stringify(tooltipData)}>
       <motion.path
         role="graphics-symbol"
         d={d}

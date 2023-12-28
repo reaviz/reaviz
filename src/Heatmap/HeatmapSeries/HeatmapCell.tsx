@@ -222,6 +222,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
           onPointerOver={pointerOver}
           onPointerOut={pointerOut}
           onClick={onMouseClick}
+          tabIndex={0}
           aria-label={JSON.stringify(tooltipData)}
         />
       </g>

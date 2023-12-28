@@ -201,6 +201,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         className={classNames(className, {
           [css.inactive]: !active
         })}
+        tabIndex={0}
         aria-label={ariaLabelData}
       >
         {symbol && symbol(data)}

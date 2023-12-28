@@ -184,7 +184,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
 
   return (
     <Fragment>
-      <motion.g ref={rectRef} aria-label={ariaLabelData}>
+      <motion.g ref={rectRef} tabIndex={0} aria-label={ariaLabelData}>
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}
           className={classNames(css.node, className)}

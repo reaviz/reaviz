@@ -576,6 +576,7 @@ export const Bar: FC<Partial<BarProps>> = ({
             onMouseLeave={onMouseLeaveInternal}
             onClick={onMouseClick}
             onMouseMove={onMouseMove}
+            tabIndex={0}
             aria-label={JSON.stringify(tooltipData)}
           />
         </g>

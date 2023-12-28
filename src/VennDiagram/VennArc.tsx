@@ -187,6 +187,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           });
         }
       }}
+      tabIndex={0}
       aria-label={JSON.stringify(tooltipData)}
     >
       <motion.path
