@@ -46,8 +46,14 @@ export function formatValue(value: ChartInternalDataTypes): string {
   return 'No value';
 }
 
+/**
+ * Generate aria label text for the given data point
+ * @param datapoint 
+ * @returns Aria Label
+ */
 export function getAriaLabel(datapoint) {
   const key = datapoint?.key || datapoint?.x;
+  // 'data' or 'y' will not be an array as the label is unique for each element
   const value = datapoint?.data || datapoint?.y;
   return `${key}: ${formatValue(value)}`;
 }
