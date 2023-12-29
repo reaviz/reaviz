@@ -1,3 +1,7 @@
+# 15.5.0 - 12/29/23
+- [chore] Added posthog
+- [feature] Accessibility features #182 #183
+
 # 15.4.0 - 12/20/23
 - [feature] Heatmap: Add colorScheme callback function support #181
 
