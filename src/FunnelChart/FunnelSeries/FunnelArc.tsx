@@ -119,7 +119,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   const [height] = yScale.range();
   const [_, width] = xScale.range();
 
-  const ariaLabelData = useMemo(() => (data?.map(row => (getAriaLabel(row))).join(', ')), [data]);
+  const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
   return (
     <CloneElement<TooltipAreaProps>

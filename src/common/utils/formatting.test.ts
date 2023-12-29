@@ -46,5 +46,26 @@ describe('getAriaLabel', () => {
     expect(result).toEqual(`${currDate.toString()}: 9,945.452`);
   });
 
+  it("check for array data - should return comma separated values", () => {
+
+    const datapoint = [
+      {
+        key: 'Visited',
+        y: 100
+      },
+      {
+        x: 'Clicked',
+        data: 50
+      },
+      {
+        x: 'Purchased',
+        y: 5
+      }
+    ]
+    const result = getAriaLabel(datapoint);
+    // Only till the 3rd decimal place
+    expect(result).toEqual('Visited: 100, Clicked: 50, Purchased: 5');
+  });
+
   
 });
