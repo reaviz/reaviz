@@ -173,6 +173,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   });
 
   const tooltipData = useMemo(() => ({ y: data.data.size, x: data.data?.sets?.join(' | ') }), [data]);
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (
     <g
@@ -188,7 +189,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         }
       }}
       tabIndex={0}
-      aria-label={getAriaLabel(tooltipData)}
+      aria-label={ariaLabelData}
       role="graphics-document"
     >
       <motion.path

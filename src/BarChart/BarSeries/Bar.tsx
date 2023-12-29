@@ -507,6 +507,8 @@ export const Bar: FC<Partial<BarProps>> = ({
     };
   }, [data, isCategorical, isVertical]);
 
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
+
   const getTransition = useCallback(
     (index: number) => {
       if (animated) {
@@ -577,7 +579,7 @@ export const Bar: FC<Partial<BarProps>> = ({
             onClick={onMouseClick}
             onMouseMove={onMouseMove}
             tabIndex={0}
-            aria-label={getAriaLabel(tooltipData)}
+            aria-label={ariaLabelData}
             role="graphics-document"
           />
         </g>

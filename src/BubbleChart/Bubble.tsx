@@ -104,6 +104,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
       : fill;
 
   const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]) ;
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (
     <Fragment>
@@ -127,7 +128,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
-        aria-label={getAriaLabel(tooltipData)}
+        aria-label={ariaLabelData}
         role="graphics-document"
       />
       {mask && (

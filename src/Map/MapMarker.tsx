@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useState, FC } from 'react';
+import React, { Fragment, useRef, useState, FC, useMemo } from 'react';
 import { Tooltip } from 'reablocks';
 import { motion } from 'framer-motion';
 import css from './MapMarker.module.css';
@@ -31,6 +31,8 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
   const ref = useRef<SVGCircleElement | null>(null);
   const [active, setActive] = useState<boolean>(false);
 
+  const ariaLabelData = useMemo(() => typeof tooltip === 'string' ? tooltip: 'map marker', [tooltip]);
+
   return (
     <Fragment>
       <motion.circle
@@ -54,7 +56,7 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
         onMouseLeave={() => setActive(false)}
         onClick={onClick}
         tabIndex={0}
-        aria-label={typeof tooltip === 'string' ? tooltip: 'map marker'}
+        aria-label={ariaLabelData}
         role="graphics-document"
       />
       {tooltip && (

@@ -98,6 +98,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
   }, [data]);
 
   const tooltipData = useMemo(() => ({ y: data.value, x: tooltipLabel }), [data, tooltipLabel]);
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (
     <Fragment>
@@ -121,7 +122,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
-        aria-label={getAriaLabel(tooltipData)}
+        aria-label={ariaLabelData}
         role="graphics-document"
       />
       {tooltip && !tooltip.props.disabled && (

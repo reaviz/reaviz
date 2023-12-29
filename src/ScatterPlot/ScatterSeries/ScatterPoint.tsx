@@ -198,6 +198,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   );
 
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
+  const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
   return (
     <Fragment>
@@ -216,7 +217,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
         }}
         onClick={() => onClick(data!)}
         tabIndex={0}
-        aria-label={getAriaLabel(data)}
+        aria-label={ariaLabelData}
         role="graphics-document"
       >
         {symbol ? (
