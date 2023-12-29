@@ -14,11 +14,11 @@ describe('getAriaLabel', () => {
   it("should return 'x' and 'y' values in aria label", () => {
 
     const datapoint = {
-      x: 'Windows -> Win7',
+      x: 'Windows → Win7',
       y: 75
     };
     const result = getAriaLabel(datapoint);
-    expect(result).toEqual('Windows -> Win7: 75');
+    expect(result).toEqual('Windows → Win7: 75');
   });
 
   it("check for dates and long formatted numbers", () => {
