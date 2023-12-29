@@ -94,7 +94,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
       }
       return [...getKey(node.parent), node.data.key];
     };
-    return getKey(data).join(' -> ');
+    return getKey(data).join(' → ');
   }, [data]);
 
   const tooltipData = useMemo(() => ({ y: data.value, x: tooltipLabel }), [data, tooltipLabel]);
