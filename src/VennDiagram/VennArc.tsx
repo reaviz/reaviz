@@ -1,4 +1,4 @@
-import React, { FC, useRef, ReactElement, useState, Fragment } from 'react';
+import React, { FC, useRef, ReactElement, useState, Fragment, useMemo } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -7,7 +7,7 @@ import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '../common/Mask';
 import { Gradient, GradientProps } from '../common/Gradient';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
-import { Glow } from '../common';
+import { Glow, getAriaLabel } from '../common';
 import { generateGlowStyles } from '../common/Glow/utils';
 
 export interface VennArcProps {
@@ -172,6 +172,9 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
     }
   });
 
+  const tooltipData = useMemo(() => ({ y: data.data.size, x: data.data?.sets?.join(' | ') }), [data]);
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
+
   return (
     <g
       title={data.data.key}
@@ -186,6 +189,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         }
       }}
       tabIndex={0}
+      aria-label={ariaLabelData}
+      role="graphics-document"
     >
       <motion.path
         ref={arcRef}
@@ -227,7 +232,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           element={tooltip}
           visible={!!internalActive}
           reference={arcRef}
-          value={{ y: data.data.size, x: data.data?.sets?.join(' | ') }}
+          value={tooltipData}
         />
       )}
     </g>

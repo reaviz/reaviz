@@ -4,7 +4,8 @@ import React, {
   useCallback,
   FC,
   useState,
-  useRef
+  useRef,
+  useMemo
 } from 'react';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
@@ -179,9 +180,11 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
     }
   });
 
+  const ariaLabelData = useMemo(() => (`${title}: ${formatValue(value as ChartInternalDataTypes)}`), [title, value]);
+
   return (
     <Fragment>
-      <motion.g ref={rectRef} tabIndex={0}>
+      <motion.g ref={rectRef} tabIndex={0} aria-label={ariaLabelData} role="graphics-document">
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}
           className={classNames(css.node, className)}

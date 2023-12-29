@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactElement, useRef, useState } from 'react';
+import React, { FC, Fragment, ReactElement, useMemo, useRef, useState } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -9,6 +9,7 @@ import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
 import { Glow } from '../common/Glow';
 import { generateGlowStyles } from '../common/Glow/utils';
+import { getAriaLabel } from '../common';
 
 export interface BubbleProps {
   /**
@@ -102,6 +103,9 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
       ? `url(#mask-pattern-${id})`
       : fill;
 
+  const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]) ;
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
+
   return (
     <Fragment>
       <motion.circle
@@ -124,6 +128,8 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
+        aria-label={ariaLabelData}
+        role="graphics-document"
       />
       {mask && (
         <Fragment>
@@ -147,7 +153,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
           element={tooltip}
           visible={!!internalActive}
           reference={bubbleRef}
-          value={{ y: data.data.data, x: data.data.key }}
+          value={tooltipData}
         />
       )}
     </Fragment>

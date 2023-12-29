@@ -12,6 +12,7 @@ import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
+import { getAriaLabel } from '../common';
 
 export interface TreeMapRectProps {
   /**
@@ -93,8 +94,11 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
       }
       return [...getKey(node.parent), node.data.key];
     };
-    return getKey(data).join(' -> ');
+    return getKey(data).join(' → ');
   }, [data]);
+
+  const tooltipData = useMemo(() => ({ y: data.value, x: tooltipLabel }), [data, tooltipLabel]);
+  const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (
     <Fragment>
@@ -118,13 +122,15 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
+        aria-label={ariaLabelData}
+        role="graphics-document"
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
           visible={!!internalActive}
           reference={rectRef}
-          value={{ y: data.value, x: tooltipLabel }}
+          value={tooltipData}
         />
       )}
     </Fragment>
