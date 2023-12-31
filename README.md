@@ -129,6 +129,7 @@ Additional features:
 - Bar Guidelines
 - Range Lines
 - Animated Counts
+- a11y Support for labels, roles and tabbing
 - SSR
 
 ## 📦 Install
