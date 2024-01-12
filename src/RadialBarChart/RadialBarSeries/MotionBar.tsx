@@ -45,6 +45,7 @@ export const MotionBar = ({ custom, transition, arc, ...rest }) => {
       animate={enterRest}
       transition={transition}
       d={transition.type !== false ? d : enterD}
+      tabIndex={0}
     />
   );
 };
