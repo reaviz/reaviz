@@ -189,7 +189,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
 
   const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
-  const isVisible = visible?.(data, index);
+  const isVisible = visible ? visible?.(data, index) : active;  
 
   return (
     <Fragment>

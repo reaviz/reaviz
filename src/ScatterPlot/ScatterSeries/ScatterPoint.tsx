@@ -201,7 +201,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
   const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
-  const isVisible = visible?.(data, index);
+  const isVisible = visible ? visible?.(data, index) : active;
 
   return (
     <Fragment>
