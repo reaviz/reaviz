@@ -2,3 +2,7 @@
   opacity: 0.4;
   transition: opacity 200ms ease-in-out;
 }
+
+.hidden {
+  opacity: 0;
+}
