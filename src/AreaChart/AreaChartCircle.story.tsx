@@ -41,7 +41,7 @@ export const Off = () => (
       width={350}
       height={250}
       data={singleDateData}
-      series={<AreaSeries symbols={null} />}
+      series={<AreaSeries symbols={<PointSeries show={false} />} />}
     />
   );
 

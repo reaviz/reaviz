@@ -133,6 +133,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
+  visible,
   ...rest
 }) => {
   const rectRef = useRef<any | null>(null);
@@ -200,12 +201,15 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
   const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
+  const isVisible = visible ? visible?.(data, index) : active;
+
   return (
     <Fragment>
       <g
         ref={rectRef}
         className={classNames({
-          [css.inactive]: !active
+          [css.inactive]: !active,
+          [css.hidden]: !isVisible,
         })}
         onMouseEnter={() => {
           setTooltipVisible(true);

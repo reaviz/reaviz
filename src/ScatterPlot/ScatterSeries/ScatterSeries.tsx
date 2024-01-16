@@ -82,11 +82,6 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
       const active =
         !(activeIds && activeIds.length) || activeIds.includes(pointId);
 
-      const visible = point.props.visible;
-      if (visible && !visible(pointData, index)) {
-        return <Fragment key={key} />;
-      }
-
       return (
         <CloneElement<ScatterPointProps>
           element={point}

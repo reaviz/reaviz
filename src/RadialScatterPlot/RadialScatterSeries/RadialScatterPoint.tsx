@@ -117,6 +117,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
   xScale,
   animated,
   className,
+  visible,
   ...rest
 }) => {
   const ref = useRef<any>(null);
@@ -188,6 +189,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
 
   const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
+  const isVisible = visible ? visible?.(data, index) : active;  
 
   return (
     <Fragment>
@@ -201,7 +203,8 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         onMouseLeave={onMouseLeave}
         onClick={onClick}
         className={classNames(className, {
-          [css.inactive]: !active
+          [css.inactive]: !active,
+          [css.hidden]: !isVisible,
         })}
         tabIndex={0}
         aria-label={ariaLabelData}

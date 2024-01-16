@@ -86,11 +86,6 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
     const active =
       !(internalActiveIds && internalActiveIds.length) || internalActiveIds.includes(dataId);
 
-    const visible = point.props.visible;
-    if (visible && !visible(d, index)) {
-      return <Fragment key={key} />;
-    }
-
     return (
       <CloneElement<RadialScatterPointProps>
         element={point}
