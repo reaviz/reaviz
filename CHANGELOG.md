@@ -1,3 +1,6 @@
+# 15.6.0 - 12/29/23
+- [feature] Accessibility features for Line/Area/Radial charts #184
+
 # 15.5.0 - 12/29/23
 - [chore] Added posthog
 - [feature] Accessibility features #182 #183
