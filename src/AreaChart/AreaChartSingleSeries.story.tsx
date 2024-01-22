@@ -54,14 +54,15 @@ export const Masks = () => (
     data={singleDateData}
     series={
       <AreaSeries
+        interpolation="smooth"
         area={
           <Area
             mask={<Stripes />}
             gradient={
               <Gradient
                 stops={[
-                  <GradientStop offset="10%" stopOpacity={0} />,
-                  <GradientStop offset="80%" stopOpacity={1} />
+                  <GradientStop offset="0%" stopOpacity={.2} />,
+                  <GradientStop offset="50%" stopOpacity={1} />
                 ]}
               />
             }
@@ -71,6 +72,37 @@ export const Masks = () => (
       />
     }
   />
+);
+
+export const Interpolation = () => (
+  <div style={{ display: 'flex', gap: 20 }}>
+    <div>
+      <h1>Smooth</h1>
+      <AreaChart
+        width={350}
+        height={250}
+        data={singleDateData}
+        series={
+          <AreaSeries
+            interpolation="smooth"
+          />
+        }
+      />
+    </div>
+    <div>
+      <h1>Step</h1>
+      <AreaChart
+        width={350}
+        height={250}
+        data={singleDateData}
+        series={
+          <AreaSeries
+            interpolation="step"
+          />
+        }
+      />
+    </div>
+  </div>
 );
 
 export const NoAnimation = () => (
