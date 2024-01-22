@@ -26,4 +26,14 @@
   --chart-handle-drag-fill: var(--color-handle-drag-fill);
   --chart-handle-dots: var(--color-handle-dots);
   --chart-handle-line: var(--color-handle-line);
+
+  .svg {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: auto;
+    }
+  }
 }

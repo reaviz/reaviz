@@ -187,7 +187,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
           <svg
             width={width}
             height={height}
-            className={className}
+            className={classNames(css.svg, className)}
             style={style}
             tabIndex={0}
           >
