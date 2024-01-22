@@ -10,17 +10,64 @@ import css from './PointSeries.module.css';
 import isEqual from 'react-fast-compare';
 
 export interface PointSeriesProps {
+  /**
+   * Determines if the points should be animated or not.
+   */
   animated: boolean;
+
+  /**
+   * The color of the points.
+   */
   color: any;
+
+  /**
+   * The active values for the points.
+   */
   activeValues?: any;
+
+  /**
+   * The data for the points.
+   */
   data: ChartInternalShallowDataShape[];
+
+  /**
+   * The y-scale for the points.
+   */
   yScale: any;
+
+  /**
+   * The x-scale for the points.
+   */
   xScale: any;
+
+  /**
+   * The unique identifier for the points.
+   */
   id: string;
+
+  /**
+   * The height of the points.
+   */
   height: number;
+
+  /**
+   * The width of the points.
+   */
   width: number;
+
+  /**
+   * Determines when the points should be shown. Can be a boolean or one of the following strings: 'hover', 'first', 'last'.
+   */
   show: boolean | 'hover' | 'first' | 'last';
+
+  /**
+   * The point element.
+   */
   point: ReactElement<ScatterPointProps, typeof ScatterPoint>;
+
+  /**
+   * The index of the points.
+   */
   index: number;
 }
 
