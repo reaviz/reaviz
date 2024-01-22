@@ -1,3 +1,8 @@
+# 15.6.1 - 1/22/24
+- [fix] improve default outline
+- [chore] upgrade depedencies
+- [chore] improve some area chart demos
+
 # 15.6.0 - 12/29/23
 - [feature] Accessibility features for Line/Area/Radial charts #184
 
