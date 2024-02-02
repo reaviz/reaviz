@@ -1,3 +1,7 @@
+# 15.6.2 - 1/22/24
+- [fix] fix sankey on light mode
+- [chore] upgrade depedencies
+
 # 15.6.1 - 1/22/24
 - [fix] improve default outline
 - [chore] upgrade depedencies
