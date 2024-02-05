@@ -1,3 +1,6 @@
+# 15.7.0 - 2/5/24
+- [feature] Gradient support for Line chart #186
+
 # 15.6.2 - 1/22/24
 - [fix] fix sankey on light mode
 - [chore] upgrade depedencies
