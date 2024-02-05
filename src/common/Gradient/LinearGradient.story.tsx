@@ -1,8 +1,9 @@
 import React from 'react';
 import { Gradient } from './Gradient';
-import { Area, AreaChart, AreaSeries } from '../../AreaChart';
+import { Area, AreaChart, AreaSeries, Line } from '../../AreaChart';
 import { singleDateData } from '../../../demo';
 import { GradientStop } from './GradientStop';
+import { LineChart, LineSeries } from '../../LineChart';
 
 export default {
   title: 'Utils/Gradient/Linear',
@@ -22,6 +23,21 @@ export const Simple = () => (
         interpolation="linear"
         colorScheme="cybertron"
         area={<Area gradient={<Gradient />} />}
+      />
+    }
+  />
+);
+
+export const LineGradient = () => (
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <LineSeries
+        interpolation="linear"
+        colorScheme="cybertron"
+        line={<Line strokeWidth={4} gradient={<Gradient />} />}
       />
     }
   />

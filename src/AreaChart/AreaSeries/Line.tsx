@@ -1,6 +1,7 @@
 import React, {
   FC,
   Fragment,
+  ReactElement,
   useCallback,
   useEffect,
   useMemo,
@@ -22,6 +23,8 @@ import {
   PropFunctionTypes
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
+import { Gradient, GradientProps } from '../../common';
+import { CloneElement } from 'rdk';
 
 export interface LineProps extends PropFunctionTypes {
   /**
@@ -83,9 +86,15 @@ export interface LineProps extends PropFunctionTypes {
    * Internal property to identify if there is a area or not.
    */
   hasArea: boolean;
+
+  /**
+   * Gradient to apply to the line.
+   */
+  gradient: ReactElement<GradientProps, typeof Gradient> | null;
 }
 
 export const Line: FC<Partial<LineProps>> = ({
+  id,
   width,
   data,
   color,
@@ -97,6 +106,7 @@ export const Line: FC<Partial<LineProps>> = ({
   xScale,
   showZeroStroke,
   interpolation,
+  gradient,
   ...rest
 }) => {
   const [pathLength, setPathLength] = useState<number | null>(null);
@@ -193,6 +203,13 @@ export const Line: FC<Partial<LineProps>> = ({
   const extras = constructFunctionProps(rest, data);
   const showLine = hasArea || pathLength !== null;
 
+  const strokeFill = useMemo(() => {
+    if (gradient) {
+      return `url(#gradient-${id})`;
+    }
+    return stroke;
+  }, [gradient, id]);
+
   // framer-motion freaks out when these are added for area
   if (hasArea) {
     delete enter.strokeDashoffset;
@@ -205,7 +222,7 @@ export const Line: FC<Partial<LineProps>> = ({
         <MotionPath
           {...extras}
           pointerEvents="none"
-          stroke={stroke}
+          stroke={strokeFill}
           strokeWidth={strokeWidth}
           fill="none"
           transition={transition}
@@ -217,6 +234,13 @@ export const Line: FC<Partial<LineProps>> = ({
       )}
       {!hasArea && (
         <path opacity="0" d={enter.d} ref={ghostPathRef} pointerEvents="none" />
+      )}
+      {gradient && (
+        <CloneElement<GradientProps>
+          element={gradient}
+          id={`gradient-${id}`}
+          color={stroke}
+        />
       )}
     </Fragment>
   );
