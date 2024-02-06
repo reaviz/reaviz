@@ -1,4 +1,11 @@
-import React, { Component, Children, cloneElement, PropsWithChildren } from 'react';
+import React, {
+  Children,
+  cloneElement,
+  PropsWithChildren,
+  FC,
+  useEffect,
+  useRef
+} from 'react';
 import { toggleTextSelection } from '../utils/selection';
 
 interface MoveProps extends PropsWithChildren {
@@ -13,47 +20,39 @@ interface MoveProps extends PropsWithChildren {
   onMoveEnd: (event) => void;
 }
 
-export class Move extends Component<MoveProps> {
-  static defaultProps: Partial<MoveProps> = {
-    preventRightClick: true,
-    disableText: true,
-    threshold: 0,
-    onMoveStart: () => undefined,
-    onMove: () => undefined,
-    onMoveEnd: () => undefined,
-    onMoveCancel: () => undefined
+export const Move: FC<Partial<MoveProps>> = (props) => {
+  let started = false;
+  let deltaX = 0;
+  let deltaY = 0;
+  let prevXPosition = 0;
+  let prevYPosition = 0;
+  const rqf = useRef<number>();
+
+  useEffect(() => {
+    return () => {
+      cancelAnimationFrame(rqf.current);
+      disposeHandlers();
+    };
+  }, []);
+
+  const disposeHandlers = () => {
+    window.removeEventListener('mousemove', onMouseMove);
+    window.removeEventListener('mouseup', onMouseUp);
+    window.removeEventListener('touchmove', onTouchMove);
+    window.removeEventListener('touchend', onTouchEnd);
+
+    setCursor(false);
+    disableText(true);
   };
 
-  started = false;
-  deltaX = 0;
-  deltaY = 0;
-  prevXPosition = 0;
-  prevYPosition = 0;
-  rqf: any;
-
-  componentWillUnmount() {
-    cancelAnimationFrame(this.rqf);
-    this.disposeHandlers();
-  }
-
-  disposeHandlers() {
-    window.removeEventListener('mousemove', this.onMouseMove);
-    window.removeEventListener('mouseup', this.onMouseUp);
-    window.removeEventListener('touchmove', this.onTouchMove);
-    window.removeEventListener('touchend', this.onTouchEnd);
-
-    this.setCursor(false);
-    this.disableText(true);
-  }
-
-  disableText(shouldDisable: boolean) {
-    if (this.props.disableText) {
+  const disableText = (shouldDisable: boolean) => {
+    if (props.disableText) {
       toggleTextSelection(shouldDisable);
     }
-  }
+  };
 
-  setCursor(set: boolean) {
-    let { cursor } = this.props;
+  const setCursor = (set: boolean) => {
+    let { cursor } = props;
 
     if (cursor) {
       if (!set) {
@@ -62,27 +61,26 @@ export class Move extends Component<MoveProps> {
 
       document.body.style['cursor'] = cursor;
     }
-  }
+  };
 
-  checkThreshold() {
-    const { threshold } = this.props;
+  const checkThreshold = () => {
+    const { threshold } = props;
 
     return (
-      !this.started &&
-      (Math.abs(this.deltaX) > threshold || Math.abs(this.deltaY) > threshold)
+      !started && (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold)
     );
-  }
+  };
 
-  getTouchCoords(event) {
+  const getTouchCoords = (event) => {
     const { clientX, clientY } = event.touches[0];
     return {
       clientX,
       clientY
     };
-  }
+  };
 
-  onMouseDown(event: React.MouseEvent) {
-    const { preventRightClick, disabled } = this.props;
+  const onMouseDown = (event: React.MouseEvent) => {
+    const { preventRightClick, disabled } = props;
 
     const shouldCancel = event.nativeEvent.which === 3 && preventRightClick;
     if (shouldCancel || disabled) {
@@ -92,66 +90,69 @@ export class Move extends Component<MoveProps> {
     event.preventDefault();
     event.stopPropagation();
 
-    this.started = false;
+    started = false;
 
     // Always bind event so we cancel movement even if no action was taken
-    window.addEventListener('mousemove', this.onMouseMove);
-    window.addEventListener('mouseup', this.onMouseUp);
-  }
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+  };
 
-  onMouseMove = (event) => {
+  const onMouseMove = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
     const { movementX, movementY } = event;
-    this.deltaX = this.deltaX + movementX;
-    this.deltaY = this.deltaY + movementY;
+    let localDeltaX = deltaX + movementX;
+    let localDeltaY = deltaY + movementY;
 
-    if (this.checkThreshold()) {
-      this.disableText(true);
-      this.setCursor(true);
+    if (checkThreshold()) {
+      disableText(true);
+      setCursor(true);
 
-      this.deltaX = 0;
-      this.deltaY = 0;
-      this.started = true;
+      localDeltaX = 0;
+      localDeltaY = 0;
+      started = true;
 
-      this.props.onMoveStart({
+      props.onMoveStart({
         nativeEvent: event,
         type: 'mouse'
       });
     } else {
-      this.rqf = requestAnimationFrame(() => {
-        this.props.onMove({
+      rqf.current = requestAnimationFrame(() => {
+        props.onMove({
           nativeEvent: event,
           type: 'mouse',
-          x: movementX,
-          y: movementY
+          x: localDeltaX,
+          y: localDeltaY
         });
       });
     }
+
+    deltaX = localDeltaX;
+    deltaY = localDeltaY;
   };
 
-  onMouseUp = (event) => {
+  const onMouseUp = (event) => {
     event.preventDefault();
     event.stopPropagation();
 
-    this.disposeHandlers();
+    disposeHandlers();
 
-    if (this.started) {
-      this.props.onMoveEnd({
+    if (started) {
+      props.onMoveEnd({
         nativeEvent: event,
         type: 'mouse'
       });
     } else {
-      this.props.onMoveCancel({
+      props.onMoveCancel({
         nativeEvent: event,
         type: 'mouse'
       });
     }
   };
 
-  onTouchStart(event: React.TouchEvent) {
-    const { disabled } = this.props;
+  const onTouchStart = (event: React.TouchEvent) => {
+    const { disabled } = props;
 
     if (disabled || event.touches.length !== 1) {
       return;
@@ -160,37 +161,37 @@ export class Move extends Component<MoveProps> {
     event.preventDefault();
     event.stopPropagation();
 
-    this.started = false;
-    this.prevXPosition = event.touches[0].clientX;
-    this.prevYPosition = event.touches[0].clientY;
+    started = false;
+    prevXPosition = event.touches[0].clientX;
+    prevYPosition = event.touches[0].clientY;
 
     // Always bind event so we cancel movement even if no action was taken
-    window.addEventListener('touchmove', this.onTouchMove);
-    window.addEventListener('touchend', this.onTouchEnd);
-  }
+    window.addEventListener('touchmove', onTouchMove);
+    window.addEventListener('touchend', onTouchEnd);
+  };
 
-  onTouchMove = (event: TouchEvent) => {
+  const onTouchMove = (event: TouchEvent) => {
     event.preventDefault();
     event.stopPropagation();
 
     // Calculate delta from previous position and current
-    const { clientX, clientY } = this.getTouchCoords(event);
-    const deltaX = clientX - this.prevXPosition;
-    const deltaY = clientY - this.prevYPosition;
+    const { clientX, clientY } = getTouchCoords(event);
+    let localDeltaX = clientX - prevXPosition;
+    let localDeltaY = clientY - prevYPosition;
 
     // Track the delta
-    this.deltaX = this.deltaX + deltaX;
-    this.deltaY = this.deltaY + deltaY;
+    localDeltaX = localDeltaX + localDeltaX;
+    localDeltaY = localDeltaY + localDeltaY;
 
-    if (this.checkThreshold()) {
-      this.disableText(true);
-      this.setCursor(true);
+    if (checkThreshold()) {
+      disableText(true);
+      setCursor(true);
 
-      this.deltaX = 0;
-      this.deltaY = 0;
-      this.started = true;
+      localDeltaX = 0;
+      localDeltaY = 0;
+      started = true;
 
-      this.props.onMoveStart({
+      props.onMoveStart({
         // TODO: Come back and clean this up...
         nativeEvent: {
           ...event,
@@ -200,8 +201,8 @@ export class Move extends Component<MoveProps> {
         type: 'touch'
       });
     } else {
-      this.rqf = requestAnimationFrame(() => {
-        this.props.onMove({
+      rqf.current = requestAnimationFrame(() => {
+        props.onMove({
           // TODO: Come back and clean this up...
           nativeEvent: {
             ...event,
@@ -209,51 +210,59 @@ export class Move extends Component<MoveProps> {
             clientY
           },
           type: 'touch',
-          x: deltaX,
-          y: deltaY
+          x: localDeltaX,
+          y: localDeltaY
         });
       });
     }
 
-    this.prevXPosition = clientX;
-    this.prevYPosition = clientY;
+    prevXPosition = clientX;
+    prevYPosition = clientY;
   };
 
-  onTouchEnd = (event: TouchEvent) => {
+  const onTouchEnd = (event: TouchEvent) => {
     event.preventDefault();
     event.stopPropagation();
-    this.disposeHandlers();
+    disposeHandlers();
 
-    if (this.started) {
-      this.props.onMoveEnd({
+    if (started) {
+      props.onMoveEnd({
         nativeEvent: event,
         type: 'touch'
       });
     } else {
-      this.props.onMoveCancel({
+      props.onMoveCancel({
         nativeEvent: event,
         type: 'touch'
       });
     }
   };
 
-  render() {
-    return Children.map(this.props.children, (child: any) =>
-      cloneElement(child, {
-        ...child.props,
-        onMouseDown: (e) => {
-          this.onMouseDown(e);
-          if (child.props.onMouseDown) {
-            child.props.onMouseDown(e);
-          }
-        },
-        onTouchStart: (e) => {
-          this.onTouchStart(e);
-          if (child.props.onTouchStart) {
-            child.props.onTouchStart(e);
-          }
+  return Children.map(props.children, (child: any) =>
+    cloneElement(child, {
+      ...child.props,
+      onMouseDown: (e) => {
+        onMouseDown(e);
+        if (child.props.onMouseDown) {
+          child.props.onMouseDown(e);
         }
-      })
-    );
-  }
-}
+      },
+      onTouchStart: (e) => {
+        onTouchStart(e);
+        if (child.props.onTouchStart) {
+          child.props.onTouchStart(e);
+        }
+      }
+    })
+  );
+};
+
+Move.defaultProps = {
+  preventRightClick: true,
+  disableText: true,
+  threshold: 0,
+  onMoveStart: () => undefined,
+  onMove: () => undefined,
+  onMoveEnd: () => undefined,
+  onMoveCancel: () => undefined
+};
