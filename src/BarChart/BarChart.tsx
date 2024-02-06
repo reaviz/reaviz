@@ -1,11 +1,4 @@
-import React, {
-  Fragment,
-  Component,
-  ReactElement,
-  FC,
-  useMemo,
-  useCallback
-} from 'react';
+import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
 import classNames from 'classnames';
 import {
   isAxisVisible,

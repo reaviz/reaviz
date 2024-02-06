@@ -1,4 +1,4 @@
-import React, { Component, FC } from 'react';
+import React, { FC } from 'react';
 import { AreaSeriesProps, AreaSeries } from './AreaSeries';
 import { formatValue } from '../../common/utils/formatting';
 import {

@@ -1,4 +1,4 @@
-import React, { Component, FC } from 'react';
+import React, { FC } from 'react';
 import {
   AreaChart,
   AreaChartProps,
@@ -21,7 +21,9 @@ export interface AreaSparklineChartProps extends AreaChartProps {
   data: ChartShallowDataShape[];
 }
 
-export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (props) => <AreaChart {...props} />;
+export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
+  props
+) => <AreaChart {...props} />;
 
 AreaSparklineChart.defaultProps = {
   gridlines: null,
