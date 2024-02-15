@@ -189,7 +189,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
 
   const ariaLabelData = useMemo(() => getAriaLabel(data), [data]);
 
-  const isVisible = visible ? visible?.(data, index) : active;  
+  const isVisible = visible ? visible?.(data, index) : active;
 
   return (
     <Fragment>
@@ -204,7 +204,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         onClick={onClick}
         className={classNames(className, {
           [css.inactive]: !active,
-          [css.hidden]: !isVisible,
+          [css.hidden]: !isVisible
         })}
         tabIndex={0}
         aria-label={ariaLabelData}
