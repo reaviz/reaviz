@@ -1,4 +1,11 @@
-import React, { useState, FC, Fragment, ReactElement, useEffect, useCallback } from 'react';
+import React, {
+  useState,
+  FC,
+  Fragment,
+  ReactElement,
+  useEffect,
+  useCallback
+} from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
 import {
   RadialScatterPoint,
@@ -42,6 +49,11 @@ export interface RadialScatterSeriesProps {
    * Active element ids to highlight.
    */
   activeIds?: string[];
+
+  /**
+   * When to show the point.
+   */
+  show: boolean;
 }
 
 export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
@@ -50,20 +62,26 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
   xScale,
   yScale,
   animated,
-  activeIds
+  activeIds,
+  show = true
 }) => {
-  const [internalActiveIds, setInternalActiveIds] = useState<string[] | null>(activeIds);
+  const [internalActiveIds, setInternalActiveIds] = useState<string[] | null>(
+    activeIds
+  );
 
   useEffect(() => {
     setInternalActiveIds(activeIds || []);
   }, [activeIds]);
 
-  const onMouseEnter = useCallback(({ value }) => {
-    // Only perform this on unmanaged activations
-    if (!activeIds) {
-      setInternalActiveIds([value.id]);
-    }
-  }, [activeIds]);
+  const onMouseEnter = useCallback(
+    ({ value }) => {
+      // Only perform this on unmanaged activations
+      if (!activeIds) {
+        setInternalActiveIds([value.id]);
+      }
+    },
+    [activeIds]
+  );
 
   const onMouseLeave = useCallback(() => {
     // Only perform this on unmanaged activations
@@ -72,35 +90,54 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
     }
   }, [activeIds]);
 
-  const renderPoint = useCallback((d: ChartInternalShallowDataShape, index: number) => {
-    let dataId;
-    if (d.id) {
-      dataId = d.id;
-    } else {
-      console.warn(
-        'No \'id\' property provided for scatter point; provide one via \'id\'.'
+  const isVisible = useCallback(() => show, [show]);
+
+  const renderPoint = useCallback(
+    (d: ChartInternalShallowDataShape, index: number) => {
+      let dataId;
+      if (d.id) {
+        dataId = d.id;
+      } else {
+        console.warn(
+          'No \'id\' property provided for scatter point; provide one via \'id\'.'
+        );
+      }
+
+      const key = identifier(`${dataId || index}`);
+      const active =
+        !(internalActiveIds && internalActiveIds.length) ||
+        internalActiveIds.includes(dataId);
+
+      const pointVisible = point.props?.visible;
+
+      return (
+        <CloneElement<RadialScatterPointProps>
+          /* Trick to pass isVisible callback, directly cannot be passed when point is a cloned element already */
+          {...(pointVisible ? {} : { visible: isVisible })}
+          element={point}
+          key={key}
+          data={d}
+          index={index}
+          active={active}
+          xScale={xScale}
+          yScale={yScale}
+          animated={animated}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
+        />
       );
-    }
-
-    const key = identifier(`${dataId || index}`);
-    const active =
-      !(internalActiveIds && internalActiveIds.length) || internalActiveIds.includes(dataId);
-
-    return (
-      <CloneElement<RadialScatterPointProps>
-        element={point}
-        key={key}
-        data={d}
-        index={index}
-        active={active}
-        xScale={xScale}
-        yScale={yScale}
-        animated={animated}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-      />
-    );
-  }, [point, internalActiveIds, xScale, yScale, animated, onMouseEnter, onMouseLeave]);
+    },
+    [
+      isVisible,
+      point,
+      internalActiveIds,
+      xScale,
+      yScale,
+      animated,
+      onMouseEnter,
+      onMouseLeave
+    ]
+  );
 
   return <Fragment>{data.map(renderPoint)}</Fragment>;
 };

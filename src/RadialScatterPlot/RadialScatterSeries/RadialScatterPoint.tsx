@@ -203,7 +203,8 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
         onMouseLeave={onMouseLeave}
         onClick={onClick}
         className={classNames(className, {
-          [css.inactive]: !active || !isVisible
+          [css.inactive]: !active,
+          [css.hidden]: !isVisible
         })}
         tabIndex={0}
         aria-label={ariaLabelData}
