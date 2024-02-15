@@ -1,3 +1,6 @@
+# 15.7.1 - 2/15/24
+- [fix] Fix disappearing points on hover #189
+
 # 15.7.0 - 2/5/24
 - [feature] Gradient support for Line chart #186
 
