@@ -1,8 +1,18 @@
 import { CloneElement } from 'rdk';
-import React, { FC, ReactElement, createRef, useCallback, useEffect, useState } from 'react';
+import React, {
+  FC,
+  ReactElement,
+  createRef,
+  useCallback,
+  useEffect,
+  useState
+} from 'react';
 import { ChartDataTypes } from '../../data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
-import { LinearAxisTickSeries, LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
+import {
+  LinearAxisTickSeries,
+  LinearAxisTickSeriesProps
+} from './LinearAxisTickSeries';
 
 export interface LinearAxisDimensionChanged {
   height?: number;
@@ -17,9 +27,13 @@ export interface LinearAxisProps {
   roundDomains?: boolean;
   type?: 'value' | 'time' | 'category' | 'duration';
   position?: 'start' | 'end' | 'center';
-  tickSeries?: ReactElement<LinearAxisTickSeriesProps, typeof LinearAxisTickSeries>;
+  tickSeries?: ReactElement<
+    LinearAxisTickSeriesProps,
+    typeof LinearAxisTickSeries
+  >;
   axisLine?: ReactElement<LinearAxisLineProps, typeof LinearAxisLine> | null;
   scale?: any;
+  visibility?: 'visible' | 'hidden';
   orientation?: 'horizontal' | 'vertical';
   onDimensionsChange?: (event: LinearAxisDimensionChanged) => void;
 }
@@ -29,7 +43,7 @@ interface LinearAxisState {
   width?: number;
 }
 
-export const LinearAxis: FC<Partial<LinearAxisProps>> = props => {
+export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   const {
     position,
     tickSeries,
@@ -38,11 +52,15 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = props => {
     width,
     scale,
     orientation,
+    visibility = 'visible',
     onDimensionsChange
   } = props;
 
   const containerRef = createRef<SVGGElement>();
-  const [dimensions, setDimensions] = useState<LinearAxisState>({ height: height, width: width });
+  const [dimensions, setDimensions] = useState<LinearAxisState>({
+    height: height,
+    width: width
+  });
 
   const updateDimensions = useCallback(() => {
     const shouldOffset = position !== 'center';
@@ -92,7 +110,11 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = props => {
   const { translateX, translateY } = getPosition();
 
   return (
-    <g transform={`translate(${translateX}, ${translateY})`} ref={containerRef}>
+    <g
+      transform={`translate(${translateX}, ${translateY})`}
+      ref={containerRef}
+      visibility={visibility}
+    >
       {axisLine && (
         <CloneElement<LinearAxisLineProps>
           element={axisLine}
