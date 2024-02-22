@@ -1,3 +1,6 @@
+# 15.7.2 - 2/22/24
+- [fix] Hide axis until chart became visible to avoid blinking #191
+
 # 15.7.1 - 2/15/24
 - [fix] Fix disappearing points on hover #189
 
