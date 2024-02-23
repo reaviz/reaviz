@@ -115,9 +115,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
     [ChartDataTypes, ChartDataTypes] | null
   >(null);
   const [isZoomed, setIsZoomed] = useState<boolean>(false);
-  const aggregatedData = useMemo(() => buildShallowChartData(data), [data]);
   const [hoveredValue, setHoveredValue] = useState<number | null>(null);
   const [isHovered, setIsHovered] = useState<boolean>(false);
+  const aggregatedData = useMemo(() => buildShallowChartData(data), [data]);
 
   const getScales = useCallback(
     (chartHeight: number, chartWidth: number) => {
@@ -300,14 +300,19 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       getScales,
       preventAnimation,
       series,
+      aggregatedData,
+      handleMouseMove,
+      handleMouseLeave,
       gridlines,
       yAxis,
       xAxis,
+      isHovered,
+      height,
+      segmentBounds,
       secondaryAxis,
       brush,
       zoomPan,
       onZoomPan,
-      aggregatedData,
       zoomDomain,
       isZoomed
     ]
