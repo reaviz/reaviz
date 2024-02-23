@@ -37,6 +37,8 @@ import {
 import { CloneElement } from 'rdk';
 import css from './ScatterPlot.module.css';
 
+const HALF_WIDTH = 62;
+
 export interface ScatterPlotProps extends ChartProps {
   /**
    * Data the chart will receive to render.
@@ -77,6 +79,10 @@ export interface ScatterPlotProps extends ChartProps {
    * Any secondary axis components. Useful for multi-axis charts.
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+  /**
+   * Optional boolean to highlight segments.
+   */
+  highlightSegments?: boolean; // todo: handle allow background color to be specified
 }
 
 export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
@@ -93,7 +99,8 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   containerClassName,
   brush,
   zoomPan,
-  secondaryAxis
+  secondaryAxis,
+  highlightSegments = true
 }) => {
   const zoomControlled = useMemo(
     () =>
@@ -109,6 +116,8 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   >(null);
   const [isZoomed, setIsZoomed] = useState<boolean>(false);
   const aggregatedData = useMemo(() => buildShallowChartData(data), [data]);
+  const [hoveredValue, setHoveredValue] = useState<number | null>(null);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const getScales = useCallback(
     (chartHeight: number, chartWidth: number) => {
@@ -135,6 +144,35 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
     },
     [yAxis, xAxis, aggregatedData, zoomDomain]
   );
+
+  const handleMouseMove = useCallback(
+    (event: { clientX: number; clientY: number; currentTarget: any }) => {
+      if (!highlightSegments) return;
+      const { clientX, clientY, currentTarget } = event;
+      const rect = currentTarget.getBoundingClientRect();
+      const x = clientX - rect.left;
+      const y = clientY - rect.top;
+
+      console.log('mouse coordinates in rect', x, y);
+
+      setHoveredValue(x);
+      setIsHovered((prev) => !prev);
+    },
+    [highlightSegments]
+  );
+
+  const handleMouseLeave = useCallback(() => {
+    if (!highlightSegments) return;
+    setHoveredValue(null);
+    setIsHovered((prev) => !prev);
+  }, [highlightSegments]);
+
+  const segmentBounds =
+    Math.sign(hoveredValue - HALF_WIDTH) === -1
+      ? 0
+      : hoveredValue > 700
+      ? 645
+      : hoveredValue - HALF_WIDTH;
 
   const onZoomPan = useCallback(
     (event: ZoomPanChangeEvent) => {
@@ -165,76 +203,96 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
 
       return (
         <Fragment>
-          {chartSized && gridlines && (
-            <CloneElement<GridlineSeriesProps>
-              element={gridlines}
-              height={chartHeight}
-              width={chartWidth}
-              yScale={yScale}
-              xScale={xScale}
-              yAxis={yAxis.props}
-              xAxis={xAxis.props}
-            />
-          )}
-          <CloneElement<LinearAxisProps>
-            element={xAxis}
-            height={chartHeight}
+          <g
             width={chartWidth}
-            scale={xScale}
-            visibility={chartSized ? 'visible' : 'hidden'}
-            onDimensionsChange={(e) => updateAxes('horizontal', e)}
-          />
-          <CloneElement<LinearAxisProps>
-            element={yAxis}
             height={chartHeight}
-            width={chartWidth}
-            scale={yScale}
-            visibility={chartSized ? 'visible' : 'hidden'}
-            onDimensionsChange={(e) => updateAxes('vertical', e)}
-          />
-          {secondaryAxis &&
-            secondaryAxis.map((axis, i) => (
-              <CloneElement<LinearAxisProps>
-                key={i}
-                element={axis}
+            onMouseEnter={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
+            {chartSized && gridlines && (
+              <CloneElement<GridlineSeriesProps>
+                element={gridlines}
                 height={chartHeight}
                 width={chartWidth}
-                visibility={chartSized ? 'visible' : 'hidden'}
-                onDimensionsChange={(e) => updateAxes('horizontal', e)}
+                yScale={yScale}
+                xScale={xScale}
+                yAxis={yAxis.props}
+                xAxis={xAxis.props}
               />
-            ))}
-          {chartSized && (
-            <CloneElement<ChartBrushProps>
-              disabled={disableBrush}
-              element={brush}
+            )}
+            <CloneElement<LinearAxisProps>
+              element={xAxis}
               height={chartHeight}
               width={chartWidth}
               scale={xScale}
-            >
-              <CloneElement<ChartZoomPanProps>
-                element={zoomPan}
-                onZoomPan={onZoomPan}
-                height={chartHeight}
-                width={chartWidth}
-                axisType={xAxis.props.type}
-                roundDomains={xAxis.props.roundDomains}
-                data={aggregatedData}
-                domain={zoomDomain}
-              >
-                <CloneElement<ScatterSeriesProps>
-                  element={series}
-                  id={`area-series-${id}`}
-                  data={aggregatedData}
+              visibility={chartSized ? 'visible' : 'hidden'}
+              onDimensionsChange={(e) => updateAxes('horizontal', e)}
+            />
+            {isHovered && (
+              <>
+                <g>
+                  <rect
+                    // hard-coded height/width for simple linear scatter plot on desktop but would need a calc for both
+                    height={height - 57}
+                    width={85}
+                    x={segmentBounds}
+                    y="0"
+                  />
+                </g>
+              </>
+            )}
+            <CloneElement<LinearAxisProps>
+              element={yAxis}
+              height={chartHeight}
+              width={chartWidth}
+              scale={yScale}
+              visibility={chartSized ? 'visible' : 'hidden'}
+              onDimensionsChange={(e) => updateAxes('vertical', e)}
+            />
+            {secondaryAxis &&
+              secondaryAxis.map((axis, i) => (
+                <CloneElement<LinearAxisProps>
+                  key={i}
+                  element={axis}
                   height={chartHeight}
                   width={chartWidth}
-                  yScale={yScale}
-                  xScale={xScale}
-                  isZoomed={isZoomed}
-                  animated={animated}
+                  visibility={chartSized ? 'visible' : 'hidden'}
+                  onDimensionsChange={(e) => updateAxes('horizontal', e)}
                 />
+              ))}
+            {chartSized && (
+              <CloneElement<ChartBrushProps>
+                disabled={disableBrush}
+                element={brush}
+                height={chartHeight}
+                width={chartWidth}
+                scale={xScale}
+              >
+                <CloneElement<ChartZoomPanProps>
+                  element={zoomPan}
+                  onZoomPan={onZoomPan}
+                  height={chartHeight}
+                  width={chartWidth}
+                  axisType={xAxis.props.type}
+                  roundDomains={xAxis.props.roundDomains}
+                  data={aggregatedData}
+                  domain={zoomDomain}
+                >
+                  <CloneElement<ScatterSeriesProps>
+                    element={series}
+                    id={`area-series-${id}`}
+                    data={aggregatedData}
+                    height={chartHeight}
+                    width={chartWidth}
+                    yScale={yScale}
+                    xScale={xScale}
+                    isZoomed={isZoomed}
+                    animated={animated}
+                  />
+                </CloneElement>
               </CloneElement>
-            </CloneElement>
-          )}
+            )}
+          </g>
         </Fragment>
       );
     },
