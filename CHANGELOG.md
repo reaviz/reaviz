@@ -1,3 +1,6 @@
+# 15.8.0 - 2/27/24
+- [feature] add value markers for linear/radial line/area/bar/scatter #193
+
 # 15.7.2 - 2/22/24
 - [fix] Hide axis until chart became visible to avoid blinking #191
 
