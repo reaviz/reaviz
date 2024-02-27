@@ -3,6 +3,7 @@ import { ChartInternalShallowDataShape } from '../../common/data';
 import { CloneElement } from 'rdk';
 import { ScatterPoint, ScatterPointProps } from './ScatterPoint';
 import { identifier } from 'safe-identifier';
+import { LinearValueMarker, LinearValueMarkerProps } from '../../common';
 
 export interface ScatterSeriesProps {
   /**
@@ -54,6 +55,13 @@ export interface ScatterSeriesProps {
    * Active element ids to highlight.
    */
   activeIds?: string[];
+
+  /**
+   * Value markers line for the chart.
+   */
+  valueMarkers:
+    | ReactElement<LinearValueMarkerProps, typeof LinearValueMarker>[]
+    | null;
 }
 
 // For bubble charts, often symbols exceed the area
@@ -69,6 +77,8 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   isZoomed,
   activeIds,
   point,
+  valueMarkers,
+  yScale,
   ...rest
 }) => {
   const renderPoint = useCallback(
@@ -86,6 +96,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         <CloneElement<ScatterPointProps>
           element={point}
           key={key}
+          yScale={yScale}
           {...rest}
           id={id}
           data={pointData}
@@ -94,7 +105,24 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         />
       );
     },
-    [point, id, rest, activeIds]
+    [activeIds, point, yScale, rest, id]
+  );
+
+  const renderValueMarkers = useCallback(
+    () => (
+      <>
+        {valueMarkers?.length &&
+          valueMarkers.map((marker) => (
+            <CloneElement<LinearValueMarkerProps>
+              key={marker.key}
+              element={marker}
+              size={width}
+              value={yScale(marker.props.value)}
+            />
+          ))}
+      </>
+    ),
+    [valueMarkers, width, yScale]
   );
 
   return (
@@ -109,6 +137,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
           />
         </clipPath>
       </defs>
+      {renderValueMarkers()}
       <g clipPath={`url(#${id}-path)`}>{data!.map(renderPoint)}</g>
     </Fragment>
   );

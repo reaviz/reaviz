@@ -16,6 +16,7 @@ import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
 import { TooltipAreaProps, TooltipArea } from '../../common/Tooltip';
+import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 
@@ -117,6 +118,13 @@ export interface RadialAreaSeriesProps {
    * Whether the curve should be closed. Set to true by deafult
    */
   isClosedCurve: boolean;
+
+  /**
+   * Value markers line for the chart.
+   */
+  valueMarkers:
+    | ReactElement<RadialValueMarkerProps, typeof RadialValueMarker>[]
+    | null;
 }
 
 export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
@@ -138,7 +146,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   interpolation,
   startAngle,
   endAngle,
-  isClosedCurve
+  isClosedCurve,
+  valueMarkers
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
@@ -193,7 +202,19 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
         )}
       </>
     ),
-    [animated, area, getColorForPoint, id, innerRadius, interpolation, isClosedCurve, line, outerRadius, xScale, yScale]
+    [
+      animated,
+      area,
+      getColorForPoint,
+      id,
+      innerRadius,
+      interpolation,
+      isClosedCurve,
+      line,
+      outerRadius,
+      xScale,
+      yScale
+    ]
   );
 
   const renderSymbols = useCallback(
@@ -251,6 +272,21 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
     [renderArea, renderSymbols]
   );
 
+  const renderValueMarkers = useCallback(
+    () => (
+      <>
+        {valueMarkers?.length &&
+          valueMarkers.map((marker) => (
+            <CloneElement<RadialValueMarkerProps>
+              key={marker.key}
+              element={marker}
+              value={yScale(marker.props.value)}
+            />
+          ))}
+      </>
+    ),
+    [valueMarkers, yScale]
+  );
 
   return (
     <CloneElement<TooltipAreaProps>
@@ -274,6 +310,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
           renderMultiSeries(data as unknown as ChartInternalNestedDataShape[])}
         {!isMulti &&
           renderSingleSeries(data as ChartInternalShallowDataShape[])}
+        {renderValueMarkers()}
       </g>
     </CloneElement>
   );
