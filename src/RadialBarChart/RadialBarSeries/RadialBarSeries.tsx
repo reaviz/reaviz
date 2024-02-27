@@ -6,7 +6,11 @@ import React, {
   useCallback,
   useMemo
 } from 'react';
-import { ChartInternalDataShape, ChartInternalNestedDataShape, ChartInternalShallowDataShape } from '../../common/data';
+import {
+  ChartInternalDataShape,
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape
+} from '../../common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
 import { CloneElement } from 'rdk';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
@@ -16,6 +20,7 @@ import {
   ChartTooltip
 } from '../../common/Tooltip';
 import isEqual from 'react-fast-compare';
+import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
 
 export type RadialBarSeriesType = 'standard' | 'grouped';
 export interface RadialBarSeriesProps {
@@ -93,6 +98,13 @@ export interface RadialBarSeriesProps {
    * The type of the chart.
    */
   type?: RadialBarSeriesType;
+
+  /**
+   * Value markers line for the chart.
+   */
+  valueMarkers:
+    | ReactElement<RadialValueMarkerProps, typeof RadialValueMarker>[]
+    | null;
 }
 
 export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
@@ -110,14 +122,20 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   animated,
   startAngle,
   endAngle,
-  type
+  type,
+  valueMarkers
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
-  const isMultiSeries = useMemo(() => (type === 'grouped'), [type]);
+  const isMultiSeries = useMemo(() => type === 'grouped', [type]);
 
   const renderBar = useCallback(
-    (point: ChartInternalShallowDataShape, innerBarCount: number, index: number, barCount: number,
-      groupIndex?: number) => {
+    (
+      point: ChartInternalShallowDataShape,
+      innerBarCount: number,
+      index: number,
+      barCount: number,
+      groupIndex?: number
+    ) => {
       const active = activeValues && data && isEqual(activeValues.x, point.x);
 
       return (
@@ -142,7 +160,19 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
         </Fragment>
       );
     },
-    [activeValues, animated, bar, colorScheme, data, endAngle, id, innerRadius, startAngle, xScale, yScale]
+    [
+      activeValues,
+      animated,
+      bar,
+      colorScheme,
+      data,
+      endAngle,
+      id,
+      innerRadius,
+      startAngle,
+      xScale,
+      yScale
+    ]
   );
 
   const renderBarGroup = useCallback(
@@ -152,7 +182,6 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       barCount: number,
       groupIndex?: number
     ) => {
-
       return (
         <Fragment>
           {data.map((barData, barIndex) =>
@@ -162,6 +191,22 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       );
     },
     [renderBar]
+  );
+
+  const renderValueMarkers = useCallback(
+    () => (
+      <>
+        {valueMarkers?.length &&
+          valueMarkers.map((marker) => (
+            <CloneElement<RadialValueMarkerProps>
+              key={marker.key}
+              element={marker}
+              value={yScale(marker.props.value)}
+            />
+          ))}
+      </>
+    ),
+    [valueMarkers, yScale]
   );
 
   return (
@@ -181,20 +226,23 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       startAngle={startAngle}
       endAngle={endAngle}
     >
-      {isMultiSeries ?
-        (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
+      {isMultiSeries
+        ? (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
           <g key={`bar-group-${index}`}>
             {renderBarGroup(
-              groupData.data as ChartInternalShallowDataShape[],
-              data.length,
-              groupData.data.length,
-              index
+                groupData.data as ChartInternalShallowDataShape[],
+                data.length,
+                groupData.data.length,
+                index
             )}
           </g>
         ))
-        :
-        renderBarGroup(data as ChartInternalShallowDataShape[], 1, data.length)
-      }
+        : renderBarGroup(
+            data as ChartInternalShallowDataShape[],
+            1,
+            data.length
+        )}
+      {renderValueMarkers()}
     </CloneElement>
   );
 };
