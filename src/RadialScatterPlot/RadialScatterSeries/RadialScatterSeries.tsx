@@ -13,6 +13,7 @@ import {
 } from './RadialScatterPoint';
 import { CloneElement } from 'rdk';
 import { identifier } from 'safe-identifier';
+import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
 
 export interface RadialScatterSeriesProps {
   /**
@@ -54,6 +55,13 @@ export interface RadialScatterSeriesProps {
    * When to show the point.
    */
   show: boolean;
+
+  /**
+   * Value markers line for the chart.
+   */
+  valueMarkers:
+    | ReactElement<RadialValueMarkerProps, typeof RadialValueMarker>[]
+    | null;
 }
 
 export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
@@ -63,7 +71,8 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
   yScale,
   animated,
   activeIds,
-  show = true
+  show = true,
+  valueMarkers
 }) => {
   const [internalActiveIds, setInternalActiveIds] = useState<string[] | null>(
     activeIds
@@ -139,7 +148,28 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
     ]
   );
 
-  return <Fragment>{data.map(renderPoint)}</Fragment>;
+  const renderValueMarkers = useCallback(
+    () => (
+      <>
+        {valueMarkers?.length &&
+          valueMarkers.map((marker) => (
+            <CloneElement<RadialValueMarkerProps>
+              key={marker.key}
+              element={marker}
+              value={yScale(marker.props.value)}
+            />
+          ))}
+      </>
+    ),
+    [valueMarkers, yScale]
+  );
+
+  return (
+    <Fragment>
+      {renderValueMarkers()}
+      {data.map(renderPoint)}
+    </Fragment>
+  );
 };
 
 RadialScatterSeries.defaultProps = {

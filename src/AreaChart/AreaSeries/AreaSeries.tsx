@@ -23,6 +23,7 @@ import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '../../common/utils/interpolation';
 import { getColor, ColorSchemeType } from '../../common/color';
 import { identifier } from 'safe-identifier';
+import { LinearValueMarker, LinearValueMarkerProps } from '../../common';
 
 export type AreaChartTypes =
   | 'standard'
@@ -110,6 +111,13 @@ export interface AreaSeriesProps {
    * Whether the chart has been zoomed or not. Set internally by `AreaChart`.
    */
   isZoomed: boolean;
+
+  /**
+   * Value markers line for the chart.
+   */
+  valueMarkers:
+    | ReactElement<LinearValueMarkerProps, typeof LinearValueMarker>[]
+    | null;
 }
 
 // For area charts, often symbols exceed the area
@@ -133,7 +141,8 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   area,
   interpolation,
   line,
-  colorScheme
+  colorScheme,
+  valueMarkers
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const [activePoint, setActivePoint] = useState<any | null>(null);
@@ -257,17 +266,20 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     ]
   );
 
-  const renderMarkLine = useCallback(() => (
-    <>
-      {activeValues && markLine && (
-        <CloneElement<MarkLineProps>
-          element={markLine}
-          height={height}
-          pointX={activePoint}
-        />
-      )}
-    </>
-  ), [activePoint, activeValues, height, markLine]);
+  const renderMarkLine = useCallback(
+    () => (
+      <>
+        {activeValues && markLine && (
+          <CloneElement<MarkLineProps>
+            element={markLine}
+            height={height}
+            pointX={activePoint}
+          />
+        )}
+      </>
+    ),
+    [activePoint, activeValues, height, markLine]
+  );
 
   const renderSingleSeries = useCallback(
     (data: ChartInternalShallowDataShape[]) => (
@@ -303,6 +315,23 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     [renderArea, renderMarkLine, renderSymbols]
   );
 
+  const renderValueMarkers = useCallback(
+    () => (
+      <>
+        {valueMarkers?.length &&
+          valueMarkers.map((marker) => (
+            <CloneElement<LinearValueMarkerProps>
+              key={marker.key}
+              element={marker}
+              size={width}
+              value={yScale(marker.props.value)}
+            />
+          ))}
+      </>
+    ),
+    [valueMarkers, width, yScale]
+  );
+
   return (
     <Fragment>
       <defs>
@@ -330,6 +359,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           {isMulti && renderMultiSeries(data as ChartInternalNestedDataShape[])}
           {!isMulti &&
             renderSingleSeries(data as ChartInternalShallowDataShape[])}
+          {renderValueMarkers()}
         </g>
       </CloneElement>
     </Fragment>

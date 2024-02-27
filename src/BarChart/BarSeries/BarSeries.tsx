@@ -22,6 +22,7 @@ import {
   ChartTooltip,
   TooltipAreaEvent
 } from '../../common/Tooltip';
+import { LinearValueMarker, LinearValueMarkerProps } from '../../common';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 
@@ -110,6 +111,13 @@ export interface BarSeriesProps {
    * Tooltip for the chart area.
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea> | null;
+
+  /**
+   * Value markers line for the chart.
+   */
+  valueMarkers:
+    | ReactElement<LinearValueMarkerProps, typeof LinearValueMarker>[]
+    | null;
 }
 
 export const BarSeries: FC<Partial<BarSeriesProps>> = ({
@@ -127,7 +135,8 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   isCategorical,
   layout,
   type,
-  id
+  id,
+  valueMarkers
 }) => {
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
@@ -293,6 +302,28 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
     [renderBar]
   );
 
+  const renderValueMarkers = useCallback(
+    () => (
+      <>
+        {valueMarkers?.length &&
+          valueMarkers.map((marker) => (
+            <CloneElement<LinearValueMarkerProps>
+              key={marker.key}
+              element={marker}
+              size={layout === 'vertical' ? width : height}
+              value={
+                layout === 'vertical'
+                  ? yScale(marker.props.value)
+                  : xScale(marker.props.value)
+              }
+              isHorizontal={layout === 'vertical'}
+            />
+          ))}
+      </>
+    ),
+    [height, layout, valueMarkers, width, xScale, yScale]
+  );
+
   return (
     <CloneElement<TooltipAreaProps>
       element={tooltip}
@@ -320,6 +351,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
         ))}
       {!isMultiSeries &&
         renderBarGroup(data as ChartInternalShallowDataShape[], data.length)}
+      {renderValueMarkers()}
     </CloneElement>
   );
 };
