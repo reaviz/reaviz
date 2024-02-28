@@ -1,3 +1,6 @@
+# 15.8.1 - 2/28/24
+- [chore] update deps
+
 # 15.8.0 - 2/27/24
 - [feature] add value markers for linear/radial line/area/bar/scatter #193
 
