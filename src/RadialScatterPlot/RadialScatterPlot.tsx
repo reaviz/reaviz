@@ -4,7 +4,7 @@ import {
   buildShallowChartData,
   ChartInternalShallowDataShape
 } from '../common/data';
-import { scaleTime } from 'd3-scale';
+import { scaleBand, scaleTime } from 'd3-scale';
 import { getYDomain, getXDomain } from '../common/utils/domains';
 import {
   RadialScatterSeries,
@@ -18,6 +18,7 @@ import {
 import { CloneElement } from 'rdk';
 import { RadialAxisProps, RadialAxis } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
+import { uniqueBy } from '../common';
 
 export interface RadialScatterPlotProps extends ChartProps {
   /**
@@ -59,13 +60,23 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
       outer: number,
       inner: number
     ) => {
+      let xScale;
+      if (axis?.props.type === 'category') {
+        const xDomain = uniqueBy<ChartInternalShallowDataShape>(
+          aggregatedData,
+          (dd) => dd.x
+        );
+        xScale = scaleBand()
+          .range([0, 2 * Math.PI])
+          .domain(xDomain as any[]);
+      } else {
+        const xDomain = getXDomain({ data: aggregatedData });
+        xScale = scaleTime()
+          .range([0, 2 * Math.PI])
+          .domain(xDomain);
+      }
+
       const yDomain = getYDomain({ data: aggregatedData, scaled: false });
-      const xDomain = getXDomain({ data: aggregatedData });
-
-      const xScale = scaleTime()
-        .range([0, 2 * Math.PI])
-        .domain(xDomain);
-
       const yScale = getRadialYScale(inner, outer, yDomain);
 
       return {

@@ -1,7 +1,8 @@
 import {
   medDateData,
   largeSignalChartData,
-  medSignalChartData
+  medSignalChartData,
+  categoryData
 } from '../../demo';
 import { RadialScatterPlot } from './RadialScatterPlot';
 import { RadialScatterSeries, RadialScatterPoint } from './RadialScatterSeries';
@@ -36,6 +37,34 @@ export const Simple = () => (
     }
     axis={
       <RadialAxis
+        ticks={
+          <RadialAxisTickSeries
+            count={5}
+            tick={
+              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+            }
+          />
+        }
+        arcs={<RadialAxisArcSeries count={10} />}
+      />
+    }
+  />
+);
+
+export const Categories = () => (
+  <RadialScatterPlot
+    height={450}
+    width={450}
+    data={categoryData}
+    innerRadius={80}
+    series={
+      <RadialScatterSeries
+        point={<RadialScatterPoint size={5} color="rgba(45, 96, 232, .8)" />}
+      />
+    }
+    axis={
+      <RadialAxis
+        type="category"
         ticks={
           <RadialAxisTickSeries
             count={5}
@@ -121,9 +150,7 @@ export const Symbols = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick 
-                line={<RadialAxisTickLine position="inside" />} 
-              />
+              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
             }
           />
         }
