@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "15.8.1",
+  "version": "15.9.0",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "vite build --mode library",

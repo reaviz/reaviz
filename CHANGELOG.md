@@ -1,3 +1,6 @@
+# 15.9.0 - 3/5/24
+- [feature] add support for categorical data in radial scatter
+
 # 15.8.1 - 2/28/24
 - [chore] update deps
 
