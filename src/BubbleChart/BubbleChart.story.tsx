@@ -89,7 +89,7 @@ export const Icons = () => (
                   <foreignObject height={40} width={40} x={-40 / 2} y={-50 / 2}>
                     <img src={logos[data.data.key]} width={40} height={40} />
                   </foreignObject>
-                  <text dy={35} textAnchor="middle">
+                  <text dy={35} fill="white" textAnchor="middle">
                     {data.data.key}
                   </text>
                 </g>
