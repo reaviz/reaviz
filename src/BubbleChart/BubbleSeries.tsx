@@ -90,7 +90,6 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
           animated={animated}
           data={item}
           fill={textFill}
-          {...label.props}
         />
       </motion.g>
     );
