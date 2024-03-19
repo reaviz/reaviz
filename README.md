@@ -166,8 +166,15 @@ If you want to run REAVIZ locally, its super easy!
 - `npm start`
 - Browser opens to Storybook page
 
-## ❤️ Contributors
+## ❤️ Contributors & Credits
+
+Thanks to Netlify for hosting!
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" />
+</a>
 
 Thanks to all our contributors!
 
 <a href="https://github.com/reaviz/reaviz/graphs/contributors"><img src="https://opencollective.com/reaviz/contributors.svg?width=890" /></a>
+
