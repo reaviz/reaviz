@@ -217,7 +217,9 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
-            visibility={chartSized ? 'visible' : 'hidden'}
+            visibility={
+              xAxis?.props?.visibility ?? (chartSized ? 'visible' : 'hidden')
+            }
             onDimensionsChange={(event) => updateAxes('horizontal', event)}
           />
           <CloneElement<LinearAxisProps>
@@ -225,7 +227,9 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
             height={chartHeight}
             width={chartWidth}
             scale={yScale}
-            visibility={chartSized ? 'visible' : 'hidden'}
+            visibility={
+              yAxis?.props?.visibility ?? (chartSized ? 'visible' : 'hidden')
+            }
             onDimensionsChange={(event) => updateAxes('vertical', event)}
           />
           {secondaryAxis &&
@@ -235,7 +239,9 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
                 element={axis}
                 height={chartHeight}
                 width={chartWidth}
-                visibility={chartSized ? 'visible' : 'hidden'}
+                visibility={
+                  axis?.props?.visibility ?? (chartSized ? 'visible' : 'hidden')
+                }
                 onDimensionsChange={(event) => updateAxes('horizontal', event)}
               />
             ))}

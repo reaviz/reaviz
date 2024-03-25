@@ -181,7 +181,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
-            visibility={chartSized ? 'visible' : 'hidden'}
+            visibility={
+              xAxis?.props?.visibility ?? (chartSized ? 'visible' : 'hidden')
+            }
             onDimensionsChange={(e) => updateAxes('horizontal', e)}
           />
           <CloneElement<LinearAxisProps>
@@ -189,7 +191,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
             height={chartHeight}
             width={chartWidth}
             scale={yScale}
-            visibility={chartSized ? 'visible' : 'hidden'}
+            visibility={
+              yAxis?.props?.visibility ?? (chartSized ? 'visible' : 'hidden')
+            }
             onDimensionsChange={(e) => updateAxes('vertical', e)}
           />
           {secondaryAxis &&
@@ -199,7 +203,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
                 element={axis}
                 height={chartHeight}
                 width={chartWidth}
-                visibility={chartSized ? 'visible' : 'hidden'}
+                visibility={
+                  axis?.props?.visibility ?? (chartSized ? 'visible' : 'hidden')
+                }
                 onDimensionsChange={(e) => updateAxes('horizontal', e)}
               />
             ))}
