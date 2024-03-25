@@ -7,7 +7,7 @@ import {
   ChartInternalShallowDataShape,
   ChartInternalNestedDataShape
 } from '../data';
-import { getPositionForTarget, getClosestPoint } from '../utils/position';
+import { getPositionForTarget, getClosestContinousScalePoint, getClosestBandScalePoint } from '../utils/position';
 import { CloneElement } from 'rdk';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
@@ -64,6 +64,11 @@ export interface TooltipAreaProps {
    * Whether the area is radial or not.
    */
   isRadial?: boolean;
+
+  /**
+   * Whether the area is continous or not (e.g. line and area charts are continous, bar charts are not).
+   */
+  isContinous?: boolean;
 
   /**
    * Inner-radius to set the positioning by. Set internally.
@@ -126,6 +131,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
   disabled,
   color,
   isRadial,
+  isContinous,
   width,
   height,
   xScale,
@@ -291,8 +297,19 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
       attr = 'i';
     }
 
-    // Get the closest point to the mouse and use rounding for radial charts
-    const newValue = getClosestPoint(coord, keyScale, transformed, attr, isRadial);
+    // Get the closest point to the mouse
+    // Consider invertable scales to be continous
+    // Round non-continous charts with a continous scale down
+    // Round band scales to the closest point for radial charts
+    const newValue = keyScale.invert
+      ? getClosestContinousScalePoint(coord, keyScale, transformed, {
+        attr,
+        roundDown: !isContinous
+      })
+      : getClosestBandScalePoint(coord, keyScale, transformed, {
+        attr,
+        roundClosest: isRadial
+      });
 
     if (!isEqual(newValue, value) && newValue) {
       const pointX = keyScale(newValue.x);
@@ -354,7 +371,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(({
         nativeEvent: event
       });
     }
-  }, [data, getXCoord, height, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, rotationFactor, transformData, value, width, xScale, yScale]);
+  }, [data, getXCoord, height, isContinous, isHorizontal, isRadial, onValueEnter, placement, placementProp, prevX, prevY, transformData, value, width, xScale, yScale]);
 
   const onMouseLeave = useCallback(() => {
     setPrevX(undefined);

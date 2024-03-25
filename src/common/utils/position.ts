@@ -15,7 +15,10 @@ const scaleBandInvert = (scale, round = false) => {
 
   return (offset) => {
     // Keep the band from going outside the domain length
-    let band = Math.min((offset - paddingOuter) / eachBand, domain.length - 0.01);
+    let band = Math.min(
+      (offset - paddingOuter) / eachBand,
+      domain.length - 0.01
+    );
 
     // Catch negative band values from horizontal charts exceeding domain length
     if (band < 0 && Math.abs(band) > domain.length - 1) {
@@ -23,7 +26,9 @@ const scaleBandInvert = (scale, round = false) => {
     }
 
     // Round to the closest index OR take the floor value
-    let index = round ? Math.round(band) % domain.length : Math.floor(band) % domain.length;
+    let index = round
+      ? Math.round(band) % domain.length
+      : Math.floor(band) % domain.length;
 
     // Handle horizontal charts...
     if (end === 0) {
@@ -34,47 +39,92 @@ const scaleBandInvert = (scale, round = false) => {
   };
 };
 
-export const getClosestPoint = (pos: number, scale, data, attr = 'x', round = false) => {
-  if (scale.invert) {
-    const domain = scale.invert(pos);
+type GetClosestContinousPointOptions = {
+  attr?: string;
+  roundDown?: boolean;
+};
 
-    // Select the index
-    const bisect = bisector((d: any) => {
-      // add 1 to an index so it's the upper limit of a domain
-      return attr === 'i' ? d[attr] + 1 : d[attr];
-    }).right;
-    const index = bisect(data, domain);
+/**
+ * Get the closest point on a continuous scale.
+ *
+ * @param {number} pos - The position to find the closest point to.
+ * @param {Object} scale - The scale object.
+ * @param {Array} data - The data array.
+ * @param {Object} [options={}] - Optional parameters.
+ * @param {string} [options.attr='x'] - The attribute to use for comparison.
+ * @param {boolean} [options.roundDown=false] - Whether to round down to the nearest point.
+ *
+ * @returns {Object} The closest point to the specified position.
+ */
+export const getClosestContinousScalePoint = (
+  pos: number,
+  scale,
+  data,
+  { attr = 'x', roundDown = false }: GetClosestContinousPointOptions = {}
+) => {
+  const domain = scale.invert(pos);
 
-    // Determine min index
-    const minIndex = Math.max(0, index - 1);
-    const before = data[minIndex];
+  // Select the index
+  const bisect = bisector((d: any) => {
+    // add 1 to an index so it's the upper limit of a domain
+    return attr === 'i' ? d[attr] + 1 : d[attr];
+  }).right;
+  const index = bisect(data, domain);
 
-    // Determine max index
-    const maxIndex = Math.min(data.length - 1, index);
-    const after = data[maxIndex];
+  // Determine min index
+  const minIndex = Math.max(0, index - 1);
+  const before = data[minIndex];
 
-    // Determine which is closest to the point
-    let beforeVal = before[attr];
-    let afterVal = after[attr];
-    beforeVal = domain - beforeVal;
-    afterVal = afterVal - domain;
-
-    return beforeVal < afterVal ? before : after;
-  } else {
-    // If we have a band scale, handle that special
-    const domain = scale.domain();
-    let prop;
-
-    // Of course the Marimekko is a pain...
-    if (scale.mariemkoInvert) {
-      prop = scale.mariemkoInvert(pos);
-    } else {
-      prop = scaleBandInvert(scale, round)(pos);
-    }
-
-    const idx = domain.indexOf(prop);
-    return data[idx];
+  if (roundDown) {
+    return before;
   }
+
+  // Determine max index
+  const maxIndex = Math.min(data.length - 1, index);
+  const after = data[maxIndex];
+
+  // Determine which is closest to the point
+  let beforeVal = before[attr];
+  let afterVal = after[attr];
+  beforeVal = domain - beforeVal;
+  afterVal = afterVal - domain;
+
+  return beforeVal < afterVal ? before : after;
+};
+
+type GetClosestBandScalePointOptions = {
+  roundClosest?: boolean;
+};
+
+/**
+ * Get the closest point on a band scale.
+ *
+ * @param {number} pos - The position to find the closest point to.
+ * @param {Object} scale - The scale object.
+ * @param {Array} data - The data array.
+ * @param {Object} [options={}] - Optional parameters.
+ * @param {boolean} [options.roundClosest=false] - Whether to round to the closest point instead of down.
+ *
+ * @returns {Object} The closest point to the specified position.
+ */
+export const getClosestBandScalePoint = (
+  pos: number,
+  scale,
+  data,
+  { roundClosest = false }: GetClosestBandScalePointOptions = {}
+) => {
+  const domain = scale.domain();
+  let prop;
+
+  // Of course the Marimekko is a pain...
+  if (scale.mariemkoInvert) {
+    prop = scale.mariemkoInvert(pos);
+  } else {
+    prop = scaleBandInvert(scale, roundClosest)(pos);
+  }
+
+  const idx = domain.indexOf(prop);
+  return data[idx];
 };
 
 /**

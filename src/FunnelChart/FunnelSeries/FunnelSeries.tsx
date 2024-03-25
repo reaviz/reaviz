@@ -3,7 +3,11 @@ import { FunnelArc } from './FunnelArc';
 import { CloneElement } from 'rdk';
 import { FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
-import { ChartShallowDataShape, getClosestPoint, getPositionForTarget } from '../../common';
+import {
+  ChartShallowDataShape,
+  getClosestContinousScalePoint,
+  getPositionForTarget
+} from '../../common';
 import { ClickEvent } from '../../common/types';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
@@ -94,8 +98,7 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
         datas: [
           { data, ...getScales(height, width) },
           { data, ...getScales(height - offset, width) },
-          { data, ...getScales(height - (offset * 2), width) }
-        ]
+          { data, ...getScales(height - (offset * 2), width) }        ]
       };
     } else {
       return {
@@ -112,7 +115,9 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
       const { xScale, data } = datas[0];
       const { clientX, clientY, target } = e;
       const position = getPositionForTarget({ target, clientX, clientY });
-      const value = getClosestPoint(position.x, xScale, data, 'i');
+      const value = getClosestContinousScalePoint(position.x, xScale, data, {
+        attr: 'i'
+      });
 
       onSegmentClick({
         value: { key: value.key, data: value.data },
@@ -151,4 +156,3 @@ FunnelSeries.defaultProps = {
   arc: <FunnelArc />,
   axis: <FunnelAxis />
 };
-

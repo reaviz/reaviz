@@ -338,6 +338,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
       color={getBarColor}
       onValueEnter={onValueEnter}
       onValueLeave={onValueLeave}
+      isContinous={false}
     >
       {isMultiSeries &&
         (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
