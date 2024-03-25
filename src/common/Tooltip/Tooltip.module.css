@@ -1,0 +1,10 @@
+.base {
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-color);
+  padding: var(--tooltip-spacing);
+  border-radius: var(--tooltip-border-radius);
+
+  .disablePointer {
+    cursor: not-allowed;
+  }
+}

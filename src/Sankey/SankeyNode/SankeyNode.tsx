@@ -13,10 +13,15 @@ import { ChartInternalDataTypes } from '../../common/data';
 import { CloneElement } from 'rdk';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
-import { SankeyLabel, SankeyLabelPosition, SankeyLabelProps } from '../SankeyLabel';
+import {
+  SankeyLabel,
+  SankeyLabelPosition,
+  SankeyLabelProps
+} from '../SankeyLabel';
 import { SankeyNodeExtra, DEFAULT_COLOR } from '../utils';
 import css from './SankeyNode.module.css';
 import { useHoverIntent } from '../../common/utils/useHoverIntent';
+import { tooltipTheme } from '../../common';
 
 export interface SankeyNodeProps extends SankeyNodeExtra {
   /**
@@ -70,7 +75,7 @@ export interface SankeyNodeProps extends SankeyNodeExtra {
   labelPosition?: SankeyLabelPosition;
 
   /**
-   * Percentage of total width occupied by labels on 
+   * Percentage of total width occupied by labels on
    * either side of the graph inside the container.
    * Set internally by `Sankey`.
    */
@@ -180,11 +185,19 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
     }
   });
 
-  const ariaLabelData = useMemo(() => (`${title}: ${formatValue(value as ChartInternalDataTypes)}`), [title, value]);
+  const ariaLabelData = useMemo(
+    () => `${title}: ${formatValue(value as ChartInternalDataTypes)}`,
+    [title, value]
+  );
 
   return (
     <Fragment>
-      <motion.g ref={rectRef} tabIndex={0} aria-label={ariaLabelData} role="graphics-document">
+      <motion.g
+        ref={rectRef}
+        tabIndex={0}
+        aria-label={ariaLabelData}
+        role="graphics-document"
+      >
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}
           className={classNames(css.node, className)}
@@ -249,6 +262,7 @@ SankeyNode.defaultProps = {
   opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   tooltip: (
     <Tooltip
+      theme={tooltipTheme}
       followCursor={true}
       modifiers={{
         offset: {

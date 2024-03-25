@@ -1,6 +1,7 @@
 import React, { cloneElement, FC } from 'react';
 import { Tooltip, TooltipProps } from 'reablocks';
 import { TooltipTemplate } from './TooltipTemplate';
+import { tooltipTheme } from './tooltipTheme';
 
 export interface ChartTooltipProps extends TooltipProps {
   /**
@@ -37,6 +38,7 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
   ...rest
 }) => (
   <Tooltip
+    theme={tooltipTheme}
     {...rest}
     content={() => {
       if (!value && !data) {

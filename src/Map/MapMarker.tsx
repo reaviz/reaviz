@@ -2,6 +2,7 @@ import React, { Fragment, useRef, useState, FC, useMemo } from 'react';
 import { Tooltip } from 'reablocks';
 import { motion } from 'framer-motion';
 import css from './MapMarker.module.css';
+import { tooltipTheme } from '../common';
 
 export interface MapMarkerProps {
   coordinates: [number, number];
@@ -31,7 +32,10 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
   const ref = useRef<SVGCircleElement | null>(null);
   const [active, setActive] = useState<boolean>(false);
 
-  const ariaLabelData = useMemo(() => typeof tooltip === 'string' ? tooltip: 'map marker', [tooltip]);
+  const ariaLabelData = useMemo(
+    () => (typeof tooltip === 'string' ? tooltip : 'map marker'),
+    [tooltip]
+  );
 
   return (
     <Fragment>
@@ -61,6 +65,7 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
       />
       {tooltip && (
         <Tooltip
+          theme={tooltipTheme}
           visible={active}
           reference={ref}
           modifiers={modifiers}
