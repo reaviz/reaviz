@@ -1,7 +1,7 @@
 import React, { cloneElement, FC } from 'react';
 import { Tooltip, TooltipProps } from 'reablocks';
 import { TooltipTemplate } from './TooltipTemplate';
-import { tooltipTheme } from './tooltipTheme';
+import { tooltipTheme } from './TooltipTheme';
 
 export interface ChartTooltipProps extends TooltipProps {
   /**
