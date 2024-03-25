@@ -39,7 +39,7 @@ export interface BubbleSeriesProps {
   /**
    * Bubble element.
    */
-  formatBubble?: (item: any) => ReactElement<BubbleProps, typeof Bubble>;
+  format?: (item: any) => ReactElement<BubbleProps, typeof Bubble>;
 
   /**
    * Label element.
@@ -53,7 +53,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   colorScheme,
   animated,
   bubble,
-  formatBubble,
+  format,
   label
 }) => {
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
@@ -84,7 +84,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
         transition={transition}
       >
         <CloneElement<BubbleProps>
-          element={formatBubble ? formatBubble(item) : bubble}
+          element={format ? format(item) : bubble}
           id={identifier(`${id}-${item.data.key}-bubble`)}
           animated={animated}
           data={item}
