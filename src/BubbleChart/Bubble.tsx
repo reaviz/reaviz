@@ -1,6 +1,7 @@
 import React, {
   FC,
   Fragment,
+  MouseEventHandler,
   ReactElement,
   useMemo,
   useRef,
@@ -62,7 +63,10 @@ export interface BubbleProps {
   /**
    * Event for when the bubble is clicked.
    */
-  onClick?: (event, currentItem?) => void;
+  onClick?: (
+    event: React.MouseEvent<SVGCircleElement>,
+    currentItem?: HierarchyCircularNode<any>
+  ) => void;
 
   /**
    * Event for when the mouse enters bubble.
