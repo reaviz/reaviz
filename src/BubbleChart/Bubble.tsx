@@ -1,4 +1,11 @@
-import React, { FC, Fragment, ReactElement, useMemo, useRef, useState } from 'react';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useMemo,
+  useRef,
+  useState
+} from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -55,7 +62,7 @@ export interface BubbleProps {
   /**
    * Event for when the bubble is clicked.
    */
-  onClick?: (event) => void;
+  onClick?: (event, currentItem?) => void;
 
   /**
    * Event for when the mouse enters bubble.
@@ -100,10 +107,13 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
     gradient && !mask
       ? `url(#gradient-${id})`
       : mask
-      ? `url(#mask-pattern-${id})`
-      : fill;
+        ? `url(#mask-pattern-${id})`
+        : fill;
 
-  const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]) ;
+  const tooltipData = useMemo(
+    () => ({ y: data.data.data, x: data.data.key }),
+    [data]
+  );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (
@@ -124,7 +134,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
           cy: data.y
         }}
         transition={transition}
-        onClick={onClick}
+        onClick={(event) => onClick && onClick(event, data)}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
         tabIndex={0}
