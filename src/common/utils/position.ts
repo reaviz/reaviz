@@ -39,29 +39,31 @@ const scaleBandInvert = (scale, round = false) => {
   };
 };
 
-type GetClosestContinousPointOptions = {
-  attr?: string;
-  roundDown?: boolean;
-};
-
 /**
- * Get the closest point on a continuous scale.
+ * Get the data point closest to a given position on a continuous scale.
  *
- * @param {number} pos - The position to find the closest point to.
- * @param {Object} scale - The scale object.
- * @param {Array} data - The data array.
- * @param {Object} [options={}] - Optional parameters.
- * @param {string} [options.attr='x'] - The attribute to use for comparison.
- * @param {boolean} [options.roundDown=false] - Whether to round down to the nearest point.
+ * @param {Object} params - The parameters for the function.
+ * @param {number} params.pos - The position to find the closest point to.
+ * @param {Object} params.scale - The scale object.
+ * @param {Array} params.data - The data array.
+ * @param {string} [params.attr='x'] - The attribute to use for comparison.
+ * @param {boolean} [params.roundDown=false] - Whether to round down to the nearest point.
  *
  * @returns {Object} The closest point to the specified position.
  */
-export const getClosestContinousScalePoint = (
-  pos: number,
+export const getClosestContinousScalePoint = ({
+  pos,
   scale,
   data,
-  { attr = 'x', roundDown = false }: GetClosestContinousPointOptions = {}
-) => {
+  attr = 'x',
+  roundDown = false
+}: {
+  pos: number;
+  scale: any;
+  data: any[];
+  attr?: string;
+  roundDown?: boolean;
+}) => {
   const domain = scale.invert(pos);
 
   // Select the index
@@ -92,27 +94,28 @@ export const getClosestContinousScalePoint = (
   return beforeVal < afterVal ? before : after;
 };
 
-type GetClosestBandScalePointOptions = {
-  roundClosest?: boolean;
-};
-
 /**
- * Get the closest point on a band scale.
+ * Get the data point closest to a given position on a band scale. This rounds down by default.
  *
- * @param {number} pos - The position to find the closest point to.
- * @param {Object} scale - The scale object.
- * @param {Array} data - The data array.
- * @param {Object} [options={}] - Optional parameters.
- * @param {boolean} [options.roundClosest=false] - Whether to round to the closest point instead of down.
+ * @param {Object} params - The parameters for the function.
+ * @param {number} params.pos - The position to find the closest point to.
+ * @param {Object} params.scale - The scale object.
+ * @param {Array} params.data - The data array.
+ * @param {boolean} [params.roundClosest=false] - Whether to round to the closest point instead of down.
  *
  * @returns {Object} The closest point to the specified position.
  */
-export const getClosestBandScalePoint = (
-  pos: number,
+export const getClosestBandScalePoint = ({
+  pos,
   scale,
   data,
-  { roundClosest = false }: GetClosestBandScalePointOptions = {}
-) => {
+  roundClosest = false
+}: {
+  pos: number;
+  scale: any;
+  data: any[];
+  roundClosest?: boolean;
+}) => {
   const domain = scale.domain();
   let prop;
 

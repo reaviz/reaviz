@@ -56,35 +56,33 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   axis,
   height,
   width,
-  onSegmentClick,
+  onSegmentClick
 }) => {
   // Calculate the funnel data on mount and when data changes
-  const getScales = useCallback((height: number, width: number) => {
-    const yScale = scaleLinear()
-      .domain([
-        -max(data, ({ data }) => data),
-        max(data, ({ data }) => data)
-      ])
-      .nice()
-      .range([height, 0]);
+  const getScales = useCallback(
+    (height: number, width: number) => {
+      const yScale = scaleLinear()
+        .domain([-max(data, ({ data }) => data), max(data, ({ data }) => data)])
+        .nice()
+        .range([height, 0]);
 
-    const xScale = scaleLinear()
-      .domain([0, data.length])
-      .range([0, width]);
+      const xScale = scaleLinear().domain([0, data.length]).range([0, width]);
 
-    const transformedData = data.map((d, i) => ({
-      ...d,
-      key: d.key,
-      x: xScale(i),
-      i
-    }));
+      const transformedData = data.map((d, i) => ({
+        ...d,
+        key: d.key,
+        x: xScale(i),
+        i
+      }));
 
-    return {
-      data: transformedData,
-      yScale,
-      xScale
-    };
-  }, [data]);
+      return {
+        data: transformedData,
+        yScale,
+        xScale
+      };
+    },
+    [data]
+  );
 
   const { datas, halfOffset } = useMemo(() => {
     // The 'layered' variant is actually just a series of funnel charts
@@ -98,33 +96,38 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
         datas: [
           { data, ...getScales(height, width) },
           { data, ...getScales(height - offset, width) },
-          { data, ...getScales(height - (offset * 2), width) }        ]
+          { data, ...getScales(height - offset * 2, width) }
+        ]
       };
     } else {
       return {
         halfOffset: 0,
-        datas: [
-          { data, ...getScales(height, width) }
-        ]
+        datas: [{ data, ...getScales(height, width) }]
       };
     }
   }, [data, arc, height, width, getScales]);
 
-  const handleSegmentClick = useCallback((e: MouseEvent) => {
-    if (onSegmentClick) {
-      const { xScale, data } = datas[0];
-      const { clientX, clientY, target } = e;
-      const position = getPositionForTarget({ target, clientX, clientY });
-      const value = getClosestContinousScalePoint(position.x, xScale, data, {
-        attr: 'i'
-      });
+  const handleSegmentClick = useCallback(
+    (e: MouseEvent) => {
+      if (onSegmentClick) {
+        const { xScale, data } = datas[0];
+        const { clientX, clientY, target } = e;
+        const position = getPositionForTarget({ target, clientX, clientY });
+        const value = getClosestContinousScalePoint({
+          pos: position.x,
+          scale: xScale,
+          data,
+          attr: 'i'
+        });
 
-      onSegmentClick({
-        value: { key: value.key, data: value.data },
-        nativeEvent: e
-      });
-    }
-  }, [datas, onSegmentClick]);
+        onSegmentClick({
+          value: { key: value.key, data: value.data },
+          nativeEvent: e
+        });
+      }
+    },
+    [datas, onSegmentClick]
+  );
 
   return (
     <>

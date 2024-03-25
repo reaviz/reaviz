@@ -12,7 +12,7 @@ describe('getClosestContinousScalePoint', () => {
   test('returns the closest point for an invertible/continous scale', ({
     expect
   }) => {
-    const result = getClosestContinousScalePoint(150, scale, data);
+    const result = getClosestContinousScalePoint({ pos: 150, scale, data });
 
     expect(result).toEqual({ x: 6 });
   });
@@ -20,7 +20,10 @@ describe('getClosestContinousScalePoint', () => {
   test('returns the closest point rounded down for an invertible/continous scale', ({
     expect
   }) => {
-    const result = getClosestContinousScalePoint(150, scale, data, {
+    const result = getClosestContinousScalePoint({
+      pos: 150,
+      scale,
+      data,
       roundDown: true
     });
 
@@ -35,13 +38,16 @@ describe('getClosestBandScalePoint', () => {
   test('returns the closest point for a band scale rounded down', ({
     expect
   }) => {
-    const result = getClosestBandScalePoint(32, scale, data);
+    const result = getClosestBandScalePoint({ pos: 32, scale, data });
 
     expect(result).toEqual({ x: 'a' });
   });
 
   test('returns the closest point for a band scale', ({ expect }) => {
-    const result = getClosestBandScalePoint(32, scale, data, {
+    const result = getClosestBandScalePoint({
+      pos: 32,
+      scale,
+      data,
       roundClosest: true
     });
 
