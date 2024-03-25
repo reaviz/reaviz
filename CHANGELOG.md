@@ -1,3 +1,9 @@
+# 15.9.2 - 3/25/24
+- [feature] add support format for bubble chart
+
+# 15.9.1 - 3/13/24
+- [fix] fix bubble chart with icons
+
 # 15.9.0 - 3/5/24
 - [feature] add support for categorical data in radial scatter
 
