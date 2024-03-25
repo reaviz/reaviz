@@ -1,0 +1,13 @@
+.base {
+  white-space: nowrap;
+  text-align: center;
+  will-change: transform, opacity;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-color);
+  padding: var(--tooltip-spacing);
+  border-radius: var(--tooltip-border-radius);
+
+  .disablePointer {
+    cursor: not-allowed;
+  }
+}

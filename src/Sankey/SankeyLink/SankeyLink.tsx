@@ -21,6 +21,7 @@ import {
 } from '../utils';
 import css from './SankeyLink.module.css';
 import { useHoverIntent } from '../../common/utils/useHoverIntent';
+import { tooltipTheme } from '../../common';
 
 export interface SankeyLinkProps extends SankeyLinkExtra {
   /**
@@ -170,7 +171,13 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
     }
   });
 
-  const ariaLabelData = useMemo(() => (`${(source as NodeExtra).title} → ${(target as NodeExtra).title}: ${formatValue(value)}`), [source, target, value]);
+  const ariaLabelData = useMemo(
+    () =>
+      `${(source as NodeExtra).title} → ${
+        (target as NodeExtra).title
+      }: ${formatValue(value)}`,
+    [source, target, value]
+  );
 
   return (
     <Fragment>
@@ -225,6 +232,7 @@ SankeyLink.defaultProps = {
   opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
   tooltip: (
     <Tooltip
+      theme={tooltipTheme}
       followCursor={true}
       modifiers={{
         offset: {

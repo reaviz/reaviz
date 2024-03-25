@@ -15,7 +15,7 @@ import {
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
 } from '../Axis';
-import { TooltipArea } from '../Tooltip';
+import { TooltipArea, tooltipTheme } from '../Tooltip';
 import { ChartBrush } from './ChartBrush';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../ScatterPlot';
 import { BarChart, HistogramBarSeries } from '../../BarChart';
@@ -302,7 +302,7 @@ class ZoomBrushStory extends Component {
                 animated={!brushing}
                 point={
                   <ScatterPoint
-                    tooltip={<Tooltip disabled={true} />}
+                    tooltip={<Tooltip theme={tooltipTheme} disabled={true} />}
                     size={(d) => {
                       return d.metadata.severity + 5;
                     }}
