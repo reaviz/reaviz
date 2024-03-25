@@ -1,9 +1,10 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
 import { formatValue } from '../../../utils/formatting';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
 
-export interface RadialAxisTickLabelProps {
+export interface RadialAxisTickLabelProps
+  extends Omit<SVGTextElementAttributes<SVGTextElement>, 'format'> {
   /**
    * Data to render.
    */
@@ -71,7 +72,8 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   fontSize,
   format,
   lineSize,
-  index
+  index,
+  ...rest
 }) => {
   const { transform, textAnchor } = useMemo(() => {
     let textAnchor;
@@ -122,6 +124,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         fill={fill}
         fontFamily={fontFamily}
         fontSize={fontSize}
+        {...rest}
       >
         {text}
       </text>
