@@ -6,8 +6,9 @@ import {
 } from '../../../demo';
 import { Bar, BarChart, BarSeries } from '../../BarChart';
 import { Bubble, BubbleChart, BubbleSeries } from '../../BubbleChart';
+import { Area, AreaChart, AreaSeries, Line } from '../../AreaChart';
+import { LineChart, LineSeries } from '../../LineChart';
 import { ChartShallowDataShape } from '../data';
-import { Area, AreaChart, AreaSeries } from '../../AreaChart';
 
 export default {
   title: 'Utils/Glow'
@@ -77,6 +78,20 @@ export const AreaGlow = () => (
       <AreaSeries
         colorScheme="#5D25EE"
         area={<Area glow={{ color: '#5D25EE', blur: 20 }} />}
+      />
+    }
+  />
+);
+
+export const LineGlow = () => (
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <LineSeries
+        colorScheme="#5D25EE"
+        line={<Line glow={{ color: '#5D25EE', blur: 10 }} />}
       />
     }
   />
