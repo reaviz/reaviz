@@ -3,7 +3,11 @@ import { FunnelArc } from './FunnelArc';
 import { CloneElement } from 'rdk';
 import { FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
-import { ChartShallowDataShape, getClosestPoint, getPositionForTarget } from '../../common';
+import {
+  ChartShallowDataShape,
+  getClosestContinousScalePoint,
+  getPositionForTarget
+} from '../../common';
 import { ClickEvent } from '../../common/types';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
@@ -52,35 +56,33 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   axis,
   height,
   width,
-  onSegmentClick,
+  onSegmentClick
 }) => {
   // Calculate the funnel data on mount and when data changes
-  const getScales = useCallback((height: number, width: number) => {
-    const yScale = scaleLinear()
-      .domain([
-        -max(data, ({ data }) => data),
-        max(data, ({ data }) => data)
-      ])
-      .nice()
-      .range([height, 0]);
+  const getScales = useCallback(
+    (height: number, width: number) => {
+      const yScale = scaleLinear()
+        .domain([-max(data, ({ data }) => data), max(data, ({ data }) => data)])
+        .nice()
+        .range([height, 0]);
 
-    const xScale = scaleLinear()
-      .domain([0, data.length])
-      .range([0, width]);
+      const xScale = scaleLinear().domain([0, data.length]).range([0, width]);
 
-    const transformedData = data.map((d, i) => ({
-      ...d,
-      key: d.key,
-      x: xScale(i),
-      i
-    }));
+      const transformedData = data.map((d, i) => ({
+        ...d,
+        key: d.key,
+        x: xScale(i),
+        i
+      }));
 
-    return {
-      data: transformedData,
-      yScale,
-      xScale
-    };
-  }, [data]);
+      return {
+        data: transformedData,
+        yScale,
+        xScale
+      };
+    },
+    [data]
+  );
 
   const { datas, halfOffset } = useMemo(() => {
     // The 'layered' variant is actually just a series of funnel charts
@@ -94,32 +96,38 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
         datas: [
           { data, ...getScales(height, width) },
           { data, ...getScales(height - offset, width) },
-          { data, ...getScales(height - (offset * 2), width) }
+          { data, ...getScales(height - offset * 2, width) }
         ]
       };
     } else {
       return {
         halfOffset: 0,
-        datas: [
-          { data, ...getScales(height, width) }
-        ]
+        datas: [{ data, ...getScales(height, width) }]
       };
     }
   }, [data, arc, height, width, getScales]);
 
-  const handleSegmentClick = useCallback((e: MouseEvent) => {
-    if (onSegmentClick) {
-      const { xScale, data } = datas[0];
-      const { clientX, clientY, target } = e;
-      const position = getPositionForTarget({ target, clientX, clientY });
-      const value = getClosestPoint(position.x, xScale, data, 'i');
+  const handleSegmentClick = useCallback(
+    (e: MouseEvent) => {
+      if (onSegmentClick) {
+        const { xScale, data } = datas[0];
+        const { clientX, clientY, target } = e;
+        const position = getPositionForTarget({ target, clientX, clientY });
+        const value = getClosestContinousScalePoint({
+          pos: position.x,
+          scale: xScale,
+          data,
+          attr: 'i'
+        });
 
-      onSegmentClick({
-        value: { key: value.key, data: value.data },
-        nativeEvent: e
-      });
-    }
-  }, [datas, onSegmentClick]);
+        onSegmentClick({
+          value: { key: value.key, data: value.data },
+          nativeEvent: e
+        });
+      }
+    },
+    [datas, onSegmentClick]
+  );
 
   return (
     <>
@@ -151,4 +159,3 @@ FunnelSeries.defaultProps = {
   arc: <FunnelArc />,
   axis: <FunnelAxis />
 };
-
