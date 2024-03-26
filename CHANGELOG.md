@@ -1,3 +1,7 @@
+# 15.11.0 - 3/26/24
+- [feature] Add Line glow #204
+- [improvement] Improve multi-series area chart glow #203
+
 # 15.10.0 - 3/26/24
 - [feature] Add glow to area chart #202
 
