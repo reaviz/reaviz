@@ -1,4 +1,7 @@
-# 15.9.5 - 3/36/24
+# 15.10.0 - 3/26/24
+- [feature] Add glow to area chart #202
+
+# 15.9.5 - 3/26/24
 - [fix] Fix bar chart tooltip hover accuracy #201
 
 # 15.9.4 - 3/26/24
