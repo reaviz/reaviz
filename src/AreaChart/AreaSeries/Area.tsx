@@ -202,11 +202,11 @@ export const Area: FC<Partial<AreaProps>> = ({
         }}
         style={{
           ...extras.style,
-          ...generateGlowStyles({ glow })
+          ...generateGlowStyles({ glow, colorSchemeColor: stroke })
         }}
       />
     );
-  }, [data, enter, exit, fill, glow, id, mask, rest, transition]);
+  }, [data, enter, exit, fill, glow, id, mask, rest, stroke, transition]);
 
   return (
     <Fragment>
