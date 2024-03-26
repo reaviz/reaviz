@@ -1,6 +1,9 @@
 # 15.9.5 - 3/36/24
 - [fix] Fix bar chart tooltip hover accuracy #201
 
+# 15.9.4 - 3/26/24
+- [feature] #198 Separate textProps for RadialAxisTickLabel text properties
+
 # 15.9.2 - 3/25/24
 - [feature] add support format for bubble chart
 
