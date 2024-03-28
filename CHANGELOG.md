@@ -1,3 +1,7 @@
+# 15.12.0 - 3/28/24
+- [feature] Add custom symbols for heatmap cells #206
+- [fix] Fix bar charts visual regression #205
+
 # 15.11.0 - 3/26/24
 - [feature] Add Line glow #204
 - [improvement] Improve multi-series area chart glow #203
