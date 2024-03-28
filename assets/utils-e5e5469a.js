@@ -1,0 +1,1 @@
+const s=({glow:r,colorSchemeColor:t})=>{if(!r)return{};const{x:o=0,y:n=0,blur:e=5,color:p=t||"rgb(255, 255, 255, 0.25)"}=r;return e?{filter:`drop-shadow(${o}px ${n}px ${e}px ${p})`}:{}};export{s as g};
