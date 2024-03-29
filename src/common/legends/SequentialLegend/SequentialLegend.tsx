@@ -15,6 +15,11 @@ export interface SequentialLegendProps {
   className?: any;
 
   /**
+   * CSS Class name for the gradient element.
+   */
+  gradientClassName?: string;
+
+  /**
    * CSS Styles.
    */
   style?: any;
@@ -35,7 +40,14 @@ export interface SequentialLegendProps {
   colorScheme?: string[];
 }
 
-export const SequentialLegend: FC<SequentialLegendProps> = ({ className, style, data, colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'], orientation = 'orientation' }) => {
+export const SequentialLegend: FC<SequentialLegendProps> = ({
+  className,
+  gradientClassName,
+  style,
+  data,
+  colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'],
+  orientation = 'orientation'
+}) => {
   // Generate the color gradient
   const color = chroma
     .scale(colorScheme)
@@ -45,13 +57,17 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({ className, style, 
     .join(',');
 
   // Get the extent from the data passed
-  const [end, start] = useMemo(() => extent(
-    uniqueBy(
-      data,
-      (d) => d.data,
-      (d) => d.data
-    )
-  ), [data]);
+  const [end, start] = useMemo(
+    () =>
+      extent(
+        uniqueBy(
+          data,
+          (d) => d.data,
+          (d) => d.data
+        )
+      ),
+    [data]
+  );
 
   // Get direction
   const gradientDir = orientation === 'vertical' ? '' : 'to left,';
@@ -66,7 +82,7 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({ className, style, 
     >
       <div className={css.start}>{formatValue(start)}</div>
       <div
-        className={css.gradient}
+        className={classNames(css.gradient, gradientClassName)}
         style={{
           background: `linear-gradient(${gradientDir}${color})`
         }}
