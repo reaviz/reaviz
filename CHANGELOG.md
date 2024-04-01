@@ -1,3 +1,7 @@
+# 15.13.0 - 4/1/24
+- [feature] Add SequentialLegend gradient element styling #208
+- [fix] Fix heatmap cell styling #207
+
 # 15.12.0 - 3/28/24
 - [feature] Add custom symbols for heatmap cells #206
 - [fix] Fix bar charts visual regression #205
