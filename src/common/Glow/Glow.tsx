@@ -18,4 +18,9 @@ export interface Glow {
    * The blur radius of the glow.
    */
   blur?: number;
+
+  /**
+   * The opacity of the glow.
+   */
+  opacity?: number;
 }
