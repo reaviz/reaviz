@@ -30,6 +30,12 @@ React natively for rendering the components while using D3js under the
 hood for calculations. The library provides an easy way to get started
 creating charts without sacrificing customization ability.
 
+## 🚀 Quick Links
+
+- Checkout the [demos](https://reaviz.io)
+- Learn more in the [docs](https://reaviz.io?path=/docs/docs-intro--page)
+- Learn about updates from the [changelog](CHANGELOG.md)
+
 ## 💎 Other Projects
 
 - Unify Viz - Premium offering 300+ Figma and React professionally designed data visualization
@@ -37,12 +43,6 @@ components. [unifyviz.com →](https://unifyviz.com)
 - Reaflow - Open-source library for workflow and diagram graphs. [reaflow.dev →](https://reaflow.dev)
 - Reagraph - Open-source library for large webgl based network graphs. [reagraph.dev →](https://reagraph.dev)
 - Reablocks - Open-source component library for React based on Tailwind. [reablocks.dev →](https://reablocks.dev)
-
-## 🚀 Quick Links
-
-- Checkout the [demos](https://reaviz.io)
-- Learn more in the [docs](https://reaviz.io?path=/docs/docs-intro--page)
-- Learn about updates from the [changelog](CHANGELOG.md)
 
 ## ✨ Features
 
