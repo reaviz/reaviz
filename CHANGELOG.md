@@ -1,3 +1,6 @@
+# 15.13.1 - 4/2/24
+- [improvement] Improve bar glow #209
+
 # 15.13.0 - 4/1/24
 - [feature] Add SequentialLegend gradient element styling #208
 - [fix] Fix heatmap cell styling #207
