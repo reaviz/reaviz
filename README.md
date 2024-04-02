@@ -38,11 +38,11 @@ creating charts without sacrificing customization ability.
 
 ## 💎 Other Projects
 
-- Unify Viz - Premium offering 300+ Figma and React professionally designed data visualization
-components. [unifyviz.com →](https://unifyviz.com)
-- Reaflow - Open-source library for workflow and diagram graphs. [reaflow.dev →](https://reaflow.dev)
-- Reagraph - Open-source library for large webgl based network graphs. [reagraph.dev →](https://reagraph.dev)
-- Reablocks - Open-source component library for React based on Tailwind. [reablocks.dev →](https://reablocks.dev)
+- [Unify Viz](https://unifyviz.com) - Premium offering 300+ Figma and React professionally designed data visualization
+components.
+- [Reagraph](https://reagraph.dev) - Open-source library for large webgl based network graphs.
+- [Reablocks](https://reablocks.dev) - Open-source component library for React based on Tailwind.
+- [Reaflow](https://Reaflow.dev) - Open-source library for workflow and diagram graphs.
 
 ## ✨ Features
 
