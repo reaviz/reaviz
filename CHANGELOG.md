@@ -1,3 +1,6 @@
+# 15.14.0 - 4/2/24
+- [feature] Add opacity to glow #210
+  
 # 15.13.1 - 4/2/24
 - [improvement] Improve bar glow #209
 
