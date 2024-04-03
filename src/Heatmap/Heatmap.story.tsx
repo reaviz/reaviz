@@ -1,7 +1,5 @@
 import { Heatmap } from './Heatmap';
-import { 
-  heatmapSimpleData
- } from '../../demo';
+import { heatmapSimpleData } from '../../demo';
 import { SequentialLegend } from '../common/legends/SequentialLegend/SequentialLegend';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 import { getYScale } from '../common/scales';
@@ -40,7 +38,7 @@ export const BasicLegend = () => (
 );
 
 BasicLegend.story = {
-  name: 'Basic + Legend',
+  name: 'Basic + Legend'
 };
 
 export const MultiAxis = () => {
@@ -84,3 +82,21 @@ export const MultiAxis = () => {
     />
   );
 };
+
+export const Symbols = () => (
+  <Heatmap
+    height={230}
+    width={230}
+    data={heatmapSimpleData}
+    series={
+      <HeatmapSeries
+        cell={
+          <HeatmapCell
+            symbol={() => <circle r={14} transform={'translate(14, 14)'} />}
+          />
+        }
+        colorScheme="OrRd"
+      />
+    }
+  />
+);

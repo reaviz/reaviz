@@ -1,4 +1,25 @@
-# 15.9.5 - 3/36/24
+# 15.14.0 - 4/2/24
+- [feature] Add opacity to glow #210
+  
+# 15.13.1 - 4/2/24
+- [improvement] Improve bar glow #209
+
+# 15.13.0 - 4/1/24
+- [feature] Add SequentialLegend gradient element styling #208
+- [fix] Fix heatmap cell styling #207
+
+# 15.12.0 - 3/28/24
+- [feature] Add custom symbols for heatmap cells #206
+- [fix] Fix bar charts visual regression #205
+
+# 15.11.0 - 3/26/24
+- [feature] Add Line glow #204
+- [improvement] Improve multi-series area chart glow #203
+
+# 15.10.0 - 3/26/24
+- [feature] Add glow to area chart #202
+
+# 15.9.5 - 3/26/24
 - [fix] Fix bar chart tooltip hover accuracy #201
 
 # 15.9.4 - 3/26/24

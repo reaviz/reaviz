@@ -30,19 +30,19 @@ React natively for rendering the components while using D3js under the
 hood for calculations. The library provides an easy way to get started
 creating charts without sacrificing customization ability.
 
-Checkout Unify Viz, our premium offering 300+ Figma and React professionally designed data visualization
-components. [Learn more →](https://unifyviz.com)
-
-If you are looking for workflow/diagram graphs, checkout [reaflow](https://reaflow.dev).
-
-If you are looking for webgl-based network graphs, checkout [reagraph](https://reagraph.dev).
-
 ## 🚀 Quick Links
 
 - Checkout the [demos](https://reaviz.io)
 - Learn more in the [docs](https://reaviz.io?path=/docs/docs-intro--page)
-- Explore the library on [Chroma](https://www.chromatic.com/library?appId=5eb04da4d1d2d10022dc9c73)
 - Learn about updates from the [changelog](CHANGELOG.md)
+
+## 💎 Other Projects
+
+- [Unify Viz](https://unifyviz.com?utm=reaviz) - Premium offering 300+ Figma and React professionally designed data visualization
+components.
+- [Reagraph](https://reagraph.dev?utm=reaviz) - Open-source library for large webgl based network graphs.
+- [Reablocks](https://reablocks.dev?utm=reaviz) - Open-source component library for React based on Tailwind.
+- [Reaflow](https://reaflow.dev?utm=reaviz) - Open-source library for workflow and diagram graphs.
 
 ## ✨ Features
 

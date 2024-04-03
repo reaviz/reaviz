@@ -23,7 +23,8 @@ import {
   PropFunctionTypes
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
-import { Gradient, GradientProps } from '../../common';
+import { Glow, Gradient, GradientProps } from '../../common';
+import { generateGlowStyles } from '../../common/Glow/utils';
 import { CloneElement } from 'rdk';
 
 export interface LineProps extends PropFunctionTypes {
@@ -91,6 +92,11 @@ export interface LineProps extends PropFunctionTypes {
    * Gradient to apply to the line.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * Glow to apply to the line.
+   */
+  glow?: Glow;
 }
 
 export const Line: FC<Partial<LineProps>> = ({
@@ -107,6 +113,7 @@ export const Line: FC<Partial<LineProps>> = ({
   showZeroStroke,
   interpolation,
   gradient,
+  glow,
   ...rest
 }) => {
   const [pathLength, setPathLength] = useState<number | null>(null);
@@ -229,6 +236,10 @@ export const Line: FC<Partial<LineProps>> = ({
           custom={{
             enter,
             exit
+          }}
+          style={{
+            ...extras.style,
+            ...generateGlowStyles({ glow, colorSchemeColor: strokeFill })
           }}
         />
       )}

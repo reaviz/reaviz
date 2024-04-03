@@ -16,6 +16,8 @@ import {
   PropFunctionTypes
 } from '../../common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
+import { generateGlowStyles } from '../../common/Glow/utils';
+import { Glow } from '../../common';
 
 export interface AreaProps extends PropFunctionTypes {
   /**
@@ -72,11 +74,17 @@ export interface AreaProps extends PropFunctionTypes {
    * Gradient to apply to the area.
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
+
+  /**
+   * Glow to apply to the area.
+   */
+  glow?: Glow;
 }
 
 export const Area: FC<Partial<AreaProps>> = ({
   id,
   gradient,
+  glow,
   mask,
   data,
   color,
@@ -192,9 +200,13 @@ export const Area: FC<Partial<AreaProps>> = ({
           enter,
           exit
         }}
+        style={{
+          ...extras.style,
+          ...generateGlowStyles({ glow, colorSchemeColor: stroke })
+        }}
       />
     );
-  }, [data, enter, exit, fill, id, mask, rest, transition]);
+  }, [data, enter, exit, fill, glow, id, mask, rest, stroke, transition]);
 
   return (
     <Fragment>

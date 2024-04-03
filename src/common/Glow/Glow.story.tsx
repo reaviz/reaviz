@@ -1,7 +1,13 @@
 import { ScatterPlot, ScatterPoint, ScatterSeries } from '../../ScatterPlot';
-import { categoryData, largeSignalChartData } from '../../../demo';
+import {
+  categoryData,
+  largeSignalChartData,
+  singleDateData
+} from '../../../demo';
 import { Bar, BarChart, BarSeries } from '../../BarChart';
 import { Bubble, BubbleChart, BubbleSeries } from '../../BubbleChart';
+import { Area, AreaChart, AreaSeries, Line } from '../../AreaChart';
+import { LineChart, LineSeries } from '../../LineChart';
 import { ChartShallowDataShape } from '../data';
 
 export default {
@@ -58,6 +64,34 @@ export const BubbleGlow = () => (
       <BubbleSeries
         colorScheme="#5D25EE"
         bubble={<Bubble glow={{ color: '#5D25EE', blur: 10 }} />}
+      />
+    }
+  />
+);
+
+export const AreaGlow = () => (
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <AreaSeries
+        colorScheme="#5D25EE"
+        area={<Area glow={{ color: '#5D25EE', blur: 20 }} />}
+      />
+    }
+  />
+);
+
+export const LineGlow = () => (
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <LineSeries
+        colorScheme="#5D25EE"
+        line={<Line glow={{ color: '#5D25EE', blur: 10 }} />}
       />
     }
   />

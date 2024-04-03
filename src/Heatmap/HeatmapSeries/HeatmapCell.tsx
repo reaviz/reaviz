@@ -5,7 +5,8 @@ import React, {
   ReactElement,
   useMemo,
   useState,
-  useRef
+  useRef,
+  ReactNode
 } from 'react';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { CloneElement } from 'rdk';
@@ -74,6 +75,11 @@ export type HeatmapCellProps = {
   stroke: string;
 
   /**
+   * Symbol element to render.
+   */
+  symbol?: (data: ChartInternalShallowDataShape) => ReactNode;
+
+  /**
    * Data object set by `Heatmap`.
    */
   data: ChartInternalShallowDataShape;
@@ -134,6 +140,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   cellCount,
   fill,
   stroke,
+  symbol,
   x,
   y,
   style,
@@ -197,38 +204,75 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       ? chroma(stroke || fill).brighten(1)
       : stroke || fill;
 
-  const ariaLabelData = useMemo(() => getAriaLabel({...tooltipData, data: null}), [tooltipData]);
-  
+  const ariaLabelData = useMemo(
+    () => getAriaLabel({ ...tooltipData, data: null }),
+    [tooltipData]
+  );
+
+  const renderedSymbol = useMemo(
+    () => (symbol ? symbol(data!) : null),
+    [data, symbol]
+  );
+
   return (
     <Fragment>
       <g ref={rect}>
-        <motion.rect
-          {...rest}
-          fill={fill}
-          stroke={appliedStroke}
-          x={x}
-          y={y}
-          rx={rx}
-          ry={ry}
-          style={{ ...extras.style, cursor }}
-          className={classNames(css.cell, extras.className)}
-          initial={{
-            opacity: 0
-          }}
-          animate={{
-            opacity: 1
-          }}
-          exit={{
-            opacity: 0
-          }}
-          transition={transition}
-          onPointerOver={pointerOver}
-          onPointerOut={pointerOut}
-          onClick={onMouseClick}
-          tabIndex={0}
-          aria-label={ariaLabelData}
-          role="graphics-document"
-        />
+        {renderedSymbol ? (
+          <motion.g
+            {...rest}
+            fill={fill}
+            stroke={appliedStroke}
+            style={{ ...extras.style, cursor }}
+            className={extras?.className}
+            transform={`translate(${x}, ${y})`}
+            initial={{
+              opacity: 0
+            }}
+            animate={{
+              opacity: 1
+            }}
+            exit={{
+              opacity: 0
+            }}
+            transition={transition}
+            onPointerOver={pointerOver}
+            onPointerOut={pointerOut}
+            onClick={onMouseClick}
+            tabIndex={0}
+            aria-label={ariaLabelData}
+            role="graphics-document"
+          >
+            {renderedSymbol}
+          </motion.g>
+        ) : (
+          <motion.rect
+            {...rest}
+            fill={fill}
+            stroke={appliedStroke}
+            x={x}
+            y={y}
+            rx={rx}
+            ry={ry}
+            style={{ ...extras.style, cursor }}
+            className={classNames(css.cell, extras.className)}
+            initial={{
+              opacity: 0
+            }}
+            animate={{
+              opacity: 1
+            }}
+            exit={{
+              opacity: 0
+            }}
+            transition={transition}
+            onPointerOver={pointerOver}
+            onPointerOut={pointerOut}
+            onClick={onMouseClick}
+            tabIndex={0}
+            aria-label={ariaLabelData}
+            role="graphics-document"
+          />
+        )}
       </g>
       {tooltip && !(tooltip.props as any).disabled && !isTransparent && (
         <CloneElement<ChartTooltipProps>
