@@ -1,0 +1,1 @@
+import{s as y,j as a,t as l,k as p,p as m}from"./RadialAxis-6c2bc59c.js";const f=.8908130915292852,T=a(m/10)/a(7*m/10),b=a(l/10)*T,d=-p(l/10)*T,j={draw(s,e){const o=y(e*f),n=b*o,t=d*o;s.moveTo(0,-o),s.lineTo(n,t);for(let c=1;c<5;++c){const k=l*c/5,r=p(k),i=a(k);s.lineTo(i*o,-r*o),s.lineTo(r*n-i*t,i*n+r*t)}s.closePath()}};export{j as s};

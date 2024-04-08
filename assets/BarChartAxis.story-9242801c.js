@@ -1,0 +1,35 @@
+import{j as e}from"./jsx-runtime-86dfebf6.js";import{S as f}from"./StackedBarChart-f620755a.js";import{b as u}from"./binned-b046df83.js";import"./moment-a9aaa855.js";import"./sonar-ace0ce62.js";import{B as G,a as O,S as g,d as C,M as D,R as r,b as n,c as Y,G as T,H as w}from"./BarChart-9c825fb0.js";import{j as v,G as A,e as L,b as o,c as p,d,L as b,a as B,g as R}from"./RadialValueMarker-7b3f8322.js";import{G as l,a as i}from"./schemes-56affe43.js";import"./index-1b03fe98.js";import"./chroma-699b8ba0.js";import"./range-163cdb4a.js";import"./index-256d607f.js";import"./functions-234b1417.js";import"./RadialAxis-6c2bc59c.js";import"./rdk-0beed5d4.js";import"./index-6fd5a17b.js";import"./frame-a8f3761f.js";import"./utils-83ce1bd4.js";import"./helper-26bacd48.js";import"./quantile-a1f83f78.js";import"./DiscreteLegendEntry-49610185.js";import"./SequentialLegend-1647127f.js";import"./Count-a38a1947.js";import"./SVGVisualElement-f20753d9.js";import"./builder-9833ba7e.js";import"./expand-7b65a05b.js";import"./time-a9784969.js";import"./index-f6b105ee.js";import"./extends-20258d9b.js";const de={title:"Charts/Bar Chart/Axis",component:G,subcomponents:{BarSeries:O,StackedBarSeries:g,StackedNormalizedBarSeries:C,MarimekkoBarSeries:D,RangeLines:r,Bar:n,BarLabel:Y,GuideBar:T,HistogramBarSeries:w}},a=()=>{const c=v({type:"category",width:450,data:[{key:"Closed",data:0,x:"Closed"},{key:"Opened",data:0,x:"Opened"}],isMultiSeries:!1,isDiverging:!0});return e(f,{width:450,height:200,margins:0,data:u,gridlines:e(A,{line:e(L,{direction:"x"})}),series:e(g,{layout:"horizontal",type:"stackedDiverging",colorScheme:["#ACB7C9","#418AD7"],bar:[e(n,{width:10,gradient:e(l,{stops:[e(i,{offset:"5%",stopOpacity:.25},"start"),e(i,{offset:"90%",stopOpacity:.7},"stop")]}),rangeLines:e(r,{position:"top",strokeWidth:3})}),e(n,{width:10,gradient:e(l,{stops:[e(i,{offset:"5%",stopOpacity:.7},"stop"),e(i,{offset:"90%",stopOpacity:.25},"start")]}),rangeLines:e(r,{position:"top",strokeWidth:3})})]}),xAxis:e(o,{orientation:"horizontal",position:"end",tickSeries:e(p,{line:null,label:e(d,{padding:5,position:"end",format:t=>`${t<0?t*-1:t}`})})}),secondaryAxis:[e(o,{orientation:"horizontal",type:"category",scale:c,tickSeries:e(p,{line:null,label:e(d,{padding:20,position:"start"})})})],yAxis:e(b,{type:"category",position:"center",orientation:"vertical",tickSeries:e(B,{line:null,label:null})})})};a.story={name:"Top + Bottom Axis"};const s=()=>{const c=R({type:"category",height:200,data:[{key:"Closed",data:0,y:"Closed"},{key:"Opened",data:0,y:"Opened"}],isMultiSeries:!1,isDiverging:!0});return e(f,{width:450,height:200,margins:0,data:u,gridlines:e(A,{line:e(L,{direction:"y"})}),series:e(g,{type:"stackedDiverging",colorScheme:["#ACB7C9","#418AD7"],bar:[e(n,{width:25,gradient:e(l,{stops:[e(i,{offset:"5%",stopOpacity:.25},"start"),e(i,{offset:"90%",stopOpacity:.7},"stop")]}),rangeLines:e(r,{position:"top",strokeWidth:3})}),e(n,{width:25,gradient:e(l,{stops:[e(i,{offset:"5%",stopOpacity:.7},"stop"),e(i,{offset:"90%",stopOpacity:.25},"start")]}),rangeLines:e(r,{position:"top",strokeWidth:3})})]}),yAxis:e(o,{roundDomains:!0,position:"end",axisLine:null,tickSeries:e(p,{line:null,label:e(d,{padding:5,position:"end",format:t=>`${t<0?t*-1:t}`})})}),xAxis:e(b,{type:"category",position:"center",tickSeries:e(B,{line:null,label:null})}),secondaryAxis:[e(o,{type:"category",position:"start",axisLine:null,scale:c,tickSeries:e(p,{line:null,label:e(d,{padding:20,position:"start",rotation:270,align:"start"})})})]})};s.story={name:"Left + Right Axis"};var y,m,k;a.parameters={...a.parameters,docs:{...(y=a.parameters)==null?void 0:y.docs,source:{originalSource:`() => {
+  const scale = getXScale({
+    type: 'category',
+    width: 450,
+    data: [{
+      key: 'Closed',
+      data: 0,
+      x: 'Closed'
+    }, {
+      key: 'Opened',
+      data: 0,
+      x: 'Opened'
+    }],
+    isMultiSeries: false,
+    isDiverging: true
+  });
+  return <StackedBarChart width={450} height={200} margins={0} data={binnedDateData} gridlines={<GridlineSeries line={<Gridline direction="x" />} />} series={<StackedBarSeries layout="horizontal" type="stackedDiverging" colorScheme={['#ACB7C9', '#418AD7']} bar={[<Bar width={10} gradient={<Gradient stops={[<GradientStop offset="5%" stopOpacity={0.25} key="start" />, <GradientStop offset="90%" stopOpacity={0.7} key="stop" />]} />} rangeLines={<RangeLines position="top" strokeWidth={3} />} />, <Bar width={10} gradient={<Gradient stops={[<GradientStop offset="5%" stopOpacity={0.7} key="stop" />, <GradientStop offset="90%" stopOpacity={0.25} key="start" />]} />} rangeLines={<RangeLines position="top" strokeWidth={3} />} />]} />} xAxis={<LinearYAxis orientation="horizontal" position="end" tickSeries={<LinearYAxisTickSeries line={null} label={<LinearYAxisTickLabel padding={5} position="end" format={d => \`\${d < 0 ? d * -1 : d}\`} />} />} />} secondaryAxis={[<LinearYAxis orientation="horizontal" type="category" scale={scale} tickSeries={<LinearYAxisTickSeries line={null} label={<LinearYAxisTickLabel padding={20} position="start" />} />} />]} yAxis={<LinearXAxis type="category" position="center" orientation="vertical" tickSeries={<LinearXAxisTickSeries line={null} label={null} />} />} />;
+}`,...(k=(m=a.parameters)==null?void 0:m.docs)==null?void 0:k.source}}};var S,x,h;s.parameters={...s.parameters,docs:{...(S=s.parameters)==null?void 0:S.docs,source:{originalSource:`() => {
+  const scale = getYScale({
+    type: 'category',
+    height: 200,
+    data: [{
+      key: 'Closed',
+      data: 0,
+      y: 'Closed'
+    }, {
+      key: 'Opened',
+      data: 0,
+      y: 'Opened'
+    }],
+    isMultiSeries: false,
+    isDiverging: true
+  });
+  return <StackedBarChart width={450} height={200} margins={0} data={binnedDateData} gridlines={<GridlineSeries line={<Gridline direction="y" />} />} series={<StackedBarSeries type="stackedDiverging" colorScheme={['#ACB7C9', '#418AD7']} bar={[<Bar width={25} gradient={<Gradient stops={[<GradientStop offset="5%" stopOpacity={0.25} key="start" />, <GradientStop offset="90%" stopOpacity={0.7} key="stop" />]} />} rangeLines={<RangeLines position="top" strokeWidth={3} />} />, <Bar width={25} gradient={<Gradient stops={[<GradientStop offset="5%" stopOpacity={0.7} key="stop" />, <GradientStop offset="90%" stopOpacity={0.25} key="start" />]} />} rangeLines={<RangeLines position="top" strokeWidth={3} />} />]} />} yAxis={<LinearYAxis roundDomains={true} position="end" axisLine={null} tickSeries={<LinearYAxisTickSeries line={null} label={<LinearYAxisTickLabel padding={5} position="end" format={d => \`\${d < 0 ? d * -1 : d}\`} />} />} />} xAxis={<LinearXAxis type="category" position="center" tickSeries={<LinearXAxisTickSeries line={null} label={null} />} />} secondaryAxis={[<LinearYAxis type="category" position="start" axisLine={null} scale={scale} tickSeries={<LinearYAxisTickSeries line={null} label={<LinearYAxisTickLabel padding={20} position="start" rotation={270} align="start" />} />} />]} />;
+}`,...(h=(x=s.parameters)==null?void 0:x.docs)==null?void 0:h.source}}};export{s as LeftRightAxis,a as TopBottomAxis,de as default};

@@ -1,0 +1,1 @@
+import{c}from"./chroma-699b8ba0.js";const x=({glow:o,colorSchemeColor:e})=>{if(!o)return{};let{x:a=0,y:p=0,blur:t=5,color:r=e||"rgb(255, 255, 255, 0.25)",opacity:s=1}=o;return r=c(r).alpha(s).css(),t?{filter:`drop-shadow(${a}px ${p}px ${t}px ${r})`}:{}};export{x as g};
