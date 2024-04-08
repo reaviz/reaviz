@@ -115,7 +115,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
       <>
         {valueMarkers?.length &&
           valueMarkers.map((marker) => {
-            const isVertical = marker?.props?.isHorizontal === false;
+            const isVertical = marker?.props?.direction === 'vertical';
             const size = isVertical ? height : width;
             const value = isVertical
               ? xScale(marker.props.value)

@@ -97,7 +97,7 @@ export const VerticalLinearValueMarkers = () => (
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
         valueMarkers={[
           <LinearValueMarker value={5} color="#D740BE" />,
-          <LinearValueMarker value={25} color="#F8A340" isHorizontal={false} />
+          <LinearValueMarker value={25} color="#F8A340" direction="vertical" />
         ]}
       />
     }
