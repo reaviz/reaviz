@@ -29,7 +29,7 @@ export default {
   }
 };
 
-export const LinearValueMarkersHorizontal = () => (
+export const LinearValueMarkersVertical = () => (
   <BarChart
     width={500}
     height={350}
@@ -48,15 +48,15 @@ export const LinearValueMarkersHorizontal = () => (
         padding={0.1}
         bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
         valueMarkers={[
-          <LinearValueMarker value={12} color="#D740BE" />,
-          <LinearValueMarker value={6} color="#F8A340" />
+          <LinearValueMarker value={12} color="#D740BE" direction="vertical" />,
+          <LinearValueMarker value={6} color="#F8A340" direction="vertical" />
         ]}
       />
     }
   />
 );
 
-export const LinearValueMarkersVertical = () => (
+export const LinearValueMarkersHorizontal = () => (
   <BarChart
     width={400}
     height={350}

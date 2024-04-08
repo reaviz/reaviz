@@ -319,14 +319,21 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     () => (
       <>
         {valueMarkers?.length &&
-          valueMarkers.map((marker) => (
-            <CloneElement<LinearValueMarkerProps>
-              key={marker.key}
-              element={marker}
-              size={width}
-              value={yScale(marker.props.value)}
-            />
-          ))}
+          valueMarkers.map((marker) => {
+            const isVertical = marker?.props?.direction === 'vertical';
+            const size = isVertical ? height : width;
+            const value = isVertical
+              ? xScale(marker.props.value)
+              : yScale(marker.props.value);
+            return (
+              <CloneElement<LinearValueMarkerProps>
+                key={marker.key}
+                element={marker}
+                size={size}
+                value={value}
+              />
+            );
+          })}
       </>
     ),
     [valueMarkers, width, yScale]
