@@ -1,5 +1,9 @@
 import React from 'react';
-import { medDateData, medSignalChartData } from '../../demo';
+import {
+  histogramNumberData,
+  medDateData,
+  medSignalChartData
+} from '../../demo';
 import {
   RadialAxis,
   RadialValueMarker,
@@ -8,7 +12,9 @@ import {
   RadialAxisTick,
   RadialAxisTickSeries,
   schemes,
-  LinearValueMarker
+  LinearValueMarker,
+  LinearXAxis,
+  LinearYAxis
 } from '../common';
 import {
   RadialScatterPlot,
@@ -74,6 +80,25 @@ export const RadialValueMarkers = () => (
           />
         }
         arcs={<RadialAxisArcSeries count={10} />}
+      />
+    }
+  />
+);
+
+export const VerticalLinearValueMarkers = () => (
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={histogramNumberData}
+    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
+    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
+    series={
+      <ScatterSeries
+        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+        valueMarkers={[
+          <LinearValueMarker value={5} color="#D740BE" />,
+          <LinearValueMarker value={25} color="#F8A340" isHorizontal={false} />
+        ]}
       />
     }
   />

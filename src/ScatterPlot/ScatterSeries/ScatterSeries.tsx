@@ -78,6 +78,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   activeIds,
   point,
   valueMarkers,
+  xScale,
   yScale,
   ...rest
 }) => {
@@ -96,6 +97,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         <CloneElement<ScatterPointProps>
           element={point}
           key={key}
+          xScale={xScale}
           yScale={yScale}
           {...rest}
           id={id}
@@ -112,14 +114,21 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
     () => (
       <>
         {valueMarkers?.length &&
-          valueMarkers.map((marker) => (
-            <CloneElement<LinearValueMarkerProps>
-              key={marker.key}
-              element={marker}
-              size={width}
-              value={yScale(marker.props.value)}
-            />
-          ))}
+          valueMarkers.map((marker) => {
+            const isVertical = marker?.props?.isHorizontal === false;
+            const size = isVertical ? height : width;
+            const value = isVertical
+              ? xScale(marker.props.value)
+              : yScale(marker.props.value);
+            return (
+              <CloneElement<LinearValueMarkerProps>
+                key={marker.key}
+                element={marker}
+                size={size}
+                value={value}
+              />
+            );
+          })}
       </>
     ),
     [valueMarkers, width, yScale]
