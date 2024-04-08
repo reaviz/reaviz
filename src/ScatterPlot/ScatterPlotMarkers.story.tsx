@@ -1,5 +1,9 @@
 import React from 'react';
-import { medDateData, medSignalChartData } from '../../demo';
+import {
+  histogramNumberData,
+  medDateData,
+  medSignalChartData
+} from '../../demo';
 import {
   RadialAxis,
   RadialValueMarker,
@@ -8,7 +12,9 @@ import {
   RadialAxisTick,
   RadialAxisTickSeries,
   schemes,
-  LinearValueMarker
+  LinearValueMarker,
+  LinearXAxis,
+  LinearYAxis
 } from '../common';
 import {
   RadialScatterPlot,
@@ -16,7 +22,7 @@ import {
   RadialScatterSeries
 } from '../RadialScatterPlot';
 import { ScatterPlot } from './ScatterPlot';
-import { ScatterPoint, ScatterSeries } from './ScatterSeries';
+import { ScatterPoint, ScatterSeries, ScatterArea } from './ScatterSeries';
 
 export default {
   title: 'Charts/Scatter Plot/Markers',
@@ -41,6 +47,25 @@ export const LinearValueMarkers = () => (
         valueMarkers={[
           <LinearValueMarker value={2} color="#D740BE" />,
           <LinearValueMarker value={5} color="#F8A340" />
+        ]}
+      />
+    }
+  />
+);
+
+export const VerticalLinearValueMarkers = () => (
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={histogramNumberData}
+    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
+    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
+    series={
+      <ScatterSeries
+        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+        valueMarkers={[
+          <LinearValueMarker value={5} color="#D740BE" />,
+          <LinearValueMarker value={25} color="#F8A340" isHorizontal={false} />
         ]}
       />
     }

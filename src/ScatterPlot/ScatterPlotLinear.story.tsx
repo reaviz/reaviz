@@ -7,17 +7,19 @@ import {
   signalStageData,
   signalStages
 } from '../../demo/signals';
-import { randomNumber } from '../../demo';
+import { histogramNumberData, numberData, randomNumber } from '../../demo';
 import { range } from 'd3-array';
 import { GridlineSeries, Gridline, GridStripe } from '../common/Gridline';
-import { ScatterSeries, ScatterPoint } from './ScatterSeries';
+import { ScatterSeries, ScatterPoint, ScatterArea } from './ScatterSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearXAxis
 } from '../common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '../common/color';
+import { LinearValueMarker } from '../common';
 
 export default {
   title: 'Charts/Scatter Plot/Linear',
@@ -34,7 +36,9 @@ export const Simple = () => (
     width={750}
     data={medSignalChartData}
     series={
-      <ScatterSeries point={<ScatterPoint color={schemes.cybertron[0]} size={4} />} />
+      <ScatterSeries
+        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+      />
     }
   />
 );
@@ -139,7 +143,7 @@ export const Bubble = () => (
         point={
           <ScatterPoint
             color="rgba(45, 96, 232, .8)"
-            size={v => v.metadata.severity + 5}
+            size={(v) => v.metadata.severity + 5}
           />
         }
       />
@@ -186,3 +190,31 @@ const BubbleChartLiveUpdate = () => {
     </Fragment>
   );
 };
+
+export const WithArea = () => (
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={histogramNumberData}
+    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
+    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
+    series={
+      <ScatterSeries
+        scatterAreas={[
+          <ScatterArea
+            startPosition={{ x: 0, y: 1 }}
+            endPosition={{ x: 25, y: 5 }}
+            borderColor={'#1644A8'}
+            borderWidth={2}
+            color="rgba(43, 43, 71, 0.30)"
+          />
+        ]}
+        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+        valueMarkers={[
+          <LinearValueMarker value={5} color="#858596" />,
+          <LinearValueMarker value={25} color="#858596" isHorizontal={false} />
+        ]}
+      />
+    }
+  />
+);

@@ -4,6 +4,7 @@ import { CloneElement } from 'rdk';
 import { ScatterPoint, ScatterPointProps } from './ScatterPoint';
 import { identifier } from 'safe-identifier';
 import { LinearValueMarker, LinearValueMarkerProps } from '../../common';
+import { ScatterAreaProps } from './ScatterArea';
 
 export interface ScatterSeriesProps {
   /**
@@ -62,6 +63,8 @@ export interface ScatterSeriesProps {
   valueMarkers:
     | ReactElement<LinearValueMarkerProps, typeof LinearValueMarker>[]
     | null;
+
+  scatterAreas?: ReactElement<ScatterAreaProps>[];
 }
 
 // For bubble charts, often symbols exceed the area
@@ -79,6 +82,8 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   point,
   valueMarkers,
   yScale,
+  xScale,
+  scatterAreas,
   ...rest
 }) => {
   const renderPoint = useCallback(
@@ -96,6 +101,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         <CloneElement<ScatterPointProps>
           element={point}
           key={key}
+          xScale={xScale}
           yScale={yScale}
           {...rest}
           id={id}
@@ -112,14 +118,21 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
     () => (
       <>
         {valueMarkers?.length &&
-          valueMarkers.map((marker) => (
-            <CloneElement<LinearValueMarkerProps>
-              key={marker.key}
-              element={marker}
-              size={width}
-              value={yScale(marker.props.value)}
-            />
-          ))}
+          valueMarkers.map((marker) => {
+            const isVertical = marker?.props?.isHorizontal === false;
+            const size = isVertical ? height : width;
+            const value = isVertical
+              ? xScale(marker.props.value)
+              : yScale(marker.props.value);
+            return (
+              <CloneElement<LinearValueMarkerProps>
+                key={marker.key}
+                element={marker}
+                size={size}
+                value={value}
+              />
+            );
+          })}
       </>
     ),
     [valueMarkers, width, yScale]
@@ -138,7 +151,18 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         </clipPath>
       </defs>
       {renderValueMarkers()}
-      <g clipPath={`url(#${id}-path)`}>{data!.map(renderPoint)}</g>
+      <g clipPath={`url(#${id}-path)`}>
+        {scatterAreas?.map((area, index) => (
+          <CloneElement<ScatterAreaProps>
+            key={index}
+            element={area}
+            data={data[index]}
+            yScale={yScale}
+            xScale={xScale}
+          />
+        ))}
+        {data!.map(renderPoint)}
+      </g>
     </Fragment>
   );
 };
