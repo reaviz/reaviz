@@ -1,3 +1,7 @@
+# 15.15.0 - 4/8/24
+- [feature] added vertical line support for charts #212
+- [fix] fix labels off by `5px` in some scenarios #213
+
 # 15.14.0 - 4/2/24
 - [feature] Add opacity to glow #210
   
