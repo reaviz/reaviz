@@ -35,6 +35,32 @@ export const LinearValueMarkers = () => (
   />
 );
 
+export const RadialValueMarkersVertical = () => (
+  <LineChart
+    width={550}
+    height={350}
+    data={multiDateData}
+    series={
+      <LineSeries
+        type="grouped"
+        colorScheme="cybertron"
+        valueMarkers={[
+          <LinearValueMarker
+            value={multiDateData[0].data[1].key}
+            color="#D740BE"
+            direction="vertical"
+          />,
+          <LinearValueMarker
+            value={multiDateData[0].data[2].key}
+            color="#F8A340"
+            direction="vertical"
+          />
+        ]}
+      />
+    }
+  />
+);
+
 export const RadialValueMarkers = () => (
   <RadialAreaChart
     height={500}

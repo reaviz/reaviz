@@ -53,6 +53,25 @@ export const LinearValueMarkers = () => (
   />
 );
 
+export const LinearValueMarkersVertical = () => (
+  <ScatterPlot
+    height={400}
+    width={750}
+    data={histogramNumberData}
+    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
+    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
+    series={
+      <ScatterSeries
+        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+        valueMarkers={[
+          <LinearValueMarker value={5} color="#D740BE" direction="vertical" />,
+          <LinearValueMarker value={25} color="#F8A340" direction="vertical" />
+        ]}
+      />
+    }
+  />
+);
+
 export const RadialValueMarkers = () => (
   <RadialScatterPlot
     height={450}
@@ -80,25 +99,6 @@ export const RadialValueMarkers = () => (
           />
         }
         arcs={<RadialAxisArcSeries count={10} />}
-      />
-    }
-  />
-);
-
-export const VerticalLinearValueMarkers = () => (
-  <ScatterPlot
-    height={400}
-    width={750}
-    data={histogramNumberData}
-    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
-    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
-    series={
-      <ScatterSeries
-        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
-        valueMarkers={[
-          <LinearValueMarker value={5} color="#D740BE" />,
-          <LinearValueMarker value={25} color="#F8A340" direction="vertical" />
-        ]}
       />
     }
   />

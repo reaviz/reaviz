@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 export interface LinearValueMarkerProps {
   color: string;
-  value: number;
+  value: any;
   className?: string;
   thickness?: number;
   size?: number;
