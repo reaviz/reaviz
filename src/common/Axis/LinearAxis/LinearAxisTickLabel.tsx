@@ -1,5 +1,8 @@
 import React, { FC, ReactElement } from 'react';
-import { LinearAxisTickLine, LinearAxisTickLineProps } from './LinearAxisTickLine';
+import {
+  LinearAxisTickLine,
+  LinearAxisTickLineProps
+} from './LinearAxisTickLine';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -72,14 +75,27 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   }
 
   function getOffset() {
-    const adjustedPadding = typeof padding === 'number' ? { fromAxis: padding, alongAxis: padding } : padding;
+    const adjustedPadding =
+      typeof padding === 'number'
+        ? { fromAxis: padding, alongAxis: padding }
+        : padding;
 
     const spacing = getTickLineSpacing();
-    const offset1 = position === 'start' ? spacing[0] - adjustedPadding.fromAxis : position === 'end' ? spacing[1] + adjustedPadding.fromAxis : 0;
+    const offset1 =
+      position === 'start'
+        ? spacing[0] - adjustedPadding.fromAxis
+        : position === 'end'
+          ? spacing[1] + adjustedPadding.fromAxis
+          : 0;
 
     const align = getAlign();
-    let offset2 = rotation === true ? -5 : 0;
-    offset2 += align === 'center' ? 0 : align === 'start' ? -adjustedPadding.alongAxis : adjustedPadding.alongAxis;
+    let offset2 = 0;
+    offset2 +=
+      align === 'center'
+        ? 0
+        : align === 'start'
+          ? -adjustedPadding.alongAxis
+          : adjustedPadding.alongAxis;
 
     const horz = orientation === 'horizontal';
 
@@ -100,14 +116,20 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
     } else {
       const align = getAlign();
       if (orientation === 'horizontal') {
-        newtextAnchor = align === 'center' ? 'middle' : align === 'start' ? 'end' : 'start';
+        newtextAnchor =
+          align === 'center' ? 'middle' : align === 'start' ? 'end' : 'start';
         if (position === 'start') {
           alignmentBaseline = 'baseline';
         } else if (position === 'end') {
           alignmentBaseline = 'hanging';
         }
       } else {
-        alignmentBaseline = align === 'center' ? 'middle' : align === 'start' ? 'baseline' : 'hanging';
+        alignmentBaseline =
+          align === 'center'
+            ? 'middle'
+            : align === 'start'
+              ? 'baseline'
+              : 'hanging';
         if (position === 'start') {
           newtextAnchor = 'end';
         } else if (position === 'end') {
@@ -129,7 +151,11 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   const textPosition = getTextPosition();
 
   return (
-    <g transform={`translate(${x}, ${y})`} fontSize={fontSize} fontFamily={fontFamily}>
+    <g
+      transform={`translate(${x}, ${y})`}
+      fontSize={fontSize}
+      fontFamily={fontFamily}
+    >
       <title>{fullText}</title>
       <text {...textPosition} fill={fill} className={className}>
         {text}

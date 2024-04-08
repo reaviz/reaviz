@@ -1,8 +1,5 @@
-import React from 'react';
-import {
-  medDateData,
-  histogramNumberData
-} from '../../demo';
+import React, { useState } from 'react';
+import { medDateData, histogramNumberData } from '../../demo';
 import { timeWeek } from 'd3-time';
 import {
   Bar,
@@ -17,7 +14,9 @@ import {
 } from './BarSeries';
 import {
   LinearXAxis,
-  LinearXAxisTickSeries
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries
 } from '../common/Axis/LinearAxis';
 import { HistogramBarChart } from './HistogramBarChart';
 
@@ -38,26 +37,211 @@ export default {
 };
 
 export const Dates = () => (
+  <HistogramBarChart
+    width={350}
+    height={250}
+    xAxis={
+      <LinearXAxis
+        type="time"
+        tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
+      />
+    }
+    series={<HistogramBarSeries binSize={60 * 60 * 24 * 1000} />}
+    data={medDateData}
+  />
+);
+
+export const Numbers = () => (
+  <HistogramBarChart
+    width={350}
+    height={250}
+    xAxis={<LinearXAxis type="value" />}
+    series={<HistogramBarSeries binSize={1} />}
+    data={histogramNumberData}
+  />
+);
+
+export const MultiMonth = () => {
+  const [data] = useState(
+    [
+      {
+        id: '2024-03-03T00:00:00.000Z',
+        key: '2024-03-03T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-04T00:00:00.000Z',
+        key: '2024-03-04T00:00:00.000Z',
+        data: 1
+      },
+      {
+        id: '2024-03-05T00:00:00.000Z',
+        key: '2024-03-05T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-06T00:00:00.000Z',
+        key: '2024-03-06T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-07T00:00:00.000Z',
+        key: '2024-03-07T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-08T00:00:00.000Z',
+        key: '2024-03-08T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-09T00:00:00.000Z',
+        key: '2024-03-09T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-10T00:00:00.000Z',
+        key: '2024-03-10T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-11T00:00:00.000Z',
+        key: '2024-03-11T00:00:00.000Z',
+        data: 2
+      },
+      {
+        id: '2024-03-12T00:00:00.000Z',
+        key: '2024-03-12T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-13T00:00:00.000Z',
+        key: '2024-03-13T00:00:00.000Z',
+        data: 1
+      },
+      {
+        id: '2024-03-14T00:00:00.000Z',
+        key: '2024-03-14T00:00:00.000Z',
+        data: 1
+      },
+      {
+        id: '2024-03-15T00:00:00.000Z',
+        key: '2024-03-15T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-16T00:00:00.000Z',
+        key: '2024-03-16T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-17T00:00:00.000Z',
+        key: '2024-03-17T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-18T00:00:00.000Z',
+        key: '2024-03-18T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-19T00:00:00.000Z',
+        key: '2024-03-19T00:00:00.000Z',
+        data: 4
+      },
+      {
+        id: '2024-03-20T00:00:00.000Z',
+        key: '2024-03-20T00:00:00.000Z',
+        data: 3
+      },
+      {
+        id: '2024-03-21T00:00:00.000Z',
+        key: '2024-03-21T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-22T00:00:00.000Z',
+        key: '2024-03-22T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-23T00:00:00.000Z',
+        key: '2024-03-23T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-24T00:00:00.000Z',
+        key: '2024-03-24T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-25T00:00:00.000Z',
+        key: '2024-03-25T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-26T00:00:00.000Z',
+        key: '2024-03-26T00:00:00.000Z',
+        data: 1
+      },
+      {
+        id: '2024-03-27T00:00:00.000Z',
+        key: '2024-03-27T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-28T00:00:00.000Z',
+        key: '2024-03-28T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-29T00:00:00.000Z',
+        key: '2024-03-29T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-30T00:00:00.000Z',
+        key: '2024-03-30T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-03-31T00:00:00.000Z',
+        key: '2024-03-31T00:00:00.000Z',
+        data: 0
+      },
+      {
+        id: '2024-04-01T00:00:00.000Z',
+        key: '2024-04-01T00:00:00.000Z',
+        data: 1
+      },
+      {
+        id: '2024-04-02T00:00:00.000Z',
+        key: '2024-04-02T00:00:00.000Z',
+        data: 0
+      }
+    ].map((item) => ({ ...item, key: new Date(item.key) }))
+  );
+  const MILLISECONDS_IN_1_DAY = 24 * 60 * 60 * 1000;
+
+  return (
     <HistogramBarChart
-      width={350}
+      width={300}
       height={250}
-      xAxis={
+      gridlines={null}
+      Axis={
         <LinearXAxis
           type="time"
           tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
         />
       }
-      series={<HistogramBarSeries binSize={60 * 60 * 24 * 1000} />}
-      data={medDateData}
+      yAxis={
+        <LinearYAxis
+          tickSeries={<LinearYAxisTickSeries tickSize={25} />}
+          type="value"
+        />
+      }
+      series={<HistogramBarSeries binSize={MILLISECONDS_IN_1_DAY} />}
+      data={data}
     />
   );
-
-export const Numbers = () => (
-    <HistogramBarChart
-      width={350}
-      height={250}
-      xAxis={<LinearXAxis type="value" />}
-      series={<HistogramBarSeries binSize={1} />}
-      data={histogramNumberData}
-    />
-  );
+};
