@@ -1,6 +1,6 @@
 import React, { FC, ReactElement, Fragment } from 'react';
 import { HeatmapCell, HeatmapCellProps } from './HeatmapCell';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { ColorSchemeType } from '../../common/color';
 import { ChartInternalNestedDataShape } from '../../common/data';
 import {

@@ -12,7 +12,7 @@ import { Gradient, GradientProps } from '../../common/Gradient';
 import classNames from 'classnames';
 import { ChartInternalShallowDataShape, Direction } from '../../common/data';
 import { RangeLinesProps, RangeLines } from './RangeLines';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { Mask, MaskProps } from '../../common/Mask';
 import {
   constructFunctionProps,

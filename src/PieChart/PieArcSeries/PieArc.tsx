@@ -1,7 +1,7 @@
-import React, { ReactElement, useState, FC, useRef, useMemo, useCallback } from 'react';
+import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { ArcData } from '../PieChart';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import { useInterpolate } from './useInterpolate';
@@ -123,22 +123,27 @@ export const PieArc: FC<PieArcProps> = ({
     }
   });
 
-  const internalFill = useMemo(
-    () => {
-      if (gradient) {
-        return `url(#gradient-${id})`;
-      }
+  const internalFill = useMemo(() => {
+    if (gradient) {
+      return `url(#gradient-${id})`;
+    }
 
-      return color;
-    },
-    [gradient, id, color]
+    return color;
+  }, [gradient, id, color]);
+
+  const tooltipData = useMemo(
+    () => ({ y: data.data.data, x: data.data.key }),
+    [data]
   );
-
-  const tooltipData = useMemo(() => ({ y: data.data.data, x: data.data.key }), [data]);
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (
-    <g ref={arcRef} tabIndex={0} aria-label={ariaLabelData} role="graphics-document">
+    <g
+      ref={arcRef}
+      tabIndex={0}
+      aria-label={ariaLabelData}
+      role="graphics-document"
+    >
       <motion.path
         role="graphics-symbol"
         d={d}
@@ -146,7 +151,7 @@ export const PieArc: FC<PieArcProps> = ({
         fill={internalFill}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
-        onClick={event => {
+        onClick={(event) => {
           if (!disabled) {
             onClick?.({
               value: data.data,

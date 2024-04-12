@@ -1,6 +1,6 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { motion } from 'framer-motion';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { ColorSchemeType, getColor } from '../common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
 import { TreeMapRect, TreeMapRectProps } from './TreeMapRect';

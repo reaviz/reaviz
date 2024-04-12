@@ -11,7 +11,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { MapMarkerProps, MapMarker } from './MapMarker';
 import { motion } from 'framer-motion';
 

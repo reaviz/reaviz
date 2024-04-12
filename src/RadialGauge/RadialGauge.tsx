@@ -12,7 +12,7 @@ import {
   StackedRadialGaugeSeries,
   StackedRadialGaugeSeriesProps
 } from './RadialGaugeSeries';
-import { useId } from 'rdk';
+import { useId } from 'reablocks';
 
 export interface RadialGaugeProps extends ChartProps {
   /**
@@ -65,33 +65,40 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
 }) => {
   const newId = useId(id);
 
-  const renderSeries = useCallback(({ chartHeight, chartWidth }: ChartContextProps) => {
-    let scale;
+  const renderSeries = useCallback(
+    ({ chartHeight, chartWidth }: ChartContextProps) => {
+      let scale;
 
-    if (Array.isArray(maxValue)) {
-      scale = maxValue.map((max, index) => scaleLinear()
-        .domain([minValue?.[index] ?? minValue?.[0] ?? minValue, max])
-        .range([startAngle, endAngle]));
-    } else if (Array.isArray(minValue)) {
-      scale = minValue.map((min, index) => scaleLinear()
-        .domain([min, maxValue?.[index] ?? maxValue?.[0] ?? maxValue])
-        .range([startAngle, endAngle]));
-    } else {
-      scale = scaleLinear()
-        .domain([minValue, maxValue])
-        .range([startAngle, endAngle]);
-    }
+      if (Array.isArray(maxValue)) {
+        scale = maxValue.map((max, index) =>
+          scaleLinear()
+            .domain([minValue?.[index] ?? minValue?.[0] ?? minValue, max])
+            .range([startAngle, endAngle])
+        );
+      } else if (Array.isArray(minValue)) {
+        scale = minValue.map((min, index) =>
+          scaleLinear()
+            .domain([min, maxValue?.[index] ?? maxValue?.[0] ?? maxValue])
+            .range([startAngle, endAngle])
+        );
+      } else {
+        scale = scaleLinear()
+          .domain([minValue, maxValue])
+          .range([startAngle, endAngle]);
+      }
 
-    return cloneElement(series, {
-      id: newId,
-      scale,
-      data,
-      startAngle,
-      endAngle,
-      width: chartWidth,
-      height: chartHeight
-    });
-  }, [data, endAngle, maxValue, minValue, series, startAngle, newId]);
+      return cloneElement(series, {
+        id: newId,
+        scale,
+        data,
+        startAngle,
+        endAngle,
+        width: chartWidth,
+        height: chartHeight
+      });
+    },
+    [data, endAngle, maxValue, minValue, series, startAngle, newId]
+  );
 
   return (
     <ChartContainer

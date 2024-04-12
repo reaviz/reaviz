@@ -10,7 +10,7 @@ import React, {
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { sankeyLinkHorizontal } from 'd3-sankey';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { formatValue } from '../../common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
 import {

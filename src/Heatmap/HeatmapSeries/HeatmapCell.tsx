@@ -9,7 +9,7 @@ import React, {
   ReactNode
 } from 'react';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import {
   constructFunctionProps,
   PropFunctionTypes

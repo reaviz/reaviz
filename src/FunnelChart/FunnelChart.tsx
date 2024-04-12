@@ -1,6 +1,10 @@
 import React, { FC, ReactElement, useCallback } from 'react';
-import { CloneElement, useId } from 'rdk';
-import { ChartContainer, ChartContainerChildProps, ChartProps } from '../common/containers';
+import { CloneElement, useId } from 'reablocks';
+import {
+  ChartContainer,
+  ChartContainerChildProps,
+  ChartProps
+} from '../common/containers';
 import { ChartShallowDataShape } from '../common/data';
 import { FunnelSeries, FunnelSeriesProps } from './FunnelSeries/FunnelSeries';
 
@@ -43,7 +47,9 @@ export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
           width={chartWidth}
         />
       );
-    }, [data, series]);
+    },
+    [data, series]
+  );
 
   return (
     <ChartContainer

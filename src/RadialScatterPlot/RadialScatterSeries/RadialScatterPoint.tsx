@@ -11,7 +11,7 @@ import { ChartInternalShallowDataShape } from '../../common/data';
 import { radialLine } from 'd3-shape';
 import classNames from 'classnames';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { schemes } from '../../common/color';

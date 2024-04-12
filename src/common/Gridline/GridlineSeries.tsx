@@ -1,7 +1,7 @@
 import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
 import { Gridline, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '../utils/ticks';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { LinearAxisProps } from '../Axis';
 import { GridStripeProps, GridStripe } from './GridStripe';
 

@@ -39,7 +39,7 @@ import {
   ChartContainer,
   ChartProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 
 export interface AreaChartProps extends ChartProps {
   /**

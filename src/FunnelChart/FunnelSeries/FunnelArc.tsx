@@ -1,10 +1,14 @@
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '../../common/data';
 import { area } from 'd3-shape';
-import { InterpolationTypes, getAriaLabel, interpolate } from '../../common/utils';
+import {
+  InterpolationTypes,
+  getAriaLabel,
+  interpolate
+} from '../../common/utils';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
 import { Gradient, GradientProps, GradientStop } from '../../common/Gradient';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import {
   ChartTooltip,
@@ -136,7 +140,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
             const value = {
               x: data.key,
               y: data.data,
-              value: data.data,
+              value: data.data
             };
 
             return <TooltipTemplate value={value} color={color} />;

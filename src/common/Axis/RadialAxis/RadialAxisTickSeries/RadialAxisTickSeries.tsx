@@ -1,6 +1,6 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { RadialAxisTick, RadialAxisTickProps } from './RadialAxisTick';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { getTicks } from '../../../utils/ticks';
 import { TimeInterval } from 'd3-time';
 
@@ -47,7 +47,11 @@ export interface RadialAxisTickSeriesProps {
   /**
    * Tick element to render.
    */
-  tick: ((tick: TickCallback) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>) | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
+  tick:
+    | ((
+        tick: TickCallback
+      ) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>)
+    | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
 
   /**
    * Start angle for the first value.
@@ -77,7 +81,8 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   return (
     <Fragment>
       {ticks.map((data, i) => {
-        const tickElement = typeof tick === 'function' ? tick({index: i}) : tick;
+        const tickElement =
+          typeof tick === 'function' ? tick({ index: i }) : tick;
         return (
           <CloneElement<RadialAxisTickProps>
             element={tickElement}

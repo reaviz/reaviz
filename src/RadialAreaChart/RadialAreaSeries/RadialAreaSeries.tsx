@@ -10,7 +10,7 @@ import {
   ChartInternalShallowDataShape
 } from '../../common/data';
 import { getColor, ColorSchemeType, schemes } from '../../common/color';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';

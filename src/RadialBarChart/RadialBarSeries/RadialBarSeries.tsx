@@ -12,7 +12,7 @@ import {
   ChartInternalShallowDataShape
 } from '../../common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { ColorSchemeType, getColor, schemes } from '../../common/color';
 import {
   TooltipAreaProps,

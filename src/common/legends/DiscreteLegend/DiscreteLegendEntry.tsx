@@ -4,7 +4,7 @@ import {
   DiscreteLegendSymbol,
   DiscreteLegendSymbolProps
 } from './DiscreteLegendSymbol';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import css from './DiscreteLegendEntry.module.css';
 
 export interface DiscreteLegendEntryProps {

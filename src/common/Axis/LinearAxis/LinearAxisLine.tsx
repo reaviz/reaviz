@@ -1,6 +1,6 @@
 import React, { Fragment, FC, ReactElement } from 'react';
 import { GradientProps, Gradient } from '../../Gradient';
-import { CloneElement, useId } from 'rdk';
+import { CloneElement, useId } from 'reablocks';
 
 export interface LinearAxisLineProps {
   height: number;
@@ -36,7 +36,12 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
         strokeWidth={strokeWidth}
         stroke={strokeGradient ? `url(#axis-gradient-${id})` : strokeColor}
       />
-      {strokeGradient && <CloneElement<GradientProps> element={strokeGradient} id={`axis-gradient-${id}`} />}
+      {strokeGradient && (
+        <CloneElement<GradientProps>
+          element={strokeGradient}
+          id={`axis-gradient-${id}`}
+        />
+      )}
     </Fragment>
   );
 };

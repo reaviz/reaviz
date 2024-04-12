@@ -15,7 +15,7 @@ import {
   Direction
 } from '../../common/data';
 import { getColor, ColorSchemeType } from '../../common/color';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import {
   TooltipAreaProps,
   TooltipArea,

@@ -1,7 +1,7 @@
 import { max } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
 import { motion } from 'framer-motion';
-import { CloneElement, useId } from 'rdk';
+import { CloneElement, useId } from 'reablocks';
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '../common';
 import { BarListSeries, BarListSeriesProps } from './BarListSeries';
@@ -41,7 +41,7 @@ export interface BarListProps {
    * Whether the values are percentages or absolute values.
    * In the latter case, the chart would be relative
    */
-  type?: 'percent' | 'count'
+  type?: 'percent' | 'count';
 }
 
 export const BarList: FC<BarListProps> = ({

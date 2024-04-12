@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { AreaSeriesProps, AreaSeries } from './AreaSeries';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '../../ScatterPlot';
 

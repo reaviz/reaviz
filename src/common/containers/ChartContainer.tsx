@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useState, useMemo } from 'react';
 import { Margins, getDimension } from '../utils/dimensions';
 import useDimensions from 'react-cool-dimensions';
-import { useId } from 'rdk';
+import { useId } from 'reablocks';
 import { LinearAxisDimensionChanged } from '../Axis';
 import classNames from 'classnames';
 import { ChartContextProps, ChartProvider } from './ChartContext';

@@ -12,7 +12,7 @@ import {
   ChartNestedDataShape
 } from '../common/data';
 import { getXScale, getYScale } from '../common/scales';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { LinearGaugeSeries, LinearGaugeSeriesProps } from './LinearGaugeSeries';
 
 export interface LinearGaugeProps extends ChartProps {

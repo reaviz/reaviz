@@ -1,6 +1,6 @@
 import React, { MouseEvent, useCallback, useMemo } from 'react';
 import { FunnelArc } from './FunnelArc';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
 import {

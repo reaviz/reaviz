@@ -2,7 +2,7 @@ import React, { FC, ReactElement, useCallback, useMemo } from 'react';
 import classNames from 'classnames';
 import { PieArcDatum } from 'd3-shape';
 import { pie } from 'd3-shape';
-import { CloneElement, useId } from 'rdk';
+import { CloneElement, useId } from 'reablocks';
 import {
   ChartProps,
   ChartContainer,
@@ -61,18 +61,21 @@ export const PieChart: FC<PieChartProps> = ({
     return pieLayout(data);
   }, [data, series]);
 
-  const renderSeries = useCallback(({ chartWidth, chartHeight }: ChartContainerChildProps) => {
-    return (
-      <CloneElement<PieArcSeriesProps>
-        element={series}
-        id={newId}
-        data={internalData}
-        height={chartHeight}
-        width={chartWidth}
-        displayAllLabels={displayAllLabels}
-      />
-    );
-  }, [displayAllLabels, internalData, newId, series]);
+  const renderSeries = useCallback(
+    ({ chartWidth, chartHeight }: ChartContainerChildProps) => {
+      return (
+        <CloneElement<PieArcSeriesProps>
+          element={series}
+          id={newId}
+          data={internalData}
+          height={chartHeight}
+          width={chartWidth}
+          displayAllLabels={displayAllLabels}
+        />
+      );
+    },
+    [displayAllLabels, internalData, newId, series]
+  );
 
   return (
     <ChartContainer

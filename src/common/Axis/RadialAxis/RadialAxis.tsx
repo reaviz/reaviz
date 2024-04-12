@@ -7,7 +7,7 @@ import {
   RadialAxisArcSeries,
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { getTicks } from '../../utils';
 
 export interface RadialAxisProps {

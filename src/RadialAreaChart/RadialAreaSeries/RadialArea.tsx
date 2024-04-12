@@ -1,8 +1,14 @@
 import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { radialArea, curveCardinalClosed, curveLinearClosed, curveCardinal, curveLinear } from 'd3-shape';
+import {
+  radialArea,
+  curveCardinalClosed,
+  curveLinearClosed,
+  curveCardinal,
+  curveLinear
+} from 'd3-shape';
 import { RadialGradient, RadialGradientProps } from '../../common/Gradient';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { RadialInterpolationTypes } from '../../common/utils/interpolation';
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 
@@ -116,7 +122,13 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   const getPath = useCallback(
     (d: ChartInternalShallowDataShape[]) => {
       const curve =
-        interpolation === 'smooth' ? (isClosedCurve ? curveCardinalClosed : curveCardinal) : isClosedCurve ? curveLinearClosed : curveLinear;
+        interpolation === 'smooth'
+          ? isClosedCurve
+            ? curveCardinalClosed
+            : curveCardinal
+          : isClosedCurve
+            ? curveLinearClosed
+            : curveLinear;
 
       const radialFn = radialArea()
         .angle((dd: any) => xScale(dd.x))
