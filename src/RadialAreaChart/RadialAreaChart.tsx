@@ -14,7 +14,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { RadialAreaSeries, RadialAreaSeriesProps } from './RadialAreaSeries';
 import { RadialAxis, RadialAxisProps } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales/radial';
@@ -55,7 +55,6 @@ export interface RadialAreaChartProps extends ChartProps {
    * Whether the curve should be closed. Set to true by deafult
    */
   isClosedCurve?: boolean;
-
 }
 
 export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
@@ -105,13 +104,10 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
             .range([startAngle, endAngle])
             .domain(xDomain as any[]);
         }
-
       } else {
         const xDomain = getXDomain({ data: points });
 
-        xScale = scaleTime()
-          .range([startAngle, endAngle])
-          .domain(xDomain);
+        xScale = scaleTime().range([startAngle, endAngle]).domain(xDomain);
       }
 
       return xScale;
@@ -183,7 +179,16 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
         </Fragment>
       );
     },
-    [getScales, data, innerRadius, axis, startAngle, endAngle, series, isClosedCurve]
+    [
+      getScales,
+      data,
+      innerRadius,
+      axis,
+      startAngle,
+      endAngle,
+      series,
+      isClosedCurve
+    ]
   );
 
   return (

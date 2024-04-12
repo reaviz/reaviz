@@ -15,7 +15,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { RadialAxisProps, RadialAxis } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
 import { uniqueBy } from '../common';

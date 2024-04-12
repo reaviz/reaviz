@@ -7,7 +7,7 @@ import {
 import { ChartNestedDataShape, ChartShallowDataShape } from '../common/data';
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy';
 import { TreeMapSeries, TreeMapSeriesProps } from './TreeMapSeries';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 
 export interface TreeMapProps extends ChartProps {
   /**

@@ -1,6 +1,6 @@
 import React, { FC, ReactElement, useCallback } from 'react';
 import { hierarchy, pack } from 'd3-hierarchy';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import {
   ChartContainer,
   ChartContainerChildProps,

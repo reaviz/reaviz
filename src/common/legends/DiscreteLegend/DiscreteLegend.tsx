@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import classNames from 'classnames';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import {
   DiscreteLegendEntryProps,
   DiscreteLegendEntry

@@ -7,7 +7,7 @@ import {
   RadialAxisTickLabelProps,
   RadialAxisTickLabel
 } from './RadialAxisTickLabel';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 
 export interface RadialAxisTickProps {
   /**

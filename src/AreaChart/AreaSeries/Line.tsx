@@ -25,7 +25,7 @@ import {
 import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
 import { Glow, Gradient, GradientProps } from '../../common';
 import { generateGlowStyles } from '../../common/Glow/utils';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 
 export interface LineProps extends PropFunctionTypes {
   /**

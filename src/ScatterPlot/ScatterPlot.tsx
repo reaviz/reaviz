@@ -34,7 +34,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import css from './ScatterPlot.module.css';
 
 export interface ScatterPlotProps extends ChartProps {

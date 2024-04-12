@@ -15,7 +15,7 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { RadialAxis, RadialAxisProps } from '../common/Axis/RadialAxis';
 import { getRadialYScale } from '../common/scales';
 import { uniqueBy } from '../common/utils/array';
@@ -66,7 +66,6 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   startAngle,
   endAngle
 }) => {
-
   const getXScale = useCallback(
     (points) => {
       const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
@@ -99,14 +98,12 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
             .range([startAngle, endAngle])
             .domain(xDomain as any[]);
         }
-
       } else {
         const xDomain = uniqueBy(points, (d) => d.x);
 
         xScale = scaleBand()
           .range([startAngle, endAngle])
           .domain(xDomain as any[]);
-
       }
 
       return xScale;
@@ -115,11 +112,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   );
 
   const getScales = useCallback(
-    (
-      preData: ChartDataShape[],
-      innerRadius: number,
-      outerRadius: number
-    ) => {
+    (preData: ChartDataShape[], innerRadius: number, outerRadius: number) => {
       const isMultiSeries = series.props.type === 'grouped';
       let newData;
       if (isMultiSeries) {

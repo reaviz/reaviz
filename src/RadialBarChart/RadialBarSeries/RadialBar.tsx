@@ -15,7 +15,7 @@ import { path } from 'd3-path';
 import { DEFAULT_TRANSITION } from '../../common/Motion';
 import { MotionBar } from './MotionBar';
 import { RadialGuideBar, RadialGuideBarProps } from './RadialGuideBar';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { scaleBand, scaleLinear } from 'd3-scale';
 
 export interface RadialBarProps {

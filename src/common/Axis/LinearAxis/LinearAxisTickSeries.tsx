@@ -10,7 +10,7 @@ import {
 import { formatValue } from '../../utils/formatting';
 import { getTicks, getMaxTicks } from '../../utils/ticks';
 import { TimeInterval } from 'd3-time';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
@@ -52,9 +52,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   tickValues,
   interval,
   line,
-  axis,
+  axis
 }) => {
-
   /**
    * Gets the adjusted scale given offsets.
    */
@@ -74,13 +73,16 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   /**
    * Gets the x/y position for a given tick.
    */
-  const getPosition = useCallback((scaledTick: number) => {
-    if (orientation === 'horizontal') {
-      return { x: scaledTick, y: 0 };
-    } else {
-      return { x: 0, y: scaledTick };
-    }
-  }, [orientation]);
+  const getPosition = useCallback(
+    (scaledTick: number) => {
+      if (orientation === 'horizontal') {
+        return { x: scaledTick, y: 0 };
+      } else {
+        return { x: 0, y: scaledTick };
+      }
+    },
+    [orientation]
+  );
 
   /**
    * Gets the dimension (height/width) this axis is calculating on.
@@ -92,7 +94,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   /**
    * Gets the formatted label of the tick.
    */
-  const labelFormatFn = useMemo((): any =>  {
+  const labelFormatFn = useMemo((): any => {
     if (label && label.props.format) {
       return label.props.format;
     } else if (scale.tickFormat) {
@@ -140,8 +142,18 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
               : 'end'
       };
     });
-  }, [axis.type, getAdjustedScale, getDimension, getPosition, interval, label, labelFormatFn, scale, tickSize, tickValues]);
-
+  }, [
+    axis.type,
+    getAdjustedScale,
+    getDimension,
+    getPosition,
+    interval,
+    label,
+    labelFormatFn,
+    scale,
+    tickSize,
+    tickValues
+  ]);
 
   /**
    * Calculates the rotation angle that the ticks need to be shifted to.
@@ -205,7 +217,31 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
 };
 
 LinearAxisTickSeries.defaultProps = {
-  line: <LinearAxisTickLine height={10} width={10} orientation="horizontal" position="center" />,
-  label: <LinearAxisTickLabel line={<LinearAxisTickLine orientation="horizontal" position="center" height={5} width={5} />} text="" fullText="" angle={0} orientation="horizontal" half="start" position="center" />,
+  line: (
+    <LinearAxisTickLine
+      height={10}
+      width={10}
+      orientation="horizontal"
+      position="center"
+    />
+  ),
+  label: (
+    <LinearAxisTickLabel
+      line={
+        <LinearAxisTickLine
+          orientation="horizontal"
+          position="center"
+          height={5}
+          width={5}
+        />
+      }
+      text=""
+      fullText=""
+      angle={0}
+      orientation="horizontal"
+      half="start"
+      position="center"
+    />
+  ),
   tickSize: 30
 };

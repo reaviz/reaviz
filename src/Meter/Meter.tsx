@@ -2,7 +2,7 @@ import React, { FC, ReactElement } from 'react';
 import { scaleLinear } from 'd3-scale';
 import classNames from 'classnames';
 import { MeterColumn, MeterColumnProps } from './MeterColumn';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import css from './Meter.module.css';
 
 export interface MeterProps {

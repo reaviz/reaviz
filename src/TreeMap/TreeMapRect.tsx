@@ -9,7 +9,7 @@ import React, {
 import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { DEFAULT_TRANSITION } from '../common/Motion';
 import { useHoverIntent } from '../common/utils/useHoverIntent';
 import { getAriaLabel } from '../common';
@@ -97,7 +97,10 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
     return getKey(data).join(' → ');
   }, [data]);
 
-  const tooltipData = useMemo(() => ({ y: data.value, x: tooltipLabel }), [data, tooltipLabel]);
+  const tooltipData = useMemo(
+    () => ({ y: data.value, x: tooltipLabel }),
+    [data, tooltipLabel]
+  );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
   return (

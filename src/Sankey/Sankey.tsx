@@ -18,12 +18,16 @@ import {
   ChartContainer,
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
-import { CloneElement, useId } from 'rdk';
+import { CloneElement, useId } from 'reablocks';
 
 import { getColor, ColorSchemeType } from '../common/color';
 import { SankeyNodeProps, SankeyNode } from './SankeyNode';
 import { SankeyLinkProps, SankeyLink } from './SankeyLink';
-import { SankeyNodeExtra, SankeyLinkExtra, LABEL_PADDING_PERCENT } from './utils';
+import {
+  SankeyNodeExtra,
+  SankeyLinkExtra,
+  LABEL_PADDING_PERCENT
+} from './utils';
 import { SankeyLabelPosition } from './SankeyLabel';
 
 const JUSTIFICATION = {
@@ -197,7 +201,8 @@ export const Sankey: FC<SankeyProps> = ({
         (node) => node.index === computedNode.index
       );
       const disabled = activeNodes.length > 0 && !active;
-      const labelPadding = labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;
+      const labelPadding =
+        labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;
 
       return (
         <CloneElement<SankeyNodeProps>
@@ -244,14 +249,14 @@ export const Sankey: FC<SankeyProps> = ({
 
   const getNodesAndLinks = useCallback(
     (chartWidth: number, chartHeight: number) => {
-
-      const labelPadding = labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;
+      const labelPadding =
+        labelPosition === 'outside' ? LABEL_PADDING_PERCENT : 0;
       const padding = labelPadding * chartWidth;
 
       const sankeyChart = sankey()
         .extent([
-          [1+padding, 1],
-          [chartWidth-padding, chartHeight]
+          [1 + padding, 1],
+          [chartWidth - padding, chartHeight]
         ])
         .nodeWidth(nodeWidth)
         .nodePadding(nodePadding)
@@ -289,7 +294,16 @@ export const Sankey: FC<SankeyProps> = ({
 
       return { sankeyNodes, sankeyLinks };
     },
-    [getNodeColor, nodeSort, justification, links, nodePadding, nodeWidth, nodes, labelPosition]
+    [
+      getNodeColor,
+      nodeSort,
+      justification,
+      links,
+      nodePadding,
+      nodeWidth,
+      nodes,
+      labelPosition
+    ]
   );
 
   const renderChart = useCallback(
@@ -336,5 +350,5 @@ Sankey.defaultProps = {
   justification: 'justify',
   nodeWidth: 15,
   nodePadding: 10,
-  nodePosition: 'inside',
+  nodePosition: 'inside'
 };

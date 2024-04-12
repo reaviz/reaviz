@@ -11,7 +11,7 @@ import {
   RadialScatterPoint,
   RadialScatterPointProps
 } from './RadialScatterPoint';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { identifier } from 'safe-identifier';
 import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
 

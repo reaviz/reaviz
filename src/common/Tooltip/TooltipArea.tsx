@@ -9,7 +9,6 @@ import React, {
   useImperativeHandle
 } from 'react';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
-import { Placement } from 'rdk';
 import {
   ChartDataTypes,
   ChartInternalDataShape,
@@ -21,7 +20,7 @@ import {
   getClosestContinousScalePoint,
   getClosestBandScalePoint
 } from '../utils/position';
-import { CloneElement } from 'rdk';
+import { CloneElement, Placement } from 'reablocks';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
 import isEqual from 'react-fast-compare';

@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { RadialAxisArc, RadialAxisArcProps } from './RadialAxisArc';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { scaleLinear } from 'd3-scale';
 import { getPointsForLevels } from './utils';
 import { RadialAxisArcLine, RadialAxisArcLineProps } from './RadialAxisArcLine';

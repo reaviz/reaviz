@@ -1,6 +1,6 @@
 import React, { useCallback, Fragment, ReactElement, FC } from 'react';
 import { ChartInternalShallowDataShape } from '../../common/data';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import { ScatterPoint, ScatterPointProps } from './ScatterPoint';
 import { identifier } from 'safe-identifier';
 import { LinearValueMarker, LinearValueMarkerProps } from '../../common';

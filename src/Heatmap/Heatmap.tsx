@@ -5,7 +5,7 @@ import {
   ChartContainerChildProps
 } from '../common/containers/ChartContainer';
 import { ChartNestedDataShape, buildNestedChartData } from '../common/data';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import {
   isAxisVisible,
   LinearAxisProps,

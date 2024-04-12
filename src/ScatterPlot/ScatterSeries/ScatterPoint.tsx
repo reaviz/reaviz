@@ -10,7 +10,7 @@ import React, {
 import { ChartInternalShallowDataShape } from '../../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
 import classNames from 'classnames';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 import {
   constructFunctionProps,
   PropFunctionTypes
@@ -155,13 +155,13 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
     () =>
       animated
         ? {
-            ...DEFAULT_TRANSITION,
-            delay: index! * 0.005
-          }
+          ...DEFAULT_TRANSITION,
+          delay: index! * 0.005
+        }
         : {
-            type: false,
-            delay: 0
-          },
+          type: false,
+          delay: 0
+        },
     [index, animated]
   );
 
@@ -209,7 +209,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
         ref={rectRef}
         className={classNames({
           [css.inactive]: !active,
-          [css.hidden]: !isVisible,
+          [css.hidden]: !isVisible
         })}
         onMouseEnter={() => {
           setTooltipVisible(true);

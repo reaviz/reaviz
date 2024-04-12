@@ -1,10 +1,15 @@
-import React, { FC, Fragment, ReactElement, useCallback } from 'react';
-import { CloneElement } from 'rdk';
+import React, { FC, Fragment, ReactElement } from 'react';
+import { CloneElement } from 'reablocks';
 import { ArcData } from '../PieChart';
 import { PieArc, PieArcProps } from './PieArc';
 import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
 import { getColor, ColorSchemeType } from '../../common/color';
-import { calculateCentroid, calculateInnerArc, calculateLabelPositions, calculateRadius } from './radiusUtils';
+import {
+  calculateCentroid,
+  calculateInnerArc,
+  calculateLabelPositions,
+  calculateRadius
+} from './radiusUtils';
 import { identifier } from 'safe-identifier';
 
 export interface PieArcSeriesProps {
@@ -178,11 +183,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
     );
   }
 
-  return (
-    <>
-      {data.map(renderItem)}
-    </>
-  );
+  return <>{data.map(renderItem)}</>;
 };
 
 PieArcSeries.defaultProps = {

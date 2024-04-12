@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { GradientStop, GradientStopProps } from './GradientStop';
-import { CloneElement } from 'rdk';
+import { CloneElement } from 'reablocks';
 
 export interface RadialGradientProps {
   id: string;
