@@ -5,8 +5,6 @@
   "scripts": {
     "build": "vite build --mode library",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --project-token=d5ql53y3nwr --exit-zero-on-changes",
-    "copy": "cp CNAME storybook-static/",
     "lint": "eslint --ext js,ts,tsx",
     "lint:fix": "eslint --ext js,ts,tsx --fix src",
     "test": "vitest --passWithNoTests",
