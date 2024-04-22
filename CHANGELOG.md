@@ -1,3 +1,8 @@
+# 15.15.1 - 4/22/24
+- [fix] Update reablocks #217
+- [chore] Replace rdk #215
+- [chore] Upgrade reablocks #214
+
 # 15.15.0 - 4/8/24
 - [feature] added vertical line support for charts #212
 - [fix] fix labels off by `5px` in some scenarios #213
