@@ -59,6 +59,11 @@ export interface RadialAxisTickLabelProps
    * Format of the label.
    */
   format?: (value: any, index: number) => any | string;
+
+  /**
+   * Format title on hover label.
+   */
+  formatHoverTitle?: (value: any, index: number) => any | string;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
@@ -73,6 +78,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   format,
   lineSize,
   index,
+  formatHoverTitle,
   ...rest
 }) => {
   const { transform, textAnchor } = useMemo(() => {
@@ -113,10 +119,11 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   }, [autoRotate, padding, point, rotation]);
 
   const text = format ? format(data, index) : formatValue(data);
+  const titleHover = formatHoverTitle ? formatHoverTitle(data, index) : text;
 
   return (
     <g transform={transform}>
-      <title>{text}</title>
+      <title>{titleHover}</title>
       <text
         dy="0.35em"
         x={lineSize + 5}
