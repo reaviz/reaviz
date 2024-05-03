@@ -12,6 +12,10 @@ export interface LinearAxisTickLabelProps {
   half: 'start' | 'end' | 'center';
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
   format?: (v) => any;
+  /**
+   * Format tooltip title on hover label.
+   */
+  formatTooltip?: (value: any) => any | string;
   fill: string;
   fontSize: number;
   fontFamily: string;
@@ -38,6 +42,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   fontFamily,
   rotation,
   padding,
+  formatTooltip,
   align
 }) => {
   function getAlign() {
@@ -149,6 +154,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
 
   const { x, y } = getOffset();
   const textPosition = getTextPosition();
+  const titleHover = formatTooltip ? formatTooltip(fullText) : fullText;
 
   return (
     <g
@@ -156,7 +162,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
       fontSize={fontSize}
       fontFamily={fontFamily}
     >
-      <title>{fullText}</title>
+      <title>{titleHover}</title>
       <text {...textPosition} fill={fill} className={className}>
         {text}
       </text>
