@@ -119,7 +119,8 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   }, [autoRotate, padding, point, rotation]);
 
   const text = format ? format(data, index) : formatValue(data);
-  const titleHover = formatTooltip ? formatTooltip(data, index) : text;
+  const titleHover =
+    typeof formatTooltip === 'function' ? formatTooltip(data, index) : text;
 
   return (
     <g transform={transform}>

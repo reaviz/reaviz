@@ -154,7 +154,8 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
 
   const { x, y } = getOffset();
   const textPosition = getTextPosition();
-  const titleHover = formatTooltip ? formatTooltip(fullText) : fullText;
+  const titleHover =
+    typeof formatTooltip === 'function' ? formatTooltip(fullText) : fullText;
 
   return (
     <g
