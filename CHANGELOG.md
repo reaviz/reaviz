@@ -1,3 +1,6 @@
+# 15.15.2 - 4/22/24
+- [fix] Upgrade reablocks #220
+  
 # 15.15.1 - 4/22/24
 - [fix] Update reablocks #217
 - [chore] Replace rdk #215
