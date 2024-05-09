@@ -1,3 +1,6 @@
+# 15.15.3 - 5/9/24
+- [feature] add format title on hover label #218
+- 
 # 15.15.2 - 4/22/24
 - [fix] Upgrade reablocks #220
   
