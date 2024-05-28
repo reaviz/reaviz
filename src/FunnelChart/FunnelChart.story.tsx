@@ -1,6 +1,14 @@
 import { TooltipArea } from '../common';
-import { Story, Meta } from '@storybook/react';
-import { FunnelSeries, FunnelChart, FunnelChartProps, FunnelAxis, FunnelAxisLabel, FunnelAxisLine, FunnelArc } from './';
+import { StoryFn, Meta } from '@storybook/react';
+import {
+  FunnelSeries,
+  FunnelChart,
+  FunnelChartProps,
+  FunnelAxis,
+  FunnelAxisLabel,
+  FunnelAxisLine,
+  FunnelArc
+} from './';
 
 export default {
   title: 'Charts/Funnel Chart',
@@ -12,10 +20,9 @@ export default {
     FunnelAxisLine,
     FunnelSeries
   }
-}  as Meta;
+} as Meta;
 
-const Template: Story<FunnelChartProps> =
-  args => <FunnelChart {...args} />;
+const Template: StoryFn<FunnelChartProps> = (args) => <FunnelChart {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
@@ -43,18 +50,19 @@ LargeDataset.args = {
     { key: 'Upgraded to Premium', data: 1000 },
     { key: 'Became a VIP', data: 900 }
   ],
-  series:
+  series: (
     <FunnelSeries
       arc={<FunnelArc tooltip={<TooltipArea />} />}
       onSegmentClick={(e) => console.log(e)}
-    />,
+    />
+  )
 };
 
 export const Interpolation = () => (
   <FunnelChart
     height={300}
     width={500}
-    series={<FunnelSeries arc={<FunnelArc interpolation='step'/>} />}
+    series={<FunnelSeries arc={<FunnelArc interpolation="step" />} />}
     interpolation="curveBasis"
     data={[
       { key: 'Visited Site', data: 1000 },
