@@ -656,7 +656,7 @@ Here is what they need to be renamed to:
 
 # 10.4.2 - 9/10/21
 
-- [fix] bar charts throw `95640Error: <rect> attribute height: Expected length, "NaNpx".`
+- [fix] bar charts throw `95640 Error: rect attribute height: Expected length, "NaNpx".`
 
 # 10.4.1 - 9/8/21
 
