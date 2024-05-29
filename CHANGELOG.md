@@ -1435,4 +1435,4 @@ Here is what they need to be renamed to:
 
 # 1.0.0
 
-- Initial Release!!
+- Initial Release
