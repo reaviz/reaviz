@@ -8,14 +8,9 @@ export interface SunburstArcProps {
   id: string;
 
   /**
-   * Height of the chart. Set internally by `SunburstChart`.
+   * Radius of the chart. Set internally by `SunburstChart`.
    */
-  height: number;
-
-  /**
-   * Width of the chart. Set internally by `SunburstChart`.
-   */
-  width: number;
+  radius: number;
 
   /**
    * The internal data object built by d3
@@ -29,27 +24,21 @@ export interface SunburstArcProps {
 }
 
 export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
-  height,
-  width,
+  radius,
   fill,
   data
 }) => {
   const d = useMemo(() => {
-    const radius = Math.min(width, height) / 6;
     return arc()
       .startAngle((d: any) => d.x0)
       .endAngle((d: any) => d.x1)
       .padAngle((d: any) => Math.min((d.x1 - d.x0) / 2, 0.005))
       .padRadius(radius * 1.5)
       .innerRadius((d: any) => d.y0 * radius)
-      .outerRadius((d: any) => Math.max(d.y0 * radius, d.y1 * radius - 1))(data);
-  }, [width, height, data]);
+      .outerRadius((d: any) => Math.max(d.y0 * radius, d.y1 * radius - 1))(
+        data
+      );
+  }, [radius, data]);
 
-  return (
-    <path
-      fill={fill}
-      d={d}
-      role="graphics-document"
-    />
-  );
+  return <path fill={fill} d={d} role="graphics-document" />;
 };
