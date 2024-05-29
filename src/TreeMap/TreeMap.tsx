@@ -52,7 +52,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
-      const root = hierarchy<any>({ data: data }, (d) => d.data)
+      const root = hierarchy<any>({ data }, (d) => d.data)
         .sum((d) => d.data)
         .sort((a, b) => b.data - a.data);
 
