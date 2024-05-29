@@ -1,11 +1,10 @@
 import React from 'react';
 import { TreeMapSeries } from './TreeMapSeries';
-import { ChartNestedDataShape, ChartShallowDataShape } from '../common/data';
+import { ChartNestedDataShape, ChartShallowDataShape } from '@/common/data';
 import { TreeMap } from './TreeMap';
 import { TreeMapRect } from './TreeMapRect';
 import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
-import { schemes } from '../common/color';
 import { TreeMapLabel } from './TreeMapLabel';
 
 export default {

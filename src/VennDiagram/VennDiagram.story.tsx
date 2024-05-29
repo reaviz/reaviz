@@ -1,11 +1,11 @@
 import React from 'react';
 import { VennDiagram } from './VennDiagram';
-import { schemes } from '../common/color';
+import { schemes } from '@/common/color';
 import { VennSeries } from './VennSeries';
 import { VennArc } from './VennArc';
-import { Stripes } from '../common/Mask';
+import { Stripes } from '@/common/Mask';
 import { VennLabel } from './VennLabel';
-import { Gradient } from '../common/Gradient';
+import { Gradient } from '@/common/Gradient';
 import { VennOuterLabel } from './VennOuterLabel';
 import { symbol, symbolStar } from 'd3-shape';
 
@@ -35,18 +35,8 @@ export const Simple = () => (
     series={
       <VennSeries
         colorScheme="cybertron"
-        arc={
-          <VennArc
-            strokeWidth={3}
-            gradient={<Gradient />}
-          />
-        }
-        label={
-          <VennLabel
-            labelType="key"
-            showAll={false}
-          />
-        }
+        arc={<VennArc strokeWidth={3} gradient={<Gradient />} />}
+        label={<VennLabel labelType="key" showAll={false} />}
       />
     }
   />
@@ -66,35 +56,23 @@ export const Euler = () => (
 );
 
 export const StarEuler = () => (
-    <VennDiagram
-      type="starEuler"
-      height={450}
-      width={450}
-      data={eulerData}
-      series={
-        <VennSeries
-          colorScheme={['#868686']}
-          arc={
-            <VennArc
-              strokeWidth={1}
-              stroke={'#fff'}
-              gradient={<Gradient />}
-            />
-          }
-          label={
-            <VennLabel
-              labelType={'value'}
-              showAll={true}
-              fill={'#fff'}
-            />
-          }
-          outerLabel={
-            <VennOuterLabel fill={'#fff'} />
-          }
-        />
-      }
-    />
-  );
+  <VennDiagram
+    type="starEuler"
+    height={450}
+    width={450}
+    data={eulerData}
+    series={
+      <VennSeries
+        colorScheme={['#868686']}
+        arc={
+          <VennArc strokeWidth={1} stroke={'#fff'} gradient={<Gradient />} />
+        }
+        label={<VennLabel labelType={'value'} showAll={true} fill={'#fff'} />}
+        outerLabel={<VennOuterLabel fill={'#fff'} />}
+      />
+    }
+  />
+);
 
 export const LabelIcons = () => (
   <VennDiagram

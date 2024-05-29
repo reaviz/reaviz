@@ -11,17 +11,17 @@ import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { sankeyLinkHorizontal } from 'd3-sankey';
 import { CloneElement } from 'reablocks';
-import { formatValue } from '../../common/utils/formatting';
+import { formatValue } from '@/common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
 import {
   NodeExtra,
   SankeyNodeExtra,
   SankeyLinkExtra,
   DEFAULT_COLOR
-} from '../utils';
+} from '@/Sankey/utils';
 import css from './SankeyLink.module.css';
-import { useHoverIntent } from '../../common/utils/useHoverIntent';
-import { tooltipTheme } from '../../common';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { tooltipTheme } from '@/common';
 
 export interface SankeyLinkProps extends SankeyLinkExtra {
   /**

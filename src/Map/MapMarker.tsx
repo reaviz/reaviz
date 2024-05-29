@@ -2,7 +2,7 @@ import React, { Fragment, useRef, useState, FC, useMemo } from 'react';
 import { Tooltip } from 'reablocks';
 import { motion } from 'framer-motion';
 import css from './MapMarker.module.css';
-import { tooltipTheme } from '../common';
+import { tooltipTheme } from '@/common';
 
 export interface MapMarkerProps {
   coordinates: [number, number];

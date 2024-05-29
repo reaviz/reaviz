@@ -12,28 +12,28 @@ import {
   ChartShallowDataShape,
   buildShallowChartData,
   ChartDataTypes
-} from '../common/data';
+} from '@/common/data';
 import {
   isAxisVisible,
   LinearAxisProps,
   LinearXAxis,
   LinearYAxis,
   LinearAxis
-} from '../common/Axis';
-import { getYScale, getXScale } from '../common/scales';
+} from '@/common/Axis';
+import { getYScale, getXScale } from '@/common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
-import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
+import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
   ChartZoomPan
-} from '../common/ZoomPan';
-import { ChartBrushProps, ChartBrush } from '../common/Brush';
+} from '@/common/ZoomPan';
+import { ChartBrushProps, ChartBrush } from '@/common/Brush';
 import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers/ChartContainer';
+} from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 import css from './ScatterPlot.module.css';
 

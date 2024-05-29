@@ -6,7 +6,7 @@ import {
   ChartContainerChildProps,
   ChartProps,
   ChartShallowDataShape
-} from '../common';
+} from '@/common';
 import { BubbleSeries, BubbleSeriesProps } from './BubbleSeries';
 
 export interface BubbleChartProps extends ChartProps {

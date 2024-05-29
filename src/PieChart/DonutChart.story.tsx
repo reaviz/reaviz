@@ -2,8 +2,7 @@ import React, { useState, Fragment } from 'react';
 import { PieChart } from './PieChart';
 import { categoryData, randomNumber } from '../../demo';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
-import { Gradient } from '../common/Gradient';
-import { Mask } from '../common/Mask';
+import { Gradient } from '@/common/Gradient';
 
 export default {
   title: 'Charts/Pie Chart/Donut',
@@ -29,7 +28,13 @@ export const WithGradient = () => (
     width={350}
     height={250}
     data={categoryData}
-    series={<PieArcSeries doughnut={true} colorScheme="cybertron" arc={<PieArc gradient={<Gradient />} />} />}
+    series={
+      <PieArcSeries
+        doughnut={true}
+        colorScheme="cybertron"
+        arc={<PieArc gradient={<Gradient />} />}
+      />
+    }
   />
 );
 
@@ -51,7 +56,7 @@ export const RoundedAndSpaced = () => (
 );
 
 RoundedAndSpaced.story = {
-  name: 'Rounded and spaced',
+  name: 'Rounded and spaced'
 };
 
 export const Labels = () => (

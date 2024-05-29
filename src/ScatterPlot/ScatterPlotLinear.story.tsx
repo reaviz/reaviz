@@ -9,15 +9,15 @@ import {
 } from '../../demo/signals';
 import { randomNumber } from '../../demo';
 import { range } from 'd3-array';
-import { GridlineSeries, Gridline, GridStripe } from '../common/Gridline';
+import { GridlineSeries, Gridline, GridStripe } from '@/common/Gridline';
 import { ScatterSeries, ScatterPoint } from './ScatterSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
-} from '../common/Axis/LinearAxis';
+} from '@/common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
-import { schemes } from '../common/color';
+import { schemes } from '@/common/color';
 
 export default {
   title: 'Charts/Scatter Plot/Linear',
@@ -34,7 +34,9 @@ export const Simple = () => (
     width={750}
     data={medSignalChartData}
     series={
-      <ScatterSeries point={<ScatterPoint color={schemes.cybertron[0]} size={4} />} />
+      <ScatterSeries
+        point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+      />
     }
   />
 );
@@ -139,7 +141,7 @@ export const Bubble = () => (
         point={
           <ScatterPoint
             color="rgba(45, 96, 232, .8)"
-            size={v => v.metadata.severity + 5}
+            size={(v) => v.metadata.severity + 5}
           />
         }
       />

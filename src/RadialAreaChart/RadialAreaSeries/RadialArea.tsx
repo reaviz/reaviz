@@ -1,5 +1,5 @@
 import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import {
   radialArea,
   curveCardinalClosed,
@@ -7,10 +7,10 @@ import {
   curveCardinal,
   curveLinear
 } from 'd3-shape';
-import { RadialGradient, RadialGradientProps } from '../../common/Gradient';
+import { RadialGradient, RadialGradientProps } from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
-import { RadialInterpolationTypes } from '../../common/utils/interpolation';
-import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
+import { RadialInterpolationTypes } from '@/common/utils/interpolation';
+import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface RadialAreaProps {
   /**

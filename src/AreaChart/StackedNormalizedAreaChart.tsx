@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { AreaChart, AreaChartProps } from './AreaChart';
-import { ChartNestedDataShape } from '../common/data';
+import { ChartNestedDataShape } from '@/common/data';
 import { StackedNormalizedAreaSeries } from './AreaSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
-} from '../common/Axis/LinearAxis';
+} from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedAreaChartProps extends AreaChartProps {
   data: ChartNestedDataShape[];

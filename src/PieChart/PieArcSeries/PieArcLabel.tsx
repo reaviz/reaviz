@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 import { arc } from 'd3-shape';
-import { ArcData } from '../PieChart';
-import { ChartInternalDataTypes } from '../../common/data/types';
-import { formatValue } from '../../common/utils/formatting';
+import { ArcData } from '@/PieChart';
+import { ChartInternalDataTypes } from '@/common/data/types';
+import { formatValue } from '@/common/utils/formatting';
 import { findBreakPoint } from './findBreakPoint';
 
 export interface PieArcLabelProps {

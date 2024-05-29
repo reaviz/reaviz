@@ -13,16 +13,16 @@ import {
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
   Direction
-} from '../../common/data';
-import { getColor, ColorSchemeType } from '../../common/color';
+} from '@/common/data';
+import { getColor, ColorSchemeType } from '@/common/color';
 import { CloneElement } from 'reablocks';
 import {
   TooltipAreaProps,
   TooltipArea,
   ChartTooltip,
   TooltipAreaEvent
-} from '../../common/Tooltip';
-import { LinearValueMarker, LinearValueMarkerProps } from '../../common';
+} from '@/common/Tooltip';
+import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 

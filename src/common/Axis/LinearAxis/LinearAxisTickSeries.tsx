@@ -7,14 +7,14 @@ import {
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
-import { formatValue } from '../../utils/formatting';
-import { getTicks, getMaxTicks } from '../../utils/ticks';
+import { formatValue } from '@/common/utils/formatting';
+import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { TimeInterval } from 'd3-time';
 import { CloneElement } from 'reablocks';
 import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
-import { calculateDimensions } from '../../utils/size';
+import { calculateDimensions } from '@/common/utils/size';
 
 export interface LinearAxisTickSeriesProps {
   height: number;

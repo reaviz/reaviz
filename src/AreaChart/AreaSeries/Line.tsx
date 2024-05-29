@@ -9,22 +9,19 @@ import React, {
   useState
 } from 'react';
 import { line } from 'd3-shape';
-import {
-  interpolate,
-  InterpolationTypes
-} from '../../common/utils/interpolation';
+import { interpolate, InterpolationTypes } from '@/common/utils/interpolation';
 import {
   ChartInternalDataShape,
   ChartInternalShallowDataShape
-} from '../../common/data';
-import { calculateShowStroke } from '../../common/utils/stroke';
+} from '@/common/data';
+import { calculateShowStroke } from '@/common/utils/stroke';
 import {
   constructFunctionProps,
   PropFunctionTypes
-} from '../../common/utils/functions';
-import { MotionPath, DEFAULT_TRANSITION } from '../../common/Motion';
-import { Glow, Gradient, GradientProps } from '../../common';
-import { generateGlowStyles } from '../../common/Glow/utils';
+} from '@/common/utils/functions';
+import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
+import { Glow, Gradient, GradientProps } from '@/common';
+import { generateGlowStyles } from '@/common/Glow/utils';
 import { CloneElement } from 'reablocks';
 
 export interface LineProps extends PropFunctionTypes {

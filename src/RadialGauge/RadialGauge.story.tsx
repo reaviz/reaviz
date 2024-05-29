@@ -7,9 +7,9 @@ import {
   StackedRadialGaugeSeries,
   StackedRadialGaugeDescriptionLabel
 } from './RadialGaugeSeries';
-import { Gradient } from '../common/Gradient';
+import { Gradient } from '@/common/Gradient';
 import { max } from 'd3-array';
-import { ChartDataShape, ColorSchemeType } from '../common';
+import { ChartDataShape, ColorSchemeType } from '@/common';
 import React from 'react';
 import { StoryFn } from '@storybook/react';
 
@@ -139,7 +139,7 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
   width,
   height,
   data,
-  colorSchemaType,
+  colorSchemaType
 }) => {
   const defaultColor = '#948d62';
   const customColorScheme: Record<string, string> = {
@@ -257,7 +257,9 @@ export const WithGradient = () => (
     series={
       <RadialGaugeSeries
         arcWidth={15}
-        innerArc={<RadialGaugeArc cornerRadius={12.5} gradient={<Gradient />} />}
+        innerArc={
+          <RadialGaugeArc cornerRadius={12.5} gradient={<Gradient />} />
+        }
       />
     }
   />

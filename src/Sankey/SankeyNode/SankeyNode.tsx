@@ -9,19 +9,19 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
-import { ChartInternalDataTypes } from '../../common/data';
+import { ChartInternalDataTypes } from '@/common/data';
 import { CloneElement } from 'reablocks';
-import { formatValue } from '../../common/utils/formatting';
+import { formatValue } from '@/common/utils/formatting';
 import { Tooltip, TooltipProps } from 'reablocks';
 import {
   SankeyLabel,
   SankeyLabelPosition,
   SankeyLabelProps
-} from '../SankeyLabel';
-import { SankeyNodeExtra, DEFAULT_COLOR } from '../utils';
+} from '@/Sankey/SankeyLabel';
+import { SankeyNodeExtra, DEFAULT_COLOR } from '@/Sankey/utils';
 import css from './SankeyNode.module.css';
-import { useHoverIntent } from '../../common/utils/useHoverIntent';
-import { tooltipTheme } from '../../common';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { tooltipTheme } from '@/common';
 
 export interface SankeyNodeProps extends SankeyNodeExtra {
   /**

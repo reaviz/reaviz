@@ -7,16 +7,16 @@ import React, {
   useState,
   useMemo
 } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import { radialLine } from 'd3-shape';
 import classNames from 'classnames';
-import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION } from '../../common/Motion';
-import { schemes } from '../../common/color';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { schemes } from '@/common/color';
 import css from './RadialScatterPoint.module.css';
-import { getAriaLabel } from '../../common';
+import { getAriaLabel } from '@/common';
 
 export interface RadialScatterPointProps {
   /**

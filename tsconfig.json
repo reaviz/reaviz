@@ -27,6 +27,9 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "ignoreDeprecations": "5.0",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "types": [
       "node",
       "vite/client",

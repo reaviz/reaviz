@@ -3,15 +3,15 @@ import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers';
+} from '@/common/containers';
 import {
   ChartShallowDataShape,
   buildBarStackData,
   ChartInternalNestedDataShape,
   buildShallowChartData,
   ChartNestedDataShape
-} from '../common/data';
-import { getXScale, getYScale } from '../common/scales';
+} from '@/common/data';
+import { getXScale, getYScale } from '@/common/scales';
 import { CloneElement } from 'reablocks';
 import { LinearGaugeSeries, LinearGaugeSeriesProps } from './LinearGaugeSeries';
 

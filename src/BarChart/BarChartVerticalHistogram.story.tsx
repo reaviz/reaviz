@@ -17,7 +17,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries
-} from '../common/Axis/LinearAxis';
+} from '@/common/Axis/LinearAxis';
 import { HistogramBarChart } from './HistogramBarChart';
 
 export default {

@@ -10,17 +10,13 @@ import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
-} from '../../common/data';
+} from '@/common/data';
 import { RadialBar, RadialBarProps } from './RadialBar';
 import { CloneElement } from 'reablocks';
-import { ColorSchemeType, getColor, schemes } from '../../common/color';
-import {
-  TooltipAreaProps,
-  TooltipArea,
-  ChartTooltip
-} from '../../common/Tooltip';
+import { ColorSchemeType, getColor, schemes } from '@/common/color';
+import { TooltipAreaProps, TooltipArea, ChartTooltip } from '@/common/Tooltip';
 import isEqual from 'react-fast-compare';
-import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
+import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export type RadialBarSeriesType = 'standard' | 'grouped';
 export interface RadialBarSeriesProps {

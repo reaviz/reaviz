@@ -3,8 +3,8 @@ import {
   ChartContainer,
   ChartContainerChildProps,
   ChartProps
-} from '../common/containers/ChartContainer';
-import { ChartNestedDataShape, ChartShallowDataShape } from '../common/data';
+} from '@/common/containers/ChartContainer';
+import { ChartNestedDataShape, ChartShallowDataShape } from '@/common/data';
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy';
 import { TreeMapSeries, TreeMapSeriesProps } from './TreeMapSeries';
 import { CloneElement } from 'reablocks';

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { AreaSeries, Line, AreaSeriesProps } from '../AreaChart';
+import { AreaSeries, Line, AreaSeriesProps } from '@/AreaChart';
 
 export type LineSeriesProps = AreaSeriesProps;
 

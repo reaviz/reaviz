@@ -1,23 +1,22 @@
 import React, {
   FC,
   Fragment,
-  MouseEventHandler,
   ReactElement,
   useMemo,
   useRef,
   useState
 } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
-import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
-import { Gradient, GradientProps } from '../common/Gradient';
-import { Mask, MaskProps } from '../common/Mask';
-import { DEFAULT_TRANSITION } from '../common/Motion';
-import { useHoverIntent } from '../common/utils/useHoverIntent';
-import { Glow } from '../common/Glow';
-import { generateGlowStyles } from '../common/Glow/utils';
-import { getAriaLabel } from '../common';
+import { Gradient, GradientProps } from '@/common/Gradient';
+import { Mask, MaskProps } from '@/common/Mask';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import { getAriaLabel } from '@/common';
 
 export interface BubbleProps {
   /**

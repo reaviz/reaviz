@@ -10,7 +10,7 @@ import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers/ChartContainer';
+} from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 import { MapMarkerProps, MapMarker } from './MapMarker';
 import { motion } from 'framer-motion';

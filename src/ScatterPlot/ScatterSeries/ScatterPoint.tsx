@@ -7,22 +7,22 @@ import React, {
   useRef,
   useMemo
 } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
-import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
+import { ChartInternalShallowDataShape } from '@/common/data';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import classNames from 'classnames';
 import { CloneElement } from 'reablocks';
 import {
   constructFunctionProps,
   PropFunctionTypes
-} from '../../common/utils/functions';
+} from '@/common/utils/functions';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION } from '../../common/Motion';
-import { schemes, getColor, ColorSchemeType } from '../../common/color';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { schemes, getColor, ColorSchemeType } from '@/common/color';
 import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
-import { Glow } from '../../common/Glow';
-import { generateGlowStyles } from '../../common/Glow/utils';
-import { getAriaLabel } from '../../common';
+import { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import { getAriaLabel } from '@/common';
 
 export type ScatterPointProps = {
   /**

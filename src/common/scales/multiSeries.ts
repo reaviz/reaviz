@@ -1,5 +1,5 @@
 import { scaleBand } from 'd3-scale';
-import { uniqueBy } from '../utils/array';
+import { uniqueBy } from '@/common/utils/array';
 
 /**
  * Get the group scale aka x0.

@@ -1,9 +1,20 @@
 import React from 'react';
 import { BarChart } from './BarChart';
 import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
-import { LinearXAxis, LinearXAxisTickSeries, LinearYAxis, LinearYAxisTickSeries, LinearXAxisTickLabel } from '../common/Axis/LinearAxis';
+import {
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries,
+  LinearXAxisTickLabel
+} from '@/common/Axis/LinearAxis';
 import chroma from 'chroma-js';
-import { categoryData, largeCategoryData, nonZeroCategoryData, durationCategoryData } from '../../demo';
+import {
+  categoryData,
+  largeCategoryData,
+  nonZeroCategoryData,
+  durationCategoryData
+} from '../../demo';
 import {
   HistogramBarSeries,
   MarimekkoBarSeries,
@@ -171,5 +182,5 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };

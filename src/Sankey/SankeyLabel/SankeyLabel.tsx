@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import classNames from 'classnames';
-import { SankeyNodeExtra } from '../utils';
+import { SankeyNodeExtra } from '@/Sankey/utils';
 import css from './SankeyLabel.module.css';
 import ellipsize from 'ellipsize';
 
@@ -44,13 +44,13 @@ export interface SankeyLabelProps {
    */
   position?: SankeyLabelPosition;
 
-   /**
-   * Percentage of total width occupied by labels on 
+  /**
+   * Percentage of total width occupied by labels on
    * either side of the graph inside the container.
    * Used for auto-ellipsizing labels
    * Set internally by `Sankey`.
    */
-   labelPadding?: number;
+  labelPadding?: number;
 
   /**
    * Node data. Set internally by `Sankey`.
@@ -86,7 +86,7 @@ export interface SankeyLabelProps {
    * Specify the number of characters at which the text would be ellipsized.
    * Defaults to 'auto' based on available width and max cut-off at `LABEL_TRUNCATE_LENGTH=10`
    */
-  ellipsis?: number | 'none' | 'auto'
+  ellipsis?: number | 'none' | 'auto';
 }
 
 const LABEL_PADDING = 5;
@@ -132,8 +132,11 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   let truncatedTitle = '';
   if (ellipsis === 'auto') {
     // This math somehow works for now!
-    const avaialableWidth = showRightSide ? x: width-x;
-    truncatedTitle = ellipsize(node.title, Math.min(LABEL_TRUNCATE_LENGTH, avaialableWidth/(labelPadding*100)));
+    const avaialableWidth = showRightSide ? x : width - x;
+    truncatedTitle = ellipsize(
+      node.title,
+      Math.min(LABEL_TRUNCATE_LENGTH, avaialableWidth / (labelPadding * 100))
+    );
   } else if (ellipsis === 'none') {
     truncatedTitle = node.title;
   } else {

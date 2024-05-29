@@ -1,12 +1,12 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import { CloneElement } from 'reablocks';
-import { ColorSchemeType, getColor } from '../common/color';
+import { ColorSchemeType, getColor } from '@/common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
 import { TreeMapRect, TreeMapRectProps } from './TreeMapRect';
 import invert from 'invert-color';
 import chroma from 'chroma-js';
-import { DEFAULT_TRANSITION } from '../common/Motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface TreeMapSeriesProps {
   /**

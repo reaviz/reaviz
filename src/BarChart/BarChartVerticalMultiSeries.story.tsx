@@ -15,15 +15,15 @@ import {
   BarLabel,
   HistogramBarSeries
 } from './BarSeries';
-import { GridlineSeries, Gridline } from '../common/Gridline';
+import { GridlineSeries, Gridline } from '@/common/Gridline';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
-} from '../common/Axis/LinearAxis';
-import { Gradient, GradientStop } from '../common/Gradient';
+} from '@/common/Axis/LinearAxis';
+import { Gradient, GradientStop } from '@/common/Gradient';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Multi Series',

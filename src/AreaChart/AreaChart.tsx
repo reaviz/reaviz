@@ -16,9 +16,9 @@ import {
   LinearXAxis,
   LinearYAxis,
   LinearAxis
-} from '../common/Axis/LinearAxis';
-import { getXScale, getYScale } from '../common/scales';
-import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
+} from '@/common/Axis/LinearAxis';
+import { getXScale, getYScale } from '@/common/scales';
+import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
 import {
   ChartDataShape,
   ChartNestedDataShape,
@@ -26,19 +26,19 @@ import {
   buildShallowChartData,
   ChartShallowDataShape,
   buildNestedChartData
-} from '../common/data';
+} from '@/common/data';
 import css from './AreaChart.module.css';
-import { ChartBrushProps, ChartBrush } from '../common/Brush';
+import { ChartBrushProps, ChartBrush } from '@/common/Brush';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
   ChartZoomPan
-} from '../common/ZoomPan';
+} from '@/common/ZoomPan';
 import {
   ChartContainerChildProps,
   ChartContainer,
   ChartProps
-} from '../common/containers/ChartContainer';
+} from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 
 export interface AreaChartProps extends ChartProps {

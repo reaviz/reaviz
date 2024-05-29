@@ -2,8 +2,8 @@ import React, { useState, Fragment } from 'react';
 import { PieChart } from './PieChart';
 import { categoryData, randomNumber, browserData, icons } from '../../demo';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
-import { ChartShallowDataShape } from '../common/data';
-import { Gradient } from '../common/Gradient';
+import { ChartShallowDataShape } from '@/common/data';
+import { Gradient } from '@/common/Gradient';
 
 export default {
   title: 'Charts/Pie Chart/Pie',
@@ -257,11 +257,7 @@ export const WithGradient = () => (
     width={350}
     height={250}
     data={browserData}
-    series={
-      <PieArcSeries
-        arc={<PieArc gradient={<Gradient />} />}
-      />
-    }
+    series={<PieArcSeries arc={<PieArc gradient={<Gradient />} />} />}
   />
 );
 

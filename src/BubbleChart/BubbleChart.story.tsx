@@ -1,11 +1,11 @@
 import { BubbleChart } from './BubbleChart';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '@/common/data';
 import { BubbleSeries } from './BubbleSeries';
 import { range } from 'd3-array';
 import { randomNumber } from '../../demo';
 import { Bubble } from './Bubble';
-import { Gradient as GradientBG } from '../common/Gradient';
-import { Stripes } from '../common/Mask';
+import { Gradient as GradientBG } from '@/common/Gradient';
+import { Stripes } from '@/common/Mask';
 import { BubbleLabel } from './BubbleLabel';
 
 import oktaLogo from '../../demo/okta.svg';

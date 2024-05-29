@@ -8,15 +8,15 @@ import React, {
 import {
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
-} from '../../common/data';
-import { getColor, ColorSchemeType, schemes } from '../../common/color';
+} from '@/common/data';
+import { getColor, ColorSchemeType, schemes } from '@/common/color';
 import { CloneElement } from 'reablocks';
 import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
-import { RadialInterpolationTypes } from '../../common/utils/interpolation';
+import { RadialInterpolationTypes } from '@/common/utils/interpolation';
 import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
-import { TooltipAreaProps, TooltipArea } from '../../common/Tooltip';
-import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
+import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
+import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 

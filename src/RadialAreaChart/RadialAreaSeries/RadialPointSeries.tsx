@@ -3,8 +3,8 @@ import {
   RadialScatterSeries,
   RadialScatterPoint,
   RadialScatterPointProps
-} from '../../RadialScatterPlot';
-import { ChartInternalShallowDataShape } from '../../common/data';
+} from '@/RadialScatterPlot';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import { CloneElement } from 'reablocks';
 import isEqual from 'react-fast-compare';
 

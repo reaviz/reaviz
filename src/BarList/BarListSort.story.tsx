@@ -1,6 +1,5 @@
 import React from 'react';
 import { BarList } from './BarList';
-import { BarListSeries } from './BarListSeries';
 
 export default {
   title: 'Charts/Bar List/Sort',

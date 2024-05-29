@@ -10,7 +10,7 @@ import {
   normalizeValue,
   normalizeValueForFormatting
 } from './bigInteger';
-import { uniqueBy } from '../../common/utils/array';
+import { uniqueBy } from '@/common/utils/array';
 
 /**
  * Given a dataset like:
@@ -52,9 +52,8 @@ function transformDataToStack(data) {
         value.data,
         maxBigInteger
       );
-      result[idx].formattedValues[
-        category.key as string
-      ] = normalizeValueForFormatting(value.data);
+      result[idx].formattedValues[category.key as string] =
+        normalizeValueForFormatting(value.data);
     }
   }
 

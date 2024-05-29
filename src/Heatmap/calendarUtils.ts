@@ -1,5 +1,5 @@
 import { range, min } from 'd3-array';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '@/common/data';
 
 export type CalendarView = 'year' | 'month';
 

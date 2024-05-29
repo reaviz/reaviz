@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import classNames from 'classnames';
 import { range } from 'd3-array';
-import { Move } from '../Gestures/Move';
+import { Move } from '@/common/Gestures/Move';
 import css from './BrushHandle.module.css';
 
 export interface BrushHandleProps {
@@ -17,8 +17,8 @@ export const BrushHandle: FC<BrushHandleProps> = (props) => {
     <Move
       cursor="ew-resize"
       onMoveStart={() => setIsDragging(true)}
-      onMove={({x}) =>  onHandleDrag(x)}
-      onMoveEnd={() =>  setIsDragging(false)}
+      onMove={({ x }) => onHandleDrag(x)}
+      onMoveEnd={() => setIsDragging(false)}
     >
       <g>
         <line className={css.line} y1="0" y2={height} x1="5" x2="5" />
@@ -44,4 +44,3 @@ export const BrushHandle: FC<BrushHandleProps> = (props) => {
 };
 
 BrushHandle.defaultProps = {};
-

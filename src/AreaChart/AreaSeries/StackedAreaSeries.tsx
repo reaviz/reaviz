@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { AreaSeriesProps, AreaSeries } from './AreaSeries';
 import { CloneElement } from 'reablocks';
 import { PointSeriesProps } from './PointSeries';
-import { ScatterPointProps } from '../../ScatterPlot';
+import { ScatterPointProps } from '@/ScatterPlot';
 
 export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
   type,

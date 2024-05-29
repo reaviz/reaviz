@@ -4,8 +4,8 @@ import {
   ChartContainer,
   ChartContainerChildProps,
   ChartProps
-} from '../common/containers';
-import { ChartShallowDataShape } from '../common/data';
+} from '@/common/containers';
+import { ChartShallowDataShape } from '@/common/data';
 import { FunnelSeries, FunnelSeriesProps } from './FunnelSeries/FunnelSeries';
 
 export interface FunnelChartProps extends ChartProps {

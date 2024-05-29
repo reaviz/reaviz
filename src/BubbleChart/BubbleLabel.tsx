@@ -1,8 +1,8 @@
 import React, { FC, isValidElement } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { motion } from 'framer-motion';
-import { wrapText } from '../common/utils/wrapText';
-import { DEFAULT_TRANSITION } from '../common/Motion';
+import { wrapText } from '@/common/utils/wrapText';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface BubbleLabelProps {
   /**

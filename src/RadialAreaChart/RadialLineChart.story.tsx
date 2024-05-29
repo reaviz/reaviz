@@ -6,7 +6,7 @@ import {
   RadialAxisTickLabel,
   RadialAxisTickLine,
   RadialAxisTickSeries
-} from '../common/Axis';
+} from '@/common/Axis';
 import { RadialAreaChart } from './RadialAreaChart';
 import {
   RadialArea,

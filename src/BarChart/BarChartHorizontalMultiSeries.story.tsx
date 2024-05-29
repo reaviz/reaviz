@@ -2,12 +2,29 @@ import React from 'react';
 import { BarChart } from './BarChart';
 import { StackedBarChart } from './StackedBarChart';
 import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
-import { multiCategory, binnedDateData, binnedDatePositiveOnly, binnedDateNegativeOnly } from '../../demo';
+import {
+  multiCategory,
+  binnedDateData,
+  binnedDatePositiveOnly,
+  binnedDateNegativeOnly
+} from '../../demo';
 import chroma from 'chroma-js';
-import { BarSeries, Bar, StackedBarSeries, StackedNormalizedBarSeries, RangeLines } from './BarSeries';
-import { GridlineSeries, Gridline } from '../common/Gridline';
-import { LinearXAxis, LinearXAxisTickSeries, LinearYAxis, LinearYAxisTickSeries, LinearXAxisTickLabel } from '../common/Axis/LinearAxis';
-import { Gradient, GradientStop } from '../common/Gradient';
+import {
+  BarSeries,
+  Bar,
+  StackedBarSeries,
+  StackedNormalizedBarSeries,
+  RangeLines
+} from './BarSeries';
+import { GridlineSeries, Gridline } from '@/common/Gridline';
+import {
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries,
+  LinearXAxisTickLabel
+} from '@/common/Axis/LinearAxis';
+import { Gradient, GradientStop } from '@/common/Gradient';
 
 export default {
   title: 'Charts/Bar Chart/Horizontal/Multi Series',
@@ -17,7 +34,7 @@ export default {
     StackedBarSeries,
     StackedNormalizedBarSeries,
     RangeLines,
-    Bar,
+    Bar
   }
 };
 

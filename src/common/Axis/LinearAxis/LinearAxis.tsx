@@ -7,7 +7,7 @@ import React, {
   useEffect,
   useState
 } from 'react';
-import { ChartDataTypes } from '../../data';
+import { ChartDataTypes } from '@/common/data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
 import {
   LinearAxisTickSeries,

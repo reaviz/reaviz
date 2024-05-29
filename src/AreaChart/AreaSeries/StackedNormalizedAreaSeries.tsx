@@ -1,14 +1,10 @@
 import React, { FC } from 'react';
 import { AreaSeriesProps, AreaSeries } from './AreaSeries';
-import { formatValue } from '../../common/utils/formatting';
-import {
-  TooltipTemplate,
-  TooltipArea,
-  ChartTooltip
-} from '../../common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+import { TooltipTemplate, TooltipArea, ChartTooltip } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { PointSeriesProps } from './PointSeries';
-import { ScatterPointProps } from '../../ScatterPlot';
+import { ScatterPointProps } from '@/ScatterPlot';
 
 export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
   type,

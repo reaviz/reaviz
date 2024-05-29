@@ -7,7 +7,7 @@ import {
   LinearXAxis,
   LinearYAxis,
   LinearAxis
-} from '../common/Axis';
+} from '@/common/Axis';
 import { BarSeries, BarSeriesProps } from './BarSeries';
 import {
   ChartDataShape,
@@ -19,8 +19,8 @@ import {
   buildNestedChartData,
   buildShallowChartData,
   StackTypes
-} from '../common/data';
-import { GridlineSeries, GridlineSeriesProps } from '../common/Gridline';
+} from '@/common/data';
+import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
 import {
   getXScale,
   getYScale,
@@ -28,14 +28,14 @@ import {
   getInnerScale,
   getMarimekkoScale,
   getMarimekkoGroupScale
-} from '../common/scales';
-import { ChartBrushProps, ChartBrush } from '../common/Brush';
+} from '@/common/scales';
+import { ChartBrushProps, ChartBrush } from '@/common/Brush';
 import css from './BarChart.module.css';
 import {
   ChartContainer,
   ChartContainerChildProps,
   ChartProps
-} from '../common/containers/ChartContainer';
+} from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 
 export interface BarChartProps extends ChartProps {

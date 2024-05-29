@@ -13,8 +13,8 @@ import {
   RadialAxisTickLabel,
   RadialAxisArcSeries,
   RadialAxisTickLine
-} from '../common/Axis';
-import { GradientStop, RadialGradient } from '../common/Gradient';
+} from '@/common/Axis';
+import { GradientStop, RadialGradient } from '@/common/Gradient';
 
 export default {
   title: 'Charts/Area Chart/Radial',

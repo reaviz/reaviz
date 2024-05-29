@@ -1,9 +1,7 @@
 import React from 'react';
-import {
-  singleDateData
-} from '../../demo';
+import { singleDateData } from '../../demo';
 import { LineChart } from './LineChart';
-import { GridlineSeries, Gridline } from '../common/Gridline';
+import { GridlineSeries, Gridline } from '@/common/Gridline';
 
 export default {
   title: 'Charts/Line Chart/Gridlines',
@@ -11,36 +9,36 @@ export default {
 };
 
 export const AllAxes = () => (
-    <LineChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      gridlines={<GridlineSeries line={<Gridline direction="all" />} />}
-    />
-  );
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    gridlines={<GridlineSeries line={<Gridline direction="all" />} />}
+  />
+);
 
 export const XAxis = () => (
-    <LineChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
-    />
-  );
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
+  />
+);
 
 XAxis.story = {
-  name: 'X-Axis',
+  name: 'X-Axis'
 };
 
 export const YAxis = () => (
-    <LineChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
-    />
-  );
+  <LineChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
+  />
+);
 
 YAxis.story = {
-  name: 'Y-Axis',
+  name: 'Y-Axis'
 };

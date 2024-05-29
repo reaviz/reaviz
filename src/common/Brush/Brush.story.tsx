@@ -15,13 +15,13 @@ import {
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
 } from '../Axis';
-import { TooltipArea, tooltipTheme } from '../Tooltip';
+import { TooltipArea, tooltipTheme } from '@/common/Tooltip';
 import { ChartBrush } from './ChartBrush';
-import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../ScatterPlot';
-import { BarChart, HistogramBarSeries } from '../../BarChart';
+import { ScatterPlot, ScatterSeries, ScatterPoint } from '@/ScatterPlot';
+import { BarChart, HistogramBarSeries } from '@/BarChart';
 import { range } from 'd3-array';
 import { Tooltip } from 'reablocks';
-import { GridlineSeries, Gridline, GridStripe } from '../Gridline';
+import { GridlineSeries, Gridline, GridStripe } from '@/common/Gridline';
 import { ChartZoomPan } from '../ZoomPan';
 
 export default {

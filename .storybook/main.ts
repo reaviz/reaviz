@@ -5,13 +5,19 @@ const config: StorybookConfig = {
     '../docs/**/*.mdx',
     '../src/**/*.story.tsx'
   ],
+
   addons: [
     '@storybook/addon-storysource',
     '@storybook/addon-essentials'
   ],
+
   framework: {
     name: '@storybook/react-vite',
     options: {}
+  },
+
+  typescript: {
+    reactDocgen: 'react-docgen-typescript'
   }
 };
 

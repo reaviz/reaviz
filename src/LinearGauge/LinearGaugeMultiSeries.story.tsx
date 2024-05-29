@@ -1,6 +1,6 @@
 import React from 'react';
 import { LinearGauge } from './LinearGauge';
-import { DiscreteLegend, DiscreteLegendEntry } from '../common/legends';
+import { DiscreteLegend, DiscreteLegendEntry } from '@/common/legends';
 import { mitreData } from '../../demo';
 import { LinearGaugeSeries } from './LinearGaugeSeries';
 import chroma from 'chroma-js';

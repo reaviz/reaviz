@@ -1,20 +1,22 @@
 import React, { FC } from 'react';
-import { LineChart, LineChartProps } from '../LineChart';
-import { ChartShallowDataShape } from '../common/data';
-import { AreaSeries, Line } from '../AreaChart';
-import { PointSeries } from '../AreaChart';
+import { LineChart, LineChartProps } from '@/LineChart';
+import { ChartShallowDataShape } from '@/common/data';
+import { AreaSeries, Line } from '@/AreaChart';
+import { PointSeries } from '@/AreaChart';
 import {
   LinearXAxis,
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearXAxisTickSeries
-} from '../common/Axis/LinearAxis';
+} from '@/common/Axis/LinearAxis';
 
 export interface SparklineChartProps extends LineChartProps {
   data: ChartShallowDataShape[];
 }
 
-export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => <LineChart {...props} />;
+export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => (
+  <LineChart {...props} />
+);
 
 SparklineChart.defaultProps = {
   gridlines: null,

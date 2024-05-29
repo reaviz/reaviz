@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { BarChart, BarChartProps } from './BarChart';
-import { ChartNestedDataShape } from '../common/data';
+import { ChartNestedDataShape } from '@/common/data';
 import { StackedBarSeries } from './BarSeries';
 
 export interface StackedBarChartProps extends BarChartProps {

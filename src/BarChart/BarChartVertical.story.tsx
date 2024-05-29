@@ -1,11 +1,15 @@
 import React, { Fragment, useState } from 'react';
 import { BarChart } from './BarChart';
-import { categoryData, largeCategoryData, nonZeroCategoryData } from '../../demo';
+import {
+  categoryData,
+  largeCategoryData,
+  nonZeroCategoryData
+} from '../../demo';
 import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
-import { schemes } from '../common/color';
+import { schemes } from '@/common/color';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
-import { Stripes } from '../common/Mask';
+import { Stripes } from '@/common/Mask';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Single Series',
@@ -23,13 +27,7 @@ export const Simple = () => (
     width={400}
     height={350}
     data={categoryData}
-    series={
-      <BarSeries
-        colorScheme={schemes[0]}
-        padding={0.1}
-        bar={<Bar />}
-      />
-    }
+    series={<BarSeries colorScheme={schemes[0]} padding={0.1} bar={<Bar />} />}
   />
 );
 
@@ -93,11 +91,7 @@ export const Labels = () => (
     width={350}
     height={250}
     data={categoryData}
-    series={
-      <BarSeries
-        bar={<Bar label={<BarLabel position={'top'} />} />}
-      />
-    }
+    series={<BarSeries bar={<Bar label={<BarLabel position={'top'} />} />} />}
   />
 );
 
@@ -200,5 +194,5 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };

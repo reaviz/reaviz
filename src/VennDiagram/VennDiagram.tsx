@@ -3,7 +3,7 @@ import {
   ChartContainer,
   ChartContainerChildProps,
   ChartProps
-} from '../common/containers';
+} from '@/common/containers';
 import { layout } from '@upsetjs/venn.js';
 import { VennSeries, VennSeriesProps } from './VennSeries';
 import { CloneElement } from 'reablocks';

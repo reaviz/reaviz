@@ -12,8 +12,8 @@ import {
   RadialAxisTickLine,
   RadialAxisArcSeries,
   RadialValueMarker
-} from '../common';
-import { RadialBar, RadialBarChart, RadialBarSeries } from '../RadialBarChart';
+} from '@/common';
+import { RadialBar, RadialBarChart, RadialBarSeries } from '@/RadialBarChart';
 import { BarChart } from './BarChart';
 import { Bar, BarSeries } from './BarSeries';
 

@@ -1,13 +1,13 @@
 import { Heatmap } from './Heatmap';
 import { heatmapSimpleData } from '../../demo';
-import { SequentialLegend } from '../common/legends/SequentialLegend/SequentialLegend';
+import { SequentialLegend } from '@/common/legends/SequentialLegend/SequentialLegend';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
-import { getYScale } from '../common/scales';
+import { getYScale } from '@/common/scales';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
-} from '../common/Axis';
+} from '@/common/Axis';
 
 export default {
   title: 'Charts/Heatmap/Simple',

@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { interpolate } from 'd3-interpolate';
-import { DEFAULT_TRANSITION } from '../../common/Motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export const MotionBar = ({ custom, transition, arc, ...rest }) => {
   const d = useMotionValue('');

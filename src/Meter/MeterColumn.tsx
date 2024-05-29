@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION, schemes } from '../common';
+import { DEFAULT_TRANSITION, schemes } from '@/common';
 
 export interface MeterColumnProps {
   /**

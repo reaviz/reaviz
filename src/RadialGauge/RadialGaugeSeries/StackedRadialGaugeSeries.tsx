@@ -5,8 +5,8 @@ import {
   ChartDataShape,
   ChartNestedDataShape,
   ChartShallowDataShape
-} from '../../common/data';
-import { ColorSchemeType, getColor } from '../../common/color';
+} from '@/common/data';
+import { ColorSchemeType, getColor } from '@/common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
 import {
   RadialGaugeStackedArc,
@@ -175,7 +175,12 @@ export const StackedRadialGaugeSeries: FC<
   );
 
   const renderStackedArc = useCallback(
-    (outerRadius: number, innerRadius: number, point: ChartNestedDataShape, index: number) => {
+    (
+      outerRadius: number,
+      innerRadius: number,
+      point: ChartNestedDataShape,
+      index: number
+    ) => {
       return (
         <>
           {stackedInnerArc &&
@@ -206,7 +211,9 @@ export const StackedRadialGaugeSeries: FC<
             : renderInnerArc(
               outerRadius,
               innerRadius,
-              scale?.[index]?.(point.data) ?? scale?.[0]?.(point.data) ?? scale(point.data),
+              scale?.[index]?.(point.data) ??
+                  scale?.[0]?.(point.data) ??
+                  scale(point.data),
               point,
               index
             )}

@@ -7,8 +7,8 @@ import {
   ChartShallowDataShape,
   getClosestContinousScalePoint,
   getPositionForTarget
-} from '../../common';
-import { ClickEvent } from '../../common/types';
+} from '@/common';
+import { ClickEvent } from '@/common/types';
 import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
 

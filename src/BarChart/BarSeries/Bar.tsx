@@ -8,25 +8,25 @@ import React, {
   useState
 } from 'react';
 import chroma from 'chroma-js';
-import { Gradient, GradientProps } from '../../common/Gradient';
+import { Gradient, GradientProps } from '@/common/Gradient';
 import classNames from 'classnames';
-import { ChartInternalShallowDataShape, Direction } from '../../common/data';
+import { ChartInternalShallowDataShape, Direction } from '@/common/data';
 import { RangeLinesProps, RangeLines } from './RangeLines';
 import { CloneElement } from 'reablocks';
-import { Mask, MaskProps } from '../../common/Mask';
+import { Mask, MaskProps } from '@/common/Mask';
 import {
   constructFunctionProps,
   PropFunctionTypes
-} from '../../common/utils/functions';
+} from '@/common/utils/functions';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION } from '../../common/Motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { BarLabelProps, BarLabel } from './BarLabel';
-import { formatValue, getAriaLabel } from '../../common/utils/formatting';
+import { formatValue, getAriaLabel } from '@/common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
-import { ChartTooltipProps, ChartTooltip } from '../../common/Tooltip';
-import { Glow } from '../../common/Glow';
-import { ClickEvent } from '../../common/types';
-import { generateGlowStyles } from '../../common/Glow/utils';
+import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
+import { Glow } from '@/common/Glow';
+import { ClickEvent } from '@/common/types';
+import { generateGlowStyles } from '@/common/Glow/utils';
 
 export type BarType =
   | 'standard'

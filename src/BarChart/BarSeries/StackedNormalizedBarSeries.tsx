@@ -2,13 +2,9 @@ import React, { FC } from 'react';
 import { BarSeriesProps, BarSeries } from './BarSeries';
 import { Bar } from './Bar';
 import { RangeLines } from './RangeLines';
-import {
-  ChartTooltip,
-  TooltipTemplate,
-  TooltipArea
-} from '../../common/Tooltip';
-import { formatValue } from '../../common/utils/formatting';
-import { Gradient, GradientStop } from '../../common/Gradient';
+import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+import { Gradient, GradientStop } from '@/common/Gradient';
 
 export const StackedNormalizedBarSeries: FC<Partial<BarSeriesProps>> = (
   props

@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import { ChartNestedDataShape } from '../common/data';
-import { RadialAreaChart, RadialAreaChartProps } from '../RadialAreaChart';
+import { ChartNestedDataShape } from '@/common/data';
+import { RadialAreaChart, RadialAreaChartProps } from '@/RadialAreaChart';
 import {
   RadialAxis,
   RadialAxisArcLine,
   RadialAxisArcSeries
-} from '../common/Axis/RadialAxis';
+} from '@/common/Axis/RadialAxis';
 import { RadarChartSeries } from './RadarChartSeries';
 
 export interface RadarChartProps extends RadialAreaChartProps {

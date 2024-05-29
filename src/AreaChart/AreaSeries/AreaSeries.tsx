@@ -7,23 +7,23 @@ import React, {
 } from 'react';
 import { PointSeries, PointSeriesProps } from './PointSeries';
 import { Area, AreaProps } from './Area';
-import { MarkLine, MarkLineProps } from '../../common/MarkLine';
+import { MarkLine, MarkLineProps } from '@/common/MarkLine';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
-} from '../../common/data';
+} from '@/common/data';
 import { CloneElement } from 'reablocks';
 import {
   TooltipArea,
   TooltipAreaProps,
   TooltipAreaEvent
-} from '../../common/Tooltip';
+} from '@/common/Tooltip';
 import { Line, LineProps } from './Line';
-import { InterpolationTypes } from '../../common/utils/interpolation';
-import { getColor, ColorSchemeType } from '../../common/color';
+import { InterpolationTypes } from '@/common/utils/interpolation';
+import { getColor, ColorSchemeType } from '@/common/color';
 import { identifier } from 'safe-identifier';
-import { LinearValueMarker, LinearValueMarkerProps } from '../../common';
+import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
 
 export type AreaChartTypes =
   | 'standard'

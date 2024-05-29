@@ -4,7 +4,7 @@ import {
   StackedBarSeries,
   Bar,
   BarChartProps
-} from '../BarChart';
+} from '@/BarChart';
 import {
   Gradient,
   GradientStop,
@@ -17,7 +17,7 @@ import {
   TooltipTemplate,
   formatValue,
   ChartNestedDataShape
-} from '../common';
+} from '@/common';
 
 export interface SonarChartProps extends BarChartProps {
   data: ChartNestedDataShape[];

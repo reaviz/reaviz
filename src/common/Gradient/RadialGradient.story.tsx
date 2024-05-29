@@ -1,9 +1,13 @@
 import React from 'react';
 import { GradientStop } from './GradientStop';
 import { RadialGradient } from './RadialGradient';
-import { RadialArea, RadialAreaChart, RadialAreaSeries } from '../../RadialAreaChart';
+import {
+  RadialArea,
+  RadialAreaChart,
+  RadialAreaSeries
+} from '@/RadialAreaChart';
 import { categoryData } from '../../../demo';
-import { RadialAxis } from '../Axis/RadialAxis';
+import { RadialAxis } from '@/common/Axis/RadialAxis';
 
 export default {
   title: 'Utils/Gradient/Radial',
@@ -20,9 +24,7 @@ export const Simple = () => (
     width={500}
     axis={<RadialAxis type="category" />}
     series={
-      <RadialAreaSeries
-        area={<RadialArea gradient={<RadialGradient />} />}
-      />
+      <RadialAreaSeries area={<RadialArea gradient={<RadialGradient />} />} />
     }
   />
 );

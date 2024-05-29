@@ -1,5 +1,5 @@
 import React, { Fragment, ReactElement, FC } from 'react';
-import { BarSeries, BarSeriesProps } from '../BarChart';
+import { BarSeries, BarSeriesProps } from '@/BarChart';
 import { LinearGaugeBar, LinearGaugeBarProps } from './LinearGaugeBar';
 import {
   LinearGaugeOuterBar,
