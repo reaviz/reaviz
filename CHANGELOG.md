@@ -1,6 +1,6 @@
 # 15.15.3 - 5/9/24
 - [feature] add format title on hover label #218
-- 
+
 # 15.15.2 - 4/22/24
 - [fix] Upgrade reablocks #220
   
@@ -1424,7 +1424,7 @@ Here is what they need to be renamed to:
 
 # 1.0.2
 
-- [Fix] Sankey Chart Fix Negative node height: When the chart is resized to smaller than the original chart size, the node height gets negative, which is then passed to <rect> and causes an error.
+- [Fix] Sankey Chart Fix Negative node height: When the chart is resized to smaller than the original chart size, the node height gets negative, which is then passed to "rect" and causes an error.
 - [Fix] Sankey Chart Increased node width: When the node is hovered multiple times, the react-pose's rect translates the x position wrongly and causes the node wider.
 - [Fix] Sankey Chart Fix Sankey chart's non-visible links #3
 - [Chore] Add jsnext and module entry points #5
