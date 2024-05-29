@@ -1,7 +1,7 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { RadialAxisTick, RadialAxisTickProps } from './RadialAxisTick';
 import { CloneElement } from 'reablocks';
-import { getTicks } from '../../../utils/ticks';
+import { getTicks } from '@/common/utils/ticks';
 import { TimeInterval } from 'd3-time';
 
 export interface TickCallback {

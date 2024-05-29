@@ -3,8 +3,8 @@ import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers/ChartContainer';
-import { ChartNestedDataShape, buildNestedChartData } from '../common/data';
+} from '@/common/containers/ChartContainer';
+import { ChartNestedDataShape, buildNestedChartData } from '@/common/data';
 import { CloneElement } from 'reablocks';
 import {
   isAxisVisible,
@@ -16,10 +16,10 @@ import {
   LinearYAxisTickLabel,
   LinearXAxisTickLabel,
   LinearAxis
-} from '../common/Axis';
+} from '@/common/Axis';
 import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
-import { uniqueBy } from '../common/utils/array';
+import { uniqueBy } from '@/common/utils/array';
 
 export interface HeatmapProps extends ChartProps {
   /**

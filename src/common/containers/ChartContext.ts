@@ -1,6 +1,6 @@
 import { createContext, useContext } from 'react';
-import { Dimensions } from '../utils';
-import { LinearAxisDimensionChanged } from '../Axis';
+import { Dimensions } from '@/common/utils';
+import { LinearAxisDimensionChanged } from '@/common/Axis';
 
 export interface ChartContextProps extends Dimensions {
   id: string;

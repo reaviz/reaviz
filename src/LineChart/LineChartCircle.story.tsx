@@ -1,8 +1,8 @@
 import React from 'react';
 import { singleDateData } from '../../demo';
 import { LineChart } from './LineChart';
-import { PointSeries } from '../AreaChart';
-import { ScatterPoint } from '../ScatterPlot';
+import { PointSeries } from '@/AreaChart';
+import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 import { LineSeries } from './LineSeries';
 

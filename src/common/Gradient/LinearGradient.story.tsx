@@ -1,9 +1,9 @@
 import React from 'react';
 import { Gradient } from './Gradient';
-import { Area, AreaChart, AreaSeries, Line } from '../../AreaChart';
+import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
 import { singleDateData } from '../../../demo';
 import { GradientStop } from './GradientStop';
-import { LineChart, LineSeries } from '../../LineChart';
+import { LineChart, LineSeries } from '@/LineChart';
 
 export default {
   title: 'Utils/Gradient/Linear',

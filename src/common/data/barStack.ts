@@ -5,7 +5,7 @@ import {
   normalizeValue,
   normalizeValueForFormatting
 } from './bigInteger';
-import { uniqueBy } from '../../common/utils/array';
+import { uniqueBy } from '@/common/utils/array';
 
 export type StackTypes = 'default' | 'expand' | 'diverging';
 

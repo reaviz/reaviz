@@ -1,13 +1,9 @@
 import React, { FC, ReactElement, useMemo } from 'react';
-import { ChartShallowDataShape } from '../../common/data';
+import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
-import {
-  InterpolationTypes,
-  getAriaLabel,
-  interpolate
-} from '../../common/utils';
-import { ColorSchemeType, getColor, schemes } from '../../common/color';
-import { Gradient, GradientProps, GradientStop } from '../../common/Gradient';
+import { InterpolationTypes, getAriaLabel, interpolate } from '@/common/utils';
+import { ColorSchemeType, getColor, schemes } from '@/common/color';
+import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import {
@@ -15,9 +11,9 @@ import {
   TooltipArea,
   TooltipAreaProps,
   TooltipTemplate
-} from '../../common/Tooltip';
-import { Glow } from '../../common';
-import { generateGlowStyles } from '../../common/Glow/utils';
+} from '@/common/Tooltip';
+import { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
 
 export interface FunnelArcProps {
   /**

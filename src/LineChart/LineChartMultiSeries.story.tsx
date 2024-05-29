@@ -8,13 +8,13 @@ import {
   Line,
   StackedNormalizedAreaSeries,
   PointSeries
-} from '../AreaChart';
+} from '@/AreaChart';
 import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxisTickSeries,
   LinearYAxis
-} from '../common/Axis/LinearAxis';
+} from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
 
@@ -114,7 +114,7 @@ export const CustomLineStyles = () => (
         line={
           <Line
             strokeWidth={3}
-            style={data => {
+            style={(data) => {
               if (
                 data &&
                 data.length &&

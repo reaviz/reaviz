@@ -1,5 +1,5 @@
 import React, { FC, useMemo } from 'react';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '@/common/data';
 import { Heatmap, HeatmapProps } from './Heatmap';
 import {
   LinearXAxis,
@@ -8,10 +8,10 @@ import {
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
   LinearXAxisTickLabel
-} from '../common/Axis';
+} from '@/common/Axis';
 import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
-import { ChartTooltip } from '../common/Tooltip';
-import { formatValue } from '../common/utils/formatting';
+import { ChartTooltip } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
 import {
   buildDataScales,
   CalendarView,

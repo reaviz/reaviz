@@ -7,8 +7,8 @@ import {
   RadialAxisTickSeries,
   RadialAxisTick,
   RadialAxisTickLine
-} from '../common/Axis/RadialAxis';
-import { schemes } from '../common/color';
+} from '@/common/Axis/RadialAxis';
+import { schemes } from '@/common/color';
 import { useState } from 'react';
 
 export default {
@@ -112,12 +112,7 @@ export const LiveUpdating = () => {
 
   return (
     <>
-      <RadialBarChart
-        width={450}
-        height={450}
-        innerRadius={50}
-        data={data}
-      />
+      <RadialBarChart width={450} height={450} innerRadius={50} data={data} />
       <br />
       <button onClick={updateData}>Update</button>
       <button onClick={sortData}>Sort</button>
@@ -133,7 +128,7 @@ export const MultiSeries = () => (
     data={multiCategory}
     series={
       <RadialBarSeries
-        type='grouped'
+        type="grouped"
         animated
         colorScheme="cybertron"
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
@@ -141,7 +136,7 @@ export const MultiSeries = () => (
     }
     axis={
       <RadialAxis
-        type='category'
+        type="category"
         ticks={
           <RadialAxisTickSeries
             tick={

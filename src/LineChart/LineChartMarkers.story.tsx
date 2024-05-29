@@ -1,7 +1,7 @@
 import React from 'react';
 import { medDateData, multiDateData } from '../../demo';
-import { LinearValueMarker, RadialValueMarker } from '../common';
-import { RadialAreaChart, RadialAreaSeries } from '../RadialAreaChart';
+import { LinearValueMarker, RadialValueMarker } from '@/common';
+import { RadialAreaChart, RadialAreaSeries } from '@/RadialAreaChart';
 import { LineChart } from './LineChart';
 import { LineSeries } from './LineSeries';
 

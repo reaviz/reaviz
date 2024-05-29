@@ -6,14 +6,14 @@ import React, {
   useEffect,
   useCallback
 } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import {
   RadialScatterPoint,
   RadialScatterPointProps
 } from './RadialScatterPoint';
 import { CloneElement } from 'reablocks';
 import { identifier } from 'safe-identifier';
-import { RadialValueMarker, RadialValueMarkerProps } from '../../common';
+import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export interface RadialScatterSeriesProps {
   /**

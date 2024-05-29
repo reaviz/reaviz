@@ -15,12 +15,12 @@ import {
   LinearValueMarker,
   LinearXAxis,
   LinearYAxis
-} from '../common';
+} from '@/common';
 import {
   RadialScatterPlot,
   RadialScatterPoint,
   RadialScatterSeries
-} from '../RadialScatterPlot';
+} from '@/RadialScatterPlot';
 import { ScatterPlot } from './ScatterPlot';
 import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 

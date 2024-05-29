@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
-import { calculateDimensions, wrapText } from '../common/utils';
-import { formatValue } from '../common/utils/formatting';
+import { calculateDimensions, wrapText } from '@/common/utils';
 
 export interface TreeMapLabelProps {
   /**

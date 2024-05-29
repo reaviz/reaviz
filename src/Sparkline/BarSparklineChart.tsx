@@ -1,20 +1,22 @@
 import React, { FC } from 'react';
-import { BarChart, BarChartProps } from '../BarChart';
-import { ChartShallowDataShape } from '../common/data';
+import { BarChart, BarChartProps } from '@/BarChart';
+import { ChartShallowDataShape } from '@/common/data';
 import {
   LinearXAxis,
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearXAxisTickSeries
-} from '../common/Axis';
-import { BarSeries } from '../BarChart';
-import { schemes } from '../common/color';
+} from '@/common/Axis';
+import { BarSeries } from '@/BarChart';
+import { schemes } from '@/common/color';
 
 export interface BarSparklineChartProps extends BarChartProps {
   data: ChartShallowDataShape[];
 }
 
-export const BarSparklineChart: FC<Partial<BarSparklineChartProps>> = (props) => <BarChart {...props} />;
+export const BarSparklineChart: FC<Partial<BarSparklineChartProps>> = (
+  props
+) => <BarChart {...props} />;
 
 BarSparklineChart.defaultProps = {
   gridlines: null,

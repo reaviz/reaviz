@@ -1,11 +1,7 @@
 import React, { FC, ReactElement, useCallback } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import { CloneElement } from 'reablocks';
-import {
-  ScatterPoint,
-  ScatterSeries,
-  ScatterPointProps
-} from '../../ScatterPlot';
+import { ScatterPoint, ScatterSeries, ScatterPointProps } from '@/ScatterPlot';
 import css from './PointSeries.module.css';
 import isEqual from 'react-fast-compare';
 

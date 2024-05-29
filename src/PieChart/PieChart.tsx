@@ -7,8 +7,8 @@ import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers';
-import { ChartShallowDataShape } from '../common/data';
+} from '@/common/containers';
+import { ChartShallowDataShape } from '@/common/data';
 import { PieArcSeries, PieArcSeriesProps } from './PieArcSeries';
 
 export type ArcData = PieArcDatum<ChartShallowDataShape>;

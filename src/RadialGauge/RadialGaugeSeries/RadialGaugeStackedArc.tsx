@@ -7,8 +7,8 @@ import {
   ChartTooltip,
   ColorSchemeType,
   getColor
-} from '../../common';
-import { ArcData, PieArc } from '../../PieChart';
+} from '@/common';
+import { ArcData, PieArc } from '@/PieChart';
 import { RadialGaugeArcProps } from './RadialGaugeArc';
 
 export type RadialGaugeStackedArcProps = Omit<

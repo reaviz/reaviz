@@ -1,9 +1,9 @@
 import React, { Component, PropsWithChildren, createRef } from 'react';
-import { toggleTextSelection } from '../utils/selection';
+import { toggleTextSelection } from '@/common/utils/selection';
 import {
   getPointFromMatrix,
   isZoomLevelGoingOutOfBounds
-} from '../utils/position';
+} from '@/common/utils/position';
 import { getTouchPoints } from './pinchUtils';
 import {
   scale,
@@ -125,12 +125,8 @@ export class Zoom extends Component<ZoomGestureProps> {
   }
 
   onMouseWheel = (event) => {
-    const {
-      disableMouseWheel,
-      requireZoomModifier,
-      matrix,
-      onZoomEnd
-    } = this.props;
+    const { disableMouseWheel, requireZoomModifier, matrix, onZoomEnd } =
+      this.props;
 
     if (disableMouseWheel) {
       return false;

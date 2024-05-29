@@ -14,12 +14,12 @@ import {
   ChartInternalDataShape,
   ChartInternalShallowDataShape,
   ChartInternalNestedDataShape
-} from '../data';
+} from '@/common/data';
 import {
   getPositionForTarget,
   getClosestContinousScalePoint,
   getClosestBandScalePoint
-} from '../utils/position';
+} from '@/common/utils/position';
 import { CloneElement, Placement } from 'reablocks';
 import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';

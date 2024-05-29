@@ -8,8 +8,8 @@ import React, {
 } from 'react';
 import { range, min } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-import { ChartDataShape, ChartShallowDataShape } from '../../common';
-import { ColorSchemeType, getColor } from '../../common/color';
+import { ChartShallowDataShape } from '@/common';
+import { ColorSchemeType, getColor } from '@/common/color';
 import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
 import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
 import {
@@ -162,10 +162,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
       const key = identifier(point.key?.toLocaleString());
 
       return (
-        <g
-          key={key}
-          transform={`translate(${xOffset}, ${yOffset})`}
-        >
+        <g key={key} transform={`translate(${xOffset}, ${yOffset})`}>
           {outerArc &&
             cloneElement(outerArc, {
               id: `${id}-${key}-outer`,

@@ -6,7 +6,7 @@ import React, {
   useEffect,
   useRef
 } from 'react';
-import { toggleTextSelection } from '../utils/selection';
+import { toggleTextSelection } from '@/common/utils/selection';
 
 interface MoveProps extends PropsWithChildren {
   cursor?: string;

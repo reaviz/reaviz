@@ -14,10 +14,10 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
-import { LinearXAxis, LinearXAxisTickSeries } from '../common/Axis/LinearAxis';
-import { Gradient, GradientStop } from '../common/Gradient';
-import { Stripes } from '../common/Mask';
-import { ChartDataShape } from '../common/data';
+import { LinearXAxis, LinearXAxisTickSeries } from '@/common/Axis/LinearAxis';
+import { Gradient, GradientStop } from '@/common/Gradient';
+import { Stripes } from '@/common/Mask';
+import { ChartDataShape } from '@/common/data';
 
 export default {
   title: 'Charts/Area Chart/Single Series',
@@ -61,7 +61,7 @@ export const Masks = () => (
             gradient={
               <Gradient
                 stops={[
-                  <GradientStop offset="0%" stopOpacity={.2} />,
+                  <GradientStop offset="0%" stopOpacity={0.2} />,
                   <GradientStop offset="50%" stopOpacity={1} />
                 ]}
               />
@@ -82,11 +82,7 @@ export const Interpolation = () => (
         width={350}
         height={250}
         data={singleDateData}
-        series={
-          <AreaSeries
-            interpolation="smooth"
-          />
-        }
+        series={<AreaSeries interpolation="smooth" />}
       />
     </div>
     <div>
@@ -95,11 +91,7 @@ export const Interpolation = () => (
         width={350}
         height={250}
         data={singleDateData}
-        series={
-          <AreaSeries
-            interpolation="step"
-          />
-        }
+        series={<AreaSeries interpolation="step" />}
       />
     </div>
   </div>

@@ -1,4 +1,4 @@
-import { TooltipArea } from '../common';
+import { TooltipArea } from '@/common';
 import { StoryFn, Meta } from '@storybook/react';
 import {
   FunnelSeries,

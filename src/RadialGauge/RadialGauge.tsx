@@ -4,8 +4,8 @@ import {
   ChartContainer,
   ChartContextProps,
   ChartProps
-} from '../common/containers';
-import { ChartDataShape } from '../common/data';
+} from '@/common/containers';
+import { ChartDataShape } from '@/common/data';
 import {
   RadialGaugeSeries,
   RadialGaugeSeriesProps,

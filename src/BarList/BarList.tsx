@@ -3,7 +3,7 @@ import { scaleLinear } from 'd3-scale';
 import { motion } from 'framer-motion';
 import { CloneElement, useId } from 'reablocks';
 import React, { FC, ReactElement, useMemo } from 'react';
-import { ChartShallowDataShape } from '../common';
+import { ChartShallowDataShape } from '@/common';
 import { BarListSeries, BarListSeriesProps } from './BarListSeries';
 
 export interface BarListProps {

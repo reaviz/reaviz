@@ -7,8 +7,8 @@ import {
   RadialAxisTickLabel,
   RadialAxisTickLine,
   RadialAxisTickSeries
-} from '../common/Axis/RadialAxis';
-import { schemes } from '../common/color';
+} from '@/common/Axis/RadialAxis';
+import { schemes } from '@/common/color';
 import { RadialBarChart } from './RadialBarChart';
 import { RadialBar, RadialBarSeries, RadialGuideBar } from './RadialBarSeries';
 

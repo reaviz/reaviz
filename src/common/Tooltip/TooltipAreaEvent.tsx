@@ -1,4 +1,4 @@
-import { ChartDataTypes, ChartInternalShallowDataShape } from '../data';
+import { ChartDataTypes, ChartInternalShallowDataShape } from '@/common/data';
 
 export interface TooltipAreaEvent {
   visible: boolean;

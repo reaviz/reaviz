@@ -3,8 +3,8 @@ import { timeDay } from 'd3-time';
 import moment from 'moment';
 import { singleDateData, largeDateData, randomNumber } from '../../demo';
 import { LineChart } from './LineChart';
-import { Line } from '../AreaChart';
-import { LinearXAxisTickSeries, LinearXAxis } from '../common/Axis/LinearAxis';
+import { Line } from '@/AreaChart';
+import { LinearXAxisTickSeries, LinearXAxis } from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 
 export default {
@@ -96,9 +96,7 @@ const LiveUpdatingStory = () => {
         ...data,
         {
           id: randomNumber(1, 10000),
-          key: moment('2020-02-29T08:00:00.000Z')
-            .add(++offset, 'day')
-            .toDate(),
+          key: moment('2020-02-29T08:00:00.000Z').add(++offset, 'day').toDate(),
           data: randomNumber(1, 20)
         }
       ];

@@ -1,6 +1,6 @@
 import { scaleLinear } from 'd3-scale';
-import { ChartInternalNestedDataShape } from '../data';
-import { uniqueBy } from '../utils/array';
+import { ChartInternalNestedDataShape } from '@/common/data';
+import { uniqueBy } from '@/common/utils/array';
 
 interface MariemkoScaleData {
   data: ChartInternalNestedDataShape[];

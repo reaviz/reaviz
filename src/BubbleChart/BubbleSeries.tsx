@@ -1,13 +1,13 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import { HierarchyCircularNode } from 'd3-hierarchy';
-import { ColorSchemeType, getColor } from '../common/color';
+import { ColorSchemeType, getColor } from '@/common/color';
 import { Bubble, BubbleProps } from './Bubble';
 import { BubbleLabel, BubbleLabelProps } from './BubbleLabel';
 import { CloneElement } from 'reablocks';
 import invert from 'invert-color';
 import chroma from 'chroma-js';
-import { DEFAULT_TRANSITION } from '../common/Motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { identifier } from 'safe-identifier';
 
 export interface BubbleSeriesProps {

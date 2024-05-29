@@ -1,6 +1,6 @@
 import { max } from 'd3-array';
 import { arc } from 'd3-shape';
-import { ArcData } from '../PieChart';
+import { ArcData } from '@/PieChart';
 
 const factor = 1.2;
 const midAngle = (d: ArcData) => d.startAngle + (d.endAngle - d.startAngle) / 2;
@@ -15,7 +15,7 @@ export function calculateOuterRadius(
   outerRadius: number,
   data: ArcData[],
   point: ArcData,
-  explode: boolean,
+  explode: boolean
 ) {
   if (!explode || data === undefined) {
     return outerRadius;
@@ -42,13 +42,7 @@ export function calculateCentroid(
   };
 }
 
-export function calculateRadius(
-  height,
-  width,
-  label,
-  arcWidth,
-  doughnut
-) {
+export function calculateRadius(height, width, label, arcWidth, doughnut) {
   const minDimension = Math.min(width, height);
 
   let outerRadius = minDimension / 2;

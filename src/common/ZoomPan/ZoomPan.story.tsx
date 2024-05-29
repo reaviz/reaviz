@@ -1,16 +1,15 @@
 import React, { FC } from 'react';
 import { largeDateData, largeSignalChartData } from '../../../demo';
-import { LineChart, LineSeries } from '../../LineChart';
-import { ChartZoomPan, ZoomPan } from '../ZoomPan';
-import { ScatterPlot, ScatterSeries, ScatterPoint } from '../../ScatterPlot';
-import { AreaChart, AreaSeries } from '../../AreaChart';
-import { TooltipArea } from '../Tooltip';
+import { LineChart, LineSeries } from '@/LineChart';
+import { ChartZoomPan, ZoomPan } from '@/common/ZoomPan';
+import { ScatterPlot, ScatterSeries, ScatterPoint } from '@/ScatterPlot';
+import { AreaChart, AreaSeries } from '@/AreaChart';
+import { TooltipArea } from '@/common/Tooltip';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearXAxisTickLabel
 } from '../Axis';
-import { useState } from '@storybook/addons';
 
 export default {
   title: 'Utils/Zoom Pan'

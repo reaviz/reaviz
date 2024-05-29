@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { BarChart, BarChartProps } from './BarChart';
-import { ChartNestedDataShape } from '../common/data';
+import { ChartNestedDataShape } from '@/common/data';
 import { MarimekkoBarSeries } from './BarSeries';
 import {
   LinearXAxis,
@@ -8,7 +8,7 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel
-} from '../common/Axis/LinearAxis';
+} from '@/common/Axis/LinearAxis';
 
 export interface MarimekkoChartProps extends BarChartProps {
   data: ChartNestedDataShape[];

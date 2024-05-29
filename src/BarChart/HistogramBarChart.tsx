@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ChartShallowDataShape } from '../common/data';
+import { ChartShallowDataShape } from '@/common/data';
 import { BarChartProps, BarChart } from './BarChart';
 import { HistogramBarSeries } from './BarSeries';
 

@@ -1,6 +1,6 @@
 import React, { FC, Fragment, isValidElement } from 'react';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION } from '../common/Motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface VennOuterLabelProps {
   /**

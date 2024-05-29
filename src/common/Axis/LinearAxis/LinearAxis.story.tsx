@@ -1,7 +1,7 @@
 import React from 'react';
 import { largeSignalChartData, categoryData } from '../../../../demo';
-import { ScatterPlot } from '../../../ScatterPlot';
-import { BarChart } from '../../../BarChart';
+import { ScatterPlot } from '@/ScatterPlot';
+import { BarChart } from '@/BarChart';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,

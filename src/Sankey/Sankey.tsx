@@ -17,10 +17,10 @@ import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers/ChartContainer';
+} from '@/common/containers/ChartContainer';
 import { CloneElement, useId } from 'reablocks';
 
-import { getColor, ColorSchemeType } from '../common/color';
+import { getColor, ColorSchemeType } from '@/common/color';
 import { SankeyNodeProps, SankeyNode } from './SankeyNode';
 import { SankeyLinkProps, SankeyLink } from './SankeyLink';
 import {

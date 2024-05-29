@@ -1,5 +1,5 @@
 import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
-import { formatValue } from '../../../utils/formatting';
+import { formatValue } from '@/common/utils/formatting';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
 

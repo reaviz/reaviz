@@ -1,4 +1,11 @@
-import React, { PropsWithChildren, FC, useRef, useState, useEffect, useCallback } from 'react';
+import React, {
+  PropsWithChildren,
+  FC,
+  useRef,
+  useState,
+  useEffect,
+  useCallback
+} from 'react';
 import bind from 'memoize-bind';
 import {
   Pan,
@@ -6,8 +13,8 @@ import {
   PanStartEvent,
   PanEndEvent,
   PanCancelEvent
-} from '../Gestures/Pan';
-import { Zoom, ZoomEvent } from '../Gestures/Zoom';
+} from '@/common/Gestures/Pan';
+import { Zoom, ZoomEvent } from '@/common/Gestures/Zoom';
 import {
   identity,
   fromObject,
@@ -73,7 +80,7 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
   onPanEnd,
   onZoom,
   onZoomEnd
-}) =>  {
+}) => {
   const zoomRef = useRef<Zoom>();
   const panRef = useRef<Pan>();
   const [isZooming, setIsZooming] = useState<boolean>();
@@ -84,7 +91,7 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
     const newMatrix = transform(
       fromDefinition([
         { type: 'translate', tx: x, ty: y },
-        { type: 'scale', sx: scale, sy: scale },
+        { type: 'scale', sx: scale, sy: scale }
       ])
     );
 
@@ -93,41 +100,52 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
     }
   }, [x, y, scale, matrix]);
 
+  const onPanStartHandler = useCallback(
+    (event: PanStartEvent) => {
+      setIsPanning(true);
+      onPanStart(event);
+    },
+    [onPanStart]
+  );
 
-  const onPanStartHandler = useCallback((event: PanStartEvent) => {
-    setIsPanning(true);
-    onPanStart(event);
-  }, [onPanStart]);
+  const onPanMoveHandler = useCallback(
+    (event: PanMoveEvent) => {
+      onZoomPan({
+        scale: scale,
+        x: event.x,
+        y: event.y,
+        type: 'pan',
+        nativeEvent: event.nativeEvent
+      });
 
-  const onPanMoveHandler =  useCallback((event: PanMoveEvent) => {
-    onZoomPan({
-      scale: scale,
-      x: event.x,
-      y: event.y,
-      type: 'pan',
-      nativeEvent: event.nativeEvent
-    });
+      onPanMove(event);
+    },
+    [onPanMove, onZoomPan, scale]
+  );
 
-    onPanMove(event);
-  }, [onPanMove, onZoomPan, scale]);
+  const onPanEndHandler = useCallback(
+    (event: PanEndEvent) => {
+      setIsPanning(false);
+      onPanEnd(event);
+    },
+    [onPanEnd]
+  );
 
-  const onPanEndHandler =  useCallback((event: PanEndEvent) => {
-    setIsPanning(false);
-    onPanEnd(event);
-  }, [onPanEnd]);
+  const onZoomHandler = useCallback(
+    (event: ZoomEvent) => {
+      onZoomPan({
+        x: event.x,
+        y: event.y,
+        scale: event.scale,
+        nativeEvent: event.nativeEvent,
+        type: 'zoom'
+      });
+      onZoom(event);
+    },
+    [onZoom, onZoomPan]
+  );
 
-  const onZoomHandler =  useCallback((event: ZoomEvent) => {
-    onZoomPan({
-      x: event.x,
-      y: event.y,
-      scale: event.scale,
-      nativeEvent: event.nativeEvent,
-      type: 'zoom'
-    });
-    onZoom(event);
-  }, [onZoom, onZoomPan]);
-
-  const onZoomEndHandler =  useCallback(() => {
+  const onZoomEndHandler = useCallback(() => {
     setIsZooming(false);
     onZoomEnd();
   }, [onZoomEnd]);

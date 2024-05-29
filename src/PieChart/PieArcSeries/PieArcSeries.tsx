@@ -1,9 +1,9 @@
 import React, { FC, Fragment, ReactElement } from 'react';
 import { CloneElement } from 'reablocks';
-import { ArcData } from '../PieChart';
+import { ArcData } from '@/PieChart';
 import { PieArc, PieArcProps } from './PieArc';
 import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
-import { getColor, ColorSchemeType } from '../../common/color';
+import { getColor, ColorSchemeType } from '@/common/color';
 import {
   calculateCentroid,
   calculateInnerArc,

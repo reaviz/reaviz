@@ -1,7 +1,7 @@
 import { multiCategory } from '../../demo';
-import { RadialArea } from '../RadialAreaChart';
-import { GradientStop } from '../common/Gradient';
-import { RadialGradient } from '../common/Gradient/RadialGradient';
+import { RadialArea } from '@/RadialAreaChart';
+import { GradientStop } from '@/common/Gradient';
+import { RadialGradient } from '@/common/Gradient/RadialGradient';
 import { RadarChart } from './RadarChart';
 import { RadarChartSeries } from './RadarChartSeries';
 

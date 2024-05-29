@@ -1,8 +1,8 @@
 import React, { FC, useCallback, useState, useMemo } from 'react';
-import { Margins, getDimension } from '../utils/dimensions';
+import { Margins, getDimension } from '@/common/utils/dimensions';
 import useDimensions from 'react-cool-dimensions';
 import { useId } from 'reablocks';
-import { LinearAxisDimensionChanged } from '../Axis';
+import { LinearAxisDimensionChanged } from '@/common/Axis';
 import classNames from 'classnames';
 import { ChartContextProps, ChartProvider } from './ChartContext';
 import css from './ChartContainer.module.css';

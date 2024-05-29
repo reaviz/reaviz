@@ -7,15 +7,15 @@ import React, {
   useMemo
 } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
-import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
-import { Mask, MaskProps } from '../common/Mask';
-import { Gradient, GradientProps } from '../common/Gradient';
-import { useHoverIntent } from '../common/utils/useHoverIntent';
-import { Glow, getAriaLabel } from '../common';
-import { generateGlowStyles } from '../common/Glow/utils';
+import { Mask, MaskProps } from '@/common/Mask';
+import { Gradient, GradientProps } from '@/common/Gradient';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { Glow, getAriaLabel } from '@/common';
+import { generateGlowStyles } from '@/common/Glow/utils';
 
 export interface VennArcProps {
   /**

@@ -6,17 +6,16 @@ import React, {
   useMemo,
   useRef
 } from 'react';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import { arc } from 'd3-shape';
-import { Gradient } from '../../common/Gradient';
-import bind from 'memoize-bind';
+import { Gradient } from '@/common/Gradient';
 import chroma from 'chroma-js';
 import { path } from 'd3-path';
-import { DEFAULT_TRANSITION } from '../../common/Motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { MotionBar } from './MotionBar';
 import { RadialGuideBar, RadialGuideBarProps } from './RadialGuideBar';
 import { CloneElement } from 'reablocks';
-import { scaleBand, scaleLinear } from 'd3-scale';
+import { scaleBand } from 'd3-scale';
 
 export interface RadialBarProps {
   /**

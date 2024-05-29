@@ -1,5 +1,5 @@
 import bigInt from 'big-integer';
-import { bigIntegerToLocaleString } from '../../common/utils/bigint';
+import { bigIntegerToLocaleString } from '@/common/utils/bigint';
 import {
   ChartDataTypes,
   ChartInternalDataTypes,

@@ -8,20 +8,20 @@ import React, {
   useRef,
   ReactNode
 } from 'react';
-import { ChartTooltip, ChartTooltipProps } from '../../common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import {
   constructFunctionProps,
   PropFunctionTypes
-} from '../../common/utils/functions';
+} from '@/common/utils/functions';
 import chroma from 'chroma-js';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
-import { DEFAULT_TRANSITION } from '../../common/Motion';
-import { ChartInternalShallowDataShape } from '../../common/data';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { ChartInternalShallowDataShape } from '@/common/data';
 import css from './HeatmapCell.module.css';
-import { useHoverIntent } from '../../common/utils/useHoverIntent';
-import { getAriaLabel } from '../../common';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { getAriaLabel } from '@/common';
 
 export type HeatmapCellProps = {
   /**

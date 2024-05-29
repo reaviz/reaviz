@@ -6,8 +6,8 @@ import {
   RadialAxisTickLabel,
   RadialAxisTickLine,
   RadialAxisTickSeries
-} from '../common/Axis';
-import { GradientStop, RadialGradient } from '../common/Gradient';
+} from '@/common/Axis';
+import { GradientStop, RadialGradient } from '@/common/Gradient';
 import { RadialAreaChart } from './RadialAreaChart';
 import {
   RadialArea,

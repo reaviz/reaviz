@@ -1,13 +1,13 @@
 import React, { FC, ReactElement, Fragment } from 'react';
 import { HeatmapCell, HeatmapCellProps } from './HeatmapCell';
 import { CloneElement } from 'reablocks';
-import { ColorSchemeType } from '../../common/color';
-import { ChartInternalNestedDataShape } from '../../common/data';
+import { ColorSchemeType } from '@/common/color';
+import { ChartInternalNestedDataShape } from '@/common/data';
 import {
   ColorSchemeStyleArray,
   createColorSchemeValueScales,
   getColorSchemeStyles
-} from '../../common/color/helper';
+} from '@/common/color/helper';
 
 export interface HeatmapSeriesProps {
   /**

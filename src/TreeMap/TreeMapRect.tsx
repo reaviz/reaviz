@@ -8,11 +8,11 @@ import React, {
 } from 'react';
 import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
-import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { DEFAULT_TRANSITION } from '../common/Motion';
-import { useHoverIntent } from '../common/utils/useHoverIntent';
-import { getAriaLabel } from '../common';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { getAriaLabel } from '@/common';
 
 export interface TreeMapRectProps {
   /**

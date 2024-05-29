@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { AreaChart, AreaChartProps } from './AreaChart';
-import { ChartNestedDataShape } from '../common/data';
+import { ChartNestedDataShape } from '@/common/data';
 import { StackedAreaSeries } from './AreaSeries';
 
 export interface StackedAreaChartProps extends AreaChartProps {

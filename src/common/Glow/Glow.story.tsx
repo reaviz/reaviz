@@ -1,14 +1,14 @@
-import { ScatterPlot, ScatterPoint, ScatterSeries } from '../../ScatterPlot';
+import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
 import {
   categoryData,
   largeSignalChartData,
   singleDateData
 } from '../../../demo';
-import { Bar, BarChart, BarSeries } from '../../BarChart';
-import { Bubble, BubbleChart, BubbleSeries } from '../../BubbleChart';
-import { Area, AreaChart, AreaSeries, Line } from '../../AreaChart';
-import { LineChart, LineSeries } from '../../LineChart';
-import { ChartShallowDataShape } from '../data';
+import { Bar, BarChart, BarSeries } from '@/BarChart';
+import { Bubble, BubbleChart, BubbleSeries } from '@/BubbleChart';
+import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
+import { LineChart, LineSeries } from '@/LineChart';
+import { ChartShallowDataShape } from '@/common/data';
 
 export default {
   title: 'Utils/Glow'

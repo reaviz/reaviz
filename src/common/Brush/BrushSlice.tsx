@@ -1,6 +1,6 @@
 import React, { Fragment, useState, FC, useCallback } from 'react';
 import { BrushHandle } from './BrushHandle';
-import { Move } from '../Gestures/Move';
+import { Move } from '@/common/Gestures/Move';
 import css from './BrushSlice.module.css';
 
 export interface BrushChangeEvent {
@@ -17,13 +17,13 @@ interface BrushSliceProps {
 }
 
 export const BrushSlice: FC<BrushSliceProps> = (props) => {
-  const { height, start, end, width, onBrushChange, } = props;
+  const { height, start, end, width, onBrushChange } = props;
   const [isDragging, setIsDragging] = useState(false);
   const sliceWidth = Math.max(end - start, 0);
   const endSliceWidth = Math.max(width - end, 0);
   const hasNoSlice = start === 0 && end === width;
 
-  const onMoveStart = useCallback(() =>  {
+  const onMoveStart = useCallback(() => {
     const hasNoSlice = start === 0 && end === width;
 
     if (!hasNoSlice) {
@@ -31,27 +31,33 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
     }
   }, [end, start, width]);
 
-  const onMove = useCallback(({ x }) => {
-    const startUpdated = start + x;
-    const endUpdated = end + x;
+  const onMove = useCallback(
+    ({ x }) => {
+      const startUpdated = start + x;
+      const endUpdated = end + x;
 
-    if (startUpdated >= 0 && endUpdated <= width) {
+      if (startUpdated >= 0 && endUpdated <= width) {
+        onBrushChange({
+          start: startUpdated,
+          end: endUpdated
+        });
+      }
+    },
+    [start, end, width, onBrushChange]
+  );
+
+  const onHandleDrag = useCallback(
+    (direction: 'start' | 'end', deltaX: number) => {
+      const startUpdated = direction === 'start' ? start + deltaX : start;
+      const endUpdated = direction !== 'start' ? end + deltaX : end;
+
       onBrushChange({
         start: startUpdated,
         end: endUpdated
       });
-    }
-  }, [start, end, width, onBrushChange]);
-
-  const onHandleDrag = useCallback((direction: 'start' | 'end', deltaX: number) => {
-    const startUpdated = direction === 'start' ? start + deltaX : start;
-    const endUpdated = direction !== 'start' ? end + deltaX : end;
-
-    onBrushChange({
-      start: startUpdated,
-      end: endUpdated
-    });
-  }, [end, onBrushChange, start]);
+    },
+    [end, onBrushChange, start]
+  );
 
   return (
     <Fragment>

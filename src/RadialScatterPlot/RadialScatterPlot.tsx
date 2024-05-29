@@ -3,9 +3,9 @@ import {
   ChartShallowDataShape,
   buildShallowChartData,
   ChartInternalShallowDataShape
-} from '../common/data';
+} from '@/common/data';
 import { scaleBand, scaleTime } from 'd3-scale';
-import { getYDomain, getXDomain } from '../common/utils/domains';
+import { getYDomain, getXDomain } from '@/common/utils/domains';
 import {
   RadialScatterSeries,
   RadialScatterSeriesProps
@@ -14,11 +14,11 @@ import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers';
+} from '@/common/containers';
 import { CloneElement } from 'reablocks';
-import { RadialAxisProps, RadialAxis } from '../common/Axis/RadialAxis';
-import { getRadialYScale } from '../common/scales';
-import { uniqueBy } from '../common';
+import { RadialAxisProps, RadialAxis } from '@/common/Axis/RadialAxis';
+import { getRadialYScale } from '@/common/scales';
+import { uniqueBy } from '@/common';
 
 export interface RadialScatterPlotProps extends ChartProps {
   /**

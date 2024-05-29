@@ -1,10 +1,10 @@
 import { scaleLinear, scaleTime, scaleBand } from 'd3-scale';
-import { getXDomain, getYDomain } from '../utils/domains';
+import { getXDomain, getYDomain } from '@/common/utils/domains';
 import {
   ChartInternalShallowDataShape,
   ChartInternalNestedDataShape
 } from '../data';
-import { uniqueBy } from '../utils/array';
+import { uniqueBy } from '@/common/utils/array';
 
 interface ScaleConfig {
   type: 'category' | 'value' | 'time' | 'duration';

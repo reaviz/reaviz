@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
-import { wrapText } from '../common/utils/wrapText';
-import { DEFAULT_TRANSITION } from '../common/Motion';
+import { wrapText } from '@/common/utils/wrapText';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface VennLabelProps {
   /**

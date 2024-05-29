@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  singleDateData
-} from '../../demo';
+import { singleDateData } from '../../demo';
 import { AreaChart } from './AreaChart';
 import {
   Area,
@@ -11,7 +9,7 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
-import { ScatterPoint } from '../ScatterPlot';
+import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 
 export default {
@@ -28,81 +26,81 @@ export default {
 };
 
 export const On = () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      series={<AreaSeries symbols={<PointSeries show={true} />} />}
-    />
-  );
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={<AreaSeries symbols={<PointSeries show={true} />} />}
+  />
+);
 
 export const Off = () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      series={<AreaSeries symbols={<PointSeries show={false} />} />}
-    />
-  );
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={<AreaSeries symbols={<PointSeries show={false} />} />}
+  />
+);
 
 export const OnHover = () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      series={<AreaSeries symbols={<PointSeries show="hover" />} />}
-    />
-  );
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={<AreaSeries symbols={<PointSeries show="hover" />} />}
+  />
+);
 
 export const OnlyFirst = () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      series={<AreaSeries symbols={<PointSeries show="first" />} />}
-    />
-  );
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={<AreaSeries symbols={<PointSeries show="first" />} />}
+  />
+);
 
 export const OnlyLast = () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      series={<AreaSeries symbols={<PointSeries show="last" />} />}
-    />
-  );
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={<AreaSeries symbols={<PointSeries show="last" />} />}
+  />
+);
 
 export const Shapes = () => (
-    <AreaChart
-      width={350}
-      height={250}
-      data={singleDateData}
-      series={
-        <AreaSeries
-          symbols={
-            <PointSeries
-              show={true}
-              point={
-                <ScatterPoint
-                  symbol={() => {
-                    const d = symbol().type(symbolStar).size(175)();
+  <AreaChart
+    width={350}
+    height={250}
+    data={singleDateData}
+    series={
+      <AreaSeries
+        symbols={
+          <PointSeries
+            show={true}
+            point={
+              <ScatterPoint
+                symbol={() => {
+                  const d = symbol().type(symbolStar).size(175)();
 
-                    return (
-                      <path
-                        d={d!}
-                        style={{
-                          fill: 'lime',
-                          stroke: 'purple',
-                          strokeWidth: 1.5
-                        }}
-                      />
-                    );
-                  }}
-                />
-              }
-            />
-          }
-        />
-      }
-    />
-  );
+                  return (
+                    <path
+                      d={d!}
+                      style={{
+                        fill: 'lime',
+                        stroke: 'purple',
+                        strokeWidth: 1.5
+                      }}
+                    />
+                  );
+                }}
+              />
+            }
+          />
+        }
+      />
+    }
+  />
+);

@@ -6,19 +6,19 @@ import {
   ChartDataShape,
   buildNestedChartData,
   ChartNestedDataShape
-} from '../common/data';
+} from '@/common/data';
 import { scaleBand, scalePoint } from 'd3-scale';
-import { getYDomain } from '../common/utils/domains';
+import { getYDomain } from '@/common/utils/domains';
 import { RadialBarSeries, RadialBarSeriesProps } from './RadialBarSeries';
 import {
   ChartProps,
   ChartContainer,
   ChartContainerChildProps
-} from '../common/containers';
+} from '@/common/containers';
 import { CloneElement } from 'reablocks';
-import { RadialAxis, RadialAxisProps } from '../common/Axis/RadialAxis';
-import { getRadialYScale } from '../common/scales';
-import { uniqueBy } from '../common/utils/array';
+import { RadialAxis, RadialAxisProps } from '@/common/Axis/RadialAxis';
+import { getRadialYScale } from '@/common/scales';
+import { uniqueBy } from '@/common/utils/array';
 
 export interface RadialBarChartProps extends ChartProps {
   /**

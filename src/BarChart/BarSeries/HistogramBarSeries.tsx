@@ -1,12 +1,8 @@
 import React, { FC } from 'react';
 import { BarSeriesProps, BarSeries } from './BarSeries';
-import {
-  ChartTooltip,
-  TooltipTemplate,
-  TooltipArea
-} from '../../common/Tooltip';
-import { formatValue } from '../../common/utils/formatting';
-import { schemes } from '../../common/color';
+import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+import { schemes } from '@/common/color';
 
 export const HistogramBarSeries: FC<Partial<BarSeriesProps>> = ({
   type,

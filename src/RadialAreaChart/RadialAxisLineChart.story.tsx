@@ -6,7 +6,7 @@ import {
   RadialAxisTickLabel,
   RadialAxisTickLine,
   RadialAxisTickSeries
-} from '../common/Axis';
+} from '@/common/Axis';
 import { RadialAreaChart } from './RadialAreaChart';
 import {
   RadialArea,
@@ -66,7 +66,9 @@ export const SemiCircleMultiSeries = () => (
     data={multiCategory}
     height={500}
     width={500}
-    series={<RadialAreaSeries area={null} type="grouped" interpolation="linear" />}
+    series={
+      <RadialAreaSeries area={null} type="grouped" interpolation="linear" />
+    }
     axis={<RadialAxis type="category" />}
     startAngle={-0.5 * Math.PI}
     endAngle={0.5 * Math.PI}

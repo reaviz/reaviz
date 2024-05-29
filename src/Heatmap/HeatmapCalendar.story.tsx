@@ -8,7 +8,7 @@ import {
   heatmapCalendarOffsetData
 } from '../../demo';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
-import { ChartTooltip, formatValue } from '../common';
+import { ChartTooltip, formatValue } from '@/common';
 
 export default {
   title: 'Charts/Heatmap/Calendar',
@@ -60,11 +60,10 @@ export const MultiMonthCalendar = () => (
 );
 
 export const SelectCell = () => {
-
   const [activePoints, setActivePoints] = useState<any | null>(null);
 
   return (
-    <div style={{width:'300px'}}>
+    <div style={{ width: '300px' }}>
       <CalendarHeatmap
         height={115}
         width={100}
@@ -73,9 +72,12 @@ export const SelectCell = () => {
         series={
           <HeatmapSeries
             padding={0.3}
-            colorScheme={(data, index, active) => (
-              data.metadata.date.valueOf() === active?.[0]?.metadata.date.valueOf() ? "red" : "blue"
-            )}
+            colorScheme={(data, index, active) =>
+              data.metadata.date.valueOf() ===
+              active?.[0]?.metadata.date.valueOf()
+                ? 'red'
+                : 'blue'
+            }
             selections={activePoints}
             cell={
               <HeatmapCell
@@ -89,7 +91,10 @@ export const SelectCell = () => {
                   />
                 }
                 onClick={(e) => {
-                  if (activePoints?.[0]?.metadata.date.valueOf() === e.value?.metadata.date.valueOf()) {
+                  if (
+                    activePoints?.[0]?.metadata.date.valueOf() ===
+                    e.value?.metadata.date.valueOf()
+                  ) {
                     setActivePoints(null);
                   } else {
                     setActivePoints([e.value]);
@@ -103,4 +108,4 @@ export const SelectCell = () => {
       <div>Selected Date:{activePoints?.[0]?.metadata.date.toDateString()}</div>
     </div>
   );
-}
+};

@@ -7,7 +7,7 @@ import {
   formatValue,
   getAriaLabel,
   getColor
-} from '../common';
+} from '@/common';
 import { motion } from 'framer-motion';
 import classNames from 'classnames';
 import css from './BarListSeries.module.css';
@@ -158,7 +158,10 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
             onMouseLeave={() => onItemMouseLeave?.(d)}
             onClick={() => onItemClick?.(d)}
           >
-            <label title={label} className={classNames(css.label, labelClassName)}>
+            <label
+              title={label}
+              className={classNames(css.label, labelClassName)}
+            >
               {label}
             </label>
             {renderBar(d, i)}

@@ -1,12 +1,8 @@
 import React from 'react';
 import { medDateData, multiDateData } from '../../demo';
-import {
-  LinearValueMarker,
-  RadialGradient,
-  RadialValueMarker
-} from '../common';
-import { RadialArea, RadialAreaSeries } from '../RadialAreaChart';
-import { RadialAreaChart } from '../RadialAreaChart';
+import { LinearValueMarker, RadialGradient, RadialValueMarker } from '@/common';
+import { RadialArea, RadialAreaSeries } from '@/RadialAreaChart';
+import { RadialAreaChart } from '@/RadialAreaChart';
 import { AreaChart } from './AreaChart';
 import { AreaSeries } from './AreaSeries';
 
