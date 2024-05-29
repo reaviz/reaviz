@@ -41,9 +41,19 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
         .size([2 * Math.PI, rootHierarchy.height + 1])
         (rootHierarchy);
 
-      root.each((d: any) => d.current = d);
+      const nodes = [];
+      const getAllNodes = (node) => {
+        if (node?.parent) {
+          // Don't add root node
+          nodes.push(node);
+        }
+        for (let child of node?.children || []) {
+          getAllNodes(child);
+        }
+      };
 
-      return root;
+      getAllNodes(root);
+      return nodes;
     },
     [data]
   );
@@ -51,14 +61,13 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
   const renderChart = useCallback(
     ({ chartWidth, chartHeight, ...rest }: ChartContainerChildProps) => {
       const root = getData();
-      const res = root.descendants().slice(1);
 
       return (
         <CloneElement<SunburstSeriesProps>
           element={series}
           {...rest}
           id={`${id || rest.id}-series`}
-          data={res}
+          data={root}
           width={chartWidth}
           height={chartHeight}
         />
