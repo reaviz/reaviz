@@ -1,3 +1,6 @@
+# 15.15.5 - 5/29/24
+- [fix] fix paths for types
+
 # 15.15.4 - 5/29/24
 - [chore] upgrade deps
 - [chore] publish stories and docs
