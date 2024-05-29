@@ -21,3 +21,4 @@ export * from './BarList';
 export * from './Meter';
 export * from './RadarChart';
 export * from './FunnelChart';
+export * from './SunburstChart';
