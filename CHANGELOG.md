@@ -1,3 +1,8 @@
+# 15.15.4 - 5/29/24
+- [chore] upgrade deps
+- [chore] publish stories and docs
+- [chore] repath files
+
 # 15.15.3 - 5/9/24
 - [feature] add format title on hover label #218
 
