@@ -14,7 +14,7 @@ function replacePaths() {
     const code = fs.readFileSync(file, { encoding: 'utf-8' });
 
     const output = rewritePaths(code, path => {
-      if (path.startsWith('./') || path.startsWith('../') || path.startsWith('@/')) {
+      if (path.startsWith('./') || path.startsWith('../') || path.startsWith('@/') || path.startsWith('@demo')) {
         console.info(`Replacing ${path} with reaviz`);
         return 'reaviz';
       }

@@ -3,7 +3,7 @@ import {
   categoryData,
   largeSignalChartData,
   singleDateData
-} from '../../../demo';
+} from 'reaviz-data-utils';
 import { Bar, BarChart, BarSeries } from '@/BarChart';
 import { Bubble, BubbleChart, BubbleSeries } from '@/BubbleChart';
 import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';

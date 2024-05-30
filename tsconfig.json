@@ -28,7 +28,7 @@
     "emitDecoratorMetadata": true,
     "ignoreDeprecations": "5.0",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
     },
     "types": [
       "node",

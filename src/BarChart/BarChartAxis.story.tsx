@@ -1,6 +1,6 @@
 import React from 'react';
 import { StackedBarChart } from './StackedBarChart';
-import { binnedDateData } from '../../demo';
+import { binnedDateData } from 'reaviz-data-utils';
 import {
   Bar,
   StackedBarSeries,
