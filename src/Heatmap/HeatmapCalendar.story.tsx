@@ -6,7 +6,7 @@ import {
   febHeatMapData,
   marchHeatMapData,
   heatmapCalendarOffsetData
-} from '@demo/index';
+} from 'reaviz-data-utils';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 import { ChartTooltip, formatValue } from '@/common';
 

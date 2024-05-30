@@ -1,5 +1,5 @@
 import React from 'react';
-import { medDateData, multiDateData } from '@demo/index';
+import { medDateData, multiDateData } from 'reaviz-data-utils';
 import { LinearValueMarker, RadialGradient, RadialValueMarker } from '@/common';
 import { RadialArea, RadialAreaSeries } from '@/RadialAreaChart';
 import { RadialAreaChart } from '@/RadialAreaChart';

@@ -2,7 +2,7 @@ import { buildShallowChartData, ChartInternalShallowDataShape, ChartShallowDataS
 import { scaleLinear, scaleBand, scaleTime } from 'd3-scale';
 import { range } from 'd3-array';
 import { getRadialYScale } from '../../src/common/scales';
-import { randomNumber } from '../../demo';
+import { randomNumber } from 'reaviz-data-utils';
 import moment from 'moment';
 
 export const ARC_COUNT = 12;

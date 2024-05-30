@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { PieChart } from './PieChart';
-import { categoryData, randomNumber } from '@demo/index';
+import { categoryData, randomNumber } from 'reaviz-data-utils';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { Gradient } from '@/common/Gradient';
 

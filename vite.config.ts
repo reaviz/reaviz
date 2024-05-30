@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) =>
         react(),
         dts({
           insertTypesEntry: true,
-          include: ['src', 'demo']
+          include: ['src']
         }),
         checker({
           typescript: true
@@ -43,7 +43,6 @@ export default defineConfig(({ mode }) =>
       resolve: {
         alias: {
           '@': path.resolve(__dirname, './src'),
-          '@demo': path.resolve(__dirname, './demo'),
         },
       },
       build: {

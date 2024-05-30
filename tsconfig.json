@@ -29,7 +29,6 @@
     "ignoreDeprecations": "5.0",
     "paths": {
       "@/*": ["./src/*"],
-      "@demo/*": ["./demo/*"]
     },
     "types": [
       "node",

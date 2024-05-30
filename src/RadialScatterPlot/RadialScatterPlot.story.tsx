@@ -3,7 +3,7 @@ import {
   largeSignalChartData,
   medSignalChartData,
   categoryData
-} from '@demo/index';
+} from 'reaviz-data-utils';
 import { RadialScatterPlot } from './RadialScatterPlot';
 import { RadialScatterSeries, RadialScatterPoint } from './RadialScatterSeries';
 import {

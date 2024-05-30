@@ -7,7 +7,7 @@ import {
   binnedDateData,
   binnedDatePositiveOnly,
   binnedDateNegativeOnly
-} from '@demo/index';
+} from 'reaviz-data-utils';
 import chroma from 'chroma-js';
 import {
   BarSeries,

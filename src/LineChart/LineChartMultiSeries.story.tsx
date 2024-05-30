@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { multiDateData, longMultiDateData } from '@demo/index';
+import { multiDateData, longMultiDateData } from 'reaviz-data-utils';
 import { LineChart } from './LineChart';
 import {
   StackedAreaChart,

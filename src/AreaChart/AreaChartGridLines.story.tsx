@@ -1,5 +1,5 @@
 import Reac from 'react';
-import { singleDateData } from '@demo/index';
+import { singleDateData } from 'reaviz-data-utils';
 import { AreaChart } from './AreaChart';
 import { GridlineSeries, Gridline } from '@/common/Gridline';
 import {

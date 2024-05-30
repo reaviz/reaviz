@@ -8,7 +8,7 @@ import {
   sankeyLinks,
   simpleSankeyNodes,
   simpleSankeyLinks
-} from '@demo/index';
+} from 'reaviz-data-utils';
 import { SankeyLabel } from './SankeyLabel';
 
 const colorScheme = chroma

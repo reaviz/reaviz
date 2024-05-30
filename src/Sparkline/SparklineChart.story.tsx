@@ -6,7 +6,7 @@ import {
   smallDateData,
   sonarData,
   sonarDataEmpties
-} from '@demo/index';
+} from 'reaviz-data-utils';
 import { SparklineChart } from './SparklineChart';
 import { AreaSparklineChart } from './AreaSparklineChart';
 import { BarSparklineChart } from './BarSparklineChart';

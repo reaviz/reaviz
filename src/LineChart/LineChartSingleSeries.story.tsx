@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import { timeDay } from 'd3-time';
-import { singleDateData, largeDateData, randomNumber } from '@demo/index';
+import { singleDateData, largeDateData, randomNumber } from 'reaviz-data-utils';
 import { LineChart } from './LineChart';
 import { Line } from '@/AreaChart';
 import { LinearXAxisTickSeries, LinearXAxis } from '@/common/Axis/LinearAxis';
