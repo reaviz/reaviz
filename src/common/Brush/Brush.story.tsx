@@ -6,7 +6,7 @@ import {
   generateDate,
   signalStageData,
   signalStages
-} from '../../../demo';
+} from 'reaviz-data-utils';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,

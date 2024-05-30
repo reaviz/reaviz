@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mask } from './Mask';
 import { Area, AreaChart, AreaSeries } from '@/AreaChart';
-import { singleDateData } from '../../../demo';
+import { singleDateData } from 'reaviz-data-utils';
 import { Stripes } from './Stripes';
 
 export default {

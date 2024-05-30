@@ -1,5 +1,9 @@
 import { RadialBarChart } from './RadialBarChart';
-import { largeCategoryData, medDateData, multiCategory } from '../../demo';
+import {
+  largeCategoryData,
+  medDateData,
+  multiCategory
+} from 'reaviz-data-utils';
 import { RadialBarSeries, RadialBar, RadialGuideBar } from './RadialBarSeries';
 import {
   RadialAxis,

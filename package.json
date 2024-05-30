@@ -29,7 +29,8 @@
       "types": "./dist/index.d.ts"
     },
     "./docs.json": "./dist/docs.json",
-    "./stories/*": "./dist/stories/*"
+    "./stories/*": "./dist/stories/*",
+    "./demo/*": "./dist/demo/*"
   },
   "browser": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -100,6 +101,7 @@
     "reablocks": "^7.9.4",
     "react-cool-dimensions": "^3.0.1",
     "react-fast-compare": "^3.2.1",
+    "reaviz-data-utils": "^0.0.2",
     "safe-identifier": "^0.4.2",
     "transformation-matrix": "^2.9.0"
   },
