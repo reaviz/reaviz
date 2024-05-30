@@ -2,18 +2,18 @@ import React from 'react';
 import { RadialAxis } from './RadialAxis';
 import { scaleTime } from 'd3-scale';
 import { extent, range } from 'd3-array';
-import moment from 'moment';
 import {
   RadialAxisTickSeries,
   RadialAxisTick,
   RadialAxisTickLabel
 } from './RadialAxisTickSeries';
+import { startOfDay, subHours, addHours, format } from 'date-fns';
 
 const xScale = (() => {
-  const date = moment().subtract(1, 'day').startOf('day');
+  const date = startOfDay(subHours(new Date(), 1));
 
   const data = range(13).map((i) => ({
-    key: date.clone().add(i, 'hour').toDate()
+    key: addHours(date, i)
   }));
 
   const domain = extent<{ key: Date }, Date>(data, (d) => d.key) as Date[];
@@ -43,9 +43,7 @@ export const Simple = () => (
               tick={
                 <RadialAxisTick
                   label={
-                    <RadialAxisTickLabel
-                      format={(d) => moment(d).format('h a')}
-                    />
+                    <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
                   }
                 />
               }
