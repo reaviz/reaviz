@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) =>
         react(),
         dts({
           insertTypesEntry: true,
-          include: ['src']
+          include: ['src', 'demo']
         }),
         checker({
           typescript: true

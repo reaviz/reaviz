@@ -29,7 +29,8 @@
       "types": "./dist/index.d.ts"
     },
     "./docs.json": "./dist/docs.json",
-    "./stories/*": "./dist/stories/*"
+    "./stories/*": "./dist/stories/*",
+    "./demo/*": "./dist/demo/*"
   },
   "browser": "dist/index.js",
   "typings": "dist/index.d.ts",

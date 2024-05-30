@@ -1,6 +1,5 @@
 import { Fragment, useState } from 'react';
 import { timeDay } from 'd3-time';
-import moment from 'moment';
 import { singleDateData, largeDateData, randomNumber } from '../../demo';
 import { LineChart } from './LineChart';
 import { Line } from '@/AreaChart';
@@ -87,6 +86,7 @@ export const LiveUpdating = () => <LiveUpdatingStory />;
 
 let interval;
 let offset = 0;
+const startDate = new Date('2020-02-29T08:00:00.000Z');
 const LiveUpdatingStory = () => {
   const [data, setData] = useState([...singleDateData]);
 
@@ -96,7 +96,7 @@ const LiveUpdatingStory = () => {
         ...data,
         {
           id: randomNumber(1, 10000),
-          key: moment('2020-02-29T08:00:00.000Z').add(++offset, 'day').toDate(),
+          key: new Date(startDate.getTime() + ++offset * 24 * 60 * 60 * 1000),
           data: randomNumber(1, 20)
         }
       ];
