@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { largeDateData, largeSignalChartData } from '../../../demo';
+import { largeDateData, largeSignalChartData } from 'reaviz-data-utils';
 import { LineChart, LineSeries } from '@/LineChart';
 import { ChartZoomPan, ZoomPan } from '@/common/ZoomPan';
 import { ScatterPlot, ScatterSeries, ScatterPoint } from '@/ScatterPlot';

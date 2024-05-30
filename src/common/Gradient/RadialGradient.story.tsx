@@ -6,7 +6,7 @@ import {
   RadialAreaChart,
   RadialAreaSeries
 } from '@/RadialAreaChart';
-import { categoryData } from '../../../demo';
+import { categoryData } from 'reaviz-data-utils';
 import { RadialAxis } from '@/common/Axis/RadialAxis';
 
 export default {

@@ -3,7 +3,7 @@ import {
   histogramNumberData,
   medDateData,
   medSignalChartData
-} from '../../demo';
+} from 'reaviz-data-utils';
 import {
   RadialAxis,
   RadialValueMarker,

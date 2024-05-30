@@ -1,7 +1,7 @@
 import React from 'react';
 import { Gradient } from './Gradient';
 import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
-import { singleDateData } from '../../../demo';
+import { singleDateData } from 'reaviz-data-utils';
 import { GradientStop } from './GradientStop';
 import { LineChart, LineSeries } from '@/LineChart';
 

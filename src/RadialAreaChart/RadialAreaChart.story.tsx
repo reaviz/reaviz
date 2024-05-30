@@ -1,5 +1,5 @@
 import { RadialAreaChart } from './RadialAreaChart';
-import { medDateData, categoryData, multiCategory } from '../../demo';
+import { medDateData, categoryData, multiCategory } from 'reaviz-data-utils';
 import {
   RadialAreaSeries,
   RadialArea,
