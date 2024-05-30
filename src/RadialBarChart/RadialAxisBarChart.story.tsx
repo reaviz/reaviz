@@ -1,5 +1,5 @@
-import moment from 'moment';
 import { medDateData, multiCategory } from 'reaviz-data-utils';
+import { format } from 'date-fns';
 import {
   RadialAxis,
   RadialAxisArcSeries,
@@ -74,7 +74,7 @@ export const Quarter = () => (
                 line={<RadialAxisTickLine position="inside" />}
                 label={
                   <RadialAxisTickLabel
-                    format={(f) => moment(new Date(f)).format('M/D')}
+                    format={(f) => format(new Date(f), 'M/d')}
                   />
                 }
               />
@@ -111,7 +111,7 @@ export const Custom = () => (
                 line={<RadialAxisTickLine position="inside" />}
                 label={
                   <RadialAxisTickLabel
-                    format={(f) => moment(new Date(f)).format('M/D')}
+                    format={(f) => format(new Date(f), 'M/d')}
                   />
                 }
               />

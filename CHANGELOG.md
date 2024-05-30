@@ -1,3 +1,6 @@
+# 15.15.6 - 5/30/24
+- [chore] extract demo data to separate repo #226
+
 # 15.15.5 - 5/29/24
 - [fix] fix paths for types
 
