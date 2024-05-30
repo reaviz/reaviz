@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
-import { multiDateData, singleDateData, randomNumber } from '../../demo';
+import { multiDateData, singleDateData, randomNumber } from '@demo/index';
 import { AreaChart } from './AreaChart';
 import {
   Area,

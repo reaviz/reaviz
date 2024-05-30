@@ -6,7 +6,7 @@ import {
   smallDateData,
   sonarData,
   sonarDataEmpties
-} from '../../demo';
+} from '@demo/index';
 import { SparklineChart } from './SparklineChart';
 import { AreaSparklineChart } from './AreaSparklineChart';
 import { BarSparklineChart } from './BarSparklineChart';

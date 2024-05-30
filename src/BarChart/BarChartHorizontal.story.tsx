@@ -14,7 +14,7 @@ import {
   largeCategoryData,
   nonZeroCategoryData,
   durationCategoryData
-} from '../../demo';
+} from '@demo/index';
 import {
   HistogramBarSeries,
   MarimekkoBarSeries,

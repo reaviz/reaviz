@@ -1,5 +1,5 @@
 import { Heatmap } from './Heatmap';
-import { heatmapSimpleData } from '../../demo';
+import { heatmapSimpleData } from '@demo/index';
 import { SequentialLegend } from '@/common/legends/SequentialLegend/SequentialLegend';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 import { getYScale } from '@/common/scales';

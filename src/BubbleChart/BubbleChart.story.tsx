@@ -2,16 +2,16 @@ import { BubbleChart } from './BubbleChart';
 import { ChartShallowDataShape } from '@/common/data';
 import { BubbleSeries } from './BubbleSeries';
 import { range } from 'd3-array';
-import { randomNumber } from '../../demo';
+import { randomNumber } from '@demo/index';
 import { Bubble } from './Bubble';
 import { Gradient as GradientBG } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 import { BubbleLabel } from './BubbleLabel';
 
-import oktaLogo from '../../demo/okta.svg';
-import awsLogo from '../../demo/aws.svg';
-import twilloLogo from '../../demo/twillo.svg';
-import sendgridLogo from '../../demo/sendgrid.svg';
+import oktaLogo from '@demo/okta.svg';
+import awsLogo from '@demo/aws.svg';
+import twilloLogo from '@demo/twillo.svg';
+import sendgridLogo from '@demo/sendgrid.svg';
 
 const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },

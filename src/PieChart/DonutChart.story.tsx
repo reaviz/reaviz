@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { PieChart } from './PieChart';
-import { categoryData, randomNumber } from '../../demo';
+import { categoryData, randomNumber } from '@demo/index';
 import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { Gradient } from '@/common/Gradient';
 

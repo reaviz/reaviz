@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
-import { multiDateData, randomNumber, longMultiDateData } from '../../demo';
+import { multiDateData, randomNumber, longMultiDateData } from '@demo/index';
 import { AreaChart } from './AreaChart';
 import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
 import { StackedAreaChart } from './StackedAreaChart';
@@ -79,7 +79,7 @@ export const StackedNormalized = () => (
 );
 
 const LiveUpdatingStory = () => {
-  const [data, setData] = useState(multiDateData.map(d => ({ ...d })));
+  const [data, setData] = useState(multiDateData.map((d) => ({ ...d })));
 
   const updateData = () => {
     const newData = [...data];

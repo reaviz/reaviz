@@ -1,5 +1,5 @@
 import { RadialGauge } from './RadialGauge';
-import { categoryData, categoryDataStackedArcs } from '../../demo';
+import { categoryData, categoryDataStackedArcs } from '@demo/index';
 import {
   RadialGaugeArc,
   RadialGaugeSeries,

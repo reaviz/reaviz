@@ -3,7 +3,7 @@ import {
   histogramNumberData,
   medDateData,
   medSignalChartData
-} from '../../demo';
+} from '@demo/index';
 import {
   RadialAxis,
   RadialValueMarker,

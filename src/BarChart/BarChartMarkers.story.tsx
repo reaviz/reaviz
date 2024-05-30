@@ -1,5 +1,5 @@
 import React from 'react';
-import { categoryData, medDateData } from '../../demo';
+import { categoryData, medDateData } from '@demo/index';
 import {
   LinearXAxis,
   LinearYAxis,

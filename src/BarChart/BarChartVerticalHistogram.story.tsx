@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { medDateData, histogramNumberData } from '../../demo';
+import { medDateData, histogramNumberData } from '@demo/index';
 import { timeWeek } from 'd3-time';
 import {
   Bar,

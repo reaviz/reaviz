@@ -4,7 +4,7 @@ import {
   categoryData,
   largeCategoryData,
   nonZeroCategoryData
-} from '../../demo';
+} from '@demo/index';
 import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
 import { schemes } from '@/common/color';
 import chroma from 'chroma-js';

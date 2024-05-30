@@ -1,6 +1,6 @@
 import React from 'react';
 import { BarChart } from './BarChart';
-import { categoryData } from '../../demo';
+import { categoryData } from '@demo/index';
 import { GridlineSeries, Gridline } from '@/common/Gridline';
 import {
   Bar,

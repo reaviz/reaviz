@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { ScatterPlot } from './ScatterPlot';
-import { largeSignalChartData } from '../../demo/signals';
-import { randomNumber, singleDateData } from '../../demo';
+import { largeSignalChartData } from '@demo/signals';
+import { randomNumber, singleDateData } from '@demo/index';
 import { ScatterSeries, ScatterPoint } from './ScatterSeries';
 import {
   LinearYAxis,

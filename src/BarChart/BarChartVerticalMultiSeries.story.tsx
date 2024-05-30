@@ -2,7 +2,7 @@ import { BarChart } from './BarChart';
 import { MarimekkoChart } from './MarimekkoChart';
 import { StackedBarChart } from './StackedBarChart';
 import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
-import { multiCategory, binnedDateData } from '../../demo';
+import { multiCategory, binnedDateData } from '@demo/index';
 import chroma from 'chroma-js';
 import {
   BarSeries,

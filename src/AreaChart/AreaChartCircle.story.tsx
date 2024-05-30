@@ -1,5 +1,5 @@
 import React from 'react';
-import { singleDateData } from '../../demo';
+import { singleDateData } from '@demo/index';
 import { AreaChart } from './AreaChart';
 import {
   Area,

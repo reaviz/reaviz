@@ -1,6 +1,6 @@
 import React from 'react';
 import { StackedBarChart } from './StackedBarChart';
-import { binnedDateData } from '../../demo';
+import { binnedDateData } from '@demo/index';
 import {
   Bar,
   StackedBarSeries,

@@ -6,7 +6,7 @@ import {
   febHeatMapData,
   marchHeatMapData,
   heatmapCalendarOffsetData
-} from '../../demo';
+} from '@demo/index';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 import { ChartTooltip, formatValue } from '@/common';
 

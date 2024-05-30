@@ -1,5 +1,5 @@
 import React from 'react';
-import { largeSignalChartData, categoryData } from '../../../../demo';
+import { largeSignalChartData, categoryData } from '@demo/index';
 import { ScatterPlot } from '@/ScatterPlot';
 import { BarChart } from '@/BarChart';
 import {

@@ -1,4 +1,4 @@
-import { medDateData, multiCategory } from '../../demo';
+import { medDateData, multiCategory } from '@demo/index';
 import {
   RadialAxis,
   RadialAxisArcSeries,

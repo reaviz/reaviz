@@ -1,5 +1,5 @@
 import { RadialAreaChart } from './RadialAreaChart';
-import { medDateData, categoryData, multiCategory } from '../../demo';
+import { medDateData, categoryData, multiCategory } from '@demo/index';
 import {
   RadialAreaSeries,
   RadialArea,

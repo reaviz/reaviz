@@ -3,7 +3,7 @@ import {
   largeSignalChartData,
   medSignalChartData,
   categoryData
-} from '../../demo';
+} from '@demo/index';
 import { RadialScatterPlot } from './RadialScatterPlot';
 import { RadialScatterSeries, RadialScatterPoint } from './RadialScatterSeries';
 import {

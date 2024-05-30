@@ -8,7 +8,7 @@ import {
   sankeyLinks,
   simpleSankeyNodes,
   simpleSankeyLinks
-} from '../../demo';
+} from '@demo/index';
 import { SankeyLabel } from './SankeyLabel';
 
 const colorScheme = chroma
@@ -72,14 +72,14 @@ export const LabelsInsideContainer = () => (
         <SankeyNode
           key={`node-${i}`}
           {...node}
-          label={<SankeyLabel ellipsis='none' />}
+          label={<SankeyLabel ellipsis="none" />}
           onClick={() => onNodeClick(node.title)}
         />
       ))}
       links={simpleSankeyLinks.map((link, i) => (
         <SankeyLink key={`link-${i}`} {...link} />
       ))}
-  />
+    />
   </div>
 );
 
@@ -95,14 +95,14 @@ export const FitLongLabels = () => (
           key={`node-${i}`}
           {...node}
           title={node?.title.repeat(5)}
-          label={<SankeyLabel ellipsis='auto' />}
+          label={<SankeyLabel ellipsis="auto" />}
           onClick={() => onNodeClick(node.title)}
         />
       ))}
       links={simpleSankeyLinks.map((link, i) => (
         <SankeyLink key={`link-${i}`} {...link} />
       ))}
-  />
+    />
   </div>
 );
 

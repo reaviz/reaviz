@@ -7,7 +7,7 @@ import {
   binnedDateData,
   binnedDatePositiveOnly,
   binnedDateNegativeOnly
-} from '../../demo';
+} from '@demo/index';
 import chroma from 'chroma-js';
 import {
   BarSeries,
