@@ -1,40 +1,7 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { writeFileSync } from 'fs';
 import fg from 'fast-glob';
 import { resolve } from 'path';
-import { parse, builtinResolvers } from 'react-docgen';
-
-const {
-  ChainResolver,
-  FindAllDefinitionsResolver,
-  FindAnnotatedDefinitionsResolver,
-} = builtinResolvers;
-
-const resolver = new ChainResolver(
-  [new FindAnnotatedDefinitionsResolver(), new FindAllDefinitionsResolver()],
-  { chainingLogic: ChainResolver.Logic.ALL },
-);
-
-const defaultPlugins = [
-  'jsx',
-  'asyncDoExpressions',
-  'decimal',
-  'decorators',
-  'decoratorAutoAccessors',
-  'destructuringPrivate',
-  'doExpressions',
-  'explicitResourceManagement',
-  'exportDefaultFrom',
-  'functionBind',
-  'functionSent',
-  'importAssertions',
-  'importReflection',
-  'moduleBlocks',
-  'partialApplication',
-  ['pipelineOperator', { proposal: 'minimal' }],
-  'recordAndTuple',
-  'regexpUnicodeSets',
-  'throwExpressions',
-];
+import docgen from 'react-docgen-typescript';
 
 /**
  * Builds the doc types.
@@ -46,25 +13,16 @@ function buildDocs() {
   let count = 0;
   let fail = 0;
 
+  const options = {
+    savePropValueAsString: true
+  };
+  const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', options);
+
   files.forEach((file) => {
     console.log('Reading', file);
 
     try {
-      const code = readFileSync(file, { encoding: 'utf-8' });
-      const documentation = parse(code, {
-        // Stolen from website
-        // https://github.com/reactjs/react-docgen/blob/main/packages/website/src/components/playground/Playground.tsx#L85
-        resolver,
-        babelOptions: {
-          babelrc: false,
-          babelrcRoots: false,
-          configFile: false,
-          filename: 'playground.js',
-          parserOpts: {
-            plugins: [...defaultPlugins, 'typescript'],
-          },
-        }
-      });
+      const documentation = tsConfigParser.parse(file, options);
       if (documentation) {
         result.push(...documentation);
         count++;
