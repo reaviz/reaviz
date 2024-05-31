@@ -1,3 +1,7 @@
+# 15.15.7 - 5/31/24
+- [improvement] update lib to generate docs #228
+- [chore] use date-fns instead moment #227
+
 # 15.15.6 - 5/30/24
 - [chore] extract demo data to separate repo #226
 
