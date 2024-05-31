@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "15.15.6",
+  "version": "15.15.7",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",
@@ -135,6 +135,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.4.0",
     "autoprefixer": "^10.4.19",
+    "date-fns": "^3.6.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-no-relative-import-paths": "^1.5.4",
@@ -142,7 +143,6 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.8.0",
     "fast-glob": "^3.3.2",
-    "date-fns": "^3.6.0",
     "husky": "^9.0.11",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^24.0.0",
@@ -151,8 +151,7 @@
     "postcss-preset-env": "^9.4.0",
     "prettier": "^3.2.5",
     "react": "^18.3.1",
-    "react-docgen": "^7.0.3",
-    "react-docgen-typescript-loader": "^3.7.2",
+    "react-docgen-typescript": "^2.2.2",
     "react-dom": "^18.3.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "storybook": "^8.1.4",
