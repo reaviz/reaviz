@@ -1,7 +1,5 @@
-import React, { FC, Fragment, useCallback, useMemo } from 'react';
+import React, { FC, Fragment, useCallback } from 'react';
 import { ColorSchemeType, getColor } from '@/common/color';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { arc } from 'd3-shape';
 import chroma from 'chroma-js';
 import { SunburstArc } from './SunburstArc';
 import { SunburstArcLabel } from './SunburstArcLabel';
@@ -46,7 +44,6 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   colorScheme = 'cybertron',
   animated = true
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   const radius = Math.min(width, height) / 6;
 
   const getFill = useCallback(
