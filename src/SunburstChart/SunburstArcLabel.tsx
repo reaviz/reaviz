@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import invert from 'invert-color';
 import ellipsize from 'ellipsize';
+import { motion } from 'framer-motion';
 
 export interface SunburstArcLabelProps {
   /**
@@ -32,9 +33,14 @@ export interface SunburstArcLabelProps {
    * Font family of the text.
    */
   fontFamily?: string;
+
+  /**
+   * Whether the chart is animated or not.
+   */
+  animated?: boolean;
 }
 
-export const SunburstArcLabel: FC<SunburstArcLabelProps> = ({
+export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
   data,
   fill = 'black',
   fontSize = 14,
@@ -44,19 +50,19 @@ export const SunburstArcLabel: FC<SunburstArcLabelProps> = ({
   // Get the full text and the truncated text
   // NOTE: This could use some improvement around measuring
   const fullText = data.data.key;
-  const text = ellipsize(fullText, 18);
+  const text = ellipsize(fullText, 14);
 
   // Make the fill inverted for better contrast
   fill = invert(fill, true);
 
   function labelTransform(d) {
-    const x = (((d.x0 + d.x1) / 2) * 180) / Math.PI;
-    const y = ((d.y0 + d.y1) / 2) * radius;
+    const x = (((data.x0 + data.x1) / 2) * 180) / Math.PI;
+    const y = ((data.y0 + data.y1) / 2) * radius;
     return `rotate(${x - 90}deg) translate(${y}px,0) rotate(${x < 180 ? 0 : 180}deg)`;
   }
 
   function labelVisible(d) {
-    return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.03;
+    return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.05;
   }
 
   if (!labelVisible(data)) {
@@ -64,7 +70,9 @@ export const SunburstArcLabel: FC<SunburstArcLabelProps> = ({
   }
 
   return (
-    <g
+    <motion.g
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       style={{ transform: labelTransform(data) }}
       fontFamily={fontFamily}
       fontSize={fontSize}
@@ -81,6 +89,6 @@ export const SunburstArcLabel: FC<SunburstArcLabelProps> = ({
       >
         {text}
       </text>
-    </g>
+    </motion.g>
   );
 };

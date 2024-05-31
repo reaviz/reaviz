@@ -1,8 +1,8 @@
-import React, { FC, Fragment, useCallback } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback } from 'react';
 import { ColorSchemeType, getColor } from '@/common/color';
 import chroma from 'chroma-js';
-import { SunburstArc } from './SunburstArc';
-import { SunburstArcLabel } from './SunburstArcLabel';
+import { SunburstArc, SunburstArcProps } from './SunburstArc';
+import { SunburstArcLabel, SunburstArcLabelProps } from './SunburstArcLabel';
 
 export interface SunburstSeriesProps {
   /**
@@ -34,6 +34,16 @@ export interface SunburstSeriesProps {
    * Width of the chart. Set internally by `SunburstChart`.
    */
   width: number;
+
+  /**
+   * The arc component to render.
+   */
+  arc?: ReactElement<SunburstArcProps, typeof SunburstArc>;
+
+  /**
+   * The arc label component to render.
+   */
+  label?: ReactElement<SunburstArcLabelProps, typeof SunburstArcLabel>;
 }
 
 export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
@@ -41,8 +51,8 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   data,
   height,
   width,
-  colorScheme = 'cybertron',
-  animated = true
+  colorScheme,
+  animated
 }) => {
   const radius = Math.min(width, height) / 6;
 
@@ -85,6 +95,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
             id={`${id}-${itemId}-arc`}
             fill={fill}
             radius={radius}
+            animated={animated}
             data={item}
           />
           <SunburstArcLabel
@@ -92,12 +103,20 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
             fill={fill}
             data={item}
             radius={radius}
+            animated={animated}
           />
         </Fragment>
       );
     },
-    [getFill, id, radius]
+    [animated, getFill, id, radius]
   );
 
   return <>{data.map(renderItem)}</>;
+};
+
+SunburstSeries.defaultProps = {
+  colorScheme: 'cybertron',
+  animated: true,
+  arc: <SunburstArc />,
+  label: <SunburstArcLabel />
 };
