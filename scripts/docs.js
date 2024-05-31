@@ -16,13 +16,13 @@ function buildDocs() {
   const options = {
     savePropValueAsString: true
   };
-  const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', options);
+  const docgenWithTSConfig = docgen.withCustomConfig('./tsconfig.json', options);
 
   files.forEach((file) => {
     console.log('Reading', file);
 
     try {
-      const documentation = tsConfigParser.parse(file, options);
+      const documentation = docgenWithTSConfig.parse(file, options);
       if (documentation) {
         result.push(...documentation);
         count++;
