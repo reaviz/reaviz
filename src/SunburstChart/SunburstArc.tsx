@@ -141,7 +141,12 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   const fillId = gradient ? `gradient-${id}` : fill;
 
   return (
-    <>
+    <g
+      ref={arcRef}
+      tabIndex={0}
+      aria-label={ariaLabelData}
+      role="graphics-document"
+    >
       <motion.path
         id={id}
         fill={fillId}
@@ -172,7 +177,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
           value={tooltipData}
         />
       )}
-    </>
+    </g>
   );
 };
 
