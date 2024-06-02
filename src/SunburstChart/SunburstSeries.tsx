@@ -3,6 +3,7 @@ import { ColorSchemeType, getColor } from '@/common/color';
 import chroma from 'chroma-js';
 import { SunburstArc, SunburstArcProps } from './SunburstArc';
 import { SunburstArcLabel, SunburstArcLabelProps } from './SunburstArcLabel';
+import { CloneElement } from 'reablocks';
 
 export interface SunburstSeriesProps {
   /**
@@ -52,7 +53,9 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   height,
   width,
   colorScheme,
-  animated
+  animated,
+  arc,
+  label
 }) => {
   const radius = Math.min(width, height) / 6;
 
@@ -91,14 +94,16 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
 
       return (
         <Fragment key={itemId}>
-          <SunburstArc
+          <CloneElement<SunburstArcProps>
+            element={arc}
             id={`${id}-${itemId}-arc`}
             fill={fill}
             radius={radius}
             animated={animated}
             data={item}
           />
-          <SunburstArcLabel
+          <CloneElement<SunburstArcLabelProps>
+            element={label}
             id={`${id}-${itemId}-label`}
             fill={fill}
             data={item}
@@ -108,7 +113,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         </Fragment>
       );
     },
-    [animated, getFill, id, radius]
+    [animated, arc, getFill, id, label, radius]
   );
 
   return <>{data.map(renderItem)}</>;

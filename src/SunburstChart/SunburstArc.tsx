@@ -138,7 +138,13 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     [data, tooltipLabel]
   );
 
-  const fillId = gradient ? `gradient-${id}` : fill;
+  const internalFill = useMemo(() => {
+    if (gradient) {
+      return `url(#gradient-${id})`;
+    }
+
+    return fill;
+  }, [gradient, id, fill]);
 
   return (
     <g
@@ -149,7 +155,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     >
       <motion.path
         id={id}
-        fill={fillId}
+        fill={internalFill}
         d={initial}
         initial={{ d: initial, opacity: 0 }}
         animate={{ d: animate, opacity: 1 }}
