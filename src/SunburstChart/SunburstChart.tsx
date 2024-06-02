@@ -6,7 +6,7 @@ import {
 } from '@/common/containers/ChartContainer';
 import { ChartNestedDataShape, ChartShallowDataShape } from '@/common/data';
 import { hierarchy, partition } from 'd3-hierarchy';
-import { CloneElement } from 'reablocks';
+import { CloneElement, useId } from 'reablocks';
 import { SunburstSeries, SunburstSeriesProps } from './SunburstSeries';
 
 export interface SunburstChartProps extends ChartProps {
@@ -29,34 +29,33 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
   width,
   height,
   className,
-  margins,
+  margins
 }) => {
-  const getData = useCallback(
-    () => {
-      const rootHierarchy = hierarchy<any>({ data: data }, (d) => d.data)
-        .sum((d) => d.data)
-        .sort((a, b) => b.data - a.data);
+  const newId = useId(id);
 
-      const root = partition()
-        .size([2 * Math.PI, rootHierarchy.height + 1])
-        (rootHierarchy);
+  const getData = useCallback(() => {
+    const rootHierarchy = hierarchy<any>({ data: data }, (d) => d.data)
+      .sum((d) => d.data)
+      .sort((a, b) => b.data - a.data);
 
-      const nodes = [];
-      const getAllNodes = (node) => {
-        if (node?.parent) {
-          // Don't add root node
-          nodes.push(node);
-        }
-        for (let child of node?.children || []) {
-          getAllNodes(child);
-        }
-      };
+    const root = partition().size([2 * Math.PI, rootHierarchy.height + 1])(
+      rootHierarchy
+    );
 
-      getAllNodes(root);
-      return nodes;
-    },
-    [data]
-  );
+    const nodes = [];
+    const getAllNodes = (node) => {
+      if (node?.parent) {
+        // Don't add root node
+        nodes.push(node);
+      }
+      for (let child of node?.children || []) {
+        getAllNodes(child);
+      }
+    };
+
+    getAllNodes(root);
+    return nodes;
+  }, [data]);
 
   const renderChart = useCallback(
     ({ chartWidth, chartHeight, ...rest }: ChartContainerChildProps) => {
@@ -65,20 +64,19 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
       return (
         <CloneElement<SunburstSeriesProps>
           element={series}
-          {...rest}
-          id={`${id || rest.id}-series`}
+          id={`${newId}-series`}
           data={root}
           width={chartWidth}
           height={chartHeight}
         />
       );
     },
-    [getData, id, series]
+    [getData, newId, series]
   );
 
   return (
     <ChartContainer
-      id={id}
+      id={newId}
       width={width}
       height={height}
       containerClassName={containerClassName}
