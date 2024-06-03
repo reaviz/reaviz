@@ -1,3 +1,6 @@
+# 15.17.0 - 6/3/24
+- [feature] reaviz blocks!
+
 # 15.16.0 - 6/3/24
 - [feature] Sunburst chart #225
 - [chore] expanded `NestedDataShape` to allow for infinite nesting
