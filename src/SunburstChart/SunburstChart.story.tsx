@@ -28,3 +28,18 @@ export const Gradients = () => (
     series={<SunburstSeries arc={<SunburstArc gradient={<Gradient />} />} />}
   />
 );
+
+export const NoAnimation = () => (
+  <SunburstChart
+    height={450}
+    width={450}
+    data={heatmapSimpleData}
+    series={<SunburstSeries animated={false} />}
+  />
+);
+
+export const Autosize = () => (
+  <div style={{ width: '75vw', height: '75vh', border: 'solid 1px red' }}>
+    <SunburstChart data={heatmapSimpleData} />
+  </div>
+);

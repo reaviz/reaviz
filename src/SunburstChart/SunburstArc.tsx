@@ -14,6 +14,7 @@ import { CloneElement } from 'reablocks';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import { Gradient, GradientProps } from '@/common/Gradient';
 import chroma from 'chroma-js';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface SunburstArcProps {
   /**
@@ -79,6 +80,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   data,
   cursor,
   tooltip,
+  animated,
   gradient,
   onClick,
   onMouseEnter,
@@ -147,6 +149,19 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
 
   const pathFill = gradient ? `url(#gradient-${id})` : currentFill;
 
+  const transition = useMemo(() => {
+    if (animated) {
+      return {
+        ...DEFAULT_TRANSITION
+      };
+    } else {
+      return {
+        type: false,
+        delay: 0
+      };
+    }
+  }, [animated]);
+
   return (
     <g
       ref={arcRef}
@@ -163,6 +178,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
         role="graphics-symbol"
         tabIndex={0}
         style={{ cursor }}
+        transition={transition}
         aria-label={ariaLabelData}
         onClick={(event) => onClick?.(event, data)}
         onPointerOver={pointerOver}

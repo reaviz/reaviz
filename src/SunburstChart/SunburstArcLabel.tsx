@@ -1,7 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC, useMemo } from 'react';
 import invert from 'invert-color';
 import ellipsize from 'ellipsize';
 import { motion } from 'framer-motion';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface SunburstArcLabelProps {
   /**
@@ -42,6 +43,7 @@ export interface SunburstArcLabelProps {
 
 export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
   data,
+  animated,
   fill = 'black',
   fontSize = 14,
   fontFamily = 'sans-serif',
@@ -65,6 +67,19 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
     return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.05;
   }
 
+  const transition = useMemo(() => {
+    if (animated) {
+      return {
+        ...DEFAULT_TRANSITION
+      };
+    } else {
+      return {
+        type: false,
+        delay: 0
+      };
+    }
+  }, [animated]);
+
   if (!labelVisible(data)) {
     return null;
   }
@@ -76,6 +91,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
       style={{ transform: labelTransform(data) }}
       fontFamily={fontFamily}
       fontSize={fontSize}
+      transition={transition}
     >
       <title>{fullText}</title>
       <text
