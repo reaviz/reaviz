@@ -1,0 +1,58 @@
+import { Meta, Canvas, ArgTypes } from '@storybook/addon-docs/blocks';
+import { SunburstChart, SunburstArc, SunburstArcLabel, SunburstSeries } from '../../src';
+import * as Stories from '../../src/SunburstChart/SunburstChart.story';
+
+<Meta title="Docs/Chart Types/Sunburst Chart" />
+
+# Subburst Chart
+
+---
+<br />
+<div className="doc-story">
+  <Canvas sourceState="shown" of={Stories.Simple} />
+</div>
+<br />
+
+A Sunburst Diagram is designed to display hierarchical data through the use
+of concentric circles. The central circle symbolizes the root node, with the
+hierarchy expanding outwards from this point. A segment of the inner circle has a
+hierarchical connection to those segments of the outer circle that fall within the
+angular range of the parent segment.
+
+A sunburst chart, when devoid of any hierarchical data (only one level of categories),
+bears a resemblance to a doughnut chart. However, when a sunburst chart has
+multiple levels of categories, it demonstrates the relationships between the outer and
+inner rings.
+
+## Examples
+To create a Sunburst chart, use import the `Sunburst` and give it `data`. The chart
+will automatically configure itself with the default options exposed via `props`.
+
+```jsx
+import { SunburstChart } from 'reaviz';
+
+const SunburstChart = () => (
+  <BarChart
+    height={300}
+    width={300}
+    data={[
+      { key: 'DLP', data: [ { key: 'SSH', data: 55, { key: 'Shell', data: 12 } } ] },
+      { key: 'SIEM', data: [ { key: 'SSH', data: 55, { key: 'Shell', data: 12 } } ] },
+      { key: 'Endpoint', data: [ { key: 'SSH', data: 55, { key: 'Shell', data: 12 } } ] }
+    ]}
+  />
+);
+```
+
+## API
+### [SunburstChart](https://github.com/reaviz/reaviz/blob/master/src/SunburstChart/SunburstChart.tsx)
+<ArgTypes of={SunburstChart} />
+
+### [SunburstSeries](https://github.com/reaviz/reaviz/blob/master/src/SunburstChart/SunburstSeries.tsx)
+<ArgTypes of={SunburstSeries} />
+
+### [SunburstArc](https://github.com/reaviz/reaviz/blob/master/src/SunburstChart/SunburstArc.tsx)
+<ArgTypes of={SunburstArc} />
+
+### [SunburstArcLabel](https://github.com/reaviz/reaviz/blob/master/src/SunburstChart/SunburstArcLabel.tsx)
+<ArgTypes of={SunburstArcLabel} />
