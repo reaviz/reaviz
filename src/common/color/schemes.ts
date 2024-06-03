@@ -5,7 +5,6 @@ import chroma from 'chroma-js';
  * Credits: https://gka.github.io/chroma.js/#chroma-brewer
  */
 export const schemes = {
-  cybertron: chroma.scale(['#2d60e8', '#26efb5']).correctLightness().colors(8),
   unifyviz: [
     '#4C86FF',
     '#40D3F4',
@@ -25,5 +24,6 @@ export const schemes = {
     .scale(['#4C86FF', '#26efb5'])
     .correctLightness()
     .colors(8),
+  cybertron: chroma.scale(['#2d60e8', '#26efb5']).correctLightness().colors(8),
   ...chroma.brewer
 };

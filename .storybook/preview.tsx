@@ -2,6 +2,8 @@ import theme from './theme';
 import { Preview } from '@storybook/react';
 import formatCode from './utils/formatCode';
 
+import '../src/index.css'
+
 const preview: Preview = {
   parameters: {
     layout: 'centered',
