@@ -92,7 +92,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
       );
     }
 
-    return data.data.map(renderArc);
+    return data.data.map(renderArc as any) as any;
   }, [arcGenerator, colorScheme, data, padAngle, restProps, scale, startAngle]);
 
   return <g key={id}>{stackedArcs}</g>;

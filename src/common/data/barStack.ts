@@ -49,12 +49,12 @@ function transformDataToStack(data: ChartNestedDataShape[]) {
       result[idx].metadata = value.metadata;
 
       result[idx][value.key as string] = normalizeValue(
-        value.data,
+        value.data as any,
         maxBigInteger
       );
 
       result[idx].formattedValues[value.key as string] =
-        normalizeValueForFormatting(value.data);
+        normalizeValueForFormatting(value.data as any);
     }
   }
 
