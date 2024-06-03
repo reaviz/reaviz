@@ -12,3 +12,4 @@ export * from './functions';
 export * from './array';
 export * from './size';
 export * from './wrapText';
+export * from './useHoverIntent';

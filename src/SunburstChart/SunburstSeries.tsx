@@ -4,6 +4,7 @@ import chroma from 'chroma-js';
 import { SunburstArc, SunburstArcProps } from './SunburstArc';
 import { SunburstArcLabel, SunburstArcLabelProps } from './SunburstArcLabel';
 import { CloneElement } from 'reablocks';
+import { identifier } from 'safe-identifier';
 
 export interface SunburstSeriesProps {
   /**
@@ -75,7 +76,9 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
       });
 
       // darken the color based on the depth
-      fill = chroma(fill).darken((item.depth - 1) * 0.5);
+      fill = chroma(fill)
+        .darken((item.depth - 1) * 0.5)
+        .hex();
 
       return fill;
     },
@@ -92,11 +95,13 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         ? `${item.parent.data.key}-${item.data.key}`
         : `${item.data.key}`;
 
+      const safeKey = identifier(itemId);
+
       return (
-        <Fragment key={itemId}>
+        <Fragment key={safeKey}>
           <CloneElement<SunburstArcProps>
             element={arc}
-            id={`${id}-${itemId}-arc`}
+            id={`${id}-${safeKey}-arc`}
             fill={fill}
             radius={radius}
             animated={animated}
@@ -104,7 +109,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
           />
           <CloneElement<SunburstArcLabelProps>
             element={label}
-            id={`${id}-${itemId}-label`}
+            id={`${id}-${safeKey}-label`}
             fill={fill}
             data={item}
             radius={radius}

@@ -77,8 +77,6 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   fill,
   data,
   cursor,
-  arc: arcComponent,
-  label,
   tooltip,
   gradient,
   onClick,
@@ -171,7 +169,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
         <CloneElement<GradientProps>
           element={gradient}
           id={`gradient-${id}`}
-          direction="horizontal"
+          direction="vertical"
           color={fill}
         />
       )}
