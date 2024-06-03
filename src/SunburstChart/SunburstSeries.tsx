@@ -125,7 +125,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
 };
 
 SunburstSeries.defaultProps = {
-  colorScheme: 'cybertron',
+  colorScheme: 'unify8Colors',
   animated: true,
   arc: <SunburstArc />,
   label: <SunburstArcLabel />
