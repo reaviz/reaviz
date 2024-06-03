@@ -10,13 +10,13 @@ export interface BaseChartDataShape<T> {
   id?: string;
 }
 
-export type ChartNestedDataShape = BaseChartDataShape<
-  ChartShallowDataShape<ChartDataTypes>[]
->;
-
 export type ChartShallowDataShape<
   T = ChartDataTypes | [ChartDataTypes, ChartDataTypes]
 > = BaseChartDataShape<T>;
+
+export type ChartNestedDataShape = BaseChartDataShape<
+  ChartShallowDataShape<ChartDataTypes>[] | ChartNestedDataShape[]
+>;
 
 export type ChartDataShape = ChartNestedDataShape | ChartShallowDataShape;
 

@@ -68,18 +68,18 @@ export function buildNestedChartData(
       }
 
       const x = normalizeValue(
-        isVertical ? nestedPoint.key : nestedPoint.data,
+        isVertical ? nestedPoint.key : (nestedPoint.data as any),
         maxBigInteger
       );
 
       const y = normalizeValue(
-        isVertical ? nestedPoint.data : nestedPoint.key,
+        isVertical ? nestedPoint.data : (nestedPoint.key as any),
         maxBigInteger
       );
 
       result[idx].data.push({
         key,
-        value: normalizeValueForFormatting(nestedPoint.data),
+        value: normalizeValueForFormatting(nestedPoint.data as any),
         metadata: nestedPoint.metadata,
         id: point.id,
         x,
