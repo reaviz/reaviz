@@ -1,4 +1,4 @@
-import { ChartNestedDataShape, ChartShallowDataShape } from 'reaviz';
+import { ChartNestedDataShape, ChartShallowDataShape } from '../types';
 
 export const simpleTreemapData: ChartShallowDataShape[] = [
   { key: 'Twillo', data: 25 },

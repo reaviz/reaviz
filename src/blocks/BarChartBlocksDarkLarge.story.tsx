@@ -29,7 +29,7 @@ import {
   multiCategory,
   multiCategorySmallBlock,
   multiCategoryXSmallBlock
-} from '../common/data/blocks';
+} from 'reaviz-data-utils';
 
 export default {
   title: 'Blocks/Bar Chart/Dark/Large',

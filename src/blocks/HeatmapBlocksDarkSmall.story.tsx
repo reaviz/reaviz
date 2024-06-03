@@ -16,7 +16,7 @@ import {
 import {
   heatmapSmallBlocksData,
   heatmapSmallSimpleBlocksData
-} from '../common/data/blocks';
+} from 'reaviz-data-utils';
 import { schemes } from '../common/color/schemes';
 
 export default {

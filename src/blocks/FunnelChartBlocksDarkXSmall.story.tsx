@@ -6,7 +6,7 @@ import {
   FunnelSeries,
   TooltipArea
 } from '../index';
-import { largeFunnelData, simpleFunnelData } from '../common/data/blocks';
+import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 import { schemes } from '../common/color/schemes';
 
 export default {

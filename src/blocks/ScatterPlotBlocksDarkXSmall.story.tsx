@@ -16,7 +16,7 @@ import {
   medSignalChartData,
   signalStageData,
   singleDateData
-} from '../common/data/blocks';
+} from 'reaviz-data-utils';
 
 export default {
   title: 'Blocks/Scatter Plot/Dark/X-Small',

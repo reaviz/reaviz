@@ -1,4 +1,4 @@
-import { ChartDataTypes } from 'reaviz';
+import { ChartDataTypes } from '../../types';
 
 export const areaSingleSeriesSimpleData = [
   { id: '0', key: new Date('2020-02-01T00:00:00.000Z'), data: 12 },

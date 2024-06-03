@@ -1,4 +1,4 @@
-import { ChartShallowDataShape } from 'reaviz';
+import { ChartShallowDataShape } from '../types';
 
 export const simpleBubbleData: ChartShallowDataShape[] = [
   { key: 'Okta', data: 75 },

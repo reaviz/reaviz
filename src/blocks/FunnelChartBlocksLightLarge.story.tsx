@@ -10,7 +10,7 @@ import {
 } from '../index';
 import { motion } from 'framer-motion';
 
-import { largeFunnelData, simpleFunnelData } from '../common/data/blocks';
+import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 
 export default {
   title: 'Blocks/Funnel Chart/Light/Large',

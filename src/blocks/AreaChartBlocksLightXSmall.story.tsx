@@ -27,7 +27,7 @@ import {
   areaSingleSeriesNonZeroData,
   areaSingleSeriesSimpleData,
   multiDateData
-} from '../common/data/blocks';
+} from 'reaviz-data-utils';
 
 export default {
   title: 'Blocks/Area Chart/Light/X-Small',

@@ -26,7 +26,7 @@ import {
   mediumCategoryData,
   multiCategory,
   multiCategoryXSmallBlock
-} from '../common/data/blocks';
+} from 'reaviz-data-utils';
 
 export default {
   title: 'Blocks/Bar Chart/Light/X-Small',
