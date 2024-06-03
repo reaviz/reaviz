@@ -1,3 +1,6 @@
+# 15.16.0 - 6/3/24
+- [feature] Sunburst chart #225
+
 # 15.15.7 - 5/31/24
 - [improvement] update lib to generate docs #228
 - [chore] use date-fns instead moment #227
