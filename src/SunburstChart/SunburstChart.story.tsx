@@ -52,3 +52,82 @@ export const Autosize = () => (
     <SunburstChart data={heatmapSimpleData} />
   </div>
 );
+
+export const MultiLevel = ({
+  data = [
+    {
+      key: 'Network',
+      data: [
+        {
+          key: 'Traffic',
+          data: [
+            { key: 'HTTP', data: 100 },
+            { key: 'HTTPS', data: 200 }
+          ]
+        }
+      ]
+    },
+    {
+      key: 'FileTransfer',
+      data: [
+        {
+          key: 'Protocol',
+          data: [
+            { key: 'FTP', data: 50 },
+            { key: 'SFTP', data: 70 }
+          ]
+        }
+      ]
+    },
+    {
+      key: 'Database',
+      data: [
+        {
+          key: 'Queries',
+          data: [
+            { key: 'SELECT', data: 150 },
+            { key: 'INSERT', data: 20 }
+          ]
+        }
+      ]
+    },
+    {
+      key: 'Authentication',
+      data: [
+        {
+          key: 'Methods',
+          data: [
+            { key: 'OAuth', data: 60 },
+            { key: 'SAML', data: 25 }
+          ]
+        }
+      ]
+    },
+    {
+      key: 'Storage',
+      data: [
+        {
+          key: 'Types',
+          data: [
+            { key: 'SSD', data: 300 },
+            { key: 'HDD', data: 100 }
+          ]
+        }
+      ]
+    }
+  ]
+}) => (
+  <SunburstChart
+    height={450}
+    width={450}
+    data={data}
+    series={
+      <SunburstSeries
+        colorScheme={chroma
+          .scale(['#2d60e8', '#0037b5'])
+          .correctLightness()
+          .colors(12)}
+      />
+    }
+  />
+);

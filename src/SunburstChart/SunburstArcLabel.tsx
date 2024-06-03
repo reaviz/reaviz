@@ -52,7 +52,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
   // Get the full text and the truncated text
   // NOTE: This could use some improvement around measuring
   const fullText = data.data.key;
-  const text = ellipsize(fullText, 14);
+  const text = ellipsize(fullText, 10);
 
   // Make the fill inverted for better contrast
   fill = invert(fill, true);
@@ -64,7 +64,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
   }
 
   function labelVisible(d) {
-    return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.05;
+    return (d.y1 - d.y0) * (d.x1 - d.x0) > 0.05;
   }
 
   const transition = useMemo(() => {

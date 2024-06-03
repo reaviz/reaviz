@@ -89,12 +89,15 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
     (item: any, index: number) => {
       const fill = getFill(item, index);
 
-      // Note: in the future this will probably need to be
-      // expanded to handle multiple levels
-      const itemId = item.parent
-        ? `${item.parent.data.key}-${item.data.key}`
-        : `${item.data.key}`;
+      // // Handle getting the item id recursively
+      const getItemId = (item: any): string => {
+        if (item.parent) {
+          return `${getItemId(item.parent)}-${item.data.key}`;
+        }
+        return `${item.data.key}`;
+      };
 
+      const itemId = getItemId(item);
       const safeKey = identifier(itemId);
 
       return (
