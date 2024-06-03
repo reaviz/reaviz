@@ -17,16 +17,16 @@ export default {
   }
 };
 
+const exampleColorScheme = chroma
+  .scale(['#2d60e8', '#0037b5'])
+  .correctLightness()
+  .colors(12);
+
 export const Simple = () => (
   <SunburstChart height={450} width={450} data={heatmapSimpleData} />
 );
 
-export const Gradients = ({
-  colorScheme = chroma
-    .scale(['#2d60e8', '#0037b5'])
-    .correctLightness()
-    .colors(12)
-}) => (
+export const Gradients = ({ colorScheme = exampleColorScheme }) => (
   <SunburstChart
     height={450}
     width={450}
@@ -118,10 +118,7 @@ export const MultiLevel = ({
       ]
     }
   ],
-  colorScheme = chroma
-    .scale(['#2d60e8', '#0037b5'])
-    .correctLightness()
-    .colors(12)
+  colorScheme = exampleColorScheme
 }) => (
   <SunburstChart
     height={450}
