@@ -106,12 +106,10 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
 
   const p = data.parent || { x0: 0, x1: 0, y0: 0, y1: 0 };
   const initial = getPath({
-    x0:
-      Math.max(0, Math.min(1, (data.x0 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
-    x1:
-      Math.max(0, Math.min(1, (data.x1 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
-    y0: Math.max(0, data.y0 - p.depth),
-    y1: Math.max(0, data.y1 - p.depth)
+    x0: ((data.x0 - p.x0) / (p.x1 - p.x0)) * 2 * Math.PI,
+    x1: ((data.x1 - p.x0) / (p.x1 - p.x0)) * 2 * Math.PI,
+    y0: 0,
+    y1: 0
   });
   const animate = getPath(data);
   const ariaLabelData = getAriaLabel(data.data);
