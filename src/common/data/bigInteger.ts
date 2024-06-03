@@ -35,7 +35,7 @@ export function normalizeValueForFormatting(
 export function getMaxBigIntegerForNested(series: ChartNestedDataShape[]) {
   let maxBigInteger = bigInt.one;
   for (const group of series) {
-    const maxBigIntegerForGroup = getMaxBigIntegerForShallow(group.data);
+    const maxBigIntegerForGroup = getMaxBigIntegerForShallow(group.data as any);
     if (maxBigIntegerForGroup.greater(maxBigInteger)) {
       maxBigInteger = maxBigIntegerForGroup;
     }

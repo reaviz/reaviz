@@ -115,10 +115,6 @@ export type HeatmapCellProps = {
   onMouseLeave: (event) => void;
 } & PropFunctionTypes;
 
-interface HeatmapCellState {
-  active?: boolean;
-}
-
 // Set padding modifier for the tooltips
 const modifiers = {
   offset: {
