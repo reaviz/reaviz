@@ -8,7 +8,7 @@ const path = require('path');
  */
 function replacePaths() {
   // Grep all the stories
-  const files = fg.sync('dist/stories/*.tsx');
+  const files = fg.sync(['dist/stories/*.tsx', 'dist/blocks/*.tsx']);
 
   files.forEach((file) => {
     const code = fs.readFileSync(file, { encoding: 'utf-8' });

@@ -32,6 +32,10 @@ export default defineConfig(({ mode }) =>
             {
               src: 'src/**/*.story.tsx',
               dest: 'stories/'
+            },
+            {
+              src: 'blocks/*.story.tsx',
+              dest: 'blocks/'
             }
           ]
         })

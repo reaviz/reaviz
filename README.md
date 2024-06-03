@@ -99,6 +99,7 @@ Chart types include:
 - Meter
 - Spider / Radar
 - Funnel Chart
+- Sunburst Chart
 
 Additional features:
 

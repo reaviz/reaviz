@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "15.16.0",
+  "version": "15.17.0",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",
@@ -30,7 +30,7 @@
     },
     "./docs.json": "./dist/docs.json",
     "./stories/*": "./dist/stories/*",
-    "./demo/*": "./dist/demo/*"
+    "./blocks/*": "./dist/blocks/*"
   },
   "browser": "dist/index.js",
   "typings": "dist/index.d.ts",
