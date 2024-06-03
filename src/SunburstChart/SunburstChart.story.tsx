@@ -21,17 +21,19 @@ export const Simple = () => (
   <SunburstChart height={450} width={450} data={heatmapSimpleData} />
 );
 
-export const Gradients = () => (
+export const Gradients = ({
+  colorScheme = chroma
+    .scale(['#2d60e8', '#0037b5'])
+    .correctLightness()
+    .colors(12)
+}) => (
   <SunburstChart
     height={450}
     width={450}
     data={heatmapSimpleData}
     series={
       <SunburstSeries
-        colorScheme={chroma
-          .scale(['#7c3aed', '#4f46e5'])
-          .correctLightness()
-          .colors(12)}
+        colorScheme={colorScheme}
         arc={<SunburstArc gradient={<Gradient />} />}
       />
     }
@@ -115,19 +117,16 @@ export const MultiLevel = ({
         }
       ]
     }
-  ]
+  ],
+  colorScheme = chroma
+    .scale(['#2d60e8', '#0037b5'])
+    .correctLightness()
+    .colors(12)
 }) => (
   <SunburstChart
     height={450}
     width={450}
     data={data}
-    series={
-      <SunburstSeries
-        colorScheme={chroma
-          .scale(['#2d60e8', '#0037b5'])
-          .correctLightness()
-          .colors(12)}
-      />
-    }
+    series={<SunburstSeries colorScheme={colorScheme} />}
   />
 );
