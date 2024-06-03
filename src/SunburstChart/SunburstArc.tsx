@@ -13,6 +13,7 @@ import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import { Gradient, GradientProps } from '@/common/Gradient';
+import chroma from 'chroma-js';
 
 export interface SunburstArcProps {
   /**
@@ -101,11 +102,14 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     [radius]
   );
 
+  const p = data.parent || { x0: 0, x1: 0, y0: 0, y1: 0 };
   const initial = getPath({
-    x0: data.x0, //Math.max(0, Math.min(1, (data.x0 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
-    x1: data.x1, //Math.max(0, Math.min(1, (data.x1 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
-    y0: data.y0, //Math.max(0, data.y0 - p.depth),
-    y1: 0 //Math.max(0, data.y1 - p.depth)
+    x0:
+      Math.max(0, Math.min(1, (data.x0 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
+    x1:
+      Math.max(0, Math.min(1, (data.x1 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
+    y0: Math.max(0, data.y0 - p.depth),
+    y1: Math.max(0, data.y1 - p.depth)
   });
   const animate = getPath(data);
   const ariaLabelData = getAriaLabel(data.data);
@@ -136,13 +140,12 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     [data, tooltipLabel]
   );
 
-  const internalFill = useMemo(() => {
-    if (gradient) {
-      return `url(#gradient-${id})`;
-    }
+  const currentFill = useMemo(
+    () => (internalActive ? chroma(fill).brighten(0.5).hex() : fill),
+    [fill, internalActive]
+  );
 
-    return fill;
-  }, [gradient, id, fill]);
+  const pathFill = gradient ? `url(#gradient-${id})` : currentFill;
 
   return (
     <g
@@ -153,7 +156,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     >
       <motion.path
         id={id}
-        fill={internalFill}
+        fill={pathFill}
         d={initial}
         initial={{ d: initial, opacity: 0 }}
         animate={{ d: animate, opacity: 1 }}
@@ -170,7 +173,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
           element={gradient}
           id={`gradient-${id}`}
           direction="vertical"
-          color={fill}
+          color={currentFill}
         />
       )}
       {tooltip && !tooltip.props.disabled && (
