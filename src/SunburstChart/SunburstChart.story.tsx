@@ -5,6 +5,7 @@ import { SunburstSeries } from './SunburstSeries';
 import { SunburstArc } from './SunburstArc';
 import { SunburstArcLabel } from './SunburstArcLabel';
 import { Gradient } from '@/common/Gradient';
+import chroma from 'chroma-js';
 
 export default {
   title: 'Charts/Sunburst Chart',
@@ -25,7 +26,15 @@ export const Gradients = () => (
     height={450}
     width={450}
     data={heatmapSimpleData}
-    series={<SunburstSeries arc={<SunburstArc gradient={<Gradient />} />} />}
+    series={
+      <SunburstSeries
+        colorScheme={chroma
+          .scale(['#7c3aed', '#4f46e5'])
+          .correctLightness()
+          .colors(12)}
+        arc={<SunburstArc gradient={<Gradient />} />}
+      />
+    }
   />
 );
 
