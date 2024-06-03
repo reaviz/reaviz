@@ -14,7 +14,7 @@ import { CloneElement } from 'reablocks';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import { Gradient, GradientProps } from '@/common/Gradient';
 import chroma from 'chroma-js';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { useInterpolate } from './useInterpolate';
 
 export interface SunburstArcProps {
   /**
@@ -149,18 +149,11 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
 
   const pathFill = gradient ? `url(#gradient-${id})` : currentFill;
 
-  const transition = useMemo(() => {
-    if (animated) {
-      return {
-        ...DEFAULT_TRANSITION
-      };
-    } else {
-      return {
-        type: false,
-        delay: 0
-      };
-    }
-  }, [animated]);
+  const { transition, d } = useInterpolate({
+    animated,
+    path: animate,
+    initial
+  });
 
   return (
     <g
@@ -172,9 +165,9 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
       <motion.path
         id={id}
         fill={pathFill}
-        d={initial}
-        initial={{ d: initial, opacity: 0 }}
-        animate={{ d: animate, opacity: 1 }}
+        d={d}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         role="graphics-symbol"
         tabIndex={0}
         style={{ cursor }}
