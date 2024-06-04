@@ -32,9 +32,11 @@ creating charts without sacrificing customization ability.
 
 ## 🚀 Quick Links
 
-- Checkout the [demos](https://reaviz.io)
-- Learn more in the [docs](https://reaviz.io?path=/docs/docs-intro--page)
-- Learn about updates from the [changelog](CHANGELOG.md)
+- [Website](https://reaviz.dev)
+- [Docs](https://reaviz.dev/docs)
+- [Blocks](https://reaviz.dev/blocks)
+- [Storybook](https://storybook.reaviz.dev)
+- [Changelog](CHANGELOG.md)
 
 ## 💎 Other Projects
 
