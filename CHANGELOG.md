@@ -1,3 +1,6 @@
+# 15.17.1 - 6/4/24
+- [feature] Add more light funnel blocks #231
+
 # 15.17.0 - 6/3/24
 - [feature] reaviz blocks!
 
