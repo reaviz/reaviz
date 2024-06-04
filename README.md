@@ -156,7 +156,7 @@ const App = () => <BarChart width={350} height={250} data={data} />;
 ```
 
 Checkout this [demo live](https://codesandbox.io/embed/m7rl2z1989) or
-visit the [demos page](https://reaviz.github.io/reaviz/) to learn more!
+visit the [docs](https://reaviz.dev/) to learn more!
 
 ## 🔭 Development
 
