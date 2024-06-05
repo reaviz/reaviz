@@ -1,5 +1,8 @@
-# 15.17.1 - 6/5/24
+# 15.17.2 - 6/5/24
 - [fix] improve sunburst sizing
+
+# 15.17.1 - 6/4/24
+- [feature] Add more light funnel blocks #231
 
 # 15.17.0 - 6/3/24
 - [feature] reaviz blocks!
