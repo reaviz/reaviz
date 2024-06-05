@@ -95,11 +95,9 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
         .startAngle((d: any) => d.x0)
         .endAngle((d: any) => d.x1)
         .padAngle((d: any) => Math.min((d.x1 - d.x0) / 2, 0.005))
-        .padRadius(radius * 1.5)
-        .innerRadius((d: any) => d.y0 * radius)
-        .outerRadius((d: any) => Math.max(d.y0 * radius, d.y1 * radius - 1))(
-          item
-        );
+        .padRadius(radius / 2)
+        .innerRadius((d: any) => d.y0)
+        .outerRadius((d: any) => d.y1 - 1)(item);
     },
     [radius]
   );

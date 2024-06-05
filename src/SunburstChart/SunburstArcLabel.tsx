@@ -59,7 +59,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
 
   function labelTransform(d) {
     const x = (((data.x0 + data.x1) / 2) * 180) / Math.PI;
-    const y = ((data.y0 + data.y1) / 2) * radius;
+    const y = (data.y0 + data.y1) / 2;
     return `rotate(${x - 90}deg) translate(${y}px,0) rotate(${x < 180 ? 0 : 180}deg)`;
   }
 

@@ -28,14 +28,9 @@ export interface SunburstSeriesProps {
   colorScheme: ColorSchemeType;
 
   /**
-   * Height of the chart. Set internally by `SunburstChart`.
+   * Radius of the chart. Set internally by `SunburstChart`.
    */
-  height: number;
-
-  /**
-   * Width of the chart. Set internally by `SunburstChart`.
-   */
-  width: number;
+  radius: number;
 
   /**
    * The arc component to render.
@@ -51,15 +46,12 @@ export interface SunburstSeriesProps {
 export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   id,
   data,
-  height,
-  width,
+  radius,
   colorScheme,
   animated,
   arc,
   label
 }) => {
-  const radius = Math.min(width, height) / 6;
-
   const getFill = useCallback(
     (item: any, index: number) => {
       // Get the parent most item for the color start

@@ -33,41 +33,42 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
 }) => {
   const newId = useId(id);
 
-  const getData = useCallback(() => {
-    const rootHierarchy = hierarchy<any>({ data: data }, (d) => d.data)
-      .sum((d) => d.data)
-      .sort((a, b) => b.data - a.data);
+  const getData = useCallback(
+    (radius: number) => {
+      const rootHierarchy = hierarchy<any>({ data }, (d) => d.data)
+        .sum((d) => d.data)
+        .sort((a, b) => b.data - a.data);
 
-    const root = partition().size([2 * Math.PI, rootHierarchy.height + 1])(
-      rootHierarchy
-    );
+      const root = partition().size([2 * Math.PI, radius])(rootHierarchy);
 
-    const nodes = [];
-    const getAllNodes = (node) => {
-      if (node?.parent) {
-        // Don't add root node
-        nodes.push(node);
-      }
-      for (let child of node?.children || []) {
-        getAllNodes(child);
-      }
-    };
+      const nodes = [];
+      const getAllNodes = (node) => {
+        if (node?.parent) {
+          // Don't add root node
+          nodes.push(node);
+        }
+        for (let child of node?.children || []) {
+          getAllNodes(child);
+        }
+      };
 
-    getAllNodes(root);
-    return nodes;
-  }, [data]);
+      getAllNodes(root);
+      return nodes;
+    },
+    [data]
+  );
 
   const renderChart = useCallback(
     ({ chartWidth, chartHeight, ...rest }: ChartContainerChildProps) => {
-      const root = getData();
+      const radius = Math.min(chartWidth, chartHeight) / 2;
+      const root = getData(radius);
 
       return (
         <CloneElement<SunburstSeriesProps>
           element={series}
           id={`${newId}-series`}
           data={root}
-          width={chartWidth}
-          height={chartHeight}
+          radius={radius}
         />
       );
     },
