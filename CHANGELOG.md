@@ -1,3 +1,6 @@
+# 15.17.3 - 6/7/24
+- [fix] fix resize not working on SSR
+
 # 15.17.2 - 6/5/24
 - [fix] improve sunburst sizing
 

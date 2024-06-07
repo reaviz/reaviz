@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "15.17.2",
+  "version": "15.17.3",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",
@@ -99,11 +99,11 @@
     "memoize-bind": "^1.0.3",
     "memoize-one": "^6.0.0",
     "reablocks": "^7.9.4",
-    "react-cool-dimensions": "^3.0.1",
     "react-fast-compare": "^3.2.1",
     "reaviz-data-utils": "^1.0.0",
     "safe-identifier": "^0.4.2",
-    "transformation-matrix": "^2.9.0"
+    "transformation-matrix": "^2.9.0",
+    "use-resize-observer": "^9.1.0"
   },
   "peerDependencies": {
     "react": ">=16",
