@@ -155,8 +155,7 @@ const data = [
 const App = () => <BarChart width={350} height={250} data={data} />;
 ```
 
-Checkout this [demo live](https://codesandbox.io/embed/m7rl2z1989) or
-visit the [docs](https://reaviz.dev/) to learn more!
+Visit the [docs](https://reaviz.dev/docs) to learn more!
 
 ## 🔭 Development
 
@@ -168,12 +167,6 @@ If you want to run REAVIZ locally, its super easy!
 - Browser opens to Storybook page
 
 ## ❤️ Contributors & Credits
-
-Thanks to Netlify for hosting!
-
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/v3/img/components/netlify-dark.svg" alt="Deploys by Netlify" />
-</a>
 
 Thanks to all our contributors!
 
