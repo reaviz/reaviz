@@ -1,6 +1,6 @@
 import React, { FC, useCallback, useState, useMemo } from 'react';
 import { Margins, getDimension } from '@/common/utils/dimensions';
-import useResizeObserver from 'use-resize-observer';
+import useResizeObserver from 'use-resize-observer/dist/bundle.cjs';
 import { useId } from 'reablocks';
 import { LinearAxisDimensionChanged } from '@/common/Axis';
 import classNames from 'classnames';
