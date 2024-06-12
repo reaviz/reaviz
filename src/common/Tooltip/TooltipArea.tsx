@@ -8,6 +8,7 @@ import React, {
   forwardRef,
   useImperativeHandle
 } from 'react';
+import { flip, offset } from '@floating-ui/dom';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
 import {
   ChartDataTypes,
@@ -522,11 +523,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
               element={tooltip}
               visible={visible}
               placement={placement}
-              modifiers={{
-                offset: {
-                  offset: '0, 15px'
-                }
-              }}
+              modifiers={[offset({ mainAxis: 15 }), flip()]}
               reference={tooltipReference}
               color={color}
               value={value}

@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { offset } from '@floating-ui/dom';
 import {
   StackedBarChart,
   StackedBarSeries,
@@ -37,9 +38,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
             tooltip={
               <ChartTooltip
                 followCursor={true}
-                modifiers={{
-                  offset: '5px, 5px'
-                }}
+                modifiers={[offset(5)]}
                 content={(data, color) => (
                   <TooltipTemplate
                     color={color}

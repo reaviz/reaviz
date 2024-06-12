@@ -7,6 +7,7 @@ import React, {
   useState,
   useCallback
 } from 'react';
+import { offset } from '@floating-ui/dom';
 import { Bar, BarProps, BarType } from './Bar';
 import {
   ChartInternalDataShape,
@@ -364,14 +365,7 @@ BarSeries.defaultProps = {
   animated: true,
   tooltip: (
     <TooltipArea
-      tooltip={
-        <ChartTooltip
-          followCursor={true}
-          modifiers={{
-            offset: '5px, 5px'
-          }}
-        />
-      }
+      tooltip={<ChartTooltip followCursor={true} modifiers={[offset(5)]} />}
     />
   ),
   colorScheme: 'cybertron',

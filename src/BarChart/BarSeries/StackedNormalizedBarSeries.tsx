@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { offset } from '@floating-ui/dom';
 import { BarSeriesProps, BarSeries } from './BarSeries';
 import { Bar } from './Bar';
 import { RangeLines } from './RangeLines';
@@ -18,9 +19,7 @@ StackedNormalizedBarSeries.defaultProps = {
       tooltip={
         <ChartTooltip
           followCursor={true}
-          modifiers={{
-            offset: '5px, 5px'
-          }}
+          modifiers={[offset(5)]}
           content={(point, color) => {
             point.data = point.data.map((d) => {
               // Handle horz case

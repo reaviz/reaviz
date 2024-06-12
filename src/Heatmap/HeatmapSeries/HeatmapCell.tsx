@@ -8,6 +8,7 @@ import React, {
   useRef,
   ReactNode
 } from 'react';
+import { offset } from '@floating-ui/dom';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import {
@@ -116,11 +117,7 @@ export type HeatmapCellProps = {
 } & PropFunctionTypes;
 
 // Set padding modifier for the tooltips
-const modifiers = {
-  offset: {
-    offset: '0, 3px'
-  }
-};
+const modifiers = [offset({ mainAxis: 0, crossAxis: 3 })];
 
 export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   rx,

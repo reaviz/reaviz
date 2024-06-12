@@ -7,6 +7,7 @@ import React, {
   useRef,
   FC
 } from 'react';
+import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { sankeyLinkHorizontal } from 'd3-sankey';
@@ -234,11 +235,7 @@ SankeyLink.defaultProps = {
     <Tooltip
       theme={tooltipTheme}
       followCursor={true}
-      modifiers={{
-        offset: {
-          offset: '0, 5px'
-        }
-      }}
+      modifiers={[offset({ mainAxis: 0, crossAxis: 5 })]}
     />
   ),
   width: 0

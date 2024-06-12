@@ -7,6 +7,7 @@ import React, {
   useRef,
   useMemo
 } from 'react';
+import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
 import { motion } from 'framer-motion';
 import { ChartInternalDataTypes } from '@/common/data';
@@ -264,11 +265,7 @@ SankeyNode.defaultProps = {
     <Tooltip
       theme={tooltipTheme}
       followCursor={true}
-      modifiers={{
-        offset: {
-          offset: '0, 5px'
-        }
-      }}
+      modifiers={[offset({ mainAxis: 0, crossAxis: 5 })]}
     />
   )
 };
