@@ -1,3 +1,6 @@
+# 15.18.1 - 6/12/24
+- [chore] fix old depedency for resize observer
+ 
 # 15.18.0 - 6/12/24
 - [improvement] update reablocks [popper.js to floating-ui]
 
