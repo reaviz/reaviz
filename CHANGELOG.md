@@ -1,3 +1,6 @@
+# 15.17.4 - 6/12/24
+- [fix] test using cjs for resize observer for webpack
+
 # 15.17.3 - 6/7/24
 - [fix] fix resize not working on SSR
 
