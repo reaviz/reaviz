@@ -1,3 +1,6 @@
+# 15.18.0 - 6/12/24
+- [improvement] update reablocks [popper.js to floating-ui]
+
 # 15.17.4 - 6/12/24
 - [fix] test using cjs for resize observer for webpack
 
