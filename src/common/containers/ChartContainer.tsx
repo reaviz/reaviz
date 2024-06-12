@@ -1,6 +1,6 @@
 import React, { FC, useCallback, useState, useMemo } from 'react';
 import { Margins, getDimension } from '@/common/utils/dimensions';
-import useResizeObserver from 'use-resize-observer/dist/bundle.cjs';
+import { useResizeObserver } from '@/common/utils/useResizeObserver';
 import { useId } from 'reablocks';
 import { LinearAxisDimensionChanged } from '@/common/Axis';
 import classNames from 'classnames';
@@ -97,7 +97,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const [yAxisSized, setYAxisSized] = useState<boolean>(false);
   const [xOffset, setXOffset] = useState<number>(0);
   const [yOffset, setYOffset] = useState<number>(0);
-  const { ref, width, height } = useResizeObserver<HTMLDivElement>();
+  const [ref, { width, height }] = useResizeObserver<HTMLDivElement>();
 
   const chartSized = useMemo(() => {
     if (!height || !width) {

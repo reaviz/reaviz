@@ -13,3 +13,4 @@ export * from './array';
 export * from './size';
 export * from './wrapText';
 export * from './useHoverIntent';
+export * from './useResizeObserver';

@@ -103,8 +103,7 @@
     "react-fast-compare": "^3.2.1",
     "reaviz-data-utils": "^1.0.0",
     "safe-identifier": "^0.4.2",
-    "transformation-matrix": "^2.9.0",
-    "use-resize-observer": "^9.1.0"
+    "transformation-matrix": "^2.9.0"
   },
   "peerDependencies": {
     "react": ">=16",
