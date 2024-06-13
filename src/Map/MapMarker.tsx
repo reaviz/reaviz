@@ -3,6 +3,7 @@ import { Tooltip } from 'reablocks';
 import { motion } from 'framer-motion';
 import css from './MapMarker.module.css';
 import { tooltipTheme } from '@/common';
+import { offset } from '@floating-ui/dom';
 
 export interface MapMarkerProps {
   coordinates: [number, number];
@@ -13,13 +14,6 @@ export interface MapMarkerProps {
   tooltip?: any;
   onClick?: () => void;
 }
-
-// Set padding modifier for the tooltips
-const modifiers = {
-  offset: {
-    offset: '0, 3px'
-  }
-};
 
 export const MapMarker: FC<Partial<MapMarkerProps>> = ({
   size = 3,
@@ -68,7 +62,7 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
           theme={tooltipTheme}
           visible={active}
           reference={ref}
-          modifiers={modifiers}
+          modifiers={[offset({ mainAxis: 0, crossAxis: 3 })]}
           content={tooltip}
         />
       )}

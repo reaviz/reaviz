@@ -232,11 +232,7 @@ SankeyLink.defaultProps = {
   gradient: true,
   opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
   tooltip: (
-    <Tooltip
-      theme={tooltipTheme}
-      followCursor={true}
-      modifiers={[offset({ mainAxis: 0, crossAxis: 5 })]}
-    />
+    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
   ),
   width: 0
 };
