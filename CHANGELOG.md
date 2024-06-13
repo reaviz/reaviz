@@ -1,3 +1,6 @@
+# 15.18.2 - 6/12/24
+- [fix] fix tooltip position issue after scroll related reablocks
+ 
 # 15.18.1 - 6/12/24
 - [chore] fix old depedency for resize observer
  
