@@ -2,8 +2,19 @@ import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 
 export interface GuideBarProps extends SVGRect {
+  /**
+   * Whether the guide bar is active.
+   */
   active: boolean;
+
+  /**
+   * Fill for the guide bar element.
+   */
   fill?: string;
+
+  /**
+   * Opacity for the guide bar element.
+   */
   opacity?: number;
 }
 
