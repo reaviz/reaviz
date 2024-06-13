@@ -64,6 +64,32 @@ export const Simple = () => (
   />
 );
 
+export const WithScroll = () => (
+  <div style={{ minHeight: '200vh' }}>
+    <div style={{ minHeight: '50vh' }}></div>
+    <BarChart
+      width={500}
+      height={350}
+      data={data}
+      xAxis={<LinearXAxis type="value" />}
+      yAxis={
+        <LinearYAxis
+          type="category"
+          tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+        />
+      }
+      series={
+        <BarSeries
+          colorScheme={'cybertron'}
+          layout="horizontal"
+          padding={0.1}
+          bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+        />
+      }
+    />
+  </div>
+);
+
 export const LargeDataset = () => (
   <BarChart
     height={350}

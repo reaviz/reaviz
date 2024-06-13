@@ -99,7 +99,7 @@
     "invert-color": "^2.0.0",
     "memoize-bind": "^1.0.3",
     "memoize-one": "^6.0.0",
-    "reablocks": "^7.13.1",
+    "reablocks": "^7.13.3",
     "react-fast-compare": "^3.2.1",
     "reaviz-data-utils": "^1.0.0",
     "safe-identifier": "^0.4.2",
