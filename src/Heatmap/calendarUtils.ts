@@ -1,5 +1,6 @@
-import { range, min } from 'd3-array';
 import { ChartShallowDataShape } from '@/common/data';
+import { max, min, range } from 'd3-array';
+import { subDays } from 'date-fns';
 
 export type CalendarView = 'year' | 'month';
 
@@ -41,9 +42,18 @@ export const buildDataScales = (
   // From the end date, lets find the start year/month of that
   // From that start year/month, lets find the end year/month for our bounds
   const startDate = min(rawData, (d) => d.key) || new Date();
-  const start = getFirstOfMonth(startDate);
   const endDomain = view === 'year' ? 53 : 5;
-  const end = addWeeksToDate(start, endDomain);
+
+  let end, start;
+  if (view === 'year') {
+    // For year view, end at the most recent date and start 364 days before that
+    end = getStartOfDay(max(rawData, (d) => d.key) || new Date());
+    start = getStartOfDay(subDays(end, 365));
+  } else {
+    // For month view, start at the first of the month and end 4 weeks from that
+    start = getFirstOfMonth(startDate);
+    end = addWeeksToDate(start, endDomain);
+  }
 
   // Base on the view type, swap out some ranges
   const xDomainRange = view === 'year' ? 53 : 5;
