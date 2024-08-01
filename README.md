@@ -43,6 +43,7 @@ creating charts without sacrificing customization ability.
 - [Reagraph](https://reagraph.dev?utm=reaviz) - Open-source library for large webgl based network graphs.
 - [Reablocks](https://reablocks.dev?utm=reaviz) - Open-source component library for React based on Tailwind.
 - [Reaflow](https://reaflow.dev?utm=reaviz) - Open-source library for workflow and diagram graphs.
+- [Reachat](https://reachat.dev?utm=reaviz) - Open-source library for building LLM/Chat UIs for React.
 
 ## ✨ Features
 
