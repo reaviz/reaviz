@@ -262,10 +262,6 @@ SankeyNode.defaultProps = {
   label: <SankeyLabel />,
   opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   tooltip: (
-    <Tooltip
-      theme={tooltipTheme}
-      followCursor={true}
-      modifiers={[offset({ mainAxis: 0, crossAxis: 5 })]}
-    />
+    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
   )
 };
