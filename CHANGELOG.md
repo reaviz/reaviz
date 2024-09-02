@@ -1,3 +1,6 @@
+# 15.18.5 - 8/2/24
+- [fix] Fix tooltip blinking #243
+
 # 15.18.4 - 7/24/24
 - [fix] Fix HeatmapCalendar not showing all data #238
 
