@@ -21,6 +21,7 @@ import {
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { BarLabelProps, BarLabel } from './BarLabel';
+import { BarTargetMarker, BarTargetMarkerProps } from './BarTargetMarker';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
@@ -680,6 +681,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   const scale = isVertical ? yScale : xScale;
   const barLabel = isVertical ? tooltipData.y : tooltipData.x;
   const placement = layout === 'vertical' ? 'top' : 'right';
+  const hasTarget = data.metadata?.target;
 
   return (
     <Fragment>
@@ -726,6 +728,20 @@ export const Bar: FC<Partial<BarProps>> = ({
           data={data}
           scale={scale}
           fill={label.props.fill || currentColorShade}
+          barCount={barCount}
+          animated={animated}
+          layout={layout}
+          type={type}
+        />
+      )}
+      {hasTarget && (
+        <CloneElement<BarTargetMarkerProps>
+          element={<BarTargetMarker />}
+          {...coords}
+          index={index}
+          data={data}
+          scale={scale}
+          fill="red"
           barCount={barCount}
           animated={animated}
           layout={layout}

@@ -27,6 +27,8 @@ export function getYDomain({
 }): number[] {
   const [startY, endY] = extent(data, 'y');
   const [startY1, endY1] = extent(data, 'y1');
+  const maxTarget = Math.max(...data.map((d) => d.metadata?.target ?? 0));
+  const maxY1 = Math.max(endY1, maxTarget);
 
   // If dealing w/ negative numbers, we should
   // normalize the top and bottom values
@@ -39,11 +41,11 @@ export function getYDomain({
 
   // Scaled start scale at non-zero
   if (scaled) {
-    return [startY1, endY1];
+    return [startY1, maxY1];
   }
 
   // Start at 0 based
-  return [0, endY1];
+  return [0, maxY1];
 }
 
 /**
@@ -56,24 +58,26 @@ export function getXDomain({
 }): number[] {
   const startX0 = extent(data, 'x0')[0];
   const endX1 = extent(data, 'x1')[1];
+  const maxTarget = Math.max(...data.map((d) => d.metadata?.target ?? 0));
+  const maxEndX1 = Math.max(endX1, maxTarget);
 
   // Histograms use dates for start/end
-  if (typeof startX0 === 'number' && typeof endX1 === 'number') {
+  if (typeof startX0 === 'number' && typeof maxEndX1 === 'number') {
     // If dealing w/ negative numbers, we should
     // normalize the top and bottom values
     if (startX0 < 0 || isDiverging) {
       const posStart = -startX0;
-      const maxNum = Math.max(posStart, endX1);
+      const maxNum = Math.max(posStart, maxEndX1);
 
       return [-maxNum, maxNum];
     }
 
     // If not scaled, return 0/max domains
     if (!scaled) {
-      return [0, endX1];
+      return [0, maxEndX1];
     }
   }
 
   // Scaled start scale at non-zero
-  return [startX0, endX1];
+  return [startX0, maxEndX1];
 }
