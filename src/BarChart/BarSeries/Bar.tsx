@@ -166,6 +166,14 @@ export type BarProps = {
   label: ReactElement<BarLabelProps, typeof BarLabel> | null;
 
   /**
+   * Target marker element.
+   */
+  targetMarker: ReactElement<
+    BarTargetMarkerProps,
+    typeof BarTargetMarker
+  > | null;
+
+  /**
    * Guide bar component.
    */
   guide: ReactElement<GuideBarProps, typeof GuideBar> | null;
@@ -229,6 +237,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   layout,
   mask,
   label,
+  targetMarker,
   cursor,
   rx,
   ry,
@@ -736,12 +745,12 @@ export const Bar: FC<Partial<BarProps>> = ({
       )}
       {hasTarget && (
         <CloneElement<BarTargetMarkerProps>
-          element={<BarTargetMarker />}
+          element={targetMarker}
           {...coords}
           index={index}
           data={data}
           scale={scale}
-          fill="red"
+          fill={targetMarker.props.fill}
           barCount={barCount}
           animated={animated}
           layout={layout}
@@ -770,6 +779,7 @@ Bar.defaultProps = {
   cursor: 'auto',
   rangeLines: null,
   label: null,
+  targetMarker: <BarTargetMarker />,
   tooltip: null,
   layout: 'vertical',
   guide: null,

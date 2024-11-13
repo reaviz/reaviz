@@ -206,5 +206,5 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
 BarTargetMarker.defaultProps = {
   layout: 'vertical',
   padding: 5,
-  fill: '#000'
+  fill: '#8F979F'
 };
