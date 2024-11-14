@@ -201,7 +201,9 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
         <motion.rect
           width={Math.max(delta, 0)}
           height={Math.max(deltaLineThickness, 0)}
-          fill={fill}
+          fill={
+            isTargetGreaterThanValue ? positiveDeltaFill : negativeDeltaFill
+          }
           animate={{
             x: isTargetGreaterThanValue ? -delta : 0,
             y: height / 2
