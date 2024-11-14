@@ -44,9 +44,19 @@ export interface BarTargetMarkerProps {
   data: ChartInternalShallowDataShape;
 
   /**
-   * Color of the text.
+   * Color of the target marker line.
    */
   fill: string;
+
+  /**
+   * Color of the positive delta line.
+   */
+  positiveDeltaFill: string;
+
+  /**
+   * Color of the negative delta line.
+   */
+  negativeDeltaFill: string;
 
   /**
    * Number of the bars in the bar group. Set internally by `BarSeries`.
@@ -64,16 +74,6 @@ export interface BarTargetMarkerProps {
   animated: boolean;
 
   /**
-   * Type of bar chart to render. Set internally by `BarSeries`.
-   */
-  type: BarType;
-
-  /**
-   * Padding of the label.
-   */
-  padding: number;
-
-  /**
    * Class name to apply to the text.
    */
   className?: any;
@@ -82,6 +82,16 @@ export interface BarTargetMarkerProps {
    * Thickness of the line.
    */
   lineThickness?: number;
+
+  /**
+   * Thickness of the target marker line.
+   */
+  targetLineThickness?: number;
+
+  /**
+   * Thickness of the difference/delta line that shows distance between target and actual value.
+   */
+  deltaLineThickness?: number;
 }
 
 export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
@@ -91,12 +101,15 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
   x,
   y,
   animated,
-  layout,
+  layout = 'vertical',
   scale,
   index,
   barCount,
-  fill,
-  lineThickness = 2
+  fill = '#fff',
+  positiveDeltaFill = '#00C49F',
+  negativeDeltaFill = '#FF7361',
+  targetLineThickness = 2,
+  deltaLineThickness = 1
 }) => {
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const valuePosition = useMemo(() => scale(data.value), [data.value, scale]);
@@ -172,9 +185,11 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
     >
       {isVertical && (
         <motion.rect
-          width={Math.max(lineThickness, 0)}
+          width={Math.max(deltaLineThickness, 0)}
           height={Math.max(delta, 0)}
-          fill={fill}
+          fill={
+            isTargetGreaterThanValue ? positiveDeltaFill : negativeDeltaFill
+          }
           animate={{
             x: width / 2,
             y: isTargetGreaterThanValue ? -delta : 0
@@ -185,7 +200,7 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
       {!isVertical && (
         <motion.rect
           width={Math.max(delta, 0)}
-          height={Math.max(lineThickness, 0)}
+          height={Math.max(deltaLineThickness, 0)}
           fill={fill}
           animate={{
             x: isTargetGreaterThanValue ? -delta : 0,
@@ -195,16 +210,10 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
         />
       )}
       <motion.rect
-        width={isVertical ? width : lineThickness}
-        height={isVertical ? lineThickness : height}
+        width={isVertical ? width : targetLineThickness}
+        height={isVertical ? targetLineThickness : height}
         fill={fill}
       />
     </motion.g>
   );
-};
-
-BarTargetMarker.defaultProps = {
-  layout: 'vertical',
-  padding: 5,
-  fill: '#8F979F'
 };
