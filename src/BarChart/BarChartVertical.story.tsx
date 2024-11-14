@@ -36,30 +36,22 @@ export const BarTargetMarker = () => {
     {
       key: 'DLP',
       data: 10,
-      metadata: {
-        target: 15
-      }
+      target: 15
     },
     {
       key: 'Malware',
       data: 30,
-      metadata: {
-        target: 25
-      }
+      target: 25
     },
     {
       key: 'IDS',
       data: 20,
-      metadata: {
-        target: 23
-      }
+      target: 23
     },
     {
       key: 'Phishing Attack',
       data: 40,
-      metadata: {
-        target: 45
-      }
+      target: 45
     }
   ];
 

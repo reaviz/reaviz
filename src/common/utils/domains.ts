@@ -27,8 +27,11 @@ export function getYDomain({
 }): number[] {
   const [startY, endY] = extent(data, 'y');
   const [startY1, endY1] = extent(data, 'y1');
-  const maxTarget = Math.max(...data.map((d) => d.metadata?.target ?? 0));
-  const maxY1 = Math.max(endY1, maxTarget);
+  const [_, maxTarget] = extent(data, 'target');
+  const maxY1 = Math.max(
+    endY1,
+    isNaN(maxTarget) ? Number.MIN_SAFE_INTEGER : maxTarget
+  );
 
   // If dealing w/ negative numbers, we should
   // normalize the top and bottom values
@@ -58,8 +61,11 @@ export function getXDomain({
 }): number[] {
   const startX0 = extent(data, 'x0')[0];
   const endX1 = extent(data, 'x1')[1];
-  const maxTarget = Math.max(...data.map((d) => d.metadata?.target ?? 0));
-  const maxEndX1 = Math.max(endX1, maxTarget);
+  const [_, maxTarget] = extent(data, 'target');
+  const maxEndX1 = Math.max(
+    endX1,
+    isNaN(maxTarget) ? Number.MIN_SAFE_INTEGER : maxTarget
+  );
 
   // Histograms use dates for start/end
   if (typeof startX0 === 'number' && typeof maxEndX1 === 'number') {

@@ -101,8 +101,8 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const valuePosition = useMemo(() => scale(data.value), [data.value, scale]);
   const targetPosition = useMemo(
-    () => scale(data.metadata?.target),
-    [data.metadata?.target, scale]
+    () => scale(data.target),
+    [data.target, scale]
   );
 
   const enterProps = useMemo(() => {

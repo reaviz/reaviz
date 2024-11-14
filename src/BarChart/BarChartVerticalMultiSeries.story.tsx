@@ -63,6 +63,34 @@ export const Simple = () => (
   />
 );
 
+export const BarTargetMarker = () => (
+  <BarChart
+    width={350}
+    height={350}
+    data={multiCategory.map((series) => ({
+      ...series,
+      data: series.data.map((point) => ({
+        ...point,
+        target: point.data + Math.floor(Math.random() * 71) - 20
+      }))
+    }))}
+    series={
+      <BarSeries
+        type="grouped"
+        bar={
+          <Bar
+            gradient={<Gradient />}
+            rangeLines={<RangeLines position="top" strokeWidth={3} />}
+            guide={<GuideBar />}
+          />
+        }
+        colorScheme="cybertron"
+        padding={0.8}
+      />
+    }
+  />
+);
+
 export const Stacked = () => (
   <StackedBarChart
     width={350}

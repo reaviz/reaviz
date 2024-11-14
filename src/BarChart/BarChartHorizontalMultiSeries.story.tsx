@@ -63,6 +63,37 @@ export const Simple = () => (
   />
 );
 
+export const BarTargetMarker = () => (
+  <BarChart
+    width={500}
+    height={350}
+    data={multiCategory.map((series) => ({
+      ...series,
+      data: series.data.map((point) => ({
+        ...point,
+        target: point.data + Math.floor(Math.random() * 71) - 20
+      }))
+    }))}
+    xAxis={<LinearXAxis type="value" />}
+    yAxis={
+      <LinearYAxis
+        type="category"
+        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+      />
+    }
+    series={
+      <BarSeries
+        layout="horizontal"
+        type="grouped"
+        colorScheme={chroma
+          .scale(['ACB7C9', '418AD7'])
+          .colors(multiCategory[0].data.length)}
+        padding={0.8}
+      />
+    }
+  />
+);
+
 export const Stacked = () => (
   <StackedBarChart
     width={500}

@@ -690,7 +690,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   const scale = isVertical ? yScale : xScale;
   const barLabel = isVertical ? tooltipData.y : tooltipData.x;
   const placement = layout === 'vertical' ? 'top' : 'right';
-  const hasTarget = data.metadata?.target;
+  const hasTarget = data.target;
 
   return (
     <Fragment>
