@@ -5,7 +5,6 @@ import {
   DEFAULT_TRANSITION,
   Direction
 } from '@/common';
-import { BarType } from './Bar';
 
 export interface BarTargetMarkerProps {
   /**
