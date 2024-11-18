@@ -6,7 +6,6 @@ import React, {
   PropsWithChildren,
   useCallback
 } from 'react';
-import bind from 'memoize-bind';
 import { getPositionForTarget } from '@/common/utils/position';
 import { BrushSlice, BrushChangeEvent } from './BrushSlice';
 import { ChartDataTypes } from '@/common/data';
@@ -190,10 +189,10 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
   return (
     <Move
       cursor="crosshair"
-      onMoveStart={bind(onMoveStart, this)}
-      onMove={bind(onMove, this)}
-      onMoveEnd={bind(onMoveEnd, this)}
-      onMoveCancel={bind(onMoveCancel, this)}
+      onMoveStart={onMoveStart}
+      onMove={onMove}
+      onMoveEnd={onMoveEnd}
+      onMoveCancel={onMoveCancel}
     >
       <g
         style={{
@@ -211,7 +210,7 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
                 end={end}
                 height={height}
                 width={width}
-                onBrushChange={bind(onSliceChange, this)}
+                onBrushChange={onSliceChange}
               />
             )}
           </>

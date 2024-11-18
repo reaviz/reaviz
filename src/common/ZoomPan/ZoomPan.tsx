@@ -6,7 +6,6 @@ import React, {
   useEffect,
   useCallback
 } from 'react';
-import bind from 'memoize-bind';
 import {
   Pan,
   PanMoveEvent,
@@ -166,9 +165,9 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
       disabled={!pannable || disabled}
       ref={panRef}
       globalPanning={globalPanning}
-      onPanStart={bind(onPanStartHandler)}
-      onPanMove={bind(onPanMoveHandler)}
-      onPanEnd={bind(onPanEndHandler)}
+      onPanStart={onPanStartHandler}
+      onPanMove={onPanMoveHandler}
+      onPanEnd={onPanEndHandler}
       onPanCancel={onPanCancel}
     >
       <Zoom
@@ -184,8 +183,8 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
         style={{ cursor }}
         requireZoomModifier={requireZoomModifier}
         matrix={matrix}
-        onZoom={bind(onZoomHandler)}
-        onZoomEnd={bind(onZoomEndHandler)}
+        onZoom={onZoomHandler}
+        onZoomEnd={onZoomEndHandler}
       >
         {!disabled && (
           <rect
