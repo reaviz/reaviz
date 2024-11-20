@@ -26,6 +26,69 @@ import {
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
+const targetSampleData = [
+  {
+    key: 'Lateral Movement',
+    data: [
+      {
+        key: 'XML',
+        data: 100,
+        target: 120
+      },
+      {
+        key: 'JSON',
+        data: 120,
+        target: 100
+      },
+      {
+        key: 'HTTPS',
+        data: 150,
+        target: 160
+      }
+    ]
+  },
+  {
+    key: 'Discovery',
+    data: [
+      {
+        key: 'XML',
+        data: 100,
+        target: 110
+      },
+      {
+        key: 'JSON',
+        data: 34,
+        target: 50
+      },
+      {
+        key: 'HTTPS',
+        data: 40,
+        target: 45
+      }
+    ]
+  },
+  {
+    key: 'Exploitation',
+    data: [
+      {
+        key: 'XML',
+        data: 70,
+        target: 80
+      },
+      {
+        key: 'JSON',
+        data: 130,
+        target: 100
+      },
+      {
+        key: 'HTTPS',
+        data: 110,
+        target: 90
+      }
+    ]
+  }
+];
+
 export default {
   title: 'Charts/Bar Chart/Horizontal/Multi Series',
   component: BarChart,
@@ -67,13 +130,7 @@ export const BarTargetMarker = () => (
   <BarChart
     width={500}
     height={350}
-    data={multiCategory.map((series) => ({
-      ...series,
-      data: series.data.map((point) => ({
-        ...point,
-        target: point.data + Math.floor(Math.random() * 71) - 20
-      }))
-    }))}
+    data={targetSampleData}
     xAxis={<LinearXAxis type="value" />}
     yAxis={
       <LinearYAxis
