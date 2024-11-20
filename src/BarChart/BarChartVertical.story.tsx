@@ -11,6 +11,29 @@ import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
 
+const targetSampleData = [
+  {
+    key: 'DLP',
+    data: 10,
+    target: 15
+  },
+  {
+    key: 'Malware',
+    data: 30,
+    target: 25
+  },
+  {
+    key: 'IDS',
+    data: 20,
+    target: 23
+  },
+  {
+    key: 'Phishing Attack',
+    data: 40,
+    target: 45
+  }
+];
+
 export default {
   title: 'Charts/Bar Chart/Vertical/Single Series',
   component: BarChart,
@@ -31,41 +54,9 @@ export const Simple = () => (
   />
 );
 
-export const BarTargetMarker = () => {
-  const sampleData = [
-    {
-      key: 'DLP',
-      data: 10,
-      target: 15
-    },
-    {
-      key: 'Malware',
-      data: 30,
-      target: 25
-    },
-    {
-      key: 'IDS',
-      data: 20,
-      target: 23
-    },
-    {
-      key: 'Phishing Attack',
-      data: 40,
-      target: 45
-    }
-  ];
-
-  return (
-    <BarChart
-      width={400}
-      height={350}
-      data={sampleData}
-      series={
-        <BarSeries colorScheme={schemes[0]} padding={0.1} bar={<Bar />} />
-      }
-    />
-  );
-};
+export const TargetMarker = () => (
+  <BarChart width={400} height={350} data={targetSampleData} />
+);
 
 export const CustomStyle = () => (
   <BarChart

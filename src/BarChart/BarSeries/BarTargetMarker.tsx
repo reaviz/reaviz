@@ -75,12 +75,7 @@ export interface BarTargetMarkerProps {
   /**
    * Class name to apply to the text.
    */
-  className?: any;
-
-  /**
-   * Thickness of the line.
-   */
-  lineThickness?: number;
+  className?: string;
 
   /**
    * Thickness of the target marker line.
@@ -110,7 +105,7 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
   targetLineThickness = 2,
   deltaLineThickness = 1
 }) => {
-  const isVertical = useMemo(() => layout === 'vertical', [layout]);
+  const isVertical = layout === 'vertical';
   const valuePosition = useMemo(() => scale(data.value), [data.value, scale]);
   const targetPosition = useMemo(
     () => scale(data.target),
@@ -164,13 +159,18 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
     return delay;
   }, [animated, barCount, index]);
 
-  const delta = useMemo(() => {
-    return Math.abs(valuePosition - targetPosition);
-  }, [valuePosition, targetPosition]);
+  const delta = useMemo(
+    () => Math.abs(valuePosition - targetPosition),
+    [valuePosition, targetPosition]
+  );
 
-  const isTargetGreaterThanValue = useMemo(() => {
-    return targetPosition > valuePosition;
-  }, [valuePosition, targetPosition]);
+  const isTargetGreaterThanValue = useMemo(
+    () => targetPosition > valuePosition,
+    [valuePosition, targetPosition]
+  );
+
+  const targetWidth = isVertical ? width : targetLineThickness;
+  const targetHeight = isVertical ? targetLineThickness : height;
 
   return (
     <motion.g
@@ -210,11 +210,7 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
           transition={DEFAULT_TRANSITION}
         />
       )}
-      <motion.rect
-        width={isVertical ? width : targetLineThickness}
-        height={isVertical ? targetLineThickness : height}
-        fill={fill}
-      />
+      <rect width={targetWidth} height={targetHeight} fill={fill} />
     </motion.g>
   );
 };

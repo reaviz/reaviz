@@ -151,6 +151,7 @@ export function buildShallowChartData(
 
     const xProp = isVertical ? 'k' : 'v';
     const yProp = isVertical ? 'v' : 'k';
+    // Normalize the target value for correct scaling of the chart
     const normalizedTarget = point.target
       ? normalizeValueForFormatting(
         normalizeValue(

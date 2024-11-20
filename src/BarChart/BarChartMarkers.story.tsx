@@ -43,7 +43,7 @@ export const LinearValueMarkersVertical = () => (
     }
     series={
       <BarSeries
-        colorScheme={'cybertron'}
+        colorScheme="cybertron"
         layout="horizontal"
         padding={0.1}
         bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
