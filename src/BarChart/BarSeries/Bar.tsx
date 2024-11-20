@@ -754,7 +754,6 @@ export const Bar: FC<Partial<BarProps>> = ({
           barCount={barCount}
           animated={animated}
           layout={layout}
-          type={type}
         />
       )}
       {tooltip && (
