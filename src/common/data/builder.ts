@@ -76,10 +76,14 @@ export function buildNestedChartData(
         isVertical ? nestedPoint.data : (nestedPoint.key as any),
         maxBigInteger
       );
+      const normalizedTarget = nestedPoint.target
+        ? normalizeValue(nestedPoint.target as any, maxBigInteger)
+        : undefined;
 
       result[idx].data.push({
         key,
         value: normalizeValueForFormatting(nestedPoint.data as any),
+        target: normalizedTarget,
         metadata: nestedPoint.metadata,
         id: point.id,
         x,
@@ -147,10 +151,20 @@ export function buildShallowChartData(
 
     const xProp = isVertical ? 'k' : 'v';
     const yProp = isVertical ? 'v' : 'k';
+    // Normalize the target value for correct scaling of the chart
+    const normalizedTarget = point.target
+      ? normalizeValueForFormatting(
+        normalizeValue(
+          isTuple ? point.target?.[1] : point.target,
+          maxBigInteger
+        )
+      )
+      : undefined;
 
     result.push({
       key: normalizeValueForFormatting(props.k0),
       value: normalizeValueForFormatting(props.v1),
+      target: normalizedTarget,
       metadata: point.metadata,
       id: point.id,
       x: props[`${xProp}1`],

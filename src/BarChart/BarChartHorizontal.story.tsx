@@ -22,6 +22,7 @@ import {
   StackedBarSeries,
   StackedNormalizedBarSeries
 } from './BarSeries';
+import { BarTargetMarker } from './BarSeries/BarTargetMarker';
 
 export default {
   title: 'Charts/Bar Chart/Horizontal/Single Series',
@@ -40,6 +41,28 @@ export default {
 };
 
 const data = categoryData;
+const targetSampleData = [
+  {
+    key: 'DLP',
+    data: 10,
+    target: 15
+  },
+  {
+    key: 'Malware',
+    data: 30,
+    target: 25
+  },
+  {
+    key: 'IDS',
+    data: 20,
+    target: 23
+  },
+  {
+    key: 'Phishing Attack',
+    data: 40,
+    target: 45
+  }
+];
 
 export const Simple = () => (
   <BarChart
@@ -55,10 +78,63 @@ export const Simple = () => (
     }
     series={
       <BarSeries
-        colorScheme={'cybertron'}
+        colorScheme="cybertron"
         layout="horizontal"
         padding={0.1}
         bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+      />
+    }
+  />
+);
+
+export const TargetMarker = () => (
+  <BarChart
+    width={500}
+    height={350}
+    data={targetSampleData}
+    xAxis={<LinearXAxis type="value" />}
+    yAxis={
+      <LinearYAxis
+        type="category"
+        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+      />
+    }
+    series={
+      <BarSeries colorScheme="cybertron" layout="horizontal" padding={0.1} />
+    }
+  />
+);
+
+export const CustomTargetMarker = () => (
+  <BarChart
+    width={500}
+    height={350}
+    data={targetSampleData}
+    xAxis={<LinearXAxis type="value" />}
+    yAxis={
+      <LinearYAxis
+        type="category"
+        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+      />
+    }
+    series={
+      <BarSeries
+        colorScheme="cybertron"
+        layout="horizontal"
+        padding={0.1}
+        bar={
+          <Bar
+            targetMarker={
+              <BarTargetMarker
+                fill="purple"
+                positiveDeltaFill="yellow"
+                negativeDeltaFill="pink"
+                targetStrokeWidth={5}
+                deltaStrokeWidth={3}
+              />
+            }
+          />
+        }
       />
     }
   />
@@ -80,7 +156,7 @@ export const WithScroll = () => (
       }
       series={
         <BarSeries
-          colorScheme={'cybertron'}
+          colorScheme="cybertron"
           layout="horizontal"
           padding={0.1}
           bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}

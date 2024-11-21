@@ -25,6 +25,69 @@ import {
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
+const targetSampleData = [
+  {
+    key: 'Lateral Movement',
+    data: [
+      {
+        key: 'XML',
+        data: 100,
+        target: 120
+      },
+      {
+        key: 'JSON',
+        data: 120,
+        target: 100
+      },
+      {
+        key: 'HTTPS',
+        data: 150,
+        target: 160
+      }
+    ]
+  },
+  {
+    key: 'Discovery',
+    data: [
+      {
+        key: 'XML',
+        data: 100,
+        target: 110
+      },
+      {
+        key: 'JSON',
+        data: 34,
+        target: 50
+      },
+      {
+        key: 'HTTPS',
+        data: 40,
+        target: 40
+      }
+    ]
+  },
+  {
+    key: 'Exploitation',
+    data: [
+      {
+        key: 'XML',
+        data: 70,
+        target: 80
+      },
+      {
+        key: 'JSON',
+        data: 130,
+        target: 100
+      },
+      {
+        key: 'HTTPS',
+        data: 110,
+        target: 90
+      }
+    ]
+  }
+];
+
 export default {
   title: 'Charts/Bar Chart/Vertical/Multi Series',
   component: BarChart,
@@ -46,6 +109,28 @@ export const Simple = () => (
     width={350}
     height={350}
     data={multiCategory}
+    series={
+      <BarSeries
+        type="grouped"
+        bar={
+          <Bar
+            gradient={<Gradient />}
+            rangeLines={<RangeLines position="top" strokeWidth={3} />}
+            guide={<GuideBar />}
+          />
+        }
+        colorScheme="cybertron"
+        padding={0.8}
+      />
+    }
+  />
+);
+
+export const BarTargetMarker = () => (
+  <BarChart
+    width={350}
+    height={350}
+    data={targetSampleData}
     series={
       <BarSeries
         type="grouped"

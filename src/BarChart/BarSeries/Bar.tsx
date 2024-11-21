@@ -21,6 +21,7 @@ import {
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { BarLabelProps, BarLabel } from './BarLabel';
+import { BarTargetMarker, BarTargetMarkerProps } from './BarTargetMarker';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
@@ -165,6 +166,14 @@ export type BarProps = {
   label: ReactElement<BarLabelProps, typeof BarLabel> | null;
 
   /**
+   * Target marker element.
+   */
+  targetMarker: ReactElement<
+    BarTargetMarkerProps,
+    typeof BarTargetMarker
+  > | null;
+
+  /**
    * Guide bar component.
    */
   guide: ReactElement<GuideBarProps, typeof GuideBar> | null;
@@ -228,6 +237,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   layout,
   mask,
   label,
+  targetMarker,
   cursor,
   rx,
   ry,
@@ -680,6 +690,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   const scale = isVertical ? yScale : xScale;
   const barLabel = isVertical ? tooltipData.y : tooltipData.x;
   const placement = layout === 'vertical' ? 'top' : 'right';
+  const hasTarget = data.target;
 
   return (
     <Fragment>
@@ -732,6 +743,18 @@ export const Bar: FC<Partial<BarProps>> = ({
           type={type}
         />
       )}
+      {hasTarget && (
+        <CloneElement<BarTargetMarkerProps>
+          element={targetMarker}
+          {...coords}
+          index={index}
+          data={data}
+          scale={scale}
+          barCount={barCount}
+          animated={animated}
+          layout={layout}
+        />
+      )}
       {tooltip && (
         <CloneElement<ChartTooltipProps>
           element={tooltip}
@@ -754,6 +777,7 @@ Bar.defaultProps = {
   cursor: 'auto',
   rangeLines: null,
   label: null,
+  targetMarker: <BarTargetMarker />,
   tooltip: null,
   layout: 'vertical',
   guide: null,
