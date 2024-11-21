@@ -80,12 +80,12 @@ export interface BarTargetMarkerProps {
   /**
    * Thickness of the target marker line.
    */
-  targetLineThickness?: number;
+  targetStrokeWidth?: number;
 
   /**
    * Thickness of the difference/delta line that shows distance between target and actual value.
    */
-  deltaLineThickness?: number;
+  deltaStrokeWidth?: number;
 }
 
 export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
@@ -102,14 +102,13 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
   fill = '#fff',
   positiveDeltaFill = '#00C49F',
   negativeDeltaFill = '#FF7361',
-  targetLineThickness = 2,
-  deltaLineThickness = 1
+  targetStrokeWidth = 2,
+  deltaStrokeWidth = 1
 }) => {
   const isVertical = layout === 'vertical';
-  const valuePosition = useMemo(() => scale(data.value), [data.value, scale]);
-  const targetPosition = useMemo(
-    () => scale(data.target),
-    [data.target, scale]
+  const [valuePos, targetPos] = useMemo(
+    () => [scale(data.value), scale(data.target)],
+    [data.target, data.value, scale]
   );
 
   const enterProps = useMemo(() => {
@@ -117,9 +116,9 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
     let newX = x;
 
     if (isVertical) {
-      newY = targetPosition;
+      newY = targetPos;
     } else {
-      newX = targetPosition;
+      newX = targetPos;
     }
 
     return {
@@ -127,7 +126,7 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
       translateY: newY,
       opacity: 1
     };
-  }, [isVertical, targetPosition, x, y]);
+  }, [isVertical, targetPos, x, y]);
 
   const exitProps = useMemo(() => {
     let newY = y;
@@ -159,18 +158,20 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
     return delay;
   }, [animated, barCount, index]);
 
-  const delta = useMemo(
-    () => Math.abs(valuePosition - targetPosition),
-    [valuePosition, targetPosition]
-  );
-
-  const isTargetGreaterThanValue = useMemo(
-    () => targetPosition > valuePosition,
-    [valuePosition, targetPosition]
-  );
-
-  const targetWidth = isVertical ? width : targetLineThickness;
-  const targetHeight = isVertical ? targetLineThickness : height;
+  const delta = Math.abs(valuePos - targetPos);
+  const isTargetGreaterThanValue = targetPos > valuePos;
+  const targetWidth = isVertical ? width : targetStrokeWidth;
+  const targetHeight = isVertical ? targetStrokeWidth : height;
+  const deltaWidth = isVertical
+    ? Math.max(deltaStrokeWidth, 0)
+    : Math.max(delta, 0);
+  const deltaHeight = isVertical
+    ? Math.max(delta, 0)
+    : Math.max(deltaStrokeWidth, 0);
+  const animateDelta = {
+    x: isVertical ? width / 2 : isTargetGreaterThanValue ? -delta : 0,
+    y: isVertical ? (isTargetGreaterThanValue ? -delta : 0) : height / 2
+  };
 
   return (
     <motion.g
@@ -182,34 +183,13 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
         delay
       }}
     >
-      {isVertical && (
-        <motion.rect
-          width={Math.max(deltaLineThickness, 0)}
-          height={Math.max(delta, 0)}
-          fill={
-            isTargetGreaterThanValue ? positiveDeltaFill : negativeDeltaFill
-          }
-          animate={{
-            x: width / 2,
-            y: isTargetGreaterThanValue ? -delta : 0
-          }}
-          transition={DEFAULT_TRANSITION}
-        />
-      )}
-      {!isVertical && (
-        <motion.rect
-          width={Math.max(delta, 0)}
-          height={Math.max(deltaLineThickness, 0)}
-          fill={
-            isTargetGreaterThanValue ? positiveDeltaFill : negativeDeltaFill
-          }
-          animate={{
-            x: isTargetGreaterThanValue ? -delta : 0,
-            y: height / 2
-          }}
-          transition={DEFAULT_TRANSITION}
-        />
-      )}
+      <motion.rect
+        width={deltaWidth}
+        height={deltaHeight}
+        fill={isTargetGreaterThanValue ? positiveDeltaFill : negativeDeltaFill}
+        animate={animateDelta}
+        transition={DEFAULT_TRANSITION}
+      />
       <rect width={targetWidth} height={targetHeight} fill={fill} />
     </motion.g>
   );

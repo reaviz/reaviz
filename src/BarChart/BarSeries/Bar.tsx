@@ -750,7 +750,6 @@ export const Bar: FC<Partial<BarProps>> = ({
           index={index}
           data={data}
           scale={scale}
-          fill={targetMarker.props.fill}
           barCount={barCount}
           animated={animated}
           layout={layout}

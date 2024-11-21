@@ -129,8 +129,8 @@ export const CustomTargetMarker = () => (
                 fill="purple"
                 positiveDeltaFill="yellow"
                 negativeDeltaFill="pink"
-                targetLineThickness={5}
-                deltaLineThickness={3}
+                targetStrokeWidth={5}
+                deltaStrokeWidth={3}
               />
             }
           />
