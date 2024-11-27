@@ -37,13 +37,13 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   textAnchor,
   position,
   className,
-  fill,
-  fontSize,
-  fontFamily,
-  rotation,
-  padding,
+  fill = '#8F979F',
+  fontSize = 11,
+  fontFamily = 'sans-serif',
+  rotation = true,
+  padding = 5,
   formatTooltip,
-  align
+  align = 'center'
 }) => {
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
@@ -171,11 +171,12 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   );
 };
 
-LinearAxisTickLabel.defaultProps = {
-  fill: '#8F979F',
-  fontSize: 11,
-  fontFamily: 'sans-serif',
-  rotation: true,
-  padding: 5,
-  align: 'center'
-};
+export const linearAxisTickLabelDefaultProps: Partial<LinearAxisTickLabelProps> =
+  {
+    fill: '#8F979F',
+    fontSize: 11,
+    fontFamily: 'sans-serif',
+    rotation: true,
+    padding: 5,
+    align: 'center'
+  };

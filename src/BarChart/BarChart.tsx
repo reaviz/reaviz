@@ -1,4 +1,11 @@
-import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
+import React, {
+  Fragment,
+  ReactElement,
+  FC,
+  useMemo,
+  useCallback,
+  PropsWithChildren
+} from 'react';
 import classNames from 'classnames';
 import {
   isAxisVisible,
@@ -6,9 +13,11 @@ import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
+  LinearYAxisTickSeries,
+  LinearAxisTickSeriesProps
 } from '@/common/Axis';
-import { BarSeries, BarSeriesProps } from './BarSeries';
+import { Bar, BarLabel, BarSeries, BarSeriesProps } from './BarSeries';
 import {
   ChartDataShape,
   ChartNestedDataShape,
@@ -36,7 +45,8 @@ import {
   ChartContainerChildProps,
   ChartProps
 } from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
+import { CloneElement, getChildComponent } from '@/common/utils';
+import { SecondaryAxis } from '@/common/Axis/SecondaryAxis';
 
 export interface BarChartProps extends ChartProps {
   /**
@@ -75,21 +85,107 @@ export interface BarChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-export const BarChart: FC<Partial<BarChartProps>> = ({
+export const BarChart: FC<Partial<PropsWithChildren<BarChartProps>>> = ({
   id,
   width,
   height,
   margins,
   className,
-  data,
-  xAxis,
-  yAxis,
-  series,
-  brush,
-  gridlines,
+  data = [],
+  // xAxis,
+  // yAxis,
+  // series,
+  // brush,
+  // gridlines,
   secondaryAxis,
-  containerClassName
+  containerClassName,
+  children
 }) => {
+  const brush = useMemo(
+    () =>
+      getChildComponent<ReactElement<ChartBrushProps, typeof ChartBrush>>(
+        children,
+        ChartBrush.name
+      ),
+    [children]
+  );
+
+  const series = useMemo(
+    () =>
+      getChildComponent<ReactElement<BarSeriesProps, typeof BarSeries>>(
+        children,
+        BarSeries.name,
+        <BarSeries bar={<Bar label={<BarLabel position="top" />} />} />
+      ),
+    [children]
+  );
+  const xAxis = useMemo(
+    () =>
+      getChildComponent<ReactElement<LinearAxisProps, typeof LinearAxis>>(
+        children,
+        LinearXAxis.name
+      ) ?? (
+        <LinearXAxis type="category">
+          <LinearXAxisTickSeries tickSize={20} />
+        </LinearXAxis>
+      ),
+    [children]
+  );
+  const yAxis = useMemo(
+    () =>
+      getChildComponent<ReactElement<LinearAxisProps, typeof LinearAxis>>(
+        children,
+        LinearYAxis.name
+      ) ?? <LinearYAxis type="value" />,
+    [children]
+  );
+  const gridlines = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<GridlineSeriesProps, typeof GridlineSeries>
+      >(children, GridlineSeries.name),
+    [children]
+  );
+
+  const tickXSeries = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<LinearAxisTickSeriesProps, typeof LinearXAxisTickSeries>
+      >(xAxis.props.children, LinearXAxisTickSeries.name),
+    [xAxis.props.children]
+  );
+  const tickYSeries = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<LinearAxisTickSeriesProps, typeof LinearYAxisTickSeries>
+      >(yAxis.props.children, LinearYAxisTickSeries.name),
+    [yAxis.props.children]
+  );
+  const secondaryAxisChild = useMemo(
+    () =>
+      getChildComponent<ReactElement<PropsWithChildren, typeof SecondaryAxis>>(
+        children,
+        SecondaryAxis.name
+      ),
+    [children]
+  );
+  const secondaryXAxis = useMemo(
+    () =>
+      getChildComponent<ReactElement<LinearAxisProps, typeof LinearXAxis>>(
+        secondaryAxisChild?.props?.children,
+        LinearXAxis.name
+      ),
+    [secondaryAxisChild?.props.children]
+  );
+  const secondaryYAxis = useMemo(
+    () =>
+      getChildComponent<ReactElement<LinearAxisProps, typeof LinearYAxis>>(
+        secondaryAxisChild?.props?.children,
+        LinearYAxis.name
+      ),
+    [secondaryAxisChild?.props.children]
+  );
+
   const isVertical = useMemo(
     () => series.props.layout === 'vertical',
     [series]
@@ -328,18 +424,19 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       return (
         <Fragment>
           {chartSized && gridlines && (
-            <CloneElement<GridlineSeriesProps>
-              element={gridlines}
+            <GridlineSeries
               height={chartHeight}
               width={chartWidth}
               yScale={yScale}
               xScale={xScale}
               yAxis={yAxis.props}
               xAxis={xAxis.props}
+              {...gridlines?.props}
             />
           )}
-          <CloneElement<LinearAxisProps>
-            element={xAxis}
+
+          <LinearXAxis
+            type="category"
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
@@ -347,9 +444,12 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'horizontal' : 'vertical', event)
             }
-          />
-          <CloneElement<LinearAxisProps>
-            element={yAxis}
+            {...xAxis.props}
+          >
+            {xAxis.props.children}
+          </LinearXAxis>
+          <LinearYAxis
+            type="value"
             height={chartHeight}
             width={chartWidth}
             scale={yScale}
@@ -357,38 +457,61 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'vertical' : 'horizontal', event)
             }
-          />
-          {secondaryAxis &&
-            secondaryAxis.map((axis, i) => (
-              <CloneElement<LinearAxisProps>
-                key={i}
-                element={axis}
-                height={chartHeight}
-                width={chartWidth}
-                visibility={chartSized ? 'visible' : 'hidden'}
-                onDimensionsChange={(event) => updateAxes('horizontal', event)}
-              />
-            ))}
+            {...yAxis.props}
+          >
+            {yAxis.props.children}
+          </LinearYAxis>
+          {secondaryAxisChild && (
+            <>
+              {secondaryXAxis && (
+                <LinearXAxis
+                  height={chartHeight}
+                  width={chartWidth}
+                  visibility={chartSized ? 'visible' : 'hidden'}
+                  onDimensionsChange={(event) =>
+                    updateAxes(isVertical ? 'horizontal' : 'vertical', event)
+                  }
+                  {...secondaryXAxis.props}
+                >
+                  {secondaryXAxis.props.children}
+                </LinearXAxis>
+              )}
+              {secondaryYAxis && (
+                <LinearYAxis
+                  height={chartHeight}
+                  width={chartWidth}
+                  visibility={chartSized ? 'visible' : 'hidden'}
+                  onDimensionsChange={(event) =>
+                    updateAxes(isVertical ? 'vertical' : 'horizontal', event)
+                  }
+                  {...secondaryYAxis.props}
+                >
+                  {secondaryYAxis.props.children}
+                </LinearYAxis>
+              )}
+            </>
+          )}
           {chartSized && (
-            <CloneElement<ChartBrushProps>
-              disabled={disableBrush}
-              element={brush}
+            // <ChartBrush // TODO: need to think how make this an optional component
+            //   {...brush?.props}
+            //   disabled={disableBrush}
+            //   height={chartHeight}
+            //   width={chartWidth}
+            //   scale={xScale}
+            //   // asChild={true}
+            // >
+            <BarSeries
+              {...series.props}
+              id={`bar-series-${id}`}
+              data={aggregatedData}
               height={chartHeight}
               width={chartWidth}
-              scale={xScale}
-            >
-              <CloneElement<BarSeriesProps>
-                element={series}
-                id={`bar-series-${id}`}
-                data={aggregatedData}
-                height={chartHeight}
-                width={chartWidth}
-                isCategorical={isCategorical}
-                xScale={xScale}
-                xScale1={xScale1}
-                yScale={yScale}
-              />
-            </CloneElement>
+              isCategorical={isCategorical}
+              xScale={xScale}
+              xScale1={xScale1}
+              yScale={yScale}
+            />
+            // </ChartBrush>
           )}
         </Fragment>
       );
@@ -413,8 +536,10 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       height={height}
       margins={margins}
       containerClassName={containerClassName}
-      xAxisVisible={isAxisVisible(xAxis.props)}
-      yAxisVisible={isAxisVisible(yAxis.props)}
+      // xAxisVisible={Boolean(tickXSeries?.props.label || tickXSeries?.props.line)}
+      xAxisVisible={true}
+      // yAxisVisible={Boolean(tickYSeries?.props.label || tickYSeries?.props.line)}
+      yAxisVisible={true}
       className={classNames(css.barChart, className, css[series.props.type])}
     >
       {renderChart}
@@ -422,16 +547,16 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   );
 };
 
-BarChart.defaultProps = {
-  data: [],
-  xAxis: (
-    <LinearXAxis
-      type="category"
-      tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-    />
-  ),
-  yAxis: <LinearYAxis type="value" />,
-  series: <BarSeries />,
-  gridlines: <GridlineSeries />,
-  brush: null
-};
+// BarChart.defaultProps = {
+//   data: [],
+//   xAxis: (
+//     <LinearXAxis
+//       type="category"
+//       tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+//     />
+//   ),
+//   yAxis: <LinearYAxis type="value" />,
+//   series: <BarSeries />,
+//   gridlines: <GridlineSeries />,
+//   brush: null
+// };

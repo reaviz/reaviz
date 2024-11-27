@@ -1,15 +1,29 @@
-import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
+import React, {
+  Fragment,
+  ReactElement,
+  FC,
+  useMemo,
+  useCallback,
+  PropsWithChildren
+} from 'react';
 import { Gridline, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
-import { LinearAxisProps } from '../Axis';
+import {
+  LinearAxisProps,
+  LinearAxisTickSeries,
+  LinearAxisTickSeriesProps,
+  LinearXAxisTickSeries,
+  LinearYAxisTickSeries
+} from '../Axis';
 import { GridStripeProps, GridStripe } from './GridStripe';
+import { getChildComponent } from '../utils';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
 type GridElement = GridLineElement | GridStripeElement;
 
-export interface GridlineSeriesProps {
+export interface GridlineSeriesProps extends PropsWithChildren {
   /**
    * D3 scale for Y Axis.
    */
@@ -52,38 +66,70 @@ export interface GridlineSeriesProps {
 }
 
 export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
-  line,
-  stripe,
+  // line,
+  // stripe,
   yScale,
   xScale,
   yAxis,
   xAxis,
   height,
-  width
+  width,
+  children
 }) => {
   const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'y';
   const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'x';
 
+  const line = useMemo(
+    () =>
+      getChildComponent<ReactElement<GridlineProps, typeof Gridline>>(
+        children,
+        Gridline.name
+      ) ?? <Gridline direction="all" />,
+    [children]
+  );
+  const stripe = useMemo(
+    () =>
+      getChildComponent<ReactElement<GridStripeProps, typeof GridStripe>>(
+        children,
+        GridStripe.name
+      ),
+    [children]
+  );
+  const tickXSeries = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<LinearAxisTickSeriesProps, typeof LinearXAxisTickSeries>
+      >(xAxis.children, LinearXAxisTickSeries.name),
+    [xAxis.children]
+  );
+  const tickYSeries = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<LinearAxisTickSeriesProps, typeof LinearYAxisTickSeries>
+      >(yAxis.children, LinearYAxisTickSeries.name),
+    [yAxis.children]
+  );
+
   const { yAxisGrid, xAxisGrid } = useMemo(() => {
     return {
       yAxisGrid: getTicks(
         yScale,
-        yAxis.tickSeries.props.tickValues,
+        tickYSeries?.props.tickValues,
         yAxis.type,
-        getMaxTicks(yAxis.tickSeries.props.tickSize, height),
-        yAxis.tickSeries.props.interval
+        getMaxTicks(tickYSeries?.props.tickSize, height),
+        tickYSeries?.props.interval
       ),
       xAxisGrid: getTicks(
         xScale,
-        xAxis.tickSeries.props.tickValues,
+        tickXSeries?.props.tickValues,
         xAxis.type,
-        getMaxTicks(xAxis.tickSeries.props.tickSize, width),
-        xAxis.tickSeries.props.interval
+        getMaxTicks(tickXSeries?.props.tickSize, width),
+        tickXSeries?.props.interval
       )
     };
-  }, [height, width, xAxis, yAxis, yScale, xScale]);
+  }, [height, width, xAxis, yAxis, yScale, xScale, tickXSeries, tickYSeries]);
 
   const renderGroup = useCallback(
     (
@@ -95,15 +141,28 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
     ) => {
       return grid.map((point, index) => (
         <Fragment key={`${type}-${direction}-${index}`}>
-          <CloneElement<GridlineProps | GridStripeProps>
-            element={element}
-            index={index}
-            scale={scale}
-            data={point}
-            height={height}
-            width={width}
-            direction={direction}
-          />
+          {type === 'line' && (
+            <Gridline
+              {...element.props}
+              index={index}
+              scale={scale}
+              data={point}
+              height={height}
+              width={width}
+              direction={direction}
+            />
+          )}
+          {type === 'stripe' && (
+            <GridStripe
+              {...element.props}
+              index={index}
+              scale={scale}
+              data={point}
+              height={height}
+              width={width}
+              direction={direction}
+            />
+          )}
         </Fragment>
       ));
     },
@@ -132,7 +191,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   );
 };
 
-GridlineSeries.defaultProps = {
-  line: <Gridline direction="all" />,
-  stripe: null
-};
+// GridlineSeries.defaultProps = {
+//   line: <Gridline direction="all" />,
+//   stripe: null
+// };

@@ -5,7 +5,9 @@ import React, {
   useRef,
   FC,
   useState,
-  useCallback
+  useCallback,
+  Children,
+  PropsWithChildren
 } from 'react';
 import { offset } from '@floating-ui/dom';
 import { Bar, BarProps, BarType } from './Bar';
@@ -27,7 +29,7 @@ import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 
-export interface BarSeriesProps {
+export interface BarSeriesProps extends PropsWithChildren {
   /**
    * Parsed data shape. Set internally by `BarChart`.
    */
@@ -130,18 +132,24 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   width,
   colorScheme,
   xScale1,
-  bar,
+  // bar,
   padding,
   animated,
   isCategorical,
   layout,
   type,
   id,
-  valueMarkers
+  valueMarkers,
+  children
 }) => {
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
+
+  const barElements = Children.toArray(children).filter(
+    (child: any) => child.type.name === Bar.name
+  );
+  const bar = barElements.length === 1 ? barElements[0] : barElements;
 
   const isMultiSeries = useMemo(() => {
     return (
@@ -246,8 +254,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
 
       return (
         <Fragment key={key}>
-          <CloneElement<BarProps>
-            element={barElements}
+          <Bar
             id={`${id}-bar-${groupIndex}-${barIndex}`}
             animated={animated}
             active={active}
@@ -264,7 +271,10 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
             layout={layout}
             type={type}
             onMouseMove={onMouseMove}
-          />
+            {...barElements.props}
+          >
+            {barElements.props.children}
+          </Bar>
         </Fragment>
       );
     },

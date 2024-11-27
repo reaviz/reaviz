@@ -10,6 +10,23 @@ import { schemes } from '@/common/color';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
+import {
+  getXScale,
+  Gridline,
+  GridlineSeries,
+  GridStripe,
+  LinearAxis,
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from '@/common';
+import { SecondaryAxis } from '@/common/Axis/SecondaryAxis';
 
 export default {
   title: 'Charts/Bar Chart/Vertical/Single Series',
@@ -86,13 +103,64 @@ export const CustomColors = () => (
   />
 );
 
+const scale = getXScale({
+  type: 'category',
+  width: 350,
+  data: [
+    {
+      key: 'Before',
+      data: 0,
+      x: 'Secondary Before'
+    },
+    {
+      key: 'After',
+      data: 0,
+      x: 'Secondary After'
+    }
+  ]
+});
+
 export const Labels = () => (
-  <BarChart
-    width={350}
-    height={250}
-    data={categoryData}
-    series={<BarSeries bar={<Bar label={<BarLabel position={'top'} />} />} />}
-  />
+  <BarChart width={350} height={250} data={categoryData}>
+    <GridlineSeries>
+      <Gridline strokeColor="purple" />
+    </GridlineSeries>
+    <LinearYAxis type="value" position="start">
+      <LinearYAxisTickSeries tickSize={40}>
+        <LinearYAxisTickLine strokeColor="green" strokeWidth={4} />
+        <LinearYAxisTickLabel />
+      </LinearYAxisTickSeries>
+    </LinearYAxis>
+    <LinearXAxis type="category" position="end">
+      <LinearXAxisTickSeries tickSize={40}>
+        <LinearXAxisTickLine strokeColor="green" strokeWidth={4} />
+        <LinearXAxisTickLabel />
+      </LinearXAxisTickSeries>
+    </LinearXAxis>
+    <SecondaryAxis>
+      <LinearXAxis
+        orientation="horizontal"
+        type="category"
+        scale={scale}
+        position="start"
+      >
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLabel padding={20} position="start" />
+          <LinearXAxisTickLine
+            strokeColor="red"
+            strokeWidth={4}
+            size={8}
+            position="start"
+          />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    </SecondaryAxis>
+    <BarSeries>
+      <Bar>
+        <BarLabel position="top" fill="green" />
+      </Bar>
+    </BarSeries>
+  </BarChart>
 );
 
 export const CustomBarWidth = () => (

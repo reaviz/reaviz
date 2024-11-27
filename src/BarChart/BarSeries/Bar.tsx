@@ -5,7 +5,9 @@ import React, {
   FC,
   useRef,
   useMemo,
-  useState
+  useState,
+  PropsWithChildren,
+  Children
 } from 'react';
 import chroma from 'chroma-js';
 import { Gradient, GradientProps } from '@/common/Gradient';
@@ -27,6 +29,7 @@ import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
 import { Glow } from '@/common/Glow';
 import { ClickEvent } from '@/common/types';
 import { generateGlowStyles } from '@/common/Glow/utils';
+import { getChildComponent } from '@/common';
 
 export type BarType =
   | 'standard'
@@ -207,10 +210,10 @@ interface BarCoordinates {
   y: number;
 }
 
-export const Bar: FC<Partial<BarProps>> = ({
-  activeBrightness,
+export const Bar: FC<Partial<PropsWithChildren<BarProps>>> = ({
+  activeBrightness = 0.5,
   id,
-  gradient,
+  // gradient = <Gradient />,
   data,
   barIndex,
   color,
@@ -225,12 +228,12 @@ export const Bar: FC<Partial<BarProps>> = ({
   active,
   type,
   tooltip,
-  layout,
+  layout = 'vertical',
   mask,
-  label,
-  cursor,
-  rx,
-  ry,
+  // label,
+  cursor = 'auto',
+  rx = 0,
+  ry = 0,
   isCategorical,
   className,
   style,
@@ -238,6 +241,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   padding,
   guide,
   xScale1,
+  children,
   onMouseEnter,
   onClick,
   onMouseMove,
@@ -246,6 +250,15 @@ export const Bar: FC<Partial<BarProps>> = ({
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rect = useRef<SVGGElement | null>(null);
   const [internalActive, setInternalActive] = useState<boolean>(active);
+
+  const label = useMemo(
+    () => getChildComponent(children, BarLabel.name),
+    [children]
+  );
+  const gradient = useMemo(
+    () => getChildComponent(children, Gradient.name, <Gradient />),
+    [children]
+  );
 
   const calculateLinearScalePadding = useCallback(
     (scale, offset: number, size: number) => {
@@ -718,8 +731,7 @@ export const Bar: FC<Partial<BarProps>> = ({
         />
       )}
       {label && (
-        <CloneElement<BarLabelProps>
-          element={label}
+        <BarLabel
           {...coords}
           text={formatValue(barLabel)}
           index={index}
@@ -730,6 +742,7 @@ export const Bar: FC<Partial<BarProps>> = ({
           animated={animated}
           layout={layout}
           type={type}
+          {...label.props}
         />
       )}
       {tooltip && (
@@ -747,15 +760,15 @@ export const Bar: FC<Partial<BarProps>> = ({
   );
 };
 
-Bar.defaultProps = {
-  activeBrightness: 0.5,
-  rx: 0,
-  ry: 0,
-  cursor: 'auto',
-  rangeLines: null,
-  label: null,
-  tooltip: null,
-  layout: 'vertical',
-  guide: null,
-  gradient: <Gradient />
-};
+// Bar.defaultProps = {
+//   activeBrightness: 0.5,
+//   rx: 0,
+//   ry: 0,
+//   cursor: 'auto',
+//   rangeLines: null,
+//   label: null,
+//   tooltip: null,
+//   layout: 'vertical',
+//   guide: null,
+//   gradient: <Gradient />
+// };
