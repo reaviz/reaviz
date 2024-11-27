@@ -12,11 +12,11 @@ export interface LinearAxisTickLineProps {
 }
 
 export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
-  size,
-  position,
+  size = 5,
+  position = 'start',
   orientation,
-  strokeColor,
-  strokeWidth,
+  strokeColor = '#8F979F',
+  strokeWidth = 1,
   className
 }) => {
   const path = useMemo(() => {
@@ -46,10 +46,4 @@ export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
       {...path}
     />
   );
-};
-
-LinearAxisTickLine.defaultProps = {
-  strokeColor: '#8F979F',
-  strokeWidth: 1,
-  size: 5
 };

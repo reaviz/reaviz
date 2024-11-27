@@ -1,6 +1,14 @@
-import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
+import React, {
+  FC,
+  Fragment,
+  PropsWithChildren,
+  ReactElement,
+  useCallback,
+  useMemo
+} from 'react';
 import {
   LinearAxisTickLabel,
+  linearAxisTickLabelDefaultProps,
   LinearAxisTickLabelProps
 } from './LinearAxisTickLabel';
 import {
@@ -15,8 +23,11 @@ import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
 import { calculateDimensions } from '@/common/utils/size';
+import { getChildComponent } from '@/common/utils';
+import { LinearYAxisTickLabel, LinearYAxisTickLine } from './LinearYAxis';
+import { LinearXAxisTickLabel, LinearXAxisTickLine } from './LinearXAxis';
 
-export interface LinearAxisTickSeriesProps {
+export interface LinearAxisTickSeriesProps extends PropsWithChildren {
   height: number;
   width: number;
   scale: any;
@@ -47,13 +58,52 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   orientation,
   height,
   width,
-  label,
+  // label,
   tickSize,
   tickValues,
   interval,
-  line,
-  axis
+  // line,
+  axis,
+  children
 }) => {
+  const line = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>
+      >(
+        children,
+        orientation === 'vertical'
+          ? LinearYAxisTickLine.name
+          : LinearXAxisTickLine.name,
+        orientation === 'vertical' ? (
+          <LinearYAxisTickLine />
+        ) : (
+          <LinearXAxisTickLine />
+        )
+      ),
+    [children, orientation]
+  );
+
+  const label = useMemo(
+    () =>
+      getChildComponent<
+        ReactElement<LinearAxisTickLabelProps, typeof LinearAxisTickLabel>
+      >(
+        children,
+        // TODO: think how to make it abstract (get rid X,Y names)
+        orientation === 'vertical'
+          ? LinearYAxisTickLabel.name
+          : LinearXAxisTickLabel.name,
+        orientation === 'vertical' ? (
+          <LinearYAxisTickLabel {...linearAxisTickLabelDefaultProps} />
+        ) : (
+          <LinearXAxisTickLabel {...linearAxisTickLabelDefaultProps} />
+        )
+      ),
+    [children, orientation]
+  );
+  console.log('[log] label', label);
+
   /**
    * Gets the adjusted scale given offsets.
    */
@@ -125,7 +175,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
         ? calculateDimensions(
           text,
           label.props.fontFamily,
-          label.props.fontSize.toString()
+          label.props.fontSize?.toString()
         )
         : {};
 
@@ -216,32 +266,32 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   );
 };
 
-LinearAxisTickSeries.defaultProps = {
-  line: (
-    <LinearAxisTickLine
-      height={10}
-      width={10}
-      orientation="horizontal"
-      position="center"
-    />
-  ),
-  label: (
-    <LinearAxisTickLabel
-      line={
-        <LinearAxisTickLine
-          orientation="horizontal"
-          position="center"
-          height={5}
-          width={5}
-        />
-      }
-      text=""
-      fullText=""
-      angle={0}
-      orientation="horizontal"
-      half="start"
-      position="center"
-    />
-  ),
-  tickSize: 30
-};
+// LinearAxisTickSeries.defaultProps = {
+//   line: (
+//     <LinearAxisTickLine
+//       height={10}
+//       width={10}
+//       orientation="horizontal"
+//       position="center"
+//     />
+//   ),
+//   label: (
+//     <LinearAxisTickLabel
+//       line={
+//         <LinearAxisTickLine
+//           orientation="horizontal"
+//           position="center"
+//           height={5}
+//           width={5}
+//         />
+//       }
+//       text=""
+//       fullText=""
+//       angle={0}
+//       orientation="horizontal"
+//       half="start"
+//       position="center"
+//     />
+//   ),
+//   tickSize: 30
+// };
