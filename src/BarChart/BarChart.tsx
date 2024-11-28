@@ -45,7 +45,7 @@ import {
   ChartContainerChildProps,
   ChartProps
 } from '@/common/containers/ChartContainer';
-import { CloneElement, getChildComponent } from '@/common/utils';
+import { getChildComponent } from '@/common/utils';
 import { SecondaryAxis } from '@/common/Axis/SecondaryAxis';
 
 export interface BarChartProps extends ChartProps {
