@@ -14,5 +14,4 @@ export * from './size';
 export * from './wrapText';
 export * from './useHoverIntent';
 export * from './useResizeObserver';
-export * from './CloneElement';
 export * from './getChildComponent';
