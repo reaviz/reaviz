@@ -50,7 +50,7 @@ export interface GridStripeProps {
 }
 
 export const GridStripe: FC<Partial<GridStripeProps>> = ({
-  fill,
+  fill = '#393c3e',
   className,
   position,
   data,
@@ -86,6 +86,6 @@ export const GridStripe: FC<Partial<GridStripeProps>> = ({
   return <rect className={classNames(css.gridStripe, className)} {...coords} />;
 };
 
-GridStripe.defaultProps = {
-  fill: '#393c3e'
-};
+// GridStripe.defaultProps = {
+//   fill: '#393c3e'
+// };

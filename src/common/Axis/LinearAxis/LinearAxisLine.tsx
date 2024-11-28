@@ -14,8 +14,8 @@ export interface LinearAxisLineProps {
 }
 
 export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
-  strokeColor,
-  strokeWidth,
+  strokeColor = '#8F979F',
+  strokeWidth = 1,
   strokeGradient,
   scale,
   orientation,
@@ -44,9 +44,4 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
       )}
     </Fragment>
   );
-};
-
-LinearAxisLine.defaultProps = {
-  strokeColor: '#8F979F',
-  strokeWidth: 1
 };
