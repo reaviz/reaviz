@@ -1,55 +1,64 @@
 import React, { FC } from 'react';
 import {
   LinearAxisTickLabelProps,
-  LinearAxisTickLabel
+  LinearAxisTickLabel,
+  LinearAxisTickLabelDefaultProps
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLineProps,
-  LinearAxisTickLine
+  LinearAxisTickLine,
+  LinearAxisTickLineDefaultProps
 } from './LinearAxisTickLine';
 import {
   LinearAxisTickSeriesProps,
-  LinearAxisTickSeries
+  LinearAxisTickSeries,
+  LinearAxisTickSeriesDefaultProps
 } from './LinearAxisTickSeries';
-import { LinearAxisProps, LinearAxis } from './LinearAxis';
+import {
+  LinearAxisProps,
+  LinearAxis,
+  LinearAxisDefaultProps
+} from './LinearAxis';
 
 export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   props
 ) => <LinearAxisTickLabel {...props} />;
-LinearXAxisTickLabel.defaultProps = {
-  ...LinearAxisTickLabel.defaultProps,
+export const LinearXAxisTickLabelDefaultProps = {
+  ...LinearAxisTickLabelDefaultProps,
   rotation: true,
   position: 'end',
   align: 'center'
-};
+} as Partial<LinearAxisTickLabelProps>;
 
 export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
   props
 ) => <LinearAxisTickLine {...props} />;
-LinearXAxisTickLine.defaultProps = {
-  ...LinearAxisTickLine.defaultProps,
+export const LinearXAxisTickLineDefaultProps = {
+  ...LinearAxisTickLineDefaultProps,
   position: 'end'
-};
+} as Partial<LinearAxisTickLineProps>;
 
 export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   props
 ) => <LinearAxisTickSeries {...props} />;
-LinearXAxisTickSeries.defaultProps = {
-  ...LinearAxisTickSeries.defaultProps,
+
+export const LinearXAxisTickSeriesDefaultProps = {
+  ...LinearAxisTickSeriesDefaultProps,
   tickSize: 75,
-  line: <LinearXAxisTickLine />,
-  label: <LinearXAxisTickLabel />
-};
+  line: <LinearXAxisTickLine {...LinearXAxisTickLineDefaultProps} />,
+  label: <LinearXAxisTickLabel {...LinearXAxisTickLabelDefaultProps} />
+} as Partial<LinearAxisTickSeriesProps>;
 
 export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => (
-  <LinearAxis {...props} />
+  <LinearAxis {...LinearXAxisDefaultProps} {...props} />
 );
-LinearXAxis.defaultProps = {
-  ...LinearAxis.defaultProps,
+
+export const LinearXAxisDefaultProps = {
+  ...LinearAxisDefaultProps,
   position: 'end',
   roundDomains: false,
   scaled: false,
   type: 'value',
   orientation: 'horizontal',
-  tickSeries: <LinearXAxisTickSeries />
-};
+  tickSeries: <LinearXAxisTickSeries {...LinearXAxisTickSeriesDefaultProps} />
+} as Partial<LinearAxisProps>;

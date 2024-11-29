@@ -51,16 +51,11 @@ export interface GridlineSeriesProps {
   stripe: GridStripeElement | null;
 }
 
-export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
-  line,
-  stripe,
-  yScale,
-  xScale,
-  yAxis,
-  xAxis,
-  height,
-  width
-}) => {
+export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
+  const { line, stripe, yScale, xScale, yAxis, xAxis, height, width } = {
+    ...GridlineSeriesDefaultProps,
+    ...props
+  };
   const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'y';
   const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
@@ -132,7 +127,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   );
 };
 
-GridlineSeries.defaultProps = {
+export const GridlineSeriesDefaultProps = {
   line: <Gridline direction="all" />,
   stripe: null
 };

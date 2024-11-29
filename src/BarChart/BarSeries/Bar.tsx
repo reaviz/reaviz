@@ -20,10 +20,14 @@ import {
 } from '@/common/utils/functions';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { BarLabelProps, BarLabel } from './BarLabel';
+import { BarLabelProps, BarLabel, BarLabelDefaultProps } from './BarLabel';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
-import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
+import {
+  ChartTooltipProps,
+  ChartTooltip,
+  ChartTooltipDefaultProps
+} from '@/common/Tooltip';
 import { Glow } from '@/common/Glow';
 import { ClickEvent } from '@/common/types';
 import { generateGlowStyles } from '@/common/Glow/utils';
@@ -207,42 +211,43 @@ interface BarCoordinates {
   y: number;
 }
 
-export const Bar: FC<Partial<BarProps>> = ({
-  activeBrightness,
-  id,
-  gradient,
-  data,
-  barIndex,
-  color,
-  yScale,
-  barCount,
-  glow,
-  xScale,
-  groupIndex,
-  minHeight,
-  rangeLines,
-  animated,
-  active,
-  type,
-  tooltip,
-  layout,
-  mask,
-  label,
-  cursor,
-  rx,
-  ry,
-  isCategorical,
-  className,
-  style,
-  width,
-  padding,
-  guide,
-  xScale1,
-  onMouseEnter,
-  onClick,
-  onMouseMove,
-  onMouseLeave
-}) => {
+export const Bar: FC<Partial<BarProps>> = (props) => {
+  const {
+    activeBrightness,
+    id,
+    gradient,
+    data,
+    barIndex,
+    color,
+    yScale,
+    barCount,
+    glow,
+    xScale,
+    groupIndex,
+    minHeight,
+    rangeLines,
+    animated,
+    active,
+    type,
+    tooltip,
+    layout,
+    mask,
+    label,
+    cursor,
+    rx,
+    ry,
+    isCategorical,
+    className,
+    style,
+    width,
+    padding,
+    guide,
+    xScale1,
+    onMouseEnter,
+    onClick,
+    onMouseMove,
+    onMouseLeave
+  } = { ...BarDefaultProps, ...props };
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rect = useRef<SVGGElement | null>(null);
   const [internalActive, setInternalActive] = useState<boolean>(active);
@@ -680,6 +685,14 @@ export const Bar: FC<Partial<BarProps>> = ({
   const scale = isVertical ? yScale : xScale;
   const barLabel = isVertical ? tooltipData.y : tooltipData.x;
   const placement = layout === 'vertical' ? 'top' : 'right';
+  const labelProps = useMemo(
+    () => ({ ...BarLabelDefaultProps, ...label?.props }),
+    [label]
+  );
+  const tooltipProps = useMemo(
+    () => ({ ...ChartTooltipDefaultProps, ...tooltip?.props }),
+    [tooltip]
+  );
 
   return (
     <Fragment>
@@ -695,7 +708,7 @@ export const Bar: FC<Partial<BarProps>> = ({
           color={rangeLineColorShade}
           barCount={barCount}
           animated={animated}
-          layout={layout}
+          layout={layout as Direction}
           type={type}
         />
       )}
@@ -713,7 +726,7 @@ export const Bar: FC<Partial<BarProps>> = ({
         <CloneElement<GradientProps>
           element={gradient}
           id={`gradient-${id}`}
-          direction={layout}
+          direction={layout as Direction}
           color={currentColorShade}
         />
       )}
@@ -725,10 +738,10 @@ export const Bar: FC<Partial<BarProps>> = ({
           index={index}
           data={data}
           scale={scale}
-          fill={label.props.fill || currentColorShade}
+          fill={labelProps.fill || currentColorShade}
           barCount={barCount}
           animated={animated}
-          layout={layout}
+          layout={layout as Direction}
           type={type}
         />
       )}
@@ -739,7 +752,7 @@ export const Bar: FC<Partial<BarProps>> = ({
           reference={rect}
           color={color}
           value={tooltipData}
-          placement={(tooltip.props as any).placement || placement}
+          placement={tooltipProps.placement || placement}
           data={data}
         />
       )}
@@ -747,7 +760,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   );
 };
 
-Bar.defaultProps = {
+export const BarDefaultProps = {
   activeBrightness: 0.5,
   rx: 0,
   ry: 0,

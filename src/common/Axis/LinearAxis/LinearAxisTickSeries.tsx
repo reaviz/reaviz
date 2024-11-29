@@ -1,6 +1,7 @@
 import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
 import {
   LinearAxisTickLabel,
+  LinearAxisTickLabelDefaultProps,
   LinearAxisTickLabelProps
 } from './LinearAxisTickLabel';
 import {
@@ -42,18 +43,29 @@ interface ProcessedTick {
   half: 'start' | 'end' | 'center';
 }
 
-export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
-  scale,
-  orientation,
-  height,
-  width,
-  label,
-  tickSize,
-  tickValues,
-  interval,
-  line,
-  axis
-}) => {
+export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
+  props
+) => {
+  const {
+    scale,
+    orientation,
+    height,
+    width,
+    label,
+    tickSize,
+    tickValues,
+    interval,
+    line,
+    axis
+  } = { ...LinearAxisTickSeriesDefaultProps, ...props };
+  const labelProps = useMemo(
+    () => ({
+      ...LinearAxisTickLabelDefaultProps,
+      ...label?.props
+    }),
+    [label]
+  );
+
   /**
    * Gets the adjusted scale given offsets.
    */
@@ -95,14 +107,14 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
    * Gets the formatted label of the tick.
    */
   const labelFormatFn = useMemo((): any => {
-    if (label && label.props.format) {
-      return label.props.format;
+    if (label && labelProps.format) {
+      return labelProps.format;
     } else if (scale.tickFormat) {
       return scale.tickFormat.apply(scale, [5]);
     } else {
       return (v) => formatValue(v);
     }
-  }, [label, scale]);
+  }, [label, scale, labelProps]);
 
   /**
    * Gets the ticks given the dimensions and scales and returns
@@ -124,8 +136,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
       const size = label
         ? calculateDimensions(
           text,
-          label.props.fontFamily,
-          label.props.fontSize.toString()
+          labelProps.fontFamily,
+          labelProps.fontSize.toString()
         )
         : {};
 
@@ -152,7 +164,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
     labelFormatFn,
     scale,
     tickSize,
-    tickValues
+    tickValues,
+    labelProps
   ]);
 
   /**
@@ -165,7 +178,6 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
       return 0;
     }
 
-    const labelProps = label.props;
     const dimension = getDimension();
     const maxTicksLength = max(ticks, (tick) => tick.width);
     let angle = 0;
@@ -185,7 +197,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
     }
 
     return angle;
-  }, [getDimension, label, ticks]);
+  }, [getDimension, label, labelProps.rotation, ticks]);
 
   return (
     <Fragment>
@@ -216,7 +228,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   );
 };
 
-LinearAxisTickSeries.defaultProps = {
+export const LinearAxisTickSeriesDefaultProps = {
   line: (
     <LinearAxisTickLine
       height={10}
