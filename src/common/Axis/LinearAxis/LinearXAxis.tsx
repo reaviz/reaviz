@@ -32,7 +32,7 @@ export const LinearXAxisTickLabelDefaultProps = {
 
 export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
   props
-) => <LinearAxisTickLine {...props} />;
+) => <LinearAxisTickLine {...LinearXAxisTickLineDefaultProps} {...props} />;
 export const LinearXAxisTickLineDefaultProps = {
   ...LinearAxisTickLineDefaultProps,
   position: 'end'
@@ -40,7 +40,7 @@ export const LinearXAxisTickLineDefaultProps = {
 
 export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   props
-) => <LinearAxisTickSeries {...props} />;
+) => <LinearAxisTickSeries {...LinearXAxisTickSeriesDefaultProps} {...props} />;
 
 export const LinearXAxisTickSeriesDefaultProps = {
   ...LinearAxisTickSeriesDefaultProps,

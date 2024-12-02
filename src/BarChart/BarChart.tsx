@@ -110,6 +110,14 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     () => seriesProps.type === 'stackedDiverging',
     [seriesProps.type]
   );
+  const yAxisProps = useMemo(
+    () => ({ ...LinearYAxisDefaultProps, ...yAxis.props }),
+    [yAxis]
+  );
+  const xAxisProps = useMemo(
+    () => ({ ...LinearXAxisDefaultProps, ...xAxis.props }),
+    [xAxis]
+  );
 
   const getMarimekkoGroupScales = useCallback(
     (aggregatedData, axis, width: number) => {
@@ -317,17 +325,10 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
       isVertical,
       seriesProps,
       xAxis,
-      yAxis
+      yAxis,
+      xAxisProps,
+      yAxisProps
     ]
-  );
-
-  const yAxisProps = useMemo(
-    () => ({ ...LinearYAxisDefaultProps, ...yAxis.props }),
-    [yAxis]
-  );
-  const xAxisProps = useMemo(
-    () => ({ ...LinearXAxisDefaultProps, ...xAxis.props }),
-    [xAxis]
   );
 
   const renderChart = useCallback(

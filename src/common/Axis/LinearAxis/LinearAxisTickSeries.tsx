@@ -6,6 +6,7 @@ import {
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLine,
+  LinearAxisTickLineDefaultProps,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
 import { formatValue } from '@/common/utils/formatting';

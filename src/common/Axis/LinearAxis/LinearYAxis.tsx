@@ -40,7 +40,7 @@ export const LinearYAxisTickLineDefaultProps = {
 
 export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   props
-) => <LinearAxisTickSeries {...props} />;
+) => <LinearAxisTickSeries {...LinearYAxisTickSeriesDefaultProps} {...props} />;
 export const LinearYAxisTickSeriesDefaultProps = {
   ...LinearAxisTickSeriesDefaultProps,
   tickSize: 30,
