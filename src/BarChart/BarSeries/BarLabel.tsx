@@ -96,26 +96,27 @@ export interface BarLabelProps {
   className?: any;
 }
 
-export const BarLabel: FC<Partial<BarLabelProps>> = ({
-  fontSize,
-  fontFamily,
-  fill,
-  layout,
-  className,
-  text,
-  x,
-  y,
-  height,
-  position,
-  width,
-  data,
-  padding,
-  scale,
-  type,
-  animated,
-  index,
-  barCount
-}) => {
+export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
+  const {
+    fontSize,
+    fontFamily,
+    fill,
+    layout,
+    className,
+    text,
+    x,
+    y,
+    height,
+    position,
+    width,
+    data,
+    padding,
+    scale,
+    type,
+    animated,
+    index,
+    barCount
+  } = { ...BarLabelDefaultProps, ...props };
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const textAnchor = isVertical ? 'middle' : 'start';
 
@@ -232,7 +233,7 @@ export const BarLabel: FC<Partial<BarLabelProps>> = ({
   );
 };
 
-BarLabel.defaultProps = {
+export const BarLabelDefaultProps = {
   position: 'top',
   layout: 'vertical',
   fontSize: 13,

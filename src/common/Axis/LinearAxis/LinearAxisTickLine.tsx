@@ -11,14 +11,14 @@ export interface LinearAxisTickLineProps {
   className?: string;
 }
 
-export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
-  size,
-  position,
-  orientation,
-  strokeColor,
-  strokeWidth,
-  className
-}) => {
+export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
+  props
+) => {
+  const { size, position, orientation, strokeColor, strokeWidth, className } = {
+    ...LinearAxisTickLineDefaultProps,
+    ...props
+  };
+
   const path = useMemo(() => {
     const isVertical = orientation === 'vertical';
     const tickSize = size || 0;
@@ -48,7 +48,7 @@ export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = ({
   );
 };
 
-LinearAxisTickLine.defaultProps = {
+export const LinearAxisTickLineDefaultProps = {
   strokeColor: '#8F979F',
   strokeWidth: 1,
   size: 5

@@ -24,34 +24,37 @@ export const ChartBrush: FC<Partial<ChartBrushProps>> = (props) => {
     return { start, end };
   }, [disabled, domain, scale]);
 
-  const onBrushChangeHandler = useCallback((event: BrushChangeEvent) => {
-    if (onBrushChange) {
-      let domain;
+  const onBrushChangeHandler = useCallback(
+    (event: BrushChangeEvent) => {
+      if (onBrushChange) {
+        let domain;
 
-      if (
-        event.start !== undefined &&
-        event.end !== undefined &&
-        (event.start !== 0 || event.end !== width)
-      ) {
-        if (scale.invert) {
-          const start = scale.invert(event.start);
-          const end = scale.invert(event.end);
-          domain = [start, end];
-        } else {
-          // invert scaleBend
-          const band = scale.step();
-          const start = Math.ceil((event.start - band / 2) / band);
-          const end = Math.ceil((event.end - band / 2) / band);
+        if (
+          event.start !== undefined &&
+          event.end !== undefined &&
+          (event.start !== 0 || event.end !== width)
+        ) {
+          if (scale.invert) {
+            const start = scale.invert(event.start);
+            const end = scale.invert(event.end);
+            domain = [start, end];
+          } else {
+            // invert scaleBend
+            const band = scale.step();
+            const start = Math.ceil((event.start - band / 2) / band);
+            const end = Math.ceil((event.end - band / 2) / band);
 
-          domain = [scale.domain()[start], scale.domain()[end]];
+            domain = [scale.domain()[start], scale.domain()[end]];
+          }
         }
-      }
 
-      onBrushChange({
-        domain
-      });
-    }
-  }, [onBrushChange, scale, width]);
+        onBrushChange({
+          domain
+        });
+      }
+    },
+    [onBrushChange, scale, width]
+  );
 
   return (
     <Brush
@@ -63,6 +66,3 @@ export const ChartBrush: FC<Partial<ChartBrushProps>> = (props) => {
     </Brush>
   );
 };
-
-
-ChartBrush.defaultProps = {};

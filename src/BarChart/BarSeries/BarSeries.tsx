@@ -121,24 +121,26 @@ export interface BarSeriesProps {
     | null;
 }
 
-export const BarSeries: FC<Partial<BarSeriesProps>> = ({
-  data,
-  tooltip,
-  xScale,
-  yScale,
-  height,
-  width,
-  colorScheme,
-  xScale1,
-  bar,
-  padding,
-  animated,
-  isCategorical,
-  layout,
-  type,
-  id,
-  valueMarkers
-}) => {
+export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
+  const {
+    data,
+    tooltip,
+    xScale,
+    yScale,
+    height,
+    width,
+    colorScheme,
+    xScale1,
+    bar,
+    padding,
+    animated,
+    isCategorical,
+    layout,
+    type,
+    id,
+    valueMarkers
+  } = { ...BarSeriesDefaultProps, ...props };
+
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
@@ -261,8 +263,8 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
             data={data}
             isCategorical={isCategorical}
             color={getBarColor}
-            layout={layout}
-            type={type}
+            layout={layout as Direction}
+            type={type as BarType}
             onMouseMove={onMouseMove}
           />
         </Fragment>
@@ -358,7 +360,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   );
 };
 
-BarSeries.defaultProps = {
+export const BarSeriesDefaultProps = {
   type: 'standard',
   padding: 0.1,
   groupPadding: 16,

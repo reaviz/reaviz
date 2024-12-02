@@ -5,14 +5,17 @@ import React, {
   createRef,
   useCallback,
   useEffect,
+  useMemo,
   useState
 } from 'react';
 import { ChartDataTypes } from '@/common/data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
 import {
   LinearAxisTickSeries,
+  LinearAxisTickSeriesDefaultProps,
   LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
+import { tickFormat } from 'd3-scale';
 
 export interface LinearAxisDimensionChanged {
   height?: number;
@@ -54,7 +57,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     orientation,
     visibility = 'visible',
     onDimensionsChange
-  } = props;
+  } = { ...LinearAxisDefaultProps, ...props };
 
   const containerRef = createRef<SVGGElement>();
   const [dimensions, setDimensions] = useState<LinearAxisState>({
@@ -109,6 +112,17 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
 
   const { translateX, translateY } = getPosition();
 
+  const tickSeriesProps = useMemo(
+    () =>
+      tickSeries
+        ? {
+          ...LinearAxisTickSeriesDefaultProps,
+          ...tickSeries.props
+        }
+        : ({} as Partial<LinearAxisTickSeriesProps>),
+    [tickSeries]
+  );
+
   return (
     <g
       transform={`translate(${translateX}, ${translateY})`}
@@ -124,7 +138,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           orientation={orientation}
         />
       )}
-      {(tickSeries.props.line || tickSeries.props.label) && (
+      {(tickSeriesProps?.line || tickSeriesProps?.label) && (
         <CloneElement<LinearAxisTickSeriesProps>
           element={tickSeries}
           height={height}
@@ -138,7 +152,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   );
 };
 
-LinearAxis.defaultProps = {
+export const LinearAxisDefaultProps = {
   scaled: false,
   roundDomains: false,
   axisLine: <LinearAxisLine />,

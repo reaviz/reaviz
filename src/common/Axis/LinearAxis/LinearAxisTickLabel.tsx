@@ -3,6 +3,7 @@ import {
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
+import { LinearAxisLineDefaultProps } from './LinearAxisLine';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -27,24 +28,28 @@ export interface LinearAxisTickLabelProps {
   className?: string;
 }
 
-export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
-  text,
-  fullText,
-  angle,
-  orientation,
-  half,
-  line,
-  textAnchor,
-  position,
-  className,
-  fill,
-  fontSize,
-  fontFamily,
-  rotation,
-  padding,
-  formatTooltip,
-  align
-}) => {
+export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
+  props
+) => {
+  const {
+    text,
+    fullText,
+    angle,
+    orientation,
+    half,
+    line,
+    textAnchor,
+    position,
+    className,
+    fill,
+    fontSize,
+    fontFamily,
+    rotation,
+    padding,
+    formatTooltip,
+    align
+  } = { ...LinearAxisTickLabelDefaultProps, ...props };
+
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';
@@ -67,8 +72,9 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
       return [0, 0];
     }
 
-    const size = line.props.size ?? 3;
-    const position = line.props.position ?? 'center';
+    const lineProps = { ...LinearAxisLineDefaultProps, ...line.props };
+    const size = lineProps.size ?? 3;
+    const position = lineProps.position ?? 'center';
 
     if (position === 'start') {
       return [size * -1, 0];
@@ -171,7 +177,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   );
 };
 
-LinearAxisTickLabel.defaultProps = {
+export const LinearAxisTickLabelDefaultProps = {
   fill: '#8F979F',
   fontSize: 11,
   fontFamily: 'sans-serif',
