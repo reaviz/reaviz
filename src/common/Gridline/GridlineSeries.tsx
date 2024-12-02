@@ -65,8 +65,6 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
     () => ({ ...GridlineDefaultProps, ...line.props }),
     [line.props]
   );
-  console.log('[log] xAxis1', xAxis);
-  console.log('[log] yAxis1', yAxis);
 
   const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'y';
@@ -91,7 +89,6 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
       )
     };
   }, [height, width, xAxis, yAxis, yScale, xScale]);
-  console.log('[log] yAxisGrid', yAxisGrid);
 
   const renderGroup = useCallback(
     (
@@ -101,7 +98,6 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
       direction: 'x' | 'y',
       type: 'line' | 'stripe'
     ) => {
-      console.log('[log] direction', direction, grid);
       return grid.map((point, index) => (
         <Fragment key={`${type}-${direction}-${index}`}>
           <CloneElement<GridlineProps | GridStripeProps>
