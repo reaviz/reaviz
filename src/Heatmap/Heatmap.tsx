@@ -1,4 +1,4 @@
-import React, { useCallback, Fragment, ReactElement, FC } from 'react';
+import React, { useCallback, Fragment, ReactElement, FC, useMemo } from 'react';
 import {
   ChartProps,
   ChartContainer,
@@ -15,7 +15,9 @@ import {
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
   LinearXAxisTickLabel,
-  LinearAxis
+  LinearAxis,
+  linearXAxisDefaultProps,
+  linearYAxisDefaultProps
 } from '@/common/Axis';
 import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
@@ -61,12 +63,20 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   className,
   containerClassName
 }) => {
+  const xAxisProps = useMemo(
+    () => ({ ...linearXAxisDefaultProps, ...xAxis.props }),
+    [xAxis.props]
+  );
+  const yAxisProps = useMemo(
+    () => ({ ...linearYAxisDefaultProps, ...yAxis.props }),
+    [yAxis.props]
+  );
   const getScalesData = useCallback(
     (chartHeight: number, chartWidth: number) => {
       const nestedData = buildNestedChartData(data);
 
       const xDomain: any =
-        xAxis.props.domain || uniqueBy(nestedData, (d) => d.key);
+        xAxisProps.domain || uniqueBy(nestedData, (d) => d.key);
 
       const xScale = scaleBand()
         .range([0, chartWidth])
@@ -74,7 +84,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         .paddingInner(series.props.padding || 0.1);
 
       const yDomain: any =
-        yAxis.props.domain ||
+        yAxisProps.domain ||
         uniqueBy(
           nestedData,
           (d) => d.data,
@@ -156,8 +166,8 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       height={height}
       margins={margins}
       containerClassName={containerClassName}
-      xAxisVisible={isAxisVisible(xAxis.props)}
-      yAxisVisible={isAxisVisible(yAxis.props)}
+      xAxisVisible={isAxisVisible(xAxisProps)}
+      yAxisVisible={isAxisVisible(yAxisProps)}
       className={className}
     >
       {renderChart}

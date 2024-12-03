@@ -6,7 +6,9 @@ import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
+  linearXAxisDefaultProps,
+  linearYAxisDefaultProps
 } from '@/common/Axis';
 import { BarSeries, BarSeriesProps } from './BarSeries';
 import {
@@ -90,13 +92,21 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   secondaryAxis,
   containerClassName
 }) => {
+  const xAxisProps = useMemo(
+    () => ({ ...linearXAxisDefaultProps, ...xAxis.props }),
+    [xAxis.props]
+  );
+  const yAxisProps = useMemo(
+    () => ({ ...linearYAxisDefaultProps, ...yAxis.props }),
+    [yAxis.props]
+  );
   const isVertical = useMemo(
     () => series.props.layout === 'vertical',
     [series]
   );
-  const keyAxis = useMemo(
-    () => (isVertical ? xAxis : yAxis),
-    [yAxis, xAxis, isVertical]
+  const keyAxisProps = useMemo(
+    () => (isVertical ? xAxisProps : yAxisProps),
+    [isVertical, xAxisProps, yAxisProps]
   );
   const isDiverging = useMemo(
     () => series.props.type === 'stackedDiverging',
@@ -322,7 +332,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         chartWidth
       );
 
-      const isCategorical = keyAxis.props.type === 'category';
+      const isCategorical = keyAxisProps.type === 'category';
       const disableBrush = aggregatedData.length <= 1;
 
       return (
@@ -334,8 +344,8 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
               width={chartWidth}
               yScale={yScale}
               xScale={xScale}
-              yAxis={yAxis.props}
-              xAxis={xAxis.props}
+              yAxis={yAxisProps}
+              xAxis={xAxisProps}
             />
           )}
           <CloneElement<LinearAxisProps>
@@ -398,11 +408,13 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       getScalesAndData,
       gridlines,
       isVertical,
-      keyAxis,
+      keyAxisProps,
       secondaryAxis,
       series,
       xAxis,
-      yAxis
+      yAxis,
+      xAxisProps,
+      yAxisProps
     ]
   );
 
@@ -413,8 +425,8 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       height={height}
       margins={margins}
       containerClassName={containerClassName}
-      xAxisVisible={isAxisVisible(xAxis.props)}
-      yAxisVisible={isAxisVisible(yAxis.props)}
+      xAxisVisible={isAxisVisible(xAxisProps)}
+      yAxisVisible={isAxisVisible(yAxisProps)}
       className={classNames(css.barChart, className, css[series.props.type])}
     >
       {renderChart}
