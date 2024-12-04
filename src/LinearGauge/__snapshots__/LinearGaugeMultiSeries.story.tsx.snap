@@ -1,0 +1,434 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Gauge/Linear/Multi-Series _Simple smoke-test 1`] = `
+<div style="width: 465px; text-align: center;">
+  <h2 style="color: white; margin: 0px;">
+    MIRTE Attack
+  </h2>
+  <div class="_container_1u3dt_1"
+       height="30"
+       style="height: 30px; width: 100%;"
+  >
+    <svg width="465"
+         height="30"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <g transform="translate(0, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.03225806451612903: Initial Access"
+                  role="graphics-document"
+                  height="30px"
+                  width="15px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#ff9c02"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#ff9c02"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.11290322580645161: Execution"
+                  role="graphics-document"
+                  height="30px"
+                  width="37.978512112245305px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-1)"
+                  x="15"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#ee8602"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#ee8602"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.14516129032258063: Persistence"
+                  role="graphics-document"
+                  height="30px"
+                  width="15px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-2)"
+                  x="52.969653243586876"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#dd6f01"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#dd6f01"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.3709677419354839: Privilege Escalation"
+                  role="graphics-document"
+                  height="30px"
+                  width="104.93962188885558px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-3)"
+                  x="67.960990352799"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#cc5901"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#cc5901"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.564516129032258: Defense Evasion"
+                  role="graphics-document"
+                  height="30px"
+                  width="89.94828477964346px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-4)"
+                  x="172.9003501172839"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-4"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#ba4301"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#ba4301"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.7258064516129031: Credential Access"
+                  role="graphics-document"
+                  height="30px"
+                  width="74.95694767043133px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-5)"
+                  x="262.8483727725566"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-5"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#a92d01"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#a92d01"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.9193548387096773: Discovery"
+                  role="graphics-document"
+                  height="30px"
+                  width="89.94828477964346px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-6)"
+                  x="337.8050583186173"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-6"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#981600"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#981600"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="default ∙ 0.9999999999999999: Lateral Movement"
+                  role="graphics-document"
+                  height="30px"
+                  width="36.97889366042728px"
+                  fill="url(#gradient-linear-gauge-series-ref-1-bar-0-7)"
+                  x="427.75308097389"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-1-bar-0-7"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#870000"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#870000"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div class="_container_19vag_1 _horizontal_19vag_5">
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#ff9c02"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        2
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#ee8602"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        5
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#dd6f01"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        2
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#cc5901"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        14
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#ba4301"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        12
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#a92d01"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        10
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#981600"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        12
+      </span>
+    </div>
+    <div class="_entry_1493o_1 _horizontal_1493o_30"
+         style="padding: 0px 3px;"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewbox="0 0 30 30"
+           width="60"
+           height="60"
+           fill="#870000"
+      >
+        <path d="M 15 3 C 10.398 3 5.6113281 4.0371094 5.6113281 4.0371094 L 5.6074219 4.0410156 A 2 2 0 0 0 4 6 L 4 12 C 4 22.398 14.021484 26.744141 14.021484 26.744141 A 2 2 0 0 0 15 27 A 2 2 0 0 0 15.974609 26.744141 L 15.978516 26.744141 C 15.979516 26.744141 26 22.398 26 12 L 26 6 A 2 2 0 0 0 24.388672 4.0371094 C 24.388672 4.0371094 19.602 3 15 3 z M 15 7 C 18.309 7 21 9.691 21 13 C 21 16.309 18.309 19 15 19 C 11.691 19 9 16.309 9 13 C 9 9.691 11.691 7 15 7 z M 15 9 C 14.26 9 13.575469 9.2144062 12.980469 9.5664062 L 18.433594 15.019531 C 18.785594 14.424531 19 13.74 19 13 C 19 10.794 17.206 9 15 9 z M 11.566406 10.980469 C 11.214406 11.575469 11 12.26 11 13 C 11 15.206 12.794 17 15 17 C 15.74 17 16.424531 16.785594 17.019531 16.433594 L 11.566406 10.980469 z">
+        </path>
+      </svg>
+      <span class="_label_1493o_20">
+        5
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,4128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
+<div style="width: 75vw; height: 75vh; border: 1px solid red;">
+  <div class="_container_1u3dt_1"
+       style="height: 100%; width: 100%;"
+  >
+    <svg width="958"
+         height="538"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(479, 269)">
+        <g tabindex="0"
+           aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Lateral_Movement-arc"
+                fill="#2d60e8"
+                d="M0.336,-178.333A178.333,178.333,0,0,1,177.967,-11.421L89.472,-5.909A89.667,89.667,0,0,0,0.336,-89.666Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(-46.7819deg) translate(134.5px, 0px) rotate(0deg);"
+        >
+          <title>
+            Lateral Movement
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            Lateral…
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="XML: No value"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Lateral_Movement_XML-arc"
+                fill="#004bce"
+                d="M0,-268L0,-179.333Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="XML: No value"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g tabindex="0"
+           aria-label="JSON: 120"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Lateral_Movement_JSON-arc"
+                fill="#004bce"
+                d="M0.336,-268A268,268,0,0,1,122.006,-238.618L81.542,-159.723A179.333,179.333,0,0,0,0.336,-179.333Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="JSON: 120"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(-76.4236deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            JSON
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            JSON
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="HTTPS: 150"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Lateral_Movement_HTTPS-arc"
+                fill="#004bce"
+                d="M122.605,-238.311A268,268,0,0,1,234.447,-129.84L156.828,-86.98A179.333,179.333,0,0,0,82.14,-159.416Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="HTTPS: 150"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(-45.8768deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            HTTPS
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            HTTPS
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="SSH: 112"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Lateral_Movement_SSH-arc"
+                fill="#004bce"
+                d="M234.772,-129.251A268,268,0,0,1,267.461,-16.994L178.965,-11.483A179.333,179.333,0,0,0,157.153,-86.392Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="SSH: 112"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(-16.2351deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            SSH
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            SSH
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Discovery-arc"
+                fill="#28c8c3"
+                d="M178.009,-10.75A178.333,178.333,0,0,1,110.368,140.077L55.625,70.328A89.667,89.667,0,0,0,89.514,-5.238Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(24.1546deg) translate(134.5px, 0px) rotate(0deg);"
+        >
+          <title>
+            Discovery
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            Discovery
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="XML: 100"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Discovery_XML-arc"
+                fill="#00afab"
+                d="M267.502,-16.323A268,268,0,0,1,253.412,87.215L169.608,58.255A179.333,179.333,0,0,0,179.007,-10.812Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="XML: 100"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(7.74984deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            XML
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            XML
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="JSON: 34"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Discovery_JSON-arc"
+                fill="#00afab"
+                d="M253.192,87.851A268,268,0,0,1,239.455,120.354L160.282,80.436A179.333,179.333,0,0,0,169.388,58.891Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="JSON: 34"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(22.9101deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            JSON
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            JSON
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="HTTPS: No value"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Discovery_HTTPS-arc"
+                fill="#00afab"
+                d="M239.304,120.655L160.131,80.737Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="HTTPS: No value"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g tabindex="0"
+           aria-label="SSH: 111"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Discovery_SSH-arc"
+                fill="#00afab"
+                d="M239.153,120.955A268,268,0,0,1,165.729,210.613L110.986,140.864A179.333,179.333,0,0,0,159.98,81.037Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="SSH: 111"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(39.3149deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            SSH
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            SSH
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Exploitation-arc"
+                fill="#27dcbc"
+                d="M109.839,140.492A178.333,178.333,0,0,1,-85.754,156.362L-42.971,78.7A89.667,89.667,0,0,0,55.096,70.743Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(85.3614deg) translate(134.5px, 0px) rotate(0deg);"
+        >
+          <title>
+            Exploitation
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            Exploitat…
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="XML: 70"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Exploitation_XML-arc"
+                fill="#00c2a4"
+                d="M165.2,211.028A268,268,0,0,1,101.953,247.85L68.325,165.808A179.333,179.333,0,0,0,110.457,141.279Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="XML: 70"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(59.7926deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            XML
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            XML
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="JSON: 1"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Exploitation_JSON-arc"
+                fill="#00c2a4"
+                d="M101.519,248.028A268,268,0,0,1,100.785,248.327L67.481,166.153A179.333,179.333,0,0,0,67.891,165.986Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="JSON: 1"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(67.8253deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            JSON
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            JSON
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="HTTPS: 110"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Exploitation_HTTPS-arc"
+                fill="#00c2a4"
+                d="M100.35,248.503A268,268,0,0,1,-12.889,267.69L-8.513,179.131A179.333,179.333,0,0,0,67.046,166.329Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="HTTPS: 110"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(80.3834deg) translate(224.167px, 0px) rotate(0deg);"
+        >
+          <title>
+            HTTPS
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            HTTPS
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="SSH: 115"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Exploitation_SSH-arc"
+                fill="#00c2a4"
+                d="M-13.56,267.657A268,268,0,0,1,-129.019,234.9L-86.236,157.238A179.333,179.333,0,0,0,-9.185,179.098Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="SSH: 115"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(105.839deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            SSH
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            SSH
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Threat_Intelligence-arc"
+                fill="#26efb5"
+                d="M-86.343,156.037A178.333,178.333,0,0,1,-120.299,-131.647L-60.61,-66.08A89.667,89.667,0,0,0,-43.56,78.375Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(173.268deg) translate(134.5px, 0px) rotate(180deg);"
+        >
+          <title>
+            Threat Intelligence
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            Threat…
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="XML: 1"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Threat_Intelligence_XML-arc"
+                fill="#00d59d"
+                d="M-129.43,234.674A268,268,0,0,1,-130.124,234.29L-87.035,156.797A179.333,179.333,0,0,0,-86.647,157.012Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="XML: 1"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(118.963deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            XML
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            XML
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="JSON: 120"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Threat_Intelligence_JSON-arc"
+                fill="#00d59d"
+                d="M-130.534,234.062A268,268,0,0,1,-222.592,149.255L-148.886,99.967A179.333,179.333,0,0,0,-87.444,156.569Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="JSON: 120"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(132.652deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            JSON
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            JSON
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="HTTPS: 200"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Threat_Intelligence_HTTPS-arc"
+                fill="#00d59d"
+                d="M-222.965,148.696A268,268,0,0,1,-262.702,-53.025L-175.81,-35.373A179.333,179.333,0,0,0,-149.26,99.408Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="HTTPS: 200"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(168.856deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            HTTPS
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            HTTPS
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="SSH: 160"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Threat_Intelligence_SSH-arc"
+                fill="#00d59d"
+                d="M-262.568,-53.684A268,268,0,0,1,-180.661,-197.954L-120.972,-132.387A179.333,179.333,0,0,0,-175.676,-36.032Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="SSH: 160"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(209.585deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            SSH
+          </title>
+          <text fill="#000000"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            SSH
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Breach-arc"
+                fill="#2d60e8"
+                d="M-119.802,-132.1A178.333,178.333,0,0,1,-0.336,-178.333L-0.336,-89.666A89.667,89.667,0,0,0,-60.113,-66.532Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(248.843deg) translate(134.5px, 0px) rotate(180deg);"
+        >
+          <title>
+            Breach
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            Breach
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="XML: 5"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Breach_XML-arc"
+                fill="#004bce"
+                d="M-180.164,-198.406A268,268,0,0,1,-176.717,-201.482L-118.335,-134.749A179.333,179.333,0,0,0,-120.475,-132.839Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="XML: 5"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(228.253deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            XML
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            XML
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="JSON: 10"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Breach_JSON-arc"
+                fill="#004bce"
+                d="M-176.211,-201.925A268,268,0,0,1,-168.624,-208.302L-112.922,-139.316A179.333,179.333,0,0,0,-117.828,-135.192Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="JSON: 10"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(229.95deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            JSON
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            JSON
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="HTTPS: 152"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Breach_HTTPS-arc"
+                fill="#004bce"
+                d="M-168.101,-208.725A268,268,0,0,1,-21.481,-267.138L-14.485,-178.747A179.333,179.333,0,0,0,-112.399,-139.739Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="HTTPS: 152"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(248.278deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            HTTPS
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            HTTPS
+          </text>
+        </g>
+        <g tabindex="0"
+           aria-label="SSH: 20"
+           role="graphics-document"
+        >
+          <path id="ref-4-series-undefined_Breach_SSH-arc"
+                fill="#004bce"
+                d="M-20.811,-267.191A268,268,0,0,1,-0.336,-268L-0.336,-179.333A179.333,179.333,0,0,0,-13.815,-178.8Z"
+                role="graphics-symbol"
+                tabindex="0"
+                aria-label="SSH: 20"
+                opacity="1"
+                style="cursor: pointer;"
+          >
+          </path>
+        </g>
+        <g font-family="sans-serif"
+           font-size="14"
+           opacity="1"
+           style="transform: rotate(267.737deg) translate(224.167px, 0px) rotate(180deg);"
+        >
+          <title>
+            SSH
+          </title>
+          <text fill="#ffffff"
+                dy="0.35em"
+                text-anchor="middle"
+                style="pointer-events: none; user-select: none;"
+          >
+            SSH
+          </text>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(225, 225)">
+      <g tabindex="0"
+         aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Lateral_Movement-arc"
+              fill="url(#gradient-ref-2-series-undefined_Lateral_Movement-arc)"
+              d="M0.281,-149A149,149,0,0,1,148.694,-9.543L74.837,-4.943A75,75,0,0,0,0.281,-74.999Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Lateral_Movement-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-46.7819deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Lateral Movement
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Lateral…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: No value"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Lateral_Movement_XML-arc"
+              fill="url(#gradient-ref-2-series-undefined_Lateral_Movement_XML-arc)"
+              d="M0,-224L0,-150Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: No value"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Lateral_Movement_XML-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#004bce"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#004bce"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 120"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Lateral_Movement_JSON-arc"
+              fill="url(#gradient-ref-2-series-undefined_Lateral_Movement_JSON-arc)"
+              d="M0.281,-224A224,224,0,0,1,101.975,-199.442L68.204,-133.597A150,150,0,0,0,0.281,-150Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 120"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Lateral_Movement_JSON-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#004bce"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#004bce"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-76.4236deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 150"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Lateral_Movement_HTTPS-arc"
+              fill="url(#gradient-ref-2-series-undefined_Lateral_Movement_HTTPS-arc)"
+              d="M102.476,-199.185A224,224,0,0,1,195.956,-108.523L131.175,-72.753A150,150,0,0,0,68.705,-133.34Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 150"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Lateral_Movement_HTTPS-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#004bce"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#004bce"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-45.8768deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 112"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Lateral_Movement_SSH-arc"
+              fill="url(#gradient-ref-2-series-undefined_Lateral_Movement_SSH-arc)"
+              d="M196.228,-108.031A224,224,0,0,1,223.549,-14.205L149.692,-9.605A150,150,0,0,0,131.447,-72.261Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 112"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Lateral_Movement_SSH-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#004bce"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#004bce"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-16.2351deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Discovery-arc"
+              fill="url(#gradient-ref-2-series-undefined_Discovery-arc)"
+              d="M148.729,-8.981A149,149,0,0,1,92.215,117.036L46.526,58.824A75,75,0,0,0,74.872,-4.381Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Discovery-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#194dd1"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#194dd1"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(24.1546deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Discovery
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Discovery
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 100"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Discovery_XML-arc"
+              fill="url(#gradient-ref-2-series-undefined_Discovery_XML-arc)"
+              d="M223.584,-13.643A224,224,0,0,1,211.807,72.896L141.865,48.726A150,150,0,0,0,149.727,-9.043Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 100"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Discovery_XML-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0039b8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0039b8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(7.74984deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 34"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Discovery_JSON-arc"
+              fill="url(#gradient-ref-2-series-undefined_Discovery_JSON-arc)"
+              d="M211.623,73.428A224,224,0,0,1,200.142,100.594L134.065,67.279A150,150,0,0,0,141.681,49.258Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 34"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Discovery_JSON-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0039b8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0039b8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(22.9101deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: No value"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Discovery_HTTPS-arc"
+              fill="url(#gradient-ref-2-series-undefined_Discovery_HTTPS-arc)"
+              d="M200.015,100.846L133.939,67.531Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: No value"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Discovery_HTTPS-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0039b8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0039b8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 111"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Discovery_SSH-arc"
+              fill="url(#gradient-ref-2-series-undefined_Discovery_SSH-arc)"
+              d="M199.889,101.097A224,224,0,0,1,138.52,176.035L92.832,117.823A150,150,0,0,0,133.812,67.782Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 111"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Discovery_SSH-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0039b8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0039b8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(39.3149deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Exploitation-arc"
+              fill="url(#gradient-ref-2-series-undefined_Exploitation-arc)"
+              d="M91.772,117.383A149,149,0,0,1,-71.648,130.643L-35.942,65.827A75,75,0,0,0,46.084,59.172Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Exploitation-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#154acc"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#154acc"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(85.3614deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Exploitation
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Exploitat…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 70"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Exploitation_XML-arc"
+              fill="url(#gradient-ref-2-series-undefined_Exploitation_XML-arc)"
+              d="M138.078,176.382A224,224,0,0,1,85.214,207.158L57.149,138.687A150,150,0,0,0,92.39,118.17Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 70"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Exploitation_XML-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0036b3"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0036b3"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(59.7926deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 1"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Exploitation_JSON-arc"
+              fill="url(#gradient-ref-2-series-undefined_Exploitation_JSON-arc)"
+              d="M84.852,207.307A224,224,0,0,1,84.238,207.557L56.443,138.975A150,150,0,0,0,56.786,138.836Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 1"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Exploitation_JSON-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0036b3"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0036b3"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(67.8253deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 110"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Exploitation_HTTPS-arc"
+              fill="url(#gradient-ref-2-series-undefined_Exploitation_HTTPS-arc)"
+              d="M83.874,207.704A224,224,0,0,1,-10.772,223.741L-7.121,149.831A150,150,0,0,0,56.08,139.122Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 110"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Exploitation_HTTPS-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0036b3"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0036b3"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(80.3834deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 115"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Exploitation_SSH-arc"
+              fill="url(#gradient-ref-2-series-undefined_Exploitation_SSH-arc)"
+              d="M-11.334,223.713A224,224,0,0,1,-107.837,196.334L-72.131,131.519A150,150,0,0,0,-7.683,149.803Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 115"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Exploitation_SSH-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0036b3"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0036b3"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(105.839deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Threat_Intelligence-arc"
+              fill="url(#gradient-ref-2-series-undefined_Threat_Intelligence-arc)"
+              d="M-72.141,130.371A149,149,0,0,1,-100.512,-109.993L-50.696,-55.271A75,75,0,0,0,-36.435,65.555Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Threat_Intelligence-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#1046c8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#1046c8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(173.268deg) translate(112.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          Threat Intelligence
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Threat…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 1"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Threat_Intelligence_XML-arc"
+              fill="url(#gradient-ref-2-series-undefined_Threat_Intelligence_XML-arc)"
+              d="M-108.181,196.145A224,224,0,0,1,-108.76,195.824L-72.798,131.15A150,150,0,0,0,-72.474,131.33Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 1"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Threat_Intelligence_XML-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0032af"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0032af"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(118.963deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 120"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Threat_Intelligence_JSON-arc"
+              fill="url(#gradient-ref-2-series-undefined_Threat_Intelligence_JSON-arc)"
+              d="M-109.103,195.634A224,224,0,0,1,-186.047,124.75L-124.533,83.615A150,150,0,0,0,-73.141,130.959Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 120"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Threat_Intelligence_JSON-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0032af"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0032af"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(132.652deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 200"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Threat_Intelligence_HTTPS-arc"
+              fill="url(#gradient-ref-2-series-undefined_Threat_Intelligence_HTTPS-arc)"
+              d="M-186.359,124.283A224,224,0,0,1,-219.572,-44.319L-147.053,-29.587A150,150,0,0,0,-124.846,83.148Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 200"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Threat_Intelligence_HTTPS-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0032af"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0032af"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(168.856deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 160"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Threat_Intelligence_SSH-arc"
+              fill="url(#gradient-ref-2-series-undefined_Threat_Intelligence_SSH-arc)"
+              d="M-219.46,-44.87A224,224,0,0,1,-151,-165.454L-101.185,-110.732A150,150,0,0,0,-146.941,-30.138Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 160"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Threat_Intelligence_SSH-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0032af"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0032af"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(209.585deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Breach-arc"
+              fill="url(#gradient-ref-2-series-undefined_Breach-arc)"
+              d="M-100.096,-110.371A149,149,0,0,1,-0.281,-149L-0.281,-74.999A75,75,0,0,0,-50.28,-55.65Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Breach-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#0c42c3"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#0c42c3"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(248.843deg) translate(112.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          Breach
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Breach
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 5"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Breach_XML-arc"
+              fill="url(#gradient-ref-2-series-undefined_Breach_XML-arc)"
+              d="M-150.584,-165.832A224,224,0,0,1,-147.704,-168.403L-98.979,-112.708A150,150,0,0,0,-100.769,-111.111Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 5"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Breach_XML-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#002eaa"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#002eaa"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(228.253deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 10"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Breach_JSON-arc"
+              fill="url(#gradient-ref-2-series-undefined_Breach_JSON-arc)"
+              d="M-147.281,-168.773A224,224,0,0,1,-140.94,-174.103L-94.452,-116.528A150,150,0,0,0,-98.555,-113.079Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 10"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Breach_JSON-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#002eaa"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#002eaa"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(229.95deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 152"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Breach_HTTPS-arc"
+              fill="url(#gradient-ref-2-series-undefined_Breach_HTTPS-arc)"
+              d="M-140.502,-174.457A224,224,0,0,1,-17.954,-223.279L-12.116,-149.51A150,150,0,0,0,-94.014,-116.882Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 152"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Breach_HTTPS-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#002eaa"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#002eaa"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(248.278deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 20"
+         role="graphics-document"
+      >
+        <path id="ref-2-series-undefined_Breach_SSH-arc"
+              fill="url(#gradient-ref-2-series-undefined_Breach_SSH-arc)"
+              d="M-17.394,-223.324A224,224,0,0,1,-0.281,-224L-0.281,-150A150,150,0,0,0,-11.555,-149.554Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 20"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-2-series-undefined_Breach_SSH-arc"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#002eaa"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#002eaa"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(267.737deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(225, 225)">
+      <g tabindex="0"
+         aria-label="Network: [object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Network-arc"
+              fill="#2d60e8"
+              d="M0.281,-111.5A111.5,111.5,0,0,1,109.696,19.976L55.365,9.94A56.25,56.25,0,0,0,0.281,-56.249Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Network: [object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-39.7674deg) translate(84.375px, 0px) rotate(0deg);"
+      >
+        <title>
+          Network
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Network
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Traffic: [object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Network_Traffic-arc"
+              fill="#004bce"
+              d="M0.281,-167.75A167.75,167.75,0,0,1,165.01,30.193L110.679,20.158A112.5,112.5,0,0,0,0.281,-112.5Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Traffic: [object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-39.7674deg) translate(140.625px, 0px) rotate(0deg);"
+      >
+        <title>
+          Traffic
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Traffic
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTP: 100"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Network_Traffic_HTTP-arc"
+              fill="#0037b5"
+              d="M0.281,-224A224,224,0,0,1,123.361,-186.971L92.876,-140.892A168.75,168.75,0,0,0,0.281,-168.75Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTP: 100"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-73.2558deg) translate(196.875px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTP
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTP
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 200"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Network_Traffic_HTTPS-arc"
+              fill="#0037b5"
+              d="M123.83,-186.66A224,224,0,0,1,220.325,40.41L165.994,30.375A168.75,168.75,0,0,0,93.345,-140.582Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 200"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-23.0233deg) translate(196.875px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="FileTransfer: [object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_FileTransfer-arc"
+              fill="#1d51d6"
+              d="M109.594,20.529A111.5,111.5,0,0,1,70.913,86.044L35.882,43.319A56.25,56.25,0,0,0,55.263,10.494Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="FileTransfer: [object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(30.5581deg) translate(84.375px, 0px) rotate(0deg);"
+      >
+        <title>
+          FileTransfer
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          FileTrans…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Protocol: [object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_FileTransfer_Protocol-arc"
+              fill="#003dbc"
+              d="M164.908,30.746A167.75,167.75,0,0,1,106.578,129.543L71.547,86.818A112.5,112.5,0,0,0,110.577,20.711Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Protocol: [object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(30.5581deg) translate(140.625px, 0px) rotate(0deg);"
+      >
+        <title>
+          Protocol
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Protocol
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="FTP: 50"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_FileTransfer_Protocol_FTP-arc"
+              fill="#002aa3"
+              d="M220.223,40.963A224,224,0,0,1,199.341,102.172L150.205,76.909A168.75,168.75,0,0,0,165.892,30.928Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="FTP: 50"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(18.8372deg) translate(196.875px, 0px) rotate(0deg);"
+      >
+        <title>
+          FTP
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          FTP
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SFTP: 70"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_FileTransfer_Protocol_SFTP-arc"
+              fill="#002aa3"
+              d="M199.084,102.672A224,224,0,0,1,142.242,173.041L107.212,130.316A168.75,168.75,0,0,0,149.948,77.41Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SFTP: 70"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(38.9302deg) translate(196.875px, 0px) rotate(0deg);"
+      >
+        <title>
+          SFTP
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SFTP
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Database: [object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Database-arc"
+              fill="#0c42c3"
+              d="M70.478,86.401A111.5,111.5,0,0,1,-33.412,106.376L-16.723,53.707A56.25,56.25,0,0,0,35.447,43.676Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Database: [object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(79.1163deg) translate(84.375px, 0px) rotate(0deg);"
+      >
+        <title>
+          Database
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Database
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Queries: [object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Database_Queries-arc"
+              fill="#002eaa"
+              d="M106.143,129.899A167.75,167.75,0,0,1,-50.402,159.999L-33.714,107.33A112.5,112.5,0,0,0,71.112,87.174Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Queries: [object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(79.1163deg) translate(140.625px, 0px) rotate(0deg);"
+      >
+        <title>
+          Queries
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Queries
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SELECT: 150"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Database_Queries_SELECT-arc"
+              fill="#001c91"
+              d="M141.807,173.397A224,224,0,0,1,-42.019,220.024L-31.587,165.767A168.75,168.75,0,0,0,106.777,130.673Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SELECT: 150"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(75.7674deg) translate(196.875px, 0px) rotate(0deg);"
+      >
+        <title>
+          SELECT
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SELECT
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="INSERT: 20"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Database_Queries_INSERT-arc"
+              fill="#001c91"
+              d="M-42.571,219.917A224,224,0,0,1,-67.393,213.621L-50.705,160.952A168.75,168.75,0,0,0,-32.139,165.661Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="INSERT: 20"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(104.233deg) translate(196.875px, 0px) rotate(180deg);"
+      >
+        <title>
+          INSERT
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          INSERT
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Authentication: [object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Authentication-arc"
+              fill="#2d60e8"
+              d="M-33.948,106.206A111.5,111.5,0,0,1,-80.074,77.591L-40.299,39.244A56.25,56.25,0,0,0,-17.259,53.537Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Authentication: [object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(121.814deg) translate(84.375px, 0px) rotate(180deg);"
+      >
+        <title>
+          Authentication
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Authentic…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Methods: [object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Authentication_Methods-arc"
+              fill="#004bce"
+              d="M-50.939,159.829A167.75,167.75,0,0,1,-120.568,116.633L-80.794,78.286A112.5,112.5,0,0,0,-34.25,107.16Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Methods: [object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(121.814deg) translate(140.625px, 0px) rotate(180deg);"
+      >
+        <title>
+          Methods
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Methods
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="OAuth: 60"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Authentication_Methods_OAuth-arc"
+              fill="#0037b5"
+              d="M-67.93,213.452A224,224,0,0,1,-136.68,177.467L-102.913,133.737A168.75,168.75,0,0,0,-51.241,160.782Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="OAuth: 60"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(117.628deg) translate(196.875px, 0px) rotate(180deg);"
+      >
+        <title>
+          OAuth
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          OAuth
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SAML: 25"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Authentication_Methods_SAML-arc"
+              fill="#0037b5"
+              d="M-137.125,177.123A224,224,0,0,1,-161.063,155.675L-121.288,117.327A168.75,168.75,0,0,0,-103.358,133.393Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SAML: 25"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(131.86deg) translate(196.875px, 0px) rotate(180deg);"
+      >
+        <title>
+          SAML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SAML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Storage: [object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Storage-arc"
+              fill="#1d51d6"
+              d="M-80.464,77.187A111.5,111.5,0,0,1,-0.281,-111.5L-0.281,-56.249A56.25,56.25,0,0,0,-40.689,38.839Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Storage: [object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(203.023deg) translate(84.375px, 0px) rotate(180deg);"
+      >
+        <title>
+          Storage
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Storage
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Types: [object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Storage_Types-arc"
+              fill="#003dbc"
+              d="M-120.959,116.228A167.75,167.75,0,0,1,-0.281,-167.75L-0.281,-112.5A112.5,112.5,0,0,0,-81.184,77.881Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Types: [object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(203.023deg) translate(140.625px, 0px) rotate(180deg);"
+      >
+        <title>
+          Types
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Types
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSD: 300"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Storage_Types_SSD-arc"
+              fill="#002aa3"
+              d="M-161.453,155.27A224,224,0,0,1,-123.83,-186.66L-93.345,-140.582A168.75,168.75,0,0,0,-121.679,116.922Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSD: 300"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(186.279deg) translate(196.875px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSD
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSD
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HDD: 100"
+         role="graphics-document"
+      >
+        <path id="ref-5-series-undefined_Storage_Types_HDD-arc"
+              fill="#002aa3"
+              d="M-123.361,-186.971A224,224,0,0,1,-0.281,-224L-0.281,-168.75A168.75,168.75,0,0,0,-92.876,-140.892Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HDD: 100"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(253.256deg) translate(196.875px, 0px) rotate(180deg);"
+      >
+        <title>
+          HDD
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HDD
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(225, 225)">
+      <g tabindex="0"
+         aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Lateral_Movement-arc"
+              fill="#2d60e8"
+              d="M0.281,-149A149,149,0,0,1,148.694,-9.543L74.837,-4.943A75,75,0,0,0,0.281,-74.999Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-46.7819deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Lateral Movement
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Lateral…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: No value"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Lateral_Movement_XML-arc"
+              fill="#004bce"
+              d="M0,-224L0,-150Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: No value"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 120"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Lateral_Movement_JSON-arc"
+              fill="#004bce"
+              d="M0.281,-224A224,224,0,0,1,101.975,-199.442L68.204,-133.597A150,150,0,0,0,0.281,-150Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 120"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-76.4236deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 150"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Lateral_Movement_HTTPS-arc"
+              fill="#004bce"
+              d="M102.476,-199.185A224,224,0,0,1,195.956,-108.523L131.175,-72.753A150,150,0,0,0,68.705,-133.34Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 150"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-45.8768deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 112"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Lateral_Movement_SSH-arc"
+              fill="#004bce"
+              d="M196.228,-108.031A224,224,0,0,1,223.549,-14.205L149.692,-9.605A150,150,0,0,0,131.447,-72.261Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 112"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-16.2351deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Discovery-arc"
+              fill="#28c8c3"
+              d="M148.729,-8.981A149,149,0,0,1,92.215,117.036L46.526,58.824A75,75,0,0,0,74.872,-4.381Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(24.1546deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Discovery
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Discovery
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 100"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Discovery_XML-arc"
+              fill="#00afab"
+              d="M223.584,-13.643A224,224,0,0,1,211.807,72.896L141.865,48.726A150,150,0,0,0,149.727,-9.043Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 100"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(7.74984deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 34"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Discovery_JSON-arc"
+              fill="#00afab"
+              d="M211.623,73.428A224,224,0,0,1,200.142,100.594L134.065,67.279A150,150,0,0,0,141.681,49.258Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 34"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(22.9101deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: No value"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Discovery_HTTPS-arc"
+              fill="#00afab"
+              d="M200.015,100.846L133.939,67.531Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: No value"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 111"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Discovery_SSH-arc"
+              fill="#00afab"
+              d="M199.889,101.097A224,224,0,0,1,138.52,176.035L92.832,117.823A150,150,0,0,0,133.812,67.782Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 111"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(39.3149deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Exploitation-arc"
+              fill="#27dcbc"
+              d="M91.772,117.383A149,149,0,0,1,-71.648,130.643L-35.942,65.827A75,75,0,0,0,46.084,59.172Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(85.3614deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Exploitation
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Exploitat…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 70"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Exploitation_XML-arc"
+              fill="#00c2a4"
+              d="M138.078,176.382A224,224,0,0,1,85.214,207.158L57.149,138.687A150,150,0,0,0,92.39,118.17Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 70"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(59.7926deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 1"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Exploitation_JSON-arc"
+              fill="#00c2a4"
+              d="M84.852,207.307A224,224,0,0,1,84.238,207.557L56.443,138.975A150,150,0,0,0,56.786,138.836Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 1"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(67.8253deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 110"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Exploitation_HTTPS-arc"
+              fill="#00c2a4"
+              d="M83.874,207.704A224,224,0,0,1,-10.772,223.741L-7.121,149.831A150,150,0,0,0,56.08,139.122Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 110"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(80.3834deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 115"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Exploitation_SSH-arc"
+              fill="#00c2a4"
+              d="M-11.334,223.713A224,224,0,0,1,-107.837,196.334L-72.131,131.519A150,150,0,0,0,-7.683,149.803Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 115"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(105.839deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Threat_Intelligence-arc"
+              fill="#26efb5"
+              d="M-72.141,130.371A149,149,0,0,1,-100.512,-109.993L-50.696,-55.271A75,75,0,0,0,-36.435,65.555Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(173.268deg) translate(112.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          Threat Intelligence
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Threat…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 1"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Threat_Intelligence_XML-arc"
+              fill="#00d59d"
+              d="M-108.181,196.145A224,224,0,0,1,-108.76,195.824L-72.798,131.15A150,150,0,0,0,-72.474,131.33Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 1"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(118.963deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 120"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Threat_Intelligence_JSON-arc"
+              fill="#00d59d"
+              d="M-109.103,195.634A224,224,0,0,1,-186.047,124.75L-124.533,83.615A150,150,0,0,0,-73.141,130.959Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 120"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(132.652deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 200"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Threat_Intelligence_HTTPS-arc"
+              fill="#00d59d"
+              d="M-186.359,124.283A224,224,0,0,1,-219.572,-44.319L-147.053,-29.587A150,150,0,0,0,-124.846,83.148Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 200"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(168.856deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 160"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Threat_Intelligence_SSH-arc"
+              fill="#00d59d"
+              d="M-219.46,-44.87A224,224,0,0,1,-151,-165.454L-101.185,-110.732A150,150,0,0,0,-146.941,-30.138Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 160"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(209.585deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Breach-arc"
+              fill="#2d60e8"
+              d="M-100.096,-110.371A149,149,0,0,1,-0.281,-149L-0.281,-74.999A75,75,0,0,0,-50.28,-55.65Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(248.843deg) translate(112.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          Breach
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Breach
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 5"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Breach_XML-arc"
+              fill="#004bce"
+              d="M-150.584,-165.832A224,224,0,0,1,-147.704,-168.403L-98.979,-112.708A150,150,0,0,0,-100.769,-111.111Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 5"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(228.253deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 10"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Breach_JSON-arc"
+              fill="#004bce"
+              d="M-147.281,-168.773A224,224,0,0,1,-140.94,-174.103L-94.452,-116.528A150,150,0,0,0,-98.555,-113.079Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 10"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(229.95deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 152"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Breach_HTTPS-arc"
+              fill="#004bce"
+              d="M-140.502,-174.457A224,224,0,0,1,-17.954,-223.279L-12.116,-149.51A150,150,0,0,0,-94.014,-116.882Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 152"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(248.278deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 20"
+         role="graphics-document"
+      >
+        <path id="ref-3-series-undefined_Breach_SSH-arc"
+              fill="#004bce"
+              d="M-17.394,-223.324A224,224,0,0,1,-0.281,-224L-0.281,-150A150,150,0,0,0,-11.555,-149.554Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 20"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(267.737deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(225, 225)">
+      <g tabindex="0"
+         aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Lateral_Movement-arc"
+              fill="#2d60e8"
+              d="M0.281,-149A149,149,0,0,1,148.694,-9.543L74.837,-4.943A75,75,0,0,0,0.281,-74.999Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-46.7819deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Lateral Movement
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Lateral…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: No value"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Lateral_Movement_XML-arc"
+              fill="#004bce"
+              d="M0,-224L0,-150Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: No value"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 120"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Lateral_Movement_JSON-arc"
+              fill="#004bce"
+              d="M0.281,-224A224,224,0,0,1,101.975,-199.442L68.204,-133.597A150,150,0,0,0,0.281,-150Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 120"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-76.4236deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 150"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Lateral_Movement_HTTPS-arc"
+              fill="#004bce"
+              d="M102.476,-199.185A224,224,0,0,1,195.956,-108.523L131.175,-72.753A150,150,0,0,0,68.705,-133.34Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 150"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-45.8768deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 112"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Lateral_Movement_SSH-arc"
+              fill="#004bce"
+              d="M196.228,-108.031A224,224,0,0,1,223.549,-14.205L149.692,-9.605A150,150,0,0,0,131.447,-72.261Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 112"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(-16.2351deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Discovery-arc"
+              fill="#28c8c3"
+              d="M148.729,-8.981A149,149,0,0,1,92.215,117.036L46.526,58.824A75,75,0,0,0,74.872,-4.381Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(24.1546deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Discovery
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Discovery
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 100"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Discovery_XML-arc"
+              fill="#00afab"
+              d="M223.584,-13.643A224,224,0,0,1,211.807,72.896L141.865,48.726A150,150,0,0,0,149.727,-9.043Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 100"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(7.74984deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 34"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Discovery_JSON-arc"
+              fill="#00afab"
+              d="M211.623,73.428A224,224,0,0,1,200.142,100.594L134.065,67.279A150,150,0,0,0,141.681,49.258Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 34"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(22.9101deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: No value"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Discovery_HTTPS-arc"
+              fill="#00afab"
+              d="M200.015,100.846L133.939,67.531Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: No value"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 111"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Discovery_SSH-arc"
+              fill="#00afab"
+              d="M199.889,101.097A224,224,0,0,1,138.52,176.035L92.832,117.823A150,150,0,0,0,133.812,67.782Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 111"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(39.3149deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Exploitation-arc"
+              fill="#27dcbc"
+              d="M91.772,117.383A149,149,0,0,1,-71.648,130.643L-35.942,65.827A75,75,0,0,0,46.084,59.172Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(85.3614deg) translate(112.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          Exploitation
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Exploitat…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 70"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Exploitation_XML-arc"
+              fill="#00c2a4"
+              d="M138.078,176.382A224,224,0,0,1,85.214,207.158L57.149,138.687A150,150,0,0,0,92.39,118.17Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 70"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(59.7926deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 1"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Exploitation_JSON-arc"
+              fill="#00c2a4"
+              d="M84.852,207.307A224,224,0,0,1,84.238,207.557L56.443,138.975A150,150,0,0,0,56.786,138.836Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 1"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(67.8253deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 110"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Exploitation_HTTPS-arc"
+              fill="#00c2a4"
+              d="M83.874,207.704A224,224,0,0,1,-10.772,223.741L-7.121,149.831A150,150,0,0,0,56.08,139.122Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 110"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(80.3834deg) translate(187.5px, 0px) rotate(0deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 115"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Exploitation_SSH-arc"
+              fill="#00c2a4"
+              d="M-11.334,223.713A224,224,0,0,1,-107.837,196.334L-72.131,131.519A150,150,0,0,0,-7.683,149.803Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 115"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(105.839deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Threat_Intelligence-arc"
+              fill="#26efb5"
+              d="M-72.141,130.371A149,149,0,0,1,-100.512,-109.993L-50.696,-55.271A75,75,0,0,0,-36.435,65.555Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(173.268deg) translate(112.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          Threat Intelligence
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Threat…
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 1"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Threat_Intelligence_XML-arc"
+              fill="#00d59d"
+              d="M-108.181,196.145A224,224,0,0,1,-108.76,195.824L-72.798,131.15A150,150,0,0,0,-72.474,131.33Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 1"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(118.963deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 120"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Threat_Intelligence_JSON-arc"
+              fill="#00d59d"
+              d="M-109.103,195.634A224,224,0,0,1,-186.047,124.75L-124.533,83.615A150,150,0,0,0,-73.141,130.959Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 120"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(132.652deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 200"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Threat_Intelligence_HTTPS-arc"
+              fill="#00d59d"
+              d="M-186.359,124.283A224,224,0,0,1,-219.572,-44.319L-147.053,-29.587A150,150,0,0,0,-124.846,83.148Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 200"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(168.856deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 160"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Threat_Intelligence_SSH-arc"
+              fill="#00d59d"
+              d="M-219.46,-44.87A224,224,0,0,1,-151,-165.454L-101.185,-110.732A150,150,0,0,0,-146.941,-30.138Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 160"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(209.585deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#000000"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Breach-arc"
+              fill="#2d60e8"
+              d="M-100.096,-110.371A149,149,0,0,1,-0.281,-149L-0.281,-74.999A75,75,0,0,0,-50.28,-55.65Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(248.843deg) translate(112.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          Breach
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          Breach
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="XML: 5"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Breach_XML-arc"
+              fill="#004bce"
+              d="M-150.584,-165.832A224,224,0,0,1,-147.704,-168.403L-98.979,-112.708A150,150,0,0,0,-100.769,-111.111Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="XML: 5"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(228.253deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          XML
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          XML
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="JSON: 10"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Breach_JSON-arc"
+              fill="#004bce"
+              d="M-147.281,-168.773A224,224,0,0,1,-140.94,-174.103L-94.452,-116.528A150,150,0,0,0,-98.555,-113.079Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="JSON: 10"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(229.95deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          JSON
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          JSON
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="HTTPS: 152"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Breach_HTTPS-arc"
+              fill="#004bce"
+              d="M-140.502,-174.457A224,224,0,0,1,-17.954,-223.279L-12.116,-149.51A150,150,0,0,0,-94.014,-116.882Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="HTTPS: 152"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(248.278deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          HTTPS
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          HTTPS
+        </text>
+      </g>
+      <g tabindex="0"
+         aria-label="SSH: 20"
+         role="graphics-document"
+      >
+        <path id="ref-1-series-undefined_Breach_SSH-arc"
+              fill="#004bce"
+              d="M-17.394,-223.324A224,224,0,0,1,-0.281,-224L-0.281,-150A150,150,0,0,0,-11.555,-149.554Z"
+              role="graphics-symbol"
+              tabindex="0"
+              aria-label="SSH: 20"
+              opacity="1"
+              style="cursor: pointer;"
+        >
+        </path>
+      </g>
+      <g font-family="sans-serif"
+         font-size="14"
+         opacity="1"
+         style="transform: rotate(267.737deg) translate(187.5px, 0px) rotate(180deg);"
+      >
+        <title>
+          SSH
+        </title>
+        <text fill="#ffffff"
+              dy="0.35em"
+              text-anchor="middle"
+              style="pointer-events: none; user-select: none;"
+        >
+          SSH
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

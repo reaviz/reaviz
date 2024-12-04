@@ -1,0 +1,577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Bar List Empty smoke-test 1`] = `
+<style>
+  .bar {
+          border-radius: 5px;
+        }
+        .outer {
+          background: rgba(0, 0, 0, .2);
+          border-radius: 5px;
+        }
+        .value {
+          opacity: .5;
+        }
+</style>
+<section role="list"
+         id="ref-5"
+         style="width: 350px;"
+>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Vulnerability Patch"
+           class="_label_18e6r_8"
+    >
+      Vulnerability Patch
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Vulnerability Patch: No value"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 0%;"
+      >
+      </div>
+    </div>
+    <label title="0"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        0
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Critical Failure"
+           class="_label_18e6r_8"
+    >
+      Critical Failure
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Critical Failure: No value"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 0%;"
+      >
+      </div>
+    </div>
+    <label title="0"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        0
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Physical Intrusion"
+           class="_label_18e6r_8"
+    >
+      Physical Intrusion
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Physical Intrusion: No value"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 0%;"
+      >
+      </div>
+    </div>
+    <label title="0"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        0
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Phishing Attempts"
+           class="_label_18e6r_8"
+    >
+      Phishing Attempts
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Phishing Attempts: No value"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 0%;"
+      >
+      </div>
+    </div>
+    <label title="0"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        0
+      </small>
+    </label>
+  </div>
+</section>
+`;
+
+exports[`Charts/Bar List Events smoke-test 1`] = `
+<section role="list"
+         id="ref-3"
+         style="width: 350px;"
+>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Phishing Attempts"
+           class="_label_18e6r_8"
+    >
+      Phishing Attempts
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Phishing Attempts: 100"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 99.9404%;"
+      >
+      </div>
+    </div>
+    <label title="100"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        100
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Vulnerability Patch"
+           class="_label_18e6r_8"
+    >
+      Vulnerability Patch
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Vulnerability Patch: 50"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 49.9702%;"
+      >
+      </div>
+    </div>
+    <label title="50"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        50
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Critical Failure"
+           class="_label_18e6r_8"
+    >
+      Critical Failure
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Critical Failure: 25"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 24.9851%;"
+      >
+      </div>
+    </div>
+    <label title="25"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        25
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Physical Intrusion"
+           class="_label_18e6r_8"
+    >
+      Physical Intrusion
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Physical Intrusion: 5"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 4.99702%;"
+      >
+      </div>
+    </div>
+    <label title="5"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        5
+      </small>
+    </label>
+  </div>
+</section>
+`;
+
+exports[`Charts/Bar List PercentageFormat smoke-test 1`] = `
+<style>
+  .bar {
+          border-radius: 5px;
+        }
+        .outer {
+          background: rgba(0, 0, 0, .2);
+          border-radius: 5px;
+        }
+        .value {
+          width: 40px;
+        }
+</style>
+<section role="list"
+         id="ref-4"
+         style="width: 350px;"
+>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Phishing Attempts"
+           class="_label_18e6r_8"
+    >
+      Phishing Attempts
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Phishing Attempts: 85"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 84.96%;"
+      >
+      </div>
+    </div>
+    <label title="85%"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        85%
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Vulnerability Patch"
+           class="_label_18e6r_8"
+    >
+      Vulnerability Patch
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Vulnerability Patch: 50"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 49.9765%;"
+      >
+      </div>
+    </div>
+    <label title="50%"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        50%
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Critical Failure"
+           class="_label_18e6r_8"
+    >
+      Critical Failure
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Critical Failure: 25"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 24.9882%;"
+      >
+      </div>
+    </div>
+    <label title="25%"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        25%
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _clickable_18e6r_77 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Physical Intrusion"
+           class="_label_18e6r_8"
+    >
+      Physical Intrusion
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Physical Intrusion: 5"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 4.99765%;"
+      >
+      </div>
+    </div>
+    <label title="5%"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        5%
+      </small>
+    </label>
+  </div>
+</section>
+`;
+
+exports[`Charts/Bar List Simple smoke-test 1`] = `
+<section role="list"
+         id="ref-1"
+         style="width: 350px;"
+>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueNone_18e6r_65 _labelTop_18e6r_42"
+  >
+    <label title="Phishing Attempts"
+           class="_label_18e6r_8"
+    >
+      Phishing Attempts
+    </label>
+    <div class="_outerBar_18e6r_97">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Phishing Attempts: 100"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 100%;"
+      >
+      </div>
+    </div>
+    <label title="100"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        100
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueNone_18e6r_65 _labelTop_18e6r_42"
+  >
+    <label title="Vulnerability Patch"
+           class="_label_18e6r_8"
+    >
+      Vulnerability Patch
+    </label>
+    <div class="_outerBar_18e6r_97">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Vulnerability Patch: 50"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 50%;"
+      >
+      </div>
+    </div>
+    <label title="50"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        50
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueNone_18e6r_65 _labelTop_18e6r_42"
+  >
+    <label title="Critical Failure"
+           class="_label_18e6r_8"
+    >
+      Critical Failure
+    </label>
+    <div class="_outerBar_18e6r_97">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Critical Failure: 25"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 25%;"
+      >
+      </div>
+    </div>
+    <label title="25"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        25
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueNone_18e6r_65 _labelTop_18e6r_42"
+  >
+    <label title="Physical Intrusion"
+           class="_label_18e6r_8"
+    >
+      Physical Intrusion
+    </label>
+    <div class="_outerBar_18e6r_97">
+      <div class="_bar_18e6r_105"
+           tabindex="0"
+           aria-label="Physical Intrusion: 5"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 5%;"
+      >
+      </div>
+    </div>
+    <label title="5"
+           class="_valueLabel_18e6r_71"
+    >
+      <small>
+        5
+      </small>
+    </label>
+  </div>
+</section>
+`;
+
+exports[`Charts/Bar List Styling smoke-test 1`] = `
+<style>
+  .bar {
+          border-radius: 5px;
+        }
+        .outer {
+          background: rgba(0, 0, 0, .2);
+          border-radius: 5px;
+        }
+        .value {
+          opacity: .5;
+        }
+</style>
+<section role="list"
+         id="ref-2"
+         style="width: 350px;"
+>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Phishing Attempts"
+           class="_label_18e6r_8"
+    >
+      Phishing Attempts
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Phishing Attempts: 100"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 99.9566%;"
+      >
+      </div>
+    </div>
+    <label title="100"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        100
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Vulnerability Patch"
+           class="_label_18e6r_8"
+    >
+      Vulnerability Patch
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Vulnerability Patch: 50"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 49.9783%;"
+      >
+      </div>
+    </div>
+    <label title="50"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        50
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Critical Failure"
+           class="_label_18e6r_8"
+    >
+      Critical Failure
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Critical Failure: 25"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 24.9892%;"
+      >
+      </div>
+    </div>
+    <label title="25"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        25
+      </small>
+    </label>
+  </div>
+  <div role="listitem"
+       class="_item_18e6r_1 _valueEnd_18e6r_9 _labelTop_18e6r_42"
+  >
+    <label title="Physical Intrusion"
+           class="_label_18e6r_8"
+    >
+      Physical Intrusion
+    </label>
+    <div class="_outerBar_18e6r_97 outer">
+      <div class="_bar_18e6r_105 bar"
+           tabindex="0"
+           aria-label="Physical Intrusion: 5"
+           role="graphics-document"
+           style="background: rgb(41, 181, 202); width: 4.99783%;"
+      >
+      </div>
+    </div>
+    <label title="5"
+           class="_valueLabel_18e6r_71 value"
+    >
+      <small>
+        5
+      </small>
+    </label>
+  </div>
+</section>
+`;
