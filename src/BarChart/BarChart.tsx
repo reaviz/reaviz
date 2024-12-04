@@ -114,8 +114,8 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   );
 
   const getMarimekkoGroupScales = useCallback(
-    (aggregatedData, axis, width: number) => {
-      const keyScale = getMarimekkoScale(width, axis.props.roundDomains);
+    (aggregatedData, axisProps, width: number) => {
+      const keyScale = getMarimekkoScale(width, axisProps.roundDomains);
 
       const groupScale = getMarimekkoGroupScale({
         width,
@@ -159,14 +159,14 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   );
 
   const getKeyScale = useCallback(
-    (aggregatedData, axis, isMultiSeries: boolean, width: number) => {
+    (aggregatedData, axisProps, isMultiSeries: boolean, width: number) => {
       return getXScale({
         width,
-        type: axis.props.type,
-        roundDomains: axis.props.roundDomains,
+        type: axisProps.type,
+        roundDomains: axisProps.roundDomains,
         data: aggregatedData,
         padding: series.props.padding,
-        domain: axis.props.domain,
+        domain: axisProps.domain,
         isMultiSeries,
         isDiverging
       });
@@ -175,14 +175,14 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   );
 
   const getValueScale = useCallback(
-    (aggregatedData, axis, isMultiSeries: boolean, height: number) => {
+    (aggregatedData, axisProps, isMultiSeries: boolean, height: number) => {
       return getYScale({
-        roundDomains: axis.props.roundDomains,
+        roundDomains: axisProps.roundDomains,
         padding: series.props.padding,
-        type: axis.props.type,
+        type: axisProps.type,
         height,
         data: aggregatedData,
-        domain: axis.props.domain,
+        domain: axisProps.domain,
         isMultiSeries,
         isDiverging
       });
@@ -253,7 +253,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         } else if (isMarimekko) {
           const { keyScale, groupScale } = getMarimekkoGroupScales(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             chartWidth
           );
           xScale = groupScale;
@@ -261,7 +261,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         } else {
           xScale = getKeyScale(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             isMultiSeries,
             chartWidth
           );
@@ -269,7 +269,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
 
         yScale = getValueScale(
           aggregatedData,
-          yAxis,
+          yAxisProps,
           isMultiSeries,
           chartHeight
         );
@@ -284,7 +284,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
           xScale1 = keyScale;
           xScale = getKeyScale(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             isMultiSeries,
             chartWidth
           );
@@ -295,13 +295,13 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         } else {
           xScale = getKeyScale(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             isMultiSeries,
             chartWidth
           );
           yScale = getValueScale(
             aggregatedData,
-            yAxis,
+            yAxisProps,
             isMultiSeries,
             chartHeight
           );
@@ -318,8 +318,8 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       getValueScale,
       isVertical,
       series.props,
-      xAxis,
-      yAxis
+      xAxisProps,
+      yAxisProps
     ]
   );
 
