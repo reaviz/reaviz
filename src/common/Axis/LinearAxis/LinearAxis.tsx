@@ -54,7 +54,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     orientation,
     visibility = 'visible',
     onDimensionsChange
-  } = { ...linearAxisDefaultProps, ...props };
+  } = { ...LINEAR_AXIS_DEFAULT_PROPS, ...props };
 
   const containerRef = createRef<SVGGElement>();
   const [dimensions, setDimensions] = useState<LinearAxisState>({
@@ -138,7 +138,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   );
 };
 
-export const linearAxisDefaultProps = {
+export const LINEAR_AXIS_DEFAULT_PROPS = {
   scaled: false,
   roundDomains: false,
   axisLine: <LinearAxisLine />,

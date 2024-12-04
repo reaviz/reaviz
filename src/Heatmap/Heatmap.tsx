@@ -16,8 +16,8 @@ import {
   LinearYAxisTickLabel,
   LinearXAxisTickLabel,
   LinearAxis,
-  linearXAxisDefaultProps,
-  linearYAxisDefaultProps
+  LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_DEFAULT_PROPS
 } from '@/common/Axis';
 import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
@@ -64,11 +64,11 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   containerClassName
 }) => {
   const xAxisProps = useMemo(
-    () => ({ ...linearXAxisDefaultProps, ...xAxis.props }),
+    () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
     [xAxis.props]
   );
   const yAxisProps = useMemo(
-    () => ({ ...linearYAxisDefaultProps, ...yAxis.props }),
+    () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
     [yAxis.props]
   );
   const getScalesData = useCallback(

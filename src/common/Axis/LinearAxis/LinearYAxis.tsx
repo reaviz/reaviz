@@ -14,7 +14,7 @@ import {
 import {
   LinearAxisProps,
   LinearAxis,
-  linearAxisDefaultProps
+  LINEAR_AXIS_DEFAULT_PROPS
 } from './LinearAxis';
 
 export const LinearYAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
@@ -46,10 +46,10 @@ LinearYAxisTickSeries.defaultProps = {
 };
 
 export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => (
-  <LinearAxis {...linearYAxisDefaultProps} {...props} />
+  <LinearAxis {...LINEAR_Y_AXIS_DEFAULT_PROPS} {...props} />
 );
-export const linearYAxisDefaultProps = {
-  ...linearAxisDefaultProps,
+export const LINEAR_Y_AXIS_DEFAULT_PROPS = {
+  ...LINEAR_AXIS_DEFAULT_PROPS,
   orientation: 'vertical',
   scaled: false,
   roundDomains: false,

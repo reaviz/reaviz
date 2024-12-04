@@ -14,7 +14,7 @@ import {
 import {
   LinearAxisProps,
   LinearAxis,
-  linearAxisDefaultProps
+  LINEAR_AXIS_DEFAULT_PROPS
 } from './LinearAxis';
 
 export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
@@ -46,10 +46,10 @@ LinearXAxisTickSeries.defaultProps = {
 };
 
 export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => (
-  <LinearAxis {...linearXAxisDefaultProps} {...props} />
+  <LinearAxis {...LINEAR_X_AXIS_DEFAULT_PROPS} {...props} />
 );
-export const linearXAxisDefaultProps = {
-  ...linearAxisDefaultProps,
+export const LINEAR_X_AXIS_DEFAULT_PROPS = {
+  ...LINEAR_AXIS_DEFAULT_PROPS,
   position: 'end',
   roundDomains: false,
   scaled: false,

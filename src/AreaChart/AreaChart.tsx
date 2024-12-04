@@ -16,8 +16,8 @@ import {
   LinearXAxis,
   LinearYAxis,
   LinearAxis,
-  linearYAxisDefaultProps,
-  linearXAxisDefaultProps
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
+  LINEAR_X_AXIS_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { getXScale, getYScale } from '@/common/scales';
 import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
@@ -108,11 +108,11 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
   // eslint-disable-next-line
   const [zoomControlled] = useState<boolean>(!zoom.hasOwnProperty('domain'));
   const xAxisProps = useMemo(
-    () => ({ ...linearXAxisDefaultProps, ...xAxis.props }),
+    () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
     [xAxis.props]
   );
   const yAxisProps = useMemo(
-    () => ({ ...linearYAxisDefaultProps, ...yAxis.props }),
+    () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
     [yAxis.props]
   );
 

@@ -19,8 +19,8 @@ import {
   LinearXAxis,
   LinearYAxis,
   LinearAxis,
-  linearXAxisDefaultProps,
-  linearYAxisDefaultProps
+  LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_DEFAULT_PROPS
 } from '@/common/Axis';
 import { getYScale, getXScale } from '@/common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
@@ -98,11 +98,11 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   secondaryAxis
 }) => {
   const xAxisProps = useMemo(
-    () => ({ ...linearXAxisDefaultProps, ...xAxis.props }),
+    () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
     [xAxis.props]
   );
   const yAxisProps = useMemo(
-    () => ({ ...linearYAxisDefaultProps, ...yAxis.props }),
+    () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
     [yAxis.props]
   );
   const zoomControlled = useMemo(
