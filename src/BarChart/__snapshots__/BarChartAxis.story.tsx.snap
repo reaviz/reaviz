@@ -1,0 +1,1875 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="200"
+     style="height: 200px; width: 450px;"
+>
+  <svg width="450"
+       height="200"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(13, 0)">
+      <g style="pointer-events: none;">
+        <line y1="185.71428571428572"
+              y2="185.71428571428572"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="157.14285714285714"
+              y2="157.14285714285714"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="128.57142857142856"
+              y2="128.57142857142856"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="100"
+              y2="100"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="71.42857142857142"
+              y2="71.42857142857142"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="42.85714285714286"
+              y2="42.85714285714286"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="14.28571428571428"
+              y2="14.28571428571428"
+              x1="0"
+              x2="437"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 100)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="437"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+      </g>
+      <g transform="translate(437, 0)"
+         visibility="visible"
+      >
+        <g transform="translate(0, 185.71428571428572)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 157.14285714285714)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 128.57142857142856)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 100)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 71.42857142857142)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 42.85714285714286)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 14.28571428571428)">
+          <g transform="translate(5, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="start"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <g transform="translate(0, 150)">
+          <g transform="translate(-20, -20)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Closed
+            </title>
+            <text transform="rotate(270)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Closed
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50)">
+          <g transform="translate(-20, -20)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Opened
+            </title>
+            <text transform="rotate(270)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Opened
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="200"
+              width="437"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g transform="translate(9, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/25/2020 ∙ Closed: -35"
+                  role="graphics-document"
+                  height="99.92522265349557px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-0-0)"
+                  x="19.5"
+                  y="100"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="196.92747617347163"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-0-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/25/2020 ∙ Opened: 35"
+                  role="graphics-document"
+                  height="99.92522265349557px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-0-1)"
+                  x="19.5"
+                  y="0.07545731856672683"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="0.07545731856672683"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-0-1"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(80, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/26/2020 ∙ Closed: -10"
+                  role="graphics-document"
+                  height="28.52665961559106px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-1-0)"
+                  x="19.5"
+                  y="100"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="125.53143532975135"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-1-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/26/2020 ∙ Opened: 10"
+                  role="graphics-document"
+                  height="28.52665961559109px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-1-1)"
+                  x="19.5"
+                  y="71.47476845673928"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="71.47476845673928"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-1-1"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(151, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/27/2020 ∙ Closed: -29"
+                  role="graphics-document"
+                  height="82.5811576704634px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-2-0)"
+                  x="19.5"
+                  y="100"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="179.5912040376608"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-2-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/27/2020 ∙ Opened: 29"
+                  role="graphics-document"
+                  height="82.58115767046338px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-2-1)"
+                  x="19.5"
+                  y="17.42181414422352"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="17.42181414422352"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-2-1"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(222, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/29/2020 ∙ Closed: -10"
+                  role="graphics-document"
+                  height="28.374982127822452px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-3-0)"
+                  x="19.5"
+                  y="100"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="125.39593005414142"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-3-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/29/2020 ∙ Opened: 10"
+                  role="graphics-document"
+                  height="28.37498212782248px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-3-1)"
+                  x="19.5"
+                  y="71.63113310532654"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="71.63113310532654"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-3-1"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(293, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/1/2020 ∙ Closed: -34"
+                  role="graphics-document"
+                  height="95.7498491270978px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-4-0)"
+                  x="19.5"
+                  y="100"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="192.79306008277615"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-4-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/1/2020 ∙ Opened: 34"
+                  role="graphics-document"
+                  height="95.74984912709779px"
+                  width="25px"
+                  fill="url(#gradient-bar-series-ref-10-bar-4-1)"
+                  x="19.5"
+                  y="4.2625586376966975"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="25"
+                height="3"
+                opacity="1"
+                x="19.5"
+                y="4.274714873746295"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-4-1"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(364, 0)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/2/2020 ∙ Closed: -29"
+                  role="graphics-document"
+                  height="80.42004822752249px"
+                  width="25.012462488512213px"
+                  fill="url(#gradient-bar-series-ref-10-bar-5-0)"
+                  x="19.512462488512213"
+                  y="100.01246248851221"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="25"
+                height="3"
+                opacity="0.982898868120958"
+                x="19.512462488512213"
+                y="177.50873908869625"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-5-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/2/2020 ∙ Opened: 29"
+                  role="graphics-document"
+                  height="80.42004822752247px"
+                  width="25.012462488512213px"
+                  fill="url(#gradient-bar-series-ref-10-bar-5-1)"
+                  x="19.512462488512213"
+                  y="19.60487674950195"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="25"
+                height="3"
+                opacity="0.982898868120958"
+                x="19.512462488512213"
+                y="19.60487674950195"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-10-bar-5-1"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="200"
+     style="height: 200px; width: 450px;"
+>
+  <svg width="450"
+       height="200"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g style="pointer-events: none;">
+        <line x1="0"
+              x2="0"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="32"
+              x2="32"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="64"
+              x2="64"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="96"
+              x2="96"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="129"
+              x2="129"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="161"
+              x2="161"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="193"
+              x2="193"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="225"
+              x2="225"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="257"
+              x2="257"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="289"
+              x2="289"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="321"
+              x2="321"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="354"
+              x2="354"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="386"
+              x2="386"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="418"
+              x2="418"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="450"
+              x2="450"
+              y1="0"
+              y2="170"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 170)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="450"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              35
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              35
+            </text>
+          </g>
+        </g>
+        <g transform="translate(32, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(64, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              25
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              25
+            </text>
+          </g>
+        </g>
+        <g transform="translate(96, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(129, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              15
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              15
+            </text>
+          </g>
+        </g>
+        <g transform="translate(161, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(193, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              5
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              5
+            </text>
+          </g>
+        </g>
+        <g transform="translate(225, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(257, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              5
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              5
+            </text>
+          </g>
+        </g>
+        <g transform="translate(289, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(321, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              15
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              15
+            </text>
+          </g>
+        </g>
+        <g transform="translate(354, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(386, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              25
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              25
+            </text>
+          </g>
+        </g>
+        <g transform="translate(418, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(450, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              35
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              35
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(225, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="170"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="450"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(113, 0)">
+          <g transform="translate(0, -20)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Closed
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="baseline"
+                  fill="#8F979F"
+            >
+              Closed
+            </text>
+          </g>
+        </g>
+        <g transform="translate(338, 0)">
+          <g transform="translate(0, -20)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Opened
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="baseline"
+                  fill="#8F979F"
+            >
+              Opened
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="170"
+              width="450"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g transform="translate(0, 140)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/25/2020 ∙ -35: Closed"
+                  role="graphics-document"
+                  height="10px"
+                  width="224.77271710613923px"
+                  fill="url(#gradient-bar-series-ref-1-bar-0-0)"
+                  x="0"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="3"
+                height="10"
+                opacity="1"
+                x="0"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-0-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/25/2020 ∙ 35: Opened"
+                  role="graphics-document"
+                  height="10px"
+                  width="224.77065745150705px"
+                  fill="url(#gradient-bar-series-ref-1-bar-0-1)"
+                  x="224.77065745150705"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="3"
+                height="10"
+                opacity="1"
+                x="446.543918288983"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-0-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 113)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/26/2020 ∙ -10: Closed"
+                  role="graphics-document"
+                  height="10px"
+                  width="63.96949161585302px"
+                  fill="url(#gradient-bar-series-ref-1-bar-1-0)"
+                  x="160.92292146241385"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="3"
+                height="10"
+                opacity="1"
+                x="160.92292146241385"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-1-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/26/2020 ∙ 10: Opened"
+                  role="graphics-document"
+                  height="10px"
+                  width="63.96949161585302px"
+                  fill="url(#gradient-bar-series-ref-1-bar-1-1)"
+                  x="224.8921947632375"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="3"
+                height="10"
+                opacity="1"
+                x="285.862908378085"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-1-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 86)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/27/2020 ∙ -29: Closed"
+                  role="graphics-document"
+                  height="10px"
+                  width="185.95836479388237px"
+                  fill="url(#gradient-bar-series-ref-1-bar-2-0)"
+                  x="39"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="3"
+                height="10"
+                opacity="1"
+                x="39"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-2-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/27/2020 ∙ 29: Opened"
+                  role="graphics-document"
+                  height="10px"
+                  width="185.95836479388237px"
+                  fill="url(#gradient-bar-series-ref-1-bar-2-1)"
+                  x="224.9496132865736"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="3"
+                height="10"
+                opacity="1"
+                x="407.9085485215093"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-2-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 59)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/29/2020 ∙ -10: Closed"
+                  role="graphics-document"
+                  height="10px"
+                  width="64px"
+                  fill="url(#gradient-bar-series-ref-1-bar-3-0)"
+                  x="160.98324522352735"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="3"
+                height="10"
+                opacity="1"
+                x="160.98324522352735"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-3-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/29/2020 ∙ 10: Opened"
+                  role="graphics-document"
+                  height="10px"
+                  width="64px"
+                  fill="url(#gradient-bar-series-ref-1-bar-3-1)"
+                  x="224.9765658283072"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="3"
+                height="10"
+                opacity="1"
+                x="285.970199529738"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-3-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 32)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/1/2020 ∙ -34: Closed"
+                  role="graphics-document"
+                  height="10px"
+                  width="218.98943790835844px"
+                  fill="url(#gradient-bar-series-ref-1-bar-4-0)"
+                  x="6"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="3"
+                height="10"
+                opacity="1"
+                x="6"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-4-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/1/2020 ∙ 34: Opened"
+                  role="graphics-document"
+                  height="10px"
+                  width="218.98943790835844px"
+                  fill="url(#gradient-bar-series-ref-1-bar-4-1)"
+                  x="224.98914792280235"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="3"
+                height="10"
+                opacity="1"
+                x="440.9787084427827"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-4-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 5)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/2/2020 ∙ -29: Closed"
+                  role="graphics-document"
+                  height="10px"
+                  width="186px"
+                  fill="url(#gradient-bar-series-ref-1-bar-5-0)"
+                  x="39"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#ACB7C9"
+                width="3"
+                height="10"
+                opacity="1"
+                x="39"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-5-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.25"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#ACB7C9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/2/2020 ∙ 29: Opened"
+                  role="graphics-document"
+                  height="10px"
+                  width="186px"
+                  fill="url(#gradient-bar-series-ref-1-bar-5-1)"
+                  x="225"
+                  y="7"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418AD7"
+                width="3"
+                height="10"
+                opacity="1"
+                x="408"
+                y="7"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-5-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.7"
+                  stop-color="#418AD7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.25"
+                  stop-color="#418AD7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

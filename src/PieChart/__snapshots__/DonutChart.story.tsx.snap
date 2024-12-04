@@ -1,0 +1,689 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Pie Chart/Donut InnerLabel smoke-test 1`] = `
+<div style="position: relative; height: 250px; width: 350px; align-items: center; display: flex; justify-content: center;">
+  <div style="position: absolute; top: 0px; left: 0px;">
+    <div class="_container_1u3dt_1"
+         width="350"
+         height="250"
+         style="height: 250px; width: 350px;"
+    >
+      <svg width="350"
+           height="250"
+           class="_svg_1u3dt_30"
+           tabindex="0"
+      >
+        <g transform="translate(175, 125)">
+          <g tabindex="0"
+             aria-label="DLP: 10"
+             role="graphics-document"
+          >
+            <path role="graphics-symbol"
+                  d="M0,-115A115,115,0,0,1,67.595,-93.037L50.696,-69.778A86.25,86.25,0,0,0,0,-86.25Z"
+                  fill="#2d60e8"
+                  style="cursor: initial;"
+            >
+            </path>
+          </g>
+          <g tabindex="0"
+             aria-label="Malware: 30"
+             role="graphics-document"
+          >
+            <path role="graphics-symbol"
+                  d="M67.595,-93.037A115,115,0,0,1,67.595,93.037L50.696,69.778A86.25,86.25,0,0,0,50.696,-69.778Z"
+                  fill="#2c77e0"
+                  style="cursor: initial;"
+            >
+            </path>
+          </g>
+          <g tabindex="0"
+             aria-label="IDS: 20"
+             role="graphics-document"
+          >
+            <path role="graphics-symbol"
+                  d="M67.595,93.037A115,115,0,0,1,-67.595,93.037L-50.696,69.778A86.25,86.25,0,0,0,50.696,69.778Z"
+                  fill="#2b8dd8"
+                  style="cursor: initial;"
+            >
+            </path>
+          </g>
+          <g tabindex="0"
+             aria-label="Phishing Attack: 40"
+             role="graphics-document"
+          >
+            <path role="graphics-symbol"
+                  d="M-67.595,93.037A115,115,0,0,1,0,-115L0,-86.25A86.25,86.25,0,0,0,-50.696,69.778Z"
+                  fill="#2aa1d1"
+                  style="cursor: initial;"
+            >
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <h2 style="margin: 0px 5px; padding: 0px; color: white;">
+    4 Attacks
+  </h2>
+</div>
+`;
+
+exports[`Charts/Pie Chart/Donut Labels smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(175, 125)">
+      <g opacity="1">
+        <title>
+          DLP
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, -87.4972px, 0px);"
+        >
+          DLP
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="20.729890039319393,-63.80004130146656,24.927370879579097,-76.7185589811424,28.429563482495162,-87.49719949915412,92,-87.49719949915412"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="DLP: 10"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
+              fill="#2d60e8"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          Malware
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, 0px, 0px);"
+        >
+          Malware
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="67.08333333333334,0,80.66666666666667,0,80.66666666666667,0,92,0"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Malware: 30"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
+              fill="#2c77e0"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          IDS
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, 92px, 0px);"
+        >
+          IDS
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="4.107669472140081e-15,67.08333333333334,4.9394087565609914e-15,80.66666666666667,5.633375276077825e-15,92,-92,92"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="IDS: 20"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
+              fill="#2b8dd8"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          Phishing Attack
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, -28.4296px, 0px);"
+        >
+          Phishing Attack
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="-63.800041301466564,-20.729890039319383,-76.7185589811424,-24.927370879579083,-87.49719949915414,-28.42956348249515,-92,-28.42956348249515"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Phishing Attack: 40"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"
+              fill="#2aa1d1"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Pie Chart/Donut RoundedAndSpaced smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(175, 125)">
+      <g opacity="1">
+        <title>
+          DLP
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, -87.4972px, 0px);"
+        >
+          DLP
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="20.729890039319393,-63.80004130146656,24.927370879579097,-76.7185589811424,28.429563482495162,-87.49719949915412,92,-87.49719949915412"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="DLP: 10"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M2,-72.419A4,4,0,0,1,6.33,-76.405A76.667,76.667,0,0,1,39.788,-65.534A4,4,0,0,1,40.949,-59.763L34.358,-50.693A4,4,0,0,1,29.098,-49.594A57.5,57.5,0,0,0,5.61,-57.226A4,4,0,0,1,2,-61.207Z"
+              fill="#2d60e8"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          Malware
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, 0px, 0px);"
+        >
+          Malware
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="67.08333333333334,0,80.66666666666667,0,80.66666666666667,0,92,0"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Malware: 30"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M44.185,-57.412A4,4,0,0,1,50.031,-58.092A76.667,76.667,0,0,1,50.031,58.092A4,4,0,0,1,44.185,57.412L37.594,48.342A4,4,0,0,1,38.175,42.999A57.5,57.5,0,0,0,38.175,-42.999A4,4,0,0,1,37.594,-48.342Z"
+              fill="#2c77e0"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          IDS
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, 92px, 0px);"
+        >
+          IDS
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="4.107669472140081e-15,67.08333333333334,4.9394087565609914e-15,80.66666666666667,5.633375276077825e-15,92,-92,92"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="IDS: 20"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M40.949,59.763A4,4,0,0,1,39.788,65.534A76.667,76.667,0,0,1,-39.788,65.534A4,4,0,0,1,-40.949,59.763L-34.358,50.693A4,4,0,0,1,-29.098,49.594A57.5,57.5,0,0,0,29.098,49.594A4,4,0,0,1,34.358,50.693Z"
+              fill="#2b8dd8"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          Phishing Attack
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, -28.4296px, 0px);"
+        >
+          Phishing Attack
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="-63.800041301466564,-20.729890039319383,-76.7185589811424,-24.927370879579083,-87.49719949915414,-28.42956348249515,-92,-28.42956348249515"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Phishing Attack: 40"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M-44.185,57.412A4,4,0,0,1,-50.031,58.092A76.667,76.667,0,0,1,-6.33,-76.405A4,4,0,0,1,-2,-72.419L-2,-61.207A4,4,0,0,1,-5.61,-57.226A57.5,57.5,0,0,0,-38.175,42.999A4,4,0,0,1,-37.594,48.342Z"
+              fill="#2aa1d1"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Pie Chart/Donut Simple smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(175, 125)">
+      <g opacity="1">
+        <title>
+          DLP
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, -87.4972px, 0px);"
+        >
+          DLP
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="20.729890039319393,-63.80004130146656,24.927370879579097,-76.7185589811424,28.429563482495162,-87.49719949915412,92,-87.49719949915412"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="DLP: 10"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
+              fill="#2d60e8"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          Malware
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, 0px, 0px);"
+        >
+          Malware
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="67.08333333333334,0,80.66666666666667,0,80.66666666666667,0,92,0"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Malware: 30"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
+              fill="#2c77e0"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          IDS
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, 92px, 0px);"
+        >
+          IDS
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="4.107669472140081e-15,67.08333333333334,4.9394087565609914e-15,80.66666666666667,5.633375276077825e-15,92,-92,92"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="IDS: 20"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
+              fill="#2b8dd8"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+      <g opacity="1">
+        <title>
+          Phishing Attack
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, -28.4296px, 0px);"
+        >
+          Phishing Attack
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="-63.800041301466564,-20.729890039319383,-76.7185589811424,-24.927370879579083,-87.49719949915414,-28.42956348249515,-92,-28.42956348249515"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Phishing Attack: 40"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"
+              fill="#2aa1d1"
+              style="cursor: initial;"
+        >
+        </path>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(175, 125)">
+      <g opacity="1">
+        <title>
+          DLP
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, -87.4972px, 0px);"
+        >
+          DLP
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="20.729890039319393,-63.80004130146656,24.927370879579097,-76.7185589811424,28.429563482495162,-87.49719949915412,92,-87.49719949915412"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="DLP: 10"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
+              fill="url(#gradient-ref-4-arc-DLP)"
+              style="cursor: initial;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-4-arc-DLP"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g opacity="1">
+        <title>
+          Malware
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="start"
+              style="shape-rendering: crispedges; transform: translate3d(92px, 0px, 0px);"
+        >
+          Malware
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="67.08333333333334,0,80.66666666666667,0,80.66666666666667,0,92,0"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Malware: 30"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
+              fill="url(#gradient-ref-4-arc-Malware)"
+              style="cursor: initial;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-4-arc-Malware"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2c77e0"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2c77e0"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g opacity="1">
+        <title>
+          IDS
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, 92px, 0px);"
+        >
+          IDS
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="4.107669472140081e-15,67.08333333333334,4.9394087565609914e-15,80.66666666666667,5.633375276077825e-15,92,-92,92"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="IDS: 20"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
+              fill="url(#gradient-ref-4-arc-IDS)"
+              style="cursor: initial;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-4-arc-IDS"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2b8dd8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2b8dd8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+      <g opacity="1">
+        <title>
+          Phishing Attack
+        </title>
+        <text dy=".35em"
+              fill="#8F979F"
+              font-size="11"
+              font-family="sans-serif"
+              text-anchor="end"
+              style="shape-rendering: crispedges; transform: translate3d(-92px, -28.4296px, 0px);"
+        >
+          Phishing Attack
+        </text>
+        <polyline fill="none"
+                  stroke="rgba(127,127,127,0.5)"
+                  points="-63.800041301466564,-20.729890039319383,-76.7185589811424,-24.927370879579083,-87.49719949915414,-28.42956348249515,-92,-28.42956348249515"
+        >
+        </polyline>
+      </g>
+      <g tabindex="0"
+         aria-label="Phishing Attack: 40"
+         role="graphics-document"
+      >
+        <path role="graphics-symbol"
+              d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"
+              fill="url(#gradient-ref-4-arc-Phishing_Attack)"
+              style="cursor: initial;"
+        >
+        </path>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-ref-4-arc-Phishing_Attack"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2aa1d1"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2aa1d1"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

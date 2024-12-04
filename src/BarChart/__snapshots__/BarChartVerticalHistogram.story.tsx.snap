@@ -1,0 +1,5527 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="183.20000000000002"
+              y2="183.20000000000002"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="137.4"
+              y2="137.4"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="91.60000000000001"
+              y2="91.60000000000001"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="45.79999999999999"
+              y2="45.79999999999999"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="37"
+              x2="37"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="83"
+              x2="83"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="128"
+              x2="128"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="174"
+              x2="174"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="220"
+              x2="220"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="266"
+              x2="266"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="312"
+              x2="312"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(37, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Jan 19
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Jan 19
+            </text>
+          </g>
+        </g>
+        <g transform="translate(83, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Jan 26
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Jan 26
+            </text>
+          </g>
+        </g>
+        <g transform="translate(128, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Feb 02
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Feb 02
+            </text>
+          </g>
+        </g>
+        <g transform="translate(174, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Feb 09
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Feb 09
+            </text>
+          </g>
+        </g>
+        <g transform="translate(220, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Feb 16
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Feb 16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(266, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Feb 23
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Feb 23
+            </text>
+          </g>
+        </g>
+        <g transform="translate(312, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              March
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              March
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 183.20000000000002)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 137.4)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 91.60000000000001)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 45.79999999999999)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              40
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              40
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              50
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              50
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Jan 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 16"
+                role="graphics-document"
+                height="73.28px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-0)"
+                x="0"
+                y="155.72"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-0"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 44"
+                role="graphics-document"
+                height="201.52px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-1)"
+                x="7"
+                y="27.48"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-1"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 12"
+                role="graphics-document"
+                height="54.96000000000001px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-2)"
+                x="13"
+                y="174.04"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-2"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Jan 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 26"
+                role="graphics-document"
+                height="119.08px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-3)"
+                x="20"
+                y="109.92"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-3"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Jan 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 41"
+                role="graphics-document"
+                height="187.77999999999997px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-4)"
+                x="26"
+                y="41.22000000000001"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-4"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Jan 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 25"
+                role="graphics-document"
+                height="114.5px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-5)"
+                x="33"
+                y="114.5"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-5"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Jan 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 24"
+                role="graphics-document"
+                height="109.92px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-6)"
+                x="39"
+                y="119.08"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-6"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 23"
+                role="graphics-document"
+                height="105.33999999999999px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-7)"
+                x="46"
+                y="123.66000000000001"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-7"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 26"
+                role="graphics-document"
+                height="119.08px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-8)"
+                x="52"
+                y="109.92"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-8"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Jan 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 21"
+                role="graphics-document"
+                height="96.17999999999998px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-9)"
+                x="59"
+                y="132.82000000000002"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-9"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 32"
+                role="graphics-document"
+                height="146.56px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-10)"
+                x="66"
+                y="82.44"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-10"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 11"
+                role="graphics-document"
+                height="50.379999999999995px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-11)"
+                x="72"
+                y="178.62"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-11"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Jan 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 33"
+                role="graphics-document"
+                height="151.14px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-12)"
+                x="79"
+                y="77.86"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-12"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Jan 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+                role="graphics-document"
+                height="13.740000000000009px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-13)"
+                x="85"
+                y="215.26"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-13"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Jan 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+                role="graphics-document"
+                height="32.06px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-14)"
+                x="92"
+                y="196.94"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-14"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Jan 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+                role="graphics-document"
+                height="36.640000000000015px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-15)"
+                x="98"
+                y="192.35999999999999"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-15"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Jan 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+                role="graphics-document"
+                height="41.22px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-16)"
+                x="105"
+                y="187.78"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-16"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Jan 30 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+                role="graphics-document"
+                height="32.06px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-17)"
+                x="112"
+                y="196.94"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-17"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Jan 31 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+                role="graphics-document"
+                height="41.22px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-18)"
+                x="118"
+                y="187.78"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-18"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 50"
+                role="graphics-document"
+                height="228.98839539091367px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-19)"
+                x="125"
+                y="0.011651622778514984"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-19"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 19"
+                role="graphics-document"
+                height="87.02000000000001px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-20)"
+                x="131"
+                y="141.98"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-20"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 48"
+                role="graphics-document"
+                height="219.826595885672px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-21)"
+                x="138"
+                y="9.173460617483267"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-21"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Feb 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 15"
+                role="graphics-document"
+                height="68.70000000000002px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-22)"
+                x="144"
+                y="160.29999999999998"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-22"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Feb 05 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 42"
+                role="graphics-document"
+                height="192.34589444252543px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-23)"
+                x="151"
+                y="36.654173447506764"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-23"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 29"
+                role="graphics-document"
+                height="132.80932985992624px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-24)"
+                x="157"
+                y="96.19074454956669"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-24"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 40"
+                role="graphics-document"
+                height="183.18384443050263px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-25)"
+                x="164"
+                y="45.81623711884004"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-25"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 34"
+                role="graphics-document"
+                height="155.70494795015892px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-26)"
+                x="171"
+                y="73.295141417805"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-26"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+                role="graphics-document"
+                height="18.319999999999993px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-27)"
+                x="177"
+                y="210.68"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-27"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 24"
+                role="graphics-document"
+                height="109.9072412833038px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-28)"
+                x="184"
+                y="119.09286601933213"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-28"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                role="graphics-document"
+                height="4.5800000000000125px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-29)"
+                x="190"
+                y="224.42"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-29"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 35"
+                role="graphics-document"
+                height="160.27760538537845px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-30)"
+                x="197"
+                y="68.72252341275677"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-30"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 26"
+                role="graphics-document"
+                height="119.06178087127647px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-31)"
+                x="203"
+                y="109.93836022294946"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-31"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Feb 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+                role="graphics-document"
+                height="36.640000000000015px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-32)"
+                x="210"
+                y="192.35999999999999"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-32"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 30"
+                role="graphics-document"
+                height="137.37472826132375px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-33)"
+                x="216"
+                y="91.6254410187119"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-33"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+                role="graphics-document"
+                height="22.900000000000006px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-34)"
+                x="223"
+                y="206.1"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-34"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+                role="graphics-document"
+                height="36.640000000000015px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-35)"
+                x="230"
+                y="192.35999999999999"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-35"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Feb 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                role="graphics-document"
+                height="4.5800000000000125px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-36)"
+                x="236"
+                y="224.42"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-36"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 36"
+                role="graphics-document"
+                height="164.83623081456642px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-37)"
+                x="243"
+                y="64.16401261296427"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-37"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 25"
+                role="graphics-document"
+                height="114.46673603297523px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-38)"
+                x="249"
+                y="114.53353047941037"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-38"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 34"
+                role="graphics-document"
+                height="155.67038187709733px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-39)"
+                x="256"
+                y="73.33036759953644"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-39"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 42"
+                role="graphics-document"
+                height="192.292196919774px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-40)"
+                x="262"
+                y="36.70812535078422"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-40"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 38"
+                role="graphics-document"
+                height="173.97281499810234px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-41)"
+                x="269"
+                y="55.0275377346935"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-41"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 23"
+                role="graphics-document"
+                height="105.29553316569023px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-42)"
+                x="276"
+                y="123.70485287221669"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-42"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
+                role="graphics-document"
+                height="45.778943702928196px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-43)"
+                x="282"
+                y="183.22147874399806"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-43"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 16"
+                role="graphics-document"
+                height="73.24296374134654px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-44)"
+                x="289"
+                y="155.7574985030039"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-44"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 26"
+                role="graphics-document"
+                height="119.0139338286929px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-45)"
+                x="295"
+                y="109.98657191149245"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-45"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 45"
+                role="graphics-document"
+                height="205.97458779564013px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-46)"
+                x="302"
+                y="23.025965476525197"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-46"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 39"
+                role="graphics-document"
+                height="178.5010327321528px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-47)"
+                x="308"
+                y="50.49957247600374"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-47"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 38"
+                role="graphics-document"
+                height="173.91309977954305px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-48)"
+                x="315"
+                y="55.08756216921616"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-48"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 17"
+                role="graphics-document"
+                height="77.79805106944283px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-49)"
+                x="321"
+                y="151.2026728606814"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-49"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="300"
+     height="250"
+     style="height: 250px; width: 300px;"
+>
+  <svg width="300"
+       height="250"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(16, 0)">
+      <g transform="translate(0, 192)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="284"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(7, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/4/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/4/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(25, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/6/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/6/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(43, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/8/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/8/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(61, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/10/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/10/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(79, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/12/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/12/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(97, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/14/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/14/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(115, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/16/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/16/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(133, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/18/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/18/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(151, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/20/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/20/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(169, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/22/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/22/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(187, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/24/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/24/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(205, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/26/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/26/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(223, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/28/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/28/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(241, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3/30/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3/30/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(259, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4/1/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4/1/2024
+            </text>
+          </g>
+        </g>
+        <g transform="translate(277, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4/3/2024
+            </title>
+            <text transform="rotate(-90)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4/3/2024
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="192"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 192)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 168)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              1
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              1
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 144)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              1
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              1
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 120)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 96)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 72)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 48)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              3
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              3
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 24)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="192"
+              width="284"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Mar 03 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Mar 04 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-0)"
+                x="3"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-0"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Mar 04 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Mar 05 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                role="graphics-document"
+                height="47.96424192065982px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-1)"
+                x="12"
+                y="144.03643883736083"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-1"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Mar 05 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Mar 06 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-2)"
+                x="21"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-2"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Mar 06 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Mar 07 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-3)"
+                x="30"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-3"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Mar 07 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Mar 08 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-4)"
+                x="39"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-4"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Mar 08 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Mar 09 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-5)"
+                x="48"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-5"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Mar 09 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Mar 10 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-6)"
+                x="57"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-6"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Mar 10 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Mar 11 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-7)"
+                x="66"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-7"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Mar 11 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Mar 12 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 2"
+                role="graphics-document"
+                height="95.79976352744453px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-8)"
+                x="75"
+                y="96.2021093218836"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-8"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Mar 12 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Mar 13 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-9)"
+                x="84"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-9"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Mar 13 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Mar 14 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                role="graphics-document"
+                height="47.86712598863036px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-10)"
+                x="93"
+                y="144.13536064118398"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-10"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Mar 14 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Mar 15 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                role="graphics-document"
+                height="47.84663758613873px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-11)"
+                x="102"
+                y="144.15622599475503"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-11"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Mar 15 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Mar 16 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-12)"
+                x="111"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-12"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Mar 16 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Mar 17 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-13)"
+                x="120"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-13"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Mar 17 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Mar 18 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-14)"
+                x="129"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-14"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Mar 18 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Mar 19 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-15)"
+                x="138"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-15"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Mar 19 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Mar 20 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 4"
+                role="graphics-document"
+                height="190.74126759227147px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-16)"
+                x="147"
+                y="1.2644940211826652"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-16"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Mar 20 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Mar 21 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 3"
+                role="graphics-document"
+                height="142.91357327461142px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-17)"
+                x="156"
+                y="49.093043394657556"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-17"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Mar 21 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Mar 22 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-18)"
+                x="165"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-18"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Mar 22 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Mar 23 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-19)"
+                x="174"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-19"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Mar 23 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Mar 24 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-20)"
+                x="183"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-20"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Mar 24 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Mar 25 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-21)"
+                x="192"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-21"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Mar 25 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Mar 26 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-22)"
+                x="201"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-22"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Mar 26 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Mar 27 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                role="graphics-document"
+                height="47.16769927652512px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-23)"
+                x="210"
+                y="144.84729364156382"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-23"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Mar 27 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Mar 28 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-24)"
+                x="219"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-24"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Thu Mar 28 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Mar 29 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-25)"
+                x="228"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-25"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Fri Mar 29 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Mar 30 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0.011271294774329166px"
+                width="8.011271294774328px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-26)"
+                x="237.01127129477433"
+                y="192.01127129477433"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-26"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Mar 30 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Mar 31 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-27)"
+                x="246"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-27"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Mar 31 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Apr 01 2024 03:00:00 GMT+0300 (Eastern European Summer Time): 0"
+                role="graphics-document"
+                height="0px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-28)"
+                x="255"
+                y="192"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-28"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Mon Apr 01 2024 03:00:00 GMT+0300 (Eastern European Summer Time) ∙ Tue Apr 02 2024 03:00:00 GMT+0300 (Eastern European Summer Time): 1"
+                role="graphics-document"
+                height="46.096389590575995px"
+                width="8px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-29)"
+                x="264"
+                y="145.936962668722"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-29"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Tue Apr 02 2024 03:00:00 GMT+0300 (Eastern European Summer Time) ∙ Wed Apr 03 2024 03:00:00 GMT+0300 (Eastern European Summer Time): 0"
+                role="graphics-document"
+                height="0.01896438016108598px"
+                width="8.018964380161085px"
+                fill="url(#gradient-bar-series-ref-15-bar-undefined-30)"
+                x="273.0189643801611"
+                y="192.0189643801611"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-15-bar-undefined-30"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="183.20000000000002"
+              y2="183.20000000000002"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="137.4"
+              y2="137.4"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="91.60000000000001"
+              y2="91.60000000000001"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="45.79999999999999"
+              y2="45.79999999999999"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="0"
+              x2="0"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="61"
+              x2="61"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="121"
+              x2="121"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="182"
+              x2="182"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="243"
+              x2="243"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="304"
+              x2="304"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(61, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(121, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(182, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(243, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              40
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              40
+            </text>
+          </g>
+        </g>
+        <g transform="translate(304, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              50
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              50
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 183.20000000000002)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 137.4)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 91.60000000000001)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 45.79999999999999)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="2: 9"
+                role="graphics-document"
+                height="206.00096898236083px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-0)"
+                x="12"
+                y="22.999468960160627"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-0"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="3: 10"
+                role="graphics-document"
+                height="228.87127334173064px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-1)"
+                x="18"
+                y="0.12923807236023335"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-1"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="8: 8"
+                role="graphics-document"
+                height="183.07964127679978px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-2)"
+                x="49"
+                y="45.9209557525155"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-2"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="14: 2"
+                role="graphics-document"
+                height="45.764768425492264px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-3)"
+                x="85"
+                y="183.23593459486392"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-3"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="10: 7"
+                role="graphics-document"
+                height="160.15486138534595px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-4)"
+                x="61"
+                y="68.84595878241133"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-4"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="8: 5"
+                role="graphics-document"
+                height="114.37901183826759px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-5)"
+                x="49"
+                y="114.62194467165341"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-5"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="17: 3"
+                role="graphics-document"
+                height="68.61543228986629px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-6)"
+                x="103"
+                y="160.3856828327923"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-6"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="13: 6"
+                role="graphics-document"
+                height="137.201852558622px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-7)"
+                x="79"
+                y="91.79944700106361"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-7"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="15: 10"
+                role="graphics-document"
+                height="228.61399206482892px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-8)"
+                x="91"
+                y="0.38752185873945666"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-8"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="15: 2"
+                role="graphics-document"
+                height="45.71061501558798px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-9)"
+                x="91"
+                y="183.29114793086077"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-9"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="16: 10"
+                role="graphics-document"
+                height="228.4745216110904px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-10)"
+                x="97"
+                y="0.5275304706251185"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-10"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="23: 8"
+                role="graphics-document"
+                height="182.71000491077024px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-11)"
+                x="140"
+                y="46.29238269711271"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-11"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="22: 10"
+                role="graphics-document"
+                height="228.28564013963418px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-12)"
+                x="134"
+                y="0.7171366063914985"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-12"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="24: 5"
+                role="graphics-document"
+                height="114.08458012949764px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-13)"
+                x="146"
+                y="114.91864766269514"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-13"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="30: 7"
+                role="graphics-document"
+                height="159.6217747601099px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-14)"
+                x="182"
+                y="69.38197550617059"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-14"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="28: 8"
+                role="graphics-document"
+                height="182.29714377184035px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-15)"
+                x="170"
+                y="46.70721130702895"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-15"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="36: 6"
+                role="graphics-document"
+                height="136.61249521861325px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-16)"
+                x="219"
+                y="92.39255949890118"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-16"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="33: 3"
+                role="graphics-document"
+                height="68.24336906582292px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-17)"
+                x="200"
+                y="160.7624943880811"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-17"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="29: 3"
+                role="graphics-document"
+                height="68.168984767151px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-18)"
+                x="176"
+                y="160.83781280599035"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-18"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="31: 7"
+                role="graphics-document"
+                height="158.8545579909704px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-19)"
+                x="188"
+                y="70.15331763517304"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-19"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="32: 5"
+                role="graphics-document"
+                height="113.30183254637288px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-20)"
+                x="194"
+                y="115.70728615936315"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-20"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="37: 7"
+                role="graphics-document"
+                height="158.35011137027274px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-21)"
+                x="225"
+                y="70.66043937615422"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-21"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="41: 4"
+                role="graphics-document"
+                height="90.30952311524752px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-22)"
+                x="249"
+                y="138.70267573174473"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-22"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="40: 1"
+                role="graphics-document"
+                height="22.531084371512772px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-23)"
+                x="243"
+                y="206.48300924233408"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-23"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="47: 10"
+                role="graphics-document"
+                height="224.65008627022067px"
+                width="6px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-24)"
+                x="285"
+                y="4.366183251378519"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-24"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="42: 4"
+                role="graphics-document"
+                height="89.5727750188324px"
+                width="5px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-25)"
+                x="255"
+                y="139.44614572236685"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-25"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="45: 5"
+                role="graphics-document"
+                height="111.56372129507612px"
+                width="5.010901093985946px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-26)"
+                x="273.0109010939859"
+                y="117.45808089289577"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-26"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="42: 8"
+                role="graphics-document"
+                height="177.7575196415112px"
+                width="5.012549047308304px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-27)"
+                x="255.0125490473083"
+                y="51.2675784531054"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-27"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="53: 3"
+                role="graphics-document"
+                height="66.34970944352663px"
+                width="5.01443120649899px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-28)"
+                x="322.014431206499"
+                y="162.67915296947135"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-28"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

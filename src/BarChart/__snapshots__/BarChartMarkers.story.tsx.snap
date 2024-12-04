@@ -1,0 +1,2413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Bar Chart/Markers LinearValueMarkersHorizontal smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="350"
+     style="height: 350px; width: 400px;"
+>
+  <svg width="400"
+       height="350"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="298"
+              y2="298"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="260.75"
+              y2="260.75"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="223.5"
+              y2="223.5"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="186.25"
+              y2="186.25"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="149"
+              y2="149"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="111.75"
+              y2="111.75"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="74.5"
+              y2="74.5"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="37.25"
+              y2="37.25"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="378"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="10"
+              x2="10"
+              y1="0"
+              y2="298"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="102"
+              x2="102"
+              y1="0"
+              y2="298"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="194"
+              x2="194"
+              y1="0"
+              y2="298"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="286"
+              x2="286"
+              y1="0"
+              y2="298"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 298)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="378"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(52, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              DLP
+            </title>
+            <text transform="rotate(-30)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              DLP
+            </text>
+          </g>
+        </g>
+        <g transform="translate(144, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Malware
+            </title>
+            <text transform="rotate(-30)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Malware
+            </text>
+          </g>
+        </g>
+        <g transform="translate(236, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              IDS
+            </title>
+            <text transform="rotate(-30)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              IDS
+            </text>
+          </g>
+        </g>
+        <g transform="translate(328, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Phishing Attack
+            </title>
+            <text transform="rotate(-30)"
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Phishing Attack
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="298"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 298)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 260.75)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              5
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              5
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 223.5)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 186.25)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              15
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              15
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 149)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 111.75)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              25
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              25
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 74.5)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 37.25)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              35
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              35
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              40
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              40
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="298"
+              width="378"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="DLP: 10"
+                role="graphics-document"
+                height="74.46434258031924px"
+                width="83px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-0)"
+                x="10"
+                y="223.55102379333223"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-0"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Malware: 30"
+                role="graphics-document"
+                height="223.16754068040464px"
+                width="83px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-1)"
+                x="102"
+                y="74.88000331494412"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-1"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2c77e0"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2c77e0"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="IDS: 20"
+                role="graphics-document"
+                height="148.32582115120078px"
+                width="83px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-2)"
+                x="194"
+                y="149.81886779326246"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-2"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2b8dd8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2b8dd8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Phishing Attack: 40"
+                role="graphics-document"
+                height="293.97651561628504px"
+                width="83px"
+                fill="url(#gradient-bar-series-ref-8-bar-undefined-3)"
+                x="286"
+                y="4.340455768664697"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-8-bar-undefined-3"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2aa1d1"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2aa1d1"
+          >
+          </stop>
+        </linearGradient>
+        <line stroke="#D740BE"
+              stroke-width="1"
+              x1="0"
+              y1="208.6"
+              x2="378"
+              y2="208.6"
+        >
+        </line>
+        <line stroke="#F8A340"
+              stroke-width="1"
+              x1="0"
+              y1="253.29999999999998"
+              x2="378"
+              y2="253.29999999999998"
+        >
+        </line>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Markers LinearValueMarkersVertical smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="500"
+     height="350"
+     style="height: 350px; width: 500px;"
+>
+  <svg width="500"
+       height="350"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(85, 0)">
+      <g style="pointer-events: none;">
+        <line y1="249"
+              y2="249"
+              x1="0"
+              x2="415"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="169"
+              y2="169"
+              x1="0"
+              x2="415"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="89"
+              y2="89"
+              x1="0"
+              x2="415"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="9"
+              y2="9"
+              x1="0"
+              x2="415"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="0"
+              x2="0"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="104"
+              x2="104"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="208"
+              x2="208"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="311"
+              x2="311"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="415"
+              x2="415"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 329)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="415"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(104, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(208, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(311, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(415, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              40
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              40
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="329"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 285)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              DLP
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              DLP
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 205)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Malware
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Malware
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 125)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              IDS
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              IDS
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 45)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Phishing Attack
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Phishing Attack
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="329"
+              width="415"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="10: DLP"
+                role="graphics-document"
+                height="72px"
+                width="103.94588521545161px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-0)"
+                x="0"
+                y="249"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="30: Malware"
+                role="graphics-document"
+                height="72px"
+                width="310.94771616632704px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-1)"
+                x="0"
+                y="169"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-1"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2c77e0"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2c77e0"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="20: IDS"
+                role="graphics-document"
+                height="72px"
+                width="207.98896247063655px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-2)"
+                x="0"
+                y="89"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-2"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2b8dd8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2b8dd8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="40: Phishing Attack"
+                role="graphics-document"
+                height="72px"
+                width="415px"
+                fill="url(#gradient-bar-series-ref-1-bar-undefined-3)"
+                x="0"
+                y="9"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-1-bar-undefined-3"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2aa1d1"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2aa1d1"
+          >
+          </stop>
+        </linearGradient>
+        <line stroke="#D740BE"
+              stroke-width="1"
+              x1="125"
+              y1="0"
+              x2="125"
+              y2="329"
+        >
+        </line>
+        <line stroke="#F8A340"
+              stroke-width="1"
+              x1="62"
+              y1="0"
+              x2="62"
+              y2="329"
+        >
+        </line>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Markers RadialValueMarkers smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(225, 225)">
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="50"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="60"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="70"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="80"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="90"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="100"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="110"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="120"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="130"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="140"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <circle fill="none"
+              stroke-dasharray="1,4"
+              stroke="#71808d"
+              cx="0"
+              cy="0"
+              r="150"
+              style="pointer-events: none;"
+      >
+      </circle>
+      <g transform="rotate(-90.00000000000003) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(90.00000000000003, 15, 0)">
+          <title>
+            1/13/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="middle"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            1/13/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(-61.200000000000024) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(61.200000000000024, 15, 0)">
+          <title>
+            1/17/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            1/17/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(-32.40000000000002) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(32.40000000000002, 15, 0)">
+          <title>
+            1/21/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            1/21/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(-3.6000000000000227) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(3.6000000000000227, 15, 0)">
+          <title>
+            1/25/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            1/25/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(25.19999999999999) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-25.19999999999999, 15, 0)">
+          <title>
+            1/29/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            1/29/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(53.99999999999997) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-53.99999999999997, 15, 0)">
+          <title>
+            2/2/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/2/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(82.80000000000001) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-82.80000000000001, 15, 0)">
+          <title>
+            2/6/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/6/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(111.60000000000002) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-111.60000000000002, 15, 0)">
+          <title>
+            2/10/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/10/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(140.40000000000003) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-140.40000000000003, 15, 0)">
+          <title>
+            2/14/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/14/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(169.19999999999993) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-169.19999999999993, 15, 0)">
+          <title>
+            2/18/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/18/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(198) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-198, 15, 0)">
+          <title>
+            2/22/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/22/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(226.80000000000007) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-226.80000000000007, 15, 0)">
+          <title>
+            2/26/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            2/26/2020
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(255.60000000000002) translate(150,0)">
+        <line x1="-100"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-255.60000000000002, 15, 0)">
+          <title>
+            3/1/2020
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            3/1/2020
+          </text>
+        </g>
+      </g>
+      <g>
+        <path d="M0,-150A150,150,0,1,1,0,150A150,150,0,1,1,0,-150M0,-50A50,50,0,1,0,0,50A50,50,0,1,0,0,-50Z"
+              opacity="0"
+              cursor="auto"
+        >
+        </path>
+        <path d="M0,-150A150,150,0,1,1,0,150A150,150,0,1,1,0,-150M0,-50A50,50,0,1,0,0,50A50,50,0,1,0,0,-50Z"
+              opacity="0"
+              cursor="auto"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-1.9142843494634746e-14,-50A50,50,0,0,1,6.266661678215191,-49.60573506572389L9.055175546110474,-93.90422671972291A94.33981132056604,94.33981132056604,0,0,0,2.785547597858779,-94.29867827589135"
+              tabindex="0"
+              value="16"
+              id="50"
+              x0="Mon Jan 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Jan 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="16"
+              key="Mon Jan 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M6.266661678215191,-49.60573506572389A50,50,0,0,1,12.434494358242716,-48.42915805643156L29.645058215178448,-138.64043610512297A141.77446878757826,141.77446878757826,0,0,0,23.473670473945685,-139.8176912786097"
+              tabindex="0"
+              value="44"
+              id="49"
+              x0="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="44"
+              key="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M12.434494358242716,-48.42915805643156A50,50,0,0,1,18.406227634233872,-46.48882429441258L29.37173648933007,-80.23279314346071A85.44003745317531,85.44003745317531,0,0,0,23.397418585787996,-82.1739667018784"
+              tabindex="0"
+              value="12"
+              id="48"
+              x0="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="12"
+              key="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M18.406227634233886,-46.48882429441258A50,50,0,0,1,24.087683705085748,-43.81533400219319L51.18296871294885,-101.39183257900658A113.57816691600547,113.57816691600547,0,0,0,45.49849758723999,-104.06674164834757"
+              tabindex="0"
+              value="26"
+              id="47"
+              x0="Thu Jan 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Jan 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="26"
+              key="Thu Jan 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M24.087683705085748,-43.81533400219319A50,50,0,0,1,29.38926261462364,-40.450849718747385L76.2970760934354,-114.36238970742318A137.4772708486752,137.4772708486752,0,0,0,70.99246898438851,-117.7287957447142"
+              tabindex="0"
+              value="41"
+              id="46"
+              x0="Fri Jan 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Jan 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="41"
+              key="Fri Jan 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M29.38926261462364,-40.450849718747385A50,50,0,0,1,34.22735529643442,-36.4484313710706L73.6583558861448,-84.10972956887947A111.80339887498948,111.80339887498948,0,0,0,68.81771546157907,-88.11425559266299"
+              tabindex="0"
+              value="25"
+              id="45"
+              x0="Sat Jan 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Jan 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="25"
+              key="Sat Jan 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M34.22735529643442,-36.44843137107059A50,50,0,0,1,38.52566213878945,-31.8711994874345L82.30412417861713,-72.97966253135712A110,110,0,0,0,78.0035725545501,-77.55928486472163"
+              tabindex="0"
+              value="24"
+              id="44"
+              x0="Sun Jan 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Jan 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="24"
+              key="Sun Jan 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M38.52566213878945,-31.8711994874345A50,50,0,0,1,42.21639627510074,-26.791339748949845L89.31798331265327,-61.010637244341176A108.16653826391968,108.16653826391968,0,0,0,85.62533886145826,-66.0931263056942"
+              tabindex="0"
+              value="23"
+              id="43"
+              x0="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="23"
+              key="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M42.21639627510074,-26.791339748949845A50,50,0,0,1,45.24135262330097,-21.288964578253648L101.00451540418443,-51.943121469217374A113.57816691600547,113.57816691600547,0,0,0,97.97795376163428,-57.44841665949597"
+              tabindex="0"
+              value="26"
+              id="42"
+              x0="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="26"
+              key="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M45.24135262330097,-21.28896457825365A50,50,0,0,1,47.55282581475767,-15.450849718747389L98.18389357059395,-35.49539467759554A104.4030650891055,104.4030650891055,0,0,0,95.8712478313904,-41.33647105465245"
+              tabindex="0"
+              value="21"
+              id="41"
+              x0="Wed Jan 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Jan 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="21"
+              key="Wed Jan 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M47.55282581475767,-15.450849718747392A50,50,0,0,1,49.11436253643443,-9.369065729286252L120.54967870068361,-27.70875250100493A123.69316876852982,123.69316876852982,0,0,0,118.9872820446847,-33.793885713523"
+              tabindex="0"
+              value="32"
+              id="40"
+              x0="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="32"
+              key="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M49.11436253643443,-9.369065729286245A50,50,0,0,1,49.901336421413575,-3.139525976465681L82.74595606987683,-7.28743810141907A83.06623862918075,83.06623862918075,0,0,0,81.9586518599349,-13.519592645564027"
+              tabindex="0"
+              value="11"
+              id="39"
+              x0="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="11"
+              key="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M49.901336421413575,-3.1395259764656838A50,50,0,0,1,49.901336421413575,3.1395259764656536L125.26025891542433,3.1412635102552544A125.29964086141668,125.29964086141668,0,0,0,125.26025891542433,-3.1412635102553312"
+              tabindex="0"
+              value="33"
+              id="38"
+              x0="Sat Jan 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Jan 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="33"
+              key="Sat Jan 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M49.901336421413575,3.1395259764656505A50,50,0,0,1,49.114362536434435,9.369065729286215L59.87394032753633,10.728992014845495A60.8276253029822,60.8276253029822,0,0,0,60.661082205236724,4.498122462707325"
+              tabindex="0"
+              value="3"
+              id="37"
+              x0="Sun Jan 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Jan 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="3"
+              key="Sun Jan 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M49.114362536434435,9.369065729286223A50,50,0,0,1,47.55282581475768,15.450849718747362L69.6672336849771,21.1299917340919A72.80109889280519,72.80109889280519,0,0,0,71.22931340995996,15.046092886384121"
+              tabindex="0"
+              value="7"
+              id="36"
+              x0="Mon Jan 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Jan 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="7"
+              key="Mon Jan 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M47.55282581475768,15.450849718747358A50,50,0,0,1,45.241352623300976,21.288964578253623L68.97965737101778,30.688872070784743A75.49834435270749,75.49834435270749,0,0,0,71.29198471402155,24.848599870731483"
+              tabindex="0"
+              value="8"
+              id="35"
+              x0="Tue Jan 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Jan 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="8"
+              key="Tue Jan 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M45.24135262330098,21.28896457825362A50,50,0,0,1,42.21639627510076,26.791339748949817L66.87331312188464,40.34798622115324A78.10249675906654,78.10249675906654,0,0,0,69.89944454401655,34.84347359891023"
+              tabindex="0"
+              value="9"
+              id="34"
+              x0="Wed Jan 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Jan 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="9"
+              key="Wed Jan 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M42.216396275100756,26.791339748949827A50,50,0,0,1,38.52566213878947,31.87119948743448L56.99648696183011,45.292388698432895A72.80109889280519,72.80109889280519,0,0,0,60.688504501093206,40.210762507328695"
+              tabindex="0"
+              value="7"
+              id="33"
+              x0="Thu Jan 30 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Jan 30 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="7"
+              key="Thu Jan 30 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M38.52566213878947,31.87119948743447A50,50,0,0,1,34.227355296434446,36.44843137107056L54.73822887807207,55.711096733880545A78.10249675906654,78.10249675906654,0,0,0,59.038205439834414,51.13208677967197"
+              tabindex="0"
+              value="9"
+              id="32"
+              x0="Fri Jan 31 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Jan 31 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="9"
+              key="Fri Jan 31 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M34.22735529643444,36.44843137107057A50,50,0,0,1,29.389262614623668,40.450849718747364L93.17216704174658,117.55401859887594A150,150,0,0,0,98.01309059851584,113.54925834776344"
+              tabindex="0"
+              value="50"
+              id="31"
+              x0="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="50"
+              key="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M29.389262614623675,40.45084971874736A50,50,0,0,1,24.087683705085787,43.81533400219317L51.171515391907995,86.49552596808533A100.4987562112089,100.4987562112089,0,0,0,56.47572024132298,83.12937521251932"
+              tabindex="0"
+              value="19"
+              id="30"
+              x0="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="19"
+              key="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M24.087683705085777,43.815334002193175A50,50,0,0,1,18.406227634233915,46.48882429441256L59.86456078123191,134.59656148085728A147.30919862656236,147.30919862656236,0,0,0,65.54932587536054,131.92151408047815"
+              tabindex="0"
+              value="48"
+              id="29"
+              x0="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="48"
+              key="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M18.406227634233904,46.48882429441257A50,50,0,0,1,12.434494358242748,48.429158056431554L25.486166517146824,88.60279519439702A92.19544457292888,92.19544457292888,0,0,0,31.460674493315487,86.66155987763922"
+              tabindex="0"
+              value="15"
+              id="28"
+              x0="Tue Feb 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Feb 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="15"
+              key="Tue Feb 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M12.434494358242759,48.42915805643155A50,50,0,0,1,6.266661678215235,49.60573506572389L22.789225242500194,136.2296302161825A138.12263006470457,138.12263006470457,0,0,0,28.96058592364372,135.05238020468383"
+              tabindex="0"
+              value="42"
+              id="27"
+              x0="Wed Feb 05 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Feb 05 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="42"
+              key="Wed Feb 05 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M6.266661678215224,49.60573506572389A50,50,0,0,1,1.4163847244119949e-14,50L4.271160214424972,117.91515014131784A117.99248044865746,117.99248044865746,0,0,0,10.541206213031337,117.52067228365043"
+              tabindex="0"
+              value="29.01151771995212"
+              id="26"
+              x0="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.011517719952121891"
+              y1="29.01151771995212"
+              key="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M3.061616997868383e-15,50A50,50,0,0,1,-6.266661678215208,49.60573506572389L-11.607996760024099,134.47542854778587A134.9755032288874,134.9755032288874,0,0,0,-5.337776056408795,134.86991739696074"
+              tabindex="0"
+              value="40.01333545588688"
+              id="25"
+              x0="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.013444017292725865"
+              y1="40.01344401729273"
+              key="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-6.266661678215196,49.60573506572389A50,50,0,0,1,-12.43449435824272,48.42915805643156L-26.648761178678157,122.9336678468999A125.78888330313666,125.78888330313666,0,0,0,-20.477509964040078,124.11089697654583"
+              tabindex="0"
+              value="34.01554670374207"
+              id="24"
+              x0="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.015546703742064865"
+              y1="34.01554670374207"
+              key="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-12.43449435824273,48.42915805643156A50,50,0,0,1,-18.406227634233886,46.488824294412574L-22.658183844751154,59.57242820015464A63.73591998869336,63.73591998869336,0,0,0,-16.684938947227543,61.51325311778277"
+              tabindex="0"
+              value="4.0179558618831"
+              id="23"
+              x0="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.017955861883099913"
+              y1="4.0179558618831"
+              key="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-18.4062276342339,46.48882429441257A50,50,0,0,1,-24.087683705085773,43.815334002193175L-49.14910814762117,97.06974325252102A108.80335420756528,108.80335420756528,0,0,0,-43.46470204086675,99.74462172626446"
+              tabindex="0"
+              value="24.020710591459572"
+              id="22"
+              x0="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.02071059145957171"
+              y1="24.020710591459572"
+              key="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-24.08768370508575,43.81533400219318A50,50,0,0,1,-29.38926261462365,40.45084971874737L-31.39471785998089,43.61042401700735A53.73543888767425,53.73543888767425,0,0,0,-26.092670690794048,46.975205467062636"
+              tabindex="0"
+              value="1.0240403899732649"
+              id="21"
+              x0="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.024040389973264787"
+              y1="1.0240403899732649"
+              key="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-29.38926261462365,40.45084971874737A50,50,0,0,1,-34.22735529643444,36.44843137107057L-83.01022795810323,95.41405929868884A126.46952461960934,126.46952461960934,0,0,0,-78.16944835052307,99.41870046467555"
+              tabindex="0"
+              value="35.02764296064109"
+              id="20"
+              x0="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.027642960641091594"
+              y1="35.02764296064109"
+              key="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-34.22735529643442,36.44843137107059A50,50,0,0,1,-38.52566213878946,31.87119948743449L-83.51020482234237,74.11223041676023A111.65382665550041,111.65382665550041,0,0,0,-79.20963600615566,78.6918710578727"
+              tabindex="0"
+              value="26"
+              id="19"
+              x0="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="26"
+              key="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-38.52566213878947,31.871199487434478A50,50,0,0,1,-42.21639627510076,26.79133974894981L-61.92231872358246,41.10713211309227A74.32475944574696,74.32475944574696,0,0,0,-58.230254679051185,46.18882231320679"
+              tabindex="0"
+              value="8.036631277777468"
+              id="18"
+              x0="Fri Feb 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Feb 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.036631277777468385"
+              y1="8.036631277777468"
+              key="Fri Feb 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-42.21639627510074,26.79133974894985A50,50,0,0,1,-45.24135262330097,21.288964578253644L-104.22076084885448,53.71123920516014A117.24702217484267,117.24702217484267,0,0,0,-101.1941754301495,59.21657764410382"
+              tabindex="0"
+              value="30.04188209970804"
+              id="17"
+              x0="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.04188209970803972"
+              y1="30.04188209970804"
+              key="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-45.24135262330099,21.288964578253605A50,50,0,0,1,-47.552825814757696,15.450849718747333L-62.448618190638555,21.347564298583674A65.99657881589255,65.99657881589255,0,0,0,-60.13649684601566,27.187316206118336"
+              tabindex="0"
+              value="5.047779266017552"
+              id="16"
+              x0="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.047779266017552134"
+              y1="5.047779266017552"
+              key="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-47.552825814757675,15.450849718747376A50,50,0,0,1,-49.114362536434435,9.369065729286229L-72.1177012972295,15.274167260023733A73.71745401113361,73.71745401113361,0,0,0,-70.55560959253079,21.35811276564428"
+              tabindex="0"
+              value="8.054373488291777"
+              id="15"
+              x0="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.054373488291776136"
+              y1="8.054373488291777"
+              key="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-49.11436253643443,9.369065729286271A50,50,0,0,1,-49.901336421413575,3.139525976465701L-53.376404558526076,3.578265837306824A53.49621061344327,53.49621061344327,0,0,0,-52.58936518430353,9.808323990868336"
+              tabindex="0"
+              value="1.061710341163769"
+              id="14"
+              x0="Tue Feb 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Feb 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.06171034116376897"
+              y1="1.061710341163769"
+              key="Tue Feb 18 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-49.901336421413575,3.1395259764656567A50,50,0,0,1,-49.901336421413575,-3.1395259764656887L-123.80060817385704,-3.1412557083527415A123.84045409978978,123.84045409978978,0,0,0,-123.80060817385704,3.141255708352662"
+              tabindex="0"
+              value="36.07030051955514"
+              id="13"
+              x0="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.07030051955514033"
+              y1="36.07030051955514"
+              key="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-49.901336421413575,-3.139525976465645A50,50,0,0,1,-49.114362536434435,-9.369065729286216L-104.81471533941745,-16.40727701723504A106.09110844365517,106.09110844365517,0,0,0,-105.60209218634928,-10.174547492109365"
+              tabindex="0"
+              value="25.07926218695967"
+              id="12"
+              x0="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.07926218695967124"
+              y1="25.07926218695967"
+              key="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-49.11436253643443,-9.36906572928626A50,50,0,0,1,-47.55282581475767,-15.450849718747406L-114.50554427457692,-32.643143417251565A119.06760466968481,119.06760466968481,0,0,0,-116.06792762536026,-26.558062025126794"
+              tabindex="0"
+              value="34.089024330396995"
+              id="11"
+              x0="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.08902433039699412"
+              y1="34.089024330396995"
+              key="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-47.55282581475768,-15.450849718747364A50,50,0,0,1,-45.241352623300976,-21.288964578253633L-118.61809256367764,-50.34275916595979A128.8590132039161,128.8590132039161,0,0,0,-120.93085821501278,-44.50137992543043"
+              tabindex="0"
+              value="42.09955412415147"
+              id="10"
+              x0="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.09955412415147034"
+              y1="42.09955412415147"
+              key="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-45.241352623301,-21.288964578253594A50,50,0,0,1,-42.21639627510077,-26.791339748949806L-105.4700026170469,-61.56726711280368A122.12473063134755,122.12473063134755,0,0,0,-108.49661638890068,-56.06187709967377"
+              tabindex="0"
+              value="38.11141586337164"
+              id="9"
+              x0="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.11141586337163678"
+              y1="38.11141586337164"
+              key="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-42.21639627510075,-26.791339748949838A50,50,0,0,1,-38.52566213878945,-31.8711994874345L-77.07570320231471,-59.8813278469518A97.60347047541615,97.60347047541615,0,0,0,-80.76822919616471,-54.79900182814681"
+              tabindex="0"
+              value="23"
+              id="8"
+              x0="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="23"
+              key="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-38.52566213878948,-31.871199487434467A50,50,0,0,1,-34.227355296434446,-36.44843137107057L-51.45507977702917,-52.62786808570781A73.60243021875772,73.60243021875772,0,0,0,-55.754910201355585,-48.049013752062336"
+              tabindex="0"
+              value="10"
+              id="7"
+              x0="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0"
+              y1="10"
+              key="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-34.22735529643441,-36.4484313710706A50,50,0,0,1,-29.38926261462363,-40.45084971874739L-50.676191519781696,-66.18440209783998A83.35737200750849,83.35737200750849,0,0,0,-55.516322992634564,-62.18029711553037"
+              tabindex="0"
+              value="16.14744343334983"
+              id="6"
+              x0="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.14744343334983148"
+              y1="16.14744343334983"
+              key="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-29.38926261462366,-40.450849718747364A50,50,0,0,1,-24.087683705085762,-43.81533400219318L-49.01460589300033,-83.09669914325126A96.4753491797265,96.4753491797265,0,0,0,-54.31873718198074,-79.73059507055656"
+              tabindex="0"
+              value="26.15906363467853"
+              id="5"
+              x0="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.15906363467853135"
+              y1="26.15906363467853"
+              key="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-24.0876837050858,-43.815334002193154A50,50,0,0,1,-18.40622763423393,-46.48882429441256L-46.650056065448126,-106.51397122140264A116.28178617592371,116.28178617592371,0,0,0,-52.33456050749219,-103.83904647458432"
+              tabindex="0"
+              value="45.169532480552725"
+              id="4"
+              x0="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.17006345886800336"
+              y1="45.170063458868"
+              key="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-18.40622763423389,-46.488824294412574A50,50,0,0,1,-12.434494358242722,-48.42915805643156L-29.745953006673748,-101.71354823583302A105.97390063123265,105.97390063123265,0,0,0,-35.720742115084064,-99.77222157367265"
+              tabindex="0"
+              value="39.17832807982927"
+              id="3"
+              x0="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.17832807982927115"
+              y1="39.17832807982927"
+              key="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-12.434494358242764,-48.42915805643155A50,50,0,0,1,-6.26666167821523,-49.60573506572389L-15.850980949232776,-99.85682777846988A101.10707023265947,101.10707023265947,0,0,0,-22.021880693600966,-98.6796656953637"
+              tabindex="0"
+              value="38.18323798907017"
+              id="2"
+              x0="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.1832379890701697"
+              y1="38.18323798907017"
+              key="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <path fill="#2d60e8"
+              d="M-6.266661678215186,-49.60573506572389A50,50,0,0,1,3.522406999140111e-14,-50L-1.5381659608819949,-74.46652768545121A74.48241201821601,74.48241201821601,0,0,0,-7.807093644270757,-74.07212018621362"
+              tabindex="0"
+              value="17.183148521935305"
+              id="1"
+              x0="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              x1="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              y0="0.18314852193530437"
+              y1="17.183148521935305"
+              key="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time)"
+              metadata="undefined"
+              transform-origin="0px 0px"
+              style="transform-origin: 0px 0px;"
+        >
+        </path>
+        <circle cx="0"
+                cy="0"
+                r="85.44003745317531"
+                fill="none"
+                stroke="#D740BE"
+                stroke-width="1"
+        >
+        </circle>
+        <circle cx="0"
+                cy="0"
+                r="70"
+                fill="none"
+                stroke="#F8A340"
+                stroke-width="1"
+        >
+        </circle>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
