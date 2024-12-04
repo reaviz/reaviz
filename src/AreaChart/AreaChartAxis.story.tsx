@@ -30,8 +30,7 @@ export default {
     PointSeries,
     StackedAreaSeries,
     StackedNormalizedAreaSeries
-  },
-  tags: ['test-only']
+  }
 };
 
 export const TopBottomAxis = () => {
