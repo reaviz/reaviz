@@ -20,6 +20,7 @@ import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Scatter Plot/Linear',
   component: ScatterPlot,
   subcomponents: {

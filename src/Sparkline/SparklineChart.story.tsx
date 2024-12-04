@@ -13,6 +13,7 @@ import { BarSparklineChart } from './BarSparklineChart';
 import { SonarChart } from './SonarChart';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Sparkline'
 };
 

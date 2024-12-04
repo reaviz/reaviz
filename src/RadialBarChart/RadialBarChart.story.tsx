@@ -16,6 +16,7 @@ import { schemes } from '@/common/color';
 import { useState } from 'react';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Radial',
   component: RadialBarChart,
   subcomponents: {

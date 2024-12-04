@@ -11,6 +11,7 @@ import {
 } from './';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Funnel Chart',
   component: FunnelChart,
   subcomponents: {

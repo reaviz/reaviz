@@ -13,6 +13,7 @@ import { symbol, symbolStar } from 'd3-shape';
 const starPath = symbol().type(symbolStar).size(50)();
 
 export default {
+  tags: ['no-snapshot'],
   title: 'Charts/Venn Diagram',
   component: VennDiagram,
   subcomponents: {
@@ -225,6 +226,7 @@ export const ManyIntersections = () => (
     series={<VennSeries colorScheme={['#2d60e8']} />}
   />
 );
+ManyIntersections.tags = ['no-snapshot'];
 
 export const NoIntersections = () => (
   <VennDiagram
@@ -322,6 +324,7 @@ export const Autosize = () => (
     />
   </div>
 );
+Autosize.tags = ['no-snapshot'];
 
 const eulerData = [
   {

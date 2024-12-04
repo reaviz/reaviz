@@ -7,6 +7,7 @@ import { symbol, symbolStar } from 'd3-shape';
 import { LineSeries } from './LineSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Circle Series',
   component: LineChart,
   subcomponents: {

@@ -21,6 +21,7 @@ import {
 import { HistogramBarChart } from './HistogramBarChart';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Vertical/Histogram',
   component: HistogramBarChart,
   subcomponents: {
@@ -228,7 +229,7 @@ export const MultiMonth = () => {
       width={300}
       height={250}
       gridlines={null}
-      Axis={
+      xAxis={
         <LinearXAxis
           type="time"
           tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
@@ -245,3 +246,5 @@ export const MultiMonth = () => {
     />
   );
 };
+
+MultiMonth.tags = ['no-snapshot'];

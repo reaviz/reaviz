@@ -7,6 +7,7 @@ import { AreaChart } from './AreaChart';
 import { AreaSeries } from './AreaSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Markers',
   component: AreaChart,
   subcomponents: {

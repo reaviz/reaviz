@@ -7,6 +7,7 @@ import { LinearXAxisTickSeries, LinearXAxis } from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Single Series',
   component: LineChart,
   subcomponents: {

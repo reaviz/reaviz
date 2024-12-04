@@ -5,6 +5,7 @@ import { LinearGaugeBar } from './LinearGaugeBar';
 import { LinearGaugeOuterBar } from './LinearGaugeOuterBar';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Gauge/Linear/Single-Series',
   component: LinearGauge,
   subcomponents: {

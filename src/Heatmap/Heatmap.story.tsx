@@ -10,6 +10,7 @@ import {
 } from '@/common/Axis';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Heatmap/Simple',
   component: Heatmap,
   subcomponents: {

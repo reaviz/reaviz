@@ -31,6 +31,7 @@ const colorScheme = chroma
 const onNodeClick = (title: string) => window.alert(`${title} is clicked`);
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Sankey Plot',
   component: Sankey,
   subcomponents: {

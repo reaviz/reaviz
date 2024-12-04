@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Gauge/Linear/Single-Series AutoSize smoke-test 1`] = `
+<div style="text-align: center;">
+  <div style="width: 300px; padding: 5px; border: 1px solid red;">
+    <div class="_container_1u3dt_1"
+         height="20"
+         style="height: 20px; width: 100%;"
+    >
+      <svg width="288"
+           height="20"
+           class="_svg_1u3dt_30"
+           tabindex="0"
+      >
+        <g transform="translate(0, 0)">
+          <rect fill="#484848"
+                width="288"
+                height="20"
+          >
+          </rect>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="80: Risk Score"
+                  role="graphics-document"
+                  height="20px"
+                  width="230px"
+                  fill="url(#gradient-linear-gauge-series-ref-3-bar-undefined-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-linear-gauge-series-ref-3-bar-undefined-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <br>
+  <button type="button">
+    Update Size
+  </button>
+</div>
+`;
+
+exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
+<div style="text-align: center;">
+  <div class="_container_1u3dt_1"
+       width="300"
+       height="15"
+       style="height: 15px; width: 300px;"
+  >
+    <svg width="300"
+         height="15"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <rect fill="#484848"
+              width="300"
+              height="15"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="15: Step 1"
+                role="graphics-document"
+                height="15px"
+                width="45px"
+                fill="url(#gradient-linear-gauge-series-ref-7-bar-undefined-0)"
+                x="0"
+                y="0"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-linear-gauge-series-ref-7-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </svg>
+  </div>
+  <br>
+  <div class="_container_1u3dt_1"
+       width="300"
+       height="15"
+       style="height: 15px; width: 300px;"
+  >
+    <svg width="300"
+         height="15"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <rect fill="#484848"
+              width="300"
+              height="15"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="50: Step 2"
+                role="graphics-document"
+                height="15px"
+                width="105px"
+                fill="url(#gradient-linear-gauge-series-ref-8-bar-undefined-0)"
+                x="45"
+                y="0"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-linear-gauge-series-ref-8-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </svg>
+  </div>
+  <br>
+  <div class="_container_1u3dt_1"
+       width="300"
+       height="15"
+       style="height: 15px; width: 300px;"
+  >
+    <svg width="300"
+         height="15"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <rect fill="#484848"
+              width="300"
+              height="15"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="55: Step 3"
+                role="graphics-document"
+                height="15px"
+                width="15px"
+                fill="url(#gradient-linear-gauge-series-ref-9-bar-undefined-0)"
+                x="150"
+                y="0"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-linear-gauge-series-ref-9-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </svg>
+  </div>
+  <br>
+  <div class="_container_1u3dt_1"
+       width="300"
+       height="15"
+       style="height: 15px; width: 300px;"
+  >
+    <svg width="300"
+         height="15"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <rect fill="#484848"
+              width="300"
+              height="15"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="100: Step 4"
+                role="graphics-document"
+                height="15px"
+                width="135px"
+                fill="url(#gradient-linear-gauge-series-ref-10-bar-undefined-0)"
+                x="165"
+                y="0"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-linear-gauge-series-ref-10-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Charts/Gauge/Linear/Single-Series NonZeroStart smoke-test 1`] = `
+<div style="text-align: center;">
+  <div class="_container_1u3dt_1"
+       width="300"
+       height="30"
+       style="height: 30px; width: 300px;"
+  >
+    <svg width="300"
+         height="30"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <rect fill="#484848"
+              width="300"
+              height="30"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="80: Risk Score"
+                role="graphics-document"
+                height="30px"
+                width="195px"
+                fill="url(#gradient-linear-gauge-series-ref-5-bar-undefined-0)"
+                x="45"
+                y="0"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-linear-gauge-series-ref-5-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Charts/Gauge/Linear/Single-Series Simple smoke-test 1`] = `
+<div style="text-align: center;">
+  <h2 style="color: white; margin: 0px;">
+    Risk Score
+  </h2>
+  <div class="_container_1u3dt_1"
+       width="300"
+       height="30"
+       style="height: 30px; width: 300px;"
+  >
+    <svg width="300"
+         height="30"
+         class="_svg_1u3dt_30"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <rect fill="#484848"
+              width="300"
+              height="30"
+        >
+        </rect>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="80: Risk Score"
+                role="graphics-document"
+                height="30px"
+                width="240px"
+                fill="url(#gradient-linear-gauge-series-ref-1-bar-undefined-0)"
+                x="0"
+                y="0"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-linear-gauge-series-ref-1-bar-undefined-0"
+                        y1="0%"
+                        y2="0%"
+                        x1="0%"
+                        x2="100%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+      </g>
+    </svg>
+  </div>
+</div>
+`;

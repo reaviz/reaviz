@@ -24,6 +24,7 @@ import {
 } from './BarSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Horizontal/Single Series',
   component: BarChart,
   subcomponents: {

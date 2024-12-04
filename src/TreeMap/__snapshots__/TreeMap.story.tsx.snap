@@ -1,0 +1,4920 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/TreeMap _20Items smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="600"
+     height="600"
+     style="height: 600px; width: 600px;"
+>
+  <svg width="600"
+       height="600"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="46px 10px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 46px 10px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 1: 3"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="92px"
+              height="20px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 1-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="46px 47px"
+         style="transform: translateX(5px) translateY(55px) scale(1); transform-origin: 46px 47px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 2: 12"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="92px"
+              height="94px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 2-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 2
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="46px 43px"
+         style="transform: translateX(5px) translateY(154px) scale(1); transform-origin: 46px 43px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 3: 11"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="92px"
+              height="86px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 3-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 3
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="46px 51px"
+         style="transform: translateX(5px) translateY(245px) scale(1); transform-origin: 46px 51px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 4: 13"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="92px"
+              height="102px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 4-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 4
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="46px 47px"
+         style="transform: translateX(5px) translateY(352px) scale(1); transform-origin: 46px 47px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 5: 12"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="92px"
+              height="94px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 5-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 5
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="46px 30.5px"
+         style="transform: translateX(5px) translateY(451px) scale(1); transform-origin: 46px 30.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 6: 8"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="92px"
+              height="61px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 6-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 6
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="46px 39px"
+         style="transform: translateX(5px) translateY(517px) scale(1); transform-origin: 46px 39px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 7: 10"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="92px"
+              height="78px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 7-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 7
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="181.5px 16px"
+         style="transform: translateX(102px) translateY(30px) scale(1); transform-origin: 181.5px 16px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 8: 17"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="363px"
+              height="32px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 8-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 8
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="19px 16px"
+         style="transform: translateX(470px) translateY(30px) scale(1); transform-origin: 19px 16px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 9: 2"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="38px"
+              height="32px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 9-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="41px 16px"
+         style="transform: translateX(513px) translateY(30px) scale(1); transform-origin: 41px 16px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 10: 4"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="82px"
+              height="32px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 10-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 10
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0px 0px"
+         style="transform: translateX(99px) translateY(67px) scale(1); transform-origin: 0px 0px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 11: 0"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="0px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 11-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="82.5px 32.5px"
+         style="transform: translateX(102px) translateY(67px) scale(1); transform-origin: 82.5px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 12: 15"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="165px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 12-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 12
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="65px 32.5px"
+         style="transform: translateX(272px) translateY(67px) scale(1); transform-origin: 65px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 13: 12"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="130px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 13-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 13
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 32.5px"
+         style="transform: translateX(407px) translateY(67px) scale(1); transform-origin: 26px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 14: 5"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="52px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 14-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="65.5px 32.5px"
+         style="transform: translateX(464px) translateY(67px) scale(1); transform-origin: 65.5px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 15: 12"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="131px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 15-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 15
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 4.5px"
+         style="transform: translateX(102px) translateY(137px) scale(1); transform-origin: 26px 4.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 16: 1"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="52px"
+              height="9px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 16-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 46.5px"
+         style="transform: translateX(102px) translateY(151px) scale(1); transform-origin: 26px 46.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 17: 7"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="52px"
+              height="93px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 17-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 47px"
+         style="transform: translateX(102px) translateY(249px) scale(1); transform-origin: 26px 47px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 18: 7"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="52px"
+              height="94px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 18-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 81.5px"
+         style="transform: translateX(102px) translateY(348px) scale(1); transform-origin: 26px 81.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 19: 12"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="52px"
+              height="163px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 19-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 4.5px"
+         style="transform: translateX(102px) translateY(516px) scale(1); transform-origin: 26px 4.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 20: 1"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="52px"
+              height="9px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 20-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="26px 32.5px"
+         style="transform: translateX(102px) translateY(530px) scale(1); transform-origin: 26px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 21: 5"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="52px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 21-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="23.6171875px 34px"
+         style="transform: translateX(156px) translateY(136px) scale(1); transform-origin: 23.6172px 34px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 22: 0"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="0px"
+              height="0px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 22-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="-8"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              22
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="33.3515625px 13px"
+         style="transform: translateX(159px) translateY(136px) scale(1); transform-origin: 33.3516px 13px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 23: 1"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="436px"
+              height="0px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 23-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 23
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="23.6171875px 34px"
+         style="transform: translateX(156px) translateY(139px) scale(1); transform-origin: 23.6172px 34px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 24: 0"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="0px"
+              height="111px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 24-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              24
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="35px 55.5px"
+         style="transform: translateX(159px) translateY(139px) scale(1); transform-origin: 35px 55.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 25: 11"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="70px"
+              height="111px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 25-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 25
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="56.5px 55.5px"
+         style="transform: translateX(234px) translateY(139px) scale(1); transform-origin: 56.5px 55.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 26: 17"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="113px"
+              height="111px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 26-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 26
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="56px 55.5px"
+         style="transform: translateX(352px) translateY(139px) scale(1); transform-origin: 56px 55.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 27: 17"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="112px"
+              height="111px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 27-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 27
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="35.5px 55.5px"
+         style="transform: translateX(469px) translateY(139px) scale(1); transform-origin: 35.5px 55.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 28: 11"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="71px"
+              height="111px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 28-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 28
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="25px 55.5px"
+         style="transform: translateX(545px) translateY(139px) scale(1); transform-origin: 25px 55.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 29: 8"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="50px"
+              height="111px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 29-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="42.5px 28.5px"
+         style="transform: translateX(159px) translateY(255px) scale(1); transform-origin: 42.5px 28.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 30: 7"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="85px"
+              height="57px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 30-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 30
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="42.5px 55px"
+         style="transform: translateX(159px) translateY(317px) scale(1); transform-origin: 42.5px 55px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 31: 13"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="85px"
+              height="110px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 31-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 31
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="42.5px 28.5px"
+         style="transform: translateX(159px) translateY(432px) scale(1); transform-origin: 42.5px 28.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 32: 7"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="85px"
+              height="57px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 32-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 32
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="42.5px 10.5px"
+         style="transform: translateX(159px) translateY(494px) scale(1); transform-origin: 42.5px 10.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 33: 3"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="85px"
+              height="21px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 33-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="42.5px 37.5px"
+         style="transform: translateX(159px) translateY(520px) scale(1); transform-origin: 42.5px 37.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 34: 9"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="85px"
+              height="75px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 34-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 34
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="59.5px 48.5px"
+         style="transform: translateX(249px) translateY(255px) scale(1); transform-origin: 59.5px 48.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 35: 16"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="119px"
+              height="97px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 35-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 35
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="59.5px 32.5px"
+         style="transform: translateX(249px) translateY(357px) scale(1); transform-origin: 59.5px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 36: 11"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="119px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 36-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 36
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="59.5px 23.5px"
+         style="transform: translateX(249px) translateY(427px) scale(1); transform-origin: 59.5px 23.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 37: 8"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="119px"
+              height="47px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 37-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 37
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="59.5px 35.5px"
+         style="transform: translateX(249px) translateY(479px) scale(1); transform-origin: 59.5px 35.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 38: 12"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="119px"
+              height="71px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 38-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 38
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="59.5px 20px"
+         style="transform: translateX(249px) translateY(555px) scale(1); transform-origin: 59.5px 20px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 39: 7"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="119px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 39-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 39
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="20.5px 32.5px"
+         style="transform: translateX(373px) translateY(255px) scale(1); transform-origin: 20.5px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 40: 4"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="41px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 40-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="25.5px 32.5px"
+         style="transform: translateX(419px) translateY(255px) scale(1); transform-origin: 25.5px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 41: 5"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="51px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 41-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="60px 32.5px"
+         style="transform: translateX(475px) translateY(255px) scale(1); transform-origin: 60px 32.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 42: 11"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="120px"
+              height="65px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 42-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 42
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="66.5px 47px"
+         style="transform: translateX(373px) translateY(325px) scale(1); transform-origin: 66.5px 47px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 43: 17"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="133px"
+              height="94px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 43-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 43
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="42px 47px"
+         style="transform: translateX(511px) translateY(325px) scale(1); transform-origin: 42px 47px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 44: 11"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="84px"
+              height="94px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 44-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 44
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="22.5px 5.5px"
+         style="transform: translateX(373px) translateY(424px) scale(1); transform-origin: 22.5px 5.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 45: 1"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="45px"
+              height="11px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 45-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="22.5px 77.5px"
+         style="transform: translateX(373px) translateY(440px) scale(1); transform-origin: 22.5px 77.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 46: 10"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="45px"
+              height="155px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 46-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="47.5px 37.5px"
+         style="transform: translateX(423px) translateY(424px) scale(1); transform-origin: 47.5px 37.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 47: 10"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="95px"
+              height="75px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 47-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 47
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="47.5px 45.5px"
+         style="transform: translateX(423px) translateY(504px) scale(1); transform-origin: 47.5px 45.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 48: 12"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="95px"
+              height="91px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 48-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 48
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="36px 13px"
+         style="transform: translateX(523px) translateY(424px) scale(1); transform-origin: 36px 13px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 49: 3"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="72px"
+              height="26px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 49-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="36px 70px"
+         style="transform: translateX(523px) translateY(455px) scale(1); transform-origin: 36px 70px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 50: 14"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="72px"
+              height="140px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-11-series-Item 50-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 50
+            </tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap _100Items smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="600"
+     height="600"
+     style="height: 600px; width: 600px;"
+>
+  <svg width="600"
+       height="600"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="17px 57.5px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 17px 57.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 1: 65"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="34px"
+              height="115px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 1-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="17px 61.5px"
+         style="transform: translateX(5px) translateY(150px) scale(1); transform-origin: 17px 61.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 2: 70"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="34px"
+              height="123px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 2-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="17px 18px"
+         style="transform: translateX(5px) translateY(278px) scale(1); transform-origin: 17px 18px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 3: 22"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="34px"
+              height="36px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 3-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="17px 2px"
+         style="transform: translateX(5px) translateY(319px) scale(1); transform-origin: 17px 2px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 4: 5"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="34px"
+              height="4px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 4-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="17px 14px"
+         style="transform: translateX(5px) translateY(328px) scale(1); transform-origin: 17px 14px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 5: 18"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="34px"
+              height="28px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 5-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="17px 34.5px"
+         style="transform: translateX(5px) translateY(361px) scale(1); transform-origin: 17px 34.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 6: 40"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="34px"
+              height="69px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 6-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0px 0px"
+         style="transform: translateX(5px) translateY(435px) scale(1); transform-origin: 0px 0px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 7: 3"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="34px"
+              height="0px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 7-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="17px 77.5px"
+         style="transform: translateX(5px) translateY(440px) scale(1); transform-origin: 17px 77.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 8: 87"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="34px"
+              height="155px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 8-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="45px 26px"
+         style="transform: translateX(44px) translateY(30px) scale(1); transform-origin: 45px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 9: 74"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="90px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 9-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 9
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="20px 26px"
+         style="transform: translateX(139px) translateY(30px) scale(1); transform-origin: 20px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 10: 35"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="40px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 10-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="56.5px 26px"
+         style="transform: translateX(184px) translateY(30px) scale(1); transform-origin: 56.5px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 11: 92"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="113px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 11-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 11
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="1px 26px"
+         style="transform: translateX(302px) translateY(30px) scale(1); transform-origin: 1px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 12: 6"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="2px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 12-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="12px 26px"
+         style="transform: translateX(309px) translateY(30px) scale(1); transform-origin: 12px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 13: 22"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="24px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 13-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="5px 26px"
+         style="transform: translateX(338px) translateY(30px) scale(1); transform-origin: 5px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 14: 12"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="10px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 14-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="6.5px 26px"
+         style="transform: translateX(353px) translateY(30px) scale(1); transform-origin: 6.5px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 15: 14"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="13px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 15-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="41px 26px"
+         style="transform: translateX(371px) translateY(30px) scale(1); transform-origin: 41px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 16: 68"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="82px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 16-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 16
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="22px 26px"
+         style="transform: translateX(458px) translateY(30px) scale(1); transform-origin: 22px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 17: 38"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="44px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 17-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="44px 26px"
+         style="transform: translateX(507px) translateY(30px) scale(1); transform-origin: 44px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 18: 73"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="88px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 18-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 18
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 19px"
+         style="transform: translateX(44px) translateY(87px) scale(1); transform-origin: 32px 19px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 19: 41"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="64px"
+              height="38px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 19-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 19
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 41px"
+         style="transform: translateX(44px) translateY(130px) scale(1); transform-origin: 32px 41px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 20: 83"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="64px"
+              height="82px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 20-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 20
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 6px"
+         style="transform: translateX(44px) translateY(217px) scale(1); transform-origin: 32px 6px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 21: 16"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="64px"
+              height="12px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 21-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 48.5px"
+         style="transform: translateX(44px) translateY(234px) scale(1); transform-origin: 32px 48.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 22: 97"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="64px"
+              height="97px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 22-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 22
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 41.5px"
+         style="transform: translateX(44px) translateY(336px) scale(1); transform-origin: 32px 41.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 23: 83"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="64px"
+              height="83px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 23-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 23
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 23px"
+         style="transform: translateX(44px) translateY(424px) scale(1); transform-origin: 32px 23px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 24: 48"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="64px"
+              height="46px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 24-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 24
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 25px"
+         style="transform: translateX(44px) translateY(475px) scale(1); transform-origin: 32px 25px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 25: 53"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="64px"
+              height="50px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 25-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 25
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 7px"
+         style="transform: translateX(44px) translateY(530px) scale(1); transform-origin: 32px 7px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 26: 18"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="64px"
+              height="14px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 26-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="32px 23px"
+         style="transform: translateX(44px) translateY(549px) scale(1); transform-origin: 32px 23px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 27: 48"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="64px"
+              height="46px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 27-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 27
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="49px 29.5px"
+         style="transform: translateX(113px) translateY(87px) scale(1); transform-origin: 49px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 28: 91"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="98px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 28-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 28
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="52px 29.5px"
+         style="transform: translateX(216px) translateY(87px) scale(1); transform-origin: 52px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 29: 97"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="104px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 29-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 29
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="6px 29.5px"
+         style="transform: translateX(325px) translateY(87px) scale(1); transform-origin: 6px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 30: 15"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="12px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 30-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="7.5px 29.5px"
+         style="transform: translateX(342px) translateY(87px) scale(1); transform-origin: 7.5px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 31: 17"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="15px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 31-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="52.5px 29.5px"
+         style="transform: translateX(362px) translateY(87px) scale(1); transform-origin: 52.5px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 32: 98"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="105px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 32-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 32
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="49.5px 29.5px"
+         style="transform: translateX(472px) translateY(87px) scale(1); transform-origin: 49.5px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 33: 92"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="99px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 33-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 33
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="9.5px 29.5px"
+         style="transform: translateX(576px) translateY(87px) scale(1); transform-origin: 9.5px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 34: 21"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="19px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 34-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 49px"
+         style="transform: translateX(113px) translateY(151px) scale(1); transform-origin: 30px 49px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 35: 92"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="60px"
+              height="98px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 35-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 35
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 20.5px"
+         style="transform: translateX(113px) translateY(254px) scale(1); transform-origin: 30px 20.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 36: 41"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="60px"
+              height="41px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 36-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 36
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 5px"
+         style="transform: translateX(113px) translateY(300px) scale(1); transform-origin: 30px 5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 37: 14"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="60px"
+              height="10px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 37-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 18.5px"
+         style="transform: translateX(113px) translateY(315px) scale(1); transform-origin: 30px 18.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 38: 37"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="60px"
+              height="37px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 38-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 38
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 11px"
+         style="transform: translateX(113px) translateY(357px) scale(1); transform-origin: 30px 11px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 39: 24"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="60px"
+              height="22px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 39-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 3.5px"
+         style="transform: translateX(113px) translateY(384px) scale(1); transform-origin: 30px 3.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 40: 11"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="60px"
+              height="7px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 40-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 27px"
+         style="transform: translateX(113px) translateY(396px) scale(1); transform-origin: 30px 27px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 41: 53"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="60px"
+              height="54px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 41-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 41
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 33.5px"
+         style="transform: translateX(113px) translateY(455px) scale(1); transform-origin: 30px 33.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 42: 64"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="60px"
+              height="67px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 42-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 42
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="30px 34px"
+         style="transform: translateX(113px) translateY(527px) scale(1); transform-origin: 30px 34px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 43: 65"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="60px"
+              height="68px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 43-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 43
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="12.5px 28px"
+         style="transform: translateX(178px) translateY(151px) scale(1); transform-origin: 12.5px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 44: 26"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="25px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 44-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="19px 28px"
+         style="transform: translateX(208px) translateY(151px) scale(1); transform-origin: 19px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 45: 36"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="38px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 45-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="7px 28px"
+         style="transform: translateX(251px) translateY(151px) scale(1); transform-origin: 7px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 46: 16"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="14px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 46-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="28px 28px"
+         style="transform: translateX(270px) translateY(151px) scale(1); transform-origin: 28px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 47: 52"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="56px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 47-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="37px 28px"
+         style="transform: translateX(331px) translateY(151px) scale(1); transform-origin: 37px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 48: 67"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="74px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 48-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 48
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="52px 28px"
+         style="transform: translateX(410px) translateY(151px) scale(1); transform-origin: 52px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 49: 92"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="104px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 49-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 49
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="38px 28px"
+         style="transform: translateX(519px) translateY(151px) scale(1); transform-origin: 38px 28px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 50: 69"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="76px"
+              height="56px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 50-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 50
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0px 0px"
+         style="transform: translateX(178px) translateY(210px) scale(1); transform-origin: 0px 0px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 51: 1"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="29px"
+              height="0px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 51-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="14.5px 69.5px"
+         style="transform: translateX(178px) translateY(214px) scale(1); transform-origin: 14.5px 69.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 52: 69"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="29px"
+              height="139px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 52-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="14.5px 21.5px"
+         style="transform: translateX(178px) translateY(358px) scale(1); transform-origin: 14.5px 21.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 53: 23"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="29px"
+              height="43px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 53-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="14.5px 94.5px"
+         style="transform: translateX(178px) translateY(406px) scale(1); transform-origin: 14.5px 94.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 54: 93"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="29px"
+              height="189px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 54-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="3px 20px"
+         style="transform: translateX(212px) translateY(212px) scale(1); transform-origin: 3px 20px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 55: 7"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="6px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 55-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="14.5px 20px"
+         style="transform: translateX(223px) translateY(212px) scale(1); transform-origin: 14.5px 20px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 56: 21"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="29px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 56-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="25.5px 20px"
+         style="transform: translateX(257px) translateY(212px) scale(1); transform-origin: 25.5px 20px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 57: 35"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="51px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 57-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="65.5px 20px"
+         style="transform: translateX(313px) translateY(212px) scale(1); transform-origin: 65.5px 20px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 58: 85"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="131px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 58-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 58
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0px 0px"
+         style="transform: translateX(449px) translateY(212px) scale(1); transform-origin: 0px 0px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 59: 3"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="0px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 59-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="70.5px 20px"
+         style="transform: translateX(454px) translateY(212px) scale(1); transform-origin: 70.5px 20px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 60: 91"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="141px"
+              height="40px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 60-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 60
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="24px 32px"
+         style="transform: translateX(212px) translateY(257px) scale(1); transform-origin: 24px 32px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 61: 50"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="48px"
+              height="64px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 61-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="24px 58px"
+         style="transform: translateX(212px) translateY(326px) scale(1); transform-origin: 24px 58px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 62: 88"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="48px"
+              height="116px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 62-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="24px 35.5px"
+         style="transform: translateX(212px) translateY(447px) scale(1); transform-origin: 24px 35.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 63: 55"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="48px"
+              height="71px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 63-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="24px 36px"
+         style="transform: translateX(212px) translateY(523px) scale(1); transform-origin: 24px 36px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 64: 56"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="48px"
+              height="72px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 64-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0.5px 22px"
+         style="transform: translateX(265px) translateY(257px) scale(1); transform-origin: 0.5px 22px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 65: 4"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="1px"
+              height="44px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 65-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="47px 22px"
+         style="transform: translateX(271px) translateY(257px) scale(1); transform-origin: 47px 22px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 66: 68"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="94px"
+              height="44px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 66-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 66
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="11px 22px"
+         style="transform: translateX(370px) translateY(257px) scale(1); transform-origin: 11px 22px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 67: 18"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="22px"
+              height="44px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 67-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="41px 22px"
+         style="transform: translateX(397px) translateY(257px) scale(1); transform-origin: 41px 22px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 68: 60"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="82px"
+              height="44px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 68-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 68
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="55.5px 22px"
+         style="transform: translateX(484px) translateY(257px) scale(1); transform-origin: 55.5px 22px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 69: 79"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="111px"
+              height="44px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 69-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 69
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29px 17px"
+         style="transform: translateX(265px) translateY(306px) scale(1); transform-origin: 29px 17px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 70: 34"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="58px"
+              height="34px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 70-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 70
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29px 4.5px"
+         style="transform: translateX(265px) translateY(345px) scale(1); transform-origin: 29px 4.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 71: 12"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="58px"
+              height="9px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 71-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29px 46px"
+         style="transform: translateX(265px) translateY(359px) scale(1); transform-origin: 29px 46px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 72: 85"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="58px"
+              height="92px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 72-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 72
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29px 29.5px"
+         style="transform: translateX(265px) translateY(456px) scale(1); transform-origin: 29px 29.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 73: 56"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="58px"
+              height="59px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 73-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 73
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29px 37.5px"
+         style="transform: translateX(265px) translateY(520px) scale(1); transform-origin: 29px 37.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 74: 70"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="58px"
+              height="75px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 74-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 74
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="15.5px 43px"
+         style="transform: translateX(328px) translateY(306px) scale(1); transform-origin: 15.5px 43px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 75: 45"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="31px"
+              height="86px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 75-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="22.5px 43px"
+         style="transform: translateX(364px) translateY(306px) scale(1); transform-origin: 22.5px 43px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 76: 63"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="45px"
+              height="86px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 76-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="28.5px 43px"
+         style="transform: translateX(414px) translateY(306px) scale(1); transform-origin: 28.5px 43px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 77: 78"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="57px"
+              height="86px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 77-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="35px 43px"
+         style="transform: translateX(476px) translateY(306px) scale(1); transform-origin: 35px 43px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 78: 94"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="70px"
+              height="86px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 78-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 78
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="22px 43px"
+         style="transform: translateX(551px) translateY(306px) scale(1); transform-origin: 22px 43px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 79: 62"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="44px"
+              height="86px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 79-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29.5px 3.5px"
+         style="transform: translateX(328px) translateY(397px) scale(1); transform-origin: 29.5px 3.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 80: 10"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="59px"
+              height="7px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 80-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29.5px 9.5px"
+         style="transform: translateX(328px) translateY(409px) scale(1); transform-origin: 29.5px 9.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 81: 21"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="59px"
+              height="19px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 81-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29.5px 47px"
+         style="transform: translateX(328px) translateY(433px) scale(1); transform-origin: 29.5px 47px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 82: 88"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="59px"
+              height="94px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 82-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 82
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="29.5px 31.5px"
+         style="transform: translateX(328px) translateY(532px) scale(1); transform-origin: 29.5px 31.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 83: 60"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="59px"
+              height="63px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 83-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 83
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="12.5px 50px"
+         style="transform: translateX(392px) translateY(397px) scale(1); transform-origin: 12.5px 50px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 84: 44"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="25px"
+              height="100px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 84-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="12.5px 32px"
+         style="transform: translateX(392px) translateY(502px) scale(1); transform-origin: 12.5px 32px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 85: 29"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="25px"
+              height="64px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 85-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="12.5px 12px"
+         style="transform: translateX(392px) translateY(571px) scale(1); transform-origin: 12.5px 12px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 86: 12"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="25px"
+              height="24px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 86-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0px 0px"
+         style="transform: translateX(420px) translateY(397px) scale(1); transform-origin: 0px 0px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 87: 0"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="0px"
+              height="67px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 87-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="34px 33.5px"
+         style="transform: translateX(422px) translateY(397px) scale(1); transform-origin: 34px 33.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 88: 72"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="68px"
+              height="67px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 88-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 88
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="14px 33.5px"
+         style="transform: translateX(495px) translateY(397px) scale(1); transform-origin: 14px 33.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 89: 33"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="28px"
+              height="67px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 89-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="33.5px 33.5px"
+         style="transform: translateX(528px) translateY(397px) scale(1); transform-origin: 33.5px 33.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 90: 71"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="67px"
+              height="67px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 90-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 90
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="23px 6px"
+         style="transform: translateX(422px) translateY(469px) scale(1); transform-origin: 23px 6px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 91: 12"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="46px"
+              height="12px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 91-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="23px 27.5px"
+         style="transform: translateX(422px) translateY(486px) scale(1); transform-origin: 23px 27.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 92: 42"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="46px"
+              height="55px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 92-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="23px 4.5px"
+         style="transform: translateX(422px) translateY(546px) scale(1); transform-origin: 23px 4.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 93: 10"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="46px"
+              height="9px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 93-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="23px 17.5px"
+         style="transform: translateX(422px) translateY(560px) scale(1); transform-origin: 23px 17.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 94: 28"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="46px"
+              height="35px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 94-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="3.5px 26.5px"
+         style="transform: translateX(473px) translateY(469px) scale(1); transform-origin: 3.5px 26.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 95: 9"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="7px"
+              height="53px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 95-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="18px 26.5px"
+         style="transform: translateX(485px) translateY(469px) scale(1); transform-origin: 18px 26.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 96: 33"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="36px"
+              height="53px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 96-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="34.5px 26.5px"
+         style="transform: translateX(526px) translateY(469px) scale(1); transform-origin: 34.5px 26.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 97: 59"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="69px"
+              height="53px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 97-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 97
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="36.5px 34px"
+         style="transform: translateX(473px) translateY(527px) scale(1); transform-origin: 36.5px 34px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 98: 78"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="73px"
+              height="68px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 98-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Item 98
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="0px 0px"
+         style="transform: translateX(550px) translateY(527px) scale(1); transform-origin: 0px 0px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 99: 4"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="0px"
+              height="68px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 99-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="20.5px 34px"
+         style="transform: translateX(554px) translateY(527px) scale(1); transform-origin: 20.5px 34px;"
+      >
+        <rect tabindex="0"
+              aria-label="Item 100: 46"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="41px"
+              height="68px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-13-series-Item 100-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap Events smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="400"
+     style="height: 400px; width: 400px;"
+>
+  <svg width="400"
+       height="400"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="114.5px 125px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 114.5px 125px;"
+      >
+        <rect tabindex="0"
+              aria-label="AWS: 100"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="229px"
+              height="250px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-15-series-AWS-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              AWS
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="114.5px 55px"
+         style="transform: translateX(5px) translateY(285px) scale(1); transform-origin: 114.5px 55px;"
+      >
+        <rect tabindex="0"
+              aria-label="SendGrid: 45"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="229px"
+              height="110px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-15-series-SendGrid-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              SendGrid
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 136.5px"
+         style="transform: translateX(239px) translateY(30px) scale(1); transform-origin: 78px 136.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Okta: 75"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="156px"
+              height="273px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-15-series-Okta-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Okta
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 43.5px"
+         style="transform: translateX(239px) translateY(308px) scale(1); transform-origin: 78px 43.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Twillo: 25"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="156px"
+              height="87px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-15-series-Twillo-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Twillo
+            </tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap LabelPosition smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="400"
+     style="height: 400px; width: 400px;"
+>
+  <svg width="400"
+       height="400"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="114.5px 125px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 114.5px 125px;"
+      >
+        <rect tabindex="0"
+              aria-label="AWS: 100"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="229px"
+              height="250px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(99px, 15px);">
+          <text id="ref-3-series-AWS-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              AWS
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="114.5px 55px"
+         style="transform: translateX(5px) translateY(285px) scale(1); transform-origin: 114.5px 55px;"
+      >
+        <rect tabindex="0"
+              aria-label="SendGrid: 45"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="229px"
+              height="110px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(85px, 15px);">
+          <text id="ref-3-series-SendGrid-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              SendGrid
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 136.5px"
+         style="transform: translateX(239px) translateY(30px) scale(1); transform-origin: 78px 136.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Okta: 75"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="156px"
+              height="273px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(63px, 15px);">
+          <text id="ref-3-series-Okta-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Okta
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 43.5px"
+         style="transform: translateX(239px) translateY(308px) scale(1); transform-origin: 78px 43.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Twillo: 25"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="156px"
+              height="87px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(60.5px, 15px);">
+          <text id="ref-3-series-Twillo-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Twillo
+            </tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap LongText smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="400"
+     style="height: 400px; width: 400px;"
+>
+  <svg width="400"
+       height="400"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="114.5px 125px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 114.5px 125px;"
+      >
+        <rect tabindex="0"
+              aria-label="Short text: 100"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="229px"
+              height="250px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-7-series-Short text-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Short text
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="114.5px 55px"
+         style="transform: translateX(5px) translateY(285px) scale(1); transform-origin: 114.5px 55px;"
+      >
+        <rect tabindex="0"
+              aria-label="Another short text: 45"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="229px"
+              height="110px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-7-series-Another short text-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Another short text
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 136.5px"
+         style="transform: translateX(239px) translateY(30px) scale(1); transform-origin: 78px 136.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="This is a test of very long text that should not fit in a rectangle's width.: 75"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="156px"
+              height="273px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-7-series-This is a test of very long text that should not fit in a rectangle's width.-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              This is a test of very
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              long text that should
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              not fit in a rectangle's
+            </tspan>
+            <tspan dominant-baseline="alphabetic"
+                   dy="16"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              width.
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 43.5px"
+         style="transform: translateX(239px) translateY(308px) scale(1); transform-origin: 78px 43.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.: 25"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="156px"
+              height="87px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-7-series-This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap Nested smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="127px 81.5px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 127px 81.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Windows: 100"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="254px"
+              height="163px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Windows-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Windows
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="41px 26px"
+         style="transform: translateX(10px) translateY(60px) scale(1); transform-origin: 41px 26px;"
+      >
+        <rect tabindex="0"
+              aria-label="Windows → WinXP: 15"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="82px"
+              height="52px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-WinXP-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              WinXP
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="41px 35.5px"
+         style="transform: translateX(10px) translateY(117px) scale(1); transform-origin: 41px 35.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Windows → Win10: 20"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="82px"
+              height="71px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Win10-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Win10
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="59.5px 64px"
+         style="transform: translateX(97px) translateY(60px) scale(1); transform-origin: 59.5px 64px;"
+      >
+        <rect tabindex="0"
+              aria-label="Windows → Win7: 50"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="119px"
+              height="128px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Win7-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Win7
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="16.5px 42px"
+         style="transform: translateX(221px) translateY(60px) scale(1); transform-origin: 16.5px 42px;"
+      >
+        <rect tabindex="0"
+              aria-label="Windows → WinVista: 10"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="33px"
+              height="84px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-WinVista-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="16.5px 19.5px"
+         style="transform: translateX(221px) translateY(149px) scale(1); transform-origin: 16.5px 19.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Windows → Win98: 5"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="33px"
+              height="39px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Win98-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="127px 123.5px"
+         style="transform: translateX(5px) translateY(198px) scale(1); transform-origin: 127px 123.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="MacOS: 150"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="254px"
+              height="247px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-MacOS-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              MacOS
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="72px 21.5px"
+         style="transform: translateX(10px) translateY(228px) scale(1); transform-origin: 72px 21.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="MacOS → Sierra: 20"
+              role="graphics-document"
+              fill="rgba(38, 239, 181, 1)"
+              width="144px"
+              height="43px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Sierra-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Sierra
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="72px 34px"
+         style="transform: translateX(10px) translateY(276px) scale(1); transform-origin: 72px 34px;"
+      >
+        <rect tabindex="0"
+              aria-label="MacOS → Catalina: 30"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="144px"
+              height="68px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Catalina-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Catalina
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="72px 45.5px"
+         style="transform: translateX(10px) translateY(349px) scale(1); transform-origin: 72px 45.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="MacOS → BigSur: 40"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="144px"
+              height="91px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-BigSur-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              BigSur
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="47.5px 106px"
+         style="transform: translateX(159px) translateY(228px) scale(1); transform-origin: 47.5px 106px;"
+      >
+        <rect tabindex="0"
+              aria-label="MacOS → Ventura: 60"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="95px"
+              height="212px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Ventura-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Ventura
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="90.5px 207.5px"
+         style="transform: translateX(264px) translateY(30px) scale(1); transform-origin: 90.5px 207.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Linux: 180"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="181px"
+              height="415px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Linux-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Linux
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="85.5px 72.5px"
+         style="transform: translateX(269px) translateY(60px) scale(1); transform-origin: 85.5px 72.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Linux → Ubuntu: 70"
+              role="graphics-document"
+              fill="rgba(41, 181, 202, 1)"
+              width="171px"
+              height="145px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Ubuntu-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Ubuntu
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="45.5px 115px"
+         style="transform: translateX(269px) translateY(210px) scale(1); transform-origin: 45.5px 115px;"
+      >
+        <rect tabindex="0"
+              aria-label="Linux → Fedora: 60"
+              role="graphics-document"
+              fill="rgba(40, 200, 195, 1)"
+              width="91px"
+              height="230px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-Fedora-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Fedora
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="37.5px 115px"
+         style="transform: translateX(365px) translateY(210px) scale(1); transform-origin: 37.5px 115px;"
+      >
+        <rect tabindex="0"
+              aria-label="Linux → CentOS: 50"
+              role="graphics-document"
+              fill="rgba(39, 220, 188, 1)"
+              width="75px"
+              height="230px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-17-series-CentOS-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              CentOS
+            </tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap NoAnimation smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="400"
+     style="height: 400px; width: 400px;"
+>
+  <svg width="400"
+       height="400"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="114.5px 125px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 114.5px 125px;"
+      >
+        <rect tabindex="0"
+              aria-label="AWS: 100"
+              role="graphics-document"
+              fill="#2d60e8"
+              width="229px"
+              height="250px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-5-series-AWS-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              AWS
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="114.5px 55px"
+         style="transform: translateX(5px) translateY(285px) scale(1); transform-origin: 114.5px 55px;"
+      >
+        <rect tabindex="0"
+              aria-label="SendGrid: 45"
+              role="graphics-document"
+              fill="#2c77e0"
+              width="229px"
+              height="110px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-5-series-SendGrid-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              SendGrid
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 136.5px"
+         style="transform: translateX(239px) translateY(30px) scale(1); transform-origin: 78px 136.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Okta: 75"
+              role="graphics-document"
+              fill="#2b8dd8"
+              width="156px"
+              height="273px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-5-series-Okta-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Okta
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 43.5px"
+         style="transform: translateX(239px) translateY(308px) scale(1); transform-origin: 78px 43.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="Twillo: 25"
+              role="graphics-document"
+              fill="#2aa1d1"
+              width="156px"
+              height="87px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-5-series-Twillo-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Twillo
+            </tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="400"
+     style="height: 400px; width: 400px;"
+>
+  <svg width="400"
+       height="400"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="114.5px 125px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 114.5px 125px;"
+      >
+        <rect tabindex="0"
+              aria-label="Short text: 100"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="229px"
+              height="250px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-9-series-Short text-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Short text
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="114.5px 55px"
+         style="transform: translateX(5px) translateY(285px) scale(1); transform-origin: 114.5px 55px;"
+      >
+        <rect tabindex="0"
+              aria-label="Another short text: 45"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="229px"
+              height="110px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-9-series-Another short text-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Another short text
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 136.5px"
+         style="transform: translateX(239px) translateY(30px) scale(1); transform-origin: 78px 136.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="This is a test of very long text that should not fit in a rectangle's width.: 75"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="156px"
+              height="273px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-9-series-This is a test of very long text that should not fit in a rectangle's width.-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            This is a test of very
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="78px 43.5px"
+         style="transform: translateX(239px) translateY(308px) scale(1); transform-origin: 78px 43.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.: 25"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="156px"
+              height="87px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-9-series-This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/TreeMap Simple smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g opacity="1"
+         transform-origin="129px 142.5px"
+         style="transform: translateX(5px) translateY(30px) scale(1); transform-origin: 129px 142.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="AWS: 100"
+              role="graphics-document"
+              fill="rgba(45, 96, 232, 1)"
+              width="258px"
+              height="285px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-1-series-AWS-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              AWS
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="129px 62.5px"
+         style="transform: translateX(5px) translateY(320px) scale(1); transform-origin: 129px 62.5px;"
+      >
+        <rect tabindex="0"
+              aria-label="SendGrid: 45"
+              role="graphics-document"
+              fill="rgba(44, 119, 224, 1)"
+              width="258px"
+              height="125px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-1-series-SendGrid-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              SendGrid
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="88.5px 155px"
+         style="transform: translateX(268px) translateY(30px) scale(1); transform-origin: 88.5px 155px;"
+      >
+        <rect tabindex="0"
+              aria-label="Okta: 75"
+              role="graphics-document"
+              fill="rgba(43, 141, 216, 1)"
+              width="177px"
+              height="310px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-1-series-Okta-label-text"
+                fill="#ffffff"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Okta
+            </tspan>
+          </text>
+        </g>
+      </g>
+      <g opacity="1"
+         transform-origin="88.5px 50px"
+         style="transform: translateX(268px) translateY(345px) scale(1); transform-origin: 88.5px 50px;"
+      >
+        <rect tabindex="0"
+              aria-label="Twillo: 25"
+              role="graphics-document"
+              fill="rgba(42, 161, 209, 1)"
+              width="177px"
+              height="100px"
+              style="cursor: pointer;"
+        >
+        </rect>
+        <g style="transform: translate(10px, 15px);">
+          <text id="ref-1-series-Twillo-label-text"
+                fill="#000000"
+                style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
+          >
+            <tspan dominant-baseline="alphabetic"
+                   dy="3"
+                   x="0"
+                   style="baseline-shift: 0%;"
+            >
+              Twillo
+            </tspan>
+          </text>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

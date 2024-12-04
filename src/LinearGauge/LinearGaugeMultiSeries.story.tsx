@@ -25,6 +25,7 @@ const Icon = ({ fill }) => (
 );
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Gauge/Linear/Multi-Series',
   component: LinearGauge,
   subcomponents: {

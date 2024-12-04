@@ -5,6 +5,7 @@ import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
 import { Gradient } from '@/common/Gradient';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Pie Chart/Donut',
   component: PieChart,
   subcomponents: {

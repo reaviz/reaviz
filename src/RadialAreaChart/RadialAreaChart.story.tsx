@@ -17,6 +17,7 @@ import {
 import { GradientStop, RadialGradient } from '@/common/Gradient';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Radial',
   component: RadialAreaChart,
   subcomponents: {

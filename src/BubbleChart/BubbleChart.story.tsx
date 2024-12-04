@@ -18,6 +18,7 @@ const simpleData: ChartShallowDataShape[] = [
 ];
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bubble Chart',
   component: BubbleChart,
   subcomponents: {
@@ -126,6 +127,7 @@ export const VaryingSizes = () => {
 
   return <BubbleChart data={longData} height={450} width={450} />;
 };
+VaryingSizes.tags = ['no-snapshot'];
 
 export const _100Bubbles = () => {
   const longData: ChartShallowDataShape[] = range(100).map((o) => ({
@@ -135,9 +137,11 @@ export const _100Bubbles = () => {
 
   return <BubbleChart data={longData} height={450} width={450} />;
 };
+_100Bubbles.tags = ['no-snapshot'];
 
 export const Autosize = () => (
   <div style={{ width: '70vw', height: '70vh', border: 'solid 1px red' }}>
     <BubbleChart data={simpleData} />
   </div>
 );
+Autosize.tags = ['no-snapshot'];

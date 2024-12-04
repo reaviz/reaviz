@@ -18,6 +18,7 @@ import { BarChart } from './BarChart';
 import { Bar, BarSeries } from './BarSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Markers',
   component: BarChart,
   subcomponents: {

@@ -13,6 +13,7 @@ import { RadialBarChart } from './RadialBarChart';
 import { RadialBar, RadialBarSeries, RadialGuideBar } from './RadialBarSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Radial/Axis',
   component: RadialBarChart,
   subcomponents: {

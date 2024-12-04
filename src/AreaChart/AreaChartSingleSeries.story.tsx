@@ -20,6 +20,7 @@ import { Stripes } from '@/common/Mask';
 import { ChartDataShape } from '@/common/data';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Single Series',
   component: AreaChart,
   subcomponents: {
