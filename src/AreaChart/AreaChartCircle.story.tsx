@@ -13,6 +13,7 @@ import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Circle Series',
   component: AreaChart,
   subcomponents: {

@@ -1343,7 +1343,7 @@ exports[`Blocks/Funnel Chart/Dark/Large Simple smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold">
-          320
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#F08083]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -1372,7 +1372,7 @@ exports[`Blocks/Funnel Chart/Dark/Large Simple smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold">
-          1,115
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#40E5D1]">
           <svg xmlns="http://www.w3.org/2000/svg"

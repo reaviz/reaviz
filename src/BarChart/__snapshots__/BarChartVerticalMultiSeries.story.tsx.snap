@@ -594,11 +594,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ XML: 100"
                   role="graphics-document"
-                  height="54.12027699246706px"
+                  height="54.14937759336101px"
                   width="75.92307692307692px"
                   fill="url(#gradient-bar-series-ref-34-bar-0-0)"
                   x="0"
-                  y="206.8802152911"
+                  y="206.850622406639"
                   style="cursor: auto;"
             >
             </rect>
@@ -609,7 +609,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="206.8802152911"
+                y="206.850622406639"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -638,11 +638,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ JSON: 120"
                   role="graphics-document"
-                  height="64.94428316260377px"
+                  height="64.9792531120332px"
                   width="75.92307692307692px"
                   fill="url(#gradient-bar-series-ref-34-bar-0-1)"
                   x="0"
-                  y="141.93617827027978"
+                  y="141.87136929460578"
                   style="cursor: auto;"
             >
             </rect>
@@ -653,7 +653,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="141.93617827027978"
+                y="141.87136929460578"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -682,11 +682,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ HTTPS: 150"
                   role="graphics-document"
-                  height="81.1802924178088px"
+                  height="81.22406639004149px"
                   width="75.92307692307692px"
                   fill="url(#gradient-bar-series-ref-34-bar-0-2)"
                   x="0"
-                  y="60.75613199425453"
+                  y="60.647302904564306"
                   style="cursor: auto;"
             >
             </rect>
@@ -697,7 +697,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="60.75613199425453"
+                y="60.647302904564306"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -726,11 +726,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ SSH: 112"
                   role="graphics-document"
-                  height="60.614680694549065px"
+                  height="60.647302904564306px"
                   width="75.92307692307692px"
                   fill="url(#gradient-bar-series-ref-34-bar-0-3)"
                   x="0"
-                  y="0.14169744148900443"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -741,7 +741,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="0.14169744148900443"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -772,11 +772,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ XML: 100"
                   role="graphics-document"
-                  height="97.58983430550077px"
+                  height="97.75280898876406px"
                   width="42.48076923076923px"
                   fill="url(#gradient-bar-series-ref-34-bar-1-0)"
                   x="85.92307692307692"
-                  y="163.41166720259702"
+                  y="163.24719101123594"
                   style="cursor: auto;"
             >
             </rect>
@@ -787,7 +787,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="85.92307692307692"
-                y="163.41166720259702"
+                y="163.24719101123594"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -816,11 +816,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ JSON: 34"
                   role="graphics-document"
-                  height="33.181039161542515px"
+                  height="33.23595505617976px"
                   width="42.48076923076923px"
                   fill="url(#gradient-bar-series-ref-34-bar-1-1)"
                   x="85.92307692307692"
-                  y="130.2313787951034"
+                  y="130.01123595505618"
                   style="cursor: auto;"
             >
             </rect>
@@ -831,7 +831,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="85.92307692307692"
-                y="130.2313787951034"
+                y="130.01123595505618"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -860,11 +860,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ HTTPS: 22"
                   role="graphics-document"
-                  height="21.470349135368302px"
+                  height="21.50561797752809px"
                   width="42.48076923076923px"
                   fill="url(#gradient-bar-series-ref-34-bar-1-2)"
                   x="85.92307692307692"
-                  y="108.761780413784"
+                  y="108.50561797752809"
                   style="cursor: auto;"
             >
             </rect>
@@ -875,7 +875,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="85.92307692307692"
-                y="108.761780413784"
+                y="108.50561797752809"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -904,11 +904,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ SSH: 111"
                   role="graphics-document"
-                  height="108.32463349616046px"
+                  height="108.50561797752809px"
                   width="42.48076923076923px"
                   fill="url(#gradient-bar-series-ref-34-bar-1-3)"
                   x="85.92307692307692"
-                  y="0.4378976716724245"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -919,7 +919,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="85.92307692307692"
-                y="0.4378976716724245"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -950,11 +950,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ XML: 70"
                   role="graphics-document"
-                  height="42.771689449576655px"
+                  height="42.98823529411763px"
                   width="66.88461538461539px"
                   fill="url(#gradient-bar-series-ref-34-bar-2-0)"
                   x="138.40384615384616"
-                  y="218.23279486526985"
+                  y="218.01176470588237"
                   style="cursor: auto;"
             >
             </rect>
@@ -965,7 +965,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="138.40384615384616"
-                y="218.23279486526985"
+                y="218.01176470588237"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -994,11 +994,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ JSON: 130"
                   role="graphics-document"
-                  height="79.4312156999939px"
+                  height="79.83529411764707px"
                   width="66.88461538461539px"
                   fill="url(#gradient-bar-series-ref-34-bar-2-1)"
                   x="138.40384615384616"
-                  y="138.8038213226992"
+                  y="138.1764705882353"
                   style="cursor: auto;"
             >
             </rect>
@@ -1009,7 +1009,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="138.40384615384616"
-                y="138.8038213226992"
+                y="138.1764705882353"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1038,11 +1038,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ HTTPS: 110"
                   role="graphics-document"
-                  height="67.2113736165215px"
+                  height="67.55294117647061px"
                   width="66.88461538461539px"
                   fill="url(#gradient-bar-series-ref-34-bar-2-2)"
                   x="138.40384615384616"
-                  y="71.59468986360096"
+                  y="70.6235294117647"
                   style="cursor: auto;"
             >
             </rect>
@@ -1053,7 +1053,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="138.40384615384616"
-                y="71.59468986360096"
+                y="70.6235294117647"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1082,11 +1082,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ SSH: 115"
                   role="graphics-document"
-                  height="70.26633413738956px"
+                  height="70.6235294117647px"
                   width="66.88461538461539px"
                   fill="url(#gradient-bar-series-ref-34-bar-2-3)"
                   x="138.40384615384616"
-                  y="1.3305978836346393"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -1097,7 +1097,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="138.40384615384616"
-                y="1.3305978836346393"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1128,11 +1128,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ XML: 130"
                   role="graphics-document"
-                  height="54.78822987920674px"
+                  height="55.62295081967213px"
                   width="96.71153846153847px"
                   fill="url(#gradient-bar-series-ref-34-bar-3-0)"
                   x="215.28846153846155"
-                  y="206.22478160094713"
+                  y="205.37704918032787"
                   style="cursor: auto;"
             >
             </rect>
@@ -1143,7 +1143,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="215.28846153846155"
-                y="206.22478160094713"
+                y="205.37704918032787"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1172,11 +1172,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ JSON: 120"
                   role="graphics-document"
-                  height="50.574251099273674px"
+                  height="51.34426229508196px"
                   width="96.71153846153847px"
                   fill="url(#gradient-bar-series-ref-34-bar-3-1)"
                   x="215.28846153846155"
-                  y="155.6570362417504"
+                  y="154.0327868852459"
                   style="cursor: auto;"
             >
             </rect>
@@ -1187,7 +1187,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="215.28846153846155"
-                y="155.6570362417504"
+                y="154.0327868852459"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1216,11 +1216,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ HTTPS: 200"
                   role="graphics-document"
-                  height="84.28608133873817px"
+                  height="85.57377049180327px"
                   width="96.71153846153847px"
                   fill="url(#gradient-bar-series-ref-34-bar-3-2)"
                   x="215.28846153846155"
-                  y="71.37746064308917"
+                  y="68.45901639344264"
                   style="cursor: auto;"
             >
             </rect>
@@ -1231,7 +1231,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="215.28846153846155"
-                y="71.37746064308917"
+                y="68.45901639344264"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1260,11 +1260,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ SSH: 160"
                   role="graphics-document"
-                  height="67.42127599607413px"
+                  height="68.45901639344264px"
                   width="96.71153846153847px"
                   fill="url(#gradient-bar-series-ref-34-bar-3-3)"
                   x="215.28846153846155"
-                  y="3.9879574615987345"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -1275,7 +1275,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Marimekko smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="215.28846153846155"
-                y="3.9879574615987345"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2387,11 +2387,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ JSON: 130"
                   role="graphics-document"
-                  height="169.63812509772296px"
+                  height="169.65px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-2-1)"
                   x="17"
-                  y="91.36193974834937"
+                  y="91.35"
                   style="cursor: auto;"
             >
             </rect>
@@ -2402,7 +2402,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="17"
-                y="91.36193974834937"
+                y="91.35"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2440,11 +2440,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ HTTPS: 110"
                   role="graphics-document"
-                  height="143.53995699392502px"
+                  height="143.55px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-2-2)"
                   x="33"
-                  y="117.46010785214733"
+                  y="117.44999999999999"
                   style="cursor: auto;"
             >
             </rect>
@@ -2455,7 +2455,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="33"
-                y="117.46010785214733"
+                y="117.44999999999999"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2493,11 +2493,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ SSH: 115"
                   role="graphics-document"
-                  height="150.06449901987446px"
+                  height="150.075px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-2-3)"
                   x="49"
-                  y="110.93556582619786"
+                  y="110.92500000000001"
                   style="cursor: auto;"
             >
             </rect>
@@ -2508,7 +2508,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="49"
-                y="110.93556582619786"
+                y="110.92500000000001"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2548,11 +2548,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ XML: 130"
                   role="graphics-document"
-                  height="169.61249450473602px"
+                  height="169.65px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-3-0)"
                   x="1"
-                  y="91.38770852561797"
+                  y="91.35"
                   style="cursor: auto;"
             >
             </rect>
@@ -2563,7 +2563,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="1"
-                y="91.38770852561797"
+                y="91.35"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2601,11 +2601,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ JSON: 120"
                   role="graphics-document"
-                  height="156.565387351693px"
+                  height="156.6px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-3-1)"
                   x="17"
-                  y="104.43481567866098"
+                  y="104.4"
                   style="cursor: auto;"
             >
             </rect>
@@ -2616,7 +2616,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="17"
-                y="104.43481567866098"
+                y="104.4"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2654,11 +2654,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ HTTPS: 200"
                   role="graphics-document"
-                  height="260.942244576037px"
+                  height="261px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-3-2)"
                   x="33"
-                  y="0.05795845431696794"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -2669,7 +2669,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="33"
-                y="0.05795845431696794"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -2707,11 +2707,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ SSH: 160"
                   role="graphics-document"
-                  height="208.75381596386504px"
+                  height="208.8px"
                   width="15px"
                   fill="url(#gradient-bar-series-ref-1-bar-3-3)"
                   x="49"
-                  y="52.246387066488964"
+                  y="52.19999999999999"
                   style="cursor: auto;"
             >
             </rect>
@@ -2722,7 +2722,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Simple smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="49"
-                y="52.246387066488964"
+                y="52.19999999999999"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3209,11 +3209,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ XML: 100"
                   role="graphics-document"
-                  height="42.76373329041689px"
+                  height="42.78688524590163px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-0-0)"
                   x="0"
-                  y="218.23676343893547"
+                  y="218.21311475409837"
                   style="cursor: auto;"
             >
             </rect>
@@ -3224,7 +3224,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="218.23676343893547"
+                y="218.21311475409837"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3253,11 +3253,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ JSON: 120"
                   role="graphics-document"
-                  height="51.31643027556503px"
+                  height="51.34426229508196px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-0-1)"
                   x="0"
-                  y="166.92058152804663"
+                  y="166.8688524590164"
                   style="cursor: auto;"
             >
             </rect>
@@ -3268,7 +3268,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="166.92058152804663"
+                y="166.8688524590164"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3297,11 +3297,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ HTTPS: 150"
                   role="graphics-document"
-                  height="64.14547575328727px"
+                  height="64.18032786885247px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-0-2)"
                   x="0"
-                  y="102.77535413943552"
+                  y="102.68852459016394"
                   style="cursor: auto;"
             >
             </rect>
@@ -3312,7 +3312,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="102.77535413943552"
+                y="102.68852459016394"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3341,11 +3341,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Lateral Movement ∙ SSH: 112"
                   role="graphics-document"
-                  height="47.89535148150577px"
+                  height="47.92131147540982px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-0-3)"
                   x="0"
-                  y="54.880251022605925"
+                  y="54.767213114754114"
                   style="cursor: auto;"
             >
             </rect>
@@ -3356,7 +3356,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="54.880251022605925"
+                y="54.767213114754114"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3396,11 +3396,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ XML: 100"
                   role="graphics-document"
-                  height="42.71533394228839px"
+                  height="42.78688524590163px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-1-0)"
                   x="0"
-                  y="218.28683866314202"
+                  y="218.21311475409837"
                   style="cursor: auto;"
             >
             </rect>
@@ -3411,7 +3411,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="218.28683866314202"
+                y="218.21311475409837"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3440,11 +3440,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ JSON: 34"
                   role="graphics-document"
-                  height="14.523498817431411px"
+                  height="14.547540983606552px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-1-1)"
                   x="0"
-                  y="203.7641039971283"
+                  y="203.66557377049182"
                   style="cursor: auto;"
             >
             </rect>
@@ -3455,7 +3455,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="203.7641039971283"
+                y="203.66557377049182"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3484,11 +3484,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ HTTPS: 22"
                   role="graphics-document"
-                  height="9.397827758838334px"
+                  height="9.413114754098359px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-1-2)"
                   x="0"
-                  y="194.36704038970765"
+                  y="194.25245901639346"
                   style="cursor: auto;"
             >
             </rect>
@@ -3499,7 +3499,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="194.36704038970765"
+                y="194.25245901639346"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3528,11 +3528,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Discovery ∙ SSH: 111"
                   role="graphics-document"
-                  height="47.41322144340369px"
+                  height="47.49344262295082px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-1-3)"
                   x="0"
-                  y="146.95458309772164"
+                  y="146.75901639344264"
                   style="cursor: auto;"
             >
             </rect>
@@ -3543,7 +3543,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="146.95458309772164"
+                y="146.75901639344264"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3583,11 +3583,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ XML: 70"
                   role="graphics-document"
-                  height="29.79795714042118px"
+                  height="29.95081967213116px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-2-0)"
                   x="0"
-                  y="231.20660541567526"
+                  y="231.04918032786884"
                   style="cursor: auto;"
             >
             </rect>
@@ -3598,7 +3598,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="231.20660541567526"
+                y="231.04918032786884"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3627,11 +3627,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ JSON: 130"
                   role="graphics-document"
-                  height="55.337107879597944px"
+                  height="55.6229508196721px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-2-1)"
                   x="0"
-                  y="175.87177881412552"
+                  y="175.42622950819674"
                   style="cursor: auto;"
             >
             </rect>
@@ -3642,7 +3642,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="175.87177881412552"
+                y="175.42622950819674"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3671,11 +3671,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ HTTPS: 110"
                   role="graphics-document"
-                  height="46.824057633205726px"
+                  height="47.065573770491824px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-2-2)"
                   x="0"
-                  y="129.05000245896804"
+                  y="128.36065573770492"
                   style="cursor: auto;"
             >
             </rect>
@@ -3686,7 +3686,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="129.05000245896804"
+                y="128.36065573770492"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3715,11 +3715,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Exploitation ∙ SSH: 115"
                   role="graphics-document"
-                  height="48.95232019480377px"
+                  height="49.20491803278688px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-2-3)"
                   x="0"
-                  y="80.09996354221248"
+                  y="79.15573770491804"
                   style="cursor: auto;"
             >
             </rect>
@@ -3730,7 +3730,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="80.09996354221248"
+                y="79.15573770491804"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3770,11 +3770,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ XML: 130"
                   role="graphics-document"
-                  height="54.773743112633575px"
+                  height="55.62295081967213px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-3-0)"
                   x="0"
-                  y="206.23948811838278"
+                  y="205.37704918032787"
                   style="cursor: auto;"
             >
             </rect>
@@ -3785,7 +3785,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="206.23948811838278"
+                y="205.37704918032787"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3814,11 +3814,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ JSON: 120"
                   role="graphics-document"
-                  height="50.56088715131623px"
+                  height="51.34426229508196px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-3-1)"
                   x="0"
-                  y="155.68521658257472"
+                  y="154.0327868852459"
                   style="cursor: auto;"
             >
             </rect>
@@ -3829,7 +3829,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="155.68521658257472"
+                y="154.0327868852459"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3858,11 +3858,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ HTTPS: 200"
                   role="graphics-document"
-                  height="84.26373484185497px"
+                  height="85.5737704918033px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-3-2)"
                   x="0"
-                  y="71.42809735622791"
+                  y="68.45901639344261"
                   style="cursor: auto;"
             >
             </rect>
@@ -3873,7 +3873,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="71.42809735622791"
+                y="68.45901639344261"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -3902,11 +3902,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ SSH: 160"
                   role="graphics-document"
-                  height="67.41231099658557px"
+                  height="68.45901639344261px"
                   width="70px"
                   fill="url(#gradient-bar-series-ref-8-bar-3-3)"
                   x="0"
-                  y="4.022401975150507"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -3917,7 +3917,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series Stacked smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="0"
-                y="4.022401975150507"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -4089,11 +4089,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Lateral Movement ∙ XML: 100"
                   role="graphics-document"
-                  height="42.7645595501058px"
+                  height="42.78688524590163px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-0-0)"
                   x="33.5"
-                  y="218.23591963050225"
+                  y="218.21311475409837"
                   style="cursor: auto;"
             >
             </rect>
@@ -4124,11 +4124,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Lateral Movement ∙ JSON: 120"
                   role="graphics-document"
-                  height="51.317423542066166px"
+                  height="51.34426229508196px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-0-1)"
                   x="33.5"
-                  y="166.9187356787401"
+                  y="166.8688524590164"
                   style="cursor: auto;"
             >
             </rect>
@@ -4159,11 +4159,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Lateral Movement ∙ HTTPS: 150"
                   role="graphics-document"
-                  height="64.1464127676813px"
+                  height="64.18032786885247px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-0-2)"
                   x="33.5"
-                  y="102.77301992291393"
+                  y="102.68852459016394"
                   style="cursor: auto;"
             >
             </rect>
@@ -4194,11 +4194,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Lateral Movement ∙ SSH: 112"
                   role="graphics-document"
-                  height="47.89604944440982px"
+                  height="47.92131147540982px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-0-3)"
                   x="33.5"
-                  y="54.87721223327175"
+                  y="54.767213114754114"
                   style="cursor: auto;"
             >
             </rect>
@@ -4231,11 +4231,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Discovery ∙ XML: 100"
                   role="graphics-document"
-                  height="42.717233001851795px"
+                  height="42.78688524590163px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-1-0)"
                   x="33.5"
-                  y="218.28424217341495"
+                  y="218.21311475409837"
                   style="cursor: auto;"
             >
             </rect>
@@ -4266,11 +4266,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Discovery ∙ JSON: 34"
                   role="graphics-document"
-                  height="14.52434602846764px"
+                  height="14.547540983606552px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-1-1)"
                   x="33.5"
-                  y="203.76063373258071"
+                  y="203.66557377049182"
                   style="cursor: auto;"
             >
             </rect>
@@ -4301,11 +4301,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Discovery ∙ HTTPS: 22"
                   role="graphics-document"
-                  height="9.398366578761433px"
+                  height="9.413114754098359px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-1-2)"
                   x="33.5"
-                  y="194.36300474145264"
+                  y="194.25245901639346"
                   style="cursor: auto;"
             >
             </rect>
@@ -4336,11 +4336,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Discovery ∙ SSH: 111"
                   role="graphics-document"
-                  height="47.41604749741584px"
+                  height="47.49344262295082px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-1-3)"
                   x="33.5"
-                  y="146.9476948316702"
+                  y="146.75901639344264"
                   style="cursor: auto;"
             >
             </rect>
@@ -4373,11 +4373,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Exploitation ∙ XML: 70"
                   role="graphics-document"
-                  height="29.803252171684324px"
+                  height="29.95081967213116px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-2-0)"
                   x="33.5"
-                  y="231.20115521152914"
+                  y="231.04918032786884"
                   style="cursor: auto;"
             >
             </rect>
@@ -4408,11 +4408,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Exploitation ∙ JSON: 130"
                   role="graphics-document"
-                  height="55.34700801175077px"
+                  height="55.6229508196721px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-2-1)"
                   x="33.5"
-                  y="175.85635089138512"
+                  y="175.42622950819674"
                   style="cursor: auto;"
             >
             </rect>
@@ -4443,11 +4443,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Exploitation ∙ HTTPS: 110"
                   role="graphics-document"
-                  height="46.83242273172866px"
+                  height="47.065573770491824px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-2-2)"
                   x="33.5"
-                  y="129.0261318512632"
+                  y="128.36065573770492"
                   style="cursor: auto;"
             >
             </rect>
@@ -4478,11 +4478,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Exploitation ∙ SSH: 115"
                   role="graphics-document"
-                  height="48.96106905173417px"
+                  height="49.20491803278688px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-2-3)"
                   x="33.5"
-                  y="80.06726649113575"
+                  y="79.15573770491804"
                   style="cursor: auto;"
             >
             </rect>
@@ -4515,11 +4515,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ XML: 130"
                   role="graphics-document"
-                  height="54.802475899390444px"
+                  height="55.62295081967213px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-3-0)"
                   x="33.5"
-                  y="206.21031934475124"
+                  y="205.37704918032787"
                   style="cursor: auto;"
             >
             </rect>
@@ -4550,11 +4550,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ JSON: 120"
                   role="graphics-document"
-                  height="50.58739295498124px"
+                  height="51.34426229508196px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-3-1)"
                   x="33.5"
-                  y="155.62932401184082"
+                  y="154.0327868852459"
                   style="cursor: auto;"
             >
             </rect>
@@ -4585,11 +4585,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ HTTPS: 200"
                   role="graphics-document"
-                  height="84.30805651025487px"
+                  height="85.5737704918033px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-3-2)"
                   x="33.5"
-                  y="71.3276651236568"
+                  y="68.45901639344261"
                   style="cursor: auto;"
             >
             </rect>
@@ -4620,11 +4620,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedCustomStyle smoke-test 1`
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ SSH: 160"
                   role="graphics-document"
-                  height="67.44772473261804px"
+                  height="68.45901639344261px"
                   width="10px"
                   fill="url(#gradient-bar-series-ref-15-bar-3-3)"
                   x="33.5"
-                  y="3.8863380131095937"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -4913,7 +4913,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/25/2020 ∙ Closed: -35"
                   role="graphics-document"
-                  height="124.9426904736097px"
+                  height="125px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-0-0)"
                   x="0"
@@ -4928,7 +4928,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="246.94407092614426"
+                y="247"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -4966,11 +4966,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/25/2020 ∙ Opened: 35"
                   role="graphics-document"
-                  height="124.9426904736097px"
+                  height="125px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-0-1)"
                   x="0"
-                  y="0.057728184823537705"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -4981,7 +4981,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="0.05825576640778286"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5021,7 +5021,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/26/2020 ∙ Closed: -10"
                   role="graphics-document"
-                  height="35.67944182966141px"
+                  height="35.714285714285694px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-1-0)"
                   x="0"
@@ -5036,7 +5036,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="157.68240616651838"
+                y="157.7142857142857"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5074,11 +5074,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/26/2020 ∙ Opened: 10"
                   role="graphics-document"
-                  height="35.679441829661435px"
+                  height="35.71428571428572px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-1-1)"
                   x="0"
-                  y="89.32144985006543"
+                  y="89.28571428571428"
                   style="cursor: auto;"
             >
             </rect>
@@ -5089,7 +5089,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="89.32144985006543"
+                y="89.28571428571428"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5129,7 +5129,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/27/2020 ∙ Closed: -29"
                   role="graphics-document"
-                  height="103.35603078256715px"
+                  height="103.57142857142856px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-2-0)"
                   x="0"
@@ -5144,7 +5144,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="225.36229692772537"
+                y="225.57142857142856"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5182,11 +5182,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/27/2020 ∙ Opened: 29"
                   role="graphics-document"
-                  height="103.35603078256716px"
+                  height="103.57142857142857px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-2-1)"
                   x="0"
-                  y="21.645836043492732"
+                  y="21.428571428571434"
                   style="cursor: auto;"
             >
             </rect>
@@ -5197,7 +5197,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="21.645836043492732"
+                y="21.428571428571434"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5237,7 +5237,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/29/2020 ∙ Closed: -10"
                   role="graphics-document"
-                  height="35.559770195125786px"
+                  height="35.714285714285694px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-3-0)"
                   x="0"
@@ -5252,7 +5252,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="157.57291204100616"
+                y="157.7142857142857"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5290,11 +5290,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="2/29/2020 ∙ Opened: 10"
                   role="graphics-document"
-                  height="35.559770195125814px"
+                  height="35.71428571428572px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-3-1)"
                   x="0"
-                  y="89.44409985894464"
+                  y="89.28571428571428"
                   style="cursor: auto;"
             >
             </rect>
@@ -5305,7 +5305,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="89.44409985894464"
+                y="89.28571428571428"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5345,7 +5345,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="3/1/2020 ∙ Closed: -34"
                   role="graphics-document"
-                  height="120.32744946989192px"
+                  height="121.42857142857144px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-4-0)"
                   x="0"
@@ -5360,7 +5360,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="242.35475156776207"
+                y="243.42857142857144"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5398,11 +5398,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="3/1/2020 ∙ Opened: 34"
                   role="graphics-document"
-                  height="120.32744946989192px"
+                  height="121.42857142857144px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-4-1)"
                   x="0"
-                  y="4.680476440333163"
+                  y="3.5714285714285587"
                   style="cursor: auto;"
             >
             </rect>
@@ -5413,7 +5413,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 height="3"
                 opacity="1"
                 x="0"
-                y="4.680476440333163"
+                y="3.5714285714285587"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5453,7 +5453,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="3/2/2020 ∙ Closed: -29"
                   role="graphics-document"
-                  height="101.64389305557027px"
+                  height="103.57142857142856px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-5-0)"
                   x="0"
@@ -5466,9 +5466,9 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 fill="#acb7c9"
                 width="55"
                 height="3"
-                opacity="0.9893044917287116"
+                opacity="1"
                 x="0"
-                y="223.6999566212518"
+                y="225.57142857142856"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -5506,11 +5506,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                   tabindex="0"
                   aria-label="3/2/2020 ∙ Opened: 29"
                   role="graphics-document"
-                  height="101.64389305557029px"
+                  height="103.57142857142857px"
                   width="55px"
                   fill="url(#gradient-bar-series-ref-20-bar-5-1)"
                   x="0"
-                  y="23.372091638341473"
+                  y="21.428571428571434"
                   style="cursor: auto;"
             >
             </rect>
@@ -5519,9 +5519,9 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedDiverging smoke-test 1`] 
                 fill="#418ad7"
                 width="55"
                 height="3"
-                opacity="0.9893044917287116"
+                opacity="1"
                 x="0"
-                y="23.372091638341473"
+                y="21.428571428571434"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6143,11 +6143,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Lateral Movement ∙ XML: 100"
                   role="graphics-document"
-                  height="54.127427896229335px"
+                  height="54.14937759336101px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-0-0)"
                   x="0"
-                  y="206.87294446228663"
+                  y="206.850622406639"
                   style="cursor: auto;"
             >
             </rect>
@@ -6158,7 +6158,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="206.87294446228663"
+                y="206.850622406639"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6187,11 +6187,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Lateral Movement ∙ JSON: 120"
                   role="graphics-document"
-                  height="64.9528762396236px"
+                  height="64.9792531120332px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-0-1)"
                   x="0"
-                  y="141.920254401921"
+                  y="141.87136929460578"
                   style="cursor: auto;"
             >
             </rect>
@@ -6202,7 +6202,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="141.920254401921"
+                y="141.87136929460578"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6231,11 +6231,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Lateral Movement ∙ HTTPS: 150"
                   role="graphics-document"
-                  height="81.19104875471498px"
+                  height="81.22406639004149px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-0-2)"
                   x="0"
-                  y="60.729391826463996"
+                  y="60.647302904564306"
                   style="cursor: auto;"
             >
             </rect>
@@ -6246,7 +6246,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="60.729391826463996"
+                y="60.647302904564306"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6275,11 +6275,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Lateral Movement ∙ SSH: 112"
                   role="graphics-document"
-                  height="60.62269690226588px"
+                  height="60.647302904564306px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-0-3)"
                   x="0"
-                  y="0.1068811034560947"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -6290,7 +6290,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="0.1068811034560947"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6321,11 +6321,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Discovery ∙ XML: 100"
                   role="graphics-document"
-                  height="97.62944178957363px"
+                  height="97.75280898876406px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-1-0)"
                   x="0"
-                  y="163.37169890911"
+                  y="163.24719101123594"
                   style="cursor: auto;"
             >
             </rect>
@@ -6336,7 +6336,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="163.3728240322346"
+                y="163.24719101123594"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6365,11 +6365,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Discovery ∙ JSON: 34"
                   role="graphics-document"
-                  height="33.19401091759063px"
+                  height="33.23595505617976px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-1-1)"
                   x="0"
-                  y="130.1793885538607"
+                  y="130.01123595505618"
                   style="cursor: auto;"
             >
             </rect>
@@ -6380,7 +6380,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="130.1793885538607"
+                y="130.01123595505618"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6409,11 +6409,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Discovery ∙ HTTPS: 22"
                   role="graphics-document"
-                  height="21.478680748752794px"
+                  height="21.50561797752809px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-1-2)"
                   x="0"
-                  y="108.70128324432464"
+                  y="108.50561797752809"
                   style="cursor: auto;"
             >
             </rect>
@@ -6424,7 +6424,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="108.70128324432464"
+                y="108.50561797752809"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6453,11 +6453,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Discovery ∙ SSH: 111"
                   role="graphics-document"
-                  height="108.36737950096688px"
+                  height="108.50561797752809px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-1-3)"
                   x="0"
-                  y="0.3344791825744952"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -6468,7 +6468,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="0.3344791825744952"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6499,11 +6499,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Exploitation ∙ XML: 70"
                   role="graphics-document"
-                  height="42.8220996703464px"
+                  height="42.98823529411763px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-2-0)"
                   x="0"
-                  y="218.1813568882423"
+                  y="218.01176470588237"
                   style="cursor: auto;"
             >
             </rect>
@@ -6514,7 +6514,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="218.1813568882423"
+                y="218.01176470588237"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6543,11 +6543,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Exploitation ∙ JSON: 130"
                   role="graphics-document"
-                  height="79.52527514839105px"
+                  height="79.83529411764707px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-2-1)"
                   x="0"
-                  y="138.65781001914561"
+                  y="138.1764705882353"
                   style="cursor: auto;"
             >
             </rect>
@@ -6558,7 +6558,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="138.65781001914561"
+                y="138.1764705882353"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6587,11 +6587,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Exploitation ∙ HTTPS: 110"
                   role="graphics-document"
-                  height="67.29088332237619px"
+                  height="67.55294117647061px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-2-2)"
                   x="0"
-                  y="71.36865497606377"
+                  y="70.6235294117647"
                   style="cursor: auto;"
             >
             </rect>
@@ -6602,7 +6602,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="71.36865497606377"
+                y="70.6235294117647"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6631,11 +6631,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Exploitation ∙ SSH: 115"
                   role="graphics-document"
-                  height="70.34948127887988px"
+                  height="70.6235294117647px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-2-3)"
                   x="0"
-                  y="1.0209019764782494"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -6646,7 +6646,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="1.0209019764782494"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6677,11 +6677,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ XML: 130"
                   role="graphics-document"
-                  height="54.97869749069472px"
+                  height="55.62295081967213px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-3-0)"
                   x="0"
-                  y="206.03141108959443"
+                  y="205.37704918032787"
                   style="cursor: auto;"
             >
             </rect>
@@ -6692,7 +6692,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="206.03141108959443"
+                y="205.37704918032787"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6721,11 +6721,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ JSON: 120"
                   role="graphics-document"
-                  height="50.749955706037014px"
+                  height="51.34426229508196px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-3-1)"
                   x="0"
-                  y="155.286509673702"
+                  y="154.0327868852459"
                   style="cursor: auto;"
             >
             </rect>
@@ -6736,7 +6736,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="155.286509673702"
+                y="154.0327868852459"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6765,11 +6765,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ HTTPS: 200"
                   role="graphics-document"
-                  height="84.57988998329864px"
+                  height="85.57377049180327px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-3-2)"
                   x="0"
-                  y="70.71167398054791"
+                  y="68.45901639344264"
                   style="cursor: auto;"
             >
             </rect>
@@ -6780,7 +6780,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="70.7312625101411"
+                y="68.45901639344264"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -6809,11 +6809,11 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                   tabindex="0"
                   aria-label="Threat Intelligence ∙ SSH: 160"
                   role="graphics-document"
-                  height="67.65801617914195px"
+                  height="68.45901639344264px"
                   width="68px"
                   fill="url(#gradient-bar-series-ref-27-bar-3-3)"
                   x="0"
-                  y="3.0783435149933114"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -6824,7 +6824,7 @@ exports[`Charts/Bar Chart/Vertical/Multi Series StackedNormalized smoke-test 1`]
                 height="3"
                 opacity="1"
                 x="0"
-                y="3.0783435149933114"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"

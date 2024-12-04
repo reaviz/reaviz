@@ -14,6 +14,7 @@ import React from 'react';
 import { StoryFn } from '@storybook/react';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Gauge/Radial'
 };
 

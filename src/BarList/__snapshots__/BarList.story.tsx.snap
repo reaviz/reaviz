@@ -138,7 +138,7 @@ exports[`Charts/Bar List Events smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9404%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -163,7 +163,7 @@ exports[`Charts/Bar List Events smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9702%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -188,7 +188,7 @@ exports[`Charts/Bar List Events smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9851%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -213,7 +213,7 @@ exports[`Charts/Bar List Events smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99702%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -258,7 +258,7 @@ exports[`Charts/Bar List PercentageFormat smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 85"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 84.96%;"
+           style="background: rgb(41, 181, 202); width: 85%;"
       >
       </div>
     </div>
@@ -283,7 +283,7 @@ exports[`Charts/Bar List PercentageFormat smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9765%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -308,7 +308,7 @@ exports[`Charts/Bar List PercentageFormat smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9882%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -333,7 +333,7 @@ exports[`Charts/Bar List PercentageFormat smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99765%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -486,7 +486,7 @@ exports[`Charts/Bar List Styling smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9566%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -511,7 +511,7 @@ exports[`Charts/Bar List Styling smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9783%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -536,7 +536,7 @@ exports[`Charts/Bar List Styling smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9892%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -561,7 +561,7 @@ exports[`Charts/Bar List Styling smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99783%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>

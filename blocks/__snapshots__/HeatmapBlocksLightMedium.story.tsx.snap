@@ -15899,7 +15899,7 @@ exports[`Blocks/Heatmap/Light/Medium CorrelationCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          294
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -15928,7 +15928,7 @@ exports[`Blocks/Heatmap/Light/Medium CorrelationCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,026
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -26600,7 +26600,7 @@ exports[`Blocks/Heatmap/Light/Medium GeospatialCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          313
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -26629,7 +26629,7 @@ exports[`Blocks/Heatmap/Light/Medium GeospatialCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,092
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -31904,7 +31904,7 @@ exports[`Blocks/Heatmap/Light/Medium GeospatialHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          309
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -31933,7 +31933,7 @@ exports[`Blocks/Heatmap/Light/Medium GeospatialHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,078
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -32006,7 +32006,7 @@ exports[`Blocks/Heatmap/Light/Medium GeospatialHex smoke-test 1`] = `
       </div>
     </div>
     <div class="flex w-full  pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -32053,7 +32053,7 @@ exports[`Blocks/Heatmap/Light/Medium GeospatialHex smoke-test 1`] = `
       </div>
     </div>
     <div class="flex w-full  pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -37301,7 +37301,7 @@ exports[`Blocks/Heatmap/Light/Medium HotCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          312
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -37330,7 +37330,7 @@ exports[`Blocks/Heatmap/Light/Medium HotCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,090
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -38056,7 +38056,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Threat Intel: 0"
                role="graphics-document"
-               opacity="0.9880891594228313"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38080,7 +38080,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ DLP: 100"
                role="graphics-document"
-               opacity="0.98807184403906"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38104,7 +38104,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ SysLog: 56"
                role="graphics-document"
-               opacity="0.9880545040300824"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38128,7 +38128,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Firewall: 50"
                role="graphics-document"
-               opacity="0.9880371393619248"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38152,7 +38152,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Malware: 24"
                role="graphics-document"
-               opacity="0.9880197500005683"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38176,7 +38176,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9880023359119492"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38200,7 +38200,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Brute Force: 67"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38224,7 +38224,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ DDoS: 34"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38248,7 +38248,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Data Breach: 23"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38272,7 +38272,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Threat Intel: 45"
                role="graphics-document"
-               opacity="0.98807184403906"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38296,7 +38296,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ DLP: 75"
                role="graphics-document"
-               opacity="0.9880545040300824"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38320,7 +38320,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ SysLog: 50"
                role="graphics-document"
-               opacity="0.9880371393619248"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38344,7 +38344,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Firewall: 23"
                role="graphics-document"
-               opacity="0.9880197500005683"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38368,7 +38368,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Malware: 29"
                role="graphics-document"
-               opacity="0.9880023359119492"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38392,7 +38392,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Phishing: 87"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38416,7 +38416,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Brute Force: 23"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38440,7 +38440,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ DDoS: 90"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38464,7 +38464,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Data Breach: 100"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38488,7 +38488,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Threat Intel: 20"
                role="graphics-document"
-               opacity="0.9880545040300824"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38512,7 +38512,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ DLP: 45"
                role="graphics-document"
-               opacity="0.9880371393619248"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38536,7 +38536,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ SysLog: 43"
                role="graphics-document"
-               opacity="0.9880197500005683"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38560,7 +38560,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Firewall: 87"
                role="graphics-document"
-               opacity="0.9880023359119492"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38584,7 +38584,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Malware: 78"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38608,7 +38608,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Phishing: 9"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38632,7 +38632,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Brute Force: 73"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38656,7 +38656,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ DDoS: 23"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38680,7 +38680,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Data Breach: 12"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38704,7 +38704,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Threat Intel: 0"
                role="graphics-document"
-               opacity="0.9880371393619248"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38728,7 +38728,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ DLP: 75"
                role="graphics-document"
-               opacity="0.9880197500005683"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38752,7 +38752,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ SysLog: 24"
                role="graphics-document"
-               opacity="0.9880023359119492"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38776,7 +38776,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Firewall: 43"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38800,7 +38800,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Malware: 21"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38824,7 +38824,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Phishing: 8"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38848,7 +38848,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Brute Force: 12"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38872,7 +38872,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ DDoS: 87"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38896,7 +38896,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Data Breach: 45"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38920,7 +38920,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9880197500005683"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38944,7 +38944,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ DLP: 54"
                role="graphics-document"
-               opacity="0.9880023359119492"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38968,7 +38968,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ SysLog: 30"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -38992,7 +38992,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Firewall: 23"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39016,7 +39016,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Malware: 67"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39040,7 +39040,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39064,7 +39064,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Brute Force: 11"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39088,7 +39088,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ DDoS: 34"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39112,7 +39112,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Data Breach: 78"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39136,7 +39136,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9880023359119492"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39160,7 +39160,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ DLP: 54"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39184,7 +39184,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ SysLog: 30"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39208,7 +39208,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Firewall: 23"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39232,7 +39232,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Malware: 13"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39256,7 +39256,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39280,7 +39280,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Brute Force: 90"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39304,7 +39304,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ DDoS: 25"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39328,7 +39328,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Data Breach: 90"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39352,7 +39352,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.987984897061959"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39376,7 +39376,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ DLP: 54"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39400,7 +39400,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ SysLog: 30"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39424,7 +39424,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Firewall: 78"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39448,7 +39448,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Malware: 9"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39472,7 +39472,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39496,7 +39496,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Brute Force: 50"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39520,7 +39520,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ DDoS: 99"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39544,7 +39544,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Data Breach: 34"
                role="graphics-document"
-               opacity="0.9878444907447773"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39568,7 +39568,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Threat Intel: 90"
                role="graphics-document"
-               opacity="0.9879674334164441"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39592,7 +39592,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ DLP: 60"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39616,7 +39616,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ SysLog: 35"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39640,7 +39640,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39664,7 +39664,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Malware: 15"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39688,7 +39688,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Phishing: 85"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39712,7 +39712,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Brute Force: 55"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39736,7 +39736,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ DDoS: 100"
                role="graphics-document"
-               opacity="0.9878444907447773"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39760,7 +39760,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Data Breach: 40"
                role="graphics-document"
-               opacity="0.9878268275001202"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39784,7 +39784,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Threat Intel: 95"
                role="graphics-document"
-               opacity="0.9879499449412059"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39808,7 +39808,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ DLP: 65"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39832,7 +39832,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ SysLog: 40"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39856,7 +39856,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Firewall: 85"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39880,7 +39880,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Malware: 20"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39904,7 +39904,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Phishing: 90"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39928,7 +39928,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Brute Force: 60"
                role="graphics-document"
-               opacity="0.9878444907447773"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39952,7 +39952,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ DDoS: 100"
                role="graphics-document"
-               opacity="0.9878268275001202"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -39976,7 +39976,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Data Breach: 45"
                role="graphics-document"
-               opacity="0.9878091391505228"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40000,7 +40000,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Threat Intel: 4"
                role="graphics-document"
-               opacity="0.9879324316020008"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40024,7 +40024,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ DLP: 70"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40048,7 +40048,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ SysLog: 45"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40072,7 +40072,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Firewall: 90"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40096,7 +40096,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Malware: 25"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40120,7 +40120,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Phishing: 7"
                role="graphics-document"
-               opacity="0.9878444907447773"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40144,7 +40144,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Brute Force: 65"
                role="graphics-document"
-               opacity="0.9878268275001202"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40168,7 +40168,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ DDoS: 100"
                role="graphics-document"
-               opacity="0.9878091391505228"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40192,7 +40192,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Data Breach: 50"
                role="graphics-document"
-               opacity="0.9877914256613786"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40216,7 +40216,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Threat Intel: 50"
                role="graphics-document"
-               opacity="0.9879148933645399"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40240,7 +40240,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ DLP: 75"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40264,7 +40264,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ SysLog: 50"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40288,7 +40288,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Firewall: 95"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40312,7 +40312,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Malware: 30"
                role="graphics-document"
-               opacity="0.9878444907447773"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40336,7 +40336,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9878268275001202"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40360,7 +40360,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Brute Force: 70"
                role="graphics-document"
-               opacity="0.9878091391505228"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40384,7 +40384,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ DDoS: 90"
                role="graphics-document"
-               opacity="0.9877914256613786"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40408,7 +40408,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Data Breach: 55"
                role="graphics-document"
-               opacity="0.9877736869980356"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40432,7 +40432,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Threat Intel: 65"
                role="graphics-document"
-               opacity="0.987897330194489"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40456,7 +40456,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ DLP: 80"
                role="graphics-document"
-               opacity="0.987879742057469"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40480,7 +40480,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ SysLog: 55"
                role="graphics-document"
-               opacity="0.9878621289190551"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40504,7 +40504,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Firewall: 100"
                role="graphics-document"
-               opacity="0.9877381340099163"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40528,7 +40528,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Malware: 35"
                role="graphics-document"
-               opacity="0.9877203196156074"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40552,7 +40552,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Phishing: 93"
                role="graphics-document"
-               opacity="0.9877024799080341"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40576,7 +40576,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Brute Force: 75"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40600,7 +40600,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ DDoS: 35"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40624,7 +40624,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Data Breach: 60"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40648,7 +40648,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Threat Intel: 10"
                role="graphics-document"
-               opacity="0.9877736869980356"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40672,7 +40672,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ DLP: 85"
                role="graphics-document"
-               opacity="0.987755923125796"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40696,7 +40696,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ SysLog: 60"
                role="graphics-document"
-               opacity="0.9877381340099163"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40720,7 +40720,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Firewall: 100"
                role="graphics-document"
-               opacity="0.9877203196156074"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40744,7 +40744,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Malware: 40"
                role="graphics-document"
-               opacity="0.9877024799080341"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40768,7 +40768,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Phishing: 45"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40792,7 +40792,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Brute Force: 80"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40816,7 +40816,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ DDoS: 19"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40840,7 +40840,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Data Breach: 65"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40864,7 +40864,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Threat Intel: 90"
                role="graphics-document"
-               opacity="0.987755923125796"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40888,7 +40888,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ DLP: 95"
                role="graphics-document"
-               opacity="0.9877381340099163"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40912,7 +40912,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ SysLog: 60"
                role="graphics-document"
-               opacity="0.9877203196156074"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40936,7 +40936,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Firewall: 90"
                role="graphics-document"
-               opacity="0.9877024799080341"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40960,7 +40960,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Malware: 30"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -40984,7 +40984,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Phishing: 8"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41008,7 +41008,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Brute Force: 70"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41032,7 +41032,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ DDoS: 25"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41056,7 +41056,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Data Breach: 75"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41080,7 +41080,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9877381340099163"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41104,7 +41104,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ DLP: 85"
                role="graphics-document"
-               opacity="0.9877203196156074"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41128,7 +41128,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ SysLog: 55"
                role="graphics-document"
-               opacity="0.9877024799080341"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41152,7 +41152,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Firewall: 85"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41176,7 +41176,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Malware: 40"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41200,7 +41200,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Phishing: 98"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41224,7 +41224,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Brute Force: 80"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41248,7 +41248,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ DDoS: 98"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41272,7 +41272,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Data Breach: 70"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41296,7 +41296,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Threat Intel: 22"
                role="graphics-document"
-               opacity="0.9877203196156074"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41320,7 +41320,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ DLP: 92"
                role="graphics-document"
-               opacity="0.9877024799080341"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41344,7 +41344,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ SysLog: 65"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41368,7 +41368,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41392,7 +41392,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Malware: 35"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41416,7 +41416,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Phishing: 47"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41440,7 +41440,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Brute Force: 75"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41464,7 +41464,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ DDoS: 54"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41488,7 +41488,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Data Breach: 72"
                role="graphics-document"
-               opacity="0.9875768902478288"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41512,7 +41512,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Threat Intel: 56"
                role="graphics-document"
-               opacity="0.9877024799080341"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41536,7 +41536,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ DLP: 88"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41560,7 +41560,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ SysLog: 50"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41584,7 +41584,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Firewall: 75"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41608,7 +41608,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Malware: 45"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41632,7 +41632,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Phishing: 38"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41656,7 +41656,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Brute Force: 78"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41680,7 +41680,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ DDoS: 23"
                role="graphics-document"
-               opacity="0.9875768902478288"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41704,7 +41704,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Data Breach: 68"
                role="graphics-document"
-               opacity="0.9875588467745624"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41728,7 +41728,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Threat Intel: 17"
                role="graphics-document"
-               opacity="0.9876846148523156"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41752,7 +41752,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ DLP: 82"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41776,7 +41776,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ SysLog: 60"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41800,7 +41800,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Firewall: 85"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41824,7 +41824,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Malware: 38"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41848,7 +41848,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Phishing: 90"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41872,7 +41872,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Brute Force: 72"
                role="graphics-document"
-               opacity="0.9875768902478288"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41896,7 +41896,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ DDoS: 21"
                role="graphics-document"
-               opacity="0.9875588467745624"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41920,7 +41920,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Data Breach: 70"
                role="graphics-document"
-               opacity="0.9875407776724451"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41944,7 +41944,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Threat Intel: 23"
                role="graphics-document"
-               opacity="0.987666724413525"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41968,7 +41968,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ DLP: 90"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -41992,7 +41992,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ SysLog: 55"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42016,7 +42016,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42040,7 +42040,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Malware: 42"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42064,7 +42064,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Phishing: 13"
                role="graphics-document"
-               opacity="0.9875768902478288"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42088,7 +42088,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Brute Force: 75"
                role="graphics-document"
-               opacity="0.9875588467745624"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42112,7 +42112,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ DDoS: 19"
                role="graphics-document"
-               opacity="0.9875407776724451"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42136,7 +42136,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Data Breach: 65"
                role="graphics-document"
-               opacity="0.9875226829061805"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42160,7 +42160,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Threat Intel: 20"
                role="graphics-document"
-               opacity="0.9876488085566896"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42184,7 +42184,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ DLP: 85"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42208,7 +42208,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ SysLog: 58"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42232,7 +42232,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Firewall: 77"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42256,7 +42256,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Malware: 40"
                role="graphics-document"
-               opacity="0.9875768902478288"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42280,7 +42280,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Phishing: 10"
                role="graphics-document"
-               opacity="0.9875588467745624"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42304,7 +42304,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Brute Force: 70"
                role="graphics-document"
-               opacity="0.9875407776724451"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42328,7 +42328,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ DDoS: 20"
                role="graphics-document"
-               opacity="0.9875226829061805"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42352,7 +42352,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Data Breach: 60"
                role="graphics-document"
-               opacity="0.9875045624404257"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42376,7 +42376,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Threat Intel: 22"
                role="graphics-document"
-               opacity="0.9876308672467903"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42400,7 +42400,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ DLP: 88"
                role="graphics-document"
-               opacity="0.9876129004487622"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42424,7 +42424,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ SysLog: 62"
                role="graphics-document"
-               opacity="0.9875949081274942"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42448,7 +42448,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9875768902478288"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42472,7 +42472,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Malware: 38"
                role="graphics-document"
-               opacity="0.9875588467745624"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42496,7 +42496,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Phishing: 12"
                role="graphics-document"
-               opacity="0.9875407776724451"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42520,7 +42520,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Brute Force: 72"
                role="graphics-document"
-               opacity="0.9875226829061805"
+               opacity="1"
                style="fill: rgb(247, 191, 193); filter: drop-shadow(rgb(247, 191, 193) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42544,7 +42544,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ DDoS: 18"
                role="graphics-document"
-               opacity="0.9875045624404257"
+               opacity="1"
                style="fill: rgba(183, 0, 6, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42568,7 +42568,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Data Breach: 65"
                role="graphics-document"
-               opacity="0.9874864162397916"
+               opacity="1"
                style="fill: rgb(224, 0, 7); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -42605,7 +42605,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          279
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -42634,7 +42634,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          973
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -42660,7 +42660,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
   </div>
   <div class="flex flex-col pl-8 pr-8 font-mono divide-y divide-[#E2E2EA]">
     <div class="flex w-full pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -42707,7 +42707,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
       </div>
     </div>
     <div class="flex w-full  pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -42754,7 +42754,7 @@ exports[`Blocks/Heatmap/Light/Medium HotHex smoke-test 1`] = `
       </div>
     </div>
     <div class="flex w-full  pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -48002,7 +48002,7 @@ exports[`Blocks/Heatmap/Light/Medium IntensityCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          299
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -48031,7 +48031,7 @@ exports[`Blocks/Heatmap/Light/Medium IntensityCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,043
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -58703,7 +58703,7 @@ exports[`Blocks/Heatmap/Light/Medium SimpleCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          320
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -58732,7 +58732,7 @@ exports[`Blocks/Heatmap/Light/Medium SimpleCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,115
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -64007,7 +64007,7 @@ exports[`Blocks/Heatmap/Light/Medium SimpleHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          319
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -64036,7 +64036,7 @@ exports[`Blocks/Heatmap/Light/Medium SimpleHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,114
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -69404,7 +69404,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          318
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -69433,7 +69433,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmCircle smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,109
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -70159,7 +70159,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Threat Intel: 0"
                role="graphics-document"
-               opacity="0.9825505450771629"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70183,7 +70183,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ DLP: 100"
                role="graphics-document"
-               opacity="0.9825254017961199"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70207,7 +70207,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ SysLog: 56"
                role="graphics-document"
-               opacity="0.9825002231858302"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70231,7 +70231,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Firewall: 50"
                role="graphics-document"
-               opacity="0.9824750091983903"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70255,7 +70255,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Malware: 24"
                role="graphics-document"
-               opacity="0.9824497597858353"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70279,7 +70279,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9824244749001385"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70303,7 +70303,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Brute Force: 67"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70327,7 +70327,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ DDoS: 34"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70351,7 +70351,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 1 ∙ Data Breach: 23"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70375,7 +70375,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Threat Intel: 45"
                role="graphics-document"
-               opacity="0.9825254017961199"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70399,7 +70399,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ DLP: 75"
                role="graphics-document"
-               opacity="0.9825002231858302"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70423,7 +70423,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ SysLog: 50"
                role="graphics-document"
-               opacity="0.9824750091983903"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70447,7 +70447,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Firewall: 23"
                role="graphics-document"
-               opacity="0.9824497597858353"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70471,7 +70471,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Malware: 29"
                role="graphics-document"
-               opacity="0.9824244749001385"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70495,7 +70495,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Phishing: 87"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70519,7 +70519,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Brute Force: 23"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70543,7 +70543,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ DDoS: 90"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70567,7 +70567,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 2 ∙ Data Breach: 100"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70591,7 +70591,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Threat Intel: 20"
                role="graphics-document"
-               opacity="0.9825002231858302"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70615,7 +70615,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ DLP: 45"
                role="graphics-document"
-               opacity="0.9824750091983903"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70639,7 +70639,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ SysLog: 43"
                role="graphics-document"
-               opacity="0.9824497597858353"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70663,7 +70663,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Firewall: 87"
                role="graphics-document"
-               opacity="0.9824244749001385"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70687,7 +70687,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Malware: 78"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70711,7 +70711,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Phishing: 9"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70735,7 +70735,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Brute Force: 73"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70759,7 +70759,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ DDoS: 23"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70783,7 +70783,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 3 ∙ Data Breach: 12"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70807,7 +70807,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Threat Intel: 0"
                role="graphics-document"
-               opacity="0.9824750091983903"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70831,7 +70831,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ DLP: 75"
                role="graphics-document"
-               opacity="0.9824497597858353"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70855,7 +70855,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ SysLog: 24"
                role="graphics-document"
-               opacity="0.9824244749001385"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70879,7 +70879,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Firewall: 43"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70903,7 +70903,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Malware: 21"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70927,7 +70927,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Phishing: 8"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70951,7 +70951,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Brute Force: 12"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70975,7 +70975,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ DDoS: 87"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -70999,7 +70999,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 4 ∙ Data Breach: 45"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71023,7 +71023,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9824497597858353"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71047,7 +71047,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ DLP: 54"
                role="graphics-document"
-               opacity="0.9824244749001385"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71071,7 +71071,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ SysLog: 30"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71095,7 +71095,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Firewall: 23"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71119,7 +71119,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Malware: 67"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71143,7 +71143,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71167,7 +71167,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Brute Force: 11"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71191,7 +71191,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ DDoS: 34"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71215,7 +71215,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 5 ∙ Data Breach: 78"
                role="graphics-document"
-               opacity="0.9822464834051076"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71239,7 +71239,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9824244749001385"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71263,7 +71263,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ DLP: 54"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71287,7 +71287,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ SysLog: 30"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71311,7 +71311,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Firewall: 23"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71335,7 +71335,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Malware: 13"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71359,7 +71359,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71383,7 +71383,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Brute Force: 90"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71407,7 +71407,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ DDoS: 25"
                role="graphics-document"
-               opacity="0.9822464834051076"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71431,7 +71431,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 6 ∙ Data Breach: 90"
                role="graphics-document"
-               opacity="0.9822209129979113"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71455,7 +71455,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9823991544932121"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71479,7 +71479,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ DLP: 54"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71503,7 +71503,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ SysLog: 30"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71527,7 +71527,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Firewall: 78"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71551,7 +71551,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Malware: 9"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71575,7 +71575,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71599,7 +71599,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Brute Force: 50"
                role="graphics-document"
-               opacity="0.9822464834051076"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71623,7 +71623,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ DDoS: 99"
                role="graphics-document"
-               opacity="0.9822209129979113"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71647,7 +71647,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 7 ∙ Data Breach: 34"
                role="graphics-document"
-               opacity="0.982195306682552"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71671,7 +71671,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Threat Intel: 90"
                role="graphics-document"
-               opacity="0.9823737985169062"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71695,7 +71695,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ DLP: 60"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71719,7 +71719,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ SysLog: 35"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71743,7 +71743,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71767,7 +71767,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Malware: 15"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71791,7 +71791,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Phishing: 85"
                role="graphics-document"
-               opacity="0.9822464834051076"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71815,7 +71815,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Brute Force: 55"
                role="graphics-document"
-               opacity="0.9822209129979113"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71839,7 +71839,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ DDoS: 100"
                role="graphics-document"
-               opacity="0.982195306682552"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71863,7 +71863,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 8 ∙ Data Breach: 40"
                role="graphics-document"
-               opacity="0.9821696644103834"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71887,7 +71887,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Threat Intel: 95"
                role="graphics-document"
-               opacity="0.982348406923009"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71911,7 +71911,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ DLP: 65"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71935,7 +71935,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ SysLog: 40"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71959,7 +71959,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Firewall: 85"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -71983,7 +71983,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Malware: 20"
                role="graphics-document"
-               opacity="0.9822464834051076"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72007,7 +72007,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Phishing: 90"
                role="graphics-document"
-               opacity="0.9822209129979113"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72031,7 +72031,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Brute Force: 60"
                role="graphics-document"
-               opacity="0.982195306682552"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72055,7 +72055,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ DDoS: 100"
                role="graphics-document"
-               opacity="0.9821696644103834"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72079,7 +72079,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 9 ∙ Data Breach: 45"
                role="graphics-document"
-               opacity="0.982143986132697"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72103,7 +72103,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Threat Intel: 4"
                role="graphics-document"
-               opacity="0.982322979663247"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72127,7 +72127,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ DLP: 70"
                role="graphics-document"
-               opacity="0.9822975166892848"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72151,7 +72151,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ SysLog: 45"
                role="graphics-document"
-               opacity="0.9822720179527248"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72175,7 +72175,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Firewall: 90"
                role="graphics-document"
-               opacity="0.9822464834051076"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72199,7 +72199,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Malware: 25"
                role="graphics-document"
-               opacity="0.9820667347785066"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72223,7 +72223,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Phishing: 7"
                role="graphics-document"
-               opacity="0.9820409119904119"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72247,7 +72247,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Brute Force: 65"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72271,7 +72271,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ DDoS: 100"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72295,7 +72295,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 10 ∙ Data Breach: 50"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72319,7 +72319,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Threat Intel: 50"
                role="graphics-document"
-               opacity="0.982143986132697"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72343,7 +72343,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ DLP: 75"
                role="graphics-document"
-               opacity="0.9821182718007216"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72367,7 +72367,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ SysLog: 50"
                role="graphics-document"
-               opacity="0.9820925213656235"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72391,7 +72391,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Firewall: 95"
                role="graphics-document"
-               opacity="0.9820667347785066"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72415,7 +72415,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Malware: 30"
                role="graphics-document"
-               opacity="0.9820409119904119"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72439,7 +72439,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Phishing: 78"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72463,7 +72463,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Brute Force: 70"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72487,7 +72487,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ DDoS: 90"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72511,7 +72511,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 11 ∙ Data Breach: 55"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72535,7 +72535,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Threat Intel: 65"
                role="graphics-document"
-               opacity="0.9821182718007216"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72559,7 +72559,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ DLP: 80"
                role="graphics-document"
-               opacity="0.9820925213656235"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72583,7 +72583,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ SysLog: 55"
                role="graphics-document"
-               opacity="0.9820667347785066"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72607,7 +72607,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Firewall: 100"
                role="graphics-document"
-               opacity="0.9820409119904119"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72631,7 +72631,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Malware: 35"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72655,7 +72655,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Phishing: 93"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72679,7 +72679,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Brute Force: 75"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72703,7 +72703,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ DDoS: 35"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72727,7 +72727,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 12 ∙ Data Breach: 60"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72751,7 +72751,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Threat Intel: 10"
                role="graphics-document"
-               opacity="0.9820925213656235"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72775,7 +72775,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ DLP: 85"
                role="graphics-document"
-               opacity="0.9820667347785066"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72799,7 +72799,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ SysLog: 60"
                role="graphics-document"
-               opacity="0.9820409119904119"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72823,7 +72823,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Firewall: 100"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72847,7 +72847,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Malware: 40"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72871,7 +72871,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Phishing: 45"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72895,7 +72895,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Brute Force: 80"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72919,7 +72919,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ DDoS: 19"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72943,7 +72943,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 13 ∙ Data Breach: 65"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72967,7 +72967,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Threat Intel: 90"
                role="graphics-document"
-               opacity="0.9820667347785066"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -72991,7 +72991,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ DLP: 95"
                role="graphics-document"
-               opacity="0.9820409119904119"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73015,7 +73015,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ SysLog: 60"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73039,7 +73039,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Firewall: 90"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73063,7 +73063,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Malware: 30"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73087,7 +73087,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Phishing: 8"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73111,7 +73111,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Brute Force: 70"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73135,7 +73135,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ DDoS: 25"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73159,7 +73159,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 14 ∙ Data Breach: 75"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73183,7 +73183,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Threat Intel: 87"
                role="graphics-document"
-               opacity="0.9820409119904119"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73207,7 +73207,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ DLP: 85"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73231,7 +73231,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ SysLog: 55"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73255,7 +73255,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Firewall: 85"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73279,7 +73279,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Malware: 40"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73303,7 +73303,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Phishing: 98"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73327,7 +73327,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Brute Force: 80"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73351,7 +73351,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ DDoS: 98"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73375,7 +73375,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 15 ∙ Data Breach: 70"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73399,7 +73399,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Threat Intel: 22"
                role="graphics-document"
-               opacity="0.9820150529523178"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73423,7 +73423,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ DLP: 92"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73447,7 +73447,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ SysLog: 65"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73471,7 +73471,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73495,7 +73495,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Malware: 35"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73519,7 +73519,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Phishing: 47"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73543,7 +73543,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Brute Force: 75"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73567,7 +73567,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ DDoS: 54"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73591,7 +73591,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 16 ∙ Data Breach: 72"
                role="graphics-document"
-               opacity="0.9818068697442285"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73615,7 +73615,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Threat Intel: 56"
                role="graphics-document"
-               opacity="0.9819891576151398"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73639,7 +73639,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ DLP: 88"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73663,7 +73663,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ SysLog: 50"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73687,7 +73687,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Firewall: 75"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73711,7 +73711,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Malware: 45"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73735,7 +73735,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Phishing: 38"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73759,7 +73759,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Brute Force: 78"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73783,7 +73783,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ DDoS: 23"
                role="graphics-document"
-               opacity="0.9818068697442285"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73807,7 +73807,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 17 ∙ Data Breach: 68"
                role="graphics-document"
-               opacity="0.9817806822397777"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73831,7 +73831,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Threat Intel: 17"
                role="graphics-document"
-               opacity="0.9819632259297308"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73855,7 +73855,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ DLP: 82"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73879,7 +73879,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ SysLog: 60"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73903,7 +73903,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Firewall: 85"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73927,7 +73927,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Malware: 38"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73951,7 +73951,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Phishing: 90"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73975,7 +73975,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Brute Force: 72"
                role="graphics-document"
-               opacity="0.9818068697442285"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -73999,7 +73999,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ DDoS: 21"
                role="graphics-document"
-               opacity="0.9817806822397777"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74023,7 +74023,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 18 ∙ Data Breach: 70"
                role="graphics-document"
-               opacity="0.9817544579916443"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74047,7 +74047,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Threat Intel: 23"
                role="graphics-document"
-               opacity="0.9819372578468802"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74071,7 +74071,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ DLP: 90"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74095,7 +74095,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ SysLog: 55"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74119,7 +74119,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74143,7 +74143,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Malware: 42"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74167,7 +74167,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Phishing: 13"
                role="graphics-document"
-               opacity="0.9818068697442285"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74191,7 +74191,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Brute Force: 75"
                role="graphics-document"
-               opacity="0.9817806822397777"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74215,7 +74215,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ DDoS: 19"
                role="graphics-document"
-               opacity="0.9817544579916443"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74239,7 +74239,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 19 ∙ Data Breach: 65"
                role="graphics-document"
-               opacity="0.9817281969501116"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74263,7 +74263,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Threat Intel: 20"
                role="graphics-document"
-               opacity="0.9819112533173149"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74287,7 +74287,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ DLP: 85"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74311,7 +74311,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ SysLog: 58"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74335,7 +74335,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Firewall: 77"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74359,7 +74359,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Malware: 40"
                role="graphics-document"
-               opacity="0.9818068697442285"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74383,7 +74383,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Phishing: 10"
                role="graphics-document"
-               opacity="0.9817806822397777"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74407,7 +74407,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Brute Force: 70"
                role="graphics-document"
-               opacity="0.9817544579916443"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74431,7 +74431,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ DDoS: 20"
                role="graphics-document"
-               opacity="0.9817281969501116"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74455,7 +74455,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 20 ∙ Data Breach: 60"
                role="graphics-document"
-               opacity="0.9817018990653993"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74479,7 +74479,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Threat Intel: 22"
                role="graphics-document"
-               opacity="0.9818852122916983"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74503,7 +74503,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ DLP: 88"
                role="graphics-document"
-               opacity="0.9818591347206308"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74527,7 +74527,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ SysLog: 62"
                role="graphics-document"
-               opacity="0.9818330205546496"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74551,7 +74551,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Firewall: 80"
                role="graphics-document"
-               opacity="0.9818068697442285"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74575,7 +74575,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Malware: 38"
                role="graphics-document"
-               opacity="0.9817806822397777"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74599,7 +74599,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Phishing: 12"
                role="graphics-document"
-               opacity="0.9817544579916443"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74623,7 +74623,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Brute Force: 72"
                role="graphics-document"
-               opacity="0.9817281969501116"
+               opacity="1"
                style="fill: rgb(224, 0, 7); filter: drop-shadow(rgb(224, 0, 7) 0px 0px 5px); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74647,7 +74647,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ DDoS: 18"
                role="graphics-document"
-               opacity="0.9817018990653993"
+               opacity="1"
                style="fill: rgba(247, 191, 193, 0.4); cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74671,7 +74671,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
                tabindex="0"
                aria-label="Week 21 ∙ Data Breach: 65"
                role="graphics-document"
-               opacity="0.9816755642876634"
+               opacity="1"
                style="fill: rgba(224, 0, 7, 0.4); stroke: rgb(224, 0, 7); stroke-width: 2px; cursor: auto;"
             >
               <path d="M 10.57237022219292 0
@@ -74708,7 +74708,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          300
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -74737,7 +74737,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,046
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -74810,7 +74810,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
       </div>
     </div>
     <div class="flex w-full  pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"
@@ -74857,7 +74857,7 @@ exports[`Blocks/Heatmap/Light/Medium WarmHex smoke-test 1`] = `
       </div>
     </div>
     <div class="flex w-full  pb-4 pt-4 items-center gap-2"
-         style="opacity: 0; transform: none;"
+         style="opacity: 1; transform: none;"
     >
       <div class="flex flex-row gap-2 items-center text-base w-1/2 text-[#535362]">
         <svg xmlns="http://www.w3.org/2000/svg"

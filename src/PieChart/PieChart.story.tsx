@@ -11,6 +11,7 @@ import { ChartShallowDataShape } from '@/common/data';
 import { Gradient } from '@/common/Gradient';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Pie Chart/Pie',
   component: PieChart,
   subcomponents: {

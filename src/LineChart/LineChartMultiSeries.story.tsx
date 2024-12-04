@@ -19,6 +19,7 @@ import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Multi Series',
   component: LineChart,
   subcomponents: {

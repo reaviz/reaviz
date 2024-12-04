@@ -23,7 +23,7 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
               stroke="#8F979F"
         >
         </line>
-        <g transform="translate(17, 0)">
+        <g transform="translate(19, 0)">
           <line stroke-width="1"
                 stroke="#8F979F"
                 x1="0"
@@ -37,18 +37,18 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
              font-family="sans-serif"
           >
             <title>
-              12/5/2024
+              12/3/2024
             </title>
             <text transform
                   text-anchor="middle"
                   alignment-baseline="hanging"
                   fill="#8F979F"
             >
-              12/5/2024
+              12/3/2024
             </text>
           </g>
         </g>
-        <g transform="translate(69, 0)">
+        <g transform="translate(88, 0)">
           <line stroke-width="1"
                 stroke="#8F979F"
                 x1="0"
@@ -62,68 +62,18 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
              font-family="sans-serif"
           >
             <title>
-              12/2/2024
+              11/27/2024
             </title>
             <text transform
                   text-anchor="middle"
                   alignment-baseline="hanging"
                   fill="#8F979F"
             >
-              12/2/2024
+              11/27/2024
             </text>
           </g>
         </g>
-        <g transform="translate(121, 0)">
-          <line stroke-width="1"
-                stroke="#8F979F"
-                x1="0"
-                x2="0"
-                y1="0"
-                y2="5"
-          >
-          </line>
-          <g transform="translate(0, 10)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              11/24/2024
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              11/24/2024
-            </text>
-          </g>
-        </g>
-        <g transform="translate(173, 0)">
-          <line stroke-width="1"
-                stroke="#8F979F"
-                x1="0"
-                x2="0"
-                y1="0"
-                y2="5"
-          >
-          </line>
-          <g transform="translate(0, 10)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              11/22/2024
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              11/22/2024
-            </text>
-          </g>
-        </g>
-        <g transform="translate(225, 0)">
+        <g transform="translate(157, 0)">
           <line stroke-width="1"
                 stroke="#8F979F"
                 x1="0"
@@ -148,7 +98,7 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
             </text>
           </g>
         </g>
-        <g transform="translate(277, 0)">
+        <g transform="translate(226, 0)">
           <line stroke-width="1"
                 stroke="#8F979F"
                 x1="0"
@@ -162,18 +112,18 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
              font-family="sans-serif"
           >
             <title>
-              11/13/2024
+              11/11/2024
             </title>
             <text transform
                   text-anchor="middle"
                   alignment-baseline="hanging"
                   fill="#8F979F"
             >
-              11/13/2024
+              11/11/2024
             </text>
           </g>
         </g>
-        <g transform="translate(329, 0)">
+        <g transform="translate(295, 0)">
           <line stroke-width="1"
                 stroke="#8F979F"
                 x1="0"
@@ -187,18 +137,18 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
              font-family="sans-serif"
           >
             <title>
-              11/5/2024
+              11/6/2024
             </title>
             <text transform
                   text-anchor="middle"
                   alignment-baseline="hanging"
                   fill="#8F979F"
             >
-              11/5/2024
+              11/6/2024
             </text>
           </g>
         </g>
-        <g transform="translate(381, 0)">
+        <g transform="translate(364, 0)">
           <line stroke-width="1"
                 stroke="#8F979F"
                 x1="0"
@@ -212,14 +162,14 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
              font-family="sans-serif"
           >
             <title>
-              10/24/2024
+              10/23/2024
             </title>
             <text transform
                   text-anchor="middle"
                   alignment-baseline="hanging"
                   fill="#8F979F"
             >
-              10/24/2024
+              10/23/2024
             </text>
           </g>
         </g>
@@ -237,14 +187,14 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
              font-family="sans-serif"
           >
             <title>
-              10/20/2024
+              10/17/2024
             </title>
             <text transform
                   text-anchor="middle"
                   alignment-baseline="hanging"
                   fill="#8F979F"
             >
-              10/20/2024
+              10/17/2024
             </text>
           </g>
         </g>
@@ -260,13 +210,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Wed Dec 04 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Dec 05 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 2"
+                aria-label="Mon Dec 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Dec 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
                 role="graphics-document"
-                height="4.799999999999997px"
-                width="23px"
+                height="16.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-0)"
-                x="5"
-                y="19.200000000000003"
+                x="8"
+                y="7.200000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -295,13 +245,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Wed Dec 04 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Dec 05 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 9"
+                aria-label="Sun Dec 01 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Dec 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
                 role="graphics-document"
-                height="21.578257344962175px"
-                width="23px"
+                height="16.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-1)"
-                x="5"
-                y="2.422669960629687"
+                x="31"
+                y="7.200000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -330,13 +280,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Tue Dec 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Dec 04 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 4"
+                aria-label="Sun Dec 01 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Dec 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 2"
                 role="graphics-document"
-                height="9.588455656361436px"
-                width="23px"
+                height="4.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-2)"
                 x="31"
-                y="14.412679527139106"
+                y="19.200000000000003"
                 style="cursor: auto;"
           >
           </rect>
@@ -365,13 +315,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Sun Dec 01 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Dec 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 4"
+                aria-label="Fri Nov 29 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Nov 30 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 10"
                 role="graphics-document"
-                height="9.585838184719925px"
-                width="23px"
+                height="24px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-3)"
-                x="57"
-                y="14.415550586507834"
+                x="54"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -400,13 +350,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Thu Nov 28 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Nov 29 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 9"
+                aria-label="Sun Dec 01 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Dec 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
                 role="graphics-document"
-                height="21.559510320214162px"
-                width="23px"
+                height="16.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-4)"
-                x="83"
-                y="2.44220259196567"
+                x="31"
+                y="7.200000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -435,13 +385,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Sat Nov 23 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Nov 24 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+                aria-label="Tue Nov 26 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Nov 27 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 5"
                 role="graphics-document"
-                height="2.3999999999999986px"
-                width="23px"
+                height="12px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-5)"
-                x="109"
-                y="21.6"
+                x="77"
+                y="12"
                 style="cursor: auto;"
           >
           </rect>
@@ -470,13 +420,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Sun Nov 24 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Nov 25 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 8"
+                aria-label="Mon Nov 25 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 26 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 10"
                 role="graphics-document"
-                height="19.146143080717053px"
-                width="23px"
+                height="24px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-6)"
-                x="135"
-                y="4.856411412707171"
+                x="100"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -505,13 +455,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Thu Nov 21 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Nov 22 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 8"
+                aria-label="Mon Nov 25 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 26 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
                 role="graphics-document"
-                height="19.134091740589238px"
-                width="23px"
+                height="2.3999999999999986px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-7)"
-                x="161"
-                y="4.8690241367723415"
+                x="100"
+                y="21.6"
                 style="cursor: auto;"
           >
           </rect>
@@ -540,13 +490,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Mon Nov 18 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 19 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
+                aria-label="Tue Nov 19 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Nov 20 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 5"
                 role="graphics-document"
-                height="16.7297095778035px"
-                width="23px"
+                height="12px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-8)"
-                x="187"
-                y="7.274087852303418"
+                x="123"
+                y="12"
                 style="cursor: auto;"
           >
           </rect>
@@ -575,13 +525,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Mon Nov 18 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 19 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 3"
+                aria-label="Tue Nov 19 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Nov 20 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 6"
                 role="graphics-document"
-                height="7.164505213123989px"
-                width="23px"
+                height="14.399999999999999px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-9)"
-                x="187"
-                y="16.84011871270816"
+                x="123"
+                y="9.600000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -610,13 +560,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Thu Nov 14 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Nov 15 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
+                aria-label="Thu Nov 14 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Nov 15 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 9"
                 role="graphics-document"
-                height="16.695091465469748px"
-                width="23px"
+                height="21.6px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-10)"
-                x="213"
-                y="7.310533492066241"
+                x="146"
+                y="2.3999999999999995"
                 style="cursor: auto;"
           >
           </rect>
@@ -645,13 +595,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Mon Nov 11 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 12 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 10"
+                aria-label="Tue Nov 12 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Nov 13 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 9"
                 role="graphics-document"
-                height="23.81565117649806px"
-                width="23px"
+                height="21.6px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-11)"
-                x="239"
-                y="0.19118460669041415"
+                x="169"
+                y="2.3999999999999995"
                 style="cursor: auto;"
           >
           </rect>
@@ -680,13 +630,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Tue Nov 12 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Nov 13 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 2"
+                aria-label="Mon Nov 11 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 12 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 3"
                 role="graphics-document"
-                height="4.758365849505625px"
-                width="23px"
+                height="7.200000000000003px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-12)"
-                x="265"
-                y="19.249932440427383"
+                x="192"
+                y="16.799999999999997"
                 style="cursor: auto;"
           >
           </rect>
@@ -715,13 +665,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Mon Nov 11 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 12 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 6"
+                aria-label="Sun Nov 10 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Mon Nov 11 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 10"
                 role="graphics-document"
-                height="14.237726581900386px"
-                width="23px"
+                height="24px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-13)"
-                x="239"
-                y="9.772335499600795"
+                x="215"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -750,13 +700,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Fri Nov 08 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Nov 09 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 6"
+                aria-label="Fri Nov 08 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Nov 09 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 4"
                 role="graphics-document"
-                height="14.202489907013605px"
-                width="23px"
+                height="9.600000000000001px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-14)"
-                x="291"
-                y="9.809695781925726"
+                x="238"
+                y="14.399999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -785,13 +735,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Mon Nov 04 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Nov 05 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 9"
+                aria-label="Thu Nov 07 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Nov 08 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
                 role="graphics-document"
-                height="21.236070240848683px"
-                width="23px"
+                height="16.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-15)"
-                x="317"
-                y="2.778667655924997"
+                x="261"
+                y="7.200000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -820,13 +770,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Sat Nov 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Nov 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 2"
+                aria-label="Fri Nov 08 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Nov 09 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 4"
                 role="graphics-document"
-                height="4.708691572078338px"
-                width="23px"
+                height="9.600000000000001px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-16)"
-                x="343"
-                y="19.309107592615213"
+                x="238"
+                y="14.399999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -855,13 +805,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Sat Nov 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Nov 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 5"
+                aria-label="Tue Nov 05 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Nov 06 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 3"
                 role="graphics-document"
-                height="11.706820698674488px"
-                width="23.010731553574775px"
+                height="7.200000000000003px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-17)"
-                x="343.0107315535748"
-                y="12.314642408475061"
+                x="284"
+                y="16.799999999999997"
                 style="cursor: auto;"
           >
           </rect>
@@ -890,13 +840,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Wed Oct 23 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Thu Oct 24 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 5"
+                aria-label="Sat Nov 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Nov 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 2"
                 role="graphics-document"
-                height="11.644681661111902px"
-                width="23.012918983926674px"
+                height="4.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-18)"
-                x="369.0129189839267"
-                y="12.381156306741449"
+                x="307"
+                y="19.200000000000003"
                 style="cursor: auto;"
           >
           </rect>
@@ -925,13 +875,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Wed Oct 23 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Thu Oct 24 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 7"
+                aria-label="Sat Nov 02 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sun Nov 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 7"
                 role="graphics-document"
-                height="16.191678475544965px"
-                width="23.01552399511822px"
+                height="16.799999999999997px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-19)"
-                x="369.0155239951182"
-                y="7.8393695146914695"
+                x="307"
+                y="7.200000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -960,13 +910,13 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Mon Oct 21 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Tue Oct 22 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 9"
+                aria-label="Mon Oct 28 2024 00:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Oct 29 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 4"
                 role="graphics-document"
-                height="20.6493583016087px"
-                width="23.018617267381067px"
+                height="9.600000000000001px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-20)"
-                x="395.01861726738105"
-                y="3.387876233153438"
+                x="330"
+                y="14.399999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -995,19 +945,159 @@ exports[`Utils/Brush Bar smoke-test 1`] = `
                 rx="0"
                 ry="0"
                 tabindex="0"
-                aria-label="Sat Oct 19 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Sun Oct 20 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 10"
+                aria-label="Tue Oct 22 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Wed Oct 23 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 8"
                 role="graphics-document"
-                height="22.722811819533px"
-                width="23.02227836233228px"
+                height="19.200000000000003px"
+                width="21px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-21)"
-                x="421.02227836233226"
-                y="1.3217449051315602"
+                x="353"
+                y="4.799999999999999"
                 style="cursor: auto;"
           >
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
                         id="gradient-bar-series-ref-11-bar-undefined-21"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sun Oct 20 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Mon Oct 21 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 6"
+                role="graphics-document"
+                height="14.399999999999999px"
+                width="21px"
+                fill="url(#gradient-bar-series-ref-11-bar-undefined-22)"
+                x="376"
+                y="9.600000000000001"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-11-bar-undefined-22"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Oct 19 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Sun Oct 20 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 4"
+                role="graphics-document"
+                height="9.600000000000001px"
+                width="21px"
+                fill="url(#gradient-bar-series-ref-11-bar-undefined-23)"
+                x="399"
+                y="14.399999999999999"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-11-bar-undefined-23"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Sat Oct 19 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Sun Oct 20 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 3"
+                role="graphics-document"
+                height="7.200000000000003px"
+                width="21px"
+                fill="url(#gradient-bar-series-ref-11-bar-undefined-24)"
+                x="399"
+                y="16.799999999999997"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-11-bar-undefined-24"
+                        x1="10%"
+                        x2="10%"
+                        y1="100%"
+                        y2="0%"
+        >
+          <stop offset="0%"
+                stop-opacity="0.3"
+                stop-color="#2d60e8"
+          >
+          </stop>
+          <stop offset="80%"
+                stop-opacity="1"
+                stop-color="#2d60e8"
+          >
+          </stop>
+        </linearGradient>
+        <g>
+          <rect class
+                mask
+                rx="0"
+                ry="0"
+                tabindex="0"
+                aria-label="Wed Oct 16 2024 00:00:00 GMT+0300 (Eastern European Summer Time) ∙ Thu Oct 17 2024 00:00:00 GMT+0300 (Eastern European Summer Time): 5"
+                role="graphics-document"
+                height="12px"
+                width="21px"
+                fill="url(#gradient-bar-series-ref-11-bar-undefined-25)"
+                x="422"
+                y="12"
+                style="cursor: auto;"
+          >
+          </rect>
+        </g>
+        <linearGradient spreadmethod="pad"
+                        id="gradient-bar-series-ref-11-bar-undefined-25"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1364,13 +1454,13 @@ exports[`Utils/Brush Bubble smoke-test 1`] = `
         <g clip-path="url(#area-series-ref-16-path)">
           <g class
              tabindex="0"
-             aria-label="Wed Nov 20 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             aria-label="Fri Nov 15 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
              role="graphics-document"
           >
             <g class
                opacity="1"
                transform-origin="7.5px 0.5999999046325684px"
-               style="transform: translateX(184px) translateY(36.0404px); transform-origin: 7.5px 0.6px;"
+               style="transform: translateX(82px) translateY(36px); transform-origin: 7.5px 0.6px;"
             >
               <g transform="translate(-6, -6)">
                 <polygon points="225,10 100,210 350,210"
@@ -1383,17 +1473,93 @@ exports[`Utils/Brush Bubble smoke-test 1`] = `
           </g>
           <g class
              tabindex="0"
-             aria-label="Sat Nov 23 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             aria-label="Mon Nov 18 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
              role="graphics-document"
           >
             <g class
                opacity="1"
-               transform-origin="25px 2px"
-               style="transform: translateX(245px) translateY(36.0422px); transform-origin: 25px 2px;"
+               transform-origin="7.5px 0.5999999046325684px"
+               style="transform: translateX(143px) translateY(36px); transform-origin: 7.5px 0.6px;"
             >
-              <g transform="translate(-20, -20)">
+              <g transform="translate(-6, -6)">
                 <polygon points="225,10 100,210 350,210"
-                         transform="scale(0.2)"
+                         transform="scale(0.06)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Nov 19 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="20px 1.5999994277954102px"
+               style="transform: translateX(164px) translateY(36px); transform-origin: 20px 1.6px;"
+            >
+              <g transform="translate(-16, -16)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.16)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 21 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="12.5px 1px"
+               style="transform: translateX(205px) translateY(36px); transform-origin: 12.5px 1px;"
+            >
+              <g transform="translate(-10, -10)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.1)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Nov 22 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="17.5px 1.3999996185302734px"
+               style="transform: translateX(225px) translateY(36px); transform-origin: 17.5px 1.4px;"
+            >
+              <g transform="translate(-14.000000000000002, -14.000000000000002)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.14)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Nov 24 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="2.500000238418579px 0.20000028610229492px"
+               style="transform: translateX(266px) translateY(36px); transform-origin: 2.5px 0.2px;"
+            >
+              <g transform="translate(-2, -2)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.02)"
                          style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
                 >
                 </polygon>
@@ -1407,31 +1573,12 @@ exports[`Utils/Brush Bubble smoke-test 1`] = `
           >
             <g class
                opacity="1"
-               transform-origin="7.5px 0.5999999046325684px"
-               style="transform: translateX(307px) translateY(36.0442px); transform-origin: 7.5px 0.6px;"
+               transform-origin="20px 1.5999994277954102px"
+               style="transform: translateX(307px) translateY(36px); transform-origin: 20px 1.6px;"
             >
-              <g transform="translate(-6, -6)">
+              <g transform="translate(-16, -16)">
                 <polygon points="225,10 100,210 350,210"
-                         transform="scale(0.06)"
-                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
-                >
-                </polygon>
-              </g>
-            </g>
-          </g>
-          <g class
-             tabindex="0"
-             aria-label="Wed Nov 27 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
-             role="graphics-document"
-          >
-            <g class
-               opacity="1"
-               transform-origin="25px 2px"
-               style="transform: translateX(327px) translateY(36.0462px); transform-origin: 25px 2px;"
-            >
-              <g transform="translate(-20, -20)">
-                <polygon points="225,10 100,210 350,210"
-                         transform="scale(0.2)"
+                         transform="scale(0.16)"
                          style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
                 >
                 </polygon>
@@ -1445,12 +1592,69 @@ exports[`Utils/Brush Bubble smoke-test 1`] = `
           >
             <g class
                opacity="1"
-               transform-origin="10.000000953674316px 0.8000011444091797px"
-               style="transform: translateX(348px) translateY(36.0483px); transform-origin: 10px 0.800001px;"
+               transform-origin="7.5px 0.5999999046325684px"
+               style="transform: translateX(348px) translateY(36px); transform-origin: 7.5px 0.6px;"
             >
-              <g transform="translate(-8, -8)">
+              <g transform="translate(-6, -6)">
                 <polygon points="225,10 100,210 350,210"
-                         transform="scale(0.08)"
+                         transform="scale(0.06)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Nov 29 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="5.000000476837158px 0.40000057220458984px"
+               style="transform: translateX(368px) translateY(36px); transform-origin: 5px 0.400001px;"
+            >
+              <g transform="translate(-4, -4)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.04)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 01 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="25px 2px"
+               style="transform: translateX(409px) translateY(36px); transform-origin: 25px 2px;"
+            >
+              <g transform="translate(-20, -20)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.2)"
+                         style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 03 2024 00:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="5.000000476837158px 0.40000057220458984px"
+               style="transform: translateX(450px) translateY(36px); transform-origin: 5px 0.400001px;"
+            >
+              <g transform="translate(-4, -4)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.04)"
                          style="fill: rgba(206, 0, 62, 0.7); stroke: rgb(255, 0, 77); stroke-width: 5;"
                 >
                 </polygon>
@@ -2011,7 +2215,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
                 fill="none"
                 d="M0,13.061L4,57.469L9,48.327L13,13.061L17,41.796L22,35.265L26,48.327L30,7.837L35,11.755L39,2.612L43,44.408L48,23.51L52,9.143L56,15.673L61,58.776L65,14.367L69,22.204L73,28.735L78,35.265L82,5.224L86,9.143L91,16.98L95,37.878L99,19.592L104,32.653L108,9.143L112,33.959L117,0L121,48.327L125,26.122L130,62.694L134,9.143L138,32.653L143,11.755L147,10.449L151,13.061L156,61.388L160,60.082L164,33.959L169,23.51L173,3.918L177,43.102L182,24.816L186,33.959L190,40.49L195,45.714L199,7.837L203,58.776L208,37.878L212,33.959L216,31.347L220,32.653L225,56.163L229,10.449L233,50.939L238,13.061L242,1.306L246,5.224L251,26.122L255,40.49L259,40.49L264,33.959L268,3.918L272,16.98L277,62.694L281,54.857L285,57.469L290,10.449L294,26.122L298,10.449L303,49.633L307,20.898L311,18.286L316,14.367L320,0L324,35.265L329,14.367L333,56.163L337,44.408L342,15.673L346,40.49L350,37.878L355,14.367L359,1.306L363,23.51L367,37.878L372,54.857L376,1.306L380,18.286L385,52.245L389,60.082L393,50.939L398,31.347L402,23.51L406,13.061L411,39.184L415,41.796L419,31.347L424,5.224L428,31.347"
                 stroke-dasharray="2131.44116 2131.44116"
-                stroke-dashoffset="1.2090717374790356"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -2038,7 +2242,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="0"
-                      cy="13.089587887588054"
+                      cy="13.061224489795919"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2083,7 +2287,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="13"
-                      cy="13.0937237451989"
+                      cy="13.061224489795919"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2098,7 +2302,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="17"
-                      cy="41.81091081365426"
+                      cy="41.79591836734694"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2113,7 +2317,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="22"
-                      cy="35.28551502440836"
+                      cy="35.265306122448976"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2128,7 +2332,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="26"
-                      cy="48.338213370831234"
+                      cy="48.326530612244895"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2143,7 +2347,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="30"
-                      cy="7.8796496930877415"
+                      cy="7.836734693877553"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2158,7 +2362,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="35"
-                      cy="11.796895533944507"
+                      cy="11.755102040816325"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2173,7 +2377,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="39"
-                      cy="2.6635580985390876"
+                      cy="2.6122448979591866"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2188,7 +2392,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="43"
-                      cy="44.425564038636296"
+                      cy="44.40816326530612"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2203,7 +2407,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="48"
-                      cy="23.547389544492436"
+                      cy="23.51020408163265"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2218,7 +2422,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="52"
-                      cy="9.195411887039041"
+                      cy="9.142857142857146"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2233,7 +2437,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="56"
-                      cy="15.721958059131419"
+                      cy="15.673469387755105"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2263,7 +2467,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="65"
-                      cy="14.421832283579072"
+                      cy="14.367346938775512"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2278,7 +2482,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="69"
-                      cy="22.25259433546277"
+                      cy="22.204081632653065"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2293,7 +2497,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="73"
-                      cy="28.777595918874194"
+                      cy="28.734693877551024"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2308,7 +2512,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="78"
-                      cy="35.301976868451355"
+                      cy="35.265306122448976"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2323,7 +2527,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="82"
-                      cy="5.302330319981916"
+                      cy="5.224489795918366"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2338,7 +2542,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="86"
-                      cy="9.218889490467678"
+                      cy="9.142857142857146"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2353,7 +2557,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="91"
-                      cy="17.047849009792223"
+                      cy="16.97959183673469"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2368,7 +2572,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="95"
-                      cy="37.917512954809375"
+                      cy="37.87755102040816"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2383,7 +2587,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="99"
-                      cy="19.662395352972148"
+                      cy="19.591836734693878"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2398,7 +2602,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="104"
-                      cy="32.70536848660429"
+                      cy="32.6530612244898"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2413,7 +2617,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="108"
-                      cy="9.238012018608025"
+                      cy="9.142857142857146"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2428,7 +2632,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="112"
-                      cy="34.01404378452837"
+                      cy="33.95918367346938"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2443,7 +2647,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="117"
-                      cy="0.12127388070325068"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2458,7 +2662,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="121"
-                      cy="48.358253721580226"
+                      cy="48.326530612244895"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2473,7 +2677,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="125"
-                      cy="26.20131429302141"
+                      cy="26.122448979591837"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2503,7 +2707,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="134"
-                      cy="9.267297611370823"
+                      cy="9.142857142857146"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2518,7 +2722,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="138"
-                      cy="32.72786473650347"
+                      cy="32.6530612244898"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2533,7 +2737,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="143"
-                      cy="11.884728095780071"
+                      cy="11.755102040816325"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2548,7 +2752,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="147"
-                      cy="10.587872434066577"
+                      cy="10.448979591836732"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2563,7 +2767,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="151"
-                      cy="13.199417043260745"
+                      cy="13.061224489795919"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2593,7 +2797,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="160"
-                      cy="60.094458554889385"
+                      cy="60.08163265306123"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2608,7 +2812,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="164"
-                      cy="34.05287395041584"
+                      cy="33.95918367346938"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2623,7 +2827,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="169"
-                      cy="23.64172000317337"
+                      cy="23.51020408163265"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2638,7 +2842,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="173"
-                      cy="4.121654338207237"
+                      cy="3.9183673469387728"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2653,7 +2857,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="177"
-                      cy="43.17697094421941"
+                      cy="43.102040816326536"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2668,7 +2872,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="182"
-                      cy="24.961762435414798"
+                      cy="24.816326530612244"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2683,7 +2887,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="186"
-                      cy="34.0761291248486"
+                      cy="33.95918367346938"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2698,7 +2902,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="190"
-                      cy="40.5858444596089"
+                      cy="40.48979591836735"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2713,7 +2917,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="195"
-                      cy="45.7927785691113"
+                      cy="45.714285714285715"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2728,7 +2932,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="199"
-                      cy="8.084699379843638"
+                      cy="7.836734693877553"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2743,7 +2947,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="203"
-                      cy="58.801450709258035"
+                      cy="58.775510204081634"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2758,7 +2962,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="208"
-                      cy="38.00465472460347"
+                      cy="37.87755102040816"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2773,7 +2977,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="212"
-                      cy="34.11160859176506"
+                      cy="33.95918367346938"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2788,7 +2992,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="216"
-                      cy="31.5198774276669"
+                      cy="31.346938775510203"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2803,7 +3007,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="220"
-                      cy="32.82664727675687"
+                      cy="32.6530612244898"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2818,7 +3022,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="225"
-                      cy="56.21049392695128"
+                      cy="56.16326530612245"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2833,7 +3037,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="229"
-                      cy="10.770913118238036"
+                      cy="10.448979591836732"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2848,7 +3052,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="233"
-                      cy="51.02288711178247"
+                      cy="50.93877551020408"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2863,7 +3067,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="238"
-                      cy="13.395682771887826"
+                      cy="13.061224489795919"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2878,7 +3082,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="242"
-                      cy="1.7355164292615215"
+                      cy="1.3061224489795933"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2893,7 +3097,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="246"
-                      cy="5.6452592358367735"
+                      cy="5.224489795918366"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2908,7 +3112,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="251"
-                      cy="26.4068918419809"
+                      cy="26.122448979591837"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2923,7 +3127,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="255"
-                      cy="40.6755191814397"
+                      cy="40.48979591836735"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2938,7 +3142,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="259"
-                      cy="40.683807119342454"
+                      cy="40.48979591836735"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2953,7 +3157,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="264"
-                      cy="34.21711380919707"
+                      cy="33.95918367346938"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2968,7 +3172,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="268"
-                      cy="4.453354091886594"
+                      cy="3.9183673469387728"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2983,7 +3187,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="272"
-                      cy="17.41778565282981"
+                      cy="16.97959183673469"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2998,7 +3202,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="277"
-                      cy="62.71066858391966"
+                      cy="62.69387755102041"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3013,7 +3217,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="281"
-                      cy="54.95445474265237"
+                      cy="54.85714285714286"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3028,7 +3232,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="285"
-                      cy="57.54329294635927"
+                      cy="57.46938775510204"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3043,7 +3247,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="290"
-                      cy="11.047235714106694"
+                      cy="10.448979591836732"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3058,7 +3262,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="294"
-                      cy="26.565806874093706"
+                      cy="26.122448979591837"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3073,7 +3277,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="298"
-                      cy="11.101351806591762"
+                      cy="10.448979591836732"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3088,7 +3292,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="303"
-                      cy="49.819402286289794"
+                      cy="49.63265306122449"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3103,7 +3307,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="307"
-                      cy="21.471541670772833"
+                      cy="20.89795918367347"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3118,7 +3322,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="311"
-                      cy="18.920515076034018"
+                      cy="18.285714285714285"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3133,7 +3337,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="316"
-                      cy="15.086375049355649"
+                      cy="14.367346938775512"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3148,7 +3352,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="320"
-                      cy="0.966077838977963"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3163,7 +3367,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="324"
-                      cy="35.721817746497166"
+                      cy="35.265306122448976"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3178,7 +3382,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="329"
-                      cy="15.185358632422007"
+                      cy="14.367346938775512"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3193,7 +3397,7 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="333"
-                      cy="56.304244157193594"
+                      cy="56.16326530612245"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3208,9 +3412,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="337"
-                      cy="44.76458237354928"
+                      cy="44.40816326530612"
                       r="4"
-                      opacity="0.9898213479453128"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3223,9 +3427,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="342"
-                      cy="16.579401127455714"
+                      cy="15.673469387755105"
                       r="4"
-                      opacity="0.9893666072992628"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3238,9 +3442,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="346"
-                      cy="40.95401772619447"
+                      cy="40.48979591836735"
                       r="4"
-                      opacity="0.9888919934306497"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3253,9 +3457,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="350"
-                      cy="38.41488074876477"
+                      cy="37.87755102040816"
                       r="4"
-                      opacity="0.9883966638839065"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3268,9 +3472,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="355"
-                      cy="15.424626711816561"
+                      cy="14.367346938775512"
                       r="4"
-                      opacity="0.987879742057469"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3283,9 +3487,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="359"
-                      cy="2.6972539959202213"
+                      cy="1.3061224489795933"
                       r="4"
-                      opacity="0.9873403159169538"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3298,9 +3502,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="363"
-                      cy="24.451133200117955"
+                      cy="23.51020408163265"
                       r="4"
-                      opacity="0.9867774366661445"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3312,10 +3516,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="367.0101852415162"
-                      cy="38.51454766806583"
-                      r="4.010185241516194"
-                      opacity="0.9861901173748405"
+                      cx="367"
+                      cy="37.87755102040816"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3327,10 +3531,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="372.01061218800476"
-                      cy="55.09664516118996"
-                      r="4.010612188004769"
-                      opacity="0.9855773315626392"
+                      cx="372"
+                      cy="54.85714285714286"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3342,10 +3546,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="376.0110561403202"
-                      cy="2.954625344508405"
-                      r="4.01105614032017"
-                      opacity="0.98493801173774"
+                      cx="376"
+                      cy="1.3061224489795933"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3357,10 +3561,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="380.0115177199521"
-                      cy="19.54279415708313"
-                      r="4.0115177199521215"
-                      opacity="0.9842710478898811"
+                      cx="380"
+                      cy="18.285714285714285"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3372,10 +3576,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="385.0119975674156"
-                      cy="52.59100234561867"
-                      r="4.011997567415623"
-                      opacity="0.9835752859365451"
+                      cx="385"
+                      cy="52.244897959183675"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3387,10 +3591,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="389.0124963425681"
-                      cy="60.21029611313401"
-                      r="4.01249634256811"
-                      opacity="0.9828495261216061"
+                      cx="389"
+                      cy="60.08163265306123"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3402,10 +3606,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="393.0130147249091"
-                      cy="51.35567207731421"
-                      r="4.013014724909137"
-                      opacity="0.9820925213656235"
+                      cx="393"
+                      cy="50.93877551020408"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3417,10 +3621,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="398.01355341385994"
-                      cy="32.41356772546485"
-                      r="4.013553413859935"
-                      opacity="0.9813029755670346"
+                      cx="398"
+                      cy="31.346938775510203"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3433,9 +3637,9 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="402"
-                      cy="24.886134291025357"
+                      cy="23.51020408163265"
                       r="4"
-                      opacity="0.9804795418535481"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3447,10 +3651,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="406.01469461039767"
-                      cy="14.862534995663069"
-                      r="4.014694610397683"
-                      opacity="0.9796208207830978"
+                      cx="406"
+                      cy="13.061224489795919"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3462,10 +3666,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="411.0152986186112"
-                      cy="40.10658605336229"
-                      r="4.015298618611215"
-                      opacity="0.9787253584937788"
+                      cx="411"
+                      cy="39.183673469387756"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3477,10 +3681,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="415.01592593505694"
-                      cy="42.65858119622169"
-                      r="4.015925935056931"
-                      opacity="0.9777916448022681"
+                      cx="415"
+                      cy="41.79591836734694"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3492,10 +3696,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="419.0165773620404"
-                      cy="32.661777387838754"
-                      r="4.01657736204038"
-                      opacity="0.976818111250305"
+                      cx="419"
+                      cy="31.346938775510203"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3507,10 +3711,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="424.01725372286637"
-                      cy="7.678023315727788"
-                      r="4.017253722866344"
-                      opacity="0.9758031290989098"
+                      cx="424"
+                      cy="5.224489795918366"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -3522,10 +3726,10 @@ exports[`Utils/Brush DefaultSelection smoke-test 1`] = `
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
-                      cx="428.0179558618831"
-                      cy="32.775861318633744"
-                      r="4.0179558618831"
-                      opacity="0.9747450072701115"
+                      cx="428"
+                      cy="31.346938775510203"
+                      r="4"
+                      opacity="1"
                       style="cursor: pointer;"
               >
               </circle>
@@ -4002,7 +4206,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
                 fill="none"
                 d="M0,13.061L5,57.469L9,48.327L14,13.061L18,41.796L23,35.265L27,48.327L32,7.837L36,11.755L41,2.612L45,44.408L50,23.51L55,9.143L59,15.673L64,58.776L68,14.367L73,22.204L77,28.735L82,35.265L86,5.224L91,9.143L95,16.98L100,37.878L105,19.592L109,32.653L114,9.143L118,33.959L123,0L127,48.327L132,26.122L136,62.694L141,9.143L145,32.653L150,11.755L155,10.449L159,13.061L164,61.388L168,60.082L173,33.959L177,23.51L182,3.918L186,43.102L191,24.816L195,33.959L200,40.49L205,45.714L209,7.837L214,58.776L218,37.878L223,33.959L227,31.347L232,32.653L236,56.163L241,10.449L245,50.939L250,13.061L255,1.306L259,5.224L264,26.122L268,40.49L273,40.49L277,33.959L282,3.918L286,16.98L291,62.694L295,54.857L300,57.469L305,10.449L309,26.122L314,10.449L318,49.633L323,20.898L327,18.286L332,14.367L336,0L341,35.265L345,14.367L350,56.163L355,44.408L359,15.673L364,40.49L368,37.878L373,14.367L377,1.306L382,23.51L386,37.878L391,54.857L395,1.306L400,18.286L405,52.245L409,60.082L414,50.939L418,31.347L423,23.51L427,13.061L432,39.184L436,41.796L441,31.347L445,5.224L450,31.347"
                 stroke-dasharray="2139.66235 2139.66235"
-                stroke-dashoffset="0.022354199185091465"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -4959,7 +5163,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="282"
-                      cy="3.9291371706206566"
+                      cy="3.9183673469387728"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5034,7 +5238,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="305"
-                      cy="10.46117327796652"
+                      cy="10.448979591836732"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5064,7 +5268,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="314"
-                      cy="10.46234207977452"
+                      cy="10.448979591836732"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5094,7 +5298,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="323"
-                      cy="20.909768604214815"
+                      cy="20.89795918367347"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5109,7 +5313,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="327"
-                      cy="18.298817276130567"
+                      cy="18.285714285714285"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5124,7 +5328,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="332"
-                      cy="14.382226387560285"
+                      cy="14.367346938775512"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5139,7 +5343,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="336"
-                      cy="0.02004203905439393"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5169,7 +5373,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="345"
-                      cy="14.384410074236833"
+                      cy="14.367346938775512"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5214,7 +5418,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="359"
-                      cy="15.692523146329393"
+                      cy="15.673469387755105"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5244,7 +5448,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="368"
-                      cy="37.888921936687645"
+                      cy="37.87755102040816"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5259,7 +5463,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="373"
-                      cy="14.389774168152414"
+                      cy="14.367346938775512"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5274,7 +5478,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="377"
-                      cy="1.3357139281371233"
+                      cy="1.3061224489795933"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5289,7 +5493,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="382"
-                      cy="23.530283246715978"
+                      cy="23.51020408163265"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5304,7 +5508,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="386"
-                      cy="37.89119039563293"
+                      cy="37.87755102040816"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5334,7 +5538,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="395"
-                      cy="1.3416121040604163"
+                      cy="1.3061224489795933"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5349,7 +5553,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="400"
-                      cy="18.312865997515654"
+                      cy="18.285714285714285"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5409,7 +5613,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="418"
-                      cy="31.3704920493974"
+                      cy="31.346938775510203"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5424,7 +5628,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="423"
-                      cy="23.540681801383357"
+                      cy="23.51020408163265"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5439,7 +5643,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="427"
-                      cy="13.101251298607588"
+                      cy="13.061224489795919"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5454,7 +5658,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="432"
-                      cy="39.20426486506314"
+                      cy="39.183673469387756"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5469,7 +5673,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="436"
-                      cy="41.81523466399357"
+                      cy="41.79591836734694"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5484,7 +5688,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="441"
-                      cy="31.376468157366524"
+                      cy="31.346938775510203"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5499,7 +5703,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="445"
-                      cy="5.2797607388198395"
+                      cy="5.224489795918366"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5514,7 +5718,7 @@ exports[`Utils/Brush Line smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="450"
-                      cy="31.37925832053452"
+                      cy="31.346938775510203"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -5972,7 +6176,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="0"
-                    cy="9.207891697014047"
+                    cy="9.183673469387756"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6017,7 +6221,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="14"
-                    cy="9.211667500113283"
+                    cy="9.183673469387756"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6032,7 +6236,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="18"
-                    cy="29.400728234863443"
+                    cy="29.38775510204082"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6047,7 +6251,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="23"
-                    cy="24.813371040824194"
+                    cy="24.795918367346935"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6062,7 +6266,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="27"
-                    cy="33.98973295561095"
+                    cy="33.97959183673469"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6077,7 +6281,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="32"
-                    cy="5.547142459998387"
+                    cy="5.510204081632654"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6092,7 +6296,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="36"
-                    cy="8.301284382723779"
+                    cy="8.26530612244898"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6107,7 +6311,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="41"
-                    cy="1.8808800570189916"
+                    cy="1.836734693877553"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6122,7 +6326,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="45"
-                    cy="31.239553574404784"
+                    cy="31.224489795918366"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6137,7 +6341,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="50"
-                    cy="16.5626463676515"
+                    cy="16.53061224489796"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6152,7 +6356,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="55"
-                    cy="6.47378674274208"
+                    cy="6.428571428571431"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6167,7 +6371,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="59"
-                    cy="11.062139724043217"
+                    cy="11.020408163265309"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6197,7 +6401,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="68"
-                    cy="10.14891829924617"
+                    cy="10.102040816326532"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6212,7 +6416,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="73"
-                    cy="15.653633585766121"
+                    cy="15.612244897959187"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6227,7 +6431,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="77"
-                    cy="20.240709325583655"
+                    cy="20.204081632653065"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6242,7 +6446,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="82"
-                    cy="24.827259385107475"
+                    cy="24.795918367346935"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6257,7 +6461,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="86"
-                    cy="3.739772784783315"
+                    cy="3.6734693877551012"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6272,7 +6476,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="91"
-                    cy="6.493341964391076"
+                    cy="6.428571428571431"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6287,7 +6491,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="95"
-                    cy="11.996948493766393"
+                    cy="11.93877551020408"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6302,7 +6506,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="100"
-                    cy="26.666812817741782"
+                    cy="26.632653061224488"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6317,7 +6521,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="105"
-                    cy="13.835644609790492"
+                    cy="13.775510204081632"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6332,7 +6536,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="109"
-                    cy="23.003834232205275"
+                    cy="22.95918367346939"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6347,7 +6551,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="114"
-                    cy="6.509585463975302"
+                    cy="6.428571428571431"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6362,7 +6566,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="118"
-                    cy="23.924381277640844"
+                    cy="23.87755102040816"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6377,7 +6581,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="123"
-                    cy="0.10317746425140309"
+                    cy="0"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6392,7 +6596,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="127"
-                    cy="34.00681221371965"
+                    cy="33.97959183673469"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6407,7 +6611,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="132"
-                    cy="18.434559996007607"
+                    cy="18.367346938775512"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6437,7 +6641,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="141"
-                    cy="6.534441476857301"
+                    cy="6.428571428571431"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6452,7 +6656,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="145"
-                    cy="23.02297432355966"
+                    cy="22.95918367346939"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6467,7 +6671,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="150"
-                    cy="8.37557819870799"
+                    cy="8.26530612244898"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6482,7 +6686,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="155"
-                    cy="7.465068678287406"
+                    cy="7.3469387755102025"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6497,7 +6701,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="159"
-                    cy="9.302260901468184"
+                    cy="9.183673469387756"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6527,7 +6731,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="168"
-                    cy="42.25632836812929"
+                    cy="42.244897959183675"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6542,7 +6746,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="173"
-                    cy="23.958114064480903"
+                    cy="23.87755102040816"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6557,7 +6761,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="177"
-                    cy="16.64351006892384"
+                    cy="16.53061224489796"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6572,7 +6776,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="182"
-                    cy="2.929330636105939"
+                    cy="2.7551020408163245"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6587,7 +6791,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="186"
-                    cy="30.370691987667904"
+                    cy="30.306122448979597"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6602,7 +6806,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="191"
-                    cy="17.57379001695934"
+                    cy="17.448979591836736"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6617,7 +6821,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="195"
-                    cy="23.97803600560507"
+                    cy="23.87755102040816"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6632,7 +6836,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="200"
-                    cy="28.552039880799928"
+                    cy="28.46938775510204"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6647,7 +6851,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="205"
-                    cy="32.21053554295091"
+                    cy="32.142857142857146"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6662,7 +6866,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="209"
-                    cy="5.72257647564887"
+                    cy="5.510204081632654"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6677,7 +6881,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="214"
-                    cy="41.34939180278428"
+                    cy="41.3265306122449"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6692,7 +6896,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="218"
-                    cy="26.74187687679575"
+                    cy="26.632653061224488"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6707,7 +6911,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="223"
-                    cy="24.008396846340787"
+                    cy="23.87755102040816"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6722,7 +6926,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="227"
-                    cy="22.189176973638016"
+                    cy="22.04081632653061"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6737,7 +6941,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="232"
-                    cy="23.108108548571415"
+                    cy="22.95918367346939"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6752,7 +6956,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="236"
-                    cy="39.53096766806167"
+                    cy="39.48979591836735"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6767,7 +6971,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="241"
-                    cy="7.622391111106052"
+                    cy="7.3469387755102025"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6782,7 +6986,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="245"
-                    cy="35.88901028322237"
+                    cy="35.816326530612244"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6797,7 +7001,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="250"
-                    cy="9.469792633160019"
+                    cy="9.183673469387756"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6812,7 +7016,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="255"
-                    cy="1.2853945336171089"
+                    cy="0.9183673469387765"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6827,7 +7031,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="259"
-                    cy="4.033129442509172"
+                    cy="3.6734693877551012"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6842,7 +7046,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="264"
-                    cy="18.610842317022023"
+                    cy="18.367346938775512"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6857,7 +7061,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="268"
-                    cy="28.628796359455393"
+                    cy="28.46938775510204"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6872,7 +7076,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="273"
-                    cy="28.635878478019215"
+                    cy="28.46938775510204"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6887,7 +7091,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="277"
-                    cy="24.09849457413178"
+                    cy="23.87755102040816"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6902,7 +7106,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="282"
-                    cy="3.211939587953592"
+                    cy="2.7551020408163245"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6917,7 +7121,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="286"
-                    cy="12.313194838369691"
+                    cy="11.93877551020408"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6932,7 +7136,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="291"
-                    cy="44.09740739055231"
+                    cy="44.08163265306122"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6947,7 +7151,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="295"
-                    cy="38.655062792131346"
+                    cy="38.57142857142858"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6962,7 +7166,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="300"
-                    cy="40.47210818767096"
+                    cy="40.40816326530612"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6977,7 +7181,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="305"
-                    cy="7.853077188656788"
+                    cy="7.3469387755102025"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -6992,7 +7196,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="309"
-                    cy="18.74287436365033"
+                    cy="18.367346938775512"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -7007,7 +7211,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="314"
-                    cy="7.8986423742426455"
+                    cy="7.3469387755102025"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -7022,7 +7226,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="318"
-                    cy="35.05724549611112"
+                    cy="34.89795918367347"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -7037,7 +7241,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="323"
-                    cy="15.179137918943486"
+                    cy="14.69387755102041"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -7052,7 +7256,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="327"
-                    cy="13.393958350380645"
+                    cy="12.857142857142856"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -7067,7 +7271,7 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="332"
-                    cy="10.70977046207275"
+                    cy="10.102040816326532"
                     r="4"
                     opacity="1"
                     style="cursor: pointer;"
@@ -7082,9 +7286,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="336"
-                    cy="0.8157165673155538"
+                    cy="0"
                     r="4"
-                    opacity="0.9896417839393262"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7097,9 +7301,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="341"
-                    cy="25.18590070011346"
+                    cy="24.795918367346935"
                     r="4"
-                    opacity="0.989179192965865"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7112,9 +7316,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="345"
-                    cy="10.798907353777544"
+                    cy="10.102040816326532"
                     r="4"
-                    opacity="0.9886963958045036"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7127,9 +7331,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="350"
-                    cy="39.61201644983323"
+                    cy="39.48979591836735"
                     r="4"
-                    opacity="0.9881925364930343"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7142,9 +7346,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="355"
-                    cy="31.52959018875113"
+                    cy="31.224489795918366"
                     r="4"
-                    opacity="0.987666724413525"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7157,9 +7361,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="359"
-                    cy="11.791697586468505"
+                    cy="11.020408163265309"
                     r="4"
-                    opacity="0.9871180329887356"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7172,9 +7376,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="364"
-                    cy="28.866000334033295"
+                    cy="28.46938775510204"
                     r="4"
-                    opacity="0.9865454983359611"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7186,10 +7390,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="368.01035401840613"
-                    cy="27.091278721996122"
-                    r="4.010354018406153"
-                    opacity="0.9859481178773649"
+                    cx="368"
+                    cy="26.632653061224488"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7201,10 +7405,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="373.01078769385066"
-                    cy="11.001429833759921"
-                    r="4.010787693850646"
-                    opacity="0.9853248489058776"
+                    cx="373"
+                    cy="10.102040816326532"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7216,10 +7420,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="377.0112386214558"
-                    cy="2.1005910907626237"
-                    r="4.011238621455776"
-                    opacity="0.9846746071057597"
+                    cx="377"
+                    cy="0.9183673469387765"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7231,10 +7435,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="382.0117074302823"
-                    cy="17.331239583980604"
-                    r="4.0117074302823"
-                    opacity="0.9839962650269475"
+                    cx="382"
+                    cy="16.53061224489796"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7246,10 +7450,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="386.01219476854504"
-                    cy="27.175776528329724"
-                    r="4.012194768545054"
-                    opacity="0.9832886505123332"
+                    cx="386"
+                    cy="26.632653061224488"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7261,10 +7465,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="391.01270130392345"
-                    cy="38.777956182220834"
-                    r="4.012701303923426"
-                    opacity="0.9825505450771629"
+                    cx="391"
+                    cy="38.57142857142858"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7276,10 +7480,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="395.01322772385333"
-                    cy="2.31783200722544"
-                    r="4.013227723853312"
-                    opacity="0.9817806822397777"
+                    cx="395"
+                    cy="0.9183673469387765"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7291,10 +7495,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="400.0137747357978"
-                    cy="13.925106557061968"
-                    r="4.013774735797851"
-                    opacity="0.9809777458029675"
+                    cx="400"
+                    cy="12.857142857142856"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7307,9 +7511,9 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
             <circle class
                     fill="#2d60e8"
                     cx="405"
-                    cy="37.03173272587215"
+                    cy="36.734693877551024"
                     r="4"
-                    opacity="0.9801403680852612"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7321,10 +7525,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="409.0149334671716"
-                    cy="42.35809582991571"
-                    r="4.014933467171619"
-                    opacity="0.9792671281015394"
+                    cx="409"
+                    cy="42.244897959183675"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7336,10 +7540,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="414.0155467037421"
-                    cy="36.17341546542248"
-                    r="4.015546703742065"
-                    opacity="0.9783565496924195"
+                    cx="414"
+                    cy="35.816326530612244"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7351,10 +7555,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="418.0161835669518"
-                    cy="22.947275929575927"
-                    r="4.016183566951797"
-                    opacity="0.9774070996019463"
+                    cx="418"
+                    cy="22.04081632653061"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7366,10 +7570,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="423.0168448674977"
-                    cy="17.698408467137416"
-                    r="4.0168448674977135"
-                    opacity="0.9764171855032009"
+                    cx="423"
+                    cy="16.53061224489796"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7381,10 +7585,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="427.0175314370994"
-                    cy="10.710729945046232"
-                    r="4.017531437099404"
-                    opacity="0.9753851539715439"
+                    cx="427"
+                    cy="9.183673469387756"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7396,10 +7600,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="432.01824412852375"
-                    cy="28.335882665284537"
-                    r="4.018244128523764"
-                    opacity="0.9743092884053111"
+                    cx="432"
+                    cy="27.551020408163264"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7411,10 +7615,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="436.01898381555685"
-                    cy="30.12171742019305"
-                    r="4.018983815556872"
-                    opacity="0.9731878068939017"
+                    cx="436"
+                    cy="29.38775510204082"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7426,10 +7630,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="441.01975139291767"
-                    cy="23.15646770913919"
-                    r="4.019751392917648"
-                    opacity="0.9720188600333319"
+                    cx="441"
+                    cy="22.04081632653061"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7441,10 +7645,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="445.02054777610743"
-                    cy="5.749898307155082"
-                    r="4.020547776107412"
-                    opacity="0.9708005286894679"
+                    cx="445"
+                    cy="3.6734693877551012"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -7456,10 +7660,10 @@ exports[`Utils/Brush Scatter smoke-test 1`] = `
           >
             <circle class
                     fill="#2d60e8"
-                    cx="450.021373901189"
-                    cy="23.252465011691523"
-                    r="4.021373901188985"
-                    opacity="0.969530821709319"
+                    cx="450"
+                    cy="22.04081632653061"
+                    r="4"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -8675,7 +8879,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="82"
-                          cy="32.788132882065874"
+                          cy="32.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8690,7 +8894,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="326"
-                          cy="263.5878126708039"
+                          cy="263.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8705,7 +8909,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="163"
-                          cy="347.51059563155155"
+                          cy="347.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8720,7 +8924,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="245"
-                          cy="137.72364124131653"
+                          cy="137.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8735,7 +8939,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="245"
-                          cy="32.845137900437436"
+                          cy="32.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8750,7 +8954,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="0"
-                          cy="347.51212976734234"
+                          cy="347.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8765,7 +8969,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="326"
-                          cy="32.877685201129275"
+                          cy="32.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8780,7 +8984,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="408"
-                          cy="137.76780932620264"
+                          cy="137.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8795,7 +8999,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="408"
-                          cy="137.78013499545344"
+                          cy="137.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8810,7 +9014,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="571"
-                          cy="347.51465230430614"
+                          cy="347.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8825,7 +9029,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="571"
-                          cy="137.80925762458298"
+                          cy="137.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8840,7 +9044,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="571"
-                          cy="137.82346457457987"
+                          cy="137.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8855,7 +9059,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="571"
-                          cy="347.51676468927354"
+                          cy="347.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -8870,7 +9074,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                   <circle class
                           fill="#2d60e8"
                           cx="652"
-                          cy="33.02199132827774"
+                          cy="32.5"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -9133,7 +9337,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="79"
-                        cy="14.512747882455246"
+                        cy="14.5"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9148,7 +9352,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="79"
-                        cy="14.513336905291162"
+                        cy="14.5"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9163,7 +9367,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="315"
-                        cy="14.51395281713882"
+                        cy="14.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9178,7 +9382,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="158"
-                        cy="14.514596826877204"
+                        cy="14.5"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9193,7 +9397,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="236"
-                        cy="14.515270196662565"
+                        cy="14.5"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9208,7 +9412,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="236"
-                        cy="14.515974244213796"
+                        cy="14.5"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9223,7 +9427,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="0"
-                        cy="14.516710345192067"
+                        cy="14.5"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9238,7 +9442,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="315"
-                        cy="14.517479935678447"
+                        cy="14.5"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9253,7 +9457,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="394"
-                        cy="14.51828451475325"
+                        cy="14.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9268,7 +9472,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="394"
-                        cy="14.51912564718105"
+                        cy="14.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9283,7 +9487,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="551"
-                        cy="14.520004966205432"
+                        cy="14.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9298,7 +9502,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="551"
-                        cy="14.520924176457628"
+                        cy="14.5"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9313,7 +9517,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="551"
-                        cy="14.522082395501487"
+                        cy="14.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9328,7 +9532,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="551"
-                        cy="14.523095738135622"
+                        cy="14.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -9343,7 +9547,7 @@ exports[`Utils/Brush ZoomCombo smoke-test 1`] = `
                 <circle class
                         fill="#2d60e8"
                         cx="630"
-                        cy="14.524154942593206"
+                        cy="14.5"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"

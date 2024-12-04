@@ -2,6 +2,7 @@ import { BarList } from './BarList';
 import { BarListSeries } from './BarListSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar List',
   component: BarList
 };
@@ -109,7 +110,7 @@ export const PercentageFormat = () => (
           outerBarClassName="outer"
         />
       }
-      type='percent'
+      type="percent"
     />
   </>
 );

@@ -12,6 +12,7 @@ import {
 } from './AreaSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Gridlines',
   component: AreaChart,
   subcomponents: {

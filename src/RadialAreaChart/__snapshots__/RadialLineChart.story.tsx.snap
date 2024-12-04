@@ -251,7 +251,7 @@ exports[`Charts/Line Chart/Radial CategoricalData smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-87.4545px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-87.5px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -264,7 +264,7 @@ exports[`Charts/Line Chart/Radial CategoricalData smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(151.472px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(151.554px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -277,7 +277,7 @@ exports[`Charts/Line Chart/Radial CategoricalData smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(123.674px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(123.744px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -290,7 +290,7 @@ exports[`Charts/Line Chart/Radial CategoricalData smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-174.896px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-175px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -579,7 +579,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-123.678px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -592,7 +592,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(72.1141px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(72.154px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -605,7 +605,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(58.0075px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(58.041px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -618,7 +618,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-130.292px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-130.372px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -631,7 +631,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-103.476px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-103.531px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -644,7 +644,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(141.012px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(141.09px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -657,7 +657,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(129.708px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(129.783px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -670,7 +670,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-132.619px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-132.7px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -683,7 +683,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-123.678px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -696,7 +696,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(135.479px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -709,7 +709,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(151.466px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(151.554px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -722,7 +722,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-130.878px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-130.958px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -735,7 +735,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-141.015px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-141.09px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -748,7 +748,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(135.479px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -761,7 +761,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(174.898px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(175px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -774,7 +774,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-156.429px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-156.525px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1529,7 +1529,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-148.402px) translateY(-4.759px); transform-origin: 0px 0px;"
+             style="transform: translateX(-148.416px) translateY(-4.759px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1542,7 +1542,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-122.146px) translateY(-19.749px); transform-origin: 0px 0px;"
+             style="transform: translateX(-122.158px) translateY(-19.749px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1555,7 +1555,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-138.33px) translateY(-41.06px); transform-origin: 0px 0px;"
+             style="transform: translateX(-138.344px) translateY(-41.06px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1568,7 +1568,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-146.647px) translateY(-64.923px); transform-origin: 0px 0px;"
+             style="transform: translateX(-146.663px) translateY(-64.923px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1581,7 +1581,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-130.447px) translateY(-79.087px); transform-origin: 0px 0px;"
+             style="transform: translateX(-130.462px) translateY(-79.087px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -1594,7 +1594,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-92.7848px) translateY(-74.003px); transform-origin: 0px 0px;"
+             style="transform: translateX(-92.796px) translateY(-74.003px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -1620,7 +1620,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-59.21px) translateY(-79.3255px); transform-origin: 0px 0px;"
+             style="transform: translateX(-59.21px) translateY(-79.336px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -1633,7 +1633,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-61.926px) translateY(-109.94px); transform-origin: 0px 0px;"
+             style="transform: translateX(-61.926px) translateY(-109.955px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1646,7 +1646,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-62.302px) translateY(-153.864px); transform-origin: 0px 0px;"
+             style="transform: translateX(-62.302px) translateY(-153.886px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1659,7 +1659,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-39.204px) translateY(-149.478px); transform-origin: 0px 0px;"
+             style="transform: translateX(-39.204px) translateY(-149.501px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1672,7 +1672,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-19.509px) translateY(-151.285px); transform-origin: 0px 0px;"
+             style="transform: translateX(-19.509px) translateY(-151.309px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1685,7 +1685,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-102.025px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-102.042px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"

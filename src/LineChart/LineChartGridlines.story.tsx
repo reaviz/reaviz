@@ -4,6 +4,7 @@ import { LineChart } from './LineChart';
 import { GridlineSeries, Gridline } from '@/common/Gridline';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Gridlines',
   component: LineChart
 };

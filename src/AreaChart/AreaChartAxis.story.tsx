@@ -21,6 +21,7 @@ import {
 import { getYScale, getXScale } from '@/common/scales';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Axis',
   component: AreaChart,
   subcomponents: {
@@ -30,8 +31,7 @@ export default {
     PointSeries,
     StackedAreaSeries,
     StackedNormalizedAreaSeries
-  },
-  tags: ['test-only']
+  }
 };
 
 export const TopBottomAxis = () => {

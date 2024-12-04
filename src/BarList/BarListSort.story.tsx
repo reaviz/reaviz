@@ -2,6 +2,7 @@ import React from 'react';
 import { BarList } from './BarList';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar List/Sort',
   component: BarList
 };

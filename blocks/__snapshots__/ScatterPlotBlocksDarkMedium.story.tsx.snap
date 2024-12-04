@@ -3176,7 +3176,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="75"
-                    cy="19.054867153485322"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3191,7 +3191,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="300"
-                    cy="147.01591531407954"
+                    cy="147"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3221,7 +3221,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="225"
-                    cy="83.04046411779623"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3236,7 +3236,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="225"
-                    cy="19.06645419677751"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3266,7 +3266,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="300"
-                    cy="19.072793717405315"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3281,7 +3281,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="375"
-                    cy="83.04855252154908"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3296,7 +3296,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="375"
-                    cy="83.05081308927237"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3326,7 +3326,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="525"
-                    cy="83.05565148135112"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3341,7 +3341,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="525"
-                    cy="83.05823899717468"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -3371,7 +3371,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="600"
-                    cy="19.100073166460135"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -5260,7 +5260,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#4C86FF"
                     cx="600"
-                    cy="23.413015852109336"
+                    cy="23.399999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(76, 134, 255) 0px 12px 12px); cursor: pointer;"
@@ -5835,7 +5835,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(0px) translateY(0.671051px); transform-origin: 0.4px -4px;"
+               style="transform: none; transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"
@@ -5854,7 +5854,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(200px) translateY(195.118px); transform-origin: 0.4px -4px;"
+               style="transform: translateX(200px) translateY(195px); transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"
@@ -5873,7 +5873,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(450px) translateY(52.5708px); transform-origin: 0.4px -4px;"
+               style="transform: translateX(450px) translateY(52px); transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"
@@ -5892,7 +5892,7 @@ exports[`Blocks/Scatter Plot/Dark/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(600px) translateY(0.766738px); transform-origin: 0.4px -4px;"
+               style="transform: translateX(600px) translateY(0px); transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"

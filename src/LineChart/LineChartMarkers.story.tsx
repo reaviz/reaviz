@@ -6,6 +6,7 @@ import { LineChart } from './LineChart';
 import { LineSeries } from './LineSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Markers',
   component: LineChart,
   subcomponents: {

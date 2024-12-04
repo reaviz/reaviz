@@ -520,11 +520,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Autosize smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="84.20620691288586px"
+                  height="84.25px"
                   width="135px"
                   fill="url(#gradient-bar-series-ref-75-bar-undefined-0)"
                   x="16"
-                  y="252.7942679770718"
+                  y="252.75"
                   style="cursor: auto;"
             >
             </rect>
@@ -555,11 +555,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Autosize smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="252.3423103801247px"
+                  height="252.75px"
                   width="135px"
                   fill="url(#gradient-bar-series-ref-75-bar-undefined-1)"
                   x="166"
-                  y="84.6591389164309"
+                  y="84.25"
                   style="cursor: auto;"
             >
             </rect>
@@ -590,11 +590,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Autosize smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="167.67429476652364px"
+                  height="168.5px"
                   width="135px"
                   fill="url(#gradient-bar-series-ref-75-bar-undefined-2)"
                   x="316"
-                  y="169.33003697348718"
+                  y="168.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -625,11 +625,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Autosize smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="332.08208073906457px"
+                  height="337px"
                   width="135px"
                   fill="url(#gradient-bar-series-ref-75-bar-undefined-3)"
                   x="466"
-                  y="4.9305017308804855"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -1036,11 +1036,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomBarWidth smoke-test 1`] =
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.98042284288784px"
+                height="43px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-58-bar-undefined-0)"
                 x="41.5"
-                y="129.03195973751164"
+                y="129"
                 style="cursor: auto;"
           >
           </rect>
@@ -1071,11 +1071,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomBarWidth smoke-test 1`] =
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.8168079148112px"
+                height="129px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-58-bar-undefined-1)"
                 x="121.5"
-                y="43.221523769780774"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -1106,11 +1106,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomBarWidth smoke-test 1`] =
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.62849922679428px"
+                height="86px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-58-bar-undefined-2)"
                 x="201.5"
-                y="86.48823151299767"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -1141,11 +1141,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomBarWidth smoke-test 1`] =
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.77819655013215px"
+                height="172px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-58-bar-undefined-3)"
                 x="281.5"
-                y="2.547587029558434"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -1551,11 +1551,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomColors smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.973816862181955px"
+                height="43px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-38-bar-undefined-0)"
                 x="8"
-                y="129.04274184043857"
+                y="129"
                 style="cursor: auto;"
           >
           </rect>
@@ -1586,11 +1586,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomColors smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.75372787351097px"
+                height="129px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-38-bar-undefined-1)"
                 x="88"
-                y="43.29779541358683"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -1621,11 +1621,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomColors smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.50309245799583px"
+                height="86px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-38-bar-undefined-2)"
                 x="168"
-                y="86.65301158806952"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -1656,11 +1656,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomColors smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.04843133409346px"
+                height="172px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-38-bar-undefined-3)"
                 x="248"
-                y="3.326894908787951"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -2066,11 +2066,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomStyle smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.982126294188106px"
+                height="43px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-0)"
                 x="8"
-                y="129.02917929638298"
+                y="129"
                 style="fill: blue; cursor: auto;"
           >
           </rect>
@@ -2101,11 +2101,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomStyle smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.8325570692668px"
+                height="129px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-1)"
                 x="88"
-                y="43.202480684056844"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -2136,11 +2136,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomStyle smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.65994161620584px"
+                height="86px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-2)"
                 x="168"
-                y="86.44691564605662"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -2171,11 +2171,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series CustomStyle smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.96225072846568px"
+                height="172px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-3)"
                 x="248"
-                y="2.296409557789259"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -2581,11 +2581,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.976731491196446px"
+                height="43px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-48-bar-undefined-0)"
                 x="8"
-                y="129.03798474305063"
+                y="129"
                 style="cursor: auto;"
           >
           </rect>
@@ -2612,7 +2612,7 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
            font-family="sans-serif"
            opacity="1"
            transform-origin="0px -4.5px"
-           style="transform: translateX(44px) translateY(124.041px); transform-origin: 0px -4.5px;"
+           style="transform: translateX(44px) translateY(124px); transform-origin: 0px -4.5px;"
         >
           <text fill="#000"
                 text-anchor="middle"
@@ -2628,11 +2628,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.78275076668922px"
+                height="129px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-48-bar-undefined-1)"
                 x="88"
-                y="43.2627034067501"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -2659,7 +2659,7 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
            font-family="sans-serif"
            opacity="1"
            transform-origin="0px -4.5px"
-           style="transform: translateX(124px) translateY(38.2712px); transform-origin: 0px -4.5px;"
+           style="transform: translateX(124px) translateY(38px); transform-origin: 0px -4.5px;"
         >
           <text fill="#000"
                 text-anchor="middle"
@@ -2675,11 +2675,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.56069264057618px"
+                height="86px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-48-bar-undefined-2)"
                 x="168"
-                y="86.57732823288688"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -2706,7 +2706,7 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
            font-family="sans-serif"
            opacity="1"
            transform-origin="0px -4.5px"
-           style="transform: translateX(204px) translateY(81.603px); transform-origin: 0px -4.5px;"
+           style="transform: translateX(204px) translateY(81px); transform-origin: 0px -4.5px;"
         >
           <text fill="#000"
                 text-anchor="middle"
@@ -2722,11 +2722,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.38280457565048px"
+                height="172px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-48-bar-undefined-3)"
                 x="248"
-                y="2.9752955635528706"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -2753,7 +2753,7 @@ exports[`Charts/Bar Chart/Vertical/Single Series Labels smoke-test 1`] = `
            font-family="sans-serif"
            opacity="1"
            transform-origin="0px -4.5px"
-           style="transform: translateX(284px) translateY(-1.94973px); transform-origin: 0px -4.5px;"
+           style="transform: translateX(284px) translateY(-5px); transform-origin: 0px -4.5px;"
         >
           <text fill="#000"
                 text-anchor="middle"
@@ -3792,11 +3792,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS0: 9"
                 role="graphics-document"
-                height="47.4142491144918px"
+                height="47.4375px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-0)"
                 x="11"
-                y="205.58620081691924"
+                y="205.5625"
                 style="cursor: auto;"
           >
           </rect>
@@ -3827,11 +3827,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS1: 26"
                 role="graphics-document"
-                height="136.96440962488361px"
+                height="137.04166666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-1)"
                 x="20"
-                y="116.03610392840507"
+                y="115.95833333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -3862,11 +3862,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP2: 8"
                 role="graphics-document"
-                height="42.13970488001692px"
+                height="42.16666666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-2)"
                 x="29"
-                y="210.86088116119083"
+                y="210.83333333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -3897,11 +3897,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack3: 17"
                 role="graphics-document"
-                height="89.5383299862103px"
+                height="89.60416666666669px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-3)"
                 x="38"
-                y="163.46233862135782"
+                y="163.39583333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -3932,11 +3932,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware4: 28"
                 role="graphics-document"
-                height="147.45921785550883px"
+                height="147.58333333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-4)"
                 x="47"
-                y="105.54154477088659"
+                y="105.41666666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -3967,11 +3967,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware5: 12"
                 role="graphics-document"
-                height="63.18949849029468px"
+                height="63.25px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-5)"
                 x="56"
-                y="189.81137116382828"
+                y="189.75"
                 style="cursor: auto;"
           >
           </rect>
@@ -4002,11 +4002,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP6: 22"
                 role="graphics-document"
-                height="115.83126633942014px"
+                height="115.95833333333331px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-6)"
                 x="65"
-                y="137.16972511348197"
+                y="137.04166666666669"
                 style="cursor: auto;"
           >
           </rect>
@@ -4037,11 +4037,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware7: 14"
                 role="graphics-document"
-                height="73.69956074039646px"
+                height="73.79166666666669px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-7)"
                 x="74"
-                y="179.30156927632333"
+                y="179.20833333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -4107,11 +4107,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS9: 34"
                 role="graphics-document"
-                height="178.91595206269722px"
+                height="179.20833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-9)"
                 x="92"
-                y="74.08551469072376"
+                y="73.79166666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -4142,11 +4142,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack10: 34"
                 role="graphics-document"
-                height="178.87477303840387px"
+                height="179.20833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-10)"
                 x="101"
-                y="74.1268973156958"
+                y="73.79166666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -4177,11 +4177,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware11: 23"
                 role="graphics-document"
-                height="120.97211200059164px"
+                height="121.22916666666669px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-11)"
                 x="110"
-                y="132.02978965194615"
+                y="131.77083333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -4212,11 +4212,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack12: 48"
                 role="graphics-document"
-                height="252.38710033152776px"
+                height="253px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-12)"
                 x="119"
-                y="0.6150639832012359"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -4247,11 +4247,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware13: 12"
                 role="graphics-document"
-                height="63.07624705415008px"
+                height="63.25px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-13)"
                 x="128"
-                y="189.92621541891972"
+                y="189.75"
                 style="cursor: auto;"
           >
           </rect>
@@ -4282,11 +4282,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP14: 31"
                 role="graphics-document"
-                height="162.88204181875238px"
+                height="163.39583333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-14)"
                 x="137"
-                y="90.12075896337626"
+                y="89.60416666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -4317,11 +4317,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS15: 43"
                 role="graphics-document"
-                height="225.83319323623425px"
+                height="226.64583333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-15)"
                 x="146"
-                y="27.169991244146008"
+                y="26.354166666666657"
                 style="cursor: auto;"
           >
           </rect>
@@ -4352,11 +4352,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS16: 32"
                 role="graphics-document"
-                height="167.97215078175358px"
+                height="168.66666666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-16)"
                 x="155"
-                y="85.03150027833937"
+                y="84.33333333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -4387,11 +4387,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS17: 45"
                 role="graphics-document"
-                height="236.07450412451033px"
+                height="237.1875px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-17)"
                 x="164"
-                y="16.92964400826579"
+                y="15.8125"
                 style="cursor: auto;"
           >
           </rect>
@@ -4422,11 +4422,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware18: 37"
                 role="graphics-document"
-                height="193.97948173256924px"
+                height="195.02083333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-18)"
                 x="173"
-                y="59.025229334779894"
+                y="57.97916666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -4457,11 +4457,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware19: 5"
                 role="graphics-document"
-                height="26.196331705373723px"
+                height="26.354166666666657px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-19)"
                 x="182"
-                y="226.80901655108363"
+                y="226.64583333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -4492,11 +4492,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP20: 2"
                 role="graphics-document"
-                height="10.471659188994755px"
+                height="10.541666666666657px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-20)"
                 x="191"
-                y="242.5344099099395"
+                y="242.45833333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -4527,11 +4527,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack21: 30"
                 role="graphics-document"
-                height="156.8824002023609px"
+                height="158.125px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-21)"
                 x="200"
-                y="96.12448390561049"
+                y="94.875"
                 style="cursor: auto;"
           >
           </rect>
@@ -4562,11 +4562,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware22: 16"
                 role="graphics-document"
-                height="83.58170910722062px"
+                height="84.33333333333331px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-22)"
                 x="209"
-                y="169.42609592108792"
+                y="168.66666666666669"
                 style="cursor: auto;"
           >
           </rect>
@@ -4597,11 +4597,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP23: 43"
                 role="graphics-document"
-                height="224.3426533954013px"
+                height="226.64583333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-23)"
                 x="218"
-                y="28.666191567185635"
+                y="26.354166666666657"
                 style="cursor: auto;"
           >
           </rect>
@@ -4632,11 +4632,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP24: 9"
                 role="graphics-document"
-                height="46.89380815755969px"
+                height="47.4375px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-24)"
                 x="227"
-                y="206.11621034926864"
+                y="205.5625"
                 style="cursor: auto;"
           >
           </rect>
@@ -4667,11 +4667,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware25: 6"
                 role="graphics-document"
-                height="31.215260863558818px"
+                height="31.625px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-25)"
                 x="236"
-                y="221.7960810312008"
+                y="221.375"
                 style="cursor: auto;"
           >
           </rect>
@@ -4702,11 +4702,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware26: 35"
                 role="graphics-document"
-                height="181.73483310436893px"
+                height="184.47916666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-26)"
                 x="245"
-                y="71.27800004601656"
+                y="68.52083333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -4737,11 +4737,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware27: 25"
                 role="graphics-document"
-                height="129.54863801474247px"
+                height="131.77083333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-27)"
                 x="254"
-                y="123.46587423305823"
+                y="121.22916666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -4772,11 +4772,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware28: 46"
                 role="graphics-document"
-                height="237.8138813004669px"
+                height="242.45833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-28)"
                 x="263"
-                y="15.202519976239271"
+                y="10.541666666666657"
                 style="cursor: auto;"
           >
           </rect>
@@ -4807,11 +4807,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS29: 34"
                 role="graphics-document"
-                height="175.31900012478476px"
+                height="179.20833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-29)"
                 x="272"
-                y="77.69952448664077"
+                y="73.79166666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -4842,11 +4842,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS30: 23"
                 role="graphics-document"
-                height="118.2512367472403px"
-                width="8.010454540188425px"
+                height="121.22916666666669px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-30)"
-                x="281.01045454018845"
-                y="134.76967233313655"
+                x="281"
+                y="131.77083333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -4877,11 +4877,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS31: 0"
                 role="graphics-document"
-                height="0.011792065951061474px"
-                width="8.011792065951061px"
+                height="0px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-31)"
-                x="290.01179206595106"
-                y="253.01179206595106"
+                x="290"
+                y="253"
                 style="cursor: auto;"
           >
           </rect>
@@ -4912,11 +4912,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware32: 14"
                 role="graphics-document"
-                height="71.47291712632949px"
-                width="8.013290995523569px"
+                height="73.79166666666669px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-32)"
-                x="299.01329099552356"
-                y="181.55366486471763"
+                x="299"
+                y="179.20833333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -4947,11 +4947,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LargeDataset smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS33: 3"
                 role="graphics-document"
-                height="15.262104234248682px"
-                width="8.014968900131162px"
+                height="15.8125px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-33)"
-                x="308.0149689001312"
-                y="237.76783356601365"
+                x="308"
+                y="237.1875"
                 style="cursor: auto;"
           >
           </rect>
@@ -6005,11 +6005,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS0: 9"
                 role="graphics-document"
-                height="47.414036748799624px"
+                height="47.4375px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-0)"
                 x="11"
-                y="205.586417250498"
+                y="205.5625"
                 style="cursor: auto;"
           >
           </rect>
@@ -6040,11 +6040,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS1: 26"
                 role="graphics-document"
-                height="136.96370498908382px"
+                height="137.04166666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-1)"
                 x="20"
-                y="116.03681319957839"
+                y="115.95833333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -6075,11 +6075,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP2: 8"
                 role="graphics-document"
-                height="42.139459294582075px"
+                height="42.16666666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-2)"
                 x="29"
-                y="210.8611320271971"
+                y="210.83333333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -6110,11 +6110,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack3: 17"
                 role="graphics-document"
-                height="89.53773120253223px"
+                height="89.60416666666669px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-3)"
                 x="38"
-                y="163.46294341889586"
+                y="163.39583333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -6145,11 +6145,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware4: 28"
                 role="graphics-document"
-                height="147.45809072446866px"
+                height="147.58333333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-4)"
                 x="47"
-                y="105.542678748884"
+                y="105.41666666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -6180,11 +6180,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware5: 12"
                 role="graphics-document"
-                height="63.188949869651864px"
+                height="63.25px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-5)"
                 x="56"
-                y="189.81192757755448"
+                y="189.75"
                 style="cursor: auto;"
           >
           </rect>
@@ -6215,11 +6215,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP6: 22"
                 role="graphics-document"
-                height="115.8301159671486px"
+                height="115.95833333333331px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-6)"
                 x="65"
-                y="137.17088435289563"
+                y="137.04166666666669"
                 style="cursor: auto;"
           >
           </rect>
@@ -6250,11 +6250,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware7: 14"
                 role="graphics-document"
-                height="73.69872820932594px"
+                height="73.79166666666669px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-7)"
                 x="74"
-                y="179.30241189331662"
+                y="179.20833333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -6320,11 +6320,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS9: 34"
                 role="graphics-document"
-                height="178.9133183726307px"
+                height="179.20833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-9)"
                 x="92"
-                y="74.08816141638769"
+                y="73.79166666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -6355,11 +6355,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack10: 34"
                 role="graphics-document"
-                height="178.8687479226477px"
+                height="179.20833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-10)"
                 x="101"
-                y="74.13295218370756"
+                y="73.79166666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -6390,11 +6390,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware11: 23"
                 role="graphics-document"
-                height="120.9674773334761px"
+                height="121.22916666666669px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-11)"
                 x="110"
-                y="132.03445811157158"
+                y="131.77083333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -6425,11 +6425,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack12: 48"
                 role="graphics-document"
-                height="252.37607129447525px"
+                height="253px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-12)"
                 x="119"
-                y="0.626131386440023"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -6460,11 +6460,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware13: 12"
                 role="graphics-document"
-                height="63.073126335395536px"
+                height="63.25px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-13)"
                 x="128"
-                y="189.92937967857014"
+                y="189.75"
                 style="cursor: auto;"
           >
           </rect>
@@ -6495,11 +6495,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP14: 31"
                 role="graphics-document"
-                height="162.87283331762058px"
+                height="163.39583333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-14)"
                 x="137"
-                y="90.13001685679251"
+                y="89.60416666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -6530,11 +6530,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS15: 43"
                 role="graphics-document"
-                height="225.8186596825862px"
+                height="226.64583333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-15)"
                 x="146"
-                y="27.18458080267529"
+                y="26.354166666666657"
                 style="cursor: auto;"
           >
           </rect>
@@ -6565,11 +6565,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS16: 32"
                 role="graphics-document"
-                height="167.96598175596387px"
+                height="168.66666666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-16)"
                 x="155"
-                y="85.0377011754457"
+                y="84.33333333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -6600,11 +6600,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS17: 45"
                 role="graphics-document"
-                height="236.06464056805476px"
+                height="237.1875px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-17)"
                 x="164"
-                y="16.939543667719246"
+                y="15.8125"
                 style="cursor: auto;"
           >
           </rect>
@@ -6635,11 +6635,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware18: 37"
                 role="graphics-document"
-                height="193.97027480557728px"
+                height="195.02083333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-18)"
                 x="173"
-                y="59.034477137342336"
+                y="57.97916666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -6670,11 +6670,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware19: 5"
                 role="graphics-document"
-                height="26.194939257621627px"
+                height="26.354166666666657px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-19)"
                 x="182"
-                y="226.8104552530435"
+                y="226.64583333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -6705,11 +6705,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP20: 2"
                 role="graphics-document"
-                height="10.471042806996756px"
+                height="10.541666666666657px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-20)"
                 x="191"
-                y="242.53507860309546"
+                y="242.45833333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -6740,11 +6740,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack21: 30"
                 role="graphics-document"
-                height="156.87149758775672px"
+                height="158.125px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-21)"
                 x="200"
-                y="96.1354456465645"
+                y="94.875"
                 style="cursor: auto;"
           >
           </rect>
@@ -6775,11 +6775,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware22: 16"
                 role="graphics-document"
-                height="83.57513213719596px"
+                height="84.33333333333331px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-22)"
                 x="209"
-                y="169.43273967912575"
+                y="168.66666666666669"
                 style="cursor: auto;"
           >
           </rect>
@@ -6810,11 +6810,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP23: 43"
                 role="graphics-document"
-                height="224.32255903202548px"
+                height="226.64583333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-23)"
                 x="218"
-                y="28.686361323864332"
+                y="26.354166666666657"
                 style="cursor: auto;"
           >
           </rect>
@@ -6845,11 +6845,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP24: 9"
                 role="graphics-document"
-                height="46.88430769644969px"
+                height="47.4375px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-24)"
                 x="227"
-                y="206.12588160578719"
+                y="205.5625"
                 style="cursor: auto;"
           >
           </rect>
@@ -6880,11 +6880,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware25: 6"
                 role="graphics-document"
-                height="31.20812265630667px"
+                height="31.625px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-25)"
                 x="236"
-                y="221.80341176322304"
+                y="221.375"
                 style="cursor: auto;"
           >
           </rect>
@@ -6915,11 +6915,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware26: 35"
                 role="graphics-document"
-                height="181.68719358066605px"
+                height="184.47916666666666px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-26)"
                 x="245"
-                y="71.32585642212491"
+                y="68.52083333333334"
                 style="cursor: auto;"
           >
           </rect>
@@ -6950,11 +6950,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware27: 25"
                 role="graphics-document"
-                height="129.51019348663337px"
+                height="131.77083333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-27)"
                 x="254"
-                y="123.50456281737598"
+                y="121.22916666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -6985,11 +6985,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware28: 46"
                 role="graphics-document"
-                height="237.73382236222173px"
+                height="242.45833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-28)"
                 x="263"
-                y="15.282853351396838"
+                y="10.541666666666657"
                 style="cursor: auto;"
           >
           </rect>
@@ -7020,11 +7020,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS29: 34"
                 role="graphics-document"
-                height="175.25220790899638px"
+                height="179.20833333333334px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-29)"
                 x="272"
-                y="77.76662502077924"
+                y="73.79166666666666"
                 style="cursor: auto;"
           >
           </rect>
@@ -7055,11 +7055,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS30: 23"
                 role="graphics-document"
-                height="118.20029554581066px"
-                width="8.010627563802128px"
+                height="121.22916666666669px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-30)"
-                x="281.01062756380213"
-                y="134.8209595817936"
+                x="281"
+                y="131.77083333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -7090,11 +7090,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS31: 0"
                 role="graphics-document"
-                height="0.011986062071931014px"
-                width="8.011986062071932px"
+                height="0px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-31)"
-                x="290.0119860620719"
-                y="253.01198606207194"
+                x="290"
+                y="253"
                 style="cursor: auto;"
           >
           </rect>
@@ -7125,11 +7125,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware32: 14"
                 role="graphics-document"
-                height="71.43358397236591px"
-                width="8.01350826669798px"
+                height="73.79166666666669px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-32)"
-                x="299.01350826669795"
-                y="181.59343256103006"
+                x="299"
+                y="179.20833333333331"
                 style="cursor: auto;"
           >
           </rect>
@@ -7160,11 +7160,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series LiveUpdating smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS33: 3"
                 role="graphics-document"
-                height="15.252802785980185px"
-                width="8.015211952095159px"
+                height="15.8125px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-68-bar-undefined-33)"
-                x="308.01521195209517"
-                y="237.77762111821013"
+                x="308"
+                y="237.1875"
                 style="cursor: auto;"
           >
           </rect>
@@ -7577,11 +7577,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Mask smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.976731491196446px"
+                height="43px"
                 width="72px"
                 fill="url(#mask-pattern-bar-series-ref-28-bar-undefined-0)"
                 x="8"
-                y="129.03798474305063"
+                y="129"
                 style="cursor: auto;"
           >
           </rect>
@@ -7634,11 +7634,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Mask smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.78275076668922px"
+                height="129px"
                 width="72px"
                 fill="url(#mask-pattern-bar-series-ref-28-bar-undefined-1)"
                 x="88"
-                y="43.2627034067501"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -7691,11 +7691,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Mask smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.56069264057618px"
+                height="86px"
                 width="72px"
                 fill="url(#mask-pattern-bar-series-ref-28-bar-undefined-2)"
                 x="168"
-                y="86.57732823288688"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -7748,11 +7748,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Mask smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.38280457565048px"
+                height="172px"
                 width="72px"
                 fill="url(#mask-pattern-bar-series-ref-28-bar-undefined-3)"
                 x="248"
-                y="2.9752955635528706"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -8659,11 +8659,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series NonZero smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 10"
                 role="graphics-document"
-                height="47.752819945587156px"
+                height="47.77777777777777px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-207-bar-undefined-0)"
                 x="8"
-                y="76.50879096546738"
+                y="76.44444444444444"
                 style="cursor: auto;"
           >
           </rect>
@@ -8694,11 +8694,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series NonZero smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 14"
                 role="graphics-document"
-                height="57.240585882979424px"
+                height="57.333333333333336px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-207-bar-undefined-1)"
                 x="88"
-                y="38.483461336767476"
+                y="38.22222222222222"
                 style="cursor: auto;"
           >
           </rect>
@@ -8729,11 +8729,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series NonZero smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 6"
                 role="graphics-document"
-                height="9.510376357847424px"
+                height="9.555555555555529px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-207-bar-undefined-2)"
                 x="168"
-                y="115.0819086232089"
+                y="114.66666666666669"
                 style="cursor: auto;"
           >
           </rect>
@@ -8764,11 +8764,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series NonZero smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 18"
                 role="graphics-document"
-                height="75.3241309919162px"
+                height="76.44444444444444px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-207-bar-undefined-3)"
                 x="248"
-                y="2.8994475500757146"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -9173,11 +9173,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47861726184199px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-82-bar-undefined-0)"
                   x="6"
-                  y="127.52184498250844"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -9208,11 +9208,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.30015125498947px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-82-bar-undefined-1)"
                   x="61"
-                  y="42.70126005825338"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -9243,11 +9243,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.59539357758946px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-82-bar-undefined-2)"
                   x="116"
-                  y="85.40882706787903"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -9278,11 +9278,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.56458697295443px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-82-bar-undefined-3)"
                   x="171"
-                  y="2.4477861322969563"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -9685,11 +9685,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47842201042744px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-83-bar-undefined-0)"
                   x="6"
-                  y="127.5220444117303"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -9720,11 +9720,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29835011644302px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-83-bar-undefined-1)"
                   x="61"
-                  y="42.703073747861815"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -9755,11 +9755,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.59180880485177px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-83-bar-undefined-2)"
                   x="116"
-                  y="85.41244855952591"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -9790,11 +9790,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.56458697295443px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-83-bar-undefined-3)"
                   x="171"
-                  y="2.4477861322969563"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -10197,11 +10197,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47842201042744px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-84-bar-undefined-0)"
                   x="6"
-                  y="127.5220444117303"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -10232,11 +10232,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29835011644302px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-84-bar-undefined-1)"
                   x="61"
-                  y="42.703073747861815"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -10267,11 +10267,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.59180880485177px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-84-bar-undefined-2)"
                   x="116"
-                  y="85.41244855952591"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -10302,11 +10302,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.56458697295443px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-84-bar-undefined-3)"
                   x="171"
-                  y="2.4477861322969563"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -10709,11 +10709,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47842201042744px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-85-bar-undefined-0)"
                   x="6"
-                  y="127.5220444117303"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -10744,11 +10744,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29835011644302px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-85-bar-undefined-1)"
                   x="61"
-                  y="42.703073747861815"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -10779,11 +10779,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58819284460314px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-85-bar-undefined-2)"
                   x="116"
-                  y="85.41610155043615"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -10814,11 +10814,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.54351632261526px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-85-bar-undefined-3)"
                   x="171"
-                  y="2.46896104203661"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -11221,11 +11221,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47822499417603px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-86-bar-undefined-0)"
                   x="6"
-                  y="127.52224564307497"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -11256,11 +11256,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29653296030395px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-86-bar-undefined-1)"
                   x="61"
-                  y="42.70490356479251"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -11291,11 +11291,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58819284460314px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-86-bar-undefined-2)"
                   x="116"
-                  y="85.41610155043615"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -11326,11 +11326,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.54351632261526px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-86-bar-undefined-3)"
                   x="171"
-                  y="2.46896104203661"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -11733,11 +11733,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47822499417603px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-87-bar-undefined-0)"
                   x="6"
-                  y="127.52224564307497"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -11768,11 +11768,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29653296030395px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-87-bar-undefined-1)"
                   x="61"
-                  y="42.70490356479251"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -11803,11 +11803,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58819284460314px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-87-bar-undefined-2)"
                   x="116"
-                  y="85.41610155043615"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -11838,11 +11838,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.54351632261526px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-87-bar-undefined-3)"
                   x="171"
-                  y="2.46896104203661"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -12245,11 +12245,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47822499417603px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-88-bar-undefined-0)"
                   x="6"
-                  y="127.52224564307497"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -12280,11 +12280,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29653296030395px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-88-bar-undefined-1)"
                   x="61"
-                  y="42.70490356479251"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -12315,11 +12315,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58819284460314px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-88-bar-undefined-2)"
                   x="116"
-                  y="85.41610155043615"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -12350,11 +12350,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.54351632261526px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-88-bar-undefined-3)"
                   x="171"
-                  y="2.46896104203661"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -12757,11 +12757,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47822499417603px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-89-bar-undefined-0)"
                   x="6"
-                  y="127.52244869262218"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -12792,11 +12792,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29469964653885px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-89-bar-undefined-1)"
                   x="61"
-                  y="42.706749650016754"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -12827,11 +12827,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58454543204725px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-89-bar-undefined-2)"
                   x="116"
-                  y="85.41978630796359"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -12862,11 +12862,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.52226813614655px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-89-bar-undefined-3)"
                   x="171"
-                  y="2.490314333798495"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -13269,11 +13269,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.478026197335495px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-90-bar-undefined-0)"
                   x="6"
-                  y="127.52244869262218"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -13304,11 +13304,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29469964653885px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-90-bar-undefined-1)"
                   x="61"
-                  y="42.706749650016754"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -13339,11 +13339,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58454543204725px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-90-bar-undefined-2)"
                   x="116"
-                  y="85.41978630796359"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -13374,11 +13374,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.52226813614655px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-90-bar-undefined-3)"
                   x="171"
-                  y="2.490314333798495"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -13781,11 +13781,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.478026197335495px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-91-bar-undefined-0)"
                   x="6"
-                  y="127.52244869262218"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -13816,11 +13816,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29469964653885px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-91-bar-undefined-1)"
                   x="61"
-                  y="42.706749650016754"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -13851,11 +13851,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58454543204725px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-91-bar-undefined-2)"
                   x="116"
-                  y="85.41978630796359"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -13886,11 +13886,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.52226813614655px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-91-bar-undefined-3)"
                   x="171"
-                  y="2.490314333798495"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -14293,11 +14293,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.478026197335495px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-92-bar-undefined-0)"
                   x="6"
-                  y="127.52244869262218"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -14328,11 +14328,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29469964653885px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-92-bar-undefined-1)"
                   x="61"
-                  y="42.706749650016754"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -14363,11 +14363,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58454543204725px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-92-bar-undefined-2)"
                   x="116"
-                  y="85.41978630796359"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -14398,11 +14398,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.52226813614655px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-92-bar-undefined-3)"
                   x="171"
-                  y="2.490314333798495"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -14805,11 +14805,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.478026197335495px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-93-bar-undefined-0)"
                   x="6"
-                  y="127.52244869262218"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -14840,11 +14840,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29469964653885px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-93-bar-undefined-1)"
                   x="61"
-                  y="42.70861214571045"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -14875,11 +14875,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58086630021538px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-93-bar-undefined-2)"
                   x="116"
-                  y="85.42350310165436"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -14910,11 +14910,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.50084097327183px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-93-bar-undefined-3)"
                   x="171"
-                  y="2.511847454330932"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -15317,11 +15317,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47782560401519px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-94-bar-undefined-0)"
                   x="6"
-                  y="127.52265357659286"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -15352,11 +15352,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29285003391742px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-94-bar-undefined-1)"
                   x="61"
-                  y="42.70861214571045"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -15387,11 +15387,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58086630021538px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-94-bar-undefined-2)"
                   x="116"
-                  y="85.42350310165436"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -15422,11 +15422,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.50084097327183px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-94-bar-undefined-3)"
                   x="171"
-                  y="2.511847454330932"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -15829,11 +15829,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47782560401519px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-95-bar-undefined-0)"
                   x="6"
-                  y="127.52265357659286"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -15864,11 +15864,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29285003391742px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-95-bar-undefined-1)"
                   x="61"
-                  y="42.70861214571045"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -15899,11 +15899,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58086630021538px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-95-bar-undefined-2)"
                   x="116"
-                  y="85.42350310165436"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -15934,11 +15934,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.50084097327183px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-95-bar-undefined-3)"
                   x="171"
-                  y="2.511847454330932"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -16341,11 +16341,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="DLP: 10"
                   role="graphics-document"
-                  height="42.47782560401519px"
+                  height="42.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-96-bar-undefined-0)"
                   x="6"
-                  y="127.52265357659286"
+                  y="127.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -16376,11 +16376,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Malware: 30"
                   role="graphics-document"
-                  height="127.29285003391742px"
+                  height="127.5px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-96-bar-undefined-1)"
                   x="61"
-                  y="42.70861214571045"
+                  y="42.5"
                   style="cursor: auto;"
             >
             </rect>
@@ -16411,11 +16411,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="IDS: 20"
                   role="graphics-document"
-                  height="84.58086630021538px"
+                  height="85px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-96-bar-undefined-2)"
                   x="116"
-                  y="85.42350310165436"
+                  y="85"
                   style="cursor: auto;"
             >
             </rect>
@@ -16446,11 +16446,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Performance smoke-test 1`] = `
                   tabindex="0"
                   aria-label="Phishing Attack: 40"
                   role="graphics-document"
-                  height="167.50084097327183px"
+                  height="170px"
                   width="50px"
                   fill="url(#gradient-bar-series-ref-96-bar-undefined-3)"
                   x="171"
-                  y="2.511847454330932"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -17071,11 +17071,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Simple smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="148.98938004669225px"
+                height="149px"
                 width="83px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-2)"
                 x="194"
-                y="149.0129023915234"
+                y="149"
                 style="cursor: auto;"
           >
           </rect>
@@ -17106,11 +17106,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Simple smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="297.9328233785117px"
+                height="298px"
                 width="83px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-3)"
                 x="286"
-                y="0.07040474523107726"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -17732,11 +17732,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Waterfall smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="27.186022246487088px"
+                height="27.19999999999999px"
                 width="70px"
                 fill="url(#gradient-bar-series-ref-197-bar-undefined-0)"
                 x="9"
-                y="244.8280407008524"
+                y="244.8"
                 style="cursor: auto;"
           >
           </rect>
@@ -17767,11 +17767,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Waterfall smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 40"
                 role="graphics-document"
-                height="81.46886864716488px"
+                height="81.60000000000002px"
                 width="70px"
                 fill="url(#gradient-bar-series-ref-197-bar-undefined-1)"
                 x="87"
-                y="163.41854559129277"
+                y="163.2"
                 style="cursor: auto;"
           >
           </rect>
@@ -17802,11 +17802,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Waterfall smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 60"
                 role="graphics-document"
-                height="54.13488878971217px"
+                height="54.39999999999998px"
                 width="70px"
                 fill="url(#gradient-bar-series-ref-197-bar-undefined-2)"
                 x="165"
-                y="109.73173983308408"
+                y="108.80000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -17837,11 +17837,11 @@ exports[`Charts/Bar Chart/Vertical/Single Series Waterfall smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 100"
                 role="graphics-document"
-                height="107.2165164517239px"
+                height="108.80000000000001px"
                 width="70px"
                 fill="url(#gradient-bar-series-ref-197-bar-undefined-3)"
                 x="243"
-                y="4.28616699228473"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>

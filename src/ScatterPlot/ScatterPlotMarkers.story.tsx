@@ -25,6 +25,7 @@ import { ScatterPlot } from './ScatterPlot';
 import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Scatter Plot/Markers',
   component: RadialScatterPlot,
   subcomponents: {

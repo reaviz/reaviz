@@ -8,6 +8,7 @@ import { Gradient } from '@/common/Gradient';
 import chroma from 'chroma-js';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Sunburst Chart',
   component: SunburstChart,
   subcomponents: {

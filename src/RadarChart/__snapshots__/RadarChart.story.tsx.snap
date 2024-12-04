@@ -286,7 +286,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-123.677px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -299,7 +299,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(72.1138px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(72.154px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -312,7 +312,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(58.0072px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(58.041px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -325,7 +325,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-130.292px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-130.372px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -338,7 +338,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-103.475px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-103.531px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -351,7 +351,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(141.01px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(141.09px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -364,7 +364,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(129.706px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(129.783px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -377,7 +377,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-132.617px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-132.7px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -390,7 +390,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-123.677px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -403,7 +403,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(135.477px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -416,7 +416,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(151.464px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(151.554px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -429,7 +429,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-130.876px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-130.958px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -442,7 +442,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-141.013px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-141.09px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -455,7 +455,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(135.477px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -468,7 +468,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(174.896px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(175px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -481,7 +481,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-156.428px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-156.525px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"

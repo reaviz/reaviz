@@ -1186,11 +1186,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 50"
                 role="graphics-document"
-                height="228.98839539091367px"
+                height="229px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-19)"
                 x="125"
-                y="0.011651622778514984"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -1256,11 +1256,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 48"
                 role="graphics-document"
-                height="219.826595885672px"
+                height="219.84px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-21)"
                 x="138"
-                y="9.173460617483267"
+                y="9.160000000000007"
                 style="cursor: auto;"
           >
           </rect>
@@ -1326,11 +1326,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Wed Feb 05 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 42"
                 role="graphics-document"
-                height="192.34589444252543px"
+                height="192.35999999999999px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-23)"
                 x="151"
-                y="36.654173447506764"
+                y="36.64000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -1361,11 +1361,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 29"
                 role="graphics-document"
-                height="132.80932985992624px"
+                height="132.82px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-24)"
                 x="157"
-                y="96.19074454956669"
+                y="96.18"
                 style="cursor: auto;"
           >
           </rect>
@@ -1396,11 +1396,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 40"
                 role="graphics-document"
-                height="183.18384443050263px"
+                height="183.20000000000002px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-25)"
                 x="164"
-                y="45.81623711884004"
+                y="45.79999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -1431,11 +1431,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 34"
                 role="graphics-document"
-                height="155.70494795015892px"
+                height="155.72000000000003px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-26)"
                 x="171"
-                y="73.295141417805"
+                y="73.27999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -1501,11 +1501,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 24"
                 role="graphics-document"
-                height="109.9072412833038px"
+                height="109.92px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-28)"
                 x="184"
-                y="119.09286601933213"
+                y="119.08"
                 style="cursor: auto;"
           >
           </rect>
@@ -1571,11 +1571,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 35"
                 role="graphics-document"
-                height="160.27760538537845px"
+                height="160.29999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-30)"
                 x="197"
-                y="68.72252341275677"
+                y="68.70000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -1606,11 +1606,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 26"
                 role="graphics-document"
-                height="119.06178087127647px"
+                height="119.08px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-31)"
                 x="203"
-                y="109.93836022294946"
+                y="109.92"
                 style="cursor: auto;"
           >
           </rect>
@@ -1676,11 +1676,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 30"
                 role="graphics-document"
-                height="137.37472826132375px"
+                height="137.39999999999998px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-33)"
                 x="216"
-                y="91.6254410187119"
+                y="91.60000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -1816,11 +1816,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 36"
                 role="graphics-document"
-                height="164.83623081456642px"
+                height="164.88px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-37)"
                 x="243"
-                y="64.16401261296427"
+                y="64.12"
                 style="cursor: auto;"
           >
           </rect>
@@ -1851,11 +1851,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 25"
                 role="graphics-document"
-                height="114.46673603297523px"
+                height="114.5px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-38)"
                 x="249"
-                y="114.53353047941037"
+                y="114.5"
                 style="cursor: auto;"
           >
           </rect>
@@ -1886,11 +1886,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 34"
                 role="graphics-document"
-                height="155.67038187709733px"
+                height="155.72000000000003px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-39)"
                 x="256"
-                y="73.33036759953644"
+                y="73.27999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -1921,11 +1921,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 42"
                 role="graphics-document"
-                height="192.292196919774px"
+                height="192.35999999999999px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-40)"
                 x="262"
-                y="36.70812535078422"
+                y="36.64000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -1956,11 +1956,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 38"
                 role="graphics-document"
-                height="173.97281499810234px"
+                height="174.04px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-41)"
                 x="269"
-                y="55.0275377346935"
+                y="54.96"
                 style="cursor: auto;"
           >
           </rect>
@@ -1991,11 +1991,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 23"
                 role="graphics-document"
-                height="105.29553316569023px"
+                height="105.33999999999999px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-42)"
                 x="276"
-                y="123.70485287221669"
+                y="123.66000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -2026,11 +2026,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
                 role="graphics-document"
-                height="45.778943702928196px"
+                height="45.79999999999998px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-43)"
                 x="282"
-                y="183.22147874399806"
+                y="183.20000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -2061,11 +2061,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 16"
                 role="graphics-document"
-                height="73.24296374134654px"
+                height="73.28px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-44)"
                 x="289"
-                y="155.7574985030039"
+                y="155.72"
                 style="cursor: auto;"
           >
           </rect>
@@ -2096,11 +2096,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 26"
                 role="graphics-document"
-                height="119.0139338286929px"
+                height="119.08px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-45)"
                 x="295"
-                y="109.98657191149245"
+                y="109.92"
                 style="cursor: auto;"
           >
           </rect>
@@ -2131,11 +2131,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 45"
                 role="graphics-document"
-                height="205.97458779564013px"
+                height="206.1px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-46)"
                 x="302"
-                y="23.025965476525197"
+                y="22.899999999999995"
                 style="cursor: auto;"
           >
           </rect>
@@ -2166,11 +2166,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 39"
                 role="graphics-document"
-                height="178.5010327321528px"
+                height="178.62px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-47)"
                 x="308"
-                y="50.49957247600374"
+                y="50.379999999999995"
                 style="cursor: auto;"
           >
           </rect>
@@ -2201,11 +2201,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 38"
                 role="graphics-document"
-                height="173.91309977954305px"
+                height="174.04px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-48)"
                 x="315"
-                y="55.08756216921616"
+                y="54.96"
                 style="cursor: auto;"
           >
           </rect>
@@ -2236,11 +2236,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Dates smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 17"
                 role="graphics-document"
-                height="77.79805106944283px"
+                height="77.86000000000001px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-49)"
                 x="321"
-                y="151.2026728606814"
+                y="151.14"
                 style="cursor: auto;"
           >
           </rect>
@@ -2980,11 +2980,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Mar 04 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Mar 05 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
                 role="graphics-document"
-                height="47.96424192065982px"
+                height="48px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-1)"
                 x="12"
-                y="144.03643883736083"
+                y="144"
                 style="cursor: auto;"
           >
           </rect>
@@ -3225,11 +3225,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Mar 11 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Tue Mar 12 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 2"
                 role="graphics-document"
-                height="95.79976352744453px"
+                height="96px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-8)"
                 x="75"
-                y="96.2021093218836"
+                y="96"
                 style="cursor: auto;"
           >
           </rect>
@@ -3295,11 +3295,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Wed Mar 13 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Mar 14 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
                 role="graphics-document"
-                height="47.86712598863036px"
+                height="48px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-10)"
                 x="93"
-                y="144.13536064118398"
+                y="144"
                 style="cursor: auto;"
           >
           </rect>
@@ -3330,11 +3330,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Thu Mar 14 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Fri Mar 15 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
                 role="graphics-document"
-                height="47.84663758613873px"
+                height="48px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-11)"
                 x="102"
-                y="144.15622599475503"
+                y="144"
                 style="cursor: auto;"
           >
           </rect>
@@ -3505,11 +3505,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Tue Mar 19 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Mar 20 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 4"
                 role="graphics-document"
-                height="190.74126759227147px"
+                height="192px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-16)"
                 x="147"
-                y="1.2644940211826652"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -3540,11 +3540,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Wed Mar 20 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Thu Mar 21 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 3"
                 role="graphics-document"
-                height="142.91357327461142px"
+                height="144px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-17)"
                 x="156"
-                y="49.093043394657556"
+                y="48"
                 style="cursor: auto;"
           >
           </rect>
@@ -3750,11 +3750,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Tue Mar 26 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Wed Mar 27 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 1"
                 role="graphics-document"
-                height="47.16769927652512px"
+                height="48px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-23)"
                 x="210"
-                y="144.84729364156382"
+                y="144"
                 style="cursor: auto;"
           >
           </rect>
@@ -3855,11 +3855,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Fri Mar 29 2024 02:00:00 GMT+0200 (Eastern European Standard Time) ∙ Sat Mar 30 2024 02:00:00 GMT+0200 (Eastern European Standard Time): 0"
                 role="graphics-document"
-                height="0.011271294774329166px"
-                width="8.011271294774328px"
+                height="0px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-26)"
-                x="237.01127129477433"
-                y="192.01127129477433"
+                x="237"
+                y="192"
                 style="cursor: auto;"
           >
           </rect>
@@ -3960,11 +3960,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Mon Apr 01 2024 03:00:00 GMT+0300 (Eastern European Summer Time) ∙ Tue Apr 02 2024 03:00:00 GMT+0300 (Eastern European Summer Time): 1"
                 role="graphics-document"
-                height="46.096389590575995px"
+                height="48px"
                 width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-29)"
                 x="264"
-                y="145.936962668722"
+                y="144"
                 style="cursor: auto;"
           >
           </rect>
@@ -3995,11 +3995,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram MultiMonth smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Tue Apr 02 2024 03:00:00 GMT+0300 (Eastern European Summer Time) ∙ Wed Apr 03 2024 03:00:00 GMT+0300 (Eastern European Summer Time): 0"
                 role="graphics-document"
-                height="0.01896438016108598px"
-                width="8.018964380161085px"
+                height="0px"
+                width="8px"
                 fill="url(#gradient-bar-series-ref-15-bar-undefined-30)"
-                x="273.0189643801611"
-                y="192.0189643801611"
+                x="273"
+                y="192"
                 style="cursor: auto;"
           >
           </rect>
@@ -4513,11 +4513,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="2: 9"
                 role="graphics-document"
-                height="206.00096898236083px"
+                height="206.1px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-0)"
                 x="12"
-                y="22.999468960160627"
+                y="22.899999999999995"
                 style="cursor: auto;"
           >
           </rect>
@@ -4548,11 +4548,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="3: 10"
                 role="graphics-document"
-                height="228.87127334173064px"
+                height="229px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-1)"
                 x="18"
-                y="0.12923807236023335"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -4583,11 +4583,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="8: 8"
                 role="graphics-document"
-                height="183.07964127679978px"
+                height="183.20000000000002px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-2)"
                 x="49"
-                y="45.9209557525155"
+                y="45.79999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -4618,11 +4618,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="14: 2"
                 role="graphics-document"
-                height="45.764768425492264px"
+                height="45.79999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-3)"
                 x="85"
-                y="183.23593459486392"
+                y="183.20000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -4653,11 +4653,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="10: 7"
                 role="graphics-document"
-                height="160.15486138534595px"
+                height="160.29999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-4)"
                 x="61"
-                y="68.84595878241133"
+                y="68.70000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -4688,11 +4688,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="8: 5"
                 role="graphics-document"
-                height="114.37901183826759px"
+                height="114.5px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-5)"
                 x="49"
-                y="114.62194467165341"
+                y="114.5"
                 style="cursor: auto;"
           >
           </rect>
@@ -4723,11 +4723,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="17: 3"
                 role="graphics-document"
-                height="68.61543228986629px"
+                height="68.70000000000002px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-6)"
                 x="103"
-                y="160.3856828327923"
+                y="160.29999999999998"
                 style="cursor: auto;"
           >
           </rect>
@@ -4758,11 +4758,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="13: 6"
                 role="graphics-document"
-                height="137.201852558622px"
+                height="137.39999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-7)"
                 x="79"
-                y="91.79944700106361"
+                y="91.60000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -4793,11 +4793,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="15: 10"
                 role="graphics-document"
-                height="228.61399206482892px"
+                height="229px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-8)"
                 x="91"
-                y="0.38752185873945666"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -4828,11 +4828,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="15: 2"
                 role="graphics-document"
-                height="45.71061501558798px"
+                height="45.79999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-9)"
                 x="91"
-                y="183.29114793086077"
+                y="183.20000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -4863,11 +4863,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="16: 10"
                 role="graphics-document"
-                height="228.4745216110904px"
+                height="229px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-10)"
                 x="97"
-                y="0.5275304706251185"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -4898,11 +4898,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="23: 8"
                 role="graphics-document"
-                height="182.71000491077024px"
+                height="183.20000000000002px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-11)"
                 x="140"
-                y="46.29238269711271"
+                y="45.79999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -4933,11 +4933,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="22: 10"
                 role="graphics-document"
-                height="228.28564013963418px"
+                height="229px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-12)"
                 x="134"
-                y="0.7171366063914985"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -4968,11 +4968,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="24: 5"
                 role="graphics-document"
-                height="114.08458012949764px"
+                height="114.5px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-13)"
                 x="146"
-                y="114.91864766269514"
+                y="114.5"
                 style="cursor: auto;"
           >
           </rect>
@@ -5003,11 +5003,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="30: 7"
                 role="graphics-document"
-                height="159.6217747601099px"
+                height="160.29999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-14)"
                 x="182"
-                y="69.38197550617059"
+                y="68.70000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -5038,11 +5038,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="28: 8"
                 role="graphics-document"
-                height="182.29714377184035px"
+                height="183.20000000000002px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-15)"
                 x="170"
-                y="46.70721130702895"
+                y="45.79999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -5073,11 +5073,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="36: 6"
                 role="graphics-document"
-                height="136.61249521861325px"
+                height="137.39999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-16)"
                 x="219"
-                y="92.39255949890118"
+                y="91.60000000000001"
                 style="cursor: auto;"
           >
           </rect>
@@ -5108,11 +5108,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="33: 3"
                 role="graphics-document"
-                height="68.24336906582292px"
+                height="68.70000000000002px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-17)"
                 x="200"
-                y="160.7624943880811"
+                y="160.29999999999998"
                 style="cursor: auto;"
           >
           </rect>
@@ -5143,11 +5143,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="29: 3"
                 role="graphics-document"
-                height="68.168984767151px"
+                height="68.70000000000002px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-18)"
                 x="176"
-                y="160.83781280599035"
+                y="160.29999999999998"
                 style="cursor: auto;"
           >
           </rect>
@@ -5178,11 +5178,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="31: 7"
                 role="graphics-document"
-                height="158.8545579909704px"
+                height="160.29999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-19)"
                 x="188"
-                y="70.15331763517304"
+                y="68.70000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -5213,11 +5213,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="32: 5"
                 role="graphics-document"
-                height="113.30183254637288px"
+                height="114.5px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-20)"
                 x="194"
-                y="115.70728615936315"
+                y="114.5"
                 style="cursor: auto;"
           >
           </rect>
@@ -5248,11 +5248,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="37: 7"
                 role="graphics-document"
-                height="158.35011137027274px"
+                height="160.29999999999998px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-21)"
                 x="225"
-                y="70.66043937615422"
+                y="68.70000000000002"
                 style="cursor: auto;"
           >
           </rect>
@@ -5283,11 +5283,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="41: 4"
                 role="graphics-document"
-                height="90.30952311524752px"
+                height="91.6px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-22)"
                 x="249"
-                y="138.70267573174473"
+                y="137.4"
                 style="cursor: auto;"
           >
           </rect>
@@ -5318,11 +5318,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="40: 1"
                 role="graphics-document"
-                height="22.531084371512772px"
+                height="22.900000000000006px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-23)"
                 x="243"
-                y="206.48300924233408"
+                y="206.1"
                 style="cursor: auto;"
           >
           </rect>
@@ -5353,11 +5353,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="47: 10"
                 role="graphics-document"
-                height="224.65008627022067px"
+                height="229px"
                 width="6px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-24)"
                 x="285"
-                y="4.366183251378519"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -5388,11 +5388,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="42: 4"
                 role="graphics-document"
-                height="89.5727750188324px"
+                height="91.6px"
                 width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-25)"
                 x="255"
-                y="139.44614572236685"
+                y="137.4"
                 style="cursor: auto;"
           >
           </rect>
@@ -5423,11 +5423,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="45: 5"
                 role="graphics-document"
-                height="111.56372129507612px"
-                width="5.010901093985946px"
+                height="114.5px"
+                width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-26)"
-                x="273.0109010939859"
-                y="117.45808089289577"
+                x="273"
+                y="114.5"
                 style="cursor: auto;"
           >
           </rect>
@@ -5458,11 +5458,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="42: 8"
                 role="graphics-document"
-                height="177.7575196415112px"
-                width="5.012549047308304px"
+                height="183.20000000000002px"
+                width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-27)"
-                x="255.0125490473083"
-                y="51.2675784531054"
+                x="255"
+                y="45.79999999999999"
                 style="cursor: auto;"
           >
           </rect>
@@ -5493,11 +5493,11 @@ exports[`Charts/Bar Chart/Vertical/Histogram Numbers smoke-test 1`] = `
                 tabindex="0"
                 aria-label="53: 3"
                 role="graphics-document"
-                height="66.34970944352663px"
-                width="5.01443120649899px"
+                height="68.70000000000002px"
+                width="5px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-28)"
-                x="322.014431206499"
-                y="162.67915296947135"
+                x="322"
+                y="160.29999999999998"
                 style="cursor: auto;"
           >
           </rect>

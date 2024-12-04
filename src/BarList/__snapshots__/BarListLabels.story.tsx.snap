@@ -18,7 +18,7 @@ exports[`Charts/Bar List/Labels LabelBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.955%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -43,7 +43,7 @@ exports[`Charts/Bar List/Labels LabelBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9775%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -68,7 +68,7 @@ exports[`Charts/Bar List/Labels LabelBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9888%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -93,7 +93,7 @@ exports[`Charts/Bar List/Labels LabelBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99775%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -126,7 +126,7 @@ exports[`Charts/Bar List/Labels LabelEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9618%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -151,7 +151,7 @@ exports[`Charts/Bar List/Labels LabelEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9809%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -176,7 +176,7 @@ exports[`Charts/Bar List/Labels LabelEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9905%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -201,7 +201,7 @@ exports[`Charts/Bar List/Labels LabelEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99809%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -234,7 +234,7 @@ exports[`Charts/Bar List/Labels LabelNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9546%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -259,7 +259,7 @@ exports[`Charts/Bar List/Labels LabelNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9773%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -284,7 +284,7 @@ exports[`Charts/Bar List/Labels LabelNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9886%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -309,7 +309,7 @@ exports[`Charts/Bar List/Labels LabelNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99773%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -450,7 +450,7 @@ exports[`Charts/Bar List/Labels LabelTop smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9503%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -475,7 +475,7 @@ exports[`Charts/Bar List/Labels LabelTop smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9751%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -500,7 +500,7 @@ exports[`Charts/Bar List/Labels LabelTop smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9876%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -525,7 +525,7 @@ exports[`Charts/Bar List/Labels LabelTop smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99751%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -558,7 +558,7 @@ exports[`Charts/Bar List/Labels LongValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9546%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -583,7 +583,7 @@ exports[`Charts/Bar List/Labels LongValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 10"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 9.99546%;"
+           style="background: rgb(41, 181, 202); width: 10%;"
       >
       </div>
     </div>
@@ -608,7 +608,7 @@ exports[`Charts/Bar List/Labels LongValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 1"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 0.99955%;"
+           style="background: rgb(41, 181, 202); width: 1%;"
       >
       </div>
     </div>
@@ -666,7 +666,7 @@ exports[`Charts/Bar List/Labels LongValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9503%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -691,7 +691,7 @@ exports[`Charts/Bar List/Labels LongValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 10"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 9.99503%;"
+           style="background: rgb(41, 181, 202); width: 10%;"
       >
       </div>
     </div>
@@ -716,7 +716,7 @@ exports[`Charts/Bar List/Labels LongValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 1"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 0.9995%;"
+           style="background: rgb(41, 181, 202); width: 1%;"
       >
       </div>
     </div>
@@ -774,7 +774,7 @@ exports[`Charts/Bar List/Labels ValueBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9525%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -799,7 +799,7 @@ exports[`Charts/Bar List/Labels ValueBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9763%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -824,7 +824,7 @@ exports[`Charts/Bar List/Labels ValueBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9881%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -849,7 +849,7 @@ exports[`Charts/Bar List/Labels ValueBottom smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.9976%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -882,7 +882,7 @@ exports[`Charts/Bar List/Labels ValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9574%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -907,7 +907,7 @@ exports[`Charts/Bar List/Labels ValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9787%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -932,7 +932,7 @@ exports[`Charts/Bar List/Labels ValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 28"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 27.9881%;"
+           style="background: rgb(41, 181, 202); width: 28%;"
       >
       </div>
     </div>
@@ -957,7 +957,7 @@ exports[`Charts/Bar List/Labels ValueEnd smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 3"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 2.99872%;"
+           style="background: rgb(41, 181, 202); width: 3%;"
       >
       </div>
     </div>
@@ -990,7 +990,7 @@ exports[`Charts/Bar List/Labels ValueNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9529%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -1015,7 +1015,7 @@ exports[`Charts/Bar List/Labels ValueNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9765%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -1040,7 +1040,7 @@ exports[`Charts/Bar List/Labels ValueNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9882%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -1065,7 +1065,7 @@ exports[`Charts/Bar List/Labels ValueNone smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99765%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>
@@ -1098,7 +1098,7 @@ exports[`Charts/Bar List/Labels ValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Phishing Attempts: 100"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 99.9574%;"
+           style="background: rgb(41, 181, 202); width: 100%;"
       >
       </div>
     </div>
@@ -1123,7 +1123,7 @@ exports[`Charts/Bar List/Labels ValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Vulnerability Patch: 50"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 49.9787%;"
+           style="background: rgb(41, 181, 202); width: 50%;"
       >
       </div>
     </div>
@@ -1148,7 +1148,7 @@ exports[`Charts/Bar List/Labels ValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Critical Failure: 25"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 24.9894%;"
+           style="background: rgb(41, 181, 202); width: 25%;"
       >
       </div>
     </div>
@@ -1173,7 +1173,7 @@ exports[`Charts/Bar List/Labels ValueStart smoke-test 1`] = `
            tabindex="0"
            aria-label="Physical Intrusion: 5"
            role="graphics-document"
-           style="background: rgb(41, 181, 202); width: 4.99787%;"
+           style="background: rgb(41, 181, 202); width: 5%;"
       >
       </div>
     </div>

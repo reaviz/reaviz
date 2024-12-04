@@ -3,6 +3,7 @@ import { BarList } from './BarList';
 import { BarListSeries } from './BarListSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar List/Labels',
   component: BarList
 };

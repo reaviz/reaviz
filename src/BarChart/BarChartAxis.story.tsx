@@ -25,6 +25,7 @@ import { getXScale, getYScale } from '@/common/scales';
 import { BarChart } from './BarChart';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Axis',
   component: BarChart,
   subcomponents: {

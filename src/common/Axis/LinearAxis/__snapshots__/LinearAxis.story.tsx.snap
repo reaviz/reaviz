@@ -890,7 +890,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="212"
-                  cy="40.01109335486254"
+                  cy="39.99999999999999"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -935,7 +935,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="236"
-                  cy="80.01133589350205"
+                  cy="79.99999999999999"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -965,7 +965,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="252"
-                  cy="0.015542787568165291"
+                  cy="0"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -995,7 +995,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="268"
-                  cy="120.01194285994498"
+                  cy="120.00000000000001"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1085,7 +1085,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="316"
-                  cy="160.01351879622223"
+                  cy="160"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1100,7 +1100,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="324"
-                  cy="120.01651406440355"
+                  cy="120.00000000000001"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1130,7 +1130,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="340"
-                  cy="240.0103636107303"
+                  cy="240"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1145,7 +1145,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="348"
-                  cy="120.0189706733477"
+                  cy="120.00000000000001"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1160,7 +1160,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="356"
-                  cy="200.01420052970627"
+                  cy="200"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1175,7 +1175,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="364"
-                  cy="40.02674173728865"
+                  cy="39.99999999999999"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1190,7 +1190,7 @@ exports[`Utils/Axis/Linear CenterAxes smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="372"
-                  cy="160.01868218118733"
+                  cy="160"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -1724,11 +1724,11 @@ exports[`Utils/Axis/Linear CustomLabelRotation smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="66.21860234096754px"
+                height="66.25px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-0)"
                 x="8"
-                y="198.7818316758105"
+                y="198.75"
                 style="cursor: auto;"
           >
           </rect>
@@ -1759,11 +1759,11 @@ exports[`Utils/Axis/Linear CustomLabelRotation smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="198.4570728785132px"
+                height="198.75px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-1)"
                 x="88"
-                y="66.54425357254763"
+                y="66.25"
                 style="cursor: auto;"
           >
           </rect>
@@ -1794,11 +1794,11 @@ exports[`Utils/Axis/Linear CustomLabelRotation smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="131.90070039008836px"
+                height="132.5px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-2)"
                 x="168"
-                y="133.10330634797998"
+                y="132.5"
                 style="cursor: auto;"
           >
           </rect>
@@ -1829,11 +1829,11 @@ exports[`Utils/Axis/Linear CustomLabelRotation smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="261.42271521670006px"
+                height="265px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-3)"
                 x="248"
-                y="3.588951223365664"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>

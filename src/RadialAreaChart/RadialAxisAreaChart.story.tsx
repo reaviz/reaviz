@@ -17,6 +17,7 @@ import {
 } from './RadialAreaSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Radial/Axis',
   component: RadialAreaChart,
   subcomponents: {

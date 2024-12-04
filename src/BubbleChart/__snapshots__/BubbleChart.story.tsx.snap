@@ -4091,23 +4091,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
   >
     <g transform="translate(10, 10)">
       <g opacity="1"
-         transform-origin="98.8758544921875px 127.18182373046875px"
-         style="transform: none; transform-origin: 98.8759px 127.182px;"
+         transform-origin="109.20909118652344px 109.12898254394531px"
+         style="transform: none; transform-origin: 109.209px 109.129px;"
       >
         <circle id="ref_13_series_0_bubble-bubble"
                 fill="#2d60e8"
                 tabindex="0"
-                aria-label="0: 204"
+                aria-label="0: 160"
                 role="graphics-document"
-                r="37.93140617346885"
-                cx="163.71875670165184"
-                cy="226.43223217654563"
+                r="36.112933858084475"
+                cx="186.20369452007625"
+                cy="192.14501711498485"
         >
         </circle>
         <text id="ref_13_series_0_label-text"
               fill="#ffffff"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(163.719px) translateY(226.432px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(186.204px) translateY(192.145px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4120,23 +4120,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="146.6232452392578px 131.36822509765625px"
-         style="transform: none; transform-origin: 146.623px 131.368px;"
+         transform-origin="158.93194580078125px 115.21353912353516px"
+         style="transform: none; transform-origin: 158.932px 115.214px;"
       >
         <circle id="ref_13_series_1_bubble-bubble"
                 fill="#2c77e0"
                 tabindex="0"
-                aria-label="1: 304"
+                aria-label="1: 286"
                 role="graphics-document"
-                r="46.30422833496958"
-                cx="250.84069311823697"
-                cy="226.43223217654563"
+                r="48.28206069971653"
+                cx="273.48027382969144"
+                cy="192.14501711498485"
         >
         </circle>
         <text id="ref_13_series_1_label-text"
               fill="#ffffff"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(250.841px) translateY(226.432px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(273.48px) translateY(192.145px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4149,23 +4149,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="111.34919738769531px 149.2982940673828px"
-         style="transform: none; transform-origin: 111.349px 149.298px;"
+         transform-origin="126.12629699707031px 144.94024658203125px"
+         style="transform: none; transform-origin: 126.126px 144.94px;"
       >
         <circle id="ref_13_series_2_bubble-bubble"
                 fill="#2b8dd8"
                 tabindex="0"
-                aria-label="2: 97"
+                aria-label="2: 176"
                 role="graphics-document"
-                r="26.15590349764884"
-                cx="200.4409166918658"
-                cy="282.44069237340614"
+                r="37.875564563742444"
+                cx="218.2754720075183"
+                cy="262.00495395949184"
         >
         </circle>
         <text id="ref_13_series_2_label-text"
               fill="#ffffff"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(200.441px) translateY(282.441px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(218.275px) translateY(262.005px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4178,23 +4178,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="124.12591552734375px 90.94593811035156px"
-         style="transform: none; transform-origin: 124.126px 90.9459px;"
+         transform-origin="131.80426025390625px 74.18797302246094px"
+         style="transform: none; transform-origin: 131.804px 74.188px;"
       >
         <circle id="ref_13_series_3_bubble-bubble"
                 fill="#2aa1d1"
                 tabindex="0"
-                aria-label="3: 420"
+                aria-label="3: 320"
                 role="graphics-document"
-                r="54.426261557095586"
-                cx="197.72400416432657"
-                cy="137.46562665772194"
+                r="51.07140083918561"
+                cx="216.43555336396545"
+                cy="107.30455178709967"
         >
         </circle>
         <text id="ref_13_series_3_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(197.724px) translateY(137.466px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(216.436px) translateY(107.305px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4207,23 +4207,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="148.21287536621094px 171.91380310058594px"
-         style="transform: none; transform-origin: 148.213px 171.914px;"
+         transform-origin="187.06126403808594px 175.4263458251953px"
+         style="transform: none; transform-origin: 187.061px 175.426px;"
       >
         <circle id="ref_13_series_4_bubble-bubble"
                 fill="#29b5ca"
                 tabindex="0"
-                aria-label="4: 220"
+                aria-label="4: 483"
                 role="graphics-document"
-                r="39.39083614599623"
-                cx="260.9333359772343"
-                cy="314.43676064799945"
+                r="62.74459877441342"
+                cx="315.2763739766372"
+                cy="298.1080961337818"
         >
         </circle>
         <text id="ref_13_series_4_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(260.933px) translateY(314.437px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(315.276px) translateY(298.108px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4236,23 +4236,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="85.51598358154297px 169.69313049316406px"
-         style="transform: none; transform-origin: 85.516px 169.693px;"
+         transform-origin="170.7706756591797px 68.96287536621094px"
+         style="transform: none; transform-origin: 170.771px 68.9629px;"
       >
         <circle id="ref_13_series_5_bubble-bubble"
                 fill="#28c8c3"
                 tabindex="0"
-                aria-label="5: 280"
+                aria-label="5: 173"
                 role="graphics-document"
-                r="44.43885647404668"
-                cx="130.49155149961587"
-                cy="304.94741946088953"
+                r="37.55137402513059"
+                cx="307.8884041355609"
+                cy="110.37439127906075"
         >
         </circle>
         <text id="ref_13_series_5_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(130.492px) translateY(304.947px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(307.888px) translateY(110.374px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4265,23 +4265,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="152.86077880859375px 86.76168823242188px"
-         style="transform: none; transform-origin: 152.861px 86.7617px;"
+         transform-origin="87.79145812988281px 129.5045166015625px"
+         style="transform: none; transform-origin: 87.7915px 129.505px;"
       >
         <circle id="ref_13_series_6_bubble-bubble"
                 fill="#27dcbc"
                 tabindex="0"
-                aria-label="6: 113"
+                aria-label="6: 63"
                 role="graphics-document"
-                r="28.230793218795174"
-                cx="281.389203277314"
-                cy="155.2925818143553"
+                r="22.6606861499462"
+                cx="156.82066883617762"
+                cy="246.34835719322865"
         >
         </circle>
         <text id="ref_13_series_6_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(281.389px) translateY(155.293px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(156.821px) translateY(246.348px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4294,23 +4294,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="71.25164794921875px 98.93326568603516px"
-         style="transform: none; transform-origin: 71.2516px 98.9333px;"
+         transform-origin="80.98749542236328px 91.689208984375px"
+         style="transform: none; transform-origin: 80.9875px 91.6892px;"
       >
         <circle id="ref_13_series_7_bubble-bubble"
                 fill="#26efb5"
                 tabindex="0"
-                aria-label="7: 197"
+                aria-label="7: 422"
                 role="graphics-document"
-                r="37.27494165225007"
-                cx="109.12678427851445"
-                cy="170.59157951732587"
+                r="58.648783265074975"
+                cx="107.2246459671635"
+                cy="134.7296507857183"
         >
         </circle>
         <text id="ref_13_series_7_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(109.127px) translateY(170.592px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(107.225px) translateY(134.73px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4323,23 +4323,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="186.99891662597656px 151.2449188232422px"
-         style="transform: none; transform-origin: 186.999px 151.245px;"
+         transform-origin="176.5367431640625px 112.87105560302734px"
+         style="transform: none; transform-origin: 176.537px 112.871px;"
       >
         <circle id="ref_13_series_8_bubble-bubble"
                 fill="#2d60e8"
                 tabindex="0"
-                aria-label="8: 274"
+                aria-label="8: 42"
                 role="graphics-document"
-                r="43.960147468780185"
-                cx="333.93614106928004"
-                cy="268.5296820755728"
+                r="18.502372762907353"
+                cx="338.4695695257301"
+                cy="217.23974841036357"
         >
         </circle>
         <text id="ref_13_series_8_label-text"
               fill="#ffffff"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(333.936px) translateY(268.53px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(338.47px) translateY(217.24px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4352,23 +4352,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="109.46676635742188px 177.22373962402344px"
-         style="transform: none; transform-origin: 109.467px 177.224px;"
+         transform-origin="197.47647094726562px 95.51983642578125px"
+         style="transform: none; transform-origin: 197.476px 95.5198px;"
       >
         <circle id="ref_13_series_9_bubble-bubble"
                 fill="#2c77e0"
                 tabindex="0"
-                aria-label="9: 99"
+                aria-label="9: 163"
                 role="graphics-document"
-                r="26.424176193901022"
-                cx="196.40779146971664"
-                cy="338.0232967526682"
+                r="36.44992032481489"
+                cx="362.4014500270848"
+                cy="164.58974820497613"
         >
         </circle>
         <text id="ref_13_series_9_label-text"
               fill="#ffffff"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(196.408px) translateY(338.023px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(362.401px) translateY(164.59px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4381,23 +4381,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="48.80635070800781px 141.52734375px"
-         style="transform: none; transform-origin: 48.8064px 141.527px;"
+         transform-origin="63.907928466796875px 121.96330261230469px"
+         style="transform: none; transform-origin: 63.9079px 121.963px;"
       >
         <circle id="ref_13_series_10_bubble-bubble"
                 fill="#2b8dd8"
                 tabindex="0"
-                aria-label="10: 355"
+                aria-label="10: 102"
                 role="graphics-document"
-                r="50.0377802792167"
-                cx="55.3639855978486"
-                cy="243.01688848899238"
+                r="28.833865415461897"
+                cx="106.7710615835821"
+                cy="225.09274582469646"
         >
         </circle>
         <text id="ref_13_series_10_label-text"
               fill="#ffffff"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(55.364px) translateY(243.017px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(106.771px) translateY(225.093px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4410,23 +4410,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="200.1458740234375px 107.46632385253906px"
-         style="transform: none; transform-origin: 200.146px 107.466px;"
+         transform-origin="98.9231185913086px 190.94383239746094px"
+         style="transform: none; transform-origin: 98.9231px 190.944px;"
       >
         <circle id="ref_13_series_11_bubble-bubble"
                 fill="#2aa1d1"
                 tabindex="0"
-                aria-label="11: 339"
+                aria-label="11: 448"
                 role="graphics-document"
-                r="48.897168192924156"
-                cx="358.66800994491643"
-                cy="176.03549324578623"
+                r="60.42849639985655"
+                cx="144.69117625190898"
+                cy="331.4591569784318"
         >
         </circle>
         <text id="ref_13_series_11_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(358.668px) translateY(176.035px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(144.691px) translateY(331.459px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4439,23 +4439,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="165.180419921875px 57.143463134765625px"
-         style="transform: none; transform-origin: 165.18px 57.1435px;"
+         transform-origin="139.1817626953125px 207.52015686035156px"
+         style="transform: none; transform-origin: 139.182px 207.52px;"
       >
         <circle id="ref_13_series_12_bubble-bubble"
                 fill="#29b5ca"
                 tabindex="0"
-                aria-label="12: 390"
+                aria-label="12: 247"
                 role="graphics-document"
-                r="52.4464579439001"
-                cx="285.7034436883764"
-                cy="71.8404714066551"
+                r="44.869502865537804"
+                cx="241.2830846222421"
+                cy="380.17081508522847"
         >
         </circle>
         <text id="ref_13_series_12_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(285.703px) translateY(71.8405px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(241.283px) translateY(380.171px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4468,23 +4468,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="68.20907592773438px 61.3343505859375px"
-         style="transform: none; transform-origin: 68.2091px 61.3344px;"
+         transform-origin="150.0582733154297px 33.67728042602539px"
+         style="transform: none; transform-origin: 150.058px 33.6773px;"
       >
         <circle id="ref_13_series_13_bubble-bubble"
                 fill="#28c8c3"
                 tabindex="0"
-                aria-label="13: 51"
+                aria-label="13: 125"
                 role="graphics-document"
-                r="18.965703086734425"
-                cx="125.24151528183721"
-                cy="113.70299310051247"
+                r="31.919625524491003"
+                cx="275.98600046787107"
+                cy="45.434934126108345"
         >
         </circle>
         <text id="ref_13_series_13_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(125.242px) translateY(113.703px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(275.986px) translateY(45.4349px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"
@@ -4497,23 +4497,23 @@ exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
         </text>
       </g>
       <g opacity="1"
-         transform-origin="132.895751953125px 207.84909057617188px"
-         style="transform: none; transform-origin: 132.896px 207.849px;"
+         transform-origin="88.26661682128906px 36.69281005859375px"
+         style="transform: none; transform-origin: 88.2666px 36.6928px;"
       >
         <circle id="ref_13_series_14_bubble-bubble"
                 fill="#27dcbc"
                 tabindex="0"
-                aria-label="14: 187"
+                aria-label="14: 143"
                 role="graphics-document"
-                r="36.31655650579519"
-                cx="237.26400814339496"
-                cy="389.3816186735844"
+                r="34.14057253043006"
+                cx="150.18173228449143"
+                cy="49.24504632190664"
         >
         </circle>
         <text id="ref_13_series_14_label-text"
               fill="#000000"
               text-anchor="middle"
-              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(237.264px) translateY(389.382px); transform-origin: 0px -2px;"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(150.182px) translateY(49.245px); transform-origin: 0px -2px;"
               transform-origin="0px -2px"
         >
           <tspan dominant-baseline="alphabetic"

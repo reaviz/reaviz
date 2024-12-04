@@ -651,7 +651,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="0"
-                          cy="46.84713936764781"
+                          cy="46.734693877551024"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -666,7 +666,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="3"
-                          cy="205.64799241397228"
+                          cy="205.6326530612245"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -681,7 +681,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="7"
-                          cy="172.9564609828613"
+                          cy="172.91836734693877"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -696,7 +696,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="10"
-                          cy="46.86351689539637"
+                          cy="46.734693877551024"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -711,7 +711,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="13"
-                          cy="149.60996346894407"
+                          cy="149.55102040816328"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -726,7 +726,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="17"
-                          cy="126.26338137433407"
+                          cy="126.18367346938774"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -741,7 +741,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="20"
-                          cy="172.96402217473008"
+                          cy="172.91836734693877"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -756,7 +756,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="23"
-                          cy="28.21099193586258"
+                          cy="28.040816326530617"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -771,7 +771,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="27"
-                          cy="42.2268728606073"
+                          cy="42.06122448979591"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -786,7 +786,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="30"
-                          cy="9.550494944135304"
+                          cy="9.346938775510214"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -801,7 +801,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="33"
-                          cy="158.96622106741188"
+                          cy="158.89795918367346"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -816,7 +816,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="36"
-                          cy="84.26954703930092"
+                          cy="84.12244897959182"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -831,7 +831,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="40"
-                          cy="32.92260314248951"
+                          cy="32.71428571428572"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -846,7 +846,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="43"
-                          cy="56.273670214316105"
+                          cy="56.081632653061234"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -861,7 +861,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="46"
-                          cy="210.32850587947814"
+                          cy="210.3061224489796"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -876,7 +876,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="50"
-                          cy="51.6259156818305"
+                          cy="51.40816326530613"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -891,7 +891,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="53"
-                          cy="79.64087934345677"
+                          cy="79.44897959183675"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -906,7 +906,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="56"
-                          cy="102.98578273275643"
+                          cy="102.81632653061226"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -921,7 +921,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="60"
-                          cy="126.32821197086642"
+                          cy="126.18367346938774"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -936,7 +936,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="63"
-                          cy="19.002418510676602"
+                          cy="18.693877551020403"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -951,7 +951,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="66"
-                          cy="33.01552433365009"
+                          cy="32.71428571428572"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -966,7 +966,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="70"
-                          cy="61.02525665897909"
+                          cy="60.75510204081632"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -981,7 +981,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="73"
-                          cy="135.6879141665687"
+                          cy="135.53061224489795"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -996,7 +996,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="76"
-                          cy="70.38115947785411"
+                          cy="70.10204081632654"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1011,7 +1011,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="80"
-                          cy="117.04302451706305"
+                          cy="116.83673469387756"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1026,7 +1026,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="83"
-                          cy="33.091173441294046"
+                          cy="32.71428571428572"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1041,7 +1041,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="86"
-                          cy="121.7264410422755"
+                          cy="121.51020408163264"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1056,7 +1056,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="89"
-                          cy="0.4806790109242886"
+                          cy="0"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1071,7 +1071,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="93"
-                          cy="173.04220115921902"
+                          cy="172.91836734693877"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1086,7 +1086,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="96"
-                          cy="93.78086598157608"
+                          cy="93.46938775510205"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1101,7 +1101,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="99"
-                          cy="224.33879268484284"
+                          cy="224.32653061224488"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1116,7 +1116,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="103"
-                          cy="33.2069778980448"
+                          cy="32.71428571428572"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1131,7 +1131,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="106"
-                          cy="117.13160047064727"
+                          cy="116.83673469387756"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1146,7 +1146,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="109"
-                          cy="42.574230414694505"
+                          cy="42.06122448979591"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1161,7 +1161,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="113"
-                          cy="37.93747941321485"
+                          cy="37.387755102040806"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1176,7 +1176,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="116"
-                          cy="47.28144270737428"
+                          cy="46.734693877551024"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1191,7 +1191,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="119"
-                          cy="219.68369192869437"
+                          cy="219.6530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1206,7 +1206,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="123"
-                          cy="215.02689666999078"
+                          cy="214.9795918367347"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1221,7 +1221,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="126"
-                          cy="121.87921124858748"
+                          cy="121.51020408163264"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1236,7 +1236,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="129"
-                          cy="84.64180333348891"
+                          cy="84.12244897959182"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1251,7 +1251,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="133"
-                          cy="14.825174898868925"
+                          cy="14.020408163265296"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1266,7 +1266,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="136"
-                          cy="154.51820747442156"
+                          cy="154.22448979591837"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1281,7 +1281,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="139"
-                          cy="89.36996954328878"
+                          cy="88.79591836734694"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1296,7 +1296,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="142"
-                          cy="121.97064218672251"
+                          cy="121.51020408163264"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1311,7 +1311,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="146"
-                          cy="145.25459602648957"
+                          cy="144.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1326,7 +1326,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="149"
-                          cy="163.8810965596717"
+                          cy="163.57142857142858"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1341,7 +1341,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="152"
-                          cy="29.030331164741092"
+                          cy="28.040816326530617"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1356,7 +1356,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="156"
-                          cy="210.40436823205772"
+                          cy="210.3061224489796"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1371,7 +1371,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="159"
-                          cy="136.03449743788508"
+                          cy="135.53061224489795"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1386,7 +1386,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="162"
-                          cy="122.1153620563305"
+                          cy="121.51020408163264"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1401,7 +1401,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="166"
-                          cy="112.85037895569056"
+                          cy="112.16326530612244"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1416,7 +1416,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="169"
-                          cy="117.52608631999738"
+                          cy="116.83673469387756"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1431,7 +1431,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="172"
-                          cy="201.1413566333545"
+                          cy="200.95918367346937"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1446,7 +1446,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="176"
-                          cy="38.67129589816744"
+                          cy="37.387755102040806"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1461,7 +1461,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="179"
-                          cy="182.5946953803189"
+                          cy="182.26530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1476,7 +1476,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="182"
-                          cy="48.06752102922514"
+                          cy="46.734693877551024"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1491,7 +1491,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="186"
-                          cy="6.386426665215563"
+                          cy="4.673469387755107"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1506,7 +1506,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="189"
-                          cy="20.37170763291643"
+                          cy="18.693877551020403"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1521,7 +1521,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="192"
-                          cy="94.60018751869323"
+                          cy="93.46938775510205"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1536,7 +1536,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="195"
-                          cy="145.61214710169546"
+                          cy="144.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1551,7 +1551,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="199"
-                          cy="145.64485651312802"
+                          cy="144.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1566,7 +1566,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="202"
-                          cy="122.53311824943793"
+                          cy="121.51020408163264"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1581,7 +1581,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="205"
-                          cy="16.152851618830784"
+                          cy="14.020408163265296"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1596,7 +1596,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="209"
-                          cy="62.49904111598799"
+                          cy="60.75510204081632"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1611,7 +1611,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="212"
-                          cy="224.38167543192515"
+                          cy="224.32653061224488"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1626,7 +1626,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="215"
-                          cy="196.65948000793992"
+                          cy="196.2857142857143"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1641,7 +1641,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="219"
-                          cy="205.91289818868523"
+                          cy="205.6326530612245"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1656,7 +1656,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="222"
-                          cy="39.749045006946446"
+                          cy="37.387755102040806"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1671,7 +1671,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="225"
-                          cy="95.21495583704619"
+                          cy="93.46938775510205"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1686,7 +1686,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="229"
-                          cy="39.96210637078494"
+                          cy="37.387755102040806"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1701,7 +1701,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="232"
-                          cy="178.3173673891021"
+                          cy="177.59183673469389"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1716,7 +1716,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="235"
-                          cy="77.03531435115835"
+                          cy="74.77551020408164"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1731,7 +1731,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="239"
-                          cy="67.93031501085089"
+                          cy="65.42857142857143"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1746,7 +1746,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="242"
-                          cy="54.24304049663127"
+                          cy="51.40816326530613"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1761,7 +1761,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="245"
-                          cy="3.813782848947789"
+                          cy="0"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1776,7 +1776,7 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="248"
-                          cy="127.9751030782099"
+                          cy="126.18367346938774"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -1791,9 +1791,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="252"
-                          cy="54.63220886796626"
+                          cy="51.40816326530613"
                           r="4"
-                          opacity="0.9896417839393262"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1806,9 +1806,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="255"
-                          cy="201.497297291783"
+                          cy="200.95918367346937"
                           r="4"
-                          opacity="0.989179192965865"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1821,9 +1821,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="258"
-                          cy="160.28930752575224"
+                          cy="158.89795918367346"
                           r="4"
-                          opacity="0.9886963958045036"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1836,9 +1836,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="262"
-                          cy="59.65034736246509"
+                          cy="56.081632653061234"
                           r="4"
-                          opacity="0.9881925364930343"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1851,9 +1851,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="265"
-                          cy="146.69396889257948"
+                          cy="144.87755102040816"
                           r="4"
-                          opacity="0.987666724413525"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1866,9 +1866,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="268"
-                          cy="137.63554204294078"
+                          cy="135.53061224489795"
                           r="4"
-                          opacity="0.9871180329887356"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1881,9 +1881,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="272"
-                          cy="55.57223731112684"
+                          cy="51.40816326530613"
                           r="4"
-                          opacity="0.9865454983359611"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1895,10 +1895,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="275.01035401840613"
-                          cy="10.158714398251673"
-                          r="4.010354018406153"
-                          opacity="0.9859481178773649"
+                          cx="275"
+                          cy="4.673469387755107"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1910,10 +1910,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="278.01087647934213"
-                          cy="87.85370643290048"
-                          r="4.010876479342107"
-                          opacity="0.9851969938195878"
+                          cx="278"
+                          cy="84.12244897959182"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1925,10 +1925,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="282.0113309322583"
-                          cy="138.0459608466339"
-                          r="4.011330932258331"
-                          opacity="0.9845412235674134"
+                          cx="282"
+                          cy="135.53061224489795"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1940,10 +1940,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="285.0118033944964"
-                          cy="197.21176001568998"
-                          r="4.01180339449641"
-                          opacity="0.9838571222328513"
+                          cx="285"
+                          cy="196.2857142857143"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1955,10 +1955,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="288.0122945181398"
-                          cy="11.225108756749956"
-                          r="4.012294518139806"
-                          opacity="0.9831435085244589"
+                          cx="288"
+                          cy="4.673469387755107"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1971,9 +1971,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="292"
-                          cy="70.41489986726147"
+                          cy="65.42857142857143"
                           r="4"
-                          opacity="0.9823991544932121"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -1985,10 +1985,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="295.0133354558869"
-                          cy="188.28598478366146"
-                          r="4.013335455886883"
-                          opacity="0.9816227838534264"
+                          cx="295"
+                          cy="186.9387755102041"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2000,10 +2000,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="298.01388667290996"
-                          cy="215.45718391830908"
-                          r="4.0138866729099805"
-                          opacity="0.9808130702541491"
+                          cx="298"
+                          cy="214.9795918367347"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2015,10 +2015,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="301.0144593576847"
-                          cy="183.89167882303516"
-                          r="4.014459357684717"
-                          opacity="0.9799686355003626"
+                          cx="301"
+                          cy="182.26530612244898"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2030,10 +2030,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="305.0150542625633"
-                          cy="116.38049466987586"
-                          r="4.015054262563273"
-                          opacity="0.9790880477233919"
+                          cx="305"
+                          cy="112.16326530612244"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2045,10 +2045,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="308.01567216061284"
-                          cy="89.57136847816759"
-                          r="4.015672160612845"
-                          opacity="0.9781698194999863"
+                          cx="308"
+                          cy="84.12244897959182"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2060,10 +2060,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="311.0163138457621"
-                          cy="53.877843626029076"
-                          r="4.016313845762089"
-                          opacity="0.9772124059196213"
+                          cx="311"
+                          cy="46.734693877551024"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2075,10 +2075,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="315.0169801329081"
-                          cy="143.84090998540023"
-                          r="4.016980132908115"
-                          opacity="0.9762142025996542"
+                          cx="315"
+                          cy="140.20408163265307"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2090,10 +2090,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="318.0176718579796"
-                          cy="152.94513997415757"
-                          r="4.017671857979617"
-                          opacity="0.9751735436480684"
+                          cx="318"
+                          cy="149.55102040816328"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2105,10 +2105,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="321.01838987795134"
-                          cy="117.35766020881648"
-                          r="4.018389877951359"
-                          opacity="0.9740886995736482"
+                          cx="321"
+                          cy="112.16326530612244"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2121,9 +2121,9 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="325"
-                          cy="28.424359586922304"
+                          cy="18.693877551020403"
                           r="4"
-                          opacity="0.9729578751435505"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2135,10 +2135,10 @@ exports[`Utils/Zoom Pan Area smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="328.0199083354297"
-                          cy="117.8064238289326"
-                          r="4.019908335429706"
-                          opacity="0.971779207188371"
+                          cx="328"
+                          cy="112.16326530612244"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -2758,7 +2758,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                     fill="none"
                     d="M-107,56.939L-86,250.531L-64,210.673L-43,56.939L-21,182.204L0,153.735L21,210.673L43,34.163L64,51.245L86,11.388L107,193.592L128,102.49L150,39.857L171,68.327L193,256.224L214,62.633L235,96.796L257,125.265L278,153.735L300,22.776L321,39.857L342,74.02L364,165.122L385,85.408L407,142.347L428,39.857L449,148.041L471,0L492,210.673L514,113.878L535,273.306L556,39.857L578,142.347L599,51.245L621,45.551L642,56.939L663,267.612L685,261.918L706,148.041L728,102.49L749,17.082L770,187.898L792,108.184L813,148.041L835,176.51L856,199.286L877,34.163L899,256.224L920,165.122L942,148.041L963,136.653L984,142.347L1006,244.837L1027,45.551L1049,222.061L1070,56.939L1091,5.694L1113,22.776L1134,113.878L1156,176.51L1177,176.51L1198,148.041L1220,17.082L1241,74.02L1263,273.306L1284,239.143L1305,250.531L1327,45.551L1348,113.878L1370,45.551L1391,216.367L1412,91.102L1434,79.714L1455,62.633L1477,0L1498,153.735L1519,62.633L1541,244.837L1562,193.592L1584,68.327L1605,176.51L1626,165.122L1648,62.633L1669,5.694L1691,102.49L1712,165.122L1733,239.143L1755,5.694L1776,79.714L1798,227.755L1819,261.918L1840,222.061L1862,136.653L1883,102.49L1905,56.939L1926,170.816L1947,182.204L1969,136.653L1990,22.776L2012,136.653"
                     stroke-dasharray="9385.63965 9385.63965"
-                    stroke-dashoffset="5.989619973714169"
+                    stroke-dashoffset="0"
               >
               </path>
               <path opacity="0"
@@ -2785,7 +2785,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="-107"
-                          cy="57.06963787616141"
+                          cy="56.93877551020408"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2800,7 +2800,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="-86"
-                          cy="250.54841148205344"
+                          cy="250.53061224489795"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2815,7 +2815,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="-64"
-                          cy="210.7177602250766"
+                          cy="210.6734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2830,7 +2830,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="-43"
-                          cy="57.08870768168832"
+                          cy="56.93877551020408"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2845,7 +2845,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="-21"
-                          cy="182.27326945038996"
+                          cy="182.20408163265307"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2860,7 +2860,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="0"
-                          cy="153.82827882228912"
+                          cy="153.734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2875,7 +2875,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="21"
-                          cy="210.72703891059467"
+                          cy="210.6734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2890,7 +2890,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="43"
-                          cy="34.363151979714154"
+                          cy="34.163265306122454"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2905,7 +2905,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="64"
-                          cy="51.43946476638825"
+                          cy="51.24489795918367"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2920,7 +2920,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="86"
-                          cy="11.626867376190209"
+                          cy="11.38775510204083"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2935,7 +2935,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="107"
-                          cy="193.6719614015503"
+                          cy="193.59183673469389"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2950,7 +2950,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="128"
-                          cy="102.66256227645408"
+                          cy="102.48979591836734"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2965,7 +2965,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="150"
-                          cy="40.10185149207387"
+                          cy="39.85714285714287"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2980,7 +2980,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="171"
-                          cy="68.55210738936191"
+                          cy="68.32653061224491"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -2995,7 +2995,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="193"
-                          cy="256.25044974647625"
+                          cy="256.2244897959184"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3010,7 +3010,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="214"
-                          cy="62.886156933705394"
+                          cy="62.632653061224495"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3025,7 +3025,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="235"
-                          cy="97.01931174561821"
+                          cy="96.79591836734696"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3040,7 +3040,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="257"
-                          cy="125.46255815082156"
+                          cy="125.26530612244899"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3055,7 +3055,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="278"
-                          cy="153.90292115221828"
+                          cy="153.734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3070,7 +3070,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="300"
-                          cy="23.134770572962537"
+                          cy="22.775510204081627"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3085,7 +3085,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="321"
-                          cy="40.207900168925455"
+                          cy="39.85714285714287"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3100,7 +3100,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="342"
-                          cy="74.33495879385818"
+                          cy="74.0204081632653"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3115,7 +3115,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="364"
-                          cy="165.30553682781803"
+                          cy="165.12244897959184"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3130,7 +3130,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="385"
-                          cy="85.73315951631153"
+                          cy="85.40816326530613"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3145,7 +3145,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="407"
-                          cy="142.58709211082996"
+                          cy="142.3469387755102"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3160,7 +3160,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="428"
-                          cy="40.299991325744244"
+                          cy="39.85714285714287"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3175,7 +3175,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="449"
-                          cy="148.29481855643445"
+                          cy="148.0408163265306"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3190,7 +3190,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="471"
-                          cy="0.5648628693925363"
+                          cy="0"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3205,7 +3205,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="492"
-                          cy="210.81883922914312"
+                          cy="210.6734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3220,7 +3220,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="514"
-                          cy="114.2435093545699"
+                          cy="113.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3235,7 +3235,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="535"
-                          cy="273.3203135205732"
+                          cy="273.3061224489796"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3250,7 +3250,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="556"
-                          cy="40.43614313876855"
+                          cy="39.85714285714287"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3265,7 +3265,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="578"
-                          cy="142.69336156538603"
+                          cy="142.3469387755102"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3280,7 +3280,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="599"
-                          cy="51.84778726012261"
+                          cy="51.24489795918367"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3295,7 +3295,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="621"
-                          cy="46.19708395033382"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3310,7 +3310,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="642"
-                          cy="57.58134437641324"
+                          cy="56.93877551020408"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3325,7 +3325,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="663"
-                          cy="267.64796824474274"
+                          cy="267.61224489795916"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3340,7 +3340,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="685"
-                          cy="261.9736843866872"
+                          cy="261.9183673469388"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3355,7 +3355,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="706"
-                          cy="148.47439597907095"
+                          cy="148.0408163265306"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3370,7 +3370,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="728"
-                          cy="103.1001632100417"
+                          cy="102.48979591836734"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3385,7 +3385,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="749"
-                          cy="18.027621246785234"
+                          cy="17.081632653061213"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3400,7 +3400,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="770"
-                          cy="188.2429916505057"
+                          cy="187.8979591836735"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3415,7 +3415,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="792"
-                          cy="108.85836425466705"
+                          cy="108.18367346938776"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3430,7 +3430,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="813"
-                          cy="148.5818985274026"
+                          cy="148.0408163265306"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3445,7 +3445,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="835"
-                          cy="176.95320981849102"
+                          cy="176.51020408163265"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3460,7 +3460,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="856"
-                          cy="199.64627446650957"
+                          cy="199.28571428571428"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3475,7 +3475,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="877"
-                          cy="35.316370027686844"
+                          cy="34.163265306122454"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3490,7 +3490,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="899"
-                          cy="256.3395655737327"
+                          cy="256.2244897959184"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3505,7 +3505,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="920"
-                          cy="165.71461051149097"
+                          cy="165.12244897959184"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3520,7 +3520,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="942"
-                          cy="148.75209105599907"
+                          cy="148.0408163265306"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3535,7 +3535,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="963"
-                          cy="137.46073370641594"
+                          cy="136.6530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3550,7 +3550,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="984"
-                          cy="143.15724371054102"
+                          cy="142.3469387755102"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3565,7 +3565,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1006"
-                          cy="245.05043762563946"
+                          cy="244.83673469387753"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3580,7 +3580,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1027"
-                          cy="47.060297280581246"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3595,7 +3595,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1049"
-                          cy="222.44807062384157"
+                          cy="222.0612244897959"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3610,7 +3610,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1070"
-                          cy="58.50607152297696"
+                          cy="56.93877551020408"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3625,7 +3625,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1091"
-                          cy="7.7084005814120555"
+                          cy="5.693877551020415"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3640,7 +3640,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1113"
-                          cy="24.74873950471336"
+                          cy="22.775510204081627"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3655,7 +3655,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1134"
-                          cy="115.20721229690322"
+                          cy="113.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3670,7 +3670,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1156"
-                          cy="177.37371331893783"
+                          cy="176.51020408163265"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3685,7 +3685,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1177"
-                          cy="177.41219336904194"
+                          cy="176.51020408163265"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3700,7 +3700,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1198"
-                          cy="149.24356148546832"
+                          cy="148.0408163265306"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3715,7 +3715,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1220"
-                          cy="19.589952222139612"
+                          cy="17.081632653061213"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3730,7 +3730,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1241"
-                          cy="76.07160977345745"
+                          cy="74.0204081632653"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3745,7 +3745,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1263"
-                          cy="273.37003115081"
+                          cy="273.3061224489796"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3760,7 +3760,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1284"
-                          cy="239.5816824310846"
+                          cy="239.14285714285717"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3775,7 +3775,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1305"
-                          cy="250.85934881884236"
+                          cy="250.53061224489795"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3790,7 +3790,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1327"
-                          cy="48.328896396557575"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3805,7 +3805,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1348"
-                          cy="115.94864152456317"
+                          cy="113.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3820,7 +3820,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1370"
-                          cy="48.60604290845536"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3835,7 +3835,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1391"
-                          cy="217.22743585672927"
+                          cy="216.3673469387755"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3850,7 +3850,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1412"
-                          cy="93.78368048178815"
+                          cy="91.10204081632654"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3865,7 +3865,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1434"
-                          cy="82.68319939847973"
+                          cy="79.71428571428571"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3880,7 +3880,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1455"
-                          cy="65.99713395316353"
+                          cy="62.632653061224495"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3895,7 +3895,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1477"
-                          cy="4.526837163075102"
+                          cy="0"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3910,7 +3910,7 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1498"
-                          cy="155.8602607673371"
+                          cy="153.734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -3925,9 +3925,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1519"
-                          cy="66.45935919315454"
+                          cy="62.632653061224495"
                           r="4"
-                          opacity="0.9899099830940052"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -3940,9 +3940,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1541"
-                          cy="245.47401650164846"
+                          cy="244.83673469387753"
                           r="4"
-                          opacity="0.9894591189145017"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -3955,9 +3955,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1562"
-                          cy="195.24229204558782"
+                          cy="193.59183673469389"
                           r="4"
-                          opacity="0.9889885460163549"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -3970,9 +3970,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1584"
-                          cy="72.56269347387838"
+                          cy="68.32653061224491"
                           r="4"
-                          opacity="0.9884974286224248"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -3985,9 +3985,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1605"
-                          cy="178.66541955343834"
+                          cy="176.51020408163265"
                           r="4"
-                          opacity="0.987984897061959"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4000,9 +4000,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1626"
-                          cy="167.62029859432883"
+                          cy="165.12244897959184"
                           r="4"
-                          opacity="0.9874500464920951"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4015,9 +4015,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1648"
-                          cy="67.57607922844348"
+                          cy="62.632653061224495"
                           r="4"
-                          opacity="0.9868919355773615"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4029,10 +4029,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1669.0101018395465"
-                          cy="12.206548190474265"
-                          r="4.010101839546439"
-                          opacity="0.9863095851262286"
+                          cx="1669"
+                          cy="5.693877551020415"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4044,10 +4044,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1691.0105254577975"
-                          cy="106.88191909355216"
-                          r="4.0105254577974305"
-                          opacity="0.9857019766837776"
+                          cx="1691"
+                          cy="102.48979591836734"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4059,10 +4059,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1712.0109659598313"
-                          cy="168.08260536462413"
-                          r="4.010965959831337"
-                          opacity="0.9850680510795722"
+                          cx="1712"
+                          cy="165.12244897959184"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4074,10 +4074,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1733.0114239633722"
-                          cy="240.23111175586297"
-                          r="4.011423963372257"
-                          opacity="0.9844067069298387"
+                          cx="1733"
+                          cy="239.14285714285717"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4089,10 +4089,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1755.0119001051041"
-                          cy="13.40844773982788"
-                          r="4.011900105104246"
-                          opacity="0.9837167990930855"
+                          cx="1755"
+                          cy="5.693877551020415"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4104,10 +4104,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1776.0123950409916"
-                          cy="85.58526303515289"
-                          r="4.012395040991681"
-                          opacity="0.9829971370783267"
+                          cx="1776"
+                          cy="79.71428571428571"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4120,9 +4120,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1798"
-                          cy="229.33933190655802"
+                          cy="227.75510204081633"
                           r="4"
-                          opacity="0.9822464834051076"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4134,10 +4134,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1819.0134440172926"
-                          cy="262.47808992589506"
-                          r="4.013444017292726"
-                          opacity="0.9814635519145749"
+                          cx="1819"
+                          cy="261.9183673469388"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4149,10 +4149,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1840.0139994686665"
-                          cy="223.97427234118163"
-                          r="4.013999468666456"
-                          opacity="0.9806470060308845"
+                          cx="1840"
+                          cy="222.0612244897959"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4165,9 +4165,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="1862"
-                          cy="141.6186179753091"
+                          cy="136.6530612244898"
                           r="4"
-                          opacity="0.9797954569722894"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4179,10 +4179,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1883.015175977615"
-                          cy="108.90673500457498"
-                          r="4.015175977614994"
-                          opacity="0.9789074619113242"
+                          cx="1883"
+                          cy="102.48979591836734"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4194,10 +4194,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1905.0157985689004"
-                          cy="65.35227380186018"
-                          r="4.015798568900494"
-                          opacity="0.9779815220835633"
+                          cx="1905"
+                          cy="56.93877551020408"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4209,10 +4209,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1926.016445108585"
-                          cy="175.09834870148123"
-                          r="4.016445108584931"
-                          opacity="0.9770160808445201"
+                          cx="1926"
+                          cy="170.81632653061226"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4224,10 +4224,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1947.0172537228664"
-                          cy="186.23358364611005"
-                          r="4.017253722866344"
-                          opacity="0.9758031290989098"
+                          cx="1947"
+                          cy="182.20408163265307"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4239,10 +4239,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1969.0179558618831"
-                          cy="142.82194996240543"
-                          r="4.0179558618831"
-                          opacity="0.9747450072701115"
+                          cx="1969"
+                          cy="136.6530612244898"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4254,10 +4254,10 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                 >
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
-                          cx="1990.018684644476"
-                          cy="34.335225950241906"
-                          r="4.018684644476026"
-                          opacity="0.973641990236079"
+                          cx="1990"
+                          cy="22.775510204081627"
+                          r="4"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -4270,9 +4270,9 @@ exports[`Utils/Zoom Pan DefaultZoom smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="2012"
-                          cy="143.35550606962113"
+                          cy="136.6530612244898"
                           r="4"
-                          opacity="0.9724922558556703"
+                          opacity="1"
                           style="cursor: pointer;"
                   >
                   </circle>
@@ -5046,7 +5046,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                     fill="none"
                     d="M0,56.939L4,250.531L9,210.673L13,56.939L17,182.204L22,153.735L26,210.673L30,34.163L35,51.245L39,11.388L43,193.592L48,102.49L52,39.857L56,68.327L61,256.224L65,62.633L69,96.796L73,125.265L78,153.735L82,22.776L86,39.857L91,74.02L95,165.122L99,85.408L104,142.347L108,39.857L112,148.041L117,0L121,210.673L125,113.878L130,273.306L134,39.857L138,142.347L143,51.245L147,45.551L151,56.939L156,267.612L160,261.918L164,148.041L169,102.49L173,17.082L177,187.898L182,108.184L186,148.041L190,176.51L195,199.286L199,34.163L203,256.224L208,165.122L212,148.041L216,136.653L220,142.347L225,244.837L229,45.551L233,222.061L238,56.939L242,5.694L246,22.776L251,113.878L255,176.51L259,176.51L264,148.041L268,17.082L272,74.02L277,273.306L281,239.143L285,250.531L290,45.551L294,113.878L298,45.551L303,216.367L307,91.102L311,79.714L316,62.633L320,0L324,153.735L329,62.633L333,244.837L337,193.592L342,68.327L346,176.51L350,165.122L355,62.633L359,5.694L363,102.49L367,165.122L372,239.143L376,5.694L380,79.714L385,227.755L389,261.918L393,222.061L398,136.653L402,102.49L406,56.939L411,170.816L415,182.204L419,136.653L424,22.776L428,136.653"
                     stroke-dasharray="8954.17383 8954.17383"
-                    stroke-dashoffset="0.07065982880309875"
+                    stroke-dashoffset="0"
               >
               </path>
               <path opacity="0"
@@ -5673,7 +5673,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="173"
-                          cy="17.094353000453832"
+                          cy="17.081632653061213"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5763,7 +5763,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="199"
-                          cy="34.17896239986386"
+                          cy="34.163265306122454"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5823,7 +5823,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="216"
-                          cy="136.66405448137255"
+                          cy="136.6530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5838,7 +5838,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="220"
-                          cy="142.35799232905407"
+                          cy="142.3469387755102"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5868,7 +5868,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="229"
-                          cy="45.57189156412965"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5898,7 +5898,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="238"
-                          cy="56.960548346564025"
+                          cy="56.93877551020408"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5913,7 +5913,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="242"
-                          cy="5.721927687725771"
+                          cy="5.693877551020415"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5928,7 +5928,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="246"
-                          cy="22.8030499730596"
+                          cy="22.775510204081627"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5943,7 +5943,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="251"
-                          cy="113.89615363152956"
+                          cy="113.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5958,7 +5958,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="255"
-                          cy="176.52231500075183"
+                          cy="176.51020408163265"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5973,7 +5973,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="259"
-                          cy="176.5228853177428"
+                          cy="176.51020408163265"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -5988,7 +5988,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="264"
-                          cy="148.05776643518368"
+                          cy="148.0408163265306"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6003,7 +6003,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="268"
-                          cy="17.11706605518652"
+                          cy="17.081632653061213"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6018,7 +6018,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="272"
-                          cy="74.04945726881162"
+                          cy="74.0204081632653"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6078,7 +6078,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="290"
-                          cy="45.5907651722784"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6093,7 +6093,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="294"
-                          cy="113.9070070575435"
+                          cy="113.87755102040816"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6108,7 +6108,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="298"
-                          cy="45.5945844721259"
+                          cy="45.551020408163254"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6123,7 +6123,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="303"
-                          cy="216.37964864990457"
+                          cy="216.3673469387755"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6138,7 +6138,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="307"
-                          cy="91.14048966855864"
+                          cy="91.10204081632654"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6153,7 +6153,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="311"
-                          cy="79.75697069318663"
+                          cy="79.71428571428571"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6168,7 +6168,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="316"
-                          cy="62.681159830739276"
+                          cy="62.632653061224495"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6183,7 +6183,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="320"
-                          cy="0.06544728570025919"
+                          cy="0"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6198,7 +6198,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="324"
-                          cy="153.76551617675625"
+                          cy="153.734693877551"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6213,7 +6213,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="329"
-                          cy="62.68829817284453"
+                          cy="62.632653061224495"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6243,7 +6243,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="337"
-                          cy="193.61598280224436"
+                          cy="193.59183673469389"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6258,7 +6258,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="342"
-                          cy="68.38867808722317"
+                          cy="68.32653061224491"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6273,7 +6273,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="346"
-                          cy="176.54192309769212"
+                          cy="176.51020408163265"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6288,7 +6288,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="350"
-                          cy="165.15932220294098"
+                          cy="165.12244897959184"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6303,7 +6303,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="355"
-                          cy="62.705844677863496"
+                          cy="62.632653061224495"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6318,7 +6318,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="359"
-                          cy="5.79060260917843"
+                          cy="5.693877551020415"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6333,7 +6333,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="363"
-                          cy="102.55523812376742"
+                          cy="102.48979591836734"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6348,7 +6348,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="367"
-                          cy="165.16670111969054"
+                          cy="165.12244897959184"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6363,7 +6363,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="372"
-                          cy="239.15918721950516"
+                          cy="239.14285714285717"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6378,7 +6378,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="376"
-                          cy="5.811002776880349"
+                          cy="5.693877551020415"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6393,7 +6393,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="380"
-                          cy="79.80372149598098"
+                          cy="79.71428571428571"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6408,7 +6408,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="385"
-                          cy="227.77932852932486"
+                          cy="227.75510204081633"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6438,7 +6438,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="393"
-                          cy="222.09067894928654"
+                          cy="222.0612244897959"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6453,7 +6453,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="398"
-                          cy="136.72975375831004"
+                          cy="136.6530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6468,7 +6468,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="402"
-                          cy="102.58925133461221"
+                          cy="102.48979591836734"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6483,7 +6483,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="406"
-                          cy="57.06963787616141"
+                          cy="56.93877551020408"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6498,7 +6498,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="411"
-                          cy="170.88318206606772"
+                          cy="170.81632653061226"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6513,7 +6513,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="415"
-                          cy="182.2667053437741"
+                          cy="182.20408163265307"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6528,7 +6528,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="419"
-                          cy="136.74928119630553"
+                          cy="136.6530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6543,7 +6543,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="424"
-                          cy="22.956477145888197"
+                          cy="22.775510204081627"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -6558,7 +6558,7 @@ exports[`Utils/Zoom Pan Line smoke-test 1`] = `
                   <circle class="_point_u68jv_1"
                           fill="#2d60e8"
                           cx="428"
-                          cy="136.75840379052863"
+                          cy="136.6530612244898"
                           r="4"
                           opacity="1"
                           style="cursor: pointer;"
@@ -7217,7 +7217,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="339"
-                        cy="271.23665648667355"
+                        cy="271.2"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7232,7 +7232,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="0"
-                        cy="0.19077608871900165"
+                        cy="0"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7247,7 +7247,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="344"
-                        cy="135.7198875919543"
+                        cy="135.6"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7262,7 +7262,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="349"
-                        cy="67.96717604225543"
+                        cy="67.79999999999998"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7277,7 +7277,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="349"
-                        cy="101.85310137151357"
+                        cy="101.70000000000002"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7292,7 +7292,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="353"
-                        cy="67.98304231853027"
+                        cy="67.79999999999998"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7307,7 +7307,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="465"
-                        cy="101.86762448576651"
+                        cy="101.70000000000002"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7322,7 +7322,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="470"
-                        cy="203.50127813172264"
+                        cy="203.4"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7337,7 +7337,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="358"
-                        cy="101.88517704553536"
+                        cy="101.70000000000002"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7352,7 +7352,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="363"
-                        cy="237.38324412737876"
+                        cy="237.29999999999998"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7367,7 +7367,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="42"
-                        cy="135.77380191847345"
+                        cy="135.6"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7382,7 +7382,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="367"
-                        cy="237.3911190456707"
+                        cy="237.29999999999998"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7397,7 +7397,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="367"
-                        cy="237.39532828971713"
+                        cy="237.29999999999998"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7412,7 +7412,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="372"
-                        cy="237.3997296319351"
+                        cy="237.29999999999998"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7427,7 +7427,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="372"
-                        cy="203.5389553884719"
+                        cy="203.4"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7442,7 +7442,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="377"
-                        cy="68.09024665405684"
+                        cy="67.79999999999998"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7457,7 +7457,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="377"
-                        cy="101.96573572546262"
+                        cy="101.70000000000002"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7472,7 +7472,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="381"
-                        cy="271.2797984632776"
+                        cy="271.2"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7487,7 +7487,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="79"
-                        cy="237.4249336357803"
+                        cy="237.29999999999998"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7502,7 +7502,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="84"
-                        cy="271.2873136530085"
+                        cy="271.2"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7517,7 +7517,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="88"
-                        cy="203.58205680520717"
+                        cy="203.4"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7532,7 +7532,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="391"
-                        cy="169.73787410101795"
+                        cy="169.5"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7547,7 +7547,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="391"
-                        cy="68.19768827138634"
+                        cy="67.79999999999998"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7562,7 +7562,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="493"
-                        cy="68.21594690766857"
+                        cy="67.79999999999998"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7577,7 +7577,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="107"
-                        cy="34.38932167991865"
+                        cy="33.89999999999999"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7592,7 +7592,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="400"
-                        cy="271.3143084590867"
+                        cy="271.2"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7607,7 +7607,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="497"
-                        cy="203.63830873822587"
+                        cy="203.4"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7622,7 +7622,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="121"
-                        cy="169.81132386637765"
+                        cy="169.5"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7637,7 +7637,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="125"
-                        cy="237.49568696328384"
+                        cy="237.29999999999998"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7652,7 +7652,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="409"
-                        cy="34.512122087752424"
+                        cy="33.89999999999999"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7667,7 +7667,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="135"
-                        cy="203.68501096545742"
+                        cy="203.4"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7682,7 +7682,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="507"
-                        cy="169.8722943217266"
+                        cy="169.5"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7697,7 +7697,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="144"
-                        cy="68.4222520288519"
+                        cy="67.79999999999998"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7712,7 +7712,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="149"
-                        cy="271.3634616187747"
+                        cy="271.2"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7727,7 +7727,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="418"
-                        cy="0.8501043913638661"
+                        cy="0"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7742,7 +7742,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="158"
-                        cy="136.13376912426318"
+                        cy="135.6"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7757,7 +7757,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="511"
-                        cy="102.35088120565248"
+                        cy="101.70000000000002"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7772,7 +7772,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="428"
-                        cy="237.59498100816083"
+                        cy="237.29999999999998"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7787,7 +7787,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="172"
-                        cy="203.81074044160385"
+                        cy="203.4"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7802,7 +7802,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="432"
-                        cy="170.03639915239958"
+                        cy="169.5"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7817,7 +7817,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="181"
-                        cy="305.2133214705768"
+                        cy="305.1"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7832,7 +7832,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="437"
-                        cy="203.8692555234968"
+                        cy="203.4"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7847,7 +7847,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="191"
-                        cy="136.3349907999935"
+                        cy="135.6"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7862,7 +7862,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="525"
-                        cy="102.59605217003259"
+                        cy="101.70000000000002"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7877,7 +7877,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="200"
-                        cy="305.2352957057029"
+                        cy="305.1"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7892,7 +7892,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="446"
-                        cy="203.9601920694889"
+                        cy="203.4"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7907,7 +7907,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="209"
-                        cy="102.72321299178402"
+                        cy="101.70000000000002"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7922,7 +7922,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="214"
-                        cy="170.26443801469964"
+                        cy="169.5"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7937,7 +7937,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="530"
-                        cy="35.33641541771093"
+                        cy="33.89999999999999"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7952,7 +7952,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="456"
-                        cy="136.60150701213118"
+                        cy="135.6"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7967,7 +7967,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="228"
-                        cy="69.19474432529022"
+                        cy="67.79999999999998"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7982,7 +7982,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="233"
-                        cy="271.56615233989237"
+                        cy="271.2"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -7997,7 +7997,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="460"
-                        cy="69.32307647793978"
+                        cy="67.79999999999998"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8012,7 +8012,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="242"
-                        cy="204.19704647095773"
+                        cy="203.4"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8027,7 +8027,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="465"
-                        cy="237.9252954779478"
+                        cy="237.29999999999998"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8042,7 +8042,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="470"
-                        cy="103.22072909802564"
+                        cy="101.70000000000002"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8057,7 +8057,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="470"
-                        cy="170.63575692687553"
+                        cy="169.5"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8072,7 +8072,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="474"
-                        cy="36.03346172321315"
+                        cy="33.89999999999999"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8087,7 +8087,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="474"
-                        cy="103.43430831028815"
+                        cy="101.70000000000002"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8102,7 +8102,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="479"
-                        cy="305.36168822425543"
+                        cy="305.1"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8117,7 +8117,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="479"
-                        cy="69.96263698575805"
+                        cy="67.79999999999998"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8132,7 +8132,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="279"
-                        cy="305.38556568746634"
+                        cy="305.1"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8147,7 +8147,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="553"
-                        cy="204.58180453387516"
+                        cy="203.4"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8162,7 +8162,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="488"
-                        cy="103.85728715732671"
+                        cy="101.70000000000002"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8177,7 +8177,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="558"
-                        cy="171.11064822464826"
+                        cy="169.5"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8192,7 +8192,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="493"
-                        cy="271.87547306894265"
+                        cy="271.2"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8207,7 +8207,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="302"
-                        cy="3.5093414264622984"
+                        cy="0"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8222,7 +8222,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="497"
-                        cy="3.6649929966735475"
+                        cy="0"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8237,7 +8237,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="563"
-                        cy="104.38063208107903"
+                        cy="101.70000000000002"
                         r="11"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8252,7 +8252,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="502"
-                        cy="37.49761617092074"
+                        cy="33.89999999999999"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8267,7 +8267,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="502"
-                        cy="171.58940827101623"
+                        cy="169.5"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8282,7 +8282,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="567"
-                        cy="37.82260017401613"
+                        cy="33.89999999999999"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8297,7 +8297,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="507"
-                        cy="171.77793607590436"
+                        cy="169.5"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8312,7 +8312,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="572"
-                        cy="105.02723422649528"
+                        cy="101.70000000000002"
                         r="7"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8327,7 +8327,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="511"
-                        cy="138.6041051498232"
+                        cy="135.6"
                         r="5"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8342,7 +8342,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="344"
-                        cy="238.87138754185156"
+                        cy="237.29999999999998"
                         r="15"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8357,7 +8357,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="576"
-                        cy="305.65139146823014"
+                        cy="305.1"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8372,7 +8372,7 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="576"
-                        cy="39.02255222471244"
+                        cy="33.89999999999999"
                         r="10"
                         opacity="1"
                         style="cursor: pointer;"
@@ -8387,9 +8387,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="576"
-                        cy="305.70076921083034"
+                        cy="305.1"
                         r="7"
-                        opacity="0.9899978621194426"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8402,9 +8402,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="581"
-                        cy="205.8847254795646"
+                        cy="203.4"
                         r="11"
-                        opacity="0.9895508422854776"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8417,9 +8417,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="367"
-                        cy="106.23214734489812"
+                        cy="101.70000000000002"
                         r="10"
-                        opacity="0.9890842769306709"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8432,9 +8432,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="581"
-                        cy="73.20442016209071"
+                        cy="67.79999999999998"
                         r="5"
-                        opacity="0.9885973369068146"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8447,9 +8447,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="586"
-                        cy="139.8321892305085"
+                        cy="135.6"
                         r="15"
-                        opacity="0.9880891594228313"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8462,9 +8462,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="535"
-                        cy="106.8509331940125"
+                        cy="101.70000000000002"
                         r="7"
-                        opacity="0.9875588467745624"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8477,9 +8477,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="535"
-                        cy="73.94130509494117"
+                        cy="67.79999999999998"
                         r="10"
-                        opacity="0.9870054650327466"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8491,10 +8491,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="590.0100190889056"
-                        cy="239.70922848920594"
-                        r="5.010019088905544"
-                        opacity="0.9864280426882344"
+                        cx="590"
+                        cy="237.29999999999998"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8506,10 +8506,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="539.0104394028818"
-                        cy="8.354529002873594"
-                        r="10.010439402881802"
-                        opacity="0.9858255692535088"
+                        cx="539"
+                        cy="0"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8521,10 +8521,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="590.0108764793421"
-                        cy="140.83408383462242"
-                        r="10.010876479342107"
-                        opacity="0.9851969938195878"
+                        cx="590"
+                        cy="135.6"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8536,10 +8536,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="595.0113309322584"
-                        cy="42.08487105385734"
-                        r="10.011330932258332"
-                        opacity="0.9845412235674134"
+                        cx="595"
+                        cy="33.89999999999999"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8551,10 +8551,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="595.0118033944964"
-                        cy="306.05918202423106"
-                        r="10.01180339449641"
-                        opacity="0.9838571222328513"
+                        cx="595"
+                        cy="305.1"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8566,10 +8566,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="549.0122945181398"
-                        cy="141.54160987390145"
-                        r="7.012294518139806"
-                        opacity="0.9831435085244589"
+                        cx="549"
+                        cy="135.6"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8582,9 +8582,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="553"
-                        cy="207.53583420792117"
+                        cy="203.4"
                         r="10"
-                        opacity="0.9823991544932121"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8596,10 +8596,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="553.0133354558869"
-                        cy="76.4138121113602"
-                        r="10.013335455886883"
-                        opacity="0.9816227838534264"
+                        cx="553"
+                        cy="67.79999999999998"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8611,10 +8611,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="558.01388667291"
-                        cy="109.56225258313877"
-                        r="10.01388667290998"
-                        opacity="0.9808130702541491"
+                        cx="558"
+                        cy="101.70000000000002"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8627,9 +8627,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="432"
-                        cy="273.55293032178395"
+                        cy="271.2"
                         r="10"
-                        opacity="0.9799686355003626"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8641,10 +8641,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="437.0150542625633"
-                        cy="44.88834641021087"
-                        r="5.015054262563273"
-                        opacity="0.9790880477233919"
+                        cx="437"
+                        cy="33.89999999999999"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8656,10 +8656,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="604.0156721606129"
-                        cy="241.12966025179054"
-                        r="7.015672160612845"
-                        opacity="0.9781698194999863"
+                        cx="604"
+                        cy="237.29999999999998"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8671,10 +8671,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="446.0163138457621"
-                        cy="306.44185265642176"
-                        r="7.016313845762089"
-                        opacity="0.9772124059196213"
+                        cx="446"
+                        cy="305.1"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8686,10 +8686,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="451.0169801329081"
-                        cy="78.87270043256271"
-                        r="5.016980132908115"
-                        opacity="0.9762142025996543"
+                        cx="451"
+                        cy="67.79999999999998"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8701,10 +8701,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="456.0176718579796"
-                        cy="46.883907560535086"
-                        r="10.017671857979616"
-                        opacity="0.9751735436480684"
+                        cx="456"
+                        cy="33.89999999999999"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8716,10 +8716,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="572.0183898779513"
-                        cy="209.4256296659689"
-                        r="15.018389877951359"
-                        opacity="0.9740886995736482"
+                        cx="572"
+                        cy="203.4"
+                        r="15"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8732,9 +8732,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="614"
-                        cy="209.68076280247791"
+                        cy="203.4"
                         r="7"
-                        opacity="0.9729578751435505"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8746,10 +8746,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="470.0199083354297"
-                        cy="177.67779557233595"
-                        r="10.019908335429706"
-                        opacity="0.971779207188371"
+                        cx="470"
+                        cy="169.5"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8761,10 +8761,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="618.0207105914595"
-                        cy="274.6215470047526"
-                        r="10.020710591459572"
-                        opacity="0.970550762354955"
+                        cx="618"
+                        cy="271.2"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8777,9 +8777,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="581"
-                        cy="178.38168817585733"
+                        cy="169.5"
                         r="7"
-                        opacity="0.9692705348073616"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8791,10 +8791,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="618.0224058584959"
-                        cy="82.59451110325358"
-                        r="5.022405858495888"
-                        opacity="0.9679364438765746"
+                        cx="618"
+                        cy="67.79999999999998"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8806,10 +8806,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="586.0233008099668"
-                        cy="147.16716169763853"
-                        r="5.023300809966884"
-                        opacity="0.9665463316597467"
+                        cx="586"
+                        cy="135.6"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8821,10 +8821,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="590.0242286328765"
-                        cy="147.65140738002205"
-                        r="10.024228632876497"
-                        opacity="0.96509796056998"
+                        cx="590"
+                        cy="135.6"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8836,10 +8836,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="590.0251903453525"
-                        cy="52.71975750577043"
-                        r="10.025190345352527"
-                        opacity="0.9635890108378834"
+                        cx="590"
+                        cy="33.89999999999999"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8851,10 +8851,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="595.0261869835139"
-                        cy="116.95370556992339"
-                        r="7.026186983513848"
-                        opacity="0.9620170779664"
+                        cx="595"
+                        cy="101.70000000000002"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8866,10 +8866,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="595.0272196006389"
-                        cy="85.95420875174797"
-                        r="11.027219600638873"
-                        opacity="0.9603796701406834"
+                        cx="595"
+                        cy="67.79999999999998"
+                        r="11"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8882,9 +8882,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="600"
-                        cy="55.167844257201125"
+                        cy="33.89999999999999"
                         r="7"
-                        opacity="0.9586742055951024"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8896,10 +8896,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="600.0293970647629"
-                        cy="118.93342277427513"
-                        r="15.029397064762847"
-                        opacity="0.9568980099397872"
+                        cx="600"
+                        cy="101.70000000000002"
+                        r="15"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8911,10 +8911,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="604.0307783060099"
-                        cy="57.15163498957273"
-                        r="11.0307783060099"
-                        opacity="0.9546693034416837"
+                        cx="604"
+                        cy="33.89999999999999"
+                        r="11"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8927,9 +8927,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="604"
-                        cy="120.53711356093942"
+                        cy="101.70000000000002"
                         r="7"
-                        opacity="0.9527276116188181"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8941,10 +8941,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="609.0332111447686"
-                        cy="183.51783718176807"
-                        r="7.033211144768645"
-                        opacity="0.9507059764087664"
+                        cx="609"
+                        cy="169.5"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8956,10 +8956,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="637.0344912299315"
-                        cy="60.139507504784646"
-                        r="15.034491229931518"
-                        opacity="0.948601304415776"
+                        cx="637"
+                        cy="33.89999999999999"
+                        r="15"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8971,10 +8971,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="614.0358152748566"
-                        cy="215.5591169576892"
-                        r="7.035815274856624"
-                        opacity="0.9464103951897168"
+                        cx="614"
+                        cy="203.4"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -8986,10 +8986,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="614.037184422282"
-                        cy="123.81901345220516"
-                        r="7.037184422282088"
-                        opacity="0.944129938380179"
+                        cx="614"
+                        cy="101.70000000000002"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9001,10 +9001,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="549.0385998165668"
-                        cy="155.33652819322361"
-                        r="7.038599816566773"
-                        opacity="0.9417565108801614"
+                        cx="549"
+                        cy="135.6"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9016,10 +9016,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="618.0400626008525"
-                        cy="125.65421378108005"
-                        r="5.040062600852522"
-                        opacity="0.9392865739657651"
+                        cx="618"
+                        cy="101.70000000000002"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9032,9 +9032,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="623"
-                        cy="308.6962412483157"
+                        cy="305.1"
                         r="7"
-                        opacity="0.9367164704389914"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9046,10 +9046,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="646.0431348867934"
-                        cy="278.63960401460326"
-                        r="10.043134886793426"
-                        opacity="0.9340424217814813"
+                        cx="646"
+                        cy="271.2"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9061,10 +9061,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="646.0447466388355"
-                        cy="158.7278221262883"
-                        r="11.044746638835463"
-                        opacity="0.9312605253278282"
+                        cx="646"
+                        cy="135.6"
+                        r="11"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9077,9 +9077,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="651"
-                        cy="159.65646269504762"
+                        cy="135.6"
                         r="7"
-                        opacity="0.9283667514679548"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9091,10 +9091,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="632.0481268747021"
-                        cy="71.40523368110337"
-                        r="10.048126874702143"
-                        opacity="0.9253569408889629"
+                        cx="632"
+                        cy="33.89999999999999"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9106,10 +9106,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="632.0498974998769"
-                        cy="279.9059708248892"
-                        r="7.049897499876892"
-                        opacity="0.9222268018678608"
+                        cx="632"
+                        cy="271.2"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9121,10 +9121,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="586.0517231765053"
-                        cy="250.85252722136684"
-                        r="5.051723176505327"
-                        opacity="0.9189719076276324"
+                        cx="586"
+                        cy="237.29999999999998"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9136,10 +9136,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="637.0536048951969"
-                        cy="280.61117115192894"
-                        r="10.053604895196987"
-                        opacity="0.9155876937702621"
+                        cx="637"
+                        cy="271.2"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9151,10 +9151,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="642.0555436034256"
-                        cy="164.8381852301427"
-                        r="10.055543603425535"
-                        opacity="0.9120694558015574"
+                        cx="642"
+                        cy="135.6"
+                        r="10"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9166,10 +9166,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="660.0575401985014"
-                        cy="252.52384272020979"
-                        r="5.0575401985014725"
-                        opacity="0.9084123467639278"
+                        cx="660"
+                        cy="237.29999999999998"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9181,10 +9181,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="604.0595955199376"
-                        cy="167.18337060133314"
-                        r="7.059595519937646"
-                        opacity="0.9046113749946987"
+                        cx="604"
+                        cy="135.6"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9196,10 +9196,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="646.0617103411638"
-                        cy="168.41906456116462"
-                        r="5.061710341163769"
-                        opacity="0.9006614020290549"
+                        cx="646"
+                        cy="135.6"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9211,10 +9211,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="614.0647723643016"
-                        cy="113.94201628086971"
-                        r="11.06477236430161"
-                        opacity="0.8948710224263589"
+                        cx="614"
+                        cy="67.79999999999998"
+                        r="11"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9227,9 +9227,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="651"
-                        cy="255.3161758013213"
+                        cy="237.29999999999998"
                         r="15"
-                        opacity="0.8905415880122807"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9241,10 +9241,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="623.0693544855541"
-                        cy="256.01197400536944"
-                        r="5.069354485554127"
-                        opacity="0.8860445591055985"
+                        cx="623"
+                        cy="237.29999999999998"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9256,10 +9256,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="655.0717381736865"
-                        cy="92.05180756885763"
-                        r="5.071738173686582"
-                        opacity="0.8813741310934291"
+                        cx="655"
+                        cy="33.89999999999999"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9272,9 +9272,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="632"
-                        cy="257.4761685335899"
+                        cy="237.29999999999998"
                         r="5"
-                        opacity="0.8765243447050424"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9286,25 +9286,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="660.0766919974157"
-                        cy="150.47134301596353"
-                        r="7.076691997415634"
-                        opacity="0.8714890854116398"
-                        style="cursor: pointer;"
-                >
-                </circle>
-              </g>
-              <g class
-                 tabindex="0"
-                 aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
-                 role="graphics-document"
-              >
-                <circle class
-                        fill="rgba(174, 52, 255, .5)"
-                        cx="665.0792621869597"
-                        cy="285.7206692238222"
-                        r="7.079262186959672"
-                        opacity="0.8662620831711387"
+                        cx="660"
+                        cy="101.70000000000002"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9317,9 +9302,24 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="665"
-                        cy="286.2695870387345"
+                        cy="271.2"
+                        r="7"
+                        opacity="1"
+                        style="cursor: pointer;"
+                >
+                </circle>
+              </g>
+              <g class
+                 tabindex="0"
+                 aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+                 role="graphics-document"
+              >
+                <circle class
+                        fill="rgba(174, 52, 255, .5)"
+                        cx="665"
+                        cy="271.2"
                         r="10"
-                        opacity="0.8608369125549142"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9331,10 +9331,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="669.0845880143113"
-                        cy="103.96873752597044"
-                        r="5.084588014311285"
-                        opacity="0.8552069932963416"
+                        cx="669"
+                        cy="33.89999999999999"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9346,10 +9346,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="669.0873426403363"
-                        cy="313.2547646025296"
-                        r="5.0873426403363045"
-                        opacity="0.8493655913040551"
+                        cx="669"
+                        cy="305.1"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9361,10 +9361,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="674.0901573730988"
-                        cy="134.83629852302647"
-                        r="7.090157373098847"
-                        opacity="0.8433058201861353"
+                        cx="674"
+                        cy="67.79999999999998"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9377,9 +9377,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="665"
-                        cy="238.20805379390586"
+                        cy="203.4"
                         r="10"
-                        opacity="0.837020643334953"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9391,10 +9391,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="679.0959625796108"
-                        cy="239.49229830432745"
-                        r="5.09596257961079"
-                        opacity="0.8305028766261534"
+                        cx="679"
+                        cy="203.4"
+                        r="5"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9406,10 +9406,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="683.0989500677674"
-                        cy="142.5345124330409"
-                        r="7.098950067767424"
-                        opacity="0.8237451917892766"
+                        cx="683"
+                        cy="67.79999999999998"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9422,9 +9422,9 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
                         cx="683"
-                        cy="169.49217727348855"
+                        cy="101.70000000000002"
                         r="11"
-                        opacity="0.8167401205117892"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9436,10 +9436,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="688.1050849896898"
-                        cy="171.95213496101667"
-                        r="11.105084989689805"
-                        opacity="0.8094800593428737"
+                        cx="688"
+                        cy="101.70000000000002"
+                        r="11"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>
@@ -9451,10 +9451,10 @@ exports[`Utils/Zoom Pan Scatter smoke-test 1`] = `
               >
                 <circle class
                         fill="rgba(174, 52, 255, .5)"
-                        cx="688.1082274299596"
-                        cy="315.59078566721684"
-                        r="7.108227429959558"
-                        opacity="0.801957275468194"
+                        cx="688"
+                        cy="305.1"
+                        r="7"
+                        opacity="1"
                         style="cursor: pointer;"
                 >
                 </circle>

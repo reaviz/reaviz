@@ -482,11 +482,11 @@ exports[`Charts/Bar Chart/Gridlines AllAxes smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="171.95677409886187px"
+                height="172px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-1-bar-undefined-3)"
                 x="248"
-                y="0.04821076924306016"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -837,11 +837,11 @@ exports[`Charts/Bar Chart/Gridlines XAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.976941904667314px"
+                height="43px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-0)"
                 x="8"
-                y="129.03764131297004"
+                y="129"
                 style="cursor: auto;"
           >
           </rect>
@@ -872,11 +872,11 @@ exports[`Charts/Bar Chart/Gridlines XAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.78468963384415px"
+                height="129px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-1)"
                 x="88"
-                y="43.26035907677551"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -907,11 +907,11 @@ exports[`Charts/Bar Chart/Gridlines XAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.56454640089383px"
+                height="86px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-2)"
                 x="168"
-                y="86.57226453801971"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -942,11 +942,11 @@ exports[`Charts/Bar Chart/Gridlines XAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.40522359087265px"
+                height="172px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-11-bar-undefined-3)"
                 x="248"
-                y="2.9498006773416185"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>
@@ -1308,11 +1308,11 @@ exports[`Charts/Bar Chart/Gridlines YAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="42.97735709751923px"
+                height="43px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-0)"
                 x="8"
-                y="129.03696364663134"
+                y="129"
                 style="cursor: auto;"
           >
           </rect>
@@ -1343,11 +1343,11 @@ exports[`Charts/Bar Chart/Gridlines YAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="128.78851629050112px"
+                height="129px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-1)"
                 x="88"
-                y="43.25573216945896"
+                y="43"
                 style="cursor: auto;"
           >
           </rect>
@@ -1378,11 +1378,11 @@ exports[`Charts/Bar Chart/Gridlines YAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="85.57215460922411px"
+                height="86px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-2)"
                 x="168"
-                y="86.56226761284921"
+                y="86"
                 style="cursor: auto;"
           >
           </rect>
@@ -1413,11 +1413,11 @@ exports[`Charts/Bar Chart/Gridlines YAxis smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="169.4495020387043px"
+                height="172px"
                 width="72px"
                 fill="url(#gradient-bar-series-ref-21-bar-undefined-3)"
                 x="248"
-                y="2.8994475500757146"
+                y="0"
                 style="cursor: auto;"
           >
           </rect>

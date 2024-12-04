@@ -280,7 +280,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/25/2020 ∙ Closed: -35"
                   role="graphics-document"
-                  height="99.92522265349557px"
+                  height="100px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-0-0)"
                   x="19.5"
@@ -295,7 +295,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="196.92747617347163"
+                y="197"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -324,11 +324,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/25/2020 ∙ Opened: 35"
                   role="graphics-document"
-                  height="99.92522265349557px"
+                  height="100px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-0-1)"
                   x="19.5"
-                  y="0.07545731856672683"
+                  y="0"
                   style="cursor: auto;"
             >
             </rect>
@@ -339,7 +339,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="0.07545731856672683"
+                y="0"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -370,7 +370,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/26/2020 ∙ Closed: -10"
                   role="graphics-document"
-                  height="28.52665961559106px"
+                  height="28.571428571428555px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-1-0)"
                   x="19.5"
@@ -385,7 +385,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="125.53143532975135"
+                y="125.57142857142856"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -414,11 +414,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/26/2020 ∙ Opened: 10"
                   role="graphics-document"
-                  height="28.52665961559109px"
+                  height="28.571428571428584px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-1-1)"
                   x="19.5"
-                  y="71.47476845673928"
+                  y="71.42857142857142"
                   style="cursor: auto;"
             >
             </rect>
@@ -429,7 +429,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="71.47476845673928"
+                y="71.42857142857142"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -460,7 +460,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/27/2020 ∙ Closed: -29"
                   role="graphics-document"
-                  height="82.5811576704634px"
+                  height="82.85714285714286px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-2-0)"
                   x="19.5"
@@ -475,7 +475,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="179.5912040376608"
+                y="179.85714285714286"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -504,11 +504,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/27/2020 ∙ Opened: 29"
                   role="graphics-document"
-                  height="82.58115767046338px"
+                  height="82.85714285714285px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-2-1)"
                   x="19.5"
-                  y="17.42181414422352"
+                  y="17.14285714285715"
                   style="cursor: auto;"
             >
             </rect>
@@ -519,7 +519,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="17.42181414422352"
+                y="17.14285714285715"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -550,7 +550,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/29/2020 ∙ Closed: -10"
                   role="graphics-document"
-                  height="28.374982127822452px"
+                  height="28.571428571428555px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-3-0)"
                   x="19.5"
@@ -565,7 +565,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="125.39593005414142"
+                y="125.57142857142856"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -594,11 +594,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="2/29/2020 ∙ Opened: 10"
                   role="graphics-document"
-                  height="28.37498212782248px"
+                  height="28.571428571428584px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-3-1)"
                   x="19.5"
-                  y="71.63113310532654"
+                  y="71.42857142857142"
                   style="cursor: auto;"
             >
             </rect>
@@ -609,7 +609,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="71.63113310532654"
+                y="71.42857142857142"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -640,7 +640,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="3/1/2020 ∙ Closed: -34"
                   role="graphics-document"
-                  height="95.7498491270978px"
+                  height="97.14285714285717px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-4-0)"
                   x="19.5"
@@ -655,7 +655,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="192.79306008277615"
+                y="194.14285714285717"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -684,11 +684,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="3/1/2020 ∙ Opened: 34"
                   role="graphics-document"
-                  height="95.74984912709779px"
+                  height="97.14285714285715px"
                   width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-4-1)"
                   x="19.5"
-                  y="4.2625586376966975"
+                  y="2.857142857142847"
                   style="cursor: auto;"
             >
             </rect>
@@ -699,7 +699,7 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 height="3"
                 opacity="1"
                 x="19.5"
-                y="4.274714873746295"
+                y="2.857142857142847"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -730,11 +730,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="3/2/2020 ∙ Closed: -29"
                   role="graphics-document"
-                  height="80.42004822752249px"
-                  width="25.012462488512213px"
+                  height="82.85714285714286px"
+                  width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-5-0)"
-                  x="19.512462488512213"
-                  y="100.01246248851221"
+                  x="19.5"
+                  y="100"
                   style="cursor: auto;"
             >
             </rect>
@@ -743,9 +743,9 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 fill="#ACB7C9"
                 width="25"
                 height="3"
-                opacity="0.982898868120958"
-                x="19.512462488512213"
-                y="177.50873908869625"
+                opacity="1"
+                x="19.5"
+                y="179.85714285714286"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -774,11 +774,11 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                   tabindex="0"
                   aria-label="3/2/2020 ∙ Opened: 29"
                   role="graphics-document"
-                  height="80.42004822752247px"
-                  width="25.012462488512213px"
+                  height="82.85714285714285px"
+                  width="25px"
                   fill="url(#gradient-bar-series-ref-10-bar-5-1)"
-                  x="19.512462488512213"
-                  y="19.60487674950195"
+                  x="19.5"
+                  y="17.14285714285715"
                   style="cursor: auto;"
             >
             </rect>
@@ -787,9 +787,9 @@ exports[`Charts/Bar Chart/Axis LeftRightAxis smoke-test 1`] = `
                 fill="#418AD7"
                 width="25"
                 height="3"
-                opacity="0.982898868120958"
-                x="19.512462488512213"
-                y="19.60487674950195"
+                opacity="1"
+                x="19.5"
+                y="17.14285714285715"
           >
           </rect>
           <linearGradient spreadmethod="pad"
@@ -1338,7 +1338,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="2/25/2020 ∙ -35: Closed"
                   role="graphics-document"
                   height="10px"
-                  width="224.77271710613923px"
+                  width="225px"
                   fill="url(#gradient-bar-series-ref-1-bar-0-0)"
                   x="0"
                   y="7"
@@ -1382,9 +1382,9 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="2/25/2020 ∙ 35: Opened"
                   role="graphics-document"
                   height="10px"
-                  width="224.77065745150705px"
+                  width="225px"
                   fill="url(#gradient-bar-series-ref-1-bar-0-1)"
-                  x="224.77065745150705"
+                  x="225"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1395,7 +1395,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="446.543918288983"
+                x="447"
                 y="7"
           >
           </rect>
@@ -1428,9 +1428,9 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="2/26/2020 ∙ -10: Closed"
                   role="graphics-document"
                   height="10px"
-                  width="63.96949161585302px"
+                  width="64px"
                   fill="url(#gradient-bar-series-ref-1-bar-1-0)"
-                  x="160.92292146241385"
+                  x="161"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1441,7 +1441,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="160.92292146241385"
+                x="161"
                 y="7"
           >
           </rect>
@@ -1472,9 +1472,9 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="2/26/2020 ∙ 10: Opened"
                   role="graphics-document"
                   height="10px"
-                  width="63.96949161585302px"
+                  width="64px"
                   fill="url(#gradient-bar-series-ref-1-bar-1-1)"
-                  x="224.8921947632375"
+                  x="225"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1485,7 +1485,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="285.862908378085"
+                x="286"
                 y="7"
           >
           </rect>
@@ -1518,7 +1518,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="2/27/2020 ∙ -29: Closed"
                   role="graphics-document"
                   height="10px"
-                  width="185.95836479388237px"
+                  width="186px"
                   fill="url(#gradient-bar-series-ref-1-bar-2-0)"
                   x="39"
                   y="7"
@@ -1562,9 +1562,9 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="2/27/2020 ∙ 29: Opened"
                   role="graphics-document"
                   height="10px"
-                  width="185.95836479388237px"
+                  width="186px"
                   fill="url(#gradient-bar-series-ref-1-bar-2-1)"
-                  x="224.9496132865736"
+                  x="225"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1575,7 +1575,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="407.9085485215093"
+                x="408"
                 y="7"
           >
           </rect>
@@ -1610,7 +1610,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   height="10px"
                   width="64px"
                   fill="url(#gradient-bar-series-ref-1-bar-3-0)"
-                  x="160.98324522352735"
+                  x="161"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1621,7 +1621,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="160.98324522352735"
+                x="161"
                 y="7"
           >
           </rect>
@@ -1654,7 +1654,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   height="10px"
                   width="64px"
                   fill="url(#gradient-bar-series-ref-1-bar-3-1)"
-                  x="224.9765658283072"
+                  x="225"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1665,7 +1665,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="285.970199529738"
+                x="286"
                 y="7"
           >
           </rect>
@@ -1698,7 +1698,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="3/1/2020 ∙ -34: Closed"
                   role="graphics-document"
                   height="10px"
-                  width="218.98943790835844px"
+                  width="219px"
                   fill="url(#gradient-bar-series-ref-1-bar-4-0)"
                   x="6"
                   y="7"
@@ -1742,9 +1742,9 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   aria-label="3/1/2020 ∙ 34: Opened"
                   role="graphics-document"
                   height="10px"
-                  width="218.98943790835844px"
+                  width="219px"
                   fill="url(#gradient-bar-series-ref-1-bar-4-1)"
-                  x="224.98914792280235"
+                  x="225"
                   y="7"
                   style="cursor: auto;"
             >
@@ -1755,7 +1755,7 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                 width="3"
                 height="10"
                 opacity="1"
-                x="440.9787084427827"
+                x="441"
                 y="7"
           >
           </rect>

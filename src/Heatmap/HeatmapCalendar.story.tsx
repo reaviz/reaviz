@@ -11,6 +11,7 @@ import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 import { ChartTooltip, formatValue } from '@/common';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Heatmap/Calendar',
   component: CalendarHeatmap,
   subcomponents: {

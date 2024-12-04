@@ -311,7 +311,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="296"
-                    cy="183.29100748516032"
+                    cy="183.20000000000002"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -326,7 +326,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="0"
-                    cy="0.472162565435283"
+                    cy="0"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -341,7 +341,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="300"
-                    cy="91.89662751829385"
+                    cy="91.60000000000001"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -356,7 +356,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="304"
-                    cy="46.213229246307854"
+                    cy="45.79999999999999"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -371,7 +371,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="304"
-                    cy="69.07820752618463"
+                    cy="68.70000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -386,7 +386,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="308"
-                    cy="46.25179267313102"
+                    cy="45.79999999999999"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -401,7 +401,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="405"
-                    cy="69.11347831173931"
+                    cy="68.70000000000002"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -416,7 +416,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="410"
-                    cy="137.64754716261578"
+                    cy="137.4"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -431,7 +431,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="312"
-                    cy="69.15198469513977"
+                    cy="68.70000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -446,7 +446,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="316"
-                    cy="160.5032644884929"
+                    cy="160.29999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -461,7 +461,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="36"
-                    cy="92.02363833124487"
+                    cy="91.60000000000001"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -476,7 +476,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="320"
-                    cy="160.5221522793824"
+                    cy="160.29999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -491,7 +491,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="320"
-                    cy="160.53223358393228"
+                    cy="160.29999999999998"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -506,7 +506,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="324"
-                    cy="160.54276467023402"
+                    cy="160.29999999999998"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -521,7 +521,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="324"
-                    cy="137.7378115227658"
+                    cy="137.4"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -536,7 +536,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="328"
-                    cy="46.50451724798179"
+                    cy="45.79999999999999"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -551,7 +551,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="328"
-                    cy="69.34456770567573"
+                    cy="68.70000000000002"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -566,7 +566,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="333"
-                    cy="183.39381219307705"
+                    cy="183.20000000000002"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -581,7 +581,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="69"
-                    cy="160.60288329769617"
+                    cy="160.29999999999998"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -596,7 +596,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="73"
-                    cy="183.41171050122878"
+                    cy="183.20000000000002"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -611,7 +611,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="77"
-                    cy="137.84430869117796"
+                    cy="137.4"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -626,7 +626,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="341"
-                    cy="115.07985654302874"
+                    cy="114.5"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -641,7 +641,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="341"
-                    cy="46.76815085217732"
+                    cy="45.79999999999999"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -656,7 +656,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="430"
-                    cy="46.811707047915846"
+                    cy="45.79999999999999"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -671,7 +671,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="93"
-                    cy="24.089016366525396"
+                    cy="22.899999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -686,7 +686,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="349"
-                    cy="183.47814785418262"
+                    cy="183.20000000000002"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -701,7 +701,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="434"
-                    cy="137.97849761300535"
+                    cy="137.4"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -716,7 +716,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="105"
-                    cy="115.25482200882414"
+                    cy="114.5"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -731,7 +731,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="109"
-                    cy="160.7743824618609"
+                    cy="160.29999999999998"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -746,7 +746,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="357"
-                    cy="24.38056114877067"
+                    cy="22.899999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -761,7 +761,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="118"
-                    cy="138.0892701735883"
+                    cy="137.4"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -776,7 +776,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="442"
-                    cy="115.39922159486558"
+                    cy="114.5"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -791,7 +791,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="126"
-                    cy="47.30082678484629"
+                    cy="45.79999999999999"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -806,7 +806,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="130"
-                    cy="183.59472916698493"
+                    cy="183.20000000000002"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -821,7 +821,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="365"
-                    cy="2.046012469581734"
+                    cy="0"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -836,7 +836,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="138"
-                    cy="92.88386283501418"
+                    cy="91.60000000000001"
                     r="7.199999999999999"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -851,7 +851,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="446"
-                    cy="70.26372764259678"
+                    cy="68.70000000000002"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -866,7 +866,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="373"
-                    cy="161.00245675587288"
+                    cy="160.29999999999998"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -881,7 +881,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="150"
-                    cy="138.3766280516434"
+                    cy="137.4"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -896,7 +896,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="377"
-                    cy="115.77369220516455"
+                    cy="114.5"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -911,7 +911,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="158"
-                    cy="206.37002694679774"
+                    cy="206.1"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -926,7 +926,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="381"
-                    cy="138.5121800269247"
+                    cy="137.4"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -941,7 +941,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="166"
-                    cy="93.33925072099166"
+                    cy="91.60000000000001"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -956,7 +956,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="458"
-                    cy="70.81773433191665"
+                    cy="68.70000000000002"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -971,7 +971,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="174"
-                    cy="206.4209560278269"
+                    cy="206.1"
                     r="0"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -986,7 +986,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="389"
-                    cy="138.72177785555445"
+                    cy="137.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -1001,7 +1001,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="183"
-                    cy="71.11001565148965"
+                    cy="68.70000000000002"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -1016,7 +1016,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="187"
-                    cy="116.2989965145577"
+                    cy="114.5"
                     r="2.4"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -1031,7 +1031,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="462"
-                    cy="26.27468729753922"
+                    cy="22.899999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -1046,7 +1046,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="397"
-                    cy="93.97108846406415"
+                    cy="91.60000000000001"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -1061,9 +1061,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="199"
-                    cy="49.09726165567327"
+                    cy="45.79999999999999"
                     r="12"
-                    opacity="0.9897319503513318"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1076,9 +1076,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="203"
-                    cy="184.06636199399858"
+                    cy="183.20000000000002"
                     r="2.4"
-                    opacity="0.9892733008603858"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1091,9 +1091,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="401"
-                    cy="49.391660344685235"
+                    cy="45.79999999999999"
                     r="0"
-                    opacity="0.988794612327069"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1106,9 +1106,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="211"
-                    cy="139.2784924237567"
+                    cy="137.4"
                     r="0"
-                    opacity="0.9882950355675676"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1121,9 +1121,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="405"
-                    cy="161.77248924106027"
+                    cy="160.29999999999998"
                     r="12"
-                    opacity="0.9877736869980356"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1136,9 +1136,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="410"
-                    cy="72.27261133415311"
+                    cy="68.70000000000002"
                     r="2.4"
-                    opacity="0.9872296473394109"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1151,9 +1151,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="410"
-                    cy="117.16551843389121"
+                    cy="114.5"
                     r="6"
-                    opacity="0.9866619602798493"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1165,10 +1165,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="414.01026929954844"
-                    cy="27.89782096804189"
-                    r="0.01026929954843547"
-                    opacity="0.9860696310938335"
+                    cx="414"
+                    cy="22.899999999999995"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1180,10 +1180,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="414.0106995983854"
-                    cy="72.75794969726789"
-                    r="12.010699598385358"
-                    opacity="0.9854516252170321"
+                    cx="414"
+                    cy="68.70000000000002"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1195,10 +1195,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="418.0111470258408"
-                    cy="206.71433666842415"
-                    r="7.211147025840776"
-                    opacity="0.9848068667760006"
+                    cx="418"
+                    cy="206.1"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1210,10 +1210,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="418.01161220718336"
-                    cy="50.845576331611184"
-                    r="6.0116122071833455"
-                    opacity="0.9841342370718396"
+                    cx="418"
+                    cy="45.79999999999999"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1225,10 +1225,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="243.0120957867717"
-                    cy="206.7684833817553"
-                    r="7.212095786771696"
-                    opacity="0.9834325730169544"
+                    cx="243"
+                    cy="206.1"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1241,9 +1241,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="482"
-                    cy="140.15123350489975"
+                    cy="137.4"
                     r="2.4"
-                    opacity="0.9827006655240935"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1255,10 +1255,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="426.01312081543546"
-                    cy="73.71184509688158"
-                    r="0.013120815435439918"
-                    opacity="0.9819372578468802"
+                    cx="426"
+                    cy="68.70000000000002"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1270,10 +1270,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="487.0136636514102"
-                    cy="118.23750221463655"
-                    r="0.013663651410194757"
-                    opacity="0.9811410438711"
+                    cx="487"
+                    cy="114.5"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1285,10 +1285,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="430.0142276599563"
-                    cy="184.76762596684773"
-                    r="2.414227659956304"
-                    opacity="0.980310666356055"
+                    cx="430"
+                    cy="183.20000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1300,10 +1300,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="264.01481358518896"
-                    cy="8.114284829760233"
-                    r="6.014813585188988"
-                    opacity="0.9794447151253579"
+                    cx="264"
+                    cy="0"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1315,10 +1315,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="434.0154221918698"
-                    cy="8.461049057741072"
-                    r="0.015422191869796889"
-                    opacity="0.9785417252066035"
+                    cx="434"
+                    cy="0"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1330,10 +1330,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="491.0160542655677"
-                    cy="74.88024499647882"
-                    r="7.216054265567659"
-                    opacity="0.9776001749194309"
+                    cx="491"
+                    cy="68.70000000000002"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1345,10 +1345,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="438.01671061278216"
-                    cy="31.179698373011625"
-                    r="6.01671061278217"
-                    opacity="0.9766184839115752"
+                    cx="438"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1360,10 +1360,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="438.0173920610248"
-                    cy="119.30315427253775"
-                    r="2.417392061024812"
-                    opacity="0.9755950111426027"
+                    cx="438"
+                    cy="114.5"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1375,10 +1375,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="495.0180994588535"
-                    cy="31.898166243364642"
-                    r="6.018099458853508"
-                    opacity="0.9745280528151236"
+                    cx="495"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1390,10 +1390,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="442.0188336758555"
-                    cy="119.71917585229144"
-                    r="12.018833675855463"
-                    opacity="0.9734158402534011"
+                    cx="442"
+                    cy="114.5"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1406,9 +1406,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="499"
-                    cy="76.3080476969893"
+                    cy="68.70000000000002"
                     r="2.4"
-                    opacity="0.9722565377293997"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1420,10 +1420,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="446.02038615036605"
-                    cy="98.39941500217155"
-                    r="0.020386150366045384"
-                    opacity="0.9710482402364565"
+                    cx="446"
+                    cy="91.60000000000001"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1435,10 +1435,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="300.02120625120665"
-                    cy="163.85357338691207"
-                    r="12.021206251206639"
-                    opacity="0.9697889712109253"
+                    cx="300"
+                    cy="160.29999999999998"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1450,10 +1450,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="503.02205685739597"
-                    cy="207.34904291513126"
-                    r="6.022056857395985"
-                    opacity="0.9684766802023046"
+                    cx="503"
+                    cy="206.1"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1465,10 +1465,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="503.0229389411996"
-                    cy="34.42944025691839"
-                    r="6.02293894119959"
-                    opacity="0.967109240492561"
+                    cx="503"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1480,10 +1480,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="503.0242286328765"
-                    cy="207.47832102869572"
-                    r="2.424228632876497"
-                    opacity="0.96509796056998"
+                    cx="503"
+                    cy="206.1"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1495,10 +1495,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="507.02519034535254"
-                    cy="143.06787258689394"
-                    r="7.225190345352527"
-                    opacity="0.9635890108378834"
+                    cx="507"
+                    cy="137.4"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1510,10 +1510,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="320.02618698351387"
-                    cy="79.01262284276986"
-                    r="6.026186983513848"
-                    opacity="0.9620170779664"
+                    cx="320"
+                    cy="68.70000000000002"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1525,10 +1525,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="507.0272196006389"
-                    cy="58.07229486790727"
-                    r="0.027219600638873274"
-                    opacity="0.9603796701406834"
+                    cx="507"
+                    cy="45.79999999999999"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1540,10 +1540,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="511.02828926620145"
-                    cy="101.19339859351498"
-                    r="12.02828926620146"
-                    opacity="0.9586742055951024"
+                    cx="511"
+                    cy="91.60000000000001"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1555,10 +1555,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="466.02939706476286"
-                    cy="80.35099555289948"
-                    r="2.429397064762848"
-                    opacity="0.9568980099397872"
+                    cx="466"
+                    cy="68.70000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1570,10 +1570,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="466.0305440947074"
-                    cy="59.661371221156266"
-                    r="6.030544094707398"
-                    opacity="0.9550483134494895"
+                    cx="466"
+                    cy="45.79999999999999"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1586,9 +1586,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="515"
-                    cy="165.73218477714855"
+                    cy="160.29999999999998"
                     r="0"
-                    opacity="0.9531222483179196"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1600,10 +1600,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="470.03296030261436"
-                    cy="18.77511189451488"
-                    r="6.032960302614339"
-                    opacity="0.9511168458811491"
+                    cx="470"
+                    cy="0"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1615,10 +1615,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="515.0342317326273"
-                    cy="103.34108254955761"
-                    r="6.034231732627298"
-                    opacity="0.949029033814122"
+                    cx="515"
+                    cy="91.60000000000001"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1630,10 +1630,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="519.0355468942796"
-                    cy="41.214815781173854"
-                    r="6.035546894279559"
-                    opacity="0.9468556333048174"
+                    cx="519"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1645,10 +1645,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="519.036906929669"
-                    cy="208.2508877618549"
-                    r="6.03690692966904"
-                    opacity="0.9445933562111414"
+                    cx="519"
+                    cy="206.1"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1660,10 +1660,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="478.0383129830484"
-                    cy="104.83890543076723"
-                    r="2.438312983048409"
-                    opacity="0.9422388022062054"
+                    cx="478"
+                    cy="91.60000000000001"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1675,10 +1675,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="482.03976619804376"
-                    cy="146.59772737674098"
-                    r="6.039766198043789"
-                    opacity="0.9397884559182736"
+                    cx="482"
+                    cy="137.4"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1690,10 +1690,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="482.04126771458255"
-                    cy="64.89938610405767"
-                    r="6.041267714582573"
-                    opacity="0.9372386840723375"
+                    cx="482"
+                    cy="45.79999999999999"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1705,10 +1705,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="487.04281866550787"
-                    cy="86.09255780406775"
-                    r="6.042818665507876"
-                    opacity="0.9345857326410022"
+                    cx="487"
+                    cy="68.70000000000002"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1720,10 +1720,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="377.04442017285555"
-                    cy="188.40124592983682"
-                    r="6.04442017285554"
-                    opacity="0.9318257240131547"
+                    cx="377"
+                    cy="183.20000000000002"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1735,10 +1735,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="381.046073343768"
-                    cy="47.08423526585051"
-                    r="0.04607334376799952"
-                    opacity="0.9289546541897243"
+                    cx="381"
+                    cy="22.899999999999995"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1750,10 +1750,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="527.0477792660175"
-                    cy="168.71618644727195"
-                    r="2.447779266017552"
-                    opacity="0.9259683900167599"
+                    cx="527"
+                    cy="160.29999999999998"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1765,10 +1765,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="389.0495390031097"
-                    cy="209.05042711222788"
-                    r="2.4495390031097326"
-                    opacity="0.9228626664670182"
+                    cx="389"
+                    cy="206.1"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1780,10 +1780,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="393.0513535889355"
-                    cy="69.98255009635707"
-                    r="0.05135358893548878"
-                    opacity="0.9196330839823141"
+                    cx="393"
+                    cy="45.79999999999999"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1795,10 +1795,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="397.0532240219388"
-                    cy="51.178395619589544"
-                    r="6.0532240219387745"
-                    opacity="0.916275105890008"
+                    cx="397"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1810,10 +1810,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="499.05515125876394"
-                    cy="150.49598704034622"
-                    r="12.055151258763921"
-                    opacity="0.9127840559082188"
+                    cx="499"
+                    cy="137.4"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1825,10 +1825,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="535.0571362073448"
-                    cy="151.01220419690844"
-                    r="2.4571362073447753"
-                    opacity="0.9091551157556523"
+                    cx="535"
+                    cy="137.4"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1840,10 +1840,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="410.05917971939505"
-                    cy="132.16886711998907"
-                    r="6.05917971939507"
-                    opacity="0.9053833228833317"
+                    cx="410"
+                    cy="114.5"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1856,9 +1856,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="539"
-                    cy="190.58099341932407"
+                    cy="183.20000000000002"
                     r="6"
-                    opacity="0.9014635683470091"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1870,10 +1870,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="507.0634455100604"
-                    cy="133.5767333027166"
-                    r="2.463445510060359"
-                    opacity="0.8973905948406539"
+                    cx="507"
+                    cy="114.5"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1885,10 +1885,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="539.0656691341478"
-                    cy="77.46952664194372"
-                    r="0.06566913414781304"
-                    opacity="0.8931589949131192"
+                    cx="539"
+                    cy="45.79999999999999"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1900,10 +1900,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="511.06795399270607"
-                    cy="116.28876762006877"
-                    r="0.06795399270608646"
-                    opacity="0.8887632093919476"
+                    cx="511"
+                    cy="91.60000000000001"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1915,10 +1915,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="515.0703005195552"
-                    cy="117.24085182850271"
-                    r="6.070300519555141"
-                    opacity="0.8841975260402382"
+                    cx="515"
+                    cy="91.60000000000001"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1930,10 +1930,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="515.0727090320312"
-                    cy="62.80214276003848"
-                    r="6.072709032031182"
-                    opacity="0.8794560784746202"
+                    cx="515"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1945,10 +1945,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="519.0751797179017"
-                    cy="100.93887338400097"
-                    r="2.47517971790177"
-                    opacity="0.8745328453746383"
+                    cx="519"
+                    cy="68.70000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1960,10 +1960,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="519.0782266608827"
-                    cy="84.32281259650912"
-                    r="7.278226660882713"
-                    opacity="0.8683763009720892"
+                    cx="519"
+                    cy="45.79999999999999"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1975,10 +1975,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="523.0808340584812"
-                    cy="67.87000758452719"
-                    r="2.4808340584811526"
-                    opacity="0.8630311786847137"
+                    cx="523"
+                    cy="22.899999999999995"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -1990,10 +1990,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="523.0835031879423"
-                    cy="105.01438568544611"
-                    r="12.083503187942268"
-                    opacity="0.8574839583882834"
+                    cx="523"
+                    cy="68.70000000000002"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2005,10 +2005,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="527.0862335252546"
-                    cy="71.31782900564457"
-                    r="7.286233525254527"
-                    opacity="0.8517279673681135"
+                    cx="527"
+                    cy="22.899999999999995"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2020,10 +2020,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="527.089024330397"
-                    cy="107.78487678947417"
-                    r="2.489024330396994"
-                    opacity="0.8457563799348783"
+                    cx="527"
+                    cy="68.70000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2035,10 +2035,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="531.0918746265668"
-                    cy="143.48164526101328"
-                    r="2.4918746265667324"
-                    opacity="0.8395622192789896"
+                    cx="531"
+                    cy="114.5"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2050,10 +2050,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="555.094783177844"
-                    cy="76.91978015254115"
-                    r="12.094783177843977"
-                    opacity="0.8331383599172565"
+                    cx="555"
+                    cy="22.899999999999995"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2065,10 +2065,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="535.0977484651895"
-                    cy="162.34616605639314"
-                    r="2.4977484651894706"
-                    opacity="0.8264775307876838"
+                    cx="535"
+                    cy="137.4"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2080,10 +2080,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="535.1007686606616"
-                    cy="113.87654222061963"
-                    r="2.500768660661661"
-                    opacity="0.819572319052441"
+                    cx="535"
+                    cy="68.70000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2095,10 +2095,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="478.1038415997343"
-                    cy="131.74583240309403"
-                    r="2.503841599734323"
-                    opacity="0.812415174673481"
+                    cx="478"
+                    cy="91.60000000000001"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2110,10 +2110,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="539.1069647515876"
-                    cy="117.21216837352091"
-                    r="0.10696475158758266"
-                    opacity="0.8049984158300448"
+                    cx="539"
+                    cy="68.70000000000002"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2125,10 +2125,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="543.1101351872373"
-                    cy="213.3737349876929"
-                    r="2.5101351872373083"
-                    opacity="0.7973142352523482"
+                    cx="543"
+                    cy="206.1"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2140,10 +2140,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="564.1133495453593"
-                    cy="198.15231311697232"
-                    r="6.113349545359306"
-                    opacity="0.7893547075511615"
+                    cx="564"
+                    cy="183.20000000000002"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2155,10 +2155,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="564.1166039956557"
-                    cy="137.8132320045604"
-                    r="7.316603995655712"
-                    opacity="0.7811117976287498"
+                    cx="564"
+                    cy="91.60000000000001"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2170,10 +2170,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="568.1198941996014"
-                    cy="139.4412265507275"
-                    r="2.5198941996014113"
-                    opacity="0.7725773702627936"
+                    cx="568"
+                    cy="91.60000000000001"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2185,10 +2185,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="551.1232152683981"
-                    cy="97.11040836708763"
-                    r="6.1232152683980905"
-                    opacity="0.7637432009614599"
+                    cx="551"
+                    cy="22.899999999999995"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2200,10 +2200,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="551.1265617179528"
-                    cy="200.36236314087117"
-                    r="2.5265617179528164"
-                    opacity="0.7546009881947741"
+                    cx="551"
+                    cy="183.20000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2215,10 +2215,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="511.1299274206865"
-                    cy="186.86466060105775"
-                    r="0.1299274206865257"
-                    opacity="0.7451423671148918"
+                    cx="511"
+                    cy="160.29999999999998"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2230,10 +2230,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="555.1333055539657"
-                    cy="201.5592611658267"
-                    r="6.13330555396572"
-                    opacity="0.7353589248857866"
+                    cx="555"
+                    cy="183.20000000000002"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2245,10 +2245,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="559.1366885449378"
-                    cy="148.26941390035748"
-                    r="6.136688544937784"
-                    opacity="0.7252422177513234"
+                    cx="559"
+                    cy="91.60000000000001"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2260,10 +2260,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="576.1400680115366"
-                    cy="189.65709403250378"
-                    r="0.1400680115366969"
-                    opacity="0.7147837899796794"
+                    cx="576"
+                    cy="160.29999999999998"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2275,10 +2275,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="527.1434346994115"
-                    cy="152.12517062867948"
-                    r="2.543434699411471"
-                    opacity="0.7039751948316453"
+                    cx="527"
+                    cy="91.60000000000001"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2290,10 +2290,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="564.1467784145143"
-                    cy="154.122310935348"
-                    r="0.14677841451428306"
-                    opacity="0.6928080177105442"
+                    cx="564"
+                    cy="91.60000000000001"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2305,10 +2305,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="535.150087951069"
-                    cy="131.83682180237565"
-                    r="7.3500879510690496"
-                    opacity="0.6812739016623546"
+                    cx="535"
+                    cy="45.79999999999999"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2320,10 +2320,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="568.1533510146239"
-                    cy="193.7032193888845"
-                    r="12.153351014623944"
-                    opacity="0.6693645754061779"
+                    cx="568"
+                    cy="160.29999999999998"
+                    r="12"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2335,10 +2335,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="543.1565541398732"
-                    cy="194.7709851123451"
-                    r="0.15655413987310438"
-                    opacity="0.6570718840874856"
+                    cx="543"
+                    cy="160.29999999999998"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2350,10 +2350,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="572.1596826029134"
-                    cy="129.26193675138572"
-                    r="0.1596826029134311"
-                    opacity="0.6443878229596596"
+                    cx="572"
+                    cy="22.899999999999995"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2365,10 +2365,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="551.1627203275818"
-                    cy="196.97098258400462"
-                    r="0.16272032758185795"
-                    opacity="0.6313045742132586"
+                    cx="551"
+                    cy="160.29999999999998"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2380,10 +2380,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="576.1656497854967"
-                    cy="156.68363848650932"
-                    r="2.5656497854967455"
-                    opacity="0.6178145471872473"
+                    cx="576"
+                    cy="68.70000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2395,10 +2395,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="580.168451889404"
-                    cy="209.22445108679102"
-                    r="2.5684518894040216"
-                    opacity="0.6039104222121656"
+                    cx="580"
+                    cy="183.20000000000002"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2410,10 +2410,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="580.1711058794043"
-                    cy="210.00475307160073"
-                    r="6.171105879404284"
-                    opacity="0.5895851983519607"
+                    cx="580"
+                    cy="183.20000000000002"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2425,10 +2425,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="584.1735892016112"
-                    cy="146.47739789137685"
-                    r="0.17358920161123198"
-                    opacity="0.5748322453290116"
+                    cx="584"
+                    cy="22.899999999999995"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2440,10 +2440,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="584.1758773787644"
-                    cy="220.38759060993908"
-                    r="0.17587737876438295"
-                    opacity="0.5596453599357931"
+                    cx="584"
+                    cy="206.1"
+                    r="0"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2455,10 +2455,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="588.17794387229"
-                    cy="162.1130121223874"
-                    r="2.577943872290044"
-                    opacity="0.5440188272567617"
+                    cx="588"
+                    cy="45.79999999999999"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2470,10 +2470,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="580.1797599352738"
-                    cy="197.28578019298752"
-                    r="6.1797599352737285"
-                    opacity="0.5279474870454121"
+                    cx="580"
+                    cy="137.4"
+                    r="6"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2486,9 +2486,9 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="592"
-                    cy="198.94117120955735"
+                    cy="137.4"
                     r="0"
-                    opacity="0.5114268056242013"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2500,10 +2500,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="596.1825137898786"
-                    cy="172.0352589779444"
-                    r="2.582513789878573"
-                    opacity="0.4944529536991742"
+                    cx="596"
+                    cy="45.79999999999999"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2515,10 +2515,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="596.1833815838482"
-                    cy="182.11268012648645"
-                    r="7.383381583848267"
-                    opacity="0.4770228905067938"
+                    cx="596"
+                    cy="68.70000000000002"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2530,10 +2530,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="600.1838585846931"
-                    cy="185.0571366165388"
-                    r="7.38385858469311"
-                    opacity="0.4591344547377417"
+                    cx="600"
+                    cy="68.70000000000002"
+                    r="7.199999999999999"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2545,10 +2545,10 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="600.1838552734802"
-                    cy="223.38542837143876"
-                    r="2.5838552734801485"
-                    opacity="0.43706168841645276"
+                    cx="600"
+                    cy="206.1"
+                    r="2.4"
+                    opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
             >
             </circle>
@@ -2564,7 +2564,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          318
+          321
         </span>
         <div class="flex bg-[rgb(232,64,69)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#E00007]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -2593,7 +2593,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Bubble smoke-test 1`] = `
       </span>
       <div class="flex items-center gap-2">
         <span class="font-mono text-4xl font-semibold text-black">
-          1,108
+          1,120
         </span>
         <div class="flex bg-[rgb(64,229,209)]/40 p-1 pl-2 pr-2 items-center rounded-full text-[#019A88]">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -3176,7 +3176,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="75"
-                    cy="19.069552451109903"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3191,7 +3191,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="300"
-                    cy="147.02017233194988"
+                    cy="147"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3221,7 +3221,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="225"
-                    cy="83.05127755480999"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3236,7 +3236,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="225"
-                    cy="19.08420465316158"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3266,7 +3266,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="300"
-                    cy="19.09221814110184"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3281,7 +3281,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="375"
-                    cy="83.06150161653035"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3296,7 +3296,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="375"
-                    cy="83.06435816887806"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3326,7 +3326,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="525"
-                    cy="83.07047096161766"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3341,7 +3341,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="525"
-                    cy="83.0737393654228"
+                    cy="83"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3356,7 +3356,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="525"
-                    cy="210.98933273673828"
+                    cy="211"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -3371,7 +3371,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="600"
-                    cy="19.12667982873249"
+                    cy="19"
                     r="6"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4540,7 +4540,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="384"
-                    cy="187.21201753186486"
+                    cy="187.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4555,7 +4555,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="0"
-                    cy="0.06241229123106602"
+                    cy="0"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4570,7 +4570,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="390"
-                    cy="93.63961027252434"
+                    cy="93.60000000000001"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4585,7 +4585,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="395"
-                    cy="46.85523791765656"
+                    cy="46.79999999999999"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4600,7 +4600,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="395"
-                    cy="70.25060941695116"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4615,7 +4615,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="400"
-                    cy="46.86052003976727"
+                    cy="46.79999999999999"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4630,7 +4630,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="526"
-                    cy="70.25544682750092"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4645,7 +4645,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="532"
-                    cy="140.43323168306077"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4660,7 +4660,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="405"
-                    cy="70.26074196105412"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4675,7 +4675,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="411"
-                    cy="163.82734694818572"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4690,7 +4690,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="47"
-                    cy="93.65705857788913"
+                    cy="93.60000000000001"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4705,7 +4705,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="416"
-                    cy="163.82995494888584"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4720,7 +4720,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="416"
-                    cy="163.83134984751752"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4735,7 +4735,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="421"
-                    cy="163.83280903878082"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4750,7 +4750,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="421"
-                    cy="140.445706947548"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4765,7 +4765,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="426"
-                    cy="46.89543381992531"
+                    cy="46.79999999999999"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4780,7 +4780,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="426"
-                    cy="70.28741633284409"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4795,7 +4795,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="432"
-                    cy="187.2263171221712"
+                    cy="187.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4810,7 +4810,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="89"
-                    cy="163.84117649921177"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4825,7 +4825,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="95"
-                    cy="187.22881733347575"
+                    cy="187.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4840,7 +4840,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="100"
-                    cy="140.46001902285388"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4855,7 +4855,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="442"
-                    cy="117.07842697433513"
+                    cy="117"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4870,7 +4870,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="442"
-                    cy="46.93110909835635"
+                    cy="46.79999999999999"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4885,7 +4885,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="558"
-                    cy="46.93718273071954"
+                    cy="46.79999999999999"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4900,7 +4900,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="121"
-                    cy="23.56143306548721"
+                    cy="23.399999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4915,7 +4915,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="453"
-                    cy="187.23781572713486"
+                    cy="187.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4930,7 +4930,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="563"
-                    cy="140.47875092480723"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4945,7 +4945,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="137"
-                    cy="117.10289041116852"
+                    cy="117"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4960,7 +4960,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="142"
-                    cy="163.86475223902207"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4975,7 +4975,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="463"
-                    cy="23.602361775638535"
+                    cy="23.399999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -4990,7 +4990,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="153"
-                    cy="140.49434123486145"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5005,7 +5005,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="574"
-                    cy="117.12436456796091"
+                    cy="117"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5020,7 +5020,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="163"
-                    cy="47.00785705917281"
+                    cy="46.79999999999999"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5035,7 +5035,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="169"
-                    cy="187.2547499248198"
+                    cy="187.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5050,7 +5050,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="474"
-                    cy="0.2841724140989499"
+                    cy="0"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5065,7 +5065,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="179"
-                    cy="93.7785788587027"
+                    cy="93.60000000000001"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5080,7 +5080,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="579"
-                    cy="70.41782574378036"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5095,7 +5095,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="484"
-                    cy="163.89800161126865"
+                    cy="163.79999999999998"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5110,7 +5110,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="195"
-                    cy="140.5364547710726"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5125,7 +5125,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="490"
-                    cy="117.17822992570508"
+                    cy="117"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5140,7 +5140,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="205"
-                    cy="210.6378512771532"
+                    cy="210.6"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5155,7 +5155,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="495"
-                    cy="140.5561148573597"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5170,7 +5170,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="216"
-                    cy="93.84451606578924"
+                    cy="93.60000000000001"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5185,7 +5185,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="595"
-                    cy="70.49820001831945"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5200,7 +5200,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="226"
-                    cy="210.64527833386157"
+                    cy="210.6"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5215,7 +5215,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="505"
-                    cy="140.58673322388762"
+                    cy="140.4"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5230,7 +5230,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="237"
-                    cy="70.54102687334674"
+                    cy="70.20000000000002"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5245,7 +5245,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="242"
-                    cy="117.25499717399993"
+                    cy="117"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5260,7 +5260,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="600"
-                    cy="23.879141372330306"
+                    cy="23.399999999999995"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5275,7 +5275,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="516"
-                    cy="93.93435596793285"
+                    cy="93.60000000000001"
                     r="12"
                     opacity="1"
                     style="filter: drop-shadow(rgb(16, 94, 255) 0px 12px 12px); cursor: pointer;"
@@ -5835,7 +5835,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(0px) translateY(0.228893px); transform-origin: 0.4px -4px;"
+               style="transform: none; transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"
@@ -5854,7 +5854,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(200px) translateY(195.04px); transform-origin: 0.4px -4px;"
+               style="transform: translateX(200px) translateY(195px); transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"
@@ -5873,7 +5873,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(450px) translateY(52.1949px); transform-origin: 0.4px -4px;"
+               style="transform: translateX(450px) translateY(52px); transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"
@@ -5892,7 +5892,7 @@ exports[`Blocks/Scatter Plot/Light/Medium Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.39999961853027344px -4px"
-               style="transform: translateX(600px) translateY(0.262047px); transform-origin: 0.4px -4px;"
+               style="transform: translateX(600px) translateY(0px); transform-origin: 0.4px -4px;"
             >
               <g transform="translate(-0.1, -10)">
                 <polygon points="225,10 100,210 350,210"

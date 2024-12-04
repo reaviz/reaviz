@@ -407,7 +407,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="0"
-                  cy="0.08257633044572697"
+                  cy="0"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -422,7 +422,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="146"
-                  cy="149.1812522463805"
+                  cy="149.16666666666669"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -437,7 +437,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="328"
-                  cy="39.848169220405545"
+                  cy="39.77777777777778"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"
@@ -452,7 +452,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
           <circle class
                   fill="#2d60e8"
                   cx="437"
-                  cy="0.09464202667346436"
+                  cy="0"
                   r="4"
                   opacity="1"
                   style="cursor: pointer;"

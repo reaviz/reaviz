@@ -248,7 +248,7 @@ exports[`Utils/Gradient/Radial Custom smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-61.8444px) translateY(-61.8444px); transform-origin: 0px 0px;"
+             style="transform: translateX(-61.872px) translateY(-61.872px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -261,7 +261,7 @@ exports[`Utils/Gradient/Radial Custom smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-39.2066px) translateY(-146.322px); transform-origin: 0px 0px;"
+             style="transform: translateX(-39.225px) translateY(-146.39px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -274,7 +274,7 @@ exports[`Utils/Gradient/Radial Custom smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(32.0117px) translateY(-119.469px); transform-origin: 0px 0px;"
+             style="transform: translateX(32.027px) translateY(-119.527px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -287,7 +287,7 @@ exports[`Utils/Gradient/Radial Custom smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(123.681px) translateY(-123.681px); transform-origin: 0px 0px;"
+             style="transform: translateX(123.744px) translateY(-123.744px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -549,7 +549,7 @@ exports[`Utils/Gradient/Radial SemiCirlce smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-87.4541px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(-87.5px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -562,7 +562,7 @@ exports[`Utils/Gradient/Radial SemiCirlce smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-75.7353px) translateY(-131.178px); transform-origin: 0px 0px;"
+             style="transform: translateX(-75.777px) translateY(-131.25px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -575,7 +575,7 @@ exports[`Utils/Gradient/Radial SemiCirlce smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(61.8369px) translateY(-107.103px); transform-origin: 0px 0px;"
+             style="transform: translateX(61.872px) translateY(-107.165px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -588,7 +588,7 @@ exports[`Utils/Gradient/Radial SemiCirlce smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(174.896px) translateY(0px); transform-origin: 0px 0px;"
+             style="transform: translateX(175px) translateY(0px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"

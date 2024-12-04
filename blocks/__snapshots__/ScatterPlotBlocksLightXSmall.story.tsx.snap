@@ -297,7 +297,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="99"
-                    cy="136.02101133076994"
+                    cy="136"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -312,7 +312,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="0"
-                    cy="0.1087727442956473"
+                    cy="0"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -327,7 +327,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="100"
-                    cy="68.06841102943041"
+                    cy="68"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -342,7 +342,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="101"
-                    cy="34.09533675712928"
+                    cy="33.99999999999999"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -357,7 +357,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="101"
-                    cy="51.087325413505965"
+                    cy="51.00000000000001"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -372,7 +372,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="103"
-                    cy="34.104371880535425"
+                    cy="33.99999999999999"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -387,7 +387,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="135"
-                    cy="51.09559695836673"
+                    cy="51.00000000000001"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -402,7 +402,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="137"
-                    cy="102.0573157361906"
+                    cy="102"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -417,7 +417,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="104"
-                    cy="51.10464245557312"
+                    cy="51.00000000000001"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -432,7 +432,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="105"
-                    cy="119.04715542540538"
+                    cy="118.99999999999999"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -447,7 +447,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="12"
-                    cy="68.09823314723329"
+                    cy="68"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -462,7 +462,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="107"
-                    cy="119.05160983062095"
+                    cy="118.99999999999999"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -477,7 +477,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="107"
-                    cy="119.05399049084781"
+                    cy="118.99999999999999"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -492,7 +492,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="108"
-                    cy="119.05647960112583"
+                    cy="118.99999999999999"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -507,7 +507,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="108"
-                    cy="102.07860363071303"
+                    cy="102"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -522,7 +522,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="109"
-                    cy="34.163906349342746"
+                    cy="33.99999999999999"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -537,7 +537,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="109"
-                    cy="51.15009004353522"
+                    cy="51.00000000000001"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -552,7 +552,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="111"
-                    cy="136.04527769482132"
+                    cy="136"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -567,7 +567,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="23"
-                    cy="119.07072976223834"
+                    cy="118.99999999999999"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -582,7 +582,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="24"
-                    cy="136.04953493162782"
+                    cy="136"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -597,7 +597,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="26"
-                    cy="102.1029436635746"
+                    cy="102"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -612,7 +612,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="114"
-                    cy="85.13561980929202"
+                    cy="85"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -627,7 +627,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="114"
-                    cy="34.22649646336457"
+                    cy="33.99999999999999"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -642,7 +642,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="143"
-                    cy="34.23687754412823"
+                    cy="33.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -657,7 +657,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="31"
-                    cy="17.278592077685474"
+                    cy="16.999999999999996"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -672,7 +672,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="116"
-                    cy="136.06540416515392"
+                    cy="136"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -687,7 +687,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="145"
-                    cy="102.13590374203548"
+                    cy="102"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -702,7 +702,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="35"
-                    cy="85.17741395820951"
+                    cy="85"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -717,7 +717,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="36"
-                    cy="119.1116996412572"
+                    cy="118.99999999999999"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -732,7 +732,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="119"
-                    cy="17.348371317346338"
+                    cy="16.999999999999996"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -747,7 +747,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="39"
-                    cy="102.16248483687619"
+                    cy="102"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -762,7 +762,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="147"
-                    cy="85.21209032028332"
+                    cy="85"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -777,7 +777,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="42"
-                    cy="34.3541135572652"
+                    cy="33.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -792,7 +792,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="43"
-                    cy="136.09346565339112"
+                    cy="136"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -807,7 +807,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="122"
-                    cy="0.4835426216143194"
+                    cy="0"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -822,7 +822,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="46"
-                    cy="68.30384614208131"
+                    cy="68"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -837,7 +837,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="149"
-                    cy="51.37036565067174"
+                    cy="51.00000000000001"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -852,7 +852,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="124"
-                    cy="119.16675805958204"
+                    cy="118.99999999999999"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -867,7 +867,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="50"
-                    cy="102.23193115111984"
+                    cy="102"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -882,7 +882,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="126"
-                    cy="85.30266611637744"
+                    cy="85"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -897,7 +897,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="53"
-                    cy="153.0645880744901"
+                    cy="153"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -912,7 +912,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="127"
-                    cy="102.26490488562132"
+                    cy="102"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -927,7 +927,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="55"
-                    cy="68.4144382855675"
+                    cy="68"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -942,7 +942,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="153"
-                    cy="51.50505696389559"
+                    cy="51.00000000000001"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -957,7 +957,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="58"
-                    cy="153.07708312875633"
+                    cy="153"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -972,7 +972,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="130"
-                    cy="102.31612834179589"
+                    cy="102"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -987,7 +987,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="61"
-                    cy="51.57657651046075"
+                    cy="51.00000000000001"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1002,7 +1002,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="62"
-                    cy="85.43103388677444"
+                    cy="85"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1017,7 +1017,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="154"
-                    cy="17.808936553074115"
+                    cy="16.999999999999996"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1032,7 +1032,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="132"
-                    cy="68.5693472360024"
+                    cy="68"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1047,7 +1047,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="66"
-                    cy="34.792395725048145"
+                    cy="33.99999999999999"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1062,7 +1062,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="68"
-                    cy="136.20899298992134"
+                    cy="136"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1077,7 +1077,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="134"
-                    cy="34.865125916279254"
+                    cy="33.99999999999999"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1092,7 +1092,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="70"
-                    cy="102.45340531194302"
+                    cy="102"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1107,7 +1107,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="135"
-                    cy="119.35604080998081"
+                    cy="118.99999999999999"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1122,7 +1122,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="137"
-                    cy="51.863712462475625"
+                    cy="51.00000000000001"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1137,7 +1137,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="137"
-                    cy="85.64546159841376"
+                    cy="85"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1152,7 +1152,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="138"
-                    cy="18.210963671226057"
+                    cy="16.999999999999996"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1167,7 +1167,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="138"
-                    cy="51.984688932533"
+                    cy="51.00000000000001"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1182,7 +1182,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="139"
-                    cy="153.15015920565173"
+                    cy="153"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1197,7 +1197,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="139"
-                    cy="35.22732229557974"
+                    cy="33.99999999999999"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1212,7 +1212,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="81"
-                    cy="153.1638189249496"
+                    cy="153"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1227,7 +1227,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="161"
-                    cy="102.67158973881911"
+                    cy="102"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1242,7 +1242,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="142"
-                    cy="52.2241290064398"
+                    cy="51.00000000000001"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1257,7 +1257,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="162"
-                    cy="85.9144922625988"
+                    cy="85"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1272,7 +1272,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="143"
-                    cy="136.38491341398455"
+                    cy="136"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1287,7 +1287,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="88"
-                    cy="1.9895282100664549"
+                    cy="0"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1302,7 +1302,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="145"
-                    cy="2.077509668787439"
+                    cy="0"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1317,7 +1317,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="164"
-                    cy="52.520147927056684"
+                    cy="51.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1332,7 +1332,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="146"
-                    cy="19.039078810599648"
+                    cy="16.999999999999996"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1347,7 +1347,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="146"
-                    cy="86.18541198044547"
+                    cy="85"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1362,7 +1362,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="165"
-                    cy="19.241912023915894"
+                    cy="16.999999999999996"
                     r="2.5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1377,7 +1377,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="147"
-                    cy="86.30318400218329"
+                    cy="85"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1392,7 +1392,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="166"
-                    cy="52.90183968273799"
+                    cy="51.00000000000001"
                     r="1"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1407,7 +1407,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="149"
-                    cy="69.70267110143676"
+                    cy="68"
                     r="0"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1422,7 +1422,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="100"
-                    cy="119.89235078359988"
+                    cy="118.99999999999999"
                     r="5"
                     opacity="1"
                     style="cursor: pointer;"
@@ -1437,9 +1437,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="168"
-                    cy="153.31563243279223"
+                    cy="153"
                     r="2.5"
-                    opacity="0.9896417839393262"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1452,9 +1452,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="168"
-                    cy="19.90011325738913"
+                    cy="16.999999999999996"
                     r="2.5"
-                    opacity="0.989179192965865"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1467,9 +1467,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="168"
-                    cy="153.34378796199678"
+                    cy="153"
                     r="1"
-                    opacity="0.9886963958045036"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1482,9 +1482,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="169"
-                    cy="103.40872122302336"
+                    cy="102"
                     r="3"
-                    opacity="0.9881925364930343"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1497,9 +1497,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="107"
-                    cy="53.56571916958636"
+                    cy="51.00000000000001"
                     r="2.5"
-                    opacity="0.987666724413525"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1512,9 +1512,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="169"
-                    cy="37.05837972640161"
+                    cy="33.99999999999999"
                     r="0"
-                    opacity="0.9871180329887356"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1526,10 +1526,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="170.01010183954645"
-                    cy="70.43691179040795"
-                    r="5.010101839546439"
-                    opacity="0.9863095851262286"
+                    cx="170"
+                    cy="68"
+                    r="5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1541,10 +1541,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="155.01052545779743"
-                    cy="53.96451971032211"
-                    r="1.0105254577974303"
-                    opacity="0.9857019766837776"
+                    cx="155"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1556,10 +1556,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="155.01096595983134"
-                    cy="37.53308155007132"
-                    r="2.5109659598313367"
-                    opacity="0.9850680510795722"
+                    cx="155"
+                    cy="33.99999999999999"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1571,10 +1571,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="172.01142396337227"
-                    cy="120.38930404193559"
-                    r="0.011423963372257267"
-                    opacity="0.9844067069298387"
+                    cx="172"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1586,10 +1586,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="157.01190010510425"
-                    cy="4.8030621270014855"
-                    r="2.5119001051042456"
-                    opacity="0.9837167990930855"
+                    cx="157"
+                    cy="0"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1602,9 +1602,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="172"
-                    cy="71.01098124015377"
+                    cy="68"
                     r="2.5"
-                    opacity="0.9829971370783267"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1616,10 +1616,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="173.01290944658265"
-                    cy="21.70434281274564"
-                    r="2.5129094465826434"
-                    opacity="0.9822464834051076"
+                    cx="173"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1631,10 +1631,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="173.01344401729273"
-                    cy="153.5571119287213"
-                    r="2.5134440172927257"
-                    opacity="0.9814635519145749"
+                    cx="173"
+                    cy="153"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1646,10 +1646,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="159.01399946866647"
-                    cy="71.41595065749472"
-                    r="1.0139994686664557"
-                    opacity="0.9806470060308845"
+                    cx="159"
+                    cy="68"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1662,9 +1662,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="161"
-                    cy="104.37968995220247"
+                    cy="102"
                     r="2.5"
-                    opacity="0.9797954569722894"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1676,10 +1676,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="161.015175977615"
-                    cy="38.94769411331408"
-                    r="2.515175977614994"
-                    opacity="0.9789074619113242"
+                    cx="161"
+                    cy="33.99999999999999"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1691,10 +1691,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="162.0157985689005"
-                    cy="55.51602714011527"
-                    r="2.515798568900494"
-                    opacity="0.9779815220835633"
+                    cx="162"
+                    cy="51.00000000000001"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1706,10 +1706,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="126.01644510858493"
-                    cy="137.3570320517589"
-                    r="2.516445108584931"
-                    opacity="0.9770160808445201"
+                    cx="126"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1721,10 +1721,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="127.01711641576817"
-                    cy="23.306471212123782"
-                    r="0.017116415768165673"
-                    opacity="0.9760095216743381"
+                    cx="127"
+                    cy="16.999999999999996"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1736,10 +1736,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="176.01781333058858"
-                    cy="121.20332471797526"
-                    r="1.017813330588593"
-                    opacity="0.9749601661300306"
+                    cx="176"
+                    cy="118.99999999999999"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1751,10 +1751,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="130.01853671422728"
-                    cy="153.77793423642393"
-                    r="1.0185367142272892"
-                    opacity="0.9738662717451332"
+                    cx="130"
+                    cy="153"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1766,10 +1766,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="131.01928744885728"
-                    cy="40.35164043020807"
-                    r="0.01928744885728254"
-                    opacity="0.9727260298767619"
+                    cx="131"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1781,10 +1781,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="132.0200664375323"
-                    cy="24.44498416444371"
-                    r="2.5200664375323045"
-                    opacity="0.9715375635002039"
+                    cx="132"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1797,9 +1797,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="166"
-                    cy="105.46002077992807"
+                    cy="102"
                     r="5"
-                    opacity="0.9702989249513195"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1811,10 +1811,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="178.02171289249574"
-                    cy="105.60563921623562"
-                    r="1.0217128924957315"
-                    opacity="0.9690080936172037"
+                    cx="178"
+                    cy="102"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1826,10 +1826,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="137.02258226732192"
-                    cy="89.69072223574813"
-                    r="2.522582267321924"
-                    opacity="0.9676629735757333"
+                    cx="137"
+                    cy="85"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1841,10 +1841,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="180.02348371251875"
-                    cy="137.96904263787255"
-                    r="2.523483712518765"
-                    opacity="0.9662613911848308"
+                    cx="180"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1857,9 +1857,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="169"
-                    cy="90.09187501929765"
+                    cy="85"
                     r="1"
-                    opacity="0.9648010926224938"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1871,10 +1871,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="180.02538684546644"
-                    cy="42.47195300137696"
-                    r="0.02538684546645495"
-                    opacity="0.9632797413788776"
+                    cx="180"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1886,10 +1886,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="170.02639059462524"
-                    cy="74.6253498447965"
-                    r="0.026390594625229066"
-                    opacity="0.9616949157019813"
+                    cx="170"
+                    cy="68"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1901,10 +1901,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="172.02743053538015"
-                    cy="74.90084633228093"
-                    r="2.527430535380153"
-                    opacity="0.9600441059987728"
+                    cx="172"
+                    cy="68"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1917,9 +1917,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="172"
-                    cy="27.854300956659202"
+                    cy="16.999999999999996"
                     r="2.5"
-                    opacity="0.9579723680058777"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1931,10 +1931,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="173.02985110703239"
-                    cy="59.798246775985426"
-                    r="1.0298511070323773"
-                    opacity="0.9561671098142844"
+                    cx="173"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1946,10 +1946,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="173.03101413990535"
-                    cy="44.46587584682521"
-                    r="3.0310141399053427"
-                    opacity="0.9542872155897555"
+                    cx="173"
+                    cy="33.99999999999999"
+                    r="3"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1961,10 +1961,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="174.03221796235835"
-                    cy="29.255110242972012"
-                    r="1.0322179623583514"
-                    opacity="0.9523297775177392"
+                    cx="174"
+                    cy="16.999999999999996"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1976,10 +1976,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="174.03346369975043"
-                    cy="60.93092145894164"
-                    r="5.033463699750417"
-                    opacity="0.9502917858076334"
+                    cx="174"
+                    cy="51.00000000000001"
+                    r="5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -1991,10 +1991,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="176.03475248561273"
-                    cy="30.281853524753778"
-                    r="3.0347524856127315"
-                    opacity="0.9481701258797836"
+                    cx="176"
+                    cy="16.999999999999996"
+                    r="3"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2006,10 +2006,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="176.0360854595284"
-                    cy="61.76082765508863"
-                    r="1.0360854595284008"
-                    opacity="0.9459615755320964"
+                    cx="176"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2021,10 +2021,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="177.03746376477326"
-                    cy="93.01054559271803"
-                    r="1.0374637647732758"
-                    opacity="0.9436628020915727"
+                    cx="177"
+                    cy="85"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2036,10 +2036,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="185.03888854569897"
-                    cy="31.97447102547114"
-                    r="5.038888545698966"
-                    opacity="0.9412703595566639"
+                    cx="185"
+                    cy="16.999999999999996"
+                    r="5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2051,10 +2051,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="178.0403609448378"
-                    cy="108.9478185636919"
-                    r="1.0403609448377904"
-                    opacity="0.9387806857369948"
+                    cx="178"
+                    cy="102"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2066,10 +2066,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="178.04188209970803"
-                    cy="63.61923013663862"
-                    r="1.0418820997080396"
-                    opacity="0.9361900993976987"
+                    cx="178"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2081,10 +2081,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="159.04345313929642"
-                    cy="79.25920401106315"
-                    r="1.0434531392964201"
-                    opacity="0.9334947974163542"
+                    cx="159"
+                    cy="68"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2096,10 +2096,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="180.04507518019298"
-                    cy="64.65681023976077"
-                    r="0.045075180192985474"
-                    opacity="0.9306908519613234"
+                    cx="180"
+                    cy="51.00000000000001"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2112,9 +2112,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="181"
-                    cy="155.06932627141916"
+                    cy="153"
                     r="1"
-                    opacity="0.9277742077011593"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2126,10 +2126,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="188.04847664445168"
-                    cy="140.25549946791529"
-                    r="2.548476644451675"
-                    opacity="0.9247406790556867"
+                    cx="188"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2141,10 +2141,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="188.05025819881934"
-                    cy="81.17482783335441"
-                    r="3.0502581988193356"
-                    opacity="0.9215859475003643"
+                    cx="188"
+                    cy="68"
+                    r="3"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2157,9 +2157,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="189"
-                    cy="81.69861859570042"
+                    cy="68"
                     r="1"
-                    opacity="0.918305558936618"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2171,10 +2171,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="184.05398804819694"
-                    cy="38.33523648760307"
-                    r="2.5539880481969406"
-                    opacity="0.9148949211419986"
+                    cx="184"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2186,10 +2186,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="184.05593826374573"
-                    cy="140.9719629863816"
-                    r="1.055938263745724"
-                    opacity="0.9113493013152563"
+                    cx="184"
+                    cy="136"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2201,10 +2201,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="170.05794653892374"
-                    cy="126.7223650136635"
-                    r="0.05794653892375152"
-                    opacity="0.9076638237327758"
+                    cx="170"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2216,10 +2216,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="185.06001370071172"
-                    cy="141.37014162874604"
-                    r="2.560013700711717"
-                    opacity="0.9038334675342365"
+                    cx="185"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2231,10 +2231,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="186.0621405082679"
-                    cy="84.61545975658933"
-                    r="2.56214050826791"
-                    opacity="0.8998530646569157"
+                    cx="186"
+                    cy="68"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2246,10 +2246,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="192.06432764379966"
-                    cy="127.66345528265757"
-                    r="0.06432764379965279"
-                    opacity="0.8957172979396933"
+                    cx="192"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2262,9 +2262,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="176"
-                    cy="85.9323860349285"
-                    r="1.0665757026769611"
-                    opacity="0.8914206994195932"
+                    cy="68"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2276,10 +2276,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="188.06888518273473"
-                    cy="86.62549363942645"
-                    r="0.06888518273472087"
-                    opacity="0.8869576488455863"
+                    cx="188"
+                    cy="68"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2291,10 +2291,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="178.07125647270615"
-                    cy="59.766294109391495"
-                    r="3.071256472706157"
-                    opacity="0.8823223724364118"
+                    cx="178"
+                    cy="33.99999999999999"
+                    r="3"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2307,9 +2307,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="189"
-                    cy="129.07891562830653"
+                    cy="118.99999999999999"
                     r="5"
-                    opacity="0.8775089419113475"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2321,10 +2321,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="181.0761854158429"
-                    cy="129.46356665874654"
-                    r="0.07618541584289988"
-                    opacity="0.872511273825181"
+                    cx="181"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2336,10 +2336,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="191.07874318345853"
-                    cy="49.42601147872004"
-                    r="0.07874318345851979"
-                    opacity="0.8673231292411242"
+                    cx="191"
+                    cy="16.999999999999996"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2351,10 +2351,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="184.0813629596421"
-                    cy="130.27203009870647"
-                    r="0.0813629596420803"
-                    opacity="0.8619381137780728"
+                    cx="184"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2366,10 +2366,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="192.0840443792196"
-                    cy="78.17971381584928"
-                    r="1.0840443792196046"
-                    opacity="0.856349678071456"
+                    cx="192"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2381,10 +2381,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="193.08678687656788"
-                    cy="144.1188026444171"
-                    r="1.086786876567882"
-                    opacity="0.8505511186899646"
+                    cx="193"
+                    cy="136"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2396,10 +2396,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="193.08958966601992"
-                    cy="144.42142860587137"
-                    r="2.5895896660199083"
-                    opacity="0.8445355795536889"
+                    cx="193"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2412,9 +2412,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="195"
-                    cy="55.97826875423884"
+                    cy="16.999999999999996"
                     r="0"
-                    opacity="0.8382960539026771"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2426,10 +2426,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="195.09537175030394"
-                    cy="157.57565992870434"
-                    r="0.09537175030394063"
-                    opacity="0.8318253868686238"
+                    cx="195"
+                    cy="153"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2441,10 +2441,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="196.09834817586972"
-                    cy="71.25788619008725"
-                    r="1.0983481758697262"
-                    opacity="0.8251162787063622"
+                    cx="196"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2457,9 +2457,9 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
             <circle class
                     fill="#105EFF90"
                     cx="193"
-                    cy="121.3601905760725"
+                    cy="102"
                     r="2.5"
-                    opacity="0.8181612887460568"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2471,10 +2471,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="197.10446230086694"
-                    cy="122.06310563087614"
-                    r="0.10446230086693241"
-                    opacity="0.8109528401315029"
+                    cx="197"
+                    cy="102"
+                    r="0"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2486,10 +2486,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="199.10759515712587"
-                    cy="75.46681786983562"
-                    r="1.1075951571258575"
-                    opacity="0.8034832254147561"
+                    cx="199"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2501,10 +2501,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="199.1107746606395"
-                    cy="88.5993503199293"
-                    r="3.1107746606394993"
-                    opacity="0.7957446130824423"
+                    cx="199"
+                    cy="51.00000000000001"
+                    r="3"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2516,10 +2516,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="200.11399735930107"
-                    cy="89.93992555987222"
-                    r="3.1139973593010595"
-                    opacity="0.787729055094579"
+                    cx="200"
+                    cy="51.00000000000001"
+                    r="3"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2531,10 +2531,10 @@ exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
           >
             <circle class
                     fill="#105EFF90"
-                    cx="200.11725932439433"
-                    cy="158.86038341521385"
-                    r="1.1172593243943187"
-                    opacity="0.7794284955225811"
+                    cx="200"
+                    cy="153"
+                    r="1"
+                    opacity="1"
                     style="cursor: pointer;"
             >
             </circle>
@@ -2845,7 +2845,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="25"
-                    cy="15.567814497930891"
+                    cy="15.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2860,7 +2860,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="100"
-                    cy="131.5195029856681"
+                    cy="131.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2890,7 +2890,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="75"
-                    cy="73.54954604335411"
+                    cy="73.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2905,7 +2905,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="75"
-                    cy="15.581346668602253"
+                    cy="15.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2935,7 +2935,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="100"
-                    cy="15.589082959975642"
+                    cy="15.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2950,7 +2950,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="125"
-                    cy="73.5594178937659"
+                    cy="73.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2965,7 +2965,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="125"
-                    cy="73.56274239216484"
+                    cy="73.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -2995,7 +2995,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="175"
-                    cy="73.56869693862666"
+                    cy="73.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3010,7 +3010,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="175"
-                    cy="73.57188052913769"
+                    cy="73.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3025,7 +3025,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="175"
-                    cy="189.48963737536369"
+                    cy="189.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3040,7 +3040,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="200"
-                    cy="15.623459134202598"
+                    cy="15.5"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3607,7 +3607,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="128"
-                    cy="168.0208197698886"
+                    cy="168"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3622,7 +3622,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="0"
-                    cy="0.10800620253301738"
+                    cy="0"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3637,7 +3637,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="130"
-                    cy="84.06791327578134"
+                    cy="84"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3652,7 +3652,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="132"
-                    cy="42.09467260785229"
+                    cy="41.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3667,7 +3667,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="132"
-                    cy="63.086718425905765"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3682,7 +3682,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="133"
-                    cy="42.10366659800469"
+                    cy="41.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3697,7 +3697,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="175"
-                    cy="63.09495264986428"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3712,7 +3712,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="177"
-                    cy="126.0569052818894"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3727,7 +3727,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="135"
-                    cy="63.10395968986384"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3742,7 +3742,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="137"
-                    cy="147.04680873202088"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3757,7 +3757,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="16"
-                    cy="84.09760219709219"
+                    cy="84"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3772,7 +3772,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="139"
-                    cy="147.05124186490397"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3787,7 +3787,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="139"
-                    cy="147.05361164338663"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3802,7 +3802,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="140"
-                    cy="147.05608972336336"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3817,7 +3817,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="140"
-                    cy="126.07810210747263"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3832,7 +3832,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="142"
-                    cy="42.16298025790045"
+                    cy="41.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3847,7 +3847,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="142"
-                    cy="63.149246350327694"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3862,7 +3862,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="144"
-                    cy="168.0449497001636"
+                    cy="168"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3877,7 +3877,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="30"
-                    cy="147.07028303741083"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3892,7 +3892,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="32"
-                    cy="168.0491880686078"
+                    cy="168"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3907,7 +3907,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="33"
-                    cy="126.10236032636202"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3922,7 +3922,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="147"
-                    cy="105.13369637129973"
+                    cy="105"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3937,7 +3937,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="147"
-                    cy="42.22541336659159"
+                    cy="41.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3952,7 +3952,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="186"
-                    cy="42.23577458561898"
+                    cy="41.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3967,7 +3967,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="40"
-                    cy="21.277349259995933"
+                    cy="20.999999999999996"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3982,7 +3982,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="151"
-                    cy="168.0649972933374"
+                    cy="168"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -3997,7 +3997,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="188"
-                    cy="126.13524034402681"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4012,7 +4012,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="46"
-                    cy="105.17661445654112"
+                    cy="105"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4027,7 +4027,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="47"
-                    cy="147.11113878276558"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4042,7 +4042,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="154"
-                    cy="21.3470455350981"
+                    cy="20.999999999999996"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4057,7 +4057,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="51"
-                    cy="126.16177852856787"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4072,7 +4072,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="191"
-                    cy="105.21124899365907"
+                    cy="105"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4087,7 +4087,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="54"
-                    cy="42.35288724675427"
+                    cy="41.99999999999999"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4102,7 +4102,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="56"
-                    cy="168.09298581380648"
+                    cy="168"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4117,7 +4117,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="158"
-                    cy="0.4820630221774083"
+                    cy="0"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4132,7 +4132,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="60"
-                    cy="84.302861226232"
+                    cy="84"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4147,7 +4147,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="193"
-                    cy="63.36926154149316"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4162,7 +4162,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="161"
-                    cy="147.16613178936046"
+                    cy="147"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4177,7 +4177,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="65"
-                    cy="126.23118766655173"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4192,7 +4192,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="163"
-                    cy="105.30181435490873"
+                    cy="105"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4207,7 +4207,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="68"
-                    cy="189.06417147757847"
+                    cy="189"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4222,7 +4222,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="165"
-                    cy="126.26417623173245"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4237,7 +4237,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="72"
-                    cy="84.41352919631714"
+                    cy="84"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4252,7 +4252,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="198"
-                    cy="63.50408633186689"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4267,7 +4267,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="75"
-                    cy="189.07663489010395"
+                    cy="189"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4282,7 +4282,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="168"
-                    cy="126.3154584618648"
+                    cy="126"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4297,7 +4297,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="79"
-                    cy="63.57574564897265"
+                    cy="63.00000000000001"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4312,7 +4312,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="81"
-                    cy="105.43036493601994"
+                    cy="105"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4327,7 +4327,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="200"
-                    cy="21.81533547536144"
+                    cy="20.999999999999996"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4342,7 +4342,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
             <circle class
                     fill="#105EFF"
                     cx="172"
-                    cy="84.568764505672"
+                    cy="84"
                     r="3"
                     opacity="1"
                     style="cursor: pointer;"
@@ -4629,7 +4629,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.19999980926513672px -1.9999995231628418px"
-               style="transform: translateX(0px) translateY(0.109987px); transform-origin: 0.2px -2px;"
+               style="transform: none; transform-origin: 0.2px -2px;"
             >
               <g transform="translate(-0.05, -5)">
                 <polygon points="225,10 100,210 350,210"
@@ -4648,7 +4648,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.19999980926513672px -1.9999995231628418px"
-               style="transform: translateX(67px) translateY(175.019px); transform-origin: 0.2px -2px;"
+               style="transform: translateX(67px) translateY(175px); transform-origin: 0.2px -2px;"
             >
               <g transform="translate(-0.05, -5)">
                 <polygon points="225,10 100,210 350,210"
@@ -4667,7 +4667,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.19999980926513672px -1.9999995231628418px"
-               style="transform: translateX(150px) translateY(46.7604px); transform-origin: 0.2px -2px;"
+               style="transform: translateX(150px) translateY(46.6667px); transform-origin: 0.2px -2px;"
             >
               <g transform="translate(-0.05, -5)">
                 <polygon points="225,10 100,210 350,210"
@@ -4686,7 +4686,7 @@ exports[`Blocks/Scatter Plot/Light/X-Small Symbols smoke-test 1`] = `
             <g class
                opacity="1"
                transform-origin="0.19999980926513672px -1.9999995231628418px"
-               style="transform: translateX(200px) translateY(0.126036px); transform-origin: 0.2px -2px;"
+               style="transform: translateX(200px) translateY(0px); transform-origin: 0.2px -2px;"
             >
               <g transform="translate(-0.05, -5)">
                 <polygon points="225,10 100,210 350,210"

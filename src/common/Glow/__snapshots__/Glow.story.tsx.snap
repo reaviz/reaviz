@@ -614,7 +614,7 @@ exports[`Utils/Glow AreaGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="0"
-                      cy="0.1266342696978243"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -629,7 +629,7 @@ exports[`Utils/Glow AreaGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="109"
-                      cy="190.8556377020421"
+                      cy="190.83333333333334"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -644,7 +644,7 @@ exports[`Utils/Glow AreaGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="246"
-                      cy="50.99680200916334"
+                      cy="50.888888888888886"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -659,7 +659,7 @@ exports[`Utils/Glow AreaGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="328"
-                      cy="0.14510106842590298"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -1195,11 +1195,11 @@ exports[`Utils/Glow BarGlow smoke-test 1`] = `
                 tabindex="0"
                 aria-label="DLP: 10"
                 role="graphics-document"
-                height="74.44779410522997px"
+                height="74.5px"
                 width="10px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-0)"
                 x="46.5"
-                y="223.5747006751356"
+                y="223.5"
                 style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 10px); cursor: auto;"
           >
           </rect>
@@ -1230,11 +1230,11 @@ exports[`Utils/Glow BarGlow smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Malware: 30"
                 role="graphics-document"
-                height="223.01571217553186px"
+                height="223.5px"
                 width="10px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-1)"
                 x="138.5"
-                y="75.05353370054723"
+                y="74.5"
                 style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 10px); cursor: auto;"
           >
           </rect>
@@ -1265,11 +1265,11 @@ exports[`Utils/Glow BarGlow smoke-test 1`] = `
                 tabindex="0"
                 aria-label="IDS: 20"
                 role="graphics-document"
-                height="148.02436849278396px"
+                height="149px"
                 width="10px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-2)"
                 x="230.5"
-                y="150.18497269307701"
+                y="149"
                 style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 10px); cursor: auto;"
           >
           </rect>
@@ -1300,11 +1300,11 @@ exports[`Utils/Glow BarGlow smoke-test 1`] = `
                 tabindex="0"
                 aria-label="Phishing Attack: 40"
                 role="graphics-document"
-                height="292.2291294714391px"
+                height="298px"
                 width="10px"
                 fill="url(#gradient-bar-series-ref-8-bar-undefined-3)"
                 x="322.5"
-                y="6.226895045301441"
+                y="0"
                 style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 10px); cursor: auto;"
           >
           </rect>
@@ -2037,7 +2037,7 @@ exports[`Utils/Glow LineGlow smoke-test 1`] = `
                 fill="none"
                 d="M0,0L109,190.833L246,50.889L328,0"
                 stroke-dasharray="512.11609 512.11609"
-                stroke-dashoffset="0.27279061907262214"
+                stroke-dashoffset="0"
                 style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 10px);"
           >
           </path>
@@ -2065,7 +2065,7 @@ exports[`Utils/Glow LineGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="0"
-                      cy="0.12101142230738651"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2080,7 +2080,7 @@ exports[`Utils/Glow LineGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="109"
-                      cy="190.8546478844396"
+                      cy="190.83333333333334"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2095,7 +2095,7 @@ exports[`Utils/Glow LineGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="246"
-                      cy="50.992014820170425"
+                      cy="50.888888888888886"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -2110,7 +2110,7 @@ exports[`Utils/Glow LineGlow smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#5D25EE"
                       cx="328"
-                      cy="0.1386671079094014"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3193,7 +3193,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="433"
-                  cy="37.911011264261674"
+                  cy="37.89999999999999"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3238,7 +3238,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="153"
-                  cy="75.81135653482062"
+                  cy="75.79999999999998"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3268,7 +3268,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="443"
-                  cy="0.015570349990772336"
+                  cy="0"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3298,7 +3298,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="541"
-                  cy="113.7119639815947"
+                  cy="113.70000000000002"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3388,7 +3388,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="202"
-                  cy="151.61354156922434"
+                  cy="151.6"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3403,7 +3403,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="556"
-                  cy="113.71654135331012"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3433,7 +3433,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="472"
-                  cy="227.41038108454984"
+                  cy="227.4"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3448,7 +3448,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="221"
-                  cy="113.7190010420222"
+                  cy="113.70000000000002"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3463,7 +3463,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="226"
-                  cy="189.51422352826532"
+                  cy="189.5"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3478,7 +3478,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="561"
-                  cy="37.92678306947779"
+                  cy="37.89999999999999"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3493,7 +3493,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="482"
-                  cy="151.61871138278804"
+                  cy="151.6"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3508,7 +3508,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="241"
-                  cy="75.82611329871581"
+                  cy="75.79999999999998"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3538,7 +3538,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="487"
-                  cy="75.82863625788002"
+                  cy="75.79999999999998"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3553,7 +3553,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="256"
-                  cy="227.4150162761672"
+                  cy="227.4"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3568,7 +3568,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="492"
-                  cy="265.31180517353044"
+                  cy="265.3"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3583,7 +3583,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="497"
-                  cy="113.72877733041084"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3598,7 +3598,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="497"
-                  cy="189.52153875050735"
+                  cy="189.5"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3613,7 +3613,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="502"
-                  cy="37.94055229244649"
+                  cy="37.89999999999999"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3628,7 +3628,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="502"
-                  cy="113.73303859854894"
+                  cy="113.70000000000002"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3658,7 +3658,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="507"
-                  cy="75.84176946529878"
+                  cy="75.79999999999998"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3688,7 +3688,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="585"
-                  cy="227.42292982210896"
+                  cy="227.4"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3703,7 +3703,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="517"
-                  cy="113.7419587884404"
+                  cy="113.70000000000002"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3718,7 +3718,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="590"
-                  cy="189.53140035157492"
+                  cy="189.5"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3733,7 +3733,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="521"
-                  cy="303.2131976798334"
+                  cy="303.2"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3748,7 +3748,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="320"
-                  cy="0.0687538428631168"
+                  cy="0"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3763,7 +3763,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="526"
-                  cy="0.07198046867386897"
+                  cy="0"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3778,7 +3778,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="595"
-                  cy="113.75277736576668"
+                  cy="113.70000000000002"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3793,7 +3793,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="531"
-                  cy="37.971011447679494"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3808,7 +3808,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="531"
-                  cy="189.54134439055895"
+                  cy="189.5"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3823,7 +3823,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="600"
-                  cy="37.97782352100149"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3838,7 +3838,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="536"
-                  cy="189.54530888409704"
+                  cy="189.5"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3853,7 +3853,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="605"
-                  cy="113.76635661114597"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3868,7 +3868,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="541"
-                  cy="151.65955605791157"
+                  cy="151.6"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3883,7 +3883,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="364"
-                  cy="265.3312336234925"
+                  cy="265.3"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3898,7 +3898,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="610"
-                  cy="341.1109852930867"
+                  cy="341.1"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3913,7 +3913,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="610"
-                  cy="38.00239316665118"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3928,7 +3928,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="610"
-                  cy="341.1120359386107"
+                  cy="341.1"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3943,7 +3943,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="615"
-                  cy="227.44994234786753"
+                  cy="227.4"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3958,7 +3958,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="389"
-                  cy="113.7913615498705"
+                  cy="113.70000000000002"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3973,7 +3973,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="615"
-                  cy="75.91127301287968"
+                  cy="75.79999999999998"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -3988,7 +3988,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="620"
-                  cy="151.68739038351208"
+                  cy="151.6"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4003,7 +4003,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="566"
-                  cy="113.80667756746175"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4018,7 +4018,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="566"
-                  cy="75.9275704849012"
+                  cy="75.79999999999998"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4033,7 +4033,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="625"
-                  cy="265.3501920029276"
+                  cy="265.3"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4048,7 +4048,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="571"
-                  cy="0.17460649941679826"
+                  cy="0"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4063,7 +4063,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="625"
-                  cy="151.70972623703383"
+                  cy="151.6"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4078,7 +4078,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="630"
-                  cy="38.07212970917354"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4093,7 +4093,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="630"
-                  cy="341.12022759219457"
+                  cy="341.1"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4108,7 +4108,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="580"
-                  cy="151.726898402628"
+                  cy="151.6"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4123,7 +4123,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="585"
-                  cy="227.48861578089566"
+                  cy="227.4"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4138,7 +4138,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="585"
-                  cy="75.98518132517619"
+                  cy="75.79999999999998"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4153,7 +4153,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="590"
-                  cy="113.86958726855482"
+                  cy="113.70000000000002"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4168,7 +4168,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="458"
-                  cy="303.25091651233015"
+                  cy="303.2"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4183,7 +4183,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="462"
-                  cy="38.138635725599435"
+                  cy="37.89999999999999"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4198,7 +4198,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="639"
-                  cy="265.3834508712592"
+                  cy="265.3"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4213,7 +4213,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="472"
-                  cy="341.1293356574286"
+                  cy="341.1"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4228,7 +4228,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="477"
-                  cy="76.0430111244735"
+                  cy="75.79999999999998"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4243,7 +4243,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="482"
-                  cy="38.18598565850305"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4258,7 +4258,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="605"
-                  cy="227.53320077936797"
+                  cy="227.4"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4273,7 +4273,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="649"
-                  cy="227.53935539675118"
+                  cy="227.4"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4288,7 +4288,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="497"
-                  cy="189.68213052279"
+                  cy="189.5"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4303,7 +4303,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="654"
-                  cy="303.2764863288642"
+                  cy="303.2"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4318,7 +4318,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="615"
-                  cy="189.6993268269516"
+                  cy="189.5"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4333,7 +4333,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="654"
-                  cy="76.13333048081935"
+                  cy="75.79999999999998"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4348,7 +4348,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="620"
-                  cy="151.86164740133742"
+                  cy="151.6"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4363,7 +4363,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="625"
-                  cy="151.87369765685824"
+                  cy="151.6"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4378,7 +4378,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="625"
-                  cy="38.32916100738781"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4393,7 +4393,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="630"
-                  cy="114.04927879678394"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4408,7 +4408,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="630"
-                  cy="76.21744028875852"
+                  cy="75.79999999999998"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4423,7 +4423,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="635"
-                  cy="38.39111865703575"
+                  cy="37.89999999999999"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4438,7 +4438,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="635"
-                  cy="114.09967293410564"
+                  cy="113.70000000000002"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4453,7 +4453,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="639"
-                  cy="38.43724766757561"
+                  cy="37.89999999999999"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4468,7 +4468,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="639"
-                  cy="114.13718960413873"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4483,7 +4483,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="644"
-                  cy="189.826813368936"
+                  cy="189.5"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4498,7 +4498,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="674"
-                  cy="38.514568585172945"
+                  cy="37.89999999999999"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4513,7 +4513,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="649"
-                  cy="227.68611481833562"
+                  cy="227.4"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4528,7 +4528,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="649"
-                  cy="114.22294970449752"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4543,7 +4543,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="580"
-                  cy="152.06887003958826"
+                  cy="151.6"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4558,7 +4558,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="654"
-                  cy="114.2718510886767"
+                  cy="113.70000000000002"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4573,7 +4573,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="659"
-                  cy="341.18705823872386"
+                  cy="341.1"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4588,7 +4588,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="684"
-                  cy="303.38100133994584"
+                  cy="303.2"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4603,7 +4603,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="684"
-                  cy="152.16555031701978"
+                  cy="151.6"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4618,7 +4618,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="689"
-                  cy="152.1913217115318"
+                  cy="151.6"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4633,7 +4633,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="669"
-                  cy="38.82676964418019"
+                  cy="37.89999999999999"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4648,7 +4648,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="669"
-                  cy="303.41630246297143"
+                  cy="303.2"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4663,7 +4663,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="620"
-                  cy="265.638547834369"
+                  cy="265.3"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4678,7 +4678,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="674"
-                  cy="303.4364136609218"
+                  cy="303.2"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4693,7 +4693,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="679"
-                  cy="152.33856725949408"
+                  cy="151.6"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4708,7 +4708,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="698"
-                  cy="265.6867922181469"
+                  cy="265.3"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4723,7 +4723,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="639"
-                  cy="152.4070900980846"
+                  cy="151.6"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4738,7 +4738,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="684"
-                  cy="152.44365937211234"
+                  cy="151.6"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4753,7 +4753,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="649"
-                  cy="76.97523812803227"
+                  cy="75.79999999999998"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4768,7 +4768,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="689"
-                  cy="265.76177153098615"
+                  cy="265.3"
                   r="15"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4783,7 +4783,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="659"
-                  cy="265.78264606979934"
+                  cy="265.3"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4798,7 +4798,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="694"
-                  cy="39.40943798539791"
+                  cy="37.89999999999999"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4813,7 +4813,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="669"
-                  cy="265.8272152461638"
+                  cy="265.3"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4828,7 +4828,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="698"
-                  cy="114.98280942874797"
+                  cy="113.70000000000002"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4843,7 +4843,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="703"
-                  cy="303.58462139736633"
+                  cy="303.2"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4858,7 +4858,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="703"
-                  cy="303.60193841099573"
+                  cy="303.2"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4873,7 +4873,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="708"
-                  cy="39.78160808532733"
+                  cy="37.89999999999999"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4888,7 +4888,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="708"
-                  cy="341.32071483763747"
+                  cy="341.1"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4903,7 +4903,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="713"
-                  cy="77.62651590251762"
+                  cy="75.79999999999998"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4918,7 +4918,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="703"
-                  cy="228.35561961585287"
+                  cy="227.4"
                   r="10"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4933,7 +4933,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="718"
-                  cy="228.39846461013377"
+                  cy="227.4"
                   r="5"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4948,7 +4948,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="723"
-                  cy="77.88337635114463"
+                  cy="75.79999999999998"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4963,7 +4963,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="723"
-                  cy="115.62168044329927"
+                  cy="113.70000000000002"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4978,7 +4978,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="728"
-                  cy="115.70759361303594"
+                  cy="113.70000000000002"
                   r="11"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"
@@ -4993,7 +4993,7 @@ exports[`Utils/Glow ScatterGlow smoke-test 1`] = `
           <circle class
                   fill="rgba(172, 115, 255, .8)"
                   cx="728"
-                  cy="341.40256406523713"
+                  cy="341.1"
                   r="7"
                   opacity="1"
                   style="filter: drop-shadow(rgb(93, 37, 238) 0px 0px 5px); cursor: pointer;"

@@ -8,6 +8,7 @@ import { randomNumber } from 'reaviz-data-utils';
 import { TreeMapLabel } from './TreeMapLabel';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/TreeMap',
   component: TreeMap,
   subcomponents: {
@@ -89,6 +90,7 @@ export const _100Items = () => {
 
   return <TreeMap data={longData} height={600} width={600} />;
 };
+_100Items.tags = ['no-snapshot'];
 
 export const Events = () => (
   <TreeMap
@@ -115,6 +117,7 @@ export const Events = () => (
     }
   />
 );
+Events.tags = ['no-snapshot'];
 
 const twentyItems = [
   {
@@ -357,3 +360,4 @@ export const Nested = () => (
     series={<TreeMapSeries colorScheme="cybertron" />}
   />
 );
+Nested.tags = ['no-snapshot'];

@@ -855,7 +855,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
                 fill="none"
                 d="M0,105.667L176,158.5L396,246.556L528,299.389"
                 stroke-dasharray="562.90753 562.90753"
-                stroke-dashoffset="0.01701878497089322"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -870,7 +870,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
                 fill="none"
                 d="M0,105.667L176,176.111L396,193.722L528,35.222"
                 stroke-dasharray="616.54529 616.54529"
-                stroke-dashoffset="0.01181707407645683"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -1455,7 +1455,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-98.9463px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-98.995px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1468,7 +1468,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(20.9825px) translateY(-162.733px); transform-origin: 0px 0px;"
+             style="transform: translateX(20.993px) translateY(-162.817px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -1481,7 +1481,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(21.7346px) translateY(-82.8833px); transform-origin: 0px 0px;"
+             style="transform: translateX(21.746px) translateY(-82.928px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -1494,7 +1494,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(47.3307px) translateY(-116.906px); transform-origin: 0px 0px;"
+             style="transform: translateX(47.357px) translateY(-116.972px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -1507,7 +1507,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(77.7186px) translateY(-137.996px); transform-origin: 0px 0px;"
+             style="transform: translateX(77.764px) translateY(-138.077px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -1520,7 +1520,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(73.9668px) translateY(-99.1087px); transform-origin: 0px 0px;"
+             style="transform: translateX(74.012px) translateY(-99.17px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1533,7 +1533,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(84.293px) translateY(-87.0387px); transform-origin: 0px 0px;"
+             style="transform: translateX(84.347px) translateY(-87.095px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1546,7 +1546,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(92.7338px) translateY(-73.9529px); transform-origin: 0px 0px;"
+             style="transform: translateX(92.796px) translateY(-74.003px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1559,7 +1559,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(107.838px) translateY(-65.3716px); transform-origin: 0px 0px;"
+             style="transform: translateX(107.914px) translateY(-65.418px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1572,7 +1572,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(103.63px) translateY(-45.8738px); transform-origin: 0px 0px;"
+             style="transform: translateX(103.706px) translateY(-45.908px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -1585,7 +1585,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(134.111px) translateY(-39.8029px); transform-origin: 0px 0px;"
+             style="transform: translateX(134.214px) translateY(-39.834px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -1598,7 +1598,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(80.965px) translateY(-13.0891px); transform-origin: 0px 0px;"
+             style="transform: translateX(81.03px) translateY(-13.1px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -1611,7 +1611,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(141.978px) translateY(-4.557px); transform-origin: 0px 0px;"
+             style="transform: translateX(142.098px) translateY(-4.557px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -1624,7 +1624,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(42.6308px) translateY(4.116px); transform-origin: 0px 0px;"
+             style="transform: translateX(42.668px) translateY(4.116px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1637,7 +1637,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(63.7785px) translateY(14.557px); transform-origin: 0px 0px;"
+             style="transform: translateX(63.837px) translateY(14.57px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1650,7 +1650,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(65.63px) translateY(24.1531px); transform-origin: 0px 0px;"
+             style="transform: translateX(65.693px) translateY(24.176px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1663,7 +1663,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(65.7609px) translateY(34.3077px); transform-origin: 0px 0px;"
+             style="transform: translateX(65.827px) translateY(34.342px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1676,7 +1676,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(53.6477px) translateY(37.4229px); transform-origin: 0px 0px;"
+             style="transform: translateX(53.704px) translateY(37.462px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -1689,7 +1689,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(54.9027px) translateY(49.8613px); transform-origin: 0px 0px;"
+             style="transform: translateX(54.963px) translateY(49.916px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -1702,7 +1702,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(113.308px) translateY(133.098px); transform-origin: 0px 0px;"
+             style="transform: translateX(113.44px) translateY(133.253px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -1715,7 +1715,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(58.7796px) translateY(90.3011px); transform-origin: 0px 0px;"
+             style="transform: translateX(58.851px) translateY(90.411px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -1728,7 +1728,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(74.3015px) translateY(154.287px); transform-origin: 0px 0px;"
+             style="transform: translateX(74.396px) translateY(154.484px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1741,7 +1741,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(30.1642px) translateY(90.847px); transform-origin: 0px 0px;"
+             style="transform: translateX(30.204px) translateY(90.968px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1754,7 +1754,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(30.6177px) translateY(157.212px); transform-origin: 0px 0px;"
+             style="transform: translateX(30.66px) translateY(157.432px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1767,7 +1767,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(8.52717px) translateY(132.808px); transform-origin: 0px 0px;"
+             style="transform: translateX(8.539px) translateY(133.002px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1780,7 +1780,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-10.013px) translateY(155.965px); transform-origin: 0px 0px;"
+             style="transform: translateX(-10.029px) translateY(156.203px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -1793,7 +1793,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-27.5411px) translateY(141.422px); transform-origin: 0px 0px;"
+             style="transform: translateX(-27.586px) translateY(141.648px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -1806,7 +1806,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-15.5702px) translateY(46.8982px); transform-origin: 0px 0px;"
+             style="transform: translateX(-15.597px) translateY(46.976px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -1819,7 +1819,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-52.5131px) translateY(109.047px); transform-origin: 0px 0px;"
+             style="transform: translateX(-52.606px) translateY(109.237px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -1832,7 +1832,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-13.4755px) translateY(20.705px); transform-origin: 0px 0px;"
+             style="transform: translateX(-13.501px) translateY(20.742px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1845,7 +1845,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-94.7284px) translateY(111.275px); transform-origin: 0px 0px;"
+             style="transform: translateX(-94.911px) translateY(111.488px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1858,7 +1858,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-93.2311px) translateY(84.6721px); transform-origin: 0px 0px;"
+             style="transform: translateX(-93.419px) translateY(84.841px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1871,7 +1871,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-57.291px) translateY(39.9652px); transform-origin: 0px 0px;"
+             style="transform: translateX(-57.412px) translateY(40.048px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1884,7 +1884,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-119.918px) translateY(62.5627px); transform-origin: 0px 0px;"
+             style="transform: translateX(-120.182px) translateY(62.699px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -1897,7 +1897,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-51.8152px) translateY(19.0693px); transform-origin: 0px 0px;"
+             style="transform: translateX(-51.935px) translateY(19.112px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -1910,7 +1910,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-68.0807px) translateY(15.5398px); transform-origin: 0px 0px;"
+             style="transform: translateX(-68.245px) translateY(15.576px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -1923,7 +1923,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-24.5724px) translateY(2.376px); transform-origin: 0px 0px;"
+             style="transform: translateX(-24.635px) translateY(2.376px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -1936,7 +1936,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-148.026px) translateY(-4.74538px); transform-origin: 0px 0px;"
+             style="transform: translateX(-148.416px) translateY(-4.759px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -1949,7 +1949,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-121.823px) translateY(-19.6938px); transform-origin: 0px 0px;"
+             style="transform: translateX(-122.158px) translateY(-19.749px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -1962,7 +1962,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-137.947px) translateY(-40.9413px); transform-origin: 0px 0px;"
+             style="transform: translateX(-138.344px) translateY(-41.06px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -1975,7 +1975,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-146.223px) translateY(-64.7275px); transform-origin: 0px 0px;"
+             style="transform: translateX(-146.663px) translateY(-64.923px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -1988,7 +1988,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-130.053px) translateY(-78.8384px); transform-origin: 0px 0px;"
+             style="transform: translateX(-130.462px) translateY(-79.087px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -2001,7 +2001,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-92.4913px) translateY(-73.7597px); transform-origin: 0px 0px;"
+             style="transform: translateX(-92.796px) translateY(-74.003px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2b8dd8"
@@ -2014,7 +2014,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-54.2586px) translateY(-56.0265px); transform-origin: 0px 0px;"
+             style="transform: translateX(-54.446px) translateY(-56.22px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2aa1d1"
@@ -2027,7 +2027,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-58.997px) translateY(-79.0512px); transform-origin: 0px 0px;"
+             style="transform: translateX(-59.21px) translateY(-79.336px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#29b5ca"
@@ -2040,7 +2040,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-61.6932px) translateY(-109.543px); transform-origin: 0px 0px;"
+             style="transform: translateX(-61.926px) translateY(-109.955px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#28c8c3"
@@ -2053,7 +2053,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-62.0571px) translateY(-153.284px); transform-origin: 0px 0px;"
+             style="transform: translateX(-62.302px) translateY(-153.886px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#27dcbc"
@@ -2066,7 +2066,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-39.0423px) translateY(-148.889px); transform-origin: 0px 0px;"
+             style="transform: translateX(-39.204px) translateY(-149.501px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#26efb5"
@@ -2079,7 +2079,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(-19.4239px) translateY(-150.662px); transform-origin: 0px 0px;"
+             style="transform: translateX(-19.509px) translateY(-151.309px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2d60e8"
@@ -2092,7 +2092,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
              role="graphics-document"
              opacity="1"
              transform-origin="0px 0px"
-             style="transform: translateX(0px) translateY(-101.586px); transform-origin: 0px 0px;"
+             style="transform: translateX(0px) translateY(-102.042px); transform-origin: 0px 0px;"
           >
             <circle r="3"
                     fill="#2c77e0"
@@ -2977,7 +2977,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
                 fill="none"
                 d="M0,105.667L176,158.5L396,246.556L528,299.389"
                 stroke-dasharray="562.90753 562.90753"
-                stroke-dashoffset="1.2122624057825142"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -2992,7 +2992,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
                 fill="none"
                 d="M0,105.667L176,176.111L396,193.722L528,35.222"
                 stroke-dasharray="616.54529 616.54529"
-                stroke-dashoffset="0.8482099549556026"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -3007,7 +3007,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
                 fill="none"
                 d="M0,0L176,264.167L396,70.444L528,0"
                 stroke-dasharray="760.18396 760.18396"
-                stroke-dashoffset="0.666333840254988"
+                stroke-dashoffset="0"
           >
           </path>
           <path opacity="0"
@@ -3034,7 +3034,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
                       cx="0"
-                      cy="105.85052613108508"
+                      cy="105.66666666666667"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3049,7 +3049,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
                       cx="176"
-                      cy="158.64436938357488"
+                      cy="158.5"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3064,7 +3064,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
                       cx="396"
-                      cy="246.62292151098598"
+                      cy="246.55555555555557"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3079,7 +3079,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
                       cx="528"
-                      cy="299.40684414424857"
+                      cy="299.38888888888886"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3106,7 +3106,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
                       cx="0"
-                      cy="105.85052613108508"
+                      cy="105.66666666666667"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3121,7 +3121,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
                       cx="176"
-                      cy="176.23948503097398"
+                      cy="176.11111111111111"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3136,7 +3136,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
                       cx="396"
-                      cy="193.8397909440892"
+                      cy="193.72222222222223"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3151,7 +3151,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
                       cx="528"
-                      cy="35.50277883097547"
+                      cy="35.222222222222236"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3178,7 +3178,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="0"
-                      cy="0.2755930501940839"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3193,7 +3193,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="176"
-                      cy="264.21506326796936"
+                      cy="264.1666666666667"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3208,7 +3208,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="396"
-                      cy="70.6791529546634"
+                      cy="70.44444444444444"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
@@ -3223,7 +3223,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
                       cx="528"
-                      cy="0.31557012253903444"
+                      cy="0"
                       r="4"
                       opacity="1"
                       style="cursor: pointer;"
