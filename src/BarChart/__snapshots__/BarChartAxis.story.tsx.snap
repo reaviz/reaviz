@@ -830,30 +830,8 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
   >
     <g transform="translate(0, 0)">
       <g style="pointer-events: none;">
-        <line x1="0"
-              x2="0"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
         <line x1="32"
               x2="32"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
-        <line x1="64"
-              x2="64"
               y1="0"
               y2="170"
               class="_gridLine_5yx3q_1"
@@ -874,30 +852,8 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
               fill="none"
         >
         </line>
-        <line x1="129"
-              x2="129"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
         <line x1="161"
               x2="161"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
-        <line x1="193"
-              x2="193"
               y1="0"
               y2="170"
               class="_gridLine_5yx3q_1"
@@ -918,30 +874,8 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
               fill="none"
         >
         </line>
-        <line x1="257"
-              x2="257"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
         <line x1="289"
               x2="289"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
-        <line x1="321"
-              x2="321"
               y1="0"
               y2="170"
               class="_gridLine_5yx3q_1"
@@ -962,30 +896,8 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
               fill="none"
         >
         </line>
-        <line x1="386"
-              x2="386"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
         <line x1="418"
               x2="418"
-              y1="0"
-              y2="170"
-              class="_gridLine_5yx3q_1"
-              stroke-dasharray="2 5"
-              stroke-width="1"
-              stroke="rgba(153, 153, 153, 0.5)"
-              fill="none"
-        >
-        </line>
-        <line x1="450"
-              x2="450"
               y1="0"
               y2="170"
               class="_gridLine_5yx3q_1"
@@ -1007,23 +919,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
               stroke="#8F979F"
         >
         </line>
-        <g transform="translate(0, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              35
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              35
-            </text>
-          </g>
-        </g>
         <g transform="translate(32, 0)">
           <g transform="translate(0, 5)"
              font-size="11"
@@ -1038,23 +933,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   fill="#8F979F"
             >
               30
-            </text>
-          </g>
-        </g>
-        <g transform="translate(64, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              25
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              25
             </text>
           </g>
         </g>
@@ -1075,23 +953,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
             </text>
           </g>
         </g>
-        <g transform="translate(129, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              15
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              15
-            </text>
-          </g>
-        </g>
         <g transform="translate(161, 0)">
           <g transform="translate(0, 5)"
              font-size="11"
@@ -1106,23 +967,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   fill="#8F979F"
             >
               10
-            </text>
-          </g>
-        </g>
-        <g transform="translate(193, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              5
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              5
             </text>
           </g>
         </g>
@@ -1143,23 +987,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
             </text>
           </g>
         </g>
-        <g transform="translate(257, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              5
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              5
-            </text>
-          </g>
-        </g>
         <g transform="translate(289, 0)">
           <g transform="translate(0, 5)"
              font-size="11"
@@ -1174,23 +1001,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   fill="#8F979F"
             >
               10
-            </text>
-          </g>
-        </g>
-        <g transform="translate(321, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              15
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              15
             </text>
           </g>
         </g>
@@ -1211,23 +1021,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
             </text>
           </g>
         </g>
-        <g transform="translate(386, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              25
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              25
-            </text>
-          </g>
-        </g>
         <g transform="translate(418, 0)">
           <g transform="translate(0, 5)"
              font-size="11"
@@ -1242,23 +1035,6 @@ exports[`Charts/Bar Chart/Axis TopBottomAxis smoke-test 1`] = `
                   fill="#8F979F"
             >
               30
-            </text>
-          </g>
-        </g>
-        <g transform="translate(450, 0)">
-          <g transform="translate(0, 5)"
-             font-size="11"
-             font-family="sans-serif"
-          >
-            <title>
-              35
-            </title>
-            <text transform
-                  text-anchor="middle"
-                  alignment-baseline="hanging"
-                  fill="#8F979F"
-            >
-              35
             </text>
           </g>
         </g>
