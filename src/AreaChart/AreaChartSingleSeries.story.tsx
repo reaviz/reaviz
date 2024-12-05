@@ -15,7 +15,11 @@ import {
   StackedNormalizedAreaSeries
 } from './AreaSeries';
 import { LinearXAxis, LinearXAxisTickSeries } from '@/common/Axis/LinearAxis';
-import { Gradient, GradientStop } from '@/common/Gradient';
+import {
+  Gradient,
+  GRADIENT_DEFAULT_PROPS,
+  GradientStop
+} from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 import { ChartDataShape } from '@/common/data';
 
@@ -61,6 +65,7 @@ export const Masks = () => (
             mask={<Stripes />}
             gradient={
               <Gradient
+                {...GRADIENT_DEFAULT_PROPS}
                 stops={[
                   <GradientStop offset="0%" stopOpacity={0.2} />,
                   <GradientStop offset="50%" stopOpacity={1} />

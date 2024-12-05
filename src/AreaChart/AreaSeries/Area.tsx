@@ -1,6 +1,10 @@
 import React, { Fragment, useMemo, ReactElement, FC, useCallback } from 'react';
 import { area } from 'd3-shape';
-import { Gradient, GradientProps } from '@/common/Gradient';
+import {
+  Gradient,
+  GRADIENT_DEFAULT_PROPS,
+  GradientProps
+} from '@/common/Gradient';
 import { Mask, MaskProps } from '@/common/Mask';
 import { interpolate, InterpolationTypes } from '@/common/utils/interpolation';
 import {
@@ -230,6 +234,6 @@ export const Area: FC<Partial<AreaProps>> = ({
 };
 
 Area.defaultProps = {
-  gradient: <Gradient />,
+  gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />,
   interpolation: 'linear'
 };
