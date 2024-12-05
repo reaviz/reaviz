@@ -42,18 +42,22 @@ interface ProcessedTick {
   half: 'start' | 'end' | 'center';
 }
 
-export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
-  scale,
-  orientation,
-  height,
-  width,
-  label,
-  tickSize,
-  tickValues,
-  interval,
-  line,
-  axis
-}) => {
+export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
+  props
+) => {
+  const {
+    scale,
+    orientation,
+    height,
+    width,
+    label,
+    tickSize,
+    tickValues,
+    interval,
+    line,
+    axis
+  } = { ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, ...props };
+
   /**
    * Gets the adjusted scale given offsets.
    */
@@ -216,7 +220,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   );
 };
 
-LinearAxisTickSeries.defaultProps = {
+export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   line: (
     <LinearAxisTickLine
       height={10}

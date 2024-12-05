@@ -2,8 +2,14 @@ import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
 import { Gridline, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
-import { LinearAxisProps } from '../Axis';
+import {
+  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LinearAxisProps
+} from '../Axis';
 import { GridStripeProps, GridStripe } from './GridStripe';
+import { label } from '../Tooltip/TooltipTemplate.module.css';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
@@ -67,20 +73,29 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
     direction === 'all' || direction === 'x';
 
   const { yAxisGrid, xAxisGrid } = useMemo(() => {
+    const xTickSeriesProps = {
+      ...LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
+      ...xAxis.tickSeries.props
+    };
+    const yTickSeriesProps = {
+      ...LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+      ...yAxis.tickSeries.props
+    };
+
     return {
       yAxisGrid: getTicks(
         yScale,
-        yAxis.tickSeries.props.tickValues,
+        yTickSeriesProps.tickValues,
         yAxis.type,
-        getMaxTicks(yAxis.tickSeries.props.tickSize, height),
-        yAxis.tickSeries.props.interval
+        getMaxTicks(yTickSeriesProps.tickSize, height),
+        yTickSeriesProps.interval
       ),
       xAxisGrid: getTicks(
         xScale,
-        xAxis.tickSeries.props.tickValues,
+        xTickSeriesProps.tickValues,
         xAxis.type,
-        getMaxTicks(xAxis.tickSeries.props.tickSize, width),
-        xAxis.tickSeries.props.interval
+        getMaxTicks(xTickSeriesProps.tickSize, width),
+        xTickSeriesProps.interval
       )
     };
   }, [height, width, xAxis, yAxis, yScale, xScale]);

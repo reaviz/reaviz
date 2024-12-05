@@ -5,11 +5,13 @@ import React, {
   createRef,
   useCallback,
   useEffect,
+  useMemo,
   useState
 } from 'react';
 import { ChartDataTypes } from '@/common/data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
 import {
+  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   LinearAxisTickSeries,
   LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
@@ -55,6 +57,10 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     visibility = 'visible',
     onDimensionsChange
   } = { ...LINEAR_AXIS_DEFAULT_PROPS, ...props };
+  const tickSeriesProps = useMemo(
+    () => ({ ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, ...tickSeries.props }),
+    [tickSeries.props]
+  );
 
   const containerRef = createRef<SVGGElement>();
   const [dimensions, setDimensions] = useState<LinearAxisState>({
@@ -124,7 +130,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           orientation={orientation}
         />
       )}
-      {(tickSeries.props.line || tickSeries.props.label) && (
+      {(tickSeriesProps.line || tickSeriesProps.label) && (
         <CloneElement<LinearAxisTickSeriesProps>
           element={tickSeries}
           height={height}

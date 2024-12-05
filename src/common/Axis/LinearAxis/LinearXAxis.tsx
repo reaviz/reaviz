@@ -9,7 +9,8 @@ import {
 } from './LinearAxisTickLine';
 import {
   LinearAxisTickSeriesProps,
-  LinearAxisTickSeries
+  LinearAxisTickSeries,
+  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS
 } from './LinearAxisTickSeries';
 import {
   LinearAxisProps,
@@ -37,9 +38,14 @@ LinearXAxisTickLine.defaultProps = {
 
 export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   props
-) => <LinearAxisTickSeries {...props} />;
-LinearXAxisTickSeries.defaultProps = {
-  ...LinearAxisTickSeries.defaultProps,
+) => (
+  <LinearAxisTickSeries
+    {...LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS}
+    {...props}
+  />
+);
+export const LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS = {
+  ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   tickSize: 75,
   line: <LinearXAxisTickLine />,
   label: <LinearXAxisTickLabel />
