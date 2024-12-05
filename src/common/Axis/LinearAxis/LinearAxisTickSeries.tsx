@@ -4,6 +4,7 @@ import {
   LinearAxisTickLabelProps
 } from './LinearAxisTickLabel';
 import {
+  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
@@ -223,6 +224,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
 export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   line: (
     <LinearAxisTickLine
+      {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
       height={10}
       width={10}
       orientation="horizontal"
@@ -233,6 +235,7 @@ export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
     <LinearAxisTickLabel
       line={
         <LinearAxisTickLine
+          {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
           orientation="horizontal"
           position="center"
           height={5}

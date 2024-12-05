@@ -3,13 +3,11 @@ import { Gridline, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
 import {
-  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
   LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
   LinearAxisProps
 } from '../Axis';
 import { GridStripeProps, GridStripe } from './GridStripe';
-import { label } from '../Tooltip/TooltipTemplate.module.css';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
@@ -126,12 +124,18 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   );
 
   const renderSeries = useCallback(
-    (yAxisGrid, xAxisGrid, element: GridElement, type: 'line' | 'stripe') => {
+    (
+      yAxisGrid,
+      xAxisGrid,
+      element: GridElement,
+      direction: 'x' | 'y' | 'all',
+      type: 'line' | 'stripe'
+    ) => {
       return (
         <Fragment>
-          {shouldRenderY(element.props.direction) &&
+          {shouldRenderY(direction) &&
             renderGroup(element, yAxisGrid, yScale, 'y', type)}
-          {shouldRenderX(element.props.direction) &&
+          {shouldRenderX(direction) &&
             renderGroup(element, xAxisGrid, xScale, 'x', type)}
         </Fragment>
       );
@@ -141,8 +145,16 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
 
   return (
     <g style={{ pointerEvents: 'none' }}>
-      {line && renderSeries(yAxisGrid, xAxisGrid, line, 'line')}
-      {stripe && renderSeries(yAxisGrid, xAxisGrid, stripe, 'stripe')}
+      {line &&
+        renderSeries(yAxisGrid, xAxisGrid, line, line.props.direction, 'line')}
+      {stripe &&
+        renderSeries(
+          yAxisGrid,
+          xAxisGrid,
+          stripe,
+          stripe.props.direction,
+          'stripe'
+        )}
     </g>
   );
 };

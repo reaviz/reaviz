@@ -5,7 +5,8 @@ import {
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLineProps,
-  LinearAxisTickLine
+  LinearAxisTickLine,
+  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS
 } from './LinearAxisTickLine';
 import {
   LinearAxisTickSeriesProps,
@@ -30,11 +31,13 @@ LinearYAxisTickLabel.defaultProps = {
 
 export const LinearYAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
   props
-) => <LinearAxisTickLine {...props} />;
-LinearYAxisTickLine.defaultProps = {
-  ...LinearAxisTickLine.defaultProps,
+) => (
+  <LinearAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} {...props} />
+);
+export const LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS = {
+  ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   position: 'start'
-};
+} as Partial<LinearAxisTickLineProps>;
 
 export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   props
@@ -47,7 +50,7 @@ export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
 export const LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   tickSize: 30,
-  line: <LinearYAxisTickLine />,
+  line: <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />,
   label: <LinearYAxisTickLabel />
 };
 

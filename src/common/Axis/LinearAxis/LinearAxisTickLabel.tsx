@@ -1,5 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import {
+  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
@@ -67,8 +68,9 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
       return [0, 0];
     }
 
-    const size = line.props.size ?? 3;
-    const position = line.props.position ?? 'center';
+    const lineProps = { ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS, ...line.props };
+    const size = lineProps.size ?? 3;
+    const position = lineProps.position ?? 'center';
 
     if (position === 'start') {
       return [size * -1, 0];
