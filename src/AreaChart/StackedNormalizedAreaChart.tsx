@@ -5,7 +5,8 @@ import { StackedNormalizedAreaSeries } from './AreaSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedAreaChartProps extends AreaChartProps {
@@ -25,6 +26,7 @@ StackedNormalizedAreaChart.defaultProps = {
         <LinearYAxisTickSeries
           label={
             <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
               rotation={false}
               format={(data) => `${data * 100}%`}
             />

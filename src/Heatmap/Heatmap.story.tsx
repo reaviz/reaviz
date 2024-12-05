@@ -6,7 +6,8 @@ import { getYScale } from '@/common/scales';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 
 export default {
@@ -27,6 +28,7 @@ export const Basic = () => (
     series={<HeatmapSeries colorScheme="OrRd" />}
   />
 );
+Basic.tags = ['single'];
 
 export const BasicLegend = () => (
   <div style={{ display: 'flex', height: '250px' }}>
@@ -75,7 +77,13 @@ export const MultiAxis = () => {
           tickSeries={
             <LinearYAxisTickSeries
               line={null}
-              label={<LinearYAxisTickLabel padding={10} position="end" />}
+              label={
+                <LinearYAxisTickLabel
+                  {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+                  padding={10}
+                  position="end"
+                />
+              }
             />
           }
         />

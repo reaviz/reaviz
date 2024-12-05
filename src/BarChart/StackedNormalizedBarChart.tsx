@@ -5,7 +5,8 @@ import { StackedNormalizedBarSeries } from './BarSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedBarChartProps extends BarChartProps {
@@ -25,6 +26,7 @@ StackedNormalizedBarChart.defaultProps = {
         <LinearYAxisTickSeries
           label={
             <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
               rotation={false}
               format={(data) => `${data * 100}%`}
             />

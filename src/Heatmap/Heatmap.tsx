@@ -17,7 +17,9 @@ import {
   LinearXAxisTickLabel,
   LinearAxis,
   LINEAR_X_AXIS_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_DEFAULT_PROPS
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
@@ -186,7 +188,12 @@ Heatmap.defaultProps = {
       tickSeries={
         <LinearYAxisTickSeries
           line={null}
-          label={<LinearYAxisTickLabel padding={5} />}
+          label={
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          }
         />
       }
     />
@@ -198,7 +205,12 @@ Heatmap.defaultProps = {
       tickSeries={
         <LinearXAxisTickSeries
           line={null}
-          label={<LinearXAxisTickLabel padding={5} />}
+          label={
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          }
         />
       }
     />

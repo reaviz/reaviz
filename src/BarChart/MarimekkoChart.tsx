@@ -7,7 +7,8 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 
 export interface MarimekkoChartProps extends BarChartProps {
@@ -33,6 +34,7 @@ MarimekkoChart.defaultProps = {
         <LinearYAxisTickSeries
           label={
             <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
               rotation={false}
               format={(data) => `${data * 100}%`}
             />

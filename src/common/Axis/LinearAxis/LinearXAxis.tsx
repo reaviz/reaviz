@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
 import {
   LinearAxisTickLabelProps,
-  LinearAxisTickLabel
+  LinearAxisTickLabel,
+  LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from './LinearAxisTickLabel';
 import {
   LinearAxisTickLineProps,
@@ -21,13 +22,15 @@ import {
 
 export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   props
-) => <LinearAxisTickLabel {...props} />;
-LinearXAxisTickLabel.defaultProps = {
-  ...LinearAxisTickLabel.defaultProps,
+) => (
+  <LinearAxisTickLabel {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS} {...props} />
+);
+export const LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS = {
+  ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   rotation: true,
   position: 'end',
   align: 'center'
-};
+} as Partial<LinearAxisTickLabelProps>;
 
 export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
   props
@@ -51,7 +54,7 @@ export const LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   tickSize: 75,
   line: <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />,
-  label: <LinearXAxisTickLabel />
+  label: <LinearXAxisTickLabel {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS} />
 };
 
 export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => (

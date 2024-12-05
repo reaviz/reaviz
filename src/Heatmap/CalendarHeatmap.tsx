@@ -7,7 +7,9 @@ import {
   LinearYAxisTickSeries,
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
 import { ChartTooltip } from '@/common/Tooltip';
@@ -77,7 +79,11 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
               tickSize={20}
               line={null}
               label={
-                <LinearYAxisTickLabel padding={5} format={yAxisLabelFormat} />
+                <LinearYAxisTickLabel
+                  {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+                  padding={5}
+                  format={yAxisLabelFormat}
+                />
               }
             />
           }
@@ -94,6 +100,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
               tickValues={xTickValues}
               label={
                 <LinearXAxisTickLabel
+                  {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
                   padding={5}
                   align="end"
                   format={xAxisLabelFormat(start)}

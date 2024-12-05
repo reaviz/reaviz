@@ -28,24 +28,31 @@ export interface LinearAxisTickLabelProps {
   className?: string;
 }
 
-export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
-  text,
-  fullText,
-  angle,
-  orientation,
-  half,
-  line,
-  textAnchor,
-  position,
-  className,
-  fill,
-  fontSize,
-  fontFamily,
-  rotation,
-  padding,
-  formatTooltip,
-  align
-}) => {
+export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
+  props
+) => {
+  const {
+    text,
+    fullText,
+    angle,
+    orientation,
+    half,
+    line,
+    textAnchor,
+    position,
+    className,
+    fill,
+    fontSize,
+    fontFamily,
+    rotation,
+    padding,
+    formatTooltip,
+    align
+  } = {
+    ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
+    ...props
+  };
+
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';
@@ -173,7 +180,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   );
 };
 
-LinearAxisTickLabel.defaultProps = {
+export const LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS = {
   fill: '#8F979F',
   fontSize: 11,
   fontFamily: 'sans-serif',
