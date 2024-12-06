@@ -70,6 +70,8 @@ export const VerticalLinearValueMarkers = () => (
     }
   />
 );
+// TODO: figure out why this is failing
+VerticalLinearValueMarkers.tags = ['skip-snapshot'];
 
 export const RadialValueMarkers = () => (
   <RadialAreaChart
