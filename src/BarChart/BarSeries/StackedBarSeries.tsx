@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { BarSeriesProps, BarSeries } from './BarSeries';
-import { Bar } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS } from './Bar';
 import { RangeLines } from './RangeLines';
 import { Gradient, GRADIENT_DEFAULT_PROPS, GradientStop } from '@/common';
 
@@ -13,6 +13,7 @@ StackedBarSeries.defaultProps = {
   type: 'stacked',
   bar: (
     <Bar
+      {...BAR_DEFAULT_PROPS}
       gradient={
         <Gradient
           {...GRADIENT_DEFAULT_PROPS}

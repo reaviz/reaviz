@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
 import { BarSeriesProps, BarSeries } from './BarSeries';
-import { Bar } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS } from './Bar';
 import { RangeLines } from './RangeLines';
 import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
@@ -44,6 +44,7 @@ StackedNormalizedBarSeries.defaultProps = {
   ),
   bar: (
     <Bar
+      {...BAR_DEFAULT_PROPS}
       gradient={
         <Gradient
           {...GRADIENT_DEFAULT_PROPS}

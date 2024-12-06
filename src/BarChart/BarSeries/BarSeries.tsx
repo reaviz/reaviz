@@ -8,7 +8,7 @@ import React, {
   useCallback
 } from 'react';
 import { offset } from '@floating-ui/dom';
-import { Bar, BarProps, BarType } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS, BarProps, BarType } from './Bar';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
@@ -241,7 +241,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
 
       let barElements = Array.isArray(bar) ? bar[barIndex] : bar;
       if (!bar) {
-        barElements = <Bar />;
+        barElements = <Bar {...BAR_DEFAULT_PROPS} />;
       }
 
       return (
@@ -369,6 +369,6 @@ BarSeries.defaultProps = {
     />
   ),
   colorScheme: 'cybertron',
-  bar: <Bar />,
+  bar: <Bar {...BAR_DEFAULT_PROPS} />,
   layout: 'vertical'
 };

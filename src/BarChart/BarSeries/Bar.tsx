@@ -211,42 +211,44 @@ interface BarCoordinates {
   y: number;
 }
 
-export const Bar: FC<Partial<BarProps>> = ({
-  activeBrightness,
-  id,
-  gradient,
-  data,
-  barIndex,
-  color,
-  yScale,
-  barCount,
-  glow,
-  xScale,
-  groupIndex,
-  minHeight,
-  rangeLines,
-  animated,
-  active,
-  type,
-  tooltip,
-  layout,
-  mask,
-  label,
-  cursor,
-  rx,
-  ry,
-  isCategorical,
-  className,
-  style,
-  width,
-  padding,
-  guide,
-  xScale1,
-  onMouseEnter,
-  onClick,
-  onMouseMove,
-  onMouseLeave
-}) => {
+export const Bar: FC<Partial<BarProps>> = (props) => {
+  const {
+    activeBrightness,
+    id,
+    gradient,
+    data,
+    barIndex,
+    color,
+    yScale,
+    barCount,
+    glow,
+    xScale,
+    groupIndex,
+    minHeight,
+    rangeLines,
+    animated,
+    active,
+    type,
+    tooltip,
+    layout,
+    mask,
+    label,
+    cursor,
+    rx,
+    ry,
+    isCategorical,
+    className,
+    style,
+    width,
+    padding,
+    guide,
+    xScale1,
+    onMouseEnter,
+    onClick,
+    onMouseMove,
+    onMouseLeave
+  } = { ...BAR_DEFAULT_PROPS, ...props };
+
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rect = useRef<SVGGElement | null>(null);
   const [internalActive, setInternalActive] = useState<boolean>(active);
@@ -751,7 +753,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   );
 };
 
-Bar.defaultProps = {
+export const BAR_DEFAULT_PROPS = {
   activeBrightness: 0.5,
   rx: 0,
   ry: 0,
@@ -759,7 +761,7 @@ Bar.defaultProps = {
   rangeLines: null,
   label: null,
   tooltip: null,
-  layout: 'vertical',
+  layout: 'vertical' as const,
   guide: null,
   gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />
 };
