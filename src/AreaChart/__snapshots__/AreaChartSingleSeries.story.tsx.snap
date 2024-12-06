@@ -1324,7 +1324,7 @@ exports[`Charts/Area Chart/Single Series BigInt smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-169-path">
+        <clipPath id="area-series-big-int-path">
           <rect width="317"
                 height="254"
                 x="-12.5"
@@ -1340,7 +1340,7 @@ exports[`Charts/Area Chart/Single Series BigInt smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-169-path)">
+        <g clip-path="url(#area-series-big-int-path)">
           <path class
                 pointer-events="none"
                 stroke="#2d60e8"
@@ -1353,12 +1353,12 @@ exports[`Charts/Area Chart/Single Series BigInt smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-169-area-0)"
+                fill="url(#gradient-area-series-big-int-area-0)"
                 d="M0,0L97,51.966L219,87.585L292,51.966L292,229L219,229L97,229L0,229Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-169-area-0"
+                          id="gradient-area-series-big-int-area-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -1376,7 +1376,7 @@ exports[`Charts/Area Chart/Single Series BigInt smoke-test 1`] = `
             </stop>
           </linearGradient>
           <defs>
-            <clipPath id="area-series-ref-169-path">
+            <clipPath id="area-series-big-int-path">
               <rect width="317"
                     height="254"
                     x="-12.5"
@@ -1385,7 +1385,7 @@ exports[`Charts/Area Chart/Single Series BigInt smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-169-path)">
+          <g clip-path="url(#area-series-big-int-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1,000,001"

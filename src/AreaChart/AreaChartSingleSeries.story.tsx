@@ -160,5 +160,10 @@ export const Performance = () =>
   ));
 
 export const BigInt = () => (
-  <AreaChart width={350} height={250} data={singleDateBigIntData} />
+  <AreaChart
+    id="big-int"
+    width={350}
+    height={250}
+    data={singleDateBigIntData}
+  />
 );
