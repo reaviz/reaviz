@@ -26,7 +26,7 @@ import {
 import { Gradient, GradientStop } from '@/common/Gradient';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Vertical/Multi Series',
   component: BarChart,
   subcomponents: {

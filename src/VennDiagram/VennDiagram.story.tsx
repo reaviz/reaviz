@@ -13,7 +13,7 @@ import { symbol, symbolStar } from 'd3-shape';
 const starPath = symbol().type(symbolStar).size(50)();
 
 export default {
-  tags: ['no-snapshot'],
+  tags: ['snapshot'],
   title: 'Charts/Venn Diagram',
   component: VennDiagram,
   subcomponents: {

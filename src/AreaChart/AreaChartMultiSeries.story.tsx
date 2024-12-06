@@ -18,7 +18,7 @@ import {
 } from './AreaSeries';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Multi Series',
   component: AreaChart,
   subcomponents: {
