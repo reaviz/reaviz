@@ -7842,7 +7842,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-simple-path">
           <rect width="553"
                 height="242"
                 x="-12.5"
@@ -7858,7 +7858,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-1-path)">
+        <g clip-path="url(#area-series-simple-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -7905,7 +7905,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-simple-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -7914,7 +7914,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-simple-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -7977,7 +7977,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-simple-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -7986,7 +7986,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-simple-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -8049,7 +8049,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-simple-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -8058,7 +8058,7 @@ exports[`Charts/Line Chart/Multi Series _Simple smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-simple-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
@@ -8958,7 +8958,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-8-path">
+        <clipPath id="area-series-clicked-path">
           <rect width="553"
                 height="242"
                 x="-12.5"
@@ -8974,7 +8974,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-8-path)">
+        <g clip-path="url(#area-series-clicked-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -9021,7 +9021,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-clicked-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -9030,7 +9030,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-clicked-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -9093,7 +9093,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-clicked-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -9102,7 +9102,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-clicked-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -9165,7 +9165,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-clicked-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -9174,7 +9174,7 @@ exports[`Charts/Line Chart/Multi Series Clicked smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-clicked-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
@@ -10074,7 +10074,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-18-path">
+        <clipPath id="area-series-custom-line-styles-path">
           <rect width="553"
                 height="342"
                 x="-12.5"
@@ -10090,7 +10090,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-18-path)">
+        <g clip-path="url(#area-series-custom-line-styles-path)">
           <path class
                 pointer-events="none"
                 stroke="#00bfff"
@@ -10138,7 +10138,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-18-path">
+            <clipPath id="area-series-custom-line-styles-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -10147,7 +10147,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-18-path)">
+          <g clip-path="url(#area-series-custom-line-styles-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -10210,7 +10210,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-18-path">
+            <clipPath id="area-series-custom-line-styles-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -10219,7 +10219,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-18-path)">
+          <g clip-path="url(#area-series-custom-line-styles-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -10282,7 +10282,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-18-path">
+            <clipPath id="area-series-custom-line-styles-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -10291,7 +10291,7 @@ exports[`Charts/Line Chart/Multi Series CustomLineStyles smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-18-path)">
+          <g clip-path="url(#area-series-custom-line-styles-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
@@ -41918,7 +41918,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-32-path">
+        <clipPath id="area-series-stacked-path">
           <rect width="553"
                 height="242"
                 x="-12.5"
@@ -41934,7 +41934,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-32-path)">
+        <g clip-path="url(#area-series-stacked-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -41981,7 +41981,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-32-path">
+            <clipPath id="area-series-stacked-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -41990,7 +41990,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-32-path)">
+          <g clip-path="url(#area-series-stacked-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -42053,7 +42053,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-32-path">
+            <clipPath id="area-series-stacked-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -42062,7 +42062,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-32-path)">
+          <g clip-path="url(#area-series-stacked-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -42125,7 +42125,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-32-path">
+            <clipPath id="area-series-stacked-path">
               <rect width="553"
                     height="242"
                     x="-12.5"
@@ -42134,7 +42134,7 @@ exports[`Charts/Line Chart/Multi Series Stacked smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-32-path)">
+          <g clip-path="url(#area-series-stacked-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
@@ -42674,7 +42674,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-39-path">
+        <clipPath id="area-series-stacked-normalized-path">
           <rect width="537"
                 height="254"
                 x="-12.5"
@@ -42690,7 +42690,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-39-path)">
+        <g clip-path="url(#area-series-stacked-normalized-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -42737,7 +42737,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-39-path">
+            <clipPath id="area-series-stacked-normalized-path">
               <rect width="537"
                     height="254"
                     x="-12.5"
@@ -42746,7 +42746,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-39-path)">
+          <g clip-path="url(#area-series-stacked-normalized-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 0.286"
@@ -42809,7 +42809,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-39-path">
+            <clipPath id="area-series-stacked-normalized-path">
               <rect width="537"
                     height="254"
                     x="-12.5"
@@ -42818,7 +42818,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-39-path)">
+          <g clip-path="url(#area-series-stacked-normalized-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 0.286"
@@ -42881,7 +42881,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-39-path">
+            <clipPath id="area-series-stacked-normalized-path">
               <rect width="537"
                     height="254"
                     x="-12.5"
@@ -42890,7 +42890,7 @@ exports[`Charts/Line Chart/Multi Series StackedNormalized smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-39-path)">
+          <g clip-path="url(#area-series-stacked-normalized-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 0.429"

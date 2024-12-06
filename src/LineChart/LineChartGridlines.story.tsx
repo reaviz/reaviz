@@ -11,6 +11,7 @@ export default {
 
 export const AllAxes = () => (
   <LineChart
+    id="all-axes"
     width={350}
     height={250}
     data={singleDateData}
@@ -20,6 +21,7 @@ export const AllAxes = () => (
 
 export const XAxis = () => (
   <LineChart
+    id="x-axis"
     width={350}
     height={250}
     data={singleDateData}
@@ -33,6 +35,7 @@ XAxis.story = {
 
 export const YAxis = () => (
   <LineChart
+    id="y-axis"
     width={350}
     height={250}
     data={singleDateData}
