@@ -33,6 +33,7 @@ export default {
 
 export const Simple = () => (
   <AreaChart
+    id="simple"
     width={550}
     height={350}
     data={multiDateData}
@@ -42,6 +43,7 @@ export const Simple = () => (
 
 export const LargeDataset = () => (
   <AreaChart
+    id="large-dataset"
     width={550}
     height={350}
     series={<AreaSeries type="grouped" colorScheme="cybertron" />}
@@ -53,6 +55,7 @@ export const LiveUpdating = () => <LiveUpdatingStory />;
 
 export const CustomColors = () => (
   <AreaChart
+    id="custom-colors"
     width={550}
     height={350}
     series={
@@ -67,6 +70,7 @@ export const CustomColors = () => (
 
 export const Stacked = () => (
   <StackedAreaChart
+    id="stacked"
     width={550}
     height={350}
     series={<StackedAreaSeries colorScheme="cybertron" />}
@@ -76,6 +80,7 @@ export const Stacked = () => (
 
 export const StackedNormalized = () => (
   <StackedNormalizedAreaChart
+    id="stacked-normalized"
     width={550}
     height={350}
     data={multiDateData}
@@ -100,6 +105,7 @@ const LiveUpdatingStory = () => {
   return (
     <Fragment>
       <AreaChart
+        id="live-updating"
         width={550}
         height={350}
         series={
@@ -117,3 +123,4 @@ const LiveUpdatingStory = () => {
     </Fragment>
   );
 };
+LiveUpdatingStory.tags = ['no-snapshot'];
