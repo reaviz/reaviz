@@ -3,6 +3,7 @@ import { ChartNestedDataShape } from '@/common/data';
 import { RadialAreaChart, RadialAreaChartProps } from '@/RadialAreaChart';
 import {
   RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS,
+  RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS,
   RadialAxis,
   RadialAxisArcLine,
   RadialAxisArcSeries
@@ -24,6 +25,7 @@ RadarChart.defaultProps = {
       type="category"
       arcs={
         <RadialAxisArcSeries
+          {...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS}
           count={5}
           arc={null}
           line={<RadialAxisArcLine {...RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS} />}

@@ -51,16 +51,20 @@ export interface RadialAxisArcSeriesProps {
   endAngle?: number;
 }
 
-export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
-  count,
-  innerRadius,
-  outerRadius,
-  line,
-  arc,
-  tickValues,
-  startAngle,
-  endAngle
-}) => {
+export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
+  props
+) => {
+  const {
+    count,
+    innerRadius,
+    outerRadius,
+    line,
+    arc,
+    tickValues,
+    startAngle,
+    endAngle
+  } = { ...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS, ...props };
+
   const scale = scaleLinear()
     .domain([0, count])
     .range([innerRadius, outerRadius]);
@@ -106,8 +110,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
   );
 };
 
-RadialAxisArcSeries.defaultProps = {
-  type: 'arc',
+export const RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS = {
   count: 12,
   arc: <RadialAxisArc {...RADIAL_AXIS_ARC_DEFAULT_PROPS} />,
   startAngle: 0,
