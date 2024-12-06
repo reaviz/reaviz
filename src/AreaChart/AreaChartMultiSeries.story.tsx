@@ -52,6 +52,7 @@ export const LargeDataset = () => (
 );
 
 export const LiveUpdating = () => <LiveUpdatingStory />;
+LiveUpdating.tags = ['no-snapshot'];
 
 export const CustomColors = () => (
   <AreaChart
