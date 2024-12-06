@@ -1,5 +1,9 @@
 import React, { FC, ReactElement } from 'react';
-import { RadialAxisArc, RadialAxisArcProps } from './RadialAxisArc';
+import {
+  RADIAL_AXIS_ARC_DEFAULT_PROPS,
+  RadialAxisArc,
+  RadialAxisArcProps
+} from './RadialAxisArc';
 import { CloneElement } from 'reablocks';
 import { scaleLinear } from 'd3-scale';
 import { getPointsForLevels } from './utils';
@@ -105,7 +109,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
 RadialAxisArcSeries.defaultProps = {
   type: 'arc',
   count: 12,
-  arc: <RadialAxisArc />,
+  arc: <RadialAxisArc {...RADIAL_AXIS_ARC_DEFAULT_PROPS} />,
   startAngle: 0,
   endAngle: 2 * Math.PI
 };

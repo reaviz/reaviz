@@ -33,14 +33,12 @@ export interface RadialAxisArcProps {
   endAngle?: number;
 }
 
-export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
-  index,
-  stroke,
-  strokeDasharray,
-  scale,
-  startAngle,
-  endAngle
-}) => {
+export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = (props) => {
+  const { index, stroke, strokeDasharray, scale, startAngle, endAngle } = {
+    ...RADIAL_AXIS_ARC_DEFAULT_PROPS,
+    ...props
+  };
+
   const r = scale(index);
   const strokeColor = typeof stroke === 'string' ? stroke : stroke(index);
   const strokeDash =
@@ -66,7 +64,7 @@ export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
 
   return (
     <>
-      {isFullCircle ? 
+      {isFullCircle ? (
         <circle
           fill="none"
           strokeDasharray={strokeDash}
@@ -76,18 +74,20 @@ export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = ({
           cy="0"
           r={r}
         />
-        :
-        <path d={d} fill="none"
+      ) : (
+        <path
+          d={d}
+          fill="none"
           strokeDasharray={strokeDash}
           stroke={strokeColor}
           style={{ pointerEvents: 'none' }}
         />
-      }
+      )}
     </>
   );
 };
 
-RadialAxisArc.defaultProps = {
+export const RADIAL_AXIS_ARC_DEFAULT_PROPS = {
   stroke: '#71808d',
   strokeDasharray: '1,4',
   startAngle: 0,
