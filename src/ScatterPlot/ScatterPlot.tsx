@@ -24,7 +24,11 @@ import {
 } from '@/common/Axis';
 import { getYScale, getXScale } from '@/common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
+import {
+  GRIDLINE_SERIES_DEFAULT_PROPS,
+  GridlineSeries,
+  GridlineSeriesProps
+} from '@/common/Gridline';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
@@ -288,7 +292,7 @@ ScatterPlot.defaultProps = {
   xAxis: <LinearXAxis type="time" />,
   yAxis: <LinearYAxis type="value" />,
   series: <ScatterSeries />,
-  gridlines: <GridlineSeries />,
+  gridlines: <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
   brush: null,
   zoomPan: null
 };

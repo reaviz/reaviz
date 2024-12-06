@@ -22,7 +22,11 @@ import {
   buildShallowChartData,
   StackTypes
 } from '@/common/data';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
+import {
+  GRIDLINE_SERIES_DEFAULT_PROPS,
+  GridlineSeries,
+  GridlineSeriesProps
+} from '@/common/Gridline';
 import {
   getXScale,
   getYScale,
@@ -444,6 +448,6 @@ BarChart.defaultProps = {
   ),
   yAxis: <LinearYAxis type="value" />,
   series: <BarSeries />,
-  gridlines: <GridlineSeries />,
+  gridlines: <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
   brush: null
 };

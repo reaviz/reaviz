@@ -65,7 +65,7 @@ export const Gridline: FC<Partial<GridlineProps>> = (props) => {
     width,
     scale,
     strokeDasharray
-  } = { ...GRIDLINE_DEFAULT_PROPS, ...props };
+  } = { ...GRID_LINE_DEFAULT_PROPS, ...props };
 
   const coords = useMemo(() => {
     const pos = scale(data);
@@ -99,7 +99,7 @@ export const Gridline: FC<Partial<GridlineProps>> = (props) => {
   );
 };
 
-export const GRIDLINE_DEFAULT_PROPS = {
+export const GRID_LINE_DEFAULT_PROPS = {
   strokeWidth: 1,
   strokeDasharray: '2 5',
   direction: 'all',

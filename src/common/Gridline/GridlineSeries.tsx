@@ -1,5 +1,5 @@
 import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
-import { Gridline, GRIDLINE_DEFAULT_PROPS, GridlineProps } from './Gridline';
+import { Gridline, GRID_LINE_DEFAULT_PROPS, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
 import {
@@ -7,7 +7,11 @@ import {
   LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
   LinearAxisProps
 } from '../Axis';
-import { GridStripeProps, GridStripe } from './GridStripe';
+import {
+  GridStripeProps,
+  GridStripe,
+  GRID_STRIPE_DEFAULT_PROPS
+} from './GridStripe';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
@@ -55,16 +59,20 @@ export interface GridlineSeriesProps {
   stripe: GridStripeElement | null;
 }
 
-export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
-  line,
-  stripe,
-  yScale,
-  xScale,
-  yAxis,
-  xAxis,
-  height,
-  width
-}) => {
+export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
+  const { line, stripe, yScale, xScale, yAxis, xAxis, height, width } = {
+    ...GRIDLINE_SERIES_DEFAULT_PROPS,
+    ...props
+  };
+  const lineProps = useMemo(
+    () => ({ ...GRID_LINE_DEFAULT_PROPS, ...line.props }),
+    [line.props]
+  );
+  const stripeProps = useMemo(
+    () => ({ ...GRID_STRIPE_DEFAULT_PROPS, ...(stripe?.props ?? {}) }),
+    [stripe?.props]
+  );
+
   const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'y';
   const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
@@ -146,20 +154,20 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   return (
     <g style={{ pointerEvents: 'none' }}>
       {line &&
-        renderSeries(yAxisGrid, xAxisGrid, line, line.props.direction, 'line')}
+        renderSeries(yAxisGrid, xAxisGrid, line, lineProps.direction, 'line')}
       {stripe &&
         renderSeries(
           yAxisGrid,
           xAxisGrid,
           stripe,
-          stripe.props.direction,
+          stripeProps.direction,
           'stripe'
         )}
     </g>
   );
 };
 
-GridlineSeries.defaultProps = {
-  line: <Gridline {...GRIDLINE_DEFAULT_PROPS} direction="all" />,
+export const GRIDLINE_SERIES_DEFAULT_PROPS = {
+  line: <Gridline {...GRID_LINE_DEFAULT_PROPS} direction="all" />,
   stripe: null
 };

@@ -20,7 +20,11 @@ import {
   LINEAR_X_AXIS_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { getXScale, getYScale } from '@/common/scales';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
+import {
+  GRIDLINE_SERIES_DEFAULT_PROPS,
+  GridlineSeries,
+  GridlineSeriesProps
+} from '@/common/Gridline';
 import {
   ChartDataShape,
   ChartNestedDataShape,
@@ -328,7 +332,7 @@ AreaChart.defaultProps = {
   xAxis: <LinearXAxis type="time" />,
   yAxis: <LinearYAxis type="value" />,
   series: <AreaSeries />,
-  gridlines: <GridlineSeries />,
+  gridlines: <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
   brush: null,
   zoomPan: null
 };
