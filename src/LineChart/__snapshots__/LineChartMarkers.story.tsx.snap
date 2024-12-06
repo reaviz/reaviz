@@ -831,7 +831,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-linear-value-markers-path">
           <rect width="553"
                 height="342"
                 x="-12.5"
@@ -847,7 +847,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-1-path)">
+        <g clip-path="url(#area-series-linear-value-markers-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -894,7 +894,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -903,7 +903,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -966,7 +966,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -975,7 +975,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -1038,7 +1038,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -1047,7 +1047,7 @@ exports[`Charts/Line Chart/Markers LinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
@@ -1440,7 +1440,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkers smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-15-path)">
+        <g clip-path="url(#radial-value-markers-path)">
           <path pointer-events="none"
                 stroke="#2d60e8"
                 fill="none"
@@ -2953,7 +2953,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-8-path">
+        <clipPath id="area-series-radial-value-markers-vertical-path">
           <rect width="553"
                 height="342"
                 x="-12.5"
@@ -2969,7 +2969,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-8-path)">
+        <g clip-path="url(#area-series-radial-value-markers-vertical-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -3016,7 +3016,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
           >
           </path>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-radial-value-markers-vertical-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -3025,7 +3025,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-radial-value-markers-vertical-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -3088,7 +3088,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-radial-value-markers-vertical-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -3097,7 +3097,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-radial-value-markers-vertical-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -3160,7 +3160,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-radial-value-markers-vertical-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -3169,7 +3169,7 @@ exports[`Charts/Line Chart/Markers RadialValueMarkersVertical smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-radial-value-markers-vertical-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
