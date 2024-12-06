@@ -12,6 +12,7 @@ import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Vertical/Single Series',
   component: BarChart,
   subcomponents: {

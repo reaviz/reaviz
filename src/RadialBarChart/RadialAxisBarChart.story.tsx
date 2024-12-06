@@ -13,6 +13,7 @@ import { RadialBarChart } from './RadialBarChart';
 import { RadialBar, RadialBarSeries, RadialGuideBar } from './RadialBarSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Radial/Axis',
   component: RadialBarChart,
   subcomponents: {
@@ -24,6 +25,7 @@ export default {
 
 export const SemiCircle = () => (
   <RadialBarChart
+    id="semi-circle"
     height={450}
     width={450}
     innerRadius={50}
@@ -54,6 +56,7 @@ export const SemiCircle = () => (
 
 export const Quarter = () => (
   <RadialBarChart
+    id="quarter-circle"
     height={450}
     width={450}
     innerRadius={50}
@@ -91,6 +94,7 @@ export const Quarter = () => (
 
 export const Custom = () => (
   <RadialBarChart
+    id="custom"
     height={450}
     width={450}
     innerRadius={50}
@@ -128,6 +132,7 @@ export const Custom = () => (
 
 export const SemiCircleMultiSeries = () => (
   <RadialBarChart
+    id="semi-circle-multi-series"
     height={450}
     width={450}
     innerRadius={50}
@@ -160,6 +165,7 @@ export const SemiCircleMultiSeries = () => (
 
 export const QuarterCircleMultiSeries = () => (
   <RadialBarChart
+    id="quarter-circle-multi-series"
     height={450}
     width={450}
     innerRadius={50}
@@ -192,6 +198,7 @@ export const QuarterCircleMultiSeries = () => (
 
 export const CustomCircle1MultiSeries = () => (
   <RadialBarChart
+    id="custom-circle-1"
     height={450}
     width={450}
     innerRadius={50}
@@ -224,6 +231,7 @@ export const CustomCircle1MultiSeries = () => (
 
 export const CustomCircle2MultiSeries = () => (
   <RadialBarChart
+    id="custom-circle-2"
     height={450}
     width={450}
     innerRadius={50}

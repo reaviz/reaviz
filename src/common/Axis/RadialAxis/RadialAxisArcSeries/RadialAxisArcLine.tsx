@@ -18,11 +18,14 @@ export interface RadialAxisArcLineProps {
   index: number;
 }
 
-export const RadialAxisArcLine: FC<Partial<RadialAxisArcLineProps>> = ({
-  data,
-  stroke,
-  index
-}) => {
+export const RadialAxisArcLine: FC<Partial<RadialAxisArcLineProps>> = (
+  props
+) => {
+  const { data, stroke, index } = {
+    ...RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS,
+    ...props
+  };
+
   const lineGenerator = line<{ x: number; y: number }>()
     .x((d: any) => d.x)
     .y((d: any) => d.y);
@@ -40,6 +43,6 @@ export const RadialAxisArcLine: FC<Partial<RadialAxisArcLineProps>> = ({
   );
 };
 
-RadialAxisArcLine.defaultProps = {
+export const RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS = {
   stroke: '#71808d'
 };

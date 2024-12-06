@@ -25,6 +25,7 @@ export default {
 
 export const Simple = () => (
   <RadialScatterPlot
+    id="simple"
     height={450}
     width={450}
     data={medDateData}
@@ -53,6 +54,7 @@ export const Simple = () => (
 
 export const Categories = () => (
   <RadialScatterPlot
+    id="categories"
     height={450}
     width={450}
     data={categoryData}
@@ -81,6 +83,7 @@ export const Categories = () => (
 
 export const Bubble = () => (
   <RadialScatterPlot
+    id="bubble"
     height={450}
     width={450}
     data={largeSignalChartData}
@@ -114,6 +117,7 @@ export const Bubble = () => (
 
 export const Symbols = () => (
   <RadialScatterPlot
+    id="symbols"
     height={450}
     width={450}
     data={medSignalChartData}
@@ -163,6 +167,7 @@ export const Symbols = () => (
 export const Resizable = () => (
   <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
     <RadialScatterPlot
+      id="resizable"
       height={210}
       width={210}
       data={largeSignalChartData}

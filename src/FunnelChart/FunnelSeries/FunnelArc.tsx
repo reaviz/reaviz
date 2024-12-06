@@ -3,7 +3,12 @@ import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
 import { InterpolationTypes, getAriaLabel, interpolate } from '@/common/utils';
 import { ColorSchemeType, getColor, schemes } from '@/common/color';
-import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
+import {
+  Gradient,
+  GRADIENT_DEFAULT_PROPS,
+  GradientProps,
+  GradientStop
+} from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import {
@@ -194,6 +199,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
 FunnelArc.defaultProps = {
   gradient: (
     <Gradient
+      {...GRADIENT_DEFAULT_PROPS}
       direction="horizontal"
       stops={[
         <GradientStop offset="0%" stopOpacity={1} key="stop" />,

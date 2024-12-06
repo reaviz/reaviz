@@ -15,10 +15,16 @@ import {
   LinearAxisProps,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
+  LINEAR_X_AXIS_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { getXScale, getYScale } from '@/common/scales';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
+import {
+  GRIDLINE_SERIES_DEFAULT_PROPS,
+  GridlineSeries,
+  GridlineSeriesProps
+} from '@/common/Gridline';
 import {
   ChartDataShape,
   ChartNestedDataShape,
@@ -105,6 +111,14 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
   const [isZoomed, setIsZoomed] = useState<boolean>(!!zoom.domain);
   // eslint-disable-next-line
   const [zoomControlled] = useState<boolean>(!zoom.hasOwnProperty('domain'));
+  const xAxisProps = useMemo(
+    () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
+    [xAxis.props]
+  );
+  const yAxisProps = useMemo(
+    () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
+    [yAxis.props]
+  );
 
   const timeoutRef = useRef<any | null>(null);
 
@@ -143,19 +157,19 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
     (chartWidth: number, chartHeight: number) => {
       const xScale = getXScale({
         width: chartWidth,
-        type: xAxis.props.type,
-        roundDomains: xAxis.props.roundDomains,
+        type: xAxisProps.type,
+        roundDomains: xAxisProps.roundDomains,
         data: aggregatedData,
-        domain: zoomDomain || xAxis.props.domain,
+        domain: zoomDomain || xAxisProps.domain,
         isMultiSeries
       });
 
       const yScale = getYScale({
-        roundDomains: yAxis.props.roundDomains,
-        type: yAxis.props.type,
+        roundDomains: yAxisProps.roundDomains,
+        type: yAxisProps.type,
         height: chartHeight,
         data: aggregatedData,
-        domain: yAxis.props.domain,
+        domain: yAxisProps.domain,
         isMultiSeries
       });
 
@@ -164,12 +178,12 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
     [
       aggregatedData,
       isMultiSeries,
-      xAxis.props.domain,
-      xAxis.props.roundDomains,
-      xAxis.props.type,
-      yAxis.props.domain,
-      yAxis.props.roundDomains,
-      yAxis.props.type,
+      xAxisProps.domain,
+      xAxisProps.roundDomains,
+      xAxisProps.type,
+      yAxisProps.domain,
+      yAxisProps.roundDomains,
+      yAxisProps.type,
       zoomDomain
     ]
   );
@@ -208,8 +222,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
               width={chartWidth}
               yScale={yScale}
               xScale={xScale}
-              yAxis={yAxis.props}
-              xAxis={xAxis.props}
+              yAxis={yAxisProps}
+              xAxis={xAxisProps}
             />
           )}
           <CloneElement<LinearAxisProps>
@@ -286,6 +300,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       series,
       xAxis,
       yAxis,
+      xAxisProps,
+      yAxisProps,
       zoomDomain,
       zoomPan
     ]
@@ -298,8 +314,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
       height={height}
       margins={margins}
       containerClassName={containerClassName}
-      xAxisVisible={isAxisVisible(xAxis.props)}
-      yAxisVisible={isAxisVisible(yAxis.props)}
+      xAxisVisible={isAxisVisible(xAxisProps)}
+      yAxisVisible={isAxisVisible(yAxisProps)}
       className={classNames(
         css.areaChart,
         className,
@@ -316,7 +332,7 @@ AreaChart.defaultProps = {
   xAxis: <LinearXAxis type="time" />,
   yAxis: <LinearYAxis type="value" />,
   series: <AreaSeries />,
-  gridlines: <GridlineSeries />,
+  gridlines: <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
   brush: null,
   zoomPan: null
 };

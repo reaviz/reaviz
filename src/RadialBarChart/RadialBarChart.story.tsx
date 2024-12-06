@@ -16,6 +16,7 @@ import { schemes } from '@/common/color';
 import { useState } from 'react';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Radial',
   component: RadialBarChart,
   subcomponents: {
@@ -27,6 +28,7 @@ export default {
 
 export const Simple = () => (
   <RadialBarChart
+    id="simple"
     height={450}
     width={450}
     innerRadius={50}
@@ -55,6 +57,7 @@ export const Simple = () => (
 
 export const Gradient = () => (
   <RadialBarChart
+    id="gradient"
     height={450}
     width={450}
     innerRadius={50}
@@ -89,7 +92,7 @@ export const Gradient = () => (
 
 export const Resizable = () => (
   <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
-    <RadialBarChart data={largeCategoryData} innerRadius={10} />
+    <RadialBarChart id="resizable" data={largeCategoryData} innerRadius={10} />
   </div>
 );
 
@@ -126,6 +129,7 @@ export const LiveUpdating = () => {
 
 export const MultiSeries = () => (
   <RadialBarChart
+    id="multi-series"
     height={450}
     width={450}
     innerRadius={50}

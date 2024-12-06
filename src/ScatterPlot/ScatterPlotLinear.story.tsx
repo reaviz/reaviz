@@ -20,6 +20,7 @@ import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Scatter Plot/Linear',
   component: ScatterPlot,
   subcomponents: {
@@ -30,6 +31,7 @@ export default {
 
 export const Simple = () => (
   <ScatterPlot
+    id="simple"
     height={400}
     width={750}
     data={medSignalChartData}
@@ -43,6 +45,7 @@ export const Simple = () => (
 
 export const CategoricalAxis = () => (
   <ScatterPlot
+    id="categorical"
     height={400}
     width={750}
     data={signalStageData}
@@ -68,6 +71,7 @@ export const CategoricalAxis = () => (
 
 export const NoAnimation = () => (
   <ScatterPlot
+    id="no-animation"
     height={400}
     width={750}
     data={medSignalChartData}
@@ -88,7 +92,7 @@ export const Performance = () => (
           display: 'inline-block'
         }}
       >
-        <ScatterPlot data={medSignalChartData} />
+        <ScatterPlot id={`performance-${i}`} data={medSignalChartData} />
       </div>
     ))}
   </Fragment>
@@ -96,7 +100,7 @@ export const Performance = () => (
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <ScatterPlot data={medSignalChartData} />
+    <ScatterPlot id="autosize" data={medSignalChartData} />
   </div>
 );
 
@@ -132,6 +136,7 @@ export const Symbols = () => (
 
 export const Bubble = () => (
   <ScatterPlot
+    id="bubble"
     height={400}
     width={750}
     data={largeSignalChartData}
@@ -166,6 +171,7 @@ const BubbleChartLiveUpdate = () => {
   return (
     <Fragment>
       <ScatterPlot
+        id="live-update"
         height={400}
         width={750}
         data={data}
