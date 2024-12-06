@@ -17,6 +17,7 @@ export default {
 
 export const Simple = () => (
   <PieChart
+    id="simple"
     width={350}
     height={250}
     data={categoryData}
@@ -26,6 +27,7 @@ export const Simple = () => (
 
 export const WithGradient = () => (
   <PieChart
+    id="with-gradient"
     width={350}
     height={250}
     data={categoryData}
@@ -41,6 +43,7 @@ export const WithGradient = () => (
 
 export const RoundedAndSpaced = () => (
   <PieChart
+    id="rounded-and-spaced"
     width={350}
     height={250}
     data={categoryData}
@@ -62,6 +65,7 @@ RoundedAndSpaced.story = {
 
 export const Labels = () => (
   <PieChart
+    id="labels"
     width={350}
     height={250}
     data={categoryData}
@@ -82,6 +86,7 @@ export const InnerLabel = () => (
   >
     <div style={{ position: 'absolute', top: 0, left: 0 }}>
       <PieChart
+        id="inner-label"
         width={350}
         height={250}
         data={categoryData}

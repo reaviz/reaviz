@@ -516,12 +516,12 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
-              fill="url(#gradient-ref-4-arc-DLP)"
+              fill="url(#gradient-with-gradient-arc-DLP)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-4-arc-DLP"
+                        id="gradient-with-gradient-arc-DLP"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -564,12 +564,12 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
-              fill="url(#gradient-ref-4-arc-Malware)"
+              fill="url(#gradient-with-gradient-arc-Malware)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-4-arc-Malware"
+                        id="gradient-with-gradient-arc-Malware"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -612,12 +612,12 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
-              fill="url(#gradient-ref-4-arc-IDS)"
+              fill="url(#gradient-with-gradient-arc-IDS)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-4-arc-IDS"
+                        id="gradient-with-gradient-arc-IDS"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -660,12 +660,12 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"
-              fill="url(#gradient-ref-4-arc-Phishing_Attack)"
+              fill="url(#gradient-with-gradient-arc-Phishing_Attack)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-4-arc-Phishing_Attack"
+                        id="gradient-with-gradient-arc-Phishing_Attack"
                         y1="0%"
                         y2="0%"
                         x1="0%"

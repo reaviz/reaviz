@@ -29,6 +29,7 @@ export default {
 
 export const SemiCircle = () => (
   <RadialAreaChart
+    id="semi-circle"
     height={500}
     width={500}
     data={medDateData}
@@ -64,6 +65,7 @@ export const SemiCircle = () => (
 
 export const SemiCircleMultiSeries = () => (
   <RadialAreaChart
+    id="semi-circle-multi-series"
     data={multiCategory}
     height={500}
     width={500}
@@ -78,6 +80,7 @@ export const SemiCircleMultiSeries = () => (
 
 export const Custom = () => (
   <RadialAreaChart
+    id="custom"
     height={500}
     width={500}
     data={medDateData}

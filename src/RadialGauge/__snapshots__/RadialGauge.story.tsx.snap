@@ -961,12 +961,12 @@ exports[`Charts/Gauge/Radial WithGradient smoke-test 1`] = `
           >
             <path role="graphics-symbol"
                   d="M0,-122.27A7.5,7.5,0,0,1,7.959,-129.756A130,130,0,0,1,129,-16.091A7.5,7.5,0,0,1,122.029,-7.677L122.029,-7.677A7.5,7.5,0,0,1,114.116,-14.234A115,115,0,0,0,7.041,-114.784A7.5,7.5,0,0,1,0,-122.27Z"
-                  fill="url(#gradient-ref-25-Austin_TX-inner)"
+                  fill="url(#gradient-with-gradient-Austin_TX-inner)"
                   style="cursor: initial;"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-ref-25-Austin_TX-inner"
+                            id="gradient-with-gradient-Austin_TX-inner"
                             y1="0%"
                             y2="0%"
                             x1="0%"

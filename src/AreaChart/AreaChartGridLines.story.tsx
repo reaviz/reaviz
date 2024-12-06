@@ -27,6 +27,7 @@ export default {
 
 export const AllAxes = () => (
   <AreaChart
+    id="all-axes"
     width={350}
     height={250}
     data={singleDateData}
@@ -36,6 +37,7 @@ export const AllAxes = () => (
 
 export const XAxis = () => (
   <AreaChart
+    id="x-axis"
     width={350}
     height={250}
     data={singleDateData}
@@ -49,6 +51,7 @@ XAxis.story = {
 
 export const YAxis = () => (
   <AreaChart
+    id="y-axis"
     width={350}
     height={250}
     data={singleDateData}

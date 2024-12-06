@@ -233,7 +233,7 @@ exports[`Charts/Line Chart/Radial/Axis Custom smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-5-path)">
+        <g clip-path="url(#custom-path)">
           <path pointer-events="none"
                 stroke="#2d60e8"
                 fill="none"
@@ -1132,7 +1132,7 @@ exports[`Charts/Line Chart/Radial/Axis SemiCircle smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-1-path)">
+        <g clip-path="url(#semi-circle-path)">
           <path pointer-events="none"
                 stroke="#2d60e8"
                 fill="none"
@@ -2008,7 +2008,7 @@ exports[`Charts/Line Chart/Radial/Axis SemiCircleMultiSeries smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-3-path)">
+        <g clip-path="url(#semi-circle-multi-series-path)">
           <path pointer-events="none"
                 stroke="#2aa1d1"
                 fill="none"

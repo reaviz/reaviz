@@ -36,6 +36,7 @@ export const Styling = () => (
       `}
     </style>
     <BarList
+      id="styling"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 50 },
@@ -58,6 +59,7 @@ export const Styling = () => (
 export const Events = () => (
   <>
     <BarList
+      id="events"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 50 },
@@ -93,6 +95,7 @@ export const PercentageFormat = () => (
       `}
     </style>
     <BarList
+      id="percentage-format"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 50 },
@@ -132,6 +135,7 @@ export const Empty = () => (
       `}
     </style>
     <BarList
+      id="empty"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 0 },

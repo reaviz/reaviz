@@ -2,7 +2,7 @@
 
 exports[`Charts/Bar List/Sort Ascending smoke-test 1`] = `
 <section role="list"
-         id="ref-1"
+         id="ascending"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -110,7 +110,7 @@ exports[`Charts/Bar List/Sort Ascending smoke-test 1`] = `
 
 exports[`Charts/Bar List/Sort Descending smoke-test 1`] = `
 <section role="list"
-         id="ref-2"
+         id="descending"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -218,7 +218,7 @@ exports[`Charts/Bar List/Sort Descending smoke-test 1`] = `
 
 exports[`Charts/Bar List/Sort None smoke-test 1`] = `
 <section role="list"
-         id="ref-3"
+         id="none"
          style="width: 350px;"
 >
   <div role="listitem"

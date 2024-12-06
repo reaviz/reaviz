@@ -26,6 +26,7 @@ export default {
 
 export const Simple = () => (
   <VennDiagram
+    id="simple"
     height={450}
     width={450}
     data={[
@@ -45,6 +46,7 @@ export const Simple = () => (
 
 export const Euler = () => (
   <VennDiagram
+    id="euler"
     type="euler"
     height={450}
     width={450}
@@ -58,6 +60,7 @@ export const Euler = () => (
 
 export const StarEuler = () => (
   <VennDiagram
+    id="star-euler"
     type="starEuler"
     height={450}
     width={450}
@@ -77,6 +80,7 @@ export const StarEuler = () => (
 
 export const LabelIcons = () => (
   <VennDiagram
+    id="label-icons"
     type="starEuler"
     height={450}
     width={450}
@@ -127,6 +131,7 @@ export const LabelIcons = () => (
 
 export const Selections = () => (
   <VennDiagram
+    id="selections"
     height={450}
     width={450}
     data={[
@@ -156,6 +161,7 @@ export const Selections = () => (
 
 export const CustomColors = () => (
   <VennDiagram
+    id="custom-colors"
     height={450}
     width={450}
     type="starEuler"
@@ -184,6 +190,7 @@ export const CustomColors = () => (
 
 export const LargeOffsets = () => (
   <VennDiagram
+    id="large-offsets"
     height={450}
     width={450}
     data={[
@@ -196,6 +203,7 @@ export const LargeOffsets = () => (
 
 export const LongText = () => (
   <VennDiagram
+    id="long-text"
     height={250}
     width={250}
     data={[
@@ -208,6 +216,7 @@ export const LongText = () => (
 
 export const ManyIntersections = () => (
   <VennDiagram
+    id="many-intersections"
     height={450}
     width={450}
     data={[
@@ -230,6 +239,7 @@ ManyIntersections.tags = ['no-snapshot'];
 
 export const NoIntersections = () => (
   <VennDiagram
+    id="no-intersections"
     height={450}
     width={450}
     data={[
@@ -243,6 +253,7 @@ export const NoIntersections = () => (
 
 export const Mask = () => (
   <VennDiagram
+    id="mask"
     height={450}
     width={450}
     series={
@@ -267,6 +278,7 @@ export const Mask = () => (
 
 export const NoFill = () => (
   <VennDiagram
+    id="no-fill"
     height={450}
     width={450}
     series={
@@ -290,6 +302,7 @@ export const NoFill = () => (
 
 export const NoLabel = () => (
   <VennDiagram
+    id="no-label"
     height={450}
     width={450}
     series={<VennSeries label={null} arc={<VennArc strokeWidth={5} />} />}
@@ -302,6 +315,7 @@ export const NoLabel = () => (
 
 export const NoAnimation = () => (
   <VennDiagram
+    id="no-animation"
     height={450}
     width={450}
     series={<VennSeries animated={false} />}
@@ -316,6 +330,7 @@ export const NoAnimation = () => (
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
     <VennDiagram
+      id="autosize"
       data={[
         { key: ['A'], data: 12 },
         { key: ['B'], data: 12 },

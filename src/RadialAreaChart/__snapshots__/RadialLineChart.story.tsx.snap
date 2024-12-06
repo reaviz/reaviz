@@ -236,7 +236,7 @@ exports[`Charts/Line Chart/Radial CategoricalData smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-3-path)">
+        <g clip-path="url(#categorical-path)">
           <path pointer-events="none"
                 stroke="#2d60e8"
                 fill="none"
@@ -540,7 +540,7 @@ exports[`Charts/Line Chart/Radial MultiSeries smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-5-path)">
+        <g clip-path="url(#multi-series-path)">
           <path pointer-events="none"
                 stroke="#2aa1d1"
                 fill="none"
@@ -1033,7 +1033,7 @@ exports[`Charts/Line Chart/Radial Simple smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-1-path)">
+        <g clip-path="url(#simple-path)">
           <path pointer-events="none"
                 stroke="#2d60e8"
                 fill="none"

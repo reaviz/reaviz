@@ -389,7 +389,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-4-path">
+        <clipPath id="area-series-left-right-path">
           <rect width="462"
                 height="204"
                 x="-12.5"
@@ -398,7 +398,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-4-path)">
+      <g clip-path="url(#area-series-left-right-path)">
         <g class
            tabindex="0"
            aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
@@ -1054,7 +1054,7 @@ exports[`Charts/Scatter Plot/Axis TopBottomAxis smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-top-bottom-path">
           <rect width="453"
                 height="212"
                 x="-12.5"
@@ -1063,7 +1063,7 @@ exports[`Charts/Scatter Plot/Axis TopBottomAxis smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-1-path)">
+      <g clip-path="url(#area-series-top-bottom-path)">
         <g class
            tabindex="0"
            aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"

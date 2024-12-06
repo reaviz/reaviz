@@ -722,7 +722,7 @@ exports[`Charts/Scatter Plot/Linear Autosize smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-127-path">
+          <clipPath id="area-series-autosize-path">
             <rect width="641"
                   height="362"
                   x="-12.5"
@@ -731,7 +731,7 @@ exports[`Charts/Scatter Plot/Linear Autosize smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-127-path)">
+        <g clip-path="url(#area-series-autosize-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -2104,7 +2104,7 @@ exports[`Charts/Scatter Plot/Linear Bubble smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-141-path">
+        <clipPath id="area-series-bubble-path">
           <rect width="713"
                 height="364"
                 x="-12.5"
@@ -2113,7 +2113,7 @@ exports[`Charts/Scatter Plot/Linear Bubble smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-141-path)">
+      <g clip-path="url(#area-series-bubble-path)">
         <g class
            tabindex="0"
            aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -5401,7 +5401,7 @@ exports[`Charts/Scatter Plot/Linear CategoricalAxis smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-8-path">
+        <clipPath id="area-series-categorical-path">
           <rect width="677"
                 height="404"
                 x="-12.5"
@@ -5410,7 +5410,7 @@ exports[`Charts/Scatter Plot/Linear CategoricalAxis smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-8-path)">
+      <g clip-path="url(#area-series-categorical-path)">
         <g class
            tabindex="0"
            aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
@@ -6257,7 +6257,7 @@ exports[`Charts/Scatter Plot/Linear LiveUpdate smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-148-path">
+        <clipPath id="area-series-live-update-path">
           <rect width="713"
                 height="364"
                 x="-12.5"
@@ -6266,7 +6266,7 @@ exports[`Charts/Scatter Plot/Linear LiveUpdate smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-148-path)">
+      <g clip-path="url(#area-series-live-update-path)">
         <g class
            tabindex="0"
            aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -9538,7 +9538,7 @@ exports[`Charts/Scatter Plot/Linear NoAnimation smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-15-path">
+        <clipPath id="area-series-no-animation-path">
           <rect width="753"
                 height="369"
                 x="-12.5"
@@ -9547,7 +9547,7 @@ exports[`Charts/Scatter Plot/Linear NoAnimation smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-15-path)">
+      <g clip-path="url(#area-series-no-animation-path)">
         <g class
            tabindex="0"
            aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -10702,7 +10702,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-22-path">
+          <clipPath id="area-series-performance-0-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -10711,7 +10711,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-22-path)">
+        <g clip-path="url(#area-series-performance-0-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -11864,7 +11864,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-23-path">
+          <clipPath id="area-series-performance-1-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -11873,7 +11873,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-23-path)">
+        <g clip-path="url(#area-series-performance-1-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -13026,7 +13026,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-24-path">
+          <clipPath id="area-series-performance-2-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -13035,7 +13035,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-24-path)">
+        <g clip-path="url(#area-series-performance-2-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -14188,7 +14188,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-25-path">
+          <clipPath id="area-series-performance-3-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -14197,7 +14197,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-25-path)">
+        <g clip-path="url(#area-series-performance-3-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -15350,7 +15350,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-26-path">
+          <clipPath id="area-series-performance-4-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -15359,7 +15359,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-26-path)">
+        <g clip-path="url(#area-series-performance-4-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -16512,7 +16512,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-27-path">
+          <clipPath id="area-series-performance-5-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -16521,7 +16521,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-27-path)">
+        <g clip-path="url(#area-series-performance-5-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -17674,7 +17674,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-28-path">
+          <clipPath id="area-series-performance-6-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -17683,7 +17683,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-28-path)">
+        <g clip-path="url(#area-series-performance-6-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -18836,7 +18836,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-29-path">
+          <clipPath id="area-series-performance-7-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -18845,7 +18845,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-29-path)">
+        <g clip-path="url(#area-series-performance-7-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -19998,7 +19998,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-30-path">
+          <clipPath id="area-series-performance-8-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -20007,7 +20007,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-30-path)">
+        <g clip-path="url(#area-series-performance-8-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -21160,7 +21160,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-31-path">
+          <clipPath id="area-series-performance-9-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -21169,7 +21169,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-31-path)">
+        <g clip-path="url(#area-series-performance-9-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -22322,7 +22322,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-32-path">
+          <clipPath id="area-series-performance-10-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -22331,7 +22331,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-32-path)">
+        <g clip-path="url(#area-series-performance-10-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -23484,7 +23484,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-33-path">
+          <clipPath id="area-series-performance-11-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -23493,7 +23493,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-33-path)">
+        <g clip-path="url(#area-series-performance-11-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -24646,7 +24646,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-34-path">
+          <clipPath id="area-series-performance-12-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -24655,7 +24655,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-34-path)">
+        <g clip-path="url(#area-series-performance-12-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -25808,7 +25808,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-35-path">
+          <clipPath id="area-series-performance-13-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -25817,7 +25817,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-35-path)">
+        <g clip-path="url(#area-series-performance-13-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -26970,7 +26970,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
           </g>
         </g>
         <defs>
-          <clipPath id="area-series-ref-36-path">
+          <clipPath id="area-series-performance-14-path">
             <rect width="251"
                   height="252"
                   x="-12.5"
@@ -26979,7 +26979,7 @@ exports[`Charts/Scatter Plot/Linear Performance smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-36-path)">
+        <g clip-path="url(#area-series-performance-14-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -28748,7 +28748,7 @@ exports[`Charts/Scatter Plot/Linear Simple smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-simple-path">
           <rect width="753"
                 height="369"
                 x="-12.5"
@@ -28757,7 +28757,7 @@ exports[`Charts/Scatter Plot/Linear Simple smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-1-path)">
+      <g clip-path="url(#area-series-simple-path)">
         <g class
            tabindex="0"
            aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -30381,7 +30381,7 @@ exports[`Charts/Scatter Plot/Linear Symbols smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-134-path">
+        <clipPath id="area-series-ref-77-path">
           <rect width="753"
                 height="404"
                 x="-12.5"
@@ -30390,7 +30390,7 @@ exports[`Charts/Scatter Plot/Linear Symbols smoke-test 1`] = `
           </rect>
         </clipPath>
       </defs>
-      <g clip-path="url(#area-series-ref-134-path)">
+      <g clip-path="url(#area-series-ref-77-path)">
         <g class
            tabindex="0"
            aria-label="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"

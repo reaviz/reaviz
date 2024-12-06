@@ -2746,12 +2746,12 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,1,1,-50.27,-57.885L0,0Z"
-              fill="url(#gradient-ref-22-arc-Chrome)"
+              fill="url(#gradient-ref-10-arc-Chrome)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-22-arc-Chrome"
+                        id="gradient-ref-10-arc-Chrome"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -2794,12 +2794,12 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M-50.27,-57.885A76.667,76.667,0,0,1,-29.85,-70.617L0,0Z"
-              fill="url(#gradient-ref-22-arc-Firefox)"
+              fill="url(#gradient-ref-10-arc-Firefox)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-22-arc-Firefox"
+                        id="gradient-ref-10-arc-Firefox"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -2823,12 +2823,12 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M-29.85,-70.617A76.667,76.667,0,0,1,-28.848,-71.032L0,0Z"
-              fill="url(#gradient-ref-22-arc-Internet_Explorer)"
+              fill="url(#gradient-ref-10-arc-Internet_Explorer)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-22-arc-Internet_Explorer"
+                        id="gradient-ref-10-arc-Internet_Explorer"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -2852,12 +2852,12 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M-28.848,-71.032A76.667,76.667,0,0,1,-27.931,-71.398L0,0Z"
-              fill="url(#gradient-ref-22-arc-Safari)"
+              fill="url(#gradient-ref-10-arc-Safari)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-22-arc-Safari"
+                        id="gradient-ref-10-arc-Safari"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -2900,12 +2900,12 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       >
         <path role="graphics-symbol"
               d="M-27.931,-71.398A76.667,76.667,0,0,1,0,-76.667L0,0Z"
-              fill="url(#gradient-ref-22-arc-Microsoft_Edge)"
+              fill="url(#gradient-ref-10-arc-Microsoft_Edge)"
               style="cursor: initial;"
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="gradient-ref-22-arc-Microsoft_Edge"
+                        id="gradient-ref-10-arc-Microsoft_Edge"
                         y1="0%"
                         y2="0%"
                         x1="0%"
