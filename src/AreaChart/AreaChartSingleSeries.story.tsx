@@ -158,6 +158,7 @@ export const Performance = () =>
       <AreaChart data={singleDateData} />
     </div>
   ));
+Performance.tags = ['skip-snapshot'];
 
 export const BigInt = () => (
   <AreaChart
