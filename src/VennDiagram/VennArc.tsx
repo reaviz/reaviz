@@ -7,7 +7,11 @@ import React, {
   useMemo
 } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
+  ChartTooltip,
+  ChartTooltipProps
+} from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
@@ -260,7 +264,7 @@ VennArc.defaultProps = {
   initialStyle: { opacity: 0.6 },
   strokeWidth: 3,
   gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />,
-  tooltip: <ChartTooltip />,
+  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
   onClick: () => undefined,
   onMouseEnter: () => undefined,
   onMouseLeave: () => undefined

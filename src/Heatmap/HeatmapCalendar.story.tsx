@@ -8,7 +8,11 @@ import {
   heatmapCalendarOffsetData
 } from 'reaviz-data-utils';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
-import { ChartTooltip, formatValue } from '@/common';
+import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
+  ChartTooltip,
+  formatValue
+} from '@/common';
 
 export default {
   tags: ['snapshot'],

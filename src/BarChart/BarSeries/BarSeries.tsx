@@ -21,7 +21,9 @@ import {
   TooltipAreaProps,
   TooltipArea,
   ChartTooltip,
-  TooltipAreaEvent
+  TooltipAreaEvent,
+  TOOLTIP_AREA_DEFAULT_PROPS,
+  CHART_TOOLTIP_DEFAULT_PROPS
 } from '@/common/Tooltip';
 import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
 
@@ -365,7 +367,14 @@ BarSeries.defaultProps = {
   animated: true,
   tooltip: (
     <TooltipArea
-      tooltip={<ChartTooltip followCursor={true} modifiers={[offset(5)]} />}
+      {...TOOLTIP_AREA_DEFAULT_PROPS}
+      tooltip={
+        <ChartTooltip
+          {...CHART_TOOLTIP_DEFAULT_PROPS}
+          followCursor={true}
+          modifiers={[offset(5)]}
+        />
+      }
     />
   ),
   colorScheme: 'cybertron',

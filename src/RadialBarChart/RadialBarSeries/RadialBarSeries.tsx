@@ -14,11 +14,18 @@ import {
 import { RadialBar, RadialBarProps } from './RadialBar';
 import { CloneElement } from 'reablocks';
 import { ColorSchemeType, getColor, schemes } from '@/common/color';
-import { TooltipAreaProps, TooltipArea, ChartTooltip } from '@/common/Tooltip';
+import {
+  TooltipAreaProps,
+  TooltipArea,
+  ChartTooltip,
+  TOOLTIP_AREA_DEFAULT_PROPS,
+  CHART_TOOLTIP_DEFAULT_PROPS
+} from '@/common/Tooltip';
 import isEqual from 'react-fast-compare';
 import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export type RadialBarSeriesType = 'standard' | 'grouped';
+
 export interface RadialBarSeriesProps {
   /**
    * Parsed data shape. Set internally by `RadialBarChart`.
@@ -245,7 +252,14 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
 
 RadialBarSeries.defaultProps = {
   colorScheme: schemes.cybertron[0],
-  tooltip: <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
+  tooltip: (
+    <TooltipArea
+      {...TOOLTIP_AREA_DEFAULT_PROPS}
+      tooltip={
+        <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} followCursor={true} />
+      }
+    />
+  ),
   bar: <RadialBar />,
   animated: true,
   startAngle: 0,
