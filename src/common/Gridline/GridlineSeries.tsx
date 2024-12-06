@@ -1,5 +1,5 @@
 import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
-import { Gridline, GridlineProps } from './Gridline';
+import { Gridline, GRIDLINE_DEFAULT_PROPS, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
 import {
@@ -160,6 +160,6 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
 };
 
 GridlineSeries.defaultProps = {
-  line: <Gridline direction="all" />,
+  line: <Gridline {...GRIDLINE_DEFAULT_PROPS} direction="all" />,
   stripe: null
 };
