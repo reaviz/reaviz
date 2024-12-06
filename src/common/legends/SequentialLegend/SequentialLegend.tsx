@@ -46,8 +46,8 @@ export const SequentialLegend: FC<SequentialLegendProps> = (props) => {
     gradientClassName,
     style,
     data,
-    colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'],
-    orientation = 'orientation'
+    colorScheme,
+    orientation
   } = { ...SEQUENTIAL_LEGEND_DEFAULT_PROPS, ...props };
   // Generate the color gradient
   const color = chroma
