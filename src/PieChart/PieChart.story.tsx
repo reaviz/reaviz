@@ -121,6 +121,7 @@ const labelData: ChartDataItem[] = [
 
 export const Simple = () => (
   <PieChart
+    id="simple"
     width={350}
     height={250}
     data={categoryData}
@@ -130,6 +131,7 @@ export const Simple = () => (
 
 export const Explode = () => (
   <PieChart
+    id="explode"
     width={250}
     height={350}
     data={categoryData}
@@ -139,6 +141,7 @@ export const Explode = () => (
 
 export const NoAnimation = () => (
   <PieChart
+    id="no-animation"
     width={350}
     height={250}
     series={<PieArcSeries animated={false} />}
@@ -156,6 +159,7 @@ export const HtmlLabels = () => {
       }}
     >
       <PieChart
+        id="html-labels"
         width={400}
         height={400}
         data={labelData}

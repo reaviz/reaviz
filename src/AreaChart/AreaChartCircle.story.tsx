@@ -28,6 +28,7 @@ export default {
 
 export const On = () => (
   <AreaChart
+    id="on"
     width={350}
     height={250}
     data={singleDateData}
@@ -37,6 +38,7 @@ export const On = () => (
 
 export const Off = () => (
   <AreaChart
+    id="off"
     width={350}
     height={250}
     data={singleDateData}
@@ -46,6 +48,7 @@ export const Off = () => (
 
 export const OnHover = () => (
   <AreaChart
+    id="on-hover"
     width={350}
     height={250}
     data={singleDateData}
@@ -55,6 +58,7 @@ export const OnHover = () => (
 
 export const OnlyFirst = () => (
   <AreaChart
+    id="only-first"
     width={350}
     height={250}
     data={singleDateData}
@@ -64,6 +68,7 @@ export const OnlyFirst = () => (
 
 export const OnlyLast = () => (
   <AreaChart
+    id="only-last"
     width={350}
     height={250}
     data={singleDateData}
@@ -73,6 +78,7 @@ export const OnlyLast = () => (
 
 export const Shapes = () => (
   <AreaChart
+    id="shapes"
     width={350}
     height={250}
     data={singleDateData}

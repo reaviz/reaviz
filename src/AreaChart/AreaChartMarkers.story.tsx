@@ -23,6 +23,7 @@ export default {
 
 export const LinearValueMarkers = () => (
   <AreaChart
+    id="linear-value-markers"
     width={550}
     height={350}
     data={multiDateData}
@@ -41,6 +42,7 @@ export const LinearValueMarkers = () => (
 
 export const VerticalLinearValueMarkers = () => (
   <AreaChart
+    id="vertical-linear-value-markers"
     width={550}
     height={350}
     data={multiDateData}
@@ -69,6 +71,7 @@ export const VerticalLinearValueMarkers = () => (
 
 export const RadialValueMarkers = () => (
   <RadialAreaChart
+    id="radial-value-markers"
     height={500}
     width={500}
     data={medDateData}

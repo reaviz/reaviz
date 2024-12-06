@@ -2,7 +2,7 @@
 
 exports[`Charts/Bar List/Labels LabelBottom smoke-test 1`] = `
 <section role="list"
-         id="ref-2"
+         id="label-bottom"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -110,7 +110,7 @@ exports[`Charts/Bar List/Labels LabelBottom smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels LabelEnd smoke-test 1`] = `
 <section role="list"
-         id="ref-3"
+         id="label-end"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -218,7 +218,7 @@ exports[`Charts/Bar List/Labels LabelEnd smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels LabelNone smoke-test 1`] = `
 <section role="list"
-         id="ref-5"
+         id="label-none"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -326,7 +326,7 @@ exports[`Charts/Bar List/Labels LabelNone smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels LabelStart smoke-test 1`] = `
 <section role="list"
-         id="ref-1"
+         id="label-start"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -434,7 +434,7 @@ exports[`Charts/Bar List/Labels LabelStart smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels LabelTop smoke-test 1`] = `
 <section role="list"
-         id="ref-4"
+         id="label-top"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -542,7 +542,7 @@ exports[`Charts/Bar List/Labels LabelTop smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels LongValueEnd smoke-test 1`] = `
 <section role="list"
-         id="ref-11"
+         id="long-value-end"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -650,7 +650,7 @@ exports[`Charts/Bar List/Labels LongValueEnd smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels LongValueStart smoke-test 1`] = `
 <section role="list"
-         id="ref-10"
+         id="long-value-start"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -758,7 +758,7 @@ exports[`Charts/Bar List/Labels LongValueStart smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels ValueBottom smoke-test 1`] = `
 <section role="list"
-         id="ref-6"
+         id="value-bottom"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -866,7 +866,7 @@ exports[`Charts/Bar List/Labels ValueBottom smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels ValueEnd smoke-test 1`] = `
 <section role="list"
-         id="ref-7"
+         id="value-end"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -974,7 +974,7 @@ exports[`Charts/Bar List/Labels ValueEnd smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels ValueNone smoke-test 1`] = `
 <section role="list"
-         id="ref-9"
+         id="value-none"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -1082,7 +1082,7 @@ exports[`Charts/Bar List/Labels ValueNone smoke-test 1`] = `
 
 exports[`Charts/Bar List/Labels ValueStart smoke-test 1`] = `
 <section role="list"
-         id="ref-8"
+         id="value-start"
          style="width: 350px;"
 >
   <div role="listitem"

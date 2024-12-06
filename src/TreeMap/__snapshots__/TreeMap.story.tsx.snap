@@ -26,7 +26,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 1-label-text"
+          <text id="20-items-series-Item 1-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -47,7 +47,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 2-label-text"
+          <text id="20-items-series-Item 2-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -75,7 +75,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 3-label-text"
+          <text id="20-items-series-Item 3-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -103,7 +103,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 4-label-text"
+          <text id="20-items-series-Item 4-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -131,7 +131,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 5-label-text"
+          <text id="20-items-series-Item 5-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -159,7 +159,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 6-label-text"
+          <text id="20-items-series-Item 6-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -187,7 +187,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 7-label-text"
+          <text id="20-items-series-Item 7-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -215,7 +215,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 8-label-text"
+          <text id="20-items-series-Item 8-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -243,7 +243,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 9-label-text"
+          <text id="20-items-series-Item 9-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -264,7 +264,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 10-label-text"
+          <text id="20-items-series-Item 10-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -292,7 +292,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 11-label-text"
+          <text id="20-items-series-Item 11-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -313,7 +313,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 12-label-text"
+          <text id="20-items-series-Item 12-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -341,7 +341,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 13-label-text"
+          <text id="20-items-series-Item 13-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -369,7 +369,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 14-label-text"
+          <text id="20-items-series-Item 14-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -390,7 +390,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 15-label-text"
+          <text id="20-items-series-Item 15-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -418,7 +418,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 16-label-text"
+          <text id="20-items-series-Item 16-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -439,7 +439,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 17-label-text"
+          <text id="20-items-series-Item 17-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -460,7 +460,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 18-label-text"
+          <text id="20-items-series-Item 18-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -481,7 +481,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 19-label-text"
+          <text id="20-items-series-Item 19-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -502,7 +502,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 20-label-text"
+          <text id="20-items-series-Item 20-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -523,7 +523,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 21-label-text"
+          <text id="20-items-series-Item 21-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -544,7 +544,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 22-label-text"
+          <text id="20-items-series-Item 22-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -585,7 +585,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 23-label-text"
+          <text id="20-items-series-Item 23-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -613,7 +613,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 24-label-text"
+          <text id="20-items-series-Item 24-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -654,7 +654,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 25-label-text"
+          <text id="20-items-series-Item 25-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -682,7 +682,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 26-label-text"
+          <text id="20-items-series-Item 26-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -710,7 +710,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 27-label-text"
+          <text id="20-items-series-Item 27-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -738,7 +738,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 28-label-text"
+          <text id="20-items-series-Item 28-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -766,7 +766,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 29-label-text"
+          <text id="20-items-series-Item 29-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -787,7 +787,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 30-label-text"
+          <text id="20-items-series-Item 30-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -815,7 +815,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 31-label-text"
+          <text id="20-items-series-Item 31-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -843,7 +843,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 32-label-text"
+          <text id="20-items-series-Item 32-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -871,7 +871,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 33-label-text"
+          <text id="20-items-series-Item 33-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -892,7 +892,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 34-label-text"
+          <text id="20-items-series-Item 34-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -920,7 +920,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 35-label-text"
+          <text id="20-items-series-Item 35-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -948,7 +948,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 36-label-text"
+          <text id="20-items-series-Item 36-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -976,7 +976,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 37-label-text"
+          <text id="20-items-series-Item 37-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1004,7 +1004,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 38-label-text"
+          <text id="20-items-series-Item 38-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1032,7 +1032,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 39-label-text"
+          <text id="20-items-series-Item 39-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1060,7 +1060,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 40-label-text"
+          <text id="20-items-series-Item 40-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1081,7 +1081,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 41-label-text"
+          <text id="20-items-series-Item 41-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1102,7 +1102,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 42-label-text"
+          <text id="20-items-series-Item 42-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1130,7 +1130,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 43-label-text"
+          <text id="20-items-series-Item 43-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1158,7 +1158,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 44-label-text"
+          <text id="20-items-series-Item 44-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1186,7 +1186,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 45-label-text"
+          <text id="20-items-series-Item 45-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1207,7 +1207,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 46-label-text"
+          <text id="20-items-series-Item 46-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1228,7 +1228,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 47-label-text"
+          <text id="20-items-series-Item 47-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1256,7 +1256,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 48-label-text"
+          <text id="20-items-series-Item 48-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1284,7 +1284,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 49-label-text"
+          <text id="20-items-series-Item 49-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1305,7 +1305,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-11-series-Item 50-label-text"
+          <text id="20-items-series-Item 50-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1479,7 +1479,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-7-series-Short text-label-text"
+          <text id="long-text-series-Short text-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1507,7 +1507,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-7-series-Another short text-label-text"
+          <text id="long-text-series-Another short text-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1535,7 +1535,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-7-series-This is a test of very long text that should not fit in a rectangle's width.-label-text"
+          <text id="long-text-series-This is a test of very long text that should not fit in a rectangle's width.-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1584,7 +1584,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-7-series-This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.-label-text"
+          <text id="long-text-series-This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1751,7 +1751,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-9-series-Short text-label-text"
+          <text id="no-wrap-series-Short text-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1779,7 +1779,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-9-series-Another short text-label-text"
+          <text id="no-wrap-series-Another short text-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1807,7 +1807,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-9-series-This is a test of very long text that should not fit in a rectangle's width.-label-text"
+          <text id="no-wrap-series-This is a test of very long text that should not fit in a rectangle's width.-label-text"
                 fill="#ffffff"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >
@@ -1829,7 +1829,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
         >
         </rect>
         <g style="transform: translate(10px, 15px);">
-          <text id="ref-9-series-This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.-label-text"
+          <text id="no-wrap-series-This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.-label-text"
                 fill="#000000"
                 style="pointer-events: none; font-family: sans-serif; font-size: 14px;"
           >

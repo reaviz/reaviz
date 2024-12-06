@@ -43,6 +43,7 @@ export default {
 
 export const Simple = () => (
   <Sankey
+    id="simple"
     colorScheme="Spectral"
     height={300}
     width={550}
@@ -65,6 +66,7 @@ export const Simple = () => (
 export const LabelsInsideContainer = () => (
   <div style={{ border: 'solid 1px red' }}>
     <Sankey
+      id="labels-inside-container"
       height={300}
       width={550}
       colorScheme="Spectral"
@@ -87,6 +89,7 @@ export const LabelsInsideContainer = () => (
 export const FitLongLabels = () => (
   <div style={{ border: 'solid 1px red' }}>
     <Sankey
+      id="fit-long-labels"
       height={300}
       width={550}
       colorScheme="Spectral"
@@ -111,6 +114,7 @@ export const Filtering = () => <DemoStory />;
 
 export const Multilevels = () => (
   <Sankey
+    id="multilevels"
     colorScheme={colorScheme}
     height={600}
     width={964}
@@ -126,6 +130,7 @@ export const Multilevels = () => (
 export const Autosize = () => (
   <div style={{ width: '80vw', height: '65vh', border: 'solid 1px red' }}>
     <Sankey
+      id="autosize"
       colorScheme={colorScheme}
       nodes={sankeyNodes.map((node, i) => (
         <SankeyNode key={`node-${i}`} {...node} />
@@ -139,6 +144,7 @@ export const Autosize = () => (
 
 export const Justification = () => (
   <Sankey
+    id="justification"
     colorScheme={colorScheme}
     height={600}
     width={964}
@@ -184,6 +190,7 @@ const DemoStory = () => {
 
   return (
     <Sankey
+      id="filtering"
       colorScheme={colorScheme}
       height={300}
       width={500}

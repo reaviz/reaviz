@@ -54,6 +54,7 @@ export const TopBottomAxis = () => {
 
   return (
     <AreaChart
+      id="top-bottom-axis"
       width={450}
       height={200}
       margins={0}
@@ -116,6 +117,7 @@ export const LeftRightAxis = () => {
 
   return (
     <AreaChart
+      id="left-right-axis"
       width={450}
       height={200}
       margins={0}

@@ -1011,7 +1011,7 @@ exports[`Charts/Scatter Plot/Markers LinearValueMarkers smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-simple-path">
           <rect width="753"
                 height="369"
                 x="-12.5"
@@ -1036,7 +1036,7 @@ exports[`Charts/Scatter Plot/Markers LinearValueMarkers smoke-test 1`] = `
             y2="172"
       >
       </line>
-      <g clip-path="url(#area-series-ref-1-path)">
+      <g clip-path="url(#area-series-simple-path)">
         <g class
            tabindex="0"
            aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -2624,7 +2624,7 @@ exports[`Charts/Scatter Plot/Markers LinearValueMarkersVertical smoke-test 1`] =
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-8-path">
+        <clipPath id="area-series-vertical-path">
           <rect width="753"
                 height="404"
                 x="-12.5"
@@ -2649,7 +2649,7 @@ exports[`Charts/Scatter Plot/Markers LinearValueMarkersVertical smoke-test 1`] =
             y2="379"
       >
       </line>
-      <g clip-path="url(#area-series-ref-8-path)">
+      <g clip-path="url(#area-series-vertical-path)">
         <g class
            tabindex="0"
            aria-label="2: 9"

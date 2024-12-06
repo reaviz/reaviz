@@ -48,6 +48,7 @@ export const TopBottomAxis = () => {
 
   return (
     <ScatterPlot
+      id="top-bottom"
       width={450}
       height={200}
       margins={0}
@@ -112,6 +113,7 @@ export const LeftRightAxis = () => {
 
   return (
     <ScatterPlot
+      id="left-right"
       width={450}
       height={200}
       margins={0}
