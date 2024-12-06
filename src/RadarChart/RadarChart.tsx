@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { ChartNestedDataShape } from '@/common/data';
 import { RadialAreaChart, RadialAreaChartProps } from '@/RadialAreaChart';
 import {
+  RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS,
   RadialAxis,
   RadialAxisArcLine,
   RadialAxisArcSeries
@@ -25,7 +26,7 @@ RadarChart.defaultProps = {
         <RadialAxisArcSeries
           count={5}
           arc={null}
-          line={<RadialAxisArcLine />}
+          line={<RadialAxisArcLine {...RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS} />}
         />
       }
     />
