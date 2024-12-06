@@ -12,7 +12,7 @@ import {
   LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
-import { ChartTooltip } from '@/common/Tooltip';
+import { CHART_TOOLTIP_DEFAULT_PROPS, ChartTooltip } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
 import {
   buildDataScales,
@@ -124,6 +124,7 @@ CalendarHeatmap.defaultProps = {
         <HeatmapCell
           tooltip={
             <ChartTooltip
+              {...CHART_TOOLTIP_DEFAULT_PROPS}
               content={(d) =>
                 `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
                   d.data.value

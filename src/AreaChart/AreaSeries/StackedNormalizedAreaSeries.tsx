@@ -1,7 +1,13 @@
 import React, { FC } from 'react';
 import { AreaSeriesProps, AreaSeries } from './AreaSeries';
 import { formatValue } from '@/common/utils/formatting';
-import { TooltipTemplate, TooltipArea, ChartTooltip } from '@/common/Tooltip';
+import {
+  TooltipTemplate,
+  TooltipArea,
+  ChartTooltip,
+  TOOLTIP_AREA_DEFAULT_PROPS,
+  CHART_TOOLTIP_DEFAULT_PROPS
+} from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '@/ScatterPlot';
@@ -37,8 +43,10 @@ StackedNormalizedAreaSeries.defaultProps = {
   type: 'stackedNormalized',
   tooltip: (
     <TooltipArea
+      {...TOOLTIP_AREA_DEFAULT_PROPS}
       tooltip={
         <ChartTooltip
+          {...CHART_TOOLTIP_DEFAULT_PROPS}
           content={(series, color) => {
             if (!series) {
               return null;
