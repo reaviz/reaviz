@@ -14,7 +14,7 @@ exports[`Charts/Bar List Empty smoke-test 1`] = `
         }
 </style>
 <section role="list"
-         id="ref-5"
+         id="empty"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -122,7 +122,7 @@ exports[`Charts/Bar List Empty smoke-test 1`] = `
 
 exports[`Charts/Bar List Events smoke-test 1`] = `
 <section role="list"
-         id="ref-3"
+         id="events"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -242,7 +242,7 @@ exports[`Charts/Bar List PercentageFormat smoke-test 1`] = `
         }
 </style>
 <section role="list"
-         id="ref-4"
+         id="percentage-format"
          style="width: 350px;"
 >
   <div role="listitem"
@@ -470,7 +470,7 @@ exports[`Charts/Bar List Styling smoke-test 1`] = `
         }
 </style>
 <section role="list"
-         id="ref-2"
+         id="styling"
          style="width: 350px;"
 >
   <div role="listitem"

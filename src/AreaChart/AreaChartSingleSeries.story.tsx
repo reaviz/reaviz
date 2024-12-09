@@ -158,7 +158,13 @@ export const Performance = () =>
       <AreaChart data={singleDateData} />
     </div>
   ));
+Performance.tags = ['skip-snapshot'];
 
 export const BigInt = () => (
-  <AreaChart width={350} height={250} data={singleDateBigIntData} />
+  <AreaChart
+    id="big-int"
+    width={350}
+    height={250}
+    data={singleDateBigIntData}
+  />
 );

@@ -20,6 +20,7 @@ export default {
 
 export const Single = () => (
   <RadialGauge
+    id="single"
     data={[
       {
         key: 'Austin, TX',
@@ -38,6 +39,7 @@ export const Single = () => (
 
 export const FilledArc = () => (
   <RadialGauge
+    id="filled-arc"
     data={[
       {
         key: 'Austin, TX',
@@ -56,6 +58,7 @@ export const FilledArc = () => (
 
 export const CustomArc = () => (
   <RadialGauge
+    id="custom-arc"
     data={[
       {
         key: 'Austin, TX',
@@ -81,6 +84,7 @@ export const Multi = () => {
 
   return (
     <RadialGauge
+      id="multi"
       data={categoryData}
       startAngle={0}
       endAngle={Math.PI * 2}
@@ -95,6 +99,7 @@ export const Multi = () => {
 
 export const MultiLine = () => (
   <RadialGauge
+    id="multi-line"
     data={categoryData}
     width={350}
     height={350}
@@ -107,6 +112,7 @@ export const Stacked = () => {
 
   return (
     <RadialGauge
+      id="stacked"
       data={categoryData}
       startAngle={0}
       endAngle={Math.PI * 2}
@@ -190,6 +196,7 @@ const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
 
   return (
     <RadialGauge
+      id="stacked"
       data={data}
       startAngle={0}
       endAngle={Math.PI * 2}
@@ -235,6 +242,7 @@ GaugeStacked.argTypes = {
 export const Autosize = () => (
   <div style={{ width: 250, height: 250, border: 'solid 1px red' }}>
     <RadialGauge
+      id="autosize"
       data={[
         {
           key: 'Austin, TX',
@@ -247,6 +255,7 @@ export const Autosize = () => (
 
 export const WithGradient = () => (
   <RadialGauge
+    id="with-gradient"
     height={300}
     width={700}
     data={[

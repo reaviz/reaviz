@@ -40,6 +40,7 @@ export const _Simple = () => (
   <div style={{ width: '465px', textAlign: 'center' }}>
     <h2 style={{ color: 'white', margin: 0 }}>MIRTE Attack</h2>
     <LinearGauge
+      id="simple"
       height={30}
       data={mitreData}
       series={<LinearGaugeSeries colorScheme={colorScheme} />}

@@ -66,11 +66,12 @@ const longLabelData: ChartShallowDataShape[] = [
 ];
 
 export const LongText = () => (
-  <TreeMap height={400} width={400} data={longLabelData} />
+  <TreeMap id="long-text" height={400} width={400} data={longLabelData} />
 );
 
 export const NoWrap = () => (
   <TreeMap
+    id="no-wrap"
     height={400}
     width={400}
     series={<TreeMapSeries label={<TreeMapLabel wrap={false} />} />}
@@ -79,7 +80,7 @@ export const NoWrap = () => (
 );
 
 export const _20Items = () => (
-  <TreeMap data={twentyItems} height={600} width={600} />
+  <TreeMap id="20-items" data={twentyItems} height={600} width={600} />
 );
 
 export const _100Items = () => {
@@ -88,12 +89,13 @@ export const _100Items = () => {
     data: randomNumber(0, 100)
   }));
 
-  return <TreeMap data={longData} height={600} width={600} />;
+  return <TreeMap id="100-items" data={longData} height={600} width={600} />;
 };
 _100Items.tags = ['no-snapshot'];
 
 export const Events = () => (
   <TreeMap
+    id="events"
     height={400}
     width={400}
     data={simpleData}
@@ -354,6 +356,7 @@ const nestedData: ChartNestedDataShape[] = [
 
 export const Nested = () => (
   <TreeMap
+    id="nested"
     height={450}
     width={450}
     data={nestedData}

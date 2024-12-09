@@ -155,14 +155,14 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-3-path)">
+        <g clip-path="url(#filled-path)">
           <path pointer-events="none"
-                fill="url(#ref-3-radial-area-3-gradient)"
+                fill="url(#filled-radial-area-3-gradient)"
                 d="M72.154,0C72.154,30.297,33.754,58.041,0,58.041C-33.754,58.041,-130.372,30.297,-130.372,0C-130.372,-30.297,-33.754,-123.744,0,-123.744C33.754,-123.744,72.154,-30.297,72.154,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
                 opacity="1"
           >
           </path>
-          <radialGradient id="ref-3-radial-area-3-gradient"
+          <radialGradient id="filled-radial-area-3-gradient"
                           cx="0"
                           cy="0"
                           r="175"
@@ -188,12 +188,12 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           >
           </path>
           <path pointer-events="none"
-                fill="url(#ref-3-radial-area-2-gradient)"
+                fill="url(#filled-radial-area-2-gradient)"
                 d="M141.09,0C141.09,38.886,45.632,129.783,0,129.783C-45.632,129.783,-132.7,38.886,-132.7,0C-132.7,-38.886,-45.632,-103.531,0,-103.531C45.632,-103.531,141.09,-38.886,141.09,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
                 opacity="1"
           >
           </path>
-          <radialGradient id="ref-3-radial-area-2-gradient"
+          <radialGradient id="filled-radial-area-2-gradient"
                           cx="0"
                           cy="0"
                           r="175"
@@ -219,12 +219,12 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           >
           </path>
           <path pointer-events="none"
-                fill="url(#ref-3-radial-area-1-gradient)"
+                fill="url(#filled-radial-area-1-gradient)"
                 d="M135.554,0C135.554,45.883,44.419,151.554,0,151.554C-44.419,151.554,-130.958,45.883,-130.958,0C-130.958,-45.883,-44.419,-123.744,0,-123.744C44.419,-123.744,135.554,-45.883,135.554,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
                 opacity="1"
           >
           </path>
-          <radialGradient id="ref-3-radial-area-1-gradient"
+          <radialGradient id="filled-radial-area-1-gradient"
                           cx="0"
                           cy="0"
                           r="175"
@@ -250,12 +250,12 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           >
           </path>
           <path pointer-events="none"
-                fill="url(#ref-3-radial-area-0-gradient)"
+                fill="url(#filled-radial-area-0-gradient)"
                 d="M135.554,0C135.554,52.682,48.68,175,0,175C-48.68,175,-156.525,52.682,-156.525,0C-156.525,-52.682,-48.68,-141.09,0,-141.09C48.68,-141.09,135.554,-52.682,135.554,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
                 opacity="1"
           >
           </path>
-          <radialGradient id="ref-3-radial-area-0-gradient"
+          <radialGradient id="filled-radial-area-0-gradient"
                           cx="0"
                           cy="0"
                           r="175"
@@ -650,7 +650,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-1-path)">
+        <g clip-path="url(#simple-path)">
           <path pointer-events="none"
                 stroke="#2aa1d1"
                 fill="none"

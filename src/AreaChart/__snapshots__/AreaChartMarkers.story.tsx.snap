@@ -831,7 +831,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-linear-value-markers-path">
           <rect width="553"
                 height="342"
                 x="-12.5"
@@ -847,7 +847,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-1-path)">
+        <g clip-path="url(#area-series-linear-value-markers-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -860,12 +860,12 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-1-area-2)"
+                fill="url(#gradient-area-series-linear-value-markers-area-2)"
                 d="M0,105.667L176,158.5L396,246.556L528,299.389L528,317L396,317L176,317L0,317Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-1-area-2"
+                          id="gradient-area-series-linear-value-markers-area-2"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -894,12 +894,12 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-1-area-1)"
+                fill="url(#gradient-area-series-linear-value-markers-area-1)"
                 d="M0,105.667L176,176.111L396,193.722L528,35.222L528,317L396,317L176,317L0,317Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-1-area-1"
+                          id="gradient-area-series-linear-value-markers-area-1"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -928,12 +928,12 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-1-area-0)"
+                fill="url(#gradient-area-series-linear-value-markers-area-0)"
                 d="M0,0L176,264.167L396,70.444L528,0L528,317L396,317L176,317L0,317Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-1-area-0"
+                          id="gradient-area-series-linear-value-markers-area-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -951,7 +951,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
             </stop>
           </linearGradient>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -960,7 +960,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -1023,7 +1023,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -1032,7 +1032,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -1095,7 +1095,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -1104,7 +1104,7 @@ exports[`Charts/Area Chart/Markers LinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
@@ -1497,14 +1497,14 @@ exports[`Charts/Area Chart/Markers RadialValueMarkers smoke-test 1`] = `
               cursor="auto"
         >
         </path>
-        <g clip-path="url(#ref-15-path)">
+        <g clip-path="url(#radial-value-markers-path)">
           <path pointer-events="none"
-                fill="url(#ref-15-radial-area-0-gradient)"
+                fill="url(#radial-value-markers-radial-area-0-gradient)"
                 d="M20.993,-162.817C24.617,-160.139,17.352,-90.569,21.746,-82.928C26.14,-75.287,38.02,-107.78,47.357,-116.972C56.693,-126.163,73.321,-141.044,77.764,-138.077C82.206,-135.11,72.915,-107.667,74.012,-99.17C75.11,-90.673,81.216,-91.29,84.347,-87.095C87.478,-82.901,88.868,-77.615,92.796,-74.003C96.724,-70.39,106.096,-70.101,107.914,-65.418C109.732,-60.736,99.323,-50.172,103.706,-45.908C108.089,-41.644,137.993,-45.302,134.214,-39.834C130.434,-34.366,79.716,-18.98,81.03,-13.1C82.344,-7.221,148.491,-7.426,142.098,-4.557C135.704,-1.687,55.711,0.928,42.668,4.116C29.625,7.304,60,11.227,63.837,14.57C67.675,17.914,65.361,20.88,65.693,24.176C66.024,27.471,67.825,32.127,65.827,34.342C63.829,36.556,55.515,34.866,53.704,37.462C51.893,40.057,45.007,33.951,54.963,49.916C64.919,65.881,112.792,126.504,113.44,133.253C114.088,140.002,65.358,86.872,58.851,90.411C52.343,93.949,79.17,154.391,74.396,154.484C69.621,154.577,37.493,90.477,30.204,90.968C22.914,91.46,34.271,150.427,30.66,157.432C27.049,164.438,15.32,133.207,8.539,133.002C1.758,132.797,-4.008,154.762,-10.029,156.203C-16.049,157.644,-26.658,159.852,-27.586,141.648C-28.514,123.443,-11.427,52.378,-15.597,46.976C-19.767,41.574,-52.955,113.609,-52.606,109.237C-52.256,104.864,-6.451,20.367,-13.501,20.742C-20.552,21.117,-81.591,100.804,-94.911,111.488C-108.23,122.171,-99.669,96.747,-93.419,84.841C-87.169,72.934,-52.952,43.738,-57.412,40.048C-61.873,36.358,-121.095,66.188,-120.182,62.699C-119.27,59.21,-60.591,26.966,-51.935,19.112C-43.279,11.259,-72.795,18.366,-68.245,15.576C-63.695,12.787,-11.273,5.766,-24.635,2.376C-37.996,-1.013,-132.162,-1.072,-148.416,-4.759C-164.67,-8.447,-123.836,-13.699,-122.158,-19.749C-120.479,-25.8,-134.26,-33.531,-138.344,-41.06C-142.428,-48.589,-147.976,-58.585,-146.663,-64.923C-145.349,-71.261,-139.44,-77.574,-130.462,-79.087C-121.484,-80.6,-105.466,-77.814,-92.796,-74.003C-80.127,-70.191,-60.044,-55.331,-54.446,-56.22C-48.848,-57.109,-57.963,-70.38,-59.21,-79.336C-60.457,-88.292,-61.41,-97.53,-61.926,-109.955C-62.441,-122.381,-66.089,-147.295,-62.302,-153.886C-58.515,-160.477,-46.336,-149.931,-39.204,-149.501C-32.072,-149.071,-26.043,-159.219,-19.509,-151.309C-12.975,-143.399,-3.252,-110.761,0,-102.042C3.252,-93.323,-3.499,-88.866,0,-98.995C3.499,-109.124,17.369,-165.495,20.993,-162.817M-0.013,-0.099C-0.017,-0.099,-0.021,-0.098,-0.025,-0.097C-0.029,-0.096,-0.034,-0.094,-0.038,-0.093C-0.041,-0.091,-0.045,-0.089,-0.049,-0.087C-0.053,-0.085,-0.056,-0.083,-0.06,-0.08C-0.063,-0.078,-0.067,-0.075,-0.07,-0.072C-0.073,-0.069,-0.076,-0.066,-0.078,-0.062C-0.081,-0.059,-0.083,-0.055,-0.086,-0.052C-0.088,-0.048,-0.09,-0.044,-0.091,-0.04C-0.093,-0.037,-0.095,-0.033,-0.096,-0.028C-0.097,-0.024,-0.098,-0.02,-0.099,-0.016C-0.099,-0.012,-0.1,-0.007,-0.1,-0.003C-0.1,0.001,-0.1,0.005,-0.1,0.01C-0.099,0.014,-0.098,0.018,-0.097,0.022C-0.097,0.026,-0.095,0.031,-0.094,0.035C-0.092,0.039,-0.091,0.042,-0.089,0.046C-0.087,0.05,-0.084,0.054,-0.082,0.057C-0.08,0.061,-0.077,0.064,-0.074,0.067C-0.071,0.07,-0.068,0.073,-0.065,0.076C-0.062,0.079,-0.058,0.081,-0.055,0.084C-0.051,0.086,-0.047,0.088,-0.043,0.09C-0.04,0.092,-0.036,0.094,-0.032,0.095C-0.027,0.096,-0.023,0.097,-0.019,0.098C-0.015,0.099,-0.011,0.1,-0.006,0.1C-0.002,0.1,0.002,0.1,0.006,0.1C0.011,0.1,0.015,0.099,0.019,0.098C0.023,0.097,0.027,0.096,0.032,0.095C0.036,0.094,0.04,0.092,0.043,0.09C0.047,0.088,0.051,0.086,0.055,0.084C0.058,0.081,0.062,0.079,0.065,0.076C0.068,0.073,0.071,0.07,0.074,0.067C0.077,0.064,0.08,0.061,0.082,0.057C0.084,0.054,0.087,0.05,0.089,0.046C0.091,0.042,0.092,0.039,0.094,0.035C0.095,0.031,0.097,0.026,0.097,0.022C0.098,0.018,0.099,0.014,0.1,0.01C0.1,0.005,0.1,0.001,0.1,-0.003C0.1,-0.007,0.099,-0.012,0.099,-0.016C0.098,-0.02,0.097,-0.024,0.096,-0.028C0.095,-0.033,0.093,-0.037,0.091,-0.04C0.09,-0.044,0.088,-0.048,0.086,-0.052C0.083,-0.055,0.081,-0.059,0.078,-0.062C0.076,-0.066,0.073,-0.069,0.07,-0.072C0.067,-0.075,0.063,-0.078,0.06,-0.08C0.056,-0.083,0.053,-0.085,0.049,-0.087C0.045,-0.089,0.041,-0.091,0.038,-0.093C0.034,-0.094,0.029,-0.096,0.025,-0.097C0.021,-0.098,0.017,-0.099,0.013,-0.099C0.009,-0.1,0.002,-0.1,0,-0.1C-0.002,-0.1,0.002,-0.1,0,-0.1C-0.002,-0.1,-0.009,-0.1,-0.013,-0.099"
                 opacity="1"
           >
           </path>
-          <radialGradient id="ref-15-radial-area-0-gradient"
+          <radialGradient id="radial-value-markers-radial-area-0-gradient"
                           cx="0"
                           cy="0"
                           r="175"
@@ -3033,7 +3033,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-8-path">
+        <clipPath id="area-series-vertical-linear-value-markers-path">
           <rect width="553"
                 height="342"
                 x="-12.5"
@@ -3049,7 +3049,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-8-path)">
+        <g clip-path="url(#area-series-vertical-linear-value-markers-path)">
           <path class
                 pointer-events="none"
                 stroke="#2b8dd8"
@@ -3062,12 +3062,12 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-8-area-2)"
+                fill="url(#gradient-area-series-vertical-linear-value-markers-area-2)"
                 d="M0,105.667L176,158.5L396,246.556L528,299.389L528,317L396,317L176,317L0,317Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-8-area-2"
+                          id="gradient-area-series-vertical-linear-value-markers-area-2"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -3096,12 +3096,12 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-8-area-1)"
+                fill="url(#gradient-area-series-vertical-linear-value-markers-area-1)"
                 d="M0,105.667L176,176.111L396,193.722L528,35.222L528,317L396,317L176,317L0,317Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-8-area-1"
+                          id="gradient-area-series-vertical-linear-value-markers-area-1"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -3130,12 +3130,12 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-8-area-0)"
+                fill="url(#gradient-area-series-vertical-linear-value-markers-area-0)"
                 d="M0,0L176,264.167L396,70.444L528,0L528,317L396,317L176,317L0,317Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-8-area-0"
+                          id="gradient-area-series-vertical-linear-value-markers-area-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -3153,7 +3153,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
             </stop>
           </linearGradient>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-vertical-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -3162,7 +3162,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-vertical-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
@@ -3225,7 +3225,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-vertical-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -3234,7 +3234,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-vertical-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
@@ -3297,7 +3297,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
             </g>
           </g>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-vertical-linear-value-markers-path">
               <rect width="553"
                     height="342"
                     x="-12.5"
@@ -3306,7 +3306,7 @@ exports[`Charts/Area Chart/Markers VerticalLinearValueMarkers smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-vertical-linear-value-markers-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"

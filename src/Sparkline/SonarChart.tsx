@@ -19,7 +19,9 @@ import {
   TooltipTemplate,
   formatValue,
   ChartNestedDataShape,
-  GRADIENT_DEFAULT_PROPS
+  GRADIENT_DEFAULT_PROPS,
+  TOOLTIP_AREA_DEFAULT_PROPS,
+  CHART_TOOLTIP_DEFAULT_PROPS
 } from '@/common';
 
 export interface SonarChartProps extends BarChartProps {
@@ -37,8 +39,10 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
         colorScheme="rgb(17, 207, 247)"
         tooltip={
           <TooltipArea
+            {...TOOLTIP_AREA_DEFAULT_PROPS}
             tooltip={
               <ChartTooltip
+                {...CHART_TOOLTIP_DEFAULT_PROPS}
                 followCursor={true}
                 modifiers={[offset(5)]}
                 content={(data, color) => (

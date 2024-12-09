@@ -440,7 +440,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-0-gradient)"
+        <path fill="url(#radialbar-gradient-0-gradient)"
               d="M-1.9142843494634746e-14,-50A50,50,0,0,1,6.266661678215191,-49.60573506572389L9.055175546110474,-93.90422671972291A94.33981132056604,94.33981132056604,0,0,0,2.785547597858779,-94.29867827589135"
               tabindex="0"
               value="16"
@@ -456,7 +456,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-0-gradient"
+                        id="radialbar-gradient-0-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -479,7 +479,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-1-gradient)"
+        <path fill="url(#radialbar-gradient-1-gradient)"
               d="M6.266661678215191,-49.60573506572389A50,50,0,0,1,12.434494358242716,-48.42915805643156L29.645058215178448,-138.64043610512297A141.77446878757826,141.77446878757826,0,0,0,23.473670473945685,-139.8176912786097"
               tabindex="0"
               value="44"
@@ -495,7 +495,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-1-gradient"
+                        id="radialbar-gradient-1-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -518,7 +518,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-2-gradient)"
+        <path fill="url(#radialbar-gradient-2-gradient)"
               d="M12.434494358242716,-48.42915805643156A50,50,0,0,1,18.406227634233872,-46.48882429441258L29.37173648933007,-80.23279314346071A85.44003745317531,85.44003745317531,0,0,0,23.397418585787996,-82.1739667018784"
               tabindex="0"
               value="12"
@@ -534,7 +534,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-2-gradient"
+                        id="radialbar-gradient-2-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -557,7 +557,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-3-gradient)"
+        <path fill="url(#radialbar-gradient-3-gradient)"
               d="M18.406227634233886,-46.48882429441258A50,50,0,0,1,24.087683705085748,-43.81533400219319L51.18296871294885,-101.39183257900658A113.57816691600547,113.57816691600547,0,0,0,45.49849758723999,-104.06674164834757"
               tabindex="0"
               value="26"
@@ -573,7 +573,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-3-gradient"
+                        id="radialbar-gradient-3-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -596,7 +596,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-4-gradient)"
+        <path fill="url(#radialbar-gradient-4-gradient)"
               d="M24.087683705085748,-43.81533400219319A50,50,0,0,1,29.38926261462364,-40.450849718747385L76.2970760934354,-114.36238970742318A137.4772708486752,137.4772708486752,0,0,0,70.99246898438851,-117.7287957447142"
               tabindex="0"
               value="41"
@@ -612,7 +612,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-4-gradient"
+                        id="radialbar-gradient-4-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -635,7 +635,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-5-gradient)"
+        <path fill="url(#radialbar-gradient-5-gradient)"
               d="M29.38926261462364,-40.450849718747385A50,50,0,0,1,34.22735529643442,-36.4484313710706L73.6583558861448,-84.10972956887947A111.80339887498948,111.80339887498948,0,0,0,68.81771546157907,-88.11425559266299"
               tabindex="0"
               value="25"
@@ -651,7 +651,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-5-gradient"
+                        id="radialbar-gradient-5-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -674,7 +674,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-6-gradient)"
+        <path fill="url(#radialbar-gradient-6-gradient)"
               d="M34.22735529643442,-36.44843137107059A50,50,0,0,1,38.52566213878945,-31.8711994874345L82.30412417861713,-72.97966253135712A110,110,0,0,0,78.0035725545501,-77.55928486472163"
               tabindex="0"
               value="24"
@@ -690,7 +690,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-6-gradient"
+                        id="radialbar-gradient-6-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -713,7 +713,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-7-gradient)"
+        <path fill="url(#radialbar-gradient-7-gradient)"
               d="M38.52566213878945,-31.8711994874345A50,50,0,0,1,42.21639627510074,-26.791339748949845L89.31798331265327,-61.010637244341176A108.16653826391968,108.16653826391968,0,0,0,85.62533886145826,-66.0931263056942"
               tabindex="0"
               value="23"
@@ -729,7 +729,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-7-gradient"
+                        id="radialbar-gradient-7-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -752,7 +752,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-8-gradient)"
+        <path fill="url(#radialbar-gradient-8-gradient)"
               d="M42.21639627510074,-26.791339748949845A50,50,0,0,1,45.24135262330097,-21.288964578253648L101.00451540418443,-51.943121469217374A113.57816691600547,113.57816691600547,0,0,0,97.97795376163428,-57.44841665949597"
               tabindex="0"
               value="26"
@@ -768,7 +768,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-8-gradient"
+                        id="radialbar-gradient-8-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -791,7 +791,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-9-gradient)"
+        <path fill="url(#radialbar-gradient-9-gradient)"
               d="M45.24135262330097,-21.28896457825365A50,50,0,0,1,47.55282581475767,-15.450849718747389L98.18389357059395,-35.49539467759554A104.4030650891055,104.4030650891055,0,0,0,95.8712478313904,-41.33647105465245"
               tabindex="0"
               value="21"
@@ -807,7 +807,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-9-gradient"
+                        id="radialbar-gradient-9-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -830,7 +830,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-10-gradient)"
+        <path fill="url(#radialbar-gradient-10-gradient)"
               d="M47.55282581475767,-15.450849718747392A50,50,0,0,1,49.11436253643443,-9.369065729286252L120.54967870068361,-27.70875250100493A123.69316876852982,123.69316876852982,0,0,0,118.9872820446847,-33.793885713523"
               tabindex="0"
               value="32"
@@ -846,7 +846,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-10-gradient"
+                        id="radialbar-gradient-10-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -869,7 +869,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-11-gradient)"
+        <path fill="url(#radialbar-gradient-11-gradient)"
               d="M49.11436253643443,-9.369065729286245A50,50,0,0,1,49.901336421413575,-3.139525976465681L82.74595606987683,-7.28743810141907A83.06623862918075,83.06623862918075,0,0,0,81.9586518599349,-13.519592645564027"
               tabindex="0"
               value="11"
@@ -885,7 +885,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-11-gradient"
+                        id="radialbar-gradient-11-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -908,7 +908,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-12-gradient)"
+        <path fill="url(#radialbar-gradient-12-gradient)"
               d="M49.901336421413575,-3.1395259764656838A50,50,0,0,1,49.901336421413575,3.1395259764656536L125.26025891542433,3.1412635102552544A125.29964086141668,125.29964086141668,0,0,0,125.26025891542433,-3.1412635102553312"
               tabindex="0"
               value="33"
@@ -924,7 +924,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-12-gradient"
+                        id="radialbar-gradient-12-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -947,7 +947,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-13-gradient)"
+        <path fill="url(#radialbar-gradient-13-gradient)"
               d="M49.901336421413575,3.1395259764656505A50,50,0,0,1,49.114362536434435,9.369065729286215L59.87394032753633,10.728992014845495A60.8276253029822,60.8276253029822,0,0,0,60.661082205236724,4.498122462707325"
               tabindex="0"
               value="3"
@@ -963,7 +963,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-13-gradient"
+                        id="radialbar-gradient-13-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -986,7 +986,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-14-gradient)"
+        <path fill="url(#radialbar-gradient-14-gradient)"
               d="M49.114362536434435,9.369065729286223A50,50,0,0,1,47.55282581475768,15.450849718747362L69.6672336849771,21.1299917340919A72.80109889280519,72.80109889280519,0,0,0,71.22931340995996,15.046092886384121"
               tabindex="0"
               value="7"
@@ -1002,7 +1002,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-14-gradient"
+                        id="radialbar-gradient-14-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1025,7 +1025,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-15-gradient)"
+        <path fill="url(#radialbar-gradient-15-gradient)"
               d="M47.55282581475768,15.450849718747358A50,50,0,0,1,45.241352623300976,21.288964578253623L68.97965737101778,30.688872070784743A75.49834435270749,75.49834435270749,0,0,0,71.29198471402155,24.848599870731483"
               tabindex="0"
               value="8"
@@ -1041,7 +1041,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-15-gradient"
+                        id="radialbar-gradient-15-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1064,7 +1064,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-16-gradient)"
+        <path fill="url(#radialbar-gradient-16-gradient)"
               d="M45.24135262330098,21.28896457825362A50,50,0,0,1,42.21639627510076,26.791339748949817L66.87331312188464,40.34798622115324A78.10249675906654,78.10249675906654,0,0,0,69.89944454401655,34.84347359891023"
               tabindex="0"
               value="9"
@@ -1080,7 +1080,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-16-gradient"
+                        id="radialbar-gradient-16-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1103,7 +1103,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-17-gradient)"
+        <path fill="url(#radialbar-gradient-17-gradient)"
               d="M42.216396275100756,26.791339748949827A50,50,0,0,1,38.52566213878947,31.87119948743448L56.99648696183011,45.292388698432895A72.80109889280519,72.80109889280519,0,0,0,60.688504501093206,40.210762507328695"
               tabindex="0"
               value="7"
@@ -1119,7 +1119,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-17-gradient"
+                        id="radialbar-gradient-17-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1142,7 +1142,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-18-gradient)"
+        <path fill="url(#radialbar-gradient-18-gradient)"
               d="M38.52566213878947,31.87119948743447A50,50,0,0,1,34.227355296434446,36.44843137107056L54.73822887807207,55.711096733880545A78.10249675906654,78.10249675906654,0,0,0,59.038205439834414,51.13208677967197"
               tabindex="0"
               value="9"
@@ -1158,7 +1158,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-18-gradient"
+                        id="radialbar-gradient-18-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1181,7 +1181,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-19-gradient)"
+        <path fill="url(#radialbar-gradient-19-gradient)"
               d="M34.22735529643444,36.44843137107057A50,50,0,0,1,29.389262614623668,40.450849718747364L93.17216704174658,117.55401859887594A150,150,0,0,0,98.01309059851584,113.54925834776344"
               tabindex="0"
               value="50"
@@ -1197,7 +1197,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-19-gradient"
+                        id="radialbar-gradient-19-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1220,7 +1220,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-20-gradient)"
+        <path fill="url(#radialbar-gradient-20-gradient)"
               d="M29.389262614623675,40.45084971874736A50,50,0,0,1,24.087683705085787,43.81533400219317L51.171515391907995,86.49552596808533A100.4987562112089,100.4987562112089,0,0,0,56.47572024132298,83.12937521251932"
               tabindex="0"
               value="19"
@@ -1236,7 +1236,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-20-gradient"
+                        id="radialbar-gradient-20-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1259,7 +1259,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-21-gradient)"
+        <path fill="url(#radialbar-gradient-21-gradient)"
               d="M24.087683705085777,43.815334002193175A50,50,0,0,1,18.406227634233915,46.48882429441256L59.86456078123191,134.59656148085728A147.30919862656236,147.30919862656236,0,0,0,65.54932587536054,131.92151408047815"
               tabindex="0"
               value="48"
@@ -1275,7 +1275,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-21-gradient"
+                        id="radialbar-gradient-21-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1298,7 +1298,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-22-gradient)"
+        <path fill="url(#radialbar-gradient-22-gradient)"
               d="M18.406227634233904,46.48882429441257A50,50,0,0,1,12.434494358242748,48.429158056431554L25.486166517146824,88.60279519439702A92.19544457292888,92.19544457292888,0,0,0,31.460674493315487,86.66155987763922"
               tabindex="0"
               value="15"
@@ -1314,7 +1314,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-22-gradient"
+                        id="radialbar-gradient-22-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1337,7 +1337,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-23-gradient)"
+        <path fill="url(#radialbar-gradient-23-gradient)"
               d="M12.434494358242759,48.42915805643155A50,50,0,0,1,6.266661678215235,49.60573506572389L22.93950499397798,137.017440899439A138.92443989449805,138.92443989449805,0,0,0,29.110871799788562,135.84018971959765"
               tabindex="0"
               value="42"
@@ -1353,7 +1353,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-23-gradient"
+                        id="radialbar-gradient-23-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1376,7 +1376,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-24-gradient)"
+        <path fill="url(#radialbar-gradient-24-gradient)"
               d="M6.266661678215224,49.60573506572389A50,50,0,0,1,1.4163847244119949e-14,50L4.318324087884903,118.66487297036134A118.74342087037917,118.74342087037917,0,0,0,10.588379427241806,118.27039452502373"
               tabindex="0"
               value="29"
@@ -1392,7 +1392,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-24-gradient"
+                        id="radialbar-gradient-24-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1415,7 +1415,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-25-gradient)"
+        <path fill="url(#radialbar-gradient-25-gradient)"
               d="M3.061616997868383e-15,50A50,50,0,0,1,-6.266661678215208,49.60573506572389L-11.673270631111196,135.5128582562291A136.01470508735443,136.01470508735443,0,0,0,-5.403041309246442,135.90734764761828"
               tabindex="0"
               value="40"
@@ -1431,7 +1431,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-25-gradient"
+                        id="radialbar-gradient-25-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1454,7 +1454,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-26-gradient)"
+        <path fill="url(#radialbar-gradient-26-gradient)"
               d="M-6.266661678215196,49.60573506572389A50,50,0,0,1,-12.43449435824272,48.42915805643156L-26.85436732354945,124.01146300101406A126.8857754044952,126.8857754044952,0,0,0,-20.68310506417861,125.18869423755545"
               tabindex="0"
               value="34"
@@ -1470,7 +1470,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-26-gradient"
+                        id="radialbar-gradient-26-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1493,7 +1493,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-27-gradient)"
+        <path fill="url(#radialbar-gradient-27-gradient)"
               d="M-12.43449435824273,48.42915805643156A50,50,0,0,1,-18.406227634233886,46.488824294412574L-22.74956489574854,59.85363227953777A64.03124237432849,64.03124237432849,0,0,0,-16.776297734752696,61.79446443100653"
               tabindex="0"
               value="4"
@@ -1509,7 +1509,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-27-gradient"
+                        id="radialbar-gradient-27-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1532,7 +1532,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-28-gradient)"
+        <path fill="url(#radialbar-gradient-28-gradient)"
               d="M-18.4062276342339,46.48882429441257A50,50,0,0,1,-24.087683705085773,43.815334002193175L-49.65883372847037,98.1529430670733A110,110,0,0,0,-43.97441052912973,100.82782958397728"
               tabindex="0"
               value="24"
@@ -1548,7 +1548,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-28-gradient"
+                        id="radialbar-gradient-28-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1571,7 +1571,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-29-gradient)"
+        <path fill="url(#radialbar-gradient-29-gradient)"
               d="M-24.08768370508575,43.81533400219318A50,50,0,0,1,-29.38926261462365,40.45084971874737L-31.45709846415837,43.70870572570463A53.85164807134504,53.85164807134504,0,0,0,-26.15503827013185,47.07349544157453"
               tabindex="0"
               value="1"
@@ -1587,7 +1587,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-29-gradient"
+                        id="radialbar-gradient-29-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1610,7 +1610,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-30-gradient)"
+        <path fill="url(#radialbar-gradient-30-gradient)"
               d="M-29.38926261462365,40.45084971874737A50,50,0,0,1,-34.22735529643444,36.44843137107057L-84.27450448402571,96.94229156550783A128.4523257866513,128.4523257866513,0,0,0,-79.43370962494436,100.94694534863363"
               tabindex="0"
               value="35"
@@ -1626,7 +1626,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-30-gradient"
+                        id="radialbar-gradient-30-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1649,7 +1649,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-31-gradient)"
+        <path fill="url(#radialbar-gradient-31-gradient)"
               d="M-34.22735529643442,36.44843137107059A50,50,0,0,1,-38.52566213878946,31.87119948743449L-84.91354380128047,75.43003433055047A113.57816691600547,113.57816691600547,0,0,0,-80.61295591850897,80.00969527551352"
               tabindex="0"
               value="26"
@@ -1665,7 +1665,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-31-gradient"
+                        id="radialbar-gradient-31-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1688,7 +1688,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-32-gradient)"
+        <path fill="url(#radialbar-gradient-32-gradient)"
               d="M-38.52566213878947,31.871199487434478A50,50,0,0,1,-42.21639627510076,26.79133974894981L-62.872620419384226,41.79753104670214A75.49834435270749,75.49834435270749,0,0,0,-59.180522457490156,46.87926793006161"
               tabindex="0"
               value="8"
@@ -1704,7 +1704,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-32-gradient"
+                        id="radialbar-gradient-32-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1727,7 +1727,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-33-gradient)"
+        <path fill="url(#radialbar-gradient-33-gradient)"
               d="M-42.21639627510074,26.79133974894985A50,50,0,0,1,-45.24135262330097,21.288964578253644L-106.99868964143336,55.23839620242626A120.41594578792295,120.41594578792295,0,0,0,-103.9720854111745,60.743768859459415"
               tabindex="0"
               value="30"
@@ -1743,7 +1743,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-33-gradient"
+                        id="radialbar-gradient-33-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1766,7 +1766,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-34-gradient)"
+        <path fill="url(#radialbar-gradient-34-gradient)"
               d="M-45.24135262330099,21.288964578253605A50,50,0,0,1,-47.552825814757696,15.450849718747333L-63.45899219239823,21.747558711844878A67.08203932499369,67.08203932499369,0,0,0,-61.146842813246295,27.587381426517254"
               tabindex="0"
               value="5"
@@ -1782,7 +1782,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-34-gradient"
+                        id="radialbar-gradient-34-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1805,7 +1805,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-35-gradient)"
+        <path fill="url(#radialbar-gradient-35-gradient)"
               d="M-47.552825814757675,15.450849718747376A50,50,0,0,1,-49.114362536434435,9.369065729286229L-73.84418149201214,15.717406267408464A75.49834435270749,75.49834435270749,0,0,0,-72.28206774049502,21.80143763971741"
               tabindex="0"
               value="8"
@@ -1821,7 +1821,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-35-gradient"
+                        id="radialbar-gradient-35-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1844,7 +1844,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-36-gradient)"
+        <path fill="url(#radialbar-gradient-36-gradient)"
               d="M-49.11436253643443,9.369065729286271A50,50,0,0,1,-49.901336421413575,3.139525976465701L-53.72964579518659,3.622866644494108A53.85164807134504,53.85164807134504,0,0,0,-52.942600467656035,9.852971923341066"
               tabindex="0"
               value="1"
@@ -1860,7 +1860,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-36-gradient"
+                        id="radialbar-gradient-36-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1883,7 +1883,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-37-gradient)"
+        <path fill="url(#radialbar-gradient-37-gradient)"
               d="M-49.901336421413575,3.1395259764656567A50,50,0,0,1,-49.901336421413575,-3.1395259764656887L-129.96204183042508,-3.141286880697248A130,130,0,0,0,-129.96204183042508,3.1412868806971646"
               tabindex="0"
               value="36"
@@ -1899,7 +1899,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-37-gradient"
+                        id="radialbar-gradient-37-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1922,7 +1922,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-38-gradient)"
+        <path fill="url(#radialbar-gradient-38-gradient)"
               d="M-49.901336421413575,-3.139525976465645A50,50,0,0,1,-49.114362536434435,-9.369065729286216L-110.48431423932279,-17.12355999979498A111.80339887498948,111.80339887498948,0,0,0,-111.27170254526193,-10.890739767286249"
               tabindex="0"
               value="25"
@@ -1938,7 +1938,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-38-gradient"
+                        id="radialbar-gradient-38-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -1961,7 +1961,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-39-gradient)"
+        <path fill="url(#radialbar-gradient-39-gradient)"
               d="M-49.11436253643443,-9.36906572928626A50,50,0,0,1,-47.55282581475767,-15.450849718747406L-122.08055503062899,-34.58812055335714A126.8857754044952,126.8857754044952,0,0,0,-123.6429600336555,-28.502954831313"
               tabindex="0"
               value="34"
@@ -1977,7 +1977,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-39-gradient"
+                        id="radialbar-gradient-39-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2000,7 +2000,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-40-gradient)"
+        <path fill="url(#radialbar-gradient-40-gradient)"
               d="M-47.55282581475768,-15.450849718747364A50,50,0,0,1,-45.241352623300976,-21.288964578253633L-127.97925307154618,-54.04915154976199A138.92443989449805,138.92443989449805,0,0,0,-130.29205072127314,-48.20769149052032"
               tabindex="0"
               value="42"
@@ -2016,7 +2016,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-40-gradient"
+                        id="radialbar-gradient-40-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2039,7 +2039,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-41-gradient)"
+        <path fill="url(#radialbar-gradient-41-gradient)"
               d="M-45.241352623301,-21.288964578253594A50,50,0,0,1,-42.21639627510077,-26.791339748949806L-115.03918523457496,-66.82803199679873A133.04134695650072,133.04134695650072,0,0,0,-118.06585154247686,-61.322546420952044"
               tabindex="0"
               value="38"
@@ -2055,7 +2055,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-41-gradient"
+                        id="radialbar-gradient-41-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2078,7 +2078,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-42-gradient)"
+        <path fill="url(#radialbar-gradient-42-gradient)"
               d="M-42.21639627510075,-26.791339748949838A50,50,0,0,1,-38.52566213878945,-31.8711994874345L-85.62533886145826,-66.0931263056942A108.16653826391968,108.16653826391968,0,0,0,-89.31798331265327,-61.010637244341176"
               tabindex="0"
               value="23"
@@ -2094,7 +2094,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-42-gradient"
+                        id="radialbar-gradient-42-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2117,7 +2117,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-43-gradient)"
+        <path fill="url(#radialbar-gradient-43-gradient)"
               d="M-38.52566213878948,-31.871199487434467A50,50,0,0,1,-34.227355296434446,-36.44843137107057L-56.57669211613758,-57.43760013436995A80.62257748298549,80.62257748298549,0,0,0,-60.876740042098824,-52.85851418500827"
               tabindex="0"
               value="10"
@@ -2133,7 +2133,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-43-gradient"
+                        id="radialbar-gradient-43-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2156,7 +2156,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-44-gradient)"
+        <path fill="url(#radialbar-gradient-44-gradient)"
               d="M-34.22735529643441,-36.4484313710706A50,50,0,0,1,-29.38926261462363,-40.45084971874739L-57.68092774654961,-74.65192947471166A94.33981132056604,94.33981132056604,0,0,0,-62.52131049763373,-70.64761661697071"
               tabindex="0"
               value="16"
@@ -2172,7 +2172,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-44-gradient"
+                        id="radialbar-gradient-44-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2195,7 +2195,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-45-gradient)"
+        <path fill="url(#radialbar-gradient-45-gradient)"
               d="M-29.38926261462366,-40.450849718747364A50,50,0,0,1,-24.087683705085762,-43.81533400219318L-58.18274958131061,-97.54367048229474A113.57816691600547,113.57816691600547,0,0,0,-63.48714195117298,-94.17740072263415"
               tabindex="0"
               value="26"
@@ -2211,7 +2211,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-45-gradient"
+                        id="radialbar-gradient-45-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2234,7 +2234,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-46-gradient)"
+        <path fill="url(#radialbar-gradient-46-gradient)"
               d="M-24.0876837050858,-43.815334002193154A50,50,0,0,1,-18.40622763423393,-46.48882429441256L-58.1052727707922,-130.8578514122551A143.17821063276352,143.17821063276352,0,0,0,-63.790012639334996,-128.18281588213563"
               tabindex="0"
               value="45"
@@ -2250,7 +2250,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-46-gradient"
+                        id="radialbar-gradient-46-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2273,7 +2273,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-47-gradient)"
+        <path fill="url(#radialbar-gradient-47-gradient)"
               d="M-18.40622763423389,-46.488824294412574A50,50,0,0,1,-12.434494358242722,-48.42915805643156L-38.57508976987696,-128.88740221311755A134.5362404707371,134.5362404707371,0,0,0,-44.55021104378905,-126.94596762384326"
               tabindex="0"
               value="39"
@@ -2289,7 +2289,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-47-gradient"
+                        id="radialbar-gradient-47-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2312,7 +2312,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-48-gradient)"
+        <path fill="url(#radialbar-gradient-48-gradient)"
               d="M-12.434494358242764,-48.42915805643155A50,50,0,0,1,-6.26666167821523,-49.60573506572389L-21.83685278748364,-131.23700644382959A133.04134695650072,133.04134695650072,0,0,0,-28.008172045205477,-130.05976433427125"
               tabindex="0"
               value="38"
@@ -2328,7 +2328,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-48-gradient"
+                        id="radialbar-gradient-48-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2351,7 +2351,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-3-49-gradient)"
+        <path fill="url(#radialbar-gradient-49-gradient)"
               d="M-6.266661678215186,-49.60573506572389A50,50,0,0,1,3.522406999140111e-14,-50L-2.917246716565781,-96.3923735136483A96.43650760992955,96.43650760992955,0,0,0,-9.186924508537317,-95.99791882157882"
               tabindex="0"
               value="17"
@@ -2367,7 +2367,7 @@ exports[`Charts/Bar Chart/Radial Gradient smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-3-49-gradient"
+                        id="radialbar-gradient-49-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2944,7 +2944,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-0-gradient)"
+        <path fill="url(#radialbar-ref-1-0-gradient)"
               d="M3.061616997868383e-15,-50A50,50,0,0,1,9.187475890828516,-49.14865498419509L11.879665429271947,-78.1592831932878A79.05694150420949,79.05694150420949,0,0,0,2.6843390494362716,-79.0113556640289"
               tabindex="0"
               value="9"
@@ -2960,7 +2960,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-0-gradient"
+                        id="radialbar-ref-1-0-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -2983,7 +2983,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-1-gradient)"
+        <path fill="url(#radialbar-ref-1-1-gradient)"
               d="M9.187475890828516,-49.14865498419509A50,50,0,0,1,18.062083309357643,-46.62361147021779L36.01702927084062,-109.70919257672413A115.47005383792515,115.47005383792515,0,0,0,27.132152071549438,-112.23715809525672"
               tabindex="0"
               value="26"
@@ -2999,7 +2999,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-1-gradient"
+                        id="radialbar-ref-1-1-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3022,7 +3022,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-2-gradient)"
+        <path fill="url(#radialbar-ref-1-2-gradient)"
               d="M18.06208330935765,-46.62361147021779A50,50,0,0,1,26.321608143867792,-42.51085678648071L38.11468779878606,-66.1861307777876A76.37626158259734,76.37626158259734,0,0,0,29.848441545367077,-70.30223233046117"
               tabindex="0"
               value="8"
@@ -3038,7 +3038,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-2-gradient"
+                        id="radialbar-ref-1-2-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3061,7 +3061,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-3-gradient)"
+        <path fill="url(#radialbar-ref-1-3-gradient)"
               d="M26.321608143867792,-42.51085678648071A50,50,0,0,1,33.68478218232786,-36.950445861032954L62.6143944494568,-75.25138497769437A97.89450103725609,97.89450103725609,0,0,0,55.24346934922515,-80.81764923328663"
               tabindex="0"
               value="17"
@@ -3077,7 +3077,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-3-gradient"
+                        id="radialbar-ref-1-3-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3100,7 +3100,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-4-gradient)"
+        <path fill="url(#radialbar-ref-1-4-gradient)"
               d="M33.68478218232786,-36.950445861032954A50,50,0,0,1,39.90086136401198,-30.131731818962816L91.00508575137914,-76.71206576576331A119.02380714238083,119.02380714238083,0,0,0,84.78171558225974,-83.53877764006057"
               tabindex="0"
               value="28"
@@ -3116,7 +3116,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-4-gradient"
+                        id="radialbar-ref-1-4-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3139,7 +3139,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-5-gradient)"
+        <path fill="url(#radialbar-ref-1-5-gradient)"
               d="M39.90086136401198,-30.131731818962816A50,50,0,0,1,44.75816456775312,-22.28691778882691L75.9571727226363,-41.59937393739954A86.60254037844386,86.60254037844386,0,0,0,71.095257770935,-49.451636196230204"
               tabindex="0"
               value="12"
@@ -3155,7 +3155,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-5-gradient"
+                        id="radialbar-ref-1-5-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3178,7 +3178,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-6-gradient)"
+        <path fill="url(#radialbar-ref-1-6-gradient)"
               d="M44.75816456775312,-22.286917788826912A50,50,0,0,1,48.09128215864095,-13.683149503604142L102.29481708409102,-34.6761743045427A108.01234497346434,108.01234497346434,0,0,0,98.95796957789858,-43.28957061101859"
               tabindex="0"
               value="22"
@@ -3194,7 +3194,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-6-gradient"
+                        id="radialbar-ref-1-6-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3217,7 +3217,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-7-gradient)"
+        <path fill="url(#radialbar-ref-1-7-gradient)"
               d="M48.09128215864096,-13.683149503604136A50,50,0,0,1,49.78670881475173,-4.6134179731650935L90.46642267991939,-12.213095464766447A91.28709291752769,91.28709291752769,0,0,0,88.76930579757622,-21.291868906926307"
               tabindex="0"
               value="14"
@@ -3233,7 +3233,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-7-gradient"
+                        id="radialbar-ref-1-7-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3256,7 +3256,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-8-gradient)"
+        <path fill="url(#radialbar-ref-1-8-gradient)"
               d="M49.78670881475173,-4.613417973165097A50,50,0,0,1,49.78670881475173,4.6134179731651015L53.80868314596988,4.614356375843122A54.00617248673217,54.00617248673217,0,0,0,53.80868314596988,-4.614356375843117"
               tabindex="0"
               value="1"
@@ -3272,7 +3272,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-8-gradient"
+                        id="radialbar-ref-1-8-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3295,7 +3295,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-9-gradient)"
+        <path fill="url(#radialbar-ref-1-9-gradient)"
               d="M49.78670881475173,4.613417973165097A50,50,0,0,1,48.09128215864095,13.683149503604142L125.97129199260749,28.24712835634616A129.09944487358058,129.09944487358058,0,0,0,127.66877119774264,19.166416658444778"
               tabindex="0"
               value="34"
@@ -3311,7 +3311,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-9-gradient"
+                        id="radialbar-ref-1-9-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3334,7 +3334,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-10-gradient)"
+        <path fill="url(#radialbar-ref-1-10-gradient)"
               d="M48.09128215864095,13.683149503604147A50,50,0,0,1,44.75816456775311,22.28691778882692L118.63599514597787,50.91333147997865A129.09944487358058,129.09944487358058,0,0,0,121.9731479378192,42.2991471404039"
               tabindex="0"
               value="34"
@@ -3350,7 +3350,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-10-gradient"
+                        id="radialbar-ref-1-10-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3373,7 +3373,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-11-gradient)"
+        <path fill="url(#radialbar-ref-1-11-gradient)"
               d="M44.75816456775312,22.286917788826912A50,50,0,0,1,39.90086136401197,30.13173181896282L90.94552500197183,61.74337871747098A109.92421631894099,109.92421631894099,0,0,0,95.8083148917264,53.88970338516561"
               tabindex="0"
               value="23"
@@ -3389,7 +3389,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-11-gradient"
+                        id="radialbar-ref-1-11-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3412,7 +3412,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-12-gradient)"
+        <path fill="url(#radialbar-ref-1-12-gradient)"
               d="M39.90086136401198,30.131731818962816A50,50,0,0,1,33.68478218232786,36.950445861032954L107.68678845966629,104.42009189443898A150,150,0,0,0,113.91073749820606,97.59274503063631"
               tabindex="0"
               value="48"
@@ -3428,7 +3428,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-12-gradient"
+                        id="radialbar-ref-1-12-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3451,7 +3451,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-13-gradient)"
+        <path fill="url(#radialbar-ref-1-13-gradient)"
               d="M33.684782182327865,36.95044586103295A50,50,0,0,1,26.321608143867802,42.5108567864807L48.430362058534,71.79484682676961A86.60254037844386,86.60254037844386,0,0,0,55.80052703443977,66.22915659042289"
               tabindex="0"
               value="12"
@@ -3467,7 +3467,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-13-gradient"
+                        id="radialbar-ref-1-13-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3490,7 +3490,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-14-gradient)"
+        <path fill="url(#radialbar-ref-1-14-gradient)"
               d="M26.32160814386778,42.51085678648071A50,50,0,0,1,18.062083309357643,46.62361147021779L51.17160110724862,113.12883764446313A124.1638702145945,124.1638702145945,0,0,0,59.4409821162597,109.01117516897595"
               tabindex="0"
               value="31"
@@ -3506,7 +3506,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-14-gradient"
+                        id="radialbar-ref-1-14-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3529,7 +3529,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-15-gradient)"
+        <path fill="url(#radialbar-ref-1-15-gradient)"
               d="M18.062083309357643,46.62361147021779A50,50,0,0,1,9.187475890828516,49.14865498419509L34.639568914644514,138.62455385707923A142.88690166235207,142.88690166235207,0,0,0,43.52526864937307,136.09635430703707"
               tabindex="0"
               value="43"
@@ -3545,7 +3545,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-15-gradient"
+                        id="radialbar-ref-1-15-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3568,7 +3568,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-16-gradient)"
+        <path fill="url(#radialbar-ref-1-16-gradient)"
               d="M9.187475890828516,49.14865498419509A50,50,0,0,1,3.061616997868383e-15,50L7.003108258847052,125.63554356967698A125.83057392117917,125.83057392117917,0,0,0,16.201603518930042,124.78317745893766"
               tabindex="0"
               value="32"
@@ -3584,7 +3584,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-16-gradient"
+                        id="radialbar-ref-1-16-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3607,7 +3607,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-17-gradient)"
+        <path fill="url(#radialbar-ref-1-17-gradient)"
               d="M3.061616997868383e-15,50A50,50,0,0,1,-9.187475890828509,49.14865498419509L-18.043065762847093,144.65285264341512A145.7737973711325,145.7737973711325,0,0,0,-8.844043643312611,145.50526757487228"
               tabindex="0"
               value="45"
@@ -3623,7 +3623,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-17-gradient"
+                        id="radialbar-ref-1-17-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3646,7 +3646,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-18-gradient)"
+        <path fill="url(#radialbar-ref-1-18-gradient)"
               d="M-9.187475890828509,49.14865498419509A50,50,0,0,1,-18.06208330935764,46.623611470217796L-41.051578963257676,127.40264726955279A133.8531533684084,133.8531533684084,0,0,0,-32.16609527509244,129.93078534904782"
               tabindex="0"
               value="37"
@@ -3662,7 +3662,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-18-gradient"
+                        id="radialbar-ref-1-18-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3685,7 +3685,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-19-gradient)"
+        <path fill="url(#radialbar-ref-1-19-gradient)"
               d="M-18.062083309357657,46.62361147021778A50,50,0,0,1,-26.3216081438678,42.51085678648071L-34.23882682997283,58.40407580503665A67.70032003863301,67.70032003863301,0,0,0,-25.973955679067267,62.51949263801797"
               tabindex="0"
               value="5"
@@ -3701,7 +3701,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-19-gradient"
+                        id="radialbar-ref-1-19-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3724,7 +3724,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-20-gradient)"
+        <path fill="url(#radialbar-ref-1-20-gradient)"
               d="M-26.3216081438678,42.51085678648071A50,50,0,0,1,-33.68478218232786,36.950445861032954L-38.364688727262035,43.144918497937006A57.735026918962575,57.735026918962575,0,0,0,-30.99889355362987,48.707308812785556"
               tabindex="0"
               value="2"
@@ -3740,7 +3740,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-20-gradient"
+                        id="radialbar-ref-1-20-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3763,7 +3763,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-21-gradient)"
+        <path fill="url(#radialbar-ref-1-21-gradient)"
               d="M-33.68478218232786,36.950445861032954A50,50,0,0,1,-39.90086136401197,30.13173181896282L-93.55707869491725,79.0384275278365A122.47448713915891,122.47448713915891,0,0,0,-87.33362169744412,85.86523464830059"
               tabindex="0"
               value="30"
@@ -3779,7 +3779,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-21-gradient"
+                        id="radialbar-ref-1-21-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3802,7 +3802,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-22-gradient)"
+        <path fill="url(#radialbar-ref-1-22-gradient)"
               d="M-39.90086136401197,30.13173181896282A50,50,0,0,1,-44.75816456775311,22.28691778882692L-83.73850774648226,46.416904108945026A95.74271077563381,95.74271077563381,0,0,0,-78.87617341477345,54.26984368974406"
               tabindex="0"
               value="16"
@@ -3818,7 +3818,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-22-gradient"
+                        id="radialbar-ref-1-22-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3841,7 +3841,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-23-gradient)"
+        <path fill="url(#radialbar-ref-1-23-gradient)"
               d="M-44.75816456775312,22.286917788826898A50,50,0,0,1,-48.09128215864096,13.683149503604133L-134.8370697528752,47.2824627861635A142.88690166235207,142.88690166235207,0,0,0,-131.49978611919764,55.896984867450136"
               tabindex="0"
               value="43"
@@ -3857,7 +3857,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-23-gradient"
+                        id="radialbar-ref-1-23-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3880,7 +3880,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-24-gradient)"
+        <path fill="url(#radialbar-ref-1-24-gradient)"
               d="M-48.09128215864095,13.683149503604152A50,50,0,0,1,-49.78670881475173,4.613417973165115L-78.42662758974106,9.96313629837848A79.05694150420949,79.05694150420949,0,0,0,-76.72975223014694,19.040617707949"
               tabindex="0"
               value="9"
@@ -3896,7 +3896,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-24-gradient"
+                        id="radialbar-ref-1-24-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3919,7 +3919,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-25-gradient)"
+        <path fill="url(#radialbar-ref-1-25-gradient)"
               d="M-49.78670881475173,4.613417973165093A50,50,0,0,1,-49.78670881475173,-4.613417973165103L-70.55980480759632,-4.6167028834339785A70.71067811865476,70.71067811865476,0,0,0,-70.55980480759632,4.616702883433964"
               tabindex="0"
               value="6"
@@ -3935,7 +3935,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-25-gradient"
+                        id="radialbar-ref-1-25-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3958,7 +3958,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-26-gradient)"
+        <path fill="url(#radialbar-ref-1-26-gradient)"
               d="M-49.78670881475173,-4.613417973165081A50,50,0,0,1,-48.09128215864096,-13.68314950360412L-127.54875821389298,-28.542032363291774A130.70322617798433,130.70322617798433,0,0,0,-129.24624625674912,-19.461273387758947"
               tabindex="0"
               value="35"
@@ -3974,7 +3974,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-26-gradient"
+                        id="radialbar-ref-1-26-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -3997,7 +3997,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-27-gradient)"
+        <path fill="url(#radialbar-ref-1-27-gradient)"
               d="M-48.09128215864095,-13.683149503604142A50,50,0,0,1,-44.75816456775312,-22.28691778882691L-104.22085845046563,-45.32857079717687A113.6515141415488,113.6515141415488,0,0,0,-107.5578044340688,-36.71492029120148"
               tabindex="0"
               value="25"
@@ -4013,7 +4013,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-27-gradient"
+                        id="radialbar-ref-1-27-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -4036,7 +4036,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-28-gradient)"
+        <path fill="url(#radialbar-ref-1-28-gradient)"
               d="M-44.75816456775311,-22.28691778882693A50,50,0,0,1,-39.900861364011966,-30.13173181896283L-122.65522396501486,-81.37790056740658A147.19601443879745,147.19601443879745,0,0,0,-127.51864717305341,-73.52320239095265"
               tabindex="0"
               value="46"
@@ -4052,7 +4052,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-28-gradient"
+                        id="radialbar-ref-1-28-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -4075,7 +4075,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-29-gradient)"
+        <path fill="url(#radialbar-ref-1-29-gradient)"
               d="M-39.90086136401198,-30.13173181896281A50,50,0,0,1,-33.68478218232787,-36.95044586103295L-92.23275418640804,-90.33153226784266A129.09944487358058,129.09944487358058,0,0,0,-98.45635879375055,-83.50456322706519"
               tabindex="0"
               value="34"
@@ -4091,7 +4091,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-29-gradient"
+                        id="radialbar-ref-1-29-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -4114,7 +4114,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-30-gradient)"
+        <path fill="url(#radialbar-ref-1-30-gradient)"
               d="M-33.68478218232786,-36.95044586103296A50,50,0,0,1,-26.32160814386777,-42.51085678648072L-62.49989544901461,-90.42729898761533A109.92421631894099,109.92421631894099,0,0,0,-69.87138674137395,-84.86060716357551"
               tabindex="0"
               value="23"
@@ -4130,7 +4130,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-30-gradient"
+                        id="radialbar-ref-1-30-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -4153,7 +4153,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-31-gradient)"
+        <path fill="url(#radialbar-ref-1-31-gradient)"
               d="M-26.32160814386781,-42.5108567864807A50,50,0,0,1,-18.06208330935765,-46.62361147021779A50,50,0,0,0,-26.32160814386781,-42.5108567864807"
               tabindex="0"
               value="0"
@@ -4169,7 +4169,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-31-gradient"
+                        id="radialbar-ref-1-31-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -4192,7 +4192,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-32-gradient)"
+        <path fill="url(#radialbar-ref-1-32-gradient)"
               d="M-18.06208330935765,-46.62361147021779A50,50,0,0,1,-9.187475890828498,-49.1486549841951L-20.50818495981167,-88.95362658704526A91.28709291752769,91.28709291752769,0,0,0,-29.39163976445865,-86.4260657746818"
               tabindex="0"
               value="14"
@@ -4208,7 +4208,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-32-gradient"
+                        id="radialbar-ref-1-32-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -4231,7 +4231,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
               opacity="0"
         >
         </path>
-        <path fill="url(#radialbar-ref-7-33-gradient)"
+        <path fill="url(#radialbar-ref-1-33-gradient)"
               d="M-9.187475890828498,-49.1486549841951A50,50,0,0,1,3.522406999140111e-14,-50L-1.0382691265960764,-61.22844108109203A61.237243569579455,61.237243569579455,0,0,0,-10.230105903634641,-60.376691969670055"
               tabindex="0"
               value="3"
@@ -4247,7 +4247,7 @@ exports[`Charts/Bar Chart/Radial LiveUpdating smoke-test 1`] = `
         >
         </path>
         <linearGradient spreadmethod="pad"
-                        id="radialbar-ref-7-33-gradient"
+                        id="radialbar-ref-1-33-gradient"
                         x1="10%"
                         x2="10%"
                         y1="100%"
@@ -5302,7 +5302,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-0-gradient)"
+          <path fill="url(#radialbar-resizable-0-gradient)"
                 d="M6.123233995736766e-16,-10A10,10,0,0,1,1.8374951781657032,-9.829730996839018L8.71501953940594,-84.03599487379067A84.4866853415377,84.4866853415377,0,0,0,6.874943766839189,-84.20650300423833"
                 tabindex="0"
                 value="9"
@@ -5318,7 +5318,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-0-gradient"
+                          id="radialbar-resizable-0-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5341,7 +5341,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-1-gradient)"
+          <path fill="url(#radialbar-resizable-1-gradient)"
                 d="M1.8374951781657032,-9.829730996839018A10,10,0,0,1,3.6124166618715288,-9.324722294043559L40.00543886330158,-137.22814893947466A142.9405470816451,142.9405470816451,0,0,0,38.228001609901085,-137.7338734404627"
                 tabindex="0"
                 value="26"
@@ -5357,7 +5357,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-1-gradient"
+                          id="radialbar-resizable-1-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5380,7 +5380,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-2-gradient)"
+          <path fill="url(#radialbar-resizable-2-gradient)"
                 d="M3.6124166618715305,-9.324722294043559A10,10,0,0,1,5.264321628773558,-8.502171357296142L36.36100275059992,-70.94982367117527A79.72452571197898,79.72452571197898,0,0,0,34.70678189110028,-71.77352778541398"
                 tabindex="0"
                 value="8"
@@ -5396,7 +5396,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-2-gradient"
+                          id="radialbar-resizable-2-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5419,7 +5419,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-3-gradient)"
+          <path fill="url(#radialbar-resizable-3-gradient)"
                 d="M5.264321628773558,-8.502171357296142A10,10,0,0,1,6.736956436465572,-7.390089172206591L70.47951848561696,-91.7967182095067A115.73245007343446,115.73245007343446,0,0,0,69.00480176539823,-92.91037258195715"
                 tabindex="0"
                 value="17"
@@ -5435,7 +5435,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-3-gradient"
+                          id="radialbar-resizable-3-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5458,7 +5458,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-4-gradient)"
+          <path fill="url(#radialbar-resizable-4-gradient)"
                 d="M6.736956436465572,-7.390089172206591A10,10,0,0,1,7.980172272802396,-6.0263463637925625L110.22313321963527,-99.23135040523505A148.31048513169932,148.31048513169932,0,0,0,108.97815463548142,-100.59702685589227"
                 tabindex="0"
                 value="28"
@@ -5474,7 +5474,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-4-gradient"
+                          id="radialbar-resizable-4-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5497,7 +5497,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-5-gradient)"
+          <path fill="url(#radialbar-resizable-5-gradient)"
                 d="M7.980172272802396,-6.0263463637925625A10,10,0,0,1,8.951632913550624,-4.457383557765382L83.2817899720085,-50.47913885020491A97.38583059151881,97.38583059151881,0,0,0,82.30896020616869,-52.05031286917822"
                 tabindex="0"
                 value="12"
@@ -5513,7 +5513,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-5-gradient"
+                          id="radialbar-resizable-5-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5536,7 +5536,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-6-gradient)"
+          <path fill="url(#radialbar-resizable-6-gradient)"
                 d="M8.951632913550624,-4.457383557765382A10,10,0,0,1,9.61825643172819,-2.7366299007208283L122.99250872044406,-46.65664795772937A131.5446692192428,131.5446692192428,0,0,0,122.32494117202116,-48.37983843773731"
                 tabindex="0"
                 value="22"
@@ -5552,7 +5552,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-6-gradient"
+                          id="radialbar-resizable-6-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5575,7 +5575,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-7-gradient)"
+          <path fill="url(#radialbar-resizable-7-gradient)"
                 d="M9.618256431728192,-2.7366299007208275A10,10,0,0,1,9.957341762950346,-0.9226835946330186L103.48556813683132,-18.40481424511655A105.10946674776731,105.10946674776731,0,0,0,103.14600419549842,-20.22132088915619"
                 tabindex="0"
                 value="14"
@@ -5591,7 +5591,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-7-gradient"
+                          id="radialbar-resizable-7-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5614,7 +5614,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-8-gradient)"
+          <path fill="url(#radialbar-resizable-8-gradient)"
                 d="M9.957341762950346,-0.9226835946330194A10,10,0,0,1,9.957341762950344,0.9226835946330203L29.684111969872223,0.9238487755517316A29.698484809834994,29.698484809834994,0,0,0,29.684111969872223,-0.9238487755517292"
                 tabindex="0"
                 value="1"
@@ -5630,7 +5630,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-8-gradient"
+                          id="radialbar-resizable-8-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5653,7 +5653,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-9-gradient)"
+          <path fill="url(#radialbar-resizable-9-gradient)"
                 d="M9.957341762950346,0.9226835946330194A10,10,0,0,1,9.61825643172819,2.7366299007208283L160.41067786505045,30.92595070284862A163.3646228532971,163.3646228532971,0,0,0,160.75024436940632,29.109430347847002"
                 tabindex="0"
                 value="34"
@@ -5669,7 +5669,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-9-gradient"
+                          id="radialbar-resizable-9-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5692,7 +5692,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-10-gradient)"
+          <path fill="url(#radialbar-resizable-10-gradient)"
                 d="M9.61825643172819,2.7366299007208292A10,10,0,0,1,8.951632913550622,4.457383557765383L151.996752713737,59.874762333382876A163.3646228532971,163.3646228532971,0,0,0,152.66432219240806,58.15156687083009"
                 tabindex="0"
                 value="34"
@@ -5708,7 +5708,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-10-gradient"
+                          id="radialbar-resizable-10-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5731,7 +5731,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-11-gradient)"
+          <path fill="url(#radialbar-resizable-11-gradient)"
                 d="M8.951632913550624,4.457383557765382A10,10,0,0,1,7.980172272802395,6.026346363792564L113.85165402579156,71.58072977828222A134.484199815443,134.484199815443,0,0,0,114.82449073382006,70.0095445472892"
                 tabindex="0"
                 value="23"
@@ -5747,7 +5747,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-11-gradient"
+                          id="radialbar-resizable-11-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5770,7 +5770,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-12-gradient)"
+          <path fill="url(#radialbar-resizable-12-gradient)"
                 d="M7.980172272802396,6.0263463637925625A10,10,0,0,1,6.736956436465572,7.390089172206591L142.7436128311186,131.37831250217715A194,194,0,0,0,143.98859476217905,130.01263238013826"
                 tabindex="0"
                 value="48"
@@ -5786,7 +5786,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-12-gradient"
+                          id="radialbar-resizable-12-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5809,7 +5809,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-13-gradient)"
+          <path fill="url(#radialbar-resizable-13-gradient)"
                 d="M6.736956436465573,7.39008917220659A10,10,0,0,1,5.26432162877356,8.50217135729614L57.948077876975994,78.26889720932529A97.38583059151881,97.38583059151881,0,0,0,59.422788138043416,77.15524771459948"
                 tabindex="0"
                 value="12"
@@ -5825,7 +5825,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-13-gradient"
+                          id="radialbar-resizable-13-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5848,7 +5848,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-14-gradient)"
+          <path fill="url(#radialbar-resizable-14-gradient)"
                 d="M5.264321628773557,8.502171357296142A10,10,0,0,1,3.6124166618715288,9.324722294043559L68.7154111661438,140.07209667977347A156.0192295840484,156.0192295840484,0,0,0,70.36965938996224,139.248378939723"
                 tabindex="0"
                 value="31"
@@ -5864,7 +5864,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-14-gradient"
+                          id="radialbar-resizable-14-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5887,7 +5887,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-15-gradient)"
+          <path fill="url(#radialbar-resizable-15-gradient)"
                 d="M3.6124166618715288,9.324722294043559A10,10,0,0,1,1.8374951781657032,9.829730996839018L49.36786557179789,176.88644337225196A183.64639936573764,183.64639936573764,0,0,0,51.14530770459885,176.38071748295476"
                 tabindex="0"
                 value="43"
@@ -5903,7 +5903,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-15-gradient"
+                          id="radialbar-resizable-15-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5926,7 +5926,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-16-gradient)"
+          <path fill="url(#radialbar-resizable-16-gradient)"
                 d="M1.8374951781657032,9.829730996839018A10,10,0,0,1,6.123233995736766e-16,10L13.704744821683825,157.9119373871796A158.50552040859648,158.50552040859648,0,0,0,15.544846854627247,157.74142682334968"
                 tabindex="0"
                 value="32"
@@ -5942,7 +5942,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-16-gradient"
+                          id="radialbar-resizable-16-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -5965,7 +5965,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-17-gradient)"
+          <path fill="url(#radialbar-resizable-17-gradient)"
                 d="M6.123233995736766e-16,10A10,10,0,0,1,-1.8374951781657018,9.829730996839018L-18.25303805357204,186.96744797374447A187.85632808079689,187.85632808079689,0,0,0,-16.412933018402285,187.1379588157716"
                 tabindex="0"
                 value="45"
@@ -5981,7 +5981,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-17-gradient"
+                          id="radialbar-resizable-17-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6004,7 +6004,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-18-gradient)"
+          <path fill="url(#radialbar-resizable-18-gradient)"
                 d="M-1.8374951781657018,9.829730996839018A10,10,0,0,1,-3.6124166618715274,9.324722294043559L-47.51847384850506,163.63372098412034A170.39366185395514,170.39366185395514,0,0,0,-45.741032927621625,164.13944652859726"
                 tabindex="0"
                 value="37"
@@ -6020,7 +6020,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-18-gradient"
+                          id="radialbar-resizable-18-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6043,7 +6043,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-19-gradient)"
+          <path fill="url(#radialbar-resizable-19-gradient)"
                 d="M-3.6124166618715314,9.324722294043557A10,10,0,0,1,-5.264321628773559,8.502171357296142L-29.050280430517713,56.26794120019214A63.32456079595026,63.32456079595026,0,0,0,-27.396081237384436,57.09163452586231"
                 tabindex="0"
                 value="5"
@@ -6059,7 +6059,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-19-gradient"
+                          id="radialbar-resizable-19-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6082,7 +6082,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-20-gradient)"
+          <path fill="url(#radialbar-resizable-20-gradient)"
                 d="M-5.264321628773559,8.502171357296142A10,10,0,0,1,-6.736956436465572,7.390089172206591L-25.313763059849116,31.98770700987831A40.792156108742276,40.792156108742276,0,0,0,-23.83915677946536,33.10127798203675"
                 tabindex="0"
                 value="2"
@@ -6098,7 +6098,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-20-gradient"
+                          id="radialbar-resizable-20-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6121,7 +6121,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-21-gradient)"
+          <path fill="url(#radialbar-resizable-21-gradient)"
                 d="M-6.736956436465572,7.390089172206591A10,10,0,0,1,-7.980172272802395,6.026346363792564L-114.05288674655597,102.72263151213214A153.49267083479916,153.49267083479916,0,0,0,-112.80790762774974,104.08830854927504"
                 tabindex="0"
                 value="30"
@@ -6137,7 +6137,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-21-gradient"
+                          id="radialbar-resizable-21-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6160,7 +6160,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-22-gradient)"
+          <path fill="url(#radialbar-resizable-22-gradient)"
                 d="M-7.980172272802395,6.026346363792564A10,10,0,0,1,-8.951632913550622,4.457383557765383L-95.96525686180156,58.33240502026679A112.30316113093166,112.30316113093166,0,0,0,-94.99242347585115,59.90358488591948"
                 tabindex="0"
                 value="16"
@@ -6176,7 +6176,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-22-gradient"
+                          id="radialbar-resizable-22-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6199,7 +6199,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-23-gradient)"
+          <path fill="url(#radialbar-resizable-23-gradient)"
                 d="M-8.951632913550625,4.45738355776538A10,10,0,0,1,-9.618256431728192,2.7366299007208266L-171.57678502251295,65.4782929018341A183.64639936573764,183.64639936573764,0,0,0,-170.90921480106803,67.20149028170715"
                 tabindex="0"
                 value="43"
@@ -6215,7 +6215,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-23-gradient"
+                          id="radialbar-resizable-23-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6238,7 +6238,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-24-gradient)"
+          <path fill="url(#radialbar-resizable-24-gradient)"
                 d="M-9.61825643172819,2.7366299007208306A10,10,0,0,1,-9.957341762950344,0.922683594633023L-83.21295312484189,14.615212357091005A84.4866853415377,84.4866853415377,0,0,0,-82.8733915791961,16.431706185336648"
                 tabindex="0"
                 value="9"
@@ -6254,7 +6254,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-24-gradient"
+                          id="radialbar-resizable-24-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6277,7 +6277,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-25-gradient)"
+          <path fill="url(#radialbar-resizable-25-gradient)"
                 d="M-9.957341762950346,0.9226835946330185A10,10,0,0,1,-9.957341762950344,-0.9226835946330205L-69.21810658127102,-0.9239704020185164A69.22427319950712,69.22427319950712,0,0,0,-69.21810658127102,0.9239704020185027"
                 tabindex="0"
                 value="6"
@@ -6293,7 +6293,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-25-gradient"
+                          id="radialbar-resizable-25-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6316,7 +6316,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-26-gradient)"
+          <path fill="url(#radialbar-resizable-26-gradient)"
                 d="M-9.957341762950346,-0.9226835946330161A10,10,0,0,1,-9.618256431728192,-2.736629900720824L-162.7463949673948,-31.36257204243178A165.74076143182157,165.74076143182157,0,0,0,-163.08596152329116,-29.546051411712963"
                 tabindex="0"
                 value="35"
@@ -6332,7 +6332,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-26-gradient"
+                          id="radialbar-resizable-26-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6355,7 +6355,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-27-gradient)"
+          <path fill="url(#radialbar-resizable-27-gradient)"
                 d="M-9.61825643172819,-2.7366299007208283A10,10,0,0,1,-8.951632913550624,-4.4573835577653815L-130.37589520255995,-51.498795618257994A140.17845768876188,140.17845768876188,0,0,0,-131.04346340638278,-49.77560344646783"
                 tabindex="0"
                 value="25"
@@ -6371,7 +6371,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-27-gradient"
+                          id="radialbar-resizable-27-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6394,7 +6394,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-28-gradient)"
+          <path fill="url(#radialbar-resizable-28-gradient)"
                 d="M-8.951632913550622,-4.457383557765386A10,10,0,0,1,-7.980172272802394,-6.026346363792566L-160.99026481704206,-100.76772615345979A189.92630149613296,189.92630149613296,0,0,0,-161.96310534147443,-99.19653475876291"
                 tabindex="0"
                 value="46"
@@ -6410,7 +6410,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-28-gradient"
+                          id="radialbar-resizable-28-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6433,7 +6433,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-29-gradient)"
+          <path fill="url(#radialbar-resizable-29-gradient)"
                 d="M-7.980172272802396,-6.026346363792562A10,10,0,0,1,-6.736956436465574,-7.39008917220659L-120.10349195732995,-110.73911332341245A163.3646228532971,163.3646228532971,0,0,0,-121.34847195744734,-109.37343531951721"
                 tabindex="0"
                 value="34"
@@ -6449,7 +6449,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-29-gradient"
+                          id="radialbar-resizable-29-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6472,7 +6472,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-30-gradient)"
+          <path fill="url(#radialbar-resizable-30-gradient)"
                 d="M-6.7369564364655705,-7.390089172206592A10,10,0,0,1,-5.264321628773554,-8.502171357296145L-80.30556355880417,-107.87500387718583A134.484199815443,134.484199815443,0,0,0,-81.7802843435185,-106.76134643537078"
                 tabindex="0"
                 value="23"
@@ -6488,7 +6488,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-30-gradient"
+                          id="radialbar-resizable-30-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6511,7 +6511,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-31-gradient)"
+          <path fill="url(#radialbar-resizable-31-gradient)"
                 d="M-5.264321628773562,-8.50217135729614A10,10,0,0,1,-3.6124166618715297,-9.324722294043559A10,10,0,0,0,-5.264321628773562,-8.50217135729614"
                 tabindex="0"
                 value="0"
@@ -6527,7 +6527,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-31-gradient"
+                          id="radialbar-resizable-31-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6550,7 +6550,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-32-gradient)"
+          <path fill="url(#radialbar-resizable-32-gradient)"
                 d="M-3.6124166618715297,-9.324722294043559A10,10,0,0,1,-1.8374951781656998,-9.829730996839018L-27.874746152337394,-101.34593493052769A105.10946674776731,105.10946674776731,0,0,0,-29.65217289147504,-100.84021342110535"
                 tabindex="0"
                 value="14"
@@ -6566,7 +6566,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-32-gradient"
+                          id="radialbar-resizable-32-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -6589,7 +6589,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
                 opacity="0"
           >
           </path>
-          <path fill="url(#radialbar-ref-5-33-gradient)"
+          <path fill="url(#radialbar-resizable-33-gradient)"
                 d="M-1.8374951781656998,-9.829730996839018A10,10,0,0,1,7.044813998280222e-15,-10L-3.642521968123435,-49.322733437145786A49.457052075512955,49.457052075512955,0,0,0,-5.482527376797717,-49.15223182687296"
                 tabindex="0"
                 value="3"
@@ -6605,7 +6605,7 @@ exports[`Charts/Bar Chart/Radial Resizable smoke-test 1`] = `
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="radialbar-ref-5-33-gradient"
+                          id="radialbar-resizable-33-gradient"
                           x1="10%"
                           x2="10%"
                           y1="100%"

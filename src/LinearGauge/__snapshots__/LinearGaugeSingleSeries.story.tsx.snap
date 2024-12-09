@@ -28,7 +28,7 @@ exports[`Charts/Gauge/Linear/Single-Series AutoSize smoke-test 1`] = `
                   role="graphics-document"
                   height="20px"
                   width="230px"
-                  fill="url(#gradient-linear-gauge-series-ref-3-bar-undefined-0)"
+                  fill="url(#gradient-linear-gauge-series-auto-size-bar-undefined-0)"
                   x="0"
                   y="0"
                   style="cursor: auto;"
@@ -36,7 +36,7 @@ exports[`Charts/Gauge/Linear/Single-Series AutoSize smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-linear-gauge-series-ref-3-bar-undefined-0"
+                          id="gradient-linear-gauge-series-auto-size-bar-undefined-0"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -92,7 +92,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
                 role="graphics-document"
                 height="15px"
                 width="45px"
-                fill="url(#gradient-linear-gauge-series-ref-7-bar-undefined-0)"
+                fill="url(#gradient-linear-gauge-series-multiple-gauges-1-bar-undefined-0)"
                 x="0"
                 y="0"
                 style="cursor: auto;"
@@ -100,7 +100,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
-                        id="gradient-linear-gauge-series-ref-7-bar-undefined-0"
+                        id="gradient-linear-gauge-series-multiple-gauges-1-bar-undefined-0"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -147,7 +147,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
                 role="graphics-document"
                 height="15px"
                 width="105px"
-                fill="url(#gradient-linear-gauge-series-ref-8-bar-undefined-0)"
+                fill="url(#gradient-linear-gauge-series-multiple-gauges-2-bar-undefined-0)"
                 x="45"
                 y="0"
                 style="cursor: auto;"
@@ -155,7 +155,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
-                        id="gradient-linear-gauge-series-ref-8-bar-undefined-0"
+                        id="gradient-linear-gauge-series-multiple-gauges-2-bar-undefined-0"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -202,7 +202,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
                 role="graphics-document"
                 height="15px"
                 width="15px"
-                fill="url(#gradient-linear-gauge-series-ref-9-bar-undefined-0)"
+                fill="url(#gradient-linear-gauge-series-multiple-gauges-3-bar-undefined-0)"
                 x="150"
                 y="0"
                 style="cursor: auto;"
@@ -210,7 +210,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
-                        id="gradient-linear-gauge-series-ref-9-bar-undefined-0"
+                        id="gradient-linear-gauge-series-multiple-gauges-3-bar-undefined-0"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -257,7 +257,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
                 role="graphics-document"
                 height="15px"
                 width="135px"
-                fill="url(#gradient-linear-gauge-series-ref-10-bar-undefined-0)"
+                fill="url(#gradient-linear-gauge-series-multiple-gauges-4-bar-undefined-0)"
                 x="165"
                 y="0"
                 style="cursor: auto;"
@@ -265,7 +265,7 @@ exports[`Charts/Gauge/Linear/Single-Series MultipleGauges smoke-test 1`] = `
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
-                        id="gradient-linear-gauge-series-ref-10-bar-undefined-0"
+                        id="gradient-linear-gauge-series-multiple-gauges-4-bar-undefined-0"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -316,7 +316,7 @@ exports[`Charts/Gauge/Linear/Single-Series NonZeroStart smoke-test 1`] = `
                 role="graphics-document"
                 height="30px"
                 width="195px"
-                fill="url(#gradient-linear-gauge-series-ref-5-bar-undefined-0)"
+                fill="url(#gradient-linear-gauge-series-non-zero-start-bar-undefined-0)"
                 x="45"
                 y="0"
                 style="cursor: auto;"
@@ -324,7 +324,7 @@ exports[`Charts/Gauge/Linear/Single-Series NonZeroStart smoke-test 1`] = `
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
-                        id="gradient-linear-gauge-series-ref-5-bar-undefined-0"
+                        id="gradient-linear-gauge-series-non-zero-start-bar-undefined-0"
                         y1="0%"
                         y2="0%"
                         x1="0%"
@@ -378,7 +378,7 @@ exports[`Charts/Gauge/Linear/Single-Series Simple smoke-test 1`] = `
                 role="graphics-document"
                 height="30px"
                 width="240px"
-                fill="url(#gradient-linear-gauge-series-ref-1-bar-undefined-0)"
+                fill="url(#gradient-linear-gauge-series-simple-bar-undefined-0)"
                 x="0"
                 y="0"
                 style="cursor: auto;"
@@ -386,7 +386,7 @@ exports[`Charts/Gauge/Linear/Single-Series Simple smoke-test 1`] = `
           </rect>
         </g>
         <linearGradient spreadmethod="pad"
-                        id="gradient-linear-gauge-series-ref-1-bar-undefined-0"
+                        id="gradient-linear-gauge-series-simple-bar-undefined-0"
                         y1="0%"
                         y2="0%"
                         x1="0%"

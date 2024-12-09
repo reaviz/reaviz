@@ -11,7 +11,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
          tabindex="0"
     >
       <g transform="translate(0, 0)">
-        <linearGradient id="sankey-ref-6-gradient-0"
+        <linearGradient id="sankey-autosize-gradient-0"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -27,7 +27,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-0)"
+                stroke="url(#sankey-autosize-gradient-0)"
                 stroke-opacity="0.35"
                 aria-label="Agricultural 'waste' → Bio-conversion: 124.729"
                 role="graphics-document"
@@ -36,7 +36,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-1"
+        <linearGradient id="sankey-autosize-gradient-1"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="288.42857142857144"
@@ -52,7 +52,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-1)"
+                stroke="url(#sankey-autosize-gradient-1)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Liquid: 0.597"
                 role="graphics-document"
@@ -61,7 +61,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-2"
+        <linearGradient id="sankey-autosize-gradient-2"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="1007"
@@ -77,7 +77,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-2)"
+                stroke="url(#sankey-autosize-gradient-2)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Losses: 26.862"
                 role="graphics-document"
@@ -86,7 +86,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-3"
+        <linearGradient id="sankey-autosize-gradient-3"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="288.42857142857144"
@@ -102,7 +102,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-3)"
+                stroke="url(#sankey-autosize-gradient-3)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Solid: 280.322"
                 role="graphics-document"
@@ -111,7 +111,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-4"
+        <linearGradient id="sankey-autosize-gradient-4"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="288.42857142857144"
@@ -127,7 +127,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-4)"
+                stroke="url(#sankey-autosize-gradient-4)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Gas: 81.144"
                 role="graphics-document"
@@ -136,7 +136,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-5"
+        <linearGradient id="sankey-autosize-gradient-5"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="288.42857142857144"
@@ -152,7 +152,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-5)"
+                stroke="url(#sankey-autosize-gradient-5)"
                 stroke-opacity="0.35"
                 aria-label="Biofuel imports → Liquid: 35"
                 role="graphics-document"
@@ -161,7 +161,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-6"
+        <linearGradient id="sankey-autosize-gradient-6"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="288.42857142857144"
@@ -177,7 +177,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-6)"
+                stroke="url(#sankey-autosize-gradient-6)"
                 stroke-opacity="0.35"
                 aria-label="Biomass imports → Solid: 35"
                 role="graphics-document"
@@ -186,7 +186,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-7"
+        <linearGradient id="sankey-autosize-gradient-7"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -202,7 +202,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-7)"
+                stroke="url(#sankey-autosize-gradient-7)"
                 stroke-opacity="0.35"
                 aria-label="Coal imports → Coal: 11.606"
                 role="graphics-document"
@@ -211,7 +211,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-8"
+        <linearGradient id="sankey-autosize-gradient-8"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -227,7 +227,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-8)"
+                stroke="url(#sankey-autosize-gradient-8)"
                 stroke-opacity="0.35"
                 aria-label="Coal reserves → Coal: 63.965"
                 role="graphics-document"
@@ -236,7 +236,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-9"
+        <linearGradient id="sankey-autosize-gradient-9"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="288.42857142857144"
@@ -252,7 +252,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-9)"
+                stroke="url(#sankey-autosize-gradient-9)"
                 stroke-opacity="0.35"
                 aria-label="Coal → Solid: 75.571"
                 role="graphics-document"
@@ -261,7 +261,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-10"
+        <linearGradient id="sankey-autosize-gradient-10"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -277,7 +277,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-10)"
+                stroke="url(#sankey-autosize-gradient-10)"
                 stroke-opacity="0.35"
                 aria-label="District heating → Industry: 10.639"
                 role="graphics-document"
@@ -286,7 +286,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-11"
+        <linearGradient id="sankey-autosize-gradient-11"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -302,7 +302,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-11)"
+                stroke="url(#sankey-autosize-gradient-11)"
                 stroke-opacity="0.35"
                 aria-label="District heating → Heating and cooling - commercial: 22.505"
                 role="graphics-document"
@@ -311,7 +311,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-12"
+        <linearGradient id="sankey-autosize-gradient-12"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -327,7 +327,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-12)"
+                stroke="url(#sankey-autosize-gradient-12)"
                 stroke-opacity="0.35"
                 aria-label="District heating → Heating and cooling - homes: 46.184"
                 role="graphics-document"
@@ -336,7 +336,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-13"
+        <linearGradient id="sankey-autosize-gradient-13"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -352,7 +352,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-13)"
+                stroke="url(#sankey-autosize-gradient-13)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Over generation / exports: 104.453"
                 role="graphics-document"
@@ -361,7 +361,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-14"
+        <linearGradient id="sankey-autosize-gradient-14"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -377,7 +377,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-14)"
+                stroke="url(#sankey-autosize-gradient-14)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Heating and cooling - homes: 113.726"
                 role="graphics-document"
@@ -386,7 +386,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-15"
+        <linearGradient id="sankey-autosize-gradient-15"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="719.5714285714287"
@@ -402,7 +402,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-15)"
+                stroke="url(#sankey-autosize-gradient-15)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → H2 conversion: 27.14"
                 role="graphics-document"
@@ -411,7 +411,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-16"
+        <linearGradient id="sankey-autosize-gradient-16"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -427,7 +427,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-16)"
+                stroke="url(#sankey-autosize-gradient-16)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Industry: 342.165"
                 role="graphics-document"
@@ -436,7 +436,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-17"
+        <linearGradient id="sankey-autosize-gradient-17"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -452,7 +452,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-17)"
+                stroke="url(#sankey-autosize-gradient-17)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Road transport: 37.797"
                 role="graphics-document"
@@ -461,7 +461,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-18"
+        <linearGradient id="sankey-autosize-gradient-18"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -477,7 +477,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-18)"
+                stroke="url(#sankey-autosize-gradient-18)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Agriculture: 4.412"
                 role="graphics-document"
@@ -486,7 +486,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-19"
+        <linearGradient id="sankey-autosize-gradient-19"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -502,7 +502,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-19)"
+                stroke="url(#sankey-autosize-gradient-19)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Heating and cooling - commercial: 40.858"
                 role="graphics-document"
@@ -511,7 +511,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-20"
+        <linearGradient id="sankey-autosize-gradient-20"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -527,7 +527,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-20)"
+                stroke="url(#sankey-autosize-gradient-20)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Losses: 56.691"
                 role="graphics-document"
@@ -536,7 +536,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-21"
+        <linearGradient id="sankey-autosize-gradient-21"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -552,7 +552,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-21)"
+                stroke="url(#sankey-autosize-gradient-21)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Rail transport: 7.863"
                 role="graphics-document"
@@ -561,7 +561,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-22"
+        <linearGradient id="sankey-autosize-gradient-22"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -577,7 +577,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-22)"
+                stroke="url(#sankey-autosize-gradient-22)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Lighting &amp; appliances - commercial: 90.008"
                 role="graphics-document"
@@ -586,7 +586,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-23"
+        <linearGradient id="sankey-autosize-gradient-23"
                         gradientunits="userSpaceOnUse"
                         x1="590.8571428571429"
                         x2="1007"
@@ -602,7 +602,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-23)"
+                stroke="url(#sankey-autosize-gradient-23)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Lighting &amp; appliances - homes: 93.494"
                 role="graphics-document"
@@ -611,7 +611,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-24"
+        <linearGradient id="sankey-autosize-gradient-24"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -627,7 +627,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-24)"
+                stroke="url(#sankey-autosize-gradient-24)"
                 stroke-opacity="0.35"
                 aria-label="Gas imports → Ngas: 40.719"
                 role="graphics-document"
@@ -636,7 +636,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-25"
+        <linearGradient id="sankey-autosize-gradient-25"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -652,7 +652,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-25)"
+                stroke="url(#sankey-autosize-gradient-25)"
                 stroke-opacity="0.35"
                 aria-label="Gas reserves → Ngas: 82.233"
                 role="graphics-document"
@@ -661,7 +661,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-26"
+        <linearGradient id="sankey-autosize-gradient-26"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -677,7 +677,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-26)"
+                stroke="url(#sankey-autosize-gradient-26)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Heating and cooling - commercial: 0.129"
                 role="graphics-document"
@@ -686,7 +686,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-27"
+        <linearGradient id="sankey-autosize-gradient-27"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -702,7 +702,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-27)"
+                stroke="url(#sankey-autosize-gradient-27)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Losses: 1.401"
                 role="graphics-document"
@@ -711,7 +711,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-28"
+        <linearGradient id="sankey-autosize-gradient-28"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="432.14285714285717"
@@ -727,7 +727,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-28)"
+                stroke="url(#sankey-autosize-gradient-28)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Thermal generation: 151.891"
                 role="graphics-document"
@@ -736,7 +736,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-29"
+        <linearGradient id="sankey-autosize-gradient-29"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -752,7 +752,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-29)"
+                stroke="url(#sankey-autosize-gradient-29)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Agriculture: 2.096"
                 role="graphics-document"
@@ -761,7 +761,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-30"
+        <linearGradient id="sankey-autosize-gradient-30"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -777,7 +777,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-30)"
+                stroke="url(#sankey-autosize-gradient-30)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Industry: 48.58"
                 role="graphics-document"
@@ -786,7 +786,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-31"
+        <linearGradient id="sankey-autosize-gradient-31"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="575.8571428571429"
@@ -802,7 +802,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-31)"
+                stroke="url(#sankey-autosize-gradient-31)"
                 stroke-opacity="0.35"
                 aria-label="Geothermal → Electricity grid: 7.013"
                 role="graphics-document"
@@ -811,7 +811,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-32"
+        <linearGradient id="sankey-autosize-gradient-32"
                         gradientunits="userSpaceOnUse"
                         x1="734.5714285714287"
                         x2="863.2857142857143"
@@ -827,7 +827,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-32)"
+                stroke="url(#sankey-autosize-gradient-32)"
                 stroke-opacity="0.35"
                 aria-label="H2 conversion → H2: 20.897"
                 role="graphics-document"
@@ -836,7 +836,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-33"
+        <linearGradient id="sankey-autosize-gradient-33"
                         gradientunits="userSpaceOnUse"
                         x1="734.5714285714287"
                         x2="1007"
@@ -852,7 +852,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-33)"
+                stroke="url(#sankey-autosize-gradient-33)"
                 stroke-opacity="0.35"
                 aria-label="H2 conversion → Losses: 6.242"
                 role="graphics-document"
@@ -861,7 +861,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-34"
+        <linearGradient id="sankey-autosize-gradient-34"
                         gradientunits="userSpaceOnUse"
                         x1="878.2857142857143"
                         x2="1007"
@@ -877,7 +877,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-34)"
+                stroke="url(#sankey-autosize-gradient-34)"
                 stroke-opacity="0.35"
                 aria-label="H2 → Road transport: 20.897"
                 role="graphics-document"
@@ -886,7 +886,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-35"
+        <linearGradient id="sankey-autosize-gradient-35"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="575.8571428571429"
@@ -902,7 +902,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-35)"
+                stroke="url(#sankey-autosize-gradient-35)"
                 stroke-opacity="0.35"
                 aria-label="Hydro → Electricity grid: 6.995"
                 role="graphics-document"
@@ -911,7 +911,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-36"
+        <linearGradient id="sankey-autosize-gradient-36"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -927,7 +927,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-36)"
+                stroke="url(#sankey-autosize-gradient-36)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Industry: 121.066"
                 role="graphics-document"
@@ -936,7 +936,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-37"
+        <linearGradient id="sankey-autosize-gradient-37"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -952,7 +952,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-37)"
+                stroke="url(#sankey-autosize-gradient-37)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → International shipping: 128.69"
                 role="graphics-document"
@@ -961,7 +961,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-38"
+        <linearGradient id="sankey-autosize-gradient-38"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -977,7 +977,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-38)"
+                stroke="url(#sankey-autosize-gradient-38)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Road transport: 135.835"
                 role="graphics-document"
@@ -986,7 +986,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-39"
+        <linearGradient id="sankey-autosize-gradient-39"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1002,7 +1002,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-39)"
+                stroke="url(#sankey-autosize-gradient-39)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Domestic aviation: 14.458"
                 role="graphics-document"
@@ -1011,7 +1011,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-40"
+        <linearGradient id="sankey-autosize-gradient-40"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1027,7 +1027,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-40)"
+                stroke="url(#sankey-autosize-gradient-40)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → International aviation: 206.267"
                 role="graphics-document"
@@ -1036,7 +1036,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-41"
+        <linearGradient id="sankey-autosize-gradient-41"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1052,7 +1052,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-41)"
+                stroke="url(#sankey-autosize-gradient-41)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Agriculture: 3.64"
                 role="graphics-document"
@@ -1061,7 +1061,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-42"
+        <linearGradient id="sankey-autosize-gradient-42"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1077,7 +1077,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-42)"
+                stroke="url(#sankey-autosize-gradient-42)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → National navigation: 33.218"
                 role="graphics-document"
@@ -1086,7 +1086,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-43"
+        <linearGradient id="sankey-autosize-gradient-43"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1102,7 +1102,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-43)"
+                stroke="url(#sankey-autosize-gradient-43)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Rail transport: 4.413"
                 role="graphics-document"
@@ -1111,7 +1111,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-44"
+        <linearGradient id="sankey-autosize-gradient-44"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1127,7 +1127,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-44)"
+                stroke="url(#sankey-autosize-gradient-44)"
                 stroke-opacity="0.35"
                 aria-label="Marine algae → Bio-conversion: 4.375"
                 role="graphics-document"
@@ -1136,7 +1136,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-45"
+        <linearGradient id="sankey-autosize-gradient-45"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="288.42857142857144"
@@ -1152,7 +1152,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-45)"
+                stroke="url(#sankey-autosize-gradient-45)"
                 stroke-opacity="0.35"
                 aria-label="Ngas → Gas: 122.952"
                 role="graphics-document"
@@ -1161,7 +1161,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-46"
+        <linearGradient id="sankey-autosize-gradient-46"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="432.14285714285717"
@@ -1177,7 +1177,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-46)"
+                stroke="url(#sankey-autosize-gradient-46)"
                 stroke-opacity="0.35"
                 aria-label="Nuclear → Thermal generation: 839.978"
                 role="graphics-document"
@@ -1186,7 +1186,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-47"
+        <linearGradient id="sankey-autosize-gradient-47"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1202,7 +1202,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-47)"
+                stroke="url(#sankey-autosize-gradient-47)"
                 stroke-opacity="0.35"
                 aria-label="Oil imports → Oil: 504.287"
                 role="graphics-document"
@@ -1211,7 +1211,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-48"
+        <linearGradient id="sankey-autosize-gradient-48"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1227,7 +1227,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-48)"
+                stroke="url(#sankey-autosize-gradient-48)"
                 stroke-opacity="0.35"
                 aria-label="Oil reserves → Oil: 107.703"
                 role="graphics-document"
@@ -1236,7 +1236,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-49"
+        <linearGradient id="sankey-autosize-gradient-49"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="288.42857142857144"
@@ -1252,7 +1252,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-49)"
+                stroke="url(#sankey-autosize-gradient-49)"
                 stroke-opacity="0.35"
                 aria-label="Oil → Liquid: 611.99"
                 role="graphics-document"
@@ -1261,7 +1261,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-50"
+        <linearGradient id="sankey-autosize-gradient-50"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="288.42857142857144"
@@ -1277,7 +1277,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-50)"
+                stroke="url(#sankey-autosize-gradient-50)"
                 stroke-opacity="0.35"
                 aria-label="Other waste → Solid: 56.587"
                 role="graphics-document"
@@ -1286,7 +1286,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-51"
+        <linearGradient id="sankey-autosize-gradient-51"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1302,7 +1302,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-51)"
+                stroke="url(#sankey-autosize-gradient-51)"
                 stroke-opacity="0.35"
                 aria-label="Other waste → Bio-conversion: 77.81"
                 role="graphics-document"
@@ -1311,7 +1311,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-52"
+        <linearGradient id="sankey-autosize-gradient-52"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="1007"
@@ -1327,7 +1327,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-52)"
+                stroke="url(#sankey-autosize-gradient-52)"
                 stroke-opacity="0.35"
                 aria-label="Pumped heat → Heating and cooling - homes: 193.026"
                 role="graphics-document"
@@ -1336,7 +1336,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-53"
+        <linearGradient id="sankey-autosize-gradient-53"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="1007"
@@ -1352,7 +1352,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-53)"
+                stroke="url(#sankey-autosize-gradient-53)"
                 stroke-opacity="0.35"
                 aria-label="Pumped heat → Heating and cooling - commercial: 70.672"
                 role="graphics-document"
@@ -1361,7 +1361,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-54"
+        <linearGradient id="sankey-autosize-gradient-54"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="575.8571428571429"
@@ -1377,7 +1377,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-54)"
+                stroke="url(#sankey-autosize-gradient-54)"
                 stroke-opacity="0.35"
                 aria-label="Solar PV → Electricity grid: 59.901"
                 role="graphics-document"
@@ -1386,7 +1386,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-55"
+        <linearGradient id="sankey-autosize-gradient-55"
                         gradientunits="userSpaceOnUse"
                         x1="159.71428571428572"
                         x2="1007"
@@ -1402,7 +1402,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-55)"
+                stroke="url(#sankey-autosize-gradient-55)"
                 stroke-opacity="0.35"
                 aria-label="Solar Thermal → Heating and cooling - homes: 19.263"
                 role="graphics-document"
@@ -1411,7 +1411,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-56"
+        <linearGradient id="sankey-autosize-gradient-56"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1427,7 +1427,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-56)"
+                stroke="url(#sankey-autosize-gradient-56)"
                 stroke-opacity="0.35"
                 aria-label="Solar → Solar Thermal: 19.263"
                 role="graphics-document"
@@ -1436,7 +1436,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-57"
+        <linearGradient id="sankey-autosize-gradient-57"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1452,7 +1452,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-57)"
+                stroke="url(#sankey-autosize-gradient-57)"
                 stroke-opacity="0.35"
                 aria-label="Solar → Solar PV: 59.901"
                 role="graphics-document"
@@ -1461,7 +1461,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-58"
+        <linearGradient id="sankey-autosize-gradient-58"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1477,7 +1477,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-58)"
+                stroke="url(#sankey-autosize-gradient-58)"
                 stroke-opacity="0.35"
                 aria-label="Solid → Agriculture: 0.882"
                 role="graphics-document"
@@ -1486,7 +1486,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-59"
+        <linearGradient id="sankey-autosize-gradient-59"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="432.14285714285717"
@@ -1502,7 +1502,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-59)"
+                stroke="url(#sankey-autosize-gradient-59)"
                 stroke-opacity="0.35"
                 aria-label="Solid → Thermal generation: 400.12"
                 role="graphics-document"
@@ -1511,7 +1511,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-60"
+        <linearGradient id="sankey-autosize-gradient-60"
                         gradientunits="userSpaceOnUse"
                         x1="303.42857142857144"
                         x2="1007"
@@ -1527,7 +1527,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-60)"
+                stroke="url(#sankey-autosize-gradient-60)"
                 stroke-opacity="0.35"
                 aria-label="Solid → Industry: 46.477"
                 role="graphics-document"
@@ -1536,7 +1536,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-61"
+        <linearGradient id="sankey-autosize-gradient-61"
                         gradientunits="userSpaceOnUse"
                         x1="447.14285714285717"
                         x2="575.8571428571429"
@@ -1552,7 +1552,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-61)"
+                stroke="url(#sankey-autosize-gradient-61)"
                 stroke-opacity="0.35"
                 aria-label="Thermal generation → Electricity grid: 525.531"
                 role="graphics-document"
@@ -1561,7 +1561,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-62"
+        <linearGradient id="sankey-autosize-gradient-62"
                         gradientunits="userSpaceOnUse"
                         x1="447.14285714285717"
                         x2="1007"
@@ -1577,7 +1577,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-62)"
+                stroke="url(#sankey-autosize-gradient-62)"
                 stroke-opacity="0.35"
                 aria-label="Thermal generation → Losses: 787.129"
                 role="graphics-document"
@@ -1586,7 +1586,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-63"
+        <linearGradient id="sankey-autosize-gradient-63"
                         gradientunits="userSpaceOnUse"
                         x1="447.14285714285717"
                         x2="575.8571428571429"
@@ -1602,7 +1602,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-63)"
+                stroke="url(#sankey-autosize-gradient-63)"
                 stroke-opacity="0.35"
                 aria-label="Thermal generation → District heating: 79.329"
                 role="graphics-document"
@@ -1611,7 +1611,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-64"
+        <linearGradient id="sankey-autosize-gradient-64"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="575.8571428571429"
@@ -1627,7 +1627,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-64)"
+                stroke="url(#sankey-autosize-gradient-64)"
                 stroke-opacity="0.35"
                 aria-label="Tidal → Electricity grid: 9.452"
                 role="graphics-document"
@@ -1636,7 +1636,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-65"
+        <linearGradient id="sankey-autosize-gradient-65"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="144.71428571428572"
@@ -1652,7 +1652,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-65)"
+                stroke="url(#sankey-autosize-gradient-65)"
                 stroke-opacity="0.35"
                 aria-label="UK land based bioenergy → Bio-conversion: 182.01"
                 role="graphics-document"
@@ -1661,7 +1661,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-66"
+        <linearGradient id="sankey-autosize-gradient-66"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="575.8571428571429"
@@ -1677,7 +1677,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-66)"
+                stroke="url(#sankey-autosize-gradient-66)"
                 stroke-opacity="0.35"
                 aria-label="Wave → Electricity grid: 19.013"
                 role="graphics-document"
@@ -1686,7 +1686,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-6-gradient-67"
+        <linearGradient id="sankey-autosize-gradient-67"
                         gradientunits="userSpaceOnUse"
                         x1="16"
                         x2="575.8571428571429"
@@ -1702,7 +1702,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-6-gradient-67)"
+                stroke="url(#sankey-autosize-gradient-67)"
                 stroke-opacity="0.35"
                 aria-label="Wind → Electricity grid: 289.366"
                 role="graphics-document"
@@ -2929,7 +2929,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
        tabindex="0"
   >
     <g transform="translate(0, 0)">
-      <linearGradient id="sankey-ref-4-gradient-0"
+      <linearGradient id="sankey-filtering-gradient-0"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="485"
@@ -2945,7 +2945,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-4-gradient-0)"
+              stroke="url(#sankey-filtering-gradient-0)"
               stroke-opacity="0.35"
               aria-label="A1 → B1: 8"
               role="graphics-document"
@@ -2954,7 +2954,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-4-gradient-1"
+      <linearGradient id="sankey-filtering-gradient-1"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="485"
@@ -2970,7 +2970,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-4-gradient-1)"
+              stroke="url(#sankey-filtering-gradient-1)"
               stroke-opacity="0.35"
               aria-label="A2 → B2: 4"
               role="graphics-document"
@@ -2979,7 +2979,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-4-gradient-2"
+      <linearGradient id="sankey-filtering-gradient-2"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="485"
@@ -2995,7 +2995,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-4-gradient-2)"
+              stroke="url(#sankey-filtering-gradient-2)"
               stroke-opacity="0.35"
               aria-label="A1 → B2: 2"
               role="graphics-document"
@@ -3122,7 +3122,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
          tabindex="0"
     >
       <g transform="translate(0, 0)">
-        <linearGradient id="sankey-ref-3-gradient-0"
+        <linearGradient id="sankey-fit-long-labels-gradient-0"
                         gradientunits="userSpaceOnUse"
                         x1="71"
                         x2="480"
@@ -3138,7 +3138,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-3-gradient-0)"
+                stroke="url(#sankey-fit-long-labels-gradient-0)"
                 stroke-opacity="0.35"
                 aria-label="A1A1A1A1A1 → B1B1B1B1B1: 8"
                 role="graphics-document"
@@ -3147,7 +3147,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-3-gradient-1"
+        <linearGradient id="sankey-fit-long-labels-gradient-1"
                         gradientunits="userSpaceOnUse"
                         x1="71"
                         x2="480"
@@ -3163,7 +3163,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-3-gradient-1)"
+                stroke="url(#sankey-fit-long-labels-gradient-1)"
                 stroke-opacity="0.35"
                 aria-label="A2A2A2A2A2 → B2B2B2B2B2: 4"
                 role="graphics-document"
@@ -3172,7 +3172,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-3-gradient-2"
+        <linearGradient id="sankey-fit-long-labels-gradient-2"
                         gradientunits="userSpaceOnUse"
                         x1="71"
                         x2="480"
@@ -3188,7 +3188,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-3-gradient-2)"
+                stroke="url(#sankey-fit-long-labels-gradient-2)"
                 stroke-opacity="0.35"
                 aria-label="A1A1A1A1A1 → B2B2B2B2B2: 2"
                 role="graphics-document"
@@ -3315,7 +3315,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
        tabindex="0"
   >
     <g transform="translate(0, 0)">
-      <linearGradient id="sankey-ref-7-gradient-0"
+      <linearGradient id="sankey-justification-gradient-0"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -3331,7 +3331,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-0)"
+              stroke="url(#sankey-justification-gradient-0)"
               stroke-opacity="0.35"
               aria-label="Agricultural 'waste' → Bio-conversion: 124.729"
               role="graphics-document"
@@ -3340,7 +3340,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-1"
+      <linearGradient id="sankey-justification-gradient-1"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -3356,7 +3356,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-1)"
+              stroke="url(#sankey-justification-gradient-1)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Liquid: 0.597"
               role="graphics-document"
@@ -3365,7 +3365,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-2"
+      <linearGradient id="sankey-justification-gradient-2"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="813.5714285714284"
@@ -3381,7 +3381,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-2)"
+              stroke="url(#sankey-justification-gradient-2)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Losses: 26.862"
               role="graphics-document"
@@ -3390,7 +3390,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-3"
+      <linearGradient id="sankey-justification-gradient-3"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -3406,7 +3406,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-3)"
+              stroke="url(#sankey-justification-gradient-3)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Solid: 280.322"
               role="graphics-document"
@@ -3415,7 +3415,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-4"
+      <linearGradient id="sankey-justification-gradient-4"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -3431,7 +3431,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-4)"
+              stroke="url(#sankey-justification-gradient-4)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Gas: 81.144"
               role="graphics-document"
@@ -3440,7 +3440,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-5"
+      <linearGradient id="sankey-justification-gradient-5"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="271.85714285714283"
@@ -3456,7 +3456,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-5)"
+              stroke="url(#sankey-justification-gradient-5)"
               stroke-opacity="0.35"
               aria-label="Biofuel imports → Liquid: 35"
               role="graphics-document"
@@ -3465,7 +3465,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-6"
+      <linearGradient id="sankey-justification-gradient-6"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="271.85714285714283"
@@ -3481,7 +3481,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-6)"
+              stroke="url(#sankey-justification-gradient-6)"
               stroke-opacity="0.35"
               aria-label="Biomass imports → Solid: 35"
               role="graphics-document"
@@ -3490,7 +3490,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-7"
+      <linearGradient id="sankey-justification-gradient-7"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -3506,7 +3506,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-7)"
+              stroke="url(#sankey-justification-gradient-7)"
               stroke-opacity="0.35"
               aria-label="Coal imports → Coal: 11.606"
               role="graphics-document"
@@ -3515,7 +3515,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-8"
+      <linearGradient id="sankey-justification-gradient-8"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -3531,7 +3531,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-8)"
+              stroke="url(#sankey-justification-gradient-8)"
               stroke-opacity="0.35"
               aria-label="Coal reserves → Coal: 63.965"
               role="graphics-document"
@@ -3540,7 +3540,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-9"
+      <linearGradient id="sankey-justification-gradient-9"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -3556,7 +3556,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-9)"
+              stroke="url(#sankey-justification-gradient-9)"
               stroke-opacity="0.35"
               aria-label="Coal → Solid: 75.571"
               role="graphics-document"
@@ -3565,7 +3565,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-10"
+      <linearGradient id="sankey-justification-gradient-10"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3581,7 +3581,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-10)"
+              stroke="url(#sankey-justification-gradient-10)"
               stroke-opacity="0.35"
               aria-label="District heating → Industry: 10.639"
               role="graphics-document"
@@ -3590,7 +3590,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-11"
+      <linearGradient id="sankey-justification-gradient-11"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3606,7 +3606,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-11)"
+              stroke="url(#sankey-justification-gradient-11)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - commercial: 22.505"
               role="graphics-document"
@@ -3615,7 +3615,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-12"
+      <linearGradient id="sankey-justification-gradient-12"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3631,7 +3631,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-12)"
+              stroke="url(#sankey-justification-gradient-12)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - homes: 46.184"
               role="graphics-document"
@@ -3640,7 +3640,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-13"
+      <linearGradient id="sankey-justification-gradient-13"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3656,7 +3656,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-13)"
+              stroke="url(#sankey-justification-gradient-13)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Over generation / exports: 104.453"
               role="graphics-document"
@@ -3665,7 +3665,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-14"
+      <linearGradient id="sankey-justification-gradient-14"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3681,7 +3681,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-14)"
+              stroke="url(#sankey-justification-gradient-14)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - homes: 113.726"
               role="graphics-document"
@@ -3690,7 +3690,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-15"
+      <linearGradient id="sankey-justification-gradient-15"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3706,7 +3706,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-15)"
+              stroke="url(#sankey-justification-gradient-15)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → H2 conversion: 27.14"
               role="graphics-document"
@@ -3715,7 +3715,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-16"
+      <linearGradient id="sankey-justification-gradient-16"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3731,7 +3731,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-16)"
+              stroke="url(#sankey-justification-gradient-16)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Industry: 342.165"
               role="graphics-document"
@@ -3740,7 +3740,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-17"
+      <linearGradient id="sankey-justification-gradient-17"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -3756,7 +3756,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-17)"
+              stroke="url(#sankey-justification-gradient-17)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Road transport: 37.797"
               role="graphics-document"
@@ -3765,7 +3765,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-18"
+      <linearGradient id="sankey-justification-gradient-18"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3781,7 +3781,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-18)"
+              stroke="url(#sankey-justification-gradient-18)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Agriculture: 4.412"
               role="graphics-document"
@@ -3790,7 +3790,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-19"
+      <linearGradient id="sankey-justification-gradient-19"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3806,7 +3806,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-19)"
+              stroke="url(#sankey-justification-gradient-19)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - commercial: 40.858"
               role="graphics-document"
@@ -3815,7 +3815,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-20"
+      <linearGradient id="sankey-justification-gradient-20"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="813.5714285714284"
@@ -3831,7 +3831,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-20)"
+              stroke="url(#sankey-justification-gradient-20)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Losses: 56.691"
               role="graphics-document"
@@ -3840,7 +3840,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-21"
+      <linearGradient id="sankey-justification-gradient-21"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3856,7 +3856,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-21)"
+              stroke="url(#sankey-justification-gradient-21)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Rail transport: 7.863"
               role="graphics-document"
@@ -3865,7 +3865,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-22"
+      <linearGradient id="sankey-justification-gradient-22"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3881,7 +3881,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-22)"
+              stroke="url(#sankey-justification-gradient-22)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - commercial: 90.008"
               role="graphics-document"
@@ -3890,7 +3890,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-23"
+      <linearGradient id="sankey-justification-gradient-23"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -3906,7 +3906,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-23)"
+              stroke="url(#sankey-justification-gradient-23)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - homes: 93.494"
               role="graphics-document"
@@ -3915,7 +3915,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-24"
+      <linearGradient id="sankey-justification-gradient-24"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -3931,7 +3931,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-24)"
+              stroke="url(#sankey-justification-gradient-24)"
               stroke-opacity="0.35"
               aria-label="Gas imports → Ngas: 40.719"
               role="graphics-document"
@@ -3940,7 +3940,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-25"
+      <linearGradient id="sankey-justification-gradient-25"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -3956,7 +3956,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-25)"
+              stroke="url(#sankey-justification-gradient-25)"
               stroke-opacity="0.35"
               aria-label="Gas reserves → Ngas: 82.233"
               role="graphics-document"
@@ -3965,7 +3965,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-26"
+      <linearGradient id="sankey-justification-gradient-26"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -3981,7 +3981,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-26)"
+              stroke="url(#sankey-justification-gradient-26)"
               stroke-opacity="0.35"
               aria-label="Gas → Heating and cooling - commercial: 0.129"
               role="graphics-document"
@@ -3990,7 +3990,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-27"
+      <linearGradient id="sankey-justification-gradient-27"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="813.5714285714284"
@@ -4006,7 +4006,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-27)"
+              stroke="url(#sankey-justification-gradient-27)"
               stroke-opacity="0.35"
               aria-label="Gas → Losses: 1.401"
               role="graphics-document"
@@ -4015,7 +4015,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-28"
+      <linearGradient id="sankey-justification-gradient-28"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -4031,7 +4031,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-28)"
+              stroke="url(#sankey-justification-gradient-28)"
               stroke-opacity="0.35"
               aria-label="Gas → Thermal generation: 151.891"
               role="graphics-document"
@@ -4040,7 +4040,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-29"
+      <linearGradient id="sankey-justification-gradient-29"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4056,7 +4056,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-29)"
+              stroke="url(#sankey-justification-gradient-29)"
               stroke-opacity="0.35"
               aria-label="Gas → Agriculture: 2.096"
               role="graphics-document"
@@ -4065,7 +4065,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-30"
+      <linearGradient id="sankey-justification-gradient-30"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4081,7 +4081,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-30)"
+              stroke="url(#sankey-justification-gradient-30)"
               stroke-opacity="0.35"
               aria-label="Gas → Industry: 48.58"
               role="graphics-document"
@@ -4090,7 +4090,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-31"
+      <linearGradient id="sankey-justification-gradient-31"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -4106,7 +4106,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-31)"
+              stroke="url(#sankey-justification-gradient-31)"
               stroke-opacity="0.35"
               aria-label="Geothermal → Electricity grid: 7.013"
               role="graphics-document"
@@ -4115,7 +4115,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-32"
+      <linearGradient id="sankey-justification-gradient-32"
                       gradientunits="userSpaceOnUse"
                       x1="693.1428571428571"
                       x2="813.5714285714284"
@@ -4131,7 +4131,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-32)"
+              stroke="url(#sankey-justification-gradient-32)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → H2: 20.897"
               role="graphics-document"
@@ -4140,7 +4140,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-33"
+      <linearGradient id="sankey-justification-gradient-33"
                       gradientunits="userSpaceOnUse"
                       x1="693.1428571428571"
                       x2="813.5714285714284"
@@ -4156,7 +4156,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-33)"
+              stroke="url(#sankey-justification-gradient-33)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → Losses: 6.242"
               role="graphics-document"
@@ -4165,7 +4165,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-34"
+      <linearGradient id="sankey-justification-gradient-34"
                       gradientunits="userSpaceOnUse"
                       x1="828.5714285714284"
                       x2="948.9999999999999"
@@ -4181,7 +4181,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-34)"
+              stroke="url(#sankey-justification-gradient-34)"
               stroke-opacity="0.35"
               aria-label="H2 → Road transport: 20.897"
               role="graphics-document"
@@ -4190,7 +4190,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-35"
+      <linearGradient id="sankey-justification-gradient-35"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -4206,7 +4206,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-35)"
+              stroke="url(#sankey-justification-gradient-35)"
               stroke-opacity="0.35"
               aria-label="Hydro → Electricity grid: 6.995"
               role="graphics-document"
@@ -4215,7 +4215,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-36"
+      <linearGradient id="sankey-justification-gradient-36"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4231,7 +4231,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-36)"
+              stroke="url(#sankey-justification-gradient-36)"
               stroke-opacity="0.35"
               aria-label="Liquid → Industry: 121.066"
               role="graphics-document"
@@ -4240,7 +4240,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-37"
+      <linearGradient id="sankey-justification-gradient-37"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -4256,7 +4256,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-37)"
+              stroke="url(#sankey-justification-gradient-37)"
               stroke-opacity="0.35"
               aria-label="Liquid → International shipping: 128.69"
               role="graphics-document"
@@ -4265,7 +4265,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-38"
+      <linearGradient id="sankey-justification-gradient-38"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -4281,7 +4281,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-38)"
+              stroke="url(#sankey-justification-gradient-38)"
               stroke-opacity="0.35"
               aria-label="Liquid → Road transport: 135.835"
               role="graphics-document"
@@ -4290,7 +4290,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-39"
+      <linearGradient id="sankey-justification-gradient-39"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -4306,7 +4306,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-39)"
+              stroke="url(#sankey-justification-gradient-39)"
               stroke-opacity="0.35"
               aria-label="Liquid → Domestic aviation: 14.458"
               role="graphics-document"
@@ -4315,7 +4315,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-40"
+      <linearGradient id="sankey-justification-gradient-40"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -4331,7 +4331,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-40)"
+              stroke="url(#sankey-justification-gradient-40)"
               stroke-opacity="0.35"
               aria-label="Liquid → International aviation: 206.267"
               role="graphics-document"
@@ -4340,7 +4340,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-41"
+      <linearGradient id="sankey-justification-gradient-41"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4356,7 +4356,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-41)"
+              stroke="url(#sankey-justification-gradient-41)"
               stroke-opacity="0.35"
               aria-label="Liquid → Agriculture: 3.64"
               role="graphics-document"
@@ -4365,7 +4365,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-42"
+      <linearGradient id="sankey-justification-gradient-42"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -4381,7 +4381,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-42)"
+              stroke="url(#sankey-justification-gradient-42)"
               stroke-opacity="0.35"
               aria-label="Liquid → National navigation: 33.218"
               role="graphics-document"
@@ -4390,7 +4390,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-43"
+      <linearGradient id="sankey-justification-gradient-43"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4406,7 +4406,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-43)"
+              stroke="url(#sankey-justification-gradient-43)"
               stroke-opacity="0.35"
               aria-label="Liquid → Rail transport: 4.413"
               role="graphics-document"
@@ -4415,7 +4415,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-44"
+      <linearGradient id="sankey-justification-gradient-44"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4431,7 +4431,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-44)"
+              stroke="url(#sankey-justification-gradient-44)"
               stroke-opacity="0.35"
               aria-label="Marine algae → Bio-conversion: 4.375"
               role="graphics-document"
@@ -4440,7 +4440,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-45"
+      <linearGradient id="sankey-justification-gradient-45"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -4456,7 +4456,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-45)"
+              stroke="url(#sankey-justification-gradient-45)"
               stroke-opacity="0.35"
               aria-label="Ngas → Gas: 122.952"
               role="graphics-document"
@@ -4465,7 +4465,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-46"
+      <linearGradient id="sankey-justification-gradient-46"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="407.2857142857142"
@@ -4481,7 +4481,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-46)"
+              stroke="url(#sankey-justification-gradient-46)"
               stroke-opacity="0.35"
               aria-label="Nuclear → Thermal generation: 839.978"
               role="graphics-document"
@@ -4490,7 +4490,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-47"
+      <linearGradient id="sankey-justification-gradient-47"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4506,7 +4506,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-47)"
+              stroke="url(#sankey-justification-gradient-47)"
               stroke-opacity="0.35"
               aria-label="Oil imports → Oil: 504.287"
               role="graphics-document"
@@ -4515,7 +4515,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-48"
+      <linearGradient id="sankey-justification-gradient-48"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4531,7 +4531,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-48)"
+              stroke="url(#sankey-justification-gradient-48)"
               stroke-opacity="0.35"
               aria-label="Oil reserves → Oil: 107.703"
               role="graphics-document"
@@ -4540,7 +4540,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-49"
+      <linearGradient id="sankey-justification-gradient-49"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -4556,7 +4556,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-49)"
+              stroke="url(#sankey-justification-gradient-49)"
               stroke-opacity="0.35"
               aria-label="Oil → Liquid: 611.99"
               role="graphics-document"
@@ -4565,7 +4565,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-50"
+      <linearGradient id="sankey-justification-gradient-50"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="271.85714285714283"
@@ -4581,7 +4581,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-50)"
+              stroke="url(#sankey-justification-gradient-50)"
               stroke-opacity="0.35"
               aria-label="Other waste → Solid: 56.587"
               role="graphics-document"
@@ -4590,7 +4590,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-51"
+      <linearGradient id="sankey-justification-gradient-51"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4606,7 +4606,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-51)"
+              stroke="url(#sankey-justification-gradient-51)"
               stroke-opacity="0.35"
               aria-label="Other waste → Bio-conversion: 77.81"
               role="graphics-document"
@@ -4615,7 +4615,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-52"
+      <linearGradient id="sankey-justification-gradient-52"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="678.1428571428571"
@@ -4631,7 +4631,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-52)"
+              stroke="url(#sankey-justification-gradient-52)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - homes: 193.026"
               role="graphics-document"
@@ -4640,7 +4640,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-53"
+      <linearGradient id="sankey-justification-gradient-53"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="678.1428571428571"
@@ -4656,7 +4656,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-53)"
+              stroke="url(#sankey-justification-gradient-53)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - commercial: 70.672"
               role="graphics-document"
@@ -4665,7 +4665,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-54"
+      <linearGradient id="sankey-justification-gradient-54"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="542.7142857142857"
@@ -4681,7 +4681,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-54)"
+              stroke="url(#sankey-justification-gradient-54)"
               stroke-opacity="0.35"
               aria-label="Solar PV → Electricity grid: 59.901"
               role="graphics-document"
@@ -4690,7 +4690,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-55"
+      <linearGradient id="sankey-justification-gradient-55"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="678.1428571428571"
@@ -4706,7 +4706,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-55)"
+              stroke="url(#sankey-justification-gradient-55)"
               stroke-opacity="0.35"
               aria-label="Solar Thermal → Heating and cooling - homes: 19.263"
               role="graphics-document"
@@ -4715,7 +4715,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-56"
+      <linearGradient id="sankey-justification-gradient-56"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4731,7 +4731,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-56)"
+              stroke="url(#sankey-justification-gradient-56)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar Thermal: 19.263"
               role="graphics-document"
@@ -4740,7 +4740,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-57"
+      <linearGradient id="sankey-justification-gradient-57"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4756,7 +4756,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-57)"
+              stroke="url(#sankey-justification-gradient-57)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar PV: 59.901"
               role="graphics-document"
@@ -4765,7 +4765,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-58"
+      <linearGradient id="sankey-justification-gradient-58"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4781,7 +4781,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-58)"
+              stroke="url(#sankey-justification-gradient-58)"
               stroke-opacity="0.35"
               aria-label="Solid → Agriculture: 0.882"
               role="graphics-document"
@@ -4790,7 +4790,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-59"
+      <linearGradient id="sankey-justification-gradient-59"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -4806,7 +4806,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-59)"
+              stroke="url(#sankey-justification-gradient-59)"
               stroke-opacity="0.35"
               aria-label="Solid → Thermal generation: 400.12"
               role="graphics-document"
@@ -4815,7 +4815,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-60"
+      <linearGradient id="sankey-justification-gradient-60"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="678.1428571428571"
@@ -4831,7 +4831,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-60)"
+              stroke="url(#sankey-justification-gradient-60)"
               stroke-opacity="0.35"
               aria-label="Solid → Industry: 46.477"
               role="graphics-document"
@@ -4840,7 +4840,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-61"
+      <linearGradient id="sankey-justification-gradient-61"
                       gradientunits="userSpaceOnUse"
                       x1="422.2857142857142"
                       x2="542.7142857142857"
@@ -4856,7 +4856,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-61)"
+              stroke="url(#sankey-justification-gradient-61)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Electricity grid: 525.531"
               role="graphics-document"
@@ -4865,7 +4865,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-62"
+      <linearGradient id="sankey-justification-gradient-62"
                       gradientunits="userSpaceOnUse"
                       x1="422.2857142857142"
                       x2="813.5714285714284"
@@ -4881,7 +4881,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-62)"
+              stroke="url(#sankey-justification-gradient-62)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Losses: 787.129"
               role="graphics-document"
@@ -4890,7 +4890,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-63"
+      <linearGradient id="sankey-justification-gradient-63"
                       gradientunits="userSpaceOnUse"
                       x1="422.2857142857142"
                       x2="542.7142857142857"
@@ -4906,7 +4906,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-63)"
+              stroke="url(#sankey-justification-gradient-63)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → District heating: 79.329"
               role="graphics-document"
@@ -4915,7 +4915,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-64"
+      <linearGradient id="sankey-justification-gradient-64"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -4931,7 +4931,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-64)"
+              stroke="url(#sankey-justification-gradient-64)"
               stroke-opacity="0.35"
               aria-label="Tidal → Electricity grid: 9.452"
               role="graphics-document"
@@ -4940,7 +4940,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-65"
+      <linearGradient id="sankey-justification-gradient-65"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -4956,7 +4956,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-65)"
+              stroke="url(#sankey-justification-gradient-65)"
               stroke-opacity="0.35"
               aria-label="UK land based bioenergy → Bio-conversion: 182.01"
               role="graphics-document"
@@ -4965,7 +4965,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-66"
+      <linearGradient id="sankey-justification-gradient-66"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -4981,7 +4981,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-66)"
+              stroke="url(#sankey-justification-gradient-66)"
               stroke-opacity="0.35"
               aria-label="Wave → Electricity grid: 19.013"
               role="graphics-document"
@@ -4990,7 +4990,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-7-gradient-67"
+      <linearGradient id="sankey-justification-gradient-67"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -5006,7 +5006,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-7-gradient-67)"
+              stroke="url(#sankey-justification-gradient-67)"
               stroke-opacity="0.35"
               aria-label="Wind → Electricity grid: 289.366"
               role="graphics-document"
@@ -6233,7 +6233,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
          tabindex="0"
     >
       <g transform="translate(0, 0)">
-        <linearGradient id="sankey-ref-2-gradient-0"
+        <linearGradient id="sankey-labels-inside-container-gradient-0"
                         gradientunits="userSpaceOnUse"
                         x1="71"
                         x2="480"
@@ -6249,7 +6249,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-2-gradient-0)"
+                stroke="url(#sankey-labels-inside-container-gradient-0)"
                 stroke-opacity="0.35"
                 aria-label="A1 → B1: 8"
                 role="graphics-document"
@@ -6258,7 +6258,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-2-gradient-1"
+        <linearGradient id="sankey-labels-inside-container-gradient-1"
                         gradientunits="userSpaceOnUse"
                         x1="71"
                         x2="480"
@@ -6274,7 +6274,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-2-gradient-1)"
+                stroke="url(#sankey-labels-inside-container-gradient-1)"
                 stroke-opacity="0.35"
                 aria-label="A2 → B2: 4"
                 role="graphics-document"
@@ -6283,7 +6283,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
           >
           </path>
         </g>
-        <linearGradient id="sankey-ref-2-gradient-2"
+        <linearGradient id="sankey-labels-inside-container-gradient-2"
                         gradientunits="userSpaceOnUse"
                         x1="71"
                         x2="480"
@@ -6299,7 +6299,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </linearGradient>
         <g>
           <path class="_link_1oi50_1"
-                stroke="url(#sankey-ref-2-gradient-2)"
+                stroke="url(#sankey-labels-inside-container-gradient-2)"
                 stroke-opacity="0.35"
                 aria-label="A1 → B2: 2"
                 role="graphics-document"
@@ -6620,7 +6620,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
        tabindex="0"
   >
     <g transform="translate(0, 0)">
-      <linearGradient id="sankey-ref-5-gradient-0"
+      <linearGradient id="sankey-multilevels-gradient-0"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -6636,7 +6636,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-0)"
+              stroke="url(#sankey-multilevels-gradient-0)"
               stroke-opacity="0.35"
               aria-label="Agricultural 'waste' → Bio-conversion: 124.729"
               role="graphics-document"
@@ -6645,7 +6645,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-1"
+      <linearGradient id="sankey-multilevels-gradient-1"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -6661,7 +6661,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-1)"
+              stroke="url(#sankey-multilevels-gradient-1)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Liquid: 0.597"
               role="graphics-document"
@@ -6670,7 +6670,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-2"
+      <linearGradient id="sankey-multilevels-gradient-2"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="948.9999999999999"
@@ -6686,7 +6686,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-2)"
+              stroke="url(#sankey-multilevels-gradient-2)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Losses: 26.862"
               role="graphics-document"
@@ -6695,7 +6695,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-3"
+      <linearGradient id="sankey-multilevels-gradient-3"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -6711,7 +6711,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-3)"
+              stroke="url(#sankey-multilevels-gradient-3)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Solid: 280.322"
               role="graphics-document"
@@ -6720,7 +6720,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-4"
+      <linearGradient id="sankey-multilevels-gradient-4"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -6736,7 +6736,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-4)"
+              stroke="url(#sankey-multilevels-gradient-4)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Gas: 81.144"
               role="graphics-document"
@@ -6745,7 +6745,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-5"
+      <linearGradient id="sankey-multilevels-gradient-5"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="271.85714285714283"
@@ -6761,7 +6761,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-5)"
+              stroke="url(#sankey-multilevels-gradient-5)"
               stroke-opacity="0.35"
               aria-label="Biofuel imports → Liquid: 35"
               role="graphics-document"
@@ -6770,7 +6770,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-6"
+      <linearGradient id="sankey-multilevels-gradient-6"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="271.85714285714283"
@@ -6786,7 +6786,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-6)"
+              stroke="url(#sankey-multilevels-gradient-6)"
               stroke-opacity="0.35"
               aria-label="Biomass imports → Solid: 35"
               role="graphics-document"
@@ -6795,7 +6795,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-7"
+      <linearGradient id="sankey-multilevels-gradient-7"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -6811,7 +6811,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-7)"
+              stroke="url(#sankey-multilevels-gradient-7)"
               stroke-opacity="0.35"
               aria-label="Coal imports → Coal: 11.606"
               role="graphics-document"
@@ -6820,7 +6820,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-8"
+      <linearGradient id="sankey-multilevels-gradient-8"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -6836,7 +6836,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-8)"
+              stroke="url(#sankey-multilevels-gradient-8)"
               stroke-opacity="0.35"
               aria-label="Coal reserves → Coal: 63.965"
               role="graphics-document"
@@ -6845,7 +6845,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-9"
+      <linearGradient id="sankey-multilevels-gradient-9"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -6861,7 +6861,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-9)"
+              stroke="url(#sankey-multilevels-gradient-9)"
               stroke-opacity="0.35"
               aria-label="Coal → Solid: 75.571"
               role="graphics-document"
@@ -6870,7 +6870,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-10"
+      <linearGradient id="sankey-multilevels-gradient-10"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -6886,7 +6886,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-10)"
+              stroke="url(#sankey-multilevels-gradient-10)"
               stroke-opacity="0.35"
               aria-label="District heating → Industry: 10.639"
               role="graphics-document"
@@ -6895,7 +6895,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-11"
+      <linearGradient id="sankey-multilevels-gradient-11"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -6911,7 +6911,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-11)"
+              stroke="url(#sankey-multilevels-gradient-11)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - commercial: 22.505"
               role="graphics-document"
@@ -6920,7 +6920,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-12"
+      <linearGradient id="sankey-multilevels-gradient-12"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -6936,7 +6936,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-12)"
+              stroke="url(#sankey-multilevels-gradient-12)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - homes: 46.184"
               role="graphics-document"
@@ -6945,7 +6945,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-13"
+      <linearGradient id="sankey-multilevels-gradient-13"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -6961,7 +6961,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-13)"
+              stroke="url(#sankey-multilevels-gradient-13)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Over generation / exports: 104.453"
               role="graphics-document"
@@ -6970,7 +6970,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-14"
+      <linearGradient id="sankey-multilevels-gradient-14"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -6986,7 +6986,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-14)"
+              stroke="url(#sankey-multilevels-gradient-14)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - homes: 113.726"
               role="graphics-document"
@@ -6995,7 +6995,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-15"
+      <linearGradient id="sankey-multilevels-gradient-15"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="678.1428571428571"
@@ -7011,7 +7011,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-15)"
+              stroke="url(#sankey-multilevels-gradient-15)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → H2 conversion: 27.14"
               role="graphics-document"
@@ -7020,7 +7020,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-16"
+      <linearGradient id="sankey-multilevels-gradient-16"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7036,7 +7036,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-16)"
+              stroke="url(#sankey-multilevels-gradient-16)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Industry: 342.165"
               role="graphics-document"
@@ -7045,7 +7045,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-17"
+      <linearGradient id="sankey-multilevels-gradient-17"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7061,7 +7061,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-17)"
+              stroke="url(#sankey-multilevels-gradient-17)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Road transport: 37.797"
               role="graphics-document"
@@ -7070,7 +7070,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-18"
+      <linearGradient id="sankey-multilevels-gradient-18"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7086,7 +7086,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-18)"
+              stroke="url(#sankey-multilevels-gradient-18)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Agriculture: 4.412"
               role="graphics-document"
@@ -7095,7 +7095,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-19"
+      <linearGradient id="sankey-multilevels-gradient-19"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7111,7 +7111,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-19)"
+              stroke="url(#sankey-multilevels-gradient-19)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - commercial: 40.858"
               role="graphics-document"
@@ -7120,7 +7120,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-20"
+      <linearGradient id="sankey-multilevels-gradient-20"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7136,7 +7136,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-20)"
+              stroke="url(#sankey-multilevels-gradient-20)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Losses: 56.691"
               role="graphics-document"
@@ -7145,7 +7145,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-21"
+      <linearGradient id="sankey-multilevels-gradient-21"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7161,7 +7161,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-21)"
+              stroke="url(#sankey-multilevels-gradient-21)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Rail transport: 7.863"
               role="graphics-document"
@@ -7170,7 +7170,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-22"
+      <linearGradient id="sankey-multilevels-gradient-22"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7186,7 +7186,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-22)"
+              stroke="url(#sankey-multilevels-gradient-22)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - commercial: 90.008"
               role="graphics-document"
@@ -7195,7 +7195,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-23"
+      <linearGradient id="sankey-multilevels-gradient-23"
                       gradientunits="userSpaceOnUse"
                       x1="557.7142857142857"
                       x2="948.9999999999999"
@@ -7211,7 +7211,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-23)"
+              stroke="url(#sankey-multilevels-gradient-23)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - homes: 93.494"
               role="graphics-document"
@@ -7220,7 +7220,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-24"
+      <linearGradient id="sankey-multilevels-gradient-24"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -7236,7 +7236,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-24)"
+              stroke="url(#sankey-multilevels-gradient-24)"
               stroke-opacity="0.35"
               aria-label="Gas imports → Ngas: 40.719"
               role="graphics-document"
@@ -7245,7 +7245,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-25"
+      <linearGradient id="sankey-multilevels-gradient-25"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -7261,7 +7261,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-25)"
+              stroke="url(#sankey-multilevels-gradient-25)"
               stroke-opacity="0.35"
               aria-label="Gas reserves → Ngas: 82.233"
               role="graphics-document"
@@ -7270,7 +7270,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-26"
+      <linearGradient id="sankey-multilevels-gradient-26"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7286,7 +7286,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-26)"
+              stroke="url(#sankey-multilevels-gradient-26)"
               stroke-opacity="0.35"
               aria-label="Gas → Heating and cooling - commercial: 0.129"
               role="graphics-document"
@@ -7295,7 +7295,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-27"
+      <linearGradient id="sankey-multilevels-gradient-27"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7311,7 +7311,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-27)"
+              stroke="url(#sankey-multilevels-gradient-27)"
               stroke-opacity="0.35"
               aria-label="Gas → Losses: 1.401"
               role="graphics-document"
@@ -7320,7 +7320,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-28"
+      <linearGradient id="sankey-multilevels-gradient-28"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -7336,7 +7336,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-28)"
+              stroke="url(#sankey-multilevels-gradient-28)"
               stroke-opacity="0.35"
               aria-label="Gas → Thermal generation: 151.891"
               role="graphics-document"
@@ -7345,7 +7345,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-29"
+      <linearGradient id="sankey-multilevels-gradient-29"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7361,7 +7361,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-29)"
+              stroke="url(#sankey-multilevels-gradient-29)"
               stroke-opacity="0.35"
               aria-label="Gas → Agriculture: 2.096"
               role="graphics-document"
@@ -7370,7 +7370,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-30"
+      <linearGradient id="sankey-multilevels-gradient-30"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7386,7 +7386,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-30)"
+              stroke="url(#sankey-multilevels-gradient-30)"
               stroke-opacity="0.35"
               aria-label="Gas → Industry: 48.58"
               role="graphics-document"
@@ -7395,7 +7395,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-31"
+      <linearGradient id="sankey-multilevels-gradient-31"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -7411,7 +7411,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-31)"
+              stroke="url(#sankey-multilevels-gradient-31)"
               stroke-opacity="0.35"
               aria-label="Geothermal → Electricity grid: 7.013"
               role="graphics-document"
@@ -7420,7 +7420,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-32"
+      <linearGradient id="sankey-multilevels-gradient-32"
                       gradientunits="userSpaceOnUse"
                       x1="693.1428571428571"
                       x2="813.5714285714284"
@@ -7436,7 +7436,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-32)"
+              stroke="url(#sankey-multilevels-gradient-32)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → H2: 20.897"
               role="graphics-document"
@@ -7445,7 +7445,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-33"
+      <linearGradient id="sankey-multilevels-gradient-33"
                       gradientunits="userSpaceOnUse"
                       x1="693.1428571428571"
                       x2="948.9999999999999"
@@ -7461,7 +7461,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-33)"
+              stroke="url(#sankey-multilevels-gradient-33)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → Losses: 6.242"
               role="graphics-document"
@@ -7470,7 +7470,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-34"
+      <linearGradient id="sankey-multilevels-gradient-34"
                       gradientunits="userSpaceOnUse"
                       x1="828.5714285714284"
                       x2="948.9999999999999"
@@ -7486,7 +7486,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-34)"
+              stroke="url(#sankey-multilevels-gradient-34)"
               stroke-opacity="0.35"
               aria-label="H2 → Road transport: 20.897"
               role="graphics-document"
@@ -7495,7 +7495,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-35"
+      <linearGradient id="sankey-multilevels-gradient-35"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -7511,7 +7511,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-35)"
+              stroke="url(#sankey-multilevels-gradient-35)"
               stroke-opacity="0.35"
               aria-label="Hydro → Electricity grid: 6.995"
               role="graphics-document"
@@ -7520,7 +7520,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-36"
+      <linearGradient id="sankey-multilevels-gradient-36"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7536,7 +7536,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-36)"
+              stroke="url(#sankey-multilevels-gradient-36)"
               stroke-opacity="0.35"
               aria-label="Liquid → Industry: 121.066"
               role="graphics-document"
@@ -7545,7 +7545,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-37"
+      <linearGradient id="sankey-multilevels-gradient-37"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7561,7 +7561,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-37)"
+              stroke="url(#sankey-multilevels-gradient-37)"
               stroke-opacity="0.35"
               aria-label="Liquid → International shipping: 128.69"
               role="graphics-document"
@@ -7570,7 +7570,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-38"
+      <linearGradient id="sankey-multilevels-gradient-38"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7586,7 +7586,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-38)"
+              stroke="url(#sankey-multilevels-gradient-38)"
               stroke-opacity="0.35"
               aria-label="Liquid → Road transport: 135.835"
               role="graphics-document"
@@ -7595,7 +7595,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-39"
+      <linearGradient id="sankey-multilevels-gradient-39"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7611,7 +7611,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-39)"
+              stroke="url(#sankey-multilevels-gradient-39)"
               stroke-opacity="0.35"
               aria-label="Liquid → Domestic aviation: 14.458"
               role="graphics-document"
@@ -7620,7 +7620,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-40"
+      <linearGradient id="sankey-multilevels-gradient-40"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7636,7 +7636,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-40)"
+              stroke="url(#sankey-multilevels-gradient-40)"
               stroke-opacity="0.35"
               aria-label="Liquid → International aviation: 206.267"
               role="graphics-document"
@@ -7645,7 +7645,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-41"
+      <linearGradient id="sankey-multilevels-gradient-41"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7661,7 +7661,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-41)"
+              stroke="url(#sankey-multilevels-gradient-41)"
               stroke-opacity="0.35"
               aria-label="Liquid → Agriculture: 3.64"
               role="graphics-document"
@@ -7670,7 +7670,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-42"
+      <linearGradient id="sankey-multilevels-gradient-42"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7686,7 +7686,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-42)"
+              stroke="url(#sankey-multilevels-gradient-42)"
               stroke-opacity="0.35"
               aria-label="Liquid → National navigation: 33.218"
               role="graphics-document"
@@ -7695,7 +7695,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-43"
+      <linearGradient id="sankey-multilevels-gradient-43"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -7711,7 +7711,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-43)"
+              stroke="url(#sankey-multilevels-gradient-43)"
               stroke-opacity="0.35"
               aria-label="Liquid → Rail transport: 4.413"
               role="graphics-document"
@@ -7720,7 +7720,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-44"
+      <linearGradient id="sankey-multilevels-gradient-44"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -7736,7 +7736,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-44)"
+              stroke="url(#sankey-multilevels-gradient-44)"
               stroke-opacity="0.35"
               aria-label="Marine algae → Bio-conversion: 4.375"
               role="graphics-document"
@@ -7745,7 +7745,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-45"
+      <linearGradient id="sankey-multilevels-gradient-45"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -7761,7 +7761,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-45)"
+              stroke="url(#sankey-multilevels-gradient-45)"
               stroke-opacity="0.35"
               aria-label="Ngas → Gas: 122.952"
               role="graphics-document"
@@ -7770,7 +7770,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-46"
+      <linearGradient id="sankey-multilevels-gradient-46"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="407.2857142857142"
@@ -7786,7 +7786,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-46)"
+              stroke="url(#sankey-multilevels-gradient-46)"
               stroke-opacity="0.35"
               aria-label="Nuclear → Thermal generation: 839.978"
               role="graphics-document"
@@ -7795,7 +7795,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-47"
+      <linearGradient id="sankey-multilevels-gradient-47"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -7811,7 +7811,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-47)"
+              stroke="url(#sankey-multilevels-gradient-47)"
               stroke-opacity="0.35"
               aria-label="Oil imports → Oil: 504.287"
               role="graphics-document"
@@ -7820,7 +7820,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-48"
+      <linearGradient id="sankey-multilevels-gradient-48"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -7836,7 +7836,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-48)"
+              stroke="url(#sankey-multilevels-gradient-48)"
               stroke-opacity="0.35"
               aria-label="Oil reserves → Oil: 107.703"
               role="graphics-document"
@@ -7845,7 +7845,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-49"
+      <linearGradient id="sankey-multilevels-gradient-49"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="271.85714285714283"
@@ -7861,7 +7861,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-49)"
+              stroke="url(#sankey-multilevels-gradient-49)"
               stroke-opacity="0.35"
               aria-label="Oil → Liquid: 611.99"
               role="graphics-document"
@@ -7870,7 +7870,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-50"
+      <linearGradient id="sankey-multilevels-gradient-50"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="271.85714285714283"
@@ -7886,7 +7886,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-50)"
+              stroke="url(#sankey-multilevels-gradient-50)"
               stroke-opacity="0.35"
               aria-label="Other waste → Solid: 56.587"
               role="graphics-document"
@@ -7895,7 +7895,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-51"
+      <linearGradient id="sankey-multilevels-gradient-51"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -7911,7 +7911,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-51)"
+              stroke="url(#sankey-multilevels-gradient-51)"
               stroke-opacity="0.35"
               aria-label="Other waste → Bio-conversion: 77.81"
               role="graphics-document"
@@ -7920,7 +7920,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-52"
+      <linearGradient id="sankey-multilevels-gradient-52"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="948.9999999999999"
@@ -7936,7 +7936,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-52)"
+              stroke="url(#sankey-multilevels-gradient-52)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - homes: 193.026"
               role="graphics-document"
@@ -7945,7 +7945,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-53"
+      <linearGradient id="sankey-multilevels-gradient-53"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="948.9999999999999"
@@ -7961,7 +7961,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-53)"
+              stroke="url(#sankey-multilevels-gradient-53)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - commercial: 70.672"
               role="graphics-document"
@@ -7970,7 +7970,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-54"
+      <linearGradient id="sankey-multilevels-gradient-54"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="542.7142857142857"
@@ -7986,7 +7986,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-54)"
+              stroke="url(#sankey-multilevels-gradient-54)"
               stroke-opacity="0.35"
               aria-label="Solar PV → Electricity grid: 59.901"
               role="graphics-document"
@@ -7995,7 +7995,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-55"
+      <linearGradient id="sankey-multilevels-gradient-55"
                       gradientunits="userSpaceOnUse"
                       x1="151.42857142857142"
                       x2="948.9999999999999"
@@ -8011,7 +8011,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-55)"
+              stroke="url(#sankey-multilevels-gradient-55)"
               stroke-opacity="0.35"
               aria-label="Solar Thermal → Heating and cooling - homes: 19.263"
               role="graphics-document"
@@ -8020,7 +8020,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-56"
+      <linearGradient id="sankey-multilevels-gradient-56"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -8036,7 +8036,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-56)"
+              stroke="url(#sankey-multilevels-gradient-56)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar Thermal: 19.263"
               role="graphics-document"
@@ -8045,7 +8045,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-57"
+      <linearGradient id="sankey-multilevels-gradient-57"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -8061,7 +8061,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-57)"
+              stroke="url(#sankey-multilevels-gradient-57)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar PV: 59.901"
               role="graphics-document"
@@ -8070,7 +8070,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-58"
+      <linearGradient id="sankey-multilevels-gradient-58"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -8086,7 +8086,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-58)"
+              stroke="url(#sankey-multilevels-gradient-58)"
               stroke-opacity="0.35"
               aria-label="Solid → Agriculture: 0.882"
               role="graphics-document"
@@ -8095,7 +8095,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-59"
+      <linearGradient id="sankey-multilevels-gradient-59"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="407.2857142857142"
@@ -8111,7 +8111,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-59)"
+              stroke="url(#sankey-multilevels-gradient-59)"
               stroke-opacity="0.35"
               aria-label="Solid → Thermal generation: 400.12"
               role="graphics-document"
@@ -8120,7 +8120,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-60"
+      <linearGradient id="sankey-multilevels-gradient-60"
                       gradientunits="userSpaceOnUse"
                       x1="286.85714285714283"
                       x2="948.9999999999999"
@@ -8136,7 +8136,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-60)"
+              stroke="url(#sankey-multilevels-gradient-60)"
               stroke-opacity="0.35"
               aria-label="Solid → Industry: 46.477"
               role="graphics-document"
@@ -8145,7 +8145,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-61"
+      <linearGradient id="sankey-multilevels-gradient-61"
                       gradientunits="userSpaceOnUse"
                       x1="422.2857142857142"
                       x2="542.7142857142857"
@@ -8161,7 +8161,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-61)"
+              stroke="url(#sankey-multilevels-gradient-61)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Electricity grid: 525.531"
               role="graphics-document"
@@ -8170,7 +8170,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-62"
+      <linearGradient id="sankey-multilevels-gradient-62"
                       gradientunits="userSpaceOnUse"
                       x1="422.2857142857142"
                       x2="948.9999999999999"
@@ -8186,7 +8186,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-62)"
+              stroke="url(#sankey-multilevels-gradient-62)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Losses: 787.129"
               role="graphics-document"
@@ -8195,7 +8195,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-63"
+      <linearGradient id="sankey-multilevels-gradient-63"
                       gradientunits="userSpaceOnUse"
                       x1="422.2857142857142"
                       x2="542.7142857142857"
@@ -8211,7 +8211,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-63)"
+              stroke="url(#sankey-multilevels-gradient-63)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → District heating: 79.329"
               role="graphics-document"
@@ -8220,7 +8220,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-64"
+      <linearGradient id="sankey-multilevels-gradient-64"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -8236,7 +8236,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-64)"
+              stroke="url(#sankey-multilevels-gradient-64)"
               stroke-opacity="0.35"
               aria-label="Tidal → Electricity grid: 9.452"
               role="graphics-document"
@@ -8245,7 +8245,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-65"
+      <linearGradient id="sankey-multilevels-gradient-65"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="136.42857142857142"
@@ -8261,7 +8261,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-65)"
+              stroke="url(#sankey-multilevels-gradient-65)"
               stroke-opacity="0.35"
               aria-label="UK land based bioenergy → Bio-conversion: 182.01"
               role="graphics-document"
@@ -8270,7 +8270,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-66"
+      <linearGradient id="sankey-multilevels-gradient-66"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -8286,7 +8286,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-66)"
+              stroke="url(#sankey-multilevels-gradient-66)"
               stroke-opacity="0.35"
               aria-label="Wave → Electricity grid: 19.013"
               role="graphics-document"
@@ -8295,7 +8295,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-5-gradient-67"
+      <linearGradient id="sankey-multilevels-gradient-67"
                       gradientunits="userSpaceOnUse"
                       x1="16"
                       x2="542.7142857142857"
@@ -8311,7 +8311,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-5-gradient-67)"
+              stroke="url(#sankey-multilevels-gradient-67)"
               stroke-opacity="0.35"
               aria-label="Wind → Electricity grid: 289.366"
               role="graphics-document"
@@ -9537,7 +9537,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
        tabindex="0"
   >
     <g transform="translate(0, 0)">
-      <linearGradient id="sankey-ref-1-gradient-0"
+      <linearGradient id="sankey-simple-gradient-0"
                       gradientunits="userSpaceOnUse"
                       x1="61"
                       x2="490"
@@ -9553,7 +9553,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-1-gradient-0)"
+              stroke="url(#sankey-simple-gradient-0)"
               stroke-opacity="0.35"
               aria-label="A1 → B1: 8"
               role="graphics-document"
@@ -9562,7 +9562,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-1-gradient-1"
+      <linearGradient id="sankey-simple-gradient-1"
                       gradientunits="userSpaceOnUse"
                       x1="61"
                       x2="490"
@@ -9578,7 +9578,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-1-gradient-1)"
+              stroke="url(#sankey-simple-gradient-1)"
               stroke-opacity="0.35"
               aria-label="A2 → B2: 4"
               role="graphics-document"
@@ -9587,7 +9587,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
         >
         </path>
       </g>
-      <linearGradient id="sankey-ref-1-gradient-2"
+      <linearGradient id="sankey-simple-gradient-2"
                       gradientunits="userSpaceOnUse"
                       x1="61"
                       x2="490"
@@ -9603,7 +9603,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </linearGradient>
       <g>
         <path class="_link_1oi50_1"
-              stroke="url(#sankey-ref-1-gradient-2)"
+              stroke="url(#sankey-simple-gradient-2)"
               stroke-opacity="0.35"
               aria-label="A1 → B2: 2"
               role="graphics-document"

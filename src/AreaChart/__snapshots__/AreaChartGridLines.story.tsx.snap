@@ -543,7 +543,7 @@ exports[`Charts/Area Chart/Gridlines AllAxes smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-1-path">
+        <clipPath id="area-series-all-axes-path">
           <rect width="353"
                 height="254"
                 x="-12.5"
@@ -559,7 +559,7 @@ exports[`Charts/Area Chart/Gridlines AllAxes smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-1-path)">
+        <g clip-path="url(#area-series-all-axes-path)">
           <path class
                 pointer-events="none"
                 stroke="#2d60e8"
@@ -572,12 +572,12 @@ exports[`Charts/Area Chart/Gridlines AllAxes smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-1-area-0)"
+                fill="url(#gradient-area-series-all-axes-area-0)"
                 d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-1-area-0"
+                          id="gradient-area-series-all-axes-area-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -595,7 +595,7 @@ exports[`Charts/Area Chart/Gridlines AllAxes smoke-test 1`] = `
             </stop>
           </linearGradient>
           <defs>
-            <clipPath id="area-series-ref-1-path">
+            <clipPath id="area-series-all-axes-path">
               <rect width="353"
                     height="254"
                     x="-12.5"
@@ -604,7 +604,7 @@ exports[`Charts/Area Chart/Gridlines AllAxes smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-all-axes-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
@@ -1106,7 +1106,7 @@ exports[`Charts/Area Chart/Gridlines XAxis smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-8-path">
+        <clipPath id="area-series-x-axis-path">
           <rect width="353"
                 height="254"
                 x="-12.5"
@@ -1122,7 +1122,7 @@ exports[`Charts/Area Chart/Gridlines XAxis smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-8-path)">
+        <g clip-path="url(#area-series-x-axis-path)">
           <path class
                 pointer-events="none"
                 stroke="#2d60e8"
@@ -1135,12 +1135,12 @@ exports[`Charts/Area Chart/Gridlines XAxis smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-8-area-0)"
+                fill="url(#gradient-area-series-x-axis-area-0)"
                 d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-8-area-0"
+                          id="gradient-area-series-x-axis-area-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -1158,7 +1158,7 @@ exports[`Charts/Area Chart/Gridlines XAxis smoke-test 1`] = `
             </stop>
           </linearGradient>
           <defs>
-            <clipPath id="area-series-ref-8-path">
+            <clipPath id="area-series-x-axis-path">
               <rect width="353"
                     height="254"
                     x="-12.5"
@@ -1167,7 +1167,7 @@ exports[`Charts/Area Chart/Gridlines XAxis smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-8-path)">
+          <g clip-path="url(#area-series-x-axis-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
@@ -1735,7 +1735,7 @@ exports[`Charts/Area Chart/Gridlines YAxis smoke-test 1`] = `
         </g>
       </g>
       <defs>
-        <clipPath id="area-series-ref-15-path">
+        <clipPath id="area-series-y-axis-path">
           <rect width="353"
                 height="254"
                 x="-12.5"
@@ -1751,7 +1751,7 @@ exports[`Charts/Area Chart/Gridlines YAxis smoke-test 1`] = `
               cursor="auto"
         >
         </rect>
-        <g clip-path="url(#area-series-ref-15-path)">
+        <g clip-path="url(#area-series-y-axis-path)">
           <path class
                 pointer-events="none"
                 stroke="#2d60e8"
@@ -1764,12 +1764,12 @@ exports[`Charts/Area Chart/Gridlines YAxis smoke-test 1`] = `
           <path class
                 pointer-events="none"
                 mask
-                fill="url(#gradient-area-series-ref-15-area-0)"
+                fill="url(#gradient-area-series-y-axis-area-0)"
                 d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-area-series-ref-15-area-0"
+                          id="gradient-area-series-y-axis-area-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -1787,7 +1787,7 @@ exports[`Charts/Area Chart/Gridlines YAxis smoke-test 1`] = `
             </stop>
           </linearGradient>
           <defs>
-            <clipPath id="area-series-ref-15-path">
+            <clipPath id="area-series-y-axis-path">
               <rect width="353"
                     height="254"
                     x="-12.5"
@@ -1796,7 +1796,7 @@ exports[`Charts/Area Chart/Gridlines YAxis smoke-test 1`] = `
               </rect>
             </clipPath>
           </defs>
-          <g clip-path="url(#area-series-ref-15-path)">
+          <g clip-path="url(#area-series-y-axis-path)">
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
