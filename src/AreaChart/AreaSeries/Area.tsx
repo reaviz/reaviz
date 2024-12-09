@@ -82,21 +82,23 @@ export interface AreaProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
-export const Area: FC<Partial<AreaProps>> = ({
-  id,
-  gradient,
-  glow,
-  mask,
-  data,
-  color,
-  index,
-  total,
-  xScale,
-  yScale,
-  animated,
-  interpolation,
-  ...rest
-}) => {
+export const Area: FC<Partial<AreaProps>> = (props) => {
+  const {
+    id,
+    gradient,
+    glow,
+    mask,
+    data,
+    color,
+    index,
+    total,
+    xScale,
+    yScale,
+    animated,
+    interpolation,
+    ...rest
+  } = { ...AREA_DEFAULT_PROPS, ...props };
+
   const stroke = color(data, index);
 
   const coords = useMemo(() => {
@@ -233,7 +235,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   );
 };
 
-Area.defaultProps = {
+export const AREA_DEFAULT_PROPS = {
   gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />,
   interpolation: 'linear'
 };
