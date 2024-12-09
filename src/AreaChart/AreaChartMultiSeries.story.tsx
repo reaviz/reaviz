@@ -52,6 +52,7 @@ export const LargeDataset = () => (
     data={longMultiDateData}
   />
 );
+LargeDataset.tags = ['skip-snapshot'];
 
 export const LiveUpdating = () => <LiveUpdatingStory />;
 LiveUpdating.tags = ['no-snapshot'];
