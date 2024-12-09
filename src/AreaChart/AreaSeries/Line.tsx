@@ -96,23 +96,25 @@ export interface LineProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
-export const Line: FC<Partial<LineProps>> = ({
-  id,
-  width,
-  data,
-  color,
-  index,
-  strokeWidth,
-  hasArea,
-  animated,
-  yScale,
-  xScale,
-  showZeroStroke,
-  interpolation,
-  gradient,
-  glow,
-  ...rest
-}) => {
+export const Line: FC<Partial<LineProps>> = (props) => {
+  const {
+    id,
+    width,
+    data,
+    color,
+    index,
+    strokeWidth,
+    hasArea,
+    animated,
+    yScale,
+    xScale,
+    showZeroStroke,
+    interpolation,
+    gradient,
+    glow,
+    ...rest
+  } = { ...LINE_DEFAULT_PROPS, ...props };
+
   const [pathLength, setPathLength] = useState<number | null>(null);
   const ghostPathRef = useRef<SVGPathElement | null>(null);
 
@@ -254,7 +256,7 @@ export const Line: FC<Partial<LineProps>> = ({
   );
 };
 
-Line.defaultProps = {
+export const LINE_DEFAULT_PROPS = {
   showZeroStroke: true,
   strokeWidth: 3
 };
