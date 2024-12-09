@@ -18,13 +18,15 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearXAxisTickLabel
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 import { getXScale, getYScale } from '@/common/scales';
 import { BarChart } from './BarChart';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Axis',
   component: BarChart,
   subcomponents: {
@@ -101,14 +103,14 @@ export const TopBottomAxis = () => {
         />
       }
       xAxis={
-        <LinearYAxis
+        <LinearXAxis
           orientation="horizontal"
           position="end"
           tickSeries={
-            <LinearYAxisTickSeries
+            <LinearXAxisTickSeries
               line={null}
               label={
-                <LinearYAxisTickLabel
+                <LinearXAxisTickLabel
                   padding={5}
                   position="end"
                   format={(d) => `${d < 0 ? d * -1 : d}`}
@@ -132,11 +134,11 @@ export const TopBottomAxis = () => {
         />
       ]}
       yAxis={
-        <LinearXAxis
+        <LinearYAxis
           type="category"
           position="center"
           orientation="vertical"
-          tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
+          tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
         />
       }
     />

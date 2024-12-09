@@ -1,6 +1,10 @@
 import React, { Fragment, useMemo, ReactElement, FC, useCallback } from 'react';
 import { area } from 'd3-shape';
-import { Gradient, GradientProps } from '@/common/Gradient';
+import {
+  Gradient,
+  GRADIENT_DEFAULT_PROPS,
+  GradientProps
+} from '@/common/Gradient';
 import { Mask, MaskProps } from '@/common/Mask';
 import { interpolate, InterpolationTypes } from '@/common/utils/interpolation';
 import {
@@ -78,21 +82,23 @@ export interface AreaProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
-export const Area: FC<Partial<AreaProps>> = ({
-  id,
-  gradient,
-  glow,
-  mask,
-  data,
-  color,
-  index,
-  total,
-  xScale,
-  yScale,
-  animated,
-  interpolation,
-  ...rest
-}) => {
+export const Area: FC<Partial<AreaProps>> = (props) => {
+  const {
+    id,
+    gradient,
+    glow,
+    mask,
+    data,
+    color,
+    index,
+    total,
+    xScale,
+    yScale,
+    animated,
+    interpolation,
+    ...rest
+  } = { ...AREA_DEFAULT_PROPS, ...props };
+
   const stroke = color(data, index);
 
   const coords = useMemo(() => {
@@ -124,7 +130,7 @@ export const Area: FC<Partial<AreaProps>> = ({
         .x((d: any) => d.x)
         .y0((d: any) => d.y0)
         .y1((d: any) => d.y1)
-        .curve(interpolate(interpolation));
+        .curve(interpolate(interpolation as InterpolationTypes));
 
       return fn(d as any);
     },
@@ -229,7 +235,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   );
 };
 
-Area.defaultProps = {
-  gradient: <Gradient />,
+export const AREA_DEFAULT_PROPS = {
+  gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />,
   interpolation: 'linear'
 };

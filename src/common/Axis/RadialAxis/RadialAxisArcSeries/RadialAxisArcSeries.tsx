@@ -1,5 +1,9 @@
 import React, { FC, ReactElement } from 'react';
-import { RadialAxisArc, RadialAxisArcProps } from './RadialAxisArc';
+import {
+  RADIAL_AXIS_ARC_DEFAULT_PROPS,
+  RadialAxisArc,
+  RadialAxisArcProps
+} from './RadialAxisArc';
 import { CloneElement } from 'reablocks';
 import { scaleLinear } from 'd3-scale';
 import { getPointsForLevels } from './utils';
@@ -47,16 +51,20 @@ export interface RadialAxisArcSeriesProps {
   endAngle?: number;
 }
 
-export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
-  count,
-  innerRadius,
-  outerRadius,
-  line,
-  arc,
-  tickValues,
-  startAngle,
-  endAngle
-}) => {
+export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
+  props
+) => {
+  const {
+    count,
+    innerRadius,
+    outerRadius,
+    line,
+    arc,
+    tickValues,
+    startAngle,
+    endAngle
+  } = { ...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS, ...props };
+
   const scale = scaleLinear()
     .domain([0, count])
     .range([innerRadius, outerRadius]);
@@ -102,10 +110,9 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = ({
   );
 };
 
-RadialAxisArcSeries.defaultProps = {
-  type: 'arc',
+export const RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS = {
   count: 12,
-  arc: <RadialAxisArc />,
+  arc: <RadialAxisArc {...RADIAL_AXIS_ARC_DEFAULT_PROPS} />,
   startAngle: 0,
   endAngle: 2 * Math.PI
 };

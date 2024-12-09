@@ -6,16 +6,18 @@ import { RadarChart } from './RadarChart';
 import { RadarChartSeries } from './RadarChartSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Radar Chart',
   component: RadarChart
 };
 
 export const Simple = () => (
-  <RadarChart data={multiCategory} height={500} width={500} />
+  <RadarChart id="simple" data={multiCategory} height={500} width={500} />
 );
 
 export const Filled = () => (
   <RadarChart
+    id="filled"
     data={multiCategory}
     height={500}
     width={500}

@@ -8,7 +8,11 @@ import React, {
   useMemo
 } from 'react';
 import { ChartInternalShallowDataShape } from '@/common/data';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
+  ChartTooltip,
+  ChartTooltipProps
+} from '@/common/Tooltip';
 import classNames from 'classnames';
 import { CloneElement } from 'reablocks';
 import {
@@ -116,26 +120,28 @@ export type ScatterPointProps = {
   onMouseLeave?: (data: ChartInternalShallowDataShape) => void;
 } & PropFunctionTypes;
 
-export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
-  symbol,
-  index,
-  id,
-  data,
-  xScale,
-  yScale,
-  active,
-  tooltip,
-  cursor,
-  size,
-  glow,
-  color,
-  animated,
-  onClick,
-  onMouseEnter,
-  onMouseLeave,
-  visible,
-  ...rest
-}) => {
+export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
+  const {
+    symbol,
+    index,
+    id,
+    data,
+    xScale,
+    yScale,
+    active,
+    tooltip,
+    cursor,
+    size,
+    glow,
+    color,
+    animated,
+    onClick,
+    onMouseEnter,
+    onMouseLeave,
+    visible,
+    ...rest
+  } = { ...SCATTER_POINT_DEFAULT_PROPS, ...props };
+
   const rectRef = useRef<any | null>(null);
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);
   const extras = useMemo(
@@ -291,9 +297,9 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   );
 };
 
-ScatterPoint.defaultProps = {
+export const SCATTER_POINT_DEFAULT_PROPS = {
   active: true,
-  tooltip: <ChartTooltip />,
+  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
   cursor: 'pointer',
   size: 4,
   color: schemes.cybertron[0],

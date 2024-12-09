@@ -7,6 +7,7 @@ import { LinearXAxisTickSeries, LinearXAxis } from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Single Series',
   component: LineChart,
   subcomponents: {
@@ -17,6 +18,7 @@ export default {
 
 export const Simple = () => (
   <LineChart
+    id="simple"
     width={350}
     height={250}
     data={singleDateData}
@@ -32,6 +34,7 @@ export const Simple = () => (
 
 export const NoAnimation = () => (
   <LineChart
+    id="no-animation"
     width={350}
     height={250}
     data={singleDateData}
@@ -41,12 +44,17 @@ export const NoAnimation = () => (
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <LineChart data={singleDateData} xAxis={<LinearXAxis type="time" />} />
+    <LineChart
+      id="autosize"
+      data={singleDateData}
+      xAxis={<LinearXAxis type="time" />}
+    />
   </div>
 );
 
 export const Interval = () => (
   <LineChart
+    id="interval"
     width={350}
     height={250}
     data={singleDateData}
@@ -61,6 +69,7 @@ export const Interval = () => (
 
 export const LargeDataset = () => (
   <LineChart
+    id="large-dataset"
     width={400}
     height={250}
     data={largeDateData}
@@ -68,9 +77,11 @@ export const LargeDataset = () => (
     xAxis={<LinearXAxis type="time" />}
   />
 );
+LargeDataset.tags = ['skip-snapshot'];
 
 export const DynamicColors = () => (
   <LineChart
+    id="dynamic-colors"
     width={350}
     height={250}
     data={singleDateData}
@@ -83,6 +94,8 @@ export const DynamicColors = () => (
 );
 
 export const LiveUpdating = () => <LiveUpdatingStory />;
+
+LiveUpdating.tags = ['no-snapshot'];
 
 let interval;
 let offset = 0;
@@ -114,3 +127,5 @@ const LiveUpdatingStory = () => {
     </Fragment>
   );
 };
+
+LiveUpdatingStory.tags = ['no-snapshot'];
