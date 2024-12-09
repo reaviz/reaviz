@@ -3,7 +3,13 @@ import { offset } from '@floating-ui/dom';
 import { BarSeriesProps, BarSeries } from './BarSeries';
 import { Bar } from './Bar';
 import { RangeLines } from './RangeLines';
-import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
+import {
+  ChartTooltip,
+  TooltipTemplate,
+  TooltipArea,
+  TOOLTIP_AREA_DEFAULT_PROPS,
+  CHART_TOOLTIP_DEFAULT_PROPS
+} from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
 import {
   Gradient,
@@ -21,8 +27,10 @@ MarimekkoBarSeries.defaultProps = {
   padding: 10,
   tooltip: (
     <TooltipArea
+      {...TOOLTIP_AREA_DEFAULT_PROPS}
       tooltip={
         <ChartTooltip
+          {...CHART_TOOLTIP_DEFAULT_PROPS}
           followCursor={true}
           modifiers={[offset(5)]}
           content={(point, color) => {
