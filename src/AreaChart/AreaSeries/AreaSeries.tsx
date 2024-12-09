@@ -126,25 +126,27 @@ export interface AreaSeriesProps {
 const PADDING = 25;
 const HALF_PADDING = PADDING / 2;
 
-export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
-  data,
-  height,
-  id,
-  width,
-  isZoomed,
-  tooltip,
-  xScale,
-  yScale,
-  type,
-  markLine,
-  symbols,
-  animated,
-  area,
-  interpolation,
-  line,
-  colorScheme,
-  valueMarkers
-}) => {
+export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
+  const {
+    data,
+    height,
+    id,
+    width,
+    isZoomed,
+    tooltip,
+    xScale,
+    yScale,
+    type,
+    markLine,
+    symbols,
+    animated,
+    area,
+    interpolation,
+    line,
+    colorScheme,
+    valueMarkers
+  } = { ...AREA_SERIES_DEFAULT_PROPS, ...props };
+
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const [activePoint, setActivePoint] = useState<any | null>(null);
 
@@ -190,7 +192,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             index={index}
             hasArea={area !== null}
             animated={animated}
-            interpolation={interpolation}
+            interpolation={interpolation as InterpolationTypes}
             color={getPointColor}
           />
         )}
@@ -204,7 +206,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             index={index}
             total={total}
             animated={animated}
-            interpolation={interpolation}
+            interpolation={interpolation as InterpolationTypes}
             color={getPointColor}
           />
         )}
@@ -337,7 +339,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           })}
       </>
     ),
-    [valueMarkers, width, yScale]
+    [valueMarkers, width, yScale, xScale, height]
   );
 
   return (
@@ -374,7 +376,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   );
 };
 
-AreaSeries.defaultProps = {
+export const AREA_SERIES_DEFAULT_PROPS = {
   colorScheme: 'cybertron',
   animated: true,
   interpolation: 'linear',

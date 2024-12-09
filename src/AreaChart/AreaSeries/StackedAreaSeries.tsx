@@ -1,5 +1,9 @@
 import React, { FC } from 'react';
-import { AreaSeriesProps, AreaSeries } from './AreaSeries';
+import {
+  AreaSeriesProps,
+  AreaSeries,
+  AREA_SERIES_DEFAULT_PROPS
+} from './AreaSeries';
 import { CloneElement } from 'reablocks';
 import { PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '@/ScatterPlot';
@@ -31,6 +35,6 @@ export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
 );
 
 StackedAreaSeries.defaultProps = {
-  ...AreaSeries.defaultProps,
+  ...AREA_SERIES_DEFAULT_PROPS,
   type: 'stacked'
-};
+} as Partial<AreaSeriesProps>;

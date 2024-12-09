@@ -1,5 +1,9 @@
 import React, { FC } from 'react';
-import { AreaSeriesProps, AreaSeries } from './AreaSeries';
+import {
+  AreaSeriesProps,
+  AreaSeries,
+  AREA_SERIES_DEFAULT_PROPS
+} from './AreaSeries';
 import { formatValue } from '@/common/utils/formatting';
 import {
   TooltipTemplate,
@@ -39,7 +43,7 @@ export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
 );
 
 StackedNormalizedAreaSeries.defaultProps = {
-  ...AreaSeries.defaultProps,
+  ...AREA_SERIES_DEFAULT_PROPS,
   type: 'stackedNormalized',
   tooltip: (
     <TooltipArea
@@ -68,4 +72,4 @@ StackedNormalizedAreaSeries.defaultProps = {
       }
     />
   )
-};
+} as Partial<AreaSeriesProps>;
