@@ -3,9 +3,14 @@ import React, {
   ReactElement,
   FC,
   useCallback,
-  useState
+  useState,
+  useMemo
 } from 'react';
-import { PointSeries, PointSeriesProps } from './PointSeries';
+import {
+  POINT_SERIES_DEFAULT_PROPS,
+  PointSeries,
+  PointSeriesProps
+} from './PointSeries';
 import { Area, AreaProps } from './Area';
 import { MarkLine, MarkLineProps } from '@/common/MarkLine';
 import {
@@ -147,6 +152,14 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
     valueMarkers
   } = { ...AREA_SERIES_DEFAULT_PROPS, ...props };
 
+  const symbolsProps = useMemo(
+    () => ({
+      ...POINT_SERIES_DEFAULT_PROPS,
+      ...symbols?.props
+    }),
+    [symbols]
+  );
+
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const [activePoint, setActivePoint] = useState<any | null>(null);
 
@@ -229,7 +242,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
     (data: ChartInternalShallowDataShape[], index = 0) => {
       const visible = symbols !== null;
       const activeSymbols =
-        (symbols && symbols.props.activeValues) || activeValues;
+        (symbols && symbolsProps.activeValues) || activeValues;
 
       // Animations are only valid for Area
       const isAnimated = area !== undefined && animated && !activeSymbols;

@@ -67,19 +67,21 @@ export interface PointSeriesProps {
   index: number;
 }
 
-export const PointSeries: FC<Partial<PointSeriesProps>> = ({
-  data,
-  xScale,
-  yScale,
-  animated,
-  point,
-  color,
-  height,
-  width,
-  id,
-  activeValues,
-  show
-}) => {
+export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
+  const {
+    data,
+    xScale,
+    yScale,
+    animated,
+    point,
+    color,
+    height,
+    width,
+    id,
+    activeValues,
+    show
+  } = { ...POINT_SERIES_DEFAULT_PROPS, ...props };
+
   const getIsVisible = useCallback(
     (point: ChartInternalShallowDataShape, index: number) => {
       const isActive =
@@ -129,7 +131,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = ({
   );
 };
 
-PointSeries.defaultProps = {
+export const POINT_SERIES_DEFAULT_PROPS = {
   show: 'hover',
   point: <ScatterPoint />
 };
