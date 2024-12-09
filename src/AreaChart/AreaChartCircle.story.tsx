@@ -34,7 +34,6 @@ export const On = () => (
     series={<AreaSeries symbols={<PointSeries show={true} />} />}
   />
 );
-On.tags = ['single'];
 
 export const Off = () => (
   <AreaChart

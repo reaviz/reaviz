@@ -24,7 +24,7 @@ import {
 } from '@/common/utils/functions';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { BarLabelProps, BarLabel } from './BarLabel';
+import { BarLabelProps, BarLabel, BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
 import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
@@ -248,6 +248,10 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     onMouseMove,
     onMouseLeave
   } = { ...BAR_DEFAULT_PROPS, ...props };
+  const labelProps = useMemo(
+    () => ({ ...BAR_LABEL_DEFAULT_PROPS, ...label?.props }),
+    [label?.props]
+  );
 
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rect = useRef<SVGGElement | null>(null);
@@ -731,7 +735,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
           index={index}
           data={data}
           scale={scale}
-          fill={label.props.fill || currentColorShade}
+          fill={labelProps.fill || currentColorShade}
           barCount={barCount}
           animated={animated}
           layout={layout}
