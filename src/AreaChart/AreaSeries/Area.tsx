@@ -130,7 +130,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
         .x((d: any) => d.x)
         .y0((d: any) => d.y0)
         .y1((d: any) => d.y1)
-        .curve(interpolate(interpolation));
+        .curve(interpolate(interpolation as InterpolationTypes));
 
       return fn(d as any);
     },

@@ -83,7 +83,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
   } = { ...POINT_SERIES_DEFAULT_PROPS, ...props };
 
   const getIsVisible = useCallback(
-    (point: ChartInternalShallowDataShape, index: number) => {
+    (point: ChartInternalShallowDataShape, index: number): boolean => {
       const isActive =
         activeValues && point && isEqual(activeValues.x, point.x);
 
@@ -103,7 +103,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
         }
       }
 
-      return show;
+      return Boolean(show);
     },
     [activeValues, data.length, show]
   );
