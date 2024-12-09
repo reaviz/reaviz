@@ -1,6 +1,10 @@
 import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import { BarSeriesProps, BarSeries } from './BarSeries';
+import {
+  BarSeriesProps,
+  BarSeries,
+  BAR_SERIES_DEFAULT_PROPS
+} from './BarSeries';
 import {
   ChartTooltip,
   TooltipTemplate,
@@ -17,7 +21,7 @@ export const HistogramBarSeries: FC<Partial<BarSeriesProps>> = ({
 }) => <BarSeries {...rest} />;
 
 HistogramBarSeries.defaultProps = {
-  ...BarSeries.defaultProps,
+  ...BAR_SERIES_DEFAULT_PROPS,
   colorScheme: schemes.cybertron[0],
   tooltip: (
     <TooltipArea

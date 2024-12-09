@@ -44,7 +44,7 @@ export const LinearValueMarkersVertical = () => (
     }
     series={
       <BarSeries
-        colorScheme={'cybertron'}
+        colorScheme="cybertron"
         layout="horizontal"
         padding={0.1}
         bar={<Bar guide={null} />}
@@ -64,7 +64,7 @@ export const LinearValueMarkersHorizontal = () => (
     data={categoryData}
     series={
       <BarSeries
-        colorScheme={schemes[0]}
+        colorScheme="cybertron"
         padding={0.1}
         bar={<Bar />}
         valueMarkers={[

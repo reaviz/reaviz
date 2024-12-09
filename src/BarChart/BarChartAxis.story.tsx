@@ -64,6 +64,7 @@ export const TopBottomAxis = () => {
 
   return (
     <StackedBarChart
+      id="top-bottom-axis"
       width={450}
       height={200}
       margins={0}
@@ -171,6 +172,7 @@ export const LeftRightAxis = () => {
 
   return (
     <StackedBarChart
+      id="left-right-axis"
       width={450}
       height={200}
       margins={0}

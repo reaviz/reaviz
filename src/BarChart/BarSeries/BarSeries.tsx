@@ -123,24 +123,25 @@ export interface BarSeriesProps {
     | null;
 }
 
-export const BarSeries: FC<Partial<BarSeriesProps>> = ({
-  data,
-  tooltip,
-  xScale,
-  yScale,
-  height,
-  width,
-  colorScheme,
-  xScale1,
-  bar,
-  padding,
-  animated,
-  isCategorical,
-  layout,
-  type,
-  id,
-  valueMarkers
-}) => {
+export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
+  const {
+    data,
+    tooltip,
+    xScale,
+    yScale,
+    height,
+    width,
+    colorScheme,
+    xScale1,
+    bar,
+    padding,
+    animated,
+    isCategorical,
+    layout,
+    type,
+    id,
+    valueMarkers
+  } = { ...BAR_SERIES_DEFAULT_PROPS, ...props };
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
@@ -360,8 +361,8 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   );
 };
 
-BarSeries.defaultProps = {
-  type: 'standard',
+export const BAR_SERIES_DEFAULT_PROPS = {
+  type: 'standard' as const,
   padding: 0.1,
   groupPadding: 16,
   animated: true,
@@ -379,5 +380,5 @@ BarSeries.defaultProps = {
   ),
   colorScheme: 'cybertron',
   bar: <Bar {...BAR_DEFAULT_PROPS} />,
-  layout: 'vertical'
+  layout: 'vertical' as const
 };

@@ -1,6 +1,10 @@
 import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import { BarSeriesProps, BarSeries } from './BarSeries';
+import {
+  BarSeriesProps,
+  BarSeries,
+  BAR_SERIES_DEFAULT_PROPS
+} from './BarSeries';
 import { Bar, BAR_DEFAULT_PROPS } from './Bar';
 import { RangeLines } from './RangeLines';
 import {
@@ -22,7 +26,7 @@ export const MarimekkoBarSeries: FC<Partial<BarSeriesProps>> = (props) => (
 );
 
 MarimekkoBarSeries.defaultProps = {
-  ...BarSeries.defaultProps,
+  ...BAR_SERIES_DEFAULT_PROPS,
   type: 'marimekko',
   padding: 10,
   tooltip: (
