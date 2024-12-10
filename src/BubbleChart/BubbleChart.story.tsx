@@ -18,6 +18,7 @@ const simpleData: ChartShallowDataShape[] = [
 ];
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bubble Chart',
   component: BubbleChart,
   subcomponents: {
@@ -29,6 +30,7 @@ export default {
 
 export const Simple = () => (
   <BubbleChart
+    id="simple"
     data={simpleData}
     height={450}
     width={450}
@@ -38,6 +40,7 @@ export const Simple = () => (
 
 export const Mask = () => (
   <BubbleChart
+    id="mask"
     data={simpleData}
     height={450}
     width={450}
@@ -52,6 +55,7 @@ export const Mask = () => (
 
 export const Gradient = () => (
   <BubbleChart
+    id="gradient"
     data={simpleData}
     height={450}
     width={450}
@@ -66,6 +70,7 @@ export const Gradient = () => (
 
 export const Icons = () => (
   <BubbleChart
+    id="icons"
     data={simpleData}
     height={450}
     width={450}
@@ -106,11 +111,14 @@ export const LongText = () => {
     { key: 'Short Name', data: 25 }
   ];
 
-  return <BubbleChart data={longData} height={450} width={450} />;
+  return (
+    <BubbleChart id="long-text" data={longData} height={450} width={450} />
+  );
 };
 
 export const NoAnimation = () => (
   <BubbleChart
+    id="no-animation"
     height={450}
     width={450}
     series={<BubbleSeries animated={false} />}
@@ -124,8 +132,11 @@ export const VaryingSizes = () => {
     data: randomNumber(1, 500)
   }));
 
-  return <BubbleChart data={longData} height={450} width={450} />;
+  return (
+    <BubbleChart id="varying-sizes" data={longData} height={450} width={450} />
+  );
 };
+VaryingSizes.tags = ['no-snapshot'];
 
 export const _100Bubbles = () => {
   const longData: ChartShallowDataShape[] = range(100).map((o) => ({
@@ -133,11 +144,15 @@ export const _100Bubbles = () => {
     data: 1
   }));
 
-  return <BubbleChart data={longData} height={450} width={450} />;
+  return (
+    <BubbleChart id="100-bubbles" data={longData} height={450} width={450} />
+  );
 };
+_100Bubbles.tags = ['no-snapshot'];
 
 export const Autosize = () => (
   <div style={{ width: '70vw', height: '70vh', border: 'solid 1px red' }}>
-    <BubbleChart data={simpleData} />
+    <BubbleChart id="autosize" data={simpleData} />
   </div>
 );
+Autosize.tags = ['no-snapshot'];

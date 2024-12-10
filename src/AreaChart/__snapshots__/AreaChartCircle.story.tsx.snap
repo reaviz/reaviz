@@ -1,0 +1,4043 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Area Chart/Circle Series Off smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _areaChart_yyojn_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="203.55555555555554"
+              y2="203.55555555555554"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="178.11111111111111"
+              y2="178.11111111111111"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="152.66666666666669"
+              y2="152.66666666666669"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="127.22222222222223"
+              y2="127.22222222222223"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="101.77777777777777"
+              y2="101.77777777777777"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="76.33333333333334"
+              y2="76.33333333333334"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="50.888888888888886"
+              y2="50.888888888888886"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="25.444444444444457"
+              y2="25.444444444444457"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="16"
+              x2="16"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="98"
+              x2="98"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="180"
+              x2="180"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="262"
+              x2="262"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(16, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Tue 18
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Tue 18
+            </text>
+          </g>
+        </g>
+        <g transform="translate(98, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Fri 21
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Fri 21
+            </text>
+          </g>
+        </g>
+        <g transform="translate(180, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Mon 24
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Mon 24
+            </text>
+          </g>
+        </g>
+        <g transform="translate(262, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Thu 27
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Thu 27
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 203.55555555555554)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 178.11111111111111)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 152.66666666666669)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 127.22222222222223)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 101.77777777777777)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 76.33333333333334)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              12
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              12
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50.888888888888886)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              14
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              14
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 25.444444444444457)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              16
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              18
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              18
+            </text>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="area-series-off-path">
+          <rect width="353"
+                height="254"
+                x="-12.5"
+                y="-12.5"
+          >
+          </rect>
+        </clipPath>
+      </defs>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g clip-path="url(#area-series-off-path)">
+          <path class
+                pointer-events="none"
+                stroke="#2d60e8"
+                stroke-width="3"
+                fill="none"
+                d="M0,0L109,190.833L246,50.889L328,0"
+                stroke-dasharray
+          >
+          </path>
+          <path class
+                pointer-events="none"
+                mask
+                fill="url(#gradient-area-series-off-area-0)"
+                d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
+          >
+          </path>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-area-series-off-area-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+          <defs>
+            <clipPath id="area-series-off-path">
+              <rect width="353"
+                    height="254"
+                    x="-12.5"
+                    y="-12.5"
+              >
+              </rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#area-series-off-path)">
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="0"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="109"
+                      cy="190.83333333333334"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="246"
+                      cy="50.888888888888886"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="328"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Area Chart/Circle Series On smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _areaChart_yyojn_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="203.55555555555554"
+              y2="203.55555555555554"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="178.11111111111111"
+              y2="178.11111111111111"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="152.66666666666669"
+              y2="152.66666666666669"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="127.22222222222223"
+              y2="127.22222222222223"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="101.77777777777777"
+              y2="101.77777777777777"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="76.33333333333334"
+              y2="76.33333333333334"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="50.888888888888886"
+              y2="50.888888888888886"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="25.444444444444457"
+              y2="25.444444444444457"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="16"
+              x2="16"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="98"
+              x2="98"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="180"
+              x2="180"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="262"
+              x2="262"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(16, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Tue 18
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Tue 18
+            </text>
+          </g>
+        </g>
+        <g transform="translate(98, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Fri 21
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Fri 21
+            </text>
+          </g>
+        </g>
+        <g transform="translate(180, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Mon 24
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Mon 24
+            </text>
+          </g>
+        </g>
+        <g transform="translate(262, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Thu 27
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Thu 27
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 203.55555555555554)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 178.11111111111111)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 152.66666666666669)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 127.22222222222223)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 101.77777777777777)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 76.33333333333334)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              12
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              12
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50.888888888888886)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              14
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              14
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 25.444444444444457)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              16
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              18
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              18
+            </text>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="area-series-on-path">
+          <rect width="353"
+                height="254"
+                x="-12.5"
+                y="-12.5"
+          >
+          </rect>
+        </clipPath>
+      </defs>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g clip-path="url(#area-series-on-path)">
+          <path class
+                pointer-events="none"
+                stroke="#2d60e8"
+                stroke-width="3"
+                fill="none"
+                d="M0,0L109,190.833L246,50.889L328,0"
+                stroke-dasharray
+          >
+          </path>
+          <path class
+                pointer-events="none"
+                mask
+                fill="url(#gradient-area-series-on-area-0)"
+                d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
+          >
+          </path>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-area-series-on-area-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+          <defs>
+            <clipPath id="area-series-on-path">
+              <rect width="353"
+                    height="254"
+                    x="-12.5"
+                    y="-12.5"
+              >
+              </rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#area-series-on-path)">
+            <g class
+               tabindex="0"
+               aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="0"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="109"
+                      cy="190.83333333333334"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="246"
+                      cy="50.888888888888886"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="328"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Area Chart/Circle Series OnHover smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _areaChart_yyojn_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="203.55555555555554"
+              y2="203.55555555555554"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="178.11111111111111"
+              y2="178.11111111111111"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="152.66666666666669"
+              y2="152.66666666666669"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="127.22222222222223"
+              y2="127.22222222222223"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="101.77777777777777"
+              y2="101.77777777777777"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="76.33333333333334"
+              y2="76.33333333333334"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="50.888888888888886"
+              y2="50.888888888888886"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="25.444444444444457"
+              y2="25.444444444444457"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="16"
+              x2="16"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="98"
+              x2="98"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="180"
+              x2="180"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="262"
+              x2="262"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(16, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Tue 18
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Tue 18
+            </text>
+          </g>
+        </g>
+        <g transform="translate(98, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Fri 21
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Fri 21
+            </text>
+          </g>
+        </g>
+        <g transform="translate(180, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Mon 24
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Mon 24
+            </text>
+          </g>
+        </g>
+        <g transform="translate(262, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Thu 27
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Thu 27
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 203.55555555555554)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 178.11111111111111)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 152.66666666666669)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 127.22222222222223)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 101.77777777777777)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 76.33333333333334)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              12
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              12
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50.888888888888886)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              14
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              14
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 25.444444444444457)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              16
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              18
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              18
+            </text>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="area-series-on-hover-path">
+          <rect width="353"
+                height="254"
+                x="-12.5"
+                y="-12.5"
+          >
+          </rect>
+        </clipPath>
+      </defs>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g clip-path="url(#area-series-on-hover-path)">
+          <path class
+                pointer-events="none"
+                stroke="#2d60e8"
+                stroke-width="3"
+                fill="none"
+                d="M0,0L109,190.833L246,50.889L328,0"
+                stroke-dasharray
+          >
+          </path>
+          <path class
+                pointer-events="none"
+                mask
+                fill="url(#gradient-area-series-on-hover-area-0)"
+                d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
+          >
+          </path>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-area-series-on-hover-area-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+          <defs>
+            <clipPath id="area-series-on-hover-path">
+              <rect width="353"
+                    height="254"
+                    x="-12.5"
+                    y="-12.5"
+              >
+              </rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#area-series-on-hover-path)">
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="0"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="109"
+                      cy="190.83333333333334"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="246"
+                      cy="50.888888888888886"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="328"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Area Chart/Circle Series OnlyFirst smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _areaChart_yyojn_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="203.55555555555554"
+              y2="203.55555555555554"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="178.11111111111111"
+              y2="178.11111111111111"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="152.66666666666669"
+              y2="152.66666666666669"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="127.22222222222223"
+              y2="127.22222222222223"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="101.77777777777777"
+              y2="101.77777777777777"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="76.33333333333334"
+              y2="76.33333333333334"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="50.888888888888886"
+              y2="50.888888888888886"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="25.444444444444457"
+              y2="25.444444444444457"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="16"
+              x2="16"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="98"
+              x2="98"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="180"
+              x2="180"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="262"
+              x2="262"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(16, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Tue 18
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Tue 18
+            </text>
+          </g>
+        </g>
+        <g transform="translate(98, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Fri 21
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Fri 21
+            </text>
+          </g>
+        </g>
+        <g transform="translate(180, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Mon 24
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Mon 24
+            </text>
+          </g>
+        </g>
+        <g transform="translate(262, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Thu 27
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Thu 27
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 203.55555555555554)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 178.11111111111111)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 152.66666666666669)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 127.22222222222223)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 101.77777777777777)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 76.33333333333334)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              12
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              12
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50.888888888888886)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              14
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              14
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 25.444444444444457)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              16
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              18
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              18
+            </text>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="area-series-only-first-path">
+          <rect width="353"
+                height="254"
+                x="-12.5"
+                y="-12.5"
+          >
+          </rect>
+        </clipPath>
+      </defs>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g clip-path="url(#area-series-only-first-path)">
+          <path class
+                pointer-events="none"
+                stroke="#2d60e8"
+                stroke-width="3"
+                fill="none"
+                d="M0,0L109,190.833L246,50.889L328,0"
+                stroke-dasharray
+          >
+          </path>
+          <path class
+                pointer-events="none"
+                mask
+                fill="url(#gradient-area-series-only-first-area-0)"
+                d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
+          >
+          </path>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-area-series-only-first-area-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+          <defs>
+            <clipPath id="area-series-only-first-path">
+              <rect width="353"
+                    height="254"
+                    x="-12.5"
+                    y="-12.5"
+              >
+              </rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#area-series-only-first-path)">
+            <g class
+               tabindex="0"
+               aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="0"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="109"
+                      cy="190.83333333333334"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="246"
+                      cy="50.888888888888886"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="328"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Area Chart/Circle Series OnlyLast smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _areaChart_yyojn_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="203.55555555555554"
+              y2="203.55555555555554"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="178.11111111111111"
+              y2="178.11111111111111"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="152.66666666666669"
+              y2="152.66666666666669"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="127.22222222222223"
+              y2="127.22222222222223"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="101.77777777777777"
+              y2="101.77777777777777"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="76.33333333333334"
+              y2="76.33333333333334"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="50.888888888888886"
+              y2="50.888888888888886"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="25.444444444444457"
+              y2="25.444444444444457"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="16"
+              x2="16"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="98"
+              x2="98"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="180"
+              x2="180"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="262"
+              x2="262"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(16, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Tue 18
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Tue 18
+            </text>
+          </g>
+        </g>
+        <g transform="translate(98, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Fri 21
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Fri 21
+            </text>
+          </g>
+        </g>
+        <g transform="translate(180, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Mon 24
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Mon 24
+            </text>
+          </g>
+        </g>
+        <g transform="translate(262, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Thu 27
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Thu 27
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 203.55555555555554)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 178.11111111111111)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 152.66666666666669)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 127.22222222222223)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 101.77777777777777)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 76.33333333333334)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              12
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              12
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50.888888888888886)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              14
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              14
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 25.444444444444457)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              16
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              18
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              18
+            </text>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="area-series-only-last-path">
+          <rect width="353"
+                height="254"
+                x="-12.5"
+                y="-12.5"
+          >
+          </rect>
+        </clipPath>
+      </defs>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g clip-path="url(#area-series-only-last-path)">
+          <path class
+                pointer-events="none"
+                stroke="#2d60e8"
+                stroke-width="3"
+                fill="none"
+                d="M0,0L109,190.833L246,50.889L328,0"
+                stroke-dasharray
+          >
+          </path>
+          <path class
+                pointer-events="none"
+                mask
+                fill="url(#gradient-area-series-only-last-area-0)"
+                d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
+          >
+          </path>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-area-series-only-last-area-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+          <defs>
+            <clipPath id="area-series-only-last-path">
+              <rect width="353"
+                    height="254"
+                    x="-12.5"
+                    y="-12.5"
+              >
+              </rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#area-series-only-last-path)">
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="0"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="109"
+                      cy="190.83333333333334"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class="_hidden_jp2yc_5"
+               tabindex="0"
+               aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="246"
+                      cy="50.888888888888886"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <circle class="_point_u68jv_1"
+                      fill="#2d60e8"
+                      cx="328"
+                      cy="0"
+                      r="4"
+                      opacity="1"
+                      style="cursor: pointer;"
+              >
+              </circle>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Area Chart/Circle Series Shapes smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="350"
+     height="250"
+     style="height: 250px; width: 350px;"
+>
+  <svg width="350"
+       height="250"
+       class="_svg_1u3dt_30 _areaChart_yyojn_1"
+       tabindex="0"
+  >
+    <g transform="translate(22, 0)">
+      <g style="pointer-events: none;">
+        <line y1="229"
+              y2="229"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="203.55555555555554"
+              y2="203.55555555555554"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="178.11111111111111"
+              y2="178.11111111111111"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="152.66666666666669"
+              y2="152.66666666666669"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="127.22222222222223"
+              y2="127.22222222222223"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="101.77777777777777"
+              y2="101.77777777777777"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="76.33333333333334"
+              y2="76.33333333333334"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="50.888888888888886"
+              y2="50.888888888888886"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="25.444444444444457"
+              y2="25.444444444444457"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="0"
+              y2="0"
+              x1="0"
+              x2="328"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="16"
+              x2="16"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="98"
+              x2="98"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="180"
+              x2="180"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="262"
+              x2="262"
+              y1="0"
+              y2="229"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 229)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="328"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(16, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Tue 18
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Tue 18
+            </text>
+          </g>
+        </g>
+        <g transform="translate(98, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Fri 21
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Fri 21
+            </text>
+          </g>
+        </g>
+        <g transform="translate(180, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Mon 24
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Mon 24
+            </text>
+          </g>
+        </g>
+        <g transform="translate(262, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Thu 27
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              Thu 27
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="229"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 229)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 203.55555555555554)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              2
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              2
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 178.11111111111111)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              4
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              4
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 152.66666666666669)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              6
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              6
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 127.22222222222223)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              8
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              8
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 101.77777777777777)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 76.33333333333334)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              12
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              12
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 50.888888888888886)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              14
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              14
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 25.444444444444457)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              16
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              16
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              18
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              18
+            </text>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="area-series-shapes-path">
+          <rect width="353"
+                height="254"
+                x="-12.5"
+                y="-12.5"
+          >
+          </rect>
+        </clipPath>
+      </defs>
+      <g>
+        <rect height="229"
+              width="328"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g clip-path="url(#area-series-shapes-path)">
+          <path class
+                pointer-events="none"
+                stroke="#2d60e8"
+                stroke-width="3"
+                fill="none"
+                d="M0,0L109,190.833L246,50.889L328,0"
+                stroke-dasharray
+          >
+          </path>
+          <path class
+                pointer-events="none"
+                mask
+                fill="url(#gradient-area-series-shapes-area-0)"
+                d="M0,0L109,190.833L246,50.889L328,0L328,229L246,229L109,229L0,229Z"
+          >
+          </path>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-area-series-shapes-area-0"
+                          x1="10%"
+                          x2="10%"
+                          y1="100%"
+                          y2="0%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </linearGradient>
+          <defs>
+            <clipPath id="area-series-shapes-path">
+              <rect width="353"
+                    height="254"
+                    x="-12.5"
+                    y="-12.5"
+              >
+              </rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#area-series-shapes-path)">
+            <g class
+               tabindex="0"
+               aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <g class="_point_u68jv_1"
+                 opacity="1"
+                 transform-origin="0px -1.192500114440918px"
+                 style="transform: none; transform-origin: 0px -1.1925px;"
+              >
+                <path d="M0,-12.486L2.803,-3.858L11.875,-3.858L4.536,1.474L7.339,10.101L0,4.769L-7.339,10.101L-4.536,1.474L-11.875,-3.858L-2.803,-3.858Z"
+                      style="fill: lime; stroke: purple; stroke-width: 1.5;"
+                >
+                </path>
+              </g>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+               role="graphics-document"
+            >
+              <g class="_point_u68jv_1"
+                 opacity="1"
+                 transform-origin="0px -1.192500114440918px"
+                 style="transform: translateX(109px) translateY(190.833px); transform-origin: 0px -1.1925px;"
+              >
+                <path d="M0,-12.486L2.803,-3.858L11.875,-3.858L4.536,1.474L7.339,10.101L0,4.769L-7.339,10.101L-4.536,1.474L-11.875,-3.858L-2.803,-3.858Z"
+                      style="fill: lime; stroke: purple; stroke-width: 1.5;"
+                >
+                </path>
+              </g>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+               role="graphics-document"
+            >
+              <g class="_point_u68jv_1"
+                 opacity="1"
+                 transform-origin="0px -1.192500114440918px"
+                 style="transform: translateX(246px) translateY(50.8889px); transform-origin: 0px -1.1925px;"
+              >
+                <path d="M0,-12.486L2.803,-3.858L11.875,-3.858L4.536,1.474L7.339,10.101L0,4.769L-7.339,10.101L-4.536,1.474L-11.875,-3.858L-2.803,-3.858Z"
+                      style="fill: lime; stroke: purple; stroke-width: 1.5;"
+                >
+                </path>
+              </g>
+            </g>
+            <g class
+               tabindex="0"
+               aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+               role="graphics-document"
+            >
+              <g class="_point_u68jv_1"
+                 opacity="1"
+                 transform-origin="0px -1.192500114440918px"
+                 style="transform: translateX(328px) translateY(0px); transform-origin: 0px -1.1925px;"
+              >
+                <path d="M0,-12.486L2.803,-3.858L11.875,-3.858L4.536,1.474L7.339,10.101L0,4.769L-7.339,10.101L-4.536,1.474L-11.875,-3.858L-2.803,-3.858Z"
+                      style="fill: lime; stroke: purple; stroke-width: 1.5;"
+                >
+                </path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

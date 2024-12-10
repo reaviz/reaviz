@@ -3,9 +3,14 @@ import React, {
   ReactElement,
   FC,
   useCallback,
-  useState
+  useState,
+  useMemo
 } from 'react';
-import { PointSeries, PointSeriesProps } from './PointSeries';
+import {
+  POINT_SERIES_DEFAULT_PROPS,
+  PointSeries,
+  PointSeriesProps
+} from './PointSeries';
 import { Area, AreaProps } from './Area';
 import { MarkLine, MarkLineProps } from '@/common/MarkLine';
 import {
@@ -17,7 +22,8 @@ import { CloneElement } from 'reablocks';
 import {
   TooltipArea,
   TooltipAreaProps,
-  TooltipAreaEvent
+  TooltipAreaEvent,
+  TOOLTIP_AREA_DEFAULT_PROPS
 } from '@/common/Tooltip';
 import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '@/common/utils/interpolation';
@@ -125,25 +131,35 @@ export interface AreaSeriesProps {
 const PADDING = 25;
 const HALF_PADDING = PADDING / 2;
 
-export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
-  data,
-  height,
-  id,
-  width,
-  isZoomed,
-  tooltip,
-  xScale,
-  yScale,
-  type,
-  markLine,
-  symbols,
-  animated,
-  area,
-  interpolation,
-  line,
-  colorScheme,
-  valueMarkers
-}) => {
+export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
+  const {
+    data,
+    height,
+    id,
+    width,
+    isZoomed,
+    tooltip,
+    xScale,
+    yScale,
+    type,
+    markLine,
+    symbols,
+    animated,
+    area,
+    interpolation,
+    line,
+    colorScheme,
+    valueMarkers
+  } = { ...AREA_SERIES_DEFAULT_PROPS, ...props };
+
+  const symbolsProps = useMemo(
+    () => ({
+      ...POINT_SERIES_DEFAULT_PROPS,
+      ...symbols?.props
+    }),
+    [symbols]
+  );
+
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const [activePoint, setActivePoint] = useState<any | null>(null);
 
@@ -189,7 +205,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             index={index}
             hasArea={area !== null}
             animated={animated}
-            interpolation={interpolation}
+            interpolation={interpolation as InterpolationTypes}
             color={getPointColor}
           />
         )}
@@ -203,7 +219,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
             index={index}
             total={total}
             animated={animated}
-            interpolation={interpolation}
+            interpolation={interpolation as InterpolationTypes}
             color={getPointColor}
           />
         )}
@@ -226,7 +242,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
     (data: ChartInternalShallowDataShape[], index = 0) => {
       const visible = symbols !== null;
       const activeSymbols =
-        (symbols && symbols.props.activeValues) || activeValues;
+        (symbols && symbolsProps.activeValues) || activeValues;
 
       // Animations are only valid for Area
       const isAnimated = area !== undefined && animated && !activeSymbols;
@@ -336,7 +352,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
           })}
       </>
     ),
-    [valueMarkers, width, yScale]
+    [valueMarkers, width, yScale, xScale, height]
   );
 
   return (
@@ -373,7 +389,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = ({
   );
 };
 
-AreaSeries.defaultProps = {
+export const AREA_SERIES_DEFAULT_PROPS = {
   colorScheme: 'cybertron',
   animated: true,
   interpolation: 'linear',
@@ -381,6 +397,6 @@ AreaSeries.defaultProps = {
   line: <Line />,
   area: <Area />,
   markLine: <MarkLine />,
-  tooltip: <TooltipArea />,
+  tooltip: <TooltipArea {...TOOLTIP_AREA_DEFAULT_PROPS} />,
   symbols: <PointSeries />
 };

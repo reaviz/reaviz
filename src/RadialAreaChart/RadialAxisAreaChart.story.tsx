@@ -17,6 +17,7 @@ import {
 } from './RadialAreaSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Radial/Axis',
   component: RadialAreaChart,
   subcomponents: {
@@ -29,6 +30,7 @@ export default {
 
 export const SemiCircle = () => (
   <RadialAreaChart
+    id="simple"
     height={500}
     width={500}
     data={medDateData}
@@ -64,6 +66,7 @@ export const SemiCircle = () => (
 
 export const SemiCircleMultiSeries = () => (
   <RadialAreaChart
+    id="multi-series"
     data={multiCategory}
     height={500}
     width={500}
@@ -93,6 +96,7 @@ export const SemiCircleMultiSeries = () => (
 
 export const QuarterCircle = () => (
   <RadialAreaChart
+    id="quarter-circle"
     height={500}
     width={500}
     data={medDateData}
@@ -129,6 +133,7 @@ export const QuarterCircle = () => (
 
 export const QuarterCircleMultiSeries = () => (
   <RadialAreaChart
+    id="quarter-circle-multi-series"
     data={multiCategory}
     height={500}
     width={500}
@@ -159,6 +164,7 @@ export const QuarterCircleMultiSeries = () => (
 
 export const CustomCircle = () => (
   <RadialAreaChart
+    id="custom-circle"
     height={500}
     width={500}
     data={medDateData}
@@ -195,6 +201,7 @@ export const CustomCircle = () => (
 
 export const CustomCircle2 = () => (
   <RadialAreaChart
+    id="custom-circle-2"
     height={500}
     width={500}
     data={medDateData}
@@ -231,6 +238,7 @@ export const CustomCircle2 = () => (
 
 export const CustomCircle3 = () => (
   <RadialAreaChart
+    id="custom-circle-3"
     height={500}
     width={500}
     data={medDateData}
@@ -267,6 +275,7 @@ export const CustomCircle3 = () => (
 
 export const CustomCircle4 = () => (
   <RadialAreaChart
+    id="custom-circle-4"
     height={500}
     width={500}
     data={medDateData}
@@ -303,6 +312,7 @@ export const CustomCircle4 = () => (
 
 export const NoAutoRotateLabels = () => (
   <RadialAreaChart
+    id="no-auto-rotate-labels"
     height={500}
     width={500}
     data={medDateData}

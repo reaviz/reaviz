@@ -4,6 +4,7 @@ import {
   RadialAxisTickSeriesProps
 } from './RadialAxisTickSeries';
 import {
+  RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS,
   RadialAxisArcSeries,
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
@@ -117,7 +118,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
 RadialAxis.defaultProps = {
   innerRadius: 10,
   type: 'value',
-  arcs: <RadialAxisArcSeries />,
+  arcs: <RadialAxisArcSeries {...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS} />,
   ticks: <RadialAxisTickSeries />,
   startAngle: 0,
   endAngle: 2 * Math.PI

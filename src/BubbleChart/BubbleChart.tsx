@@ -21,16 +21,18 @@ export interface BubbleChartProps extends ChartProps {
   series?: ReactElement<BubbleSeriesProps, typeof BubbleSeries>;
 }
 
-export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
-  data,
-  id,
-  width,
-  height,
-  className,
-  containerClassName,
-  margins,
-  series
-}) => {
+export const BubbleChart: FC<Partial<BubbleChartProps>> = (props) => {
+  const {
+    data,
+    id,
+    width,
+    height,
+    className,
+    containerClassName,
+    margins,
+    series
+  } = { ...BUBBLE_CHART_DEFAULT_PROPS, ...props };
+
   const getData = useCallback(
     (cw: number, ch: number) => {
       const bubble = pack().size([cw, ch]).padding(3);
@@ -75,7 +77,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
   );
 };
 
-BubbleChart.defaultProps = {
+export const BUBBLE_CHART_DEFAULT_PROPS: Partial<BubbleChartProps> = {
   data: [],
   margins: 10,
   series: <BubbleSeries />

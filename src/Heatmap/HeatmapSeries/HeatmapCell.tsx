@@ -9,7 +9,11 @@ import React, {
   ReactNode
 } from 'react';
 import { offset } from '@floating-ui/dom';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
+  ChartTooltip,
+  ChartTooltipProps
+} from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import {
   constructFunctionProps,
@@ -120,10 +124,10 @@ export type HeatmapCellProps = {
 const modifiers = [offset({ mainAxis: 0, crossAxis: 3 })];
 
 export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
-  rx,
-  ry,
-  cursor,
-  tooltip,
+  rx = 2,
+  ry = 2,
+  cursor = 'auto',
+  tooltip = <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
   onClick,
   onMouseEnter,
   onMouseLeave,
@@ -278,14 +282,4 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       )}
     </Fragment>
   );
-};
-
-HeatmapCell.defaultProps = {
-  rx: 2,
-  ry: 2,
-  cursor: 'auto',
-  tooltip: <ChartTooltip />,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined
 };

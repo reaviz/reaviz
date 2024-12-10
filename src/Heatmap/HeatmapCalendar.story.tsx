@@ -8,9 +8,14 @@ import {
   heatmapCalendarOffsetData
 } from 'reaviz-data-utils';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
-import { ChartTooltip, formatValue } from '@/common';
+import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
+  ChartTooltip,
+  formatValue
+} from '@/common';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Heatmap/Calendar',
   component: CalendarHeatmap,
   subcomponents: {
@@ -20,7 +25,12 @@ export default {
 };
 
 export const YearCalendar = () => (
-  <CalendarHeatmap height={115} width={715} data={heatmapCalendarData} />
+  <CalendarHeatmap
+    id="year-calendar"
+    height={115}
+    width={715}
+    data={heatmapCalendarData}
+  />
 );
 
 export const YearCalendarMarchStart = () => (
@@ -29,6 +39,7 @@ export const YearCalendarMarchStart = () => (
 
 export const MonthCalendar = () => (
   <CalendarHeatmap
+    id="month-calendar"
     height={115}
     width={100}
     view="month"
@@ -39,18 +50,21 @@ export const MonthCalendar = () => (
 export const MultiMonthCalendar = () => (
   <div style={{ display: 'flex' }}>
     <CalendarHeatmap
+      id="multi-month-calendar-1"
       height={115}
       width={100}
       view="month"
       data={janHeatMapData}
     />
     <CalendarHeatmap
+      id="multi-month-calendar-2"
       height={115}
       width={100}
       view="month"
       data={febHeatMapData}
     />
     <CalendarHeatmap
+      id="multi-month-calendar-3"
       height={115}
       width={100}
       view="month"
@@ -65,6 +79,7 @@ export const SelectCell = () => {
   return (
     <div style={{ width: '300px' }}>
       <CalendarHeatmap
+        id="select-cell"
         height={115}
         width={100}
         data={janHeatMapData}

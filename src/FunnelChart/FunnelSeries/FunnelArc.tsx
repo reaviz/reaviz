@@ -3,10 +3,16 @@ import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
 import { InterpolationTypes, getAriaLabel, interpolate } from '@/common/utils';
 import { ColorSchemeType, getColor, schemes } from '@/common/color';
-import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
+import {
+  Gradient,
+  GRADIENT_DEFAULT_PROPS,
+  GradientProps,
+  GradientStop
+} from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
   ChartTooltip,
   TooltipArea,
   TooltipAreaProps,
@@ -77,20 +83,22 @@ export interface FunnelArcProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
-export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
-  data,
-  id,
-  xScale,
-  opacity,
-  index,
-  variant,
-  yScale,
-  interpolation,
-  colorScheme,
-  gradient,
-  glow,
-  tooltip
-}) => {
+export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
+  const {
+    data,
+    id,
+    xScale,
+    opacity,
+    index,
+    variant,
+    yScale,
+    interpolation,
+    colorScheme,
+    gradient,
+    glow,
+    tooltip
+  } = { ...FUNNEL_ARC_DEFAULT_PROPS, ...props };
+
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
 
@@ -131,6 +139,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
       width={width}
       tooltip={
         <ChartTooltip
+          {...CHART_TOOLTIP_DEFAULT_PROPS}
           followCursor
           content={(data, color) => {
             const value = {
@@ -191,9 +200,10 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   );
 };
 
-FunnelArc.defaultProps = {
+export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
   gradient: (
     <Gradient
+      {...GRADIENT_DEFAULT_PROPS}
       direction="horizontal"
       stops={[
         <GradientStop offset="0%" stopOpacity={1} key="stop" />,
@@ -203,7 +213,6 @@ FunnelArc.defaultProps = {
   ),
   interpolation: 'smooth',
   colorScheme: schemes.cybertron[0],
-  animated: true,
   variant: 'default',
   opacity: 1,
   tooltip: null

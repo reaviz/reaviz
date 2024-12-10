@@ -7,12 +7,20 @@ import React, {
   useMemo
 } from 'react';
 import { IVennLayout } from '@upsetjs/venn.js';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import {
+  CHART_TOOLTIP_DEFAULT_PROPS,
+  ChartTooltip,
+  ChartTooltipProps
+} from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '@/common/Mask';
-import { Gradient, GradientProps } from '@/common/Gradient';
+import {
+  Gradient,
+  GRADIENT_DEFAULT_PROPS,
+  GradientProps
+} from '@/common/Gradient';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import { Glow, getAriaLabel } from '@/common';
 import { generateGlowStyles } from '@/common/Glow/utils';
@@ -255,8 +263,8 @@ VennArc.defaultProps = {
   activeStyle: { opacity: 0.8 },
   initialStyle: { opacity: 0.6 },
   strokeWidth: 3,
-  gradient: <Gradient />,
-  tooltip: <ChartTooltip />,
+  gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />,
+  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
   onClick: () => undefined,
   onMouseEnter: () => undefined,
   onMouseLeave: () => undefined

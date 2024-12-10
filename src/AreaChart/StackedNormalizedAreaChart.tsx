@@ -5,7 +5,8 @@ import { StackedNormalizedAreaSeries } from './AreaSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedAreaChartProps extends AreaChartProps {
@@ -14,9 +15,11 @@ export interface StackedNormalizedAreaChartProps extends AreaChartProps {
 
 export const StackedNormalizedAreaChart: FC<
   Partial<StackedNormalizedAreaChartProps>
-> = (props) => <AreaChart {...props} />;
+> = (props) => (
+  <AreaChart {...STACKED_NORMALIZED_AREA_CHART_DEFAULT_PROPS} {...props} />
+);
 
-StackedNormalizedAreaChart.defaultProps = {
+export const STACKED_NORMALIZED_AREA_CHART_DEFAULT_PROPS = {
   series: <StackedNormalizedAreaSeries />,
   yAxis: (
     <LinearYAxis
@@ -25,6 +28,7 @@ StackedNormalizedAreaChart.defaultProps = {
         <LinearYAxisTickSeries
           label={
             <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
               rotation={false}
               format={(data) => `${data * 100}%`}
             />

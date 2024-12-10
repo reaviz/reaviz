@@ -36,8 +36,8 @@ export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
   data,
   xScale,
   yScale,
-  line,
-  label
+  line = <FunnelAxisLine />,
+  label = <FunnelAxisLabel />
 }) => {
   const lines = range(0, data.length);
 
@@ -66,9 +66,4 @@ export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
       ))}
     </>
   );
-};
-
-FunnelAxis.defaultProps = {
-  label: <FunnelAxisLabel />,
-  line: <FunnelAxisLine />
 };

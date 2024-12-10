@@ -47,15 +47,12 @@ export interface BubbleSeriesProps {
   label?: ReactElement<BubbleLabelProps, typeof BubbleLabel>;
 }
 
-export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
-  id,
-  data,
-  colorScheme,
-  animated,
-  bubble,
-  format,
-  label
-}) => {
+export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = (props) => {
+  const { id, data, colorScheme, animated, bubble, format, label } = {
+    ...BUBBLE_SERIES_DEFAULT_PROPS,
+    ...props
+  };
+
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
   const renderBubble = (item, index) => {
@@ -104,7 +101,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   return <Fragment>{data.map(renderBubble)}</Fragment>;
 };
 
-BubbleSeries.defaultProps = {
+export const BUBBLE_SERIES_DEFAULT_PROPS: Partial<BubbleSeriesProps> = {
   colorScheme: 'cybertron',
   animated: true,
   bubble: <Bubble />,

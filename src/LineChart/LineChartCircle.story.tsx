@@ -7,6 +7,7 @@ import { symbol, symbolStar } from 'd3-shape';
 import { LineSeries } from './LineSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Circle Series',
   component: LineChart,
   subcomponents: {
@@ -16,6 +17,7 @@ export default {
 
 export const On = () => (
   <LineChart
+    id="on"
     width={350}
     height={250}
     data={singleDateData}
@@ -25,6 +27,7 @@ export const On = () => (
 
 export const Off = () => (
   <LineChart
+    id="off"
     width={350}
     height={250}
     data={singleDateData}
@@ -34,6 +37,7 @@ export const Off = () => (
 
 export const OnHover = () => (
   <LineChart
+    id="on-hover"
     width={350}
     height={250}
     data={singleDateData}
@@ -43,6 +47,7 @@ export const OnHover = () => (
 
 export const OnlyFirst = () => (
   <LineChart
+    id="only-first"
     width={350}
     height={250}
     data={singleDateData}
@@ -52,6 +57,7 @@ export const OnlyFirst = () => (
 
 export const OnlyLast = () => (
   <LineChart
+    id="only-last"
     width={350}
     height={250}
     data={singleDateData}
@@ -61,6 +67,7 @@ export const OnlyLast = () => (
 
 export const Shapes = () => (
   <LineChart
+    id="shapes"
     width={350}
     height={250}
     data={singleDateData}
