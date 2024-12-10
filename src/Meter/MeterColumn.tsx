@@ -49,17 +49,19 @@ export interface MeterColumnProps {
   animated?: boolean;
 }
 
-export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
-  index,
-  scale,
-  value,
-  count,
-  height,
-  className,
-  animated,
-  activeFill,
-  inActiveFill
-}) => {
+export const MeterColumn: FC<Partial<MeterColumnProps>> = (props) => {
+  const {
+    index,
+    scale,
+    value,
+    count,
+    height,
+    className,
+    animated,
+    activeFill,
+    inActiveFill
+  } = { ...METER_COLUMN_DEFAULT_PROPS, ...props };
+
   const isActive = scale(index) <= scale(value);
   const fill = isActive ? activeFill : inActiveFill;
   const transition = animated
@@ -89,9 +91,9 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
   );
 };
 
-MeterColumn.defaultProps = {
+export const METER_COLUMN_DEFAULT_PROPS = {
   activeFill: schemes.cybertron[0],
   inActiveFill: '#414242',
   height: 32,
   animated: true
-};
+} as MeterColumnProps;
