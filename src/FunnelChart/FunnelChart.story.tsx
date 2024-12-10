@@ -27,6 +27,7 @@ const Template: StoryFn<FunnelChartProps> = (args) => <FunnelChart {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
+  id: 'basic',
   height: 300,
   width: 500,
   data: [
@@ -39,6 +40,7 @@ Basic.args = {
 
 export const LargeDataset = Template.bind({});
 LargeDataset.args = {
+  id: 'large-dataset',
   height: 300,
   width: 500,
   data: [
@@ -61,6 +63,7 @@ LargeDataset.args = {
 
 export const Interpolation = () => (
   <FunnelChart
+    id="interpolation"
     height={300}
     width={500}
     series={<FunnelSeries arc={<FunnelArc interpolation="step" />} />}
@@ -77,6 +80,7 @@ export const Interpolation = () => (
 export const Autosize = () => (
   <div style={{ width: '90vw', height: '90vh', border: 'solid 1px red' }}>
     <FunnelChart
+      id="autosize"
       data={[
         { key: 'Visited Site', data: 1000 },
         { key: 'Added to Cart', data: 900 },
@@ -89,6 +93,7 @@ export const Autosize = () => (
 
 export const Layered = () => (
   <FunnelChart
+    id="layered"
     height={400}
     width={800}
     data={[
@@ -113,6 +118,7 @@ export const Layered = () => (
 
 export const LabelPosition = () => (
   <FunnelChart
+    id="label-position"
     height={300}
     width={500}
     series={
@@ -131,6 +137,7 @@ export const LabelPosition = () => (
 
 export const NoValue = () => (
   <FunnelChart
+    id="no-value"
     height={300}
     width={500}
     series={
