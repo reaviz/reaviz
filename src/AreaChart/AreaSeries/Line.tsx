@@ -20,7 +20,7 @@ import {
   PropFunctionTypes
 } from '@/common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
-import { Glow, Gradient, GradientProps } from '@/common';
+import { Glow, Gradient, GradientProps, roundDecimals } from '@/common';
 import { generateGlowStyles } from '@/common/Glow/utils';
 import { CloneElement } from 'reablocks';
 
@@ -96,6 +96,10 @@ export interface LineProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
+function roundToFiveDecimals(value: number): number {
+  return parseFloat(value.toFixed(5));
+}
+
 export const Line: FC<Partial<LineProps>> = (props) => {
   const {
     id,
@@ -120,7 +124,7 @@ export const Line: FC<Partial<LineProps>> = (props) => {
 
   useEffect(() => {
     if (ghostPathRef.current) {
-      setPathLength(ghostPathRef.current.getTotalLength());
+      setPathLength(roundDecimals(ghostPathRef.current.getTotalLength()));
     }
   }, [data, xScale, yScale, width]);
 
