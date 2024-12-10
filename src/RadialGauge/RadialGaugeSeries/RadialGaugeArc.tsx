@@ -2,11 +2,7 @@ import React, { FC, ReactElement, useMemo } from 'react';
 import { arc } from 'd3-shape';
 import { PieArc, ArcData } from '@/PieChart';
 import { ChartShallowDataShape } from '@/common/data';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { Gradient, GradientProps } from '@/common/Gradient';
 
 export interface RadialGaugeArcProps {
@@ -187,5 +183,5 @@ RadialGaugeArc.defaultProps = {
   color: '#353d44',
   animated: true,
   disabled: false,
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />
+  tooltip: <ChartTooltip />
 };

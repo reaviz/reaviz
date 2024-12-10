@@ -3,11 +3,7 @@ import chroma from 'chroma-js';
 import { motion } from 'framer-motion';
 import { CloneElement } from 'reablocks';
 import { ArcData } from '@/PieChart';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { useInterpolate } from './useInterpolate';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import { Gradient, GradientProps } from '@/common/Gradient';
@@ -188,5 +184,5 @@ PieArc.defaultProps = {
   cursor: 'initial',
   animated: true,
   disabled: false,
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />
+  tooltip: <ChartTooltip />
 };

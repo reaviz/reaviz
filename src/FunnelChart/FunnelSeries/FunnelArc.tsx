@@ -12,7 +12,6 @@ import {
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
   ChartTooltip,
   TooltipArea,
   TooltipAreaProps,
@@ -139,7 +138,6 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
       width={width}
       tooltip={
         <ChartTooltip
-          {...CHART_TOOLTIP_DEFAULT_PROPS}
           followCursor
           content={(data, color) => {
             const value = {

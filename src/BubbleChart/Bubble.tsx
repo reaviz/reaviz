@@ -7,11 +7,7 @@ import React, {
   useState
 } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import { Gradient, GradientProps } from '@/common/Gradient';
@@ -93,7 +89,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   onMouseEnter,
   onMouseLeave,
   animated,
-  tooltip = <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />
+  tooltip = <ChartTooltip />
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);

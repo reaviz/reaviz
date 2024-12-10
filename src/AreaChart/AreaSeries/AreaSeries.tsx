@@ -22,8 +22,7 @@ import { CloneElement } from 'reablocks';
 import {
   TooltipArea,
   TooltipAreaProps,
-  TooltipAreaEvent,
-  TOOLTIP_AREA_DEFAULT_PROPS
+  TooltipAreaEvent
 } from '@/common/Tooltip';
 import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '@/common/utils/interpolation';
@@ -397,6 +396,6 @@ export const AREA_SERIES_DEFAULT_PROPS = {
   line: <Line />,
   area: <Area />,
   markLine: <MarkLine />,
-  tooltip: <TooltipArea {...TOOLTIP_AREA_DEFAULT_PROPS} />,
+  tooltip: <TooltipArea />,
   symbols: <PointSeries />
 };

@@ -8,11 +8,7 @@ import React, {
 } from 'react';
 import { motion } from 'framer-motion';
 import chroma from 'chroma-js';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
@@ -146,5 +142,5 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
 
 TreeMapRect.defaultProps = {
   cursor: 'pointer',
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />
+  tooltip: <ChartTooltip />
 };

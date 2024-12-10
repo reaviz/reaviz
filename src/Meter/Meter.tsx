@@ -47,16 +47,11 @@ export interface MeterProps {
   column: ReactElement<MeterColumnProps, typeof MeterColumn> | null;
 }
 
-export const Meter: FC<Partial<MeterProps>> = ({
-  min,
-  max,
-  className,
-  column,
-  gap,
-  style,
-  value,
-  columns
-}) => {
+export const Meter: FC<Partial<MeterProps>> = (props) => {
+  const { min, max, className, column, gap, style, value, columns } = {
+    ...METER_DEFAULT_PROPS,
+    ...props
+  };
   const scale = scaleLinear().domain([min, max]).range([0, 100]);
   const cols = scale.ticks(columns);
 
@@ -79,7 +74,7 @@ export const Meter: FC<Partial<MeterProps>> = ({
   );
 };
 
-Meter.defaultProps = {
+export const METER_DEFAULT_PROPS = {
   min: 0,
   max: 100,
   columns: 10,

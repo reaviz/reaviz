@@ -16,11 +16,7 @@ import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '@/common/utils/interpolation';
 import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
-import {
-  TooltipAreaProps,
-  TooltipArea,
-  TOOLTIP_AREA_DEFAULT_PROPS
-} from '@/common/Tooltip';
+import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
 import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 import { POINT_SERIES_DEFAULT_PROPS } from '@/AreaChart';
 
@@ -346,7 +342,7 @@ RadialAreaSeries.defaultProps = {
   area: <RadialArea />,
   line: <RadialLine />,
   symbols: <RadialPointSeries />,
-  tooltip: <TooltipArea {...TOOLTIP_AREA_DEFAULT_PROPS} />,
+  tooltip: <TooltipArea />,
   startAngle: 0,
   endAngle: 2 * Math.PI,
   isClosedCurve: true
