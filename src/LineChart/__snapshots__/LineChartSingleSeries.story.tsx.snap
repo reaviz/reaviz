@@ -3104,7 +3104,7 @@ exports[`Charts/Line Chart/Single Series NoAnimation smoke-test 1`] = `
                 stroke-width="3"
                 fill="none"
                 d="M0,0L109,190.833L246,50.889L328,0"
-                stroke-dasharray="512.1160888671875 512.1160888671875"
+                stroke-dasharray="512.11609 512.11609"
                 stroke-dashoffset="0"
           >
           </path>

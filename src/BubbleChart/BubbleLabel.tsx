@@ -46,16 +46,12 @@ export interface BubbleLabelProps {
   format?: (data) => any;
 }
 
-export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
-  id,
-  data,
-  format,
-  wrap,
-  fill,
-  fontSize,
-  fontFamily,
-  animated
-}) => {
+export const BubbleLabel: FC<Partial<BubbleLabelProps>> = (props) => {
+  const { id, data, format, wrap, fill, fontSize, fontFamily, animated } = {
+    ...BUBBLE_LABEL_DEFAULT_PROPS,
+    ...props
+  };
+
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   let isElement = false;
   let label;
@@ -101,7 +97,7 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   );
 };
 
-BubbleLabel.defaultProps = {
+export const BUBBLE_LABEL_DEFAULT_PROPS: Partial<BubbleLabelProps> = {
   wrap: true,
   fontSize: 14,
   fontFamily: 'sans-serif'

@@ -17,19 +17,19 @@ exports[`Charts/Funnel Chart Autosize smoke-test 1`] = `
              role="graphics-document"
           >
             <path d="M0,0C95.833,5.383,191.667,10.767,287.5,32.3C383.333,53.833,479.167,102.283,575,129.2C670.833,156.117,766.667,193.8,862.5,193.8C958.333,193.8,1054.167,193.8,1150,193.8L1150,323C1054.167,323,958.333,323,862.5,323C766.667,323,670.833,323,575,323C479.167,323,383.333,323,287.5,323C191.667,323,95.833,323,0,323Z"
-                  fill="url(#gradient-funnel-series-ref-4-arc-0-top)"
+                  fill="url(#gradient-funnel-series-autosize-arc-0-top)"
                   stroke="none"
                   opacity="1"
             >
             </path>
             <path d="M0,646C95.833,640.617,191.667,635.233,287.5,613.7C383.333,592.167,479.167,543.717,575,516.8C670.833,489.883,766.667,452.2,862.5,452.2C958.333,452.2,1054.167,452.2,1150,452.2L1150,323C1054.167,323,958.333,323,862.5,323C766.667,323,670.833,323,575,323C479.167,323,383.333,323,287.5,323C191.667,323,95.833,323,0,323Z"
-                  fill="url(#gradient-funnel-series-ref-4-arc-0-bottom)"
+                  fill="url(#gradient-funnel-series-autosize-arc-0-bottom)"
                   stroke="none"
                   opacity="1"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-funnel-series-ref-4-arc-0-top"
+                            id="gradient-funnel-series-autosize-arc-0-top"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -47,7 +47,7 @@ exports[`Charts/Funnel Chart Autosize smoke-test 1`] = `
               </stop>
             </linearGradient>
             <linearGradient spreadmethod="pad"
-                            id="gradient-funnel-series-ref-4-arc-0-bottom"
+                            id="gradient-funnel-series-autosize-arc-0-bottom"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -225,19 +225,19 @@ exports[`Charts/Funnel Chart Basic smoke-test 1`] = `
            role="graphics-document"
         >
           <path d="M0,0C41.667,2.5,83.333,5,125,15C166.667,25,208.333,47.5,250,60C291.667,72.5,333.333,90,375,90C416.667,90,458.333,90,500,90L500,150C458.333,150,416.667,150,375,150C333.333,150,291.667,150,250,150C208.333,150,166.667,150,125,150C83.333,150,41.667,150,0,150Z"
-                fill="url(#gradient-funnel-series-ref-1-arc-0-top)"
+                fill="url(#gradient-funnel-series-basic-arc-0-top)"
                 stroke="none"
                 opacity="1"
           >
           </path>
           <path d="M0,300C41.667,297.5,83.333,295,125,285C166.667,275,208.333,252.5,250,240C291.667,227.5,333.333,210,375,210C416.667,210,458.333,210,500,210L500,150C458.333,150,416.667,150,375,150C333.333,150,291.667,150,250,150C208.333,150,166.667,150,125,150C83.333,150,41.667,150,0,150Z"
-                fill="url(#gradient-funnel-series-ref-1-arc-0-bottom)"
+                fill="url(#gradient-funnel-series-basic-arc-0-bottom)"
                 stroke="none"
                 opacity="1"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-funnel-series-ref-1-arc-0-top"
+                          id="gradient-funnel-series-basic-arc-0-top"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -255,7 +255,7 @@ exports[`Charts/Funnel Chart Basic smoke-test 1`] = `
             </stop>
           </linearGradient>
           <linearGradient spreadmethod="pad"
-                          id="gradient-funnel-series-ref-1-arc-0-bottom"
+                          id="gradient-funnel-series-basic-arc-0-bottom"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -432,19 +432,19 @@ exports[`Charts/Funnel Chart Interpolation smoke-test 1`] = `
            role="graphics-document"
         >
           <path d="M0,0L62.5,0L62.5,15L187.5,15L187.5,60L312.5,60L312.5,90L437.5,90L437.5,90L500,90L500,150L437.5,150L437.5,150L312.5,150L312.5,150L187.5,150L187.5,150L62.5,150L62.5,150L0,150Z"
-                fill="url(#gradient-funnel-series-ref-3-arc-0-top)"
+                fill="url(#gradient-funnel-series-interpolation-arc-0-top)"
                 stroke="none"
                 opacity="1"
           >
           </path>
           <path d="M0,300L62.5,300L62.5,285L187.5,285L187.5,240L312.5,240L312.5,210L437.5,210L437.5,210L500,210L500,150L437.5,150L437.5,150L312.5,150L312.5,150L187.5,150L187.5,150L62.5,150L62.5,150L0,150Z"
-                fill="url(#gradient-funnel-series-ref-3-arc-0-bottom)"
+                fill="url(#gradient-funnel-series-interpolation-arc-0-bottom)"
                 stroke="none"
                 opacity="1"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-funnel-series-ref-3-arc-0-top"
+                          id="gradient-funnel-series-interpolation-arc-0-top"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -462,7 +462,7 @@ exports[`Charts/Funnel Chart Interpolation smoke-test 1`] = `
             </stop>
           </linearGradient>
           <linearGradient spreadmethod="pad"
-                          id="gradient-funnel-series-ref-3-arc-0-bottom"
+                          id="gradient-funnel-series-interpolation-arc-0-bottom"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -639,19 +639,19 @@ exports[`Charts/Funnel Chart LabelPosition smoke-test 1`] = `
            role="graphics-document"
         >
           <path d="M0,0C41.667,2.5,83.333,5,125,15C166.667,25,208.333,47.5,250,60C291.667,72.5,333.333,90,375,90C416.667,90,458.333,90,500,90L500,150C458.333,150,416.667,150,375,150C333.333,150,291.667,150,250,150C208.333,150,166.667,150,125,150C83.333,150,41.667,150,0,150Z"
-                fill="url(#gradient-funnel-series-ref-6-arc-0-top)"
+                fill="url(#gradient-funnel-series-label-position-arc-0-top)"
                 stroke="none"
                 opacity="1"
           >
           </path>
           <path d="M0,300C41.667,297.5,83.333,295,125,285C166.667,275,208.333,252.5,250,240C291.667,227.5,333.333,210,375,210C416.667,210,458.333,210,500,210L500,150C458.333,150,416.667,150,375,150C333.333,150,291.667,150,250,150C208.333,150,166.667,150,125,150C83.333,150,41.667,150,0,150Z"
-                fill="url(#gradient-funnel-series-ref-6-arc-0-bottom)"
+                fill="url(#gradient-funnel-series-label-position-arc-0-bottom)"
                 stroke="none"
                 opacity="1"
           >
           </path>
           <linearGradient spreadmethod="pad"
-                          id="gradient-funnel-series-ref-6-arc-0-top"
+                          id="gradient-funnel-series-label-position-arc-0-top"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -669,7 +669,7 @@ exports[`Charts/Funnel Chart LabelPosition smoke-test 1`] = `
             </stop>
           </linearGradient>
           <linearGradient spreadmethod="pad"
-                          id="gradient-funnel-series-ref-6-arc-0-bottom"
+                          id="gradient-funnel-series-label-position-arc-0-bottom"
                           y1="0%"
                           y2="0%"
                           x1="0%"
@@ -853,19 +853,19 @@ exports[`Charts/Funnel Chart LargeDataset smoke-test 1`] = `
              role="graphics-document"
           >
             <path d="M0,37.5C20.833,46.25,41.667,55,62.5,60C83.333,65,104.167,62.5,125,67.5C145.833,72.5,166.667,100,187.5,105C208.333,110,229.167,108.75,250,112.5C270.833,116.25,291.667,122.5,312.5,127.5C333.333,132.5,354.167,142,375,142.5C395.833,143,416.667,143.25,437.5,143.25C458.333,143.25,479.167,143.25,500,143.25L500,150C479.167,150,458.333,150,437.5,150C416.667,150,395.833,150,375,150C354.167,150,333.333,150,312.5,150C291.667,150,270.833,150,250,150C229.167,150,208.333,150,187.5,150C166.667,150,145.833,150,125,150C104.167,150,83.333,150,62.5,150C41.667,150,20.833,150,0,150Z"
-                  fill="url(#gradient-funnel-series-ref-2-arc-0-top)"
+                  fill="url(#gradient-funnel-series-large-dataset-arc-0-top)"
                   stroke="none"
                   opacity="1"
             >
             </path>
             <path d="M0,262.5C20.833,253.75,41.667,245,62.5,240C83.333,235,104.167,237.5,125,232.5C145.833,227.5,166.667,200,187.5,195C208.333,190,229.167,191.25,250,187.5C270.833,183.75,291.667,177.5,312.5,172.5C333.333,167.5,354.167,158,375,157.5C395.833,157,416.667,156.75,437.5,156.75C458.333,156.75,479.167,156.75,500,156.75L500,150C479.167,150,458.333,150,437.5,150C416.667,150,395.833,150,375,150C354.167,150,333.333,150,312.5,150C291.667,150,270.833,150,250,150C229.167,150,208.333,150,187.5,150C166.667,150,145.833,150,125,150C104.167,150,83.333,150,62.5,150C41.667,150,20.833,150,0,150Z"
-                  fill="url(#gradient-funnel-series-ref-2-arc-0-bottom)"
+                  fill="url(#gradient-funnel-series-large-dataset-arc-0-bottom)"
                   stroke="none"
                   opacity="1"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-funnel-series-ref-2-arc-0-top"
+                            id="gradient-funnel-series-large-dataset-arc-0-top"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -883,7 +883,7 @@ exports[`Charts/Funnel Chart LargeDataset smoke-test 1`] = `
               </stop>
             </linearGradient>
             <linearGradient spreadmethod="pad"
-                            id="gradient-funnel-series-ref-2-arc-0-bottom"
+                            id="gradient-funnel-series-large-dataset-arc-0-bottom"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -1205,19 +1205,19 @@ exports[`Charts/Funnel Chart NoValue smoke-test 1`] = `
              role="graphics-document"
           >
             <path d="M0,0C41.667,2.5,83.333,5,125,15C166.667,25,208.333,47.5,250,60C291.667,72.5,333.333,90,375,90C416.667,90,458.333,90,500,90L500,150C458.333,150,416.667,150,375,150C333.333,150,291.667,150,250,150C208.333,150,166.667,150,125,150C83.333,150,41.667,150,0,150Z"
-                  fill="url(#gradient-funnel-series-ref-7-arc-0-top)"
+                  fill="url(#gradient-funnel-series-no-value-arc-0-top)"
                   stroke="none"
                   opacity="1"
             >
             </path>
             <path d="M0,300C41.667,297.5,83.333,295,125,285C166.667,275,208.333,252.5,250,240C291.667,227.5,333.333,210,375,210C416.667,210,458.333,210,500,210L500,150C458.333,150,416.667,150,375,150C333.333,150,291.667,150,250,150C208.333,150,166.667,150,125,150C83.333,150,41.667,150,0,150Z"
-                  fill="url(#gradient-funnel-series-ref-7-arc-0-bottom)"
+                  fill="url(#gradient-funnel-series-no-value-arc-0-bottom)"
                   stroke="none"
                   opacity="1"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-funnel-series-ref-7-arc-0-top"
+                            id="gradient-funnel-series-no-value-arc-0-top"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -1235,7 +1235,7 @@ exports[`Charts/Funnel Chart NoValue smoke-test 1`] = `
               </stop>
             </linearGradient>
             <linearGradient spreadmethod="pad"
-                            id="gradient-funnel-series-ref-7-arc-0-bottom"
+                            id="gradient-funnel-series-no-value-arc-0-bottom"
                             y1="0%"
                             y2="0%"
                             x1="0%"

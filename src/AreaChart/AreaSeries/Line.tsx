@@ -20,7 +20,7 @@ import {
   PropFunctionTypes
 } from '@/common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
-import { Glow, Gradient, GradientProps } from '@/common';
+import { Glow, Gradient, GradientProps, roundDecimals } from '@/common';
 import { generateGlowStyles } from '@/common/Glow/utils';
 import { CloneElement } from 'reablocks';
 
@@ -96,29 +96,35 @@ export interface LineProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
-export const Line: FC<Partial<LineProps>> = ({
-  id,
-  width,
-  data,
-  color,
-  index,
-  strokeWidth,
-  hasArea,
-  animated,
-  yScale,
-  xScale,
-  showZeroStroke,
-  interpolation,
-  gradient,
-  glow,
-  ...rest
-}) => {
+function roundToFiveDecimals(value: number): number {
+  return parseFloat(value.toFixed(5));
+}
+
+export const Line: FC<Partial<LineProps>> = (props) => {
+  const {
+    id,
+    width,
+    data,
+    color,
+    index,
+    strokeWidth,
+    hasArea,
+    animated,
+    yScale,
+    xScale,
+    showZeroStroke,
+    interpolation,
+    gradient,
+    glow,
+    ...rest
+  } = { ...LINE_DEFAULT_PROPS, ...props };
+
   const [pathLength, setPathLength] = useState<number | null>(null);
   const ghostPathRef = useRef<SVGPathElement | null>(null);
 
   useEffect(() => {
     if (ghostPathRef.current) {
-      setPathLength(ghostPathRef.current.getTotalLength());
+      setPathLength(roundDecimals(ghostPathRef.current.getTotalLength()));
     }
   }, [data, xScale, yScale, width]);
 
@@ -254,7 +260,7 @@ export const Line: FC<Partial<LineProps>> = ({
   );
 };
 
-Line.defaultProps = {
+export const LINE_DEFAULT_PROPS = {
   showZeroStroke: true,
   strokeWidth: 3
 };

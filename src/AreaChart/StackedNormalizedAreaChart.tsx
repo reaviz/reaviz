@@ -15,9 +15,11 @@ export interface StackedNormalizedAreaChartProps extends AreaChartProps {
 
 export const StackedNormalizedAreaChart: FC<
   Partial<StackedNormalizedAreaChartProps>
-> = (props) => <AreaChart {...props} />;
+> = (props) => (
+  <AreaChart {...STACKED_NORMALIZED_AREA_CHART_DEFAULT_PROPS} {...props} />
+);
 
-StackedNormalizedAreaChart.defaultProps = {
+export const STACKED_NORMALIZED_AREA_CHART_DEFAULT_PROPS = {
   series: <StackedNormalizedAreaSeries />,
   yAxis: (
     <LinearYAxis

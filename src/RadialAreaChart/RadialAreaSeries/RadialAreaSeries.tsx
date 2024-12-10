@@ -3,6 +3,7 @@ import React, {
   Fragment,
   ReactElement,
   useCallback,
+  useMemo,
   useState
 } from 'react';
 import {
@@ -17,6 +18,7 @@ import { RadialInterpolationTypes } from '@/common/utils/interpolation';
 import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
 import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
 import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import { POINT_SERIES_DEFAULT_PROPS } from '@/AreaChart';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 
@@ -149,6 +151,13 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   isClosedCurve,
   valueMarkers
 }) => {
+  const symbolsProps = useMemo(
+    () => ({
+      ...POINT_SERIES_DEFAULT_PROPS,
+      ...symbols?.props
+    }),
+    [symbols]
+  );
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
 
@@ -221,7 +230,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
     (data: ChartInternalShallowDataShape[], index = 0) => {
       // Animations are only valid for Area
       const activeSymbols =
-        (symbols && symbols.props.activeValues) || activeValues;
+        (symbols && symbolsProps.activeValues) || activeValues;
       const isAnimated = area !== undefined && animated && !activeSymbols;
 
       return (
@@ -237,7 +246,16 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
         />
       );
     },
-    [activeValues, animated, area, getColorForPoint, symbols, xScale, yScale]
+    [
+      activeValues,
+      animated,
+      area,
+      getColorForPoint,
+      symbols,
+      symbolsProps,
+      xScale,
+      yScale
+    ]
   );
 
   const renderSingleSeries = useCallback(
