@@ -1,7 +1,10 @@
 import React, { FC } from 'react';
 import { ChartNestedDataShape } from '@/common/data';
 import { BarChartProps, BarChart } from './BarChart';
-import { StackedNormalizedBarSeries } from './BarSeries';
+import {
+  STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS,
+  StackedNormalizedBarSeries
+} from './BarSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
@@ -15,7 +18,17 @@ export interface StackedNormalizedBarChartProps extends BarChartProps {
 
 export const StackedNormalizedBarChart: FC<
   Partial<StackedNormalizedBarChartProps>
-> = (props) => <BarChart {...props} />;
+> = (props) => (
+  <BarChart
+    {...props}
+    series={
+      <StackedNormalizedBarSeries
+        {...STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS}
+        {...props.series.props}
+      />
+    }
+  />
+);
 
 StackedNormalizedBarChart.defaultProps = {
   series: <StackedNormalizedBarSeries />,

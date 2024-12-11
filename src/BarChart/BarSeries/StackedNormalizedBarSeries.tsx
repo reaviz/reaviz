@@ -5,7 +5,7 @@ import {
   BarSeries,
   BAR_SERIES_DEFAULT_PROPS
 } from './BarSeries';
-import { Bar, BAR_DEFAULT_PROPS } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
 import { RangeLines } from './RangeLines';
 import {
   ChartTooltip,
@@ -23,11 +23,11 @@ import {
 
 export const StackedNormalizedBarSeries: FC<Partial<BarSeriesProps>> = (
   props
-) => <BarSeries type="stackedNormalized" {...props} />;
+) => <BarSeries {...STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS} {...props} />;
 
-StackedNormalizedBarSeries.defaultProps = {
+export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
   ...BAR_SERIES_DEFAULT_PROPS,
-  type: 'stackedNormalized',
+  type: 'stackedNormalized' as BarType,
   tooltip: (
     <TooltipArea
       {...TOOLTIP_AREA_DEFAULT_PROPS}
