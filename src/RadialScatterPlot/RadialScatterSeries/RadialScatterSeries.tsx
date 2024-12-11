@@ -4,10 +4,12 @@ import React, {
   Fragment,
   ReactElement,
   useEffect,
-  useCallback
+  useCallback,
+  useMemo
 } from 'react';
 import { ChartInternalShallowDataShape } from '@/common/data';
 import {
+  RADIAL_SCATTER_POINT_DEFAULT_PROPS,
   RadialScatterPoint,
   RadialScatterPointProps
 } from './RadialScatterPoint';
@@ -66,14 +68,18 @@ export interface RadialScatterSeriesProps {
 
 export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
   data,
-  point,
+  point = <RadialScatterPoint />,
   xScale,
   yScale,
-  animated,
+  animated = true,
   activeIds,
   show = true,
   valueMarkers
 }) => {
+  const pointProps = useMemo(
+    () => ({ ...RADIAL_SCATTER_POINT_DEFAULT_PROPS, ...(point?.props ?? {}) }),
+    [point?.props]
+  );
   const [internalActiveIds, setInternalActiveIds] = useState<string[] | null>(
     activeIds
   );
@@ -117,7 +123,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
         !(internalActiveIds && internalActiveIds.length) ||
         internalActiveIds.includes(dataId);
 
-      const pointVisible = point.props?.visible;
+      const pointVisible = pointProps?.visible;
 
       return (
         <CloneElement<RadialScatterPointProps>
@@ -139,6 +145,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
     [
       isVisible,
       point,
+      pointProps,
       internalActiveIds,
       xScale,
       yScale,
@@ -170,9 +177,4 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
       {data.map(renderPoint)}
     </Fragment>
   );
-};
-
-RadialScatterSeries.defaultProps = {
-  point: <RadialScatterPoint />,
-  animated: true
 };
