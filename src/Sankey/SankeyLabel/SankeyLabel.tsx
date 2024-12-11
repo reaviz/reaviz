@@ -93,19 +93,19 @@ const LABEL_PADDING = 5;
 const LABEL_TRUNCATE_LENGTH = 10;
 
 export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
-  active,
+  active = false,
   chartWidth,
   className,
   nodeWidth,
   disabled,
-  fill,
+  fill = '#fff',
   format,
   node,
-  position,
-  opacity,
+  position = 'inside',
+  opacity = (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   padding,
-  visible,
-  ellipsis,
+  visible = true,
+  ellipsis = 'auto',
   labelPadding
 }) => {
   const x0 = node?.x0 || 0;
@@ -159,13 +159,4 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
         : truncatedTitle}
     </text>
   );
-};
-
-SankeyLabel.defaultProps = {
-  active: false,
-  fill: '#fff',
-  position: 'inside',
-  opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
-  visible: true,
-  ellipsis: 'auto'
 };
