@@ -71,14 +71,14 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
   index,
   xScale,
   yScale,
-  fontFamily,
-  padding,
-  fontSize,
-  fill,
+  fontFamily = 'sans-serif',
+  padding = 10,
+  fontSize = 13,
+  fill = '#fff',
   className,
-  position,
-  showValue,
-  labelVisibility
+  position = 'middle',
+  showValue = true,
+  labelVisibility = 'auto'
 }) => {
   const x = xScale(index) + padding;
   const [height] = yScale.range();
@@ -159,14 +159,4 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
       </text>
     </motion.g>
   );
-};
-
-FunnelAxisLabel.defaultProps = {
-  fontSize: 13,
-  padding: 10,
-  fontFamily: 'sans-serif',
-  fill: '#fff',
-  position: 'middle',
-  showValue: true,
-  labelVisibility: 'auto'
 };

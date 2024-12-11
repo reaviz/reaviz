@@ -44,10 +44,10 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
   margins,
   className,
   containerClassName,
-  series,
+  series = <LinearGaugeSeries />,
   data,
-  minValue,
-  maxValue
+  minValue = 0,
+  maxValue = 100
 }) => {
   const transformedData = useMemo(() => {
     if (Array.isArray(data)) {
@@ -147,10 +147,4 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-LinearGauge.defaultProps = {
-  minValue: 0,
-  maxValue: 100,
-  series: <LinearGaugeSeries />
 };

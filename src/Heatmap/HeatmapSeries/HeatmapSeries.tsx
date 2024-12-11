@@ -61,17 +61,19 @@ export interface HeatmapSeriesProps {
   selections?: any;
 }
 
-export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
-  animated,
-  emptyColor,
-  colorScheme,
-  cell: cellElement,
-  xScale,
-  yScale,
-  data,
-  id,
-  selections
-}) => {
+export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = (props) => {
+  const {
+    animated,
+    emptyColor,
+    colorScheme,
+    cell: cellElement,
+    xScale,
+    yScale,
+    data,
+    id,
+    selections
+  } = { ...HEATMAP_SERIES_DEFAULT_PROPS, ...props };
+
   const valueScales = createColorSchemeValueScales(
     data,
     colorScheme,
@@ -133,7 +135,7 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = ({
   );
 };
 
-HeatmapSeries.defaultProps = {
+export const HEATMAP_SERIES_DEFAULT_PROPS: Partial<HeatmapSeriesProps> = {
   padding: 0.1,
   animated: true,
   emptyColor: 'rgba(200,200,200,0.08)',

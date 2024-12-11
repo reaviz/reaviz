@@ -83,20 +83,22 @@ export interface FunnelArcProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
-export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
-  data,
-  id,
-  xScale,
-  opacity,
-  index,
-  variant,
-  yScale,
-  interpolation,
-  colorScheme,
-  gradient,
-  glow,
-  tooltip
-}) => {
+export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
+  const {
+    data,
+    id,
+    xScale,
+    opacity,
+    index,
+    variant,
+    yScale,
+    interpolation,
+    colorScheme,
+    gradient,
+    glow,
+    tooltip
+  } = { ...FUNNEL_ARC_DEFAULT_PROPS, ...props };
+
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
 
@@ -198,7 +200,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   );
 };
 
-FunnelArc.defaultProps = {
+export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
   gradient: (
     <Gradient
       {...GRADIENT_DEFAULT_PROPS}
@@ -211,7 +213,6 @@ FunnelArc.defaultProps = {
   ),
   interpolation: 'smooth',
   colorScheme: schemes.cybertron[0],
-  animated: true,
   variant: 'default',
   opacity: 1,
   tooltip: null

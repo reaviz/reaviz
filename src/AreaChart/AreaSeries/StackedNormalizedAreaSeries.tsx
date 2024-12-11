@@ -1,5 +1,9 @@
-import React, { FC } from 'react';
-import { AreaSeriesProps, AreaSeries } from './AreaSeries';
+import React, { FC, useMemo } from 'react';
+import {
+  AreaSeriesProps,
+  AreaSeries,
+  AREA_SERIES_DEFAULT_PROPS
+} from './AreaSeries';
 import { formatValue } from '@/common/utils/formatting';
 import {
   TooltipTemplate,
@@ -9,37 +13,47 @@ import {
   CHART_TOOLTIP_DEFAULT_PROPS
 } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { PointSeriesProps } from './PointSeries';
+import { POINT_SERIES_DEFAULT_PROPS, PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '@/ScatterPlot';
 
 export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
   type,
   symbols,
   ...rest
-}) => (
-  <AreaSeries
-    {...rest}
-    type="stackedNormalized"
-    symbols={
-      symbols && (
-        <CloneElement<PointSeriesProps>
-          element={symbols}
-          {...symbols.props}
-          point={
-            <CloneElement<ScatterPointProps>
-              element={symbols.props.point}
-              {...symbols.props.point.props}
-              tooltip={null}
-            />
-          }
-        />
-      )
-    }
-  />
-);
+}) => {
+  const symbolsProps = useMemo(
+    () => ({
+      ...POINT_SERIES_DEFAULT_PROPS,
+      ...symbols?.props
+    }),
+    [symbols]
+  );
+
+  return (
+    <AreaSeries
+      {...rest}
+      type="stackedNormalized"
+      symbols={
+        symbols && (
+          <CloneElement<PointSeriesProps>
+            element={symbols}
+            {...symbols.props}
+            point={
+              <CloneElement<ScatterPointProps>
+                element={symbolsProps.point}
+                {...symbolsProps.point.props}
+                tooltip={null}
+              />
+            }
+          />
+        )
+      }
+    />
+  );
+};
 
 StackedNormalizedAreaSeries.defaultProps = {
-  ...AreaSeries.defaultProps,
+  ...AREA_SERIES_DEFAULT_PROPS,
   type: 'stackedNormalized',
   tooltip: (
     <TooltipArea
@@ -68,4 +82,4 @@ StackedNormalizedAreaSeries.defaultProps = {
       }
     />
   )
-};
+} as Partial<AreaSeriesProps>;

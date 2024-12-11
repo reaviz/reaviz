@@ -89,22 +89,24 @@ export interface AreaChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-export const AreaChart: FC<Partial<AreaChartProps>> = ({
-  xAxis,
-  yAxis,
-  id,
-  data,
-  width,
-  height,
-  margins,
-  className,
-  containerClassName,
-  series,
-  gridlines,
-  brush,
-  zoomPan,
-  secondaryAxis
-}) => {
+export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
+  const {
+    xAxis,
+    yAxis,
+    id,
+    data,
+    width,
+    height,
+    margins,
+    className,
+    containerClassName,
+    series,
+    gridlines,
+    brush,
+    zoomPan,
+    secondaryAxis
+  } = { ...AREA_CHART_DEFAULT_PROPS, ...props };
+
   const zoom: any = zoomPan ? zoomPan.props : {};
   const [zoomDomain, setZoomDomain] = useState<any>(zoom.domain);
   const [preventAnimation, setPreventAnimation] = useState<boolean>(false);
@@ -327,7 +329,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = ({
   );
 };
 
-AreaChart.defaultProps = {
+export const AREA_CHART_DEFAULT_PROPS = {
   data: [],
   xAxis: <LinearXAxis type="time" />,
   yAxis: <LinearYAxis type="value" />,

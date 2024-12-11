@@ -44,15 +44,12 @@ export interface BarListProps {
   type?: 'percent' | 'count';
 }
 
-export const BarList: FC<BarListProps> = ({
-  data,
-  id,
-  className,
-  sortDirection,
-  style,
-  series,
-  type
-}) => {
+export const BarList: FC<BarListProps> = (props) => {
+  const { id, className, style, data, sortDirection, series, type } = {
+    ...BAR_LIST_DEFAULT_PROPS,
+    ...props
+  };
+
   const curId = useId(id);
 
   const mashedData = useMemo(() => {
@@ -104,7 +101,7 @@ export const BarList: FC<BarListProps> = ({
   );
 };
 
-BarList.defaultProps = {
+export const BAR_LIST_DEFAULT_PROPS: Partial<BarListProps> = {
   data: [],
   sortDirection: 'desc',
   series: <BarListSeries />,

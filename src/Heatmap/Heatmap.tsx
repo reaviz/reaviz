@@ -21,7 +21,11 @@ import {
   LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
-import { HeatmapSeries, HeatmapSeriesProps } from './HeatmapSeries';
+import {
+  HEATMAP_SERIES_DEFAULT_PROPS,
+  HeatmapSeries,
+  HeatmapSeriesProps
+} from './HeatmapSeries';
 import { scaleBand } from 'd3-scale';
 import { uniqueBy } from '@/common/utils/array';
 
@@ -53,11 +57,43 @@ export interface HeatmapProps extends ChartProps {
 }
 
 export const Heatmap: FC<Partial<HeatmapProps>> = ({
-  data,
-  margins,
-  series,
-  yAxis,
-  xAxis,
+  data = [],
+  margins = 10,
+  series = <HeatmapSeries padding={0.3} />,
+  yAxis = (
+    <LinearYAxis
+      type="category"
+      axisLine={null}
+      tickSeries={
+        <LinearYAxisTickSeries
+          line={null}
+          label={
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          }
+        />
+      }
+    />
+  ),
+  xAxis = (
+    <LinearXAxis
+      type="category"
+      axisLine={null}
+      tickSeries={
+        <LinearXAxisTickSeries
+          line={null}
+          label={
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          }
+        />
+      }
+    />
+  ),
   secondaryAxis,
   id,
   width,
@@ -73,6 +109,11 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
     [yAxis.props]
   );
+  const seriesProps = useMemo(
+    () => ({ ...HEATMAP_SERIES_DEFAULT_PROPS, ...series.props }),
+    [series.props]
+  );
+
   const getScalesData = useCallback(
     (chartHeight: number, chartWidth: number) => {
       const nestedData = buildNestedChartData(data);
@@ -83,7 +124,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       const xScale = scaleBand()
         .range([0, chartWidth])
         .domain(xDomain)
-        .paddingInner(series.props.padding || 0.1);
+        .paddingInner(seriesProps.padding || 0.1);
 
       const yDomain: any =
         yAxisProps.domain ||
@@ -96,7 +137,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       const yScale = scaleBand()
         .domain(yDomain)
         .range([chartHeight, 0])
-        .paddingInner(series.props.padding || 0.1);
+        .paddingInner(seriesProps.padding || 0.1);
 
       return {
         yScale,
@@ -104,7 +145,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         data: nestedData
       };
     },
-    [data, xAxis, yAxis, series]
+    [data, xAxisProps.domain, seriesProps.padding, yAxisProps.domain]
   );
 
   const renderChart = useCallback(
@@ -175,44 +216,4 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-Heatmap.defaultProps = {
-  data: [],
-  margins: 10,
-  series: <HeatmapSeries padding={0.3} />,
-  yAxis: (
-    <LinearYAxis
-      type="category"
-      axisLine={null}
-      tickSeries={
-        <LinearYAxisTickSeries
-          line={null}
-          label={
-            <LinearYAxisTickLabel
-              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
-              padding={5}
-            />
-          }
-        />
-      }
-    />
-  ),
-  xAxis: (
-    <LinearXAxis
-      type="category"
-      axisLine={null}
-      tickSeries={
-        <LinearXAxisTickSeries
-          line={null}
-          label={
-            <LinearXAxisTickLabel
-              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
-              padding={5}
-            />
-          }
-        />
-      }
-    />
-  )
 };
