@@ -20,7 +20,7 @@ export const HistogramBarSeries: FC<Partial<BarSeriesProps>> = ({
   ...rest
 }) => <BarSeries {...HISTOGRAM_BAR_SERIES_DEFAULT_PROPS} {...rest} />;
 
-const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
+export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
   ...BAR_SERIES_DEFAULT_PROPS,
   colorScheme: schemes.cybertron[0],
   tooltip: (

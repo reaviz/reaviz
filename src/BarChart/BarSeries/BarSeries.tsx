@@ -1,31 +1,31 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useMemo,
-  useRef,
-  FC,
-  useState,
-  useCallback
-} from 'react';
-import { offset } from '@floating-ui/dom';
-import { Bar, BAR_DEFAULT_PROPS, BarProps, BarType } from './Bar';
+import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { ColorSchemeType, getColor } from '@/common/color';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
   Direction
 } from '@/common/data';
-import { getColor, ColorSchemeType } from '@/common/color';
-import { CloneElement } from 'reablocks';
 import {
-  TooltipAreaProps,
-  TooltipArea,
+  CHART_TOOLTIP_DEFAULT_PROPS,
   ChartTooltip,
-  TooltipAreaEvent,
   TOOLTIP_AREA_DEFAULT_PROPS,
-  CHART_TOOLTIP_DEFAULT_PROPS
+  TooltipArea,
+  TooltipAreaEvent,
+  TooltipAreaProps
 } from '@/common/Tooltip';
-import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { offset } from '@floating-ui/dom';
+import { CloneElement } from 'reablocks';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useCallback,
+  useMemo,
+  useRef,
+  useState
+} from 'react';
+import { Bar, BAR_DEFAULT_PROPS, BarProps, BarType } from './Bar';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 
@@ -162,11 +162,9 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
       let yPos = 0;
       if (type !== 'marimekko') {
         if (layout === 'vertical') {
-          const val = xScale(data.key);
-          xPos = val;
+          xPos = xScale(data.key);
         } else {
-          const val = yScale(data.key);
-          yPos = val;
+          yPos = yScale(data.key);
         }
       }
 
@@ -362,7 +360,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
 };
 
 export const BAR_SERIES_DEFAULT_PROPS = {
-  type: 'standard' as const,
+  type: 'standard' as BarType,
   padding: 0.1,
   groupPadding: 16,
   animated: true,

@@ -5,7 +5,7 @@ import {
   BarSeries,
   BAR_SERIES_DEFAULT_PROPS
 } from './BarSeries';
-import { Bar, BAR_DEFAULT_PROPS } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
 import { RangeLines } from './RangeLines';
 import {
   ChartTooltip,
@@ -22,12 +22,12 @@ import {
 } from '@/common/Gradient';
 
 export const MarimekkoBarSeries: FC<Partial<BarSeriesProps>> = (props) => (
-  <BarSeries type="marimekko" {...props} />
+  <BarSeries {...MARIMEKKO_BAR_SERIES_DEFAULT_PROPS} {...props} />
 );
 
-MarimekkoBarSeries.defaultProps = {
+export const MARIMEKKO_BAR_SERIES_DEFAULT_PROPS: Partial<BarSeriesProps> = {
   ...BAR_SERIES_DEFAULT_PROPS,
-  type: 'marimekko',
+  type: 'marimekko' as BarType,
   padding: 10,
   tooltip: (
     <TooltipArea
