@@ -20,13 +20,8 @@ import {
   RadialPointSeries,
   RadialPointSeriesProps
 } from './RadialPointSeries';
-import {
-  TooltipAreaProps,
-  TooltipArea,
-  TOOLTIP_AREA_DEFAULT_PROPS
-} from '@/common/Tooltip';
+import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
 import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
-import { POINT_SERIES_DEFAULT_PROPS } from '@/AreaChart';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 

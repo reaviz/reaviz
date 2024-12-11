@@ -2,7 +2,6 @@ import React, { FC, JSX, useMemo } from 'react';
 import { arc } from 'd3-shape';
 
 import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
   ChartNestedDataShape,
   ChartShallowDataShape,
   ChartTooltip,
