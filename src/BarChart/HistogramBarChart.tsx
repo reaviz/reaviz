@@ -3,9 +3,7 @@ import { ChartShallowDataShape } from '@/common/data';
 import { BarChartProps, BarChart } from './BarChart';
 import {
   HISTOGRAM_BAR_SERIES_DEFAULT_PROPS,
-  HistogramBarSeries,
-  MARIMEKKO_BAR_SERIES_DEFAULT_PROPS,
-  MarimekkoBarSeries
+  HistogramBarSeries
 } from './BarSeries';
 
 export interface HistogramBarChartProps extends BarChartProps {
@@ -25,7 +23,3 @@ export const HistogramBarChart: FC<Partial<HistogramBarChartProps>> = (
     }
   />
 );
-
-HistogramBarChart.defaultProps = {
-  series: <HistogramBarSeries />
-};

@@ -20,6 +20,7 @@ export const StackedNormalizedBarChart: FC<
   Partial<StackedNormalizedBarChartProps>
 > = (props) => (
   <BarChart
+    {...STACKED_NORMALIZED_BAR_CHART_DEFAULT_PROPS}
     {...props}
     series={
       <StackedNormalizedBarSeries
@@ -30,8 +31,7 @@ export const StackedNormalizedBarChart: FC<
   />
 );
 
-StackedNormalizedBarChart.defaultProps = {
-  series: <StackedNormalizedBarSeries />,
+const STACKED_NORMALIZED_BAR_CHART_DEFAULT_PROPS = {
   yAxis: (
     <LinearYAxis
       type="value"

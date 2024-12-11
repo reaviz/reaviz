@@ -22,6 +22,7 @@ export interface MarimekkoChartProps extends BarChartProps {
 
 export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = (props) => (
   <BarChart
+    {...MARIMEKKO_CHART_DEFAULT_PROPS}
     {...props}
     series={
       <MarimekkoBarSeries
@@ -32,7 +33,7 @@ export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = (props) => (
   />
 );
 
-MarimekkoChart.defaultProps = {
+const MARIMEKKO_CHART_DEFAULT_PROPS = {
   xAxis: (
     <LinearXAxis
       type="category"
