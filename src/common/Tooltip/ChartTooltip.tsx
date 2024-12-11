@@ -30,12 +30,13 @@ export interface ChartTooltipProps extends TooltipProps {
   followCursor?: boolean;
 }
 
-export const ChartTooltip: FC<Partial<ChartTooltipProps>> = (props) => {
-  const { content, value, data, color, ...rest } = {
-    ...CHART_TOOLTIP_DEFAULT_PROPS,
-    ...props
-  };
-
+export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
+  content = <TooltipTemplate />,
+  value,
+  data,
+  color,
+  ...rest
+}) => {
   return (
     <Tooltip
       theme={tooltipTheme}
@@ -55,8 +56,4 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = (props) => {
       }}
     />
   );
-};
-
-export const CHART_TOOLTIP_DEFAULT_PROPS = {
-  content: <TooltipTemplate />
 };
