@@ -60,15 +60,15 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   id,
   width,
   height,
-  margins,
+  margins = 75,
   className,
   containerClassName,
   data,
-  innerRadius,
-  series,
-  axis,
-  startAngle,
-  endAngle
+  innerRadius = 10,
+  series = <RadialBarSeries />,
+  axis = <RadialAxis />,
+  startAngle = 0,
+  endAngle = 2 * Math.PI
 }) => {
   const axisProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
@@ -201,13 +201,4 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-RadialBarChart.defaultProps = {
-  innerRadius: 10,
-  margins: 75,
-  axis: <RadialAxis />,
-  series: <RadialBarSeries />,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
 };
