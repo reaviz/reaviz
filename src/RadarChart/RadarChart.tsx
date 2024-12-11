@@ -2,8 +2,6 @@ import React, { FC } from 'react';
 import { ChartNestedDataShape } from '@/common/data';
 import { RadialAreaChart, RadialAreaChartProps } from '@/RadialAreaChart';
 import {
-  RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS,
-  RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS,
   RadialAxis,
   RadialAxisArcLine,
   RadialAxisArcSeries
@@ -15,20 +13,19 @@ export interface RadarChartProps extends RadialAreaChartProps {
 }
 
 export const RadarChart: FC<Partial<RadarChartProps>> = (props) => (
-  <RadialAreaChart {...props} />
+  <RadialAreaChart {...RADAR_CHART_DEFAULT_PROPS} {...props} />
 );
 
-RadarChart.defaultProps = {
+const RADAR_CHART_DEFAULT_PROPS = {
   series: <RadarChartSeries />,
   axis: (
     <RadialAxis
       type="category"
       arcs={
         <RadialAxisArcSeries
-          {...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS}
           count={5}
           arc={null}
-          line={<RadialAxisArcLine {...RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS} />}
+          line={<RadialAxisArcLine />}
         />
       }
     />
