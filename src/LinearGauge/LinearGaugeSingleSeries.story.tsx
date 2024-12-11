@@ -33,7 +33,11 @@ export const AutoSize = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <div style={{ width, padding: 5, border: 'solid 1px red' }}>
-        <LinearGauge id="auto-size" height={20} data={{ key: 'Risk Score', data: 80 }} />
+        <LinearGauge
+          id="auto-size"
+          height={20}
+          data={{ key: 'Risk Score', data: 80 }}
+        />
       </div>
       <br />
       <button type="button" onClick={() => setWidth(width === 300 ? 150 : 300)}>

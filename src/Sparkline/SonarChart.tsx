@@ -4,7 +4,8 @@ import {
   StackedBarChart,
   StackedBarSeries,
   Bar,
-  BarChartProps
+  BarChartProps,
+  BAR_DEFAULT_PROPS
 } from '@/BarChart';
 import {
   Gradient,
@@ -55,6 +56,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
         }
         bar={[
           <Bar
+            {...BAR_DEFAULT_PROPS}
             key="first"
             width={1}
             rangeLines={null}

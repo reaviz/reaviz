@@ -29,7 +29,6 @@ export const Basic = () => (
     series={<HeatmapSeries colorScheme="OrRd" />}
   />
 );
-Basic.tags = ['single'];
 
 export const BasicLegend = () => (
   <div style={{ display: 'flex', height: '250px' }}>

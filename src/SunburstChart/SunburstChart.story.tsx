@@ -24,7 +24,12 @@ const exampleColorScheme = chroma
   .colors(12);
 
 export const Simple = () => (
-  <SunburstChart id="simple" height={450} width={450} data={heatmapSimpleData} />
+  <SunburstChart
+    id="simple"
+    height={450}
+    width={450}
+    data={heatmapSimpleData}
+  />
 );
 
 export const Gradients = ({ colorScheme = exampleColorScheme }) => (

@@ -1,7 +1,11 @@
 import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import { BarSeriesProps, BarSeries } from './BarSeries';
-import { Bar } from './Bar';
+import {
+  BarSeriesProps,
+  BarSeries,
+  BAR_SERIES_DEFAULT_PROPS
+} from './BarSeries';
+import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
 import { RangeLines } from './RangeLines';
 import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
@@ -12,12 +16,12 @@ import {
 } from '@/common/Gradient';
 
 export const MarimekkoBarSeries: FC<Partial<BarSeriesProps>> = (props) => (
-  <BarSeries type="marimekko" {...props} />
+  <BarSeries {...MARIMEKKO_BAR_SERIES_DEFAULT_PROPS} {...props} />
 );
 
-MarimekkoBarSeries.defaultProps = {
-  ...BarSeries.defaultProps,
-  type: 'marimekko',
+export const MARIMEKKO_BAR_SERIES_DEFAULT_PROPS: Partial<BarSeriesProps> = {
+  ...BAR_SERIES_DEFAULT_PROPS,
+  type: 'marimekko' as BarType,
   padding: 10,
   tooltip: (
     <TooltipArea
@@ -44,6 +48,7 @@ MarimekkoBarSeries.defaultProps = {
   ),
   bar: (
     <Bar
+      {...BAR_DEFAULT_PROPS}
       padding={10}
       gradient={
         <Gradient

@@ -59,7 +59,7 @@ export const Simple = () => (
         colorScheme={'cybertron'}
         layout="horizontal"
         padding={0.1}
-        bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+        bar={<Bar guide={null} />}
       />
     }
   />
@@ -84,7 +84,7 @@ export const WithScroll = () => (
           colorScheme={'cybertron'}
           layout="horizontal"
           padding={0.1}
-          bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+          bar={<Bar guide={null} />}
         />
       }
     />

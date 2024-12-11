@@ -1,7 +1,11 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import { BarChart, BarChartProps } from './BarChart';
 import { ChartNestedDataShape } from '@/common/data';
-import { MarimekkoBarSeries } from './BarSeries';
+import {
+  BarSeriesProps,
+  MARIMEKKO_BAR_SERIES_DEFAULT_PROPS,
+  MarimekkoBarSeries
+} from './BarSeries';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
@@ -13,14 +17,23 @@ import {
 
 export interface MarimekkoChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
+  series: ReactElement<BarSeriesProps, typeof MarimekkoBarSeries>;
 }
 
 export const MarimekkoChart: FC<Partial<MarimekkoChartProps>> = (props) => (
-  <BarChart {...props} />
+  <BarChart
+    {...MARIMEKKO_CHART_DEFAULT_PROPS}
+    {...props}
+    series={
+      <MarimekkoBarSeries
+        {...MARIMEKKO_BAR_SERIES_DEFAULT_PROPS}
+        {...props.series.props}
+      />
+    }
+  />
 );
 
-MarimekkoChart.defaultProps = {
-  series: <MarimekkoBarSeries />,
+const MARIMEKKO_CHART_DEFAULT_PROPS = {
   xAxis: (
     <LinearXAxis
       type="category"

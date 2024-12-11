@@ -66,13 +66,7 @@ export const Gradient = () => (
       <RadialBarSeries
         animated
         colorScheme={schemes['cybertron'][0]}
-        bar={
-          <RadialBar
-            curved={false}
-            gradient={RadialBar.defaultProps.gradient}
-            guide={<RadialGuideBar />}
-          />
-        }
+        bar={<RadialBar curved={false} guide={<RadialGuideBar />} />}
       />
     }
     axis={
