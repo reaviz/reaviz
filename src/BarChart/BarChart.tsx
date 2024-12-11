@@ -11,7 +11,6 @@ import {
   LINEAR_Y_AXIS_DEFAULT_PROPS
 } from '@/common/Axis';
 import {
-  BAR_LABEL_DEFAULT_PROPS,
   BAR_SERIES_DEFAULT_PROPS,
   BarSeries,
   BarSeriesProps
@@ -86,21 +85,22 @@ export interface BarChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-export const BarChart: FC<Partial<BarChartProps>> = ({
-  id,
-  width,
-  height,
-  margins,
-  className,
-  data,
-  xAxis,
-  yAxis,
-  series,
-  brush,
-  gridlines,
-  secondaryAxis,
-  containerClassName
-}) => {
+export const BarChart: FC<Partial<BarChartProps>> = (props) => {
+  const {
+    id,
+    width,
+    height,
+    margins,
+    className,
+    data,
+    xAxis,
+    yAxis,
+    series,
+    brush,
+    gridlines,
+    secondaryAxis,
+    containerClassName
+  } = { ...BAR_CHART_DEFAULT_PROPS, ...props };
   const seriesProps = useMemo(
     () => ({ ...BAR_SERIES_DEFAULT_PROPS, ...series?.props }),
     [series?.props]
@@ -447,7 +447,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
   );
 };
 
-BarChart.defaultProps = {
+const BAR_CHART_DEFAULT_PROPS = {
   data: [],
   xAxis: (
     <LinearXAxis
