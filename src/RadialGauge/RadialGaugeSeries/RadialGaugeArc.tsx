@@ -2,11 +2,7 @@ import React, { FC, ReactElement, useMemo } from 'react';
 import { arc } from 'd3-shape';
 import { PieArc, ArcData } from '@/PieChart';
 import { ChartShallowDataShape } from '@/common/data';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { Gradient, GradientProps } from '@/common/Gradient';
 
 export interface RadialGaugeArcProps {
@@ -109,16 +105,16 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   endAngle,
   innerRadius,
   outerRadius,
-  cornerRadius,
-  padAngle,
-  color,
-  animated,
-  disabled,
+  cornerRadius = 0,
+  padAngle = 0,
+  color = '#353d44',
+  animated = true,
+  disabled = false,
   fill,
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip
+  tooltip = <ChartTooltip />
 }) => {
   /**
    * This function will generate the arcs
@@ -178,14 +174,4 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       {arcElement}
     </g>
   );
-};
-
-RadialGaugeArc.defaultProps = {
-  cornerRadius: 0,
-  padAngle: 0,
-  padRadius: 0,
-  color: '#353d44',
-  animated: true,
-  disabled: false,
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />
 };

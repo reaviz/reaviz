@@ -1,4 +1,4 @@
-import React, { useCallback, FC, Fragment, ReactElement } from 'react';
+import React, { useCallback, FC, Fragment, ReactElement, useMemo } from 'react';
 import {
   ChartShallowDataShape,
   ChartInternalShallowDataShape,
@@ -16,7 +16,11 @@ import {
   ChartContainerChildProps
 } from '@/common/containers';
 import { CloneElement } from 'reablocks';
-import { RadialAxis, RadialAxisProps } from '@/common/Axis/RadialAxis';
+import {
+  RADIAL_AXIS_DEFAULT_PROPS,
+  RadialAxis,
+  RadialAxisProps
+} from '@/common/Axis/RadialAxis';
 import { getRadialYScale } from '@/common/scales';
 import { uniqueBy } from '@/common/utils/array';
 
@@ -66,11 +70,16 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   startAngle,
   endAngle
 }) => {
+  const axisProps = useMemo(
+    () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
+    [axis?.props]
+  );
+
   const getXScale = useCallback(
     (points) => {
       const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
       let xScale;
-      if (axis?.props.type === 'category') {
+      if (axisProps.type === 'category') {
         const isMultiSeries = series.props.type === 'grouped';
 
         let xDomain;
@@ -108,7 +117,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
 
       return xScale;
     },
-    [axis?.props.type, endAngle, series.props.type, startAngle]
+    [axisProps.type, endAngle, series.props.type, startAngle]
   );
 
   const getScales = useCallback(

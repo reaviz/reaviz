@@ -8,11 +8,7 @@ import React, {
   useMemo
 } from 'react';
 import { ChartInternalShallowDataShape } from '@/common/data';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import classNames from 'classnames';
 import { CloneElement } from 'reablocks';
 import {
@@ -299,7 +295,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
 
 export const SCATTER_POINT_DEFAULT_PROPS = {
   active: true,
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
+  tooltip: <ChartTooltip />,
   cursor: 'pointer',
   size: 4,
   color: schemes.cybertron[0],

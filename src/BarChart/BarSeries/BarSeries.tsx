@@ -7,9 +7,7 @@ import {
   Direction
 } from '@/common/data';
 import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
   ChartTooltip,
-  TOOLTIP_AREA_DEFAULT_PROPS,
   TooltipArea,
   TooltipAreaEvent,
   TooltipAreaProps
@@ -366,17 +364,10 @@ export const BAR_SERIES_DEFAULT_PROPS = {
   animated: true,
   tooltip: (
     <TooltipArea
-      {...TOOLTIP_AREA_DEFAULT_PROPS}
-      tooltip={
-        <ChartTooltip
-          {...CHART_TOOLTIP_DEFAULT_PROPS}
-          followCursor={true}
-          modifiers={[offset(5)]}
-        />
-      }
+      tooltip={<ChartTooltip followCursor={true} modifiers={[offset(5)]} />}
     />
   ),
   colorScheme: 'cybertron',
-  bar: <Bar {...BAR_DEFAULT_PROPS} />,
+  bar: <Bar />,
   layout: 'vertical' as const
 };

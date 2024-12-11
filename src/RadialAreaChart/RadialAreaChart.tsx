@@ -1,4 +1,4 @@
-import React, { Fragment, ReactElement, FC, useCallback } from 'react';
+import React, { Fragment, ReactElement, FC, useCallback, useMemo } from 'react';
 import {
   ChartInternalShallowDataShape,
   buildShallowChartData,
@@ -15,8 +15,16 @@ import {
   ChartContainerChildProps
 } from '@/common/containers';
 import { CloneElement } from 'reablocks';
-import { RadialAreaSeries, RadialAreaSeriesProps } from './RadialAreaSeries';
-import { RadialAxis, RadialAxisProps } from '@/common/Axis/RadialAxis';
+import {
+  RADIAL_AREA_SERIES_DEFAULT_PROPS,
+  RadialAreaSeries,
+  RadialAreaSeriesProps
+} from './RadialAreaSeries';
+import {
+  RADIAL_AXIS_DEFAULT_PROPS,
+  RadialAxis,
+  RadialAxisProps
+} from '@/common/Axis/RadialAxis';
 import { getRadialYScale } from '@/common/scales/radial';
 import { uniqueBy } from '@/common/utils';
 
@@ -64,20 +72,29 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   className,
   data,
   containerClassName,
-  innerRadius,
-  series,
-  axis,
-  margins,
-  startAngle,
-  endAngle,
-  isClosedCurve
+  innerRadius = 0.1,
+  series = <RadialAreaSeries />,
+  axis = <RadialAxis />,
+  margins = 75,
+  startAngle = 0,
+  endAngle = 2 * Math.PI,
+  isClosedCurve = true
 }) => {
+  const seriesProps = useMemo(
+    () => ({ ...RADIAL_AREA_SERIES_DEFAULT_PROPS, ...series.props }),
+    [series.props]
+  );
+  const axisProps = useMemo(
+    () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
+    [axis?.props]
+  );
+
   const getXScale = useCallback(
     (points) => {
       const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
       let xScale;
-      if (axis?.props.type === 'category') {
-        const isMultiSeries = series.props.type === 'grouped';
+      if (axisProps.type === 'category') {
+        const isMultiSeries = seriesProps.type === 'grouped';
 
         let xDomain;
         if (isMultiSeries) {
@@ -112,12 +129,12 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
 
       return xScale;
     },
-    [axis?.props.type, endAngle, series.props.type, startAngle]
+    [axisProps.type, endAngle, seriesProps.type, startAngle]
   );
 
   const getScales = useCallback(
     (preData: ChartDataShape[], outerRadius: number, innerRadius: number) => {
-      const isMultiSeries = series.props.type === 'grouped';
+      const isMultiSeries = seriesProps.type === 'grouped';
 
       let d;
       if (isMultiSeries) {
@@ -136,7 +153,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
         result: d
       };
     },
-    [getXScale, series.props.type]
+    [getXScale, seriesProps.type]
   );
 
   const renderChart = useCallback(
@@ -206,14 +223,4 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-RadialAreaChart.defaultProps = {
-  innerRadius: 0.1,
-  series: <RadialAreaSeries />,
-  axis: <RadialAxis />,
-  margins: 75,
-  startAngle: 0,
-  endAngle: 2 * Math.PI,
-  isClosedCurve: true
 };

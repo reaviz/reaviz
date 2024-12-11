@@ -2,7 +2,6 @@ import React, { FC, JSX, useMemo } from 'react';
 import { arc } from 'd3-shape';
 
 import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
   ChartNestedDataShape,
   ChartShallowDataShape,
   ChartTooltip,
@@ -38,10 +37,14 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
   scale,
   innerRadius,
   outerRadius,
-  cornerRadius,
-  padAngle,
+  cornerRadius = 0,
+  padAngle = 0,
+  padRadius = 0,
   startAngle,
   colorScheme,
+  animated = true,
+  disabled = false,
+  tooltip = <ChartTooltip />,
   ...restProps
 }) => {
   const arcGenerator = useMemo(() => {
@@ -83,6 +86,9 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
 
       return (
         <PieArc
+          animated={animated}
+          disabled={disabled}
+          tooltip={tooltip}
           {...restProps}
           id={point.key.toLocaleString()}
           key={point.key.toLocaleString()}
@@ -94,16 +100,18 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
     }
 
     return data.data.map(renderArc as any) as any;
-  }, [arcGenerator, colorScheme, data, padAngle, restProps, scale, startAngle]);
+  }, [
+    animated,
+    arcGenerator,
+    colorScheme,
+    data,
+    disabled,
+    padAngle,
+    restProps,
+    scale,
+    startAngle,
+    tooltip
+  ]);
 
   return <g key={id}>{stackedArcs}</g>;
-};
-
-RadialGaugeStackedArc.defaultProps = {
-  cornerRadius: 0,
-  padAngle: 0,
-  padRadius: 0,
-  animated: true,
-  disabled: false,
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />
 };

@@ -56,11 +56,11 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
   margins,
   className,
   data,
-  minValue,
-  maxValue,
-  startAngle,
-  endAngle,
-  series,
+  minValue = 0,
+  maxValue = 100,
+  startAngle = 0,
+  endAngle = Math.PI * 2,
+  series = <RadialGaugeSeries />,
   containerClassName
 }) => {
   const newId = useId(id);
@@ -114,12 +114,4 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
       {renderSeries}
     </ChartContainer>
   );
-};
-
-RadialGauge.defaultProps = {
-  minValue: 0,
-  maxValue: 100,
-  startAngle: 0,
-  endAngle: Math.PI * 2,
-  series: <RadialGaugeSeries />
 };

@@ -104,15 +104,15 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   scale,
   startAngle,
   endAngle,
-  arcWidth,
-  outerArc,
-  innerArc,
-  label,
-  valueLabel,
-  colorScheme,
+  arcWidth = 5,
+  outerArc = <RadialGaugeOuterArc />,
+  innerArc = <RadialGaugeArc />,
+  label = <RadialGaugeLabel />,
+  valueLabel = <RadialGaugeValueLabel />,
+  colorScheme = ['#00ECB1'],
   id,
-  padding,
-  minGaugeWidth,
+  padding = 20,
+  minGaugeWidth = 50,
   ...props
 }) => {
   const { columns, width, height, xScale, yScale } = useMemo(() => {
@@ -213,15 +213,4 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
   );
 
   return <Fragment>{data.map(renderGauge)}</Fragment>;
-};
-
-RadialGaugeSeries.defaultProps = {
-  arcWidth: 5,
-  outerArc: <RadialGaugeOuterArc />,
-  innerArc: <RadialGaugeArc />,
-  label: <RadialGaugeLabel />,
-  valueLabel: <RadialGaugeValueLabel />,
-  colorScheme: ['#00ECB1'],
-  padding: 20,
-  minGaugeWidth: 50
 };

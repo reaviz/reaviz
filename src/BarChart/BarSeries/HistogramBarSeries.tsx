@@ -5,13 +5,7 @@ import {
   BarSeries,
   BAR_SERIES_DEFAULT_PROPS
 } from './BarSeries';
-import {
-  ChartTooltip,
-  TooltipTemplate,
-  TooltipArea,
-  TOOLTIP_AREA_DEFAULT_PROPS,
-  CHART_TOOLTIP_DEFAULT_PROPS
-} from '@/common/Tooltip';
+import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
 import { schemes } from '@/common/color';
 
@@ -25,10 +19,8 @@ export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
   colorScheme: schemes.cybertron[0],
   tooltip: (
     <TooltipArea
-      {...TOOLTIP_AREA_DEFAULT_PROPS}
       tooltip={
         <ChartTooltip
-          {...CHART_TOOLTIP_DEFAULT_PROPS}
           followCursor={true}
           modifiers={[offset(5)]}
           content={(point, color) => {

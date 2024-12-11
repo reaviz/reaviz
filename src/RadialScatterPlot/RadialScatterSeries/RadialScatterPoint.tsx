@@ -10,11 +10,7 @@ import React, {
 import { ChartInternalShallowDataShape } from '@/common/data';
 import { radialLine } from 'd3-shape';
 import classNames from 'classnames';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from '@/common/Tooltip';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
@@ -109,21 +105,25 @@ export interface RadialScatterPointProps {
   onMouseLeave: (event) => void;
 }
 
-export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
-  size,
-  data,
-  color,
-  index,
-  symbol,
-  active,
-  tooltip,
-  yScale,
-  xScale,
-  animated,
-  className,
-  visible,
-  ...rest
-}) => {
+export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
+  props
+) => {
+  const {
+    size,
+    data,
+    color,
+    index,
+    symbol,
+    active,
+    tooltip,
+    yScale,
+    xScale,
+    animated,
+    className,
+    visible,
+    ...rest
+  } = { ...RADIAL_SCATTER_POINT_DEFAULT_PROPS, ...props };
+
   const ref = useRef<any>(null);
   const [hovered, setHovered] = useState<boolean>(false);
 
@@ -229,10 +229,10 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
   );
 };
 
-RadialScatterPoint.defaultProps = {
+export const RADIAL_SCATTER_POINT_DEFAULT_PROPS = {
   size: 3,
   color: schemes.cybertron[0],
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
+  tooltip: <ChartTooltip />,
   active: true,
   onClick: () => undefined,
   onMouseEnter: () => undefined,

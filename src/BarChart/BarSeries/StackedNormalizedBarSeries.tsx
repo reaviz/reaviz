@@ -7,13 +7,7 @@ import {
 } from './BarSeries';
 import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
 import { RangeLines } from './RangeLines';
-import {
-  ChartTooltip,
-  TooltipTemplate,
-  TooltipArea,
-  TOOLTIP_AREA_DEFAULT_PROPS,
-  CHART_TOOLTIP_DEFAULT_PROPS
-} from '@/common/Tooltip';
+import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
 import {
   Gradient,
@@ -30,10 +24,8 @@ export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
   type: 'stackedNormalized' as BarType,
   tooltip: (
     <TooltipArea
-      {...TOOLTIP_AREA_DEFAULT_PROPS}
       tooltip={
         <ChartTooltip
-          {...CHART_TOOLTIP_DEFAULT_PROPS}
           followCursor={true}
           modifiers={[offset(5)]}
           content={(point, color) => {
