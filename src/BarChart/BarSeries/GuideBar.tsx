@@ -18,9 +18,12 @@ export interface GuideBarProps extends SVGRect {
   opacity?: number;
 }
 
-export const GuideBar: FC<Partial<GuideBarProps>> = (props) => {
-  const { fill = '#eee', active, opacity = 0.15, ...rest } = props;
-
+export const GuideBar: FC<Partial<GuideBarProps>> = ({
+  fill = '#eee',
+  active,
+  opacity = 0.15,
+  ...rest
+}) => {
   const { x, y, ...other } = rest;
 
   return (
