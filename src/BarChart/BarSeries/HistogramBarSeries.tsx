@@ -18,9 +18,9 @@ import { schemes } from '@/common/color';
 export const HistogramBarSeries: FC<Partial<BarSeriesProps>> = ({
   type,
   ...rest
-}) => <BarSeries {...rest} />;
+}) => <BarSeries {...HISTOGRAM_BAR_SERIES_DEFAULT_PROPS} {...rest} />;
 
-HistogramBarSeries.defaultProps = {
+const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
   ...BAR_SERIES_DEFAULT_PROPS,
   colorScheme: schemes.cybertron[0],
   tooltip: (
