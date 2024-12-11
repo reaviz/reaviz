@@ -53,7 +53,6 @@ export const Simple = () => (
       <SankeyNode
         key={`node-${i}`}
         {...node}
-        animated={false}
         label={<SankeyLabel />}
         onClick={() => onNodeClick(node.title)}
       />
