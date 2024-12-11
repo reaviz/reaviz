@@ -22,11 +22,7 @@ import {
   getClosestBandScalePoint
 } from '@/common/utils/position';
 import { CloneElement, Placement } from 'reablocks';
-import {
-  CHART_TOOLTIP_DEFAULT_PROPS,
-  ChartTooltip,
-  ChartTooltipProps
-} from './ChartTooltip';
+import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
 import { arc } from 'd3-shape';
 import isEqual from 'react-fast-compare';
 import { scaleLinear } from 'd3-scale';
@@ -142,29 +138,31 @@ interface TooltipDataShape {
 
 // eslint-disable-next-line react/display-name
 export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
-  (props, childRef) => {
-    const {
+  (
+    {
       children,
-      inverse,
-      tooltip,
+      inverse = true,
+      tooltip = <ChartTooltip />,
       disabled,
       color,
-      isRadial,
-      isContinous,
+      isRadial = false,
+      isContinous = true,
       width,
       height,
       xScale,
       yScale,
-      onValueEnter,
+      onValueEnter = () => undefined,
       data,
       isHorizontal,
       innerRadius,
       outerRadius,
       placement: placementProp,
-      onValueLeave,
-      startAngle,
-      endAngle
-    } = { ...TOOLTIP_AREA_DEFAULT_PROPS, ...props };
+      onValueLeave = () => undefined,
+      startAngle = 0,
+      endAngle = 2 * Math.PI
+    },
+    childRef
+  ) => {
     const [visible, setVisible] = useState<boolean>();
     const [placement, setPlacement] = useState<Placement>();
     const [value, setValue] = useState<any>();
@@ -537,14 +535,3 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     );
   }
 );
-
-export const TOOLTIP_AREA_DEFAULT_PROPS = {
-  isRadial: false,
-  isContinous: true,
-  tooltip: <ChartTooltip {...CHART_TOOLTIP_DEFAULT_PROPS} />,
-  inverse: true,
-  onValueEnter: () => undefined,
-  onValueLeave: () => undefined,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
-};
