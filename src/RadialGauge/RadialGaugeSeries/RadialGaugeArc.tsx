@@ -105,16 +105,16 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   endAngle,
   innerRadius,
   outerRadius,
-  cornerRadius,
-  padAngle,
-  color,
-  animated,
-  disabled,
+  cornerRadius = 0,
+  padAngle = 0,
+  color = '#353d44',
+  animated = true,
+  disabled = false,
   fill,
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip
+  tooltip = <ChartTooltip />
 }) => {
   /**
    * This function will generate the arcs
@@ -174,14 +174,4 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       {arcElement}
     </g>
   );
-};
-
-RadialGaugeArc.defaultProps = {
-  cornerRadius: 0,
-  padAngle: 0,
-  padRadius: 0,
-  color: '#353d44',
-  animated: true,
-  disabled: false,
-  tooltip: <ChartTooltip />
 };
