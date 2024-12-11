@@ -8,11 +8,7 @@ import {
   LinearXAxis,
   LinearXAxisTickSeries
 } from '@/common/Axis/LinearAxis';
-import {
-  GradientStop,
-  Gradient,
-  GRADIENT_DEFAULT_PROPS
-} from '@/common/Gradient';
+import { GradientStop, Gradient } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 
 export interface AreaSparklineChartProps extends AreaChartProps {
@@ -35,7 +31,6 @@ AreaSparklineChart.defaultProps = {
           mask={<Stripes />}
           gradient={
             <Gradient
-              {...GRADIENT_DEFAULT_PROPS}
               stops={[
                 <GradientStop offset="10%" stopOpacity={0} key="start" />,
                 <GradientStop offset="80%" stopOpacity={1} key="stop" />

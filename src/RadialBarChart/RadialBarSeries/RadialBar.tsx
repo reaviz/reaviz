@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import { ChartInternalShallowDataShape } from '@/common/data';
 import { arc } from 'd3-shape';
-import { Gradient, GRADIENT_DEFAULT_PROPS } from '@/common/Gradient';
+import { Gradient } from '@/common/Gradient';
 import chroma from 'chroma-js';
 import { path } from 'd3-path';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
@@ -345,13 +345,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   return (
     <Fragment>
       {renderBar(currentColorShade)}
-      {gradient && (
-        <Gradient
-          {...GRADIENT_DEFAULT_PROPS}
-          id={`${id}-gradient`}
-          color={currentColorShade}
-        />
-      )}
+      {gradient && <Gradient id={`${id}-gradient`} color={currentColorShade} />}
     </Fragment>
   );
 };

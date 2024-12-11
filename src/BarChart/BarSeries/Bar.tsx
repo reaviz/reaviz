@@ -8,11 +8,7 @@ import React, {
   useState
 } from 'react';
 import chroma from 'chroma-js';
-import {
-  Gradient,
-  GRADIENT_DEFAULT_PROPS,
-  GradientProps
-} from '@/common/Gradient';
+import { Gradient, GradientProps } from '@/common/Gradient';
 import classNames from 'classnames';
 import { ChartInternalShallowDataShape, Direction } from '@/common/data';
 import { RangeLinesProps, RangeLines } from './RangeLines';
@@ -767,5 +763,5 @@ export const BAR_DEFAULT_PROPS = {
   tooltip: null,
   layout: 'vertical' as const,
   guide: null,
-  gradient: <Gradient {...GRADIENT_DEFAULT_PROPS} />
+  gradient: <Gradient />
 };

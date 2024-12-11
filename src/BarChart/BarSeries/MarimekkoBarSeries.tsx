@@ -9,11 +9,7 @@ import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
 import { RangeLines } from './RangeLines';
 import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
-import {
-  Gradient,
-  GRADIENT_DEFAULT_PROPS,
-  GradientStop
-} from '@/common/Gradient';
+import { Gradient, GradientStop } from '@/common/Gradient';
 
 export const MarimekkoBarSeries: FC<Partial<BarSeriesProps>> = (props) => (
   <BarSeries {...MARIMEKKO_BAR_SERIES_DEFAULT_PROPS} {...props} />
@@ -52,7 +48,6 @@ export const MARIMEKKO_BAR_SERIES_DEFAULT_PROPS: Partial<BarSeriesProps> = {
       padding={10}
       gradient={
         <Gradient
-          {...GRADIENT_DEFAULT_PROPS}
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
             <GradientStop offset="90%" stopOpacity={0.7} key="stop" />

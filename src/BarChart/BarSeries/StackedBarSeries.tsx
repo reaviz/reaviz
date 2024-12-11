@@ -6,7 +6,7 @@ import {
 } from './BarSeries';
 import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
 import { RangeLines } from './RangeLines';
-import { Gradient, GRADIENT_DEFAULT_PROPS, GradientStop } from '@/common';
+import { Gradient, GradientStop } from '@/common';
 
 export const StackedBarSeries: FC<Partial<BarSeriesProps>> = (props) => (
   <BarSeries {...STACKED_BAR_SERIES_DEFAULT_PROPS} {...props} />
@@ -20,7 +20,6 @@ export const STACKED_BAR_SERIES_DEFAULT_PROPS = {
       {...BAR_DEFAULT_PROPS}
       gradient={
         <Gradient
-          {...GRADIENT_DEFAULT_PROPS}
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
             <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
