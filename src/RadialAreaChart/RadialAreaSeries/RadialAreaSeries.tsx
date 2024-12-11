@@ -15,7 +15,11 @@ import { CloneElement } from 'reablocks';
 import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '@/common/utils/interpolation';
-import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
+import {
+  RADIAL_POINT_SERIES_DEFAULT_PROPS,
+  RadialPointSeries,
+  RadialPointSeriesProps
+} from './RadialPointSeries';
 import {
   TooltipAreaProps,
   TooltipArea,
@@ -133,31 +137,33 @@ export interface RadialAreaSeriesProps {
     | null;
 }
 
-export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
-  area,
-  line,
-  symbols,
-  tooltip,
-  xScale,
-  yScale,
-  data,
-  id,
-  animated,
-  width,
-  height,
-  innerRadius,
-  outerRadius,
-  type,
-  colorScheme,
-  interpolation,
-  startAngle,
-  endAngle,
-  isClosedCurve,
-  valueMarkers
-}) => {
+export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
+  const {
+    area,
+    line,
+    symbols,
+    tooltip,
+    xScale,
+    yScale,
+    data,
+    id,
+    animated,
+    width,
+    height,
+    innerRadius,
+    outerRadius,
+    type,
+    colorScheme,
+    interpolation,
+    startAngle,
+    endAngle,
+    isClosedCurve,
+    valueMarkers
+  } = { ...RADIAL_AREA_SERIES_DEFAULT_PROPS, ...props };
+
   const symbolsProps = useMemo(
     () => ({
-      ...POINT_SERIES_DEFAULT_PROPS,
+      ...RADIAL_POINT_SERIES_DEFAULT_PROPS,
       ...symbols?.props
     }),
     [symbols]
@@ -193,7 +199,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             color={getColorForPoint}
             index={index}
             data={point}
-            interpolation={interpolation}
+            interpolation={interpolation as RadialInterpolationTypes}
             outerRadius={outerRadius}
             innerRadius={innerRadius}
             isClosedCurve={isClosedCurve}
@@ -207,7 +213,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             hasArea={area !== null}
             index={index}
             animated={animated}
-            interpolation={interpolation}
+            interpolation={interpolation as RadialInterpolationTypes}
             color={getColorForPoint}
             data={point}
             isClosedCurve={isClosedCurve}
@@ -338,7 +344,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   );
 };
 
-RadialAreaSeries.defaultProps = {
+export const RADIAL_AREA_SERIES_DEFAULT_PROPS = {
   colorScheme: schemes.cybertron,
   interpolation: 'smooth',
   type: 'standard',
@@ -346,7 +352,7 @@ RadialAreaSeries.defaultProps = {
   area: <RadialArea />,
   line: <RadialLine />,
   symbols: <RadialPointSeries />,
-  tooltip: <TooltipArea {...TOOLTIP_AREA_DEFAULT_PROPS} />,
+  tooltip: <TooltipArea />,
   startAngle: 0,
   endAngle: 2 * Math.PI,
   isClosedCurve: true

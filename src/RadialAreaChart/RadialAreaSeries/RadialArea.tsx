@@ -91,8 +91,8 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   xScale,
   innerRadius,
   interpolation,
-  gradient,
-  isClosedCurve
+  gradient = <RadialGradient />,
+  isClosedCurve = true
 }) => {
   const transition = useMemo(
     () =>
@@ -181,9 +181,4 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       )}
     </Fragment>
   );
-};
-
-RadialArea.defaultProps = {
-  gradient: <RadialGradient />,
-  isClosedCurve: true
 };
