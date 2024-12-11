@@ -77,20 +77,22 @@ const getTextAnchor = ({ startAngle, endAngle }: ArcData) =>
   // we could also use the sign of position[0]
   startAngle + (endAngle - startAngle) / 2 < Math.PI ? 'start' : 'end';
 
-export const PieArcLabel: FC<Partial<PieArcLabelProps>> = ({
-  centroid,
-  data,
-  lineStroke,
-  padding,
-  fontSize,
-  fontFill,
-  format,
-  fontFamily,
-  position,
-  outerRadius,
-  width,
-  height
-}) => {
+export const PieArcLabel: FC<Partial<PieArcLabelProps>> = (props) => {
+  const {
+    centroid,
+    data,
+    lineStroke,
+    padding,
+    fontSize,
+    fontFill,
+    format,
+    fontFamily,
+    position,
+    outerRadius,
+    width,
+    height
+  } = { ...PIE_ARC_LABEL_DEFAULT_PROPS, ...props };
+
   const textAnchor = getTextAnchor(data);
   const text: React.ReactNode = format
     ? format({ ...data.data, textAnchor })
@@ -158,7 +160,7 @@ export const PieArcLabel: FC<Partial<PieArcLabelProps>> = ({
   );
 };
 
-PieArcLabel.defaultProps = {
+export const PIE_ARC_LABEL_DEFAULT_PROPS = {
   format: undefined,
   lineStroke: 'rgba(127,127,127,0.5)',
   fontFill: '#8F979F',
