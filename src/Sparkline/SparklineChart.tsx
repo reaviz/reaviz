@@ -15,10 +15,10 @@ export interface SparklineChartProps extends LineChartProps {
 }
 
 export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => (
-  <LineChart {...props} />
+  <LineChart {...SPARKLINE_CHART_DEFAULT_PROPS} {...props} />
 );
 
-SparklineChart.defaultProps = {
+const SPARKLINE_CHART_DEFAULT_PROPS = {
   gridlines: null,
   series: (
     <AreaSeries

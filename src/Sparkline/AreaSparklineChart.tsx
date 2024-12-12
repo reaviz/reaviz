@@ -17,9 +17,9 @@ export interface AreaSparklineChartProps extends AreaChartProps {
 
 export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
   props
-) => <AreaChart {...props} />;
+) => <AreaChart {...AREA_SPARKLINE_CHART_DEFAULT_PROPS} {...props} />;
 
-AreaSparklineChart.defaultProps = {
+const AREA_SPARKLINE_CHART_DEFAULT_PROPS = {
   gridlines: null,
   series: (
     <AreaSeries

@@ -16,9 +16,9 @@ export interface BarSparklineChartProps extends BarChartProps {
 
 export const BarSparklineChart: FC<Partial<BarSparklineChartProps>> = (
   props
-) => <BarChart {...props} />;
+) => <BarChart {...BAR_SPARKLINE_CHART_DEFAULT_PROPS} {...props} />;
 
-BarSparklineChart.defaultProps = {
+const BAR_SPARKLINE_CHART_DEFAULT_PROPS = {
   gridlines: null,
   series: <BarSeries colorScheme={schemes.cybertron[0]} />,
   yAxis: (
