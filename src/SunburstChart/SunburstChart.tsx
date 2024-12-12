@@ -22,14 +22,14 @@ export interface SunburstChartProps extends ChartProps {
 }
 
 export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
-  data,
+  data = [],
   id,
-  series,
+  series = <SunburstSeries />,
   containerClassName,
   width,
   height,
   className,
-  margins
+  margins = 0
 }) => {
   const newId = useId(id);
 
@@ -90,10 +90,4 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-SunburstChart.defaultProps = {
-  margins: 0,
-  series: <SunburstSeries />,
-  data: []
 };
