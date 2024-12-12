@@ -15,34 +15,33 @@ export interface SparklineChartProps extends LineChartProps {
 }
 
 export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => (
-  <LineChart {...props} />
+  <LineChart
+    gridlines={null}
+    series={
+      <AreaSeries
+        symbols={<PointSeries show="hover" />}
+        interpolation="smooth"
+        markLine={null}
+        area={null}
+        line={<Line strokeWidth={2} />}
+      />
+    }
+    yAxis={
+      <LinearYAxis
+        scaled={true}
+        type="value"
+        axisLine={null}
+        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
+      />
+    }
+    xAxis={
+      <LinearXAxis
+        type="time"
+        scaled={true}
+        axisLine={null}
+        tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
+      />
+    }
+    {...props}
+  />
 );
-
-SparklineChart.defaultProps = {
-  gridlines: null,
-  series: (
-    <AreaSeries
-      symbols={<PointSeries show="hover" />}
-      interpolation="smooth"
-      markLine={null}
-      area={null}
-      line={<Line strokeWidth={2} />}
-    />
-  ),
-  yAxis: (
-    <LinearYAxis
-      scaled={true}
-      type="value"
-      axisLine={null}
-      tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-    />
-  ),
-  xAxis: (
-    <LinearXAxis
-      type="time"
-      scaled={true}
-      axisLine={null}
-      tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-    />
-  )
-};
