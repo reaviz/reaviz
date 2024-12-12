@@ -78,8 +78,8 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   radius,
   fill,
   data,
-  cursor,
-  tooltip,
+  cursor = 'pointer',
+  tooltip = <ChartTooltip />,
   animated,
   gradient,
   onClick,
@@ -191,9 +191,4 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
       )}
     </g>
   );
-};
-
-SunburstArc.defaultProps = {
-  cursor: 'pointer',
-  tooltip: <ChartTooltip />
 };
