@@ -100,25 +100,23 @@ function roundToFiveDecimals(value: number): number {
   return parseFloat(value.toFixed(5));
 }
 
-export const Line: FC<Partial<LineProps>> = (props) => {
-  const {
-    id,
-    width,
-    data,
-    color,
-    index,
-    strokeWidth,
-    hasArea,
-    animated,
-    yScale,
-    xScale,
-    showZeroStroke,
-    interpolation,
-    gradient,
-    glow,
-    ...rest
-  } = { ...LINE_DEFAULT_PROPS, ...props };
-
+export const Line: FC<Partial<LineProps>> = ({
+  id,
+  width,
+  data,
+  color,
+  index,
+  strokeWidth = 3,
+  hasArea,
+  animated,
+  yScale,
+  xScale,
+  showZeroStroke = true,
+  interpolation,
+  gradient,
+  glow,
+  ...rest
+}) => {
   const [pathLength, setPathLength] = useState<number | null>(null);
   const ghostPathRef = useRef<SVGPathElement | null>(null);
 
@@ -258,9 +256,4 @@ export const Line: FC<Partial<LineProps>> = (props) => {
       )}
     </Fragment>
   );
-};
-
-export const LINE_DEFAULT_PROPS = {
-  showZeroStroke: true,
-  strokeWidth: 3
 };

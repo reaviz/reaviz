@@ -24,21 +24,17 @@ export const RadarChart: FC<Partial<RadarChartProps>> = (props) => (
         {...props?.series?.props}
       />
     }
-    {...RADAR_CHART_DEFAULT_PROPS}
+    axis={
+      <RadialAxis
+        type="category"
+        arcs={
+          <RadialAxisArcSeries
+            count={5}
+            arc={null}
+            line={<RadialAxisArcLine />}
+          />
+        }
+      />
+    }
   />
 );
-
-const RADAR_CHART_DEFAULT_PROPS = {
-  axis: (
-    <RadialAxis
-      type="category"
-      arcs={
-        <RadialAxisArcSeries
-          count={5}
-          arc={null}
-          line={<RadialAxisArcLine />}
-        />
-      }
-    />
-  )
-};
