@@ -24,11 +24,7 @@ import {
 } from '@/common/Axis';
 import { getYScale, getXScale } from '@/common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
-import {
-  GRIDLINE_SERIES_DEFAULT_PROPS,
-  GridlineSeries,
-  GridlineSeriesProps
-} from '@/common/Gridline';
+import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
