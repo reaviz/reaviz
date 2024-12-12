@@ -1,20 +1,19 @@
 import React, { FC } from 'react';
 import {
-  RadialAreaChart,
-  RadialAreaChartProps,
   RadialAreaSeries,
   RadialAreaSeriesProps,
-  RadialPointSeries
+  RadialPointSeries,
+  RadialPointSeriesType
 } from '@/RadialAreaChart';
 
 export interface RadarChartSeriesProps extends RadialAreaSeriesProps {}
 
 export const RadarChartSeries: FC<Partial<RadarChartSeriesProps>> = (props) => (
-  <RadialAreaSeries {...props} />
+  <RadialAreaSeries {...RADAR_CHART_SERIES_DEFAULT_PROPS} {...props} />
 );
 
-RadarChartSeries.defaultProps = {
+export const RADAR_CHART_SERIES_DEFAULT_PROPS = {
   area: null,
-  type: 'grouped',
+  type: 'grouped' as RadialPointSeriesType,
   symbols: <RadialPointSeries show />
 };
