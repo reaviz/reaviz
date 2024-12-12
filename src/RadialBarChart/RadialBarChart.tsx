@@ -75,12 +75,17 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
     [axis?.props]
   );
 
+  const seriesProps = useMemo(
+    () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(series?.props ?? {}) }),
+    [series?.props]
+  );
+
   const getXScale = useCallback(
     (points) => {
       const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
       let xScale;
       if (axisProps.type === 'category') {
-        const isMultiSeries = series.props.type === 'grouped';
+        const isMultiSeries = seriesProps.type === 'grouped';
 
         let xDomain;
         if (isMultiSeries) {
@@ -117,12 +122,12 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
 
       return xScale;
     },
-    [axisProps.type, endAngle, series.props.type, startAngle]
+    [axisProps.type, endAngle, seriesProps.type, startAngle]
   );
 
   const getScales = useCallback(
     (preData: ChartDataShape[], innerRadius: number, outerRadius: number) => {
-      const isMultiSeries = series.props.type === 'grouped';
+      const isMultiSeries = seriesProps.type === 'grouped';
       let newData;
       if (isMultiSeries) {
         newData = buildNestedChartData(preData as ChartNestedDataShape[], true);
@@ -142,7 +147,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
         newData
       };
     },
-    [getXScale, series.props.type]
+    [getXScale, seriesProps.type]
   );
 
   const renderChart = useCallback(
