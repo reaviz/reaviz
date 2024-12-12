@@ -59,11 +59,16 @@ export interface GridlineSeriesProps {
   stripe: GridStripeElement | null;
 }
 
-export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
-  const { line, stripe, yScale, xScale, yAxis, xAxis, height, width } = {
-    ...GRIDLINE_SERIES_DEFAULT_PROPS,
-    ...props
-  };
+export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
+  line = <Gridline direction="all" />,
+  stripe,
+  yScale,
+  xScale,
+  yAxis,
+  xAxis,
+  height,
+  width
+}) => {
   const lineProps = useMemo(
     () => ({ ...GRID_LINE_DEFAULT_PROPS, ...line.props }),
     [line.props]
@@ -165,9 +170,4 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = (props) => {
         )}
     </g>
   );
-};
-
-export const GRIDLINE_SERIES_DEFAULT_PROPS = {
-  line: <Gridline {...GRID_LINE_DEFAULT_PROPS} direction="all" />,
-  stripe: null
 };

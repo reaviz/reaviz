@@ -42,5 +42,3 @@ export const BrushHandle: FC<BrushHandleProps> = (props) => {
     </Move>
   );
 };
-
-BrushHandle.defaultProps = {};

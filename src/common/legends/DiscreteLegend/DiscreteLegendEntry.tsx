@@ -61,41 +61,30 @@ export interface DiscreteLegendEntryProps {
   onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = (
-  props
-) => {
-  const {
-    label,
-    symbol,
-    title,
-    className,
-    color,
-    style,
-    orientation,
-    onMouseEnter,
-    onMouseLeave,
-    onClick
-  } = { ...DISCRETE_LEGEND_ENTRY_DEFAULT_PROPS, ...props };
-
-  return (
-    <div
-      title={title}
-      className={classNames(css.entry, className, {
-        [css.vertical]: orientation === 'vertical',
-        [css.horizontal]: orientation === 'horizontal'
-      })}
-      onClick={onClick}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      style={style}
-    >
-      <CloneElement<DiscreteLegendSymbolProps> element={symbol} color={color} />
-      <span className={css.label}>{label}</span>
-    </div>
-  );
-};
-
-export const DISCRETE_LEGEND_ENTRY_DEFAULT_PROPS = {
-  symbol: <DiscreteLegendSymbol />,
-  orientation: 'horizontal'
-};
+export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = ({
+  label,
+  symbol = <DiscreteLegendSymbol />,
+  title,
+  className,
+  color,
+  style,
+  orientation = 'horizontal',
+  onMouseEnter,
+  onMouseLeave,
+  onClick
+}) => (
+  <div
+    title={title}
+    className={classNames(css.entry, className, {
+      [css.vertical]: orientation === 'vertical',
+      [css.horizontal]: orientation === 'horizontal'
+    })}
+    onClick={onClick}
+    onMouseEnter={onMouseEnter}
+    onMouseLeave={onMouseLeave}
+    style={style}
+  >
+    <CloneElement<DiscreteLegendSymbolProps> element={symbol} color={color} />
+    <span className={css.label}>{label}</span>
+  </div>
+);

@@ -24,11 +24,7 @@ import {
 } from '@/common/Axis';
 import { getYScale, getXScale } from '@/common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
-import {
-  GRIDLINE_SERIES_DEFAULT_PROPS,
-  GridlineSeries,
-  GridlineSeriesProps
-} from '@/common/Gridline';
+import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
 import {
   ZoomPanChangeEvent,
   ChartZoomPanProps,
@@ -95,7 +91,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   xAxis = <LinearXAxis type="time" />,
   yAxis = <LinearYAxis type="value" />,
   data = [],
-  gridlines = <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
+  gridlines = <GridlineSeries />,
   containerClassName,
   brush = null,
   zoomPan = null,
