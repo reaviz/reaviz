@@ -9,7 +9,11 @@ import React, {
   useRef
 } from 'react';
 import classNames from 'classnames';
-import { AreaSeries, AreaSeriesProps } from './AreaSeries';
+import {
+  AREA_SERIES_DEFAULT_PROPS,
+  AreaSeries,
+  AreaSeriesProps
+} from './AreaSeries';
 import {
   isAxisVisible,
   LinearAxisProps,
@@ -117,16 +121,20 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
     [yAxis.props]
   );
+  const seriesProps = useMemo(
+    () => ({ ...AREA_SERIES_DEFAULT_PROPS, ...series.props }),
+    [series.props]
+  );
 
   const timeoutRef = useRef<any | null>(null);
 
-  const seriesType = series.props.type;
+  const seriesType = seriesProps.type;
   const isMultiSeries =
     seriesType === 'stacked' ||
     seriesType === 'stackedNormalized' ||
     seriesType === 'grouped';
 
-  const animated = preventAnimation === true ? false : series.props.animated;
+  const animated = preventAnimation === true ? false : seriesProps.animated;
 
   useEffect(() => {
     if (zoomPan) {
@@ -264,8 +272,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
                 onZoomPan={onZoomPan}
                 height={chartHeight}
                 width={chartWidth}
-                axisType={xAxis.props.type}
-                roundDomains={xAxis.props.roundDomains}
+                axisType={xAxisProps.type}
+                roundDomains={xAxisProps.roundDomains}
                 data={aggregatedData}
                 domain={zoomDomain}
               >

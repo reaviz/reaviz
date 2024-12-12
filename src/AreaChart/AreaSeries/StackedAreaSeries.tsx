@@ -6,13 +6,15 @@ import {
 } from './AreaSeries';
 import { CloneElement } from 'reablocks';
 import { POINT_SERIES_DEFAULT_PROPS, PointSeriesProps } from './PointSeries';
-import { ScatterPointProps } from '@/ScatterPlot';
+import { SCATTER_POINT_DEFAULT_PROPS, ScatterPointProps } from '@/ScatterPlot';
+import { InterpolationTypes } from '@/common';
 
-export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
-  type,
-  symbols,
-  ...rest
-}) => {
+export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
+  const { symbols, interpolation, ...rest } = {
+    ...AREA_SERIES_DEFAULT_PROPS,
+    ...props
+  };
+
   const symbolsProps = useMemo(
     () => ({
       ...POINT_SERIES_DEFAULT_PROPS,
@@ -21,9 +23,18 @@ export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
     [symbols]
   );
 
+  const pointProps = useMemo(
+    () => ({
+      ...SCATTER_POINT_DEFAULT_PROPS,
+      ...symbolsProps.point?.props
+    }),
+    [symbolsProps]
+  );
+
   return (
     <AreaSeries
       {...rest}
+      interpolation={interpolation as InterpolationTypes}
       type="stacked"
       symbols={
         symbols && (
@@ -33,7 +44,7 @@ export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
             point={
               <CloneElement<ScatterPointProps>
                 element={symbolsProps.point}
-                {...symbolsProps.point.props}
+                {...pointProps}
                 tooltip={null}
               />
             }
@@ -43,8 +54,3 @@ export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
     />
   );
 };
-
-StackedAreaSeries.defaultProps = {
-  ...AREA_SERIES_DEFAULT_PROPS,
-  type: 'stacked'
-} as Partial<AreaSeriesProps>;

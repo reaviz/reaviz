@@ -154,7 +154,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
   const symbolsProps = useMemo(
     () => ({
       ...POINT_SERIES_DEFAULT_PROPS,
-      ...symbols?.props
+      ...(symbols?.props ?? {})
     }),
     [symbols]
   );
