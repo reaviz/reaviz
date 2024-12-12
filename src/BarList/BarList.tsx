@@ -44,12 +44,15 @@ export interface BarListProps {
   type?: 'percent' | 'count';
 }
 
-export const BarList: FC<BarListProps> = (props) => {
-  const { id, className, style, data, sortDirection, series, type } = {
-    ...BAR_LIST_DEFAULT_PROPS,
-    ...props
-  };
-
+export const BarList: FC<BarListProps> = ({
+  id,
+  className,
+  style,
+  data = [],
+  sortDirection = 'desc',
+  series = <BarListSeries />,
+  type = 'count'
+}) => {
   const curId = useId(id);
 
   const mashedData = useMemo(() => {
@@ -99,11 +102,4 @@ export const BarList: FC<BarListProps> = (props) => {
       <CloneElement<BarListSeriesProps> element={series} data={mashedData} />
     </motion.section>
   );
-};
-
-export const BAR_LIST_DEFAULT_PROPS: Partial<BarListProps> = {
-  data: [],
-  sortDirection: 'desc',
-  series: <BarListSeries />,
-  type: 'count'
 };

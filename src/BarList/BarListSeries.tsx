@@ -86,24 +86,22 @@ export interface BarListSeriesProps {
   onItemMouseLeave?: (data: ChartShallowDataShape) => void;
 }
 
-export const BarListSeries: FC<Partial<BarListSeriesProps>> = (props) => {
-  const {
-    data,
-    colorScheme,
-    itemClassName,
-    labelClassName,
-    outerBarClassName,
-    valueClassName,
-    labelFormat,
-    barClassName,
-    labelPosition,
-    valuePosition,
-    valueFormat,
-    onItemClick,
-    onItemMouseEnter,
-    onItemMouseLeave
-  } = { ...BAR_LIST_SERIES_DEFAULT_PROPS, ...props };
-
+export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
+  data,
+  colorScheme = 'cybertron',
+  itemClassName,
+  labelClassName,
+  outerBarClassName,
+  valueClassName,
+  labelFormat,
+  barClassName,
+  labelPosition = 'top',
+  valuePosition = 'none',
+  valueFormat,
+  onItemClick,
+  onItemMouseEnter,
+  onItemMouseLeave
+}) => {
   const renderBar = useCallback(
     (item, index) => {
       const fill = getColor({
@@ -178,10 +176,4 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = (props) => {
       })}
     </>
   );
-};
-
-export const BAR_LIST_SERIES_DEFAULT_PROPS: Partial<BarListSeriesProps> = {
-  colorScheme: 'cybertron',
-  labelPosition: 'top',
-  valuePosition: 'none'
 };
