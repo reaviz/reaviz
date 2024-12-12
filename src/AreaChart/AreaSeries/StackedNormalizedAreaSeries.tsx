@@ -9,12 +9,16 @@ import { TooltipTemplate, TooltipArea, ChartTooltip } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { POINT_SERIES_DEFAULT_PROPS, PointSeriesProps } from './PointSeries';
 import { ScatterPointProps } from '@/ScatterPlot';
+import { InterpolationTypes } from '@/common';
 
-export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
-  type,
-  symbols,
-  ...rest
-}) => {
+export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = (
+  props
+) => {
+  const { interpolation, symbols, ...rest } = {
+    ...AREA_SERIES_DEFAULT_PROPS,
+    ...props
+  };
+
   const symbolsProps = useMemo(
     () => ({
       ...POINT_SERIES_DEFAULT_PROPS,
@@ -26,6 +30,7 @@ export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
   return (
     <AreaSeries
       {...rest}
+      interpolation={interpolation as InterpolationTypes}
       type="stackedNormalized"
       symbols={
         symbols && (
@@ -42,36 +47,31 @@ export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
           />
         )
       }
-    />
-  );
-};
-
-StackedNormalizedAreaSeries.defaultProps = {
-  ...AREA_SERIES_DEFAULT_PROPS,
-  type: 'stackedNormalized',
-  tooltip: (
-    <TooltipArea
       tooltip={
-        <ChartTooltip
-          content={(series, color) => {
-            if (!series) {
-              return null;
-            }
+        <TooltipArea
+          tooltip={
+            <ChartTooltip
+              content={(series, color) => {
+                if (!series) {
+                  return null;
+                }
 
-            const value = {
-              ...series,
-              data: series.data.map((d) => ({
-                ...d,
-                value: `${formatValue(d.value)} ∙ ${formatValue(
-                  Math.floor((d.y1 - d.y0) * 100)
-                )}%`
-              }))
-            };
+                const value = {
+                  ...series,
+                  data: series.data.map((d) => ({
+                    ...d,
+                    value: `${formatValue(d.value)} ∙ ${formatValue(
+                      Math.floor((d.y1 - d.y0) * 100)
+                    )}%`
+                  }))
+                };
 
-            return <TooltipTemplate color={color} value={value} />;
-          }}
+                return <TooltipTemplate color={color} value={value} />;
+              }}
+            />
+          }
         />
       }
     />
-  )
-} as Partial<AreaSeriesProps>;
+  );
+};
