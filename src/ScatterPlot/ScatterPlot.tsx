@@ -85,23 +85,22 @@ export interface ScatterPlotProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-export const ScatterPlot: FC<Partial<ScatterPlotProps>> = (props) => {
-  const {
-    id,
-    width,
-    height,
-    margins,
-    className,
-    series,
-    xAxis,
-    yAxis,
-    data,
-    gridlines,
-    containerClassName,
-    brush,
-    zoomPan,
-    secondaryAxis
-  } = { ...SCATTER_PLOT_DEFAULT_PROPS, ...props };
+export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
+  id,
+  width,
+  height,
+  margins,
+  className,
+  series = <ScatterSeries />,
+  xAxis = <LinearXAxis type="time" />,
+  yAxis = <LinearYAxis type="value" />,
+  data = [],
+  gridlines = <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
+  containerClassName,
+  brush = null,
+  zoomPan = null,
+  secondaryAxis
+}) => {
   const xAxisProps = useMemo(
     () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
     [xAxis.props]
@@ -286,14 +285,4 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = (props) => {
       {renderChart}
     </ChartContainer>
   );
-};
-
-const SCATTER_PLOT_DEFAULT_PROPS = {
-  data: [],
-  xAxis: <LinearXAxis type="time" />,
-  yAxis: <LinearYAxis type="value" />,
-  series: <ScatterSeries />,
-  gridlines: <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
-  brush: null,
-  zoomPan: null
 };
