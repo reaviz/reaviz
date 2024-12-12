@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactElement, useCallback } from 'react';
+import React, { FC, ReactElement, useCallback } from 'react';
 import {
   ChartContainer,
   ChartContainerChildProps,
@@ -45,7 +45,7 @@ export interface VennDiagramProps extends ChartProps {
 
 export const VennDiagram: FC<VennDiagramProps> = ({
   id,
-  type,
+  type = 'venn',
   width,
   height,
   margins,
@@ -53,7 +53,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   containerClassName,
   data,
   disabled,
-  series
+  series = <VennSeries />
 }) => {
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
@@ -104,9 +104,4 @@ export const VennDiagram: FC<VennDiagramProps> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-VennDiagram.defaultProps = {
-  type: 'venn',
-  series: <VennSeries />
 };

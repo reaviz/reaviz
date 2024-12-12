@@ -130,17 +130,17 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   mask,
   id,
   style,
-  active,
-  inactiveStyle,
-  activeStyle,
-  initialStyle,
-  strokeWidth,
-  gradient,
+  active = false,
+  inactiveStyle = { opacity: 0.3 },
+  activeStyle = { opacity: 0.8 },
+  initialStyle = { opacity: 0.6 },
+  strokeWidth = 3,
+  gradient = <Gradient />,
   glow,
-  tooltip,
-  onClick,
-  onMouseEnter,
-  onMouseLeave
+  tooltip = <ChartTooltip />,
+  onClick = () => undefined,
+  onMouseEnter = () => undefined,
+  onMouseLeave = () => undefined
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const arcRef = useRef<any | null>(null);
@@ -247,17 +247,4 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       )}
     </g>
   );
-};
-
-VennArc.defaultProps = {
-  active: false,
-  inactiveStyle: { opacity: 0.3 },
-  activeStyle: { opacity: 0.8 },
-  initialStyle: { opacity: 0.6 },
-  strokeWidth: 3,
-  gradient: <Gradient />,
-  tooltip: <ChartTooltip />,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined
 };
