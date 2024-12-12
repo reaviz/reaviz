@@ -17,45 +17,46 @@ export interface AreaSparklineChartProps extends AreaChartProps {
 
 export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
   props
-) => <AreaChart {...AREA_SPARKLINE_CHART_DEFAULT_PROPS} {...props} />;
-
-const AREA_SPARKLINE_CHART_DEFAULT_PROPS = {
-  gridlines: null,
-  series: (
-    <AreaSeries
-      symbols={<PointSeries show="hover" />}
-      interpolation="smooth"
-      markLine={null}
-      area={
-        <Area
-          mask={<Stripes />}
-          gradient={
-            <Gradient
-              stops={[
-                <GradientStop offset="10%" stopOpacity={0} key="start" />,
-                <GradientStop offset="80%" stopOpacity={1} key="stop" />
-              ]}
-            />
-          }
-        />
-      }
-      line={<Line strokeWidth={3} />}
-    />
-  ),
-  yAxis: (
-    <LinearYAxis
-      type="value"
-      scaled={true}
-      axisLine={null}
-      tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-    />
-  ),
-  xAxis: (
-    <LinearXAxis
-      type="time"
-      scaled={true}
-      axisLine={null}
-      tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-    />
-  )
-};
+) => (
+  <AreaChart
+    gridlines={null}
+    series={
+      <AreaSeries
+        symbols={<PointSeries show="hover" />}
+        interpolation="smooth"
+        markLine={null}
+        area={
+          <Area
+            mask={<Stripes />}
+            gradient={
+              <Gradient
+                stops={[
+                  <GradientStop offset="10%" stopOpacity={0} key="start" />,
+                  <GradientStop offset="80%" stopOpacity={1} key="stop" />
+                ]}
+              />
+            }
+          />
+        }
+        line={<Line strokeWidth={3} />}
+      />
+    }
+    yAxis={
+      <LinearYAxis
+        type="value"
+        scaled={true}
+        axisLine={null}
+        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
+      />
+    }
+    xAxis={
+      <LinearXAxis
+        type="time"
+        scaled={true}
+        axisLine={null}
+        tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
+      />
+    }
+    {...props}
+  />
+);
