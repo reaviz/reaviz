@@ -246,5 +246,3 @@ export const MultiMonth = () => {
     />
   );
 };
-
-MultiMonth.tags = ['no-snapshot'];

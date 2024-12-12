@@ -129,14 +129,13 @@ export const NoAnimation = () => (
 export const VaryingSizes = () => {
   const longData: ChartShallowDataShape[] = range(15).map((o) => ({
     key: `${o}`,
-    data: randomNumber(1, 500)
+    data: Math.round(o % 2 === 0 ? 100 * (1 + o * 1.5) : 50 * (1 + o * 4))
   }));
 
   return (
     <BubbleChart id="varying-sizes" data={longData} height={450} width={450} />
   );
 };
-VaryingSizes.tags = ['no-snapshot'];
 
 export const _100Bubbles = () => {
   const longData: ChartShallowDataShape[] = range(100).map((o) => ({

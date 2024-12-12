@@ -39,8 +39,6 @@ export const LinearValueMarkers = () => (
     }
   />
 );
-// TODO: figure out why this is failing
-LinearValueMarkers.tags = ['skip-snapshot'];
 
 export const VerticalLinearValueMarkers = () => (
   <AreaChart
@@ -70,8 +68,6 @@ export const VerticalLinearValueMarkers = () => (
     }
   />
 );
-// TODO: figure out why this is failing
-VerticalLinearValueMarkers.tags = ['skip-snapshot'];
 
 export const RadialValueMarkers = () => (
   <RadialAreaChart

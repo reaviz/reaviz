@@ -1027,3 +1027,455 @@ exports[`Charts/Bubble Chart Simple smoke-test 1`] = `
   </svg>
 </div>
 `;
+
+exports[`Charts/Bubble Chart VaryingSizes smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="450"
+     height="450"
+     style="height: 450px; width: 450px;"
+>
+  <svg width="450"
+       height="450"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(10, 10)">
+      <g opacity="1"
+         transform-origin="95.74934387207031px 115.34292602539062px"
+         style="transform: none; transform-origin: 95.7493px 115.343px;"
+      >
+        <circle id="varying_sizes_series_0_bubble-bubble"
+                fill="#2d60e8"
+                tabindex="0"
+                aria-label="0: 100"
+                role="graphics-document"
+                r="10.675932063909077"
+                cx="184.72119043726556"
+                cy="230.00992379259912"
+        >
+        </circle>
+        <text id="varying_sizes_series_0_label-text"
+              fill="#ffffff"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(184.721px) translateY(230.01px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            0
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="114.08084106445312px 118.44502258300781px"
+         style="transform: none; transform-origin: 114.081px 118.445px;"
+      >
+        <circle id="varying_sizes_series_1_bubble-bubble"
+                fill="#2c77e0"
+                tabindex="0"
+                aria-label="1: 250"
+                role="graphics-document"
+                r="16.880130733587485"
+                cx="215.17999819524258"
+                cy="230.00992379259912"
+        >
+        </circle>
+        <text id="varying_sizes_series_1_label-text"
+              fill="#ffffff"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(215.18px) translateY(230.01px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            1
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="104.82855224609375px 137.74075317382812px"
+         style="transform: none; transform-origin: 104.829px 137.741px;"
+      >
+        <circle id="varying_sizes_series_2_bubble-bubble"
+                fill="#2b8dd8"
+                tabindex="0"
+                aria-label="2: 400"
+                role="graphics-document"
+                r="21.351864127818153"
+                cx="192.2036706878236"
+                cy="264.1296423507303"
+        >
+        </circle>
+        <text id="varying_sizes_series_2_label-text"
+              fill="#ffffff"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(192.204px) translateY(264.13px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            2
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="107.1643295288086px 103.4593276977539px"
+         style="transform: none; transform-origin: 107.164px 103.459px;"
+      >
+        <circle id="varying_sizes_series_3_bubble-bubble"
+                fill="#2aa1d1"
+                tabindex="0"
+                aria-label="3: 650"
+                role="graphics-document"
+                r="27.21839295983164"
+                cx="191.00870893277343"
+                cy="189.70027196495258"
+        >
+        </circle>
+        <text id="varying_sizes_series_3_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(191.009px) translateY(189.7px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            3
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="134.4542236328125px 143.12469482421875px"
+         style="transform: none; transform-origin: 134.454px 143.125px;"
+      >
+        <circle id="varying_sizes_series_4_bubble-bubble"
+                fill="#29b5ca"
+                tabindex="0"
+                aria-label="4: 700"
+                role="graphics-document"
+                r="28.24586125492394"
+                cx="244.56102253180669"
+                cy="268.0035414388524"
+        >
+        </circle>
+        <text id="varying_sizes_series_4_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(244.561px) translateY(268.004px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            4
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="143.149658203125px 109.1170654296875px"
+         style="transform: none; transform-origin: 143.15px 109.117px;"
+      >
+        <circle id="varying_sizes_series_5_bubble-bubble"
+                fill="#28c8c3"
+                tabindex="0"
+                aria-label="5: 1,050"
+                role="graphics-document"
+                r="34.59397371000649"
+                cx="255.60377810290976"
+                cy="193.6401593021618"
+        >
+        </circle>
+        <text id="varying_sizes_series_5_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(255.604px) translateY(193.64px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            5
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="84.32733154296875px 132.6201171875px"
+         style="transform: none; transform-origin: 84.3273px 132.62px;"
+      >
+        <circle id="varying_sizes_series_6_bubble-bubble"
+                fill="#27dcbc"
+                tabindex="0"
+                aria-label="6: 1,000"
+                role="graphics-document"
+                r="33.76026146717497"
+                cx="138.79283914494766"
+                cy="241.47995627195903"
+        >
+        </circle>
+        <text id="varying_sizes_series_6_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(138.793px) translateY(241.48px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            6
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="80.62825012207031px 98.07455444335938px"
+         style="transform: none; transform-origin: 80.6283px 98.0746px;"
+      >
+        <circle id="varying_sizes_series_7_bubble-bubble"
+                fill="#26efb5"
+                tabindex="0"
+                aria-label="7: 1,450"
+                role="graphics-document"
+                r="40.652738146174464"
+                cx="124.5022160370855"
+                cy="165.49638929728522"
+        >
+        </circle>
+        <text id="varying_sizes_series_7_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(124.502px) translateY(165.496px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            7
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="172.61968994140625px 137.2619171142578px"
+         style="transform: none; transform-origin: 172.62px 137.262px;"
+      >
+        <circle id="varying_sizes_series_8_bubble-bubble"
+                fill="#2d60e8"
+                tabindex="0"
+                aria-label="8: 1,300"
+                role="graphics-document"
+                r="38.492620469794275"
+                cx="310.64519057474786"
+                cy="246.03121365385104"
+        >
+        </circle>
+        <text id="varying_sizes_series_8_label-text"
+              fill="#ffffff"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(310.645px) translateY(246.031px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            8
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="122.86528015136719px 184.6361541748047px"
+         style="transform: none; transform-origin: 122.865px 184.636px;"
+      >
+        <circle id="varying_sizes_series_9_bubble-bubble"
+                fill="#2c77e0"
+                tabindex="0"
+                aria-label="9: 1,850"
+                role="graphics-document"
+                r="45.9189200712978"
+                cx="203.7100619536995"
+                cy="333.35338939427965"
+        >
+        </circle>
+        <text id="varying_sizes_series_9_label-text"
+              fill="#ffffff"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(203.71px) translateY(333.353px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            9
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="74.30664825439453px 174.73941040039062px"
+         style="transform: none; transform-origin: 74.3066px 174.739px;"
+      >
+        <circle id="varying_sizes_series_10_bubble-bubble"
+                fill="#2b8dd8"
+                tabindex="0"
+                aria-label="10: 1,600"
+                role="graphics-document"
+                r="42.70372825563631"
+                cx="113.69862905321732"
+                cy="316.77510348716885"
+        >
+        </circle>
+        <text id="varying_sizes_series_10_label-text"
+              fill="#ffffff"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(113.699px) translateY(316.775px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            10
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="130.89218139648438px 77.18616485595703px"
+         style="transform: none; transform-origin: 130.892px 77.1862px;"
+      >
+        <circle id="varying_sizes_series_11_bubble-bubble"
+                fill="#2aa1d1"
+                tabindex="0"
+                aria-label="11: 2,250"
+                role="graphics-document"
+                r="50.640392200762456"
+                cx="218.41740684989514"
+                cy="113.73193628497864"
+        >
+        </circle>
+        <text id="varying_sizes_series_11_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(218.417px) translateY(113.732px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            11
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="82.35494995117188px 55.97637939453125px"
+         style="transform: none; transform-origin: 82.3549px 55.9764px;"
+      >
+        <circle id="varying_sizes_series_12_bubble-bubble"
+                fill="#29b5ca"
+                tabindex="0"
+                aria-label="12: 1,900"
+                role="graphics-document"
+                r="46.53530899468528"
+                cx="125.96365813299532"
+                cy="75.41745164564989"
+        >
+        </circle>
+        <text id="varying_sizes_series_12_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(125.964px) translateY(75.4175px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            12
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="177.13504028320312px 193.638427734375px"
+         style="transform: none; transform-origin: 177.135px 193.638px;"
+      >
+        <circle id="varying_sizes_series_13_bubble-bubble"
+                fill="#28c8c3"
+                tabindex="0"
+                aria-label="13: 2,650"
+                role="graphics-document"
+                r="54.957723970155925"
+                cx="307.10144153023543"
+                cy="342.3191136190954"
+        >
+        </circle>
+        <text id="varying_sizes_series_13_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(307.101px) translateY(342.319px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            13
+          </tspan>
+        </text>
+      </g>
+      <g opacity="1"
+         transform-origin="47.8317985534668px 133.23193359375px"
+         style="transform: none; transform-origin: 47.8318px 133.232px;"
+      >
+        <circle id="varying_sizes_series_14_bubble-bubble"
+                fill="#27dcbc"
+                tabindex="0"
+                aria-label="14: 2,200"
+                role="graphics-document"
+                r="50.07456000336341"
+                cx="53.3781024606441"
+                cy="226.3892906959651"
+        >
+        </circle>
+        <text id="varying_sizes_series_14_label-text"
+              fill="#000000"
+              text-anchor="middle"
+              style="pointer-events: none; font-family: sans-serif; font-size: 14px; transform: translateX(53.3781px) translateY(226.389px); transform-origin: 0px -2px;"
+              transform-origin="0px -2px"
+        >
+          <tspan dominant-baseline="alphabetic"
+                 dy="3"
+                 x="0"
+                 style="baseline-shift: 0%;"
+          >
+            14
+          </tspan>
+        </text>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
