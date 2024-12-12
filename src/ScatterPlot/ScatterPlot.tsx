@@ -87,14 +87,14 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   height,
   margins,
   className,
-  series,
-  xAxis,
-  yAxis,
-  data,
-  gridlines,
+  series = <ScatterSeries />,
+  xAxis = <LinearXAxis type="time" />,
+  yAxis = <LinearYAxis type="value" />,
+  data = [],
+  gridlines = <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
   containerClassName,
-  brush,
-  zoomPan,
+  brush = null,
+  zoomPan = null,
   secondaryAxis
 }) => {
   const xAxisProps = useMemo(
@@ -281,14 +281,4 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-ScatterPlot.defaultProps = {
-  data: [],
-  xAxis: <LinearXAxis type="time" />,
-  yAxis: <LinearYAxis type="value" />,
-  series: <ScatterSeries />,
-  gridlines: <GridlineSeries />,
-  brush: null,
-  zoomPan: null
 };
