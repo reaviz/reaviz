@@ -91,7 +91,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   xAxis = <LinearXAxis type="time" />,
   yAxis = <LinearYAxis type="value" />,
   data = [],
-  gridlines = <GridlineSeries {...GRIDLINE_SERIES_DEFAULT_PROPS} />,
+  gridlines = <GridlineSeries />,
   containerClassName,
   brush = null,
   zoomPan = null,
