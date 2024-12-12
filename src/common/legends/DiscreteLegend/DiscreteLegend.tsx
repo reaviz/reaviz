@@ -29,31 +29,25 @@ export interface DiscreteLegendProps {
   entries: ReactElement<DiscreteLegendEntryProps, typeof DiscreteLegendEntry>[];
 }
 
-export const DiscreteLegend: FC<Partial<DiscreteLegendProps>> = (props) => {
-  const { entries, orientation, style, className } = {
-    ...DISCRETE_LEGEND_DEFAULT_PROPS,
-    ...props
-  };
-
-  return (
-    <div
-      className={classNames(css.container, className, {
-        [css.horizontal]: orientation === 'horizontal',
-        [css.vertical]: orientation === 'vertical'
-      })}
-      style={style}
-    >
-      {entries.map((entry, index) => (
-        <CloneElement<DiscreteLegendEntryProps>
-          element={entry}
-          key={`dle-${index}`}
-          orientation={orientation}
-        />
-      ))}
-    </div>
-  );
-};
-
-export const DISCRETE_LEGEND_DEFAULT_PROPS = {
-  orientation: 'vertical' as const
-};
+export const DiscreteLegend: FC<Partial<DiscreteLegendProps>> = ({
+  entries,
+  orientation = 'vertical',
+  style,
+  className
+}) => (
+  <div
+    className={classNames(css.container, className, {
+      [css.horizontal]: orientation === 'horizontal',
+      [css.vertical]: orientation === 'vertical'
+    })}
+    style={style}
+  >
+    {entries.map((entry, index) => (
+      <CloneElement<DiscreteLegendEntryProps>
+        element={entry}
+        key={`dle-${index}`}
+        orientation={orientation}
+      />
+    ))}
+  </div>
+);
