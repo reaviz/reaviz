@@ -129,8 +129,8 @@ export const Line: FC<Partial<LineProps>> = ({
   const getLinePath = useCallback(
     (point: ChartInternalShallowDataShape[]) => {
       const fn = line()
-        .x((d: any) => d.x)
-        .y((d: any) => d.y1)
+        .x((d: any) => roundDecimals(d.x))
+        .y((d: any) => roundDecimals(d.y1))
         .defined((d: any) => showZeroStroke || calculateShowStroke(d, point))
         .curve(interpolate(interpolation));
 
