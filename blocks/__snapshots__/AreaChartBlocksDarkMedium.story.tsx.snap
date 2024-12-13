@@ -665,7 +665,7 @@ exports[`Blocks/Area Chart/Dark/Medium CircleSeries smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-46-path">
+          <clipPath id="area-series-circle-series-path">
             <rect width="625"
                   height="268"
                   x="-12.5"
@@ -681,25 +681,25 @@ exports[`Blocks/Area Chart/Dark/Medium CircleSeries smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-46-path)">
+          <g clip-path="url(#area-series-circle-series-path)">
             <path class
                   pointer-events="none"
                   stroke="#4C86FF"
                   stroke-width="3"
                   fill="none"
-                  d="M0,121.5L50,106.313L100,147.319L150,144.281L200,156.431L250,121.5L300,116.944L350,75.938L400,86.569L500,30.375L550,33.412L600,0"
+                  d="M0,121.5L50,106.313L100,147.319L150,144.281L200,156.431L250,121.5L300,116.944L350,75.938L400,86.569L500,30.375L550,33.413L600,0"
                   stroke-dasharray
             >
             </path>
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-46-area-0)"
-                  d="M0,121.5L50,106.313L100,147.319L150,144.281L200,156.431L250,121.5L300,116.944L350,75.938L400,86.569L500,30.375L550,33.412L600,0L600,243L550,243L500,243L400,243L350,243L300,243L250,243L200,243L150,243L100,243L50,243L0,243Z"
+                  fill="url(#gradient-area-series-circle-series-area-0)"
+                  d="M0,121.5L50,106.313L100,147.319L150,144.281L200,156.431L250,121.5L300,116.944L350,75.938L400,86.569L500,30.375L550,33.413L600,0L600,243L550,243L500,243L400,243L350,243L300,243L250,243L200,243L150,243L100,243L50,243L0,243Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-46-area-0"
+                            id="gradient-area-series-circle-series-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -716,7 +716,7 @@ exports[`Blocks/Area Chart/Dark/Medium CircleSeries smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-46-path">
+              <clipPath id="area-series-circle-series-path">
                 <rect width="625"
                       height="268"
                       x="-12.5"
@@ -725,7 +725,7 @@ exports[`Blocks/Area Chart/Dark/Medium CircleSeries smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-46-path)">
+            <g clip-path="url(#area-series-circle-series-path)">
               <g class
                  tabindex="0"
                  aria-label="Sat Feb 01 2020 02:00:00 GMT+0200 (Eastern European Standard Time): 8"
@@ -1855,7 +1855,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationSmooth smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-31-path">
+          <clipPath id="area-series-interpolation-smooth-path">
             <rect width="625"
                   height="268"
                   x="-12.5"
@@ -1871,25 +1871,25 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationSmooth smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-31-path)">
+          <g clip-path="url(#area-series-interpolation-smooth-path)">
             <path class
                   pointer-events="none"
                   stroke="#5B14C5"
                   stroke-width="3"
                   fill="none"
-                  d="M0,45.563C28.667,98.719,57.333,151.875,86,151.875C121.667,151.875,157.333,75.938,193,75.938C228.667,75.938,264.333,121.5,300,121.5C328.667,121.5,357.333,30.375,386,30.375C414.333,30.375,442.667,91.125,471,91.125C499.667,91.125,528.333,30.375,557,30.375C564.333,30.375,571.667,33.412,579,33.412C586,33.412,593,16.706,600,0"
+                  d="M0,45.563C28.667,98.719,57.333,151.875,86,151.875C121.667,151.875,157.333,75.938,193,75.938C228.667,75.938,264.333,121.5,300,121.5C328.667,121.5,357.333,30.375,386,30.375C414.333,30.375,442.667,91.125,471,91.125C499.667,91.125,528.333,30.375,557,30.375C564.333,30.375,571.667,33.413,579,33.413C586,33.413,593,16.706,600,0"
                   stroke-dasharray
             >
             </path>
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-31-area-0)"
-                  d="M0,45.563C28.667,98.719,57.333,151.875,86,151.875C121.667,151.875,157.333,75.938,193,75.938C228.667,75.938,264.333,121.5,300,121.5C328.667,121.5,357.333,30.375,386,30.375C414.333,30.375,442.667,91.125,471,91.125C499.667,91.125,528.333,30.375,557,30.375C564.333,30.375,571.667,33.412,579,33.412C586,33.412,593,16.706,600,0L600,243C593,243,586,243,579,243C571.667,243,564.333,243,557,243C528.333,243,499.667,243,471,243C442.667,243,414.333,243,386,243C357.333,243,328.667,243,300,243C264.333,243,228.667,243,193,243C157.333,243,121.667,243,86,243C57.333,243,28.667,243,0,243Z"
+                  fill="url(#gradient-area-series-interpolation-smooth-area-0)"
+                  d="M0,45.563C28.667,98.719,57.333,151.875,86,151.875C121.667,151.875,157.333,75.938,193,75.938C228.667,75.938,264.333,121.5,300,121.5C328.667,121.5,357.333,30.375,386,30.375C414.333,30.375,442.667,91.125,471,91.125C499.667,91.125,528.333,30.375,557,30.375C564.333,30.375,571.667,33.413,579,33.413C586,33.413,593,16.706,600,0L600,243C593,243,586,243,579,243C571.667,243,564.333,243,557,243C528.333,243,499.667,243,471,243C442.667,243,414.333,243,386,243C357.333,243,328.667,243,300,243C264.333,243,228.667,243,193,243C157.333,243,121.667,243,86,243C57.333,243,28.667,243,0,243Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-31-area-0"
+                            id="gradient-area-series-interpolation-smooth-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -1906,7 +1906,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationSmooth smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-31-path">
+              <clipPath id="area-series-interpolation-smooth-path">
                 <rect width="625"
                       height="268"
                       x="-12.5"
@@ -1915,7 +1915,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationSmooth smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-31-path)">
+            <g clip-path="url(#area-series-interpolation-smooth-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Sat Feb 01 2020 02:00:00 GMT+0200 (Eastern European Standard Time): 13"
@@ -2953,7 +2953,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationStep smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-41-path">
+          <clipPath id="area-series-interpolation-step-path">
             <rect width="625"
                   height="268"
                   x="-12.5"
@@ -2969,7 +2969,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationStep smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-41-path)">
+          <g clip-path="url(#area-series-interpolation-step-path)">
             <path class
                   pointer-events="none"
                   stroke="#5B14C5"
@@ -2982,12 +2982,12 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationStep smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-41-area-0)"
+                  fill="url(#gradient-area-series-interpolation-step-area-0)"
                   d="M0,0L44.5,0L44.5,86.226L133.5,86.226L133.5,148.935L222.5,148.935L222.5,62.71L333.5,62.71L333.5,12.542L444.5,12.542L444.5,86.226L533.5,86.226L533.5,36.058L589,36.058L589,73.684L600,73.684L600,243L589,243L589,243L533.5,243L533.5,243L444.5,243L444.5,243L333.5,243L333.5,243L222.5,243L222.5,243L133.5,243L133.5,243L44.5,243L44.5,243L0,243Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-41-area-0"
+                            id="gradient-area-series-interpolation-step-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -3004,7 +3004,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationStep smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-41-path">
+              <clipPath id="area-series-interpolation-step-path">
                 <rect width="625"
                       height="268"
                       x="-12.5"
@@ -3013,7 +3013,7 @@ exports[`Blocks/Area Chart/Dark/Medium InterpolationStep smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-41-path)">
+            <g clip-path="url(#area-series-interpolation-step-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Sat Feb 01 2020 02:00:00 GMT+0200 (Eastern European Standard Time): 15.5"
@@ -4064,7 +4064,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-51-path">
+          <clipPath id="area-series-large-dataset-path">
             <rect width="625"
                   height="196"
                   x="-12.5"
@@ -4080,7 +4080,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-51-path)">
+          <g clip-path="url(#area-series-large-dataset-path)">
             <path class
                   pointer-events="none"
                   stroke="#DAC5F9"
@@ -4093,12 +4093,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-7)"
+                  fill="url(#gradient-area-series-large-dataset-area-7)"
                   d="M0,94.224L43,111.673L86,87.245L129,62.816L171,157.041L214,94.224L257,143.082L300,10.469L343,73.286L386,62.816L429,97.714L471,164.02L514,150.061L557,87.245L600,108.184L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-7"
+                            id="gradient-area-series-large-dataset-area-7"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4122,12 +4122,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-6)"
+                  fill="url(#gradient-area-series-large-dataset-area-6)"
                   d="M0,87.245L43,97.714L86,122.143L129,34.898L171,62.816L214,90.735L257,0L300,139.592L343,73.286L386,27.918L429,101.204L471,59.327L514,76.776L557,125.633L600,136.102L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-6"
+                            id="gradient-area-series-large-dataset-area-6"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4151,12 +4151,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-5)"
+                  fill="url(#gradient-area-series-large-dataset-area-5)"
                   d="M0,164.02L43,164.02L86,59.327L129,104.694L171,80.265L214,160.531L257,73.286L300,41.878L343,153.551L386,69.796L429,55.837L471,73.286L514,17.449L557,118.653L600,101.204L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-5"
+                            id="gradient-area-series-large-dataset-area-5"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4180,12 +4180,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-4)"
+                  fill="url(#gradient-area-series-large-dataset-area-4)"
                   d="M0,122.143L43,143.082L86,13.959L129,80.265L171,38.388L214,87.245L257,80.265L300,73.286L343,48.857L386,139.592L429,143.082L471,13.959L514,55.837L557,146.571L600,94.224L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-4"
+                            id="gradient-area-series-large-dataset-area-4"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4209,12 +4209,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-3)"
+                  fill="url(#gradient-area-series-large-dataset-area-3)"
                   d="M0,160.531L43,73.286L86,94.224L129,55.837L171,76.776L214,73.286L257,83.755L300,160.531L343,129.122L386,13.959L429,10.469L471,69.796L514,90.735L557,6.98L600,146.571L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-3"
+                            id="gradient-area-series-large-dataset-area-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4238,12 +4238,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-2)"
+                  fill="url(#gradient-area-series-large-dataset-area-2)"
                   d="M0,48.857L43,3.49L86,167.51L129,139.592L171,0L214,104.694L257,27.918L300,69.796L343,59.327L386,24.429L429,69.796L471,157.041L514,87.245L557,13.959L600,62.816L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-2"
+                            id="gradient-area-series-large-dataset-area-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4267,12 +4267,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-1)"
+                  fill="url(#gradient-area-series-large-dataset-area-1)"
                   d="M0,45.367L43,31.408L86,83.755L129,62.816L171,48.857L214,115.163L257,17.449L300,129.122L343,3.49L386,90.735L429,45.367L471,41.878L514,104.694L557,111.673L600,59.327L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-1"
+                            id="gradient-area-series-large-dataset-area-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4296,12 +4296,12 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-51-area-0)"
+                  fill="url(#gradient-area-series-large-dataset-area-0)"
                   d="M0,157.041L43,153.551L86,76.776L129,55.837L171,34.898L214,143.082L257,24.429L300,132.612L343,38.388L386,13.959L429,90.735L471,27.918L514,108.184L557,31.408L600,31.408L600,171L557,171L514,171L471,171L429,171L386,171L343,171L300,171L257,171L214,171L171,171L129,171L86,171L43,171L0,171Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-51-area-0"
+                            id="gradient-area-series-large-dataset-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -4314,7 +4314,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -4323,7 +4323,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-20: 22"
@@ -4551,7 +4551,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -4560,7 +4560,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-18: 24"
@@ -4788,7 +4788,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -4797,7 +4797,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-25: 2"
@@ -5025,7 +5025,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -5034,7 +5034,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-24: 14"
@@ -5262,7 +5262,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -5271,7 +5271,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-22: 3"
@@ -5499,7 +5499,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -5508,7 +5508,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-23: 35"
@@ -5736,7 +5736,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -5745,7 +5745,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-19: 36"
@@ -5973,7 +5973,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-51-path">
+              <clipPath id="area-series-large-dataset-path">
                 <rect width="625"
                       height="196"
                       x="-12.5"
@@ -5982,7 +5982,7 @@ exports[`Blocks/Area Chart/Dark/Medium LargeDataset smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-51-path)">
+            <g clip-path="url(#area-series-large-dataset-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Series-21: 4"
@@ -6923,7 +6923,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-26-path">
+          <clipPath id="area-series-multi-series-interpolation-smooth-path">
             <rect width="625"
                   height="236"
                   x="-12.5"
@@ -6939,7 +6939,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-26-path)">
+          <g clip-path="url(#area-series-multi-series-interpolation-smooth-path)">
             <path class
                   pointer-events="none"
                   stroke="#B58BF3"
@@ -6952,12 +6952,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-26-area-2)"
+                  fill="url(#gradient-area-series-multi-series-interpolation-smooth-area-2)"
                   d="M0,82.056C18.667,128.944,37.333,175.833,56,175.833C81.667,175.833,107.333,158.25,133,158.25C144.333,158.25,155.667,164.111,167,164.111C235.333,164.111,303.667,105.5,372,105.5C392.333,105.5,412.667,175.833,433,175.833C466.333,175.833,499.667,82.056,533,82.056C555.333,82.056,577.667,93.778,600,105.5L600,211C577.667,211,555.333,211,533,211C499.667,211,466.333,211,433,211C412.667,211,392.333,211,372,211C303.667,211,235.333,211,167,211C155.667,211,144.333,211,133,211C107.333,211,81.667,211,56,211C37.333,211,18.667,211,0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-26-area-2"
+                            id="gradient-area-series-multi-series-interpolation-smooth-area-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -6985,12 +6985,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-26-area-1)"
+                  fill="url(#gradient-area-series-multi-series-interpolation-smooth-area-1)"
                   d="M0,99.639C18.667,131.875,37.333,164.111,56,164.111C81.667,164.111,107.333,93.778,133,93.778C183,93.778,233,164.111,283,164.111C312.667,164.111,342.333,82.056,372,82.056C392.333,82.056,412.667,128.944,433,128.944C455.333,128.944,477.667,99.639,500,99.639C511,99.639,522,105.5,533,105.5C555.333,105.5,577.667,87.917,600,70.333L600,211C577.667,211,555.333,211,533,211C522,211,511,211,500,211C477.667,211,455.333,211,433,211C412.667,211,392.333,211,372,211C342.333,211,312.667,211,283,211C233,211,183,211,133,211C107.333,211,81.667,211,56,211C37.333,211,18.667,211,0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-26-area-1"
+                            id="gradient-area-series-multi-series-interpolation-smooth-area-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -7018,12 +7018,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-26-area-0)"
+                  fill="url(#gradient-area-series-multi-series-interpolation-smooth-area-0)"
                   d="M0,46.889C22.333,93.778,44.667,140.667,67,140.667C89,140.667,111,70.333,133,70.333C177.667,70.333,222.333,117.222,267,117.222C300.333,117.222,333.667,46.889,367,46.889C389,46.889,411,82.056,433,82.056C455.333,82.056,477.667,29.306,500,29.306C511,29.306,522,35.167,533,35.167C555.333,35.167,577.667,17.583,600,0L600,211C577.667,211,555.333,211,533,211C522,211,511,211,500,211C477.667,211,455.333,211,433,211C411,211,389,211,367,211C333.667,211,300.333,211,267,211C222.333,211,177.667,211,133,211C111,211,89,211,67,211C44.667,211,22.333,211,0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-26-area-0"
+                            id="gradient-area-series-multi-series-interpolation-smooth-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -7040,7 +7040,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-26-path">
+              <clipPath id="area-series-multi-series-interpolation-smooth-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -7049,7 +7049,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-26-path)">
+            <g clip-path="url(#area-series-multi-series-interpolation-smooth-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Syslog: 11"
@@ -7172,7 +7172,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-26-path">
+              <clipPath id="area-series-multi-series-interpolation-smooth-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -7181,7 +7181,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-26-path)">
+            <g clip-path="url(#area-series-multi-series-interpolation-smooth-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Threat Intel: 9.5"
@@ -7319,7 +7319,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-26-path">
+              <clipPath id="area-series-multi-series-interpolation-smooth-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -7328,7 +7328,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationSmooth smoke-test
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-26-path)">
+            <g clip-path="url(#area-series-multi-series-interpolation-smooth-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="DLP: 14"
@@ -8341,7 +8341,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-36-path">
+          <clipPath id="area-series-multi-series-interpolation-step-path">
             <rect width="625"
                   height="236"
                   x="-12.5"
@@ -8357,7 +8357,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-36-path)">
+          <g clip-path="url(#area-series-multi-series-interpolation-step-path)">
             <path class
                   pointer-events="none"
                   stroke="#DAC5F9"
@@ -8370,12 +8370,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-36-area-1)"
+                  fill="url(#gradient-area-series-multi-series-interpolation-step-area-1)"
                   d="M0,13.188L43,13.188L43,65.938L128.5,65.938L128.5,171.438L214,171.438L214,118.688L300,118.688L300,92.313L386,92.313L386,145.063L471.5,145.063L471.5,0L557,0L557,65.938L600,65.938L600,211L557,211L557,211L471.5,211L471.5,211L386,211L386,211L300,211L300,211L214,211L214,211L128.5,211L128.5,211L43,211L43,211L0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-36-area-1"
+                            id="gradient-area-series-multi-series-interpolation-step-area-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -8403,12 +8403,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-36-area-0)"
+                  fill="url(#gradient-area-series-multi-series-interpolation-step-area-0)"
                   d="M0,32.969L43,32.969L43,79.125L128.5,79.125L128.5,131.875L214,131.875L214,65.938L300,65.938L300,13.188L386,13.188L386,79.125L471.5,79.125L471.5,39.563L557,39.563L557,65.938L600,65.938L600,211L557,211L557,211L471.5,211L471.5,211L386,211L386,211L300,211L300,211L214,211L214,211L128.5,211L128.5,211L43,211L43,211L0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-36-area-0"
+                            id="gradient-area-series-multi-series-interpolation-step-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -8425,7 +8425,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-36-path">
+              <clipPath id="area-series-multi-series-interpolation-step-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -8434,7 +8434,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-36-path)">
+            <g clip-path="url(#area-series-multi-series-interpolation-step-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Threat Intel: 15"
@@ -8557,7 +8557,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-36-path">
+              <clipPath id="area-series-multi-series-interpolation-step-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -8566,7 +8566,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesInterpolationStep smoke-test 1
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-36-path)">
+            <g clip-path="url(#area-series-multi-series-interpolation-step-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="DLP: 13.5"
@@ -9319,7 +9319,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-16-path">
+          <clipPath id="area-series-multi-series-simple-path">
             <rect width="625"
                   height="236"
                   x="-12.5"
@@ -9335,7 +9335,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-16-path)">
+          <g clip-path="url(#area-series-multi-series-simple-path)">
             <path class
                   pointer-events="none"
                   stroke="#9152EE"
@@ -9348,12 +9348,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-16-area-2)"
+                  fill="url(#gradient-area-series-multi-series-simple-area-2)"
                   d="M0,154.294L120,164.844L240,138.469L300,178.031L400,197.813L500,171.438L600,184.625L600,211L500,211L400,211L300,211L240,211L120,211L0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-16-area-2"
+                            id="gradient-area-series-multi-series-simple-area-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -9381,12 +9381,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-16-area-1)"
+                  fill="url(#gradient-area-series-multi-series-simple-area-1)"
                   d="M0,85.719L60,39.563L120,92.313L260,138.469L340,79.125L420,92.313L540,26.375L600,59.344L600,211L540,211L420,211L340,211L260,211L120,211L60,211L0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-16-area-1"
+                            id="gradient-area-series-multi-series-simple-area-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -9414,12 +9414,12 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-16-area-0)"
+                  fill="url(#gradient-area-series-multi-series-simple-area-0)"
                   d="M0,0L80,13.188L120,122.644L240,43.519L320,105.5L440,26.375L560,46.156L600,0L600,211L560,211L440,211L320,211L240,211L120,211L80,211L0,211Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-16-area-0"
+                            id="gradient-area-series-multi-series-simple-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -9436,7 +9436,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-16-path">
+              <clipPath id="area-series-multi-series-simple-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -9445,7 +9445,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-16-path)">
+            <g clip-path="url(#area-series-multi-series-simple-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Syslog: 4.3"
@@ -9553,7 +9553,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-16-path">
+              <clipPath id="area-series-multi-series-simple-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -9562,7 +9562,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-16-path)">
+            <g clip-path="url(#area-series-multi-series-simple-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Threat Intel: 9.5"
@@ -9685,7 +9685,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-16-path">
+              <clipPath id="area-series-multi-series-simple-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -9694,7 +9694,7 @@ exports[`Blocks/Area Chart/Dark/Medium MultiSeriesSimple smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-16-path)">
+            <g clip-path="url(#area-series-multi-series-simple-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="DLP: 16"
@@ -10615,7 +10615,7 @@ exports[`Blocks/Area Chart/Dark/Medium NonZero smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-11-path">
+          <clipPath id="area-series-non-zero-path">
             <rect width="625"
                   height="268"
                   x="-12.5"
@@ -10631,7 +10631,7 @@ exports[`Blocks/Area Chart/Dark/Medium NonZero smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-11-path)">
+          <g clip-path="url(#area-series-non-zero-path)">
             <path class
                   pointer-events="none"
                   stroke="#EE4094"
@@ -10645,13 +10645,13 @@ exports[`Blocks/Area Chart/Dark/Medium NonZero smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-11-area-0)"
+                  fill="url(#gradient-area-series-non-zero-area-0)"
                   d="M0,108L200,54L450,162L600,0L600,108L450,175.5L200,135L0,175.5Z"
                   style="filter: drop-shadow(rgb(238, 64, 148) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-11-area-0"
+                            id="gradient-area-series-non-zero-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -10668,7 +10668,7 @@ exports[`Blocks/Area Chart/Dark/Medium NonZero smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-11-path">
+              <clipPath id="area-series-non-zero-path">
                 <rect width="625"
                       height="268"
                       x="-12.5"
@@ -10677,7 +10677,7 @@ exports[`Blocks/Area Chart/Dark/Medium NonZero smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-11-path)">
+            <g clip-path="url(#area-series-non-zero-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
@@ -11571,7 +11571,7 @@ exports[`Blocks/Area Chart/Dark/Medium Simple smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-21-path">
+          <clipPath id="area-series-simple-path">
             <rect width="625"
                   height="268"
                   x="-12.5"
@@ -11587,7 +11587,7 @@ exports[`Blocks/Area Chart/Dark/Medium Simple smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-21-path)">
+          <g clip-path="url(#area-series-simple-path)">
             <path class
                   pointer-events="none"
                   stroke="#40D3F4"
@@ -11600,12 +11600,12 @@ exports[`Blocks/Area Chart/Dark/Medium Simple smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-21-area-0)"
+                  fill="url(#gradient-area-series-simple-area-0)"
                   d="M0,0L50,40.5L100,30.375L150,70.875L200,202.5L250,141.75L300,141.75L350,81L400,121.5L450,101.25L500,40.5L550,40.5L600,0L600,243L550,243L500,243L450,243L400,243L350,243L300,243L250,243L200,243L150,243L100,243L50,243L0,243Z"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-21-area-0"
+                            id="gradient-area-series-simple-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -11622,7 +11622,7 @@ exports[`Blocks/Area Chart/Dark/Medium Simple smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-21-path">
+              <clipPath id="area-series-simple-path">
                 <rect width="625"
                       height="268"
                       x="-12.5"
@@ -11631,7 +11631,7 @@ exports[`Blocks/Area Chart/Dark/Medium Simple smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-21-path)">
+            <g clip-path="url(#area-series-simple-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Sat Feb 01 2020 02:00:00 GMT+0200 (Eastern European Standard Time): 12"
@@ -12639,7 +12639,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-1-path">
+          <clipPath id="area-series-stacked-path">
             <rect width="625"
                   height="236"
                   x="-12.5"
@@ -12655,7 +12655,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-1-path)">
+          <g clip-path="url(#area-series-stacked-path)">
             <path class
                   pointer-events="none"
                   stroke="#BB015A"
@@ -12669,13 +12669,13 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-1-area-2)"
+                  fill="url(#gradient-area-series-stacked-area-2)"
                   d="M0,0L200,110.524L450,85.405L600,35.167L600,40.19L450,105.5L200,155.738L0,60.286Z"
                   style="filter: drop-shadow(rgb(187, 1, 90) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-1-area-2"
+                            id="gradient-area-series-stacked-area-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -12704,13 +12704,13 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-1-area-1)"
+                  fill="url(#gradient-area-series-stacked-area-1)"
                   d="M0,60.286L200,155.738L450,105.5L600,40.19L600,120.571L450,140.667L200,195.929L0,120.571Z"
                   style="filter: drop-shadow(rgb(238, 64, 148) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-1-area-1"
+                            id="gradient-area-series-stacked-area-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -12739,13 +12739,13 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-1-area-0)"
+                  fill="url(#gradient-area-series-stacked-area-0)"
                   d="M0,120.571L200,195.929L450,140.667L600,120.571L600,211L450,211L200,211L0,211Z"
                   style="filter: drop-shadow(rgb(250, 229, 246) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-1-area-0"
+                            id="gradient-area-series-stacked-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -12762,7 +12762,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-1-path">
+              <clipPath id="area-series-stacked-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -12771,7 +12771,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-1-path)">
+            <g clip-path="url(#area-series-stacked-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Syslog: 12"
@@ -12834,7 +12834,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-1-path">
+              <clipPath id="area-series-stacked-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -12843,7 +12843,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-1-path)">
+            <g clip-path="url(#area-series-stacked-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="DLP: 12"
@@ -12906,7 +12906,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-1-path">
+              <clipPath id="area-series-stacked-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -12915,7 +12915,7 @@ exports[`Blocks/Area Chart/Dark/Medium Stacked smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-1-path)">
+            <g clip-path="url(#area-series-stacked-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Threat Intel: 18"
@@ -13810,7 +13810,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-6-path">
+          <clipPath id="area-series-stacked-normalized-path">
             <rect width="625"
                   height="236"
                   x="-12.5"
@@ -13826,7 +13826,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
                 cursor="auto"
           >
           </rect>
-          <g clip-path="url(#area-series-ref-6-path)">
+          <g clip-path="url(#area-series-stacked-normalized-path)">
             <path class
                   pointer-events="none"
                   stroke="#BB015A"
@@ -13840,13 +13840,13 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-6-area-2)"
+                  fill="url(#gradient-area-series-stacked-normalized-area-2)"
                   d="M0,0L200,0L450,0L600,0L600,6.029L450,33.76L200,94.95L0,60.286Z"
                   style="filter: drop-shadow(rgb(187, 1, 90) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-6-area-2"
+                            id="gradient-area-series-stacked-normalized-area-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -13875,13 +13875,13 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-6-area-1)"
+                  fill="url(#gradient-area-series-stacked-normalized-area-1)"
                   d="M0,60.286L200,94.95L450,33.76L600,6.029L600,102.486L450,92.84L200,179.35L0,120.571Z"
                   style="filter: drop-shadow(rgb(238, 64, 148) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-6-area-1"
+                            id="gradient-area-series-stacked-normalized-area-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -13910,13 +13910,13 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
             <path class
                   pointer-events="none"
                   mask
-                  fill="url(#gradient-area-series-ref-6-area-0)"
+                  fill="url(#gradient-area-series-stacked-normalized-area-0)"
                   d="M0,120.571L200,179.35L450,92.84L600,102.486L600,211L450,211L200,211L0,211Z"
                   style="filter: drop-shadow(rgb(250, 229, 246) 0px 0px 20px);"
             >
             </path>
             <linearGradient spreadmethod="pad"
-                            id="gradient-area-series-ref-6-area-0"
+                            id="gradient-area-series-stacked-normalized-area-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -13933,7 +13933,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
               </stop>
             </linearGradient>
             <defs>
-              <clipPath id="area-series-ref-6-path">
+              <clipPath id="area-series-stacked-normalized-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -13942,7 +13942,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-6-path)">
+            <g clip-path="url(#area-series-stacked-normalized-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Syslog: 0.286"
@@ -14005,7 +14005,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-6-path">
+              <clipPath id="area-series-stacked-normalized-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -14014,7 +14014,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-6-path)">
+            <g clip-path="url(#area-series-stacked-normalized-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="DLP: 0.286"
@@ -14077,7 +14077,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
               </g>
             </g>
             <defs>
-              <clipPath id="area-series-ref-6-path">
+              <clipPath id="area-series-stacked-normalized-path">
                 <rect width="625"
                       height="236"
                       x="-12.5"
@@ -14086,7 +14086,7 @@ exports[`Blocks/Area Chart/Dark/Medium StackedNormalized smoke-test 1`] = `
                 </rect>
               </clipPath>
             </defs>
-            <g clip-path="url(#area-series-ref-6-path)">
+            <g clip-path="url(#area-series-stacked-normalized-path)">
               <g class="_hidden_jp2yc_5"
                  tabindex="0"
                  aria-label="Threat Intel: 0.429"
