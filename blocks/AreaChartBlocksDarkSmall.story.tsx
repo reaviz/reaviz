@@ -35,6 +35,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Area Chart/Dark/Small',
   component: AreaChart
 };
