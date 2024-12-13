@@ -144,11 +144,11 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
   const exit = useMemo(() => {
     const maxY = Math.max(...yScale.range());
     const coords = data.map((item: any) => ({
-      x: roundDecimals(xScale(item.x)),
+      x: xScale(item.x),
       x1: 0,
       y: 0,
-      y1: roundDecimals(maxY),
-      y0: roundDecimals(maxY)
+      y1: maxY,
+      y0: maxY
     })) as ChartInternalShallowDataShape[];
 
     const areaPath = getAreaPath(coords);
