@@ -38,6 +38,7 @@ export const StackedNormalizedAreaChart: FC<
             }
           />
         }
+        {...props.yAxis?.props}
       />
     }
   />
