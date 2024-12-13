@@ -27,6 +27,7 @@ import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
 import { Glow } from '@/common/Glow';
 import { ClickEvent } from '@/common/types';
 import { generateGlowStyles } from '@/common/Glow/utils';
+import { mergeDefaultProps } from '@/common';
 
 export type BarType =
   | 'standard'
@@ -243,7 +244,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     onClick,
     onMouseMove,
     onMouseLeave
-  } = { ...BAR_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(BAR_DEFAULT_PROPS, props);
   const labelProps = useMemo(
     () => ({ ...BAR_LABEL_DEFAULT_PROPS, ...label?.props }),
     [label?.props]

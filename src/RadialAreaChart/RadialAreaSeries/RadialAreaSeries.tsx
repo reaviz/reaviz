@@ -21,7 +21,11 @@ import {
   RadialPointSeriesProps
 } from './RadialPointSeries';
 import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
-import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import {
+  mergeDefaultProps,
+  RadialValueMarker,
+  RadialValueMarkerProps
+} from '@/common';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 
@@ -154,7 +158,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
     endAngle,
     isClosedCurve,
     valueMarkers
-  } = { ...RADIAL_AREA_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(RADIAL_AREA_SERIES_DEFAULT_PROPS, props);
 
   const symbolsProps = useMemo(
     () => ({
@@ -339,16 +343,17 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
   );
 };
 
-export const RADIAL_AREA_SERIES_DEFAULT_PROPS = {
-  colorScheme: schemes.cybertron,
-  interpolation: 'smooth',
-  type: 'standard',
-  animated: true,
-  area: <RadialArea />,
-  line: <RadialLine />,
-  symbols: <RadialPointSeries />,
-  tooltip: <TooltipArea />,
-  startAngle: 0,
-  endAngle: 2 * Math.PI,
-  isClosedCurve: true
-};
+export const RADIAL_AREA_SERIES_DEFAULT_PROPS: Partial<RadialAreaSeriesProps> =
+  {
+    colorScheme: schemes.cybertron,
+    interpolation: 'smooth',
+    type: 'standard',
+    animated: true,
+    area: <RadialArea />,
+    line: <RadialLine />,
+    symbols: <RadialPointSeries />,
+    tooltip: <TooltipArea />,
+    startAngle: 0,
+    endAngle: 2 * Math.PI,
+    isClosedCurve: true
+  };

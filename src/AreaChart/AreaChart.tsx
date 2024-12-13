@@ -46,6 +46,7 @@ import {
   ChartProps
 } from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
+import { mergeDefaultProps } from '@/common';
 
 export interface AreaChartProps extends ChartProps {
   /**
@@ -105,7 +106,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
     brush,
     zoomPan,
     secondaryAxis
-  } = { ...AREA_CHART_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(AREA_CHART_DEFAULT_PROPS, props);
 
   const zoom: any = zoomPan ? zoomPan.props : {};
   const [zoomDomain, setZoomDomain] = useState<any>(zoom.domain);

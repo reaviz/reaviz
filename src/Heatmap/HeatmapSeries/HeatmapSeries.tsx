@@ -8,6 +8,7 @@ import {
   createColorSchemeValueScales,
   getColorSchemeStyles
 } from '@/common/color/helper';
+import { mergeDefaultProps } from '@/common';
 
 export interface HeatmapSeriesProps {
   /**
@@ -72,7 +73,7 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = (props) => {
     data,
     id,
     selections
-  } = { ...HEATMAP_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(HEATMAP_SERIES_DEFAULT_PROPS, props);
 
   const valueScales = createColorSchemeValueScales(
     data,

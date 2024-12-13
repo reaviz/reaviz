@@ -5,6 +5,7 @@ import { ArcData } from '@/PieChart';
 import { ChartInternalDataTypes } from '@/common/data/types';
 import { formatValue } from '@/common/utils/formatting';
 import { findBreakPoint } from './findBreakPoint';
+import { mergeDefaultProps } from '@/common';
 
 export interface PieArcLabelProps {
   /**
@@ -91,7 +92,7 @@ export const PieArcLabel: FC<Partial<PieArcLabelProps>> = (props) => {
     outerRadius,
     width,
     height
-  } = { ...PIE_ARC_LABEL_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(PIE_ARC_LABEL_DEFAULT_PROPS, props);
 
   const textAnchor = getTextAnchor(data);
   const text: React.ReactNode = format

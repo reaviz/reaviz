@@ -16,7 +16,7 @@ import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { schemes } from '@/common/color';
 import css from './RadialScatterPoint.module.css';
-import { getAriaLabel } from '@/common';
+import { getAriaLabel, mergeDefaultProps } from '@/common';
 
 export interface RadialScatterPointProps {
   /**
@@ -122,7 +122,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     className,
     visible,
     ...rest
-  } = { ...RADIAL_SCATTER_POINT_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(RADIAL_SCATTER_POINT_DEFAULT_PROPS, props);
 
   const ref = useRef<any>(null);
   const [hovered, setHovered] = useState<boolean>(false);

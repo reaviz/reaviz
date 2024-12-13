@@ -14,7 +14,7 @@ import {
 } from '@/common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { Glow, roundDecimals } from '@/common';
+import { Glow, mergeDefaultProps, roundDecimals } from '@/common';
 
 export interface AreaProps extends PropFunctionTypes {
   /**
@@ -93,7 +93,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     animated,
     interpolation,
     ...rest
-  } = { ...AREA_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(AREA_DEFAULT_PROPS, props);
 
   const stroke = color(data, index);
 

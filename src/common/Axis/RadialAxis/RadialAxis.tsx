@@ -9,7 +9,7 @@ import {
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
 import { CloneElement } from 'reablocks';
-import { getTicks } from '@/common/utils';
+import { getTicks, mergeDefaultProps } from '@/common/utils';
 
 type RadialAxisType = 'value' | 'time' | 'category';
 
@@ -77,7 +77,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
     type,
     startAngle,
     endAngle
-  } = { ...RADIAL_AXIS_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(RADIAL_AXIS_DEFAULT_PROPS, props);
 
   const outerRadius = Math.min(height, width) / 2;
 
@@ -119,7 +119,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
   );
 };
 
-export const RADIAL_AXIS_DEFAULT_PROPS = {
+export const RADIAL_AXIS_DEFAULT_PROPS: Partial<RadialAxisProps> = {
   innerRadius: 10,
   type: 'value',
   arcs: <RadialAxisArcSeries {...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS} />,

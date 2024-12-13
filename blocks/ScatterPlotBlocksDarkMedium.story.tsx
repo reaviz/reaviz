@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
   Count,
@@ -21,7 +22,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Dark/Medium',
   component: ScatterPlot
 };

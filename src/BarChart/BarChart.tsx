@@ -43,6 +43,7 @@ import {
   ChartProps
 } from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
+import { mergeDefaultProps } from '@/common';
 
 export interface BarChartProps extends ChartProps {
   /**
@@ -96,7 +97,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     gridlines,
     secondaryAxis,
     containerClassName
-  } = { ...BAR_CHART_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(BAR_CHART_DEFAULT_PROPS, props);
   const seriesProps = useMemo(
     () => ({ ...BAR_SERIES_DEFAULT_PROPS, ...series?.props }),
     [series?.props]

@@ -28,7 +28,11 @@ import { Line, LineProps } from './Line';
 import { InterpolationTypes } from '@/common/utils/interpolation';
 import { getColor, ColorSchemeType } from '@/common/color';
 import { identifier } from 'safe-identifier';
-import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import {
+  LinearValueMarker,
+  LinearValueMarkerProps,
+  mergeDefaultProps
+} from '@/common';
 
 export type AreaChartTypes =
   | 'standard'
@@ -149,7 +153,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
     line,
     colorScheme,
     valueMarkers
-  } = { ...AREA_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(AREA_SERIES_DEFAULT_PROPS, props);
 
   const symbolsProps = useMemo(
     () => ({
@@ -388,7 +392,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
   );
 };
 
-export const AREA_SERIES_DEFAULT_PROPS = {
+export const AREA_SERIES_DEFAULT_PROPS: Partial<AreaSeriesProps> = {
   colorScheme: 'cybertron',
   animated: true,
   interpolation: 'linear',

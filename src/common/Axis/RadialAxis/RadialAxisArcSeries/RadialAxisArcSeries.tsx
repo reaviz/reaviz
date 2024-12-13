@@ -8,6 +8,7 @@ import { CloneElement } from 'reablocks';
 import { scaleLinear } from 'd3-scale';
 import { getPointsForLevels } from './utils';
 import { RadialAxisArcLine, RadialAxisArcLineProps } from './RadialAxisArcLine';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface RadialAxisArcSeriesProps {
   /**
@@ -63,7 +64,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
     tickValues,
     startAngle,
     endAngle
-  } = { ...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS, props);
 
   const scale = scaleLinear()
     .domain([0, count])

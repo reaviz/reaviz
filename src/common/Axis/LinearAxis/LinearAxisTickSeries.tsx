@@ -17,6 +17,7 @@ import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
 import { calculateDimensions } from '@/common/utils/size';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickSeriesProps {
   height: number;
@@ -58,7 +59,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     interval,
     line,
     axis
-  } = { ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
     () => ({

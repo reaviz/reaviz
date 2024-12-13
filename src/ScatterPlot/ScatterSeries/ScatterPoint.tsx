@@ -22,7 +22,7 @@ import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
 import { Glow } from '@/common/Glow';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { getAriaLabel } from '@/common';
+import { getAriaLabel, mergeDefaultProps } from '@/common';
 
 export type ScatterPointProps = {
   /**
@@ -136,7 +136,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
     onMouseLeave,
     visible,
     ...rest
-  } = { ...SCATTER_POINT_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(SCATTER_POINT_DEFAULT_PROPS, props);
 
   const rectRef = useRef<any | null>(null);
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);

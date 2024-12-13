@@ -4,6 +4,7 @@ import { CloneElement } from 'reablocks';
 import { ScatterPoint, ScatterSeries, ScatterPointProps } from '@/ScatterPlot';
 import css from './PointSeries.module.css';
 import isEqual from 'react-fast-compare';
+import { mergeDefaultProps } from '@/common';
 
 export interface PointSeriesProps {
   /**
@@ -80,7 +81,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
     id,
     activeValues,
     show
-  } = { ...POINT_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(POINT_SERIES_DEFAULT_PROPS, props);
 
   const getIsVisible = useCallback(
     (point: ChartInternalShallowDataShape, index: number): boolean => {
@@ -131,7 +132,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
   );
 };
 
-export const POINT_SERIES_DEFAULT_PROPS = {
+export const POINT_SERIES_DEFAULT_PROPS: Partial<PointSeriesProps> = {
   show: 'hover',
   point: <ScatterPoint />
 };

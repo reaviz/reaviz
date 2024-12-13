@@ -15,6 +15,7 @@ import {
   LinearAxisTickSeries,
   LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisDimensionChanged {
   height?: number;
@@ -56,7 +57,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     orientation,
     visibility = 'visible',
     onDimensionsChange
-  } = { ...LINEAR_AXIS_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(LINEAR_AXIS_DEFAULT_PROPS, props);
   const tickSeriesProps = useMemo(
     () => ({ ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, ...tickSeries.props }),
     [tickSeries.props]

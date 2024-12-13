@@ -15,6 +15,7 @@ import {
   calculateRadius
 } from './radiusUtils';
 import { identifier } from 'safe-identifier';
+import { mergeDefaultProps } from '@/common';
 
 export interface PieArcSeriesProps {
   /**
@@ -120,7 +121,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     padRadius,
     arc,
     data
-  } = { ...PIE_ARC_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(PIE_ARC_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
     () => ({ ...PIE_ARC_LABEL_DEFAULT_PROPS, ...label?.props }),

@@ -1,7 +1,12 @@
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
-import { InterpolationTypes, getAriaLabel, interpolate } from '@/common/utils';
+import {
+  InterpolationTypes,
+  getAriaLabel,
+  interpolate,
+  mergeDefaultProps
+} from '@/common/utils';
 import { ColorSchemeType, getColor, schemes } from '@/common/color';
 import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
@@ -91,7 +96,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
     gradient,
     glow,
     tooltip
-  } = { ...FUNNEL_ARC_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(FUNNEL_ARC_DEFAULT_PROPS, props);
 
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];

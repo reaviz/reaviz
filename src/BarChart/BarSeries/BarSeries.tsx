@@ -1,4 +1,8 @@
-import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import {
+  LinearValueMarker,
+  LinearValueMarkerProps,
+  mergeDefaultProps
+} from '@/common';
 import { ColorSchemeType, getColor } from '@/common/color';
 import {
   ChartInternalDataShape,
@@ -139,7 +143,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
     type,
     id,
     valueMarkers
-  } = { ...BAR_SERIES_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(BAR_SERIES_DEFAULT_PROPS, props);
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isVertical = useMemo(() => layout === 'vertical', [layout]);

@@ -1,6 +1,7 @@
 import React, { Fragment, FC, ReactElement } from 'react';
 import { GradientProps, Gradient } from '@/common/Gradient';
 import { CloneElement, useId } from 'reablocks';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisLineProps {
   height: number;
@@ -21,7 +22,7 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = (props) => {
     scale,
     orientation,
     className
-  } = { ...linearAxisLineDefaultProps, ...props };
+  } = mergeDefaultProps(linearAxisLineDefaultProps, props);
   const id = useId();
   const [range0, range1] = scale.range();
 

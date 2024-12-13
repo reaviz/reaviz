@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React, { FC, useMemo } from 'react';
 import css from './Gridline.module.css';
+import { mergeDefaultProps } from '../utils';
 
 export interface GridlineProps {
   /**
@@ -65,7 +66,7 @@ export const Gridline: FC<Partial<GridlineProps>> = (props) => {
     width,
     scale,
     strokeDasharray
-  } = { ...GRID_LINE_DEFAULT_PROPS, ...props };
+  } = mergeDefaultProps(GRID_LINE_DEFAULT_PROPS, props);
 
   const coords = useMemo(() => {
     const pos = scale(data);
@@ -99,7 +100,7 @@ export const Gridline: FC<Partial<GridlineProps>> = (props) => {
   );
 };
 
-export const GRID_LINE_DEFAULT_PROPS = {
+export const GRID_LINE_DEFAULT_PROPS: Partial<GridlineProps> = {
   strokeWidth: 1,
   strokeDasharray: '2 5',
   direction: 'all',
