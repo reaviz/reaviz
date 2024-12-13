@@ -30,7 +30,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Area Chart/Light/X-Small',
   component: AreaChart
 };

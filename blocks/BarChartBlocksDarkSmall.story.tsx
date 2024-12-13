@@ -32,7 +32,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Bar Chart/Dark/Small',
   component: BarChart
 };
