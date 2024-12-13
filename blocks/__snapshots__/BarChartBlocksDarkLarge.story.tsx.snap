@@ -929,7 +929,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="174px"
-                    fill="url(#gradient-bar-series-ref-101-bar-undefined-0)"
+                    fill="url(#gradient-bar-series-horizontal-labels-gradient-bar-undefined-0)"
                     x="0"
                     y="264"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -937,7 +937,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-101-bar-undefined-0"
+                            id="gradient-bar-series-horizontal-labels-gradient-bar-undefined-0"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -976,7 +976,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="521px"
-                    fill="url(#gradient-bar-series-ref-101-bar-undefined-1)"
+                    fill="url(#gradient-bar-series-horizontal-labels-gradient-bar-undefined-1)"
                     x="0"
                     y="179"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -984,7 +984,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-101-bar-undefined-1"
+                            id="gradient-bar-series-horizontal-labels-gradient-bar-undefined-1"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -1023,7 +1023,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="347px"
-                    fill="url(#gradient-bar-series-ref-101-bar-undefined-2)"
+                    fill="url(#gradient-bar-series-horizontal-labels-gradient-bar-undefined-2)"
                     x="0"
                     y="94"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -1031,7 +1031,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-101-bar-undefined-2"
+                            id="gradient-bar-series-horizontal-labels-gradient-bar-undefined-2"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -1070,7 +1070,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="694px"
-                    fill="url(#gradient-bar-series-ref-101-bar-undefined-3)"
+                    fill="url(#gradient-bar-series-horizontal-labels-gradient-bar-undefined-3)"
                     x="0"
                     y="9"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -1078,7 +1078,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalLabelsGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-101-bar-undefined-3"
+                            id="gradient-bar-series-horizontal-labels-gradient-bar-undefined-3"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -2199,7 +2199,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="180px"
-                    fill="url(#gradient-bar-series-ref-81-bar-undefined-0)"
+                    fill="url(#gradient-bar-series-horizontal-simple-gradient-bar-undefined-0)"
                     x="0"
                     y="264"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -2207,7 +2207,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-81-bar-undefined-0"
+                            id="gradient-bar-series-horizontal-simple-gradient-bar-undefined-0"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -2234,7 +2234,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="539px"
-                    fill="url(#gradient-bar-series-ref-81-bar-undefined-1)"
+                    fill="url(#gradient-bar-series-horizontal-simple-gradient-bar-undefined-1)"
                     x="0"
                     y="179"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -2242,7 +2242,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-81-bar-undefined-1"
+                            id="gradient-bar-series-horizontal-simple-gradient-bar-undefined-1"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -2269,7 +2269,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="359px"
-                    fill="url(#gradient-bar-series-ref-81-bar-undefined-2)"
+                    fill="url(#gradient-bar-series-horizontal-simple-gradient-bar-undefined-2)"
                     x="0"
                     y="94"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -2277,7 +2277,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-81-bar-undefined-2"
+                            id="gradient-bar-series-horizontal-simple-gradient-bar-undefined-2"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -2304,7 +2304,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="77px"
                     width="718px"
-                    fill="url(#gradient-bar-series-ref-81-bar-undefined-3)"
+                    fill="url(#gradient-bar-series-horizontal-simple-gradient-bar-undefined-3)"
                     x="0"
                     y="9"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -2312,7 +2312,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-81-bar-undefined-3"
+                            id="gradient-bar-series-horizontal-simple-gradient-bar-undefined-3"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -3810,7 +3810,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="541px"
-                      fill="url(#gradient-bar-series-ref-111-bar-0-0)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-0-0)"
                       x="0"
                       y="3.5"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -3818,7 +3818,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-0-0"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-0-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -3845,7 +3845,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="180px"
-                      fill="url(#gradient-bar-series-ref-111-bar-0-1)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-0-1)"
                       x="0"
                       y="16.5"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.7) 0px 0px 20px); cursor: auto;"
@@ -3853,7 +3853,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-0-1"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-0-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -3880,7 +3880,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="361px"
-                      fill="url(#gradient-bar-series-ref-111-bar-0-2)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-0-2)"
                       x="0"
                       y="29.5"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -3888,7 +3888,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-0-2"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-0-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -3915,7 +3915,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="721px"
-                      fill="url(#gradient-bar-series-ref-111-bar-0-3)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-0-3)"
                       x="0"
                       y="42.5"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.7) 0px 0px 20px); cursor: auto;"
@@ -3923,7 +3923,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-0-3"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-0-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -3952,7 +3952,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="541px"
-                      fill="url(#gradient-bar-series-ref-111-bar-1-0)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-1-0)"
                       x="0"
                       y="3.5"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -3960,7 +3960,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-1-0"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-1-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -3987,7 +3987,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="180px"
-                      fill="url(#gradient-bar-series-ref-111-bar-1-1)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-1-1)"
                       x="0"
                       y="16.5"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.7) 0px 0px 20px); cursor: auto;"
@@ -3995,7 +3995,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-1-1"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-1-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4022,7 +4022,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="361px"
-                      fill="url(#gradient-bar-series-ref-111-bar-1-2)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-1-2)"
                       x="0"
                       y="29.5"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4030,7 +4030,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-1-2"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-1-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4057,7 +4057,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="721px"
-                      fill="url(#gradient-bar-series-ref-111-bar-1-3)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-1-3)"
                       x="0"
                       y="42.5"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4065,7 +4065,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-1-3"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-1-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4094,7 +4094,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="541px"
-                      fill="url(#gradient-bar-series-ref-111-bar-2-0)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-2-0)"
                       x="0"
                       y="3.5"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4102,7 +4102,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-2-0"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-2-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4129,7 +4129,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="180px"
-                      fill="url(#gradient-bar-series-ref-111-bar-2-1)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-2-1)"
                       x="0"
                       y="16.5"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4137,7 +4137,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-2-1"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-2-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4164,7 +4164,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="361px"
-                      fill="url(#gradient-bar-series-ref-111-bar-2-2)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-2-2)"
                       x="0"
                       y="29.5"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4172,7 +4172,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-2-2"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-2-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4199,7 +4199,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="721px"
-                      fill="url(#gradient-bar-series-ref-111-bar-2-3)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-2-3)"
                       x="0"
                       y="42.5"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4207,7 +4207,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-2-3"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-2-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4236,7 +4236,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="541px"
-                      fill="url(#gradient-bar-series-ref-111-bar-3-0)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-3-0)"
                       x="0"
                       y="3.5"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4244,7 +4244,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-3-0"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-3-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4271,7 +4271,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="180px"
-                      fill="url(#gradient-bar-series-ref-111-bar-3-1)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-3-1)"
                       x="0"
                       y="16.5"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4279,7 +4279,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-3-1"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-3-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4306,7 +4306,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="361px"
-                      fill="url(#gradient-bar-series-ref-111-bar-3-2)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-3-2)"
                       x="0"
                       y="29.5"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4314,7 +4314,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-3-2"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-3-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -4341,7 +4341,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                       role="graphics-document"
                       height="10px"
                       width="721px"
-                      fill="url(#gradient-bar-series-ref-111-bar-3-3)"
+                      fill="url(#gradient-bar-series-horizontal-simple-multi-gradient-bar-3-3)"
                       x="0"
                       y="42.5"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.7) 0px 0px 20px); cursor: auto;"
@@ -4349,7 +4349,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalSimpleMultiGradient smoke-test 1`
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-111-bar-3-3"
+                              id="gradient-bar-series-horizontal-simple-multi-gradient-bar-3-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6079,7 +6079,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="384px"
-                      fill="url(#gradient-bar-series-ref-71-bar-0-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-0-0)"
                       x="0"
                       y="0"
                       style="filter: drop-shadow(rgb(232, 64, 69) 0px 0px 30px); cursor: auto;"
@@ -6096,7 +6096,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-0-0"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-0-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6123,7 +6123,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="384px"
-                      fill="url(#gradient-bar-series-ref-71-bar-0-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-0-1)"
                       x="384"
                       y="0"
                       style="filter: drop-shadow(rgb(248, 164, 70) 0px 0px 30px); cursor: auto;"
@@ -6140,7 +6140,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-0-1"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-0-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6169,7 +6169,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="110px"
-                      fill="url(#gradient-bar-series-ref-71-bar-1-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-1-0)"
                       x="274"
                       y="0"
                       style="filter: drop-shadow(rgb(232, 64, 69) 0px 0px 30px); cursor: auto;"
@@ -6186,7 +6186,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-1-0"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-1-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6213,7 +6213,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="110px"
-                      fill="url(#gradient-bar-series-ref-71-bar-1-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-1-1)"
                       x="384"
                       y="0"
                       style="filter: drop-shadow(rgb(248, 164, 70) 0px 0px 30px); cursor: auto;"
@@ -6230,7 +6230,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-1-1"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-1-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6259,7 +6259,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="318px"
-                      fill="url(#gradient-bar-series-ref-71-bar-2-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-2-0)"
                       x="66"
                       y="0"
                       style="filter: drop-shadow(rgb(232, 64, 69) 0px 0px 30px); cursor: auto;"
@@ -6276,7 +6276,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-2-0"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-2-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6303,7 +6303,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="318px"
-                      fill="url(#gradient-bar-series-ref-71-bar-2-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-2-1)"
                       x="384"
                       y="0"
                       style="filter: drop-shadow(rgb(248, 164, 70) 0px 0px 30px); cursor: auto;"
@@ -6320,7 +6320,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-2-1"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-2-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6349,7 +6349,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="110px"
-                      fill="url(#gradient-bar-series-ref-71-bar-3-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-3-0)"
                       x="274"
                       y="0"
                       style="filter: drop-shadow(rgb(232, 64, 69) 0px 0px 30px); cursor: auto;"
@@ -6366,7 +6366,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-3-0"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-3-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6393,7 +6393,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="110px"
-                      fill="url(#gradient-bar-series-ref-71-bar-3-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-3-1)"
                       x="384"
                       y="0"
                       style="filter: drop-shadow(rgb(248, 164, 70) 0px 0px 30px); cursor: auto;"
@@ -6410,7 +6410,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-3-1"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-3-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6439,7 +6439,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="373px"
-                      fill="url(#gradient-bar-series-ref-71-bar-4-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-4-0)"
                       x="11"
                       y="0"
                       style="filter: drop-shadow(rgb(232, 64, 69) 0px 0px 30px); cursor: auto;"
@@ -6456,7 +6456,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-4-0"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-4-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6483,7 +6483,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="373px"
-                      fill="url(#gradient-bar-series-ref-71-bar-4-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-4-1)"
                       x="384"
                       y="0"
                       style="filter: drop-shadow(rgb(248, 164, 70) 0px 0px 30px); cursor: auto;"
@@ -6500,7 +6500,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-4-1"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-4-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6529,7 +6529,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="318px"
-                      fill="url(#gradient-bar-series-ref-71-bar-5-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-5-0)"
                       x="66"
                       y="0"
                       style="filter: drop-shadow(rgb(232, 64, 69) 0px 0px 30px); cursor: auto;"
@@ -6546,7 +6546,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-5-0"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-5-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -6573,7 +6573,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
                       role="graphics-document"
                       height="48px"
                       width="318px"
-                      fill="url(#gradient-bar-series-ref-71-bar-5-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-diverging-gradient-bar-5-1)"
                       x="384"
                       y="0"
                       style="filter: drop-shadow(rgb(248, 164, 70) 0px 0px 30px); cursor: auto;"
@@ -6590,7 +6590,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedDivergingGradient smoke-te
               >
               </rect>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-71-bar-5-1"
+                              id="gradient-bar-series-horizontal-stacked-diverging-gradient-bar-5-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7170,7 +7170,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="118px"
-                      fill="url(#gradient-bar-series-ref-121-bar-0-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-0-0)"
                       x="0"
                       y="0"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7178,7 +7178,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-0-0"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-0-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7205,7 +7205,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="142px"
-                      fill="url(#gradient-bar-series-ref-121-bar-0-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-0-1)"
                       x="118"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7213,7 +7213,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-0-1"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-0-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7240,7 +7240,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="177px"
-                      fill="url(#gradient-bar-series-ref-121-bar-0-2)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-0-2)"
                       x="260"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7248,7 +7248,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-0-2"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-0-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7275,7 +7275,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="133px"
-                      fill="url(#gradient-bar-series-ref-121-bar-0-3)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-0-3)"
                       x="437"
                       y="0"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7283,7 +7283,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-0-3"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-0-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7312,7 +7312,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="118px"
-                      fill="url(#gradient-bar-series-ref-121-bar-1-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-1-0)"
                       x="0"
                       y="0"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7320,7 +7320,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-1-0"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-1-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7347,7 +7347,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="40px"
-                      fill="url(#gradient-bar-series-ref-121-bar-1-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-1-1)"
                       x="118"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7355,7 +7355,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-1-1"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-1-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7382,7 +7382,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="26px"
-                      fill="url(#gradient-bar-series-ref-121-bar-1-2)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-1-2)"
                       x="158"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7390,7 +7390,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-1-2"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-1-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7417,7 +7417,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="132px"
-                      fill="url(#gradient-bar-series-ref-121-bar-1-3)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-1-3)"
                       x="184"
                       y="0"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7425,7 +7425,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-1-3"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-1-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7454,7 +7454,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="83px"
-                      fill="url(#gradient-bar-series-ref-121-bar-2-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-2-0)"
                       x="0"
                       y="0"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7462,7 +7462,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-2-0"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-2-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7489,7 +7489,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="153px"
-                      fill="url(#gradient-bar-series-ref-121-bar-2-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-2-1)"
                       x="83"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7497,7 +7497,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-2-1"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-2-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7524,7 +7524,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="130px"
-                      fill="url(#gradient-bar-series-ref-121-bar-2-2)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-2-2)"
                       x="236"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7532,7 +7532,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-2-2"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-2-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7559,7 +7559,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="136px"
-                      fill="url(#gradient-bar-series-ref-121-bar-2-3)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-2-3)"
                       x="366"
                       y="0"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7567,7 +7567,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-2-3"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-2-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7596,7 +7596,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="154px"
-                      fill="url(#gradient-bar-series-ref-121-bar-3-0)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-3-0)"
                       x="0"
                       y="0"
                       style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7604,7 +7604,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-3-0"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-3-0"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7631,7 +7631,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="141px"
-                      fill="url(#gradient-bar-series-ref-121-bar-3-1)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-3-1)"
                       x="154"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7639,7 +7639,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-3-1"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-3-1"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7666,7 +7666,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="237px"
-                      fill="url(#gradient-bar-series-ref-121-bar-3-2)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-3-2)"
                       x="295"
                       y="0"
                       style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7674,7 +7674,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-3-2"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-3-2"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -7701,7 +7701,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                       role="graphics-document"
                       height="52px"
                       width="189px"
-                      fill="url(#gradient-bar-series-ref-121-bar-3-3)"
+                      fill="url(#gradient-bar-series-horizontal-stacked-gradient-bar-3-3)"
                       x="532"
                       y="0"
                       style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -7709,7 +7709,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalStackedGradient smoke-test 1`] = 
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-121-bar-3-3"
+                              id="gradient-bar-series-horizontal-stacked-gradient-bar-3-3"
                               y1="0%"
                               y2="0%"
                               x1="0%"
@@ -8863,7 +8863,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
                     role="graphics-document"
                     height="66px"
                     width="72px"
-                    fill="url(#gradient-bar-series-ref-91-bar-undefined-0)"
+                    fill="url(#gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-0)"
                     x="0"
                     y="266"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -8871,7 +8871,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-91-bar-undefined-0"
+                            id="gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-0"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -8898,7 +8898,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
                     role="graphics-document"
                     height="66px"
                     width="215px"
-                    fill="url(#gradient-bar-series-ref-91-bar-undefined-1)"
+                    fill="url(#gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-1)"
                     x="72"
                     y="183"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.7) 0px 0px 20px); cursor: auto;"
@@ -8906,7 +8906,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-91-bar-undefined-1"
+                            id="gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-1"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -8933,7 +8933,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
                     role="graphics-document"
                     height="66px"
                     width="144px"
-                    fill="url(#gradient-bar-series-ref-91-bar-undefined-2)"
+                    fill="url(#gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-2)"
                     x="287"
                     y="100"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -8941,7 +8941,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-91-bar-undefined-2"
+                            id="gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-2"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -8968,7 +8968,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
                     role="graphics-document"
                     height="66px"
                     width="287px"
-                    fill="url(#gradient-bar-series-ref-91-bar-undefined-3)"
+                    fill="url(#gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-3)"
                     x="431"
                     y="17"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.7) 0px 0px 20px); cursor: auto;"
@@ -8976,7 +8976,7 @@ exports[`Blocks/Bar Chart/Dark/Large HorizontalWaterfallGradient smoke-test 1`] 
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-91-bar-undefined-3"
+                            id="gradient-bar-series-horizontal-waterfall-gradient-bar-undefined-3"
                             y1="0%"
                             y2="0%"
                             x1="0%"
@@ -10477,7 +10477,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="241.60000000000002px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-0)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-0)"
                   x="23"
                   y="60.399999999999984"
                   style="filter: drop-shadow(rgba(13, 78, 210, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10485,7 +10485,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-0"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -10524,7 +10524,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="181.2px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-1)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-1)"
                   x="134"
                   y="120.80000000000001"
                   style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10532,7 +10532,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-1"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-1"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -10571,7 +10571,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="120.80000000000001px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-2)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-2)"
                   x="245"
                   y="181.2"
                   style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10579,7 +10579,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-2"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-2"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -10618,7 +10618,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="120.80000000000001px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-3)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-3)"
                   x="356"
                   y="181.2"
                   style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10626,7 +10626,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-3"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-3"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -10665,7 +10665,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="181.2px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-4)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-4)"
                   x="467"
                   y="120.80000000000001"
                   style="filter: drop-shadow(rgba(218, 197, 249, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10673,7 +10673,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-4"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-4"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -10712,7 +10712,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="241.60000000000002px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-5)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-5)"
                   x="578"
                   y="60.399999999999984"
                   style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10720,7 +10720,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-5"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-5"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -10759,7 +10759,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="302px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-26-bar-undefined-6)"
+                  fill="url(#gradient-bar-series-labels-gradient-bar-undefined-6)"
                   x="689"
                   y="0"
                   style="filter: drop-shadow(rgba(91, 20, 197, 0.5) 0px 0px 20px); cursor: auto;"
@@ -10767,7 +10767,7 @@ exports[`Blocks/Bar Chart/Dark/Large LabelsGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-26-bar-undefined-6"
+                          id="gradient-bar-series-labels-gradient-bar-undefined-6"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13034,7 +13034,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="56.4375px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-0)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-0)"
                   x="15"
                   y="244.5625"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13042,7 +13042,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-0"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13069,7 +13069,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="163.04166666666666px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-1)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-1)"
                   x="43"
                   y="137.95833333333334"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13077,7 +13077,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-1"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-1"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13104,7 +13104,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="50.16666666666666px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-2)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-2)"
                   x="71"
                   y="250.83333333333334"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13112,7 +13112,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-2"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-2"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13139,7 +13139,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="106.60416666666669px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-3)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-3)"
                   x="99"
                   y="194.39583333333331"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13147,7 +13147,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-3"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-3"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13174,7 +13174,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="175.58333333333334px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-4)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-4)"
                   x="127"
                   y="125.41666666666666"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13182,7 +13182,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-4"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-4"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13209,7 +13209,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="75.25px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-5)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-5)"
                   x="155"
                   y="225.75"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13217,7 +13217,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-5"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-5"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13244,7 +13244,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="137.95833333333331px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-6)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-6)"
                   x="183"
                   y="163.04166666666669"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13252,7 +13252,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-6"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-6"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13279,7 +13279,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="87.79166666666669px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-7)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-7)"
                   x="211"
                   y="213.20833333333331"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13287,7 +13287,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-7"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-7"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13314,7 +13314,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="6.270833333333371px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-8)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-8)"
                   x="239"
                   y="294.72916666666663"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13322,7 +13322,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-8"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-8"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13349,7 +13349,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="213.20833333333334px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-9)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-9)"
                   x="267"
                   y="87.79166666666666"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13357,7 +13357,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-9"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-9"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13384,7 +13384,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="213.20833333333334px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-10)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-10)"
                   x="295"
                   y="87.79166666666666"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13392,7 +13392,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-10"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-10"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13419,7 +13419,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="144.22916666666669px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-11)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-11)"
                   x="323"
                   y="156.77083333333331"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13427,7 +13427,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-11"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-11"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13454,7 +13454,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="301px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-12)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-12)"
                   x="351"
                   y="0"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13462,7 +13462,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-12"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-12"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13489,7 +13489,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="75.25px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-13)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-13)"
                   x="379"
                   y="225.75"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13497,7 +13497,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-13"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-13"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13524,7 +13524,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="194.39583333333334px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-14)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-14)"
                   x="407"
                   y="106.60416666666666"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13532,7 +13532,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-14"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-14"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13559,7 +13559,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="269.64583333333337px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-15)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-15)"
                   x="435"
                   y="31.354166666666657"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13567,7 +13567,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-15"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-15"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13594,7 +13594,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="200.66666666666666px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-16)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-16)"
                   x="463"
                   y="100.33333333333334"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13602,7 +13602,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-16"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-16"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13629,7 +13629,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="282.1875px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-17)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-17)"
                   x="491"
                   y="18.8125"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13637,7 +13637,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-17"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-17"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13664,7 +13664,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="232.02083333333334px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-18)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-18)"
                   x="519"
                   y="68.97916666666666"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13672,7 +13672,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-18"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-18"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13699,7 +13699,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="31.35416666666663px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-19)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-19)"
                   x="547"
                   y="269.64583333333337"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13707,7 +13707,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-19"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-19"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13734,7 +13734,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="12.541666666666629px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-20)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-20)"
                   x="575"
                   y="288.45833333333337"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13742,7 +13742,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-20"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-20"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13769,7 +13769,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="188.125px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-21)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-21)"
                   x="603"
                   y="112.875"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13777,7 +13777,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-21"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-21"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13804,7 +13804,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="100.33333333333331px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-22)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-22)"
                   x="631"
                   y="200.66666666666669"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13812,7 +13812,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-22"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-22"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13839,7 +13839,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="269.64583333333337px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-23)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-23)"
                   x="659"
                   y="31.354166666666657"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13847,7 +13847,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-23"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-23"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13874,7 +13874,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="56.4375px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-24)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-24)"
                   x="687"
                   y="244.5625"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13882,7 +13882,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-24"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-24"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13909,7 +13909,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="37.625px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-25)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-25)"
                   x="715"
                   y="263.375"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13917,7 +13917,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-25"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-25"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13944,7 +13944,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="219.47916666666666px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-26)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-26)"
                   x="743"
                   y="81.52083333333334"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13952,7 +13952,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-26"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-26"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -13979,7 +13979,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="156.77083333333334px"
                   width="14px"
-                  fill="url(#gradient-bar-series-ref-46-bar-undefined-27)"
+                  fill="url(#gradient-bar-series-large-dataset-gradient-bar-undefined-27)"
                   x="771"
                   y="144.22916666666666"
                   style="filter: drop-shadow(rgb(91, 20, 197) 0px 0px 20px); cursor: auto;"
@@ -13987,7 +13987,7 @@ exports[`Blocks/Bar Chart/Dark/Large LargeDatasetGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-46-bar-undefined-27"
+                          id="gradient-bar-series-large-dataset-gradient-bar-undefined-27"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15359,7 +15359,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="226.5px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-0)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-0)"
                   x="23"
                   y="75.5"
                   style="filter: drop-shadow(rgba(91, 20, 197, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15367,7 +15367,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-0"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15394,7 +15394,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="75.5px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-1)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-1)"
                   x="134"
                   y="226.5"
                   style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15402,7 +15402,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-1"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-1"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15429,7 +15429,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="113.25px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-2)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-2)"
                   x="245"
                   y="188.75"
                   style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15437,7 +15437,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-2"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-2"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15464,7 +15464,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="302px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-3)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-3)"
                   x="356"
                   y="0"
                   style="filter: drop-shadow(rgba(168, 64, 232, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15472,7 +15472,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-3"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-3"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15499,7 +15499,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="226.5px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-4)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-4)"
                   x="467"
                   y="75.5"
                   style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15507,7 +15507,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-4"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-4"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15534,7 +15534,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="75.5px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-5)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-5)"
                   x="578"
                   y="226.5"
                   style="filter: drop-shadow(rgba(13, 78, 210, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15542,7 +15542,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-5"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-5"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -15569,7 +15569,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="188.75px"
                   width="89px"
-                  fill="url(#gradient-bar-series-ref-16-bar-undefined-6)"
+                  fill="url(#gradient-bar-series-simple-gradient-bar-undefined-6)"
                   x="689"
                   y="113.25"
                   style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -15577,7 +15577,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-16-bar-undefined-6"
+                          id="gradient-bar-series-simple-gradient-bar-undefined-6"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -17239,7 +17239,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="195.75px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-0-0)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-0-0)"
                     x="3"
                     y="65.25"
                     style="filter: drop-shadow(rgba(218, 197, 249, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17247,7 +17247,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-0-0"
+                            id="gradient-bar-series-simple-multi-gradient-bar-0-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17274,7 +17274,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65.25px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-0-1)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-0-1)"
                     x="17"
                     y="195.75"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17282,7 +17282,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-0-1"
+                            id="gradient-bar-series-simple-multi-gradient-bar-0-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17309,7 +17309,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="130.5px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-0-2)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-0-2)"
                     x="31"
                     y="130.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17317,7 +17317,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-0-2"
+                            id="gradient-bar-series-simple-multi-gradient-bar-0-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17344,7 +17344,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="261px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-0-3)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-0-3)"
                     x="45"
                     y="0"
                     style="filter: drop-shadow(rgba(91, 20, 197, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17352,7 +17352,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-0-3"
+                            id="gradient-bar-series-simple-multi-gradient-bar-0-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17381,7 +17381,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="195.75px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-1-0)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-1-0)"
                     x="3"
                     y="65.25"
                     style="filter: drop-shadow(rgba(218, 197, 249, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17389,7 +17389,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-1-0"
+                            id="gradient-bar-series-simple-multi-gradient-bar-1-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17416,7 +17416,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65.25px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-1-1)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-1-1)"
                     x="17"
                     y="195.75"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17424,7 +17424,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-1-1"
+                            id="gradient-bar-series-simple-multi-gradient-bar-1-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17451,7 +17451,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="130.5px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-1-2)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-1-2)"
                     x="31"
                     y="130.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17459,7 +17459,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-1-2"
+                            id="gradient-bar-series-simple-multi-gradient-bar-1-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17486,7 +17486,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="261px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-1-3)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-1-3)"
                     x="45"
                     y="0"
                     style="filter: drop-shadow(rgba(91, 20, 197, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17494,7 +17494,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-1-3"
+                            id="gradient-bar-series-simple-multi-gradient-bar-1-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17523,7 +17523,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="195.75px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-2-0)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-2-0)"
                     x="3"
                     y="65.25"
                     style="filter: drop-shadow(rgba(218, 197, 249, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17531,7 +17531,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-2-0"
+                            id="gradient-bar-series-simple-multi-gradient-bar-2-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17558,7 +17558,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65.25px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-2-1)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-2-1)"
                     x="17"
                     y="195.75"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17566,7 +17566,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-2-1"
+                            id="gradient-bar-series-simple-multi-gradient-bar-2-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17593,7 +17593,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="130.5px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-2-2)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-2-2)"
                     x="31"
                     y="130.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17601,7 +17601,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-2-2"
+                            id="gradient-bar-series-simple-multi-gradient-bar-2-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17628,7 +17628,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="261px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-2-3)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-2-3)"
                     x="45"
                     y="0"
                     style="filter: drop-shadow(rgba(91, 20, 197, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17636,7 +17636,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-2-3"
+                            id="gradient-bar-series-simple-multi-gradient-bar-2-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17665,7 +17665,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="195.75px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-3-0)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-3-0)"
                     x="3"
                     y="65.25"
                     style="filter: drop-shadow(rgba(218, 197, 249, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17673,7 +17673,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-3-0"
+                            id="gradient-bar-series-simple-multi-gradient-bar-3-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17700,7 +17700,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65.25px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-3-1)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-3-1)"
                     x="17"
                     y="195.75"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17708,7 +17708,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-3-1"
+                            id="gradient-bar-series-simple-multi-gradient-bar-3-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17735,7 +17735,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="130.5px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-3-2)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-3-2)"
                     x="31"
                     y="130.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17743,7 +17743,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-3-2"
+                            id="gradient-bar-series-simple-multi-gradient-bar-3-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17770,7 +17770,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="261px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-3-3)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-3-3)"
                     x="45"
                     y="0"
                     style="filter: drop-shadow(rgba(91, 20, 197, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17778,7 +17778,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-3-3"
+                            id="gradient-bar-series-simple-multi-gradient-bar-3-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17807,7 +17807,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="195.75px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-4-0)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-4-0)"
                     x="3"
                     y="65.25"
                     style="filter: drop-shadow(rgba(218, 197, 249, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17815,7 +17815,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-4-0"
+                            id="gradient-bar-series-simple-multi-gradient-bar-4-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17842,7 +17842,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65.25px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-4-1)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-4-1)"
                     x="17"
                     y="195.75"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17850,7 +17850,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-4-1"
+                            id="gradient-bar-series-simple-multi-gradient-bar-4-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17877,7 +17877,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="130.5px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-4-2)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-4-2)"
                     x="31"
                     y="130.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17885,7 +17885,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-4-2"
+                            id="gradient-bar-series-simple-multi-gradient-bar-4-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17912,7 +17912,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="261px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-4-3)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-4-3)"
                     x="45"
                     y="0"
                     style="filter: drop-shadow(rgba(91, 20, 197, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17920,7 +17920,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-4-3"
+                            id="gradient-bar-series-simple-multi-gradient-bar-4-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17949,7 +17949,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="195.75px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-5-0)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-5-0)"
                     x="3"
                     y="65.25"
                     style="filter: drop-shadow(rgba(218, 197, 249, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17957,7 +17957,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-5-0"
+                            id="gradient-bar-series-simple-multi-gradient-bar-5-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -17984,7 +17984,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65.25px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-5-1)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-5-1)"
                     x="17"
                     y="195.75"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -17992,7 +17992,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-5-1"
+                            id="gradient-bar-series-simple-multi-gradient-bar-5-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -18019,7 +18019,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="130.5px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-5-2)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-5-2)"
                     x="31"
                     y="130.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -18027,7 +18027,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-5-2"
+                            id="gradient-bar-series-simple-multi-gradient-bar-5-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -18054,7 +18054,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="261px"
                     width="8px"
-                    fill="url(#gradient-bar-series-ref-6-bar-5-3)"
+                    fill="url(#gradient-bar-series-simple-multi-gradient-bar-5-3)"
                     x="45"
                     y="0"
                     style="filter: drop-shadow(rgba(91, 20, 197, 0.7) 0px 0px 20px); cursor: auto;"
@@ -18062,7 +18062,7 @@ exports[`Blocks/Bar Chart/Dark/Large SimpleMultiGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-6-bar-5-3"
+                            id="gradient-bar-series-simple-multi-gradient-bar-5-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -20875,7 +20875,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="175px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-0-0)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-0-0)"
                       x="0"
                       y="175"
                       style="filter: drop-shadow(rgba(247, 191, 193, 0.5) 0px 0px 20px); cursor: auto;"
@@ -20883,7 +20883,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-0-0"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-0-0"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -20910,7 +20910,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="175px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-0-1)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-0-1)"
                       x="0"
                       y="0"
                       style="filter: drop-shadow(rgba(232, 64, 69, 0.5) 0px 0px 20px); cursor: auto;"
@@ -20918,7 +20918,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-0-1"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-0-1"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -20947,7 +20947,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="49.99999999999997px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-1-0)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-1-0)"
                       x="0"
                       y="175"
                       style="filter: drop-shadow(rgba(247, 191, 193, 0.5) 0px 0px 20px); cursor: auto;"
@@ -20955,7 +20955,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-1-0"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-1-0"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -20982,7 +20982,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="50.000000000000014px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-1-1)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-1-1)"
                       x="0"
                       y="124.99999999999999"
                       style="filter: drop-shadow(rgba(232, 64, 69, 0.5) 0px 0px 20px); cursor: auto;"
@@ -20990,7 +20990,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-1-1"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-1-1"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21019,7 +21019,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="145px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-2-0)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-2-0)"
                       x="0"
                       y="175"
                       style="filter: drop-shadow(rgba(247, 191, 193, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21027,7 +21027,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-2-0"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-2-0"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21054,7 +21054,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="145px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-2-1)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-2-1)"
                       x="0"
                       y="30.00000000000001"
                       style="filter: drop-shadow(rgba(232, 64, 69, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21062,7 +21062,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-2-1"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-2-1"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21091,7 +21091,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="49.99999999999997px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-3-0)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-3-0)"
                       x="0"
                       y="175"
                       style="filter: drop-shadow(rgba(247, 191, 193, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21099,7 +21099,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-3-0"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-3-0"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21126,7 +21126,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="50.000000000000014px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-3-1)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-3-1)"
                       x="0"
                       y="124.99999999999999"
                       style="filter: drop-shadow(rgba(232, 64, 69, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21134,7 +21134,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-3-1"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-3-1"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21163,7 +21163,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="170px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-4-0)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-4-0)"
                       x="0"
                       y="175"
                       style="filter: drop-shadow(rgba(247, 191, 193, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21171,7 +21171,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-4-0"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-4-0"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21198,7 +21198,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="170.00000000000003px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-4-1)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-4-1)"
                       x="0"
                       y="4.999999999999982"
                       style="filter: drop-shadow(rgba(232, 64, 69, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21206,7 +21206,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-4-1"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-4-1"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21235,7 +21235,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="145px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-5-0)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-5-0)"
                       x="0"
                       y="175"
                       style="filter: drop-shadow(rgba(247, 191, 193, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21243,7 +21243,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-5-0"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-5-0"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21270,7 +21270,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                       role="graphics-document"
                       height="145px"
                       width="109px"
-                      fill="url(#gradient-bar-series-ref-66-bar-5-1)"
+                      fill="url(#gradient-bar-series-stacked-diverging-gradient-bar-5-1)"
                       x="0"
                       y="30.00000000000001"
                       style="filter: drop-shadow(rgba(232, 64, 69, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21278,7 +21278,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedDivergingGradient smoke-test 1`] = `
                 </rect>
               </g>
               <linearGradient spreadmethod="pad"
-                              id="gradient-bar-series-ref-66-bar-5-1"
+                              id="gradient-bar-series-stacked-diverging-gradient-bar-5-1"
                               x1="10%"
                               x2="10%"
                               y1="100%"
@@ -21857,7 +21857,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="50px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-0-0)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-0-0)"
                     x="0"
                     y="255"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21865,7 +21865,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-0-0"
+                            id="gradient-bar-series-stacked-gradient-bar-0-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -21892,7 +21892,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="60px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-0-1)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-0-1)"
                     x="0"
                     y="195"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21900,7 +21900,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-0-1"
+                            id="gradient-bar-series-stacked-gradient-bar-0-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -21927,7 +21927,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="75px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-0-2)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-0-2)"
                     x="0"
                     y="120"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21935,7 +21935,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-0-2"
+                            id="gradient-bar-series-stacked-gradient-bar-0-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -21962,7 +21962,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="55.999999999999986px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-0-3)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-0-3)"
                     x="0"
                     y="64.00000000000001"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -21970,7 +21970,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-0-3"
+                            id="gradient-bar-series-stacked-gradient-bar-0-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -21999,7 +21999,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="50px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-1-0)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-1-0)"
                     x="0"
                     y="255"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22007,7 +22007,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-1-0"
+                            id="gradient-bar-series-stacked-gradient-bar-1-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22034,7 +22034,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="16.99999999999997px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-1-1)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-1-1)"
                     x="0"
                     y="238.00000000000003"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22042,7 +22042,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-1-1"
+                            id="gradient-bar-series-stacked-gradient-bar-1-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22069,7 +22069,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="11px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-1-2)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-1-2)"
                     x="0"
                     y="227.00000000000003"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22077,7 +22077,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-1-2"
+                            id="gradient-bar-series-stacked-gradient-bar-1-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22104,7 +22104,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="55.50000000000003px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-1-3)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-1-3)"
                     x="0"
                     y="171.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22112,7 +22112,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-1-3"
+                            id="gradient-bar-series-stacked-gradient-bar-1-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22141,7 +22141,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="35px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-2-0)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-2-0)"
                     x="0"
                     y="270"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22149,7 +22149,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-2-0"
+                            id="gradient-bar-series-stacked-gradient-bar-2-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22176,7 +22176,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="64.99999999999997px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-2-1)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-2-1)"
                     x="0"
                     y="205.00000000000003"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22184,7 +22184,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-2-1"
+                            id="gradient-bar-series-stacked-gradient-bar-2-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22211,7 +22211,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="55.00000000000003px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-2-2)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-2-2)"
                     x="0"
                     y="150"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22219,7 +22219,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-2-2"
+                            id="gradient-bar-series-stacked-gradient-bar-2-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22246,7 +22246,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="57.5px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-2-3)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-2-3)"
                     x="0"
                     y="92.5"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22254,7 +22254,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-2-3"
+                            id="gradient-bar-series-stacked-gradient-bar-2-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22283,7 +22283,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="65px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-3-0)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-3-0)"
                     x="0"
                     y="240"
                     style="filter: drop-shadow(rgba(76, 134, 255, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22291,7 +22291,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-3-0"
+                            id="gradient-bar-series-stacked-gradient-bar-3-0"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22318,7 +22318,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="60px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-3-1)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-3-1)"
                     x="0"
                     y="180"
                     style="filter: drop-shadow(rgba(64, 229, 209, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22326,7 +22326,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-3-1"
+                            id="gradient-bar-series-stacked-gradient-bar-3-1"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22353,7 +22353,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="100.00000000000001px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-3-2)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-3-2)"
                     x="0"
                     y="79.99999999999999"
                     style="filter: drop-shadow(rgba(64, 211, 244, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22361,7 +22361,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-3-2"
+                            id="gradient-bar-series-stacked-gradient-bar-3-2"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -22388,7 +22388,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
                     role="graphics-document"
                     height="79.99999999999999px"
                     width="89px"
-                    fill="url(#gradient-bar-series-ref-56-bar-3-3)"
+                    fill="url(#gradient-bar-series-stacked-gradient-bar-3-3)"
                     x="0"
                     y="0"
                     style="filter: drop-shadow(rgba(145, 82, 238, 0.5) 0px 0px 20px); cursor: auto;"
@@ -22396,7 +22396,7 @@ exports[`Blocks/Bar Chart/Dark/Large StackedGradient smoke-test 1`] = `
               </rect>
             </g>
             <linearGradient spreadmethod="pad"
-                            id="gradient-bar-series-ref-56-bar-3-3"
+                            id="gradient-bar-series-stacked-gradient-bar-3-3"
                             x1="10%"
                             x2="10%"
                             y1="100%"
@@ -23546,7 +23546,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="30.19999999999999px"
                   width="152px"
-                  fill="url(#gradient-bar-series-ref-36-bar-undefined-0)"
+                  fill="url(#gradient-bar-series-waterfall-gradient-bar-undefined-0)"
                   x="39"
                   y="271.8"
                   style="filter: drop-shadow(rgba(64, 229, 209, 0.7) 0px 0px 20px); cursor: auto;"
@@ -23554,7 +23554,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-36-bar-undefined-0"
+                          id="gradient-bar-series-waterfall-gradient-bar-undefined-0"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -23581,7 +23581,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="90.60000000000002px"
                   width="152px"
-                  fill="url(#gradient-bar-series-ref-36-bar-undefined-1)"
+                  fill="url(#gradient-bar-series-waterfall-gradient-bar-undefined-1)"
                   x="229"
                   y="181.2"
                   style="filter: drop-shadow(rgba(64, 211, 244, 0.7) 0px 0px 20px); cursor: auto;"
@@ -23589,7 +23589,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-36-bar-undefined-1"
+                          id="gradient-bar-series-waterfall-gradient-bar-undefined-1"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -23616,7 +23616,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="60.39999999999998px"
                   width="152px"
-                  fill="url(#gradient-bar-series-ref-36-bar-undefined-2)"
+                  fill="url(#gradient-bar-series-waterfall-gradient-bar-undefined-2)"
                   x="419"
                   y="120.80000000000001"
                   style="filter: drop-shadow(rgba(76, 134, 255, 0.7) 0px 0px 20px); cursor: auto;"
@@ -23624,7 +23624,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-36-bar-undefined-2"
+                          id="gradient-bar-series-waterfall-gradient-bar-undefined-2"
                           x1="10%"
                           x2="10%"
                           y1="100%"
@@ -23651,7 +23651,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
                   role="graphics-document"
                   height="120.80000000000001px"
                   width="152px"
-                  fill="url(#gradient-bar-series-ref-36-bar-undefined-3)"
+                  fill="url(#gradient-bar-series-waterfall-gradient-bar-undefined-3)"
                   x="609"
                   y="0"
                   style="filter: drop-shadow(rgba(145, 82, 238, 0.7) 0px 0px 20px); cursor: auto;"
@@ -23659,7 +23659,7 @@ exports[`Blocks/Bar Chart/Dark/Large WaterfallGradient smoke-test 1`] = `
             </rect>
           </g>
           <linearGradient spreadmethod="pad"
-                          id="gradient-bar-series-ref-36-bar-undefined-3"
+                          id="gradient-bar-series-waterfall-gradient-bar-undefined-3"
                           x1="10%"
                           x2="10%"
                           y1="100%"
