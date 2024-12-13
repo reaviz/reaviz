@@ -20,7 +20,18 @@ interface MoveProps extends PropsWithChildren {
   onMoveEnd: (event) => void;
 }
 
-export const Move: FC<Partial<MoveProps>> = (props) => {
+export const Move: FC<Partial<MoveProps>> = ({
+  cursor,
+  disabled = false,
+  preventRightClick = true,
+  disableText = true,
+  threshold = 0,
+  onMoveStart = () => undefined,
+  onMove = () => undefined,
+  onMoveCancel = () => undefined,
+  onMoveEnd = () => undefined,
+  children
+}) => {
   let started = false;
   let deltaX = 0;
   let deltaY = 0;
@@ -42,30 +53,22 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
     window.removeEventListener('touchend', onTouchEnd);
 
     setCursor(false);
-    disableText(true);
+    disableTextSelection(true);
   };
 
-  const disableText = (shouldDisable: boolean) => {
-    if (props.disableText) {
+  const disableTextSelection = (shouldDisable: boolean) => {
+    if (disableText) {
       toggleTextSelection(shouldDisable);
     }
   };
 
   const setCursor = (set: boolean) => {
-    let { cursor } = props;
-
     if (cursor) {
-      if (!set) {
-        cursor = 'inherit';
-      }
-
-      document.body.style['cursor'] = cursor;
+      document.body.style.cursor = set ? cursor : 'inherit';
     }
   };
 
   const checkThreshold = () => {
-    const { threshold } = props;
-
     return (
       !started && (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold)
     );
@@ -80,8 +83,6 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
   };
 
   const onMouseDown = (event: React.MouseEvent) => {
-    const { preventRightClick, disabled } = props;
-
     const shouldCancel = event.nativeEvent.which === 3 && preventRightClick;
     if (shouldCancel || disabled) {
       return;
@@ -106,20 +107,20 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
     let localDeltaY = deltaY + movementY;
 
     if (checkThreshold()) {
-      disableText(true);
+      disableTextSelection(true);
       setCursor(true);
 
       localDeltaX = 0;
       localDeltaY = 0;
       started = true;
 
-      props.onMoveStart({
+      onMoveStart({
         nativeEvent: event,
         type: 'mouse'
       });
     } else {
       rqf.current = requestAnimationFrame(() => {
-        props.onMove({
+        onMove({
           nativeEvent: event,
           type: 'mouse',
           x: localDeltaX,
@@ -139,12 +140,12 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
     disposeHandlers();
 
     if (started) {
-      props.onMoveEnd({
+      onMoveEnd({
         nativeEvent: event,
         type: 'mouse'
       });
     } else {
-      props.onMoveCancel({
+      onMoveCancel({
         nativeEvent: event,
         type: 'mouse'
       });
@@ -152,8 +153,6 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
   };
 
   const onTouchStart = (event: React.TouchEvent) => {
-    const { disabled } = props;
-
     if (disabled || event.touches.length !== 1) {
       return;
     }
@@ -184,25 +183,20 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
     localDeltaY = localDeltaY + localDeltaY;
 
     if (checkThreshold()) {
-      disableText(true);
+      disableTextSelection(true);
       setCursor(true);
 
       localDeltaX = 0;
       localDeltaY = 0;
       started = true;
 
-      props.onMoveStart({
-        // TODO: Come back and clean this up...
-        nativeEvent: {
-          ...event,
-          clientX,
-          clientY
-        },
+      onMoveStart({
+        nativeEvent: { ...event, clientX, clientY },
         type: 'touch'
       });
     } else {
       rqf.current = requestAnimationFrame(() => {
-        props.onMove({
+        onMove({
           // TODO: Come back and clean this up...
           nativeEvent: {
             ...event,
@@ -226,19 +220,19 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
     disposeHandlers();
 
     if (started) {
-      props.onMoveEnd({
+      onMoveEnd({
         nativeEvent: event,
         type: 'touch'
       });
     } else {
-      props.onMoveCancel({
+      onMoveCancel({
         nativeEvent: event,
         type: 'touch'
       });
     }
   };
 
-  return Children.map(props.children, (child: any) =>
+  return Children.map(children, (child: any) =>
     cloneElement(child, {
       ...child.props,
       onMouseDown: (e) => {
@@ -255,14 +249,4 @@ export const Move: FC<Partial<MoveProps>> = (props) => {
       }
     })
   );
-};
-
-Move.defaultProps = {
-  preventRightClick: true,
-  disableText: true,
-  threshold: 0,
-  onMoveStart: () => undefined,
-  onMove: () => undefined,
-  onMoveEnd: () => undefined,
-  onMoveCancel: () => undefined
 };
