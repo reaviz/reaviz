@@ -231,7 +231,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
   );
 };
 
-export const AREA_DEFAULT_PROPS = {
+export const AREA_DEFAULT_PROPS: Partial<AreaProps> = {
   gradient: <Gradient />,
   interpolation: 'linear'
 };
