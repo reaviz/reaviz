@@ -14,6 +14,7 @@ import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 import { schemes } from '../src/common/color/schemes';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Funnel Chart/Dark/Large',
   component: FunnelChart
 };
