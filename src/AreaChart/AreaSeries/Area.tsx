@@ -99,11 +99,11 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
 
   const coords = useMemo(() => {
     return data.map((item: any) => ({
-      x: roundDecimals(xScale(item.x)),
-      x1: roundDecimals(xScale(item.x) - xScale(item.x1)),
-      y: roundDecimals(yScale(item.y)),
-      y0: roundDecimals(yScale(item.y0)),
-      y1: roundDecimals(yScale(item.y1))
+      x: xScale(item.x),
+      x1: xScale(item.x) - xScale(item.x1),
+      y: yScale(item.y),
+      y0: yScale(item.y0),
+      y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
   }, [data, xScale, yScale]);
 
@@ -144,11 +144,11 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
   const exit = useMemo(() => {
     const maxY = Math.max(...yScale.range());
     const coords = data.map((item: any) => ({
-      x: xScale(item.x),
+      x: roundDecimals(xScale(item.x)),
       x1: 0,
       y: 0,
-      y1: maxY,
-      y0: maxY
+      y1: roundDecimals(maxY),
+      y0: roundDecimals(maxY)
     })) as ChartInternalShallowDataShape[];
 
     const areaPath = getAreaPath(coords);
