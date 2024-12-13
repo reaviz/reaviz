@@ -1,0 +1,4705 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blocks/Scatter Plot/Light/X-Small Bubble smoke-test 1`] = `
+<div class="flex flex-col pt-4 pb-4 bg-white rounded-3xl shadow-[11px_21px_3px_rgba(0,0,0,0.06),14px_27px_7px_rgba(0,0,0,0.10),19px_38px_14px_rgba(0,0,0,0.13),27px_54px_27px_rgba(0,0,0,0.16),39px_78px_50px_rgba(0,0,0,0.20),55px_110px_86px_rgba(0,0,0,0.26)] w-[200px] h-[386px] overflow-hidden">
+  <h3 class="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
+    Incident Report
+  </h3>
+  <div class="_container_1u3dt_1"
+       style="height: 100%; width: 100%;"
+  >
+    <svg width="200"
+         height="226"
+         class="_svg_1u3dt_30 _scatterPlot_gc5eo_1"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <g style="pointer-events: none;">
+          <line y1="170"
+                y2="170"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="136"
+                y2="136"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="102"
+                y2="102"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="68"
+                y2="68"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="33.99999999999999"
+                y2="33.99999999999999"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="0"
+                y2="0"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="35"
+                x2="35"
+                y1="0"
+                y2="170"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="75"
+                x2="75"
+                y1="0"
+                y2="170"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="117"
+                x2="117"
+                y1="0"
+                y2="170"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="159"
+                x2="159"
+                y1="0"
+                y2="170"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="198"
+                x2="198"
+                y1="0"
+                y2="170"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+        </g>
+        <g transform="translate(0, 170)"
+           visibility="visible"
+        >
+          <line x1="0"
+                x2="200"
+                y1="0"
+                y2="0.00001"
+                stroke-width="1"
+                stroke="#8F979F"
+          >
+          </line>
+          <g transform="translate(35, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                November
+              </title>
+              <text transform="rotate(-60)"
+                    text-anchor="end"
+                    alignment-baseline="middle"
+                    fill="#535362"
+              >
+                November
+              </text>
+            </g>
+          </g>
+          <g transform="translate(75, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                December
+              </title>
+              <text transform="rotate(-60)"
+                    text-anchor="end"
+                    alignment-baseline="middle"
+                    fill="#535362"
+              >
+                December
+              </text>
+            </g>
+          </g>
+          <g transform="translate(117, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                2020
+              </title>
+              <text transform="rotate(-60)"
+                    text-anchor="end"
+                    alignment-baseline="middle"
+                    fill="#535362"
+              >
+                2020
+              </text>
+            </g>
+          </g>
+          <g transform="translate(159, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                February
+              </title>
+              <text transform="rotate(-60)"
+                    text-anchor="end"
+                    alignment-baseline="middle"
+                    fill="#535362"
+              >
+                February
+              </text>
+            </g>
+          </g>
+          <g transform="translate(198, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                March
+              </title>
+              <text transform="rotate(-60)"
+                    text-anchor="end"
+                    alignment-baseline="middle"
+                    fill="#535362"
+              >
+                March
+              </text>
+            </g>
+          </g>
+        </g>
+        <g transform="translate(0, 0)"
+           visibility="visible"
+        >
+        </g>
+        <defs>
+          <clipPath id="area-series-ref-19-path">
+            <rect width="225"
+                  height="195"
+                  x="-12.5"
+                  y="-12.5"
+            >
+            </rect>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#area-series-ref-19-path)">
+          <g class
+             tabindex="0"
+             aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="99"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Oct 06 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="0"
+                    cy="0"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 19 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="100"
+                    cy="68"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Dec 20 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="101"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Dec 20 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="101"
+                    cy="51.00000000000001"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Dec 21 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="103"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="135"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="137"
+                    cy="102"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 22 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="104"
+                    cy="51.00000000000001"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Dec 23 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="105"
+                    cy="118.99999999999999"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Oct 15 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="12"
+                    cy="68"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 24 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="107"
+                    cy="118.99999999999999"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 24 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="107"
+                    cy="118.99999999999999"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Dec 25 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="108"
+                    cy="118.99999999999999"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Dec 25 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="108"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 26 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="109"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 26 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="109"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Dec 27 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="111"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Oct 23 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="23"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Oct 24 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="24"
+                    cy="136"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Oct 25 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="26"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 29 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="114"
+                    cy="85"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 29 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="114"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="143"
+                    cy="33.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Oct 29 2019 09:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="31"
+                    cy="16.999999999999996"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 31 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="116"
+                    cy="136"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="145"
+                    cy="102"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Nov 01 2019 09:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="35"
+                    cy="85"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Nov 02 2019 09:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="36"
+                    cy="118.99999999999999"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="119"
+                    cy="16.999999999999996"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Nov 04 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="39"
+                    cy="102"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="147"
+                    cy="85"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Nov 06 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="42"
+                    cy="33.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 07 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="43"
+                    cy="136"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Jan 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="122"
+                    cy="0"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Nov 09 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="46"
+                    cy="68"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="149"
+                    cy="51.00000000000001"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="124"
+                    cy="118.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Nov 12 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="50"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="126"
+                    cy="85"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 14 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="53"
+                    cy="153"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="127"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Nov 16 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="55"
+                    cy="68"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="153"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Nov 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="58"
+                    cy="153"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="130"
+                    cy="102"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Nov 20 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="61"
+                    cy="51.00000000000001"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 21 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="62"
+                    cy="85"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="154"
+                    cy="16.999999999999996"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Jan 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="132"
+                    cy="68"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Nov 24 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="66"
+                    cy="33.99999999999999"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Nov 25 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="68"
+                    cy="136"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="134"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Nov 27 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="70"
+                    cy="102"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="135"
+                    cy="118.99999999999999"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="137"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="137"
+                    cy="85"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="138"
+                    cy="16.999999999999996"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="138"
+                    cy="51.00000000000001"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="139"
+                    cy="153"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="139"
+                    cy="33.99999999999999"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 05 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="81"
+                    cy="153"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="161"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Jan 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="142"
+                    cy="51.00000000000001"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="162"
+                    cy="85"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="143"
+                    cy="136"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 10 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="88"
+                    cy="0"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="145"
+                    cy="0"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="164"
+                    cy="51.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="146"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="146"
+                    cy="85"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 05 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="165"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="147"
+                    cy="85"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="166"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="149"
+                    cy="68"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 19 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="100"
+                    cy="118.99999999999999"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="168"
+                    cy="153"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="168"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="168"
+                    cy="153"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="169"
+                    cy="102"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 24 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="107"
+                    cy="51.00000000000001"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="169"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="170"
+                    cy="68"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="155"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="155"
+                    cy="33.99999999999999"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="172"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 30 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="157"
+                    cy="0"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="172"
+                    cy="68"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="173"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="173"
+                    cy="153"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="159"
+                    cy="68"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="161"
+                    cy="102"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="161"
+                    cy="33.99999999999999"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 03 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="162"
+                    cy="51.00000000000001"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="126"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="127"
+                    cy="16.999999999999996"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="176"
+                    cy="118.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="130"
+                    cy="153"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Jan 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="131"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Jan 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="132"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="166"
+                    cy="102"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="178"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="137"
+                    cy="85"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="180"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="169"
+                    cy="85"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="180"
+                    cy="33.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="170"
+                    cy="68"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="172"
+                    cy="68"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="172"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="173"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 11 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="173"
+                    cy="33.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="174"
+                    cy="16.999999999999996"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="174"
+                    cy="51.00000000000001"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="176"
+                    cy="16.999999999999996"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="176"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="177"
+                    cy="85"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="185"
+                    cy="16.999999999999996"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="178"
+                    cy="102"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="178"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="159"
+                    cy="68"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 16 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="180"
+                    cy="51.00000000000001"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="181"
+                    cy="153"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="188"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="188"
+                    cy="68"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="189"
+                    cy="68"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="184"
+                    cy="16.999999999999996"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="184"
+                    cy="136"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 09 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="170"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="185"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="186"
+                    cy="68"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="192"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 13 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="176"
+                    cy="68"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 22 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="188"
+                    cy="68"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="178"
+                    cy="33.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="189"
+                    cy="118.99999999999999"
+                    r="5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="181"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="191"
+                    cy="16.999999999999996"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 19 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="184"
+                    cy="118.99999999999999"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="192"
+                    cy="51.00000000000001"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="193"
+                    cy="136"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="193"
+                    cy="136"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="195"
+                    cy="16.999999999999996"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="195"
+                    cy="153"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="196"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="193"
+                    cy="102"
+                    r="2.5"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="197"
+                    cy="102"
+                    r="0"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="199"
+                    cy="33.99999999999999"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="199"
+                    cy="51.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="200"
+                    cy="51.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF90"
+                    cx="200"
+                    cy="153"
+                    r="1"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Blocks/Scatter Plot/Light/X-Small Categorical smoke-test 1`] = `
+<div class="flex flex-col pt-4 pb-4 bg-white rounded-3xl shadow-[11px_21px_3px_rgba(0,0,0,0.06),14px_27px_7px_rgba(0,0,0,0.10),19px_38px_14px_rgba(0,0,0,0.13),27px_54px_27px_rgba(0,0,0,0.16),39px_78px_50px_rgba(0,0,0,0.20),55px_110px_86px_rgba(0,0,0,0.26)] w-[200px] h-[386px] overflow-hidden">
+  <h3 class="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
+    Incident Report
+  </h3>
+  <div class="_container_1u3dt_1"
+       style="height: 100%; width: 100%;"
+  >
+    <svg width="200"
+         height="226"
+         class="_svg_1u3dt_30 _scatterPlot_gc5eo_1"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <g style="pointer-events: none;">
+          <line y1="175"
+                y2="175"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="146"
+                y2="146"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="117"
+                y2="117"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="88"
+                y2="88"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="59"
+                y2="59"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="30"
+                y2="30"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="1"
+                y2="1"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <rect class="_gridStripe_xcrvl_1"
+                y="175"
+                x="0"
+                height="29"
+                width="200"
+                fill="#E2E2EA"
+          >
+          </rect>
+          <rect class="_gridStripe_xcrvl_1"
+                y="146"
+                x="0"
+                height="29"
+                width="200"
+                fill="none"
+          >
+          </rect>
+          <rect class="_gridStripe_xcrvl_1"
+                y="117"
+                x="0"
+                height="29"
+                width="200"
+                fill="#E2E2EA"
+          >
+          </rect>
+          <rect class="_gridStripe_xcrvl_1"
+                y="88"
+                x="0"
+                height="29"
+                width="200"
+                fill="none"
+          >
+          </rect>
+          <rect class="_gridStripe_xcrvl_1"
+                y="59"
+                x="0"
+                height="29"
+                width="200"
+                fill="#E2E2EA"
+          >
+          </rect>
+          <rect class="_gridStripe_xcrvl_1"
+                y="30"
+                x="0"
+                height="29"
+                width="200"
+                fill="none"
+          >
+          </rect>
+          <rect class="_gridStripe_xcrvl_1"
+                y="1"
+                x="0"
+                height="29"
+                width="200"
+                fill="#E2E2EA"
+          >
+          </rect>
+        </g>
+        <g transform="translate(0, 205)"
+           visibility="visible"
+        >
+          <line x1="0"
+                x2="200"
+                y1="0"
+                y2="0.00001"
+                stroke-width="1"
+                stroke="#8F979F"
+          >
+          </line>
+          <g transform="translate(15, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Mon 24
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Mon 24
+              </text>
+            </g>
+          </g>
+          <g transform="translate(65, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Wed 26
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Wed 26
+              </text>
+            </g>
+          </g>
+          <g transform="translate(115, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Fri 28
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Fri 28
+              </text>
+            </g>
+          </g>
+          <g transform="translate(165, 0)">
+            <line stroke-width="1"
+                  stroke="#8F979F"
+                  x1="0"
+                  x2="0"
+                  y1="0"
+                  y2="5"
+            >
+            </line>
+            <g transform="translate(0, 10)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                March
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                March
+              </text>
+            </g>
+          </g>
+        </g>
+        <g transform="translate(0, 0)"
+           visibility="visible"
+        >
+        </g>
+        <defs>
+          <clipPath id="area-series-ref-14-path">
+            <rect width="225"
+                  height="230"
+                  x="-12.5"
+                  y="-12.5"
+            >
+            </rect>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#area-series-ref-14-path)">
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="25"
+                    cy="189.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): C2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="25"
+                    cy="15.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Exploitation"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="100"
+                    cy="131.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Feb 25 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="50"
+                    cy="189.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Defense Evasion"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="75"
+                    cy="73.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): C2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="75"
+                    cy="15.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Feb 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="0"
+                    cy="189.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Feb 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): C2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="100"
+                    cy="15.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Defense Evasion"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="125"
+                    cy="73.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Defense Evasion"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="125"
+                    cy="73.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="175"
+                    cy="189.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Defense Evasion"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="175"
+                    cy="73.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Defense Evasion"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="175"
+                    cy="73.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Mar 01 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="175"
+                    cy="189.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Mar 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): C2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="200"
+                    cy="15.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Blocks/Scatter Plot/Light/X-Small Minimal smoke-test 1`] = `
+<div class="flex flex-col pt-4 pb-4 bg-white rounded-3xl shadow-[11px_21px_3px_rgba(0,0,0,0.06),14px_27px_7px_rgba(0,0,0,0.10),19px_38px_14px_rgba(0,0,0,0.13),27px_54px_27px_rgba(0,0,0,0.16),39px_78px_50px_rgba(0,0,0,0.20),55px_110px_86px_rgba(0,0,0,0.26)] w-[200px] h-[386px] overflow-hidden">
+  <h3 class="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
+    Incident Report
+  </h3>
+  <div class="_container_1u3dt_1"
+       style="height: 100%; width: 100%;"
+  >
+    <svg width="200"
+         height="226"
+         class="_svg_1u3dt_30 _scatterPlot_gc5eo_1"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <g style="pointer-events: none;">
+          <line y1="213"
+                y2="213"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="189.33333333333331"
+                y2="189.33333333333331"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="165.66666666666666"
+                y2="165.66666666666666"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="142.00000000000003"
+                y2="142.00000000000003"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="118.33333333333334"
+                y2="118.33333333333334"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="94.66666666666666"
+                y2="94.66666666666666"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="71.00000000000001"
+                y2="71.00000000000001"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="47.33333333333333"
+                y2="47.33333333333333"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="23.66666666666668"
+                y2="23.66666666666668"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="0"
+                y2="0"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="10"
+                x2="10"
+                y1="0"
+                y2="213"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="60"
+                x2="60"
+                y1="0"
+                y2="213"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="110"
+                x2="110"
+                y1="0"
+                y2="213"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="160"
+                x2="160"
+                y1="0"
+                y2="213"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+        </g>
+        <g transform="translate(0, 213)"
+           visibility="visible"
+        >
+          <g transform="translate(10, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Tue 18
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Tue 18
+              </text>
+            </g>
+          </g>
+          <g transform="translate(60, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Fri 21
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Fri 21
+              </text>
+            </g>
+          </g>
+          <g transform="translate(110, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Mon 24
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Mon 24
+              </text>
+            </g>
+          </g>
+          <g transform="translate(160, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Thu 27
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Thu 27
+              </text>
+            </g>
+          </g>
+        </g>
+        <g transform="translate(0, 0)"
+           visibility="visible"
+        >
+        </g>
+        <defs>
+          <clipPath id="area-series-ref-1-path">
+            <rect width="225"
+                  height="238"
+                  x="-12.5"
+                  y="-12.5"
+            >
+            </rect>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#area-series-ref-1-path)">
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="0"
+                    cy="0"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="67"
+                    cy="177.5"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="150"
+                    cy="47.33333333333333"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="200"
+                    cy="0"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Blocks/Scatter Plot/Light/X-Small Simple smoke-test 1`] = `
+<div class="flex flex-col pt-4 pb-4 bg-white rounded-3xl shadow-[11px_21px_3px_rgba(0,0,0,0.06),14px_27px_7px_rgba(0,0,0,0.10),19px_38px_14px_rgba(0,0,0,0.13),27px_54px_27px_rgba(0,0,0,0.16),39px_78px_50px_rgba(0,0,0,0.20),55px_110px_86px_rgba(0,0,0,0.26)] w-[200px] h-[386px] overflow-hidden">
+  <h3 class="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
+    Incident Report
+  </h3>
+  <div class="_container_1u3dt_1"
+       style="height: 100%; width: 100%;"
+  >
+    <svg width="200"
+         height="226"
+         class="_svg_1u3dt_30 _scatterPlot_gc5eo_1"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <g style="pointer-events: none;">
+          <line y1="210"
+                y2="210"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="168"
+                y2="168"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="126"
+                y2="126"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="84"
+                y2="84"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="41.99999999999999"
+                y2="41.99999999999999"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="0"
+                y2="0"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="12"
+                x2="12"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="61"
+                x2="61"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="110"
+                x2="110"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="159"
+                x2="159"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+        </g>
+        <g transform="translate(0, 210)"
+           visibility="visible"
+        >
+          <line x1="0"
+                x2="200"
+                y1="0"
+                y2="0.00001"
+                stroke-width="1"
+                stroke="#8F979F"
+          >
+          </line>
+          <g transform="translate(12, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Oct 13
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Oct 13
+              </text>
+            </g>
+          </g>
+          <g transform="translate(61, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Nov 10
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Nov 10
+              </text>
+            </g>
+          </g>
+          <g transform="translate(110, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Dec 08
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Dec 08
+              </text>
+            </g>
+          </g>
+          <g transform="translate(159, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Jan 05
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Jan 05
+              </text>
+            </g>
+          </g>
+        </g>
+        <g transform="translate(0, 0)"
+           visibility="visible"
+        >
+        </g>
+        <defs>
+          <clipPath id="area-series-ref-4-path">
+            <rect width="225"
+                  height="235"
+                  x="-12.5"
+                  y="-12.5"
+            >
+            </rect>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#area-series-ref-4-path)">
+          <g class
+             tabindex="0"
+             aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="128"
+                    cy="168"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Oct 06 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="0"
+                    cy="0"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 19 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="130"
+                    cy="84"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Dec 20 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="132"
+                    cy="41.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Dec 20 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="132"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Dec 21 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="133"
+                    cy="41.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 14 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="175"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 15 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="177"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 22 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="135"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Dec 23 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="137"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Oct 15 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="16"
+                    cy="84"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 24 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="139"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 24 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="139"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Dec 25 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="140"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Dec 25 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="140"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 26 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="142"
+                    cy="41.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Dec 26 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="142"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Dec 27 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="144"
+                    cy="168"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Oct 23 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="30"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Oct 24 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="32"
+                    cy="168"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Oct 25 2019 10:00:00 GMT+0300 (Eastern European Summer Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="33"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 29 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="147"
+                    cy="105"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Dec 29 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="147"
+                    cy="41.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 20 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="186"
+                    cy="41.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Oct 29 2019 09:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="40"
+                    cy="20.999999999999996"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Dec 31 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="151"
+                    cy="168"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="188"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Nov 01 2019 09:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="46"
+                    cy="105"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Nov 02 2019 09:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="47"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 02 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="154"
+                    cy="20.999999999999996"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Nov 04 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="51"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Jan 23 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="191"
+                    cy="105"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Nov 06 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 8"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="54"
+                    cy="41.99999999999999"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 07 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="56"
+                    cy="168"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Jan 04 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 10"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="158"
+                    cy="0"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Nov 09 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="60"
+                    cy="84"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="193"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 06 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="161"
+                    cy="147"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Nov 12 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="65"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 07 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="163"
+                    cy="105"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 14 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="68"
+                    cy="189"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Jan 08 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="165"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Nov 16 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="72"
+                    cy="84"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Jan 27 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="198"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Mon Nov 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 1"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="75"
+                    cy="189"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Jan 10 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 4"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="168"
+                    cy="126"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Nov 20 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 7"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="79"
+                    cy="63.00000000000001"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Thu Nov 21 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 5"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="81"
+                    cy="105"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Tue Jan 28 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 9"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="200"
+                    cy="20.999999999999996"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sun Jan 12 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 6"
+             role="graphics-document"
+          >
+            <circle class
+                    fill="#105EFF"
+                    cx="172"
+                    cy="84"
+                    r="3"
+                    opacity="1"
+                    style="cursor: pointer;"
+            >
+            </circle>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Blocks/Scatter Plot/Light/X-Small Symbols smoke-test 1`] = `
+<div class="flex flex-col pt-4 pb-4 bg-white rounded-3xl shadow-[11px_21px_3px_rgba(0,0,0,0.06),14px_27px_7px_rgba(0,0,0,0.10),19px_38px_14px_rgba(0,0,0,0.13),27px_54px_27px_rgba(0,0,0,0.16),39px_78px_50px_rgba(0,0,0,0.20),55px_110px_86px_rgba(0,0,0,0.26)] w-[200px] h-[386px] overflow-hidden">
+  <h3 class="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
+    Incident Report
+  </h3>
+  <div class="_container_1u3dt_1"
+       style="height: 100%; width: 100%;"
+  >
+    <svg width="200"
+         height="226"
+         class="_svg_1u3dt_30 _scatterPlot_gc5eo_1"
+         tabindex="0"
+    >
+      <g transform="translate(0, 0)">
+        <g style="pointer-events: none;">
+          <line y1="210"
+                y2="210"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="186.66666666666666"
+                y2="186.66666666666666"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="163.33333333333334"
+                y2="163.33333333333334"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="140.00000000000003"
+                y2="140.00000000000003"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="116.66666666666667"
+                y2="116.66666666666667"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="93.33333333333333"
+                y2="93.33333333333333"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="70.00000000000001"
+                y2="70.00000000000001"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="46.666666666666664"
+                y2="46.666666666666664"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="23.333333333333343"
+                y2="23.333333333333343"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line y1="0"
+                y2="0"
+                x1="0"
+                x2="200"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="10"
+                x2="10"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="60"
+                x2="60"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="110"
+                x2="110"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+          <line x1="160"
+                x2="160"
+                y1="0"
+                y2="210"
+                class="_gridLine_5yx3q_1"
+                stroke-dasharray="2 5"
+                stroke-width="1"
+                stroke="rgba(153, 153, 153, 0.5)"
+                fill="none"
+          >
+          </line>
+        </g>
+        <g transform="translate(0, 210)"
+           visibility="visible"
+        >
+          <line x1="0"
+                x2="200"
+                y1="0"
+                y2="0.00001"
+                stroke-width="1"
+                stroke="#8F979F"
+          >
+          </line>
+          <g transform="translate(10, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Tue 18
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Tue 18
+              </text>
+            </g>
+          </g>
+          <g transform="translate(60, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Fri 21
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Fri 21
+              </text>
+            </g>
+          </g>
+          <g transform="translate(110, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Mon 24
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Mon 24
+              </text>
+            </g>
+          </g>
+          <g transform="translate(160, 0)">
+            <g transform="translate(0, 5)"
+               font-size="11"
+               font-family="sans-serif"
+            >
+              <title>
+                Thu 27
+              </title>
+              <text transform
+                    text-anchor="middle"
+                    alignment-baseline="hanging"
+                    fill="#535362"
+              >
+                Thu 27
+              </text>
+            </g>
+          </g>
+        </g>
+        <g transform="translate(0, 0)"
+           visibility="visible"
+        >
+        </g>
+        <defs>
+          <clipPath id="area-series-ref-9-path">
+            <rect width="225"
+                  height="235"
+                  x="-12.5"
+                  y="-12.5"
+            >
+            </rect>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#area-series-ref-9-path)">
+          <g class
+             tabindex="0"
+             aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="0.19999980926513672px -1.9999995231628418px"
+               style="transform: none; transform-origin: 0.2px -2px;"
+            >
+              <g transform="translate(-0.05, -5)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.05) translate(-220, -50)"
+                         style="fill: rgb(16, 94, 255);"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="0.19999980926513672px -1.9999995231628418px"
+               style="transform: translateX(67px) translateY(175px); transform-origin: 0.2px -2px;"
+            >
+              <g transform="translate(-0.05, -5)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.05) translate(-220, -50)"
+                         style="fill: rgb(16, 94, 255);"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="0.19999980926513672px -1.9999995231628418px"
+               style="transform: translateX(150px) translateY(46.6667px); transform-origin: 0.2px -2px;"
+            >
+              <g transform="translate(-0.05, -5)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.05) translate(-220, -50)"
+                         style="fill: rgb(16, 94, 255);"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
+             role="graphics-document"
+          >
+            <g class
+               opacity="1"
+               transform-origin="0.19999980926513672px -1.9999995231628418px"
+               style="transform: translateX(200px) translateY(0px); transform-origin: 0.2px -2px;"
+            >
+              <g transform="translate(-0.05, -5)">
+                <polygon points="225,10 100,210 350,210"
+                         transform="scale(0.05) translate(-220, -50)"
+                         style="fill: rgb(16, 94, 255);"
+                >
+                </polygon>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;

@@ -20,6 +20,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Dark/Small',
   component: ScatterPlot
 };

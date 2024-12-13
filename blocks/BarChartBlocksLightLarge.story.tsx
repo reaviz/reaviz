@@ -33,6 +33,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Light/Large',
   component: BarChart
 };
