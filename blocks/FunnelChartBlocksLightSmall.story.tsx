@@ -12,7 +12,7 @@ import {
 } from '../src/index';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Funnel Chart/Light/Small',
   component: FunnelChart
 };
@@ -24,6 +24,7 @@ export const LargeDataset = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="large-dataset"
         height={269}
         data={largeFunnelData}
         series={
@@ -201,6 +202,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="simple"
         height={200}
         data={simpleFunnelData}
         series={
@@ -378,6 +380,7 @@ export const Layered = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="layered"
         height={200}
         data={simpleFunnelData}
         series={
@@ -559,6 +562,7 @@ export const Interpolation = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="interpolation"
         height={200}
         data={simpleFunnelData}
         series={

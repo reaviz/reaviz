@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   FunnelArc,
   FunnelAxis,
@@ -12,7 +13,7 @@ import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 import { schemes } from '../src/common/color/schemes';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Funnel Chart/Dark/Small',
   component: FunnelChart
 };
@@ -24,6 +25,7 @@ export const LargeDataset = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="large-dataset"
         height={269}
         data={largeFunnelData}
         series={
@@ -82,13 +84,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -130,13 +132,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -178,13 +180,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -201,6 +203,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="simple"
         height={200}
         data={simpleFunnelData}
         series={
@@ -259,13 +262,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -307,13 +310,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -355,13 +358,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -378,6 +381,7 @@ export const Layered = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="layered"
         height={200}
         data={simpleFunnelData}
         series={
@@ -440,13 +444,13 @@ export const Layered = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -488,13 +492,13 @@ export const Layered = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -536,13 +540,13 @@ export const Layered = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -559,6 +563,7 @@ export const Interpolation = () => {
         Incident Report
       </h3>
       <FunnelChart
+        id="interpolation"
         height={200}
         data={simpleFunnelData}
         series={
@@ -618,13 +623,13 @@ export const Interpolation = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -666,13 +671,13 @@ export const Interpolation = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -714,13 +719,13 @@ export const Interpolation = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
