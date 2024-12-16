@@ -33,7 +33,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Dark/Medium',
   component: BarChart
 };
@@ -70,6 +70,7 @@ export const SimpleMulti = () => {
         </div>
       </div>
       <BarChart
+        id="simple-multi"
         data={multiCategorySmallBlock}
         yAxis={
           <LinearYAxis
@@ -356,6 +357,7 @@ export const SimpleMultiGradient = () => {
         </div>
       </div>
       <BarChart
+        id="simple-multi-gradient"
         data={multiCategorySmallBlock}
         yAxis={
           <LinearYAxis
@@ -631,6 +633,7 @@ export const Simple = () => {
         </select>
       </div>
       <BarChart
+        id="simple"
         data={mediumCategoryData}
         yAxis={
           <LinearYAxis
@@ -899,6 +902,7 @@ export const SimpleGradient = () => {
         </select>
       </div>
       <BarChart
+        id="simple-gradient"
         data={mediumCategoryData}
         yAxis={
           <LinearYAxis
@@ -1179,6 +1183,7 @@ export const Labels = () => {
         </select>
       </div>
       <BarChart
+        id="labels"
         data={labelsData}
         yAxis={
           <LinearYAxis
@@ -1453,6 +1458,7 @@ export const LabelsGradient = () => {
         </select>
       </div>
       <BarChart
+        id="labels-gradient"
         data={labelsData}
         yAxis={
           <LinearYAxis
@@ -1734,6 +1740,7 @@ export const Waterfall = () => {
         </select>
       </div>
       <BarChart
+        id="waterfall"
         data={categoryData}
         yAxis={
           <LinearYAxis
@@ -1995,6 +2002,7 @@ export const WaterfallGradient = () => {
         </select>
       </div>
       <BarChart
+        id="waterfall-gradient"
         data={categoryData}
         yAxis={
           <LinearYAxis
@@ -2268,6 +2276,7 @@ export const LargeDataset = () => {
         </select>
       </div>
       <BarChart
+        id="large-dataset"
         data={largeCategoryData2}
         yAxis={
           <LinearYAxis
@@ -2528,6 +2537,7 @@ export const LargeDatasetGradient = () => {
         </select>
       </div>
       <BarChart
+        id="large-dataset-gradient"
         data={largeCategoryData2}
         yAxis={
           <LinearYAxis
@@ -2800,6 +2810,7 @@ export const Stacked = () => {
         </select>
       </div>
       <StackedBarChart
+        id="stacked"
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -3060,6 +3071,7 @@ export const StackedGradient = () => {
         </select>
       </div>
       <StackedBarChart
+        id="stacked-gradient"
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -3333,6 +3345,7 @@ export const StackedDiverging = () => {
       </div>
       <div className="flex-grow px-4">
         <StackedBarChart
+          id="stacked-diverging"
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
           xAxis={
@@ -3582,6 +3595,7 @@ export const StackedDivergingGradient = () => {
       </div>
       <div className="flex-grow px-4">
         <StackedBarChart
+          id="stacked-diverging-gradient"
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
           xAxis={
@@ -3856,6 +3870,7 @@ export const HorizontalStackedDivergingGradient = () => {
       </div>
       <div className="flex-grow px-4">
         <StackedBarChart
+          id="horizontal-stacked-diverging-gradient"
           data={binnedDateData}
           yAxis={
             <LinearYAxis
@@ -4141,6 +4156,7 @@ export const HorizontalSimple = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <BarChart
+          id="horizontal-simple"
           data={categoryData}
           yAxis={
             <LinearYAxis
@@ -4404,6 +4420,7 @@ export const HorizontalSimpleGradient = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <BarChart
+          id="horizontal-simple-gradient"
           data={categoryData}
           yAxis={
             <LinearYAxis
@@ -4679,6 +4696,7 @@ export const HorizontalWaterfall = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <BarChart
+          id="horizontal-waterfall"
           data={categoryData}
           yAxis={
             <LinearYAxis
@@ -4943,6 +4961,7 @@ export const HorizontalWaterfallGradient = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <BarChart
+          id="horizontal-waterfall-gradient"
           data={categoryData}
           yAxis={
             <LinearYAxis
@@ -5219,6 +5238,7 @@ export const HorizontalLabels = () => {
       </div>
       <div className={'flex-grow pl-4 pr-10 overflow-x-visible'}>
         <BarChart
+          id="horizontal-labels"
           data={categoryData}
           yAxis={
             <LinearYAxis
@@ -5488,6 +5508,7 @@ export const HorizontalLabelsGradient = () => {
       </div>
       <div className={'flex-grow pl-4 pr-10 overflow-x-visible'}>
         <BarChart
+          id="horizontal-labels-gradient"
           data={categoryData}
           yAxis={
             <LinearYAxis
@@ -5764,6 +5785,7 @@ export const HorizontalSimpleMulti = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <BarChart
+          id="horizontal-simple-multi"
           data={multiCategoryXSmallBlock}
           yAxis={
             <LinearYAxis
@@ -6034,6 +6056,7 @@ export const HorizontalSimpleMultiGradient = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <BarChart
+          id="horizontal-simple-multi-gradient"
           data={multiCategoryXSmallBlock}
           yAxis={
             <LinearYAxis
@@ -6311,6 +6334,7 @@ export const HorizontalStacked = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <StackedBarChart
+          id="horizontal-stacked"
           data={multiCategory}
           yAxis={
             <LinearYAxis
@@ -6574,6 +6598,7 @@ export const HorizontalStackedGradient = () => {
       </div>
       <div className={'flex-grow px-4'}>
         <StackedBarChart
+          id="horizontal-stacked-gradient"
           data={multiCategory}
           yAxis={
             <LinearYAxis
