@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   GridStripe,
   Gridline,
@@ -20,7 +21,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Light/X-Small',
   component: ScatterPlot
 };
@@ -32,6 +33,7 @@ export const Minimal = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="minimal"
         data={singleDateData}
         yAxis={
           <LinearYAxis
@@ -53,7 +55,7 @@ export const Minimal = () => {
           />
         }
         series={
-          <ScatterSeries point={<ScatterPoint color={'#105EFF'} size={3} />} />
+          <ScatterSeries point={<ScatterPoint color="#105EFF" size={3} />} />
         }
       />
     </div>
@@ -67,6 +69,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="simple"
         data={medSignalChartData}
         yAxis={
           <LinearYAxis
@@ -87,7 +90,7 @@ export const Simple = () => {
           />
         }
         series={
-          <ScatterSeries point={<ScatterPoint color={'#105EFF'} size={3} />} />
+          <ScatterSeries point={<ScatterPoint color="#105EFF" size={3} />} />
         }
       />
     </div>
@@ -101,6 +104,7 @@ export const Symbols = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="symbols"
         data={singleDateData}
         yAxis={
           <LinearYAxis
@@ -151,6 +155,7 @@ export const Categorical = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="categorical"
         data={signalStageData}
         yAxis={
           <LinearYAxis
@@ -182,12 +187,12 @@ export const Categorical = () => {
           />
         }
         series={
-          <ScatterSeries point={<ScatterPoint color={'#105EFF'} size={3} />} />
+          <ScatterSeries point={<ScatterPoint color="#105EFF" size={3} />} />
         }
         gridlines={
           <GridlineSeries
             line={<Gridline direction="y" />}
-            stripe={<GridStripe direction="y" fill={'#E2E2EA'} />}
+            stripe={<GridStripe direction="y" fill="#E2E2EA" />}
           />
         }
       />
@@ -202,6 +207,7 @@ export const Bubble = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="bubble"
         data={largeSignalChartData}
         yAxis={
           <LinearYAxis
@@ -224,7 +230,7 @@ export const Bubble = () => {
           <ScatterSeries
             point={
               <ScatterPoint
-                color={'#105EFF90'}
+                color="#105EFF90"
                 size={(v) => v.metadata.severity * 0.5}
               />
             }

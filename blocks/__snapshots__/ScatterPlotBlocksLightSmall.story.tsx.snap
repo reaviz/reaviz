@@ -279,7 +279,7 @@ exports[`Blocks/Scatter Plot/Light/Small Bubble smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-19-path">
+          <clipPath id="area-series-bubble-path">
             <rect width="400"
                   height="226"
                   x="-12.5"
@@ -288,7 +288,7 @@ exports[`Blocks/Scatter Plot/Light/Small Bubble smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-19-path)">
+        <g clip-path="url(#area-series-bubble-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -2955,7 +2955,7 @@ exports[`Blocks/Scatter Plot/Light/Small Categorical smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-14-path">
+          <clipPath id="area-series-categorical-path">
             <rect width="400"
                   height="226"
                   x="-12.5"
@@ -2964,7 +2964,7 @@ exports[`Blocks/Scatter Plot/Light/Small Categorical smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-14-path)">
+        <g clip-path="url(#area-series-categorical-path)">
           <g class
              tabindex="0"
              aria-label="Mon Feb 24 2020 10:00:00 GMT+0200 (Eastern European Standard Time): Threat Intelligence"
@@ -3643,7 +3643,7 @@ exports[`Blocks/Scatter Plot/Light/Small Minimal smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-1-path">
+          <clipPath id="area-series-minimal-path">
             <rect width="400"
                   height="234"
                   x="-12.5"
@@ -3652,7 +3652,7 @@ exports[`Blocks/Scatter Plot/Light/Small Minimal smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-1-path)">
+        <g clip-path="url(#area-series-minimal-path)">
           <g class
              tabindex="0"
              aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
@@ -4130,7 +4130,7 @@ exports[`Blocks/Scatter Plot/Light/Small Simple smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-4-path">
+          <clipPath id="area-series-simple-path">
             <rect width="400"
                   height="231"
                   x="-12.5"
@@ -4139,7 +4139,7 @@ exports[`Blocks/Scatter Plot/Light/Small Simple smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-4-path)">
+        <g clip-path="url(#area-series-simple-path)">
           <g class
              tabindex="0"
              aria-label="Wed Dec 18 2019 10:00:00 GMT+0200 (Eastern European Standard Time): 2"
@@ -5351,7 +5351,7 @@ exports[`Blocks/Scatter Plot/Light/Small Symbols smoke-test 1`] = `
         >
         </g>
         <defs>
-          <clipPath id="area-series-ref-9-path">
+          <clipPath id="area-series-symbols-path">
             <rect width="400"
                   height="231"
                   x="-12.5"
@@ -5360,7 +5360,7 @@ exports[`Blocks/Scatter Plot/Light/Small Symbols smoke-test 1`] = `
             </rect>
           </clipPath>
         </defs>
-        <g clip-path="url(#area-series-ref-9-path)">
+        <g clip-path="url(#area-series-symbols-path)">
           <g class
              tabindex="0"
              aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
