@@ -33,7 +33,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Light/Medium',
   component: BarChart
 };

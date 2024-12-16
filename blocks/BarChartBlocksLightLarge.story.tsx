@@ -33,7 +33,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Light/Large',
   component: BarChart
 };
@@ -2809,7 +2809,7 @@ export const Stacked = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <BarChart
+      <StackedBarChart
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -3070,7 +3070,7 @@ export const StackedGradient = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <BarChart
+      <StackedBarChart
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -3344,7 +3344,7 @@ export const StackedDiverging = () => {
         </select>
       </div>
       <div className="flex-grow px-4">
-        <BarChart
+        <StackedBarChart
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
           xAxis={
@@ -3593,7 +3593,7 @@ export const StackedDivergingGradient = () => {
         </select>
       </div>
       <div className="flex-grow px-4">
-        <BarChart
+        <StackedBarChart
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
           xAxis={
@@ -6330,7 +6330,7 @@ export const HorizontalStacked = () => {
         </select>
       </div>
       <div className={'flex-grow px-4'}>
-        <BarChart
+        <StackedBarChart
           data={multiCategory}
           yAxis={
             <LinearYAxis
@@ -6594,7 +6594,7 @@ export const HorizontalStackedGradient = () => {
         </select>
       </div>
       <div className={'flex-grow px-4'}>
-        <BarChart
+        <StackedBarChart
           data={multiCategory}
           yAxis={
             <LinearYAxis
