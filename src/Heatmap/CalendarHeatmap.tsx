@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC, useCallback, useMemo } from 'react';
 import { ChartShallowDataShape } from '@/common/data';
 import { Heatmap, HeatmapProps } from './Heatmap';
 import {
@@ -43,10 +43,6 @@ export interface CalendarHeatmapProps extends Omit<HeatmapProps, 'data'> {
   view: CalendarView;
 }
 
-// Format the xAxis label for the start + n week
-const xAxisLabelFormat = (start: Date) => (weeks: number) =>
-  addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' });
-
 export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   view = 'year',
   data,
@@ -81,8 +77,20 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   // For month, only pass 1 tick value
   const xTickValues = view === 'year' ? undefined : [1];
 
+  const getDayOfWeek = useCallback((day: number) => weekDays[day], []);
+
   // Get the yAxis label formatting based on view type
-  const yAxisLabelFormat = view === 'year' ? (d) => weekDays[d] : () => null;
+  const yAxisLabelFormat = useMemo(
+    () => (view === 'year' ? getDayOfWeek : () => null),
+    [getDayOfWeek, view]
+  );
+
+  // Format the xAxis label for the start + n week
+  const xAxisLabelFormat = useCallback(
+    (weeks: number) =>
+      addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' }),
+    [start]
+  );
 
   return (
     <Heatmap
@@ -99,11 +107,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
               tickSize={20}
               line={null}
               label={
-                <LinearYAxisTickLabel
-                  {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
-                  padding={5}
-                  format={yAxisLabelFormat}
-                />
+                <LinearYAxisTickLabel padding={5} format={yAxisLabelFormat} />
               }
             />
           }
@@ -120,10 +124,9 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
               tickValues={xTickValues}
               label={
                 <LinearXAxisTickLabel
-                  {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
                   padding={5}
                   align="end"
-                  format={xAxisLabelFormat(start)}
+                  format={xAxisLabelFormat}
                 />
               }
             />

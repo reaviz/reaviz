@@ -59,8 +59,12 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     onDimensionsChange
   } = mergeDefaultProps(LINEAR_AXIS_DEFAULT_PROPS, props);
   const tickSeriesProps = useMemo(
-    () => ({ ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, ...tickSeries.props }),
-    [tickSeries.props]
+    () =>
+      mergeDefaultProps(
+        LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
+        tickSeries?.props
+      ),
+    [tickSeries?.props]
   );
 
   const containerRef = createRef<SVGGElement>();

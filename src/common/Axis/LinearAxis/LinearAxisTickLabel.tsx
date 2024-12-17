@@ -4,6 +4,7 @@ import {
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -48,10 +49,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     padding,
     formatTooltip,
     align
-  } = {
-    ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
-    ...props
-  };
+  } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
 
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
@@ -180,11 +178,12 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   );
 };
 
-export const LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS = {
-  fill: '#8F979F',
-  fontSize: 11,
-  fontFamily: 'sans-serif',
-  rotation: true,
-  padding: 5,
-  align: 'center'
-};
+export const LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS: Partial<LinearAxisTickLabelProps> =
+  {
+    fill: '#8F979F',
+    fontSize: 11,
+    fontFamily: 'sans-serif',
+    rotation: true,
+    padding: 5,
+    align: 'center'
+  };

@@ -66,7 +66,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
       ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
       ...(label?.props ?? {})
     }),
-    [label]
+    [label?.props]
   );
 
   /**
