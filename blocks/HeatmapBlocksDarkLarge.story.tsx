@@ -22,7 +22,7 @@ import {
 import { schemes } from '../src/common/color/schemes';
 
 export default {
-  tags: ['skip-snapshot'],
+  tags: ['snapshot'],
   title: 'Blocks/Heatmap/Dark/Large',
   component: AreaChart
 };
