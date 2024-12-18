@@ -94,7 +94,21 @@ export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => {
     [props]
   );
 
-  return <LinearAxis {...xAxisProps} />;
+  return (
+    <LinearAxis
+      {...xAxisProps}
+      tickSeries={
+        xAxisProps.tickSeries && (
+          <LinearXAxisTickSeries
+            {...mergeDefaultProps(
+              LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
+              xAxisProps?.tickSeries?.props
+            )}
+          />
+        )
+      }
+    />
+  );
 };
 export const LINEAR_X_AXIS_DEFAULT_PROPS = {
   ...LINEAR_AXIS_DEFAULT_PROPS,

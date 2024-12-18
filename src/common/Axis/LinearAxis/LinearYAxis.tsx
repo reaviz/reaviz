@@ -94,7 +94,21 @@ export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => {
     [props]
   );
 
-  return <LinearAxis {...yAxisProps} />;
+  return (
+    <LinearAxis
+      {...yAxisProps}
+      tickSeries={
+        yAxisProps.tickSeries && (
+          <LinearYAxisTickSeries
+            {...mergeDefaultProps(
+              LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+              yAxisProps?.tickSeries?.props
+            )}
+          />
+        )
+      }
+    />
+  );
 };
 export const LINEAR_Y_AXIS_DEFAULT_PROPS = {
   ...LINEAR_AXIS_DEFAULT_PROPS,
