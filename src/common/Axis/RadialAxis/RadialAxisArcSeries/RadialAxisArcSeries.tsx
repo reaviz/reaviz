@@ -113,7 +113,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
 
 export const RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS = {
   count: 12,
-  arc: <RadialAxisArc {...RADIAL_AXIS_ARC_DEFAULT_PROPS} />,
+  arc: <RadialAxisArc />,
   startAngle: 0,
   endAngle: 2 * Math.PI
 };

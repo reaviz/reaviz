@@ -122,7 +122,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
 export const RADIAL_AXIS_DEFAULT_PROPS: Partial<RadialAxisProps> = {
   innerRadius: 10,
   type: 'value',
-  arcs: <RadialAxisArcSeries {...RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS} />,
+  arcs: <RadialAxisArcSeries />,
   ticks: <RadialAxisTickSeries />,
   startAngle: 0,
   endAngle: 2 * Math.PI
