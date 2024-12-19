@@ -102,5 +102,3 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
     </Fragment>
   );
 };
-
-BrushSlice.defaultProps = {};

@@ -38,17 +38,17 @@ export interface TreeMapProps extends ChartProps {
 }
 
 export const TreeMap: FC<Partial<TreeMapProps>> = ({
-  data,
+  data = [],
   id,
   containerClassName,
-  paddingInner,
-  paddingTop,
-  paddingOuter,
+  paddingInner = 5,
+  paddingTop = 30,
+  paddingOuter = 5,
   width,
   height,
   className,
-  margins,
-  series
+  margins = 0,
+  series = <TreeMapSeries />
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -112,13 +112,4 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-TreeMap.defaultProps = {
-  margins: 0,
-  paddingInner: 5,
-  paddingOuter: 5,
-  paddingTop: 30,
-  series: <TreeMapSeries />,
-  data: []
 };

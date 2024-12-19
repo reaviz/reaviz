@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Count,
   FunnelArc,
@@ -13,6 +14,7 @@ import { motion } from 'framer-motion';
 import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Funnel Chart/Light/Large',
   component: FunnelChart
 };
@@ -31,6 +33,7 @@ export const LargeDataset = () => {
         </select>
       </div>
       <FunnelChart
+        id="large-dataset"
         height={366}
         data={largeFunnelData}
         series={
@@ -265,6 +268,7 @@ export const Simple = () => {
         </select>
       </div>
       <FunnelChart
+        id="simple"
         height={330}
         data={simpleFunnelData}
         series={
@@ -498,6 +502,7 @@ export const Layered = () => {
         </select>
       </div>
       <FunnelChart
+        id="layered"
         height={330}
         data={simpleFunnelData}
         series={
@@ -734,6 +739,7 @@ export const Interpolation = () => {
         </select>
       </div>
       <FunnelChart
+        id="interpolation"
         height={330}
         data={simpleFunnelData}
         series={

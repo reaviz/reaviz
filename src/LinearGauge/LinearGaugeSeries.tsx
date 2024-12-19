@@ -37,8 +37,8 @@ export interface LinearGaugeSeriesProps extends Omit<BarSeriesProps, 'bar'> {
 export const LinearGaugeSeries: FC<Partial<LinearGaugeSeriesProps>> = ({
   height,
   width,
-  bar,
-  outerBar,
+  bar = <LinearGaugeBar />,
+  outerBar = <LinearGaugeOuterBar />,
   isMultiSeries,
   ...rest
 }) => (
@@ -58,8 +58,3 @@ export const LinearGaugeSeries: FC<Partial<LinearGaugeSeriesProps>> = ({
     />
   </Fragment>
 );
-
-LinearGaugeSeries.defaultProps = {
-  outerBar: <LinearGaugeOuterBar />,
-  bar: <LinearGaugeBar />
-};

@@ -43,10 +43,10 @@ export interface TreeMapSeriesProps {
 export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   id,
   data,
-  colorScheme,
-  animated,
-  rect,
-  label
+  colorScheme = 'cybertron',
+  animated = true,
+  rect = <TreeMapRect />,
+  label = <TreeMapLabel />
 }) => {
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
@@ -97,11 +97,4 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   };
 
   return <Fragment>{data.map((d, index) => renderItem(d, index))}</Fragment>;
-};
-
-TreeMapSeries.defaultProps = {
-  colorScheme: 'cybertron',
-  animated: true,
-  rect: <TreeMapRect />,
-  label: <TreeMapLabel />
 };

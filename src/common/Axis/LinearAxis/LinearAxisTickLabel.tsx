@@ -1,8 +1,10 @@
 import React, { FC, ReactElement } from 'react';
 import {
+  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -27,24 +29,28 @@ export interface LinearAxisTickLabelProps {
   className?: string;
 }
 
-export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
-  text,
-  fullText,
-  angle,
-  orientation,
-  half,
-  line,
-  textAnchor,
-  position,
-  className,
-  fill,
-  fontSize,
-  fontFamily,
-  rotation,
-  padding,
-  formatTooltip,
-  align
-}) => {
+export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
+  props
+) => {
+  const {
+    text,
+    fullText,
+    angle,
+    orientation,
+    half,
+    line,
+    textAnchor,
+    position,
+    className,
+    fill,
+    fontSize,
+    fontFamily,
+    rotation,
+    padding,
+    formatTooltip,
+    align
+  } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
+
   function getAlign() {
     if ((align === 'inside' || align === 'outside') && half === 'center') {
       return 'center';
@@ -67,8 +73,9 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
       return [0, 0];
     }
 
-    const size = line.props.size ?? 3;
-    const position = line.props.position ?? 'center';
+    const lineProps = { ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS, ...line.props };
+    const size = lineProps.size ?? 3;
+    const position = lineProps.position ?? 'center';
 
     if (position === 'start') {
       return [size * -1, 0];
@@ -171,11 +178,12 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = ({
   );
 };
 
-LinearAxisTickLabel.defaultProps = {
-  fill: '#8F979F',
-  fontSize: 11,
-  fontFamily: 'sans-serif',
-  rotation: true,
-  padding: 5,
-  align: 'center'
-};
+export const LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS: Partial<LinearAxisTickLabelProps> =
+  {
+    fill: '#8F979F',
+    fontSize: 11,
+    fontFamily: 'sans-serif',
+    rotation: true,
+    padding: 5,
+    align: 'center'
+  };

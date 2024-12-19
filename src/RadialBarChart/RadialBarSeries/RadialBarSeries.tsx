@@ -19,6 +19,7 @@ import isEqual from 'react-fast-compare';
 import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export type RadialBarSeriesType = 'standard' | 'grouped';
+
 export interface RadialBarSeriesProps {
   /**
    * Parsed data shape. Set internally by `RadialBarChart`.

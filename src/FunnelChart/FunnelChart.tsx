@@ -23,11 +23,11 @@ export interface FunnelChartProps extends ChartProps {
 export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
   data,
   width,
-  margins,
+  margins = 0,
   height,
   className,
   containerClassName,
-  series,
+  series = <FunnelSeries />,
   ...rest
 }) => {
   const id = useId(rest.id);
@@ -63,9 +63,4 @@ export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-FunnelChart.defaultProps = {
-  margins: 0,
-  series: <FunnelSeries />
 };

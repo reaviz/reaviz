@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Bar,
   BarChart,
@@ -29,6 +30,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Light/X-Small',
   component: BarChart
 };
@@ -128,8 +130,8 @@ export const SimpleMultiGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -243,8 +245,8 @@ export const SimpleGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -371,8 +373,8 @@ export const LabelsGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -487,8 +489,8 @@ export const WaterfallGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -594,8 +596,8 @@ export const LargeDatasetGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -619,7 +621,7 @@ export const Stacked = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <BarChart
+      <StackedBarChart
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -666,7 +668,7 @@ export const StackedGradient = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <BarChart
+      <StackedBarChart
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -700,8 +702,8 @@ export const StackedGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -725,7 +727,7 @@ export const StackedDiverging = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <BarChart
+      <StackedBarChart
         data={binnedDateData}
         yAxis={
           <LinearYAxis
@@ -763,7 +765,7 @@ export const StackedDivergingGradient = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <BarChart
+      <StackedBarChart
         data={binnedDateData}
         yAxis={
           <LinearYAxis
@@ -785,23 +787,25 @@ export const StackedDivergingGradient = () => {
             type="stackedDiverging"
             bar={[
               <Bar
+                key={1}
                 glow={{ blur: 20, opacity: 0.5 }}
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={1} />,
-                      <GradientStop offset="90%" stopOpacity={0} />
+                      <GradientStop key={1} offset="0%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="90%" stopOpacity={0} />
                     ]}
                   />
                 }
               />,
               <Bar
+                key={2}
                 glow={{ blur: 20, opacity: 0.5 }}
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="10%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="10%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -850,24 +854,26 @@ export const HorizontalStackedDivergingGradient = () => {
             type="stackedDiverging"
             bar={[
               <Bar
+                key={1}
                 glow={{ blur: 30 }}
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0.7} />,
-                      <GradientStop offset="100%" stopOpacity={0} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0.7} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0} />
                     ]}
                   />
                 }
                 rangeLines={<RangeLines position="top" strokeWidth={4} />}
               />,
               <Bar
+                key={2}
                 glow={{ blur: 30 }}
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.7} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.7} />
                     ]}
                   />
                 }
@@ -977,8 +983,8 @@ export const HorizontalSimpleGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -1090,8 +1096,8 @@ export const HorizontalWaterfallGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -1209,8 +1215,8 @@ export const HorizontalLabelsGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -1330,8 +1336,8 @@ export const HorizontalSimpleMultiGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -1356,7 +1362,7 @@ export const HorizontalStacked = () => {
         Incident Report
       </h3>
       <div className={'flex-grow px-2'}>
-        <BarChart
+        <StackedBarChart
           data={multiCategory}
           yAxis={
             <LinearYAxis
@@ -1406,7 +1412,7 @@ export const HorizontalStackedGradient = () => {
         Incident Report
       </h3>
       <div className={'flex-grow px-2'}>
-        <BarChart
+        <StackedBarChart
           data={multiCategoryXSmallBlock}
           yAxis={
             <LinearYAxis
@@ -1441,8 +1447,8 @@ export const HorizontalStackedGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }

@@ -18,7 +18,9 @@ import {
   LinearAxisProps,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
+  LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_DEFAULT_PROPS
 } from '@/common/Axis';
 import { getYScale, getXScale } from '@/common/scales';
 import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
@@ -85,16 +87,24 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   height,
   margins,
   className,
-  series,
-  xAxis,
-  yAxis,
-  data,
-  gridlines,
+  series = <ScatterSeries />,
+  xAxis = <LinearXAxis type="time" />,
+  yAxis = <LinearYAxis type="value" />,
+  data = [],
+  gridlines = <GridlineSeries />,
   containerClassName,
-  brush,
-  zoomPan,
+  brush = null,
+  zoomPan = null,
   secondaryAxis
 }) => {
+  const xAxisProps = useMemo(
+    () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
+    [xAxis.props]
+  );
+  const yAxisProps = useMemo(
+    () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
+    [yAxis.props]
+  );
   const zoomControlled = useMemo(
     () =>
       // eslint-disable-next-line
@@ -113,19 +123,19 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   const getScales = useCallback(
     (chartHeight: number, chartWidth: number) => {
       const yScale = getYScale({
-        roundDomains: yAxis.props.roundDomains,
-        type: yAxis.props.type,
+        roundDomains: yAxisProps.roundDomains,
+        type: yAxisProps.type,
         height: chartHeight,
         data: aggregatedData,
-        domain: yAxis.props.domain
+        domain: yAxisProps.domain
       });
 
       const xScale = getXScale({
         width: chartWidth,
-        type: xAxis.props.type,
-        roundDomains: xAxis.props.roundDomains,
+        type: xAxisProps.type,
+        roundDomains: xAxisProps.roundDomains,
         data: aggregatedData,
-        domain: zoomDomain || xAxis.props.domain
+        domain: zoomDomain || xAxisProps.domain
       });
 
       return {
@@ -133,7 +143,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         xScale
       };
     },
-    [yAxis, xAxis, aggregatedData, zoomDomain]
+    [yAxisProps, xAxisProps, aggregatedData, zoomDomain]
   );
 
   const onZoomPan = useCallback(
@@ -172,8 +182,8 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
               width={chartWidth}
               yScale={yScale}
               xScale={xScale}
-              yAxis={yAxis.props}
-              xAxis={xAxis.props}
+              yAxis={yAxisProps}
+              xAxis={xAxisProps}
             />
           )}
           <CloneElement<LinearAxisProps>
@@ -245,6 +255,8 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       gridlines,
       yAxis,
       xAxis,
+      xAxisProps,
+      yAxisProps,
       secondaryAxis,
       brush,
       zoomPan,
@@ -262,21 +274,11 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       height={height}
       containerClassName={containerClassName}
       margins={margins}
-      xAxisVisible={isAxisVisible(xAxis.props)}
-      yAxisVisible={isAxisVisible(yAxis.props)}
+      xAxisVisible={isAxisVisible(xAxisProps)}
+      yAxisVisible={isAxisVisible(yAxisProps)}
       className={classNames(css.scatterPlot, className)}
     >
       {renderChart}
     </ChartContainer>
   );
-};
-
-ScatterPlot.defaultProps = {
-  data: [],
-  xAxis: <LinearXAxis type="time" />,
-  yAxis: <LinearYAxis type="value" />,
-  series: <ScatterSeries />,
-  gridlines: <GridlineSeries />,
-  brush: null,
-  zoomPan: null
 };

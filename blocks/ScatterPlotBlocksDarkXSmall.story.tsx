@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   GridStripe,
   Gridline,
@@ -19,6 +20,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Dark/X-Small',
   component: ScatterPlot
 };
@@ -30,6 +32,7 @@ export const Minimal = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="minimal"
         data={singleDateData}
         yAxis={
           <LinearYAxis
@@ -62,6 +65,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="simple"
         data={medSignalChartData}
         yAxis={
           <LinearYAxis
@@ -93,6 +97,7 @@ export const Symbols = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="symbols"
         data={singleDateData}
         yAxis={
           <LinearYAxis
@@ -140,6 +145,7 @@ export const Categorical = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="categorical"
         data={signalStageData}
         yAxis={
           <LinearYAxis
@@ -186,6 +192,7 @@ export const Bubble = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="bubble"
         data={largeSignalChartData}
         yAxis={
           <LinearYAxis

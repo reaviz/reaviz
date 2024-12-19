@@ -119,19 +119,22 @@ export interface SankeyNodeProps extends SankeyNodeExtra {
 }
 
 export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
-  active,
+  active = false,
+  animated = true,
   chartWidth,
-  label,
+  label = <SankeyLabel />,
   labelPosition,
   labelPadding,
-  tooltip,
+  tooltip = (
+    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
+  ),
   title,
   value,
   className,
-  color,
-  disabled,
+  color = DEFAULT_COLOR,
+  disabled = false,
   index,
-  opacity,
+  opacity = (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
   style,
   width,
   x0,
@@ -223,7 +226,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
             attrY: y0
           }}
           transition={{
-            duration: 0.1
+            duration: animated ? 0.1 : 0
           }}
           onClick={onClick}
           onPointerOver={pointerOver}
@@ -252,16 +255,4 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
       )}
     </Fragment>
   );
-};
-
-SankeyNode.defaultProps = {
-  active: false,
-  animated: true,
-  color: DEFAULT_COLOR,
-  disabled: false,
-  label: <SankeyLabel />,
-  opacity: (active, disabled) => (active ? 1 : disabled ? 0.2 : 0.9),
-  tooltip: (
-    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
-  )
 };

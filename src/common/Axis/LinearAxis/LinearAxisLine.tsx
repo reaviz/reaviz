@@ -1,6 +1,7 @@
 import React, { Fragment, FC, ReactElement } from 'react';
 import { GradientProps, Gradient } from '@/common/Gradient';
 import { CloneElement, useId } from 'reablocks';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisLineProps {
   height: number;
@@ -13,14 +14,15 @@ export interface LinearAxisLineProps {
   className?: string;
 }
 
-export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
-  strokeColor,
-  strokeWidth,
-  strokeGradient,
-  scale,
-  orientation,
-  className
-}) => {
+export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = (props) => {
+  const {
+    strokeColor,
+    strokeWidth,
+    strokeGradient,
+    scale,
+    orientation,
+    className
+  } = mergeDefaultProps(linearAxisLineDefaultProps, props);
   const id = useId();
   const [range0, range1] = scale.range();
 
@@ -46,7 +48,7 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = ({
   );
 };
 
-LinearAxisLine.defaultProps = {
+export const linearAxisLineDefaultProps = {
   strokeColor: '#8F979F',
   strokeWidth: 1
 };

@@ -4,6 +4,7 @@ import { CloneElement } from 'reablocks';
 import { ScatterPoint, ScatterSeries, ScatterPointProps } from '@/ScatterPlot';
 import css from './PointSeries.module.css';
 import isEqual from 'react-fast-compare';
+import { mergeDefaultProps } from '@/common';
 
 export interface PointSeriesProps {
   /**
@@ -67,21 +68,23 @@ export interface PointSeriesProps {
   index: number;
 }
 
-export const PointSeries: FC<Partial<PointSeriesProps>> = ({
-  data,
-  xScale,
-  yScale,
-  animated,
-  point,
-  color,
-  height,
-  width,
-  id,
-  activeValues,
-  show
-}) => {
+export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
+  const {
+    data,
+    xScale,
+    yScale,
+    animated,
+    point,
+    color,
+    height,
+    width,
+    id,
+    activeValues,
+    show
+  } = mergeDefaultProps(POINT_SERIES_DEFAULT_PROPS, props);
+
   const getIsVisible = useCallback(
-    (point: ChartInternalShallowDataShape, index: number) => {
+    (point: ChartInternalShallowDataShape, index: number): boolean => {
       const isActive =
         activeValues && point && isEqual(activeValues.x, point.x);
 
@@ -101,7 +104,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = ({
         }
       }
 
-      return show;
+      return Boolean(show);
     },
     [activeValues, data.length, show]
   );
@@ -129,7 +132,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = ({
   );
 };
 
-PointSeries.defaultProps = {
+export const POINT_SERIES_DEFAULT_PROPS: Partial<PointSeriesProps> = {
   show: 'hover',
   point: <ScatterPoint />
 };

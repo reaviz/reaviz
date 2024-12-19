@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 import { ChartNestedDataShape } from '@/common/data';
 import { BarChartProps, BarChart } from './BarChart';
-import { StackedNormalizedBarSeries } from './BarSeries';
+import {
+  STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS,
+  StackedNormalizedBarSeries
+} from './BarSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedBarChartProps extends BarChartProps {
@@ -14,10 +18,20 @@ export interface StackedNormalizedBarChartProps extends BarChartProps {
 
 export const StackedNormalizedBarChart: FC<
   Partial<StackedNormalizedBarChartProps>
-> = (props) => <BarChart {...props} />;
+> = (props) => (
+  <BarChart
+    {...STACKED_NORMALIZED_BAR_CHART_DEFAULT_PROPS}
+    {...props}
+    series={
+      <StackedNormalizedBarSeries
+        {...STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS}
+        {...props.series.props}
+      />
+    }
+  />
+);
 
-StackedNormalizedBarChart.defaultProps = {
-  series: <StackedNormalizedBarSeries />,
+const STACKED_NORMALIZED_BAR_CHART_DEFAULT_PROPS = {
   yAxis: (
     <LinearYAxis
       type="value"
@@ -25,6 +39,7 @@ StackedNormalizedBarChart.defaultProps = {
         <LinearYAxisTickSeries
           label={
             <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
               rotation={false}
               format={(data) => `${data * 100}%`}
             />

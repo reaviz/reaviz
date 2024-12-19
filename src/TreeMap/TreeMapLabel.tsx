@@ -41,11 +41,11 @@ export interface TreeMapLabelProps {
 export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
   id,
   data,
-  fill,
-  wrap,
-  placement,
-  fontSize,
-  fontFamily
+  fill = '#FFF',
+  wrap = true,
+  placement = 'start',
+  fontSize = 14,
+  fontFamily = 'sans-serif'
 }) => {
   const key = data.data.key;
   const width = data.x1 - data.x0;
@@ -83,12 +83,4 @@ export const TreeMapLabel: FC<Partial<TreeMapLabelProps>> = ({
       </text>
     </g>
   );
-};
-
-TreeMapLabel.defaultProps = {
-  fill: '#FFF',
-  wrap: true,
-  fontSize: 14,
-  fontFamily: 'sans-serif',
-  placement: 'start'
 };

@@ -4,11 +4,5 @@ import { AreaSeries, Line, AreaSeriesProps } from '@/AreaChart';
 export type LineSeriesProps = AreaSeriesProps;
 
 export const LineSeries: FC<Partial<LineSeriesProps>> = (props) => (
-  <AreaSeries {...props} />
+  <AreaSeries area={null} line={<Line strokeWidth={3} />} {...props} />
 );
-
-LineSeries.defaultProps = {
-  ...AreaSeries.defaultProps,
-  area: null,
-  line: <Line strokeWidth={3} />
-};

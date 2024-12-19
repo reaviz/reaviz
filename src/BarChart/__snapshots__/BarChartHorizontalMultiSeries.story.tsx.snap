@@ -1,0 +1,4553 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Bar Chart/Horizontal/Multi Series Simple smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="500"
+     height="350"
+     style="height: 350px; width: 500px;"
+>
+  <svg width="500"
+       height="350"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(98, 0)">
+      <g style="pointer-events: none;">
+        <line y1="254"
+              y2="254"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="172"
+              y2="172"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="90"
+              y2="90"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="8"
+              y2="8"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="0"
+              x2="0"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="101"
+              x2="101"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="201"
+              x2="201"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="302"
+              x2="302"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="402"
+              x2="402"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 329)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="402"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(101, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              50
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              50
+            </text>
+          </g>
+        </g>
+        <g transform="translate(201, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              100
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              100
+            </text>
+          </g>
+        </g>
+        <g transform="translate(302, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              150
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              150
+            </text>
+          </g>
+        </g>
+        <g transform="translate(402, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              200
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              200
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="329"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 288)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Lateral Movement
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Lateral Movement
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 206)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Discovery
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Discovery
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 124)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Exploitation
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Exploitation
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 42)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Threat Intelligence
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Threat…
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="329"
+              width="402"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g transform="translate(0, 254)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 100: XML"
+                  role="graphics-document"
+                  height="15px"
+                  width="201px"
+                  fill="url(#gradient-bar-series-ref-1-bar-0-0)"
+                  x="0"
+                  y="2"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-0-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 120: JSON"
+                  role="graphics-document"
+                  height="15px"
+                  width="241px"
+                  fill="url(#gradient-bar-series-ref-1-bar-0-1)"
+                  x="0"
+                  y="18"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-0-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 150: HTTPS"
+                  role="graphics-document"
+                  height="15px"
+                  width="302px"
+                  fill="url(#gradient-bar-series-ref-1-bar-0-2)"
+                  x="0"
+                  y="34"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-0-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 112: SSH"
+                  role="graphics-document"
+                  height="15px"
+                  width="225px"
+                  fill="url(#gradient-bar-series-ref-1-bar-0-3)"
+                  x="0"
+                  y="50"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-0-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 172)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 100: XML"
+                  role="graphics-document"
+                  height="15px"
+                  width="201px"
+                  fill="url(#gradient-bar-series-ref-1-bar-1-0)"
+                  x="0"
+                  y="2"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-1-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 34: JSON"
+                  role="graphics-document"
+                  height="15px"
+                  width="68px"
+                  fill="url(#gradient-bar-series-ref-1-bar-1-1)"
+                  x="0"
+                  y="18"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-1-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 22: HTTPS"
+                  role="graphics-document"
+                  height="15px"
+                  width="44px"
+                  fill="url(#gradient-bar-series-ref-1-bar-1-2)"
+                  x="0"
+                  y="34"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-1-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 111: SSH"
+                  role="graphics-document"
+                  height="15px"
+                  width="223px"
+                  fill="url(#gradient-bar-series-ref-1-bar-1-3)"
+                  x="0"
+                  y="50"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-1-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 90)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 70: XML"
+                  role="graphics-document"
+                  height="15px"
+                  width="141px"
+                  fill="url(#gradient-bar-series-ref-1-bar-2-0)"
+                  x="0"
+                  y="2"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-2-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 130: JSON"
+                  role="graphics-document"
+                  height="15px"
+                  width="261px"
+                  fill="url(#gradient-bar-series-ref-1-bar-2-1)"
+                  x="0"
+                  y="18"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-2-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 110: HTTPS"
+                  role="graphics-document"
+                  height="15px"
+                  width="221px"
+                  fill="url(#gradient-bar-series-ref-1-bar-2-2)"
+                  x="0"
+                  y="34"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-2-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 115: SSH"
+                  role="graphics-document"
+                  height="15px"
+                  width="231px"
+                  fill="url(#gradient-bar-series-ref-1-bar-2-3)"
+                  x="0"
+                  y="50"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-2-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 8)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 130: XML"
+                  role="graphics-document"
+                  height="15px"
+                  width="261px"
+                  fill="url(#gradient-bar-series-ref-1-bar-3-0)"
+                  x="0"
+                  y="2"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-3-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 120: JSON"
+                  role="graphics-document"
+                  height="15px"
+                  width="241px"
+                  fill="url(#gradient-bar-series-ref-1-bar-3-1)"
+                  x="0"
+                  y="18"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-3-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 200: HTTPS"
+                  role="graphics-document"
+                  height="15px"
+                  width="402px"
+                  fill="url(#gradient-bar-series-ref-1-bar-3-2)"
+                  x="0"
+                  y="34"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-3-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 160: SSH"
+                  role="graphics-document"
+                  height="15px"
+                  width="322px"
+                  fill="url(#gradient-bar-series-ref-1-bar-3-3)"
+                  x="0"
+                  y="50"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-1-bar-3-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.3"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Horizontal/Multi Series Stacked smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="500"
+     height="350"
+     style="height: 350px; width: 500px;"
+>
+  <svg width="500"
+       height="350"
+       class="_svg_1u3dt_30 _barChart_sfjii_1 _stacked_sfjii_4"
+       tabindex="0"
+  >
+    <g transform="translate(98, 0)">
+      <g style="pointer-events: none;">
+        <line y1="249"
+              y2="249"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="169"
+              y2="169"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="89"
+              y2="89"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="9"
+              y2="9"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="0"
+              x2="0"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="66"
+              x2="66"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="132"
+              x2="132"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="198"
+              x2="198"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="264"
+              x2="264"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="330"
+              x2="330"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="395"
+              x2="395"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 329)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="402"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(66, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              100
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              100
+            </text>
+          </g>
+        </g>
+        <g transform="translate(132, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              200
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              200
+            </text>
+          </g>
+        </g>
+        <g transform="translate(198, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              300
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              300
+            </text>
+          </g>
+        </g>
+        <g transform="translate(264, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              400
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              400
+            </text>
+          </g>
+        </g>
+        <g transform="translate(330, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              500
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              500
+            </text>
+          </g>
+        </g>
+        <g transform="translate(395, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              600
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              600
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="329"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 285)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Lateral Movement
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Lateral Movement
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 205)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Discovery
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Discovery
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 125)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Exploitation
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Exploitation
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 45)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Threat Intelligence
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Threat…
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="329"
+              width="402"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g transform="translate(0, 249)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 100: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="66px"
+                  fill="url(#gradient-bar-series-ref-8-bar-0-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="63"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-0-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 220: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="79px"
+                  fill="url(#gradient-bar-series-ref-8-bar-0-1)"
+                  x="66"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="142"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-0-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 370: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="99px"
+                  fill="url(#gradient-bar-series-ref-8-bar-0-2)"
+                  x="145"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="241"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-0-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 482: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="74px"
+                  fill="url(#gradient-bar-series-ref-8-bar-0-3)"
+                  x="244"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="315"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-0-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 169)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 100: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="66px"
+                  fill="url(#gradient-bar-series-ref-8-bar-1-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="63"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-1-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 134: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="22px"
+                  fill="url(#gradient-bar-series-ref-8-bar-1-1)"
+                  x="66"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="85"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-1-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 156: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="15px"
+                  fill="url(#gradient-bar-series-ref-8-bar-1-2)"
+                  x="88"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="100"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-1-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 267: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="73px"
+                  fill="url(#gradient-bar-series-ref-8-bar-1-3)"
+                  x="103"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="173"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-1-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 89)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 70: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="46px"
+                  fill="url(#gradient-bar-series-ref-8-bar-2-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="43"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-2-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 200: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="86px"
+                  fill="url(#gradient-bar-series-ref-8-bar-2-1)"
+                  x="46"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="129"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-2-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 310: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="72px"
+                  fill="url(#gradient-bar-series-ref-8-bar-2-2)"
+                  x="132"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="201"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-2-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 425: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="76px"
+                  fill="url(#gradient-bar-series-ref-8-bar-2-3)"
+                  x="204"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="277"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-2-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 9)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 130: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="86px"
+                  fill="url(#gradient-bar-series-ref-8-bar-3-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="83"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-3-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 250: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="79px"
+                  fill="url(#gradient-bar-series-ref-8-bar-3-1)"
+                  x="86"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="162"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-3-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 450: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="132px"
+                  fill="url(#gradient-bar-series-ref-8-bar-3-2)"
+                  x="165"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="294"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-3-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 610: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="105px"
+                  fill="url(#gradient-bar-series-ref-8-bar-3-3)"
+                  x="297"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="399"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-8-bar-3-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Horizontal/Multi Series StackedDiverging smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="400"
+     height="250"
+     style="height: 250px; width: 400px;"
+>
+  <svg width="400"
+       height="250"
+       class="_svg_1u3dt_30 _barChart_sfjii_1"
+       tabindex="0"
+  >
+    <g transform="translate(0, 0)">
+      <g style="pointer-events: none;">
+        <line x1="29"
+              x2="29"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="86"
+              x2="86"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="143"
+              x2="143"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="200"
+              x2="200"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="257"
+              x2="257"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="314"
+              x2="314"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="371"
+              x2="371"
+              y1="0"
+              y2="234"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 234)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="400"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(29, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              −30
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              −30
+            </text>
+          </g>
+        </g>
+        <g transform="translate(86, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              −20
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              −20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(143, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              −10
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              −10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(200, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0
+            </text>
+          </g>
+        </g>
+        <g transform="translate(257, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              10
+            </text>
+          </g>
+        </g>
+        <g transform="translate(314, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              20
+            </text>
+          </g>
+        </g>
+        <g transform="translate(371, 0)">
+          <g transform="translate(0, 5)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              30
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(200, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="234"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+      </g>
+      <g>
+        <rect height="234"
+              width="400"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g transform="translate(0, 195)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/25/2020 ∙ -35: Closed"
+                  role="graphics-document"
+                  height="34px"
+                  width="200px"
+                  fill="url(#gradient-bar-series-ref-15-bar-0-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="34"
+                opacity="1"
+                x="0"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-0-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/25/2020 ∙ 35: Opened"
+                  role="graphics-document"
+                  height="34px"
+                  width="200px"
+                  fill="url(#gradient-bar-series-ref-15-bar-0-1)"
+                  x="200"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="34"
+                opacity="1"
+                x="397"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-0-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 157)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/26/2020 ∙ -10: Closed"
+                  role="graphics-document"
+                  height="34px"
+                  width="57px"
+                  fill="url(#gradient-bar-series-ref-15-bar-1-0)"
+                  x="143"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="34"
+                opacity="1"
+                x="143"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-1-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/26/2020 ∙ 10: Opened"
+                  role="graphics-document"
+                  height="34px"
+                  width="57px"
+                  fill="url(#gradient-bar-series-ref-15-bar-1-1)"
+                  x="200"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="34"
+                opacity="1"
+                x="254"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-1-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 119)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/27/2020 ∙ -29: Closed"
+                  role="graphics-document"
+                  height="34px"
+                  width="166px"
+                  fill="url(#gradient-bar-series-ref-15-bar-2-0)"
+                  x="34"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="34"
+                opacity="1"
+                x="34"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-2-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/27/2020 ∙ 29: Opened"
+                  role="graphics-document"
+                  height="34px"
+                  width="166px"
+                  fill="url(#gradient-bar-series-ref-15-bar-2-1)"
+                  x="200"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="34"
+                opacity="1"
+                x="363"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-2-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 81)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/29/2020 ∙ -10: Closed"
+                  role="graphics-document"
+                  height="34px"
+                  width="57px"
+                  fill="url(#gradient-bar-series-ref-15-bar-3-0)"
+                  x="143"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="34"
+                opacity="1"
+                x="143"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-3-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="2/29/2020 ∙ 10: Opened"
+                  role="graphics-document"
+                  height="34px"
+                  width="57px"
+                  fill="url(#gradient-bar-series-ref-15-bar-3-1)"
+                  x="200"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="34"
+                opacity="1"
+                x="254"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-3-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 43)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/1/2020 ∙ -34: Closed"
+                  role="graphics-document"
+                  height="34px"
+                  width="194px"
+                  fill="url(#gradient-bar-series-ref-15-bar-4-0)"
+                  x="6"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="34"
+                opacity="1"
+                x="6"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-4-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/1/2020 ∙ 34: Opened"
+                  role="graphics-document"
+                  height="34px"
+                  width="194px"
+                  fill="url(#gradient-bar-series-ref-15-bar-4-1)"
+                  x="200"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="34"
+                opacity="1"
+                x="391"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-4-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 5)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/2/2020 ∙ -29: Closed"
+                  role="graphics-document"
+                  height="34px"
+                  width="166px"
+                  fill="url(#gradient-bar-series-ref-15-bar-5-0)"
+                  x="34"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="34"
+                opacity="1"
+                x="34"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-5-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="3/2/2020 ∙ 29: Opened"
+                  role="graphics-document"
+                  height="34px"
+                  width="166px"
+                  fill="url(#gradient-bar-series-ref-15-bar-5-1)"
+                  x="200"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="34"
+                opacity="1"
+                x="363"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-15-bar-5-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Bar Chart/Horizontal/Multi Series StackedNormalized smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="500"
+     height="350"
+     style="height: 350px; width: 500px;"
+>
+  <svg width="500"
+       height="350"
+       class="_svg_1u3dt_30 _barChart_sfjii_1 _stackedNormalized_sfjii_4"
+       tabindex="0"
+  >
+    <g transform="translate(98, 0)">
+      <g style="pointer-events: none;">
+        <line y1="249"
+              y2="249"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="169"
+              y2="169"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="89"
+              y2="89"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line y1="9"
+              y2="9"
+              x1="0"
+              x2="402"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="0"
+              x2="0"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="20"
+              x2="20"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="40"
+              x2="40"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="60"
+              x2="60"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="80"
+              x2="80"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="101"
+              x2="101"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="121"
+              x2="121"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="141"
+              x2="141"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="161"
+              x2="161"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="181"
+              x2="181"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="201"
+              x2="201"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="221"
+              x2="221"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="241"
+              x2="241"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="261"
+              x2="261"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="281"
+              x2="281"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="302"
+              x2="302"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="322"
+              x2="322"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="342"
+              x2="342"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="362"
+              x2="362"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="382"
+              x2="382"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+        <line x1="402"
+              x2="402"
+              y1="0"
+              y2="329"
+              class="_gridLine_5yx3q_1"
+              stroke-dasharray="2 5"
+              stroke-width="1"
+              stroke="rgba(153, 153, 153, 0.5)"
+              fill="none"
+        >
+        </line>
+      </g>
+      <g transform="translate(0, 329)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="402"
+              y1="0"
+              y2="0.00001"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              0%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              0%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(20, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              5%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              5%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(40, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              10%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              10%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(60, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              15%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              15%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(80, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              20%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              20%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(101, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              25%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              25%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(121, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              30%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              30%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(141, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              35%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              35%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(161, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              40%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              40%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(181, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              45%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              45%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(201, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              50%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              50%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(221, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              55.00000000000001%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              55.00000000000001%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(241, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              60%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              60%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(261, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              65%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              65%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(281, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              70%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              70%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(302, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              75%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              75%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(322, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              80%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              80%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(342, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              85%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              85%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(362, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              90%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              90%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(382, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              95%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              95%
+            </text>
+          </g>
+        </g>
+        <g transform="translate(402, 0)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="0"
+                y1="0"
+                y2="5"
+          >
+          </line>
+          <g transform="translate(0, 10)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              100%
+            </title>
+            <text transform
+                  text-anchor="middle"
+                  alignment-baseline="hanging"
+                  fill="#8F979F"
+            >
+              100%
+            </text>
+          </g>
+        </g>
+      </g>
+      <g transform="translate(0, 0)"
+         visibility="visible"
+      >
+        <line x1="0"
+              x2="0.00001"
+              y1="329"
+              y2="0"
+              stroke-width="1"
+              stroke="#8F979F"
+        >
+        </line>
+        <g transform="translate(0, 285)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Lateral Movement
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Lateral Movement
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 205)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Discovery
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Discovery
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 125)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Exploitation
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Exploitation
+            </text>
+          </g>
+        </g>
+        <g transform="translate(0, 45)">
+          <line stroke-width="1"
+                stroke="#8F979F"
+                x1="0"
+                x2="-5"
+                y1="0"
+                y2="0"
+          >
+          </line>
+          <g transform="translate(-10, 0)"
+             font-size="11"
+             font-family="sans-serif"
+          >
+            <title>
+              Threat Intelligence
+            </title>
+            <text transform
+                  text-anchor="end"
+                  alignment-baseline="middle"
+                  fill="#8F979F"
+            >
+              Threat…
+            </text>
+          </g>
+        </g>
+      </g>
+      <g>
+        <rect height="329"
+              width="402"
+              opacity="0"
+              cursor="auto"
+        >
+        </rect>
+        <g transform="translate(0, 249)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 0.2074688796680498: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="83px"
+                  fill="url(#gradient-bar-series-ref-22-bar-0-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="80"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-0-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 0.4564315352697096: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="100px"
+                  fill="url(#gradient-bar-series-ref-22-bar-0-1)"
+                  x="83"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="180"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-0-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 0.7676348547717843: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="126px"
+                  fill="url(#gradient-bar-series-ref-22-bar-0-2)"
+                  x="183"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="306"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-0-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Lateral Movement ∙ 1: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="93px"
+                  fill="url(#gradient-bar-series-ref-22-bar-0-3)"
+                  x="309"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="399"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-0-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 169)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 0.37453183520599254: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="151px"
+                  fill="url(#gradient-bar-series-ref-22-bar-1-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="148"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-1-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 0.50187265917603: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="51px"
+                  fill="url(#gradient-bar-series-ref-22-bar-1-1)"
+                  x="151"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="199"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-1-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 0.5842696629213483: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="33px"
+                  fill="url(#gradient-bar-series-ref-22-bar-1-2)"
+                  x="202"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="232"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-1-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Discovery ∙ 1: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="167px"
+                  fill="url(#gradient-bar-series-ref-22-bar-1-3)"
+                  x="235"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="399"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-1-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 89)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 0.16470588235294117: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="66px"
+                  fill="url(#gradient-bar-series-ref-22-bar-2-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="63"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-2-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 0.47058823529411764: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="123px"
+                  fill="url(#gradient-bar-series-ref-22-bar-2-1)"
+                  x="66"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="186"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-2-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 0.7294117647058824: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="104px"
+                  fill="url(#gradient-bar-series-ref-22-bar-2-2)"
+                  x="189"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="290"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-2-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Exploitation ∙ 1: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="109px"
+                  fill="url(#gradient-bar-series-ref-22-bar-2-3)"
+                  x="293"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="399"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-2-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+        <g transform="translate(0, 9)">
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 0.21311475409836064: XML"
+                  role="graphics-document"
+                  height="72px"
+                  width="86px"
+                  fill="url(#gradient-bar-series-ref-22-bar-3-0)"
+                  x="0"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#acb7c9"
+                width="3"
+                height="72"
+                opacity="1"
+                x="83"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-3-0"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#acb7c9"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 0.4098360655737705: JSON"
+                  role="graphics-document"
+                  height="72px"
+                  width="79px"
+                  fill="url(#gradient-bar-series-ref-22-bar-3-1)"
+                  x="86"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#88a8ce"
+                width="3"
+                height="72"
+                opacity="1"
+                x="162"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-3-1"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#88a8ce"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 0.7377049180327868: HTTPS"
+                  role="graphics-document"
+                  height="72px"
+                  width="132px"
+                  fill="url(#gradient-bar-series-ref-22-bar-3-2)"
+                  x="165"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#6599d2"
+                width="3"
+                height="72"
+                opacity="1"
+                x="294"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-3-2"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#6599d2"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#6599d2"
+            >
+            </stop>
+          </linearGradient>
+          <g>
+            <rect class
+                  mask
+                  rx="0"
+                  ry="0"
+                  tabindex="0"
+                  aria-label="Threat Intelligence ∙ 1: SSH"
+                  role="graphics-document"
+                  height="72px"
+                  width="105px"
+                  fill="url(#gradient-bar-series-ref-22-bar-3-3)"
+                  x="297"
+                  y="0"
+                  style="cursor: auto;"
+            >
+            </rect>
+          </g>
+          <rect pointer-events="none"
+                fill="#418ad7"
+                width="3"
+                height="72"
+                opacity="1"
+                x="399"
+                y="0"
+          >
+          </rect>
+          <linearGradient spreadmethod="pad"
+                          id="gradient-bar-series-ref-22-bar-3-3"
+                          y1="0%"
+                          y2="0%"
+                          x1="0%"
+                          x2="100%"
+          >
+            <stop offset="5%"
+                  stop-opacity="0.1"
+                  stop-color="#418ad7"
+            >
+            </stop>
+            <stop offset="90%"
+                  stop-opacity="0.7"
+                  stop-color="#418ad7"
+            >
+            </stop>
+          </linearGradient>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

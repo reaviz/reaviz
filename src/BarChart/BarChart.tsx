@@ -6,9 +6,15 @@ import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis
+  LinearAxis,
+  LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_DEFAULT_PROPS
 } from '@/common/Axis';
-import { BarSeries, BarSeriesProps } from './BarSeries';
+import {
+  BAR_SERIES_DEFAULT_PROPS,
+  BarSeries,
+  BarSeriesProps
+} from './BarSeries';
 import {
   ChartDataShape,
   ChartNestedDataShape,
@@ -37,6 +43,7 @@ import {
   ChartProps
 } from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
+import { mergeDefaultProps } from '@/common';
 
 export interface BarChartProps extends ChartProps {
   /**
@@ -75,41 +82,54 @@ export interface BarChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 }
 
-export const BarChart: FC<Partial<BarChartProps>> = ({
-  id,
-  width,
-  height,
-  margins,
-  className,
-  data,
-  xAxis,
-  yAxis,
-  series,
-  brush,
-  gridlines,
-  secondaryAxis,
-  containerClassName
-}) => {
-  const isVertical = useMemo(
-    () => series.props.layout === 'vertical',
-    [series]
+export const BarChart: FC<Partial<BarChartProps>> = (props) => {
+  const {
+    id,
+    width,
+    height,
+    margins,
+    className,
+    data,
+    xAxis,
+    yAxis,
+    series,
+    brush,
+    gridlines,
+    secondaryAxis,
+    containerClassName
+  } = mergeDefaultProps(BAR_CHART_DEFAULT_PROPS, props);
+  const seriesProps = useMemo(
+    () => ({ ...BAR_SERIES_DEFAULT_PROPS, ...series?.props }),
+    [series?.props]
   );
-  const keyAxis = useMemo(
-    () => (isVertical ? xAxis : yAxis),
-    [yAxis, xAxis, isVertical]
+  const xAxisProps = useMemo(
+    () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
+    [xAxis.props]
+  );
+  const yAxisProps = useMemo(
+    () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
+    [yAxis.props]
+  );
+  const isVertical = useMemo(
+    () => seriesProps.layout === 'vertical',
+    [seriesProps]
+  );
+  const keyAxisProps = useMemo(
+    () => (isVertical ? xAxisProps : yAxisProps),
+    [isVertical, xAxisProps, yAxisProps]
   );
   const isDiverging = useMemo(
-    () => series.props.type === 'stackedDiverging',
-    [series.props.type]
+    () => seriesProps.type === 'stackedDiverging',
+    [seriesProps.type]
   );
 
   const getMarimekkoGroupScales = useCallback(
-    (aggregatedData, axis, width: number) => {
-      const keyScale = getMarimekkoScale(width, axis.props.roundDomains);
+    (aggregatedData, axisProps, width: number) => {
+      const keyScale = getMarimekkoScale(width, axisProps.roundDomains);
 
       const groupScale = getMarimekkoGroupScale({
         width,
-        padding: series.props.padding,
+        padding: seriesProps.padding,
         data: aggregatedData,
         valueScale: keyScale
       });
@@ -119,12 +139,12 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         groupScale
       };
     },
-    [series.props.padding]
+    [seriesProps.padding]
   );
 
   const getMultiGroupScales = useCallback(
     (aggregatedData, height: number, width: number) => {
-      const { groupPadding, layout } = series.props;
+      const { groupPadding, layout } = seriesProps;
 
       const groupScale = getGroupScale({
         dimension: isVertical ? width : height,
@@ -135,7 +155,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
 
       const keyScale = getInnerScale({
         groupScale: groupScale,
-        padding: series.props.padding,
+        padding: seriesProps.padding,
         data: aggregatedData,
         prop: isVertical ? 'x' : 'y'
       });
@@ -145,44 +165,44 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         keyScale
       };
     },
-    [isVertical, series.props]
+    [isVertical, seriesProps]
   );
 
   const getKeyScale = useCallback(
-    (aggregatedData, axis, isMultiSeries: boolean, width: number) => {
+    (aggregatedData, axisProps, isMultiSeries: boolean, width: number) => {
       return getXScale({
         width,
-        type: axis.props.type,
-        roundDomains: axis.props.roundDomains,
+        type: axisProps.type,
+        roundDomains: axisProps.roundDomains,
         data: aggregatedData,
-        padding: series.props.padding,
-        domain: axis.props.domain,
+        padding: seriesProps.padding,
+        domain: axisProps.domain,
         isMultiSeries,
         isDiverging
       });
     },
-    [isDiverging, series]
+    [isDiverging, seriesProps]
   );
 
   const getValueScale = useCallback(
-    (aggregatedData, axis, isMultiSeries: boolean, height: number) => {
+    (aggregatedData, axisProps, isMultiSeries: boolean, height: number) => {
       return getYScale({
-        roundDomains: axis.props.roundDomains,
-        padding: series.props.padding,
-        type: axis.props.type,
+        roundDomains: axisProps.roundDomains,
+        padding: seriesProps.padding,
+        type: axisProps.type,
         height,
         data: aggregatedData,
-        domain: axis.props.domain,
+        domain: axisProps.domain,
         isMultiSeries,
         isDiverging
       });
     },
-    [isDiverging, series]
+    [isDiverging, seriesProps]
   );
 
   const getScalesAndData = useCallback(
     (chartHeight: number, chartWidth: number) => {
-      const { type, layout } = series.props;
+      const { type, layout } = seriesProps;
       const isMarimekko = type === 'marimekko';
       const isGrouped = type === 'grouped';
       const isStacked =
@@ -209,7 +229,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         aggregatedData = buildWaterfall(
           data as ChartShallowDataShape[],
           layout,
-          series.props.binSize
+          seriesProps.binSize
         );
       } else if (isMarimekko) {
         aggregatedData = buildMarimekkoData(data as ChartNestedDataShape[]);
@@ -223,7 +243,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         aggregatedData = buildShallowChartData(
           data as ChartShallowDataShape[],
           layout,
-          series.props.binSize
+          seriesProps.binSize
         );
       }
 
@@ -243,7 +263,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         } else if (isMarimekko) {
           const { keyScale, groupScale } = getMarimekkoGroupScales(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             chartWidth
           );
           xScale = groupScale;
@@ -251,7 +271,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         } else {
           xScale = getKeyScale(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             isMultiSeries,
             chartWidth
           );
@@ -259,7 +279,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
 
         yScale = getValueScale(
           aggregatedData,
-          yAxis,
+          yAxisProps,
           isMultiSeries,
           chartHeight
         );
@@ -274,7 +294,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
           xScale1 = keyScale;
           xScale = getKeyScale(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             isMultiSeries,
             chartWidth
           );
@@ -285,13 +305,13 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         } else {
           xScale = getKeyScale(
             aggregatedData,
-            xAxis,
+            xAxisProps,
             isMultiSeries,
             chartWidth
           );
           yScale = getValueScale(
             aggregatedData,
-            yAxis,
+            yAxisProps,
             isMultiSeries,
             chartHeight
           );
@@ -307,9 +327,9 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       getMultiGroupScales,
       getValueScale,
       isVertical,
-      series.props,
-      xAxis,
-      yAxis
+      seriesProps,
+      xAxisProps,
+      yAxisProps
     ]
   );
 
@@ -322,7 +342,7 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
         chartWidth
       );
 
-      const isCategorical = keyAxis.props.type === 'category';
+      const isCategorical = keyAxisProps.type === 'category';
       const disableBrush = aggregatedData.length <= 1;
 
       return (
@@ -334,8 +354,8 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
               width={chartWidth}
               yScale={yScale}
               xScale={xScale}
-              yAxis={yAxis.props}
-              xAxis={xAxis.props}
+              yAxis={yAxisProps}
+              xAxis={xAxisProps}
             />
           )}
           <CloneElement<LinearAxisProps>
@@ -398,11 +418,13 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       getScalesAndData,
       gridlines,
       isVertical,
-      keyAxis,
+      keyAxisProps,
       secondaryAxis,
       series,
       xAxis,
-      yAxis
+      yAxis,
+      xAxisProps,
+      yAxisProps
     ]
   );
 
@@ -413,16 +435,16 @@ export const BarChart: FC<Partial<BarChartProps>> = ({
       height={height}
       margins={margins}
       containerClassName={containerClassName}
-      xAxisVisible={isAxisVisible(xAxis.props)}
-      yAxisVisible={isAxisVisible(yAxis.props)}
-      className={classNames(css.barChart, className, css[series.props.type])}
+      xAxisVisible={isAxisVisible(xAxisProps)}
+      yAxisVisible={isAxisVisible(yAxisProps)}
+      className={classNames(css.barChart, className, css[seriesProps.type])}
     >
       {renderChart}
     </ChartContainer>
   );
 };
 
-BarChart.defaultProps = {
+const BAR_CHART_DEFAULT_PROPS = {
   data: [],
   xAxis: (
     <LinearXAxis

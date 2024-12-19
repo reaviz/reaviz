@@ -55,18 +55,16 @@ export interface RadialPointSeriesProps {
   point: ReactElement<RadialScatterPointProps, typeof RadialScatterPoint>;
 }
 
-export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
-  data,
-  xScale,
-  yScale,
-  animated,
-  color,
-  activeValues,
-  show,
-  point
-}) => {
+export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
+  props
+) => {
+  const { data, xScale, yScale, animated, color, activeValues, show, point } = {
+    ...RADIAL_POINT_SERIES_DEFAULT_PROPS,
+    ...props
+  };
+
   const isVisible = useCallback(
-    (point: ChartInternalShallowDataShape, index: number) => {
+    (point: ChartInternalShallowDataShape, index: number): boolean => {
       const isActive =
         activeValues && point && isEqual(activeValues.x, point.x);
 
@@ -86,7 +84,7 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
         }
       }
 
-      return show;
+      return Boolean(show);
     },
     [data, activeValues, show]
   );
@@ -109,8 +107,7 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = ({
   );
 };
 
-RadialPointSeries.defaultProps = {
+export const RADIAL_POINT_SERIES_DEFAULT_PROPS = {
   show: 'hover',
-  type: 'standard',
   point: <RadialScatterPoint />
 };

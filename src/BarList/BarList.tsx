@@ -45,13 +45,13 @@ export interface BarListProps {
 }
 
 export const BarList: FC<BarListProps> = ({
-  data,
   id,
   className,
-  sortDirection,
   style,
-  series,
-  type
+  data = [],
+  sortDirection = 'desc',
+  series = <BarListSeries />,
+  type = 'count'
 }) => {
   const curId = useId(id);
 
@@ -102,11 +102,4 @@ export const BarList: FC<BarListProps> = ({
       <CloneElement<BarListSeriesProps> element={series} data={mashedData} />
     </motion.section>
   );
-};
-
-BarList.defaultProps = {
-  data: [],
-  sortDirection: 'desc',
-  series: <BarListSeries />,
-  type: 'count'
 };

@@ -19,6 +19,7 @@ import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Multi Series',
   component: LineChart,
   subcomponents: {
@@ -33,6 +34,7 @@ export default {
 
 export const _Simple = () => (
   <LineChart
+    id="simple"
     width={550}
     height={250}
     series={
@@ -48,6 +50,7 @@ export const _Simple = () => (
 
 export const Clicked = () => (
   <LineChart
+    id="clicked"
     width={550}
     height={250}
     series={
@@ -75,6 +78,7 @@ export const Clicked = () => (
 
 export const LargeData = () => (
   <LineChart
+    id="large-data"
     width={400}
     height={300}
     data={prettyData}
@@ -103,9 +107,11 @@ export const LargeData = () => (
     }
   />
 );
+LargeData.tags = ['skip-snapshot'];
 
 export const CustomLineStyles = () => (
   <LineChart
+    id="custom-line-styles"
     width={550}
     height={350}
     series={
@@ -140,6 +146,7 @@ export const CustomLineStyles = () => (
 
 export const _LargeDataset = () => (
   <LineChart
+    id="large-dataset"
     width={550}
     height={350}
     series={
@@ -153,9 +160,11 @@ export const _LargeDataset = () => (
     data={longMultiDateData}
   />
 );
+_LargeDataset.tags = ['skip-snapshot'];
 
 export const Stacked = () => (
   <StackedAreaChart
+    id="stacked"
     width={550}
     height={250}
     series={
@@ -171,6 +180,7 @@ export const Stacked = () => (
 
 export const StackedNormalized = () => (
   <StackedNormalizedAreaChart
+    id="stacked-normalized"
     width={550}
     height={250}
     data={multiDateData}

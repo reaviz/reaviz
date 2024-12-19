@@ -47,10 +47,10 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   id,
   data,
   radius,
-  colorScheme,
-  animated,
-  arc,
-  label
+  colorScheme = 'cybertron',
+  animated = true,
+  arc = <SunburstArc />,
+  label = <SunburstArcLabel />
 }) => {
   const getFill = useCallback(
     (item: any, index: number) => {
@@ -117,11 +117,4 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   );
 
   return <>{data.map(renderItem)}</>;
-};
-
-SunburstSeries.defaultProps = {
-  colorScheme: 'cybertron',
-  animated: true,
-  arc: <SunburstArc />,
-  label: <SunburstArcLabel />
 };

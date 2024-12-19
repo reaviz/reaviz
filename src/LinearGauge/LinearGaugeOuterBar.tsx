@@ -20,7 +20,7 @@ export interface LinearGaugeOuterBarProps extends SVGRect {
 export const LinearGaugeOuterBar: FC<Partial<LinearGaugeOuterBarProps>> = ({
   height,
   width,
-  fill,
+  fill = '#484848',
   ...rest
 }) => (
   <rect
@@ -30,7 +30,3 @@ export const LinearGaugeOuterBar: FC<Partial<LinearGaugeOuterBarProps>> = ({
     height={Math.max(height!, 0)}
   />
 );
-
-LinearGaugeOuterBar.defaultProps = {
-  fill: '#484848'
-};

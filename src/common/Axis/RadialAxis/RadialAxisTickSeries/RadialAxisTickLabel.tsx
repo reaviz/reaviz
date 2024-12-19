@@ -68,13 +68,13 @@ export interface RadialAxisTickLabelProps
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   point,
-  autoRotate,
+  autoRotate = true,
   rotation,
-  padding,
+  padding = 15,
   data,
-  fill,
-  fontFamily,
-  fontSize,
+  fill = '#71808d',
+  fontFamily = 'sans-serif',
+  fontSize = 11,
   format,
   lineSize,
   index,
@@ -138,14 +138,4 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
       </text>
     </g>
   );
-};
-
-RadialAxisTickLabel.defaultProps = {
-  fill: '#71808d',
-  fontSize: 11,
-  padding: 15,
-  fontFamily: 'sans-serif',
-  autoRotate: true,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
 };

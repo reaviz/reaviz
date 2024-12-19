@@ -3,6 +3,7 @@ import React, {
   Fragment,
   ReactElement,
   useCallback,
+  useMemo,
   useState
 } from 'react';
 import {
@@ -14,9 +15,17 @@ import { CloneElement } from 'reablocks';
 import { RadialAreaProps, RadialArea } from './RadialArea';
 import { RadialLine, RadialLineProps } from './RadialLine';
 import { RadialInterpolationTypes } from '@/common/utils/interpolation';
-import { RadialPointSeries, RadialPointSeriesProps } from './RadialPointSeries';
+import {
+  RADIAL_POINT_SERIES_DEFAULT_PROPS,
+  RadialPointSeries,
+  RadialPointSeriesProps
+} from './RadialPointSeries';
 import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
-import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import {
+  mergeDefaultProps,
+  RadialValueMarker,
+  RadialValueMarkerProps
+} from '@/common';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 
@@ -127,28 +136,37 @@ export interface RadialAreaSeriesProps {
     | null;
 }
 
-export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
-  area,
-  line,
-  symbols,
-  tooltip,
-  xScale,
-  yScale,
-  data,
-  id,
-  animated,
-  width,
-  height,
-  innerRadius,
-  outerRadius,
-  type,
-  colorScheme,
-  interpolation,
-  startAngle,
-  endAngle,
-  isClosedCurve,
-  valueMarkers
-}) => {
+export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
+  const {
+    area,
+    line,
+    symbols,
+    tooltip,
+    xScale,
+    yScale,
+    data,
+    id,
+    animated,
+    width,
+    height,
+    innerRadius,
+    outerRadius,
+    type,
+    colorScheme,
+    interpolation,
+    startAngle,
+    endAngle,
+    isClosedCurve,
+    valueMarkers
+  } = mergeDefaultProps(RADIAL_AREA_SERIES_DEFAULT_PROPS, props);
+
+  const symbolsProps = useMemo(
+    () => ({
+      ...RADIAL_POINT_SERIES_DEFAULT_PROPS,
+      ...symbols?.props
+    }),
+    [symbols]
+  );
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
 
@@ -180,7 +198,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             color={getColorForPoint}
             index={index}
             data={point}
-            interpolation={interpolation}
+            interpolation={interpolation as RadialInterpolationTypes}
             outerRadius={outerRadius}
             innerRadius={innerRadius}
             isClosedCurve={isClosedCurve}
@@ -194,7 +212,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
             hasArea={area !== null}
             index={index}
             animated={animated}
-            interpolation={interpolation}
+            interpolation={interpolation as RadialInterpolationTypes}
             color={getColorForPoint}
             data={point}
             isClosedCurve={isClosedCurve}
@@ -221,7 +239,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
     (data: ChartInternalShallowDataShape[], index = 0) => {
       // Animations are only valid for Area
       const activeSymbols =
-        (symbols && symbols.props.activeValues) || activeValues;
+        (symbols && symbolsProps.activeValues) || activeValues;
       const isAnimated = area !== undefined && animated && !activeSymbols;
 
       return (
@@ -237,7 +255,16 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
         />
       );
     },
-    [activeValues, animated, area, getColorForPoint, symbols, xScale, yScale]
+    [
+      activeValues,
+      animated,
+      area,
+      getColorForPoint,
+      symbols,
+      symbolsProps,
+      xScale,
+      yScale
+    ]
   );
 
   const renderSingleSeries = useCallback(
@@ -316,16 +343,17 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = ({
   );
 };
 
-RadialAreaSeries.defaultProps = {
-  colorScheme: schemes.cybertron,
-  interpolation: 'smooth',
-  type: 'standard',
-  animated: true,
-  area: <RadialArea />,
-  line: <RadialLine />,
-  symbols: <RadialPointSeries />,
-  tooltip: <TooltipArea />,
-  startAngle: 0,
-  endAngle: 2 * Math.PI,
-  isClosedCurve: true
-};
+export const RADIAL_AREA_SERIES_DEFAULT_PROPS: Partial<RadialAreaSeriesProps> =
+  {
+    colorScheme: schemes.cybertron,
+    interpolation: 'smooth',
+    type: 'standard',
+    animated: true,
+    area: <RadialArea />,
+    line: <RadialLine />,
+    symbols: <RadialPointSeries />,
+    tooltip: <TooltipArea />,
+    startAngle: 0,
+    endAngle: 2 * Math.PI,
+    isClosedCurve: true
+  };

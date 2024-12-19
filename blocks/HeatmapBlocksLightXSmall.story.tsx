@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Heatmap,
   HeatmapCell,
@@ -18,6 +19,7 @@ import {
 import { schemes } from '../src/common/color/schemes';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Heatmap/Light/X-Small',
   component: ScatterPlot
 };
@@ -1067,7 +1069,7 @@ export const WarmHex = () => {
         />
         <SequentialLegend
           data={heatmapXSmallBlocksData}
-          colorScheme={[`#F7BFC166`, `#e0000766`, `#E00007`]}
+          colorScheme={['#F7BFC166', '#e0000766', '#E00007']}
           gradientClassName="!w-[20px]"
           className="pl-1 pr-1 mt-6 !h-[135px] text-[#535362] font-medium"
         />
@@ -1117,7 +1119,7 @@ export const Hot = () => {
                 { fill: '#E00007' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
               padding={0.3}
@@ -1181,7 +1183,7 @@ export const HotCircle = () => {
                 { fill: '#E00007' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
             />

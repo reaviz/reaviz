@@ -63,12 +63,12 @@ export interface DiscreteLegendEntryProps {
 
 export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = ({
   label,
-  symbol,
+  symbol = <DiscreteLegendSymbol />,
   title,
   className,
   color,
   style,
-  orientation,
+  orientation = 'horizontal',
   onMouseEnter,
   onMouseLeave,
   onClick
@@ -88,8 +88,3 @@ export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = ({
     <span className={css.label}>{label}</span>
   </div>
 );
-
-DiscreteLegendEntry.defaultProps = {
-  symbol: <DiscreteLegendSymbol />,
-  orientation: 'horizontal'
-};

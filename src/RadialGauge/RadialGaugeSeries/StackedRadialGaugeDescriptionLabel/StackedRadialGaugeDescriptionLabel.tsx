@@ -21,7 +21,7 @@ export interface StackedRadialGaugeDescriptionLabelProps {
 
 export const StackedRadialGaugeDescriptionLabel: FC<
   Partial<StackedRadialGaugeDescriptionLabelProps>
-> = ({ label, className, yOffset }) => (
+> = ({ label, className, yOffset = 0 }) => (
   <>
     {label && (
       <text
@@ -36,7 +36,3 @@ export const StackedRadialGaugeDescriptionLabel: FC<
     )}
   </>
 );
-
-StackedRadialGaugeDescriptionLabel.defaultProps = {
-  yOffset: 0
-};
