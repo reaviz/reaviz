@@ -45,7 +45,9 @@ export const Simple = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }
@@ -74,7 +76,9 @@ export const Gradient = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }
@@ -142,7 +146,9 @@ export const MultiSeries = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }

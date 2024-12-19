@@ -42,7 +42,9 @@ export const SemiCircle = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }
@@ -73,14 +75,12 @@ export const Quarter = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={
-                  <RadialAxisTickLabel
-                    format={(f) => format(new Date(f), 'M/d')}
-                  />
-                }
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel
+                  format={(f) => format(new Date(f), 'M/d')}
+                />
+              </RadialAxisTick>
             }
           />
         }
@@ -111,14 +111,12 @@ export const Custom = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={
-                  <RadialAxisTickLabel
-                    format={(f) => format(new Date(f), 'M/d')}
-                  />
-                }
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel
+                  format={(f) => format(new Date(f), 'M/d')}
+                />
+              </RadialAxisTick>
             }
           />
         }
@@ -151,7 +149,9 @@ export const SemiCircleMultiSeries = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }
@@ -184,7 +184,9 @@ export const QuarterCircleMultiSeries = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }
@@ -217,7 +219,9 @@ export const CustomCircle1MultiSeries = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }
@@ -250,7 +254,9 @@ export const CustomCircle2MultiSeries = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }

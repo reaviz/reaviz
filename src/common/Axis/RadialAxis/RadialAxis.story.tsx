@@ -41,11 +41,35 @@ export const Simple = () => (
           ticks={
             <RadialAxisTickSeries
               tick={
-                <RadialAxisTick
-                  label={
+                <RadialAxisTick>
+                  <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
+                </RadialAxisTick>
+              }
+            />
+          }
+        />
+      </g>
+    </svg>
+  </div>
+);
+
+export const TickCallback = () => (
+  <div style={{ padding: '10px' }}>
+    <svg width={600} height={600}>
+      <g transform="translate(300, 300)">
+        <RadialAxis
+          height={600}
+          width={600}
+          innerRadius={10}
+          xScale={xScale}
+          ticks={
+            <RadialAxisTickSeries
+              tick={({ index }) =>
+                index % 3 === 0 ? (
+                  <RadialAxisTick>
                     <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
-                  }
-                />
+                  </RadialAxisTick>
+                ) : null
               }
             />
           }

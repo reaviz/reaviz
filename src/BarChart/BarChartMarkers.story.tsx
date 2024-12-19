@@ -98,7 +98,9 @@ export const RadialValueMarkers = () => (
         ticks={
           <RadialAxisTickSeries
             tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+              </RadialAxisTick>
             }
           />
         }

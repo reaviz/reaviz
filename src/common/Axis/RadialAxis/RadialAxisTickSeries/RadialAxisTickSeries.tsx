@@ -94,7 +94,9 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
             outerRadius={outerRadius}
             startAngle={startAngle}
             endAngle={endAngle}
-          />
+          >
+            {tickElement?.props?.children}
+          </CloneElement>
         );
       })}
     </Fragment>

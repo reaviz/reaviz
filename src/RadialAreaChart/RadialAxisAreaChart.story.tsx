@@ -50,10 +50,10 @@ export const SemiCircle = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate />
+              </RadialAxisTick>
             }
           />
         }
@@ -116,10 +116,10 @@ export const QuarterCircle = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate />
+              </RadialAxisTick>
             }
           />
         }
@@ -184,10 +184,10 @@ export const CustomCircle = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate />
+              </RadialAxisTick>
             }
           />
         }
@@ -221,10 +221,10 @@ export const CustomCircle2 = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate />
+              </RadialAxisTick>
             }
           />
         }
@@ -258,10 +258,10 @@ export const CustomCircle3 = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate />
+              </RadialAxisTick>
             }
           />
         }
@@ -295,10 +295,10 @@ export const CustomCircle4 = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate />
+              </RadialAxisTick>
             }
           />
         }
@@ -332,10 +332,10 @@ export const NoAutoRotateLabels = () => (
           <RadialAxisTickSeries
             count={5}
             tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate={false} />}
-              />
+              <RadialAxisTick>
+                <RadialAxisTickLine position="inside" />
+                <RadialAxisTickLabel autoRotate={false} />
+              </RadialAxisTick>
             }
           />
         }

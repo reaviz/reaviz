@@ -15,3 +15,4 @@ export * from './wrapText';
 export * from './useHoverIntent';
 export * from './useResizeObserver';
 export * from './merge';
+export * from './children';
