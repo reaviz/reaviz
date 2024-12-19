@@ -39,13 +39,11 @@ export const Simple = () => (
           innerRadius={10}
           xScale={xScale}
           ticks={
-            <RadialAxisTickSeries
-              tick={
-                <RadialAxisTick>
-                  <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
-                </RadialAxisTick>
-              }
-            />
+            <RadialAxisTickSeries>
+              <RadialAxisTick>
+                <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
+              </RadialAxisTick>
+            </RadialAxisTickSeries>
           }
         />
       </g>
@@ -63,15 +61,15 @@ export const TickCallback = () => (
           innerRadius={10}
           xScale={xScale}
           ticks={
-            <RadialAxisTickSeries
-              tick={({ index }) =>
+            <RadialAxisTickSeries>
+              {({ index }: { index: number }) =>
                 index % 3 === 0 ? (
                   <RadialAxisTick>
                     <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
                   </RadialAxisTick>
                 ) : null
               }
-            />
+            </RadialAxisTickSeries>
           }
         />
       </g>

@@ -43,13 +43,11 @@ export const Simple = () => (
     axis={
       <RadialAxis
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -74,13 +72,11 @@ export const Gradient = () => (
     axis={
       <RadialAxis
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -144,13 +140,11 @@ export const MultiSeries = () => (
       <RadialAxis
         type="category"
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />

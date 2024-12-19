@@ -40,13 +40,11 @@ export const SemiCircle = () => (
     axis={
       <RadialAxis
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -73,16 +71,12 @@ export const Quarter = () => (
     axis={
       <RadialAxis
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-                <RadialAxisTickLabel
-                  format={(f) => format(new Date(f), 'M/d')}
-                />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+              <RadialAxisTickLabel format={(f) => format(new Date(f), 'M/d')} />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -109,16 +103,12 @@ export const Custom = () => (
     axis={
       <RadialAxis
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-                <RadialAxisTickLabel
-                  format={(f) => format(new Date(f), 'M/d')}
-                />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+              <RadialAxisTickLabel format={(f) => format(new Date(f), 'M/d')} />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -147,13 +137,11 @@ export const SemiCircleMultiSeries = () => (
       <RadialAxis
         type="category"
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -182,13 +170,11 @@ export const QuarterCircleMultiSeries = () => (
       <RadialAxis
         type="category"
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -217,13 +203,11 @@ export const CustomCircle1MultiSeries = () => (
       <RadialAxis
         type="category"
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />
@@ -252,13 +236,11 @@ export const CustomCircle2MultiSeries = () => (
       <RadialAxis
         type="category"
         ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
         arcs={<RadialAxisArcSeries count={10} />}
       />

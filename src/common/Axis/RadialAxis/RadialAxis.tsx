@@ -113,7 +113,9 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
           outerRadius={outerRadius}
           startAngle={startAngle}
           endAngle={endAngle}
-        />
+        >
+          {ticks.props?.children}
+        </CloneElement>
       )}
     </Fragment>
   );

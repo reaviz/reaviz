@@ -66,12 +66,12 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
 }) => {
   const line = getChildComponent(
     children,
-    'RadialAxisTickLine',
+    RadialAxisTickLine.name,
     <RadialAxisTickLine />
   );
   const label = getChildComponent(
     children,
-    'RadialAxisTickLabel',
+    RadialAxisTickLabel.name,
     <RadialAxisTickLabel />
   );
   const lineProps = useMemo(

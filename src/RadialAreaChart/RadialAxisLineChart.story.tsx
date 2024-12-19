@@ -46,15 +46,12 @@ export const SemiCircle = () => (
       <RadialAxis
         arcs={<RadialAxisArcSeries count={5} />}
         ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="outside" />
-                <RadialAxisTickLabel autoRotate />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries count={5}>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="outside" />
+              <RadialAxisTickLabel autoRotate />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
       />
     }
@@ -97,15 +94,12 @@ export const Custom = () => (
       <RadialAxis
         arcs={<RadialAxisArcSeries count={5} />}
         ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="outside" />
-                <RadialAxisTickLabel autoRotate />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries count={5}>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="outside" />
+              <RadialAxisTickLabel autoRotate />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
       />
     }

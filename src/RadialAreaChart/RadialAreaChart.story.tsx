@@ -47,15 +47,12 @@ export const Simple = () => (
       <RadialAxis
         arcs={<RadialAxisArcSeries count={10} />}
         ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick>
-                <RadialAxisTickLine position="inside" />
-                <RadialAxisTickLabel autoRotate />
-              </RadialAxisTick>
-            }
-          />
+          <RadialAxisTickSeries count={5}>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+              <RadialAxisTickLabel autoRotate />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
         }
       />
     }
