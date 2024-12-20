@@ -1,0 +1,7 @@
+.wordLabel {
+  user-select: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
