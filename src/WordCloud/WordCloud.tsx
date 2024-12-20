@@ -8,7 +8,7 @@ import {
   ChartProps,
   ChartContainer,
   ChartContextProps
-} from '@/common/containers/ChartContainer';
+} from '@/common/containers';
 import { WordCloudLabel } from './WordCloudLabel';
 
 export interface WordCloudProps extends ChartProps {
@@ -51,7 +51,23 @@ export interface WordCloudProps extends ChartProps {
   /**
    * Event triggered when a word is clicked.
    */
-  onClick?: (word: ChartShallowDataShape) => void;
+  onLabelClick?: (event: React.MouseEvent, data: ChartShallowDataShape) => void;
+
+  /**
+   * Mouse enter handler.
+   */
+  onLabelMouseEnter?: (
+    event: React.PointerEvent,
+    data: ChartShallowDataShape
+  ) => void;
+
+  /**
+   * Mouse leave handler.
+   */
+  onLabelMouseLeave?: (
+    event: React.PointerEvent,
+    data: ChartShallowDataShape
+  ) => void;
 }
 
 export const WordCloud: FC<Partial<WordCloudProps>> = ({
@@ -64,7 +80,9 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
   rotationAngles = [-30, 30],
   rotations = 2,
   colorScheme = schemes.cybertron,
-  onClick,
+  onLabelClick,
+  onLabelMouseEnter,
+  onLabelMouseLeave,
   margins,
   className,
   containerClassName
@@ -80,13 +98,14 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
       const layout = cloud()
         .size([chartWidth, chartHeight])
         .words(
-          data.map((d) => ({
+          data.map((d, index) => ({
             text: String(d.key),
             size: sizeScale(Number(d.data)),
             color: getColor({
-              data: d as any,
               colorScheme,
-              point: 0
+              index,
+              point: d,
+              data
             }),
             data: d
           }))
@@ -122,7 +141,7 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
     ({ chartHeight, chartWidth }: ChartContextProps) => {
       const words = buildData(chartWidth, chartHeight);
 
-      return words.map((word, i) => (
+      return words.map((word: any, i) => (
         <WordCloudLabel
           key={`${word.text}-${i}`}
           text={word.text}
@@ -133,11 +152,13 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
           y={word.y || 0}
           rotate={word.rotate || 0}
           data={word.data}
-          onClick={onClick}
+          onClick={onLabelClick}
+          onMouseEnter={onLabelMouseEnter}
+          onMouseLeave={onLabelMouseLeave}
         />
       ));
     },
-    [buildData, fontFamily, onClick]
+    [buildData, fontFamily, onLabelClick, onLabelMouseEnter, onLabelMouseLeave]
   );
 
   return (

@@ -4,7 +4,7 @@ import { ChartShallowDataShape } from '../common/data';
 import { schemes } from '../common/color';
 
 const meta: Meta<typeof WordCloud> = {
-  title: 'Visualizations/WordCloud',
+  title: 'Charts/Word Cloud',
   component: WordCloud,
   parameters: {
     layout: 'centered'
@@ -46,7 +46,7 @@ export const CustomColors: Story = {
     data: sampleData,
     width: 600,
     height: 400,
-    colorScheme: schemes.sunset
+    colorScheme: ['white']
   }
 };
 

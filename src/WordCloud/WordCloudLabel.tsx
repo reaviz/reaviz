@@ -1,11 +1,11 @@
-import React, { FC, useRef, useState, Fragment } from 'react';
+import React, { FC, ReactElement, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChartShallowDataShape } from '../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
 import css from './WordCloudLabel.module.css';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
 
 export interface WordCloudLabelProps {
   /**
@@ -49,17 +49,38 @@ export interface WordCloudLabelProps {
   data: ChartShallowDataShape;
 
   /**
-   * Click handler.
-   */
-  onClick?: (data: ChartShallowDataShape) => void;
-
-  /**
    * Additional className to apply.
    */
   className?: string;
+
+  /**
+   * Tooltip element.
+   */
+  tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
+
+  /**
+   * Click handler.
+   */
+  onClick?: (event: React.MouseEvent, data: ChartShallowDataShape) => void;
+
+  /**
+   * Mouse enter handler.
+   */
+  onMouseEnter?: (
+    event: React.PointerEvent,
+    data: ChartShallowDataShape
+  ) => void;
+
+  /**
+   * Mouse leave handler.
+   */
+  onMouseLeave?: (
+    event: React.PointerEvent,
+    data: ChartShallowDataShape
+  ) => void;
 }
 
-export const WordCloudLabel: FC<WordCloudLabelProps> = ({
+export const WordCloudLabel: FC<Partial<WordCloudLabelProps>> = ({
   text,
   fontSize,
   fontFamily,
@@ -69,21 +90,35 @@ export const WordCloudLabel: FC<WordCloudLabelProps> = ({
   rotate,
   data,
   onClick,
-  className
+  className,
+  onMouseEnter,
+  onMouseLeave,
+  tooltip = <ChartTooltip />
 }) => {
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);
   const labelRef = useRef<SVGTextElement>(null);
 
+  const { pointerOut, pointerOver } = useHoverIntent({
+    onPointerOver: (event) => {
+      setTooltipVisible(true);
+      onMouseEnter?.(event, data);
+    },
+    onPointerOut: (event) => {
+      setTooltipVisible(false);
+      onMouseLeave?.(event, data);
+    }
+  });
+
   return (
-    <Fragment>
+    <>
       <g
         ref={labelRef}
         className={classNames(css.wordLabel, className, {
           [css.clickable]: !!onClick
         })}
-        onMouseEnter={() => setTooltipVisible(true)}
-        onMouseLeave={() => setTooltipVisible(false)}
-        onClick={() => onClick?.(data)}
+        onPointerOut={pointerOut}
+        onPointerOver={pointerOver}
+        onClick={(event) => onClick?.(event, data)}
       >
         <motion.text
           style={{
@@ -93,7 +128,24 @@ export const WordCloudLabel: FC<WordCloudLabelProps> = ({
             cursor: onClick ? 'pointer' : 'default'
           }}
           textAnchor="middle"
-          transform={`translate(${x},${y}) rotate(${rotate})`}
+          initial={{
+            opacity: 0,
+            x,
+            y,
+            rotate
+          }}
+          animate={{
+            opacity: 1,
+            x,
+            y,
+            rotate
+          }}
+          exit={{
+            opacity: 0,
+            x,
+            y,
+            rotate
+          }}
           whileHover={{
             opacity: 0.7,
             transition: { duration: 0.2 }
@@ -103,22 +155,14 @@ export const WordCloudLabel: FC<WordCloudLabelProps> = ({
         </motion.text>
       </g>
       <CloneElement<ChartTooltipProps>
-        element={
-          <ChartTooltip
-            followCursor={true}
-            modifiers={[offset(5)]}
-            content={(d) => (
-              <>
-                <div>{d.key}</div>
-                <div>Count: {d.data}</div>
-              </>
-            )}
-          />
-        }
+        element={tooltip}
         visible={tooltipVisible}
         reference={labelRef}
-        value={data}
+        value={{
+          x: text,
+          value: data.data
+        }}
       />
-    </Fragment>
+    </>
   );
 };
