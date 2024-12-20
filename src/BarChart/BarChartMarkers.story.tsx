@@ -94,16 +94,14 @@ export const RadialValueMarkers = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+        <RadialAxisArcSeries count={10} />
+      </RadialAxis>
     }
   />
 );

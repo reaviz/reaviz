@@ -44,17 +44,15 @@ export const SemiCircle = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.5 * Math.PI}
     endAngle={0.5 * Math.PI}
@@ -107,17 +105,15 @@ export const QuarterCircle = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={0}
     endAngle={0.5 * Math.PI}
@@ -172,17 +168,15 @@ export const CustomCircle = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-Math.PI}
     endAngle={0.5 * Math.PI}
@@ -206,17 +200,15 @@ export const CustomCircle2 = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-Math.PI}
     endAngle={-0.25 * Math.PI}
@@ -240,17 +232,15 @@ export const CustomCircle3 = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.75 * Math.PI}
     endAngle={0.75 * Math.PI}
@@ -274,17 +264,15 @@ export const CustomCircle4 = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.25 * Math.PI}
     endAngle={0.25 * Math.PI}
@@ -308,17 +296,15 @@ export const NoAutoRotateLabels = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="inside" />
-              <RadialAxisTickLabel autoRotate={false} />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate={false} />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={0}
     endAngle={0.5 * Math.PI}

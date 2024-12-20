@@ -43,17 +43,15 @@ export const SemiCircle = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={5} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="outside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={5} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="outside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.5 * Math.PI}
     endAngle={0.5 * Math.PI}
@@ -91,17 +89,15 @@ export const Custom = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={5} />}
-        ticks={
-          <RadialAxisTickSeries count={5}>
-            <RadialAxisTick>
-              <RadialAxisTickLine position="outside" />
-              <RadialAxisTickLabel autoRotate />
-            </RadialAxisTick>
-          </RadialAxisTickSeries>
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={5} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="outside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.25 * Math.PI}
     endAngle={0.25 * Math.PI}

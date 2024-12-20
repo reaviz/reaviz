@@ -107,7 +107,9 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
               height={chartHeight}
               width={chartWidth}
               innerRadius={innerRadius}
-            />
+            >
+              {axis.props.children}
+            </CloneElement>
           )}
           <CloneElement<RadialScatterSeriesProps>
             element={series}

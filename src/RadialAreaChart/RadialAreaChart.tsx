@@ -177,7 +177,9 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
               innerRadius={innerRadius}
               startAngle={startAngle}
               endAngle={endAngle}
-            />
+            >
+              {axis.props?.children}
+            </CloneElement>
           )}
           <CloneElement<RadialAreaSeriesProps>
             element={series}
