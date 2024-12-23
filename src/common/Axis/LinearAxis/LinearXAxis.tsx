@@ -107,10 +107,12 @@ export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => {
           />
         )
       }
-    />
+    >
+      {xAxisProps?.children}
+    </LinearAxis>
   );
 };
-export const LINEAR_X_AXIS_DEFAULT_PROPS = {
+export const LINEAR_X_AXIS_DEFAULT_PROPS: Partial<LinearAxisProps> = {
   ...LINEAR_AXIS_DEFAULT_PROPS,
   position: 'end',
   roundDomains: false,

@@ -21,7 +21,9 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearAxisLine,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
@@ -61,6 +63,19 @@ export const Simple = () => (
         padding={0.8}
       />
     }
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -89,6 +104,19 @@ export const Stacked = () => (
         }
         colorScheme="cybertron"
       />
+    }
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );
@@ -127,9 +155,16 @@ export const StackedCustomStyle = () => (
     }
     yAxis={
       <LinearYAxis
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
       />
+    }
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
     }
   />
 );
@@ -188,14 +223,18 @@ export const StackedDiverging = () => (
             label={<LinearYAxisTickLabel padding={5} />}
           />
         }
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     xAxis={
       <LinearXAxis
         type="category"
         position="center"
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
     }
   />
 );
@@ -226,6 +265,31 @@ export const StackedNormalized = () => (
         colorScheme="cybertron"
       />
     }
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis
+        type="value"
+        tickSeries={
+          <LinearYAxisTickSeries
+            label={
+              <LinearYAxisTickLabel
+                rotation={false}
+                format={(data) => `${data * 100}%`}
+              />
+            }
+          />
+        }
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -255,6 +319,32 @@ export const Marimekko = () => (
         }
         colorScheme="cybertron"
       />
+    }
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={15} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis
+        type="value"
+        tickSeries={
+          <LinearYAxisTickSeries
+            label={
+              // TODO: create utility label for displaying percentage on Y axis
+              <LinearYAxisTickLabel
+                rotation={false}
+                format={(data) => `${data * 100}%`}
+              />
+            }
+          />
+        }
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );

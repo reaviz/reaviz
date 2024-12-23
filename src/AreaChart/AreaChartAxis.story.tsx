@@ -16,7 +16,8 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import { getYScale, getXScale } from '@/common/scales';
 
@@ -71,7 +72,9 @@ export const TopBottomAxis = () => {
               label={<LinearXAxisTickLabel padding={5} position="end" />}
             />
           }
-        />
+        >
+          {/* <LinearAxisLine strokeWidth={2} hidden /> */}
+        </LinearXAxis>
       }
       secondaryAxis={[
         <LinearXAxis

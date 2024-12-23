@@ -13,6 +13,12 @@ import {
   StackedBarSeries,
   StackedNormalizedBarSeries
 } from './BarSeries';
+import {
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis
+} from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -37,6 +43,19 @@ export const AllAxes = () => (
     height={250}
     data={categoryData}
     gridlines={<GridlineSeries line={<Gridline direction="all" />} />}
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -46,6 +65,19 @@ export const XAxis = () => (
     height={250}
     data={categoryData}
     gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -59,6 +91,19 @@ export const YAxis = () => (
     height={250}
     data={categoryData}
     gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 

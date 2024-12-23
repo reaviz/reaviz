@@ -11,7 +11,9 @@ import {
   RadialAxisTick,
   RadialAxisTickLine,
   RadialAxisArcSeries,
-  RadialValueMarker
+  RadialValueMarker,
+  LinearAxisLine,
+  LinearXAxisTickSeries
 } from '@/common';
 import { RadialBar, RadialBarChart, RadialBarSeries } from '@/RadialBarChart';
 import { BarChart } from './BarChart';
@@ -35,12 +37,18 @@ export const LinearValueMarkersVertical = () => (
     width={500}
     height={350}
     data={categoryData}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -72,6 +80,19 @@ export const LinearValueMarkersHorizontal = () => (
           <LinearValueMarker value={6} color="#F8A340" />
         ]}
       />
+    }
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );

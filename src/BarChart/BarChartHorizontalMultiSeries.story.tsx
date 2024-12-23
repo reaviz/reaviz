@@ -22,7 +22,8 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
@@ -44,12 +45,18 @@ export const Simple = () => (
     width={500}
     height={350}
     data={multiCategory}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -69,12 +76,18 @@ export const Stacked = () => (
     width={500}
     height={350}
     data={multiCategory}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={
       <StackedBarSeries
@@ -107,7 +120,9 @@ export const StackedDiverging = () => (
         type="category"
         position="center"
         tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     xAxis={
       <LinearXAxis
@@ -119,7 +134,9 @@ export const StackedDiverging = () => (
             label={<LinearXAxisTickLabel padding={5} />}
           />
         }
-      />
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
     }
   />
 );
@@ -129,7 +146,11 @@ export const StackedNormalized = () => (
     width={500}
     height={350}
     data={multiCategory}
-    yAxis={<LinearYAxis type="category" />}
+    yAxis={
+      <LinearYAxis type="category">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
     xAxis={
       <LinearXAxis
         type="value"
@@ -144,7 +165,9 @@ export const StackedNormalized = () => (
             }
           />
         }
-      />
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
     }
     series={
       <StackedNormalizedBarSeries

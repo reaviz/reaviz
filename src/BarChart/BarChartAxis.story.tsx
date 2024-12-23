@@ -19,7 +19,8 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 import { getXScale, getYScale } from '@/common/scales';
@@ -119,7 +120,9 @@ export const TopBottomAxis = () => {
               }
             />
           }
-        />
+        >
+          <LinearAxisLine />
+        </LinearXAxis>
       }
       secondaryAxis={[
         <LinearYAxis
@@ -132,7 +135,9 @@ export const TopBottomAxis = () => {
               label={<LinearYAxisTickLabel padding={20} position="start" />}
             />
           }
-        />
+        >
+          <LinearAxisLine />
+        </LinearYAxis>
       ]}
       yAxis={
         <LinearYAxis
@@ -140,14 +145,17 @@ export const TopBottomAxis = () => {
           position="center"
           orientation="vertical"
           tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-        />
+        >
+          <LinearAxisLine />
+        </LinearYAxis>
       }
     />
   );
 };
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis'
+  name: 'Top + Bottom Axis',
+  tags: ['single']
 };
 
 export const LeftRightAxis = () => {
@@ -214,7 +222,6 @@ export const LeftRightAxis = () => {
         <LinearYAxis
           roundDomains={true}
           position="end"
-          axisLine={null}
           tickSeries={
             <LinearYAxisTickSeries
               line={null}
@@ -234,13 +241,14 @@ export const LeftRightAxis = () => {
           type="category"
           position="center"
           tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-        />
+        >
+          <LinearAxisLine />
+        </LinearXAxis>
       }
       secondaryAxis={[
         <LinearYAxis
           type="category"
           position="start"
-          axisLine={null}
           scale={scale}
           tickSeries={
             <LinearYAxisTickSeries

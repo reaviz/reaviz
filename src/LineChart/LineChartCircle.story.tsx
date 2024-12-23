@@ -5,6 +5,7 @@ import { PointSeries } from '@/AreaChart';
 import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 import { LineSeries } from './LineSeries';
+import { LinearAxisLine, LinearXAxis, LinearYAxis } from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -22,6 +23,16 @@ export const On = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show={true} />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -32,6 +43,16 @@ export const Off = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show={false} />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -42,6 +63,16 @@ export const OnHover = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show="hover" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -52,6 +83,16 @@ export const OnlyFirst = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show="first" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -62,6 +103,16 @@ export const OnlyLast = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show="last" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -97,6 +148,16 @@ export const Shapes = () => (
           />
         }
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );

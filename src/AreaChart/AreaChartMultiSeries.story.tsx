@@ -16,6 +16,7 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
+import { LinearAxisLine, LinearXAxis, LinearYAxis } from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -38,6 +39,16 @@ export const Simple = () => (
     height={350}
     data={multiDateData}
     series={<AreaSeries type="grouped" colorScheme="cybertron" />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -48,6 +59,16 @@ export const LargeDataset = () => (
     height={350}
     series={<AreaSeries type="grouped" colorScheme="cybertron" />}
     data={longMultiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 LargeDataset.tags = ['skip-snapshot'];
@@ -67,6 +88,16 @@ export const CustomColors = () => (
       />
     }
     data={multiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -77,6 +108,16 @@ export const Stacked = () => (
     height={350}
     series={<StackedAreaSeries colorScheme="cybertron" />}
     data={multiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -87,6 +128,16 @@ export const StackedNormalized = () => (
     height={350}
     data={multiDateData}
     series={<StackedNormalizedAreaSeries colorScheme="cybertron" />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -119,6 +170,16 @@ const LiveUpdatingStory = () => {
           />
         }
         data={data}
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+          </LinearYAxis>
+        }
       />
       <br />
       <button onClick={updateData}>Update</button>

@@ -6,7 +6,8 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import chroma from 'chroma-js';
 import {
@@ -47,12 +48,18 @@ export const Simple = () => (
     width={500}
     height={350}
     data={data}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -72,12 +79,18 @@ export const WithScroll = () => (
       width={500}
       height={350}
       data={data}
-      xAxis={<LinearXAxis type="value" />}
+      xAxis={
+        <LinearXAxis type="value">
+          <LinearAxisLine />
+        </LinearXAxis>
+      }
       yAxis={
         <LinearYAxis
           type="category"
           tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-        />
+        >
+          <LinearAxisLine />
+        </LinearYAxis>
       }
       series={
         <BarSeries
@@ -96,12 +109,18 @@ export const LargeDataset = () => (
     height={350}
     width={500}
     data={largeCategoryData}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -119,12 +138,18 @@ export const Labels = () => (
     width={350}
     height={250}
     data={data}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -140,12 +165,18 @@ export const Autosize = () => (
     <BarChart
       data={data}
       series={<BarSeries layout="horizontal" />}
-      xAxis={<LinearXAxis type="value" />}
+      xAxis={
+        <LinearXAxis type="value">
+          <LinearAxisLine />
+        </LinearXAxis>
+      }
       yAxis={
         <LinearYAxis
           type="category"
           tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-        />
+        >
+          <LinearAxisLine />
+        </LinearYAxis>
       }
     />
   </div>
@@ -156,13 +187,19 @@ export const Waterfall = () => (
     height={350}
     width={500}
     data={data}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     series={<BarSeries layout="horizontal" type="waterfall" />}
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );
@@ -180,14 +217,18 @@ export const Duration = () => (
             label={<LinearXAxisTickLabel format={(d) => d / 3600 + 'h'} />}
           />
         }
-      />
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
     }
     series={<BarSeries layout="horizontal" />}
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );
@@ -197,13 +238,19 @@ export const NonZero = () => (
     height={350}
     width={500}
     data={nonZeroCategoryData}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     series={<BarSeries layout="horizontal" />}
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );

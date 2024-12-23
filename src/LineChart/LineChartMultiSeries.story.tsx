@@ -13,7 +13,8 @@ import {
   LinearXAxisTickSeries,
   LinearXAxis,
   LinearYAxisTickSeries,
-  LinearYAxis
+  LinearYAxis,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
@@ -45,6 +46,16 @@ export const _Simple = () => (
       />
     }
     data={multiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -73,6 +84,16 @@ export const Clicked = () => (
       />
     }
     data={multiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -86,7 +107,6 @@ export const LargeData = () => (
       <LinearYAxis
         scaled={true}
         type="value"
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
       />
     }
@@ -94,7 +114,6 @@ export const LargeData = () => (
       <LinearXAxis
         type="value"
         scaled={true}
-        axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
     }
@@ -140,6 +159,16 @@ export const CustomLineStyles = () => (
           .colors(multiDateData.length)}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
     data={multiDateData}
   />
 );
@@ -156,6 +185,16 @@ export const _LargeDataset = () => (
           .scale(['ACB7C9', '418AD7'])
           .colors(longMultiDateData.length)}
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     data={longMultiDateData}
   />
@@ -174,6 +213,16 @@ export const Stacked = () => (
         line={<Line strokeWidth={4} />}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
     data={multiDateData}
   />
 );
@@ -190,6 +239,16 @@ export const StackedNormalized = () => (
         area={null}
         line={<Line strokeWidth={4} />}
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );

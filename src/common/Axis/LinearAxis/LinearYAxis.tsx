@@ -107,7 +107,9 @@ export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => {
           />
         )
       }
-    />
+    >
+      {yAxisProps?.children}
+    </LinearAxis>
   );
 };
 export const LINEAR_Y_AXIS_DEFAULT_PROPS = {

@@ -13,6 +13,7 @@ import {
   StackedNormalizedBarSeries
 } from './BarSeries';
 import {
+  LinearAxisLine,
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
@@ -45,7 +46,14 @@ export const Dates = () => (
       <LinearXAxis
         type="time"
         tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
-      />
+      >
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     series={<HistogramBarSeries binSize={60 * 60 * 24 * 1000} />}
     data={medDateData}
@@ -56,7 +64,16 @@ export const Numbers = () => (
   <HistogramBarChart
     width={350}
     height={250}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
     series={<HistogramBarSeries binSize={1} />}
     data={histogramNumberData}
   />
@@ -233,13 +250,17 @@ export const MultiMonth = () => {
         <LinearXAxis
           type="time"
           tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
-        />
+        >
+          <LinearAxisLine />
+        </LinearXAxis>
       }
       yAxis={
         <LinearYAxis
           tickSeries={<LinearYAxisTickSeries tickSize={25} />}
           type="value"
-        />
+        >
+          <LinearAxisLine />
+        </LinearYAxis>
       }
       series={<HistogramBarSeries binSize={MILLISECONDS_IN_1_DAY} />}
       data={data}

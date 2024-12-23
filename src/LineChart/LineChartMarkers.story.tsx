@@ -1,6 +1,12 @@
 import React from 'react';
 import { medDateData, multiDateData } from 'reaviz-data-utils';
-import { LinearValueMarker, RadialValueMarker } from '@/common';
+import {
+  LinearAxisLine,
+  LinearValueMarker,
+  LinearXAxis,
+  LinearYAxis,
+  RadialValueMarker
+} from '@/common';
 import { RadialAreaChart, RadialAreaSeries } from '@/RadialAreaChart';
 import { LineChart } from './LineChart';
 import { LineSeries } from './LineSeries';
@@ -34,6 +40,16 @@ export const LinearValueMarkers = () => (
         ]}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -60,6 +76,16 @@ export const RadialValueMarkersVertical = () => (
           />
         ]}
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );

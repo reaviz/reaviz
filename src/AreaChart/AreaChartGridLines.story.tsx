@@ -10,6 +10,7 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
+import { LinearAxisLine, LinearXAxis, LinearYAxis } from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -32,6 +33,16 @@ export const AllAxes = () => (
     height={250}
     data={singleDateData}
     gridlines={<GridlineSeries line={<Gridline direction="all" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -42,6 +53,16 @@ export const XAxis = () => (
     height={250}
     data={singleDateData}
     gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -56,6 +77,16 @@ export const YAxis = () => (
     height={250}
     data={singleDateData}
     gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 

@@ -14,7 +14,9 @@ import { ScatterSeries, ScatterPoint } from './ScatterSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearXAxis,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
@@ -40,6 +42,16 @@ export const Simple = () => (
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -49,6 +61,11 @@ export const CategoricalAxis = () => (
     height={400}
     width={750}
     data={signalStageData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
@@ -58,7 +75,9 @@ export const CategoricalAxis = () => (
             label={<LinearYAxisTickLabel rotation={false} />}
           />
         }
-      />
+      >
+        <LinearAxisLine />
+      </LinearYAxis>
     }
     gridlines={
       <GridlineSeries
@@ -76,6 +95,16 @@ export const NoAnimation = () => (
     width={750}
     data={medSignalChartData}
     series={<ScatterSeries animated={false} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -92,7 +121,20 @@ export const Performance = () => (
           display: 'inline-block'
         }}
       >
-        <ScatterPlot id={`performance-${i}`} data={medSignalChartData} />
+        <ScatterPlot
+          id={`performance-${i}`}
+          data={medSignalChartData}
+          xAxis={
+            <LinearXAxis type="time">
+              <LinearAxisLine />
+            </LinearXAxis>
+          }
+          yAxis={
+            <LinearYAxis type="value">
+              <LinearAxisLine />
+            </LinearYAxis>
+          }
+        />
       </div>
     ))}
   </Fragment>
@@ -100,7 +142,20 @@ export const Performance = () => (
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <ScatterPlot id="autosize" data={medSignalChartData} />
+    <ScatterPlot
+      id="autosize"
+      data={medSignalChartData}
+      xAxis={
+        <LinearXAxis type="time">
+          <LinearAxisLine />
+        </LinearXAxis>
+      }
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearAxisLine />
+        </LinearYAxis>
+      }
+    />
   </div>
 );
 
@@ -131,6 +186,16 @@ export const Symbols = () => (
         }
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
   />
 );
 
@@ -150,6 +215,16 @@ export const Bubble = () => (
           />
         }
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
     }
   />
 );
@@ -187,6 +262,16 @@ const BubbleChartLiveUpdate = () => {
               />
             }
           />
+        }
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+          </LinearYAxis>
         }
       />
       <br />

@@ -14,7 +14,8 @@ import {
   schemes,
   LinearValueMarker,
   LinearXAxis,
-  LinearYAxis
+  LinearYAxis,
+  LinearAxisLine
 } from '@/common';
 import {
   RadialScatterPlot,
@@ -43,6 +44,16 @@ export const LinearValueMarkers = () => (
     height={400}
     width={750}
     data={medSignalChartData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
     series={
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
@@ -61,8 +72,16 @@ export const LinearValueMarkersVertical = () => (
     height={400}
     width={750}
     data={histogramNumberData}
-    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
-    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
+    xAxis={
+      <LinearXAxis type="value" domain={[0, 50]}>
+        <LinearAxisLine />
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value" domain={[0, 10]}>
+        <LinearAxisLine />
+      </LinearYAxis>
+    }
     series={
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
