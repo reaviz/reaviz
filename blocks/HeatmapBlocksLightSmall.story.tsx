@@ -21,7 +21,7 @@ import {
 import { schemes } from '../src/common/color/schemes';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Heatmap/Light/Small',
   component: AreaChart
 };

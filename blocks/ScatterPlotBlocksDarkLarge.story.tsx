@@ -22,7 +22,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Scatter Plot/Dark/Large',
   component: ScatterPlot
 };

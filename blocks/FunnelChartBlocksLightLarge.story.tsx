@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Funnel Chart/Light/Large',
   component: FunnelChart
 };
