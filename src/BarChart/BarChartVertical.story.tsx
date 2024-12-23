@@ -84,11 +84,6 @@ export const CustomStyle = () => (
         <LinearAxisLine />
       </LinearYAxis>
     }
-    yAxis={
-      <LinearYAxis type="value">
-        <LinearAxisLine />
-      </LinearYAxis>
-    }
   />
 );
 
