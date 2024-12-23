@@ -100,7 +100,6 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
       yAxis={
         <LinearYAxis
           type="category"
-          axisLine={null}
           domain={yDomain}
           tickSeries={
             <LinearYAxisTickSeries
@@ -116,7 +115,6 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
       xAxis={
         <LinearXAxis
           type="category"
-          axisLine={null}
           domain={xDomain}
           tickSeries={
             <LinearXAxisTickSeries

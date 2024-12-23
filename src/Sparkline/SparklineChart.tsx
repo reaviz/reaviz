@@ -30,7 +30,6 @@ export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => (
       <LinearYAxis
         scaled={true}
         type="value"
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
       />
     }
@@ -38,7 +37,6 @@ export const SparklineChart: FC<Partial<SparklineChartProps>> = (props) => (
       <LinearXAxis
         type="time"
         scaled={true}
-        axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
     }

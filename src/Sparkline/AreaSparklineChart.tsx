@@ -45,7 +45,6 @@ export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
       <LinearYAxis
         type="value"
         scaled={true}
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
       />
     }
@@ -53,7 +52,6 @@ export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
       <LinearXAxis
         type="time"
         scaled={true}
-        axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
     }

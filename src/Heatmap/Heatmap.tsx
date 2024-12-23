@@ -63,7 +63,6 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   yAxis = (
     <LinearYAxis
       type="category"
-      axisLine={null}
       tickSeries={
         <LinearYAxisTickSeries
           line={null}
@@ -80,7 +79,6 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   xAxis = (
     <LinearXAxis
       type="category"
-      axisLine={null}
       tickSeries={
         <LinearXAxisTickSeries
           line={null}

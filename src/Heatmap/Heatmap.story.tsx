@@ -78,7 +78,6 @@ export const MultiAxis = () => {
         <LinearYAxis
           type="category"
           scale={scale}
-          axisLine={null}
           position="end"
           tickSeries={
             <LinearYAxisTickSeries

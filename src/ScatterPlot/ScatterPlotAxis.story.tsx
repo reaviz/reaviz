@@ -58,7 +58,6 @@ export const TopBottomAxis = () => {
           type="time"
           orientation="horizontal"
           position="end"
-          axisLine={null}
           tickSeries={
             <LinearXAxisTickSeries
               line={null}
@@ -73,7 +72,6 @@ export const TopBottomAxis = () => {
           orientation="horizontal"
           position="start"
           scale={scale}
-          axisLine={null}
           tickSeries={
             <LinearXAxisTickSeries
               line={null}
@@ -82,7 +80,7 @@ export const TopBottomAxis = () => {
           }
         />
       ]}
-      yAxis={<LinearYAxis type="value" axisLine={null} />}
+      yAxis={<LinearYAxis type="value" />}
     />
   );
 };
@@ -121,7 +119,6 @@ export const LeftRightAxis = () => {
       yAxis={
         <LinearYAxis
           position="end"
-          axisLine={null}
           tickSeries={
             <LinearYAxisTickSeries
               line={null}
@@ -134,7 +131,6 @@ export const LeftRightAxis = () => {
         <LinearYAxis
           type="category"
           position="start"
-          axisLine={null}
           scale={scale}
           tickSeries={
             <LinearYAxisTickSeries
@@ -151,7 +147,7 @@ export const LeftRightAxis = () => {
           }
         />
       ]}
-      xAxis={<LinearXAxis type="time" axisLine={null} />}
+      xAxis={<LinearXAxis type="time" />}
     />
   );
 };

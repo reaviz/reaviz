@@ -49,7 +49,6 @@ export const Line = () => (
     }
     yAxis={
       <LinearYAxis
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries label={null} line={null} />}
       />
     }
@@ -69,7 +68,6 @@ export const Scatter = () => (
     }
     yAxis={
       <LinearYAxis
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries label={null} line={null} />}
       />
     }
@@ -100,7 +98,6 @@ export const Bar = () => {
       gridlines={null}
       yAxis={
         <LinearYAxis
-          axisLine={null}
           tickSeries={<LinearYAxisTickSeries label={null} line={null} />}
         />
       }
@@ -167,19 +164,12 @@ export const Bubble = () => {
           }
         />
       }
-      yAxis={
-        <LinearYAxis
-          domain={[0, 2]}
-          axisLine={null}
-          tickSeries={<LinearYAxisTickSeries label={null} line={null} />}
-        />
-      }
+      yAxis={<LinearYAxis domain={[0, 2]} />}
       xAxis={
         <LinearXAxis
           type="time"
           roundDomains={true}
           domain={[generateDate(22), generateDate(2)]}
-          axisLine={null}
           tickSeries={
             <LinearXAxisTickSeries
               line={null}
@@ -293,7 +283,6 @@ class ZoomBrushStory extends Component {
               <LinearYAxis
                 domain={[0, 2]}
                 type="value"
-                axisLine={null}
                 tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
               />
             }

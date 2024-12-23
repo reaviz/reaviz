@@ -23,14 +23,12 @@ export const BarSparklineChart: FC<Partial<BarSparklineChartProps>> = (
     yAxis={
       <LinearYAxis
         type="value"
-        axisLine={null}
         tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
       />
     }
     xAxis={
       <LinearXAxis
         type="category"
-        axisLine={null}
         tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
       />
     }
