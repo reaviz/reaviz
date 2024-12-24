@@ -112,7 +112,7 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
         )
         .padding(padding)
         .font(fontFamily)
-        .fontSize((d) => d.size!)
+        .fontSize((d) => d.size)
         .rotate(() =>
           rotations > 0
             ? (Math.floor(Math.random() * rotations) *
