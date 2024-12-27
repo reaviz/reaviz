@@ -19,5 +19,7 @@ export const StackedBarChart: FC<Partial<StackedBarChartProps>> = (props) => (
         {...props.series.props}
       />
     }
-  />
+  >
+    {props.children}
+  </BarChart>
 );

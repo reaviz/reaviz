@@ -3,10 +3,18 @@ import { singleDateData } from 'reaviz-data-utils';
 import { LineChart } from './LineChart';
 import { GridlineSeries, Gridline } from '@/common/Gridline';
 import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisLine,
   LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
   LinearXAxisTickSeries,
-  LinearYAxis
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
 } from '@/common';
 
 export default {
@@ -25,11 +33,19 @@ export const AllAxes = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -45,11 +61,19 @@ export const XAxis = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -69,11 +93,19 @@ export const YAxis = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />

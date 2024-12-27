@@ -262,7 +262,9 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
                 width={chartWidth}
                 visibility={chartSized ? 'visible' : 'hidden'}
                 onDimensionsChange={(event) => updateAxes('horizontal', event)}
-              />
+              >
+                {axis.props?.children}
+              </CloneElement>
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>

@@ -23,7 +23,12 @@ import {
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
   LinearAxisLine,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LinearYAxisTickLine,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
@@ -64,16 +69,21 @@ export const Simple = () => (
       />
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -106,16 +116,21 @@ export const Stacked = () => (
       />
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -154,16 +169,17 @@ export const StackedCustomStyle = () => (
       />
     }
     yAxis={
-      <LinearYAxis
-        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-      />
+      <LinearYAxis>
+        <LinearYAxisTickSeries />
+      </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
   />
@@ -215,25 +231,20 @@ export const StackedDiverging = () => (
       />
     }
     yAxis={
-      <LinearYAxis
-        roundDomains={true}
-        tickSeries={
-          <LinearYAxisTickSeries
-            line={null}
-            label={<LinearYAxisTickLabel padding={5} />}
-          />
-        }
-      >
+      <LinearYAxis roundDomains={true}>
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            padding={5}
+          />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        position="center"
-        tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-      >
+      <LinearXAxis type="category" position="center">
         <LinearAxisLine />
+        <LinearXAxisTickSeries />
       </LinearXAxis>
     }
   />
@@ -266,28 +277,25 @@ export const StackedNormalized = () => (
       />
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
-      <LinearYAxis
-        type="value"
-        tickSeries={
-          <LinearYAxisTickSeries
-            label={
-              <LinearYAxisTickLabel
-                rotation={false}
-                format={(data) => `${data * 100}%`}
-              />
-            }
-          />
-        }
-      >
+      <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -321,29 +329,25 @@ export const Marimekko = () => (
       />
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={15} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={15}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
-      <LinearYAxis
-        type="value"
-        tickSeries={
-          <LinearYAxisTickSeries
-            label={
-              // TODO: create utility label for displaying percentage on Y axis
-              <LinearYAxisTickLabel
-                rotation={false}
-                format={(data) => `${data * 100}%`}
-              />
-            }
-          />
-        }
-      >
+      <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />

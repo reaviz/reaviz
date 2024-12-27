@@ -5,13 +5,15 @@ import { CloneElement } from 'reablocks';
 import {
   LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
   LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-  LinearAxisProps
+  LinearAxisProps,
+  LinearAxisTickSeries
 } from '../Axis';
 import {
   GridStripeProps,
   GridStripe,
   GRID_STRIPE_DEFAULT_PROPS
 } from './GridStripe';
+import { getChildComponent } from '../utils';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
@@ -83,14 +85,22 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'x';
 
+  const xAxisTickSeries = getChildComponent(
+    xAxis.children,
+    LinearAxisTickSeries.name
+  );
+  const yAxisTickSeries = getChildComponent(
+    yAxis.children,
+    LinearAxisTickSeries.name
+  );
   const { yAxisGrid, xAxisGrid } = useMemo(() => {
     const xTickSeriesProps = {
       ...LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
-      ...xAxis.tickSeries.props
+      ...xAxisTickSeries?.props
     };
     const yTickSeriesProps = {
       ...LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-      ...yAxis.tickSeries.props
+      ...yAxisTickSeries?.props
     };
 
     return {

@@ -13,10 +13,17 @@ import {
   StackedNormalizedBarSeries
 } from './BarSeries';
 import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisLine,
   LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
   LinearXAxisTickSeries,
   LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
   LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { HistogramBarChart } from './HistogramBarChart';
@@ -43,16 +50,21 @@ export const Dates = () => (
     width={350}
     height={250}
     xAxis={
-      <LinearXAxis
-        type="time"
-        tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
-      >
+      <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries interval={timeWeek}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     series={<HistogramBarSeries binSize={60 * 60 * 24 * 1000} />}
@@ -67,11 +79,19 @@ export const Numbers = () => (
     xAxis={
       <LinearXAxis type="value">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     series={<HistogramBarSeries binSize={1} />}
@@ -247,19 +267,21 @@ export const MultiMonth = () => {
       height={250}
       gridlines={null}
       xAxis={
-        <LinearXAxis
-          type="time"
-          tickSeries={<LinearXAxisTickSeries interval={timeWeek} />}
-        >
+        <LinearXAxis type="time">
           <LinearAxisLine />
+          <LinearXAxisTickSeries interval={timeWeek}>
+            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
         </LinearXAxis>
       }
       yAxis={
-        <LinearYAxis
-          tickSeries={<LinearYAxisTickSeries tickSize={25} />}
-          type="value"
-        >
+        <LinearYAxis type="value">
           <LinearAxisLine />
+          <LinearYAxisTickSeries tickSize={25}>
+            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+          </LinearYAxisTickSeries>
         </LinearYAxis>
       }
       series={<HistogramBarSeries binSize={MILLISECONDS_IN_1_DAY} />}

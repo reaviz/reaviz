@@ -14,7 +14,14 @@ import {
   LinearXAxis,
   LinearYAxisTickSeries,
   LinearYAxis,
-  LinearAxisLine
+  LinearAxisLine,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
@@ -49,11 +56,19 @@ export const _Simple = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -87,11 +102,19 @@ export const Clicked = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -104,18 +127,14 @@ export const LargeData = () => (
     height={300}
     data={prettyData}
     yAxis={
-      <LinearYAxis
-        scaled={true}
-        type="value"
-        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-      />
+      <LinearYAxis scaled={true} type="value">
+        <LinearYAxisTickSeries />
+      </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        type="value"
-        scaled={true}
-        tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-      />
+      <LinearXAxis type="value" scaled={true}>
+        <LinearXAxisTickSeries />
+      </LinearXAxis>
     }
     series={
       <LineSeries
@@ -162,11 +181,19 @@ export const CustomLineStyles = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     data={multiDateData}
@@ -189,11 +216,19 @@ export const _LargeDataset = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     data={longMultiDateData}
@@ -216,11 +251,19 @@ export const Stacked = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     data={multiDateData}
@@ -243,11 +286,19 @@ export const StackedNormalized = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />

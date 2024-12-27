@@ -50,7 +50,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   const {
     children,
     position,
-    tickSeries,
+    // tickSeries,
     height,
     width,
     scale,
@@ -59,6 +59,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     onDimensionsChange
   } = mergeDefaultProps(LINEAR_AXIS_DEFAULT_PROPS, props);
   const axisLine = getChildComponent(children, LinearAxisLine.name);
+  const tickSeries = getChildComponent(children, LinearAxisTickSeries.name);
   const tickSeriesProps = useMemo(
     () =>
       mergeDefaultProps(
@@ -67,6 +68,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
       ),
     [tickSeries?.props]
   );
+  console.log('[log] LinearAxis', { tickSeries });
 
   const containerRef = createRef<SVGGElement>();
   const [dimensions, setDimensions] = useState<LinearAxisState>({
@@ -138,7 +140,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           {axisLine.props?.children}
         </CloneElement>
       )}
-      {(tickSeriesProps.line || tickSeriesProps.label) && (
+      {tickSeries && (
         <CloneElement<LinearAxisTickSeriesProps>
           element={tickSeries}
           height={height}
@@ -146,7 +148,9 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           scale={scale}
           orientation={orientation}
           axis={props}
-        />
+        >
+          {tickSeries.props?.children}
+        </CloneElement>
       )}
     </g>
   );

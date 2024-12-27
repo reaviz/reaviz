@@ -14,10 +14,17 @@ import {
   StackedNormalizedBarSeries
 } from './BarSeries';
 import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisLine,
   LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
   LinearXAxisTickSeries,
-  LinearYAxis
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
 } from '@/common';
 
 export default {
@@ -44,16 +51,21 @@ export const AllAxes = () => (
     data={categoryData}
     gridlines={<GridlineSeries line={<Gridline direction="all" />} />}
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -66,16 +78,21 @@ export const XAxis = () => (
     data={categoryData}
     gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -92,16 +109,21 @@ export const YAxis = () => (
     data={categoryData}
     gridlines={<GridlineSeries line={<Gridline direction="y" />} />}
     xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      >
+      <LinearXAxis type="category">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />

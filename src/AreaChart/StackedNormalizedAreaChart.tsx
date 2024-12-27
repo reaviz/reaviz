@@ -24,6 +24,7 @@ export const StackedNormalizedAreaChart: FC<
         type="stackedNormalized"
       />
     }
+    // TODO: think how to make it as default via child props
     yAxis={
       <LinearYAxis
         type="value"

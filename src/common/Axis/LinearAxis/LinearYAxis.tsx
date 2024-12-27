@@ -28,6 +28,7 @@ export const LinearYAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     {...mergeDefaultProps(LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS, props)}
   />
 );
+LinearYAxisTickLabel.displayName = 'LinearAxisTickLabel';
 export const LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   rotation: false,
@@ -42,6 +43,7 @@ export const LinearYAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
     {...mergeDefaultProps(LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS, props)}
   />
 );
+LinearYAxisTickLine.displayName = 'LinearAxisTickLine';
 export const LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   position: 'start'
@@ -58,34 +60,35 @@ export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   return (
     <LinearAxisTickSeries
       {...yTickSeriesProps}
-      line={
-        yTickSeriesProps?.line ? (
-          <LinearYAxisTickLine
-            {...mergeDefaultProps(
-              LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
-              props?.line?.props
-            )}
-          />
-        ) : null
-      }
-      label={
-        yTickSeriesProps?.label ? (
-          <LinearYAxisTickLabel
-            {...mergeDefaultProps(
-              LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
-              props?.label?.props
-            )}
-          />
-        ) : null
-      }
+      // line={
+      //   yTickSeriesProps?.line ? (
+      //     <LinearYAxisTickLine
+      //       {...mergeDefaultProps(
+      //         LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+      //         props?.line?.props
+      //       )}
+      //     />
+      //   ) : null
+      // }
+      // label={
+      //   yTickSeriesProps?.label ? (
+      //     <LinearYAxisTickLabel
+      //       {...mergeDefaultProps(
+      //         LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+      //         props?.label?.props
+      //       )}
+      //     />
+      //   ) : null
+      // }
     />
   );
 };
+LinearYAxisTickSeries.displayName = 'LinearAxisTickSeries';
 export const LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
-  tickSize: 30,
-  line: <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />,
-  label: <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+  tickSize: 30
+  // line: <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />,
+  // label: <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
 };
 
 export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => {
@@ -97,16 +100,16 @@ export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => {
   return (
     <LinearAxis
       {...yAxisProps}
-      tickSeries={
-        yAxisProps.tickSeries && (
-          <LinearYAxisTickSeries
-            {...mergeDefaultProps(
-              LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-              yAxisProps?.tickSeries?.props
-            )}
-          />
-        )
-      }
+      // tickSeries={
+      //   yAxisProps.tickSeries && (
+      //     <LinearYAxisTickSeries
+      //       {...mergeDefaultProps(
+      //         LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+      //         yAxisProps?.tickSeries?.props
+      //       )}
+      //     />
+      //   )
+      // }
     >
       {yAxisProps?.children}
     </LinearAxis>

@@ -23,7 +23,13 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearXAxisTickLabel,
-  LinearAxisLine
+  LinearAxisLine,
+  LinearXAxisTickLine,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
@@ -48,6 +54,10 @@ export const Simple = () => (
     xAxis={
       <LinearXAxis type="value">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
@@ -56,6 +66,10 @@ export const Simple = () => (
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
       >
         <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20}>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     series={
@@ -79,14 +93,19 @@ export const Stacked = () => (
     xAxis={
       <LinearXAxis type="value">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
-      <LinearYAxis
-        type="category"
-        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      >
+      <LinearYAxis type="category">
         <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20}>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     series={
@@ -116,26 +135,17 @@ export const StackedDiverging = () => (
       />
     }
     yAxis={
-      <LinearYAxis
-        type="category"
-        position="center"
-        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-      >
+      <LinearYAxis type="category" position="center">
         <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20} />
       </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        roundDomains={true}
-        type="value"
-        tickSeries={
-          <LinearXAxisTickSeries
-            line={null}
-            label={<LinearXAxisTickLabel padding={5} />}
-          />
-        }
-      >
+      <LinearXAxis roundDomains={true} type="value">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLabel padding={5} />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
   />
@@ -149,24 +159,22 @@ export const StackedNormalized = () => (
     yAxis={
       <LinearYAxis type="category">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        type="value"
-        tickSeries={
-          <LinearXAxisTickSeries
-            tickSize={20}
-            label={
-              <LinearXAxisTickLabel
-                rotation={false}
-                format={(data) => `${data * 100}%`}
-              />
-            }
-          />
-        }
-      >
+      <LinearXAxis type="value">
         <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     series={

@@ -1,4 +1,10 @@
-import React, { FC, useCallback, useState, useMemo } from 'react';
+import React, {
+  FC,
+  useCallback,
+  useState,
+  useMemo,
+  PropsWithChildren
+} from 'react';
 import { Margins, getDimension } from '@/common/utils/dimensions';
 import { useResizeObserver } from '@/common/utils/useResizeObserver';
 import { useId } from 'reablocks';
@@ -7,7 +13,7 @@ import classNames from 'classnames';
 import { ChartContextProps, ChartProvider } from './ChartContext';
 import css from './ChartContainer.module.css';
 
-export interface ChartProps {
+export interface ChartProps extends PropsWithChildren {
   /**
    * Id of the chart.
    */
@@ -169,6 +175,14 @@ export const ChartContainer: FC<ChartContainerProps> = ({
 
   const translateX = center || centerX ? width / 2 : childProps.xMargin;
   const translateY = center || centerY ? height / 2 : childProps.yMargin;
+
+  console.log('[log] ChartContainer', {
+    height,
+    width,
+    translateX,
+    translateY,
+    xMargin: childProps.xMargin
+  });
 
   const styleHeight =
     rest.height !== undefined && rest.height !== null ? rest.height : '100%';

@@ -12,7 +12,8 @@ export const getChildComponent = <T extends ReactElement<any, any>>(
         typeof child === 'object' &&
         'type' in child &&
         typeof child.type === 'function' &&
-        child.type?.name === componentName
+        (child.type?.name === componentName ||
+          (child.type as any)?.displayName === componentName)
       ) {
         return child;
       }

@@ -12,7 +12,9 @@ export interface LinearAxisTickLabelProps {
   angle: number;
   orientation: 'horizontal' | 'vertical';
   half: 'start' | 'end' | 'center';
-  line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
+  // line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
+  lineSize?: number;
+  linePosition?: 'start' | 'end' | 'center';
   format?: (v) => any;
   /**
    * Format tooltip title on hover label.
@@ -38,7 +40,9 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     angle,
     orientation,
     half,
-    line,
+    // line,
+    lineSize,
+    linePosition,
     textAnchor,
     position,
     className,
@@ -69,13 +73,12 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
 
   // bug in this function - spacing is NA
   function getTickLineSpacing() {
-    if (!line) {
+    if (!lineSize && !linePosition) {
       return [0, 0];
     }
 
-    const lineProps = { ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS, ...line.props };
-    const size = lineProps.size ?? 3;
-    const position = lineProps.position ?? 'center';
+    const size = lineSize ?? 3;
+    const position = linePosition ?? 'center';
 
     if (position === 'start') {
       return [size * -1, 0];
