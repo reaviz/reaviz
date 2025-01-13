@@ -12,7 +12,11 @@ import {
   LinearYAxisTickLabel,
   LinearXAxis,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearYAxisTickLine,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearXAxisTickLine,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { getYScale, getXScale } from '@/common/scales';
 
@@ -54,17 +58,11 @@ export const TopBottomAxis = () => {
       margins={0}
       data={singleDateData}
       xAxis={
-        <LinearXAxis
-          type="time"
-          orientation="horizontal"
-          position="end"
-          tickSeries={
-            <LinearXAxisTickSeries
-              line={null}
-              label={<LinearXAxisTickLabel padding={5} position="end" />}
-            />
-          }
-        />
+        <LinearXAxis type="time" orientation="horizontal" position="end">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel padding={5} position="end" />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
       }
       secondaryAxis={[
         <LinearXAxis
@@ -72,15 +70,21 @@ export const TopBottomAxis = () => {
           orientation="horizontal"
           position="start"
           scale={scale}
-          tickSeries={
-            <LinearXAxisTickSeries
-              line={null}
-              label={<LinearXAxisTickLabel padding={20} position="start" />}
-            />
-          }
-        />
+        >
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel padding={20} position="start" />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
       ]}
-      yAxis={<LinearYAxis type="value" />}
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearYAxisTickSeries>
+            {/* TODO: get rid of dependency on line props inside tick label */}
+            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLabel />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
     />
   );
 };
@@ -117,37 +121,32 @@ export const LeftRightAxis = () => {
       margins={0}
       data={singleDateData}
       yAxis={
-        <LinearYAxis
-          position="end"
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={<LinearYAxisTickLabel padding={5} position="end" />}
-            />
-          }
-        />
+        <LinearYAxis position="end">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel padding={5} position="end" />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       }
       secondaryAxis={[
-        <LinearYAxis
-          type="category"
-          position="start"
-          scale={scale}
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={
-                <LinearYAxisTickLabel
-                  padding={20}
-                  position="start"
-                  rotation={270}
-                  align="start"
-                />
-              }
+        <LinearYAxis type="category" position="start" scale={scale}>
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              padding={20}
+              position="start"
+              rotation={270}
+              align="start"
             />
-          }
-        />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       ]}
-      xAxis={<LinearXAxis type="time" />}
+      xAxis={
+        <LinearXAxis type="time">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
     />
   );
 };

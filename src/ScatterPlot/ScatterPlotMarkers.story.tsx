@@ -15,7 +15,15 @@ import {
   LinearValueMarker,
   LinearXAxis,
   LinearYAxis,
-  LinearAxisLine
+  LinearAxisLine,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickSeries,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common';
 import {
   RadialScatterPlot,
@@ -47,11 +55,19 @@ export const LinearValueMarkers = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     series={
@@ -75,11 +91,19 @@ export const LinearValueMarkersVertical = () => (
     xAxis={
       <LinearXAxis type="value" domain={[0, 50]}>
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value" domain={[0, 10]}>
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     series={

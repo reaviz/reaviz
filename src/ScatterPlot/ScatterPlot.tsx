@@ -215,7 +215,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
                 width={chartWidth}
                 visibility={chartSized ? 'visible' : 'hidden'}
                 onDimensionsChange={(e) => updateAxes('horizontal', e)}
-              />
+              >
+                {axis.props?.children}
+              </CloneElement>
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>

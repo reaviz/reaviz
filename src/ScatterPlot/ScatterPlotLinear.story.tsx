@@ -16,7 +16,13 @@ import {
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
   LinearXAxis,
-  LinearAxisLine
+  LinearAxisLine,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickLine,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
@@ -45,11 +51,19 @@ export const Simple = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -64,19 +78,19 @@ export const CategoricalAxis = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
-      <LinearYAxis
-        type="category"
-        domain={signalStages as any}
-        tickSeries={
-          <LinearYAxisTickSeries
-            label={<LinearYAxisTickLabel rotation={false} />}
-          />
-        }
-      >
+      <LinearYAxis type="category" domain={signalStages as any}>
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel rotation={false} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
     gridlines={
@@ -98,11 +112,19 @@ export const NoAnimation = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -127,11 +149,23 @@ export const Performance = () => (
           xAxis={
             <LinearXAxis type="time">
               <LinearAxisLine />
+              <LinearXAxisTickSeries>
+                <LinearXAxisTickLine
+                  {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS}
+                />
+                <LinearXAxisTickLabel />
+              </LinearXAxisTickSeries>
             </LinearXAxis>
           }
           yAxis={
             <LinearYAxis type="value">
               <LinearAxisLine />
+              <LinearYAxisTickSeries>
+                <LinearYAxisTickLine
+                  {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS}
+                />
+                <LinearYAxisTickLabel />
+              </LinearYAxisTickSeries>
             </LinearYAxis>
           }
         />
@@ -148,11 +182,19 @@ export const Autosize = () => (
       xAxis={
         <LinearXAxis type="time">
           <LinearAxisLine />
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
         </LinearXAxis>
       }
       yAxis={
         <LinearYAxis type="value">
           <LinearAxisLine />
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLabel />
+          </LinearYAxisTickSeries>
         </LinearYAxis>
       }
     />
@@ -189,11 +231,19 @@ export const Symbols = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -219,11 +269,19 @@ export const Bubble = () => (
     xAxis={
       <LinearXAxis type="time">
         <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
       </LinearXAxis>
     }
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />
@@ -266,11 +324,19 @@ const BubbleChartLiveUpdate = () => {
         xAxis={
           <LinearXAxis type="time">
             <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
           </LinearXAxis>
         }
         yAxis={
           <LinearYAxis type="value">
             <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+              <LinearYAxisTickLabel />
+            </LinearYAxisTickSeries>
           </LinearYAxis>
         }
       />
