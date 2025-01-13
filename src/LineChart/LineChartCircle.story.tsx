@@ -132,6 +132,10 @@ export const OnlyFirst = () => (
     yAxis={
       <LinearYAxis type="value">
         <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
       </LinearYAxis>
     }
   />

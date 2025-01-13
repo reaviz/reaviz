@@ -21,7 +21,8 @@ import {
   LinearYAxisTickLine,
   LinearYAxisTickLabel,
   LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 import { ScatterPoint } from '../ScatterPlot';
@@ -288,7 +289,7 @@ export const StackedNormalized = () => (
         <LinearAxisLine />
         <LinearXAxisTickSeries>
           <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
-          <LinearXAxisTickLabel />
+          <LinearXAxisTickLabel {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearXAxisTickSeries>
       </LinearXAxis>
     }
@@ -297,7 +298,11 @@ export const StackedNormalized = () => (
         <LinearAxisLine />
         <LinearYAxisTickSeries>
           <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
-          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
         </LinearYAxisTickSeries>
       </LinearYAxis>
     }
