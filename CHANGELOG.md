@@ -1,3 +1,6 @@
+# 15.19.1 - 1/13/25
+- [fix] fix export of word cloud
+
 # 15.19.0 - 12/23/24
 - [feature] word cloud
 
