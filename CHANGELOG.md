@@ -1,3 +1,6 @@
+# 15.19.0 - 12/23/24
+- [feature] word cloud
+
 # 15.18.5 - 8/2/24
 - [fix] Fix tooltip blinking #243
 
