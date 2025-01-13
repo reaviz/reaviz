@@ -176,14 +176,6 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const translateX = center || centerX ? width / 2 : childProps.xMargin;
   const translateY = center || centerY ? height / 2 : childProps.yMargin;
 
-  console.log('[log] ChartContainer', {
-    height,
-    width,
-    translateX,
-    translateY,
-    xMargin: childProps.xMargin
-  });
-
   const styleHeight =
     rest.height !== undefined && rest.height !== null ? rest.height : '100%';
   const styleWidth =

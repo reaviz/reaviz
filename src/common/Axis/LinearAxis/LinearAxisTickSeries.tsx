@@ -213,8 +213,6 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     return angle;
   }, [getDimension, label, labelProps, ticks]);
 
-  console.log('[log] LinearAxisTickSeries', orientation, ticks);
-
   return (
     <Fragment>
       {ticks.map((tick, i) => (

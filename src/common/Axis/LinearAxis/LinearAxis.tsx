@@ -68,7 +68,6 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
       ),
     [tickSeries?.props]
   );
-  console.log('[log] LinearAxis', { tickSeries });
 
   const containerRef = createRef<SVGGElement>();
   const [dimensions, setDimensions] = useState<LinearAxisState>({
