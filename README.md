@@ -101,6 +101,7 @@ Chart types include:
 - Spider / Radar
 - Funnel Chart
 - Sunburst Chart
+- Word Cloud
 
 Additional features:
 
