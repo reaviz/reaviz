@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Heatmap,
   HeatmapCell,
@@ -18,6 +19,7 @@ import {
 import { schemes } from '../src/common/color/schemes';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Heatmap/Dark/X-Small',
   component: ScatterPlot
 };
@@ -1021,7 +1023,7 @@ export const Hot = () => {
                 { fill: '#E84045' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
               padding={0.3}
@@ -1079,7 +1081,7 @@ export const HotCircle = () => {
                 { fill: '#E84045' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
             />

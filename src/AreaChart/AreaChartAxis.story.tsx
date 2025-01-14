@@ -21,6 +21,7 @@ import {
 import { getYScale, getXScale } from '@/common/scales';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Axis',
   component: AreaChart,
   subcomponents: {
@@ -53,6 +54,7 @@ export const TopBottomAxis = () => {
 
   return (
     <AreaChart
+      id="top-bottom-axis"
       width={450}
       height={200}
       margins={0}
@@ -115,6 +117,7 @@ export const LeftRightAxis = () => {
 
   return (
     <AreaChart
+      id="left-right-axis"
       width={450}
       height={200}
       margins={0}

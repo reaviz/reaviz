@@ -48,14 +48,14 @@ export interface MeterProps {
 }
 
 export const Meter: FC<Partial<MeterProps>> = ({
-  min,
-  max,
+  min = 0,
+  max = 100,
   className,
-  column,
-  gap,
-  style,
+  column = <MeterColumn />,
+  gap = 15,
+  style = {},
   value,
-  columns
+  columns = 10
 }) => {
   const scale = scaleLinear().domain([min, max]).range([0, 100]);
   const cols = scale.ticks(columns);
@@ -77,13 +77,4 @@ export const Meter: FC<Partial<MeterProps>> = ({
       ))}
     </div>
   );
-};
-
-Meter.defaultProps = {
-  min: 0,
-  max: 100,
-  columns: 10,
-  gap: 15,
-  style: {},
-  column: <MeterColumn />
 };

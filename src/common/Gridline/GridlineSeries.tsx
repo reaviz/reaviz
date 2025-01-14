@@ -1,9 +1,17 @@
 import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
-import { Gridline, GridlineProps } from './Gridline';
+import { Gridline, GRID_LINE_DEFAULT_PROPS, GridlineProps } from './Gridline';
 import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
-import { LinearAxisProps } from '../Axis';
-import { GridStripeProps, GridStripe } from './GridStripe';
+import {
+  LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LinearAxisProps
+} from '../Axis';
+import {
+  GridStripeProps,
+  GridStripe,
+  GRID_STRIPE_DEFAULT_PROPS
+} from './GridStripe';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;
@@ -52,7 +60,7 @@ export interface GridlineSeriesProps {
 }
 
 export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
-  line,
+  line = <Gridline direction="all" />,
   stripe,
   yScale,
   xScale,
@@ -61,26 +69,44 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   height,
   width
 }) => {
+  const lineProps = useMemo(
+    () => ({ ...GRID_LINE_DEFAULT_PROPS, ...line.props }),
+    [line.props]
+  );
+  const stripeProps = useMemo(
+    () => ({ ...GRID_STRIPE_DEFAULT_PROPS, ...(stripe?.props ?? {}) }),
+    [stripe?.props]
+  );
+
   const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'y';
   const shouldRenderX = (direction: 'all' | 'x' | 'y') =>
     direction === 'all' || direction === 'x';
 
   const { yAxisGrid, xAxisGrid } = useMemo(() => {
+    const xTickSeriesProps = {
+      ...LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
+      ...xAxis.tickSeries.props
+    };
+    const yTickSeriesProps = {
+      ...LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+      ...yAxis.tickSeries.props
+    };
+
     return {
       yAxisGrid: getTicks(
         yScale,
-        yAxis.tickSeries.props.tickValues,
+        yTickSeriesProps.tickValues,
         yAxis.type,
-        getMaxTicks(yAxis.tickSeries.props.tickSize, height),
-        yAxis.tickSeries.props.interval
+        getMaxTicks(yTickSeriesProps.tickSize, height),
+        yTickSeriesProps.interval
       ),
       xAxisGrid: getTicks(
         xScale,
-        xAxis.tickSeries.props.tickValues,
+        xTickSeriesProps.tickValues,
         xAxis.type,
-        getMaxTicks(xAxis.tickSeries.props.tickSize, width),
-        xAxis.tickSeries.props.interval
+        getMaxTicks(xTickSeriesProps.tickSize, width),
+        xTickSeriesProps.interval
       )
     };
   }, [height, width, xAxis, yAxis, yScale, xScale]);
@@ -111,12 +137,18 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   );
 
   const renderSeries = useCallback(
-    (yAxisGrid, xAxisGrid, element: GridElement, type: 'line' | 'stripe') => {
+    (
+      yAxisGrid,
+      xAxisGrid,
+      element: GridElement,
+      direction: 'x' | 'y' | 'all',
+      type: 'line' | 'stripe'
+    ) => {
       return (
         <Fragment>
-          {shouldRenderY(element.props.direction) &&
+          {shouldRenderY(direction) &&
             renderGroup(element, yAxisGrid, yScale, 'y', type)}
-          {shouldRenderX(element.props.direction) &&
+          {shouldRenderX(direction) &&
             renderGroup(element, xAxisGrid, xScale, 'x', type)}
         </Fragment>
       );
@@ -126,13 +158,16 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
 
   return (
     <g style={{ pointerEvents: 'none' }}>
-      {line && renderSeries(yAxisGrid, xAxisGrid, line, 'line')}
-      {stripe && renderSeries(yAxisGrid, xAxisGrid, stripe, 'stripe')}
+      {line &&
+        renderSeries(yAxisGrid, xAxisGrid, line, lineProps.direction, 'line')}
+      {stripe &&
+        renderSeries(
+          yAxisGrid,
+          xAxisGrid,
+          stripe,
+          stripeProps.direction,
+          'stripe'
+        )}
     </g>
   );
-};
-
-GridlineSeries.defaultProps = {
-  line: <Gridline direction="all" />,
-  stripe: null
 };

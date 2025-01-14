@@ -14,7 +14,7 @@ import {
 } from '@/common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { Glow } from '@/common';
+import { Glow, mergeDefaultProps, roundDecimals } from '@/common';
 
 export interface AreaProps extends PropFunctionTypes {
   /**
@@ -78,21 +78,23 @@ export interface AreaProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
-export const Area: FC<Partial<AreaProps>> = ({
-  id,
-  gradient,
-  glow,
-  mask,
-  data,
-  color,
-  index,
-  total,
-  xScale,
-  yScale,
-  animated,
-  interpolation,
-  ...rest
-}) => {
+export const Area: FC<Partial<AreaProps>> = (props) => {
+  const {
+    id,
+    gradient,
+    glow,
+    mask,
+    data,
+    color,
+    index,
+    total,
+    xScale,
+    yScale,
+    animated,
+    interpolation,
+    ...rest
+  } = mergeDefaultProps(AREA_DEFAULT_PROPS, props);
+
   const stroke = color(data, index);
 
   const coords = useMemo(() => {
@@ -113,7 +115,7 @@ export const Area: FC<Partial<AreaProps>> = ({
         const [point] = d;
         // Assume the single data point's `x` value
         // is the middle of the graph:
-        const midpoint = point.x as number;
+        const midpoint = roundDecimals(point.x as number);
         d = [{ ...point }, { ...point }];
         const [start, end] = d;
         start.x = 0;
@@ -121,10 +123,10 @@ export const Area: FC<Partial<AreaProps>> = ({
       }
 
       const fn = area()
-        .x((d: any) => d.x)
-        .y0((d: any) => d.y0)
-        .y1((d: any) => d.y1)
-        .curve(interpolate(interpolation));
+        .x((d: any) => roundDecimals(d.x))
+        .y0((d: any) => roundDecimals(d.y0))
+        .y1((d: any) => roundDecimals(d.y1))
+        .curve(interpolate(interpolation as InterpolationTypes));
 
       return fn(d as any);
     },
@@ -229,7 +231,7 @@ export const Area: FC<Partial<AreaProps>> = ({
   );
 };
 
-Area.defaultProps = {
+export const AREA_DEFAULT_PROPS: Partial<AreaProps> = {
   gradient: <Gradient />,
   interpolation: 'linear'
 };

@@ -26,8 +26,3 @@ export const RadialGuideBar: FC<Partial<RadialGuideBarProps>> = ({
     }}
   />
 );
-
-RadialGuideBar.defaultProps = {
-  fill: '#eee',
-  opacity: 0.2
-};

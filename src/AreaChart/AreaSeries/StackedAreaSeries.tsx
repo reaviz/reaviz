@@ -1,36 +1,56 @@
-import React, { FC } from 'react';
-import { AreaSeriesProps, AreaSeries } from './AreaSeries';
+import React, { FC, useMemo } from 'react';
+import {
+  AreaSeriesProps,
+  AreaSeries,
+  AREA_SERIES_DEFAULT_PROPS
+} from './AreaSeries';
 import { CloneElement } from 'reablocks';
-import { PointSeriesProps } from './PointSeries';
-import { ScatterPointProps } from '@/ScatterPlot';
+import { POINT_SERIES_DEFAULT_PROPS, PointSeriesProps } from './PointSeries';
+import { SCATTER_POINT_DEFAULT_PROPS, ScatterPointProps } from '@/ScatterPlot';
+import { InterpolationTypes } from '@/common';
 
-export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = ({
-  type,
-  symbols,
-  ...rest
-}) => (
-  <AreaSeries
-    {...rest}
-    type="stacked"
-    symbols={
-      symbols && (
-        <CloneElement<PointSeriesProps>
-          element={symbols}
-          {...symbols.props}
-          point={
-            <CloneElement<ScatterPointProps>
-              element={symbols.props.point}
-              {...symbols.props.point.props}
-              tooltip={null}
-            />
-          }
-        />
-      )
-    }
-  />
-);
+export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
+  const { symbols, interpolation, ...rest } = {
+    ...AREA_SERIES_DEFAULT_PROPS,
+    ...props
+  };
 
-StackedAreaSeries.defaultProps = {
-  ...AreaSeries.defaultProps,
-  type: 'stacked'
+  const symbolsProps = useMemo(
+    () => ({
+      ...POINT_SERIES_DEFAULT_PROPS,
+      ...symbols?.props
+    }),
+    [symbols]
+  );
+
+  const pointProps = useMemo(
+    () => ({
+      ...SCATTER_POINT_DEFAULT_PROPS,
+      ...symbolsProps.point?.props
+    }),
+    [symbolsProps]
+  );
+
+  return (
+    <AreaSeries
+      {...rest}
+      interpolation={interpolation as InterpolationTypes}
+      type="stacked"
+      symbols={
+        symbols && (
+          <CloneElement<PointSeriesProps>
+            element={symbols}
+            {...symbolsProps}
+            point={
+              <CloneElement<ScatterPointProps>
+                element={symbolsProps.point}
+                {...pointProps}
+                tooltip={null}
+              />
+            }
+          />
+        )
+      }
+    />
+  );
 };

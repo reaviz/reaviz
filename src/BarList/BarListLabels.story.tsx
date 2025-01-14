@@ -3,12 +3,14 @@ import { BarList } from './BarList';
 import { BarListSeries } from './BarListSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar List/Labels',
   component: BarList
 };
 
 export const LabelStart = () => (
   <BarList
+    id="label-start"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -22,6 +24,7 @@ export const LabelStart = () => (
 
 export const LabelBottom = () => (
   <BarList
+    id="label-bottom"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -35,6 +38,7 @@ export const LabelBottom = () => (
 
 export const LabelEnd = () => (
   <BarList
+    id="label-end"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -48,6 +52,7 @@ export const LabelEnd = () => (
 
 export const LabelTop = () => (
   <BarList
+    id="label-top"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -61,6 +66,7 @@ export const LabelTop = () => (
 
 export const LabelNone = () => (
   <BarList
+    id="label-none"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -74,6 +80,7 @@ export const LabelNone = () => (
 
 export const ValueBottom = () => (
   <BarList
+    id="value-bottom"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -87,6 +94,7 @@ export const ValueBottom = () => (
 
 export const ValueEnd = () => (
   <BarList
+    id="value-end"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 100 },
@@ -100,6 +108,7 @@ export const ValueEnd = () => (
 
 export const ValueStart = () => (
   <BarList
+    id="value-start"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -113,6 +122,7 @@ export const ValueStart = () => (
 
 export const ValueNone = () => (
   <BarList
+    id="value-none"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 50 },
@@ -126,6 +136,7 @@ export const ValueNone = () => (
 
 export const LongValueStart = () => (
   <BarList
+    id="long-value-start"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 5000 },
@@ -139,6 +150,7 @@ export const LongValueStart = () => (
 
 export const LongValueEnd = () => (
   <BarList
+    id="long-value-end"
     style={{ width: 350 }}
     data={[
       { key: 'Vulnerability Patch', data: 5000 },

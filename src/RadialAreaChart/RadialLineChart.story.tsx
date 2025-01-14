@@ -16,6 +16,7 @@ import {
 } from './RadialAreaSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Line Chart/Radial',
   component: RadialAreaChart,
   subcomponents: {
@@ -28,6 +29,7 @@ export default {
 
 export const Simple = () => (
   <RadialAreaChart
+    id="simple"
     height={500}
     width={500}
     data={medDateData}
@@ -61,6 +63,7 @@ export const Simple = () => (
 
 export const CategoricalData = () => (
   <RadialAreaChart
+    id="categorical"
     data={categoryData}
     height={500}
     width={500}
@@ -71,6 +74,7 @@ export const CategoricalData = () => (
 
 export const MultiSeries = () => (
   <RadialAreaChart
+    id="multi-series"
     data={multiCategory}
     height={500}
     width={500}

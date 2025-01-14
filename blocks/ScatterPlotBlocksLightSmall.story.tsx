@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
   GridStripe,
@@ -21,6 +22,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Light/Small',
   component: ScatterPlot
 };
@@ -32,6 +34,7 @@ export const Minimal = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="minimal"
         data={singleDateData}
         yAxis={
           <LinearYAxis
@@ -56,7 +59,7 @@ export const Minimal = () => {
           <ScatterSeries
             point={
               <ScatterPoint
-                color={'#105EFF'}
+                color="#105EFF"
                 glow={{ color: '#105EFF70', y: 12, blur: 12 }}
                 size={6}
               />
@@ -104,13 +107,13 @@ export const Minimal = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -152,13 +155,13 @@ export const Minimal = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -200,13 +203,13 @@ export const Minimal = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -223,6 +226,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="simple"
         data={medSignalChartData}
         yAxis={
           <LinearYAxis
@@ -246,7 +250,7 @@ export const Simple = () => {
           <ScatterSeries
             point={
               <ScatterPoint
-                color={'#105EFF'}
+                color="#105EFF"
                 glow={{ color: '#105EFF70', y: 12, blur: 12 }}
                 size={6}
               />
@@ -294,13 +298,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -342,13 +346,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -390,13 +394,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -413,6 +417,7 @@ export const Symbols = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="symbols"
         data={singleDateData}
         yAxis={
           <LinearYAxis
@@ -493,13 +498,13 @@ export const Symbols = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -541,13 +546,13 @@ export const Symbols = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -589,13 +594,13 @@ export const Symbols = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -612,6 +617,7 @@ export const Categorical = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="categorical"
         data={signalStageData}
         yAxis={
           <LinearYAxis
@@ -646,7 +652,7 @@ export const Categorical = () => {
           <ScatterSeries
             point={
               <ScatterPoint
-                color={'#105EFF'}
+                color="#105EFF"
                 glow={{ color: '#105EFF70', y: 12, blur: 12 }}
                 size={6}
               />
@@ -656,7 +662,7 @@ export const Categorical = () => {
         gridlines={
           <GridlineSeries
             line={<Gridline direction="y" />}
-            stripe={<GridStripe direction="y" fill={'#E2E2EA'} />}
+            stripe={<GridStripe direction="y" fill="#E2E2EA" />}
           />
         }
       />
@@ -697,13 +703,13 @@ export const Categorical = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -745,13 +751,13 @@ export const Categorical = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -793,13 +799,13 @@ export const Categorical = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -816,6 +822,7 @@ export const Bubble = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        id="bubble"
         data={largeSignalChartData}
         yAxis={
           <LinearYAxis
@@ -838,7 +845,7 @@ export const Bubble = () => {
           <ScatterSeries
             point={
               <ScatterPoint
-                color={'#105EFF90'}
+                color="#105EFF90"
                 glow={{ color: '#105EFF70', y: 12, blur: 12 }}
                 size={(v) => v.metadata.severity}
               />
@@ -886,13 +893,13 @@ export const Bubble = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -934,13 +941,13 @@ export const Bubble = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -982,13 +989,13 @@ export const Bubble = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>

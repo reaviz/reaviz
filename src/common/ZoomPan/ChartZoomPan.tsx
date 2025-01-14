@@ -36,7 +36,7 @@ export const ChartZoomPan: FC<Partial<ChartZoomPanProps>> = ({
   width,
   axisType,
   roundDomains,
-  onZoomPan,
+  onZoomPan = () => undefined,
   ...rest
 }) => {
   const onZoomPanHandler = useCallback(
@@ -111,8 +111,4 @@ export const ChartZoomPan: FC<Partial<ChartZoomPanProps>> = ({
       {children}
     </ZoomPan>
   );
-};
-
-ChartZoomPan.defaultProps = {
-  onZoomPan: () => undefined
 };

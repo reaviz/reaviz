@@ -76,7 +76,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
   id,
   isZoomed,
   activeIds,
-  point,
+  point = <ScatterPoint />,
   valueMarkers,
   xScale,
   yScale,
@@ -107,7 +107,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         />
       );
     },
-    [activeIds, point, yScale, rest, id]
+    [activeIds, point, xScale, yScale, rest, id]
   );
 
   const renderValueMarkers = useCallback(
@@ -131,7 +131,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
           })}
       </>
     ),
-    [valueMarkers, width, yScale]
+    [height, valueMarkers, width, xScale, yScale]
   );
 
   return (
@@ -150,8 +150,4 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
       <g clipPath={`url(#${id}-path)`}>{data!.map(renderPoint)}</g>
     </Fragment>
   );
-};
-
-ScatterSeries.defaultProps = {
-  point: <ScatterPoint />
 };

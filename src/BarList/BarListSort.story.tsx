@@ -2,12 +2,14 @@ import React from 'react';
 import { BarList } from './BarList';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar List/Sort',
   component: BarList
 };
 
 export const Ascending = () => (
   <BarList
+    id="ascending"
     sortDirection="asc"
     style={{ width: 350 }}
     data={[
@@ -21,6 +23,7 @@ export const Ascending = () => (
 
 export const Descending = () => (
   <BarList
+    id="descending"
     sortDirection="desc"
     style={{ width: 350 }}
     data={[
@@ -34,6 +37,7 @@ export const Descending = () => (
 
 export const None = () => (
   <BarList
+    id="none"
     sortDirection="none"
     style={{ width: 350 }}
     data={[

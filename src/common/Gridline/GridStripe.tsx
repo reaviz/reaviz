@@ -49,16 +49,11 @@ export interface GridStripeProps {
   index: number;
 }
 
-export const GridStripe: FC<Partial<GridStripeProps>> = ({
-  fill,
-  className,
-  position,
-  data,
-  height,
-  width,
-  scale,
-  index
-}) => {
+export const GridStripe: FC<Partial<GridStripeProps>> = (props) => {
+  const { fill, className, position, data, height, width, scale, index } = {
+    ...GRID_STRIPE_DEFAULT_PROPS,
+    ...props
+  };
   const coords = useMemo(() => {
     const pos = scale(data);
     const stripeFill = index % 2 ? 'none' : fill;
@@ -86,6 +81,6 @@ export const GridStripe: FC<Partial<GridStripeProps>> = ({
   return <rect className={classNames(css.gridStripe, className)} {...coords} />;
 };
 
-GridStripe.defaultProps = {
+export const GRID_STRIPE_DEFAULT_PROPS = {
   fill: '#393c3e'
 };

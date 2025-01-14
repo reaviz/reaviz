@@ -69,12 +69,12 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   data,
   id,
   selections,
-  animated,
-  disabled,
-  colorScheme,
-  outerLabel,
-  arc,
-  label
+  animated = true,
+  disabled = false,
+  colorScheme = 'cybertron',
+  outerLabel = <VennOuterLabel />,
+  arc = <VennArc />,
+  label = <VennLabel />
 }) => {
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
   const [actives, setActives] = useState<string[]>([]);
@@ -238,13 +238,4 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       ))}
     </motion.g>
   );
-};
-
-VennSeries.defaultProps = {
-  animated: true,
-  disabled: false,
-  colorScheme: 'cybertron',
-  outerLabel: <VennOuterLabel />,
-  arc: <VennArc />,
-  label: <VennLabel />
 };

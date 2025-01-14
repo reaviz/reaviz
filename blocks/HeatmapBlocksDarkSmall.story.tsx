@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
   AreaChart,
@@ -20,6 +21,7 @@ import {
 import { schemes } from '../src/common/color/schemes';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Heatmap/Dark/Small',
   component: AreaChart
 };
@@ -115,13 +117,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -163,13 +165,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -211,13 +213,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -322,13 +324,13 @@ export const SimpleCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -370,13 +372,13 @@ export const SimpleCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -418,13 +420,13 @@ export const SimpleCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -485,18 +487,18 @@ export const SimpleHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -561,13 +563,13 @@ export const SimpleHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -609,13 +611,13 @@ export const SimpleHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -657,13 +659,13 @@ export const SimpleHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -761,13 +763,13 @@ export const Intensity = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -809,13 +811,13 @@ export const Intensity = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -857,13 +859,13 @@ export const Intensity = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -965,13 +967,13 @@ export const IntensityCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1013,13 +1015,13 @@ export const IntensityCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1061,13 +1063,13 @@ export const IntensityCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1128,18 +1130,18 @@ export const IntensityHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -1201,13 +1203,13 @@ export const IntensityHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1249,13 +1251,13 @@ export const IntensityHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1297,13 +1299,13 @@ export const IntensityHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1401,13 +1403,13 @@ export const Correlation = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1449,13 +1451,13 @@ export const Correlation = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1497,13 +1499,13 @@ export const Correlation = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1605,13 +1607,13 @@ export const CorrelationCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1653,13 +1655,13 @@ export const CorrelationCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1701,13 +1703,13 @@ export const CorrelationCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1768,18 +1770,18 @@ export const CorrelationHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -1841,13 +1843,13 @@ export const CorrelationHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1889,13 +1891,13 @@ export const CorrelationHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1937,13 +1939,13 @@ export const CorrelationHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2041,13 +2043,13 @@ export const Geospatial = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2089,13 +2091,13 @@ export const Geospatial = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2137,13 +2139,13 @@ export const Geospatial = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2245,13 +2247,13 @@ export const GeospatialCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2293,13 +2295,13 @@ export const GeospatialCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2341,13 +2343,13 @@ export const GeospatialCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2408,18 +2410,18 @@ export const GeospatialHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -2481,13 +2483,13 @@ export const GeospatialHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2529,13 +2531,13 @@ export const GeospatialHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2577,13 +2579,13 @@ export const GeospatialHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2681,13 +2683,13 @@ export const Warm = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2729,13 +2731,13 @@ export const Warm = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2777,13 +2779,13 @@ export const Warm = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2885,13 +2887,13 @@ export const WarmCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2933,13 +2935,13 @@ export const WarmCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2981,13 +2983,13 @@ export const WarmCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3048,18 +3050,18 @@ export const WarmHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -3121,13 +3123,13 @@ export const WarmHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3169,13 +3171,13 @@ export const WarmHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3217,13 +3219,13 @@ export const WarmHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3273,7 +3275,7 @@ export const Hot = () => {
                 { fill: '#E84045' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
               padding={0.18}
@@ -3324,13 +3326,13 @@ export const Hot = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3372,13 +3374,13 @@ export const Hot = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3420,13 +3422,13 @@ export const Hot = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3481,7 +3483,7 @@ export const HotCircle = () => {
                 { fill: '#E84045' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
             />
@@ -3531,13 +3533,13 @@ export const HotCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3579,13 +3581,13 @@ export const HotCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3627,13 +3629,13 @@ export const HotCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3694,18 +3696,18 @@ export const HotHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -3720,7 +3722,7 @@ export const HotHex = () => {
                 { fill: '#E84045' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
             />
@@ -3770,13 +3772,13 @@ export const HotHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3818,13 +3820,13 @@ export const HotHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3866,13 +3868,13 @@ export const HotHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3970,13 +3972,13 @@ export const Classic = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4018,13 +4020,13 @@ export const Classic = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4066,13 +4068,13 @@ export const Classic = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4174,13 +4176,13 @@ export const ClassicCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4222,13 +4224,13 @@ export const ClassicCircle = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4270,13 +4272,13 @@ export const ClassicCircle = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4337,18 +4339,18 @@ export const ClassicHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-(radius * slimFactor) / 2} ${
-                               (radius * Math.sqrt(3)) / 2
-                             }
+      (radius * Math.sqrt(3)) / 2
+    }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             }
+      -(radius * Math.sqrt(3)) / 2
+    }
                              L ${(radius * slimFactor) / 2} ${
-                               -(radius * Math.sqrt(3)) / 2
-                             } Z`;
+      -(radius * Math.sqrt(3)) / 2
+    } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -4410,13 +4412,13 @@ export const ClassicHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4458,13 +4460,13 @@ export const ClassicHex = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4506,13 +4508,13 @@ export const ClassicHex = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>

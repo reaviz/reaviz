@@ -9,6 +9,7 @@ import geojson from 'world-atlas/countries-110m.json';
 const worldData = feature(geojson as any, geojson.objects.countries as any);
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Map',
   component: Map as any,
   subcomponents: {
@@ -16,20 +17,29 @@ export default {
   }
 };
 
-export const Simple = () => <Map data={worldData} height={350} width={500} />;
+export const Simple = () => (
+  <Map id="simple" data={worldData} height={350} width={500} />
+);
 
 export const NaturalEarthProjection = () => (
-  <Map data={worldData} height={350} width={500} projection="natural-earth" />
+  <Map
+    id="natural-earth"
+    data={worldData}
+    height={350}
+    width={500}
+    projection="natural-earth"
+  />
 );
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <Map data={worldData} />
+    <Map id="autosize" data={worldData} />
   </div>
 );
 
 export const Markers = () => (
   <Map
+    id="markers"
     data={worldData}
     height={350}
     width={500}

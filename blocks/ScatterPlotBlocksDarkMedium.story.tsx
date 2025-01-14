@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
   Count,
@@ -21,6 +22,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Dark/Medium',
   component: ScatterPlot
 };
@@ -39,6 +41,7 @@ export const Minimal = () => {
         </select>
       </div>
       <ScatterPlot
+        id="minimal"
         height={250}
         data={singleDateData}
         yAxis={
@@ -89,8 +92,8 @@ export const Minimal = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -119,8 +122,8 @@ export const Minimal = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -168,13 +171,13 @@ export const Minimal = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -216,13 +219,13 @@ export const Minimal = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -264,13 +267,13 @@ export const Minimal = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -294,6 +297,7 @@ export const Simple = () => {
         </select>
       </div>
       <ScatterPlot
+        id="simple"
         height={250}
         data={medSignalChartData}
         yAxis={
@@ -349,8 +353,8 @@ export const Simple = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -379,8 +383,8 @@ export const Simple = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -428,13 +432,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -476,13 +480,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -524,13 +528,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -554,6 +558,7 @@ export const Symbols = () => {
         </select>
       </div>
       <ScatterPlot
+        id="symbols"
         height={250}
         data={singleDateData}
         yAxis={
@@ -612,8 +617,8 @@ export const Symbols = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -642,8 +647,8 @@ export const Symbols = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -691,13 +696,13 @@ export const Symbols = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -739,13 +744,13 @@ export const Symbols = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -787,13 +792,13 @@ export const Symbols = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -817,6 +822,7 @@ export const Categorical = () => {
         </select>
       </div>
       <ScatterPlot
+        id="categorical"
         height={250}
         data={signalStageData}
         yAxis={
@@ -881,8 +887,8 @@ export const Categorical = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -911,8 +917,8 @@ export const Categorical = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -960,13 +966,13 @@ export const Categorical = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1008,13 +1014,13 @@ export const Categorical = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1056,13 +1062,13 @@ export const Categorical = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1086,6 +1092,7 @@ export const Bubble = () => {
         </select>
       </div>
       <ScatterPlot
+        id="bubble"
         height={250}
         data={largeSignalChartData}
         yAxis={
@@ -1135,8 +1142,8 @@ export const Bubble = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -1165,8 +1172,8 @@ export const Bubble = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -1214,13 +1221,13 @@ export const Bubble = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1262,13 +1269,13 @@ export const Bubble = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1310,13 +1317,13 @@ export const Bubble = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>

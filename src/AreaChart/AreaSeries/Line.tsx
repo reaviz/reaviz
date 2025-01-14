@@ -20,7 +20,7 @@ import {
   PropFunctionTypes
 } from '@/common/utils/functions';
 import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
-import { Glow, Gradient, GradientProps } from '@/common';
+import { Glow, Gradient, GradientProps, roundDecimals } from '@/common';
 import { generateGlowStyles } from '@/common/Glow/utils';
 import { CloneElement } from 'reablocks';
 
@@ -96,18 +96,22 @@ export interface LineProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
+function roundToFiveDecimals(value: number): number {
+  return parseFloat(value.toFixed(5));
+}
+
 export const Line: FC<Partial<LineProps>> = ({
   id,
   width,
   data,
   color,
   index,
-  strokeWidth,
+  strokeWidth = 3,
   hasArea,
   animated,
   yScale,
   xScale,
-  showZeroStroke,
+  showZeroStroke = true,
   interpolation,
   gradient,
   glow,
@@ -118,15 +122,15 @@ export const Line: FC<Partial<LineProps>> = ({
 
   useEffect(() => {
     if (ghostPathRef.current) {
-      setPathLength(ghostPathRef.current.getTotalLength());
+      setPathLength(roundDecimals(ghostPathRef.current.getTotalLength()));
     }
   }, [data, xScale, yScale, width]);
 
   const getLinePath = useCallback(
     (point: ChartInternalShallowDataShape[]) => {
       const fn = line()
-        .x((d: any) => d.x)
-        .y((d: any) => d.y1)
+        .x((d: any) => roundDecimals(d.x))
+        .y((d: any) => roundDecimals(d.y1))
         .defined((d: any) => showZeroStroke || calculateShowStroke(d, point))
         .curve(interpolate(interpolation));
 
@@ -252,9 +256,4 @@ export const Line: FC<Partial<LineProps>> = ({
       )}
     </Fragment>
   );
-};
-
-Line.defaultProps = {
-  showZeroStroke: true,
-  strokeWidth: 3
 };

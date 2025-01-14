@@ -141,25 +141,25 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
   (
     {
       children,
-      inverse,
-      tooltip,
+      inverse = true,
+      tooltip = <ChartTooltip />,
       disabled,
       color,
-      isRadial,
-      isContinous,
+      isRadial = false,
+      isContinous = true,
       width,
       height,
       xScale,
       yScale,
-      onValueEnter,
+      onValueEnter = () => undefined,
       data,
       isHorizontal,
       innerRadius,
       outerRadius,
       placement: placementProp,
-      onValueLeave,
-      startAngle,
-      endAngle
+      onValueLeave = () => undefined,
+      startAngle = 0,
+      endAngle = 2 * Math.PI
     },
     childRef
   ) => {
@@ -535,14 +535,3 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     );
   }
 );
-
-TooltipArea.defaultProps = {
-  isRadial: false,
-  isContinous: true,
-  tooltip: <ChartTooltip />,
-  inverse: true,
-  onValueEnter: () => undefined,
-  onValueLeave: () => undefined,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
-};

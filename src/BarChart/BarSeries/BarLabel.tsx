@@ -3,6 +3,7 @@ import { ChartInternalShallowDataShape, Direction } from '@/common/data';
 import { BarType } from './Bar';
 import { motion } from 'framer-motion';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { mergeDefaultProps } from '@/common';
 
 export interface BarLabelProps {
   /**
@@ -96,26 +97,28 @@ export interface BarLabelProps {
   className?: any;
 }
 
-export const BarLabel: FC<Partial<BarLabelProps>> = ({
-  fontSize,
-  fontFamily,
-  fill,
-  layout,
-  className,
-  text,
-  x,
-  y,
-  height,
-  position,
-  width,
-  data,
-  padding,
-  scale,
-  type,
-  animated,
-  index,
-  barCount
-}) => {
+export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
+  const {
+    fontSize,
+    fontFamily,
+    fill,
+    layout,
+    className,
+    text,
+    x,
+    y,
+    height,
+    position,
+    width,
+    data,
+    padding,
+    scale,
+    type,
+    animated,
+    index,
+    barCount
+  } = mergeDefaultProps(BAR_LABEL_DEFAULT_PROPS, props);
+
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const textAnchor = isVertical ? 'middle' : 'start';
 
@@ -232,9 +235,9 @@ export const BarLabel: FC<Partial<BarLabelProps>> = ({
   );
 };
 
-BarLabel.defaultProps = {
+export const BAR_LABEL_DEFAULT_PROPS: Partial<BarLabelProps> = {
   position: 'top',
-  layout: 'vertical',
+  layout: 'vertical' as const,
   fontSize: 13,
   padding: 5,
   fontFamily: 'sans-serif',

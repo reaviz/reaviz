@@ -76,9 +76,9 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   color,
   data,
   interpolation,
-  strokeWidth,
-  animated,
-  isClosedCurve
+  strokeWidth = 2,
+  animated = true,
+  isClosedCurve = true
 }) => {
   const fill = color(data, index);
 
@@ -147,10 +147,4 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
       strokeWidth={strokeWidth}
     />
   );
-};
-
-RadialLine.defaultProps = {
-  strokeWidth: 2,
-  animated: true,
-  isClosedCurve: true
 };

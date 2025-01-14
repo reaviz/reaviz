@@ -6,10 +6,12 @@ import { getYScale } from '@/common/scales';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Heatmap/Simple',
   component: Heatmap,
   subcomponents: {
@@ -20,6 +22,7 @@ export default {
 
 export const Basic = () => (
   <Heatmap
+    id="basic"
     height={250}
     width={400}
     data={heatmapSimpleData}
@@ -29,7 +32,12 @@ export const Basic = () => (
 
 export const BasicLegend = () => (
   <div style={{ display: 'flex', height: '250px' }}>
-    <Heatmap height={250} width={400} data={heatmapSimpleData} />
+    <Heatmap
+      id="basic-legend"
+      height={250}
+      width={400}
+      data={heatmapSimpleData}
+    />
     <SequentialLegend
       data={heatmapSimpleData}
       style={{ height: '165px', marginLeft: '10px' }}
@@ -61,6 +69,7 @@ export const MultiAxis = () => {
 
   return (
     <Heatmap
+      id="multi-axis"
       height={250}
       width={400}
       margins={0}
@@ -74,7 +83,13 @@ export const MultiAxis = () => {
           tickSeries={
             <LinearYAxisTickSeries
               line={null}
-              label={<LinearYAxisTickLabel padding={10} position="end" />}
+              label={
+                <LinearYAxisTickLabel
+                  {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+                  padding={10}
+                  position="end"
+                />
+              }
             />
           }
         />
@@ -85,6 +100,7 @@ export const MultiAxis = () => {
 
 export const Symbols = () => (
   <Heatmap
+    id="symbols"
     height={230}
     width={230}
     data={heatmapSimpleData}

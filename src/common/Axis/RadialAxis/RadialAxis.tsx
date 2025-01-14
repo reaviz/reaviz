@@ -4,11 +4,14 @@ import {
   RadialAxisTickSeriesProps
 } from './RadialAxisTickSeries';
 import {
+  RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS,
   RadialAxisArcSeries,
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
 import { CloneElement } from 'reablocks';
-import { getTicks } from '@/common/utils';
+import { getTicks, mergeDefaultProps } from '@/common/utils';
+
+type RadialAxisType = 'value' | 'time' | 'category';
 
 export interface RadialAxisProps {
   /**
@@ -63,17 +66,19 @@ export interface RadialAxisProps {
   endAngle?: number;
 }
 
-export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
-  arcs,
-  ticks,
-  xScale,
-  height,
-  width,
-  innerRadius,
-  type,
-  startAngle,
-  endAngle
-}) => {
+export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
+  const {
+    arcs,
+    ticks,
+    xScale,
+    height,
+    width,
+    innerRadius,
+    type,
+    startAngle,
+    endAngle
+  } = mergeDefaultProps(RADIAL_AXIS_DEFAULT_PROPS, props);
+
   const outerRadius = Math.min(height, width) / 2;
 
   // TODO: This is a hack to get the ticks in the parent
@@ -82,7 +87,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
   const tickValues = getTicks(
     xScale,
     ticks.props.tickValues,
-    type,
+    type as RadialAxisType,
     ticks.props.count,
     ticks.props.interval || ticks.props.count
   );
@@ -103,7 +108,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
         <CloneElement<RadialAxisTickSeriesProps>
           element={ticks}
           scale={xScale}
-          type={type}
+          type={type as RadialAxisType}
           innerRadius={innerRadius}
           outerRadius={outerRadius}
           startAngle={startAngle}
@@ -114,7 +119,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = ({
   );
 };
 
-RadialAxis.defaultProps = {
+export const RADIAL_AXIS_DEFAULT_PROPS: Partial<RadialAxisProps> = {
   innerRadius: 10,
   type: 'value',
   arcs: <RadialAxisArcSeries />,

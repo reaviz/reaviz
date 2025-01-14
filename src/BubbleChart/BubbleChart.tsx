@@ -22,14 +22,14 @@ export interface BubbleChartProps extends ChartProps {
 }
 
 export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
-  data,
+  data = [],
   id,
   width,
   height,
   className,
   containerClassName,
-  margins,
-  series
+  margins = 10,
+  series = <BubbleSeries />
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -73,10 +73,4 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-BubbleChart.defaultProps = {
-  data: [],
-  margins: 10,
-  series: <BubbleSeries />
 };

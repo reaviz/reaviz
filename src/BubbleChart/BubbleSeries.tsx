@@ -50,11 +50,11 @@ export interface BubbleSeriesProps {
 export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   id,
   data,
-  colorScheme,
-  animated,
-  bubble,
+  colorScheme = 'cybertron',
+  animated = true,
+  bubble = <Bubble />,
   format,
-  label
+  label = <BubbleLabel />
 }) => {
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
 
@@ -102,11 +102,4 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   };
 
   return <Fragment>{data.map(renderBubble)}</Fragment>;
-};
-
-BubbleSeries.defaultProps = {
-  colorScheme: 'cybertron',
-  animated: true,
-  bubble: <Bubble />,
-  label: <BubbleLabel />
 };

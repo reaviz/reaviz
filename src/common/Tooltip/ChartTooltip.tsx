@@ -31,31 +31,29 @@ export interface ChartTooltipProps extends TooltipProps {
 }
 
 export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
-  content,
+  content = <TooltipTemplate />,
   value,
   data,
   color,
   ...rest
-}) => (
-  <Tooltip
-    theme={tooltipTheme}
-    {...rest}
-    content={() => {
-      if (!value && !data) {
-        return null;
-      }
+}) => {
+  return (
+    <Tooltip
+      theme={tooltipTheme}
+      {...rest}
+      content={() => {
+        if (!value && !data) {
+          return null;
+        }
 
-      return typeof content === 'function'
-        ? content(data || value, color)
-        : cloneElement(content, {
-          ...content.props,
-          value,
-          color
-        });
-    }}
-  />
-);
-
-ChartTooltip.defaultProps = {
-  content: <TooltipTemplate />
+        return typeof content === 'function'
+          ? content(data || value, color)
+          : cloneElement(content, {
+            ...content.props,
+            value,
+            color
+          });
+      }}
+    />
+  );
 };

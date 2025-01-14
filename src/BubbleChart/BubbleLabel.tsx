@@ -50,10 +50,10 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   id,
   data,
   format,
-  wrap,
+  wrap = true,
   fill,
-  fontSize,
-  fontFamily,
+  fontSize = 14,
+  fontFamily = 'sans-serif',
   animated
 }) => {
   const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
@@ -99,10 +99,4 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   return (
     <g style={{ transform: `translate(${data.x}px, ${data.y}px)` }}>{label}</g>
   );
-};
-
-BubbleLabel.defaultProps = {
-  wrap: true,
-  fontSize: 14,
-  fontFamily: 'sans-serif'
 };

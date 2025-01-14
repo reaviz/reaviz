@@ -5,10 +5,5 @@ import { LineSeries } from './LineSeries';
 export type LineChartProps = AreaChartProps;
 
 export const LineChart: FC<Partial<LineChartProps>> = (props) => (
-  <AreaChart {...props} />
+  <AreaChart series={<LineSeries />} {...props} />
 );
-
-LineChart.defaultProps = {
-  ...AreaChart.defaultProps,
-  series: <LineSeries />
-};

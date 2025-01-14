@@ -8,6 +8,7 @@ import { Gradient } from '@/common/Gradient';
 import chroma from 'chroma-js';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Sunburst Chart',
   component: SunburstChart,
   subcomponents: {
@@ -23,11 +24,17 @@ const exampleColorScheme = chroma
   .colors(12);
 
 export const Simple = () => (
-  <SunburstChart height={450} width={450} data={heatmapSimpleData} />
+  <SunburstChart
+    id="simple"
+    height={450}
+    width={450}
+    data={heatmapSimpleData}
+  />
 );
 
 export const Gradients = ({ colorScheme = exampleColorScheme }) => (
   <SunburstChart
+    id="gradients"
     height={450}
     width={450}
     data={heatmapSimpleData}
@@ -42,6 +49,7 @@ export const Gradients = ({ colorScheme = exampleColorScheme }) => (
 
 export const NoAnimation = () => (
   <SunburstChart
+    id="no-animation"
     height={450}
     width={450}
     data={heatmapSimpleData}
@@ -121,6 +129,7 @@ export const MultiLevel = ({
   colorScheme = exampleColorScheme
 }) => (
   <SunburstChart
+    id="multi-level"
     height={450}
     width={450}
     data={data}

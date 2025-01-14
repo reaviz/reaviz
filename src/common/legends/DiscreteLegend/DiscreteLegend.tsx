@@ -31,7 +31,7 @@ export interface DiscreteLegendProps {
 
 export const DiscreteLegend: FC<Partial<DiscreteLegendProps>> = ({
   entries,
-  orientation,
+  orientation = 'vertical',
   style,
   className
 }) => (
@@ -51,7 +51,3 @@ export const DiscreteLegend: FC<Partial<DiscreteLegendProps>> = ({
     ))}
   </div>
 );
-
-DiscreteLegend.defaultProps = {
-  orientation: 'vertical'
-};

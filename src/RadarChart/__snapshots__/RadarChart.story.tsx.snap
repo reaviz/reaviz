@@ -1,0 +1,899 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Charts/Radar Chart Filled smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="500"
+     height="500"
+     style="height: 500px; width: 500px;"
+>
+  <svg width="500"
+       height="500"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(250, 250)">
+      <path d="M0,0L0,0L0,0L0,0L0,0"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-35L35,0L0,35L-35,0L0,-35"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-70L70,0L0,70L-70,0L0,-70"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-105L105,0L0,105L-105,0L0,-105"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-140L140,0L0,140L-140,0L0,-140"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-175L175,0L0,175L-175,0L0,-175"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <g transform="rotate(-90) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(90, 15, 0)">
+          <title>
+            XML
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="middle"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            XML
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(0) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(0, 15, 0)">
+          <title>
+            JSON
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            JSON
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(90) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-90, 15, 0)">
+          <title>
+            HTTPS
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="middle"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            HTTPS
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(180) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-180, 15, 0)">
+          <title>
+            SSH
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            SSH
+          </text>
+        </g>
+      </g>
+      <g>
+        <path d="M0,-175A175,175,0,1,1,0,175A175,175,0,1,1,0,-175M0,-0.1A0.1,0.1,0,1,0,0,0.1A0.1,0.1,0,1,0,0,-0.1Z"
+              opacity="0"
+              cursor="auto"
+        >
+        </path>
+        <path d="M0,-175A175,175,0,1,1,0,175A175,175,0,1,1,0,-175M0,-0.1A0.1,0.1,0,1,0,0,0.1A0.1,0.1,0,1,0,0,-0.1Z"
+              opacity="0"
+              cursor="auto"
+        >
+        </path>
+        <g clip-path="url(#filled-path)">
+          <path pointer-events="none"
+                fill="url(#filled-radial-area-3-gradient)"
+                d="M72.154,0C72.154,30.297,33.754,58.041,0,58.041C-33.754,58.041,-130.372,30.297,-130.372,0C-130.372,-30.297,-33.754,-123.744,0,-123.744C33.754,-123.744,72.154,-30.297,72.154,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
+                opacity="1"
+          >
+          </path>
+          <radialGradient id="filled-radial-area-3-gradient"
+                          cx="0"
+                          cy="0"
+                          r="175"
+                          gradientunits="userSpaceOnUse"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.1"
+                  stop-color="#2aa1d1"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="0.3"
+                  stop-color="#2aa1d1"
+            >
+            </stop>
+          </radialGradient>
+          <path pointer-events="none"
+                stroke="#2aa1d1"
+                fill="none"
+                stroke-width="2"
+                d="M72.154,0C72.154,30.297,33.754,58.041,0,58.041C-33.754,58.041,-130.372,30.297,-130.372,0C-130.372,-30.297,-33.754,-123.744,0,-123.744C33.754,-123.744,72.154,-30.297,72.154,0"
+                opacity="1"
+          >
+          </path>
+          <path pointer-events="none"
+                fill="url(#filled-radial-area-2-gradient)"
+                d="M141.09,0C141.09,38.886,45.632,129.783,0,129.783C-45.632,129.783,-132.7,38.886,-132.7,0C-132.7,-38.886,-45.632,-103.531,0,-103.531C45.632,-103.531,141.09,-38.886,141.09,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
+                opacity="1"
+          >
+          </path>
+          <radialGradient id="filled-radial-area-2-gradient"
+                          cx="0"
+                          cy="0"
+                          r="175"
+                          gradientunits="userSpaceOnUse"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.1"
+                  stop-color="#2b8dd8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="0.3"
+                  stop-color="#2b8dd8"
+            >
+            </stop>
+          </radialGradient>
+          <path pointer-events="none"
+                stroke="#2b8dd8"
+                fill="none"
+                stroke-width="2"
+                d="M141.09,0C141.09,38.886,45.632,129.783,0,129.783C-45.632,129.783,-132.7,38.886,-132.7,0C-132.7,-38.886,-45.632,-103.531,0,-103.531C45.632,-103.531,141.09,-38.886,141.09,0"
+                opacity="1"
+          >
+          </path>
+          <path pointer-events="none"
+                fill="url(#filled-radial-area-1-gradient)"
+                d="M135.554,0C135.554,45.883,44.419,151.554,0,151.554C-44.419,151.554,-130.958,45.883,-130.958,0C-130.958,-45.883,-44.419,-123.744,0,-123.744C44.419,-123.744,135.554,-45.883,135.554,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
+                opacity="1"
+          >
+          </path>
+          <radialGradient id="filled-radial-area-1-gradient"
+                          cx="0"
+                          cy="0"
+                          r="175"
+                          gradientunits="userSpaceOnUse"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.1"
+                  stop-color="#2c77e0"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="0.3"
+                  stop-color="#2c77e0"
+            >
+            </stop>
+          </radialGradient>
+          <path pointer-events="none"
+                stroke="#2c77e0"
+                fill="none"
+                stroke-width="2"
+                d="M135.554,0C135.554,45.883,44.419,151.554,0,151.554C-44.419,151.554,-130.958,45.883,-130.958,0C-130.958,-45.883,-44.419,-123.744,0,-123.744C44.419,-123.744,135.554,-45.883,135.554,0"
+                opacity="1"
+          >
+          </path>
+          <path pointer-events="none"
+                fill="url(#filled-radial-area-0-gradient)"
+                d="M135.554,0C135.554,52.682,48.68,175,0,175C-48.68,175,-156.525,52.682,-156.525,0C-156.525,-52.682,-48.68,-141.09,0,-141.09C48.68,-141.09,135.554,-52.682,135.554,0M0,0.1C0.033,0.1,0.1,0.033,0.1,0C0.1,-0.033,0.033,-0.1,0,-0.1C-0.033,-0.1,-0.1,-0.033,-0.1,0C-0.1,0.033,-0.033,0.1,0,0.1"
+                opacity="1"
+          >
+          </path>
+          <radialGradient id="filled-radial-area-0-gradient"
+                          cx="0"
+                          cy="0"
+                          r="175"
+                          gradientunits="userSpaceOnUse"
+          >
+            <stop offset="0%"
+                  stop-opacity="0.1"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+            <stop offset="80%"
+                  stop-opacity="0.3"
+                  stop-color="#2d60e8"
+            >
+            </stop>
+          </radialGradient>
+          <path pointer-events="none"
+                stroke="#2d60e8"
+                fill="none"
+                stroke-width="2"
+                d="M135.554,0C135.554,52.682,48.68,175,0,175C-48.68,175,-156.525,52.682,-156.525,0C-156.525,-52.682,-48.68,-141.09,0,-141.09C48.68,-141.09,135.554,-52.682,135.554,0"
+                opacity="1"
+          >
+          </path>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 100"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 34"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(72.154px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 22"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(58.041px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 111"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-130.372px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 70"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-103.531px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 130"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(141.09px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 110"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(129.783px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 115"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-132.7px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 100"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 120"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 150"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(151.554px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 112"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-130.958px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 130"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-141.09px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 120"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 200"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(175px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 160"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-156.525px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Charts/Radar Chart Simple smoke-test 1`] = `
+<div class="_container_1u3dt_1"
+     width="500"
+     height="500"
+     style="height: 500px; width: 500px;"
+>
+  <svg width="500"
+       height="500"
+       class="_svg_1u3dt_30"
+       tabindex="0"
+  >
+    <g transform="translate(250, 250)">
+      <path d="M0,0L0,0L0,0L0,0L0,0"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-35L35,0L0,35L-35,0L0,-35"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-70L70,0L0,70L-70,0L0,-70"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-105L105,0L0,105L-105,0L0,-105"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-140L140,0L0,140L-140,0L0,-140"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <path d="M0,-175L175,0L0,175L-175,0L0,-175"
+            stroke="#71808d"
+            fill="none"
+            style="pointer-events: none;"
+      >
+      </path>
+      <g transform="rotate(-90) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(90, 15, 0)">
+          <title>
+            XML
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="middle"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            XML
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(0) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(0, 15, 0)">
+          <title>
+            JSON
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="start"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            JSON
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(90) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-90, 15, 0)">
+          <title>
+            HTTPS
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="middle"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            HTTPS
+          </text>
+        </g>
+      </g>
+      <g transform="rotate(180) translate(175,0)">
+        <line x1="-174.9"
+              x2="0"
+              stroke="rgba(113, 128, 141, .5)"
+              style="pointer-events: none;"
+        >
+        </line>
+        <g transform="rotate(-180, 15, 0)">
+          <title>
+            SSH
+          </title>
+          <text dy="0.35em"
+                x="15"
+                text-anchor="end"
+                fill="#71808d"
+                font-family="sans-serif"
+                font-size="11"
+                startangle="0"
+                endangle="6.283185307179586"
+          >
+            SSH
+          </text>
+        </g>
+      </g>
+      <g>
+        <path d="M0,-175A175,175,0,1,1,0,175A175,175,0,1,1,0,-175M0,-0.1A0.1,0.1,0,1,0,0,0.1A0.1,0.1,0,1,0,0,-0.1Z"
+              opacity="0"
+              cursor="auto"
+        >
+        </path>
+        <path d="M0,-175A175,175,0,1,1,0,175A175,175,0,1,1,0,-175M0,-0.1A0.1,0.1,0,1,0,0,0.1A0.1,0.1,0,1,0,0,-0.1Z"
+              opacity="0"
+              cursor="auto"
+        >
+        </path>
+        <g clip-path="url(#simple-path)">
+          <path pointer-events="none"
+                stroke="#2aa1d1"
+                fill="none"
+                stroke-width="2"
+                d="M72.154,0C72.154,30.297,33.754,58.041,0,58.041C-33.754,58.041,-130.372,30.297,-130.372,0C-130.372,-30.297,-33.754,-123.744,0,-123.744C33.754,-123.744,72.154,-30.297,72.154,0"
+                opacity="1"
+          >
+          </path>
+          <path pointer-events="none"
+                stroke="#2b8dd8"
+                fill="none"
+                stroke-width="2"
+                d="M141.09,0C141.09,38.886,45.632,129.783,0,129.783C-45.632,129.783,-132.7,38.886,-132.7,0C-132.7,-38.886,-45.632,-103.531,0,-103.531C45.632,-103.531,141.09,-38.886,141.09,0"
+                opacity="1"
+          >
+          </path>
+          <path pointer-events="none"
+                stroke="#2c77e0"
+                fill="none"
+                stroke-width="2"
+                d="M135.554,0C135.554,45.883,44.419,151.554,0,151.554C-44.419,151.554,-130.958,45.883,-130.958,0C-130.958,-45.883,-44.419,-123.744,0,-123.744C44.419,-123.744,135.554,-45.883,135.554,0"
+                opacity="1"
+          >
+          </path>
+          <path pointer-events="none"
+                stroke="#2d60e8"
+                fill="none"
+                stroke-width="2"
+                d="M135.554,0C135.554,52.682,48.68,175,0,175C-48.68,175,-156.525,52.682,-156.525,0C-156.525,-52.682,-48.68,-141.09,0,-141.09C48.68,-141.09,135.554,-52.682,135.554,0"
+                opacity="1"
+          >
+          </path>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 100"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 34"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(72.154px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 22"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(58.041px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Discovery: 111"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-130.372px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2aa1d1"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 70"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-103.531px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 130"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(141.09px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 110"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(129.783px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Exploitation: 115"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-132.7px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2b8dd8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 100"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 120"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 150"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(151.554px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Lateral Movement: 112"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-130.958px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2c77e0"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 130"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(-141.09px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 120"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 200"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(0px) translateY(175px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+          <g class
+             tabindex="0"
+             aria-label="Threat Intelligence: 160"
+             role="graphics-document"
+             opacity="1"
+             transform-origin="0px 0px"
+             style="transform: translateX(-156.525px) translateY(0px); transform-origin: 0px 0px;"
+          >
+            <circle r="3"
+                    fill="#2d60e8"
+            >
+            </circle>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+`;

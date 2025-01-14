@@ -106,12 +106,12 @@ export const Sankey: FC<SankeyProps> = ({
   height,
   margins,
   className,
-  animated,
+  animated = true,
   links,
-  justification,
-  nodeWidth,
-  nodePadding,
-  labelPosition,
+  justification = 'justify',
+  nodeWidth = 15,
+  nodePadding = 10,
+  labelPosition = 'inside',
   nodeSort,
   colorScheme,
   nodes,
@@ -343,12 +343,4 @@ export const Sankey: FC<SankeyProps> = ({
       {renderChart}
     </ChartContainer>
   );
-};
-
-Sankey.defaultProps = {
-  animated: true,
-  justification: 'justify',
-  nodeWidth: 15,
-  nodePadding: 10,
-  nodePosition: 'inside'
 };

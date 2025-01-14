@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import {
   Bar,
@@ -31,6 +32,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Light/Small',
   component: BarChart
 };
@@ -141,13 +143,13 @@ export const SimpleMulti = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -189,13 +191,13 @@ export const SimpleMulti = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -237,13 +239,13 @@ export const SimpleMulti = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -312,8 +314,8 @@ export const SimpleMultiGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={1} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -366,13 +368,13 @@ export const SimpleMultiGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -414,13 +416,13 @@ export const SimpleMultiGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -462,13 +464,13 @@ export const SimpleMultiGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -566,13 +568,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -614,13 +616,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -662,13 +664,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -718,8 +720,8 @@ export const SimpleGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -778,13 +780,13 @@ export const SimpleGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -826,13 +828,13 @@ export const SimpleGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -874,13 +876,13 @@ export const SimpleGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -984,13 +986,13 @@ export const Labels = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1032,13 +1034,13 @@ export const Labels = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1080,13 +1082,13 @@ export const Labels = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1136,8 +1138,8 @@ export const LabelsGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -1197,13 +1199,13 @@ export const LabelsGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1245,13 +1247,13 @@ export const LabelsGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1293,13 +1295,13 @@ export const LabelsGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1390,13 +1392,13 @@ export const Waterfall = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1438,13 +1440,13 @@ export const Waterfall = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1486,13 +1488,13 @@ export const Waterfall = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1542,8 +1544,8 @@ export const WaterfallGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -1595,13 +1597,13 @@ export const WaterfallGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1643,13 +1645,13 @@ export const WaterfallGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1691,13 +1693,13 @@ export const WaterfallGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1787,13 +1789,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1835,13 +1837,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1883,13 +1885,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1939,8 +1941,8 @@ export const LargeDatasetGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -1991,13 +1993,13 @@ export const LargeDatasetGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2039,13 +2041,13 @@ export const LargeDatasetGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2087,13 +2089,13 @@ export const LargeDatasetGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2109,7 +2111,7 @@ export const Stacked = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <BarChart
+      <StackedBarChart
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -2183,13 +2185,13 @@ export const Stacked = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2231,13 +2233,13 @@ export const Stacked = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2279,13 +2281,13 @@ export const Stacked = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2301,7 +2303,7 @@ export const StackedGradient = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <BarChart
+      <StackedBarChart
         data={multiCategory}
         yAxis={
           <LinearYAxis
@@ -2335,8 +2337,8 @@ export const StackedGradient = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop offset="0%" stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={1} />
+                      <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -2387,13 +2389,13 @@ export const StackedGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2435,13 +2437,13 @@ export const StackedGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2483,13 +2485,13 @@ export const StackedGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2506,7 +2508,7 @@ export const StackedDiverging = () => {
         Incident Report
       </h3>
       <div className="flex-grow px-4">
-        <BarChart
+        <StackedBarChart
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
           xAxis={
@@ -2567,13 +2569,13 @@ export const StackedDiverging = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2615,13 +2617,13 @@ export const StackedDiverging = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2663,13 +2665,13 @@ export const StackedDiverging = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2686,7 +2688,7 @@ export const StackedDivergingGradient = () => {
         Incident Report
       </h3>
       <div className="flex-grow px-4">
-        <BarChart
+        <StackedBarChart
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
           xAxis={
@@ -2703,23 +2705,25 @@ export const StackedDivergingGradient = () => {
               type="stackedDiverging"
               bar={[
                 <Bar
+                  key={1}
                   glow={{ blur: 20, opacity: 0.5 }}
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={1} />,
-                        <GradientStop offset="90%" stopOpacity={0} />
+                        <GradientStop key={1} offset="0%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="90%" stopOpacity={0} />
                       ]}
                     />
                   }
                 />,
                 <Bar
+                  key={2}
                   glow={{ blur: 20, opacity: 0.5 }}
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="10%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="10%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -2770,13 +2774,13 @@ export const StackedDivergingGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2818,13 +2822,13 @@ export const StackedDivergingGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2866,13 +2870,13 @@ export const StackedDivergingGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2915,24 +2919,26 @@ export const HorizontalStackedDivergingGradient = () => {
               type="stackedDiverging"
               bar={[
                 <Bar
+                  key={1}
                   glow={{ blur: 30 }}
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0.7} />,
-                        <GradientStop offset="100%" stopOpacity={0} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0.7} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={0} />
                       ]}
                     />
                   }
                   rangeLines={<RangeLines position="top" strokeWidth={4} />}
                 />,
                 <Bar
+                  key={2}
                   glow={{ blur: 30 }}
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={0.7} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={0.7} />
                       ]}
                     />
                   }
@@ -2984,13 +2990,13 @@ export const HorizontalStackedDivergingGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3032,13 +3038,13 @@ export const HorizontalStackedDivergingGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3080,13 +3086,13 @@ export const HorizontalStackedDivergingGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3179,13 +3185,13 @@ export const HorizontalSimple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3227,13 +3233,13 @@ export const HorizontalSimple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3275,13 +3281,13 @@ export const HorizontalSimple = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3333,8 +3339,8 @@ export const HorizontalSimpleGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -3386,13 +3392,13 @@ export const HorizontalSimpleGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3434,13 +3440,13 @@ export const HorizontalSimpleGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3482,13 +3488,13 @@ export const HorizontalSimpleGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3582,13 +3588,13 @@ export const HorizontalWaterfall = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3630,13 +3636,13 @@ export const HorizontalWaterfall = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3678,13 +3684,13 @@ export const HorizontalWaterfall = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3736,8 +3742,8 @@ export const HorizontalWaterfallGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={1} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -3790,13 +3796,13 @@ export const HorizontalWaterfallGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3838,13 +3844,13 @@ export const HorizontalWaterfallGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3886,13 +3892,13 @@ export const HorizontalWaterfallGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3991,13 +3997,13 @@ export const HorizontalLabels = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4039,13 +4045,13 @@ export const HorizontalLabels = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4087,13 +4093,13 @@ export const HorizontalLabels = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4145,8 +4151,8 @@ export const HorizontalLabelsGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -4199,13 +4205,13 @@ export const HorizontalLabelsGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4247,13 +4253,13 @@ export const HorizontalLabelsGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4295,13 +4301,13 @@ export const HorizontalLabelsGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4400,13 +4406,13 @@ export const HorizontalSimpleMulti = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4448,13 +4454,13 @@ export const HorizontalSimpleMulti = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4496,13 +4502,13 @@ export const HorizontalSimpleMulti = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4556,8 +4562,8 @@ export const HorizontalSimpleMultiGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -4608,13 +4614,13 @@ export const HorizontalSimpleMultiGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4656,13 +4662,13 @@ export const HorizontalSimpleMultiGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4704,13 +4710,13 @@ export const HorizontalSimpleMultiGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4727,7 +4733,7 @@ export const HorizontalStacked = () => {
         Incident Report
       </h3>
       <div className={'flex-grow px-4'}>
-        <BarChart
+        <StackedBarChart
           data={multiCategory}
           yAxis={
             <LinearYAxis
@@ -4803,13 +4809,13 @@ export const HorizontalStacked = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4851,13 +4857,13 @@ export const HorizontalStacked = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4899,13 +4905,13 @@ export const HorizontalStacked = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -4922,7 +4928,7 @@ export const HorizontalStackedGradient = () => {
         Incident Report
       </h3>
       <div className={'flex-grow px-4'}>
-        <BarChart
+        <StackedBarChart
           data={multiCategory}
           yAxis={
             <LinearYAxis
@@ -4957,8 +4963,8 @@ export const HorizontalStackedGradient = () => {
                   gradient={
                     <Gradient
                       stops={[
-                        <GradientStop offset="0%" stopOpacity={0} />,
-                        <GradientStop offset="100%" stopOpacity={1} />
+                        <GradientStop key={1} offset="0%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -5010,13 +5016,13 @@ export const HorizontalStackedGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -5058,13 +5064,13 @@ export const HorizontalStackedGradient = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -5106,13 +5112,13 @@ export const HorizontalStackedGradient = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
