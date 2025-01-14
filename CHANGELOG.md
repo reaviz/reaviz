@@ -1,3 +1,6 @@
+# 16.0.0 - 1/14/25
+- [improvement] Updates to get rid of using deprecated default props
+
 # 15.19.1 - 1/13/25
 - [fix] fix export of word cloud
 
