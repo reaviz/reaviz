@@ -56,7 +56,7 @@ export const LinearValueMarkers = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -65,7 +65,7 @@ export const LinearValueMarkers = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -92,7 +92,7 @@ export const LinearValueMarkersVertical = () => (
       <LinearXAxis type="value" domain={[0, 50]}>
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -101,7 +101,7 @@ export const LinearValueMarkersVertical = () => (
       <LinearYAxis type="value" domain={[0, 10]}>
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>

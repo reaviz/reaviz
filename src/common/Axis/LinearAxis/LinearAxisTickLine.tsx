@@ -1,3 +1,4 @@
+import { mergeDefaultProps } from '@/common/utils';
 import React, { FC, useMemo } from 'react';
 
 export interface LinearAxisTickLineProps {
@@ -14,10 +15,8 @@ export interface LinearAxisTickLineProps {
 export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
   props
 ) => {
-  const { size, position, orientation, strokeColor, strokeWidth, className } = {
-    ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-    ...props
-  };
+  const { size, position, orientation, strokeColor, strokeWidth, className } =
+    mergeDefaultProps(LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS, props);
 
   const path = useMemo(() => {
     const isVertical = orientation === 'vertical';

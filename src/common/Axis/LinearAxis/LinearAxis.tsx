@@ -90,6 +90,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
       if (dimensions.width !== width) {
         setDimensions({ ...dimensions, width: width });
         onDimensionsChange({ width });
+        console.log('[log] width', width);
       }
     } else {
       if (dimensions.height !== height) {

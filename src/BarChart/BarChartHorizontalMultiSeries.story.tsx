@@ -55,7 +55,7 @@ export const Simple = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -67,7 +67,7 @@ export const Simple = () => (
       >
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -94,7 +94,7 @@ export const Stacked = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -103,7 +103,7 @@ export const Stacked = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -160,7 +160,7 @@ export const StackedNormalized = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -169,7 +169,7 @@ export const StackedNormalized = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries tickSize={20}>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel
             rotation={false}
             format={(data) => `${data * 100}%`}

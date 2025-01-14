@@ -12,8 +12,6 @@ import {
 import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 import {
-  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisLine,
   LinearXAxis,
   LinearXAxisTickLabel,
@@ -50,7 +48,7 @@ export const On = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -59,7 +57,7 @@ export const On = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -78,7 +76,7 @@ export const Off = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -87,7 +85,7 @@ export const Off = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -106,7 +104,7 @@ export const OnHover = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -115,7 +113,7 @@ export const OnHover = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -134,7 +132,7 @@ export const OnlyFirst = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -143,7 +141,7 @@ export const OnlyFirst = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -162,7 +160,7 @@ export const OnlyLast = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -171,7 +169,7 @@ export const OnlyLast = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -216,7 +214,7 @@ export const Shapes = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -225,7 +223,7 @@ export const Shapes = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel />
         </LinearYAxisTickSeries>
       </LinearYAxis>

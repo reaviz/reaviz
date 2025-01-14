@@ -25,6 +25,7 @@ import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
 import { calculateDimensions } from '@/common/utils/size';
 import { getChildComponent, mergeDefaultProps } from '@/common/utils';
+import { useDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickSeriesProps extends PropsWithChildren {
   height: number;
@@ -61,16 +62,18 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     orientation,
     height,
     width,
-    // label,
     tickSize,
     tickValues,
     interval,
-    // line,
     axis
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const label = getChildComponent(children, LinearAxisTickLabel.name);
   const line = getChildComponent(children, LinearAxisTickLine.name);
+  const lineProps = useDefaultProps<LinearAxisTickLineProps>(
+    line?.type?.name,
+    line?.props
+  );
 
   const labelProps = useMemo(
     () => ({
@@ -220,6 +223,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
           {line && (
             <CloneElement<LinearAxisTickLineProps>
               element={line}
+              {...lineProps}
               height={height}
               width={width}
               orientation={orientation}
@@ -233,8 +237,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               half={tick.half}
               angle={angle}
               orientation={orientation}
-              lineSize={line?.props.size}
-              linePosition={line?.props.position}
+              lineSize={lineProps?.size}
+              linePosition={lineProps?.position}
             >
               {label.props.children}
             </CloneElement>

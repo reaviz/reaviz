@@ -79,8 +79,7 @@ export const TopBottomAxis = () => {
       yAxis={
         <LinearYAxis type="value">
           <LinearYAxisTickSeries>
-            {/* TODO: get rid of dependency on line props inside tick label */}
-            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLine />
             <LinearYAxisTickLabel />
           </LinearYAxisTickSeries>
         </LinearYAxis>
@@ -142,7 +141,7 @@ export const LeftRightAxis = () => {
       xAxis={
         <LinearXAxis type="time">
           <LinearXAxisTickSeries>
-            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLine />
             <LinearXAxisTickLabel />
           </LinearXAxisTickSeries>
         </LinearXAxis>

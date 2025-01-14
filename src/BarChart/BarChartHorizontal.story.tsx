@@ -58,7 +58,7 @@ export const Simple = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -67,7 +67,7 @@ export const Simple = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -94,7 +94,7 @@ export const WithScroll = () => (
         <LinearXAxis type="value">
           <LinearAxisLine />
           <LinearXAxisTickSeries>
-            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLine />
             <LinearXAxisTickLabel />
           </LinearXAxisTickSeries>
         </LinearXAxis>
@@ -103,7 +103,7 @@ export const WithScroll = () => (
         <LinearYAxis type="category">
           <LinearAxisLine />
           <LinearYAxisTickSeries tickSize={20}>
-            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLine />
             <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
           </LinearYAxisTickSeries>
         </LinearYAxis>
@@ -129,7 +129,7 @@ export const LargeDataset = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -138,7 +138,7 @@ export const LargeDataset = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -163,7 +163,7 @@ export const Labels = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -172,7 +172,7 @@ export const Labels = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -195,7 +195,7 @@ export const Autosize = () => (
         <LinearXAxis type="value">
           <LinearAxisLine />
           <LinearXAxisTickSeries>
-            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLine />
             <LinearXAxisTickLabel />
           </LinearXAxisTickSeries>
         </LinearXAxis>
@@ -204,7 +204,7 @@ export const Autosize = () => (
         <LinearYAxis type="category">
           <LinearAxisLine />
           <LinearYAxisTickSeries tickSize={20}>
-            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLine />
             <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
           </LinearYAxisTickSeries>
         </LinearYAxis>
@@ -222,7 +222,7 @@ export const Waterfall = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -232,7 +232,7 @@ export const Waterfall = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -249,7 +249,7 @@ export const Duration = () => (
       <LinearXAxis type="duration">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel format={(d) => d / 3600 + 'h'} />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -259,7 +259,7 @@ export const Duration = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -276,7 +276,7 @@ export const NonZero = () => (
       <LinearXAxis type="value">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -286,7 +286,7 @@ export const NonZero = () => (
       <LinearYAxis type="category">
         <LinearAxisLine />
         <LinearYAxisTickSeries tickSize={20}>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>

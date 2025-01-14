@@ -58,7 +58,7 @@ export const _Simple = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -67,7 +67,7 @@ export const _Simple = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -104,7 +104,7 @@ export const Clicked = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -113,7 +113,7 @@ export const Clicked = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -183,7 +183,7 @@ export const CustomLineStyles = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -192,7 +192,7 @@ export const CustomLineStyles = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -218,7 +218,7 @@ export const _LargeDataset = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -227,7 +227,7 @@ export const _LargeDataset = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -253,7 +253,7 @@ export const Stacked = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -262,7 +262,7 @@ export const Stacked = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -288,7 +288,7 @@ export const StackedNormalized = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -297,7 +297,7 @@ export const StackedNormalized = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel
             {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
             rotation={false}

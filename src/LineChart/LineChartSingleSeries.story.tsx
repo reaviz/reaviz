@@ -46,7 +46,7 @@ export const Simple = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -55,7 +55,7 @@ export const Simple = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -74,7 +74,7 @@ export const NoAnimation = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -83,7 +83,7 @@ export const NoAnimation = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -100,7 +100,7 @@ export const Autosize = () => (
         <LinearXAxis type="time">
           <LinearAxisLine />
           <LinearXAxisTickSeries>
-            <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLine />
             <LinearXAxisTickLabel />
           </LinearXAxisTickSeries>
         </LinearXAxis>
@@ -109,7 +109,7 @@ export const Autosize = () => (
         <LinearYAxis type="value">
           <LinearAxisLine />
           <LinearYAxisTickSeries>
-            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLine />
             <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
           </LinearYAxisTickSeries>
         </LinearYAxis>
@@ -128,7 +128,7 @@ export const Interval = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries interval={timeDay}>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -137,7 +137,7 @@ export const Interval = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -156,7 +156,7 @@ export const LargeDataset = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -165,7 +165,7 @@ export const LargeDataset = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -189,7 +189,7 @@ export const DynamicColors = () => (
       <LinearXAxis type="time">
         <LinearAxisLine />
         <LinearXAxisTickSeries>
-          <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearXAxisTickLine />
           <LinearXAxisTickLabel />
         </LinearXAxisTickSeries>
       </LinearXAxis>
@@ -198,7 +198,7 @@ export const DynamicColors = () => (
       <LinearYAxis type="value">
         <LinearAxisLine />
         <LinearYAxisTickSeries>
-          <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+          <LinearYAxisTickLine />
           <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
         </LinearYAxisTickSeries>
       </LinearYAxis>
@@ -241,7 +241,7 @@ const LiveUpdatingStory = () => {
           <LinearXAxis type="time">
             <LinearAxisLine />
             <LinearXAxisTickSeries>
-              <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+              <LinearXAxisTickLine />
               <LinearXAxisTickLabel />
             </LinearXAxisTickSeries>
           </LinearXAxis>
@@ -250,7 +250,7 @@ const LiveUpdatingStory = () => {
           <LinearYAxis type="value">
             <LinearAxisLine />
             <LinearYAxisTickSeries>
-              <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+              <LinearYAxisTickLine />
               <LinearYAxisTickLabel
                 {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
               />

@@ -19,7 +19,8 @@ import {
   LinearXAxisTickLabel,
   LinearYAxisTickLine,
   LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearXAxisTickLine
 } from '@/common/Axis/LinearAxis';
 import { getYScale, getXScale } from '@/common/scales';
 
@@ -84,8 +85,7 @@ export const TopBottomAxis = () => {
       yAxis={
         <LinearYAxis type="value">
           <LinearYAxisTickSeries>
-            {/* TODO: get rid of dependency on line props inside tick label */}
-            <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearYAxisTickLine />
             <LinearYAxisTickLabel />
           </LinearYAxisTickSeries>
         </LinearYAxis>
@@ -146,8 +146,7 @@ export const LeftRightAxis = () => {
         <LinearXAxis type="time">
           <LinearXAxisTickSeries>
             <LinearXAxisTickLabel />
-            {/* TODO: get rid of dependency on line props inside tick label */}
-            <LinearYAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />
+            <LinearXAxisTickLine />
           </LinearXAxisTickSeries>
         </LinearXAxis>
       }
