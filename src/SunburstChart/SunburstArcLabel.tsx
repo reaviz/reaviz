@@ -1,7 +1,7 @@
 import React, { FC, useMemo } from 'react';
 import invert from 'invert-color';
 import ellipsize from 'ellipsize';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface SunburstArcLabelProps {

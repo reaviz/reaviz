@@ -9,7 +9,7 @@ import React, {
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Gradient, GradientProps } from '@/common/Gradient';
 import { Mask, MaskProps } from '@/common/Mask';
 import { DEFAULT_TRANSITION } from '@/common/Motion';

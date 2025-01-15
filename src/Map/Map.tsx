@@ -13,7 +13,7 @@ import {
 } from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 import { MapMarkerProps, MapMarker } from './MapMarker';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 type MarkerElement = ReactElement<MapMarkerProps, typeof MapMarker>;
 

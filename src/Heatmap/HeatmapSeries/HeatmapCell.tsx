@@ -17,7 +17,7 @@ import {
 } from '@/common/utils/functions';
 import chroma from 'chroma-js';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { ChartInternalShallowDataShape } from '@/common/data';
 import css from './HeatmapCell.module.css';

@@ -1,6 +1,6 @@
 import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
 import { ArcData } from '@/PieChart';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';

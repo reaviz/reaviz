@@ -1,7 +1,7 @@
 import React, { FC, useCallback } from 'react';
 import { ChartShallowDataShape } from '@/common/data';
 import { calculateDimensions, formatValue, wrapText } from '@/common/utils';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export interface FunnelAxisLabelProps {
   /**

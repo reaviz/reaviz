@@ -6,7 +6,7 @@ import React, {
   Fragment,
   useMemo
 } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';

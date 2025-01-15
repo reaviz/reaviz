@@ -8,7 +8,7 @@ import {
   getAriaLabel,
   getColor
 } from '@/common';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import classNames from 'classnames';
 import css from './BarListSeries.module.css';
 

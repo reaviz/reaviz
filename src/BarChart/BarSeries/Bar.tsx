@@ -18,7 +18,7 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '@/common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { BarLabelProps, BarLabel, BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { motion, useMotionValue, useSpring } from 'motion/react';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from './config';
 

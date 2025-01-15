@@ -9,7 +9,7 @@ import React, {
 import { IVennLayout } from '@upsetjs/venn.js';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { useInterpolate } from './useInterpolate';
 import { Mask, MaskProps } from '@/common/Mask';
 import { Gradient, GradientProps } from '@/common/Gradient';

@@ -1,6 +1,6 @@
 import { max } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CloneElement, useId } from 'reablocks';
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '@/common';

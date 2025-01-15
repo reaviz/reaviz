@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ChartInternalDataTypes } from '@/common/data';
 import { CloneElement } from 'reablocks';
 import { formatValue } from '@/common/utils/formatting';
