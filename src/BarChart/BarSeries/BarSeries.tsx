@@ -320,7 +320,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
                   ? yScale(marker.props.value)
                   : xScale(marker.props.value)
               }
-              isHorizontal={layout === 'vertical'}
+              direction={layout === 'vertical' ? 'horizontal' : 'vertical'}
             />
           ))}
       </>
