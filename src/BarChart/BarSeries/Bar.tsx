@@ -627,7 +627,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       rx,
       ry,
       style,
-      tooltipData
+      ariaLabelData
     ]
   );
 
