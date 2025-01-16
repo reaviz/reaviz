@@ -1,3 +1,6 @@
+# 16.0.1 - 1/16/25
+- [improvement] Motion upgrade #282
+
 # 16.0.0 - 1/14/25
 - [improvement] Updates to get rid of using deprecated default props
 
