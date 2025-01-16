@@ -1,6 +1,6 @@
 import React, { FC, isValidElement } from 'react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { wrapText } from '@/common/utils/wrapText';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 

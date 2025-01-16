@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { motion, useSpring, useMotionValue } from 'motion/react';
 import { interpolate } from 'd3-interpolate';
 import { DEFAULT_TRANSITION } from './config';
 
@@ -21,9 +21,9 @@ export const MotionPath = ({ custom, transition, ...rest }) => {
   return (
     <motion.path
       {...rest}
-      initial={exitRest}
-      exit={exitRest}
-      animate={enterRest}
+      initial={{ opacity: 0, ...exitRest }}
+      exit={{ opacity: 0, ...exitRest }}
+      animate={{ opacity: 1, ...enterRest }}
       transition={transition}
       d={transition.type !== false ? d : enterD}
     />

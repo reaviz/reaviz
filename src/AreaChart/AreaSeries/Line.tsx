@@ -96,10 +96,6 @@ export interface LineProps extends PropFunctionTypes {
   glow?: Glow;
 }
 
-function roundToFiveDecimals(value: number): number {
-  return parseFloat(value.toFixed(5));
-}
-
 export const Line: FC<Partial<LineProps>> = ({
   id,
   width,

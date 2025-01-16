@@ -1,7 +1,7 @@
 import React, { FC, useMemo } from 'react';
 import { ChartInternalShallowDataShape, Direction } from '@/common/data';
 import { BarType } from './Bar';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { mergeDefaultProps } from '@/common';
 

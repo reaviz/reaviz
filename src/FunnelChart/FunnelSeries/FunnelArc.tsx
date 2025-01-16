@@ -10,7 +10,7 @@ import {
 import { ColorSchemeType, getColor, schemes } from '@/common/color';
 import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import {
   ChartTooltip,
   TooltipArea,

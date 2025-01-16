@@ -15,7 +15,7 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '@/common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { schemes, getColor, ColorSchemeType } from '@/common/color';
 import { identifier } from 'safe-identifier';

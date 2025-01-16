@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
 import { ColorSchemeType, getColor } from '@/common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { wrapText } from '@/common/utils/wrapText';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 

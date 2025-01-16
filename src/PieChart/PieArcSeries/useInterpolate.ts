@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { useMotionValue, useSpring } from 'framer-motion';
+import { useMotionValue, useSpring } from 'motion/react';
 import { interpolate } from 'd3-interpolate';
 
 export const useInterpolate = ({ data, animated, arc }) => {

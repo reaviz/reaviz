@@ -1,5 +1,5 @@
 import React, { FC, ReactElement, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ChartShallowDataShape } from '../common/data';
 import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
 import { CloneElement } from 'reablocks';

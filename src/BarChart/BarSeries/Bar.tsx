@@ -18,7 +18,7 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '@/common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { BarLabelProps, BarLabel, BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';
@@ -569,6 +569,16 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       delete animate.x;
       delete animate.y;
 
+      // If the fill is a gradient, we need to add it to the element
+      // rather than try and animate it. This is a workaround for a bug
+      // in the motion library where the gradient is not animated.
+      const extra: any = {};
+      if (fill.includes('url')) {
+        delete initial.fill;
+        delete animate.fill;
+        extra.fill = fill;
+      }
+
       return (
         <g ref={rect}>
           <motion.rect
@@ -581,6 +591,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
               }),
               cursor
             }}
+            {...extra}
             mask={maskPath}
             rx={rx}
             ry={ry}
@@ -616,7 +627,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       rx,
       ry,
       style,
-      tooltipData
+      ariaLabelData
     ]
   );
 
