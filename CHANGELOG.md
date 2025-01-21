@@ -1,3 +1,6 @@
+# 16.0.2 - 1/21/25
+- [chore] Update venn.js dependency #283
+
 # 16.0.1 - 1/16/25
 - [improvement] Motion upgrade #282
 
