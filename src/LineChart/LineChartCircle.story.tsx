@@ -5,6 +5,20 @@ import { PointSeries } from '@/AreaChart';
 import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
 import { LineSeries } from './LineSeries';
+import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -22,6 +36,24 @@ export const On = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show={true} />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -32,6 +64,24 @@ export const Off = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show={false} />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -42,6 +92,24 @@ export const OnHover = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show="hover" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -52,6 +120,24 @@ export const OnlyFirst = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show="first" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -62,6 +148,24 @@ export const OnlyLast = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries symbols={<PointSeries show="last" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -97,6 +201,24 @@ export const Shapes = () => (
           />
         }
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );

@@ -14,7 +14,20 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
-import { LinearXAxis, LinearXAxisTickSeries } from '@/common/Axis/LinearAxis';
+import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 import { ChartDataShape } from '@/common/data';
@@ -45,6 +58,24 @@ export const Simple = () => (
         line={<Line strokeWidth={4} />}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -72,6 +103,24 @@ export const Masks = () => (
         line={<Line strokeWidth={3} />}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -84,6 +133,24 @@ export const Interpolation = () => (
         height={250}
         data={singleDateData}
         series={<AreaSeries interpolation="smooth" />}
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
       />
     </div>
     <div>
@@ -93,6 +160,24 @@ export const Interpolation = () => (
         height={250}
         data={singleDateData}
         series={<AreaSeries interpolation="step" />}
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
       />
     </div>
   </div>
@@ -104,6 +189,24 @@ export const NoAnimation = () => (
     height={250}
     data={singleDateData}
     series={<AreaSeries animated={false} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -112,6 +215,24 @@ export const NonZero = () => (
     width={350}
     height={250}
     data={nonZeroDateData as ChartDataShape[]}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -125,22 +246,76 @@ export const Interval = () => (
     height={250}
     data={singleDateData}
     xAxis={
-      <LinearXAxis
-        type="time"
-        tickSeries={<LinearXAxisTickSeries interval={timeDay} />}
-      />
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries interval={timeDay}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <AreaChart data={singleDateData} />
+    <AreaChart
+      data={singleDateData}
+      xAxis={
+        <LinearXAxis type="time">
+          <LinearAxisLine />
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLine />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearAxisLine />
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLine />
+            <LinearYAxisTickLabel />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+    />
   </div>
 );
 
 export const SingleValue = () => (
-  <AreaChart data={[singleDateData[0]]} width={350} height={250} />
+  <AreaChart
+    data={[singleDateData[0]]}
+    width={350}
+    height={250}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
+  />
 );
 
 export const Performance = () =>
@@ -155,7 +330,27 @@ export const Performance = () =>
         display: 'inline-block'
       }}
     >
-      <AreaChart data={singleDateData} />
+      <AreaChart
+        data={singleDateData}
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
+      />
     </div>
   ));
 Performance.tags = ['skip-snapshot'];
@@ -166,5 +361,23 @@ export const BigInt = () => (
     width={350}
     height={250}
     data={singleDateBigIntData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );

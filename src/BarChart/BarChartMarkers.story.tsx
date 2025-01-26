@@ -11,7 +11,16 @@ import {
   RadialAxisTick,
   RadialAxisTickLine,
   RadialAxisArcSeries,
-  RadialValueMarker
+  RadialValueMarker,
+  LinearAxisLine,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common';
 import { RadialBar, RadialBarChart, RadialBarSeries } from '@/RadialBarChart';
 import { BarChart } from './BarChart';
@@ -35,12 +44,23 @@ export const LinearValueMarkersVertical = () => (
     width={500}
     height={350}
     data={categoryData}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
     yAxis={
-      <LinearYAxis
-        type="category"
-        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      <LinearYAxis type="category">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20}>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -73,6 +93,24 @@ export const LinearValueMarkersHorizontal = () => (
         ]}
       />
     }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -94,16 +132,14 @@ export const RadialValueMarkers = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+        <RadialAxisArcSeries count={10} />
+      </RadialAxis>
     }
   />
 );

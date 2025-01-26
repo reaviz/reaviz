@@ -1,4 +1,11 @@
-import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
+import React, {
+  FC,
+  Fragment,
+  PropsWithChildren,
+  ReactElement,
+  useCallback,
+  useMemo
+} from 'react';
 import {
   LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearAxisTickLabel,
@@ -17,9 +24,10 @@ import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
 import { calculateDimensions } from '@/common/utils/size';
-import { mergeDefaultProps } from '@/common/utils';
+import { getChildComponent, mergeDefaultProps } from '@/common/utils';
+import { useDefaultProps } from '@/common/utils';
 
-export interface LinearAxisTickSeriesProps {
+export interface LinearAxisTickSeriesProps extends PropsWithChildren {
   height: number;
   width: number;
   scale: any;
@@ -49,17 +57,23 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   props
 ) => {
   const {
+    children,
     scale,
     orientation,
     height,
     width,
-    label,
     tickSize,
     tickValues,
     interval,
-    line,
     axis
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
+
+  const label = getChildComponent(children, LinearAxisTickLabel.name);
+  const line = getChildComponent(children, LinearAxisTickLine.name);
+  const lineProps = useDefaultProps<LinearAxisTickLineProps>(
+    line?.type?.name,
+    line?.props
+  );
 
   const labelProps = useMemo(
     () => ({
@@ -209,6 +223,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
           {line && (
             <CloneElement<LinearAxisTickLineProps>
               element={line}
+              {...lineProps}
               height={height}
               width={width}
               orientation={orientation}
@@ -222,8 +237,11 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               half={tick.half}
               angle={angle}
               orientation={orientation}
-              line={line!}
-            />
+              lineSize={lineProps?.size}
+              linePosition={lineProps?.position}
+            >
+              {label.props.children}
+            </CloneElement>
           )}
         </g>
       ))}
@@ -232,33 +250,35 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
 };
 
 export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
-  line: (
-    <LinearAxisTickLine
-      {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
-      height={10}
-      width={10}
-      orientation="horizontal"
-      position="center"
-    />
-  ),
-  label: (
-    <LinearAxisTickLabel
-      line={
-        <LinearAxisTickLine
-          {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
-          orientation="horizontal"
-          position="center"
-          height={5}
-          width={5}
-        />
-      }
-      text=""
-      fullText=""
-      angle={0}
-      orientation="horizontal"
-      half="start"
-      position="center"
-    />
-  ),
+  // line: (
+  //   <LinearAxisTickLine
+  //     {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
+  //     height={10}
+  //     width={10}
+  //     orientation="horizontal"
+  //     position="center"
+  //   />
+  // ),
+  // label: (
+  //   <LinearAxisTickLabel
+  //     line={
+  //       <LinearAxisTickLine
+  //         {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
+  //         orientation="horizontal"
+  //         position="center"
+  //         height={5}
+  //         width={5}
+  //       />
+  //     }
+  //     lineSize={LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS.size}
+  //     linePosition='center'
+  //     text=""
+  //     fullText=""
+  //     angle={0}
+  //     orientation="horizontal"
+  //     half="start"
+  //     position="center"
+  //   />
+  // ),
   tickSize: 30
 };

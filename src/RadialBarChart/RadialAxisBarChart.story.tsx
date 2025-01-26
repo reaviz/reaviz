@@ -38,16 +38,14 @@ export const SemiCircle = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.5 * Math.PI}
     endAngle={0.5 * Math.PI}
@@ -69,23 +67,15 @@ export const Quarter = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={
-                  <RadialAxisTickLabel
-                    format={(f) => format(new Date(f), 'M/d')}
-                  />
-                }
-              />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel format={(f) => format(new Date(f), 'M/d')} />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={0}
     endAngle={0.5 * Math.PI}
@@ -107,23 +97,15 @@ export const Custom = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={
-                  <RadialAxisTickLabel
-                    format={(f) => format(new Date(f), 'M/d')}
-                  />
-                }
-              />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel format={(f) => format(new Date(f), 'M/d')} />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.4 * Math.PI}
     endAngle={0.4 * Math.PI}
@@ -146,17 +128,14 @@ export const SemiCircleMultiSeries = () => (
       />
     }
     axis={
-      <RadialAxis
-        type="category"
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis type="category">
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.5 * Math.PI}
     endAngle={0.5 * Math.PI}
@@ -179,17 +158,14 @@ export const QuarterCircleMultiSeries = () => (
       />
     }
     axis={
-      <RadialAxis
-        type="category"
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis type="category">
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={0}
     endAngle={0.5 * Math.PI}
@@ -212,17 +188,14 @@ export const CustomCircle1MultiSeries = () => (
       />
     }
     axis={
-      <RadialAxis
-        type="category"
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis type="category">
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.75 * Math.PI}
     endAngle={0.75 * Math.PI}
@@ -245,17 +218,14 @@ export const CustomCircle2MultiSeries = () => (
       />
     }
     axis={
-      <RadialAxis
-        type="category"
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis type="category">
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
     startAngle={-0.25 * Math.PI}
     endAngle={0.25 * Math.PI}

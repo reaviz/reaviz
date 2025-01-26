@@ -12,7 +12,11 @@ import {
   LinearYAxisTickLabel,
   LinearXAxis,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearYAxisTickLine,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearXAxisTickLine,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { getYScale, getXScale } from '@/common/scales';
 
@@ -54,18 +58,11 @@ export const TopBottomAxis = () => {
       margins={0}
       data={singleDateData}
       xAxis={
-        <LinearXAxis
-          type="time"
-          orientation="horizontal"
-          position="end"
-          axisLine={null}
-          tickSeries={
-            <LinearXAxisTickSeries
-              line={null}
-              label={<LinearXAxisTickLabel padding={5} position="end" />}
-            />
-          }
-        />
+        <LinearXAxis type="time" orientation="horizontal" position="end">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel padding={5} position="end" />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
       }
       secondaryAxis={[
         <LinearXAxis
@@ -73,16 +70,20 @@ export const TopBottomAxis = () => {
           orientation="horizontal"
           position="start"
           scale={scale}
-          axisLine={null}
-          tickSeries={
-            <LinearXAxisTickSeries
-              line={null}
-              label={<LinearXAxisTickLabel padding={20} position="start" />}
-            />
-          }
-        />
+        >
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel padding={20} position="start" />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
       ]}
-      yAxis={<LinearYAxis type="value" axisLine={null} />}
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLine />
+            <LinearYAxisTickLabel />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
     />
   );
 };
@@ -119,39 +120,32 @@ export const LeftRightAxis = () => {
       margins={0}
       data={singleDateData}
       yAxis={
-        <LinearYAxis
-          position="end"
-          axisLine={null}
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={<LinearYAxisTickLabel padding={5} position="end" />}
-            />
-          }
-        />
+        <LinearYAxis position="end">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel padding={5} position="end" />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       }
       secondaryAxis={[
-        <LinearYAxis
-          type="category"
-          position="start"
-          axisLine={null}
-          scale={scale}
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={
-                <LinearYAxisTickLabel
-                  padding={20}
-                  position="start"
-                  rotation={270}
-                  align="start"
-                />
-              }
+        <LinearYAxis type="category" position="start" scale={scale}>
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              padding={20}
+              position="start"
+              rotation={270}
+              align="start"
             />
-          }
-        />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       ]}
-      xAxis={<LinearXAxis type="time" axisLine={null} />}
+      xAxis={
+        <LinearXAxis type="time">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLine />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
     />
   );
 };

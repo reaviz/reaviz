@@ -28,6 +28,7 @@ export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     {...mergeDefaultProps(LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS, props)}
   />
 );
+LinearXAxisTickLabel.displayName = 'LinearAxisTickLabel';
 export const LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   rotation: true,
@@ -42,6 +43,7 @@ export const LinearXAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
     {...mergeDefaultProps(LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS, props)}
   />
 );
+LinearXAxisTickLine.displayName = 'LinearAxisTickLine';
 export const LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   position: 'end'
@@ -56,35 +58,16 @@ export const LinearXAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   );
 
   return (
-    <LinearAxisTickSeries
-      {...xTickSeriesProps}
-      line={
-        xTickSeriesProps?.line ? (
-          <LinearXAxisTickLine
-            {...mergeDefaultProps(
-              LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
-              props?.line?.props
-            )}
-          />
-        ) : null
-      }
-      label={
-        xTickSeriesProps?.label ? (
-          <LinearXAxisTickLabel
-            {...mergeDefaultProps(
-              LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS,
-              props?.label?.props
-            )}
-          />
-        ) : null
-      }
-    />
+    <LinearAxisTickSeries {...xTickSeriesProps}>
+      {xTickSeriesProps?.children}
+    </LinearAxisTickSeries>
   );
 };
+LinearXAxisTickSeries.displayName = 'LinearAxisTickSeries';
 export const LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   tickSize: 75,
-  line: <LinearXAxisTickLine {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS} />,
+  line: <LinearXAxisTickLine />,
   label: <LinearXAxisTickLabel {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS} />
 };
 
@@ -94,23 +77,9 @@ export const LinearXAxis: FC<Partial<LinearAxisProps>> = (props) => {
     [props]
   );
 
-  return (
-    <LinearAxis
-      {...xAxisProps}
-      tickSeries={
-        xAxisProps.tickSeries && (
-          <LinearXAxisTickSeries
-            {...mergeDefaultProps(
-              LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
-              xAxisProps?.tickSeries?.props
-            )}
-          />
-        )
-      }
-    />
-  );
+  return <LinearAxis {...xAxisProps}>{xAxisProps?.children}</LinearAxis>;
 };
-export const LINEAR_X_AXIS_DEFAULT_PROPS = {
+export const LINEAR_X_AXIS_DEFAULT_PROPS: Partial<LinearAxisProps> = {
   ...LINEAR_AXIS_DEFAULT_PROPS,
   position: 'end',
   roundDomains: false,

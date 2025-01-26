@@ -22,7 +22,14 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearAxisLine,
+  LinearXAxisTickLine,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
@@ -44,12 +51,26 @@ export const Simple = () => (
     width={500}
     height={350}
     data={multiCategory}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
     yAxis={
       <LinearYAxis
         type="category"
         tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      >
+        <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20}>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
     series={
       <BarSeries
@@ -69,12 +90,23 @@ export const Stacked = () => (
     width={500}
     height={350}
     data={multiCategory}
-    xAxis={<LinearXAxis type="value" />}
+    xAxis={
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
     yAxis={
-      <LinearYAxis
-        type="category"
-        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
-      />
+      <LinearYAxis type="category">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20}>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
     series={
       <StackedBarSeries
@@ -103,23 +135,18 @@ export const StackedDiverging = () => (
       />
     }
     yAxis={
-      <LinearYAxis
-        type="category"
-        position="center"
-        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-      />
+      <LinearYAxis type="category" position="center">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries tickSize={20} />
+      </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        roundDomains={true}
-        type="value"
-        tickSeries={
-          <LinearXAxisTickSeries
-            line={null}
-            label={<LinearXAxisTickLabel padding={5} />}
-          />
-        }
-      />
+      <LinearXAxis roundDomains={true} type="value">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLabel padding={5} />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
     }
   />
 );
@@ -129,22 +156,26 @@ export const StackedNormalized = () => (
     width={500}
     height={350}
     data={multiCategory}
-    yAxis={<LinearYAxis type="category" />}
+    yAxis={
+      <LinearYAxis type="category">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
     xAxis={
-      <LinearXAxis
-        type="value"
-        tickSeries={
-          <LinearXAxisTickSeries
-            tickSize={20}
-            label={
-              <LinearXAxisTickLabel
-                rotation={false}
-                format={(data) => `${data * 100}%`}
-              />
-            }
+      <LinearXAxis type="value">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel
+            rotation={false}
+            format={(data) => `${data * 100}%`}
           />
-        }
-      />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
     }
     series={
       <StackedNormalizedBarSeries

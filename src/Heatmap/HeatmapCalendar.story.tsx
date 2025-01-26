@@ -8,7 +8,18 @@ import {
   heatmapCalendarOffsetData
 } from 'reaviz-data-utils';
 import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
-import { ChartTooltip, formatValue } from '@/common';
+import {
+  ChartTooltip,
+  formatValue,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
+} from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -51,6 +62,26 @@ export const MultiMonthCalendar = () => (
       width={100}
       view="month"
       data={janHeatMapData}
+      yAxis={
+        <LinearYAxis type="category">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+      xAxis={
+        <LinearXAxis type="category">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
     />
     <CalendarHeatmap
       id="multi-month-calendar-2"
@@ -58,6 +89,26 @@ export const MultiMonthCalendar = () => (
       width={100}
       view="month"
       data={febHeatMapData}
+      yAxis={
+        <LinearYAxis type="category">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+      xAxis={
+        <LinearXAxis type="category">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
     />
     <CalendarHeatmap
       id="multi-month-calendar-3"
@@ -65,6 +116,26 @@ export const MultiMonthCalendar = () => (
       width={100}
       view="month"
       data={marchHeatMapData}
+      yAxis={
+        <LinearYAxis type="category">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+      xAxis={
+        <LinearXAxis type="category">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
     />
   </div>
 );
@@ -114,6 +185,26 @@ export const SelectCell = () => {
               />
             }
           />
+        }
+        yAxis={
+          <LinearYAxis type="category">
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLabel
+                {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+                padding={5}
+              />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
+        xAxis={
+          <LinearXAxis type="category">
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLabel
+                {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+                padding={5}
+              />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
         }
       />
       <div>Selected Date:{activePoints?.[0]?.metadata.date.toDateString()}</div>

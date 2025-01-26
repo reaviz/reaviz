@@ -37,17 +37,14 @@ export const Simple = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );
@@ -65,18 +62,14 @@ export const Categories = () => (
       />
     }
     axis={
-      <RadialAxis
-        type="category"
-        ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis type="category">
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );
@@ -100,17 +93,14 @@ export const Bubble = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );
@@ -149,17 +139,14 @@ export const Symbols = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );
@@ -179,19 +166,14 @@ export const Resizable = () => (
         />
       }
       axis={
-        <RadialAxis
-          ticks={
-            <RadialAxisTickSeries
-              count={5}
-              tick={
-                <RadialAxisTick
-                  line={<RadialAxisTickLine position="inside" />}
-                />
-              }
-            />
-          }
-          arcs={<RadialAxisArcSeries count={10} />}
-        />
+        <RadialAxis>
+          <RadialAxisArcSeries count={10} />
+          <RadialAxisTickSeries count={5}>
+            <RadialAxisTick>
+              <RadialAxisTickLine position="inside" />
+            </RadialAxisTick>
+          </RadialAxisTickSeries>
+        </RadialAxis>
       }
     />
   </div>

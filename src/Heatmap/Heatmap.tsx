@@ -63,7 +63,6 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   yAxis = (
     <LinearYAxis
       type="category"
-      axisLine={null}
       tickSeries={
         <LinearYAxisTickSeries
           line={null}
@@ -80,7 +79,6 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   xAxis = (
     <LinearXAxis
       type="category"
-      axisLine={null}
       tickSeries={
         <LinearXAxisTickSeries
           line={null}
@@ -167,7 +165,9 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
             scale={xScale}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(event) => updateAxes('horizontal', event)}
-          />
+          >
+            {xAxis?.props?.children}
+          </CloneElement>
           <CloneElement<LinearAxisProps>
             element={yAxis}
             height={chartHeight}
@@ -175,7 +175,9 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
             scale={yScale}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(event) => updateAxes('vertical', event)}
-          />
+          >
+            {yAxis?.props?.children}
+          </CloneElement>
           {secondaryAxis &&
             secondaryAxis.map((axis, i) => (
               <CloneElement<LinearAxisProps>
@@ -185,7 +187,9 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
                 width={chartWidth}
                 visibility={chartSized ? 'visible' : 'hidden'}
                 onDimensionsChange={(event) => updateAxes('horizontal', event)}
-              />
+              >
+                {axis?.props?.children}
+              </CloneElement>
             ))}
           {chartSized && (
             <CloneElement<HeatmapSeriesProps>
@@ -194,7 +198,9 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
               data={scalesData}
               xScale={xScale}
               yScale={yScale}
-            />
+            >
+              {series?.props?.children}
+            </CloneElement>
           )}
         </Fragment>
       );

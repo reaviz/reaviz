@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, PropsWithChildren, ReactElement } from 'react';
 import {
   RadialAxisTickSeries,
   RadialAxisTickSeriesProps
@@ -9,11 +9,11 @@ import {
   RadialAxisArcSeriesProps
 } from './RadialAxisArcSeries';
 import { CloneElement } from 'reablocks';
-import { getTicks, mergeDefaultProps } from '@/common/utils';
+import { getChildComponent, getTicks, mergeDefaultProps } from '@/common/utils';
 
 type RadialAxisType = 'value' | 'time' | 'category';
 
-export interface RadialAxisProps {
+export interface RadialAxisProps extends PropsWithChildren {
   /**
    * Height of the axis.
    */
@@ -40,22 +40,6 @@ export interface RadialAxisProps {
   type: 'value' | 'time' | 'category';
 
   /**
-   * Arc element to render.
-   */
-  arcs: ReactElement<
-    RadialAxisArcSeriesProps,
-    typeof RadialAxisArcSeries
-  > | null;
-
-  /**
-   * Tick element to render.
-   */
-  ticks: ReactElement<
-    RadialAxisTickSeriesProps,
-    typeof RadialAxisTickSeries
-  > | null;
-
-  /**
    * Start angle for the first value.
    */
   startAngle?: number;
@@ -68,8 +52,7 @@ export interface RadialAxisProps {
 
 export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
   const {
-    arcs,
-    ticks,
+    children,
     xScale,
     height,
     width,
@@ -78,6 +61,18 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
     startAngle,
     endAngle
   } = mergeDefaultProps(RADIAL_AXIS_DEFAULT_PROPS, props);
+  const arcs = getChildComponent(
+    children,
+    RadialAxisArcSeries.name,
+    <RadialAxisArcSeries />
+  );
+  const ticks = getChildComponent(
+    children,
+    RadialAxisTickSeries.name,
+    <RadialAxisTickSeries />
+  );
+
+  console.log('[log] children', children);
 
   const outerRadius = Math.min(height, width) / 2;
 
@@ -102,7 +97,9 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
           tickValues={tickValues}
           startAngle={startAngle}
           endAngle={endAngle}
-        />
+        >
+          {arcs.props?.children}
+        </CloneElement>
       )}
       {ticks && (
         <CloneElement<RadialAxisTickSeriesProps>
@@ -113,7 +110,9 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
           outerRadius={outerRadius}
           startAngle={startAngle}
           endAngle={endAngle}
-        />
+        >
+          {ticks.props?.children}
+        </CloneElement>
       )}
     </Fragment>
   );
@@ -122,8 +121,6 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
 export const RADIAL_AXIS_DEFAULT_PROPS: Partial<RadialAxisProps> = {
   innerRadius: 10,
   type: 'value',
-  arcs: <RadialAxisArcSeries />,
-  ticks: <RadialAxisTickSeries />,
   startAngle: 0,
   endAngle: 2 * Math.PI
 };

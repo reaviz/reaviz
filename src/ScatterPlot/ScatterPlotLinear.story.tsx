@@ -14,7 +14,15 @@ import { ScatterSeries, ScatterPoint } from './ScatterSeries';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearXAxis,
+  LinearAxisLine,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickLine,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
@@ -40,6 +48,24 @@ export const Simple = () => (
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -49,16 +75,23 @@ export const CategoricalAxis = () => (
     height={400}
     width={750}
     data={signalStageData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
     yAxis={
-      <LinearYAxis
-        type="category"
-        domain={signalStages as any}
-        tickSeries={
-          <LinearYAxisTickSeries
-            label={<LinearYAxisTickLabel rotation={false} />}
-          />
-        }
-      />
+      <LinearYAxis type="category" domain={signalStages as any}>
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel rotation={false} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
     gridlines={
       <GridlineSeries
@@ -76,6 +109,24 @@ export const NoAnimation = () => (
     width={750}
     data={medSignalChartData}
     series={<ScatterSeries animated={false} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -92,7 +143,32 @@ export const Performance = () => (
           display: 'inline-block'
         }}
       >
-        <ScatterPlot id={`performance-${i}`} data={medSignalChartData} />
+        <ScatterPlot
+          id={`performance-${i}`}
+          data={medSignalChartData}
+          xAxis={
+            <LinearXAxis type="time">
+              <LinearAxisLine />
+              <LinearXAxisTickSeries>
+                <LinearXAxisTickLine
+                  {...LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS}
+                />
+                <LinearXAxisTickLabel />
+              </LinearXAxisTickSeries>
+            </LinearXAxis>
+          }
+          yAxis={
+            <LinearYAxis type="value">
+              <LinearAxisLine />
+              <LinearYAxisTickSeries>
+                <LinearYAxisTickLine
+                  {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS}
+                />
+                <LinearYAxisTickLabel />
+              </LinearYAxisTickSeries>
+            </LinearYAxis>
+          }
+        />
       </div>
     ))}
   </Fragment>
@@ -100,7 +176,28 @@ export const Performance = () => (
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <ScatterPlot id="autosize" data={medSignalChartData} />
+    <ScatterPlot
+      id="autosize"
+      data={medSignalChartData}
+      xAxis={
+        <LinearXAxis type="time">
+          <LinearAxisLine />
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLine />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearAxisLine />
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLine />
+            <LinearYAxisTickLabel />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+    />
   </div>
 );
 
@@ -131,6 +228,24 @@ export const Symbols = () => (
         }
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -150,6 +265,24 @@ export const Bubble = () => (
           />
         }
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );
@@ -187,6 +320,24 @@ const BubbleChartLiveUpdate = () => {
               />
             }
           />
+        }
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
         }
       />
       <br />

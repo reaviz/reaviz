@@ -41,16 +41,14 @@ export const Simple = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );
@@ -70,16 +68,14 @@ export const Gradient = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );
@@ -137,17 +133,14 @@ export const MultiSeries = () => (
       />
     }
     axis={
-      <RadialAxis
-        type="category"
-        ticks={
-          <RadialAxisTickSeries
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis type="category">
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );

@@ -3,6 +3,7 @@ import { RadialAxisTick, RadialAxisTickProps } from './RadialAxisTick';
 import { CloneElement } from 'reablocks';
 import { getTicks } from '@/common/utils/ticks';
 import { TimeInterval } from 'd3-time';
+import { getChildComponent } from '@/common/utils';
 
 export interface TickCallback {
   index?: number;
@@ -45,14 +46,13 @@ export interface RadialAxisTickSeriesProps {
   innerRadius: number;
 
   /**
-   * Tick element to render.
+   * children element to render.
    */
-  tick:
+  children:
+    | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>
     | ((
         tick: TickCallback
-      ) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>)
-    | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
-
+      ) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>);
   /**
    * Start angle for the first value.
    */
@@ -65,10 +65,10 @@ export interface RadialAxisTickSeriesProps {
 }
 
 export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
+  children,
   scale,
   count = 12,
   outerRadius,
-  tick = <RadialAxisTick />,
   tickValues,
   innerRadius,
   interval,
@@ -82,7 +82,13 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
     <Fragment>
       {ticks.map((data, i) => {
         const tickElement =
-          typeof tick === 'function' ? tick({ index: i }) : tick;
+          typeof children === 'function'
+            ? children({ index: i })
+            : getChildComponent(
+              children,
+              RadialAxisTick.name,
+              <RadialAxisTick />
+            );
         return (
           <CloneElement<RadialAxisTickProps>
             element={tickElement}
@@ -94,7 +100,9 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
             outerRadius={outerRadius}
             startAngle={startAngle}
             endAngle={endAngle}
-          />
+          >
+            {tickElement?.props?.children}
+          </CloneElement>
         );
       })}
     </Fragment>

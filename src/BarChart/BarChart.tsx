@@ -367,7 +367,9 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'horizontal' : 'vertical', event)
             }
-          />
+          >
+            {xAxisProps?.children}
+          </CloneElement>
           <CloneElement<LinearAxisProps>
             element={yAxis}
             height={chartHeight}
@@ -377,7 +379,9 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'vertical' : 'horizontal', event)
             }
-          />
+          >
+            {yAxisProps?.children}
+          </CloneElement>
           {secondaryAxis &&
             secondaryAxis.map((axis, i) => (
               <CloneElement<LinearAxisProps>
@@ -387,7 +391,9 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
                 width={chartWidth}
                 visibility={chartSized ? 'visible' : 'hidden'}
                 onDimensionsChange={(event) => updateAxes('horizontal', event)}
-              />
+              >
+                {axis?.props?.children}
+              </CloneElement>
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>
