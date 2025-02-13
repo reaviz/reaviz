@@ -100,7 +100,7 @@
     "ellipsize": "^0.5.1",
     "human-format": "^1.2.0",
     "invert-color": "^2.0.0",
-    "motion": "^11.18.0",
+    "motion": "^12.4.2",
     "reablocks": "^8.7.4",
     "react-fast-compare": "^3.2.1",
     "reaviz-data-utils": "^1.0.0",
