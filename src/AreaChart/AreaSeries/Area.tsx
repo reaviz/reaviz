@@ -78,7 +78,7 @@ export interface AreaProps extends PropFunctionTypes {
   glow?: Glow;
 
   /**
-   * Pointer events to apply to the area.
+   * Pointer events to manage the area events.
    * @default 'none'
    */
   pointerEvents: string;
