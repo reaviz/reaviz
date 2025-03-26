@@ -76,6 +76,12 @@ export interface AreaProps extends PropFunctionTypes {
    * Glow to apply to the area.
    */
   glow?: Glow;
+
+  /**
+   * Pointer events to apply to the area.
+   * @default 'none'
+   */
+  pointerEvents: string;
 }
 
 export const Area: FC<Partial<AreaProps>> = (props) => {
@@ -92,6 +98,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     yScale,
     animated,
     interpolation,
+    pointerEvents = 'none',
     ...rest
   } = mergeDefaultProps(AREA_DEFAULT_PROPS, props);
 
@@ -191,7 +198,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     return (
       <MotionPath
         {...extras}
-        pointerEvents="none"
+        pointerEvents={pointerEvents}
         mask={maskPath}
         fill={fill}
         transition={transition}
@@ -205,7 +212,19 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
         }}
       />
     );
-  }, [data, enter, exit, fill, glow, id, mask, rest, stroke, transition]);
+  }, [
+    data,
+    enter,
+    exit,
+    fill,
+    glow,
+    id,
+    mask,
+    rest,
+    stroke,
+    transition,
+    pointerEvents
+  ]);
 
   return (
     <Fragment>
