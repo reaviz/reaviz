@@ -44,20 +44,15 @@ export const Simple = () => (
       />
     }
     axis={
-      <RadialAxis
-        arcs={<RadialAxisArcSeries count={10} />}
-        ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick
-                line={<RadialAxisTickLine position="inside" />}
-                label={<RadialAxisTickLabel autoRotate />}
-              />
-            }
-          />
-        }
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+            <RadialAxisTickLabel autoRotate />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );

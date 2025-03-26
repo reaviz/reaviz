@@ -98,40 +98,26 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
       series={series}
       data={domainData}
       yAxis={
-        <LinearYAxis
-          type="category"
-          axisLine={null}
-          domain={yDomain}
-          tickSeries={
-            <LinearYAxisTickSeries
-              tickSize={20}
-              line={null}
-              label={
-                <LinearYAxisTickLabel padding={5} format={yAxisLabelFormat} />
-              }
+        <LinearYAxis type="category" domain={yDomain}>
+          <LinearYAxisTickSeries tickSize={20}>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+              format={yAxisLabelFormat}
             />
-          }
-        />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       }
       xAxis={
-        <LinearXAxis
-          type="category"
-          axisLine={null}
-          domain={xDomain}
-          tickSeries={
-            <LinearXAxisTickSeries
-              line={null}
-              tickValues={xTickValues}
-              label={
-                <LinearXAxisTickLabel
-                  padding={5}
-                  align="end"
-                  format={xAxisLabelFormat}
-                />
-              }
+        <LinearXAxis type="category" domain={xDomain}>
+          <LinearXAxisTickSeries tickValues={xTickValues}>
+            <LinearXAxisTickLabel
+              padding={5}
+              align="end"
+              format={xAxisLabelFormat}
             />
-          }
-        />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
       }
     />
   );

@@ -193,7 +193,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
             scale={xScale}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(e) => updateAxes('horizontal', e)}
-          />
+          >
+            {xAxisProps.children}
+          </CloneElement>
           <CloneElement<LinearAxisProps>
             element={yAxis}
             height={chartHeight}
@@ -201,7 +203,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
             scale={yScale}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(e) => updateAxes('vertical', e)}
-          />
+          >
+            {yAxisProps.children}
+          </CloneElement>
           {secondaryAxis &&
             secondaryAxis.map((axis, i) => (
               <CloneElement<LinearAxisProps>
@@ -211,7 +215,9 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
                 width={chartWidth}
                 visibility={chartSized ? 'visible' : 'hidden'}
                 onDimensionsChange={(e) => updateAxes('horizontal', e)}
-              />
+              >
+                {axis.props?.children}
+              </CloneElement>
             ))}
           {chartSized && (
             <CloneElement<ChartBrushProps>

@@ -9,6 +9,20 @@ import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
+import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -28,6 +42,24 @@ export const Simple = () => (
     height={350}
     data={categoryData}
     series={<BarSeries padding={0.1} bar={<Bar />} />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -52,6 +84,24 @@ export const CustomStyle = () => (
         }
       />
     }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -61,6 +111,24 @@ export const LargeDataset = () => (
     height={350}
     data={largeCategoryData}
     series={<BarSeries />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -70,6 +138,24 @@ export const Mask = () => (
     height={250}
     data={categoryData}
     series={<BarSeries bar={<Bar mask={<Stripes />} />} />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -83,6 +169,24 @@ export const CustomColors = () => (
         colorScheme={(_data, index) => (index % 2 ? '#418AD7' : '#ACB7C9')}
       />
     }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -92,6 +196,24 @@ export const Labels = () => (
     height={250}
     data={categoryData}
     series={<BarSeries bar={<Bar label={<BarLabel position={'top'} />} />} />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -101,6 +223,24 @@ export const CustomBarWidth = () => (
     height={250}
     series={<BarSeries bar={<Bar width={5} />} />}
     data={categoryData}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -136,6 +276,26 @@ export const LiveUpdating = () => {
             colorScheme={chroma.scale(['ACB7C9', '418AD7']).colors(data.length)}
           />
         }
+        xAxis={
+          <LinearXAxis type="category">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries tickSize={20}>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel
+                {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
       />
       <br />
       <button onClick={updateData}>Update</button>
@@ -146,7 +306,27 @@ export const LiveUpdating = () => {
 
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
-    <BarChart data={categoryData} />
+    <BarChart
+      data={categoryData}
+      xAxis={
+        <LinearXAxis type="category">
+          <LinearAxisLine />
+          <LinearXAxisTickSeries tickSize={20}>
+            <LinearXAxisTickLine />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearAxisLine />
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLine />
+            <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+    />
   </div>
 );
 
@@ -162,7 +342,29 @@ export const Performance = () =>
         display: 'inline-block'
       }}
     >
-      <BarChart data={categoryData} />
+      <BarChart
+        data={categoryData}
+        xAxis={
+          <LinearXAxis type="category">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries tickSize={20}>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel
+                {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
+      />
     </div>
   ));
 
@@ -172,6 +374,24 @@ export const NoAnimation = () => (
     height={250}
     data={categoryData}
     series={<BarSeries animated={false} />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -181,6 +401,24 @@ export const Waterfall = () => (
     height={350}
     data={categoryData}
     series={<BarSeries type="waterfall" />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -190,6 +428,24 @@ export const NonZero = () => (
     height={250}
     data={nonZeroCategoryData}
     series={<BarSeries />}
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 

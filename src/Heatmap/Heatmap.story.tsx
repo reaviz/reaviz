@@ -7,7 +7,11 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 
 export default {
@@ -27,6 +31,26 @@ export const Basic = () => (
     width={400}
     data={heatmapSimpleData}
     series={<HeatmapSeries colorScheme="OrRd" />}
+    yAxis={
+      <LinearYAxis type="category">
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            padding={5}
+          />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLabel
+            {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            padding={5}
+          />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
   />
 );
 
@@ -37,6 +61,26 @@ export const BasicLegend = () => (
       height={250}
       width={400}
       data={heatmapSimpleData}
+      yAxis={
+        <LinearYAxis type="category">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+      xAxis={
+        <LinearXAxis type="category">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
     />
     <SequentialLegend
       data={heatmapSimpleData}
@@ -74,11 +118,30 @@ export const MultiAxis = () => {
       width={400}
       margins={0}
       data={heatmapSimpleData}
+      yAxis={
+        <LinearYAxis type="category">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
+      xAxis={
+        <LinearXAxis type="category">
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel
+              {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={5}
+            />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
       secondaryAxis={[
         <LinearYAxis
           type="category"
           scale={scale}
-          axisLine={null}
           position="end"
           tickSeries={
             <LinearYAxisTickSeries
@@ -92,7 +155,15 @@ export const MultiAxis = () => {
               }
             />
           }
-        />
+        >
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              padding={10}
+              position="end"
+            />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       ]}
     />
   );
@@ -113,6 +184,26 @@ export const Symbols = () => (
         }
         colorScheme="OrRd"
       />
+    }
+    yAxis={
+      <LinearYAxis type="category">
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            padding={5}
+          />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLabel
+            {...LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            padding={5}
+          />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
     }
   />
 );

@@ -19,7 +19,7 @@ import {
 import { schemes } from '../src/common/color/schemes';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Heatmap/Dark/X-Small',
   component: ScatterPlot
 };

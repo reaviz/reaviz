@@ -11,6 +11,17 @@ import {
 } from './AreaSeries';
 import { ScatterPoint } from '@/ScatterPlot';
 import { symbol, symbolStar } from 'd3-shape';
+import {
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -33,6 +44,24 @@ export const On = () => (
     height={250}
     data={singleDateData}
     series={<AreaSeries symbols={<PointSeries show={true} />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -43,6 +72,24 @@ export const Off = () => (
     height={250}
     data={singleDateData}
     series={<AreaSeries symbols={<PointSeries show={false} />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -53,6 +100,24 @@ export const OnHover = () => (
     height={250}
     data={singleDateData}
     series={<AreaSeries symbols={<PointSeries show="hover" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -63,6 +128,24 @@ export const OnlyFirst = () => (
     height={250}
     data={singleDateData}
     series={<AreaSeries symbols={<PointSeries show="first" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -73,6 +156,24 @@ export const OnlyLast = () => (
     height={250}
     data={singleDateData}
     series={<AreaSeries symbols={<PointSeries show="last" />} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -108,6 +209,24 @@ export const Shapes = () => (
           />
         }
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );

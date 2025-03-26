@@ -14,7 +14,16 @@ import {
   schemes,
   LinearValueMarker,
   LinearXAxis,
-  LinearYAxis
+  LinearYAxis,
+  LinearAxisLine,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickSeries,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common';
 import {
   RadialScatterPlot,
@@ -43,6 +52,24 @@ export const LinearValueMarkers = () => (
     height={400}
     width={750}
     data={medSignalChartData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
     series={
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
@@ -61,8 +88,24 @@ export const LinearValueMarkersVertical = () => (
     height={400}
     width={750}
     data={histogramNumberData}
-    xAxis={<LinearXAxis type="value" domain={[0, 50]} />}
-    yAxis={<LinearYAxis type="value" domain={[0, 10]} />}
+    xAxis={
+      <LinearXAxis type="value" domain={[0, 50]}>
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value" domain={[0, 10]}>
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
     series={
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
@@ -93,17 +136,14 @@ export const RadialValueMarkers = () => (
       />
     }
     axis={
-      <RadialAxis
-        ticks={
-          <RadialAxisTickSeries
-            count={5}
-            tick={
-              <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
-            }
-          />
-        }
-        arcs={<RadialAxisArcSeries count={10} />}
-      />
+      <RadialAxis>
+        <RadialAxisArcSeries count={10} />
+        <RadialAxisTickSeries count={5}>
+          <RadialAxisTick>
+            <RadialAxisTickLine position="inside" />
+          </RadialAxisTick>
+        </RadialAxisTickSeries>
+      </RadialAxis>
     }
   />
 );

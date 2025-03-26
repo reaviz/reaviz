@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, useMemo } from 'react';
+import React, { FC, PropsWithChildren, ReactElement, useMemo } from 'react';
 import {
   RadialAxisTickLineProps,
   RadialAxisTickLine,
@@ -9,8 +9,9 @@ import {
   RadialAxisTickLabel
 } from './RadialAxisTickLabel';
 import { CloneElement } from 'reablocks';
+import { getChildComponent } from '@/common/utils';
 
-export interface RadialAxisTickProps {
+export interface RadialAxisTickProps extends PropsWithChildren {
   /**
    * Scale to use for the tick.
    */
@@ -42,19 +43,6 @@ export interface RadialAxisTickProps {
   index: number;
 
   /**
-   * Line element to render.
-   */
-  line: ReactElement<RadialAxisTickLineProps, typeof RadialAxisTickLine> | null;
-
-  /**
-   * Label element to render.
-   */
-  label: ReactElement<
-    RadialAxisTickLabelProps,
-    typeof RadialAxisTickLabel
-  > | null;
-
-  /**
    * Start angle for the first value.
    */
   startAngle?: number;
@@ -66,8 +54,7 @@ export interface RadialAxisTickProps {
 }
 
 export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
-  line = <RadialAxisTickLine />,
-  label = <RadialAxisTickLabel />,
+  children,
   scale,
   outerRadius = 0,
   data,
@@ -77,6 +64,16 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
   startAngle = 0,
   endAngle = 2 * Math.PI
 }) => {
+  const line = getChildComponent(
+    children,
+    RadialAxisTickLine.name,
+    <RadialAxisTickLine />
+  );
+  const label = getChildComponent(
+    children,
+    RadialAxisTickLabel.name,
+    <RadialAxisTickLabel />
+  );
   const lineProps = useMemo(
     () => ({ ...RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS, ...(line?.props ?? {}) }),
     [line?.props]
@@ -103,6 +100,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
+          // TODO: remove these unused props (require snapshot update)
           startAngle={startAngle}
           endAngle={endAngle}
         />

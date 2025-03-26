@@ -16,6 +16,19 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
+import {
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearAxisLine,
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickLine,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -38,6 +51,24 @@ export const Simple = () => (
     height={350}
     data={multiDateData}
     series={<AreaSeries type="grouped" colorScheme="cybertron" />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -48,6 +79,24 @@ export const LargeDataset = () => (
     height={350}
     series={<AreaSeries type="grouped" colorScheme="cybertron" />}
     data={longMultiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 LargeDataset.tags = ['skip-snapshot'];
@@ -67,6 +116,24 @@ export const CustomColors = () => (
       />
     }
     data={multiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -77,6 +144,24 @@ export const Stacked = () => (
     height={350}
     series={<StackedAreaSeries colorScheme="cybertron" />}
     data={multiDateData}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -87,6 +172,27 @@ export const StackedNormalized = () => (
     height={350}
     data={multiDateData}
     series={<StackedNormalizedAreaSeries colorScheme="cybertron" />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -119,6 +225,24 @@ const LiveUpdatingStory = () => {
           />
         }
         data={data}
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
       />
       <br />
       <button onClick={updateData}>Update</button>

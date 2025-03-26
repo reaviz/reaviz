@@ -1,4 +1,10 @@
-import React, { FC, useCallback, useState, useMemo } from 'react';
+import React, {
+  FC,
+  useCallback,
+  useState,
+  useMemo,
+  PropsWithChildren
+} from 'react';
 import { Margins, getDimension } from '@/common/utils/dimensions';
 import { useResizeObserver } from '@/common/utils/useResizeObserver';
 import { useId } from 'reablocks';
@@ -7,7 +13,7 @@ import classNames from 'classnames';
 import { ChartContextProps, ChartProvider } from './ChartContext';
 import css from './ChartContainer.module.css';
 
-export interface ChartProps {
+export interface ChartProps extends PropsWithChildren {
   /**
    * Id of the chart.
    */

@@ -19,7 +19,8 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearAxisLine
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 import { getXScale, getYScale } from '@/common/scales';
@@ -104,43 +105,30 @@ export const TopBottomAxis = () => {
         />
       }
       xAxis={
-        <LinearXAxis
-          orientation="horizontal"
-          position="end"
-          tickSeries={
-            <LinearXAxisTickSeries
-              line={null}
-              label={
-                <LinearXAxisTickLabel
-                  padding={5}
-                  position="end"
-                  format={(d) => `${d < 0 ? d * -1 : d}`}
-                />
-              }
+        <LinearXAxis orientation="horizontal" position="end">
+          <LinearAxisLine />
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLabel
+              padding={5}
+              position="end"
+              format={(d) => `${d < 0 ? d * -1 : d}`}
             />
-          }
-        />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
       }
       secondaryAxis={[
-        <LinearYAxis
-          orientation="horizontal"
-          type="category"
-          scale={scale}
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={<LinearYAxisTickLabel padding={20} position="start" />}
-            />
-          }
-        />
+        <LinearYAxis orientation="horizontal" type="category" scale={scale}>
+          <LinearAxisLine />
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel padding={20} position="start" />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       ]}
       yAxis={
-        <LinearYAxis
-          type="category"
-          position="center"
-          orientation="vertical"
-          tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-        />
+        <LinearYAxis type="category" position="center" orientation="vertical">
+          <LinearAxisLine />
+          <LinearYAxisTickSeries />
+        </LinearYAxis>
       }
     />
   );
@@ -211,51 +199,33 @@ export const LeftRightAxis = () => {
         />
       }
       yAxis={
-        <LinearYAxis
-          roundDomains={true}
-          position="end"
-          axisLine={null}
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={
-                <LinearYAxisTickLabel
-                  padding={5}
-                  position="end"
-                  format={(d) => `${d < 0 ? d * -1 : d}`}
-                />
-              }
+        <LinearYAxis roundDomains={true} position="end">
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              padding={5}
+              position="end"
+              format={(d) => `${d < 0 ? d * -1 : d}`}
             />
-          }
-        />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       }
       xAxis={
-        <LinearXAxis
-          type="category"
-          position="center"
-          tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-        />
+        <LinearXAxis type="category" position="center">
+          <LinearAxisLine />
+          <LinearXAxisTickSeries />
+        </LinearXAxis>
       }
       secondaryAxis={[
-        <LinearYAxis
-          type="category"
-          position="start"
-          axisLine={null}
-          scale={scale}
-          tickSeries={
-            <LinearYAxisTickSeries
-              line={null}
-              label={
-                <LinearYAxisTickLabel
-                  padding={20}
-                  position="start"
-                  rotation={270}
-                  align="start"
-                />
-              }
+        <LinearYAxis type="category" position="start" scale={scale}>
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLabel
+              padding={20}
+              position="start"
+              rotation={270}
+              align="start"
             />
-          }
-        />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
       ]}
     />
   );

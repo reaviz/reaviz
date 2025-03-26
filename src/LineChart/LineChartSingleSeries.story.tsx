@@ -3,7 +3,20 @@ import { timeDay } from 'd3-time';
 import { singleDateData, largeDateData, randomNumber } from 'reaviz-data-utils';
 import { LineChart } from './LineChart';
 import { Line } from '@/AreaChart';
-import { LinearXAxisTickSeries, LinearXAxis } from '@/common/Axis/LinearAxis';
+import {
+  LinearXAxisTickSeries,
+  LinearXAxis,
+  LinearAxisLine,
+  LinearYAxis,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearYAxisTickSeries,
+  LinearYAxisTickLine,
+  LinearYAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
+} from '@/common/Axis/LinearAxis';
 import { LineSeries } from './LineSeries';
 
 export default {
@@ -29,6 +42,24 @@ export const Simple = () => (
         line={<Line strokeWidth={4} />}
       />
     }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -39,6 +70,24 @@ export const NoAnimation = () => (
     height={250}
     data={singleDateData}
     series={<LineSeries animated={false} />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -47,7 +96,24 @@ export const Autosize = () => (
     <LineChart
       id="autosize"
       data={singleDateData}
-      xAxis={<LinearXAxis type="time" />}
+      xAxis={
+        <LinearXAxis type="time">
+          <LinearAxisLine />
+          <LinearXAxisTickSeries>
+            <LinearXAxisTickLine />
+            <LinearXAxisTickLabel />
+          </LinearXAxisTickSeries>
+        </LinearXAxis>
+      }
+      yAxis={
+        <LinearYAxis type="value">
+          <LinearAxisLine />
+          <LinearYAxisTickSeries>
+            <LinearYAxisTickLine />
+            <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+          </LinearYAxisTickSeries>
+        </LinearYAxis>
+      }
     />
   </div>
 );
@@ -59,10 +125,22 @@ export const Interval = () => (
     height={250}
     data={singleDateData}
     xAxis={
-      <LinearXAxis
-        type="time"
-        tickSeries={<LinearXAxisTickSeries interval={timeDay} />}
-      />
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries interval={timeDay}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );
@@ -74,7 +152,24 @@ export const LargeDataset = () => (
     height={250}
     data={largeDateData}
     series={<LineSeries colorScheme="cybertron" interpolation="linear" />}
-    xAxis={<LinearXAxis type="time" />}
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 LargeDataset.tags = ['skip-snapshot'];
@@ -89,6 +184,24 @@ export const DynamicColors = () => (
       <LineSeries
         colorScheme={(_data, _index, active) => (active ? 'blue' : 'green')}
       />
+    }
+    xAxis={
+      <LinearXAxis type="time">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );
@@ -120,7 +233,31 @@ const LiveUpdatingStory = () => {
 
   return (
     <Fragment>
-      <LineChart width={550} height={350} data={data} />
+      <LineChart
+        width={550}
+        height={350}
+        data={data}
+        xAxis={
+          <LinearXAxis type="time">
+            <LinearAxisLine />
+            <LinearXAxisTickSeries>
+              <LinearXAxisTickLine />
+              <LinearXAxisTickLabel />
+            </LinearXAxisTickSeries>
+          </LinearXAxis>
+        }
+        yAxis={
+          <LinearYAxis type="value">
+            <LinearAxisLine />
+            <LinearYAxisTickSeries>
+              <LinearYAxisTickLine />
+              <LinearYAxisTickLabel
+                {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+              />
+            </LinearYAxisTickSeries>
+          </LinearYAxis>
+        }
+      />
       <br />
       <button onClick={startData}>Start</button>
       <button onClick={() => clearInterval(interval)}>Stop</button>

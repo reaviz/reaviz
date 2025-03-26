@@ -1,6 +1,7 @@
 import { CloneElement } from 'reablocks';
 import React, {
   FC,
+  PropsWithChildren,
   ReactElement,
   createRef,
   useCallback,
@@ -15,14 +16,14 @@ import {
   LinearAxisTickSeries,
   LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
-import { mergeDefaultProps } from '@/common/utils';
+import { getChildComponent, mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisDimensionChanged {
   height?: number;
   width?: number;
 }
 
-export interface LinearAxisProps {
+export interface LinearAxisProps extends PropsWithChildren {
   height?: number;
   width?: number;
   domain?: ChartDataTypes[];
@@ -34,7 +35,6 @@ export interface LinearAxisProps {
     LinearAxisTickSeriesProps,
     typeof LinearAxisTickSeries
   >;
-  axisLine?: ReactElement<LinearAxisLineProps, typeof LinearAxisLine> | null;
   scale?: any;
   visibility?: 'visible' | 'hidden';
   orientation?: 'horizontal' | 'vertical';
@@ -48,9 +48,9 @@ interface LinearAxisState {
 
 export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   const {
+    children,
     position,
-    tickSeries,
-    axisLine,
+    // tickSeries,
     height,
     width,
     scale,
@@ -58,6 +58,8 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     visibility = 'visible',
     onDimensionsChange
   } = mergeDefaultProps(LINEAR_AXIS_DEFAULT_PROPS, props);
+  const axisLine = getChildComponent(children, LinearAxisLine.name);
+  const tickSeries = getChildComponent(children, LinearAxisTickSeries.name);
   const tickSeriesProps = useMemo(
     () =>
       mergeDefaultProps(
@@ -88,6 +90,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
       if (dimensions.width !== width) {
         setDimensions({ ...dimensions, width: width });
         onDimensionsChange({ width });
+        console.log('[log] width', width);
       }
     } else {
       if (dimensions.height !== height) {
@@ -133,9 +136,11 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           width={width}
           scale={scale}
           orientation={orientation}
-        />
+        >
+          {axisLine.props?.children}
+        </CloneElement>
       )}
-      {(tickSeriesProps.line || tickSeriesProps.label) && (
+      {tickSeries && (
         <CloneElement<LinearAxisTickSeriesProps>
           element={tickSeries}
           height={height}
@@ -143,7 +148,9 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           scale={scale}
           orientation={orientation}
           axis={props}
-        />
+        >
+          {tickSeries.props?.children}
+        </CloneElement>
       )}
     </g>
   );
@@ -152,6 +159,5 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
 export const LINEAR_AXIS_DEFAULT_PROPS = {
   scaled: false,
   roundDomains: false,
-  axisLine: <LinearAxisLine />,
   onDimensionsChange: () => undefined
 };

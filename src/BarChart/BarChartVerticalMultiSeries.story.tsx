@@ -21,7 +21,14 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearAxisLine,
+  LinearYAxisTickLine,
+  LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LinearXAxisTickLine,
+  LinearXAxisTickLabel,
+  LINEAR_X_AXIS_TICK_LINE_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 
@@ -61,6 +68,24 @@ export const Simple = () => (
         padding={0.8}
       />
     }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -89,6 +114,24 @@ export const Stacked = () => (
         }
         colorScheme="cybertron"
       />
+    }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );
@@ -126,10 +169,18 @@ export const StackedCustomStyle = () => (
       />
     }
     yAxis={
-      <LinearYAxis
-        axisLine={null}
-        tickSeries={<LinearYAxisTickSeries line={null} label={null} />}
-      />
+      <LinearYAxis>
+        <LinearYAxisTickSeries />
+      </LinearYAxis>
+    }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
     }
   />
 );
@@ -180,22 +231,21 @@ export const StackedDiverging = () => (
       />
     }
     yAxis={
-      <LinearYAxis
-        roundDomains={true}
-        tickSeries={
-          <LinearYAxisTickSeries
-            line={null}
-            label={<LinearYAxisTickLabel padding={5} />}
+      <LinearYAxis roundDomains={true}>
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            padding={5}
           />
-        }
-      />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
     xAxis={
-      <LinearXAxis
-        type="category"
-        position="center"
-        tickSeries={<LinearXAxisTickSeries line={null} label={null} />}
-      />
+      <LinearXAxis type="category" position="center">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries />
+      </LinearXAxis>
     }
   />
 );
@@ -226,6 +276,28 @@ export const StackedNormalized = () => (
         colorScheme="cybertron"
       />
     }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={20}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
+    }
   />
 );
 
@@ -255,6 +327,28 @@ export const Marimekko = () => (
         }
         colorScheme="cybertron"
       />
+    }
+    xAxis={
+      <LinearXAxis type="category">
+        <LinearAxisLine />
+        <LinearXAxisTickSeries tickSize={15}>
+          <LinearXAxisTickLine />
+          <LinearXAxisTickLabel />
+        </LinearXAxisTickSeries>
+      </LinearXAxis>
+    }
+    yAxis={
+      <LinearYAxis type="value">
+        <LinearAxisLine />
+        <LinearYAxisTickSeries>
+          <LinearYAxisTickLine />
+          <LinearYAxisTickLabel
+            {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS}
+            rotation={false}
+            format={(data) => `${data * 100}%`}
+          />
+        </LinearYAxisTickSeries>
+      </LinearYAxis>
     }
   />
 );

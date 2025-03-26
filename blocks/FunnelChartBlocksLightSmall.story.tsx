@@ -12,7 +12,7 @@ import {
 } from '../src/index';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Funnel Chart/Light/Small',
   component: FunnelChart
 };

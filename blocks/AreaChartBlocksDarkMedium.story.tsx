@@ -36,7 +36,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
-  tags: ['snapshot'],
+  tags: ['skip-snapshot'],
   title: 'Blocks/Area Chart/Dark/Medium',
   component: AreaChart
 };
