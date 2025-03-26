@@ -1,5 +1,7 @@
-# 16.0.3 - 2/14/25
+# 16.0.4 - 3/26/25
+- [improvement] Add ability to change pointer event for Area #287
 
+# 16.0.3 - 2/14/25
 - [improvement] Update reablocks and motion
 
 # 16.0.2 - 1/21/25
