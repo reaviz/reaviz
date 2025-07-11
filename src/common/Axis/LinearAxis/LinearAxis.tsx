@@ -6,7 +6,8 @@ import React, {
   useCallback,
   useEffect,
   useMemo,
-  useState
+  useState,
+  useRef
 } from 'react';
 import { ChartDataTypes } from '@/common/data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
@@ -73,7 +74,20 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     width: width
   });
 
+  // Use a ref to track update count to prevent infinite loops
+  const updateCountRef = useRef(0);
+  // Use a ref to store previous dimensions for comparison
+  const prevDimensionsRef = useRef<LinearAxisState>({});
+
   const updateDimensions = useCallback(() => {
+    // Reset update count on new render cycle
+    if (updateCountRef.current > 10) {
+      console.warn('Too many dimension updates');
+      return;
+    }
+
+    updateCountRef.current += 1;
+
     const shouldOffset = position !== 'center';
 
     let height;
@@ -84,13 +98,31 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
       height = Math.floor(dims.height);
     }
 
+    // Add stability checks to prevent unnecessary updates
+    const significantChange = (
+      a: number | undefined,
+      b: number | undefined
+    ) => {
+      if (a === undefined || b === undefined) return true;
+      // Only consider changes of more than 1px significant
+      return Math.abs(a - b) > 1;
+    };
+
     if (orientation === 'vertical') {
-      if (dimensions.width !== width) {
+      if (
+        significantChange(dimensions.width, width) &&
+        significantChange(prevDimensionsRef.current.width, width)
+      ) {
+        prevDimensionsRef.current.width = dimensions.width;
         setDimensions({ ...dimensions, width: width });
         onDimensionsChange({ width });
       }
     } else {
-      if (dimensions.height !== height) {
+      if (
+        significantChange(dimensions.height, height) &&
+        significantChange(prevDimensionsRef.current.height, height)
+      ) {
+        prevDimensionsRef.current.height = dimensions.height;
         setDimensions({ ...dimensions, height: height });
         onDimensionsChange({ height });
       }
@@ -98,6 +130,8 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   }, [containerRef, dimensions, onDimensionsChange, orientation, position]);
 
   useEffect(() => {
+    // Reset update counter on dependency changes
+    updateCountRef.current = 0;
     updateDimensions();
   }, [updateDimensions, height, width, scale]);
 
