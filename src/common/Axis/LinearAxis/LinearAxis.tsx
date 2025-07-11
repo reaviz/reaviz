@@ -96,11 +96,15 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     }
 
     if (orientation === 'vertical') {
-      setDimensions({ ...dimensions, width: width });
-      onDimensionsChange({ width });
+      if (dimensions.width !== width) {
+        setDimensions({ ...dimensions, width: width });
+        onDimensionsChange({ width });
+      }
     } else {
-      setDimensions({ ...dimensions, height: height });
-      onDimensionsChange({ height });
+      if (dimensions.height !== height) {
+        setDimensions({ ...dimensions, height: height });
+        onDimensionsChange({ height });
+      }
     }
   }, [containerRef, dimensions, onDimensionsChange, orientation, position]);
 
