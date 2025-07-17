@@ -73,9 +73,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
   data,
   index,
   padding = 0,
-  innerRadius,
-  startAngle = 0,
-  endAngle = 2 * Math.PI
+  innerRadius
 }) => {
   const lineProps = useMemo(
     () => ({ ...RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS, ...(line?.props ?? {}) }),
@@ -103,8 +101,6 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
-          startAngle={startAngle}
-          endAngle={endAngle}
         />
       )}
     </g>
