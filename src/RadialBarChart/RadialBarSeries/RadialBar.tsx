@@ -119,21 +119,21 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   innerRadius,
   xScale,
   yScale,
-  curved,
+  curved = false,
   id,
-  gradient,
+  gradient = true,
   barCount,
   innerBarCount,
   groupIndex,
   className,
   data,
   active,
-  guide,
+  guide = <RadialGuideBar />,
   index,
   color,
-  onClick,
-  onMouseEnter,
-  onMouseLeave
+  onClick = () => undefined,
+  onMouseEnter = () => undefined,
+  onMouseLeave = () => undefined
 }) => {
   const previousEnter = useRef<any | null>(null);
   const fill = color(data, index);
@@ -348,13 +348,4 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       {gradient && <Gradient id={`${id}-gradient`} color={currentColorShade} />}
     </Fragment>
   );
-};
-
-RadialBar.defaultProps = {
-  gradient: true,
-  curved: false,
-  guide: <RadialGuideBar />,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined
 };
