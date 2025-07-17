@@ -1,3 +1,6 @@
+# 16.0.5 - 7/17/25
+- [fix] Remove default props for RadialBarSeries and RadialBar
+
 # 16.0.4 - 3/26/25
 - [improvement] Add ability to change pointer event for Area #287
 
