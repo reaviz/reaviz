@@ -6,7 +6,8 @@ import React, {
   useCallback,
   useEffect,
   useMemo,
-  useState
+  useState,
+  useRef
 } from 'react';
 import { ChartDataTypes } from '@/common/data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
@@ -73,7 +74,17 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     width: width
   });
 
+  // Use a ref to track update count to prevent infinite loops
+  const updateCountRef = useRef(0);
+
   const updateDimensions = useCallback(() => {
+    // Reset update count on new render cycle
+    if (updateCountRef.current > 10) {
+      // Stop infinite loop from useEffect in case of too many updates
+      return;
+    }
+    updateCountRef.current += 1;
+
     const shouldOffset = position !== 'center';
 
     let height;
@@ -98,6 +109,8 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   }, [containerRef, dimensions, onDimensionsChange, orientation, position]);
 
   useEffect(() => {
+    // Reset update counter on dependency changes
+    updateCountRef.current = 0;
     updateDimensions();
   }, [updateDimensions, height, width, scale]);
 
