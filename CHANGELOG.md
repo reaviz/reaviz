@@ -1,3 +1,6 @@
+# 16.0.6 - 7/31/25
+- [improvement] Add ability to pass custom styles of the path to PieArc component #293
+
 # 16.0.5 - 7/17/25
 - [fix] Remove default props for RadialBarSeries and RadialBar
 
