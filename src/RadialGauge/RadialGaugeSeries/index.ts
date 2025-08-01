@@ -7,3 +7,4 @@ export * from './StackedRadialGaugeValueLabel';
 export * from './StackedRadialGaugeDescriptionLabel';
 export * from './RadialGaugeOuterArc';
 export * from './RadialGaugeStackedArc';
+export * from './StrokePieArc';
