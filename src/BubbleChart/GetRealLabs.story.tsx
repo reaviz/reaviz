@@ -287,7 +287,7 @@ export const Prototype = () => {
               >
                 <svg
                   style={{
-                    transform: 'translate(901GEpx, 40px)',
+                    transform: 'translate(901px, 40px)',
                     position: 'absolute'
                   }}
                   width="74"
