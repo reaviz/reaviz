@@ -143,6 +143,109 @@ const MenuItem = ({
   );
 };
 
+const StartIndicator = ({
+  size,
+  title,
+  value,
+  x: centerX,
+  y: centerY,
+  startAngle,
+  radius,
+  gradient
+}: {
+  size: number;
+  title: string;
+  value: number;
+  x: number;
+  y: number;
+  radius: number;
+  startAngle: number;
+  gradient: {
+    start: string;
+    end: string;
+  };
+}) => {
+  const angleInRadians = ((startAngle - 90) * Math.PI) / 180;
+
+  const x = centerX + radius * Math.cos(angleInRadians);
+  const y = centerY + radius * Math.sin(angleInRadians);
+
+  return (
+    <foreignObject
+      transform={`translate(${x}, ${y})`}
+      height={size}
+      width={size}
+    >
+      <div
+        style={{
+          width: size,
+          height: size,
+          borderRadius: '50%',
+          background: `linear-gradient(52deg, ${gradient.start} 12.27%, ${gradient.end} 88.01%)`
+        }}
+      >
+        <div
+          style={{
+            position: 'relative',
+            borderRadius: '50%',
+            width: size - 6,
+            height: size - 6,
+            top: 3,
+            left: 3,
+            overflow: 'hidden'
+          }}
+        >
+          <div
+            style={{
+              position: 'absolute',
+              borderRadius: '50%',
+              width: size - 12,
+              height: size - 12,
+              top: 3,
+              left: 3,
+              background: '#FFFFFF',
+              filter: 'blur(3.703702926635742px)'
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              borderRadius: '50%',
+              width: size - 12,
+              height: size - 12,
+              top: 3,
+              left: 3,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}
+          >
+            <span
+              style={{
+                color: '#1f1f21b3',
+                fontSize: 10,
+                fontWeight: 600
+              }}
+            >
+              {title}
+            </span>
+            <span
+              style={{
+                color: '#1F1F21',
+                fontSize: 20,
+                fontWeight: 700
+              }}
+            >
+              {value}%
+            </span>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  );
+};
+
 export default {
   title: 'GRL/DashboardChart',
   component: BubbleChart,
@@ -585,6 +688,32 @@ export const Prototype = () => {
                   }
                 />
               </g>
+              <StartIndicator
+                radius={chartWidth / 2 - 40}
+                x={chartWidth / 2 - 40}
+                y={chartWidth / 2 - 40}
+                size={80}
+                title="Protected"
+                value={75}
+                startAngle={0}
+                gradient={{
+                  start: '#7B0D7A',
+                  end: '#1E2D96'
+                }}
+              />
+              <StartIndicator
+                radius={chartWidth / 2 - 40}
+                x={chartWidth / 2 - 40}
+                y={chartWidth / 2 - 40}
+                size={80}
+                title="Unprotected"
+                value={25}
+                startAngle={235}
+                gradient={{
+                  start: '#a3a2a9',
+                  end: '#a3a2a9'
+                }}
+              />
             </Fragment>
           );
         }}
