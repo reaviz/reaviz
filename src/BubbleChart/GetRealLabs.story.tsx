@@ -1,22 +1,22 @@
-import { hierarchy, pack } from 'd3-hierarchy';
-import { motion, useAnimationFrame, useMotionValue } from 'motion/react';
-import { scaleLinear } from 'd3-scale';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { BubbleChart } from './BubbleChart';
-import { BubbleSeries } from './BubbleSeries';
-import { Bubble } from './Bubble';
-import { Gradient, GradientStop } from '@/common/Gradient';
-import { BubbleLabel } from './BubbleLabel';
-import { RadialGaugeArc, RadialGaugeSeries, StrokePieArc } from '@/RadialGauge';
-import { Fragment } from 'react/jsx-runtime';
 import { ChartContainer } from '@/common';
+import { Gradient, GradientStop } from '@/common/Gradient';
+import { RadialGaugeArc, RadialGaugeSeries, StrokePieArc } from '@/RadialGauge';
+import { hierarchy, pack } from 'd3-hierarchy';
+import { scaleLinear } from 'd3-scale';
+import { motion, useAnimationFrame, useMotionValue } from 'motion/react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { Fragment } from 'react/jsx-runtime';
+import { Bubble } from './Bubble';
+import { BubbleChart } from './BubbleChart';
+import { BubbleLabel } from './BubbleLabel';
+import { BubbleSeries } from './BubbleSeries';
 
 const simpleData = [
-  { key: 'AM', data: 300 },
-  { key: 'IF', data: 100 },
-  { key: 'OU', data: 45 },
-  { key: 'FD', data: 75 },
-  { key: 'EH', data: 25 }
+  { key: 'Carrington McDaniel', data: 300 },
+  { key: 'Austin McDaniel', data: 100 },
+  { key: 'Anton James', data: 45 },
+  { key: 'Stephanie Yang', data: 75 },
+  { key: 'Evgeniy Kulynych', data: 25 }
 ];
 
 const MenuItem = ({
@@ -620,8 +620,13 @@ export const Prototype = () => {
                   label={
                     <BubbleLabel
                       format={(data) => {
+                        const abbr = data.data.key
+                          .split(' ')
+                          .map((word) => word[0])
+                          .join('');
                         const logos = {
-                          IF: 'https://www.goodcode.us/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faustin.1ee6ee64.jpg&w=1920&q=75'
+                          'Austin McDaniel':
+                            'https://avatars.githubusercontent.com/u/227909?s=96&v=4'
                         };
 
                         if (logos[data.data.key]) {
@@ -644,7 +649,7 @@ export const Prototype = () => {
                               >
                                 <img
                                   style={{ borderRadius: '50%' }}
-                                  src="https://www.goodcode.us/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Faustin.1ee6ee64.jpg&w=1920&q=75"
+                                  src="https://avatars.githubusercontent.com/u/227909?s=96&v=4"
                                   height={data.r * 2}
                                   width={data.r * 2}
                                 />
@@ -672,14 +677,14 @@ export const Prototype = () => {
                             <text
                               fontWeight={700}
                               fontSize={Math.min(
-                                data.r / (data.data.key.length * 0.6),
+                                data.r / (abbr.length * 0.6),
                                 data.r * 0.6
                               )}
                               fill="black"
                               textAnchor="middle"
                               dominantBaseline="central"
                             >
-                              {data.data.key}
+                              {abbr}
                             </text>
                           </g>
                         );
