@@ -46,6 +46,8 @@ interface LinearAxisState {
   width?: number;
 }
 
+const MIN_DIMENSION_CHANGE = 6;
+
 export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   const {
     position,
@@ -85,7 +87,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     }
 
     if (orientation === 'vertical') {
-      if (dimensions.width !== width) {
+      if (Math.abs(dimensions.width - width) > MIN_DIMENSION_CHANGE) {
         setDimensions({ ...dimensions, width: width });
         onDimensionsChange({ width });
       }
