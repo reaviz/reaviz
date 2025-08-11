@@ -87,6 +87,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     }
 
     if (orientation === 'vertical') {
+      // Condition check to prevent the infinite loop of re-renders when the tickSize prop is changed
       if (Math.abs(dimensions.width - width) > MIN_DIMENSION_CHANGE) {
         setDimensions({ ...dimensions, width: width });
         onDimensionsChange({ width });
