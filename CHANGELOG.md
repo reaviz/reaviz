@@ -1,3 +1,6 @@
+# 16.0.7 - 8/11/25
+- [fix] Fix the flickering of the calendar heatmap when changing tickSize prop
+
 # 16.0.6 - 7/31/25
 - [improvement] Add ability to pass custom styles of the path to PieArc component #293
 
