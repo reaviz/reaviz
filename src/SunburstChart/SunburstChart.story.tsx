@@ -6,6 +6,11 @@ import { SunburstArc } from './SunburstArc';
 import { SunburstArcLabel } from './SunburstArcLabel';
 import { Gradient } from '@/common/Gradient';
 import chroma from 'chroma-js';
+import {
+  getDataSummary,
+  sampleSecurityData,
+  SunburstTest
+} from './SpecialTest';
 
 export default {
   tags: ['snapshot'],
@@ -137,68 +142,13 @@ export const MultiLevel = ({
   />
 );
 
-export const Test = ({
-  data = [
-    {
-      key: 'Threat',
-      data: [
-        {
-          key: 'Malicious',
-          data: 10
-        },
-        {
-          key: 'Non Actions',
-          data: 4
-        },
-        {
-          key: 'Benign',
-          data: 6
-        }
-      ]
-    },
-    {
-      key: 'Threat',
-      data: [
-        {
-          key: 'Malicious',
-          data: 4
-        },
-        {
-          key: 'Non Actions',
-          data: 6
-        },
-        {
-          key: 'Benign',
-          data: 1
-        }
-      ]
-    },
-    {
-      key: 'Threat',
-      data: [
-        {
-          key: 'Malicious',
-          data: 3
-        },
-        {
-          key: 'Non Actions',
-          data: 2
-        },
-        {
-          key: 'Benign',
-          data: 6
-        }
-      ]
-    }
-  ],
-  colorScheme = exampleColorScheme
-}) => (
-  <SunburstChart
-    id="multi-level"
-    height={450}
-    width={450}
-    data={data}
-    padAngle={0.08}
-    series={<SunburstSeries colorScheme={colorScheme} />}
-  />
-);
+export const HierarchicalSecurity = ({ colorScheme = exampleColorScheme }) => {
+  return (
+    <SunburstTest
+      id="hierarchical-security"
+      height={450}
+      width={450}
+      padAngle={0.02}
+    />
+  );
+};

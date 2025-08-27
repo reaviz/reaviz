@@ -60,7 +60,17 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
 }) => {
   const getFill = useCallback(
     (item: any, index: number) => {
-      // Get the parent most item for the color start
+      // Check if the current item has a color in its data
+      if (item.data?.color) {
+        let fill = item.data.color;
+        // darken the color based on the depth
+        fill = chroma(fill)
+          .darken((item.depth - 1) * 0.3)
+          .hex();
+        return fill;
+      }
+
+      // Default behavior for colorScheme if no color found in data
       let parent = item;
       while (parent.depth > 1) {
         parent = parent.parent;
