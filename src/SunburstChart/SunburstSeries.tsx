@@ -33,6 +33,11 @@ export interface SunburstSeriesProps {
   radius: number;
 
   /**
+   * Padding angle between arcs in radians. Defaults to 0.005.
+   */
+  padAngle?: number;
+
+  /**
    * The arc component to render.
    */
   arc?: ReactElement<SunburstArcProps, typeof SunburstArc>;
@@ -49,6 +54,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   radius,
   colorScheme = 'cybertron',
   animated = true,
+  padAngle,
   arc = <SunburstArc />,
   label = <SunburstArcLabel />
 }) => {
@@ -101,6 +107,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
             radius={radius}
             animated={animated}
             data={item}
+            padAngle={padAngle}
           />
           <CloneElement<SunburstArcLabelProps>
             element={label}
@@ -113,7 +120,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         </Fragment>
       );
     },
-    [animated, arc, getFill, id, label, radius]
+    [animated, arc, getFill, id, label, radius, padAngle]
   );
 
   return <>{data.map(renderItem)}</>;

@@ -16,6 +16,11 @@ export interface SunburstChartProps extends ChartProps {
   data: ChartShallowDataShape[] | ChartNestedDataShape[];
 
   /**
+   * Padding angle between arcs in radians. Defaults to 0.005.
+   */
+  padAngle?: number;
+
+  /**
    * The series component that renders the components.
    */
   series?: ReactElement<SunburstSeriesProps, typeof SunburstSeries>;
@@ -24,6 +29,7 @@ export interface SunburstChartProps extends ChartProps {
 export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
   data = [],
   id,
+  padAngle,
   series = <SunburstSeries />,
   containerClassName,
   width,
@@ -69,10 +75,11 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
           id={`${newId}-series`}
           data={root}
           radius={radius}
+          padAngle={padAngle}
         />
       );
     },
-    [getData, newId, series]
+    [getData, newId, series, padAngle]
   );
 
   return (

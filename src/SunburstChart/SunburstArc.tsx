@@ -58,6 +58,11 @@ export interface SunburstArcProps {
   gradient?: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
+   * Padding angle between arcs in radians. Defaults to 0.005.
+   */
+  padAngle?: number;
+
+  /**
    * The onClick handler for the arc.
    */
   onClick?: (event: React.MouseEvent, data: any) => void;
@@ -82,6 +87,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   tooltip = <ChartTooltip />,
   animated,
   gradient,
+  padAngle = 0.005,
   onClick,
   onMouseEnter,
   onMouseLeave
@@ -94,12 +100,12 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
       return arc()
         .startAngle((d: any) => d.x0)
         .endAngle((d: any) => d.x1)
-        .padAngle((d: any) => Math.min((d.x1 - d.x0) / 2, 0.005))
+        .padAngle((d: any) => Math.min((d.x1 - d.x0) / 2, padAngle))
         .padRadius(radius / 2)
         .innerRadius((d: any) => d.y0)
         .outerRadius((d: any) => d.y1 - 1)(item);
     },
-    [radius]
+    [radius, padAngle]
   );
 
   const p = data.parent || { x0: 0, x1: 0, y0: 0, y1: 0 };

@@ -198,6 +198,7 @@ export const Test = ({
     height={450}
     width={450}
     data={data}
+    padAngle={0.08}
     series={<SunburstSeries colorScheme={colorScheme} />}
   />
 );
