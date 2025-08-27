@@ -136,3 +136,68 @@ export const MultiLevel = ({
     series={<SunburstSeries colorScheme={colorScheme} />}
   />
 );
+
+export const Test = ({
+  data = [
+    {
+      key: 'Threat',
+      data: [
+        {
+          key: 'Malicious',
+          data: 10
+        },
+        {
+          key: 'Non Actions',
+          data: 4
+        },
+        {
+          key: 'Benign',
+          data: 6
+        }
+      ]
+    },
+    {
+      key: 'Threat',
+      data: [
+        {
+          key: 'Malicious',
+          data: 4
+        },
+        {
+          key: 'Non Actions',
+          data: 6
+        },
+        {
+          key: 'Benign',
+          data: 1
+        }
+      ]
+    },
+    {
+      key: 'Threat',
+      data: [
+        {
+          key: 'Malicious',
+          data: 3
+        },
+        {
+          key: 'Non Actions',
+          data: 2
+        },
+        {
+          key: 'Benign',
+          data: 6
+        }
+      ]
+    }
+  ],
+  colorScheme = exampleColorScheme
+}) => (
+  <SunburstChart
+    id="multi-level"
+    height={450}
+    width={450}
+    data={data}
+    series={<SunburstSeries colorScheme={colorScheme} />}
+  />
+);
