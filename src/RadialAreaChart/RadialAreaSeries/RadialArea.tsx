@@ -102,7 +102,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
           delay: index * 0.05
         }
         : {
-          type: false,
+          type: false as const,
           delay: 0
         },
     [animated, index]

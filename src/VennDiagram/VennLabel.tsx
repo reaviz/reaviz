@@ -81,7 +81,9 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const key =
     labelType === 'key' ? data.data?.sets?.join(' | ') : data.data.size;
 
-  const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { delay: 0, type: false as const };
   const text = wrap
     ? wrapText({
       key,

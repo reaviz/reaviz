@@ -111,7 +111,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
           delay: hasArea ? 0 : index * 0.05
         }
         : {
-          type: false,
+          type: false as const,
           delay: 0
         },
     [animated, index, hasArea]

@@ -154,7 +154,11 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
 
     return {
       transform,
-      textAnchor: textAnchor || newtextAnchor,
+      textAnchor: (textAnchor || newtextAnchor) as
+        | 'start'
+        | 'end'
+        | 'middle'
+        | 'inherit',
       alignmentBaseline
     };
   }

@@ -185,7 +185,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
       };
     } else {
       return {
-        type: false,
+        type: false as const,
         delay: 0
       };
     }

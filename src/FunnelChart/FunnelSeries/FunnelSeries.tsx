@@ -67,7 +67,10 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   const getScales = useCallback(
     (height: number, width: number) => {
       const yScale = scaleLinear()
-        .domain([-max(data, ({ data }) => data), max(data, ({ data }) => data)])
+        .domain([
+          -max(data, ({ data }) => data as number),
+          max(data, ({ data }) => data as number)
+        ])
         .nice()
         .range([height, 0]);
 

@@ -532,7 +532,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         };
       } else {
         return {
-          type: false,
+          type: false as const,
           delay: 0
         };
       }

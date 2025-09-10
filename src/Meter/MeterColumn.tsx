@@ -68,7 +68,7 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
       delay: (index / count) * 0.5
     }
     : {
-      type: false,
+      type: false as const,
       delay: 0
     };
 

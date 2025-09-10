@@ -119,7 +119,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   let x = showRightSide ? x1 + paddedWidth : x0 - paddedWidth;
   const y = (y1 + y0) / 2;
 
-  let textAnchor = showRightSide ? 'start' : 'end';
+  let textAnchor: 'start' | 'end' = showRightSide ? 'start' : 'end';
   if (position === 'outside') {
     textAnchor = showRightSide ? 'end' : 'start';
     x = showRightSide ? x1 - paddedWidth : x0 + paddedWidth;

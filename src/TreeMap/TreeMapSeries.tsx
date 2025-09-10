@@ -48,7 +48,9 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   rect = <TreeMapRect />,
   label = <TreeMapLabel />
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
 
   const renderItem = (item: any, index: number) => {
     const fill = getColor({

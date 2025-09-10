@@ -42,7 +42,9 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   fontSize = 14,
   fontFamily = 'sans-serif'
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { delay: 0, type: false as const };
   const text = data.set.data.key;
 
   const label = format ? format(data) : text;
