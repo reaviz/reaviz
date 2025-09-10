@@ -143,7 +143,7 @@ export const Line: FC<Partial<LineProps>> = ({
       };
     } else {
       return {
-        type: false,
+        type: false as const,
         delay: 0
       };
     }

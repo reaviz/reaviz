@@ -93,7 +93,9 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
 
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {

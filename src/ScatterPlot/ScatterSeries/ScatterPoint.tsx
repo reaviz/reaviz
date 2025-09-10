@@ -15,7 +15,7 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '@/common/utils/functions';
-import { motion } from 'motion/react';
+import { motion, Transition } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { schemes, getColor, ColorSchemeType } from '@/common/color';
 import { identifier } from 'safe-identifier';
@@ -161,7 +161,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
           delay: index! * 0.005
         }
         : {
-          type: false,
+          type: false as const,
           delay: 0
         },
     [index, animated]
@@ -245,7 +245,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
               translateY: exitProps.y,
               opacity: 0
             }}
-            transition={transitionProps}
+            transition={transitionProps as Transition}
           >
             {renderedSymbol}
           </motion.g>
@@ -277,7 +277,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
               r,
               opacity: 0
             }}
-            transition={transitionProps}
+            transition={transitionProps as Transition}
           />
         )}
       </g>

@@ -73,7 +73,9 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const rectRef = useRef<any | null>(null);
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
   const currentFill = internalActive ? chroma(fill).darken(0.8).hex() : fill;
 
   const { pointerOut, pointerOver } = useHoverIntent({

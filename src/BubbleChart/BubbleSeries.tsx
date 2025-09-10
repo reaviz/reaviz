@@ -56,7 +56,9 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   format,
   label = <BubbleLabel />
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
 
   const renderBubble = (item, index) => {
     const fill = getColor({

@@ -56,9 +56,11 @@ export const BarList: FC<BarListProps> = ({
   const curId = useId(id);
 
   const mashedData = useMemo(() => {
-    const maxVal = type === 'count' ? max(data, (d) => d.data) : 100;
-    const domainVal = maxVal == 0 ? [0] : [0, maxVal];
-    const groupScale = scaleLinear().domain(domainVal).rangeRound([0, 100]);
+    const maxVal = type === 'count' ? max(data, (d) => d.data as number) : 100;
+    const domainVal = maxVal === 0 ? [0] : [0, maxVal];
+    const groupScale = scaleLinear()
+      .domain(domainVal as [number, number])
+      .rangeRound([0, 100]);
 
     const mashed = data.map((d) => ({
       ...d,

@@ -74,7 +74,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
       };
     } else {
       return {
-        type: false,
+        type: false as const,
         delay: 0
       };
     }

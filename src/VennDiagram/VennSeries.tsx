@@ -76,7 +76,9 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   arc = <VennArc />,
   label = <VennLabel />
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
   const [actives, setActives] = useState<string[]>([]);
   const [hovered, setHovered] = useState<string | null>(null);
 

@@ -130,7 +130,7 @@ export const StackedRadialGaugeSeries: FC<
   const innerRadius = radius * (1 - Math.min(fillFactor, 1));
 
   const rAxis = scaleBand()
-    .domain(range(data.length))
+    .domain(range(data.length).map(String))
     .range([innerRadius, radius])
     .paddingInner(arcPadding);
 

@@ -184,7 +184,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       };
     } else {
       return {
-        type: false,
+        type: false as const,
         delay: 0
       };
     }

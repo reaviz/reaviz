@@ -56,7 +56,9 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   fontFamily = 'sans-serif',
   animated
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
   let isElement = false;
   let label;
 
