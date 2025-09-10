@@ -184,12 +184,12 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
           />
         )}
         <CloneElement<PieArcProps>
-          element={arc}
           id={`${id}-arc-${safeKey}`}
           data={arcData}
           animated={animated}
           arc={innerArc}
           color={color}
+          element={arc}
         />
       </Fragment>
     );
