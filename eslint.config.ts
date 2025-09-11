@@ -62,6 +62,8 @@ export default defineConfig([{
     },
   },
 }, globalIgnores([
+  'eslint.config.ts',
+  'vite.config.ts',
   'dist/',
   'types/',
   'docs/',
