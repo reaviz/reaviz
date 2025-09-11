@@ -892,7 +892,7 @@ export const WarmCircle = () => {
         />
         <SequentialLegend
           data={heatmapXSmallBlocksData}
-          colorScheme={[`#66010466`, `#e0000766`, `#E84045`]}
+          colorScheme={['#66010466', '#e0000766', '#E84045']}
           gradientClassName="!w-[20px]"
           className="pl-1 pr-1 mt-6 !h-[135px]"
         />
@@ -979,7 +979,7 @@ export const WarmHex = () => {
         />
         <SequentialLegend
           data={heatmapXSmallBlocksData}
-          colorScheme={[`#66010466`, `#e0000766`, `#E84045`]}
+          colorScheme={['#66010466', '#e0000766', '#E84045']}
           gradientClassName="!w-[20px]"
           className="pl-1 pr-1 mt-6 !h-[135px]"
         />
@@ -1170,7 +1170,7 @@ export const HotHex = () => {
                 { fill: '#E84045' },
                 {
                   fill: '#F7BFC1',
-                  filter: `drop-shadow(0px 0px 5px #F7BFC1)`
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
                 }
               ]}
               padding={0.3}

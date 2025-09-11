@@ -151,8 +151,6 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             innerBarCount={innerBarCount}
             groupIndex={groupIndex}
             animated={animated}
-            startAngle={startAngle}
-            endAngle={endAngle}
           />
         </Fragment>
       );
@@ -225,20 +223,20 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
     >
       {isMultiSeries
         ? (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
-          <g key={`bar-group-${index}`}>
-            {renderBarGroup(
+            <g key={`bar-group-${index}`}>
+              {renderBarGroup(
                 groupData.data as ChartInternalShallowDataShape[],
                 data.length,
                 groupData.data.length,
                 index
-            )}
-          </g>
-        ))
+              )}
+            </g>
+          ))
         : renderBarGroup(
             data as ChartInternalShallowDataShape[],
             1,
             data.length
-        )}
+          )}
       {renderValueMarkers()}
     </CloneElement>
   );

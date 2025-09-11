@@ -1,8 +1,0 @@
-dist/
-types/
-docs/
-demo/
-.storybook/
-coverage/
-src/**/*.story.tsx
-src/**/*.test.ts

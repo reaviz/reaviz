@@ -148,15 +148,15 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
 
   const positions = label
     ? calculateLabelPositions(
-      data,
-      outerRadius,
-      // 4 is for vertical margins between labels
-      labelProps.height + 4,
-      cornerRadius,
-      padAngle,
-      padRadius,
-      displayAllLabels
-    )
+        data,
+        outerRadius,
+        // 4 is for vertical margins between labels
+        labelProps.height + 4,
+        cornerRadius,
+        padAngle,
+        padRadius,
+        displayAllLabels
+      )
     : [];
 
   const centroid = calculateCentroid(data, innerRadius, outerRadius, explode);
@@ -174,7 +174,6 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
       <Fragment key={safeKey}>
         {positions[index] && (
           <CloneElement<PieArcLabelProps>
-            id={id}
             element={label}
             data={arcData}
             centroid={centroid}
