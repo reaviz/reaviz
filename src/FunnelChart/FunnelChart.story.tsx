@@ -67,7 +67,6 @@ export const Interpolation = () => (
     height={300}
     width={500}
     series={<FunnelSeries arc={<FunnelArc interpolation="step" />} />}
-    interpolation="curveBasis"
     data={[
       { key: 'Visited Site', data: 1000 },
       { key: 'Added to Cart', data: 900 },

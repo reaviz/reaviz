@@ -7,7 +7,11 @@ const config: StorybookConfig = {
     '../blocks/**/*.story.tsx'
   ],
 
-  addons: ['@storybook/addon-storysource', '@storybook/addon-essentials'],
+  addons: [
+    '@storybook/addon-storysource',
+    '@storybook/addon-essentials',
+    '@storybook/addon-docs',
+  ],
 
   framework: {
     name: '@storybook/react-vite',

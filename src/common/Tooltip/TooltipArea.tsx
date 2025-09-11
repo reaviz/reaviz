@@ -330,19 +330,18 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         // Round band scales to the closest point for radial charts
         const newValue = keyScale.invert
           ? getClosestContinousScalePoint({
-            pos: coord,
-            scale: keyScale,
-            data: transformed,
-            attr,
-            roundDown: !isContinous
-          })
+              pos: coord,
+              scale: keyScale,
+              data: transformed,
+              attr,
+              roundDown: !isContinous
+            })
           : getClosestBandScalePoint({
-            pos: coord,
-            scale: keyScale,
-            data: transformed,
-            attr,
-            roundClosest: isRadial
-          });
+              pos: coord,
+              scale: keyScale,
+              data: transformed,
+              roundClosest: isRadial
+            });
 
         if (!isEqual(newValue, value) && newValue) {
           const pointX = keyScale(newValue.x);

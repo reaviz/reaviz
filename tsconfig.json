@@ -22,8 +22,6 @@
     "outDir": "./dist",
     "skipLibCheck": true,
     "sourceMap": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "suppressExcessPropertyErrors": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "ignoreDeprecations": "5.0",
@@ -32,10 +30,8 @@
     },
     "types": [
       "node",
-      "vite/client",
-      "vitest/globals"
     ]
   },
   "include": ["src/**/*", "demo/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "src/**/*.test.ts", "src/**/*.test.tsx"]
 }
