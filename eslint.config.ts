@@ -64,6 +64,7 @@ export default defineConfig([{
 }, globalIgnores([
   'eslint.config.ts',
   'vite.config.ts',
+  'storybook-static/',
   'dist/',
   'types/',
   'docs/',
