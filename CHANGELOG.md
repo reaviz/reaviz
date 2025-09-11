@@ -1,3 +1,6 @@
+# 16.0.9 - 9/11/25
+- [fix] Update reablocks to fix Pie arc override functionality
+
 # 16.0.7 - 8/11/25
 - [fix] Fix the flickering of the calendar heatmap when changing tickSize prop
 

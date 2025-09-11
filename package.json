@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "16.0.8",
+  "version": "16.0.9",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",
@@ -101,7 +101,7 @@
     "human-format": "^1.2.0",
     "invert-color": "^2.0.0",
     "motion": "^12.4.2",
-    "reablocks": "^8.7.7",
+    "reablocks": "^9.2.2",
     "react-fast-compare": "^3.2.1",
     "reaviz-data-utils": "^1.0.0",
     "safe-identifier": "^0.4.2",
