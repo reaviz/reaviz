@@ -187,7 +187,6 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
 
   return (
     <g
-      title={data.data.key}
       onPointerOver={pointerOver}
       onPointerOut={pointerOut}
       onClick={(event) => {

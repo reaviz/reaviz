@@ -256,18 +256,7 @@ export const Mask = () => (
     id="mask"
     height={450}
     width={450}
-    series={
-      <VennSeries
-        arc={
-          <VennArc
-            mask={<Stripes />}
-            strokeWidth={1}
-            initialOpacity={0.9}
-            activeOpacity={1}
-          />
-        }
-      />
-    }
+    series={<VennSeries arc={<VennArc mask={<Stripes />} strokeWidth={1} />} />}
     data={[
       { key: ['A'], data: 12 },
       { key: ['B'], data: 12 },

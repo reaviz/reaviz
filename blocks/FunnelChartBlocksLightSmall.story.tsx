@@ -83,13 +83,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -131,13 +131,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -179,13 +179,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -261,13 +261,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -309,13 +309,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -357,13 +357,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -443,13 +443,13 @@ export const Layered = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -491,13 +491,13 @@ export const Layered = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -539,13 +539,13 @@ export const Layered = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -622,13 +622,13 @@ export const Interpolation = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -670,13 +670,13 @@ export const Interpolation = () => {
                 height="28"
                 rx="14"
                 fill="#F08083"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#E00007"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -718,13 +718,13 @@ export const Interpolation = () => {
                 height="28"
                 rx="14"
                 fill="#00C2AB"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#019A88"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>

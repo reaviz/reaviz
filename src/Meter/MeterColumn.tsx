@@ -64,13 +64,13 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
   const fill = isActive ? activeFill : inActiveFill;
   const transition = animated
     ? {
-      ...DEFAULT_TRANSITION,
-      delay: (index / count) * 0.5
-    }
+        ...DEFAULT_TRANSITION,
+        delay: (index / count) * 0.5
+      }
     : {
-      type: false as const,
-      delay: 0
-    };
+        type: false as const,
+        delay: 0
+      };
 
   return (
     <motion.div
@@ -83,7 +83,7 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
         background: fill,
         height
       }}
-      tranisition={transition}
+      transition={transition}
       className={className}
     />
   );
