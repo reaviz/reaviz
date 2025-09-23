@@ -39,11 +39,21 @@ export default {
   }
 };
 
+const newData = multiCategory.map((x) => ({
+  key_url: '333',
+  ...x,
+  data: x.data.map((y, i) => ({
+    key_url: `${i}`,
+    ...y
+  }))
+}));
+
 export const Simple = () => (
   <BarChart
     width={500}
     height={350}
-    data={multiCategory}
+    data={newData}
+    url="both"
     xAxis={<LinearXAxis type="value" />}
     yAxis={
       <LinearYAxis

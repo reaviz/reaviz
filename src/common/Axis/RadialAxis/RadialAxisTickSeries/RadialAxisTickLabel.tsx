@@ -11,6 +11,11 @@ export interface RadialAxisTickLabelProps
   data: any;
 
   /**
+   * Url for onclick
+   */
+  url: string;
+
+  /**
    * Size of the line.
    */
   lineSize: number;
@@ -78,6 +83,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   format,
   lineSize,
   index,
+  url,
   formatTooltip,
   ...rest
 }) => {
@@ -132,6 +138,8 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         fill={fill}
         fontFamily={fontFamily}
         fontSize={fontSize}
+        onClick={() => url && window.open(url, '_blank')}
+        className={`fontSize, fontFamily fill ${url && ' cursor-pointer hover:underline '}`}
         {...rest}
       >
         {text}

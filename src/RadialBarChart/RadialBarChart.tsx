@@ -54,6 +54,11 @@ export interface RadialBarChartProps extends ChartProps {
    * End angle for the last value.
    */
   endAngle?: number;
+
+  /**
+   * Directs where to place onClick handle
+   */
+  url?: 'labels' | 'bars' | 'none';
 }
 
 export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
@@ -68,7 +73,8 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   series = <RadialBarSeries />,
   axis = <RadialAxis />,
   startAngle = 0,
-  endAngle = 2 * Math.PI
+  endAngle = 2 * Math.PI,
+  url = 'labels'
 }) => {
   const axisProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
@@ -125,6 +131,19 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
     [axisProps.type, endAngle, seriesProps.type, startAngle]
   );
 
+  /**
+   * creates a url tick map for quick lookups.
+   */
+
+  const urlMap = useMemo(() => {
+    if (!data) return new Map();
+    const map = new Map();
+    for (const { key, key_url } of data) {
+      if (key_url) map.set(key, key_url);
+    }
+    return map;
+  }, [data]);
+
   const getScales = useCallback(
     (preData: ChartDataShape[], innerRadius: number, outerRadius: number) => {
       const isMultiSeries = seriesProps.type === 'grouped';
@@ -170,6 +189,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
               innerRadius={innerRadius}
               startAngle={startAngle}
               endAngle={endAngle}
+              urls={url === 'labels' && urlMap}
             />
           )}
           <CloneElement<RadialBarSeriesProps>
@@ -184,6 +204,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
             outerRadius={outerRadius}
             startAngle={startAngle}
             endAngle={endAngle}
+            urls={url === 'bars' && urlMap}
           />
         </Fragment>
       );

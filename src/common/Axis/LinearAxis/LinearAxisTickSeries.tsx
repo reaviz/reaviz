@@ -33,6 +33,7 @@ export interface LinearAxisTickSeriesProps {
   > | null;
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine> | null;
   axis: LinearAxisProps;
+  urlMap?: Map<string | number, string>;
   /**
    * The maximum length for ellipsizing tick labels. Default is 18.
    */
@@ -47,6 +48,7 @@ interface ProcessedTick {
   height: number;
   width: number;
   half: 'start' | 'end' | 'center';
+  url?: string;
 }
 
 export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
@@ -63,7 +65,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     interval,
     line,
     axis,
-    ellipsisLength
+    ellipsisLength,
+    urlMap
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
@@ -125,6 +128,11 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   }, [labelProps.format, scale]);
 
   /**
+   * Gets the url from the map *if any* of the tick.
+   */
+  const getUrl = useCallback((tick: number) => urlMap.get(tick), [urlMap]);
+
+  /**
    * Gets the ticks given the dimensions and scales and returns
    * the text and position.
    */
@@ -138,6 +146,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
 
     return ticks.map((tick) => {
       const fullText = format(tick);
+      const url = urlMap ? getUrl(tick) : undefined;
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
       const text = ellipsize(fullText, ellipsisLength);
@@ -153,6 +162,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         ...position,
         ...size,
         text,
+        url,
         fullText,
         half:
           scaledTick === midpoint
@@ -168,6 +178,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     getAdjustedScale,
     getDimension,
     getPosition,
+    getUrl,
     interval,
     label,
     labelProps,
@@ -226,6 +237,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               text={tick.text}
               fullText={tick.fullText}
               half={tick.half}
+              url={tick?.url}
               angle={angle}
               orientation={orientation}
               line={line!}

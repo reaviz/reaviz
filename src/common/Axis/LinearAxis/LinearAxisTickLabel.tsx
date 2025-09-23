@@ -14,6 +14,7 @@ export interface LinearAxisTickLabelProps {
   half: 'start' | 'end' | 'center';
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
   format?: (v) => any;
+  url?: string;
   /**
    * Format tooltip title on hover label.
    */
@@ -35,6 +36,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   const {
     text,
     fullText,
+    url,
     angle,
     orientation,
     half,
@@ -173,9 +175,14 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       transform={`translate(${x}, ${y})`}
       fontSize={fontSize}
       fontFamily={fontFamily}
+      onClick={() => url && window.open(url, '_blank')}
     >
       <title>{titleHover}</title>
-      <text {...textPosition} fill={fill} className={className}>
+      <text
+        {...textPosition}
+        fill={fill}
+        className={`${className} ${url && ' cursor-pointer hover:underline hover:brightness-125 '}`}
+      >
         {text}
       </text>
     </g>

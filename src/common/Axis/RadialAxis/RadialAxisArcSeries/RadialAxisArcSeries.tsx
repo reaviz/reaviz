@@ -9,6 +9,7 @@ import { scaleLinear } from 'd3-scale';
 import { getPointsForLevels } from './utils';
 import { RadialAxisArcLine, RadialAxisArcLineProps } from './RadialAxisArcLine';
 import { mergeDefaultProps } from '@/common/utils';
+import { ChartDataShape } from '@/common/data';
 
 export interface RadialAxisArcSeriesProps {
   /**

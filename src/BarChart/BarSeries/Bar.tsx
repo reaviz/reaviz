@@ -181,6 +181,11 @@ export type BarProps = {
   glow?: Glow;
 
   /**
+   * adds/removes url onclick handles
+   */
+  urlEvents: boolean;
+
+  /**
    * Event for when the bar is clicked.
    */
   onClick?: (event: ClickEvent) => void;
@@ -240,6 +245,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     padding,
     guide,
     xScale1,
+    urlEvents,
     onMouseEnter,
     onClick,
     onMouseMove,
@@ -471,6 +477,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         value: data,
         nativeEvent: event
       });
+      if (urlEvents && data?.key_url) window.open(data?.key_url);
     },
     [data, onClick]
   );
@@ -589,7 +596,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
                 glow,
                 colorSchemeColor: currentColorShade
               }),
-              cursor
+              cursor: urlEvents && data?.key_url ? 'pointer' : cursor
             }}
             {...extra}
             mask={maskPath}

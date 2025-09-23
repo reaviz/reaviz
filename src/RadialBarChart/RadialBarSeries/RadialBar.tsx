@@ -16,6 +16,7 @@ import { MotionBar } from './MotionBar';
 import { RadialGuideBar, RadialGuideBarProps } from './RadialGuideBar';
 import { CloneElement } from 'reablocks';
 import { scaleBand } from 'd3-scale';
+import classNames from 'classnames';
 
 export interface RadialBarProps {
   /**
@@ -112,6 +113,10 @@ export interface RadialBarProps {
    * Event for when the symbol has mouse leave.
    */
   onMouseLeave: (event) => void;
+  /**
+   * url for click event
+   */
+  url: string;
 }
 
 export const RadialBar: FC<Partial<RadialBarProps>> = ({
@@ -131,6 +136,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   guide = <RadialGuideBar />,
   index,
   color,
+  url,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
   onMouseLeave = () => undefined
@@ -304,7 +310,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
             }}
             transition={transition}
             fill={fill}
-            className={className}
+            className={classNames(classNames, `${url && 'cursor-pointer'}`)}
             onMouseEnter={(event) =>
               onMouseEnter?.({
                 value: data,
@@ -317,12 +323,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
                 nativeEvent: event
               })
             }
-            onClick={(event) =>
-              onClick?.({
-                value: data,
-                nativeEvent: event
-              })
-            }
+            onClick={(event) => url && window.open(url)}
           />
         </Fragment>
       );

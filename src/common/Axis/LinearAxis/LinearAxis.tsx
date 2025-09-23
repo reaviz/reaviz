@@ -8,7 +8,7 @@ import React, {
   useMemo,
   useState
 } from 'react';
-import { ChartDataTypes } from '@/common/data';
+import { ChartDataShape, ChartDataTypes } from '@/common/data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
 import {
   LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
@@ -38,6 +38,7 @@ export interface LinearAxisProps {
   scale?: any;
   visibility?: 'visible' | 'hidden';
   orientation?: 'horizontal' | 'vertical';
+  urlMap?: Map<string | number, string>;
   onDimensionsChange?: (event: LinearAxisDimensionChanged) => void;
 }
 
@@ -58,6 +59,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     scale,
     orientation,
     visibility = 'visible',
+    urlMap,
     onDimensionsChange
   } = mergeDefaultProps(LINEAR_AXIS_DEFAULT_PROPS, props);
   const tickSeriesProps = useMemo(
@@ -144,6 +146,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
           height={height}
           width={width}
           scale={scale}
+          urlMap={urlMap}
           orientation={orientation}
           axis={props}
         />

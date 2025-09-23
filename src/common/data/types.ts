@@ -8,6 +8,7 @@ export interface BaseChartDataShape<T> {
   data: T;
   metadata?: any;
   id?: string;
+  key_url?: string;
 }
 
 export type ChartShallowDataShape<
@@ -38,6 +39,7 @@ export interface ChartInternalShallowDataShape {
   y: ChartInternalDataTypes;
   y0?: ChartInternalDataTypes;
   y1: ChartInternalDataTypes;
+  key_url?: string;
 }
 
 export type ChartInternalDataShape =

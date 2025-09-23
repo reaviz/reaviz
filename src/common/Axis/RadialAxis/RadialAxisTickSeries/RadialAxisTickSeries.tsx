@@ -1,8 +1,9 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
 import { RadialAxisTick, RadialAxisTickProps } from './RadialAxisTick';
 import { CloneElement } from 'reablocks';
 import { getTicks } from '@/common/utils/ticks';
 import { TimeInterval } from 'd3-time';
+import { ChartDataShape } from '@/common/data';
 
 export interface TickCallback {
   index?: number;
@@ -62,6 +63,11 @@ export interface RadialAxisTickSeriesProps {
    * End angle for the last value.
    */
   endAngle?: number;
+
+  /**
+   * Url Map .
+   */
+  urls?: Map<string | number, string | undefined>;
 }
 
 export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
@@ -74,9 +80,15 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   interval,
   type = 'time',
   startAngle = 0,
-  endAngle = 2 * Math.PI
+  endAngle = 2 * Math.PI,
+  urls
 }) => {
   const ticks = getTicks(scale, tickValues, type, count, interval || count);
+
+  /**
+   * Gets the url *if any* of the tick.
+   */
+  const getUrl = useCallback((tick: number) => urls.get(tick), [urls]);
 
   return (
     <Fragment>
@@ -90,6 +102,7 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
             index={i}
             scale={scale}
             data={data}
+            url={urls && getUrl(data)}
             innerRadius={innerRadius}
             outerRadius={outerRadius}
             startAngle={startAngle}

@@ -123,6 +123,11 @@ export interface BarSeriesProps {
   valueMarkers:
     | ReactElement<LinearValueMarkerProps, typeof LinearValueMarker>[]
     | null;
+
+  /**
+   * adds/removes url onclick handles
+   */
+  urlEvents: boolean;
 }
 
 export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
@@ -142,7 +147,8 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
     layout,
     type,
     id,
-    valueMarkers
+    valueMarkers,
+    urlEvents
   } = mergeDefaultProps(BAR_SERIES_DEFAULT_PROPS, props);
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
@@ -262,6 +268,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
             groupIndex={groupIndex}
             barIndex={barIndex}
             data={data}
+            urlEvents={urlEvents}
             isCategorical={isCategorical}
             color={getBarColor}
             layout={layout}

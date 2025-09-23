@@ -10,6 +10,7 @@ import {
 } from './RadialAxisArcSeries';
 import { CloneElement } from 'reablocks';
 import { getTicks, mergeDefaultProps } from '@/common/utils';
+import { ChartDataShape } from '@/common/data';
 
 type RadialAxisType = 'value' | 'time' | 'category';
 
@@ -64,6 +65,11 @@ export interface RadialAxisProps {
    * End angle for the last value.
    */
   endAngle?: number;
+
+  /**
+   * Url Map .
+   */
+  urls: Map<string | number, string | undefined>;
 }
 
 export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
@@ -76,7 +82,8 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
     innerRadius,
     type,
     startAngle,
-    endAngle
+    endAngle,
+    urls
   } = mergeDefaultProps(RADIAL_AXIS_DEFAULT_PROPS, props);
 
   const outerRadius = Math.min(height, width) / 2;
@@ -113,6 +120,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
           outerRadius={outerRadius}
           startAngle={startAngle}
           endAngle={endAngle}
+          urls={urls}
         />
       )}
     </Fragment>

@@ -22,11 +22,16 @@ export default {
   }
 };
 
+const data = categoryData.map((entry, i) => ({
+  key_url: `https://google.com/${i}`,
+  ...entry
+}));
+
 export const Simple = () => (
   <BarChart
     width={400}
     height={350}
-    data={categoryData}
+    data={data}
     series={<BarSeries padding={0.1} bar={<Bar />} />}
   />
 );

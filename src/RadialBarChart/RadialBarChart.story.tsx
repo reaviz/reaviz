@@ -1,7 +1,7 @@
 import { RadialBarChart } from './RadialBarChart';
 import {
   largeCategoryData,
-  medDateData,
+  medDateData as data,
   multiCategory
 } from 'reaviz-data-utils';
 import { RadialBarSeries, RadialBar, RadialGuideBar } from './RadialBarSeries';
@@ -26,6 +26,11 @@ export default {
   }
 };
 
+const medDateData = data.map((entry) => ({
+  key_url: `${entry.key}`,
+  ...entry
+}));
+
 export const Simple = () => (
   <RadialBarChart
     id="simple"
@@ -33,6 +38,7 @@ export const Simple = () => (
     width={450}
     innerRadius={50}
     data={medDateData}
+    url="labels"
     series={
       <RadialBarSeries
         animated

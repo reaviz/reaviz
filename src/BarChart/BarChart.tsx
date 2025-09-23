@@ -80,7 +80,15 @@ export interface BarChartProps extends ChartProps {
    * Any secondary axis components. Useful for multi-axis charts.
    */
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+
+  /**
+   * where to attach url onclick events
+   */
+
+  url?: OnClickTarget;
 }
+
+export type OnClickTarget = 'none' | 'labels' | 'bars' | 'both';
 
 export const BarChart: FC<Partial<BarChartProps>> = (props) => {
   const {
@@ -96,7 +104,8 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     brush,
     gridlines,
     secondaryAxis,
-    containerClassName
+    containerClassName,
+    url = 'labels'
   } = mergeDefaultProps(BAR_CHART_DEFAULT_PROPS, props);
   const seriesProps = useMemo(
     () => ({ ...BAR_SERIES_DEFAULT_PROPS, ...series?.props }),
@@ -122,6 +131,10 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     () => seriesProps.type === 'stackedDiverging',
     [seriesProps.type]
   );
+
+  let displayMode: OnClickTarget = url;
+  const onClickLabels = displayMode == 'labels' || displayMode === 'both';
+  const onClickBars = displayMode === 'bars' || displayMode === 'both';
 
   const getMarimekkoGroupScales = useCallback(
     (aggregatedData, axisProps, width: number) => {
@@ -199,6 +212,19 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     },
     [isDiverging, seriesProps]
   );
+
+  /**
+   * creates a url tick map for quick lookups.
+   */
+
+  const urlMap = useMemo(() => {
+    if (!data) return;
+    const map = new Map();
+    for (const { key, key_url } of data) {
+      if (key_url) map.set(key, key_url);
+    }
+    return map;
+  }, [data]);
 
   const getScalesAndData = useCallback(
     (chartHeight: number, chartWidth: number) => {
@@ -363,6 +389,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
+            urlMap={onClickLabels && urlMap}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'horizontal' : 'vertical', event)
@@ -373,6 +400,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
             height={chartHeight}
             width={chartWidth}
             scale={yScale}
+            urlMap={onClickLabels && urlMap}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'vertical' : 'horizontal', event)
@@ -401,6 +429,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
                 element={series}
                 id={`bar-series-${id}`}
                 data={aggregatedData}
+                urlEvents={onClickBars}
                 height={chartHeight}
                 width={chartWidth}
                 isCategorical={isCategorical}

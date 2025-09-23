@@ -40,7 +40,10 @@ export default {
   }
 };
 
-const data = categoryData;
+const data = categoryData.map((entry, i) => ({
+  key_url: `https://google.com/${i}`,
+  ...entry
+}));
 
 export const Simple = () => (
   <BarChart

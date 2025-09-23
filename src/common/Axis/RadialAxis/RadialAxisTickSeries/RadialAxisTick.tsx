@@ -37,6 +37,11 @@ export interface RadialAxisTickProps {
   data: any;
 
   /**
+   * Url for onclick
+   */
+  url: string;
+
+  /**
    * Index of the tick.
    */
   index: number;
@@ -71,6 +76,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
   scale,
   outerRadius = 0,
   data,
+  url,
   index,
   padding = 0,
   innerRadius
@@ -101,6 +107,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
+          url={url}
         />
       )}
     </g>

@@ -7,6 +7,7 @@ import React, {
   useMemo
 } from 'react';
 import {
+  ChartDataShape,
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
@@ -102,6 +103,11 @@ export interface RadialBarSeriesProps {
   valueMarkers:
     | ReactElement<RadialValueMarkerProps, typeof RadialValueMarker>[]
     | null;
+
+  /**
+   * Url  map
+   */
+  urls?: Map<string | number, string | undefined>;
 }
 
 export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
@@ -120,10 +126,16 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   startAngle = 0,
   endAngle = 2 * Math.PI,
   type = 'standard',
-  valueMarkers
+  valueMarkers,
+  urls
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMultiSeries = useMemo(() => type === 'grouped', [type]);
+
+  /**
+   * Gets the url *if any* of the tick.
+   */
+  const getUrl = useCallback((bar: any) => urls.get(bar), [urls]);
 
   const renderBar = useCallback(
     (
@@ -142,6 +154,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             id={`radialbar-${id}-${index}`}
             index={index}
             data={point}
+            url={urls && getUrl(point?.key)}
             xScale={xScale}
             active={active}
             yScale={yScale}
