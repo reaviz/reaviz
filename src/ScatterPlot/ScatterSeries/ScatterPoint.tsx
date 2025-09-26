@@ -1,28 +1,24 @@
-import React, {
-  Fragment,
-  ReactNode,
-  ReactElement,
-  useState,
-  FC,
-  useRef,
-  useMemo
-} from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import classNames from 'classnames';
+import type { Transition } from 'motion/react';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
-import { motion, Transition } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { schemes, getColor, ColorSchemeType } from '@/common/color';
+import type { FC, ReactElement, ReactNode } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
 import { identifier } from 'safe-identifier';
-import css from './ScatterPoint.module.css';
-import { Glow } from '@/common/Glow';
-import { generateGlowStyles } from '@/common/Glow/utils';
+
 import { getAriaLabel, mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor, schemes } from '@/common/color';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import type { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+
+import css from './ScatterPoint.module.css';
 
 export type ScatterPointProps = {
   /**
@@ -142,29 +138,29 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);
   const extras = useMemo(
     () => constructFunctionProps(rest, data),
-    [rest, data]
+    [rest, data],
   );
   const r = useMemo(
     () => (typeof size === 'function' ? size(data!) : size),
-    [size, data]
+    [size, data],
   );
   const renderedSymbol = useMemo(
     () => (symbol ? symbol(data!) : null),
-    [data, symbol]
+    [data, symbol],
   );
 
   const transitionProps = useMemo(
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: index! * 0.005
-        }
+            ...DEFAULT_TRANSITION,
+            delay: index! * 0.005,
+          }
         : {
-          type: false as const,
-          delay: 0
-        },
-    [index, animated]
+            type: false as const,
+            delay: 0,
+          },
+    [index, animated],
   );
 
   const enterProps = useMemo(() => {
@@ -176,7 +172,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
 
     return {
       x: xScale(data!.x),
-      y: cy
+      y: cy,
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, yScale]);
@@ -185,7 +181,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
     const [yStartDomain] = yScale.domain();
     return {
       y: yScale(yStartDomain),
-      x: xScale(data!.x)
+      x: xScale(data!.x),
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, yScale]);
@@ -195,9 +191,9 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
       getColor({
         colorScheme: color,
         index,
-        point: data
+        point: data,
       }),
-    [data, color, index]
+    [data, color, index],
   );
 
   const key = `symbol-${id}-${identifier(`${data!.id}`)}`;
@@ -211,7 +207,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
         ref={rectRef}
         className={classNames({
           [css.inactive]: !active,
-          [css.hidden]: !isVisible
+          [css.hidden]: !isVisible,
         })}
         onMouseEnter={() => {
           setTooltipVisible(true);
@@ -233,17 +229,17 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
             initial={{
               translateX: exitProps.x,
               translateY: exitProps.y,
-              opacity: 0
+              opacity: 0,
             }}
             animate={{
               translateX: enterProps.x,
               translateY: enterProps.y,
-              opacity: 1
+              opacity: 1,
             }}
             exit={{
               translateX: exitProps.x,
               translateY: exitProps.y,
-              opacity: 0
+              opacity: 0,
             }}
             transition={transitionProps as Transition}
           >
@@ -256,26 +252,26 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
             style={{
               ...extras.style,
               ...generateGlowStyles({ glow }),
-              cursor
+              cursor,
             }}
             fill={fill}
             initial={{
               cx: exitProps.x,
               cy: exitProps.y,
               r,
-              opacity: 0
+              opacity: 0,
             }}
             animate={{
               cx: enterProps.x,
               cy: enterProps.y,
               opacity: 1,
-              r
+              r,
             }}
             exit={{
               cx: exitProps.x,
               cy: exitProps.y,
               r,
-              opacity: 0
+              opacity: 0,
             }}
             transition={transitionProps as Transition}
           />
@@ -302,5 +298,5 @@ export const SCATTER_POINT_DEFAULT_PROPS = {
   animated: true,
   onClick: () => undefined,
   onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined
+  onMouseLeave: () => undefined,
 };

@@ -1,8 +1,11 @@
-import React, { FC, useMemo } from 'react';
-import { ChartInternalShallowDataShape, Direction } from '@/common/data';
 import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartInternalShallowDataShape, Direction } from '@/common/data';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { BarType } from './Bar';
+
+import type { BarType } from './Bar';
 
 export interface RangeLinesProps {
   /**
@@ -90,20 +93,20 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
   animated,
   index,
   barCount,
-  data
+  data,
 }) => {
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rangeLineHeight = useMemo(
     () => Math.min(strokeWidth, isVertical ? height : width),
-    [height, isVertical, strokeWidth, width]
+    [height, isVertical, strokeWidth, width],
   );
 
   const [newWidth, newHeight] = useMemo(
     () => [
       isVertical ? width : rangeLineHeight,
-      isVertical ? rangeLineHeight : height
+      isVertical ? rangeLineHeight : height,
     ],
-    [height, isVertical, rangeLineHeight, width]
+    [height, isVertical, rangeLineHeight, width],
   );
 
   const enterProps = useMemo(() => {
@@ -138,7 +141,7 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
     return {
       x: newX,
       y: newY,
-      opacity: 1
+      opacity: 1,
     };
   }, [
     data.x0,
@@ -149,7 +152,7 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
     rangeLineHeight,
     width,
     x,
-    y
+    y,
   ]);
 
   const exitProps = useMemo(() => {
@@ -183,12 +186,12 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
     return {
       y: newY,
       x: newX,
-      opacity: 0
+      opacity: 0,
     };
   }, [height, isVertical, position, rangeLineHeight, scale, type, width, x, y]);
 
   const delay = useMemo(() => {
-    let delay = 0;
+    const delay = 0;
     if (animated) {
       if (layout === 'vertical') {
         return (index / barCount) * 0.5;
@@ -205,7 +208,7 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
     const r = {
       ...exitProps,
       attrX: exitProps.x,
-      attrY: exitProps.y
+      attrY: exitProps.y,
     };
 
     delete r.x;
@@ -218,7 +221,7 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
     const r = {
       ...enterProps,
       attrX: enterProps.x,
-      attrY: enterProps.y
+      attrY: enterProps.y,
     };
 
     delete r.x;
@@ -238,7 +241,7 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
       exit={initial}
       transition={{
         ...DEFAULT_TRANSITION,
-        delay
+        delay,
       }}
     />
   );

@@ -1,9 +1,13 @@
-import React, { FC, ReactElement, useMemo } from 'react';
 import { arc } from 'd3-shape';
-import { PieArc, ArcData } from '@/PieChart';
-import { ChartShallowDataShape } from '@/common/data';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { Gradient, GradientProps } from '@/common/Gradient';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartShallowDataShape } from '@/common/data';
+import type { Gradient, GradientProps } from '@/common/Gradient';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import type { ArcData } from '@/PieChart';
+import { PieArc } from '@/PieChart';
 
 export interface RadialGaugeArcProps {
   /**
@@ -114,7 +118,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip = <ChartTooltip />
+  tooltip = <ChartTooltip />,
 }) => {
   /**
    * This function will generate the arcs
@@ -133,7 +137,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       data: data || {},
       startAngle,
       endAngle,
-      padAngle
+      padAngle,
     };
 
     return (
@@ -165,7 +169,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
     tooltip,
     onClick,
     onMouseEnter,
-    onMouseLeave
+    onMouseLeave,
   ]);
 
   return (

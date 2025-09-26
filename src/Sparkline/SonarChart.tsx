@@ -1,24 +1,26 @@
-import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { BarChartProps } from '@/BarChart';
 import {
+  Bar,
+  BAR_DEFAULT_PROPS,
   StackedBarChart,
   StackedBarSeries,
-  Bar,
-  BarChartProps,
-  BAR_DEFAULT_PROPS
 } from '@/BarChart';
+import type { ChartNestedDataShape } from '@/common';
 import {
+  ChartTooltip,
+  formatValue,
   Gradient,
   GradientStop,
-  LinearYAxis,
   LinearXAxis,
-  LinearYAxisTickSeries,
   LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries,
   TooltipArea,
-  ChartTooltip,
   TooltipTemplate,
-  formatValue,
-  ChartNestedDataShape
 } from '@/common';
 
 export interface SonarChartProps extends BarChartProps {
@@ -45,7 +47,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
                     color={color}
                     value={{
                       x: formatValue(data.x),
-                      y: `${formatValue(Math.abs(data.data[0].y))}`
+                      y: `${formatValue(Math.abs(data.data[0].y))}`,
                     }}
                   />
                 )}
@@ -64,7 +66,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.7} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={1} key="stop" />
+                  <GradientStop offset="90%" stopOpacity={1} key="stop" />,
                 ]}
               />
             }
@@ -78,11 +80,11 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={1} key="stop" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="start" />
+                  <GradientStop offset="90%" stopOpacity={0.7} key="start" />,
                 ]}
               />
             }
-          />
+          />,
         ]}
       />
     }

@@ -1,6 +1,10 @@
-import React, { FC } from 'react';
-import { Bar, BarProps } from '../BarChart';
+import type { FC } from 'react';
+import React from 'react';
+
 import { ChartTooltip, TooltipTemplate } from '@/common/Tooltip';
+
+import type { BarProps } from '../BarChart';
+import { Bar } from '../BarChart';
 
 export type LinearGaugeBarProps = BarProps;
 

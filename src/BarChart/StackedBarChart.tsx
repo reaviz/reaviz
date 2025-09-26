@@ -1,9 +1,13 @@
-import React, { FC } from 'react';
-import { BarChart, BarChartProps } from './BarChart';
-import { ChartNestedDataShape } from '@/common/data';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { ChartNestedDataShape } from '@/common/data';
+
+import type { BarChartProps } from './BarChart';
+import { BarChart } from './BarChart';
 import {
   STACKED_BAR_SERIES_DEFAULT_PROPS,
-  StackedBarSeries
+  StackedBarSeries,
 } from './BarSeries';
 
 export interface StackedBarChartProps extends BarChartProps {

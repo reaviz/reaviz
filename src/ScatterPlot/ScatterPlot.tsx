@@ -1,43 +1,36 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useState,
-  useRef,
-  useCallback,
-  useMemo
-} from 'react';
 import classNames from 'classnames';
-import {
-  ChartShallowDataShape,
-  buildShallowChartData,
-  ChartDataTypes
-} from '@/common/data';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis';
 import {
   isAxisVisible,
-  LinearAxisProps,
+  LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis,
-  LINEAR_X_AXIS_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_DEFAULT_PROPS
 } from '@/common/Axis';
-import { getYScale, getXScale } from '@/common/scales';
-import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
-import {
-  ZoomPanChangeEvent,
-  ChartZoomPanProps,
-  ChartZoomPan
-} from '@/common/ZoomPan';
-import { ChartBrushProps, ChartBrush } from '@/common/Brush';
-import {
+import type { ChartBrush, ChartBrushProps } from '@/common/Brush';
+import type {
+  ChartContainerChildProps,
   ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
 } from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type { ChartDataTypes, ChartShallowDataShape } from '@/common/data';
+import { buildShallowChartData } from '@/common/data';
+import type { GridlineSeriesProps } from '@/common/Gridline';
+import { GridlineSeries } from '@/common/Gridline';
+import { getXScale, getYScale } from '@/common/scales';
+import type {
+  ChartZoomPan,
+  ChartZoomPanProps,
+  ZoomPanChangeEvent,
+} from '@/common/ZoomPan';
+
 import css from './ScatterPlot.module.css';
+import type { ScatterSeriesProps } from './ScatterSeries';
+import { ScatterSeries } from './ScatterSeries';
 
 export interface ScatterPlotProps extends ChartProps {
   /**
@@ -95,21 +88,21 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   containerClassName,
   brush = null,
   zoomPan = null,
-  secondaryAxis
+  secondaryAxis,
 }) => {
   const xAxisProps = useMemo(
     () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
-    [xAxis.props]
+    [xAxis.props],
   );
   const yAxisProps = useMemo(
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
-    [yAxis.props]
+    [yAxis.props],
   );
   const zoomControlled = useMemo(
     () =>
       // eslint-disable-next-line
       !zoomPan?.props?.domain?.hasOwnProperty('domain'),
-    [zoomPan]
+    [zoomPan],
   );
 
   const timeout = useRef<any | null>(null);
@@ -127,7 +120,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         type: yAxisProps.type,
         height: chartHeight,
         data: aggregatedData,
-        domain: yAxisProps.domain
+        domain: yAxisProps.domain,
       });
 
       const xScale = getXScale({
@@ -135,15 +128,15 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         type: xAxisProps.type,
         roundDomains: xAxisProps.roundDomains,
         data: aggregatedData,
-        domain: zoomDomain || xAxisProps.domain
+        domain: zoomDomain || xAxisProps.domain,
       });
 
       return {
         yScale,
-        xScale
+        xScale,
       };
     },
-    [yAxisProps, xAxisProps, aggregatedData, zoomDomain]
+    [yAxisProps, xAxisProps, aggregatedData, zoomDomain],
   );
 
   const onZoomPan = useCallback(
@@ -157,7 +150,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         timeout.current = setTimeout(() => setPreventAnimation(true), 500);
       }
     },
-    [zoomControlled]
+    [zoomControlled],
   );
 
   const renderChart = useCallback(
@@ -166,7 +159,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       chartWidth,
       id,
       updateAxes,
-      chartSized
+      chartSized,
     }: ChartContainerChildProps) => {
       const { yScale, xScale } = getScales(chartHeight, chartWidth);
       const animated =
@@ -263,8 +256,8 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       onZoomPan,
       aggregatedData,
       zoomDomain,
-      isZoomed
-    ]
+      isZoomed,
+    ],
   );
 
   return (

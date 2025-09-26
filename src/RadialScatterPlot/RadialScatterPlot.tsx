@@ -1,24 +1,24 @@
-import React, { FC, useCallback, Fragment, ReactElement } from 'react';
-import {
-  ChartShallowDataShape,
-  buildShallowChartData,
-  ChartInternalShallowDataShape
-} from '@/common/data';
 import { scaleBand, scaleTime } from 'd3-scale';
-import { getYDomain, getXDomain } from '@/common/utils/domains';
-import {
-  RadialScatterSeries,
-  RadialScatterSeriesProps
-} from './RadialScatterSeries';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers';
 import { CloneElement } from 'reablocks';
-import { RadialAxisProps, RadialAxis } from '@/common/Axis/RadialAxis';
-import { getRadialYScale } from '@/common/scales';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback } from 'react';
+
 import { uniqueBy } from '@/common';
+import type { RadialAxis, RadialAxisProps } from '@/common/Axis/RadialAxis';
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type {
+  ChartInternalShallowDataShape,
+  ChartShallowDataShape,
+} from '@/common/data';
+import { buildShallowChartData } from '@/common/data';
+import { getRadialYScale } from '@/common/scales';
+import { getXDomain, getYDomain } from '@/common/utils/domains';
+
+import type {
+  RadialScatterSeries,
+  RadialScatterSeriesProps,
+} from './RadialScatterSeries';
 
 export interface RadialScatterPlotProps extends ChartProps {
   /**
@@ -52,19 +52,19 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
   innerRadius,
   series,
   axis,
-  data
+  data,
 }) => {
   const getScales = useCallback(
     (
       aggregatedData: ChartInternalShallowDataShape[],
       outer: number,
-      inner: number
+      inner: number,
     ) => {
       let xScale;
       if (axis?.props.type === 'category') {
         const xDomain = uniqueBy<ChartInternalShallowDataShape>(
           aggregatedData,
-          (dd) => dd.x
+          (dd) => dd.x,
         );
         xScale = scaleBand()
           .range([0, 2 * Math.PI])
@@ -81,10 +81,10 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
 
       return {
         yScale,
-        xScale
+        xScale,
       };
     },
-    []
+    [],
   );
 
   const renderChart = useCallback(
@@ -95,7 +95,7 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
       const { yScale, xScale } = getScales(
         aggregatedData,
         outerRadius,
-        innerRadius
+        innerRadius,
       );
 
       return (
@@ -119,7 +119,7 @@ export const RadialScatterPlot: FC<Partial<RadialScatterPlotProps>> = ({
         </Fragment>
       );
     },
-    [data, getScales, innerRadius, series, axis]
+    [data, getScales, innerRadius, series, axis],
   );
 
   return (

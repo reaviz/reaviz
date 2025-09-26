@@ -1,26 +1,28 @@
+import chroma from 'chroma-js';
 import React from 'react';
-import { BarChart } from './BarChart';
-import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
+import {
+  categoryData,
+  durationCategoryData,
+  largeCategoryData,
+  nonZeroCategoryData,
+} from 'reaviz-data-utils';
+
 import {
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickLabel
 } from '@/common/Axis/LinearAxis';
-import chroma from 'chroma-js';
-import {
-  categoryData,
-  largeCategoryData,
-  nonZeroCategoryData,
-  durationCategoryData
-} from 'reaviz-data-utils';
+
+import { BarChart } from './BarChart';
+import { Bar, BarLabel, BarSeries, GuideBar } from './BarSeries';
 import {
   HistogramBarSeries,
   MarimekkoBarSeries,
   RangeLines,
   StackedBarSeries,
-  StackedNormalizedBarSeries
+  StackedNormalizedBarSeries,
 } from './BarSeries';
 
 export default {
@@ -36,8 +38,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries
-  }
+    HistogramBarSeries,
+  },
 };
 
 const data = categoryData;
@@ -209,5 +211,5 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero'
+  name: 'Non-Zero',
 };

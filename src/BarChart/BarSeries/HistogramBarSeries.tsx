@@ -1,13 +1,13 @@
-import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import {
-  BarSeriesProps,
-  BarSeries,
-  BAR_SERIES_DEFAULT_PROPS
-} from './BarSeries';
-import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
-import { formatValue } from '@/common/utils/formatting';
+import type { FC } from 'react';
+import React from 'react';
+
 import { schemes } from '@/common/color';
+import { ChartTooltip, TooltipArea, TooltipTemplate } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+
+import type { BarSeriesProps } from './BarSeries';
+import { BAR_SERIES_DEFAULT_PROPS, BarSeries } from './BarSeries';
 
 export const HistogramBarSeries: FC<Partial<BarSeriesProps>> = ({
   type,
@@ -27,7 +27,7 @@ export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
             const data = {
               ...point,
               x: `${formatValue(point.x0)} - ${formatValue(point.x1)}`,
-              value: point.y
+              value: point.y,
             };
 
             return <TooltipTemplate value={data} color={color} />;
@@ -35,5 +35,5 @@ export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
         />
       }
     />
-  )
+  ),
 };

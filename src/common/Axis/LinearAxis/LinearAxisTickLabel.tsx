@@ -1,10 +1,13 @@
-import React, { FC, ReactElement } from 'react';
-import {
-  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LinearAxisTickLine,
-  LinearAxisTickLineProps
-} from './LinearAxisTickLine';
+import type { FC, ReactElement } from 'react';
+import React from 'react';
+
 import { mergeDefaultProps } from '@/common/utils';
+
+import type {
+  LinearAxisTickLine,
+  LinearAxisTickLineProps,
+} from './LinearAxisTickLine';
+import { LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS } from './LinearAxisTickLine';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -30,7 +33,7 @@ export interface LinearAxisTickLabelProps {
 }
 
 export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
-  props
+  props,
 ) => {
   const {
     text,
@@ -48,7 +51,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     rotation,
     padding,
     formatTooltip,
-    align
+    align,
   } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
 
   function getAlign() {
@@ -113,7 +116,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
 
     return {
       [horz ? 'x' : 'y']: offset2,
-      [horz ? 'y' : 'x']: offset1
+      [horz ? 'y' : 'x']: offset1,
     };
   }
 
@@ -159,7 +162,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
         | 'end'
         | 'middle'
         | 'inherit',
-      alignmentBaseline
+      alignmentBaseline,
     };
   }
 
@@ -189,5 +192,5 @@ export const LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS: Partial<LinearAxisTickLabelPr
     fontFamily: 'sans-serif',
     rotation: true,
     padding: 5,
-    align: 'center'
+    align: 'center',
   };

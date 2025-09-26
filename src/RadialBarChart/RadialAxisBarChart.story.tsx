@@ -1,14 +1,16 @@
-import { medDateData, multiCategory } from 'reaviz-data-utils';
 import { format } from 'date-fns';
+import { medDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   RadialAxis,
   RadialAxisArcSeries,
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisTickLine,
-  RadialAxisTickSeries
+  RadialAxisTickSeries,
 } from '@/common/Axis/RadialAxis';
 import { schemes } from '@/common/color';
+
 import { RadialBarChart } from './RadialBarChart';
 import { RadialBar, RadialBarSeries, RadialGuideBar } from './RadialBarSeries';
 
@@ -19,8 +21,8 @@ export default {
   subcomponents: {
     RadialBarSeries,
     RadialBar,
-    RadialGuideBar
-  }
+    RadialGuideBar,
+  },
 };
 
 export const SemiCircle = () => (

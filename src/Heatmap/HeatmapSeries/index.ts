@@ -1,2 +1,2 @@
-export * from './HeatmapSeries';
 export * from './HeatmapCell';
+export * from './HeatmapSeries';

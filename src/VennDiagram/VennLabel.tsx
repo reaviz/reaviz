@@ -1,7 +1,9 @@
-import React, { FC } from 'react';
 import { motion } from 'motion/react';
-import { wrapText } from '@/common/utils/wrapText';
+import type { FC } from 'react';
+import React from 'react';
+
 import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { wrapText } from '@/common/utils/wrapText';
 
 export interface VennLabelProps {
   /**
@@ -71,7 +73,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   animated = true,
   fill,
   fontSize = 11,
-  fontFamily = 'sans-serif'
+  fontFamily = 'sans-serif',
 }) => {
   // If the text area is very large, then lets just skip showing the label
   if (!showAll && !data.arcs?.filter((a) => a.large).length) {
@@ -86,12 +88,12 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     : { delay: 0, type: false as const };
   const text = wrap
     ? wrapText({
-      key,
-      x: data.text.x,
-      fontFamily,
-      fontSize,
-      width: data?.circles?.[0]?.radius
-    })
+        key,
+        x: data.text.x,
+        fontFamily,
+        fontSize,
+        width: data?.circles?.[0]?.radius,
+      })
     : key;
 
   return (
@@ -105,14 +107,14 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
         {
           attrX: data.text.x,
           attrY: data.text.y,
-          opacity: 1
+          opacity: 1,
         } as any
       }
       animate={
         {
           attrX: data.text.x,
           attrY: data.text.y,
-          opacity: active === null ? 0.3 : 1
+          opacity: active === null ? 0.3 : 1,
         } as any
       }
       transition={transition}

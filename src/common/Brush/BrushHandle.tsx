@@ -1,7 +1,10 @@
-import React, { FC, useState } from 'react';
 import classNames from 'classnames';
 import { range } from 'd3-array';
+import type { FC } from 'react';
+import React, { useState } from 'react';
+
 import { Move } from '@/common/Gestures/Move';
+
 import css from './BrushHandle.module.css';
 
 export interface BrushHandleProps {

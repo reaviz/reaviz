@@ -1,4 +1,4 @@
-import { ChartInternalDataTypes } from '@/common/data';
+import type { ChartInternalDataTypes } from '@/common/data';
 
 // https://stackoverflow.com/questions/673905/best-way-to-determine-users-locale-within-browser
 const getNavigatorLanguage = () => {
@@ -26,7 +26,7 @@ const options = {
   month: 'numeric',
   day: 'numeric',
   hour12: true,
-  formatMatcher: 'best fit'
+  formatMatcher: 'best fit',
 };
 
 /**

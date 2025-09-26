@@ -1,11 +1,12 @@
 import React from 'react';
+
 import { BarList } from './BarList';
 import { BarListSeries } from './BarListSeries';
 
 export default {
   tags: ['snapshot'],
   title: 'Charts/Bar List/Labels',
-  component: BarList
+  component: BarList,
 };
 
 export const LabelStart = () => (
@@ -16,7 +17,7 @@ export const LabelStart = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries labelPosition="start" valuePosition="end" />}
   />
@@ -30,7 +31,7 @@ export const LabelBottom = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries labelPosition="bottom" valuePosition="end" />}
   />
@@ -44,7 +45,7 @@ export const LabelEnd = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries labelPosition="end" valuePosition="start" />}
   />
@@ -58,7 +59,7 @@ export const LabelTop = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries labelPosition="top" />}
   />
@@ -72,7 +73,7 @@ export const LabelNone = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries labelPosition="none" valuePosition="end" />}
   />
@@ -86,7 +87,7 @@ export const ValueBottom = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries valuePosition="bottom" />}
   />
@@ -100,7 +101,7 @@ export const ValueEnd = () => (
       { key: 'Vulnerability Patch', data: 100 },
       { key: 'Critical Failure', data: 55 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 200 }
+      { key: 'Phishing Attempts', data: 200 },
     ]}
     series={<BarListSeries valuePosition="end" />}
   />
@@ -114,7 +115,7 @@ export const ValueStart = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries valuePosition="start" />}
   />
@@ -128,7 +129,7 @@ export const ValueNone = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
     series={<BarListSeries valuePosition="none" />}
   />
@@ -142,7 +143,7 @@ export const LongValueStart = () => (
       { key: 'Vulnerability Patch', data: 5000 },
       { key: 'Critical Failure', data: 50000 },
       { key: 'Physical Intrusion', data: 500000 },
-      { key: 'Phishing Attempts', data: 5000000 }
+      { key: 'Phishing Attempts', data: 5000000 },
     ]}
     series={<BarListSeries valuePosition="start" />}
   />
@@ -156,7 +157,7 @@ export const LongValueEnd = () => (
       { key: 'Vulnerability Patch', data: 5000 },
       { key: 'Critical Failure', data: 50000 },
       { key: 'Physical Intrusion', data: 500000 },
-      { key: 'Phishing Attempts', data: 5000000 }
+      { key: 'Phishing Attempts', data: 5000000 },
     ]}
     series={<BarListSeries valuePosition="end" />}
   />

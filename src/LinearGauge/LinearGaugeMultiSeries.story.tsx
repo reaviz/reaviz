@@ -1,18 +1,20 @@
-import React from 'react';
-import { LinearGauge } from './LinearGauge';
-import { DiscreteLegend, DiscreteLegendEntry } from '@/common/legends';
-import { mitreData } from 'reaviz-data-utils';
-import { LinearGaugeSeries } from './LinearGaugeSeries';
 import chroma from 'chroma-js';
+import React from 'react';
+import { mitreData } from 'reaviz-data-utils';
+
+import { DiscreteLegend, DiscreteLegendEntry } from '@/common/legends';
+
+import { LinearGauge } from './LinearGauge';
 import { LinearGaugeBar } from './LinearGaugeBar';
 import { LinearGaugeOuterBar } from './LinearGaugeOuterBar';
+import { LinearGaugeSeries } from './LinearGaugeSeries';
 
 const colorScheme = chroma
   .scale(['#FF9C02', '#870000'])
   .colors(mitreData.length);
 
 // Credit: https://icons8.com/icons/set/access
-const Icon = ({ fill }) => (
+const Icon = ({ fill }: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 30 30"
@@ -32,8 +34,8 @@ export default {
     LinearGaugeSeries,
     LinearGauge,
     LinearGaugeBar,
-    LinearGaugeOuterBar
-  }
+    LinearGaugeOuterBar,
+  },
 };
 
 export const _Simple = () => (

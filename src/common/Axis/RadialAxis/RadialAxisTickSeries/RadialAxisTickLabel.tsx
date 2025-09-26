@@ -1,4 +1,6 @@
-import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
+import type { FC, SVGTextElementAttributes } from 'react';
+import React, { useMemo } from 'react';
+
 import { formatValue } from '@/common/utils/formatting';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
@@ -114,7 +116,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
 
     return {
       transform,
-      textAnchor
+      textAnchor,
     };
   }, [autoRotate, padding, point, rotation]);
 

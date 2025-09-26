@@ -1,31 +1,28 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useState
-} from 'react';
-import {
-  ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape
-} from '@/common/data';
-import { getColor, ColorSchemeType, schemes } from '@/common/color';
 import { CloneElement } from 'reablocks';
-import { RadialAreaProps, RadialArea } from './RadialArea';
-import { RadialLine, RadialLineProps } from './RadialLine';
-import { RadialInterpolationTypes } from '@/common/utils/interpolation';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
+
+import type { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor, schemes } from '@/common/color';
+import type {
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape,
+} from '@/common/data';
+import type { TooltipAreaProps } from '@/common/Tooltip';
+import { TooltipArea } from '@/common/Tooltip';
+import type { RadialInterpolationTypes } from '@/common/utils/interpolation';
+
+import type { RadialAreaProps } from './RadialArea';
+import { RadialArea } from './RadialArea';
+import type { RadialLineProps } from './RadialLine';
+import { RadialLine } from './RadialLine';
+import type { RadialPointSeriesProps } from './RadialPointSeries';
 import {
   RADIAL_POINT_SERIES_DEFAULT_PROPS,
   RadialPointSeries,
-  RadialPointSeriesProps
 } from './RadialPointSeries';
-import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
-import {
-  mergeDefaultProps,
-  RadialValueMarker,
-  RadialValueMarkerProps
-} from '@/common';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 
@@ -157,15 +154,15 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
     startAngle,
     endAngle,
     isClosedCurve,
-    valueMarkers
+    valueMarkers,
   } = mergeDefaultProps(RADIAL_AREA_SERIES_DEFAULT_PROPS, props);
 
   const symbolsProps = useMemo(
     () => ({
       ...RADIAL_POINT_SERIES_DEFAULT_PROPS,
-      ...symbols?.props
+      ...symbols?.props,
     }),
-    [symbols]
+    [symbols],
   );
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMulti = type === 'grouped';
@@ -179,10 +176,10 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
         data,
         index,
         point,
-        key
+        key,
       });
     },
-    [colorScheme, data]
+    [colorScheme, data],
   );
 
   const renderArea = useCallback(
@@ -231,8 +228,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
       line,
       outerRadius,
       xScale,
-      yScale
-    ]
+      yScale,
+    ],
   );
 
   const renderSymbols = useCallback(
@@ -263,8 +260,8 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
       symbols,
       symbolsProps,
       xScale,
-      yScale
-    ]
+      yScale,
+    ],
   );
 
   const renderSingleSeries = useCallback(
@@ -274,7 +271,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
         {symbols && renderSymbols(points)}
       </Fragment>
     ),
-    [renderArea, renderSymbols, symbols]
+    [renderArea, renderSymbols, symbols],
   );
 
   const renderMultiSeries = useCallback(
@@ -296,7 +293,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
           .reverse()}
       </Fragment>
     ),
-    [renderArea, renderSymbols]
+    [renderArea, renderSymbols],
   );
 
   const renderValueMarkers = useCallback(
@@ -312,7 +309,7 @@ export const RadialAreaSeries: FC<Partial<RadialAreaSeriesProps>> = (props) => {
           ))}
       </>
     ),
-    [valueMarkers, yScale]
+    [valueMarkers, yScale],
   );
 
   return (
@@ -355,5 +352,5 @@ export const RADIAL_AREA_SERIES_DEFAULT_PROPS: Partial<RadialAreaSeriesProps> =
     tooltip: <TooltipArea />,
     startAngle: 0,
     endAngle: 2 * Math.PI,
-    isClosedCurve: true
+    isClosedCurve: true,
   };

@@ -1,18 +1,19 @@
+import bigInt from 'big-integer';
 import { median } from 'd3-array';
-import {
-  ChartInternalNestedDataShape,
-  ChartShallowDataShape,
-  ChartNestedDataShape,
-  ChartInternalShallowDataShape,
-  ChartDataTypes
-} from './types';
+
 import {
   getMaxBigIntegerForNested,
   getMaxBigIntegerForShallow,
   normalizeValue,
-  normalizeValueForFormatting
+  normalizeValueForFormatting,
 } from './bigInteger';
-import bigInt from 'big-integer';
+import type {
+  ChartDataTypes,
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape,
+} from './types';
 
 export type Direction = 'vertical' | 'horizontal';
 
@@ -40,7 +41,7 @@ export type Direction = 'vertical' | 'horizontal';
 export function buildNestedChartData(
   series: ChartNestedDataShape[],
   sort = false,
-  direction: Direction = 'vertical'
+  direction: Direction = 'vertical',
 ): ChartInternalNestedDataShape[] {
   let result: ChartInternalNestedDataShape[] = [];
   const maxBigInteger = getMaxBigIntegerForNested(series);
@@ -61,7 +62,7 @@ export function buildNestedChartData(
         result.push({
           key,
           metadata: point.metadata,
-          data: []
+          data: [],
         });
 
         idx = result.length - 1;
@@ -69,12 +70,12 @@ export function buildNestedChartData(
 
       const x = normalizeValue(
         isVertical ? nestedPoint.key : (nestedPoint.data as any),
-        maxBigInteger
+        maxBigInteger,
       );
 
       const y = normalizeValue(
         isVertical ? nestedPoint.data : (nestedPoint.key as any),
-        maxBigInteger
+        maxBigInteger,
       );
 
       result[idx].data.push({
@@ -87,7 +88,7 @@ export function buildNestedChartData(
         x1: x,
         y,
         y0: isVertical ? 0 : y,
-        y1: y
+        y1: y,
       });
     }
   }
@@ -106,7 +107,7 @@ export function buildNestedChartData(
 
 function addToChartType(
   a: ChartDataTypes,
-  b: number | bigInt.BigInteger
+  b: number | bigInt.BigInteger,
 ): ChartDataTypes {
   if (bigInt.isInstance(a) && bigInt.isInstance(b)) {
     return (a as bigInt.BigInteger).add(b as bigInt.BigInteger);
@@ -125,7 +126,7 @@ function addToChartType(
 export function buildShallowChartData(
   series: ChartShallowDataShape[],
   direction: Direction = 'vertical',
-  binSize: number | undefined = undefined
+  binSize: number | undefined = undefined,
 ): ChartInternalShallowDataShape[] {
   const result: ChartInternalShallowDataShape[] = [];
   const maxBigInteger = getMaxBigIntegerForShallow(series);
@@ -142,7 +143,7 @@ export function buildShallowChartData(
       k0: normalizeValue(point.key, maxBigInteger),
       k1: normalizeValue(k1, maxBigInteger),
       v0: normalizeValue(isTuple ? point.data[0] : 0, maxBigInteger),
-      v1: normalizeValue(isTuple ? point.data[1] : point.data, maxBigInteger)
+      v1: normalizeValue(isTuple ? point.data[1] : point.data, maxBigInteger),
     };
 
     const xProp = isVertical ? 'k' : 'v';
@@ -158,7 +159,7 @@ export function buildShallowChartData(
       x1: props[`${xProp}1`],
       y: props[`${yProp}1`],
       y0: props[`${yProp}0`],
-      y1: props[`${yProp}1`]
+      y1: props[`${yProp}1`],
     });
   }
 

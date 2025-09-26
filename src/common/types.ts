@@ -1,5 +1,6 @@
-import { MouseEvent } from 'react';
-import { ChartInternalDataShape } from './data';
+import type { MouseEvent } from 'react';
+
+import type { ChartInternalDataShape } from './data';
 
 /**
  * branch between showing something and providing a spec,
@@ -9,7 +10,7 @@ export type Visible<T> = { show: true } & T;
 export type Invisible<T> = { show: false } & Partial<T>;
 export type Shown<T> = Visible<T> | Invisible<T>;
 
-export interface ClickEvent { 
+export interface ClickEvent {
   value: ChartInternalDataShape;
   nativeEvent: MouseEvent;
 }

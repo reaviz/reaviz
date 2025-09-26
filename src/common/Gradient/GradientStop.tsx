@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface GradientStopProps {
   offset: number | string;
@@ -9,5 +10,5 @@ export interface GradientStopProps {
 export const GradientStop: FC<Partial<GradientStopProps>> = ({
   color,
   offset,
-  stopOpacity = 1
+  stopOpacity = 1,
 }) => <stop offset={offset} stopOpacity={stopOpacity} stopColor={color} />;

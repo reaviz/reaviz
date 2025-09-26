@@ -1,13 +1,20 @@
-import React, { FC, ReactElement, useCallback } from 'react';
-import {
-  ChartContainer,
-  ChartContainerChildProps,
-  ChartProps
-} from '@/common/containers/ChartContainer';
-import { ChartNestedDataShape, ChartShallowDataShape } from '@/common/data';
 import { hierarchy, partition } from 'd3-hierarchy';
 import { CloneElement, useId } from 'reablocks';
-import { SunburstSeries, SunburstSeriesProps } from './SunburstSeries';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type {
+  ChartContainerChildProps,
+  ChartProps,
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type {
+  ChartNestedDataShape,
+  ChartShallowDataShape,
+} from '@/common/data';
+
+import type { SunburstSeriesProps } from './SunburstSeries';
+import { SunburstSeries } from './SunburstSeries';
 
 export interface SunburstChartProps extends ChartProps {
   /**
@@ -29,7 +36,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
   width,
   height,
   className,
-  margins = 0
+  margins = 0,
 }) => {
   const newId = useId(id);
 
@@ -47,7 +54,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
           // Don't add root node
           nodes.push(node);
         }
-        for (let child of node?.children || []) {
+        for (const child of node?.children || []) {
           getAllNodes(child);
         }
       };
@@ -55,7 +62,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
       getAllNodes(root);
       return nodes;
     },
-    [data]
+    [data],
   );
 
   const renderChart = useCallback(
@@ -72,7 +79,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
         />
       );
     },
-    [getData, newId, series]
+    [getData, newId, series],
   );
 
   return (

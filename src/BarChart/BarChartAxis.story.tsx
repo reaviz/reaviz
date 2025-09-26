@@ -1,29 +1,31 @@
 import React from 'react';
-import { StackedBarChart } from './StackedBarChart';
 import { binnedDateData } from 'reaviz-data-utils';
-import {
-  Bar,
-  StackedBarSeries,
-  RangeLines,
-  BarSeries,
-  StackedNormalizedBarSeries,
-  BarLabel,
-  GuideBar,
-  HistogramBarSeries,
-  MarimekkoBarSeries
-} from './BarSeries';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+
 import {
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearYAxisTickSeries,
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { Gridline, GridlineSeries } from '@/common/Gridline';
 import { getXScale, getYScale } from '@/common/scales';
+
 import { BarChart } from './BarChart';
+import {
+  Bar,
+  BarLabel,
+  BarSeries,
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries,
+} from './BarSeries';
+import { StackedBarChart } from './StackedBarChart';
 
 export default {
   tags: ['snapshot'],
@@ -38,8 +40,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries
-  }
+    HistogramBarSeries,
+  },
 };
 
 export const TopBottomAxis = () => {
@@ -50,16 +52,16 @@ export const TopBottomAxis = () => {
       {
         key: 'Closed',
         data: 0,
-        x: 'Closed'
+        x: 'Closed',
       },
       {
         key: 'Opened',
         data: 0,
-        x: 'Opened'
-      }
+        x: 'Opened',
+      },
     ],
     isMultiSeries: false,
-    isDiverging: true
+    isDiverging: true,
   });
 
   return (
@@ -77,29 +79,35 @@ export const TopBottomAxis = () => {
           colorScheme={['#ACB7C9', '#418AD7']}
           bar={[
             <Bar
+              key="top"
               width={10}
               gradient={
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.25} key="start" />,
-                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                   ]}
                 />
               }
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
             />,
             <Bar
+              key="bottom"
               width={10}
               gradient={
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-                    <GradientStop offset="90%" stopOpacity={0.25} key="start" />
+                    <GradientStop
+                      offset="90%"
+                      stopOpacity={0.25}
+                      key="start"
+                    />,
                   ]}
                 />
               }
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
-            />
+            />,
           ]}
         />
       }
@@ -123,6 +131,7 @@ export const TopBottomAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="horizontal"
           orientation="horizontal"
           type="category"
           scale={scale}
@@ -132,7 +141,7 @@ export const TopBottomAxis = () => {
               label={<LinearYAxisTickLabel padding={20} position="start" />}
             />
           }
-        />
+        />,
       ]}
       yAxis={
         <LinearYAxis
@@ -147,7 +156,7 @@ export const TopBottomAxis = () => {
 };
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis'
+  name: 'Top + Bottom Axis',
 };
 
 export const LeftRightAxis = () => {
@@ -158,16 +167,16 @@ export const LeftRightAxis = () => {
       {
         key: 'Closed',
         data: 0,
-        y: 'Closed'
+        y: 'Closed',
       },
       {
         key: 'Opened',
         data: 0,
-        y: 'Opened'
-      }
+        y: 'Opened',
+      },
     ],
     isMultiSeries: false,
-    isDiverging: true
+    isDiverging: true,
   });
 
   return (
@@ -184,29 +193,35 @@ export const LeftRightAxis = () => {
           colorScheme={['#ACB7C9', '#418AD7']}
           bar={[
             <Bar
+              key="left"
               width={25}
               gradient={
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.25} key="start" />,
-                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                   ]}
                 />
               }
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
             />,
             <Bar
+              key="right"
               width={25}
               gradient={
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-                    <GradientStop offset="90%" stopOpacity={0.25} key="start" />
+                    <GradientStop
+                      offset="90%"
+                      stopOpacity={0.25}
+                      key="start"
+                    />,
                   ]}
                 />
               }
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
-            />
+            />,
           ]}
         />
       }
@@ -238,6 +253,7 @@ export const LeftRightAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           position="start"
           axisLine={null}
@@ -255,12 +271,12 @@ export const LeftRightAxis = () => {
               }
             />
           }
-        />
+        />,
       ]}
     />
   );
 };
 
 LeftRightAxis.story = {
-  name: 'Left + Right Axis'
+  name: 'Left + Right Axis',
 };

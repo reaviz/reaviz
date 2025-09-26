@@ -1,11 +1,15 @@
-import React, { FC, ReactElement, useRef, useState } from 'react';
-import { motion } from 'motion/react';
-import { ChartShallowDataShape } from '../common/data';
-import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
-import { CloneElement } from 'reablocks';
 import classNames from 'classnames';
-import css from './WordCloudLabel.module.css';
+import { motion } from 'motion/react';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useRef, useState } from 'react';
+
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
+
+import type { ChartShallowDataShape } from '../common/data';
+import type { ChartTooltipProps } from '../common/Tooltip';
+import { ChartTooltip } from '../common/Tooltip';
+import css from './WordCloudLabel.module.css';
 
 export interface WordCloudLabelProps {
   /**
@@ -68,7 +72,7 @@ export interface WordCloudLabelProps {
    */
   onMouseEnter?: (
     event: React.PointerEvent,
-    data: ChartShallowDataShape
+    data: ChartShallowDataShape,
   ) => void;
 
   /**
@@ -76,7 +80,7 @@ export interface WordCloudLabelProps {
    */
   onMouseLeave?: (
     event: React.PointerEvent,
-    data: ChartShallowDataShape
+    data: ChartShallowDataShape,
   ) => void;
 }
 
@@ -93,7 +97,7 @@ export const WordCloudLabel: FC<Partial<WordCloudLabelProps>> = ({
   className,
   onMouseEnter,
   onMouseLeave,
-  tooltip = <ChartTooltip />
+  tooltip = <ChartTooltip />,
 }) => {
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);
   const labelRef = useRef<SVGTextElement>(null);
@@ -106,7 +110,7 @@ export const WordCloudLabel: FC<Partial<WordCloudLabelProps>> = ({
     onPointerOut: (event) => {
       setTooltipVisible(false);
       onMouseLeave?.(event, data);
-    }
+    },
   });
 
   return (
@@ -114,7 +118,7 @@ export const WordCloudLabel: FC<Partial<WordCloudLabelProps>> = ({
       <g
         ref={labelRef}
         className={classNames(css.wordLabel, className, {
-          [css.clickable]: !!onClick
+          [css.clickable]: !!onClick,
         })}
         onPointerOut={pointerOut}
         onPointerOver={pointerOver}
@@ -125,30 +129,30 @@ export const WordCloudLabel: FC<Partial<WordCloudLabelProps>> = ({
             fontSize: `${fontSize}px`,
             fontFamily,
             fill,
-            cursor: onClick ? 'pointer' : 'default'
+            cursor: onClick ? 'pointer' : 'default',
           }}
           textAnchor="middle"
           initial={{
             opacity: 0,
             x,
             y,
-            rotate
+            rotate,
           }}
           animate={{
             opacity: 1,
             x,
             y,
-            rotate
+            rotate,
           }}
           exit={{
             opacity: 0,
             x,
             y,
-            rotate
+            rotate,
           }}
           whileHover={{
             opacity: 0.7,
-            transition: { duration: 0.2 }
+            transition: { duration: 0.2 },
           }}
         >
           {text}
@@ -160,7 +164,7 @@ export const WordCloudLabel: FC<Partial<WordCloudLabelProps>> = ({
         reference={labelRef}
         value={{
           x: text,
-          value: data.data
+          value: data.data,
         }}
       />
     </>

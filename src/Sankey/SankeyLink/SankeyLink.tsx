@@ -1,28 +1,24 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useCallback,
-  useState,
-  useMemo,
-  useRef,
-  FC
-} from 'react';
 import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
-import { motion } from 'motion/react';
 import { sankeyLinkHorizontal } from 'd3-sankey';
+import { motion } from 'motion/react';
+import type { TooltipProps } from 'reablocks';
 import { CloneElement } from 'reablocks';
-import { formatValue } from '@/common/utils/formatting';
-import { Tooltip, TooltipProps } from 'reablocks';
-import {
-  NodeExtra,
-  SankeyNodeExtra,
-  SankeyLinkExtra,
-  DEFAULT_COLOR
-} from '@/Sankey/utils';
-import css from './SankeyLink.module.css';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { Tooltip } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
 import { tooltipTheme } from '@/common';
+import { formatValue } from '@/common/utils/formatting';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import type {
+  NodeExtra,
+  SankeyLinkExtra,
+  SankeyNodeExtra,
+} from '@/Sankey/utils';
+import { DEFAULT_COLOR } from '@/Sankey/utils';
+
+import css from './SankeyLink.module.css';
 
 export interface SankeyLinkProps extends SankeyLinkExtra {
   /**
@@ -118,7 +114,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   y1,
   onClick,
   onMouseEnter,
-  onMouseLeave
+  onMouseLeave,
 }) => {
   const linkSource = source as SankeyNodeExtra;
   const linkTarget = target as SankeyNodeExtra;
@@ -172,7 +168,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
     onPointerOut: (event) => {
       setHovered(false);
       onMouseLeave?.(event as any);
-    }
+    },
   });
 
   const ariaLabelData = useMemo(
@@ -180,7 +176,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
       `${(source as NodeExtra).title} → ${
         (target as NodeExtra).title
       }: ${formatValue(value)}`,
-    [source, target, value]
+    [source, target, value],
   );
 
   return (
@@ -205,7 +201,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           animate={enterProps}
           exit={exitProps}
           transition={{
-            duration: animated ? 0.5 : 0
+            duration: animated ? 0.5 : 0,
           }}
           stroke={stroke}
           strokeOpacity={opacity(active, disabled)}

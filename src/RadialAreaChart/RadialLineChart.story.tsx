@@ -1,18 +1,20 @@
 import { categoryData, medDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   RadialAxis,
   RadialAxisArcSeries,
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisTickLine,
-  RadialAxisTickSeries
+  RadialAxisTickSeries,
 } from '@/common/Axis';
+
 import { RadialAreaChart } from './RadialAreaChart';
 import {
   RadialArea,
   RadialAreaSeries,
   RadialLine,
-  RadialPointSeries
+  RadialPointSeries,
 } from './RadialAreaSeries';
 
 export default {
@@ -23,8 +25,8 @@ export default {
     RadialAreaSeries,
     RadialArea,
     RadialLine,
-    RadialPointSeries
-  }
+    RadialPointSeries,
+  },
 };
 
 export const Simple = () => (

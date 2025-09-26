@@ -1,13 +1,14 @@
-import React, { FC, ReactElement, useCallback } from 'react';
-import {
-  ChartContainer,
-  ChartContainerChildProps,
-  ChartProps
-} from '@/common/containers';
 import { layout } from '@upsetjs/venn.js';
-import { VennSeries, VennSeriesProps } from './VennSeries';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+
 import { starEulerLayout } from './starEuler';
+import type { VennSeriesProps } from './VennSeries';
+import { VennSeries } from './VennSeries';
 
 export interface VennDiagramData {
   /**
@@ -53,27 +54,27 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   containerClassName,
   data,
   disabled,
-  series = <VennSeries />
+  series = <VennSeries />,
 }) => {
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
       const normalized = data.map((d) => ({
         key: d.key.join('|'),
         sets: d.key,
-        size: d.data
+        size: d.data,
       }));
 
       let layoutData;
       if (type === 'starEuler') {
         layoutData = starEulerLayout(normalized, {
           height: containerProps.height,
-          width: containerProps.width
+          width: containerProps.width,
         });
       } else {
         layoutData = layout(normalized, {
           height: containerProps.height,
           width: containerProps.width,
-          distinct: type !== 'euler'
+          distinct: type !== 'euler',
         });
       }
 
@@ -86,7 +87,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
         />
       );
     },
-    [data, disabled, series, type]
+    [data, disabled, series, type],
   );
 
   return (

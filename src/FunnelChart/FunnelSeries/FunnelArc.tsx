@@ -1,24 +1,20 @@
-import React, { FC, ReactElement, useMemo } from 'react';
-import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
-import {
-  InterpolationTypes,
-  getAriaLabel,
-  interpolate,
-  mergeDefaultProps
-} from '@/common/utils';
-import { ColorSchemeType, getColor, schemes } from '@/common/color';
-import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
-import { CloneElement } from 'reablocks';
 import { motion } from 'motion/react';
-import {
-  ChartTooltip,
-  TooltipArea,
-  TooltipAreaProps,
-  TooltipTemplate
-} from '@/common/Tooltip';
-import { Glow } from '@/common/Glow';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor, schemes } from '@/common/color';
+import type { ChartShallowDataShape } from '@/common/data';
+import type { Glow } from '@/common/Glow';
 import { generateGlowStyles } from '@/common/Glow/utils';
+import type { GradientProps } from '@/common/Gradient';
+import { Gradient, GradientStop } from '@/common/Gradient';
+import type { TooltipArea, TooltipAreaProps } from '@/common/Tooltip';
+import { ChartTooltip, TooltipTemplate } from '@/common/Tooltip';
+import type { InterpolationTypes } from '@/common/utils';
+import { getAriaLabel, interpolate, mergeDefaultProps } from '@/common/utils';
 
 export interface FunnelArcProps {
   /**
@@ -95,7 +91,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
     colorScheme,
     gradient,
     glow,
-    tooltip
+    tooltip,
   } = mergeDefaultProps(FUNNEL_ARC_DEFAULT_PROPS, props);
 
   // Note: Need to append the last section
@@ -117,7 +113,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
     data,
     domain: [0, 1, 2, 3],
     colorScheme,
-    key: index
+    key: index,
   });
 
   const fillTop = gradient ? `url(#gradient-${id}-top)` : fillColor;
@@ -143,7 +139,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
             const value = {
               x: data.key,
               y: data.data,
-              value: data.data
+              value: data.data,
             };
 
             return <TooltipTemplate value={value} color={color} />;
@@ -162,10 +158,10 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
           fill={fillTop}
           stroke="none"
           initial={{
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
-            opacity
+            opacity,
           }}
         />
         <motion.path
@@ -173,10 +169,10 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
           fill={fillBottom}
           stroke="none"
           initial={{
-            opacity: 0
+            opacity: 0,
           }}
           animate={{
-            opacity
+            opacity,
           }}
         />
         {gradient && (
@@ -204,7 +200,7 @@ export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
       direction="horizontal"
       stops={[
         <GradientStop offset="0%" stopOpacity={1} key="stop" />,
-        <GradientStop offset="80%" stopOpacity={0.5} key="start" />
+        <GradientStop offset="80%" stopOpacity={0.5} key="start" />,
       ]}
     />
   ),
@@ -212,5 +208,5 @@ export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
   colorScheme: schemes.cybertron[0],
   variant: 'default',
   opacity: 1,
-  tooltip: null
+  tooltip: null,
 };

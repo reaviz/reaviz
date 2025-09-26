@@ -1,14 +1,17 @@
-import React, { FC } from 'react';
-import { LineChart, LineChartProps } from '@/LineChart';
-import { ChartShallowDataShape } from '@/common/data';
+import type { FC } from 'react';
+import React from 'react';
+
 import { AreaSeries, Line } from '@/AreaChart';
 import { PointSeries } from '@/AreaChart';
 import {
   LinearXAxis,
+  LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickSeries
 } from '@/common/Axis/LinearAxis';
+import type { ChartShallowDataShape } from '@/common/data';
+import type { LineChartProps } from '@/LineChart';
+import { LineChart } from '@/LineChart';
 
 export interface SparklineChartProps extends LineChartProps {
   data: ChartShallowDataShape[];

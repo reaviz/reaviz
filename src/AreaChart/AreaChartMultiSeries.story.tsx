@@ -1,21 +1,22 @@
-import { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
+import { Fragment, useState } from 'react';
 import {
+  longMultiDateData,
   multiDateData,
   randomNumber,
-  longMultiDateData
 } from 'reaviz-data-utils';
+
 import { AreaChart } from './AreaChart';
-import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
-import { StackedAreaChart } from './StackedAreaChart';
 import {
   Area,
   AreaSeries,
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries
+  StackedNormalizedAreaSeries,
 } from './AreaSeries';
+import { StackedAreaChart } from './StackedAreaChart';
+import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
 
 export default {
   tags: ['snapshot'],
@@ -27,8 +28,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries
-  }
+    StackedNormalizedAreaSeries,
+  },
 };
 
 export const Simple = () => (

@@ -1,38 +1,29 @@
-import React, {
-  Fragment,
-  ReactElement,
-  FC,
-  useCallback,
-  useState,
-  useMemo
-} from 'react';
-import {
-  POINT_SERIES_DEFAULT_PROPS,
-  PointSeries,
-  PointSeriesProps
-} from './PointSeries';
-import { Area, AreaProps } from './Area';
-import { MarkLine, MarkLineProps } from '@/common/MarkLine';
-import {
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
+import { identifier } from 'safe-identifier';
+
+import type { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape
+  ChartInternalShallowDataShape,
 } from '@/common/data';
-import { CloneElement } from 'reablocks';
-import {
-  TooltipArea,
-  TooltipAreaProps,
-  TooltipAreaEvent
-} from '@/common/Tooltip';
-import { Line, LineProps } from './Line';
-import { InterpolationTypes } from '@/common/utils/interpolation';
-import { getColor, ColorSchemeType } from '@/common/color';
-import { identifier } from 'safe-identifier';
-import {
-  LinearValueMarker,
-  LinearValueMarkerProps,
-  mergeDefaultProps
-} from '@/common';
+import type { MarkLineProps } from '@/common/MarkLine';
+import { MarkLine } from '@/common/MarkLine';
+import type { TooltipAreaEvent, TooltipAreaProps } from '@/common/Tooltip';
+import { TooltipArea } from '@/common/Tooltip';
+import type { InterpolationTypes } from '@/common/utils/interpolation';
+
+import type { AreaProps } from './Area';
+import { Area } from './Area';
+import type { LineProps } from './Line';
+import { Line } from './Line';
+import type { PointSeriesProps } from './PointSeries';
+import { POINT_SERIES_DEFAULT_PROPS, PointSeries } from './PointSeries';
 
 export type AreaChartTypes =
   | 'standard'
@@ -152,15 +143,15 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
     interpolation,
     line,
     colorScheme,
-    valueMarkers
+    valueMarkers,
   } = mergeDefaultProps(AREA_SERIES_DEFAULT_PROPS, props);
 
   const symbolsProps = useMemo(
     () => ({
       ...POINT_SERIES_DEFAULT_PROPS,
-      ...(symbols?.props ?? {})
+      ...(symbols?.props ?? {}),
     }),
-    [symbols]
+    [symbols],
   );
 
   const [activeValues, setActiveValues] = useState<any | null>(null);
@@ -189,10 +180,10 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
         active: activeValues,
         point,
         index,
-        key
+        key,
       });
     },
-    [activeValues, colorScheme, data]
+    [activeValues, colorScheme, data],
   );
 
   const renderArea = useCallback(
@@ -237,8 +228,8 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
       line,
       width,
       xScale,
-      yScale
-    ]
+      yScale,
+    ],
   );
 
   const renderSymbols = useCallback(
@@ -281,8 +272,8 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
       symbols,
       width,
       xScale,
-      yScale
-    ]
+      yScale,
+    ],
   );
 
   const renderMarkLine = useCallback(
@@ -297,7 +288,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
         )}
       </>
     ),
-    [activePoint, activeValues, height, markLine]
+    [activePoint, activeValues, height, markLine],
   );
 
   const renderSingleSeries = useCallback(
@@ -308,7 +299,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
         {renderSymbols(data)}
       </Fragment>
     ),
-    [renderArea, renderMarkLine, renderSymbols]
+    [renderArea, renderMarkLine, renderSymbols],
   );
 
   const renderMultiSeries = useCallback(
@@ -331,7 +322,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
           .reverse()}
       </Fragment>
     ),
-    [renderArea, renderMarkLine, renderSymbols]
+    [renderArea, renderMarkLine, renderSymbols],
   );
 
   const renderValueMarkers = useCallback(
@@ -355,7 +346,7 @@ export const AreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
           })}
       </>
     ),
-    [valueMarkers, width, yScale, xScale, height]
+    [valueMarkers, width, yScale, xScale, height],
   );
 
   return (
@@ -401,5 +392,5 @@ export const AREA_SERIES_DEFAULT_PROPS: Partial<AreaSeriesProps> = {
   area: <Area />,
   markLine: <MarkLine />,
   tooltip: <TooltipArea />,
-  symbols: <PointSeries />
+  symbols: <PointSeries />,
 };

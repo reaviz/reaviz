@@ -1,22 +1,18 @@
-import React, {
-  ReactNode,
-  useRef,
-  Fragment,
-  ReactElement,
-  FC,
-  useState,
-  useMemo
-} from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
-import { radialLine } from 'd3-shape';
 import classNames from 'classnames';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { CloneElement } from 'reablocks';
+import { radialLine } from 'd3-shape';
 import { motion } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { schemes } from '@/common/color';
-import css from './RadialScatterPoint.module.css';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement, ReactNode } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel, mergeDefaultProps } from '@/common';
+import { schemes } from '@/common/color';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+
+import css from './RadialScatterPoint.module.css';
 
 export interface RadialScatterPointProps {
   /**
@@ -106,7 +102,7 @@ export interface RadialScatterPointProps {
 }
 
 export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
-  props
+  props,
 ) => {
   const {
     size,
@@ -131,7 +127,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     setHovered(true);
     rest.onMouseEnter({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -139,14 +135,14 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     setHovered(false);
     rest.onMouseLeave({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
   function onClick(event: React.MouseEvent) {
     rest.onClick({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   }
 
@@ -164,7 +160,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
 
       return {
         translateX: parseFloat(translateX),
-        translateY: parseFloat(translateY)
+        translateY: parseFloat(translateY),
       };
     }
   }
@@ -173,12 +169,12 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: index * 0.005
+        delay: index * 0.005,
       };
     } else {
       return {
         type: false as const,
-        delay: 0
+        delay: 0,
       };
     }
   }
@@ -208,7 +204,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
         onClick={onClick}
         className={classNames(className, {
           [css.inactive]: !active,
-          [css.hidden]: !isVisible
+          [css.hidden]: !isVisible,
         })}
         tabIndex={0}
         aria-label={ariaLabelData}
@@ -236,5 +232,5 @@ export const RADIAL_SCATTER_POINT_DEFAULT_PROPS = {
   active: true,
   onClick: () => undefined,
   onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined
+  onMouseLeave: () => undefined,
 };

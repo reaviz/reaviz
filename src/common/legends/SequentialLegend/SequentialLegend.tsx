@@ -1,9 +1,11 @@
-import React, { FC, useMemo } from 'react';
-import classNames from 'classnames';
-import { ChartDataShape } from '@/common/data';
 import chroma from 'chroma-js';
-import { uniqueBy } from '@/common/utils/array';
+import classNames from 'classnames';
 import { extent } from 'd3-array';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartDataShape } from '@/common/data';
+import { uniqueBy } from '@/common/utils/array';
 import { formatValue } from '@/common/utils/formatting';
 
 import css from './SequentialLegend.module.css';
@@ -46,7 +48,7 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
   style,
   data,
   colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'],
-  orientation = 'vertical'
+  orientation = 'vertical',
 }) => {
   // Generate the color gradient
   const color = chroma
@@ -63,10 +65,10 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
         uniqueBy(
           data,
           (d) => d.data,
-          (d) => d.data
-        )
+          (d) => d.data,
+        ),
       ),
-    [data]
+    [data],
   );
 
   // Get direction
@@ -77,14 +79,14 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
       style={style}
       className={classNames(css.container, className, {
         [css.vertical]: orientation === 'vertical',
-        [css.horizontal]: orientation === 'horizontal'
+        [css.horizontal]: orientation === 'horizontal',
       })}
     >
       <div className={css.start}>{formatValue(start)}</div>
       <div
         className={classNames(css.gradient, gradientClassName)}
         style={{
-          background: `linear-gradient(${gradientDir}${color})`
+          background: `linear-gradient(${gradientDir}${color})`,
         }}
       />
       <div className={css.end}>{formatValue(end)}</div>

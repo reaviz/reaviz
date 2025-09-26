@@ -4,7 +4,7 @@ import { BarListSeries } from './BarListSeries';
 export default {
   tags: ['snapshot'],
   title: 'Charts/Bar List',
-  component: BarList
+  component: BarList,
 };
 
 export const Simple = () => (
@@ -14,7 +14,7 @@ export const Simple = () => (
       { key: 'Vulnerability Patch', data: 50 },
       { key: 'Critical Failure', data: 25 },
       { key: 'Physical Intrusion', data: 5 },
-      { key: 'Phishing Attempts', data: 100 }
+      { key: 'Phishing Attempts', data: 100 },
     ]}
   />
 );
@@ -42,7 +42,7 @@ export const Styling = () => (
         { key: 'Vulnerability Patch', data: 50 },
         { key: 'Critical Failure', data: 25 },
         { key: 'Physical Intrusion', data: 5 },
-        { key: 'Phishing Attempts', data: 100 }
+        { key: 'Phishing Attempts', data: 100 },
       ]}
       series={
         <BarListSeries
@@ -65,7 +65,7 @@ export const Events = () => (
         { key: 'Vulnerability Patch', data: 50 },
         { key: 'Critical Failure', data: 25 },
         { key: 'Physical Intrusion', data: 5 },
-        { key: 'Phishing Attempts', data: 100 }
+        { key: 'Phishing Attempts', data: 100 },
       ]}
       series={
         <BarListSeries
@@ -101,7 +101,7 @@ export const PercentageFormat = () => (
         { key: 'Vulnerability Patch', data: 50 },
         { key: 'Critical Failure', data: 25 },
         { key: 'Physical Intrusion', data: 5 },
-        { key: 'Phishing Attempts', data: 85 }
+        { key: 'Phishing Attempts', data: 85 },
       ]}
       series={
         <BarListSeries
@@ -141,7 +141,7 @@ export const Empty = () => (
         { key: 'Vulnerability Patch', data: 0 },
         { key: 'Critical Failure', data: 0 },
         { key: 'Physical Intrusion', data: 0 },
-        { key: 'Phishing Attempts', data: 0 }
+        { key: 'Phishing Attempts', data: 0 },
       ]}
       series={
         <BarListSeries

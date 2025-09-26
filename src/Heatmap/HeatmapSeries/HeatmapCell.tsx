@@ -1,28 +1,21 @@
-import React, {
-  FC,
-  Fragment,
-  MouseEvent,
-  ReactElement,
-  useMemo,
-  useState,
-  useRef,
-  ReactNode
-} from 'react';
 import { offset } from '@floating-ui/dom';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { CloneElement } from 'reablocks';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
 import chroma from 'chroma-js';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { ChartInternalShallowDataShape } from '@/common/data';
-import css from './HeatmapCell.module.css';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { CloneElement } from 'reablocks';
+import type { FC, MouseEvent, ReactElement, ReactNode } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel } from '@/common';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+
+import css from './HeatmapCell.module.css';
 
 export type HeatmapCellProps = {
   /**
@@ -148,22 +141,22 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       setActive(true);
       onMouseEnter({
         value: data,
-        nativeEvent: event
+        nativeEvent: event,
       });
     },
     onPointerOut: (event) => {
       setActive(false);
       onMouseLeave({
         value: data,
-        nativeEvent: event
+        nativeEvent: event,
       });
-    }
+    },
   });
 
   const onMouseClick = (event: MouseEvent) => {
     onClick({
       value: data,
-      nativeEvent: event
+      nativeEvent: event,
     });
   };
 
@@ -171,21 +164,21 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
     () => ({
       y: data.value,
       x: `${data.key} ∙ ${data.x}`,
-      data
+      data,
     }),
-    [data]
+    [data],
   );
 
   const transition = useMemo(() => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: (cellIndex / cellCount) * 0.005
+        delay: (cellIndex / cellCount) * 0.005,
       };
     } else {
       return {
         type: false as const,
-        delay: 0
+        delay: 0,
       };
     }
   }, [animated, cellIndex, cellCount]);
@@ -199,12 +192,12 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
 
   const ariaLabelData = useMemo(
     () => getAriaLabel({ ...tooltipData, data: null }),
-    [tooltipData]
+    [tooltipData],
   );
 
   const renderedSymbol = useMemo(
     () => (symbol ? symbol(data!) : null),
-    [data, symbol]
+    [data, symbol],
   );
 
   return (
@@ -219,13 +212,13 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             className={extras?.className}
             transform={`translate(${x}, ${y})`}
             initial={{
-              opacity: 0
+              opacity: 0,
             }}
             animate={{
-              opacity: 1
+              opacity: 1,
             }}
             exit={{
-              opacity: 0
+              opacity: 0,
             }}
             transition={transition}
             onPointerOver={pointerOver}
@@ -249,13 +242,13 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             style={{ ...extras.style, cursor }}
             className={classNames(css.cell, extras.className)}
             initial={{
-              opacity: 0
+              opacity: 0,
             }}
             animate={{
-              opacity: 1
+              opacity: 1,
             }}
             exit={{
-              opacity: 0
+              opacity: 0,
             }}
             transition={transition}
             onPointerOver={pointerOver}

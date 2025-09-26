@@ -1,33 +1,29 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useCallback,
-  FC,
-  useRef,
-  useMemo,
-  useState
-} from 'react';
 import chroma from 'chroma-js';
-import { Gradient, GradientProps } from '@/common/Gradient';
 import classNames from 'classnames';
-import { ChartInternalShallowDataShape, Direction } from '@/common/data';
-import { RangeLinesProps, RangeLines } from './RangeLines';
-import { CloneElement } from 'reablocks';
-import { Mask, MaskProps } from '@/common/Mask';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
 import { motion } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { BarLabelProps, BarLabel, BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
-import { formatValue, getAriaLabel } from '@/common/utils/formatting';
-import { GuideBarProps, GuideBar } from './GuideBar';
-import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
-import { Glow } from '@/common/Glow';
-import { ClickEvent } from '@/common/types';
-import { generateGlowStyles } from '@/common/Glow/utils';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
 import { mergeDefaultProps } from '@/common';
+import type { ChartInternalShallowDataShape, Direction } from '@/common/data';
+import type { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import type { GradientProps } from '@/common/Gradient';
+import { Gradient } from '@/common/Gradient';
+import type { MaskProps } from '@/common/Mask';
+import { Mask } from '@/common/Mask';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import type { ClickEvent } from '@/common/types';
+import { formatValue, getAriaLabel } from '@/common/utils/formatting';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+
+import type { BarLabel, BarLabelProps } from './BarLabel';
+import { BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
+import type { GuideBar, GuideBarProps } from './GuideBar';
+import type { RangeLines, RangeLinesProps } from './RangeLines';
 
 export type BarType =
   | 'standard'
@@ -243,11 +239,11 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     onMouseEnter,
     onClick,
     onMouseMove,
-    onMouseLeave
+    onMouseLeave,
   } = mergeDefaultProps(BAR_DEFAULT_PROPS, props);
   const labelProps = useMemo(
     () => ({ ...BAR_LABEL_DEFAULT_PROPS, ...label?.props }),
-    [label?.props]
+    [label?.props],
   );
 
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
@@ -265,7 +261,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
       return { size, offset };
     },
-    [barCount, groupIndex, padding]
+    [barCount, groupIndex, padding],
   );
 
   const getExit = useCallback(
@@ -287,10 +283,10 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         x: newX,
         y: newY,
         height: newHeight,
-        width: newWidth
+        width: newWidth,
       };
     },
-    [isVertical, type, xScale, yScale]
+    [isVertical, type, xScale, yScale],
   );
 
   const getKeyCoords = useCallback(
@@ -301,7 +297,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       scale,
       sizeOverride: number,
       isCategorical: boolean,
-      padding: number
+      padding: number,
     ) => {
       let offset;
       let size;
@@ -349,10 +345,10 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
       return {
         offset: isNaN(offset) ? 0 : offset,
-        size: isNaN(size) ? 0 : size
+        size: isNaN(size) ? 0 : size,
       };
     },
-    [calculateLinearScalePadding]
+    [calculateLinearScalePadding],
   );
 
   const getValueCoords = useCallback(
@@ -365,10 +361,10 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
       return {
         offset: isNaN(offset) ? 0 : offset,
-        size: isNaN(minSize) ? 0 : minSize
+        size: isNaN(minSize) ? 0 : minSize,
       };
     },
-    [minHeight]
+    [minHeight],
   );
 
   const getCoords = useCallback(
@@ -392,7 +388,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
           newXScale,
           width,
           isCategorical,
-          padding
+          padding,
         );
         const yCoords = getValueCoords(data.y0, data.y1, newYScale);
 
@@ -400,7 +396,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
           x: xCoords.offset,
           width: xCoords.size,
           y: yCoords.offset,
-          height: yCoords.size
+          height: yCoords.size,
         } as BarCoordinates;
       } else {
         const yCoords = getKeyCoords(
@@ -410,7 +406,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
           newYScale,
           width,
           isCategorical,
-          padding
+          padding,
         );
         const xCoords = getValueCoords(data.x0, data.x1, newXScale);
 
@@ -418,7 +414,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
           x: xCoords.offset,
           width: xCoords.size,
           y: yCoords.offset,
-          height: yCoords.size
+          height: yCoords.size,
         } as BarCoordinates;
       }
     },
@@ -431,8 +427,8 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       width,
       xScale,
       xScale1,
-      yScale
-    ]
+      yScale,
+    ],
   );
 
   const onMouseEnterInternal = useCallback(
@@ -444,10 +440,10 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
       onMouseEnter?.({
         value: data,
-        nativeEvent: event
+        nativeEvent: event,
       });
     },
-    [data, onMouseEnter, tooltip]
+    [data, onMouseEnter, tooltip],
   );
 
   const onMouseLeaveInternal = useCallback(
@@ -459,20 +455,20 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
       onMouseLeave?.({
         value: data,
-        nativeEvent: event
+        nativeEvent: event,
       });
     },
-    [data, onMouseLeave, tooltip]
+    [data, onMouseLeave, tooltip],
   );
 
   const onMouseClick = useCallback(
     (event) => {
       onClick?.({
         value: data,
-        nativeEvent: event
+        nativeEvent: event,
       });
     },
-    [data, onClick]
+    [data, onClick],
   );
 
   const getFill = useCallback(
@@ -487,7 +483,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         return color;
       }
     },
-    [gradient, id, mask]
+    [gradient, id, mask],
   );
 
   const tooltipData = useMemo(() => {
@@ -510,7 +506,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
     return {
       y: data.y,
-      x
+      x,
     };
   }, [data, isCategorical, isVertical]);
 
@@ -528,16 +524,16 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
 
         return {
           ...DEFAULT_TRANSITION,
-          delay: delay
+          delay: delay,
         };
       } else {
         return {
           type: false as const,
-          delay: 0
+          delay: 0,
         };
       }
     },
-    [animated, barCount, layout]
+    [animated, barCount, layout],
   );
 
   const renderBar = useCallback(
@@ -553,7 +549,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         ...initialExit,
         attrX: initialExit.x,
         attrY: initialExit.y,
-        fill
+        fill,
       };
 
       delete initial.x;
@@ -563,7 +559,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         ...coords,
         attrX: coords.x,
         attrY: coords.y,
-        fill
+        fill,
       };
 
       delete animate.x;
@@ -587,9 +583,9 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
               ...extras.style,
               ...generateGlowStyles({
                 glow,
-                colorSchemeColor: currentColorShade
+                colorSchemeColor: currentColorShade,
               }),
-              cursor
+              cursor,
             }}
             {...extra}
             mask={maskPath}
@@ -627,8 +623,8 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       rx,
       ry,
       style,
-      ariaLabelData
-    ]
+      ariaLabelData,
+    ],
   );
 
   const renderGuideBar = useCallback(() => {
@@ -662,7 +658,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     const coords = getCoords({
       ...data,
       [attr]: endPoint,
-      [`${attr}${attrStart}`]: startPoint
+      [`${attr}${attrStart}`]: startPoint,
     });
 
     return (
@@ -681,7 +677,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     isVertical,
     type,
     xScale,
-    yScale
+    yScale,
   ]);
 
   const isActive = tooltip ? internalActive : active;
@@ -775,5 +771,5 @@ export const BAR_DEFAULT_PROPS = {
   tooltip: null,
   layout: 'vertical' as const,
   guide: null,
-  gradient: <Gradient />
+  gradient: <Gradient />,
 };

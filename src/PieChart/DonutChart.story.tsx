@@ -1,8 +1,10 @@
-import React, { useState, Fragment } from 'react';
-import { PieChart } from './PieChart';
+import React, { Fragment, useState } from 'react';
 import { categoryData, randomNumber } from 'reaviz-data-utils';
-import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
+
 import { Gradient } from '@/common/Gradient';
+
+import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
+import { PieChart } from './PieChart';
 
 export default {
   tags: ['snapshot'],
@@ -11,8 +13,8 @@ export default {
   subcomponents: {
     PieArc,
     PieArcLabel,
-    PieArcSeries
-  }
+    PieArcSeries,
+  },
 };
 
 export const Simple = () => (
@@ -60,7 +62,7 @@ export const RoundedAndSpaced = () => (
 );
 
 RoundedAndSpaced.story = {
-  name: 'Rounded and spaced'
+  name: 'Rounded and spaced',
 };
 
 export const Labels = () => (
@@ -81,7 +83,7 @@ export const InnerLabel = () => (
       width: '350px',
       alignItems: 'center',
       display: 'flex',
-      justifyContent: 'center'
+      justifyContent: 'center',
     }}
   >
     <div style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -113,7 +115,7 @@ const LiveUpdatingStory = () => {
       const updateIndex = randomNumber(0, data.length - 1);
       newData[updateIndex] = {
         ...newData[updateIndex],
-        data: randomNumber(10, 100)
+        data: randomNumber(10, 100),
       };
 
       idx++;
@@ -137,7 +139,7 @@ const ArcLabel = React.memo(function ArcLabel({
   data,
   icon,
   textAnchor,
-  showText
+  showText,
 }: {
   title: string;
   description: string;
@@ -155,7 +157,7 @@ const ArcLabel = React.memo(function ArcLabel({
         width: '24px',
         height: '24px',
         fill: '#fff',
-        flexShrink: 0
+        flexShrink: 0,
       }}
     >
       {icon}
@@ -165,7 +167,7 @@ const ArcLabel = React.memo(function ArcLabel({
   const ellipsis: React.CSSProperties = {
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
-    overflow: 'hidden'
+    overflow: 'hidden',
   };
 
   return (
@@ -177,7 +179,7 @@ const ArcLabel = React.memo(function ArcLabel({
         justifyContent: `flex-${textAnchor}`,
         lineHeight: 1,
         height: '24px',
-        textAlign: textAnchor === 'start' ? 'left' : 'right'
+        textAlign: textAnchor === 'start' ? 'left' : 'right',
       }}
     >
       {textAnchor === 'start' && iconContainer}

@@ -1,17 +1,18 @@
-import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
 import {
   categoryData,
   largeSignalChartData,
-  singleDateData
+  singleDateData,
 } from 'reaviz-data-utils';
+
+import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
 import { Bar, BarChart, BarSeries } from '@/BarChart';
 import { Bubble, BubbleChart, BubbleSeries } from '@/BubbleChart';
-import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
+import type { ChartShallowDataShape } from '@/common/data';
 import { LineChart, LineSeries } from '@/LineChart';
-import { ChartShallowDataShape } from '@/common/data';
+import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
 
 export default {
-  title: 'Utils/Glow'
+  title: 'Utils/Glow',
 };
 
 export const ScatterGlow = () => (
@@ -52,7 +53,7 @@ const bubbleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },
   { key: 'SendGrid', data: 45 },
   { key: 'Okta', data: 75 },
-  { key: 'Twillo', data: 25 }
+  { key: 'Twillo', data: 25 },
 ];
 
 export const BubbleGlow = () => (

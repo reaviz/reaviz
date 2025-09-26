@@ -1,29 +1,31 @@
-import { BarChart } from './BarChart';
-import { MarimekkoChart } from './MarimekkoChart';
-import { StackedBarChart } from './StackedBarChart';
-import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
-import { multiCategory, binnedDateData } from 'reaviz-data-utils';
 import chroma from 'chroma-js';
-import {
-  BarSeries,
-  Bar,
-  StackedBarSeries,
-  StackedNormalizedBarSeries,
-  MarimekkoBarSeries,
-  RangeLines,
-  GuideBar,
-  BarLabel,
-  HistogramBarSeries
-} from './BarSeries';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+import { binnedDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
+  LinearYAxisTickLabel,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
+import { BarChart } from './BarChart';
+import {
+  Bar,
+  BarLabel,
+  BarSeries,
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries,
+} from './BarSeries';
+import { MarimekkoChart } from './MarimekkoChart';
+import { StackedBarChart } from './StackedBarChart';
+import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
 
 export default {
   tags: ['snapshot'],
@@ -38,8 +40,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries
-  }
+    HistogramBarSeries,
+  },
 };
 
 export const Simple = () => (
@@ -79,7 +81,7 @@ export const Stacked = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                 ]}
               />
             }
@@ -105,9 +107,10 @@ export const StackedCustomStyle = () => (
           { start: '#d7b5d8', end: '#980043' },
           { start: '#fbb4b9', end: '#7a0177' },
           { start: '#c2e699', end: '#006837' },
-          { start: '#a1dab4', end: '#253494' }
-        ].map((gradient) => (
+          { start: '#a1dab4', end: '#253494' },
+        ].map((gradient, index) => (
           <Bar
+            key={index}
             gradient={
               <Gradient
                 stops={[
@@ -116,7 +119,11 @@ export const StackedCustomStyle = () => (
                     key="start"
                     color={gradient.start}
                   />,
-                  <GradientStop offset="100%" key="stop" color={gradient.end} />
+                  <GradientStop
+                    offset="100%"
+                    key="stop"
+                    color={gradient.end}
+                  />,
                 ]}
               />
             }
@@ -145,6 +152,7 @@ export const StackedDiverging = () => (
       <StackedBarSeries
         bar={[
           <Bar
+            key="top"
             rx={0}
             ry={0}
             guide={<GuideBar />}
@@ -152,13 +160,14 @@ export const StackedDiverging = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-                  <GradientStop offset="90%" stopOpacity={0.1} key="start" />
+                  <GradientStop offset="90%" stopOpacity={0.1} key="start" />,
                 ]}
               />
             }
             rangeLines={<RangeLines position="top" strokeWidth={3} />}
           />,
           <Bar
+            key="bottom"
             rx={0}
             ry={0}
             guide={<GuideBar />}
@@ -166,12 +175,12 @@ export const StackedDiverging = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                 ]}
               />
             }
             rangeLines={<RangeLines position="top" strokeWidth={3} />}
-          />
+          />,
         ]}
         type="stackedDiverging"
         colorScheme={chroma
@@ -216,7 +225,7 @@ export const StackedNormalized = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                 ]}
               />
             }
@@ -246,7 +255,7 @@ export const Marimekko = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                 ]}
               />
             }

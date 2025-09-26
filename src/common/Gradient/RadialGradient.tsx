@@ -1,6 +1,9 @@
-import React, { FC, ReactElement } from 'react';
-import { GradientStop, GradientStopProps } from './GradientStop';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React from 'react';
+
+import type { GradientStopProps } from './GradientStop';
+import { GradientStop } from './GradientStop';
 
 export interface RadialGradientProps {
   id: string;
@@ -15,8 +18,8 @@ export const RadialGradient: FC<Partial<RadialGradientProps>> = ({
   radius = '30%',
   stops = [
     <GradientStop offset="0%" stopOpacity={0.2} key="start" />,
-    <GradientStop offset="80%" stopOpacity={0.7} key="stop" />
-  ]
+    <GradientStop offset="80%" stopOpacity={0.7} key="stop" />,
+  ],
 }) => (
   <radialGradient
     id={id}

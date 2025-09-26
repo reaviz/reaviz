@@ -1,52 +1,52 @@
+import classNames from 'classnames';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
 import React, {
   Fragment,
-  useEffect,
-  ReactElement,
-  FC,
   useCallback,
+  useEffect,
   useMemo,
+  useRef,
   useState,
-  useRef
 } from 'react';
-import classNames from 'classnames';
-import {
-  AREA_SERIES_DEFAULT_PROPS,
-  AreaSeries,
-  AreaSeriesProps
-} from './AreaSeries';
+
+import { mergeDefaultProps } from '@/common';
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis/LinearAxis';
 import {
   isAxisVisible,
-  LinearAxisProps,
+  LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
   LinearXAxis,
   LinearYAxis,
-  LinearAxis,
-  LINEAR_Y_AXIS_DEFAULT_PROPS,
-  LINEAR_X_AXIS_DEFAULT_PROPS
 } from '@/common/Axis/LinearAxis';
-import { getXScale, getYScale } from '@/common/scales';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
-import {
+import type { ChartBrush, ChartBrushProps } from '@/common/Brush';
+import type {
+  ChartContainerChildProps,
+  ChartProps,
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type {
   ChartDataShape,
   ChartNestedDataShape,
-  buildStackData,
-  buildShallowChartData,
   ChartShallowDataShape,
-  buildNestedChartData
 } from '@/common/data';
-import css from './AreaChart.module.css';
-import { ChartBrushProps, ChartBrush } from '@/common/Brush';
 import {
-  ZoomPanChangeEvent,
+  buildNestedChartData,
+  buildShallowChartData,
+  buildStackData,
+} from '@/common/data';
+import type { GridlineSeriesProps } from '@/common/Gridline';
+import { GridlineSeries } from '@/common/Gridline';
+import { getXScale, getYScale } from '@/common/scales';
+import type {
+  ChartZoomPan,
   ChartZoomPanProps,
-  ChartZoomPan
+  ZoomPanChangeEvent,
 } from '@/common/ZoomPan';
-import {
-  ChartContainerChildProps,
-  ChartContainer,
-  ChartProps
-} from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
-import { mergeDefaultProps } from '@/common';
+
+import css from './AreaChart.module.css';
+import type { AreaSeriesProps } from './AreaSeries';
+import { AREA_SERIES_DEFAULT_PROPS, AreaSeries } from './AreaSeries';
 
 export interface AreaChartProps extends ChartProps {
   /**
@@ -105,7 +105,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
     gridlines,
     brush,
     zoomPan,
-    secondaryAxis
+    secondaryAxis,
   } = mergeDefaultProps(AREA_CHART_DEFAULT_PROPS, props);
 
   const zoom: any = zoomPan ? zoomPan.props : {};
@@ -116,15 +116,15 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
   const [zoomControlled] = useState<boolean>(!zoom.hasOwnProperty('domain'));
   const xAxisProps = useMemo(
     () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
-    [xAxis.props]
+    [xAxis.props],
   );
   const yAxisProps = useMemo(
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
-    [yAxis.props]
+    [yAxis.props],
   );
   const seriesProps = useMemo(
     () => ({ ...AREA_SERIES_DEFAULT_PROPS, ...series.props }),
-    [series.props]
+    [series.props],
   );
 
   const timeoutRef = useRef<any | null>(null);
@@ -151,7 +151,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
     if (seriesType === 'stacked' || seriesType === 'stackedNormalized') {
       return buildStackData(
         data as ChartNestedDataShape[],
-        seriesType === 'stackedNormalized'
+        seriesType === 'stackedNormalized',
       );
     } else if (seriesType === 'grouped') {
       return buildNestedChartData(data as ChartNestedDataShape[], true);
@@ -168,7 +168,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
         roundDomains: xAxisProps.roundDomains,
         data: aggregatedData,
         domain: zoomDomain || xAxisProps.domain,
-        isMultiSeries
+        isMultiSeries,
       });
 
       const yScale = getYScale({
@@ -177,7 +177,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
         height: chartHeight,
         data: aggregatedData,
         domain: yAxisProps.domain,
-        isMultiSeries
+        isMultiSeries,
       });
 
       return { xScale, yScale };
@@ -191,8 +191,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
       yAxisProps.domain,
       yAxisProps.roundDomains,
       yAxisProps.type,
-      zoomDomain
-    ]
+      zoomDomain,
+    ],
   );
 
   const onZoomPan = useCallback(
@@ -206,7 +206,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
         timeoutRef.current = setTimeout(() => setPreventAnimation(false));
       }
     },
-    [zoomControlled]
+    [zoomControlled],
   );
 
   const renderChart = useCallback(
@@ -215,7 +215,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
       chartWidth,
       id,
       updateAxes,
-      chartSized
+      chartSized,
     }: ChartContainerChildProps) => {
       const { xScale, yScale } = getScales(chartWidth, chartHeight);
       const disableBrush = aggregatedData.length <= 1;
@@ -310,8 +310,8 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
       xAxisProps,
       yAxisProps,
       zoomDomain,
-      zoomPan
-    ]
+      zoomPan,
+    ],
   );
 
   return (
@@ -326,7 +326,7 @@ export const AreaChart: FC<Partial<AreaChartProps>> = (props) => {
       className={classNames(
         css.areaChart,
         className,
-        series.type as unknown as string
+        series.type as unknown as string,
       )}
     >
       {renderChart}
@@ -341,5 +341,5 @@ export const AREA_CHART_DEFAULT_PROPS = {
   series: <AreaSeries />,
   gridlines: <GridlineSeries />,
   brush: null,
-  zoomPan: null
+  zoomPan: null,
 };

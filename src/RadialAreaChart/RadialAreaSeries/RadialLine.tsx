@@ -1,14 +1,16 @@
-import React, { useCallback, useMemo, FC } from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import {
-  radialLine,
-  curveCardinalClosed,
-  curveLinearClosed,
   curveCardinal,
-  curveLinear
+  curveCardinalClosed,
+  curveLinear,
+  curveLinearClosed,
+  radialLine,
 } from 'd3-shape';
-import { RadialInterpolationTypes } from '@/common/utils/interpolation';
-import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
+import type { FC } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
+import type { RadialInterpolationTypes } from '@/common/utils/interpolation';
 
 export interface RadialLineProps {
   /**
@@ -78,7 +80,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   interpolation,
   strokeWidth = 2,
   animated = true,
-  isClosedCurve = true
+  isClosedCurve = true,
 }) => {
   const fill = color(data, index);
 
@@ -100,36 +102,36 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
 
       return radialFn(preData as any);
     },
-    [interpolation, isClosedCurve, xScale, yScale]
+    [interpolation, isClosedCurve, xScale, yScale],
   );
 
   const transition = useMemo(
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: hasArea ? 0 : index * 0.05
-        }
+            ...DEFAULT_TRANSITION,
+            delay: hasArea ? 0 : index * 0.05,
+          }
         : {
-          type: false as const,
-          delay: 0
-        },
-    [animated, index, hasArea]
+            type: false as const,
+            delay: 0,
+          },
+    [animated, index, hasArea],
   );
 
   const enter = useMemo(
     () => ({
       d: getPath(data!),
-      opacity: 1
+      opacity: 1,
     }),
-    [data, getPath]
+    [data, getPath],
   );
 
   const exit = useMemo(() => {
     const [yStart] = yScale.domain();
     return {
       d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
-      opacity: 0
+      opacity: 0,
     };
   }, [data, yScale, getPath]);
 
@@ -137,7 +139,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
     <MotionPath
       custom={{
         enter,
-        exit
+        exit,
       }}
       transition={transition}
       className={className}

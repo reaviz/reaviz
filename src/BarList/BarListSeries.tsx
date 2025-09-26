@@ -1,15 +1,20 @@
-import React, { FC, useCallback } from 'react';
-import {
+import classNames from 'classnames';
+import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React, { useCallback } from 'react';
+
+import type {
   ChartInternalDataTypes,
   ChartShallowDataShape,
   ColorSchemeType,
+} from '@/common';
+import {
   DEFAULT_TRANSITION,
   formatValue,
   getAriaLabel,
-  getColor
+  getColor,
 } from '@/common';
-import { motion } from 'motion/react';
-import classNames from 'classnames';
+
 import css from './BarListSeries.module.css';
 
 export type BarListLabelPosition = 'none' | 'top' | 'start' | 'end' | 'bottom';
@@ -100,7 +105,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   valueFormat,
   onItemClick,
   onItemMouseEnter,
-  onItemMouseLeave
+  onItemMouseLeave,
 }) => {
   const renderBar = useCallback(
     (item, index) => {
@@ -108,7 +113,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
         data,
         colorScheme,
         point: item.data,
-        index
+        index,
       });
 
       return (
@@ -126,7 +131,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
         </div>
       );
     },
-    [barClassName, outerBarClassName, colorScheme, data]
+    [barClassName, outerBarClassName, colorScheme, data],
   );
 
   return (
@@ -152,7 +157,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
               [css.labelTop]: labelPosition === 'top',
               [css.labelStart]: labelPosition === 'start',
               [css.labelEnd]: labelPosition === 'end',
-              [css.labelNone]: labelPosition === 'none'
+              [css.labelNone]: labelPosition === 'none',
             })}
             onMouseEnter={() => onItemMouseEnter?.(d)}
             onMouseLeave={() => onItemMouseLeave?.(d)}

@@ -1,11 +1,11 @@
-import { ChartInternalShallowDataShape } from '@/common/data';
+import type { ChartInternalShallowDataShape } from '@/common/data';
 
 /**
  * Calculates whether the stroke should be shown.
  */
 export function calculateShowStroke(
   current: ChartInternalShallowDataShape,
-  data: ChartInternalShallowDataShape[]
+  data: ChartInternalShallowDataShape[],
 ) {
   const i = data.indexOf(current);
   let showLine = false;

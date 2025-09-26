@@ -1,5 +1,7 @@
-import React, { FC } from 'react';
 import classNames from 'classnames';
+import type { FC } from 'react';
+import React from 'react';
+
 import css from './DiscreteLegendSymbol.module.css';
 
 export interface DiscreteLegendSymbolProps {
@@ -16,7 +18,7 @@ export interface DiscreteLegendSymbolProps {
 
 export const DiscreteLegendSymbol: FC<Partial<DiscreteLegendSymbolProps>> = ({
   className,
-  color
+  color,
 }) => (
   <div
     className={classNames(css.symbol, className)}

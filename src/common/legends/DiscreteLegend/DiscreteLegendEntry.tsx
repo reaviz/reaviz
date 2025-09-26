@@ -1,11 +1,11 @@
-import React, { ReactNode, ReactElement, FC } from 'react';
 import classNames from 'classnames';
-import {
-  DiscreteLegendSymbol,
-  DiscreteLegendSymbolProps
-} from './DiscreteLegendSymbol';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement, ReactNode } from 'react';
+import React from 'react';
+
 import css from './DiscreteLegendEntry.module.css';
+import type { DiscreteLegendSymbolProps } from './DiscreteLegendSymbol';
+import { DiscreteLegendSymbol } from './DiscreteLegendSymbol';
 
 export interface DiscreteLegendEntryProps {
   /**
@@ -71,13 +71,13 @@ export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = ({
   orientation = 'horizontal',
   onMouseEnter,
   onMouseLeave,
-  onClick
+  onClick,
 }) => (
   <div
     title={title}
     className={classNames(css.entry, className, {
       [css.vertical]: orientation === 'vertical',
-      [css.horizontal]: orientation === 'horizontal'
+      [css.horizontal]: orientation === 'horizontal',
     })}
     onClick={onClick}
     onMouseEnter={onMouseEnter}

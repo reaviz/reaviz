@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-undef
 export type ChartDataTypes = ChartInternalDataTypes | bigInt.BigInteger;
 
 export type ChartInternalDataTypes = number | string | Date;
@@ -11,7 +10,7 @@ export interface BaseChartDataShape<T> {
 }
 
 export type ChartShallowDataShape<
-  T = ChartDataTypes | [ChartDataTypes, ChartDataTypes]
+  T = ChartDataTypes | [ChartDataTypes, ChartDataTypes],
 > = BaseChartDataShape<T>;
 
 export type ChartNestedDataShape = BaseChartDataShape<

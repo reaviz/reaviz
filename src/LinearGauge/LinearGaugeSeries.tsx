@@ -1,11 +1,14 @@
-import React, { Fragment, ReactElement, FC } from 'react';
-import { BarSeries, BarSeriesProps } from '@/BarChart';
-import { LinearGaugeBar, LinearGaugeBarProps } from './LinearGaugeBar';
-import {
-  LinearGaugeOuterBar,
-  LinearGaugeOuterBarProps
-} from './LinearGaugeOuterBar';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment } from 'react';
+
+import type { BarSeriesProps } from '@/BarChart';
+import { BarSeries } from '@/BarChart';
+
+import type { LinearGaugeBarProps } from './LinearGaugeBar';
+import { LinearGaugeBar } from './LinearGaugeBar';
+import type { LinearGaugeOuterBarProps } from './LinearGaugeOuterBar';
+import { LinearGaugeOuterBar } from './LinearGaugeOuterBar';
 
 export interface LinearGaugeSeriesProps extends Omit<BarSeriesProps, 'bar'> {
   /**

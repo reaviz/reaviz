@@ -1,20 +1,24 @@
-import React, { Fragment, useMemo, ReactElement, FC, useCallback } from 'react';
 import { area } from 'd3-shape';
-import { Gradient, GradientProps } from '@/common/Gradient';
-import { Mask, MaskProps } from '@/common/Mask';
-import { interpolate, InterpolationTypes } from '@/common/utils/interpolation';
-import {
-  ChartInternalDataShape,
-  ChartInternalShallowDataShape
-} from '@/common/data';
 import { CloneElement } from 'reablocks';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
-import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { Glow } from '@/common';
+import { mergeDefaultProps, roundDecimals } from '@/common';
+import type {
+  ChartInternalDataShape,
+  ChartInternalShallowDataShape,
+} from '@/common/data';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { Glow, mergeDefaultProps, roundDecimals } from '@/common';
+import type { GradientProps } from '@/common/Gradient';
+import { Gradient } from '@/common/Gradient';
+import type { MaskProps } from '@/common/Mask';
+import { Mask } from '@/common/Mask';
+import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+import type { InterpolationTypes } from '@/common/utils/interpolation';
+import { interpolate } from '@/common/utils/interpolation';
 
 export interface AreaProps extends PropFunctionTypes {
   /**
@@ -110,7 +114,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
       x1: xScale(item.x) - xScale(item.x1),
       y: yScale(item.y),
       y0: yScale(item.y0),
-      y1: yScale(item.y1)
+      y1: yScale(item.y1),
     })) as ChartInternalShallowDataShape[];
   }, [data, xScale, yScale]);
 
@@ -137,14 +141,14 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
 
       return fn(d as any);
     },
-    [interpolation, total]
+    [interpolation, total],
   );
 
   const enter = useMemo(() => {
     const areaPath = getAreaPath(coords);
 
     return {
-      d: areaPath === null ? undefined : areaPath
+      d: areaPath === null ? undefined : areaPath,
     };
   }, [coords, getAreaPath]);
 
@@ -155,13 +159,13 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
       x1: 0,
       y: 0,
       y1: maxY,
-      y0: maxY
+      y0: maxY,
     })) as ChartInternalShallowDataShape[];
 
     const areaPath = getAreaPath(coords);
 
     return {
-      d: areaPath === null ? undefined : areaPath
+      d: areaPath === null ? undefined : areaPath,
     };
   }, [data, getAreaPath, xScale, yScale]);
 
@@ -181,12 +185,12 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: index * 0.05
+        delay: index * 0.05,
       };
     } else {
       return {
         type: false as const,
-        delay: 0
+        delay: 0,
       };
     }
   }, [animated, index]);
@@ -204,11 +208,11 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
         transition={transition}
         custom={{
           enter,
-          exit
+          exit,
         }}
         style={{
           ...extras.style,
-          ...generateGlowStyles({ glow, colorSchemeColor: stroke })
+          ...generateGlowStyles({ glow, colorSchemeColor: stroke }),
         }}
       />
     );
@@ -223,7 +227,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     rest,
     stroke,
     transition,
-    pointerEvents
+    pointerEvents,
   ]);
 
   return (
@@ -252,5 +256,5 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
 
 export const AREA_DEFAULT_PROPS: Partial<AreaProps> = {
   gradient: <Gradient />,
-  interpolation: 'linear'
+  interpolation: 'linear',
 };

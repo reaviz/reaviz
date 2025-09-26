@@ -1,8 +1,10 @@
 import React from 'react';
 import { medDateData, multiDateData } from 'reaviz-data-utils';
+
 import { LinearValueMarker, RadialGradient, RadialValueMarker } from '@/common';
 import { RadialArea, RadialAreaSeries } from '@/RadialAreaChart';
 import { RadialAreaChart } from '@/RadialAreaChart';
+
 import { AreaChart } from './AreaChart';
 import { AreaSeries } from './AreaSeries';
 
@@ -17,8 +19,8 @@ export default {
     RadialAreaSeries,
     RadialArea,
     RadialGradient,
-    RadialValueMarker
-  }
+    RadialValueMarker,
+  },
 };
 
 export const LinearValueMarkers = () => (
@@ -32,8 +34,8 @@ export const LinearValueMarkers = () => (
         type="grouped"
         colorScheme="cybertron"
         valueMarkers={[
-          <LinearValueMarker value={12} color="#D740BE" />,
-          <LinearValueMarker value={6} color="#F8A340" />
+          <LinearValueMarker key={12} value={12} color="#D740BE" />,
+          <LinearValueMarker key={6} value={6} color="#F8A340" />,
         ]}
       />
     }
@@ -62,7 +64,7 @@ export const VerticalLinearValueMarkers = () => (
             value={multiDateData[0].data[2].key}
             color="#F8A340"
             direction="vertical"
-          />
+          />,
         ]}
       />
     }
@@ -83,8 +85,8 @@ export const RadialValueMarkers = () => (
         interpolation="smooth"
         area={<RadialArea gradient={<RadialGradient />} />}
         valueMarkers={[
-          <RadialValueMarker value={12} color="#D740BE" />,
-          <RadialValueMarker value={6} color="#F8A340" />
+          <RadialValueMarker key={12} value={12} color="#D740BE" />,
+          <RadialValueMarker key={6} value={6} color="#F8A340" />,
         ]}
       />
     }

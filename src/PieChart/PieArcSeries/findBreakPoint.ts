@@ -6,7 +6,7 @@ type Coordinate = [number, number];
  */
 export function findBreakPoint(
   [startX, startY]: Coordinate,
-  [endX, endY]: Coordinate
+  [endX, endY]: Coordinate,
 ): Coordinate {
   let breakPoint: Coordinate = [0, 0];
 

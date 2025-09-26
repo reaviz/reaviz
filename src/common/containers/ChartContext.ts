@@ -1,6 +1,7 @@
 import { createContext, useContext } from 'react';
-import { Dimensions } from '@/common/utils';
-import { LinearAxisDimensionChanged } from '@/common/Axis';
+
+import type { LinearAxisDimensionChanged } from '@/common/Axis';
+import type { Dimensions } from '@/common/utils';
 
 export interface ChartContextProps extends Dimensions {
   id: string;
@@ -9,7 +10,7 @@ export interface ChartContextProps extends Dimensions {
   xAxisSized?: boolean;
   updateAxes: (
     orientation: 'horizontal' | 'vertical',
-    event: LinearAxisDimensionChanged
+    event: LinearAxisDimensionChanged,
   ) => void;
 }
 

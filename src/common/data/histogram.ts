@@ -1,5 +1,9 @@
 import { histogram } from 'd3-array';
-import { ChartInternalShallowDataShape, ChartInternalDataTypes } from './types';
+
+import type {
+  ChartInternalDataTypes,
+  ChartInternalShallowDataShape,
+} from './types';
 
 /**
  * Build a histogram given data set.
@@ -7,7 +11,7 @@ import { ChartInternalShallowDataShape, ChartInternalDataTypes } from './types';
 export function buildBins(
   xScale,
   thresholds,
-  data: any[]
+  data: any[],
 ): ChartInternalShallowDataShape[] {
   const layout = histogram()
     .value((d: any) => d.x)
@@ -21,6 +25,6 @@ export function buildBins(
     x1: bin.x1 as ChartInternalDataTypes,
     y: bin.length,
     y0: 0,
-    y1: bin.length
+    y1: bin.length,
   }));
 }

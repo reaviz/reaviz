@@ -1,11 +1,13 @@
+import chroma from 'chroma-js';
 import React from 'react';
-import { SunburstChart } from './SunburstChart';
 import { heatmapSimpleData } from 'reaviz-data-utils';
-import { SunburstSeries } from './SunburstSeries';
+
+import { Gradient } from '@/common/Gradient';
+
 import { SunburstArc } from './SunburstArc';
 import { SunburstArcLabel } from './SunburstArcLabel';
-import { Gradient } from '@/common/Gradient';
-import chroma from 'chroma-js';
+import { SunburstChart } from './SunburstChart';
+import { SunburstSeries } from './SunburstSeries';
 
 export default {
   tags: ['snapshot'],
@@ -14,8 +16,8 @@ export default {
   subcomponents: {
     SunburstSeries,
     SunburstArc,
-    SunburstArcLabel
-  }
+    SunburstArcLabel,
+  },
 };
 
 const exampleColorScheme = chroma
@@ -32,7 +34,7 @@ export const Simple = () => (
   />
 );
 
-export const Gradients = ({ colorScheme = exampleColorScheme }) => (
+export const Gradients = ({ colorScheme = exampleColorScheme }: any) => (
   <SunburstChart
     id="gradients"
     height={450}
@@ -72,10 +74,10 @@ export const MultiLevel = ({
           key: 'Traffic',
           data: [
             { key: 'HTTP', data: 100 },
-            { key: 'HTTPS', data: 200 }
-          ]
-        }
-      ]
+            { key: 'HTTPS', data: 200 },
+          ],
+        },
+      ],
     },
     {
       key: 'FileTransfer',
@@ -84,10 +86,10 @@ export const MultiLevel = ({
           key: 'Protocol',
           data: [
             { key: 'FTP', data: 50 },
-            { key: 'SFTP', data: 70 }
-          ]
-        }
-      ]
+            { key: 'SFTP', data: 70 },
+          ],
+        },
+      ],
     },
     {
       key: 'Database',
@@ -96,10 +98,10 @@ export const MultiLevel = ({
           key: 'Queries',
           data: [
             { key: 'SELECT', data: 150 },
-            { key: 'INSERT', data: 20 }
-          ]
-        }
-      ]
+            { key: 'INSERT', data: 20 },
+          ],
+        },
+      ],
     },
     {
       key: 'Authentication',
@@ -108,10 +110,10 @@ export const MultiLevel = ({
           key: 'Methods',
           data: [
             { key: 'OAuth', data: 60 },
-            { key: 'SAML', data: 25 }
-          ]
-        }
-      ]
+            { key: 'SAML', data: 25 },
+          ],
+        },
+      ],
     },
     {
       key: 'Storage',
@@ -120,14 +122,14 @@ export const MultiLevel = ({
           key: 'Types',
           data: [
             { key: 'SSD', data: 300 },
-            { key: 'HDD', data: 100 }
-          ]
-        }
-      ]
-    }
+            { key: 'HDD', data: 100 },
+          ],
+        },
+      ],
+    },
   ],
-  colorScheme = exampleColorScheme
-}) => (
+  colorScheme = exampleColorScheme,
+}: any) => (
   <SunburstChart
     id="multi-level"
     height={450}

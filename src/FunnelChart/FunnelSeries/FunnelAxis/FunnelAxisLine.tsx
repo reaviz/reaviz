@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface FunnelAxisLineProps {
   /**
@@ -32,7 +33,7 @@ export const FunnelAxisLine: FC<Partial<FunnelAxisLineProps>> = ({
   strokeWidth = 2,
   yScale,
   xScale,
-  index
+  index,
 }) => {
   const [height] = yScale.range();
 

@@ -1,18 +1,21 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 import { largeDateData, largeSignalChartData } from 'reaviz-data-utils';
-import { LineChart, LineSeries } from '@/LineChart';
-import { ChartZoomPan, ZoomPan } from '@/common/ZoomPan';
-import { ScatterPlot, ScatterSeries, ScatterPoint } from '@/ScatterPlot';
+
 import { AreaChart, AreaSeries } from '@/AreaChart';
 import { TooltipArea } from '@/common/Tooltip';
+import { ChartZoomPan, ZoomPan } from '@/common/ZoomPan';
+import { LineChart, LineSeries } from '@/LineChart';
+import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
+
 import {
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
 } from '../Axis';
 
 export default {
-  title: 'Utils/Zoom Pan'
+  title: 'Utils/Zoom Pan',
 };
 
 export const Line = () => (
@@ -96,13 +99,13 @@ export const GenericZoomPanWModifier = () => (
 );
 
 GenericZoomPanWModifier.story = {
-  name: 'Generic Zoom Pan w/ Modifier'
+  name: 'Generic Zoom Pan w/ Modifier',
 };
 
 export const DefaultZoom = () => {
   const [domain, setDomain] = React.useState<[any, any]>([
     largeDateData[5].key,
-    largeDateData[25].key
+    largeDateData[25].key,
   ]);
   return (
     <LineChart
@@ -139,7 +142,7 @@ const GenericZoomPanStory: FC<any> = ({ modifier }) => {
   const [{ scale, x, y }, setState] = React.useState({
     scale: 1,
     x: 0,
-    y: 0
+    y: 0,
   });
 
   return (

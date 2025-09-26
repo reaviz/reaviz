@@ -1,2 +1,2 @@
-export * from './RadialScatterSeries';
 export * from './RadialScatterPoint';
+export * from './RadialScatterSeries';

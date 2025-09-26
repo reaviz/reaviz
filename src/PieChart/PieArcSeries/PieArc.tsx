@@ -1,13 +1,18 @@
-import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
-import { motion, MotionStyle } from 'motion/react';
+import type { MotionStyle } from 'motion/react';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
-import { ArcData } from '@/PieChart';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { useInterpolate } from './useInterpolate';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
-import { Gradient, GradientProps } from '@/common/Gradient';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel } from '@/common';
+import type { Gradient, GradientProps } from '@/common/Gradient';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import type { ArcData } from '@/PieChart';
+
+import { useInterpolate } from './useInterpolate';
 
 export interface PieArcMouseEvent {
   value: ArcData['data'];
@@ -98,14 +103,14 @@ export const PieArc: FC<PieArcProps> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip = <ChartTooltip />
+  tooltip = <ChartTooltip />,
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
   const d = useInterpolate({ animated, arc, data });
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(
     () => (active ? chroma(color).brighten(0.5) : color),
-    [color, active]
+    [color, active],
   );
 
   const { pointerOut, pointerOver } = useHoverIntent({
@@ -114,7 +119,7 @@ export const PieArc: FC<PieArcProps> = ({
         setActive(true);
         onMouseEnter?.({
           value: data.data,
-          nativeEvent: event as any
+          nativeEvent: event as any,
         });
       }
     },
@@ -123,10 +128,10 @@ export const PieArc: FC<PieArcProps> = ({
         setActive(false);
         onMouseLeave?.({
           value: data.data,
-          nativeEvent: event as any
+          nativeEvent: event as any,
         });
       }
-    }
+    },
   });
 
   const internalFill = useMemo(() => {
@@ -139,7 +144,7 @@ export const PieArc: FC<PieArcProps> = ({
 
   const tooltipData = useMemo(
     () => ({ y: data.data.data, x: data.data.key }),
-    [data]
+    [data],
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
@@ -161,7 +166,7 @@ export const PieArc: FC<PieArcProps> = ({
           if (!disabled) {
             onClick?.({
               value: data.data,
-              nativeEvent: event
+              nativeEvent: event,
             });
           }
         }}

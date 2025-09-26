@@ -1,30 +1,27 @@
-import React from 'react';
-import { BarChart } from './BarChart';
-import { StackedBarChart } from './StackedBarChart';
-import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
-import {
-  multiCategory,
-  binnedDateData,
-  binnedDatePositiveOnly,
-  binnedDateNegativeOnly
-} from 'reaviz-data-utils';
 import chroma from 'chroma-js';
-import {
-  BarSeries,
-  Bar,
-  StackedBarSeries,
-  StackedNormalizedBarSeries,
-  RangeLines
-} from './BarSeries';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+import React from 'react';
+import { binnedDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickSeries,
-  LinearXAxisTickLabel
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
+import { BarChart } from './BarChart';
+import {
+  Bar,
+  BarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries,
+} from './BarSeries';
+import { StackedBarChart } from './StackedBarChart';
+import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
 
 export default {
   tags: ['snapshot'],
@@ -35,8 +32,8 @@ export default {
     StackedBarSeries,
     StackedNormalizedBarSeries,
     RangeLines,
-    Bar
-  }
+    Bar,
+  },
 };
 
 export const Simple = () => (
@@ -158,7 +155,7 @@ export const StackedNormalized = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
                 ]}
               />
             }

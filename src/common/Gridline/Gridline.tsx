@@ -1,7 +1,9 @@
 import classNames from 'classnames';
-import React, { FC, useMemo } from 'react';
-import css from './Gridline.module.css';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
 import { mergeDefaultProps } from '../utils';
+import css from './Gridline.module.css';
 
 export interface GridlineProps {
   /**
@@ -65,7 +67,7 @@ export const Gridline: FC<Partial<GridlineProps>> = (props) => {
     height,
     width,
     scale,
-    strokeDasharray
+    strokeDasharray,
   } = mergeDefaultProps(GRID_LINE_DEFAULT_PROPS, props);
 
   const coords = useMemo(() => {
@@ -76,14 +78,14 @@ export const Gridline: FC<Partial<GridlineProps>> = (props) => {
         x1: pos,
         x2: pos,
         y1: 0,
-        y2: height
+        y2: height,
       };
     } else {
       return {
         y1: pos,
         y2: pos,
         x1: 0,
-        x2: width
+        x2: width,
       };
     }
   }, [direction, data, height, width, scale]);
@@ -104,5 +106,5 @@ export const GRID_LINE_DEFAULT_PROPS: Partial<GridlineProps> = {
   strokeWidth: 1,
   strokeDasharray: '2 5',
   direction: 'all',
-  strokeColor: 'rgba(153, 153, 153, 0.5)'
+  strokeColor: 'rgba(153, 153, 153, 0.5)',
 };

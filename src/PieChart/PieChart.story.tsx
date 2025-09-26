@@ -1,14 +1,16 @@
-import React, { useState, Fragment } from 'react';
-import { PieChart } from './PieChart';
+import React, { Fragment, useState } from 'react';
 import {
-  categoryData,
-  randomNumber,
   browserData,
-  icons
+  categoryData,
+  icons,
+  randomNumber,
 } from 'reaviz-data-utils';
-import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
-import { ChartShallowDataShape } from '@/common/data';
+
+import type { ChartShallowDataShape } from '@/common/data';
 import { Gradient } from '@/common/Gradient';
+
+import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
+import { PieChart } from './PieChart';
 
 export default {
   tags: ['snapshot'],
@@ -17,8 +19,8 @@ export default {
   subcomponents: {
     PieArc,
     PieArcLabel,
-    PieArcSeries
-  }
+    PieArcSeries,
+  },
 };
 
 interface ChartDataItem extends ChartShallowDataShape<number> {
@@ -35,88 +37,88 @@ const labelData: ChartDataItem[] = [
     data: 25000,
     metadata: {
       description: 'Chrome description',
-      Icon: icons.Chrome
-    }
+      Icon: icons.Chrome,
+    },
   },
   {
     key: 'Safari',
     data: 2000,
     metadata: {
       description: 'Safari description',
-      Icon: icons.Safari
-    }
+      Icon: icons.Safari,
+    },
   },
   {
     key: 'FireFox',
     data: 2000,
     metadata: {
       description: 'FireFox description',
-      Icon: icons.FireFox
-    }
+      Icon: icons.FireFox,
+    },
   },
   {
     key: 'Edge',
     data: 2000,
     metadata: {
       description: 'Edge description',
-      Icon: icons.Edge
-    }
+      Icon: icons.Edge,
+    },
   },
   {
     key: 'Github',
     data: 2000,
     metadata: {
       description: 'Github description',
-      Icon: icons.Github
-    }
+      Icon: icons.Github,
+    },
   },
   {
     key: 'ReactJs',
     data: 2000,
     metadata: {
       description: 'React with really really long description',
-      Icon: icons.ReactJs
-    }
+      Icon: icons.ReactJs,
+    },
   },
   {
     key: 'Android',
     data: 2000,
     metadata: {
       description: 'Android description',
-      Icon: icons.Android
-    }
+      Icon: icons.Android,
+    },
   },
   {
     key: 'Apple',
     data: 2000,
     metadata: {
       description: 'Apple description',
-      Icon: icons.Apple
-    }
+      Icon: icons.Apple,
+    },
   },
   {
     key: 'Ubuntu',
     data: 2000,
     metadata: {
       description: 'Ubuntu description',
-      Icon: icons.Ubuntu
-    }
+      Icon: icons.Ubuntu,
+    },
   },
   {
     key: 'Windows',
     data: 2000,
     metadata: {
       description: 'Windows description',
-      Icon: icons.Windows
-    }
+      Icon: icons.Windows,
+    },
   },
   {
     key: 'Other',
     data: 500,
     metadata: {
-      description: 'Other item, that should not have label'
-    }
-  }
+      description: 'Other item, that should not have label',
+    },
+  },
 ];
 
 export const Simple = () => (
@@ -155,7 +157,7 @@ export const HtmlLabels = () => {
       style={{
         width: 400,
         height: 400,
-        overflow: 'hidden'
+        overflow: 'hidden',
       }}
     >
       <PieChart
@@ -174,7 +176,7 @@ export const HtmlLabels = () => {
                   key,
                   data,
                   metadata,
-                  textAnchor
+                  textAnchor,
                 }: ChartDataItem & { textAnchor: 'start' | 'end' }) => (
                   <ArcLabel
                     key={key}
@@ -202,7 +204,7 @@ export const TextPlusIconLabels = () => {
       style={{
         width: 400,
         height: 400,
-        overflow: 'hidden'
+        overflow: 'hidden',
       }}
     >
       <PieChart
@@ -220,7 +222,7 @@ export const TextPlusIconLabels = () => {
                   key,
                   data,
                   metadata,
-                  textAnchor
+                  textAnchor,
                 }: ChartDataItem & { textAnchor: 'start' | 'end' }) => (
                   <ArcLabel
                     key={key}
@@ -248,7 +250,7 @@ export const LabelOverlap = () => (
     height={250}
     data={[...Array(32)].map((_, index) => ({
       key: index + 1,
-      data: 1
+      data: 1,
     }))}
   />
 );
@@ -291,7 +293,7 @@ const LiveUpdatingStory = () => {
       const updateIndex = randomNumber(0, data.length - 1);
       newData[updateIndex] = {
         ...newData[updateIndex],
-        data: randomNumber(10, 100)
+        data: randomNumber(10, 100),
       };
 
       idx++;
@@ -315,7 +317,7 @@ const ArcLabel = React.memo(function ArcLabel({
   data,
   icon,
   textAnchor,
-  showText
+  showText,
 }: {
   title: string;
   description: string;
@@ -333,7 +335,7 @@ const ArcLabel = React.memo(function ArcLabel({
         width: '24px',
         height: '24px',
         fill: '#fff',
-        flexShrink: 0
+        flexShrink: 0,
       }}
     >
       {icon}
@@ -343,7 +345,7 @@ const ArcLabel = React.memo(function ArcLabel({
   const ellipsis: React.CSSProperties = {
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
-    overflow: 'hidden'
+    overflow: 'hidden',
   };
 
   return (
@@ -355,7 +357,7 @@ const ArcLabel = React.memo(function ArcLabel({
         justifyContent: `flex-${textAnchor}`,
         lineHeight: 1,
         height: '24px',
-        textAlign: textAnchor === 'start' ? 'left' : 'right'
+        textAlign: textAnchor === 'start' ? 'left' : 'right',
       }}
     >
       {textAnchor === 'start' && iconContainer}

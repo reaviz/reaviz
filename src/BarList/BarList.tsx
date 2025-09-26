@@ -2,9 +2,13 @@ import { max } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
 import { motion } from 'motion/react';
 import { CloneElement, useId } from 'reablocks';
-import React, { FC, ReactElement, useMemo } from 'react';
-import { ChartShallowDataShape } from '@/common';
-import { BarListSeries, BarListSeriesProps } from './BarListSeries';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartShallowDataShape } from '@/common';
+
+import type { BarListSeriesProps } from './BarListSeries';
+import { BarListSeries } from './BarListSeries';
 
 export interface BarListProps {
   /**
@@ -51,7 +55,7 @@ export const BarList: FC<BarListProps> = ({
   data = [],
   sortDirection = 'desc',
   series = <BarListSeries />,
-  type = 'count'
+  type = 'count',
 }) => {
   const curId = useId(id);
 
@@ -67,8 +71,8 @@ export const BarList: FC<BarListProps> = ({
       data: groupScale(d.data as number),
       metadata: {
         value: d.data,
-        percent: (data.length * (d.data as number)) / 100
-      }
+        percent: (data.length * (d.data as number)) / 100,
+      },
     }));
 
     if (sortDirection === 'asc') {
@@ -87,15 +91,15 @@ export const BarList: FC<BarListProps> = ({
         initial: {
           transition: {
             staggerChildren: 0.05,
-            staggerDirection: -1 as any
-          }
+            staggerDirection: -1 as any,
+          },
         },
         animate: {
           transition: {
             staggerChildren: 0.07,
-            delayChildren: 0.2
-          }
-        }
+            delayChildren: 0.2,
+          },
+        },
       }}
       id={curId}
       className={className}

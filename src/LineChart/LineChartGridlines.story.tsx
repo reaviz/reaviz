@@ -1,12 +1,14 @@
 import React from 'react';
 import { singleDateData } from 'reaviz-data-utils';
+
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
 import { LineChart } from './LineChart';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
 
 export default {
   tags: ['snapshot'],
   title: 'Charts/Line Chart/Gridlines',
-  component: LineChart
+  component: LineChart,
 };
 
 export const AllAxes = () => (
@@ -30,7 +32,7 @@ export const XAxis = () => (
 );
 
 XAxis.story = {
-  name: 'X-Axis'
+  name: 'X-Axis',
 };
 
 export const YAxis = () => (
@@ -44,5 +46,5 @@ export const YAxis = () => (
 );
 
 YAxis.story = {
-  name: 'Y-Axis'
+  name: 'Y-Axis',
 };

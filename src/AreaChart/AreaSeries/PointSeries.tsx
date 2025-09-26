@@ -1,10 +1,14 @@
-import React, { FC, ReactElement, useCallback } from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import { CloneElement } from 'reablocks';
-import { ScatterPoint, ScatterSeries, ScatterPointProps } from '@/ScatterPlot';
-import css from './PointSeries.module.css';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
 import isEqual from 'react-fast-compare';
+
 import { mergeDefaultProps } from '@/common';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import type { ScatterPointProps } from '@/ScatterPlot';
+import { ScatterPoint, ScatterSeries } from '@/ScatterPlot';
+
+import css from './PointSeries.module.css';
 
 export interface PointSeriesProps {
   /**
@@ -80,7 +84,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
     width,
     id,
     activeValues,
-    show
+    show,
   } = mergeDefaultProps(POINT_SERIES_DEFAULT_PROPS, props);
 
   const getIsVisible = useCallback(
@@ -106,7 +110,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
 
       return Boolean(show);
     },
-    [activeValues, data.length, show]
+    [activeValues, data.length, show],
   );
 
   return (
@@ -134,5 +138,5 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
 
 export const POINT_SERIES_DEFAULT_PROPS: Partial<PointSeriesProps> = {
   show: 'hover',
-  point: <ScatterPoint />
+  point: <ScatterPoint />,
 };

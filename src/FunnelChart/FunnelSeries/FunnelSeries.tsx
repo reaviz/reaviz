@@ -1,16 +1,17 @@
-import React, { MouseEvent, useCallback, useMemo } from 'react';
-import { FUNNEL_ARC_DEFAULT_PROPS, FunnelArc } from './FunnelArc';
-import { CloneElement } from 'reablocks';
-import { FunnelArcProps } from './FunnelArc';
-import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
-import {
-  ChartShallowDataShape,
-  getClosestContinousScalePoint,
-  getPositionForTarget
-} from '@/common';
-import { ClickEvent } from '@/common/types';
-import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
+import { scaleLinear } from 'd3-scale';
+import { CloneElement } from 'reablocks';
+import type { MouseEvent } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
+import type { ChartShallowDataShape } from '@/common';
+import { getClosestContinousScalePoint, getPositionForTarget } from '@/common';
+import type { ClickEvent } from '@/common/types';
+
+import type { FunnelArcProps } from './FunnelArc';
+import { FUNNEL_ARC_DEFAULT_PROPS, FunnelArc } from './FunnelArc';
+import type { FunnelAxisProps } from './FunnelAxis';
+import { FunnelAxis } from './FunnelAxis';
 
 export interface FunnelSeriesProps {
   /**
@@ -56,11 +57,11 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   axis = <FunnelAxis />,
   height,
   width,
-  onSegmentClick
+  onSegmentClick,
 }) => {
   const arcProps = useMemo(
     () => ({ ...FUNNEL_ARC_DEFAULT_PROPS, ...(arc?.props ?? {}) }),
-    [arc?.props]
+    [arc?.props],
   );
 
   // Calculate the funnel data on mount and when data changes
@@ -69,7 +70,7 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
       const yScale = scaleLinear()
         .domain([
           -max(data, ({ data }) => data as number),
-          max(data, ({ data }) => data as number)
+          max(data, ({ data }) => data as number),
         ])
         .nice()
         .range([height, 0]);
@@ -80,16 +81,16 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
         ...d,
         key: d.key,
         x: xScale(i),
-        i
+        i,
       }));
 
       return {
         data: transformedData,
         yScale,
-        xScale
+        xScale,
       };
     },
-    [data]
+    [data],
   );
 
   const { datas, halfOffset } = useMemo(() => {
@@ -104,13 +105,13 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
         datas: [
           { data, ...getScales(height, width) },
           { data, ...getScales(height - offset, width) },
-          { data, ...getScales(height - offset * 2, width) }
-        ]
+          { data, ...getScales(height - offset * 2, width) },
+        ],
       };
     } else {
       return {
         halfOffset: 0,
-        datas: [{ data, ...getScales(height, width) }]
+        datas: [{ data, ...getScales(height, width) }],
       };
     }
   }, [data, arcProps, height, width, getScales]);
@@ -125,16 +126,16 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
           pos: position.x,
           scale: xScale,
           data,
-          attr: 'i'
+          attr: 'i',
         });
 
         onSegmentClick({
           value: { key: value.key, data: value.data },
-          nativeEvent: e
+          nativeEvent: e,
         });
       }
     },
-    [datas, onSegmentClick]
+    [datas, onSegmentClick],
   );
 
   return (

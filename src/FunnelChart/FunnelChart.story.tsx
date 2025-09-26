@@ -1,13 +1,15 @@
+import type { Meta, StoryFn } from '@storybook/react';
+
 import { TooltipArea } from '@/common';
-import { StoryFn, Meta } from '@storybook/react';
+
+import type { FunnelChartProps } from './';
 import {
-  FunnelSeries,
-  FunnelChart,
-  FunnelChartProps,
+  FunnelArc,
   FunnelAxis,
   FunnelAxisLabel,
   FunnelAxisLine,
-  FunnelArc
+  FunnelChart,
+  FunnelSeries,
 } from './';
 
 export default {
@@ -19,8 +21,8 @@ export default {
     FunnelAxis,
     FunnelAxisLabel,
     FunnelAxisLine,
-    FunnelSeries
-  }
+    FunnelSeries,
+  },
 } as Meta;
 
 const Template: StoryFn<FunnelChartProps> = (args) => <FunnelChart {...args} />;
@@ -34,8 +36,8 @@ Basic.args = {
     { key: 'Visited Site', data: 1000 },
     { key: 'Added to Cart', data: 900 },
     { key: 'Initiated Checkout', data: 600 },
-    { key: 'Purchased', data: 400 }
-  ]
+    { key: 'Purchased', data: 400 },
+  ],
 };
 
 export const LargeDataset = Template.bind({});
@@ -51,14 +53,14 @@ LargeDataset.args = {
     { key: 'Subscribed', data: 5000 },
     { key: 'Became a Member', data: 3000 },
     { key: 'Upgraded to Premium', data: 1000 },
-    { key: 'Became a VIP', data: 900 }
+    { key: 'Became a VIP', data: 900 },
   ],
   series: (
     <FunnelSeries
       arc={<FunnelArc tooltip={<TooltipArea />} />}
       onSegmentClick={(e) => console.log(e)}
     />
-  )
+  ),
 };
 
 export const Interpolation = () => (
@@ -71,7 +73,7 @@ export const Interpolation = () => (
       { key: 'Visited Site', data: 1000 },
       { key: 'Added to Cart', data: 900 },
       { key: 'Initiated Checkout', data: 600 },
-      { key: 'Purchased', data: 400 }
+      { key: 'Purchased', data: 400 },
     ]}
   />
 );
@@ -84,7 +86,7 @@ export const Autosize = () => (
         { key: 'Visited Site', data: 1000 },
         { key: 'Added to Cart', data: 900 },
         { key: 'Initiated Checkout', data: 600 },
-        { key: 'Purchased', data: 400 }
+        { key: 'Purchased', data: 400 },
       ]}
     />
   </div>
@@ -99,7 +101,7 @@ export const Layered = () => (
       { key: 'Visited Site', data: 1000 },
       { key: 'Added to Cart', data: 900 },
       { key: 'Initiated Checkout', data: 600 },
-      { key: 'Purchased', data: 400 }
+      { key: 'Purchased', data: 400 },
     ]}
     series={
       <FunnelSeries
@@ -129,7 +131,7 @@ export const LabelPosition = () => (
       { key: 'Visited Site', data: 1000 },
       { key: 'Added to Cart', data: 900 },
       { key: 'Initiated Checkout', data: 600 },
-      { key: 'Purchased', data: 400 }
+      { key: 'Purchased', data: 400 },
     ]}
   />
 );
@@ -149,7 +151,7 @@ export const NoValue = () => (
       { key: 'Visited Site', data: 1000 },
       { key: 'Added to Cart', data: 900 },
       { key: 'Initiated Checkout', data: 600 },
-      { key: 'Purchased', data: 400 }
+      { key: 'Purchased', data: 400 },
     ]}
   />
 );

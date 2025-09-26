@@ -1,14 +1,15 @@
-import Reac from 'react';
 import { singleDateData } from 'reaviz-data-utils';
+
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
 import { AreaChart } from './AreaChart';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
 import {
   Area,
   AreaSeries,
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries
+  StackedNormalizedAreaSeries,
 } from './AreaSeries';
 
 export default {
@@ -21,8 +22,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries
-  }
+    StackedNormalizedAreaSeries,
+  },
 };
 
 export const AllAxes = () => (
@@ -46,7 +47,7 @@ export const XAxis = () => (
 );
 
 XAxis.story = {
-  name: 'X-Axis'
+  name: 'X-Axis',
 };
 
 export const YAxis = () => (
@@ -60,5 +61,5 @@ export const YAxis = () => (
 );
 
 YAxis.story = {
-  name: 'Y-Axis'
+  name: 'Y-Axis',
 };

@@ -1,2 +1,2 @@
-export * from './ZoomPan';
 export * from './ChartZoomPan';
+export * from './ZoomPan';
