@@ -50,7 +50,8 @@ export const TopBottomAxis = () => {
       {
         key: 'Closed',
         data: 0,
-        x: 'Closed'
+        x: 'Closed',
+        s: 'ss'
       },
       {
         key: 'Opened',
@@ -61,6 +62,10 @@ export const TopBottomAxis = () => {
     isMultiSeries: false,
     isDiverging: true
   });
+  const binned2 = binnedDateData.map((x) => ({
+    ...x,
+    data: x.data.map((y) => ({ key: 'meep', key_url: 'hihi', ...y }))
+  }));
 
   return (
     <StackedBarChart
@@ -68,7 +73,7 @@ export const TopBottomAxis = () => {
       width={450}
       height={200}
       margins={0}
-      data={binnedDateData}
+      data={binned2}
       gridlines={<GridlineSeries line={<Gridline direction="x" />} />}
       series={
         <StackedBarSeries

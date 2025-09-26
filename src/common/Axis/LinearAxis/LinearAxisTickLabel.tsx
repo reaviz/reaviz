@@ -14,7 +14,8 @@ export interface LinearAxisTickLabelProps {
   half: 'start' | 'end' | 'center';
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
   format?: (v) => any;
-  url?: string;
+  onClick?: () => void;
+  clickable: boolean;
   /**
    * Format tooltip title on hover label.
    */
@@ -36,7 +37,6 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   const {
     text,
     fullText,
-    url,
     angle,
     orientation,
     half,
@@ -50,6 +50,8 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     rotation,
     padding,
     formatTooltip,
+    onClick,
+    clickable,
     align
   } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
 
@@ -164,7 +166,6 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       alignmentBaseline
     };
   }
-
   const { x, y } = getOffset();
   const textPosition = getTextPosition();
   const titleHover =
@@ -175,13 +176,13 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       transform={`translate(${x}, ${y})`}
       fontSize={fontSize}
       fontFamily={fontFamily}
-      onClick={() => url && window.open(url, '_blank')}
+      onClick={() => clickable && onClick()}
     >
       <title>{titleHover}</title>
       <text
         {...textPosition}
         fill={fill}
-        className={`${className} ${url && ' cursor-pointer hover:underline hover:brightness-125 '}`}
+        className={`${className} ${clickable && ' cursor-pointer hover:underline hover:brightness-125 '}`}
       >
         {text}
       </text>

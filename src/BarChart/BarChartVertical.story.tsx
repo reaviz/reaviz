@@ -22,16 +22,11 @@ export default {
   }
 };
 
-const data = categoryData.map((entry, i) => ({
-  key_url: `https://google.com/${i}`,
-  ...entry
-}));
-
 export const Simple = () => (
   <BarChart
     width={400}
     height={350}
-    data={data}
+    data={categoryData}
     series={<BarSeries padding={0.1} bar={<Bar />} />}
   />
 );
@@ -195,6 +190,19 @@ export const NonZero = () => (
     height={250}
     data={nonZeroCategoryData}
     series={<BarSeries />}
+  />
+);
+
+export const KeyUrl = () => (
+  <BarChart
+    width={400}
+    height={350}
+    data={categoryData.map((x, i) => ({
+      ...x,
+      key_url: `https://example.com/${i}`
+    }))}
+    attachUrl="both"
+    series={<BarSeries padding={0.1} bar={<Bar />} />}
   />
 );
 

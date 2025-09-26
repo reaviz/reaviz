@@ -130,7 +130,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
   /**
    * Gets the url from the map *if any* of the tick.
    */
-  const getUrl = useCallback((tick: number) => urlMap.get(tick), [urlMap]);
+  const getUrl = useCallback((tick: number) => urlMap?.get(tick), [urlMap]);
 
   /**
    * Gets the ticks given the dimensions and scales and returns
@@ -237,7 +237,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               text={tick.text}
               fullText={tick.fullText}
               half={tick.half}
-              url={tick?.url}
+              onClick={() => window.open(tick?.url)}
+              clickable={!!tick?.url}
               angle={angle}
               orientation={orientation}
               line={line!}

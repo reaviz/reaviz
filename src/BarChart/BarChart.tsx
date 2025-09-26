@@ -82,10 +82,11 @@ export interface BarChartProps extends ChartProps {
   secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
 
   /**
-   * where to attach url onclick events
+   * Determines which chart elements (bars, labels, both, or none)
+   * should get an onClick event that opens the `key_url` of the data node.
    */
 
-  url?: OnClickTarget;
+  attachUrl?: OnClickTarget;
 }
 
 export type OnClickTarget = 'none' | 'labels' | 'bars' | 'both';
@@ -105,7 +106,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     gridlines,
     secondaryAxis,
     containerClassName,
-    url = 'labels'
+    attachUrl = 'labels'
   } = mergeDefaultProps(BAR_CHART_DEFAULT_PROPS, props);
   const seriesProps = useMemo(
     () => ({ ...BAR_SERIES_DEFAULT_PROPS, ...series?.props }),
@@ -131,10 +132,6 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     () => seriesProps.type === 'stackedDiverging',
     [seriesProps.type]
   );
-
-  let displayMode: OnClickTarget = url;
-  const onClickLabels = displayMode == 'labels' || displayMode === 'both';
-  const onClickBars = displayMode === 'bars' || displayMode === 'both';
 
   const getMarimekkoGroupScales = useCallback(
     (aggregatedData, axisProps, width: number) => {
@@ -212,19 +209,6 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     },
     [isDiverging, seriesProps]
   );
-
-  /**
-   * creates a url tick map for quick lookups.
-   */
-
-  const urlMap = useMemo(() => {
-    if (!data) return;
-    const map = new Map();
-    for (const { key, key_url } of data) {
-      if (key_url) map.set(key, key_url);
-    }
-    return map;
-  }, [data]);
 
   const getScalesAndData = useCallback(
     (chartHeight: number, chartWidth: number) => {
@@ -359,6 +343,19 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     ]
   );
 
+  let clickTarget: OnClickTarget = attachUrl;
+  const onClickLabels = clickTarget === 'labels' || clickTarget === 'both';
+  const onClickBars = clickTarget === 'bars' || clickTarget === 'both';
+
+  const urlMap = useMemo(() => {
+    if (!data) return;
+    const map = new Map();
+    for (const { key, key_url } of data) {
+      if (key_url) map.set(key, key_url);
+    }
+    return map;
+  }, [data]);
+
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
       const { chartHeight, chartWidth, id, updateAxes, chartSized } =
@@ -389,7 +386,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
             height={chartHeight}
             width={chartWidth}
             scale={xScale}
-            urlMap={onClickLabels && urlMap}
+            urlMap={onClickLabels && isVertical && urlMap}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'horizontal' : 'vertical', event)
@@ -400,7 +397,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
             height={chartHeight}
             width={chartWidth}
             scale={yScale}
-            urlMap={onClickLabels && urlMap}
+            urlMap={onClickLabels && !isVertical && urlMap}
             visibility={chartSized ? 'visible' : 'hidden'}
             onDimensionsChange={(event) =>
               updateAxes(isVertical ? 'vertical' : 'horizontal', event)

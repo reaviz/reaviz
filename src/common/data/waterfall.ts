@@ -12,6 +12,7 @@ export const buildWaterfall = (
 
   let cumulative = 0;
   for (const point of data) {
+    console.log(point);
     point[`${v}0`] = cumulative;
     cumulative += point[v] as number;
     point[`${v}1`] = cumulative;

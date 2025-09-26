@@ -40,16 +40,11 @@ export default {
   }
 };
 
-const data = categoryData.map((entry, i) => ({
-  key_url: `https://google.com/${i}`,
-  ...entry
-}));
-
 export const Simple = () => (
   <BarChart
     width={500}
     height={350}
-    data={data}
+    data={categoryData}
     xAxis={<LinearXAxis type="value" />}
     yAxis={
       <LinearYAxis
@@ -74,7 +69,7 @@ export const WithScroll = () => (
     <BarChart
       width={500}
       height={350}
-      data={data}
+      data={categoryData}
       xAxis={<LinearXAxis type="value" />}
       yAxis={
         <LinearYAxis
@@ -121,7 +116,7 @@ export const Labels = () => (
   <BarChart
     width={350}
     height={250}
-    data={data}
+    data={categoryData}
     xAxis={<LinearXAxis type="value" />}
     yAxis={
       <LinearYAxis
@@ -141,7 +136,7 @@ export const Labels = () => (
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
     <BarChart
-      data={data}
+      data={categoryData}
       series={<BarSeries layout="horizontal" />}
       xAxis={<LinearXAxis type="value" />}
       yAxis={
@@ -158,7 +153,7 @@ export const Waterfall = () => (
   <BarChart
     height={350}
     width={500}
-    data={data}
+    data={categoryData}
     xAxis={<LinearXAxis type="value" />}
     series={<BarSeries layout="horizontal" type="waterfall" />}
     yAxis={
@@ -214,3 +209,30 @@ export const NonZero = () => (
 NonZero.story = {
   name: 'Non-Zero'
 };
+
+export const keyUrl = () => (
+  <BarChart
+    width={500}
+    height={350}
+    data={categoryData.map((x, i) => ({
+      ...x,
+      key_url: `https://example.com/${i}`
+    }))}
+    attachUrl="both"
+    xAxis={<LinearXAxis type="value" />}
+    yAxis={
+      <LinearYAxis
+        type="category"
+        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
+      />
+    }
+    series={
+      <BarSeries
+        colorScheme={'cybertron'}
+        layout="horizontal"
+        padding={0.1}
+        bar={<Bar guide={null} />}
+      />
+    }
+  />
+);
