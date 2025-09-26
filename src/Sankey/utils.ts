@@ -1,4 +1,4 @@
-import { SankeyNode, SankeyLink } from 'd3-sankey';
+import type { SankeyLink, SankeyNode } from 'd3-sankey';
 
 export interface NodeExtra {
   /**

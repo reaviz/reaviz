@@ -17,7 +17,7 @@ export const schemes = {
     '#EE4094',
     '#E84045',
     '#F8A340',
-    '#FFD440'
+    '#FFD440',
   ],
   unifyvizwarm: ['#FFD440', '#F8A340', '#E84045'],
   unify8Colors: chroma
@@ -25,5 +25,5 @@ export const schemes = {
     .correctLightness()
     .colors(8),
   cybertron: chroma.scale(['#2d60e8', '#26efb5']).correctLightness().colors(8),
-  ...chroma.brewer
+  ...chroma.brewer,
 };

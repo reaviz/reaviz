@@ -1,8 +1,9 @@
 import React from 'react';
-import { Map } from './Map';
-import { MapMarker } from './MapMarker';
 import { feature } from 'topojson-client';
 import geojson from 'world-atlas/countries-110m.json';
+
+import { Map } from './Map';
+import { MapMarker } from './MapMarker';
 
 // Using 'countries' is less performant than 'land' but we want to be able
 // to filter and disect on specific shapes
@@ -13,8 +14,8 @@ export default {
   title: 'Charts/Map',
   component: Map as any,
   subcomponents: {
-    MapMarker
-  }
+    MapMarker,
+  },
 };
 
 export const Simple = () => (
@@ -44,9 +45,21 @@ export const Markers = () => (
     height={350}
     width={500}
     markers={[
-      <MapMarker coordinates={[-122.490402, 37.786453]} tooltip="Somewhere" />,
-      <MapMarker coordinates={[-58.3816, -34.6037]} tooltip="Somewhere Else" />,
-      <MapMarker coordinates={[-97.7437, 30.2711]} tooltip="Austin, TX" />
+      <MapMarker
+        key={1}
+        coordinates={[-122.490402, 37.786453]}
+        tooltip="Somewhere"
+      />,
+      <MapMarker
+        key={2}
+        coordinates={[-58.3816, -34.6037]}
+        tooltip="Somewhere Else"
+      />,
+      <MapMarker
+        key={3}
+        coordinates={[-97.7437, 30.2711]}
+        tooltip="Austin, TX"
+      />,
     ]}
   />
 );

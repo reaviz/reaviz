@@ -1,19 +1,23 @@
-import React, { FC, ReactElement } from 'react';
-import { BarChart, BarChartProps } from './BarChart';
-import { ChartNestedDataShape } from '@/common/data';
+import type { FC, ReactElement } from 'react';
+import React from 'react';
+
 import {
-  BarSeriesProps,
-  MARIMEKKO_BAR_SERIES_DEFAULT_PROPS,
-  MarimekkoBarSeries
-} from './BarSeries';
-import {
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LinearYAxisTickSeries,
 } from '@/common/Axis/LinearAxis';
+import type { ChartNestedDataShape } from '@/common/data';
+
+import type { BarChartProps } from './BarChart';
+import { BarChart } from './BarChart';
+import type { BarSeriesProps } from './BarSeries';
+import {
+  MARIMEKKO_BAR_SERIES_DEFAULT_PROPS,
+  MarimekkoBarSeries,
+} from './BarSeries';
 
 export interface MarimekkoChartProps extends BarChartProps {
   data: ChartNestedDataShape[];
@@ -55,5 +59,5 @@ const MARIMEKKO_CHART_DEFAULT_PROPS = {
         />
       }
     />
-  )
+  ),
 };

@@ -1,4 +1,4 @@
-import { TimeInterval } from 'd3-time';
+import type { TimeInterval } from 'd3-time';
 
 const ONE_DAY = 60 * 60 * 24;
 const DURATION_TICK_STEPS = [
@@ -21,7 +21,7 @@ const DURATION_TICK_STEPS = [
   60 * 60 * 6, // 6 h
   60 * 60 * 8, // 8 h
   60 * 60 * 12, // 12 h
-  ONE_DAY // 24 h
+  ONE_DAY, // 24 h
 ];
 
 /**
@@ -86,7 +86,7 @@ export function getTicks(
   tickValues: any[],
   type: 'value' | 'category' | 'time' | 'duration',
   maxTicks = 100,
-  interval?: number | TimeInterval
+  interval?: number | TimeInterval,
 ) {
   let result;
 

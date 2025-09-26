@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface RadialValueMarkerProps {
   color: string;
@@ -10,7 +11,7 @@ export const RadialValueMarker: FC<RadialValueMarkerProps> = ({
   color,
   value,
   className,
-  thickness = 1
+  thickness = 1,
 }) => (
   <circle
     className={className}

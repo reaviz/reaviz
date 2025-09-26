@@ -1,19 +1,21 @@
 import { medDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   RadialAxis,
   RadialAxisArcSeries,
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisTickLine,
-  RadialAxisTickSeries
+  RadialAxisTickSeries,
 } from '@/common/Axis';
 import { GradientStop, RadialGradient } from '@/common/Gradient';
+
 import { RadialAreaChart } from './RadialAreaChart';
 import {
   RadialArea,
   RadialAreaSeries,
   RadialLine,
-  RadialPointSeries
+  RadialPointSeries,
 } from './RadialAreaSeries';
 
 export default {
@@ -24,8 +26,8 @@ export default {
     RadialAreaSeries,
     RadialArea,
     RadialLine,
-    RadialPointSeries
-  }
+    RadialPointSeries,
+  },
 };
 
 export const SemiCircle = () => (
@@ -80,7 +82,7 @@ export const SemiCircleMultiSeries = () => (
               <RadialGradient
                 stops={[
                   <GradientStop offset="0%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="80%" stopOpacity={0.3} key="stop" />
+                  <GradientStop offset="80%" stopOpacity={0.3} key="stop" />,
                 ]}
               />
             }
@@ -147,7 +149,7 @@ export const QuarterCircleMultiSeries = () => (
               <RadialGradient
                 stops={[
                   <GradientStop offset="0%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="80%" stopOpacity={0.3} key="stop" />
+                  <GradientStop offset="80%" stopOpacity={0.3} key="stop" />,
                 ]}
               />
             }

@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { CalendarHeatmap } from './CalendarHeatmap';
 import {
-  heatmapCalendarData,
-  janHeatMapData,
   febHeatMapData,
+  heatmapCalendarData,
+  heatmapCalendarOffsetData,
+  janHeatMapData,
   marchHeatMapData,
-  heatmapCalendarOffsetData
 } from 'reaviz-data-utils';
-import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
+
 import { ChartTooltip, formatValue } from '@/common';
+
+import { CalendarHeatmap } from './CalendarHeatmap';
+import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 
 export default {
   tags: ['snapshot'],
@@ -16,8 +18,8 @@ export default {
   component: CalendarHeatmap,
   subcomponents: {
     HeatmapSeries,
-    HeatmapCell
-  }
+    HeatmapCell,
+  },
 };
 
 export const YearCalendar = () => (
@@ -96,7 +98,7 @@ export const SelectCell = () => {
                   <ChartTooltip
                     content={(d) =>
                       `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
-                        d.data.value
+                        d.data.value,
                       )}`
                     }
                   />

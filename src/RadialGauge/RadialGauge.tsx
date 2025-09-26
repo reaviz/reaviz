@@ -1,18 +1,18 @@
-import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { scaleLinear } from 'd3-scale';
-import {
-  ChartContainer,
-  ChartContextProps,
-  ChartProps
-} from '@/common/containers';
-import { ChartDataShape } from '@/common/data';
-import {
-  RadialGaugeSeries,
+import { useId } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { cloneElement, useCallback } from 'react';
+
+import type { ChartContextProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type { ChartDataShape } from '@/common/data';
+
+import type {
   RadialGaugeSeriesProps,
   StackedRadialGaugeSeries,
-  StackedRadialGaugeSeriesProps
+  StackedRadialGaugeSeriesProps,
 } from './RadialGaugeSeries';
-import { useId } from 'reablocks';
+import { RadialGaugeSeries } from './RadialGaugeSeries';
 
 export interface RadialGaugeProps extends ChartProps {
   /**
@@ -61,7 +61,7 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
   startAngle = 0,
   endAngle = Math.PI * 2,
   series = <RadialGaugeSeries />,
-  containerClassName
+  containerClassName,
 }) => {
   const newId = useId(id);
 
@@ -73,13 +73,13 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
         scale = maxValue.map((max, index) =>
           scaleLinear()
             .domain([minValue?.[index] ?? minValue?.[0] ?? minValue, max])
-            .range([startAngle, endAngle])
+            .range([startAngle, endAngle]),
         );
       } else if (Array.isArray(minValue)) {
         scale = minValue.map((min, index) =>
           scaleLinear()
             .domain([min, maxValue?.[index] ?? maxValue?.[0] ?? maxValue])
-            .range([startAngle, endAngle])
+            .range([startAngle, endAngle]),
         );
       } else {
         scale = scaleLinear()
@@ -94,10 +94,10 @@ export const RadialGauge: FC<RadialGaugeProps> = ({
         startAngle,
         endAngle,
         width: chartWidth,
-        height: chartHeight
+        height: chartHeight,
       });
     },
-    [data, endAngle, maxValue, minValue, series, startAngle, newId]
+    [data, endAngle, maxValue, minValue, series, startAngle, newId],
   );
 
   return (

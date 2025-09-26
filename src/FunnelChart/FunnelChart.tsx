@@ -1,12 +1,13 @@
-import React, { FC, ReactElement, useCallback } from 'react';
 import { CloneElement, useId } from 'reablocks';
-import {
-  ChartContainer,
-  ChartContainerChildProps,
-  ChartProps
-} from '@/common/containers';
-import { ChartShallowDataShape } from '@/common/data';
-import { FunnelSeries, FunnelSeriesProps } from './FunnelSeries/FunnelSeries';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type { ChartShallowDataShape } from '@/common/data';
+
+import type { FunnelSeriesProps } from './FunnelSeries/FunnelSeries';
+import { FunnelSeries } from './FunnelSeries/FunnelSeries';
 
 export interface FunnelChartProps extends ChartProps {
   /**
@@ -48,7 +49,7 @@ export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
         />
       );
     },
-    [data, series]
+    [data, series],
   );
 
   return (

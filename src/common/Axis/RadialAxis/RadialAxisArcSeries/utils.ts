@@ -13,7 +13,7 @@ export const getPointsForLevels = ({ count, outerRadius, ticks, arcs }) => {
       const theta = vertex * polyangle;
       points.push({
         x: hyp * Math.sin(Math.PI - theta),
-        y: hyp * Math.cos(Math.PI - theta)
+        y: hyp * Math.cos(Math.PI - theta),
       });
     }
 

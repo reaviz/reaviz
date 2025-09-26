@@ -1,7 +1,9 @@
-import React, { FC, useMemo } from 'react';
-import invert from 'invert-color';
 import ellipsize from 'ellipsize';
+import invert from 'invert-color';
 import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface SunburstArcLabelProps {
@@ -47,7 +49,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
   fill = 'black',
   fontSize = 14,
   fontFamily = 'sans-serif',
-  radius
+  radius,
 }) => {
   // Get the full text and the truncated text
   // NOTE: This could use some improvement around measuring
@@ -70,12 +72,12 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
   const transition = useMemo(() => {
     if (animated) {
       return {
-        ...DEFAULT_TRANSITION
+        ...DEFAULT_TRANSITION,
       };
     } else {
       return {
         type: false as const,
-        delay: 0
+        delay: 0,
       };
     }
   }, [animated]);
@@ -97,7 +99,7 @@ export const SunburstArcLabel: FC<Partial<SunburstArcLabelProps>> = ({
       <text
         style={{
           pointerEvents: 'none',
-          userSelect: 'none'
+          userSelect: 'none',
         }}
         fill={fill}
         dy="0.35em"

@@ -1,15 +1,12 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  FC,
-  PropsWithChildren,
-  useCallback
-} from 'react';
-import { getPositionForTarget } from '@/common/utils/position';
-import { BrushSlice, BrushChangeEvent } from './BrushSlice';
-import { ChartDataTypes } from '@/common/data';
+import type { FC, PropsWithChildren } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+
+import type { ChartDataTypes } from '@/common/data';
 import { Move } from '@/common/Gestures/Move';
+import { getPositionForTarget } from '@/common/utils/position';
+
+import type { BrushChangeEvent } from './BrushSlice';
+import { BrushSlice } from './BrushSlice';
 
 export interface BrushConfiguration {
   disabled?: boolean;
@@ -40,13 +37,13 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
     width,
     start: startProp,
     end: endProp,
-    onBrushChange
+    onBrushChange,
   } = props;
   const [isSlicing, setIsSlicing] = useState(false);
   const [initial, setInitial] = useState<number>();
   const [range, setRange] = useState<BrushState>({
     start: props.start || 0,
-    end: props.end || props.width
+    end: props.end || props.width,
   });
   const { start, end } = range;
 
@@ -79,14 +76,14 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
 
       return { start: startUpdated, end: endUpdated };
     },
-    [end, start, width]
+    [end, start, width],
   );
 
   const getPositionsForPanEvent = useCallback((event: any) => {
     const eventObj = {
       target: ref.current,
       clientX: event.clientX,
-      clientY: event.clientY
+      clientY: event.clientY,
     };
 
     return getPositionForTarget(eventObj);
@@ -102,7 +99,7 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
         return ensurePositionInBounds(initial, x);
       }
     },
-    [ensurePositionInBounds, getPositionsForPanEvent, initial]
+    [ensurePositionInBounds, getPositionsForPanEvent, initial],
   );
 
   const onMoveStart = useCallback(
@@ -114,7 +111,7 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
         setInitial(positions.x);
       }
     },
-    [disabled, getPositionsForPanEvent]
+    [disabled, getPositionsForPanEvent],
   );
 
   const onMove = useCallback(
@@ -125,14 +122,14 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
         if (onBrushChange) {
           onBrushChange({
             start,
-            end
+            end,
           });
         }
 
         setRange({ start, end });
       }
     },
-    [disabled, getStartEnd, onBrushChange]
+    [disabled, getStartEnd, onBrushChange],
   );
 
   const onMoveEnd = useCallback(() => {
@@ -142,7 +139,7 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
   const onMoveCancel = useCallback(() => {
     const val = {
       start: 0,
-      end: width
+      end: width,
     };
 
     setRange(val);
@@ -162,14 +159,14 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
         onBrushChange(val);
       }
     },
-    [ensurePositionInBounds, onBrushChange]
+    [ensurePositionInBounds, onBrushChange],
   );
 
   useEffect(() => {
     if (end === width) {
       setRange((prev) => ({
         ...prev,
-        end: width
+        end: width,
       }));
     }
   }, [end, width]);
@@ -197,7 +194,7 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
       <g
         style={{
           pointerEvents: isSlicing ? 'none' : 'auto',
-          cursor: disabled ? '' : 'crosshair'
+          cursor: disabled ? '' : 'crosshair',
         }}
       >
         {children}

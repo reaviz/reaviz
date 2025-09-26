@@ -1,9 +1,14 @@
-import React, { FC, Fragment, ReactElement } from 'react';
-import { ChartShallowDataShape } from '@/common/data';
 import { range } from 'd3-array';
-import { FunnelAxisLabel, FunnelAxisLabelProps } from './FunnelAxisLabel';
 import { CloneElement } from 'reablocks';
-import { FunnelAxisLine, FunnelAxisLineProps } from './FunnelAxisLine';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment } from 'react';
+
+import type { ChartShallowDataShape } from '@/common/data';
+
+import type { FunnelAxisLabelProps } from './FunnelAxisLabel';
+import { FunnelAxisLabel } from './FunnelAxisLabel';
+import type { FunnelAxisLineProps } from './FunnelAxisLine';
+import { FunnelAxisLine } from './FunnelAxisLine';
 
 export interface FunnelAxisProps {
   /**
@@ -37,7 +42,7 @@ export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
   xScale,
   yScale,
   line = <FunnelAxisLine />,
-  label = <FunnelAxisLabel />
+  label = <FunnelAxisLabel />,
 }) => {
   const lines = range(0, data.length);
 

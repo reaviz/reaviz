@@ -1,23 +1,26 @@
-import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
+import { max } from 'd3-array';
+import type { TimeInterval } from 'd3-time';
+import ellipsize from 'ellipsize';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import { mergeDefaultProps } from '@/common/utils';
+import { formatValue } from '@/common/utils/formatting';
+import { calculateDimensions } from '@/common/utils/size';
+import { getMaxTicks, getTicks } from '@/common/utils/ticks';
+
+import type { LinearAxisProps } from './LinearAxis';
+import type { LinearAxisTickLabelProps } from './LinearAxisTickLabel';
 import {
   LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearAxisTickLabel,
-  LinearAxisTickLabelProps
 } from './LinearAxisTickLabel';
+import type { LinearAxisTickLineProps } from './LinearAxisTickLine';
 import {
   LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisTickLine,
-  LinearAxisTickLineProps
 } from './LinearAxisTickLine';
-import { formatValue } from '@/common/utils/formatting';
-import { getTicks, getMaxTicks } from '@/common/utils/ticks';
-import { TimeInterval } from 'd3-time';
-import { CloneElement } from 'reablocks';
-import { LinearAxisProps } from './LinearAxis';
-import ellipsize from 'ellipsize';
-import { max } from 'd3-array';
-import { calculateDimensions } from '@/common/utils/size';
-import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickSeriesProps {
   height: number;
@@ -46,7 +49,7 @@ interface ProcessedTick {
 }
 
 export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
-  props
+  props,
 ) => {
   const {
     scale,
@@ -58,15 +61,15 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     tickValues,
     interval,
     line,
-    axis
+    axis,
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
     () => ({
       ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
-      ...(label?.props ?? {})
+      ...(label?.props ?? {}),
     }),
-    [label?.props]
+    [label?.props],
   );
 
   /**
@@ -96,7 +99,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         return { x: 0, y: scaledTick };
       }
     },
-    [orientation]
+    [orientation],
   );
 
   /**
@@ -138,10 +141,10 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
       const text = ellipsize(fullText, 18);
       const size = label
         ? calculateDimensions(
-          text,
-          labelProps.fontFamily,
-          labelProps.fontSize?.toString()
-        )
+            text,
+            labelProps.fontFamily,
+            labelProps.fontSize?.toString(),
+          )
         : {};
 
       return {
@@ -154,7 +157,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
             ? 'center'
             : scaledTick < midpoint
               ? 'start'
-              : 'end'
+              : 'end',
       };
     });
   }, [
@@ -168,7 +171,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     labelFormatFn,
     scale,
     tickSize,
-    tickValues
+    tickValues,
   ]);
 
   /**
@@ -260,5 +263,5 @@ export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
       position="center"
     />
   ),
-  tickSize: 30
+  tickSize: 30,
 };

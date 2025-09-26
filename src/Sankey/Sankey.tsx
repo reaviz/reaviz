@@ -1,40 +1,33 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useState
-} from 'react';
 import {
   sankey,
+  sankeyCenter,
+  sankeyJustify,
   sankeyLeft,
   sankeyRight,
-  sankeyCenter,
-  sankeyJustify
 } from 'd3-sankey';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers/ChartContainer';
 import { CloneElement, useId } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
 
-import { getColor, ColorSchemeType } from '@/common/color';
-import { SankeyNodeProps, SankeyNode } from './SankeyNode';
-import { SankeyLinkProps, SankeyLink } from './SankeyLink';
-import {
-  SankeyNodeExtra,
-  SankeyLinkExtra,
-  LABEL_PADDING_PERCENT
-} from './utils';
-import { SankeyLabelPosition } from './SankeyLabel';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
+  ChartContainerChildProps,
+  ChartProps,
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+
+import type { SankeyLabelPosition } from './SankeyLabel';
+import type { SankeyLink, SankeyLinkProps } from './SankeyLink';
+import type { SankeyNode, SankeyNodeProps } from './SankeyNode';
+import type { SankeyLinkExtra, SankeyNodeExtra } from './utils';
+import { LABEL_PADDING_PERCENT } from './utils';
 
 const JUSTIFICATION = {
   justify: sankeyJustify,
   center: sankeyCenter,
   left: sankeyLeft,
-  right: sankeyRight
+  right: sankeyRight,
 };
 
 export type Justification = 'justify' | 'center' | 'left' | 'right';
@@ -129,13 +122,13 @@ export const Sankey: FC<SankeyProps> = ({
           data: nodes,
           colorScheme,
           point: nodes[index],
-          index
+          index,
         });
       } else {
         return node.props.color;
       }
     },
-    [colorScheme, nodes]
+    [colorScheme, nodes],
   );
 
   const onNodeActive = useCallback((node: SankeyNodeExtra) => {
@@ -169,7 +162,7 @@ export const Sankey: FC<SankeyProps> = ({
   const onLinkActive = useCallback((link: SankeyLinkExtra) => {
     const activeNodes: SankeyNodeExtra[] = [
       link.source as SankeyNodeExtra,
-      link.target as SankeyNodeExtra
+      link.target as SankeyNodeExtra,
     ];
     const activeLinks: SankeyLinkExtra[] = [link];
 
@@ -195,10 +188,10 @@ export const Sankey: FC<SankeyProps> = ({
       computedNode: SankeyNodeExtra,
       index: number,
       chartWidth: number,
-      node?: NodeElement
+      node?: NodeElement,
     ) => {
       const active = activeNodes.some(
-        (node) => node.index === computedNode.index
+        (node) => node.index === computedNode.index,
       );
       const disabled = activeNodes.length > 0 && !active;
       const labelPadding =
@@ -220,13 +213,13 @@ export const Sankey: FC<SankeyProps> = ({
         />
       );
     },
-    [activeNodes, animated, onInactive, onNodeActive, labelPosition]
+    [activeNodes, animated, onInactive, onNodeActive, labelPosition],
   );
 
   const renderLink = useCallback(
     (computedLink: SankeyLinkExtra, index: number) => {
       const active = activeLinks.some(
-        (link) => link.index === computedLink.index
+        (link) => link.index === computedLink.index,
       );
       const disabled = activeLinks.length > 0 && !active;
 
@@ -244,7 +237,7 @@ export const Sankey: FC<SankeyProps> = ({
         />
       );
     },
-    [activeLinks, id, animated, links, onInactive, onLinkActive]
+    [activeLinks, id, animated, links, onInactive, onLinkActive],
   );
 
   const getNodesAndLinks = useCallback(
@@ -256,7 +249,7 @@ export const Sankey: FC<SankeyProps> = ({
       const sankeyChart = sankey()
         .extent([
           [1 + padding, 1],
-          [chartWidth - padding, chartHeight]
+          [chartWidth - padding, chartHeight],
         ])
         .nodeWidth(nodeWidth)
         .nodePadding(nodePadding)
@@ -267,18 +260,18 @@ export const Sankey: FC<SankeyProps> = ({
       const nodesCopy: any = nodes.map((node, index) => ({
         id: node.props.id,
         title: node.props.title,
-        color: getNodeColor(node, index)
+        color: getNodeColor(node, index),
       }));
 
       const linksCopy = links.map((link) => ({
         source: link.props.source,
         target: link.props.target,
-        value: link.props.value
+        value: link.props.value,
       }));
 
       const { nodes: sankeyNodes, links: sankeyLinks } = sankeyChart({
         nodes: nodesCopy,
-        links: linksCopy
+        links: linksCopy,
       });
 
       /*
@@ -302,8 +295,8 @@ export const Sankey: FC<SankeyProps> = ({
       nodePadding,
       nodeWidth,
       nodes,
-      labelPosition
-    ]
+      labelPosition,
+    ],
   );
 
   const renderChart = useCallback(
@@ -314,21 +307,21 @@ export const Sankey: FC<SankeyProps> = ({
 
       const { sankeyNodes, sankeyLinks } = getNodesAndLinks(
         chartWidth,
-        chartHeight
+        chartHeight,
       );
 
       return (
         <Fragment key="group">
           {sankeyLinks.map((link, index) =>
-            renderLink(link as SankeyLinkExtra, index)
+            renderLink(link as SankeyLinkExtra, index),
           )}
           {sankeyNodes.map((node: SankeyNodeExtra, index) =>
-            renderNode(node, index, chartWidth, nodeMap.get(node.title))
+            renderNode(node, index, chartWidth, nodeMap.get(node.title)),
           )}
         </Fragment>
       );
     },
-    [getNodesAndLinks, nodeMap, renderLink, renderNode]
+    [getNodesAndLinks, nodeMap, renderLink, renderNode],
   );
 
   return (

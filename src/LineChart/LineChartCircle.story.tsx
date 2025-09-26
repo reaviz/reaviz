@@ -1,9 +1,11 @@
+import { symbol, symbolStar } from 'd3-shape';
 import React from 'react';
 import { singleDateData } from 'reaviz-data-utils';
-import { LineChart } from './LineChart';
+
 import { PointSeries } from '@/AreaChart';
 import { ScatterPoint } from '@/ScatterPlot';
-import { symbol, symbolStar } from 'd3-shape';
+
+import { LineChart } from './LineChart';
 import { LineSeries } from './LineSeries';
 
 export default {
@@ -11,8 +13,8 @@ export default {
   title: 'Charts/Line Chart/Circle Series',
   component: LineChart,
   subcomponents: {
-    LineSeries
-  }
+    LineSeries,
+  },
 };
 
 export const On = () => (
@@ -87,7 +89,7 @@ export const Shapes = () => (
                       style={{
                         fill: 'lime',
                         stroke: 'purple',
-                        strokeWidth: 1.5
+                        strokeWidth: 1.5,
                       }}
                     />
                   );

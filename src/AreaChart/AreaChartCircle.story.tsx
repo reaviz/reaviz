@@ -1,5 +1,9 @@
+import { symbol, symbolStar } from 'd3-shape';
 import React from 'react';
 import { singleDateData } from 'reaviz-data-utils';
+
+import { ScatterPoint } from '@/ScatterPlot';
+
 import { AreaChart } from './AreaChart';
 import {
   Area,
@@ -7,10 +11,8 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries
+  StackedNormalizedAreaSeries,
 } from './AreaSeries';
-import { ScatterPoint } from '@/ScatterPlot';
-import { symbol, symbolStar } from 'd3-shape';
 
 export default {
   tags: ['snapshot'],
@@ -22,8 +24,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries
-  }
+    StackedNormalizedAreaSeries,
+  },
 };
 
 export const On = () => (
@@ -98,7 +100,7 @@ export const Shapes = () => (
                       style={{
                         fill: 'lime',
                         stroke: 'purple',
-                        strokeWidth: 1.5
+                        strokeWidth: 1.5,
                       }}
                     />
                   );

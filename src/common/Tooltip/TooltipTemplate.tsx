@@ -1,6 +1,9 @@
-import React, { Fragment, FC } from 'react';
+import type { FC } from 'react';
+import React, { Fragment } from 'react';
+
+import type { ChartInternalDataTypes } from '@/common/data';
 import { formatValue } from '@/common/utils/formatting';
-import { ChartInternalDataTypes } from '@/common/data';
+
 import css from './TooltipTemplate.module.css';
 
 interface SingleTooltipValue {
@@ -35,7 +38,7 @@ interface TooltipTemplateProps {
 export const TooltipTemplate: FC<TooltipTemplateProps> = ({
   value,
   color,
-  className
+  className,
 }) => {
   if (!value) {
     return null;
@@ -80,7 +83,7 @@ export const TooltipTemplate: FC<TooltipTemplateProps> = ({
           <Fragment>
             {formatValue(
               (value as SingleTooltipValue).value ||
-                (value as SingleTooltipValue).y
+                (value as SingleTooltipValue).y,
             )}
           </Fragment>
         )}

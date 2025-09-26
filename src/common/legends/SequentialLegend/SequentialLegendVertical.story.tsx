@@ -1,9 +1,10 @@
 import React from 'react';
-import { SequentialLegend } from './SequentialLegend';
 import { heatmapSimpleData } from 'reaviz-data-utils';
 
+import { SequentialLegend } from './SequentialLegend';
+
 export default {
-  title: 'Utils/Legend/Sequential/Vertical'
+  title: 'Utils/Legend/Sequential/Vertical',
 };
 
 export const Simple = () => (
@@ -17,7 +18,7 @@ export const LongText = () => (
     <SequentialLegend
       data={[
         { key: 'Foo', data: 50000000 },
-        { key: 'Bar', data: 0 }
+        { key: 'Bar', data: 0 },
       ]}
     />
   </div>

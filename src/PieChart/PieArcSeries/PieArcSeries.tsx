@@ -1,21 +1,23 @@
-import React, { FC, Fragment, ReactElement, useMemo } from 'react';
 import { CloneElement } from 'reablocks';
-import { ArcData } from '@/PieChart';
-import { PieArc, PieArcProps } from './PieArc';
-import {
-  PIE_ARC_LABEL_DEFAULT_PROPS,
-  PieArcLabel,
-  PieArcLabelProps
-} from './PieArcLabel';
-import { getColor, ColorSchemeType } from '@/common/color';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useMemo } from 'react';
+import { identifier } from 'safe-identifier';
+
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type { ArcData } from '@/PieChart';
+
+import type { PieArcProps } from './PieArc';
+import { PieArc } from './PieArc';
+import type { PieArcLabelProps } from './PieArcLabel';
+import { PIE_ARC_LABEL_DEFAULT_PROPS, PieArcLabel } from './PieArcLabel';
 import {
   calculateCentroid,
   calculateInnerArc,
   calculateLabelPositions,
-  calculateRadius
+  calculateRadius,
 } from './radiusUtils';
-import { identifier } from 'safe-identifier';
-import { mergeDefaultProps } from '@/common';
 
 export interface PieArcSeriesProps {
   /**
@@ -120,12 +122,12 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     padAngle,
     padRadius,
     arc,
-    data
+    data,
   } = mergeDefaultProps(PIE_ARC_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
     () => ({ ...PIE_ARC_LABEL_DEFAULT_PROPS, ...label?.props }),
-    [label]
+    [label],
   );
 
   const { outerRadius, innerRadius, labelWidth } = calculateRadius(
@@ -133,7 +135,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     width,
     label,
     arcWidth,
-    doughnut
+    doughnut,
   );
 
   const innerArc = calculateInnerArc(
@@ -143,7 +145,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     cornerRadius,
     padAngle,
     padRadius,
-    explode
+    explode,
   );
 
   const positions = label
@@ -155,7 +157,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
         cornerRadius,
         padAngle,
         padRadius,
-        displayAllLabels
+        displayAllLabels,
       )
     : [];
 
@@ -167,7 +169,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
       data,
       colorScheme,
       point: arcData.data,
-      index
+      index,
     });
 
     return (
@@ -208,5 +210,5 @@ export const PIE_ARC_SERIES_DEFAULT_PROPS = {
   displayAllLabels: false,
   arcWidth: 0.25,
   label: <PieArcLabel />,
-  arc: <PieArc />
+  arc: <PieArc />,
 };

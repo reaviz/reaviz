@@ -1,22 +1,24 @@
 import chroma from 'chroma-js';
-import { multiDateData, longMultiDateData } from 'reaviz-data-utils';
-import { LineChart } from './LineChart';
+import { longMultiDateData, multiDateData } from 'reaviz-data-utils';
+
 import {
-  StackedAreaChart,
-  StackedNormalizedAreaChart,
-  StackedAreaSeries,
   Line,
+  PointSeries,
+  StackedAreaChart,
+  StackedAreaSeries,
+  StackedNormalizedAreaChart,
   StackedNormalizedAreaSeries,
-  PointSeries
 } from '@/AreaChart';
 import {
-  LinearXAxisTickSeries,
   LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis,
   LinearYAxisTickSeries,
-  LinearYAxis
 } from '@/common/Axis/LinearAxis';
-import { LineSeries } from './LineSeries';
+
 import { ScatterPoint } from '../ScatterPlot';
+import { LineChart } from './LineChart';
+import { LineSeries } from './LineSeries';
 
 export default {
   tags: ['snapshot'],
@@ -28,8 +30,8 @@ export default {
     StackedAreaChart,
     StackedNormalizedAreaChart,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries
-  }
+    StackedNormalizedAreaSeries,
+  },
 };
 
 export const _Simple = () => (
@@ -129,7 +131,7 @@ export const CustomLineStyles = () => (
               ) {
                 console.log('Style callback...', data);
                 return {
-                  strokeDasharray: '5'
+                  strokeDasharray: '5',
                 };
               }
             }}
@@ -201,7 +203,7 @@ const prettyData = (() => {
     for (let j = 0; j < 100; j++) {
       series.push({
         key: j,
-        data: (i / 10 + 1) * Math.sin((Math.PI * (i + j)) / 50)
+        data: (i / 10 + 1) * Math.sin((Math.PI * (i + j)) / 50),
       });
     }
     data.push({ key: i, data: series });

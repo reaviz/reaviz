@@ -1,7 +1,9 @@
 import React from 'react';
-import { BarChart } from './BarChart';
 import { categoryData } from 'reaviz-data-utils';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
+import { BarChart } from './BarChart';
 import {
   Bar,
   BarLabel,
@@ -11,7 +13,7 @@ import {
   MarimekkoBarSeries,
   RangeLines,
   StackedBarSeries,
-  StackedNormalizedBarSeries
+  StackedNormalizedBarSeries,
 } from './BarSeries';
 
 export default {
@@ -27,8 +29,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries
-  }
+    HistogramBarSeries,
+  },
 };
 
 export const AllAxes = () => (
@@ -50,7 +52,7 @@ export const XAxis = () => (
 );
 
 XAxis.story = {
-  name: 'X-Axis'
+  name: 'X-Axis',
 };
 
 export const YAxis = () => (
@@ -63,5 +65,5 @@ export const YAxis = () => (
 );
 
 YAxis.story = {
-  name: 'Y-Axis'
+  name: 'Y-Axis',
 };

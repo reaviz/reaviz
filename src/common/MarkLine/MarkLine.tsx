@@ -1,4 +1,6 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
+
 import css from './MarkLine.module.css';
 
 export interface MarkLineProps {
@@ -12,7 +14,7 @@ export const MarkLine: FC<Partial<MarkLineProps>> = ({
   pointX,
   height,
   strokeWidth = 1,
-  strokeColor = '#eee'
+  strokeColor = '#eee',
 }) => (
   <line
     stroke={strokeColor}

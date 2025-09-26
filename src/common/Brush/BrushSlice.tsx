@@ -1,6 +1,9 @@
-import React, { Fragment, useState, FC, useCallback } from 'react';
-import { BrushHandle } from './BrushHandle';
+import type { FC } from 'react';
+import React, { Fragment, useCallback, useState } from 'react';
+
 import { Move } from '@/common/Gestures/Move';
+
+import { BrushHandle } from './BrushHandle';
 import css from './BrushSlice.module.css';
 
 export interface BrushChangeEvent {
@@ -39,11 +42,11 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
       if (startUpdated >= 0 && endUpdated <= width) {
         onBrushChange({
           start: startUpdated,
-          end: endUpdated
+          end: endUpdated,
         });
       }
     },
-    [start, end, width, onBrushChange]
+    [start, end, width, onBrushChange],
   );
 
   const onHandleDrag = useCallback(
@@ -53,10 +56,10 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
 
       onBrushChange({
         start: startUpdated,
-        end: endUpdated
+        end: endUpdated,
       });
     },
-    [end, onBrushChange, start]
+    [end, onBrushChange, start],
   );
 
   return (
@@ -82,7 +85,7 @@ export const BrushSlice: FC<BrushSliceProps> = (props) => {
             style={{
               cursor: isDragging ? 'grabbing' : 'grab',
               opacity: hasNoSlice ? 0 : 0.1,
-              pointerEvents: !hasNoSlice ? 'initial' : 'none'
+              pointerEvents: !hasNoSlice ? 'initial' : 'none',
             }}
           />
         </Move>

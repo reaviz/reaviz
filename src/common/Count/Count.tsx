@@ -1,5 +1,8 @@
-import React, { FC } from 'react';
-import { CountInputs, useCount } from './useCount';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { CountInputs } from './useCount';
+import { useCount } from './useCount';
 
 export interface CountProps extends CountInputs {
   className?: string;

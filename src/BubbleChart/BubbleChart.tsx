@@ -1,13 +1,17 @@
-import React, { FC, ReactElement, useCallback } from 'react';
 import { hierarchy, pack } from 'd3-hierarchy';
 import { CloneElement } from 'reablocks';
-import {
-  ChartContainer,
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type {
   ChartContainerChildProps,
   ChartProps,
-  ChartShallowDataShape
+  ChartShallowDataShape,
 } from '@/common';
-import { BubbleSeries, BubbleSeriesProps } from './BubbleSeries';
+import { ChartContainer } from '@/common';
+
+import type { BubbleSeriesProps } from './BubbleSeries';
+import { BubbleSeries } from './BubbleSeries';
 
 export interface BubbleChartProps extends ChartProps {
   /**
@@ -29,7 +33,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
   className,
   containerClassName,
   margins = 10,
-  series = <BubbleSeries />
+  series = <BubbleSeries />,
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -41,7 +45,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
 
       return bubble(root).leaves();
     },
-    [data]
+    [data],
   );
 
   const renderChart = useCallback(
@@ -56,7 +60,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
         />
       );
     },
-    [series, getData]
+    [series, getData],
   );
 
   return (

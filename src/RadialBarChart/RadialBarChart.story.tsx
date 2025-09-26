@@ -1,19 +1,21 @@
-import { RadialBarChart } from './RadialBarChart';
+import { useState } from 'react';
 import {
   largeCategoryData,
   medDateData,
-  multiCategory
+  multiCategory,
 } from 'reaviz-data-utils';
-import { RadialBarSeries, RadialBar, RadialGuideBar } from './RadialBarSeries';
+
 import {
   RadialAxis,
   RadialAxisArcSeries,
-  RadialAxisTickSeries,
   RadialAxisTick,
-  RadialAxisTickLine
+  RadialAxisTickLine,
+  RadialAxisTickSeries,
 } from '@/common/Axis/RadialAxis';
 import { schemes } from '@/common/color';
-import { useState } from 'react';
+
+import { RadialBarChart } from './RadialBarChart';
+import { RadialBar, RadialBarSeries, RadialGuideBar } from './RadialBarSeries';
 
 export default {
   tags: ['snapshot'],
@@ -22,8 +24,8 @@ export default {
   subcomponents: {
     RadialBarSeries,
     RadialBar,
-    RadialGuideBar
-  }
+    RadialGuideBar,
+  },
 };
 
 export const Simple = () => (

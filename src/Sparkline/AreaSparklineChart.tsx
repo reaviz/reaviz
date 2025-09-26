@@ -1,14 +1,17 @@
-import React, { FC } from 'react';
-import { AreaChart, AreaChartProps, AreaSeries, Area, Line } from '@/AreaChart';
-import { ChartShallowDataShape } from '@/common/data';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { AreaChartProps } from '@/AreaChart';
+import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
 import { PointSeries } from '@/AreaChart';
 import {
-  LinearYAxisTickSeries,
-  LinearYAxis,
   LinearXAxis,
-  LinearXAxisTickSeries
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries,
 } from '@/common/Axis/LinearAxis';
-import { GradientStop, Gradient } from '@/common/Gradient';
+import type { ChartShallowDataShape } from '@/common/data';
+import { Gradient, GradientStop } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 
 export interface AreaSparklineChartProps extends AreaChartProps {
@@ -16,7 +19,7 @@ export interface AreaSparklineChartProps extends AreaChartProps {
 }
 
 export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
-  props
+  props,
 ) => (
   <AreaChart
     gridlines={null}
@@ -32,7 +35,7 @@ export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
               <Gradient
                 stops={[
                   <GradientStop offset="10%" stopOpacity={0} key="start" />,
-                  <GradientStop offset="80%" stopOpacity={1} key="stop" />
+                  <GradientStop offset="80%" stopOpacity={1} key="stop" />,
                 ]}
               />
             }

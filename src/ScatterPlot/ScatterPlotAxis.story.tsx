@@ -1,20 +1,22 @@
 import React, { Fragment, useState } from 'react';
-import { ScatterPlot } from './ScatterPlot';
 import {
+  largeSignalChartData,
   randomNumber,
   singleDateData,
-  largeSignalChartData
 } from 'reaviz-data-utils';
-import { ScatterSeries, ScatterPoint } from './ScatterSeries';
+
 import {
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries,
 } from '@/common/Axis/LinearAxis';
-import { getYScale, getXScale } from '@/common/scales';
+import { getXScale, getYScale } from '@/common/scales';
+
+import { ScatterPlot } from './ScatterPlot';
+import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
 export default {
   tags: ['snapshot'],
@@ -22,8 +24,8 @@ export default {
   component: ScatterPlot,
   subcomponents: {
     ScatterSeries,
-    ScatterPoint
-  }
+    ScatterPoint,
+  },
 };
 
 export const TopBottomAxis = () => {
@@ -34,16 +36,16 @@ export const TopBottomAxis = () => {
       {
         key: 'Before',
         data: 0,
-        x: 'Before'
+        x: 'Before',
       },
       {
         key: 'After',
         data: 0,
-        x: 'After'
-      }
+        x: 'After',
+      },
     ],
     isMultiSeries: false,
-    isDiverging: true
+    isDiverging: true,
   });
 
   return (
@@ -69,6 +71,7 @@ export const TopBottomAxis = () => {
       }
       secondaryAxis={[
         <LinearXAxis
+          key="category"
           type="category"
           orientation="horizontal"
           position="start"
@@ -80,7 +83,7 @@ export const TopBottomAxis = () => {
               label={<LinearXAxisTickLabel padding={20} position="start" />}
             />
           }
-        />
+        />,
       ]}
       yAxis={<LinearYAxis type="value" axisLine={null} />}
     />
@@ -88,7 +91,7 @@ export const TopBottomAxis = () => {
 };
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis'
+  name: 'Top + Bottom Axis',
 };
 
 export const LeftRightAxis = () => {
@@ -99,16 +102,16 @@ export const LeftRightAxis = () => {
       {
         key: 'Low',
         data: 0,
-        y: 'Low'
+        y: 'Low',
       },
       {
         key: 'High',
         data: 0,
-        y: 'High'
-      }
+        y: 'High',
+      },
     ],
     isMultiSeries: false,
-    isDiverging: true
+    isDiverging: true,
   });
 
   return (
@@ -132,6 +135,7 @@ export const LeftRightAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           position="start"
           axisLine={null}
@@ -149,7 +153,7 @@ export const LeftRightAxis = () => {
               }
             />
           }
-        />
+        />,
       ]}
       xAxis={<LinearXAxis type="time" axisLine={null} />}
     />
@@ -157,7 +161,7 @@ export const LeftRightAxis = () => {
 };
 
 LeftRightAxis.story = {
-  name: 'Left + Right Axis'
+  name: 'Left + Right Axis',
 };
 
 const BubbleChartLiveUpdate = () => {

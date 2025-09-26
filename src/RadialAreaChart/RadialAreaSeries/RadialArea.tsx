@@ -1,16 +1,19 @@
-import React, { ReactElement, useCallback, FC, useMemo, Fragment } from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import {
-  radialArea,
-  curveCardinalClosed,
-  curveLinearClosed,
   curveCardinal,
-  curveLinear
+  curveCardinalClosed,
+  curveLinear,
+  curveLinearClosed,
+  radialArea,
 } from 'd3-shape';
-import { RadialGradient, RadialGradientProps } from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
-import { RadialInterpolationTypes } from '@/common/utils/interpolation';
-import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import type { RadialGradientProps } from '@/common/Gradient';
+import { RadialGradient } from '@/common/Gradient';
+import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
+import type { RadialInterpolationTypes } from '@/common/utils/interpolation';
 
 export interface RadialAreaProps {
   /**
@@ -92,20 +95,20 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   innerRadius,
   interpolation,
   gradient = <RadialGradient />,
-  isClosedCurve = true
+  isClosedCurve = true,
 }) => {
   const transition = useMemo(
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: index * 0.05
-        }
+            ...DEFAULT_TRANSITION,
+            delay: index * 0.05,
+          }
         : {
-          type: false as const,
-          delay: 0
-        },
-    [animated, index]
+            type: false as const,
+            delay: 0,
+          },
+    [animated, index],
   );
 
   const getFill = useCallback(
@@ -116,7 +119,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
 
       return `url(#${id}-gradient)`;
     },
-    [id, gradient]
+    [id, gradient],
   );
 
   const getPath = useCallback(
@@ -138,22 +141,22 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
 
       return radialFn(d as any);
     },
-    [interpolation, isClosedCurve, xScale, innerRadius, yScale]
+    [interpolation, isClosedCurve, xScale, innerRadius, yScale],
   );
 
   const enter = useMemo(
     () => ({
       d: getPath(data!),
-      opacity: 1
+      opacity: 1,
     }),
-    [data, getPath]
+    [data, getPath],
   );
 
   const exit = useMemo(() => {
     const [yStart] = yScale.domain();
     return {
       d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
-      opacity: 0
+      opacity: 0,
     };
   }, [data, getPath, yScale]);
 
@@ -164,7 +167,7 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       <MotionPath
         custom={{
           enter,
-          exit
+          exit,
         }}
         transition={transition}
         pointerEvents="none"

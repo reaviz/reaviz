@@ -1,6 +1,9 @@
-import React, { FC } from 'react';
-import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { RadialGaugeArcProps } from './RadialGaugeArc';
+import { RadialGaugeArc } from './RadialGaugeArc';
 
 export const RadialGaugeOuterArc: FC<Partial<RadialGaugeArcProps>> = (
-  props
+  props,
 ) => <RadialGaugeArc animated={false} disabled={true} {...props} />;

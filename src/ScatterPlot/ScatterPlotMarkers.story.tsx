@@ -2,25 +2,27 @@ import React from 'react';
 import {
   histogramNumberData,
   medDateData,
-  medSignalChartData
+  medSignalChartData,
 } from 'reaviz-data-utils';
+
 import {
-  RadialAxis,
-  RadialValueMarker,
-  RadialAxisTickLine,
-  RadialAxisArcSeries,
-  RadialAxisTick,
-  RadialAxisTickSeries,
-  schemes,
   LinearValueMarker,
   LinearXAxis,
-  LinearYAxis
+  LinearYAxis,
+  RadialAxis,
+  RadialAxisArcSeries,
+  RadialAxisTick,
+  RadialAxisTickLine,
+  RadialAxisTickSeries,
+  RadialValueMarker,
+  schemes,
 } from '@/common';
 import {
   RadialScatterPlot,
   RadialScatterPoint,
-  RadialScatterSeries
+  RadialScatterSeries,
 } from '@/RadialScatterPlot';
+
 import { ScatterPlot } from './ScatterPlot';
 import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
@@ -33,8 +35,8 @@ export default {
     ScatterSeries,
     ScatterPoint,
     RadialScatterSeries,
-    RadialScatterPoint
-  }
+    RadialScatterPoint,
+  },
 };
 
 export const LinearValueMarkers = () => (
@@ -47,8 +49,8 @@ export const LinearValueMarkers = () => (
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
         valueMarkers={[
-          <LinearValueMarker value={2} color="#D740BE" />,
-          <LinearValueMarker value={5} color="#F8A340" />
+          <LinearValueMarker key={2} value={2} color="#D740BE" />,
+          <LinearValueMarker key={5} value={5} color="#F8A340" />,
         ]}
       />
     }
@@ -67,8 +69,18 @@ export const LinearValueMarkersVertical = () => (
       <ScatterSeries
         point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
         valueMarkers={[
-          <LinearValueMarker value={5} color="#D740BE" direction="vertical" />,
-          <LinearValueMarker value={25} color="#F8A340" direction="vertical" />
+          <LinearValueMarker
+            key={5}
+            value={5}
+            color="#D740BE"
+            direction="vertical"
+          />,
+          <LinearValueMarker
+            key={25}
+            value={25}
+            color="#F8A340"
+            direction="vertical"
+          />,
         ]}
       />
     }
@@ -87,8 +99,8 @@ export const RadialValueMarkers = () => (
         animated
         point={<RadialScatterPoint size={5} color="rgba(45, 96, 232, .8)" />}
         valueMarkers={[
-          <RadialValueMarker value={12} color="#D740BE" />,
-          <RadialValueMarker value={6} color="#F8A340" />
+          <RadialValueMarker key={12} value={12} color="#D740BE" />,
+          <RadialValueMarker key={6} value={6} color="#F8A340" />,
         ]}
       />
     }

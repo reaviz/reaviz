@@ -1,22 +1,19 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useMemo,
-  useRef,
-  useState
-} from 'react';
-import { HierarchyCircularNode } from 'd3-hierarchy';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { CloneElement } from 'reablocks';
+import type { HierarchyCircularNode } from 'd3-hierarchy';
 import { motion } from 'motion/react';
-import { Gradient, GradientProps } from '@/common/Gradient';
-import { Mask, MaskProps } from '@/common/Mask';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
-import { Glow } from '@/common/Glow';
-import { generateGlowStyles } from '@/common/Glow/utils';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel } from '@/common';
+import type { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import type { Gradient, GradientProps } from '@/common/Gradient';
+import type { MaskProps } from '@/common/Mask';
+import { Mask } from '@/common/Mask';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
 
 export interface BubbleProps {
   /**
@@ -64,7 +61,7 @@ export interface BubbleProps {
    */
   onClick?: (
     event: React.MouseEvent<SVGCircleElement>,
-    currentItem?: HierarchyCircularNode<any>
+    currentItem?: HierarchyCircularNode<any>,
   ) => void;
 
   /**
@@ -89,7 +86,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   onMouseEnter,
   onMouseLeave,
   animated,
-  tooltip = <ChartTooltip />
+  tooltip = <ChartTooltip />,
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);
@@ -105,7 +102,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
     onPointerOut: (event) => {
       setInternalActive(false);
       onMouseLeave?.(event);
-    }
+    },
   });
 
   const arcFill =
@@ -117,7 +114,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
 
   const tooltipData = useMemo(
     () => ({ y: data.data.data, x: data.data.key }),
-    [data]
+    [data],
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
@@ -131,12 +128,12 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         initial={{
           r: data.r,
           cx: data.x,
-          cy: data.y
+          cy: data.y,
         }}
         animate={{
           r: data.r,
           cx: data.x,
-          cy: data.y
+          cy: data.y,
         }}
         transition={transition}
         onClick={(event) => onClick && onClick(event, data)}

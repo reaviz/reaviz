@@ -1,10 +1,16 @@
-import React, { FC, Fragment, ReactElement, useCallback } from 'react';
-import { ColorSchemeType, getColor } from '@/common/color';
 import chroma from 'chroma-js';
-import { SunburstArc, SunburstArcProps } from './SunburstArc';
-import { SunburstArcLabel, SunburstArcLabelProps } from './SunburstArcLabel';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback } from 'react';
 import { identifier } from 'safe-identifier';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+
+import type { SunburstArcProps } from './SunburstArc';
+import { SunburstArc } from './SunburstArc';
+import type { SunburstArcLabelProps } from './SunburstArcLabel';
+import { SunburstArcLabel } from './SunburstArcLabel';
 
 export interface SunburstSeriesProps {
   /**
@@ -50,7 +56,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   colorScheme = 'cybertron',
   animated = true,
   arc = <SunburstArc />,
-  label = <SunburstArcLabel />
+  label = <SunburstArcLabel />,
 }) => {
   const getFill = useCallback(
     (item: any, index: number) => {
@@ -64,7 +70,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         data,
         colorScheme,
         point: parent.data,
-        index
+        index,
       });
 
       // darken the color based on the depth
@@ -74,7 +80,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
 
       return fill;
     },
-    [colorScheme, data]
+    [colorScheme, data],
   );
 
   const renderItem = useCallback(
@@ -113,7 +119,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         </Fragment>
       );
     },
-    [animated, arc, getFill, id, label, radius]
+    [animated, arc, getFill, id, label, radius],
   );
 
   return <>{data.map(renderItem)}</>;

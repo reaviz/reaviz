@@ -1,11 +1,7 @@
-import React, {
-  Children,
-  cloneElement,
-  PropsWithChildren,
-  FC,
-  useEffect,
-  useRef
-} from 'react';
+import type { FC, PropsWithChildren } from 'react';
+import type React from 'react';
+import { Children, cloneElement, useEffect, useRef } from 'react';
+
 import { toggleTextSelection } from '@/common/utils/selection';
 
 interface MoveProps extends PropsWithChildren {
@@ -30,7 +26,7 @@ export const Move: FC<Partial<MoveProps>> = ({
   onMove = () => undefined,
   onMoveCancel = () => undefined,
   onMoveEnd = () => undefined,
-  children
+  children,
 }) => {
   let started = false;
   let deltaX = 0;
@@ -78,7 +74,7 @@ export const Move: FC<Partial<MoveProps>> = ({
     const { clientX, clientY } = event.touches[0];
     return {
       clientX,
-      clientY
+      clientY,
     };
   };
 
@@ -116,7 +112,7 @@ export const Move: FC<Partial<MoveProps>> = ({
 
       onMoveStart({
         nativeEvent: event,
-        type: 'mouse'
+        type: 'mouse',
       });
     } else {
       rqf.current = requestAnimationFrame(() => {
@@ -124,7 +120,7 @@ export const Move: FC<Partial<MoveProps>> = ({
           nativeEvent: event,
           type: 'mouse',
           x: localDeltaX,
-          y: localDeltaY
+          y: localDeltaY,
         });
       });
     }
@@ -142,12 +138,12 @@ export const Move: FC<Partial<MoveProps>> = ({
     if (started) {
       onMoveEnd({
         nativeEvent: event,
-        type: 'mouse'
+        type: 'mouse',
       });
     } else {
       onMoveCancel({
         nativeEvent: event,
-        type: 'mouse'
+        type: 'mouse',
       });
     }
   };
@@ -192,7 +188,7 @@ export const Move: FC<Partial<MoveProps>> = ({
 
       onMoveStart({
         nativeEvent: { ...event, clientX, clientY },
-        type: 'touch'
+        type: 'touch',
       });
     } else {
       rqf.current = requestAnimationFrame(() => {
@@ -201,11 +197,11 @@ export const Move: FC<Partial<MoveProps>> = ({
           nativeEvent: {
             ...event,
             clientX,
-            clientY
+            clientY,
           },
           type: 'touch',
           x: localDeltaX,
-          y: localDeltaY
+          y: localDeltaY,
         });
       });
     }
@@ -222,12 +218,12 @@ export const Move: FC<Partial<MoveProps>> = ({
     if (started) {
       onMoveEnd({
         nativeEvent: event,
-        type: 'touch'
+        type: 'touch',
       });
     } else {
       onMoveCancel({
         nativeEvent: event,
-        type: 'touch'
+        type: 'touch',
       });
     }
   };
@@ -246,7 +242,7 @@ export const Move: FC<Partial<MoveProps>> = ({
         if (child.props.onTouchStart) {
           child.props.onTouchStart(e);
         }
-      }
-    })
+      },
+    }),
   );
 };

@@ -1,12 +1,11 @@
-import React, { useCallback, ReactElement, FC } from 'react';
-import {
-  RadialScatterSeries,
-  RadialScatterPoint,
-  RadialScatterPointProps
-} from '@/RadialScatterPlot';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
 import isEqual from 'react-fast-compare';
+
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import type { RadialScatterPointProps } from '@/RadialScatterPlot';
+import { RadialScatterPoint, RadialScatterSeries } from '@/RadialScatterPlot';
 
 export interface RadialPointSeriesProps {
   /**
@@ -56,11 +55,11 @@ export interface RadialPointSeriesProps {
 }
 
 export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
-  props
+  props,
 ) => {
   const { data, xScale, yScale, animated, color, activeValues, show, point } = {
     ...RADIAL_POINT_SERIES_DEFAULT_PROPS,
-    ...props
+    ...props,
   };
 
   const isVisible = useCallback(
@@ -86,7 +85,7 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
 
       return Boolean(show);
     },
-    [data, activeValues, show]
+    [data, activeValues, show],
   );
 
   return (
@@ -109,5 +108,5 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
 
 export const RADIAL_POINT_SERIES_DEFAULT_PROPS = {
   show: 'hover',
-  point: <RadialScatterPoint />
+  point: <RadialScatterPoint />,
 };

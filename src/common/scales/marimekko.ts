@@ -1,5 +1,6 @@
 import { scaleLinear } from 'd3-scale';
-import { ChartInternalNestedDataShape } from '@/common/data';
+
+import type { ChartInternalNestedDataShape } from '@/common/data';
 import { uniqueBy } from '@/common/utils/array';
 
 interface MariemkoScaleData {
@@ -24,7 +25,7 @@ export const getMarimekkoGroupScale = ({
   data,
   width,
   valueScale,
-  padding
+  padding,
 }: MariemkoScaleData) => {
   const domain = uniqueBy<ChartInternalNestedDataShape>(data, (d) => d.key);
   const barCount = data.length;

@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import { motion, useMotionValue, useSpring } from 'motion/react';
 import { interpolate } from 'd3-interpolate';
+import { motion, useMotionValue, useSpring } from 'motion/react';
+import React, { useEffect, useRef } from 'react';
+
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 
-export const MotionBar = ({ custom, transition, arc, ...rest }) => {
+export const MotionBar = ({ custom, transition, arc, ...rest }: any) => {
   const d = useMotionValue('');
   const currentYRef = useRef(custom.exit.y);
   const spring = useSpring(0, DEFAULT_TRANSITION);

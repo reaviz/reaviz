@@ -1,5 +1,8 @@
-import React, { cloneElement, FC } from 'react';
-import { Tooltip, TooltipProps } from 'reablocks';
+import type { TooltipProps } from 'reablocks';
+import { Tooltip } from 'reablocks';
+import type { FC } from 'react';
+import React, { cloneElement } from 'react';
+
 import { TooltipTemplate } from './TooltipTemplate';
 import { tooltipTheme } from './TooltipTheme';
 
@@ -49,10 +52,10 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
         return typeof content === 'function'
           ? content(data || value, color)
           : cloneElement(content, {
-            ...content.props,
-            value,
-            color
-          });
+              ...content.props,
+              value,
+              color,
+            });
       }}
     />
   );

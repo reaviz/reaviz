@@ -1,4 +1,4 @@
-import { LinearAxisProps } from './LinearAxis';
+import type { LinearAxisProps } from './LinearAxis';
 
 /**
  * Returns whether the axis has a visual element or not.

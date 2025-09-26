@@ -1,4 +1,5 @@
-import { PointerEvent, useCallback, useRef } from 'react';
+import type { PointerEvent } from 'react';
+import { useCallback, useRef } from 'react';
 
 export interface HoverIntentOptions {
   interval?: number;
@@ -26,7 +27,7 @@ export const useHoverIntent = ({
   timeout = 10,
   disabled,
   onPointerOver,
-  onPointerOut
+  onPointerOut,
 }: HoverIntentOptions | undefined): HoverIntentResult => {
   const mouseOver = useRef<boolean>(false);
   const timer = useRef<any | null>(null);
@@ -35,7 +36,7 @@ export const useHoverIntent = ({
     x: null,
     y: null,
     px: null,
-    py: null
+    py: null,
   });
 
   const onMouseMove = useCallback((event: MouseEvent) => {
@@ -57,7 +58,7 @@ export const useHoverIntent = ({
         timer.current = setTimeout(() => comparePosition(event), interval);
       }
     },
-    [interval, onPointerOver, sensitivity]
+    [interval, onPointerOver, sensitivity],
   );
 
   const cleanup = useCallback(() => {
@@ -79,7 +80,7 @@ export const useHoverIntent = ({
         }
       }
     },
-    [cleanup, comparePosition, disabled, onMouseMove, timeout]
+    [cleanup, comparePosition, disabled, onMouseMove, timeout],
   );
 
   const delay = useCallback(
@@ -88,7 +89,7 @@ export const useHoverIntent = ({
       state.current = 0;
       onPointerOut(event);
     },
-    [onPointerOut]
+    [onPointerOut],
   );
 
   const pointerOut = useCallback(
@@ -100,11 +101,11 @@ export const useHoverIntent = ({
         timer.current = setTimeout(() => delay(event), timeout);
       }
     },
-    [cleanup, delay, timeout]
+    [cleanup, delay, timeout],
   );
 
   return {
     pointerOver,
-    pointerOut
+    pointerOut,
   };
 };

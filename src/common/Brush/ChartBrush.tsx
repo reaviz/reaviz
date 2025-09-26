@@ -1,6 +1,9 @@
-import React, { FC, PropsWithChildren, useCallback } from 'react';
-import { BrushConfiguration, Brush } from './Brush';
-import { BrushChangeEvent } from './BrushSlice';
+import type { FC, PropsWithChildren } from 'react';
+import React, { useCallback } from 'react';
+
+import type { BrushConfiguration } from './Brush';
+import { Brush } from './Brush';
+import type { BrushChangeEvent } from './BrushSlice';
 
 export interface ChartBrushProps extends BrushConfiguration, PropsWithChildren {
   scale: any;
@@ -49,11 +52,11 @@ export const ChartBrush: FC<Partial<ChartBrushProps>> = (props) => {
         }
 
         onBrushChange({
-          domain
+          domain,
         });
       }
     },
-    [onBrushChange, scale, width]
+    [onBrushChange, scale, width],
   );
 
   return (

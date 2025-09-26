@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
 import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface GuideBarProps extends SVGRect {
   /**
@@ -35,7 +36,7 @@ export const GuideBar: FC<Partial<GuideBarProps>> = ({
       animate={active ? 'visible' : 'hidden'}
       variants={{
         hidden: { opacity: 0, attrX: x, attrY: y },
-        visible: { opacity, attrX: x, attrY: y }
+        visible: { opacity, attrX: x, attrY: y },
       }}
     />
   );

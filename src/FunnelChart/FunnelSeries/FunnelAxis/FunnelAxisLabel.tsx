@@ -1,7 +1,9 @@
-import React, { FC, useCallback } from 'react';
-import { ChartShallowDataShape } from '@/common/data';
-import { calculateDimensions, formatValue, wrapText } from '@/common/utils';
 import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React, { useCallback } from 'react';
+
+import type { ChartShallowDataShape } from '@/common/data';
+import { calculateDimensions, formatValue, wrapText } from '@/common/utils';
 
 export interface FunnelAxisLabelProps {
   /**
@@ -78,7 +80,7 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
   className,
   position = 'middle',
   showValue = true,
-  labelVisibility = 'auto'
+  labelVisibility = 'auto',
 }) => {
   const x = xScale(index) + padding;
   const [height] = yScale.range();
@@ -96,28 +98,28 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
     height,
     fontFamily,
     fontSize,
-    visibility: labelVisibility
+    visibility: labelVisibility,
   });
 
   const getTransformString = useCallback(() => {
     let transform: string;
 
     switch (position) {
-    case 'top':
-      transform = `translate(${x}, ${fontSize * 3})`; // fontSize * 3 is to account for the total height of the label
-      break;
-    case 'middle':
-      transform = `translate(${x}, ${y})`;
-      break;
-    case 'bottom':
-      {
-        // If the text is wrapping, we need to account for the height of all the lines
-        const textWrapHeight = Array.isArray(text)
-          ? text.slice(1).reduce((acc, curr) => acc + curr.props.dy, 0) // Don't include first line's dy in order to align properly
-          : 0;
-        transform = `translate(${x}, ${height - padding - textWrapHeight})`;
-      }
-      break;
+      case 'top':
+        transform = `translate(${x}, ${fontSize * 3})`; // fontSize * 3 is to account for the total height of the label
+        break;
+      case 'middle':
+        transform = `translate(${x}, ${y})`;
+        break;
+      case 'bottom':
+        {
+          // If the text is wrapping, we need to account for the height of all the lines
+          const textWrapHeight = Array.isArray(text)
+            ? text.slice(1).reduce((acc, curr) => acc + curr.props.dy, 0) // Don't include first line's dy in order to align properly
+            : 0;
+          transform = `translate(${x}, ${height - padding - textWrapHeight})`;
+        }
+        break;
     }
 
     return transform;

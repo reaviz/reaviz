@@ -1,32 +1,31 @@
-import React, { Fragment, ReactElement, FC, useCallback, useMemo } from 'react';
-import {
-  ChartInternalShallowDataShape,
-  buildShallowChartData,
-  ChartDataShape,
-  buildNestedChartData,
-  ChartNestedDataShape,
-  ChartShallowDataShape
-} from '@/common/data';
-import { scaleTime, scaleBand, scalePoint } from 'd3-scale';
-import { getYDomain, getXDomain } from '@/common/utils/domains';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers';
+import { scaleBand, scalePoint, scaleTime } from 'd3-scale';
 import { CloneElement } from 'reablocks';
-import {
-  RADIAL_AREA_SERIES_DEFAULT_PROPS,
-  RadialAreaSeries,
-  RadialAreaSeriesProps
-} from './RadialAreaSeries';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { RadialAxisProps } from '@/common/Axis/RadialAxis';
 import {
   RADIAL_AXIS_DEFAULT_PROPS,
   RadialAxis,
-  RadialAxisProps
 } from '@/common/Axis/RadialAxis';
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type {
+  ChartDataShape,
+  ChartInternalShallowDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape,
+} from '@/common/data';
+import { buildNestedChartData, buildShallowChartData } from '@/common/data';
 import { getRadialYScale } from '@/common/scales/radial';
 import { uniqueBy } from '@/common/utils';
+import { getXDomain, getYDomain } from '@/common/utils/domains';
+
+import type { RadialAreaSeriesProps } from './RadialAreaSeries';
+import {
+  RADIAL_AREA_SERIES_DEFAULT_PROPS,
+  RadialAreaSeries,
+} from './RadialAreaSeries';
 
 export interface RadialAreaChartProps extends ChartProps {
   /**
@@ -78,15 +77,15 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
   margins = 75,
   startAngle = 0,
   endAngle = 2 * Math.PI,
-  isClosedCurve = true
+  isClosedCurve = true,
 }) => {
   const seriesProps = useMemo(
     () => ({ ...RADIAL_AREA_SERIES_DEFAULT_PROPS, ...series.props }),
-    [series.props]
+    [series.props],
   );
   const axisProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
-    [axis?.props]
+    [axis?.props],
   );
 
   const getXScale = useCallback(
@@ -101,12 +100,12 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
           xDomain = uniqueBy<ChartInternalShallowDataShape>(
             points,
             (dd) => dd.data,
-            (dd) => dd.x
+            (dd) => dd.x,
           );
         } else {
           xDomain = uniqueBy<ChartInternalShallowDataShape>(
             points,
-            (dd) => dd.x
+            (dd) => dd.x,
           );
         }
 
@@ -129,7 +128,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
 
       return xScale;
     },
-    [axisProps.type, endAngle, seriesProps.type, startAngle]
+    [axisProps.type, endAngle, seriesProps.type, startAngle],
   );
 
   const getScales = useCallback(
@@ -150,10 +149,10 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       return {
         yScale,
         xScale,
-        result: d
+        result: d,
       };
     },
-    [getXScale, seriesProps.type]
+    [getXScale, seriesProps.type],
   );
 
   const renderChart = useCallback(
@@ -163,7 +162,7 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       const { yScale, xScale, result } = getScales(
         data!,
         outerRadius,
-        innerRadius
+        innerRadius,
       );
 
       return (
@@ -204,8 +203,8 @@ export const RadialAreaChart: FC<Partial<RadialAreaChartProps>> = ({
       startAngle,
       endAngle,
       series,
-      isClosedCurve
-    ]
+      isClosedCurve,
+    ],
   );
 
   return (

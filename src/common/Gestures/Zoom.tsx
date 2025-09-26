@@ -1,18 +1,21 @@
-import React, { Component, PropsWithChildren, createRef } from 'react';
-import { toggleTextSelection } from '@/common/utils/selection';
+import type { PropsWithChildren } from 'react';
+import React, { Component, createRef } from 'react';
 import {
-  getPointFromMatrix,
-  isZoomLevelGoingOutOfBounds
-} from '@/common/utils/position';
-import { getTouchPoints } from './pinchUtils';
-import {
+  applyToPoint,
+  inverse,
   scale,
   smoothMatrix,
   transform,
   translate,
-  applyToPoint,
-  inverse
 } from 'transformation-matrix';
+
+import {
+  getPointFromMatrix,
+  isZoomLevelGoingOutOfBounds,
+} from '@/common/utils/position';
+import { toggleTextSelection } from '@/common/utils/selection';
+
+import { getTouchPoints } from './pinchUtils';
 
 interface ZoomGestureProps extends PropsWithChildren {
   disabled?: boolean;
@@ -44,7 +47,7 @@ export class Zoom extends Component<ZoomGestureProps> {
     scale: 1,
     scaleFactor: 0.1,
     minZoom: 1,
-    maxZoom: 10
+    maxZoom: 10,
   };
 
   firstTouch: any;
@@ -60,7 +63,7 @@ export class Zoom extends Component<ZoomGestureProps> {
     if (!disabled && ref) {
       if (!disableMouseWheel) {
         ref.addEventListener('mousewheel', this.onMouseWheel, {
-          passive: false
+          passive: false,
         });
       }
 
@@ -95,9 +98,9 @@ export class Zoom extends Component<ZoomGestureProps> {
       {
         d: matrix.a,
         scaleFactorMin: minZoom,
-        scaleFactorMax: maxZoom
+        scaleFactorMax: maxZoom,
       },
-      step
+      step,
     );
 
     if (!outside) {
@@ -106,9 +109,9 @@ export class Zoom extends Component<ZoomGestureProps> {
           matrix,
           translate(x, y),
           scale(step, step),
-          translate(-x, -y)
+          translate(-x, -y),
         ),
-        100
+        100,
       );
 
       this.rqf = requestAnimationFrame(() => {
@@ -116,7 +119,7 @@ export class Zoom extends Component<ZoomGestureProps> {
           scale: newMatrix.a,
           x: newMatrix.e,
           y: newMatrix.f,
-          nativeEvent
+          nativeEvent,
         });
       });
     }
@@ -177,7 +180,7 @@ export class Zoom extends Component<ZoomGestureProps> {
 
       const point = applyToPoint(inverse(this.props.matrix), {
         x: this.firstTouch.midpoint.x,
-        y: this.firstTouch.midpoint.y
+        y: this.firstTouch.midpoint.y,
       }) as { x: number; y: number };
 
       if (point.x && point.y) {

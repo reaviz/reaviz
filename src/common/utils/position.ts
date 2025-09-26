@@ -17,7 +17,7 @@ const scaleBandInvert = (scale, round = false) => {
     // Keep the band from going outside the domain length
     let band = Math.min(
       (offset - paddingOuter) / eachBand,
-      domain.length - 0.01
+      domain.length - 0.01,
     );
 
     // Catch negative band values from horizontal charts exceeding domain length
@@ -56,7 +56,7 @@ export const getClosestContinousScalePoint = ({
   scale,
   data,
   attr = 'x',
-  roundDown = false
+  roundDown = false,
 }: {
   pos: number;
   scale: any;
@@ -109,7 +109,7 @@ export const getClosestBandScalePoint = ({
   pos,
   scale,
   data,
-  roundClosest = false
+  roundClosest = false,
 }: {
   pos: number;
   scale: any;
@@ -154,7 +154,7 @@ export const getPositionForTarget = ({ target, clientX, clientY }) => {
   const rect = target.getBoundingClientRect();
   return {
     x: clientX - (rect?.left || 0) - target.clientLeft,
-    y: clientY - (rect?.top || 0) - target.clientTop
+    y: clientY - (rect?.top || 0) - target.clientTop,
   };
 };
 
@@ -183,11 +183,11 @@ export const getPointFromMatrix = (event, matrix): PointObjectNotation => {
 export const getLimitMatrix = (
   height: number,
   width: number,
-  matrix
+  matrix,
 ): PointObjectNotation[] =>
   applyToPoints(matrix, [
     { x: 0, y: 0 },
-    { x: width, y: height }
+    { x: width, y: height },
   ]);
 
 /**

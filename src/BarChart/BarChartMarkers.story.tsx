@@ -1,19 +1,21 @@
 import React from 'react';
 import { categoryData, medDateData } from 'reaviz-data-utils';
+
 import {
+  LinearValueMarker,
   LinearXAxis,
   LinearYAxis,
   LinearYAxisTickSeries,
-  schemes,
-  LinearValueMarker,
   RadialAxis,
-  RadialAxisTickSeries,
+  RadialAxisArcSeries,
   RadialAxisTick,
   RadialAxisTickLine,
-  RadialAxisArcSeries,
-  RadialValueMarker
+  RadialAxisTickSeries,
+  RadialValueMarker,
+  schemes,
 } from '@/common';
 import { RadialBar, RadialBarChart, RadialBarSeries } from '@/RadialBarChart';
+
 import { BarChart } from './BarChart';
 import { Bar, BarSeries } from './BarSeries';
 
@@ -26,8 +28,8 @@ export default {
     BarSeries,
     RadialBar,
     RadialBarChart,
-    RadialBarSeries
-  }
+    RadialBarSeries,
+  },
 };
 
 export const LinearValueMarkersVertical = () => (
@@ -49,8 +51,18 @@ export const LinearValueMarkersVertical = () => (
         padding={0.1}
         bar={<Bar guide={null} />}
         valueMarkers={[
-          <LinearValueMarker value={12} color="#D740BE" direction="vertical" />,
-          <LinearValueMarker value={6} color="#F8A340" direction="vertical" />
+          <LinearValueMarker
+            key={12}
+            value={12}
+            color="#D740BE"
+            direction="vertical"
+          />,
+          <LinearValueMarker
+            key={6}
+            value={6}
+            color="#F8A340"
+            direction="vertical"
+          />,
         ]}
       />
     }
@@ -68,8 +80,8 @@ export const LinearValueMarkersHorizontal = () => (
         padding={0.1}
         bar={<Bar />}
         valueMarkers={[
-          <LinearValueMarker value={12} color="#D740BE" />,
-          <LinearValueMarker value={6} color="#F8A340" />
+          <LinearValueMarker key={12} value={12} color="#D740BE" />,
+          <LinearValueMarker key={6} value={6} color="#F8A340" />,
         ]}
       />
     }
@@ -88,8 +100,8 @@ export const RadialValueMarkers = () => (
         colorScheme={schemes['cybertron'][0]}
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
         valueMarkers={[
-          <RadialValueMarker value={12} color="#D740BE" />,
-          <RadialValueMarker value={6} color="#F8A340" />
+          <RadialValueMarker key={12} value={12} color="#D740BE" />,
+          <RadialValueMarker key={6} value={6} color="#F8A340" />,
         ]}
       />
     }

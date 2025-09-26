@@ -47,7 +47,7 @@ function lookup(combo: string[], data: any[]) {
   return {
     key,
     sets: combo,
-    size: found?.size || 0
+    size: found?.size || 0,
   };
 }
 
@@ -69,7 +69,7 @@ function buildData(data: any[]) {
 
   // Sort the child sets based on the parent
   const result = filteredSets.map((d) =>
-    [...d].sort((a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b))
+    [...d].sort((a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b)),
   );
 
   // Sort the data based on index of keys and length
@@ -80,27 +80,27 @@ function buildData(data: any[]) {
       upto(a.length).reduce(
         (diff, i) =>
           diff || uniqueSetKeys.indexOf(a[i]) - uniqueSetKeys.indexOf(b[i]),
-        0
-      )
+        0,
+      ),
   );
 
   // reshape the data key so they will match combos
   const keyedData = data.map((d) => {
     const sets = [...d.sets].sort(
-      (a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b)
+      (a, b) => uniqueSetKeys.indexOf(a) - uniqueSetKeys.indexOf(b),
     );
     const key = sets.join('|');
 
     return {
       size: d.size,
       sets,
-      key
+      key,
     };
   });
 
   return {
     uniqueCount: uniqueSets.length,
-    data: result.map((r) => lookup(r, keyedData))
+    data: result.map((r) => lookup(r, keyedData)),
   };
 }
 
@@ -142,31 +142,31 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
       cy: my(c.cy),
       text: {
         x: mx(c.text.x),
-        y: my(c.text.y)
+        y: my(c.text.y),
       },
       ...(c.icon
         ? {
-          icon: {
-            x: mx(c.icon.x),
-            y: my(c.icon.y)
+            icon: {
+              x: mx(c.icon.x),
+              y: my(c.icon.y),
+            },
           }
-        }
-        : {})
+        : {}),
     },
     ...(isEllipse(c)
       ? {
-        rx: c.rx * f,
-        ry: c.ry * f
-      }
+          rx: c.rx * f,
+          ry: c.ry * f,
+        }
       : {
-        r: c.r * f
-      })
+          r: c.r * f,
+        }),
   }));
 
   const intersections = shape.intersections.map((c, i) => ({
     text: {
       x: mx(c.text.x),
-      y: my(c.text.y)
+      y: my(c.text.y),
     },
     x1: mx(c.x1),
     y1: my(c.y1),
@@ -175,13 +175,13 @@ function buildLayout({ data, uniqueCount }, box: BoundingBox) {
     arcs: c.arcs.map((a) => ({
       ...a,
       x2: mx(a.x2),
-      y2: my(a.y2)
-    }))
+      y2: my(a.y2),
+    })),
   }));
 
   return intersections.map((i) => ({
     ...i,
-    path: generateArcSlicePath(i, shapeSets)
+    path: generateArcSlicePath(i, shapeSets),
   }));
 }
 

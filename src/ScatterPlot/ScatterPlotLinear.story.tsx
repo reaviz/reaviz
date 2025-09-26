@@ -1,23 +1,25 @@
+import { range } from 'd3-array';
+import { symbol, symbolStar } from 'd3-shape';
 import React, { Fragment, useState } from 'react';
-import { ScatterPlot } from './ScatterPlot';
 import {
-  signalChartData,
   largeSignalChartData,
   medSignalChartData,
+  signalChartData,
   signalStageData,
-  signalStages
+  signalStages,
 } from 'reaviz-data-utils';
 import { randomNumber } from 'reaviz-data-utils';
-import { range } from 'd3-array';
-import { GridlineSeries, Gridline, GridStripe } from '@/common/Gridline';
-import { ScatterSeries, ScatterPoint } from './ScatterSeries';
+
 import {
   LinearYAxis,
+  LinearYAxisTickLabel,
   LinearYAxisTickSeries,
-  LinearYAxisTickLabel
 } from '@/common/Axis/LinearAxis';
-import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
+import { Gridline, GridlineSeries, GridStripe } from '@/common/Gridline';
+
+import { ScatterPlot } from './ScatterPlot';
+import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
 export default {
   tags: ['snapshot'],
@@ -25,8 +27,8 @@ export default {
   component: ScatterPlot,
   subcomponents: {
     ScatterSeries,
-    ScatterPoint
-  }
+    ScatterPoint,
+  },
 };
 
 export const Simple = () => (
@@ -89,7 +91,7 @@ export const Performance = () => (
           height: '250px',
           border: 'solid 1px green',
           margin: '25px',
-          display: 'inline-block'
+          display: 'inline-block',
         }}
       >
         <ScatterPlot id={`performance-${i}`} data={medSignalChartData} />
@@ -122,7 +124,7 @@ export const Symbols = () => (
                   style={{
                     fill: 'lime',
                     stroke: 'purple',
-                    strokeWidth: 1.5
+                    strokeWidth: 1.5,
                   }}
                 />
               );

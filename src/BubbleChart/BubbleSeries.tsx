@@ -1,14 +1,20 @@
-import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'motion/react';
-import { HierarchyCircularNode } from 'd3-hierarchy';
-import { ColorSchemeType, getColor } from '@/common/color';
-import { Bubble, BubbleProps } from './Bubble';
-import { BubbleLabel, BubbleLabelProps } from './BubbleLabel';
-import { CloneElement } from 'reablocks';
-import invert from 'invert-color';
 import chroma from 'chroma-js';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { HierarchyCircularNode } from 'd3-hierarchy';
+import invert from 'invert-color';
+import { motion } from 'motion/react';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment } from 'react';
 import { identifier } from 'safe-identifier';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+
+import type { BubbleProps } from './Bubble';
+import { Bubble } from './Bubble';
+import type { BubbleLabelProps } from './BubbleLabel';
+import { BubbleLabel } from './BubbleLabel';
 
 export interface BubbleSeriesProps {
   /**
@@ -54,7 +60,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   animated = true,
   bubble = <Bubble />,
   format,
-  label = <BubbleLabel />
+  label = <BubbleLabel />,
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -65,7 +71,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
       data,
       colorScheme,
       point: item.data,
-      index
+      index,
     });
 
     const textFill = fill
@@ -77,11 +83,11 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
         key={(item.data as any).key}
         initial={{
           scale: 0.5,
-          opacity: 0
+          opacity: 0,
         }}
         animate={{
           scale: 1,
-          opacity: 1
+          opacity: 1,
         }}
         transition={transition}
       >

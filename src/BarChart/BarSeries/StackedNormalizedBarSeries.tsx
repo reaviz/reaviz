@@ -1,18 +1,19 @@
-import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import {
-  BarSeriesProps,
-  BarSeries,
-  BAR_SERIES_DEFAULT_PROPS
-} from './BarSeries';
-import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
-import { RangeLines } from './RangeLines';
-import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
-import { formatValue } from '@/common/utils/formatting';
+import type { FC } from 'react';
+import React from 'react';
+
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { ChartTooltip, TooltipArea, TooltipTemplate } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+
+import type { BarType } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS } from './Bar';
+import type { BarSeriesProps } from './BarSeries';
+import { BAR_SERIES_DEFAULT_PROPS, BarSeries } from './BarSeries';
+import { RangeLines } from './RangeLines';
 
 export const StackedNormalizedBarSeries: FC<Partial<BarSeriesProps>> = (
-  props
+  props,
 ) => <BarSeries {...STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS} {...props} />;
 
 export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
@@ -32,7 +33,7 @@ export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
 
               return {
                 ...d,
-                value: `${formatValue(Math.floor((end - start) * 100))}%`
+                value: `${formatValue(Math.floor((end - start) * 100))}%`,
               };
             });
 
@@ -49,11 +50,11 @@ export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
           ]}
         />
       }
       rangeLines={<RangeLines position="top" strokeWidth={3} />}
     />
-  )
+  ),
 };

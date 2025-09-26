@@ -1,33 +1,23 @@
-import {
-  LinearValueMarker,
-  LinearValueMarkerProps,
-  mergeDefaultProps
-} from '@/common';
-import { ColorSchemeType, getColor } from '@/common/color';
-import {
+import { offset } from '@floating-ui/dom';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
+import type { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
-  Direction
+  Direction,
 } from '@/common/data';
-import {
-  ChartTooltip,
-  TooltipArea,
-  TooltipAreaEvent,
-  TooltipAreaProps
-} from '@/common/Tooltip';
-import { offset } from '@floating-ui/dom';
-import { CloneElement } from 'reablocks';
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useRef,
-  useState
-} from 'react';
-import { Bar, BAR_DEFAULT_PROPS, BarProps, BarType } from './Bar';
+import type { TooltipAreaEvent, TooltipAreaProps } from '@/common/Tooltip';
+import { ChartTooltip, TooltipArea } from '@/common/Tooltip';
+
+import type { BarProps, BarType } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS } from './Bar';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 
@@ -142,7 +132,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
     layout,
     type,
     id,
-    valueMarkers
+    valueMarkers,
   } = mergeDefaultProps(BAR_SERIES_DEFAULT_PROPS, props);
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
@@ -172,7 +162,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
 
       return `translate(${xPos}, ${yPos})`;
     },
-    [layout, type, xScale, yScale]
+    [layout, type, xScale, yScale],
   );
 
   const getBarColor = useCallback(
@@ -197,10 +187,10 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
         index,
         data,
         isMultiSeries,
-        attribute: key
+        attribute: key,
       });
     },
-    [colorScheme, data, isMultiSeries, layout]
+    [colorScheme, data, isMultiSeries, layout],
   );
 
   const onMouseMove = useCallback((event) => {
@@ -221,7 +211,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
       data: ChartInternalShallowDataShape,
       barIndex: number,
       barCount: number,
-      groupIndex?: number
+      groupIndex?: number,
     ) => {
       const active = activeValues && activeValues.x === data.key;
 
@@ -285,25 +275,25 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
       type,
       xScale,
       xScale1,
-      yScale
-    ]
+      yScale,
+    ],
   );
 
   const renderBarGroup = useCallback(
     (
       data: ChartInternalShallowDataShape[],
       barCount: number,
-      groupIndex?: number
+      groupIndex?: number,
     ) => {
       return (
         <Fragment>
           {data.map((barData, barIndex) =>
-            renderBar(barData, barIndex, barCount, groupIndex)
+            renderBar(barData, barIndex, barCount, groupIndex),
           )}
         </Fragment>
       );
     },
-    [renderBar]
+    [renderBar],
   );
 
   const renderValueMarkers = useCallback(
@@ -325,7 +315,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
           ))}
       </>
     ),
-    [height, layout, valueMarkers, width, xScale, yScale]
+    [height, layout, valueMarkers, width, xScale, yScale],
   );
 
   return (
@@ -350,7 +340,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
             {renderBarGroup(
               groupData.data as ChartInternalShallowDataShape[],
               data.length,
-              index
+              index,
             )}
           </g>
         ))}
@@ -373,5 +363,5 @@ export const BAR_SERIES_DEFAULT_PROPS = {
   ),
   colorScheme: 'cybertron',
   bar: <Bar />,
-  layout: 'vertical' as const
+  layout: 'vertical' as const,
 };

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+
 import { LinearGauge } from './LinearGauge';
-import { LinearGaugeSeries } from './LinearGaugeSeries';
 import { LinearGaugeBar } from './LinearGaugeBar';
 import { LinearGaugeOuterBar } from './LinearGaugeOuterBar';
+import { LinearGaugeSeries } from './LinearGaugeSeries';
 
 export default {
   tags: ['snapshot'],
@@ -12,8 +13,8 @@ export default {
     LinearGaugeSeries,
     LinearGauge,
     LinearGaugeBar,
-    LinearGaugeOuterBar
-  }
+    LinearGaugeOuterBar,
+  },
 };
 
 export const Simple = () => (
@@ -59,7 +60,7 @@ export const NonZeroStart = () => (
 );
 
 NonZeroStart.story = {
-  name: 'Non-Zero Start'
+  name: 'Non-Zero Start',
 };
 
 export const MultipleGauges = () => (

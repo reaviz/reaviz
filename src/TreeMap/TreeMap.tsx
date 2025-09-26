@@ -1,13 +1,20 @@
-import React, { FC, ReactElement, useCallback } from 'react';
-import {
-  ChartContainer,
-  ChartContainerChildProps,
-  ChartProps
-} from '@/common/containers/ChartContainer';
-import { ChartNestedDataShape, ChartShallowDataShape } from '@/common/data';
 import { hierarchy, treemap, treemapSquarify } from 'd3-hierarchy';
-import { TreeMapSeries, TreeMapSeriesProps } from './TreeMapSeries';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type {
+  ChartContainerChildProps,
+  ChartProps,
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type {
+  ChartNestedDataShape,
+  ChartShallowDataShape,
+} from '@/common/data';
+
+import type { TreeMapSeriesProps } from './TreeMapSeries';
+import { TreeMapSeries } from './TreeMapSeries';
 
 export interface TreeMapProps extends ChartProps {
   /**
@@ -48,7 +55,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
   height,
   className,
   margins = 0,
-  series = <TreeMapSeries />
+  series = <TreeMapSeries />,
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -72,7 +79,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
           // Don't add root node
           nodes.push(node);
         }
-        for (let child of node?.children || []) {
+        for (const child of node?.children || []) {
           getAllNodes(child);
         }
       };
@@ -80,7 +87,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
       getAllNodes(tree);
       return nodes;
     },
-    [data, paddingInner, paddingOuter, paddingTop]
+    [data, paddingInner, paddingOuter, paddingTop],
   );
 
   const renderChart = useCallback(
@@ -95,7 +102,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
         />
       );
     },
-    [series, getData, id]
+    [series, getData, id],
   );
 
   return (

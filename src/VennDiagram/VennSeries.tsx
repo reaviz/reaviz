@@ -1,22 +1,22 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useState,
-  useMemo
-} from 'react';
-import { IVennLayout } from '@upsetjs/venn.js';
-import { ColorSchemeType, getColor } from '@/common/color';
-import { VennArc, VennArcProps } from './VennArc';
-import { VennLabel, VennLabelProps } from './VennLabel';
+import type { IVennLayout } from '@upsetjs/venn.js';
+import chroma from 'chroma-js';
+import invert from 'invert-color';
 import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
-import chroma from 'chroma-js';
-import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
-import invert from 'invert-color';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
 import { identifier } from 'safe-identifier';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+
+import type { VennArcProps } from './VennArc';
+import { VennArc } from './VennArc';
+import type { VennLabelProps } from './VennLabel';
+import { VennLabel } from './VennLabel';
+import type { VennOuterLabelProps } from './VennOuterLabel';
+import { VennOuterLabel } from './VennOuterLabel';
 
 export interface VennSeriesProps {
   /**
@@ -74,7 +74,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   colorScheme = 'cybertron',
   outerLabel = <VennOuterLabel />,
   arc = <VennArc />,
-  label = <VennLabel />
+  label = <VennLabel />,
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -89,10 +89,10 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       setActives(
         data
           .filter((d) => d.data?.key.indexOf(point) > -1)
-          .map((d) => d.data?.key)
+          .map((d) => d.data?.key),
       );
     },
-    [data]
+    [data],
   );
 
   const renderArc = useCallback(
@@ -102,7 +102,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         data,
         colorScheme,
         point: d.data,
-        index
+        index,
       });
 
       const textFill = fill
@@ -192,8 +192,8 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       animated,
       label,
       outerLabel,
-      onActivate
-    ]
+      onActivate,
+    ],
   );
 
   const topArcs = useMemo(() => {
@@ -205,7 +205,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
     if (selections?.length) {
       result.push(
-        ...selections.filter((s) => !actives.includes(s) && s !== hovered)
+        ...selections.filter((s) => !actives.includes(s) && s !== hovered),
       );
     }
 

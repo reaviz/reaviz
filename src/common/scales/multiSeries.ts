@@ -1,4 +1,5 @@
 import { scaleBand } from 'd3-scale';
+
 import { uniqueBy } from '@/common/utils/array';
 
 /**
@@ -8,7 +9,7 @@ export function getGroupScale({
   dimension,
   padding,
   data,
-  direction = 'vertical'
+  direction = 'vertical',
 }) {
   const domain = uniqueBy(data, (d) => d.key);
   const spacing = domain.length / (dimension / padding + 1);
@@ -29,7 +30,7 @@ export function getInnerScale({ groupScale, padding, data, prop = 'x' }) {
   const domain = uniqueBy(
     data,
     (d) => d.data,
-    (d) => d[prop]
+    (d) => d[prop],
   );
   const spacing = domain.length / (dimension / padding + 1);
 

@@ -1,6 +1,17 @@
-import React, { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
-import { multiDateData, singleDateData, randomNumber } from 'reaviz-data-utils';
+import React, { Fragment, useState } from 'react';
+import { multiDateData, randomNumber, singleDateData } from 'reaviz-data-utils';
+
+import {
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries,
+} from '@/common/Axis/LinearAxis';
+import { getXScale, getYScale } from '@/common/scales';
+
 import { AreaChart } from './AreaChart';
 import {
   Area,
@@ -8,17 +19,8 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries
+  StackedNormalizedAreaSeries,
 } from './AreaSeries';
-import {
-  LinearXAxis,
-  LinearXAxisTickSeries,
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
-  LinearXAxisTickLabel
-} from '@/common/Axis/LinearAxis';
-import { getYScale, getXScale } from '@/common/scales';
 
 export default {
   tags: ['snapshot'],
@@ -30,8 +32,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries
-  }
+    StackedNormalizedAreaSeries,
+  },
 };
 
 export const TopBottomAxis = () => {
@@ -42,14 +44,14 @@ export const TopBottomAxis = () => {
       {
         key: 'Before',
         data: 0,
-        x: 'Before'
+        x: 'Before',
       },
       {
         key: 'After',
         data: 0,
-        x: 'After'
-      }
-    ]
+        x: 'After',
+      },
+    ],
   });
 
   return (
@@ -75,6 +77,7 @@ export const TopBottomAxis = () => {
       }
       secondaryAxis={[
         <LinearXAxis
+          key="category"
           type="category"
           orientation="horizontal"
           position="start"
@@ -86,7 +89,7 @@ export const TopBottomAxis = () => {
               label={<LinearXAxisTickLabel padding={20} position="start" />}
             />
           }
-        />
+        />,
       ]}
       yAxis={<LinearYAxis type="value" axisLine={null} />}
     />
@@ -94,7 +97,7 @@ export const TopBottomAxis = () => {
 };
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis'
+  name: 'Top + Bottom Axis',
 };
 
 export const LeftRightAxis = () => {
@@ -105,14 +108,14 @@ export const LeftRightAxis = () => {
       {
         key: 'Low',
         data: 0,
-        y: 'Low'
+        y: 'Low',
       },
       {
         key: 'High',
         data: 0,
-        y: 'High'
-      }
-    ]
+        y: 'High',
+      },
+    ],
   });
 
   return (
@@ -136,6 +139,7 @@ export const LeftRightAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           position="start"
           axisLine={null}
@@ -153,7 +157,7 @@ export const LeftRightAxis = () => {
               }
             />
           }
-        />
+        />,
       ]}
       xAxis={<LinearXAxis type="time" axisLine={null} />}
     />
@@ -161,7 +165,7 @@ export const LeftRightAxis = () => {
 };
 
 LeftRightAxis.story = {
-  name: 'Left + Right Axis'
+  name: 'Left + Right Axis',
 };
 
 const LiveUpdatingStory = () => {

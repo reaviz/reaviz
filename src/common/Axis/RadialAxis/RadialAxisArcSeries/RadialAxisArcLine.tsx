@@ -1,5 +1,6 @@
 import { line } from 'd3-shape';
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface RadialAxisArcLineProps {
   /**
@@ -19,11 +20,11 @@ export interface RadialAxisArcLineProps {
 }
 
 export const RadialAxisArcLine: FC<Partial<RadialAxisArcLineProps>> = (
-  props
+  props,
 ) => {
   const { data, stroke, index } = {
     ...RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS,
-    ...props
+    ...props,
   };
 
   const lineGenerator = line<{ x: number; y: number }>()
@@ -44,5 +45,5 @@ export const RadialAxisArcLine: FC<Partial<RadialAxisArcLineProps>> = (
 };
 
 export const RADIAL_AXIS_ARC_LINE_DEFAULT_PROPS = {
-  stroke: '#71808d'
+  stroke: '#71808d',
 };

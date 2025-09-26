@@ -1,26 +1,27 @@
 import {
-  medDateData,
+  categoryData,
   largeSignalChartData,
+  medDateData,
   medSignalChartData,
-  categoryData
 } from 'reaviz-data-utils';
-import { RadialScatterPlot } from './RadialScatterPlot';
-import { RadialScatterSeries, RadialScatterPoint } from './RadialScatterSeries';
+
 import {
   RadialAxis,
-  RadialAxisTickSeries,
   RadialAxisArcSeries,
   RadialAxisTick,
-  RadialAxisTickLine
+  RadialAxisTickLine,
+  RadialAxisTickSeries,
 } from '../common/Axis/RadialAxis';
+import { RadialScatterPlot } from './RadialScatterPlot';
+import { RadialScatterPoint, RadialScatterSeries } from './RadialScatterSeries';
 
 export default {
   title: 'Charts/Scatter Plot/Radial',
   component: RadialScatterPlot,
   subcomponents: {
     RadialScatterSeries,
-    RadialScatterPoint
-  }
+    RadialScatterPoint,
+  },
 };
 
 export const Simple = () => (
@@ -138,7 +139,7 @@ export const Symbols = () => (
                     style={{
                       fill: 'rgba(206, 0, 62, .7)',
                       stroke: '#FF004D',
-                      strokeWidth: 5
+                      strokeWidth: 5,
                     }}
                   />
                 </g>

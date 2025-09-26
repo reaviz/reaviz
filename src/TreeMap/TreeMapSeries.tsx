@@ -1,12 +1,18 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import chroma from 'chroma-js';
+import invert from 'invert-color';
 import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
-import { ColorSchemeType, getColor } from '@/common/color';
-import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
-import { TreeMapRect, TreeMapRectProps } from './TreeMapRect';
-import invert from 'invert-color';
-import chroma from 'chroma-js';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment } from 'react';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
+
+import type { TreeMapLabelProps } from './TreeMapLabel';
+import { TreeMapLabel } from './TreeMapLabel';
+import type { TreeMapRectProps } from './TreeMapRect';
+import { TreeMapRect } from './TreeMapRect';
 
 export interface TreeMapSeriesProps {
   /**
@@ -46,7 +52,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   colorScheme = 'cybertron',
   animated = true,
   rect = <TreeMapRect />,
-  label = <TreeMapLabel />
+  label = <TreeMapLabel />,
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -57,7 +63,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       data,
       colorScheme,
       point: item.data,
-      index
+      index,
     });
 
     const textFill = fill
@@ -71,13 +77,13 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
           scale: 0.5,
           opacity: 0,
           x: item.x0,
-          y: item.y0
+          y: item.y0,
         }}
         animate={{
           scale: 1,
           opacity: 1,
           x: item.x0,
-          y: item.y0
+          y: item.y0,
         }}
         transition={transition}
       >

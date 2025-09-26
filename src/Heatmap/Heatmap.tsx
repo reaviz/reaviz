@@ -1,33 +1,33 @@
-import React, { useCallback, Fragment, ReactElement, FC, useMemo } from 'react';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers/ChartContainer';
-import { ChartNestedDataShape, buildNestedChartData } from '@/common/data';
+import { scaleBand } from 'd3-scale';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis';
 import {
   isAxisVisible,
-  LinearAxisProps,
-  LinearXAxis,
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearXAxisTickSeries,
-  LinearYAxisTickLabel,
-  LinearXAxisTickLabel,
-  LinearAxis,
   LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LINEAR_Y_AXIS_DEFAULT_PROPS,
   LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
-  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries,
 } from '@/common/Axis';
-import {
-  HEATMAP_SERIES_DEFAULT_PROPS,
-  HeatmapSeries,
-  HeatmapSeriesProps
-} from './HeatmapSeries';
-import { scaleBand } from 'd3-scale';
+import type {
+  ChartContainerChildProps,
+  ChartProps,
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type { ChartNestedDataShape } from '@/common/data';
+import { buildNestedChartData } from '@/common/data';
 import { uniqueBy } from '@/common/utils/array';
+
+import type { HeatmapSeriesProps } from './HeatmapSeries';
+import { HEATMAP_SERIES_DEFAULT_PROPS, HeatmapSeries } from './HeatmapSeries';
 
 export interface HeatmapProps extends ChartProps {
   /**
@@ -99,19 +99,19 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   width,
   height,
   className,
-  containerClassName
+  containerClassName,
 }) => {
   const xAxisProps = useMemo(
     () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
-    [xAxis.props]
+    [xAxis.props],
   );
   const yAxisProps = useMemo(
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
-    [yAxis.props]
+    [yAxis.props],
   );
   const seriesProps = useMemo(
     () => ({ ...HEATMAP_SERIES_DEFAULT_PROPS, ...series.props }),
-    [series.props]
+    [series.props],
   );
 
   const getScalesData = useCallback(
@@ -131,7 +131,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         uniqueBy(
           nestedData,
           (d) => d.data,
-          (d) => d.x
+          (d) => d.x,
         );
 
       const yScale = scaleBand()
@@ -142,10 +142,10 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       return {
         yScale,
         xScale,
-        data: nestedData
+        data: nestedData,
       };
     },
-    [data, xAxisProps.domain, seriesProps.padding, yAxisProps.domain]
+    [data, xAxisProps.domain, seriesProps.padding, yAxisProps.domain],
   );
 
   const renderChart = useCallback(
@@ -155,7 +155,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       const {
         xScale,
         yScale,
-        data: scalesData
+        data: scalesData,
       } = getScalesData(chartHeight, chartWidth);
 
       return (
@@ -199,7 +199,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         </Fragment>
       );
     },
-    [getScalesData, secondaryAxis, series, xAxis, yAxis]
+    [getScalesData, secondaryAxis, series, xAxis, yAxis],
   );
 
   return (

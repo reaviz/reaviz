@@ -1,10 +1,11 @@
-import { ChartShallowDataShape } from './types';
-import { Direction, buildShallowChartData } from './builder';
+import type { Direction } from './builder';
+import { buildShallowChartData } from './builder';
+import type { ChartShallowDataShape } from './types';
 
 export const buildWaterfall = (
   series: ChartShallowDataShape[],
   direction: Direction = 'vertical',
-  binSize: number | undefined = undefined
+  binSize: number | undefined = undefined,
 ) => {
   const data = buildShallowChartData(series, direction, binSize);
   const isVertical = direction === 'vertical';
