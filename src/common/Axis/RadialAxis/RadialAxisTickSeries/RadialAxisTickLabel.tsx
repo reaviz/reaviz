@@ -1,5 +1,6 @@
 import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
 import { formatValue } from '@/common/utils/formatting';
+import classNames from 'classnames';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
 
@@ -9,11 +10,6 @@ export interface RadialAxisTickLabelProps
    * Data to render.
    */
   data: any;
-
-  /**
-   * Url for onclick
-   */
-  url: string;
 
   /**
    * Size of the line.
@@ -61,6 +57,11 @@ export interface RadialAxisTickLabelProps
   autoRotate: boolean;
 
   /**
+   * has onclick  event
+   */
+  clickable: boolean;
+
+  /**
    * Format of the label.
    */
   format?: (value: any, index: number) => any | string;
@@ -83,7 +84,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   format,
   lineSize,
   index,
-  url,
+  clickable,
   formatTooltip,
   ...rest
 }) => {
@@ -138,8 +139,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         fill={fill}
         fontFamily={fontFamily}
         fontSize={fontSize}
-        onClick={() => url && window.open(url, '_blank')}
-        className={`fontSize, fontFamily fill ${url && ' cursor-pointer hover:underline '}`}
+        className={`fontSize, fontFamily fill ${clickable && ' cursor-pointer hover:underline '}`}
         {...rest}
       >
         {text}

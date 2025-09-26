@@ -38,7 +38,7 @@ export const Simple = () => (
     width={450}
     innerRadius={50}
     data={medDateData}
-    url="labels"
+    attachUrl="both"
     series={
       <RadialBarSeries
         animated

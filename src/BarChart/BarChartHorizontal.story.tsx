@@ -206,10 +206,6 @@ export const NonZero = () => (
   />
 );
 
-NonZero.story = {
-  name: 'Non-Zero'
-};
-
 export const keyUrl = () => (
   <BarChart
     width={500}
@@ -236,3 +232,7 @@ export const keyUrl = () => (
     }
   />
 );
+
+NonZero.story = {
+  name: 'Non-Zero'
+};

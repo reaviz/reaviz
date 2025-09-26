@@ -86,10 +86,8 @@ export interface BarChartProps extends ChartProps {
    * should get an onClick event that opens the `key_url` of the data node.
    */
 
-  attachUrl?: OnClickTarget;
+  attachUrl?: 'none' | 'labels' | 'bars' | 'both';
 }
-
-export type OnClickTarget = 'none' | 'labels' | 'bars' | 'both';
 
 export const BarChart: FC<Partial<BarChartProps>> = (props) => {
   const {
@@ -343,7 +341,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     ]
   );
 
-  let clickTarget: OnClickTarget = attachUrl;
+  let clickTarget = attachUrl;
   const onClickLabels = clickTarget === 'labels' || clickTarget === 'both';
   const onClickBars = clickTarget === 'bars' || clickTarget === 'both';
 

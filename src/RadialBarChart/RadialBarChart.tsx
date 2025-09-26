@@ -56,9 +56,11 @@ export interface RadialBarChartProps extends ChartProps {
   endAngle?: number;
 
   /**
-   * Directs where to place onClick handle
+   * Determines which chart elements (bars, labels, both, or none)
+   * should get an onClick event that opens the `key_url` of the data node.
    */
-  url?: 'labels' | 'bars' | 'none';
+
+  attachUrl?: 'none' | 'labels' | 'bars' | 'both';
 }
 
 export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
@@ -74,7 +76,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   axis = <RadialAxis />,
   startAngle = 0,
   endAngle = 2 * Math.PI,
-  url = 'labels'
+  attachUrl = 'labels'
 }) => {
   const axisProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
@@ -169,6 +171,10 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
     [getXScale, seriesProps.type]
   );
 
+  let clickTarget = attachUrl;
+  const onClickLabels = clickTarget === 'labels' || clickTarget === 'both';
+  const onClickBars = clickTarget === 'bars' || clickTarget === 'both';
+
   const renderChart = useCallback(
     ({ chartWidth, chartHeight, id }: ChartContainerChildProps) => {
       const outerRadius = Math.min(chartWidth, chartHeight) / 2;
@@ -189,7 +195,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
               innerRadius={innerRadius}
               startAngle={startAngle}
               endAngle={endAngle}
-              urls={url === 'labels' && urlMap}
+              urls={onClickLabels && urlMap}
             />
           )}
           <CloneElement<RadialBarSeriesProps>
@@ -204,7 +210,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
             outerRadius={outerRadius}
             startAngle={startAngle}
             endAngle={endAngle}
-            urls={url === 'bars' && urlMap}
+            urlEvents={onClickBars}
           />
         </Fragment>
       );

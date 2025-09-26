@@ -88,7 +88,7 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   /**
    * Gets the url *if any* of the tick.
    */
-  const getUrl = useCallback((tick: number) => urls.get(tick), [urls]);
+  const getUrl = useCallback((tick: number) => urls?.get(tick), [urls]);
 
   return (
     <Fragment>
