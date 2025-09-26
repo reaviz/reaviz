@@ -36,7 +36,7 @@ export interface LinearAxisTickSeriesProps {
   /**
    * The maximum length for ellipsizing tick labels. Default is 18.
    */
-  ellpsisLength?: number;
+  ellipsisLength?: number;
 }
 
 interface ProcessedTick {
@@ -63,7 +63,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     interval,
     line,
     axis,
-    ellpsisLength
+    ellipsisLength
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
@@ -140,7 +140,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
       const fullText = format(tick);
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
-      const text = ellipsize(fullText, ellpsisLength);
+      const text = ellipsize(fullText, ellipsisLength);
       const size = label
         ? calculateDimensions(
             text,
@@ -164,7 +164,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     });
   }, [
     axis.type,
-    ellpsisLength,
+    ellipsisLength,
     getAdjustedScale,
     getDimension,
     getPosition,
@@ -267,5 +267,5 @@ export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
     />
   ),
   tickSize: 30,
-  ellpsisLength: 18
+  ellipsisLength: 18
 };
