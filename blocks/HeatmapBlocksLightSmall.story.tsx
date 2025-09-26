@@ -1,5 +1,11 @@
-import React from 'react';
 import { motion } from 'motion/react';
+import React from 'react';
+import {
+  heatmapSmallBlocksData,
+  heatmapSmallSimpleBlocksData,
+} from 'reaviz-data-utils';
+
+import { schemes } from '../src/common/color/schemes';
 import {
   AreaChart,
   Heatmap,
@@ -11,19 +17,13 @@ import {
   LinearYAxis,
   LinearYAxisTickLabel,
   LinearYAxisTickSeries,
-  SequentialLegend
+  SequentialLegend,
 } from '../src/index';
-
-import {
-  heatmapSmallBlocksData,
-  heatmapSmallSimpleBlocksData
-} from 'reaviz-data-utils';
-import { schemes } from '../src/common/color/schemes';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Heatmap/Light/Small',
-  component: AreaChart
+  component: AreaChart,
 };
 
 export const Simple = () => {
@@ -70,10 +70,10 @@ export const Simple = () => {
               colorScheme={[
                 {
                   fill: '#FFC600',
-                  filter: 'drop-shadow(0px 0px 5px #FFC600)'
+                  filter: 'drop-shadow(0px 0px 5px #FFC600)',
                 },
                 { fill: '#F68500' },
-                { fill: '#E00007' }
+                { fill: '#E00007' },
               ]}
               padding={0.18}
             />
@@ -284,10 +284,10 @@ export const SimpleCircle = () => {
               colorScheme={[
                 {
                   fill: '#FFC600',
-                  filter: 'drop-shadow(0px 0px 5px #FFC600)'
+                  filter: 'drop-shadow(0px 0px 5px #FFC600)',
                 },
                 { fill: '#F68500' },
-                { fill: '#E00007' }
+                { fill: '#E00007' },
               ]}
             />
           }
@@ -494,7 +494,7 @@ export const SimpleHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -505,18 +505,18 @@ export const SimpleHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -529,10 +529,10 @@ export const SimpleHex = () => {
               colorScheme={[
                 {
                   fill: '#FFC600',
-                  filter: 'drop-shadow(0px 0px 5px #FFC600)'
+                  filter: 'drop-shadow(0px 0px 5px #FFC600)',
                 },
                 { fill: '#F68500' },
-                { fill: '#E00007' }
+                { fill: '#E00007' },
               ]}
             />
           }
@@ -737,7 +737,7 @@ export const Intensity = () => {
               colorScheme={[
                 { fill: '#8b00e066', stroke: '#9152EE', strokeWidth: '2px' },
                 { fill: '#F8A340' },
-                { fill: '#FFD440', filter: 'drop-shadow(0px 0px 5px #FFD440)' }
+                { fill: '#FFD440', filter: 'drop-shadow(0px 0px 5px #FFD440)' },
               ]}
               padding={0.18}
             />
@@ -948,7 +948,7 @@ export const IntensityCircle = () => {
               colorScheme={[
                 { fill: '#8b00e066', stroke: '#9152EE', strokeWidth: '2px' },
                 { fill: '#F8A340' },
-                { fill: '#FFD440', filter: 'drop-shadow(0px 0px 5px #FFD440)' }
+                { fill: '#FFD440', filter: 'drop-shadow(0px 0px 5px #FFD440)' },
               ]}
             />
           }
@@ -1155,7 +1155,7 @@ export const IntensityHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -1166,18 +1166,18 @@ export const IntensityHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -1190,7 +1190,7 @@ export const IntensityHex = () => {
               colorScheme={[
                 { fill: '#8b00e066', stroke: '#9152EE', strokeWidth: '2px' },
                 { fill: '#F8A340' },
-                { fill: '#FFD440', filter: 'drop-shadow(0px 0px 5px #FFD440)' }
+                { fill: '#FFD440', filter: 'drop-shadow(0px 0px 5px #FFD440)' },
               ]}
             />
           }
@@ -1395,7 +1395,7 @@ export const Correlation = () => {
               colorScheme={[
                 { fill: '#01736566' },
                 { fill: '#40e5d166', stroke: '#40E5D1', strokeWidth: '2px' },
-                { fill: '#40E5D1', filter: 'drop-shadow(0px 0px 5px #40E5D1)' }
+                { fill: '#40E5D1', filter: 'drop-shadow(0px 0px 5px #40E5D1)' },
               ]}
               padding={0.18}
             />
@@ -1606,7 +1606,7 @@ export const CorrelationCircle = () => {
               colorScheme={[
                 { fill: '#01736566' },
                 { fill: '#40e5d166', stroke: '#40E5D1', strokeWidth: '2px' },
-                { fill: '#40E5D1', filter: 'drop-shadow(0px 0px 5px #40E5D1)' }
+                { fill: '#40E5D1', filter: 'drop-shadow(0px 0px 5px #40E5D1)' },
               ]}
             />
           }
@@ -1813,7 +1813,7 @@ export const CorrelationHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -1824,18 +1824,18 @@ export const CorrelationHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -1848,7 +1848,7 @@ export const CorrelationHex = () => {
               colorScheme={[
                 { fill: '#01736566' },
                 { fill: '#40e5d166', stroke: '#40E5D1', strokeWidth: '2px' },
-                { fill: '#40E5D1', filter: 'drop-shadow(0px 0px 5px #40E5D1)' }
+                { fill: '#40E5D1', filter: 'drop-shadow(0px 0px 5px #40E5D1)' },
               ]}
             />
           }
@@ -2053,7 +2053,7 @@ export const Geospatial = () => {
               colorScheme={[
                 { fill: '#202E03', stroke: '#AADC40', strokeWidth: '2px' },
                 { fill: '#80CE5B' },
-                { fill: '#D5EFC8', filter: 'drop-shadow(0px 0px 5px #D5EFC8)' }
+                { fill: '#D5EFC8', filter: 'drop-shadow(0px 0px 5px #D5EFC8)' },
               ]}
               padding={0.18}
             />
@@ -2264,7 +2264,7 @@ export const GeospatialCircle = () => {
               colorScheme={[
                 { fill: '#202E03', stroke: '#AADC40', strokeWidth: '2px' },
                 { fill: '#80CE5B' },
-                { fill: '#D5EFC8', filter: 'drop-shadow(0px 0px 5px #D5EFC8)' }
+                { fill: '#D5EFC8', filter: 'drop-shadow(0px 0px 5px #D5EFC8)' },
               ]}
             />
           }
@@ -2471,7 +2471,7 @@ export const GeospatialHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -2482,18 +2482,18 @@ export const GeospatialHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -2506,7 +2506,7 @@ export const GeospatialHex = () => {
               colorScheme={[
                 { fill: '#202E03', stroke: '#AADC40', strokeWidth: '2px' },
                 { fill: '#80CE5B' },
-                { fill: '#D5EFC8', filter: 'drop-shadow(0px 0px 5px #D5EFC8)' }
+                { fill: '#D5EFC8', filter: 'drop-shadow(0px 0px 5px #D5EFC8)' },
               ]}
             />
           }
@@ -2711,7 +2711,7 @@ export const Warm = () => {
               colorScheme={[
                 { fill: '#F7BFC166' },
                 { fill: '#e0000766', stroke: '#E00007', strokeWidth: '2px' },
-                { fill: '#E00007', filter: 'drop-shadow(0px 0px 5px #E00007)' }
+                { fill: '#E00007', filter: 'drop-shadow(0px 0px 5px #E00007)' },
               ]}
               padding={0.18}
             />
@@ -2922,7 +2922,7 @@ export const WarmCircle = () => {
               colorScheme={[
                 { fill: '#F7BFC166' },
                 { fill: '#e0000766', stroke: '#E00007', strokeWidth: '2px' },
-                { fill: '#E00007', filter: 'drop-shadow(0px 0px 5px #E00007)' }
+                { fill: '#E00007', filter: 'drop-shadow(0px 0px 5px #E00007)' },
               ]}
             />
           }
@@ -3129,7 +3129,7 @@ export const WarmHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -3140,18 +3140,18 @@ export const WarmHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -3164,7 +3164,7 @@ export const WarmHex = () => {
               colorScheme={[
                 { fill: '#F7BFC166' },
                 { fill: '#e0000766', stroke: '#E00007', strokeWidth: '2px' },
-                { fill: '#E00007', filter: 'drop-shadow(0px 0px 5px #E00007)' }
+                { fill: '#E00007', filter: 'drop-shadow(0px 0px 5px #E00007)' },
               ]}
             />
           }
@@ -3371,8 +3371,8 @@ export const Hot = () => {
                 { fill: '#E00007' },
                 {
                   fill: '#F7BFC1',
-                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
-                }
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)',
+                },
               ]}
               padding={0.18}
             />
@@ -3585,8 +3585,8 @@ export const HotCircle = () => {
                 { fill: '#E00007' },
                 {
                   fill: '#F7BFC1',
-                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
-                }
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)',
+                },
               ]}
             />
           }
@@ -3793,7 +3793,7 @@ export const HotHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -3804,18 +3804,18 @@ export const HotHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -3830,8 +3830,8 @@ export const HotHex = () => {
                 { fill: '#E00007' },
                 {
                   fill: '#F7BFC1',
-                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)'
-                }
+                  filter: 'drop-shadow(0px 0px 5px #F7BFC1)',
+                },
               ]}
             />
           }
@@ -4036,7 +4036,7 @@ export const Classic = () => {
               colorScheme={[
                 { fill: '#a840e866', stroke: '#8B00E0', strokeWidth: '2px' },
                 { fill: '#4C86FF' },
-                { fill: '#40D3F4', filter: 'drop-shadow(0px 0px 5px #40D3F4)' }
+                { fill: '#40D3F4', filter: 'drop-shadow(0px 0px 5px #40D3F4)' },
               ]}
               padding={0.18}
             />
@@ -4247,7 +4247,7 @@ export const ClassicCircle = () => {
               colorScheme={[
                 { fill: '#a840e866', stroke: '#8B00E0', strokeWidth: '2px' },
                 { fill: '#4C86FF' },
-                { fill: '#40D3F4', filter: 'drop-shadow(0px 0px 5px #40D3F4)' }
+                { fill: '#40D3F4', filter: 'drop-shadow(0px 0px 5px #40D3F4)' },
               ]}
             />
           }
@@ -4454,7 +4454,7 @@ export const ClassicHex = () => {
                   symbol={(data) => {
                     const rowNumber =
                       heatmapSmallBlocksData?.[0]?.data?.findIndex(
-                        (d) => d.key === data?.x
+                        (d) => d.key === data?.x,
                       );
 
                     let transform = 'translate(6, 8) rotate(90)';
@@ -4465,18 +4465,18 @@ export const ClassicHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(15, 8) rotate(90)';
@@ -4489,7 +4489,7 @@ export const ClassicHex = () => {
               colorScheme={[
                 { fill: '#a840e866', stroke: '#8B00E0', strokeWidth: '2px' },
                 { fill: '#4C86FF' },
-                { fill: '#40D3F4', filter: 'drop-shadow(0px 0px 5px #40D3F4)' }
+                { fill: '#40D3F4', filter: 'drop-shadow(0px 0px 5px #40D3F4)' },
               ]}
             />
           }

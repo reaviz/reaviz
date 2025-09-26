@@ -10,13 +10,13 @@ import {
   FunnelAxisLine,
   FunnelChart,
   FunnelSeries,
-  TooltipArea
+  TooltipArea,
 } from '../src/index';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Funnel Chart/Light/Medium',
-  component: FunnelChart
+  component: FunnelChart,
 };
 
 export const LargeDataset = () => {
@@ -514,7 +514,7 @@ export const Layered = () => {
                 variant="layered"
                 glow={{
                   blur: 30,
-                  color: '#EE409499'
+                  color: '#EE409499',
                 }}
               />
             }

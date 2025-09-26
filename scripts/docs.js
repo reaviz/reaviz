@@ -1,5 +1,5 @@
-import { writeFileSync } from 'fs';
 import fg from 'fast-glob';
+import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 import docgen from 'react-docgen-typescript';
 
@@ -14,9 +14,12 @@ function buildDocs() {
   let fail = 0;
 
   const options = {
-    savePropValueAsString: true
+    savePropValueAsString: true,
   };
-  const docgenWithTSConfig = docgen.withCustomConfig('./tsconfig.json', options);
+  const docgenWithTSConfig = docgen.withCustomConfig(
+    './tsconfig.json',
+    options,
+  );
 
   files.forEach((file) => {
     console.log('Reading', file);

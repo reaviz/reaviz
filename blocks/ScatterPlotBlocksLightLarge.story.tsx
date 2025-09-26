@@ -1,10 +1,17 @@
-import React from 'react';
 import { motion } from 'motion/react';
+import React from 'react';
+import {
+  largeSignalChartData,
+  medSignalChartData,
+  signalStageData,
+  singleDateData,
+} from 'reaviz-data-utils';
+
 import {
   Count,
-  GridStripe,
   Gridline,
   GridlineSeries,
+  GridStripe,
   LinearXAxis,
   LinearXAxisTickLabel,
   LinearXAxisTickSeries,
@@ -12,20 +19,13 @@ import {
   LinearYAxisTickSeries,
   ScatterPlot,
   ScatterPoint,
-  ScatterSeries
+  ScatterSeries,
 } from '../src/index';
-
-import {
-  largeSignalChartData,
-  medSignalChartData,
-  signalStageData,
-  singleDateData
-} from 'reaviz-data-utils';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Light/Large',
-  component: ScatterPlot
+  component: ScatterPlot,
 };
 
 export const Minimal = () => {
@@ -597,7 +597,7 @@ export const Symbols = () => {
                       points="225,10 100,210 350,210"
                       transform={`scale(${0.1}) translate(-220, -50)`}
                       style={{
-                        fill: '#105EFF'
+                        fill: '#105EFF',
                       }}
                     />
                   </g>
@@ -849,7 +849,7 @@ export const Categorical = () => {
               'Execution',
               'Defense Evasion',
               'Exfiltration',
-              'C2'
+              'C2',
             ]}
             tickSeries={
               <LinearYAxisTickSeries line={null} label={null} tickSize={10} />

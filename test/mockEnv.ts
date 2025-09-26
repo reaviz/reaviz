@@ -1,4 +1,4 @@
-import { ResizeObserverEntry, ResizeObserver } from '@juggle/resize-observer';
+import { ResizeObserver, ResizeObserverEntry } from '@juggle/resize-observer';
 
 if (!('ResizeObserver' in window)) {
   // @ts-ignore

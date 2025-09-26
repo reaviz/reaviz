@@ -1,19 +1,20 @@
 import React from 'react';
+import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
+
+import { schemes } from '../src/common/color/schemes';
 import {
   FunnelArc,
   FunnelAxis,
   FunnelAxisLine,
   FunnelChart,
   FunnelSeries,
-  TooltipArea
+  TooltipArea,
 } from '../src/index';
-import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
-import { schemes } from '../src/common/color/schemes';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Funnel Chart/Dark/X-Small',
-  component: FunnelChart
+  component: FunnelChart,
 };
 
 export const LargeDataset = () => {
@@ -99,7 +100,7 @@ export const Layered = () => {
                 variant="layered"
                 glow={{
                   blur: 20,
-                  color: '#EE409499'
+                  color: '#EE409499',
                 }}
               />
             }
