@@ -1,3 +1,6 @@
+# 16.0.10 - 9/26/25
+- [fix] Add ellipsisLength property to LinearAxisTickSeries component #301
+
 # 16.0.9 - 9/11/25
 - [fix] Update reablocks to fix Pie arc override functionality
 
