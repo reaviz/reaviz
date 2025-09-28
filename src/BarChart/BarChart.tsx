@@ -86,7 +86,7 @@ export interface BarChartProps extends ChartProps {
    * should get an onClick event that opens the `key_url` of the data node.
    */
 
-  attachUrl?: 'none' | 'labels' | 'bars' | 'both';
+  attachUrl?: 'none' | 'axis' | 'bars' | 'both';
 }
 
 export const BarChart: FC<Partial<BarChartProps>> = (props) => {
@@ -104,7 +104,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
     gridlines,
     secondaryAxis,
     containerClassName,
-    attachUrl = 'labels'
+    attachUrl = 'axis'
   } = mergeDefaultProps(BAR_CHART_DEFAULT_PROPS, props);
   const seriesProps = useMemo(
     () => ({ ...BAR_SERIES_DEFAULT_PROPS, ...series?.props }),
@@ -342,7 +342,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
   );
 
   let clickTarget = attachUrl;
-  const onClickLabels = clickTarget === 'labels' || clickTarget === 'both';
+  const onClickLabels = clickTarget === 'axis' || clickTarget === 'both';
   const onClickBars = clickTarget === 'bars' || clickTarget === 'both';
 
   const urlMap = useMemo(() => {

@@ -61,7 +61,7 @@ export interface RadialBarChartProps extends ChartProps {
    * should get an onClick event that opens the `key_url` of the data node.
    */
 
-  attachUrl?: 'none' | 'labels' | 'bars' | 'both';
+  attachUrl?: 'none' | 'axis' | 'bars' | 'both';
 }
 
 export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
@@ -77,7 +77,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   axis = <RadialAxis />,
   startAngle = 0,
   endAngle = 2 * Math.PI,
-  attachUrl = 'labels'
+  attachUrl = 'axis'
 }) => {
   const axisProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
@@ -189,7 +189,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   );
 
   let clickTarget = attachUrl;
-  const onClickLabels = clickTarget === 'labels' || clickTarget === 'both';
+  const onClickLabels = clickTarget === 'axis' || clickTarget === 'both';
   const onClickBars = clickTarget === 'bars' || clickTarget === 'both';
 
   const renderChart = useCallback(

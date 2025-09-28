@@ -91,9 +91,7 @@ export const Resizable = () => (
 );
 
 export const LiveUpdating = () => {
-  const [data, setData] = useState([
-    ...largeCategoryData.map((x) => ({ ...x, key_url: '222' }))
-  ]);
+  const [data, setData] = useState([...largeCategoryData]);
 
   const updateData = () => {
     const updateCount = Math.floor(Math.random() * 4) + 1;
@@ -106,7 +104,7 @@ export const LiveUpdating = () => {
       idx++;
     }
 
-    setData(newData.map((x) => ({ ...x, key_url: '22' })));
+    setData(newData);
   };
 
   const sortData = () => {
@@ -123,23 +121,13 @@ export const LiveUpdating = () => {
   );
 };
 
-const withurls = multiCategory.map((x) => ({
-  ...x,
-  key_url: x.key,
-  data: x.data.map((y, i) => ({
-    ...y,
-    key_url: `https://example.com/${y?.key}`
-  }))
-}));
-
 export const MultiSeries = () => (
   <RadialBarChart
     id="multi-series"
     height={450}
     width={450}
     innerRadius={50}
-    attachUrl="both"
-    data={withurls}
+    data={multiCategory}
     series={
       <RadialBarSeries
         type="grouped"

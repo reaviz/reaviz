@@ -82,7 +82,7 @@ export function buildNestedChartData(
         key,
         key_url: !radial ? nestedPoint.key_url : point.key_url,
         value: normalizeValueForFormatting(nestedPoint.data as any),
-        metadata: nestedPoint?.metadata,
+        metadata: nestedPoint.metadata,
         id: point.id,
         x,
         x0: isVertical ? x : 0,
