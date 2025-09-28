@@ -40,7 +40,8 @@ export type Direction = 'vertical' | 'horizontal';
 export function buildNestedChartData(
   series: ChartNestedDataShape[],
   sort = false,
-  direction: Direction = 'vertical'
+  direction: Direction = 'vertical',
+  radial = false
 ): ChartInternalNestedDataShape[] {
   let result: ChartInternalNestedDataShape[] = [];
   const maxBigInteger = getMaxBigIntegerForNested(series);
@@ -79,7 +80,7 @@ export function buildNestedChartData(
 
       result[idx].data.push({
         key,
-        key_url: nestedPoint?.key_url,
+        key_url: !radial ? nestedPoint.key_url : point.key_url,
         value: normalizeValueForFormatting(nestedPoint.data as any),
         metadata: nestedPoint?.metadata,
         id: point.id,

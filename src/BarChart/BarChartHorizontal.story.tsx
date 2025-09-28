@@ -40,11 +40,13 @@ export default {
   }
 };
 
+const data = categoryData;
+
 export const Simple = () => (
   <BarChart
     width={500}
     height={350}
-    data={categoryData}
+    data={data}
     xAxis={<LinearXAxis type="value" />}
     yAxis={
       <LinearYAxis
@@ -69,7 +71,7 @@ export const WithScroll = () => (
     <BarChart
       width={500}
       height={350}
-      data={categoryData}
+      data={data}
       xAxis={<LinearXAxis type="value" />}
       yAxis={
         <LinearYAxis
@@ -116,7 +118,7 @@ export const Labels = () => (
   <BarChart
     width={350}
     height={250}
-    data={categoryData}
+    data={data}
     xAxis={<LinearXAxis type="value" />}
     yAxis={
       <LinearYAxis
@@ -136,7 +138,7 @@ export const Labels = () => (
 export const Autosize = () => (
   <div style={{ width: '50vw', height: '50vh', border: 'solid 1px red' }}>
     <BarChart
-      data={categoryData}
+      data={data}
       series={<BarSeries layout="horizontal" />}
       xAxis={<LinearXAxis type="value" />}
       yAxis={
@@ -153,7 +155,7 @@ export const Waterfall = () => (
   <BarChart
     height={350}
     width={500}
-    data={categoryData}
+    data={data}
     xAxis={<LinearXAxis type="value" />}
     series={<BarSeries layout="horizontal" type="waterfall" />}
     yAxis={

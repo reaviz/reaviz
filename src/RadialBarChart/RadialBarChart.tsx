@@ -23,6 +23,7 @@ import {
 } from '@/common/Axis/RadialAxis';
 import { getRadialYScale } from '@/common/scales';
 import { uniqueBy } from '@/common/utils/array';
+import { hasDataArray } from '@/common/utils/hasDataArray';
 
 export interface RadialBarChartProps extends ChartProps {
   /**
@@ -139,19 +140,35 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
 
   const urlMap = useMemo(() => {
     if (!data) return new Map();
+    const isMultiSeries = seriesProps.type === 'grouped';
     const map = new Map();
-    for (const { key, key_url } of data) {
-      if (key_url) map.set(key, key_url);
+    if (isMultiSeries) {
+      for (const d of data) {
+        if (hasDataArray(d)) {
+          for (const { key, key_url } of d.data) {
+            if (key_url) map.set(key, key_url);
+          }
+        }
+      }
+    } else {
+      for (const { key, key_url } of data) {
+        if (key_url) map.set(key, key_url);
+      }
     }
     return map;
-  }, [data]);
+  }, [data, seriesProps.type]);
 
   const getScales = useCallback(
     (preData: ChartDataShape[], innerRadius: number, outerRadius: number) => {
       const isMultiSeries = seriesProps.type === 'grouped';
       let newData;
       if (isMultiSeries) {
-        newData = buildNestedChartData(preData as ChartNestedDataShape[], true);
+        newData = buildNestedChartData(
+          preData as ChartNestedDataShape[],
+          true,
+          'vertical',
+          true
+        );
       } else {
         newData = buildShallowChartData(preData as ChartShallowDataShape[]);
       }
@@ -215,7 +232,18 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
         </Fragment>
       );
     },
-    [axis, data, endAngle, getScales, innerRadius, series, startAngle]
+    [
+      axis,
+      data,
+      endAngle,
+      getScales,
+      innerRadius,
+      series,
+      startAngle,
+      onClickBars,
+      onClickLabels,
+      urlMap
+    ]
   );
 
   return (

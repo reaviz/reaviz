@@ -1,7 +1,7 @@
 import { RadialBarChart } from './RadialBarChart';
 import {
   largeCategoryData,
-  medDateData as data,
+  medDateData,
   multiCategory
 } from 'reaviz-data-utils';
 import { RadialBarSeries, RadialBar, RadialGuideBar } from './RadialBarSeries';
@@ -26,7 +26,7 @@ export default {
   }
 };
 
-const medDateData = data.map((entry) => ({
+const medDateDataWithUrl = medDateData.map((entry) => ({
   key_url: `${entry.key}`,
   ...entry
 }));
@@ -37,8 +37,8 @@ export const Simple = () => (
     height={450}
     width={450}
     innerRadius={50}
-    data={medDateData}
-    attachUrl="both"
+    data={medDateDataWithUrl}
+    attachUrl="labels"
     series={
       <RadialBarSeries
         animated
@@ -97,7 +97,9 @@ export const Resizable = () => (
 );
 
 export const LiveUpdating = () => {
-  const [data, setData] = useState([...largeCategoryData]);
+  const [data, setData] = useState([
+    ...largeCategoryData.map((x) => ({ ...x, key_url: '222' }))
+  ]);
 
   const updateData = () => {
     const updateCount = Math.floor(Math.random() * 4) + 1;
@@ -110,7 +112,7 @@ export const LiveUpdating = () => {
       idx++;
     }
 
-    setData(newData);
+    setData(newData.map((x) => ({ ...x, key_url: '22' })));
   };
 
   const sortData = () => {
@@ -127,13 +129,20 @@ export const LiveUpdating = () => {
   );
 };
 
+const withurls = multiCategory.map((x) => ({
+  ...x,
+  key_url: x.key,
+  data: x.data.map((y, i) => ({ ...y, key_url: x.data[i].key }))
+}));
+
 export const MultiSeries = () => (
   <RadialBarChart
     id="multi-series"
     height={450}
     width={450}
     innerRadius={50}
-    data={multiCategory}
+    attachUrl="both"
+    data={withurls}
     series={
       <RadialBarSeries
         type="grouped"

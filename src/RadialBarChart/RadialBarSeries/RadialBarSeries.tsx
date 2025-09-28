@@ -131,8 +131,6 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMultiSeries = useMemo(() => type === 'grouped', [type]);
 
-  console.log(data);
-
   const renderBar = useCallback(
     (
       point: ChartInternalShallowDataShape,
@@ -150,7 +148,8 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             id={`radialbar-${id}-${index}`}
             index={index}
             data={point}
-            url={urlEvents && point.key_url}
+            clickable={!!urlEvents}
+            onClick={() => urlEvents && window.open(point?.key_url)}
             xScale={xScale}
             active={active}
             yScale={yScale}
@@ -175,7 +174,8 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       innerRadius,
       startAngle,
       xScale,
-      yScale
+      yScale,
+      urlEvents
     ]
   );
 

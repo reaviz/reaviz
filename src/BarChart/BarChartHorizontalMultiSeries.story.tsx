@@ -3,7 +3,7 @@ import { BarChart } from './BarChart';
 import { StackedBarChart } from './StackedBarChart';
 import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
 import {
-  multiCategory as data,
+  multiCategory,
   binnedDateData,
   binnedDatePositiveOnly,
   binnedDateNegativeOnly
@@ -39,8 +39,8 @@ export default {
   }
 };
 
-const multiCategory = data.map((x) => ({
-  key_url: '333',
+const multiCategoryWithUrl = multiCategory.map((x) => ({
+  key_url: x.key,
   ...x,
   data: x.data.map((y, i) => ({
     key_url: `${i}`,
@@ -52,7 +52,7 @@ export const Simple = () => (
   <BarChart
     width={500}
     height={350}
-    data={multiCategory}
+    data={multiCategoryWithUrl}
     attachUrl="both"
     xAxis={<LinearXAxis type="value" />}
     yAxis={

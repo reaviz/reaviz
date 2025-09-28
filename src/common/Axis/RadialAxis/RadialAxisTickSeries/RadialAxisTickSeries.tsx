@@ -95,6 +95,7 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
       {ticks.map((data, i) => {
         const tickElement =
           typeof tick === 'function' ? tick({ index: i }) : tick;
+
         return (
           <CloneElement<RadialAxisTickProps>
             element={tickElement}

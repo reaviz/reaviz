@@ -114,9 +114,9 @@ export interface RadialBarProps {
    */
   onMouseLeave: (event) => void;
   /**
-   * url for click event
+   *
    */
-  url: string;
+  clickable: boolean;
 }
 
 export const RadialBar: FC<Partial<RadialBarProps>> = ({
@@ -136,7 +136,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   guide = <RadialGuideBar />,
   index,
   color,
-  url,
+  clickable,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
   onMouseLeave = () => undefined
@@ -310,7 +310,10 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
             }}
             transition={transition}
             fill={fill}
-            className={classNames(classNames, `${url && 'cursor-pointer'}`)}
+            className={classNames(
+              classNames,
+              `${clickable && 'cursor-pointer'}`
+            )}
             onMouseEnter={(event) =>
               onMouseEnter?.({
                 value: data,
@@ -323,7 +326,12 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
                 nativeEvent: event
               })
             }
-            onClick={(event) => url && window.open(url)}
+            onClick={(event) =>
+              onClick?.({
+                value: data,
+                nativeEvent: event
+              })
+            }
           />
         </Fragment>
       );
@@ -339,7 +347,8 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       onMouseEnter,
       onMouseLeave,
       transition,
-      yScale
+      yScale,
+      clickable
     ]
   );
 
