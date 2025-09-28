@@ -24,6 +24,7 @@ import {
 import { getRadialYScale } from '@/common/scales';
 import { uniqueBy } from '@/common/utils/array';
 import { hasDataArray } from '@/common/utils/hasDataArray';
+import { buildUrlMap } from '@/common/utils/buildUrlMap';
 
 export interface RadialBarChartProps extends ChartProps {
   /**
@@ -139,23 +140,8 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
    */
 
   const urlMap = useMemo(() => {
-    if (!data) return new Map();
     const isMultiSeries = seriesProps.type === 'grouped';
-    const map = new Map();
-    if (isMultiSeries) {
-      for (const d of data) {
-        if (hasDataArray(d)) {
-          for (const { key, key_url } of d.data) {
-            if (key_url) map.set(key, key_url);
-          }
-        }
-      }
-    } else {
-      for (const { key, key_url } of data) {
-        if (key_url) map.set(key, key_url);
-      }
-    }
-    return map;
+    return buildUrlMap(data, isMultiSeries);
   }, [data, seriesProps.type]);
 
   const getScales = useCallback(

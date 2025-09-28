@@ -44,6 +44,7 @@ import {
 } from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 import { mergeDefaultProps } from '@/common';
+import { buildUrlMap } from '@/common/utils/buildUrlMap';
 
 export interface BarChartProps extends ChartProps {
   /**
@@ -345,14 +346,7 @@ export const BarChart: FC<Partial<BarChartProps>> = (props) => {
   const onClickLabels = clickTarget === 'axis' || clickTarget === 'both';
   const onClickBars = clickTarget === 'bars' || clickTarget === 'both';
 
-  const urlMap = useMemo(() => {
-    if (!data) return;
-    const map = new Map();
-    for (const { key, key_url } of data) {
-      if (key_url) map.set(key, key_url);
-    }
-    return map;
-  }, [data]);
+  const urlMap = useMemo(() => buildUrlMap(data), [data]);
 
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {

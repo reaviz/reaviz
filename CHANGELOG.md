@@ -1,22 +1,33 @@
+# 16.0.12 - 9/28/25
+
+- [improvement] Add optional URL onClick navigation for Barchart/radialBarChart via 'key_url' on data and 'attachUrl' prop (default "axis")
+
 # 16.0.10 - 9/26/25
+
 - [fix] Add ellipsisLength property to LinearAxisTickSeries component #301
 
 # 16.0.9 - 9/11/25
+
 - [fix] Update reablocks to fix Pie arc override functionality
 
 # 16.0.7 - 8/11/25
+
 - [fix] Fix the flickering of the calendar heatmap when changing tickSize prop
 
 # 16.0.6 - 7/31/25
+
 - [improvement] Add ability to pass custom styles of the path to PieArc component #293
 
 # 16.0.5 - 7/17/25
+
 - [fix] Remove default props for RadialBarSeries and RadialBar
 
 # 16.0.4 - 3/26/25
+
 - [improvement] Add ability to change pointer event for Area #287
 
 # 16.0.3 - 2/14/25
+
 - [improvement] Update reablocks and motion
 
 # 16.0.2 - 1/21/25
@@ -542,117 +553,35 @@ To migrate to 14.x, you will need to rename your CSS variables. Here is
 what they look like today:
 
 ```css
---color-background:
+--color-background: rgb (51, 51, 51);
+--color-on-background: #fff;
 
-rgb
-(
-51
-,
-51
-,
-51
-)
-;
---color-on-background: #fff
+--color-tooltip: rgba (0, 5, 11, 0.9);
+--color-on-tooltip: #fff;
 
-;
-
---color-tooltip:
-
-rgba
-(
-0
-,
-5
-,
-11
-,
-0.9
-)
-;
---color-on-tooltip: #fff
-
-;
-
---color-handle-fill: #2c343a
-
-;
---color-handle-stroke: #67c2e4
-
-;
---color-handle-drag-fill: transparent
-
-;
---color-handle-dots: #67c2e4
-
-;
---color-handle-line: #67c2e4
-
-;
+--color-handle-fill: #2c343a;
+--color-handle-stroke: #67c2e4;
+--color-handle-drag-fill: transparent;
+--color-handle-dots: #67c2e4;
+--color-handle-line: #67c2e4;
 ```
 
 Here is what they need to be renamed to:
 
 ```css
---tooltip-background:
+--tooltip-background: rgba (0, 5, 11, 0.9);
+--tooltip-color: #fff;
+--tooltip-border-radius: 5 px;
+--tooltip-spacing: 5 px;
 
-rgba
-(
-0
-,
-5
-,
-11
-,
-0.9
-)
-;
---tooltip-color: #fff
+--chart-background: rgb (51, 51, 51);
+--chart-color: #fff;
 
-;
---tooltip-border-radius:
-
-5
-px
-
-;
---tooltip-spacing:
-
-5
-px
-
-;
-
---chart-background:
-
-rgb
-(
-51
-,
-51
-,
-51
-)
-;
---chart-color: #fff
-
-;
-
---chart-handle-fill: #2c343a
-
-;
---chart-handle-stroke: #67c2e4
-
-;
---chart-handle-drag-fill: transparent
-
-;
---chart-handle-dots: #67c2e4
-
-;
---chart-handle-line: #67c2e4
-
-;
+--chart-handle-fill: #2c343a;
+--chart-handle-stroke: #67c2e4;
+--chart-handle-drag-fill: transparent;
+--chart-handle-dots: #67c2e4;
+--chart-handle-line: #67c2e4;
 ```
 
 # 13.3.2 - 11/30/22
