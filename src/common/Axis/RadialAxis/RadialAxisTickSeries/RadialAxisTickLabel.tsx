@@ -140,8 +140,8 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         fill={fill}
         fontFamily={fontFamily}
         fontSize={fontSize}
-        onClick={() => clickable && onClick(data?.url)}
-        className={`fontSize, fontFamily fill ${clickable && ' cursor-pointer hover:underline '}`}
+        onClick={(e) => clickable && onClick(e)}
+        className={classNames(clickable && 'cursor-pointer hover:underline ')}
         {...rest}
       >
         {text}

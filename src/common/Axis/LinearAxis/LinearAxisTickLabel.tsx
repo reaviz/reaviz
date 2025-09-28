@@ -5,6 +5,7 @@ import {
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
 import { mergeDefaultProps } from '@/common/utils';
+import classNames from 'classnames';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -182,7 +183,10 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       <text
         {...textPosition}
         fill={fill}
-        className={`${className} ${clickable && ' cursor-pointer hover:underline hover:brightness-125 '}`}
+        className={classNames(
+          className,
+          clickable && 'cursor-pointer hover:underline hover:brightness-125'
+        )}
       >
         {text}
       </text>
