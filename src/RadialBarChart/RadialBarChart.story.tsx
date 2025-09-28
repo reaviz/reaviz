@@ -26,19 +26,13 @@ export default {
   }
 };
 
-const medDateDataWithUrl = medDateData.map((entry) => ({
-  key_url: `${entry.key}`,
-  ...entry
-}));
-
 export const Simple = () => (
   <RadialBarChart
     id="simple"
     height={450}
     width={450}
     innerRadius={50}
-    data={medDateDataWithUrl}
-    attachUrl="labels"
+    data={medDateData}
     series={
       <RadialBarSeries
         animated
@@ -132,7 +126,10 @@ export const LiveUpdating = () => {
 const withurls = multiCategory.map((x) => ({
   ...x,
   key_url: x.key,
-  data: x.data.map((y, i) => ({ ...y, key_url: x.data[i].key }))
+  data: x.data.map((y, i) => ({
+    ...y,
+    key_url: `https://example.com/${y?.key}`
+  }))
 }));
 
 export const MultiSeries = () => (

@@ -214,7 +214,7 @@ export const keyUrl = () => (
     height={350}
     data={categoryData.map((x, i) => ({
       ...x,
-      key_url: `https://example.com/${i}`
+      key_url: `https://example.com/${x?.key}`
     }))}
     attachUrl="both"
     xAxis={<LinearXAxis type="value" />}
