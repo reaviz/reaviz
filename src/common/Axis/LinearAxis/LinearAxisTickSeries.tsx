@@ -237,7 +237,9 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               text={tick.text}
               fullText={tick.fullText}
               half={tick.half}
-              onClick={() => window.open(tick?.url)}
+              onClick={() =>
+                window.open(tick?.url, '_blank', 'noopener,noreferrer')
+              }
               clickable={!!tick?.url}
               angle={angle}
               orientation={orientation}

@@ -107,7 +107,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
-          onClick={() => window.open(url)}
+          onClick={() => window.open(url, '_blank', 'noopener,noreferrer')}
           clickable={!!url}
         />
       )}

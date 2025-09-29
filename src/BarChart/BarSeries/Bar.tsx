@@ -477,7 +477,8 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
         value: data,
         nativeEvent: event
       });
-      if (urlEvents && data?.key_url) window.open(data?.key_url);
+      if (urlEvents && data?.key_url)
+        window.open(data?.key_url, '_blank', 'noopener,noreferrer');
     },
     [data, onClick]
   );
