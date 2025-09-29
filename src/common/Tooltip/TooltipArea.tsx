@@ -11,7 +11,7 @@ import React, {
   useImperativeHandle,
   useMemo,
   useRef,
-  useState,
+  useState
 } from 'react';
 import isEqual from 'react-fast-compare';
 
@@ -19,12 +19,12 @@ import type {
   ChartDataTypes,
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '@/common/data';
 import {
   getClosestBandScalePoint,
   getClosestContinousScalePoint,
-  getPositionForTarget,
+  getPositionForTarget
 } from '@/common/utils/position';
 
 import type { ChartTooltipProps } from './ChartTooltip';
@@ -162,9 +162,9 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       placement: placementProp,
       onValueLeave = () => undefined,
       startAngle = 0,
-      endAngle = 2 * Math.PI,
+      endAngle = 2 * Math.PI
     },
-    childRef,
+    childRef
   ) => {
     const [visible, setVisible] = useState<boolean>();
     const [placement, setPlacement] = useState<Placement>();
@@ -209,7 +209,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
         return x;
       },
-      [endAngle, height, isRadial, outerRadius, range, startAngle, width],
+      [endAngle, height, isRadial, outerRadius, range, startAngle, width]
     );
 
     const transformData = useCallback(
@@ -233,7 +233,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
                 if (idx === -1) {
                   result.push({
                     x: nestedPoint.x,
-                    data: [],
+                    data: []
                   });
 
                   idx = result.length - 1;
@@ -259,8 +259,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
                 data: nestedPoint.data.map((d) => ({
                   ...d,
                   key: !isHorizontal ? d.x : d.y,
-                  value: !isHorizontal ? d.y : d.x,
-                })),
+                  value: !isHorizontal ? d.y : d.x
+                }))
               });
             } else {
               const shallowPoint = point as ChartInternalShallowDataShape;
@@ -271,7 +271,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
                 y:
                   shallowPoint.value === undefined
                     ? shallowPoint.y
-                    : shallowPoint.value,
+                    : shallowPoint.value
               });
             }
           }
@@ -279,7 +279,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
         return result;
       },
-      [inverse, isHorizontal],
+      [inverse, isHorizontal]
     );
 
     const onMouseMove = useCallback(
@@ -304,7 +304,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
           target: target,
           // Manually pass the x/y from the event
           clientX: event.clientX,
-          clientY: event.clientY,
+          clientY: event.clientY
         });
 
         // Need to flip scales/coords if we are a horz layout
@@ -337,13 +337,13 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
               scale: keyScale,
               data: transformed,
               attr,
-              roundDown: !isContinous,
+              roundDown: !isContinous
             })
           : getClosestBandScalePoint({
               pos: coord,
               scale: keyScale,
               data: transformed,
-              roundClosest: isRadial,
+              roundClosest: isRadial
             });
 
         if (!isEqual(newValue, value) && newValue) {
@@ -406,7 +406,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
             pointX,
             offsetX,
             offsetY,
-            nativeEvent: event,
+            nativeEvent: event
           });
         }
       },
@@ -426,8 +426,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         value,
         width,
         xScale,
-        yScale,
-      ],
+        yScale
+      ]
     );
 
     const onMouseLeave = useCallback(() => {
@@ -443,7 +443,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     useImperativeHandle(childRef, () => ({
       triggerMouseMove(e: React.MouseEvent) {
         onMouseMove(e);
-      },
+      }
     }));
 
     const tooltipReference = useMemo(
@@ -451,9 +451,9 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         width: 4,
         height: 4,
         top: offsetY,
-        left: offsetX,
+        left: offsetX
       }),
-      [offsetX, offsetY],
+      [offsetX, offsetY]
     );
 
     const renderRadial = useCallback(() => {
@@ -464,7 +464,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         innerRadius: innerRadiusNew,
         outerRadius: outerRadiusNew,
         startAngle: isFullCircle ? 0 : startAngle,
-        endAngle: isFullCircle ? 2 * Math.PI : endAngle,
+        endAngle: isFullCircle ? 2 * Math.PI : endAngle
       });
 
       // This is a dummuy full circle in the background as we need the
@@ -475,7 +475,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         innerRadius: innerRadiusNew,
         outerRadius: outerRadiusNew,
         startAngle: 0,
-        endAngle: 2 * Math.PI,
+        endAngle: 2 * Math.PI
       });
 
       return (
@@ -498,7 +498,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       onMouseMove,
       outerRadius,
       startAngle,
-      width,
+      width
     ]);
 
     const renderLinear = useCallback(() => {
@@ -535,5 +535,5 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         )}
       </Fragment>
     );
-  },
+  }
 );

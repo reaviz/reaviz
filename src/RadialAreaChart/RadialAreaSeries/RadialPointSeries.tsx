@@ -55,11 +55,11 @@ export interface RadialPointSeriesProps {
 }
 
 export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
-  props,
+  props
 ) => {
   const { data, xScale, yScale, animated, color, activeValues, show, point } = {
     ...RADIAL_POINT_SERIES_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
 
   const isVisible = useCallback(
@@ -85,7 +85,7 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
 
       return Boolean(show);
     },
-    [data, activeValues, show],
+    [data, activeValues, show]
   );
 
   return (
@@ -108,5 +108,5 @@ export const RadialPointSeries: FC<Partial<RadialPointSeriesProps>> = (
 
 export const RADIAL_POINT_SERIES_DEFAULT_PROPS = {
   show: 'hover',
-  point: <RadialScatterPoint />,
+  point: <RadialScatterPoint />
 };

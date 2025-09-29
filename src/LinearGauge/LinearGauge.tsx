@@ -7,7 +7,7 @@ import { ChartContainer } from '@/common/containers';
 import type {
   ChartInternalNestedDataShape,
   ChartNestedDataShape,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from '@/common/data';
 import { buildBarStackData, buildShallowChartData } from '@/common/data';
 import { getXScale, getYScale } from '@/common/scales';
@@ -47,7 +47,7 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
   series = <LinearGaugeSeries />,
   data,
   minValue = 0,
-  maxValue = 100,
+  maxValue = 100
 }) => {
   const transformedData = useMemo(() => {
     if (Array.isArray(data)) {
@@ -55,11 +55,11 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
         [
           {
             key: 'default',
-            data,
-          },
+            data
+          }
         ] as ChartNestedDataShape[],
         'expand',
-        'horizontal',
+        'horizontal'
       );
     } else {
       return buildShallowChartData([data], 'horizontal');
@@ -73,7 +73,7 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
       width: number,
       height: number,
       minValue: number,
-      maxValue: number,
+      maxValue: number
     ) => {
       const domain = !isMultiSeries ? [minValue, maxValue] : undefined;
 
@@ -82,22 +82,22 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
         type: 'value',
         data,
         domain,
-        isMultiSeries,
+        isMultiSeries
       });
 
       const valueScale = getYScale({
         type: 'category',
         height,
         data,
-        isMultiSeries,
+        isMultiSeries
       });
 
       return {
         keyScale,
-        valueScale,
+        valueScale
       };
     },
-    [],
+    []
   );
 
   const renderChart = useCallback(
@@ -110,7 +110,7 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
         chartWidth,
         chartHeight,
         minValue,
-        maxValue,
+        maxValue
       );
 
       return (
@@ -132,7 +132,7 @@ export const LinearGauge: FC<Partial<LinearGaugeProps>> = ({
         </Fragment>
       );
     },
-    [data, getScales, maxValue, minValue, series, transformedData],
+    [data, getScales, maxValue, minValue, series, transformedData]
   );
 
   return (

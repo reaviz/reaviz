@@ -5,7 +5,7 @@ import { RadialAxis } from '@/common/Axis/RadialAxis';
 import {
   RadialArea,
   RadialAreaChart,
-  RadialAreaSeries,
+  RadialAreaSeries
 } from '@/RadialAreaChart';
 
 import { GradientStop } from './GradientStop';
@@ -15,8 +15,8 @@ export default {
   title: 'Utils/Gradient/Radial',
   component: RadialGradient,
   subcomponents: {
-    GradientStop,
-  },
+    GradientStop
+  }
 };
 
 export const Simple = () => (

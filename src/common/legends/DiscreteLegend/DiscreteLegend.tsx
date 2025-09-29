@@ -6,7 +6,7 @@ import React from 'react';
 import css from './DiscreteLegend.module.css';
 import type {
   DiscreteLegendEntry,
-  DiscreteLegendEntryProps,
+  DiscreteLegendEntryProps
 } from './DiscreteLegendEntry';
 
 export interface DiscreteLegendProps {
@@ -35,12 +35,12 @@ export const DiscreteLegend: FC<Partial<DiscreteLegendProps>> = ({
   entries,
   orientation = 'vertical',
   style,
-  className,
+  className
 }) => (
   <div
     className={classNames(css.container, className, {
       [css.horizontal]: orientation === 'horizontal',
-      [css.vertical]: orientation === 'vertical',
+      [css.vertical]: orientation === 'vertical'
     })}
     style={style}
   >

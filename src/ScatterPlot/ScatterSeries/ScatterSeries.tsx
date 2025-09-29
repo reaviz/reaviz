@@ -111,7 +111,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         />
       );
     },
-    [activeIds, point, xScale, yScale, rest, id],
+    [activeIds, point, xScale, yScale, rest, id]
   );
 
   const renderValueMarkers = useCallback(
@@ -135,7 +135,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
           })}
       </>
     ),
-    [height, valueMarkers, width, xScale, yScale],
+    [height, valueMarkers, width, xScale, yScale]
   );
 
   return (

@@ -7,7 +7,7 @@ import React, { Fragment, useCallback } from 'react';
 
 import type {
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '@/common/containers/ChartContainer';
 import { ChartContainer } from '@/common/containers/ChartContainer';
 
@@ -35,7 +35,7 @@ export const Map: FC<MapProps> = ({
   markers,
   data,
   fill = 'rgba(255, 255, 255, 0.3)',
-  projection = 'mercator',
+  projection = 'mercator'
 }) => {
   const getProjection = useCallback(
     ({ chartWidth, chartHeight }: ChartContainerChildProps) => {
@@ -48,7 +48,7 @@ export const Map: FC<MapProps> = ({
         .fitSize([chartWidth, chartHeight], data)
         .center([0, 35]);
     },
-    [data, projection],
+    [data, projection]
   );
 
   const renderMarker = useCallback(
@@ -57,7 +57,7 @@ export const Map: FC<MapProps> = ({
 
       if (!position) {
         console.warn(
-          `Position for ${marker.props.coordinates.toString()} not found.`,
+          `Position for ${marker.props.coordinates.toString()} not found.`
         );
         return null;
       }
@@ -71,7 +71,7 @@ export const Map: FC<MapProps> = ({
         />
       );
     },
-    [],
+    []
   );
 
   const renderCountry = useCallback(
@@ -83,7 +83,7 @@ export const Map: FC<MapProps> = ({
 
       return <path key={`path-${index}`} d={path(point)!} fill={fill} />;
     },
-    [fill],
+    [fill]
   );
 
   const renderChart = useCallback(
@@ -98,14 +98,14 @@ export const Map: FC<MapProps> = ({
       return (
         <motion.g
           initial={{
-            opacity: 0,
+            opacity: 0
           }}
           animate={{
-            opacity: 1,
+            opacity: 1
           }}
         >
           {data.features.map((point, index) =>
-            renderCountry(point, index, path),
+            renderCountry(point, index, path)
           )}
           {markers &&
             markers.map((marker, index) => (
@@ -116,7 +116,7 @@ export const Map: FC<MapProps> = ({
         </motion.g>
       );
     },
-    [data, getProjection, markers, renderCountry, renderMarker],
+    [data, getProjection, markers, renderCountry, renderMarker]
   );
 
   return (

@@ -8,12 +8,12 @@ type Size = {
 
 export const useResizeObserver = <T extends HTMLElement>(): [
   RefObject<T>,
-  Size,
+  Size
 ] => {
   const ref = useRef<T>(null);
   const [size, setSize] = useState<Size>({
     width: undefined,
-    height: undefined,
+    height: undefined
   });
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export const useResizeObserver = <T extends HTMLElement>(): [
       const entry = entries[0];
       setSize({
         width: entry.contentRect.width,
-        height: entry.contentRect.height,
+        height: entry.contentRect.height
       });
     });
 

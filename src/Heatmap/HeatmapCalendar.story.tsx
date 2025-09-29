@@ -4,7 +4,7 @@ import {
   heatmapCalendarData,
   heatmapCalendarOffsetData,
   janHeatMapData,
-  marchHeatMapData,
+  marchHeatMapData
 } from 'reaviz-data-utils';
 
 import { ChartTooltip, formatValue } from '@/common';
@@ -18,8 +18,8 @@ export default {
   component: CalendarHeatmap,
   subcomponents: {
     HeatmapSeries,
-    HeatmapCell,
-  },
+    HeatmapCell
+  }
 };
 
 export const YearCalendar = () => (
@@ -98,7 +98,7 @@ export const SelectCell = () => {
                   <ChartTooltip
                     content={(d) =>
                       `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
-                        d.data.value,
+                        d.data.value
                       )}`
                     }
                   />

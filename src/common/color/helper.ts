@@ -27,7 +27,7 @@ type ColorHelperProps = {
 type ColorSchemeValueScale = (point: any) => string;
 
 function isColorSchemeStyleArray(
-  colorScheme: any,
+  colorScheme: any
 ): colorScheme is ColorSchemeStyleArray {
   return Array.isArray(colorScheme) && typeof colorScheme[0] === 'object';
 }
@@ -62,12 +62,12 @@ export const getColor = (props: Partial<ColorHelperProps>) => {
     isMultiSeries,
     domain,
     key,
-    scale,
+    scale
   } = {
     attribute: 'key',
     isMultiSeries: false,
     scale: scaleOrdinal,
-    ...props,
+    ...props
   };
 
   if (typeof colorScheme === 'string' && schemes[colorScheme]) {
@@ -109,14 +109,14 @@ const getValueScale = (
   data,
   colorScheme: ColorSchemeType,
   emptyColor: string,
-  selections: any,
+  selections: any
 ): ColorSchemeValueScale => {
   const valueDomain = extent(
     uniqueBy(
       data,
       (d) => d.data,
-      (d) => d.value,
-    ),
+      (d) => d.value
+    )
   );
 
   return (point) => {
@@ -132,7 +132,7 @@ const getValueScale = (
       key: point.value,
       colorScheme,
       point,
-      active: selections,
+      active: selections
     });
   };
 };
@@ -147,7 +147,7 @@ const getValueScale = (
  */
 export const getColorSchemeStyles = (
   point,
-  valueScales: Map<string, ColorSchemeValueScale>,
+  valueScales: Map<string, ColorSchemeValueScale>
 ): Partial<CSSStyleDeclaration> =>
   Array.from(valueScales).reduce((acc, [key, valueScale]) => {
     return { ...acc, [key]: valueScale(point) };
@@ -163,11 +163,11 @@ export const getColorSchemeStyles = (
  */
 const getColorSchemeForProperty = (
   colorScheme: ColorSchemeStyleArray,
-  colorSchemeProperty: string,
+  colorSchemeProperty: string
 ): ColorSchemeType =>
   colorScheme.map(
     (schemeItem: Partial<CSSStyleDeclaration>) =>
-      schemeItem?.[colorSchemeProperty],
+      schemeItem?.[colorSchemeProperty]
   );
 
 /**
@@ -187,13 +187,13 @@ export const createColorSchemeValueScales = (
   data,
   colorScheme: ColorSchemeType | ColorSchemeStyleArray,
   emptyColor: string,
-  selections: any,
+  selections: any
 ): Map<string, ColorSchemeValueScale> => {
   const valueScales = new Map<string, ColorSchemeValueScale>();
 
   if (isColorSchemeStyleArray(colorScheme)) {
     const colorSchemeProperties = [
-      ...new Set(colorScheme.flatMap(Object.keys)),
+      ...new Set(colorScheme.flatMap(Object.keys))
     ];
 
     colorSchemeProperties.forEach((key) => {
@@ -201,14 +201,14 @@ export const createColorSchemeValueScales = (
         data,
         getColorSchemeForProperty(colorScheme, key),
         emptyColor,
-        selections,
+        selections
       );
       valueScales.set(key, valueScale);
     });
   } else {
     valueScales.set(
       'fill',
-      getValueScale(data, colorScheme, emptyColor, selections),
+      getValueScale(data, colorScheme, emptyColor, selections)
     );
   }
 

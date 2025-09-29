@@ -9,7 +9,7 @@ import { getColor, schemes } from '@/common/color';
 import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '@/common/data';
 import type { TooltipAreaProps } from '@/common/Tooltip';
 import { ChartTooltip, TooltipArea } from '@/common/Tooltip';
@@ -119,7 +119,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   startAngle = 0,
   endAngle = 2 * Math.PI,
   type = 'standard',
-  valueMarkers,
+  valueMarkers
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isMultiSeries = useMemo(() => type === 'grouped', [type]);
@@ -130,7 +130,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       innerBarCount: number,
       index: number,
       barCount: number,
-      groupIndex?: number,
+      groupIndex?: number
     ) => {
       const active = activeValues && data && isEqual(activeValues.x, point.x);
 
@@ -165,8 +165,8 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       innerRadius,
       startAngle,
       xScale,
-      yScale,
-    ],
+      yScale
+    ]
   );
 
   const renderBarGroup = useCallback(
@@ -174,17 +174,17 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
       data: ChartInternalShallowDataShape[],
       innerBarCount: number,
       barCount: number,
-      groupIndex?: number,
+      groupIndex?: number
     ) => {
       return (
         <Fragment>
           {data.map((barData, barIndex) =>
-            renderBar(barData, innerBarCount, barIndex, barCount, groupIndex),
+            renderBar(barData, innerBarCount, barIndex, barCount, groupIndex)
           )}
         </Fragment>
       );
     },
-    [renderBar],
+    [renderBar]
   );
 
   const renderValueMarkers = useCallback(
@@ -200,7 +200,7 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
           ))}
       </>
     ),
-    [valueMarkers, yScale],
+    [valueMarkers, yScale]
   );
 
   return (
@@ -227,14 +227,14 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
                 groupData.data as ChartInternalShallowDataShape[],
                 data.length,
                 groupData.data.length,
-                index,
+                index
               )}
             </g>
           ))
         : renderBarGroup(
             data as ChartInternalShallowDataShape[],
             1,
-            data.length,
+            data.length
           )}
       {renderValueMarkers()}
     </CloneElement>

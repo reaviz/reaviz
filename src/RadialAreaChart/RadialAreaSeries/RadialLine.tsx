@@ -3,7 +3,7 @@ import {
   curveCardinalClosed,
   curveLinear,
   curveLinearClosed,
-  radialLine,
+  radialLine
 } from 'd3-shape';
 import type { FC } from 'react';
 import React, { useCallback, useMemo } from 'react';
@@ -80,7 +80,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
   interpolation,
   strokeWidth = 2,
   animated = true,
-  isClosedCurve = true,
+  isClosedCurve = true
 }) => {
   const fill = color(data, index);
 
@@ -102,7 +102,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
 
       return radialFn(preData as any);
     },
-    [interpolation, isClosedCurve, xScale, yScale],
+    [interpolation, isClosedCurve, xScale, yScale]
   );
 
   const transition = useMemo(
@@ -110,28 +110,28 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
       animated
         ? {
             ...DEFAULT_TRANSITION,
-            delay: hasArea ? 0 : index * 0.05,
+            delay: hasArea ? 0 : index * 0.05
           }
         : {
             type: false as const,
-            delay: 0,
+            delay: 0
           },
-    [animated, index, hasArea],
+    [animated, index, hasArea]
   );
 
   const enter = useMemo(
     () => ({
       d: getPath(data!),
-      opacity: 1,
+      opacity: 1
     }),
-    [data, getPath],
+    [data, getPath]
   );
 
   const exit = useMemo(() => {
     const [yStart] = yScale.domain();
     return {
       d: getPath(data!.map((d) => ({ ...d, y: yStart }))),
-      opacity: 0,
+      opacity: 0
     };
   }, [data, yScale, getPath]);
 
@@ -139,7 +139,7 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
     <MotionPath
       custom={{
         enter,
-        exit,
+        exit
       }}
       transition={transition}
       className={className}

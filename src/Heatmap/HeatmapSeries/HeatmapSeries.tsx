@@ -7,7 +7,7 @@ import type { ColorSchemeType } from '@/common/color';
 import type { ColorSchemeStyleArray } from '@/common/color/helper';
 import {
   createColorSchemeValueScales,
-  getColorSchemeStyles,
+  getColorSchemeStyles
 } from '@/common/color/helper';
 import type { ChartInternalNestedDataShape } from '@/common/data';
 
@@ -76,14 +76,14 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = (props) => {
     yScale,
     data,
     id,
-    selections,
+    selections
   } = mergeDefaultProps(HEATMAP_SERIES_DEFAULT_PROPS, props);
 
   const valueScales = createColorSchemeValueScales(
     data,
     colorScheme,
     emptyColor,
-    selections,
+    selections
   );
   const height = yScale.bandwidth();
   const width = xScale.bandwidth();
@@ -96,7 +96,7 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = (props) => {
     cellIndex,
     width,
     height,
-    cellCount,
+    cellCount
   }) => {
     const x = xScale(row.key);
     const y = yScale(cell.x);
@@ -132,9 +132,9 @@ export const HeatmapSeries: FC<Partial<HeatmapSeriesProps>> = (props) => {
             row,
             cell,
             rowIndex,
-            cellIndex,
-          }),
-        ),
+            cellIndex
+          })
+        )
       )}
     </Fragment>
   );
@@ -145,5 +145,5 @@ export const HEATMAP_SERIES_DEFAULT_PROPS: Partial<HeatmapSeriesProps> = {
   animated: true,
   emptyColor: 'rgba(200,200,200,0.08)',
   colorScheme: ['rgba(28, 107, 86, 0.5)', '#2da283'],
-  cell: <HeatmapCell />,
+  cell: <HeatmapCell />
 };

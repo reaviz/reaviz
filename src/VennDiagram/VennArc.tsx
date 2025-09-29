@@ -47,7 +47,7 @@ export interface VennArcProps {
         data: IVennLayout<any>[],
         index: number,
         isActive: boolean | null,
-        isHovered: boolean | null,
+        isHovered: boolean | null
       ) => string);
 
   /**
@@ -140,7 +140,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
   tooltip = <ChartTooltip />,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
+  onMouseLeave = () => undefined
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const arcRef = useRef<any | null>(null);
@@ -164,7 +164,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         setInternalActive(true);
         onMouseEnter?.({
           value: data.data,
-          nativeEvent: event,
+          nativeEvent: event
         });
       }
     },
@@ -173,15 +173,15 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         setInternalActive(false);
         onMouseLeave?.({
           value: data.data,
-          nativeEvent: event,
+          nativeEvent: event
         });
       }
-    },
+    }
   });
 
   const tooltipData = useMemo(
     () => ({ y: data.data.size, x: data.data?.sets?.join(' | ') }),
-    [data],
+    [data]
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
@@ -193,7 +193,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
         if (!disabled) {
           onClick?.({
             value: data.data,
-            nativeEvent: event,
+            nativeEvent: event
           });
         }
       }}
@@ -215,8 +215,8 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
           ...style,
           ...generateGlowStyles({
             glow,
-            colorSchemeColor: typeof stroke === 'string' ? stroke : null,
-          }),
+            colorSchemeColor: typeof stroke === 'string' ? stroke : null
+          })
         }}
       />
       {mask && (

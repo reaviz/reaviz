@@ -74,7 +74,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   colorScheme = 'cybertron',
   outerLabel = <VennOuterLabel />,
   arc = <VennArc />,
-  label = <VennLabel />,
+  label = <VennLabel />
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -89,10 +89,10 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       setActives(
         data
           .filter((d) => d.data?.key.indexOf(point) > -1)
-          .map((d) => d.data?.key),
+          .map((d) => d.data?.key)
       );
     },
-    [data],
+    [data]
   );
 
   const renderArc = useCallback(
@@ -102,7 +102,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
         data,
         colorScheme,
         point: d.data,
-        index,
+        index
       });
 
       const textFill = fill
@@ -192,8 +192,8 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       animated,
       label,
       outerLabel,
-      onActivate,
-    ],
+      onActivate
+    ]
   );
 
   const topArcs = useMemo(() => {
@@ -205,7 +205,7 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
 
     if (selections?.length) {
       result.push(
-        ...selections.filter((s) => !actives.includes(s) && s !== hovered),
+        ...selections.filter((s) => !actives.includes(s) && s !== hovered)
       );
     }
 

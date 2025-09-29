@@ -27,7 +27,7 @@ export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
             const data = {
               ...point,
               x: `${formatValue(point.x0)} - ${formatValue(point.x1)}`,
-              value: point.y,
+              value: point.y
             };
 
             return <TooltipTemplate value={data} color={color} />;
@@ -35,5 +35,5 @@ export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
         />
       }
     />
-  ),
+  )
 };

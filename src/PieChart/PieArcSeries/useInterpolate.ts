@@ -12,7 +12,7 @@ export const useInterpolate = ({ data, animated, arc }) => {
     return {
       ...data,
       startAngle,
-      endAngle,
+      endAngle
     };
   }, [data, animated]);
 

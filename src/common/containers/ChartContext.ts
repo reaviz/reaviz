@@ -10,7 +10,7 @@ export interface ChartContextProps extends Dimensions {
   xAxisSized?: boolean;
   updateAxes: (
     orientation: 'horizontal' | 'vertical',
-    event: LinearAxisDimensionChanged,
+    event: LinearAxisDimensionChanged
   ) => void;
 }
 

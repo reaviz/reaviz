@@ -5,7 +5,7 @@ import { Meter } from './Meter';
 export default {
   tags: ['snapshot'],
   title: 'Charts/Meter',
-  component: Meter,
+  component: Meter
 };
 
 export const Basic = () => <Meter value={50} style={{ width: 300 }} />;

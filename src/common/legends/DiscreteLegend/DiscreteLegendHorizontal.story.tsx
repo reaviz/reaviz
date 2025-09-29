@@ -4,7 +4,7 @@ import { DiscreteLegend } from './DiscreteLegend';
 import { DiscreteLegendEntry } from './DiscreteLegendEntry';
 
 export default {
-  title: 'Utils/Legend/Discrete/Horizontal',
+  title: 'Utils/Legend/Discrete/Horizontal'
 };
 
 export const _Simple = () => (
@@ -14,7 +14,7 @@ export const _Simple = () => (
       <DiscreteLegendEntry key="green" label="DLP" color="green" />,
       <DiscreteLegendEntry key="blue" label="SIEM" color="blue" />,
       <DiscreteLegendEntry key="yellow" label="AWS" color="yellow" />,
-      <DiscreteLegendEntry key="purple" label="AD" color="purple" />,
+      <DiscreteLegendEntry key="purple" label="AD" color="purple" />
     ]}
   />
 );

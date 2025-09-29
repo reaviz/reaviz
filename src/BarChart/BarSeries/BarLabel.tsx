@@ -119,7 +119,7 @@ export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
     type,
     animated,
     index,
-    barCount,
+    barCount
   } = mergeDefaultProps(BAR_LABEL_DEFAULT_PROPS, props);
 
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
@@ -163,7 +163,7 @@ export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
     return {
       translateX: newX,
       translateY: newY,
-      opacity: 1,
+      opacity: 1
     };
   }, [data.x0, data.y, height, isVertical, padding, position, width, x, y]);
 
@@ -202,7 +202,7 @@ export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
     return {
       translateY: newY,
       translateX: newX,
-      opacity: 0,
+      opacity: 0
     };
   }, [height, isVertical, padding, position, scale, type, width, x, y]);
 
@@ -226,7 +226,7 @@ export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
       exit={exitProps}
       transition={{
         ...DEFAULT_TRANSITION,
-        delay,
+        delay
       }}
       fontSize={fontSize}
       fontFamily={fontFamily}
@@ -244,5 +244,5 @@ export const BAR_LABEL_DEFAULT_PROPS: Partial<BarLabelProps> = {
   fontSize: 13,
   padding: 5,
   fontFamily: 'sans-serif',
-  fill: '#000',
+  fill: '#000'
 };

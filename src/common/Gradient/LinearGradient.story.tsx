@@ -11,8 +11,8 @@ export default {
   title: 'Utils/Gradient/Linear',
   component: Gradient,
   subcomponents: {
-    GradientStop,
-  },
+    GradientStop
+  }
 };
 
 export const Simple = () => (

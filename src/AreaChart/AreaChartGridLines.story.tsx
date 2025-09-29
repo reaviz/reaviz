@@ -9,7 +9,7 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 
 export default {
@@ -22,8 +22,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries,
-  },
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const AllAxes = () => (
@@ -47,7 +47,7 @@ export const XAxis = () => (
 );
 
 XAxis.story = {
-  name: 'X-Axis',
+  name: 'X-Axis'
 };
 
 export const YAxis = () => (
@@ -61,5 +61,5 @@ export const YAxis = () => (
 );
 
 YAxis.story = {
-  name: 'Y-Axis',
+  name: 'Y-Axis'
 };

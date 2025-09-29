@@ -48,7 +48,7 @@ export const COUNT_DEFAULTS = {
   duration: 1,
   delay: 0,
   format: true,
-  decimalPlaces: 0,
+  decimalPlaces: 0
 };
 
 export const useCount = ({
@@ -59,7 +59,7 @@ export const useCount = ({
   prefix,
   suffix,
   decimalPlaces,
-  format,
+  format
 }: CountInputs) => {
   const nodeRef = useRef<any | null>(null);
 
@@ -97,7 +97,7 @@ export const useCount = ({
 
           node.textContent = formatted as string;
         }
-      },
+      }
     });
 
     return () => controls.stop();

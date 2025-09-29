@@ -58,7 +58,7 @@ export interface WordCloudProps extends ChartProps {
    */
   onLabelMouseEnter?: (
     event: React.PointerEvent,
-    data: ChartShallowDataShape,
+    data: ChartShallowDataShape
   ) => void;
 
   /**
@@ -66,7 +66,7 @@ export interface WordCloudProps extends ChartProps {
    */
   onLabelMouseLeave?: (
     event: React.PointerEvent,
-    data: ChartShallowDataShape,
+    data: ChartShallowDataShape
   ) => void;
 }
 
@@ -85,7 +85,7 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
   onLabelMouseLeave,
   margins,
   className,
-  containerClassName,
+  containerClassName
 }) => {
   const buildData = useCallback(
     (chartWidth: number, chartHeight: number) => {
@@ -105,10 +105,10 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
               colorScheme,
               index,
               point: d,
-              data,
+              data
             }),
-            data: d,
-          })),
+            data: d
+          }))
         )
         .padding(padding)
         .font(fontFamily)
@@ -119,7 +119,7 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
                 (rotationAngles[1] - rotationAngles[0])) /
                 (rotations - 1) +
               rotationAngles[0]
-            : 0,
+            : 0
         );
 
       layout.start();
@@ -133,8 +133,8 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
       fontSizeRange,
       padding,
       rotationAngles,
-      rotations,
-    ],
+      rotations
+    ]
   );
 
   const renderChart = useCallback(
@@ -158,7 +158,7 @@ export const WordCloud: FC<Partial<WordCloudProps>> = ({
         />
       ));
     },
-    [buildData, fontFamily, onLabelClick, onLabelMouseEnter, onLabelMouseLeave],
+    [buildData, fontFamily, onLabelClick, onLabelMouseEnter, onLabelMouseLeave]
   );
 
   return (

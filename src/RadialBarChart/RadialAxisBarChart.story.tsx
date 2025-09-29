@@ -7,7 +7,7 @@ import {
   RadialAxisTick,
   RadialAxisTickLabel,
   RadialAxisTickLine,
-  RadialAxisTickSeries,
+  RadialAxisTickSeries
 } from '@/common/Axis/RadialAxis';
 import { schemes } from '@/common/color';
 
@@ -21,8 +21,8 @@ export default {
   subcomponents: {
     RadialBarSeries,
     RadialBar,
-    RadialGuideBar,
-  },
+    RadialGuideBar
+  }
 };
 
 export const SemiCircle = () => (

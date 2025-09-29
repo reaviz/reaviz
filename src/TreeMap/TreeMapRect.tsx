@@ -65,7 +65,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
   tooltip = <ChartTooltip />,
   onMouseEnter,
   onMouseLeave,
-  onClick,
+  onClick
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const rectRef = useRef<any | null>(null);
@@ -82,7 +82,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
     onPointerOut: (event) => {
       setInternalActive(false);
       onMouseLeave?.(event, data);
-    },
+    }
   });
 
   const tooltipLabel = useMemo(() => {
@@ -97,7 +97,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
 
   const tooltipData = useMemo(
     () => ({ y: data.value, x: tooltipLabel }),
-    [data, tooltipLabel],
+    [data, tooltipLabel]
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
@@ -108,12 +108,12 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         initial={{
           fill: currentFill,
           width: data.x1 - data.x0,
-          height: data.y1 - data.y0,
+          height: data.y1 - data.y0
         }}
         animate={{
           fill: currentFill,
           width: data.x1 - data.x0,
-          height: data.y1 - data.y0,
+          height: data.y1 - data.y0
         }}
         style={{ cursor }}
         transition={transition}

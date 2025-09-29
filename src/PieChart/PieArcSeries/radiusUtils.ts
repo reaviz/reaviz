@@ -16,7 +16,7 @@ export function calculateOuterRadius(
   outerRadius: number,
   data: ArcData[],
   point: ArcData,
-  explode: boolean,
+  explode: boolean
 ) {
   if (!explode || data === undefined) {
     return outerRadius;
@@ -31,7 +31,7 @@ export function calculateCentroid(
   data: ArcData[],
   innerRadius: number,
   outerRadius: number,
-  explode: boolean,
+  explode: boolean
 ) {
   return (point: ArcData) => {
     const newOuter = calculateOuterRadius(outerRadius, data, point, explode);
@@ -67,7 +67,7 @@ export function calculateRadius(height, width, label, arcWidth, doughnut) {
   return {
     outerRadius,
     innerRadius,
-    labelWidth,
+    labelWidth
   };
 }
 
@@ -78,7 +78,7 @@ export function calculateInnerArc(
   cornerRadius: number,
   padAngle: number,
   padRadius: number,
-  explode: boolean,
+  explode: boolean
 ) {
   return (point: ArcData) => {
     const newOuter = calculateOuterRadius(outerRadius, data, point, explode);
@@ -99,7 +99,7 @@ export function calculateLabelPositions(
   cornerRadius: number,
   padAngle: number,
   padRadius: number,
-  displayAllLabels: boolean,
+  displayAllLabels: boolean
 ): Array<[number, number] | null> {
   const outerArcRadius = outerRadius * factor;
   const outerArc = arc<any, ArcData>()

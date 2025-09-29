@@ -8,8 +8,8 @@ const meta: Meta<typeof WordCloud> = {
   title: 'Charts/Word Cloud',
   component: WordCloud,
   parameters: {
-    layout: 'centered',
-  },
+    layout: 'centered'
+  }
 };
 
 export default meta;
@@ -30,7 +30,7 @@ const sampleData: ChartShallowDataShape[] = [
   { key: 'Kubernetes', data: 35 },
   { key: 'AWS', data: 30 },
   { key: 'Git', data: 25 },
-  { key: 'Redux', data: 20 },
+  { key: 'Redux', data: 20 }
 ];
 
 export const Basic: Story = {
@@ -38,8 +38,8 @@ export const Basic: Story = {
     data: sampleData,
     width: 600,
     height: 400,
-    colorScheme: schemes.cybertron,
-  },
+    colorScheme: schemes.cybertron
+  }
 };
 
 export const CustomColors: Story = {
@@ -47,8 +47,8 @@ export const CustomColors: Story = {
     data: sampleData,
     width: 600,
     height: 400,
-    colorScheme: ['white'],
-  },
+    colorScheme: ['white']
+  }
 };
 
 export const NoRotation: Story = {
@@ -57,8 +57,8 @@ export const NoRotation: Story = {
     width: 600,
     height: 400,
     rotations: 0,
-    colorScheme: schemes.cybertron,
-  },
+    colorScheme: schemes.cybertron
+  }
 };
 
 export const CustomFontSize: Story = {
@@ -67,6 +67,6 @@ export const CustomFontSize: Story = {
     width: 600,
     height: 400,
     fontSizeRange: [20, 80],
-    colorScheme: schemes.cybertron,
-  },
+    colorScheme: schemes.cybertron
+  }
 };

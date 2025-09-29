@@ -5,12 +5,12 @@ import React, { useCallback } from 'react';
 
 import type {
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '@/common/containers/ChartContainer';
 import { ChartContainer } from '@/common/containers/ChartContainer';
 import type {
   ChartNestedDataShape,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from '@/common/data';
 
 import type { TreeMapSeriesProps } from './TreeMapSeries';
@@ -55,7 +55,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
   height,
   className,
   margins = 0,
-  series = <TreeMapSeries />,
+  series = <TreeMapSeries />
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -87,7 +87,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
       getAllNodes(tree);
       return nodes;
     },
-    [data, paddingInner, paddingOuter, paddingTop],
+    [data, paddingInner, paddingOuter, paddingTop]
   );
 
   const renderChart = useCallback(
@@ -102,7 +102,7 @@ export const TreeMap: FC<Partial<TreeMapProps>> = ({
         />
       );
     },
-    [series, getData, id],
+    [series, getData, id]
   );
 
   return (

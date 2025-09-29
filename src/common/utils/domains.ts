@@ -23,7 +23,7 @@ export function extent(data: any[], attr: string): number[] {
 export function getYDomain({
   data,
   scaled = false,
-  isDiverging = false,
+  isDiverging = false
 }): number[] {
   const [startY, endY] = extent(data, 'y');
   const [startY1, endY1] = extent(data, 'y1');
@@ -52,7 +52,7 @@ export function getYDomain({
 export function getXDomain({
   data,
   scaled = false,
-  isDiverging = false,
+  isDiverging = false
 }): number[] {
   const startX0 = extent(data, 'x0')[0];
   const endX1 = extent(data, 'x1')[1];

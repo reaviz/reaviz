@@ -14,11 +14,11 @@ function buildDocs() {
   let fail = 0;
 
   const options = {
-    savePropValueAsString: true,
+    savePropValueAsString: true
   };
   const docgenWithTSConfig = docgen.withCustomConfig(
     './tsconfig.json',
-    options,
+    options
   );
 
   files.forEach((file) => {

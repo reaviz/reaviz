@@ -7,13 +7,13 @@ import {
   StackedAreaChart,
   StackedAreaSeries,
   StackedNormalizedAreaChart,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from '@/AreaChart';
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 
 import { ScatterPoint } from '../ScatterPlot';
@@ -30,8 +30,8 @@ export default {
     StackedAreaChart,
     StackedNormalizedAreaChart,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries,
-  },
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const _Simple = () => (
@@ -131,7 +131,7 @@ export const CustomLineStyles = () => (
               ) {
                 console.log('Style callback...', data);
                 return {
-                  strokeDasharray: '5',
+                  strokeDasharray: '5'
                 };
               }
             }}
@@ -203,7 +203,7 @@ const prettyData = (() => {
     for (let j = 0; j < 100; j++) {
       series.push({
         key: j,
-        data: (i / 10 + 1) * Math.sin((Math.PI * (i + j)) / 50),
+        data: (i / 10 + 1) * Math.sin((Math.PI * (i + j)) / 50)
       });
     }
     data.push({ key: i, data: series });

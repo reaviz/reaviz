@@ -7,7 +7,7 @@ import type { BarChartProps } from './BarChart';
 import { BarChart } from './BarChart';
 import {
   STACKED_BAR_SERIES_DEFAULT_PROPS,
-  StackedBarSeries,
+  StackedBarSeries
 } from './BarSeries';
 
 export interface StackedBarChartProps extends BarChartProps {

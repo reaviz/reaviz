@@ -37,7 +37,7 @@ export const weekDays: string[] = (() => {
 
 export const buildDataScales = (
   rawData: ChartShallowDataShape[],
-  view: CalendarView,
+  view: CalendarView
 ) => {
   // Get the most recent date to get the range from
   // From the end date, lets find the start year/month of that
@@ -69,11 +69,11 @@ export const buildDataScales = (
     .filter(
       (d) =>
         (d.key as Date).getTime() > start.getTime() ||
-        (d.key as Date).getTime() < end.getTime(),
+        (d.key as Date).getTime() < end.getTime()
     )
     .map((d) => ({
       key: getStartOfDay(d.key as Date),
-      data: d.data,
+      data: d.data
     }));
 
   // Find the first day of the duration and subtract the delta
@@ -85,7 +85,7 @@ export const buildDataScales = (
   for (let week = 0; week < xDomainRange; week++) {
     const row = {
       key: week,
-      data: [] as any,
+      data: [] as any
     };
 
     for (let day = 0; day <= 6; day++) {
@@ -97,8 +97,8 @@ export const buildDataScales = (
         metadata: {
           date: new Date(curDate.getTime()),
           start: start,
-          end: end,
-        },
+          end: end
+        }
       });
 
       curDate.setDate(curDate.getDate() + 1);
@@ -111,6 +111,6 @@ export const buildDataScales = (
     data: rows,
     yDomain,
     xDomain,
-    start,
+    start
   };
 };

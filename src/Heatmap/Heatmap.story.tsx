@@ -4,7 +4,7 @@ import {
   LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis';
 import { SequentialLegend } from '@/common/legends/SequentialLegend/SequentialLegend';
 import { getYScale } from '@/common/scales';
@@ -18,8 +18,8 @@ export default {
   component: Heatmap,
   subcomponents: {
     HeatmapSeries,
-    HeatmapCell,
-  },
+    HeatmapCell
+  }
 };
 
 export const Basic = () => (
@@ -48,7 +48,7 @@ export const BasicLegend = () => (
 );
 
 BasicLegend.story = {
-  name: 'Basic + Legend',
+  name: 'Basic + Legend'
 };
 
 export const MultiAxis = () => {
@@ -59,14 +59,14 @@ export const MultiAxis = () => {
       {
         key: 'Before',
         data: 0,
-        y: 'Before',
+        y: 'Before'
       },
       {
         key: 'After',
         data: 0,
-        y: 'After',
-      },
-    ],
+        y: 'After'
+      }
+    ]
   });
 
   return (
@@ -95,7 +95,7 @@ export const MultiAxis = () => {
               }
             />
           }
-        />,
+        />
       ]}
     />
   );

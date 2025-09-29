@@ -8,7 +8,7 @@ import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis';
 import { schemes } from '@/common/color';
 import type { ChartShallowDataShape } from '@/common/data';
@@ -18,7 +18,7 @@ export interface BarSparklineChartProps extends BarChartProps {
 }
 
 export const BarSparklineChart: FC<Partial<BarSparklineChartProps>> = (
-  props,
+  props
 ) => (
   <BarChart
     gridlines={null}

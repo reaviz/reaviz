@@ -7,7 +7,7 @@ import type { Glow } from '@/common';
 import { mergeDefaultProps, roundDecimals } from '@/common';
 import type {
   ChartInternalDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '@/common/data';
 import { generateGlowStyles } from '@/common/Glow/utils';
 import type { GradientProps } from '@/common/Gradient';
@@ -114,7 +114,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
       x1: xScale(item.x) - xScale(item.x1),
       y: yScale(item.y),
       y0: yScale(item.y0),
-      y1: yScale(item.y1),
+      y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
   }, [data, xScale, yScale]);
 
@@ -141,14 +141,14 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
 
       return fn(d as any);
     },
-    [interpolation, total],
+    [interpolation, total]
   );
 
   const enter = useMemo(() => {
     const areaPath = getAreaPath(coords);
 
     return {
-      d: areaPath === null ? undefined : areaPath,
+      d: areaPath === null ? undefined : areaPath
     };
   }, [coords, getAreaPath]);
 
@@ -159,13 +159,13 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
       x1: 0,
       y: 0,
       y1: maxY,
-      y0: maxY,
+      y0: maxY
     })) as ChartInternalShallowDataShape[];
 
     const areaPath = getAreaPath(coords);
 
     return {
-      d: areaPath === null ? undefined : areaPath,
+      d: areaPath === null ? undefined : areaPath
     };
   }, [data, getAreaPath, xScale, yScale]);
 
@@ -185,12 +185,12 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: index * 0.05,
+        delay: index * 0.05
       };
     } else {
       return {
         type: false as const,
-        delay: 0,
+        delay: 0
       };
     }
   }, [animated, index]);
@@ -208,11 +208,11 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
         transition={transition}
         custom={{
           enter,
-          exit,
+          exit
         }}
         style={{
           ...extras.style,
-          ...generateGlowStyles({ glow, colorSchemeColor: stroke }),
+          ...generateGlowStyles({ glow, colorSchemeColor: stroke })
         }}
       />
     );
@@ -227,7 +227,7 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
     rest,
     stroke,
     transition,
-    pointerEvents,
+    pointerEvents
   ]);
 
   return (
@@ -256,5 +256,5 @@ export const Area: FC<Partial<AreaProps>> = (props) => {
 
 export const AREA_DEFAULT_PROPS: Partial<AreaProps> = {
   gradient: <Gradient />,
-  interpolation: 'linear',
+  interpolation: 'linear'
 };

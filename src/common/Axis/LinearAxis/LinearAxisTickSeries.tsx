@@ -14,12 +14,12 @@ import type { LinearAxisProps } from './LinearAxis';
 import type { LinearAxisTickLabelProps } from './LinearAxisTickLabel';
 import {
   LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
-  LinearAxisTickLabel,
+  LinearAxisTickLabel
 } from './LinearAxisTickLabel';
 import type { LinearAxisTickLineProps } from './LinearAxisTickLine';
 import {
   LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LinearAxisTickLine,
+  LinearAxisTickLine
 } from './LinearAxisTickLine';
 
 export interface LinearAxisTickSeriesProps {
@@ -49,7 +49,7 @@ interface ProcessedTick {
 }
 
 export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
-  props,
+  props
 ) => {
   const {
     scale,
@@ -61,15 +61,15 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     tickValues,
     interval,
     line,
-    axis,
+    axis
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
     () => ({
       ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
-      ...(label?.props ?? {}),
+      ...(label?.props ?? {})
     }),
-    [label?.props],
+    [label?.props]
   );
 
   /**
@@ -99,7 +99,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         return { x: 0, y: scaledTick };
       }
     },
-    [orientation],
+    [orientation]
   );
 
   /**
@@ -143,7 +143,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         ? calculateDimensions(
             text,
             labelProps.fontFamily,
-            labelProps.fontSize?.toString(),
+            labelProps.fontSize?.toString()
           )
         : {};
 
@@ -157,7 +157,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
             ? 'center'
             : scaledTick < midpoint
               ? 'start'
-              : 'end',
+              : 'end'
       };
     });
   }, [
@@ -171,7 +171,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     labelFormatFn,
     scale,
     tickSize,
-    tickValues,
+    tickValues
   ]);
 
   /**
@@ -263,5 +263,5 @@ export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
       position="center"
     />
   ),
-  tickSize: 30,
+  tickSize: 30
 };

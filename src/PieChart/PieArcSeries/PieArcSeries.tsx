@@ -16,7 +16,7 @@ import {
   calculateCentroid,
   calculateInnerArc,
   calculateLabelPositions,
-  calculateRadius,
+  calculateRadius
 } from './radiusUtils';
 
 export interface PieArcSeriesProps {
@@ -122,12 +122,12 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     padAngle,
     padRadius,
     arc,
-    data,
+    data
   } = mergeDefaultProps(PIE_ARC_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
     () => ({ ...PIE_ARC_LABEL_DEFAULT_PROPS, ...label?.props }),
-    [label],
+    [label]
   );
 
   const { outerRadius, innerRadius, labelWidth } = calculateRadius(
@@ -135,7 +135,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     width,
     label,
     arcWidth,
-    doughnut,
+    doughnut
   );
 
   const innerArc = calculateInnerArc(
@@ -145,7 +145,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
     cornerRadius,
     padAngle,
     padRadius,
-    explode,
+    explode
   );
 
   const positions = label
@@ -157,7 +157,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
         cornerRadius,
         padAngle,
         padRadius,
-        displayAllLabels,
+        displayAllLabels
       )
     : [];
 
@@ -169,7 +169,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
       data,
       colorScheme,
       point: arcData.data,
-      index,
+      index
     });
 
     return (
@@ -210,5 +210,5 @@ export const PIE_ARC_SERIES_DEFAULT_PROPS = {
   displayAllLabels: false,
   arcWidth: 0.25,
   label: <PieArcLabel />,
-  arc: <PieArc />,
+  arc: <PieArc />
 };

@@ -109,7 +109,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
   padding,
   visible = true,
   ellipsis = 'auto',
-  labelPadding,
+  labelPadding
 }) => {
   const x0 = node?.x0 || 0;
   const x1 = node?.x1 || 0;
@@ -138,7 +138,7 @@ export const SankeyLabel: FC<Partial<SankeyLabelProps>> = ({
     const avaialableWidth = showRightSide ? x : width - x;
     truncatedTitle = ellipsize(
       node.title,
-      Math.min(LABEL_TRUNCATE_LENGTH, avaialableWidth / (labelPadding * 100)),
+      Math.min(LABEL_TRUNCATE_LENGTH, avaialableWidth / (labelPadding * 100))
     );
   } else if (ellipsis === 'none') {
     truncatedTitle = node.title;

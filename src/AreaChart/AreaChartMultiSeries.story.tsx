@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react';
 import {
   longMultiDateData,
   multiDateData,
-  randomNumber,
+  randomNumber
 } from 'reaviz-data-utils';
 
 import { AreaChart } from './AreaChart';
@@ -13,7 +13,7 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 import { StackedAreaChart } from './StackedAreaChart';
 import { StackedNormalizedAreaChart } from './StackedNormalizedAreaChart';
@@ -28,8 +28,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries,
-  },
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const Simple = () => (

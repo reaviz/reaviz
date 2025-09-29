@@ -6,7 +6,7 @@ import {
   largeDateData,
   randomNumber,
   signalStageData,
-  signalStages,
+  signalStages
 } from 'reaviz-data-utils';
 
 import { BarChart, HistogramBarSeries } from '@/BarChart';
@@ -21,13 +21,13 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '../Axis';
 import { ChartZoomPan } from '../ZoomPan';
 import { ChartBrush } from './ChartBrush';
 
 export default {
-  title: 'Utils/Brush',
+  title: 'Utils/Brush'
 };
 
 export const Line = () => (
@@ -84,7 +84,7 @@ export const Bar = () => {
     .map((i) => ({
       id: String(i),
       key: generateDate(randomNumber(i - 2, i + 2)),
-      data: randomNumber(1, 10),
+      data: randomNumber(1, 10)
     }))
     .sort((a, b) => (a > b ? -1 : a < b ? 1 : 0));
 
@@ -131,8 +131,8 @@ export const Bubble = () => {
         key: generateDate(i),
         data: 1,
         metadata: {
-          severity: randomNumber(1, 10),
-        },
+          severity: randomNumber(1, 10)
+        }
       };
     })
     .reverse();
@@ -159,7 +159,7 @@ export const Bubble = () => {
                       style={{
                         fill: 'rgba(206, 0, 62, .7)',
                         stroke: '#FF004D',
-                        strokeWidth: 5,
+                        strokeWidth: 5
                       }}
                     />
                   </g>
@@ -205,7 +205,7 @@ export const DefaultSelection = () => (
         disabled={false}
         domain={[
           largeDateData[largeDateData.length / 2].key,
-          largeDateData[largeDateData.length - 1].key,
+          largeDateData[largeDateData.length - 1].key
         ]}
       />
     }
@@ -230,7 +230,7 @@ export const ZoomCombo = () => <ZoomBrushStory />;
 class ZoomBrushStory extends Component {
   state = {
     domain: undefined,
-    brushing: false,
+    brushing: false
   };
   timeout: any;
 
@@ -240,7 +240,7 @@ class ZoomBrushStory extends Component {
 
     this.setState({
       domain,
-      brushing: true,
+      brushing: true
     });
   };
 
@@ -248,7 +248,7 @@ class ZoomBrushStory extends Component {
     const { brushing, domain } = this.state;
     const brushData = signalStageData.map((d) => ({
       ...d,
-      data: 1,
+      data: 1
     }));
 
     return (

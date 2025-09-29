@@ -73,7 +73,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   animated = true,
   fill,
   fontSize = 11,
-  fontFamily = 'sans-serif',
+  fontFamily = 'sans-serif'
 }) => {
   // If the text area is very large, then lets just skip showing the label
   if (!showAll && !data.arcs?.filter((a) => a.large).length) {
@@ -92,7 +92,7 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
         x: data.text.x,
         fontFamily,
         fontSize,
-        width: data?.circles?.[0]?.radius,
+        width: data?.circles?.[0]?.radius
       })
     : key;
 
@@ -107,14 +107,14 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
         {
           attrX: data.text.x,
           attrY: data.text.y,
-          opacity: 1,
+          opacity: 1
         } as any
       }
       animate={
         {
           attrX: data.text.x,
           attrY: data.text.y,
-          opacity: active === null ? 0.3 : 1,
+          opacity: active === null ? 0.3 : 1
         } as any
       }
       transition={transition}

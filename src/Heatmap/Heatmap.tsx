@@ -15,11 +15,11 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis';
 import type {
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '@/common/containers/ChartContainer';
 import { ChartContainer } from '@/common/containers/ChartContainer';
 import type { ChartNestedDataShape } from '@/common/data';
@@ -99,19 +99,19 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
   width,
   height,
   className,
-  containerClassName,
+  containerClassName
 }) => {
   const xAxisProps = useMemo(
     () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
-    [xAxis.props],
+    [xAxis.props]
   );
   const yAxisProps = useMemo(
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
-    [yAxis.props],
+    [yAxis.props]
   );
   const seriesProps = useMemo(
     () => ({ ...HEATMAP_SERIES_DEFAULT_PROPS, ...series.props }),
-    [series.props],
+    [series.props]
   );
 
   const getScalesData = useCallback(
@@ -131,7 +131,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         uniqueBy(
           nestedData,
           (d) => d.data,
-          (d) => d.x,
+          (d) => d.x
         );
 
       const yScale = scaleBand()
@@ -142,10 +142,10 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       return {
         yScale,
         xScale,
-        data: nestedData,
+        data: nestedData
       };
     },
-    [data, xAxisProps.domain, seriesProps.padding, yAxisProps.domain],
+    [data, xAxisProps.domain, seriesProps.padding, yAxisProps.domain]
   );
 
   const renderChart = useCallback(
@@ -155,7 +155,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
       const {
         xScale,
         yScale,
-        data: scalesData,
+        data: scalesData
       } = getScalesData(chartHeight, chartWidth);
 
       return (
@@ -199,7 +199,7 @@ export const Heatmap: FC<Partial<HeatmapProps>> = ({
         </Fragment>
       );
     },
-    [getScalesData, secondaryAxis, series, xAxis, yAxis],
+    [getScalesData, secondaryAxis, series, xAxis, yAxis]
   );
 
   return (

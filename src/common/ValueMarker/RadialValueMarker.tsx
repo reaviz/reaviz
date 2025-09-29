@@ -11,7 +11,7 @@ export const RadialValueMarker: FC<RadialValueMarkerProps> = ({
   color,
   value,
   className,
-  thickness = 1,
+  thickness = 1
 }) => (
   <circle
     className={className}

@@ -4,7 +4,7 @@ import {
   sankeyLinks,
   sankeyNodes,
   simpleSankeyLinks,
-  simpleSankeyNodes,
+  simpleSankeyNodes
 } from 'reaviz-data-utils';
 
 import { Sankey } from './Sankey';
@@ -24,7 +24,7 @@ const colorScheme = chroma
     '55BF3B',
     'DF5353',
     '7798BF',
-    'aaeeee',
+    'aaeeee'
   ])
   .mode('lch')
   .colors(sankeyNodes.length);
@@ -38,8 +38,8 @@ export default {
   subcomponents: {
     SankeyNode,
     SankeyLink,
-    SankeyLabel,
-  },
+    SankeyLabel
+  }
 };
 
 export const Simple = () => (
@@ -163,7 +163,7 @@ const DemoStory = () => {
   const [filtered, setFiltered] = useState(false);
   const [state, setState] = useState({
     nodes: [...simpleSankeyNodes],
-    links: [...simpleSankeyLinks],
+    links: [...simpleSankeyLinks]
   });
 
   const onClick = (node) => {
@@ -173,7 +173,7 @@ const DemoStory = () => {
       setFiltered(false);
       setState({
         nodes: simpleSankeyNodes,
-        links: simpleSankeyLinks,
+        links: simpleSankeyLinks
       });
     } else {
       setFiltered(true);
@@ -182,9 +182,9 @@ const DemoStory = () => {
           node,
           ...links
             .filter((n) => n.source === node.id)
-            .map((n) => simpleSankeyNodes.find((nn) => nn.id === n.target)),
+            .map((n) => simpleSankeyNodes.find((nn) => nn.id === n.target))
         ],
-        links: links.filter((l) => l.source === node.id),
+        links: links.filter((l) => l.source === node.id)
       });
     }
   };

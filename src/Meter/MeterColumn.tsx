@@ -60,18 +60,18 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
   className,
   animated = true,
   activeFill = schemes.cybertron[0],
-  inActiveFill = '#414242',
+  inActiveFill = '#414242'
 }) => {
   const isActive = scale(index) <= scale(value);
   const fill = isActive ? activeFill : inActiveFill;
   const transition = animated
     ? {
         ...DEFAULT_TRANSITION,
-        delay: (index / count) * 0.5,
+        delay: (index / count) * 0.5
       }
     : {
         type: false as const,
-        delay: 0,
+        delay: 0
       };
 
   return (
@@ -79,11 +79,11 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
       key={index}
       initial={{
         background: inActiveFill,
-        height,
+        height
       }}
       animate={{
         background: fill,
-        height,
+        height
       }}
       transition={transition}
       className={className}

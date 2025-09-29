@@ -3,7 +3,7 @@ import React from 'react';
 
 import type {
   RadialAreaSeriesProps,
-  RadialPointSeriesType,
+  RadialPointSeriesType
 } from '@/RadialAreaChart';
 import { RadialAreaSeries, RadialPointSeries } from '@/RadialAreaChart';
 
@@ -16,5 +16,5 @@ export const RadarChartSeries: FC<Partial<RadarChartSeriesProps>> = (props) => (
 export const RADAR_CHART_SERIES_DEFAULT_PROPS = {
   area: null,
   type: 'grouped' as RadialPointSeriesType,
-  symbols: <RadialPointSeries show />,
+  symbols: <RadialPointSeries show />
 };

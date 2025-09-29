@@ -45,13 +45,13 @@ export const PieChart: FC<PieChartProps> = ({
   displayAllLabels,
   data = [],
   margins = 10,
-  series = <PieArcSeries />,
+  series = <PieArcSeries />
 }) => {
   const newId = useId(id);
 
   const internalData = useMemo(() => {
     const pieLayout = pie<void, ChartShallowDataShape>().value(
-      (d: ChartShallowDataShape) => Number(d.data),
+      (d: ChartShallowDataShape) => Number(d.data)
     );
 
     // Explode sort doesn't work right...
@@ -75,7 +75,7 @@ export const PieChart: FC<PieChartProps> = ({
         />
       );
     },
-    [displayAllLabels, internalData, newId, series],
+    [displayAllLabels, internalData, newId, series]
   );
 
   return (

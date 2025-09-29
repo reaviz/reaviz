@@ -54,7 +54,7 @@ export const ChartTooltip: FC<Partial<ChartTooltipProps>> = ({
           : cloneElement(content, {
               ...content.props,
               value,
-              color,
+              color
             });
       }}
     />

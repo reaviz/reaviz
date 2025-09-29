@@ -20,7 +20,7 @@ describe('getDurationTicks', () => {
       ONE_DAY * 4,
       ONE_DAY * 6,
       ONE_DAY * 8,
-      ONE_DAY * 10,
+      ONE_DAY * 10
     ]);
   });
 });

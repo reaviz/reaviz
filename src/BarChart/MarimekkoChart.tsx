@@ -7,7 +7,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import type { ChartNestedDataShape } from '@/common/data';
 
@@ -16,7 +16,7 @@ import { BarChart } from './BarChart';
 import type { BarSeriesProps } from './BarSeries';
 import {
   MARIMEKKO_BAR_SERIES_DEFAULT_PROPS,
-  MarimekkoBarSeries,
+  MarimekkoBarSeries
 } from './BarSeries';
 
 export interface MarimekkoChartProps extends BarChartProps {
@@ -59,5 +59,5 @@ const MARIMEKKO_CHART_DEFAULT_PROPS = {
         />
       }
     />
-  ),
+  )
 };

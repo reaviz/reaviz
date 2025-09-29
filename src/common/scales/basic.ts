@@ -5,7 +5,7 @@ import { getXDomain, getYDomain } from '@/common/utils/domains';
 
 import type {
   ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '../data';
 
 interface ScaleConfig {
@@ -33,7 +33,7 @@ export function getXScale({
   padding,
   scaled,
   isMultiSeries = false,
-  isDiverging = false,
+  isDiverging = false
 }: ScaleConfig) {
   let scale;
 
@@ -75,7 +75,7 @@ export function getYScale({
   scaled = false,
   padding = 0,
   isMultiSeries = false,
-  isDiverging = false,
+  isDiverging = false
 }: ScaleConfig) {
   let scale;
 
@@ -88,7 +88,7 @@ export function getYScale({
       if (isMultiSeries) {
         domain = uniqueBy<ChartInternalNestedDataShape>(
           data as [],
-          (d) => d.key,
+          (d) => d.key
         );
       } else {
         domain = uniqueBy<ChartInternalShallowDataShape>(data, (d) => d.y);

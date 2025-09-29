@@ -84,7 +84,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
     width,
     id,
     activeValues,
-    show,
+    show
   } = mergeDefaultProps(POINT_SERIES_DEFAULT_PROPS, props);
 
   const getIsVisible = useCallback(
@@ -110,7 +110,7 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
 
       return Boolean(show);
     },
-    [activeValues, data.length, show],
+    [activeValues, data.length, show]
   );
 
   return (
@@ -138,5 +138,5 @@ export const PointSeries: FC<Partial<PointSeriesProps>> = (props) => {
 
 export const POINT_SERIES_DEFAULT_PROPS: Partial<PointSeriesProps> = {
   show: 'hover',
-  point: <ScatterPoint />,
+  point: <ScatterPoint />
 };

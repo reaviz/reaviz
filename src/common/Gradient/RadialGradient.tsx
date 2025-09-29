@@ -18,8 +18,8 @@ export const RadialGradient: FC<Partial<RadialGradientProps>> = ({
   radius = '30%',
   stops = [
     <GradientStop offset="0%" stopOpacity={0.2} key="start" />,
-    <GradientStop offset="80%" stopOpacity={0.7} key="stop" />,
-  ],
+    <GradientStop offset="80%" stopOpacity={0.7} key="stop" />
+  ]
 }) => (
   <radialGradient
     id={id}

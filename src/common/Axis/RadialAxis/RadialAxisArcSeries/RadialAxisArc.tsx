@@ -37,7 +37,7 @@ export interface RadialAxisArcProps {
 export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = (props) => {
   const { index, stroke, strokeDasharray, scale, startAngle, endAngle } = {
     ...RADIAL_AXIS_ARC_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
 
   const r = scale(index);
@@ -53,7 +53,7 @@ export const RadialAxisArc: FC<Partial<RadialAxisArcProps>> = (props) => {
     innerRadius: r,
     outerRadius: r,
     startAngle: startAngle,
-    endAngle: endAngle,
+    endAngle: endAngle
   });
 
   // Path calculation for intermediate angles
@@ -92,5 +92,5 @@ export const RADIAL_AXIS_ARC_DEFAULT_PROPS = {
   stroke: '#71808d',
   strokeDasharray: '1,4',
   startAngle: 0,
-  endAngle: 2 * Math.PI,
+  endAngle: 2 * Math.PI
 };

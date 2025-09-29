@@ -6,7 +6,7 @@ import React, { useCallback } from 'react';
 import type {
   ChartContainerChildProps,
   ChartProps,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from '@/common';
 import { ChartContainer } from '@/common';
 
@@ -33,7 +33,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
   className,
   containerClassName,
   margins = 10,
-  series = <BubbleSeries />,
+  series = <BubbleSeries />
 }) => {
   const getData = useCallback(
     (cw: number, ch: number) => {
@@ -45,7 +45,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
 
       return bubble(root).leaves();
     },
-    [data],
+    [data]
   );
 
   const renderChart = useCallback(
@@ -60,7 +60,7 @@ export const BubbleChart: FC<Partial<BubbleChartProps>> = ({
         />
       );
     },
-    [series, getData],
+    [series, getData]
   );
 
   return (

@@ -7,14 +7,14 @@ import React, {
   useEffect,
   useMemo,
   useRef,
-  useState,
+  useState
 } from 'react';
 
 import type { Glow, Gradient, GradientProps } from '@/common';
 import { roundDecimals } from '@/common';
 import type {
   ChartInternalDataShape,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '@/common/data';
 import { generateGlowStyles } from '@/common/Glow/utils';
 import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
@@ -132,19 +132,19 @@ export const Line: FC<Partial<LineProps>> = ({
 
       return fn(point as any);
     },
-    [interpolation, showZeroStroke],
+    [interpolation, showZeroStroke]
   );
 
   const transition = useMemo(() => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: hasArea ? 0 : index * 0.05,
+        delay: hasArea ? 0 : index * 0.05
       };
     } else {
       return {
         type: false as const,
-        delay: 0,
+        delay: 0
       };
     }
   }, [animated, hasArea, index]);
@@ -155,7 +155,7 @@ export const Line: FC<Partial<LineProps>> = ({
       x1: xScale(item.x) - xScale(item.x1),
       y: yScale(item.y),
       y0: yScale(item.y0),
-      y1: yScale(item.y1),
+      y1: yScale(item.y1)
     })) as ChartInternalShallowDataShape[];
   }, [data, xScale, yScale]);
 
@@ -170,7 +170,7 @@ export const Line: FC<Partial<LineProps>> = ({
     return {
       d: linePath === null ? undefined : linePath,
       strokeDashoffset: 0,
-      strokeDasharray: strokeDasharray,
+      strokeDasharray: strokeDasharray
     };
   }, [coords, getLinePath, hasArea, pathLength]);
 
@@ -183,7 +183,7 @@ export const Line: FC<Partial<LineProps>> = ({
         x1: 0,
         y: maxY,
         y1: maxY,
-        y0: maxY,
+        y0: maxY
       })) as ChartInternalShallowDataShape[];
     }
 
@@ -199,7 +199,7 @@ export const Line: FC<Partial<LineProps>> = ({
     return {
       d: linePath === null ? undefined : linePath,
       strokeDasharray,
-      strokeDashoffset,
+      strokeDashoffset
     };
   }, [coords, data, getLinePath, hasArea, pathLength, xScale, yScale]);
 
@@ -232,11 +232,11 @@ export const Line: FC<Partial<LineProps>> = ({
           transition={transition}
           custom={{
             enter,
-            exit,
+            exit
           }}
           style={{
             ...extras.style,
-            ...generateGlowStyles({ glow, colorSchemeColor: strokeFill }),
+            ...generateGlowStyles({ glow, colorSchemeColor: strokeFill })
           }}
         />
       )}

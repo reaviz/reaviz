@@ -5,12 +5,12 @@ import React, { useCallback } from 'react';
 
 import type {
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '@/common/containers/ChartContainer';
 import { ChartContainer } from '@/common/containers/ChartContainer';
 import type {
   ChartNestedDataShape,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from '@/common/data';
 
 import type { SunburstSeriesProps } from './SunburstSeries';
@@ -36,7 +36,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
   width,
   height,
   className,
-  margins = 0,
+  margins = 0
 }) => {
   const newId = useId(id);
 
@@ -62,7 +62,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
       getAllNodes(root);
       return nodes;
     },
-    [data],
+    [data]
   );
 
   const renderChart = useCallback(
@@ -79,7 +79,7 @@ export const SunburstChart: FC<Partial<SunburstChartProps>> = ({
         />
       );
     },
-    [getData, newId, series],
+    [getData, newId, series]
   );
 
   return (

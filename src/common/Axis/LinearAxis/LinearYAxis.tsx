@@ -8,21 +8,21 @@ import { LINEAR_AXIS_DEFAULT_PROPS, LinearAxis } from './LinearAxis';
 import type { LinearAxisTickLabelProps } from './LinearAxisTickLabel';
 import {
   LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
-  LinearAxisTickLabel,
+  LinearAxisTickLabel
 } from './LinearAxisTickLabel';
 import type { LinearAxisTickLineProps } from './LinearAxisTickLine';
 import {
   LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LinearAxisTickLine,
+  LinearAxisTickLine
 } from './LinearAxisTickLine';
 import type { LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
 import {
   LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
-  LinearAxisTickSeries,
+  LinearAxisTickSeries
 } from './LinearAxisTickSeries';
 
 export const LinearYAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
-  props,
+  props
 ) => (
   <LinearAxisTickLabel
     {...mergeDefaultProps(LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS, props)}
@@ -32,11 +32,11 @@ export const LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   rotation: false,
   position: 'start',
-  align: 'center',
+  align: 'center'
 } as Partial<LinearAxisTickLabelProps>;
 
 export const LinearYAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
-  props,
+  props
 ) => (
   <LinearAxisTickLine
     {...mergeDefaultProps(LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS, props)}
@@ -44,15 +44,15 @@ export const LinearYAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
 );
 export const LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-  position: 'start',
+  position: 'start'
 } as Partial<LinearAxisTickLineProps>;
 
 export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
-  props,
+  props
 ) => {
   const yTickSeriesProps = mergeDefaultProps(
     LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-    props,
+    props
   );
 
   return (
@@ -63,7 +63,7 @@ export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
           <LinearYAxisTickLine
             {...mergeDefaultProps(
               LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS,
-              props?.line?.props,
+              props?.line?.props
             )}
           />
         ) : null
@@ -73,7 +73,7 @@ export const LinearYAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
           <LinearYAxisTickLabel
             {...mergeDefaultProps(
               LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
-              props?.label?.props,
+              props?.label?.props
             )}
           />
         ) : null
@@ -85,13 +85,13 @@ export const LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   ...LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
   tickSize: 30,
   line: <LinearYAxisTickLine {...LINEAR_Y_AXIS_TICK_LINE_DEFAULT_PROPS} />,
-  label: <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />,
+  label: <LinearYAxisTickLabel {...LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS} />
 };
 
 export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => {
   const yAxisProps = useMemo(
     () => mergeDefaultProps(LINEAR_Y_AXIS_DEFAULT_PROPS, props),
-    [props],
+    [props]
   );
 
   return (
@@ -102,7 +102,7 @@ export const LinearYAxis: FC<Partial<LinearAxisProps>> = (props) => {
           <LinearYAxisTickSeries
             {...mergeDefaultProps(
               LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-              yAxisProps?.tickSeries?.props,
+              yAxisProps?.tickSeries?.props
             )}
           />
         )
@@ -117,5 +117,5 @@ export const LINEAR_Y_AXIS_DEFAULT_PROPS = {
   roundDomains: false,
   type: 'value',
   position: 'start',
-  tickSeries: <LinearYAxisTickSeries />,
+  tickSeries: <LinearYAxisTickSeries />
 } as Partial<LinearAxisProps>;

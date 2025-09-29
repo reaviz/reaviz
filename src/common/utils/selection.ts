@@ -9,6 +9,6 @@ export function toggleTextSelection(allowSelection: boolean) {
     '-khtml-user-select',
     '-moz-user-select',
     '-ms-user-select',
-    'user-select',
+    'user-select'
   ].forEach((prop) => (document.body.style[prop] = style));
 }

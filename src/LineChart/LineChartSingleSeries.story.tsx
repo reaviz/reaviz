@@ -14,8 +14,8 @@ export default {
   component: LineChart,
   subcomponents: {
     LineSeries,
-    Line,
-  },
+    Line
+  }
 };
 
 export const Simple = () => (
@@ -112,8 +112,8 @@ const LiveUpdatingStory = () => {
         {
           id: randomNumber(1, 10000),
           key: new Date(startDate.getTime() + ++offset * 24 * 60 * 60 * 1000),
-          data: randomNumber(1, 20),
-        },
+          data: randomNumber(1, 20)
+        }
       ];
 
       setData(newData);

@@ -14,23 +14,23 @@ import { POINT_SERIES_DEFAULT_PROPS } from './PointSeries';
 export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
   const { symbols, interpolation, ...rest } = {
     ...AREA_SERIES_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
 
   const symbolsProps = useMemo(
     () => ({
       ...POINT_SERIES_DEFAULT_PROPS,
-      ...symbols?.props,
+      ...symbols?.props
     }),
-    [symbols],
+    [symbols]
   );
 
   const pointProps = useMemo(
     () => ({
       ...SCATTER_POINT_DEFAULT_PROPS,
-      ...symbolsProps.point?.props,
+      ...symbolsProps.point?.props
     }),
-    [symbolsProps],
+    [symbolsProps]
   );
 
   return (

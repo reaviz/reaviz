@@ -48,7 +48,7 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
   style,
   data,
   colorScheme = ['rgba(28, 107, 86, 0.5)', '#2da283'],
-  orientation = 'vertical',
+  orientation = 'vertical'
 }) => {
   // Generate the color gradient
   const color = chroma
@@ -65,10 +65,10 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
         uniqueBy(
           data,
           (d) => d.data,
-          (d) => d.data,
-        ),
+          (d) => d.data
+        )
       ),
-    [data],
+    [data]
   );
 
   // Get direction
@@ -79,14 +79,14 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
       style={style}
       className={classNames(css.container, className, {
         [css.vertical]: orientation === 'vertical',
-        [css.horizontal]: orientation === 'horizontal',
+        [css.horizontal]: orientation === 'horizontal'
       })}
     >
       <div className={css.start}>{formatValue(start)}</div>
       <div
         className={classNames(css.gradient, gradientClassName)}
         style={{
-          background: `linear-gradient(${gradientDir}${color})`,
+          background: `linear-gradient(${gradientDir}${color})`
         }}
       />
       <div className={css.end}>{formatValue(end)}</div>

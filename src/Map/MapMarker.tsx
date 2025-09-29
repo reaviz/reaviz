@@ -24,14 +24,14 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
   tooltip,
   cx,
   cy,
-  onClick = () => undefined,
+  onClick = () => undefined
 }) => {
   const ref = useRef<SVGCircleElement | null>(null);
   const [active, setActive] = useState<boolean>(false);
 
   const ariaLabelData = useMemo(
     () => (typeof tooltip === 'string' ? tooltip : 'map marker'),
-    [tooltip],
+    [tooltip]
   );
 
   return (
@@ -39,14 +39,14 @@ export const MapMarker: FC<Partial<MapMarkerProps>> = ({
       <motion.circle
         initial={{
           opacity: 0,
-          scale: 0.02,
+          scale: 0.02
         }}
         animate={{
           opacity: 1,
-          scale: 1,
+          scale: 1
         }}
         transition={{
-          delay: index! * 0.3,
+          delay: index! * 0.3
         }}
         ref={ref}
         className={css.marker}

@@ -18,7 +18,7 @@ export interface DiscreteLegendSymbolProps {
 
 export const DiscreteLegendSymbol: FC<Partial<DiscreteLegendSymbolProps>> = ({
   className,
-  color,
+  color
 }) => (
   <div
     className={classNames(css.symbol, className)}

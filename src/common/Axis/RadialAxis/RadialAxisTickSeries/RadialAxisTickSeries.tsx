@@ -53,7 +53,7 @@ export interface RadialAxisTickSeriesProps {
    */
   tick:
     | ((
-        tick: TickCallback,
+        tick: TickCallback
       ) => ReactElement<RadialAxisTickProps, typeof RadialAxisTick>)
     | ReactElement<RadialAxisTickProps, typeof RadialAxisTick>;
 
@@ -78,7 +78,7 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   interval,
   type = 'time',
   startAngle = 0,
-  endAngle = 2 * Math.PI,
+  endAngle = 2 * Math.PI
 }) => {
   const ticks = getTicks(scale, tickValues, type, count, interval || count);
 

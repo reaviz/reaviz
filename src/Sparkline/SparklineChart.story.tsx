@@ -4,7 +4,7 @@ import {
   singleDateData,
   smallDateData,
   sonarData,
-  sonarDataEmpties,
+  sonarDataEmpties
 } from 'reaviz-data-utils';
 
 import { AreaSparklineChart } from './AreaSparklineChart';
@@ -14,7 +14,7 @@ import { SparklineChart } from './SparklineChart';
 
 export default {
   tags: ['snapshot'],
-  title: 'Charts/Sparkline',
+  title: 'Charts/Sparkline'
 };
 
 export const Line = () => (

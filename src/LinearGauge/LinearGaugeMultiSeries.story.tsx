@@ -34,8 +34,8 @@ export default {
     LinearGaugeSeries,
     LinearGauge,
     LinearGaugeBar,
-    LinearGaugeOuterBar,
-  },
+    LinearGaugeOuterBar
+  }
 };
 
 export const _Simple = () => (

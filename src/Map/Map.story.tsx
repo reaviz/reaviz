@@ -14,8 +14,8 @@ export default {
   title: 'Charts/Map',
   component: Map as any,
   subcomponents: {
-    MapMarker,
-  },
+    MapMarker
+  }
 };
 
 export const Simple = () => (
@@ -59,7 +59,7 @@ export const Markers = () => (
         key={3}
         coordinates={[-97.7437, 30.2711]}
         tooltip="Austin, TX"
-      />,
+      />
     ]}
   />
 );

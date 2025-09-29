@@ -74,7 +74,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
     innerRadius,
     type,
     startAngle,
-    endAngle,
+    endAngle
   } = mergeDefaultProps(RADIAL_AXIS_DEFAULT_PROPS, props);
 
   const outerRadius = Math.min(height, width) / 2;
@@ -87,7 +87,7 @@ export const RadialAxis: FC<Partial<RadialAxisProps>> = (props) => {
     ticks.props.tickValues,
     type as RadialAxisType,
     ticks.props.count,
-    ticks.props.interval || ticks.props.count,
+    ticks.props.interval || ticks.props.count
   );
 
   return (
@@ -123,5 +123,5 @@ export const RADIAL_AXIS_DEFAULT_PROPS: Partial<RadialAxisProps> = {
   arcs: <RadialAxisArcSeries />,
   ticks: <RadialAxisTickSeries />,
   startAngle: 0,
-  endAngle: 2 * Math.PI,
+  endAngle: 2 * Math.PI
 };

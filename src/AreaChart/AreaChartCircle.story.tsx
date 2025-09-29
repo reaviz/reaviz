@@ -11,7 +11,7 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 
 export default {
@@ -24,8 +24,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries,
-  },
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const On = () => (
@@ -100,7 +100,7 @@ export const Shapes = () => (
                       style={{
                         fill: 'lime',
                         stroke: 'purple',
-                        strokeWidth: 1.5,
+                        strokeWidth: 1.5
                       }}
                     />
                   );

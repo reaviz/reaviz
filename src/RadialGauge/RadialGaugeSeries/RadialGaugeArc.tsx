@@ -118,7 +118,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip = <ChartTooltip />,
+  tooltip = <ChartTooltip />
 }) => {
   /**
    * This function will generate the arcs
@@ -137,7 +137,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
       data: data || {},
       startAngle,
       endAngle,
-      padAngle,
+      padAngle
     };
 
     return (
@@ -169,7 +169,7 @@ export const RadialGaugeArc: FC<Partial<RadialGaugeArcProps>> = ({
     tooltip,
     onClick,
     onMouseEnter,
-    onMouseLeave,
+    onMouseLeave
   ]);
 
   return (

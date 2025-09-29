@@ -80,7 +80,7 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
   className,
   position = 'middle',
   showValue = true,
-  labelVisibility = 'auto',
+  labelVisibility = 'auto'
 }) => {
   const x = xScale(index) + padding;
   const [height] = yScale.range();
@@ -98,7 +98,7 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
     height,
     fontFamily,
     fontSize,
-    visibility: labelVisibility,
+    visibility: labelVisibility
   });
 
   const getTransformString = useCallback(() => {

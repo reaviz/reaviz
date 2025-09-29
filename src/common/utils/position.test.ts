@@ -3,7 +3,7 @@ import { describe, test } from 'vitest';
 
 import {
   getClosestBandScalePoint,
-  getClosestContinousScalePoint,
+  getClosestContinousScalePoint
 } from './position';
 
 describe('getClosestContinousScalePoint', () => {
@@ -11,7 +11,7 @@ describe('getClosestContinousScalePoint', () => {
   const scale = scaleLinear().rangeRound([0, 300]).domain([4, 6]);
 
   test('returns the closest point for an invertible/continous scale', ({
-    expect,
+    expect
   }) => {
     const result = getClosestContinousScalePoint({ pos: 150, scale, data });
 
@@ -19,13 +19,13 @@ describe('getClosestContinousScalePoint', () => {
   });
 
   test('returns the closest point rounded down for an invertible/continous scale', ({
-    expect,
+    expect
   }) => {
     const result = getClosestContinousScalePoint({
       pos: 150,
       scale,
       data,
-      roundDown: true,
+      roundDown: true
     });
 
     expect(result).toEqual({ x: 4 });
@@ -37,7 +37,7 @@ describe('getClosestBandScalePoint', () => {
   const scale = scaleBand().rangeRound([0, 100]).domain(['a', 'b', 'c']);
 
   test('returns the closest point for a band scale rounded down', ({
-    expect,
+    expect
   }) => {
     const result = getClosestBandScalePoint({ pos: 32, scale, data });
 
@@ -49,7 +49,7 @@ describe('getClosestBandScalePoint', () => {
       pos: 32,
       scale,
       data,
-      roundClosest: true,
+      roundClosest: true
     });
 
     expect(result).toEqual({ x: 'b' });

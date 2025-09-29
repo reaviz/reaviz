@@ -14,7 +14,7 @@ const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },
   { key: 'SendGrid', data: 45 },
   { key: 'Okta', data: 75 },
-  { key: 'Twillo', data: 25 },
+  { key: 'Twillo', data: 25 }
 ];
 
 export default {
@@ -24,8 +24,8 @@ export default {
   subcomponents: {
     BubbleSeries,
     BubbleLabel,
-    Bubble,
-  },
+    Bubble
+  }
 };
 
 export const Simple = () => (
@@ -83,7 +83,7 @@ export const Icons = () => (
                 AWS: icons.AWS(),
                 SendGrid: icons.SendGrid(),
                 Okta: icons.Okta(),
-                Twillo: icons.Twillo(),
+                Twillo: icons.Twillo()
               };
 
               return (
@@ -108,7 +108,7 @@ export const LongText = () => {
   const longData: ChartShallowDataShape[] = [
     { key: 'Department of Curtains and Interior Design', data: 100 },
     { key: 'Fresh Kitchen Pasta Dish and Pizza', data: 45 },
-    { key: 'Short Name', data: 25 },
+    { key: 'Short Name', data: 25 }
   ];
 
   return (
@@ -129,7 +129,7 @@ export const NoAnimation = () => (
 export const VaryingSizes = () => {
   const longData: ChartShallowDataShape[] = range(15).map((o) => ({
     key: `${o}`,
-    data: Math.round(o % 2 === 0 ? 100 * (1 + o * 1.5) : 50 * (1 + o * 4)),
+    data: Math.round(o % 2 === 0 ? 100 * (1 + o * 1.5) : 50 * (1 + o * 4))
   }));
 
   return (
@@ -140,7 +140,7 @@ export const VaryingSizes = () => {
 export const _100Bubbles = () => {
   const longData: ChartShallowDataShape[] = range(100).map((o) => ({
     key: `${o + 1}`,
-    data: 1,
+    data: 1
   }));
 
   return (

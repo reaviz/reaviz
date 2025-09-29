@@ -4,7 +4,7 @@ import {
   categoryData,
   durationCategoryData,
   largeCategoryData,
-  nonZeroCategoryData,
+  nonZeroCategoryData
 } from 'reaviz-data-utils';
 
 import {
@@ -12,7 +12,7 @@ import {
   LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 
 import { BarChart } from './BarChart';
@@ -22,7 +22,7 @@ import {
   MarimekkoBarSeries,
   RangeLines,
   StackedBarSeries,
-  StackedNormalizedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 
 export default {
@@ -38,8 +38,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries,
-  },
+    HistogramBarSeries
+  }
 };
 
 const data = categoryData;
@@ -211,5 +211,5 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };

@@ -9,7 +9,7 @@ import type { RadialAxisArcProps } from './RadialAxisArc';
 import { RadialAxisArc } from './RadialAxisArc';
 import type {
   RadialAxisArcLine,
-  RadialAxisArcLineProps,
+  RadialAxisArcLineProps
 } from './RadialAxisArcLine';
 import { getPointsForLevels } from './utils';
 
@@ -56,7 +56,7 @@ export interface RadialAxisArcSeriesProps {
 }
 
 export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
-  props,
+  props
 ) => {
   const {
     count,
@@ -66,7 +66,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
     arc,
     tickValues,
     startAngle,
-    endAngle,
+    endAngle
   } = mergeDefaultProps(RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS, props);
 
   const scale = scaleLinear()
@@ -79,7 +79,7 @@ export const RadialAxisArcSeries: FC<Partial<RadialAxisArcSeriesProps>> = (
     count,
     outerRadius,
     ticks: tickValues.length,
-    arcs,
+    arcs
   });
 
   return (
@@ -118,5 +118,5 @@ export const RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS = {
   count: 12,
   arc: <RadialAxisArc />,
   startAngle: 0,
-  endAngle: 2 * Math.PI,
+  endAngle: 2 * Math.PI
 };

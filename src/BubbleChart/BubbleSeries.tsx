@@ -60,7 +60,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   animated = true,
   bubble = <Bubble />,
   format,
-  label = <BubbleLabel />,
+  label = <BubbleLabel />
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -71,7 +71,7 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
       data,
       colorScheme,
       point: item.data,
-      index,
+      index
     });
 
     const textFill = fill
@@ -83,11 +83,11 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
         key={(item.data as any).key}
         initial={{
           scale: 0.5,
-          opacity: 0,
+          opacity: 0
         }}
         animate={{
           scale: 1,
-          opacity: 1,
+          opacity: 1
         }}
         transition={transition}
       >

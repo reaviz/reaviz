@@ -7,7 +7,7 @@ import {
   Bar,
   BAR_DEFAULT_PROPS,
   StackedBarChart,
-  StackedBarSeries,
+  StackedBarSeries
 } from '@/BarChart';
 import type { ChartNestedDataShape } from '@/common';
 import {
@@ -20,7 +20,7 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   TooltipArea,
-  TooltipTemplate,
+  TooltipTemplate
 } from '@/common';
 
 export interface SonarChartProps extends BarChartProps {
@@ -47,7 +47,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
                     color={color}
                     value={{
                       x: formatValue(data.x),
-                      y: `${formatValue(Math.abs(data.data[0].y))}`,
+                      y: `${formatValue(Math.abs(data.data[0].y))}`
                     }}
                   />
                 )}
@@ -66,7 +66,7 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.7} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={1} key="stop" />,
+                  <GradientStop offset="90%" stopOpacity={1} key="stop" />
                 ]}
               />
             }
@@ -80,11 +80,11 @@ export const SonarChart: FC<Partial<SonarChartProps>> = (props) => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={1} key="stop" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="start" />,
+                  <GradientStop offset="90%" stopOpacity={0.7} key="start" />
                 ]}
               />
             }
-          />,
+          />
         ]}
       />
     }

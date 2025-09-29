@@ -136,7 +136,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
       xScale,
       yScale,
       width: xScale.bandwidth(),
-      height: yScale.bandwidth(),
+      height: yScale.bandwidth()
     };
   }, [data.length, minGaugeWidth, props.height, props.width]);
 
@@ -166,7 +166,7 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
               outerRadius,
               innerRadius,
               startAngle,
-              endAngle,
+              endAngle
             })}
           {innerArc &&
             cloneElement(innerArc, {
@@ -180,8 +180,8 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
                 data,
                 colorScheme,
                 point,
-                index,
-              }),
+                index
+              })
             })}
           {valueLabel && cloneElement(valueLabel, { data: point })}
           {label && cloneElement(label, { data: point, offset: labelOffset })}
@@ -205,8 +205,8 @@ export const RadialGaugeSeries: FC<Partial<RadialGaugeSeriesProps>> = ({
       valueLabel,
       width,
       xScale,
-      yScale,
-    ],
+      yScale
+    ]
   );
 
   return <Fragment>{data.map(renderGauge)}</Fragment>;

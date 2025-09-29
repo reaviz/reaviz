@@ -32,9 +32,9 @@ export const MARIMEKKO_BAR_SERIES_DEFAULT_PROPS: Partial<BarSeriesProps> = {
               data: point.data.map((d) => ({
                 ...d,
                 value: `${formatValue(d.value)} ∙ ${formatValue(
-                  Math.floor((d.y1 - d.y0) * 100),
-                )}%`,
-              })),
+                  Math.floor((d.y1 - d.y0) * 100)
+                )}%`
+              }))
             };
 
             return <TooltipTemplate value={data} color={color} />;
@@ -51,11 +51,11 @@ export const MARIMEKKO_BAR_SERIES_DEFAULT_PROPS: Partial<BarSeriesProps> = {
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       }
       rangeLines={<RangeLines position="top" strokeWidth={3} />}
     />
-  ),
+  )
 };

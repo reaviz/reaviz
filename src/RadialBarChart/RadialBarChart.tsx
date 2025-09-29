@@ -6,7 +6,7 @@ import React, { Fragment, useCallback, useMemo } from 'react';
 import type { RadialAxisProps } from '@/common/Axis/RadialAxis';
 import {
   RADIAL_AXIS_DEFAULT_PROPS,
-  RadialAxis,
+  RadialAxis
 } from '@/common/Axis/RadialAxis';
 import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
 import { ChartContainer } from '@/common/containers';
@@ -14,7 +14,7 @@ import type {
   ChartDataShape,
   ChartInternalShallowDataShape,
   ChartNestedDataShape,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from '@/common/data';
 import { buildNestedChartData, buildShallowChartData } from '@/common/data';
 import { getRadialYScale } from '@/common/scales';
@@ -68,16 +68,16 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
   series = <RadialBarSeries />,
   axis = <RadialAxis />,
   startAngle = 0,
-  endAngle = 2 * Math.PI,
+  endAngle = 2 * Math.PI
 }) => {
   const axisProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(axis?.props ?? {}) }),
-    [axis?.props],
+    [axis?.props]
   );
 
   const seriesProps = useMemo(
     () => ({ ...RADIAL_AXIS_DEFAULT_PROPS, ...(series?.props ?? {}) }),
-    [series?.props],
+    [series?.props]
   );
 
   const getXScale = useCallback(
@@ -92,12 +92,12 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
           xDomain = uniqueBy<ChartInternalShallowDataShape>(
             points,
             (dd) => dd.data,
-            (dd) => dd.x,
+            (dd) => dd.x
           );
         } else {
           xDomain = uniqueBy<ChartInternalShallowDataShape>(
             points,
-            (dd) => dd.x,
+            (dd) => dd.x
           );
         }
 
@@ -122,7 +122,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
 
       return xScale;
     },
-    [axisProps.type, endAngle, seriesProps.type, startAngle],
+    [axisProps.type, endAngle, seriesProps.type, startAngle]
   );
 
   const getScales = useCallback(
@@ -144,10 +144,10 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
       return {
         xScale,
         yScale,
-        newData,
+        newData
       };
     },
-    [getXScale, seriesProps.type],
+    [getXScale, seriesProps.type]
   );
 
   const renderChart = useCallback(
@@ -156,7 +156,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
       const { yScale, xScale, newData } = getScales(
         data,
         innerRadius,
-        outerRadius,
+        outerRadius
       );
 
       return (
@@ -188,7 +188,7 @@ export const RadialBarChart: FC<Partial<RadialBarChartProps>> = ({
         </Fragment>
       );
     },
-    [axis, data, endAngle, getScales, innerRadius, series, startAngle],
+    [axis, data, endAngle, getScales, innerRadius, series, startAngle]
   );
 
   return (

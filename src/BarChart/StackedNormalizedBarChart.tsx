@@ -5,7 +5,7 @@ import {
   LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import type { ChartNestedDataShape } from '@/common/data';
 
@@ -13,7 +13,7 @@ import type { BarChartProps } from './BarChart';
 import { BarChart } from './BarChart';
 import {
   STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS,
-  StackedNormalizedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 
 export interface StackedNormalizedBarChartProps extends BarChartProps {
@@ -51,5 +51,5 @@ const STACKED_NORMALIZED_BAR_CHART_DEFAULT_PROPS = {
         />
       }
     />
-  ),
+  )
 };

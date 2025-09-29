@@ -15,7 +15,7 @@ export const LinearValueMarker: FC<LinearValueMarkerProps> = ({
   className,
   thickness = 1,
   size,
-  direction = 'horizontal',
+  direction = 'horizontal'
 }) => {
   const coordinates =
     direction === 'horizontal'

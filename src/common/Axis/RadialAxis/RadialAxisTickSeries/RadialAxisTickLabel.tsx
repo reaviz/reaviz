@@ -116,7 +116,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
 
     return {
       transform,
-      textAnchor,
+      textAnchor
     };
   }, [autoRotate, padding, point, rotation]);
 

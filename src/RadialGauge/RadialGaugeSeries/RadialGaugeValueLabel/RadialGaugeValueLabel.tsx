@@ -21,10 +21,10 @@ export interface RadialGaugeValueLabelProps {
 
 export const RadialGaugeValueLabel: FC<Partial<RadialGaugeValueLabelProps>> = ({
   data,
-  className,
+  className
 }) => {
   const ref = useCount({
-    to: data.data as number,
+    to: data.data as number
   });
 
   return (

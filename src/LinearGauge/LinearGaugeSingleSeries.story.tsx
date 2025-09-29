@@ -13,8 +13,8 @@ export default {
     LinearGaugeSeries,
     LinearGauge,
     LinearGaugeBar,
-    LinearGaugeOuterBar,
-  },
+    LinearGaugeOuterBar
+  }
 };
 
 export const Simple = () => (
@@ -60,7 +60,7 @@ export const NonZeroStart = () => (
 );
 
 NonZeroStart.story = {
-  name: 'Non-Zero Start',
+  name: 'Non-Zero Start'
 };
 
 export const MultipleGauges = () => (

@@ -13,7 +13,7 @@ import {
   MarimekkoBarSeries,
   RangeLines,
   StackedBarSeries,
-  StackedNormalizedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 
 export default {
@@ -29,8 +29,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries,
-  },
+    HistogramBarSeries
+  }
 };
 
 export const AllAxes = () => (
@@ -52,7 +52,7 @@ export const XAxis = () => (
 );
 
 XAxis.story = {
-  name: 'X-Axis',
+  name: 'X-Axis'
 };
 
 export const YAxis = () => (
@@ -65,5 +65,5 @@ export const YAxis = () => (
 );
 
 YAxis.story = {
-  name: 'Y-Axis',
+  name: 'Y-Axis'
 };

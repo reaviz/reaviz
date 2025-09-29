@@ -7,10 +7,10 @@
 
 export const mergeDefaultProps = <T>(
   defaultProps: Partial<T>,
-  props: Partial<T> = {},
+  props: Partial<T> = {}
 ): T => {
   const filteredProps = Object.fromEntries(
-    Object.entries(props).filter(([_, value]) => value !== undefined),
+    Object.entries(props).filter(([_, value]) => value !== undefined)
   );
   return { ...defaultProps, ...filteredProps } as T;
 };

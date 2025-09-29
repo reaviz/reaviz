@@ -5,7 +5,7 @@ export const formatCode = (src) => {
   const options = {
     parser: 'typescript',
     plugins: [typescriptParser],
-    tabWidth: 2,
+    tabWidth: 2
   };
   return prettier.format(src, options);
 };

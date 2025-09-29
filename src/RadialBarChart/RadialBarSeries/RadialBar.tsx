@@ -130,7 +130,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
   color,
   onClick = () => undefined,
   onMouseEnter = () => undefined,
-  onMouseLeave = () => undefined,
+  onMouseLeave = () => undefined
 }) => {
   const previousEnter = useRef<any | null>(null);
   const fill = color(data, index);
@@ -140,12 +140,12 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: (index / barCount) * 0.9,
+        delay: (index / barCount) * 0.9
       };
     } else {
       return {
         type: false as const,
-        delay: 0,
+        delay: 0
       };
     }
   }, [animated, barCount, index]);
@@ -158,7 +158,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
 
       return `url(#${id}-gradient)`;
     },
-    [gradient, id],
+    [gradient, id]
   );
 
   const getArc = useCallback(
@@ -244,7 +244,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
           outerRadius,
           innerEnd - halfAngleDiffDistanceDelta,
           innerStart + halfAngleDiffDistanceDelta,
-          true,
+          true
         );
 
         return pathFn.toString();
@@ -258,8 +258,8 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       innerBarCount,
       innerRadius,
       xScale,
-      yScale,
-    ],
+      yScale
+    ]
   );
 
   const renderBar = useCallback(
@@ -275,12 +275,12 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       const [yStart, yEnd] = yScale.domain();
       const exit = {
         ...data,
-        y: yStart,
+        y: yStart
       };
 
       const guidePath = getArc({
         ...data,
-        y: yEnd,
+        y: yEnd
       }) as string;
 
       return (
@@ -297,7 +297,7 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
             custom={{
               enter: data,
               exit,
-              previousEnter: prev,
+              previousEnter: prev
             }}
             transition={transition}
             fill={fill}
@@ -305,19 +305,19 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
             onMouseEnter={(event) =>
               onMouseEnter?.({
                 value: data,
-                nativeEvent: event,
+                nativeEvent: event
               })
             }
             onMouseLeave={(event) =>
               onMouseLeave?.({
                 value: data,
-                nativeEvent: event,
+                nativeEvent: event
               })
             }
             onClick={(event) =>
               onClick?.({
                 value: data,
-                nativeEvent: event,
+                nativeEvent: event
               })
             }
           />
@@ -335,8 +335,8 @@ export const RadialBar: FC<Partial<RadialBarProps>> = ({
       onMouseEnter,
       onMouseLeave,
       transition,
-      yScale,
-    ],
+      yScale
+    ]
   );
 
   return (

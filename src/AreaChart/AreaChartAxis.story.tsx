@@ -8,7 +8,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { getXScale, getYScale } from '@/common/scales';
 
@@ -19,7 +19,7 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 
 export default {
@@ -32,8 +32,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries,
-  },
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const TopBottomAxis = () => {
@@ -44,14 +44,14 @@ export const TopBottomAxis = () => {
       {
         key: 'Before',
         data: 0,
-        x: 'Before',
+        x: 'Before'
       },
       {
         key: 'After',
         data: 0,
-        x: 'After',
-      },
-    ],
+        x: 'After'
+      }
+    ]
   });
 
   return (
@@ -89,7 +89,7 @@ export const TopBottomAxis = () => {
               label={<LinearXAxisTickLabel padding={20} position="start" />}
             />
           }
-        />,
+        />
       ]}
       yAxis={<LinearYAxis type="value" axisLine={null} />}
     />
@@ -97,7 +97,7 @@ export const TopBottomAxis = () => {
 };
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis',
+  name: 'Top + Bottom Axis'
 };
 
 export const LeftRightAxis = () => {
@@ -108,14 +108,14 @@ export const LeftRightAxis = () => {
       {
         key: 'Low',
         data: 0,
-        y: 'Low',
+        y: 'Low'
       },
       {
         key: 'High',
         data: 0,
-        y: 'High',
-      },
-    ],
+        y: 'High'
+      }
+    ]
   });
 
   return (
@@ -157,7 +157,7 @@ export const LeftRightAxis = () => {
               }
             />
           }
-        />,
+        />
       ]}
       xAxis={<LinearXAxis type="time" axisLine={null} />}
     />
@@ -165,7 +165,7 @@ export const LeftRightAxis = () => {
 };
 
 LeftRightAxis.story = {
-  name: 'Left + Right Axis',
+  name: 'Left + Right Axis'
 };
 
 const LiveUpdatingStory = () => {

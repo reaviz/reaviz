@@ -10,7 +10,7 @@ export interface BaseChartDataShape<T> {
 }
 
 export type ChartShallowDataShape<
-  T = ChartDataTypes | [ChartDataTypes, ChartDataTypes],
+  T = ChartDataTypes | [ChartDataTypes, ChartDataTypes]
 > = BaseChartDataShape<T>;
 
 export type ChartNestedDataShape = BaseChartDataShape<

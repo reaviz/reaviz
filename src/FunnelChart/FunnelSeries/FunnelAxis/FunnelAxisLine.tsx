@@ -33,7 +33,7 @@ export const FunnelAxisLine: FC<Partial<FunnelAxisLineProps>> = ({
   strokeWidth = 2,
   yScale,
   xScale,
-  index,
+  index
 }) => {
   const [height] = yScale.range();
 

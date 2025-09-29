@@ -28,7 +28,7 @@ export interface PieArcLabelProps {
    */
   format?: (
     // have added any because not sure whether this change won't be breaking
-    v: any & ArcData['data'] & { textAnchor: 'start' | 'end' },
+    v: any & ArcData['data'] & { textAnchor: 'start' | 'end' }
   ) => React.ReactNode;
 
   /**
@@ -94,7 +94,7 @@ export const PieArcLabel: FC<Partial<PieArcLabelProps>> = (props) => {
     position,
     outerRadius,
     width,
-    height,
+    height
   } = mergeDefaultProps(PIE_ARC_LABEL_DEFAULT_PROPS, props);
 
   const textAnchor = getTextAnchor(data);
@@ -119,7 +119,7 @@ export const PieArcLabel: FC<Partial<PieArcLabelProps>> = (props) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{
-        duration: 0.1,
+        duration: 0.1
       }}
     >
       {typeof text === 'string' ? (
@@ -133,7 +133,7 @@ export const PieArcLabel: FC<Partial<PieArcLabelProps>> = (props) => {
             textAnchor={textAnchor}
             style={{
               shapeRendering: 'crispEdges',
-              transform: `translate3d(${posX}px,${posY}px, 0)`,
+              transform: `translate3d(${posX}px,${posY}px, 0)`
             }}
           >
             {text}
@@ -149,7 +149,7 @@ export const PieArcLabel: FC<Partial<PieArcLabelProps>> = (props) => {
             }px,${posY - height / 2}px, 0)`,
             color: fontFill,
             fontFamily,
-            fontSize,
+            fontSize
           }}
         >
           {text}
@@ -171,5 +171,5 @@ export const PIE_ARC_LABEL_DEFAULT_PROPS = {
   fontSize: 11,
   fontFamily: 'sans-serif',
   padding: '.35em',
-  height: 11,
+  height: 11
 };

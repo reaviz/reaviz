@@ -91,7 +91,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
     colorScheme,
     gradient,
     glow,
-    tooltip,
+    tooltip
   } = mergeDefaultProps(FUNNEL_ARC_DEFAULT_PROPS, props);
 
   // Note: Need to append the last section
@@ -113,7 +113,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
     data,
     domain: [0, 1, 2, 3],
     colorScheme,
-    key: index,
+    key: index
   });
 
   const fillTop = gradient ? `url(#gradient-${id}-top)` : fillColor;
@@ -139,7 +139,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
             const value = {
               x: data.key,
               y: data.data,
-              value: data.data,
+              value: data.data
             };
 
             return <TooltipTemplate value={value} color={color} />;
@@ -158,10 +158,10 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
           fill={fillTop}
           stroke="none"
           initial={{
-            opacity: 0,
+            opacity: 0
           }}
           animate={{
-            opacity,
+            opacity
           }}
         />
         <motion.path
@@ -169,10 +169,10 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
           fill={fillBottom}
           stroke="none"
           initial={{
-            opacity: 0,
+            opacity: 0
           }}
           animate={{
-            opacity,
+            opacity
           }}
         />
         {gradient && (
@@ -200,7 +200,7 @@ export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
       direction="horizontal"
       stops={[
         <GradientStop offset="0%" stopOpacity={1} key="stop" />,
-        <GradientStop offset="80%" stopOpacity={0.5} key="start" />,
+        <GradientStop offset="80%" stopOpacity={0.5} key="start" />
       ]}
     />
   ),
@@ -208,5 +208,5 @@ export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
   colorScheme: schemes.cybertron[0],
   variant: 'default',
   opacity: 1,
-  tooltip: null,
+  tooltip: null
 };

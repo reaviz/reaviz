@@ -29,11 +29,11 @@ export interface RadialAxisTickLineProps {
 }
 
 export const RadialAxisTickLine: FC<Partial<RadialAxisTickLineProps>> = (
-  props,
+  props
 ) => {
   const { stroke, size, position, innerRadius, outerRadius } = {
     ...RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
 
   const x1 = position === 'outside' ? size : -(outerRadius - innerRadius);
@@ -46,5 +46,5 @@ export const RadialAxisTickLine: FC<Partial<RadialAxisTickLineProps>> = (
 export const RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS = {
   stroke: 'rgba(113, 128, 141, .5)',
   size: 10,
-  position: 'inside',
+  position: 'inside'
 };

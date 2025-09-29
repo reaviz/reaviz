@@ -3,7 +3,7 @@ import { timeDay } from 'd3-time';
 import {
   nonZeroDateData,
   singleDateBigIntData,
-  singleDateData,
+  singleDateData
 } from 'reaviz-data-utils';
 
 import { LinearXAxis, LinearXAxisTickSeries } from '@/common/Axis/LinearAxis';
@@ -18,7 +18,7 @@ import {
   Line,
   PointSeries,
   StackedAreaSeries,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from './AreaSeries';
 
 export default {
@@ -31,8 +31,8 @@ export default {
     Line,
     PointSeries,
     StackedAreaSeries,
-    StackedNormalizedAreaSeries,
-  },
+    StackedNormalizedAreaSeries
+  }
 };
 
 export const Simple = () => (
@@ -65,7 +65,7 @@ export const Masks = () => (
               <Gradient
                 stops={[
                   <GradientStop key={0.2} offset="0%" stopOpacity={0.2} />,
-                  <GradientStop key={1} offset="50%" stopOpacity={1} />,
+                  <GradientStop key={1} offset="50%" stopOpacity={1} />
                 ]}
               />
             }
@@ -118,7 +118,7 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };
 
 export const Interval = () => (
@@ -154,7 +154,7 @@ export const Performance = () =>
         height: '250px',
         border: 'solid 1px green',
         margin: '25px',
-        display: 'inline-block',
+        display: 'inline-block'
       }}
     >
       <AreaChart data={singleDateData} />

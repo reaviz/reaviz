@@ -12,12 +12,12 @@ import {
   RadialGaugeSeries,
   StackedRadialGaugeDescriptionLabel,
   StackedRadialGaugeSeries,
-  StackedRadialGaugeValueLabel,
+  StackedRadialGaugeValueLabel
 } from './RadialGaugeSeries';
 
 export default {
   tags: ['snapshot'],
-  title: 'Charts/Gauge/Radial',
+  title: 'Charts/Gauge/Radial'
 };
 
 export const Single = () => (
@@ -26,8 +26,8 @@ export const Single = () => (
     data={[
       {
         key: 'Austin, TX',
-        data: 24,
-      },
+        data: 24
+      }
     ]}
     startAngle={0}
     endAngle={Math.PI * 2}
@@ -45,8 +45,8 @@ export const FilledArc = () => (
     data={[
       {
         key: 'Austin, TX',
-        data: 24,
-      },
+        data: 24
+      }
     ]}
     width={350}
     height={350}
@@ -64,8 +64,8 @@ export const CustomArc = () => (
     data={[
       {
         key: 'Austin, TX',
-        data: 24,
-      },
+        data: 24
+      }
     ]}
     height={300}
     width={300}
@@ -148,14 +148,14 @@ const GaugeStackedTemplate: FC<GaugeStackedTemplateProps> = ({
   width,
   height,
   data,
-  colorSchemaType,
+  colorSchemaType
 }) => {
   const defaultColor = '#948d62';
   const customColorScheme: Record<string, string> = {
     'Third Party': '#DF8D03',
     Malware: '#993FFF',
     DLP: '#D9C0FF',
-    IDS: '#00FFC7',
+    IDS: '#00FFC7'
   };
   const colorSchemeHandler = (data: ChartDataShape) => {
     const key = data.key;
@@ -224,21 +224,21 @@ GaugeStacked.args = {
   height: 300,
   data: categoryDataStackedArcs,
   maxValue: undefined,
-  colorSchemaType: 'handlerFn',
+  colorSchemaType: 'handlerFn'
 };
 GaugeStacked.argTypes = {
   width: { control: { type: 'number', min: 300, max: 700, step: 10 } },
   height: { control: { type: 'number', min: 300, max: 700, step: 10 } },
   data: {
-    type: 'object',
+    type: 'object'
   },
   maxValue: {
-    type: 'number',
+    type: 'number'
   },
   colorSchemaType: {
     control: 'inline-radio',
-    options: ['handlerFn', 'array', 'string'],
-  },
+    options: ['handlerFn', 'array', 'string']
+  }
 };
 
 export const Autosize = () => (
@@ -248,8 +248,8 @@ export const Autosize = () => (
       data={[
         {
           key: 'Austin, TX',
-          data: 24,
-        },
+          data: 24
+        }
       ]}
     />
   </div>
@@ -263,8 +263,8 @@ export const WithGradient = () => (
     data={[
       {
         key: 'Austin, TX',
-        data: 24,
-      },
+        data: 24
+      }
     ]}
     series={
       <RadialGaugeSeries

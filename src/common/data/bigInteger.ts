@@ -6,12 +6,12 @@ import type {
   ChartDataTypes,
   ChartInternalDataTypes,
   ChartNestedDataShape,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from './types';
 
 export function normalizeValue(
   value: ChartDataTypes,
-  maxBigInt: bigInt.BigInteger,
+  maxBigInt: bigInt.BigInteger
 ): ChartInternalDataTypes {
   if (bigInt.isInstance(value)) {
     if (maxBigInt.greater(1000000)) {
@@ -26,7 +26,7 @@ export function normalizeValue(
 }
 
 export function normalizeValueForFormatting(
-  value: ChartDataTypes,
+  value: ChartDataTypes
 ): ChartInternalDataTypes {
   if (bigInt.isInstance(value)) {
     return bigIntegerToLocaleString(value as bigInt.BigInteger);

@@ -6,13 +6,13 @@ import React, { useCallback } from 'react';
 import type {
   ChartInternalDataTypes,
   ChartShallowDataShape,
-  ColorSchemeType,
+  ColorSchemeType
 } from '@/common';
 import {
   DEFAULT_TRANSITION,
   formatValue,
   getAriaLabel,
-  getColor,
+  getColor
 } from '@/common';
 
 import css from './BarListSeries.module.css';
@@ -105,7 +105,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   valueFormat,
   onItemClick,
   onItemMouseEnter,
-  onItemMouseLeave,
+  onItemMouseLeave
 }) => {
   const renderBar = useCallback(
     (item, index) => {
@@ -113,7 +113,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
         data,
         colorScheme,
         point: item.data,
-        index,
+        index
       });
 
       return (
@@ -131,7 +131,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
         </div>
       );
     },
-    [barClassName, outerBarClassName, colorScheme, data],
+    [barClassName, outerBarClassName, colorScheme, data]
   );
 
   return (
@@ -157,7 +157,7 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
               [css.labelTop]: labelPosition === 'top',
               [css.labelStart]: labelPosition === 'start',
               [css.labelEnd]: labelPosition === 'end',
-              [css.labelNone]: labelPosition === 'none',
+              [css.labelNone]: labelPosition === 'none'
             })}
             onMouseEnter={() => onItemMouseEnter?.(d)}
             onMouseLeave={() => onItemMouseLeave?.(d)}

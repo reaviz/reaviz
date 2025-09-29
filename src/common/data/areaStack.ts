@@ -5,13 +5,13 @@ import { uniqueBy } from '@/common/utils/array';
 import {
   getMaxBigIntegerForNested,
   normalizeValue,
-  normalizeValueForFormatting,
+  normalizeValueForFormatting
 } from './bigInteger';
 import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
-  ChartNestedDataShape,
+  ChartNestedDataShape
 } from './types';
 
 /**
@@ -44,7 +44,7 @@ function transformDataToStack(data) {
       if (idx === -1) {
         result.push({
           x: value.key,
-          formattedValues: {},
+          formattedValues: {}
         });
 
         idx = result.length - 1;
@@ -52,7 +52,7 @@ function transformDataToStack(data) {
 
       result[idx][category.key as string] = normalizeValue(
         value.data,
-        maxBigInteger,
+        maxBigInteger
       );
       result[idx].formattedValues[category.key as string] =
         normalizeValueForFormatting(value.data);
@@ -82,13 +82,13 @@ function transformStackToData(stackData): ChartInternalNestedDataShape[] {
         y: y1 - y0,
         y0,
         y1,
-        value: point.data.formattedValues[category.key],
+        value: point.data.formattedValues[category.key]
       });
     }
 
     result.push({
       key: category.key,
-      data: series,
+      data: series
     });
   }
 
@@ -100,7 +100,7 @@ function transformStackToData(stackData): ChartInternalNestedDataShape[] {
  */
 export function buildStackData(
   data: ChartNestedDataShape[],
-  normalized = false,
+  normalized = false
 ): ChartInternalDataShape[] {
   const keys = uniqueBy<ChartNestedDataShape>(data, (d) => d.key);
   const stackData = transformDataToStack(data);

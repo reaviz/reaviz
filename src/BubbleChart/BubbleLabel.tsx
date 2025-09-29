@@ -56,7 +56,7 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   fill,
   fontSize = 14,
   fontFamily = 'sans-serif',
-  animated,
+  animated
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -75,7 +75,7 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
           key: data.data.key,
           fontFamily,
           fontSize,
-          width: data.r,
+          width: data.r
         })
       : data.data.key;
 
@@ -83,11 +83,11 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
       <motion.text
         initial={{
           x: data.x,
-          y: data.y,
+          y: data.y
         }}
         animate={{
           x: data.x,
-          y: data.y,
+          y: data.y
         }}
         transition={transition}
         id={`${id}-text`}

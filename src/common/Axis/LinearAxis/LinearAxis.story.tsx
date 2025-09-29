@@ -8,17 +8,17 @@ import {
   LinearXAxis,
   LinearXAxisTickLabel,
   LinearXAxisTickLine,
-  LinearXAxisTickSeries,
+  LinearXAxisTickSeries
 } from './LinearXAxis';
 import {
   LinearYAxis,
   LinearYAxisTickLabel,
   LinearYAxisTickLine,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from './LinearYAxis';
 
 export default {
-  title: 'Utils/Axis/Linear',
+  title: 'Utils/Axis/Linear'
 };
 
 export const CenterAxes = () => {

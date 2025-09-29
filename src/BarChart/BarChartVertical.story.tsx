@@ -4,7 +4,7 @@ import React, { Fragment, useState } from 'react';
 import {
   categoryData,
   largeCategoryData,
-  nonZeroCategoryData,
+  nonZeroCategoryData
 } from 'reaviz-data-utils';
 
 import { Stripes } from '@/common/Mask';
@@ -20,8 +20,8 @@ export default {
     BarSeries,
     Bar,
     BarLabel,
-    GuideBar,
-  },
+    GuideBar
+  }
 };
 
 export const Simple = () => (
@@ -46,7 +46,7 @@ export const CustomStyle = () => (
               if (data.key === 'DLP') {
                 console.log('Style callback...', data);
                 return {
-                  fill: 'blue',
+                  fill: 'blue'
                 };
               }
             }}
@@ -161,7 +161,7 @@ export const Performance = () =>
         height: '250px',
         border: 'solid 1px green',
         margin: '25px',
-        display: 'inline-block',
+        display: 'inline-block'
       }}
     >
       <BarChart data={categoryData} />
@@ -196,5 +196,5 @@ export const NonZero = () => (
 );
 
 NonZero.story = {
-  name: 'Non-Zero',
+  name: 'Non-Zero'
 };

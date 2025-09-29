@@ -58,7 +58,7 @@ export const Meter: FC<Partial<MeterProps>> = ({
   gap = 15,
   style = {},
   value,
-  columns = 10,
+  columns = 10
 }) => {
   const scale = scaleLinear().domain([min, max]).range([0, 100]);
   const cols = scale.ticks(columns);

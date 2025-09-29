@@ -5,7 +5,7 @@ import {
   LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import type { ChartNestedDataShape } from '@/common/data';
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {
   largeCategoryData,
   medDateData,
-  multiCategory,
+  multiCategory
 } from 'reaviz-data-utils';
 
 import {
@@ -10,7 +10,7 @@ import {
   RadialAxisArcSeries,
   RadialAxisTick,
   RadialAxisTickLine,
-  RadialAxisTickSeries,
+  RadialAxisTickSeries
 } from '@/common/Axis/RadialAxis';
 import { schemes } from '@/common/color';
 
@@ -24,8 +24,8 @@ export default {
   subcomponents: {
     RadialBarSeries,
     RadialBar,
-    RadialGuideBar,
-  },
+    RadialGuideBar
+  }
 };
 
 export const Simple = () => (

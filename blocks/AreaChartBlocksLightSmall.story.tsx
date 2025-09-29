@@ -10,7 +10,7 @@ import {
   areaSingleSeriesNonZeroData,
   areaSingleSeriesSimpleData,
   mediumMultiDateData,
-  multiDateData,
+  multiDateData
 } from 'reaviz-data-utils';
 
 import {
@@ -31,13 +31,13 @@ import {
   StackedAreaChart,
   StackedAreaSeries,
   StackedNormalizedAreaChart,
-  StackedNormalizedAreaSeries,
+  StackedNormalizedAreaSeries
 } from '../src/index';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Area Chart/Light/Small',
-  component: AreaChart,
+  component: AreaChart
 };
 
 export const Stacked = () => {
@@ -73,7 +73,7 @@ export const Stacked = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -103,7 +103,7 @@ export const Stacked = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -298,7 +298,7 @@ export const StackedNormalized = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -327,7 +327,7 @@ export const StackedNormalized = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -509,7 +509,7 @@ export const NonZero = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -538,7 +538,7 @@ export const NonZero = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -733,7 +733,7 @@ export const MultiSeriesSimple = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -761,7 +761,7 @@ export const MultiSeriesSimple = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -942,7 +942,7 @@ export const Simple = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -969,7 +969,7 @@ export const Simple = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1164,7 +1164,7 @@ export const MultiSeriesInterpolationSmooth = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -1193,7 +1193,7 @@ export const MultiSeriesInterpolationSmooth = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1374,7 +1374,7 @@ export const InterpolationSmooth = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -1402,7 +1402,7 @@ export const InterpolationSmooth = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1593,7 +1593,7 @@ export const MultiSeriesInterpolationStep = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -1622,7 +1622,7 @@ export const MultiSeriesInterpolationStep = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1803,7 +1803,7 @@ export const InterpolationStep = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -1831,7 +1831,7 @@ export const InterpolationStep = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -2012,7 +2012,7 @@ export const CircleSeries = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -2040,7 +2040,7 @@ export const CircleSeries = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -2255,7 +2255,7 @@ export const LargeDataset = () => {
                     format={(v) =>
                       new Date(v).toLocaleDateString('en-US', {
                         month: 'numeric',
-                        day: 'numeric',
+                        day: 'numeric'
                       })
                     }
                     fill="#535362"
@@ -2283,7 +2283,7 @@ export const LargeDataset = () => {
                   <Gradient
                     stops={[
                       // <GradientStop stopOpacity={0} />,
-                      <GradientStop key={1} offset="100%" stopOpacity={0.3} />,
+                      <GradientStop key={1} offset="100%" stopOpacity={0.3} />
                     ]}
                   />
                 }
@@ -2297,7 +2297,7 @@ export const LargeDataset = () => {
               '#6C18E8',
               '#A840E8',
               '#C900A8',
-              '#9152EE',
+              '#9152EE'
             ]}
           />
         }

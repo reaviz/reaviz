@@ -52,7 +52,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   colorScheme = 'cybertron',
   animated = true,
   rect = <TreeMapRect />,
-  label = <TreeMapLabel />,
+  label = <TreeMapLabel />
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -63,7 +63,7 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
       data,
       colorScheme,
       point: item.data,
-      index,
+      index
     });
 
     const textFill = fill
@@ -77,13 +77,13 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
           scale: 0.5,
           opacity: 0,
           x: item.x0,
-          y: item.y0,
+          y: item.y0
         }}
         animate={{
           scale: 1,
           opacity: 1,
           x: item.x0,
-          y: item.y0,
+          y: item.y0
         }}
         transition={transition}
       >

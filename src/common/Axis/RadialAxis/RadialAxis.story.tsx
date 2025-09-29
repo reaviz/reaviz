@@ -7,14 +7,14 @@ import { RadialAxis } from './RadialAxis';
 import {
   RadialAxisTick,
   RadialAxisTickLabel,
-  RadialAxisTickSeries,
+  RadialAxisTickSeries
 } from './RadialAxisTickSeries';
 
 const xScale = (() => {
   const date = startOfDay(subHours(new Date(), 1));
 
   const data = range(13).map((i) => ({
-    key: addHours(date, i),
+    key: addHours(date, i)
   }));
 
   const domain = extent<{ key: Date }, Date>(data, (d) => d.key) as Date[];
@@ -27,7 +27,7 @@ const xScale = (() => {
 })();
 
 export default {
-  title: 'Utils/Axis/Radial',
+  title: 'Utils/Axis/Radial'
 };
 
 export const Simple = () => (

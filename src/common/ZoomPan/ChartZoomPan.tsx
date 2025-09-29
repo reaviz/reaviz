@@ -53,29 +53,29 @@ export const ChartZoomPan: FC<Partial<ChartZoomPanProps>> = ({
           width: width,
           type: axisType,
           roundDomains,
-          data,
+          data
         });
 
         const newScale = scale.copy().domain(
           scale
             .range()
             .map((x) => (x - event.x) / event.scale)
-            .map(scale.clamp(true).invert, event.x),
+            .map(scale.clamp(true).invert, event.x)
         );
 
         onZoomPan!({
           domain: newScale.domain(),
-          isZoomed: event.scale !== 1,
+          isZoomed: event.scale !== 1
         });
       }
     },
-    [axisType, data, onZoomPan, roundDomains, width],
+    [axisType, data, onZoomPan, roundDomains, width]
   );
 
   const zoomOffset = useMemo(() => {
     let zoomOffset = {
       scale: undefined,
-      x: undefined,
+      x: undefined
     } as any;
 
     if (!disabled && domain) {
@@ -83,7 +83,7 @@ export const ChartZoomPan: FC<Partial<ChartZoomPanProps>> = ({
         width,
         type: axisType,
         roundDomains,
-        data,
+        data
       });
 
       let offset = xScale(domain[0]);
@@ -95,7 +95,7 @@ export const ChartZoomPan: FC<Partial<ChartZoomPanProps>> = ({
 
       zoomOffset = {
         scale: scale,
-        x: -offset,
+        x: -offset
       };
     }
 

@@ -61,7 +61,7 @@ export interface BubbleProps {
    */
   onClick?: (
     event: React.MouseEvent<SVGCircleElement>,
-    currentItem?: HierarchyCircularNode<any>,
+    currentItem?: HierarchyCircularNode<any>
   ) => void;
 
   /**
@@ -86,7 +86,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
   onMouseEnter,
   onMouseLeave,
   animated,
-  tooltip = <ChartTooltip />,
+  tooltip = <ChartTooltip />
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);
@@ -102,7 +102,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
     onPointerOut: (event) => {
       setInternalActive(false);
       onMouseLeave?.(event);
-    },
+    }
   });
 
   const arcFill =
@@ -114,7 +114,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
 
   const tooltipData = useMemo(
     () => ({ y: data.data.data, x: data.data.key }),
-    [data],
+    [data]
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
@@ -128,12 +128,12 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         initial={{
           r: data.r,
           cx: data.x,
-          cy: data.y,
+          cy: data.y
         }}
         animate={{
           r: data.r,
           cx: data.x,
-          cy: data.y,
+          cy: data.y
         }}
         transition={transition}
         onClick={(event) => onClick && onClick(event, data)}

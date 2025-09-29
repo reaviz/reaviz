@@ -54,27 +54,27 @@ export const VennDiagram: FC<VennDiagramProps> = ({
   containerClassName,
   data,
   disabled,
-  series = <VennSeries />,
+  series = <VennSeries />
 }) => {
   const renderChart = useCallback(
     (containerProps: ChartContainerChildProps) => {
       const normalized = data.map((d) => ({
         key: d.key.join('|'),
         sets: d.key,
-        size: d.data,
+        size: d.data
       }));
 
       let layoutData;
       if (type === 'starEuler') {
         layoutData = starEulerLayout(normalized, {
           height: containerProps.height,
-          width: containerProps.width,
+          width: containerProps.width
         });
       } else {
         layoutData = layout(normalized, {
           height: containerProps.height,
           width: containerProps.width,
-          distinct: type !== 'euler',
+          distinct: type !== 'euler'
         });
       }
 
@@ -87,7 +87,7 @@ export const VennDiagram: FC<VennDiagramProps> = ({
         />
       );
     },
-    [data, disabled, series, type],
+    [data, disabled, series, type]
   );
 
   return (

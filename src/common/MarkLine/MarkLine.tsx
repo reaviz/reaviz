@@ -14,7 +14,7 @@ export const MarkLine: FC<Partial<MarkLineProps>> = ({
   pointX,
   height,
   strokeWidth = 1,
-  strokeColor = '#eee',
+  strokeColor = '#eee'
 }) => (
   <line
     stroke={strokeColor}

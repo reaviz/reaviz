@@ -141,22 +141,22 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       setActive(true);
       onMouseEnter({
         value: data,
-        nativeEvent: event,
+        nativeEvent: event
       });
     },
     onPointerOut: (event) => {
       setActive(false);
       onMouseLeave({
         value: data,
-        nativeEvent: event,
+        nativeEvent: event
       });
-    },
+    }
   });
 
   const onMouseClick = (event: MouseEvent) => {
     onClick({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   };
 
@@ -164,21 +164,21 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
     () => ({
       y: data.value,
       x: `${data.key} ∙ ${data.x}`,
-      data,
+      data
     }),
-    [data],
+    [data]
   );
 
   const transition = useMemo(() => {
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: (cellIndex / cellCount) * 0.005,
+        delay: (cellIndex / cellCount) * 0.005
       };
     } else {
       return {
         type: false as const,
-        delay: 0,
+        delay: 0
       };
     }
   }, [animated, cellIndex, cellCount]);
@@ -192,12 +192,12 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
 
   const ariaLabelData = useMemo(
     () => getAriaLabel({ ...tooltipData, data: null }),
-    [tooltipData],
+    [tooltipData]
   );
 
   const renderedSymbol = useMemo(
     () => (symbol ? symbol(data!) : null),
-    [data, symbol],
+    [data, symbol]
   );
 
   return (
@@ -212,13 +212,13 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             className={extras?.className}
             transform={`translate(${x}, ${y})`}
             initial={{
-              opacity: 0,
+              opacity: 0
             }}
             animate={{
-              opacity: 1,
+              opacity: 1
             }}
             exit={{
-              opacity: 0,
+              opacity: 0
             }}
             transition={transition}
             onPointerOver={pointerOver}
@@ -242,13 +242,13 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             style={{ ...extras.style, cursor }}
             className={classNames(css.cell, extras.className)}
             initial={{
-              opacity: 0,
+              opacity: 0
             }}
             animate={{
-              opacity: 1,
+              opacity: 1
             }}
             exit={{
-              opacity: 0,
+              opacity: 0
             }}
             transition={transition}
             onPointerOver={pointerOver}

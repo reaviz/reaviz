@@ -13,7 +13,7 @@ import { formatValue } from '@/common/utils/formatting';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import type {
   SankeyLabelPosition,
-  SankeyLabelProps,
+  SankeyLabelProps
 } from '@/Sankey/SankeyLabel';
 import { SankeyLabel } from '@/Sankey/SankeyLabel';
 import type { SankeyNodeExtra } from '@/Sankey/utils';
@@ -143,7 +143,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   targetLinks,
   onClick,
   onMouseEnter,
-  onMouseLeave,
+  onMouseLeave
 }) => {
   const node = {
     id,
@@ -156,7 +156,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
     x0,
     x1,
     y0,
-    y1,
+    y1
   };
   const nodeWidth = width || (x1 && x0 && x1 - x0 > 0 ? x1 - x0 : 0);
   const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
@@ -183,12 +183,12 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
     onPointerOut: (event) => {
       setHovered(false);
       onMouseLeave?.(event as any);
-    },
+    }
   });
 
   const ariaLabelData = useMemo(
     () => `${title}: ${formatValue(value as ChartInternalDataTypes)}`,
-    [title, value],
+    [title, value]
   );
 
   return (
@@ -210,20 +210,20 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           initial={{
             opacity: 0,
             attrX: x0,
-            attrY: y0,
+            attrY: y0
           }}
           animate={{
             opacity: 1,
             attrX: x0,
-            attrY: y0,
+            attrY: y0
           }}
           exit={{
             opacity: 0,
             attrX: x0,
-            attrY: y0,
+            attrY: y0
           }}
           transition={{
-            duration: animated ? 0.1 : 0,
+            duration: animated ? 0.1 : 0
           }}
           onClick={onClick}
           onPointerOver={pointerOver}

@@ -4,7 +4,7 @@ import React from 'react';
 
 import type {
   ChartInternalDataTypes,
-  ChartShallowDataShape,
+  ChartShallowDataShape
 } from '@/common/data';
 import { formatValue } from '@/common/utils';
 
@@ -36,7 +36,7 @@ export const RadialGaugeLabel: FC<Partial<RadialGaugeLabelProps>> = ({
   data,
   className,
   offset,
-  onClick = () => undefined,
+  onClick = () => undefined
 }) => {
   const label = formatValue(data.key as ChartInternalDataTypes);
 

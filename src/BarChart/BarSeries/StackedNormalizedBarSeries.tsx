@@ -13,7 +13,7 @@ import { BAR_SERIES_DEFAULT_PROPS, BarSeries } from './BarSeries';
 import { RangeLines } from './RangeLines';
 
 export const StackedNormalizedBarSeries: FC<Partial<BarSeriesProps>> = (
-  props,
+  props
 ) => <BarSeries {...STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS} {...props} />;
 
 export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
@@ -33,7 +33,7 @@ export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
 
               return {
                 ...d,
-                value: `${formatValue(Math.floor((end - start) * 100))}%`,
+                value: `${formatValue(Math.floor((end - start) * 100))}%`
               };
             });
 
@@ -50,11 +50,11 @@ export const STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS = {
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       }
       rangeLines={<RangeLines position="top" strokeWidth={3} />}
     />
-  ),
+  )
 };

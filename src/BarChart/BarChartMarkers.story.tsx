@@ -12,7 +12,7 @@ import {
   RadialAxisTickLine,
   RadialAxisTickSeries,
   RadialValueMarker,
-  schemes,
+  schemes
 } from '@/common';
 import { RadialBar, RadialBarChart, RadialBarSeries } from '@/RadialBarChart';
 
@@ -28,8 +28,8 @@ export default {
     BarSeries,
     RadialBar,
     RadialBarChart,
-    RadialBarSeries,
-  },
+    RadialBarSeries
+  }
 };
 
 export const LinearValueMarkersVertical = () => (
@@ -62,7 +62,7 @@ export const LinearValueMarkersVertical = () => (
             value={6}
             color="#F8A340"
             direction="vertical"
-          />,
+          />
         ]}
       />
     }
@@ -81,7 +81,7 @@ export const LinearValueMarkersHorizontal = () => (
         bar={<Bar />}
         valueMarkers={[
           <LinearValueMarker key={12} value={12} color="#D740BE" />,
-          <LinearValueMarker key={6} value={6} color="#F8A340" />,
+          <LinearValueMarker key={6} value={6} color="#F8A340" />
         ]}
       />
     }
@@ -101,7 +101,7 @@ export const RadialValueMarkers = () => (
         bar={<RadialBar curved={false} gradient={false} guide={null} />}
         valueMarkers={[
           <RadialValueMarker key={12} value={12} color="#D740BE" />,
-          <RadialValueMarker key={6} value={6} color="#F8A340" />,
+          <RadialValueMarker key={6} value={6} color="#F8A340" />
         ]}
       />
     }

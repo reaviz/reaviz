@@ -81,7 +81,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   gradient,
   onClick,
   onMouseEnter,
-  onMouseLeave,
+  onMouseLeave
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const arcRef = useRef<any | null>(null);
@@ -96,7 +96,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
         .innerRadius((d: any) => d.y0)
         .outerRadius((d: any) => d.y1 - 1)(item);
     },
-    [radius],
+    [radius]
   );
 
   const p = data.parent || { x0: 0, x1: 0, y0: 0, y1: 0 };
@@ -104,7 +104,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     x0: ((data.x0 - p.x0) / (p.x1 - p.x0)) * 2 * Math.PI,
     x1: ((data.x1 - p.x0) / (p.x1 - p.x0)) * 2 * Math.PI,
     y0: 0,
-    y1: 0,
+    y1: 0
   });
   const animate = getPath(data);
   const ariaLabelData = getAriaLabel(data.data);
@@ -117,7 +117,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
     onPointerOut: (event) => {
       setInternalActive(false);
       onMouseLeave?.(event, data);
-    },
+    }
   });
 
   const tooltipLabel = useMemo(() => {
@@ -132,12 +132,12 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
 
   const tooltipData = useMemo(
     () => ({ y: data.value, x: tooltipLabel }),
-    [data, tooltipLabel],
+    [data, tooltipLabel]
   );
 
   const currentFill = useMemo(
     () => (internalActive ? chroma(fill).brighten(0.5).hex() : fill),
-    [fill, internalActive],
+    [fill, internalActive]
   );
 
   const pathFill = gradient ? `url(#gradient-${id})` : currentFill;
@@ -145,7 +145,7 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   const { transition, d } = useInterpolate({
     animated,
     path: animate,
-    initial,
+    initial
   });
 
   return (

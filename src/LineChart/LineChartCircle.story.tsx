@@ -13,8 +13,8 @@ export default {
   title: 'Charts/Line Chart/Circle Series',
   component: LineChart,
   subcomponents: {
-    LineSeries,
-  },
+    LineSeries
+  }
 };
 
 export const On = () => (
@@ -89,7 +89,7 @@ export const Shapes = () => (
                       style={{
                         fill: 'lime',
                         stroke: 'purple',
-                        strokeWidth: 1.5,
+                        strokeWidth: 1.5
                       }}
                     />
                   );

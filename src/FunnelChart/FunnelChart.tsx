@@ -49,7 +49,7 @@ export const FunnelChart: FC<Partial<FunnelChartProps>> = ({
         />
       );
     },
-    [data, series],
+    [data, series]
   );
 
   return (

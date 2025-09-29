@@ -7,7 +7,7 @@ import {
   LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 import { Gridline, GridlineSeries } from '@/common/Gridline';
@@ -18,7 +18,7 @@ import {
   BarSeries,
   RangeLines,
   StackedBarSeries,
-  StackedNormalizedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 import { StackedBarChart } from './StackedBarChart';
 import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
@@ -32,8 +32,8 @@ export default {
     StackedBarSeries,
     StackedNormalizedBarSeries,
     RangeLines,
-    Bar,
-  },
+    Bar
+  }
 };
 
 export const Simple = () => (
@@ -155,7 +155,7 @@ export const StackedNormalized = () => (
               <Gradient
                 stops={[
                   <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+                  <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
                 ]}
               />
             }

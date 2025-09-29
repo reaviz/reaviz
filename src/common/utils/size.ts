@@ -8,7 +8,7 @@ const cache: { [key: string]: TextDimensions } = {};
 export const calculateDimensions = (
   text: string,
   fontFamily: string,
-  fontSize: string | number,
+  fontSize: string | number
 ): TextDimensions => {
   const key = `${text}_${fontFamily}_${fontSize}`;
 
@@ -21,12 +21,12 @@ export const calculateDimensions = (
   if (typeof window === 'undefined' || typeof document === 'undefined') {
     const height = parseInt(
       typeof fontSize === 'string' ? fontSize : fontSize.toString(),
-      10,
+      10
     );
     const dimensions = {
       height,
       // 8 is an approximation of the width of a character
-      width: text.length * 8,
+      width: text.length * 8
     };
 
     cache[key] = dimensions;
@@ -59,7 +59,7 @@ export const calculateDimensions = (
   // Measure the div
   const dimensions = {
     height: element.offsetHeight,
-    width: element.offsetWidth,
+    width: element.offsetWidth
   };
 
   // Remove the div from the body

@@ -12,9 +12,9 @@ const preview: Preview = {
     actions: { argTypesRegex: '^on.*' },
     docs: {
       source: {
-        transform: (src) => formatCode(src),
+        transform: (src) => formatCode(src)
       },
-      theme,
+      theme
     },
     options: {
       storySort: {
@@ -26,12 +26,12 @@ const preview: Preview = {
             'Chart Types',
             'Utils',
             'Advanced',
-            'Support',
-          ],
-        ],
-      },
-    },
-  },
+            'Support'
+          ]
+        ]
+      }
+    }
+  }
 };
 
 export default preview;

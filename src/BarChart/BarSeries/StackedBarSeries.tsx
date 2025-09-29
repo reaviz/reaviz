@@ -23,11 +23,11 @@ export const STACKED_BAR_SERIES_DEFAULT_PROPS = {
         <Gradient
           stops={[
             <GradientStop offset="5%" stopOpacity={0.1} key="start" />,
-            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+            <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
           ]}
         />
       }
       rangeLines={<RangeLines position="top" strokeWidth={3} />}
     />
-  ),
+  )
 };

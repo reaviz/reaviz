@@ -52,11 +52,11 @@ export const ChartBrush: FC<Partial<ChartBrushProps>> = (props) => {
         }
 
         onBrushChange({
-          domain,
+          domain
         });
       }
     },
-    [onBrushChange, scale, width],
+    [onBrushChange, scale, width]
   );
 
   return (

@@ -7,7 +7,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis';
 import type { ChartShallowDataShape } from '@/common/data';
 import { ChartTooltip } from '@/common/Tooltip';
@@ -54,7 +54,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
             <ChartTooltip
               content={(d) =>
                 `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
-                  d.data.value,
+                  d.data.value
                 )}`
               }
             />
@@ -69,7 +69,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
     data: domainData,
     yDomain,
     xDomain,
-    start,
+    start
   } = useMemo(() => buildDataScales(data, view), [data, view]);
 
   // For month, only pass 1 tick value
@@ -80,14 +80,14 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   // Get the yAxis label formatting based on view type
   const yAxisLabelFormat = useMemo(
     () => (view === 'year' ? getDayOfWeek : () => null),
-    [getDayOfWeek, view],
+    [getDayOfWeek, view]
   );
 
   // Format the xAxis label for the start + n week
   const xAxisLabelFormat = useCallback(
     (weeks: number) =>
       addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' }),
-    [start],
+    [start]
   );
 
   return (

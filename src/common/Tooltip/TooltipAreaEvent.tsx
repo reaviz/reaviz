@@ -1,6 +1,6 @@
 import type {
   ChartDataTypes,
-  ChartInternalShallowDataShape,
+  ChartInternalShallowDataShape
 } from '@/common/data';
 
 export interface TooltipAreaEvent {

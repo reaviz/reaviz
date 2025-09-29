@@ -13,19 +13,19 @@ import type { PointSeriesProps } from './PointSeries';
 import { POINT_SERIES_DEFAULT_PROPS } from './PointSeries';
 
 export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = (
-  props,
+  props
 ) => {
   const { interpolation, symbols, ...rest } = {
     ...AREA_SERIES_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
 
   const symbolsProps = useMemo(
     () => ({
       ...POINT_SERIES_DEFAULT_PROPS,
-      ...symbols?.props,
+      ...symbols?.props
     }),
-    [symbols],
+    [symbols]
   );
 
   return (
@@ -62,9 +62,9 @@ export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = (
                   data: series.data.map((d) => ({
                     ...d,
                     value: `${formatValue(d.value)} ∙ ${formatValue(
-                      Math.floor((d.y1 - d.y0) * 100),
-                    )}%`,
-                  })),
+                      Math.floor((d.y1 - d.y0) * 100)
+                    )}%`
+                  }))
                 };
 
                 return <TooltipTemplate color={color} value={value} />;

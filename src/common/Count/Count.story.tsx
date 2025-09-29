@@ -4,7 +4,7 @@ import { Count } from './Count';
 
 export default {
   title: 'Utils/Count',
-  component: Count,
+  component: Count
 };
 
 export const Simple = () => (

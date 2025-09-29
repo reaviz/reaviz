@@ -4,7 +4,7 @@ describe('getAriaLabel', () => {
   it("should return 'key' and 'data' values in aria label", () => {
     const datapoint = {
       key: 'JSON',
-      data: 25,
+      data: 25
     };
     const result = getAriaLabel(datapoint);
     expect(result).toEqual('JSON: 25');
@@ -13,7 +13,7 @@ describe('getAriaLabel', () => {
   it("should return 'x' and 'y' values in aria label", () => {
     const datapoint = {
       x: 'Windows → Win7',
-      y: 75,
+      y: 75
     };
     const result = getAriaLabel(datapoint);
     expect(result).toEqual('Windows → Win7: 75');
@@ -24,7 +24,7 @@ describe('getAriaLabel', () => {
 
     const datapoint = {
       x: currDate,
-      y: 1000000,
+      y: 1000000
     };
     const result = getAriaLabel(datapoint);
     expect(result).toEqual(`${currDate.toString()}: 1,000,000`);
@@ -35,7 +35,7 @@ describe('getAriaLabel', () => {
 
     const datapoint = {
       key: currDate,
-      y: 9945.45235,
+      y: 9945.45235
     };
     const result = getAriaLabel(datapoint);
     // Only till the 3rd decimal place
@@ -46,16 +46,16 @@ describe('getAriaLabel', () => {
     const datapoint = [
       {
         key: 'Visited',
-        y: 100,
+        y: 100
       },
       {
         x: 'Clicked',
-        data: 50,
+        data: 50
       },
       {
         x: 'Purchased',
-        y: 5,
-      },
+        y: 5
+      }
     ];
     const result = getAriaLabel(datapoint);
     // Only till the 3rd decimal place

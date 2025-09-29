@@ -7,7 +7,7 @@ import { scaleLinear } from 'd3-scale';
 export const getRadialYScale = (
   innerRadius: number,
   outerRadius: number,
-  domain: any[],
+  domain: any[]
 ) => {
   if (domain[0] === 0 && domain[1] === 0) {
     // If all values are 0, set the domain to [0, 1], so the zero values are

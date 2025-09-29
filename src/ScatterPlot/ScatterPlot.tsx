@@ -9,12 +9,12 @@ import {
   LINEAR_X_AXIS_DEFAULT_PROPS,
   LINEAR_Y_AXIS_DEFAULT_PROPS,
   LinearXAxis,
-  LinearYAxis,
+  LinearYAxis
 } from '@/common/Axis';
 import type { ChartBrush, ChartBrushProps } from '@/common/Brush';
 import type {
   ChartContainerChildProps,
-  ChartProps,
+  ChartProps
 } from '@/common/containers/ChartContainer';
 import { ChartContainer } from '@/common/containers/ChartContainer';
 import type { ChartDataTypes, ChartShallowDataShape } from '@/common/data';
@@ -25,7 +25,7 @@ import { getXScale, getYScale } from '@/common/scales';
 import type {
   ChartZoomPan,
   ChartZoomPanProps,
-  ZoomPanChangeEvent,
+  ZoomPanChangeEvent
 } from '@/common/ZoomPan';
 
 import css from './ScatterPlot.module.css';
@@ -88,21 +88,21 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
   containerClassName,
   brush = null,
   zoomPan = null,
-  secondaryAxis,
+  secondaryAxis
 }) => {
   const xAxisProps = useMemo(
     () => ({ ...LINEAR_X_AXIS_DEFAULT_PROPS, ...xAxis.props }),
-    [xAxis.props],
+    [xAxis.props]
   );
   const yAxisProps = useMemo(
     () => ({ ...LINEAR_Y_AXIS_DEFAULT_PROPS, ...yAxis.props }),
-    [yAxis.props],
+    [yAxis.props]
   );
   const zoomControlled = useMemo(
     () =>
       // eslint-disable-next-line
       !zoomPan?.props?.domain?.hasOwnProperty('domain'),
-    [zoomPan],
+    [zoomPan]
   );
 
   const timeout = useRef<any | null>(null);
@@ -120,7 +120,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         type: yAxisProps.type,
         height: chartHeight,
         data: aggregatedData,
-        domain: yAxisProps.domain,
+        domain: yAxisProps.domain
       });
 
       const xScale = getXScale({
@@ -128,15 +128,15 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         type: xAxisProps.type,
         roundDomains: xAxisProps.roundDomains,
         data: aggregatedData,
-        domain: zoomDomain || xAxisProps.domain,
+        domain: zoomDomain || xAxisProps.domain
       });
 
       return {
         yScale,
-        xScale,
+        xScale
       };
     },
-    [yAxisProps, xAxisProps, aggregatedData, zoomDomain],
+    [yAxisProps, xAxisProps, aggregatedData, zoomDomain]
   );
 
   const onZoomPan = useCallback(
@@ -150,7 +150,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         timeout.current = setTimeout(() => setPreventAnimation(true), 500);
       }
     },
-    [zoomControlled],
+    [zoomControlled]
   );
 
   const renderChart = useCallback(
@@ -159,7 +159,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       chartWidth,
       id,
       updateAxes,
-      chartSized,
+      chartSized
     }: ChartContainerChildProps) => {
       const { yScale, xScale } = getScales(chartHeight, chartWidth);
       const animated =
@@ -256,8 +256,8 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
       onZoomPan,
       aggregatedData,
       zoomDomain,
-      isZoomed,
-    ],
+      isZoomed
+    ]
   );
 
   return (

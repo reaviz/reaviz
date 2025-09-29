@@ -7,7 +7,7 @@ import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import type { ChartShallowDataShape } from '@/common/data';
 import type { LineChartProps } from '@/LineChart';

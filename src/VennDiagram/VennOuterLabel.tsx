@@ -42,7 +42,7 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   animated = true,
   fill = '#000',
   fontSize = 14,
-  fontFamily = 'sans-serif',
+  fontFamily = 'sans-serif'
 }) => {
   const transition = animated
     ? DEFAULT_TRANSITION
@@ -57,7 +57,7 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   // initial={pos} animate={pos}
   const pos = {
     x: showIcon ? data.set.icon.x : data.set.text.x,
-    y: showIcon ? data.set.icon.y : data.set.text.y,
+    y: showIcon ? data.set.icon.y : data.set.text.y
   };
 
   return (
@@ -75,13 +75,13 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
           initial={
             {
               attrX: pos.x,
-              attrY: pos.y,
+              attrY: pos.y
             } as any
           }
           animate={
             {
               attrX: pos.x,
-              attrY: pos.y,
+              attrY: pos.y
             } as any
           }
           transition={transition}

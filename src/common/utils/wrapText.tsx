@@ -31,7 +31,7 @@ export function wrapText({
   height,
   fontFamily,
   fontSize,
-  visibility = 'auto',
+  visibility = 'auto'
 }: WrapTextInputs): ReactElement | ReactElement[] | null {
   size = size || calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);

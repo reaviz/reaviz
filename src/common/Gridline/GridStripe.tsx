@@ -54,7 +54,7 @@ export interface GridStripeProps {
 export const GridStripe: FC<Partial<GridStripeProps>> = (props) => {
   const { fill, className, position, data, height, width, scale, index } = {
     ...GRID_STRIPE_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
   const coords = useMemo(() => {
     const pos = scale(data);
@@ -67,7 +67,7 @@ export const GridStripe: FC<Partial<GridStripeProps>> = (props) => {
         x: pos,
         height: height,
         width: dim,
-        fill: stripeFill,
+        fill: stripeFill
       };
     } else {
       return {
@@ -75,7 +75,7 @@ export const GridStripe: FC<Partial<GridStripeProps>> = (props) => {
         x: 0,
         height: dim,
         width,
-        fill: stripeFill,
+        fill: stripeFill
       };
     }
   }, [scale, data, index, height, width, fill, position]);
@@ -84,5 +84,5 @@ export const GridStripe: FC<Partial<GridStripeProps>> = (props) => {
 };
 
 export const GRID_STRIPE_DEFAULT_PROPS = {
-  fill: '#393c3e',
+  fill: '#393c3e'
 };

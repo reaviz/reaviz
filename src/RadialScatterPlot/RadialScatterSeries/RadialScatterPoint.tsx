@@ -102,7 +102,7 @@ export interface RadialScatterPointProps {
 }
 
 export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
-  props,
+  props
 ) => {
   const {
     size,
@@ -127,7 +127,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     setHovered(true);
     rest.onMouseEnter({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   }
 
@@ -135,14 +135,14 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     setHovered(false);
     rest.onMouseLeave({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   }
 
   function onClick(event: React.MouseEvent) {
     rest.onClick({
       value: data,
-      nativeEvent: event,
+      nativeEvent: event
     });
   }
 
@@ -160,7 +160,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
 
       return {
         translateX: parseFloat(translateX),
-        translateY: parseFloat(translateY),
+        translateY: parseFloat(translateY)
       };
     }
   }
@@ -169,12 +169,12 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
     if (animated) {
       return {
         ...DEFAULT_TRANSITION,
-        delay: index * 0.005,
+        delay: index * 0.005
       };
     } else {
       return {
         type: false as const,
-        delay: 0,
+        delay: 0
       };
     }
   }
@@ -204,7 +204,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
         onClick={onClick}
         className={classNames(className, {
           [css.inactive]: !active,
-          [css.hidden]: !isVisible,
+          [css.hidden]: !isVisible
         })}
         tabIndex={0}
         aria-label={ariaLabelData}
@@ -232,5 +232,5 @@ export const RADIAL_SCATTER_POINT_DEFAULT_PROPS = {
   active: true,
   onClick: () => undefined,
   onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined,
+  onMouseLeave: () => undefined
 };

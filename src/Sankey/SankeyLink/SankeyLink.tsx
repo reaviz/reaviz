@@ -14,7 +14,7 @@ import { useHoverIntent } from '@/common/utils/useHoverIntent';
 import type {
   NodeExtra,
   SankeyLinkExtra,
-  SankeyNodeExtra,
+  SankeyNodeExtra
 } from '@/Sankey/utils';
 import { DEFAULT_COLOR } from '@/Sankey/utils';
 
@@ -114,7 +114,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   y1,
   onClick,
   onMouseEnter,
-  onMouseLeave,
+  onMouseLeave
 }) => {
   const linkSource = source as SankeyNodeExtra;
   const linkTarget = target as SankeyNodeExtra;
@@ -168,7 +168,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
     onPointerOut: (event) => {
       setHovered(false);
       onMouseLeave?.(event as any);
-    },
+    }
   });
 
   const ariaLabelData = useMemo(
@@ -176,7 +176,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
       `${(source as NodeExtra).title} → ${
         (target as NodeExtra).title
       }: ${formatValue(value)}`,
-    [source, target, value],
+    [source, target, value]
   );
 
   return (
@@ -201,7 +201,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           animate={enterProps}
           exit={exitProps}
           transition={{
-            duration: animated ? 0.5 : 0,
+            duration: animated ? 0.5 : 0
           }}
           stroke={stroke}
           strokeOpacity={opacity(active, disabled)}

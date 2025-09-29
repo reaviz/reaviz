@@ -13,11 +13,11 @@ export interface LinearAxisTickLineProps {
 }
 
 export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
-  props,
+  props
 ) => {
   const { size, position, orientation, strokeColor, strokeWidth, className } = {
     ...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-    ...props,
+    ...props
   };
 
   const path = useMemo(() => {
@@ -35,7 +35,7 @@ export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
       x1: isVertical ? end : 0,
       x2: isVertical ? start : 0,
       y1: isVertical ? 0 : start,
-      y2: isVertical ? 0 : end,
+      y2: isVertical ? 0 : end
     };
   }, [orientation, position, size]);
 
@@ -52,5 +52,5 @@ export const LinearAxisTickLine: FC<Partial<LinearAxisTickLineProps>> = (
 export const LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS = {
   strokeColor: '#8F979F',
   strokeWidth: 1,
-  size: 5,
+  size: 5
 };

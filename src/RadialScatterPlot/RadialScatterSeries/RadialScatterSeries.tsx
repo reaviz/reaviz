@@ -5,7 +5,7 @@ import React, {
   useCallback,
   useEffect,
   useMemo,
-  useState,
+  useState
 } from 'react';
 import { identifier } from 'safe-identifier';
 
@@ -15,7 +15,7 @@ import type { ChartInternalShallowDataShape } from '@/common/data';
 import type { RadialScatterPointProps } from './RadialScatterPoint';
 import {
   RADIAL_SCATTER_POINT_DEFAULT_PROPS,
-  RadialScatterPoint,
+  RadialScatterPoint
 } from './RadialScatterPoint';
 
 export interface RadialScatterSeriesProps {
@@ -75,14 +75,14 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
   animated = true,
   activeIds,
   show = true,
-  valueMarkers,
+  valueMarkers
 }) => {
   const pointProps = useMemo(
     () => ({ ...RADIAL_SCATTER_POINT_DEFAULT_PROPS, ...(point?.props ?? {}) }),
-    [point?.props],
+    [point?.props]
   );
   const [internalActiveIds, setInternalActiveIds] = useState<string[] | null>(
-    activeIds,
+    activeIds
   );
 
   useEffect(() => {
@@ -96,7 +96,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
         setInternalActiveIds([value.id]);
       }
     },
-    [activeIds],
+    [activeIds]
   );
 
   const onMouseLeave = useCallback(() => {
@@ -115,7 +115,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
         dataId = d.id;
       } else {
         console.warn(
-          "No 'id' property provided for scatter point; provide one via 'id'.",
+          "No 'id' property provided for scatter point; provide one via 'id'."
         );
       }
 
@@ -152,8 +152,8 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
       yScale,
       animated,
       onMouseEnter,
-      onMouseLeave,
-    ],
+      onMouseLeave
+    ]
   );
 
   const renderValueMarkers = useCallback(
@@ -169,7 +169,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
           ))}
       </>
     ),
-    [valueMarkers, yScale],
+    [valueMarkers, yScale]
   );
 
   return (

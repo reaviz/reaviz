@@ -5,14 +5,14 @@ import {
   fromDefinition,
   fromObject,
   identity,
-  transform,
+  transform
 } from 'transformation-matrix';
 
 import type {
   PanCancelEvent,
   PanEndEvent,
   PanMoveEvent,
-  PanStartEvent,
+  PanStartEvent
 } from '@/common/Gestures/Pan';
 import { Pan } from '@/common/Gestures/Pan';
 import type { ZoomEvent } from '@/common/Gestures/Zoom';
@@ -74,7 +74,7 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
   onPanMove = () => undefined,
   onPanEnd = () => undefined,
   onZoom = () => undefined,
-  onZoomEnd = () => undefined,
+  onZoomEnd = () => undefined
 }) => {
   const zoomRef = useRef<Zoom>();
   const panRef = useRef<Pan>();
@@ -86,8 +86,8 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
     const newMatrix = transform(
       fromDefinition([
         { type: 'translate', tx: x, ty: y },
-        { type: 'scale', sx: scale, sy: scale },
-      ]),
+        { type: 'scale', sx: scale, sy: scale }
+      ])
     );
 
     if (!isEqual(newMatrix, matrix)) {
@@ -100,7 +100,7 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
       setIsPanning(true);
       onPanStart(event);
     },
-    [onPanStart],
+    [onPanStart]
   );
 
   const onPanMoveHandler = useCallback(
@@ -110,12 +110,12 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
         x: event.x,
         y: event.y,
         type: 'pan',
-        nativeEvent: event.nativeEvent,
+        nativeEvent: event.nativeEvent
       });
 
       onPanMove(event);
     },
-    [onPanMove, onZoomPan, scale],
+    [onPanMove, onZoomPan, scale]
   );
 
   const onPanEndHandler = useCallback(
@@ -123,7 +123,7 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
       setIsPanning(false);
       onPanEnd(event);
     },
-    [onPanEnd],
+    [onPanEnd]
   );
 
   const onZoomHandler = useCallback(
@@ -133,11 +133,11 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
         y: event.y,
         scale: event.scale,
         nativeEvent: event.nativeEvent,
-        type: 'zoom',
+        type: 'zoom'
       });
       onZoom(event);
     },
-    [onZoom, onZoomPan],
+    [onZoom, onZoomPan]
   );
 
   const onZoomEndHandler = useCallback(() => {
@@ -193,7 +193,7 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
         <g
           style={{
             pointerEvents: selection,
-            userSelect: selection,
+            userSelect: selection
           }}
         >
           {children}

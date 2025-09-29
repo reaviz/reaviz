@@ -16,8 +16,8 @@ export default {
   subcomponents: {
     SunburstSeries,
     SunburstArc,
-    SunburstArcLabel,
-  },
+    SunburstArcLabel
+  }
 };
 
 const exampleColorScheme = chroma
@@ -74,10 +74,10 @@ export const MultiLevel = ({
           key: 'Traffic',
           data: [
             { key: 'HTTP', data: 100 },
-            { key: 'HTTPS', data: 200 },
-          ],
-        },
-      ],
+            { key: 'HTTPS', data: 200 }
+          ]
+        }
+      ]
     },
     {
       key: 'FileTransfer',
@@ -86,10 +86,10 @@ export const MultiLevel = ({
           key: 'Protocol',
           data: [
             { key: 'FTP', data: 50 },
-            { key: 'SFTP', data: 70 },
-          ],
-        },
-      ],
+            { key: 'SFTP', data: 70 }
+          ]
+        }
+      ]
     },
     {
       key: 'Database',
@@ -98,10 +98,10 @@ export const MultiLevel = ({
           key: 'Queries',
           data: [
             { key: 'SELECT', data: 150 },
-            { key: 'INSERT', data: 20 },
-          ],
-        },
-      ],
+            { key: 'INSERT', data: 20 }
+          ]
+        }
+      ]
     },
     {
       key: 'Authentication',
@@ -110,10 +110,10 @@ export const MultiLevel = ({
           key: 'Methods',
           data: [
             { key: 'OAuth', data: 60 },
-            { key: 'SAML', data: 25 },
-          ],
-        },
-      ],
+            { key: 'SAML', data: 25 }
+          ]
+        }
+      ]
     },
     {
       key: 'Storage',
@@ -122,13 +122,13 @@ export const MultiLevel = ({
           key: 'Types',
           data: [
             { key: 'SSD', data: 300 },
-            { key: 'HDD', data: 100 },
-          ],
-        },
-      ],
-    },
+            { key: 'HDD', data: 100 }
+          ]
+        }
+      ]
+    }
   ],
-  colorScheme = exampleColorScheme,
+  colorScheme = exampleColorScheme
 }: any) => (
   <SunburstChart
     id="multi-level"

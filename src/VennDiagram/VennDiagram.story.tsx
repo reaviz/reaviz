@@ -22,8 +22,8 @@ export default {
     VennSeries,
     VennArc,
     VennOuterLabel,
-    VennLabel,
-  },
+    VennLabel
+  }
 };
 
 export const Simple = () => (
@@ -34,7 +34,7 @@ export const Simple = () => (
     data={[
       { key: ['A'], data: 12 },
       { key: ['B'], data: 12 },
-      { key: ['A', 'B'], data: 2 },
+      { key: ['A', 'B'], data: 2 }
     ]}
     series={
       <VennSeries
@@ -55,7 +55,7 @@ export const Euler = () => (
     data={[
       { key: ['A'], data: 4 },
       { key: ['B'], data: 1 },
-      { key: ['A', 'B'], data: 1 },
+      { key: ['A', 'B'], data: 1 }
     ]}
   />
 );
@@ -117,7 +117,7 @@ export const LabelIcons = () => (
                       style={{
                         fill: 'lime',
                         stroke: 'purple',
-                        strokeWidth: 1.5,
+                        strokeWidth: 1.5
                       }}
                     />
                   </svg>
@@ -139,7 +139,7 @@ export const Selections = () => (
     data={[
       { key: ['A'], data: 4 },
       { key: ['B'], data: 1 },
-      { key: ['A', 'B'], data: 1 },
+      { key: ['A', 'B'], data: 1 }
     ]}
     series={
       <VennSeries
@@ -198,7 +198,7 @@ export const LargeOffsets = () => (
     data={[
       { key: ['A'], data: 50 },
       { key: ['B'], data: 12 },
-      { key: ['A', 'B'], data: 5 },
+      { key: ['A', 'B'], data: 5 }
     ]}
   />
 );
@@ -211,7 +211,7 @@ export const LongText = () => (
     data={[
       { key: ['Department of Defense'], data: 50 },
       { key: ['Office of President'], data: 50 },
-      { key: ['Department of Defense', 'Office of President'], data: 25 },
+      { key: ['Department of Defense', 'Office of President'], data: 25 }
     ]}
   />
 );
@@ -232,7 +232,7 @@ export const ManyIntersections = () => (
       { key: ['A', 'B', 'C'], data: 10 },
       { key: ['B', 'D'], data: 1 },
       { key: ['D', 'A'], data: 1 },
-      { key: ['D', 'A', 'B'], data: 1 },
+      { key: ['D', 'A', 'B'], data: 1 }
     ]}
     series={<VennSeries colorScheme={['#2d60e8']} />}
   />
@@ -248,7 +248,7 @@ export const NoIntersections = () => (
       { key: ['A'], data: 22 },
       { key: ['B'], data: 12 },
       { key: ['C'], data: 13 },
-      { key: ['D'], data: 22 },
+      { key: ['D'], data: 22 }
     ]}
   />
 );
@@ -262,7 +262,7 @@ export const Mask = () => (
     data={[
       { key: ['A'], data: 12 },
       { key: ['B'], data: 12 },
-      { key: ['A', 'B'], data: 2 },
+      { key: ['A', 'B'], data: 2 }
     ]}
   />
 );
@@ -286,7 +286,7 @@ export const NoFill = () => (
     data={[
       { key: ['A'], data: 12 },
       { key: ['B'], data: 12 },
-      { key: ['A', 'B'], data: 2 },
+      { key: ['A', 'B'], data: 2 }
     ]}
   />
 );
@@ -299,7 +299,7 @@ export const NoLabel = () => (
     series={<VennSeries label={null} arc={<VennArc strokeWidth={5} />} />}
     data={[
       { key: ['A'], data: 12 },
-      { key: ['B'], data: 12 },
+      { key: ['B'], data: 12 }
     ]}
   />
 );
@@ -313,7 +313,7 @@ export const NoAnimation = () => (
     data={[
       { key: ['A'], data: 12 },
       { key: ['B'], data: 12 },
-      { key: ['A', 'B'], data: 2 },
+      { key: ['A', 'B'], data: 2 }
     ]}
   />
 );
@@ -325,7 +325,7 @@ export const Autosize = () => (
       data={[
         { key: ['A'], data: 12 },
         { key: ['B'], data: 12 },
-        { key: ['A', 'B'], data: 2 },
+        { key: ['A', 'B'], data: 2 }
       ]}
     />
   </div>
@@ -335,70 +335,70 @@ Autosize.tags = ['no-snapshot'];
 const eulerData = [
   {
     key: ['manageengine', 'meraki'],
-    data: 150,
+    data: 150
   },
   {
     key: ['manageengine', 'active directory', 'sophos', 'meraki'],
-    data: 91,
+    data: 91
   },
   {
     key: ['manageengine'],
-    data: 202,
+    data: 202
   },
   {
     key: ['sophos'],
-    data: 219,
+    data: 219
   },
   {
     key: ['manageengine', 'active directory', 'meraki'],
-    data: 95,
+    data: 95
   },
   {
     key: ['manageengine', 'sophos'],
-    data: 175,
+    data: 175
   },
   {
     key: ['manageengine', 'sophos', 'meraki'],
-    data: 140,
+    data: 140
   },
   {
     key: ['active directory', 'sophos'],
-    data: 113,
+    data: 113
   },
   {
     key: ['sophos', 'meraki'],
-    data: 150,
+    data: 150
   },
   {
     key: ['gsuite'],
-    data: 449,
+    data: 449
   },
   {
     key: ['gsuite', 'meraki'],
-    data: 189,
+    data: 189
   },
   {
     key: ['meraki'],
-    data: 850,
+    data: 850
   },
   {
     key: ['manageengine', 'active directory'],
-    data: 109,
+    data: 109
   },
   {
     key: ['active directory'],
-    data: 224,
+    data: 224
   },
   {
     key: ['active directory', 'meraki'],
-    data: 98,
+    data: 98
   },
   {
     key: ['active directory', 'sophos', 'meraki'],
-    data: 94,
+    data: 94
   },
   {
     key: ['manageengine', 'active directory', 'sophos'],
-    data: 103,
-  },
+    data: 103
+  }
 ];

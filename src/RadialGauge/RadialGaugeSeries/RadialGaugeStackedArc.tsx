@@ -5,7 +5,7 @@ import React, { useMemo } from 'react';
 import type {
   ChartNestedDataShape,
   ChartShallowDataShape,
-  ColorSchemeType,
+  ColorSchemeType
 } from '@/common';
 import { ChartTooltip, getColor } from '@/common';
 import type { ArcData } from '@/PieChart';
@@ -61,7 +61,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
 
     function renderArc(
       point: ChartShallowDataShape,
-      index: number,
+      index: number
     ): JSX.Element {
       const value = point.data as number;
       const startArcAngle = prevEndAngle;
@@ -74,7 +74,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
         endAngle: endArcAngle,
         padAngle,
         value,
-        index,
+        index
       };
 
       const color = getColor({
@@ -83,7 +83,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
         point: point,
         index,
         active: [data],
-        isMultiSeries: true,
+        isMultiSeries: true
       });
 
       return (
@@ -112,7 +112,7 @@ export const RadialGaugeStackedArc: FC<Partial<RadialGaugeStackedArcProps>> = ({
     restProps,
     scale,
     startAngle,
-    tooltip,
+    tooltip
   ]);
 
   return <g key={id}>{stackedArcs}</g>;

@@ -5,7 +5,7 @@ import React, {
   useCallback,
   useEffect,
   useMemo,
-  useState,
+  useState
 } from 'react';
 
 import type { ChartDataTypes } from '@/common/data';
@@ -15,7 +15,7 @@ import type { LinearAxisLineProps } from './LinearAxisLine';
 import { LinearAxisLine } from './LinearAxisLine';
 import type {
   LinearAxisTickSeries,
-  LinearAxisTickSeriesProps,
+  LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
 import { LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS } from './LinearAxisTickSeries';
 
@@ -60,21 +60,21 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     scale,
     orientation,
     visibility = 'visible',
-    onDimensionsChange,
+    onDimensionsChange
   } = mergeDefaultProps(LINEAR_AXIS_DEFAULT_PROPS, props);
   const tickSeriesProps = useMemo(
     () =>
       mergeDefaultProps(
         LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
-        tickSeries?.props,
+        tickSeries?.props
       ),
-    [tickSeries?.props],
+    [tickSeries?.props]
   );
 
   const containerRef = createRef<SVGGElement>();
   const [dimensions, setDimensions] = useState<LinearAxisState>({
     height: height,
-    width: width,
+    width: width
   });
 
   const updateDimensions = useCallback(() => {
@@ -158,5 +158,5 @@ export const LINEAR_AXIS_DEFAULT_PROPS = {
   scaled: false,
   roundDomains: false,
   axisLine: <LinearAxisLine />,
-  onDimensionsChange: () => undefined,
+  onDimensionsChange: () => undefined
 };

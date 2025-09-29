@@ -42,7 +42,7 @@ export const FunnelAxis: FC<Partial<FunnelAxisProps>> = ({
   xScale,
   yScale,
   line = <FunnelAxisLine />,
-  label = <FunnelAxisLabel />,
+  label = <FunnelAxisLabel />
 }) => {
   const lines = range(0, data.length);
 

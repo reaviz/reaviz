@@ -23,7 +23,7 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = (props) => {
     strokeGradient,
     scale,
     orientation,
-    className,
+    className
   } = mergeDefaultProps(linearAxisLineDefaultProps, props);
   const id = useId();
   const [range0, range1] = scale.range();
@@ -52,5 +52,5 @@ export const LinearAxisLine: FC<Partial<LinearAxisLineProps>> = (props) => {
 
 export const linearAxisLineDefaultProps = {
   strokeColor: '#8F979F',
-  strokeWidth: 1,
+  strokeWidth: 1
 };

@@ -7,7 +7,7 @@ export type RadialInterpolationTypes = 'linear' | 'smooth';
  * Helper function for interpolation.
  */
 export function interpolate(
-  type: InterpolationTypes | RadialInterpolationTypes,
+  type: InterpolationTypes | RadialInterpolationTypes
 ) {
   if (type === 'smooth') {
     return curveMonotoneX;

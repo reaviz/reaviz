@@ -124,7 +124,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   const onUpdateAxes = useCallback(
     (
       orientation: 'horizontal' | 'vertical',
-      event: LinearAxisDimensionChanged,
+      event: LinearAxisDimensionChanged
     ) => {
       if (orientation === 'horizontal') {
         setXAxisSized(true);
@@ -140,7 +140,7 @@ export const ChartContainer: FC<ChartContainerProps> = ({
         setXOffset(event.width);
       }
     },
-    [],
+    []
   );
 
   const childProps: ChartContainerChildProps = useMemo(
@@ -155,8 +155,8 @@ export const ChartContainer: FC<ChartContainerProps> = ({
         height,
         width,
         yOffset,
-        xOffset,
-      }),
+        xOffset
+      })
     }),
     [
       chartSized,
@@ -168,8 +168,8 @@ export const ChartContainer: FC<ChartContainerProps> = ({
       height,
       width,
       yOffset,
-      xOffset,
-    ],
+      xOffset
+    ]
   );
 
   const translateX = center || centerX ? width / 2 : childProps.xMargin;

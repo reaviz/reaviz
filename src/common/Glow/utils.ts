@@ -9,7 +9,7 @@ export interface generateGlowStylesInput {
 
 export const generateGlowStyles = ({
   glow,
-  colorSchemeColor,
+  colorSchemeColor
 }: generateGlowStylesInput) => {
   if (!glow) return {};
 
@@ -18,7 +18,7 @@ export const generateGlowStyles = ({
     y = 0,
     blur = 5,
     color = colorSchemeColor || 'rgb(255, 255, 255, 0.25)',
-    opacity = 1,
+    opacity = 1
   } = glow;
 
   color = chroma(color).alpha(opacity).css();

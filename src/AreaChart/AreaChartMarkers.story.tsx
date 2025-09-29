@@ -19,8 +19,8 @@ export default {
     RadialAreaSeries,
     RadialArea,
     RadialGradient,
-    RadialValueMarker,
-  },
+    RadialValueMarker
+  }
 };
 
 export const LinearValueMarkers = () => (
@@ -35,7 +35,7 @@ export const LinearValueMarkers = () => (
         colorScheme="cybertron"
         valueMarkers={[
           <LinearValueMarker key={12} value={12} color="#D740BE" />,
-          <LinearValueMarker key={6} value={6} color="#F8A340" />,
+          <LinearValueMarker key={6} value={6} color="#F8A340" />
         ]}
       />
     }
@@ -64,7 +64,7 @@ export const VerticalLinearValueMarkers = () => (
             value={multiDateData[0].data[2].key}
             color="#F8A340"
             direction="vertical"
-          />,
+          />
         ]}
       />
     }
@@ -86,7 +86,7 @@ export const RadialValueMarkers = () => (
         area={<RadialArea gradient={<RadialGradient />} />}
         valueMarkers={[
           <RadialValueMarker key={12} value={12} color="#D740BE" />,
-          <RadialValueMarker key={6} value={6} color="#F8A340" />,
+          <RadialValueMarker key={6} value={6} color="#F8A340" />
         ]}
       />
     }

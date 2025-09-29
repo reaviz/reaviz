@@ -4,7 +4,7 @@ import {
   largeSignalChartData,
   medSignalChartData,
   signalStageData,
-  singleDateData,
+  singleDateData
 } from 'reaviz-data-utils';
 
 import {
@@ -18,13 +18,13 @@ import {
   LinearYAxisTickSeries,
   ScatterPlot,
   ScatterPoint,
-  ScatterSeries,
+  ScatterSeries
 } from '../src/index';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Scatter Plot/Dark/Large',
-  component: ScatterPlot,
+  component: ScatterPlot
 };
 
 export const Minimal = () => {
@@ -584,7 +584,7 @@ export const Symbols = () => {
                       points="225,10 100,210 350,210"
                       transform={`scale(${0.1}) translate(-220, -50)`}
                       style={{
-                        fill: '#4C86FF',
+                        fill: '#4C86FF'
                       }}
                     />
                   </g>
@@ -836,7 +836,7 @@ export const Categorical = () => {
               'Execution',
               'Defense Evasion',
               'Exfiltration',
-              'C2',
+              'C2'
             ]}
             tickSeries={
               <LinearYAxisTickSeries line={null} label={null} tickSize={10} />

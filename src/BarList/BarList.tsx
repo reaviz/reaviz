@@ -55,7 +55,7 @@ export const BarList: FC<BarListProps> = ({
   data = [],
   sortDirection = 'desc',
   series = <BarListSeries />,
-  type = 'count',
+  type = 'count'
 }) => {
   const curId = useId(id);
 
@@ -71,8 +71,8 @@ export const BarList: FC<BarListProps> = ({
       data: groupScale(d.data as number),
       metadata: {
         value: d.data,
-        percent: (data.length * (d.data as number)) / 100,
-      },
+        percent: (data.length * (d.data as number)) / 100
+      }
     }));
 
     if (sortDirection === 'asc') {
@@ -91,15 +91,15 @@ export const BarList: FC<BarListProps> = ({
         initial: {
           transition: {
             staggerChildren: 0.05,
-            staggerDirection: -1 as any,
-          },
+            staggerDirection: -1 as any
+          }
         },
         animate: {
           transition: {
             staggerChildren: 0.07,
-            delayChildren: 0.2,
-          },
-        },
+            delayChildren: 0.2
+          }
+        }
       }}
       id={curId}
       className={className}

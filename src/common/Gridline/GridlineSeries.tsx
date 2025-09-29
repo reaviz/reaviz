@@ -7,7 +7,7 @@ import { getMaxTicks, getTicks } from '@/common/utils/ticks';
 import type { LinearAxisProps } from '../Axis';
 import {
   LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS
 } from '../Axis';
 import type { GridlineProps } from './Gridline';
 import { GRID_LINE_DEFAULT_PROPS, Gridline } from './Gridline';
@@ -68,15 +68,15 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   yAxis,
   xAxis,
   height,
-  width,
+  width
 }) => {
   const lineProps = useMemo(
     () => ({ ...GRID_LINE_DEFAULT_PROPS, ...line.props }),
-    [line.props],
+    [line.props]
   );
   const stripeProps = useMemo(
     () => ({ ...GRID_STRIPE_DEFAULT_PROPS, ...(stripe?.props ?? {}) }),
-    [stripe?.props],
+    [stripe?.props]
   );
 
   const shouldRenderY = (direction: 'all' | 'x' | 'y') =>
@@ -87,11 +87,11 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
   const { yAxisGrid, xAxisGrid } = useMemo(() => {
     const xTickSeriesProps = {
       ...LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
-      ...xAxis.tickSeries.props,
+      ...xAxis.tickSeries.props
     };
     const yTickSeriesProps = {
       ...LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-      ...yAxis.tickSeries.props,
+      ...yAxis.tickSeries.props
     };
 
     return {
@@ -100,15 +100,15 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
         yTickSeriesProps.tickValues,
         yAxis.type,
         getMaxTicks(yTickSeriesProps.tickSize, height),
-        yTickSeriesProps.interval,
+        yTickSeriesProps.interval
       ),
       xAxisGrid: getTicks(
         xScale,
         xTickSeriesProps.tickValues,
         xAxis.type,
         getMaxTicks(xTickSeriesProps.tickSize, width),
-        xTickSeriesProps.interval,
-      ),
+        xTickSeriesProps.interval
+      )
     };
   }, [height, width, xAxis, yAxis, yScale, xScale]);
 
@@ -118,7 +118,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
       grid,
       scale,
       direction: 'x' | 'y',
-      type: 'line' | 'stripe',
+      type: 'line' | 'stripe'
     ) => {
       return grid.map((point, index) => (
         <Fragment key={`${type}-${direction}-${index}`}>
@@ -134,7 +134,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
         </Fragment>
       ));
     },
-    [height, width],
+    [height, width]
   );
 
   const renderSeries = useCallback(
@@ -143,7 +143,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
       xAxisGrid,
       element: GridElement,
       direction: 'x' | 'y' | 'all',
-      type: 'line' | 'stripe',
+      type: 'line' | 'stripe'
     ) => {
       return (
         <Fragment>
@@ -154,7 +154,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
         </Fragment>
       );
     },
-    [renderGroup, xScale, yScale],
+    [renderGroup, xScale, yScale]
   );
 
   return (
@@ -167,7 +167,7 @@ export const GridlineSeries: FC<Partial<GridlineSeriesProps>> = ({
           xAxisGrid,
           stripe,
           stripeProps.direction,
-          'stripe',
+          'stripe'
         )}
     </g>
   );

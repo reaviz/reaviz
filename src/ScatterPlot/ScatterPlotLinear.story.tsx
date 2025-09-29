@@ -6,14 +6,14 @@ import {
   medSignalChartData,
   signalChartData,
   signalStageData,
-  signalStages,
+  signalStages
 } from 'reaviz-data-utils';
 import { randomNumber } from 'reaviz-data-utils';
 
 import {
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { schemes } from '@/common/color';
 import { Gridline, GridlineSeries, GridStripe } from '@/common/Gridline';
@@ -27,8 +27,8 @@ export default {
   component: ScatterPlot,
   subcomponents: {
     ScatterSeries,
-    ScatterPoint,
-  },
+    ScatterPoint
+  }
 };
 
 export const Simple = () => (
@@ -91,7 +91,7 @@ export const Performance = () => (
           height: '250px',
           border: 'solid 1px green',
           margin: '25px',
-          display: 'inline-block',
+          display: 'inline-block'
         }}
       >
         <ScatterPlot id={`performance-${i}`} data={medSignalChartData} />
@@ -124,7 +124,7 @@ export const Symbols = () => (
                   style={{
                     fill: 'lime',
                     stroke: 'purple',
-                    strokeWidth: 1.5,
+                    strokeWidth: 1.5
                   }}
                 />
               );

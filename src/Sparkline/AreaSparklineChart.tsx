@@ -8,7 +8,7 @@ import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import type { ChartShallowDataShape } from '@/common/data';
 import { Gradient, GradientStop } from '@/common/Gradient';
@@ -19,7 +19,7 @@ export interface AreaSparklineChartProps extends AreaChartProps {
 }
 
 export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
-  props,
+  props
 ) => (
   <AreaChart
     gridlines={null}
@@ -35,7 +35,7 @@ export const AreaSparklineChart: FC<Partial<AreaSparklineChartProps>> = (
               <Gradient
                 stops={[
                   <GradientStop offset="10%" stopOpacity={0} key="start" />,
-                  <GradientStop offset="80%" stopOpacity={1} key="stop" />,
+                  <GradientStop offset="80%" stopOpacity={1} key="stop" />
                 ]}
               />
             }

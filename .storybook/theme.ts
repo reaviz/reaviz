@@ -18,5 +18,5 @@ export default create({
   barBg: '#11111F',
   appBorderColor: '#1f2937',
   inputBorder: '#1f2937',
-  buttonBorder: '#1f2937',
+  buttonBorder: '#1f2937'
 });

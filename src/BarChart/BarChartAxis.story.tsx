@@ -7,7 +7,7 @@ import {
   LinearXAxisTickSeries,
   LinearYAxis,
   LinearYAxisTickLabel,
-  LinearYAxisTickSeries,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
 import { Gridline, GridlineSeries } from '@/common/Gridline';
@@ -23,7 +23,7 @@ import {
   MarimekkoBarSeries,
   RangeLines,
   StackedBarSeries,
-  StackedNormalizedBarSeries,
+  StackedNormalizedBarSeries
 } from './BarSeries';
 import { StackedBarChart } from './StackedBarChart';
 
@@ -40,8 +40,8 @@ export default {
     Bar,
     BarLabel,
     GuideBar,
-    HistogramBarSeries,
-  },
+    HistogramBarSeries
+  }
 };
 
 export const TopBottomAxis = () => {
@@ -52,16 +52,16 @@ export const TopBottomAxis = () => {
       {
         key: 'Closed',
         data: 0,
-        x: 'Closed',
+        x: 'Closed'
       },
       {
         key: 'Opened',
         data: 0,
-        x: 'Opened',
-      },
+        x: 'Opened'
+      }
     ],
     isMultiSeries: false,
-    isDiverging: true,
+    isDiverging: true
   });
 
   return (
@@ -85,7 +85,7 @@ export const TopBottomAxis = () => {
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.25} key="start" />,
-                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
                   ]}
                 />
               }
@@ -98,16 +98,12 @@ export const TopBottomAxis = () => {
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-                    <GradientStop
-                      offset="90%"
-                      stopOpacity={0.25}
-                      key="start"
-                    />,
+                    <GradientStop offset="90%" stopOpacity={0.25} key="start" />
                   ]}
                 />
               }
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
-            />,
+            />
           ]}
         />
       }
@@ -141,7 +137,7 @@ export const TopBottomAxis = () => {
               label={<LinearYAxisTickLabel padding={20} position="start" />}
             />
           }
-        />,
+        />
       ]}
       yAxis={
         <LinearYAxis
@@ -156,7 +152,7 @@ export const TopBottomAxis = () => {
 };
 
 TopBottomAxis.story = {
-  name: 'Top + Bottom Axis',
+  name: 'Top + Bottom Axis'
 };
 
 export const LeftRightAxis = () => {
@@ -167,16 +163,16 @@ export const LeftRightAxis = () => {
       {
         key: 'Closed',
         data: 0,
-        y: 'Closed',
+        y: 'Closed'
       },
       {
         key: 'Opened',
         data: 0,
-        y: 'Opened',
-      },
+        y: 'Opened'
+      }
     ],
     isMultiSeries: false,
-    isDiverging: true,
+    isDiverging: true
   });
 
   return (
@@ -199,7 +195,7 @@ export const LeftRightAxis = () => {
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.25} key="start" />,
-                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />,
+                    <GradientStop offset="90%" stopOpacity={0.7} key="stop" />
                   ]}
                 />
               }
@@ -212,16 +208,12 @@ export const LeftRightAxis = () => {
                 <Gradient
                   stops={[
                     <GradientStop offset="5%" stopOpacity={0.7} key="stop" />,
-                    <GradientStop
-                      offset="90%"
-                      stopOpacity={0.25}
-                      key="start"
-                    />,
+                    <GradientStop offset="90%" stopOpacity={0.25} key="start" />
                   ]}
                 />
               }
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
-            />,
+            />
           ]}
         />
       }
@@ -271,12 +263,12 @@ export const LeftRightAxis = () => {
               }
             />
           }
-        />,
+        />
       ]}
     />
   );
 };
 
 LeftRightAxis.story = {
-  name: 'Left + Right Axis',
+  name: 'Left + Right Axis'
 };

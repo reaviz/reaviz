@@ -10,8 +10,8 @@ export default {
   title: 'Utils/Mask',
   component: Mask,
   subcomponents: {
-    Stripes,
-  },
+    Stripes
+  }
 };
 
 export const Simple = () => (

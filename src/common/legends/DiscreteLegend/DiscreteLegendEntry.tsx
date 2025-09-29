@@ -71,13 +71,13 @@ export const DiscreteLegendEntry: FC<Partial<DiscreteLegendEntryProps>> = ({
   orientation = 'horizontal',
   onMouseEnter,
   onMouseLeave,
-  onClick,
+  onClick
 }) => (
   <div
     title={title}
     className={classNames(css.entry, className, {
       [css.vertical]: orientation === 'vertical',
-      [css.horizontal]: orientation === 'horizontal',
+      [css.horizontal]: orientation === 'horizontal'
     })}
     onClick={onClick}
     onMouseEnter={onMouseEnter}

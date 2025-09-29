@@ -38,7 +38,7 @@ interface TooltipTemplateProps {
 export const TooltipTemplate: FC<TooltipTemplateProps> = ({
   value,
   color,
-  className,
+  className
 }) => {
   if (!value) {
     return null;
@@ -83,7 +83,7 @@ export const TooltipTemplate: FC<TooltipTemplateProps> = ({
           <Fragment>
             {formatValue(
               (value as SingleTooltipValue).value ||
-                (value as SingleTooltipValue).y,
+                (value as SingleTooltipValue).y
             )}
           </Fragment>
         )}

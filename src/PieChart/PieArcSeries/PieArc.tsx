@@ -103,14 +103,14 @@ export const PieArc: FC<PieArcProps> = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip = <ChartTooltip />,
+  tooltip = <ChartTooltip />
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
   const d = useInterpolate({ animated, arc, data });
   const [active, setActive] = useState<boolean>(false);
   const fill = useMemo(
     () => (active ? chroma(color).brighten(0.5) : color),
-    [color, active],
+    [color, active]
   );
 
   const { pointerOut, pointerOver } = useHoverIntent({
@@ -119,7 +119,7 @@ export const PieArc: FC<PieArcProps> = ({
         setActive(true);
         onMouseEnter?.({
           value: data.data,
-          nativeEvent: event as any,
+          nativeEvent: event as any
         });
       }
     },
@@ -128,10 +128,10 @@ export const PieArc: FC<PieArcProps> = ({
         setActive(false);
         onMouseLeave?.({
           value: data.data,
-          nativeEvent: event as any,
+          nativeEvent: event as any
         });
       }
-    },
+    }
   });
 
   const internalFill = useMemo(() => {
@@ -144,7 +144,7 @@ export const PieArc: FC<PieArcProps> = ({
 
   const tooltipData = useMemo(
     () => ({ y: data.data.data, x: data.data.key }),
-    [data],
+    [data]
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
@@ -166,7 +166,7 @@ export const PieArc: FC<PieArcProps> = ({
           if (!disabled) {
             onClick?.({
               value: data.data,
-              nativeEvent: event,
+              nativeEvent: event
             });
           }
         }}

@@ -8,7 +8,7 @@ import {
   mediumCategoryData,
   multiCategory,
   multiCategorySmallBlock,
-  multiCategoryXSmallBlock,
+  multiCategoryXSmallBlock
 } from 'reaviz-data-utils';
 
 import {
@@ -29,13 +29,13 @@ import {
   LinearYAxisTickSeries,
   RangeLines,
   StackedBarChart,
-  StackedBarSeries,
+  StackedBarSeries
 } from '../src/index';
 
 export default {
   tags: ['snapshot'],
   title: 'Blocks/Bar Chart/Light/Medium',
-  component: BarChart,
+  component: BarChart
 };
 
 export const SimpleMulti = () => {
@@ -392,7 +392,7 @@ export const SimpleMultiGradient = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -668,7 +668,7 @@ export const Simple = () => {
               '#A840E8',
               '#105EFF',
               '#0D4ED2',
-              '#40D3F4',
+              '#40D3F4'
             ]}
             padding={0.2}
           />
@@ -936,7 +936,7 @@ export const SimpleGradient = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -949,7 +949,7 @@ export const SimpleGradient = () => {
               '#A840E8',
               '#105EFF',
               '#0D4ED2',
-              '#40D3F4',
+              '#40D3F4'
             ]}
             padding={0.2}
           />
@@ -1224,7 +1224,7 @@ export const Labels = () => {
               '#00DCC2',
               '#9152EE',
               '#6C18E8',
-              '#6C18E8',
+              '#6C18E8'
             ]}
             padding={0.2}
           />
@@ -1492,7 +1492,7 @@ export const LabelsGradient = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -1506,7 +1506,7 @@ export const LabelsGradient = () => {
               '#00DCC2',
               '#9152EE',
               '#6C18E8',
-              '#6C18E8',
+              '#6C18E8'
             ]}
             padding={0.2}
           />
@@ -2036,7 +2036,7 @@ export const WaterfallGradient = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -2571,7 +2571,7 @@ export const LargeDatasetGradient = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -3105,7 +3105,7 @@ export const StackedGradient = () => {
                   <Gradient
                     stops={[
                       <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                      <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={1} />
                     ]}
                   />
                 }
@@ -3616,7 +3616,7 @@ export const StackedDivergingGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={1} />,
-                        <GradientStop key={2} offset="90%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="90%" stopOpacity={0} />
                       ]}
                     />
                   }
@@ -3628,11 +3628,11 @@ export const StackedDivergingGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="10%" stopOpacity={0} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
-                />,
+                />
               ]}
               colorScheme={['#E84045', '#E00007']}
             />
@@ -3899,7 +3899,7 @@ export const HorizontalStackedDivergingGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0.7} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={0} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={0} />
                       ]}
                     />
                   }
@@ -3913,16 +3913,12 @@ export const HorizontalStackedDivergingGradient = () => {
                       key={2}
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                        <GradientStop
-                          key={2}
-                          offset="100%"
-                          stopOpacity={0.7}
-                        />,
+                        <GradientStop key={2} offset="100%" stopOpacity={0.7} />
                       ]}
                     />
                   }
                   rangeLines={<RangeLines position="top" strokeWidth={4} />}
-                />,
+                />
               ]}
               colorScheme={['#E00007', '#F8A446']}
             />
@@ -4457,7 +4453,7 @@ export const HorizontalSimpleGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -4998,7 +4994,7 @@ export const HorizontalWaterfallGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -5545,7 +5541,7 @@ export const HorizontalLabelsGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -6095,7 +6091,7 @@ export const HorizontalSimpleMultiGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }
@@ -6635,7 +6631,7 @@ export const HorizontalStackedGradient = () => {
                     <Gradient
                       stops={[
                         <GradientStop key={1} offset="0%" stopOpacity={0} />,
-                        <GradientStop key={2} offset="100%" stopOpacity={1} />,
+                        <GradientStop key={2} offset="100%" stopOpacity={1} />
                       ]}
                     />
                   }

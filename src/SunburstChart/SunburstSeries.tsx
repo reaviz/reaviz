@@ -56,7 +56,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
   colorScheme = 'cybertron',
   animated = true,
   arc = <SunburstArc />,
-  label = <SunburstArcLabel />,
+  label = <SunburstArcLabel />
 }) => {
   const getFill = useCallback(
     (item: any, index: number) => {
@@ -70,7 +70,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         data,
         colorScheme,
         point: parent.data,
-        index,
+        index
       });
 
       // darken the color based on the depth
@@ -80,7 +80,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
 
       return fill;
     },
-    [colorScheme, data],
+    [colorScheme, data]
   );
 
   const renderItem = useCallback(
@@ -119,7 +119,7 @@ export const SunburstSeries: FC<Partial<SunburstSeriesProps>> = ({
         </Fragment>
       );
     },
-    [animated, arc, getFill, id, label, radius],
+    [animated, arc, getFill, id, label, radius]
   );
 
   return <>{data.map(renderItem)}</>;

@@ -4,7 +4,7 @@ import React from 'react';
 import {
   RadialAxis,
   RadialAxisArcLine,
-  RadialAxisArcSeries,
+  RadialAxisArcSeries
 } from '@/common/Axis/RadialAxis';
 import type { ChartNestedDataShape } from '@/common/data';
 import type { RadialAreaChartProps } from '@/RadialAreaChart';
@@ -12,7 +12,7 @@ import { RadialAreaChart } from '@/RadialAreaChart';
 
 import {
   RADAR_CHART_SERIES_DEFAULT_PROPS,
-  RadarChartSeries,
+  RadarChartSeries
 } from './RadarChartSeries';
 
 export interface RadarChartProps extends RadialAreaChartProps {

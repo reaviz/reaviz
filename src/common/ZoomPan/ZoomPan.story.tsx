@@ -11,11 +11,11 @@ import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
 import {
   LinearXAxis,
   LinearXAxisTickLabel,
-  LinearXAxisTickSeries,
+  LinearXAxisTickSeries
 } from '../Axis';
 
 export default {
-  title: 'Utils/Zoom Pan',
+  title: 'Utils/Zoom Pan'
 };
 
 export const Line = () => (
@@ -99,13 +99,13 @@ export const GenericZoomPanWModifier = () => (
 );
 
 GenericZoomPanWModifier.story = {
-  name: 'Generic Zoom Pan w/ Modifier',
+  name: 'Generic Zoom Pan w/ Modifier'
 };
 
 export const DefaultZoom = () => {
   const [domain, setDomain] = React.useState<[any, any]>([
     largeDateData[5].key,
-    largeDateData[25].key,
+    largeDateData[25].key
   ]);
   return (
     <LineChart
@@ -142,7 +142,7 @@ const GenericZoomPanStory: FC<any> = ({ modifier }) => {
   const [{ scale, x, y }, setState] = React.useState({
     scale: 1,
     x: 0,
-    y: 0,
+    y: 0
   });
 
   return (
