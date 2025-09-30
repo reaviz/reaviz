@@ -127,6 +127,7 @@ export const MultiSeries = () => (
     height={450}
     width={450}
     innerRadius={50}
+    data={multiCategory}
     series={
       <RadialBarSeries
         type="grouped"

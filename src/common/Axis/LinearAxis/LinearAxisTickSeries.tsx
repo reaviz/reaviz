@@ -235,7 +235,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               text={tick.text}
               fullText={tick.fullText}
               onClick={(e) => onClick?.(e, tick)}
-              clickable={typeof onClick === 'function'}
+              clickable={!!onClick}
               half={tick.half}
               angle={angle}
               orientation={orientation}
