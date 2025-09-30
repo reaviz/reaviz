@@ -44,6 +44,7 @@ export const Simple = () => (
       <RadialAxis
         ticks={
           <RadialAxisTickSeries
+            onClick={(e, t) => console.log('kk')}
             tick={
               <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
             }

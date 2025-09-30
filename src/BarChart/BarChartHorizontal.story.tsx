@@ -40,10 +40,7 @@ export default {
   }
 };
 
-const data = categoryData.map((x) => ({
-  ...x,
-  key_url: `https://example.com/${x?.key}`
-}));
+const data = categoryData;
 
 export const Simple = () => (
   <BarChart
@@ -54,17 +51,7 @@ export const Simple = () => (
     yAxis={
       <LinearYAxis
         type="category"
-        tickSeries={
-          <LinearYAxisTickSeries
-            tickSize={20}
-            onClick={(e, t) => {
-              const { key_url } = data.find((datum) => datum.key === t.tick);
-              if (key_url) {
-                window.open(key_url);
-              }
-            }}
-          />
-        }
+        tickSeries={<LinearYAxisTickSeries tickSize={20} />}
       />
     }
     series={

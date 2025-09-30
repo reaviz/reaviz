@@ -54,3 +54,30 @@ export const Simple = () => (
     </svg>
   </div>
 );
+
+export const OnclickLabels = () => (
+  <div style={{ padding: '10px' }}>
+    <svg width={600} height={600}>
+      <g transform="translate(300, 300)">
+        <RadialAxis
+          height={600}
+          width={600}
+          innerRadius={10}
+          xScale={xScale}
+          ticks={
+            <RadialAxisTickSeries
+              onClick={(e, t) => window.alert(t.toTimeString().split(' ')[0])}
+              tick={
+                <RadialAxisTick
+                  label={
+                    <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
+                  }
+                />
+              }
+            />
+          }
+        />
+      </g>
+    </svg>
+  </div>
+);
