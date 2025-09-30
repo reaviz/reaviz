@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "16.0.10",
+  "version": "16.0.11",
   "description": "Data Visualization using React",
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",

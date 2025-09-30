@@ -1,3 +1,6 @@
+# 16.0.11 - 9/30/25
+- [fix] Fix PieArc path initial value
+
 # 16.0.10 - 9/26/25
 - [fix] Add ellipsisLength property to LinearAxisTickSeries component #301
 

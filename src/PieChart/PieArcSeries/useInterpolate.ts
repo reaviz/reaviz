@@ -17,7 +17,7 @@ export const useInterpolate = ({ data, animated, arc }) => {
   }, [data, animated]);
 
   const prevData = useRef(exit);
-  const d = useMotionValue(exit);
+  const d = useMotionValue('');
   const spring = useSpring(0, DEFAULT_TRANSITION);
 
   useEffect(() => {
