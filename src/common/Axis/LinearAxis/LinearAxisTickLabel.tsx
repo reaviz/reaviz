@@ -1,10 +1,11 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, MouseEventHandler, ReactElement } from 'react';
 import {
   LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
 import { mergeDefaultProps } from '@/common/utils';
+import classNames from 'classnames';
 
 export interface LinearAxisTickLabelProps {
   text: string;
@@ -27,6 +28,8 @@ export interface LinearAxisTickLabelProps {
   position: 'start' | 'end' | 'center';
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
   className?: string;
+  onClick?: (e) => void;
+  clickable: boolean;
 }
 
 export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
@@ -48,7 +51,9 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     rotation,
     padding,
     formatTooltip,
-    align
+    align,
+    onClick,
+    clickable
   } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
 
   function getAlign() {
@@ -173,9 +178,17 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       transform={`translate(${x}, ${y})`}
       fontSize={fontSize}
       fontFamily={fontFamily}
+      onClick={(e) => clickable && onClick(e)}
     >
       <title>{titleHover}</title>
-      <text {...textPosition} fill={fill} className={className}>
+      <text
+        {...textPosition}
+        fill={fill}
+        className={classNames(
+          className,
+          clickable && 'cursor-pointer hover:underline hover:brightness-125'
+        )}
+      >
         {text}
       </text>
     </g>

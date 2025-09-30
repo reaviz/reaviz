@@ -37,6 +37,7 @@ export interface LinearAxisTickSeriesProps {
    * The maximum length for ellipsizing tick labels. Default is 18.
    */
   ellipsisLength?: number;
+  onClick?: (e, t) => void;
 }
 
 interface ProcessedTick {
@@ -47,6 +48,8 @@ interface ProcessedTick {
   height: number;
   width: number;
   half: 'start' | 'end' | 'center';
+  index: number;
+  tick: string;
 }
 
 export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
@@ -63,7 +66,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     interval,
     line,
     axis,
-    ellipsisLength
+    ellipsisLength,
+    onClick
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
@@ -136,7 +140,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     const format = labelFormatFn;
     const midpoint = dimension / 2;
 
-    return ticks.map((tick) => {
+    return ticks.map((tick, index) => {
       const fullText = format(tick);
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
@@ -154,6 +158,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         ...size,
         text,
         fullText,
+        tick,
+        index,
         half:
           scaledTick === midpoint
             ? 'center'
@@ -225,6 +231,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               element={label}
               text={tick.text}
               fullText={tick.fullText}
+              onClick={(e) => onClick?.(e, tick)}
+              clickable={!!onClick}
               half={tick.half}
               angle={angle}
               orientation={orientation}
