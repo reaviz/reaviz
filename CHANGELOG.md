@@ -1,3 +1,6 @@
+# 16.0.12 - 9/30/25
+- [fix] Fix generating key for ScatterSeries points #302
+
 # 16.0.11 - 9/30/25
 - [fix] Fix PieArc path initial value
 
