@@ -44,7 +44,6 @@ export const Simple = () => (
       <RadialAxis
         ticks={
           <RadialAxisTickSeries
-            onClick={(e, t) => console.log('kk')}
             tick={
               <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
             }
@@ -122,21 +121,12 @@ export const LiveUpdating = () => {
   );
 };
 
-const withurls = multiCategory.map((x) => ({
-  ...x,
-  key_url: x.key,
-  data: x.data.map((y, i) => ({
-    ...y
-  }))
-}));
-
 export const MultiSeries = () => (
   <RadialBarChart
     id="multi-series"
     height={450}
     width={450}
     innerRadius={50}
-    data={withurls}
     series={
       <RadialBarSeries
         type="grouped"
