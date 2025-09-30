@@ -10,7 +10,7 @@ const config: StorybookConfig = {
   addons: [
     '@storybook/addon-storysource',
     '@storybook/addon-essentials',
-    '@storybook/addon-docs',
+    '@storybook/addon-docs'
   ],
 
   framework: {

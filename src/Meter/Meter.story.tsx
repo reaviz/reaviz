@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Meter } from './Meter';
 
 export default {

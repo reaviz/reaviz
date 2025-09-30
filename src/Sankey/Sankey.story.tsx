@@ -1,15 +1,16 @@
-import { useState } from 'react';
 import chroma from 'chroma-js';
-import { Sankey } from './Sankey';
-import { SankeyNode } from './SankeyNode';
-import { SankeyLink } from './SankeyLink';
+import { useState } from 'react';
 import {
-  sankeyNodes,
   sankeyLinks,
-  simpleSankeyNodes,
-  simpleSankeyLinks
+  sankeyNodes,
+  simpleSankeyLinks,
+  simpleSankeyNodes
 } from 'reaviz-data-utils';
+
+import { Sankey } from './Sankey';
 import { SankeyLabel } from './SankeyLabel';
+import { SankeyLink } from './SankeyLink';
+import { SankeyNode } from './SankeyNode';
 
 const colorScheme = chroma
   .scale([

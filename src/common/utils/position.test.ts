@@ -1,9 +1,10 @@
-import { scaleBand, scaleLinear, scaleTime } from 'd3-scale';
+import { scaleBand, scaleLinear } from 'd3-scale';
+import { describe, test } from 'vitest';
+
 import {
   getClosestBandScalePoint,
   getClosestContinousScalePoint
 } from './position';
-import { describe, test } from 'vitest';
 
 describe('getClosestContinousScalePoint', () => {
   const data = [{ x: 4 }, { x: 6 }];

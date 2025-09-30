@@ -1,30 +1,27 @@
-import React from 'react';
-import { BarChart } from './BarChart';
-import { StackedBarChart } from './StackedBarChart';
-import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
-import {
-  multiCategory,
-  binnedDateData,
-  binnedDatePositiveOnly,
-  binnedDateNegativeOnly
-} from 'reaviz-data-utils';
 import chroma from 'chroma-js';
-import {
-  BarSeries,
-  Bar,
-  StackedBarSeries,
-  StackedNormalizedBarSeries,
-  RangeLines
-} from './BarSeries';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+import React from 'react';
+import { binnedDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
+import { BarChart } from './BarChart';
+import {
+  Bar,
+  BarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries
+} from './BarSeries';
+import { StackedBarChart } from './StackedBarChart';
+import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
 
 export default {
   tags: ['snapshot'],

@@ -1,18 +1,18 @@
-import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { scaleLinear } from 'd3-scale';
-import {
-  ChartContainer,
-  ChartContextProps,
-  ChartProps
-} from '@/common/containers';
-import { ChartDataShape } from '@/common/data';
-import {
-  RadialGaugeSeries,
+import { useId } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { cloneElement, useCallback } from 'react';
+
+import type { ChartContextProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type { ChartDataShape } from '@/common/data';
+
+import type {
   RadialGaugeSeriesProps,
   StackedRadialGaugeSeries,
   StackedRadialGaugeSeriesProps
 } from './RadialGaugeSeries';
-import { useId } from 'reablocks';
+import { RadialGaugeSeries } from './RadialGaugeSeries';
 
 export interface RadialGaugeProps extends ChartProps {
   /**

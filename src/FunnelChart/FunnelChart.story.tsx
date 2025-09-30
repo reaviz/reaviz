@@ -1,13 +1,15 @@
+import type { Meta, StoryFn } from '@storybook/react';
+
 import { TooltipArea } from '@/common';
-import { StoryFn, Meta } from '@storybook/react';
+
+import type { FunnelChartProps } from './';
 import {
-  FunnelSeries,
-  FunnelChart,
-  FunnelChartProps,
+  FunnelArc,
   FunnelAxis,
   FunnelAxisLabel,
   FunnelAxisLine,
-  FunnelArc
+  FunnelChart,
+  FunnelSeries
 } from './';
 
 export default {

@@ -1,16 +1,16 @@
 import React from 'react';
-
 import {
-  singleDateData,
   medDateData,
+  singleDateData,
   smallDateData,
   sonarData,
   sonarDataEmpties
 } from 'reaviz-data-utils';
-import { SparklineChart } from './SparklineChart';
+
 import { AreaSparklineChart } from './AreaSparklineChart';
 import { BarSparklineChart } from './BarSparklineChart';
 import { SonarChart } from './SonarChart';
+import { SparklineChart } from './SparklineChart';
 
 export default {
   tags: ['snapshot'],

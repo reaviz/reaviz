@@ -1,18 +1,14 @@
-import React, {
-  FC,
-  ReactElement,
-  useRef,
-  useState,
-  Fragment,
-  useMemo
-} from 'react';
-import { motion } from 'motion/react';
 import chroma from 'chroma-js';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel } from '@/common';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
 
 export interface TreeMapRectProps {
   /**

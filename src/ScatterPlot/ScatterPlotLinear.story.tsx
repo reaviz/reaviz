@@ -1,23 +1,25 @@
+import { range } from 'd3-array';
+import { symbol, symbolStar } from 'd3-shape';
 import React, { Fragment, useState } from 'react';
-import { ScatterPlot } from './ScatterPlot';
 import {
-  signalChartData,
   largeSignalChartData,
   medSignalChartData,
+  signalChartData,
   signalStageData,
   signalStages
 } from 'reaviz-data-utils';
 import { randomNumber } from 'reaviz-data-utils';
-import { range } from 'd3-array';
-import { GridlineSeries, Gridline, GridStripe } from '@/common/Gridline';
-import { ScatterSeries, ScatterPoint } from './ScatterSeries';
+
 import {
   LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
-import { symbolStar, symbol } from 'd3-shape';
 import { schemes } from '@/common/color';
+import { Gridline, GridlineSeries, GridStripe } from '@/common/Gridline';
+
+import { ScatterPlot } from './ScatterPlot';
+import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
 export default {
   tags: ['snapshot'],

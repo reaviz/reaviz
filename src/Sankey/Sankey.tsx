@@ -1,34 +1,27 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useState
-} from 'react';
 import {
   sankey,
-  sankeyLeft,
-  sankeyRight,
   sankeyCenter,
-  sankeyJustify
+  sankeyJustify,
+  sankeyLeft,
+  sankeyRight
 } from 'd3-sankey';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers/ChartContainer';
 import { CloneElement, useId } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
 
-import { getColor, ColorSchemeType } from '@/common/color';
-import { SankeyNodeProps, SankeyNode } from './SankeyNode';
-import { SankeyLinkProps, SankeyLink } from './SankeyLink';
-import {
-  SankeyNodeExtra,
-  SankeyLinkExtra,
-  LABEL_PADDING_PERCENT
-} from './utils';
-import { SankeyLabelPosition } from './SankeyLabel';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
+  ChartContainerChildProps,
+  ChartProps
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+
+import type { SankeyLabelPosition } from './SankeyLabel';
+import type { SankeyLink, SankeyLinkProps } from './SankeyLink';
+import type { SankeyNode, SankeyNodeProps } from './SankeyNode';
+import type { SankeyLinkExtra, SankeyNodeExtra } from './utils';
+import { LABEL_PADDING_PERCENT } from './utils';
 
 const JUSTIFICATION = {
   justify: sankeyJustify,

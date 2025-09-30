@@ -1,28 +1,21 @@
-import React, {
-  FC,
-  Fragment,
-  MouseEvent,
-  ReactElement,
-  useMemo,
-  useState,
-  useRef,
-  ReactNode
-} from 'react';
 import { offset } from '@floating-ui/dom';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { CloneElement } from 'reablocks';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
 import chroma from 'chroma-js';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { ChartInternalShallowDataShape } from '@/common/data';
-import css from './HeatmapCell.module.css';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import { CloneElement } from 'reablocks';
+import type { FC, MouseEvent, ReactElement, ReactNode } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel } from '@/common';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+
+import css from './HeatmapCell.module.css';
 
 export type HeatmapCellProps = {
   /**

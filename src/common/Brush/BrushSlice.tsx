@@ -1,6 +1,9 @@
-import React, { Fragment, useState, FC, useCallback } from 'react';
-import { BrushHandle } from './BrushHandle';
+import type { FC } from 'react';
+import React, { Fragment, useCallback, useState } from 'react';
+
 import { Move } from '@/common/Gestures/Move';
+
+import { BrushHandle } from './BrushHandle';
 import css from './BrushSlice.module.css';
 
 export interface BrushChangeEvent {

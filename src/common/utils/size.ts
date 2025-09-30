@@ -19,7 +19,10 @@ export const calculateDimensions = (
 
   // If we are in a Node.js environment
   if (typeof window === 'undefined' || typeof document === 'undefined') {
-    const height = parseInt(typeof fontSize === 'string' ? fontSize : fontSize.toString(), 10);
+    const height = parseInt(
+      typeof fontSize === 'string' ? fontSize : fontSize.toString(),
+      10
+    );
     const dimensions = {
       height,
       // 8 is an approximation of the width of a character
@@ -36,7 +39,8 @@ export const calculateDimensions = (
 
   // Set up the style so the size can be measured
   element.style.fontFamily = fontFamily;
-  element.style.fontSize = typeof fontSize === 'string' ? fontSize : `${fontSize}px`;
+  element.style.fontSize =
+    typeof fontSize === 'string' ? fontSize : `${fontSize}px`;
   element.style.position = 'absolute';
   element.style.left = '-9999px';
   element.style.whiteSpace = 'nowrap';

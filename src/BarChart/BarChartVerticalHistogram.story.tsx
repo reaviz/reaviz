@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
-import { medDateData, histogramNumberData } from 'reaviz-data-utils';
 import { timeWeek } from 'd3-time';
+import React, { useState } from 'react';
+import { histogramNumberData, medDateData } from 'reaviz-data-utils';
+
+import {
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries
+} from '@/common/Axis/LinearAxis';
+
 import {
   Bar,
   BarLabel,
@@ -12,12 +20,6 @@ import {
   StackedBarSeries,
   StackedNormalizedBarSeries
 } from './BarSeries';
-import {
-  LinearXAxis,
-  LinearXAxisTickSeries,
-  LinearYAxis,
-  LinearYAxisTickSeries
-} from '@/common/Axis/LinearAxis';
 import { HistogramBarChart } from './HistogramBarChart';
 
 export default {

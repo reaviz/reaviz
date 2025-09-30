@@ -1,15 +1,17 @@
-import React, { FC, JSX, useMemo } from 'react';
 import { arc } from 'd3-shape';
+import type { FC, JSX } from 'react';
+import React, { useMemo } from 'react';
 
-import {
+import type {
   ChartNestedDataShape,
   ChartShallowDataShape,
-  ChartTooltip,
-  ColorSchemeType,
-  getColor
+  ColorSchemeType
 } from '@/common';
-import { ArcData, PieArc } from '@/PieChart';
-import { RadialGaugeArcProps } from './RadialGaugeArc';
+import { ChartTooltip, getColor } from '@/common';
+import type { ArcData } from '@/PieChart';
+import { PieArc } from '@/PieChart';
+
+import type { RadialGaugeArcProps } from './RadialGaugeArc';
 
 export type RadialGaugeStackedArcProps = Omit<
   RadialGaugeArcProps,

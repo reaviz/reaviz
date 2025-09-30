@@ -1,13 +1,17 @@
-import React, { FC, ReactElement, useCallback } from 'react';
 import { hierarchy, pack } from 'd3-hierarchy';
 import { CloneElement } from 'reablocks';
-import {
-  ChartContainer,
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type {
   ChartContainerChildProps,
   ChartProps,
   ChartShallowDataShape
 } from '@/common';
-import { BubbleSeries, BubbleSeriesProps } from './BubbleSeries';
+import { ChartContainer } from '@/common';
+
+import type { BubbleSeriesProps } from './BubbleSeries';
+import { BubbleSeries } from './BubbleSeries';
 
 export interface BubbleChartProps extends ChartProps {
   /**

@@ -1,6 +1,9 @@
-import React, { Fragment, FC } from 'react';
+import type { FC } from 'react';
+import React, { Fragment } from 'react';
+
+import type { ChartInternalDataTypes } from '@/common/data';
 import { formatValue } from '@/common/utils/formatting';
-import { ChartInternalDataTypes } from '@/common/data';
+
 import css from './TooltipTemplate.module.css';
 
 interface SingleTooltipValue {

@@ -1,38 +1,29 @@
-import React, {
-  Fragment,
-  ReactElement,
-  FC,
-  useCallback,
-  useState,
-  useMemo
-} from 'react';
-import {
-  POINT_SERIES_DEFAULT_PROPS,
-  PointSeries,
-  PointSeriesProps
-} from './PointSeries';
-import { Area, AreaProps } from './Area';
-import { MarkLine, MarkLineProps } from '@/common/MarkLine';
-import {
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
+import { identifier } from 'safe-identifier';
+
+import type { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
 } from '@/common/data';
-import { CloneElement } from 'reablocks';
-import {
-  TooltipArea,
-  TooltipAreaProps,
-  TooltipAreaEvent
-} from '@/common/Tooltip';
-import { Line, LineProps } from './Line';
-import { InterpolationTypes } from '@/common/utils/interpolation';
-import { getColor, ColorSchemeType } from '@/common/color';
-import { identifier } from 'safe-identifier';
-import {
-  LinearValueMarker,
-  LinearValueMarkerProps,
-  mergeDefaultProps
-} from '@/common';
+import type { MarkLineProps } from '@/common/MarkLine';
+import { MarkLine } from '@/common/MarkLine';
+import type { TooltipAreaEvent, TooltipAreaProps } from '@/common/Tooltip';
+import { TooltipArea } from '@/common/Tooltip';
+import type { InterpolationTypes } from '@/common/utils/interpolation';
+
+import type { AreaProps } from './Area';
+import { Area } from './Area';
+import type { LineProps } from './Line';
+import { Line } from './Line';
+import type { PointSeriesProps } from './PointSeries';
+import { POINT_SERIES_DEFAULT_PROPS, PointSeries } from './PointSeries';
 
 export type AreaChartTypes =
   | 'standard'

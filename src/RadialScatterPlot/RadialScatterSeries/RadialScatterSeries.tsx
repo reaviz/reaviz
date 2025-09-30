@@ -1,21 +1,22 @@
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
 import React, {
-  useState,
-  FC,
   Fragment,
-  ReactElement,
-  useEffect,
   useCallback,
-  useMemo
+  useEffect,
+  useMemo,
+  useState
 } from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
+import { identifier } from 'safe-identifier';
+
+import type { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+
+import type { RadialScatterPointProps } from './RadialScatterPoint';
 import {
   RADIAL_SCATTER_POINT_DEFAULT_PROPS,
-  RadialScatterPoint,
-  RadialScatterPointProps
+  RadialScatterPoint
 } from './RadialScatterPoint';
-import { CloneElement } from 'reablocks';
-import { identifier } from 'safe-identifier';
-import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export interface RadialScatterSeriesProps {
   /**
@@ -114,7 +115,7 @@ export const RadialScatterSeries: FC<Partial<RadialScatterSeriesProps>> = ({
         dataId = d.id;
       } else {
         console.warn(
-          'No \'id\' property provided for scatter point; provide one via \'id\'.'
+          "No 'id' property provided for scatter point; provide one via 'id'."
         );
       }
 

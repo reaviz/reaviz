@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import { motion, useSpring, useMotionValue } from 'motion/react';
 import { interpolate } from 'd3-interpolate';
+import { motion, useMotionValue, useSpring } from 'motion/react';
+import React, { useEffect } from 'react';
+
 import { DEFAULT_TRANSITION } from './config';
 
-export const MotionPath = ({ custom, transition, ...rest }) => {
+export const MotionPath = ({ custom, transition, ...rest }: any) => {
   const d = useMotionValue(custom.exit.d);
   const spring = useSpring(0, DEFAULT_TRANSITION);
 

@@ -1,19 +1,19 @@
-import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers';
-import {
-  ChartShallowDataShape,
-  buildBarStackData,
-  ChartInternalNestedDataShape,
-  buildShallowChartData,
-  ChartNestedDataShape
-} from '@/common/data';
-import { getXScale, getYScale } from '@/common/scales';
 import { CloneElement } from 'reablocks';
-import { LinearGaugeSeries, LinearGaugeSeriesProps } from './LinearGaugeSeries';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type {
+  ChartInternalNestedDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape
+} from '@/common/data';
+import { buildBarStackData, buildShallowChartData } from '@/common/data';
+import { getXScale, getYScale } from '@/common/scales';
+
+import type { LinearGaugeSeriesProps } from './LinearGaugeSeries';
+import { LinearGaugeSeries } from './LinearGaugeSeries';
 
 export interface LinearGaugeProps extends ChartProps {
   /**

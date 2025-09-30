@@ -1,9 +1,12 @@
-import React, { Fragment, useRef, useState, FC, useMemo } from 'react';
-import { Tooltip } from 'reablocks';
-import { motion } from 'motion/react';
-import css from './MapMarker.module.css';
-import { tooltipTheme } from '@/common';
 import { offset } from '@floating-ui/dom';
+import { motion } from 'motion/react';
+import { Tooltip } from 'reablocks';
+import type { FC } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
+import { tooltipTheme } from '@/common';
+
+import css from './MapMarker.module.css';
 
 export interface MapMarkerProps {
   coordinates: [number, number];

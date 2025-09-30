@@ -1,4 +1,7 @@
+import { motion } from 'motion/react';
 import React from 'react';
+import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
+
 import {
   Count,
   FunnelArc,
@@ -9,9 +12,6 @@ import {
   FunnelSeries,
   TooltipArea
 } from '../src/index';
-import { motion } from 'motion/react';
-
-import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
 
 export default {
   tags: ['snapshot'],

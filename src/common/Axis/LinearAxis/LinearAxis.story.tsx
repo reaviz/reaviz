@@ -1,19 +1,21 @@
 import React from 'react';
-import { largeSignalChartData, categoryData } from 'reaviz-data-utils';
-import { ScatterPlot } from '@/ScatterPlot';
+import { categoryData, largeSignalChartData } from 'reaviz-data-utils';
+
 import { BarChart } from '@/BarChart';
-import {
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLine,
-  LinearYAxisTickLabel
-} from './LinearYAxis';
+import { ScatterPlot } from '@/ScatterPlot';
+
 import {
   LinearXAxis,
-  LinearXAxisTickSeries,
+  LinearXAxisTickLabel,
   LinearXAxisTickLine,
-  LinearXAxisTickLabel
+  LinearXAxisTickSeries
 } from './LinearXAxis';
+import {
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickLine,
+  LinearYAxisTickSeries
+} from './LinearYAxis';
 
 export default {
   title: 'Utils/Axis/Linear'

@@ -1,6 +1,8 @@
 import bigInt from 'big-integer';
+
 import { bigIntegerToLocaleString } from '@/common/utils/bigint';
-import {
+
+import type {
   ChartDataTypes,
   ChartInternalDataTypes,
   ChartNestedDataShape,

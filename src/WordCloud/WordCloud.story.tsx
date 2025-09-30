@@ -1,7 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { WordCloud } from './WordCloud';
-import { ChartShallowDataShape } from '../common/data';
+import type { Meta, StoryObj } from '@storybook/react';
+
 import { schemes } from '../common/color';
+import type { ChartShallowDataShape } from '../common/data';
+import { WordCloud } from './WordCloud';
 
 const meta: Meta<typeof WordCloud> = {
   title: 'Charts/Word Cloud',

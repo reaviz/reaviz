@@ -1,19 +1,17 @@
-import React, { Fragment, ReactElement, FC, useCallback } from 'react';
-import {
-  geoNaturalEarth1,
-  geoPath,
-  GeoProjection,
-  GeoPath,
-  geoMercator
-} from 'd3-geo';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
-import { MapMarkerProps, MapMarker } from './MapMarker';
+import type { GeoPath, GeoProjection } from 'd3-geo';
+import { geoMercator, geoNaturalEarth1, geoPath } from 'd3-geo';
 import { motion } from 'motion/react';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback } from 'react';
+
+import type {
+  ChartContainerChildProps,
+  ChartProps
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+
+import type { MapMarker, MapMarkerProps } from './MapMarker';
 
 type MarkerElement = ReactElement<MapMarkerProps, typeof MapMarker>;
 

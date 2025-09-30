@@ -1,26 +1,22 @@
-import React, {
-  PropsWithChildren,
-  FC,
-  useRef,
-  useState,
-  useEffect,
-  useCallback
-} from 'react';
+import type { FC, PropsWithChildren } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import isEqual from 'react-fast-compare';
 import {
-  Pan,
-  PanMoveEvent,
-  PanStartEvent,
-  PanEndEvent,
-  PanCancelEvent
-} from '@/common/Gestures/Pan';
-import { Zoom, ZoomEvent } from '@/common/Gestures/Zoom';
-import {
-  identity,
-  fromObject,
   fromDefinition,
+  fromObject,
+  identity,
   transform
 } from 'transformation-matrix';
-import isEqual from 'react-fast-compare';
+
+import type {
+  PanCancelEvent,
+  PanEndEvent,
+  PanMoveEvent,
+  PanStartEvent
+} from '@/common/Gestures/Pan';
+import { Pan } from '@/common/Gestures/Pan';
+import type { ZoomEvent } from '@/common/Gestures/Zoom';
+import { Zoom } from '@/common/Gestures/Zoom';
 
 export interface ZoomPanEvent {
   scale: number;

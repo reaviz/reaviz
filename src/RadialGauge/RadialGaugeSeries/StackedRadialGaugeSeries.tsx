@@ -1,25 +1,26 @@
-import React, { cloneElement, FC, ReactElement, useCallback } from 'react';
 import { range } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-import {
+import type { FC, ReactElement } from 'react';
+import React, { cloneElement, useCallback } from 'react';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
   ChartDataShape,
   ChartNestedDataShape,
   ChartShallowDataShape
 } from '@/common/data';
-import { ColorSchemeType, getColor } from '@/common/color';
-import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
-import {
-  RadialGaugeStackedArc,
-  RadialGaugeStackedArcProps
-} from './RadialGaugeStackedArc';
-import {
-  StackedRadialGaugeValueLabel,
-  StackedRadialGaugeValueLabelProps
-} from './StackedRadialGaugeValueLabel';
-import {
+
+import type { RadialGaugeArcProps } from './RadialGaugeArc';
+import { RadialGaugeArc } from './RadialGaugeArc';
+import type { RadialGaugeStackedArcProps } from './RadialGaugeStackedArc';
+import { RadialGaugeStackedArc } from './RadialGaugeStackedArc';
+import type {
   StackedRadialGaugeDescriptionLabel,
   StackedRadialGaugeDescriptionLabelProps
 } from './StackedRadialGaugeDescriptionLabel';
+import type { StackedRadialGaugeValueLabelProps } from './StackedRadialGaugeValueLabel';
+import { StackedRadialGaugeValueLabel } from './StackedRadialGaugeValueLabel';
 
 export interface StackedRadialGaugeSeriesProps {
   /**
@@ -209,14 +210,14 @@ export const StackedRadialGaugeSeries: FC<
           {isChartNestedData(point)
             ? renderStackedArc(outerRadius, innerRadius, point, index)
             : renderInnerArc(
-              outerRadius,
-              innerRadius,
-              scale?.[index]?.(point.data) ??
+                outerRadius,
+                innerRadius,
+                scale?.[index]?.(point.data) ??
                   scale?.[0]?.(point.data) ??
                   scale(point.data),
-              point,
-              index
-            )}
+                point,
+                index
+              )}
         </g>
       );
     },

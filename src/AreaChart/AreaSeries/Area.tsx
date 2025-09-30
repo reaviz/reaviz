@@ -1,20 +1,24 @@
-import React, { Fragment, useMemo, ReactElement, FC, useCallback } from 'react';
 import { area } from 'd3-shape';
-import { Gradient, GradientProps } from '@/common/Gradient';
-import { Mask, MaskProps } from '@/common/Mask';
-import { interpolate, InterpolationTypes } from '@/common/utils/interpolation';
-import {
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { Glow } from '@/common';
+import { mergeDefaultProps, roundDecimals } from '@/common';
+import type {
   ChartInternalDataShape,
   ChartInternalShallowDataShape
 } from '@/common/data';
-import { CloneElement } from 'reablocks';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
-import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { Glow, mergeDefaultProps, roundDecimals } from '@/common';
+import type { GradientProps } from '@/common/Gradient';
+import { Gradient } from '@/common/Gradient';
+import type { MaskProps } from '@/common/Mask';
+import { Mask } from '@/common/Mask';
+import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+import type { InterpolationTypes } from '@/common/utils/interpolation';
+import { interpolate } from '@/common/utils/interpolation';
 
 export interface AreaProps extends PropFunctionTypes {
   /**

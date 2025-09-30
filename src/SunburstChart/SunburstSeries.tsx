@@ -1,10 +1,16 @@
-import React, { FC, Fragment, ReactElement, useCallback } from 'react';
-import { ColorSchemeType, getColor } from '@/common/color';
 import chroma from 'chroma-js';
-import { SunburstArc, SunburstArcProps } from './SunburstArc';
-import { SunburstArcLabel, SunburstArcLabelProps } from './SunburstArcLabel';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback } from 'react';
 import { identifier } from 'safe-identifier';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+
+import type { SunburstArcProps } from './SunburstArc';
+import { SunburstArc } from './SunburstArc';
+import type { SunburstArcLabelProps } from './SunburstArcLabel';
+import { SunburstArcLabel } from './SunburstArcLabel';
 
 export interface SunburstSeriesProps {
   /**

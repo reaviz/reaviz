@@ -1,16 +1,17 @@
-import React, { MouseEvent, useCallback, useMemo } from 'react';
-import { FUNNEL_ARC_DEFAULT_PROPS, FunnelArc } from './FunnelArc';
-import { CloneElement } from 'reablocks';
-import { FunnelArcProps } from './FunnelArc';
-import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
-import {
-  ChartShallowDataShape,
-  getClosestContinousScalePoint,
-  getPositionForTarget
-} from '@/common';
-import { ClickEvent } from '@/common/types';
-import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
+import { scaleLinear } from 'd3-scale';
+import { CloneElement } from 'reablocks';
+import type { MouseEvent } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
+import type { ChartShallowDataShape } from '@/common';
+import { getClosestContinousScalePoint, getPositionForTarget } from '@/common';
+import type { ClickEvent } from '@/common/types';
+
+import type { FunnelArcProps } from './FunnelArc';
+import { FUNNEL_ARC_DEFAULT_PROPS, FunnelArc } from './FunnelArc';
+import type { FunnelAxisProps } from './FunnelAxis';
+import { FunnelAxis } from './FunnelAxis';
 
 export interface FunnelSeriesProps {
   /**

@@ -1,6 +1,7 @@
 import React from 'react';
-import { SequentialLegend } from './SequentialLegend';
 import { heatmapSimpleData } from 'reaviz-data-utils';
+
+import { SequentialLegend } from './SequentialLegend';
 
 export default {
   title: 'Utils/Legend/Sequential/Vertical'

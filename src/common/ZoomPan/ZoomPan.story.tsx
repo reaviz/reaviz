@@ -1,14 +1,17 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 import { largeDateData, largeSignalChartData } from 'reaviz-data-utils';
-import { LineChart, LineSeries } from '@/LineChart';
-import { ChartZoomPan, ZoomPan } from '@/common/ZoomPan';
-import { ScatterPlot, ScatterSeries, ScatterPoint } from '@/ScatterPlot';
+
 import { AreaChart, AreaSeries } from '@/AreaChart';
 import { TooltipArea } from '@/common/Tooltip';
+import { ChartZoomPan, ZoomPan } from '@/common/ZoomPan';
+import { LineChart, LineSeries } from '@/LineChart';
+import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
+
 import {
   LinearXAxis,
-  LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries
 } from '../Axis';
 
 export default {

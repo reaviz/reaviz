@@ -1,21 +1,23 @@
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
 import React, {
-  FC,
-  ReactElement,
   createRef,
   useCallback,
   useEffect,
   useMemo,
   useState
 } from 'react';
-import { ChartDataTypes } from '@/common/data';
-import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
-import {
-  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
+
+import type { ChartDataTypes } from '@/common/data';
+import { mergeDefaultProps } from '@/common/utils';
+
+import type { LinearAxisLineProps } from './LinearAxisLine';
+import { LinearAxisLine } from './LinearAxisLine';
+import type {
   LinearAxisTickSeries,
   LinearAxisTickSeriesProps
 } from './LinearAxisTickSeries';
-import { mergeDefaultProps } from '@/common/utils';
+import { LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS } from './LinearAxisTickSeries';
 
 export interface LinearAxisDimensionChanged {
   height?: number;

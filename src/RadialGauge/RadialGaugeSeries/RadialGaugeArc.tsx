@@ -1,9 +1,13 @@
-import React, { FC, ReactElement, useMemo } from 'react';
 import { arc } from 'd3-shape';
-import { PieArc, ArcData } from '@/PieChart';
-import { ChartShallowDataShape } from '@/common/data';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { Gradient, GradientProps } from '@/common/Gradient';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartShallowDataShape } from '@/common/data';
+import type { Gradient, GradientProps } from '@/common/Gradient';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import type { ArcData } from '@/PieChart';
+import { PieArc } from '@/PieChart';
 
 export interface RadialGaugeArcProps {
   /**

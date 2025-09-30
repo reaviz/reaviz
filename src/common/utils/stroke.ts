@@ -1,4 +1,4 @@
-import { ChartInternalShallowDataShape } from '@/common/data';
+import type { ChartInternalShallowDataShape } from '@/common/data';
 
 /**
  * Calculates whether the stroke should be shown.

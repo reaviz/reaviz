@@ -1,14 +1,17 @@
-import React, { FC } from 'react';
-import { AreaChart, AreaChartProps, AreaSeries, Area, Line } from '@/AreaChart';
-import { ChartShallowDataShape } from '@/common/data';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { AreaChartProps } from '@/AreaChart';
+import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
 import { PointSeries } from '@/AreaChart';
 import {
-  LinearYAxisTickSeries,
-  LinearYAxis,
   LinearXAxis,
-  LinearXAxisTickSeries
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
-import { GradientStop, Gradient } from '@/common/Gradient';
+import type { ChartShallowDataShape } from '@/common/data';
+import { Gradient, GradientStop } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 
 export interface AreaSparklineChartProps extends AreaChartProps {

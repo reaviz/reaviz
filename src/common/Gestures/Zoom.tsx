@@ -1,18 +1,21 @@
-import React, { Component, PropsWithChildren, createRef } from 'react';
-import { toggleTextSelection } from '@/common/utils/selection';
+import type { PropsWithChildren } from 'react';
+import React, { Component, createRef } from 'react';
+import {
+  applyToPoint,
+  inverse,
+  scale,
+  smoothMatrix,
+  transform,
+  translate
+} from 'transformation-matrix';
+
 import {
   getPointFromMatrix,
   isZoomLevelGoingOutOfBounds
 } from '@/common/utils/position';
+import { toggleTextSelection } from '@/common/utils/selection';
+
 import { getTouchPoints } from './pinchUtils';
-import {
-  scale,
-  smoothMatrix,
-  transform,
-  translate,
-  applyToPoint,
-  inverse
-} from 'transformation-matrix';
 
 interface ZoomGestureProps extends PropsWithChildren {
   disabled?: boolean;

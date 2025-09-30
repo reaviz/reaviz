@@ -1,16 +1,18 @@
 import { stack, stackOffsetExpand } from 'd3-shape';
-import {
-  ChartNestedDataShape,
-  ChartInternalDataShape,
-  ChartInternalNestedDataShape,
-  ChartInternalShallowDataShape
-} from './types';
+
+import { uniqueBy } from '@/common/utils/array';
+
 import {
   getMaxBigIntegerForNested,
   normalizeValue,
   normalizeValueForFormatting
 } from './bigInteger';
-import { uniqueBy } from '@/common/utils/array';
+import type {
+  ChartInternalDataShape,
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape,
+  ChartNestedDataShape
+} from './types';
 
 /**
  * Given a dataset like:

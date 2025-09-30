@@ -1,14 +1,14 @@
-import { BubbleChart } from './BubbleChart';
-import { ChartShallowDataShape } from '@/common/data';
-import { BubbleSeries } from './BubbleSeries';
 import { range } from 'd3-array';
-import { randomNumber } from 'reaviz-data-utils';
-import { Bubble } from './Bubble';
+import { icons } from 'reaviz-data-utils';
+
+import type { ChartShallowDataShape } from '@/common/data';
 import { Gradient as GradientBG } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
-import { BubbleLabel } from './BubbleLabel';
 
-import { icons } from 'reaviz-data-utils';
+import { Bubble } from './Bubble';
+import { BubbleChart } from './BubbleChart';
+import { BubbleLabel } from './BubbleLabel';
+import { BubbleSeries } from './BubbleSeries';
 
 const simpleData: ChartShallowDataShape[] = [
   { key: 'AWS', data: 100 },

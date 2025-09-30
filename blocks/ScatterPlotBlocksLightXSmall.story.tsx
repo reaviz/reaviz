@@ -1,8 +1,15 @@
 import React from 'react';
 import {
-  GridStripe,
+  largeSignalChartData,
+  medSignalChartData,
+  signalStageData,
+  singleDateData
+} from 'reaviz-data-utils';
+
+import {
   Gridline,
   GridlineSeries,
+  GridStripe,
   LinearXAxis,
   LinearXAxisTickLabel,
   LinearXAxisTickSeries,
@@ -12,13 +19,6 @@ import {
   ScatterPoint,
   ScatterSeries
 } from '../src/index';
-
-import {
-  largeSignalChartData,
-  medSignalChartData,
-  signalStageData,
-  singleDateData
-} from 'reaviz-data-utils';
 
 export default {
   tags: ['snapshot'],

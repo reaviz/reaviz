@@ -1,6 +1,17 @@
-import React, { Fragment, useState } from 'react';
 import chroma from 'chroma-js';
-import { multiDateData, singleDateData, randomNumber } from 'reaviz-data-utils';
+import React, { Fragment, useState } from 'react';
+import { multiDateData, randomNumber, singleDateData } from 'reaviz-data-utils';
+
+import {
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
+} from '@/common/Axis/LinearAxis';
+import { getXScale, getYScale } from '@/common/scales';
+
 import { AreaChart } from './AreaChart';
 import {
   Area,
@@ -10,15 +21,6 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
-import {
-  LinearXAxis,
-  LinearXAxisTickSeries,
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
-  LinearXAxisTickLabel
-} from '@/common/Axis/LinearAxis';
-import { getYScale, getXScale } from '@/common/scales';
 
 export default {
   tags: ['snapshot'],
@@ -75,6 +77,7 @@ export const TopBottomAxis = () => {
       }
       secondaryAxis={[
         <LinearXAxis
+          key="category"
           type="category"
           orientation="horizontal"
           position="start"
@@ -136,6 +139,7 @@ export const LeftRightAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           position="start"
           axisLine={null}

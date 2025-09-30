@@ -1,7 +1,8 @@
-import Reac from 'react';
 import { singleDateData } from 'reaviz-data-utils';
+
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
 import { AreaChart } from './AreaChart';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
 import {
   Area,
   AreaSeries,

@@ -1,4 +1,4 @@
-import { TimeInterval } from 'd3-time';
+import type { TimeInterval } from 'd3-time';
 
 const ONE_DAY = 60 * 60 * 24;
 const DURATION_TICK_STEPS = [

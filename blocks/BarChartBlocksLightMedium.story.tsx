@@ -1,5 +1,16 @@
-import React from 'react';
 import { motion } from 'motion/react';
+import React from 'react';
+import {
+  binnedDateData,
+  categoryData,
+  labelsData,
+  largeCategoryData2,
+  mediumCategoryData,
+  multiCategory,
+  multiCategorySmallBlock,
+  multiCategoryXSmallBlock
+} from 'reaviz-data-utils';
+
 import {
   Bar,
   BarChart,
@@ -20,17 +31,6 @@ import {
   StackedBarChart,
   StackedBarSeries
 } from '../src/index';
-
-import {
-  binnedDateData,
-  categoryData,
-  labelsData,
-  largeCategoryData2,
-  mediumCategoryData,
-  multiCategory,
-  multiCategorySmallBlock,
-  multiCategoryXSmallBlock
-} from 'reaviz-data-utils';
 
 export default {
   tags: ['snapshot'],

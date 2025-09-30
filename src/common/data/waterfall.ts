@@ -1,5 +1,6 @@
-import { ChartShallowDataShape } from './types';
-import { Direction, buildShallowChartData } from './builder';
+import type { Direction } from './builder';
+import { buildShallowChartData } from './builder';
+import type { ChartShallowDataShape } from './types';
 
 export const buildWaterfall = (
   series: ChartShallowDataShape[],

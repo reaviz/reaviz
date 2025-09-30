@@ -1,5 +1,6 @@
-import { medDateData, multiCategory } from 'reaviz-data-utils';
 import { format } from 'date-fns';
+import { medDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   RadialAxis,
   RadialAxisArcSeries,
@@ -9,6 +10,7 @@ import {
   RadialAxisTickSeries
 } from '@/common/Axis/RadialAxis';
 import { schemes } from '@/common/color';
+
 import { RadialBarChart } from './RadialBarChart';
 import { RadialBar, RadialBarSeries, RadialGuideBar } from './RadialBarSeries';
 

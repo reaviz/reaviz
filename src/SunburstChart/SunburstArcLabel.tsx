@@ -1,7 +1,9 @@
-import React, { FC, useMemo } from 'react';
-import invert from 'invert-color';
 import ellipsize from 'ellipsize';
+import invert from 'invert-color';
 import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface SunburstArcLabelProps {

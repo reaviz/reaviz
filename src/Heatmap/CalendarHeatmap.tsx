@@ -1,25 +1,23 @@
-import React, { FC, useCallback, useMemo } from 'react';
-import { ChartShallowDataShape } from '@/common/data';
-import { Heatmap, HeatmapProps } from './Heatmap';
+import type { FC } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
 import {
   LinearXAxis,
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearXAxisTickSeries,
-  LinearYAxisTickLabel,
   LinearXAxisTickLabel,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
-  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
 } from '@/common/Axis';
-import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
+import type { ChartShallowDataShape } from '@/common/data';
 import { ChartTooltip } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
-import {
-  buildDataScales,
-  CalendarView,
-  addWeeksToDate,
-  weekDays
-} from './calendarUtils';
+
+import type { CalendarView } from './calendarUtils';
+import { addWeeksToDate, buildDataScales, weekDays } from './calendarUtils';
+import type { HeatmapProps } from './Heatmap';
+import { Heatmap } from './Heatmap';
+import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 
 export interface CalendarHeatmapProps extends Omit<HeatmapProps, 'data'> {
   /**

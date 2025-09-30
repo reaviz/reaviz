@@ -1,6 +1,8 @@
-import React, { Fragment, FC, ReactElement } from 'react';
-import { GradientProps, Gradient } from '@/common/Gradient';
 import { CloneElement, useId } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment } from 'react';
+
+import type { Gradient, GradientProps } from '@/common/Gradient';
 import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisLineProps {

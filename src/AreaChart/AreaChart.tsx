@@ -1,52 +1,52 @@
+import classNames from 'classnames';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
 import React, {
   Fragment,
-  useEffect,
-  ReactElement,
-  FC,
   useCallback,
+  useEffect,
   useMemo,
-  useState,
-  useRef
+  useRef,
+  useState
 } from 'react';
-import classNames from 'classnames';
-import {
-  AREA_SERIES_DEFAULT_PROPS,
-  AreaSeries,
-  AreaSeriesProps
-} from './AreaSeries';
+
+import { mergeDefaultProps } from '@/common';
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis/LinearAxis';
 import {
   isAxisVisible,
-  LinearAxisProps,
-  LinearXAxis,
-  LinearYAxis,
-  LinearAxis,
+  LINEAR_X_AXIS_DEFAULT_PROPS,
   LINEAR_Y_AXIS_DEFAULT_PROPS,
-  LINEAR_X_AXIS_DEFAULT_PROPS
+  LinearXAxis,
+  LinearYAxis
 } from '@/common/Axis/LinearAxis';
-import { getXScale, getYScale } from '@/common/scales';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
-import {
-  ChartDataShape,
-  ChartNestedDataShape,
-  buildStackData,
-  buildShallowChartData,
-  ChartShallowDataShape,
-  buildNestedChartData
-} from '@/common/data';
-import css from './AreaChart.module.css';
-import { ChartBrushProps, ChartBrush } from '@/common/Brush';
-import {
-  ZoomPanChangeEvent,
-  ChartZoomPanProps,
-  ChartZoomPan
-} from '@/common/ZoomPan';
-import {
+import type { ChartBrush, ChartBrushProps } from '@/common/Brush';
+import type {
   ChartContainerChildProps,
-  ChartContainer,
   ChartProps
 } from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
-import { mergeDefaultProps } from '@/common';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type {
+  ChartDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape
+} from '@/common/data';
+import {
+  buildNestedChartData,
+  buildShallowChartData,
+  buildStackData
+} from '@/common/data';
+import type { GridlineSeriesProps } from '@/common/Gridline';
+import { GridlineSeries } from '@/common/Gridline';
+import { getXScale, getYScale } from '@/common/scales';
+import type {
+  ChartZoomPan,
+  ChartZoomPanProps,
+  ZoomPanChangeEvent
+} from '@/common/ZoomPan';
+
+import css from './AreaChart.module.css';
+import type { AreaSeriesProps } from './AreaSeries';
+import { AREA_SERIES_DEFAULT_PROPS, AreaSeries } from './AreaSeries';
 
 export interface AreaChartProps extends ChartProps {
   /**

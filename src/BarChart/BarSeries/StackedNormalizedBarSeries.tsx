@@ -1,15 +1,16 @@
-import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import {
-  BarSeriesProps,
-  BarSeries,
-  BAR_SERIES_DEFAULT_PROPS
-} from './BarSeries';
-import { Bar, BAR_DEFAULT_PROPS, BarType } from './Bar';
-import { RangeLines } from './RangeLines';
-import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
-import { formatValue } from '@/common/utils/formatting';
+import type { FC } from 'react';
+import React from 'react';
+
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { ChartTooltip, TooltipArea, TooltipTemplate } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+
+import type { BarType } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS } from './Bar';
+import type { BarSeriesProps } from './BarSeries';
+import { BAR_SERIES_DEFAULT_PROPS, BarSeries } from './BarSeries';
+import { RangeLines } from './RangeLines';
 
 export const StackedNormalizedBarSeries: FC<Partial<BarSeriesProps>> = (
   props

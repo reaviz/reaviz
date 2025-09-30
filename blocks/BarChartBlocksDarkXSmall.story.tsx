@@ -1,5 +1,15 @@
 import React from 'react';
 import {
+  binnedDateData,
+  categoryData,
+  labelsData,
+  largeCategoryData2,
+  mediumCategoryData,
+  multiCategory,
+  multiCategoryXSmallBlock
+} from 'reaviz-data-utils';
+
+import {
   Bar,
   BarChart,
   BarLabel,
@@ -18,16 +28,6 @@ import {
   StackedBarChart,
   StackedBarSeries
 } from '../src/index';
-
-import {
-  binnedDateData,
-  categoryData,
-  labelsData,
-  largeCategoryData2,
-  mediumCategoryData,
-  multiCategory,
-  multiCategoryXSmallBlock
-} from 'reaviz-data-utils';
 
 export default {
   tags: ['snapshot'],

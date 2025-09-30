@@ -1,5 +1,18 @@
-import React from 'react';
 import { motion } from 'motion/react';
+import React from 'react';
+import {
+  areaCircleSeriesV1Data,
+  areaMultiSeriesInterpolationSmoothData,
+  areaMultiSeriesInterpolationStepData,
+  areaMultiSeriesSimpleData,
+  areaSingleSeriesInterpolationSmoothData,
+  areaSingleSeriesInterpolationStepData,
+  areaSingleSeriesNonZeroData,
+  areaSingleSeriesSimpleData,
+  mediumMultiDateData,
+  multiDateData
+} from 'reaviz-data-utils';
+
 import {
   Area,
   AreaChart,
@@ -21,19 +34,6 @@ import {
   StackedNormalizedAreaChart,
   StackedNormalizedAreaSeries
 } from '../src/index';
-
-import {
-  areaCircleSeriesV1Data,
-  areaMultiSeriesInterpolationSmoothData,
-  areaMultiSeriesInterpolationStepData,
-  areaMultiSeriesSimpleData,
-  areaSingleSeriesInterpolationSmoothData,
-  areaSingleSeriesInterpolationStepData,
-  areaSingleSeriesNonZeroData,
-  areaSingleSeriesSimpleData,
-  mediumMultiDateData,
-  multiDateData
-} from 'reaviz-data-utils';
 
 export default {
   tags: ['snapshot'],

@@ -1,12 +1,13 @@
-import React, { FC } from 'react';
-import {
-  RadialAreaSeries,
+import type { FC } from 'react';
+import React from 'react';
+
+import type {
   RadialAreaSeriesProps,
-  RadialPointSeries,
   RadialPointSeriesType
 } from '@/RadialAreaChart';
+import { RadialAreaSeries, RadialPointSeries } from '@/RadialAreaChart';
 
-export interface RadarChartSeriesProps extends RadialAreaSeriesProps {}
+export type RadarChartSeriesProps = RadialAreaSeriesProps;
 
 export const RadarChartSeries: FC<Partial<RadarChartSeriesProps>> = (props) => (
   <RadialAreaSeries {...RADAR_CHART_SERIES_DEFAULT_PROPS} {...props} />

@@ -1,5 +1,6 @@
 import { line } from 'd3-shape';
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface RadialAxisArcLineProps {
   /**

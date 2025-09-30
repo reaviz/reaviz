@@ -1,9 +1,11 @@
+import { symbol, symbolStar } from 'd3-shape';
 import React from 'react';
 import { singleDateData } from 'reaviz-data-utils';
-import { LineChart } from './LineChart';
+
 import { PointSeries } from '@/AreaChart';
 import { ScatterPoint } from '@/ScatterPlot';
-import { symbol, symbolStar } from 'd3-shape';
+
+import { LineChart } from './LineChart';
 import { LineSeries } from './LineSeries';
 
 export default {

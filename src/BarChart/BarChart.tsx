@@ -1,49 +1,51 @@
-import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
 import classNames from 'classnames';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import { mergeDefaultProps } from '@/common';
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis';
 import {
   isAxisVisible,
-  LinearAxisProps,
-  LinearXAxisTickSeries,
-  LinearXAxis,
-  LinearYAxis,
-  LinearAxis,
   LINEAR_X_AXIS_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_DEFAULT_PROPS
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearYAxis
 } from '@/common/Axis';
-import {
-  BAR_SERIES_DEFAULT_PROPS,
-  BarSeries,
-  BarSeriesProps
-} from './BarSeries';
-import {
-  ChartDataShape,
-  ChartNestedDataShape,
-  buildBarStackData,
-  buildMarimekkoData,
-  buildWaterfall,
-  ChartShallowDataShape,
-  buildNestedChartData,
-  buildShallowChartData,
-  StackTypes
-} from '@/common/data';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
-import {
-  getXScale,
-  getYScale,
-  getGroupScale,
-  getInnerScale,
-  getMarimekkoScale,
-  getMarimekkoGroupScale
-} from '@/common/scales';
-import { ChartBrushProps, ChartBrush } from '@/common/Brush';
-import css from './BarChart.module.css';
-import {
-  ChartContainer,
+import type { ChartBrush, ChartBrushProps } from '@/common/Brush';
+import type {
   ChartContainerChildProps,
   ChartProps
 } from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
-import { mergeDefaultProps } from '@/common';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type {
+  ChartDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape,
+  StackTypes
+} from '@/common/data';
+import {
+  buildBarStackData,
+  buildMarimekkoData,
+  buildNestedChartData,
+  buildShallowChartData,
+  buildWaterfall
+} from '@/common/data';
+import type { GridlineSeriesProps } from '@/common/Gridline';
+import { GridlineSeries } from '@/common/Gridline';
+import {
+  getGroupScale,
+  getInnerScale,
+  getMarimekkoGroupScale,
+  getMarimekkoScale,
+  getXScale,
+  getYScale
+} from '@/common/scales';
+
+import css from './BarChart.module.css';
+import type { BarSeriesProps } from './BarSeries';
+import { BAR_SERIES_DEFAULT_PROPS, BarSeries } from './BarSeries';
 
 export interface BarChartProps extends ChartProps {
   /**

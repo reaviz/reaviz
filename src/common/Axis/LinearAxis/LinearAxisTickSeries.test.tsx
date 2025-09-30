@@ -1,5 +1,6 @@
+import { describe, expect, it } from 'vitest';
+
 import { LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS } from './LinearAxisTickSeries';
-import { describe, it, expect } from 'vitest';
 
 describe('LinearAxisTickSeries', () => {
   it('should have ellipsisLength default prop set to 18', () => {

@@ -1,11 +1,11 @@
-import React, { ReactNode, ReactElement, FC } from 'react';
 import classNames from 'classnames';
-import {
-  DiscreteLegendSymbol,
-  DiscreteLegendSymbolProps
-} from './DiscreteLegendSymbol';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement, ReactNode } from 'react';
+import React from 'react';
+
 import css from './DiscreteLegendEntry.module.css';
+import type { DiscreteLegendSymbolProps } from './DiscreteLegendSymbol';
+import { DiscreteLegendSymbol } from './DiscreteLegendSymbol';
 
 export interface DiscreteLegendEntryProps {
   /**

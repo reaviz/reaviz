@@ -1,31 +1,35 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useState,
-  useRef,
-  useCallback,
-  useMemo,
-  forwardRef,
-  useImperativeHandle
-} from 'react';
 import { flip, offset } from '@floating-ui/dom';
-import { TooltipAreaEvent } from './TooltipAreaEvent';
-import {
+import { scaleLinear } from 'd3-scale';
+import { arc } from 'd3-shape';
+import type { Placement } from 'reablocks';
+import { CloneElement } from 'reablocks';
+import type { ReactElement } from 'react';
+import React, {
+  forwardRef,
+  Fragment,
+  useCallback,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState
+} from 'react';
+import isEqual from 'react-fast-compare';
+
+import type {
   ChartDataTypes,
   ChartInternalDataShape,
-  ChartInternalShallowDataShape,
-  ChartInternalNestedDataShape
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape
 } from '@/common/data';
 import {
-  getPositionForTarget,
+  getClosestBandScalePoint,
   getClosestContinousScalePoint,
-  getClosestBandScalePoint
+  getPositionForTarget
 } from '@/common/utils/position';
-import { CloneElement, Placement } from 'reablocks';
-import { ChartTooltip, ChartTooltipProps } from './ChartTooltip';
-import { arc } from 'd3-shape';
-import isEqual from 'react-fast-compare';
-import { scaleLinear } from 'd3-scale';
+
+import type { ChartTooltipProps } from './ChartTooltip';
+import { ChartTooltip } from './ChartTooltip';
+import type { TooltipAreaEvent } from './TooltipAreaEvent';
 
 export interface TooltipAreaProps {
   /**
@@ -136,7 +140,6 @@ interface TooltipDataShape {
   i?: number;
 }
 
-// eslint-disable-next-line react/display-name
 export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
   (
     {
@@ -295,7 +298,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
         // Get the path container element
         // Note that we are using the dummy 'full' circle for alignment
-        let target = fullCircleref.current || ref.current;
+        const target = fullCircleref.current || ref.current;
 
         const { y, x } = getPositionForTarget({
           target: target,

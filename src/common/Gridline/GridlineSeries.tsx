@@ -1,17 +1,18 @@
-import React, { Fragment, ReactElement, FC, useMemo, useCallback } from 'react';
-import { Gridline, GRID_LINE_DEFAULT_PROPS, GridlineProps } from './Gridline';
-import { getTicks, getMaxTicks } from '@/common/utils/ticks';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import { getMaxTicks, getTicks } from '@/common/utils/ticks';
+
+import type { LinearAxisProps } from '../Axis';
 import {
   LINEAR_X_AXIS_TICK_SERIES_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS,
-  LinearAxisProps
+  LINEAR_Y_AXIS_TICK_SERIES_DEFAULT_PROPS
 } from '../Axis';
-import {
-  GridStripeProps,
-  GridStripe,
-  GRID_STRIPE_DEFAULT_PROPS
-} from './GridStripe';
+import type { GridlineProps } from './Gridline';
+import { GRID_LINE_DEFAULT_PROPS, Gridline } from './Gridline';
+import type { GridStripe, GridStripeProps } from './GridStripe';
+import { GRID_STRIPE_DEFAULT_PROPS } from './GridStripe';
 
 type GridLineElement = ReactElement<GridlineProps, typeof Gridline>;
 type GridStripeElement = ReactElement<GridStripeProps, typeof GridStripe>;

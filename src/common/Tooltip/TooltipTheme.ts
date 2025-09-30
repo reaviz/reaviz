@@ -1,4 +1,4 @@
-import { TooltipTheme } from 'reablocks';
+import type { TooltipTheme } from 'reablocks';
 
 import css from './Tooltip.module.css';
 

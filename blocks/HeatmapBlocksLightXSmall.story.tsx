@@ -1,5 +1,11 @@
 import React from 'react';
 import {
+  heatmapXSmallBlocksData,
+  heatmapXSmallSimpleBlocksData
+} from 'reaviz-data-utils';
+
+import { schemes } from '../src/common/color/schemes';
+import {
   Heatmap,
   HeatmapCell,
   HeatmapSeries,
@@ -11,12 +17,6 @@ import {
   ScatterPlot,
   SequentialLegend
 } from '../src/index';
-
-import {
-  heatmapXSmallBlocksData,
-  heatmapXSmallSimpleBlocksData
-} from 'reaviz-data-utils';
-import { schemes } from '../src/common/color/schemes';
 
 export default {
   tags: ['snapshot'],

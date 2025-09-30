@@ -1,4 +1,4 @@
-import { min, max } from 'd3-array';
+import { max, min } from 'd3-array';
 
 /**
  * Gets the min/max values handling nested arrays.

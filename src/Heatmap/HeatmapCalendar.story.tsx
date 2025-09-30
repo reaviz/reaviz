@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import { CalendarHeatmap } from './CalendarHeatmap';
 import {
-  heatmapCalendarData,
-  janHeatMapData,
   febHeatMapData,
-  marchHeatMapData,
-  heatmapCalendarOffsetData
+  heatmapCalendarData,
+  heatmapCalendarOffsetData,
+  janHeatMapData,
+  marchHeatMapData
 } from 'reaviz-data-utils';
-import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
+
 import { ChartTooltip, formatValue } from '@/common';
+
+import { CalendarHeatmap } from './CalendarHeatmap';
+import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 
 export default {
   tags: ['snapshot'],
