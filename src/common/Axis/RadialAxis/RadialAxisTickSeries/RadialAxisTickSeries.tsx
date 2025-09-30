@@ -62,6 +62,12 @@ export interface RadialAxisTickSeriesProps {
    * End angle for the last value.
    */
   endAngle?: number;
+
+  /**
+   *  optional click handler callback
+   */
+
+  onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>, t: any) => void;
 }
 
 export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
@@ -74,9 +80,11 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   interval,
   type = 'time',
   startAngle = 0,
-  endAngle = 2 * Math.PI
+  endAngle = 2 * Math.PI,
+  onClick
 }) => {
   const ticks = getTicks(scale, tickValues, type, count, interval || count);
+  console.log({ onClick });
 
   return (
     <Fragment>
@@ -90,6 +98,8 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
             index={i}
             scale={scale}
             data={data}
+            onClick={(e) => onClick(e, data)}
+            clickable={!!onClick}
             innerRadius={innerRadius}
             outerRadius={outerRadius}
             startAngle={startAngle}

@@ -39,7 +39,6 @@ export interface LinearAxisProps {
   visibility?: 'visible' | 'hidden';
   orientation?: 'horizontal' | 'vertical';
   onDimensionsChange?: (event: LinearAxisDimensionChanged) => void;
-  //onClick?: (e: any, t: any) => void;
 }
 
 interface LinearAxisState {

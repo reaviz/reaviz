@@ -37,7 +37,10 @@ export interface LinearAxisTickSeriesProps {
    * The maximum length for ellipsizing tick labels. Default is 18.
    */
   ellipsisLength?: number;
-  onClick?: (e, t) => void;
+  onClick?: (
+    e: React.MouseEvent<SVGGElement, MouseEvent>,
+    t: ProcessedTick
+  ) => void;
 }
 
 interface ProcessedTick {

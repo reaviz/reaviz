@@ -64,6 +64,15 @@ export interface RadialAxisTickLabelProps
    * Format tooltip title on hover label.
    */
   formatTooltip?: (value: any, index: number) => any | string;
+
+  /**
+   *  optional click handler callback
+   */
+  onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>) => void;
+  /**
+   *  true if onClick is defined (controls styling)
+   */
+  clickable: boolean;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
@@ -79,6 +88,8 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   lineSize,
   index,
   formatTooltip,
+  onClick,
+  clickable,
   ...rest
 }) => {
   const { transform, textAnchor } = useMemo(() => {
@@ -123,7 +134,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
     typeof formatTooltip === 'function' ? formatTooltip(data, index) : text;
 
   return (
-    <g transform={transform}>
+    <g transform={transform} onClick={(e) => clickable && onClick(e)}>
       <title>{titleHover}</title>
       <text
         dy="0.35em"
@@ -132,6 +143,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         fill={fill}
         fontFamily={fontFamily}
         fontSize={fontSize}
+        className={clickable && 'cursor-pointer hover:underline'}
         {...rest}
       >
         {text}

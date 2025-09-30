@@ -28,7 +28,7 @@ export interface LinearAxisTickLabelProps {
   position: 'start' | 'end' | 'center';
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
   className?: string;
-  onClick?: (e) => void;
+  onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>) => void;
   clickable: boolean;
 }
 
