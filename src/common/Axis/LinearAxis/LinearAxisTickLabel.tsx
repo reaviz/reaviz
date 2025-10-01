@@ -29,7 +29,6 @@ export interface LinearAxisTickLabelProps {
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
   className?: string;
   onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>) => void;
-  clickable: boolean;
 }
 
 export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
@@ -52,8 +51,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     padding,
     formatTooltip,
     align,
-    onClick,
-    clickable
+    onClick
   } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
 
   function getAlign() {
@@ -178,7 +176,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       transform={`translate(${x}, ${y})`}
       fontSize={fontSize}
       fontFamily={fontFamily}
-      onClick={(e) => clickable && onClick(e)}
+      onClick={(e) => onClick && onClick?.(e)}
     >
       <title>{titleHover}</title>
       <text
@@ -186,7 +184,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
         fill={fill}
         className={classNames(
           className,
-          clickable && 'cursor-pointer hover:underline hover:brightness-125'
+          onClick && 'cursor-pointer hover:underline hover:brightness-125'
         )}
       >
         {text}

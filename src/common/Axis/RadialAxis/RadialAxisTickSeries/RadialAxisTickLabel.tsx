@@ -1,10 +1,11 @@
 import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
 import { formatValue } from '@/common/utils/formatting';
+import classNames from 'classnames';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
 
 export interface RadialAxisTickLabelProps
-  extends Omit<SVGTextElementAttributes<SVGTextElement>, 'format'> {
+  extends Omit<SVGTextElementAttributes<SVGTextElement>, 'format' | 'onClick'> {
   /**
    * Data to render.
    */
@@ -68,11 +69,7 @@ export interface RadialAxisTickLabelProps
   /**
    *  optional click handler callback
    */
-  onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>) => void;
-  /**
-   *  true if onClick is defined (controls styling)
-   */
-  clickable: boolean;
+  onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>, t: any) => void;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
@@ -89,7 +86,6 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   index,
   formatTooltip,
   onClick,
-  clickable,
   ...rest
 }) => {
   const { transform, textAnchor } = useMemo(() => {
@@ -134,7 +130,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
     typeof formatTooltip === 'function' ? formatTooltip(data, index) : text;
 
   return (
-    <g transform={transform} onClick={(e) => clickable && onClick(e)}>
+    <g transform={transform} onClick={(e) => onClick && onClick?.(e, data)}>
       <title>{titleHover}</title>
       <text
         dy="0.35em"
@@ -143,7 +139,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
         fill={fill}
         fontFamily={fontFamily}
         fontSize={fontSize}
-        className={clickable && 'cursor-pointer hover:underline'}
+        className={classNames(onClick && 'cursor-pointer hover:underline')}
         {...rest}
       >
         {text}

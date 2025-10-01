@@ -63,15 +63,6 @@ export interface RadialAxisTickProps {
    * End angle for the last value.
    */
   endAngle?: number;
-
-  /**
-   *  optional click handler callback
-   */
-  onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>) => void;
-  /**
-   *  true if onClick is defined (controls styling)
-   */
-  clickable: boolean;
 }
 
 export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
@@ -82,9 +73,7 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
   data,
   index,
   padding = 0,
-  innerRadius,
-  onClick,
-  clickable
+  innerRadius
 }) => {
   const lineProps = useMemo(
     () => ({ ...RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS, ...(line?.props ?? {}) }),
@@ -112,8 +101,6 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
-          onClick={(e) => onClick(e)}
-          clickable={clickable}
         />
       )}
     </g>

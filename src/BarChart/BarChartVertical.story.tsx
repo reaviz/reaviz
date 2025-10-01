@@ -9,6 +9,7 @@ import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
+import { LinearXAxis, LinearXAxisTickSeries, LinearYAxis } from '@/common';
 
 export default {
   tags: ['snapshot'],
@@ -28,6 +29,12 @@ export const Simple = () => (
     height={350}
     data={categoryData}
     series={<BarSeries padding={0.1} bar={<Bar />} />}
+    xAxis={
+      <LinearXAxis
+        type="category"
+        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
+      />
+    }
   />
 );
 

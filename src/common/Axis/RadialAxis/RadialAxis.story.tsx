@@ -66,11 +66,15 @@ export const OnclickLabels = () => (
           xScale={xScale}
           ticks={
             <RadialAxisTickSeries
-              onClick={(e, t) => window.alert(t.toTimeString().split(' ')[0])}
               tick={
                 <RadialAxisTick
                   label={
-                    <RadialAxisTickLabel format={(d) => format(d, 'h a')} />
+                    <RadialAxisTickLabel
+                      format={(d) => format(d, 'h a')}
+                      onClick={(e, t) =>
+                        window.alert(t.toTimeString().split(' ')[0])
+                      }
+                    />
                   }
                 />
               }
