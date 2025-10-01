@@ -29,12 +29,6 @@ export const Simple = () => (
     height={350}
     data={categoryData}
     series={<BarSeries padding={0.1} bar={<Bar />} />}
-    xAxis={
-      <LinearXAxis
-        type="category"
-        tickSeries={<LinearXAxisTickSeries tickSize={20} />}
-      />
-    }
   />
 );
 
