@@ -179,6 +179,16 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
     const rotationFactor = 0.5;
 
+    /**
+     * Calculates the offset for the tooltip.
+     * If the shape is radial, it converts the X coords to a radial format.
+     * @param pointX - The X coordinate of the point.
+     * @param pointY - The Y coordinate of the point.
+     * @param rect - The bounding rectangle of the tooltip.
+     * @param marginX - The margin for the X coordinate.
+     * @param marginY - The margin for the Y coordinate.
+     * @returns The offset for the tooltip.
+     */
     const calculateOffset = useCallback(
       (
         pointX: number,
@@ -204,6 +214,12 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       [isRadial, width, height, rotationFactor]
     );
 
+    /**
+     * If the shape is radial, we need to convert the X coords to a radial format.
+     * @param x - The X coordinate of the point.
+     * @param y - The Y coordinate of the point.
+     * @returns The radial coordinate.
+     */
     const getXCoord = useCallback(
       (x: number, y: number) => {
         // If the shape is radial, we need to convert the X coords to a radial format.
@@ -235,6 +251,11 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       [endAngle, height, isRadial, outerRadius, range, startAngle, width]
     );
 
+    /**
+     * Transforms the data for the tooltip.
+     * @param series - The series of data.
+     * @returns The transformed data.
+     */
     const transformData = useCallback(
       (series: ChartInternalDataShape[]) => {
         const result: TooltipDataShape[] = [];
@@ -450,6 +471,10 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       onValueLeave();
     }, [onValueLeave]);
 
+    /**
+     * This is used to update the tooltip offsets when the window is scrolled or resized to maintain the correct position.
+     * @returns void
+     */
     const recomputeOffsets = useCallback(() => {
       if (!visible) {
         return;
