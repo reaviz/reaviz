@@ -489,7 +489,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       let marginY = 0;
       let px = prevX as number;
       let py: number;
-      if (isNaN(prevY as unknown as number)) {
+      if (prevY === undefined || isNaN(prevY)) {
         py = height / 2;
         marginX = 10;
       } else {
