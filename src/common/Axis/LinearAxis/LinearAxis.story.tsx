@@ -1,7 +1,7 @@
 import React from 'react';
 import { largeSignalChartData, categoryData } from 'reaviz-data-utils';
 import { ScatterPlot } from '@/ScatterPlot';
-import { BarChart } from '@/BarChart';
+import { Bar, BarChart, BarSeries } from '@/BarChart';
 import {
   LinearYAxis,
   LinearYAxisTickSeries,
@@ -69,6 +69,44 @@ export const CustomLabelRotation = () => (
             label={<LinearXAxisTickLabel rotation={-90} />}
           />
         }
+      />
+    }
+  />
+);
+
+const data = categoryData.map((x) => ({
+  ...x,
+  key_url: `https://example.com/${x?.key}`
+}));
+
+export const OnclickLabels = () => (
+  <BarChart
+    width={500}
+    height={350}
+    data={data}
+    xAxis={<LinearXAxis type="value" />}
+    yAxis={
+      <LinearYAxis
+        type="category"
+        tickSeries={
+          <LinearYAxisTickSeries
+            tickSize={20}
+            onClick={(e, t) => {
+              const { key_url } = data.find((datum) => datum.key === t.tick);
+              if (key_url) {
+                window.open(key_url);
+              }
+            }}
+          />
+        }
+      />
+    }
+    series={
+      <BarSeries
+        colorScheme={'cybertron'}
+        layout="horizontal"
+        padding={0.1}
+        bar={<Bar guide={null} />}
       />
     }
   />

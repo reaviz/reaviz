@@ -37,6 +37,17 @@ export interface LinearAxisTickSeriesProps {
    * The maximum length for ellipsizing tick labels. Default is 18.
    */
   ellipsisLength?: number;
+
+  /**
+   * callback fired when a tick element is  clicked
+   * @param e - The React mouse event associated with the click on the tick element
+   * @param t  - The processed tick data  object for the clicked  tick
+   */
+
+  onClick?: (
+    e: React.MouseEvent<SVGGElement, MouseEvent>,
+    t: ProcessedTick
+  ) => void;
 }
 
 interface ProcessedTick {
@@ -47,6 +58,14 @@ interface ProcessedTick {
   height: number;
   width: number;
   half: 'start' | 'end' | 'center';
+  /**
+   * The original  value  of the tick as a string
+   */
+  tick: string;
+  /**
+   * The position of the tick in the array of  ticks
+   */
+  index: number;
 }
 
 export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
@@ -63,7 +82,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     interval,
     line,
     axis,
-    ellipsisLength
+    ellipsisLength,
+    onClick
   } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
 
   const labelProps = useMemo(
@@ -136,7 +156,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
     const format = labelFormatFn;
     const midpoint = dimension / 2;
 
-    return ticks.map((tick) => {
+    return ticks.map((tick, index) => {
       const fullText = format(tick);
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
@@ -154,6 +174,8 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         ...size,
         text,
         fullText,
+        tick,
+        index,
         half:
           scaledTick === midpoint
             ? 'center'
@@ -225,6 +247,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               element={label}
               text={tick.text}
               fullText={tick.fullText}
+              onClick={onClick ? (e) => onClick?.(e, tick) : undefined}
               half={tick.half}
               angle={angle}
               orientation={orientation}

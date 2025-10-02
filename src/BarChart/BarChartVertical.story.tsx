@@ -9,6 +9,7 @@ import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
+import { LinearXAxis, LinearXAxisTickSeries, LinearYAxis } from '@/common';
 
 export default {
   tags: ['snapshot'],
