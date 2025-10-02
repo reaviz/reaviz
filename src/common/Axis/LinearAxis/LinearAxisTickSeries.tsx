@@ -37,6 +37,13 @@ export interface LinearAxisTickSeriesProps {
    * The maximum length for ellipsizing tick labels. Default is 18.
    */
   ellipsisLength?: number;
+
+  /**
+   * callback fired when a tick element is  clicked
+   * @param e - The React mouse event associated with the click on the tick element
+   * @param t  - The processed tick data  object for the clicked  tick
+   */
+
   onClick?: (
     e: React.MouseEvent<SVGGElement, MouseEvent>,
     t: ProcessedTick
@@ -51,8 +58,14 @@ interface ProcessedTick {
   height: number;
   width: number;
   half: 'start' | 'end' | 'center';
-  index: number;
+  /**
+   * The original  value  of the tick as a string
+   */
   tick: string;
+  /**
+   * The position of the tick in the array of  ticks
+   */
+  index: number;
 }
 
 export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (

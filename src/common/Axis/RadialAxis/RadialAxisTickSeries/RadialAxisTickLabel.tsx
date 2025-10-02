@@ -67,7 +67,7 @@ export interface RadialAxisTickLabelProps
   formatTooltip?: (value: any, index: number) => any | string;
 
   /**
-   *  optional click handler callback
+   *  Optional click handler callback
    */
   onClick?: (e: React.MouseEvent<SVGGElement, MouseEvent>, t: any) => void;
 }
