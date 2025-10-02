@@ -6,7 +6,8 @@ import React, {
   useCallback,
   useMemo,
   forwardRef,
-  useImperativeHandle
+  useImperativeHandle,
+  useEffect
 } from 'react';
 import { flip, offset } from '@floating-ui/dom';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
@@ -171,12 +172,37 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     const [prevX, setPrevX] = useState<number>();
     const [prevY, setPrevY] = useState<number>();
     const ref = useRef<SVGRectElement | SVGPathElement | any>();
-    const fullCircleref = useRef<SVGRectElement | SVGPathElement | any>(null);
+    const fullCircleRef = useRef<SVGRectElement | SVGPathElement | any>(null);
     const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
 
     const range = Math.abs(endAngle - startAngle);
 
     const rotationFactor = 0.5;
+
+    const calculateOffset = useCallback(
+      (
+        pointX: number,
+        pointY: number,
+        rect: DOMRect,
+        marginX: number,
+        marginY: number
+      ) => {
+        let nx = 0;
+        let ny = 0;
+        if (isRadial) {
+          const outer = Math.min(width, height) / 2;
+          nx = pointY * Math.cos(pointX - rotationFactor * Math.PI) + outer;
+          ny = pointY * Math.sin(pointX - rotationFactor * Math.PI) + outer;
+        } else {
+          nx = pointX;
+          ny = pointY;
+        }
+        nx += rect.left + marginX;
+        ny += rect.top + marginY;
+        return { nx, ny };
+      },
+      [isRadial, width, height, rotationFactor]
+    );
 
     const getXCoord = useCallback(
       (x: number, y: number) => {
@@ -295,7 +321,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
         // Get the path container element
         // Note that we are using the dummy 'full' circle for alignment
-        let target = fullCircleref.current || ref.current;
+        let target = fullCircleRef.current || ref.current;
 
         const { y, x } = getPositionForTarget({
           target: target,
@@ -368,41 +394,28 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
           setPrevY(pointY);
 
           const target = event.target as SVGRectElement;
-          const { top, left } = target.getBoundingClientRect();
-
-          let offsetX = 0;
-          let offsetY = 0;
-
-          if (isRadial) {
-            // If its radial, we need to convert the coords to radial format
-            const outerRadius = Math.min(width, height) / 2;
-            offsetX =
-              pointY * Math.cos(pointX - rotationFactor * Math.PI) +
-              outerRadius;
-            offsetY =
-              pointY * Math.sin(pointX - rotationFactor * Math.PI) +
-              outerRadius;
-          } else {
-            offsetX = pointX;
-            offsetY = pointY;
-          }
-
-          offsetX += left + marginX;
-          offsetY += top + marginY;
+          const rect = target.getBoundingClientRect();
+          const { nx, ny } = calculateOffset(
+            pointX,
+            pointY,
+            rect,
+            marginX,
+            marginY
+          );
 
           setPlacement(newPlacement);
           setVisible(true);
           setValue(newValue);
-          setOffsetX(offsetX);
-          setOffsetY(offsetY);
+          setOffsetX(nx);
+          setOffsetY(ny);
 
           onValueEnter({
             visible: true,
             value: newValue,
             pointY,
             pointX,
-            offsetX,
-            offsetY,
+            offsetX: nx,
+            offsetY: ny,
             nativeEvent: event
           });
         }
@@ -414,6 +427,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         isContinous,
         isHorizontal,
         isRadial,
+        calculateOffset,
         onValueEnter,
         placement,
         placementProp,
@@ -421,7 +435,6 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         prevY,
         transformData,
         value,
-        width,
         xScale,
         yScale
       ]
@@ -436,6 +449,47 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
       onValueLeave();
     }, [onValueLeave]);
+
+    const recomputeOffsets = useCallback(() => {
+      if (!visible) {
+        return;
+      }
+      const container = (fullCircleRef.current ||
+        ref.current) as SVGElement | null;
+      if (!container) {
+        return;
+      }
+      const rect = container.getBoundingClientRect();
+      let marginX = 0;
+      let marginY = 0;
+      let px = prevX as number;
+      let py: number;
+      if (isNaN(prevY as unknown as number)) {
+        py = height / 2;
+        marginX = 10;
+      } else {
+        py = prevY as number;
+        marginY = -10;
+      }
+      const { nx, ny } = calculateOffset(px, py, rect, marginX, marginY);
+      setOffsetX(nx);
+      setOffsetY(ny);
+    }, [fullCircleRef, ref, visible, prevX, prevY, height, calculateOffset]);
+
+    // Update the offsets when the window is scrolled or resized
+    useEffect(() => {
+      if (!visible) {
+        return;
+      }
+      const handler = () => recomputeOffsets();
+      window.addEventListener('scroll', handler, true);
+      window.addEventListener('resize', handler);
+
+      return () => {
+        window.removeEventListener('scroll', handler, true);
+        window.removeEventListener('resize', handler);
+      };
+    }, [visible, recomputeOffsets]);
 
     useImperativeHandle(childRef, () => ({
       triggerMouseMove(e: React.MouseEvent) {
@@ -477,7 +531,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
       return (
         <>
-          <path d={fullCircle!} opacity="0" cursor="auto" ref={fullCircleref} />
+          <path d={fullCircle!} opacity="0" cursor="auto" ref={fullCircleRef} />
           <path
             d={d!}
             opacity="0"
@@ -515,7 +569,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       <Fragment>
         {disabled && children}
         {!disabled && (
-          <g onMouseLeave={onMouseLeave} ref={childRef}>
+          <g id="tooltip-area" onMouseLeave={onMouseLeave} ref={childRef}>
             {isRadial && renderRadial()}
             {!isRadial && renderLinear()}
             <CloneElement<ChartTooltipProps>

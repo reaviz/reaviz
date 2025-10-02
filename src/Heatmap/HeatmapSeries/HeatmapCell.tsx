@@ -8,7 +8,7 @@ import React, {
   useRef,
   ReactNode
 } from 'react';
-import { offset } from '@floating-ui/dom';
+import { flip, offset } from '@floating-ui/dom';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import {
@@ -123,7 +123,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   rx = 2,
   ry = 2,
   cursor = 'auto',
-  tooltip = <ChartTooltip />,
+  tooltip = <ChartTooltip modifiers={[flip()]} />,
   onClick,
   onMouseEnter,
   onMouseLeave,
