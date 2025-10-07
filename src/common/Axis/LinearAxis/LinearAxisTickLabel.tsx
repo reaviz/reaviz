@@ -5,10 +5,16 @@ import {
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
 import { mergeDefaultProps } from '@/common/utils';
+import classNames from 'classnames';
+import css from './LinearAxisTickLabel.module.css';
 
 export interface LinearAxisTickLabelProps {
   text: string;
   fullText: string;
+  /**
+   * The raw data value for this tick (e.g., Date object, number, string).
+   */
+  data: any;
   angle: number;
   orientation: 'horizontal' | 'vertical';
   half: 'start' | 'end' | 'center';
@@ -27,6 +33,10 @@ export interface LinearAxisTickLabelProps {
   position: 'start' | 'end' | 'center';
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
   className?: string;
+  /**
+   * Click handler for the label.
+   */
+  onClick?: (event: React.MouseEvent<SVGGElement>, data: any) => void;
 }
 
 export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
@@ -35,6 +45,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   const {
     text,
     fullText,
+    data,
     angle,
     orientation,
     half,
@@ -48,7 +59,8 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
     rotation,
     padding,
     formatTooltip,
-    align
+    align,
+    onClick
   } = mergeDefaultProps(LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS, props);
 
   function getAlign() {
@@ -173,6 +185,10 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       transform={`translate(${x}, ${y})`}
       fontSize={fontSize}
       fontFamily={fontFamily}
+      className={classNames({
+        [css.clickable]: !!onClick
+      })}
+      onClick={(event) => onClick?.(event, data)}
     >
       <title>{titleHover}</title>
       <text {...textPosition} fill={fill} className={className}>
