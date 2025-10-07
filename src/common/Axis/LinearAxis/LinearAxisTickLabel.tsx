@@ -11,7 +11,10 @@ import css from './LinearAxisTickLabel.module.css';
 export interface LinearAxisTickLabelProps {
   text: string;
   fullText: string;
-  value: any;
+  /**
+   * The raw data value for this tick (e.g., Date object, number, string).
+   */
+  data: any;
   angle: number;
   orientation: 'horizontal' | 'vertical';
   half: 'start' | 'end' | 'center';
@@ -33,7 +36,7 @@ export interface LinearAxisTickLabelProps {
   /**
    * Click handler for the label.
    */
-  onClick?: (event: React.MouseEvent<SVGGElement>, value: any) => void;
+  onClick?: (event: React.MouseEvent<SVGGElement>, data: any) => void;
 }
 
 export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
@@ -42,7 +45,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   const {
     text,
     fullText,
-    value,
+    data,
     angle,
     orientation,
     half,
@@ -185,7 +188,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       className={classNames({
         [css.clickable]: !!onClick
       })}
-      onClick={(event) => onClick?.(event, value)}
+      onClick={(event) => onClick?.(event, data)}
     >
       <title>{titleHover}</title>
       <text {...textPosition} fill={fill} className={className}>
