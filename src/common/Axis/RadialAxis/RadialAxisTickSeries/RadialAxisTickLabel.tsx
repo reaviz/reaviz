@@ -136,7 +136,7 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
       className={classNames({
         [css.clickable]: !!onClick
       })}
-      onClick={onClick ? (event) => onClick(event, data) : undefined}
+      onClick={(event) => onClick?.(event, data)}
     >
       <title>{titleHover}</title>
       <text

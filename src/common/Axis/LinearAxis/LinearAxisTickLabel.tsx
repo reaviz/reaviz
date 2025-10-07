@@ -11,6 +11,7 @@ import css from './LinearAxisTickLabel.module.css';
 export interface LinearAxisTickLabelProps {
   text: string;
   fullText: string;
+  value: any;
   angle: number;
   orientation: 'horizontal' | 'vertical';
   half: 'start' | 'end' | 'center';
@@ -41,6 +42,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   const {
     text,
     fullText,
+    value,
     angle,
     orientation,
     half,
@@ -183,7 +185,7 @@ export const LinearAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
       className={classNames({
         [css.clickable]: !!onClick
       })}
-      onClick={onClick ? (event) => onClick(event, fullText) : undefined}
+      onClick={(event) => onClick?.(event, value)}
     >
       <title>{titleHover}</title>
       <text {...textPosition} fill={fill} className={className}>
