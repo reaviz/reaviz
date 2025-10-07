@@ -45,6 +45,7 @@ export interface LinearAxisTickSeriesProps {
 interface ProcessedTick {
   text: string;
   fullText: string;
+  data: any;
   x: number;
   y: number;
   height: number;
@@ -157,6 +158,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
         ...size,
         text,
         fullText,
+        data: tick,
         half:
           scaledTick === midpoint
             ? 'center'
@@ -228,6 +230,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
               element={label}
               text={tick.text}
               fullText={tick.fullText}
+              data={tick.data}
               half={tick.half}
               angle={angle}
               orientation={orientation}
@@ -263,6 +266,7 @@ export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
       }
       text=""
       fullText=""
+      data={undefined}
       angle={0}
       orientation="horizontal"
       half="start"

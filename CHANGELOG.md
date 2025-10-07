@@ -1,3 +1,9 @@
+# 16.0.13 - 2/10/25
+- [fix] Tooltip does not remain at point location, follows user on scroll #306
+
+# 16.0.12 - 9/30/25
+- [fix] Fix generating key for ScatterSeries points #302
+
 # 16.0.11 - 9/30/25
 - [fix] Fix PieArc path initial value
 

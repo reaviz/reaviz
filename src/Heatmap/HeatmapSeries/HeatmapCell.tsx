@@ -1,4 +1,20 @@
-import { offset } from '@floating-ui/dom';
+import React, {
+  FC,
+  Fragment,
+  MouseEvent,
+  ReactElement,
+  useMemo,
+  useState,
+  useRef,
+  ReactNode
+} from 'react';
+import { flip, offset } from '@floating-ui/dom';
+import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import { CloneElement } from 'reablocks';
+import {
+  constructFunctionProps,
+  PropFunctionTypes
+} from '@/common/utils/functions';
 import chroma from 'chroma-js';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
@@ -116,7 +132,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
   rx = 2,
   ry = 2,
   cursor = 'auto',
-  tooltip = <ChartTooltip />,
+  tooltip = <ChartTooltip modifiers={[flip()]} />,
   onClick,
   onMouseEnter,
   onMouseLeave,

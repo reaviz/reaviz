@@ -93,7 +93,7 @@ export const ScatterSeries: FC<Partial<ScatterSeriesProps>> = ({
         pointId = pointData.id;
       }
 
-      const key = identifier(`${pointId || index}`);
+      const key = identifier(`${pointId + index || index}`);
       const active =
         !(activeIds && activeIds.length) || activeIds.includes(pointId);
 
