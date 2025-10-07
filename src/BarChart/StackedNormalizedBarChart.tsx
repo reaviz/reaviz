@@ -1,16 +1,20 @@
-import React, { FC } from 'react';
-import { ChartNestedDataShape } from '@/common/data';
-import { BarChartProps, BarChart } from './BarChart';
+import type { FC } from 'react';
+import React from 'react';
+
+import {
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
+} from '@/common/Axis/LinearAxis';
+import type { ChartNestedDataShape } from '@/common/data';
+
+import type { BarChartProps } from './BarChart';
+import { BarChart } from './BarChart';
 import {
   STACKED_NORMALIZED_BAR_SERIES_DEFAULT_PROPS,
   StackedNormalizedBarSeries
 } from './BarSeries';
-import {
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
-} from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedBarChartProps extends BarChartProps {
   data: ChartNestedDataShape[];

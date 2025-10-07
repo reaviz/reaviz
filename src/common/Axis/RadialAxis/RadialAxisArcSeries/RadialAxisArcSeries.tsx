@@ -1,14 +1,17 @@
-import React, { FC, ReactElement } from 'react';
-import {
-  RADIAL_AXIS_ARC_DEFAULT_PROPS,
-  RadialAxisArc,
-  RadialAxisArcProps
-} from './RadialAxisArc';
-import { CloneElement } from 'reablocks';
 import { scaleLinear } from 'd3-scale';
-import { getPointsForLevels } from './utils';
-import { RadialAxisArcLine, RadialAxisArcLineProps } from './RadialAxisArcLine';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React from 'react';
+
 import { mergeDefaultProps } from '@/common/utils';
+
+import type { RadialAxisArcProps } from './RadialAxisArc';
+import { RadialAxisArc } from './RadialAxisArc';
+import type {
+  RadialAxisArcLine,
+  RadialAxisArcLineProps
+} from './RadialAxisArcLine';
+import { getPointsForLevels } from './utils';
 
 export interface RadialAxisArcSeriesProps {
   /**

@@ -1,5 +1,9 @@
+import { symbol, symbolStar } from 'd3-shape';
 import React from 'react';
 import { singleDateData } from 'reaviz-data-utils';
+
+import { ScatterPoint } from '@/ScatterPlot';
+
 import { AreaChart } from './AreaChart';
 import {
   Area,
@@ -9,8 +13,6 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
-import { ScatterPoint } from '@/ScatterPlot';
-import { symbol, symbolStar } from 'd3-shape';
 
 export default {
   tags: ['snapshot'],

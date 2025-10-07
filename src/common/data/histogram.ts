@@ -1,5 +1,9 @@
 import { histogram } from 'd3-array';
-import { ChartInternalShallowDataShape, ChartInternalDataTypes } from './types';
+
+import type {
+  ChartInternalDataTypes,
+  ChartInternalShallowDataShape
+} from './types';
 
 /**
  * Build a histogram given data set.

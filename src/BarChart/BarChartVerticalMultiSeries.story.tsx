@@ -1,29 +1,31 @@
-import { BarChart } from './BarChart';
-import { MarimekkoChart } from './MarimekkoChart';
-import { StackedBarChart } from './StackedBarChart';
-import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
-import { multiCategory, binnedDateData } from 'reaviz-data-utils';
 import chroma from 'chroma-js';
-import {
-  BarSeries,
-  Bar,
-  StackedBarSeries,
-  StackedNormalizedBarSeries,
-  MarimekkoBarSeries,
-  RangeLines,
-  GuideBar,
-  BarLabel,
-  HistogramBarSeries
-} from './BarSeries';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+import { binnedDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   LinearXAxis,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
+import { BarChart } from './BarChart';
+import {
+  Bar,
+  BarLabel,
+  BarSeries,
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries
+} from './BarSeries';
+import { MarimekkoChart } from './MarimekkoChart';
+import { StackedBarChart } from './StackedBarChart';
+import { StackedNormalizedBarChart } from './StackedNormalizedBarChart';
 
 export default {
   tags: ['snapshot'],
@@ -106,8 +108,9 @@ export const StackedCustomStyle = () => (
           { start: '#fbb4b9', end: '#7a0177' },
           { start: '#c2e699', end: '#006837' },
           { start: '#a1dab4', end: '#253494' }
-        ].map((gradient) => (
+        ].map((gradient, index) => (
           <Bar
+            key={index}
             gradient={
               <Gradient
                 stops={[
@@ -145,6 +148,7 @@ export const StackedDiverging = () => (
       <StackedBarSeries
         bar={[
           <Bar
+            key="top"
             rx={0}
             ry={0}
             guide={<GuideBar />}
@@ -159,6 +163,7 @@ export const StackedDiverging = () => (
             rangeLines={<RangeLines position="top" strokeWidth={3} />}
           />,
           <Bar
+            key="bottom"
             rx={0}
             ry={0}
             guide={<GuideBar />}

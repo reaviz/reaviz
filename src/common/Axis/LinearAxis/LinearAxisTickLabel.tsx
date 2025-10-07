@@ -1,9 +1,13 @@
-import React, { FC, ReactElement } from 'react';
-import {
-  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
+import type { FC, ReactElement } from 'react';
+import React from 'react';
+
+import { mergeDefaultProps } from '@/common/utils';
+
+import type {
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
+import { LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS } from './LinearAxisTickLine';
 import { mergeDefaultProps } from '@/common/utils';
 import classNames from 'classnames';
 import css from './LinearAxisTickLabel.module.css';

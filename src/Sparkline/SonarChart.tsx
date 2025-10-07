@@ -1,24 +1,26 @@
-import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { BarChartProps } from '@/BarChart';
 import {
-  StackedBarChart,
-  StackedBarSeries,
   Bar,
-  BarChartProps,
-  BAR_DEFAULT_PROPS
+  BAR_DEFAULT_PROPS,
+  StackedBarChart,
+  StackedBarSeries
 } from '@/BarChart';
+import type { ChartNestedDataShape } from '@/common';
 import {
+  ChartTooltip,
+  formatValue,
   Gradient,
   GradientStop,
-  LinearYAxis,
   LinearXAxis,
-  LinearYAxisTickSeries,
   LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries,
   TooltipArea,
-  ChartTooltip,
-  TooltipTemplate,
-  formatValue,
-  ChartNestedDataShape
+  TooltipTemplate
 } from '@/common';
 
 export interface SonarChartProps extends BarChartProps {

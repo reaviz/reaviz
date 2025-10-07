@@ -2,9 +2,13 @@ import { max } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
 import { motion } from 'motion/react';
 import { CloneElement, useId } from 'reablocks';
-import React, { FC, ReactElement, useMemo } from 'react';
-import { ChartShallowDataShape } from '@/common';
-import { BarListSeries, BarListSeriesProps } from './BarListSeries';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartShallowDataShape } from '@/common';
+
+import type { BarListSeriesProps } from './BarListSeries';
+import { BarListSeries } from './BarListSeries';
 
 export interface BarListProps {
   /**

@@ -1,28 +1,25 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useCallback,
-  FC,
-  useState,
-  useRef,
-  useMemo
-} from 'react';
 import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
 import { motion } from 'motion/react';
-import { ChartInternalDataTypes } from '@/common/data';
+import type { TooltipProps } from 'reablocks';
 import { CloneElement } from 'reablocks';
+import { Tooltip } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
+import { tooltipTheme } from '@/common';
+import type { ChartInternalDataTypes } from '@/common/data';
 import { formatValue } from '@/common/utils/formatting';
-import { Tooltip, TooltipProps } from 'reablocks';
-import {
-  SankeyLabel,
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+import type {
   SankeyLabelPosition,
   SankeyLabelProps
 } from '@/Sankey/SankeyLabel';
-import { SankeyNodeExtra, DEFAULT_COLOR } from '@/Sankey/utils';
+import { SankeyLabel } from '@/Sankey/SankeyLabel';
+import type { SankeyNodeExtra } from '@/Sankey/utils';
+import { DEFAULT_COLOR } from '@/Sankey/utils';
+
 import css from './SankeyNode.module.css';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
-import { tooltipTheme } from '@/common';
 
 export interface SankeyNodeProps extends SankeyNodeExtra {
   /**

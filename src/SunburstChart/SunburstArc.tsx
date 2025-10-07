@@ -1,19 +1,16 @@
-import React, {
-  FC,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useRef,
-  useState
-} from 'react';
-import { arc } from 'd3-shape';
-import { getAriaLabel } from '@/common/utils/formatting';
-import { motion } from 'motion/react';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { CloneElement } from 'reablocks';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
-import { Gradient, GradientProps } from '@/common/Gradient';
 import chroma from 'chroma-js';
+import { arc } from 'd3-shape';
+import { motion } from 'motion/react';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback, useMemo, useRef, useState } from 'react';
+
+import type { Gradient, GradientProps } from '@/common/Gradient';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import { getAriaLabel } from '@/common/utils/formatting';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
+
 import { useInterpolate } from './useInterpolate';
 
 export interface SunburstArcProps {

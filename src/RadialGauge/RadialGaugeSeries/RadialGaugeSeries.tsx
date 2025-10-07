@@ -1,23 +1,20 @@
-import React, {
-  cloneElement,
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo
-} from 'react';
-import { range, min } from 'd3-array';
+import { min, range } from 'd3-array';
 import { scaleBand } from 'd3-scale';
-import { ChartShallowDataShape } from '@/common';
-import { ColorSchemeType, getColor } from '@/common/color';
-import { RadialGaugeArc, RadialGaugeArcProps } from './RadialGaugeArc';
-import { RadialGaugeLabel, RadialGaugeLabelProps } from './RadialGaugeLabel';
-import {
-  RadialGaugeValueLabel,
-  RadialGaugeValueLabelProps
-} from './RadialGaugeValueLabel';
-import { RadialGaugeOuterArc } from './RadialGaugeOuterArc';
+import type { FC, ReactElement } from 'react';
+import React, { cloneElement, Fragment, useCallback, useMemo } from 'react';
 import { identifier } from 'safe-identifier';
+
+import type { ChartShallowDataShape } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+
+import type { RadialGaugeArcProps } from './RadialGaugeArc';
+import { RadialGaugeArc } from './RadialGaugeArc';
+import type { RadialGaugeLabelProps } from './RadialGaugeLabel';
+import { RadialGaugeLabel } from './RadialGaugeLabel';
+import { RadialGaugeOuterArc } from './RadialGaugeOuterArc';
+import type { RadialGaugeValueLabelProps } from './RadialGaugeValueLabel';
+import { RadialGaugeValueLabel } from './RadialGaugeValueLabel';
 
 export interface RadialGaugeSeriesProps {
   /**

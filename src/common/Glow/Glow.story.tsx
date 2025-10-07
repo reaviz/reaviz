@@ -1,14 +1,15 @@
-import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
 import {
   categoryData,
   largeSignalChartData,
   singleDateData
 } from 'reaviz-data-utils';
+
+import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
 import { Bar, BarChart, BarSeries } from '@/BarChart';
 import { Bubble, BubbleChart, BubbleSeries } from '@/BubbleChart';
-import { Area, AreaChart, AreaSeries, Line } from '@/AreaChart';
+import type { ChartShallowDataShape } from '@/common/data';
 import { LineChart, LineSeries } from '@/LineChart';
-import { ChartShallowDataShape } from '@/common/data';
+import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
 
 export default {
   title: 'Utils/Glow'

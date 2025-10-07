@@ -1,5 +1,8 @@
-import { ChartNestedDataShape, ChartInternalNestedDataShape } from './types';
 import { buildBarStackData } from './barStack';
+import type {
+  ChartInternalNestedDataShape,
+  ChartNestedDataShape
+} from './types';
 
 /**
  * Builds a stack dataset from the standard data format.

@@ -1,33 +1,29 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useCallback,
-  FC,
-  useRef,
-  useMemo,
-  useState
-} from 'react';
 import chroma from 'chroma-js';
-import { Gradient, GradientProps } from '@/common/Gradient';
 import classNames from 'classnames';
-import { ChartInternalShallowDataShape, Direction } from '@/common/data';
-import { RangeLinesProps, RangeLines } from './RangeLines';
-import { CloneElement } from 'reablocks';
-import { Mask, MaskProps } from '@/common/Mask';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
 import { motion } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { BarLabelProps, BarLabel, BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
-import { formatValue, getAriaLabel } from '@/common/utils/formatting';
-import { GuideBarProps, GuideBar } from './GuideBar';
-import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
-import { Glow } from '@/common/Glow';
-import { ClickEvent } from '@/common/types';
-import { generateGlowStyles } from '@/common/Glow/utils';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
 import { mergeDefaultProps } from '@/common';
+import type { ChartInternalShallowDataShape, Direction } from '@/common/data';
+import type { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import type { GradientProps } from '@/common/Gradient';
+import { Gradient } from '@/common/Gradient';
+import type { MaskProps } from '@/common/Mask';
+import { Mask } from '@/common/Mask';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
+import type { ClickEvent } from '@/common/types';
+import { formatValue, getAriaLabel } from '@/common/utils/formatting';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+
+import type { BarLabel, BarLabelProps } from './BarLabel';
+import { BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
+import type { GuideBar, GuideBarProps } from './GuideBar';
+import type { RangeLines, RangeLinesProps } from './RangeLines';
 
 export type BarType =
   | 'standard'

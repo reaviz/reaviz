@@ -1,4 +1,7 @@
 import React from 'react';
+import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
+
+import { schemes } from '../src/common/color/schemes';
 import {
   FunnelArc,
   FunnelAxis,
@@ -7,8 +10,6 @@ import {
   FunnelSeries,
   TooltipArea
 } from '../src/index';
-import { largeFunnelData, simpleFunnelData } from 'reaviz-data-utils';
-import { schemes } from '../src/common/color/schemes';
 
 export default {
   tags: ['snapshot'],

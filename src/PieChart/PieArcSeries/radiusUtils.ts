@@ -1,6 +1,7 @@
 import { max } from 'd3-array';
 import { arc } from 'd3-shape';
-import { ArcData } from '@/PieChart';
+
+import type { ArcData } from '@/PieChart';
 
 const factor = 1.2;
 const midAngle = (d: ArcData) => d.startAngle + (d.endAngle - d.startAngle) / 2;

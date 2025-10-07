@@ -1,7 +1,9 @@
 import React from 'react';
 import { medDateData, multiDateData } from 'reaviz-data-utils';
+
 import { LinearValueMarker, RadialValueMarker } from '@/common';
 import { RadialAreaChart, RadialAreaSeries } from '@/RadialAreaChart';
+
 import { LineChart } from './LineChart';
 import { LineSeries } from './LineSeries';
 
@@ -29,8 +31,8 @@ export const LinearValueMarkers = () => (
         type="grouped"
         colorScheme="cybertron"
         valueMarkers={[
-          <LinearValueMarker value={12} color="#D740BE" />,
-          <LinearValueMarker value={6} color="#F8A340" />
+          <LinearValueMarker key={12} value={12} color="#D740BE" />,
+          <LinearValueMarker key={6} value={6} color="#F8A340" />
         ]}
       />
     }
@@ -49,11 +51,13 @@ export const RadialValueMarkersVertical = () => (
         colorScheme="cybertron"
         valueMarkers={[
           <LinearValueMarker
+            key={multiDateData[0].data[1].key.toISOString()}
             value={multiDateData[0].data[1].key}
             color="#D740BE"
             direction="vertical"
           />,
           <LinearValueMarker
+            key={multiDateData[0].data[2].key.toISOString()}
             value={multiDateData[0].data[2].key}
             color="#F8A340"
             direction="vertical"

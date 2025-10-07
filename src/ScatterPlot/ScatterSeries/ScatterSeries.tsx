@@ -1,9 +1,13 @@
-import React, { useCallback, Fragment, ReactElement, FC } from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import { CloneElement } from 'reablocks';
-import { ScatterPoint, ScatterPointProps } from './ScatterPoint';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback } from 'react';
 import { identifier } from 'safe-identifier';
-import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+
+import type { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import type { ChartInternalShallowDataShape } from '@/common/data';
+
+import type { ScatterPointProps } from './ScatterPoint';
+import { ScatterPoint } from './ScatterPoint';
 
 export interface ScatterSeriesProps {
   /**

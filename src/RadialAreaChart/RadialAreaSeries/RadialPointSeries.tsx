@@ -1,12 +1,11 @@
-import React, { useCallback, ReactElement, FC } from 'react';
-import {
-  RadialScatterSeries,
-  RadialScatterPoint,
-  RadialScatterPointProps
-} from '@/RadialScatterPlot';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
 import isEqual from 'react-fast-compare';
+
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import type { RadialScatterPointProps } from '@/RadialScatterPlot';
+import { RadialScatterPoint, RadialScatterSeries } from '@/RadialScatterPlot';
 
 export interface RadialPointSeriesProps {
   /**

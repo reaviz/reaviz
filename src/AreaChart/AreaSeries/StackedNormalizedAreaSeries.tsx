@@ -1,15 +1,16 @@
-import React, { FC, useMemo } from 'react';
-import {
-  AreaSeriesProps,
-  AreaSeries,
-  AREA_SERIES_DEFAULT_PROPS
-} from './AreaSeries';
-import { formatValue } from '@/common/utils/formatting';
-import { TooltipTemplate, TooltipArea, ChartTooltip } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { POINT_SERIES_DEFAULT_PROPS, PointSeriesProps } from './PointSeries';
-import { ScatterPointProps } from '@/ScatterPlot';
-import { InterpolationTypes } from '@/common';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
+import type { InterpolationTypes } from '@/common';
+import { ChartTooltip, TooltipArea, TooltipTemplate } from '@/common/Tooltip';
+import { formatValue } from '@/common/utils/formatting';
+import type { ScatterPointProps } from '@/ScatterPlot';
+
+import type { AreaSeriesProps } from './AreaSeries';
+import { AREA_SERIES_DEFAULT_PROPS, AreaSeries } from './AreaSeries';
+import type { PointSeriesProps } from './PointSeries';
+import { POINT_SERIES_DEFAULT_PROPS } from './PointSeries';
 
 export const StackedNormalizedAreaSeries: FC<Partial<AreaSeriesProps>> = (
   props

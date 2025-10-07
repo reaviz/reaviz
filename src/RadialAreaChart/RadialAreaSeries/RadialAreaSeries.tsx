@@ -1,31 +1,28 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useState
-} from 'react';
-import {
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
+
+import type { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor, schemes } from '@/common/color';
+import type {
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
 } from '@/common/data';
-import { getColor, ColorSchemeType, schemes } from '@/common/color';
-import { CloneElement } from 'reablocks';
-import { RadialAreaProps, RadialArea } from './RadialArea';
-import { RadialLine, RadialLineProps } from './RadialLine';
-import { RadialInterpolationTypes } from '@/common/utils/interpolation';
+import type { TooltipAreaProps } from '@/common/Tooltip';
+import { TooltipArea } from '@/common/Tooltip';
+import type { RadialInterpolationTypes } from '@/common/utils/interpolation';
+
+import type { RadialAreaProps } from './RadialArea';
+import { RadialArea } from './RadialArea';
+import type { RadialLineProps } from './RadialLine';
+import { RadialLine } from './RadialLine';
+import type { RadialPointSeriesProps } from './RadialPointSeries';
 import {
   RADIAL_POINT_SERIES_DEFAULT_PROPS,
-  RadialPointSeries,
-  RadialPointSeriesProps
+  RadialPointSeries
 } from './RadialPointSeries';
-import { TooltipAreaProps, TooltipArea } from '@/common/Tooltip';
-import {
-  mergeDefaultProps,
-  RadialValueMarker,
-  RadialValueMarkerProps
-} from '@/common';
 
 export type RadialPointSeriesType = 'standard' | 'grouped';
 

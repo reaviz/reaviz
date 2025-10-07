@@ -1,14 +1,16 @@
+import chroma from 'chroma-js';
+import { range } from 'd3-array';
 import React, { Fragment, useState } from 'react';
-import { BarChart } from './BarChart';
 import {
   categoryData,
   largeCategoryData,
   nonZeroCategoryData
 } from 'reaviz-data-utils';
-import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
-import chroma from 'chroma-js';
-import { range } from 'd3-array';
+
 import { Stripes } from '@/common/Mask';
+
+import { BarChart } from './BarChart';
+import { Bar, BarLabel, BarSeries, GuideBar } from './BarSeries';
 
 export default {
   tags: ['snapshot'],

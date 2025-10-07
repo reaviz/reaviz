@@ -1,4 +1,5 @@
-import React, { FC, useMemo } from 'react';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
 
 export interface LinearAxisTickLineProps {
   height: number;

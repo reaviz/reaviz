@@ -1,4 +1,6 @@
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
+
 import { calculateDimensions } from './size';
 
 export interface WrapTextInputs {
@@ -35,7 +37,7 @@ export function wrapText({
   const words = key.toString().split(/\s+/);
 
   if (words.length > 1 && size.width > width) {
-    let rows = [];
+    const rows = [];
     let maxWidth = 0;
     let maxHeight = 0;
     let curText = '';

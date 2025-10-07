@@ -1,13 +1,15 @@
-import React, { FC, useMemo } from 'react';
-import {
-  AreaSeriesProps,
-  AreaSeries,
-  AREA_SERIES_DEFAULT_PROPS
-} from './AreaSeries';
 import { CloneElement } from 'reablocks';
-import { POINT_SERIES_DEFAULT_PROPS, PointSeriesProps } from './PointSeries';
-import { SCATTER_POINT_DEFAULT_PROPS, ScatterPointProps } from '@/ScatterPlot';
-import { InterpolationTypes } from '@/common';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
+import type { InterpolationTypes } from '@/common';
+import type { ScatterPointProps } from '@/ScatterPlot';
+import { SCATTER_POINT_DEFAULT_PROPS } from '@/ScatterPlot';
+
+import type { AreaSeriesProps } from './AreaSeries';
+import { AREA_SERIES_DEFAULT_PROPS, AreaSeries } from './AreaSeries';
+import type { PointSeriesProps } from './PointSeries';
+import { POINT_SERIES_DEFAULT_PROPS } from './PointSeries';
 
 export const StackedAreaSeries: FC<Partial<AreaSeriesProps>> = (props) => {
   const { symbols, interpolation, ...rest } = {

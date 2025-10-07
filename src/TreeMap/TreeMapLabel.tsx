@@ -1,4 +1,6 @@
-import React, { FC } from 'react';
+import type { FC } from 'react';
+import React from 'react';
+
 import { calculateDimensions, wrapText } from '@/common/utils';
 
 export interface TreeMapLabelProps {

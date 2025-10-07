@@ -1,4 +1,5 @@
 import { scaleBand } from 'd3-scale';
+
 import { uniqueBy } from '@/common/utils/array';
 
 /**

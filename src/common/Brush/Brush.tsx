@@ -1,15 +1,12 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  FC,
-  PropsWithChildren,
-  useCallback
-} from 'react';
-import { getPositionForTarget } from '@/common/utils/position';
-import { BrushSlice, BrushChangeEvent } from './BrushSlice';
-import { ChartDataTypes } from '@/common/data';
+import type { FC, PropsWithChildren } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+
+import type { ChartDataTypes } from '@/common/data';
 import { Move } from '@/common/Gestures/Move';
+import { getPositionForTarget } from '@/common/utils/position';
+
+import type { BrushChangeEvent } from './BrushSlice';
+import { BrushSlice } from './BrushSlice';
 
 export interface BrushConfiguration {
   disabled?: boolean;

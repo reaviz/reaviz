@@ -1,20 +1,22 @@
 import React, { Fragment, useState } from 'react';
-import { ScatterPlot } from './ScatterPlot';
 import {
+  largeSignalChartData,
   randomNumber,
-  singleDateData,
-  largeSignalChartData
+  singleDateData
 } from 'reaviz-data-utils';
-import { ScatterSeries, ScatterPoint } from './ScatterSeries';
+
 import {
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel,
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
-  LinearXAxisTickLabel
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
-import { getYScale, getXScale } from '@/common/scales';
+import { getXScale, getYScale } from '@/common/scales';
+
+import { ScatterPlot } from './ScatterPlot';
+import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
 export default {
   tags: ['snapshot'],
@@ -69,6 +71,7 @@ export const TopBottomAxis = () => {
       }
       secondaryAxis={[
         <LinearXAxis
+          key="category"
           type="category"
           orientation="horizontal"
           position="start"
@@ -132,6 +135,7 @@ export const LeftRightAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           position="start"
           axisLine={null}

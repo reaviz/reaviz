@@ -1,33 +1,23 @@
-import {
-  LinearValueMarker,
-  LinearValueMarkerProps,
-  mergeDefaultProps
-} from '@/common';
-import { ColorSchemeType, getColor } from '@/common/color';
-import {
+import { offset } from '@floating-ui/dom';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
+import type { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { mergeDefaultProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor } from '@/common/color';
+import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
   Direction
 } from '@/common/data';
-import {
-  ChartTooltip,
-  TooltipArea,
-  TooltipAreaEvent,
-  TooltipAreaProps
-} from '@/common/Tooltip';
-import { offset } from '@floating-ui/dom';
-import { CloneElement } from 'reablocks';
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useRef,
-  useState
-} from 'react';
-import { Bar, BAR_DEFAULT_PROPS, BarProps, BarType } from './Bar';
+import type { TooltipAreaEvent, TooltipAreaProps } from '@/common/Tooltip';
+import { ChartTooltip, TooltipArea } from '@/common/Tooltip';
+
+import type { BarProps, BarType } from './Bar';
+import { Bar, BAR_DEFAULT_PROPS } from './Bar';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 

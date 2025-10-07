@@ -1,22 +1,24 @@
 import chroma from 'chroma-js';
-import { multiDateData, longMultiDateData } from 'reaviz-data-utils';
-import { LineChart } from './LineChart';
+import { longMultiDateData, multiDateData } from 'reaviz-data-utils';
+
 import {
-  StackedAreaChart,
-  StackedNormalizedAreaChart,
-  StackedAreaSeries,
   Line,
-  StackedNormalizedAreaSeries,
-  PointSeries
+  PointSeries,
+  StackedAreaChart,
+  StackedAreaSeries,
+  StackedNormalizedAreaChart,
+  StackedNormalizedAreaSeries
 } from '@/AreaChart';
 import {
-  LinearXAxisTickSeries,
   LinearXAxis,
-  LinearYAxisTickSeries,
-  LinearYAxis
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
-import { LineSeries } from './LineSeries';
+
 import { ScatterPoint } from '../ScatterPlot';
+import { LineChart } from './LineChart';
+import { LineSeries } from './LineSeries';
 
 export default {
   tags: ['snapshot'],

@@ -1,7 +1,13 @@
-import React, { FC } from 'react';
-import { ChartShallowDataShape, ChartInternalDataTypes } from '@/common/data';
-import { formatValue } from '@/common/utils';
 import classNames from 'classnames';
+import type { FC } from 'react';
+import React from 'react';
+
+import type {
+  ChartInternalDataTypes,
+  ChartShallowDataShape
+} from '@/common/data';
+import { formatValue } from '@/common/utils';
+
 import css from './RadialGaugeLabel.module.css';
 
 export interface RadialGaugeLabelProps {

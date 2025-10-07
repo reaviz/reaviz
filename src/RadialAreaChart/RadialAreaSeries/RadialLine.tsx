@@ -1,14 +1,16 @@
-import React, { useCallback, useMemo, FC } from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
 import {
-  radialLine,
-  curveCardinalClosed,
-  curveLinearClosed,
   curveCardinal,
-  curveLinear
+  curveCardinalClosed,
+  curveLinear,
+  curveLinearClosed,
+  radialLine
 } from 'd3-shape';
-import { RadialInterpolationTypes } from '@/common/utils/interpolation';
-import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
+import type { FC } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
+import type { RadialInterpolationTypes } from '@/common/utils/interpolation';
 
 export interface RadialLineProps {
   /**
@@ -107,13 +109,13 @@ export const RadialLine: FC<Partial<RadialLineProps>> = ({
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: hasArea ? 0 : index * 0.05
-        }
+            ...DEFAULT_TRANSITION,
+            delay: hasArea ? 0 : index * 0.05
+          }
         : {
-          type: false as const,
-          delay: 0
-        },
+            type: false as const,
+            delay: 0
+          },
     [animated, index, hasArea]
   );
 

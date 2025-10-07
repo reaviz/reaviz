@@ -1,14 +1,14 @@
-import React, { useCallback, FC } from 'react';
-import cloud from 'd3-cloud';
 import { max } from 'd3-array';
+import cloud from 'd3-cloud';
 import { scaleLinear } from 'd3-scale';
+import type { FC } from 'react';
+import React, { useCallback } from 'react';
+
 import { getColor, schemes } from '@/common/color';
-import { ChartShallowDataShape } from '@/common/data';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContextProps
-} from '@/common/containers';
+import type { ChartContextProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type { ChartShallowDataShape } from '@/common/data';
+
 import { WordCloudLabel } from './WordCloudLabel';
 
 export interface WordCloudProps extends ChartProps {

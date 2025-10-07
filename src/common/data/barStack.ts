@@ -1,11 +1,16 @@
-import { stack, stackOffsetExpand, stackOffsetDiverging } from 'd3-shape';
-import { ChartNestedDataShape, ChartInternalNestedDataShape } from './types';
+import { stack, stackOffsetDiverging, stackOffsetExpand } from 'd3-shape';
+
+import { uniqueBy } from '@/common/utils/array';
+
 import {
   getMaxBigIntegerForNested,
   normalizeValue,
   normalizeValueForFormatting
 } from './bigInteger';
-import { uniqueBy } from '@/common/utils/array';
+import type {
+  ChartInternalNestedDataShape,
+  ChartNestedDataShape
+} from './types';
 
 export type StackTypes = 'default' | 'expand' | 'diverging';
 

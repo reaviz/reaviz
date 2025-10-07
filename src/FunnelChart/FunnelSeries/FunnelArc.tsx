@@ -1,24 +1,20 @@
-import React, { FC, ReactElement, useMemo } from 'react';
-import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
-import {
-  InterpolationTypes,
-  getAriaLabel,
-  interpolate,
-  mergeDefaultProps
-} from '@/common/utils';
-import { ColorSchemeType, getColor, schemes } from '@/common/color';
-import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
-import { CloneElement } from 'reablocks';
 import { motion } from 'motion/react';
-import {
-  ChartTooltip,
-  TooltipArea,
-  TooltipAreaProps,
-  TooltipTemplate
-} from '@/common/Tooltip';
-import { Glow } from '@/common/Glow';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ColorSchemeType } from '@/common/color';
+import { getColor, schemes } from '@/common/color';
+import type { ChartShallowDataShape } from '@/common/data';
+import type { Glow } from '@/common/Glow';
 import { generateGlowStyles } from '@/common/Glow/utils';
+import type { GradientProps } from '@/common/Gradient';
+import { Gradient, GradientStop } from '@/common/Gradient';
+import type { TooltipArea, TooltipAreaProps } from '@/common/Tooltip';
+import { ChartTooltip, TooltipTemplate } from '@/common/Tooltip';
+import type { InterpolationTypes } from '@/common/utils';
+import { getAriaLabel, interpolate, mergeDefaultProps } from '@/common/utils';
 
 export interface FunnelArcProps {
   /**

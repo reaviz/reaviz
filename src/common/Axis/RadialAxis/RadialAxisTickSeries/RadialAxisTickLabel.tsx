@@ -1,4 +1,6 @@
-import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
+import type { FC, SVGTextElementAttributes } from 'react';
+import React, { useMemo } from 'react';
+
 import { formatValue } from '@/common/utils/formatting';
 import classNames from 'classnames';
 import css from './RadialAxisTickLabel.module.css';

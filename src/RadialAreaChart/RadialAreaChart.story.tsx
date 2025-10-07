@@ -1,20 +1,22 @@
-import { RadialAreaChart } from './RadialAreaChart';
-import { medDateData, categoryData, multiCategory } from 'reaviz-data-utils';
+import { categoryData, medDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
-  RadialAreaSeries,
+  RadialAxis,
+  RadialAxisArcSeries,
+  RadialAxisTick,
+  RadialAxisTickLabel,
+  RadialAxisTickLine,
+  RadialAxisTickSeries
+} from '@/common/Axis';
+import { GradientStop, RadialGradient } from '@/common/Gradient';
+
+import { RadialAreaChart } from './RadialAreaChart';
+import {
   RadialArea,
+  RadialAreaSeries,
   RadialLine,
   RadialPointSeries
 } from './RadialAreaSeries';
-import {
-  RadialAxis,
-  RadialAxisTickSeries,
-  RadialAxisTick,
-  RadialAxisTickLabel,
-  RadialAxisArcSeries,
-  RadialAxisTickLine
-} from '@/common/Axis';
-import { GradientStop, RadialGradient } from '@/common/Gradient';
 
 export default {
   tags: ['snapshot'],

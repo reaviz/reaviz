@@ -1,21 +1,18 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useCallback,
-  useMemo,
-  useRef
-} from 'react';
-import { ChartInternalShallowDataShape } from '@/common/data';
-import { arc } from 'd3-shape';
-import { Gradient } from '@/common/Gradient';
 import chroma from 'chroma-js';
 import { path } from 'd3-path';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { MotionBar } from './MotionBar';
-import { RadialGuideBar, RadialGuideBarProps } from './RadialGuideBar';
-import { CloneElement } from 'reablocks';
 import { scaleBand } from 'd3-scale';
+import { arc } from 'd3-shape';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef } from 'react';
+
+import type { ChartInternalShallowDataShape } from '@/common/data';
+import { Gradient } from '@/common/Gradient';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+
+import { MotionBar } from './MotionBar';
+import type { RadialGuideBarProps } from './RadialGuideBar';
+import { RadialGuideBar } from './RadialGuideBar';
 
 export interface RadialBarProps {
   /**

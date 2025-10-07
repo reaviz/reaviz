@@ -1,13 +1,15 @@
 import React from 'react';
-import { GradientStop } from './GradientStop';
-import { RadialGradient } from './RadialGradient';
+import { categoryData } from 'reaviz-data-utils';
+
+import { RadialAxis } from '@/common/Axis/RadialAxis';
 import {
   RadialArea,
   RadialAreaChart,
   RadialAreaSeries
 } from '@/RadialAreaChart';
-import { categoryData } from 'reaviz-data-utils';
-import { RadialAxis } from '@/common/Axis/RadialAxis';
+
+import { GradientStop } from './GradientStop';
+import { RadialGradient } from './RadialGradient';
 
 export default {
   title: 'Utils/Gradient/Radial',

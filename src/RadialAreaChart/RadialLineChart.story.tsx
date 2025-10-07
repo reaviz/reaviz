@@ -1,4 +1,5 @@
 import { categoryData, medDateData, multiCategory } from 'reaviz-data-utils';
+
 import {
   RadialAxis,
   RadialAxisArcSeries,
@@ -7,6 +8,7 @@ import {
   RadialAxisTickLine,
   RadialAxisTickSeries
 } from '@/common/Axis';
+
 import { RadialAreaChart } from './RadialAreaChart';
 import {
   RadialArea,

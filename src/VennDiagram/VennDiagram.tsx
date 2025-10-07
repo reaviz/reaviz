@@ -1,13 +1,14 @@
-import React, { FC, ReactElement, useCallback } from 'react';
-import {
-  ChartContainer,
-  ChartContainerChildProps,
-  ChartProps
-} from '@/common/containers';
 import { layout } from '@upsetjs/venn.js';
-import { VennSeries, VennSeriesProps } from './VennSeries';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback } from 'react';
+
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+
 import { starEulerLayout } from './starEuler';
+import type { VennSeriesProps } from './VennSeries';
+import { VennSeries } from './VennSeries';
 
 export interface VennDiagramData {
   /**

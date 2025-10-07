@@ -1,11 +1,7 @@
-import React, {
-  Children,
-  cloneElement,
-  PropsWithChildren,
-  FC,
-  useEffect,
-  useRef
-} from 'react';
+import type { FC, PropsWithChildren } from 'react';
+import type React from 'react';
+import { Children, cloneElement, useEffect, useRef } from 'react';
+
 import { toggleTextSelection } from '@/common/utils/selection';
 
 interface MoveProps extends PropsWithChildren {

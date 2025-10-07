@@ -1,5 +1,6 @@
-import { Glow } from './Glow';
 import chroma from 'chroma-js';
+
+import type { Glow } from './Glow';
 
 export interface generateGlowStylesInput {
   glow?: Glow;

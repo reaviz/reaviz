@@ -1,18 +1,19 @@
+import bigInt from 'big-integer';
 import { median } from 'd3-array';
-import {
-  ChartInternalNestedDataShape,
-  ChartShallowDataShape,
-  ChartNestedDataShape,
-  ChartInternalShallowDataShape,
-  ChartDataTypes
-} from './types';
+
 import {
   getMaxBigIntegerForNested,
   getMaxBigIntegerForShallow,
   normalizeValue,
   normalizeValueForFormatting
 } from './bigInteger';
-import bigInt from 'big-integer';
+import type {
+  ChartDataTypes,
+  ChartInternalNestedDataShape,
+  ChartInternalShallowDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape
+} from './types';
 
 export type Direction = 'vertical' | 'horizontal';
 

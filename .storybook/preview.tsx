@@ -1,8 +1,9 @@
-import theme from './theme';
-import { Preview } from '@storybook/react';
-import formatCode from './utils/formatCode';
+import '../src/index.css';
 
-import '../src/index.css'
+import type { Preview } from '@storybook/react';
+
+import theme from './theme';
+import formatCode from './utils/formatCode';
 
 const preview: Preview = {
   parameters: {
@@ -17,8 +18,18 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Docs', ['Intro', 'Getting Started', 'Chart Types', 'Utils', 'Advanced', 'Support']]
-      },
+        order: [
+          'Docs',
+          [
+            'Intro',
+            'Getting Started',
+            'Chart Types',
+            'Utils',
+            'Advanced',
+            'Support'
+          ]
+        ]
+      }
     }
   }
 };

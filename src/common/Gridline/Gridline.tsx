@@ -1,7 +1,9 @@
 import classNames from 'classnames';
-import React, { FC, useMemo } from 'react';
-import css from './Gridline.module.css';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
 import { mergeDefaultProps } from '../utils';
+import css from './Gridline.module.css';
 
 export interface GridlineProps {
   /**

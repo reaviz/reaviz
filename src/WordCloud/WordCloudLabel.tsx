@@ -1,11 +1,15 @@
-import React, { FC, ReactElement, useRef, useState } from 'react';
-import { motion } from 'motion/react';
-import { ChartShallowDataShape } from '../common/data';
-import { ChartTooltip, ChartTooltipProps } from '../common/Tooltip';
-import { CloneElement } from 'reablocks';
 import classNames from 'classnames';
-import css from './WordCloudLabel.module.css';
+import { motion } from 'motion/react';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useRef, useState } from 'react';
+
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
+
+import type { ChartShallowDataShape } from '../common/data';
+import type { ChartTooltipProps } from '../common/Tooltip';
+import { ChartTooltip } from '../common/Tooltip';
+import css from './WordCloudLabel.module.css';
 
 export interface WordCloudLabelProps {
   /**

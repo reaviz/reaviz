@@ -1,22 +1,21 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useState,
-  useCallback,
-  useMemo
-} from 'react';
-import {
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useState } from 'react';
+import isEqual from 'react-fast-compare';
+
+import type { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import type { ColorSchemeType } from '@/common/color';
+import { getColor, schemes } from '@/common/color';
+import type {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape
 } from '@/common/data';
-import { RadialBar, RadialBarProps } from './RadialBar';
-import { CloneElement } from 'reablocks';
-import { ColorSchemeType, getColor, schemes } from '@/common/color';
-import { TooltipAreaProps, TooltipArea, ChartTooltip } from '@/common/Tooltip';
-import isEqual from 'react-fast-compare';
-import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
+import type { TooltipAreaProps } from '@/common/Tooltip';
+import { ChartTooltip, TooltipArea } from '@/common/Tooltip';
+
+import type { RadialBarProps } from './RadialBar';
+import { RadialBar } from './RadialBar';
 
 export type RadialBarSeriesType = 'standard' | 'grouped';
 

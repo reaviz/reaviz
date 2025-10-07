@@ -1,23 +1,26 @@
-import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
+import { max } from 'd3-array';
+import type { TimeInterval } from 'd3-time';
+import ellipsize from 'ellipsize';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import { mergeDefaultProps } from '@/common/utils';
+import { formatValue } from '@/common/utils/formatting';
+import { calculateDimensions } from '@/common/utils/size';
+import { getMaxTicks, getTicks } from '@/common/utils/ticks';
+
+import type { LinearAxisProps } from './LinearAxis';
+import type { LinearAxisTickLabelProps } from './LinearAxisTickLabel';
 import {
   LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
-  LinearAxisTickLabel,
-  LinearAxisTickLabelProps
+  LinearAxisTickLabel
 } from './LinearAxisTickLabel';
+import type { LinearAxisTickLineProps } from './LinearAxisTickLine';
 import {
   LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
-  LinearAxisTickLine,
-  LinearAxisTickLineProps
+  LinearAxisTickLine
 } from './LinearAxisTickLine';
-import { formatValue } from '@/common/utils/formatting';
-import { getTicks, getMaxTicks } from '@/common/utils/ticks';
-import { TimeInterval } from 'd3-time';
-import { CloneElement } from 'reablocks';
-import { LinearAxisProps } from './LinearAxis';
-import ellipsize from 'ellipsize';
-import { max } from 'd3-array';
-import { calculateDimensions } from '@/common/utils/size';
-import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickSeriesProps {
   height: number;

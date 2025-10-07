@@ -1,15 +1,16 @@
-import React, { FC, ReactElement, useCallback, useMemo } from 'react';
 import classNames from 'classnames';
-import { PieArcDatum } from 'd3-shape';
+import type { PieArcDatum } from 'd3-shape';
 import { pie } from 'd3-shape';
 import { CloneElement, useId } from 'reablocks';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers';
-import { ChartShallowDataShape } from '@/common/data';
-import { PieArcSeries, PieArcSeriesProps } from './PieArcSeries';
+import type { FC, ReactElement } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type { ChartShallowDataShape } from '@/common/data';
+
+import type { PieArcSeriesProps } from './PieArcSeries';
+import { PieArcSeries } from './PieArcSeries';
 
 export type ArcData = PieArcDatum<ChartShallowDataShape>;
 

@@ -1,5 +1,6 @@
-import React, { FC } from 'react';
 import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React from 'react';
 
 export interface GuideBarProps extends SVGRect {
   /**

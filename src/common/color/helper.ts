@@ -1,7 +1,8 @@
+import { extent, maxIndex } from 'd3-array';
 import { scaleOrdinal, scaleQuantile } from 'd3-scale';
-import { maxIndex, extent } from 'd3-array';
-import { schemes } from './schemes';
+
 import { uniqueBy } from '../utils';
+import { schemes } from './schemes';
 
 export type ColorSchemeType =
   | ((data, index: number, active?: any[]) => string)
@@ -205,7 +206,10 @@ export const createColorSchemeValueScales = (
       valueScales.set(key, valueScale);
     });
   } else {
-    valueScales.set('fill', getValueScale(data, colorScheme, emptyColor, selections));
+    valueScales.set(
+      'fill',
+      getValueScale(data, colorScheme, emptyColor, selections)
+    );
   }
 
   return valueScales;

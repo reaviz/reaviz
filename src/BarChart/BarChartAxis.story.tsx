@@ -1,29 +1,31 @@
 import React from 'react';
-import { StackedBarChart } from './StackedBarChart';
 import { binnedDateData } from 'reaviz-data-utils';
-import {
-  Bar,
-  StackedBarSeries,
-  RangeLines,
-  BarSeries,
-  StackedNormalizedBarSeries,
-  BarLabel,
-  GuideBar,
-  HistogramBarSeries,
-  MarimekkoBarSeries
-} from './BarSeries';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+
 import {
   LinearXAxis,
+  LinearXAxisTickLabel,
   LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearYAxisTickSeries
 } from '@/common/Axis/LinearAxis';
 import { Gradient, GradientStop } from '@/common/Gradient';
+import { Gridline, GridlineSeries } from '@/common/Gridline';
 import { getXScale, getYScale } from '@/common/scales';
+
 import { BarChart } from './BarChart';
+import {
+  Bar,
+  BarLabel,
+  BarSeries,
+  GuideBar,
+  HistogramBarSeries,
+  MarimekkoBarSeries,
+  RangeLines,
+  StackedBarSeries,
+  StackedNormalizedBarSeries
+} from './BarSeries';
+import { StackedBarChart } from './StackedBarChart';
 
 export default {
   tags: ['snapshot'],
@@ -77,6 +79,7 @@ export const TopBottomAxis = () => {
           colorScheme={['#ACB7C9', '#418AD7']}
           bar={[
             <Bar
+              key="top"
               width={10}
               gradient={
                 <Gradient
@@ -89,6 +92,7 @@ export const TopBottomAxis = () => {
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
             />,
             <Bar
+              key="bottom"
               width={10}
               gradient={
                 <Gradient
@@ -123,6 +127,7 @@ export const TopBottomAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="horizontal"
           orientation="horizontal"
           type="category"
           scale={scale}
@@ -184,6 +189,7 @@ export const LeftRightAxis = () => {
           colorScheme={['#ACB7C9', '#418AD7']}
           bar={[
             <Bar
+              key="left"
               width={25}
               gradient={
                 <Gradient
@@ -196,6 +202,7 @@ export const LeftRightAxis = () => {
               rangeLines={<RangeLines position="top" strokeWidth={3} />}
             />,
             <Bar
+              key="right"
               width={25}
               gradient={
                 <Gradient
@@ -238,6 +245,7 @@ export const LeftRightAxis = () => {
       }
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           position="start"
           axisLine={null}

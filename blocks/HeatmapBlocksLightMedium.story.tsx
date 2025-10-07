@@ -1,5 +1,11 @@
-import React from 'react';
 import { motion } from 'motion/react';
+import React from 'react';
+import {
+  heatmapMediumBlocksData,
+  heatmapMediumSimpleBlocksData
+} from 'reaviz-data-utils';
+
+import { schemes } from '../src/common/color/schemes';
 import {
   AreaChart,
   Count,
@@ -14,12 +20,6 @@ import {
   LinearYAxisTickSeries,
   SequentialLegend
 } from '../src/index';
-
-import {
-  heatmapMediumBlocksData,
-  heatmapMediumSimpleBlocksData
-} from 'reaviz-data-utils';
-import { schemes } from '../src/common/color/schemes';
 
 export default {
   tags: ['snapshot'],
@@ -651,18 +651,18 @@ export const SimpleHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';
@@ -1518,18 +1518,18 @@ export const IntensityHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';
@@ -2383,18 +2383,18 @@ export const CorrelationHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';
@@ -3248,18 +3248,18 @@ export const GeospatialHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';
@@ -4113,18 +4113,18 @@ export const WarmHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';
@@ -4984,18 +4984,18 @@ export const HotHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';
@@ -5852,18 +5852,18 @@ export const ClassicHex = () => {
 
                     const d = `M ${radius * slimFactor} 0
                              L ${(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-(radius * slimFactor) / 2} ${
-      (radius * Math.sqrt(3)) / 2
-    }
+                               (radius * Math.sqrt(3)) / 2
+                             }
                              L ${-radius * slimFactor} 0
                              L ${-(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    }
+                               -(radius * Math.sqrt(3)) / 2
+                             }
                              L ${(radius * slimFactor) / 2} ${
-      -(radius * Math.sqrt(3)) / 2
-    } Z`;
+                               -(radius * Math.sqrt(3)) / 2
+                             } Z`;
 
                     if (rowNumber % 2 === 0) {
                       transform = 'translate(17, 8) rotate(90)';

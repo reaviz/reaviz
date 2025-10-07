@@ -1,28 +1,28 @@
+import { line } from 'd3-shape';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
 import React, {
-  FC,
   Fragment,
-  ReactElement,
   useCallback,
   useEffect,
   useMemo,
   useRef,
   useState
 } from 'react';
-import { line } from 'd3-shape';
-import { interpolate, InterpolationTypes } from '@/common/utils/interpolation';
-import {
+
+import type { Glow, Gradient, GradientProps } from '@/common';
+import { roundDecimals } from '@/common';
+import type {
   ChartInternalDataShape,
   ChartInternalShallowDataShape
 } from '@/common/data';
-import { calculateShowStroke } from '@/common/utils/stroke';
-import {
-  constructFunctionProps,
-  PropFunctionTypes
-} from '@/common/utils/functions';
-import { MotionPath, DEFAULT_TRANSITION } from '@/common/Motion';
-import { Glow, Gradient, GradientProps, roundDecimals } from '@/common';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { CloneElement } from 'reablocks';
+import { DEFAULT_TRANSITION, MotionPath } from '@/common/Motion';
+import type { PropFunctionTypes } from '@/common/utils/functions';
+import { constructFunctionProps } from '@/common/utils/functions';
+import type { InterpolationTypes } from '@/common/utils/interpolation';
+import { interpolate } from '@/common/utils/interpolation';
+import { calculateShowStroke } from '@/common/utils/stroke';
 
 export interface LineProps extends PropFunctionTypes {
   /**

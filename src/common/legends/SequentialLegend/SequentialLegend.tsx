@@ -1,9 +1,11 @@
-import React, { FC, useMemo } from 'react';
-import classNames from 'classnames';
-import { ChartDataShape } from '@/common/data';
 import chroma from 'chroma-js';
-import { uniqueBy } from '@/common/utils/array';
+import classNames from 'classnames';
 import { extent } from 'd3-array';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
+import type { ChartDataShape } from '@/common/data';
+import { uniqueBy } from '@/common/utils/array';
 import { formatValue } from '@/common/utils/formatting';
 
 import css from './SequentialLegend.module.css';

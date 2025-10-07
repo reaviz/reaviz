@@ -1,20 +1,22 @@
-import React from 'react';
-import { BarChart } from './BarChart';
-import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
-import {
-  LinearXAxis,
-  LinearXAxisTickSeries,
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearXAxisTickLabel
-} from '@/common/Axis/LinearAxis';
 import chroma from 'chroma-js';
+import React from 'react';
 import {
   categoryData,
+  durationCategoryData,
   largeCategoryData,
-  nonZeroCategoryData,
-  durationCategoryData
+  nonZeroCategoryData
 } from 'reaviz-data-utils';
+
+import {
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickSeries
+} from '@/common/Axis/LinearAxis';
+
+import { BarChart } from './BarChart';
+import { Bar, BarLabel, BarSeries, GuideBar } from './BarSeries';
 import {
   HistogramBarSeries,
   MarimekkoBarSeries,

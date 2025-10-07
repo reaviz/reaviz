@@ -1,43 +1,36 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useState,
-  useRef,
-  useCallback,
-  useMemo
-} from 'react';
 import classNames from 'classnames';
-import {
-  ChartShallowDataShape,
-  buildShallowChartData,
-  ChartDataTypes
-} from '@/common/data';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo, useRef, useState } from 'react';
+
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis';
 import {
   isAxisVisible,
-  LinearAxisProps,
-  LinearXAxis,
-  LinearYAxis,
-  LinearAxis,
   LINEAR_X_AXIS_DEFAULT_PROPS,
-  LINEAR_Y_AXIS_DEFAULT_PROPS
+  LINEAR_Y_AXIS_DEFAULT_PROPS,
+  LinearXAxis,
+  LinearYAxis
 } from '@/common/Axis';
-import { getYScale, getXScale } from '@/common/scales';
-import { ScatterSeries, ScatterSeriesProps } from './ScatterSeries';
-import { GridlineSeries, GridlineSeriesProps } from '@/common/Gridline';
-import {
-  ZoomPanChangeEvent,
-  ChartZoomPanProps,
-  ChartZoomPan
-} from '@/common/ZoomPan';
-import { ChartBrushProps, ChartBrush } from '@/common/Brush';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
+import type { ChartBrush, ChartBrushProps } from '@/common/Brush';
+import type {
+  ChartContainerChildProps,
+  ChartProps
 } from '@/common/containers/ChartContainer';
-import { CloneElement } from 'reablocks';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type { ChartDataTypes, ChartShallowDataShape } from '@/common/data';
+import { buildShallowChartData } from '@/common/data';
+import type { GridlineSeriesProps } from '@/common/Gridline';
+import { GridlineSeries } from '@/common/Gridline';
+import { getXScale, getYScale } from '@/common/scales';
+import type {
+  ChartZoomPan,
+  ChartZoomPanProps,
+  ZoomPanChangeEvent
+} from '@/common/ZoomPan';
+
 import css from './ScatterPlot.module.css';
+import type { ScatterSeriesProps } from './ScatterSeries';
+import { ScatterSeries } from './ScatterSeries';
 
 export interface ScatterPlotProps extends ChartProps {
   /**

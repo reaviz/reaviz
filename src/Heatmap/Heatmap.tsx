@@ -1,33 +1,33 @@
-import React, { useCallback, Fragment, ReactElement, FC, useMemo } from 'react';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers/ChartContainer';
-import { ChartNestedDataShape, buildNestedChartData } from '@/common/data';
+import { scaleBand } from 'd3-scale';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { LinearAxis, LinearAxisProps } from '@/common/Axis';
 import {
   isAxisVisible,
-  LinearAxisProps,
-  LinearXAxis,
-  LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearXAxisTickSeries,
-  LinearYAxisTickLabel,
-  LinearXAxisTickLabel,
-  LinearAxis,
   LINEAR_X_AXIS_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LINEAR_Y_AXIS_DEFAULT_PROPS,
   LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
-  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LinearXAxis,
+  LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
+  LinearYAxis,
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
 } from '@/common/Axis';
-import {
-  HEATMAP_SERIES_DEFAULT_PROPS,
-  HeatmapSeries,
-  HeatmapSeriesProps
-} from './HeatmapSeries';
-import { scaleBand } from 'd3-scale';
+import type {
+  ChartContainerChildProps,
+  ChartProps
+} from '@/common/containers/ChartContainer';
+import { ChartContainer } from '@/common/containers/ChartContainer';
+import type { ChartNestedDataShape } from '@/common/data';
+import { buildNestedChartData } from '@/common/data';
 import { uniqueBy } from '@/common/utils/array';
+
+import type { HeatmapSeriesProps } from './HeatmapSeries';
+import { HEATMAP_SERIES_DEFAULT_PROPS, HeatmapSeries } from './HeatmapSeries';
 
 export interface HeatmapProps extends ChartProps {
   /**

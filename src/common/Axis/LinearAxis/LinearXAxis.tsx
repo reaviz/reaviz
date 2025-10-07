@@ -1,25 +1,25 @@
-import React, { FC, useMemo } from 'react';
-import {
-  LinearAxisTickLabelProps,
-  LinearAxisTickLabel,
-  LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS
-} from './LinearAxisTickLabel';
-import {
-  LinearAxisTickLineProps,
-  LinearAxisTickLine,
-  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS
-} from './LinearAxisTickLine';
-import {
-  LinearAxisTickSeriesProps,
-  LinearAxisTickSeries,
-  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS
-} from './LinearAxisTickSeries';
-import {
-  LinearAxisProps,
-  LinearAxis,
-  LINEAR_AXIS_DEFAULT_PROPS
-} from './LinearAxis';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
 import { mergeDefaultProps } from '@/common/utils';
+
+import type { LinearAxisProps } from './LinearAxis';
+import { LINEAR_AXIS_DEFAULT_PROPS, LinearAxis } from './LinearAxis';
+import type { LinearAxisTickLabelProps } from './LinearAxisTickLabel';
+import {
+  LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LinearAxisTickLabel
+} from './LinearAxisTickLabel';
+import type { LinearAxisTickLineProps } from './LinearAxisTickLine';
+import {
+  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
+  LinearAxisTickLine
+} from './LinearAxisTickLine';
+import type { LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
+import {
+  LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS,
+  LinearAxisTickSeries
+} from './LinearAxisTickSeries';
 
 export const LinearXAxisTickLabel: FC<Partial<LinearAxisTickLabelProps>> = (
   props

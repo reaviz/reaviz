@@ -1,15 +1,20 @@
-import React, { FC, useCallback } from 'react';
-import {
+import classNames from 'classnames';
+import { motion } from 'motion/react';
+import type { FC } from 'react';
+import React, { useCallback } from 'react';
+
+import type {
   ChartInternalDataTypes,
   ChartShallowDataShape,
-  ColorSchemeType,
+  ColorSchemeType
+} from '@/common';
+import {
   DEFAULT_TRANSITION,
   formatValue,
   getAriaLabel,
   getColor
 } from '@/common';
-import { motion } from 'motion/react';
-import classNames from 'classnames';
+
 import css from './BarListSeries.module.css';
 
 export type BarListLabelPosition = 'none' | 'top' | 'start' | 'end' | 'bottom';

@@ -1,7 +1,9 @@
 import React from 'react';
 import { singleDateData } from 'reaviz-data-utils';
+
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
 import { LineChart } from './LineChart';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
 
 export default {
   tags: ['snapshot'],

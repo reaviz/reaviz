@@ -1,7 +1,9 @@
-import React, { FC } from 'react';
 import { motion } from 'motion/react';
-import { wrapText } from '@/common/utils/wrapText';
+import type { FC } from 'react';
+import React from 'react';
+
 import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { wrapText } from '@/common/utils/wrapText';
 
 export interface VennLabelProps {
   /**
@@ -86,12 +88,12 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
     : { delay: 0, type: false as const };
   const text = wrap
     ? wrapText({
-      key,
-      x: data.text.x,
-      fontFamily,
-      fontSize,
-      width: data?.circles?.[0]?.radius
-    })
+        key,
+        x: data.text.x,
+        fontFamily,
+        fontSize,
+        width: data?.circles?.[0]?.radius
+      })
     : key;
 
   return (

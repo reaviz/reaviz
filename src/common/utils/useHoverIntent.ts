@@ -1,4 +1,5 @@
-import { PointerEvent, useCallback, useRef } from 'react';
+import type { PointerEvent } from 'react';
+import { useCallback, useRef } from 'react';
 
 export interface HoverIntentOptions {
   interval?: number;

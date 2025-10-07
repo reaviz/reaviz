@@ -1,6 +1,7 @@
-import { ChartShallowDataShape } from '@/common/data';
 import { max, min, range } from 'd3-array';
 import { subDays } from 'date-fns';
+
+import type { ChartShallowDataShape } from '@/common/data';
 
 export type CalendarView = 'year' | 'month';
 

@@ -1,8 +1,11 @@
-import React, { FC } from 'react';
 import classNames from 'classnames';
-import { SankeyNodeExtra } from '@/Sankey/utils';
-import css from './SankeyLabel.module.css';
 import ellipsize from 'ellipsize';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { SankeyNodeExtra } from '@/Sankey/utils';
+
+import css from './SankeyLabel.module.css';
 
 export type SankeyLabelPosition = 'inside' | 'outside';
 

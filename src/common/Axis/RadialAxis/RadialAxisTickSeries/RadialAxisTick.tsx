@@ -1,14 +1,14 @@
-import React, { FC, ReactElement, useMemo } from 'react';
-import {
-  RadialAxisTickLineProps,
-  RadialAxisTickLine,
-  RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS
-} from './RadialAxisTickLine';
-import {
-  RadialAxisTickLabelProps,
-  RadialAxisTickLabel
-} from './RadialAxisTickLabel';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { useMemo } from 'react';
+
+import type { RadialAxisTickLabelProps } from './RadialAxisTickLabel';
+import { RadialAxisTickLabel } from './RadialAxisTickLabel';
+import type { RadialAxisTickLineProps } from './RadialAxisTickLine';
+import {
+  RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS,
+  RadialAxisTickLine
+} from './RadialAxisTickLine';
 
 export interface RadialAxisTickProps {
   /**

@@ -1,11 +1,13 @@
+import chroma from 'chroma-js';
 import React from 'react';
-import { SunburstChart } from './SunburstChart';
 import { heatmapSimpleData } from 'reaviz-data-utils';
-import { SunburstSeries } from './SunburstSeries';
+
+import { Gradient } from '@/common/Gradient';
+
 import { SunburstArc } from './SunburstArc';
 import { SunburstArcLabel } from './SunburstArcLabel';
-import { Gradient } from '@/common/Gradient';
-import chroma from 'chroma-js';
+import { SunburstChart } from './SunburstChart';
+import { SunburstSeries } from './SunburstSeries';
 
 export default {
   tags: ['snapshot'],
@@ -32,7 +34,7 @@ export const Simple = () => (
   />
 );
 
-export const Gradients = ({ colorScheme = exampleColorScheme }) => (
+export const Gradients = ({ colorScheme = exampleColorScheme }: any) => (
   <SunburstChart
     id="gradients"
     height={450}
@@ -127,7 +129,7 @@ export const MultiLevel = ({
     }
   ],
   colorScheme = exampleColorScheme
-}) => (
+}: any) => (
   <SunburstChart
     id="multi-level"
     height={450}

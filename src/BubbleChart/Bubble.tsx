@@ -1,22 +1,19 @@
-import React, {
-  FC,
-  Fragment,
-  ReactElement,
-  useMemo,
-  useRef,
-  useState
-} from 'react';
-import { HierarchyCircularNode } from 'd3-hierarchy';
-import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
-import { CloneElement } from 'reablocks';
+import type { HierarchyCircularNode } from 'd3-hierarchy';
 import { motion } from 'motion/react';
-import { Gradient, GradientProps } from '@/common/Gradient';
-import { Mask, MaskProps } from '@/common/Mask';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { useHoverIntent } from '@/common/utils/useHoverIntent';
-import { Glow } from '@/common/Glow';
-import { generateGlowStyles } from '@/common/Glow/utils';
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useMemo, useRef, useState } from 'react';
+
 import { getAriaLabel } from '@/common';
+import type { Glow } from '@/common/Glow';
+import { generateGlowStyles } from '@/common/Glow/utils';
+import type { Gradient, GradientProps } from '@/common/Gradient';
+import type { MaskProps } from '@/common/Mask';
+import { Mask } from '@/common/Mask';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { ChartTooltipProps } from '@/common/Tooltip';
+import { ChartTooltip } from '@/common/Tooltip';
+import { useHoverIntent } from '@/common/utils/useHoverIntent';
 
 export interface BubbleProps {
   /**

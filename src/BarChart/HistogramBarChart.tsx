@@ -1,6 +1,10 @@
-import React, { FC } from 'react';
-import { ChartShallowDataShape } from '@/common/data';
-import { BarChartProps, BarChart } from './BarChart';
+import type { FC } from 'react';
+import React from 'react';
+
+import type { ChartShallowDataShape } from '@/common/data';
+
+import type { BarChartProps } from './BarChart';
+import { BarChart } from './BarChart';
 import {
   HISTOGRAM_BAR_SERIES_DEFAULT_PROPS,
   HistogramBarSeries

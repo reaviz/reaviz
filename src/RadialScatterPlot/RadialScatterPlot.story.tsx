@@ -1,18 +1,19 @@
 import {
-  medDateData,
+  categoryData,
   largeSignalChartData,
-  medSignalChartData,
-  categoryData
+  medDateData,
+  medSignalChartData
 } from 'reaviz-data-utils';
-import { RadialScatterPlot } from './RadialScatterPlot';
-import { RadialScatterSeries, RadialScatterPoint } from './RadialScatterSeries';
+
 import {
   RadialAxis,
-  RadialAxisTickSeries,
   RadialAxisArcSeries,
   RadialAxisTick,
-  RadialAxisTickLine
+  RadialAxisTickLine,
+  RadialAxisTickSeries
 } from '../common/Axis/RadialAxis';
+import { RadialScatterPlot } from './RadialScatterPlot';
+import { RadialScatterPoint, RadialScatterSeries } from './RadialScatterSeries';
 
 export default {
   title: 'Charts/Scatter Plot/Radial',

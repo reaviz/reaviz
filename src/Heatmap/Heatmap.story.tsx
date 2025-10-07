@@ -1,14 +1,16 @@
-import { Heatmap } from './Heatmap';
 import { heatmapSimpleData } from 'reaviz-data-utils';
-import { SequentialLegend } from '@/common/legends/SequentialLegend/SequentialLegend';
-import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
-import { getYScale } from '@/common/scales';
+
 import {
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearYAxis,
-  LinearYAxisTickSeries,
   LinearYAxisTickLabel,
-  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS
+  LinearYAxisTickSeries
 } from '@/common/Axis';
+import { SequentialLegend } from '@/common/legends/SequentialLegend/SequentialLegend';
+import { getYScale } from '@/common/scales';
+
+import { Heatmap } from './Heatmap';
+import { HeatmapCell, HeatmapSeries } from './HeatmapSeries';
 
 export default {
   tags: ['snapshot'],
@@ -76,6 +78,7 @@ export const MultiAxis = () => {
       data={heatmapSimpleData}
       secondaryAxis={[
         <LinearYAxis
+          key="category"
           type="category"
           scale={scale}
           axisLine={null}

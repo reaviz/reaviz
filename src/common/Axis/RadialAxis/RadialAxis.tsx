@@ -1,15 +1,13 @@
-import React, { FC, Fragment, ReactElement } from 'react';
-import {
-  RadialAxisTickSeries,
-  RadialAxisTickSeriesProps
-} from './RadialAxisTickSeries';
-import {
-  RADIAL_AXIS_ARC_SERIES_DEFAULT_PROPS,
-  RadialAxisArcSeries,
-  RadialAxisArcSeriesProps
-} from './RadialAxisArcSeries';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment } from 'react';
+
 import { getTicks, mergeDefaultProps } from '@/common/utils';
+
+import type { RadialAxisArcSeriesProps } from './RadialAxisArcSeries';
+import { RadialAxisArcSeries } from './RadialAxisArcSeries';
+import type { RadialAxisTickSeriesProps } from './RadialAxisTickSeries';
+import { RadialAxisTickSeries } from './RadialAxisTickSeries';
 
 type RadialAxisType = 'value' | 'time' | 'category';
 

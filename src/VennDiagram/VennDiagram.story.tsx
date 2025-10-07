@@ -1,13 +1,15 @@
-import React from 'react';
-import { VennDiagram } from './VennDiagram';
-import { schemes } from '@/common/color';
-import { VennSeries } from './VennSeries';
-import { VennArc } from './VennArc';
-import { Stripes } from '@/common/Mask';
-import { VennLabel } from './VennLabel';
-import { Gradient } from '@/common/Gradient';
-import { VennOuterLabel } from './VennOuterLabel';
 import { symbol, symbolStar } from 'd3-shape';
+import React from 'react';
+
+import { schemes } from '@/common/color';
+import { Gradient } from '@/common/Gradient';
+import { Stripes } from '@/common/Mask';
+
+import { VennArc } from './VennArc';
+import { VennDiagram } from './VennDiagram';
+import { VennLabel } from './VennLabel';
+import { VennOuterLabel } from './VennOuterLabel';
+import { VennSeries } from './VennSeries';
 
 // Make a static star path for demos
 const starPath = symbol().type(symbolStar).size(50)();

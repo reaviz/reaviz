@@ -1,11 +1,15 @@
-import React, { FC } from 'react';
-import { ChartNestedDataShape } from '@/common/data';
-import { RadialAreaChart, RadialAreaChartProps } from '@/RadialAreaChart';
+import type { FC } from 'react';
+import React from 'react';
+
 import {
   RadialAxis,
   RadialAxisArcLine,
   RadialAxisArcSeries
 } from '@/common/Axis/RadialAxis';
+import type { ChartNestedDataShape } from '@/common/data';
+import type { RadialAreaChartProps } from '@/RadialAreaChart';
+import { RadialAreaChart } from '@/RadialAreaChart';
+
 import {
   RADAR_CHART_SERIES_DEFAULT_PROPS,
   RadarChartSeries

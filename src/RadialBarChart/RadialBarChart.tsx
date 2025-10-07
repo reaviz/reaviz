@@ -1,28 +1,28 @@
-import React, { useCallback, FC, Fragment, ReactElement, useMemo } from 'react';
-import {
-  ChartShallowDataShape,
-  ChartInternalShallowDataShape,
-  buildShallowChartData,
-  ChartDataShape,
-  buildNestedChartData,
-  ChartNestedDataShape
-} from '@/common/data';
 import { scaleBand, scalePoint } from 'd3-scale';
-import { getYDomain } from '@/common/utils/domains';
-import { RadialBarSeries, RadialBarSeriesProps } from './RadialBarSeries';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback, useMemo } from 'react';
+
+import type { RadialAxisProps } from '@/common/Axis/RadialAxis';
 import {
   RADIAL_AXIS_DEFAULT_PROPS,
-  RadialAxis,
-  RadialAxisProps
+  RadialAxis
 } from '@/common/Axis/RadialAxis';
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type {
+  ChartDataShape,
+  ChartInternalShallowDataShape,
+  ChartNestedDataShape,
+  ChartShallowDataShape
+} from '@/common/data';
+import { buildNestedChartData, buildShallowChartData } from '@/common/data';
 import { getRadialYScale } from '@/common/scales';
 import { uniqueBy } from '@/common/utils/array';
+import { getYDomain } from '@/common/utils/domains';
+
+import type { RadialBarSeriesProps } from './RadialBarSeries';
+import { RadialBarSeries } from './RadialBarSeries';
 
 export interface RadialBarChartProps extends ChartProps {
   /**

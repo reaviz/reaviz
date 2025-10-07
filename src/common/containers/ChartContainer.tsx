@@ -1,11 +1,16 @@
-import React, { FC, useCallback, useState, useMemo } from 'react';
-import { Margins, getDimension } from '@/common/utils/dimensions';
-import { useResizeObserver } from '@/common/utils/useResizeObserver';
-import { useId } from 'reablocks';
-import { LinearAxisDimensionChanged } from '@/common/Axis';
 import classNames from 'classnames';
-import { ChartContextProps, ChartProvider } from './ChartContext';
+import { useId } from 'reablocks';
+import type { FC } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
+
+import type { LinearAxisDimensionChanged } from '@/common/Axis';
+import type { Margins } from '@/common/utils/dimensions';
+import { getDimension } from '@/common/utils/dimensions';
+import { useResizeObserver } from '@/common/utils/useResizeObserver';
+
 import css from './ChartContainer.module.css';
+import type { ChartContextProps } from './ChartContext';
+import { ChartProvider } from './ChartContext';
 
 export interface ChartProps {
   /**

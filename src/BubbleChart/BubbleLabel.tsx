@@ -1,8 +1,10 @@
-import React, { FC, isValidElement } from 'react';
-import { HierarchyCircularNode } from 'd3-hierarchy';
+import type { HierarchyCircularNode } from 'd3-hierarchy';
 import { motion } from 'motion/react';
-import { wrapText } from '@/common/utils/wrapText';
+import type { FC } from 'react';
+import React, { isValidElement } from 'react';
+
 import { DEFAULT_TRANSITION } from '@/common/Motion';
+import { wrapText } from '@/common/utils/wrapText';
 
 export interface BubbleLabelProps {
   /**
@@ -70,11 +72,11 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   if (!isElement) {
     const text = wrap
       ? wrapText({
-        key: data.data.key,
-        fontFamily,
-        fontSize,
-        width: data.r
-      })
+          key: data.data.key,
+          fontFamily,
+          fontSize,
+          width: data.r
+        })
       : data.data.key;
 
     return (

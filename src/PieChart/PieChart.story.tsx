@@ -1,14 +1,16 @@
-import React, { useState, Fragment } from 'react';
-import { PieChart } from './PieChart';
+import React, { Fragment, useState } from 'react';
 import {
-  categoryData,
-  randomNumber,
   browserData,
-  icons
+  categoryData,
+  icons,
+  randomNumber
 } from 'reaviz-data-utils';
-import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
-import { ChartShallowDataShape } from '@/common/data';
+
+import type { ChartShallowDataShape } from '@/common/data';
 import { Gradient } from '@/common/Gradient';
+
+import { PieArc, PieArcLabel, PieArcSeries } from './PieArcSeries';
+import { PieChart } from './PieChart';
 
 export default {
   tags: ['snapshot'],

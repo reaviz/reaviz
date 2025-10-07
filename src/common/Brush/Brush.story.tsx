@@ -1,28 +1,30 @@
+import { range } from 'd3-array';
+import { Tooltip } from 'reablocks';
 import React, { Component } from 'react';
-import { LineChart, LineSeries } from '../../LineChart';
 import {
+  generateDate,
   largeDateData,
   randomNumber,
-  generateDate,
   signalStageData,
   signalStages
 } from 'reaviz-data-utils';
+
+import { BarChart, HistogramBarSeries } from '@/BarChart';
+import { Gridline, GridlineSeries, GridStripe } from '@/common/Gridline';
+import { TooltipArea, tooltipTheme } from '@/common/Tooltip';
+import { ScatterPlot, ScatterPoint, ScatterSeries } from '@/ScatterPlot';
+
+import { LineChart, LineSeries } from '../../LineChart';
 import {
   LinearXAxis,
-  LinearXAxisTickSeries,
   LinearXAxisTickLabel,
+  LinearXAxisTickSeries,
   LinearYAxis,
-  LinearYAxisTickSeries,
-  LinearYAxisTickLabel
+  LinearYAxisTickLabel,
+  LinearYAxisTickSeries
 } from '../Axis';
-import { TooltipArea, tooltipTheme } from '@/common/Tooltip';
-import { ChartBrush } from './ChartBrush';
-import { ScatterPlot, ScatterSeries, ScatterPoint } from '@/ScatterPlot';
-import { BarChart, HistogramBarSeries } from '@/BarChart';
-import { range } from 'd3-array';
-import { Tooltip } from 'reablocks';
-import { GridlineSeries, Gridline, GridStripe } from '@/common/Gridline';
 import { ChartZoomPan } from '../ZoomPan';
+import { ChartBrush } from './ChartBrush';
 
 export default {
   title: 'Utils/Brush'

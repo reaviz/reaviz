@@ -1,9 +1,12 @@
-import React, { FC, useMemo } from 'react';
-import { ChartInternalShallowDataShape, Direction } from '@/common/data';
-import { BarType } from './Bar';
 import { motion } from 'motion/react';
-import { DEFAULT_TRANSITION } from '@/common/Motion';
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
+
 import { mergeDefaultProps } from '@/common';
+import type { ChartInternalShallowDataShape, Direction } from '@/common/data';
+import { DEFAULT_TRANSITION } from '@/common/Motion';
+
+import type { BarType } from './Bar';
 
 export interface BarLabelProps {
   /**
@@ -204,7 +207,7 @@ export const BarLabel: FC<Partial<BarLabelProps>> = (props) => {
   }, [height, isVertical, padding, position, scale, type, width, x, y]);
 
   const delay = useMemo(() => {
-    let delay = 0;
+    const delay = 0;
     if (animated) {
       if (layout === 'vertical') {
         return (index / barCount) * 0.5;

@@ -1,13 +1,14 @@
-import React from 'react';
-import { RadialAxis } from './RadialAxis';
-import { scaleTime } from 'd3-scale';
 import { extent, range } from 'd3-array';
+import { scaleTime } from 'd3-scale';
+import { addHours, format, startOfDay, subHours } from 'date-fns';
+import React from 'react';
+
+import { RadialAxis } from './RadialAxis';
 import {
-  RadialAxisTickSeries,
   RadialAxisTick,
-  RadialAxisTickLabel
+  RadialAxisTickLabel,
+  RadialAxisTickSeries
 } from './RadialAxisTickSeries';
-import { startOfDay, subHours, addHours, format } from 'date-fns';
 
 const xScale = (() => {
   const date = startOfDay(subHours(new Date(), 1));

@@ -1,7 +1,11 @@
-import React, { FC, PropsWithChildren, useCallback, useMemo } from 'react';
-import { ZoomPan, ZoomPanEvent } from './ZoomPan';
-import { ChartInternalDataShape, ChartDataTypes } from '@/common/data';
+import type { FC, PropsWithChildren } from 'react';
+import React, { useCallback, useMemo } from 'react';
+
+import type { ChartDataTypes, ChartInternalDataShape } from '@/common/data';
+
 import { getXScale } from '../scales';
+import type { ZoomPanEvent } from './ZoomPan';
+import { ZoomPan } from './ZoomPan';
 
 export interface ZoomPanChangeEvent {
   domain: [ChartDataTypes, ChartDataTypes];

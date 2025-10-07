@@ -1,24 +1,24 @@
-import React, { FC, useCallback, Fragment, ReactElement } from 'react';
-import {
-  ChartShallowDataShape,
-  buildShallowChartData,
-  ChartInternalShallowDataShape
-} from '@/common/data';
 import { scaleBand, scaleTime } from 'd3-scale';
-import { getYDomain, getXDomain } from '@/common/utils/domains';
-import {
+import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React, { Fragment, useCallback } from 'react';
+
+import { uniqueBy } from '@/common';
+import type { RadialAxis, RadialAxisProps } from '@/common/Axis/RadialAxis';
+import type { ChartContainerChildProps, ChartProps } from '@/common/containers';
+import { ChartContainer } from '@/common/containers';
+import type {
+  ChartInternalShallowDataShape,
+  ChartShallowDataShape
+} from '@/common/data';
+import { buildShallowChartData } from '@/common/data';
+import { getRadialYScale } from '@/common/scales';
+import { getXDomain, getYDomain } from '@/common/utils/domains';
+
+import type {
   RadialScatterSeries,
   RadialScatterSeriesProps
 } from './RadialScatterSeries';
-import {
-  ChartProps,
-  ChartContainer,
-  ChartContainerChildProps
-} from '@/common/containers';
-import { CloneElement } from 'reablocks';
-import { RadialAxisProps, RadialAxis } from '@/common/Axis/RadialAxis';
-import { getRadialYScale } from '@/common/scales';
-import { uniqueBy } from '@/common';
 
 export interface RadialScatterPlotProps extends ChartProps {
   /**

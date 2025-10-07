@@ -1,11 +1,16 @@
-import React from 'react';
-import { TreeMapSeries } from './TreeMapSeries';
-import { ChartNestedDataShape, ChartShallowDataShape } from '@/common/data';
-import { TreeMap } from './TreeMap';
-import { TreeMapRect } from './TreeMapRect';
 import { range } from 'd3-array';
+import React from 'react';
 import { randomNumber } from 'reaviz-data-utils';
+
+import type {
+  ChartNestedDataShape,
+  ChartShallowDataShape
+} from '@/common/data';
+
+import { TreeMap } from './TreeMap';
 import { TreeMapLabel } from './TreeMapLabel';
+import { TreeMapRect } from './TreeMapRect';
+import { TreeMapSeries } from './TreeMapSeries';
 
 export default {
   tags: ['snapshot'],

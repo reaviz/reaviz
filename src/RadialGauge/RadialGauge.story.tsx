@@ -1,17 +1,19 @@
-import { RadialGauge } from './RadialGauge';
+import { max } from 'd3-array';
+import type { FC } from 'react';
+import React from 'react';
 import { categoryData, categoryDataStackedArcs } from 'reaviz-data-utils';
+
+import type { ChartDataShape, ColorSchemeType } from '@/common';
+import { Gradient } from '@/common/Gradient';
+
+import { RadialGauge } from './RadialGauge';
 import {
   RadialGaugeArc,
   RadialGaugeSeries,
-  StackedRadialGaugeValueLabel,
+  StackedRadialGaugeDescriptionLabel,
   StackedRadialGaugeSeries,
-  StackedRadialGaugeDescriptionLabel
+  StackedRadialGaugeValueLabel
 } from './RadialGaugeSeries';
-import { Gradient } from '@/common/Gradient';
-import { max } from 'd3-array';
-import { ChartDataShape, ColorSchemeType } from '@/common';
-import React from 'react';
-import { StoryFn } from '@storybook/react';
 
 export default {
   tags: ['snapshot'],
@@ -142,7 +144,7 @@ interface GaugeStackedTemplateProps {
   colorSchemaType: 'handlerFn' | 'array' | 'string';
 }
 
-const GaugeStackedTemplate: StoryFn<GaugeStackedTemplateProps> = ({
+const GaugeStackedTemplate: FC<GaugeStackedTemplateProps> = ({
   width,
   height,
   data,

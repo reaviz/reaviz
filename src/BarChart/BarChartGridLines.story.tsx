@@ -1,7 +1,9 @@
 import React from 'react';
-import { BarChart } from './BarChart';
 import { categoryData } from 'reaviz-data-utils';
-import { GridlineSeries, Gridline } from '@/common/Gridline';
+
+import { Gridline, GridlineSeries } from '@/common/Gridline';
+
+import { BarChart } from './BarChart';
 import {
   Bar,
   BarLabel,

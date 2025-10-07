@@ -1,9 +1,12 @@
-import React, { FC, ReactElement } from 'react';
-import { scaleLinear } from 'd3-scale';
 import classNames from 'classnames';
-import { MeterColumn, MeterColumnProps } from './MeterColumn';
+import { scaleLinear } from 'd3-scale';
 import { CloneElement } from 'reablocks';
+import type { FC, ReactElement } from 'react';
+import React from 'react';
+
 import css from './Meter.module.css';
+import type { MeterColumnProps } from './MeterColumn';
+import { MeterColumn } from './MeterColumn';
 
 export interface MeterProps {
   /**

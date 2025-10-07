@@ -1,7 +1,9 @@
-import React, { Component, PropsWithChildren, createRef } from 'react';
-import { toggleTextSelection } from '@/common/utils/selection';
+import type { PropsWithChildren } from 'react';
+import React, { Component, createRef } from 'react';
 import { smoothMatrix, transform, translate } from 'transformation-matrix';
+
 import { constrainMatrix } from '@/common/utils/position';
+import { toggleTextSelection } from '@/common/utils/selection';
 
 interface PanProps extends PropsWithChildren {
   disabled: boolean;
