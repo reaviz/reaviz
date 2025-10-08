@@ -70,11 +70,11 @@ export const BubbleLabel: FC<Partial<BubbleLabelProps>> = ({
   if (!isElement) {
     const text = wrap
       ? wrapText({
-        key: data.data.key,
-        fontFamily,
-        fontSize,
-        width: data.r
-      })
+          key: data.data.key,
+          fontFamily,
+          fontSize,
+          width: data.r
+        })
       : data.data.key;
 
     return (

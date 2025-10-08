@@ -103,21 +103,21 @@ export const FunnelAxisLabel: FC<Partial<FunnelAxisLabelProps>> = ({
     let transform: string;
 
     switch (position) {
-    case 'top':
-      transform = `translate(${x}, ${fontSize * 3})`; // fontSize * 3 is to account for the total height of the label
-      break;
-    case 'middle':
-      transform = `translate(${x}, ${y})`;
-      break;
-    case 'bottom':
-      {
-        // If the text is wrapping, we need to account for the height of all the lines
-        const textWrapHeight = Array.isArray(text)
-          ? text.slice(1).reduce((acc, curr) => acc + curr.props.dy, 0) // Don't include first line's dy in order to align properly
-          : 0;
-        transform = `translate(${x}, ${height - padding - textWrapHeight})`;
-      }
-      break;
+      case 'top':
+        transform = `translate(${x}, ${fontSize * 3})`; // fontSize * 3 is to account for the total height of the label
+        break;
+      case 'middle':
+        transform = `translate(${x}, ${y})`;
+        break;
+      case 'bottom':
+        {
+          // If the text is wrapping, we need to account for the height of all the lines
+          const textWrapHeight = Array.isArray(text)
+            ? text.slice(1).reduce((acc, curr) => acc + curr.props.dy, 0) // Don't include first line's dy in order to align properly
+            : 0;
+          transform = `translate(${x}, ${height - padding - textWrapHeight})`;
+        }
+        break;
     }
 
     return transform;

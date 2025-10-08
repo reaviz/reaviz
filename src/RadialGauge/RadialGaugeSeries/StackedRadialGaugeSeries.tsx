@@ -209,14 +209,14 @@ export const StackedRadialGaugeSeries: FC<
           {isChartNestedData(point)
             ? renderStackedArc(outerRadius, innerRadius, point, index)
             : renderInnerArc(
-              outerRadius,
-              innerRadius,
-              scale?.[index]?.(point.data) ??
+                outerRadius,
+                innerRadius,
+                scale?.[index]?.(point.data) ??
                   scale?.[0]?.(point.data) ??
                   scale(point.data),
-              point,
-              index
-            )}
+                point,
+                index
+              )}
         </g>
       );
     },
