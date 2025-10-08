@@ -1,5 +1,5 @@
 import React, { FC, Fragment, isValidElement } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 
 export interface VennOuterLabelProps {
@@ -37,12 +37,14 @@ export interface VennOuterLabelProps {
 export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
   data,
   format,
-  animated,
-  fill,
-  fontSize,
-  fontFamily
+  animated = true,
+  fill = '#000',
+  fontSize = 14,
+  fontFamily = 'sans-serif'
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { delay: 0, type: false as const };
   const text = data.set.data.key;
 
   const label = format ? format(data) : text;
@@ -87,11 +89,4 @@ export const VennOuterLabel: FC<Partial<VennOuterLabelProps>> = ({
       )}
     </Fragment>
   );
-};
-
-VennOuterLabel.defaultProps = {
-  animated: true,
-  fill: '#000',
-  fontSize: 14,
-  fontFamily: 'sans-serif'
 };

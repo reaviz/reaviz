@@ -25,6 +25,7 @@ import { ScatterPlot } from './ScatterPlot';
 import { ScatterPoint, ScatterSeries } from './ScatterSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Scatter Plot/Markers',
   component: RadialScatterPlot,
   subcomponents: {
@@ -38,6 +39,7 @@ export default {
 
 export const LinearValueMarkers = () => (
   <ScatterPlot
+    id="simple"
     height={400}
     width={750}
     data={medSignalChartData}
@@ -55,6 +57,7 @@ export const LinearValueMarkers = () => (
 
 export const LinearValueMarkersVertical = () => (
   <ScatterPlot
+    id="vertical"
     height={400}
     width={750}
     data={histogramNumberData}
@@ -74,6 +77,7 @@ export const LinearValueMarkersVertical = () => (
 
 export const RadialValueMarkers = () => (
   <RadialScatterPlot
+    id="simple"
     height={450}
     width={450}
     data={medDateData}

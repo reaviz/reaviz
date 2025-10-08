@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import React from 'react';
+import { motion } from 'motion/react';
 import {
   Area,
   AreaChart,
@@ -15,7 +16,9 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   PointSeries,
+  StackedAreaChart,
   StackedAreaSeries,
+  StackedNormalizedAreaChart,
   StackedNormalizedAreaSeries
 } from '../src/index';
 
@@ -33,6 +36,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Area Chart/Dark/Medium',
   component: AreaChart
 };
@@ -64,7 +68,8 @@ export const Stacked = () => {
           <span className="text-[#9A9AAF] text-xs">SysLog</span>
         </div>
       </div>
-      <AreaChart
+      <StackedAreaChart
+        id="stacked"
         data={multiDateData}
         xAxis={
           <LinearXAxis
@@ -105,8 +110,8 @@ export const Stacked = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="80%" stopOpacity={0.2} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -139,8 +144,8 @@ export const Stacked = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -169,8 +174,8 @@ export const Stacked = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -218,13 +223,13 @@ export const Stacked = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -266,13 +271,13 @@ export const Stacked = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -314,13 +319,13 @@ export const Stacked = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -357,7 +362,8 @@ export const StackedNormalized = () => {
           <span className="text-[#9A9AAF] text-xs">SysLog</span>
         </div>
       </div>
-      <AreaChart
+      <StackedNormalizedAreaChart
+        id="stacked-normalized"
         data={multiDateData}
         xAxis={
           <LinearXAxis
@@ -397,8 +403,8 @@ export const StackedNormalized = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="80%" stopOpacity={0.2} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -431,8 +437,8 @@ export const StackedNormalized = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -461,8 +467,8 @@ export const StackedNormalized = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -510,13 +516,13 @@ export const StackedNormalized = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -558,13 +564,13 @@ export const StackedNormalized = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -606,13 +612,13 @@ export const StackedNormalized = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -636,6 +642,7 @@ export const NonZero = () => {
         </select>
       </div>
       <AreaChart
+        id="non-zero"
         data={areaSingleSeriesNonZeroData}
         xAxis={
           <LinearXAxis
@@ -675,8 +682,8 @@ export const NonZero = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="80%" stopOpacity={0.2} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -709,8 +716,8 @@ export const NonZero = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -739,8 +746,8 @@ export const NonZero = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -788,13 +795,13 @@ export const NonZero = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -836,13 +843,13 @@ export const NonZero = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -884,13 +891,13 @@ export const NonZero = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -928,6 +935,7 @@ export const MultiSeriesSimple = () => {
         </div>
       </div>
       <AreaChart
+        id="multi-series-simple"
         data={areaMultiSeriesSimpleData}
         xAxis={
           <LinearXAxis
@@ -966,8 +974,8 @@ export const MultiSeriesSimple = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1000,8 +1008,8 @@ export const MultiSeriesSimple = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -1030,8 +1038,8 @@ export const MultiSeriesSimple = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -1079,13 +1087,13 @@ export const MultiSeriesSimple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1127,13 +1135,13 @@ export const MultiSeriesSimple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1175,13 +1183,13 @@ export const MultiSeriesSimple = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1205,6 +1213,7 @@ export const Simple = () => {
         </select>
       </div>
       <AreaChart
+        id="simple"
         data={areaSingleSeriesSimpleData}
         xAxis={
           <LinearXAxis
@@ -1242,8 +1251,8 @@ export const Simple = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1276,8 +1285,8 @@ export const Simple = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -1306,8 +1315,8 @@ export const Simple = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -1355,13 +1364,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1403,13 +1412,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1451,13 +1460,13 @@ export const Simple = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1495,6 +1504,7 @@ export const MultiSeriesInterpolationSmooth = () => {
         </div>
       </div>
       <AreaChart
+        id="multi-series-interpolation-smooth"
         data={areaMultiSeriesInterpolationSmoothData}
         xAxis={
           <LinearXAxis
@@ -1534,8 +1544,8 @@ export const MultiSeriesInterpolationSmooth = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1568,8 +1578,8 @@ export const MultiSeriesInterpolationSmooth = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -1598,8 +1608,8 @@ export const MultiSeriesInterpolationSmooth = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -1647,13 +1657,13 @@ export const MultiSeriesInterpolationSmooth = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1695,13 +1705,13 @@ export const MultiSeriesInterpolationSmooth = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1743,13 +1753,13 @@ export const MultiSeriesInterpolationSmooth = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1773,6 +1783,7 @@ export const InterpolationSmooth = () => {
         </select>
       </div>
       <AreaChart
+        id="interpolation-smooth"
         data={areaSingleSeriesInterpolationSmoothData}
         xAxis={
           <LinearXAxis
@@ -1811,8 +1822,8 @@ export const InterpolationSmooth = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -1845,8 +1856,8 @@ export const InterpolationSmooth = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -1875,8 +1886,8 @@ export const InterpolationSmooth = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -1924,13 +1935,13 @@ export const InterpolationSmooth = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -1972,13 +1983,13 @@ export const InterpolationSmooth = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2020,13 +2031,13 @@ export const InterpolationSmooth = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2060,6 +2071,7 @@ export const MultiSeriesInterpolationStep = () => {
         </div>
       </div>
       <AreaChart
+        id="multi-series-interpolation-step"
         data={areaMultiSeriesInterpolationStepData}
         xAxis={
           <LinearXAxis
@@ -2099,8 +2111,8 @@ export const MultiSeriesInterpolationStep = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -2133,8 +2145,8 @@ export const MultiSeriesInterpolationStep = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -2163,8 +2175,8 @@ export const MultiSeriesInterpolationStep = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -2212,13 +2224,13 @@ export const MultiSeriesInterpolationStep = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2260,13 +2272,13 @@ export const MultiSeriesInterpolationStep = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2308,13 +2320,13 @@ export const MultiSeriesInterpolationStep = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2338,6 +2350,7 @@ export const InterpolationStep = () => {
         </select>
       </div>
       <AreaChart
+        id="interpolation-step"
         data={areaSingleSeriesInterpolationStepData}
         xAxis={
           <LinearXAxis
@@ -2376,8 +2389,8 @@ export const InterpolationStep = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -2410,8 +2423,8 @@ export const InterpolationStep = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -2440,8 +2453,8 @@ export const InterpolationStep = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -2489,13 +2502,13 @@ export const InterpolationStep = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2537,13 +2550,13 @@ export const InterpolationStep = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2585,13 +2598,13 @@ export const InterpolationStep = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2615,6 +2628,7 @@ export const CircleSeries = () => {
         </select>
       </div>
       <AreaChart
+        id="circle-series"
         data={areaCircleSeriesV1Data}
         xAxis={
           <LinearXAxis
@@ -2653,8 +2667,8 @@ export const CircleSeries = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -2687,8 +2701,8 @@ export const CircleSeries = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -2717,8 +2731,8 @@ export const CircleSeries = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -2766,13 +2780,13 @@ export const CircleSeries = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2814,13 +2828,13 @@ export const CircleSeries = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2862,13 +2876,13 @@ export const CircleSeries = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -2926,6 +2940,7 @@ export const LargeDataset = () => {
         </div>
       </div>
       <AreaChart
+        id="large-dataset"
         data={mediumMultiDateData}
         xAxis={
           <LinearXAxis
@@ -2965,7 +2980,7 @@ export const LargeDataset = () => {
                   <Gradient
                     stops={[
                       // <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.3} />
+                      <GradientStop key={1} offset="100%" stopOpacity={0.3} />
                     ]}
                   />
                 }
@@ -3007,8 +3022,8 @@ export const LargeDataset = () => {
                 <path
                   d="M5.50134 9.11119L10.0013 4.66675M10.0013 4.66675L14.5013 9.11119M10.0013 4.66675L10.0013 16.3334"
                   stroke="#F08083"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               12%
@@ -3037,8 +3052,8 @@ export const LargeDataset = () => {
                 <path
                   d="M14.4987 11.8888L9.99866 16.3333M9.99866 16.3333L5.49866 11.8888M9.99866 16.3333V4.66658"
                   stroke="#40E5D1"
-                  stroke-width="2"
-                  stroke-linecap="square"
+                  strokeWidth="2"
+                  strokeLinecap="square"
                 />
               </svg>
               4%
@@ -3086,13 +3101,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3134,13 +3149,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#E84045"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M9.50134 12.6111L14.0013 8.16663M14.0013 8.16663L18.5013 12.6111M14.0013 8.16663L14.0013 19.8333"
                 stroke="#F08083"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>
@@ -3182,13 +3197,13 @@ export const LargeDataset = () => {
                 height="28"
                 rx="14"
                 fill="#40E5D1"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
               />
               <path
                 d="M18.4987 15.3889L13.9987 19.8334M13.9987 19.8334L9.49866 15.3889M13.9987 19.8334V8.16671"
                 stroke="#40E5D1"
-                stroke-width="2"
-                stroke-linecap="square"
+                strokeWidth="2"
+                strokeLinecap="square"
               />
             </svg>
           </div>

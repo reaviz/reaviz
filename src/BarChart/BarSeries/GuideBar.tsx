@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export interface GuideBarProps extends SVGRect {
   /**
@@ -19,6 +19,7 @@ export interface GuideBarProps extends SVGRect {
 }
 
 export const GuideBar: FC<Partial<GuideBarProps>> = ({
+  fill = '#eee',
   active,
   opacity = 0.15,
   ...rest
@@ -27,6 +28,7 @@ export const GuideBar: FC<Partial<GuideBarProps>> = ({
 
   return (
     <motion.rect
+      fill={fill}
       {...other}
       pointerEvents="none"
       initial="hidden"
@@ -37,9 +39,4 @@ export const GuideBar: FC<Partial<GuideBarProps>> = ({
       }}
     />
   );
-};
-
-GuideBar.defaultProps = {
-  fill: '#eee',
-  opacity: 0.15
 };

@@ -1,7 +1,8 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, useMemo } from 'react';
 import {
   RadialAxisTickLineProps,
-  RadialAxisTickLine
+  RadialAxisTickLine,
+  RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS
 } from './RadialAxisTickLine';
 import {
   RadialAxisTickLabelProps,
@@ -65,22 +66,23 @@ export interface RadialAxisTickProps {
 }
 
 export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
-  line,
-  label,
+  line = <RadialAxisTickLine />,
+  label = <RadialAxisTickLabel />,
   scale,
-  outerRadius,
+  outerRadius = 0,
   data,
   index,
-  padding,
-  innerRadius,
-  startAngle,
-  endAngle
+  padding = 0,
+  innerRadius
 }) => {
+  const lineProps = useMemo(
+    () => ({ ...RADIAL_AXIS_TICK_LINE_DEFAULT_PROPS, ...(line?.props ?? {}) }),
+    [line?.props]
+  );
   const point = scale(data);
-
   const rotation = (point * 180) / Math.PI - 90;
   const transform = `rotate(${rotation}) translate(${outerRadius + padding},0)`;
-  const lineSize = line ? line.props.size : 0;
+  const lineSize = line ? lineProps.size : 0;
 
   return (
     <g transform={transform}>
@@ -99,19 +101,8 @@ export const RadialAxisTick: FC<Partial<RadialAxisTickProps>> = ({
           rotation={rotation}
           lineSize={lineSize}
           data={data}
-          startAngle={startAngle}
-          endAngle={endAngle}
         />
       )}
     </g>
   );
-};
-
-RadialAxisTick.defaultProps = {
-  outerRadius: 0,
-  padding: 0,
-  line: <RadialAxisTickLine />,
-  label: <RadialAxisTickLabel />,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
 };

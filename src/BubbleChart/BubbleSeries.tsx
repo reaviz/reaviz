@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ColorSchemeType, getColor } from '@/common/color';
 import { Bubble, BubbleProps } from './Bubble';
@@ -50,13 +50,15 @@ export interface BubbleSeriesProps {
 export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   id,
   data,
-  colorScheme,
-  animated,
-  bubble,
+  colorScheme = 'cybertron',
+  animated = true,
+  bubble = <Bubble />,
   format,
-  label
+  label = <BubbleLabel />
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
 
   const renderBubble = (item, index) => {
     const fill = getColor({
@@ -102,11 +104,4 @@ export const BubbleSeries: FC<Partial<BubbleSeriesProps>> = ({
   };
 
   return <Fragment>{data.map(renderBubble)}</Fragment>;
-};
-
-BubbleSeries.defaultProps = {
-  colorScheme: 'cybertron',
-  animated: true,
-  bubble: <Bubble />,
-  label: <BubbleLabel />
 };

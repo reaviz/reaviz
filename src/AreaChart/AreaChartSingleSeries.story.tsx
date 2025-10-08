@@ -20,6 +20,7 @@ import { Stripes } from '@/common/Mask';
 import { ChartDataShape } from '@/common/data';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Single Series',
   component: AreaChart,
   subcomponents: {
@@ -157,7 +158,13 @@ export const Performance = () =>
       <AreaChart data={singleDateData} />
     </div>
   ));
+Performance.tags = ['skip-snapshot'];
 
 export const BigInt = () => (
-  <AreaChart width={350} height={250} data={singleDateBigIntData} />
+  <AreaChart
+    id="big-int"
+    width={350}
+    height={250}
+    data={singleDateBigIntData}
+  />
 );

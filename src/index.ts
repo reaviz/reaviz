@@ -22,3 +22,4 @@ export * from './Meter';
 export * from './RadarChart';
 export * from './FunnelChart';
 export * from './SunburstChart';
+export * from './WordCloud';

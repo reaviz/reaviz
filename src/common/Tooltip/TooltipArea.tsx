@@ -6,7 +6,8 @@ import React, {
   useCallback,
   useMemo,
   forwardRef,
-  useImperativeHandle
+  useImperativeHandle,
+  useEffect
 } from 'react';
 import { flip, offset } from '@floating-ui/dom';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
@@ -141,25 +142,25 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
   (
     {
       children,
-      inverse,
-      tooltip,
+      inverse = true,
+      tooltip = <ChartTooltip />,
       disabled,
       color,
-      isRadial,
-      isContinous,
+      isRadial = false,
+      isContinous = true,
       width,
       height,
       xScale,
       yScale,
-      onValueEnter,
+      onValueEnter = () => undefined,
       data,
       isHorizontal,
       innerRadius,
       outerRadius,
       placement: placementProp,
-      onValueLeave,
-      startAngle,
-      endAngle
+      onValueLeave = () => undefined,
+      startAngle = 0,
+      endAngle = 2 * Math.PI
     },
     childRef
   ) => {
@@ -171,13 +172,54 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     const [prevX, setPrevX] = useState<number>();
     const [prevY, setPrevY] = useState<number>();
     const ref = useRef<SVGRectElement | SVGPathElement | any>();
-    const fullCircleref = useRef<SVGRectElement | SVGPathElement | any>(null);
+    const fullCircleRef = useRef<SVGRectElement | SVGPathElement | any>(null);
     const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
 
     const range = Math.abs(endAngle - startAngle);
 
     const rotationFactor = 0.5;
 
+    /**
+     * Calculates the offset for the tooltip.
+     * If the shape is radial, it converts the X coords to a radial format.
+     * @param pointX - The X coordinate of the point.
+     * @param pointY - The Y coordinate of the point.
+     * @param rect - The bounding rectangle of the tooltip.
+     * @param marginX - The margin for the X coordinate.
+     * @param marginY - The margin for the Y coordinate.
+     * @returns The offset for the tooltip.
+     */
+    const calculateOffset = useCallback(
+      (
+        pointX: number,
+        pointY: number,
+        rect: DOMRect,
+        marginX: number,
+        marginY: number
+      ) => {
+        let nx = 0;
+        let ny = 0;
+        if (isRadial) {
+          const outer = Math.min(width, height) / 2;
+          nx = pointY * Math.cos(pointX - rotationFactor * Math.PI) + outer;
+          ny = pointY * Math.sin(pointX - rotationFactor * Math.PI) + outer;
+        } else {
+          nx = pointX;
+          ny = pointY;
+        }
+        nx += rect.left + marginX;
+        ny += rect.top + marginY;
+        return { nx, ny };
+      },
+      [isRadial, width, height, rotationFactor]
+    );
+
+    /**
+     * If the shape is radial, we need to convert the X coords to a radial format.
+     * @param x - The X coordinate of the point.
+     * @param y - The Y coordinate of the point.
+     * @returns The radial coordinate.
+     */
     const getXCoord = useCallback(
       (x: number, y: number) => {
         // If the shape is radial, we need to convert the X coords to a radial format.
@@ -209,6 +251,11 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       [endAngle, height, isRadial, outerRadius, range, startAngle, width]
     );
 
+    /**
+     * Transforms the data for the tooltip.
+     * @param series - The series of data.
+     * @returns The transformed data.
+     */
     const transformData = useCallback(
       (series: ChartInternalDataShape[]) => {
         const result: TooltipDataShape[] = [];
@@ -295,7 +342,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
         // Get the path container element
         // Note that we are using the dummy 'full' circle for alignment
-        let target = fullCircleref.current || ref.current;
+        let target = fullCircleRef.current || ref.current;
 
         const { y, x } = getPositionForTarget({
           target: target,
@@ -330,19 +377,18 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         // Round band scales to the closest point for radial charts
         const newValue = keyScale.invert
           ? getClosestContinousScalePoint({
-            pos: coord,
-            scale: keyScale,
-            data: transformed,
-            attr,
-            roundDown: !isContinous
-          })
+              pos: coord,
+              scale: keyScale,
+              data: transformed,
+              attr,
+              roundDown: !isContinous
+            })
           : getClosestBandScalePoint({
-            pos: coord,
-            scale: keyScale,
-            data: transformed,
-            attr,
-            roundClosest: isRadial
-          });
+              pos: coord,
+              scale: keyScale,
+              data: transformed,
+              roundClosest: isRadial
+            });
 
         if (!isEqual(newValue, value) && newValue) {
           const pointX = keyScale(newValue.x);
@@ -369,41 +415,28 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
           setPrevY(pointY);
 
           const target = event.target as SVGRectElement;
-          const { top, left } = target.getBoundingClientRect();
-
-          let offsetX = 0;
-          let offsetY = 0;
-
-          if (isRadial) {
-            // If its radial, we need to convert the coords to radial format
-            const outerRadius = Math.min(width, height) / 2;
-            offsetX =
-              pointY * Math.cos(pointX - rotationFactor * Math.PI) +
-              outerRadius;
-            offsetY =
-              pointY * Math.sin(pointX - rotationFactor * Math.PI) +
-              outerRadius;
-          } else {
-            offsetX = pointX;
-            offsetY = pointY;
-          }
-
-          offsetX += left + marginX;
-          offsetY += top + marginY;
+          const rect = target.getBoundingClientRect();
+          const { nx, ny } = calculateOffset(
+            pointX,
+            pointY,
+            rect,
+            marginX,
+            marginY
+          );
 
           setPlacement(newPlacement);
           setVisible(true);
           setValue(newValue);
-          setOffsetX(offsetX);
-          setOffsetY(offsetY);
+          setOffsetX(nx);
+          setOffsetY(ny);
 
           onValueEnter({
             visible: true,
             value: newValue,
             pointY,
             pointX,
-            offsetX,
-            offsetY,
+            offsetX: nx,
+            offsetY: ny,
             nativeEvent: event
           });
         }
@@ -415,6 +448,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         isContinous,
         isHorizontal,
         isRadial,
+        calculateOffset,
         onValueEnter,
         placement,
         placementProp,
@@ -422,7 +456,6 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         prevY,
         transformData,
         value,
-        width,
         xScale,
         yScale
       ]
@@ -437,6 +470,51 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
       onValueLeave();
     }, [onValueLeave]);
+
+    /**
+     * This is used to update the tooltip offsets when the window is scrolled or resized to maintain the correct position.
+     * @returns void
+     */
+    const recomputeOffsets = useCallback(() => {
+      if (!visible) {
+        return;
+      }
+      const container = (fullCircleRef.current ||
+        ref.current) as SVGElement | null;
+      if (!container) {
+        return;
+      }
+      const rect = container.getBoundingClientRect();
+      let marginX = 0;
+      let marginY = 0;
+      let px = prevX as number;
+      let py: number;
+      if (prevY === undefined || isNaN(prevY)) {
+        py = height / 2;
+        marginX = 10;
+      } else {
+        py = prevY as number;
+        marginY = -10;
+      }
+      const { nx, ny } = calculateOffset(px, py, rect, marginX, marginY);
+      setOffsetX(nx);
+      setOffsetY(ny);
+    }, [fullCircleRef, ref, visible, prevX, prevY, height, calculateOffset]);
+
+    // Update the offsets when the window is scrolled or resized
+    useEffect(() => {
+      if (!visible) {
+        return;
+      }
+      const handler = () => recomputeOffsets();
+      window.addEventListener('scroll', handler, true);
+      window.addEventListener('resize', handler);
+
+      return () => {
+        window.removeEventListener('scroll', handler, true);
+        window.removeEventListener('resize', handler);
+      };
+    }, [visible, recomputeOffsets]);
 
     useImperativeHandle(childRef, () => ({
       triggerMouseMove(e: React.MouseEvent) {
@@ -478,7 +556,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
 
       return (
         <>
-          <path d={fullCircle!} opacity="0" cursor="auto" ref={fullCircleref} />
+          <path d={fullCircle!} opacity="0" cursor="auto" ref={fullCircleRef} />
           <path
             d={d!}
             opacity="0"
@@ -516,7 +594,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       <Fragment>
         {disabled && children}
         {!disabled && (
-          <g onMouseLeave={onMouseLeave} ref={childRef}>
+          <g id="tooltip-area" onMouseLeave={onMouseLeave} ref={childRef}>
             {isRadial && renderRadial()}
             {!isRadial && renderLinear()}
             <CloneElement<ChartTooltipProps>
@@ -535,14 +613,3 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     );
   }
 );
-
-TooltipArea.defaultProps = {
-  isRadial: false,
-  isContinous: true,
-  tooltip: <ChartTooltip />,
-  inverse: true,
-  onValueEnter: () => undefined,
-  onValueLeave: () => undefined,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
-};

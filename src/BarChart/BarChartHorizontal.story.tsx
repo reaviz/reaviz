@@ -25,6 +25,7 @@ import {
 import { BarTargetMarker } from './BarSeries/BarTargetMarker';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Horizontal/Single Series',
   component: BarChart,
   subcomponents: {
@@ -81,7 +82,7 @@ export const Simple = () => (
         colorScheme="cybertron"
         layout="horizontal"
         padding={0.1}
-        bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+        bar={<Bar guide={null} />}
       />
     }
   />
@@ -159,7 +160,7 @@ export const WithScroll = () => (
           colorScheme="cybertron"
           layout="horizontal"
           padding={0.1}
-          bar={<Bar gradient={Bar.defaultProps.gradient} guide={null} />}
+          bar={<Bar guide={null} />}
         />
       }
     />

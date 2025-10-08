@@ -1,29 +1,33 @@
-import React, {
-  Fragment,
-  ReactElement,
-  useMemo,
-  useRef,
-  FC,
-  useState,
-  useCallback
-} from 'react';
-import { offset } from '@floating-ui/dom';
-import { Bar, BarProps, BarType } from './Bar';
+import {
+  LinearValueMarker,
+  LinearValueMarkerProps,
+  mergeDefaultProps
+} from '@/common';
+import { ColorSchemeType, getColor } from '@/common/color';
 import {
   ChartInternalDataShape,
   ChartInternalNestedDataShape,
   ChartInternalShallowDataShape,
   Direction
 } from '@/common/data';
-import { getColor, ColorSchemeType } from '@/common/color';
-import { CloneElement } from 'reablocks';
 import {
-  TooltipAreaProps,
-  TooltipArea,
   ChartTooltip,
-  TooltipAreaEvent
+  TooltipArea,
+  TooltipAreaEvent,
+  TooltipAreaProps
 } from '@/common/Tooltip';
-import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
+import { offset } from '@floating-ui/dom';
+import { CloneElement } from 'reablocks';
+import React, {
+  FC,
+  Fragment,
+  ReactElement,
+  useCallback,
+  useMemo,
+  useRef,
+  useState
+} from 'react';
+import { Bar, BAR_DEFAULT_PROPS, BarProps, BarType } from './Bar';
 
 type BarElement = ReactElement<BarProps, typeof Bar>;
 
@@ -121,24 +125,25 @@ export interface BarSeriesProps {
     | null;
 }
 
-export const BarSeries: FC<Partial<BarSeriesProps>> = ({
-  data,
-  tooltip,
-  xScale,
-  yScale,
-  height,
-  width,
-  colorScheme,
-  xScale1,
-  bar,
-  padding,
-  animated,
-  isCategorical,
-  layout,
-  type,
-  id,
-  valueMarkers
-}) => {
+export const BarSeries: FC<Partial<BarSeriesProps>> = (props) => {
+  const {
+    data,
+    tooltip,
+    xScale,
+    yScale,
+    height,
+    width,
+    colorScheme,
+    xScale1,
+    bar,
+    padding,
+    animated,
+    isCategorical,
+    layout,
+    type,
+    id,
+    valueMarkers
+  } = mergeDefaultProps(BAR_SERIES_DEFAULT_PROPS, props);
   const ref = useRef<any | null>(null);
   const [activeValues, setActiveValues] = useState<any | null>(null);
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
@@ -159,11 +164,9 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
       let yPos = 0;
       if (type !== 'marimekko') {
         if (layout === 'vertical') {
-          const val = xScale(data.key);
-          xPos = val;
+          xPos = xScale(data.key);
         } else {
-          const val = yScale(data.key);
-          yPos = val;
+          yPos = yScale(data.key);
         }
       }
 
@@ -241,7 +244,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
 
       let barElements = Array.isArray(bar) ? bar[barIndex] : bar;
       if (!bar) {
-        barElements = <Bar />;
+        barElements = <Bar {...BAR_DEFAULT_PROPS} />;
       }
 
       return (
@@ -317,7 +320,7 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
                   ? yScale(marker.props.value)
                   : xScale(marker.props.value)
               }
-              isHorizontal={layout === 'vertical'}
+              direction={layout === 'vertical' ? 'horizontal' : 'vertical'}
             />
           ))}
       </>
@@ -358,8 +361,8 @@ export const BarSeries: FC<Partial<BarSeriesProps>> = ({
   );
 };
 
-BarSeries.defaultProps = {
-  type: 'standard',
+export const BAR_SERIES_DEFAULT_PROPS = {
+  type: 'standard' as BarType,
   padding: 0.1,
   groupPadding: 16,
   animated: true,
@@ -370,5 +373,5 @@ BarSeries.defaultProps = {
   ),
   colorScheme: 'cybertron',
   bar: <Bar />,
-  layout: 'vertical'
+  layout: 'vertical' as const
 };

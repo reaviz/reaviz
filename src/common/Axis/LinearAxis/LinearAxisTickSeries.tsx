@@ -1,9 +1,11 @@
 import React, { FC, Fragment, ReactElement, useCallback, useMemo } from 'react';
 import {
+  LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
   LinearAxisTickLabel,
   LinearAxisTickLabelProps
 } from './LinearAxisTickLabel';
 import {
+  LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS,
   LinearAxisTickLine,
   LinearAxisTickLineProps
 } from './LinearAxisTickLine';
@@ -15,6 +17,7 @@ import { LinearAxisProps } from './LinearAxis';
 import ellipsize from 'ellipsize';
 import { max } from 'd3-array';
 import { calculateDimensions } from '@/common/utils/size';
+import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickSeriesProps {
   height: number;
@@ -30,11 +33,16 @@ export interface LinearAxisTickSeriesProps {
   > | null;
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine> | null;
   axis: LinearAxisProps;
+  /**
+   * The maximum length for ellipsizing tick labels. Default is 18.
+   */
+  ellipsisLength?: number;
 }
 
 interface ProcessedTick {
   text: string;
   fullText: string;
+  data: any;
   x: number;
   y: number;
   height: number;
@@ -42,18 +50,31 @@ interface ProcessedTick {
   half: 'start' | 'end' | 'center';
 }
 
-export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
-  scale,
-  orientation,
-  height,
-  width,
-  label,
-  tickSize,
-  tickValues,
-  interval,
-  line,
-  axis
-}) => {
+export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = (
+  props
+) => {
+  const {
+    scale,
+    orientation,
+    height,
+    width,
+    label,
+    tickSize,
+    tickValues,
+    interval,
+    line,
+    axis,
+    ellipsisLength
+  } = mergeDefaultProps(LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS, props);
+
+  const labelProps = useMemo(
+    () => ({
+      ...LINEAR_AXIS_TICK_LABEL_DEFAULT_PROPS,
+      ...(label?.props ?? {})
+    }),
+    [label?.props]
+  );
+
   /**
    * Gets the adjusted scale given offsets.
    */
@@ -95,14 +116,14 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
    * Gets the formatted label of the tick.
    */
   const labelFormatFn = useMemo((): any => {
-    if (label && label.props.format) {
-      return label.props.format;
+    if (labelProps.format) {
+      return labelProps.format;
     } else if (scale.tickFormat) {
       return scale.tickFormat.apply(scale, [5]);
     } else {
       return (v) => formatValue(v);
     }
-  }, [label, scale]);
+  }, [labelProps.format, scale]);
 
   /**
    * Gets the ticks given the dimensions and scales and returns
@@ -120,13 +141,13 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
       const fullText = format(tick);
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
-      const text = ellipsize(fullText, 18);
+      const text = ellipsize(fullText, ellipsisLength);
       const size = label
         ? calculateDimensions(
-          text,
-          label.props.fontFamily,
-          label.props.fontSize.toString()
-        )
+            text,
+            labelProps.fontFamily,
+            labelProps.fontSize?.toString()
+          )
         : {};
 
       return {
@@ -134,6 +155,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
         ...size,
         text,
         fullText,
+        data: tick,
         half:
           scaledTick === midpoint
             ? 'center'
@@ -144,11 +166,13 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
     });
   }, [
     axis.type,
+    ellipsisLength,
     getAdjustedScale,
     getDimension,
     getPosition,
     interval,
     label,
+    labelProps,
     labelFormatFn,
     scale,
     tickSize,
@@ -165,7 +189,6 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
       return 0;
     }
 
-    const labelProps = label.props;
     const dimension = getDimension();
     const maxTicksLength = max(ticks, (tick) => tick.width);
     let angle = 0;
@@ -185,7 +208,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
     }
 
     return angle;
-  }, [getDimension, label, ticks]);
+  }, [getDimension, label, labelProps, ticks]);
 
   return (
     <Fragment>
@@ -204,6 +227,7 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
               element={label}
               text={tick.text}
               fullText={tick.fullText}
+              data={tick.data}
               half={tick.half}
               angle={angle}
               orientation={orientation}
@@ -216,9 +240,10 @@ export const LinearAxisTickSeries: FC<Partial<LinearAxisTickSeriesProps>> = ({
   );
 };
 
-LinearAxisTickSeries.defaultProps = {
+export const LINEAR_AXIS_TICK_SERIES_DEFAULT_PROPS = {
   line: (
     <LinearAxisTickLine
+      {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
       height={10}
       width={10}
       orientation="horizontal"
@@ -229,6 +254,7 @@ LinearAxisTickSeries.defaultProps = {
     <LinearAxisTickLabel
       line={
         <LinearAxisTickLine
+          {...LINEAR_AXIS_TICK_LINE_DEFAULT_PROPS}
           orientation="horizontal"
           position="center"
           height={5}
@@ -237,11 +263,13 @@ LinearAxisTickSeries.defaultProps = {
       }
       text=""
       fullText=""
+      data={undefined}
       angle={0}
       orientation="horizontal"
       half="start"
       position="center"
     />
   ),
-  tickSize: 30
+  tickSize: 30,
+  ellipsisLength: 18
 };

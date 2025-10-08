@@ -15,14 +15,14 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '@/common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion, Transition } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { schemes, getColor, ColorSchemeType } from '@/common/color';
 import { identifier } from 'safe-identifier';
 import css from './ScatterPoint.module.css';
 import { Glow } from '@/common/Glow';
 import { generateGlowStyles } from '@/common/Glow/utils';
-import { getAriaLabel } from '@/common';
+import { getAriaLabel, mergeDefaultProps } from '@/common';
 
 export type ScatterPointProps = {
   /**
@@ -116,26 +116,28 @@ export type ScatterPointProps = {
   onMouseLeave?: (data: ChartInternalShallowDataShape) => void;
 } & PropFunctionTypes;
 
-export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
-  symbol,
-  index,
-  id,
-  data,
-  xScale,
-  yScale,
-  active,
-  tooltip,
-  cursor,
-  size,
-  glow,
-  color,
-  animated,
-  onClick,
-  onMouseEnter,
-  onMouseLeave,
-  visible,
-  ...rest
-}) => {
+export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
+  const {
+    symbol,
+    index,
+    id,
+    data,
+    xScale,
+    yScale,
+    active,
+    tooltip,
+    cursor,
+    size,
+    glow,
+    color,
+    animated,
+    onClick,
+    onMouseEnter,
+    onMouseLeave,
+    visible,
+    ...rest
+  } = mergeDefaultProps(SCATTER_POINT_DEFAULT_PROPS, props);
+
   const rectRef = useRef<any | null>(null);
   const [tooltipVisible, setTooltipVisible] = useState<boolean>(false);
   const extras = useMemo(
@@ -155,13 +157,13 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: index! * 0.005
-        }
+            ...DEFAULT_TRANSITION,
+            delay: index! * 0.005
+          }
         : {
-          type: false,
-          delay: 0
-        },
+            type: false as const,
+            delay: 0
+          },
     [index, animated]
   );
 
@@ -243,7 +245,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
               translateY: exitProps.y,
               opacity: 0
             }}
-            transition={transitionProps}
+            transition={transitionProps as Transition}
           >
             {renderedSymbol}
           </motion.g>
@@ -275,7 +277,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
               r,
               opacity: 0
             }}
-            transition={transitionProps}
+            transition={transitionProps as Transition}
           />
         )}
       </g>
@@ -291,7 +293,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = ({
   );
 };
 
-ScatterPoint.defaultProps = {
+export const SCATTER_POINT_DEFAULT_PROPS = {
   active: true,
   tooltip: <ChartTooltip />,
   cursor: 'pointer',

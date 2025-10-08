@@ -1,6 +1,6 @@
 import React, { FC, useMemo } from 'react';
 import { ChartInternalShallowDataShape, Direction } from '@/common/data';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { BarType } from './Bar';
 
@@ -77,15 +77,15 @@ export interface RangeLinesProps {
 }
 
 export const RangeLines: FC<Partial<RangeLinesProps>> = ({
-  layout,
+  layout = 'vertical',
   color,
   x,
   y,
   scale,
   type,
   height,
-  position,
-  strokeWidth,
+  position = 'top',
+  strokeWidth = 1,
   width,
   animated,
   index,
@@ -242,10 +242,4 @@ export const RangeLines: FC<Partial<RangeLinesProps>> = ({
       }}
     />
   );
-};
-
-RangeLines.defaultProps = {
-  position: 'top',
-  strokeWidth: 1,
-  layout: 'vertical'
 };

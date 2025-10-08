@@ -2,6 +2,7 @@ import { BarList } from './BarList';
 import { BarListSeries } from './BarListSeries';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar List',
   component: BarList
 };
@@ -35,6 +36,7 @@ export const Styling = () => (
       `}
     </style>
     <BarList
+      id="styling"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 50 },
@@ -57,6 +59,7 @@ export const Styling = () => (
 export const Events = () => (
   <>
     <BarList
+      id="events"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 50 },
@@ -92,6 +95,7 @@ export const PercentageFormat = () => (
       `}
     </style>
     <BarList
+      id="percentage-format"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 50 },
@@ -109,7 +113,7 @@ export const PercentageFormat = () => (
           outerBarClassName="outer"
         />
       }
-      type='percent'
+      type="percent"
     />
   </>
 );
@@ -131,6 +135,7 @@ export const Empty = () => (
       `}
     </style>
     <BarList
+      id="empty"
       style={{ width: 350 }}
       data={[
         { key: 'Vulnerability Patch', data: 0 },

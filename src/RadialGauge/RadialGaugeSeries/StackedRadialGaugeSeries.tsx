@@ -117,20 +117,20 @@ export const StackedRadialGaugeSeries: FC<
   scale,
   startAngle,
   endAngle,
-  outerArc,
-  innerArc,
-  stackedInnerArc,
-  label,
+  outerArc = <RadialGaugeArc disabled={true} animated={false} />,
+  innerArc = <RadialGaugeArc animated={true} />,
+  stackedInnerArc = <RadialGaugeStackedArc animated={true} />,
+  label = <StackedRadialGaugeValueLabel />,
   descriptionLabel,
-  colorScheme,
-  fillFactor,
-  arcPadding
+  colorScheme = ['#00ECB1'],
+  fillFactor = 0.2,
+  arcPadding = 0.15
 }) => {
   const radius = Math.min(width, height) / 2;
   const innerRadius = radius * (1 - Math.min(fillFactor, 1));
 
   const rAxis = scaleBand()
-    .domain(range(data.length))
+    .domain(range(data.length).map(String))
     .range([innerRadius, radius])
     .paddingInner(arcPadding);
 
@@ -209,14 +209,14 @@ export const StackedRadialGaugeSeries: FC<
           {isChartNestedData(point)
             ? renderStackedArc(outerRadius, innerRadius, point, index)
             : renderInnerArc(
-              outerRadius,
-              innerRadius,
-              scale?.[index]?.(point.data) ??
+                outerRadius,
+                innerRadius,
+                scale?.[index]?.(point.data) ??
                   scale?.[0]?.(point.data) ??
                   scale(point.data),
-              point,
-              index
-            )}
+                point,
+                index
+              )}
         </g>
       );
     },
@@ -232,14 +232,4 @@ export const StackedRadialGaugeSeries: FC<
       </g>
     </>
   );
-};
-
-StackedRadialGaugeSeries.defaultProps = {
-  outerArc: <RadialGaugeArc disabled={true} animated={false} />,
-  innerArc: <RadialGaugeArc animated={true} />,
-  stackedInnerArc: <RadialGaugeStackedArc animated={true} />,
-  label: <StackedRadialGaugeValueLabel />,
-  colorScheme: ['#00ECB1'],
-  fillFactor: 0.2,
-  arcPadding: 0.15
 };

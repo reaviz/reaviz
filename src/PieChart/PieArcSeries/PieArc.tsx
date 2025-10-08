@@ -1,6 +1,6 @@
 import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
 import chroma from 'chroma-js';
-import { motion } from 'framer-motion';
+import { motion, MotionStyle } from 'motion/react';
 import { CloneElement } from 'reablocks';
 import { ArcData } from '@/PieChart';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
@@ -62,6 +62,11 @@ export interface PieArcProps {
   gradient?: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
+   * Style for the arc
+   */
+  style?: MotionStyle;
+
+  /**
    * OnClick event handler
    * @param e Click event
    */
@@ -85,14 +90,15 @@ export const PieArc: FC<PieArcProps> = ({
   color,
   data,
   arc,
-  cursor,
-  animated,
+  style = {},
+  cursor = 'initial',
+  animated = true,
   gradient,
-  disabled,
+  disabled = false,
   onClick,
   onMouseEnter,
   onMouseLeave,
-  tooltip
+  tooltip = <ChartTooltip />
 }) => {
   const arcRef = useRef<SVGPathElement | null>(null);
   const d = useInterpolate({ animated, arc, data });
@@ -147,7 +153,7 @@ export const PieArc: FC<PieArcProps> = ({
       <motion.path
         role="graphics-symbol"
         d={d}
-        style={{ cursor }}
+        style={{ cursor, ...style }}
         fill={internalFill}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
@@ -178,11 +184,4 @@ export const PieArc: FC<PieArcProps> = ({
       )}
     </g>
   );
-};
-
-PieArc.defaultProps = {
-  cursor: 'initial',
-  animated: true,
-  disabled: false,
-  tooltip: <ChartTooltip />
 };

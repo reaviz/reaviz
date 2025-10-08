@@ -8,9 +8,8 @@ export interface StackedAreaChartProps extends AreaChartProps {
 }
 
 export const StackedAreaChart: FC<Partial<StackedAreaChartProps>> = (props) => (
-  <AreaChart {...props} />
+  <AreaChart
+    {...props}
+    series={<StackedAreaSeries {...props.series?.props} type="stacked" />}
+  />
 );
-
-StackedAreaChart.defaultProps = {
-  series: <StackedAreaSeries />
-};

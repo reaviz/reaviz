@@ -17,6 +17,7 @@ import {
 import { GradientStop, RadialGradient } from '@/common/Gradient';
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Area Chart/Radial',
   component: RadialAreaChart,
   subcomponents: {
@@ -29,6 +30,7 @@ export default {
 
 export const Simple = () => (
   <RadialAreaChart
+    id="simple"
     height={500}
     width={500}
     data={medDateData}
@@ -62,6 +64,7 @@ export const Simple = () => (
 
 export const CategoricalData = () => (
   <RadialAreaChart
+    id="categorical"
     data={categoryData}
     height={500}
     width={500}
@@ -71,12 +74,13 @@ export const CategoricalData = () => (
 
 export const Resizable = () => (
   <div style={{ width: '50vw', height: '75vh', border: 'solid 1px red' }}>
-    <RadialAreaChart data={medDateData} />
+    <RadialAreaChart id="resizable" data={medDateData} />
   </div>
 );
 
 export const MultiSeries = () => (
   <RadialAreaChart
+    id="multi-series"
     data={multiCategory}
     height={500}
     width={500}

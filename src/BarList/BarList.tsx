@@ -1,6 +1,6 @@
 import { max } from 'd3-array';
 import { scaleLinear } from 'd3-scale';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CloneElement, useId } from 'reablocks';
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '@/common';
@@ -45,20 +45,22 @@ export interface BarListProps {
 }
 
 export const BarList: FC<BarListProps> = ({
-  data,
   id,
   className,
-  sortDirection,
   style,
-  series,
-  type
+  data = [],
+  sortDirection = 'desc',
+  series = <BarListSeries />,
+  type = 'count'
 }) => {
   const curId = useId(id);
 
   const mashedData = useMemo(() => {
-    const maxVal = type === 'count' ? max(data, (d) => d.data) : 100;
-    const domainVal = maxVal == 0 ? [0] : [0, maxVal];
-    const groupScale = scaleLinear().domain(domainVal).rangeRound([0, 100]);
+    const maxVal = type === 'count' ? max(data, (d) => d.data as number) : 100;
+    const domainVal = maxVal === 0 ? [0] : [0, maxVal];
+    const groupScale = scaleLinear()
+      .domain(domainVal as [number, number])
+      .rangeRound([0, 100]);
 
     const mashed = data.map((d) => ({
       ...d,
@@ -102,11 +104,4 @@ export const BarList: FC<BarListProps> = ({
       <CloneElement<BarListSeriesProps> element={series} data={mashedData} />
     </motion.section>
   );
-};
-
-BarList.defaultProps = {
-  data: [],
-  sortDirection: 'desc',
-  series: <BarListSeries />,
-  type: 'count'
 };

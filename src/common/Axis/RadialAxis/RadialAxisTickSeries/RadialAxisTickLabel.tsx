@@ -1,10 +1,12 @@
 import React, { FC, SVGTextElementAttributes, useMemo } from 'react';
 import { formatValue } from '@/common/utils/formatting';
+import classNames from 'classnames';
+import css from './RadialAxisTickLabel.module.css';
 
 const rad2deg = (angle: number) => (angle * 180) / Math.PI;
 
 export interface RadialAxisTickLabelProps
-  extends Omit<SVGTextElementAttributes<SVGTextElement>, 'format'> {
+  extends Omit<SVGTextElementAttributes<SVGTextElement>, 'format' | 'onClick'> {
   /**
    * Data to render.
    */
@@ -64,21 +66,27 @@ export interface RadialAxisTickLabelProps
    * Format tooltip title on hover label.
    */
   formatTooltip?: (value: any, index: number) => any | string;
+
+  /**
+   * Click handler for the label.
+   */
+  onClick?: (event: React.MouseEvent<SVGGElement>, value: any) => void;
 }
 
 export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
   point,
-  autoRotate,
+  autoRotate = true,
   rotation,
-  padding,
+  padding = 15,
   data,
-  fill,
-  fontFamily,
-  fontSize,
+  fill = '#71808d',
+  fontFamily = 'sans-serif',
+  fontSize = 11,
   format,
   lineSize,
   index,
   formatTooltip,
+  onClick,
   ...rest
 }) => {
   const { transform, textAnchor } = useMemo(() => {
@@ -123,7 +131,13 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
     typeof formatTooltip === 'function' ? formatTooltip(data, index) : text;
 
   return (
-    <g transform={transform}>
+    <g
+      transform={transform}
+      className={classNames({
+        [css.clickable]: !!onClick
+      })}
+      onClick={(event) => onClick?.(event, data)}
+    >
       <title>{titleHover}</title>
       <text
         dy="0.35em"
@@ -138,14 +152,4 @@ export const RadialAxisTickLabel: FC<Partial<RadialAxisTickLabelProps>> = ({
       </text>
     </g>
   );
-};
-
-RadialAxisTickLabel.defaultProps = {
-  fill: '#71808d',
-  fontSize: 11,
-  padding: 15,
-  fontFamily: 'sans-serif',
-  autoRotate: true,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
 };

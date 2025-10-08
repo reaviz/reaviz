@@ -1,5 +1,5 @@
 import React, { FC, Fragment, ReactElement } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
 import { ColorSchemeType, getColor } from '@/common/color';
 import { TreeMapLabel, TreeMapLabelProps } from './TreeMapLabel';
@@ -43,12 +43,14 @@ export interface TreeMapSeriesProps {
 export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   id,
   data,
-  colorScheme,
-  animated,
-  rect,
-  label
+  colorScheme = 'cybertron',
+  animated = true,
+  rect = <TreeMapRect />,
+  label = <TreeMapLabel />
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
 
   const renderItem = (item: any, index: number) => {
     const fill = getColor({
@@ -97,11 +99,4 @@ export const TreeMapSeries: FC<Partial<TreeMapSeriesProps>> = ({
   };
 
   return <Fragment>{data.map((d, index) => renderItem(d, index))}</Fragment>;
-};
-
-TreeMapSeries.defaultProps = {
-  colorScheme: 'cybertron',
-  animated: true,
-  rect: <TreeMapRect />,
-  label: <TreeMapLabel />
 };

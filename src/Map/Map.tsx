@@ -13,7 +13,7 @@ import {
 } from '@/common/containers/ChartContainer';
 import { CloneElement } from 'reablocks';
 import { MapMarkerProps, MapMarker } from './MapMarker';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 type MarkerElement = ReactElement<MapMarkerProps, typeof MapMarker>;
 
@@ -36,7 +36,7 @@ export const Map: FC<MapProps> = ({
   containerClassName,
   markers,
   data,
-  fill,
+  fill = 'rgba(255, 255, 255, 0.3)',
   projection = 'mercator'
 }) => {
   const getProjection = useCallback(
@@ -135,8 +135,4 @@ export const Map: FC<MapProps> = ({
       {(props) => renderChart(props)}
     </ChartContainer>
   );
-};
-
-Map.defaultProps = {
-  fill: 'rgba(255, 255, 255, 0.3)'
 };

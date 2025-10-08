@@ -1,6 +1,10 @@
 import React, { FC } from 'react';
 import { offset } from '@floating-ui/dom';
-import { BarSeriesProps, BarSeries } from './BarSeries';
+import {
+  BarSeriesProps,
+  BarSeries,
+  BAR_SERIES_DEFAULT_PROPS
+} from './BarSeries';
 import { ChartTooltip, TooltipTemplate, TooltipArea } from '@/common/Tooltip';
 import { formatValue } from '@/common/utils/formatting';
 import { schemes } from '@/common/color';
@@ -8,10 +12,10 @@ import { schemes } from '@/common/color';
 export const HistogramBarSeries: FC<Partial<BarSeriesProps>> = ({
   type,
   ...rest
-}) => <BarSeries {...rest} />;
+}) => <BarSeries {...HISTOGRAM_BAR_SERIES_DEFAULT_PROPS} {...rest} />;
 
-HistogramBarSeries.defaultProps = {
-  ...BarSeries.defaultProps,
+export const HISTOGRAM_BAR_SERIES_DEFAULT_PROPS = {
+  ...BAR_SERIES_DEFAULT_PROPS,
   colorScheme: schemes.cybertron[0],
   tooltip: (
     <TooltipArea

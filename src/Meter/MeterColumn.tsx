@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION, schemes } from '@/common';
 
 export interface MeterColumnProps {
@@ -54,23 +54,23 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
   scale,
   value,
   count,
-  height,
+  height = 32,
   className,
-  animated,
-  activeFill,
-  inActiveFill
+  animated = true,
+  activeFill = schemes.cybertron[0],
+  inActiveFill = '#414242'
 }) => {
   const isActive = scale(index) <= scale(value);
   const fill = isActive ? activeFill : inActiveFill;
   const transition = animated
     ? {
-      ...DEFAULT_TRANSITION,
-      delay: (index / count) * 0.5
-    }
+        ...DEFAULT_TRANSITION,
+        delay: (index / count) * 0.5
+      }
     : {
-      type: false,
-      delay: 0
-    };
+        type: false as const,
+        delay: 0
+      };
 
   return (
     <motion.div
@@ -83,15 +83,8 @@ export const MeterColumn: FC<Partial<MeterColumnProps>> = ({
         background: fill,
         height
       }}
-      tranisition={transition}
+      transition={transition}
       className={className}
     />
   );
-};
-
-MeterColumn.defaultProps = {
-  activeFill: schemes.cybertron[0],
-  inActiveFill: '#414242',
-  height: 32,
-  animated: true
 };

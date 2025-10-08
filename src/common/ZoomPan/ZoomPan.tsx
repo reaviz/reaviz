@@ -6,7 +6,6 @@ import React, {
   useEffect,
   useCallback
 } from 'react';
-import bind from 'memoize-bind';
 import {
   Pan,
   PanMoveEvent,
@@ -57,29 +56,29 @@ export interface ZoomPanProps extends PropsWithChildren {
 }
 
 export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
-  height,
-  width,
+  height = 0,
+  width = 0,
   children,
   disabled,
-  pannable,
-  maxZoom,
-  minZoom,
-  zoomable,
-  scale,
-  x,
-  y,
+  pannable = true,
+  maxZoom = 10,
+  minZoom = 0,
+  zoomable = true,
+  scale = 1,
+  x = 0,
+  y = 0,
   disableMouseWheel,
-  constrain,
-  zoomStep,
-  onPanCancel,
+  constrain = true,
+  zoomStep = 0.1,
+  onPanCancel = () => undefined,
   requireZoomModifier,
-  globalPanning,
-  onPanStart,
-  onZoomPan,
-  onPanMove,
-  onPanEnd,
-  onZoom,
-  onZoomEnd
+  globalPanning = true,
+  onPanStart = () => undefined,
+  onZoomPan = () => undefined,
+  onPanMove = () => undefined,
+  onPanEnd = () => undefined,
+  onZoom = () => undefined,
+  onZoomEnd = () => undefined
 }) => {
   const zoomRef = useRef<Zoom>();
   const panRef = useRef<Pan>();
@@ -166,9 +165,9 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
       disabled={!pannable || disabled}
       ref={panRef}
       globalPanning={globalPanning}
-      onPanStart={bind(onPanStartHandler)}
-      onPanMove={bind(onPanMoveHandler)}
-      onPanEnd={bind(onPanEndHandler)}
+      onPanStart={onPanStartHandler}
+      onPanMove={onPanMoveHandler}
+      onPanEnd={onPanEndHandler}
       onPanCancel={onPanCancel}
     >
       <Zoom
@@ -184,8 +183,8 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
         style={{ cursor }}
         requireZoomModifier={requireZoomModifier}
         matrix={matrix}
-        onZoom={bind(onZoomHandler)}
-        onZoomEnd={bind(onZoomEndHandler)}
+        onZoom={onZoomHandler}
+        onZoomEnd={onZoomEndHandler}
       >
         {!disabled && (
           <rect
@@ -206,25 +205,4 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
       </Zoom>
     </Pan>
   );
-};
-
-ZoomPan.defaultProps = {
-  maxZoom: 10,
-  minZoom: 0,
-  zoomStep: 0.1,
-  pannable: true,
-  zoomable: true,
-  constrain: true,
-  height: 0,
-  width: 0,
-  x: 0,
-  y: 0,
-  scale: 1,
-  globalPanning: true,
-  onPanStart: () => undefined,
-  onPanMove: () => undefined,
-  onPanEnd: () => undefined,
-  onPanCancel: () => undefined,
-  onZoom: () => undefined,
-  onZoomEnd: () => undefined
 };

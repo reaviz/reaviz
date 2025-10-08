@@ -73,3 +73,44 @@ export const CustomLabelRotation = () => (
     }
   />
 );
+
+export const ClickableLabels = () => (
+  <BarChart
+    width={450}
+    height={350}
+    data={categoryData}
+    xAxis={
+      <LinearXAxis
+        position="end"
+        type="category"
+        tickSeries={
+          <LinearXAxisTickSeries
+            label={
+              <LinearXAxisTickLabel
+                onClick={(event, value) => {
+                  alert(`Clicked on: ${value}`);
+                }}
+              />
+            }
+          />
+        }
+      />
+    }
+    yAxis={
+      <LinearYAxis
+        type="value"
+        tickSeries={
+          <LinearYAxisTickSeries
+            label={
+              <LinearYAxisTickLabel
+                onClick={(event, value) => {
+                  alert(`Clicked on: ${value}`);
+                }}
+              />
+            }
+          />
+        }
+      />
+    }
+  />
+);

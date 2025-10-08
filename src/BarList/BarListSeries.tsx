@@ -8,7 +8,7 @@ import {
   getAriaLabel,
   getColor
 } from '@/common';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import classNames from 'classnames';
 import css from './BarListSeries.module.css';
 
@@ -88,15 +88,15 @@ export interface BarListSeriesProps {
 
 export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
   data,
-  colorScheme,
+  colorScheme = 'cybertron',
   itemClassName,
   labelClassName,
   outerBarClassName,
   valueClassName,
   labelFormat,
   barClassName,
-  labelPosition,
-  valuePosition,
+  labelPosition = 'top',
+  valuePosition = 'none',
   valueFormat,
   onItemClick,
   onItemMouseEnter,
@@ -176,10 +176,4 @@ export const BarListSeries: FC<Partial<BarListSeriesProps>> = ({
       })}
     </>
   );
-};
-
-BarListSeries.defaultProps = {
-  colorScheme: 'cybertron',
-  labelPosition: 'top',
-  valuePosition: 'none'
 };

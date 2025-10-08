@@ -80,7 +80,7 @@ export const Bar = () => {
   const barData = range(50)
     .filter(() => randomNumber(1, 2) % 2)
     .map((i) => ({
-      id: i,
+      id: String(i),
       key: generateDate(randomNumber(i - 2, i + 2)),
       data: randomNumber(1, 10)
     }))

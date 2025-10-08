@@ -18,9 +18,9 @@ import {
   constructFunctionProps,
   PropFunctionTypes
 } from '@/common/utils/functions';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
-import { BarLabelProps, BarLabel } from './BarLabel';
+import { BarLabelProps, BarLabel, BAR_LABEL_DEFAULT_PROPS } from './BarLabel';
 import { BarTargetMarker, BarTargetMarkerProps } from './BarTargetMarker';
 import { formatValue, getAriaLabel } from '@/common/utils/formatting';
 import { GuideBarProps, GuideBar } from './GuideBar';
@@ -28,6 +28,7 @@ import { ChartTooltipProps, ChartTooltip } from '@/common/Tooltip';
 import { Glow } from '@/common/Glow';
 import { ClickEvent } from '@/common/types';
 import { generateGlowStyles } from '@/common/Glow/utils';
+import { mergeDefaultProps } from '@/common';
 
 export type BarType =
   | 'standard'
@@ -216,43 +217,49 @@ interface BarCoordinates {
   y: number;
 }
 
-export const Bar: FC<Partial<BarProps>> = ({
-  activeBrightness,
-  id,
-  gradient,
-  data,
-  barIndex,
-  color,
-  yScale,
-  barCount,
-  glow,
-  xScale,
-  groupIndex,
-  minHeight,
-  rangeLines,
-  animated,
-  active,
-  type,
-  tooltip,
-  layout,
-  mask,
-  label,
-  targetMarker,
-  cursor,
-  rx,
-  ry,
-  isCategorical,
-  className,
-  style,
-  width,
-  padding,
-  guide,
-  xScale1,
-  onMouseEnter,
-  onClick,
-  onMouseMove,
-  onMouseLeave
-}) => {
+export const Bar: FC<Partial<BarProps>> = (props) => {
+  const {
+    activeBrightness,
+    id,
+    gradient,
+    data,
+    barIndex,
+    color,
+    yScale,
+    barCount,
+    glow,
+    xScale,
+    groupIndex,
+    minHeight,
+    rangeLines,
+    animated,
+    active,
+    type,
+    tooltip,
+    layout,
+    mask,
+    label,
+    targetMarker,
+    cursor,
+    rx,
+    ry,
+    isCategorical,
+    className,
+    style,
+    width,
+    padding,
+    guide,
+    xScale1,
+    onMouseEnter,
+    onClick,
+    onMouseMove,
+    onMouseLeave
+  } = mergeDefaultProps(BAR_DEFAULT_PROPS, props);
+  const labelProps = useMemo(
+    () => ({ ...BAR_LABEL_DEFAULT_PROPS, ...label?.props }),
+    [label?.props]
+  );
+
   const isVertical = useMemo(() => layout === 'vertical', [layout]);
   const rect = useRef<SVGGElement | null>(null);
   const [internalActive, setInternalActive] = useState<boolean>(active);
@@ -535,7 +542,7 @@ export const Bar: FC<Partial<BarProps>> = ({
         };
       } else {
         return {
-          type: false,
+          type: false as const,
           delay: 0
         };
       }
@@ -572,6 +579,16 @@ export const Bar: FC<Partial<BarProps>> = ({
       delete animate.x;
       delete animate.y;
 
+      // If the fill is a gradient, we need to add it to the element
+      // rather than try and animate it. This is a workaround for a bug
+      // in the motion library where the gradient is not animated.
+      const extra: any = {};
+      if (fill.includes('url')) {
+        delete initial.fill;
+        delete animate.fill;
+        extra.fill = fill;
+      }
+
       return (
         <g ref={rect}>
           <motion.rect
@@ -584,6 +601,7 @@ export const Bar: FC<Partial<BarProps>> = ({
               }),
               cursor
             }}
+            {...extra}
             mask={maskPath}
             rx={rx}
             ry={ry}
@@ -619,7 +637,7 @@ export const Bar: FC<Partial<BarProps>> = ({
       rx,
       ry,
       style,
-      tooltipData
+      ariaLabelData
     ]
   );
 
@@ -736,7 +754,7 @@ export const Bar: FC<Partial<BarProps>> = ({
           index={index}
           data={data}
           scale={scale}
-          fill={label.props.fill || currentColorShade}
+          fill={labelProps.fill || currentColorShade}
           barCount={barCount}
           animated={animated}
           layout={layout}
@@ -770,7 +788,7 @@ export const Bar: FC<Partial<BarProps>> = ({
   );
 };
 
-Bar.defaultProps = {
+export const BAR_DEFAULT_PROPS = {
   activeBrightness: 0.5,
   rx: 0,
   ry: 0,
@@ -779,7 +797,7 @@ Bar.defaultProps = {
   label: null,
   targetMarker: <BarTargetMarker />,
   tooltip: null,
-  layout: 'vertical',
+  layout: 'vertical' as const,
   guide: null,
   gradient: <Gradient />
 };

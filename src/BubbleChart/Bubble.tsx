@@ -9,7 +9,7 @@ import React, {
 import { HierarchyCircularNode } from 'd3-hierarchy';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Gradient, GradientProps } from '@/common/Gradient';
 import { Mask, MaskProps } from '@/common/Mask';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
@@ -93,7 +93,9 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const bubbleRef = useRef<any | null>(null);
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
 
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {

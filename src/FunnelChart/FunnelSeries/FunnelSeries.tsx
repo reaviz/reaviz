@@ -1,5 +1,5 @@
 import React, { MouseEvent, useCallback, useMemo } from 'react';
-import { FunnelArc } from './FunnelArc';
+import { FUNNEL_ARC_DEFAULT_PROPS, FunnelArc } from './FunnelArc';
 import { CloneElement } from 'reablocks';
 import { FunnelArcProps } from './FunnelArc';
 import { FunnelAxis, FunnelAxisProps } from './FunnelAxis';
@@ -52,17 +52,25 @@ export interface FunnelSeriesProps {
 export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   data,
   id,
-  arc,
-  axis,
+  arc = <FunnelArc />,
+  axis = <FunnelAxis />,
   height,
   width,
   onSegmentClick
 }) => {
+  const arcProps = useMemo(
+    () => ({ ...FUNNEL_ARC_DEFAULT_PROPS, ...(arc?.props ?? {}) }),
+    [arc?.props]
+  );
+
   // Calculate the funnel data on mount and when data changes
   const getScales = useCallback(
     (height: number, width: number) => {
       const yScale = scaleLinear()
-        .domain([-max(data, ({ data }) => data), max(data, ({ data }) => data)])
+        .domain([
+          -max(data, ({ data }) => data as number),
+          max(data, ({ data }) => data as number)
+        ])
         .nice()
         .range([height, 0]);
 
@@ -87,7 +95,7 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
   const { datas, halfOffset } = useMemo(() => {
     // The 'layered' variant is actually just a series of funnel charts
     // laid on top of each other to create the effect of a layered funnel.
-    if (arc.props.variant === 'layered') {
+    if (arcProps.variant === 'layered') {
       const offset = height / 4;
       const halfOffset = offset / 2;
 
@@ -105,7 +113,7 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
         datas: [{ data, ...getScales(height, width) }]
       };
     }
-  }, [data, arc, height, width, getScales]);
+  }, [data, arcProps, height, width, getScales]);
 
   const handleSegmentClick = useCallback(
     (e: MouseEvent) => {
@@ -153,9 +161,4 @@ export const FunnelSeries: React.FC<Partial<FunnelSeriesProps>> = ({
       />
     </>
   );
-};
-
-FunnelSeries.defaultProps = {
-  arc: <FunnelArc />,
-  axis: <FunnelAxis />
 };

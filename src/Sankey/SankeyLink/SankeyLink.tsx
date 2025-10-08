@@ -9,7 +9,7 @@ import React, {
 } from 'react';
 import { offset } from '@floating-ui/dom';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { sankeyLinkHorizontal } from 'd3-sankey';
 import { CloneElement } from 'reablocks';
 import { formatValue } from '@/common/utils/formatting';
@@ -97,19 +97,22 @@ export interface SankeyLinkProps extends SankeyLinkExtra {
 }
 
 export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
-  gradient,
+  gradient = true,
   index,
   source,
   target,
-  tooltip,
+  tooltip = (
+    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
+  ),
   chartId,
   value,
-  active,
+  active = false,
+  animated = true,
   className,
-  disabled,
-  opacity,
+  disabled = false,
+  opacity = (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
   style,
-  width,
+  width = 0,
   color,
   y0,
   y1,
@@ -202,7 +205,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           animate={enterProps}
           exit={exitProps}
           transition={{
-            duration: 0.5
+            duration: animated ? 0.5 : 0
           }}
           stroke={stroke}
           strokeOpacity={opacity(active, disabled)}
@@ -223,16 +226,4 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
       )}
     </Fragment>
   );
-};
-
-SankeyLink.defaultProps = {
-  active: false,
-  animated: true,
-  disabled: false,
-  gradient: true,
-  opacity: (active, disabled) => (active ? 0.5 : disabled ? 0.1 : 0.35),
-  tooltip: (
-    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
-  ),
-  width: 0
 };

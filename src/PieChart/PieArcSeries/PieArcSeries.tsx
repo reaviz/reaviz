@@ -1,8 +1,12 @@
-import React, { FC, Fragment, ReactElement } from 'react';
+import React, { FC, Fragment, ReactElement, useMemo } from 'react';
 import { CloneElement } from 'reablocks';
 import { ArcData } from '@/PieChart';
 import { PieArc, PieArcProps } from './PieArc';
-import { PieArcLabel, PieArcLabelProps } from './PieArcLabel';
+import {
+  PIE_ARC_LABEL_DEFAULT_PROPS,
+  PieArcLabel,
+  PieArcLabelProps
+} from './PieArcLabel';
 import { getColor, ColorSchemeType } from '@/common/color';
 import {
   calculateCentroid,
@@ -11,6 +15,7 @@ import {
   calculateRadius
 } from './radiusUtils';
 import { identifier } from 'safe-identifier';
+import { mergeDefaultProps } from '@/common';
 
 export interface PieArcSeriesProps {
   /**
@@ -99,23 +104,30 @@ export interface PieArcSeriesProps {
   width: number;
 }
 
-export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
-  doughnut,
-  arcWidth,
-  label,
-  colorScheme,
-  width,
-  displayAllLabels,
-  height,
-  explode,
-  id,
-  animated,
-  cornerRadius,
-  padAngle,
-  padRadius,
-  arc,
-  data
-}) => {
+export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = (props) => {
+  const {
+    doughnut,
+    arcWidth,
+    label,
+    colorScheme,
+    width,
+    displayAllLabels,
+    height,
+    explode,
+    id,
+    animated,
+    cornerRadius,
+    padAngle,
+    padRadius,
+    arc,
+    data
+  } = mergeDefaultProps(PIE_ARC_SERIES_DEFAULT_PROPS, props);
+
+  const labelProps = useMemo(
+    () => ({ ...PIE_ARC_LABEL_DEFAULT_PROPS, ...label?.props }),
+    [label]
+  );
+
   const { outerRadius, innerRadius, labelWidth } = calculateRadius(
     height,
     width,
@@ -136,15 +148,15 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
 
   const positions = label
     ? calculateLabelPositions(
-      data,
-      outerRadius,
-      // 4 is for vertical margins between labels
-      label.props.height + 4,
-      cornerRadius,
-      padAngle,
-      padRadius,
-      displayAllLabels
-    )
+        data,
+        outerRadius,
+        // 4 is for vertical margins between labels
+        labelProps.height + 4,
+        cornerRadius,
+        padAngle,
+        padRadius,
+        displayAllLabels
+      )
     : [];
 
   const centroid = calculateCentroid(data, innerRadius, outerRadius, explode);
@@ -162,7 +174,6 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
       <Fragment key={safeKey}>
         {positions[index] && (
           <CloneElement<PieArcLabelProps>
-            id={id}
             element={label}
             data={arcData}
             centroid={centroid}
@@ -172,12 +183,12 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
           />
         )}
         <CloneElement<PieArcProps>
-          element={arc}
           id={`${id}-arc-${safeKey}`}
           data={arcData}
           animated={animated}
           arc={innerArc}
           color={color}
+          element={arc}
         />
       </Fragment>
     );
@@ -186,7 +197,7 @@ export const PieArcSeries: FC<Partial<PieArcSeriesProps>> = ({
   return <>{data.map(renderItem)}</>;
 };
 
-PieArcSeries.defaultProps = {
+export const PIE_ARC_SERIES_DEFAULT_PROPS = {
   animated: true,
   colorScheme: 'cybertron',
   innerRadius: 0,

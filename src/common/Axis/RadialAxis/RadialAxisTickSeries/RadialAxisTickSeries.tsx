@@ -66,15 +66,15 @@ export interface RadialAxisTickSeriesProps {
 
 export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
   scale,
-  count,
+  count = 12,
   outerRadius,
-  tick,
+  tick = <RadialAxisTick />,
   tickValues,
   innerRadius,
   interval,
-  type,
-  startAngle,
-  endAngle
+  type = 'time',
+  startAngle = 0,
+  endAngle = 2 * Math.PI
 }) => {
   const ticks = getTicks(scale, tickValues, type, count, interval || count);
 
@@ -99,12 +99,4 @@ export const RadialAxisTickSeries: FC<Partial<RadialAxisTickSeriesProps>> = ({
       })}
     </Fragment>
   );
-};
-
-RadialAxisTickSeries.defaultProps = {
-  count: 12,
-  type: 'time',
-  tick: <RadialAxisTick />,
-  startAngle: 0,
-  endAngle: 2 * Math.PI
 };

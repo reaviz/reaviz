@@ -89,6 +89,7 @@ const targetSampleData = [
 ];
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Vertical/Multi Series',
   component: BarChart,
   subcomponents: {

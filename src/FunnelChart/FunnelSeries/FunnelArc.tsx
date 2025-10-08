@@ -1,11 +1,16 @@
 import React, { FC, ReactElement, useMemo } from 'react';
 import { ChartShallowDataShape } from '@/common/data';
 import { area } from 'd3-shape';
-import { InterpolationTypes, getAriaLabel, interpolate } from '@/common/utils';
+import {
+  InterpolationTypes,
+  getAriaLabel,
+  interpolate,
+  mergeDefaultProps
+} from '@/common/utils';
 import { ColorSchemeType, getColor, schemes } from '@/common/color';
 import { Gradient, GradientProps, GradientStop } from '@/common/Gradient';
 import { CloneElement } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import {
   ChartTooltip,
   TooltipArea,
@@ -77,20 +82,22 @@ export interface FunnelArcProps {
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 }
 
-export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
-  data,
-  id,
-  xScale,
-  opacity,
-  index,
-  variant,
-  yScale,
-  interpolation,
-  colorScheme,
-  gradient,
-  glow,
-  tooltip
-}) => {
+export const FunnelArc: FC<Partial<FunnelArcProps>> = (props) => {
+  const {
+    data,
+    id,
+    xScale,
+    opacity,
+    index,
+    variant,
+    yScale,
+    interpolation,
+    colorScheme,
+    gradient,
+    glow,
+    tooltip
+  } = mergeDefaultProps(FUNNEL_ARC_DEFAULT_PROPS, props);
+
   // Note: Need to append the last section
   const internalData = [...data, data[data.length - 1]];
 
@@ -191,7 +198,7 @@ export const FunnelArc: FC<Partial<FunnelArcProps>> = ({
   );
 };
 
-FunnelArc.defaultProps = {
+export const FUNNEL_ARC_DEFAULT_PROPS: Partial<FunnelArcProps> = {
   gradient: (
     <Gradient
       direction="horizontal"
@@ -203,7 +210,6 @@ FunnelArc.defaultProps = {
   ),
   interpolation: 'smooth',
   colorScheme: schemes.cybertron[0],
-  animated: true,
   variant: 'default',
   opacity: 1,
   tooltip: null

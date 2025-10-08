@@ -28,8 +28,8 @@ export interface FunnelAxisLineProps {
 }
 
 export const FunnelAxisLine: FC<Partial<FunnelAxisLineProps>> = ({
-  strokeColor,
-  strokeWidth,
+  strokeColor = '#333',
+  strokeWidth = 2,
   yScale,
   xScale,
   index
@@ -47,9 +47,4 @@ export const FunnelAxisLine: FC<Partial<FunnelAxisLineProps>> = ({
       pointerEvents="none"
     />
   );
-};
-
-FunnelAxisLine.defaultProps = {
-  strokeColor: '#333',
-  strokeWidth: 2
 };

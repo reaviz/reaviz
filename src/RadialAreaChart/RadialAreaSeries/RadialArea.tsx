@@ -91,20 +91,20 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
   xScale,
   innerRadius,
   interpolation,
-  gradient,
-  isClosedCurve
+  gradient = <RadialGradient />,
+  isClosedCurve = true
 }) => {
   const transition = useMemo(
     () =>
       animated
         ? {
-          ...DEFAULT_TRANSITION,
-          delay: index * 0.05
-        }
+            ...DEFAULT_TRANSITION,
+            delay: index * 0.05
+          }
         : {
-          type: false,
-          delay: 0
-        },
+            type: false as const,
+            delay: 0
+          },
     [animated, index]
   );
 
@@ -181,9 +181,4 @@ export const RadialArea: FC<Partial<RadialAreaProps>> = ({
       )}
     </Fragment>
   );
-};
-
-RadialArea.defaultProps = {
-  gradient: <RadialGradient />,
-  isClosedCurve: true
 };

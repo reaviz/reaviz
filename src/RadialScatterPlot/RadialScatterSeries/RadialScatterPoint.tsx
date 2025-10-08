@@ -12,11 +12,11 @@ import { radialLine } from 'd3-shape';
 import classNames from 'classnames';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { schemes } from '@/common/color';
 import css from './RadialScatterPoint.module.css';
-import { getAriaLabel } from '@/common';
+import { getAriaLabel, mergeDefaultProps } from '@/common';
 
 export interface RadialScatterPointProps {
   /**
@@ -105,21 +105,25 @@ export interface RadialScatterPointProps {
   onMouseLeave: (event) => void;
 }
 
-export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
-  size,
-  data,
-  color,
-  index,
-  symbol,
-  active,
-  tooltip,
-  yScale,
-  xScale,
-  animated,
-  className,
-  visible,
-  ...rest
-}) => {
+export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = (
+  props
+) => {
+  const {
+    size,
+    data,
+    color,
+    index,
+    symbol,
+    active,
+    tooltip,
+    yScale,
+    xScale,
+    animated,
+    className,
+    visible,
+    ...rest
+  } = mergeDefaultProps(RADIAL_SCATTER_POINT_DEFAULT_PROPS, props);
+
   const ref = useRef<any>(null);
   const [hovered, setHovered] = useState<boolean>(false);
 
@@ -173,7 +177,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
       };
     } else {
       return {
-        type: false,
+        type: false as const,
         delay: 0
       };
     }
@@ -225,7 +229,7 @@ export const RadialScatterPoint: FC<Partial<RadialScatterPointProps>> = ({
   );
 };
 
-RadialScatterPoint.defaultProps = {
+export const RADIAL_SCATTER_POINT_DEFAULT_PROPS = {
   size: 3,
   color: schemes.cybertron[0],
   tooltip: <ChartTooltip />,

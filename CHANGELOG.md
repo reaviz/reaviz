@@ -1,196 +1,304 @@
+# 16.0.13 - 2/10/25
+- [fix] Tooltip does not remain at point location, follows user on scroll #306
+
+# 16.0.12 - 9/30/25
+- [fix] Fix generating key for ScatterSeries points #302
+
+# 16.0.11 - 9/30/25
+- [fix] Fix PieArc path initial value
+
+# 16.0.10 - 9/26/25
+- [fix] Add ellipsisLength property to LinearAxisTickSeries component #301
+
+# 16.0.9 - 9/11/25
+- [fix] Update reablocks to fix Pie arc override functionality
+
+# 16.0.7 - 8/11/25
+- [fix] Fix the flickering of the calendar heatmap when changing tickSize prop
+
+# 16.0.6 - 7/31/25
+- [improvement] Add ability to pass custom styles of the path to PieArc component #293
+
+# 16.0.5 - 7/17/25
+- [fix] Remove default props for RadialBarSeries and RadialBar
+
+# 16.0.4 - 3/26/25
+- [improvement] Add ability to change pointer event for Area #287
+
+# 16.0.3 - 2/14/25
+- [improvement] Update reablocks and motion
+
+# 16.0.2 - 1/21/25
+
+- [chore] Update venn.js dependency #283
+
+# 16.0.1 - 1/16/25
+
+- [improvement] Motion upgrade #282
+
+# 16.0.0 - 1/14/25
+
+- [improvement] Updates to get rid of using deprecated default props
+
+# 15.19.1 - 1/13/25
+
+- [fix] fix export of word cloud
+
+# 15.19.0 - 12/23/24
+
+- [feature] word cloud
+
 # 15.18.5 - 8/2/24
+
 - [fix] Fix tooltip blinking #243
 
 # 15.18.4 - 7/24/24
+
 - [fix] Fix HeatmapCalendar not showing all data #238
 
 # 15.18.3 - 6/13/24
+
 - [chore] Add JSDocs for GuideBar #235
 
 # 15.18.2 - 6/13/24
+
 - [fix] fix tooltip position issue after scroll related reablocks #234
- 
+
 # 15.18.1 - 6/12/24
+
 - [chore] fix old depedency for resize observer
- 
+
 # 15.18.0 - 6/12/24
+
 - [improvement] update reablocks [popper.js to floating-ui]
 
 # 15.17.4 - 6/12/24
+
 - [fix] test using cjs for resize observer for webpack
 
 # 15.17.3 - 6/7/24
+
 - [fix] fix resize not working on SSR
 
 # 15.17.2 - 6/5/24
+
 - [fix] improve sunburst sizing
 
 # 15.17.1 - 6/4/24
+
 - [feature] Add more light funnel blocks #231
 
 # 15.17.0 - 6/3/24
+
 - [feature] reaviz blocks!
 
 # 15.16.0 - 6/3/24
+
 - [feature] Sunburst chart #225
 - [chore] expanded `NestedDataShape` to allow for infinite nesting
 
 # 15.15.7 - 5/31/24
+
 - [improvement] update lib to generate docs #228
 - [chore] use date-fns instead moment #227
 
 # 15.15.6 - 5/30/24
+
 - [chore] extract demo data to separate repo #226
 
 # 15.15.5 - 5/29/24
+
 - [fix] fix paths for types
 
 # 15.15.4 - 5/29/24
+
 - [chore] upgrade deps
 - [chore] publish stories and docs
 - [chore] repath files
 
 # 15.15.3 - 5/9/24
+
 - [feature] add format title on hover label #218
 
 # 15.15.2 - 4/22/24
+
 - [fix] Upgrade reablocks #220
-  
+
 # 15.15.1 - 4/22/24
+
 - [fix] Update reablocks #217
 - [chore] Replace rdk #215
 - [chore] Upgrade reablocks #214
 
 # 15.15.0 - 4/8/24
+
 - [feature] added vertical line support for charts #212
 - [fix] fix labels off by `5px` in some scenarios #213
 
 # 15.14.0 - 4/2/24
+
 - [feature] Add opacity to glow #210
-  
+
 # 15.13.1 - 4/2/24
+
 - [improvement] Improve bar glow #209
 
 # 15.13.0 - 4/1/24
+
 - [feature] Add SequentialLegend gradient element styling #208
 - [fix] Fix heatmap cell styling #207
 
 # 15.12.0 - 3/28/24
+
 - [feature] Add custom symbols for heatmap cells #206
 - [fix] Fix bar charts visual regression #205
 
 # 15.11.0 - 3/26/24
+
 - [feature] Add Line glow #204
 - [improvement] Improve multi-series area chart glow #203
 
 # 15.10.0 - 3/26/24
+
 - [feature] Add glow to area chart #202
 
 # 15.9.5 - 3/26/24
+
 - [fix] Fix bar chart tooltip hover accuracy #201
 
 # 15.9.4 - 3/26/24
+
 - [feature] #198 Separate textProps for RadialAxisTickLabel text properties
 
 # 15.9.2 - 3/25/24
+
 - [feature] add support format for bubble chart
 
 # 15.9.1 - 3/13/24
+
 - [fix] fix bubble chart with icons
 
 # 15.9.0 - 3/5/24
+
 - [feature] add support for categorical data in radial scatter
 
 # 15.8.1 - 2/28/24
+
 - [chore] update deps
 
 # 15.8.0 - 2/27/24
+
 - [feature] add value markers for linear/radial line/area/bar/scatter #193
 
 # 15.7.2 - 2/22/24
+
 - [fix] Hide axis until chart became visible to avoid blinking #191
 
 # 15.7.1 - 2/15/24
+
 - [fix] Fix disappearing points on hover #189
 
 # 15.7.0 - 2/5/24
+
 - [feature] Gradient support for Line chart #186
 
 # 15.6.2 - 1/22/24
+
 - [fix] fix sankey on light mode
 - [chore] upgrade depedencies
 
 # 15.6.1 - 1/22/24
+
 - [fix] improve default outline
 - [chore] upgrade depedencies
 - [chore] improve some area chart demos
 
 # 15.6.0 - 12/29/23
+
 - [feature] Accessibility features for Line/Area/Radial charts #184
 
 # 15.5.0 - 12/29/23
+
 - [chore] Added posthog
 - [feature] Accessibility features #182 #183
 
 # 15.4.0 - 12/20/23
+
 - [feature] Heatmap: Add colorScheme callback function support #181
 
 # 15.3.0 - 12/19/23
+
 - [fix] Fix pie chart animation #180
 - [feature] Add stroke and glow to Heatmaps #179
 
 # 15.2.1 - 12/15/23
+
 - [chore] upgrade reablocks and rdk
 
 # 15.2.0 - 12/14/23
+
 - [chore] upgrade framer-motion to latest
 - [fix] fix pie chart initial animation
 - [fix] fix radial bar chart delay
 - [fix] fix animation jumping issue
 
 # 15.1.1 - 12/12/23
+
 - [fix] Fix venn diagram label fill #177
 
 # 15.1.0 - 12/12/23
+
 - [feature] Add venn diagram glow #176
 
 # 15.0.0 - 12/12/23
+
 - [BREAKING] Add funnel chart glow #175
 
 To migrate to 15.x you will need to replace all usage of the `Glow` component with the `Glow` interface. See the updated API documentation in storybook for more details.
 
 # 14.15.4 - 12/8/23
+
 - [fix] Fix bubble chart styling props #174
-  
+
 # 14.15.3 - 12/8/23
+
 - [feature] Add radial gradients #173
-  
+
 # 14.15.2 - 12/6/23
-- [feature] RadialGauge min/max value array support #172 
+
+- [feature] RadialGauge min/max value array support #172
 
 # 14.15.1 - 12/5/23
+
 - [fix] Fix jittering chart animations when updating data quickly #171
 
 # 14.15.0 - 11/27/23
+
 - [feature] Add ability to build Stacked arcs for StackedRadialGaugeSeries #169
 
 # 14.14.5 - 10/27/23
+
 - [fix] fix RadialChartAxisLabel autoRotate and alignment logic
 
 # 14.14.4 - 10/17/23
+
 - [fix] long FunnelChart labels crashing UI #158
 
 # 14.14.3 - 10/17/23
+
 - [feature] Add positioning and conditional display to FunnelChart labels #157
 
 # 14.14.2 = 10/12/23
+
 - [fix] Get FunnelChart click to work without a tooltip #155
 - [fix] radial tick callback fix #156
 
 # 14.14.1 = 10/12/23
+
 - [feature] Radial Axis Tick Series: Callback with index for tick element #154
 
 # 14.14.0 - 10/11/23
+
 - [feature] funnel chart tooltips #149
 - [feature] funnel chart click event handler #149
 - [fix] fix area chart animation too fast #151
@@ -198,29 +306,36 @@ To migrate to 15.x you will need to replace all usage of the `Glow` component wi
 - [fix] increase default inner radius on radial bar charts #153
 
 # 14.13.0 - 10/4/23
+
 - [feature] Multiseries support in Radial Bar Charts #148
 
 # 14.12.0 - 10/3/23
+
 - [feature] Custom angles in Radial Bar Chart #147
 
 # 14.11.1 - 9/28/23
+
 - [fix] Fix null tooltip ref #144
 
 # 14.11.0 - 9/28/23
+
 - [feature] Generic Radial chart for all start and end angles with open/closed curve options #144
 - [chore] upgrade reablocks
 
 # 14.10.1 - 9/20/23
+
 - [fix] fix errors related to types with fc conversion
-- [fix] fix ids not being passed down for gauges 
+- [fix] fix ids not being passed down for gauges
 
 # 14.10.0 - 9/18/23
+
 - [feature] add gradient to pie, donut and radial gauge
 - [fix] fix padding on axis #140
 - [chore] more fc conversions #138 #137
 - [chore] upgrade storybook
 
 # 14.9.8 - 9/7/23
+
 - [chore] convert linear axis to fc
 
 # 14.9.7 - 8/18/23
@@ -436,35 +551,117 @@ To migrate to 14.x, you will need to rename your CSS variables. Here is
 what they look like today:
 
 ```css
---color-background: rgb(51, 51, 51);
---color-on-background: #fff;
+--color-background:
 
---color-tooltip: rgba(0, 5, 11, 0.9);
---color-on-tooltip: #fff;
+rgb
+(
+51
+,
+51
+,
+51
+)
+;
+--color-on-background: #fff
 
---color-handle-fill: #2c343a;
---color-handle-stroke: #67c2e4;
---color-handle-drag-fill: transparent;
---color-handle-dots: #67c2e4;
---color-handle-line: #67c2e4;
+;
+
+--color-tooltip:
+
+rgba
+(
+0
+,
+5
+,
+11
+,
+0.9
+)
+;
+--color-on-tooltip: #fff
+
+;
+
+--color-handle-fill: #2c343a
+
+;
+--color-handle-stroke: #67c2e4
+
+;
+--color-handle-drag-fill: transparent
+
+;
+--color-handle-dots: #67c2e4
+
+;
+--color-handle-line: #67c2e4
+
+;
 ```
 
 Here is what they need to be renamed to:
 
 ```css
---tooltip-background: rgba(0, 5, 11, 0.9);
---tooltip-color: #fff;
---tooltip-border-radius: 5px;
---tooltip-spacing: 5px;
+--tooltip-background:
 
---chart-background: rgb(51, 51, 51);
---chart-color: #fff;
+rgba
+(
+0
+,
+5
+,
+11
+,
+0.9
+)
+;
+--tooltip-color: #fff
 
---chart-handle-fill: #2c343a;
---chart-handle-stroke: #67c2e4;
---chart-handle-drag-fill: transparent;
---chart-handle-dots: #67c2e4;
---chart-handle-line: #67c2e4;
+;
+--tooltip-border-radius:
+
+5
+px
+
+;
+--tooltip-spacing:
+
+5
+px
+
+;
+
+--chart-background:
+
+rgb
+(
+51
+,
+51
+,
+51
+)
+;
+--chart-color: #fff
+
+;
+
+--chart-handle-fill: #2c343a
+
+;
+--chart-handle-stroke: #67c2e4
+
+;
+--chart-handle-drag-fill: transparent
+
+;
+--chart-handle-dots: #67c2e4
+
+;
+--chart-handle-line: #67c2e4
+
+;
 ```
 
 # 13.3.2 - 11/30/22

@@ -8,7 +8,7 @@ import React, {
   useRef,
   ReactNode
 } from 'react';
-import { offset } from '@floating-ui/dom';
+import { flip, offset } from '@floating-ui/dom';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import {
@@ -17,7 +17,7 @@ import {
 } from '@/common/utils/functions';
 import chroma from 'chroma-js';
 import classNames from 'classnames';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 import { ChartInternalShallowDataShape } from '@/common/data';
 import css from './HeatmapCell.module.css';
@@ -120,10 +120,10 @@ export type HeatmapCellProps = {
 const modifiers = [offset({ mainAxis: 0, crossAxis: 3 })];
 
 export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
-  rx,
-  ry,
-  cursor,
-  tooltip,
+  rx = 2,
+  ry = 2,
+  cursor = 'auto',
+  tooltip = <ChartTooltip modifiers={[flip()]} />,
   onClick,
   onMouseEnter,
   onMouseLeave,
@@ -184,7 +184,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       };
     } else {
       return {
-        type: false,
+        type: false as const,
         delay: 0
       };
     }
@@ -278,14 +278,4 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
       )}
     </Fragment>
   );
-};
-
-HeatmapCell.defaultProps = {
-  rx: 2,
-  ry: 2,
-  cursor: 'auto',
-  tooltip: <ChartTooltip />,
-  onClick: () => undefined,
-  onMouseEnter: () => undefined,
-  onMouseLeave: () => undefined
 };

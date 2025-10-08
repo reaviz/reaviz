@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export interface RadialGuideBarProps {
   active: boolean;
@@ -26,8 +26,3 @@ export const RadialGuideBar: FC<Partial<RadialGuideBarProps>> = ({
     }}
   />
 );
-
-RadialGuideBar.defaultProps = {
-  fill: '#eee',
-  opacity: 0.2
-};

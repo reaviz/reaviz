@@ -19,6 +19,7 @@ import isEqual from 'react-fast-compare';
 import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 
 export type RadialBarSeriesType = 'standard' | 'grouped';
+
 export interface RadialBarSeriesProps {
   /**
    * Parsed data shape. Set internally by `RadialBarChart`.
@@ -112,13 +113,13 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
   yScale,
   height,
   width,
-  tooltip,
-  colorScheme,
-  bar,
-  animated,
-  startAngle,
-  endAngle,
-  type,
+  tooltip = <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
+  colorScheme = schemes.cybertron[0],
+  bar = <RadialBar />,
+  animated = true,
+  startAngle = 0,
+  endAngle = 2 * Math.PI,
+  type = 'standard',
   valueMarkers
 }) => {
   const [activeValues, setActiveValues] = useState<any | null>(null);
@@ -150,8 +151,6 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
             innerBarCount={innerBarCount}
             groupIndex={groupIndex}
             animated={animated}
-            startAngle={startAngle}
-            endAngle={endAngle}
           />
         </Fragment>
       );
@@ -224,31 +223,21 @@ export const RadialBarSeries: FC<Partial<RadialBarSeriesProps>> = ({
     >
       {isMultiSeries
         ? (data as ChartInternalNestedDataShape[]).map((groupData, index) => (
-          <g key={`bar-group-${index}`}>
-            {renderBarGroup(
+            <g key={`bar-group-${index}`}>
+              {renderBarGroup(
                 groupData.data as ChartInternalShallowDataShape[],
                 data.length,
                 groupData.data.length,
                 index
-            )}
-          </g>
-        ))
+              )}
+            </g>
+          ))
         : renderBarGroup(
             data as ChartInternalShallowDataShape[],
             1,
             data.length
-        )}
+          )}
       {renderValueMarkers()}
     </CloneElement>
   );
-};
-
-RadialBarSeries.defaultProps = {
-  colorScheme: schemes.cybertron[0],
-  tooltip: <TooltipArea tooltip={<ChartTooltip followCursor={true} />} />,
-  bar: <RadialBar />,
-  animated: true,
-  startAngle: 0,
-  endAngle: 2 * Math.PI,
-  type: 'standard'
 };

@@ -1,6 +1,6 @@
 import React, { Fragment, useRef, useState, FC, useMemo } from 'react';
 import { Tooltip } from 'reablocks';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import css from './MapMarker.module.css';
 import { tooltipTheme } from '@/common';
 import { offset } from '@floating-ui/dom';

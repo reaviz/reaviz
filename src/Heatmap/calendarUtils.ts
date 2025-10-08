@@ -41,13 +41,13 @@ export const buildDataScales = (
   // Get the most recent date to get the range from
   // From the end date, lets find the start year/month of that
   // From that start year/month, lets find the end year/month for our bounds
-  const startDate = min(rawData, (d) => d.key) || new Date();
+  const startDate = min(rawData, (d) => d.key as Date) || new Date();
   const endDomain = view === 'year' ? 53 : 5;
 
   let end, start;
   if (view === 'year') {
     // For year view, end at the most recent date and start 364 days before that
-    end = getStartOfDay(max(rawData, (d) => d.key) || new Date());
+    end = getStartOfDay(max(rawData, (d) => d.key as Date) || new Date());
     start = getStartOfDay(subDays(end, 365));
   } else {
     // For month view, start at the first of the month and end 4 weeks from that

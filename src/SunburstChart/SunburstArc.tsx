@@ -8,7 +8,7 @@ import React, {
 } from 'react';
 import { arc } from 'd3-shape';
 import { getAriaLabel } from '@/common/utils/formatting';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
 import { useHoverIntent } from '@/common/utils/useHoverIntent';
@@ -78,8 +78,8 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
   radius,
   fill,
   data,
-  cursor,
-  tooltip,
+  cursor = 'pointer',
+  tooltip = <ChartTooltip />,
   animated,
   gradient,
   onClick,
@@ -191,9 +191,4 @@ export const SunburstArc: FC<Partial<SunburstArcProps>> = ({
       )}
     </g>
   );
-};
-
-SunburstArc.defaultProps = {
-  cursor: 'pointer',
-  tooltip: <ChartTooltip />
 };

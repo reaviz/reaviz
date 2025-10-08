@@ -43,8 +43,8 @@ export const PieChart: FC<PieChartProps> = ({
   containerClassName,
   displayAllLabels,
   data = [],
-  margins,
-  series
+  margins = 10,
+  series = <PieArcSeries />
 }) => {
   const newId = useId(id);
 
@@ -92,9 +92,4 @@ export const PieChart: FC<PieChartProps> = ({
       {renderSeries}
     </ChartContainer>
   );
-};
-
-PieChart.defaultProps = {
-  margins: 10,
-  series: <PieArcSeries />
 };

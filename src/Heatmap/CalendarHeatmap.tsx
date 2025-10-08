@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react';
+import React, { FC, useCallback, useMemo } from 'react';
 import { ChartShallowDataShape } from '@/common/data';
 import { Heatmap, HeatmapProps } from './Heatmap';
 import {
@@ -7,7 +7,9 @@ import {
   LinearYAxisTickSeries,
   LinearXAxisTickSeries,
   LinearYAxisTickLabel,
-  LinearXAxisTickLabel
+  LinearXAxisTickLabel,
+  LINEAR_Y_AXIS_TICK_LABEL_DEFAULT_PROPS,
+  LINEAR_X_AXIS_TICK_LABEL_DEFAULT_PROPS
 } from '@/common/Axis';
 import { HeatmapSeries, HeatmapCell } from './HeatmapSeries';
 import { ChartTooltip } from '@/common/Tooltip';
@@ -41,13 +43,28 @@ export interface CalendarHeatmapProps extends Omit<HeatmapProps, 'data'> {
   view: CalendarView;
 }
 
-// Format the xAxis label for the start + n week
-const xAxisLabelFormat = (start: Date) => (weeks: number) =>
-  addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' });
-
 export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
-  view,
+  view = 'year',
   data,
+  series = (
+    <HeatmapSeries
+      padding={0.3}
+      emptyColor="transparent"
+      cell={
+        <HeatmapCell
+          tooltip={
+            <ChartTooltip
+              content={(d) =>
+                `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
+                  d.data.value
+                )}`
+              }
+            />
+          }
+        />
+      }
+    />
+  ),
   ...rest
 }) => {
   const {
@@ -60,12 +77,25 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
   // For month, only pass 1 tick value
   const xTickValues = view === 'year' ? undefined : [1];
 
+  const getDayOfWeek = useCallback((day: number) => weekDays[day], []);
+
   // Get the yAxis label formatting based on view type
-  const yAxisLabelFormat = view === 'year' ? (d) => weekDays[d] : () => null;
+  const yAxisLabelFormat = useMemo(
+    () => (view === 'year' ? getDayOfWeek : () => null),
+    [getDayOfWeek, view]
+  );
+
+  // Format the xAxis label for the start + n week
+  const xAxisLabelFormat = useCallback(
+    (weeks: number) =>
+      addWeeksToDate(start, weeks).toLocaleString('default', { month: 'long' }),
+    [start]
+  );
 
   return (
     <Heatmap
       {...rest}
+      series={series}
       data={domainData}
       yAxis={
         <LinearYAxis
@@ -96,7 +126,7 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
                 <LinearXAxisTickLabel
                   padding={5}
                   align="end"
-                  format={xAxisLabelFormat(start)}
+                  format={xAxisLabelFormat}
                 />
               }
             />
@@ -105,27 +135,4 @@ export const CalendarHeatmap: FC<Partial<CalendarHeatmapProps>> = ({
       }
     />
   );
-};
-
-CalendarHeatmap.defaultProps = {
-  view: 'year',
-  series: (
-    <HeatmapSeries
-      padding={0.3}
-      emptyColor="transparent"
-      cell={
-        <HeatmapCell
-          tooltip={
-            <ChartTooltip
-              content={(d) =>
-                `${formatValue(d.data.metadata.date)} ∙ ${formatValue(
-                  d.data.value
-                )}`
-              }
-            />
-          }
-        />
-      }
-    />
-  )
 };

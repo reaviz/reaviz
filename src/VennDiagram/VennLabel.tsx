@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { wrapText } from '@/common/utils/wrapText';
 import { DEFAULT_TRANSITION } from '@/common/Motion';
 
@@ -65,13 +65,13 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   format,
   id,
   active,
-  labelType,
-  showAll,
-  wrap,
-  animated,
+  labelType = 'key',
+  showAll = false,
+  wrap = true,
+  animated = true,
   fill,
-  fontSize,
-  fontFamily
+  fontSize = 11,
+  fontFamily = 'sans-serif'
 }) => {
   // If the text area is very large, then lets just skip showing the label
   if (!showAll && !data.arcs?.filter((a) => a.large).length) {
@@ -81,15 +81,17 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
   const key =
     labelType === 'key' ? data.data?.sets?.join(' | ') : data.data.size;
 
-  const transition = animated ? DEFAULT_TRANSITION : { delay: 0, type: false };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { delay: 0, type: false as const };
   const text = wrap
     ? wrapText({
-      key,
-      x: data.text.x,
-      fontFamily,
-      fontSize,
-      width: data?.circles?.[0]?.radius
-    })
+        key,
+        x: data.text.x,
+        fontFamily,
+        fontSize,
+        width: data?.circles?.[0]?.radius
+      })
     : key;
 
   return (
@@ -119,13 +121,4 @@ export const VennLabel: FC<Partial<VennLabelProps>> = ({
       {format ? format(data) : text}
     </motion.text>
   );
-};
-
-VennLabel.defaultProps = {
-  labelType: 'key',
-  showAll: false,
-  wrap: true,
-  animated: true,
-  fontSize: 11,
-  fontFamily: 'sans-serif'
 };

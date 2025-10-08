@@ -10,7 +10,7 @@ import { IVennLayout } from '@upsetjs/venn.js';
 import { ColorSchemeType, getColor } from '@/common/color';
 import { VennArc, VennArcProps } from './VennArc';
 import { VennLabel, VennLabelProps } from './VennLabel';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CloneElement } from 'reablocks';
 import chroma from 'chroma-js';
 import { VennOuterLabel, VennOuterLabelProps } from './VennOuterLabel';
@@ -69,14 +69,16 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
   data,
   id,
   selections,
-  animated,
-  disabled,
-  colorScheme,
-  outerLabel,
-  arc,
-  label
+  animated = true,
+  disabled = false,
+  colorScheme = 'cybertron',
+  outerLabel = <VennOuterLabel />,
+  arc = <VennArc />,
+  label = <VennLabel />
 }) => {
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
   const [actives, setActives] = useState<string[]>([]);
   const [hovered, setHovered] = useState<string | null>(null);
 
@@ -238,13 +240,4 @@ export const VennSeries: FC<Partial<VennSeriesProps>> = ({
       ))}
     </motion.g>
   );
-};
-
-VennSeries.defaultProps = {
-  animated: true,
-  disabled: false,
-  colorScheme: 'cybertron',
-  outerLabel: <VennOuterLabel />,
-  arc: <VennArc />,
-  label: <VennLabel />
 };

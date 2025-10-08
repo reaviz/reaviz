@@ -6,7 +6,6 @@ import {
   nonZeroCategoryData
 } from 'reaviz-data-utils';
 import { BarSeries, Bar, BarLabel, GuideBar } from './BarSeries';
-import { schemes } from '@/common/color';
 import chroma from 'chroma-js';
 import { range } from 'd3-array';
 import { Stripes } from '@/common/Mask';
@@ -35,6 +34,7 @@ const targetSampleData = [
 ];
 
 export default {
+  tags: ['snapshot'],
   title: 'Charts/Bar Chart/Vertical/Single Series',
   component: BarChart,
   subcomponents: {
@@ -50,7 +50,7 @@ export const Simple = () => (
     width={400}
     height={350}
     data={categoryData}
-    series={<BarSeries colorScheme={schemes[0]} padding={0.1} bar={<Bar />} />}
+    series={<BarSeries padding={0.1} bar={<Bar />} />}
   />
 );
 
@@ -87,7 +87,7 @@ export const LargeDataset = () => (
     width={350}
     height={350}
     data={largeCategoryData}
-    series={<BarSeries colorScheme={schemes[0]} />}
+    series={<BarSeries />}
   />
 );
 
@@ -207,7 +207,7 @@ export const Waterfall = () => (
     width={350}
     height={350}
     data={categoryData}
-    series={<BarSeries type="waterfall" colorScheme={schemes[0]} />}
+    series={<BarSeries type="waterfall" />}
   />
 );
 
@@ -216,7 +216,7 @@ export const NonZero = () => (
     width={350}
     height={250}
     data={nonZeroCategoryData}
-    series={<BarSeries colorScheme={schemes[0]} />}
+    series={<BarSeries />}
   />
 );
 

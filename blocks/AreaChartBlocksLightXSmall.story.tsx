@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Area,
   AreaChart,
@@ -13,7 +14,9 @@ import {
   LinearYAxis,
   LinearYAxisTickSeries,
   PointSeries,
+  StackedAreaChart,
   StackedAreaSeries,
+  StackedNormalizedAreaChart,
   StackedNormalizedAreaSeries
 } from '../src/index';
 
@@ -30,6 +33,7 @@ import {
 } from 'reaviz-data-utils';
 
 export default {
+  tags: ['snapshot'],
   title: 'Blocks/Area Chart/Light/X-Small',
   component: AreaChart
 };
@@ -40,7 +44,8 @@ export const Stacked = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <AreaChart
+      <StackedAreaChart
+        id="stacked"
         data={multiDateData}
         xAxis={
           <LinearXAxis
@@ -81,8 +86,8 @@ export const Stacked = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="80%" stopOpacity={0.2} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -105,7 +110,8 @@ export const StackedNormalized = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <AreaChart
+      <StackedNormalizedAreaChart
+        id="stacked-normalized"
         data={multiDateData}
         xAxis={
           <LinearXAxis
@@ -145,8 +151,8 @@ export const StackedNormalized = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="80%" stopOpacity={0.2} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -171,6 +177,7 @@ export const NonZero = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="non-zero"
         data={areaSingleSeriesNonZeroData}
         xAxis={
           <LinearXAxis
@@ -210,8 +217,8 @@ export const NonZero = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="80%" stopOpacity={0.2} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="80%" stopOpacity={0.2} />
                     ]}
                   />
                 }
@@ -235,6 +242,7 @@ export const MultiSeriesSimple = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="multi-series-simple"
         data={areaMultiSeriesSimpleData}
         xAxis={
           <LinearXAxis
@@ -273,8 +281,8 @@ export const MultiSeriesSimple = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -298,6 +306,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="simple"
         data={areaSingleSeriesSimpleData}
         xAxis={
           <LinearXAxis
@@ -335,8 +344,8 @@ export const Simple = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -360,6 +369,7 @@ export const MultiSeriesInterpolationSmooth = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="multi-series-interpolation-smooth"
         data={areaMultiSeriesInterpolationSmoothData}
         xAxis={
           <LinearXAxis
@@ -399,8 +409,8 @@ export const MultiSeriesInterpolationSmooth = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -424,6 +434,7 @@ export const InterpolationSmooth = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="interpolation-smooth"
         data={areaSingleSeriesInterpolationSmoothData}
         xAxis={
           <LinearXAxis
@@ -462,8 +473,8 @@ export const InterpolationSmooth = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -487,6 +498,7 @@ export const MultiSeriesInterpolationStep = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="multi-series-interpolation-step"
         data={areaMultiSeriesInterpolationStepData}
         xAxis={
           <LinearXAxis
@@ -526,8 +538,8 @@ export const MultiSeriesInterpolationStep = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -551,6 +563,7 @@ export const InterpolationStep = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="interpolation-step"
         data={areaSingleSeriesInterpolationStepData}
         xAxis={
           <LinearXAxis
@@ -589,8 +602,8 @@ export const InterpolationStep = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }
@@ -614,6 +627,7 @@ export const CircleSeries = () => {
         Incident Report
       </h3>
       <AreaChart
+        id="circle-series"
         data={areaCircleSeriesV1Data}
         xAxis={
           <LinearXAxis
@@ -652,8 +666,8 @@ export const CircleSeries = () => {
                 gradient={
                   <Gradient
                     stops={[
-                      <GradientStop stopOpacity={0} />,
-                      <GradientStop offset="100%" stopOpacity={0.4} />
+                      <GradientStop key={1} stopOpacity={0} />,
+                      <GradientStop key={2} offset="100%" stopOpacity={0.4} />
                     ]}
                   />
                 }

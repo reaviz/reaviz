@@ -6,7 +6,7 @@ import React, {
   Fragment,
   useMemo
 } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import chroma from 'chroma-js';
 import { ChartTooltip, ChartTooltipProps } from '@/common/Tooltip';
 import { CloneElement } from 'reablocks';
@@ -65,15 +65,17 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
   data,
   fill,
   animated,
-  cursor,
-  tooltip,
+  cursor = 'pointer',
+  tooltip = <ChartTooltip />,
   onMouseEnter,
   onMouseLeave,
   onClick
 }) => {
   const [internalActive, setInternalActive] = useState<boolean>(false);
   const rectRef = useRef<any | null>(null);
-  const transition = animated ? DEFAULT_TRANSITION : { type: false, delay: 0 };
+  const transition = animated
+    ? DEFAULT_TRANSITION
+    : { type: false as const, delay: 0 };
   const currentFill = internalActive ? chroma(fill).darken(0.8).hex() : fill;
 
   const { pointerOut, pointerOver } = useHoverIntent({
@@ -138,9 +140,4 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
       )}
     </Fragment>
   );
-};
-
-TreeMapRect.defaultProps = {
-  cursor: 'pointer',
-  tooltip: <ChartTooltip />
 };
