@@ -1,3 +1,7 @@
+# 16.1.0 - 8/10/25
+- [improvement] Add onClick handler support for axis labels with hover underline styling #307
+- [feature] Bar target marker #248
+
 # 16.0.13 - 2/10/25
 - [fix] Tooltip does not remain at point location, follows user on scroll #306
 
