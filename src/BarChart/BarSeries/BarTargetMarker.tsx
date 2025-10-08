@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import {
   ChartInternalShallowDataShape,
   DEFAULT_TRANSITION,
-  Direction
+  Direction,
+  mergeDefaultProps
 } from '@/common';
 
 export interface BarTargetMarkerProps {
@@ -88,23 +89,24 @@ export interface BarTargetMarkerProps {
   deltaStrokeWidth?: number;
 }
 
-export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
-  data,
-  height,
-  width,
-  x,
-  y,
-  animated,
-  layout = 'vertical',
-  scale,
-  index,
-  barCount,
-  fill = '#fff',
-  positiveDeltaFill = '#00C49F',
-  negativeDeltaFill = '#FF7361',
-  targetStrokeWidth = 2,
-  deltaStrokeWidth = 1
-}) => {
+export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = (props) => {
+  const {
+    data,
+    height,
+    width,
+    x,
+    y,
+    animated,
+    layout,
+    scale,
+    index,
+    barCount,
+    fill,
+    positiveDeltaFill,
+    negativeDeltaFill,
+    targetStrokeWidth,
+    deltaStrokeWidth
+  } = mergeDefaultProps(BAR_TARGET_MARKER_DEFAULT_PROPS, props);
   const isVertical = layout === 'vertical';
   const [valuePos, targetPos] = useMemo(
     () => [scale(data.value), scale(data.target)],
@@ -193,4 +195,13 @@ export const BarTargetMarker: FC<Partial<BarTargetMarkerProps>> = ({
       <rect width={targetWidth} height={targetHeight} fill={fill} />
     </motion.g>
   );
+};
+
+export const BAR_TARGET_MARKER_DEFAULT_PROPS: Partial<BarTargetMarkerProps> = {
+  layout: 'vertical' as const,
+  fill: '#fff',
+  positiveDeltaFill: '#00C49F',
+  negativeDeltaFill: '#FF7361',
+  targetStrokeWidth: 2,
+  deltaStrokeWidth: 1
 };
