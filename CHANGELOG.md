@@ -1,3 +1,6 @@
+# 16.1.1 - 10/17/25
+- [fix] Fix tooltip stuck at top-left corner on focus change, related to reablocks
+
 # 16.1.0 - 8/10/25
 - [improvement] Add onClick handler support for axis labels with hover underline styling #307
 - [feature] Bar target marker #248
