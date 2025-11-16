@@ -164,7 +164,6 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     },
     childRef
   ) => {
-    const [visible, setVisible] = useState<boolean>();
     const [placement, setPlacement] = useState<Placement>();
     const [value, setValue] = useState<any>();
     const [offsetX, setOffsetX] = useState<any>();
@@ -425,7 +424,6 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
           );
 
           setPlacement(newPlacement);
-          setVisible(true);
           setValue(newValue);
           setOffsetX(nx);
           setOffsetY(ny);
@@ -464,9 +462,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     const onMouseLeave = useCallback(() => {
       setPrevX(undefined);
       setPrevY(undefined);
-
       setValue(undefined);
-      setVisible(false);
 
       onValueLeave();
     }, [onValueLeave]);
@@ -476,7 +472,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
      * @returns void
      */
     const recomputeOffsets = useCallback(() => {
-      if (!visible) {
+      if (disabled) {
         return;
       }
       const container = (fullCircleRef.current ||
@@ -499,11 +495,11 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       const { nx, ny } = calculateOffset(px, py, rect, marginX, marginY);
       setOffsetX(nx);
       setOffsetY(ny);
-    }, [fullCircleRef, ref, visible, prevX, prevY, height, calculateOffset]);
+    }, [fullCircleRef, ref, disabled, prevX, prevY, height, calculateOffset]);
 
     // Update the offsets when the window is scrolled or resized
     useEffect(() => {
-      if (!visible) {
+      if (disabled) {
         return;
       }
       const handler = () => recomputeOffsets();
@@ -514,7 +510,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         window.removeEventListener('scroll', handler, true);
         window.removeEventListener('resize', handler);
       };
-    }, [visible, recomputeOffsets]);
+    }, [disabled, recomputeOffsets]);
 
     useImperativeHandle(childRef, () => ({
       triggerMouseMove(e: React.MouseEvent) {
@@ -599,7 +595,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
             {!isRadial && renderLinear()}
             <CloneElement<ChartTooltipProps>
               element={tooltip}
-              visible={visible}
+              visible={true}
               placement={placement}
               modifiers={[offset({ mainAxis: 15 }), flip()]}
               reference={tooltipReference}
