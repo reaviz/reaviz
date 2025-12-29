@@ -17,7 +17,7 @@
     "ts:check": "tsc --noEmit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
     "start": "storybook dev -p 9009",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -186,11 +186,6 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "packageManager": "npm@10.8.2",
   "engines": {
