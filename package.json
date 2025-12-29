@@ -16,8 +16,7 @@
     "test:ci": "vitest run --coverage --passWithNoTests",
     "ts:check": "tsc --noEmit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
-    "start": "storybook dev -p 9009",
-    "prepare": "husky install"
+    "start": "storybook dev -p 9009"
   },
   "type": "module",
   "types": "./dist/index.d.ts",
@@ -151,11 +150,9 @@
     "eslint-plugin-storybook": "^9.1.5",
     "fast-glob": "^3.3.3",
     "globals": "^16.4.0",
-    "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
     "jest-serializer-html": "^7.1.0",
     "jsdom": "^26.1.0",
-    "lint-staged": "^16.1.6",
     "postcss": "^8.5.6",
     "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^10.3.1",
@@ -178,23 +175,5 @@
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
     "world-atlas": "^2.0.2"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
-    ],
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "packageManager": "npm@10.8.2",
-  "engines": {
-    "node": ">=22",
-    "npm": ">=10.8.2"
   }
 }
