@@ -7,3 +7,5 @@ export * from './RangeLines';
 export * from './BarLabel';
 export * from './HistogramBarSeries';
 export * from './GuideBar';
+export * from './BarTargetMarker';
+
