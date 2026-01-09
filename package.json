@@ -2,6 +2,9 @@
   "name": "reaviz",
   "version": "16.1.1",
   "description": "Data Visualization using React",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",
     "build:docs": "node scripts/docs.js",
