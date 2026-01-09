@@ -17,7 +17,7 @@
     "ts:check": "tsc --noEmit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
     "start": "storybook dev -p 9009",
-    "prepare": "npm run build"
+    "prepare": "npm run build:js"
   },
   "type": "module",
   "types": "./dist/index.d.ts",
