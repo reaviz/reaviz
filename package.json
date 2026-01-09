@@ -16,8 +16,7 @@
     "test:ci": "vitest run --coverage --passWithNoTests",
     "ts:check": "tsc --noEmit",
     "prettier": "prettier --loglevel warn --write 'src/**/*.{ts,tsx,js,jsx}'",
-    "start": "storybook dev -p 9009",
-    "prepare": "npm run build:js"
+    "start": "storybook dev -p 9009"
   },
   "type": "module",
   "types": "./dist/index.d.ts",
