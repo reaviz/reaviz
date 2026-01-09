@@ -203,7 +203,7 @@ export const Line: FC<Partial<LineProps>> = ({
     };
   }, [coords, data, getLinePath, hasArea, pathLength, xScale, yScale]);
 
-  const stroke = color(data, index);
+  const stroke = useMemo(() => color(data, index), [data, index, color]);
   const extras = constructFunctionProps(rest, data);
   const showLine = hasArea || pathLength !== null;
 
@@ -212,7 +212,7 @@ export const Line: FC<Partial<LineProps>> = ({
       return `url(#gradient-${id})`;
     }
     return stroke;
-  }, [gradient, id]);
+  }, [gradient, id, stroke]);
 
   // framer-motion freaks out when these are added for area
   if (hasArea) {
