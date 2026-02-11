@@ -32,11 +32,11 @@ export const Move: FC<Partial<MoveProps>> = ({
   onMoveEnd = () => undefined,
   children
 }) => {
-  let started = false;
-  let deltaX = 0;
-  let deltaY = 0;
-  let prevXPosition = 0;
-  let prevYPosition = 0;
+  const started = useRef(false);
+  const deltaX = useRef(0);
+  const deltaY = useRef(0);
+  const prevXPosition = useRef(0);
+  const prevYPosition = useRef(0);
   const rqf = useRef<number>();
 
   useEffect(() => {
@@ -70,7 +70,7 @@ export const Move: FC<Partial<MoveProps>> = ({
 
   const checkThreshold = () => {
     return (
-      !started && (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold)
+      !started.current && (Math.abs(deltaX.current) > threshold || Math.abs(deltaY.current) > threshold)
     );
   };
 
@@ -91,7 +91,9 @@ export const Move: FC<Partial<MoveProps>> = ({
     event.preventDefault();
     event.stopPropagation();
 
-    started = false;
+    started.current = false;
+    deltaX.current = 0;
+    deltaY.current = 0;
 
     // Always bind event so we cancel movement even if no action was taken
     window.addEventListener('mousemove', onMouseMove);
@@ -103,8 +105,8 @@ export const Move: FC<Partial<MoveProps>> = ({
     event.stopPropagation();
 
     const { movementX, movementY } = event;
-    let localDeltaX = deltaX + movementX;
-    let localDeltaY = deltaY + movementY;
+    let localDeltaX = deltaX.current + movementX;
+    let localDeltaY = deltaY.current + movementY;
 
     if (checkThreshold()) {
       disableTextSelection(true);
@@ -112,7 +114,7 @@ export const Move: FC<Partial<MoveProps>> = ({
 
       localDeltaX = 0;
       localDeltaY = 0;
-      started = true;
+      started.current = true;
 
       onMoveStart({
         nativeEvent: event,
@@ -129,8 +131,8 @@ export const Move: FC<Partial<MoveProps>> = ({
       });
     }
 
-    deltaX = localDeltaX;
-    deltaY = localDeltaY;
+    deltaX.current = localDeltaX;
+    deltaY.current = localDeltaY;
   };
 
   const onMouseUp = (event) => {
@@ -139,7 +141,7 @@ export const Move: FC<Partial<MoveProps>> = ({
 
     disposeHandlers();
 
-    if (started) {
+    if (started.current) {
       onMoveEnd({
         nativeEvent: event,
         type: 'mouse'
@@ -160,9 +162,11 @@ export const Move: FC<Partial<MoveProps>> = ({
     event.preventDefault();
     event.stopPropagation();
 
-    started = false;
-    prevXPosition = event.touches[0].clientX;
-    prevYPosition = event.touches[0].clientY;
+    started.current = false;
+    deltaX.current = 0;
+    deltaY.current = 0;
+    prevXPosition.current = event.touches[0].clientX;
+    prevYPosition.current = event.touches[0].clientY;
 
     // Always bind event so we cancel movement even if no action was taken
     window.addEventListener('touchmove', onTouchMove);
@@ -175,8 +179,8 @@ export const Move: FC<Partial<MoveProps>> = ({
 
     // Calculate delta from previous position and current
     const { clientX, clientY } = getTouchCoords(event);
-    let localDeltaX = clientX - prevXPosition;
-    let localDeltaY = clientY - prevYPosition;
+    let localDeltaX = clientX - prevXPosition.current;
+    let localDeltaY = clientY - prevYPosition.current;
 
     // Track the delta
     localDeltaX = localDeltaX + localDeltaX;
@@ -188,7 +192,7 @@ export const Move: FC<Partial<MoveProps>> = ({
 
       localDeltaX = 0;
       localDeltaY = 0;
-      started = true;
+      started.current = true;
 
       onMoveStart({
         nativeEvent: { ...event, clientX, clientY },
@@ -210,8 +214,8 @@ export const Move: FC<Partial<MoveProps>> = ({
       });
     }
 
-    prevXPosition = clientX;
-    prevYPosition = clientY;
+    prevXPosition.current = clientX;
+    prevYPosition.current = clientY;
   };
 
   const onTouchEnd = (event: TouchEvent) => {
@@ -219,7 +223,7 @@ export const Move: FC<Partial<MoveProps>> = ({
     event.stopPropagation();
     disposeHandlers();
 
-    if (started) {
+    if (started.current) {
       onMoveEnd({
         nativeEvent: event,
         type: 'touch'

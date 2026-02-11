@@ -1,4 +1,4 @@
-import { PointerEvent, useCallback, useRef } from 'react';
+import { PointerEvent, useCallback, useEffect, useRef } from 'react';
 
 export interface HoverIntentOptions {
   interval?: number;
@@ -102,6 +102,12 @@ export const useHoverIntent = ({
     },
     [cleanup, delay, timeout]
   );
+
+  useEffect(() => {
+    return () => {
+      cleanup();
+    };
+  }, [cleanup]);
 
   return {
     pointerOver,

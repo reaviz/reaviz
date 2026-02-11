@@ -154,7 +154,7 @@ export const ScatterPlot: FC<Partial<ScatterPlotProps>> = ({
         setIsZoomed(event.isZoomed);
 
         clearTimeout(timeout.current);
-        timeout.current = setTimeout(() => setPreventAnimation(true), 500);
+        timeout.current = setTimeout(() => setPreventAnimation(false), 500);
       }
     },
     [zoomControlled]
