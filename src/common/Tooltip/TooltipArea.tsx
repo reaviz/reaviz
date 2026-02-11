@@ -267,7 +267,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
             if (Array.isArray(seriesPoint.data)) {
               for (const nestedPoint of seriesPoint.data) {
                 const right = nestedPoint.x;
-                const key = right instanceof Date ? right.getTime() : right;
+                const key = right instanceof Date ? `d:${right.getTime()}` : right;
                 let idx = indexMap.get(key);
 
                 if (idx === undefined) {

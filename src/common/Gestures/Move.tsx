@@ -92,6 +92,8 @@ export const Move: FC<Partial<MoveProps>> = ({
     event.stopPropagation();
 
     started.current = false;
+    deltaX.current = 0;
+    deltaY.current = 0;
 
     // Always bind event so we cancel movement even if no action was taken
     window.addEventListener('mousemove', onMouseMove);
@@ -161,6 +163,8 @@ export const Move: FC<Partial<MoveProps>> = ({
     event.stopPropagation();
 
     started.current = false;
+    deltaX.current = 0;
+    deltaY.current = 0;
     prevXPosition.current = event.touches[0].clientX;
     prevYPosition.current = event.touches[0].clientY;
 
