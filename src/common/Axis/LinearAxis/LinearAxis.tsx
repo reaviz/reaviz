@@ -2,7 +2,7 @@ import { CloneElement } from 'reablocks';
 import React, {
   FC,
   ReactElement,
-  createRef,
+  useRef,
   useCallback,
   useEffect,
   useMemo,
@@ -69,7 +69,7 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
     [tickSeries?.props]
   );
 
-  const containerRef = createRef<SVGGElement>();
+  const containerRef = useRef<SVGGElement>(null);
   const [dimensions, setDimensions] = useState<LinearAxisState>({
     height: height,
     width: width

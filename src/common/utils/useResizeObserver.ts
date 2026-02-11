@@ -31,7 +31,7 @@ export const useResizeObserver = <T extends HTMLElement>(): [
     resizeObserver.observe(element);
 
     return () => {
-      resizeObserver.unobserve(element);
+      resizeObserver.disconnect();
     };
   }, []);
 

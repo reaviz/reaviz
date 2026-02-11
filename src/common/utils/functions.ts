@@ -17,7 +17,7 @@ export const functionProps = (prop: string, val: any, data: any) => {
     return val(data);
   } else if (prop === 'className') {
     return classNames(val);
-  } else if (val !== undefined || val !== null) {
+  } else if (val !== undefined && val !== null) {
     return val;
   }
 

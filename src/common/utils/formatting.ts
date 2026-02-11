@@ -10,13 +10,12 @@ const getNavigatorLanguage = () => {
     return navigator.languages[0];
   }
 
-  if (
+  return (
     (navigator as any).userLanguage ||
     navigator.language ||
-    (navigator as any).browserLanguage
-  ) {
-    return 'en';
-  }
+    (navigator as any).browserLanguage ||
+    'en'
+  );
 };
 
 const locale = getNavigatorLanguage();

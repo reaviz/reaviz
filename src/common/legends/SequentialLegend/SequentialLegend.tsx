@@ -49,12 +49,16 @@ export const SequentialLegend: FC<SequentialLegendProps> = ({
   orientation = 'vertical'
 }) => {
   // Generate the color gradient
-  const color = chroma
-    .scale(colorScheme)
-    .colors(10)
-    .reverse()
-    .map((c, i) => `${c} ${i * 10}%`)
-    .join(',');
+  const color = useMemo(
+    () =>
+      chroma
+        .scale(colorScheme)
+        .colors(10)
+        .reverse()
+        .map((c, i) => `${c} ${i * 10}%`)
+        .join(','),
+    [colorScheme]
+  );
 
   // Get the extent from the data passed
   const [end, start] = useMemo(

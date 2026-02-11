@@ -5,6 +5,7 @@ type AccessorCallback = (data: any) => any;
  */
 export function uniqueBy<T = any>(data: T[], ...accessors: AccessorCallback[]) {
   const result: any[] = [];
+  const seen = new Set<any>();
 
   const ittr = (arr: T[], depth: number) => {
     for (const a of arr) {
@@ -16,7 +17,8 @@ export function uniqueBy<T = any>(data: T[], ...accessors: AccessorCallback[]) {
       const val = acc(a);
       if (Array.isArray(val)) {
         ittr(val, depth + 1);
-      } else if (!result.includes(val)) {
+      } else if (!seen.has(val)) {
+        seen.add(val);
         result.push(val);
       }
     }

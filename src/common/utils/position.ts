@@ -161,7 +161,7 @@ export const getPositionForTarget = ({ target, clientX, clientY }) => {
 /**
  * Gets the point from q given matrix.
  */
-export const getPointFromMatrix = (event, matrix): PointObjectNotation => {
+export const getPointFromMatrix = (event, matrix): PointObjectNotation | null => {
   const parent = getParentSVG(event);
 
   if (!parent) {

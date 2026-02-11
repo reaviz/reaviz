@@ -261,26 +261,23 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
         const result: TooltipDataShape[] = [];
 
         if (inverse) {
+          const indexMap = new Map<string | number, number>();
           for (const point of series) {
             const seriesPoint = point as ChartInternalNestedDataShape;
             if (Array.isArray(seriesPoint.data)) {
               for (const nestedPoint of seriesPoint.data) {
                 const right = nestedPoint.x;
-                let idx = result.findIndex((r) => {
-                  const left = r.x;
-                  if (left instanceof Date && right instanceof Date) {
-                    return left.getTime() === right.getTime();
-                  }
-                  return left === right;
-                });
+                const key = right instanceof Date ? right.getTime() : right;
+                let idx = indexMap.get(key);
 
-                if (idx === -1) {
+                if (idx === undefined) {
                   result.push({
                     x: nestedPoint.x,
                     data: []
                   });
 
                   idx = result.length - 1;
+                  indexMap.set(key, idx);
                 }
 
                 const data = result[idx].data;
