@@ -35,5 +35,20 @@
     &:focus-visible {
       outline: auto;
     }
+
+    rect:focus-visible,
+    path:focus-visible,
+    circle:focus-visible,
+    g:focus-visible {
+      outline: 2px solid #67c2e4;
+      outline-offset: 1px;
+    }
+
+    rect:focus:not(:focus-visible),
+    path:focus:not(:focus-visible),
+    circle:focus:not(:focus-visible),
+    g:focus:not(:focus-visible) {
+      outline: none;
+    }
   }
 }

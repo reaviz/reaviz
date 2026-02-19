@@ -1,4 +1,4 @@
-import React, { ReactElement, useState, FC, useRef, useMemo } from 'react';
+import React, { ReactElement, useState, FC, useRef, useMemo, useCallback } from 'react';
 import chroma from 'chroma-js';
 import { motion, MotionStyle } from 'motion/react';
 import { CloneElement } from 'reablocks';
@@ -143,12 +143,42 @@ export const PieArc: FC<PieArcProps> = ({
   );
   const ariaLabelData = useMemo(() => getAriaLabel(tooltipData), [tooltipData]);
 
+  const onFocusInternal = useCallback(() => {
+    if (!disabled) {
+      setActive(true);
+    }
+  }, [disabled]);
+
+  const onBlurInternal = useCallback(() => {
+    if (!disabled) {
+      setActive(false);
+    }
+  }, [disabled]);
+
+  const onKeyDownInternal = useCallback(
+    (event: React.KeyboardEvent) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        if (!disabled) {
+          onClick?.({
+            value: data.data,
+            nativeEvent: event as any
+          });
+        }
+      }
+    },
+    [data, disabled, onClick]
+  );
+
   return (
     <g
       ref={arcRef}
       tabIndex={0}
       aria-label={ariaLabelData}
       role="graphics-document"
+      onFocus={onFocusInternal}
+      onBlur={onBlurInternal}
+      onKeyDown={onKeyDownInternal}
     >
       <motion.path
         role="graphics-symbol"
