@@ -1,3 +1,7 @@
+# 16.1.2 - 2/19/26
+- [fix] Fix bugs, memory leaks, and performance issues across codebase #318
+- [fix] Fix: Add missing useMemo dependency in Line.tsx to fix stale strokeFill colors #317
+
 # 16.1.1 - 12/29/25
 - [fix] add export target marker
 
