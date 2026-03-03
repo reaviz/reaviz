@@ -1,0 +1,1642 @@
+# REAVIZ
+
+> A modular, enterprise-grade data visualization library for React built on D3. 22+ chart types with native React rendering, Motion animations, full customization via JSX props, and accessibility support. Apache-2.0 licensed.
+
+- Built on D3 for calculations, React for rendering — not a wrapper
+- Every chart element accepts JSX props for deep customization
+- Ships with 50+ pre-built Blocks (composable chart patterns)
+- Motion-powered animations out of the box
+- Supports TypeScript natively
+- Install: `npm i reaviz`
+- Compared to recharts/nivo: reaviz offers more chart variety (sankey, heatmap, venn, radial gauges, treemap, sunburst, word cloud) with lower-level customization access
+
+---
+
+## Getting Started
+
+### Installation
+
+```bash
+npm install reaviz --save
+```
+
+Also available via yarn, pnpm, or bun:
+```bash
+yarn add reaviz
+pnpm add reaviz
+bun add reaviz
+```
+
+### Requirements
+
+- React v16+ and ReactDOM
+- Does not support React Native
+
+### CSS Variables
+
+REAVIZ uses CSS variables for theming. These are not applied automatically — you must set sensible defaults in your global styles:
+
+```css
+:root {
+  --color-tooltip-background: #1a1a2e;
+  --color-tooltip-color: #ffffff;
+  --color-tooltip-border-radius: 4px;
+  --color-tooltip-padding: 8px;
+  --color-handle-fill: #2d60e8;
+  --color-handle-stroke: #1a1a2e;
+  --color-handle-drag: #2d60e8;
+  --color-handle-dots: #ffffff;
+  --color-handle-line: #2d60e8;
+}
+```
+
+---
+
+## Data Shapes
+
+REAVIZ uses two primary data shapes for chart input:
+
+### ChartShallowDataShape (Single Series)
+
+Used by: BarList, BubbleChart, FunnelChart, LinearGauge, Meter, PieChart, ScatterPlot, SparklineChart, SunburstChart, TreeMap, WordCloud.
+
+```typescript
+interface ChartShallowDataShape {
+  key: string | number | Date;
+  data: number | string | Date | [number, number];
+  metadata?: any;
+}
+```
+
+Example:
+```typescript
+const data = [
+  { key: 'Jan', data: 100 },
+  { key: 'Feb', data: 200 },
+  { key: 'Mar', data: 150 }
+];
+```
+
+For date-based axes:
+```typescript
+const dateData = [
+  { key: new Date('2024-01-01'), data: 100 },
+  { key: new Date('2024-02-01'), data: 200 },
+  { key: new Date('2024-03-01'), data: 150 }
+];
+```
+
+### ChartNestedDataShape (Multi Series)
+
+Used by: Multi-series AreaChart, BarChart (grouped/stacked), Heatmap, RadarChart.
+
+```typescript
+interface ChartNestedDataShape {
+  key: string | number | Date;
+  data: ChartShallowDataShape[];
+  metadata?: any;
+}
+```
+
+Example:
+```typescript
+const multiSeriesData = [
+  {
+    key: 'Series 1',
+    data: [
+      { key: new Date('2024-01-01'), data: 100 },
+      { key: new Date('2024-02-01'), data: 200 }
+    ]
+  },
+  {
+    key: 'Series 2',
+    data: [
+      { key: new Date('2024-01-01'), data: 150 },
+      { key: new Date('2024-02-01'), data: 250 }
+    ]
+  }
+];
+```
+
+### ChartDataShape (Union)
+
+```typescript
+type ChartDataShape = ChartShallowDataShape | ChartNestedDataShape;
+```
+
+---
+
+## Base Chart Props (ChartProps)
+
+All chart components extend this base interface:
+
+```typescript
+interface ChartProps {
+  /** Chart ID */
+  id?: string;
+  /** Chart width in pixels. Auto-sizes if not provided. */
+  width?: number;
+  /** Chart height in pixels. Auto-sizes if not provided. */
+  height?: number;
+  /** Margins around the chart area: { top, bottom, left, right } */
+  margins?: { top?: number; bottom?: number; left?: number; right?: number };
+  /** CSS class for the SVG element */
+  className?: string;
+  /** CSS class for the container div */
+  containerClassName?: string;
+  /** Style for the SVG element */
+  style?: React.CSSProperties;
+  /** Center both axes */
+  center?: boolean;
+  /** Center X axis only */
+  centerX?: boolean;
+  /** Center Y axis only */
+  centerY?: boolean;
+}
+```
+
+---
+
+## Charts
+
+### Area Chart
+
+Single/multi-series area charts with stacking and interpolation options.
+
+**Docs:** https://reaviz.dev/docs/charts/area-chart
+
+**Variants:** AreaChart (single/multi), StackedAreaChart, StackedNormalizedAreaChart
+
+**Props:**
+```typescript
+interface AreaChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartDataShape[];
+  /** The series component that renders the area/line/circles. */
+  series: ReactElement<AreaSeriesProps, typeof AreaSeries>;
+  /** The linear axis component for the Y Axis. */
+  yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The linear axis component for the X Axis. */
+  xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The chart's background gridlines. */
+  gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
+  /** The chart's brush component for selection. */
+  brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
+  /** The chart's zoom pan component. */
+  zoomPan: ReactElement<ChartZoomPanProps, typeof ChartZoomPan> | null;
+  /** Secondary axis components for multi-axis charts. */
+  secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+}
+```
+
+**Default values:**
+- `xAxis`: `<LinearXAxis type="time" />`
+- `yAxis`: `<LinearYAxis type="value" />`
+- `series`: `<AreaSeries />`
+- `gridlines`: `<GridlineSeries />`
+- `brush`: `null`
+- `zoomPan`: `null`
+
+**Basic usage:**
+```tsx
+import { AreaChart, AreaSeries, Line } from 'reaviz';
+
+const data = [
+  { key: new Date('2024-01-01'), data: 100 },
+  { key: new Date('2024-02-01'), data: 200 },
+  { key: new Date('2024-03-01'), data: 150 }
+];
+
+<AreaChart
+  width={350}
+  height={250}
+  data={data}
+  series={
+    <AreaSeries
+      interpolation="linear"
+      colorScheme="cybertron"
+      line={<Line strokeWidth={4} />}
+    />
+  }
+/>
+```
+
+---
+
+### Bar Chart
+
+Vertical/horizontal bars, grouped, stacked, waterfall, marimekko, histogram.
+
+**Docs:** https://reaviz.dev/docs/charts/bar-chart
+
+**Variants:** BarChart, StackedBarChart, StackedNormalizedBarChart, MarimekkoChart, HistogramBarChart
+
+**Props:**
+```typescript
+interface BarChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartDataShape[];
+  /** The series component that renders the bar components. */
+  series: ReactElement<BarSeriesProps, typeof BarSeries>;
+  /** The linear axis component for the Y Axis. */
+  yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The linear axis component for the X Axis. */
+  xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The chart's background gridlines. */
+  gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
+  /** The chart's brush component. */
+  brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
+  /** Secondary axis components for multi-axis charts. */
+  secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+}
+```
+
+**Default values:**
+- `xAxis`: `<LinearXAxis type="category" tickSeries={<LinearXAxisTickSeries tickSize={20} />} />`
+- `yAxis`: `<LinearYAxis type="value" />`
+- `series`: `<BarSeries />`
+- `gridlines`: `<GridlineSeries />`
+
+**Basic usage:**
+```tsx
+import { BarChart, BarSeries, Bar } from 'reaviz';
+
+const data = [
+  { key: 'DLP', data: 13 },
+  { key: 'SIEM', data: 2 },
+  { key: 'Mail', data: 8 },
+  { key: 'Mail', data: 5 }
+];
+
+<BarChart
+  width={400}
+  height={350}
+  data={data}
+  series={<BarSeries padding={0.1} bar={<Bar />} />}
+/>
+```
+
+**Stacked Bar Chart:**
+```tsx
+import { StackedBarChart, StackedBarSeries, Bar } from 'reaviz';
+
+<StackedBarChart
+  width={400}
+  height={350}
+  data={multiSeriesData}
+  series={<StackedBarSeries bar={<Bar />} />}
+/>
+```
+
+**Horizontal Bar Chart:**
+```tsx
+import { BarChart, BarSeries, Bar, LinearXAxis, LinearYAxis } from 'reaviz';
+
+<BarChart
+  width={400}
+  height={350}
+  data={data}
+  xAxis={<LinearXAxis type="value" />}
+  yAxis={<LinearYAxis type="category" />}
+  series={<BarSeries layout="horizontal" bar={<Bar />} />}
+/>
+```
+
+---
+
+### Bar List
+
+Simple horizontal bar lists for rankings and comparison.
+
+**Docs:** https://reaviz.dev/docs/charts/bar-list
+
+**Props:**
+```typescript
+interface BarListProps {
+  /** ID for the chart. */
+  id?: string;
+  /** CSS Classname for the element. */
+  className?: string;
+  /** Style for the element. */
+  style?: React.CSSProperties;
+  /** Data for the chart. */
+  data: ChartShallowDataShape[];
+  /** Sort direction of the data. */
+  sortDirection?: 'asc' | 'desc' | 'none';
+  /** Series to render. */
+  series?: ReactElement<BarListSeriesProps, typeof BarListSeries>;
+  /** Whether values are percentages or absolute. */
+  type?: 'percent' | 'count';
+}
+```
+
+**Basic usage:**
+```tsx
+import { BarList } from 'reaviz';
+
+<BarList
+  style={{ width: 350 }}
+  data={[
+    { key: 'Vulnerability Patch', data: 50 },
+    { key: 'Critical Failure', data: 25 },
+    { key: 'Physical Intrusion', data: 5 },
+    { key: 'Phishing Attempts', data: 100 }
+  ]}
+/>
+```
+
+---
+
+### Bubble Chart
+
+Scatter-based bubble visualizations using circle packing.
+
+**Docs:** https://reaviz.dev/docs/charts/bubble-chart
+
+**Props:**
+```typescript
+interface BubbleChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[];
+  /** The series component that renders the arc components. */
+  series?: ReactElement<BubbleSeriesProps, typeof BubbleSeries>;
+}
+```
+
+**Basic usage:**
+```tsx
+import { BubbleChart, BubbleSeries } from 'reaviz';
+
+<BubbleChart
+  data={[
+    { key: 'AWS', data: 100 },
+    { key: 'SendGrid', data: 45 },
+    { key: 'Okta', data: 75 },
+    { key: 'Twilio', data: 25 }
+  ]}
+  height={450}
+  width={450}
+  series={<BubbleSeries colorScheme="cybertron" />}
+/>
+```
+
+---
+
+### Funnel Chart
+
+Conversion funnel visualizations for pipeline/process data.
+
+**Docs:** https://reaviz.dev/docs/charts/funnel-chart
+
+**Props:**
+```typescript
+interface FunnelChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[];
+  /** The series component that renders the funnel components. */
+  series: ReactElement<FunnelSeriesProps, typeof FunnelSeries>;
+}
+```
+
+**Basic usage:**
+```tsx
+import { FunnelChart } from 'reaviz';
+
+<FunnelChart
+  height={300}
+  width={500}
+  data={[
+    { key: 'Visited Site', data: 1000 },
+    { key: 'Added to Cart', data: 900 },
+    { key: 'Initiated Checkout', data: 600 },
+    { key: 'Purchased', data: 400 }
+  ]}
+/>
+```
+
+---
+
+### Heatmap
+
+Calendar and matrix heatmaps for two-dimensional data.
+
+**Docs:** https://reaviz.dev/docs/charts/heatmap
+
+**Props:**
+```typescript
+interface HeatmapProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartNestedDataShape[];
+  /** The series component that renders the cell components. */
+  series: ReactElement<HeatmapSeriesProps, typeof HeatmapSeries>;
+  /** The linear axis component for the Y Axis. */
+  yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The linear axis component for the X Axis. */
+  xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** Secondary axis components for multi-axis charts. */
+  secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+}
+```
+
+**Basic usage:**
+```tsx
+import { Heatmap, HeatmapSeries } from 'reaviz';
+
+<Heatmap
+  height={250}
+  width={400}
+  data={heatmapData}
+  series={<HeatmapSeries colorScheme="OrRd" />}
+/>
+```
+
+**Data format (nested):**
+```typescript
+const heatmapData = [
+  {
+    key: 'Row 1',
+    data: [
+      { key: 'Col A', data: 10 },
+      { key: 'Col B', data: 25 },
+      { key: 'Col C', data: 5 }
+    ]
+  },
+  {
+    key: 'Row 2',
+    data: [
+      { key: 'Col A', data: 15 },
+      { key: 'Col B', data: 30 },
+      { key: 'Col C', data: 20 }
+    ]
+  }
+];
+```
+
+---
+
+### Line Chart
+
+Single/multi-series line charts. LineChart is a wrapper around AreaChart with a LineSeries.
+
+**Docs:** https://reaviz.dev/docs/charts/line-chart
+
+**Props:** Same as AreaChartProps (LineChart is a type alias for AreaChart with LineSeries default).
+
+**Basic usage:**
+```tsx
+import { LineChart, LineSeries, Line } from 'reaviz';
+
+const data = [
+  { key: new Date('2024-01-01'), data: 100 },
+  { key: new Date('2024-02-01'), data: 200 },
+  { key: new Date('2024-03-01'), data: 150 }
+];
+
+<LineChart
+  width={350}
+  height={250}
+  data={data}
+  series={
+    <LineSeries
+      interpolation="linear"
+      colorScheme="cybertron"
+      line={<Line strokeWidth={4} />}
+    />
+  }
+/>
+```
+
+---
+
+### Linear Gauge
+
+Linear gauge/progress indicators for displaying a value within a range.
+
+**Docs:** https://reaviz.dev/docs/charts/linear-gauge
+
+**Props:**
+```typescript
+interface LinearGaugeProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape | ChartShallowDataShape[];
+  /** The series component that renders the bar components. */
+  series: ReactElement<LinearGaugeSeriesProps, typeof LinearGaugeSeries>;
+  /** Min value to scale on. Only applicable for single-series. */
+  minValue: number;
+  /** Max value to scale on. Only applicable for single-series. */
+  maxValue: number;
+}
+```
+
+**Default values:**
+- `minValue`: `0`
+- `maxValue`: `100`
+- `series`: `<LinearGaugeSeries />`
+
+**Basic usage:**
+```tsx
+import { LinearGauge } from 'reaviz';
+
+<LinearGauge
+  height={30}
+  width={300}
+  data={{ key: 'Risk Score', data: 80 }}
+/>
+```
+
+---
+
+### Map
+
+Geographic map visualizations using TopoJSON/GeoJSON data.
+
+**Docs:** https://reaviz.dev/docs/charts/map
+
+**Props:**
+```typescript
+interface MapProps extends ChartProps {
+  /** Map marker elements. */
+  markers?: ReactElement<MapMarkerProps, typeof MapMarker>[];
+  /** GeoJSON/TopoJSON data for the map. */
+  data: any;
+  /** Fill color for the map regions. */
+  fill?: string;
+  /** Map projection type. */
+  projection?: 'mercator' | 'natural-earth';
+}
+```
+
+**Basic usage:**
+```tsx
+import { Map } from 'reaviz';
+import { feature } from 'topojson-client';
+import geojson from 'world-atlas/countries-110m.json';
+
+const worldData = feature(geojson, geojson.objects.countries);
+
+<Map data={worldData} height={350} width={500} />
+```
+
+**Dependencies:** Requires `topojson-client` and `world-atlas` packages.
+
+---
+
+### Meter
+
+Meter/progress visualizations with discrete column indicators.
+
+**Docs:** https://reaviz.dev/docs/charts/meter
+
+**Props:**
+```typescript
+interface MeterProps {
+  /** The value of the meter. */
+  value: number;
+  /** The minimum value. */
+  min?: number;
+  /** The maximum value. */
+  max?: number;
+  /** The number of columns to display. */
+  columns?: number;
+  /** Additional class names. */
+  className?: string;
+  /** The gap between columns. */
+  gap?: number;
+  /** Additional styles. */
+  style?: React.CSSProperties;
+  /** The column component to render. */
+  column: ReactElement<MeterColumnProps, typeof MeterColumn> | null;
+}
+```
+
+**Default values:**
+- `min`: `0`
+- `max`: `100`
+- `columns`: `10`
+- `gap`: `15`
+
+**Basic usage:**
+```tsx
+import { Meter } from 'reaviz';
+
+<Meter value={50} style={{ width: 300 }} />
+```
+
+---
+
+### Pie Chart
+
+Pie and donut charts for proportional data.
+
+**Docs:** https://reaviz.dev/docs/charts/pie-chart
+
+**Props:**
+```typescript
+interface PieChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data?: ChartShallowDataShape[];
+  /** Whether the chart is disabled. */
+  disabled?: boolean;
+  /** Whether to display labels even if their value has a small display radius. */
+  displayAllLabels?: boolean;
+  /** The series component that renders the arc components. */
+  series?: ReactElement<PieArcSeriesProps, typeof PieArcSeries>;
+}
+```
+
+**Basic usage (Pie):**
+```tsx
+import { PieChart, PieArcSeries } from 'reaviz';
+
+const data = [
+  { key: 'DLP', data: 13 },
+  { key: 'SIEM', data: 2 },
+  { key: 'Mail', data: 8 }
+];
+
+<PieChart
+  width={350}
+  height={250}
+  data={data}
+  series={<PieArcSeries colorScheme="cybertron" />}
+/>
+```
+
+**Donut Chart:**
+```tsx
+import { PieChart, PieArcSeries } from 'reaviz';
+
+<PieChart
+  width={350}
+  height={250}
+  data={data}
+  series={<PieArcSeries doughnut={true} colorScheme="cybertron" />}
+/>
+```
+
+---
+
+### Radar Chart
+
+Radar/spider charts for multivariate data comparison.
+
+**Docs:** https://reaviz.dev/docs/charts/radar
+
+**Props:**
+```typescript
+interface RadarChartProps extends RadialAreaChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartNestedDataShape[];
+}
+```
+
+Inherits all props from RadialAreaChartProps.
+
+**Basic usage:**
+```tsx
+import { RadarChart } from 'reaviz';
+
+const data = [
+  {
+    key: 'Series 1',
+    data: [
+      { key: 'Speed', data: 80 },
+      { key: 'Reliability', data: 90 },
+      { key: 'Comfort', data: 70 },
+      { key: 'Safety', data: 85 },
+      { key: 'Efficiency', data: 75 }
+    ]
+  }
+];
+
+<RadarChart data={data} height={500} width={500} />
+```
+
+---
+
+### Radial Area Chart
+
+Radial area visualizations plotted on a circular axis.
+
+**Docs:** https://reaviz.dev/docs/charts/radial-area-chart
+
+**Props:**
+```typescript
+interface RadialAreaChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartDataShape[];
+  /** The series component that renders the area components. */
+  series: ReactElement<RadialAreaSeriesProps, typeof RadialAreaSeries>;
+  /** The inner radius for the chart center (0-1 as fraction of radius). */
+  innerRadius: number;
+  /** The radial axis component. */
+  axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
+  /** Start angle for the first value. */
+  startAngle?: number;
+  /** End angle for the last value. */
+  endAngle?: number;
+  /** Whether the curve should be closed. */
+  isClosedCurve?: boolean;
+}
+```
+
+**Default values:**
+- `innerRadius`: `0.1`
+- `series`: `<RadialAreaSeries />`
+- `axis`: `<RadialAxis />`
+- `margins`: `75`
+- `startAngle`: `0`
+- `endAngle`: `2 * Math.PI`
+- `isClosedCurve`: `true`
+
+**Basic usage:**
+```tsx
+import {
+  RadialAreaChart,
+  RadialAreaSeries,
+  RadialArea,
+  RadialAxis,
+  RadialAxisArcSeries,
+  RadialAxisTickSeries,
+  RadialAxisTick,
+  RadialAxisTickLine,
+  RadialAxisTickLabel,
+  RadialGradient
+} from 'reaviz';
+
+<RadialAreaChart
+  height={500}
+  width={500}
+  data={dateData}
+  innerRadius={0.1}
+  series={
+    <RadialAreaSeries
+      colorScheme="cybertron"
+      animated
+      interpolation="smooth"
+      area={<RadialArea gradient={<RadialGradient />} />}
+    />
+  }
+  axis={
+    <RadialAxis
+      arcs={<RadialAxisArcSeries count={10} />}
+      ticks={
+        <RadialAxisTickSeries
+          count={5}
+          tick={
+            <RadialAxisTick
+              line={<RadialAxisTickLine position="inside" />}
+              label={<RadialAxisTickLabel autoRotate />}
+            />
+          }
+        />
+      }
+    />
+  }
+/>
+```
+
+---
+
+### Radial Bar Chart
+
+Radial/circular bar charts plotted on a circular axis.
+
+**Docs:** https://reaviz.dev/docs/charts/radial-bar-chart
+
+**Props:**
+```typescript
+interface RadialBarChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartDataShape[];
+  /** The series component that renders the bar components. */
+  series: ReactElement<RadialBarSeriesProps, typeof RadialBarSeries>;
+  /** The radial axis component. */
+  axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
+  /** The inner radius for the chart center. */
+  innerRadius: number;
+  /** Start angle for the first value. */
+  startAngle?: number;
+  /** End angle for the last value. */
+  endAngle?: number;
+}
+```
+
+**Default values:**
+- `innerRadius`: `10`
+- `series`: `<RadialBarSeries />`
+- `axis`: `<RadialAxis />`
+- `margins`: `75`
+
+**Basic usage:**
+```tsx
+import {
+  RadialBarChart,
+  RadialBarSeries,
+  RadialBar,
+  RadialAxis,
+  RadialAxisArcSeries,
+  RadialAxisTickSeries,
+  RadialAxisTick,
+  RadialAxisTickLine
+} from 'reaviz';
+
+<RadialBarChart
+  height={450}
+  width={450}
+  innerRadius={50}
+  data={dateData}
+  series={
+    <RadialBarSeries
+      animated
+      bar={<RadialBar curved={false} gradient={false} guide={null} />}
+    />
+  }
+  axis={
+    <RadialAxis
+      ticks={
+        <RadialAxisTickSeries
+          tick={
+            <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+          }
+        />
+      }
+      arcs={<RadialAxisArcSeries count={10} />}
+    />
+  }
+/>
+```
+
+---
+
+### Radial Gauge
+
+Radial gauge indicators for displaying a value within a circular range.
+
+**Docs:** https://reaviz.dev/docs/charts/radial-gauge
+
+**Props:**
+```typescript
+interface RadialGaugeProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartDataShape[];
+  /** Min value to scale on. */
+  minValue?: number | number[];
+  /** Max value to scale on. */
+  maxValue?: number | number[];
+  /** Start angle for the first value. */
+  startAngle?: number;
+  /** End angle for the last value. */
+  endAngle?: number;
+  /** Gauge series component to render. */
+  series?: ReactElement<
+    RadialGaugeSeriesProps | StackedRadialGaugeSeriesProps,
+    typeof RadialGaugeSeries | typeof StackedRadialGaugeSeries
+  >;
+}
+```
+
+**Default values:**
+- `minValue`: `0`
+- `maxValue`: `100`
+- `startAngle`: `0`
+- `endAngle`: `Math.PI * 2`
+- `series`: `<RadialGaugeSeries />`
+
+**Basic usage:**
+```tsx
+import { RadialGauge, RadialGaugeSeries } from 'reaviz';
+
+<RadialGauge
+  data={[{ key: 'Austin, TX', data: 24 }]}
+  startAngle={0}
+  endAngle={Math.PI * 2}
+  height={300}
+  width={300}
+  minValue={0}
+  maxValue={100}
+  series={<RadialGaugeSeries arcWidth={10} colorScheme={['#418AD7']} />}
+/>
+```
+
+---
+
+### Radial Scatter Plot
+
+Polar scatter plots on a circular axis.
+
+**Docs:** https://reaviz.dev/docs/charts/radial-scatter-plot
+
+**Props:**
+```typescript
+interface RadialScatterPlotProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[];
+  /** The series component that renders the scatter components. */
+  series: ReactElement<RadialScatterSeriesProps, typeof RadialScatterSeries>;
+  /** The radial axis component. */
+  axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
+  /** The inner radius for the chart center. */
+  innerRadius: number;
+}
+```
+
+**Basic usage:**
+```tsx
+import {
+  RadialScatterPlot,
+  RadialScatterSeries,
+  RadialScatterPoint,
+  RadialAxis,
+  RadialAxisArcSeries,
+  RadialAxisTickSeries,
+  RadialAxisTick,
+  RadialAxisTickLine
+} from 'reaviz';
+
+<RadialScatterPlot
+  height={450}
+  width={450}
+  data={dateData}
+  innerRadius={80}
+  series={
+    <RadialScatterSeries
+      animated
+      point={<RadialScatterPoint size={5} color="rgba(45, 96, 232, .8)" />}
+    />
+  }
+  axis={
+    <RadialAxis
+      ticks={
+        <RadialAxisTickSeries
+          count={5}
+          tick={
+            <RadialAxisTick line={<RadialAxisTickLine position="inside" />} />
+          }
+        />
+      }
+      arcs={<RadialAxisArcSeries count={10} />}
+    />
+  }
+/>
+```
+
+---
+
+### Sankey Plot
+
+Flow/sankey diagrams for visualizing flow quantities between nodes.
+
+**Docs:** https://reaviz.dev/docs/charts/sankey-plot
+
+**Props:**
+```typescript
+interface SankeyProps extends ChartProps {
+  /** Whether to animate the enter/update/exit. */
+  animated?: boolean;
+  /** Color scheme for the nodes. */
+  colorScheme?: ColorSchemeType;
+  /** The node alignment method. */
+  justification?: 'justify' | 'left' | 'right' | 'center';
+  /** Width of the node. */
+  nodeWidth?: number;
+  /** Vertical padding between nodes in the same column. */
+  nodePadding?: number;
+  /** Label position. */
+  labelPosition?: 'inside' | 'outside';
+  /** Sort function for the nodes. */
+  nodeSort?: (a: any, b: any) => number;
+  /** Nodes that are rendered. */
+  nodes: ReactElement<SankeyNodeProps>[];
+  /** Links that are rendered. */
+  links: ReactElement<SankeyLinkProps>[];
+}
+```
+
+**Default values:**
+- `animated`: `true`
+- `justification`: `'justify'`
+- `nodeWidth`: `15`
+- `nodePadding`: `10`
+- `labelPosition`: `'inside'`
+
+**Basic usage:**
+```tsx
+import { Sankey, SankeyNode, SankeyLink, SankeyLabel } from 'reaviz';
+
+const nodes = [
+  { title: 'A1', id: '1' },
+  { title: 'A2', id: '2' },
+  { title: 'B1', id: '3' },
+  { title: 'B2', id: '4' }
+];
+
+const links = [
+  { source: '1', target: '3', value: 8 },
+  { source: '1', target: '4', value: 4 },
+  { source: '2', target: '3', value: 2 },
+  { source: '2', target: '4', value: 7 }
+];
+
+<Sankey
+  colorScheme="Spectral"
+  height={300}
+  width={550}
+  nodeWidth={5}
+  labelPosition="outside"
+  nodes={nodes.map((node, i) => (
+    <SankeyNode key={`node-${i}`} {...node} label={<SankeyLabel />} />
+  ))}
+  links={links.map((link, i) => (
+    <SankeyLink key={`link-${i}`} {...link} />
+  ))}
+/>
+```
+
+---
+
+### Scatter Plot
+
+Scatter/bubble plots for correlation analysis.
+
+**Docs:** https://reaviz.dev/docs/charts/scatter-plot
+
+**Props:**
+```typescript
+interface ScatterPlotProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[];
+  /** The series component that renders the scatter components. */
+  series: ReactElement<ScatterSeriesProps, typeof ScatterSeries>;
+  /** The linear axis component for the Y Axis. */
+  yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The linear axis component for the X Axis. */
+  xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
+  /** The chart's background gridlines. */
+  gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
+  /** The chart's brush component. */
+  brush: ReactElement<ChartBrushProps, typeof ChartBrush> | null;
+  /** The chart's zoom pan component. */
+  zoomPan: ReactElement<ChartZoomPanProps, typeof ChartZoomPan> | null;
+  /** Secondary axis components for multi-axis charts. */
+  secondaryAxis?: ReactElement<LinearAxisProps, typeof LinearAxis>[];
+}
+```
+
+**Default values:**
+- `xAxis`: `<LinearXAxis type="time" />`
+- `yAxis`: `<LinearYAxis type="value" />`
+- `series`: `<ScatterSeries />`
+- `gridlines`: `<GridlineSeries />`
+
+**Basic usage:**
+```tsx
+import { ScatterPlot, ScatterSeries, ScatterPoint } from 'reaviz';
+import { schemes } from 'reaviz';
+
+<ScatterPlot
+  height={400}
+  width={750}
+  data={signalData}
+  series={
+    <ScatterSeries
+      point={<ScatterPoint color={schemes.cybertron[0]} size={4} />}
+    />
+  }
+/>
+```
+
+---
+
+### Sparkline
+
+Inline sparkline charts for compact trend visualization.
+
+**Docs:** https://reaviz.dev/docs/charts/spark-line
+
+**Variants:** SparklineChart (line), AreaSparklineChart, BarSparklineChart, SonarChart
+
+**Props:** Extends LineChartProps.
+
+```typescript
+interface SparklineChartProps extends LineChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[];
+}
+```
+
+**Basic usage:**
+```tsx
+import { SparklineChart } from 'reaviz';
+
+<SparklineChart width={200} height={55} data={dateData} />
+```
+
+**Area Sparkline:**
+```tsx
+import { AreaSparklineChart } from 'reaviz';
+
+<AreaSparklineChart width={200} height={55} data={dateData} />
+```
+
+**Bar Sparkline:**
+```tsx
+import { BarSparklineChart } from 'reaviz';
+
+<BarSparklineChart width={200} height={85} data={dateData} />
+```
+
+---
+
+### Sunburst Chart
+
+Hierarchical sunburst visualizations for nested data.
+
+**Docs:** https://reaviz.dev/docs/charts/sunburst-chart
+
+**Props:**
+```typescript
+interface SunburstChartProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[] | ChartNestedDataShape[];
+  /** The series component that renders the components. */
+  series?: ReactElement<SunburstSeriesProps, typeof SunburstSeries>;
+}
+```
+
+**Basic usage:**
+```tsx
+import { SunburstChart } from 'reaviz';
+
+<SunburstChart height={450} width={450} data={nestedData} />
+```
+
+---
+
+### Tree Map
+
+Hierarchical treemap visualizations for proportional nested data.
+
+**Docs:** https://reaviz.dev/docs/charts/tree-map
+
+**Props:**
+```typescript
+interface TreeMapProps extends ChartProps {
+  /** Data the chart will receive to render. */
+  data: ChartShallowDataShape[] | ChartNestedDataShape[];
+  /** The series component that renders the components. */
+  series?: ReactElement<TreeMapSeriesProps, typeof TreeMapSeries>;
+  /** Inner padding. Defaults to 5. */
+  paddingInner?: number;
+  /** Outer padding. Defaults to 5. */
+  paddingOuter?: number;
+  /** Padding top for title spacing in nested situations. Defaults to 30. */
+  paddingTop?: number;
+}
+```
+
+**Basic usage:**
+```tsx
+import { TreeMap, TreeMapSeries } from 'reaviz';
+
+<TreeMap
+  height={450}
+  width={450}
+  data={[
+    { key: 'AWS', data: 100 },
+    { key: 'SendGrid', data: 45 },
+    { key: 'Okta', data: 75 },
+    { key: 'Twilio', data: 25 }
+  ]}
+  series={<TreeMapSeries colorScheme="cybertron" />}
+/>
+```
+
+---
+
+### Venn Diagram
+
+Set intersection diagrams for showing relationships between data sets.
+
+**Docs:** https://reaviz.dev/docs/charts/venn-diagram
+
+**Props:**
+```typescript
+interface VennDiagramData {
+  /** List of Keys for the data. */
+  key: string[];
+  /** Size of the data keys. */
+  data: number;
+}
+
+interface VennDiagramProps extends ChartProps {
+  /** Type of the chart. */
+  type?: 'venn' | 'euler' | 'starEuler';
+  /** Data the chart will receive to render. */
+  data: VennDiagramData[];
+  /** The series component that renders the arc and label components. */
+  series?: ReactElement<VennSeriesProps, typeof VennSeries> | null;
+  /** Whether the chart is disabled. */
+  disabled?: boolean;
+}
+```
+
+**Basic usage:**
+```tsx
+import { VennDiagram, VennSeries, VennArc, VennLabel, Gradient } from 'reaviz';
+
+<VennDiagram
+  height={450}
+  width={450}
+  data={[
+    { key: ['A'], data: 12 },
+    { key: ['B'], data: 12 },
+    { key: ['A', 'B'], data: 2 }
+  ]}
+  series={
+    <VennSeries
+      colorScheme="cybertron"
+      arc={<VennArc strokeWidth={3} gradient={<Gradient />} />}
+      label={<VennLabel labelType="key" showAll={false} />}
+    />
+  }
+/>
+```
+
+---
+
+### Word Cloud
+
+Word/tag cloud visualizations for text frequency data.
+
+**Docs:** https://reaviz.dev/docs/charts/word-cloud
+
+**Props:**
+```typescript
+interface WordCloudProps extends ChartProps {
+  /** Data to render. 'key' = word, 'data' = frequency/weight. */
+  data: ChartShallowDataShape[];
+  /** Font size range [min, max]. */
+  fontSizeRange?: [number, number];
+  /** Font family. */
+  fontFamily?: string;
+  /** Padding between words. */
+  padding?: number;
+  /** Rotation angle range [min, max]. */
+  rotationAngles?: [number, number];
+  /** Number of possible rotations. */
+  rotations?: number;
+  /** Custom color scheme. */
+  colorScheme?: string[];
+  /** Click handler. */
+  onLabelClick?: (event: React.MouseEvent, data: ChartShallowDataShape) => void;
+}
+```
+
+**Default values:**
+- `fontSizeRange`: `[12, 50]`
+- `fontFamily`: `'Arial'`
+- `padding`: `3`
+- `rotationAngles`: `[-30, 30]`
+- `rotations`: `2`
+
+**Basic usage:**
+```tsx
+import { WordCloud } from 'reaviz';
+
+<WordCloud
+  data={[
+    { key: 'React', data: 100 },
+    { key: 'JavaScript', data: 85 },
+    { key: 'TypeScript', data: 80 },
+    { key: 'D3.js', data: 75 },
+    { key: 'HTML', data: 70 },
+    { key: 'CSS', data: 65 },
+    { key: 'Node.js', data: 60 }
+  ]}
+  width={600}
+  height={400}
+/>
+```
+
+---
+
+## Utils
+
+### Axis
+
+Linear and radial axis components for chart positioning and scale labeling.
+
+**Docs:** https://reaviz.dev/docs/utils/axis
+
+**Linear Axis components:**
+- `LinearXAxis` / `LinearYAxis` - Main axis components
+- `LinearXAxisTickSeries` / `LinearYAxisTickSeries` - Tick mark series
+- `LinearXAxisTickLabel` / `LinearYAxisTickLabel` - Tick labels
+- `LinearXAxisTickLine` / `LinearYAxisTickLine` - Tick lines
+
+**Radial Axis components:**
+- `RadialAxis` - Main radial axis
+- `RadialAxisTickSeries` - Tick marks on radial axis
+- `RadialAxisTick` - Individual tick
+- `RadialAxisTickLabel` - Tick labels
+- `RadialAxisTickLine` - Tick lines
+- `RadialAxisArcSeries` - Concentric arc gridlines
+
+**Axis types:**
+- `'category'` - For categorical/discrete data (uses scaleBand)
+- `'value'` - For numeric data (uses scaleLinear)
+- `'time'` - For date/time data (uses scaleTime)
+- `'duration'` - For duration data
+
+**Example - Customizing axis:**
+```tsx
+import {
+  LinearXAxis,
+  LinearXAxisTickSeries,
+  LinearXAxisTickLabel,
+  LinearYAxis
+} from 'reaviz';
+
+<BarChart
+  xAxis={
+    <LinearXAxis
+      type="category"
+      tickSeries={
+        <LinearXAxisTickSeries
+          tickSize={20}
+          label={<LinearXAxisTickLabel rotation={-45} />}
+        />
+      }
+    />
+  }
+  yAxis={<LinearYAxis type="value" />}
+/>
+```
+
+---
+
+### Brush
+
+Selection brush for zooming into chart regions.
+
+**Docs:** https://reaviz.dev/docs/utils/brush
+
+**Usage:**
+```tsx
+import { AreaChart, ChartBrush } from 'reaviz';
+
+<AreaChart
+  brush={<ChartBrush />}
+  data={data}
+/>
+```
+
+---
+
+### Gridlines
+
+Chart gridlines for reference.
+
+**Docs:** https://reaviz.dev/docs/utils/grid-lines
+
+**Components:**
+- `GridlineSeries` - Container for gridlines
+- `Gridline` - Individual gridline
+- `GridStripe` - Alternating background stripes
+
+**Example:**
+```tsx
+import { GridlineSeries, Gridline, GridStripe } from 'reaviz';
+
+<AreaChart
+  gridlines={
+    <GridlineSeries
+      line={<Gridline direction="y" />}
+      stripe={<GridStripe direction="y" />}
+    />
+  }
+/>
+```
+
+---
+
+### Legends
+
+Chart legends for identifying data series.
+
+**Docs:** https://reaviz.dev/docs/utils/legends
+
+**Components:**
+- `DiscreteLegend` - Legend for categorical data
+- `DiscreteLegendEntry` - Individual legend entry
+- `DiscreteLegendSymbol` - Legend color indicator
+- `SequentialLegend` - Legend for continuous data (color scales)
+
+**Example:**
+```tsx
+import {
+  DiscreteLegend,
+  DiscreteLegendEntry,
+  DiscreteLegendSymbol
+} from 'reaviz';
+
+<DiscreteLegend
+  orientation="horizontal"
+  entries={[
+    <DiscreteLegendEntry
+      label="Series 1"
+      symbol={<DiscreteLegendSymbol />}
+      color="#418AD7"
+    />,
+    <DiscreteLegendEntry
+      label="Series 2"
+      symbol={<DiscreteLegendSymbol />}
+      color="#993DCF"
+    />
+  ]}
+/>
+```
+
+---
+
+### Tooltips
+
+Tooltip customization for interactive data display.
+
+**Docs:** https://reaviz.dev/docs/utils/tooltips
+
+**Components:**
+- `ChartTooltip` - Styled tooltip container
+- `TooltipArea` - Interactive area that triggers tooltips
+- `TooltipTemplate` - Default tooltip content template
+
+**Example:**
+```tsx
+import { AreaChart, AreaSeries, TooltipArea, ChartTooltip } from 'reaviz';
+
+<AreaChart
+  series={
+    <AreaSeries
+      tooltip={
+        <TooltipArea
+          tooltip={
+            <ChartTooltip
+              content={(data) => `${data.key}: ${data.value}`}
+            />
+          }
+        />
+      }
+    />
+  }
+/>
+```
+
+---
+
+### Zoom Pan
+
+Zoom and pan controls for navigating large datasets.
+
+**Docs:** https://reaviz.dev/docs/utils/zoom-pan
+
+**Usage:**
+```tsx
+import { AreaChart, ChartZoomPan } from 'reaviz';
+
+<AreaChart
+  zoomPan={<ChartZoomPan />}
+  data={data}
+/>
+```
+
+---
+
+### Gradient
+
+SVG gradient fills for chart elements.
+
+**Docs:** https://reaviz.dev/docs/utils/gradient
+
+**Components:**
+- `Gradient` - Linear SVG gradient
+- `GradientStop` - Individual gradient stop
+- `RadialGradient` - Radial SVG gradient
+
+**Example:**
+```tsx
+import { Gradient, GradientStop } from 'reaviz';
+
+<AreaSeries
+  area={
+    <Area
+      gradient={
+        <Gradient
+          stops={[
+            <GradientStop offset="0%" stopOpacity={0.2} />,
+            <GradientStop offset="100%" stopOpacity={0.8} />
+          ]}
+        />
+      }
+    />
+  }
+/>
+```
+
+---
+
+### Glow
+
+Glow effects for chart elements.
+
+**Docs:** https://reaviz.dev/docs/utils/glow
+
+---
+
+### Mark Line
+
+Reference/threshold lines for marking specific values on charts.
+
+**Docs:** https://reaviz.dev/docs/utils/mark-line
+
+---
+
+### Mask
+
+SVG masking and pattern fills.
+
+**Docs:** https://reaviz.dev/docs/utils/mask
+
+**Components:**
+- `Stripes` - Striped pattern mask
+- `Mask` - General SVG mask
+
+---
+
+### Value Marker
+
+Value annotation markers for highlighting specific data points.
+
+**Docs:** https://reaviz.dev/docs/utils/value-marker
+
+---
+
+### Count
+
+Animated count displays for numeric values.
+
+**Docs:** https://reaviz.dev/docs/utils/count
+
+---
+
+## Blocks
+
+Pre-built composable chart patterns providing ready-to-use chart compositions in both light and dark themes at multiple sizes (Large, Medium, Small, X-Small).
+
+**Docs:** https://reaviz.dev/blocks
+
+Available block types:
+- **Area Chart Blocks** - https://reaviz.dev/blocks/charts/area-chart
+- **Bar Chart Blocks** - https://reaviz.dev/blocks/charts/bar-chart
+- **Funnel Chart Blocks** - https://reaviz.dev/blocks/charts/funnel-chart
+- **Heatmap Blocks** - https://reaviz.dev/blocks/charts/heatmap
+- **Scatter Plot Blocks** - https://reaviz.dev/blocks/charts/scatter-plot
+
+---
+
+## Color Schemes
+
+REAVIZ ships with built-in color schemes accessible via the `schemes` export:
+
+```tsx
+import { schemes } from 'reaviz';
+
+// Use a named scheme
+<BarSeries colorScheme="cybertron" />
+
+// Use scheme colors directly
+<ScatterPoint color={schemes.cybertron[0]} />
+
+// Use a D3 color scheme name
+<HeatmapSeries colorScheme="OrRd" />
+
+// Use custom colors array
+<PieArcSeries colorScheme={['#418AD7', '#993DCF', '#2ECC71']} />
+```
+
+---
+
+## Related Libraries
+
+- [Reagraph](https://reagraph.dev): Network graph visualizations for React (WebGL)
+- [Reaflow](https://reaflow.dev): Workflow and diagram editor for React
+- [Reablocks](https://reablocks.dev): Tailwind-based React component library
+- [Reachat](https://reachat.dev): LLM/Chat UI components for React
+
+## Links
+
+- [GitHub](https://github.com/reaviz/reaviz)
+- [npm](https://www.npmjs.com/package/reaviz)
+- [Storybook](https://storybook.reaviz.dev)
+- [Changelog](https://reaviz.dev/docs/changelog)
+- [Support](https://reaviz.dev/docs/support)

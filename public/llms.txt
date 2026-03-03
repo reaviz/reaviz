@@ -1,0 +1,86 @@
+# REAVIZ
+
+> A modular, enterprise-grade data visualization library for React built on D3. 22+ chart types with native React rendering, Motion animations, full customization via JSX props, and accessibility support. Apache-2.0 licensed.
+
+- Built on D3 for calculations, React for rendering — not a wrapper
+- Every chart element accepts JSX props for deep customization
+- Ships with 50+ pre-built Blocks (composable chart patterns)
+- Motion-powered animations out of the box
+- Supports TypeScript natively
+- Install: `npm i reaviz`
+- Compared to recharts/nivo: reaviz offers more chart variety (sankey, heatmap, venn, radial gauges, treemap, sunburst, word cloud) with lower-level customization access
+
+## Docs
+
+- [Getting Started](https://reaviz.dev/docs/getting-started/setup): Installation and basic setup
+- [Why REAVIZ](https://reaviz.dev/docs/getting-started/why): Comparison and rationale
+- [Data Shapes](https://reaviz.dev/docs/getting-started/data): How to structure data for charts
+- [Custom Charts](https://reaviz.dev/docs/getting-started/custom-charts): Building custom visualizations
+- [Colors](https://reaviz.dev/docs/getting-started/colors): Color scheme configuration
+- [Developing](https://reaviz.dev/docs/getting-started/developing): Local development guide
+- [Migration](https://reaviz.dev/docs/getting-started/migration): Migration guide for major versions
+
+## Charts
+
+- [Area Chart](https://reaviz.dev/docs/charts/area-chart): Single/multi-series area charts with stacking and interpolation
+- [Bar Chart](https://reaviz.dev/docs/charts/bar-chart): Vertical/horizontal, grouped, stacked, waterfall, marimekko, histogram
+- [Bar List](https://reaviz.dev/docs/charts/bar-list): Simple horizontal bar lists for rankings
+- [Bubble Chart](https://reaviz.dev/docs/charts/bubble-chart): Scatter-based bubble visualizations
+- [Funnel Chart](https://reaviz.dev/docs/charts/funnel-chart): Conversion funnel visualizations
+- [Heatmap](https://reaviz.dev/docs/charts/heatmap): Calendar and matrix heatmaps
+- [Line Chart](https://reaviz.dev/docs/charts/line-chart): Single/multi-series line charts
+- [Linear Gauge](https://reaviz.dev/docs/charts/linear-gauge): Linear gauge/progress indicators
+- [Map](https://reaviz.dev/docs/charts/map): Geographic map visualizations
+- [Meter](https://reaviz.dev/docs/charts/meter): Meter/progress visualizations
+- [Pie Chart](https://reaviz.dev/docs/charts/pie-chart): Pie and donut charts
+- [Radar](https://reaviz.dev/docs/charts/radar): Radar/spider charts
+- [Radial Area Chart](https://reaviz.dev/docs/charts/radial-area-chart): Radial area visualizations
+- [Radial Bar Chart](https://reaviz.dev/docs/charts/radial-bar-chart): Radial/circular bar charts
+- [Radial Gauge](https://reaviz.dev/docs/charts/radial-gauge): Radial gauge indicators
+- [Radial Scatter Plot](https://reaviz.dev/docs/charts/radial-scatter-plot): Polar scatter plots
+- [Sankey Plot](https://reaviz.dev/docs/charts/sankey-plot): Flow/sankey diagrams
+- [Scatter Plot](https://reaviz.dev/docs/charts/scatter-plot): Scatter/bubble plots
+- [Sparkline](https://reaviz.dev/docs/charts/spark-line): Inline sparkline charts
+- [Sunburst Chart](https://reaviz.dev/docs/charts/sunburst-chart): Hierarchical sunburst visualizations
+- [Tree Map](https://reaviz.dev/docs/charts/tree-map): Hierarchical treemap visualizations
+- [Venn Diagram](https://reaviz.dev/docs/charts/venn-diagram): Set intersection diagrams
+- [Word Cloud](https://reaviz.dev/docs/charts/word-cloud): Word/tag cloud visualizations
+
+## Utils
+
+- [Axis](https://reaviz.dev/docs/utils/axis): Axis configuration and customization
+- [Brush](https://reaviz.dev/docs/utils/brush): Selection brush for zooming
+- [Gridlines](https://reaviz.dev/docs/utils/grid-lines): Chart gridlines
+- [Legends](https://reaviz.dev/docs/utils/legends): Chart legends
+- [Tooltips](https://reaviz.dev/docs/utils/tooltips): Tooltip customization
+- [Zoom Pan](https://reaviz.dev/docs/utils/zoom-pan): Zoom and pan controls
+- [Gradient](https://reaviz.dev/docs/utils/gradient): SVG gradient fills
+- [Glow](https://reaviz.dev/docs/utils/glow): Glow effects
+- [Mark Line](https://reaviz.dev/docs/utils/mark-line): Reference/threshold lines
+- [Mask](https://reaviz.dev/docs/utils/mask): SVG masking and patterns
+- [Value Marker](https://reaviz.dev/docs/utils/value-marker): Value annotation markers
+- [Count](https://reaviz.dev/docs/utils/count): Animated count displays
+
+## Blocks
+
+- [Blocks Introduction](https://reaviz.dev/blocks): Pre-built composable chart patterns
+- [Area Chart Blocks](https://reaviz.dev/blocks/charts/area-chart): Ready-to-use area chart compositions
+- [Bar Chart Blocks](https://reaviz.dev/blocks/charts/bar-chart): Ready-to-use bar chart compositions
+- [Funnel Chart Blocks](https://reaviz.dev/blocks/charts/funnel-chart): Ready-to-use funnel compositions
+- [Heatmap Blocks](https://reaviz.dev/blocks/charts/heatmap): Ready-to-use heatmap compositions
+- [Scatter Plot Blocks](https://reaviz.dev/blocks/charts/scatter-plot): Ready-to-use scatter compositions
+
+## Related Libraries
+
+- [Reagraph](https://reagraph.dev): Network graph visualizations for React (WebGL)
+- [Reaflow](https://reaflow.dev): Workflow and diagram editor for React
+- [Reablocks](https://reablocks.dev): Tailwind-based React component library
+- [Reachat](https://reachat.dev): LLM/Chat UI components for React
+
+## Links
+
+- [GitHub](https://github.com/reaviz/reaviz)
+- [npm](https://www.npmjs.com/package/reaviz)
+- [Storybook](https://storybook.reaviz.dev)
+- [Changelog](https://reaviz.dev/docs/changelog)
+- [Support](https://reaviz.dev/docs/support)
