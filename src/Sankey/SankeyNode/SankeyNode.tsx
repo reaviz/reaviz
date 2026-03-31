@@ -4,7 +4,6 @@ import React, {
   useCallback,
   FC,
   useState,
-  useRef,
   useMemo
 } from 'react';
 import { offset } from '@floating-ui/dom';
@@ -126,7 +125,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   labelPosition,
   labelPadding,
   tooltip = (
-    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
+    <Tooltip theme={tooltipTheme} modifiers={[offset(5)]} />
   ),
   title,
   value,
@@ -165,7 +164,9 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
 
   const [hovered, setHovered] = useState<boolean>(false);
-  const rectRef = useRef<SVGRectElement | null>(null);
+  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(
+    null
+  );
 
   const renderTooltipContent = useCallback(() => {
     return (
@@ -181,6 +182,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {
       setHovered(true);
+      setMousePos({ x: event.clientX, y: event.clientY });
       onMouseEnter?.(event as any);
     },
     onPointerOut: (event) => {
@@ -188,6 +190,27 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
       onMouseLeave?.(event as any);
     }
   });
+
+  const handlePointerMove = useCallback(
+    (event: React.PointerEvent<SVGRectElement>) => {
+      if (hovered) {
+        setMousePos({ x: event.clientX, y: event.clientY });
+      }
+    },
+    [hovered]
+  );
+
+  const tooltipReference = useMemo(() => {
+    if (!mousePos) {
+      return null;
+    }
+    return {
+      width: 0,
+      height: 0,
+      top: mousePos.y,
+      left: mousePos.x
+    };
+  }, [mousePos]);
 
   const ariaLabelData = useMemo(
     () => `${title}: ${formatValue(value as ChartInternalDataTypes)}`,
@@ -197,7 +220,6 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   return (
     <Fragment>
       <motion.g
-        ref={rectRef}
         tabIndex={0}
         aria-label={ariaLabelData}
         role="graphics-document"
@@ -231,6 +253,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           onClick={onClick}
           onPointerOver={pointerOver}
           onPointerOut={pointerOut}
+          onPointerMove={handlePointerMove}
         />
       </motion.g>
       {label !== null && (
@@ -250,7 +273,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           content={renderTooltipContent}
           element={tooltip}
           visible={hovered}
-          reference={rectRef}
+          reference={tooltipReference}
         />
       )}
     </Fragment>
