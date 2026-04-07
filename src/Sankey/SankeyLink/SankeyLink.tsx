@@ -101,7 +101,7 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   source,
   target,
   tooltip = (
-    <Tooltip theme={tooltipTheme} modifiers={[offset(5)]} />
+    <Tooltip theme={tooltipTheme} followCursor={true} modifiers={[offset(5)]} />
   ),
   chartId,
   value,
@@ -123,9 +123,6 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   const linkTarget = target as SankeyNodeExtra;
 
   const [hovered, setHovered] = useState<boolean>(false);
-  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(
-    null
-  );
 
   const getLink = useCallback(() => {
     return { index, y0, y1, value, width, source, target };
@@ -168,7 +165,6 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {
       setHovered(true);
-      setMousePos({ x: event.clientX, y: event.clientY });
       onMouseEnter?.(event as any);
     },
     onPointerOut: (event) => {
@@ -176,27 +172,6 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
       onMouseLeave?.(event as any);
     }
   });
-
-  const handlePointerMove = useCallback(
-    (event: React.PointerEvent<SVGPathElement>) => {
-      if (hovered) {
-        setMousePos({ x: event.clientX, y: event.clientY });
-      }
-    },
-    [hovered]
-  );
-
-  const tooltipReference = useMemo(() => {
-    if (!mousePos) {
-      return null;
-    }
-    return {
-      width: 0,
-      height: 0,
-      top: mousePos.y,
-      left: mousePos.x
-    };
-  }, [mousePos]);
 
   const ariaLabelData = useMemo(
     () =>
@@ -234,7 +209,6 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
         onClick={onClick}
         onPointerOver={pointerOver}
         onPointerOut={pointerOut}
-        onPointerMove={handlePointerMove}
         aria-label={ariaLabelData}
         role="graphics-document"
       />
@@ -243,7 +217,6 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           content={renderTooltipContent}
           element={tooltip}
           visible={hovered}
-          reference={tooltipReference}
         />
       )}
     </Fragment>
