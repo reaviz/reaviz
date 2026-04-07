@@ -4,7 +4,6 @@ import React, {
   useCallback,
   useState,
   useMemo,
-  useRef,
   FC
 } from 'react';
 import { offset } from '@floating-ui/dom';
@@ -124,7 +123,12 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
   const linkTarget = target as SankeyNodeExtra;
 
   const [hovered, setHovered] = useState<boolean>(false);
-  const linkRef = useRef<SVGPathElement | null>(null);
+  const [tooltipReference, setTooltipReference] = useState<{
+    width: number;
+    height: number;
+    top: number;
+    left: number;
+  } | null>(null);
 
   const getLink = useCallback(() => {
     return { index, y0, y1, value, width, source, target };
@@ -164,13 +168,33 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
     );
   }, [source, target, value]);
 
+  const onPointerMove = useCallback(
+    (event: React.PointerEvent<SVGPathElement>) => {
+      setTooltipReference({
+        width: 0,
+        height: 0,
+        top: event.clientY,
+        left: event.clientX
+      });
+    },
+    []
+  );
+
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {
+      const pointerEvent = event as React.PointerEvent<SVGPathElement>;
+      setTooltipReference({
+        width: 0,
+        height: 0,
+        top: pointerEvent.clientY,
+        left: pointerEvent.clientX
+      });
       setHovered(true);
       onMouseEnter?.(event as any);
     },
     onPointerOut: (event) => {
       setHovered(false);
+      setTooltipReference(null);
       onMouseLeave?.(event as any);
     }
   });
@@ -196,32 +220,32 @@ export const SankeyLink: FC<Partial<SankeyLinkProps>> = ({
           <stop offset="100%" stopColor={linkTarget.color} />
         </linearGradient>
       )}
-      <g ref={linkRef}>
-        <motion.path
-          key={`sankey-link-${enterProps.d}-${index}`}
-          className={classNames(css.link, className)}
-          style={style}
-          initial={exitProps}
-          animate={enterProps}
-          exit={exitProps}
-          transition={{
-            duration: animated ? 0.5 : 0
-          }}
-          stroke={stroke}
-          strokeOpacity={opacity(active, disabled)}
-          onClick={onClick}
-          onPointerOver={pointerOver}
-          onPointerOut={pointerOut}
-          aria-label={ariaLabelData}
-          role="graphics-document"
-        />
-      </g>
-      {!tooltip?.props?.disabled && (
+      <motion.path
+        key={`sankey-link-${enterProps.d}-${index}`}
+        className={classNames(css.link, className)}
+        style={style}
+        initial={exitProps}
+        animate={enterProps}
+        exit={exitProps}
+        transition={{
+          duration: animated ? 0.5 : 0
+        }}
+        stroke={stroke}
+        strokeOpacity={opacity(active, disabled)}
+        onClick={onClick}
+        onPointerOver={pointerOver}
+        onPointerOut={pointerOut}
+        onPointerMove={onPointerMove}
+        aria-label={ariaLabelData}
+        role="graphics-document"
+      />
+      {!tooltip?.props?.disabled && tooltipReference && (
         <CloneElement<TooltipProps>
           content={renderTooltipContent}
           element={tooltip}
           visible={hovered}
-          reference={linkRef}
+          reference={tooltipReference}
+          followCursor={false}
         />
       )}
     </Fragment>

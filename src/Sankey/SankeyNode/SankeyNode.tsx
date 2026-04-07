@@ -4,7 +4,6 @@ import React, {
   useCallback,
   FC,
   useState,
-  useRef,
   useMemo
 } from 'react';
 import { offset } from '@floating-ui/dom';
@@ -165,7 +164,12 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   const nodeHeight = y1 && y0 && y1 - y0 > 0 ? y1 - y0 : 0;
 
   const [hovered, setHovered] = useState<boolean>(false);
-  const rectRef = useRef<SVGRectElement | null>(null);
+  const [tooltipReference, setTooltipReference] = useState<{
+    width: number;
+    height: number;
+    top: number;
+    left: number;
+  } | null>(null);
 
   const renderTooltipContent = useCallback(() => {
     return (
@@ -178,13 +182,33 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
     );
   }, [title, value]);
 
+  const onPointerMove = useCallback(
+    (event: React.PointerEvent<SVGRectElement>) => {
+      setTooltipReference({
+        width: 0,
+        height: 0,
+        top: event.clientY,
+        left: event.clientX
+      });
+    },
+    []
+  );
+
   const { pointerOut, pointerOver } = useHoverIntent({
     onPointerOver: (event) => {
+      const pointerEvent = event as React.PointerEvent<SVGRectElement>;
+      setTooltipReference({
+        width: 0,
+        height: 0,
+        top: pointerEvent.clientY,
+        left: pointerEvent.clientX
+      });
       setHovered(true);
       onMouseEnter?.(event as any);
     },
     onPointerOut: (event) => {
       setHovered(false);
+      setTooltipReference(null);
       onMouseLeave?.(event as any);
     }
   });
@@ -197,7 +221,6 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
   return (
     <Fragment>
       <motion.g
-        ref={rectRef}
         tabIndex={0}
         aria-label={ariaLabelData}
         role="graphics-document"
@@ -231,6 +254,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           onClick={onClick}
           onPointerOver={pointerOver}
           onPointerOut={pointerOut}
+          onPointerMove={onPointerMove}
         />
       </motion.g>
       {label !== null && (
@@ -245,12 +269,13 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
           labelPadding={labelPadding}
         />
       )}
-      {!tooltip?.props?.disabled && (
+      {!tooltip?.props?.disabled && tooltipReference && (
         <CloneElement<TooltipProps>
           content={renderTooltipContent}
           element={tooltip}
           visible={hovered}
-          reference={rectRef}
+          reference={tooltipReference}
+          followCursor={false}
         />
       )}
     </Fragment>
