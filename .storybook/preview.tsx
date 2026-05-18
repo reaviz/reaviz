@@ -2,7 +2,7 @@ import theme from './theme';
 import { Preview } from '@storybook/react';
 import formatCode from './utils/formatCode';
 
-import '../src/index.css'
+import './tailwind.css';
 
 const preview: Preview = {
   parameters: {

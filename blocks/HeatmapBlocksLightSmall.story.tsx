@@ -32,8 +32,9 @@ export const Simple = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -241,8 +242,9 @@ export const SimpleCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -454,8 +456,9 @@ export const SimpleHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -699,8 +702,9 @@ export const Intensity = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -905,8 +909,9 @@ export const IntensityCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -1115,8 +1120,9 @@ export const IntensityHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -1357,8 +1363,9 @@ export const Correlation = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -1563,8 +1570,9 @@ export const CorrelationCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -1773,8 +1781,9 @@ export const CorrelationHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -2015,8 +2024,9 @@ export const Geospatial = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -2221,8 +2231,9 @@ export const GeospatialCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -2431,8 +2442,9 @@ export const GeospatialHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -2673,8 +2685,9 @@ export const Warm = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -2879,8 +2892,9 @@ export const WarmCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -3089,8 +3103,9 @@ export const WarmHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -3331,8 +3346,9 @@ export const Hot = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -3540,8 +3556,9 @@ export const HotCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -3753,8 +3770,9 @@ export const HotHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -3998,8 +4016,9 @@ export const Classic = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -4204,8 +4223,9 @@ export const ClassicCircle = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis
@@ -4414,8 +4434,9 @@ export const ClassicHex = () => {
       <h3 className="text-3xl text-left p-7 pt-6 pb-8 font-bold text-black">
         Incident Report
       </h3>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapSmallBlocksData}
           yAxis={
             <LinearYAxis

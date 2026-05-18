@@ -42,6 +42,7 @@ export const Minimal = () => {
         </select>
       </div>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="minimal"
         height={320}
         data={singleDateData}
@@ -304,6 +305,7 @@ export const Simple = () => {
         </select>
       </div>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="simple"
         height={320}
         data={medSignalChartData}
@@ -565,6 +567,7 @@ export const Symbols = () => {
         </select>
       </div>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="symbols"
         height={320}
         data={singleDateData}
@@ -835,6 +838,7 @@ export const Categorical = () => {
         </select>
       </div>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="categorical"
         height={320}
         data={signalStageData}
@@ -1110,6 +1114,7 @@ export const Bubble = () => {
         </select>
       </div>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="bubble"
         height={320}
         data={largeSignalChartData}

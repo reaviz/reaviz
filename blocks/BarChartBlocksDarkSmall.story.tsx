@@ -62,6 +62,7 @@ export const SimpleMulti = () => {
         </div>
       </div>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple-multi"
         data={multiCategorySmallBlock}
         yAxis={
@@ -280,6 +281,7 @@ export const SimpleMultiGradient = () => {
         </div>
       </div>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple-multi-gradient"
         data={multiCategorySmallBlock}
         yAxis={
@@ -487,6 +489,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple"
         data={mediumCategoryData}
         yAxis={
@@ -687,6 +690,7 @@ export const SimpleGradient = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple-gradient"
         data={mediumCategoryData}
         yAxis={
@@ -899,6 +903,7 @@ export const Labels = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="labels"
         data={labelsData}
         yAxis={
@@ -1105,6 +1110,7 @@ export const LabelsGradient = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="labels-gradient"
         data={labelsData}
         yAxis={
@@ -1318,6 +1324,7 @@ export const Waterfall = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="waterfall"
         data={categoryData}
         yAxis={
@@ -1511,6 +1518,7 @@ export const WaterfallGradient = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="waterfall-gradient"
         data={categoryData}
         yAxis={
@@ -1716,6 +1724,7 @@ export const LargeDataset = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="large-dataset"
         data={largeCategoryData2}
         yAxis={
@@ -1908,6 +1917,7 @@ export const LargeDatasetGradient = () => {
         Incident Report
       </h3>
       <BarChart
+        containerClassName="flex-1 [min-height:0]"
         id="large-dataset-gradient"
         data={largeCategoryData2}
         yAxis={
@@ -2112,6 +2122,7 @@ export const Stacked = () => {
         Incident Report
       </h3>
       <StackedBarChart
+        containerClassName="flex-1 [min-height:0]"
         id="stacked"
         data={multiCategory}
         yAxis={
@@ -2304,6 +2315,7 @@ export const StackedGradient = () => {
         Incident Report
       </h3>
       <StackedBarChart
+        containerClassName="flex-1 [min-height:0]"
         id="stacked-gradient"
         data={multiCategory}
         yAxis={
@@ -2509,6 +2521,7 @@ export const StackedDiverging = () => {
       </h3>
       <div className="flex-grow px-4">
         <StackedBarChart
+          containerClassName="flex-1 [min-height:0]"
           id="stacked-diverging"
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
@@ -2690,6 +2703,7 @@ export const StackedDivergingGradient = () => {
       </h3>
       <div className="flex-grow px-4">
         <StackedBarChart
+          containerClassName="flex-1 [min-height:0]"
           id="stacked-diverging-gradient"
           data={binnedDateData}
           yAxis={<LinearYAxis tickSeries={<LinearYAxisTickSeries />} />}
@@ -2896,6 +2910,7 @@ export const HorizontalStackedDivergingGradient = () => {
       </h3>
       <div className="flex-grow px-4">
         <StackedBarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-stacked-diverging-gradient"
           data={binnedDateData}
           yAxis={
@@ -3113,6 +3128,7 @@ export const HorizontalSimple = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-simple"
           data={categoryData}
           yAxis={
@@ -3308,6 +3324,7 @@ export const HorizontalSimpleGradient = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-simple-gradient"
           data={categoryData}
           yAxis={
@@ -3515,6 +3532,7 @@ export const HorizontalWaterfall = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-waterfall"
           data={categoryData}
           yAxis={
@@ -3711,6 +3729,7 @@ export const HorizontalWaterfallGradient = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-waterfall-gradient"
           data={categoryData}
           yAxis={
@@ -3919,6 +3938,7 @@ export const HorizontalLabels = () => {
       </h3>
       <div className={'flex-grow pl-4 pr-10 overflow-x-visible'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-labels"
           data={categoryData}
           yAxis={
@@ -4120,6 +4140,7 @@ export const HorizontalLabelsGradient = () => {
       </h3>
       <div className={'flex-grow pl-4 pr-10 overflow-x-visible'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-labels-gradient"
           data={categoryData}
           yAxis={
@@ -4328,6 +4349,7 @@ export const HorizontalSimpleMulti = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-simple-multi"
           data={multiCategoryXSmallBlock}
           yAxis={
@@ -4529,6 +4551,7 @@ export const HorizontalSimpleMultiGradient = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <BarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-simple-multi-gradient"
           data={multiCategoryXSmallBlock}
           yAxis={
@@ -4737,6 +4760,7 @@ export const HorizontalStacked = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <StackedBarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-stacked"
           data={multiCategory}
           yAxis={
@@ -4932,6 +4956,7 @@ export const HorizontalStackedGradient = () => {
       </h3>
       <div className={'flex-grow px-4'}>
         <StackedBarChart
+          containerClassName="flex-1 [min-height:0]"
           id="horizontal-stacked-gradient"
           data={multiCategory}
           yAxis={

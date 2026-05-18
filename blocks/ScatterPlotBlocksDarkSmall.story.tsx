@@ -33,6 +33,7 @@ export const Minimal = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="minimal"
         data={singleDateData}
         yAxis={
@@ -219,6 +220,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="simple"
         data={medSignalChartData}
         yAxis={
@@ -410,6 +412,7 @@ export const Symbols = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="symbols"
         data={singleDateData}
         yAxis={
@@ -604,6 +607,7 @@ export const Categorical = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="categorical"
         data={signalStageData}
         yAxis={
@@ -804,6 +808,7 @@ export const Bubble = () => {
         Incident Report
       </h3>
       <ScatterPlot
+        containerClassName="flex-1 [min-height:0]"
         id="bubble"
         data={largeSignalChartData}
         yAxis={

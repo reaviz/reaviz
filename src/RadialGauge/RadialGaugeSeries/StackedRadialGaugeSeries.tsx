@@ -129,8 +129,8 @@ export const StackedRadialGaugeSeries: FC<
   const radius = Math.min(width, height) / 2;
   const innerRadius = radius * (1 - Math.min(fillFactor, 1));
 
-  const rAxis = scaleBand()
-    .domain(range(data.length).map(String))
+  const rAxis = scaleBand<number>()
+    .domain(range(data.length))
     .range([innerRadius, radius])
     .paddingInner(arcPadding);
 
@@ -200,7 +200,7 @@ export const StackedRadialGaugeSeries: FC<
 
   const renderStackedGauges = useCallback(
     (point: ChartDataShape, index: number) => {
-      const outerRadius = rAxis(index as any);
+      const outerRadius = rAxis(index);
       const innerRadius = outerRadius - rAxis.bandwidth();
 
       return (
