@@ -11,7 +11,7 @@ import { Gradient } from '@/common/Gradient';
 import { max } from 'd3-array';
 import { ChartDataShape, ColorSchemeType } from '@/common';
 import React from 'react';
-import { StoryFn } from '@storybook/react';
+import { StoryFn } from '@storybook/react-vite';
 
 export default {
   tags: ['snapshot'],

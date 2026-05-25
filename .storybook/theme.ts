@@ -1,4 +1,4 @@
-import { create } from '@storybook/theming/create';
+import { create } from 'storybook/theming/create';
 import ReavizLogo from './assets/reaviz.svg';
 
 export default create({

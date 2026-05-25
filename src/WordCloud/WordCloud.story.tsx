@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react-vite';
 import { WordCloud } from './WordCloud';
 import { ChartShallowDataShape } from '../common/data';
 import { schemes } from '../common/color';

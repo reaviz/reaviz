@@ -4,7 +4,7 @@
     "module": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "typeRoots": ["./node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "declaration": true,

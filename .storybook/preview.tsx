@@ -1,5 +1,5 @@
 import theme from './theme';
-import { Preview } from '@storybook/react';
+import { Preview } from '@storybook/react-vite';
 import formatCode from './utils/formatCode';
 
 import '../src/index.css'
@@ -13,7 +13,9 @@ const preview: Preview = {
       source: {
         transform: (src) => formatCode(src)
       },
-      theme
+
+      theme,
+      codePanel: true
     },
     options: {
       storySort: {
