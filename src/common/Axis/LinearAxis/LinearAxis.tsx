@@ -78,8 +78,11 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
   const updateDimensions = useCallback(() => {
     const shouldOffset = position !== 'center';
 
-    let height;
-    let width;
+    // Centered axes reserve no edge offset (width/height stay 0), but must still
+    // notify ChartContainer so xAxisSized/yAxisSized flip true and chartSized
+    // unhides the axes and data series.
+    let height = 0;
+    let width = 0;
     if (shouldOffset) {
       const dims = containerRef.current!.getBoundingClientRect();
       width = Math.floor(dims.width);
@@ -88,13 +91,16 @@ export const LinearAxis: FC<Partial<LinearAxisProps>> = (props) => {
 
     if (orientation === 'vertical') {
       // Condition check to prevent the infinite loop of re-renders when the tickSize prop is changed
-      if (Math.abs(dimensions.width - width) > MIN_DIMENSION_CHANGE) {
-        setDimensions({ ...dimensions, width: width });
+      if (
+        dimensions.width === undefined ||
+        Math.abs(dimensions.width - width) > MIN_DIMENSION_CHANGE
+      ) {
+        setDimensions({ ...dimensions, width });
         onDimensionsChange({ width });
       }
     } else {
       if (dimensions.height !== height) {
-        setDimensions({ ...dimensions, height: height });
+        setDimensions({ ...dimensions, height });
         onDimensionsChange({ height });
       }
     }

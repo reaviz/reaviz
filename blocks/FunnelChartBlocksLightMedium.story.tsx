@@ -33,6 +33,7 @@ export const LargeDataset = () => {
         </select>
       </div>
       <FunnelChart
+        containerClassName="flex-1 [min-height:0]"
         id="large-dataset"
         height={366}
         data={largeFunnelData}
@@ -268,6 +269,7 @@ export const Simple = () => {
         </select>
       </div>
       <FunnelChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple"
         height={330}
         data={simpleFunnelData}
@@ -502,6 +504,7 @@ export const Layered = () => {
         </select>
       </div>
       <FunnelChart
+        containerClassName="flex-1 [min-height:0]"
         id="layered"
         height={330}
         data={simpleFunnelData}
@@ -739,6 +742,7 @@ export const Interpolation = () => {
         </select>
       </div>
       <FunnelChart
+        containerClassName="flex-1 [min-height:0]"
         id="interpolation"
         height={330}
         data={simpleFunnelData}

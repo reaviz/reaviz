@@ -40,8 +40,9 @@ export const Simple = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -312,8 +313,9 @@ export const SimpleCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -588,8 +590,9 @@ export const SimpleHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -895,8 +898,9 @@ export const Intensity = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -1164,8 +1168,9 @@ export const IntensityCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -1437,8 +1442,9 @@ export const IntensityHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -1742,8 +1748,9 @@ export const Correlation = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -2011,8 +2018,9 @@ export const CorrelationCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -2284,8 +2292,9 @@ export const CorrelationHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -2589,8 +2598,9 @@ export const Geospatial = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -2858,8 +2868,9 @@ export const GeospatialCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -3131,8 +3142,9 @@ export const GeospatialHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -3436,8 +3448,9 @@ export const Warm = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -3705,8 +3718,9 @@ export const WarmCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -3978,8 +3992,9 @@ export const WarmHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -4283,8 +4298,9 @@ export const Hot = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -4555,8 +4571,9 @@ export const HotCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -4831,8 +4848,9 @@ export const HotHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -5139,8 +5157,9 @@ export const Classic = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumSimpleBlocksData}
           yAxis={
             <LinearYAxis
@@ -5408,8 +5427,9 @@ export const ClassicCircle = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis
@@ -5681,8 +5701,9 @@ export const ClassicHex = () => {
           <option value="last-90-days">Last 90 Days</option>
         </select>
       </div>
-      <div className="flex w-full h-full pl-2 pr-2">
+      <div className="flex w-full flex-1 [min-height:0] pl-2 pr-2">
         <Heatmap
+          containerClassName="flex-1 [min-height:0]"
           data={heatmapMediumBlocksData}
           yAxis={
             <LinearYAxis

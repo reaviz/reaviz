@@ -45,6 +45,7 @@ export const Stacked = () => {
         Incident Report
       </h3>
       <StackedAreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="stacked"
         data={multiDateData}
         xAxis={
@@ -111,6 +112,7 @@ export const StackedNormalized = () => {
         Incident Report
       </h3>
       <StackedNormalizedAreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="stacked-normalized"
         data={multiDateData}
         xAxis={
@@ -176,6 +178,7 @@ export const NonZero = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="non-zero"
         data={areaSingleSeriesNonZeroData}
         xAxis={
@@ -241,6 +244,7 @@ export const MultiSeriesSimple = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="multi-series-simple"
         data={areaMultiSeriesSimpleData}
         xAxis={
@@ -305,6 +309,7 @@ export const Simple = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple"
         data={areaSingleSeriesSimpleData}
         xAxis={
@@ -368,6 +373,7 @@ export const MultiSeriesInterpolationSmooth = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="multi-series-interpolation-smooth"
         data={areaMultiSeriesInterpolationSmoothData}
         xAxis={
@@ -433,6 +439,7 @@ export const InterpolationSmooth = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="interpolation-smooth"
         data={areaSingleSeriesInterpolationSmoothData}
         xAxis={
@@ -497,6 +504,7 @@ export const MultiSeriesInterpolationStep = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="multi-series-interpolation-step"
         data={areaMultiSeriesInterpolationStepData}
         xAxis={
@@ -562,6 +570,7 @@ export const InterpolationStep = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="interpolation-step"
         data={areaSingleSeriesInterpolationStepData}
         xAxis={
@@ -626,6 +635,7 @@ export const CircleSeries = () => {
         Incident Report
       </h3>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="circle-series"
         data={areaCircleSeriesV1Data}
         xAxis={

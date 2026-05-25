@@ -69,6 +69,7 @@ export const Stacked = () => {
         </div>
       </div>
       <StackedAreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="stacked"
         data={multiDateData}
         xAxis={
@@ -363,6 +364,7 @@ export const StackedNormalized = () => {
         </div>
       </div>
       <StackedNormalizedAreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="stacked-normalized"
         data={multiDateData}
         xAxis={
@@ -642,6 +644,7 @@ export const NonZero = () => {
         </select>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="non-zero"
         data={areaSingleSeriesNonZeroData}
         xAxis={
@@ -935,6 +938,7 @@ export const MultiSeriesSimple = () => {
         </div>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="multi-series-simple"
         data={areaMultiSeriesSimpleData}
         xAxis={
@@ -1213,6 +1217,7 @@ export const Simple = () => {
         </select>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="simple"
         data={areaSingleSeriesSimpleData}
         xAxis={
@@ -1504,6 +1509,7 @@ export const MultiSeriesInterpolationSmooth = () => {
         </div>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="multi-series-interpolation-smooth"
         data={areaMultiSeriesInterpolationSmoothData}
         xAxis={
@@ -1783,6 +1789,7 @@ export const InterpolationSmooth = () => {
         </select>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="interpolation-smooth"
         data={areaSingleSeriesInterpolationSmoothData}
         xAxis={
@@ -2071,6 +2078,7 @@ export const MultiSeriesInterpolationStep = () => {
         </div>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="multi-series-interpolation-step"
         data={areaMultiSeriesInterpolationStepData}
         xAxis={
@@ -2350,6 +2358,7 @@ export const InterpolationStep = () => {
         </select>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="interpolation-step"
         data={areaSingleSeriesInterpolationStepData}
         xAxis={
@@ -2628,6 +2637,7 @@ export const CircleSeries = () => {
         </select>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="circle-series"
         data={areaCircleSeriesV1Data}
         xAxis={
@@ -2940,6 +2950,7 @@ export const LargeDataset = () => {
         </div>
       </div>
       <AreaChart
+        containerClassName="flex-1 [min-height:0]"
         id="large-dataset"
         data={mediumMultiDateData}
         xAxis={
