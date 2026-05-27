@@ -1,6 +1,6 @@
 {
   "name": "reaviz",
-  "version": "16.1.2",
+  "version": "16.1.3",
   "description": "Data Visualization using React",
   "engines": {
     "node": ">=18.0.0"

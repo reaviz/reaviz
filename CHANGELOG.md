@@ -1,3 +1,6 @@
+# 16.1.3 - 5/27/26
+- [chore] upgrade reaviz/deps
+
 # 16.1.2 - 2/19/26
 - [fix] Fix bugs, memory leaks, and performance issues across codebase #318
 - [fix] Fix: Add missing useMemo dependency in Line.tsx to fix stale strokeFill colors #317
