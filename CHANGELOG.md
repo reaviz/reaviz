@@ -1,3 +1,6 @@
+# 16.1.4 - 5/28/26
+- [chore] tsdoc updates
+
 # 16.1.3 - 5/27/26
 - [chore] upgrade reaviz/deps
 
