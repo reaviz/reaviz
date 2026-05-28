@@ -42,14 +42,14 @@ export interface RadialAreaChartProps extends ChartProps {
   series: ReactElement<RadialAreaSeriesProps, typeof RadialAreaSeries>;
 
   /**
-   * The radial axis component for the chart.
+   * The inner radius for the chart center.
    *
    * @default 0.1
    */
   innerRadius: number;
 
   /**
-   * The inner radius for the chart center.
+   * The radial axis component for the chart.
    *
    * @default `<RadialAxis />`
    */
