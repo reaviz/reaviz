@@ -10,7 +10,14 @@ export interface MapMarkerProps {
   index: number;
   cy?: number;
   cx?: number;
+
+  /**
+   * Radius of the marker circle.
+   *
+   * @default 3
+   */
   size?: number;
+
   tooltip?: any;
   onClick?: () => void;
 }

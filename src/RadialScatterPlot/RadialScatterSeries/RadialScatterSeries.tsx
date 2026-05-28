@@ -20,6 +20,8 @@ import { RadialValueMarker, RadialValueMarkerProps } from '@/common';
 export interface RadialScatterSeriesProps {
   /**
    * Point that is rendered.
+   *
+   * @default `<RadialScatterPoint />`
    */
   point: ReactElement<RadialScatterPointProps, typeof RadialScatterPoint>;
 
@@ -45,6 +47,8 @@ export interface RadialScatterSeriesProps {
 
   /**
    * Whether to animate the enter/update/exit.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -55,6 +59,8 @@ export interface RadialScatterSeriesProps {
 
   /**
    * When to show the point.
+   *
+   * @default true
    */
   show: boolean;
 

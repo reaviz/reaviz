@@ -27,21 +27,29 @@ import { getAriaLabel, mergeDefaultProps } from '@/common';
 export type ScatterPointProps = {
   /**
    * Whether the element is active or not. Set internally by `ScatterSeries`.
+   *
+   * @default true
    */
   active?: boolean;
 
   /**
    * Size of the circle element.
+   *
+   * @default 4
    */
   size?: ((data: ChartInternalShallowDataShape) => number) | number;
 
   /**
    * Color of the circle.
+   *
+   * @default schemes.cybertron[0]
    */
   color?: ColorSchemeType;
 
   /**
    * Cursor for the element.
+   *
+   * @default 'pointer'
    */
   cursor?: string;
 
@@ -62,6 +70,8 @@ export type ScatterPointProps = {
 
   /**
    * Whether to animate the enter/update/exit. Set internally by `ScatterSeries`.
+   *
+   * @default true
    */
   animated?: boolean;
 
@@ -72,6 +82,8 @@ export type ScatterPointProps = {
 
   /**
    * Tooltip element.
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 

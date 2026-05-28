@@ -47,6 +47,8 @@ export interface RadialGaugeSeriesProps {
 
   /**
    * The "thickness" of the arcs
+   *
+   * @default 5
    */
   arcWidth?: number;
 
@@ -62,31 +64,43 @@ export interface RadialGaugeSeriesProps {
 
   /**
    * Padding between each gauge.
+   *
+   * @default 20
    */
   padding: number;
 
   /**
    * Color scheme to apply.
+   *
+   * @default ['#00ECB1']
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Arc component.
+   *
+   * @default `<RadialGaugeArc />`
    */
   innerArc: ReactElement<RadialGaugeArcProps, typeof RadialGaugeArc>;
 
   /**
    * Outer arc component. This is the 'fill' element.
+   *
+   * @default `<RadialGaugeOuterArc />`
    */
   outerArc: ReactElement<RadialGaugeArcProps, typeof RadialGaugeArc> | null;
 
   /**
    * Label component.
+   *
+   * @default `<RadialGaugeLabel />`
    */
   label: ReactElement<RadialGaugeLabelProps, typeof RadialGaugeLabel> | null;
 
   /**
    * Value label component.
+   *
+   * @default `<RadialGaugeValueLabel />`
    */
   valueLabel: ReactElement<
     RadialGaugeValueLabelProps,
@@ -95,6 +109,8 @@ export interface RadialGaugeSeriesProps {
 
   /**
    * Min width for a gauge. Only applicable in multi-series gauges.
+   *
+   * @default 50
    */
   minGaugeWidth: number;
 }

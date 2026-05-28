@@ -42,26 +42,36 @@ import css from './ScatterPlot.module.css';
 export interface ScatterPlotProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartShallowDataShape[];
 
   /**
    * The series component that renders the scatter components.
+   *
+   * @default `<ScatterSeries />`
    */
   series: ReactElement<ScatterSeriesProps, typeof ScatterSeries>;
 
   /**
    * The linear axis component for the Y Axis of the chart.
+   *
+   * @default `<LinearYAxis type="value" />`
    */
   yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The linear axis component for the X Axis of the chart.
+   *
+   * @default `<LinearXAxis type="time" />`
    */
   xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The chart's background gridlines component.
+   *
+   * @default `<GridlineSeries />`
    */
   gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 

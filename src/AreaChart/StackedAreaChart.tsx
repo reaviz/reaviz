@@ -4,6 +4,11 @@ import { ChartNestedDataShape } from '@/common/data';
 import { StackedAreaSeries } from './AreaSeries';
 
 export interface StackedAreaChartProps extends AreaChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartNestedDataShape[];
 }
 

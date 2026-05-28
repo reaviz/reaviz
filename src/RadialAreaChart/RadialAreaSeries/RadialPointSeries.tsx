@@ -46,11 +46,15 @@ export interface RadialPointSeriesProps {
 
   /**
    * When to show the point.
+   *
+   * @default 'hover'
    */
   show: boolean | 'hover' | 'first' | 'last';
 
   /**
    * Point react component.
+   *
+   * @default `<RadialScatterPoint />`
    */
   point: ReactElement<RadialScatterPointProps, typeof RadialScatterPoint>;
 }

@@ -15,6 +15,8 @@ export interface GridStripeProps {
 
   /**
    * Stripe fill color.
+   *
+   * @default '#393c3e'
    */
   fill: string;
 

@@ -32,21 +32,29 @@ import { uniqueBy } from '@/common/utils/array';
 export interface HeatmapProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartNestedDataShape[];
 
   /**
    * The series component that renders the cell components.
+   *
+   * @default `<HeatmapSeries padding={0.3} />`
    */
   series: ReactElement<HeatmapSeriesProps, typeof HeatmapSeries>;
 
   /**
    * The linear axis component for the Y Axis of the chart.
+   *
+   * @default `<LinearYAxis type="category" axisLine={null} tickSeries={<LinearYAxisTickSeries line={null} label={<LinearYAxisTickLabel padding={5} />} />} />`
    */
   yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The linear axis component for the X Axis of the chart.
+   *
+   * @default `<LinearXAxis type="category" axisLine={null} tickSeries={<LinearXAxisTickSeries line={null} label={<LinearXAxisTickLabel padding={5} />} />} />`
    */
   xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 

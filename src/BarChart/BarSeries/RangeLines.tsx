@@ -32,6 +32,8 @@ export interface RangeLinesProps {
 
   /**
    * Stroke width of the range line.
+   *
+   * @default 1
    */
   strokeWidth: number;
 
@@ -42,6 +44,8 @@ export interface RangeLinesProps {
 
   /**
    * Position of the range line.
+   *
+   * @default 'top'
    */
   position: 'top' | 'bottom';
 
@@ -62,6 +66,8 @@ export interface RangeLinesProps {
 
   /**
    * Direction of the chart. Set internally by `BarSeries`.
+   *
+   * @default 'vertical'
    */
   layout: Direction;
 

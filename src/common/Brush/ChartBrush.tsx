@@ -3,9 +3,24 @@ import { BrushConfiguration, Brush } from './Brush';
 import { BrushChangeEvent } from './BrushSlice';
 
 export interface ChartBrushProps extends BrushConfiguration, PropsWithChildren {
+  /**
+   * D3 scale for the axis the brush is attached to. Set internally by the parent chart.
+   */
   scale: any;
+
+  /**
+   * Height of the brush area. Set internally by the parent chart.
+   */
   height: number;
+
+  /**
+   * Width of the brush area. Set internally by the parent chart.
+   */
   width: number;
+
+  /**
+   * Children rendered inside the brushable area.
+   */
   children: any;
 }
 

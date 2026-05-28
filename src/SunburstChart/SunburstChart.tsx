@@ -12,11 +12,15 @@ import { SunburstSeries, SunburstSeriesProps } from './SunburstSeries';
 export interface SunburstChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartShallowDataShape[] | ChartNestedDataShape[];
 
   /**
    * The series component that renders the components.
+   *
+   * @default `<SunburstSeries />`
    */
   series?: ReactElement<SunburstSeriesProps, typeof SunburstSeries>;
 }

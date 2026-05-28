@@ -10,6 +10,11 @@ import {
 } from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedAreaChartProps extends AreaChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartNestedDataShape[];
 }
 

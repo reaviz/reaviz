@@ -9,30 +9,107 @@ import classNames from 'classnames';
 import css from './LinearAxisTickLabel.module.css';
 
 export interface LinearAxisTickLabelProps {
+  /**
+   * Text content (possibly ellipsized) for the label. Set internally by `LinearAxisTickSeries`.
+   */
   text: string;
+
+  /**
+   * Original, unellipsized text for the label. Set internally by `LinearAxisTickSeries`.
+   */
   fullText: string;
+
   /**
    * The raw data value for this tick (e.g., Date object, number, string).
    */
   data: any;
+
+  /**
+   * Rotation angle of the label in degrees. Set internally by `LinearAxisTickSeries`.
+   */
   angle: number;
+
+  /**
+   * Orientation of the axis. Set internally by `LinearAxisTickSeries`.
+   */
   orientation: 'horizontal' | 'vertical';
+
+  /**
+   * Which half of the axis this label belongs to. Set internally by `LinearAxisTickSeries`.
+   */
   half: 'start' | 'end' | 'center';
+
+  /**
+   * The companion tick line element. Set internally by `LinearAxisTickSeries`.
+   */
   line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine>;
+
+  /**
+   * Custom formatter for the label value.
+   */
   format?: (v) => any;
   /**
    * Format tooltip title on hover label.
    */
   formatTooltip?: (value: any) => any | string;
+
+  /**
+   * Text fill color.
+   *
+   * @default '#8F979F'
+   */
   fill: string;
+
+  /**
+   * Font size of the label.
+   *
+   * @default 11
+   */
   fontSize: number;
+
+  /**
+   * Font family of the label.
+   *
+   * @default 'sans-serif'
+   */
   fontFamily: string;
+
+  /**
+   * Whether to rotate the label.
+   *
+   * @default true
+   */
   rotation: boolean | number;
+
+  /**
+   * Padding between the axis and the label.
+   *
+   * @default 5
+   */
   padding: number | { fromAxis: number; alongAxis: number };
+
+  /**
+   * Optional override for the text anchor.
+   */
   textAnchor?: 'start' | 'end' | 'middle';
+
+  /**
+   * Position of the label relative to the tick.
+   */
   position: 'start' | 'end' | 'center';
+
+  /**
+   * Alignment of the label relative to the axis.
+   *
+   * @default 'center'
+   */
   align: 'start' | 'end' | 'center' | 'inside' | 'outside';
+
+  /**
+   * CSS class to apply.
+   */
   className?: string;
+
   /**
    * Click handler for the label.
    */

@@ -31,16 +31,22 @@ export interface RadialAxisProps {
 
   /**
    * Inner radius of the axis.
+   *
+   * @default 10
    */
   innerRadius: number;
 
   /**
    * Type of the axis.
+   *
+   * @default 'value'
    */
   type: 'value' | 'time' | 'category';
 
   /**
    * Arc element to render.
+   *
+   * @default `<RadialAxisArcSeries />`
    */
   arcs: ReactElement<
     RadialAxisArcSeriesProps,
@@ -49,6 +55,8 @@ export interface RadialAxisProps {
 
   /**
    * Tick element to render.
+   *
+   * @default `<RadialAxisTickSeries />`
    */
   ticks: ReactElement<
     RadialAxisTickSeriesProps,
@@ -57,11 +65,15 @@ export interface RadialAxisProps {
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 }

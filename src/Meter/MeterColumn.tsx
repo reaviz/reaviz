@@ -10,6 +10,8 @@ export interface MeterColumnProps {
 
   /**
    * The height of the column.
+   *
+   * @default 32
    */
   height?: number;
 
@@ -25,11 +27,15 @@ export interface MeterColumnProps {
 
   /**
    * The active fill color.
+   *
+   * @default schemes.cybertron[0]
    */
   activeFill: string;
 
   /**
    * The inactive fill color.
+   *
+   * @default '#414242'
    */
   inActiveFill: string;
 
@@ -45,6 +51,8 @@ export interface MeterColumnProps {
 
   /**
    * Whether to animate the column.
+   *
+   * @default true
    */
   animated?: boolean;
 }

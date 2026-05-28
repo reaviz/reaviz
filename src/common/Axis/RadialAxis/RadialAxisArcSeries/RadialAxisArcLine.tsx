@@ -4,6 +4,8 @@ import React, { FC } from 'react';
 export interface RadialAxisArcLineProps {
   /**
    * Stroke color of the arc.
+   *
+   * @default '#71808d'
    */
   stroke: ((index: number) => string) | string;
 

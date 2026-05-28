@@ -26,6 +26,8 @@ export interface SequentialLegendProps {
 
   /**
    * Orientation of the legend.
+   *
+   * @default 'vertical'
    */
   orientation?: 'horizontal' | 'vertical';
 
@@ -36,6 +38,8 @@ export interface SequentialLegendProps {
 
   /**
    * Color scheme for the scale.
+   *
+   * @default ['rgba(28, 107, 86, 0.5)', '#2da283']
    */
   colorScheme?: string[];
 }

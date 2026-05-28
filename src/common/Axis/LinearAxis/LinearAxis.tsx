@@ -23,21 +23,80 @@ export interface LinearAxisDimensionChanged {
 }
 
 export interface LinearAxisProps {
+  /**
+   * Height of the axis. Set internally by the parent chart.
+   */
   height?: number;
+
+  /**
+   * Width of the axis. Set internally by the parent chart.
+   */
   width?: number;
+
+  /**
+   * Explicit domain to use for the axis.
+   */
   domain?: ChartDataTypes[];
+
+  /**
+   * Whether the axis is already scaled.
+   *
+   * @default false
+   */
   scaled?: boolean;
+
+  /**
+   * Whether to round the domain values.
+   *
+   * @default false
+   */
   roundDomains?: boolean;
+
+  /**
+   * Type of the axis.
+   */
   type?: 'value' | 'time' | 'category' | 'duration';
+
+  /**
+   * Position of the axis relative to the chart area.
+   */
   position?: 'start' | 'end' | 'center';
+
+  /**
+   * The tick series component for the axis.
+   */
   tickSeries?: ReactElement<
     LinearAxisTickSeriesProps,
     typeof LinearAxisTickSeries
   >;
+
+  /**
+   * The axis line component.
+   *
+   * @default `<LinearAxisLine />`
+   */
   axisLine?: ReactElement<LinearAxisLineProps, typeof LinearAxisLine> | null;
+
+  /**
+   * D3 scale for the axis. Set internally by the parent chart.
+   */
   scale?: any;
+
+  /**
+   * Visibility of the axis.
+   *
+   * @default 'visible'
+   */
   visibility?: 'visible' | 'hidden';
+
+  /**
+   * Orientation of the axis.
+   */
   orientation?: 'horizontal' | 'vertical';
+
+  /**
+   * Fires when the axis dimensions change.
+   */
   onDimensionsChange?: (event: LinearAxisDimensionChanged) => void;
 }
 

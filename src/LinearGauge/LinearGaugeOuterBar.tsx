@@ -13,6 +13,8 @@ export interface LinearGaugeOuterBarProps extends SVGRect {
 
   /**
    * Fill for the bar element.
+   *
+   * @default '#484848'
    */
   fill: string;
 }

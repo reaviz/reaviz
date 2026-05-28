@@ -22,26 +22,36 @@ export interface RadialGaugeProps extends ChartProps {
 
   /**
    * Min value to scale on.
+   *
+   * @default 0
    */
   minValue?: number | number[];
 
   /**
    * Max value to scale on.
+   *
+   * @default 100
    */
   maxValue?: number | number[];
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default Math.PI * 2
    */
   endAngle?: number;
 
   /**
    * Gauge series component to render.
+   *
+   * @default `<RadialGaugeSeries />`
    */
   series?: ReactElement<
     RadialGaugeSeriesProps | StackedRadialGaugeSeriesProps,

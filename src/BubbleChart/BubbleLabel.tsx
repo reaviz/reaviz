@@ -17,11 +17,15 @@ export interface BubbleLabelProps {
 
   /**
    * Font size of the text.
+   *
+   * @default 14
    */
   fontSize?: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily?: string;
 
@@ -32,6 +36,8 @@ export interface BubbleLabelProps {
 
   /**
    * Should wrap text or not.
+   *
+   * @default true
    */
   wrap?: boolean;
 

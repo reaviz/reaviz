@@ -22,6 +22,11 @@ import {
 } from '@/common';
 
 export interface SonarChartProps extends BarChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartNestedDataShape[];
 }
 

@@ -2,6 +2,9 @@ import React, { FC } from 'react';
 import { CountInputs, useCount } from './useCount';
 
 export interface CountProps extends CountInputs {
+  /**
+   * CSS class to apply to the counter element.
+   */
   className?: string;
 }
 

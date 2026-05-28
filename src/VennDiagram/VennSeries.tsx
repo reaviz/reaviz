@@ -36,31 +36,43 @@ export interface VennSeriesProps {
 
   /**
    * Color scheme for the chart.
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Whether the chart is disabled.
+   *
+   * @default false
    */
   disabled?: boolean;
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated?: boolean;
 
   /**
    * Label element.
+   *
+   * @default `<VennLabel />`
    */
   label?: ReactElement<VennLabelProps, typeof VennLabel> | null;
 
   /**
    * Label element.
+   *
+   * @default `<VennOuterLabel />`
    */
   outerLabel?: ReactElement<VennOuterLabelProps, typeof VennOuterLabel> | null;
 
   /**
    * Arc element.
+   *
+   * @default `<VennArc />`
    */
   arc?: ReactElement<VennArcProps, typeof VennArc> | null;
 }

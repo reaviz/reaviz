@@ -56,6 +56,8 @@ export interface RadialScatterPointProps {
 
   /**
    * Color of the circle.
+   *
+   * @default schemes.cybertron[0]
    */
   color: any;
 
@@ -66,6 +68,8 @@ export interface RadialScatterPointProps {
 
   /**
    * Whether the element is active or not. Set internally by `RadialScatterSeries`.
+   *
+   * @default true
    */
   active?: boolean;
 
@@ -81,11 +85,15 @@ export interface RadialScatterPointProps {
 
   /**
    * Size of the circle element.
+   *
+   * @default 3
    */
   size?: ((d) => number) | number;
 
   /**
    * Tooltip element.
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 

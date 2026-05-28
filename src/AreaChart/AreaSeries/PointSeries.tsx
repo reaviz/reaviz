@@ -54,11 +54,15 @@ export interface PointSeriesProps {
 
   /**
    * Determines when the points should be shown. Can be a boolean or one of the following strings: 'hover', 'first', 'last'.
+   *
+   * @default 'hover'
    */
   show: boolean | 'hover' | 'first' | 'last';
 
   /**
    * The point element.
+   *
+   * @default `<ScatterPoint />`
    */
   point: ReactElement<ScatterPointProps, typeof ScatterPoint>;
 

@@ -16,7 +16,18 @@ import {
 } from '@/common/Axis/LinearAxis';
 
 export interface MarimekkoChartProps extends BarChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartNestedDataShape[];
+
+  /**
+   * The series component that renders the Marimekko bar components.
+   *
+   * @default `<MarimekkoBarSeries />`
+   */
   series: ReactElement<BarSeriesProps, typeof MarimekkoBarSeries>;
 }
 

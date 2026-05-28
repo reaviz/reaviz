@@ -28,6 +28,8 @@ export interface RadialBarSeriesProps {
 
   /**
    * Color scheme for the series.
+   *
+   * @default schemes.cybertron[0]
    */
   colorScheme: ColorSchemeType;
 
@@ -58,11 +60,15 @@ export interface RadialBarSeriesProps {
 
   /**
    * Bar that is rendered.
+   *
+   * @default `<RadialBar />`
    */
   bar: ReactElement<RadialBarProps, typeof RadialBar>;
 
   /**
    * Whether to animate the enter/update/exit.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -78,21 +84,29 @@ export interface RadialBarSeriesProps {
 
   /**
    * Tooltip for the chart area.
+   *
+   * @default `<TooltipArea tooltip={<ChartTooltip followCursor />} />`
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 
   /**
    * The type of the chart.
+   *
+   * @default 'standard'
    */
   type?: RadialBarSeriesType;
 

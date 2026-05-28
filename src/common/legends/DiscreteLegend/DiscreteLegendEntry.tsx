@@ -20,6 +20,8 @@ export interface DiscreteLegendEntryProps {
 
   /**
    * Symbol for the entry.
+   *
+   * @default `<DiscreteLegendSymbol />`
    */
   symbol:
     | ReactElement<DiscreteLegendSymbolProps, typeof DiscreteLegendSymbol>
@@ -42,6 +44,8 @@ export interface DiscreteLegendEntryProps {
 
   /**
    * Orientation of the entry set internally by `DiscreteLegend`.
+   *
+   * @default 'horizontal'
    */
   orientation: 'horizontal' | 'vertical';
 

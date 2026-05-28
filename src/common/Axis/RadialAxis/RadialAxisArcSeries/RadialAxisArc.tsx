@@ -14,21 +14,29 @@ export interface RadialAxisArcProps {
 
   /**
    * Stroke color of the arc.
+   *
+   * @default '#71808d'
    */
   stroke: ((index: number) => string) | string;
 
   /**
    * Stroke dash array of the arc.
+   *
+   * @default '1,4'
    */
   strokeDasharray: ((index: number) => string) | string;
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 }

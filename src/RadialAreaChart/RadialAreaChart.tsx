@@ -36,31 +36,43 @@ export interface RadialAreaChartProps extends ChartProps {
 
   /**
    * The series component that renders the area components.
+   *
+   * @default `<RadialAreaSeries />`
    */
   series: ReactElement<RadialAreaSeriesProps, typeof RadialAreaSeries>;
 
   /**
    * The radial axis component for the chart.
+   *
+   * @default 0.1
    */
   innerRadius: number;
 
   /**
    * The inner radius for the chart center.
+   *
+   * @default `<RadialAxis />`
    */
   axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 
   /**
    * Whether the curve should be closed. Set to true by deafult
+   *
+   * @default true
    */
   isClosedCurve?: boolean;
 }

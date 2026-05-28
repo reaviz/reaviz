@@ -14,26 +14,36 @@ export interface TreeMapLabelProps {
 
   /**
    * Font size of the text.
+   *
+   * @default 14
    */
   fontSize?: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily?: string;
 
   /**
    * Fill of the text.
+   *
+   * @default '#FFF'
    */
   fill?: string;
 
   /**
    * Should wrap text or not.
+   *
+   * @default true
    */
   wrap?: boolean;
 
   /**
    * Placement of the text.
+   *
+   * @default 'start'
    */
   placement?: 'start' | 'middle' | 'end';
 }

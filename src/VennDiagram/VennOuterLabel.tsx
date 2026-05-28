@@ -10,21 +10,29 @@ export interface VennOuterLabelProps {
 
   /**
    * Font size of the text.
+   *
+   * @default 14
    */
   fontSize?: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily?: string;
 
   /**
    * Fill of the text.
+   *
+   * @default '#000'
    */
   fill?: string;
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated?: boolean;
 

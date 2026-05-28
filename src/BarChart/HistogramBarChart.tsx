@@ -7,6 +7,11 @@ import {
 } from './BarSeries';
 
 export interface HistogramBarChartProps extends BarChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartShallowDataShape[];
 }
 

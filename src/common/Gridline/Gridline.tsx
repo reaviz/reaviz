@@ -21,6 +21,8 @@ export interface GridlineProps {
 
   /**
    * Direction set by the `GridlineSeries`.
+   *
+   * @default 'all'
    */
   direction: 'all' | 'x' | 'y';
 
@@ -31,11 +33,15 @@ export interface GridlineProps {
 
   /**
    * SVG Stroke Width Property.
+   *
+   * @default 1
    */
   strokeWidth: number;
 
   /**
    * SVG Stroke Color Property.
+   *
+   * @default 'rgba(153, 153, 153, 0.5)'
    */
   strokeColor: string;
 
@@ -51,6 +57,8 @@ export interface GridlineProps {
 
   /**
    * SVG Stroke Dash Array Property.
+   *
+   * @default '2 5'
    */
   strokeDasharray: string;
 }

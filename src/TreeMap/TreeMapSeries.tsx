@@ -21,21 +21,29 @@ export interface TreeMapSeriesProps {
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated?: boolean;
 
   /**
    * Color scheme for the chart.
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Rect element to be rendered.
+   *
+   * @default `<TreeMapRect />`
    */
   rect?: ReactElement<TreeMapRectProps, typeof TreeMapRect>;
 
   /**
    * Label element to be rendered.
+   *
+   * @default `<TreeMapLabel />`
    */
   label?: ReactElement<TreeMapLabelProps, typeof TreeMapLabel>;
 }

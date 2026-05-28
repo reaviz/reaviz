@@ -3,11 +3,15 @@ import React, { FC } from 'react';
 export interface RadialAxisTickLineProps {
   /**
    * Size of the tick line.
+   *
+   * @default 10
    */
   size?: number;
 
   /**
    * Stroke color of the tick line.
+   *
+   * @default 'rgba(113, 128, 141, .5)'
    */
   stroke: string;
 
@@ -23,6 +27,8 @@ export interface RadialAxisTickLineProps {
 
   /**
    * Position of the tick line.
+   *
+   * @default 'inside'
    */
   position: 'inside' | 'outside';
 }

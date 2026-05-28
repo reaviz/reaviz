@@ -16,6 +16,8 @@ export interface FunnelChartProps extends ChartProps {
 
   /**
    * The series component that renders the funnel components.
+   *
+   * @default `<FunnelSeries />`
    */
   series: ReactElement<FunnelSeriesProps, typeof FunnelSeries>;
 }

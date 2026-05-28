@@ -39,6 +39,8 @@ export interface CalendarHeatmapProps extends Omit<HeatmapProps, 'data'> {
 
   /**
    * View of the calendar renderer.
+   *
+   * @default 'year'
    */
   view: CalendarView;
 }

@@ -3,10 +3,29 @@ import { Dimensions } from '@/common/utils';
 import { LinearAxisDimensionChanged } from '@/common/Axis';
 
 export interface ChartContextProps extends Dimensions {
+  /**
+   * Unique id of the chart.
+   */
   id: string;
+
+  /**
+   * Whether the chart has reached its final size and is ready to render data.
+   */
   chartSized?: boolean;
+
+  /**
+   * Whether the Y axis has finished measuring itself.
+   */
   yAxisSized?: boolean;
+
+  /**
+   * Whether the X axis has finished measuring itself.
+   */
   xAxisSized?: boolean;
+
+  /**
+   * Callback fired when an axis reports a new dimension.
+   */
   updateAxes: (
     orientation: 'horizontal' | 'vertical',
     event: LinearAxisDimensionChanged

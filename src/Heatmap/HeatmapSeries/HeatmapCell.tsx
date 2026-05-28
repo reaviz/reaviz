@@ -37,11 +37,15 @@ export type HeatmapCellProps = {
 
   /**
    * rx SVG Attribute.
+   *
+   * @default 2
    */
   rx: number;
 
   /**
    * ry SVG Attribute.
+   *
+   * @default 2
    */
   ry: number;
 
@@ -62,6 +66,8 @@ export type HeatmapCellProps = {
 
   /**
    * Tooltip component.
+   *
+   * @default `<ChartTooltip modifiers={[flip()]} />`
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 
@@ -97,6 +103,8 @@ export type HeatmapCellProps = {
 
   /**
    * Cursor style attribute.
+   *
+   * @default 'auto'
    */
   cursor: string;
 

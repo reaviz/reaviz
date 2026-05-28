@@ -46,6 +46,8 @@ export type LinkElement = ReactElement<SankeyLinkProps, typeof SankeyLink>;
 export interface SankeyProps extends ChartProps {
   /**
    * Whether to animate the enter/update/exit. Set internally by `SankeyNode` and `SankeyLink`.
+   *
+   * @default true
    */
   animated?: boolean;
 
@@ -56,21 +58,29 @@ export interface SankeyProps extends ChartProps {
 
   /**
    * The node alignment method.
+   *
+   * @default 'justify'
    */
   justification?: Justification;
 
   /**
    * Width of the node.
+   *
+   * @default 15
    */
   nodeWidth?: number;
 
   /**
    * Vertical padding between nodes in the same column.
+   *
+   * @default 10
    */
   nodePadding?: number;
 
   /**
    * Label position.
+   *
+   * @default 'inside'
    */
   labelPosition?: SankeyLabelPosition;
 

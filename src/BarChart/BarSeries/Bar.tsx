@@ -48,6 +48,8 @@ export type BarProps = {
   /**
    * Chroma brightness factor to brighten the active bar. See
    * https://gka.github.io/chroma.js/#color-brighten for more info.
+   *
+   * @default 0.5
    */
   activeBrightness?: number;
 
@@ -78,16 +80,22 @@ export type BarProps = {
 
   /**
    * Gradient shades for the bar.
+   *
+   * @default `<Gradient />`
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 
   /**
    * SVG rx attribute for the bar.
+   *
+   * @default 0
    */
   rx: number;
 
   /**
    * SVG ry attribute for the bar.
+   *
+   * @default 0
    */
   ry: number;
 
@@ -113,6 +121,8 @@ export type BarProps = {
 
   /**
    * Cursor for the bar element.
+   *
+   * @default 'auto'
    */
   cursor: string;
 
@@ -153,6 +163,8 @@ export type BarProps = {
 
   /**
    * Direction of the chart. Set internally by `BarSeries`.
+   *
+   * @default 'vertical'
    */
   layout: Direction;
 
@@ -168,6 +180,8 @@ export type BarProps = {
 
   /**
    * Target marker element.
+   *
+   * @default `<BarTargetMarker />`
    */
   targetMarker: ReactElement<
     BarTargetMarkerProps,

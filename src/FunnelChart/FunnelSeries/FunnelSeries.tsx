@@ -25,11 +25,15 @@ export interface FunnelSeriesProps {
 
   /**
    * The arc component that renders the funnel shape.
+   *
+   * @default `<FunnelArc />`
    */
   arc: React.ReactElement<FunnelArcProps, typeof FunnelArc>;
 
   /**
    * The axis component that renders the funnel axis.
+   *
+   * @default `<FunnelAxis />`
    */
   axis: React.ReactElement<FunnelAxisProps, typeof FunnelAxis>;
 

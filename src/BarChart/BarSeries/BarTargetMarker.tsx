@@ -45,16 +45,22 @@ export interface BarTargetMarkerProps {
 
   /**
    * Color of the target marker line.
+   *
+   * @default '#fff'
    */
   fill: string;
 
   /**
    * Color of the positive delta line.
+   *
+   * @default '#00C49F'
    */
   positiveDeltaFill: string;
 
   /**
    * Color of the negative delta line.
+   *
+   * @default '#FF7361'
    */
   negativeDeltaFill: string;
 
@@ -65,6 +71,8 @@ export interface BarTargetMarkerProps {
 
   /**
    * Layout of bar chart to render. Set internally by `BarSeries`.
+   *
+   * @default 'vertical'
    */
   layout: Direction;
 
@@ -80,11 +88,15 @@ export interface BarTargetMarkerProps {
 
   /**
    * Thickness of the target marker line.
+   *
+   * @default 2
    */
   targetStrokeWidth?: number;
 
   /**
    * Thickness of the difference/delta line that shows distance between target and actual value.
+   *
+   * @default 1
    */
   deltaStrokeWidth?: number;
 }

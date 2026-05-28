@@ -38,21 +38,29 @@ export interface PieArcProps {
 
   /**
    * Animate
+   *
+   * @default true
    */
   animated?: boolean;
 
   /**
    * Tooltip component
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 
   /**
    * The cursor type used when hovering
+   *
+   * @default 'initial'
    */
   cursor?: string;
 
   /**
    * Disable the arc
+   *
+   * @default false
    */
   disabled?: boolean;
 

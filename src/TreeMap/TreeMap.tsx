@@ -12,27 +12,37 @@ import { CloneElement } from 'reablocks';
 export interface TreeMapProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartShallowDataShape[] | ChartNestedDataShape[];
 
   /**
    * The series component that renders the components.
+   *
+   * @default `<TreeMapSeries />`
    */
   series?: ReactElement<TreeMapSeriesProps, typeof TreeMapSeries>;
 
   /**
-   * Inner padding for the treemap. Defaults to 5.
+   * Inner padding for the treemap.
+   *
+   * @default 5
    */
   paddingInner?: number;
 
   /**
-   * Outer padding for the treemap. Defaults to 5.
+   * Outer padding for the treemap.
+   *
+   * @default 5
    */
   paddingOuter?: number;
 
   /**
    * Padding top for the treemap. This is used for the title
-   * spacing in nested situations. Defaults to 30.
+   * spacing in nested situations.
+   *
+   * @default 30
    */
   paddingTop?: number;
 }

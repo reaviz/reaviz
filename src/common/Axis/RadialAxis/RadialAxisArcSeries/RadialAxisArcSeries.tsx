@@ -13,6 +13,8 @@ import { mergeDefaultProps } from '@/common/utils';
 export interface RadialAxisArcSeriesProps {
   /**
    * Arc element to render.
+   *
+   * @default `<RadialAxisArc />`
    */
   arc: ReactElement<RadialAxisArcProps, typeof RadialAxisArc>;
 
@@ -23,6 +25,8 @@ export interface RadialAxisArcSeriesProps {
 
   /**
    * Number of arcs to render.
+   *
+   * @default 12
    */
   count: number;
 
@@ -43,11 +47,15 @@ export interface RadialAxisArcSeriesProps {
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 }
