@@ -20,21 +20,69 @@ import { calculateDimensions } from '@/common/utils/size';
 import { mergeDefaultProps } from '@/common/utils';
 
 export interface LinearAxisTickSeriesProps {
+  /**
+   * Height of the axis. Set internally by `LinearAxis`.
+   */
   height: number;
+
+  /**
+   * Width of the axis. Set internally by `LinearAxis`.
+   */
   width: number;
+
+  /**
+   * D3 scale for the axis. Set internally by `LinearAxis`.
+   */
   scale: any;
+
+  /**
+   * Optional interval used to override the tick count.
+   */
   interval?: number | TimeInterval;
+
+  /**
+   * Size of each tick interval.
+   *
+   * @default 30
+   */
   tickSize: number;
+
+  /**
+   * Explicit tick values. When provided, overrides automatic tick selection.
+   */
   tickValues: any[];
+
+  /**
+   * Orientation of the axis. Set internally by `LinearAxis`.
+   */
   orientation: 'horizontal' | 'vertical';
+
+  /**
+   * The tick label component.
+   *
+   * @default `<LinearAxisTickLabel />`
+   */
   label: ReactElement<
     LinearAxisTickLabelProps,
     typeof LinearAxisTickLabel
   > | null;
-  line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine> | null;
-  axis: LinearAxisProps;
+
   /**
-   * The maximum length for ellipsizing tick labels. Default is 18.
+   * The tick line component.
+   *
+   * @default `<LinearAxisTickLine height={10} width={10} orientation="horizontal" position="center" />`
+   */
+  line: ReactElement<LinearAxisTickLineProps, typeof LinearAxisTickLine> | null;
+
+  /**
+   * Parent axis props. Set internally by `LinearAxis`.
+   */
+  axis: LinearAxisProps;
+
+  /**
+   * The maximum length for ellipsizing tick labels.
+   *
+   * @default 18
    */
   ellipsisLength?: number;
 }

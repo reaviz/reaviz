@@ -19,11 +19,15 @@ export interface RadialAxisTickLabelProps
 
   /**
    * Color of the text.
+   *
+   * @default '#71808d'
    */
   fill: string;
 
   /**
    * Font size of the text.
+   *
+   * @default 11
    */
   fontSize: number;
 
@@ -34,6 +38,8 @@ export interface RadialAxisTickLabelProps
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily: string;
 
@@ -44,6 +50,8 @@ export interface RadialAxisTickLabelProps
 
   /**
    * Padding of the tick.
+   *
+   * @default 15
    */
   padding: number;
 
@@ -54,6 +62,8 @@ export interface RadialAxisTickLabelProps
 
   /**
    * Auto rotate the text.
+   *
+   * @default true
    */
   autoRotate: boolean;
 

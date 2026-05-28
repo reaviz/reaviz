@@ -32,26 +32,36 @@ export interface RadialBarChartProps extends ChartProps {
 
   /**
    * The series component that renders the bar components.
+   *
+   * @default `<RadialBarSeries />`
    */
   series: ReactElement<RadialBarSeriesProps, typeof RadialBarSeries>;
 
   /**
    * The radial axis component for the chart.
+   *
+   * @default `<RadialAxis />`
    */
   axis: ReactElement<RadialAxisProps, typeof RadialAxis> | null;
 
   /**
    * The inner radius for the chart center.
+   *
+   * @default 10
    */
   innerRadius: number;
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 }

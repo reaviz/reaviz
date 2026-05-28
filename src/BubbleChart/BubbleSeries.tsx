@@ -23,16 +23,22 @@ export interface BubbleSeriesProps {
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated?: boolean;
 
   /**
    * Color scheme for the chart.
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Bubble element.
+   *
+   * @default `<Bubble />`
    */
   bubble?: ReactElement<BubbleProps, typeof Bubble>;
 
@@ -43,6 +49,8 @@ export interface BubbleSeriesProps {
 
   /**
    * Label element.
+   *
+   * @default `<BubbleLabel />`
    */
   label?: ReactElement<BubbleLabelProps, typeof BubbleLabel>;
 }

@@ -15,6 +15,8 @@ export interface StackedRadialGaugeValueLabelProps {
 
   /**
    * A y offset to apply to the label
+   *
+   * @default 0
    */
   yOffset?: number;
 }

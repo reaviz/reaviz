@@ -13,6 +13,8 @@ import { mergeDefaultProps } from '@/common';
 export interface HeatmapSeriesProps {
   /**
    * Padding between cells.
+   *
+   * @default 0.1
    */
   padding: number;
 
@@ -38,21 +40,29 @@ export interface HeatmapSeriesProps {
 
   /**
    * Color scheme for the chart.
+   *
+   * @default ['rgba(28, 107, 86, 0.5)', '#2da283']
    */
   colorScheme: ColorSchemeType | ColorSchemeStyleArray;
 
   /**
    * Color for the empty cell of the chart.
+   *
+   * @default 'rgba(200,200,200,0.08)'
    */
   emptyColor: string;
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated: boolean;
 
   /**
    * Cell component that will be rendered.
+   *
+   * @default `<HeatmapCell />`
    */
   cell: ReactElement<HeatmapCellProps, typeof HeatmapCell>;
 

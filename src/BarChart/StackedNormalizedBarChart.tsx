@@ -13,6 +13,11 @@ import {
 } from '@/common/Axis/LinearAxis';
 
 export interface StackedNormalizedBarChartProps extends BarChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartNestedDataShape[];
 }
 

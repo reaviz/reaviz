@@ -16,6 +16,8 @@ export type ArcData = PieArcDatum<ChartShallowDataShape>;
 export interface PieChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data?: ChartShallowDataShape[];
 
@@ -31,6 +33,8 @@ export interface PieChartProps extends ChartProps {
 
   /**
    * The series component that renders the arc components.
+   *
+   * @default `<PieArcSeries />`
    */
   series?: ReactElement<PieArcSeriesProps, typeof PieArcSeries>;
 }

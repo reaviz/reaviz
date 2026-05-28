@@ -24,22 +24,30 @@ export interface BarListProps {
 
   /**
    * Data for the chart.
+   *
+   * @default []
    */
   data: ChartShallowDataShape[];
 
   /**
    * Sort direction of the data.
+   *
+   * @default 'desc'
    */
   sortDirection?: 'asc' | 'desc' | 'none';
 
   /**
    * Series to render.
+   *
+   * @default `<BarListSeries />`
    */
   series?: ReactElement<BarListSeriesProps, typeof BarList>;
 
   /**
    * Whether the values are percentages or absolute values.
    * In the latter case, the chart would be relative
+   *
+   * @default 'count'
    */
   type?: 'percent' | 'count';
 }

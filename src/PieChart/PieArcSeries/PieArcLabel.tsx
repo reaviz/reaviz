@@ -30,21 +30,29 @@ export interface PieArcLabelProps {
 
   /**
    * FontFill color
+   *
+   * @default '#8F979F'
    */
   fontFill: string;
 
   /**
    * FontSize
+   *
+   * @default 11
    */
   fontSize: number;
 
   /**
    * FontFamily
+   *
+   * @default 'sans-serif'
    */
   fontFamily: string;
 
   /**
    * Line stroke of the label connector
+   *
+   * @default 'rgba(127,127,127,0.5)'
    */
   lineStroke: string;
 
@@ -55,6 +63,8 @@ export interface PieArcLabelProps {
 
   /**
    * y Padding of the label
+   *
+   * @default '.35em'
    */
   padding: string;
 
@@ -70,6 +80,8 @@ export interface PieArcLabelProps {
 
   /**
    * Height of the label
+   *
+   * @default 11
    */
   height?: number;
 }

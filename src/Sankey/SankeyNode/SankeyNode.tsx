@@ -37,16 +37,22 @@ export interface SankeyNodeProps extends SankeyNodeExtra {
 
   /**
    * Color of the node.
+   *
+   * @default DEFAULT_COLOR
    */
   color?: string;
 
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
+   *
+   * @default false
    */
   active: boolean;
 
   /**
    * Whether to animate the enter/update/exit.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -62,11 +68,15 @@ export interface SankeyNodeProps extends SankeyNodeExtra {
 
   /**
    * Whether the node is disabled. Set internally by `Sankey`.
+   *
+   * @default false
    */
   disabled: boolean;
 
   /**
    * Label element.
+   *
+   * @default `<SankeyLabel />`
    */
   label: ReactElement<SankeyLabelProps, typeof SankeyLabel>;
 
@@ -94,6 +104,8 @@ export interface SankeyNodeProps extends SankeyNodeExtra {
 
   /**
    * Tooltip element.
+   *
+   * @default `<Tooltip followCursor modifiers={[offset(5)]} />`
    */
   tooltip?: ReactElement<TooltipProps, typeof Tooltip> | null;
 

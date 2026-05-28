@@ -9,21 +9,84 @@ export interface ZoomPanChangeEvent {
 }
 
 export interface ChartZoomPanProps extends PropsWithChildren {
+  /**
+   * Data the chart is rendering. Set internally by the parent chart.
+   */
   data: ChartInternalDataShape[];
+
+  /**
+   * Current zoom domain on the axis being zoomed.
+   */
   domain?: [ChartDataTypes, ChartDataTypes];
+
+  /**
+   * Type of the axis being zoomed. Set internally by the parent chart.
+   */
   axisType: 'value' | 'time' | 'category' | 'duration';
+
+  /**
+   * Whether the axis is rounding domains. Set internally by the parent chart.
+   */
   roundDomains: boolean;
+
+  /**
+   * Height of the zoom-pan area. Set internally by the parent chart.
+   */
   height: number;
+
+  /**
+   * Width of the zoom-pan area. Set internally by the parent chart.
+   */
   width: number;
+
+  /**
+   * Current zoom scale factor.
+   */
   scale: number;
+
+  /**
+   * Current pan offset.
+   */
   offset: number;
+
+  /**
+   * Whether panning is enabled.
+   */
   pannable: boolean;
+
+  /**
+   * Whether zooming is enabled.
+   */
   zoomable: boolean;
+
+  /**
+   * Whether the gestures are disabled.
+   */
   disabled?: boolean;
+
+  /**
+   * Maximum allowed zoom scale.
+   */
   maxZoom: number;
+
+  /**
+   * Incremental step applied on zoom gestures.
+   */
   zoomStep: number;
+
+  /**
+   * Whether to ignore mouse wheel events for zoom.
+   */
   disableMouseWheel?: boolean;
+
+  /**
+   * Whether a modifier key is required to trigger zoom.
+   */
   requireZoomModifier?: boolean;
+
+  /**
+   * Fires when the user zooms or pans.
+   */
   onZoomPan?: (event: ZoomPanChangeEvent) => void;
 }
 

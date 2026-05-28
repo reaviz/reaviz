@@ -59,31 +59,43 @@ export interface BarSeriesProps {
 
   /**
    * Bar element.
+   *
+   * @default `<Bar />`
    */
   bar: BarElement | BarElement[];
 
   /**
    * Type of the chart.
+   *
+   * @default 'standard'
    */
   type: BarType;
 
   /**
    * Color scheme for the chart.
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated: boolean;
 
   /**
    * Amount of padding between each bar.
+   *
+   * @default 0.1
    */
   padding: number;
 
   /**
    * Amount of padding between each group.
+   *
+   * @default 16
    */
   groupPadding: number;
 
@@ -94,6 +106,8 @@ export interface BarSeriesProps {
 
   /**
    * Direction of the chart
+   *
+   * @default 'vertical'
    */
   layout: Direction;
 
@@ -114,6 +128,8 @@ export interface BarSeriesProps {
 
   /**
    * Tooltip for the chart area.
+   *
+   * @default `<TooltipArea tooltip={<ChartTooltip followCursor modifiers={[offset(5)]} />} />`
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea> | null;
 

@@ -11,6 +11,11 @@ import { BarSeries } from '@/BarChart';
 import { schemes } from '@/common/color';
 
 export interface BarSparklineChartProps extends BarChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartShallowDataShape[];
 }
 

@@ -2,9 +2,28 @@ import React, { FC } from 'react';
 import css from './MarkLine.module.css';
 
 export interface MarkLineProps {
+  /**
+   * Height of the chart. Set internally by the parent component.
+   */
   height: number;
+
+  /**
+   * X position of the mark line. Set internally by the parent component.
+   */
   pointX?: number;
+
+  /**
+   * Stroke color of the mark line.
+   *
+   * @default '#eee'
+   */
   strokeColor: string;
+
+  /**
+   * Stroke width of the mark line.
+   *
+   * @default 1
+   */
   strokeWidth: number;
 }
 

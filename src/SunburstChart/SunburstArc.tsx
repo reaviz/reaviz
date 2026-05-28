@@ -44,11 +44,15 @@ export interface SunburstArcProps {
 
   /**
    * Cursor for the element.
+   *
+   * @default 'pointer'
    */
   cursor?: string;
 
   /**
    * Tooltip element.
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 

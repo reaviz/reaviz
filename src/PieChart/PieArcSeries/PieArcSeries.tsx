@@ -25,6 +25,8 @@ export interface PieArcSeriesProps {
 
   /**
    * Animated set by the `PieArc` components.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -35,21 +37,29 @@ export interface PieArcSeriesProps {
 
   /**
    * Inner radius set by the parent component.
+   *
+   * @default 0
    */
   innerRadius: number;
 
   /**
    * Pad Angle between adjacent arcs, see https://github.com/d3/d3-shape#arc_padAngle
+   *
+   * @default 0
    */
   padAngle: number;
 
   /**
    * Pad Radius between adjacent arcs, see https://github.com/d3/d3-shape#arc_padRadius
+   *
+   * @default 0
    */
   padRadius: number;
 
   /**
    * Corner Radius of the arcs, see https://github.com/d3/d3-shape#arc_cornerRadius
+   *
+   * @default 0
    */
   cornerRadius: number;
 
@@ -60,6 +70,8 @@ export interface PieArcSeriesProps {
 
   /**
    * Width of the arc
+   *
+   * @default 0.25
    */
   arcWidth: number;
 
@@ -70,26 +82,36 @@ export interface PieArcSeriesProps {
 
   /**
    * Explode: OuterRadius will be adjusted by the data property
+   *
+   * @default false
    */
   explode: boolean;
 
   /**
    * Display all labels shows labels even if there is little space
+   *
+   * @default false
    */
   displayAllLabels: boolean;
 
   /**
    * Label component
+   *
+   * @default `<PieArcLabel />`
    */
   label?: ReactElement<PieArcLabelProps, typeof PieArcLabel> | null;
 
   /**
    * Arc Component
+   *
+   * @default `<PieArc />`
    */
   arc: ReactElement<PieArcProps, typeof PieArc>;
 
   /**
    * Color scheme
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 

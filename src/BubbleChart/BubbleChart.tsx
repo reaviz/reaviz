@@ -12,11 +12,15 @@ import { BubbleSeries, BubbleSeriesProps } from './BubbleSeries';
 export interface BubbleChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartShallowDataShape[];
 
   /**
    * The series component that renders the arc components.
+   *
+   * @default `<BubbleSeries />`
    */
   series?: ReactElement<BubbleSeriesProps, typeof BubbleSeries>;
 }

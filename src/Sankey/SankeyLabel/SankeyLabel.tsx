@@ -16,6 +16,8 @@ export interface SankeyLabelFormatProps {
 export interface SankeyLabelProps {
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
+   *
+   * @default false
    */
   active: boolean;
 
@@ -36,11 +38,15 @@ export interface SankeyLabelProps {
 
   /**
    * Fill color.
+   *
+   * @default '#fff'
    */
   fill: string;
 
   /**
    * Label position. Set internally by `Sankey`.
+   *
+   * @default 'inside'
    */
   position?: SankeyLabelPosition;
 
@@ -69,6 +75,8 @@ export interface SankeyLabelProps {
 
   /**
    * Whether to show the label or not.
+   *
+   * @default true
    */
   visible: boolean;
 
@@ -85,6 +93,8 @@ export interface SankeyLabelProps {
   /**
    * Specify the number of characters at which the text would be ellipsized.
    * Defaults to 'auto' based on available width and max cut-off at `LABEL_TRUNCATE_LENGTH=10`
+   *
+   * @default 'auto'
    */
   ellipsis?: number | 'none' | 'auto';
 }

@@ -20,6 +20,8 @@ export interface DiscreteLegendProps {
 
   /**
    * Orientation of the legend.
+   *
+   * @default 'vertical'
    */
   orientation?: 'horizontal' | 'vertical';
 

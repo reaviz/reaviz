@@ -25,11 +25,15 @@ export interface LinearGaugeSeriesProps extends Omit<BarSeriesProps, 'bar'> {
 
   /**
    * Bar element. Only applicable for single series.
+   *
+   * @default `<LinearGaugeBar />`
    */
   bar: ReactElement<LinearGaugeBarProps, typeof LinearGaugeBar>;
 
   /**
    * Outer bar element. Only applicable for single series.
+   *
+   * @default `<LinearGaugeOuterBar />`
    */
   outerBar: ReactElement<LinearGaugeOuterBarProps, typeof LinearGaugeOuterBar>;
 }

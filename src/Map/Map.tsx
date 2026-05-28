@@ -20,9 +20,18 @@ type MarkerElement = ReactElement<MapMarkerProps, typeof MapMarker>;
 export interface MapProps extends ChartProps {
   markers?: MarkerElement[];
   data: any;
+
+  /**
+   * Fill color for countries.
+   *
+   * @default 'rgba(255, 255, 255, 0.3)'
+   */
   fill?: string;
+
   /**
    * Determines how the map transforms spherical geometry to planar geometry
+   *
+   * @default 'mercator'
    */
   projection?: 'mercator' | 'natural-earth';
 }

@@ -70,11 +70,15 @@ export interface RadialAreaProps {
 
   /**
    * Gradient to apply to the area.
+   *
+   * @default `<RadialGradient />`
    */
   gradient: ReactElement<RadialGradientProps, typeof RadialGradient> | null;
 
   /**
    * Whether the curve should be closed. Set to true by deafult
+   *
+   * @default true
    */
   isClosedCurve: boolean;
 }

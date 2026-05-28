@@ -24,6 +24,8 @@ export interface VennDiagramData {
 export interface VennDiagramProps extends ChartProps {
   /**
    * Type of the chart.
+   *
+   * @default 'venn'
    */
   type?: 'venn' | 'euler' | 'starEuler';
 
@@ -34,6 +36,8 @@ export interface VennDiagramProps extends ChartProps {
 
   /**
    * The series component that renders the arc and label components.
+   *
+   * @default `<VennSeries />`
    */
   series?: ReactElement<VennSeriesProps, typeof VennSeries> | null;
 

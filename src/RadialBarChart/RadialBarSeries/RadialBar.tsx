@@ -55,6 +55,8 @@ export interface RadialBarProps {
 
   /**
    * Whether to use gradient or not.
+   *
+   * @default true
    */
   gradient: boolean;
 
@@ -85,11 +87,15 @@ export interface RadialBarProps {
 
   /**
    * Whether the bar is curved or not.
+   *
+   * @default false
    */
   curved: boolean;
 
   /**
    * Guide bar component.
+   *
+   * @default `<RadialGuideBar />`
    */
   guide: ReactElement<RadialGuideBarProps, typeof RadialGuideBar> | null;
 

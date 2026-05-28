@@ -32,11 +32,15 @@ export interface SankeyLinkProps extends SankeyLinkExtra {
 
   /**
    * Whether the element is active or not. Set internally by `Sankey`.
+   *
+   * @default false
    */
   active: boolean;
 
   /**
    * Whether to animate the enter/update/exit.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -52,11 +56,15 @@ export interface SankeyLinkProps extends SankeyLinkExtra {
 
   /**
    * Whether the node is disabled. Set internally by `Sankey`.
+   *
+   * @default false
    */
   disabled: boolean;
 
   /**
    * Whether to use gradient or not.
+   *
+   * @default true
    */
   gradient?: boolean;
 
@@ -72,11 +80,15 @@ export interface SankeyLinkProps extends SankeyLinkExtra {
 
   /**
    * Tooltip element.
+   *
+   * @default `<Tooltip followCursor modifiers={[offset(5)]} />`
    */
   tooltip?: ReactElement<TooltipProps, typeof Tooltip> | null;
 
   /**
    * Width of the link. Set internally by `Sankey`.
+   *
+   * @default 0
    */
   width: number;
 

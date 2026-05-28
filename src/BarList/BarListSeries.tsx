@@ -22,16 +22,22 @@ export interface BarListSeriesProps {
 
   /**
    * Color scheme for the chart.
+   *
+   * @default 'cybertron'
    */
   colorScheme?: ColorSchemeType;
 
   /**
    * The label position.
+   *
+   * @default 'top'
    */
   labelPosition?: BarListLabelPosition;
 
   /**
    * The value position.
+   *
+   * @default 'none'
    */
   valuePosition?: BarListLabelPosition;
 

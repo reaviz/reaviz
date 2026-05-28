@@ -6,8 +6,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "npm run build:js && npm run rewrite:stories && npm run build:docs",
-    "build:docs": "node scripts/docs.js",
+    "build": "npm run build:js && npm run rewrite:stories",
     "build:js": "vite build --mode library",
     "build-storybook": "storybook build",
     "rewrite:stories": "node scripts/stories.cjs",
@@ -32,7 +31,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.umd.cjs"
     },
-    "./docs.json": "./dist/docs.json",
     "./stories/*": "./dist/stories/*",
     "./blocks/*": "./dist/blocks/*"
   },

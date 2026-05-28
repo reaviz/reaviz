@@ -38,16 +38,22 @@ export interface RadialGaugeArcProps {
 
   /**
    * Color set by the `RadialGaugeSeries` components.
+   *
+   * @default '#353d44'
    */
   color: any;
 
   /**
    * Corner Radius of the arcs, see https://github.com/d3/d3-shape#arc_cornerRadius
+   *
+   * @default 0
    */
   cornerRadius?: number;
 
   /**
    * Pad Angle between adjacent arcs, see https://github.com/d3/d3-shape#arc_padAngle
+   *
+   * @default 0
    */
   padAngle?: number;
 
@@ -58,11 +64,15 @@ export interface RadialGaugeArcProps {
 
   /**
    * Animation set by the `RadialGaugeSeries` component.
+   *
+   * @default true
    */
   animated: boolean;
 
   /**
    * Disable the interactions.
+   *
+   * @default false
    */
   disabled: boolean;
 
@@ -78,6 +88,8 @@ export interface RadialGaugeArcProps {
 
   /**
    * Tooltip component.
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 

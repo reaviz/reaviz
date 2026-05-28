@@ -37,11 +37,15 @@ export interface RadialAreaSeriesProps {
 
   /**
    * The type of the chart.
+   *
+   * @default 'standard'
    */
   type?: RadialPointSeriesType;
 
   /**
    * Color scheme for the series.
+   *
+   * @default schemes.cybertron
    */
   colorScheme: ColorSchemeType;
 
@@ -72,11 +76,15 @@ export interface RadialAreaSeriesProps {
 
   /**
    * interpolation set internally by `RadialAreaChart`.
+   *
+   * @default 'smooth'
    */
   interpolation: RadialInterpolationTypes;
 
   /**
    * Whether to animate the enter/update/exit.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -92,16 +100,22 @@ export interface RadialAreaSeriesProps {
 
   /**
    * Area that is rendered.
+   *
+   * @default `<RadialArea />`
    */
   area: ReactElement<RadialAreaProps, typeof RadialArea> | null;
 
   /**
    * Line that is rendered.
+   *
+   * @default `<RadialLine />`
    */
   line: ReactElement<RadialLineProps, typeof RadialLine> | null;
 
   /**
    * Symbols used to show points.
+   *
+   * @default `<RadialPointSeries />`
    */
   symbols: ReactElement<
     RadialPointSeriesProps,
@@ -110,21 +124,29 @@ export interface RadialAreaSeriesProps {
 
   /**
    * Tooltip for the chart area.
+   *
+   * @default `<TooltipArea />`
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 
   /**
    * Whether the curve should be closed. Set to true by deafult
+   *
+   * @default true
    */
   isClosedCurve: boolean;
 

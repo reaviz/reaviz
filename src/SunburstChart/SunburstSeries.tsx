@@ -19,11 +19,15 @@ export interface SunburstSeriesProps {
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated?: boolean;
 
   /**
    * Color scheme for the chart.
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 
@@ -34,11 +38,15 @@ export interface SunburstSeriesProps {
 
   /**
    * The arc component to render.
+   *
+   * @default `<SunburstArc />`
    */
   arc?: ReactElement<SunburstArcProps, typeof SunburstArc>;
 
   /**
    * The arc label component to render.
+   *
+   * @default `<SunburstArcLabel />`
    */
   label?: ReactElement<SunburstArcLabelProps, typeof SunburstArcLabel>;
 }

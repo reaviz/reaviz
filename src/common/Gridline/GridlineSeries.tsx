@@ -50,6 +50,8 @@ export interface GridlineSeriesProps {
 
   /**
    * Gridline that is rendered.
+   *
+   * @default `<Gridline direction="all" />`
    */
   line: GridLineElement | null;
 

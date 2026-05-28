@@ -20,6 +20,8 @@ import { generateGlowStyles } from '@/common/Glow/utils';
 export interface VennArcProps {
   /**
    * Whether the shape is active or not.
+   *
+   * @default false
    */
   active?: boolean | null;
 
@@ -62,21 +64,29 @@ export interface VennArcProps {
 
   /**
    * Stroke on the arc.
+   *
+   * @default 3
    */
   strokeWidth?: number;
 
   /**
    * Initial style of arc.
+   *
+   * @default { opacity: 0.6 }
    */
   initialStyle?: any;
 
   /**
    * Active style of arc.
+   *
+   * @default { opacity: 0.8 }
    */
   activeStyle?: any;
 
   /**
    * Inactive style of arc.
+   *
+   * @default { opacity: 0.3 }
    */
   inactiveStyle?: any;
 
@@ -87,6 +97,8 @@ export interface VennArcProps {
 
   /**
    * Tooltip element.
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip?: ReactElement<ChartTooltipProps, typeof ChartTooltip> | null;
 
@@ -97,6 +109,8 @@ export interface VennArcProps {
 
   /**
    * Gradient shades for the arc.
+   *
+   * @default `<Gradient />`
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 

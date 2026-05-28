@@ -23,11 +23,15 @@ export interface FunnelAxisProps {
 
   /**
    * The funnel axis line.
+   *
+   * @default `<FunnelAxisLine />`
    */
   line?: ReactElement<FunnelAxisLineProps, typeof FunnelAxisLine> | null;
 
   /**
    * Label component for the axis.
+   *
+   * @default `<FunnelAxisLabel />`
    */
   label?: ReactElement<FunnelAxisLabelProps, typeof FunnelAxisLabel> | null;
 }

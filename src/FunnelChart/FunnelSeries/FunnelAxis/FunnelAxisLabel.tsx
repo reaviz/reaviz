@@ -16,21 +16,29 @@ export interface FunnelAxisLabelProps {
 
   /**
    * Color of the text.
+   *
+   * @default '#fff'
    */
   fill: string;
 
   /**
    * Font size of the text.
+   *
+   * @default 13
    */
   fontSize: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily: string;
 
   /**
    * Padding of the label.
+   *
+   * @default 10
    */
   padding?: number;
 
@@ -51,17 +59,22 @@ export interface FunnelAxisLabelProps {
 
   /**
    * Positioning of the label.
+   *
+   * @default 'middle'
    */
   position?: 'top' | 'middle' | 'bottom';
 
   /**
    * Whether to show the value of the data.
-   * Defaults to `true`.
+   *
+   * @default true
    */
   showValue?: boolean;
 
   /**
    * Visibility of the label.
+   *
+   * @default 'auto'
    */
   labelVisibility?: 'auto' | 'always';
 }

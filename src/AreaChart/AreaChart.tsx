@@ -51,26 +51,36 @@ import { mergeDefaultProps } from '@/common';
 export interface AreaChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartDataShape[];
 
   /**
    * The series component that renders the area/line/circles components.
+   *
+   * @default `<AreaSeries />`
    */
   series: ReactElement<AreaSeriesProps, typeof AreaSeries>;
 
   /**
    * The linear axis component for the Y Axis of the chart.
+   *
+   * @default `<LinearYAxis type="value" />`
    */
   yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The linear axis component for the X Axis of the chart.
+   *
+   * @default `<LinearXAxis type="time" />`
    */
   xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The chart's background gridlines component.
+   *
+   * @default `<GridlineSeries />`
    */
   gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 

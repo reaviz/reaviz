@@ -18,6 +18,8 @@ export interface RadialLineProps {
 
   /**
    * Whether to animate the enter/update/exit. Set internally by `RadialAreaSeries`.
+   *
+   * @default true
    */
   animated: boolean;
 
@@ -48,6 +50,8 @@ export interface RadialLineProps {
 
   /**
    * Stroke width of the line.
+   *
+   * @default 2
    */
   strokeWidth: number;
 
@@ -63,6 +67,8 @@ export interface RadialLineProps {
 
   /**
    * Whether the curve should be closed. Set to true by deafult
+   *
+   * @default true
    */
   isClosedCurve: boolean;
 }

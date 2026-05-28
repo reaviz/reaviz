@@ -9,11 +9,15 @@ export interface GuideBarProps extends SVGRect {
 
   /**
    * Fill for the guide bar element.
+   *
+   * @default '#eee'
    */
   fill?: string;
 
   /**
    * Opacity for the guide bar element.
+   *
+   * @default 0.15
    */
   opacity?: number;
 }

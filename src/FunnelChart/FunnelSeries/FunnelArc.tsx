@@ -33,6 +33,8 @@ export interface FunnelArcProps {
 
   /**
    * Opacity of the funnel arc.
+   *
+   * @default 1
    */
   opacity?: number;
 
@@ -43,6 +45,8 @@ export interface FunnelArcProps {
 
   /**
    * The chart funnel style to use.
+   *
+   * @default 'default'
    */
   variant?: 'default' | 'layered';
 
@@ -58,16 +62,22 @@ export interface FunnelArcProps {
 
   /**
    * Interpolation for the area. Set internally by `AreaSeries`.
+   *
+   * @default 'smooth'
    */
   interpolation: InterpolationTypes;
 
   /**
    * Color scheme for the chart.
+   *
+   * @default schemes.cybertron[0]
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Gradient to apply to the area.
+   *
+   * @default `<Gradient direction="horizontal" stops={[<GradientStop offset="0%" stopOpacity={1} />, <GradientStop offset="80%" stopOpacity={0.5} />]} />`
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 

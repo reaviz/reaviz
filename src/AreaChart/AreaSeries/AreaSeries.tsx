@@ -73,46 +73,64 @@ export interface AreaSeriesProps {
 
   /**
    * Whether to animate the enter/update/exit.
+   *
+   * @default true
    */
   animated: boolean;
 
   /**
    * Type of area chart to render.
+   *
+   * @default 'standard'
    */
   type: AreaChartTypes;
 
   /**
    * Interpolation type for the area/line.
+   *
+   * @default 'linear'
    */
   interpolation: InterpolationTypes;
 
   /**
    * Tooltip for the chart area.
+   *
+   * @default `<TooltipArea />`
    */
   tooltip: ReactElement<TooltipAreaProps, typeof TooltipArea>;
 
   /**
    * Markline for the chart.
+   *
+   * @default `<MarkLine />`
    */
   markLine: ReactElement<MarkLineProps, typeof MarkLine> | null;
 
   /**
    * Symbols used to show points.
+   *
+   * @default `<PointSeries />`
    */
   symbols: ReactElement<PointSeriesProps, typeof PointSeries> | null;
 
   /**
    * Line that is rendered.
+   *
+   * @default `<Line />`
    */
   line: ReactElement<LineProps, typeof Line> | null;
 
   /**
    * Area that is rendered.
+   *
+   * @default `<Area />`
    */
   area: ReactElement<AreaProps, typeof Area> | null;
 
   /**
    * Color scheme for the series.
+   *
+   * @default 'cybertron'
    */
   colorScheme: ColorSchemeType;
 

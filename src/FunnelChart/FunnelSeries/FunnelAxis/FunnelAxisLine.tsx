@@ -3,11 +3,15 @@ import React, { FC } from 'react';
 export interface FunnelAxisLineProps {
   /**
    * Color of the axis lines.
+   *
+   * @default '#333'
    */
   strokeColor: string;
 
   /**
    * Width of the axis lines.
+   *
+   * @default 2
    */
   strokeWidth: number;
 

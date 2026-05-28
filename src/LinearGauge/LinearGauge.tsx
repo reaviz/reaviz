@@ -23,16 +23,22 @@ export interface LinearGaugeProps extends ChartProps {
 
   /**
    * The series component that renders the bar components.
+   *
+   * @default `<LinearGaugeSeries />`
    */
   series: ReactElement<LinearGaugeSeriesProps, typeof LinearGaugeSeries>;
 
   /**
    * Min value to scale on. Only applicable for single-series.
+   *
+   * @default 0
    */
   minValue: number;
 
   /**
    * Max value to scale on. Only applicable for single-series.
+   *
+   * @default 100
    */
   maxValue: number;
 }

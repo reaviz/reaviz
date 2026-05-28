@@ -5,7 +5,14 @@ import { Move } from '@/common/Gestures/Move';
 import css from './BrushHandle.module.css';
 
 export interface BrushHandleProps {
+  /**
+   * Height of the handle. Set internally by the parent component.
+   */
   height: number;
+
+  /**
+   * Fires when the handle is dragged. `deltaX` is the change in x position.
+   */
   onHandleDrag: (deltaX: number) => void;
 }
 

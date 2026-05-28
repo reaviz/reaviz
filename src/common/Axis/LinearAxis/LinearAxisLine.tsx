@@ -6,9 +6,26 @@ import { mergeDefaultProps } from '@/common/utils';
 export interface LinearAxisLineProps {
   height: number;
   width: number;
+
+  /**
+   * Stroke color of the axis line.
+   *
+   * @default '#8F979F'
+   */
   strokeColor?: string;
+
+  /**
+   * Stroke width of the axis line.
+   *
+   * @default 1
+   */
   strokeWidth: number;
+
+  /**
+   * Optional gradient to apply to the axis line stroke.
+   */
   strokeGradient: ReactElement<GradientProps, typeof Gradient> | null;
+
   scale: any;
   orientation: 'horizontal' | 'vertical';
   className?: string;

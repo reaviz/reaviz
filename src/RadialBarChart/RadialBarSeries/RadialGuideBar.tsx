@@ -4,7 +4,19 @@ import { motion } from 'motion/react';
 export interface RadialGuideBarProps {
   active: boolean;
   path: string;
+
+  /**
+   * Fill for the guide bar element.
+   *
+   * @default '#eee'
+   */
   fill?: string;
+
+  /**
+   * Opacity for the guide bar element.
+   *
+   * @default 0.2
+   */
   opacity?: number;
 }
 

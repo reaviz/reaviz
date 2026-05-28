@@ -12,6 +12,11 @@ import { GradientStop, Gradient } from '@/common/Gradient';
 import { Stripes } from '@/common/Mask';
 
 export interface AreaSparklineChartProps extends AreaChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartShallowDataShape[];
 }
 

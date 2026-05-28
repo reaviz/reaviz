@@ -15,17 +15,23 @@ export interface VennLabelProps {
   id?: string;
 
   /**
-   * Show all labels or just the large ones. Default false.
+   * Show all labels or just the large ones.
+   *
+   * @default false
    */
   showAll?: boolean;
 
   /**
    * The label type to show.
+   *
+   * @default 'key'
    */
   labelType: 'key' | 'value';
 
   /**
    * Should wrap text or not.
+   *
+   * @default true
    */
   wrap?: boolean;
 
@@ -36,11 +42,15 @@ export interface VennLabelProps {
 
   /**
    * Font size of the text.
+   *
+   * @default 11
    */
   fontSize?: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily?: string;
 
@@ -51,6 +61,8 @@ export interface VennLabelProps {
 
   /**
    * Whether the chart is animated or not.
+   *
+   * @default true
    */
   animated?: boolean;
 

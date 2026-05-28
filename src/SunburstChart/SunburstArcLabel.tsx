@@ -27,11 +27,15 @@ export interface SunburstArcLabelProps {
 
   /**
    * Font size of the text.
+   *
+   * @default 14
    */
   fontSize?: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily?: string;
 

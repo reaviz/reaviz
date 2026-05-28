@@ -48,26 +48,36 @@ import { mergeDefaultProps } from '@/common';
 export interface BarChartProps extends ChartProps {
   /**
    * Data the chart will receive to render.
+   *
+   * @default []
    */
   data: ChartDataShape[];
 
   /**
    * The series component that renders the bar components.
+   *
+   * @default `<BarSeries />`
    */
   series: ReactElement<BarSeriesProps, typeof BarSeries>;
 
   /**
    * The linear axis component for the Y Axis of the chart.
+   *
+   * @default `<LinearYAxis type="value" />`
    */
   yAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The linear axis component for the X Axis of the chart.
+   *
+   * @default `<LinearXAxis type="category" tickSeries={<LinearXAxisTickSeries tickSize={20} />} />`
    */
   xAxis: ReactElement<LinearAxisProps, typeof LinearAxis>;
 
   /**
    * The chart's background gridlines component.
+   *
+   * @default `<GridlineSeries />`
    */
   gridlines: ReactElement<GridlineSeriesProps, typeof GridlineSeries> | null;
 

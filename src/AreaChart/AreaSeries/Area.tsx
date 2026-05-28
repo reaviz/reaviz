@@ -29,6 +29,8 @@ export interface AreaProps extends PropFunctionTypes {
 
   /**
    * Interpolation for the area. Set internally by `AreaSeries`.
+   *
+   * @default 'linear'
    */
   interpolation: InterpolationTypes;
 
@@ -69,6 +71,8 @@ export interface AreaProps extends PropFunctionTypes {
 
   /**
    * Gradient to apply to the area.
+   *
+   * @default `<Gradient />`
    */
   gradient: ReactElement<GradientProps, typeof Gradient> | null;
 

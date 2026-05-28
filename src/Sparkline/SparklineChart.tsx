@@ -11,6 +11,11 @@ import {
 } from '@/common/Axis/LinearAxis';
 
 export interface SparklineChartProps extends LineChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartShallowDataShape[];
 }
 

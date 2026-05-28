@@ -72,11 +72,15 @@ export interface LineProps extends PropFunctionTypes {
 
   /**
    * Stroke width of the line.
+   *
+   * @default 3
    */
   strokeWidth: number;
 
   /**
    * Show the stroke if there is no value.
+   *
+   * @default true
    */
   showZeroStroke: boolean;
 

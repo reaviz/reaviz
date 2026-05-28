@@ -8,6 +8,8 @@ import { LinearValueMarker, LinearValueMarkerProps } from '@/common';
 export interface ScatterSeriesProps {
   /**
    * Point that is rendered.
+   *
+   * @default `<ScatterPoint />`
    */
   point: ReactElement<ScatterPointProps, typeof ScatterPoint>;
 

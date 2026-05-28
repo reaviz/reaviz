@@ -6,6 +6,8 @@ import { tooltipTheme } from './TooltipTheme';
 export interface ChartTooltipProps extends TooltipProps {
   /**
    * Content for the tooltip.
+   *
+   * @default `<TooltipTemplate />`
    */
   content: any;
 

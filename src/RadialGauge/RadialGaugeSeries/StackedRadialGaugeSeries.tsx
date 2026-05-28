@@ -54,16 +54,22 @@ export interface StackedRadialGaugeSeriesProps {
 
   /**
    * Color scheme to apply.
+   *
+   * @default ['#00ECB1']
    */
   colorScheme: ColorSchemeType;
 
   /**
    * Arc component.
+   *
+   * @default `<RadialGaugeArc animated />`
    */
   innerArc: ReactElement<RadialGaugeArcProps, typeof RadialGaugeArc>;
 
   /**
    * Stacked Arc component.
+   *
+   * @default `<RadialGaugeStackedArc animated />`
    */
   stackedInnerArc: ReactElement<
     RadialGaugeStackedArcProps,
@@ -72,11 +78,15 @@ export interface StackedRadialGaugeSeriesProps {
 
   /**
    * Outer arc component. This is the 'fill' element.
+   *
+   * @default `<RadialGaugeArc disabled animated={false} />`
    */
   outerArc: ReactElement<RadialGaugeArcProps, typeof RadialGaugeArc> | null;
 
   /**
    * Label component.
+   *
+   * @default `<StackedRadialGaugeValueLabel />`
    */
   label: ReactElement<
     StackedRadialGaugeValueLabelProps,
@@ -93,11 +103,15 @@ export interface StackedRadialGaugeSeriesProps {
 
   /**
    * A factor from 0 to 1 determining how much of the Gauge should be filled with arcs
+   *
+   * @default 0.2
    */
   fillFactor: number;
 
   /**
    * Padding between the stacked arcs, following d3 bandwidth innerPadding
+   *
+   * @default 0.15
    */
   arcPadding: number;
 }

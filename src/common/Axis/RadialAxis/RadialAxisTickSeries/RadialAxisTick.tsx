@@ -28,6 +28,8 @@ export interface RadialAxisTickProps {
 
   /**
    * Padding between the tick and the label.
+   *
+   * @default 0
    */
   padding: number;
 
@@ -43,11 +45,15 @@ export interface RadialAxisTickProps {
 
   /**
    * Line element to render.
+   *
+   * @default `<RadialAxisTickLine />`
    */
   line: ReactElement<RadialAxisTickLineProps, typeof RadialAxisTickLine> | null;
 
   /**
    * Label element to render.
+   *
+   * @default `<RadialAxisTickLabel />`
    */
   label: ReactElement<
     RadialAxisTickLabelProps,

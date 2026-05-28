@@ -1,11 +1,38 @@
 import React, { FC } from 'react';
 
 export interface LinearValueMarkerProps {
+  /**
+   * Color of the marker line.
+   */
   color: string;
+
+  /**
+   * Value to render the marker at.
+   */
   value: any;
+
+  /**
+   * CSS class to apply.
+   */
   className?: string;
+
+  /**
+   * Stroke width of the marker line.
+   *
+   * @default 1
+   */
   thickness?: number;
+
+  /**
+   * Length of the marker line. Set internally by the parent component.
+   */
   size?: number;
+
+  /**
+   * Direction the marker is drawn in.
+   *
+   * @default 'horizontal'
+   */
   direction?: 'horizontal' | 'vertical';
 }
 export const LinearValueMarker: FC<LinearValueMarkerProps> = ({

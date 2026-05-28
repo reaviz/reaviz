@@ -13,16 +13,22 @@ export interface MeterProps {
 
   /**
    * The minimum value of the meter.
+   *
+   * @default 0
    */
   min?: number;
 
   /**
    * The maximum value of the meter.
+   *
+   * @default 100
    */
   max?: number;
 
   /**
    * The number of columns to display.
+   *
+   * @default 10
    */
   columns?: number;
 
@@ -33,6 +39,8 @@ export interface MeterProps {
 
   /**
    * The gap between columns.
+   *
+   * @default 15
    */
   gap?: number;
 
@@ -43,6 +51,8 @@ export interface MeterProps {
 
   /**
    * The column to render.
+   *
+   * @default `<MeterColumn />`
    */
   column: ReactElement<MeterColumnProps, typeof MeterColumn> | null;
 }

@@ -76,11 +76,15 @@ export interface TooltipAreaProps {
 
   /**
    * Whether the area is radial or not.
+   *
+   * @default false
    */
   isRadial?: boolean;
 
   /**
    * Whether the area is continous or not (e.g. line and area charts are continous, bar charts are not).
+   *
+   * @default true
    */
   isContinous?: boolean;
 
@@ -96,11 +100,15 @@ export interface TooltipAreaProps {
 
   /**
    * Tooltip element.
+   *
+   * @default `<ChartTooltip />`
    */
   tooltip: ReactElement<ChartTooltipProps, typeof ChartTooltip>;
 
   /**
    * Whether to inverse the data or not.
+   *
+   * @default true
    */
   inverse: boolean;
 
@@ -121,11 +129,15 @@ export interface TooltipAreaProps {
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 }

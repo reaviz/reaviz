@@ -43,6 +43,8 @@ export interface BarLabelProps {
 
   /**
    * Position of the label.
+   *
+   * @default 'top'
    */
   position: 'top' | 'center' | 'bottom';
 
@@ -53,6 +55,8 @@ export interface BarLabelProps {
 
   /**
    * Color of the text.
+   *
+   * @default '#000'
    */
   fill: string;
 
@@ -63,6 +67,8 @@ export interface BarLabelProps {
 
   /**
    * Layout of bar chart to render. Set internally by `BarSeries`.
+   *
+   * @default 'vertical'
    */
   layout: Direction;
 
@@ -78,16 +84,22 @@ export interface BarLabelProps {
 
   /**
    * Font size of the text.
+   *
+   * @default 13
    */
   fontSize: number;
 
   /**
    * Font family of the text.
+   *
+   * @default 'sans-serif'
    */
   fontFamily: string;
 
   /**
    * Padding of the label.
+   *
+   * @default 5
    */
   padding: number;
 

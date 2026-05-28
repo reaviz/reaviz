@@ -12,6 +12,11 @@ import {
 } from './RadarChartSeries';
 
 export interface RadarChartProps extends RadialAreaChartProps {
+  /**
+   * Data the chart will receive to render.
+   *
+   * @default []
+   */
   data: ChartNestedDataShape[];
 }
 

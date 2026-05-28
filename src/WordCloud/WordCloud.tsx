@@ -15,36 +15,50 @@ export interface WordCloudProps extends ChartProps {
   /**
    * Data to render in the word cloud.
    * The 'key' represents the word and 'data' represents its frequency/weight.
+   *
+   * @default []
    */
   data: ChartShallowDataShape[];
 
   /**
    * Font size range [min, max].
+   *
+   * @default [12, 50]
    */
   fontSizeRange?: [number, number];
 
   /**
    * Font family to use.
+   *
+   * @default 'Arial'
    */
   fontFamily?: string;
 
   /**
    * Padding between words.
+   *
+   * @default 3
    */
   padding?: number;
 
   /**
    * Rotation angles for words.
+   *
+   * @default [-30, 30]
    */
   rotationAngles?: [number, number];
 
   /**
    * Number of possible rotations.
+   *
+   * @default 2
    */
   rotations?: number;
 
   /**
    * Custom color scheme for words.
+   *
+   * @default schemes.cybertron
    */
   colorScheme?: string[];
 

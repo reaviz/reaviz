@@ -31,21 +31,105 @@ export interface ZoomPanEvent {
 }
 
 export interface ZoomPanProps extends PropsWithChildren {
+  /**
+   * Height of the area.
+   *
+   * @default 0
+   */
   height: number;
+
+  /**
+   * Width of the area.
+   *
+   * @default 0
+   */
   width: number;
+
+  /**
+   * Current zoom scale factor.
+   *
+   * @default 1
+   */
   scale: number;
+
+  /**
+   * Current x translation.
+   *
+   * @default 0
+   */
   x: number;
+
+  /**
+   * Current y translation.
+   *
+   * @default 0
+   */
   y: number;
+
+  /**
+   * Whether panning is enabled.
+   *
+   * @default true
+   */
   pannable: boolean;
+
+  /**
+   * Whether zooming is enabled.
+   *
+   * @default true
+   */
   zoomable: boolean;
+
+  /**
+   * Whether the gestures are disabled.
+   */
   disabled?: boolean;
+
+  /**
+   * Maximum allowed zoom scale.
+   *
+   * @default 10
+   */
   maxZoom: number;
+
+  /**
+   * Minimum allowed zoom scale.
+   *
+   * @default 0
+   */
   minZoom: number;
+
+  /**
+   * Incremental step applied on zoom gestures.
+   *
+   * @default 0.1
+   */
   zoomStep: number;
+
+  /**
+   * Whether panning is constrained to the chart bounds.
+   *
+   * @default true
+   */
   constrain: boolean;
+
+  /**
+   * Whether panning works anywhere on the page.
+   *
+   * @default true
+   */
   globalPanning: boolean;
+
+  /**
+   * Whether to ignore mouse wheel events for zoom.
+   */
   disableMouseWheel?: boolean;
+
+  /**
+   * Whether a modifier key is required to trigger zoom.
+   */
   requireZoomModifier?: boolean;
+
   onZoomPan: (event: ZoomPanEvent) => void;
   onZoom: (event: ZoomEvent) => void;
   onZoomEnd: () => void;

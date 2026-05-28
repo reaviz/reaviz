@@ -16,6 +16,8 @@ export interface RadialAxisTickSeriesProps {
 
   /**
    * Number of ticks to render.
+   *
+   * @default 12
    */
   count?: number;
 
@@ -36,6 +38,8 @@ export interface RadialAxisTickSeriesProps {
 
   /**
    * Type of the axis.
+   *
+   * @default 'time'
    */
   type: 'value' | 'category' | 'time' | 'duration';
 
@@ -46,6 +50,8 @@ export interface RadialAxisTickSeriesProps {
 
   /**
    * Tick element to render.
+   *
+   * @default `<RadialAxisTick />`
    */
   tick:
     | ((
@@ -55,11 +61,15 @@ export interface RadialAxisTickSeriesProps {
 
   /**
    * Start angle for the first value.
+   *
+   * @default 0
    */
   startAngle?: number;
 
   /**
    * End angle for the last value.
+   *
+   * @default 2 * Math.PI
    */
   endAngle?: number;
 }

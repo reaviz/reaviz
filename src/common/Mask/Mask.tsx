@@ -1,7 +1,14 @@
 import React, { FC } from 'react';
 
 export interface MaskProps {
+  /**
+   * Unique id for the mask. Set internally by the parent component.
+   */
   id?: string;
+
+  /**
+   * Fill applied to the mask rectangle.
+   */
   fill?: string;
 }
 
