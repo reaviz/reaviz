@@ -36,7 +36,7 @@ export default {
   }
 };
 
-export const _Simple = () => (
+export const Simple = () => (
   <div style={{ width: '465px', textAlign: 'center' }}>
     <h2 style={{ color: 'white', margin: 0 }}>MIRTE Attack</h2>
     <LinearGauge
