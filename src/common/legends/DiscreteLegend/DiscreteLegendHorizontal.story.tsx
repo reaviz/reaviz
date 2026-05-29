@@ -6,7 +6,7 @@ export default {
   title: 'Utils/Legend/Discrete/Horizontal'
 };
 
-export const _Simple = () => (
+export const Simple = () => (
   <DiscreteLegend
     orientation="horizontal"
     entries={[

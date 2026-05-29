@@ -32,7 +32,7 @@ export default {
   }
 };
 
-export const _Simple = () => (
+export const Simple = () => (
   <LineChart
     id="simple"
     width={550}
