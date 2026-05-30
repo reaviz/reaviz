@@ -1,11 +1,13 @@
 import React, {
   FC,
   Fragment,
+  KeyboardEvent,
   MouseEvent,
   ReactElement,
   useMemo,
   useState,
   useRef,
+  useCallback,
   ReactNode
 } from 'react';
 import { flip, offset } from '@floating-ui/dom';
@@ -175,6 +177,35 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
     });
   };
 
+  const onFocusInternal = useCallback(() => {
+    setActive(true);
+    onMouseEnter({
+      value: data,
+      nativeEvent: null
+    });
+  }, [data, onMouseEnter]);
+
+  const onBlurInternal = useCallback(() => {
+    setActive(false);
+    onMouseLeave({
+      value: data,
+      nativeEvent: null
+    });
+  }, [data, onMouseLeave]);
+
+  const onKeyDownInternal = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        onClick({
+          value: data,
+          nativeEvent: event as any
+        });
+      }
+    },
+    [data, onClick]
+  );
+
   const tooltipData = useMemo(
     () => ({
       y: data.value,
@@ -238,6 +269,9 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             transition={transition}
             onPointerOver={pointerOver}
             onPointerOut={pointerOut}
+            onFocus={onFocusInternal}
+            onBlur={onBlurInternal}
+            onKeyDown={onKeyDownInternal}
             onClick={onMouseClick}
             tabIndex={0}
             aria-label={ariaLabelData}
@@ -268,6 +302,9 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             transition={transition}
             onPointerOver={pointerOver}
             onPointerOut={pointerOut}
+            onFocus={onFocusInternal}
+            onBlur={onBlurInternal}
+            onKeyDown={onKeyDownInternal}
             onClick={onMouseClick}
             tabIndex={0}
             aria-label={ariaLabelData}

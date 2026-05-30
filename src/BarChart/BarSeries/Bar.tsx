@@ -489,6 +489,47 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
     [data, onMouseLeave, tooltip]
   );
 
+  const onFocusInternal = useCallback(
+    (event) => {
+      if (tooltip) {
+        setInternalActive(true);
+      }
+
+      onMouseEnter?.({
+        value: data,
+        nativeEvent: event
+      });
+    },
+    [data, onMouseEnter, tooltip]
+  );
+
+  const onBlurInternal = useCallback(
+    (event) => {
+      if (tooltip) {
+        setInternalActive(false);
+      }
+
+      onMouseLeave?.({
+        value: data,
+        nativeEvent: event
+      });
+    },
+    [data, onMouseLeave, tooltip]
+  );
+
+  const onKeyDownInternal = useCallback(
+    (event: React.KeyboardEvent) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        onClick?.({
+          value: data,
+          nativeEvent: event as any
+        });
+      }
+    },
+    [data, onClick]
+  );
+
   const onMouseClick = useCallback(
     (event) => {
       onClick?.({
@@ -625,6 +666,9 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
             transition={transition}
             onMouseEnter={onMouseEnterInternal}
             onMouseLeave={onMouseLeaveInternal}
+            onFocus={onFocusInternal}
+            onBlur={onBlurInternal}
+            onKeyDown={onKeyDownInternal}
             onClick={onMouseClick}
             onMouseMove={onMouseMove}
             tabIndex={0}
@@ -647,6 +691,9 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
       onMouseClick,
       onMouseEnterInternal,
       onMouseLeaveInternal,
+      onFocusInternal,
+      onBlurInternal,
+      onKeyDownInternal,
       onMouseMove,
       rx,
       ry,

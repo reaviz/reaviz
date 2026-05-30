@@ -233,6 +233,20 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
           setTooltipVisible(false);
           onMouseLeave(data!);
         }}
+        onFocus={() => {
+          setTooltipVisible(true);
+          onMouseEnter(data!);
+        }}
+        onBlur={() => {
+          setTooltipVisible(false);
+          onMouseLeave(data!);
+        }}
+        onKeyDown={(event: React.KeyboardEvent) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            onClick(data!);
+          }
+        }}
         onClick={() => onClick(data!)}
         tabIndex={0}
         aria-label={ariaLabelData}

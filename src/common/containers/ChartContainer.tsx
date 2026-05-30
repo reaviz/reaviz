@@ -57,6 +57,16 @@ export interface ChartProps {
    * Center chart on Y Axis only. Used mainly internally.
    */
   centerY?: boolean;
+
+  /**
+   * Accessible label for the chart SVG element.
+   */
+  'aria-label'?: string;
+
+  /**
+   * ID of an element that labels the chart SVG element.
+   */
+  'aria-labelledby'?: string;
 }
 
 export interface ChartContainerProps extends ChartProps {
@@ -90,6 +100,8 @@ export const ChartContainer: FC<ChartContainerProps> = ({
   xAxisVisible,
   yAxisVisible,
   id,
+  'aria-label': ariaLabel,
+  'aria-labelledby': ariaLabelledBy,
   ...rest
 }) => {
   const curId = useId(id);
@@ -190,6 +202,9 @@ export const ChartContainer: FC<ChartContainerProps> = ({
             className={classNames(css.svg, className)}
             style={style}
             tabIndex={0}
+            role="img"
+            aria-label={ariaLabel}
+            aria-labelledby={ariaLabelledBy}
           >
             <g transform={`translate(${translateX}, ${translateY})`}>
               {children(childProps)}
