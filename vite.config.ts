@@ -3,7 +3,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgrPlugin from 'vite-plugin-svgr';
-import tsconfigPaths from 'vite-tsconfig-paths';
 import checker from 'vite-plugin-checker';
 import { resolve } from 'path';
 import external from 'rollup-plugin-peer-deps-external';
@@ -17,7 +16,6 @@ export default defineConfig(({ mode }) =>
     ? {
       plugins: [
         svgrPlugin(),
-        tsconfigPaths(),
         cssInjectedByJsPlugin(),
         react(),
         dts({
@@ -50,6 +48,7 @@ export default defineConfig(({ mode }) =>
         environment: 'jsdom'
       },
       resolve: {
+        tsconfigPaths: true,
         alias: {
           '@': path.resolve(__dirname, './src'),
         },
@@ -62,8 +61,8 @@ export default defineConfig(({ mode }) =>
         copyPublicDir: false,
         lib: {
           entry: resolve('src', 'index.ts'),
-          name: 'reaviz',
-          fileName: 'index'
+          fileName: 'index',
+          formats: ['es']
         },
         rollupOptions: {
           plugins: [
@@ -77,7 +76,6 @@ export default defineConfig(({ mode }) =>
     : {
       plugins: [
         svgrPlugin(),
-        tsconfigPaths(),
         react(),
         checker({
           typescript: true
@@ -86,6 +84,9 @@ export default defineConfig(({ mode }) =>
       test: {
         globals: true,
         environment: 'jsdom'
+      },
+      resolve: {
+        tsconfigPaths: true
       }
     }
 );

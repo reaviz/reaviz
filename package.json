@@ -22,14 +22,13 @@
   },
   "type": "module",
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.umd.cjs",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
   "source": "./src/index.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
+      "import": "./dist/index.js"
     },
     "./stories/*": "./dist/stories/*",
     "./blocks/*": "./dist/blocks/*"
@@ -166,7 +165,6 @@
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-static-copy": "^4.1.0",
     "vite-plugin-svgr": "^5.2.0",
-    "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.1.8",
     "world-atlas": "^2.0.2"
   },
