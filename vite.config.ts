@@ -32,11 +32,13 @@ export default defineConfig(({ mode }) =>
           targets: [
             {
               src: 'src/**/*.story.tsx',
-              dest: 'stories/'
+              dest: 'stories/',
+              rename: { stripBase: true }
             },
             {
               src: 'blocks/*.story.tsx',
-              dest: 'blocks/'
+              dest: 'blocks/',
+              rename: { stripBase: true }
             }
           ]
         })
@@ -52,6 +54,7 @@ export default defineConfig(({ mode }) =>
       },
       build: {
         minify: false,
+        cssMinify: false,
         sourcemap: true,
         copyPublicDir: false,
         lib: {
