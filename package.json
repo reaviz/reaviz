@@ -3,7 +3,7 @@
   "version": "16.1.4",
   "description": "Data Visualization using React",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.12.0"
   },
   "scripts": {
     "build": "npm run build:js && npm run rewrite:stories",
