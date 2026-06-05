@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) =>
         react(),
         dts({
           insertTypesEntry: true,
+          compilerOptions: { rootDir: 'src' },
           include: ['src']
         }),
         checker({
