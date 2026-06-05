@@ -33,6 +33,8 @@ export default defineConfig(({ mode }) =>
             {
               src: 'src/**/*.story.tsx',
               dest: 'stories/',
+              // static-copy v4 preserves dir structure by default; keep the
+              // published flat layout that ./stories/* exports and stories.cjs rely on
               rename: { stripBase: true }
             },
             {
@@ -54,6 +56,7 @@ export default defineConfig(({ mode }) =>
       },
       build: {
         minify: false,
+        // not covered by minify:false — vite 8 would otherwise minify CSS via Lightning CSS
         cssMinify: false,
         sourcemap: true,
         copyPublicDir: false,

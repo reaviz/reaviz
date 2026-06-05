@@ -14,8 +14,6 @@
     "resolveJsonModule": true,
     "rootDirs": ["src", "docs"],
     "strict": false,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "allowJs": true,
