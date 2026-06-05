@@ -37,7 +37,7 @@ export const Move: FC<Partial<MoveProps>> = ({
   const deltaY = useRef(0);
   const prevXPosition = useRef(0);
   const prevYPosition = useRef(0);
-  const rqf = useRef<number>();
+  const rqf = useRef<number>(undefined);
 
   useEffect(() => {
     return () => {

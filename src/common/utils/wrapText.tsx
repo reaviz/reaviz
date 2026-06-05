@@ -30,7 +30,7 @@ export function wrapText({
   fontFamily,
   fontSize,
   visibility = 'auto'
-}: WrapTextInputs): ReactElement | ReactElement[] | null {
+}: WrapTextInputs): ReactElement<any> | ReactElement<any>[] | null {
   size = size || calculateDimensions(key, fontFamily, fontSize);
   const words = key.toString().split(/\s+/);
 

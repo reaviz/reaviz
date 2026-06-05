@@ -127,8 +127,8 @@
     "@types/d3-scale": "^4.0.9",
     "@types/d3-shape": "^3.1.8",
     "@types/d3-time": "^3.0.4",
-    "@types/react": "^18.3.28",
-    "@types/react-dom": "^18.3.7",
+    "@types/react": "^19.2.16",
+    "@types/react-dom": "^19.2.3",
     "@types/topojson-client": "^3.1.5",
     "@typescript-eslint/eslint-plugin": "^8.60.1",
     "@typescript-eslint/parser": "^8.60.1",
@@ -151,9 +151,9 @@
     "postcss-nested": "^7.0.2",
     "postcss-preset-env": "^11.3.0",
     "prettier": "^3.8.3",
-    "react": "^18.3.1",
+    "react": "^19.2.7",
     "react-docgen-typescript": "^2.4.0",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.2.7",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "storybook": "10.4.2",
     "tailwindcss": "^4.1.13",
@@ -171,6 +171,9 @@
     "world-atlas": "^2.0.2"
   },
   "overrides": {
-    "uuid": "^11.1.1"
+    "uuid": "^11.1.1",
+    "reaviz-data-utils": {
+      "react": "$react"
+    }
   }
 }
