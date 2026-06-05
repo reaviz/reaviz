@@ -33,8 +33,6 @@
     "./stories/*": "./dist/stories/*",
     "./blocks/*": "./dist/blocks/*"
   },
-  "browser": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reaviz/reaviz.git"
