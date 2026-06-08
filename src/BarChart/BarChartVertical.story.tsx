@@ -118,7 +118,7 @@ export const Labels = () => (
     width={350}
     height={250}
     data={categoryData}
-    series={<BarSeries bar={<Bar label={<BarLabel position={'top'} />} />} />}
+    series={<BarSeries bar={<Bar label={<BarLabel position="top" fill="gray" />} />} />}
   />
 );
 
