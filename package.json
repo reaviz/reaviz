@@ -100,7 +100,7 @@
     "motion": "^12.40.0",
     "reablocks": "^10.2.0",
     "react-fast-compare": "^3.2.2",
-    "reaviz-data-utils": "^1.0.0",
+    "reaviz-data-utils": "^1.1.0",
     "safe-identifier": "^0.4.2",
     "transformation-matrix": "^3.1.0"
   },
@@ -167,9 +167,6 @@
     "world-atlas": "^2.0.2"
   },
   "overrides": {
-    "uuid": "^11.1.1",
-    "reaviz-data-utils": {
-      "react": "$react"
-    }
+    "uuid": "^11.1.1"
   }
 }
