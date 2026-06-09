@@ -1,3 +1,8 @@
+# 16.2.0 - 6/9/26
+- [BREAKING] Upgrade all dependencies — Vite 8, TypeScript 6, React 19 (dev), Storybook 10.4, raise Node floor to >=22.12; drop UMD output (ESM-only build) #328
+- [chore] Update dependencies including reablocks 10.2.0 and motion #327
+- [chore] Refactor story exports to remove leading underscores for consistency #326
+
 # 16.1.4 - 5/28/26
 - [chore] tsdoc updates
 
