@@ -50,7 +50,7 @@ export const Brush: FC<Partial<BrushProps>> = (props) => {
   });
   const { start, end } = range;
 
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
 
   const ensurePositionInBounds = useCallback(
     (newStart?: number, newEnd?: number) => {

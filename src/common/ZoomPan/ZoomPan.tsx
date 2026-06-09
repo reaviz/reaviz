@@ -164,8 +164,8 @@ export const ZoomPan: FC<Partial<ZoomPanProps>> = ({
   onZoom = () => undefined,
   onZoomEnd = () => undefined
 }) => {
-  const zoomRef = useRef<Zoom>();
-  const panRef = useRef<Pan>();
+  const zoomRef = useRef<Zoom | null>(null);
+  const panRef = useRef<Pan | null>(null);
   const [isZooming, setIsZooming] = useState<boolean>();
   const [isPanning, setIsPanning] = useState<boolean>();
   const [matrix, setMatrix] = useState<any>(identity());

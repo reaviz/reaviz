@@ -183,7 +183,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
     const [offsetY, setOffsetY] = useState<any>();
     const [prevX, setPrevX] = useState<number>();
     const [prevY, setPrevY] = useState<number>();
-    const ref = useRef<SVGRectElement | SVGPathElement | any>();
+    const ref = useRef<SVGRectElement | SVGPathElement | any>(null);
     const fullCircleRef = useRef<SVGRectElement | SVGPathElement | any>(null);
     const isFullCircle = Math.abs(endAngle - startAngle) >= 2 * Math.PI;
 

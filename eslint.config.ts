@@ -63,7 +63,13 @@ export default defineConfig([
       'linebreak-style': ['error', 'unix'],
       quotes: ['error', 'single'],
       semi: ['error', 'always'],
-      'react-hooks/exhaustive-deps': ['warn']
+      'react-hooks/exhaustive-deps': ['warn'],
+      // React Compiler readiness rules (new in eslint-plugin-react-hooks v7) —
+      // disabled until the codebase adopts React Compiler
+      'react-hooks/preserve-manual-memoization': [0],
+      'react-hooks/immutability': [0],
+      'react-hooks/set-state-in-effect': [0],
+      'react-hooks/refs': [0]
     }
   },
   {

@@ -13,8 +13,7 @@
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
     "rootDirs": ["src", "docs"],
-    "noImplicitAny": false,
-    "noImplicitThis": false,
+    "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "allowJs": true,
@@ -24,7 +23,6 @@
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "ignoreDeprecations": "5.0",
     "paths": {
       "@/*": ["./src/*"],
     },
