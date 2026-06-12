@@ -13,7 +13,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
       <g transform="translate(479, 269)">
         <g tabindex="0"
            aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Lateral_Movement-arc"
                 fill="#2d60e8"
@@ -44,7 +44,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="XML: No value"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Lateral_Movement_XML-arc"
                 fill="#004bce"
@@ -59,7 +59,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="JSON: 120"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Lateral_Movement_JSON-arc"
                 fill="#004bce"
@@ -90,7 +90,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="HTTPS: 150"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Lateral_Movement_HTTPS-arc"
                 fill="#004bce"
@@ -121,7 +121,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="SSH: 112"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Lateral_Movement_SSH-arc"
                 fill="#004bce"
@@ -152,7 +152,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Discovery-arc"
                 fill="#28c8c3"
@@ -183,7 +183,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="XML: 100"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Discovery_XML-arc"
                 fill="#00afab"
@@ -214,7 +214,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="JSON: 34"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Discovery_JSON-arc"
                 fill="#00afab"
@@ -245,7 +245,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="HTTPS: No value"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Discovery_HTTPS-arc"
                 fill="#00afab"
@@ -260,7 +260,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="SSH: 111"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Discovery_SSH-arc"
                 fill="#00afab"
@@ -291,7 +291,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Exploitation-arc"
                 fill="#27dcbc"
@@ -322,7 +322,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="XML: 70"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Exploitation_XML-arc"
                 fill="#00c2a4"
@@ -353,7 +353,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="JSON: 1"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Exploitation_JSON-arc"
                 fill="#00c2a4"
@@ -384,7 +384,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="HTTPS: 110"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Exploitation_HTTPS-arc"
                 fill="#00c2a4"
@@ -415,7 +415,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="SSH: 115"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Exploitation_SSH-arc"
                 fill="#00c2a4"
@@ -446,7 +446,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Threat_Intelligence-arc"
                 fill="#26efb5"
@@ -477,7 +477,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="XML: 1"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Threat_Intelligence_XML-arc"
                 fill="#00d59d"
@@ -508,7 +508,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="JSON: 120"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Threat_Intelligence_JSON-arc"
                 fill="#00d59d"
@@ -539,7 +539,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="HTTPS: 200"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Threat_Intelligence_HTTPS-arc"
                 fill="#00d59d"
@@ -570,7 +570,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="SSH: 160"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Threat_Intelligence_SSH-arc"
                 fill="#00d59d"
@@ -601,7 +601,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Breach-arc"
                 fill="#2d60e8"
@@ -632,7 +632,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="XML: 5"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Breach_XML-arc"
                 fill="#004bce"
@@ -663,7 +663,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="JSON: 10"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Breach_JSON-arc"
                 fill="#004bce"
@@ -694,7 +694,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="HTTPS: 152"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Breach_HTTPS-arc"
                 fill="#004bce"
@@ -725,7 +725,7 @@ exports[`Charts/Sunburst Chart Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="SSH: 20"
-           role="graphics-document"
+           role="img"
         >
           <path id="ref-1-series-undefined_Breach_SSH-arc"
                 fill="#004bce"
@@ -774,7 +774,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
     <g transform="translate(225, 225)">
       <g tabindex="0"
          aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Lateral_Movement-arc"
               fill="url(#gradient-gradients-series-undefined_Lateral_Movement-arc)"
@@ -823,7 +823,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: No value"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Lateral_Movement_XML-arc"
               fill="url(#gradient-gradients-series-undefined_Lateral_Movement_XML-arc)"
@@ -856,7 +856,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 120"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Lateral_Movement_JSON-arc"
               fill="url(#gradient-gradients-series-undefined_Lateral_Movement_JSON-arc)"
@@ -905,7 +905,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 150"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Lateral_Movement_HTTPS-arc"
               fill="url(#gradient-gradients-series-undefined_Lateral_Movement_HTTPS-arc)"
@@ -954,7 +954,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 112"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Lateral_Movement_SSH-arc"
               fill="url(#gradient-gradients-series-undefined_Lateral_Movement_SSH-arc)"
@@ -1003,7 +1003,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Discovery-arc"
               fill="url(#gradient-gradients-series-undefined_Discovery-arc)"
@@ -1052,7 +1052,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 100"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Discovery_XML-arc"
               fill="url(#gradient-gradients-series-undefined_Discovery_XML-arc)"
@@ -1101,7 +1101,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 34"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Discovery_JSON-arc"
               fill="url(#gradient-gradients-series-undefined_Discovery_JSON-arc)"
@@ -1150,7 +1150,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: No value"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Discovery_HTTPS-arc"
               fill="url(#gradient-gradients-series-undefined_Discovery_HTTPS-arc)"
@@ -1183,7 +1183,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 111"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Discovery_SSH-arc"
               fill="url(#gradient-gradients-series-undefined_Discovery_SSH-arc)"
@@ -1232,7 +1232,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Exploitation-arc"
               fill="url(#gradient-gradients-series-undefined_Exploitation-arc)"
@@ -1281,7 +1281,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 70"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Exploitation_XML-arc"
               fill="url(#gradient-gradients-series-undefined_Exploitation_XML-arc)"
@@ -1330,7 +1330,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 1"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Exploitation_JSON-arc"
               fill="url(#gradient-gradients-series-undefined_Exploitation_JSON-arc)"
@@ -1379,7 +1379,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 110"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Exploitation_HTTPS-arc"
               fill="url(#gradient-gradients-series-undefined_Exploitation_HTTPS-arc)"
@@ -1428,7 +1428,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 115"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Exploitation_SSH-arc"
               fill="url(#gradient-gradients-series-undefined_Exploitation_SSH-arc)"
@@ -1477,7 +1477,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Threat_Intelligence-arc"
               fill="url(#gradient-gradients-series-undefined_Threat_Intelligence-arc)"
@@ -1526,7 +1526,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 1"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Threat_Intelligence_XML-arc"
               fill="url(#gradient-gradients-series-undefined_Threat_Intelligence_XML-arc)"
@@ -1575,7 +1575,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 120"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Threat_Intelligence_JSON-arc"
               fill="url(#gradient-gradients-series-undefined_Threat_Intelligence_JSON-arc)"
@@ -1624,7 +1624,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 200"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Threat_Intelligence_HTTPS-arc"
               fill="url(#gradient-gradients-series-undefined_Threat_Intelligence_HTTPS-arc)"
@@ -1673,7 +1673,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 160"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Threat_Intelligence_SSH-arc"
               fill="url(#gradient-gradients-series-undefined_Threat_Intelligence_SSH-arc)"
@@ -1722,7 +1722,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Breach-arc"
               fill="url(#gradient-gradients-series-undefined_Breach-arc)"
@@ -1771,7 +1771,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 5"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Breach_XML-arc"
               fill="url(#gradient-gradients-series-undefined_Breach_XML-arc)"
@@ -1820,7 +1820,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 10"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Breach_JSON-arc"
               fill="url(#gradient-gradients-series-undefined_Breach_JSON-arc)"
@@ -1869,7 +1869,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 152"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Breach_HTTPS-arc"
               fill="url(#gradient-gradients-series-undefined_Breach_HTTPS-arc)"
@@ -1918,7 +1918,7 @@ exports[`Charts/Sunburst Chart Gradients smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 20"
-         role="graphics-document"
+         role="img"
       >
         <path id="gradients-series-undefined_Breach_SSH-arc"
               fill="url(#gradient-gradients-series-undefined_Breach_SSH-arc)"
@@ -1984,7 +1984,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
     <g transform="translate(225, 225)">
       <g tabindex="0"
          aria-label="Network: [object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Network-arc"
               fill="#2d60e8"
@@ -2015,7 +2015,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Traffic: [object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Network_Traffic-arc"
               fill="#004bce"
@@ -2046,7 +2046,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTP: 100"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Network_Traffic_HTTP-arc"
               fill="#0037b5"
@@ -2077,7 +2077,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 200"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Network_Traffic_HTTPS-arc"
               fill="#0037b5"
@@ -2108,7 +2108,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="FileTransfer: [object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_FileTransfer-arc"
               fill="#1d51d6"
@@ -2139,7 +2139,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Protocol: [object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_FileTransfer_Protocol-arc"
               fill="#003dbc"
@@ -2170,7 +2170,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="FTP: 50"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_FileTransfer_Protocol_FTP-arc"
               fill="#002aa3"
@@ -2201,7 +2201,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SFTP: 70"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_FileTransfer_Protocol_SFTP-arc"
               fill="#002aa3"
@@ -2232,7 +2232,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Database: [object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Database-arc"
               fill="#0c42c3"
@@ -2263,7 +2263,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Queries: [object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Database_Queries-arc"
               fill="#002eaa"
@@ -2294,7 +2294,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SELECT: 150"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Database_Queries_SELECT-arc"
               fill="#001c91"
@@ -2325,7 +2325,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="INSERT: 20"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Database_Queries_INSERT-arc"
               fill="#001c91"
@@ -2356,7 +2356,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Authentication: [object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Authentication-arc"
               fill="#2d60e8"
@@ -2387,7 +2387,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Methods: [object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Authentication_Methods-arc"
               fill="#004bce"
@@ -2418,7 +2418,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="OAuth: 60"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Authentication_Methods_OAuth-arc"
               fill="#0037b5"
@@ -2449,7 +2449,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SAML: 25"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Authentication_Methods_SAML-arc"
               fill="#0037b5"
@@ -2480,7 +2480,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Storage: [object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Storage-arc"
               fill="#1d51d6"
@@ -2511,7 +2511,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Types: [object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Storage_Types-arc"
               fill="#003dbc"
@@ -2542,7 +2542,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSD: 300"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Storage_Types_SSD-arc"
               fill="#002aa3"
@@ -2573,7 +2573,7 @@ exports[`Charts/Sunburst Chart MultiLevel smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HDD: 100"
-         role="graphics-document"
+         role="img"
       >
         <path id="multi-level-series-undefined_Storage_Types_HDD-arc"
               fill="#002aa3"
@@ -2621,7 +2621,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
     <g transform="translate(225, 225)">
       <g tabindex="0"
          aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Lateral_Movement-arc"
               fill="#2d60e8"
@@ -2652,7 +2652,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: No value"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Lateral_Movement_XML-arc"
               fill="#004bce"
@@ -2667,7 +2667,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 120"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Lateral_Movement_JSON-arc"
               fill="#004bce"
@@ -2698,7 +2698,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 150"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Lateral_Movement_HTTPS-arc"
               fill="#004bce"
@@ -2729,7 +2729,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 112"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Lateral_Movement_SSH-arc"
               fill="#004bce"
@@ -2760,7 +2760,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Discovery-arc"
               fill="#28c8c3"
@@ -2791,7 +2791,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 100"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Discovery_XML-arc"
               fill="#00afab"
@@ -2822,7 +2822,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 34"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Discovery_JSON-arc"
               fill="#00afab"
@@ -2853,7 +2853,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: No value"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Discovery_HTTPS-arc"
               fill="#00afab"
@@ -2868,7 +2868,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 111"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Discovery_SSH-arc"
               fill="#00afab"
@@ -2899,7 +2899,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Exploitation-arc"
               fill="#27dcbc"
@@ -2930,7 +2930,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 70"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Exploitation_XML-arc"
               fill="#00c2a4"
@@ -2961,7 +2961,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 1"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Exploitation_JSON-arc"
               fill="#00c2a4"
@@ -2992,7 +2992,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 110"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Exploitation_HTTPS-arc"
               fill="#00c2a4"
@@ -3023,7 +3023,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 115"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Exploitation_SSH-arc"
               fill="#00c2a4"
@@ -3054,7 +3054,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Threat_Intelligence-arc"
               fill="#26efb5"
@@ -3085,7 +3085,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 1"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Threat_Intelligence_XML-arc"
               fill="#00d59d"
@@ -3116,7 +3116,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 120"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Threat_Intelligence_JSON-arc"
               fill="#00d59d"
@@ -3147,7 +3147,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 200"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Threat_Intelligence_HTTPS-arc"
               fill="#00d59d"
@@ -3178,7 +3178,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 160"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Threat_Intelligence_SSH-arc"
               fill="#00d59d"
@@ -3209,7 +3209,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Breach-arc"
               fill="#2d60e8"
@@ -3240,7 +3240,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 5"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Breach_XML-arc"
               fill="#004bce"
@@ -3271,7 +3271,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 10"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Breach_JSON-arc"
               fill="#004bce"
@@ -3302,7 +3302,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 152"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Breach_HTTPS-arc"
               fill="#004bce"
@@ -3333,7 +3333,7 @@ exports[`Charts/Sunburst Chart NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 20"
-         role="graphics-document"
+         role="img"
       >
         <path id="no-animation-series-undefined_Breach_SSH-arc"
               fill="#004bce"
@@ -3381,7 +3381,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
     <g transform="translate(225, 225)">
       <g tabindex="0"
          aria-label="Lateral Movement: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Lateral_Movement-arc"
               fill="#2d60e8"
@@ -3412,7 +3412,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: No value"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Lateral_Movement_XML-arc"
               fill="#004bce"
@@ -3427,7 +3427,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 120"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Lateral_Movement_JSON-arc"
               fill="#004bce"
@@ -3458,7 +3458,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 150"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Lateral_Movement_HTTPS-arc"
               fill="#004bce"
@@ -3489,7 +3489,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 112"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Lateral_Movement_SSH-arc"
               fill="#004bce"
@@ -3520,7 +3520,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Discovery: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Discovery-arc"
               fill="#28c8c3"
@@ -3551,7 +3551,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 100"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Discovery_XML-arc"
               fill="#00afab"
@@ -3582,7 +3582,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 34"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Discovery_JSON-arc"
               fill="#00afab"
@@ -3613,7 +3613,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: No value"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Discovery_HTTPS-arc"
               fill="#00afab"
@@ -3628,7 +3628,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 111"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Discovery_SSH-arc"
               fill="#00afab"
@@ -3659,7 +3659,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Exploitation: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Exploitation-arc"
               fill="#27dcbc"
@@ -3690,7 +3690,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 70"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Exploitation_XML-arc"
               fill="#00c2a4"
@@ -3721,7 +3721,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 1"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Exploitation_JSON-arc"
               fill="#00c2a4"
@@ -3752,7 +3752,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 110"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Exploitation_HTTPS-arc"
               fill="#00c2a4"
@@ -3783,7 +3783,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 115"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Exploitation_SSH-arc"
               fill="#00c2a4"
@@ -3814,7 +3814,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Threat Intelligence: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Threat_Intelligence-arc"
               fill="#26efb5"
@@ -3845,7 +3845,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 1"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Threat_Intelligence_XML-arc"
               fill="#00d59d"
@@ -3876,7 +3876,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 120"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Threat_Intelligence_JSON-arc"
               fill="#00d59d"
@@ -3907,7 +3907,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 200"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Threat_Intelligence_HTTPS-arc"
               fill="#00d59d"
@@ -3938,7 +3938,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 160"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Threat_Intelligence_SSH-arc"
               fill="#00d59d"
@@ -3969,7 +3969,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Breach: [object Object],[object Object],[object Object],[object Object]"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Breach-arc"
               fill="#2d60e8"
@@ -4000,7 +4000,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="XML: 5"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Breach_XML-arc"
               fill="#004bce"
@@ -4031,7 +4031,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="JSON: 10"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Breach_JSON-arc"
               fill="#004bce"
@@ -4062,7 +4062,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="HTTPS: 152"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Breach_HTTPS-arc"
               fill="#004bce"
@@ -4093,7 +4093,7 @@ exports[`Charts/Sunburst Chart Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="SSH: 20"
-         role="graphics-document"
+         role="img"
       >
         <path id="simple-series-undefined_Breach_SSH-arc"
               fill="#004bce"

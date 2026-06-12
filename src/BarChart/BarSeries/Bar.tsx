@@ -629,7 +629,7 @@ export const Bar: FC<Partial<BarProps>> = (props) => {
             onMouseMove={onMouseMove}
             tabIndex={0}
             aria-label={ariaLabelData}
-            role="graphics-document"
+            role="img"
           />
         </g>
       );

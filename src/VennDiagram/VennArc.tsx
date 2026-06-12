@@ -213,7 +213,7 @@ export const VennArc: FC<Partial<VennArcProps>> = ({
       }}
       tabIndex={0}
       aria-label={ariaLabelData}
-      role="graphics-document"
+      role="img"
     >
       <motion.path
         ref={arcRef}

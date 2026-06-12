@@ -283,7 +283,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 100"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
@@ -296,7 +296,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 34"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(72.154px) translateY(0px); transform-origin: 0px 0px;"
@@ -309,7 +309,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 22"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(58.041px); transform-origin: 0px 0px;"
@@ -322,7 +322,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 111"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-130.372px) translateY(0px); transform-origin: 0px 0px;"
@@ -335,7 +335,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 70"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-103.531px); transform-origin: 0px 0px;"
@@ -348,7 +348,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 130"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(141.09px) translateY(0px); transform-origin: 0px 0px;"
@@ -361,7 +361,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 110"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(129.783px); transform-origin: 0px 0px;"
@@ -374,7 +374,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 115"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-132.7px) translateY(0px); transform-origin: 0px 0px;"
@@ -387,7 +387,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 100"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
@@ -400,7 +400,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 120"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
@@ -413,7 +413,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 150"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(151.554px); transform-origin: 0px 0px;"
@@ -426,7 +426,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 112"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-130.958px) translateY(0px); transform-origin: 0px 0px;"
@@ -439,7 +439,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 130"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-141.09px); transform-origin: 0px 0px;"
@@ -452,7 +452,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 120"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
@@ -465,7 +465,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 200"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(175px); transform-origin: 0px 0px;"
@@ -478,7 +478,7 @@ exports[`Charts/Radar Chart Filled smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 160"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-156.525px) translateY(0px); transform-origin: 0px 0px;"
@@ -686,7 +686,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 100"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
@@ -699,7 +699,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 34"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(72.154px) translateY(0px); transform-origin: 0px 0px;"
@@ -712,7 +712,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 22"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(58.041px); transform-origin: 0px 0px;"
@@ -725,7 +725,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Discovery: 111"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-130.372px) translateY(0px); transform-origin: 0px 0px;"
@@ -738,7 +738,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 70"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-103.531px); transform-origin: 0px 0px;"
@@ -751,7 +751,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 130"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(141.09px) translateY(0px); transform-origin: 0px 0px;"
@@ -764,7 +764,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 110"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(129.783px); transform-origin: 0px 0px;"
@@ -777,7 +777,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Exploitation: 115"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-132.7px) translateY(0px); transform-origin: 0px 0px;"
@@ -790,7 +790,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 100"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-123.744px); transform-origin: 0px 0px;"
@@ -803,7 +803,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 120"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
@@ -816,7 +816,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 150"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(151.554px); transform-origin: 0px 0px;"
@@ -829,7 +829,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Lateral Movement: 112"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-130.958px) translateY(0px); transform-origin: 0px 0px;"
@@ -842,7 +842,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 130"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(-141.09px); transform-origin: 0px 0px;"
@@ -855,7 +855,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 120"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(135.554px) translateY(0px); transform-origin: 0px 0px;"
@@ -868,7 +868,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 200"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(0px) translateY(175px); transform-origin: 0px 0px;"
@@ -881,7 +881,7 @@ exports[`Charts/Radar Chart Simple smoke-test 1`] = `
           <g class
              tabindex="0"
              aria-label="Threat Intelligence: 160"
-             role="graphics-document"
+             role="img"
              opacity="1"
              transform-origin="0px 0px"
              style="transform: translateX(-156.525px) translateY(0px); transform-origin: 0px 0px;"

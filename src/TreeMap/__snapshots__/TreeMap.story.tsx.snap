@@ -18,7 +18,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 1: 3"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="92px"
               height="20px"
@@ -39,7 +39,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 2: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="92px"
               height="94px"
@@ -67,7 +67,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 3: 11"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="92px"
               height="86px"
@@ -95,7 +95,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 4: 13"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="92px"
               height="102px"
@@ -123,7 +123,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 5: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(41, 181, 202, 1)"
               width="92px"
               height="94px"
@@ -151,7 +151,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 6: 8"
-              role="graphics-document"
+              role="img"
               fill="rgba(40, 200, 195, 1)"
               width="92px"
               height="61px"
@@ -179,7 +179,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 7: 10"
-              role="graphics-document"
+              role="img"
               fill="rgba(39, 220, 188, 1)"
               width="92px"
               height="78px"
@@ -207,7 +207,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 8: 17"
-              role="graphics-document"
+              role="img"
               fill="rgba(38, 239, 181, 1)"
               width="363px"
               height="32px"
@@ -235,7 +235,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 9: 2"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="38px"
               height="32px"
@@ -256,7 +256,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 10: 4"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="82px"
               height="32px"
@@ -284,7 +284,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 11: 0"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="0px"
               height="65px"
@@ -305,7 +305,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 12: 15"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="165px"
               height="65px"
@@ -333,7 +333,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 13: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(41, 181, 202, 1)"
               width="130px"
               height="65px"
@@ -361,7 +361,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 14: 5"
-              role="graphics-document"
+              role="img"
               fill="rgba(40, 200, 195, 1)"
               width="52px"
               height="65px"
@@ -382,7 +382,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 15: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(39, 220, 188, 1)"
               width="131px"
               height="65px"
@@ -410,7 +410,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 16: 1"
-              role="graphics-document"
+              role="img"
               fill="rgba(38, 239, 181, 1)"
               width="52px"
               height="9px"
@@ -431,7 +431,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 17: 7"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="52px"
               height="93px"
@@ -452,7 +452,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 18: 7"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="52px"
               height="94px"
@@ -473,7 +473,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 19: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="52px"
               height="163px"
@@ -494,7 +494,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 20: 1"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="52px"
               height="9px"
@@ -515,7 +515,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 21: 5"
-              role="graphics-document"
+              role="img"
               fill="rgba(41, 181, 202, 1)"
               width="52px"
               height="65px"
@@ -536,7 +536,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 22: 0"
-              role="graphics-document"
+              role="img"
               fill="rgba(40, 200, 195, 1)"
               width="0px"
               height="0px"
@@ -577,7 +577,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 23: 1"
-              role="graphics-document"
+              role="img"
               fill="rgba(39, 220, 188, 1)"
               width="436px"
               height="0px"
@@ -605,7 +605,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 24: 0"
-              role="graphics-document"
+              role="img"
               fill="rgba(38, 239, 181, 1)"
               width="0px"
               height="111px"
@@ -646,7 +646,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 25: 11"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="70px"
               height="111px"
@@ -674,7 +674,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 26: 17"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="113px"
               height="111px"
@@ -702,7 +702,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 27: 17"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="112px"
               height="111px"
@@ -730,7 +730,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 28: 11"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="71px"
               height="111px"
@@ -758,7 +758,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 29: 8"
-              role="graphics-document"
+              role="img"
               fill="rgba(41, 181, 202, 1)"
               width="50px"
               height="111px"
@@ -779,7 +779,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 30: 7"
-              role="graphics-document"
+              role="img"
               fill="rgba(40, 200, 195, 1)"
               width="85px"
               height="57px"
@@ -807,7 +807,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 31: 13"
-              role="graphics-document"
+              role="img"
               fill="rgba(39, 220, 188, 1)"
               width="85px"
               height="110px"
@@ -835,7 +835,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 32: 7"
-              role="graphics-document"
+              role="img"
               fill="rgba(38, 239, 181, 1)"
               width="85px"
               height="57px"
@@ -863,7 +863,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 33: 3"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="85px"
               height="21px"
@@ -884,7 +884,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 34: 9"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="85px"
               height="75px"
@@ -912,7 +912,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 35: 16"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="119px"
               height="97px"
@@ -940,7 +940,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 36: 11"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="119px"
               height="65px"
@@ -968,7 +968,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 37: 8"
-              role="graphics-document"
+              role="img"
               fill="rgba(41, 181, 202, 1)"
               width="119px"
               height="47px"
@@ -996,7 +996,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 38: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(40, 200, 195, 1)"
               width="119px"
               height="71px"
@@ -1024,7 +1024,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 39: 7"
-              role="graphics-document"
+              role="img"
               fill="rgba(39, 220, 188, 1)"
               width="119px"
               height="40px"
@@ -1052,7 +1052,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 40: 4"
-              role="graphics-document"
+              role="img"
               fill="rgba(38, 239, 181, 1)"
               width="41px"
               height="65px"
@@ -1073,7 +1073,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 41: 5"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="51px"
               height="65px"
@@ -1094,7 +1094,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 42: 11"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="120px"
               height="65px"
@@ -1122,7 +1122,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 43: 17"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="133px"
               height="94px"
@@ -1150,7 +1150,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 44: 11"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="84px"
               height="94px"
@@ -1178,7 +1178,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 45: 1"
-              role="graphics-document"
+              role="img"
               fill="rgba(41, 181, 202, 1)"
               width="45px"
               height="11px"
@@ -1199,7 +1199,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 46: 10"
-              role="graphics-document"
+              role="img"
               fill="rgba(40, 200, 195, 1)"
               width="45px"
               height="155px"
@@ -1220,7 +1220,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 47: 10"
-              role="graphics-document"
+              role="img"
               fill="rgba(39, 220, 188, 1)"
               width="95px"
               height="75px"
@@ -1248,7 +1248,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 48: 12"
-              role="graphics-document"
+              role="img"
               fill="rgba(38, 239, 181, 1)"
               width="95px"
               height="91px"
@@ -1276,7 +1276,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 49: 3"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="72px"
               height="26px"
@@ -1297,7 +1297,7 @@ exports[`Charts/TreeMap _20Items smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Item 50: 14"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="72px"
               height="140px"
@@ -1342,7 +1342,7 @@ exports[`Charts/TreeMap LabelPosition smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="AWS: 100"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="229px"
               height="250px"
@@ -1370,7 +1370,7 @@ exports[`Charts/TreeMap LabelPosition smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="SendGrid: 45"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="229px"
               height="110px"
@@ -1398,7 +1398,7 @@ exports[`Charts/TreeMap LabelPosition smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Okta: 75"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="156px"
               height="273px"
@@ -1426,7 +1426,7 @@ exports[`Charts/TreeMap LabelPosition smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Twillo: 25"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="156px"
               height="87px"
@@ -1471,7 +1471,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Short text: 100"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="229px"
               height="250px"
@@ -1499,7 +1499,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Another short text: 45"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="229px"
               height="110px"
@@ -1527,7 +1527,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="This is a test of very long text that should not fit in a rectangle's width.: 75"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="156px"
               height="273px"
@@ -1576,7 +1576,7 @@ exports[`Charts/TreeMap LongText smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.: 25"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="156px"
               height="87px"
@@ -1614,7 +1614,7 @@ exports[`Charts/TreeMap NoAnimation smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="AWS: 100"
-              role="graphics-document"
+              role="img"
               fill="#2d60e8"
               width="229px"
               height="250px"
@@ -1642,7 +1642,7 @@ exports[`Charts/TreeMap NoAnimation smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="SendGrid: 45"
-              role="graphics-document"
+              role="img"
               fill="#2c77e0"
               width="229px"
               height="110px"
@@ -1670,7 +1670,7 @@ exports[`Charts/TreeMap NoAnimation smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Okta: 75"
-              role="graphics-document"
+              role="img"
               fill="#2b8dd8"
               width="156px"
               height="273px"
@@ -1698,7 +1698,7 @@ exports[`Charts/TreeMap NoAnimation smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Twillo: 25"
-              role="graphics-document"
+              role="img"
               fill="#2aa1d1"
               width="156px"
               height="87px"
@@ -1743,7 +1743,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Short text: 100"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="229px"
               height="250px"
@@ -1771,7 +1771,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Another short text: 45"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="229px"
               height="110px"
@@ -1799,7 +1799,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="This is a test of very long text that should not fit in a rectangle's width.: 75"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="156px"
               height="273px"
@@ -1821,7 +1821,7 @@ exports[`Charts/TreeMap NoWrap smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="This is another test of even longer text that should not fit in a rectangle at all because the text height should be more than the rectangle's height.: 25"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="156px"
               height="87px"
@@ -1859,7 +1859,7 @@ exports[`Charts/TreeMap Simple smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="AWS: 100"
-              role="graphics-document"
+              role="img"
               fill="rgba(45, 96, 232, 1)"
               width="258px"
               height="285px"
@@ -1887,7 +1887,7 @@ exports[`Charts/TreeMap Simple smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="SendGrid: 45"
-              role="graphics-document"
+              role="img"
               fill="rgba(44, 119, 224, 1)"
               width="258px"
               height="125px"
@@ -1915,7 +1915,7 @@ exports[`Charts/TreeMap Simple smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Okta: 75"
-              role="graphics-document"
+              role="img"
               fill="rgba(43, 141, 216, 1)"
               width="177px"
               height="310px"
@@ -1943,7 +1943,7 @@ exports[`Charts/TreeMap Simple smoke-test 1`] = `
       >
         <rect tabindex="0"
               aria-label="Twillo: 25"
-              role="graphics-document"
+              role="img"
               fill="rgba(42, 161, 209, 1)"
               width="177px"
               height="100px"

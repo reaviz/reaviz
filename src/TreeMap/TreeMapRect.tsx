@@ -132,7 +132,7 @@ export const TreeMapRect: FC<Partial<TreeMapRectProps>> = ({
         onPointerOut={pointerOut}
         tabIndex={0}
         aria-label={ariaLabelData}
-        role="graphics-document"
+        role="img"
       />
       {tooltip && !tooltip.props.disabled && (
         <CloneElement<ChartTooltipProps>
