@@ -146,7 +146,7 @@ export const Bubble: FC<Partial<BubbleProps>> = ({
         onPointerOut={pointerOut}
         tabIndex={0}
         aria-label={ariaLabelData}
-        role="graphics-document"
+        role="img"
       />
       {mask && (
         <Fragment>

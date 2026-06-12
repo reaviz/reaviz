@@ -212,7 +212,7 @@ export const SankeyNode: FC<Partial<SankeyNodeProps>> = ({
         ref={rectRef}
         tabIndex={0}
         aria-label={ariaLabelData}
-        role="graphics-document"
+        role="img"
       >
         <motion.rect
           key={`sankey-node-${x0}-${x1}-${y0}-${y1}-${index}`}

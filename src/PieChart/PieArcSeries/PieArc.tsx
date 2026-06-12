@@ -156,7 +156,7 @@ export const PieArc: FC<PieArcProps> = ({
       ref={arcRef}
       tabIndex={0}
       aria-label={ariaLabelData}
-      role="graphics-document"
+      role="img"
     >
       <motion.path
         role="graphics-symbol"

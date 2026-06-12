@@ -608,7 +608,7 @@ exports[`Charts/Area Chart/Circle Series Off smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -623,7 +623,7 @@ exports[`Charts/Area Chart/Circle Series Off smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -638,7 +638,7 @@ exports[`Charts/Area Chart/Circle Series Off smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -653,7 +653,7 @@ exports[`Charts/Area Chart/Circle Series Off smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1281,7 +1281,7 @@ exports[`Charts/Area Chart/Circle Series On smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1296,7 +1296,7 @@ exports[`Charts/Area Chart/Circle Series On smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1311,7 +1311,7 @@ exports[`Charts/Area Chart/Circle Series On smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1326,7 +1326,7 @@ exports[`Charts/Area Chart/Circle Series On smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1954,7 +1954,7 @@ exports[`Charts/Area Chart/Circle Series OnHover smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1969,7 +1969,7 @@ exports[`Charts/Area Chart/Circle Series OnHover smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1984,7 +1984,7 @@ exports[`Charts/Area Chart/Circle Series OnHover smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -1999,7 +1999,7 @@ exports[`Charts/Area Chart/Circle Series OnHover smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2627,7 +2627,7 @@ exports[`Charts/Area Chart/Circle Series OnlyFirst smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2642,7 +2642,7 @@ exports[`Charts/Area Chart/Circle Series OnlyFirst smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2657,7 +2657,7 @@ exports[`Charts/Area Chart/Circle Series OnlyFirst smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2672,7 +2672,7 @@ exports[`Charts/Area Chart/Circle Series OnlyFirst smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -3300,7 +3300,7 @@ exports[`Charts/Area Chart/Circle Series OnlyLast smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -3315,7 +3315,7 @@ exports[`Charts/Area Chart/Circle Series OnlyLast smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -3330,7 +3330,7 @@ exports[`Charts/Area Chart/Circle Series OnlyLast smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -3345,7 +3345,7 @@ exports[`Charts/Area Chart/Circle Series OnlyLast smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -3973,7 +3973,7 @@ exports[`Charts/Area Chart/Circle Series Shapes smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <g class="_point_u68jv_1"
                  opacity="1"
@@ -3989,7 +3989,7 @@ exports[`Charts/Area Chart/Circle Series Shapes smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-               role="graphics-document"
+               role="img"
             >
               <g class="_point_u68jv_1"
                  opacity="1"
@@ -4005,7 +4005,7 @@ exports[`Charts/Area Chart/Circle Series Shapes smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-               role="graphics-document"
+               role="img"
             >
               <g class="_point_u68jv_1"
                  opacity="1"
@@ -4021,7 +4021,7 @@ exports[`Charts/Area Chart/Circle Series Shapes smoke-test 1`] = `
             <g class
                tabindex="0"
                aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-               role="graphics-document"
+               role="img"
             >
               <g class="_point_u68jv_1"
                  opacity="1"

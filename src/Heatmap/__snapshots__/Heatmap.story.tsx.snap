@@ -185,7 +185,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ XML: 0"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -203,7 +203,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ JSON: 120"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -221,7 +221,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ HTTPS: 150"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(215, 48, 31); cursor: auto;"
         >
@@ -239,7 +239,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ SSH: 112"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -257,7 +257,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ XML: 100"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(252, 141, 89); cursor: auto;"
         >
@@ -275,7 +275,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ JSON: 34"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(254, 232, 200); cursor: auto;"
         >
@@ -293,7 +293,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ HTTPS: 0"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -311,7 +311,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ SSH: 111"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(252, 141, 89); cursor: auto;"
         >
@@ -329,7 +329,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ XML: 70"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(253, 187, 132); cursor: auto;"
         >
@@ -347,7 +347,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ JSON: 1"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -365,7 +365,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ HTTPS: 110"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(252, 141, 89); cursor: auto;"
         >
@@ -383,7 +383,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ SSH: 115"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -401,7 +401,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ XML: 1"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -419,7 +419,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ JSON: 120"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -437,7 +437,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ HTTPS: 200"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(127, 0, 0); cursor: auto;"
         >
@@ -455,7 +455,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ SSH: 160"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(179, 0, 0); cursor: auto;"
         >
@@ -473,7 +473,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ XML: 5"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -491,7 +491,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ JSON: 10"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -509,7 +509,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ HTTPS: 152"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(215, 48, 31); cursor: auto;"
         >
@@ -527,7 +527,7 @@ exports[`Charts/Heatmap/Simple Basic smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ SSH: 20"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -724,7 +724,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Lateral Movement ∙ XML: 0"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -742,7 +742,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Lateral Movement ∙ JSON: 120"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -760,7 +760,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Lateral Movement ∙ HTTPS: 150"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -778,7 +778,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Lateral Movement ∙ SSH: 112"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -796,7 +796,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Discovery ∙ XML: 100"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -814,7 +814,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Discovery ∙ JSON: 34"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -832,7 +832,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Discovery ∙ HTTPS: 0"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -850,7 +850,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Discovery ∙ SSH: 111"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -868,7 +868,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Exploitation ∙ XML: 70"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -886,7 +886,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Exploitation ∙ JSON: 1"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -904,7 +904,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Exploitation ∙ HTTPS: 110"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -922,7 +922,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Exploitation ∙ SSH: 115"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -940,7 +940,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Threat Intelligence ∙ XML: 1"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -958,7 +958,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Threat Intelligence ∙ JSON: 120"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -976,7 +976,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Threat Intelligence ∙ HTTPS: 200"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -994,7 +994,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Threat Intelligence ∙ SSH: 160"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -1012,7 +1012,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Breach ∙ XML: 5"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -1030,7 +1030,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Breach ∙ JSON: 10"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -1048,7 +1048,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Breach ∙ HTTPS: 152"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgb(45, 162, 131); cursor: auto;"
           >
@@ -1066,7 +1066,7 @@ exports[`Charts/Heatmap/Simple BasicLegend smoke-test 1`] = `
                 class="_cell_r3f8c_1"
                 tabindex="0"
                 aria-label="Breach ∙ SSH: 20"
-                role="graphics-document"
+                role="img"
                 opacity="1"
                 style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
           >
@@ -1315,7 +1315,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ XML: 0"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1333,7 +1333,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ JSON: 120"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1351,7 +1351,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ HTTPS: 150"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1369,7 +1369,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Lateral Movement ∙ SSH: 112"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1387,7 +1387,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ XML: 100"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1405,7 +1405,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ JSON: 34"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1423,7 +1423,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ HTTPS: 0"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1441,7 +1441,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Discovery ∙ SSH: 111"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1459,7 +1459,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ XML: 70"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1477,7 +1477,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ JSON: 1"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1495,7 +1495,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ HTTPS: 110"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1513,7 +1513,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Exploitation ∙ SSH: 115"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1531,7 +1531,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ XML: 1"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1549,7 +1549,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ JSON: 120"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1567,7 +1567,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ HTTPS: 200"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1585,7 +1585,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Threat Intelligence ∙ SSH: 160"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1603,7 +1603,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ XML: 5"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1621,7 +1621,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ JSON: 10"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1639,7 +1639,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ HTTPS: 152"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgb(45, 162, 131); cursor: auto;"
         >
@@ -1657,7 +1657,7 @@ exports[`Charts/Heatmap/Simple MultiAxis smoke-test 1`] = `
               class="_cell_r3f8c_1"
               tabindex="0"
               aria-label="Breach ∙ SSH: 20"
-              role="graphics-document"
+              role="img"
               opacity="1"
               style="fill: rgba(28, 107, 86, 0.5); cursor: auto;"
         >
@@ -1816,7 +1816,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(0, 98.46153846153848)"
            tabindex="0"
            aria-label="Lateral Movement ∙ XML: 0"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -1835,7 +1835,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(0, 65.64102564102565)"
            tabindex="0"
            aria-label="Lateral Movement ∙ JSON: 120"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -1854,7 +1854,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(0, 32.820512820512825)"
            tabindex="0"
            aria-label="Lateral Movement ∙ HTTPS: 150"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(215, 48, 31); cursor: auto;"
         >
@@ -1873,7 +1873,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(0, 0)"
            tabindex="0"
            aria-label="Lateral Movement ∙ SSH: 112"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -1892,7 +1892,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(35.51020408163265, 98.46153846153848)"
            tabindex="0"
            aria-label="Discovery ∙ XML: 100"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(252, 141, 89); cursor: auto;"
         >
@@ -1911,7 +1911,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(35.51020408163265, 65.64102564102565)"
            tabindex="0"
            aria-label="Discovery ∙ JSON: 34"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(254, 232, 200); cursor: auto;"
         >
@@ -1930,7 +1930,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(35.51020408163265, 32.820512820512825)"
            tabindex="0"
            aria-label="Discovery ∙ HTTPS: 0"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -1949,7 +1949,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(35.51020408163265, 0)"
            tabindex="0"
            aria-label="Discovery ∙ SSH: 111"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(252, 141, 89); cursor: auto;"
         >
@@ -1968,7 +1968,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(71.0204081632653, 98.46153846153848)"
            tabindex="0"
            aria-label="Exploitation ∙ XML: 70"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(253, 187, 132); cursor: auto;"
         >
@@ -1987,7 +1987,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(71.0204081632653, 65.64102564102565)"
            tabindex="0"
            aria-label="Exploitation ∙ JSON: 1"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -2006,7 +2006,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(71.0204081632653, 32.820512820512825)"
            tabindex="0"
            aria-label="Exploitation ∙ HTTPS: 110"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(252, 141, 89); cursor: auto;"
         >
@@ -2025,7 +2025,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(71.0204081632653, 0)"
            tabindex="0"
            aria-label="Exploitation ∙ SSH: 115"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -2044,7 +2044,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(106.53061224489795, 98.46153846153848)"
            tabindex="0"
            aria-label="Threat Intelligence ∙ XML: 1"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -2063,7 +2063,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(106.53061224489795, 65.64102564102565)"
            tabindex="0"
            aria-label="Threat Intelligence ∙ JSON: 120"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(239, 101, 72); cursor: auto;"
         >
@@ -2082,7 +2082,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(106.53061224489795, 32.820512820512825)"
            tabindex="0"
            aria-label="Threat Intelligence ∙ HTTPS: 200"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(127, 0, 0); cursor: auto;"
         >
@@ -2101,7 +2101,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(106.53061224489795, 0)"
            tabindex="0"
            aria-label="Threat Intelligence ∙ SSH: 160"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(179, 0, 0); cursor: auto;"
         >
@@ -2120,7 +2120,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(142.0408163265306, 98.46153846153848)"
            tabindex="0"
            aria-label="Breach ∙ XML: 5"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -2139,7 +2139,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(142.0408163265306, 65.64102564102565)"
            tabindex="0"
            aria-label="Breach ∙ JSON: 10"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >
@@ -2158,7 +2158,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(142.0408163265306, 32.820512820512825)"
            tabindex="0"
            aria-label="Breach ∙ HTTPS: 152"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(215, 48, 31); cursor: auto;"
         >
@@ -2177,7 +2177,7 @@ exports[`Charts/Heatmap/Simple Symbols smoke-test 1`] = `
            transform="translate(142.0408163265306, 0)"
            tabindex="0"
            aria-label="Breach ∙ SSH: 20"
-           role="graphics-document"
+           role="img"
            opacity="1"
            style="fill: rgb(255, 247, 236); cursor: auto;"
         >

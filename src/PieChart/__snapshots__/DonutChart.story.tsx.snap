@@ -16,7 +16,7 @@ exports[`Charts/Pie Chart/Donut InnerLabel smoke-test 1`] = `
         <g transform="translate(175, 125)">
           <g tabindex="0"
              aria-label="DLP: 10"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-115A115,115,0,0,1,67.595,-93.037L50.696,-69.778A86.25,86.25,0,0,0,0,-86.25Z"
@@ -27,7 +27,7 @@ exports[`Charts/Pie Chart/Donut InnerLabel smoke-test 1`] = `
           </g>
           <g tabindex="0"
              aria-label="Malware: 30"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M67.595,-93.037A115,115,0,0,1,67.595,93.037L50.696,69.778A86.25,86.25,0,0,0,50.696,-69.778Z"
@@ -38,7 +38,7 @@ exports[`Charts/Pie Chart/Donut InnerLabel smoke-test 1`] = `
           </g>
           <g tabindex="0"
              aria-label="IDS: 20"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M67.595,93.037A115,115,0,0,1,-67.595,93.037L-50.696,69.778A86.25,86.25,0,0,0,50.696,69.778Z"
@@ -49,7 +49,7 @@ exports[`Charts/Pie Chart/Donut InnerLabel smoke-test 1`] = `
           </g>
           <g tabindex="0"
              aria-label="Phishing Attack: 40"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M-67.595,93.037A115,115,0,0,1,0,-115L0,-86.25A86.25,86.25,0,0,0,-50.696,69.778Z"
@@ -101,7 +101,7 @@ exports[`Charts/Pie Chart/Donut Labels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
@@ -131,7 +131,7 @@ exports[`Charts/Pie Chart/Donut Labels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
@@ -161,7 +161,7 @@ exports[`Charts/Pie Chart/Donut Labels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
@@ -191,7 +191,7 @@ exports[`Charts/Pie Chart/Donut Labels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"
@@ -238,7 +238,7 @@ exports[`Charts/Pie Chart/Donut RoundedAndSpaced smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M2,-72.419A4,4,0,0,1,6.33,-76.405A76.667,76.667,0,0,1,39.788,-65.534A4,4,0,0,1,40.949,-59.763L34.358,-50.693A4,4,0,0,1,29.098,-49.594A57.5,57.5,0,0,0,5.61,-57.226A4,4,0,0,1,2,-61.207Z"
@@ -268,7 +268,7 @@ exports[`Charts/Pie Chart/Donut RoundedAndSpaced smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M44.185,-57.412A4,4,0,0,1,50.031,-58.092A76.667,76.667,0,0,1,50.031,58.092A4,4,0,0,1,44.185,57.412L37.594,48.342A4,4,0,0,1,38.175,42.999A57.5,57.5,0,0,0,38.175,-42.999A4,4,0,0,1,37.594,-48.342Z"
@@ -298,7 +298,7 @@ exports[`Charts/Pie Chart/Donut RoundedAndSpaced smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M40.949,59.763A4,4,0,0,1,39.788,65.534A76.667,76.667,0,0,1,-39.788,65.534A4,4,0,0,1,-40.949,59.763L-34.358,50.693A4,4,0,0,1,-29.098,49.594A57.5,57.5,0,0,0,29.098,49.594A4,4,0,0,1,34.358,50.693Z"
@@ -328,7 +328,7 @@ exports[`Charts/Pie Chart/Donut RoundedAndSpaced smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-44.185,57.412A4,4,0,0,1,-50.031,58.092A76.667,76.667,0,0,1,-6.33,-76.405A4,4,0,0,1,-2,-72.419L-2,-61.207A4,4,0,0,1,-5.61,-57.226A57.5,57.5,0,0,0,-38.175,42.999A4,4,0,0,1,-37.594,48.342Z"
@@ -375,7 +375,7 @@ exports[`Charts/Pie Chart/Donut Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
@@ -405,7 +405,7 @@ exports[`Charts/Pie Chart/Donut Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
@@ -435,7 +435,7 @@ exports[`Charts/Pie Chart/Donut Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
@@ -465,7 +465,7 @@ exports[`Charts/Pie Chart/Donut Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"
@@ -512,7 +512,7 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L33.798,-46.518A57.5,57.5,0,0,0,0,-57.5Z"
@@ -560,7 +560,7 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L33.798,46.518A57.5,57.5,0,0,0,33.798,-46.518Z"
@@ -608,7 +608,7 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L-33.798,46.518A57.5,57.5,0,0,0,33.798,46.518Z"
@@ -656,7 +656,7 @@ exports[`Charts/Pie Chart/Donut WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,-57.5A57.5,57.5,0,0,0,-33.798,46.518Z"

@@ -964,7 +964,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -979,7 +979,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -994,7 +994,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -1009,7 +1009,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -1036,7 +1036,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="blue"
@@ -1051,7 +1051,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="blue"
@@ -1066,7 +1066,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="blue"
@@ -1081,7 +1081,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="blue"
@@ -1108,7 +1108,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -1123,7 +1123,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -1138,7 +1138,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -1153,7 +1153,7 @@ exports[`Charts/Area Chart/Multi Series CustomColors smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="green"
@@ -2741,7 +2741,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2756,7 +2756,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2771,7 +2771,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2786,7 +2786,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2801,7 +2801,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2816,7 +2816,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 42"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2831,7 +2831,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2846,7 +2846,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2861,7 +2861,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2876,7 +2876,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 6"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2891,7 +2891,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2906,7 +2906,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2921,7 +2921,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2936,7 +2936,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2951,7 +2951,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-12: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -2978,7 +2978,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -2993,7 +2993,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3008,7 +3008,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3023,7 +3023,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3038,7 +3038,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3053,7 +3053,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3068,7 +3068,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 49"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3083,7 +3083,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3098,7 +3098,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3113,7 +3113,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3128,7 +3128,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 2"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3143,7 +3143,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3158,7 +3158,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3173,7 +3173,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 17"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3188,7 +3188,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-1: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -3215,7 +3215,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3230,7 +3230,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3245,7 +3245,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 15"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3260,7 +3260,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3275,7 +3275,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3290,7 +3290,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3305,7 +3305,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3320,7 +3320,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 39"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3335,7 +3335,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3350,7 +3350,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3365,7 +3365,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3380,7 +3380,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3395,7 +3395,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3410,7 +3410,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3425,7 +3425,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-17: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -3452,7 +3452,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 15"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3467,7 +3467,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3482,7 +3482,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3497,7 +3497,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3512,7 +3512,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3527,7 +3527,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3542,7 +3542,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3557,7 +3557,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3572,7 +3572,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3587,7 +3587,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 27"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3602,7 +3602,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3617,7 +3617,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3632,7 +3632,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3647,7 +3647,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3662,7 +3662,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-6: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -3689,7 +3689,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3704,7 +3704,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3719,7 +3719,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 50"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3734,7 +3734,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3749,7 +3749,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3764,7 +3764,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3779,7 +3779,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 6"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3794,7 +3794,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3809,7 +3809,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3824,7 +3824,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3839,7 +3839,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3854,7 +3854,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3869,7 +3869,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 34"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3884,7 +3884,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3899,7 +3899,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-14: 6"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -3926,7 +3926,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -3941,7 +3941,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -3956,7 +3956,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -3971,7 +3971,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -3986,7 +3986,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4001,7 +4001,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4016,7 +4016,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4031,7 +4031,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4046,7 +4046,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4061,7 +4061,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4076,7 +4076,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4091,7 +4091,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4106,7 +4106,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4121,7 +4121,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4136,7 +4136,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-9: 20"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -4163,7 +4163,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4178,7 +4178,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4193,7 +4193,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 35"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4208,7 +4208,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4223,7 +4223,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4238,7 +4238,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4253,7 +4253,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4268,7 +4268,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4283,7 +4283,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4298,7 +4298,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4313,7 +4313,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4328,7 +4328,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4343,7 +4343,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4358,7 +4358,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4373,7 +4373,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-3: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -4400,7 +4400,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4415,7 +4415,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 17"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4430,7 +4430,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4445,7 +4445,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4460,7 +4460,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4475,7 +4475,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4490,7 +4490,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4505,7 +4505,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4520,7 +4520,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4535,7 +4535,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4550,7 +4550,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4565,7 +4565,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 2"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4580,7 +4580,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 6"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4595,7 +4595,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4610,7 +4610,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-20: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -4637,7 +4637,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 47"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4652,7 +4652,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4667,7 +4667,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4682,7 +4682,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4697,7 +4697,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4712,7 +4712,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4727,7 +4727,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4742,7 +4742,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4757,7 +4757,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4772,7 +4772,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 20"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4787,7 +4787,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4802,7 +4802,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4817,7 +4817,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4832,7 +4832,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4847,7 +4847,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-11: 47"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -4874,7 +4874,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4889,7 +4889,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4904,7 +4904,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4919,7 +4919,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4934,7 +4934,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4949,7 +4949,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4964,7 +4964,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 2"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4979,7 +4979,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -4994,7 +4994,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5009,7 +5009,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 15"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5024,7 +5024,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5039,7 +5039,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5054,7 +5054,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 42"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5069,7 +5069,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5084,7 +5084,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-8: 49"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -5111,7 +5111,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 42"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5126,7 +5126,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 15"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5141,7 +5141,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5156,7 +5156,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 2"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5171,7 +5171,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5186,7 +5186,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5201,7 +5201,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 6"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5216,7 +5216,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 48"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5231,7 +5231,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5246,7 +5246,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5261,7 +5261,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5276,7 +5276,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5291,7 +5291,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5306,7 +5306,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5321,7 +5321,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-7: 49"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -5348,7 +5348,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5363,7 +5363,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5378,7 +5378,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5393,7 +5393,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 39"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5408,7 +5408,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5423,7 +5423,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5438,7 +5438,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 49"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5453,7 +5453,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5468,7 +5468,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5483,7 +5483,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5498,7 +5498,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 20"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5513,7 +5513,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5528,7 +5528,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 27"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5543,7 +5543,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5558,7 +5558,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-18: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -5585,7 +5585,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5600,7 +5600,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5615,7 +5615,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5630,7 +5630,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5645,7 +5645,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5660,7 +5660,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 34"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5675,7 +5675,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5690,7 +5690,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5705,7 +5705,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5720,7 +5720,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5735,7 +5735,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 25"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5750,7 +5750,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5765,7 +5765,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5780,7 +5780,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5795,7 +5795,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-15: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -5822,7 +5822,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5837,7 +5837,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5852,7 +5852,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 48"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5867,7 +5867,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5882,7 +5882,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5897,7 +5897,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5912,7 +5912,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5927,7 +5927,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5942,7 +5942,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5957,7 +5957,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5972,7 +5972,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -5987,7 +5987,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 48"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -6002,7 +6002,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -6017,7 +6017,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -6032,7 +6032,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-16: 25"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -6059,7 +6059,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 2"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6074,7 +6074,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 2"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6089,7 +6089,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6104,7 +6104,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6119,7 +6119,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6134,7 +6134,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6149,7 +6149,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6164,7 +6164,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6179,7 +6179,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6194,7 +6194,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6209,7 +6209,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6224,7 +6224,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6239,7 +6239,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6254,7 +6254,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 15"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6269,7 +6269,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-25: 20"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -6296,7 +6296,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6311,7 +6311,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6326,7 +6326,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6341,7 +6341,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6356,7 +6356,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 38"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6371,7 +6371,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6386,7 +6386,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6401,7 +6401,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6416,7 +6416,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 35"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6431,7 +6431,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6446,7 +6446,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6461,7 +6461,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6476,7 +6476,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6491,7 +6491,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6506,7 +6506,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-24: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -6533,7 +6533,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6548,7 +6548,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6563,7 +6563,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6578,7 +6578,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6593,7 +6593,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 27"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6608,7 +6608,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6623,7 +6623,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 25"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6638,7 +6638,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6653,7 +6653,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6668,7 +6668,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6683,7 +6683,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6698,7 +6698,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6713,7 +6713,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6728,7 +6728,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 47"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6743,7 +6743,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-22: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -6770,7 +6770,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 22"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6785,7 +6785,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6800,7 +6800,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6815,7 +6815,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6830,7 +6830,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6845,7 +6845,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6860,7 +6860,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6875,7 +6875,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6890,7 +6890,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6905,7 +6905,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6920,7 +6920,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6935,7 +6935,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6950,7 +6950,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6965,7 +6965,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -6980,7 +6980,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-10: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#26efb5"
@@ -7007,7 +7007,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7022,7 +7022,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7037,7 +7037,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7052,7 +7052,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7067,7 +7067,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7082,7 +7082,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7097,7 +7097,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7112,7 +7112,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7127,7 +7127,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7142,7 +7142,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7157,7 +7157,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7172,7 +7172,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7187,7 +7187,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7202,7 +7202,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7217,7 +7217,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-2: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#27dcbc"
@@ -7244,7 +7244,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7259,7 +7259,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7274,7 +7274,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7289,7 +7289,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7304,7 +7304,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 42"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7319,7 +7319,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7334,7 +7334,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7349,7 +7349,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7364,7 +7364,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7379,7 +7379,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7394,7 +7394,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7409,7 +7409,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 27"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7424,7 +7424,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7439,7 +7439,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 10"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7454,7 +7454,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-13: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#28c8c3"
@@ -7481,7 +7481,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7496,7 +7496,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 34"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7511,7 +7511,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7526,7 +7526,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7541,7 +7541,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7556,7 +7556,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7571,7 +7571,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7586,7 +7586,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 20"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7601,7 +7601,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 46"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7616,7 +7616,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 38"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7631,7 +7631,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 39"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7646,7 +7646,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 26"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7661,7 +7661,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 17"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7676,7 +7676,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 30"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7691,7 +7691,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-4: 35"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#29b5ca"
@@ -7718,7 +7718,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 35"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7733,7 +7733,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 48"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7748,7 +7748,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7763,7 +7763,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7778,7 +7778,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 49"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7793,7 +7793,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7808,7 +7808,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7823,7 +7823,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7838,7 +7838,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7853,7 +7853,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 42"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7868,7 +7868,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 29"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7883,7 +7883,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7898,7 +7898,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 24"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7913,7 +7913,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7928,7 +7928,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-23: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2aa1d1"
@@ -7955,7 +7955,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 20"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -7970,7 +7970,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 21"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -7985,7 +7985,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8000,7 +8000,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8015,7 +8015,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8030,7 +8030,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8045,7 +8045,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 49"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8060,7 +8060,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 39"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8075,7 +8075,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 13"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8090,7 +8090,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 38"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8105,7 +8105,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 43"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8120,7 +8120,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8135,7 +8135,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 17"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8150,7 +8150,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8165,7 +8165,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-5: 27"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -8192,7 +8192,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8207,7 +8207,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8222,7 +8222,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 25"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8237,7 +8237,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 31"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8252,7 +8252,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 35"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8267,7 +8267,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8282,7 +8282,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 44"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8297,7 +8297,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8312,7 +8312,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 48"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8327,7 +8327,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8342,7 +8342,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 36"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8357,7 +8357,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 37"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8372,7 +8372,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 19"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8387,7 +8387,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 17"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8402,7 +8402,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-19: 32"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -8429,7 +8429,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8444,7 +8444,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 5"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8459,7 +8459,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 27"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8474,7 +8474,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 33"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8489,7 +8489,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 39"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8504,7 +8504,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8519,7 +8519,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 42"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8534,7 +8534,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 11"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8549,7 +8549,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 38"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8564,7 +8564,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8579,7 +8579,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 23"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8594,7 +8594,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 41"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8609,7 +8609,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8624,7 +8624,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -8639,7 +8639,7 @@ exports[`Charts/Area Chart/Multi Series LargeDataset smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Series-21: 40"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -9623,7 +9623,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -9638,7 +9638,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -9653,7 +9653,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -9668,7 +9668,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -9695,7 +9695,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -9710,7 +9710,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -9725,7 +9725,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -9740,7 +9740,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -9767,7 +9767,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -9782,7 +9782,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -9797,7 +9797,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -9812,7 +9812,7 @@ exports[`Charts/Area Chart/Multi Series Simple smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -10760,7 +10760,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -10775,7 +10775,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 9"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -10790,7 +10790,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -10805,7 +10805,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 1"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -10832,7 +10832,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 12"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -10847,7 +10847,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 8"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -10862,7 +10862,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 7"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -10877,7 +10877,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -10904,7 +10904,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -10919,7 +10919,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 3"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -10934,7 +10934,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 14"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -10949,7 +10949,7 @@ exports[`Charts/Area Chart/Multi Series Stacked smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 18"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -11753,7 +11753,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 0.286"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -11768,7 +11768,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 0.45"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -11783,7 +11783,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 0.16"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -11798,7 +11798,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Syslog: 0.029"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2b8dd8"
@@ -11825,7 +11825,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 0.286"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -11840,7 +11840,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 0.4"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -11855,7 +11855,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 0.28"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -11870,7 +11870,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="DLP: 0.457"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2c77e0"
@@ -11897,7 +11897,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 0.429"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -11912,7 +11912,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 0.15"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -11927,7 +11927,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 0.56"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"
@@ -11942,7 +11942,7 @@ exports[`Charts/Area Chart/Multi Series StackedNormalized smoke-test 1`] = `
             <g class="_hidden_jp2yc_5"
                tabindex="0"
                aria-label="Threat Intel: 0.514"
-               role="graphics-document"
+               role="img"
             >
               <circle class="_point_u68jv_1"
                       fill="#2d60e8"

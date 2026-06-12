@@ -15,7 +15,7 @@ exports[`Charts/Gauge/Radial Autosize smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-104A104,104,0,1,1,0,104A104,104,0,1,1,0,-104M0,-99A99,99,0,1,0,0,99A99,99,0,1,0,0,-99Z"
@@ -28,7 +28,7 @@ exports[`Charts/Gauge/Radial Autosize smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="Austin, TX: 24"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-104A104,104,0,0,1,103.795,-6.53L98.805,-6.216A99,99,0,0,0,0,-99Z"
@@ -77,7 +77,7 @@ exports[`Charts/Gauge/Radial CustomArc smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-130A130,130,0,1,1,0,130A130,130,0,1,1,0,-130M0,-105A105,105,0,1,0,0,105A105,105,0,1,0,0,-105Z"
@@ -90,7 +90,7 @@ exports[`Charts/Gauge/Radial CustomArc smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Austin, TX: 24"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-116.833A12.5,12.5,0,0,1,13.83,-129.262A130,130,0,0,1,128.139,-21.919A12.5,12.5,0,0,1,116.603,-7.336L116.603,-7.336A12.5,12.5,0,0,1,103.497,-17.704A105,105,0,0,0,11.17,-104.404A12.5,12.5,0,0,1,0,-116.833Z"
@@ -142,7 +142,7 @@ exports[`Charts/Gauge/Radial FilledArc smoke-test 1`] = `
           </circle>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-155A155,155,0,1,1,0,155A155,155,0,1,1,0,-155M0,-150A150,150,0,1,0,0,150A150,150,0,1,0,0,-150Z"
@@ -155,7 +155,7 @@ exports[`Charts/Gauge/Radial FilledArc smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Austin, TX: 24"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-155A155,155,0,0,1,154.694,-9.733L149.704,-9.419A150,150,0,0,0,0,-150Z"
@@ -204,7 +204,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-105A105,105,0,1,1,0,105A105,105,0,1,1,0,-105M0,-96A96,96,0,1,0,0,96A96,96,0,1,0,0,-96Z"
@@ -217,7 +217,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="Third Party: 40"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-105A105,105,0,1,1,-99.861,-32.447L-91.301,-29.666A96,96,0,1,0,0,-96Z"
@@ -232,7 +232,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-123A123,123,0,1,1,0,123A123,123,0,1,1,0,-123M0,-114A114,114,0,1,0,0,114A114,114,0,1,0,0,-114Z"
@@ -245,7 +245,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="Malware: 10"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-123A123,123,0,0,1,81.564,92.067L75.596,85.33A114,114,0,0,0,0,-114Z"
@@ -256,7 +256,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
             </g>
             <g tabindex="0"
                aria-label="DLP: 16"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M81.564,92.067A123,123,0,1,1,0,-123L0,-114A114,114,0,1,0,75.596,85.33Z"
@@ -271,7 +271,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-141A141,141,0,1,1,0,141A141,141,0,1,1,0,-141M0,-132A132,132,0,1,0,0,132A132,132,0,1,0,0,-132Z"
@@ -284,7 +284,7 @@ exports[`Charts/Gauge/Radial GaugeStacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="IDS: 26"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-141A141,141,0,0,1,140.722,8.853L131.74,8.288A132,132,0,0,0,0,-132Z"
@@ -350,7 +350,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -363,7 +363,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="DLP: 10"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,0,1,67.5,0L62.5,0A62.5,62.5,0,0,0,0,-62.5Z"
@@ -394,7 +394,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -407,7 +407,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Malware: 30"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,-67.5,0L-62.5,0A62.5,62.5,0,1,0,0,-62.5Z"
@@ -438,7 +438,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -451,7 +451,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="IDS: 20"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5L0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -482,7 +482,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -495,7 +495,7 @@ exports[`Charts/Gauge/Radial Multi smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Phishing Attack: 40"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -543,7 +543,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -556,7 +556,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="DLP: 10"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,0,1,39.676,-54.609L36.737,-50.564A62.5,62.5,0,0,0,0,-62.5Z"
@@ -587,7 +587,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -600,7 +600,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Malware: 30"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,0,1,64.196,20.859L59.441,19.314A62.5,62.5,0,0,0,0,-62.5Z"
@@ -631,7 +631,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -644,7 +644,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="IDS: 20"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,0,1,64.196,-20.859L59.441,-19.314A62.5,62.5,0,0,0,0,-62.5Z"
@@ -675,7 +675,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,1,1,0,67.5A67.5,67.5,0,1,1,0,-67.5M0,-62.5A62.5,62.5,0,1,0,0,62.5A62.5,62.5,0,1,0,0,-62.5Z"
@@ -688,7 +688,7 @@ exports[`Charts/Gauge/Radial MultiLine smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Phishing Attack: 40"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-67.5A67.5,67.5,0,0,1,39.676,54.609L36.737,50.564A62.5,62.5,0,0,0,0,-62.5Z"
@@ -736,7 +736,7 @@ exports[`Charts/Gauge/Radial Single smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-130A130,130,0,1,1,0,130A130,130,0,1,1,0,-130M0,-120A120,120,0,1,0,0,120A120,120,0,1,0,0,-120Z"
@@ -749,7 +749,7 @@ exports[`Charts/Gauge/Radial Single smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Austin, TX: 24"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-130A130,130,0,0,1,129.743,-8.163L119.763,-7.535A120,120,0,0,0,0,-120Z"
@@ -798,7 +798,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-105A105,105,0,1,1,0,105A105,105,0,1,1,0,-105M0,-94.615A94.615,94.615,0,1,0,0,94.615A94.615,94.615,0,1,0,0,-94.615Z"
@@ -811,7 +811,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="DLP: 10"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-105A105,105,0,1,1,0,105A105,105,0,1,1,0,-105M0,-94.615A94.615,94.615,0,1,0,0,94.615A94.615,94.615,0,1,0,0,-94.615Z"
@@ -826,7 +826,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-116.538A116.538,116.538,0,1,1,0,116.538A116.538,116.538,0,1,1,0,-116.538M0,-106.154A106.154,106.154,0,1,0,0,106.154A106.154,106.154,0,1,0,0,-106.154Z"
@@ -839,7 +839,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="Malware: 30"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-116.538A116.538,116.538,0,1,1,0,116.538A116.538,116.538,0,1,1,0,-116.538M0,106.154A106.154,106.154,0,1,0,0,-106.154A106.154,106.154,0,1,0,0,106.154Z"
@@ -854,7 +854,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-128.077A128.077,128.077,0,1,1,0,128.077A128.077,128.077,0,1,1,0,-128.077M0,-117.692A117.692,117.692,0,1,0,0,117.692A117.692,117.692,0,1,0,0,-117.692Z"
@@ -867,7 +867,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="IDS: 20"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-128.077A128.077,128.077,0,1,1,-110.918,64.038L-101.925,58.846A117.692,117.692,0,1,0,0,-117.692Z"
@@ -882,7 +882,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="undefined: No value"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-139.615A139.615,139.615,0,1,1,0,139.615A139.615,139.615,0,1,1,0,-139.615M0,-129.231A129.231,129.231,0,1,0,0,129.231A129.231,129.231,0,1,0,0,-129.231Z"
@@ -895,7 +895,7 @@ exports[`Charts/Gauge/Radial Stacked smoke-test 1`] = `
           <g>
             <g tabindex="0"
                aria-label="Phishing Attack: 40"
-               role="graphics-document"
+               role="img"
             >
               <path role="graphics-symbol"
                     d="M0,-139.615A139.615,139.615,0,1,1,0,139.615A139.615,139.615,0,1,1,0,-139.615M0,-129.231A129.231,129.231,0,1,0,0,129.231A129.231,129.231,0,1,0,0,-129.231Z"
@@ -944,7 +944,7 @@ exports[`Charts/Gauge/Radial WithGradient smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="undefined: No value"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-130A130,130,0,1,1,0,130A130,130,0,1,1,0,-130M0,-115A115,115,0,1,0,0,115A115,115,0,1,0,0,-115Z"
@@ -957,7 +957,7 @@ exports[`Charts/Gauge/Radial WithGradient smoke-test 1`] = `
         <g>
           <g tabindex="0"
              aria-label="Austin, TX: 24"
-             role="graphics-document"
+             role="img"
           >
             <path role="graphics-symbol"
                   d="M0,-122.27A7.5,7.5,0,0,1,7.959,-129.756A130,130,0,0,1,129,-16.091A7.5,7.5,0,0,1,122.029,-7.677L122.029,-7.677A7.5,7.5,0,0,1,114.116,-14.234A115,115,0,0,0,7.041,-114.784A7.5,7.5,0,0,1,0,-122.27Z"

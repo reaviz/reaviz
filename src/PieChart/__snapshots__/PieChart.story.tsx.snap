@@ -32,7 +32,7 @@ exports[`Charts/Pie Chart/Pie Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="DLP: 10"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M0,-112.667A112.667,112.667,0,0,1,66.224,-91.149L0,0Z"
@@ -62,7 +62,7 @@ exports[`Charts/Pie Chart/Pie Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Malware: 30"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M66.224,-91.149A112.667,112.667,0,0,1,66.224,91.149L0,0Z"
@@ -92,7 +92,7 @@ exports[`Charts/Pie Chart/Pie Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="IDS: 20"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M66.224,91.149A112.667,112.667,0,0,1,-66.224,91.149L0,0Z"
@@ -122,7 +122,7 @@ exports[`Charts/Pie Chart/Pie Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Phishing Attack: 40"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-66.224,91.149A112.667,112.667,0,0,1,0,-112.667L0,0Z"
@@ -170,7 +170,7 @@ exports[`Charts/Pie Chart/Pie DisplayAllLabels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Chrome: 39,360"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,1,1,-50.27,-57.885L0,0Z"
@@ -200,7 +200,7 @@ exports[`Charts/Pie Chart/Pie DisplayAllLabels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Firefox: 2,228"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-50.27,-57.885A76.667,76.667,0,0,1,-29.85,-70.617L0,0Z"
@@ -230,7 +230,7 @@ exports[`Charts/Pie Chart/Pie DisplayAllLabels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Internet Explorer: 100"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-29.85,-70.617A76.667,76.667,0,0,1,-28.848,-71.032L0,0Z"
@@ -260,7 +260,7 @@ exports[`Charts/Pie Chart/Pie DisplayAllLabels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Safari: 91"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-28.848,-71.032A76.667,76.667,0,0,1,-27.931,-71.398L0,0Z"
@@ -290,7 +290,7 @@ exports[`Charts/Pie Chart/Pie DisplayAllLabels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Microsoft Edge: 2,636"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-27.931,-71.398A76.667,76.667,0,0,1,0,-76.667L0,0Z"
@@ -337,7 +337,7 @@ exports[`Charts/Pie Chart/Pie Explode smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-11.266,-15.506A19.167,19.167,0,0,1,0,-19.167L0,0Z"
@@ -367,7 +367,7 @@ exports[`Charts/Pie Chart/Pie Explode smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M33.798,46.518A57.5,57.5,0,0,1,-54.686,17.768L0,0Z"
@@ -397,7 +397,7 @@ exports[`Charts/Pie Chart/Pie Explode smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-36.457,11.846A38.333,38.333,0,0,1,-22.532,-31.012L0,0Z"
@@ -427,7 +427,7 @@ exports[`Charts/Pie Chart/Pie Explode smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,62.025L0,0Z"
@@ -486,7 +486,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Chrome: 25,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M0,-131.667A131.667,131.667,0,1,1,-59.564,117.424L0,0Z"
@@ -527,7 +527,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Safari: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-59.564,117.424A131.667,131.667,0,0,1,-90.547,95.589L0,0Z"
@@ -568,7 +568,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="FireFox: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-90.547,95.589A131.667,131.667,0,0,1,-114.027,65.833L0,0Z"
@@ -609,7 +609,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Edge: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-114.027,65.833A131.667,131.667,0,0,1,-128.056,30.621L0,0Z"
@@ -650,7 +650,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Github: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-128.056,30.621A131.667,131.667,0,0,1,-131.474,-7.128L0,0Z"
@@ -693,7 +693,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="ReactJs: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-131.474,-7.128A131.667,131.667,0,0,1,-123.995,-44.287L0,0Z"
@@ -734,7 +734,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Android: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-123.995,-44.287A131.667,131.667,0,0,1,-106.24,-77.776L0,0Z"
@@ -775,7 +775,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Apple: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-106.24,-77.776A131.667,131.667,0,0,1,-79.681,-104.819L0,0Z"
@@ -816,7 +816,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Ubuntu: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-79.681,-104.819A131.667,131.667,0,0,1,-46.519,-123.175L0,0Z"
@@ -857,7 +857,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Windows: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-46.519,-123.175A131.667,131.667,0,0,1,-9.501,-131.323L0,0Z"
@@ -868,7 +868,7 @@ exports[`Charts/Pie Chart/Pie HtmlLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Other: 500"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-9.501,-131.323A131.667,131.667,0,0,1,0,-131.667L0,0Z"
@@ -916,7 +916,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="1: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,14.957,-75.194L0,0Z"
@@ -946,7 +946,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="2: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M14.957,-75.194A76.667,76.667,0,0,1,29.339,-70.831L0,0Z"
@@ -976,7 +976,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="3: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M29.339,-70.831A76.667,76.667,0,0,1,42.594,-63.746L0,0Z"
@@ -1006,7 +1006,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="4: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M42.594,-63.746A76.667,76.667,0,0,1,54.212,-54.212L0,0Z"
@@ -1036,7 +1036,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="5: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M54.212,-54.212A76.667,76.667,0,0,1,63.746,-42.594L0,0Z"
@@ -1066,7 +1066,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="6: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M63.746,-42.594A76.667,76.667,0,0,1,70.831,-29.339L0,0Z"
@@ -1096,7 +1096,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="7: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M70.831,-29.339A76.667,76.667,0,0,1,75.194,-14.957L0,0Z"
@@ -1126,7 +1126,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="8: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M75.194,-14.957A76.667,76.667,0,0,1,76.667,0L0,0Z"
@@ -1156,7 +1156,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="9: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M76.667,0A76.667,76.667,0,0,1,75.194,14.957L0,0Z"
@@ -1186,7 +1186,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="10: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M75.194,14.957A76.667,76.667,0,0,1,70.831,29.339L0,0Z"
@@ -1216,7 +1216,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="11: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M70.831,29.339A76.667,76.667,0,0,1,63.746,42.594L0,0Z"
@@ -1246,7 +1246,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="12: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M63.746,42.594A76.667,76.667,0,0,1,54.212,54.212L0,0Z"
@@ -1276,7 +1276,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="13: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M54.212,54.212A76.667,76.667,0,0,1,42.594,63.746L0,0Z"
@@ -1306,7 +1306,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="14: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M42.594,63.746A76.667,76.667,0,0,1,29.339,70.831L0,0Z"
@@ -1336,7 +1336,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="15: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M29.339,70.831A76.667,76.667,0,0,1,14.957,75.194L0,0Z"
@@ -1366,7 +1366,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="16: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M14.957,75.194A76.667,76.667,0,0,1,0,76.667L0,0Z"
@@ -1396,7 +1396,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="17: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,76.667A76.667,76.667,0,0,1,-14.957,75.194L0,0Z"
@@ -1426,7 +1426,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="18: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-14.957,75.194A76.667,76.667,0,0,1,-29.339,70.831L0,0Z"
@@ -1456,7 +1456,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="19: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-29.339,70.831A76.667,76.667,0,0,1,-42.594,63.746L0,0Z"
@@ -1486,7 +1486,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="20: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-42.594,63.746A76.667,76.667,0,0,1,-54.212,54.212L0,0Z"
@@ -1516,7 +1516,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="21: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-54.212,54.212A76.667,76.667,0,0,1,-63.746,42.594L0,0Z"
@@ -1546,7 +1546,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="22: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-63.746,42.594A76.667,76.667,0,0,1,-70.831,29.339L0,0Z"
@@ -1576,7 +1576,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="23: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-70.831,29.339A76.667,76.667,0,0,1,-75.194,14.957L0,0Z"
@@ -1606,7 +1606,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="24: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-75.194,14.957A76.667,76.667,0,0,1,-76.667,0L0,0Z"
@@ -1636,7 +1636,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="25: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-76.667,0A76.667,76.667,0,0,1,-75.194,-14.957L0,0Z"
@@ -1666,7 +1666,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="26: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-75.194,-14.957A76.667,76.667,0,0,1,-70.831,-29.339L0,0Z"
@@ -1696,7 +1696,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="27: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-70.831,-29.339A76.667,76.667,0,0,1,-63.746,-42.594L0,0Z"
@@ -1726,7 +1726,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="28: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-63.746,-42.594A76.667,76.667,0,0,1,-54.212,-54.212L0,0Z"
@@ -1756,7 +1756,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="29: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-54.212,-54.212A76.667,76.667,0,0,1,-42.594,-63.746L0,0Z"
@@ -1786,7 +1786,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="30: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-42.594,-63.746A76.667,76.667,0,0,1,-29.339,-70.831L0,0Z"
@@ -1816,7 +1816,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="31: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-29.339,-70.831A76.667,76.667,0,0,1,-14.957,-75.194L0,0Z"
@@ -1846,7 +1846,7 @@ exports[`Charts/Pie Chart/Pie LabelOverlap smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="32: 1"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-14.957,-75.194A76.667,76.667,0,0,1,0,-76.667L0,0Z"
@@ -1893,7 +1893,7 @@ exports[`Charts/Pie Chart/Pie LiveUpdating smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L0,0Z"
@@ -1923,7 +1923,7 @@ exports[`Charts/Pie Chart/Pie LiveUpdating smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L0,0Z"
@@ -1953,7 +1953,7 @@ exports[`Charts/Pie Chart/Pie LiveUpdating smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L0,0Z"
@@ -1983,7 +1983,7 @@ exports[`Charts/Pie Chart/Pie LiveUpdating smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,0Z"
@@ -2034,7 +2034,7 @@ exports[`Charts/Pie Chart/Pie NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Chrome: 39,360"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,1,1,-50.27,-57.885L0,0Z"
@@ -2064,7 +2064,7 @@ exports[`Charts/Pie Chart/Pie NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Firefox: 2,228"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-50.27,-57.885A76.667,76.667,0,0,1,-29.85,-70.617L0,0Z"
@@ -2075,7 +2075,7 @@ exports[`Charts/Pie Chart/Pie NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Internet Explorer: 100"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-29.85,-70.617A76.667,76.667,0,0,1,-28.848,-71.032L0,0Z"
@@ -2086,7 +2086,7 @@ exports[`Charts/Pie Chart/Pie NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Safari: 91"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-28.848,-71.032A76.667,76.667,0,0,1,-27.931,-71.398L0,0Z"
@@ -2116,7 +2116,7 @@ exports[`Charts/Pie Chart/Pie NoAnimation smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Microsoft Edge: 2,636"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-27.931,-71.398A76.667,76.667,0,0,1,0,-76.667L0,0Z"
@@ -2163,7 +2163,7 @@ exports[`Charts/Pie Chart/Pie Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="DLP: 10"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,0,1,45.064,-62.025L0,0Z"
@@ -2193,7 +2193,7 @@ exports[`Charts/Pie Chart/Pie Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Malware: 30"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,-62.025A76.667,76.667,0,0,1,45.064,62.025L0,0Z"
@@ -2223,7 +2223,7 @@ exports[`Charts/Pie Chart/Pie Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="IDS: 20"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M45.064,62.025A76.667,76.667,0,0,1,-45.064,62.025L0,0Z"
@@ -2253,7 +2253,7 @@ exports[`Charts/Pie Chart/Pie Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Phishing Attack: 40"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-45.064,62.025A76.667,76.667,0,0,1,0,-76.667L0,0Z"
@@ -2312,7 +2312,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Chrome: 25,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M0,-58.333A58.333,58.333,0,1,1,-26.389,52.023L0,0Z"
@@ -2353,7 +2353,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Safari: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-26.389,52.023A58.333,58.333,0,0,1,-40.116,42.35L0,0Z"
@@ -2394,7 +2394,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="FireFox: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-40.116,42.35A58.333,58.333,0,0,1,-50.518,29.167L0,0Z"
@@ -2435,7 +2435,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Edge: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-50.518,29.167A58.333,58.333,0,0,1,-56.734,13.566L0,0Z"
@@ -2476,7 +2476,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Github: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-56.734,13.566A58.333,58.333,0,0,1,-58.248,-3.158L0,0Z"
@@ -2519,7 +2519,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="ReactJs: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-58.248,-3.158A58.333,58.333,0,0,1,-54.934,-19.621L0,0Z"
@@ -2560,7 +2560,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Android: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-54.934,-19.621A58.333,58.333,0,0,1,-47.069,-34.458L0,0Z"
@@ -2601,7 +2601,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Apple: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-47.069,-34.458A58.333,58.333,0,0,1,-35.302,-46.439L0,0Z"
@@ -2642,7 +2642,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Ubuntu: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-35.302,-46.439A58.333,58.333,0,0,1,-20.61,-54.571L0,0Z"
@@ -2683,7 +2683,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Windows: 2,000"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-20.61,-54.571A58.333,58.333,0,0,1,-4.209,-58.181L0,0Z"
@@ -2694,7 +2694,7 @@ exports[`Charts/Pie Chart/Pie TextPlusIconLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Other: 500"
-           role="graphics-document"
+           role="img"
         >
           <path role="graphics-symbol"
                 d="M-4.209,-58.181A58.333,58.333,0,0,1,0,-58.333L0,0Z"
@@ -2742,7 +2742,7 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Chrome: 39,360"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M0,-76.667A76.667,76.667,0,1,1,-50.27,-57.885L0,0Z"
@@ -2790,7 +2790,7 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Firefox: 2,228"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-50.27,-57.885A76.667,76.667,0,0,1,-29.85,-70.617L0,0Z"
@@ -2819,7 +2819,7 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Internet Explorer: 100"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-29.85,-70.617A76.667,76.667,0,0,1,-28.848,-71.032L0,0Z"
@@ -2848,7 +2848,7 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Safari: 91"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-28.848,-71.032A76.667,76.667,0,0,1,-27.931,-71.398L0,0Z"
@@ -2896,7 +2896,7 @@ exports[`Charts/Pie Chart/Pie WithGradient smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Microsoft Edge: 2,636"
-         role="graphics-document"
+         role="img"
       >
         <path role="graphics-symbol"
               d="M-27.931,-71.398A76.667,76.667,0,0,1,0,-76.667L0,0Z"

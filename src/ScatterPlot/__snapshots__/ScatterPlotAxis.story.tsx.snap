@@ -402,7 +402,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -417,7 +417,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -432,7 +432,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -447,7 +447,7 @@ exports[`Charts/Scatter Plot/Axis LeftRightAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -1067,7 +1067,7 @@ exports[`Charts/Scatter Plot/Axis TopBottomAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Mon Feb 17 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -1082,7 +1082,7 @@ exports[`Charts/Scatter Plot/Axis TopBottomAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Fri Feb 21 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 3"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -1097,7 +1097,7 @@ exports[`Charts/Scatter Plot/Axis TopBottomAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Wed Feb 26 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 14"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"
@@ -1112,7 +1112,7 @@ exports[`Charts/Scatter Plot/Axis TopBottomAxis smoke-test 1`] = `
         <g class
            tabindex="0"
            aria-label="Sat Feb 29 2020 10:00:00 GMT+0200 (Eastern European Standard Time): 18"
-           role="graphics-document"
+           role="img"
         >
           <circle class
                   fill="#2d60e8"

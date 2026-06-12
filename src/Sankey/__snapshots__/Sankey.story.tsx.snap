@@ -30,7 +30,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-0)"
                 stroke-opacity="0.35"
                 aria-label="Agricultural 'waste' → Bio-conversion: 124.729"
-                role="graphics-document"
+                role="img"
                 d="M16,98.3530909426293C80.35714285714286,98.3530909426293,80.35714285714286,103.71237948340274,144.71428571428572,103.71237948340274"
                 stroke-width="12.074643142912157"
           >
@@ -55,7 +55,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-1)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Liquid: 0.597"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,135.2968323459512C224.07142857142858,135.2968323459512,224.07142857142858,380.2028466293594,288.42857142857144,380.2028466293594"
                 stroke-width="1"
           >
@@ -80,7 +80,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-2)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Losses: 26.862"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,98.97527303475253C583.3571428571429,98.97527303475253,583.3571428571429,78.49983014767822,1007,78.49983014767822"
                 stroke-width="2.600430245611737"
           >
@@ -105,7 +105,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-3)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Solid: 280.322"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,113.84405727583652C224.07142857142858,113.84405727583652,224.07142857142858,121.68222956544581,288.42857142857144,121.68222956544581"
                 stroke-width="27.13713823655623"
           >
@@ -130,7 +130,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-4)"
                 stroke-opacity="0.35"
                 aria-label="Bio-conversion → Gas: 81.144"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,131.3402809218847C224.07142857142858,131.3402809218847,224.07142857142858,205.17973740577867,288.42857142857144,205.17973740577867"
                 stroke-width="7.855309055540125"
           >
@@ -155,7 +155,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-5)"
                 stroke-opacity="0.35"
                 aria-label="Biofuel imports → Liquid: 35"
-                role="graphics-document"
+                role="img"
                 d="M16,385.0609472373563C152.21428571428572,385.0609472373563,152.21428571428572,381.9258664241074,288.42857142857144,381.9258664241074"
                 stroke-width="3.3882457969030897"
           >
@@ -180,7 +180,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-6)"
                 stroke-opacity="0.35"
                 aria-label="Biomass imports → Solid: 35"
-                role="graphics-document"
+                role="img"
                 d="M16,177.13848579031313C152.21428571428572,177.13848579031313,152.21428571428572,142.42294057958563,288.42857142857144,142.42294057958563"
                 stroke-width="3.3882457969030897"
           >
@@ -205,7 +205,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-7)"
                 stroke-opacity="0.35"
                 aria-label="Coal imports → Coal: 11.606"
-                role="graphics-document"
+                role="img"
                 d="M16,189.3943798418912C80.35714285714286,189.3943798418912,80.35714285714286,175.7037067663798,144.71428571428572,175.7037067663798"
                 stroke-width="1.1235423062530645"
           >
@@ -230,7 +230,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-8)"
                 stroke-opacity="0.35"
                 aria-label="Coal reserves → Coal: 63.965"
-                role="graphics-document"
+                role="img"
                 d="M16,203.05228160071638C80.35714285714286,203.05228160071638,80.35714285714286,179.36160852520499,144.71428571428572,179.36160852520499"
                 stroke-width="6.1922612113973186"
           >
@@ -255,7 +255,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-9)"
                 stroke-opacity="0.35"
                 aria-label="Coal → Solid: 75.571"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,178.79983737207849C224.07142857142858,178.79983737207849,224.07142857142858,147.77496523686236,288.42857142857144,147.77496523686236"
                 stroke-width="7.315803517650383"
           >
@@ -280,7 +280,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-10)"
                 stroke-opacity="0.35"
                 aria-label="District heating → Industry: 10.639"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,86.78523008114621C798.9285714285714,86.78523008114621,798.9285714285714,168.5325380880649,1007,168.5325380880649"
                 stroke-width="1.0299299152357706"
           >
@@ -305,7 +305,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-11)"
                 stroke-opacity="0.35"
                 aria-label="District heating → Heating and cooling - commercial: 22.505"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,92.86045160201621C798.9285714285714,92.86045160201621,798.9285714285714,293.10367749836587,1007,293.10367749836587"
                 stroke-width="2.1786420474086867"
           >
@@ -330,7 +330,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-12)"
                 stroke-opacity="0.35"
                 aria-label="District heating → Heating and cooling - homes: 46.184"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,89.53566280853798C798.9285714285714,89.53566280853798,798.9285714285714,235.32916994292623,1007,235.32916994292623"
                 stroke-width="4.47093553954778"
           >
@@ -355,7 +355,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-13)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Over generation / exports: 104.453"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,197.52574964484683C798.9285714285714,197.52574964484683,798.9285714285714,115.19739886372508,1007,115.19739886372508"
                 stroke-width="10.111783949254812"
           >
@@ -380,7 +380,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-14)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Heating and cooling - homes: 113.726"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,258.97463659290156C798.9285714285714,258.97463659290156,798.9285714285714,243.06937544839442,1007,243.06937544839442"
                 stroke-width="11.009475471388594"
           >
@@ -405,7 +405,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-15)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → H2 conversion: 27.14"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,265.7930456275665C655.2142857142858,265.7930456275665,655.2142857142858,271.16440550099446,719.5714285714287,271.16440550099446"
                 stroke-width="2.6273425979414244"
           >
@@ -430,7 +430,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-16)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Industry: 342.165"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,236.90791138438803C798.9285714285714,236.90791138438803,798.9285714285714,190.10879051572104,1007,190.10879051572104"
                 stroke-width="33.12397494563845"
           >
@@ -455,7 +455,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-17)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Road transport: 37.797"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,274.079871987098C798.9285714285714,274.079871987098,798.9285714285714,340.6119305989835,1007,340.6119305989835"
                 stroke-width="3.6590150395870307"
           >
@@ -480,7 +480,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-18)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Agriculture: 4.412"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,267.32027321876495C798.9285714285714,267.32027321876495,798.9285714285714,279.4241193269343,1007,279.4241193269343"
                 stroke-width="1"
           >
@@ -505,7 +505,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-19)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Heating and cooling - commercial: 40.858"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,269.5115001791335C798.9285714285714,269.5115001791335,798.9285714285714,296.1706691902112,1007,296.1706691902112"
                 stroke-width="3.955341336281898"
           >
@@ -530,7 +530,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-20)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Losses: 56.691"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,189.7258142063304C798.9285714285714,189.7258142063304,798.9285714285714,82.54408873437313,1007,82.54408873437313"
                 stroke-width="5.488086927778088"
           >
@@ -555,7 +555,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-21)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Rail transport: 7.863"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,271.86976765728946C798.9285714285714,271.86976765728946,798.9285714285714,315.38297068741105,1007,315.38297068741105"
                 stroke-width="1"
           >
@@ -580,7 +580,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-22)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Lighting &amp; appliances - commercial: 90.008"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,206.938344872155C798.9285714285714,206.938344872155,798.9285714285714,134.60999409103326,1007,134.60999409103326"
                 stroke-width="8.713406505361522"
           >
@@ -605,7 +605,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-23)"
                 stroke-opacity="0.35"
                 aria-label="Electricity grid → Lighting &amp; appliances - homes: 93.494"
-                role="graphics-document"
+                role="img"
                 d="M590.8571428571429,215.82048601820227C798.9285714285714,215.82048601820227,798.9285714285714,153.4921352370805,1007,153.4921352370805"
                 stroke-width="9.050875786733071"
           >
@@ -630,7 +630,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-24)"
                 stroke-opacity="0.35"
                 aria-label="Gas imports → Ngas: 40.719"
-                role="graphics-document"
+                role="img"
                 d="M16,257.13905871187507C80.35714285714286,257.13905871187507,80.35714285714286,264.09421603038084,144.71428571428572,264.09421603038084"
                 stroke-width="3.941885160117055"
           >
@@ -655,7 +655,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-25)"
                 stroke-opacity="0.35"
                 aria-label="Gas reserves → Ngas: 82.233"
-                role="graphics-document"
+                role="img"
                 d="M16,284.00538722281055C80.35714285714286,284.00538722281055,80.35714285714286,270.04552456210695,144.71428571428572,270.04552456210695"
                 stroke-width="7.960731903335194"
           >
@@ -680,7 +680,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-26)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Heating and cooling - commercial: 0.129"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,221.00386175105515C655.2142857142858,221.00386175105515,655.2142857142858,298.1545839113207,1007,298.1545839113207"
                 stroke-width="1"
           >
@@ -705,7 +705,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-27)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Losses: 1.401"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,201.31989619745804C655.2142857142858,201.31989619745804,655.2142857142858,85.35594551771162,1007,85.35594551771162"
                 stroke-width="1"
           >
@@ -730,7 +730,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-28)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Thermal generation: 151.891"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,208.7397672645847C367.78571428571433,208.7397672645847,367.78571428571433,133.18984839487584,432.14285714285717,133.18984839487584"
                 stroke-width="14.704115495354491"
           >
@@ -755,7 +755,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-29)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Agriculture: 2.096"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,220.89616393822502C655.2142857142858,220.89616393822502,655.2142857142858,279.7391293790235,1007,279.7391293790235"
                 stroke-width="1"
           >
@@ -780,7 +780,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-30)"
                 stroke-opacity="0.35"
                 aria-label="Gas → Industry: 48.58"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,218.44326759531273C655.2142857142858,218.44326759531273,655.2142857142858,209.02222057159102,1007,209.02222057159102"
                 stroke-width="4.702885166101488"
           >
@@ -805,7 +805,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-31)"
                 stroke-opacity="0.35"
                 aria-label="Geothermal → Electricity grid: 7.013"
-                role="graphics-document"
+                role="img"
                 d="M16,234.1514971822115C295.92857142857144,234.1514971822115,295.92857142857144,243.99515352128162,575.8571428571429,243.99515352128162"
                 stroke-width="1"
           >
@@ -830,7 +830,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-32)"
                 stroke-opacity="0.35"
                 aria-label="H2 conversion → H2: 20.897"
-                role="graphics-document"
+                role="img"
                 d="M734.5714285714287,271.4664918155441C798.9285714285716,271.4664918155441,798.9285714285716,274.6946783286344,863.2857142857143,274.6946783286344"
                 stroke-width="2.0229763547966817"
           >
@@ -855,7 +855,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-33)"
                 stroke-opacity="0.35"
                 aria-label="H2 conversion → Losses: 6.242"
-                role="graphics-document"
+                role="img"
                 d="M734.5714285714287,270.15286892008476C870.7857142857143,270.15286892008476,870.7857142857143,85.72589355522206,1007,85.72589355522206"
                 stroke-width="1"
           >
@@ -880,7 +880,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-34)"
                 stroke-opacity="0.35"
                 aria-label="H2 → Road transport: 20.897"
-                role="graphics-document"
+                role="img"
                 d="M878.2857142857143,274.6946783286344C942.6428571428571,274.6946783286344,942.6428571428571,343.45292629617535,1007,343.45292629617535"
                 stroke-width="2.0229763547966817"
           >
@@ -905,7 +905,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-35)"
                 stroke-opacity="0.35"
                 aria-label="Hydro → Electricity grid: 6.995"
-                role="graphics-document"
+                role="img"
                 d="M16,244.82953356968318C295.92857142857144,244.82953356968318,295.92857142857144,244.67318990875333,575.8571428571429,244.67318990875333"
                 stroke-width="1"
           >
@@ -930,7 +930,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-36)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Industry: 121.066"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,386.0339692423182C655.2142857142858,386.0339692423182,655.2142857142858,217.233682663897,1007,217.233682663897"
                 stroke-width="11.720039018510557"
           >
@@ -955,7 +955,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-37)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → International shipping: 128.69"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,412.0524055237598C655.2142857142858,412.0524055237598,655.2142857142858,378.88976868988675,1007,378.88976868988675"
                 stroke-width="12.458095760098818"
           >
@@ -980,7 +980,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-38)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Road transport: 135.835"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,399.2484666748199C655.2142857142858,399.2484666748199,655.2142857142858,351.0393054424641,1007,351.0393054424641"
                 stroke-width="13.149781937780892"
           >
@@ -1005,7 +1005,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-39)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Domestic aviation: 14.458"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,418.98127137140386C655.2142857142858,418.98127137140386,655.2142857142858,395.8186345375309,1007,395.8186345375309"
                 stroke-width="1.3996359351892822"
           >
@@ -1030,7 +1030,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-40)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → International aviation: 206.267"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,429.6651364217101C655.2142857142858,429.6651364217101,655.2142857142858,416.5024995878371,1007,416.5024995878371"
                 stroke-width="19.968094165423132"
           >
@@ -1055,7 +1055,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-41)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Agriculture: 3.64"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,392.07017753301244C655.2142857142858,392.07017753301244,655.2142857142858,280.016771920324,1007,280.016771920324"
                 stroke-width="1"
           >
@@ -1080,7 +1080,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-42)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → National navigation: 33.218"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,441.25705134558626C655.2142857142858,441.25705134558626,655.2142857142858,438.09441451171324,1007,438.09441451171324"
                 stroke-width="3.215735682329339"
           >
@@ -1105,7 +1105,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-43)"
                 stroke-opacity="0.35"
                 aria-label="Liquid → Rail transport: 4.413"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,392.45997101019043C655.2142857142858,392.45997101019043,655.2142857142858,315.9771721931651,1007,315.9771721931651"
                 stroke-width="1"
           >
@@ -1130,7 +1130,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-44)"
                 stroke-opacity="0.35"
                 aria-label="Marine algae → Bio-conversion: 4.375"
-                role="graphics-document"
+                role="img"
                 d="M16,165.23259752955514C80.35714285714286,165.23259752955514,80.35714285714286,135.11386707291842,144.71428571428572,135.11386707291842"
                 stroke-width="1"
           >
@@ -1155,7 +1155,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-45)"
                 stroke-opacity="0.35"
                 aria-label="Ngas → Gas: 122.952"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,268.0745819820484C224.07142857142858,268.0745819820484,224.07142857142858,215.05870046527482,288.42857142857144,215.05870046527482"
                 stroke-width="11.902617063452249"
           >
@@ -1180,7 +1180,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-46)"
                 stroke-opacity="0.35"
                 aria-label="Nuclear → Thermal generation: 839.978"
-                role="graphics-document"
+                role="img"
                 d="M16,41.65788468558662C224.07142857142858,41.65788468558662,224.07142857142858,46.44548001141586,432.14285714285717,46.44548001141586"
                 stroke-width="81.31576937117325"
           >
@@ -1205,7 +1205,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-47)"
                 stroke-opacity="0.35"
                 aria-label="Oil imports → Oil: 504.287"
-                role="graphics-document"
+                role="img"
                 d="M16,421.1643316812773C80.35714285714286,421.1643316812773,80.35714285714286,415.8819148902686,144.71428571428572,415.8819148902686"
                 stroke-width="48.818523090939095"
           >
@@ -1230,7 +1230,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-48)"
                 stroke-opacity="0.35"
                 aria-label="Oil reserves → Oil: 107.703"
-                role="graphics-document"
+                role="img"
                 d="M16,460.78679661337327C80.35714285714286,460.78679661337327,80.35714285714286,445.5043798223646,144.71428571428572,445.5043798223646"
                 stroke-width="10.426406773252957"
           >
@@ -1255,7 +1255,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-49)"
                 stroke-opacity="0.35"
                 aria-label="Oil → Liquid: 611.99"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,421.09511827689505C224.07142857142858,421.09511827689505,224.07142857142858,413.242454254655,288.42857142857144,413.242454254655"
                 stroke-width="59.24492986419206"
           >
@@ -1280,7 +1280,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-50)"
                 stroke-opacity="0.35"
                 aria-label="Other waste → Solid: 56.587"
-                role="graphics-document"
+                role="img"
                 d="M16,152.2818226685436C152.21428571428572,152.2818226685436,152.21428571428572,137.98980818242902,288.42857142857144,137.98980818242902"
                 stroke-width="5.478018997410148"
           >
@@ -1305,7 +1305,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-51)"
                 stroke-opacity="0.35"
                 aria-label="Other waste → Bio-conversion: 77.81"
-                role="graphics-document"
+                role="img"
                 d="M16,145.77653594902384C80.35714285714286,145.77653594902384,80.35714285714286,131.13582448979727,144.71428571428572,131.13582448979727"
                 stroke-width="7.532554441629412"
           >
@@ -1330,7 +1330,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-52)"
                 stroke-opacity="0.35"
                 aria-label="Pumped heat → Heating and cooling - homes: 193.026"
-                role="graphics-document"
+                role="img"
                 d="M16,357.18214223732633C511.5,357.18214223732633,511.5,259.782043052153,1007,259.782043052153"
                 stroke-width="18.68627237694331"
           >
@@ -1355,7 +1355,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-53)"
                 stroke-opacity="0.35"
                 aria-label="Pumped heat → Heating and cooling - commercial: 70.672"
-                role="graphics-document"
+                role="img"
                 d="M16,369.94605138235136C511.5,369.94605138235136,511.5,301.5816009208427,1007,301.5816009208427"
                 stroke-width="6.841545913106719"
           >
@@ -1380,7 +1380,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-54)"
                 stroke-opacity="0.35"
                 aria-label="Solar PV → Electricity grid: 59.901"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,195.35715786633642C367.78571428571433,195.35715786633642,367.78571428571433,240.75628096051057,575.8571428571429,240.75628096051057"
                 stroke-width="5.798837470865486"
           >
@@ -1405,7 +1405,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-55)"
                 stroke-opacity="0.35"
                 aria-label="Solar Thermal → Heating and cooling - homes: 19.263"
-                role="graphics-document"
+                role="img"
                 d="M159.71428571428572,209.18897344156557C583.3571428571429,209.18897344156557,583.3571428571429,249.50651002388506,1007,249.50651002388506"
                 stroke-width="1.8647936795926923"
           >
@@ -1430,7 +1430,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-56)"
                 stroke-opacity="0.35"
                 aria-label="Solar → Solar Thermal: 19.263"
-                role="graphics-document"
+                role="img"
                 d="M16,222.8796465170769C80.35714285714286,222.8796465170769,80.35714285714286,209.18897344156557,144.71428571428572,209.18897344156557"
                 stroke-width="1.8647936795926923"
           >
@@ -1455,7 +1455,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-57)"
                 stroke-opacity="0.35"
                 aria-label="Solar → Solar PV: 59.901"
-                role="graphics-document"
+                role="img"
                 d="M16,219.0478309418478C80.35714285714286,219.0478309418478,80.35714285714286,195.35715786633642,144.71428571428572,195.35715786633642"
                 stroke-width="5.798837470865486"
           >
@@ -1480,7 +1480,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-58)"
                 stroke-opacity="0.35"
                 aria-label="Solid → Agriculture: 0.882"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,151.3900782916238C655.2142857142858,151.3900782916238,655.2142857142858,279.16787113766566,1007,279.16787113766566"
                 stroke-width="1"
           >
@@ -1505,7 +1505,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-59)"
                 stroke-opacity="0.35"
                 aria-label="Solid → Thermal generation: 400.12"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,127.48087342226574C367.78571428571433,127.48087342226574,367.78571428571433,106.47057767210055,432.14285714285717,106.47057767210055"
                 stroke-width="38.734425950196126"
           >
@@ -1530,7 +1530,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-60)"
                 stroke-opacity="0.35"
                 aria-label="Solid → Industry: 46.477"
-                role="graphics-document"
+                role="img"
                 d="M303.42857142857144,149.09773639597333C655.2142857142858,149.09773639597333,655.2142857142858,171.29715304429232,1007,171.29715304429232"
                 stroke-width="4.499299997218997"
           >
@@ -1555,7 +1555,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-61)"
                 stroke-opacity="0.35"
                 aria-label="Thermal generation → Electricity grid: 525.531"
-                role="graphics-document"
+                role="img"
                 d="M447.14285714285717,115.10436040123484C511.5,115.10436040123484,511.5,212.4193164837596,575.8571428571429,212.4193164837596"
                 stroke-width="50.8750914826365"
           >
@@ -1580,7 +1580,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-62)"
                 stroke-opacity="0.35"
                 aria-label="Thermal generation → Losses: 787.129"
-                role="graphics-document"
+                role="img"
                 d="M447.14285714285717,43.887402838265416C727.0714285714286,43.887402838265416,727.0714285714286,39.09980751243618,1007,39.09980751243618"
                 stroke-width="76.19961502487236"
           >
@@ -1605,7 +1605,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-63)"
                 stroke-opacity="0.35"
                 aria-label="Thermal generation → District heating: 79.329"
-                role="graphics-document"
+                role="img"
                 d="M447.14285714285717,85.82701250530909C511.5,85.82701250530909,511.5,90.11006727813582,575.8571428571429,90.11006727813582"
                 stroke-width="7.679604309215006"
           >
@@ -1630,7 +1630,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-64)"
                 stroke-opacity="0.35"
                 aria-label="Tidal → Electricity grid: 9.452"
-                role="graphics-document"
+                role="img"
                 d="M16,269.56751128153826C295.92857142857144,269.56751128153826,295.92857142857144,245.4692824604914,575.8571428571429,245.4692824604914"
                 stroke-width="1"
           >
@@ -1655,7 +1655,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-65)"
                 stroke-opacity="0.35"
                 aria-label="UK land based bioenergy → Bio-conversion: 182.01"
-                role="graphics-document"
+                role="img"
                 d="M16,123.20033562114725C80.35714285714286,123.20033562114725,80.35714285714286,118.5596241619207,144.71428571428572,118.5596241619207"
                 stroke-width="17.619846214123754"
           >
@@ -1680,7 +1680,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-66)"
                 stroke-opacity="0.35"
                 aria-label="Wave → Electricity grid: 19.013"
-                role="graphics-document"
+                role="img"
                 d="M16,298.9060491364284C295.92857142857144,298.9060491364284,295.92857142857144,246.84708841204636,575.8571428571429,246.84708841204636"
                 stroke-width="1.8405919239005273"
           >
@@ -1705,7 +1705,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
                 stroke="url(#sankey-autosize-gradient-67)"
                 stroke-opacity="0.35"
                 aria-label="Wind → Electricity grid: 289.366"
-                role="graphics-document"
+                role="img"
                 d="M16,323.83267557361665C295.92857142857144,323.83267557361665,295.92857142857144,261.7737148492346,575.8571428571429,261.7737148492346"
                 stroke-width="28.012660950475986"
           >
@@ -1713,7 +1713,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="Agricultural 'waste': 124.729"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1738,7 +1738,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Bio-conversion: 388.925"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1763,7 +1763,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Liquid: 647.587"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1788,7 +1788,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Losses: 878.325"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1813,7 +1813,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Solid: 447.48"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1838,7 +1838,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Gas: 204.097"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1863,7 +1863,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Biofuel imports: 35"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1888,7 +1888,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Biomass imports: 35"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1913,7 +1913,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Coal imports: 11.606"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1938,7 +1938,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Coal: 75.571"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1963,7 +1963,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Coal reserves: 63.965"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -1988,7 +1988,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="District heating: 79.329"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2013,7 +2013,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Industry: 568.927"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2038,7 +2038,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Heating and cooling - commercial: 134.164"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2063,7 +2063,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Heating and cooling - homes: 372.199"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2088,7 +2088,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Electricity grid: 918.607"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2113,7 +2113,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Over generation / exports: 104.453"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2138,7 +2138,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="H2 conversion: 27.14"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2163,7 +2163,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Road transport: 194.529"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2188,7 +2188,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Agriculture: 11.03"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2213,7 +2213,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Rail transport: 12.276"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2238,7 +2238,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Lighting &amp; appliances - commercial: 90.008"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2263,7 +2263,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Lighting &amp; appliances - homes: 93.494"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2288,7 +2288,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Gas imports: 40.719"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2313,7 +2313,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Ngas: 122.952"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2338,7 +2338,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Gas reserves: 82.233"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2363,7 +2363,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Thermal generation: 1,391.989"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2388,7 +2388,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Geothermal: 7.013"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2413,7 +2413,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="H2: 20.897"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2438,7 +2438,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Hydro: 6.995"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2463,7 +2463,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="International shipping: 128.69"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2488,7 +2488,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Domestic aviation: 14.458"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2513,7 +2513,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="International aviation: 206.267"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2538,7 +2538,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="National navigation: 33.218"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2563,7 +2563,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Marine algae: 4.375"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2588,7 +2588,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Nuclear: 839.978"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2613,7 +2613,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Oil imports: 504.287"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2638,7 +2638,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Oil: 611.99"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2663,7 +2663,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Oil reserves: 107.703"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2688,7 +2688,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Other waste: 134.397"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2713,7 +2713,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Pumped heat: 263.698"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2738,7 +2738,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Solar PV: 59.901"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2763,7 +2763,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Solar Thermal: 19.263"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2788,7 +2788,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Solar: 79.164"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2813,7 +2813,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Tidal: 9.452"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2838,7 +2838,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="UK land based bioenergy: 182.01"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2863,7 +2863,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Wave: 19.013"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2888,7 +2888,7 @@ exports[`Charts/Sankey Plot Autosize smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="Wind: 289.366"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -2948,7 +2948,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
               stroke="url(#sankey-filtering-gradient-0)"
               stroke-opacity="0.35"
               aria-label="A1 → B1: 8"
-              role="graphics-document"
+              role="img"
               d="M16,83.57142857142858C250.5,83.57142857142858,250.5,83.57142857142857,485,83.57142857142857"
               stroke-width="165.14285714285714"
         >
@@ -2973,7 +2973,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
               stroke="url(#sankey-filtering-gradient-1)"
               stroke-opacity="0.35"
               aria-label="A2 → B2: 4"
-              role="graphics-document"
+              role="img"
               d="M16,258.7142857142857C250.5,258.7142857142857,250.5,258.7142857142857,485,258.7142857142857"
               stroke-width="82.57142857142857"
         >
@@ -2998,7 +2998,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
               stroke="url(#sankey-filtering-gradient-2)"
               stroke-opacity="0.35"
               aria-label="A1 → B2: 2"
-              role="graphics-document"
+              role="img"
               d="M16,186.7857142857143C250.5,186.7857142857143,250.5,196.78571428571428,485,196.78571428571428"
               stroke-width="41.285714285714285"
         >
@@ -3006,7 +3006,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="A1: 10"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -3031,7 +3031,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="A2: 4"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -3056,7 +3056,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="B1: 8"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -3081,7 +3081,7 @@ exports[`Charts/Sankey Plot Filtering smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="B2: 6"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -3141,7 +3141,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
                 stroke="url(#sankey-fit-long-labels-gradient-0)"
                 stroke-opacity="0.35"
                 aria-label="A1A1A1A1A1 → B1B1B1B1B1: 8"
-                role="graphics-document"
+                role="img"
                 d="M71,83.57142857142858C275.5,83.57142857142858,275.5,83.57142857142857,480,83.57142857142857"
                 stroke-width="165.14285714285714"
           >
@@ -3166,7 +3166,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
                 stroke="url(#sankey-fit-long-labels-gradient-1)"
                 stroke-opacity="0.35"
                 aria-label="A2A2A2A2A2 → B2B2B2B2B2: 4"
-                role="graphics-document"
+                role="img"
                 d="M71,258.7142857142857C275.5,258.7142857142857,275.5,258.7142857142857,480,258.7142857142857"
                 stroke-width="82.57142857142857"
           >
@@ -3191,7 +3191,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
                 stroke="url(#sankey-fit-long-labels-gradient-2)"
                 stroke-opacity="0.35"
                 aria-label="A1A1A1A1A1 → B2B2B2B2B2: 2"
-                role="graphics-document"
+                role="img"
                 d="M71,186.7857142857143C275.5,186.7857142857143,275.5,196.78571428571428,480,196.78571428571428"
                 stroke-width="41.285714285714285"
           >
@@ -3199,7 +3199,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="A1A1A1A1A1: 10"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -3224,7 +3224,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="A2A2A2A2A2: 4"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -3249,7 +3249,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="B1B1B1B1B1: 8"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -3274,7 +3274,7 @@ exports[`Charts/Sankey Plot FitLongLabels smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="B2B2B2B2B2: 6"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -3334,7 +3334,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-0)"
               stroke-opacity="0.35"
               aria-label="Agricultural 'waste' → Bio-conversion: 124.729"
-              role="graphics-document"
+              role="img"
               d="M16,140.91786980194692C76.21428571428571,140.91786980194692,76.21428571428571,151.35658687794623,136.42857142857142,151.35658687794623"
               stroke-width="17.9582874380039"
         >
@@ -3359,7 +3359,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-1)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Liquid: 0.597"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,198.33128222624555C211.6428571428571,198.33128222624555,211.6428571428571,353.58653748741096,271.85714285714283,353.58653748741096"
               stroke-width="1"
         >
@@ -3384,7 +3384,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-2)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Losses: 26.862"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,144.31121765068102C482.49999999999994,144.31121765068102,482.49999999999994,116.26338374691052,813.5714285714284,116.26338374691052"
               stroke-width="3.867548983473456"
         >
@@ -3409,7 +3409,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-3)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Solid: 280.322"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,166.42515494014773C211.6428571428571,166.42515494014773,211.6428571428571,167.0600403571244,271.85714285714283,167.0600403571244"
               stroke-width="40.36032559545999"
         >
@@ -3434,7 +3434,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-4)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Gas: 81.144"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,192.4468111991794C211.6428571428571,192.4468111991794,211.6428571428571,227.1488454874038,271.85714285714283,227.1488454874038"
               stroke-width="11.682986922603313"
         >
@@ -3459,7 +3459,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-5)"
               stroke-opacity="0.35"
               aria-label="Biofuel imports → Liquid: 35"
-              role="graphics-document"
+              role="img"
               d="M16,528.1156396849655C143.92857142857142,528.1156396849655,143.92857142857142,444.26250625288907,271.85714285714283,444.26250625288907"
               stroke-width="5.039245567030414"
         >
@@ -3484,7 +3484,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-6)"
               stroke-opacity="0.35"
               aria-label="Biomass imports → Solid: 35"
-              role="graphics-document"
+              role="img"
               d="M16,269.48292482529854C143.92857142857142,269.48292482529854,143.92857142857142,208.7877292425869,271.85714285714283,208.7877292425869"
               stroke-width="5.039245567030414"
         >
@@ -3509,7 +3509,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-7)"
               stroke-opacity="0.35"
               aria-label="Coal imports → Coal: 11.606"
-              role="graphics-document"
+              role="img"
               d="M16,207.56794286484717C76.21428571428571,207.56794286484717,76.21428571428571,209.20976670702373,136.42857142857142,209.20976670702373"
               stroke-width="1.6710138300272852"
         >
@@ -3534,7 +3534,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-8)"
               stroke-opacity="0.35"
               aria-label="Coal reserves → Coal: 63.965"
-              role="graphics-document"
+              role="img"
               d="M16,223.0082403897908C76.21428571428571,223.0082403897908,76.21428571428571,214.65006423196738,136.42857142857142,214.65006423196738"
               stroke-width="9.209581219860013"
         >
@@ -3559,7 +3559,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-9)"
               stroke-opacity="0.35"
               aria-label="Coal → Solid: 75.571"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,213.81455731695374C211.6428571428571,213.81455731695374,211.6428571428571,192.68050067979803,271.85714285714283,192.68050067979803"
               stroke-width="10.880595049887297"
         >
@@ -3584,7 +3584,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-10)"
               stroke-opacity="0.35"
               aria-label="District heating → Industry: 10.639"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,125.46361233020049C617.9285714285713,125.46361233020049,617.9285714285713,98.64322918971378,678.1428571428571,98.64322918971378"
               stroke-width="1.5317866739324735"
         >
@@ -3609,7 +3609,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-11)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - commercial: 22.505"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,134.4991236103308C617.9285714285713,134.4991236103308,617.9285714285713,556.5774696920664,678.1428571428571,556.5774696920664"
               stroke-width="3.240234899600556"
         >
@@ -3634,7 +3634,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-12)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - homes: 46.184"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,129.5542559138486C617.9285714285713,129.5542559138486,617.9285714285713,494.6934693231435,678.1428571428571,494.6934693231435"
               stroke-width="6.64950049336379"
         >
@@ -3659,7 +3659,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-13)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Over generation / exports: 104.453"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,346.4624648903767C617.9285714285713,346.4624648903767,617.9285714285713,197.31005074761683,678.1428571428571,197.31005074761683"
               stroke-width="15.038980491800796"
         >
@@ -3684,7 +3684,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-14)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - homes: 113.726"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,399.706197691729C617.9285714285713,399.706197691729,617.9285714285713,506.2052658749126,678.1428571428571,506.2052658749126"
               stroke-width="16.37409261017431"
         >
@@ -3709,7 +3709,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-15)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → H2 conversion: 27.14"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,382.35607520444324C617.9285714285713,382.35607520444324,617.9285714285713,263.2036610616834,678.1428571428571,263.2036610616834"
               stroke-width="3.9075749911201556"
         >
@@ -3734,7 +3734,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-16)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Industry: 342.165"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,314.3107823667197C617.9285714285713,314.3107823667197,617.9285714285713,137.72747382915688,678.1428571428571,137.72747382915688"
               stroke-width="49.26438455551319"
         >
@@ -3759,7 +3759,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-17)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Road transport: 37.797"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,387.666072236868C753.3571428571428,387.666072236868,753.3571428571428,306.7525799829677,948.9999999999999,306.7525799829677"
               stroke-width="5.44195327705853"
         >
@@ -3784,7 +3784,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-18)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Agriculture: 4.412"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,384.62747914917105C617.9285714285713,384.62747914917105,617.9285714285713,284.7342552468357,678.1428571428571,284.7342552468357"
               stroke-width="1"
         >
@@ -3809,7 +3809,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-19)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - commercial: 40.858"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,410.8345796450694C617.9285714285713,410.8345796450694,617.9285714285713,561.1574960094955,678.1428571428571,561.1574960094955"
               stroke-width="5.882671296506532"
         >
@@ -3834,7 +3834,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-20)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Losses: 56.691"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,285.5974490826699C685.6428571428571,285.5974490826699,685.6428571428571,123.37872649833508,813.5714285714284,123.37872649833508"
               stroke-width="8.16228201258632"
         >
@@ -3859,7 +3859,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-21)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Rail transport: 7.863"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,390.9531001310196C617.9285714285713,390.9531001310196,617.9285714285713,376.9818056536467,678.1428571428571,376.9818056536467"
               stroke-width="1.1321025112445757"
         >
@@ -3884,7 +3884,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-22)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - commercial: 90.008"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,360.46156106480953C617.9285714285713,360.46156106480953,617.9285714285713,221.30914692204968,678.1428571428571,221.30914692204968"
               stroke-width="12.959211857064956"
         >
@@ -3909,7 +3909,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-23)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - homes: 93.494"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,373.67172735111257C617.9285714285713,373.67172735111257,617.9285714285713,244.5193132083527,678.1428571428571,244.5193132083527"
               stroke-width="13.461120715541186"
         >
@@ -3934,7 +3934,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-24)"
               stroke-opacity="0.35"
               aria-label="Gas imports → Ngas: 40.719"
-              role="graphics-document"
+              role="img"
               d="M16,340.1513905184738C76.21428571428571,340.1513905184738,76.21428571428571,309.77583744011577,136.42857142857142,309.77583744011577"
               stroke-width="5.862658292683184"
         >
@@ -3959,7 +3959,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-25)"
               stroke-opacity="0.35"
               aria-label="Gas reserves → Ngas: 82.233"
-              role="graphics-document"
+              role="img"
               d="M16,298.9295665544762C76.21428571428571,298.9295665544762,76.21428571428571,300.924618569294,136.42857142857142,300.924618569294"
               stroke-width="11.839779448960345"
         >
@@ -3984,7 +3984,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-26)"
               stroke-opacity="0.35"
               aria-label="Gas → Heating and cooling - commercial: 0.129"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,250.68363405910594C482.5,250.68363405910594,482.5,558.2068737515544,678.1428571428571,558.2068737515544"
               stroke-width="1"
         >
@@ -4009,7 +4009,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-27)"
               stroke-opacity="0.35"
               aria-label="Gas → Losses: 1.401"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,221.40820892666514C550.2142857142857,221.40820892666514,550.2142857142857,118.29801513921024,813.5714285714284,118.29801513921024"
               stroke-width="1"
         >
@@ -4034,7 +4034,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-28)"
               stroke-opacity="0.35"
               aria-label="Gas → Thermal generation: 151.891"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,232.44358080468263C347.07142857142856,232.44358080468263,347.07142857142856,193.3557819475401,407.2857142857142,193.3557819475401"
               stroke-width="21.869029954909045"
         >
@@ -4059,7 +4059,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-29)"
               stroke-opacity="0.35"
               aria-label="Gas → Agriculture: 2.096"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,250.52345803929677C482.5,250.52345803929677,482.5,284.2657493875466,678.1428571428571,284.2657493875466"
               stroke-width="1"
         >
@@ -4084,7 +4084,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-30)"
               stroke-opacity="0.35"
               aria-label="Gas → Industry: 48.58"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,246.87533220565626C482.5,246.87533220565626,482.5,109.59804512788119,678.1428571428571,109.59804512788119"
               stroke-width="6.994472847038215"
         >
@@ -4109,7 +4109,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-31)"
               stroke-opacity="0.35"
               aria-label="Geothermal → Electricity grid: 7.013"
-              role="graphics-document"
+              role="img"
               d="M16,315.35431669555044C279.35714285714283,315.35431669555044,279.35714285714283,358.69343377378334,542.7142857142857,358.69343377378334"
               stroke-width="1.0097208331881227"
         >
@@ -4134,7 +4134,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-32)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → H2: 20.897"
-              role="graphics-document"
+              role="img"
               d="M693.1428571428571,263.6529457985954C753.3571428571428,263.6529457985954,753.3571428571428,265.0222366882905,813.5714285714284,265.0222366882905"
               stroke-width="3.0087175604067014"
         >
@@ -4159,7 +4159,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-33)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → Losses: 6.242"
-              role="graphics-document"
+              role="img"
               d="M693.1428571428571,261.6992302922577C753.3571428571428,261.6992302922577,753.3571428571428,118.84822876590758,813.5714285714284,118.84822876590758"
               stroke-width="1"
         >
@@ -4184,7 +4184,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-34)"
               stroke-opacity="0.35"
               aria-label="H2 → Road transport: 20.897"
-              role="graphics-document"
+              role="img"
               d="M828.5714285714284,265.0222366882905C888.7857142857142,265.0222366882905,888.7857142857142,302.5272445642351,948.9999999999999,302.5272445642351"
               stroke-width="3.0087175604067014"
         >
@@ -4209,7 +4209,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-35)"
               stroke-opacity="0.35"
               aria-label="Hydro → Electricity grid: 6.995"
-              role="graphics-document"
+              role="img"
               d="M16,282.5061122194049C279.35714285714283,282.5061122194049,279.35714285714283,357.6850087465982,542.7142857142857,357.6850087465982"
               stroke-width="1.0071292211822214"
         >
@@ -4234,7 +4234,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-36)"
               stroke-opacity="0.35"
               aria-label="Liquid → Industry: 121.066"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,362.2590071190479C482.5,362.2590071190479,482.5,171.07511330431498,678.1428571428571,171.07511330431498"
               stroke-width="17.430894394802973"
         >
@@ -4259,7 +4259,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-37)"
               stroke-opacity="0.35"
               aria-label="Liquid → International shipping: 128.69"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,400.32014092993916C347.07142857142856,400.32014092993916,347.07142857142856,359.63066938094335,407.2857142857142,359.63066938094335"
               stroke-width="18.52858605774697"
         >
@@ -4284,7 +4284,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-38)"
               stroke-opacity="0.35"
               aria-label="Liquid → Road transport: 135.835"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,381.2771918782431C617.9285714285713,381.2771918782431,617.9285714285713,319.2522126443195,948.9999999999999,319.2522126443195"
               stroke-width="19.557312045645038"
         >
@@ -4309,7 +4309,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-39)"
               stroke-opacity="0.35"
               aria-label="Liquid → Domestic aviation: 14.458"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,411.26063101285166C347.07142857142856,411.26063101285166,347.07142857142856,379.9357825870757,407.2857142857142,379.9357825870757"
               stroke-width="2.081640354517878"
         >
@@ -4334,7 +4334,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-40)"
               stroke-opacity="0.35"
               aria-label="Liquid → International aviation: 206.267"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,427.15045212403436C347.07142857142856,427.15045212403436,347.07142857142856,405.8256036982584,407.2857142857142,405.8256036982584"
               stroke-width="29.698001867847495"
         >
@@ -4359,7 +4359,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-41)"
               stroke-opacity="0.35"
               aria-label="Liquid → Agriculture: 3.64"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,371.23649508593496C482.5,371.23649508593496,482.5,285.31391246548895,678.1428571428571,285.31391246548895"
               stroke-width="1"
         >
@@ -4384,7 +4384,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-42)"
               stroke-opacity="0.35"
               aria-label="Liquid → National navigation: 33.218"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,444.3907910471812C347.07142857142856,444.3907910471812,347.07142857142856,433.0659426214051,407.2857142857142,433.0659426214051"
               stroke-width="4.78267597844618"
         >
@@ -4409,7 +4409,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-43)"
               stroke-opacity="0.35"
               aria-label="Liquid → Rail transport: 4.413"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,409.9021223972027C482.5,409.9021223972027,482.5,377.865545347659,678.1428571428571,377.865545347659"
               stroke-width="1"
         >
@@ -4434,7 +4434,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-44)"
               stroke-opacity="0.35"
               aria-label="Marine algae → Bio-conversion: 4.375"
-              role="graphics-document"
+              role="img"
               d="M16,196.41748310189413C76.21428571428571,196.41748310189413,76.21428571428571,186.85620017789347,136.42857142857142,186.85620017789347"
               stroke-width="1"
         >
@@ -4459,7 +4459,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-45)"
               stroke-opacity="0.35"
               aria-label="Ngas → Gas: 122.952"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,303.8559477156356C211.6428571428571,303.8559477156356,211.6428571428571,241.8415578195272,271.85714285714283,241.8415578195272"
               stroke-width="17.70243774164353"
         >
@@ -4484,7 +4484,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-46)"
               stroke-opacity="0.35"
               aria-label="Nuclear → Thermal generation: 839.978"
-              role="graphics-document"
+              role="img"
               d="M16,61.46936304147247C211.6428571428571,61.46936304147247,211.6428571428571,64.34324860632141,407.2857142857142,64.34324860632141"
               stroke-width="120.93872608294494"
         >
@@ -4509,7 +4509,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-47)"
               stroke-opacity="0.35"
               aria-label="Oil imports → Oil: 504.287"
-              role="graphics-document"
+              role="img"
               d="M16,389.38594865425927C76.21428571428571,389.38594865425927,76.21428571428571,392.0512890505379,136.42857142857142,392.0512890505379"
               stroke-width="72.6064579788876"
         >
@@ -4534,7 +4534,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-48)"
               stroke-opacity="0.35"
               aria-label="Oil reserves → Oil: 107.703"
-              role="graphics-document"
+              role="img"
               d="M16,507.84256168279495C76.21428571428571,507.84256168279495,76.21428571428571,436.10797325863706,136.42857142857142,436.10797325863706"
               stroke-width="15.506910437310763"
         >
@@ -4559,7 +4559,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-49)"
               stroke-opacity="0.35"
               aria-label="Oil → Liquid: 611.99"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,399.80474426919324C211.6428571428571,399.80474426919324,211.6428571428571,397.6861992612746,271.85714285714283,397.6861992612746"
               stroke-width="88.11336841619837"
         >
@@ -4584,7 +4584,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-50)"
               stroke-opacity="0.35"
               aria-label="Other waste → Solid: 56.587"
-              role="graphics-document"
+              role="img"
               d="M16,252.8896479146183C143.92857142857142,252.8896479146183,143.92857142857142,202.1944523319067,271.85714285714283,202.1944523319067"
               stroke-width="8.147308254330001"
         >
@@ -4609,7 +4609,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-51)"
               stroke-opacity="0.35"
               aria-label="Other waste → Bio-conversion: 77.81"
-              role="graphics-document"
+              role="img"
               d="M16,243.21451239358706C76.21428571428571,243.21451239358706,76.21428571428571,192.7726344196991,136.42857142857142,192.7726344196991"
               stroke-width="11.202962787732472"
         >
@@ -4634,7 +4634,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-52)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - homes: 193.026"
-              role="graphics-document"
+              role="img"
               d="M16,575.9289637107437C347.07142857142856,575.9289637107437,347.07142857142856,531.0615606019572,678.1428571428571,531.0615606019572"
               stroke-width="27.791583280617505"
         >
@@ -4659,7 +4659,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-53)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - commercial: 70.672"
-              role="graphics-document"
+              role="img"
               d="M16,594.9123776755264C347.07142857142856,594.9123776755264,347.07142857142856,569.1864539822227,678.1428571428571,569.1864539822227"
               stroke-width="10.175244648947812"
         >
@@ -4684,7 +4684,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-54)"
               stroke-opacity="0.35"
               aria-label="Solar PV → Electricity grid: 59.901"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,526.0226743892075C347.07142857142856,526.0226743892075,347.07142857142856,409.27133368095417,542.7142857142857,409.27133368095417"
               stroke-width="8.624452820305395"
         >
@@ -4709,7 +4709,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-55)"
               stroke-opacity="0.35"
               aria-label="Solar Thermal → Heating and cooling - homes: 19.263"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,541.7216291901847C414.7857142857143,541.7216291901847,414.7857142857143,515.7790405708241,678.1428571428571,515.7790405708241"
               stroke-width="2.773456781648768"
         >
@@ -4734,7 +4734,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-56)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar Thermal: 19.263"
-              role="graphics-document"
+              role="img"
               d="M16,550.6464436796105C76.21428571428571,550.6464436796105,76.21428571428571,541.7216291901847,136.42857142857142,541.7216291901847"
               stroke-width="2.773456781648768"
         >
@@ -4759,7 +4759,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-57)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar PV: 59.901"
-              role="graphics-document"
+              role="img"
               d="M16,544.9474888786334C76.21428571428571,544.9474888786334,76.21428571428571,526.0226743892075,136.42857142857142,526.0226743892075"
               stroke-width="8.624452820305395"
         >
@@ -4784,7 +4784,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-58)"
               stroke-opacity="0.35"
               aria-label="Solid → Agriculture: 0.882"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,211.24371355351275C482.5,211.24371355351275,482.5,284.0513654832807,678.1428571428571,284.0513654832807"
               stroke-width="1"
         >
@@ -4809,7 +4809,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-59)"
               stroke-opacity="0.35"
               aria-label="Solid → Thermal generation: 400.12"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,175.68420522054026C347.07142857142856,175.68420522054026,347.07142857142856,153.61693930893972,407.2857142857142,153.61693930893972"
               stroke-width="57.608655322291696"
         >
@@ -4834,7 +4834,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-60)"
               stroke-opacity="0.35"
               aria-label="Solid → Industry: 46.477"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,207.83437597052713C482.5,207.83437597052713,482.5,102.75496561552104,678.1428571428571,102.75496561552104"
               stroke-width="6.691686177682072"
         >
@@ -4859,7 +4859,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-61)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Electricity grid: 525.531"
-              role="graphics-document"
+              role="img"
               d="M422.2857142857142,166.45772889517949C482.49999999999994,166.45772889517949,482.49999999999994,319.34887610619194,542.7142857142857,319.34887610619194"
               stroke-width="75.6651360596303"
         >
@@ -4884,7 +4884,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-62)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Losses: 787.129"
-              role="graphics-document"
+              role="img"
               d="M422.2857142857142,60.53869019243584C617.9285714285713,60.53869019243584,617.9285714285713,57.664804627586896,813.5714285714284,57.664804627586896"
               stroke-width="113.32960925517379"
         >
@@ -4909,7 +4909,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-63)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → District heating: 79.329"
-              role="graphics-document"
+              role="img"
               d="M422.2857142857142,122.91432784269354C482.49999999999994,122.91432784269354,482.49999999999994,130.40855201590503,542.7142857142857,130.40855201590503"
               stroke-width="11.42166604534159"
         >
@@ -4934,7 +4934,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-64)"
               stroke-opacity="0.35"
               aria-label="Tidal → Electricity grid: 9.452"
-              role="graphics-document"
+              role="img"
               d="M16,326.5396192421384C279.35714285714283,326.5396192421384,279.35714285714283,359.8787363203713,542.7142857142857,359.8787363203713"
               stroke-width="1.3608842599877564"
         >
@@ -4959,7 +4959,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-65)"
               stroke-opacity="0.35"
               aria-label="UK land based bioenergy → Bio-conversion: 182.01"
-              role="graphics-document"
+              role="img"
               d="M16,172.9997718874518C76.21428571428571,172.9997718874518,76.21428571428571,173.43848896345114,136.42857142857142,173.43848896345114"
               stroke-width="26.205516733005876"
         >
@@ -4984,7 +4984,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-66)"
               stroke-opacity="0.35"
               aria-label="Wave → Electricity grid: 19.013"
-              role="graphics-document"
+              role="img"
               d="M16,488.7203753789117C279.35714285714283,488.7203753789117,279.35714285714283,403.5903761855737,542.7142857142857,403.5903761855737"
               stroke-width="2.7374621704556934"
         >
@@ -5009,7 +5009,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
               stroke="url(#sankey-justification-gradient-67)"
               stroke-opacity="0.35"
               aria-label="Wind → Electricity grid: 289.366"
-              role="graphics-document"
+              role="img"
               d="M16,456.5204109686934C279.35714285714283,456.5204109686934,279.35714285714283,381.39041177535546,542.7142857142857,381.39041177535546"
               stroke-width="41.66246664998065"
         >
@@ -5017,7 +5017,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Agricultural 'waste': 124.729"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5042,7 +5042,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Bio-conversion: 388.925"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5067,7 +5067,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Liquid: 647.587"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5092,7 +5092,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Losses: 878.325"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5117,7 +5117,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solid: 447.48"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5142,7 +5142,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Gas: 204.097"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5167,7 +5167,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Biofuel imports: 35"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5192,7 +5192,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Biomass imports: 35"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5217,7 +5217,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Coal imports: 11.606"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5242,7 +5242,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Coal: 75.571"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5267,7 +5267,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Coal reserves: 63.965"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5292,7 +5292,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="District heating: 79.329"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5317,7 +5317,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Industry: 568.927"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5342,7 +5342,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Heating and cooling - commercial: 134.164"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5367,7 +5367,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Heating and cooling - homes: 372.199"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5392,7 +5392,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Electricity grid: 918.607"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5417,7 +5417,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Over generation / exports: 104.453"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5442,7 +5442,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="H2 conversion: 27.14"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5467,7 +5467,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Road transport: 194.529"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5492,7 +5492,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Agriculture: 11.03"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5517,7 +5517,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Rail transport: 12.276"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5542,7 +5542,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Lighting &amp; appliances - commercial: 90.008"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5567,7 +5567,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Lighting &amp; appliances - homes: 93.494"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5592,7 +5592,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Gas imports: 40.719"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5617,7 +5617,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Ngas: 122.952"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5642,7 +5642,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Gas reserves: 82.233"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5667,7 +5667,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Thermal generation: 1,391.989"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5692,7 +5692,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Geothermal: 7.013"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5717,7 +5717,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="H2: 20.897"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5742,7 +5742,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Hydro: 6.995"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5767,7 +5767,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="International shipping: 128.69"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5792,7 +5792,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Domestic aviation: 14.458"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5817,7 +5817,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="International aviation: 206.267"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5842,7 +5842,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="National navigation: 33.218"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5867,7 +5867,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Marine algae: 4.375"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5892,7 +5892,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Nuclear: 839.978"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5917,7 +5917,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Oil imports: 504.287"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5942,7 +5942,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Oil: 611.99"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5967,7 +5967,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Oil reserves: 107.703"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -5992,7 +5992,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Other waste: 134.397"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6017,7 +6017,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Pumped heat: 263.698"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6042,7 +6042,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solar PV: 59.901"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6067,7 +6067,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solar Thermal: 19.263"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6092,7 +6092,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solar: 79.164"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6117,7 +6117,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Tidal: 9.452"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6142,7 +6142,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="UK land based bioenergy: 182.01"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6167,7 +6167,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Wave: 19.013"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6192,7 +6192,7 @@ exports[`Charts/Sankey Plot Justification smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Wind: 289.366"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -6252,7 +6252,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
                 stroke="url(#sankey-labels-inside-container-gradient-0)"
                 stroke-opacity="0.35"
                 aria-label="A1 → B1: 8"
-                role="graphics-document"
+                role="img"
                 d="M71,83.57142857142858C275.5,83.57142857142858,275.5,83.57142857142857,480,83.57142857142857"
                 stroke-width="165.14285714285714"
           >
@@ -6277,7 +6277,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
                 stroke="url(#sankey-labels-inside-container-gradient-1)"
                 stroke-opacity="0.35"
                 aria-label="A2 → B2: 4"
-                role="graphics-document"
+                role="img"
                 d="M71,258.7142857142857C275.5,258.7142857142857,275.5,258.7142857142857,480,258.7142857142857"
                 stroke-width="82.57142857142857"
           >
@@ -6302,7 +6302,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
                 stroke="url(#sankey-labels-inside-container-gradient-2)"
                 stroke-opacity="0.35"
                 aria-label="A1 → B2: 2"
-                role="graphics-document"
+                role="img"
                 d="M71,186.7857142857143C275.5,186.7857142857143,275.5,196.78571428571428,480,196.78571428571428"
                 stroke-width="41.285714285714285"
           >
@@ -6310,7 +6310,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </g>
         <g tabindex="0"
            aria-label="A1: 10"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -6335,7 +6335,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="A2: 4"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -6360,7 +6360,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="B1: 8"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -6385,7 +6385,7 @@ exports[`Charts/Sankey Plot LabelsInsideContainer smoke-test 1`] = `
         </text>
         <g tabindex="0"
            aria-label="B2: 6"
-           role="graphics-document"
+           role="img"
         >
           <rect class="_node_oqk6h_1"
                 fill-opacity="0.9"
@@ -6445,7 +6445,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-0)"
               stroke-opacity="0.35"
               aria-label="Agricultural 'waste' → Bio-conversion: 124.729"
-              role="graphics-document"
+              role="img"
               d="M16,140.91786980194686C76.21428571428571,140.91786980194686,76.21428571428571,145.5632812182147,136.42857142857142,145.5632812182147"
               stroke-width="17.9582874380039"
         >
@@ -6470,7 +6470,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-1)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Liquid: 0.597"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,192.53797656651403C211.6428571428571,192.53797656651403,211.6428571428571,472.99523701074804,271.85714285714283,472.99523701074804"
               stroke-width="1"
         >
@@ -6495,7 +6495,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-2)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Losses: 26.862"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,138.5179119909495C550.2142857142857,138.5179119909495,550.2142857142857,116.26338374691052,948.9999999999999,116.26338374691052"
               stroke-width="3.867548983473456"
         >
@@ -6520,7 +6520,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-3)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Solid: 280.322"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,160.63184928041622C211.6428571428571,160.63184928041622,211.6428571428571,167.32188473796813,271.85714285714283,167.32188473796813"
               stroke-width="40.36032559545999"
         >
@@ -6545,7 +6545,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-4)"
               stroke-opacity="0.35"
               aria-label="Bio-conversion → Gas: 81.144"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,186.65350553944788C211.6428571428571,186.65350553944788,211.6428571428571,260.9928472323047,271.85714285714283,260.9928472323047"
               stroke-width="11.682986922603313"
         >
@@ -6570,7 +6570,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-5)"
               stroke-opacity="0.35"
               aria-label="Biofuel imports → Liquid: 35"
-              role="graphics-document"
+              role="img"
               d="M16,597.4803772164845C143.92857142857142,597.4803772164845,143.92857142857142,563.6712057762261,271.85714285714283,563.6712057762261"
               stroke-width="5.039245567030414"
         >
@@ -6595,7 +6595,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-6)"
               stroke-opacity="0.35"
               aria-label="Biomass imports → Solid: 35"
-              role="graphics-document"
+              role="img"
               d="M16,227.9724240795324C143.92857142857142,227.9724240795324,143.92857142857142,198.16897857354334,271.85714285714283,198.16897857354334"
               stroke-width="5.039245567030414"
         >
@@ -6620,7 +6620,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-7)"
               stroke-opacity="0.35"
               aria-label="Coal imports → Coal: 11.606"
-              role="graphics-document"
+              role="img"
               d="M16,251.95745947394008C76.21428571428571,251.95745947394008,76.21428571428571,235.3395344255186,136.42857142857142,235.3395344255186"
               stroke-width="1.6710138300272852"
         >
@@ -6645,7 +6645,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-8)"
               stroke-opacity="0.35"
               aria-label="Coal reserves → Coal: 63.965"
-              role="graphics-document"
+              role="img"
               d="M16,267.39775699888366C76.21428571428571,267.39775699888366,76.21428571428571,240.77983195046224,136.42857142857142,240.77983195046224"
               stroke-width="9.209581219860013"
         >
@@ -6670,7 +6670,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-9)"
               stroke-opacity="0.35"
               aria-label="Coal → Solid: 75.571"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,239.9443250354486C211.6428571428571,239.9443250354486,211.6428571428571,206.12889888200218,271.85714285714283,206.12889888200218"
               stroke-width="10.880595049887297"
         >
@@ -6695,7 +6695,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-10)"
               stroke-opacity="0.35"
               aria-label="District heating → Industry: 10.639"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,206.68975961650932C753.3571428571428,206.68975961650932,753.3571428571428,216.37676008368354,948.9999999999999,216.37676008368354"
               stroke-width="1.5317866739324735"
         >
@@ -6720,7 +6720,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-11)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - commercial: 22.505"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,215.72527089663967C753.3571428571428,215.72527089663967,753.3571428571428,381.7220835166342,948.9999999999999,381.7220835166342"
               stroke-width="3.240234899600556"
         >
@@ -6745,7 +6745,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-12)"
               stroke-opacity="0.35"
               aria-label="District heating → Heating and cooling - homes: 46.184"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,210.78040320015748C753.3571428571428,210.78040320015748,753.3571428571428,304.15715546468607,948.9999999999999,304.15715546468607"
               stroke-width="6.64950049336379"
         >
@@ -6770,7 +6770,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-13)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Over generation / exports: 104.453"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,246.4133220553514C753.3571428571428,246.4133220553514,753.3571428571428,144.97935775052866,948.9999999999999,144.97935775052866"
               stroke-width="15.038980491800796"
         >
@@ -6795,7 +6795,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-14)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - homes: 113.726"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,341.71215072557845C753.3571428571428,341.71215072557845,753.3571428571428,315.66895201645514,948.9999999999999,315.66895201645514"
               stroke-width="16.37409261017431"
         >
@@ -6820,7 +6820,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-15)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → H2 conversion: 27.14"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,331.5713169249312C617.9285714285713,331.5713169249312,617.9285714285713,352.1106628830284,678.1428571428571,352.1106628830284"
               stroke-width="3.9075749911201556"
         >
@@ -6845,7 +6845,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-16)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Industry: 342.165"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,304.98533715161454C753.3571428571428,304.98533715161454,753.3571428571428,241.77484569840638,948.9999999999999,241.77484569840638"
               stroke-width="49.26438455551319"
         >
@@ -6870,7 +6870,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-17)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Road transport: 37.797"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,360.27018037528137C753.3571428571428,360.27018037528137,753.3571428571428,432.9460670420357,948.9999999999999,432.9460670420357"
               stroke-width="5.44195327705853"
         >
@@ -6895,7 +6895,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-18)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Agriculture: 4.412"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,350.2168134798333C753.3571428571428,350.2168134798333,753.3571428571428,364.8656438212654,948.9999999999999,364.8656438212654"
               stroke-width="1"
         >
@@ -6920,7 +6920,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-19)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Heating and cooling - commercial: 40.858"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,353.47576557725426C753.3571428571428,353.47576557725426,753.3571428571428,386.28353661468776,948.9999999999999,386.28353661468776"
               stroke-width="5.882671296506532"
         >
@@ -6945,7 +6945,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-20)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Losses: 56.691"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,234.81269080315784C753.3571428571428,234.81269080315784,753.3571428571428,122.27829924494041,948.9999999999999,122.27829924494041"
               stroke-width="8.16228201258632"
         >
@@ -6970,7 +6970,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-21)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Rail transport: 7.863"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,356.9831524811299C753.3571428571428,356.9831524811299,753.3571428571428,409.9847413868868,948.9999999999999,409.9847413868868"
               stroke-width="1.1321025112445757"
         >
@@ -6995,7 +6995,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-22)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - commercial: 90.008"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,260.4124182297843C753.3571428571428,260.4124182297843,753.3571428571428,168.9784539249615,948.9999999999999,168.9784539249615"
               stroke-width="12.959211857064956"
         >
@@ -7020,7 +7020,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-23)"
               stroke-opacity="0.35"
               aria-label="Electricity grid → Lighting &amp; appliances - homes: 93.494"
-              role="graphics-document"
+              role="img"
               d="M557.7142857142857,273.62258451608733C753.3571428571428,273.62258451608733,753.3571428571428,192.18862021126458,948.9999999999999,192.18862021126458"
               stroke-width="13.461120715541186"
         >
@@ -7045,7 +7045,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-24)"
               stroke-opacity="0.35"
               aria-label="Gas imports → Ngas: 40.719"
-              role="graphics-document"
+              role="img"
               d="M16,317.3415071902975C76.21428571428571,317.3415071902975,76.21428571428571,323.85729741436137,136.42857142857142,323.85729741436137"
               stroke-width="5.862658292683184"
         >
@@ -7070,7 +7070,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-25)"
               stroke-opacity="0.35"
               aria-label="Gas reserves → Ngas: 82.233"
-              role="graphics-document"
+              role="img"
               d="M16,347.1998552823015C76.21428571428571,347.1998552823015,76.21428571428571,332.7085162851832,136.42857142857142,332.7085162851832"
               stroke-width="11.839779448960345"
         >
@@ -7095,7 +7095,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-26)"
               stroke-opacity="0.35"
               aria-label="Gas → Heating and cooling - commercial: 0.129"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,284.5276358040069C617.9285714285713,284.5276358040069,617.9285714285713,389.2341588726289,948.9999999999999,389.2341588726289"
               stroke-width="1"
         >
@@ -7120,7 +7120,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-27)"
               stroke-opacity="0.35"
               aria-label="Gas → Losses: 1.401"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,255.25221067156608C617.9285714285713,255.25221067156608,617.9285714285713,126.46029715179655,948.9999999999999,126.46029715179655"
               stroke-width="1"
         >
@@ -7145,7 +7145,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-28)"
               stroke-opacity="0.35"
               aria-label="Gas → Thermal generation: 151.891"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,266.2875825495836C347.07142857142856,266.2875825495836,347.07142857142856,194.97960437830145,407.2857142857142,194.97960437830145"
               stroke-width="21.869029954909045"
         >
@@ -7170,7 +7170,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-29)"
               stroke-opacity="0.35"
               aria-label="Gas → Agriculture: 2.096"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,284.36745978419765C617.9285714285713,284.36745978419765,617.9285714285713,365.33414968055445,948.9999999999999,365.33414968055445"
               stroke-width="1"
         >
@@ -7195,7 +7195,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-30)"
               stroke-opacity="0.35"
               aria-label="Gas → Industry: 48.58"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,280.7193339505572C617.9285714285713,280.7193339505572,617.9285714285713,269.9042743996821,948.9999999999999,269.9042743996821"
               stroke-width="6.994472847038215"
         >
@@ -7220,7 +7220,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-31)"
               stroke-opacity="0.35"
               aria-label="Geothermal → Electricity grid: 7.013"
-              role="graphics-document"
+              role="img"
               d="M16,303.90531762736185C279.35714285714283,303.90531762736185,279.35714285714283,315.52599909339443,542.7142857142857,315.52599909339443"
               stroke-width="1.0097208331881227"
         >
@@ -7245,7 +7245,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-32)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → H2: 20.897"
-              role="graphics-document"
+              role="img"
               d="M693.1428571428571,352.5599476199404C753.3571428571428,352.5599476199404,753.3571428571428,355.2968396101431,813.5714285714284,355.2968396101431"
               stroke-width="3.0087175604067014"
         >
@@ -7270,7 +7270,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-33)"
               stroke-opacity="0.35"
               aria-label="H2 conversion → Losses: 6.242"
-              role="graphics-document"
+              role="img"
               d="M693.1428571428571,350.6062321136027C821.0714285714284,350.6062321136027,821.0714285714284,127.0105107784939,948.9999999999999,127.0105107784939"
               stroke-width="1"
         >
@@ -7295,7 +7295,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-34)"
               stroke-opacity="0.35"
               aria-label="H2 → Road transport: 20.897"
-              role="graphics-document"
+              role="img"
               d="M828.5714285714284,355.2968396101431C888.7857142857142,355.2968396101431,888.7857142857142,437.1714024607683,948.9999999999999,437.1714024607683"
               stroke-width="3.0087175604067014"
         >
@@ -7320,7 +7320,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-35)"
               stroke-opacity="0.35"
               aria-label="Hydro → Electricity grid: 6.995"
-              role="graphics-document"
+              role="img"
               d="M16,330.7764009472302C279.35714285714283,330.7764009472302,279.35714285714283,316.5344241205796,542.7142857142857,316.5344241205796"
               stroke-width="1.0071292211822214"
         >
@@ -7345,7 +7345,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-36)"
               stroke-opacity="0.35"
               aria-label="Liquid → Industry: 121.066"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,481.667706642385C617.9285714285713,481.667706642385,617.9285714285713,282.1169580206027,948.9999999999999,282.1169580206027"
               stroke-width="17.430894394802973"
         >
@@ -7370,7 +7370,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-37)"
               stroke-opacity="0.35"
               aria-label="Liquid → International shipping: 128.69"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,520.3642173300564C617.9285714285713,520.3642173300564,617.9285714285713,477.49736631549024,948.9999999999999,477.49736631549024"
               stroke-width="18.52858605774697"
         >
@@ -7395,7 +7395,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-38)"
               stroke-opacity="0.35"
               aria-label="Liquid → Road transport: 135.835"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,501.3212682783603C617.9285714285713,501.3212682783603,617.9285714285713,448.4544172637942,948.9999999999999,448.4544172637942"
               stroke-width="19.557312045645038"
         >
@@ -7420,7 +7420,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-39)"
               stroke-opacity="0.35"
               aria-label="Liquid → Domestic aviation: 14.458"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,530.6693305361888C617.9285714285713,530.6693305361888,617.9285714285713,497.8024795216227,948.9999999999999,497.8024795216227"
               stroke-width="2.081640354517878"
         >
@@ -7445,7 +7445,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-40)"
               stroke-opacity="0.35"
               aria-label="Liquid → International aviation: 206.267"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,546.5591516473714C617.9285714285713,546.5591516473714,617.9285714285713,523.6923006328054,948.9999999999999,523.6923006328054"
               stroke-width="29.698001867847495"
         >
@@ -7470,7 +7470,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-41)"
               stroke-opacity="0.35"
               aria-label="Liquid → Agriculture: 3.64"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,490.64519460927204C617.9285714285713,490.64519460927204,617.9285714285713,365.7470798601614,948.9999999999999,365.7470798601614"
               stroke-width="1"
         >
@@ -7495,7 +7495,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-42)"
               stroke-opacity="0.35"
               aria-label="Liquid → National navigation: 33.218"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,563.7994905705182C617.9285714285713,563.7994905705182,617.9285714285713,550.9326395559524,948.9999999999999,550.9326395559524"
               stroke-width="4.78267597844618"
         >
@@ -7520,7 +7520,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-43)"
               stroke-opacity="0.35"
               aria-label="Liquid → Rail transport: 4.413"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,491.2249238171477C617.9285714285713,491.2249238171477,617.9285714285713,410.86848108089913,948.9999999999999,410.86848108089913"
               stroke-width="1"
         >
@@ -7545,7 +7545,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-44)"
               stroke-opacity="0.35"
               aria-label="Marine algae → Bio-conversion: 4.375"
-              role="graphics-document"
+              role="img"
               d="M16,240.80699971098704C76.21428571428571,240.80699971098704,76.21428571428571,192.26585730589443,136.42857142857142,192.26585730589443"
               stroke-width="1"
         >
@@ -7570,7 +7570,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-45)"
               stroke-opacity="0.35"
               aria-label="Ngas → Gas: 122.952"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,329.77718713884155C211.6428571428571,329.77718713884155,211.6428571428571,275.68555956442816,271.85714285714283,275.68555956442816"
               stroke-width="17.70243774164353"
         >
@@ -7595,7 +7595,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-46)"
               stroke-opacity="0.35"
               aria-label="Nuclear → Thermal generation: 839.978"
-              role="graphics-document"
+              role="img"
               d="M16,61.46936304147247C211.6428571428571,61.46936304147247,211.6428571428571,65.96707103708277,407.2857142857142,65.96707103708277"
               stroke-width="120.93872608294494"
         >
@@ -7620,7 +7620,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-47)"
               stroke-opacity="0.35"
               aria-label="Oil imports → Oil: 504.287"
-              role="graphics-document"
+              role="img"
               d="M16,523.1506150062148C76.21428571428571,523.1506150062148,76.21428571428571,515.6876390779737,136.42857142857142,515.6876390779737"
               stroke-width="72.6064579788876"
         >
@@ -7645,7 +7645,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-48)"
               stroke-opacity="0.35"
               aria-label="Oil reserves → Oil: 107.703"
-              role="graphics-document"
+              role="img"
               d="M16,577.207299214314C76.21428571428571,577.207299214314,76.21428571428571,559.7443232860729,136.42857142857142,559.7443232860729"
               stroke-width="15.506910437310763"
         >
@@ -7670,7 +7670,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-49)"
               stroke-opacity="0.35"
               aria-label="Oil → Liquid: 611.99"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,523.4410942966291C211.6428571428571,523.4410942966291,211.6428571428571,517.0948987846117,271.85714285714283,517.0948987846117"
               stroke-width="88.11336841619837"
         >
@@ -7695,7 +7695,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-50)"
               stroke-opacity="0.35"
               aria-label="Other waste → Solid: 56.587"
-              role="graphics-document"
+              role="img"
               d="M16,211.37914716885223C143.92857142857142,211.37914716885223,143.92857142857142,191.57570166286314,271.85714285714283,191.57570166286314"
               stroke-width="8.147308254330001"
         >
@@ -7720,7 +7720,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-51)"
               stroke-opacity="0.35"
               aria-label="Other waste → Bio-conversion: 77.81"
-              role="graphics-document"
+              role="img"
               d="M16,201.70401164782098C76.21428571428571,201.70401164782098,76.21428571428571,186.3494230640888,136.42857142857142,186.3494230640888"
               stroke-width="11.202962787732472"
         >
@@ -7745,7 +7745,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-52)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - homes: 193.026"
-              role="graphics-document"
+              role="img"
               d="M16,452.7763497275145C482.49999999999994,452.7763497275145,482.49999999999994,340.5252467434998,948.9999999999999,340.5252467434998"
               stroke-width="27.791583280617505"
         >
@@ -7770,7 +7770,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-53)"
               stroke-opacity="0.35"
               aria-label="Pumped heat → Heating and cooling - commercial: 70.672"
-              role="graphics-document"
+              role="img"
               d="M16,471.75976369229716C482.49999999999994,471.75976369229716,482.49999999999994,394.3310678067906,948.9999999999999,394.3310678067906"
               stroke-width="10.175244648947812"
         >
@@ -7795,7 +7795,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-54)"
               stroke-opacity="0.35"
               aria-label="Solar PV → Electricity grid: 59.901"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,259.696848970545C347.07142857142856,259.696848970545,347.07142857142856,310.70891226664764,542.7142857142857,310.70891226664764"
               stroke-width="8.624452820305395"
         >
@@ -7820,7 +7820,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-55)"
               stroke-opacity="0.35"
               aria-label="Solar Thermal → Heating and cooling - homes: 19.263"
-              role="graphics-document"
+              role="img"
               d="M151.42857142857142,275.39580377152214C550.2142857142857,275.39580377152214,550.2142857142857,325.2427267123667,948.9999999999999,325.2427267123667"
               stroke-width="2.773456781648768"
         >
@@ -7845,7 +7845,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-56)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar Thermal: 19.263"
-              role="graphics-document"
+              role="img"
               d="M16,292.0137288199434C76.21428571428571,292.0137288199434,76.21428571428571,275.39580377152214,136.42857142857142,275.39580377152214"
               stroke-width="2.773456781648768"
         >
@@ -7870,7 +7870,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-57)"
               stroke-opacity="0.35"
               aria-label="Solar → Solar PV: 59.901"
-              role="graphics-document"
+              role="img"
               d="M16,286.3147740189663C76.21428571428571,286.3147740189663,76.21428571428571,259.696848970545,136.42857142857142,259.696848970545"
               stroke-width="8.624452820305395"
         >
@@ -7895,7 +7895,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-58)"
               stroke-opacity="0.35"
               aria-label="Solid → Agriculture: 0.882"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,211.5055579343565C617.9285714285713,211.5055579343565,617.9285714285713,364.48453287795314,948.9999999999999,364.48453287795314"
               stroke-width="1"
         >
@@ -7920,7 +7920,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-59)"
               stroke-opacity="0.35"
               aria-label="Solid → Thermal generation: 400.12"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,175.946049601384C347.07142857142856,175.946049601384,347.07142857142856,155.2407617397011,407.2857142857142,155.2407617397011"
               stroke-width="57.608655322291696"
         >
@@ -7945,7 +7945,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-60)"
               stroke-opacity="0.35"
               aria-label="Solid → Industry: 46.477"
-              role="graphics-document"
+              role="img"
               d="M286.85714285714283,208.09622035137087C617.9285714285713,208.09622035137087,617.9285714285713,212.26502365787627,948.9999999999999,212.26502365787627"
               stroke-width="6.691686177682072"
         >
@@ -7970,7 +7970,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-61)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Electricity grid: 525.531"
-              role="graphics-document"
+              role="img"
               d="M422.2857142857142,168.08155132594084C482.49999999999994,168.08155132594084,482.49999999999994,268.5641178266798,542.7142857142857,268.5641178266798"
               stroke-width="75.6651360596303"
         >
@@ -7995,7 +7995,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-62)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → Losses: 787.129"
-              role="graphics-document"
+              role="img"
               d="M422.2857142857142,62.1625126231972C685.6428571428571,62.1625126231972,685.6428571428571,57.664804627586896,948.9999999999999,57.664804627586896"
               stroke-width="113.32960925517379"
         >
@@ -8020,7 +8020,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-63)"
               stroke-opacity="0.35"
               aria-label="Thermal generation → District heating: 79.329"
-              role="graphics-document"
+              role="img"
               d="M422.2857142857142,124.53815027345489C482.49999999999994,124.53815027345489,482.49999999999994,211.63469930221387,542.7142857142857,211.63469930221387"
               stroke-width="11.42166604534159"
         >
@@ -8045,7 +8045,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-64)"
               stroke-opacity="0.35"
               aria-label="Tidal → Electricity grid: 9.452"
-              role="graphics-document"
+              role="img"
               d="M16,363.80018713677555C279.35714285714283,363.80018713677555,279.35714285714283,317.71843086116456,542.7142857142857,317.71843086116456"
               stroke-width="1.3608842599877564"
         >
@@ -8070,7 +8070,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-65)"
               stroke-opacity="0.35"
               aria-label="UK land based bioenergy → Bio-conversion: 182.01"
-              role="graphics-document"
+              role="img"
               d="M16,172.9997718874518C76.21428571428571,172.9997718874518,76.21428571428571,167.64518330371962,136.42857142857142,167.64518330371962"
               stroke-width="26.205516733005876"
         >
@@ -8095,7 +8095,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-66)"
               stroke-opacity="0.35"
               aria-label="Wave → Electricity grid: 19.013"
-              role="graphics-document"
+              role="img"
               d="M16,375.8493603519973C279.35714285714283,375.8493603519973,279.35714285714283,319.7676040763863,542.7142857142857,319.7676040763863"
               stroke-width="2.7374621704556934"
         >
@@ -8120,7 +8120,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
               stroke="url(#sankey-multilevels-gradient-67)"
               stroke-opacity="0.35"
               aria-label="Wind → Electricity grid: 289.366"
-              role="graphics-document"
+              role="img"
               d="M16,408.04932476221546C279.35714285714283,408.04932476221546,279.35714285714283,341.9675684866044,542.7142857142857,341.9675684866044"
               stroke-width="41.66246664998065"
         >
@@ -8128,7 +8128,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="Agricultural 'waste': 124.729"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8153,7 +8153,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Bio-conversion: 388.925"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8178,7 +8178,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Liquid: 647.587"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8203,7 +8203,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Losses: 878.325"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8228,7 +8228,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solid: 447.48"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8253,7 +8253,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Gas: 204.097"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8278,7 +8278,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Biofuel imports: 35"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8303,7 +8303,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Biomass imports: 35"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8328,7 +8328,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Coal imports: 11.606"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8353,7 +8353,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Coal: 75.571"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8378,7 +8378,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Coal reserves: 63.965"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8403,7 +8403,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="District heating: 79.329"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8428,7 +8428,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Industry: 568.927"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8453,7 +8453,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Heating and cooling - commercial: 134.164"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8478,7 +8478,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Heating and cooling - homes: 372.199"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8503,7 +8503,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Electricity grid: 918.607"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8528,7 +8528,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Over generation / exports: 104.453"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8553,7 +8553,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="H2 conversion: 27.14"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8578,7 +8578,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Road transport: 194.529"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8603,7 +8603,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Agriculture: 11.03"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8628,7 +8628,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Rail transport: 12.276"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8653,7 +8653,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Lighting &amp; appliances - commercial: 90.008"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8678,7 +8678,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Lighting &amp; appliances - homes: 93.494"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8703,7 +8703,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Gas imports: 40.719"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8728,7 +8728,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Ngas: 122.952"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8753,7 +8753,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Gas reserves: 82.233"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8778,7 +8778,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Thermal generation: 1,391.989"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8803,7 +8803,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Geothermal: 7.013"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8828,7 +8828,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="H2: 20.897"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8853,7 +8853,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Hydro: 6.995"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8878,7 +8878,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="International shipping: 128.69"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8903,7 +8903,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Domestic aviation: 14.458"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8928,7 +8928,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="International aviation: 206.267"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8953,7 +8953,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="National navigation: 33.218"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -8978,7 +8978,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Marine algae: 4.375"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9003,7 +9003,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Nuclear: 839.978"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9028,7 +9028,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Oil imports: 504.287"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9053,7 +9053,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Oil: 611.99"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9078,7 +9078,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Oil reserves: 107.703"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9103,7 +9103,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Other waste: 134.397"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9128,7 +9128,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Pumped heat: 263.698"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9153,7 +9153,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solar PV: 59.901"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9178,7 +9178,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solar Thermal: 19.263"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9203,7 +9203,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Solar: 79.164"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9228,7 +9228,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Tidal: 9.452"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9253,7 +9253,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="UK land based bioenergy: 182.01"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9278,7 +9278,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Wave: 19.013"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9303,7 +9303,7 @@ exports[`Charts/Sankey Plot Multilevels smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="Wind: 289.366"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9362,7 +9362,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
               stroke="url(#sankey-simple-gradient-0)"
               stroke-opacity="0.35"
               aria-label="A1 → B1: 8"
-              role="graphics-document"
+              role="img"
               d="M61,83.57142857142858C275.5,83.57142857142858,275.5,83.57142857142857,490,83.57142857142857"
               stroke-width="165.14285714285714"
         >
@@ -9387,7 +9387,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
               stroke="url(#sankey-simple-gradient-1)"
               stroke-opacity="0.35"
               aria-label="A2 → B2: 4"
-              role="graphics-document"
+              role="img"
               d="M61,258.7142857142857C275.5,258.7142857142857,275.5,258.7142857142857,490,258.7142857142857"
               stroke-width="82.57142857142857"
         >
@@ -9412,7 +9412,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
               stroke="url(#sankey-simple-gradient-2)"
               stroke-opacity="0.35"
               aria-label="A1 → B2: 2"
-              role="graphics-document"
+              role="img"
               d="M61,186.7857142857143C275.5,186.7857142857143,275.5,196.78571428571428,490,196.78571428571428"
               stroke-width="41.285714285714285"
         >
@@ -9420,7 +9420,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </g>
       <g tabindex="0"
          aria-label="A1: 10"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9445,7 +9445,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="A2: 4"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9470,7 +9470,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="B1: 8"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"
@@ -9495,7 +9495,7 @@ exports[`Charts/Sankey Plot Simple smoke-test 1`] = `
       </text>
       <g tabindex="0"
          aria-label="B2: 6"
-         role="graphics-document"
+         role="img"
       >
         <rect class="_node_oqk6h_1"
               fill-opacity="0.9"

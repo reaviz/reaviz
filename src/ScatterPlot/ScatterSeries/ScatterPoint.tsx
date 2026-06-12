@@ -236,7 +236,7 @@ export const ScatterPoint: FC<Partial<ScatterPointProps>> = (props) => {
         onClick={() => onClick(data!)}
         tabIndex={0}
         aria-label={ariaLabelData}
-        role="graphics-document"
+        role="img"
       >
         {symbol ? (
           <motion.g

@@ -241,7 +241,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             onClick={onMouseClick}
             tabIndex={0}
             aria-label={ariaLabelData}
-            role="graphics-document"
+            role="img"
           >
             {renderedSymbol}
           </motion.g>
@@ -271,7 +271,7 @@ export const HeatmapCell: FC<Partial<HeatmapCellProps>> = ({
             onClick={onMouseClick}
             tabIndex={0}
             aria-label={ariaLabelData}
-            role="graphics-document"
+            role="img"
           />
         )}
       </g>

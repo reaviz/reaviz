@@ -19,7 +19,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki"
            tabindex="0"
            aria-label="meraki: 850"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki)"
                 id="custom-colors-meraki-arc"
@@ -60,7 +60,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite"
            tabindex="0"
            aria-label="gsuite: 449"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite)"
                 id="custom-colors-gsuite-arc"
@@ -101,7 +101,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="active directory"
            tabindex="0"
            aria-label="active directory: 224"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-active_directory)"
                 id="custom-colors-active_directory-arc"
@@ -142,7 +142,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="sophos"
            tabindex="0"
            aria-label="sophos: 219"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-sophos)"
                 id="custom-colors-sophos-arc"
@@ -183,7 +183,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="manageengine"
            tabindex="0"
            aria-label="manageengine: 202"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-manageengine)"
                 id="custom-colors-manageengine-arc"
@@ -224,7 +224,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite"
            tabindex="0"
            aria-label="meraki | gsuite: 189"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite)"
                 id="custom-colors-meraki_gsuite-arc"
@@ -256,7 +256,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|active directory"
            tabindex="0"
            aria-label="meraki | active directory: 98"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_active_directory)"
                 id="custom-colors-meraki_active_directory-arc"
@@ -288,7 +288,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|sophos"
            tabindex="0"
            aria-label="meraki | sophos: 150"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_sophos)"
                 id="custom-colors-meraki_sophos-arc"
@@ -320,7 +320,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|manageengine"
            tabindex="0"
            aria-label="meraki | manageengine: 150"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_manageengine)"
                 id="custom-colors-meraki_manageengine-arc"
@@ -352,7 +352,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|active directory"
            tabindex="0"
            aria-label="gsuite | active directory: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_active_directory)"
                 id="custom-colors-gsuite_active_directory-arc"
@@ -384,7 +384,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|sophos"
            tabindex="0"
            aria-label="gsuite | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_sophos)"
                 id="custom-colors-gsuite_sophos-arc"
@@ -416,7 +416,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|manageengine"
            tabindex="0"
            aria-label="gsuite | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_manageengine)"
                 id="custom-colors-gsuite_manageengine-arc"
@@ -448,7 +448,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="active directory|sophos"
            tabindex="0"
            aria-label="active directory | sophos: 113"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-active_directory_sophos)"
                 id="custom-colors-active_directory_sophos-arc"
@@ -480,7 +480,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="active directory|manageengine"
            tabindex="0"
            aria-label="active directory | manageengine: 109"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-active_directory_manageengine)"
                 id="custom-colors-active_directory_manageengine-arc"
@@ -512,7 +512,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="sophos|manageengine"
            tabindex="0"
            aria-label="sophos | manageengine: 175"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-sophos_manageengine)"
                 id="custom-colors-sophos_manageengine-arc"
@@ -544,7 +544,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|active directory"
            tabindex="0"
            aria-label="meraki | gsuite | active directory: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_active_directory)"
                 id="custom-colors-meraki_gsuite_active_directory-arc"
@@ -576,7 +576,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|sophos"
            tabindex="0"
            aria-label="meraki | gsuite | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_sophos)"
                 id="custom-colors-meraki_gsuite_sophos-arc"
@@ -608,7 +608,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_manageengine)"
                 id="custom-colors-meraki_gsuite_manageengine-arc"
@@ -640,7 +640,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|active directory|sophos"
            tabindex="0"
            aria-label="meraki | active directory | sophos: 94"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_active_directory_sophos)"
                 id="custom-colors-meraki_active_directory_sophos-arc"
@@ -672,7 +672,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|active directory|manageengine"
            tabindex="0"
            aria-label="meraki | active directory | manageengine: 95"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_active_directory_manageengine)"
                 id="custom-colors-meraki_active_directory_manageengine-arc"
@@ -704,7 +704,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | sophos | manageengine: 140"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_sophos_manageengine)"
                 id="custom-colors-meraki_sophos_manageengine-arc"
@@ -736,7 +736,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|active directory|sophos"
            tabindex="0"
            aria-label="gsuite | active directory | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_active_directory_sophos)"
                 id="custom-colors-gsuite_active_directory_sophos-arc"
@@ -768,7 +768,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|active directory|manageengine"
            tabindex="0"
            aria-label="gsuite | active directory | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_active_directory_manageengine)"
                 id="custom-colors-gsuite_active_directory_manageengine-arc"
@@ -800,7 +800,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|sophos|manageengine"
            tabindex="0"
            aria-label="gsuite | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_sophos_manageengine)"
                 id="custom-colors-gsuite_sophos_manageengine-arc"
@@ -832,7 +832,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="active directory|sophos|manageengine"
            tabindex="0"
            aria-label="active directory | sophos | manageengine: 103"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-active_directory_sophos_manageengine)"
                 id="custom-colors-active_directory_sophos_manageengine-arc"
@@ -864,7 +864,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|sophos"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_active_directory_sophos)"
                 id="custom-colors-meraki_gsuite_active_directory_sophos-arc"
@@ -896,7 +896,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_active_directory_manageengine)"
                 id="custom-colors-meraki_gsuite_active_directory_manageengine-arc"
@@ -928,7 +928,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_sophos_manageengine)"
                 id="custom-colors-meraki_gsuite_sophos_manageengine-arc"
@@ -960,7 +960,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | active directory | sophos | manageengine: 91"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_active_directory_sophos_manageengine)"
                 id="custom-colors-meraki_active_directory_sophos_manageengine-arc"
@@ -992,7 +992,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="gsuite|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="gsuite | active directory | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-gsuite_active_directory_sophos_manageengine)"
                 id="custom-colors-gsuite_active_directory_sophos_manageengine-arc"
@@ -1024,7 +1024,7 @@ exports[`Charts/Venn Diagram CustomColors smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-custom-colors-meraki_gsuite_active_directory_sophos_manageengine)"
                 id="custom-colors-meraki_gsuite_active_directory_sophos_manageengine-arc"
@@ -1202,7 +1202,7 @@ exports[`Charts/Venn Diagram Euler smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 4"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-euler-A)"
                 id="euler-A-arc"
@@ -1256,7 +1256,7 @@ a 210 210 0 1 0 -420 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 1"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-euler-B)"
                 id="euler-B-arc"
@@ -1310,7 +1310,7 @@ a 105 105 0 1 0 -210 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 1"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-euler-A_B)"
                 id="euler-A_B-arc"
@@ -1397,7 +1397,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki"
            tabindex="0"
            aria-label="meraki: 850"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki)"
                 id="label-icons-meraki-arc"
@@ -1464,7 +1464,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite"
            tabindex="0"
            aria-label="gsuite: 449"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite)"
                 id="label-icons-gsuite-arc"
@@ -1531,7 +1531,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="active directory"
            tabindex="0"
            aria-label="active directory: 224"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-active_directory)"
                 id="label-icons-active_directory-arc"
@@ -1598,7 +1598,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="sophos"
            tabindex="0"
            aria-label="sophos: 219"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-sophos)"
                 id="label-icons-sophos-arc"
@@ -1665,7 +1665,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="manageengine"
            tabindex="0"
            aria-label="manageengine: 202"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-manageengine)"
                 id="label-icons-manageengine-arc"
@@ -1732,7 +1732,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite"
            tabindex="0"
            aria-label="meraki | gsuite: 189"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite)"
                 id="label-icons-meraki_gsuite-arc"
@@ -1782,7 +1782,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|active directory"
            tabindex="0"
            aria-label="meraki | active directory: 98"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_active_directory)"
                 id="label-icons-meraki_active_directory-arc"
@@ -1832,7 +1832,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|sophos"
            tabindex="0"
            aria-label="meraki | sophos: 150"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_sophos)"
                 id="label-icons-meraki_sophos-arc"
@@ -1882,7 +1882,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|manageengine"
            tabindex="0"
            aria-label="meraki | manageengine: 150"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_manageengine)"
                 id="label-icons-meraki_manageengine-arc"
@@ -1932,7 +1932,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|active directory"
            tabindex="0"
            aria-label="gsuite | active directory: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_active_directory)"
                 id="label-icons-gsuite_active_directory-arc"
@@ -1982,7 +1982,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|sophos"
            tabindex="0"
            aria-label="gsuite | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_sophos)"
                 id="label-icons-gsuite_sophos-arc"
@@ -2032,7 +2032,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|manageengine"
            tabindex="0"
            aria-label="gsuite | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_manageengine)"
                 id="label-icons-gsuite_manageengine-arc"
@@ -2082,7 +2082,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="active directory|sophos"
            tabindex="0"
            aria-label="active directory | sophos: 113"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-active_directory_sophos)"
                 id="label-icons-active_directory_sophos-arc"
@@ -2132,7 +2132,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="active directory|manageengine"
            tabindex="0"
            aria-label="active directory | manageengine: 109"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-active_directory_manageengine)"
                 id="label-icons-active_directory_manageengine-arc"
@@ -2182,7 +2182,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="sophos|manageengine"
            tabindex="0"
            aria-label="sophos | manageengine: 175"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-sophos_manageengine)"
                 id="label-icons-sophos_manageengine-arc"
@@ -2232,7 +2232,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|active directory"
            tabindex="0"
            aria-label="meraki | gsuite | active directory: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_active_directory)"
                 id="label-icons-meraki_gsuite_active_directory-arc"
@@ -2282,7 +2282,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|sophos"
            tabindex="0"
            aria-label="meraki | gsuite | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_sophos)"
                 id="label-icons-meraki_gsuite_sophos-arc"
@@ -2332,7 +2332,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_manageengine)"
                 id="label-icons-meraki_gsuite_manageengine-arc"
@@ -2382,7 +2382,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|active directory|sophos"
            tabindex="0"
            aria-label="meraki | active directory | sophos: 94"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_active_directory_sophos)"
                 id="label-icons-meraki_active_directory_sophos-arc"
@@ -2432,7 +2432,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|active directory|manageengine"
            tabindex="0"
            aria-label="meraki | active directory | manageengine: 95"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_active_directory_manageengine)"
                 id="label-icons-meraki_active_directory_manageengine-arc"
@@ -2482,7 +2482,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | sophos | manageengine: 140"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_sophos_manageengine)"
                 id="label-icons-meraki_sophos_manageengine-arc"
@@ -2532,7 +2532,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|active directory|sophos"
            tabindex="0"
            aria-label="gsuite | active directory | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_active_directory_sophos)"
                 id="label-icons-gsuite_active_directory_sophos-arc"
@@ -2582,7 +2582,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|active directory|manageengine"
            tabindex="0"
            aria-label="gsuite | active directory | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_active_directory_manageengine)"
                 id="label-icons-gsuite_active_directory_manageengine-arc"
@@ -2632,7 +2632,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|sophos|manageengine"
            tabindex="0"
            aria-label="gsuite | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_sophos_manageengine)"
                 id="label-icons-gsuite_sophos_manageengine-arc"
@@ -2682,7 +2682,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="active directory|sophos|manageengine"
            tabindex="0"
            aria-label="active directory | sophos | manageengine: 103"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-active_directory_sophos_manageengine)"
                 id="label-icons-active_directory_sophos_manageengine-arc"
@@ -2732,7 +2732,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|sophos"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_active_directory_sophos)"
                 id="label-icons-meraki_gsuite_active_directory_sophos-arc"
@@ -2782,7 +2782,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_active_directory_manageengine)"
                 id="label-icons-meraki_gsuite_active_directory_manageengine-arc"
@@ -2832,7 +2832,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_sophos_manageengine)"
                 id="label-icons-meraki_gsuite_sophos_manageengine-arc"
@@ -2882,7 +2882,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | active directory | sophos | manageengine: 91"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_active_directory_sophos_manageengine)"
                 id="label-icons-meraki_active_directory_sophos_manageengine-arc"
@@ -2932,7 +2932,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="gsuite|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="gsuite | active directory | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-gsuite_active_directory_sophos_manageengine)"
                 id="label-icons-gsuite_active_directory_sophos_manageengine-arc"
@@ -2982,7 +2982,7 @@ exports[`Charts/Venn Diagram LabelIcons smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-label-icons-meraki_gsuite_active_directory_sophos_manageengine)"
                 id="label-icons-meraki_gsuite_active_directory_sophos_manageengine-arc"
@@ -3178,7 +3178,7 @@ exports[`Charts/Venn Diagram LargeOffsets smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 50"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-large-offsets-A)"
                 id="large-offsets-A-arc"
@@ -3232,7 +3232,7 @@ a 155.87 155.87 0 1 0 -311.74 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-large-offsets-B)"
                 id="large-offsets-B-arc"
@@ -3286,7 +3286,7 @@ a 86.66 86.66 0 1 0 -173.32 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 5"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-large-offsets-A_B)"
                 id="large-offsets-A_B-arc"
@@ -3355,7 +3355,7 @@ exports[`Charts/Venn Diagram LongText smoke-test 1`] = `
         <g title="Department of Defense"
            tabindex="0"
            aria-label="Department of Defense: 50"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-long-text-Department_of_Defense)"
                 id="long-text-Department_of_Defense-arc"
@@ -3416,7 +3416,7 @@ a 70.82 70.82 0 1 0 -141.64 0"
         <g title="Office of President"
            tabindex="0"
            aria-label="Office of President: 50"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-long-text-Office_of_President)"
                 id="long-text-Office_of_President-arc"
@@ -3477,7 +3477,7 @@ a 70.82 70.82 0 1 0 -141.64 0"
         <g title="Department of Defense|Office of President"
            tabindex="0"
            aria-label="Department of Defense | Office of President: 25"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-long-text-Department_of_Defense_Office_of_President)"
                 id="long-text-Department_of_Defense_Office_of_President-arc"
@@ -3546,7 +3546,7 @@ exports[`Charts/Venn Diagram Mask smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#mask-pattern-mask-A)"
                 id="mask-A-arc"
@@ -3622,7 +3622,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#mask-pattern-mask-B)"
                 id="mask-B-arc"
@@ -3698,7 +3698,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 2"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#mask-pattern-mask-A_B)"
                 id="mask-A_B-arc"
@@ -3789,7 +3789,7 @@ exports[`Charts/Venn Diagram NoAnimation smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-animation-A)"
                 id="no-animation-A-arc"
@@ -3843,7 +3843,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-animation-B)"
                 id="no-animation-B-arc"
@@ -3897,7 +3897,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 2"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-animation-A_B)"
                 id="no-animation-A_B-arc"
@@ -3966,7 +3966,7 @@ exports[`Charts/Venn Diagram NoFill smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-fill-A)"
                 id="no-fill-A-arc"
@@ -4020,7 +4020,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-fill-B)"
                 id="no-fill-B-arc"
@@ -4074,7 +4074,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 2"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-fill-A_B)"
                 id="no-fill-A_B-arc"
@@ -4143,7 +4143,7 @@ exports[`Charts/Venn Diagram NoIntersections smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 22"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-intersections-A)"
                 id="no-intersections-A-arc"
@@ -4197,7 +4197,7 @@ a 103.96 103.96 0 1 0 -207.92 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-intersections-B)"
                 id="no-intersections-B-arc"
@@ -4251,7 +4251,7 @@ a 76.78 76.78 0 1 0 -153.56 0"
         <g title="C"
            tabindex="0"
            aria-label="C: 13"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-intersections-C)"
                 id="no-intersections-C-arc"
@@ -4305,7 +4305,7 @@ a 79.91 79.91 0 1 0 -159.82 0"
         <g title="D"
            tabindex="0"
            aria-label="D: 22"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-intersections-D)"
                 id="no-intersections-D-arc"
@@ -4397,7 +4397,7 @@ exports[`Charts/Venn Diagram NoLabel smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-label-A)"
                 id="no-label-A-arc"
@@ -4433,7 +4433,7 @@ a 103.96 103.96 0 1 0 -207.92 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-no-label-B)"
                 id="no-label-B-arc"
@@ -4499,7 +4499,7 @@ exports[`Charts/Venn Diagram Selections smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 4"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-selections-A)"
                 id="selections-A-arc"
@@ -4553,7 +4553,7 @@ a 163.91 163.91 0 1 0 -327.82 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 1"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-selections-B)"
                 id="selections-B-arc"
@@ -4607,7 +4607,7 @@ a 103.66 103.66 0 1 0 -207.32 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 1"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-selections-A_B)"
                 id="selections-A_B-arc"
@@ -4684,7 +4684,7 @@ exports[`Charts/Venn Diagram Simple smoke-test 1`] = `
         <g title="A"
            tabindex="0"
            aria-label="A: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-simple-A)"
                 id="simple-A-arc"
@@ -4738,7 +4738,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="B"
            tabindex="0"
            aria-label="B: 12"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-simple-B)"
                 id="simple-B-arc"
@@ -4792,7 +4792,7 @@ a 119.88 119.88 0 1 0 -239.76 0"
         <g title="A|B"
            tabindex="0"
            aria-label="A | B: 2"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-simple-A_B)"
                 id="simple-A_B-arc"
@@ -4861,7 +4861,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki"
            tabindex="0"
            aria-label="meraki: 850"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki)"
                 id="star-euler-meraki-arc"
@@ -4920,7 +4920,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite"
            tabindex="0"
            aria-label="gsuite: 449"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite)"
                 id="star-euler-gsuite-arc"
@@ -4979,7 +4979,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="active directory"
            tabindex="0"
            aria-label="active directory: 224"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-active_directory)"
                 id="star-euler-active_directory-arc"
@@ -5038,7 +5038,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="sophos"
            tabindex="0"
            aria-label="sophos: 219"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-sophos)"
                 id="star-euler-sophos-arc"
@@ -5097,7 +5097,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="manageengine"
            tabindex="0"
            aria-label="manageengine: 202"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-manageengine)"
                 id="star-euler-manageengine-arc"
@@ -5156,7 +5156,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite"
            tabindex="0"
            aria-label="meraki | gsuite: 189"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite)"
                 id="star-euler-meraki_gsuite-arc"
@@ -5206,7 +5206,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|active directory"
            tabindex="0"
            aria-label="meraki | active directory: 98"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_active_directory)"
                 id="star-euler-meraki_active_directory-arc"
@@ -5256,7 +5256,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|sophos"
            tabindex="0"
            aria-label="meraki | sophos: 150"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_sophos)"
                 id="star-euler-meraki_sophos-arc"
@@ -5306,7 +5306,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|manageengine"
            tabindex="0"
            aria-label="meraki | manageengine: 150"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_manageengine)"
                 id="star-euler-meraki_manageengine-arc"
@@ -5356,7 +5356,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|active directory"
            tabindex="0"
            aria-label="gsuite | active directory: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_active_directory)"
                 id="star-euler-gsuite_active_directory-arc"
@@ -5406,7 +5406,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|sophos"
            tabindex="0"
            aria-label="gsuite | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_sophos)"
                 id="star-euler-gsuite_sophos-arc"
@@ -5456,7 +5456,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|manageengine"
            tabindex="0"
            aria-label="gsuite | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_manageengine)"
                 id="star-euler-gsuite_manageengine-arc"
@@ -5506,7 +5506,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="active directory|sophos"
            tabindex="0"
            aria-label="active directory | sophos: 113"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-active_directory_sophos)"
                 id="star-euler-active_directory_sophos-arc"
@@ -5556,7 +5556,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="active directory|manageengine"
            tabindex="0"
            aria-label="active directory | manageengine: 109"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-active_directory_manageengine)"
                 id="star-euler-active_directory_manageengine-arc"
@@ -5606,7 +5606,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="sophos|manageengine"
            tabindex="0"
            aria-label="sophos | manageengine: 175"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-sophos_manageengine)"
                 id="star-euler-sophos_manageengine-arc"
@@ -5656,7 +5656,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|active directory"
            tabindex="0"
            aria-label="meraki | gsuite | active directory: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_active_directory)"
                 id="star-euler-meraki_gsuite_active_directory-arc"
@@ -5706,7 +5706,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|sophos"
            tabindex="0"
            aria-label="meraki | gsuite | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_sophos)"
                 id="star-euler-meraki_gsuite_sophos-arc"
@@ -5756,7 +5756,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_manageengine)"
                 id="star-euler-meraki_gsuite_manageengine-arc"
@@ -5806,7 +5806,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|active directory|sophos"
            tabindex="0"
            aria-label="meraki | active directory | sophos: 94"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_active_directory_sophos)"
                 id="star-euler-meraki_active_directory_sophos-arc"
@@ -5856,7 +5856,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|active directory|manageengine"
            tabindex="0"
            aria-label="meraki | active directory | manageengine: 95"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_active_directory_manageengine)"
                 id="star-euler-meraki_active_directory_manageengine-arc"
@@ -5906,7 +5906,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | sophos | manageengine: 140"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_sophos_manageengine)"
                 id="star-euler-meraki_sophos_manageengine-arc"
@@ -5956,7 +5956,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|active directory|sophos"
            tabindex="0"
            aria-label="gsuite | active directory | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_active_directory_sophos)"
                 id="star-euler-gsuite_active_directory_sophos-arc"
@@ -6006,7 +6006,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|active directory|manageengine"
            tabindex="0"
            aria-label="gsuite | active directory | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_active_directory_manageengine)"
                 id="star-euler-gsuite_active_directory_manageengine-arc"
@@ -6056,7 +6056,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|sophos|manageengine"
            tabindex="0"
            aria-label="gsuite | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_sophos_manageengine)"
                 id="star-euler-gsuite_sophos_manageengine-arc"
@@ -6106,7 +6106,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="active directory|sophos|manageengine"
            tabindex="0"
            aria-label="active directory | sophos | manageengine: 103"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-active_directory_sophos_manageengine)"
                 id="star-euler-active_directory_sophos_manageengine-arc"
@@ -6156,7 +6156,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|sophos"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | sophos: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_active_directory_sophos)"
                 id="star-euler-meraki_gsuite_active_directory_sophos-arc"
@@ -6206,7 +6206,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_active_directory_manageengine)"
                 id="star-euler-meraki_gsuite_active_directory_manageengine-arc"
@@ -6256,7 +6256,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_sophos_manageengine)"
                 id="star-euler-meraki_gsuite_sophos_manageengine-arc"
@@ -6306,7 +6306,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | active directory | sophos | manageengine: 91"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_active_directory_sophos_manageengine)"
                 id="star-euler-meraki_active_directory_sophos_manageengine-arc"
@@ -6356,7 +6356,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="gsuite|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="gsuite | active directory | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-gsuite_active_directory_sophos_manageengine)"
                 id="star-euler-gsuite_active_directory_sophos_manageengine-arc"
@@ -6406,7 +6406,7 @@ exports[`Charts/Venn Diagram StarEuler smoke-test 1`] = `
         <g title="meraki|gsuite|active directory|sophos|manageengine"
            tabindex="0"
            aria-label="meraki | gsuite | active directory | sophos | manageengine: 0"
-           role="graphics-document"
+           role="img"
         >
           <path fill="url(#gradient-star-euler-meraki_gsuite_active_directory_sophos_manageengine)"
                 id="star-euler-meraki_gsuite_active_directory_sophos_manageengine-arc"
