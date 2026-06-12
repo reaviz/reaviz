@@ -1,3 +1,6 @@
+# 16.2.1 - 6/12/26
+- [fix] Fix accessibility: change chart element roles from graphics-document to img #331
+
 # 16.2.0 - 6/9/26
 - [BREAKING] Upgrade all dependencies — Vite 8, TypeScript 6, React 19 (dev), Storybook 10.4, raise Node floor to >=22.12; drop UMD output (ESM-only build) #328
 - [chore] Update dependencies including reablocks 10.2.0 and motion #327
