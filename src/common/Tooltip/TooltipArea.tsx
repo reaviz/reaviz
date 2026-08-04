@@ -9,7 +9,7 @@ import React, {
   useImperativeHandle,
   useEffect
 } from 'react';
-import { flip, offset } from '@floating-ui/dom';
+import { flip, offset, shift } from '@floating-ui/dom';
 import { TooltipAreaEvent } from './TooltipAreaEvent';
 import {
   ChartDataTypes,
@@ -18,6 +18,7 @@ import {
   ChartInternalNestedDataShape
 } from '@/common/data';
 import {
+  getParentSVG,
   getPositionForTarget,
   getClosestContinousScalePoint,
   getClosestBandScalePoint
@@ -140,6 +141,16 @@ export interface TooltipAreaProps {
    * @default 2 * Math.PI
    */
   endAngle?: number;
+
+  /**
+   * Whether to constrain the tooltip to the chart's container, sliding it
+   * along the chart's edges instead of overflowing at first/last points.
+   * When enabled, modifiers set on the tooltip element are honored and the
+   * containment middleware is appended to them.
+   *
+   * @default false
+   */
+  constrainToContainer?: boolean;
 }
 
 interface TooltipDataShape {
@@ -148,6 +159,10 @@ interface TooltipDataShape {
   data?: ChartDataTypes | Array<ChartDataTypes | ChartInternalShallowDataShape>;
   i?: number;
 }
+
+// floating-ui middleware are stateless descriptors, safe to share across instances
+const DEFAULT_OFFSET_MODIFIERS = [offset({ mainAxis: 15 })];
+const DEFAULT_MODIFIERS = [...DEFAULT_OFFSET_MODIFIERS, flip()];
 
 // eslint-disable-next-line react/display-name
 export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
@@ -172,7 +187,8 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       placement: placementProp,
       onValueLeave = () => undefined,
       startAngle = 0,
-      endAngle = 2 * Math.PI
+      endAngle = 2 * Math.PI,
+      constrainToContainer = false
     },
     childRef
   ) => {
@@ -599,6 +615,26 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       );
     }, [height, onMouseMove, width]);
 
+    // The boundary must be an HTML element — SVG elements yield a degenerate
+    // clipping rect — so use the element wrapping the chart's root svg. Until
+    // the ref is set it stays undefined (`?? undefined` coerces null, which
+    // floating-ui does not treat as absent) and floating-ui falls back to its
+    // default viewport boundary.
+    const boundary = ref.current
+      ? (getParentSVG({ target: ref.current })?.parentElement ?? undefined)
+      : undefined;
+    const modifiers = useMemo(
+      () =>
+        constrainToContainer
+          ? [
+              ...(tooltip.props.modifiers || DEFAULT_OFFSET_MODIFIERS),
+              flip({ boundary }),
+              shift({ boundary, padding: 4, crossAxis: true })
+            ]
+          : DEFAULT_MODIFIERS,
+      [constrainToContainer, tooltip.props.modifiers, boundary]
+    );
+
     return (
       <Fragment>
         {disabled && children}
@@ -610,7 +646,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
               element={tooltip}
               visible={visible}
               placement={placement}
-              modifiers={[offset({ mainAxis: 15 }), flip()]}
+              modifiers={modifiers}
               reference={tooltipReference}
               color={color}
               value={value}
