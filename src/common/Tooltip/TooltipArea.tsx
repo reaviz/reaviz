@@ -148,7 +148,7 @@ export interface TooltipAreaProps {
    * When enabled, modifiers set on the tooltip element are honored and the
    * containment middleware is appended to them.
    *
-   * @default false
+   * @default true
    */
   constrainToContainer?: boolean;
 }
@@ -188,7 +188,7 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       onValueLeave = () => undefined,
       startAngle = 0,
       endAngle = 2 * Math.PI,
-      constrainToContainer = false
+      constrainToContainer = true
     },
     childRef
   ) => {
@@ -615,14 +615,20 @@ export const TooltipArea = forwardRef<any, Partial<TooltipAreaProps>>(
       );
     }, [height, onMouseMove, width]);
 
-    // The boundary must be an HTML element — SVG elements yield a degenerate
-    // clipping rect — so use the element wrapping the chart's root svg. Until
-    // the ref is set it stays undefined (`?? undefined` coerces null, which
-    // floating-ui does not treat as absent) and floating-ui falls back to its
-    // default viewport boundary.
-    const boundary = ref.current
-      ? (getParentSVG({ target: ref.current })?.parentElement ?? undefined)
-      : undefined;
+    // Boundary for constraining the tooltip: the HTML element wrapping the
+    // chart's root svg (SVG elements don't clip correctly). Resolved once on
+    // mount; while undefined, floating-ui falls back to the viewport.
+    const [boundary, setBoundary] = useState<HTMLElement | undefined>(
+      undefined
+    );
+    useEffect(() => {
+      if (constrainToContainer && ref.current) {
+        setBoundary(
+          getParentSVG({ target: ref.current })?.parentElement ?? undefined
+        );
+      }
+    }, [constrainToContainer, disabled]);
+
     const modifiers = useMemo(
       () =>
         constrainToContainer

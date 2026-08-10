@@ -43,7 +43,7 @@ export const Simple = () => (
 );
 
 // Hover the first/last data points: the tooltip slides to stay
-// inside the chart container instead of overflowing its edges
+// inside the chart container instead of overflowing its edges.
 export const ConstrainedTooltip = () => (
   <AreaChart
     id="constrained-tooltip"
