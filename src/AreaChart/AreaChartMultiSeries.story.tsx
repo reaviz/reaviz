@@ -16,6 +16,7 @@ import {
   StackedAreaSeries,
   StackedNormalizedAreaSeries
 } from './AreaSeries';
+import { TooltipArea } from '@/common/Tooltip';
 
 export default {
   tags: ['snapshot'],
@@ -40,6 +41,25 @@ export const Simple = () => (
     series={<AreaSeries type="grouped" colorScheme="cybertron" />}
   />
 );
+
+// Hover the first/last data points: the tooltip slides to stay
+// inside the chart container instead of overflowing its edges.
+export const ConstrainedTooltip = () => (
+  <AreaChart
+    id="constrained-tooltip"
+    width={550}
+    height={350}
+    data={multiDateData}
+    series={
+      <AreaSeries
+        type="grouped"
+        colorScheme="cybertron"
+        tooltip={<TooltipArea constrainToContainer />}
+      />
+    }
+  />
+);
+ConstrainedTooltip.tags = ['no-snapshot'];
 
 export const LargeDataset = () => (
   <AreaChart
