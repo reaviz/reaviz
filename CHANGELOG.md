@@ -1,3 +1,6 @@
+# 16.2.2 - 7/10/26
+- [fix] Improve TooltipArea component with container constraint option for tooltip- #332
+
 # 16.2.1 - 6/12/26
 - [fix] Fix accessibility: change chart element roles from graphics-document to img #331
 
